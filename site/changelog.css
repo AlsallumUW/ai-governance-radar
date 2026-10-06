@@ -1,0 +1,46 @@
+:root{--cl-new:#8bcbbb;--cl-rev:#a1c4e6;--cl-applied:#9fd59a;--cl-adopt:#c7b2ec;--cl-draft:#e5bf7c;--cl-end:#e8a0a0;--cl-radar:#92a8ab}
+.cl-count{display:inline-block;min-width:16px;padding:0 5px;margin-left:4px;border-radius:9px;background:var(--cl-new);color:#071013;font-size:9px;font-weight:700;line-height:15px;text-align:center}
+.cl-count.dim{background:#2b454c;color:#c9dadb}
+.cl-dialog{max-width:920px}
+.cl-controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:14px 0 10px}
+.cl-controls select,.cl-controls input{width:auto;margin:0;background:#101e24;border:1px solid #2b454c;color:var(--text);border-radius:5px;padding:7px 9px;font-size:11px}
+.cl-controls input{flex:1;min-width:160px}
+.cl-seg{display:inline-flex;border:1px solid #2b454c;border-radius:5px;overflow:hidden}
+.cl-seg button{background:#101e24;border:0;color:var(--muted);padding:7px 10px;font-size:11px;cursor:pointer}
+.cl-seg button+button{border-left:1px solid #2b454c}
+.cl-seg button.on{background:#17323a;color:var(--text)}
+.cl-types{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.cl-summary{font-size:11px;color:var(--muted);padding:8px 0;border-bottom:1px solid var(--line)}
+.cl-summary b{color:var(--text)}
+.cl-month{font-size:10px;letter-spacing:.8px;text-transform:uppercase;color:var(--amber);margin:18px 0 6px}
+.cl-list{list-style:none;margin:0;padding:0}
+.cl-item{display:grid;grid-template-columns:92px 1fr;gap:12px;padding:10px 0;border-bottom:1px solid #1c2e34}
+.cl-date{font-size:11px;color:#bdd4d1;font-variant-numeric:tabular-nums;padding-top:2px}
+.cl-top{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:4px}
+.cl-title{font-size:12.5px;color:var(--text);line-height:1.35}
+.cl-detail{font-size:11px;color:#b3c6c8;margin-top:3px;line-height:1.4}
+.cl-meta{font-size:10px;color:var(--muted);margin-top:5px}
+.cl-meta a{color:var(--teal)}
+.cl-badge{display:inline-block;font-size:9px;letter-spacing:.4px;padding:2px 6px;border-radius:3px;border:1px solid currentColor;white-space:nowrap}
+.t-new{color:var(--cl-new)}.t-rev{color:var(--cl-rev)}.t-applied{color:var(--cl-applied)}.t-adopt{color:var(--cl-adopt)}.t-draft{color:var(--cl-draft)}.t-end{color:var(--cl-end)}.t-radar{color:var(--cl-radar)}.t-review{color:var(--amber);border-style:dashed}
+.cl-country{background:none;border:0;color:#cfe0e0;font-size:11px;cursor:pointer;padding:0;display:inline-flex;align-items:center;gap:5px}
+.cl-country:hover{color:var(--teal);text-decoration:underline}
+.cl-flag{width:16px;height:12px;border-radius:2px;object-fit:cover;vertical-align:-2px}
+.cl-globe{color:var(--muted);font-size:11px}
+.cl-empty{font-size:11px;color:var(--muted);padding:16px 0}
+.cl-mini{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:6px}
+.cl-mini button{width:100%;text-align:left;background:#101e24;border:1px solid #22383e;border-radius:5px;padding:8px;display:grid;gap:4px;cursor:pointer;color:var(--text)}
+.cl-mini button:hover{border-color:#3b5c63}
+.cl-mini .cl-badge{justify-self:start}
+.cl-mini-t{font-size:11px;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.pill.cl-recent{border-color:currentColor;font-weight:600}
+.pill.cl-life{color:#cfe0e0}
+.pill.l-in_force{color:var(--cl-applied);border-color:#3f6a3c}.pill.l-consultation,.pill.l-draft{color:var(--cl-draft)}.pill.l-superseded,.pill.l-repealed{color:var(--cl-end)}.pill.l-adopted{color:var(--cl-adopt)}
+.cl-card{margin:8px 0 4px;padding:8px 10px;background:#0f1d22;border-left:2px solid #2b454c;border-radius:0 4px 4px 0}
+.cl-card-h{font-size:9px;letter-spacing:.7px;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.cl-card ol{list-style:none;margin:0;padding:0;display:grid;gap:3px}
+.cl-card li{font-size:10.5px;color:#b3c6c8;padding-left:12px;position:relative;line-height:1.45}
+.cl-card b{color:#d6e4e4;font-weight:500;white-space:nowrap}
+.cl-card em{color:var(--amber);font-style:normal}
+.cl-dot{position:absolute;left:0;top:5px;width:6px;height:6px;border-radius:50%;background:currentColor}
+@media(max-width:640px){.cl-item{grid-template-columns:1fr;gap:4px}.cl-controls input{min-width:100%}}
