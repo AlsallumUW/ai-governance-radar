@@ -11,5 +11,5 @@ You are updating the AI Governance Radar repository: github.com/AlsallumUW/ai-go
 Constraints:
 - Official sources only.
 - Never infer legal effect.
-- If an official site blocks automated access, verify through another official channel (national news agency, gazette, consultation portal). Otherwise leave the field null and list it under "Could not verify".
+- If an official site blocks automated access, verify through another official document channel (official gazette, consultation portal, the issuing body's other official pages). News agencies, including state agencies such as SPA and WAM, are never sources. Otherwise leave the field null and list it under "Could not verify".
 - Finish with a short summary: countries done, the number of government actions found, the number of items needing review, and the PR link.
