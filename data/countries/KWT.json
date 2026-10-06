@@ -10,78 +10,917 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Kuwait has no AI-specific law; AI governance so far rests on soft law from the Communication and Information Technology Regulatory Authority (CITRA) and strategy work by the Central Agency for Information Technology (CAIT). CITRA's AI Ethics Guideline (v1.1) sets national ethical principles, and its draft Guideline for the Adoption of AI in Kuwait went to public consultation in February–April 2026 but has not been adopted. The binding layer is CITRA's Data Privacy Protection Regulation (Decision 26/2024), which covers licensed telecom and IT providers; Kuwait has no general data-protection law. CAIT's Kuwait National AI Strategy (2025–2028) is published as a draft aligned with Kuwait Vision 2035, and CITRA's 2026 5G-A & AI Era strategy plans a CITRA AI policy for telecommunications in 2027. Sector regulators have issued little: the Ministry of Health's guide on AI language tools and the 2026 Media Regulation Law, which brings AI-generated content into scope, are known but their official texts are not online.",
+    "lead_institutions": [
+      "Communication and Information Technology Regulatory Authority (CITRA)",
+      "Central Agency for Information Technology (CAIT)",
+      "National Cyber Security Center (NCSC)",
+      "General Secretariat of the Supreme Council for Planning and Development (GSSCPD)"
+    ],
+    "last_deep_review": "2026-10-06",
+    "review_notes": "Deep review 2026-10-06 (file was empty before). citra.gov.kw readable: regulations list (CITRALaws pages 1–5), decisions, consultations and reports were checked; AI items found are the ethics guideline, the draft adoption guideline and the 5G-A & AI strategy. Blocked to automated reading (connection reset or 403): cait.gov.kw, scpd.gov.kw, moh.gov.kw, ncsc.gov.kw, e.gov.kw, kuwaitalyawm.media.gov.kw (certificate chain failure); CAIT and SCPD records are therefore primary_source_located only. CBK Wolooj innovation hub / regulatory sandbox framework was read and does not mention AI, so it is not recorded. CITRA's Cloud Computing Regulatory Framework does not mention AI and is excluded. The National Assembly has been suspended since May 2024; laws are issued as decree-laws. No news agencies or law firms are used as sources. GCC AI ethics guide and UNESCO Recommendation are inherited from data/regional and not copied."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-5d1a31374e3f",
+      "official_title": "لائحة حماية خصوصية البيانات (الإصدار 2.5) الصادرة بقرار رقم (26/2024)",
+      "english_title": "Data Privacy Protection Regulation (version 2.5), issued by CITRA Decision No. 26 of 2024",
+      "jurisdiction_id": "KWT",
+      "issuing_authority": "Communication and Information Technology Regulatory Authority (CITRA)",
+      "publisher_name": "Communication and Information Technology Regulatory Authority (CITRA)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "data-privacy"
+      ],
+      "category": "data-privacy",
+      "subcategory": null,
+      "legal_status": "binding_regulation",
+      "publication_date": "2024-02-07",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "In force. Decision No. 26/2024 (7 February 2024) issued the regulation approved by the CITRA Board on 5 December 2023 and repealed Decision No. 42/2021 (1 April 2021) and its amendments; it applies from publication in the official gazette, whose date is not shown on the CITRA page.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "CITRA regulation governing how providers of telecommunications and information-technology services in Kuwait (including cloud and other IT services) collect, process, store and use personal data, setting conditions for lawful collection and processing, security of personal data and notification of breaches. Decision No. 26/2024 puts it into effect and repeals the earlier regulation issued by Decision No. 42/2021 and its amendments. It is the main binding personal-data rule relevant to AI systems run by licensed ICT providers; Kuwait has no general data-protection law.",
+      "ai_governance_relevance": "Primary-source material for assessing data-privacy.",
+      "source_url": "https://www.citra.gov.kw/sites/ar/Lists/CITRALaws/Attachments/18/%D9%84%D8%A7%D8%A6%D8%AD%D8%A9%20%D8%AD%D9%85%D8%A7%D9%8A%D8%A9%20%D8%AE%D8%B5%D9%88%D8%B5%D9%8A%D8%A9%20%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA.pdf",
+      "official_pdf_url": "https://www.citra.gov.kw/sites/ar/Lists/CITRALaws/Attachments/18/%D9%84%D8%A7%D8%A6%D8%AD%D8%A9%20%D8%AD%D9%85%D8%A7%D9%8A%D8%A9%20%D8%AE%D8%B5%D9%88%D8%B5%D9%8A%D8%A9%20%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA.pdf",
+      "official_webpage_url": "https://www.citra.gov.kw/sites/ar/Pages/DecisionsDetails.aspx?id=6",
+      "language": "ar",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Exact date of publication in Kuwait Al-Yawm (the decision applies from its gazette publication)"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "in_force",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-0d8c9d1a0da3",
+      "organization_id": "o-4ac734f6f773"
+    },
+    {
+      "id": "i-71fbcb22247f",
+      "official_title": "الدليل الإرشادي لأخلاقيات الذكاء الاصطناعي (V 1.1)",
+      "english_title": "AI Ethics Guideline (version 1.1)",
+      "jurisdiction_id": "KWT",
+      "issuing_authority": "Communication and Information Technology Regulatory Authority (CITRA)",
+      "publisher_name": "Communication and Information Technology Regulatory Authority (CITRA)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "ethics"
+      ],
+      "category": "ethics",
+      "subcategory": null,
+      "legal_status": "nonbinding_guidance",
+      "publication_date": "2024",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Published in CITRA's 'Laws and regulations' list as a guideline (دليل إرشادي) under 'General – ICT'. Version 1.1; no date is printed in the document.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "CITRA guideline setting out the values and principles that should govern the development and use of AI systems in Kuwait, defining AI systems and the government and private entities it addresses. It draws on UNESCO, OECD, IEEE, EU, ITU, Arab League and GCC ethics texts and rests on human dignity, fundamental freedoms, human autonomy, inclusion and diversity, justice and fairness, transparency, accountability and protection of rights. It is guidance and says these values should be reinforced through future legislation and guidelines.",
+      "ai_governance_relevance": "Primary-source material for assessing ethics.",
+      "source_url": "https://www.citra.gov.kw/sites/ar/Lists/CITRALaws/Attachments/46/%D8%A7%D9%84%D8%AF%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D8%A5%D8%B1%D8%B4%D8%A7%D8%AF%D9%8A%20%D9%84%D8%A3%D8%AE%D9%84%D8%A7%D9%82%D9%8A%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-%20V%201.1.pdf",
+      "official_pdf_url": "https://www.citra.gov.kw/sites/ar/Lists/CITRALaws/Attachments/46/%D8%A7%D9%84%D8%AF%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D8%A5%D8%B1%D8%B4%D8%A7%D8%AF%D9%8A%20%D9%84%D8%A3%D8%AE%D9%84%D8%A7%D9%82%D9%8A%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-%20V%201.1.pdf",
+      "official_webpage_url": "https://www.citra.gov.kw/sites/ar/Pages/CITRALaws.aspx?PageIndex=4",
+      "language": "ar",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Exact publication date (the document and CITRA's listing give none; 2024 is from the PDF's file metadata)"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-2955a682454f",
+      "organization_id": "o-4ac734f6f773"
+    },
+    {
+      "id": "i-10e15ee5348a",
+      "official_title": "الدليل الإرشادي لتبني الذكاء الاصطناعي في دولة الكويت (V 1.0) – مسودة للاستشارة العامة",
+      "english_title": "Guideline for the Adoption of Artificial Intelligence in the State of Kuwait (v1.0) – public consultation draft",
+      "jurisdiction_id": "KWT",
+      "issuing_authority": "Communication and Information Technology Regulatory Authority (CITRA)",
+      "publisher_name": "Communication and Information Technology Regulatory Authority (CITRA)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "drafts",
+        "government-governance",
+        "public-sector"
+      ],
+      "category": "drafts",
+      "subcategory": null,
+      "legal_status": "consultation_draft",
+      "publication_date": "2026-02-19",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Consultation draft. CITRA consultation page lists it as closed (announced 19/02/2026, deadline 20/04/2026). No adopted version found on citra.gov.kw by 2026-10-06.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Draft CITRA guideline, put to public consultation from 19 February to 20 April 2026, to steer AI adoption by government entities and the private sector in Kuwait. It covers AI governance, privacy and security, enablers (infrastructure, human capacity, regulatory frameworks), a maturity and readiness assessment for AI adoption, and AI applications in government services, and refers to CITRA's AI ethics guideline for principles. Its objectives include a national AI governance framework defining roles and responsibilities; the draft is watermarked DRAFT and is not adopted.",
+      "ai_governance_relevance": "Primary-source material for assessing drafts, government-governance, public-sector.",
+      "source_url": "https://www.citra.gov.kw/sites/ar/GeneralConsultations/%D8%AF%D9%84%D9%8A%D9%84%20%D8%AA%D8%A8%D9%86%D9%8A%20%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A%20%D9%81%D9%8A%20%D8%AF%D9%88%D9%84%D8%A9%20%D8%A7%D9%84%D9%83%D9%88%D9%8A%D8%AA%20v1.pdf",
+      "official_pdf_url": "https://www.citra.gov.kw/sites/ar/GeneralConsultations/%D8%AF%D9%84%D9%8A%D9%84%20%D8%AA%D8%A8%D9%86%D9%8A%20%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A%20%D9%81%D9%8A%20%D8%AF%D9%88%D9%84%D8%A9%20%D8%A7%D9%84%D9%83%D9%88%D9%8A%D8%AA%20v1.pdf",
+      "official_webpage_url": "https://www.citra.gov.kw/sites/ar/Pages/GCDetails.aspx?GCID=24",
+      "language": "ar",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Final adopted version not yet published (consultation closed 20 April 2026)"
+      ],
+      "source_kind": "consultation_portal",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "consultation",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-efd5862d9aea",
+      "organization_id": "o-4ac734f6f773"
+    },
+    {
+      "id": "i-b60cefdb7f5f",
+      "official_title": "Kuwait 5G-A & AI Era: National Connectivity Strategy",
+      "english_title": "Kuwait 5G-Advanced and AI Era – National Connectivity Strategy (2026)",
+      "jurisdiction_id": "KWT",
+      "issuing_authority": "Communication and Information Technology Regulatory Authority (CITRA)",
+      "publisher_name": "Communication and Information Technology Regulatory Authority (CITRA)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "strategy",
+        "sectoral"
+      ],
+      "category": "strategy",
+      "subcategory": null,
+      "legal_status": "national_strategy",
+      "publication_date": "2026-07-09",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Published on CITRA's Reports and Data page on 09/07/2026. Proposals (e.g. the telecom AI policy) are plans, not adopted rules.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "CITRA whitepaper setting Kuwait's 5G-Advanced and AI connectivity roadmap to 2035 in support of Kuwait Vision 2035. Its AI & Data Governance chapter states that CITRA has no dedicated AI regulatory framework yet and outlines a five-pillar architecture under study (AI-native spectrum governance, an AI regulatory framework for telecoms with tiered risk classification, algorithmic accountability and bias prevention, data sovereignty, cybersecurity and digital inclusion). It targets a published CITRA AI Policy for Telecommunications in Q1–Q3 2027.",
+      "ai_governance_relevance": "Primary-source material for assessing strategy, sectoral.",
+      "source_url": "https://www.citra.gov.kw/sites/en/ReportsNdata/Kuwait%205G-Advanced%20and%20AI%20Era.pdf",
+      "official_pdf_url": "https://www.citra.gov.kw/sites/en/ReportsNdata/Kuwait%205G-Advanced%20and%20AI%20Era.pdf",
+      "official_webpage_url": null,
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-397719f4bc5f",
+      "organization_id": "o-4ac734f6f773"
+    },
+    {
+      "id": "i-23145af93aa7",
+      "official_title": "Kuwait National AI Strategy (2025–2028)",
+      "english_title": "Kuwait National Artificial Intelligence Strategy 2025–2028 (draft)",
+      "jurisdiction_id": "KWT",
+      "issuing_authority": "Central Agency for Information Technology (CAIT)",
+      "publisher_name": "Central Agency for Information Technology (CAIT)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "strategy",
+        "drafts"
+      ],
+      "category": "strategy",
+      "subcategory": null,
+      "legal_status": "national_strategy",
+      "publication_date": "2025",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Located via search on cait.gov.kw; the site resets connections to automated access, so the PDF could not be read. Treated as a draft strategy, not adopted, until the official file confirms otherwise.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "National AI strategy document published by the Central Agency for Information Technology on its 'Kuwait Strategy' page, aligned with Kuwait Vision 2035. Discovery sources describe it as a draft covering 2025–2028; its content, status and exact date could not be confirmed from the official file in this review.",
+      "ai_governance_relevance": "Primary-source material for assessing strategy, drafts.",
+      "source_url": "https://cait.gov.kw/media/filer_public/3f/b4/3fb49a45-4a78-4489-8898-b68e2bd260ca/kuwait_national_strategy.pdf",
+      "official_pdf_url": "https://cait.gov.kw/media/filer_public/3f/b4/3fb49a45-4a78-4489-8898-b68e2bd260ca/kuwait_national_strategy.pdf",
+      "official_webpage_url": "https://cait.gov.kw/en/kuwait-strategy/",
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "primary_source_located",
+      "metadata_gaps": [
+        "Exact official title",
+        "Exact publication date",
+        "Draft vs adopted status",
+        "Content to be confirmed from the document",
+        "Document language"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "inaccessible",
+      "document_access_type": "original_government_document",
+      "lifecycle": "draft",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-c02cbc6cf472",
+      "organization_id": "o-1941ddc7a3c3"
+    },
+    {
+      "id": "i-b00012684522",
+      "official_title": "تقرير مؤشر الجاهزية الحكومية للذكاء الاصطناعي 2023",
+      "english_title": "Government AI Readiness Index Report 2023 (Kuwait)",
+      "jurisdiction_id": "KWT",
+      "issuing_authority": "General Secretariat of the Supreme Council for Planning and Development (GSSCPD)",
+      "publisher_name": "General Secretariat of the Supreme Council for Planning and Development (GSSCPD)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "index-readiness"
+      ],
+      "category": "index-readiness",
+      "subcategory": null,
+      "legal_status": "nonbinding_guidance",
+      "publication_date": "2023",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Located on scpd.gov.kw (archive folder); the site resets connections to automated access.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Arabic report published by Kuwait's planning secretariat on the 2023 Government AI Readiness Index, reviewing how governments, including Kuwait, are prepared to use AI in public services. Search snippets indicate it covers the index's pillars (government, technology sector, data and infrastructure); Kuwait's results could not be confirmed from the file in this review.",
+      "ai_governance_relevance": "Primary-source material for assessing index-readiness.",
+      "source_url": "https://www.scpd.gov.kw/archive/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D9%85%D8%A4%D8%B4%D8%B1%20%D8%A7%D9%84%D8%AC%D8%A7%D9%87%D8%B2%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D9%8A%D8%A9%20%D9%84%D9%84%D8%B0%D9%83%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A%202023.pdf",
+      "official_pdf_url": "https://www.scpd.gov.kw/archive/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D9%85%D8%A4%D8%B4%D8%B1%20%D8%A7%D9%84%D8%AC%D8%A7%D9%87%D8%B2%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D9%8A%D8%A9%20%D9%84%D9%84%D8%B0%D9%83%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A%202023.pdf",
+      "official_webpage_url": null,
+      "language": "ar",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "primary_source_located",
+      "metadata_gaps": [
+        "Content and Kuwait's results to be confirmed from the document",
+        "Exact publication date",
+        "Whether the index itself is a third-party (Oxford Insights) index summarised by the secretariat"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "inaccessible",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-884d8cc45eb4",
+      "organization_id": "o-7142da1b8912"
+    },
+    {
+      "id": "i-d1b988baefa6",
+      "official_title": "تقرير مؤشر الجاهزية الحكومية للذكاء الاصطناعي 2022",
+      "english_title": "Government AI Readiness Index Report 2022 (Kuwait)",
+      "jurisdiction_id": "KWT",
+      "issuing_authority": "General Secretariat of the Supreme Council for Planning and Development (GSSCPD)",
+      "publisher_name": "General Secretariat of the Supreme Council for Planning and Development (GSSCPD)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "index-readiness"
+      ],
+      "category": "index-readiness",
+      "subcategory": null,
+      "legal_status": "nonbinding_guidance",
+      "publication_date": "2022",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Located on scpd.gov.kw (archive folder); the site resets connections to automated access.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Arabic report published by Kuwait's planning secretariat on the 2022 Government AI Readiness Index, reviewing how governments, including Kuwait, are prepared to use AI in public services. Search snippets indicate it covers the index's pillars (government, technology sector, data and infrastructure); Kuwait's results could not be confirmed from the file in this review.",
+      "ai_governance_relevance": "Primary-source material for assessing index-readiness.",
+      "source_url": "https://scpd.gov.kw/archive/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D9%85%D8%A4%D8%B4%D8%B1%20%D8%A7%D9%84%D8%AC%D8%A7%D9%87%D8%B2%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D9%8A%D8%A9%20%D9%84%D9%84%D8%B0%D9%83%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A%202022.pdf",
+      "official_pdf_url": "https://scpd.gov.kw/archive/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D9%85%D8%A4%D8%B4%D8%B1%20%D8%A7%D9%84%D8%AC%D8%A7%D9%87%D8%B2%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D9%8A%D8%A9%20%D9%84%D9%84%D8%B0%D9%83%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A%202022.pdf",
+      "official_webpage_url": null,
+      "language": "ar",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "primary_source_located",
+      "metadata_gaps": [
+        "Content and Kuwait's results to be confirmed from the document",
+        "Exact publication date",
+        "Whether the index itself is a third-party (Oxford Insights) index summarised by the secretariat"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "inaccessible",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-470618670484",
+      "organization_id": "o-7142da1b8912"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-4ac734f6f773",
+      "jurisdiction_id": "KWT",
+      "name": "Communication and Information Technology Regulatory Authority (CITRA)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Telecoms/ICT regulator; issues the Data Privacy Protection Regulation, the AI ethics guideline and the draft AI adoption guideline.",
+      "source_url": "https://www.citra.gov.kw/sites/ar/Lists/CITRALaws/Attachments/18/%D9%84%D8%A7%D8%A6%D8%AD%D8%A9%20%D8%AD%D9%85%D8%A7%D9%8A%D8%A9%20%D8%AE%D8%B5%D9%88%D8%B5%D9%8A%D8%A9%20%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA.pdf",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-1941ddc7a3c3",
+      "jurisdiction_id": "KWT",
+      "name": "Central Agency for Information Technology (CAIT)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Government digital-transformation agency; publisher of the national AI strategy.",
+      "source_url": "https://cait.gov.kw/media/filer_public/3f/b4/3fb49a45-4a78-4489-8898-b68e2bd260ca/kuwait_national_strategy.pdf",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-7142da1b8912",
+      "jurisdiction_id": "KWT",
+      "name": "General Secretariat of the Supreme Council for Planning and Development (GSSCPD)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Planning body; publishes Arabic reports on Kuwait's position in the Government AI Readiness Index.",
+      "source_url": "https://www.scpd.gov.kw/archive/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D9%85%D8%A4%D8%B4%D8%B1%20%D8%A7%D9%84%D8%AC%D8%A7%D9%87%D8%B2%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D9%8A%D8%A9%20%D9%84%D9%84%D8%B0%D9%83%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A%202023.pdf",
+      "authority_type": null,
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-0d8c9d1a0da3",
+      "url": "https://www.citra.gov.kw/sites/ar/Lists/CITRALaws/Attachments/18/%D9%84%D8%A7%D8%A6%D8%AD%D8%A9%20%D8%AD%D9%85%D8%A7%D9%8A%D8%A9%20%D8%AE%D8%B5%D9%88%D8%B5%D9%8A%D8%A9%20%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA.pdf",
+      "jurisdiction_ids": [
+        "KWT"
+      ],
+      "source_institutions": [
+        "Communication and Information Technology Regulatory Authority (CITRA)"
+      ],
+      "instrument_ids": [
+        "i-5d1a31374e3f"
+      ],
+      "categories_reviewed": [
+        "data-privacy"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Read CITRA decision page (DecisionsDetails id=6), Decision 26/2024 PDF and regulation PDF",
+      "http_status": 200,
+      "final_url": "https://www.citra.gov.kw/sites/ar/Lists/CITRALaws/Attachments/18/%D9%84%D8%A7%D8%A6%D8%AD%D8%A9%20%D8%AD%D9%85%D8%A7%D9%8A%D8%A9%20%D8%AE%D8%B5%D9%88%D8%B5%D9%8A%D8%A9%20%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA.pdf",
+      "link_status": "reachable",
+      "page_title": "لائحة حماية خصوصية البيانات (الإصدار 2.5) الصادرة بقرار رقم (26/2024)",
+      "document_language": "ar",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-2955a682454f",
+      "url": "https://www.citra.gov.kw/sites/ar/Lists/CITRALaws/Attachments/46/%D8%A7%D9%84%D8%AF%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D8%A5%D8%B1%D8%B4%D8%A7%D8%AF%D9%8A%20%D9%84%D8%A3%D8%AE%D9%84%D8%A7%D9%82%D9%8A%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-%20V%201.1.pdf",
+      "jurisdiction_ids": [
+        "KWT"
+      ],
+      "source_institutions": [
+        "Communication and Information Technology Regulatory Authority (CITRA)"
+      ],
+      "instrument_ids": [
+        "i-71fbcb22247f"
+      ],
+      "categories_reviewed": [
+        "ethics"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Downloaded and read the image-based PDF (rendered pages) and CITRA listing",
+      "http_status": 200,
+      "final_url": "https://www.citra.gov.kw/sites/ar/Lists/CITRALaws/Attachments/46/%D8%A7%D9%84%D8%AF%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D8%A5%D8%B1%D8%B4%D8%A7%D8%AF%D9%8A%20%D9%84%D8%A3%D8%AE%D9%84%D8%A7%D9%82%D9%8A%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-%20V%201.1.pdf",
+      "link_status": "reachable",
+      "page_title": "الدليل الإرشادي لأخلاقيات الذكاء الاصطناعي (V 1.1)",
+      "document_language": "ar",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-efd5862d9aea",
+      "url": "https://www.citra.gov.kw/sites/ar/GeneralConsultations/%D8%AF%D9%84%D9%8A%D9%84%20%D8%AA%D8%A8%D9%86%D9%8A%20%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A%20%D9%81%D9%8A%20%D8%AF%D9%88%D9%84%D8%A9%20%D8%A7%D9%84%D9%83%D9%88%D9%8A%D8%AA%20v1.pdf",
+      "jurisdiction_ids": [
+        "KWT"
+      ],
+      "source_institutions": [
+        "Communication and Information Technology Regulatory Authority (CITRA)"
+      ],
+      "instrument_ids": [
+        "i-10e15ee5348a"
+      ],
+      "categories_reviewed": [
+        "drafts",
+        "government-governance",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Read CITRA consultation page GCID=24 and the draft PDF (rendered pages)",
+      "http_status": 200,
+      "final_url": "https://www.citra.gov.kw/sites/ar/GeneralConsultations/%D8%AF%D9%84%D9%8A%D9%84%20%D8%AA%D8%A8%D9%86%D9%8A%20%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A%20%D9%81%D9%8A%20%D8%AF%D9%88%D9%84%D8%A9%20%D8%A7%D9%84%D9%83%D9%88%D9%8A%D8%AA%20v1.pdf",
+      "link_status": "reachable",
+      "page_title": "الدليل الإرشادي لتبني الذكاء الاصطناعي في دولة الكويت (V 1.0) – مسودة للاستشارة العامة",
+      "document_language": "ar",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-397719f4bc5f",
+      "url": "https://www.citra.gov.kw/sites/en/ReportsNdata/Kuwait%205G-Advanced%20and%20AI%20Era.pdf",
+      "jurisdiction_ids": [
+        "KWT"
+      ],
+      "source_institutions": [
+        "Communication and Information Technology Regulatory Authority (CITRA)"
+      ],
+      "instrument_ids": [
+        "i-b60cefdb7f5f"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "sectoral"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Downloaded and read PDF; date from CITRA Reports and Data listing",
+      "http_status": 200,
+      "final_url": "https://www.citra.gov.kw/sites/en/ReportsNdata/Kuwait%205G-Advanced%20and%20AI%20Era.pdf",
+      "link_status": "reachable",
+      "page_title": "Kuwait 5G-A & AI Era: National Connectivity Strategy",
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-c02cbc6cf472",
+      "url": "https://cait.gov.kw/media/filer_public/3f/b4/3fb49a45-4a78-4489-8898-b68e2bd260ca/kuwait_national_strategy.pdf",
+      "jurisdiction_ids": [
+        "KWT"
+      ],
+      "source_institutions": [
+        "Central Agency for Information Technology (CAIT)"
+      ],
+      "instrument_ids": [
+        "i-23145af93aa7"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "drafts"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Located through official URL; automated read blocked",
+      "http_status": null,
+      "final_url": "https://cait.gov.kw/media/filer_public/3f/b4/3fb49a45-4a78-4489-8898-b68e2bd260ca/kuwait_national_strategy.pdf",
+      "link_status": "inaccessible",
+      "page_title": "Kuwait National AI Strategy (2025–2028)",
+      "document_language": "en",
+      "error": "Connection reset by peer (cait.gov.kw)",
+      "content_type": null
+    },
+    {
+      "id": "s-884d8cc45eb4",
+      "url": "https://www.scpd.gov.kw/archive/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D9%85%D8%A4%D8%B4%D8%B1%20%D8%A7%D9%84%D8%AC%D8%A7%D9%87%D8%B2%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D9%8A%D8%A9%20%D9%84%D9%84%D8%B0%D9%83%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A%202023.pdf",
+      "jurisdiction_ids": [
+        "KWT"
+      ],
+      "source_institutions": [
+        "General Secretariat of the Supreme Council for Planning and Development (GSSCPD)"
+      ],
+      "instrument_ids": [
+        "i-b00012684522"
+      ],
+      "categories_reviewed": [
+        "index-readiness"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Located through official URL; automated read blocked",
+      "http_status": null,
+      "final_url": "https://www.scpd.gov.kw/archive/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D9%85%D8%A4%D8%B4%D8%B1%20%D8%A7%D9%84%D8%AC%D8%A7%D9%87%D8%B2%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D9%8A%D8%A9%20%D9%84%D9%84%D8%B0%D9%83%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A%202023.pdf",
+      "link_status": "inaccessible",
+      "page_title": "تقرير مؤشر الجاهزية الحكومية للذكاء الاصطناعي 2023",
+      "document_language": "ar",
+      "error": "Connection reset by peer (scpd.gov.kw)",
+      "content_type": null
+    },
+    {
+      "id": "s-470618670484",
+      "url": "https://scpd.gov.kw/archive/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D9%85%D8%A4%D8%B4%D8%B1%20%D8%A7%D9%84%D8%AC%D8%A7%D9%87%D8%B2%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D9%8A%D8%A9%20%D9%84%D9%84%D8%B0%D9%83%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A%202022.pdf",
+      "jurisdiction_ids": [
+        "KWT"
+      ],
+      "source_institutions": [
+        "General Secretariat of the Supreme Council for Planning and Development (GSSCPD)"
+      ],
+      "instrument_ids": [
+        "i-d1b988baefa6"
+      ],
+      "categories_reviewed": [
+        "index-readiness"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Located through official URL; automated read blocked",
+      "http_status": null,
+      "final_url": "https://scpd.gov.kw/archive/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D9%85%D8%A4%D8%B4%D8%B1%20%D8%A7%D9%84%D8%AC%D8%A7%D9%87%D8%B2%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D9%8A%D8%A9%20%D9%84%D9%84%D8%B0%D9%83%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A%202022.pdf",
+      "link_status": "inaccessible",
+      "page_title": "تقرير مؤشر الجاهزية الحكومية للذكاء الاصطناعي 2022",
+      "document_language": "ar",
+      "error": "Connection reset by peer (scpd.gov.kw)",
+      "content_type": null
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "KWT",
     "country": "Kuwait",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
-    "categories_searched": [
-      "strategy",
-      "government-governance",
-      "ethics",
-      "public-sector",
-      "procurement",
-      "cyber-security",
+    "review_status": "DEEP REVIEW COMPLETE",
+    "categories_searched": {
+      "binding-law": "Laws & regulations",
+      "strategy": "Strategy & action plans",
+      "government-governance": "Government AI governance",
+      "ethics": "Responsible AI & ethics",
+      "risk-assurance": "Risk & assurance",
+      "public-sector": "Public-sector AI",
+      "procurement": "AI procurement",
+      "cyber-security": "Safety & cybersecurity",
+      "data-privacy": "Data & privacy",
+      "transparency": "Transparency & accountability",
+      "standards": "Standards & certification",
+      "sandbox": "Regulatory sandboxes",
+      "index-readiness": "Indices & maturity",
+      "sectoral": "Sectoral governance",
+      "generative-ai": "Generative & agentic AI",
+      "drafts": "Drafts & consultations",
+      "international": "Regional & international",
+      "historical": "Historical publications"
+    },
+    "categories_with_findings": [
       "data-privacy",
-      "risk-assurance",
-      "transparency"
+      "drafts",
+      "ethics",
+      "government-governance",
+      "index-readiness",
+      "public-sector",
+      "sectoral",
+      "strategy"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_where_no_material_was_found": [
       "binding-law",
-      "strategy",
-      "government-governance",
-      "ethics",
       "risk-assurance",
-      "public-sector",
       "procurement",
       "cyber-security",
-      "data-privacy",
       "transparency",
       "standards",
       "sandbox",
-      "index-readiness",
-      "sectoral",
       "generative-ai",
-      "drafts",
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Kuwait \"الذكاء الاصطناعي\" (استراتيجية OR تنظيم OR أخلاقيات) government ministry official",
       "Kuwait \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Kuwait government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Kuwait \"الذكاء الاصطناعي\" cybersecurity authority secure development safety guidelines",
-      "Kuwait privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Kuwait privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "citra.gov.kw الدليل الإرشادي لتبني الذكاء الاصطناعي في دولة الكويت pdf",
+      "CITRA CITRALaws list pages 1-5 (regulations and guidelines)",
+      "CITRA regulatory decisions list; CITRA general consultations list; CITRA reports and data",
+      "Kuwait national artificial intelligence strategy CAIT official document",
+      "cait.gov.kw National AI Strategy Kuwait 2025-2028 pdf",
+      "\"Kuwait National AI Strategy\" CAIT draft 2025 \"Central Agency for Information Technology\"",
+      "الاستراتيجية الوطنية للذكاء الاصطناعي الكويت الجهاز المركزي لتكنولوجيا المعلومات مسودة",
+      "scpd.gov.kw مؤشر الجاهزية الحكومية للذكاء الاصطناعي تقرير",
+      "الكويت قانون حماية البيانات الشخصية 2025 مرسوم بقانون الذكاء الاصطناعي",
+      "بنك الكويت المركزي الذكاء الاصطناعي تعليمات إطار حوكمة",
+      "Central Bank of Kuwait artificial intelligence instructions banks circular",
+      "Central Bank of Kuwait regulatory sandbox framework instructions artificial intelligence cbk.gov.kw",
+      "هيئة أسواق المال الكويت الذكاء الاصطناعي تعليمات",
+      "المركز الوطني للأمن السيبراني الكويت الذكاء الاصطناعي إرشادات",
+      "Kuwait National Cyber Security Center ncsc.gov.kw artificial intelligence guidelines framework",
+      "وزارة الصحة الكويت سياسة استخدام الذكاء الاصطناعي في الرعاية الصحية",
+      "moh.gov.kw الدليل العملي لاستخدام أدوات الذكاء الاصطناعي اللغوية في الممارسة الصحية",
+      "مرسوم بقانون الكويت 2025 \"الذكاء الاصطناعي\" الكويت اليوم",
+      "مرسوم بقانون تنظيم الإعلام الكويت 2026 صناع المحتوى الذكاء الاصطناعي صدر الكويت اليوم رقم",
+      "قانون تنظيم الإعلام 102 لسنة 2026 الذكاء الاصطناعي مادة المحتوى المولد",
+      "الهيئة العامة للذكاء الاصطناعي الكويت مرسوم إنشاء",
+      "kna.kw اقتراح بقانون إنشاء الهيئة العامة للذكاء الاصطناعي",
+      "\"الهيئة العامة للاتصالات\" \"أخلاقيات الذكاء الاصطناعي\" دليل إرشادي إصدار",
+      "UNESCO readiness assessment methodology Kuwait artificial intelligence ethics",
+      "citra.gov.kw الدليل الإرشادي لتبني الذكاء الاصطناعي في دولة الكويت pdf",
+      "CITRA CITRALaws list pages 1-5 (regulations and guidelines)",
+      "CITRA regulatory decisions list; CITRA general consultations list; CITRA reports and data",
+      "Kuwait national artificial intelligence strategy CAIT official document",
+      "cait.gov.kw National AI Strategy Kuwait 2025-2028 pdf",
+      "\"Kuwait National AI Strategy\" CAIT draft 2025 \"Central Agency for Information Technology\"",
+      "الاستراتيجية الوطنية للذكاء الاصطناعي الكويت الجهاز المركزي لتكنولوجيا المعلومات مسودة",
+      "scpd.gov.kw مؤشر الجاهزية الحكومية للذكاء الاصطناعي تقرير",
+      "الكويت قانون حماية البيانات الشخصية 2025 مرسوم بقانون الذكاء الاصطناعي",
+      "بنك الكويت المركزي الذكاء الاصطناعي تعليمات إطار حوكمة",
+      "Central Bank of Kuwait artificial intelligence instructions banks circular",
+      "Central Bank of Kuwait regulatory sandbox framework instructions artificial intelligence cbk.gov.kw",
+      "هيئة أسواق المال الكويت الذكاء الاصطناعي تعليمات",
+      "المركز الوطني للأمن السيبراني الكويت الذكاء الاصطناعي إرشادات",
+      "Kuwait National Cyber Security Center ncsc.gov.kw artificial intelligence guidelines framework",
+      "وزارة الصحة الكويت سياسة استخدام الذكاء الاصطناعي في الرعاية الصحية",
+      "moh.gov.kw الدليل العملي لاستخدام أدوات الذكاء الاصطناعي اللغوية في الممارسة الصحية",
+      "مرسوم بقانون الكويت 2025 \"الذكاء الاصطناعي\" الكويت اليوم",
+      "مرسوم بقانون تنظيم الإعلام الكويت 2026 صناع المحتوى الذكاء الاصطناعي صدر الكويت اليوم رقم",
+      "قانون تنظيم الإعلام 102 لسنة 2026 الذكاء الاصطناعي مادة المحتوى المولد",
+      "الهيئة العامة للذكاء الاصطناعي الكويت مرسوم إنشاء",
+      "kna.kw اقتراح بقانون إنشاء الهيئة العامة للذكاء الاصطناعي",
+      "\"الهيئة العامة للاتصالات\" \"أخلاقيات الذكاء الاصطناعي\" دليل إرشادي إصدار",
+      "UNESCO readiness assessment methodology Kuwait artificial intelligence ethics"
     ],
     "review_date": "2026-10-06",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": "No AI-specific law, AI procurement rules, AI security guidance, transparency/algorithm register, national AI standards adoption, AI sandbox, generative-AI guidance or superseded AI strategy was found on official Kuwaiti sources. Several government sites (CAIT, SCPD, MoH, NCSC, Kuwait Al-Yawm) block automated reading, so absence findings for those bodies rely on search discovery.",
     "discovery_result_count": 13,
     "focused_result_count": 11
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-528da73f0e93",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "KWT",
+      "instrument_id": "i-5d1a31374e3f",
+      "title": "Data Privacy Protection Regulation (version 2.5), issued by CITRA Decision No. 26 of 2024",
+      "detail": "Added to the radar (published 2024-02-07).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.citra.gov.kw/sites/ar/Lists/CITRALaws/Attachments/18/%D9%84%D8%A7%D8%A6%D8%AD%D8%A9%20%D8%AD%D9%85%D8%A7%D9%8A%D8%A9%20%D8%AE%D8%B5%D9%88%D8%B5%D9%8A%D8%A9%20%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-11450a938922",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "KWT",
+      "instrument_id": "i-71fbcb22247f",
+      "title": "AI Ethics Guideline (version 1.1)",
+      "detail": "Added to the radar (published 2024).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.citra.gov.kw/sites/ar/Lists/CITRALaws/Attachments/46/%D8%A7%D9%84%D8%AF%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D8%A5%D8%B1%D8%B4%D8%A7%D8%AF%D9%8A%20%D9%84%D8%A3%D8%AE%D9%84%D8%A7%D9%82%D9%8A%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-%20V%201.1.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-a3fee018048f",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "KWT",
+      "instrument_id": "i-10e15ee5348a",
+      "title": "Guideline for the Adoption of Artificial Intelligence in the State of Kuwait (v1.0) – public consultation draft",
+      "detail": "Added to the radar (published 2026-02-19).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.citra.gov.kw/sites/ar/GeneralConsultations/%D8%AF%D9%84%D9%8A%D9%84%20%D8%AA%D8%A8%D9%86%D9%8A%20%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A%20%D9%81%D9%8A%20%D8%AF%D9%88%D9%84%D8%A9%20%D8%A7%D9%84%D9%83%D9%88%D9%8A%D8%AA%20v1.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-08ef1b180ab9",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "KWT",
+      "instrument_id": "i-b60cefdb7f5f",
+      "title": "Kuwait 5G-Advanced and AI Era – National Connectivity Strategy (2026)",
+      "detail": "Added to the radar (published 2026-07-09).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.citra.gov.kw/sites/en/ReportsNdata/Kuwait%205G-Advanced%20and%20AI%20Era.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-26cc57f3d81c",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "KWT",
+      "instrument_id": "i-23145af93aa7",
+      "title": "Kuwait National Artificial Intelligence Strategy 2025–2028 (draft)",
+      "detail": "Added to the radar (published 2025).",
+      "from": null,
+      "to": null,
+      "source_url": "https://cait.gov.kw/media/filer_public/3f/b4/3fb49a45-4a78-4489-8898-b68e2bd260ca/kuwait_national_strategy.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-d494a63a86f1",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "KWT",
+      "instrument_id": "i-b00012684522",
+      "title": "Government AI Readiness Index Report 2023 (Kuwait)",
+      "detail": "Added to the radar (published 2023).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.scpd.gov.kw/archive/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D9%85%D8%A4%D8%B4%D8%B1%20%D8%A7%D9%84%D8%AC%D8%A7%D9%87%D8%B2%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D9%8A%D8%A9%20%D9%84%D9%84%D8%B0%D9%83%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A%202023.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-382af12bfae6",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "KWT",
+      "instrument_id": "i-d1b988baefa6",
+      "title": "Government AI Readiness Index Report 2022 (Kuwait)",
+      "detail": "Added to the radar (published 2022).",
+      "from": null,
+      "to": null,
+      "source_url": "https://scpd.gov.kw/archive/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D9%85%D8%A4%D8%B4%D8%B1%20%D8%A7%D9%84%D8%AC%D8%A7%D9%87%D8%B2%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D9%8A%D8%A9%20%D9%84%D9%84%D8%B0%D9%83%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A%202022.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-7ae1e119a680",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "KWT",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 7 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-f988a14af75d",
+      "date": "2026-07-09",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "KWT",
+      "instrument_id": "i-b60cefdb7f5f",
+      "title": "CITRA publishes Kuwait 5G-A & AI Era strategy",
+      "detail": "CITRA publishes its national connectivity strategy whitepaper, including an AI & Data Governance chapter and a target to publish a CITRA AI Policy for Telecommunications in 2027.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.citra.gov.kw/sites/en/ReportsNdata/Kuwait%205G-Advanced%20and%20AI%20Era.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-bb42bd9bc33e",
+      "date": "2026-02-19",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "consultation",
+      "jurisdiction_id": "KWT",
+      "instrument_id": "i-10e15ee5348a",
+      "title": "CITRA opens consultation on draft AI Adoption Guideline",
+      "detail": "Public consultation on the draft Guideline for the Adoption of AI in the State of Kuwait (v1.0), open until 20 April 2026.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.citra.gov.kw/sites/ar/Pages/GCDetails.aspx?GCID=24",
+      "needs_review": false
+    },
+    {
+      "id": "c-b0e0b21ad2ed",
+      "date": "2024-02-07",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "KWT",
+      "instrument_id": "i-5d1a31374e3f",
+      "title": "CITRA issues Data Privacy Protection Regulation (Decision 26/2024)",
+      "detail": "CITRA Board chair Decision No. 26/2024 puts the Data Privacy Protection Regulation into effect and repeals the 2021 regulation (Decision 42/2021).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.citra.gov.kw/sites/ar/Pages/DecisionsDetails.aspx?id=6",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "مرسوم بقانون رقم 102 لسنة 2026 بإصدار قانون تنظيم الإعلام",
+      "english_title": "Decree-Law No. 102 of 2026 promulgating the Media Regulation Law",
+      "issuing_authority": "State of Kuwait (Amiri decree-law); Ministry of Information",
+      "note": "Published in Kuwait Al-Yawm issue 1811 (2026) per press reports; definitions reportedly bring content produced with AI within 'media content'. Official gazette not readable by automation; add once the official text is located and the AI provisions are confirmed.",
+      "found": "2026-10-06"
+    },
+    {
+      "title": "الدليل العملي لاستخدام أدوات الذكاء الاصطناعي اللغوية في الممارسة الصحية",
+      "english_title": "Practical guide on the use of AI language tools in health practice (Ministry of Health administrative decision)",
+      "issuing_authority": "Ministry of Health",
+      "note": "Approved by administrative decision of the MoH Undersecretary (2026, per press reports); risk-tiered uses, ban on entering patient data into LLM tools. No official text found online; moh.gov.kw blocks automated access.",
+      "found": "2026-10-06"
+    },
+    {
+      "title": "اقتراح بقانون بإنشاء الهيئة العامة للذكاء الاصطناعي",
+      "english_title": "Bill proposal to establish the Public Authority for Artificial Intelligence",
+      "issuing_authority": "National Assembly (five MPs)",
+      "note": "Private members' bill reported in 2023; no official text located on kna.kw. The Assembly has been suspended since May 2024, so the bill has lapsed in practice.",
+      "found": "2026-10-06"
+    },
+    {
+      "title": "Kuwait Declaration on responsible AI (Digital Cooperation Organization)",
+      "english_title": "DCO Kuwait Declaration",
+      "issuing_authority": "Digital Cooperation Organization",
+      "note": "Adopted by the DCO General Assembly hosted by Kuwait (2025, per press reports). International instrument: belongs in a regional/international file if one is created, not in KWT.json.",
+      "found": "2026-10-06"
+    }
+  ]
 }

@@ -10,78 +10,1491 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Morocco has no AI-specific law; AI governance runs through the digital strategy, data-protection regulation and a recent layer of election and sector rules. The Ministry of Digital Transition and Administrative Reform leads policy through the Digital Morocco 2030 strategy (2024), which names AI as an accelerator, and the first National AI Conference (July 2025), whose synthesis report calls for an AI legal framework, an ethics regulator and a national ethics charter. Binding obligations come mainly from Law 09-08 on personal data, enforced by the CNDP, which imposed a facial-recognition moratorium in 2019 and since 2020 allows the technology only with prior authorisation; the CNDP opened hearings on AI in March 2025 with a view to a dedicated deliberation. For the September 2026 elections, Organic Law 53.25 explicitly covers offences committed with AI tools, the audiovisual regulator HACA banned misleading AI-generated electoral content on radio and TV, and the CNDP required AI content to be flagged. Constitutional advisory councils (CESE in 2024, CSEFRS in 2026 for education) have called for a national AI strategy and framework; a digital-administration bill with AI provisions and an AI roadmap ('Maroc IA 2030') are announced but not yet published.",
+    "lead_institutions": [
+      "Ministry of Digital Transition and Administrative Reform (MTNRA)",
+      "Commission Nationale de contrôle de la protection des Données à caractère Personnel (CNDP)",
+      "Haute Autorité de la Communication Audiovisuelle (HACA)",
+      "Direction Générale de la Sécurité des Systèmes d'Information (DGSSI)",
+      "Conseil Economique, Social et Environnemental (CESE)"
+    ],
+    "last_deep_review": "2026-10-06",
+    "review_notes": "Deep review 2026-10-06 (resumed from an interrupted run; earlier downloads re-checked by hash against the live official URLs). No instruments existed before; 11 added, all read from official PDFs except Decree 2-09-165 (scanned image). Arabic BO text of Organic Law 53.25 has a poorly encoded header; the BO date (29 January 2026) is read from it. Sites that blocked automated reading: chambredesrepresentants.ma (Cloudflare challenge), so private members' AI bills could not be read; dgssi.gov.ma French pages reset the connection. The CSEFRS French PDF URL returns 404; the Arabic PDF was used. Considered and not recorded: DGSSI National Cybersecurity Strategy 2030 (mentions AI only as an emerging-technology training need, no AI guidance); Law 05-20 on cybersecurity (no AI provisions); CNDP press release of 18 March 2025 on AI and personal data (press release announcing hearings, no guidance document); HACA study on AI in audiovisual production (study, not an instrument); Penal Code Article 447-2 (deepfake-type offence but no explicit AI wording, not verified on an official full-text source). Morocco is listed in AU and UNESCO regional files (Continental AI Strategy, UNESCO Recommendation apply automatically); it is not listed as a party/signatory in data/regional/COE.json for CETS 225 and no official Moroccan signature was found. Convention 108 accession (2019) is recited in CNDP deliberations but is a data-protection treaty, not recorded here. News sites were used only for discovery."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-ed94695702d2",
+      "official_title": "Loi n° 09-08 relative à la protection des personnes physiques à l'égard du traitement des données à caractère personnel",
+      "english_title": "Law No. 09-08 on the protection of individuals with regard to the processing of personal data (promulgated by Dahir No. 1-09-15 of 18 February 2009)",
+      "jurisdiction_id": "MAR",
+      "issuing_authority": "Commission Nationale de contrôle de la protection des Données à caractère Personnel (CNDP)",
+      "publisher_name": "Commission Nationale de contrôle de la protection des Données à caractère Personnel (CNDP)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "data-privacy"
+      ],
+      "category": "data-privacy",
+      "subcategory": null,
+      "legal_status": "binding_law",
+      "publication_date": "2009-03-05",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "In force; published in Bulletin Officiel No. 5714 of 5 March 2009. Text read from the CNDP copy of the BO French edition.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Morocco's general data protection law, which governs any processing of personal data, including AI training and deployment that uses such data, and creates the CNDP as supervisory authority. It sets lawfulness, purpose, proportionality and transparency rules, prior declaration or authorisation of processing, data-subject rights and cross-border transfer limits; Article 11 bars court decisions assessing a person's behaviour from being based on automated processing intended to evaluate aspects of their personality.",
+      "ai_governance_relevance": "Primary-source material for assessing data-privacy.",
+      "source_url": "https://www.cndp.ma/wp-content/uploads/2023/11/Loi-09-08-Fr.pdf",
+      "official_pdf_url": "https://www.cndp.ma/wp-content/uploads/2023/11/Loi-09-08-Fr.pdf",
+      "official_webpage_url": "https://www.cndp.ma/loi-09-08/",
+      "language": "fr",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-5b28496ea44b",
+        "i-1c18bfe97963"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Entry-into-force date not stated in the text (published in BO No. 5714 of 5 March 2009; transitional regime in Article 67)",
+        "French text is the BO French edition; the Arabic text is the authoritative version"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "in_force",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-f56f5ff0d92e",
+      "organization_id": "o-f6221fc52472"
+    },
+    {
+      "id": "i-85662e21036c",
+      "official_title": "Décret n° 2-09-165 du 21 mai 2009 pris pour l'application de la loi n° 09-08 relative à la protection des personnes physiques à l'égard du traitement des données à caractère personnel",
+      "english_title": "Decree No. 2-09-165 of 21 May 2009 implementing Law No. 09-08 on personal data protection",
+      "jurisdiction_id": "MAR",
+      "issuing_authority": "Head of Government (Chef du Gouvernement)",
+      "publisher_name": "Head of Government (Chef du Gouvernement)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "data-privacy"
+      ],
+      "category": "data-privacy",
+      "subcategory": null,
+      "legal_status": "binding_regulation",
+      "publication_date": "2009-06-18",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Listed by the CNDP as part of the regulatory framework; scanned PDF not machine-readable.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Implementing decree for Law 09-08 that organises the CNDP and the procedures for declarations, authorisations and transfers of personal data. It is the procedural basis on which the CNDP handles prior-authorisation requests, such as those required for facial recognition systems.",
+      "ai_governance_relevance": "Primary-source material for assessing data-privacy.",
+      "source_url": "https://www.cndp.ma/wp-content/uploads/2023/06/Decret-2-09-165-FR.pdf",
+      "official_pdf_url": "https://www.cndp.ma/wp-content/uploads/2023/06/Decret-2-09-165-FR.pdf",
+      "official_webpage_url": "https://www.cndp.ma/decret-n-2-09-165/",
+      "language": "fr",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "primary_source_located",
+      "metadata_gaps": [
+        "Official PDF is a scanned image without a text layer; title, date and BO reference (No. 5744 of 18 June 2009) taken from the CNDP regulatory-framework page and from CNDP Deliberation D-195-EUS/2020",
+        "Entry-into-force date"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "in_force",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-d7cc1d57c235",
+      "organization_id": "o-359dbfa3edb9"
+    },
+    {
+      "id": "i-5b28496ea44b",
+      "official_title": "Délibération n° D-194-2019 du 30/08/2019 relative à un moratoire sur la reconnaissance faciale",
+      "english_title": "CNDP Deliberation No. D-194-2019 of 30 August 2019 on a moratorium on facial recognition",
+      "jurisdiction_id": "MAR",
+      "issuing_authority": "Commission Nationale de contrôle de la protection des Données à caractère Personnel (CNDP)",
+      "publisher_name": "Commission Nationale de contrôle de la protection des Données à caractère Personnel (CNDP)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "data-privacy",
+        "historical"
+      ],
+      "category": "data-privacy",
+      "subcategory": null,
+      "legal_status": "administrative_policy_mandatory_in_scope",
+      "publication_date": "2019-08-30",
+      "effective_date": "2019-09-02",
+      "last_amended_date": null,
+      "current_status": "Expired 31 March 2020, extended by Deliberation D-97-2020 to 31 December 2020 (as recited in D-195-EUS/2020); replaced by the facial-recognition usage framework in D-195-EUS/2020.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "The CNDP imposed a seven-month moratorium, from 2 September 2019, on the use of facial recognition, during which it would issue no authorisations for the technique. The pause was meant to allow a broad consultation of public, private, civil-society and expert stakeholders before a deliberation framing the purposes for which facial recognition may be used.",
+      "ai_governance_relevance": "Primary-source material for assessing data-privacy.",
+      "source_url": "https://www.cndp.ma/wp-content/uploads/2023/01/deliberation-n-D-194-2019-30-08-2019.pdf",
+      "official_pdf_url": "https://www.cndp.ma/wp-content/uploads/2023/01/deliberation-n-D-194-2019-30-08-2019.pdf",
+      "official_webpage_url": null,
+      "language": "fr",
+      "supersedes": [],
+      "superseded_by": [
+        "i-1c18bfe97963"
+      ],
+      "related_instruments": [
+        "i-ed94695702d2"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "superseded",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-fc073a5c5787",
+      "organization_id": "o-f6221fc52472"
+    },
+    {
+      "id": "i-1c18bfe97963",
+      "official_title": "Délibération n° D-195-EUS/2020 du 30/12/2020 relative à la définition de l'usage des technologies de reconnaissance faciale",
+      "english_title": "CNDP Deliberation No. D-195-EUS/2020 of 30 December 2020 defining the use of facial recognition technologies",
+      "jurisdiction_id": "MAR",
+      "issuing_authority": "Commission Nationale de contrôle de la protection des Données à caractère Personnel (CNDP)",
+      "publisher_name": "Commission Nationale de contrôle de la protection des Données à caractère Personnel (CNDP)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "data-privacy",
+        "risk-assurance"
+      ],
+      "category": "data-privacy",
+      "subcategory": null,
+      "legal_status": "administrative_policy_mandatory_in_scope",
+      "publication_date": "2020-12-30",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Adopted 30 December 2020 in the context of the health state of emergency; recalls sector deliberations D-108-EUS/2020 (remote bank accounts) and D-126-EUS/2020 (social-security proof of life).",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Ends the facial-recognition moratorium by allowing data controllers to use facial recognition after prior authorisation from the CNDP, provided they commit to switch authentication to the national trusted third-party identity system once it is available and design their systems to allow that switch. The CNDP states strong reservations about each provider building its own biometric base (sometimes hosted abroad) and recommends separating usage and authentication data.",
+      "ai_governance_relevance": "Primary-source material for assessing data-privacy.",
+      "source_url": "https://www.cndp.ma/wp-content/uploads/2023/12/CNDP-Dlibration_D-195-EUS-2020-Usage_de_la_reconnaissance_faciale-_20210421.pdf",
+      "official_pdf_url": "https://www.cndp.ma/wp-content/uploads/2023/12/CNDP-Dlibration_D-195-EUS-2020-Usage_de_la_reconnaissance_faciale-_20210421.pdf",
+      "official_webpage_url": null,
+      "language": "fr",
+      "supersedes": [
+        "i-5b28496ea44b"
+      ],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-ed94695702d2"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "adopted",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-19e763246704",
+      "organization_id": "o-f6221fc52472"
+    },
+    {
+      "id": "i-6346ef470c89",
+      "official_title": "Les dix impératifs à respecter durant les opérations et les consultations électorales",
+      "english_title": "CNDP: Ten imperatives to respect during electoral operations and consultations (2026)",
+      "jurisdiction_id": "MAR",
+      "issuing_authority": "Commission Nationale de contrôle de la protection des Données à caractère Personnel (CNDP)",
+      "publisher_name": "Commission Nationale de contrôle de la protection des Données à caractère Personnel (CNDP)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "data-privacy",
+        "generative-ai"
+      ],
+      "category": "data-privacy",
+      "subcategory": null,
+      "legal_status": "nonbinding_guidance",
+      "publication_date": "2026-08-03",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Published by the CNDP on 3 August 2026 ahead of the 23 September 2026 legislative elections.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "One-page CNDP guidance for parties, candidates and other actors processing personal data in the 2026 elections. Among ten rules grounded in Law 09-08, it requires flagging any AI-produced content, citing Article 447-2 of the Penal Code and Articles 39, 51 and 53 of Organic Law 53-25 on the House of Representatives.",
+      "ai_governance_relevance": "Primary-source material for assessing data-privacy.",
+      "source_url": "https://www.cndp.ma/wp-content/uploads/2026/08/CNDP-Les-dix-imperatifs-a-respecter-durant-les-operations-electorales-Fr-20260803-1.pdf",
+      "official_pdf_url": "https://www.cndp.ma/wp-content/uploads/2026/08/CNDP-Les-dix-imperatifs-a-respecter-durant-les-operations-electorales-Fr-20260803-1.pdf",
+      "official_webpage_url": null,
+      "language": "fr",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-ed94695702d2"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-6a2b00b958e9",
+      "organization_id": "o-f6221fc52472"
+    },
+    {
+      "id": "i-f34ef06a54e1",
+      "official_title": "القانون التنظيمي رقم 53.25 القاضي بتغيير وتتميم القانون التنظيمي رقم 27.11 المتعلق بمجلس النواب",
+      "english_title": "Organic Law No. 53.25 amending and supplementing Organic Law No. 27.11 on the House of Representatives (promulgated by Dahir No. 1.25.70 of 16 January 2026)",
+      "jurisdiction_id": "MAR",
+      "issuing_authority": "Parliament of the Kingdom of Morocco (House of Representatives and House of Councillors)",
+      "publisher_name": "Parliament of the Kingdom of Morocco (House of Representatives and House of Councillors)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "binding-law",
+        "generative-ai"
+      ],
+      "category": "binding-law",
+      "subcategory": null,
+      "legal_status": "binding_law",
+      "publication_date": "2026-01-29",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Promulgated by Dahir No. 1.25.70 of 16 January 2026 after Constitutional Court decision No. 259/25 of 24 December 2025; published in Bulletin Officiel (Arabic edition) No. 7478. Not AI-specific: a general electoral law with explicit AI provisions.",
+      "scope": null,
+      "sectors": [
+        "elections"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Amends the organic law on elections to the House of Representatives and adds explicit references to 'artificial intelligence tools' in the electoral offences. It criminalises spreading false news, defamatory or fabricated content, unlawful use of a person's voice or image, and making content with false or falsified material intended to undermine the integrity of elections, when done by any means including AI tools, social networks or online platforms, with prison terms and fines (amended Articles 39, 51 and 53 and following).",
+      "ai_governance_relevance": "Primary-source material for assessing binding-law.",
+      "source_url": "https://www.sgg.gov.ma/Portals/1/lois/Loi_organique_53.25_ar.pdf",
+      "official_pdf_url": "https://www.sgg.gov.ma/Portals/1/lois/Loi_organique_53.25_ar.pdf",
+      "official_webpage_url": null,
+      "language": "ar",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "BO issue date read from a poorly encoded header (BO No. 7478, 9 Chaabane 1447 = 29 January 2026)",
+        "Effective date: Article 3 applies the law to the next House of Representatives elections held after its publication"
+      ],
+      "source_kind": "official_publication",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "in_force",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-09bae2b3ac38",
+      "organization_id": "o-a3eb61b30f6a"
+    },
+    {
+      "id": "i-7d51cfc9e50f",
+      "official_title": "Décision du CSCA n° 50-26 datée du 16 juin 2026 (30 hija 1447) relative à la garantie du pluralisme de l'expression politique dans les services de communication audiovisuelle pendant les élections législatives générales de l'année 2026",
+      "english_title": "HACA/CSCA Decision No. 50-26 of 16 June 2026 on political pluralism in audiovisual services during the 2026 general legislative elections",
+      "jurisdiction_id": "MAR",
+      "issuing_authority": "Haute Autorité de la Communication Audiovisuelle (HACA) – Conseil Supérieur de la Communication Audiovisuelle (CSCA)",
+      "publisher_name": "Haute Autorité de la Communication Audiovisuelle (HACA) – Conseil Supérieur de la Communication Audiovisuelle (CSCA)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "sectoral",
+        "generative-ai",
+        "transparency"
+      ],
+      "category": "sectoral",
+      "subcategory": null,
+      "legal_status": "administrative_policy_mandatory_in_scope",
+      "publication_date": "2026-06-16",
+      "effective_date": "2026-08-15",
+      "last_amended_date": null,
+      "current_status": "Adopted 16 June 2026; applies during the electoral period 15 August–22 September 2026. Article 30 provides for publication in the Bulletin Officiel (BO reference not checked).",
+      "scope": null,
+      "sectors": [
+        "media",
+        "elections"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Binding rules for public and private radio and TV services during the 2026 electoral period (15 August to 22 September 2026). Article 6 bars broadcasters from airing electoral content generated or altered by AI that could mislead the public or harm the integrity of the debate; such content may be aired only for information, explanation or verification, with a clear, permanent label, and must not simulate a real person's appearance, voice or identity unless this is visibly disclosed.",
+      "ai_governance_relevance": "Primary-source material for assessing sectoral.",
+      "source_url": "https://www.haca.ma/sites/default/files/upload/CSCA_D%C3%A9cision%20n%C2%B050-26_Elections%202026%20VF.pdf",
+      "official_pdf_url": "https://www.haca.ma/sites/default/files/upload/CSCA_D%C3%A9cision%20n%C2%B050-26_Elections%202026%20VF.pdf",
+      "official_webpage_url": "https://www.haca.ma/en/node/8171",
+      "language": "fr",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Bulletin Officiel publication reference"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "adopted",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-22b6db45190d",
+      "organization_id": "o-1856a0ba09a4"
+    },
+    {
+      "id": "i-89fd503bf553",
+      "official_title": "Stratégie nationale « Digital Morocco 2030 »",
+      "english_title": "National Strategy \"Digital Morocco 2030\"",
+      "jurisdiction_id": "MAR",
+      "issuing_authority": "Ministry of Digital Transition and Administrative Reform (Ministère de la Transition Numérique et de la Réforme de l'Administration)",
+      "publisher_name": "Ministry of Digital Transition and Administrative Reform (Ministère de la Transition Numérique et de la Réforme de l'Administration)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "strategy",
+        "public-sector"
+      ],
+      "category": "strategy",
+      "subcategory": null,
+      "legal_status": "national_strategy",
+      "publication_date": "2024-09-25",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Presented September 2024; ministry page dated 25 September 2024 hosts the institutional brochure (FR/EN). AI-specific roadmap 'Maroc IA 2030' announced in 2026 has no published document yet (see leads).",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Morocco's national digital strategy to 2030, aiming to make the country a digital hub. It rests on two axes, digitising public services for citizens and businesses and boosting the digital economy, with artificial intelligence, cloud and digital talent named as accelerators; headline targets include 240,000 digital jobs and a MAD 100 billion contribution to GDP by 2030.",
+      "ai_governance_relevance": "Primary-source material for assessing strategy.",
+      "source_url": "https://www.mmsp.gov.ma/sites/default/files/2024-09/PlaquetteInstitutionnel_18092024_Fra.pdf",
+      "official_pdf_url": "https://www.mmsp.gov.ma/sites/default/files/2024-09/PlaquetteInstitutionnel_18092024_Fra.pdf",
+      "official_webpage_url": "https://www.mmsp.gov.ma/fr/actualites/cliquez-ici-pour-d%C3%A9couvrir-la-strat%C3%A9gie-digital-morocco-2030",
+      "language": "fr",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Official document is an image-only institutional brochure (French and English versions); content read from page images, no text layer"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-183bf59b2a0f",
+      "organization_id": "o-01f9f731bfa3"
+    },
+    {
+      "id": "i-5ed76531f7a0",
+      "official_title": "Rapport de synthèse des Assises nationales de l'intelligence artificielle",
+      "english_title": "Synthesis report of the First National Conference (Assises) on Artificial Intelligence",
+      "jurisdiction_id": "MAR",
+      "issuing_authority": "Ministry of Digital Transition and Administrative Reform (Ministère de la Transition Numérique et de la Réforme de l'Administration)",
+      "publisher_name": "Ministry of Digital Transition and Administrative Reform (Ministère de la Transition Numérique et de la Réforme de l'Administration)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "strategy",
+        "ethics",
+        "government-governance"
+      ],
+      "category": "strategy",
+      "subcategory": null,
+      "legal_status": "nonbinding_guidance",
+      "publication_date": "2025-09-29",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Published 29 September 2025 in Arabic, Amazigh, French and English. A conference report, not an adopted strategy.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Official synthesis of the first national AI conference held in Rabat on 1–2 July 2025, setting out orientations for a sovereign, ethical and inclusive national AI roadmap under Digital Morocco 2030. It records calls for an AI legal framework (the minister announced a bill in preparation), an ethics regulator, a national AI ethics charter, sovereign infrastructure, skills and sector adoption.",
+      "ai_governance_relevance": "Primary-source material for assessing strategy.",
+      "source_url": "https://www.mmsp.gov.ma/sites/default/files/2025-09/Rapport%20de%20Synthe%CC%80se%20V7%20VF.pdf",
+      "official_pdf_url": "https://www.mmsp.gov.ma/sites/default/files/2025-09/Rapport%20de%20Synthe%CC%80se%20V7%20VF.pdf",
+      "official_webpage_url": "https://www.mmsp.gov.ma/fr/actualites/rapport-de-synth%C3%A8se-des-assises-nationales-de-l%E2%80%99intelligence-artificielle",
+      "language": "fr",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-07e175c7238a",
+      "organization_id": "o-01f9f731bfa3"
+    },
+    {
+      "id": "i-8290c060ee4d",
+      "official_title": "Avis du Conseil Economique, Social et Environnemental : Quels usages et quelles perspectives de développement de l'intelligence artificielle au Maroc ? (Auto-saisine n° 78/2024)",
+      "english_title": "CESE Opinion: What uses and prospects for the development of artificial intelligence in Morocco? (Own-initiative opinion No. 78/2024)",
+      "jurisdiction_id": "MAR",
+      "issuing_authority": "Conseil Economique, Social et Environnemental (CESE)",
+      "publisher_name": "Conseil Economique, Social et Environnemental (CESE)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "government-governance",
+        "strategy",
+        "ethics"
+      ],
+      "category": "government-governance",
+      "subcategory": null,
+      "legal_status": "regulatory_opinion",
+      "publication_date": "2024-06-27",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Adopted unanimously by the CESE General Assembly at its 159th ordinary session on 27 June 2024; PDF posted November 2024. Advisory, not binding.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Own-initiative opinion of the constitutional Economic, Social and Environmental Council on AI uses and prospects in Morocco. It finds no specific regulatory framework, slow open-data release, skills gaps and fragmented R&D, and calls for a national AI strategy aligned with the country's ambitions, together with recommendations on governance, ethics, data, skills and financing.",
+      "ai_governance_relevance": "Primary-source material for assessing government-governance.",
+      "source_url": "https://www.cese.ma/media/2024/11/AVAS78VFP1.pdf",
+      "official_pdf_url": "https://www.cese.ma/media/2024/11/AVAS78VFP1.pdf",
+      "official_webpage_url": "https://www.cese.ma/en/docs/quels-usages-et-quelles-perspectives-de-developpement-de-lintelligence-artificielle-au-maroc/",
+      "language": "fr",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-75daf59c6c2d",
+      "organization_id": "o-0930ed7506aa"
+    },
+    {
+      "id": "i-1593769b6417",
+      "official_title": "توصية من أجل اعتماد إطار وطني لتوجيه استعمال الذكاء الاصطناعي في التربية والتكوين والبحث العلمي (توصية رقم 2026/1)",
+      "english_title": "CSEFRS Recommendation No. 1/2026 for the adoption of a national framework to guide the use of artificial intelligence in education, training and scientific research",
+      "jurisdiction_id": "MAR",
+      "issuing_authority": "Conseil Supérieur de l'Éducation, de la Formation et de la Recherche Scientifique (CSEFRS)",
+      "publisher_name": "Conseil Supérieur de l'Éducation, de la Formation et de la Recherche Scientifique (CSEFRS)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "sectoral",
+        "generative-ai",
+        "ethics"
+      ],
+      "category": "sectoral",
+      "subcategory": null,
+      "legal_status": "regulatory_opinion",
+      "publication_date": "2026-04",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Adopted by the CSEFRS General Assembly at its 12th session on 14 April 2026; published June 2026. The French PDF link found in search (1-2026-Recommandation-lIA-FR.pdf) returned 404 on 2026-10-06; the Arabic PDF was read. Advisory, not binding.",
+      "scope": null,
+      "sectors": [
+        "education"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Recommendation of the constitutional Higher Council for Education, Training and Scientific Research noting that generative AI has entered schools faster than institutional rules. It calls for a national guidance framework for AI in education, training and research, setting institutional and regulatory foundations, guiding principles (including the child's best interests), alignment of short-term measures with strategy, family awareness and learner participation.",
+      "ai_governance_relevance": "Primary-source material for assessing sectoral.",
+      "source_url": "https://www.csefrs.ma/wp-content/uploads/woocommerce_uploads/2026/06/Recommandation-IA-AR.pdf",
+      "official_pdf_url": "https://www.csefrs.ma/wp-content/uploads/woocommerce_uploads/2026/06/Recommandation-IA-AR.pdf",
+      "official_webpage_url": "https://www.csefrs.ma/%D8%A7%D9%84%D8%A5%D8%B5%D8%AF%D8%A7%D8%B1%D8%A7%D8%AA/%d8%aa%d9%88%d8%b5%d9%8a%d8%a9-%d8%a7%d9%84%d9%85%d8%ac%d9%84%d8%b3-%d8%a7%d9%84%d8%a3%d8%b9%d9%84%d9%89-%d9%84%d9%84%d8%aa%d8%b1%d8%a8%d9%8a%d8%a9-%d9%88%d8%a7%d9%84%d8%aa%d9%83%d9%88%d9%8a%d9%86/",
+      "language": "ar",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Exact online publication date (cover dated April 2026; files uploaded June 2026)"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-1d2d4b534f44",
+      "organization_id": "o-681c306d55d7"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-f6221fc52472",
+      "jurisdiction_id": "MAR",
+      "name": "Commission Nationale de contrôle de la protection des Données à caractère Personnel (CNDP)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Data protection authority under Law 09-08; regulates facial recognition and AI processing of personal data.",
+      "source_url": "https://www.cndp.ma/loi-09-08/",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-359dbfa3edb9",
+      "jurisdiction_id": "MAR",
+      "name": "Head of Government (Chef du Gouvernement)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Issuer of implementing decrees, including Decree 2-09-165 under Law 09-08.",
+      "source_url": "https://www.cndp.ma/decret-n-2-09-165/",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-a3eb61b30f6a",
+      "jurisdiction_id": "MAR",
+      "name": "Parliament of the Kingdom of Morocco (House of Representatives and House of Councillors)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Legislature; adopted Organic Law 53.25 with AI-related electoral offences.",
+      "source_url": "https://www.sgg.gov.ma/Portals/1/lois/Loi_organique_53.25_ar.pdf",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-1856a0ba09a4",
+      "jurisdiction_id": "MAR",
+      "name": "Haute Autorité de la Communication Audiovisuelle (HACA) – Conseil Supérieur de la Communication Audiovisuelle (CSCA)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Audiovisual media regulator; set rules on AI-generated electoral content for the 2026 elections.",
+      "source_url": "https://www.haca.ma/en/node/8171",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-01f9f731bfa3",
+      "jurisdiction_id": "MAR",
+      "name": "Ministry of Digital Transition and Administrative Reform (Ministère de la Transition Numérique et de la Réforme de l'Administration)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Lead ministry for digital policy; owner of the Digital Morocco 2030 strategy and organiser of the national AI conference (Assises nationales de l'IA).",
+      "source_url": "https://www.mmsp.gov.ma/fr/actualites/cliquez-ici-pour-d%C3%A9couvrir-la-strat%C3%A9gie-digital-morocco-2030",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-0930ed7506aa",
+      "jurisdiction_id": "MAR",
+      "name": "Conseil Economique, Social et Environnemental (CESE)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Constitutional advisory council; issued an opinion on AI uses and development in Morocco.",
+      "source_url": "https://www.cese.ma/media/2024/11/AVAS78VFP1.pdf",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-681c306d55d7",
+      "jurisdiction_id": "MAR",
+      "name": "Conseil Supérieur de l'Éducation, de la Formation et de la Recherche Scientifique (CSEFRS)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Constitutional advisory council for education; issued a recommendation for a national framework on AI in education.",
+      "source_url": "https://www.csefrs.ma/wp-content/uploads/woocommerce_uploads/2026/06/Recommandation-IA-AR.pdf",
+      "authority_type": null,
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-f56f5ff0d92e",
+      "url": "https://www.cndp.ma/wp-content/uploads/2023/11/Loi-09-08-Fr.pdf",
+      "jurisdiction_ids": [
+        "MAR"
+      ],
+      "source_institutions": [
+        "Commission Nationale de contrôle de la protection des Données à caractère Personnel (CNDP)"
+      ],
+      "instrument_ids": [
+        "i-ed94695702d2"
+      ],
+      "categories_reviewed": [
+        "data-privacy"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Downloaded and read the official document (automated fetch)",
+      "http_status": 200,
+      "final_url": "https://www.cndp.ma/wp-content/uploads/2023/11/Loi-09-08-Fr.pdf",
+      "link_status": "reachable",
+      "page_title": "Loi n° 09-08 relative à la protection des personnes physiques à l'égard du traitement des données à caractère personnel",
+      "document_language": "fr",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-d7cc1d57c235",
+      "url": "https://www.cndp.ma/wp-content/uploads/2023/06/Decret-2-09-165-FR.pdf",
+      "jurisdiction_ids": [
+        "MAR"
+      ],
+      "source_institutions": [
+        "Head of Government (Chef du Gouvernement)"
+      ],
+      "instrument_ids": [
+        "i-85662e21036c"
+      ],
+      "categories_reviewed": [
+        "data-privacy"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Downloaded; scanned image, text not extractable",
+      "http_status": 200,
+      "final_url": "https://www.cndp.ma/wp-content/uploads/2023/06/Decret-2-09-165-FR.pdf",
+      "link_status": "reachable",
+      "page_title": "Décret n° 2-09-165 du 21 mai 2009 pris pour l'application de la loi n° 09-08 relative à la protection des personnes physiques à l'égard du traitement des données à caractère personnel",
+      "document_language": "fr",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-fc073a5c5787",
+      "url": "https://www.cndp.ma/wp-content/uploads/2023/01/deliberation-n-D-194-2019-30-08-2019.pdf",
+      "jurisdiction_ids": [
+        "MAR"
+      ],
+      "source_institutions": [
+        "Commission Nationale de contrôle de la protection des Données à caractère Personnel (CNDP)"
+      ],
+      "instrument_ids": [
+        "i-5b28496ea44b"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "historical"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Downloaded and read the official document (automated fetch)",
+      "http_status": 200,
+      "final_url": "https://www.cndp.ma/wp-content/uploads/2023/01/deliberation-n-D-194-2019-30-08-2019.pdf",
+      "link_status": "reachable",
+      "page_title": "Délibération n° D-194-2019 du 30/08/2019 relative à un moratoire sur la reconnaissance faciale",
+      "document_language": "fr",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-19e763246704",
+      "url": "https://www.cndp.ma/wp-content/uploads/2023/12/CNDP-Dlibration_D-195-EUS-2020-Usage_de_la_reconnaissance_faciale-_20210421.pdf",
+      "jurisdiction_ids": [
+        "MAR"
+      ],
+      "source_institutions": [
+        "Commission Nationale de contrôle de la protection des Données à caractère Personnel (CNDP)"
+      ],
+      "instrument_ids": [
+        "i-1c18bfe97963"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Downloaded and read the official document (automated fetch)",
+      "http_status": 200,
+      "final_url": "https://www.cndp.ma/wp-content/uploads/2023/12/CNDP-Dlibration_D-195-EUS-2020-Usage_de_la_reconnaissance_faciale-_20210421.pdf",
+      "link_status": "reachable",
+      "page_title": "Délibération n° D-195-EUS/2020 du 30/12/2020 relative à la définition de l'usage des technologies de reconnaissance faciale",
+      "document_language": "fr",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-6a2b00b958e9",
+      "url": "https://www.cndp.ma/wp-content/uploads/2026/08/CNDP-Les-dix-imperatifs-a-respecter-durant-les-operations-electorales-Fr-20260803-1.pdf",
+      "jurisdiction_ids": [
+        "MAR"
+      ],
+      "source_institutions": [
+        "Commission Nationale de contrôle de la protection des Données à caractère Personnel (CNDP)"
+      ],
+      "instrument_ids": [
+        "i-6346ef470c89"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Downloaded and read the official document (automated fetch)",
+      "http_status": 200,
+      "final_url": "https://www.cndp.ma/wp-content/uploads/2026/08/CNDP-Les-dix-imperatifs-a-respecter-durant-les-operations-electorales-Fr-20260803-1.pdf",
+      "link_status": "reachable",
+      "page_title": "Les dix impératifs à respecter durant les opérations et les consultations électorales",
+      "document_language": "fr",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-09bae2b3ac38",
+      "url": "https://www.sgg.gov.ma/Portals/1/lois/Loi_organique_53.25_ar.pdf",
+      "jurisdiction_ids": [
+        "MAR"
+      ],
+      "source_institutions": [
+        "Parliament of the Kingdom of Morocco (House of Representatives and House of Councillors)"
+      ],
+      "instrument_ids": [
+        "i-f34ef06a54e1"
+      ],
+      "categories_reviewed": [
+        "binding-law",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Downloaded and read the official document (automated fetch)",
+      "http_status": 200,
+      "final_url": "https://www.sgg.gov.ma/Portals/1/lois/Loi_organique_53.25_ar.pdf",
+      "link_status": "reachable",
+      "page_title": "القانون التنظيمي رقم 53.25 القاضي بتغيير وتتميم القانون التنظيمي رقم 27.11 المتعلق بمجلس النواب",
+      "document_language": "ar",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-22b6db45190d",
+      "url": "https://www.haca.ma/sites/default/files/upload/CSCA_D%C3%A9cision%20n%C2%B050-26_Elections%202026%20VF.pdf",
+      "jurisdiction_ids": [
+        "MAR"
+      ],
+      "source_institutions": [
+        "Haute Autorité de la Communication Audiovisuelle (HACA) – Conseil Supérieur de la Communication Audiovisuelle (CSCA)"
+      ],
+      "instrument_ids": [
+        "i-7d51cfc9e50f"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "generative-ai",
+        "transparency"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Downloaded and read the official document (automated fetch)",
+      "http_status": 200,
+      "final_url": "https://www.haca.ma/sites/default/files/upload/CSCA_D%C3%A9cision%20n%C2%B050-26_Elections%202026%20VF.pdf",
+      "link_status": "reachable",
+      "page_title": "Décision du CSCA n° 50-26 datée du 16 juin 2026 (30 hija 1447) relative à la garantie du pluralisme de l'expression politique dans les services de communication audiovisuelle pendant les élections législatives générales de l'année 2026",
+      "document_language": "fr",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-183bf59b2a0f",
+      "url": "https://www.mmsp.gov.ma/sites/default/files/2024-09/PlaquetteInstitutionnel_18092024_Fra.pdf",
+      "jurisdiction_ids": [
+        "MAR"
+      ],
+      "source_institutions": [
+        "Ministry of Digital Transition and Administrative Reform (Ministère de la Transition Numérique et de la Réforme de l'Administration)"
+      ],
+      "instrument_ids": [
+        "i-89fd503bf553"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Downloaded and read the official document (automated fetch)",
+      "http_status": 200,
+      "final_url": "https://www.mmsp.gov.ma/sites/default/files/2024-09/PlaquetteInstitutionnel_18092024_Fra.pdf",
+      "link_status": "reachable",
+      "page_title": "Stratégie nationale « Digital Morocco 2030 »",
+      "document_language": "fr",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-07e175c7238a",
+      "url": "https://www.mmsp.gov.ma/sites/default/files/2025-09/Rapport%20de%20Synthe%CC%80se%20V7%20VF.pdf",
+      "jurisdiction_ids": [
+        "MAR"
+      ],
+      "source_institutions": [
+        "Ministry of Digital Transition and Administrative Reform (Ministère de la Transition Numérique et de la Réforme de l'Administration)"
+      ],
+      "instrument_ids": [
+        "i-5ed76531f7a0"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "ethics",
+        "government-governance"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Downloaded and read the official document (automated fetch)",
+      "http_status": 200,
+      "final_url": "https://www.mmsp.gov.ma/sites/default/files/2025-09/Rapport%20de%20Synthe%CC%80se%20V7%20VF.pdf",
+      "link_status": "reachable",
+      "page_title": "Rapport de synthèse des Assises nationales de l'intelligence artificielle",
+      "document_language": "fr",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-75daf59c6c2d",
+      "url": "https://www.cese.ma/media/2024/11/AVAS78VFP1.pdf",
+      "jurisdiction_ids": [
+        "MAR"
+      ],
+      "source_institutions": [
+        "Conseil Economique, Social et Environnemental (CESE)"
+      ],
+      "instrument_ids": [
+        "i-8290c060ee4d"
+      ],
+      "categories_reviewed": [
+        "government-governance",
+        "strategy",
+        "ethics"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Downloaded and read the official document (automated fetch)",
+      "http_status": 200,
+      "final_url": "https://www.cese.ma/media/2024/11/AVAS78VFP1.pdf",
+      "link_status": "reachable",
+      "page_title": "Avis du Conseil Economique, Social et Environnemental : Quels usages et quelles perspectives de développement de l'intelligence artificielle au Maroc ? (Auto-saisine n° 78/2024)",
+      "document_language": "fr",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-1d2d4b534f44",
+      "url": "https://www.csefrs.ma/wp-content/uploads/woocommerce_uploads/2026/06/Recommandation-IA-AR.pdf",
+      "jurisdiction_ids": [
+        "MAR"
+      ],
+      "source_institutions": [
+        "Conseil Supérieur de l'Éducation, de la Formation et de la Recherche Scientifique (CSEFRS)"
+      ],
+      "instrument_ids": [
+        "i-1593769b6417"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "generative-ai",
+        "ethics"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Downloaded and read the official document (automated fetch)",
+      "http_status": 200,
+      "final_url": "https://www.csefrs.ma/wp-content/uploads/woocommerce_uploads/2026/06/Recommandation-IA-AR.pdf",
+      "link_status": "reachable",
+      "page_title": "توصية من أجل اعتماد إطار وطني لتوجيه استعمال الذكاء الاصطناعي في التربية والتكوين والبحث العلمي (توصية رقم 2026/1)",
+      "document_language": "ar",
+      "error": null,
+      "content_type": "application/pdf"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "MAR",
     "country": "Morocco",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
-    "categories_searched": [
-      "strategy",
-      "government-governance",
-      "ethics",
-      "public-sector",
-      "procurement",
-      "cyber-security",
+    "review_status": "DEEP REVIEW COMPLETE",
+    "categories_searched": {
+      "binding-law": "binding-law",
+      "strategy": "strategy",
+      "government-governance": "government-governance",
+      "ethics": "ethics",
+      "risk-assurance": "risk-assurance",
+      "public-sector": "public-sector",
+      "procurement": "procurement",
+      "cyber-security": "cyber-security",
+      "data-privacy": "data-privacy",
+      "transparency": "transparency",
+      "standards": "standards",
+      "sandbox": "sandbox",
+      "index-readiness": "index-readiness",
+      "sectoral": "sectoral",
+      "generative-ai": "generative-ai",
+      "drafts": "drafts",
+      "international": "international",
+      "historical": "historical"
+    },
+    "categories_with_findings": [
+      "binding-law",
       "data-privacy",
+      "ethics",
+      "generative-ai",
+      "government-governance",
+      "historical",
+      "public-sector",
       "risk-assurance",
+      "sectoral",
+      "strategy",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
-      "binding-law",
-      "strategy",
-      "government-governance",
-      "ethics",
-      "risk-assurance",
-      "public-sector",
+    "categories_where_no_material_was_found": [
       "procurement",
       "cyber-security",
-      "data-privacy",
-      "transparency",
       "standards",
       "sandbox",
       "index-readiness",
-      "sectoral",
-      "generative-ai",
       "drafts",
-      "international",
-      "historical"
+      "international"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Morocco \"الذكاء الاصطناعي\" (استراتيجية OR تنظيم OR أخلاقيات) government ministry official",
       "Morocco \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Morocco government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Morocco \"الذكاء الاصطناعي\" cybersecurity authority secure development safety guidelines",
-      "Morocco privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Morocco privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "cndp.ma Délibération D-194-2019 moratoire reconnaissance faciale pdf",
+      "cndp.ma IA & PDP auditions intelligence artificielle délibération",
+      "Digital Morocco 2030 stratégie pdf mmsp.gov.ma intelligence artificielle",
+      "Assises nationales de l'intelligence artificielle Maroc 2025 synthèse pdf mmsp",
+      "DGSSI guide intelligence artificielle sécurité Maroc dgssi.gov.ma",
+      "Stratégie Nationale de Cybersécurité 2030 DGSSI pdf intelligence artificielle",
+      "Bank Al-Maghrib intelligence artificielle directive circulaire établissements de crédit IA",
+      "Morocco AI regulatory sandbox Bank Al-Maghrib fintech sandbox artificial intelligence official",
+      "AMMC intelligence artificielle circulaire OR guide OR sandbox Maroc marché des capitaux",
+      "ANRT Maroc intelligence artificielle décision OR lignes directrices télécommunications",
+      "IMANOR NM ISO/IEC 42001 intelligence artificielle norme marocaine",
+      "HACA Maroc intelligence artificielle décision audiovisuel contenus générés IA",
+      "Maroc ministère santé OR éducation nationale intelligence artificielle charte OR guide OR circulaire officiel 2025 2026",
+      "csefrs.ma recommandation 1/2026 intelligence artificielle éducation formation recherche scientifique",
+      "cese.ma avis intelligence artificielle au Maroc auto-saisine 78/2024 pdf",
+      "\"Maroc IA 2030\" feuille de route document officiel ministère transition numérique",
+      "mmsp.gov.ma \"Maroc IA 2030\" feuille de route",
+      "مشروع قانون الذكاء الاصطناعي المغرب وزارة الانتقال الرقمي 2026",
+      "مشروع قانون يتعلق بالإدارة الرقمية مجلس الحكومة الذكاء الاصطناعي sgg.gov.ma",
+      "مقترح قانون الذكاء الاصطناعي مجلس النواب المغرب",
+      "chambredesrepresentants.ma مقترح قانون يتعلق بتنظيم استعمال الذكاء الاصطناعي",
+      "منشور رئيس الحكومة استعمال الذكاء الاصطناعي في الإدارة العمومية المغرب",
+      "القانون التنظيمي رقم 53.25 مجلس النواب الجريدة الرسمية عدد 7478 sgg.gov.ma",
+      "sgg.gov.ma avant-projets de textes (consultation list) scanned for intelligence artificielle / numérique",
+      "chambredesconseillers.ma propositions de loi scanned for الذكاء الاصطناعي",
+      "cndp.ma Délibération D-194-2019 moratoire reconnaissance faciale pdf",
+      "cndp.ma IA & PDP auditions intelligence artificielle délibération",
+      "Digital Morocco 2030 stratégie pdf mmsp.gov.ma intelligence artificielle",
+      "Assises nationales de l'intelligence artificielle Maroc 2025 synthèse pdf mmsp",
+      "DGSSI guide intelligence artificielle sécurité Maroc dgssi.gov.ma",
+      "Stratégie Nationale de Cybersécurité 2030 DGSSI pdf intelligence artificielle",
+      "Bank Al-Maghrib intelligence artificielle directive circulaire établissements de crédit IA",
+      "Morocco AI regulatory sandbox Bank Al-Maghrib fintech sandbox artificial intelligence official",
+      "AMMC intelligence artificielle circulaire OR guide OR sandbox Maroc marché des capitaux",
+      "ANRT Maroc intelligence artificielle décision OR lignes directrices télécommunications",
+      "IMANOR NM ISO/IEC 42001 intelligence artificielle norme marocaine",
+      "HACA Maroc intelligence artificielle décision audiovisuel contenus générés IA",
+      "Maroc ministère santé OR éducation nationale intelligence artificielle charte OR guide OR circulaire officiel 2025 2026",
+      "csefrs.ma recommandation 1/2026 intelligence artificielle éducation formation recherche scientifique",
+      "cese.ma avis intelligence artificielle au Maroc auto-saisine 78/2024 pdf",
+      "\"Maroc IA 2030\" feuille de route document officiel ministère transition numérique",
+      "mmsp.gov.ma \"Maroc IA 2030\" feuille de route",
+      "مشروع قانون الذكاء الاصطناعي المغرب وزارة الانتقال الرقمي 2026",
+      "مشروع قانون يتعلق بالإدارة الرقمية مجلس الحكومة الذكاء الاصطناعي sgg.gov.ma",
+      "مقترح قانون الذكاء الاصطناعي مجلس النواب المغرب",
+      "chambredesrepresentants.ma مقترح قانون يتعلق بتنظيم استعمال الذكاء الاصطناعي",
+      "منشور رئيس الحكومة استعمال الذكاء الاصطناعي في الإدارة العمومية المغرب",
+      "القانون التنظيمي رقم 53.25 مجلس النواب الجريدة الرسمية عدد 7478 sgg.gov.ma",
+      "sgg.gov.ma avant-projets de textes (consultation list) scanned for intelligence artificielle / numérique",
+      "chambredesconseillers.ma propositions de loi scanned for الذكاء الاصطناعي"
     ],
     "review_date": "2026-10-06",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": "Searched, nothing official found for: procurement (no AI procurement guidance or clauses); cyber-security (no DGSSI AI security guidance; the 2030 cybersecurity strategy only mentions AI as an emerging risk); standards (no IMANOR NM adoption of ISO/IEC 42001 or other AI standard found); sandbox (Bank Al-Maghrib fintech sandbox not AI-specific, no official text read); index-readiness (no government-published AI index); drafts (AI bills and the digital-administration bill have no official text online, see leads); international (no national ratification instrument for an AI treaty; AU and UNESCO instruments are attached from regional files).",
     "discovery_result_count": 14,
-    "focused_result_count": 12
+    "focused_result_count": 11
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-980e885c273b",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "MAR",
+      "instrument_id": "i-ed94695702d2",
+      "title": "Law No. 09-08 on the protection of individuals with regard to the processing of personal data (promulgated by Dahir No. 1-09-15 of 18 February 2009)",
+      "detail": "Added to the radar (published 2009-03-05).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.cndp.ma/wp-content/uploads/2023/11/Loi-09-08-Fr.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-905c055aee77",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "MAR",
+      "instrument_id": "i-85662e21036c",
+      "title": "Decree No. 2-09-165 of 21 May 2009 implementing Law No. 09-08 on personal data protection",
+      "detail": "Added to the radar (published 2009-06-18).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.cndp.ma/wp-content/uploads/2023/06/Decret-2-09-165-FR.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-62d2e95fb190",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "MAR",
+      "instrument_id": "i-5b28496ea44b",
+      "title": "CNDP Deliberation No. D-194-2019 of 30 August 2019 on a moratorium on facial recognition",
+      "detail": "Added to the radar (published 2019-08-30).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.cndp.ma/wp-content/uploads/2023/01/deliberation-n-D-194-2019-30-08-2019.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-c726452401a7",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "MAR",
+      "instrument_id": "i-1c18bfe97963",
+      "title": "CNDP Deliberation No. D-195-EUS/2020 of 30 December 2020 defining the use of facial recognition technologies",
+      "detail": "Added to the radar (published 2020-12-30).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.cndp.ma/wp-content/uploads/2023/12/CNDP-Dlibration_D-195-EUS-2020-Usage_de_la_reconnaissance_faciale-_20210421.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-15fefb59ecae",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "MAR",
+      "instrument_id": "i-6346ef470c89",
+      "title": "CNDP: Ten imperatives to respect during electoral operations and consultations (2026)",
+      "detail": "Added to the radar (published 2026-08-03).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.cndp.ma/wp-content/uploads/2026/08/CNDP-Les-dix-imperatifs-a-respecter-durant-les-operations-electorales-Fr-20260803-1.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-aa8e7a7d82ee",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "MAR",
+      "instrument_id": "i-f34ef06a54e1",
+      "title": "Organic Law No. 53.25 amending and supplementing Organic Law No. 27.11 on the House of Representatives (promulgated by Dahir No. 1.25.70 of 16 January 2026)",
+      "detail": "Added to the radar (published 2026-01-29).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.sgg.gov.ma/Portals/1/lois/Loi_organique_53.25_ar.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-20f16caece88",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "MAR",
+      "instrument_id": "i-7d51cfc9e50f",
+      "title": "HACA/CSCA Decision No. 50-26 of 16 June 2026 on political pluralism in audiovisual services during the 2026 general legislative elections",
+      "detail": "Added to the radar (published 2026-06-16).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.haca.ma/sites/default/files/upload/CSCA_D%C3%A9cision%20n%C2%B050-26_Elections%202026%20VF.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-88d9d82c502c",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "MAR",
+      "instrument_id": "i-89fd503bf553",
+      "title": "National Strategy \"Digital Morocco 2030\"",
+      "detail": "Added to the radar (published 2024-09-25).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.mmsp.gov.ma/sites/default/files/2024-09/PlaquetteInstitutionnel_18092024_Fra.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-e3fcdce651eb",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "MAR",
+      "instrument_id": "i-5ed76531f7a0",
+      "title": "Synthesis report of the First National Conference (Assises) on Artificial Intelligence",
+      "detail": "Added to the radar (published 2025-09-29).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.mmsp.gov.ma/sites/default/files/2025-09/Rapport%20de%20Synthe%CC%80se%20V7%20VF.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-3afdf2eb6e44",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "MAR",
+      "instrument_id": "i-8290c060ee4d",
+      "title": "CESE Opinion: What uses and prospects for the development of artificial intelligence in Morocco? (Own-initiative opinion No. 78/2024)",
+      "detail": "Added to the radar (published 2024-06-27).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.cese.ma/media/2024/11/AVAS78VFP1.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-42cb108d0b3e",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "MAR",
+      "instrument_id": "i-1593769b6417",
+      "title": "CSEFRS Recommendation No. 1/2026 for the adoption of a national framework to guide the use of artificial intelligence in education, training and scientific research",
+      "detail": "Added to the radar (published 2026-04).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.csefrs.ma/wp-content/uploads/woocommerce_uploads/2026/06/Recommandation-IA-AR.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-2ac654252dd7",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "MAR",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 11 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-7617d45206ac",
+      "date": "2026-08-15",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "MAR",
+      "instrument_id": "i-7d51cfc9e50f",
+      "title": "HACA electoral rules on AI content apply",
+      "detail": "Electoral period 15 August–22 September 2026.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.haca.ma/sites/default/files/upload/CSCA_D%C3%A9cision%20n%C2%B050-26_Elections%202026%20VF.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-c3d8075e0c92",
+      "date": "2026-08-03",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "MAR",
+      "instrument_id": "i-6346ef470c89",
+      "title": "CNDP publishes ten electoral imperatives, incl. flagging AI content",
+      "detail": "",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.cndp.ma/wp-content/uploads/2026/08/CNDP-Les-dix-imperatifs-a-respecter-durant-les-operations-electorales-Fr-20260803-1.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-6b62659c24c1",
+      "date": "2026-06-16",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "MAR",
+      "instrument_id": "i-7d51cfc9e50f",
+      "title": "HACA bans misleading AI-generated electoral content on radio and TV",
+      "detail": "CSCA Decision No. 50-26, Article 6.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.haca.ma/sites/default/files/upload/CSCA_D%C3%A9cision%20n%C2%B050-26_Elections%202026%20VF.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-7e25c72638a9",
+      "date": "2026-04-14",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "MAR",
+      "instrument_id": "i-1593769b6417",
+      "title": "CSEFRS adopts recommendation on AI in education",
+      "detail": "Adopted at the 12th General Assembly session.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.csefrs.ma/wp-content/uploads/woocommerce_uploads/2026/06/Recommandation-IA-AR.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-35e4cb9b331a",
+      "date": "2026-01-29",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "MAR",
+      "instrument_id": "i-f34ef06a54e1",
+      "title": "Organic Law 53.25 published in the Bulletin Officiel",
+      "detail": "Bulletin Officiel (Arabic) No. 7478; date read from a poorly encoded header.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.sgg.gov.ma/Portals/1/lois/Loi_organique_53.25_ar.pdf",
+      "needs_review": true
+    },
+    {
+      "id": "c-cc1a076ff54f",
+      "date": "2026-01-16",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "MAR",
+      "instrument_id": "i-f34ef06a54e1",
+      "title": "Organic Law 53.25 promulgated (AI tools in electoral offences)",
+      "detail": "Promulgated by Dahir No. 1.25.70.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.sgg.gov.ma/Portals/1/lois/Loi_organique_53.25_ar.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-e05e4dfd6af3",
+      "date": "2025-09-29",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "MAR",
+      "instrument_id": "i-5ed76531f7a0",
+      "title": "Synthesis report of the National AI Conference published",
+      "detail": "Published in Arabic, Amazigh, French and English.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.mmsp.gov.ma/fr/actualites/rapport-de-synth%C3%A8se-des-assises-nationales-de-l%E2%80%99intelligence-artificielle",
+      "needs_review": false
+    },
+    {
+      "id": "c-848ac3d369f8",
+      "date": "2024-09-25",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "MAR",
+      "instrument_id": "i-89fd503bf553",
+      "title": "Digital Morocco 2030 strategy published",
+      "detail": "Ministry page publishes the strategy brochure (FR/EN).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.mmsp.gov.ma/fr/actualites/cliquez-ici-pour-d%C3%A9couvrir-la-strat%C3%A9gie-digital-morocco-2030",
+      "needs_review": false
+    },
+    {
+      "id": "c-1b704b79a273",
+      "date": "2024-06-27",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "MAR",
+      "instrument_id": "i-8290c060ee4d",
+      "title": "CESE adopts opinion on AI in Morocco",
+      "detail": "Adopted unanimously at the 159th General Assembly session.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.cese.ma/media/2024/11/AVAS78VFP1.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-02592ea7e663",
+      "date": "2020-12-30",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "MAR",
+      "instrument_id": "i-1c18bfe97963",
+      "title": "CNDP defines conditions for facial-recognition use",
+      "detail": "Ends moratorium; use allowed after prior CNDP authorisation and commitment to the national trusted third party.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.cndp.ma/wp-content/uploads/2023/12/CNDP-Dlibration_D-195-EUS-2020-Usage_de_la_reconnaissance_faciale-_20210421.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-9bb30aa2916e",
+      "date": "2019-08-30",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "MAR",
+      "instrument_id": "i-5b28496ea44b",
+      "title": "CNDP adopts facial-recognition moratorium",
+      "detail": "Seven-month moratorium from 2 September 2019; no authorisations issued.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.cndp.ma/wp-content/uploads/2023/01/deliberation-n-D-194-2019-30-08-2019.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-12f750bf8d92",
+      "date": "2009-03-05",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "MAR",
+      "instrument_id": "i-ed94695702d2",
+      "title": "Law 09-08 on personal data protection published",
+      "detail": "Published in Bulletin Officiel No. 5714 (French edition header).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.cndp.ma/wp-content/uploads/2023/11/Loi-09-08-Fr.pdf",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Délibération de la CNDP sur l'intelligence artificielle et la protection des données à caractère personnel",
+      "english_title": "CNDP deliberation on AI and personal data protection",
+      "issuing_authority": "Commission Nationale de contrôle de la protection des Données à caractère Personnel (CNDP)",
+      "note": "CNDP launched hearings on 18 March 2025 (https://www.cndp.ma/ia-pdp/) to prepare a deliberation on AI; hearings ran into 2025. No deliberation published by 2026-10-06.",
+      "found": "2026-10-06"
+    },
+    {
+      "title": "مشروع قانون الإدارة الرقمية",
+      "english_title": "Draft Digital Administration Law (with AI provisions)",
+      "issuing_authority": "Ministry of Digital Transition and Administrative Reform (MTNRA)",
+      "note": "Ministry stated in a written answer to the House of Representatives (14 July 2025) that it prepared a digital-administration bill including AI-specific provisions. No official draft found on sgg.gov.ma or parliament sites.",
+      "found": "2026-10-06"
+    },
+    {
+      "title": "مقترح قانون يتعلق بتنظيم استعمال الذكاء الاصطناعي",
+      "english_title": "Private members' bill on regulating the use of artificial intelligence (House of Representatives)",
+      "issuing_authority": "House of Representatives (Mouvement Populaire parliamentary group)",
+      "note": "17-article bill reported by press; chambredesrepresentants.ma blocks automated reading (Cloudflare), so the official text, number and date were not verified.",
+      "found": "2026-10-06"
+    },
+    {
+      "title": "Feuille de route « Maroc IA 2030 » / « AI Made in Morocco »",
+      "english_title": "Morocco AI 2030 roadmap",
+      "issuing_authority": "Ministry of Digital Transition and Administrative Reform (MTNRA)",
+      "note": "Roadmap launched 12 January 2026 (MEN news page) with an implementation update on 8 September 2026; no official roadmap document found online.",
+      "found": "2026-10-06"
+    },
+    {
+      "title": "Stratégie IA de l'AMMC",
+      "english_title": "AMMC artificial intelligence strategy and roadmap",
+      "issuing_authority": "Autorité Marocaine du Marché des Capitaux (AMMC)",
+      "note": "AMMC 2026 priorities mention progressive AI integration and an AI strategy; no standalone AI document published.",
+      "found": "2026-10-06"
+    }
+  ]
 }

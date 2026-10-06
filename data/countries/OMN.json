@@ -7,280 +7,1191 @@
     "research_language": "ar",
     "type": "country",
     "aliases": [],
-    "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
+    "overview": "Oman governs AI through MTCIT policy instruments and the Personal Data Protection Law; GCC and UNESCO instruments are shown separately as regional records."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Oman governs AI through policy instruments issued by the Ministry of Transport, Communications and Information Technology (MTCIT), backed by binding data protection law; there is no AI-specific statute. The National Program for AI and Advanced Digital Technologies, approved by the Council of Ministers on 19 September 2024, sets the strategy under the National Program for Digital Economy and Oman Vision 2040. It replaced the 2022 Executive Program. The General Policy for the Safe and Ethical Use of AI Systems (April 2025), drafted after a public consultation in August 2024, sets mandatory controls and ethical principles for government units and regulated private institutions. It updates the narrower 2021 AI Systems Policy for government. The Personal Data Protection Law (Royal Decree 6/2022) and its 2024 Executive Regulation are the binding layer; Royal Decree 68/2026 added a right to object to automated decisions and a duty to give contested decisions human review. In April 2026 Royal Decree 50/2026 created an AI Special Zone in Muscat, but no official full text could be retrieved, so it is kept as a lead.",
+    "lead_institutions": [
+      "Ministry of Transport, Communications and Information Technology (MTCIT)",
+      "MTCIT General Directorate of Policies and Governance",
+      "Council of Ministers (Financial and Economic Committee)",
+      "Digital Economy Technical Committee",
+      "Public Authority for Special Economic Zones and Free Zones (AI Special Zone)"
+    ],
+    "last_deep_review": "2026-10-06",
+    "review_notes": "Deep review 2026-10-06. All recorded instruments were read on official MTCIT pages or PDFs (mtcit.gov.om library, AI sector publications page, and the legacy ITAPortal). The 2025 General Policy PDF is image-only (Canva) and was read page by page. Removed nothing; the two existing records were corrected in place. i-6ed8ded17179 previously pointed to an ita.gov.om copy that returns HTTP 502 and was re-sourced to the MTCIT copy. The two domain-named organisations were merged into one MTCIT organisation. qanoon.om (non-official legal portal) was used only to discover and cross-check gazette numbers and dates (Royal Decree 68/2026: Official Gazette 1664, 6 Sep 2026; Royal Decree 50/2026: Official Gazette 1646, 4 May 2026; MTCIT Circular 11/2025 of 9 Apr 2025). The official portal mjla.gov.om failed TLS verification or returned HTTP 503, so these items could not be confirmed there. An MTCIT page titled 'AI Strategy 2025: Towards Comprehensive Digital Leadership' (policies item 386), found through search, now returns 404 and its attachment is gone, so it was not recorded. Ministerial Decision 108/2025 (Government Digital Transformation Regulation) was checked and has no AI provisions, so it was excluded. The National AI Program Annual Report 2024 (MTCIT, 2025) is a progress report: it was used to confirm the 19 Sep 2024 Cabinet approval but not recorded as an instrument. Effective dates for the PDPL (13 Feb 2023) and Royal Decree 68/2026 (7 Sep 2026) are calculated from the commencement articles and the MTCIT publication dates. Oman is a GCC and UNESCO member; those regional instruments are attached from data/regional."
   },
   "instruments": [
     {
       "id": "i-36ee3b354e09",
-      "official_title": "السياسة العامة للاستخدام الآمن والأخلاقي لأنظمة الذكاء الاصطناعي | MTCIT",
-      "english_title": "General policy for safe and ethical use of AI systems",
+      "official_title": "السياسة العامة للاستخدام الآمن والأخلاقي لأنظمة الذكاء الاصطناعي",
+      "english_title": "General Policy for the Safe and Ethical Use of Artificial Intelligence Systems",
       "jurisdiction_id": "OMN",
-      "issuing_authority": null,
-      "publisher_name": "www.mtcit.gov.om",
-      "authority_type": null,
+      "issuing_authority": "Ministry of Transport, Communications and Information Technology (MTCIT)",
+      "publisher_name": "Ministry of Transport, Communications and Information Technology (MTCIT)",
+      "authority_type": "ministry",
       "government_level": "national",
       "categories": [
         "ethics",
-        "government-governance"
+        "government-governance",
+        "public-sector",
+        "risk-assurance",
+        "generative-ai",
+        "transparency"
       ],
       "category": "ethics",
       "subcategory": null,
-      "legal_status": null,
-      "publication_date": null,
+      "legal_status": "administrative_policy_mandatory_in_scope",
+      "publication_date": "2025-04-01",
       "effective_date": null,
       "last_amended_date": null,
-      "current_status": "Official source located; current status requires review",
+      "current_status": "Version 0.1 (2025) issued by MTCIT's General Directorate of Policies and Governance; MTCIT library lists it as published 1 April 2025. The policy's compliance section makes MTCIT responsible for monitoring state administrative units and reporting to the Council of Ministers, and sector regulators responsible for the private institutions they supervise. A ministerial circular No. 11/2025 dated 9 April 2025 directing compliance was seen only on a non-official site (qanoon.om), so no effective date is recorded. The document is image-based (Canva PDF) and was read page by page.",
       "scope": null,
       "sectors": [],
       "technology_scope": [
         "AI"
       ],
-      "summary": "Official source located for this governance category. The document’s adoption, legal effect, scope and version history remain under review.",
-      "ai_governance_relevance": "Primary-source material for assessing responsible ai & ethics, government ai governance.",
-      "source_url": "https://www.mtcit.gov.om/ar/3/8/73/291",
-      "official_pdf_url": null,
-      "official_webpage_url": "https://www.mtcit.gov.om/ar/3/8/73/291",
-      "language": "ar-001",
+      "summary": "MTCIT's national AI policy setting technical controls and ethical principles for using and developing AI systems across the lifecycle. It applies to all government units and to private institutions regulated by sector regulators. Users must provide human oversight of sensitive decisions, explain decisions in high-impact uses such as employment, health and finance, and hand documentation to regulators on request. Developers must assess ethical, social and environmental impact before deployment, label or watermark generative AI output, test for bias and follow cybersecurity practice. MTCIT monitors state units and reports to the Council of Ministers; each sector regulator monitors its own sector.",
+      "ai_governance_relevance": "Primary-source material for assessing ethics, government-governance, public-sector, risk-assurance, generative-ai, transparency.",
+      "source_url": "https://mtcit.gov.om/ar/3/8/73/291",
+      "official_pdf_url": "https://mtcit.gov.om/web/content/mtcit.content/291/attachment?download=True",
+      "official_webpage_url": "https://mtcit.gov.om/library-3/legislations-policies-8/policies-73/general-policy-for-the-safe-and-ethical-use-of-artificial-intelligence-systems-291",
+      "language": "ar",
       "supersedes": [],
       "superseded_by": [],
-      "related_instruments": [],
+      "related_instruments": [
+        "i-502c9c773ae3",
+        "i-fc3cb66142f3",
+        "i-6ed8ded17179"
+      ],
       "regional_applicability": [],
       "verification_date": "2026-10-06",
-      "verification_level": "primary_source_located",
+      "verification_level": "reviewed_primary_metadata",
       "metadata_gaps": [
-        "Issuing authority",
-        "Publication/effective dates",
-        "Current legal status",
-        "Precise applicability",
-        "Version history",
-        "Authority type",
-        "Government level",
-        "Publication date",
-        "Effective date",
-        "Last amended date"
+        "Effective date (circular 11/2025 not found on an official site)",
+        "Exact issue date inside the document (states 2025 only)"
       ],
       "source_kind": "official_publication",
-      "evidence_reference": "turn45search0",
+      "evidence_reference": "deep-review-2026-10-06",
       "link_status": "reachable",
-      "document_access_type": "official_publication_or_full_text_page",
-      "source_id": "s-c1a7f0661141",
-      "organization_id": "o-8ffa85a6240c",
-      "lifecycle": "unverified",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
       "first_recorded": "2026-10-06",
       "last_changed": null,
-      "subnational_unit": null
+      "subnational_unit": null,
+      "source_id": "s-c1a7f0661141",
+      "organization_id": "o-8ffa85a6240c"
     },
     {
       "id": "i-6ed8ded17179",
-      "official_title": "Foreword by H.E. Minister of Transport, Communications, and Information Technology",
-      "english_title": "National Programme for AI and Advanced Digital Technologies",
+      "official_title": "البرنامج الوطني للذكاء الاصطناعي والتقنيات الرقمية المتقدمة",
+      "english_title": "National Program for AI and Advanced Digital Technologies",
       "jurisdiction_id": "OMN",
-      "issuing_authority": null,
-      "publisher_name": "ita.gov.om",
-      "authority_type": null,
+      "issuing_authority": "Ministry of Transport, Communications and Information Technology (MTCIT)",
+      "publisher_name": "Ministry of Transport, Communications and Information Technology (MTCIT)",
+      "authority_type": "ministry",
       "government_level": "national",
       "categories": [
-        "strategy"
+        "strategy",
+        "government-governance"
       ],
       "category": "strategy",
       "subcategory": null,
-      "legal_status": null,
-      "publication_date": null,
+      "legal_status": "national_strategy",
+      "publication_date": "2024-09",
       "effective_date": null,
       "last_amended_date": null,
-      "current_status": "Official source located; current status requires review",
+      "current_status": "Approved by the Council of Ministers on 19 September 2024 (MTCIT AI publications page and the programme's 2024 Annual Report). Arabic and English public versions dated September 2024 are on the MTCIT AI publications page; the earlier ita.gov.om copy returns HTTP 502.",
       "scope": null,
       "sectors": [],
       "technology_scope": [
         "AI"
       ],
-      "summary": "Official source located for this governance category. The document’s adoption, legal effect, scope and version history remain under review.",
-      "ai_governance_relevance": "Primary-source material for assessing strategy & action plans.",
-      "source_url": "https://ita.gov.om/itaportal/Data/SiteImgGallery/202412310846123/National%20Program%20for%20AI%20and%20Advanced%20Digital%20Technologies%20-%20Public%20Version.pdf",
-      "official_pdf_url": "https://ita.gov.om/itaportal/Data/SiteImgGallery/202412310846123/National%20Program%20for%20AI%20and%20Advanced%20Digital%20Technologies%20-%20Public%20Version.pdf",
+      "summary": "Oman's national AI programme, updating the 2022 Executive Program into a comprehensive programme under the National Program for Digital Economy and Oman Vision 2040. It rests on three pillars: adoption of AI in economic and development sectors, localisation of AI technologies, and human-centred AI governance (including updating legislation, e.g. copyright for generative AI, and an international centre for AI ethics). Implementation is overseen by the Council of Ministers' Financial and Economic Committee and the Digital Economy Technical Committee, with MTCIT responsible for legislation, oversight and follow-up.",
+      "ai_governance_relevance": "Primary-source material for assessing strategy, government-governance.",
+      "source_url": "https://mtcit.gov.om/web/content/14142",
+      "official_pdf_url": "https://mtcit.gov.om/web/content/14142",
+      "official_webpage_url": "https://mtcit.gov.om/ar/sectors/ai/publications",
+      "language": "ar",
+      "supersedes": [
+        "i-7a6f7bb472f1"
+      ],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-36ee3b354e09"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Exact publication day (document states September 2024)"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "adopted",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-7d6dba079f07",
+      "organization_id": "o-8ffa85a6240c"
+    },
+    {
+      "id": "i-04728a470b1a",
+      "official_title": "قانون حماية البيانات الشخصية الصادر بالمرسوم السلطاني رقم 6/2022",
+      "english_title": "Personal Data Protection Law (Royal Decree No. 6/2022)",
+      "jurisdiction_id": "OMN",
+      "issuing_authority": "Sultanate of Oman (Sultan, by Royal Decree)",
+      "publisher_name": "Ministry of Transport, Communications and Information Technology (MTCIT)",
+      "authority_type": "head_of_state",
+      "government_level": "national",
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "category": "data-privacy",
+      "subcategory": null,
+      "legal_status": "binding_law",
+      "publication_date": "2022-02-13",
+      "effective_date": "2023-02-13",
+      "last_amended_date": null,
+      "current_status": "Royal Decree 6/2022 signed 9 February 2022 and published in Official Gazette No. 1429 (MTCIT gives 13 February 2022). Article 4 of the decree brings the law into force one year after publication, hence 13 February 2023 (computed). Amended by Royal Decree 68/2026 (Official Gazette No. 1664, September 2026), which adds rules on automated processing. MTCIT is the competent authority.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Oman's general data protection law, administered by MTCIT. It requires the data subject's express consent for processing, gives data subjects rights to withdraw consent, correct, update and erase data and to be notified of breaches, and sets controller and processor obligations with fines. It governs personal data used to train and run AI systems; since the 2026 amendment it also contains specific automated-processing provisions (Article 14).",
+      "ai_governance_relevance": "Primary-source material for assessing data-privacy, binding-law.",
+      "source_url": "https://mtcit.gov.om/ar/3/8/75/1034",
+      "official_pdf_url": "https://mtcit.gov.om/web/content/mtcit.content/1034/attachment?download=True",
       "official_webpage_url": null,
-      "language": null,
+      "language": "ar",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-9cf2872658bd",
+        "i-4fff32ff070f"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Effective date computed from Article 4, not stated as a calendar date"
+      ],
+      "source_kind": "legislation_portal",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "in_force",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-8ec7da84badc",
+      "organization_id": "o-bf812630ba7c"
+    },
+    {
+      "id": "i-9cf2872658bd",
+      "official_title": "اللائحة التنفيذية لقانون حماية البيانات الشخصية (القرار الوزاري رقم 34/2024)",
+      "english_title": "Executive Regulation of the Personal Data Protection Law (Ministerial Decision No. 34/2024)",
+      "jurisdiction_id": "OMN",
+      "issuing_authority": "Ministry of Transport, Communications and Information Technology (MTCIT)",
+      "publisher_name": "Ministry of Transport, Communications and Information Technology (MTCIT)",
+      "authority_type": "ministry",
+      "government_level": "national",
+      "categories": [
+        "data-privacy"
+      ],
+      "category": "data-privacy",
+      "subcategory": null,
+      "legal_status": "binding_regulation",
+      "publication_date": "2024-02-04",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Ministerial Decision 34/2024 signed 28 January 2024 by the MTCIT Minister and published in Official Gazette No. 1531; MTCIT lists 4 February 2024. It takes effect the day after publication, and Article 2 gives addressees one year from that date to comply. Calendar effective date not printed on the source.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Implementing regulation of the Personal Data Protection Law. It sets the procedure for obtaining a permit to process sensitive personal data (Law Art. 5), rules for processing children's data, how data subjects exercise their rights, and controller and processor obligations; addressees had one year to comply.",
+      "ai_governance_relevance": "Primary-source material for assessing data-privacy.",
+      "source_url": "https://mtcit.gov.om/ar/3/8/72/1035",
+      "official_pdf_url": "https://mtcit.gov.om/web/content/mtcit.content/1035/attachment?download=True",
+      "official_webpage_url": null,
+      "language": "ar",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-04728a470b1a"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Effective date (day after gazette publication; gazette date not printed on the source)"
+      ],
+      "source_kind": "legislation_portal",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "in_force",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-ff615a79fc64",
+      "organization_id": "o-8ffa85a6240c"
+    },
+    {
+      "id": "i-4fff32ff070f",
+      "official_title": "مرسوم سلطاني رقم 68/2026 بتعديل بعض أحكام قانون حماية البيانات الشخصية",
+      "english_title": "Royal Decree No. 68/2026 amending certain provisions of the Personal Data Protection Law",
+      "jurisdiction_id": "OMN",
+      "issuing_authority": "Sultanate of Oman (Sultan, by Royal Decree)",
+      "publisher_name": "Ministry of Transport, Communications and Information Technology (MTCIT)",
+      "authority_type": "head_of_state",
+      "government_level": "national",
+      "categories": [
+        "binding-law",
+        "data-privacy",
+        "transparency"
+      ],
+      "category": "binding-law",
+      "subcategory": null,
+      "legal_status": "binding_law",
+      "publication_date": "2026-09-06",
+      "effective_date": "2026-09-07",
+      "last_amended_date": null,
+      "current_status": "Signed 3 September 2026 and published in Official Gazette No. 1664; MTCIT lists 6 September 2026. Article 3 brings it into force the day after publication, hence 7 September 2026 (computed). Amendment text checked against the MTCIT gazette PDF and a non-official transcription.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Amends the Personal Data Protection Law: it extends the law to processing of data of natural persons in Oman wherever processing takes place, revises exemptions and consent exceptions, and adds a definition of automated processing. New Article 14 requires controllers and processors using automated processing to protect privacy and avoid harm, gives data subjects a right to object to decisions resulting from automated processing, and requires human review of contested decisions, with fines of OMR 5,000-10,000 for breaches.",
+      "ai_governance_relevance": "Primary-source material for assessing binding-law, data-privacy, transparency.",
+      "source_url": "https://mtcit.gov.om/ar/3/8/75/1481",
+      "official_pdf_url": "https://mtcit.gov.om/web/content/mtcit.content/1481/attachment?download=True",
+      "official_webpage_url": null,
+      "language": "ar",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-04728a470b1a"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Effective date computed from Article 3",
+        "Implementing controls for human review of automated decisions (to be set by the executive regulation)"
+      ],
+      "source_kind": "legislation_portal",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "in_force",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-42e4b60eb467",
+      "organization_id": "o-bf812630ba7c"
+    },
+    {
+      "id": "i-502c9c773ae3",
+      "official_title": "Artificial Intelligence Systems Policy",
+      "english_title": "Artificial Intelligence Systems Policy (version 1, June 2021)",
+      "jurisdiction_id": "OMN",
+      "issuing_authority": "Ministry of Transport, Communications and Information Technology (MTCIT)",
+      "publisher_name": "Ministry of Transport, Communications and Information Technology (MTCIT)",
+      "authority_type": "ministry",
+      "government_level": "national",
+      "categories": [
+        "historical",
+        "public-sector",
+        "ethics"
+      ],
+      "category": "historical",
+      "subcategory": null,
+      "legal_status": "administrative_policy_mandatory_in_scope",
+      "publication_date": "2021-06",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Version 1 issued June 2021 by MTCIT's Directorate General of Policies and Governance for all government administrative units; still downloadable from the legacy MTCIT portal but no longer listed in the current MTCIT policy library. The 2025 General Policy covers the same ground; the 2025 text does not state that it replaces this policy, so no supersession is recorded.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Oman's first policy regulating AI use by government administrative units. It sets six principles (inclusiveness, human-centred, accountability, fairness, transparency, safety) and 19 mandatory terms, including risk assessments, bias checks, internal audits, explainability, logging, pre-production testing, disclaimers to affected people and consent for high-impact automated decisions. MTCIT audits compliance and reports to the Council of Ministers.",
+      "ai_governance_relevance": "Primary-source material for assessing historical, public-sector, ethics.",
+      "source_url": "https://www.mtcit.gov.om/ITAPortal/Data/SiteImgGallery/20223981295/Artificial%20Intelligence%20Systems%20Policy%20v1.0%20(1).pdf",
+      "official_pdf_url": "https://www.mtcit.gov.om/ITAPortal/Data/SiteImgGallery/20223981295/Artificial%20Intelligence%20Systems%20Policy%20v1.0%20(1).pdf",
+      "official_webpage_url": null,
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-36ee3b354e09"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Arabic original not located",
+        "Formal status after the 2025 General Policy"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-2420622d1b1b",
+      "organization_id": "o-8ffa85a6240c"
+    },
+    {
+      "id": "i-7a6f7bb472f1",
+      "official_title": "Executive Program for Artificial Intelligence and Advanced Technologies",
+      "english_title": "Executive Program for Artificial Intelligence and Advanced Technologies (2022)",
+      "jurisdiction_id": "OMN",
+      "issuing_authority": "Ministry of Transport, Communications and Information Technology (MTCIT)",
+      "publisher_name": "Ministry of Transport, Communications and Information Technology (MTCIT)",
+      "authority_type": "ministry",
+      "government_level": "national",
+      "categories": [
+        "historical",
+        "strategy"
+      ],
+      "category": "historical",
+      "subcategory": null,
+      "legal_status": "national_strategy",
+      "publication_date": "2022-10",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Published by MTCIT in October 2022 (MTCIT AI publications page). The 2024 National Program states that this executive program was updated into the comprehensive National Program for AI and Advanced Digital Technologies.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "MTCIT's 2022 executive programme for AI and advanced technologies under the National Program for Digital Economy, setting objectives, initiatives and projects to raise sector productivity, localise AI technologies and build capabilities. It was replaced by the 2024 National Program for AI and Advanced Digital Technologies.",
+      "ai_governance_relevance": "Primary-source material for assessing historical, strategy.",
+      "source_url": "https://mtcit.gov.om/web/content/14157",
+      "official_pdf_url": "https://mtcit.gov.om/web/content/14157",
+      "official_webpage_url": "https://mtcit.gov.om/ar/sectors/ai/publications",
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [
+        "i-6ed8ded17179"
+      ],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Exact publication day",
+        "Arabic version not located on the page"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "superseded",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-ffbcfdac4ca1",
+      "organization_id": "o-8ffa85a6240c"
+    },
+    {
+      "id": "i-fda676d361e8",
+      "official_title": "Future Opportunities for Artificial Intelligence Applications and Advanced Technologies in the Sultanate of Oman",
+      "english_title": "Future Opportunities for AI Applications and Advanced Technologies in the Sultanate of Oman (June 2021)",
+      "jurisdiction_id": "OMN",
+      "issuing_authority": "Ministry of Transport, Communications and Information Technology (MTCIT)",
+      "publisher_name": "Ministry of Transport, Communications and Information Technology (MTCIT)",
+      "authority_type": "ministry",
+      "government_level": "national",
+      "categories": [
+        "historical",
+        "strategy"
+      ],
+      "category": "historical",
+      "subcategory": null,
+      "legal_status": "nonbinding_guidance",
+      "publication_date": "2021-06",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Published by MTCIT in June 2021 (MTCIT AI publications page and the document cover). Cited by the 2024 National Program as the first step in Oman's AI policy work.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "MTCIT's 2021 scoping document identifying priority sectors and future opportunities for AI and advanced technologies in Oman. It preceded the 2021 AI Systems Policy and the 2022 Executive Program and is kept for the timeline.",
+      "ai_governance_relevance": "Primary-source material for assessing historical, strategy.",
+      "source_url": "https://mtcit.gov.om/web/content/14162",
+      "official_pdf_url": "https://mtcit.gov.om/web/content/14162",
+      "official_webpage_url": "https://mtcit.gov.om/ar/sectors/ai/publications",
+      "language": "en",
       "supersedes": [],
       "superseded_by": [],
       "related_instruments": [],
       "regional_applicability": [],
       "verification_date": "2026-10-06",
-      "verification_level": "primary_source_located",
+      "verification_level": "reviewed_primary_metadata",
       "metadata_gaps": [
-        "Issuing authority",
-        "Publication/effective dates",
-        "Current legal status",
-        "Precise applicability",
-        "Version history",
-        "Authority type",
-        "Government level",
-        "Publication date",
-        "Effective date",
-        "Last amended date",
-        "Document language"
+        "Exact publication day"
       ],
       "source_kind": "official_document",
-      "evidence_reference": "turn45search9",
-      "link_status": "inaccessible",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
       "document_access_type": "original_government_document",
-      "source_id": "s-7d6dba079f07",
-      "organization_id": "o-daebe3e9bc0f",
-      "lifecycle": "unverified",
+      "lifecycle": "published",
       "first_recorded": "2026-10-06",
       "last_changed": null,
-      "subnational_unit": null
+      "subnational_unit": null,
+      "source_id": "s-19b0b1238fcb",
+      "organization_id": "o-8ffa85a6240c"
+    },
+    {
+      "id": "i-fc3cb66142f3",
+      "official_title": "التقرير الإعلامي حول نتائج المشورة العامة للسياسة الوطنية للذكاء الاصطناعي",
+      "english_title": "Public consultation on the National AI Policy (2-31 August 2024): results report",
+      "jurisdiction_id": "OMN",
+      "issuing_authority": "Ministry of Transport, Communications and Information Technology (MTCIT)",
+      "publisher_name": "Ministry of Transport, Communications and Information Technology (MTCIT)",
+      "authority_type": "ministry",
+      "government_level": "national",
+      "categories": [
+        "drafts"
+      ],
+      "category": "drafts",
+      "subcategory": null,
+      "legal_status": "consultation_draft",
+      "publication_date": "2025-05",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Consultation held 2-31 August 2024 on MTCIT's digital-participation page; status shown as closed. The results report (MTCIT, PDF created May 2025) is the only document now online; the consultation draft itself is not, and is listed under leads. The outcome was the 2025 General Policy.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "MTCIT's record of the public consultation on the draft National AI Policy, held 2-31 August 2024. The results report gives the profile of participants (50% public sector, 30% private sector, 15% academics, 5% public) and summarises the comments received, which called for clearer governance rules for using and developing AI. It also explains how the comments were reflected in the National Program and the final policy.",
+      "ai_governance_relevance": "Primary-source material for assessing drafts.",
+      "source_url": "https://mtcit.gov.om/library-3/report-studies-9/survey-report-76/public-consultation-on-the-national-artificial-intelligence-policy-421",
+      "official_pdf_url": "https://mtcit.gov.om/web/content/19612?unique=26368059bef036ecef44553afd55a0afd74ae593&download=true",
+      "official_webpage_url": "https://mtcit.gov.om/ar/3/9/76/421",
+      "language": "ar",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-36ee3b354e09"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Consultation draft text not online",
+        "Exact publication date of the results report"
+      ],
+      "source_kind": "consultation_portal",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "consultation",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-ed38236ce23b",
+      "organization_id": "o-8ffa85a6240c"
     }
   ],
   "organizations": [
     {
       "id": "o-8ffa85a6240c",
       "jurisdiction_id": "OMN",
-      "name": "www.mtcit.gov.om",
-      "publisher_name_verified": false,
-      "ai_governance_role": "Publisher of listed official material; complete institutional mandate and statutory responsibilities require review.",
-      "source_url": "https://www.mtcit.gov.om/ar/3/8/73/291",
-      "authority_type": null,
-      "government_level": null
+      "name": "Ministry of Transport, Communications and Information Technology (MTCIT)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Lead AI policy body: runs the National Program for AI and Advanced Digital Technologies, issues the General Policy for the Safe and Ethical Use of AI Systems (through its General Directorate of Policies and Governance), and is the competent authority under the Personal Data Protection Law.",
+      "source_url": "https://mtcit.gov.om/ar/3/8/73/291",
+      "authority_type": "ministry",
+      "government_level": "national"
     },
     {
-      "id": "o-daebe3e9bc0f",
+      "id": "o-bf812630ba7c",
       "jurisdiction_id": "OMN",
-      "name": "ita.gov.om",
-      "publisher_name_verified": false,
-      "ai_governance_role": "Publisher of listed official material; complete institutional mandate and statutory responsibilities require review.",
-      "source_url": "https://ita.gov.om/itaportal/Data/SiteImgGallery/202412310846123/National%20Program%20for%20AI%20and%20Advanced%20Digital%20Technologies%20-%20Public%20Version.pdf",
-      "authority_type": null,
-      "government_level": null
+      "name": "Sultanate of Oman (Sultan, by Royal Decree)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Issues laws by Royal Decree, including the Personal Data Protection Law (6/2022), its 2026 amendment (68/2026) and the AI Special Zone decree (50/2026, lead).",
+      "source_url": "https://mtcit.gov.om/ar/3/8/75/1034",
+      "authority_type": "head_of_state",
+      "government_level": "national"
     }
   ],
   "sources": [
     {
       "id": "s-c1a7f0661141",
-      "url": "https://www.mtcit.gov.om/ar/3/8/73/291",
+      "url": "https://mtcit.gov.om/ar/3/8/73/291",
       "jurisdiction_ids": [
         "OMN"
       ],
       "source_institutions": [
-        "www.mtcit.gov.om"
+        "Ministry of Transport, Communications and Information Technology (MTCIT)"
       ],
       "instrument_ids": [
         "i-36ee3b354e09"
       ],
       "categories_reviewed": [
         "ethics",
-        "government-governance"
+        "government-governance",
+        "public-sector",
+        "risk-assurance",
+        "generative-ai",
+        "transparency"
       ],
       "date_reviewed": "2026-10-06",
       "checked_date": "2026-10-06",
-      "check_method": "GET; first 1 MiB; 14-second timeout",
+      "check_method": "GET; full read 2026-10-06",
       "http_status": 200,
-      "final_url": "https://www.mtcit.gov.om/ar/3/8/73/291",
+      "final_url": "https://mtcit.gov.om/ar/3/8/73/291",
       "link_status": "reachable",
       "page_title": "السياسة العامة للاستخدام الآمن والأخلاقي لأنظمة الذكاء الاصطناعي | MTCIT",
-      "document_language": "ar-001",
+      "document_language": "ar",
       "error": null,
       "content_type": "text/html; charset=utf-8"
     },
     {
       "id": "s-7d6dba079f07",
-      "url": "https://ita.gov.om/itaportal/Data/SiteImgGallery/202412310846123/National%20Program%20for%20AI%20and%20Advanced%20Digital%20Technologies%20-%20Public%20Version.pdf",
+      "url": "https://mtcit.gov.om/web/content/14142",
       "jurisdiction_ids": [
         "OMN"
       ],
       "source_institutions": [
-        "ita.gov.om"
+        "Ministry of Transport, Communications and Information Technology (MTCIT)"
       ],
       "instrument_ids": [
         "i-6ed8ded17179"
       ],
       "categories_reviewed": [
+        "strategy",
+        "government-governance"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "GET; full read 2026-10-06",
+      "http_status": 200,
+      "final_url": "https://mtcit.gov.om/web/content/14142",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "ar",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-8ec7da84badc",
+      "url": "https://mtcit.gov.om/ar/3/8/75/1034",
+      "jurisdiction_ids": [
+        "OMN"
+      ],
+      "source_institutions": [
+        "Ministry of Transport, Communications and Information Technology (MTCIT)"
+      ],
+      "instrument_ids": [
+        "i-04728a470b1a"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "GET; full read 2026-10-06",
+      "http_status": 200,
+      "final_url": "https://mtcit.gov.om/ar/3/8/75/1034",
+      "link_status": "reachable",
+      "page_title": "قانون حماية البيانات الشخصية | MTCIT",
+      "document_language": "ar",
+      "error": null,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "id": "s-ff615a79fc64",
+      "url": "https://mtcit.gov.om/ar/3/8/72/1035",
+      "jurisdiction_ids": [
+        "OMN"
+      ],
+      "source_institutions": [
+        "Ministry of Transport, Communications and Information Technology (MTCIT)"
+      ],
+      "instrument_ids": [
+        "i-9cf2872658bd"
+      ],
+      "categories_reviewed": [
+        "data-privacy"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "GET; full read 2026-10-06",
+      "http_status": 200,
+      "final_url": "https://mtcit.gov.om/ar/3/8/72/1035",
+      "link_status": "reachable",
+      "page_title": "اللائحة التنفيذية لقانون حماية البيانات الشخصية | MTCIT",
+      "document_language": "ar",
+      "error": null,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "id": "s-42e4b60eb467",
+      "url": "https://mtcit.gov.om/ar/3/8/75/1481",
+      "jurisdiction_ids": [
+        "OMN"
+      ],
+      "source_institutions": [
+        "Ministry of Transport, Communications and Information Technology (MTCIT)"
+      ],
+      "instrument_ids": [
+        "i-4fff32ff070f"
+      ],
+      "categories_reviewed": [
+        "binding-law",
+        "data-privacy",
+        "transparency"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "GET; full read 2026-10-06",
+      "http_status": 200,
+      "final_url": "https://mtcit.gov.om/ar/3/8/75/1481",
+      "link_status": "reachable",
+      "page_title": "مرسوم سلطاني بتعديل بعض أحكام قانون حماية البيانات الشخصية | MTCIT",
+      "document_language": "ar",
+      "error": null,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "id": "s-2420622d1b1b",
+      "url": "https://www.mtcit.gov.om/ITAPortal/Data/SiteImgGallery/20223981295/Artificial%20Intelligence%20Systems%20Policy%20v1.0%20(1).pdf",
+      "jurisdiction_ids": [
+        "OMN"
+      ],
+      "source_institutions": [
+        "Ministry of Transport, Communications and Information Technology (MTCIT)"
+      ],
+      "instrument_ids": [
+        "i-502c9c773ae3"
+      ],
+      "categories_reviewed": [
+        "historical",
+        "public-sector",
+        "ethics"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "GET; full read 2026-10-06",
+      "http_status": 200,
+      "final_url": "https://www.mtcit.gov.om/ITAPortal/Data/SiteImgGallery/20223981295/Artificial%20Intelligence%20Systems%20Policy%20v1.0%20(1).pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-ffbcfdac4ca1",
+      "url": "https://mtcit.gov.om/web/content/14157",
+      "jurisdiction_ids": [
+        "OMN"
+      ],
+      "source_institutions": [
+        "Ministry of Transport, Communications and Information Technology (MTCIT)"
+      ],
+      "instrument_ids": [
+        "i-7a6f7bb472f1"
+      ],
+      "categories_reviewed": [
+        "historical",
         "strategy"
       ],
       "date_reviewed": "2026-10-06",
       "checked_date": "2026-10-06",
-      "check_method": "GET; first 1 MiB; 14-second timeout",
-      "http_status": 502,
-      "final_url": "https://ita.gov.om/itaportal/Data/SiteImgGallery/202412310846123/National%20Program%20for%20AI%20and%20Advanced%20Digital%20Technologies%20-%20Public%20Version.pdf",
-      "link_status": "inaccessible",
+      "check_method": "GET; full read 2026-10-06",
+      "http_status": 200,
+      "final_url": "https://mtcit.gov.om/web/content/14157",
+      "link_status": "reachable",
       "page_title": null,
-      "document_language": null,
-      "error": "HTTP Error 502: Bad Gateway"
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-19b0b1238fcb",
+      "url": "https://mtcit.gov.om/web/content/14162",
+      "jurisdiction_ids": [
+        "OMN"
+      ],
+      "source_institutions": [
+        "Ministry of Transport, Communications and Information Technology (MTCIT)"
+      ],
+      "instrument_ids": [
+        "i-fda676d361e8"
+      ],
+      "categories_reviewed": [
+        "historical",
+        "strategy"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "GET; full read 2026-10-06",
+      "http_status": 200,
+      "final_url": "https://mtcit.gov.om/web/content/14162",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-ed38236ce23b",
+      "url": "https://mtcit.gov.om/library-3/report-studies-9/survey-report-76/public-consultation-on-the-national-artificial-intelligence-policy-421",
+      "jurisdiction_ids": [
+        "OMN"
+      ],
+      "source_institutions": [
+        "Ministry of Transport, Communications and Information Technology (MTCIT)"
+      ],
+      "instrument_ids": [
+        "i-fc3cb66142f3"
+      ],
+      "categories_reviewed": [
+        "drafts"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "GET; full read 2026-10-06",
+      "http_status": 200,
+      "final_url": "https://mtcit.gov.om/library-3/report-studies-9/survey-report-76/public-consultation-on-the-national-artificial-intelligence-policy-421",
+      "link_status": "reachable",
+      "page_title": "Public Consultation on the National Artificial Intelligence Policy",
+      "document_language": "en",
+      "error": null,
+      "content_type": "text/html; charset=utf-8"
     }
   ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "OMN",
     "country": "Oman",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
-    "categories_searched": [
-      "strategy",
-      "government-governance",
-      "ethics",
-      "public-sector",
-      "procurement",
-      "cyber-security",
+    "review_status": "DEEP REVIEW COMPLETE",
+    "categories_searched": {
+      "binding-law": "Laws & regulations",
+      "strategy": "Strategy & action plans",
+      "government-governance": "Government AI governance",
+      "ethics": "Responsible AI & ethics",
+      "risk-assurance": "Risk & assurance",
+      "public-sector": "Public-sector AI",
+      "procurement": "AI procurement",
+      "cyber-security": "Safety & cybersecurity",
+      "data-privacy": "Data & privacy",
+      "transparency": "Transparency & accountability",
+      "standards": "Standards & certification",
+      "sandbox": "Regulatory sandboxes",
+      "index-readiness": "Indices & maturity",
+      "sectoral": "Sectoral governance",
+      "generative-ai": "Generative & agentic AI",
+      "drafts": "Drafts & consultations",
+      "international": "Regional & international",
+      "historical": "Historical publications"
+    },
+    "categories_with_findings": [
+      "binding-law",
       "data-privacy",
+      "drafts",
+      "ethics",
+      "generative-ai",
+      "government-governance",
+      "historical",
+      "public-sector",
       "risk-assurance",
+      "strategy",
       "transparency"
     ],
-    "categories_with_findings": [
-      "ethics",
-      "government-governance",
-      "strategy"
-    ],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
-      "binding-law",
-      "strategy",
-      "government-governance",
-      "ethics",
-      "risk-assurance",
-      "public-sector",
-      "procurement",
+    "categories_where_no_material_was_found": [
       "cyber-security",
-      "data-privacy",
-      "transparency",
-      "standards",
-      "sandbox",
       "index-readiness",
-      "sectoral",
-      "generative-ai",
-      "drafts",
       "international",
-      "historical"
+      "procurement",
+      "sandbox",
+      "sectoral",
+      "standards"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Oman \"الذكاء الاصطناعي\" (استراتيجية OR تنظيم OR أخلاقيات) government ministry official",
       "Oman \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Oman government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Oman \"الذكاء الاصطناعي\" cybersecurity authority secure development safety guidelines",
-      "Oman privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Oman privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "mtcit.gov.om library policies artificial intelligence (Arabic and English listing)",
+      "mtcit.gov.om/ar/sectors/ai/publications",
+      "البنك المركزي العماني الذكاء الاصطناعي إطار تنظيمي تعميم",
+      "Central Bank of Oman artificial intelligence regulatory framework guidelines 2025",
+      "cbo.gov.om artificial intelligence circular banks",
+      "Oman Telecommunications Regulatory Authority artificial intelligence regulation consultation",
+      "Oman Ministry of Health artificial intelligence policy guidelines healthcare",
+      "وزارة الصحة سلطنة عمان سياسة استخدام الذكاء الاصطناعي في القطاع الصحي",
+      "Oman National CERT artificial intelligence security guidelines OCERT",
+      "مركز الدفاع الإلكتروني سلطنة عمان الذكاء الاصطناعي ضوابط الأمن السيبراني",
+      "قرار وزاري 108/2025 اللائحة التنظيمية للتحول الرقمي الحكومي الذكاء الاصطناعي",
+      "وزارة النقل والاتصالات وتقنية المعلومات استطلاع الرأي مسودة السياسة الوطنية للذكاء الاصطناعي ميثاق أخلاقيات 2024",
+      "\"Artificial Intelligence Systems Policy\" Oman MTCIT 2021 government entities",
+      "Oman Ministry of Education generative artificial intelligence guidelines schools policy official",
+      "Oman Financial Services Authority artificial intelligence circular OR guidelines",
+      "سلطنة عمان مواصفة قياسية الذكاء الاصطناعي ISO/IEC 42001 المديرية العامة للمواصفات والمقاييس",
+      "mtcit.gov.om public consultation draft national artificial intelligence policy 2024 digital participation",
+      "Oman Secretariat General for Tenders artificial intelligence procurement guideline",
+      "ميثاق أخلاقيات الذكاء الاصطناعي سلطنة عمان وزارة النقل والاتصالات",
+      "Oman regulatory sandbox artificial intelligence TRA OR CBO OR MTCIT",
+      "مرسوم سلطاني 2026 إنشاء منطقة خاصة الذكاء الاصطناعي سلطنة عمان",
+      "\"منطقة الذكاء الاصطناعي الخاصة\" مرسوم 50/2026 site:gov.om",
+      "mjla.gov.om royal decree 50/2026 Special Artificial Intelligence Zone Muscat",
+      "qanoon.om search الذكاء الاصطناعي",
+      "qanoon.om مرسوم سلطاني 68/2026 حماية البيانات الشخصية المعالجة المؤتمتة"
     ],
     "review_date": "2026-10-06",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
-    "discovery_result_count": 10,
-    "focused_result_count": 11
+    "no_material_found_note": "No AI-specific instrument was found from the Cyber Defence Centre / Oman National CERT, the Projects, Tenders and Local Content Authority, the national standards directorate (DGSM at the Ministry of Commerce), the Central Bank of Oman, the Financial Services Authority, the TRA, or the Ministries of Health and Education. The 2025 General Policy itself covers cybersecurity, risk assessment and generative AI. No AI-specific sandbox or government AI index was found. MTCIT's annual report cites the Oxford Insights index, which is not a government index. No national treaty instrument was found; GCC and UNESCO instruments come from data/regional.",
+    "discovery_result_count": 40,
+    "focused_result_count": 24
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-3ec8ad397d04",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "OMN",
+      "instrument_id": "i-36ee3b354e09",
+      "title": "General Policy for the Safe and Ethical Use of Artificial Intelligence Systems",
+      "detail": "Official source moved.",
+      "from": "https://www.mtcit.gov.om/ar/3/8/73/291",
+      "to": "https://mtcit.gov.om/ar/3/8/73/291",
+      "source_url": "https://mtcit.gov.om/ar/3/8/73/291",
+      "needs_review": false
+    },
+    {
+      "id": "c-ca167bde5dd2",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "OMN",
+      "instrument_id": "i-36ee3b354e09",
+      "title": "General Policy for the Safe and Ethical Use of Artificial Intelligence Systems",
+      "detail": "Record updated: categories, issuing authority, legal status, lifecycle, publication date, summary, title.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-fedd28566f5d",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "OMN",
+      "instrument_id": "i-6ed8ded17179",
+      "title": "National Program for AI and Advanced Digital Technologies",
+      "detail": "Official source moved.",
+      "from": "https://ita.gov.om/itaportal/Data/SiteImgGallery/202412310846123/National%20Program%20for%20AI%20and%20Advanced%20Digital%20Technologies%20-%20Public%20Version.pdf",
+      "to": "https://mtcit.gov.om/web/content/14142",
+      "source_url": "https://mtcit.gov.om/web/content/14142",
+      "needs_review": false
+    },
+    {
+      "id": "c-2a65d4385951",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "OMN",
+      "instrument_id": "i-6ed8ded17179",
+      "title": "National Program for AI and Advanced Digital Technologies",
+      "detail": "Record updated: categories, issuing authority, legal status, lifecycle, publication date, summary, title.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-ce8cfb4ac210",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "OMN",
+      "instrument_id": "i-04728a470b1a",
+      "title": "Personal Data Protection Law (Royal Decree No. 6/2022)",
+      "detail": "Added to the radar (published 2022-02-13).",
+      "from": null,
+      "to": null,
+      "source_url": "https://mtcit.gov.om/ar/3/8/75/1034",
+      "needs_review": false
+    },
+    {
+      "id": "c-c4592f3bb675",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "OMN",
+      "instrument_id": "i-9cf2872658bd",
+      "title": "Executive Regulation of the Personal Data Protection Law (Ministerial Decision No. 34/2024)",
+      "detail": "Added to the radar (published 2024-02-04).",
+      "from": null,
+      "to": null,
+      "source_url": "https://mtcit.gov.om/ar/3/8/72/1035",
+      "needs_review": false
+    },
+    {
+      "id": "c-0922a31a5cce",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "OMN",
+      "instrument_id": "i-4fff32ff070f",
+      "title": "Royal Decree No. 68/2026 amending certain provisions of the Personal Data Protection Law",
+      "detail": "Added to the radar (published 2026-09-06).",
+      "from": null,
+      "to": null,
+      "source_url": "https://mtcit.gov.om/ar/3/8/75/1481",
+      "needs_review": false
+    },
+    {
+      "id": "c-f7feba1cbf68",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "OMN",
+      "instrument_id": "i-502c9c773ae3",
+      "title": "Artificial Intelligence Systems Policy (version 1, June 2021)",
+      "detail": "Added to the radar (published 2021-06).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.mtcit.gov.om/ITAPortal/Data/SiteImgGallery/20223981295/Artificial%20Intelligence%20Systems%20Policy%20v1.0%20(1).pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-a2f2619e5e63",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "OMN",
+      "instrument_id": "i-7a6f7bb472f1",
+      "title": "Executive Program for Artificial Intelligence and Advanced Technologies (2022)",
+      "detail": "Added to the radar (published 2022-10).",
+      "from": null,
+      "to": null,
+      "source_url": "https://mtcit.gov.om/web/content/14157",
+      "needs_review": false
+    },
+    {
+      "id": "c-810d28186484",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "OMN",
+      "instrument_id": "i-fda676d361e8",
+      "title": "Future Opportunities for AI Applications and Advanced Technologies in the Sultanate of Oman (June 2021)",
+      "detail": "Added to the radar (published 2021-06).",
+      "from": null,
+      "to": null,
+      "source_url": "https://mtcit.gov.om/web/content/14162",
+      "needs_review": false
+    },
+    {
+      "id": "c-cb14854fac57",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "OMN",
+      "instrument_id": "i-fc3cb66142f3",
+      "title": "Public consultation on the National AI Policy (2-31 August 2024): results report",
+      "detail": "Added to the radar (published 2025-05).",
+      "from": null,
+      "to": null,
+      "source_url": "https://mtcit.gov.om/library-3/report-studies-9/survey-report-76/public-consultation-on-the-national-artificial-intelligence-policy-421",
+      "needs_review": false
+    },
+    {
+      "id": "c-0e79b34688e5",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "OMN",
+      "instrument_id": "i-6ed8ded17179",
+      "title": "National Program for AI and Advanced Digital Technologies",
+      "detail": "Official link restored.",
+      "from": "inaccessible",
+      "to": "reachable",
+      "source_url": "https://mtcit.gov.om/web/content/14142",
+      "needs_review": false
+    },
+    {
+      "id": "c-e2cd6e3ba007",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "OMN",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 9 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-253dbeac5e58",
+      "date": "2026-09-06",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "OMN",
+      "instrument_id": "i-4fff32ff070f",
+      "title": "Royal Decree 68/2026 amending the Personal Data Protection Law published",
+      "detail": "Published in Official Gazette No. 1664; adds automated-processing rules (right to object, human review); in force the day after publication.",
+      "from": null,
+      "to": null,
+      "source_url": "https://mtcit.gov.om/ar/3/8/75/1481",
+      "needs_review": false
+    },
+    {
+      "id": "c-164cce691d71",
+      "date": "2025-04-01",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "OMN",
+      "instrument_id": "i-36ee3b354e09",
+      "title": "General Policy for the Safe and Ethical Use of AI Systems published",
+      "detail": "Publication date as listed in the MTCIT policy library.",
+      "from": null,
+      "to": null,
+      "source_url": "https://mtcit.gov.om/ar/3/8/73/291",
+      "needs_review": false
+    },
+    {
+      "id": "c-5d686e02b238",
+      "date": "2024-09-19",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "OMN",
+      "instrument_id": "i-6ed8ded17179",
+      "title": "Council of Ministers approves the National Program for AI and Advanced Digital Technologies",
+      "detail": "Approval date stated on the MTCIT AI publications page and in the programme's 2024 annual report.",
+      "from": null,
+      "to": null,
+      "source_url": "https://mtcit.gov.om/ar/sectors/ai/publications",
+      "needs_review": false
+    },
+    {
+      "id": "c-8f2806e24fdb",
+      "date": "2024-08-02",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "consultation",
+      "jurisdiction_id": "OMN",
+      "instrument_id": "i-fc3cb66142f3",
+      "title": "Public consultation on the draft National AI Policy opens",
+      "detail": "MTCIT consultation ran 2-31 August 2024.",
+      "from": null,
+      "to": null,
+      "source_url": "https://mtcit.gov.om/library-3/report-studies-9/survey-report-76/public-consultation-on-the-national-artificial-intelligence-policy-421",
+      "needs_review": false
+    },
+    {
+      "id": "c-9b33c5d57d39",
+      "date": "2024-02-04",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "OMN",
+      "instrument_id": "i-9cf2872658bd",
+      "title": "PDPL Executive Regulation (Ministerial Decision 34/2024) published",
+      "detail": "Issued 28 Jan 2024, published in Official Gazette No. 1531; addressees have one year to comply.",
+      "from": null,
+      "to": null,
+      "source_url": "https://mtcit.gov.om/ar/3/8/72/1035",
+      "needs_review": false
+    },
+    {
+      "id": "c-f69961613603",
+      "date": "2022-02-13",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "OMN",
+      "instrument_id": "i-04728a470b1a",
+      "title": "Personal Data Protection Law (Royal Decree 6/2022) published",
+      "detail": "Published in Official Gazette No. 1429; enters into force one year after publication.",
+      "from": null,
+      "to": null,
+      "source_url": "https://mtcit.gov.om/ar/3/8/75/1034",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "مرسوم سلطاني رقم 50/2026 بإنشاء منطقة الذكاء الاصطناعي الخاصة في محافظة مسقط",
+      "english_title": "Royal Decree No. 50/2026 establishing the Artificial Intelligence Special Zone in Muscat Governorate",
+      "issuing_authority": "Sultan of Oman (Royal Decree)",
+      "note": "Signed 30 April 2026; Official Gazette No. 1646 (4 May 2026) according to the non-official qanoon.om transcription. It creates a special economic zone for AI, and the Public Authority for Special Economic Zones and Free Zones appoints its operator in coordination with MTCIT. mjla.gov.om was unreachable (TLS error / HTTP 503) and OPAZ carries only a news item. Promote this lead once an official full text is reachable.",
+      "found": "2026-10-06"
+    },
+    {
+      "title": "تعميم رقم 11/2025 بشأن السياسة العامة للاستخدام الآمن والأخلاقي لأنظمة الذكاء الاصطناعي",
+      "english_title": "MTCIT Circular No. 11/2025 on the General Policy for the Safe and Ethical Use of AI Systems",
+      "issuing_authority": "Ministry of Transport, Communications and Information Technology (MTCIT)",
+      "note": "Dated 9 April 2025, signed by the Minister. It directs state administrative units and regulated private institutions to comply with the policy, including for generative AI. Seen only on qanoon.om; no official copy was found on mtcit.gov.om. If an official copy is found, add it to i-36ee3b354e09 as the effective date.",
+      "found": "2026-10-06"
+    },
+    {
+      "title": "مسودة السياسة الوطنية للذكاء الاصطناعي (مشورة عامة أغسطس 2024)",
+      "english_title": "Draft National AI Policy (public consultation, August 2024)",
+      "issuing_authority": "Ministry of Transport, Communications and Information Technology (MTCIT)",
+      "note": "The consultation draft was published for comment from 2 to 31 August 2024. The MTCIT consultation page now links only to the results report (recorded as i-fc3cb66142f3), not to the draft text.",
+      "found": "2026-10-06"
+    }
+  ]
 }
