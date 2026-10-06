@@ -9,7 +9,7 @@ Run by the weekly Claude scheduled task, or by hand. One run produces **one pull
    git checkout main && git pull
    git checkout -b update/$(date +%F)
    ```
-2. **Deep-review batch.** Take the next `batch_size` countries from `research/queue.json` that are not yet in `done`, in wave order. Apply `research/PROTOCOL.md` in full to each one:
+2. **Deep-review batch.** Run `python3 scripts/next_batch.py` to get this run's countries (one tier A country, or a batch of tier B/C countries; see PROTOCOL §6). Apply `research/PROTOCOL.md` in full to each one:
    - fix or complete the existing records
    - for federal or devolved countries, run the subnational pass (PROTOCOL §2a)
    - add missing instruments

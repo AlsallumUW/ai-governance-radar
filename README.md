@@ -13,7 +13,7 @@ data/meta.json            categories and methodology
 research/PROTOCOL.md      the record standard a country must meet to count as deep-reviewed
 research/WEEKLY.md        the weekly update routine
 research/queue.json       review order (GCC → MENA → G20 → EU → rest of world)
-scripts/                  validate · log_changes · build · check_links
+scripts/                  validate · log_changes · build · check_links · next_batch
 site/                     page template, change-log UI, map assets
 ```
 
@@ -30,6 +30,7 @@ site/                     page template, change-log UI, map assets
 ```bash
 python3 scripts/validate.py      # check data against the standard
 python3 scripts/log_changes.py   # log changes since origin/main
+python3 scripts/next_batch.py    # countries for the next deep-review run (--plan for all)
 python3 scripts/build.py         # build dist/index.html
 ```
 

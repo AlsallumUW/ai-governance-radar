@@ -3,7 +3,7 @@
 You are updating the AI Governance Radar repository: github.com/AlsallumUW/ai-governance-radar.
 
 1. Clone the repository and read `research/WEEKLY.md` and `research/PROTOCOL.md` in full. Follow them exactly.
-2. Deep-review the next `batch_size` countries from `research/queue.json` that are not in `done`.
+2. Run `python3 scripts/next_batch.py` and deep-review the countries it prints (PROTOCOL §6 explains tiers and run size; research countries in parallel sub-agents when there are several).
 3. Sweep the countries already in `done` for new government actions since their last review.
 4. Run `python3 scripts/validate.py` (0 errors required), then `python3 scripts/log_changes.py`, then `python3 scripts/build.py`.
 5. Push a branch `update/<YYYY-MM-DD>` and open one pull request with the changelog body described in WEEKLY.md. Do not merge it.
