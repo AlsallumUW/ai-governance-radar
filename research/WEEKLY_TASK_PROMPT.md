@@ -1,6 +1,6 @@
 # Prompt for the weekly Claude scheduled task
 
-You are updating the AI Governance Radar repository: github.com/<OWNER>/<REPO>.
+You are updating the AI Governance Radar repository: github.com/AlsallumUW/ai-governance-radar.
 
 1. Clone the repository and read `research/WEEKLY.md` and `research/PROTOCOL.md` in full. Follow them exactly.
 2. Deep-review the next `batch_size` countries from `research/queue.json` that are not in `done`.
