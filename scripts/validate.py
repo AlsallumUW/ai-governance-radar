@@ -92,6 +92,9 @@ def check(only=None):
         if n > 1: errs.append(f"duplicate instrument id {k}")
     for k, n in srcids.items():
         if n > 1: errs.append(f"duplicate source id {k}")
+    if not only:
+        from next_batch import QUEUE, check_queue
+        errs += check_queue(load(QUEUE), [p.stem for p in (DATA / "countries").glob("*.json")])
     return errs, warns
 
 

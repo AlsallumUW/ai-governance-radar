@@ -9,7 +9,7 @@ Run by the weekly Claude scheduled task, or by hand. One run produces **one pull
    git checkout main && git pull
    git checkout -b update/$(date +%F)
    ```
-2. **Deep-review batch.** Take the next `batch_size` countries from `research/queue.json` that are not yet in `done`, in wave order. Apply `research/PROTOCOL.md` in full to each one:
+2. **Deep-review batch.** Run `python3 scripts/next_batch.py` to get this run's countries (one tier A country, or a batch of tier B/C countries; see PROTOCOL §6). Apply `research/PROTOCOL.md` in full to each one:
    - fix or complete the existing records
    - for federal or devolved countries, run the subnational pass (PROTOCOL §2a)
    - add missing instruments
@@ -19,7 +19,12 @@ Run by the weekly Claude scheduled task, or by hand. One run produces **one pull
    - add the country to `done` in `queue.json`
 
    If a country cannot be finished, leave `last_deep_review` unset and explain why in the PR.
-3. **Sweep for news.** Countries already in `done` get a quick check for anything new since their last review: new laws, drafts adopted, documents entering into force, revisions, and superseded or repealed instruments. Search each country's AI body and gazette, and run a general "<country> artificial intelligence regulation <month year>" search. Update the records and add world events with exact dates.
+3. **Sweep every country.** All 195 countries and every file in `data/regional/` are checked every week, not only those in `done`. Split the work into one sub-agent per wave in `queue.json` (9 waves) plus one for the regional bodies (EU, GCC, AU, ASEAN, CoE, UNESCO), and run them in parallel. For each country the sub-agent looks for anything published or changed since the country's last sweep (`coverage_audit.last_sweep`, or the last 30 days if unset):
+   - new laws, regulations, strategies, guidance or consultations
+   - drafts adopted, instruments entering into force, revisions, supersessions and repeals
+   - where to look: the national AI body, the ICT ministry, the official gazette or legislation portal, and the data protection authority, plus one search in the official language and one in English: "<country> artificial intelligence <month year>"
+
+   Records follow PROTOCOL §1 and §3 even for countries not yet deep-reviewed (official sources only; a new record in a country without a deep review keeps `verification_level` below `reviewed_primary_metadata` unless every field was checked). Add world events with exact dates. Set `coverage_audit.last_sweep` to today for every country checked, including those where nothing was found. A sub-agent that cannot finish its wave lists the countries it did not reach; the PR names them under **Not swept**.
 4. **Validate and log**
    ```bash
    python3 scripts/validate.py          # must pass with 0 errors
@@ -28,6 +33,7 @@ Run by the weekly Claude scheduled task, or by hand. One run produces **one pull
    ```
 5. **Open the pull request.** Title: `Weekly update YYYY-MM-DD: <countries>`. The body must include:
    - the countries deep-reviewed, each with a one-line summary
+   - the sweep result: countries swept, countries with findings, and **Not swept**
    - **Government actions found**: the list of new, revised, adopted and applied events
    - **Needs review**: auto-inferred events and anything uncertain
    - **Could not verify**: sources that were blocked or unclear

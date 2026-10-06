@@ -10,37 +10,49 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "The UAE governs AI through a mix of federal soft law, sector rules and emirate-level instruments, without an AI-specific federal statute. The National Strategy for AI 2031 (2018), the AI Ethics Principles (2022) and the UAE Charter for the Development and Use of AI (2024) set the national direction; the Personal Data Protection Law (2021) provides the main binding federal layer. Sector regulators add more specific rules: the Central Bank's AI/ML guidance note (2026), the joint financial regulators' enabling-technologies guidelines (2021), and the Cyber Security Council's National Cyber Security Policy for AI. Dubai and Abu Dhabi regulate AI in health (DHA 2021; DoH 2018 and 2025), and the DIFC binds AI-based processing of personal data through Regulation 10 (2023). The direction is consolidation: in June 2026 a Federal Authority for AI and Data was announced to merge the AI Office, TDRA's digital government sector and the Emirates Data Office.",
+    "lead_institutions": [
+      "UAE Artificial Intelligence, Digital Economy and Remote Work Applications Office",
+      "UAE Council for Artificial Intelligence and Blockchain",
+      "Federal Authority for Artificial Intelligence and Data (announced June 2026)",
+      "UAE Cyber Security Council",
+      "Central Bank of the UAE",
+      "Abu Dhabi Artificial Intelligence and Advanced Technology Council",
+      "Digital Dubai",
+      "Department of Health – Abu Dhabi",
+      "Dubai Health Authority"
+    ],
+    "last_deep_review": "2026-10-06",
+    "review_notes": "Deep review 2026-10-06 including an emirate-level pass (Dubai, Abu Dhabi, DIFC). ai.gov.ae and csc.gov.ae block automated reading; metadata for the Cyber Security Council AI policy taken from the u.ae policy page. Not recorded: Responsible Metaverse Self-governance Framework and Blockchain Guide (not AI governance); Dubai Law No. 9 of 2023 on autonomous vehicles and ADGM Data Protection Regulations 2021 (to add in a sectoral follow-up); AI Maturity Self-Assessment Tool (tool, not a document). Standards: no UAE national adoption of ISO/IEC 42001 or 5339 found. Several items are held as leads pending an official document."
   },
   "instruments": [
     {
       "id": "i-cdb2497dd8da",
-      "official_title": "United Arab Emirates Legislations",
-      "english_title": "UAE Charter for the Development and Use of AI",
+      "official_title": "The UAE Charter for the Development and Use of Artificial Intelligence",
+      "english_title": "UAE Charter for the Development and Use of Artificial Intelligence",
       "jurisdiction_id": "ARE",
-      "issuing_authority": null,
-      "publisher_name": "uaelegislation.gov.ae",
+      "issuing_authority": "UAE Government",
+      "publisher_name": "UAE Legislation Platform",
       "authority_type": null,
       "government_level": "national",
       "categories": [
-        "ethics"
+        "ethics",
+        "government-governance"
       ],
       "category": "ethics",
       "subcategory": null,
-      "legal_status": null,
-      "publication_date": null,
+      "legal_status": "nonbinding_guidance",
+      "publication_date": "2024-06-10",
       "effective_date": null,
       "last_amended_date": null,
-      "current_status": "Official source located; current status requires review",
+      "current_status": "Published on the UAE Legislation platform (policy section), dated 10 June 2024. A principles charter; no binding effect stated.",
       "scope": null,
       "sectors": [],
       "technology_scope": [
         "AI"
       ],
-      "summary": "Official source located for this governance category. The document’s adoption, legal effect, scope and version history remain under review.",
-      "ai_governance_relevance": "Primary-source material for assessing responsible ai & ethics.",
+      "summary": "Sets 12 principles for developing and using AI in the UAE, including human-machine ties, safety, algorithmic fairness, data privacy, transparency, human oversight, governance and accountability, and inclusive access. Applies as a national reference for government, industry and society; it does not create enforceable obligations.",
+      "ai_governance_relevance": "Primary-source material for assessing ethics, government-governance.",
       "source_url": "https://uaelegislation.gov.ae/en/policy/details/the-uae-charter-for-the-development-and-use-of-artificial-intelligence",
       "official_pdf_url": null,
       "official_webpage_url": "https://uaelegislation.gov.ae/en/policy/details/the-uae-charter-for-the-development-and-use-of-artificial-intelligence",
@@ -50,37 +62,29 @@
       "related_instruments": [],
       "regional_applicability": [],
       "verification_date": "2026-10-06",
-      "verification_level": "primary_source_located",
+      "verification_level": "reviewed_primary_metadata",
       "metadata_gaps": [
-        "Issuing authority",
-        "Publication/effective dates",
-        "Current legal status",
-        "Precise applicability",
-        "Version history",
-        "Authority type",
-        "Government level",
-        "Publication date",
-        "Effective date",
-        "Last amended date"
+        "Lead entity not named on the policy page",
+        "Arabic official title not recorded"
       ],
-      "source_kind": "official_publication",
-      "evidence_reference": "turn43search4",
+      "source_kind": "legislation_portal",
+      "evidence_reference": "deep-review-2026-10-06",
       "link_status": "reachable",
-      "document_access_type": "official_publication_or_full_text_page",
-      "source_id": "s-d2222ac56d51",
-      "organization_id": "o-a2c5b1533f92",
-      "lifecycle": "unverified",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
       "first_recorded": "2026-10-06",
       "last_changed": null,
-      "subnational_unit": null
+      "subnational_unit": null,
+      "source_id": "s-36f83454f275",
+      "organization_id": "o-e84bada565bf"
     },
     {
       "id": "i-5af724cb8098",
-      "official_title": "استراتيـجيـة الإمارات للذكاء الاصطناعي | المنصة الرسمية لحكومة الإمارات العربية المتحدة",
-      "english_title": "UAE AI Strategy",
+      "official_title": "UAE National Strategy for Artificial Intelligence 2031",
+      "english_title": "UAE National Strategy for Artificial Intelligence 2031",
       "jurisdiction_id": "ARE",
-      "issuing_authority": null,
-      "publisher_name": "u.ae",
+      "issuing_authority": "Office of the Minister of State for Artificial Intelligence",
+      "publisher_name": "Office of the Minister of State for Artificial Intelligence",
       "authority_type": null,
       "government_level": "national",
       "categories": [
@@ -88,18 +92,18 @@
       ],
       "category": "strategy",
       "subcategory": null,
-      "legal_status": null,
-      "publication_date": null,
+      "legal_status": "national_strategy",
+      "publication_date": "2018",
       "effective_date": null,
       "last_amended_date": null,
-      "current_status": "Official source located; current status requires review",
+      "current_status": "Published national strategy (document dated 2018, announced at the World Government Summit). Remains the reference strategy cited by later instruments.",
       "scope": null,
       "sectors": [],
       "technology_scope": [
         "AI"
       ],
-      "summary": "Official source located for this governance category. The document’s adoption, legal effect, scope and version history remain under review.",
-      "ai_governance_relevance": "Primary-source material for assessing strategy & action plans.",
+      "summary": "National strategy to make the UAE a global AI leader by 2031. It sets eight objectives: building reputation as an AI destination, deploying AI in priority sectors, growing the AI ecosystem, adopting AI in government services, attracting and training talent, research capability, data and infrastructure, and AI governance and regulation.",
+      "ai_governance_relevance": "Primary-source material for assessing strategy.",
       "source_url": "https://ai.gov.ae/wp-content/uploads/2021/07/UAE-National-Strategy-for-Artificial-Intelligence-2031.pdf",
       "official_pdf_url": "https://ai.gov.ae/wp-content/uploads/2021/07/UAE-National-Strategy-for-Artificial-Intelligence-2031.pdf",
       "official_webpage_url": null,
@@ -109,88 +113,965 @@
       "related_instruments": [],
       "regional_applicability": [],
       "verification_date": "2026-10-06",
-      "verification_level": "primary_source_located",
+      "verification_level": "reviewed_primary_metadata",
       "metadata_gaps": [
-        "Issuing authority",
-        "Publication/effective dates",
-        "Current legal status",
-        "Precise applicability",
-        "Version history",
-        "Authority type",
-        "Government level",
-        "Publication date",
-        "Effective date",
-        "Last amended date"
+        "Exact launch date not stated in the document"
       ],
       "source_kind": "official_document",
-      "evidence_reference": "turn404search4",
-      "link_status": "inaccessible",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
       "document_access_type": "original_government_document",
-      "source_id": "s-7e26f0d4dc96",
-      "organization_id": "o-35ddad50266c",
-      "lifecycle": "unverified",
+      "lifecycle": "published",
       "first_recorded": "2026-10-06",
       "last_changed": null,
-      "subnational_unit": null
+      "subnational_unit": null,
+      "source_id": "s-cd3e1d6b2db9",
+      "organization_id": "o-0a3130004949"
+    },
+    {
+      "id": "i-f58a7e325669",
+      "official_title": "UAE's International Stance on Artificial Intelligence Policy",
+      "english_title": "UAE's International Stance on Artificial Intelligence Policy",
+      "jurisdiction_id": "ARE",
+      "issuing_authority": "Ministry of Cabinet Affairs",
+      "publisher_name": "Ministry of Cabinet Affairs",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "strategy"
+      ],
+      "category": "strategy",
+      "subcategory": null,
+      "legal_status": "nonbinding_guidance",
+      "publication_date": "2024-09-02",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Published on the UAE Legislation platform (policy section), dated 2 September 2024.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "States the UAE's position on AI internationally through six principles: advancement, collaboration, community, ethics, sustainability and safety. Frames how the UAE engages on AI governance with other countries and international bodies; no binding obligations.",
+      "ai_governance_relevance": "Primary-source material for assessing strategy.",
+      "source_url": "https://uaelegislation.gov.ae/en/policy/details/uae-s-international-stance-on-artificial-intelligence-policy",
+      "official_pdf_url": null,
+      "official_webpage_url": null,
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "legislation_portal",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-ca6bc406385b",
+      "organization_id": "o-8880935ee405"
+    },
+    {
+      "id": "i-df5b368d08a0",
+      "official_title": "AI Ethics: Principles and Guidelines",
+      "english_title": "AI Ethics Principles and Guidelines",
+      "jurisdiction_id": "ARE",
+      "issuing_authority": "UAE Council for Artificial Intelligence and Blockchain",
+      "publisher_name": "UAE Council for Artificial Intelligence and Blockchain",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "ethics",
+        "risk-assurance"
+      ],
+      "category": "ethics",
+      "subcategory": null,
+      "legal_status": "nonbinding_guidance",
+      "publication_date": "2022-12",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Published guidance (December 2022), Creative Commons licensed; listed as the 'AI Ethics Guide' on the government AI resources page.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Sets eight principles (fairness, accountability, transparency, explainability, robustness, human-centred design, sustainability, privacy) for AI systems that make or inform significant decisions. Gives practical guidelines for public and private developers and operators; voluntary.",
+      "ai_governance_relevance": "Primary-source material for assessing ethics, risk-assurance.",
+      "source_url": "https://assets.u.ae/api/public/content/893c940c21c4403ea8df7faad66a889e?v=b2f9c1a1",
+      "official_pdf_url": "https://assets.u.ae/api/public/content/893c940c21c4403ea8df7faad66a889e?v=b2f9c1a1",
+      "official_webpage_url": "https://u.ae/en/about-the-uae/digital-uae/digital-technology/artificial-intelligence/ai-resources",
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Exact day of publication"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-a8beff05cc1a",
+      "organization_id": "o-849dfe6e75ad"
+    },
+    {
+      "id": "i-305b235a3769",
+      "official_title": "AI Adoption Guideline in Government Services",
+      "english_title": "AI Adoption Guideline in Government Services",
+      "jurisdiction_id": "ARE",
+      "issuing_authority": "Ministry of Cabinet Affairs, Prime Minister's Office",
+      "publisher_name": "Ministry of Cabinet Affairs, Prime Minister's Office",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "public-sector"
+      ],
+      "category": "public-sector",
+      "subcategory": null,
+      "legal_status": "nonbinding_guidance",
+      "publication_date": "2023",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Published guidance; year from the AI Office publications listing (the document itself is undated).",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Framework for federal and other government entities to adopt AI in public services across five maturity stages, from Explorer to Transformer. Covers strategy, use-case selection, data, infrastructure, talent and governance, with emphasis on ethical use and human-machine collaboration.",
+      "ai_governance_relevance": "Primary-source material for assessing public-sector.",
+      "source_url": "https://assets.u.ae/api/public/content/efd38f961c104415a22db5e177a73e02?v=57989b9e",
+      "official_pdf_url": "https://assets.u.ae/api/public/content/efd38f961c104415a22db5e177a73e02?v=57989b9e",
+      "official_webpage_url": "https://ai.gov.ae/publications/",
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Month and day of publication"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-cd211a3d1e3c",
+      "organization_id": "o-30d537113972"
+    },
+    {
+      "id": "i-1c0f7fe974ad",
+      "official_title": "100 Practical Applications and Use Cases of Generative AI",
+      "english_title": "100 Practical Applications and Use Cases of Generative AI",
+      "jurisdiction_id": "ARE",
+      "issuing_authority": "UAE Artificial Intelligence, Digital Economy and Remote Work Applications Office",
+      "publisher_name": "UAE Artificial Intelligence, Digital Economy and Remote Work Applications Office",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "generative-ai"
+      ],
+      "category": "generative-ai",
+      "subcategory": null,
+      "legal_status": "nonbinding_guidance",
+      "publication_date": "2023-04",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Published guide, version 1 (April 2023).",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Government guide to generative AI tools and 100 use cases for individuals, businesses and employees. Includes responsible-use advice: protect personal data, verify output reliability, keep human review before relying on generated content.",
+      "ai_governance_relevance": "Primary-source material for assessing generative-ai.",
+      "source_url": "https://ai.gov.ae/wp-content/uploads/2023/04/406.-Generative-AI-Guide_ver1-EN.pdf",
+      "official_pdf_url": "https://ai.gov.ae/wp-content/uploads/2023/04/406.-Generative-AI-Guide_ver1-EN.pdf",
+      "official_webpage_url": null,
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-55725b3cfee5",
+      "organization_id": "o-059246e188c9"
+    },
+    {
+      "id": "i-6a95fff66327",
+      "official_title": "The Practical Applications of Generative AI in Media: 100 Use Cases and Applications",
+      "english_title": "100 Practical Applications and Use Cases of Generative AI in Media",
+      "jurisdiction_id": "ARE",
+      "issuing_authority": "UAE Artificial Intelligence, Digital Economy and Remote Work Applications Office",
+      "publisher_name": "UAE Artificial Intelligence, Digital Economy and Remote Work Applications Office",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "generative-ai",
+        "sectoral"
+      ],
+      "category": "generative-ai",
+      "subcategory": null,
+      "legal_status": "nonbinding_guidance",
+      "publication_date": "2023-09",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Published guide (September 2023), prepared with the Dubai Media Council and Dubai Press Club.",
+      "scope": null,
+      "sectors": [
+        "media"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Sector guide on generative AI for media professionals, covering 100 applications in content creation, video, voice and transcription. Recommends human oversight of AI output and attention to privacy and reliability; non-binding.",
+      "ai_governance_relevance": "Primary-source material for assessing generative-ai, sectoral.",
+      "source_url": "https://assets.u.ae/api/public/content/51a27b64ceb34313b6fc4543f1c3d4ed?v=f3dd1a12",
+      "official_pdf_url": "https://assets.u.ae/api/public/content/51a27b64ceb34313b6fc4543f1c3d4ed?v=f3dd1a12",
+      "official_webpage_url": null,
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-d29b07f5086b",
+      "organization_id": "o-059246e188c9"
+    },
+    {
+      "id": "i-983efafdd7c6",
+      "official_title": "AI Guide: Deepfakes",
+      "english_title": "Deepfake Guide",
+      "jurisdiction_id": "ARE",
+      "issuing_authority": "National Program for Artificial Intelligence",
+      "publisher_name": "National Program for Artificial Intelligence",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "generative-ai"
+      ],
+      "category": "generative-ai",
+      "subcategory": null,
+      "legal_status": "nonbinding_guidance",
+      "publication_date": "2021-07",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Published public-awareness guide (July 2021).",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Public guide explaining how AI-generated deepfake audio and video are made and the harms they can cause, including misinformation, cyberbullying and reputational damage. Gives practical ways to detect deepfakes and protect against misuse.",
+      "ai_governance_relevance": "Primary-source material for assessing generative-ai.",
+      "source_url": "https://assets.u.ae/api/public/content/38a05cb9c7bb491b8411092b9426fef1?v=4e2a2c8a",
+      "official_pdf_url": "https://assets.u.ae/api/public/content/38a05cb9c7bb491b8411092b9426fef1?v=4e2a2c8a",
+      "official_webpage_url": null,
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-e39135625f8e",
+      "organization_id": "o-3d6e253ef1e4"
+    },
+    {
+      "id": "i-980d8dad8194",
+      "official_title": "Federal Decree by Law No. (45) of 2021 Concerning the Protection of Personal Data",
+      "english_title": "Personal Data Protection Law (Federal Decree-Law No. 45 of 2021)",
+      "jurisdiction_id": "ARE",
+      "issuing_authority": "Federal Government of the UAE",
+      "publisher_name": "Federal Government of the UAE",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "category": "data-privacy",
+      "subcategory": null,
+      "legal_status": "binding_law",
+      "publication_date": "2021-09-26",
+      "effective_date": "2022-01-02",
+      "last_amended_date": null,
+      "current_status": "Active per the UAE Legislation platform. Issued 20 September 2021; Official Gazette No. 712 (supplement), 26 September 2021; effective 2 January 2022. Arabic text is authoritative.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Federal data protection law governing the processing of personal data by controllers and processors in the UAE, outside the financial free zones, which have their own regimes. It is the main binding federal law for personal data used to train and run AI systems.",
+      "ai_governance_relevance": "Primary-source material for assessing data-privacy, binding-law.",
+      "source_url": "https://uaelegislation.gov.ae/en/legislations/1972",
+      "official_pdf_url": "https://uaelegislation.gov.ae/en/legislations/1972/download",
+      "official_webpage_url": null,
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Executive regulations not yet recorded"
+      ],
+      "source_kind": "legislation_portal",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "in_force",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-75dfe1e3aeae",
+      "organization_id": "o-96b526e557a4"
+    },
+    {
+      "id": "i-7208e39d3fcc",
+      "official_title": "The National Cyber Security Policy for Artificial Intelligence",
+      "english_title": "National Cyber Security Policy for Artificial Intelligence",
+      "jurisdiction_id": "ARE",
+      "issuing_authority": "UAE Cyber Security Council",
+      "publisher_name": "UAE Cyber Security Council",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "cyber-security",
+        "risk-assurance"
+      ],
+      "category": "cyber-security",
+      "subcategory": null,
+      "legal_status": "administrative_guideline",
+      "publication_date": "2026",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Version 1.1 published by the Cyber Security Council; the u.ae policy page lists it (page updated 2 July 2026). The PDF on csc.gov.ae blocks automated access, so the exact date and binding wording were not read from the document.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Sets minimum security requirements for adopting AI in the UAE: governance, infrastructure safeguards, protection of algorithms and models, operational safety, threat monitoring and performance evaluation. Calls for human oversight of critical decisions and incident response for AI systems.",
+      "ai_governance_relevance": "Primary-source material for assessing cyber-security, risk-assurance.",
+      "source_url": "https://csc.gov.ae/documents/38662/1042755/National+Cyber+Security+Policy+for+Artificial+Intelligence_v1.1.pdf/aeca22fd-f413-f1ac-a01f-14446e62f982?t=1771617654295",
+      "official_pdf_url": "https://csc.gov.ae/documents/38662/1042755/National+Cyber+Security+Policy+for+Artificial+Intelligence_v1.1.pdf/aeca22fd-f413-f1ac-a01f-14446e62f982?t=1771617654295",
+      "official_webpage_url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/policies/cyber-activities/The-National-Cyber-Security-Policy-for-Artificial-Intelligence",
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Exact publication date",
+        "Version 1.0 date",
+        "Binding effect to confirm from the document"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "inaccessible",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-e17544ca1ef7",
+      "organization_id": "o-71cafe0a5f2b"
+    },
+    {
+      "id": "i-1982d6f204f6",
+      "official_title": "Guidance Note on the Consumer Protection and Responsible Adoption and Use of Artificial Intelligence and Machine Learning by Licensed Financial Institutions in the U.A.E.",
+      "english_title": "CBUAE Guidance Note on Responsible Adoption and Use of AI/ML by Licensed Financial Institutions",
+      "jurisdiction_id": "ARE",
+      "issuing_authority": "Central Bank of the UAE (CBUAE)",
+      "publisher_name": "Central Bank of the UAE (CBUAE)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "sectoral",
+        "risk-assurance",
+        "transparency"
+      ],
+      "category": "sectoral",
+      "subcategory": null,
+      "legal_status": "nonbinding_guidance",
+      "publication_date": "2026-02-11",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Issued 11 February 2026 per the CBUAE Rulebook; announced 23 February 2026. Framed as guidance principles.",
+      "scope": null,
+      "sectors": [
+        "finance"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Sets expectations for all CBUAE-licensed financial institutions, including insurers, using AI and machine learning: board accountability, bias testing and fair outcomes, plain-language disclosure in Arabic and English for high-impact decisions, human oversight models, monitoring and third-party due diligence. To be read with the UAE AI Charter and existing CBUAE standards.",
+      "ai_governance_relevance": "Primary-source material for assessing sectoral, risk-assurance, transparency.",
+      "source_url": "https://rulebook.centralbank.ae/en/rulebook/guidance-note-consumer-protection-and-responsible-adoption-and-use-artificial-intelligence",
+      "official_pdf_url": null,
+      "official_webpage_url": null,
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_publication",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-8f39dd790f26",
+      "organization_id": "o-369714b0d396"
+    },
+    {
+      "id": "i-8add97163989",
+      "official_title": "Guidelines for Financial Institutions Adopting Enabling Technologies",
+      "english_title": "Guidelines for Financial Institutions Adopting Enabling Technologies",
+      "jurisdiction_id": "ARE",
+      "issuing_authority": "Central Bank of the UAE (CBUAE), Securities and Commodities Authority, Dubai Financial Services Authority, ADGM Financial Services Regulatory Authority",
+      "publisher_name": "Central Bank of the UAE (CBUAE)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "sectoral",
+        "risk-assurance"
+      ],
+      "category": "sectoral",
+      "subcategory": null,
+      "legal_status": "administrative_guideline",
+      "publication_date": "2021-11-15",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Jointly issued 15 November 2021 by the four UAE financial regulators.",
+      "scope": null,
+      "sectors": [
+        "finance"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Joint principles and best practices for financial institutions licensed by any of the four regulators when adopting APIs, big data analytics and AI, biometrics, cloud computing and distributed ledgers. Aim: safe and sound adoption, with risks from innovation managed proactively.",
+      "ai_governance_relevance": "Primary-source material for assessing sectoral, risk-assurance.",
+      "source_url": "https://rulebook.centralbank.ae/en/entiresection/47",
+      "official_pdf_url": "https://rulebook.centralbank.ae/sites/default/files/en_net_file_store/CBUAE_EN_2413_VER1.pdf",
+      "official_webpage_url": null,
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_publication",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-4ffe3e9e1ac6",
+      "organization_id": "o-5df17bad54e5"
+    },
+    {
+      "id": "i-fbd5dd61b12c",
+      "official_title": "Smart Dubai AI Ethics Principles & Guidelines",
+      "english_title": "Dubai AI Ethics Principles and Guidelines",
+      "jurisdiction_id": "ARE",
+      "issuing_authority": "Smart Dubai Office (now Digital Dubai)",
+      "publisher_name": "Smart Dubai Office (now Digital Dubai)",
+      "authority_type": null,
+      "government_level": "subnational",
+      "categories": [
+        "ethics"
+      ],
+      "category": "ethics",
+      "subcategory": null,
+      "legal_status": "voluntary_code",
+      "publication_date": "2018-12-30",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Principles version 1.6 and Guidelines version 1.11, both dated 30 December 2018. Voluntary.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Dubai's AI ethics framework: four principles (ethical, secure, humane, inclusive) with detailed guidelines on fairness, accountability, transparency and explainability for AI systems that make significant decisions. Addressed to developers and operators in the public and private sectors; voluntary.",
+      "ai_governance_relevance": "Primary-source material for assessing ethics.",
+      "source_url": "https://www.digitaldubai.ae/docs/default-source/ai-principles-resources/ai-ethics.pdf",
+      "official_pdf_url": "https://www.digitaldubai.ae/docs/default-source/ai-principles-resources/ai-ethics.pdf",
+      "official_webpage_url": null,
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": "Dubai",
+      "source_id": "s-c545e33d7af6",
+      "organization_id": "o-b4da529ee92f"
+    },
+    {
+      "id": "i-26ddbf7c9733",
+      "official_title": "Artificial Intelligence in the Healthcare (Policy HISHD/PP-09)",
+      "english_title": "DHA Policy for Artificial Intelligence in Healthcare",
+      "jurisdiction_id": "ARE",
+      "issuing_authority": "Dubai Health Authority (DHA)",
+      "publisher_name": "Dubai Health Authority (DHA)",
+      "authority_type": null,
+      "government_level": "subnational",
+      "categories": [
+        "sectoral"
+      ],
+      "category": "sectoral",
+      "subcategory": null,
+      "legal_status": "administrative_policy_mandatory_in_scope",
+      "publication_date": "2021-07-01",
+      "effective_date": "2021-10-01",
+      "last_amended_date": null,
+      "current_status": "Policy HISHD/PP-09, issue 01: issued 1 July 2021, effective 1 October 2021.",
+      "scope": null,
+      "sectors": [
+        "health"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Applies to DHA-licensed facilities and professionals, AI developers using Dubai patient data, and insurers and manufacturers deploying AI in Dubai. Requires AI in healthcare to be safe, secure and supervised by end users, and developers to disclose AI-enabled functions, validation methods, datasets and algorithm types.",
+      "ai_governance_relevance": "Primary-source material for assessing sectoral.",
+      "source_url": "https://www.dha.gov.ae/uploads/082022/Artificial%20Intelligence%20Policy20228457.pdf",
+      "official_pdf_url": "https://www.dha.gov.ae/uploads/082022/Artificial%20Intelligence%20Policy20228457.pdf",
+      "official_webpage_url": null,
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "in_force",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": "Dubai",
+      "source_id": "s-7517d0f28dd6",
+      "organization_id": "o-b64dfa0ceafa"
+    },
+    {
+      "id": "i-c07417bac677",
+      "official_title": "Regulation 10 on Processing Personal Data through Autonomous and Semi-autonomous Systems (DIFC Data Protection Regulations)",
+      "english_title": "DIFC Data Protection Regulations: Regulation 10 (AI and autonomous systems)",
+      "jurisdiction_id": "ARE",
+      "issuing_authority": "DIFC Commissioner of Data Protection",
+      "publisher_name": "DIFC Commissioner of Data Protection",
+      "authority_type": null,
+      "government_level": "subnational",
+      "categories": [
+        "data-privacy",
+        "binding-law",
+        "transparency"
+      ],
+      "category": "data-privacy",
+      "subcategory": null,
+      "legal_status": "binding_regulation",
+      "publication_date": "2023-09-01",
+      "effective_date": "2023-09-01",
+      "last_amended_date": null,
+      "current_status": "Enacted and effective 1 September 2023 as part of the amended DIFC Data Protection Regulations. Accreditation and certification frameworks published alongside.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Binding rules for organisations in the Dubai International Financial Centre that process personal data through AI and other autonomous or semi-autonomous systems. Built on principles, ethics and governance, with an accreditation and certification route through approved bodies.",
+      "ai_governance_relevance": "Primary-source material for assessing data-privacy, binding-law, transparency.",
+      "source_url": "https://www.difc.com/business/registrars-and-commissioners/commissioner-of-data-protection/regulation-10",
+      "official_pdf_url": null,
+      "official_webpage_url": null,
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_publication",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "in_force",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": "Dubai (DIFC)",
+      "source_id": "s-16899200b67f",
+      "organization_id": "o-16330270d9be"
+    },
+    {
+      "id": "i-b6b03f3d66f2",
+      "official_title": "Policy on Use of Artificial Intelligence (AI) in the Healthcare Sector of the Emirate of Abu Dhabi",
+      "english_title": "DoH Abu Dhabi Policy on Use of AI in Healthcare",
+      "jurisdiction_id": "ARE",
+      "issuing_authority": "Department of Health – Abu Dhabi (DoH)",
+      "publisher_name": "Department of Health – Abu Dhabi (DoH)",
+      "authority_type": null,
+      "government_level": "subnational",
+      "categories": [
+        "sectoral"
+      ],
+      "category": "sectoral",
+      "subcategory": null,
+      "legal_status": "administrative_policy_mandatory_in_scope",
+      "publication_date": "2018-04-30",
+      "effective_date": "2018-04-30",
+      "last_amended_date": null,
+      "current_status": "Policy/AI/0.9, issued and effective 30 April 2018. Compliance is mandatory, with sanctions available.",
+      "scope": null,
+      "sectors": [
+        "health"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Requires healthcare providers, manufacturers, insurers and researchers using Abu Dhabi patient data for AI to keep governance structures, seek recognised certification, report incidents and design systems to degrade safely. Clinicians keep decision-making authority over AI-assisted recommendations.",
+      "ai_governance_relevance": "Primary-source material for assessing sectoral.",
+      "source_url": "https://www.doh.gov.ae/-/media/E9C1470A575146B18015DEBE57E47F8D.ashx",
+      "official_pdf_url": "https://www.doh.gov.ae/-/media/E9C1470A575146B18015DEBE57E47F8D.ashx",
+      "official_webpage_url": "https://www.doh.gov.ae/en/resources/policies",
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "in_force",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": "Abu Dhabi",
+      "source_id": "s-471c5538f09f",
+      "organization_id": "o-6fe3ed2d34f5"
+    },
+    {
+      "id": "i-603a34f82674",
+      "official_title": "Responsible Artificial Intelligence (AI) Standard",
+      "english_title": "DoH Abu Dhabi Responsible AI Standard",
+      "jurisdiction_id": "ARE",
+      "issuing_authority": "Department of Health – Abu Dhabi (DoH)",
+      "publisher_name": "Department of Health – Abu Dhabi (DoH)",
+      "authority_type": null,
+      "government_level": "subnational",
+      "categories": [
+        "sectoral",
+        "risk-assurance"
+      ],
+      "category": "sectoral",
+      "subcategory": null,
+      "legal_status": "administrative_policy_mandatory_in_scope",
+      "publication_date": "2025-10",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Standard DoH/ST/DDGO/RAI/V1/2025, version 1, October 2025. Applies to DoH and all licensed healthcare entities in Abu Dhabi.",
+      "scope": null,
+      "sectors": [
+        "health"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Sets minimum requirements for developing, procuring and deploying AI in Abu Dhabi healthcare across four domains: core principles (safety, fairness, transparency, accountability), data management, risk assessment and mitigation, and AI literacy. Binds DoH and all licensed healthcare entities in the emirate.",
+      "ai_governance_relevance": "Primary-source material for assessing sectoral, risk-assurance.",
+      "source_url": "https://www.doh.gov.ae/-/media/Feature/Resources/Standards/2025/Responsible-AI-Standard-V1.ashx",
+      "official_pdf_url": "https://www.doh.gov.ae/-/media/Feature/Resources/Standards/2025/Responsible-AI-Standard-V1.ashx",
+      "official_webpage_url": null,
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Exact day of issue",
+        "Effective date"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": "Abu Dhabi",
+      "source_id": "s-65efa557873e",
+      "organization_id": "o-6fe3ed2d34f5"
     }
   ],
   "organizations": [
     {
-      "id": "o-a2c5b1533f92",
+      "id": "o-e84bada565bf",
       "jurisdiction_id": "ARE",
-      "name": "uaelegislation.gov.ae",
-      "publisher_name_verified": false,
-      "ai_governance_role": "Publisher of listed official material; complete institutional mandate and statutory responsibilities require review.",
+      "name": "UAE Government",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Issuer of recorded instrument(s).",
       "source_url": "https://uaelegislation.gov.ae/en/policy/details/the-uae-charter-for-the-development-and-use-of-artificial-intelligence",
       "authority_type": null,
-      "government_level": null
+      "government_level": "national"
     },
     {
-      "id": "o-35ddad50266c",
+      "id": "o-0a3130004949",
       "jurisdiction_id": "ARE",
-      "name": "u.ae",
-      "publisher_name_verified": false,
-      "ai_governance_role": "Publisher of listed official material; complete institutional mandate and statutory responsibilities require review.",
+      "name": "Office of the Minister of State for Artificial Intelligence",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Issuer of recorded instrument(s).",
       "source_url": "https://ai.gov.ae/wp-content/uploads/2021/07/UAE-National-Strategy-for-Artificial-Intelligence-2031.pdf",
       "authority_type": null,
-      "government_level": null
+      "government_level": "national"
+    },
+    {
+      "id": "o-8880935ee405",
+      "jurisdiction_id": "ARE",
+      "name": "Ministry of Cabinet Affairs",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Issuer of recorded instrument(s).",
+      "source_url": "https://uaelegislation.gov.ae/en/policy/details/uae-s-international-stance-on-artificial-intelligence-policy",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-849dfe6e75ad",
+      "jurisdiction_id": "ARE",
+      "name": "UAE Council for Artificial Intelligence and Blockchain",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Issuer of recorded instrument(s).",
+      "source_url": "https://assets.u.ae/api/public/content/893c940c21c4403ea8df7faad66a889e?v=b2f9c1a1",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-30d537113972",
+      "jurisdiction_id": "ARE",
+      "name": "Ministry of Cabinet Affairs, Prime Minister's Office",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Issuer of recorded instrument(s).",
+      "source_url": "https://assets.u.ae/api/public/content/efd38f961c104415a22db5e177a73e02?v=57989b9e",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-059246e188c9",
+      "jurisdiction_id": "ARE",
+      "name": "UAE Artificial Intelligence, Digital Economy and Remote Work Applications Office",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Issuer of recorded instrument(s).",
+      "source_url": "https://ai.gov.ae/wp-content/uploads/2023/04/406.-Generative-AI-Guide_ver1-EN.pdf",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-3d6e253ef1e4",
+      "jurisdiction_id": "ARE",
+      "name": "National Program for Artificial Intelligence",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Issuer of recorded instrument(s).",
+      "source_url": "https://assets.u.ae/api/public/content/38a05cb9c7bb491b8411092b9426fef1?v=4e2a2c8a",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-96b526e557a4",
+      "jurisdiction_id": "ARE",
+      "name": "Federal Government of the UAE",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Issuer of recorded instrument(s).",
+      "source_url": "https://uaelegislation.gov.ae/en/legislations/1972",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-71cafe0a5f2b",
+      "jurisdiction_id": "ARE",
+      "name": "UAE Cyber Security Council",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Issuer of recorded instrument(s).",
+      "source_url": "https://csc.gov.ae/documents/38662/1042755/National+Cyber+Security+Policy+for+Artificial+Intelligence_v1.1.pdf/aeca22fd-f413-f1ac-a01f-14446e62f982?t=1771617654295",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-369714b0d396",
+      "jurisdiction_id": "ARE",
+      "name": "Central Bank of the UAE (CBUAE)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Issuer of recorded instrument(s).",
+      "source_url": "https://rulebook.centralbank.ae/en/rulebook/guidance-note-consumer-protection-and-responsible-adoption-and-use-artificial-intelligence",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-5df17bad54e5",
+      "jurisdiction_id": "ARE",
+      "name": "Central Bank of the UAE (CBUAE), Securities and Commodities Authority, Dubai Financial Services Authority, ADGM Financial Services Regulatory Authority",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Issuer of recorded instrument(s).",
+      "source_url": "https://rulebook.centralbank.ae/en/entiresection/47",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-b4da529ee92f",
+      "jurisdiction_id": "ARE",
+      "name": "Smart Dubai Office (now Digital Dubai)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Issuer of recorded instrument(s).",
+      "source_url": "https://www.digitaldubai.ae/docs/default-source/ai-principles-resources/ai-ethics.pdf",
+      "authority_type": null,
+      "government_level": "subnational"
+    },
+    {
+      "id": "o-b64dfa0ceafa",
+      "jurisdiction_id": "ARE",
+      "name": "Dubai Health Authority (DHA)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Issuer of recorded instrument(s).",
+      "source_url": "https://www.dha.gov.ae/uploads/082022/Artificial%20Intelligence%20Policy20228457.pdf",
+      "authority_type": null,
+      "government_level": "subnational"
+    },
+    {
+      "id": "o-16330270d9be",
+      "jurisdiction_id": "ARE",
+      "name": "DIFC Commissioner of Data Protection",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Issuer of recorded instrument(s).",
+      "source_url": "https://www.difc.com/business/registrars-and-commissioners/commissioner-of-data-protection/regulation-10",
+      "authority_type": null,
+      "government_level": "subnational"
+    },
+    {
+      "id": "o-6fe3ed2d34f5",
+      "jurisdiction_id": "ARE",
+      "name": "Department of Health – Abu Dhabi (DoH)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Issuer of recorded instrument(s).",
+      "source_url": "https://www.doh.gov.ae/-/media/E9C1470A575146B18015DEBE57E47F8D.ashx",
+      "authority_type": null,
+      "government_level": "subnational"
     }
   ],
   "sources": [
     {
-      "id": "s-d2222ac56d51",
+      "id": "s-36f83454f275",
       "url": "https://uaelegislation.gov.ae/en/policy/details/the-uae-charter-for-the-development-and-use-of-artificial-intelligence",
       "jurisdiction_ids": [
         "ARE"
       ],
       "source_institutions": [
-        "uaelegislation.gov.ae"
+        "UAE Government"
       ],
       "instrument_ids": [
         "i-cdb2497dd8da"
       ],
       "categories_reviewed": [
-        "ethics"
+        "ethics",
+        "government-governance"
       ],
       "date_reviewed": "2026-10-06",
       "checked_date": "2026-10-06",
-      "check_method": "GET; first 1 MiB; 14-second timeout",
+      "check_method": "Read through web fetch during deep review",
       "http_status": 200,
       "final_url": "https://uaelegislation.gov.ae/en/policy/details/the-uae-charter-for-the-development-and-use-of-artificial-intelligence",
       "link_status": "reachable",
-      "page_title": "United Arab Emirates Legislations",
+      "page_title": null,
       "document_language": "en",
       "error": null,
-      "content_type": "text/html; charset=UTF-8"
+      "content_type": null
     },
     {
-      "id": "s-7e26f0d4dc96",
+      "id": "s-cd3e1d6b2db9",
       "url": "https://ai.gov.ae/wp-content/uploads/2021/07/UAE-National-Strategy-for-Artificial-Intelligence-2031.pdf",
       "jurisdiction_ids": [
         "ARE"
       ],
       "source_institutions": [
-        "u.ae"
+        "Office of the Minister of State for Artificial Intelligence"
       ],
       "instrument_ids": [
         "i-5af724cb8098"
@@ -200,83 +1081,967 @@
       ],
       "date_reviewed": "2026-10-06",
       "checked_date": "2026-10-06",
-      "check_method": "GET; first 1 MiB; 14-second timeout",
+      "check_method": "Read through web fetch during deep review",
+      "http_status": 200,
+      "final_url": "https://ai.gov.ae/wp-content/uploads/2021/07/UAE-National-Strategy-for-Artificial-Intelligence-2031.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": null
+    },
+    {
+      "id": "s-ca6bc406385b",
+      "url": "https://uaelegislation.gov.ae/en/policy/details/uae-s-international-stance-on-artificial-intelligence-policy",
+      "jurisdiction_ids": [
+        "ARE"
+      ],
+      "source_institutions": [
+        "Ministry of Cabinet Affairs"
+      ],
+      "instrument_ids": [
+        "i-f58a7e325669"
+      ],
+      "categories_reviewed": [
+        "strategy"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Read through web fetch during deep review",
+      "http_status": 200,
+      "final_url": "https://uaelegislation.gov.ae/en/policy/details/uae-s-international-stance-on-artificial-intelligence-policy",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": null
+    },
+    {
+      "id": "s-a8beff05cc1a",
+      "url": "https://assets.u.ae/api/public/content/893c940c21c4403ea8df7faad66a889e?v=b2f9c1a1",
+      "jurisdiction_ids": [
+        "ARE"
+      ],
+      "source_institutions": [
+        "UAE Council for Artificial Intelligence and Blockchain"
+      ],
+      "instrument_ids": [
+        "i-df5b368d08a0"
+      ],
+      "categories_reviewed": [
+        "ethics",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Read through web fetch during deep review",
+      "http_status": 200,
+      "final_url": "https://assets.u.ae/api/public/content/893c940c21c4403ea8df7faad66a889e?v=b2f9c1a1",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": null
+    },
+    {
+      "id": "s-cd211a3d1e3c",
+      "url": "https://assets.u.ae/api/public/content/efd38f961c104415a22db5e177a73e02?v=57989b9e",
+      "jurisdiction_ids": [
+        "ARE"
+      ],
+      "source_institutions": [
+        "Ministry of Cabinet Affairs, Prime Minister's Office"
+      ],
+      "instrument_ids": [
+        "i-305b235a3769"
+      ],
+      "categories_reviewed": [
+        "public-sector"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Read through web fetch during deep review",
+      "http_status": 200,
+      "final_url": "https://assets.u.ae/api/public/content/efd38f961c104415a22db5e177a73e02?v=57989b9e",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": null
+    },
+    {
+      "id": "s-55725b3cfee5",
+      "url": "https://ai.gov.ae/wp-content/uploads/2023/04/406.-Generative-AI-Guide_ver1-EN.pdf",
+      "jurisdiction_ids": [
+        "ARE"
+      ],
+      "source_institutions": [
+        "UAE Artificial Intelligence, Digital Economy and Remote Work Applications Office"
+      ],
+      "instrument_ids": [
+        "i-1c0f7fe974ad"
+      ],
+      "categories_reviewed": [
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Read through web fetch during deep review",
+      "http_status": 200,
+      "final_url": "https://ai.gov.ae/wp-content/uploads/2023/04/406.-Generative-AI-Guide_ver1-EN.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": null
+    },
+    {
+      "id": "s-d29b07f5086b",
+      "url": "https://assets.u.ae/api/public/content/51a27b64ceb34313b6fc4543f1c3d4ed?v=f3dd1a12",
+      "jurisdiction_ids": [
+        "ARE"
+      ],
+      "source_institutions": [
+        "UAE Artificial Intelligence, Digital Economy and Remote Work Applications Office"
+      ],
+      "instrument_ids": [
+        "i-6a95fff66327"
+      ],
+      "categories_reviewed": [
+        "generative-ai",
+        "sectoral"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Read through web fetch during deep review",
+      "http_status": 200,
+      "final_url": "https://assets.u.ae/api/public/content/51a27b64ceb34313b6fc4543f1c3d4ed?v=f3dd1a12",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": null
+    },
+    {
+      "id": "s-e39135625f8e",
+      "url": "https://assets.u.ae/api/public/content/38a05cb9c7bb491b8411092b9426fef1?v=4e2a2c8a",
+      "jurisdiction_ids": [
+        "ARE"
+      ],
+      "source_institutions": [
+        "National Program for Artificial Intelligence"
+      ],
+      "instrument_ids": [
+        "i-983efafdd7c6"
+      ],
+      "categories_reviewed": [
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Read through web fetch during deep review",
+      "http_status": 200,
+      "final_url": "https://assets.u.ae/api/public/content/38a05cb9c7bb491b8411092b9426fef1?v=4e2a2c8a",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": null
+    },
+    {
+      "id": "s-75dfe1e3aeae",
+      "url": "https://uaelegislation.gov.ae/en/legislations/1972",
+      "jurisdiction_ids": [
+        "ARE"
+      ],
+      "source_institutions": [
+        "Federal Government of the UAE"
+      ],
+      "instrument_ids": [
+        "i-980d8dad8194"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Read through web fetch during deep review",
+      "http_status": 200,
+      "final_url": "https://uaelegislation.gov.ae/en/legislations/1972",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": null
+    },
+    {
+      "id": "s-e17544ca1ef7",
+      "url": "https://csc.gov.ae/documents/38662/1042755/National+Cyber+Security+Policy+for+Artificial+Intelligence_v1.1.pdf/aeca22fd-f413-f1ac-a01f-14446e62f982?t=1771617654295",
+      "jurisdiction_ids": [
+        "ARE"
+      ],
+      "source_institutions": [
+        "UAE Cyber Security Council"
+      ],
+      "instrument_ids": [
+        "i-7208e39d3fcc"
+      ],
+      "categories_reviewed": [
+        "cyber-security",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Located through official listing; automated read blocked",
       "http_status": null,
-      "final_url": null,
+      "final_url": "https://csc.gov.ae/documents/38662/1042755/National+Cyber+Security+Policy+for+Artificial+Intelligence_v1.1.pdf/aeca22fd-f413-f1ac-a01f-14446e62f982?t=1771617654295",
       "link_status": "inaccessible",
       "page_title": null,
-      "document_language": null,
-      "error": "<urlopen error timed out>"
+      "document_language": "en",
+      "error": "Automated access blocked (robots/403/500)",
+      "content_type": null
+    },
+    {
+      "id": "s-8f39dd790f26",
+      "url": "https://rulebook.centralbank.ae/en/rulebook/guidance-note-consumer-protection-and-responsible-adoption-and-use-artificial-intelligence",
+      "jurisdiction_ids": [
+        "ARE"
+      ],
+      "source_institutions": [
+        "Central Bank of the UAE (CBUAE)"
+      ],
+      "instrument_ids": [
+        "i-1982d6f204f6"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "risk-assurance",
+        "transparency"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Read through web fetch during deep review",
+      "http_status": 200,
+      "final_url": "https://rulebook.centralbank.ae/en/rulebook/guidance-note-consumer-protection-and-responsible-adoption-and-use-artificial-intelligence",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": null
+    },
+    {
+      "id": "s-4ffe3e9e1ac6",
+      "url": "https://rulebook.centralbank.ae/en/entiresection/47",
+      "jurisdiction_ids": [
+        "ARE"
+      ],
+      "source_institutions": [
+        "Central Bank of the UAE (CBUAE), Securities and Commodities Authority, Dubai Financial Services Authority, ADGM Financial Services Regulatory Authority"
+      ],
+      "instrument_ids": [
+        "i-8add97163989"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Read through web fetch during deep review",
+      "http_status": 200,
+      "final_url": "https://rulebook.centralbank.ae/en/entiresection/47",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": null
+    },
+    {
+      "id": "s-c545e33d7af6",
+      "url": "https://www.digitaldubai.ae/docs/default-source/ai-principles-resources/ai-ethics.pdf",
+      "jurisdiction_ids": [
+        "ARE"
+      ],
+      "source_institutions": [
+        "Smart Dubai Office (now Digital Dubai)"
+      ],
+      "instrument_ids": [
+        "i-fbd5dd61b12c"
+      ],
+      "categories_reviewed": [
+        "ethics"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Read through web fetch during deep review",
+      "http_status": 200,
+      "final_url": "https://www.digitaldubai.ae/docs/default-source/ai-principles-resources/ai-ethics.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": null
+    },
+    {
+      "id": "s-7517d0f28dd6",
+      "url": "https://www.dha.gov.ae/uploads/082022/Artificial%20Intelligence%20Policy20228457.pdf",
+      "jurisdiction_ids": [
+        "ARE"
+      ],
+      "source_institutions": [
+        "Dubai Health Authority (DHA)"
+      ],
+      "instrument_ids": [
+        "i-26ddbf7c9733"
+      ],
+      "categories_reviewed": [
+        "sectoral"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Read through web fetch during deep review",
+      "http_status": 200,
+      "final_url": "https://www.dha.gov.ae/uploads/082022/Artificial%20Intelligence%20Policy20228457.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": null
+    },
+    {
+      "id": "s-16899200b67f",
+      "url": "https://www.difc.com/business/registrars-and-commissioners/commissioner-of-data-protection/regulation-10",
+      "jurisdiction_ids": [
+        "ARE"
+      ],
+      "source_institutions": [
+        "DIFC Commissioner of Data Protection"
+      ],
+      "instrument_ids": [
+        "i-c07417bac677"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law",
+        "transparency"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Read through web fetch during deep review",
+      "http_status": 200,
+      "final_url": "https://www.difc.com/business/registrars-and-commissioners/commissioner-of-data-protection/regulation-10",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": null
+    },
+    {
+      "id": "s-471c5538f09f",
+      "url": "https://www.doh.gov.ae/-/media/E9C1470A575146B18015DEBE57E47F8D.ashx",
+      "jurisdiction_ids": [
+        "ARE"
+      ],
+      "source_institutions": [
+        "Department of Health – Abu Dhabi (DoH)"
+      ],
+      "instrument_ids": [
+        "i-b6b03f3d66f2"
+      ],
+      "categories_reviewed": [
+        "sectoral"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Read through web fetch during deep review",
+      "http_status": 200,
+      "final_url": "https://www.doh.gov.ae/-/media/E9C1470A575146B18015DEBE57E47F8D.ashx",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": null
+    },
+    {
+      "id": "s-65efa557873e",
+      "url": "https://www.doh.gov.ae/-/media/Feature/Resources/Standards/2025/Responsible-AI-Standard-V1.ashx",
+      "jurisdiction_ids": [
+        "ARE"
+      ],
+      "source_institutions": [
+        "Department of Health – Abu Dhabi (DoH)"
+      ],
+      "instrument_ids": [
+        "i-603a34f82674"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Read through web fetch during deep review",
+      "http_status": 200,
+      "final_url": "https://www.doh.gov.ae/-/media/Feature/Resources/Standards/2025/Responsible-AI-Standard-V1.ashx",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": null
     }
   ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "ARE",
     "country": "United Arab Emirates",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
-    "categories_searched": [
-      "strategy",
-      "government-governance",
-      "ethics",
-      "public-sector",
-      "procurement",
+    "review_status": "DEEP REVIEW COMPLETE",
+    "categories_searched": {
+      "binding-law": "Laws & regulations",
+      "strategy": "Strategy & action plans",
+      "government-governance": "Government AI governance",
+      "ethics": "Responsible AI & ethics",
+      "risk-assurance": "Risk & assurance",
+      "public-sector": "Public-sector AI",
+      "procurement": "AI procurement",
+      "cyber-security": "Safety & cybersecurity",
+      "data-privacy": "Data & privacy",
+      "transparency": "Transparency & accountability",
+      "standards": "Standards & certification",
+      "sandbox": "Regulatory sandboxes",
+      "index-readiness": "Indices & maturity",
+      "sectoral": "Sectoral governance",
+      "generative-ai": "Generative & agentic AI",
+      "drafts": "Drafts & consultations",
+      "international": "Regional & international",
+      "historical": "Historical publications"
+    },
+    "categories_with_findings": [
+      "binding-law",
       "cyber-security",
       "data-privacy",
+      "ethics",
+      "generative-ai",
+      "government-governance",
+      "public-sector",
       "risk-assurance",
+      "sectoral",
+      "strategy",
       "transparency"
     ],
-    "categories_with_findings": [
-      "ethics",
-      "strategy"
-    ],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
-      "binding-law",
-      "strategy",
-      "government-governance",
-      "ethics",
-      "risk-assurance",
-      "public-sector",
+    "categories_where_no_material_was_found": [
       "procurement",
-      "cyber-security",
-      "data-privacy",
-      "transparency",
       "standards",
       "sandbox",
       "index-readiness",
-      "sectoral",
-      "generative-ai",
       "drafts",
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
-      "United Arab Emirates \"الذكاء الاصطناعي\" (استراتيجية OR تنظيم OR أخلاقيات) government ministry official",
-      "United Arab Emirates \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
-      "United Arab Emirates government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
-      "United Arab Emirates \"الذكاء الاصطناعي\" cybersecurity authority secure development safety guidelines",
-      "United Arab Emirates privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "UAE federal decree-law artificial intelligence uaelegislation.gov.ae",
+      "ai.gov.ae AI ethics principles guidelines publication",
+      "UAE Charter for the Development and Use of AI",
+      "Dubai AI Security Policy DESC",
+      "Central Bank UAE AI guidance financial institutions rulebook",
+      "Abu Dhabi Law No. 3 of 2024 AIATC",
+      "UAE artificial intelligence law 2026 cabinet resolution",
+      "Federal Authority for Artificial Intelligence and Data decree",
+      "DHA AI policy",
+      "DoH Abu Dhabi AI policy healthcare",
+      "DIFC Regulation 10 autonomous systems",
+      "Digital Dubai AI ethics",
+      "UAE Cybersecurity Council AI policy",
+      "Federal Decree-Law 25 of 2018 projects of future nature RegLab",
+      "UAE AI procurement guidelines Ministry of Finance",
+      "Abu Dhabi government AI policy DGE",
+      "Dubai Human-Machine Collaboration classification",
+      "UAE ISO/IEC 42001 national adoption",
+      "u.ae AI resources",
+      "Agentic AI for Government Services u.ae"
     ],
     "review_date": "2026-10-06",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE"
     },
     "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
     "discovery_result_count": 12,
     "focused_result_count": 10
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-32889be6ccda",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "ARE",
+      "instrument_id": "i-cdb2497dd8da",
+      "title": "UAE Charter for the Development and Use of Artificial Intelligence",
+      "detail": "Record updated: categories, issuing authority, legal status, lifecycle, publication date, summary, title.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-fb96b75e11c9",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "ARE",
+      "instrument_id": "i-5af724cb8098",
+      "title": "UAE National Strategy for Artificial Intelligence 2031",
+      "detail": "Record updated: issuing authority, legal status, lifecycle, publication date, summary, title.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-f63bdbf23b8e",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ARE",
+      "instrument_id": "i-f58a7e325669",
+      "title": "UAE's International Stance on Artificial Intelligence Policy",
+      "detail": "Added to the radar (published 2024-09-02).",
+      "from": null,
+      "to": null,
+      "source_url": "https://uaelegislation.gov.ae/en/policy/details/uae-s-international-stance-on-artificial-intelligence-policy",
+      "needs_review": false
+    },
+    {
+      "id": "c-15f2adc52b11",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ARE",
+      "instrument_id": "i-df5b368d08a0",
+      "title": "AI Ethics Principles and Guidelines",
+      "detail": "Added to the radar (published 2022-12).",
+      "from": null,
+      "to": null,
+      "source_url": "https://assets.u.ae/api/public/content/893c940c21c4403ea8df7faad66a889e?v=b2f9c1a1",
+      "needs_review": false
+    },
+    {
+      "id": "c-47977664f238",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ARE",
+      "instrument_id": "i-305b235a3769",
+      "title": "AI Adoption Guideline in Government Services",
+      "detail": "Added to the radar (published 2023).",
+      "from": null,
+      "to": null,
+      "source_url": "https://assets.u.ae/api/public/content/efd38f961c104415a22db5e177a73e02?v=57989b9e",
+      "needs_review": false
+    },
+    {
+      "id": "c-ab5ded9b485b",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ARE",
+      "instrument_id": "i-1c0f7fe974ad",
+      "title": "100 Practical Applications and Use Cases of Generative AI",
+      "detail": "Added to the radar (published 2023-04).",
+      "from": null,
+      "to": null,
+      "source_url": "https://ai.gov.ae/wp-content/uploads/2023/04/406.-Generative-AI-Guide_ver1-EN.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-3ea29b00e8e9",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ARE",
+      "instrument_id": "i-6a95fff66327",
+      "title": "100 Practical Applications and Use Cases of Generative AI in Media",
+      "detail": "Added to the radar (published 2023-09).",
+      "from": null,
+      "to": null,
+      "source_url": "https://assets.u.ae/api/public/content/51a27b64ceb34313b6fc4543f1c3d4ed?v=f3dd1a12",
+      "needs_review": false
+    },
+    {
+      "id": "c-419b000df10c",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ARE",
+      "instrument_id": "i-983efafdd7c6",
+      "title": "Deepfake Guide",
+      "detail": "Added to the radar (published 2021-07).",
+      "from": null,
+      "to": null,
+      "source_url": "https://assets.u.ae/api/public/content/38a05cb9c7bb491b8411092b9426fef1?v=4e2a2c8a",
+      "needs_review": false
+    },
+    {
+      "id": "c-11f9699d66e2",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ARE",
+      "instrument_id": "i-980d8dad8194",
+      "title": "Personal Data Protection Law (Federal Decree-Law No. 45 of 2021)",
+      "detail": "Added to the radar (published 2021-09-26).",
+      "from": null,
+      "to": null,
+      "source_url": "https://uaelegislation.gov.ae/en/legislations/1972",
+      "needs_review": false
+    },
+    {
+      "id": "c-0559d7e65166",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ARE",
+      "instrument_id": "i-7208e39d3fcc",
+      "title": "National Cyber Security Policy for Artificial Intelligence",
+      "detail": "Added to the radar (published 2026).",
+      "from": null,
+      "to": null,
+      "source_url": "https://csc.gov.ae/documents/38662/1042755/National+Cyber+Security+Policy+for+Artificial+Intelligence_v1.1.pdf/aeca22fd-f413-f1ac-a01f-14446e62f982?t=1771617654295",
+      "needs_review": false
+    },
+    {
+      "id": "c-8de313fabe7f",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ARE",
+      "instrument_id": "i-1982d6f204f6",
+      "title": "CBUAE Guidance Note on Responsible Adoption and Use of AI/ML by Licensed Financial Institutions",
+      "detail": "Added to the radar (published 2026-02-11).",
+      "from": null,
+      "to": null,
+      "source_url": "https://rulebook.centralbank.ae/en/rulebook/guidance-note-consumer-protection-and-responsible-adoption-and-use-artificial-intelligence",
+      "needs_review": false
+    },
+    {
+      "id": "c-f8d4e475e26d",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ARE",
+      "instrument_id": "i-8add97163989",
+      "title": "Guidelines for Financial Institutions Adopting Enabling Technologies",
+      "detail": "Added to the radar (published 2021-11-15).",
+      "from": null,
+      "to": null,
+      "source_url": "https://rulebook.centralbank.ae/en/entiresection/47",
+      "needs_review": false
+    },
+    {
+      "id": "c-f2104894eea0",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ARE",
+      "instrument_id": "i-fbd5dd61b12c",
+      "title": "Dubai AI Ethics Principles and Guidelines",
+      "detail": "Added to the radar (published 2018-12-30).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.digitaldubai.ae/docs/default-source/ai-principles-resources/ai-ethics.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-70e7c43cd0ec",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ARE",
+      "instrument_id": "i-26ddbf7c9733",
+      "title": "DHA Policy for Artificial Intelligence in Healthcare",
+      "detail": "Added to the radar (published 2021-07-01).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.dha.gov.ae/uploads/082022/Artificial%20Intelligence%20Policy20228457.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-064a488c071d",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ARE",
+      "instrument_id": "i-c07417bac677",
+      "title": "DIFC Data Protection Regulations: Regulation 10 (AI and autonomous systems)",
+      "detail": "Added to the radar (published 2023-09-01).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.difc.com/business/registrars-and-commissioners/commissioner-of-data-protection/regulation-10",
+      "needs_review": false
+    },
+    {
+      "id": "c-c6bd254894ca",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ARE",
+      "instrument_id": "i-b6b03f3d66f2",
+      "title": "DoH Abu Dhabi Policy on Use of AI in Healthcare",
+      "detail": "Added to the radar (published 2018-04-30).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.doh.gov.ae/-/media/E9C1470A575146B18015DEBE57E47F8D.ashx",
+      "needs_review": false
+    },
+    {
+      "id": "c-a58f15ffa694",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ARE",
+      "instrument_id": "i-603a34f82674",
+      "title": "DoH Abu Dhabi Responsible AI Standard",
+      "detail": "Added to the radar (published 2025-10).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.doh.gov.ae/-/media/Feature/Resources/Standards/2025/Responsible-AI-Standard-V1.ashx",
+      "needs_review": false
+    },
+    {
+      "id": "c-ccfc9123765f",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "ARE",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 17 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-8ac9f4dea122",
+      "date": "2026-02-11",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "ARE",
+      "instrument_id": "i-1982d6f204f6",
+      "title": "CBUAE issues AI/ML guidance note",
+      "detail": "Issue date per the CBUAE Rulebook.",
+      "from": null,
+      "to": null,
+      "source_url": "https://rulebook.centralbank.ae/en/rulebook/guidance-note-consumer-protection-and-responsible-adoption-and-use-artificial-intelligence",
+      "needs_review": false
+    },
+    {
+      "id": "c-1e91e69f6664",
+      "date": "2024-09-02",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "ARE",
+      "instrument_id": "i-f58a7e325669",
+      "title": "International Stance on AI Policy published",
+      "detail": "Ministry of Cabinet Affairs; dated 2 September 2024.",
+      "from": null,
+      "to": null,
+      "source_url": "https://uaelegislation.gov.ae/en/policy/details/uae-s-international-stance-on-artificial-intelligence-policy",
+      "needs_review": false
+    },
+    {
+      "id": "c-39ee21ab7d5a",
+      "date": "2024-06-10",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "ARE",
+      "instrument_id": "i-cdb2497dd8da",
+      "title": "UAE Charter for the Development and Use of AI published",
+      "detail": "Dated 10 June 2024 on the UAE Legislation platform.",
+      "from": null,
+      "to": null,
+      "source_url": "https://uaelegislation.gov.ae/en/policy/details/the-uae-charter-for-the-development-and-use-of-artificial-intelligence",
+      "needs_review": false
+    },
+    {
+      "id": "c-3dfa7913ede3",
+      "date": "2023-09-01",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "ARE",
+      "instrument_id": "i-c07417bac677",
+      "title": "DIFC Regulation 10 on AI systems takes effect",
+      "detail": "Enacted and effective 1 September 2023.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.difc.com/business/registrars-and-commissioners/commissioner-of-data-protection/regulation-10",
+      "needs_review": false
+    },
+    {
+      "id": "c-5e393a53b9d0",
+      "date": "2022-01-02",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "ARE",
+      "instrument_id": "i-980d8dad8194",
+      "title": "PDPL enters into force",
+      "detail": "Effective date per the UAE Legislation platform.",
+      "from": null,
+      "to": null,
+      "source_url": "https://uaelegislation.gov.ae/en/legislations/1972",
+      "needs_review": false
+    },
+    {
+      "id": "c-001d81cb2d37",
+      "date": "2021-11-15",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "ARE",
+      "instrument_id": "i-8add97163989",
+      "title": "Joint enabling-technologies guidelines issued",
+      "detail": "CBUAE, SCA, DFSA and FSRA.",
+      "from": null,
+      "to": null,
+      "source_url": "https://rulebook.centralbank.ae/en/entiresection/47",
+      "needs_review": false
+    },
+    {
+      "id": "c-8be5a2c6606d",
+      "date": "2021-10-01",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "ARE",
+      "instrument_id": "i-26ddbf7c9733",
+      "title": "DHA AI in healthcare policy takes effect",
+      "detail": "Issued 1 July 2021; effective 1 October 2021.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.dha.gov.ae/uploads/082022/Artificial%20Intelligence%20Policy20228457.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-e0d5cfa2aaba",
+      "date": "2021-09-26",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "ARE",
+      "instrument_id": "i-980d8dad8194",
+      "title": "PDPL published in the Official Gazette",
+      "detail": "Official Gazette No. 712 (supplement).",
+      "from": null,
+      "to": null,
+      "source_url": "https://uaelegislation.gov.ae/en/legislations/1972",
+      "needs_review": false
+    },
+    {
+      "id": "c-4e6f7cc259c3",
+      "date": "2018-04-30",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "ARE",
+      "instrument_id": "i-b6b03f3d66f2",
+      "title": "Abu Dhabi DoH AI healthcare policy issued",
+      "detail": "Effective on publication.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.doh.gov.ae/-/media/E9C1470A575146B18015DEBE57E47F8D.ashx",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "الهيئة الاتحادية للذكاء الاصطناعي والبيانات",
+      "english_title": "Federal Authority for Artificial Intelligence and Data",
+      "issuing_authority": "UAE Cabinet",
+      "note": "Establishment approved and announced 14 June 2026; absorbs the AI Office, TDRA's digital government sector and the Emirates Data Office. Add the founding legal instrument once published on uaelegislation.gov.ae.",
+      "found": "2026-10-06"
+    },
+    {
+      "title": "Law No. (3) of 2024 establishing the Artificial Intelligence and Advanced Technology Council",
+      "english_title": "Abu Dhabi AIATC Law",
+      "issuing_authority": "Ruler of Abu Dhabi",
+      "note": "Announced by the Abu Dhabi Media Office (January 2024). Add once the Abu Dhabi Official Gazette text is located.",
+      "found": "2026-10-06"
+    },
+    {
+      "title": "Dubai AI Security Policy",
+      "english_title": "Dubai AI Security Policy",
+      "issuing_authority": "Dubai Electronic Security Center (DESC)",
+      "note": "Launched September 2024; DESC announcement page has no download. Add when the policy text is published.",
+      "found": "2026-10-06"
+    },
+    {
+      "title": "Guidelines for Artificial Intelligence Procurements (Digital Procurement Procedures Manual)",
+      "english_title": "Federal AI procurement guidelines",
+      "issuing_authority": "Ministry of Finance",
+      "note": "Introduced at an MoF workshop (2 January 2024); guideline text not published online.",
+      "found": "2026-10-06"
+    },
+    {
+      "title": "Federal Decree by Law No. (25) of 2018 on Projects of Future Nature",
+      "english_title": "Projects of Future Nature law (Regulations Lab sandbox)",
+      "issuing_authority": "Federal Government of the UAE",
+      "note": "Legal basis of the RegLab regulatory sandbox (reglab.gov.ae). Full text not located on uaelegislation.gov.ae; record once found.",
+      "found": "2026-10-06"
+    },
+    {
+      "title": "Human-Machine Collaboration (HMC) classification system",
+      "english_title": "Dubai HMC icons for AI involvement in content",
+      "issuing_authority": "Dubai Future Foundation",
+      "note": "Launched July 2025 (labelling of AI involvement in research and publications). No official document page found.",
+      "found": "2026-10-06"
+    },
+    {
+      "title": "Dubai State of AI Report",
+      "english_title": "Dubai State of AI Report",
+      "issuing_authority": "Digital Dubai and Dubai Future Foundation",
+      "note": "Launched 23 April 2025; no downloadable report on Digital Dubai. Candidate for index-readiness.",
+      "found": "2026-10-06"
+    },
+    {
+      "title": "دليل تصميم تجارب الخدمات الحكومية بالذكاء الاصطناعي المساعد",
+      "english_title": "Practical guide for designing government services with agentic AI",
+      "issuing_authority": "UAE Government (National Committee for Agentic AI per u.ae)",
+      "note": "Full text at uaemodel.egsep.ae; issuer and date not stated in the document. Confirm before recording.",
+      "found": "2026-10-06"
+    }
+  ]
 }

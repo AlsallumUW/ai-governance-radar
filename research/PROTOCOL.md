@@ -130,3 +130,19 @@ Also for the country:
 ```
 
 The types are `published`, `revised`, `consultation`, `adopted`, `applied`, `superseded` and `repealed`. Set `needs_review: false` only after checking the event against the source.
+
+## 6. Review tiers and run size
+
+Every country gets the **same standard** (§1–§5): all 18 categories closed, official sources only. Tiers only set how much work to expect, and so how many countries fit in one run. They are listed in `research/queue.json` under `tiers`.
+
+| Tier | Who | Extra work | Per run |
+|---|---|---|---|
+| A | Federal or devolved countries, and the largest AI-policy producers (USA, China, India, Germany, UK, France, Japan, Korea, Singapore…) | Subnational pass (§2a) where relevant; expect 15+ instruments and a large sector-regulator layer | 1 country. The USA may take several runs (federal; then states in groups); add it to `done` only when every part is finished |
+| B | Most countries | — | Up to 6 |
+| C | Small states and countries with little published AI policy | — | Up to 12 |
+
+`python3 scripts/next_batch.py` prints the next run's countries; `--plan` prints every remaining run.
+
+**Changing tiers.** If a tier C country turns out to have 6 or more national instruments, finish it, then move it to B in `queue.json` and say so in the PR. If a tier B country needs a subnational pass or clearly exceeds a run, stop after it, move it to A and list the rest of the batch as not started.
+
+**Working in parallel.** In a run with several countries, each country may be researched by its own sub-agent. Give each one this protocol in full and its country file. The lead researcher then runs `validate.py`, opens at least two `source_url`s per country to spot-check them, and writes the PR.
