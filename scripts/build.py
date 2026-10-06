@@ -22,10 +22,22 @@ def assemble():
         D["instruments"] += r.get("instruments", [])
         D["organizations"] += r.get("organizations", [])
         D["sources"] += r.get("sources", [])
-        D["regional_applicability"] += r.get("regional_applicability", [])
         if r.get("coverage_audit"): D["coverage_audit"].append(r["coverage_audit"])
         D["changes"] += r.get("changes", [])
         if r.get("narrative"): D["narratives"][j["id"]] = r["narrative"]
+    # regional / international instruments apply to each member country (EU AI Act -> all 27, etc.)
+    D["regional_applicability"] = []
+    for r in order:
+        j = r["jurisdiction"]
+        if j["type"] == "country": continue
+        for i in r.get("instruments", []):
+            rule = i.get("applies_to", "members")
+            targets = r.get("members", []) if rule == "members" else (rule if isinstance(rule, list) else [])
+            i["regional_applicability"] = targets
+            for cid in targets:
+                D["regional_applicability"].append({"jurisdiction_id": cid, "instrument_id": i["id"], "regional_jurisdiction_id": j["id"],
+                    "applicability_type": f"{j['id']}_member_layer",
+                    "note": r.get("membership_note") or "Applies through membership; instrument-specific scope remains controlling."})
     D["changes"].sort(key=lambda c: (c.get("date") or "", c.get("recorded") or ""), reverse=True)
     last = {}
     for c in D["changes"]:

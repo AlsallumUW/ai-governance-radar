@@ -17,7 +17,8 @@
   "narrative": {
     "summary": null,
     "lead_institutions": [],
-    "last_deep_review": null
+    "last_deep_review": null,
+    "review_notes": "Subnational layer started as a structure test (Colorado, Texas, California). Full federal + 50-state review pending in the queue; dates on state laws await confirmation from official bill histories."
   },
   "instruments": [
     {
@@ -28,7 +29,7 @@
       "issuing_authority": null,
       "publisher_name": "www.whitehouse.gov",
       "authority_type": null,
-      "government_level": null,
+      "government_level": "national",
       "categories": [
         "procurement"
       ],
@@ -77,7 +78,8 @@
       "organization_id": "o-7bf3321de046",
       "lifecycle": "unverified",
       "first_recorded": "2026-10-06",
-      "last_changed": null
+      "last_changed": null,
+      "subnational_unit": null
     },
     {
       "id": "i-8e530b491a1d",
@@ -87,7 +89,7 @@
       "issuing_authority": "National Security Agency",
       "publisher_name": "National Security Agency",
       "authority_type": null,
-      "government_level": null,
+      "government_level": "national",
       "categories": [
         "cyber-security",
         "generative-ai"
@@ -136,7 +138,160 @@
       "organization_id": "o-de1df0094cce",
       "lifecycle": "published",
       "first_recorded": "2026-10-06",
-      "last_changed": null
+      "last_changed": null,
+      "subnational_unit": null
+    },
+    {
+      "id": "i-us-co-sb24-205",
+      "official_title": "SB24-205 Consumer Protections for Artificial Intelligence",
+      "english_title": "Colorado AI Act (SB24-205)",
+      "jurisdiction_id": "USA",
+      "issuing_authority": "Colorado General Assembly",
+      "publisher_name": "Colorado General Assembly",
+      "authority_type": "legislature",
+      "government_level": "subnational",
+      "subnational_unit": "Colorado",
+      "categories": [
+        "binding-law",
+        "risk-assurance"
+      ],
+      "category": "binding-law",
+      "subcategory": null,
+      "legal_status": "binding_law",
+      "publication_date": "2024-05-17",
+      "effective_date": "2026-06-30",
+      "last_amended_date": null,
+      "current_status": "Enacted 2024. Original effective date 1 Feb 2026, delayed to 30 Jun 2026 by SB25B-004. Further 2026 changes to be verified.",
+      "scope": "State of Colorado",
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Requires developers and deployers of high-risk AI systems to use reasonable care against algorithmic discrimination in consequential decisions such as employment, housing, credit, education and health care. It requires impact assessments, risk-management programmes and consumer notices, and is enforced by the Colorado Attorney General.",
+      "ai_governance_relevance": "State-level AI law within a federal system.",
+      "source_url": "https://leg.colorado.gov/bills/sb24-205",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://leg.colorado.gov/bills/sb24-205",
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "primary_source_located",
+      "metadata_gaps": [
+        "Dates to be confirmed against the official bill history"
+      ],
+      "source_kind": "legislation_portal",
+      "evidence_reference": null,
+      "link_status": "not_checked",
+      "document_access_type": "original_government_document",
+      "source_id": "s-789526e61836",
+      "organization_id": null,
+      "lifecycle": "adopted",
+      "first_recorded": "2026-10-06"
+    },
+    {
+      "id": "i-us-tx-hb149",
+      "official_title": "HB 149 — Texas Responsible Artificial Intelligence Governance Act",
+      "english_title": "Texas Responsible AI Governance Act (TRAIGA, HB 149)",
+      "jurisdiction_id": "USA",
+      "issuing_authority": "Texas Legislature",
+      "publisher_name": "Texas Legislature",
+      "authority_type": "legislature",
+      "government_level": "subnational",
+      "subnational_unit": "Texas",
+      "categories": [
+        "binding-law",
+        "public-sector",
+        "sandbox"
+      ],
+      "category": "binding-law",
+      "subcategory": null,
+      "legal_status": "binding_law",
+      "publication_date": "2025-06-22",
+      "effective_date": "2026-01-01",
+      "last_amended_date": null,
+      "current_status": "Signed June 2025; effective 1 Jan 2026 (to be confirmed against the bill history).",
+      "scope": "State of Texas",
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Prohibits certain intentional harmful AI uses (e.g. manipulation toward self-harm, unlawful discrimination, certain deepfake content) and sets disclosure duties for government agencies using AI. It creates an AI regulatory sandbox and a Texas AI Council, with enforcement by the Attorney General.",
+      "ai_governance_relevance": "State-level AI law within a federal system.",
+      "source_url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB149",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB149",
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "primary_source_located",
+      "metadata_gaps": [
+        "Dates to be confirmed against the official bill history"
+      ],
+      "source_kind": "legislation_portal",
+      "evidence_reference": null,
+      "link_status": "not_checked",
+      "document_access_type": "original_government_document",
+      "source_id": "s-b350224c5012",
+      "organization_id": null,
+      "lifecycle": "in_force",
+      "first_recorded": "2026-10-06"
+    },
+    {
+      "id": "i-us-ca-sb53",
+      "official_title": "SB-53 Artificial intelligence models: large developers",
+      "english_title": "Transparency in Frontier Artificial Intelligence Act (SB 53)",
+      "jurisdiction_id": "USA",
+      "issuing_authority": "California State Legislature",
+      "publisher_name": "California State Legislature",
+      "authority_type": "legislature",
+      "government_level": "subnational",
+      "subnational_unit": "California",
+      "categories": [
+        "binding-law",
+        "risk-assurance",
+        "generative-ai"
+      ],
+      "category": "binding-law",
+      "subcategory": null,
+      "legal_status": "binding_law",
+      "publication_date": "2025-09-29",
+      "effective_date": "2026-01-01",
+      "last_amended_date": null,
+      "current_status": "Approved by the Governor September 2025; operative 1 Jan 2026 (to be confirmed against the chaptered text).",
+      "scope": "State of California",
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Requires large frontier-model developers to publish safety frameworks and transparency reports, and to report critical safety incidents to the state. It adds whistleblower protections and sets up a consortium to design a public computing cluster (CalCompute).",
+      "ai_governance_relevance": "State-level AI law within a federal system.",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB53",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB53",
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "primary_source_located",
+      "metadata_gaps": [
+        "Dates to be confirmed against the official bill history"
+      ],
+      "source_kind": "legislation_portal",
+      "evidence_reference": null,
+      "link_status": "not_checked",
+      "document_access_type": "original_government_document",
+      "source_id": "s-6009c521c3c2",
+      "organization_id": null,
+      "lifecycle": "in_force",
+      "first_recorded": "2026-10-06"
     }
   ],
   "organizations": [
@@ -214,6 +369,89 @@
       "document_language": null,
       "error": null,
       "content_type": "application/pdf"
+    },
+    {
+      "id": "s-789526e61836",
+      "url": "https://leg.colorado.gov/bills/sb24-205",
+      "jurisdiction_ids": [
+        "USA"
+      ],
+      "source_institutions": [
+        "Colorado General Assembly"
+      ],
+      "instrument_ids": [
+        "i-us-co-sb24-205"
+      ],
+      "categories_reviewed": [
+        "binding-law",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": null,
+      "check_method": null,
+      "http_status": null,
+      "final_url": null,
+      "link_status": "not_checked",
+      "page_title": "SB24-205 Consumer Protections for Artificial Intelligence",
+      "document_language": "en",
+      "error": null,
+      "content_type": null
+    },
+    {
+      "id": "s-b350224c5012",
+      "url": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB149",
+      "jurisdiction_ids": [
+        "USA"
+      ],
+      "source_institutions": [
+        "Texas Legislature"
+      ],
+      "instrument_ids": [
+        "i-us-tx-hb149"
+      ],
+      "categories_reviewed": [
+        "binding-law",
+        "public-sector",
+        "sandbox"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": null,
+      "check_method": null,
+      "http_status": null,
+      "final_url": null,
+      "link_status": "not_checked",
+      "page_title": "HB 149 — Texas Responsible Artificial Intelligence Governance Act",
+      "document_language": "en",
+      "error": null,
+      "content_type": null
+    },
+    {
+      "id": "s-6009c521c3c2",
+      "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB53",
+      "jurisdiction_ids": [
+        "USA"
+      ],
+      "source_institutions": [
+        "California State Legislature"
+      ],
+      "instrument_ids": [
+        "i-us-ca-sb53"
+      ],
+      "categories_reviewed": [
+        "binding-law",
+        "risk-assurance",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": null,
+      "check_method": null,
+      "http_status": null,
+      "final_url": null,
+      "link_status": "not_checked",
+      "page_title": "SB-53 Artificial intelligence models: large developers",
+      "document_language": "en",
+      "error": null,
+      "content_type": null
     }
   ],
   "regional_applicability": [],

@@ -15,6 +15,17 @@ ISO = re.compile(r"^\d{4}(-\d{2}(-\d{2})?)?$")
 BOILER = "Official source located for this governance category"
 DOMAINISH = re.compile(r"^(www\.)?[a-z0-9.-]+\.[a-z]{2,}$")
 DEEP_FIELDS = ["issuing_authority", "publication_date", "legal_status", "summary", "language"]
+# Only official documents, or official pages that carry the full text or a download, may be sources.
+ALLOWED_KINDS = {"official_document", "official_publication", "legislation_portal", "consultation_portal"}
+NEWS = re.compile(r"(^|\.)(spa\.gov\.sa|wam\.ae|qna\.org\.qa|bna\.bh|kuna\.net\.kw|omannews\.gov\.om|reuters\.com|apnews\.com|bbc\.|"
+                  r"arabnews|saudigazette|gulfnews|thenationalnews|lexology|jdsupra|regulations\.ai|digitalpolicyalert|oecd\.ai|"
+                  r"wikipedia\.org|x\.com|twitter\.com|linkedin\.com|youtube\.com)$")
+LEVELS = {"national", "subnational", "local", "regional"}
+
+
+def host(u):
+    m = re.match(r"^https?://([^/:]+)", u or "")
+    return (m.group(1).lower() if m else "")
 
 
 def check(only=None):
@@ -44,6 +55,12 @@ def check(only=None):
             for f in ["publication_date", "effective_date", "last_amended_date", "verification_date"]:
                 if i.get(f) and not ISO.match(i[f]): E(f"{k} {f} not ISO date: {i[f]}")
             if not re.match(r"^https?://", i.get("source_url") or ""): E(f"{k} source_url missing or not http(s)")
+            for f in ("source_url", "official_pdf_url", "official_webpage_url"):
+                if i.get(f) and NEWS.search(host(i[f])): E(f"{k} {f} is a news/aggregator site, not an official source: {host(i[f])}")
+            if i.get("source_kind") not in ALLOWED_KINDS: E(f"{k} source_kind '{i.get('source_kind')}' not allowed (must be one of {sorted(ALLOWED_KINDS)})")
+            gl = i.get("government_level")
+            if gl not in LEVELS: E(f"{k} government_level '{gl}' not one of {sorted(LEVELS)}")
+            if gl in ("subnational", "local") and not i.get("subnational_unit"): E(f"{k} is {gl} but subnational_unit is empty")
             if len((i.get("official_title") or "").strip()) < 4: W(f"{k} official_title looks truncated: '{i.get('official_title')}'")
             if re.search(r"\*\*|^\w+\.\s", i.get("official_title") or ""): W(f"{k} official_title looks like scraped text")
             if DOMAINISH.match(i.get("publisher_name") or ""): W(f"{k} publisher is a domain, not an institution: {i.get('publisher_name')}")
@@ -61,7 +78,9 @@ def check(only=None):
             if c.get("kind") == "radar" and ty not in RADAR_TYPES: E(f"change {c.get('id')} bad radar type {ty}")
             if c.get("kind") not in ("world", "radar"): E(f"change {c.get('id')} bad kind {c.get('kind')}")
             if c.get("date") and not ISO.match(c["date"]): E(f"change {c.get('id')} bad date {c['date']}")
-            if c.get("instrument_id") and c["instrument_id"] not in inst_ids and c.get("type") != "removed":
+            if c.get("source_url") and NEWS.search(host(c["source_url"])): E(f"change {c.get('id')} cites a news/aggregator site: {host(c['source_url'])}")
+            removed_ids = {x.get("instrument_id") for x in r.get("changes", []) if x.get("type") == "removed"}
+            if c.get("instrument_id") and c["instrument_id"] not in inst_ids and c["instrument_id"] not in removed_ids:
                 E(f"change {c.get('id')} points to missing instrument {c['instrument_id']}")
         if deep:
             n = r.get("narrative") or {}

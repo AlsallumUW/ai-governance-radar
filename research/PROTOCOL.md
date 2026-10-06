@@ -29,6 +29,20 @@ Include **official government or official-body publications** that govern, steer
 
 Exclude news articles, press releases with no document, think-tank reports, and private-sector codes. Exclude announcements of intent unless an official document exists.
 
+### Source rule: official documents only
+
+A record's `source_url` must be **the document itself** (PDF, or a gazette or legislation page with the full text), or **an official page of the issuing body that carries the full text or a download link**. Allowed `source_kind` values are `official_document`, `official_publication`, `legislation_portal` and `consultation_portal`.
+
+The following are **never** sources, even when official:
+
+- news agencies, including state agencies (SPA, WAM, QNA, BNA, KUNA, ONA)
+- newspapers
+- aggregators (OECD.AI, regulations.ai, Digital Policy Alert)
+- law-firm notes
+- social media
+
+`validate.py` rejects them. If a document is known to exist but no official full text is online yet, record it under `leads` in the country file (not as an instrument) and promote it once the document is published.
+
 ## 2. Where to search (every country, every time)
 
 1. National AI body or AI office, if any
@@ -44,6 +58,33 @@ Exclude news articles, press releases with no document, think-tank reports, and 
 11. **Discovery aids only:** OECD.AI policy database, UNESCO RAM country reports, regional bodies (AU, ASEAN, GCC, OAS). Use them to find documents, but always record the official government source, never the aggregator.
 
 Search in the official language(s) **and** English. Record every query in `coverage_audit.search_queries`.
+
+## 2a. Levels of government
+
+Each instrument has a `government_level`:
+
+| Level | Meaning | Extra field |
+|---|---|---|
+| `national` | Central government | — |
+| `subnational` | State, province, emirate, Land, region, devolved government | `subnational_unit`, e.g. "Colorado", "Dubai", "Bavaria", "Scotland" |
+| `local` | City or municipality, e.g. New York City Local Law 144 | `subnational_unit`, e.g. "New York City" |
+| `regional` | Stored once in `data/regional/` and shown in every member country automatically | — |
+
+Subnational and local instruments live in the **country's** file. The site lists them under "State, provincial & local".
+
+**Federal and devolved countries** need a subnational pass in their deep review: USA (50 states plus major cities), Canada (provinces), Australia (states), Germany (Länder), India (states), China (provinces and major cities), UAE (emirates), Brazil, Mexico, Spain (autonomous communities), UK (Scotland, Wales, Northern Ireland), Switzerland (cantons). Search each state legislature and executive portal for AI laws, executive orders and guidance.
+
+## 2b. Regional and international instruments
+
+Instruments from the EU, GCC, AU, ASEAN, UNESCO and similar bodies are stored **once** in `data/regional/<body>.json`. Each file lists its `members`. Each instrument has an `applies_to` value:
+
+- `"members"`: applies to every member (e.g. the EU AI Act → all 27 EU states)
+- a list of country codes: applies only to those countries (e.g. treaty signatories or parties)
+- `"none"`: not yet attached to any country, pending verification
+
+`build.py` attaches each instrument to every country it applies to. The country page then lists it with the national documents, marked "<body> level · applies here", and its dated changes appear in the country's Changes tab.
+
+Never copy a regional instrument into a country file. A country's own **transposition or implementing law** (e.g. a national law designating AI Act authorities) is a national instrument and goes in the country file.
 
 ## 3. Record standard (each instrument)
 

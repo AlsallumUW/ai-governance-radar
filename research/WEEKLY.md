@@ -11,6 +11,7 @@ Run by the weekly Claude scheduled task, or by hand. One run produces **one pull
    ```
 2. **Deep-review batch.** Take the next `batch_size` countries from `research/queue.json` that are not yet in `done`, in wave order. Apply `research/PROTOCOL.md` in full to each one:
    - fix or complete the existing records
+   - for federal or devolved countries, run the subnational pass (PROTOCOL §2a)
    - add missing instruments
    - fill the narrative
    - close every coverage category
@@ -34,7 +35,7 @@ Run by the weekly Claude scheduled task, or by hand. One run produces **one pull
 
 ## Rules
 
-- Official sources only (PROTOCOL §1). No aggregator URLs in records.
+- Official documents only (PROTOCOL §1): the document itself, or an official page with the full text or a download. No news agencies, press, aggregators or social media.
 - Never mark something binding or in force without the official text saying so.
 - Do not touch `site/` or `scripts/` in a weekly run. Propose tool changes in the PR description instead.
 - Link checking runs separately in GitHub Actions every Monday (`.github/workflows/links.yml`).
