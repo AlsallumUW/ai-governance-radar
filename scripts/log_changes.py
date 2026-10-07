@@ -7,8 +7,9 @@
 
 Government actions (adopted, applied, revised, superseded, ...) that are inferred from field changes are
 marked needs_review=true. Filling in a field that was previously unknown (e.g. lifecycle 'unverified' -> 'adopted')
-is logged as a radar correction, not as a government action. The researcher should also add world events by hand when the source gives a
-precise date (see research/PROTOCOL.md, section 5).
+is logged as a radar correction, not as a government action. The same applies when a placeholder lifecycle (draft, unverified or none)
+changes in the same diff that adds the record or deep-reviews its country: the first real status is a correction, not a new event.
+The researcher should also add world events by hand when the source gives a precise date (see research/PROTOCOL.md, section 5).
 """
 import datetime as dt, sys
 from common import DATA, event, lifecycle_of, load_all, load_all_at, save, today
@@ -17,6 +18,7 @@ TRACKED = {"official_title": "title", "english_title": "title", "issuing_authori
            "publication_date": "publication date", "legal_status": "legal status", "scope": "scope",
            "summary": "summary", "categories": "categories",
            "lifecycle": "lifecycle", "last_amended_date": "amendment date", "effective_date": "effective date"}
+PLACEHOLDER = (None, "unverified", "draft")
 LIFE_TO_TYPE = {"adopted": "adopted", "published": "adopted", "in_force": "applied", "superseded": "superseded",
                 "repealed": "repealed", "consultation": "consultation", "draft": "consultation"}
 
@@ -26,6 +28,8 @@ def detect(old, new, date):
     o = {i["id"]: i for i in old.get("instruments", [])}
     n = {i["id"]: i for i in new.get("instruments", [])}
     jid = new["jurisdiction"]["id"]
+    on, nn = (old.get("narrative") or {}), (new.get("narrative") or {})
+    deep_now = bool(nn.get("last_deep_review")) and nn.get("last_deep_review") != on.get("last_deep_review")
     for k, i in n.items():
         title = i.get("english_title") or i.get("official_title")
         i.setdefault("lifecycle", lifecycle_of(i))
@@ -33,13 +37,16 @@ def detect(old, new, date):
             i.setdefault("first_recorded", date)
             pub = i.get("publication_date")
             recent = pub and len(pub) == 10 and pub >= (dt.date.fromisoformat(date) - dt.timedelta(days=60)).isoformat()
-            if recent:
-                evs.append(event(pub, "world", "published", jid, k, title, "Newly published document.", url=i.get("source_url"), recorded=date, review=True))
+            if recent and i["lifecycle"] not in PLACEHOLDER:
+                # A new record's first status is a radar correction, not a government action; hand-enter world events.
+                evs.append(event(date, "radar", "corrected", jid, k, title, f"Lifecycle recorded as {i['lifecycle']} when added.",
+                                 None, i["lifecycle"], i.get("source_url"), date))
             evs.append(event(date, "radar", "added", jid, k, title, "Added to the radar" + (f" (published {pub})." if pub else "."), url=i.get("source_url"), recorded=date))
             continue
         p = o[k]
         known = p.get("lifecycle") not in (None, "unverified")
-        if known and p.get("lifecycle") != i["lifecycle"]:
+        placeholder_fix = deep_now and p.get("lifecycle") in PLACEHOLDER  # first real status set during a deep review
+        if known and not placeholder_fix and p.get("lifecycle") != i["lifecycle"]:
             typ = LIFE_TO_TYPE.get(i["lifecycle"], "revised")
             when = i.get("effective_date") if typ == "applied" and i.get("effective_date") else date
             evs.append(event(when, "world", typ, jid, k, title, "Status changed.", p.get("lifecycle"), i["lifecycle"], i.get("source_url"), date, True))
@@ -65,7 +72,6 @@ def detect(old, new, date):
                     evs.append(event(date, "radar", "link", jid, iid, n[iid].get("english_title") or n[iid].get("official_title"),
                                      "Official link " + ("restored." if s["link_status"] == "reachable" else "no longer reachable."),
                                      prev.get("link_status"), s.get("link_status"), s.get("url"), date))
-    on, nn = (old.get("narrative") or {}), (new.get("narrative") or {})
     if nn.get("last_deep_review") and nn.get("last_deep_review") != on.get("last_deep_review"):
         evs.append(event(nn["last_deep_review"], "radar", "radar", jid, None, "Deep review completed",
                          f"Country reviewed to the full record standard; {len(n)} documents recorded.", recorded=date))
