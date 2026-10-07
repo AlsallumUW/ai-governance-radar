@@ -10,78 +10,1028 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Egypt governs AI mainly through strategy and soft law led by the Ministry of Communications and Information Technology (MCIT) and the National Council for Artificial Intelligence (NCAI), which was established in 2019 and renamed the National Council for Artificial Intelligence, Quantum Computing and Emerging Technologies in January 2026. The first National AI Strategy (2021) was replaced by a Second Edition for 2025-2030 built on six pillars including governance and data. The Egyptian Charter for Responsible AI (2023) set ethics principles. In March 2026 NCAI published the Guide to the National AI Governance Framework, which sets a four-tier risk classification with a 'Dual-Check' assessment for high-risk systems, together with the National Guidelines for Trustworthy and Responsible AI and the National Generative AI Guidelines, prepared by the Egyptian Center for Responsible AI (ECRAI). Binding rules remain sectoral, such as the Financial Regulatory Authority's 2024 robo-advisor decision on AI-based algorithms, and come from the Personal Data Protection Law No. 151 of 2020 (no official full text of the law or its executive regulations is online). A dedicated AI law is being prepared, but no official draft text has been published.",
+    "lead_institutions": [
+      "Ministry of Communications and Information Technology (MCIT)",
+      "National Council for Artificial Intelligence, Quantum Computing and Emerging Technologies (NCAI)",
+      "Egyptian Center for Responsible AI (ECRAI)",
+      "Personal Data Protection Center (PDPC)",
+      "Information Technology Industry Development Agency (ITIDA)",
+      "National Telecom Regulatory Authority (NTRA) / EG-CERT",
+      "Financial Regulatory Authority (FRA)",
+      "Central Bank of Egypt (CBE)"
+    ],
+    "last_deep_review": "2026-10-06",
+    "review_notes": "Deep review 2026-10-06 (resumed from an interrupted attempt; reused downloaded official PDFs, re-checked every source URL live with HTTP 200). All eight instruments were read from official PDFs on ai.gov.eg, mcit.gov.eg and fra.gov.eg. The Personal Data Protection Law No. 151 of 2020 and its Executive Regulations (Prime Ministerial Decree No. 816 of 2025) have no official full text online: pdpc.gov.eg redirects to portal.pdpc.gov.eg (a login portal with no law texts, and a TLS certificate mismatch on the bare domain), and MCIT has no legislation page; texts found only on law-firm and aggregator sites, which are not admissible. Both are therefore leads. The FinTech Law No. 5 of 2022 (fra.gov.eg PDF) could not be machine-read (legacy font encoding), so its AI provisions, cited by the 2025 strategy, could not be verified; recorded as a lead. FRA Board Decision 163 of 2024 (regulatory lab) and the CBE regulatory sandbox cover FinTech in general, not AI specifically, so they are not recorded. Egypt is an AU member; AU and UNESCO instruments come from data/regional and are not copied here. Arab League documents on MCIT's site (Arab AI Strategy, Arab Charter for AI Ethics) are regional and not recorded as national. Removed: none (file had no instruments)."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-173c1c547b12",
+      "official_title": "Egypt National Artificial Intelligence Strategy",
+      "english_title": "Egypt National Artificial Intelligence Strategy (First Edition, 2021)",
+      "jurisdiction_id": "EGY",
+      "issuing_authority": "National Council for Artificial Intelligence, Quantum Computing and Emerging Technologies (NCAI)",
+      "publisher_name": "Ministry of Communications and Information Technology (MCIT)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "strategy",
+        "historical"
+      ],
+      "category": "strategy",
+      "subcategory": null,
+      "legal_status": "national_strategy",
+      "publication_date": "2021-07",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Published July 2021 (PDF metadata 6 July 2021). Replaced by the Second Edition (2025-2030); MCIT's AI page describes the strategy as 'currently in its second edition'.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Egypt's first national AI strategy, developed by the National Council for AI under MCIT's lead. It rests on four pillars (AI for Government, AI for Development, Capacity Building, International Activities) and four enablers (Governance, Data, Ecosystem, Infrastructure), and gives NCAI oversight of implementation. It is a policy document with no binding effect.",
+      "ai_governance_relevance": "Primary-source material for assessing strategy.",
+      "source_url": "https://mcit.gov.eg/Upcont/Documents/Publications_672021000_Egypt-National-AI-Strategy-English.pdf",
+      "official_pdf_url": "https://mcit.gov.eg/Upcont/Documents/Publications_672021000_Egypt-National-AI-Strategy-English.pdf",
+      "official_webpage_url": null,
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [
+        "i-1cb224432fc4"
+      ],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Exact launch date (document is undated; month from PDF metadata and MCIT listing)"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "superseded",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-132d8d8918a7",
+      "organization_id": "o-c98d6884ffff"
+    },
+    {
+      "id": "i-1cb224432fc4",
+      "official_title": "Egypt National Artificial Intelligence Strategy – Second Edition (2025-2030)",
+      "english_title": "Egypt National Artificial Intelligence Strategy, Second Edition (2025-2030)",
+      "jurisdiction_id": "EGY",
+      "issuing_authority": "National Council for Artificial Intelligence, Quantum Computing and Emerging Technologies (NCAI)",
+      "publisher_name": "National Council for Artificial Intelligence, Quantum Computing and Emerging Technologies (NCAI)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "strategy"
+      ],
+      "category": "strategy",
+      "subcategory": null,
+      "legal_status": "national_strategy",
+      "publication_date": "2025-01",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Current strategy. Launch month taken from the official file name (16-1-2025); the document itself is undated.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "The second national AI strategy, launched with a statement from the President, covering 2025-2030 and built on six pillars: governance, technology, data, ICT and AI infrastructure, ecosystem and talent. It sets initiatives and targets for each pillar, a capacity-assessment (CAF) methodology and expected 1-, 3- and 5-year results, and notes that an Egyptian AI law is in its final development phase. Non-binding policy document.",
+      "ai_governance_relevance": "Primary-source material for assessing strategy.",
+      "source_url": "https://ai.gov.eg/SynchedFiles/en/Resources/AIstrategy%20English%2016-1-2025-1.pdf",
+      "official_pdf_url": "https://ai.gov.eg/SynchedFiles/en/Resources/AIstrategy%20English%2016-1-2025-1.pdf",
+      "official_webpage_url": null,
+      "language": "en",
+      "supersedes": [
+        "i-173c1c547b12"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Exact launch date"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-3141a94fb57d",
+      "organization_id": "o-c98d6884ffff"
+    },
+    {
+      "id": "i-8e1da64d2787",
+      "official_title": "الميثاق المصري للذكاء الاصطناعي المسؤول",
+      "english_title": "Egyptian Charter for Responsible AI (2023, v1.0)",
+      "jurisdiction_id": "EGY",
+      "issuing_authority": "National Council for Artificial Intelligence, Quantum Computing and Emerging Technologies (NCAI)",
+      "publisher_name": "National Council for Artificial Intelligence, Quantum Computing and Emerging Technologies (NCAI)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "ethics"
+      ],
+      "category": "ethics",
+      "subcategory": null,
+      "legal_status": "voluntary_code",
+      "publication_date": "2023",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Version 1.0 (2023). An official English version is published at https://ai.gov.eg/SynchedFiles/en/Resources/Egyptian%20Charter%20For%20Responsible%20AI.pdf.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "NCAI's first articulation of Egypt's interpretation of international responsible-AI guidance (OECD, UNESCO, WHO, IEEE, EU), adapted to the local context. It sets general and implementation guidelines for the development, deployment, management and use of AI systems, each tagged to a responsible-AI principle such as fairness, transparency, accountability, privacy and human oversight. Non-binding.",
+      "ai_governance_relevance": "Primary-source material for assessing ethics.",
+      "source_url": "https://ai.gov.eg/SynchedFiles/ar/Resources/Egyptian%20Charter%20for%20Responsible%20AI_Ar.pdf",
+      "official_pdf_url": "https://ai.gov.eg/SynchedFiles/ar/Resources/Egyptian%20Charter%20for%20Responsible%20AI_Ar.pdf",
+      "official_webpage_url": null,
+      "language": "ar",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Exact adoption date (document states year only)"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-4817277848e3",
+      "organization_id": "o-c98d6884ffff"
+    },
+    {
+      "id": "i-bb4975a2510a",
+      "official_title": "Guide to Egypt's National AI Governance Framework",
+      "english_title": "Guide to Egypt's National AI Governance Framework (Edition 2.0, March 2026)",
+      "jurisdiction_id": "EGY",
+      "issuing_authority": "National Council for Artificial Intelligence, Quantum Computing and Emerging Technologies (NCAI)",
+      "publisher_name": "National Council for Artificial Intelligence, Quantum Computing and Emerging Technologies (NCAI)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "government-governance",
+        "risk-assurance",
+        "transparency",
+        "public-sector"
+      ],
+      "category": "government-governance",
+      "subcategory": null,
+      "legal_status": "administrative_guideline",
+      "publication_date": "2026-03-15",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Edition 2.0 'Approved for Publication', authorized for release by the ICT Minister as NCAI Chairman on 15 March 2026 (signature placeholder), after a public consultation on v1.0 in January 2026. The Guide uses mandatory language for high-risk systems but cites no statute giving it legal force; recorded as an administrative guideline pending the AI law.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "The architecture document of Egypt's National AI Governance Framework (document ID EG-NCAI-GOV-FW-2026-02), prepared by the Egyptian Center for Responsible AI. It adopts a 'State as Orchestrator' model, classifies AI systems into four risk tiers (prohibited, high-risk, limited-risk with transparency and labelling, minimal-risk with a voluntary code), and requires a 'Dual-Check' (ethical impact assessment plus TEVV technical audit) before high-risk systems enter the market. It assigns roles to NCAI, ECRAI, ITIDA, NTRA/EG-CERT, the Personal Data Protection Center and sector regulators, and plans an AI risk registry, an AI Audit Lab/regulatory sandbox and procurement guidelines.",
+      "ai_governance_relevance": "Primary-source material for assessing government-governance.",
+      "source_url": "https://ai.gov.eg/SynchedFiles/ar/Resources/Guide%20to%20Egypt%E2%80%99s%20National%20AI%20Governance%20Framework.pdf",
+      "official_pdf_url": "https://ai.gov.eg/SynchedFiles/ar/Resources/Guide%20to%20Egypt%E2%80%99s%20National%20AI%20Governance%20Framework.pdf",
+      "official_webpage_url": null,
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-410a4eb28ba3",
+        "i-ab7a3b806d71",
+        "i-8e1da64d2787"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-7092ee7ba3d7",
+      "organization_id": "o-c98d6884ffff"
+    },
+    {
+      "id": "i-410a4eb28ba3",
+      "official_title": "Egypt National Guidelines for Trustworthy and Responsible AI",
+      "english_title": "Egypt National Guidelines for Trustworthy and Responsible AI (Edition 2.0, March 2026)",
+      "jurisdiction_id": "EGY",
+      "issuing_authority": "National Council for Artificial Intelligence, Quantum Computing and Emerging Technologies (NCAI)",
+      "publisher_name": "National Council for Artificial Intelligence, Quantum Computing and Emerging Technologies (NCAI)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "ethics",
+        "risk-assurance",
+        "procurement"
+      ],
+      "category": "ethics",
+      "subcategory": null,
+      "legal_status": "administrative_guideline",
+      "publication_date": "2026-03-25",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Edition 2.0 'Approved for Publication', authorized for release by the ICT Minister as NCAI Chairman on 25 March 2026 (signature placeholder).",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Product 1 of the National AI Governance Framework (document ID EG-NCAI-GOV-FW-2026-03): the operational manual for trustworthy and responsible AI for public and private institutions. It sets lifecycle procedures including AI system impact assessment (referencing ISO/IEC 42001), TEVV, ethical and societal impact assessment, an AI procurement and vendor governance procedure, frugal-AI principles and self-assessment checklists.",
+      "ai_governance_relevance": "Primary-source material for assessing ethics.",
+      "source_url": "https://ai.gov.eg/SynchedFiles/ar/Resources/Egypt%20National%20Guidelines%20for%20Trustworthy%20and%20Responsible%20AI.pdf",
+      "official_pdf_url": "https://ai.gov.eg/SynchedFiles/ar/Resources/Egypt%20National%20Guidelines%20for%20Trustworthy%20and%20Responsible%20AI.pdf",
+      "official_webpage_url": null,
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-bb4975a2510a",
+        "i-ab7a3b806d71",
+        "i-8e1da64d2787"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-c0afe8256713",
+      "organization_id": "o-c98d6884ffff"
+    },
+    {
+      "id": "i-ab7a3b806d71",
+      "official_title": "المبادئ التوجيهية الوطنية للذكاء الاصطناعي التوليدي: أطر الابتكار والمسؤولية",
+      "english_title": "Egypt's National Generative AI Guidelines: Frameworks for Innovation & Responsibility (v1.0, March 2026)",
+      "jurisdiction_id": "EGY",
+      "issuing_authority": "Ministry of Communications and Information Technology (MCIT)",
+      "publisher_name": "National Council for Artificial Intelligence, Quantum Computing and Emerging Technologies (NCAI)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "generative-ai",
+        "transparency"
+      ],
+      "category": "generative-ai",
+      "subcategory": null,
+      "legal_status": "nonbinding_guidance",
+      "publication_date": "2026-03",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Version 1.0, March 2026. An official English version is published at https://ai.gov.eg/SynchedFiles/ar/Resources/EGYPT%20National%20Guidlines%20for%20Generative%20AI.pdf. MCIT retains responsibility for content; approved by NCAI.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "National guidelines for the responsible development, deployment and use of generative AI, including generative AI embedded in agentic systems, developed under MCIT's leadership with the Egyptian Center for Responsible AI and approved by NCAI. They define the users in scope and their roles, and call for clear disclosure and labelling of AI-generated content through visible notices or provenance mechanisms such as metadata and watermarking.",
+      "ai_governance_relevance": "Primary-source material for assessing generative-ai.",
+      "source_url": "https://ai.gov.eg/SynchedFiles/ar/Resources/Egypt%20National%20Generative%20AI%20Guidelines_Ar.pdf",
+      "official_pdf_url": "https://ai.gov.eg/SynchedFiles/ar/Resources/Egypt%20National%20Generative%20AI%20Guidelines_Ar.pdf",
+      "official_webpage_url": null,
+      "language": "ar",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-bb4975a2510a",
+        "i-410a4eb28ba3",
+        "i-8e1da64d2787"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Exact publication day (document states March 2026)"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-e7e60b0dfd6d",
+      "organization_id": "o-6b8cd5b2ea18"
+    },
+    {
+      "id": "i-eb66a59c61ef",
+      "official_title": "Open Data Policy – Arab Republic of Egypt",
+      "english_title": "Open Data Policy of the Arab Republic of Egypt (2025)",
+      "jurisdiction_id": "EGY",
+      "issuing_authority": "National Council for Artificial Intelligence, Quantum Computing and Emerging Technologies (NCAI)",
+      "publisher_name": "National Council for Artificial Intelligence, Quantum Computing and Emerging Technologies (NCAI)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "data-privacy",
+        "public-sector"
+      ],
+      "category": "data-privacy",
+      "subcategory": null,
+      "legal_status": "administrative_guideline",
+      "publication_date": "2025",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Dated 2025 in the document; MCIT republished it in January 2026. Interim policy pending the forthcoming Data Governance Law. The policy uses mandatory language for public bodies, but the approving instrument is not stated; recorded as an administrative guideline.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Issued by the National Council for AI, the policy governs the release of non-sensitive, non-personal government datasets by all ministries, agencies, local units and state-owned enterprises during the transition before a Data Governance Law. It sets open-by-default, free-of-charge and quality principles, an NCAI Interagency Data Release Board, an Egyptian Data Governance Authority role and open data officers, and excludes personal data protected by Law No. 151 of 2020.",
+      "ai_governance_relevance": "Primary-source material for assessing data-privacy.",
+      "source_url": "https://ai.gov.eg/SynchedFiles/en/Resources/Open%20Data%20Policy.pdf",
+      "official_pdf_url": "https://ai.gov.eg/SynchedFiles/en/Resources/Open%20Data%20Policy.pdf",
+      "official_webpage_url": null,
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Exact issue date",
+        "Instrument by which it was approved"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-7f3af8def43d",
+      "organization_id": "o-c98d6884ffff"
+    },
+    {
+      "id": "i-6dfa8470602e",
+      "official_title": "قرار مجلس إدارة الهيئة العامة للرقابة المالية رقم 57 لسنة 2024 بشأن قواعد تنظيم عمل برنامج المستشار المالي الآلي للاستثمار (Robo-Advisor for Investment)",
+      "english_title": "FRA Board Decision No. 57 of 2024 on rules for robo-advisor (automated investment advice) programmes",
+      "jurisdiction_id": "EGY",
+      "issuing_authority": "Financial Regulatory Authority (FRA)",
+      "publisher_name": "Financial Regulatory Authority (FRA)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "sectoral",
+        "binding-law"
+      ],
+      "category": "sectoral",
+      "subcategory": null,
+      "legal_status": "binding_regulation",
+      "publication_date": "2024-05-22",
+      "effective_date": "2024-05-23",
+      "last_amended_date": null,
+      "current_status": "Published in Al-Waqa'i' al-Misriya issue 113 (contd. A) of 22 May 2024; Article 16 provides it applies from the day after publication. Board approvals of 6 March and 29 April 2024.",
+      "scope": null,
+      "sectors": [
+        "finance"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Binding rules for portfolio-management companies offering automated investment advice through algorithms or AI-based algorithms. AI may be used to develop the algorithms only if it is transparent and explainable; firms must document algorithm design, testing and governance, maintain controls to detect errors or bias, define when algorithm outputs are overridden or suspended, and disclose the algorithms' methodology and limitations to clients.",
+      "ai_governance_relevance": "Primary-source material for assessing sectoral.",
+      "source_url": "https://fra.gov.eg/wp-content/uploads/2024/05/alamiria_2024_57.pdf",
+      "official_pdf_url": "https://fra.gov.eg/wp-content/uploads/2024/05/alamiria_2024_57.pdf",
+      "official_webpage_url": null,
+      "language": "ar",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "in_force",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-050ae8e64fa7",
+      "organization_id": "o-652df13048bb"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-c98d6884ffff",
+      "jurisdiction_id": "EGY",
+      "name": "National Council for Artificial Intelligence, Quantum Computing and Emerging Technologies (NCAI)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Egypt's national AI policy body, chaired by the ICT Minister; established 2019 as the National Council for Artificial Intelligence and renamed in January 2026. Issues the national AI strategy and the National AI Governance Framework; its technical arm is the Egyptian Center for Responsible AI (ECRAI).",
+      "source_url": "https://ai.gov.eg/",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-6b8cd5b2ea18",
+      "jurisdiction_id": "EGY",
+      "name": "Ministry of Communications and Information Technology (MCIT)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Lead ministry for digital and AI policy; chairs NCAI and houses ECRAI; publisher of the 2021 AI strategy and owner of the Generative AI Guidelines.",
+      "source_url": "https://mcit.gov.eg/en/Artificial_Intelligence",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-652df13048bb",
+      "jurisdiction_id": "EGY",
+      "name": "Financial Regulatory Authority (FRA)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Regulator of non-banking financial markets; issues binding board decisions, including rules on algorithmic and AI-based robo-advisory services.",
+      "source_url": "https://fra.gov.eg/",
+      "authority_type": null,
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-132d8d8918a7",
+      "url": "https://mcit.gov.eg/Upcont/Documents/Publications_672021000_Egypt-National-AI-Strategy-English.pdf",
+      "jurisdiction_ids": [
+        "EGY"
+      ],
+      "source_institutions": [
+        "National Council for Artificial Intelligence, Quantum Computing and Emerging Technologies (NCAI)"
+      ],
+      "instrument_ids": [
+        "i-173c1c547b12"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "historical"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Downloaded official PDF and read text",
+      "http_status": 200,
+      "final_url": "https://mcit.gov.eg/Upcont/Documents/Publications_672021000_Egypt-National-AI-Strategy-English.pdf",
+      "link_status": "reachable",
+      "page_title": "Egypt National Artificial Intelligence Strategy (First Edition, 2021)",
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-3141a94fb57d",
+      "url": "https://ai.gov.eg/SynchedFiles/en/Resources/AIstrategy%20English%2016-1-2025-1.pdf",
+      "jurisdiction_ids": [
+        "EGY"
+      ],
+      "source_institutions": [
+        "National Council for Artificial Intelligence, Quantum Computing and Emerging Technologies (NCAI)"
+      ],
+      "instrument_ids": [
+        "i-1cb224432fc4"
+      ],
+      "categories_reviewed": [
+        "strategy"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Downloaded official PDF and read text",
+      "http_status": 200,
+      "final_url": "https://ai.gov.eg/SynchedFiles/en/Resources/AIstrategy%20English%2016-1-2025-1.pdf",
+      "link_status": "reachable",
+      "page_title": "Egypt National Artificial Intelligence Strategy, Second Edition (2025-2030)",
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-4817277848e3",
+      "url": "https://ai.gov.eg/SynchedFiles/ar/Resources/Egyptian%20Charter%20for%20Responsible%20AI_Ar.pdf",
+      "jurisdiction_ids": [
+        "EGY"
+      ],
+      "source_institutions": [
+        "National Council for Artificial Intelligence, Quantum Computing and Emerging Technologies (NCAI)"
+      ],
+      "instrument_ids": [
+        "i-8e1da64d2787"
+      ],
+      "categories_reviewed": [
+        "ethics"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Downloaded official PDF and read text",
+      "http_status": 200,
+      "final_url": "https://ai.gov.eg/SynchedFiles/ar/Resources/Egyptian%20Charter%20for%20Responsible%20AI_Ar.pdf",
+      "link_status": "reachable",
+      "page_title": "Egyptian Charter for Responsible AI (2023, v1.0)",
+      "document_language": "ar",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-7092ee7ba3d7",
+      "url": "https://ai.gov.eg/SynchedFiles/ar/Resources/Guide%20to%20Egypt%E2%80%99s%20National%20AI%20Governance%20Framework.pdf",
+      "jurisdiction_ids": [
+        "EGY"
+      ],
+      "source_institutions": [
+        "National Council for Artificial Intelligence, Quantum Computing and Emerging Technologies (NCAI)"
+      ],
+      "instrument_ids": [
+        "i-bb4975a2510a"
+      ],
+      "categories_reviewed": [
+        "government-governance",
+        "risk-assurance",
+        "transparency",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Downloaded official PDF and read text",
+      "http_status": 200,
+      "final_url": "https://ai.gov.eg/SynchedFiles/ar/Resources/Guide%20to%20Egypt%E2%80%99s%20National%20AI%20Governance%20Framework.pdf",
+      "link_status": "reachable",
+      "page_title": "Guide to Egypt's National AI Governance Framework (Edition 2.0, March 2026)",
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-c0afe8256713",
+      "url": "https://ai.gov.eg/SynchedFiles/ar/Resources/Egypt%20National%20Guidelines%20for%20Trustworthy%20and%20Responsible%20AI.pdf",
+      "jurisdiction_ids": [
+        "EGY"
+      ],
+      "source_institutions": [
+        "National Council for Artificial Intelligence, Quantum Computing and Emerging Technologies (NCAI)"
+      ],
+      "instrument_ids": [
+        "i-410a4eb28ba3"
+      ],
+      "categories_reviewed": [
+        "ethics",
+        "risk-assurance",
+        "procurement"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Downloaded official PDF and read text",
+      "http_status": 200,
+      "final_url": "https://ai.gov.eg/SynchedFiles/ar/Resources/Egypt%20National%20Guidelines%20for%20Trustworthy%20and%20Responsible%20AI.pdf",
+      "link_status": "reachable",
+      "page_title": "Egypt National Guidelines for Trustworthy and Responsible AI (Edition 2.0, March 2026)",
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-e7e60b0dfd6d",
+      "url": "https://ai.gov.eg/SynchedFiles/ar/Resources/Egypt%20National%20Generative%20AI%20Guidelines_Ar.pdf",
+      "jurisdiction_ids": [
+        "EGY"
+      ],
+      "source_institutions": [
+        "Ministry of Communications and Information Technology (MCIT)"
+      ],
+      "instrument_ids": [
+        "i-ab7a3b806d71"
+      ],
+      "categories_reviewed": [
+        "generative-ai",
+        "transparency"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Downloaded official PDF and read text",
+      "http_status": 200,
+      "final_url": "https://ai.gov.eg/SynchedFiles/ar/Resources/Egypt%20National%20Generative%20AI%20Guidelines_Ar.pdf",
+      "link_status": "reachable",
+      "page_title": "Egypt's National Generative AI Guidelines: Frameworks for Innovation & Responsibility (v1.0, March 2026)",
+      "document_language": "ar",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-7f3af8def43d",
+      "url": "https://ai.gov.eg/SynchedFiles/en/Resources/Open%20Data%20Policy.pdf",
+      "jurisdiction_ids": [
+        "EGY"
+      ],
+      "source_institutions": [
+        "National Council for Artificial Intelligence, Quantum Computing and Emerging Technologies (NCAI)"
+      ],
+      "instrument_ids": [
+        "i-eb66a59c61ef"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Downloaded official PDF and read text",
+      "http_status": 200,
+      "final_url": "https://ai.gov.eg/SynchedFiles/en/Resources/Open%20Data%20Policy.pdf",
+      "link_status": "reachable",
+      "page_title": "Open Data Policy of the Arab Republic of Egypt (2025)",
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-050ae8e64fa7",
+      "url": "https://fra.gov.eg/wp-content/uploads/2024/05/alamiria_2024_57.pdf",
+      "jurisdiction_ids": [
+        "EGY"
+      ],
+      "source_institutions": [
+        "Financial Regulatory Authority (FRA)"
+      ],
+      "instrument_ids": [
+        "i-6dfa8470602e"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Downloaded official PDF and read text",
+      "http_status": 200,
+      "final_url": "https://fra.gov.eg/wp-content/uploads/2024/05/alamiria_2024_57.pdf",
+      "link_status": "reachable",
+      "page_title": "FRA Board Decision No. 57 of 2024 on rules for robo-advisor (automated investment advice) programmes",
+      "document_language": "ar",
+      "error": null,
+      "content_type": "application/pdf"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "EGY",
     "country": "Egypt",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
-    "categories_searched": [
-      "strategy",
-      "government-governance",
-      "ethics",
-      "public-sector",
-      "procurement",
-      "cyber-security",
+    "review_status": "DEEP REVIEW COMPLETE",
+    "categories_searched": {
+      "binding-law": "Laws & regulations",
+      "strategy": "Strategy & action plans",
+      "government-governance": "Government AI governance",
+      "ethics": "Responsible AI & ethics",
+      "risk-assurance": "Risk & assurance",
+      "public-sector": "Public-sector AI",
+      "procurement": "AI procurement",
+      "cyber-security": "Safety & cybersecurity",
+      "data-privacy": "Data & privacy",
+      "transparency": "Transparency & accountability",
+      "standards": "Standards & certification",
+      "sandbox": "Regulatory sandboxes",
+      "index-readiness": "Indices & maturity",
+      "sectoral": "Sectoral governance",
+      "generative-ai": "Generative & agentic AI",
+      "drafts": "Drafts & consultations",
+      "international": "Regional & international",
+      "historical": "Historical publications"
+    },
+    "categories_with_findings": [
+      "binding-law",
       "data-privacy",
+      "ethics",
+      "generative-ai",
+      "government-governance",
+      "historical",
+      "procurement",
+      "public-sector",
       "risk-assurance",
+      "sectoral",
+      "strategy",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
-      "binding-law",
-      "strategy",
-      "government-governance",
-      "ethics",
-      "risk-assurance",
-      "public-sector",
-      "procurement",
+    "categories_where_no_material_was_found": [
       "cyber-security",
-      "data-privacy",
-      "transparency",
       "standards",
       "sandbox",
       "index-readiness",
-      "sectoral",
-      "generative-ai",
       "drafts",
-      "international",
-      "historical"
+      "international"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Egypt \"الذكاء الاصطناعي\" (استراتيجية OR تنظيم OR أخلاقيات) government ministry official",
       "Egypt \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Egypt government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Egypt \"الذكاء الاصطناعي\" cybersecurity authority secure development safety guidelines",
-      "Egypt privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Egypt privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "mcit.gov.eg National AI Strategy Egypt pdf 2021",
+      "اللائحة التنفيذية لقانون حماية البيانات الشخصية 151 لسنة 2020 قرار رئيس مجلس الوزراء",
+      "مشروع قانون الذكاء الاصطناعي مصر مجلس النواب 2025",
+      "قانون حماية البيانات الشخصية 151 لسنة 2020 pdf site:mcit.gov.eg OR site:pdpc.gov.eg OR site:itida.gov.eg",
+      "Personal Data Protection Law 151 2020 executive regulations decree 816 2025 Egypt official gazette",
+      "mcit.gov.eg Upcont Personal Data Protection Law 151 of 2020 pdf",
+      "\"151 لسنة 2020\" حماية البيانات الشخصية الجريدة الرسمية pdf gov.eg",
+      "itida.gov.eg Personal Data Protection Law No. 151 2020 PDF laws regulations",
+      "البنك المركزي المصري الذكاء الاصطناعي ضوابط تعليمات البنوك cbe.org.eg",
+      "Central Bank of Egypt artificial intelligence guidelines banks regulatory sandbox fintech AI",
+      "الهيئة المصرية العامة للمواصفات والجودة الذكاء الاصطناعي مواصفة قياسية مصرية ISO/IEC 42001",
+      "Egypt NTRA OR EG-CERT OR \"Supreme Cybersecurity Council\" artificial intelligence guidelines security 2025",
+      "وزارة الصحة المصرية الذكاء الاصطناعي دليل إرشادي OR ضوابط هيئة الدواء المصرية الذكاء الاصطناعي",
+      "parliament.gov.eg مشروع قانون تنظيم الذكاء الاصطناعي لجنة الاتصالات تقرير",
+      "ai.gov.eg resources (strategy, charter, governance framework, guidelines, open data policy) — direct site review",
+      "mcit.gov.eg/en/Artificial_Intelligence — direct site review",
+      "fra.gov.eg القرارات والضوابط المنظمة للتكنولوجيا المالية — direct site review (الذكاء الاصطناعي / الخوارزميات)",
+      "portal.pdpc.gov.eg laws and guidelines — direct site review"
     ],
     "review_date": "2026-10-06",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
-    "discovery_result_count": 10,
-    "focused_result_count": 12
+    "no_material_found_note": "Searched, nothing official found for: cyber-security (no AI-specific guidance from NTRA, EG-CERT or the Supreme Cybersecurity Council); standards (no Egyptian Organization for Standardization adoption of AI standards located); sandbox (FRA Decision 163/2024 and the CBE sandbox are FinTech-general; the AI Audit Lab/regulatory sandbox is only planned in the Governance Framework); index-readiness (no government-published AI index; the strategy's CAF is a planning method); drafts (AI law draft not published; the Governance Framework v1.0 consultation draft is not online); international (AU and UNESCO instruments inherited from data/regional; Arab League texts are regional).",
+    "discovery_result_count": 24,
+    "focused_result_count": 19
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-4fdb13772bb2",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "EGY",
+      "instrument_id": "i-173c1c547b12",
+      "title": "Egypt National Artificial Intelligence Strategy (First Edition, 2021)",
+      "detail": "Added to the radar (published 2021-07).",
+      "from": null,
+      "to": null,
+      "source_url": "https://mcit.gov.eg/Upcont/Documents/Publications_672021000_Egypt-National-AI-Strategy-English.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-0a2ceb946da6",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "EGY",
+      "instrument_id": "i-1cb224432fc4",
+      "title": "Egypt National Artificial Intelligence Strategy, Second Edition (2025-2030)",
+      "detail": "Added to the radar (published 2025-01).",
+      "from": null,
+      "to": null,
+      "source_url": "https://ai.gov.eg/SynchedFiles/en/Resources/AIstrategy%20English%2016-1-2025-1.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-0209ea5d215e",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "EGY",
+      "instrument_id": "i-8e1da64d2787",
+      "title": "Egyptian Charter for Responsible AI (2023, v1.0)",
+      "detail": "Added to the radar (published 2023).",
+      "from": null,
+      "to": null,
+      "source_url": "https://ai.gov.eg/SynchedFiles/ar/Resources/Egyptian%20Charter%20for%20Responsible%20AI_Ar.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-594990f57931",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "EGY",
+      "instrument_id": "i-bb4975a2510a",
+      "title": "Guide to Egypt's National AI Governance Framework (Edition 2.0, March 2026)",
+      "detail": "Added to the radar (published 2026-03-15).",
+      "from": null,
+      "to": null,
+      "source_url": "https://ai.gov.eg/SynchedFiles/ar/Resources/Guide%20to%20Egypt%E2%80%99s%20National%20AI%20Governance%20Framework.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-3fbc64394409",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "EGY",
+      "instrument_id": "i-410a4eb28ba3",
+      "title": "Egypt National Guidelines for Trustworthy and Responsible AI (Edition 2.0, March 2026)",
+      "detail": "Added to the radar (published 2026-03-25).",
+      "from": null,
+      "to": null,
+      "source_url": "https://ai.gov.eg/SynchedFiles/ar/Resources/Egypt%20National%20Guidelines%20for%20Trustworthy%20and%20Responsible%20AI.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-2022eeba2793",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "EGY",
+      "instrument_id": "i-ab7a3b806d71",
+      "title": "Egypt's National Generative AI Guidelines: Frameworks for Innovation & Responsibility (v1.0, March 2026)",
+      "detail": "Added to the radar (published 2026-03).",
+      "from": null,
+      "to": null,
+      "source_url": "https://ai.gov.eg/SynchedFiles/ar/Resources/Egypt%20National%20Generative%20AI%20Guidelines_Ar.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-4988c02991dd",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "EGY",
+      "instrument_id": "i-eb66a59c61ef",
+      "title": "Open Data Policy of the Arab Republic of Egypt (2025)",
+      "detail": "Added to the radar (published 2025).",
+      "from": null,
+      "to": null,
+      "source_url": "https://ai.gov.eg/SynchedFiles/en/Resources/Open%20Data%20Policy.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-3ea160c17a13",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "EGY",
+      "instrument_id": "i-6dfa8470602e",
+      "title": "FRA Board Decision No. 57 of 2024 on rules for robo-advisor (automated investment advice) programmes",
+      "detail": "Added to the radar (published 2024-05-22).",
+      "from": null,
+      "to": null,
+      "source_url": "https://fra.gov.eg/wp-content/uploads/2024/05/alamiria_2024_57.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-0178390eebcf",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "EGY",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 8 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-2b7c0a9ce085",
+      "date": "2026-03-25",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "EGY",
+      "instrument_id": "i-410a4eb28ba3",
+      "title": "National Guidelines for Trustworthy and Responsible AI (Ed. 2.0) authorized for release",
+      "detail": "Authorized by the ICT Minister as NCAI Chairman on 25 March 2026, per the document's authorization page.",
+      "from": null,
+      "to": null,
+      "source_url": "https://ai.gov.eg/SynchedFiles/ar/Resources/Egypt%20National%20Guidelines%20for%20Trustworthy%20and%20Responsible%20AI.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-f418662a7253",
+      "date": "2026-03-15",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "EGY",
+      "instrument_id": "i-bb4975a2510a",
+      "title": "Guide to Egypt's National AI Governance Framework (Ed. 2.0) authorized for release",
+      "detail": "Authorized by the ICT Minister as NCAI Chairman on 15 March 2026, per the document's authorization page.",
+      "from": null,
+      "to": null,
+      "source_url": "https://ai.gov.eg/SynchedFiles/ar/Resources/Guide%20to%20Egypt%E2%80%99s%20National%20AI%20Governance%20Framework.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-81c209c728e7",
+      "date": "2024-05-23",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "EGY",
+      "instrument_id": "i-6dfa8470602e",
+      "title": "FRA robo-advisor decision (No. 57 of 2024) applies",
+      "detail": "Article 16: applies from the day after publication in the Official Gazette.",
+      "from": null,
+      "to": null,
+      "source_url": "https://fra.gov.eg/wp-content/uploads/2024/05/alamiria_2024_57.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-b4f636f9e88a",
+      "date": "2024-05-22",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "EGY",
+      "instrument_id": "i-6dfa8470602e",
+      "title": "FRA robo-advisor decision (No. 57 of 2024) published in Official Gazette",
+      "detail": "Published in Al-Waqa'i' al-Misriya issue 113 (contd. A).",
+      "from": null,
+      "to": null,
+      "source_url": "https://fra.gov.eg/wp-content/uploads/2024/05/alamiria_2024_57.pdf",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "قانون رقم 151 لسنة 2020 بإصدار قانون حماية البيانات الشخصية",
+      "english_title": "Law No. 151 of 2020 promulgating the Personal Data Protection Law",
+      "issuing_authority": "House of Representatives / President of the Republic (Official Gazette No. 28 bis (H), 15 July 2020)",
+      "note": "Core binding data-protection law; regulator is the Personal Data Protection Center (PDPC). No official full text located online (PDPC portal has no law texts; Official Gazette not freely online). Add once an official copy is found.",
+      "found": "2026-10-06"
+    },
+    {
+      "title": "اللائحة التنفيذية لقانون حماية البيانات الشخصية (قرار رئيس مجلس الوزراء رقم 816 لسنة 2025)",
+      "english_title": "Executive Regulations of the Personal Data Protection Law (Prime Ministerial Decree No. 816 of 2025)",
+      "issuing_authority": "Prime Minister",
+      "note": "Reported issued 1 November 2025 with a one-year compliance period; only secondary sources found. No official full text located.",
+      "found": "2026-10-06"
+    },
+    {
+      "title": "مشروع قانون تنظيم الذكاء الاصطناعي",
+      "english_title": "Draft law regulating artificial intelligence",
+      "issuing_authority": "MCIT / NCAI; House of Representatives ICT Committee",
+      "note": "The 2025-2030 strategy states an Egyptian AI law is in its final development phase. No official draft text or parliamentary record online as of 2026-10-06.",
+      "found": "2026-10-06"
+    },
+    {
+      "title": "قانون رقم 5 لسنة 2022 بإصدار قانون تنظيم وتنمية استخدام التكنولوجيا المالية في الأنشطة المالية غير المصرفية",
+      "english_title": "Law No. 5 of 2022 on regulating and developing the use of FinTech in non-banking financial activities",
+      "issuing_authority": "House of Representatives / Financial Regulatory Authority",
+      "note": "Official PDF on fra.gov.eg (https://fra.gov.eg/wp-content/uploads/2022/02/%D9%82%D8%A7%D9%86%D9%88%D9%86-%D8%AA%D9%86%D8%B8%D9%8A%D9%85-%D9%88%D8%AA%D9%86%D9%85%D9%8A%D8%A9-_unlocked.pdf) could not be machine-read; the 2025 strategy says it explicitly mentions AI. Verify AI provisions manually before adding.",
+      "found": "2026-10-06"
+    },
+    {
+      "title": "قرار رئيس مجلس الوزراء بإنشاء المجلس الوطني للذكاء الاصطناعي (2019) وتعديله (2026)",
+      "english_title": "Prime Ministerial decree establishing the National Council for AI (2019) and its 2026 expansion",
+      "issuing_authority": "Prime Minister / Cabinet",
+      "note": "Founding instrument of NCAI (Cabinet approval November 2019) and the January 2026 expansion to quantum and emerging technologies; decree texts not found online.",
+      "found": "2026-10-06"
+    },
+    {
+      "title": "Government Procurement Guidelines for AI Systems",
+      "english_title": "Government Procurement Guidelines for AI Systems (planned)",
+      "issuing_authority": "NCAI / ECRAI",
+      "note": "Listed as a future product of the National AI Governance Framework, together with Generative AI risk management, child protection in AI and sectoral compliance manuals; not yet published.",
+      "found": "2026-10-06"
+    }
+  ]
 }
