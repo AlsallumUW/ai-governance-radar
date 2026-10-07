@@ -7,21 +7,30 @@
     "research_language": "he",
     "type": "country",
     "aliases": [],
-    "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
+    "overview": "Israel governs AI through a sectoral, soft-law 'responsible innovation' approach with no AI-specific statute; national AI strategy is now led from the Prime Minister's Office."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Israel has no AI-specific law. Its 2023 Principles of Policy, Regulation and Ethics in AI, issued by the Ministry of Innovation, Science and Technology and the Ministry of Justice, set a 'responsible innovation' model: each regulator acts in its own sector with soft, risk-based tools aligned to international standards, guided by national AI ethics principles. Strategy moved from the TELEM-designed National AI Program (Government Resolution 212 of 2021) to a National AI Directorate in the Prime Minister's Office. The Directorate was set up after the 2025 Nagel Committee report and published the August 2026 National AI Strategic Plan under Government Resolution 4255. Binding obligations come mainly from the Privacy Protection Law, strengthened by Amendment 13 (in force August 2025). The Privacy Protection Authority has issued a draft guideline on applying that law to AI (2025) and guidance on AI agents (2026). Sector regulators are the most active layer: the Bank of Israel's Directive 369 brings AI models under model-risk rules, an inter-ministerial team issued a final report on AI in finance (December 2025), the Ministry of Education regulates generative AI in schools, and the Innovation Authority and Ministry of Health run an AI health sandbox. Inside government, the National Digital Agency's guide on responsible AI use (version 1.0, May 2026) sets risk-tiered approval tracks for public bodies.",
+    "lead_institutions": [
+      "National Artificial Intelligence Directorate, Prime Minister's Office",
+      "Ministry of Innovation, Science and Technology (MOST)",
+      "Ministry of Justice – Office of Legal Counsel and Legislative Affairs",
+      "Privacy Protection Authority (PPA)",
+      "National Digital Agency",
+      "Israel Innovation Authority",
+      "Bank of Israel – Banking Supervision Department"
+    ],
+    "last_deep_review": "2026-10-06",
+    "review_notes": "Deep review 2026-10-06. The existing record with title '-' was fixed in place as the December 2023 MOST/MoJ policy principles (id kept). gov.il BlobFolder PDFs could be downloaded with a browser user-agent and were read; gov.il HTML pages (government resolutions, press pages), innovationisrael.org.il (curl), boi.org.il HTML, coe.int and fs.knesset.gov.il (Knesset bills and Reshumot) returned Cloudflare/403 or challenge pages to automated reading. Government Resolutions 3375 (2025), 4255 (2026), 3574 (2025) and 173 (2023) are held as leads because their gov.il pages could not be read or their URLs confirmed. Not recorded: the Israel Bar Association ethics opinion on AI (professional body, not government), the 2022 Tel Aviv University study for the MoJ (academic), Knesset Research and Information Center papers (research, not policy), and the State Comptroller's 2026 parallel audit (to add on a later pass). Standards: the Standards Institution of Israel offers ISO/IEC 42001 certification but no Israeli standard adopting ISO/IEC 42001 or 5339 was found. Procurement: no AI-specific procurement rules found. Cyber: no INCD AI document with an official full text was located (advisory held as a lead). International: Israel signed the Council of Europe Framework Convention on AI (CETS 225); this is held in data/regional/COE.json, and the PPA draft guidance (April 2025) states that Israel signed it. Unitary state: no subnational pass needed, and no official municipal AI instruments were found."
   },
   "instruments": [
     {
       "id": "i-5981f810cdd3",
-      "official_title": "-",
-      "english_title": "AI Regulation and Ethics Policy Principles",
+      "official_title": "עקרונות מדיניות, רגולציה ואתיקה בתחום הבינה המלאכותית",
+      "english_title": "Principles of Policy, Regulation and Ethics in Artificial Intelligence (2023)",
       "jurisdiction_id": "ISR",
-      "issuing_authority": null,
-      "publisher_name": "www.gov.il",
+      "issuing_authority": "Ministry of Innovation, Science and Technology and Ministry of Justice (Office of Legal Counsel and Legislative Affairs)",
+      "publisher_name": "Ministry of Innovation, Science and Technology (MOST)",
       "authority_type": null,
       "government_level": "national",
       "categories": [
@@ -30,22 +39,975 @@
       ],
       "category": "ethics",
       "subcategory": null,
-      "legal_status": null,
-      "publication_date": null,
+      "legal_status": "nonbinding_guidance",
+      "publication_date": "2023-12-14",
       "effective_date": null,
       "last_amended_date": null,
-      "current_status": "Official source located; current status requires review",
+      "current_status": "Published final version dated 14 December 2023 (2 Tevet 5784), following the October 2022 public consultation draft. Not adopted by government resolution on the face of the document.",
       "scope": null,
       "sectors": [],
       "technology_scope": [
         "AI"
       ],
-      "summary": "Official source located for this governance category. The document’s adoption, legal effect, scope and version history remain under review.",
-      "ai_governance_relevance": "Primary-source material for assessing responsible ai & ethics, government ai governance.",
+      "summary": "Final government policy paper (124 pp.) setting Israel's 'responsible innovation' approach: AI regulation should be sectoral rather than horizontal, soft and incremental, risk-based and aligned with emerging international standards. It sets out national AI ethics principles (human-centricity, equality and non-discrimination, transparency and explainability, reliability, safety and security, accountability, privacy) and recommends a government AI knowledge-and-coordination centre and experimentation tools such as sandboxes. It guides regulators; it is not binding and the minister's foreword says a government resolution adopting it is still to be sought.",
+      "ai_governance_relevance": "Primary-source material for assessing ethics, government-governance.",
       "source_url": "https://www.gov.il/BlobFolder/news/most-news20231218/he/2023%20Artificial%20Intelligence%20Regulation%20and%20Ethics%20Policy%20Principles%20Document.pdf",
       "official_pdf_url": "https://www.gov.il/BlobFolder/news/most-news20231218/he/2023%20Artificial%20Intelligence%20Regulation%20and%20Ethics%20Policy%20Principles%20Document.pdf",
       "official_webpage_url": null,
-      "language": null,
+      "language": "he",
+      "supersedes": [
+        "i-e24894a7356d"
+      ],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-c53a049c3c54",
+        "i-e8ea4167f270",
+        "i-d21432e45cfb"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Adoption by government resolution not confirmed on an official source"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-b6727d3e6ed4",
+      "organization_id": "o-0174125f832c"
+    },
+    {
+      "id": "i-e24894a7356d",
+      "official_title": "מדיניות רגולציה ואתיקה בתחום הבינה המלאכותית בישראל (טיוטה לשימוע ציבורי)",
+      "english_title": "Regulation and Ethics Policy in the Field of Artificial Intelligence in Israel – draft for public comment (2022)",
+      "jurisdiction_id": "ISR",
+      "issuing_authority": "Ministry of Innovation, Science and Technology",
+      "publisher_name": "Ministry of Innovation, Science and Technology (MOST)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "drafts",
+        "historical",
+        "ethics"
+      ],
+      "category": "drafts",
+      "subcategory": null,
+      "legal_status": "consultation_draft",
+      "publication_date": "2022-10-30",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Consultation draft; superseded by the December 2023 final policy principles.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "First government AI policy principles, published by the Minister of Innovation, Science and Technology for public hearing on 30 October 2022 together with the Ministry of Justice. It proposed sectoral, soft and risk-based regulation and a set of AI ethics principles for regulators. Replaced by the final December 2023 policy principles.",
+      "ai_governance_relevance": "Primary-source material for assessing drafts, historical, ethics.",
+      "source_url": "https://www.gov.il/BlobFolder/news/most-news20223110/he/Regulatory%20and%20ethics%20policy%20document%20in%20the%20field%20of%20artificial%20intelligence%20in%20IsraelAI.pdf",
+      "official_pdf_url": "https://www.gov.il/BlobFolder/news/most-news20223110/he/Regulatory%20and%20ethics%20policy%20document%20in%20the%20field%20of%20artificial%20intelligence%20in%20IsraelAI.pdf",
+      "official_webpage_url": null,
+      "language": "he",
+      "supersedes": [],
+      "superseded_by": [
+        "i-5981f810cdd3"
+      ],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "superseded",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-261373e4631a",
+      "organization_id": "o-0174125f832c"
+    },
+    {
+      "id": "i-5a24bc5a6e45",
+      "official_title": "החלטה מס' 212: תכנית לקידום חדשנות, עידוד צמיחת ענף ההייטק וחיזוק המובילות הטכנולוגית והמדעית",
+      "english_title": "Government Resolution No. 212: Program to promote innovation, encourage high-tech growth and strengthen technological and scientific leadership (2021)",
+      "jurisdiction_id": "ISR",
+      "issuing_authority": "Government of Israel",
+      "publisher_name": "Government of Israel (Government Secretariat)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "strategy",
+        "government-governance"
+      ],
+      "category": "strategy",
+      "subcategory": null,
+      "legal_status": "administrative_policy_mandatory_in_scope",
+      "publication_date": "2021-08-01",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Adopted 1 August 2021 (date confirmed in the MOST/MoJ 2023 policy document). gov.il decision page blocks automated reading (Cloudflare).",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Government resolution of 1 August 2021 that launched the cross-government national AI program (infrastructure, talent, research and regulation) and tasked the Minister of Innovation, Science and Technology with leading AI regulation and ethics policy. It is the mandate cited by the 2023 policy principles and the National AI Program.",
+      "ai_governance_relevance": "Primary-source material for assessing strategy, government-governance.",
+      "source_url": "https://www.gov.il/he/departments/policies/dec212_2021",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.gov.il/he/departments/policies/dec212_2021",
+      "language": "he",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-4ed512553b71"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "primary_source_located",
+      "metadata_gaps": [
+        "Full text not read (gov.il blocked)",
+        "Exact AI-specific operative clauses"
+      ],
+      "source_kind": "official_publication",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "inaccessible",
+      "document_access_type": "original_government_document",
+      "lifecycle": "adopted",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-68d7a0fad8df",
+      "organization_id": "o-4218f862c783"
+    },
+    {
+      "id": "i-f0780f7cdee9",
+      "official_title": "ועדת בינה מלאכותית ומדע הנתונים – דוח סופי (דצמבר 2020)",
+      "english_title": "TELEM AI and Data Science Committee – final report (December 2020)",
+      "jurisdiction_id": "ISR",
+      "issuing_authority": "TELEM – National Infrastructure Forum for Research and Development",
+      "publisher_name": "TELEM – National Infrastructure Forum for Research and Development (AI and Data Science Committee)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "historical",
+        "strategy"
+      ],
+      "category": "historical",
+      "subcategory": null,
+      "legal_status": "nonbinding_guidance",
+      "publication_date": "2020-12",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Historical design report preceding the 2021 national AI program.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Final report of the TELEM committee on AI and data science (109 pp.) that designed the national AI program: compute, data, talent, research and regulation measures. Its recommendations were taken up by Government Resolution 212 of August 2021 and kept for the timeline.",
+      "ai_governance_relevance": "Primary-source material for assessing historical, strategy.",
+      "source_url": "https://innovationisrael.org.il/sites/default/files/%D7%93%D7%95%D7%97%20%D7%A1%D7%95%D7%A4%D7%99%20%D7%A1%D7%99%D7%9B%D7%95%D7%9D%20%D7%95%D7%95%D7%A2%D7%93%D7%AA%20%D7%AA%D7%9C%D7%9D%20%D7%9C%D7%AA%D7%9B%D7%A0%D7%99%D7%AA%20%D7%9E%D7%95%D7%A4%20%D7%9C%D7%90%D7%95%D7%9E%D7%99%D7%AA%20%D7%91%D7%91%D7%99%D7%A0%D7%94%20%D7%9E%D7%9C%D7%90%D7%9B%D7%95%D7%AA%D7%99%D7%AA%20-.pdf",
+      "official_pdf_url": "https://innovationisrael.org.il/sites/default/files/%D7%93%D7%95%D7%97%20%D7%A1%D7%95%D7%A4%D7%99%20%D7%A1%D7%99%D7%9B%D7%95%D7%9D%20%D7%95%D7%95%D7%A2%D7%93%D7%AA%20%D7%AA%D7%9C%D7%9D%20%D7%9C%D7%AA%D7%9B%D7%A0%D7%99%D7%AA%20%D7%9E%D7%95%D7%A4%20%D7%9C%D7%90%D7%95%D7%9E%D7%99%D7%AA%20%D7%91%D7%91%D7%99%D7%A0%D7%94%20%D7%9E%D7%9C%D7%90%D7%9B%D7%95%D7%AA%D7%99%D7%AA%20-.pdf",
+      "official_webpage_url": null,
+      "language": "he",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-5a24bc5a6e45"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Exact publication day"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-419ca8918b42",
+      "organization_id": "o-0eedae583f90"
+    },
+    {
+      "id": "i-4ed512553b71",
+      "official_title": "התוכנית הלאומית לבינה מלאכותית – תמונת מצב, אפריל 2025",
+      "english_title": "National Program for Artificial Intelligence – Program and Snapshot (April 2025)",
+      "jurisdiction_id": "ISR",
+      "issuing_authority": "Israel Innovation Authority / National AI Program directorate (TELEM)",
+      "publisher_name": "Israel Innovation Authority",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "strategy",
+        "public-sector"
+      ],
+      "category": "strategy",
+      "subcategory": null,
+      "legal_status": "national_strategy",
+      "publication_date": "2025-04",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Published April 2025 (PDF dated 14 May 2025); English version at https://innovationisrael.org.il/wp-content/uploads/2025/05/AI-National-Program-en-14.5.25.pdf. Later overtaken by the National AI Directorate's August 2026 plan.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Multi-year (2021-2026) national AI program, budgeted at about NIS 1 billion, coordinated through TELEM partners (MOST, Finance, Defense R&D directorate, Planning and Budgeting Committee, Innovation Authority, National Digital Agency, Foreign Affairs and Justice). It sets five objectives: AI infrastructure (research, talent, compute), AI in high-tech, safe AI in the public sector, Israel's international geo-technological position, and preparation of ministries for AI in their domains, with performance indicators. An English version is also published.",
+      "ai_governance_relevance": "Primary-source material for assessing strategy, public-sector.",
+      "source_url": "https://innovationisrael.org.il/wp-content/uploads/2025/05/National-AI-Program14.5.25.pdf",
+      "official_pdf_url": "https://innovationisrael.org.il/wp-content/uploads/2025/05/National-AI-Program14.5.25.pdf",
+      "official_webpage_url": null,
+      "language": "he",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-9b5873968249"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-8b38f5ee429e",
+      "organization_id": "o-f244c2ff184d"
+    },
+    {
+      "id": "i-f19c8227512a",
+      "official_title": "דין וחשבון של הוועדה הלאומית להאצת תחום הבינה המלאכותית – אוגוסט 2025",
+      "english_title": "Report of the National Committee for Accelerating the AI Field (Nagel Committee), August 2025",
+      "jurisdiction_id": "ISR",
+      "issuing_authority": "National Committee for Accelerating the AI Field, chaired by Prof. Jacob Nagel",
+      "publisher_name": "National Committee for Accelerating the AI Field (Nagel Committee)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "strategy",
+        "government-governance"
+      ],
+      "category": "strategy",
+      "subcategory": null,
+      "legal_status": "nonbinding_guidance",
+      "publication_date": "2025-08-05",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Recommendations report; adopted in part by Government Resolution 3375 (not read on gov.il).",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Report submitted to the Prime Minister on 5 August 2025 finding that Israel lacked a synchronised national AI strategy and that activity was split across too many ministries. It recommends a single national AI headquarters reporting to the Prime Minister, a large compute build-out, talent and data measures. Its central recommendations were adopted by Government Resolution 3375 (21 September 2025), which set up the National AI Directorate.",
+      "ai_governance_relevance": "Primary-source material for assessing strategy, government-governance.",
+      "source_url": "https://www.gov.il/BlobFolder/news/event-ai050825/he/ai050825.pdf",
+      "official_pdf_url": "https://www.gov.il/BlobFolder/news/event-ai050825/he/ai050825.pdf",
+      "official_webpage_url": null,
+      "language": "he",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-9b5873968249"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-b1dd85740b25",
+      "organization_id": "o-cbf384903f82"
+    },
+    {
+      "id": "i-9b5873968249",
+      "official_title": "התכנית הלאומית להאצת בינה מלאכותית וביסוס מובילות גלובלית – כיווני פעולה",
+      "english_title": "Israel's National AI Strategic Plan – courses of action (August 2026)",
+      "jurisdiction_id": "ISR",
+      "issuing_authority": "National Artificial Intelligence Directorate, Prime Minister's Office",
+      "publisher_name": "National Artificial Intelligence Directorate, Prime Minister's Office",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "strategy",
+        "government-governance",
+        "ethics"
+      ],
+      "category": "strategy",
+      "subcategory": null,
+      "legal_status": "national_strategy",
+      "publication_date": "2026-08",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Published August 2026 by the National AI Directorate; English version: https://govextra.gov.il/media/cgwme4z1/israel-national-ai-strategic-plan_en.pdf (28 pp.). Government Resolution 4255 itself was not read.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "National AI strategy formulated under Government Resolution 4255 ('Accelerating AI in Israel and Establishing Global Leadership'). Its two goals are making Israel a global AI power and turning that into prosperity and better daily life; it plans a National AI Institute with acceleration 'reactors', a national compute base, data and energy measures, 'enabling regulation' (removing barriers, regulatory experimentation) and a National Ethics Council to advise government and regulators on algorithmic transparency, fairness, privacy and human authority in decisions.",
+      "ai_governance_relevance": "Primary-source material for assessing strategy, government-governance, ethics.",
+      "source_url": "https://govextra.gov.il/media/bkwfd2t2/israel-ai-plan_hebrew.pdf",
+      "official_pdf_url": "https://govextra.gov.il/media/bkwfd2t2/israel-ai-plan_hebrew.pdf",
+      "official_webpage_url": null,
+      "language": "he",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Exact publication day",
+        "Resolution 4255 text not read"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-b27c077ff85a",
+      "organization_id": "o-31f98ea43688"
+    },
+    {
+      "id": "i-bcb636981feb",
+      "official_title": "חוק הגנת הפרטיות, התשמ\"א-1981",
+      "english_title": "Privacy Protection Law, 5741-1981 (as amended by Amendment No. 13, 2024)",
+      "jurisdiction_id": "ISR",
+      "issuing_authority": "Knesset (administered by the Privacy Protection Authority, Ministry of Justice)",
+      "publisher_name": "Privacy Protection Authority (PPA), Ministry of Justice",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "data-privacy"
+      ],
+      "category": "data-privacy",
+      "subcategory": null,
+      "legal_status": "binding_law",
+      "publication_date": "1981",
+      "effective_date": "1981",
+      "last_amended_date": "2024-08-05",
+      "current_status": "In force. Source is the PPA's unofficial English translation 'Updated After Amendment 13'. Amendment 13 dates from the PPA's official guide to Amendment 13 (May 2025).",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Israel's general data protection law, which governs the collection and processing of personal data in databases, including for AI training and use. Amendment No. 13 (passed 5 August 2024, in force 14 August 2025) updated core definitions, required data protection officers in public bodies and many companies, replaced most database registration with notification and gave the Privacy Protection Authority inspection, administrative-fine and enforcement powers. The PPA relies on it for its AI guidance.",
+      "ai_governance_relevance": "Primary-source material for assessing data-privacy.",
+      "source_url": "https://www.gov.il/BlobFolder/legalinfo/legislation/en/Protection-of-Privacy-Law57411981unofficialtranslatioup.pdf",
+      "official_pdf_url": "https://www.gov.il/BlobFolder/legalinfo/legislation/en/Protection-of-Privacy-Law57411981unofficialtranslatioup.pdf",
+      "official_webpage_url": null,
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-c53a049c3c54",
+        "i-0682d7697e6b"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Original Hebrew gazette text (Reshumot) not read: fs.knesset.gov.il blocks automated access"
+      ],
+      "source_kind": "official_publication",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "in_force",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-75ad860e776a",
+      "organization_id": "o-1672480d328c"
+    },
+    {
+      "id": "i-c53a049c3c54",
+      "official_title": "טיוטת הנחיית הרשות להגנת הפרטיות: תחולת הוראות חוק הגנת הפרטיות על מערכות בינה מלאכותית",
+      "english_title": "Draft PPA Guideline: Application of the Privacy Protection Law to Artificial Intelligence Systems (2025)",
+      "jurisdiction_id": "ISR",
+      "issuing_authority": "Privacy Protection Authority",
+      "publisher_name": "Privacy Protection Authority (PPA), Ministry of Justice",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "data-privacy",
+        "drafts",
+        "transparency",
+        "generative-ai"
+      ],
+      "category": "data-privacy",
+      "subcategory": null,
+      "legal_status": "consultation_draft",
+      "publication_date": "2025-04-28",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Consultation draft dated 28 April 2025; final guideline not located.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Draft interpretive guideline setting out how the PPA will apply the Privacy Protection Law and its regulations, and its Amendment 13 enforcement powers, to databases that use AI. It covers lawful basis and informed consent across the AI lifecycle including training, disclosure that a person is interacting with AI, accountability and privacy impact assessment, AI-specific data-security risks, data-subject rights and the scraping of online personal data for training. Published for public comment; no final version found by 6 October 2026.",
+      "ai_governance_relevance": "Primary-source material for assessing data-privacy, drafts, transparency, generative-ai.",
+      "source_url": "https://www.gov.il/BlobFolder/rfp/ai_reg/he/ai_regu_draft.pdf",
+      "official_pdf_url": "https://www.gov.il/BlobFolder/rfp/ai_reg/he/ai_regu_draft.pdf",
+      "official_webpage_url": null,
+      "language": "he",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Comment deadline not stated in the PDF"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "consultation",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-8ad4b70993e9",
+      "organization_id": "o-1672480d328c"
+    },
+    {
+      "id": "i-0682d7697e6b",
+      "official_title": "המלצות להתנהלות הציבור בשימוש אישי בסוכני בינה מלאכותית",
+      "english_title": "Recommendations for the public on personal use of AI agents (2026)",
+      "jurisdiction_id": "ISR",
+      "issuing_authority": "Privacy Protection Authority",
+      "publisher_name": "Privacy Protection Authority (PPA), Ministry of Justice",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "generative-ai",
+        "data-privacy"
+      ],
+      "category": "generative-ai",
+      "subcategory": null,
+      "legal_status": "nonbinding_guidance",
+      "publication_date": "2026-07",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Published July 2026 (Tammuz 5786).",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "PPA guidance for individuals who use AI agents for personal purposes. It explains privacy risks such as agents gathering more personal data than a task needs and inferring or using it out of context, and recommends minimal, time-limited permissions, no transfer of data to third parties without explicit approval, and human approval of agent actions.",
+      "ai_governance_relevance": "Primary-source material for assessing generative-ai, data-privacy.",
+      "source_url": "https://www.gov.il/BlobFolder/news/artificial-intelligence-agents/he/Recommendations-artificial-intelligence-agents.pdf",
+      "official_pdf_url": "https://www.gov.il/BlobFolder/news/artificial-intelligence-agents/he/Recommendations-artificial-intelligence-agents.pdf",
+      "official_webpage_url": null,
+      "language": "he",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Exact publication day"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-6767222b33f4",
+      "organization_id": "o-1672480d328c"
+    },
+    {
+      "id": "i-1ee18a36d71b",
+      "official_title": "חוות דעת: שימושים בתכנים מוגנים בזכויות יוצרים לצורך למידת מכונה",
+      "english_title": "Opinion: Uses of Copyrighted Materials for Machine Learning (2022)",
+      "jurisdiction_id": "ISR",
+      "issuing_authority": "Ministry of Justice – Legal Counsel and Legislation (Civil Law)",
+      "publisher_name": "Ministry of Justice – Office of Legal Counsel and Legislative Affairs",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "generative-ai"
+      ],
+      "category": "generative-ai",
+      "subcategory": null,
+      "legal_status": "regulatory_opinion",
+      "publication_date": "2022-12-18",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Published 18 December 2022; English version: https://www.gov.il/BlobFolder/legalinfo/machine-learning/he/18-12-2022.pdf",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Ministry of Justice legal opinion concluding that using copyrighted works to train machine-learning models is, with limited exceptions, permitted under Israeli copyright law, mainly as fair use. It excludes cases where training uses the works of a few creators to build tools that compete with them in their markets. It originated in a query about the government's Hebrew and Arabic language-model program.",
+      "ai_governance_relevance": "Primary-source material for assessing generative-ai.",
+      "source_url": "https://www.gov.il/BlobFolder/legalinfo/machine-learning/he/machine-learning.pdf",
+      "official_pdf_url": "https://www.gov.il/BlobFolder/legalinfo/machine-learning/he/machine-learning.pdf",
+      "official_webpage_url": null,
+      "language": "he",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-0c5dcfa9607b",
+      "organization_id": "o-5aa80e88b03e"
+    },
+    {
+      "id": "i-0a21907b7025",
+      "official_title": "מדריך לניהול סיכונים ושימוש אחראי בכלי בינה מלאכותית (AI) במגזר הציבורי – גרסה להערות ציבור",
+      "english_title": "Guide to risk management and responsible use of AI tools in the public sector – version for public comment (June 2025)",
+      "jurisdiction_id": "ISR",
+      "issuing_authority": "National Digital Agency, Ministry of Justice (Legal Counsel and Legislative Affairs) and MOST Center for AI Regulation and Policy",
+      "publisher_name": "National Digital Agency (Israel National Digital Agency)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "drafts",
+        "public-sector",
+        "historical"
+      ],
+      "category": "drafts",
+      "subcategory": null,
+      "legal_status": "consultation_draft",
+      "publication_date": "2025-06",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Consultation draft (June 2025); superseded by version 1.0 (May 2026).",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Public-comment draft of the government guide on AI governance and risk management for public bodies, proposing green, yellow and red approval tracks by risk level and a 'blue' experimentation track. Superseded by version 1.0 of May 2026.",
+      "ai_governance_relevance": "Primary-source material for assessing drafts, public-sector, historical.",
+      "source_url": "https://www.gov.il/BlobFolder/news/ai-guide/he/%D7%9E%D7%93%D7%A8%D7%99%D7%9A%20%D7%9C%D7%A9%D7%99%D7%9E%D7%95%D7%A9%20%D7%90%D7%97%D7%A8%D7%90%D7%99%20%D7%91%D7%91%D7%99%D7%A0%D7%94%20%D7%9E%D7%9C%D7%90%D7%9B%D7%95%D7%AA%D7%99%D7%AA%20%D7%91%D7%9E%D7%92%D7%96%D7%A8%20%D7%94%D7%A6%D7%99%D7%91%D7%95%D7%A8%D7%99%20-%20%D7%94%D7%A2%D7%A8%D7%95%D7%AA%20%D7%94%D7%A6%D7%99%D7%91%D7%95%D7%A8.pdf",
+      "official_pdf_url": "https://www.gov.il/BlobFolder/news/ai-guide/he/%D7%9E%D7%93%D7%A8%D7%99%D7%9A%20%D7%9C%D7%A9%D7%99%D7%9E%D7%95%D7%A9%20%D7%90%D7%97%D7%A8%D7%90%D7%99%20%D7%91%D7%91%D7%99%D7%A0%D7%94%20%D7%9E%D7%9C%D7%90%D7%9B%D7%95%D7%AA%D7%99%D7%AA%20%D7%91%D7%9E%D7%92%D7%96%D7%A8%20%D7%94%D7%A6%D7%99%D7%91%D7%95%D7%A8%D7%99%20-%20%D7%94%D7%A2%D7%A8%D7%95%D7%AA%20%D7%94%D7%A6%D7%99%D7%91%D7%95%D7%A8.pdf",
+      "official_webpage_url": null,
+      "language": "he",
+      "supersedes": [],
+      "superseded_by": [
+        "i-d21432e45cfb"
+      ],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Exact publication day"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "superseded",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-949cfab0baf6",
+      "organization_id": "o-43097e5386d6"
+    },
+    {
+      "id": "i-d21432e45cfb",
+      "official_title": "מדריך לשימוש אחראי בכלי בינה מלאכותית במגזר הציבורי – היבטי משילות וניהול סיכונים (גרסה 1.0)",
+      "english_title": "Guide to Responsible Use of AI Tools in the Public Sector – governance and risk-management aspects, version 1.0 (May 2026)",
+      "jurisdiction_id": "ISR",
+      "issuing_authority": "National Digital Agency, with the Ministry of Justice (Legal Counsel and Legislative Affairs) and MOST Center for AI Regulation and Policy",
+      "publisher_name": "National Digital Agency (Israel National Digital Agency)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "public-sector",
+        "risk-assurance",
+        "government-governance",
+        "generative-ai"
+      ],
+      "category": "public-sector",
+      "subcategory": null,
+      "legal_status": "administrative_guideline",
+      "publication_date": "2026-05",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Version 1.0, May 2026 (Iyar 5786); replaces the June 2025 public-comment version. Also hosted at harhayeda.gov.il.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Government guide for public bodies adopting AI, issued in the context of Government Resolution 3574 (4 December 2025) on data and AI in government. It sets responsible-use principles based on the OECD principles, AI governance roles (management, an AI governance lead, business owners, an optional AI governance forum), and a traffic-light risk process with green, yellow and red approval tracks plus a supervised 'blue' experimentation track. It includes a model organisational AI policy and rules for civil servants using AI tools, such as limits on entering data into external systems and verifying outputs. It does not override other procedures.",
+      "ai_governance_relevance": "Primary-source material for assessing public-sector, risk-assurance, government-governance, generative-ai.",
+      "source_url": "https://www.gov.il/BlobFolder/news/ai-guide/en/DL-57390%20AI%20Responsible%20Use%20Manual-hebrew.pdf",
+      "official_pdf_url": "https://www.gov.il/BlobFolder/news/ai-guide/en/DL-57390%20AI%20Responsible%20Use%20Manual-hebrew.pdf",
+      "official_webpage_url": null,
+      "language": "he",
+      "supersedes": [
+        "i-0a21907b7025"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Exact publication day"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-04df89e687ac",
+      "organization_id": "o-43097e5386d6"
+    },
+    {
+      "id": "i-4af645b53ba5",
+      "official_title": "בינה מלאכותית בסקטור הפיננסי – דוח ביניים להערות הציבור",
+      "english_title": "Artificial Intelligence in the Financial Sector – interim report for public comment (2024)",
+      "jurisdiction_id": "ISR",
+      "issuing_authority": "Inter-Ministerial Team on AI in the Financial Sector (Ministry of Justice, Ministry of Finance, Banking Supervision Department, Israel Securities Authority, Capital Market, Insurance and Savings Authority, Competition Authority)",
+      "publisher_name": "Inter-Ministerial Team on AI in the Financial Sector",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "sectoral",
+        "drafts",
+        "historical"
+      ],
+      "category": "sectoral",
+      "subcategory": null,
+      "legal_status": "consultation_draft",
+      "publication_date": "2024-10",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Interim report dated October 2024; comments to 15 December 2024; superseded by the final report (December 2025). English executive summary on isa.gov.il.",
+      "scope": null,
+      "sectors": [
+        "finance"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Interim report of the inter-agency team on AI and machine learning in Israel's financial sector, published for comments until 15 December 2024. It proposed risk-based, flexible regulation within existing financial supervision and examined investment advice and portfolio management, credit underwriting and insurance. Replaced by the December 2025 final report.",
+      "ai_governance_relevance": "Primary-source material for assessing sectoral, drafts, historical.",
+      "source_url": "https://www.new.isa.gov.il/images/Fittings/isa/asset_library_pic/al_lobby/al_lobby-63b3dc4fa5dd2/AIreport.pdf",
+      "official_pdf_url": "https://www.new.isa.gov.il/images/Fittings/isa/asset_library_pic/al_lobby/al_lobby-63b3dc4fa5dd2/AIreport.pdf",
+      "official_webpage_url": null,
+      "language": "he",
+      "supersedes": [],
+      "superseded_by": [
+        "i-e8ea4167f270"
+      ],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Exact publication day"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "superseded",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-7927d92729b4",
+      "organization_id": "o-b4834deec349"
+    },
+    {
+      "id": "i-e8ea4167f270",
+      "official_title": "בינה מלאכותית בסקטור הפיננסי – דוח סופי",
+      "english_title": "Artificial Intelligence in the Financial Sector – final report (December 2025)",
+      "jurisdiction_id": "ISR",
+      "issuing_authority": "Inter-Ministerial Team on AI in the Financial Sector (Ministry of Justice, Ministry of Finance, Banking Supervision Department, Israel Securities Authority, Capital Market, Insurance and Savings Authority, Competition Authority)",
+      "publisher_name": "Inter-Ministerial Team on AI in the Financial Sector",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "sectoral",
+        "risk-assurance",
+        "sandbox"
+      ],
+      "category": "sectoral",
+      "subcategory": null,
+      "legal_status": "nonbinding_guidance",
+      "publication_date": "2025-12",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Final report, December 2025 (PDF created 18 December 2025). English version: https://www.gov.il/BlobFolder/reports/report_0013/he/AI%20in%20the%20Financial%20Sector%20-%20Final%20Report%20Dec2025.pdf",
+      "scope": null,
+      "sectors": [
+        "finance"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Final report of the inter-ministerial team setting nine guiding principles for AI regulation in the supervised financial sector, among them flexible and adaptive regulation, alignment with international practice, removal of barriers, regulatory experimentation tools, regulation only where justified, a risk-based approach and consumer and social considerations. It sets policy lines on explainability, human involvement, disclosure, privacy, bias, cyber, fraud and competition, and on a financial-sector sandbox. It guides the financial regulators; it does not itself impose binding rules.",
+      "ai_governance_relevance": "Primary-source material for assessing sectoral, risk-assurance, sandbox.",
+      "source_url": "https://www.boi.org.il/media/rh0bejl4/aireport.pdf",
+      "official_pdf_url": "https://www.boi.org.il/media/rh0bejl4/aireport.pdf",
+      "official_webpage_url": null,
+      "language": "he",
+      "supersedes": [
+        "i-4af645b53ba5"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Exact publication day"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-ed9db5a93b0d",
+      "organization_id": "o-b4834deec349"
+    },
+    {
+      "id": "i-6b8cb6013a21",
+      "official_title": "ניהול בנקאי תקין הוראה מס' 369: ניהול סיכוני מודלים",
+      "english_title": "Proper Conduct of Banking Business Directive No. 369: Model Risk Management",
+      "jurisdiction_id": "ISR",
+      "issuing_authority": "Bank of Israel – Supervisor of Banks",
+      "publisher_name": "Bank of Israel – Banking Supervision Department",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "sectoral",
+        "risk-assurance",
+        "binding-law"
+      ],
+      "category": "sectoral",
+      "subcategory": null,
+      "legal_status": "binding_regulation",
+      "publication_date": "2024-08-21",
+      "effective_date": "2025-08-21",
+      "last_amended_date": null,
+      "current_status": "Published 21 August 2024 (Circular 06-2792); commencement 21 August 2025; existing material models within 6 months and others within 18 months of commencement.",
+      "scope": null,
+      "sectors": [
+        "finance"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Banking directive requiring banking corporations and systemically important payment service providers to manage model risk through board and management oversight, model development and use controls and independent validation. It applies expressly to models that use or rely on AI, requiring banks to address AI-specific features such as explainability, ethics, data and accountability; an annex gives examples for AI models. Issued with Circular C-06-2792 on 21 August 2024; in force one year after publication, with transition periods for existing models.",
+      "ai_governance_relevance": "Primary-source material for assessing sectoral, risk-assurance, binding-law.",
+      "source_url": "https://www.boi.org.il/media/v14f5hxo/369.pdf",
+      "official_pdf_url": "https://www.boi.org.il/media/v14f5hxo/369.pdf",
+      "official_webpage_url": "https://www.boi.org.il/media/1flno54f/h2792.pdf",
+      "language": "he",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "in_force",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-78ea313e0fbd",
+      "organization_id": "o-9468e1180130"
+    },
+    {
+      "id": "i-aa1ccb9f0e67",
+      "official_title": "הנחיות שימוש בכלי בינה מלאכותית יוצרת במערכת החינוך",
+      "english_title": "Guidelines for the use of generative AI tools in the education system (January 2026)",
+      "jurisdiction_id": "ISR",
+      "issuing_authority": "Ministry of Education – Pedagogical Administration and Innovation and Technology Administration",
+      "publisher_name": "Ministry of Education",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "sectoral",
+        "generative-ai"
+      ],
+      "category": "sectoral",
+      "subcategory": null,
+      "legal_status": "administrative_guideline",
+      "publication_date": "2026-01",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Version dated January 2026 (Shevat 5786); replaces earlier ministry guidance.",
+      "scope": null,
+      "sectors": [
+        "education"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Ministry rules for using generative AI in schools: no student use in grades 1-3, the ministry's own bot from grade 4, teacher-controlled use in grades 5-6 and independent use of approved tools from grade 7. Use requires parental consent and prior training of staff and pupils, and must follow principles of privacy, non-discrimination, transparency, accountability and safety, with attention to pupil well-being.",
+      "ai_governance_relevance": "Primary-source material for assessing sectoral, generative-ai.",
+      "source_url": "https://meyda.education.gov.il/files/Pop/0files/lemida-metukshevet/AI/Guidelines.pdf",
+      "official_pdf_url": "https://meyda.education.gov.il/files/Pop/0files/lemida-metukshevet/AI/Guidelines.pdf",
+      "official_webpage_url": null,
+      "language": "he",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Exact publication day",
+        "Earlier versions (2023, 2025) not recorded separately"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-bcc4d45cf6c8",
+      "organization_id": "o-181788a8d630"
+    },
+    {
+      "id": "i-a38af139e5c9",
+      "official_title": "ההיערכות הלאומית בתחום הבינה המלאכותית – דוח מיוחד",
+      "english_title": "National preparedness in the field of artificial intelligence – special report (November 2024)",
+      "jurisdiction_id": "ISR",
+      "issuing_authority": "State Comptroller and Ombudsman of Israel",
+      "publisher_name": "State Comptroller of Israel",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "index-readiness"
+      ],
+      "category": "index-readiness",
+      "subcategory": null,
+      "legal_status": "nonbinding_guidance",
+      "publication_date": "2024-11",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Special audit report, November 2024 (Heshvan 5785).",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "State Comptroller audit (fieldwork June 2023 - March 2024) of Israel's national AI preparedness, its international AI rankings and government action to advance the national AI program, conducted at MOST, the Innovation Authority, the Ministry of Defense, the Planning and Budgeting Committee, the Ministry of Finance and the National Security Council. It is the main government-published assessment of national AI readiness.",
+      "ai_governance_relevance": "Primary-source material for assessing index-readiness.",
+      "source_url": "https://library.mevaker.gov.il/sites/DigitalLibrary/Documents/2024/2024.11-Cyber/2024.11-Cyber-107-AI.pdf",
+      "official_pdf_url": "https://library.mevaker.gov.il/sites/DigitalLibrary/Documents/2024/2024.11-Cyber/2024.11-Cyber-107-AI.pdf",
+      "official_webpage_url": null,
+      "language": "he",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Exact publication day"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-6a84b28f7f59",
+      "organization_id": "o-66405502fd09"
+    },
+    {
+      "id": "i-cc179d034843",
+      "official_title": "קול קורא לארגז חול רגולטורי לטכנולוגיות AI פורצות דרך בבריאות",
+      "english_title": "Call for a regulatory sandbox for breakthrough AI technologies in healthcare (2026)",
+      "jurisdiction_id": "ISR",
+      "issuing_authority": "Israel Innovation Authority and Ministry of Health",
+      "publisher_name": "Israel Innovation Authority",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "sandbox",
+        "sectoral"
+      ],
+      "category": "sandbox",
+      "subcategory": null,
+      "legal_status": "administrative_guideline",
+      "publication_date": "2026",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Open call; deadline extended from 15 March to 14 April 2026. Page read via WebFetch (curl blocked by Cloudflare).",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Regulatory-pilot call by the Innovation Authority and the Ministry of Health for AI health technologies with high automation or autonomy and for models that redistribute clinical tasks and authority. It aims to test risk management, generative-AI approval, liability and needed legal changes, with grants of up to NIS 3 million over up to 24 months; submissions closed 14 April 2026.",
+      "ai_governance_relevance": "Primary-source material for assessing sandbox, sectoral.",
+      "source_url": "https://innovationisrael.org.il/kol_kore/ai-in-health-sandbox/",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://innovationisrael.org.il/kol_kore/ai-in-health-sandbox/",
+      "language": "he",
       "supersedes": [],
       "superseded_by": [],
       "related_instruments": [],
@@ -53,40 +1015,150 @@
       "verification_date": "2026-10-06",
       "verification_level": "primary_source_located",
       "metadata_gaps": [
-        "Issuing authority",
-        "Publication/effective dates",
-        "Current legal status",
-        "Precise applicability",
-        "Version history",
-        "Authority type",
-        "Government level",
-        "Publication date",
-        "Effective date",
-        "Last amended date",
-        "Document language"
+        "Publication date not stated on the page"
       ],
-      "source_kind": "official_document",
-      "evidence_reference": "turn111search11",
-      "link_status": "inaccessible",
+      "source_kind": "official_publication",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
       "document_access_type": "original_government_document",
-      "source_id": "s-b6727d3e6ed4",
-      "organization_id": "o-0174125f832c",
-      "lifecycle": "unverified",
+      "lifecycle": "published",
       "first_recorded": "2026-10-06",
       "last_changed": null,
-      "subnational_unit": null
+      "subnational_unit": null,
+      "source_id": "s-5682e8222452",
+      "organization_id": "o-f244c2ff184d"
     }
   ],
   "organizations": [
     {
       "id": "o-0174125f832c",
       "jurisdiction_id": "ISR",
-      "name": "www.gov.il",
-      "publisher_name_verified": false,
-      "ai_governance_role": "Publisher of listed official material; complete institutional mandate and statutory responsibilities require review.",
+      "name": "Ministry of Innovation, Science and Technology (MOST)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Led national AI regulation and ethics policy (Government Resolution 212 of 2021); co-author of the 2022 draft and 2023 policy principles; hosts the Center for AI Regulation and Policy.",
       "source_url": "https://www.gov.il/BlobFolder/news/most-news20231218/he/2023%20Artificial%20Intelligence%20Regulation%20and%20Ethics%20Policy%20Principles%20Document.pdf",
       "authority_type": null,
-      "government_level": null
+      "government_level": "national"
+    },
+    {
+      "id": "o-5aa80e88b03e",
+      "jurisdiction_id": "ISR",
+      "name": "Ministry of Justice – Office of Legal Counsel and Legislative Affairs",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Co-author of the 2023 AI policy principles; issued the 2022 opinion on copyrighted materials for machine learning; led the inter-ministerial team on AI in the financial sector.",
+      "source_url": "https://www.gov.il/BlobFolder/legalinfo/machine-learning/he/18-12-2022.pdf",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-1672480d328c",
+      "jurisdiction_id": "ISR",
+      "name": "Privacy Protection Authority (PPA), Ministry of Justice",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Data protection regulator enforcing the Privacy Protection Law (strengthened by Amendment 13); issues AI and privacy guidance.",
+      "source_url": "https://www.gov.il/BlobFolder/rfp/ai_reg/he/ai_regu_draft.pdf",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-f244c2ff184d",
+      "jurisdiction_id": "ISR",
+      "name": "Israel Innovation Authority",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Statutory innovation agency; publishes the National AI Program and runs AI regulatory sandbox calls with sector regulators.",
+      "source_url": "https://innovationisrael.org.il/wp-content/uploads/2025/05/National-AI-Program14.5.25.pdf",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-31f98ea43688",
+      "jurisdiction_id": "ISR",
+      "name": "National Artificial Intelligence Directorate, Prime Minister's Office",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Unit in the Prime Minister's Office that coordinates national AI policy and authored the August 2026 national AI plan under Government Resolution 4255.",
+      "source_url": "https://govextra.gov.il/media/bkwfd2t2/israel-ai-plan_hebrew.pdf",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-cbf384903f82",
+      "jurisdiction_id": "ISR",
+      "name": "National Committee for Accelerating the AI Field (Nagel Committee)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Ad hoc national committee chaired by Prof. Jacob Nagel that recommended a national AI headquarters (report of 5 August 2025).",
+      "source_url": "https://www.gov.il/BlobFolder/news/event-ai050825/he/ai050825.pdf",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-4218f862c783",
+      "jurisdiction_id": "ISR",
+      "name": "Government of Israel (Government Secretariat)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Adopts government resolutions setting the national AI program and institutional arrangements.",
+      "source_url": "https://www.gov.il/he/departments/policies/dec212_2021",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-43097e5386d6",
+      "jurisdiction_id": "ISR",
+      "name": "National Digital Agency (Israel National Digital Agency)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Government digital agency; issuer of the guide on responsible use of AI tools in the public sector.",
+      "source_url": "https://www.gov.il/BlobFolder/news/ai-guide/en/DL-57390%20AI%20Responsible%20Use%20Manual-hebrew.pdf",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-b4834deec349",
+      "jurisdiction_id": "ISR",
+      "name": "Inter-Ministerial Team on AI in the Financial Sector",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Joint team of the Ministry of Justice, Ministry of Finance, Banking Supervision Department, Israel Securities Authority, Capital Market, Insurance and Savings Authority and Competition Authority.",
+      "source_url": "https://www.boi.org.il/media/rh0bejl4/aireport.pdf",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-9468e1180130",
+      "jurisdiction_id": "ISR",
+      "name": "Bank of Israel – Banking Supervision Department",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Banking supervisor; Proper Conduct of Banking Business Directive 369 applies model-risk rules to AI models.",
+      "source_url": "https://www.boi.org.il/media/v14f5hxo/369.pdf",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-181788a8d630",
+      "jurisdiction_id": "ISR",
+      "name": "Ministry of Education",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Sets rules for the use of generative AI tools in the education system.",
+      "source_url": "https://meyda.education.gov.il/files/Pop/0files/lemida-metukshevet/AI/Guidelines.pdf",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-66405502fd09",
+      "jurisdiction_id": "ISR",
+      "name": "State Comptroller of Israel",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Supreme audit institution; audited national AI readiness (special report, November 2024).",
+      "source_url": "https://library.mevaker.gov.il/sites/DigitalLibrary/Documents/2024/2024.11-Cyber/2024.11-Cyber-107-AI.pdf",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-0eedae583f90",
+      "jurisdiction_id": "ISR",
+      "name": "TELEM – National Infrastructure Forum for Research and Development (AI and Data Science Committee)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Inter-agency R&D infrastructure forum whose AI committee designed the national AI program adopted in 2021.",
+      "source_url": "https://innovationisrael.org.il/sites/default/files/%D7%93%D7%95%D7%97%20%D7%A1%D7%95%D7%A4%D7%99%20%D7%A1%D7%99%D7%9B%D7%95%D7%9D%20%D7%95%D7%95%D7%A2%D7%93%D7%AA%20%D7%AA%D7%9C%D7%9D%20%D7%9C%D7%AA%D7%9B%D7%A0%D7%99%D7%AA%20%D7%9E%D7%95%D7%A4%20%D7%9C%D7%90%D7%95%D7%9E%D7%99%D7%AA%20%D7%91%D7%91%D7%99%D7%A0%D7%94%20%D7%9E%D7%9C%D7%90%D7%9B%D7%95%D7%AA%D7%99%D7%AA%20-.pdf",
+      "authority_type": null,
+      "government_level": "national"
     }
   ],
   "sources": [
@@ -97,7 +1169,7 @@
         "ISR"
       ],
       "source_institutions": [
-        "www.gov.il"
+        "Ministry of Innovation, Science and Technology (MOST)"
       ],
       "instrument_ids": [
         "i-5981f810cdd3"
@@ -108,37 +1180,515 @@
       ],
       "date_reviewed": "2026-10-06",
       "checked_date": "2026-10-06",
-      "check_method": "GET; first 1 MiB; 14-second timeout",
-      "http_status": 403,
+      "check_method": "GET with browser user-agent (curl); PDF text extracted and read",
+      "http_status": 200,
       "final_url": "https://www.gov.il/BlobFolder/news/most-news20231218/he/2023%20Artificial%20Intelligence%20Regulation%20and%20Ethics%20Policy%20Principles%20Document.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "he",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-261373e4631a",
+      "url": "https://www.gov.il/BlobFolder/news/most-news20223110/he/Regulatory%20and%20ethics%20policy%20document%20in%20the%20field%20of%20artificial%20intelligence%20in%20IsraelAI.pdf",
+      "jurisdiction_ids": [
+        "ISR"
+      ],
+      "source_institutions": [
+        "Ministry of Innovation, Science and Technology (MOST)"
+      ],
+      "instrument_ids": [
+        "i-e24894a7356d"
+      ],
+      "categories_reviewed": [
+        "drafts",
+        "historical",
+        "ethics"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "GET with browser user-agent (curl); PDF text extracted and read",
+      "http_status": 200,
+      "final_url": "https://www.gov.il/BlobFolder/news/most-news20223110/he/Regulatory%20and%20ethics%20policy%20document%20in%20the%20field%20of%20artificial%20intelligence%20in%20IsraelAI.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "he",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-68d7a0fad8df",
+      "url": "https://www.gov.il/he/departments/policies/dec212_2021",
+      "jurisdiction_ids": [
+        "ISR"
+      ],
+      "source_institutions": [
+        "Government of Israel (Government Secretariat)"
+      ],
+      "instrument_ids": [
+        "i-5a24bc5a6e45"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "government-governance"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "GET with browser user-agent: 301 then Cloudflare 403",
+      "http_status": 403,
+      "final_url": "https://www.gov.il/he/departments/policies/dec212_2021",
       "link_status": "inaccessible",
       "page_title": null,
-      "document_language": null,
-      "error": "HTTP Error 403: Forbidden"
+      "document_language": "he",
+      "error": "Cloudflare 403 to automated access",
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-419ca8918b42",
+      "url": "https://innovationisrael.org.il/sites/default/files/%D7%93%D7%95%D7%97%20%D7%A1%D7%95%D7%A4%D7%99%20%D7%A1%D7%99%D7%9B%D7%95%D7%9D%20%D7%95%D7%95%D7%A2%D7%93%D7%AA%20%D7%AA%D7%9C%D7%9D%20%D7%9C%D7%AA%D7%9B%D7%A0%D7%99%D7%AA%20%D7%9E%D7%95%D7%A4%20%D7%9C%D7%90%D7%95%D7%9E%D7%99%D7%AA%20%D7%91%D7%91%D7%99%D7%A0%D7%94%20%D7%9E%D7%9C%D7%90%D7%9B%D7%95%D7%AA%D7%99%D7%AA%20-.pdf",
+      "jurisdiction_ids": [
+        "ISR"
+      ],
+      "source_institutions": [
+        "TELEM – National Infrastructure Forum for Research and Development (AI and Data Science Committee)"
+      ],
+      "instrument_ids": [
+        "i-f0780f7cdee9"
+      ],
+      "categories_reviewed": [
+        "historical",
+        "strategy"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "GET with browser user-agent (curl); PDF text extracted and read",
+      "http_status": 200,
+      "final_url": "https://innovationisrael.org.il/sites/default/files/%D7%93%D7%95%D7%97%20%D7%A1%D7%95%D7%A4%D7%99%20%D7%A1%D7%99%D7%9B%D7%95%D7%9D%20%D7%95%D7%95%D7%A2%D7%93%D7%AA%20%D7%AA%D7%9C%D7%9D%20%D7%9C%D7%AA%D7%9B%D7%A0%D7%99%D7%AA%20%D7%9E%D7%95%D7%A4%20%D7%9C%D7%90%D7%95%D7%9E%D7%99%D7%AA%20%D7%91%D7%91%D7%99%D7%A0%D7%94%20%D7%9E%D7%9C%D7%90%D7%9B%D7%95%D7%AA%D7%99%D7%AA%20-.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "he",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-8b38f5ee429e",
+      "url": "https://innovationisrael.org.il/wp-content/uploads/2025/05/National-AI-Program14.5.25.pdf",
+      "jurisdiction_ids": [
+        "ISR"
+      ],
+      "source_institutions": [
+        "Israel Innovation Authority"
+      ],
+      "instrument_ids": [
+        "i-4ed512553b71"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "GET with browser user-agent (curl); PDF text extracted and read",
+      "http_status": 200,
+      "final_url": "https://innovationisrael.org.il/wp-content/uploads/2025/05/National-AI-Program14.5.25.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "he",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-b1dd85740b25",
+      "url": "https://www.gov.il/BlobFolder/news/event-ai050825/he/ai050825.pdf",
+      "jurisdiction_ids": [
+        "ISR"
+      ],
+      "source_institutions": [
+        "National Committee for Accelerating the AI Field (Nagel Committee)"
+      ],
+      "instrument_ids": [
+        "i-f19c8227512a"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "government-governance"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "GET with browser user-agent (curl); PDF text extracted and read",
+      "http_status": 200,
+      "final_url": "https://www.gov.il/BlobFolder/news/event-ai050825/he/ai050825.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "he",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-b27c077ff85a",
+      "url": "https://govextra.gov.il/media/bkwfd2t2/israel-ai-plan_hebrew.pdf",
+      "jurisdiction_ids": [
+        "ISR"
+      ],
+      "source_institutions": [
+        "National Artificial Intelligence Directorate, Prime Minister's Office"
+      ],
+      "instrument_ids": [
+        "i-9b5873968249"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "government-governance",
+        "ethics"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "GET with browser user-agent (curl); PDF text extracted and read",
+      "http_status": 200,
+      "final_url": "https://govextra.gov.il/media/bkwfd2t2/israel-ai-plan_hebrew.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "he",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-75ad860e776a",
+      "url": "https://www.gov.il/BlobFolder/legalinfo/legislation/en/Protection-of-Privacy-Law57411981unofficialtranslatioup.pdf",
+      "jurisdiction_ids": [
+        "ISR"
+      ],
+      "source_institutions": [
+        "Privacy Protection Authority (PPA), Ministry of Justice"
+      ],
+      "instrument_ids": [
+        "i-bcb636981feb"
+      ],
+      "categories_reviewed": [
+        "data-privacy"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "GET with browser user-agent (curl); PDF text extracted and read",
+      "http_status": 200,
+      "final_url": "https://www.gov.il/BlobFolder/legalinfo/legislation/en/Protection-of-Privacy-Law57411981unofficialtranslatioup.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-8ad4b70993e9",
+      "url": "https://www.gov.il/BlobFolder/rfp/ai_reg/he/ai_regu_draft.pdf",
+      "jurisdiction_ids": [
+        "ISR"
+      ],
+      "source_institutions": [
+        "Privacy Protection Authority (PPA), Ministry of Justice"
+      ],
+      "instrument_ids": [
+        "i-c53a049c3c54"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "drafts",
+        "transparency",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "GET with browser user-agent (curl); PDF text extracted and read",
+      "http_status": 200,
+      "final_url": "https://www.gov.il/BlobFolder/rfp/ai_reg/he/ai_regu_draft.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "he",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-6767222b33f4",
+      "url": "https://www.gov.il/BlobFolder/news/artificial-intelligence-agents/he/Recommendations-artificial-intelligence-agents.pdf",
+      "jurisdiction_ids": [
+        "ISR"
+      ],
+      "source_institutions": [
+        "Privacy Protection Authority (PPA), Ministry of Justice"
+      ],
+      "instrument_ids": [
+        "i-0682d7697e6b"
+      ],
+      "categories_reviewed": [
+        "generative-ai",
+        "data-privacy"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "GET with browser user-agent (curl); PDF text extracted and read",
+      "http_status": 200,
+      "final_url": "https://www.gov.il/BlobFolder/news/artificial-intelligence-agents/he/Recommendations-artificial-intelligence-agents.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "he",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-0c5dcfa9607b",
+      "url": "https://www.gov.il/BlobFolder/legalinfo/machine-learning/he/machine-learning.pdf",
+      "jurisdiction_ids": [
+        "ISR"
+      ],
+      "source_institutions": [
+        "Ministry of Justice – Office of Legal Counsel and Legislative Affairs"
+      ],
+      "instrument_ids": [
+        "i-1ee18a36d71b"
+      ],
+      "categories_reviewed": [
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "GET with browser user-agent (curl); PDF text extracted and read",
+      "http_status": 200,
+      "final_url": "https://www.gov.il/BlobFolder/legalinfo/machine-learning/he/machine-learning.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "he",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-949cfab0baf6",
+      "url": "https://www.gov.il/BlobFolder/news/ai-guide/he/%D7%9E%D7%93%D7%A8%D7%99%D7%9A%20%D7%9C%D7%A9%D7%99%D7%9E%D7%95%D7%A9%20%D7%90%D7%97%D7%A8%D7%90%D7%99%20%D7%91%D7%91%D7%99%D7%A0%D7%94%20%D7%9E%D7%9C%D7%90%D7%9B%D7%95%D7%AA%D7%99%D7%AA%20%D7%91%D7%9E%D7%92%D7%96%D7%A8%20%D7%94%D7%A6%D7%99%D7%91%D7%95%D7%A8%D7%99%20-%20%D7%94%D7%A2%D7%A8%D7%95%D7%AA%20%D7%94%D7%A6%D7%99%D7%91%D7%95%D7%A8.pdf",
+      "jurisdiction_ids": [
+        "ISR"
+      ],
+      "source_institutions": [
+        "National Digital Agency (Israel National Digital Agency)"
+      ],
+      "instrument_ids": [
+        "i-0a21907b7025"
+      ],
+      "categories_reviewed": [
+        "drafts",
+        "public-sector",
+        "historical"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "GET with browser user-agent (curl); PDF text extracted and read",
+      "http_status": 200,
+      "final_url": "https://www.gov.il/BlobFolder/news/ai-guide/he/%D7%9E%D7%93%D7%A8%D7%99%D7%9A%20%D7%9C%D7%A9%D7%99%D7%9E%D7%95%D7%A9%20%D7%90%D7%97%D7%A8%D7%90%D7%99%20%D7%91%D7%91%D7%99%D7%A0%D7%94%20%D7%9E%D7%9C%D7%90%D7%9B%D7%95%D7%AA%D7%99%D7%AA%20%D7%91%D7%9E%D7%92%D7%96%D7%A8%20%D7%94%D7%A6%D7%99%D7%91%D7%95%D7%A8%D7%99%20-%20%D7%94%D7%A2%D7%A8%D7%95%D7%AA%20%D7%94%D7%A6%D7%99%D7%91%D7%95%D7%A8.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "he",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-04df89e687ac",
+      "url": "https://www.gov.il/BlobFolder/news/ai-guide/en/DL-57390%20AI%20Responsible%20Use%20Manual-hebrew.pdf",
+      "jurisdiction_ids": [
+        "ISR"
+      ],
+      "source_institutions": [
+        "National Digital Agency (Israel National Digital Agency)"
+      ],
+      "instrument_ids": [
+        "i-d21432e45cfb"
+      ],
+      "categories_reviewed": [
+        "public-sector",
+        "risk-assurance",
+        "government-governance",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "GET with browser user-agent (curl); PDF text extracted and read",
+      "http_status": 200,
+      "final_url": "https://www.gov.il/BlobFolder/news/ai-guide/en/DL-57390%20AI%20Responsible%20Use%20Manual-hebrew.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "he",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-7927d92729b4",
+      "url": "https://www.new.isa.gov.il/images/Fittings/isa/asset_library_pic/al_lobby/al_lobby-63b3dc4fa5dd2/AIreport.pdf",
+      "jurisdiction_ids": [
+        "ISR"
+      ],
+      "source_institutions": [
+        "Inter-Ministerial Team on AI in the Financial Sector"
+      ],
+      "instrument_ids": [
+        "i-4af645b53ba5"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "drafts",
+        "historical"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "GET with browser user-agent (curl); PDF text extracted and read",
+      "http_status": 200,
+      "final_url": "https://www.new.isa.gov.il/images/Fittings/isa/asset_library_pic/al_lobby/al_lobby-63b3dc4fa5dd2/AIreport.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "he",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-ed9db5a93b0d",
+      "url": "https://www.boi.org.il/media/rh0bejl4/aireport.pdf",
+      "jurisdiction_ids": [
+        "ISR"
+      ],
+      "source_institutions": [
+        "Inter-Ministerial Team on AI in the Financial Sector"
+      ],
+      "instrument_ids": [
+        "i-e8ea4167f270"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "risk-assurance",
+        "sandbox"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "GET with browser user-agent (curl); PDF text extracted and read",
+      "http_status": 200,
+      "final_url": "https://www.boi.org.il/media/rh0bejl4/aireport.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "he",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-78ea313e0fbd",
+      "url": "https://www.boi.org.il/media/v14f5hxo/369.pdf",
+      "jurisdiction_ids": [
+        "ISR"
+      ],
+      "source_institutions": [
+        "Bank of Israel – Banking Supervision Department"
+      ],
+      "instrument_ids": [
+        "i-6b8cb6013a21"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "risk-assurance",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "GET with browser user-agent (curl); PDF text extracted and read",
+      "http_status": 200,
+      "final_url": "https://www.boi.org.il/media/v14f5hxo/369.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "he",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-bcc4d45cf6c8",
+      "url": "https://meyda.education.gov.il/files/Pop/0files/lemida-metukshevet/AI/Guidelines.pdf",
+      "jurisdiction_ids": [
+        "ISR"
+      ],
+      "source_institutions": [
+        "Ministry of Education"
+      ],
+      "instrument_ids": [
+        "i-aa1ccb9f0e67"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "GET with browser user-agent (curl); PDF text extracted and read",
+      "http_status": 200,
+      "final_url": "https://meyda.education.gov.il/files/Pop/0files/lemida-metukshevet/AI/Guidelines.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "he",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-6a84b28f7f59",
+      "url": "https://library.mevaker.gov.il/sites/DigitalLibrary/Documents/2024/2024.11-Cyber/2024.11-Cyber-107-AI.pdf",
+      "jurisdiction_ids": [
+        "ISR"
+      ],
+      "source_institutions": [
+        "State Comptroller of Israel"
+      ],
+      "instrument_ids": [
+        "i-a38af139e5c9"
+      ],
+      "categories_reviewed": [
+        "index-readiness"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "GET with browser user-agent (curl); PDF text extracted and read",
+      "http_status": 200,
+      "final_url": "https://library.mevaker.gov.il/sites/DigitalLibrary/Documents/2024/2024.11-Cyber/2024.11-Cyber-107-AI.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "he",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-5682e8222452",
+      "url": "https://innovationisrael.org.il/kol_kore/ai-in-health-sandbox/",
+      "jurisdiction_ids": [
+        "ISR"
+      ],
+      "source_institutions": [
+        "Israel Innovation Authority"
+      ],
+      "instrument_ids": [
+        "i-cc179d034843"
+      ],
+      "categories_reviewed": [
+        "sandbox",
+        "sectoral"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "WebFetch (curl returned Cloudflare 403)",
+      "http_status": 200,
+      "final_url": "https://innovationisrael.org.il/kol_kore/ai-in-health-sandbox/",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "he",
+      "error": null,
+      "content_type": "text/html"
     }
   ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "ISR",
     "country": "Israel",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
-      "strategy",
-      "government-governance",
-      "ethics",
-      "public-sector",
-      "procurement",
-      "cyber-security",
-      "data-privacy",
-      "risk-assurance",
-      "transparency"
-    ],
-    "categories_with_findings": [
-      "ethics",
-      "government-governance"
-    ],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
       "binding-law",
       "strategy",
       "government-governance",
@@ -158,33 +1708,644 @@
       "international",
       "historical"
     ],
+    "categories_with_findings": [
+      "binding-law",
+      "data-privacy",
+      "drafts",
+      "ethics",
+      "generative-ai",
+      "government-governance",
+      "historical",
+      "index-readiness",
+      "public-sector",
+      "risk-assurance",
+      "sandbox",
+      "sectoral",
+      "strategy",
+      "transparency"
+    ],
+    "categories_where_no_material_was_found": [
+      "procurement",
+      "cyber-security",
+      "standards",
+      "international"
+    ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Israel \"בינה מלאכותית\" (אסטרטגיה OR רגולציה OR אתיקה) government ministry official",
       "Israel \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Israel government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Israel \"בינה מלאכותית\" cybersecurity authority secure development safety guidelines",
-      "Israel privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Israel privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "gov.il BlobFolder בינה מלאכותית הרשות להגנת הפרטיות טיוטת הנחיה",
+      "Privacy Protection Authority Israel guidance artificial intelligence 2025 gov.il",
+      "Israel interim report artificial intelligence financial sector December 2024 gov.il pdf",
+      "Israel Ministry of Justice opinion use of copyrighted materials machine learning 2022 pdf",
+      "מערך הסייבר הלאומי בינה מלאכותית הנחיות אבטחה מסמך",
+      "Bank of Israel Banking Supervision artificial intelligence letter directive 2024 2025",
+      "boi.org.il banking supervision artificial intelligence letter generative AI banks 2025 pdf",
+      "Israel Securities Authority artificial intelligence position paper investment advice 2025",
+      "רשות שוק ההון בינה מלאכותית חוזר טיוטה גופים מוסדיים",
+      "משרד הבריאות חוזר בינה מלאכותית מערכות רפואיות הנחיות 2025",
+      "מערך הדיגיטל הלאומי בינה מלאכותית יוצרת הנחיות עובדי מדינה שימוש",
+      "משרד החינוך בינה מלאכותית מסמך מדיניות הנחיות שימוש בבתי ספר",
+      "החלטת ממשלה מטה לאומי לבינה מלאכותית משרד ראש הממשלה 2025",
+      "הנחיית הרשות להגנת הפרטיות בינה מלאכותית נוסח סופי 2026",
+      "הצעת חוק בינה מלאכותית הכנסת 2025 deepfake הצעת חוק",
+      "Israel National Cyber Directorate AI security guidelines publication 2025 gov.il",
+      "מכון התקנים הישראלי ISO/IEC 42001 תקן ישראלי בינה מלאכותית ת\"י",
+      "Israel signed Council of Europe Framework Convention artificial intelligence September 2024 Israel signatory",
+      "הרשות להגנת הפרטיות סוכני בינה מלאכותית המלצות יולי 2026 gov.il",
+      "gov.il BlobFolder Privacy Protection Authority AI English draft guidance \"artificial intelligence\"",
+      "מערך הסייבר הלאומי הנחיות אבטחת מערכות בינה מלאכותית gov.il BlobFolder pdf",
+      "משרד הבריאות עקרונות מנחים לפיתוח טכנולוגיות מבוססות למידת מכונה pdf",
+      "רשות התחרות בינה מלאכותית מסמך עמדה תחרות 2024 2025",
+      "הנחיות היועצת המשפטית לממשלה שימוש בבינה מלאכותית יוצרת עבודת הייעוץ המשפטי",
+      "2022 טיוטת מסמך עקרונות מדיניות רגולציה ואתיקה בינה מלאכותית הערות הציבור משרד החדשנות BlobFolder",
+      "הנהלת בתי המשפט הנחיות שימוש בבינה מלאכותית שופטים 2025",
+      "מערך הסייבר הלאומי פיתוח מאובטח של מוצרי בינה מלאכותית מדריך נובמבר 2023",
+      "חוק הגנת הפרטיות (תיקון מס' 13) התשפ\"ד-2024 ספר החוקים pdf",
+      "ארגז חול רגולטורי בינה מלאכותית ישראל מסמך ממשלתי 2025 2026",
+      "הפיקוח על הבנקים בינה מלאכותית מכתב לתאגידים הבנקאיים ממשל תאגידי 2026",
+      "רשות שוק ההון חוזר שימוש בבינה מלאכותית גופים מוסדיים טיוטה 2026 עקרונות",
+      "הרשות השופטת קוד אתי שימוש בבינה מלאכותית gov.il judiciary pdf",
+      "בנק ישראל הוראת ניהול בנקאי תקין ניהול סיכוני מודלים בינה מלאכותית 2024 חוזר pdf",
+      "מטה הבינה המלאכותית הלאומי תוכנית אסטרטגית לאומית לבינה מלאכותית 2026 pdf",
+      "Israel National AI Directorate Prime Minister's Office strategic plan artificial intelligence 2026",
+      "gov.il החלטה 3375 הקמת המטה הלאומי לבינה מלאכותית בישראל dec3375",
+      "gov.il החלטה 4255 האצת הבינה המלאכותית בישראל וביסוס מובילות גלובלית",
+      "gov.il החלטה 212 תוכנית לאומית בינה מלאכותית 2021 dec212",
+      "חוק הגנת הפרטיות התשמ\"א-1981 נוסח מלא gov.il OR knesset.gov.il",
+      "Privacy Protection Law 5741-1981 English translation gov.il BlobFolder Amendment 13",
+      "הצעת חוק העונשין תיקון זיוף עמוק fs.knesset.gov.il פ/5677/25",
+      "gov.il BlobFolder תיקון 13 חוק הגנת הפרטיות נוסח החוק pdf הרשות להגנת הפרטיות",
+      "\"מערך הסייבר\" \"בינה מלאכותית\" gov.il BlobFolder המלצות שימוש בטוח בכלי בינה מלאכותית ארגונים",
+      "Israel National Cyber Directorate \"Vulnerability Storm\" advisory pdf gov.il",
+      "health.gov.il בינה מלאכותית חוזר מנהל כללי OR הנחיות שימוש בכלי בינה מלאכותית יוצרת במערכת הבריאות",
+      "רשות החדשנות משרד הבריאות ארגז חול רגולטורי בינה מלאכותית ברפואה קול קורא 2026",
+      "נוהל הנהלת בתי המשפט 01-26 קוד אתי לשימוש בכלי בינה מלאכותית gov.il",
+      "רשות שוק ההון מכתב מנהלי סייבר היערכות לסיכוני בינה מלאכותית 2026 gov.il BlobFolder",
+      "ISA Israel Securities Authority position chatbots artificial intelligence licensees isa.gov.il 2025 עמדת סגל בינה מלאכותית",
+      "מערך הדיגיטל הלאומי אסטרטגיית הדאטה והבינה המלאכותית הממשלתית pdf"
     ],
     "review_date": "2026-10-06",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
-    "discovery_result_count": 14,
+    "no_material_found_note": "Procurement: no AI procurement rules or model clauses found. Cyber-security: no INCD AI document with official full text found (advisory held as lead). Standards: no national adoption of ISO/IEC 42001/5339 found. International: CoE CETS 225 (signed by Israel) and the UNESCO Recommendation are held in regional files, not in the country file.",
+    "discovery_result_count": 55,
     "focused_result_count": 12
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-d24504e48496",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "ISR",
+      "instrument_id": "i-5981f810cdd3",
+      "title": "Principles of Policy, Regulation and Ethics in Artificial Intelligence (2023)",
+      "detail": "Record updated: issuing authority, legal status, lifecycle, publication date, summary, title.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-8a605f2a45d5",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ISR",
+      "instrument_id": "i-e24894a7356d",
+      "title": "Regulation and Ethics Policy in the Field of Artificial Intelligence in Israel – draft for public comment (2022)",
+      "detail": "Added to the radar (published 2022-10-30).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.gov.il/BlobFolder/news/most-news20223110/he/Regulatory%20and%20ethics%20policy%20document%20in%20the%20field%20of%20artificial%20intelligence%20in%20IsraelAI.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-cc419b275e30",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ISR",
+      "instrument_id": "i-5a24bc5a6e45",
+      "title": "Government Resolution No. 212: Program to promote innovation, encourage high-tech growth and strengthen technological and scientific leadership (2021)",
+      "detail": "Added to the radar (published 2021-08-01).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.gov.il/he/departments/policies/dec212_2021",
+      "needs_review": false
+    },
+    {
+      "id": "c-29b4cf1b6ef9",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ISR",
+      "instrument_id": "i-f0780f7cdee9",
+      "title": "TELEM AI and Data Science Committee – final report (December 2020)",
+      "detail": "Added to the radar (published 2020-12).",
+      "from": null,
+      "to": null,
+      "source_url": "https://innovationisrael.org.il/sites/default/files/%D7%93%D7%95%D7%97%20%D7%A1%D7%95%D7%A4%D7%99%20%D7%A1%D7%99%D7%9B%D7%95%D7%9D%20%D7%95%D7%95%D7%A2%D7%93%D7%AA%20%D7%AA%D7%9C%D7%9D%20%D7%9C%D7%AA%D7%9B%D7%A0%D7%99%D7%AA%20%D7%9E%D7%95%D7%A4%20%D7%9C%D7%90%D7%95%D7%9E%D7%99%D7%AA%20%D7%91%D7%91%D7%99%D7%A0%D7%94%20%D7%9E%D7%9C%D7%90%D7%9B%D7%95%D7%AA%D7%99%D7%AA%20-.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-1ef7218193c8",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ISR",
+      "instrument_id": "i-4ed512553b71",
+      "title": "National Program for Artificial Intelligence – Program and Snapshot (April 2025)",
+      "detail": "Added to the radar (published 2025-04).",
+      "from": null,
+      "to": null,
+      "source_url": "https://innovationisrael.org.il/wp-content/uploads/2025/05/National-AI-Program14.5.25.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-bfc9a6cec176",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ISR",
+      "instrument_id": "i-f19c8227512a",
+      "title": "Report of the National Committee for Accelerating the AI Field (Nagel Committee), August 2025",
+      "detail": "Added to the radar (published 2025-08-05).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.gov.il/BlobFolder/news/event-ai050825/he/ai050825.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-fee50c4f6848",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ISR",
+      "instrument_id": "i-9b5873968249",
+      "title": "Israel's National AI Strategic Plan – courses of action (August 2026)",
+      "detail": "Added to the radar (published 2026-08).",
+      "from": null,
+      "to": null,
+      "source_url": "https://govextra.gov.il/media/bkwfd2t2/israel-ai-plan_hebrew.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-abf31ab694ec",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ISR",
+      "instrument_id": "i-bcb636981feb",
+      "title": "Privacy Protection Law, 5741-1981 (as amended by Amendment No. 13, 2024)",
+      "detail": "Added to the radar (published 1981).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.gov.il/BlobFolder/legalinfo/legislation/en/Protection-of-Privacy-Law57411981unofficialtranslatioup.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-75462b5ed5f3",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ISR",
+      "instrument_id": "i-c53a049c3c54",
+      "title": "Draft PPA Guideline: Application of the Privacy Protection Law to Artificial Intelligence Systems (2025)",
+      "detail": "Added to the radar (published 2025-04-28).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.gov.il/BlobFolder/rfp/ai_reg/he/ai_regu_draft.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-5febcaf490d6",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ISR",
+      "instrument_id": "i-0682d7697e6b",
+      "title": "Recommendations for the public on personal use of AI agents (2026)",
+      "detail": "Added to the radar (published 2026-07).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.gov.il/BlobFolder/news/artificial-intelligence-agents/he/Recommendations-artificial-intelligence-agents.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-7467ad2f5a3a",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ISR",
+      "instrument_id": "i-1ee18a36d71b",
+      "title": "Opinion: Uses of Copyrighted Materials for Machine Learning (2022)",
+      "detail": "Added to the radar (published 2022-12-18).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.gov.il/BlobFolder/legalinfo/machine-learning/he/machine-learning.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-f3135fbb91f2",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ISR",
+      "instrument_id": "i-0a21907b7025",
+      "title": "Guide to risk management and responsible use of AI tools in the public sector – version for public comment (June 2025)",
+      "detail": "Added to the radar (published 2025-06).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.gov.il/BlobFolder/news/ai-guide/he/%D7%9E%D7%93%D7%A8%D7%99%D7%9A%20%D7%9C%D7%A9%D7%99%D7%9E%D7%95%D7%A9%20%D7%90%D7%97%D7%A8%D7%90%D7%99%20%D7%91%D7%91%D7%99%D7%A0%D7%94%20%D7%9E%D7%9C%D7%90%D7%9B%D7%95%D7%AA%D7%99%D7%AA%20%D7%91%D7%9E%D7%92%D7%96%D7%A8%20%D7%94%D7%A6%D7%99%D7%91%D7%95%D7%A8%D7%99%20-%20%D7%94%D7%A2%D7%A8%D7%95%D7%AA%20%D7%94%D7%A6%D7%99%D7%91%D7%95%D7%A8.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-b9e5a81a17db",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ISR",
+      "instrument_id": "i-d21432e45cfb",
+      "title": "Guide to Responsible Use of AI Tools in the Public Sector – governance and risk-management aspects, version 1.0 (May 2026)",
+      "detail": "Added to the radar (published 2026-05).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.gov.il/BlobFolder/news/ai-guide/en/DL-57390%20AI%20Responsible%20Use%20Manual-hebrew.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-ec348aaaa45c",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ISR",
+      "instrument_id": "i-4af645b53ba5",
+      "title": "Artificial Intelligence in the Financial Sector – interim report for public comment (2024)",
+      "detail": "Added to the radar (published 2024-10).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.new.isa.gov.il/images/Fittings/isa/asset_library_pic/al_lobby/al_lobby-63b3dc4fa5dd2/AIreport.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-a6e7905bfab1",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ISR",
+      "instrument_id": "i-e8ea4167f270",
+      "title": "Artificial Intelligence in the Financial Sector – final report (December 2025)",
+      "detail": "Added to the radar (published 2025-12).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.boi.org.il/media/rh0bejl4/aireport.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-96f70ace2cd4",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ISR",
+      "instrument_id": "i-6b8cb6013a21",
+      "title": "Proper Conduct of Banking Business Directive No. 369: Model Risk Management",
+      "detail": "Added to the radar (published 2024-08-21).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.boi.org.il/media/v14f5hxo/369.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-dca6d06d8e67",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ISR",
+      "instrument_id": "i-aa1ccb9f0e67",
+      "title": "Guidelines for the use of generative AI tools in the education system (January 2026)",
+      "detail": "Added to the radar (published 2026-01).",
+      "from": null,
+      "to": null,
+      "source_url": "https://meyda.education.gov.il/files/Pop/0files/lemida-metukshevet/AI/Guidelines.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-9c07af2db6f6",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ISR",
+      "instrument_id": "i-a38af139e5c9",
+      "title": "National preparedness in the field of artificial intelligence – special report (November 2024)",
+      "detail": "Added to the radar (published 2024-11).",
+      "from": null,
+      "to": null,
+      "source_url": "https://library.mevaker.gov.il/sites/DigitalLibrary/Documents/2024/2024.11-Cyber/2024.11-Cyber-107-AI.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-f2c9f78a8629",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ISR",
+      "instrument_id": "i-cc179d034843",
+      "title": "Call for a regulatory sandbox for breakthrough AI technologies in healthcare (2026)",
+      "detail": "Added to the radar (published 2026).",
+      "from": null,
+      "to": null,
+      "source_url": "https://innovationisrael.org.il/kol_kore/ai-in-health-sandbox/",
+      "needs_review": false
+    },
+    {
+      "id": "c-1e72daf94e2d",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "ISR",
+      "instrument_id": "i-5981f810cdd3",
+      "title": "Principles of Policy, Regulation and Ethics in Artificial Intelligence (2023)",
+      "detail": "Official link restored.",
+      "from": "inaccessible",
+      "to": "reachable",
+      "source_url": "https://www.gov.il/BlobFolder/news/most-news20231218/he/2023%20Artificial%20Intelligence%20Regulation%20and%20Ethics%20Policy%20Principles%20Document.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-e154203647da",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "ISR",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 19 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-411a6b26fe1a",
+      "date": "2025-08-21",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "ISR",
+      "instrument_id": "i-6b8cb6013a21",
+      "title": "Bank of Israel Directive 369 (model risk incl. AI) takes effect",
+      "detail": "Commencement one year after publication (21.8.25) per section 94.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.boi.org.il/media/v14f5hxo/369.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-07ee85569708",
+      "date": "2025-08-14",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "ISR",
+      "instrument_id": "i-bcb636981feb",
+      "title": "Privacy Protection Law Amendment No. 13 enters into force",
+      "detail": "Commencement date stated in the PPA's official guide to Amendment 13.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.gov.il/BlobFolder/reports/guide_tikon13_professional/he/tikun%2013%20_170825.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-c7330700ab68",
+      "date": "2025-08-05",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "ISR",
+      "instrument_id": "i-f19c8227512a",
+      "title": "Nagel Committee report on accelerating AI submitted to the Prime Minister",
+      "detail": "Report dated 5 August 2025.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.gov.il/BlobFolder/news/event-ai050825/he/ai050825.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-d1033293f20b",
+      "date": "2025-04-28",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "consultation",
+      "jurisdiction_id": "ISR",
+      "instrument_id": "i-c53a049c3c54",
+      "title": "PPA publishes draft guideline on privacy law and AI systems",
+      "detail": "Draft dated 28 April 2025, published for public comment.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.gov.il/BlobFolder/rfp/ai_reg/he/ai_regu_draft.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-9eb45947da6e",
+      "date": "2024-08-21",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "ISR",
+      "instrument_id": "i-6b8cb6013a21",
+      "title": "Bank of Israel issues Directive 369 on model risk management (covers AI models)",
+      "detail": "Circular C-06-2792 of 21 August 2024.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.boi.org.il/media/v14f5hxo/369.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-c4e67fe0260c",
+      "date": "2024-08-05",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "ISR",
+      "instrument_id": "i-bcb636981feb",
+      "title": "Knesset passes Privacy Protection Law Amendment No. 13",
+      "detail": "Date stated in the PPA's official guide to Amendment 13.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.gov.il/BlobFolder/reports/guide_tikon13_professional/he/tikun%2013%20_170825.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-6d88dad5fe32",
+      "date": "2023-12-14",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "ISR",
+      "instrument_id": "i-5981f810cdd3",
+      "title": "Final AI policy, regulation and ethics principles issued",
+      "detail": "Final document dated 14 December 2023; supersedes the 2022 consultation draft.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.gov.il/BlobFolder/news/most-news20231218/he/2023%20Artificial%20Intelligence%20Regulation%20and%20Ethics%20Policy%20Principles%20Document.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-2a6b30383c7b",
+      "date": "2022-12-18",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "ISR",
+      "instrument_id": "i-1ee18a36d71b",
+      "title": "Ministry of Justice opinion on copyrighted materials for machine learning",
+      "detail": "Opinion dated 18 December 2022.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.gov.il/BlobFolder/legalinfo/machine-learning/he/machine-learning.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-9ab148ad07b7",
+      "date": "2022-10-30",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "consultation",
+      "jurisdiction_id": "ISR",
+      "instrument_id": "i-e24894a7356d",
+      "title": "Draft AI regulation and ethics policy published for public comment",
+      "detail": "MOST cover letter dated 30 October 2022 publishing the draft for public hearing.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.gov.il/BlobFolder/news/most-news20223110/he/Regulatory%20and%20ethics%20policy%20document%20in%20the%20field%20of%20artificial%20intelligence%20in%20IsraelAI.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-76e60dc8c55d",
+      "date": "2021-08-01",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "ISR",
+      "instrument_id": "i-5a24bc5a6e45",
+      "title": "Government Resolution 212 launches the national AI program",
+      "detail": "Date confirmed in the MOST/MoJ December 2023 policy document.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.gov.il/BlobFolder/news/most-news20231218/he/2023%20Artificial%20Intelligence%20Regulation%20and%20Ethics%20Policy%20Principles%20Document.pdf",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "החלטת ממשלה 3375: הקמת המטה הלאומי לבינה מלאכותית בישראל",
+      "english_title": "Government Resolution 3375 establishing the National AI Directorate (21 September 2025)",
+      "issuing_authority": "Government of Israel",
+      "note": "Adopted 21 September 2025, implementing the Nagel Committee recommendations. The gov.il decision page blocks automated reading and its URL could not be confirmed; add once read.",
+      "found": "2026-10-06"
+    },
+    {
+      "title": "החלטת ממשלה 4255: האצת הבינה המלאכותית בישראל וביסוס מובילות גלובלית – עקרונות אסטרטגיים וכיווני פעולה",
+      "english_title": "Government Resolution 4255 on accelerating AI and establishing global leadership (16 June 2026)",
+      "issuing_authority": "Government of Israel",
+      "note": "Basis of the August 2026 National AI Strategic Plan (recorded). The gov.il text could not be read.",
+      "found": "2026-10-06"
+    },
+    {
+      "title": "החלטת ממשלה 3574: האצת הדיגיטציה, יכולות הדאטה והבינה המלאכותית בממשלה באמצעות ענן ציבורי נימבוס",
+      "english_title": "Government Resolution 3574 on data and AI in government via the Nimbus public cloud (4 December 2025)",
+      "issuing_authority": "Government of Israel",
+      "note": "Cited in the public-sector AI guide v1.0; adopts the principles of a government data and AI strategy that has not been published. gov.il blocked.",
+      "found": "2026-10-06"
+    },
+    {
+      "title": "החלטת ממשלה 173 (24.2.2023)",
+      "english_title": "Government Resolution 173 of 24 February 2023 on innovation and technological leadership",
+      "issuing_authority": "Government of Israel",
+      "note": "Cited in the 2023 AI policy principles; AI provisions not verified. gov.il blocked.",
+      "found": "2026-10-06"
+    },
+    {
+      "title": "נוהל הנהלת בתי המשפט 01-26: קוד אתי לשימוש בכלי בינה מלאכותית ברשות השופטת",
+      "english_title": "Courts Administration Procedure 01-26: ethical code for AI use in the judiciary (March 2026)",
+      "issuing_authority": "Courts Administration (Judicial Authority)",
+      "note": "Reported as issued 26 March 2026; no official full text located online.",
+      "found": "2026-10-06"
+    },
+    {
+      "title": "מערך הסייבר הלאומי – התרעה אסטרטגית 'סערת פגיעויות' בעקבות מודלי AI מתקדמים",
+      "english_title": "INCD strategic advisory on an AI-driven 'Vulnerability Storm' (May 2026)",
+      "issuing_authority": "Israel National Cyber Directorate",
+      "note": "Advisory to boards and CISOs on offensive AI capabilities; no official PDF/page located.",
+      "found": "2026-10-06"
+    },
+    {
+      "title": "רשות שוק ההון, ביטוח וחיסכון – פנייה למנהלי סייבר בגופים מוסדיים בדבר סיכוני בינה מלאכותית; חוזר בינה מלאכותית מתוכנן",
+      "english_title": "Capital Market, Insurance and Savings Authority letter on AI cyber risks and planned AI circular (2026)",
+      "issuing_authority": "Capital Market, Insurance and Savings Authority",
+      "note": "Reported letter requiring institutional bodies to update AI-related cyber defences; a dedicated AI circular is expected. No official text located.",
+      "found": "2026-10-06"
+    },
+    {
+      "title": "רשות ניירות ערך – עמדה בדבר שימוש בצ'אטבוטים בפלטפורמות פיננסיות",
+      "english_title": "Israel Securities Authority position on chatbots on financial platforms (2025)",
+      "issuing_authority": "Israel Securities Authority",
+      "note": "Known from secondary sources; official text not located on isa.gov.il.",
+      "found": "2026-10-06"
+    },
+    {
+      "title": "משרד הבריאות – עקרונות לניסויים קליניים באלגוריתמים מבוססי בינה מלאכותית; עקרונות מנחים לפיתוח טכנולוגיות מבוססות למידת מכונה",
+      "english_title": "Ministry of Health draft principles for AI clinical trials and machine-learning development",
+      "issuing_authority": "Ministry of Health",
+      "note": "Consultation documents reported (2024); no official copy located on health.gov.il / gov.il.",
+      "found": "2026-10-06"
+    },
+    {
+      "title": "הצעות חוק פרטיות בנושא זיוף עמוק ותיוג תוכן AI (פ/5411/25, פ/5677/25, פ/6312/25, פ/5600/25)",
+      "english_title": "Private member bills on deepfake offences and AI content labelling (25th Knesset)",
+      "issuing_authority": "Knesset (private members)",
+      "note": "Bills exist on fs.knesset.gov.il but the site blocks automated reading; none enacted as of 2026-10-06.",
+      "found": "2026-10-06"
+    }
+  ]
 }

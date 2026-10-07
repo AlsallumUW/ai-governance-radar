@@ -10,78 +10,1090 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Jordan governs AI through cabinet-approved policy and soft law led by the Ministry of Digital Economy and Entrepreneurship (MoDEE); there is no AI-specific law. The Jordan AI Policy 2020 (Cabinet Decision No. 659) created a National Ministerial Committee for AI and called for an ethics charter, a sandbox and legal review, and the AI Strategy and Implementation Plan 2023–2027 turns this into 68 projects across priority sectors. The National AI Code of Ethics (2022), which the Cabinet circulated to all government bodies for compliance, is the main responsible-AI instrument. Binding obligations come from the Personal Data Protection Law No. 24 of 2023 (in force March 2024), which covers profiling, and, for banks, the Central Bank of Jordan's AI Framework (July 2025). The Digital Transformation Strategy 2026–2028 makes data and AI a core axis of government digitalisation.",
+    "lead_institutions": [
+      "Ministry of Digital Economy and Entrepreneurship (MoDEE)",
+      "National Ministerial Committee for Artificial Intelligence",
+      "National Council for Entrepreneurship (AI strategy oversight)",
+      "Personal Data Protection Council",
+      "Central Bank of Jordan (CBJ)",
+      "National Cyber Security Center (NCSC)"
+    ],
+    "last_deep_review": "2026-10-06",
+    "review_notes": "Deep review 2026-10-06. Sources read directly: modee.gov.jo PDFs (AI Policy 2020 EN, AI Strategy 2023–2027 AR/EN, Code of Ethics bilingual, draft charter, PDPL official translation and 2025 presentation, DTS 2021–2025 and 2026–2028) and cbj.gov.jo PDFs (AI Framework, Sandbox Framework). modee.gov.jo list pages paginate through ASP.NET postbacks, so only the first page of 'Legislation and policies' could be read automatically; documents were located through the ministry AI page and search. The Official Gazette PDF for Law 24/2023 on doc.pm.gov.jo (DocuWare) returned 'resource removed' to automated reading; the gazette index page for issue 5881 was read. lob.gov.jo (Legislation and Opinion Bureau) search is script-driven and was not usable. Official sources disagree on the date of Cabinet Decision 659 approving the AI Policy (Arabic charter: 20/12/2020; English charter: 20 Feb 2020; Strategy: 20/12/2022); the Arabic date is recorded. No dated official page gives the Cabinet approval date of the AI Strategy. The CBJ sandbox is technology-neutral (recorded with that caveat). Out of scope and not recorded: Electronic Transactions (amendment) Law No. 3 of 2026 (no AI provisions found), MoDEE information-security and social-media policies, Digital Inclusion Policy 2025. Sweep: no AI law, AI bill or AI-specific regulation found by 2026-10-06; no NCSC, TRC, JSMO, procurement, health or education AI instruments found."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-0c751c6159de",
+      "jurisdiction_id": "JOR",
+      "authority_type": "ministry",
+      "government_level": "national",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "ai_governance_relevance": "Foundational AI policy; legal basis cited by the AI Strategy 2023–2027 and the National AI Code of Ethics.",
+      "official_webpage_url": "https://modee.gov.jo/ar/pages/aicustompage",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Official sources conflict on the Cabinet decision date (20/12/2020 vs 20/02/2020 vs 20/12/2022)",
+        "Arabic original PDF URL not located on modee.gov.jo"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "official_title": "السياسة الأردنية للذكاء الاصطناعي 2020",
+      "english_title": "Jordan Artificial Intelligence Policy 2020",
+      "issuing_authority": "Ministry of Digital Economy and Entrepreneurship (MoDEE)",
+      "categories": [
+        "strategy",
+        "government-governance"
+      ],
+      "legal_status": "national_strategy",
+      "lifecycle": "adopted",
+      "publication_date": "2020-12-20",
+      "current_status": "Approved by Council of Ministers Decision No. (659). The Arabic text of the National AI Code of Ethics dates the decision 20/12/2020; its English text says 20 February 2020 and the AI Strategy 2023–2027 says 20/12/2022. The Arabic (authentic) date 20/12/2020 is recorded. The Arabic PDF is not linked on the ministry AI page; the ministry's English version is used.",
+      "summary": "Jordan's first AI policy, setting the government's direction for AI across economic sectors under five pillars: governance, legislative and regulatory environment, digital infrastructure, business and investment environment, and capacity building. It creates a National Ministerial Committee for AI chaired by the Minister of Digital Economy, requires MoDEE to report annually and review the policy at least every four years, and calls for a national AI ethics charter, a regulatory sandbox and a review of government procurement rules to ease AI adoption.",
+      "language": "en",
+      "source_url": "https://modee.gov.jo/ebv4.0/root_storage/en/eb_list_page/ai_final_-_english_version.pdf",
+      "official_pdf_url": "https://modee.gov.jo/ebv4.0/root_storage/en/eb_list_page/ai_final_-_english_version.pdf",
+      "publisher_name": "Ministry of Digital Economy and Entrepreneurship (MoDEE)",
+      "category": "strategy",
+      "organization_id": "o-8dacdd281ce3",
+      "source_id": "s-dd747313ede3"
+    },
+    {
+      "id": "i-0f490db81be2",
+      "jurisdiction_id": "JOR",
+      "authority_type": "ministry",
+      "government_level": "national",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "ai_governance_relevance": "Current national AI strategy; sets the regulatory objective and the public-sector AI programme.",
+      "official_webpage_url": "https://modee.gov.jo/ar/pages/aicustompage",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-0c751c6159de"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Exact Cabinet approval date not stated on an official page"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "official_title": "الاستراتيجية الأردنية للذكاء الاصطناعي والخطة التنفيذية 2023-2027",
+      "english_title": "Jordan's Artificial Intelligence Strategy and Implementation Plan 2023–2027",
+      "issuing_authority": "Ministry of Digital Economy and Entrepreneurship (MoDEE)",
+      "categories": [
+        "strategy",
+        "public-sector",
+        "government-governance"
+      ],
+      "legal_status": "national_strategy",
+      "lifecycle": "adopted",
+      "publication_date": "2023",
+      "current_status": "Approved by the Council of Ministers (MoDEE news page 'الحكومة تقر الاستراتيجية الأردنية للذكاء الاصطناعي'), which gives no date. Draft put to public consultation from 8 July 2022. English version: https://modee.gov.jo/ebv4.0/root_storage/en/eb_homepage/40435648.pdf",
+      "summary": "Five-year national AI strategy with five objectives: building AI skills, encouraging AI research, improving the AI investment and entrepreneurship environment, ensuring a legislative and regulatory environment for safe AI deployment, and applying AI tools to raise public-sector and priority-sector efficiency. Its implementation plan lists 68 projects across sectors such as government services, health, education, energy, water, agriculture, transport, finance and cybersecurity. Implementation is supervised by the National Council for Entrepreneurship and a MoDEE strategy unit, with a steering committee of government, private-sector and academic representatives.",
+      "language": "ar",
+      "source_url": "https://www.modee.gov.jo/EBV4.0/Root_Storage/AR/ai_strategy_and_implementation_plan-_final.pdf",
+      "official_pdf_url": "https://www.modee.gov.jo/EBV4.0/Root_Storage/AR/ai_strategy_and_implementation_plan-_final.pdf",
+      "publisher_name": "Ministry of Digital Economy and Entrepreneurship (MoDEE)",
+      "category": "strategy",
+      "organization_id": "o-8dacdd281ce3",
+      "source_id": "s-fc1a583824c6"
+    },
+    {
+      "id": "i-876028538401",
+      "jurisdiction_id": "JOR",
+      "authority_type": "ministry",
+      "government_level": "national",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "ai_governance_relevance": "Core soft-law ethics instrument for AI developers, operators and government bodies.",
+      "official_webpage_url": "https://modee.gov.jo/ar/pages/aicustompage",
+      "supersedes": [
+        "i-8dc571898197"
+      ],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-0c751c6159de"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Exact Cabinet approval date (file name indicates 3 August 2022)"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "official_title": "الميثاق الوطني لأخلاقيات الذكاء الاصطناعي",
+      "english_title": "National Artificial Intelligence Code of Ethics",
+      "issuing_authority": "Ministry of Digital Economy and Entrepreneurship (MoDEE)",
+      "categories": [
+        "ethics",
+        "public-sector"
+      ],
+      "category": "ethics",
+      "legal_status": "administrative_policy_mandatory_in_scope",
+      "lifecycle": "adopted",
+      "publication_date": "2022",
+      "current_status": "MoDEE news item states the Council of Ministers approved the Charter and circulated it to all ministries, institutions and government departments for compliance. The final bilingual PDF file name says it was approved by the Prime Ministry on 3-8-2022; the date is not stated in the document text.",
+      "summary": "Bilingual (Arabic/English) code issued under the AI Policy 2020 setting ethical principles for the responsible use of AI: humanity and society, inclusiveness and justice, privacy and data, transparency, responsibility and accountability, reliability, integrity and non-fakeness, and environmental sustainability (green AI). It also sets principles for virtual environments and the metaverse and for AI research ethics. It addresses developers, users, operators and investors in the public and private sectors; government bodies were directed by the Cabinet to comply with it.",
+      "language": "ar",
+      "source_url": "https://www.modee.gov.jo/ebv4.0/root_storage/ar/eb_homepage/%D8%A7%D9%84%D9%86%D8%B3%D8%AE%D8%A9_%D8%A7%D9%84%D9%86%D9%87%D8%A7%D8%A6%D9%8A%D8%A9_-_%D9%85%D9%8A%D8%AB%D8%A7%D9%82_%D8%A7%D9%84%D8%A7%D8%AE%D9%84%D8%A7%D9%82%D9%8A%D8%A7%D8%AA_-_%D8%A7%D9%84%D9%85%D9%82%D8%B1%D8%A9_%D9%85%D9%86_%D8%A7%D9%84%D8%B1%D8%A6%D8%A7%D8%B3%D8%A93-8-2022_%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9_%D9%88%D8%A7%D9%84%D8%A7%D9%86%D8%AC%D9%84%D9%8A%D8%B2%D9%8A%D8%A9_%281%29.pdf",
+      "publisher_name": "Ministry of Digital Economy and Entrepreneurship (MoDEE)",
+      "official_pdf_url": "https://www.modee.gov.jo/ebv4.0/root_storage/ar/eb_homepage/%D8%A7%D9%84%D9%86%D8%B3%D8%AE%D8%A9_%D8%A7%D9%84%D9%86%D9%87%D8%A7%D8%A6%D9%8A%D8%A9_-_%D9%85%D9%8A%D8%AB%D8%A7%D9%82_%D8%A7%D9%84%D8%A7%D8%AE%D9%84%D8%A7%D9%82%D9%8A%D8%A7%D8%AA_-_%D8%A7%D9%84%D9%85%D9%82%D8%B1%D8%A9_%D9%85%D9%86_%D8%A7%D9%84%D8%B1%D8%A6%D8%A7%D8%B3%D8%A93-8-2022_%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9_%D9%88%D8%A7%D9%84%D8%A7%D9%86%D8%AC%D9%84%D9%8A%D8%B2%D9%8A%D8%A9_%281%29.pdf",
+      "organization_id": "o-8dacdd281ce3",
+      "source_id": "s-0e2d48420022"
+    },
+    {
+      "id": "i-8dc571898197",
+      "jurisdiction_id": "JOR",
+      "authority_type": "ministry",
+      "government_level": "national",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "ai_governance_relevance": null,
+      "official_webpage_url": null,
+      "supersedes": [],
+      "superseded_by": [
+        "i-876028538401"
+      ],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Exact consultation opening date"
+      ],
+      "source_kind": "consultation_portal",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "official_title": "مسودة الميثاق الوطني لأخلاقيات الذكاء الاصطناعي",
+      "english_title": "Draft National Charter of Ethics for Artificial Intelligence (public consultation)",
+      "issuing_authority": "Ministry of Digital Economy and Entrepreneurship (MoDEE)",
+      "categories": [
+        "drafts",
+        "historical",
+        "ethics"
+      ],
+      "category": "drafts",
+      "legal_status": "consultation_draft",
+      "lifecycle": "superseded",
+      "publication_date": "2022-02",
+      "current_status": "Posted on MoDEE's public consultation list with comments due by Tuesday 1/3/2022; replaced by the final National AI Code of Ethics (2022).",
+      "summary": "Consultation draft of the national AI ethics charter, published by MoDEE for public comment with a deadline of 1 March 2022. It set out the legal reference, target groups and draft principles for the responsible use of AI (humanity and society, inclusiveness and justice, privacy and others). Kept for the timeline; the adopted Code of Ethics supersedes it.",
+      "language": "ar",
+      "source_url": "https://www.modee.gov.jo/AR/ListDetails/%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A7%D8%AA_%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9_%D9%88%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA/15/62",
+      "official_pdf_url": "https://modee.gov.jo/EBV4.0/Root_Storage/EN/sanadapp/%D8%A7%D9%84%D9%85%D9%8A%D8%AB%D8%A7%D9%82_%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A_%D9%84%D8%A3%D8%AE%D9%84%D8%A7%D9%82%D9%8A%D8%A7%D8%AA_%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1_%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A.pdf",
+      "publisher_name": "Ministry of Digital Economy and Entrepreneurship (MoDEE)",
+      "organization_id": "o-8dacdd281ce3",
+      "source_id": "s-e79ab140fd74"
+    },
+    {
+      "id": "i-2ed42381df8b",
+      "jurisdiction_id": "JOR",
+      "authority_type": "ministry",
+      "government_level": "national",
+      "subcategory": null,
+      "effective_date": "2024-03-17",
+      "last_amended_date": null,
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "personal data",
+        "automated processing"
+      ],
+      "ai_governance_relevance": "Binding rules on data used to train and run AI systems, including profiling and automated processing.",
+      "official_webpage_url": "https://www.pm.gov.jo/Ar/Pages/NewsPaperDetails/5881",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Gazette PDF on doc.pm.gov.jo (DocuWare) could not be opened by automated reading"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "official_title": "قانون حماية البيانات الشخصية رقم (24) لسنة 2023",
+      "english_title": "Personal Data Protection Law No. (24) of 2023",
+      "issuing_authority": "Hashemite Kingdom of Jordan (Parliament; promulgated by Royal Decree)",
+      "publisher_name": "Ministry of Digital Economy and Entrepreneurship (MoDEE)",
+      "categories": [
+        "data-privacy"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2023-09-17",
+      "current_status": "Published in Official Gazette No. 5881 (gazette index: https://www.pm.gov.jo/Ar/Pages/NewsPaperDetails/5881). MoDEE's official PDPL presentation (2025) gives issue 17/9/2023, entry into force 17/3/2024 and end of the compliance period 17/3/2025. Source is MoDEE's stamped official bilingual translation.",
+      "summary": "Jordan's general data protection law, binding on controllers and processors of personal data inside and outside the Kingdom. It requires prior consent or another legal basis for processing, defines profiling as automated processing to identify a person's trends, preferences or behaviour, and gives data subjects rights including to object to processing and profiling that is unnecessary, excessive or discriminatory. It creates a Personal Data Protection Council and a regulatory unit in MoDEE, and gave existing processors one year after entry into force to comply.",
+      "language": "ar",
+      "source_url": "https://www.modee.gov.jo/EBV4.0/Root_Storage/EN/1/PDP_Law_-_English_Version-_officail_translation.pdf",
+      "official_pdf_url": "https://www.modee.gov.jo/EBV4.0/Root_Storage/EN/1/PDP_Law_-_English_Version-_officail_translation.pdf",
+      "category": "data-privacy",
+      "organization_id": "o-8dacdd281ce3",
+      "source_id": "s-73a20c55f6a5"
+    },
+    {
+      "id": "i-0023488d2266",
+      "jurisdiction_id": "JOR",
+      "authority_type": "central_bank",
+      "government_level": "national",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": null,
+      "sectors": [
+        "banking",
+        "finance"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "ai_governance_relevance": "First sector-regulator AI framework in Jordan.",
+      "official_webpage_url": null,
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Exact issue day; accompanying CBJ circular (if any) not located",
+        "Arabic version not located"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "official_title": "Artificial Intelligence Framework for the Banking and Financial Sectors in Jordan (Version 1.0)",
+      "english_title": "CBJ Artificial Intelligence Framework for the Banking Sector in Jordan (v1.0, July 2025)",
+      "issuing_authority": "Central Bank of Jordan (CBJ)",
+      "categories": [
+        "sectoral",
+        "risk-assurance",
+        "ethics"
+      ],
+      "category": "sectoral",
+      "legal_status": "administrative_policy_mandatory_in_scope",
+      "lifecycle": "published",
+      "publication_date": "2025-07",
+      "current_status": "Version 1.0 dated July 2025 on the cover; hosted in CBJ's FinCert storage area. The document does not state its own legal force or an effective date. Recorded as mandatory in scope: the text uses \"must\" for CBJ-regulated banks.",
+      "summary": "Central Bank framework for AI used by CBJ-regulated banking institutions, whether developed in-house, procured or outsourced. It sets expectations on AI governance and oversight with a risk-based approach, ethical principles (fairness, explainability, bias mitigation) and customers' right to opt out of automated decisions where appropriate, data privacy and quality, secure development with validation, testing, monitoring and human oversight, AI incident response and business continuity, and third-party risk management.",
+      "language": "en",
+      "source_url": "https://www.cbj.gov.jo/EBV4.0/Root_Storage/AR/FinCert/Ai-Framework_English_Version.pdf",
+      "official_pdf_url": "https://www.cbj.gov.jo/EBV4.0/Root_Storage/AR/FinCert/Ai-Framework_English_Version.pdf",
+      "publisher_name": "Central Bank of Jordan (CBJ)",
+      "organization_id": "o-6acb29ff6618",
+      "source_id": "s-3708dfd74aa1"
+    },
+    {
+      "id": "i-1abc8f555f12",
+      "jurisdiction_id": "JOR",
+      "authority_type": "central_bank",
+      "government_level": "national",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": null,
+      "sectors": [
+        "banking",
+        "payments",
+        "insurance",
+        "finance"
+      ],
+      "technology_scope": [
+        "FinTech",
+        "digital financial solutions"
+      ],
+      "ai_governance_relevance": null,
+      "official_webpage_url": "https://www.cbj.gov.jo/EN/Pages/Regulatory_laboratory",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Exact issue day"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "official_title": "Regulatory Sandbox Framework (FinTech and Innovation Regulatory Sandbox – JoRegBox)",
+      "english_title": "CBJ Regulatory Sandbox Framework (December 2023)",
+      "issuing_authority": "Central Bank of Jordan (CBJ)",
+      "categories": [
+        "sandbox",
+        "sectoral"
+      ],
+      "legal_status": "administrative_guideline",
+      "lifecycle": "published",
+      "publication_date": "2023-12",
+      "current_status": "Technology-neutral: covers all innovative digital financial solutions; AI is not named explicitly. Recorded because it is the only operating regulatory sandbox in Jordan and AI-based financial solutions fall within its scope of 'innovative digital solutions'.",
+      "summary": "Sets the rules of the Central Bank's FinTech and Innovation Regulatory Sandbox: objectives, principles, eligible applicants (licensed banks, fintech startups inside or outside Jordan, university- and government-owned fintechs), eligible activities (banking, insurance, payments, lending, RegTech, SupTech, RiskTech), admission criteria and the stages of testing, normally up to six months. It is technology-neutral and does not refer to AI specifically.",
+      "language": "en",
+      "source_url": "https://www.cbj.gov.jo/EBV4.0/Root_Storage/AR/FinTech/regulatory_sandbox_framework.pdf",
+      "official_pdf_url": "https://www.cbj.gov.jo/EBV4.0/Root_Storage/AR/FinTech/regulatory_sandbox_framework.pdf",
+      "publisher_name": "Central Bank of Jordan (CBJ)",
+      "category": "sandbox",
+      "organization_id": "o-6acb29ff6618",
+      "source_id": "s-43dce40181bd"
+    },
+    {
+      "id": "i-e579b84e4405",
+      "jurisdiction_id": "JOR",
+      "authority_type": "ministry",
+      "government_level": "national",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "ai_governance_relevance": "Current digital strategy with an AI pillar and public-sector AI projects.",
+      "official_webpage_url": "https://www.modee.gov.jo/En/List/Legislation_and_policies",
+      "supersedes": [
+        "i-619b6963e226"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Cabinet ratification date"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "official_title": "الاستراتيجية الأردنية للتحول الرقمي والخطة التنفيذية 2026-2028",
+      "english_title": "Jordanian Digital Transformation Strategy and Implementation Plan 2026–2028",
+      "issuing_authority": "Ministry of Digital Economy and Entrepreneurship (MoDEE)",
+      "categories": [
+        "strategy",
+        "public-sector"
+      ],
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2025-12",
+      "current_status": "Listed under MoDEE 'Legislation and policies'. The text notes final KPIs will be approved after the strategy is ratified; no official ratification date located. Publication month taken from the PDF (December 2025). Arabic version also on modee.gov.jo.",
+      "summary": "National digital strategy for 2026–2028 that builds on the 2021–2025 strategy and lists 'leveraging data, artificial intelligence and advanced technologies' as a core axis. It plans AI use in government services, including AI agents for real-time interactive support to users, and an initiative to raise AI awareness among 15,000 government employees, alongside digital infrastructure, digital trust, privacy and skills programmes.",
+      "language": "en",
+      "source_url": "https://www.modee.gov.jo/ebv4.0/root_storage/en/eb_list_page/jordanian_digital_transformation_strategy_and_the_implementation_plan_2026-2028.pdf",
+      "official_pdf_url": "https://www.modee.gov.jo/ebv4.0/root_storage/en/eb_list_page/jordanian_digital_transformation_strategy_and_the_implementation_plan_2026-2028.pdf",
+      "publisher_name": "Ministry of Digital Economy and Entrepreneurship (MoDEE)",
+      "category": "strategy",
+      "organization_id": "o-8dacdd281ce3",
+      "source_id": "s-456bed8a4adf"
+    },
+    {
+      "id": "i-619b6963e226",
+      "jurisdiction_id": "JOR",
+      "authority_type": "ministry",
+      "government_level": "national",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "ai_governance_relevance": null,
+      "official_webpage_url": null,
+      "supersedes": [],
+      "superseded_by": [
+        "i-e579b84e4405"
+      ],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-06",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "official_title": "National Digital Transformation Strategy & Implementation Plan 2021–2025",
+      "english_title": "National Digital Transformation Strategy & Implementation Plan 2021–2025",
+      "issuing_authority": "Ministry of Digital Economy and Entrepreneurship (MoDEE)",
+      "categories": [
+        "historical",
+        "strategy"
+      ],
+      "category": "historical",
+      "legal_status": "national_strategy",
+      "lifecycle": "superseded",
+      "publication_date": "2021",
+      "current_status": "Plan period ended 2025; the 2026–2028 strategy states it was prepared after assessing this strategy's achievements and succeeds it.",
+      "summary": "MoDEE's digital transformation strategy for 2021–2025, covering digital skills, government digital services, digital payments and infrastructure. It identifies AI, cloud and the Internet of Things as emerging technologies to adopt and frames AI as a driver of change in production. Kept for the timeline.",
+      "language": "en",
+      "source_url": "https://www.modee.gov.jo/ebv4.0/root_storage/en/eb_list_page/dts-2021-eng.pdf",
+      "official_pdf_url": "https://www.modee.gov.jo/ebv4.0/root_storage/en/eb_list_page/dts-2021-eng.pdf",
+      "publisher_name": "Ministry of Digital Economy and Entrepreneurship (MoDEE)",
+      "organization_id": "o-8dacdd281ce3",
+      "source_id": "s-4340860c60a4"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-8dacdd281ce3",
+      "jurisdiction_id": "JOR",
+      "name": "Ministry of Digital Economy and Entrepreneurship (MoDEE)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Lead ministry for AI policy: drafted the AI Policy 2020, the AI Strategy 2023–2027 and the National AI Code of Ethics; hosts the Personal Data Protection Unit and the secretariat of the Personal Data Protection Council under Law No. 24 of 2023.",
+      "source_url": "https://www.modee.gov.jo",
+      "authority_type": "ministry",
+      "government_level": "national"
+    },
+    {
+      "id": "o-6acb29ff6618",
+      "jurisdiction_id": "JOR",
+      "name": "Central Bank of Jordan (CBJ)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Banking and payments regulator; issued the AI Framework for the banking sector (2025) and runs the FinTech regulatory sandbox (JoRegBox).",
+      "source_url": "https://www.cbj.gov.jo",
+      "authority_type": "central_bank",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-dd747313ede3",
+      "url": "https://modee.gov.jo/ebv4.0/root_storage/en/eb_list_page/ai_final_-_english_version.pdf",
+      "jurisdiction_ids": [
+        "JOR"
+      ],
+      "source_institutions": [
+        "Ministry of Digital Economy and Entrepreneurship (MoDEE)"
+      ],
+      "instrument_ids": [
+        "i-0c751c6159de"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "government-governance"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Downloaded and read the official document (curl + pdftotext)",
+      "http_status": 200,
+      "final_url": "https://modee.gov.jo/ebv4.0/root_storage/en/eb_list_page/ai_final_-_english_version.pdf",
+      "link_status": "reachable",
+      "page_title": "السياسة الأردنية للذكاء الاصطناعي 2020",
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-fc1a583824c6",
+      "url": "https://www.modee.gov.jo/EBV4.0/Root_Storage/AR/ai_strategy_and_implementation_plan-_final.pdf",
+      "jurisdiction_ids": [
+        "JOR"
+      ],
+      "source_institutions": [
+        "Ministry of Digital Economy and Entrepreneurship (MoDEE)"
+      ],
+      "instrument_ids": [
+        "i-0f490db81be2"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "public-sector",
+        "government-governance"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Downloaded and read the official document (curl + pdftotext)",
+      "http_status": 200,
+      "final_url": "https://www.modee.gov.jo/EBV4.0/Root_Storage/AR/ai_strategy_and_implementation_plan-_final.pdf",
+      "link_status": "reachable",
+      "page_title": "الاستراتيجية الأردنية للذكاء الاصطناعي والخطة التنفيذية 2023-2027",
+      "document_language": "ar",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-0e2d48420022",
+      "url": "https://www.modee.gov.jo/ebv4.0/root_storage/ar/eb_homepage/%D8%A7%D9%84%D9%86%D8%B3%D8%AE%D8%A9_%D8%A7%D9%84%D9%86%D9%87%D8%A7%D8%A6%D9%8A%D8%A9_-_%D9%85%D9%8A%D8%AB%D8%A7%D9%82_%D8%A7%D9%84%D8%A7%D8%AE%D9%84%D8%A7%D9%82%D9%8A%D8%A7%D8%AA_-_%D8%A7%D9%84%D9%85%D9%82%D8%B1%D8%A9_%D9%85%D9%86_%D8%A7%D9%84%D8%B1%D8%A6%D8%A7%D8%B3%D8%A93-8-2022_%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9_%D9%88%D8%A7%D9%84%D8%A7%D9%86%D8%AC%D9%84%D9%8A%D8%B2%D9%8A%D8%A9_%281%29.pdf",
+      "jurisdiction_ids": [
+        "JOR"
+      ],
+      "source_institutions": [
+        "Ministry of Digital Economy and Entrepreneurship (MoDEE)"
+      ],
+      "instrument_ids": [
+        "i-876028538401"
+      ],
+      "categories_reviewed": [
+        "ethics",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Downloaded and read the official document (curl + pdftotext)",
+      "http_status": 200,
+      "final_url": "https://www.modee.gov.jo/ebv4.0/root_storage/ar/eb_homepage/%D8%A7%D9%84%D9%86%D8%B3%D8%AE%D8%A9_%D8%A7%D9%84%D9%86%D9%87%D8%A7%D8%A6%D9%8A%D8%A9_-_%D9%85%D9%8A%D8%AB%D8%A7%D9%82_%D8%A7%D9%84%D8%A7%D8%AE%D9%84%D8%A7%D9%82%D9%8A%D8%A7%D8%AA_-_%D8%A7%D9%84%D9%85%D9%82%D8%B1%D8%A9_%D9%85%D9%86_%D8%A7%D9%84%D8%B1%D8%A6%D8%A7%D8%B3%D8%A93-8-2022_%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9_%D9%88%D8%A7%D9%84%D8%A7%D9%86%D8%AC%D9%84%D9%8A%D8%B2%D9%8A%D8%A9_%281%29.pdf",
+      "link_status": "reachable",
+      "page_title": "الميثاق الوطني لأخلاقيات الذكاء الاصطناعي",
+      "document_language": "ar",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-e79ab140fd74",
+      "url": "https://www.modee.gov.jo/AR/ListDetails/%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A7%D8%AA_%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9_%D9%88%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA/15/62",
+      "jurisdiction_ids": [
+        "JOR"
+      ],
+      "source_institutions": [
+        "Ministry of Digital Economy and Entrepreneurship (MoDEE)"
+      ],
+      "instrument_ids": [
+        "i-8dc571898197"
+      ],
+      "categories_reviewed": [
+        "drafts",
+        "historical",
+        "ethics"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Opened the official page and its linked download",
+      "http_status": 200,
+      "final_url": "https://www.modee.gov.jo/AR/ListDetails/%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A7%D8%AA_%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9_%D9%88%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA/15/62",
+      "link_status": "reachable",
+      "page_title": "مسودة الميثاق الوطني لأخلاقيات الذكاء الاصطناعي",
+      "document_language": "ar",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-73a20c55f6a5",
+      "url": "https://www.modee.gov.jo/EBV4.0/Root_Storage/EN/1/PDP_Law_-_English_Version-_officail_translation.pdf",
+      "jurisdiction_ids": [
+        "JOR"
+      ],
+      "source_institutions": [
+        "Ministry of Digital Economy and Entrepreneurship (MoDEE)"
+      ],
+      "instrument_ids": [
+        "i-2ed42381df8b"
+      ],
+      "categories_reviewed": [
+        "data-privacy"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Downloaded and read the official document (curl + pdftotext)",
+      "http_status": 200,
+      "final_url": "https://www.modee.gov.jo/EBV4.0/Root_Storage/EN/1/PDP_Law_-_English_Version-_officail_translation.pdf",
+      "link_status": "reachable",
+      "page_title": "قانون حماية البيانات الشخصية رقم (24) لسنة 2023",
+      "document_language": "ar",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-3708dfd74aa1",
+      "url": "https://www.cbj.gov.jo/EBV4.0/Root_Storage/AR/FinCert/Ai-Framework_English_Version.pdf",
+      "jurisdiction_ids": [
+        "JOR"
+      ],
+      "source_institutions": [
+        "Central Bank of Jordan (CBJ)"
+      ],
+      "instrument_ids": [
+        "i-0023488d2266"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "risk-assurance",
+        "ethics"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Downloaded and read the official document (curl + pdftotext)",
+      "http_status": 200,
+      "final_url": "https://www.cbj.gov.jo/EBV4.0/Root_Storage/AR/FinCert/Ai-Framework_English_Version.pdf",
+      "link_status": "reachable",
+      "page_title": "Artificial Intelligence Framework for the Banking and Financial Sectors in Jordan (Version 1.0)",
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-43dce40181bd",
+      "url": "https://www.cbj.gov.jo/EBV4.0/Root_Storage/AR/FinTech/regulatory_sandbox_framework.pdf",
+      "jurisdiction_ids": [
+        "JOR"
+      ],
+      "source_institutions": [
+        "Central Bank of Jordan (CBJ)"
+      ],
+      "instrument_ids": [
+        "i-1abc8f555f12"
+      ],
+      "categories_reviewed": [
+        "sandbox",
+        "sectoral"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Downloaded and read the official document (curl + pdftotext)",
+      "http_status": 200,
+      "final_url": "https://www.cbj.gov.jo/EBV4.0/Root_Storage/AR/FinTech/regulatory_sandbox_framework.pdf",
+      "link_status": "reachable",
+      "page_title": "Regulatory Sandbox Framework (FinTech and Innovation Regulatory Sandbox – JoRegBox)",
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-456bed8a4adf",
+      "url": "https://www.modee.gov.jo/ebv4.0/root_storage/en/eb_list_page/jordanian_digital_transformation_strategy_and_the_implementation_plan_2026-2028.pdf",
+      "jurisdiction_ids": [
+        "JOR"
+      ],
+      "source_institutions": [
+        "Ministry of Digital Economy and Entrepreneurship (MoDEE)"
+      ],
+      "instrument_ids": [
+        "i-e579b84e4405"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Downloaded and read the official document (curl + pdftotext)",
+      "http_status": 200,
+      "final_url": "https://www.modee.gov.jo/ebv4.0/root_storage/en/eb_list_page/jordanian_digital_transformation_strategy_and_the_implementation_plan_2026-2028.pdf",
+      "link_status": "reachable",
+      "page_title": "الاستراتيجية الأردنية للتحول الرقمي والخطة التنفيذية 2026-2028",
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-4340860c60a4",
+      "url": "https://www.modee.gov.jo/ebv4.0/root_storage/en/eb_list_page/dts-2021-eng.pdf",
+      "jurisdiction_ids": [
+        "JOR"
+      ],
+      "source_institutions": [
+        "Ministry of Digital Economy and Entrepreneurship (MoDEE)"
+      ],
+      "instrument_ids": [
+        "i-619b6963e226"
+      ],
+      "categories_reviewed": [
+        "historical",
+        "strategy"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Downloaded and read the official document (curl + pdftotext)",
+      "http_status": 200,
+      "final_url": "https://www.modee.gov.jo/ebv4.0/root_storage/en/eb_list_page/dts-2021-eng.pdf",
+      "link_status": "reachable",
+      "page_title": "National Digital Transformation Strategy & Implementation Plan 2021–2025",
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "JOR",
     "country": "Jordan",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
-    "categories_searched": [
-      "strategy",
-      "government-governance",
-      "ethics",
-      "public-sector",
-      "procurement",
-      "cyber-security",
+    "review_status": "DEEP REVIEW COMPLETE",
+    "categories_searched": {
+      "binding-law": "Laws & regulations",
+      "strategy": "Strategy & action plans",
+      "government-governance": "Government AI governance",
+      "ethics": "Responsible AI & ethics",
+      "risk-assurance": "Risk & assurance",
+      "public-sector": "Public-sector AI",
+      "procurement": "AI procurement",
+      "cyber-security": "Safety & cybersecurity",
+      "data-privacy": "Data & privacy",
+      "transparency": "Transparency & accountability",
+      "standards": "Standards & certification",
+      "sandbox": "Regulatory sandboxes",
+      "index-readiness": "Indices & maturity",
+      "sectoral": "Sectoral governance",
+      "generative-ai": "Generative & agentic AI",
+      "drafts": "Drafts & consultations",
+      "international": "Regional & international",
+      "historical": "Historical publications"
+    },
+    "categories_with_findings": [
       "data-privacy",
+      "drafts",
+      "ethics",
+      "government-governance",
+      "historical",
+      "public-sector",
       "risk-assurance",
-      "transparency"
+      "sandbox",
+      "sectoral",
+      "strategy"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_where_no_material_was_found": [
       "binding-law",
-      "strategy",
-      "government-governance",
-      "ethics",
-      "risk-assurance",
-      "public-sector",
       "procurement",
       "cyber-security",
-      "data-privacy",
       "transparency",
       "standards",
-      "sandbox",
       "index-readiness",
-      "sectoral",
       "generative-ai",
-      "drafts",
-      "international",
-      "historical"
+      "international"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Jordan \"الذكاء الاصطناعي\" (استراتيجية OR تنظيم OR أخلاقيات) government ministry official",
       "Jordan \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Jordan government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Jordan \"الذكاء الاصطناعي\" cybersecurity authority secure development safety guidelines",
-      "Jordan privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Jordan privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "modee.gov.jo AI page (ar/en): aicustompage",
+      "السياسة الأردنية للذكاء الاصطناعي 2020 pdf modee.gov.jo",
+      "Jordan Artificial Intelligence Policy 2020 Cabinet decision 659",
+      "الاستراتيجية الأردنية للذكاء الاصطناعي والخطة التنفيذية 2023-2027",
+      "modee.gov.jo Cabinet approves Jordanian Artificial Intelligence Strategy and Implementation Plan 2023-2027 date",
+      "الميثاق الوطني لأخلاقيات الذكاء الاصطناعي مسودة استشارة عامة",
+      "National Artificial Intelligence Code of Ethics Jordan",
+      "modee.gov.jo Personal Data Protection Law No. 24 of 2023 pdf English",
+      "lob.gov.jo قانون حماية البيانات الشخصية رقم 24 لسنة 2023 الجريدة الرسمية 5881 تاريخ",
+      "pm.gov.jo الجريدة الرسمية العدد 5881",
+      "cbj.gov.jo Artificial Intelligence Framework for Banking Sector in Jordan pdf",
+      "cbj.gov.jo Regulatory Sandbox Framework December 2023 pdf",
+      "modee.gov.jo \"Digital Transformation Strategy\" 2026-2028 pdf",
+      "modee.gov.jo dts-2021-eng.pdf National Digital Transformation Strategy 2021-2025",
+      "المركز الوطني للأمن السيبراني الأردن الذكاء الاصطناعي دليل إرشادي ncsc.jo",
+      "قانون معدل لقانون الأمن السيبراني لسنة 2025 الجريدة الرسمية صدور الذكاء الاصطناعي",
+      "هيئة تنظيم قطاع الاتصالات الأردن الذكاء الاصطناعي trc.gov.jo",
+      "Jordan JSMO ISO/IEC 42001 adopted Jordanian standard artificial intelligence",
+      "Jordan government generative AI guidelines public sector employees modee 2025",
+      "مشروع قانون الذكاء الاصطناعي الأردن 2026 مسودة",
+      "Jordan Ministry of Health OR Ministry of Education artificial intelligence policy guidelines official 2025 2026 Jordan",
+      "site:modee.gov.jo الذكاء الاصطناعي دليل OR إطار OR سياسة pdf 2025",
+      "modee.gov.jo Legislation_and_policies / Guidelines_and_Standards / Public consultations lists",
+      "tawasal.gov.jo consultations الذكاء الاصطناعي"
     ],
     "review_date": "2026-10-06",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
-    "discovery_result_count": 9,
-    "focused_result_count": 12
+    "no_material_found_note": "Searched MoDEE, Official Gazette index, lob.gov.jo, NCSC, TRC, JSMO, CBJ, Government Procurement Department, Ministries of Health and Education and the Tawasal consultation portal in Arabic and English. No AI-specific law, public-sector AI rules beyond the strategy and code, AI procurement guidance, NCSC AI security guidance, transparency/algorithm register, national AI standard adoption (e.g. ISO/IEC 42001), government-published AI readiness index, generative-AI-specific guidance or AI treaty signature was found. UNESCO's Recommendation is held in data/regional/UNESCO.json.",
+    "discovery_result_count": 24,
+    "focused_result_count": 9
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-0830a84e37d0",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "JOR",
+      "instrument_id": "i-0c751c6159de",
+      "title": "Jordan Artificial Intelligence Policy 2020",
+      "detail": "Added to the radar (published 2020-12-20).",
+      "from": null,
+      "to": null,
+      "source_url": "https://modee.gov.jo/ebv4.0/root_storage/en/eb_list_page/ai_final_-_english_version.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-704a4fa3f2ea",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "JOR",
+      "instrument_id": "i-0f490db81be2",
+      "title": "Jordan's Artificial Intelligence Strategy and Implementation Plan 2023–2027",
+      "detail": "Added to the radar (published 2023).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.modee.gov.jo/EBV4.0/Root_Storage/AR/ai_strategy_and_implementation_plan-_final.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-44939d87074c",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "JOR",
+      "instrument_id": "i-876028538401",
+      "title": "National Artificial Intelligence Code of Ethics",
+      "detail": "Added to the radar (published 2022).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.modee.gov.jo/ebv4.0/root_storage/ar/eb_homepage/%D8%A7%D9%84%D9%86%D8%B3%D8%AE%D8%A9_%D8%A7%D9%84%D9%86%D9%87%D8%A7%D8%A6%D9%8A%D8%A9_-_%D9%85%D9%8A%D8%AB%D8%A7%D9%82_%D8%A7%D9%84%D8%A7%D8%AE%D9%84%D8%A7%D9%82%D9%8A%D8%A7%D8%AA_-_%D8%A7%D9%84%D9%85%D9%82%D8%B1%D8%A9_%D9%85%D9%86_%D8%A7%D9%84%D8%B1%D8%A6%D8%A7%D8%B3%D8%A93-8-2022_%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9_%D9%88%D8%A7%D9%84%D8%A7%D9%86%D8%AC%D9%84%D9%8A%D8%B2%D9%8A%D8%A9_%281%29.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-2ab0c00c6c94",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "JOR",
+      "instrument_id": "i-8dc571898197",
+      "title": "Draft National Charter of Ethics for Artificial Intelligence (public consultation)",
+      "detail": "Added to the radar (published 2022-02).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.modee.gov.jo/AR/ListDetails/%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A7%D8%AA_%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9_%D9%88%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA/15/62",
+      "needs_review": false
+    },
+    {
+      "id": "c-697b66db13ee",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "JOR",
+      "instrument_id": "i-2ed42381df8b",
+      "title": "Personal Data Protection Law No. (24) of 2023",
+      "detail": "Added to the radar (published 2023-09-17).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.modee.gov.jo/EBV4.0/Root_Storage/EN/1/PDP_Law_-_English_Version-_officail_translation.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-b4cc94fc8696",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "JOR",
+      "instrument_id": "i-0023488d2266",
+      "title": "CBJ Artificial Intelligence Framework for the Banking Sector in Jordan (v1.0, July 2025)",
+      "detail": "Added to the radar (published 2025-07).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.cbj.gov.jo/EBV4.0/Root_Storage/AR/FinCert/Ai-Framework_English_Version.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-2d62ca67a7d6",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "JOR",
+      "instrument_id": "i-1abc8f555f12",
+      "title": "CBJ Regulatory Sandbox Framework (December 2023)",
+      "detail": "Added to the radar (published 2023-12).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.cbj.gov.jo/EBV4.0/Root_Storage/AR/FinTech/regulatory_sandbox_framework.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-81d387b9db9c",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "JOR",
+      "instrument_id": "i-e579b84e4405",
+      "title": "Jordanian Digital Transformation Strategy and Implementation Plan 2026–2028",
+      "detail": "Added to the radar (published 2025-12).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.modee.gov.jo/ebv4.0/root_storage/en/eb_list_page/jordanian_digital_transformation_strategy_and_the_implementation_plan_2026-2028.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-aff9f594adb4",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "JOR",
+      "instrument_id": "i-619b6963e226",
+      "title": "National Digital Transformation Strategy & Implementation Plan 2021–2025",
+      "detail": "Added to the radar (published 2021).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.modee.gov.jo/ebv4.0/root_storage/en/eb_list_page/dts-2021-eng.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-6b843a660b2b",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "JOR",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 9 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-f736eebb95b2",
+      "date": "2024-03-17",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "JOR",
+      "instrument_id": "i-2ed42381df8b",
+      "title": "Personal Data Protection Law No. 24 of 2023 enters into force",
+      "detail": "Six months after gazette publication (Art. 1); compliance period for existing processing ended 17 March 2025.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.modee.gov.jo/EBV4.0/Root_Storage/AR/PDPL_Presentation_Website_2025.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-6c6fa13b1852",
+      "date": "2023-09-17",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "JOR",
+      "instrument_id": "i-2ed42381df8b",
+      "title": "Personal Data Protection Law No. 24 of 2023 published in Official Gazette No. 5881",
+      "detail": "Dates per MoDEE official PDPL presentation (2025) and gazette issue 5881 index.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.modee.gov.jo/EBV4.0/Root_Storage/AR/PDPL_Presentation_Website_2025.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-b4831b395a63",
+      "date": "2020-12-20",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "JOR",
+      "instrument_id": "i-0c751c6159de",
+      "title": "Jordan AI Policy 2020 approved by Cabinet (Decision No. 659)",
+      "detail": "Date from the Arabic text of the National AI Code of Ethics; other official texts give 20 Feb 2020 or 20/12/2022.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.modee.gov.jo/ebv4.0/root_storage/ar/eb_homepage/%D8%A7%D9%84%D9%86%D8%B3%D8%AE%D8%A9_%D8%A7%D9%84%D9%86%D9%87%D8%A7%D8%A6%D9%8A%D8%A9_-_%D9%85%D9%8A%D8%AB%D8%A7%D9%82_%D8%A7%D9%84%D8%A7%D8%AE%D9%84%D8%A7%D9%82%D9%8A%D8%A7%D8%AA_-_%D8%A7%D9%84%D9%85%D9%82%D8%B1%D8%A9_%D9%85%D9%86_%D8%A7%D9%84%D8%B1%D8%A6%D8%A7%D8%B3%D8%A93-8-2022_%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9_%D9%88%D8%A7%D9%84%D8%A7%D9%86%D8%AC%D9%84%D9%8A%D8%B2%D9%8A%D8%A9_%281%29.pdf",
+      "needs_review": true
+    }
+  ],
+  "leads": [
+    {
+      "title": "قانون معدل لقانون الأمن السيبراني لسنة 2025",
+      "english_title": "Draft Cybersecurity (Amendment) Law 2025",
+      "issuing_authority": "National Cyber Security Center (NCSC)",
+      "note": "Put to public consultation on the Tawasal portal 12–26 June 2025 (NCSC news page); its stated aims include using AI and IoT. Draft text not downloadable from an official page; no gazette publication found by 2026-10-06. Add if published and if it contains AI provisions.",
+      "found": "2026-10-06"
+    },
+    {
+      "title": "قرار مجلس الوزراء بتشكيل اللجنة الوزارية الوطنية للذكاء الاصطناعي",
+      "english_title": "Cabinet decision forming the National Ministerial Committee for AI / National Steering Committee for AI",
+      "issuing_authority": "Council of Ministers",
+      "note": "Required by the AI Policy 2020 and shown on the MoDEE AI page (governance model); no official text of the founding decision located.",
+      "found": "2026-10-06"
+    },
+    {
+      "title": "مشروع تقييم جاهزية الذكاء الاصطناعي (AIRA)",
+      "english_title": "Artificial Intelligence Readiness Assessment Project (AIRA)",
+      "issuing_authority": "Ministry of Digital Economy and Entrepreneurship (MoDEE)",
+      "note": "Listed on the MoDEE AI page; no published assessment report located.",
+      "found": "2026-10-06"
+    }
+  ]
 }
