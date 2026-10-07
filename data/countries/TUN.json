@@ -7,81 +7,643 @@
     "research_language": "ar",
     "type": "country",
     "aliases": [],
-    "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
+    "overview": "Tunisia has no AI-specific law or published national AI strategy; AI is governed through the 2004 personal data protection law, a pending data protection bill, and sector guidance for higher education."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Tunisia has no AI-specific law and no officially published national AI strategy: a 2018 strategy process led by the research ministry never produced a published text, and a National AI Strategy 2026-2030 prepared by the Ministry of Communication Technologies was presented to a ministerial council in 2026 but its text has not been released. Binding rules that reach AI come from Organic Law 2004-63 on personal data protection, supervised by the INPDP. A replacement data protection bill (proposal 095/2025), under examination by parliament's Rights and Freedoms Committee, would add a right to object to decisions based solely on automated processing and profiling, privacy by design and periodic risk analysis. The most concrete published AI guidance is sectoral: the Université Virtuelle de Tunis has issued a strategic action plan for AI in higher education and research (2025) and a charter on good use of AI, including generative AI, in Tunisian universities (December 2025). Cybersecurity is regulated by Decree-Law 2023-17 and the ANCS, but neither the decree-law nor the ANCS strategies contain AI-specific requirements.",
+    "lead_institutions": [
+      "Ministry of Communication Technologies",
+      "Instance Nationale de Protection des Données à caractère Personnel (INPDP)",
+      "Assembly of the Representatives of the People (ARP)",
+      "Ministry of Higher Education and Scientific Research / Université Virtuelle de Tunis",
+      "Agence Nationale de la Cybersécurité (ANCS)"
+    ],
+    "last_deep_review": "2026-10-06",
+    "review_notes": "Deep review 2026-10-06. Organic Law 2004-63 read from the copy hosted by the Institut National de la Statistique (inpdp.tn and inpdp.nat.tn refused automated connections; iort.gov.tn/JORT is a WinDev application that cannot be deep-linked; pist.tn reset connections). legislation-securite.tn was used only for discovery (non-governmental database), never as a source. The ARP bill 095/2025 PDF is a scan without a text layer; its provisions were checked from page images. Excluded after reading: Decree-Law 2023-17 on cybersecurity (JORT n°26, 11 March 2023) and the ANCS National Cybersecurity Strategy 2020-2025 and 2026-2030 consultation (May 2025) - general cyber instruments without AI-specific provisions; ANCS/Presidency Circular No. 5 of 2026 (2 Sept 2026) on securing public digital systems - not AI; BCT Regulatory Sandbox access guide (January 2020) - fintech sandbox, not AI-specific; Tunisie Digitale 2020 plan - no AI pillar; Startup Act (Law 2018-20) - not AI-specific; Decree 2026-1 amending Decree-Law 2022-54 on cybercrime - not AI; SNJT journalism AI charter (2026) - trade union, not an official body. The anpr.tn 2018 page is only a workshop announcement. The UVT documents are publications of a public university acting for the higher-education sector, not ministerial acts; recorded as sectoral guidance. Convention 108 (Tunisia a party since 2017) is not in data/regional/COE.json; COE AI Framework Convention: Tunisia not a signatory as far as found. AU Continental AI Strategy and UNESCO Recommendation apply via regional files."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-f04de5c564b7",
+      "jurisdiction_id": "TUN",
+      "authority_type": null,
+      "government_level": "national",
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "official_webpage_url": null,
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "evidence_reference": "deep-review-2026-10-06",
+      "document_access_type": "original_government_document",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "official_title": "Loi organique n° 2004-63 du 27 juillet 2004, portant sur la protection des données à caractère personnel",
+      "english_title": "Organic Law No. 2004-63 of 27 July 2004 on the Protection of Personal Data",
+      "issuing_authority": "Republic of Tunisia (Chamber of Deputies and President of the Republic)",
+      "publisher_name": "Institut National de la Statistique (INS)",
+      "categories": [
+        "data-privacy"
+      ],
+      "category": "data-privacy",
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2004-07-27",
+      "effective_date": null,
+      "current_status": "In force; Tunisia's general data protection law, supervised by the Instance Nationale de Protection des Données à caractère Personnel (INPDP). A replacement organic law (proposal 095/2025) is before parliament. Date shown is the promulgation date stated in the text; JORT publication/entry-into-force date not read (iort.gov.tn not machine-readable). French text read from the copy hosted by the Institut National de la Statistique; inpdp.tn refused automated connections.",
+      "summary": "Tunisia's framework data protection law (105 articles). It applies to automated and non-automated processing of personal data by natural and legal persons, requires processing to respect transparency, fairness and human dignity, makes most processing subject to prior declaration or authorisation by the INPDP (which it establishes), and sets data-subject rights of access, rectification and objection, rules on sensitive data, transfers abroad and criminal penalties. It governs personal data used to train or run AI systems but contains no AI-specific provisions.",
+      "language": "fr",
+      "source_url": "https://www.ins.tn/sites/default/files/2020-04/Loi%2063-2004%20Fr.pdf",
+      "official_pdf_url": "https://www.ins.tn/sites/default/files/2020-04/Loi%2063-2004%20Fr.pdf",
+      "source_kind": "official_document",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "JORT publication date and issue number",
+        "Official Arabic text not read",
+        "Exact entry-into-force date"
+      ],
+      "link_status": "reachable",
+      "source_id": "s-d3ef2794c200",
+      "organization_id": "o-127433396bfa",
+      "ai_governance_relevance": "Primary-source material for assessing data-privacy."
+    },
+    {
+      "id": "i-3232d1d9f1dc",
+      "jurisdiction_id": "TUN",
+      "authority_type": null,
+      "government_level": "national",
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": null,
+      "sectors": [
+        "education"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "official_webpage_url": "https://www.uvt.rnu.tn/ia",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "evidence_reference": "deep-review-2026-10-06",
+      "document_access_type": "original_government_document",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "effective_date": null,
+      "issuing_authority": "Université Virtuelle de Tunis (UVT), Ministry of Higher Education and Scientific Research",
+      "publisher_name": "Université Virtuelle de Tunis (UVT)",
+      "language": "fr",
+      "source_kind": "official_document",
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "official_title": "Orientations Stratégiques & Plan d’action : Intégration de l’IA dans l’Enseignement Supérieur et la Recherche Scientifique en Tunisie",
+      "english_title": "Strategic Orientations and Action Plan for Integrating AI in Higher Education and Scientific Research in Tunisia",
+      "categories": [
+        "sectoral",
+        "ethics"
+      ],
+      "category": "sectoral",
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2025",
+      "current_status": "Published by the Université Virtuelle de Tunis under the Ministry of Higher Education letterhead; synthesis of the 10 April 2025 UVT workshop with all Tunisian universities. Sector roadmap, not a binding instrument and not the national AI strategy. PDF file dated September 2025.",
+      "summary": "Sector roadmap for AI in Tunisian higher education and research, built with the country's universities. It sets six strategic objectives: training academics in AI, responsible AI research and innovation, AI tools for teaching and learning, AI-enabled digital transformation of universities, an ethical, inclusive and responsible approach to AI (including an ethics charter), and AI governance in the sector (a national steering body), with a five-year operational plan. It guides universities and is not binding.",
+      "source_url": "https://www.uvt.rnu.tn/documents/2025/ORIENTATION_STRATEGIQUE_PLAN_ACTION_UVT2025.pdf",
+      "metadata_gaps": [
+        "Exact publication date (only year stated; file dated September 2025)"
+      ],
+      "official_pdf_url": "https://www.uvt.rnu.tn/documents/2025/ORIENTATION_STRATEGIQUE_PLAN_ACTION_UVT2025.pdf",
+      "source_id": "s-afb89cf15a51",
+      "organization_id": "o-d1f32e574483",
+      "ai_governance_relevance": "Primary-source material for assessing sectoral, strategy, ethics."
+    },
+    {
+      "id": "i-08588148f80a",
+      "jurisdiction_id": "TUN",
+      "authority_type": null,
+      "government_level": "national",
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "official_webpage_url": null,
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-f04de5c564b7"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "evidence_reference": "deep-review-2026-10-06",
+      "document_access_type": "original_government_document",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "official_title": "مقترح قانون أساسي عدد 095/ 2025 يتعلق بحماية المعطيات الشخصية",
+      "english_title": "Proposal for an Organic Law No. 095/2025 on the Protection of Personal Data",
+      "issuing_authority": "Assembly of the Representatives of the People (ARP)",
+      "publisher_name": "Assembly of the Representatives of the People (ARP)",
+      "categories": [
+        "drafts",
+        "data-privacy"
+      ],
+      "category": "drafts",
+      "legal_status": "consultation_draft",
+      "lifecycle": "draft",
+      "publication_date": "2025-07-14",
+      "effective_date": null,
+      "current_status": "Members' bill (initiated by a group of MPs, Al-Ahrar bloc) filed 14 July 2025 and referred on 16 July 2025 to the Rights and Freedoms Committee; committee hearings held February–June 2026 (incl. Presidency of the Government, INPDP and Ministry of Health). First reading in committee; not adopted as of 2026-10-06. Text is a scanned PDF (no text layer); provisions checked by reading page images.",
+      "summary": "Parliamentary bill that would replace Organic Law 2004-63 with a new personal data protection regime overseen by a Personal Data Protection Authority. It defines biometric, genetic and health data and \"profiling\" (any automated processing used to evaluate personal aspects of an individual), gives data subjects a right to object including to decisions based solely on automated processing or profiling (Art. 29), and requires controllers to build data protection into system design (Art. 42) and to carry out periodic risk analyses of processing (Art. 44). It is a draft with no legal effect.",
+      "language": "ar",
+      "source_url": "https://www.arp.tn/loi/project/4237",
+      "official_pdf_url": "https://www.arp.tn/document/download/112149",
+      "source_kind": "legislation_portal",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Full article count and structure not confirmed (scanned text)"
+      ],
+      "link_status": "reachable",
+      "source_id": "s-de1fd4e9af7a",
+      "organization_id": "o-608351775f0e",
+      "ai_governance_relevance": "Primary-source material for assessing drafts, data-privacy."
+    },
+    {
+      "id": "i-289959d674ea",
+      "jurisdiction_id": "TUN",
+      "authority_type": null,
+      "government_level": "national",
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": null,
+      "sectors": [
+        "education"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "official_webpage_url": "https://www.uvt.rnu.tn/ia",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-3232d1d9f1dc"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-10-06",
+      "evidence_reference": "deep-review-2026-10-06",
+      "document_access_type": "original_government_document",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "subnational_unit": null,
+      "effective_date": null,
+      "issuing_authority": "Université Virtuelle de Tunis (UVT), Ministry of Higher Education and Scientific Research",
+      "publisher_name": "Université Virtuelle de Tunis (UVT)",
+      "language": "fr",
+      "source_kind": "official_document",
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "official_title": "Charte de bon usage de l’intelligence artificielle à l’Université tunisienne",
+      "english_title": "Charter for the Good Use of Artificial Intelligence in Tunisian Universities (Version 2)",
+      "categories": [
+        "sectoral",
+        "ethics",
+        "generative-ai"
+      ],
+      "category": "sectoral",
+      "legal_status": "voluntary_code",
+      "lifecycle": "published",
+      "publication_date": "2025-12-19",
+      "current_status": "Consolidated Version 2 dated 19 December 2025, an initiative of the Université Virtuelle de Tunis drawn up with university partners after the 4 December 2025 day \"La stratégie de l'IA dans l'ES en action\". Framed within the general teaching charter and Ministry of Higher Education policies; no ministerial adoption act found.",
+      "summary": "Charter for teachers, students, researchers and administration in Tunisian higher education on responsible use of AI, including generative and agentic AI. It sets principles of transparency and declaration of AI use, final human responsibility, awareness of algorithmic bias, equity and accessibility, and environmental impact, followed by specific rules for teachers (clear instructions, adapted assessment, explainability) and students (AI as an assistant, not a substitute for intellectual effort). It is guidance and carries no sanctions of its own.",
+      "source_url": "https://www.uvt.rnu.tn/documents/2026/CHARTE_BONUSAGE_IA.pdf",
+      "metadata_gaps": [
+        "Formal adoption by the Ministry not confirmed"
+      ],
+      "official_pdf_url": "https://www.uvt.rnu.tn/documents/2026/CHARTE_BONUSAGE_IA.pdf",
+      "source_id": "s-fbf940adc161",
+      "organization_id": "o-d1f32e574483",
+      "ai_governance_relevance": "Primary-source material for assessing sectoral, ethics, generative-ai."
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-127433396bfa",
+      "jurisdiction_id": "TUN",
+      "name": "Republic of Tunisia (Chamber of Deputies and President of the Republic)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Legislature and head of state that enacted the 2004 data protection law.",
+      "source_url": "https://www.ins.tn/sites/default/files/2020-04/Loi%2063-2004%20Fr.pdf",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-608351775f0e",
+      "jurisdiction_id": "TUN",
+      "name": "Assembly of the Representatives of the People (ARP)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Parliament; examining the 2025 personal data protection bill.",
+      "source_url": "https://www.arp.tn/loi/project/4237",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-d1f32e574483",
+      "jurisdiction_id": "TUN",
+      "name": "Université Virtuelle de Tunis (UVT), Ministry of Higher Education and Scientific Research",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Public university under the Ministry of Higher Education leading the sector's AI integration roadmap and AI-use charter.",
+      "source_url": "https://www.uvt.rnu.tn/ia",
+      "authority_type": null,
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-d3ef2794c200",
+      "url": "https://www.ins.tn/sites/default/files/2020-04/Loi%2063-2004%20Fr.pdf",
+      "jurisdiction_ids": [
+        "TUN"
+      ],
+      "source_institutions": [
+        "Republic of Tunisia (Chamber of Deputies and President of the Republic)"
+      ],
+      "instrument_ids": [
+        "i-f04de5c564b7"
+      ],
+      "categories_reviewed": [
+        "data-privacy"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Downloaded PDF and read full text (pdftotext)",
+      "http_status": 200,
+      "final_url": "https://www.ins.tn/sites/default/files/2020-04/Loi%2063-2004%20Fr.pdf",
+      "link_status": "reachable",
+      "page_title": "Loi 63-2004 Fr",
+      "document_language": "fr",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-de1fd4e9af7a",
+      "url": "https://www.arp.tn/loi/project/4237",
+      "jurisdiction_ids": [
+        "TUN"
+      ],
+      "source_institutions": [
+        "Assembly of the Representatives of the People (ARP)"
+      ],
+      "instrument_ids": [
+        "i-08588148f80a"
+      ],
+      "categories_reviewed": [
+        "drafts",
+        "data-privacy"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Read ARP bill page; downloaded bill PDF (scanned) and read page images",
+      "http_status": 200,
+      "final_url": "https://www.arp.tn/loi/project/4237",
+      "link_status": "reachable",
+      "page_title": "مقترح قانون أساسي عدد 095/ 2025 يتعلق بحماية المعطيات الشخصية.",
+      "document_language": "ar",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-afb89cf15a51",
+      "url": "https://www.uvt.rnu.tn/documents/2025/ORIENTATION_STRATEGIQUE_PLAN_ACTION_UVT2025.pdf",
+      "jurisdiction_ids": [
+        "TUN"
+      ],
+      "source_institutions": [
+        "Université Virtuelle de Tunis (UVT), Ministry of Higher Education and Scientific Research"
+      ],
+      "instrument_ids": [
+        "i-3232d1d9f1dc"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "strategy",
+        "ethics"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Downloaded PDF and read text (pdftotext)",
+      "http_status": 200,
+      "final_url": "https://www.uvt.rnu.tn/documents/2025/ORIENTATION_STRATEGIQUE_PLAN_ACTION_UVT2025.pdf",
+      "link_status": "reachable",
+      "page_title": "Orientations Stratégiques & Plan d’action",
+      "document_language": "fr",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-fbf940adc161",
+      "url": "https://www.uvt.rnu.tn/documents/2026/CHARTE_BONUSAGE_IA.pdf",
+      "jurisdiction_ids": [
+        "TUN"
+      ],
+      "source_institutions": [
+        "Université Virtuelle de Tunis (UVT), Ministry of Higher Education and Scientific Research"
+      ],
+      "instrument_ids": [
+        "i-289959d674ea"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "ethics",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-06",
+      "checked_date": "2026-10-06",
+      "check_method": "Downloaded PDF and read text (pdftotext)",
+      "http_status": 200,
+      "final_url": "https://www.uvt.rnu.tn/documents/2026/CHARTE_BONUSAGE_IA.pdf",
+      "link_status": "reachable",
+      "page_title": "Charte de bon usage de l’IA à l’Université tunisienne",
+      "document_language": "fr",
+      "error": null,
+      "content_type": "application/pdf"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "TUN",
     "country": "Tunisia",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
-    "categories_searched": [
-      "strategy",
-      "government-governance",
-      "ethics",
-      "public-sector",
-      "procurement",
-      "cyber-security",
+    "review_status": "DEEP REVIEW COMPLETE",
+    "categories_searched": {
+      "binding-law": "Laws & regulations",
+      "strategy": "Strategy & action plans",
+      "government-governance": "Government AI governance",
+      "ethics": "Responsible AI & ethics",
+      "risk-assurance": "Risk & assurance",
+      "public-sector": "Public-sector AI",
+      "procurement": "AI procurement",
+      "cyber-security": "Safety & cybersecurity",
+      "data-privacy": "Data & privacy",
+      "transparency": "Transparency & accountability",
+      "standards": "Standards & certification",
+      "sandbox": "Regulatory sandboxes",
+      "index-readiness": "Indices & maturity",
+      "sectoral": "Sectoral governance",
+      "generative-ai": "Generative & agentic AI",
+      "drafts": "Drafts & consultations",
+      "international": "Regional & international",
+      "historical": "Historical publications"
+    },
+    "categories_with_findings": [
       "data-privacy",
-      "risk-assurance",
-      "transparency"
+      "drafts",
+      "ethics",
+      "generative-ai",
+      "sectoral"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_where_no_material_was_found": [
       "binding-law",
       "strategy",
       "government-governance",
-      "ethics",
       "risk-assurance",
       "public-sector",
       "procurement",
       "cyber-security",
-      "data-privacy",
       "transparency",
       "standards",
       "sandbox",
       "index-readiness",
-      "sectoral",
-      "generative-ai",
-      "drafts",
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Tunisia \"الذكاء الاصطناعي\" (استراتيجية OR تنظيم OR أخلاقيات) government ministry official",
       "Tunisia \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Tunisia government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Tunisia \"الذكاء الاصطناعي\" cybersecurity authority secure development safety guidelines",
-      "Tunisia privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Tunisia privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "Tunisie stratégie nationale intelligence artificielle ministère des technologies de la communication 2026",
+      "تونس الاستراتيجية الوطنية للذكاء الاصطناعي وزارة تكنولوجيات الاتصال",
+      "Tunisia national artificial intelligence strategy official document",
+      "conseil ministériel stratégie nationale intelligence artificielle 2026-2030 Tunisie pm.gov.tn",
+      "anpr.tn National AI Strategy Unlocking Tunisia's capabilities potential",
+      "\"stratégie numérique\" 2026-2030 Tunisie ministère technologies communication document",
+      "inpdp.tn Loi organique 2004-63 protection des données à caractère personnel pdf",
+      "Loi organique n° 2017-42 adhésion Convention 108 Tunisie protection des personnes traitement automatisé",
+      "\"2017-42\" OR \"عدد 42 لسنة 2017\" الاتفاقية 108 مجلس أوروبا حماية الأشخاص المعالجة الآلية للمعطيات الشخصية قانون أساسي",
+      "مجلس نواب الشعب مقترح قانون الذكاء الاصطناعي arp.tn",
+      "Tunisie proposition de loi intelligence artificielle ARP 2025 2026 députés",
+      "Banque Centrale de Tunisie circulaire intelligence artificielle banques",
+      "INNORPI norme tunisienne NT ISO/IEC 42001 intelligence artificielle",
+      "UNESCO Readiness Assessment Methodology Tunisia artificial intelligence report",
+      "منشور رئاسة الحكومة استعمال الذكاء الاصطناعي الهياكل العمومية تونس",
+      "décret gouvernemental \"intelligence artificielle\" Journal officiel République tunisienne 2025 OR 2026",
+      "ministère de la santé Tunisie intelligence artificielle guide OR stratégie santé numérique document",
+      "INPDP Tunisie délibération intelligence artificielle reconnaissance faciale données personnelles",
+      "هيئة حماية المعطيات الشخصية تونس الذكاء الاصطناعي قرار OR دليل",
+      "Tunisia signed Council of Europe Framework Convention on Artificial Intelligence",
+      "Tunisie marchés publics HAICOP TUNEPS intelligence artificielle guide achat",
+      "ministère de l'enseignement supérieur Tunisie intelligence artificielle générative guide usage ChatGPT circulaire",
+      "Instance Nationale des Télécommunications INT Tunisie intelligence artificielle décision OR lignes directrices",
+      "Université Virtuelle de Tunis charte intelligence artificielle 2026 uvt.rnu.tn",
+      "\"Charte\" \"usage de l'IA\" \"enseignement supérieur\" Tunisie UVT pdf 2026",
+      "الرائد الرسمي للجمهورية التونسية \"الذكاء الاصطناعي\" أمر حكومي OR قرار 2025 OR 2026",
+      "Tunisia public sector artificial intelligence guidelines government administration circular 2026 Presidency of the Government digital",
+      "مجلس وزاري الاستراتيجية الوطنية للذكاء الاصطناعي 2026-2030 رئيسة الحكومة سبتمبر 2026",
+      "مرسوم عدد 1 لسنة 2026 تنقيح المرسوم 54 الجرائم المتصلة بأنظمة المعلومات والاتصال",
+      "ancs.tn site search: الذكاء الاصطناعي; ANCS Stratégie Nationale de la Cybersécurité 2020-2025 and 2026-2030 consultation (read for AI content)",
+      "BCT Guide d'accès à la Sandbox Réglementaire (read for AI content)"
     ],
     "review_date": "2026-10-06",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
-    "discovery_result_count": 13,
-    "focused_result_count": 13
+    "no_material_found_note": "Searched official sources (MTC, Presidency of the Government, ARP, ANCS, INPDP, BCT, INNORPI, HAICOP/marchespublics.gov.tn, INTT, ministries of health and higher education) in Arabic, French and English: no AI-specific law, published national AI strategy, AI governance body founding act, public-sector or procurement AI rules, AI security guidance, transparency rules, AI standards adoption, AI sandbox, government AI index or AI treaty ratification found as of 2026-10-06. The 2026-2030 national AI strategy, 2018 strategy process and BCT generative-AI charter are recorded as leads.",
+    "discovery_result_count": 30,
+    "focused_result_count": 4
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-55222b424052",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "TUN",
+      "instrument_id": "i-f04de5c564b7",
+      "title": "Organic Law No. 2004-63 of 27 July 2004 on the Protection of Personal Data",
+      "detail": "Added to the radar (published 2004-07-27).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.ins.tn/sites/default/files/2020-04/Loi%2063-2004%20Fr.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-1fd8c7840edc",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "TUN",
+      "instrument_id": "i-3232d1d9f1dc",
+      "title": "Strategic Orientations and Action Plan for Integrating AI in Higher Education and Scientific Research in Tunisia",
+      "detail": "Added to the radar (published 2025).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.uvt.rnu.tn/documents/2025/ORIENTATION_STRATEGIQUE_PLAN_ACTION_UVT2025.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-ef5fe0c6fdce",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "TUN",
+      "instrument_id": "i-08588148f80a",
+      "title": "Proposal for an Organic Law No. 095/2025 on the Protection of Personal Data",
+      "detail": "Added to the radar (published 2025-07-14).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.arp.tn/loi/project/4237",
+      "needs_review": false
+    },
+    {
+      "id": "c-2063e54675a1",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "TUN",
+      "instrument_id": "i-289959d674ea",
+      "title": "Charter for the Good Use of Artificial Intelligence in Tunisian Universities (Version 2)",
+      "detail": "Added to the radar (published 2025-12-19).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.uvt.rnu.tn/documents/2026/CHARTE_BONUSAGE_IA.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-889572e50c6f",
+      "date": "2026-10-06",
+      "recorded": "2026-10-06",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "TUN",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 4 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-bd3fbdb4b29a",
+      "date": "2025-12-19",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "TUN",
+      "instrument_id": "i-289959d674ea",
+      "title": "UVT charter on good use of AI in Tunisian universities (version 2)",
+      "detail": "Consolidated version 2 dated 19 December 2025.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.uvt.rnu.tn/documents/2026/CHARTE_BONUSAGE_IA.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-12e60bd6c1c2",
+      "date": "2025-07-14",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "TUN",
+      "instrument_id": "i-08588148f80a",
+      "title": "Personal data protection bill 095/2025 filed in parliament",
+      "detail": "Members' bill filed 14 July 2025; referred to the Rights and Freedoms Committee on 16 July 2025.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.arp.tn/loi/project/4237",
+      "needs_review": false
+    },
+    {
+      "id": "c-ad40498a42b9",
+      "date": "2004-07-27",
+      "recorded": "2026-10-06",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "TUN",
+      "instrument_id": "i-f04de5c564b7",
+      "title": "Organic Law 2004-63 on personal data protection promulgated",
+      "detail": "Promulgation date stated in the law text.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.ins.tn/sites/default/files/2020-04/Loi%2063-2004%20Fr.pdf",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "الاستراتيجية الوطنية للذكاء الاصطناعي 2026-2030",
+      "english_title": "National Artificial Intelligence Strategy 2026-2030",
+      "issuing_authority": "Ministry of Communication Technologies",
+      "note": "Main lines presented by the Minister of Communication Technologies to a ministerial council in 2026 (reported by the Presidency of the Government and the press); the 2026 Finance Law reportedly provides for completing its executive plan. No strategy document is published on mtc.gov.tn, pm.gov.tn or JORT as of 2026-10-06. Add when the text is published.",
+      "found": "2026-10-06"
+    },
+    {
+      "title": "National AI Strategy: Unlocking Tunisia's capabilities potential (2018 process)",
+      "english_title": "2018 national AI strategy design process (Secretary of State for Research / ANPR)",
+      "issuing_authority": "Agence Nationale de la Promotion de la Recherche Scientifique (ANPR)",
+      "note": "anpr.tn page (http://www.anpr.tn/national-ai-strategy-unlocking-tunisias-capabilities-potential/) only announces a 20 April 2018 workshop on a proposed framework and methodology; no strategy text was ever published officially. Kept for the historical record only.",
+      "found": "2026-10-06"
+    },
+    {
+      "title": "Loi organique n° 2017-42 du 30 mai 2017, portant approbation de l'adhésion de la République Tunisienne à la convention n° 108 du Conseil de l'Europe et de son protocole additionnel n° 181",
+      "english_title": "Organic Law No. 2017-42 approving accession to Council of Europe Convention 108 and Additional Protocol 181",
+      "issuing_authority": "Republic of Tunisia",
+      "note": "Full text located only on legislation-securite.tn (a non-governmental legal database); JORT (iort.gov.tn) is not linkable and inpdp.tn refused connections. Ratified by Presidential Decree 2017-75 of 30 May 2017. Convention 108 is not yet in data/regional/COE.json; lead should consider adding it there with TUN as a party.",
+      "found": "2026-10-06"
+    },
+    {
+      "title": "مشروع قانون أساسي عدد 2018/25 يتعلق بحماية المعطيات الشخصية",
+      "english_title": "Government Draft Organic Law No. 25/2018 on Personal Data Protection",
+      "issuing_authority": "Presidency of the Government",
+      "note": "Government bill submitted to the former ARP in 2018 (INPDP-drafted); never adopted. Text found only on non-official sites (legislation-securite.tn, majles.marsad.tn); the pre-2021 ARP site no longer serves it. Historical draft.",
+      "found": "2026-10-06"
+    },
+    {
+      "title": "Charte d'utilisation de l'IA générative (Banque Centrale de Tunisie)",
+      "english_title": "Central Bank of Tunisia charter on the use of generative AI",
+      "issuing_authority": "Banque Centrale de Tunisie (BCT)",
+      "note": "Adoption reported in the BCT 2025 annual report (published July 2026). Appears to be an internal charter; no text published on bct.gov.tn.",
+      "found": "2026-10-06"
+    }
+  ]
 }
