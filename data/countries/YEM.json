@@ -7,12 +7,16 @@
     "research_language": "ar",
     "type": "country",
     "aliases": [],
-    "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
+    "overview": "No national AI law, strategy or AI-relevant data protection law has been published; regional records (UNESCO) appear separately."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Yemen has no published AI-specific law, national AI strategy, AI ethics framework or AI governance body, and no official AI policy document could be located from either the internationally recognised government (Presidential Leadership Council and Cabinet, based in Aden) or the de facto authorities in Sana'a. There is also no comprehensive personal data protection law; privacy rests on constitutional and penal provisions that are not AI-specific. The Ministry of Telecommunications and Information Technology is the lead body for digital policy and, according to a UN ESCWA consultancy notice of May 2026, has asked ESCWA to support drafting a personal data protection law; no draft text is public. The Central Bank of Yemen (Aden) publishes banking circulars and laws online, none of which address AI. Yemen's AI-governance landscape is therefore at a pre-policy stage, shaped by conflict, a split administration and limited official web publishing; UNESCO's Recommendation on the Ethics of AI applies through the regional record.",
+    "lead_institutions": [
+      "Ministry of Telecommunications and Information Technology",
+      "Central Bank of Yemen (Aden)"
+    ],
+    "last_deep_review": "2026-10-07",
+    "review_notes": "Deep review 2026-10-07. No national instruments found; file closed with all 18 categories as searched/no material. Most .gov.ye sites (mtit.gov.ye, yemen.gov.ye, pmo.gov.ye, yemenparliament.gov.ye, nic.gov.ye) reset connections to automated access, and mopic.gov.ye and presidentyemen.org returned proxy 502 errors, so ministry, cabinet, parliament and gazette pages could not be browsed directly; the .ye domain space is also partly administered from Sana'a, which complicates attribution. cby-ye.com (Central Bank, Aden HQ) was read in full: laws list (central bank, banks, exchange, public debt, Islamic banks, AML/CFT, deposit insurance) and both pages of circulars contain nothing on AI. A Ministry of Justice journal article (almjalh.moj.gov.ye) on obstacles to using AI against cybercrime is academic research, not a policy instrument, and was excluded; it recommends adopting a pending draft law on electronic information crimes with AI provisions, but no official draft text was located. Commercial 'AI regulation in Yemen' explainers (levellers.ai, licentium.io etc.) were used only to confirm the absence finding, never as sources. No documents from the Sana'a de facto authorities on AI were located. Regional: Yemen is listed only in data/regional/UNESCO.json."
   },
   "instruments": [],
   "organizations": [],
@@ -21,21 +25,29 @@
   "coverage_audit": {
     "jurisdiction_id": "YEM",
     "country": "Yemen",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
-    "categories_searched": [
-      "strategy",
-      "government-governance",
-      "ethics",
-      "public-sector",
-      "procurement",
-      "cyber-security",
-      "data-privacy",
-      "risk-assurance",
-      "transparency"
-    ],
+    "review_status": "DEEP REVIEW COMPLETE",
+    "categories_searched": {
+      "binding-law": "Laws & regulations",
+      "strategy": "Strategy & action plans",
+      "government-governance": "Government AI governance",
+      "ethics": "Responsible AI & ethics",
+      "risk-assurance": "Risk & assurance",
+      "public-sector": "Public-sector AI",
+      "procurement": "AI procurement",
+      "cyber-security": "Safety & cybersecurity",
+      "data-privacy": "Data & privacy",
+      "transparency": "Transparency & accountability",
+      "standards": "Standards & certification",
+      "sandbox": "Regulatory sandboxes",
+      "index-readiness": "Indices & maturity",
+      "sectoral": "Sectoral governance",
+      "generative-ai": "Generative & agentic AI",
+      "drafts": "Drafts & consultations",
+      "international": "Regional & international",
+      "historical": "Historical publications"
+    },
     "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_where_no_material_was_found": [
       "binding-law",
       "strategy",
       "government-governance",
@@ -55,33 +67,85 @@
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Yemen \"الذكاء الاصطناعي\" (استراتيجية OR تنظيم OR أخلاقيات) government ministry official",
       "Yemen \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Yemen government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Yemen \"الذكاء الاصطناعي\" cybersecurity authority secure development safety guidelines",
-      "Yemen privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Yemen privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "اليمن استراتيجية الذكاء الاصطناعي وزارة الاتصالات وتقنية المعلومات عدن",
+      "Yemen national artificial intelligence strategy Ministry of Telecommunications Aden 2025",
+      "البنك المركزي اليمني عدن الذكاء الاصطناعي تعميم",
+      "صنعاء وزارة الاتصالات الذكاء الاصطناعي استراتيجية وطنية 2025 اليمن",
+      "Yemen data protection law personal data privacy law Yemen",
+      "\"الذكاء الاصطناعي\" اليمن مجلس الوزراء قرار لجنة وطنية التحول الرقمي",
+      "اليمن \"الاستراتيجية الوطنية للتحول الرقمي\" وزارة الاتصالات وتقنية المعلومات",
+      "Yemen digital transformation strategy government Aden approved cabinet artificial intelligence 2026",
+      "قانون الجرائم الإلكترونية اليمن مشروع مجلس النواب الذكاء الاصطناعي",
+      "صنعاء \"الذكاء الاصطناعي\" لائحة OR قرار OR سياسة وطنية حكومة صنعاء 2025 2026",
+      "ESCWA Yemen personal data protection law draft Ministry of Telecommunications 2026",
+      "Yemen \"artificial intelligence\" policy OECD.AI OR UNESCO readiness assessment Yemen",
+      "سبأ وزير الاتصالات وتقنية المعلومات شادي باصرة الذكاء الاصطناعي",
+      "وزارة الاتصالات وتقنية المعلومات صنعاء \"الذكاء الاصطناعي\" استراتيجية مسودة إطلاق",
+      "Yemen \"General Authority for Standardization\" OR \"Yemen Standardization Metrology\" ISO/IEC 42001",
+      "Yemen government announces artificial intelligence committee OR center OR strategy Aden ministry 2025 2026",
+      "\"اليمن\" \"الذكاء الاصطناعي\" التعليم العالي OR الصحة OR الإعلام ضوابط استخدام قرار وزاري",
+      "cby-ye.com: القوانين والتشريعات + المنشورات والتعاميم (pages 1-2) read in full — no AI material",
+      "Direct probes: mtit.gov.ye, yemen.gov.ye, pmo.gov.ye, yemenparliament.gov.ye, nic.gov.ye (connection reset); mopic.gov.ye, presidentyemen.org (502)"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-07",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
-    "discovery_result_count": 10,
-    "focused_result_count": 9
+    "no_material_found_note": "All 18 categories searched in Arabic and English (2026-10-07); no official AI-relevant instrument from the Aden government or the Sana'a de facto authorities was located. Two unpublished items are held under leads.",
+    "discovery_result_count": 27,
+    "focused_result_count": 12
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-32dcf58a3824",
+      "date": "2026-10-07",
+      "recorded": "2026-10-07",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "YEM",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 0 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "مشروع قانون حماية البيانات الشخصية",
+      "english_title": "Personal data protection law (in preparation)",
+      "issuing_authority": "Ministry of Telecommunications and Information Technology",
+      "note": "A UN ESCWA consultancy notice (posted May 2026) states the Ministry asked ESCWA for advisory support to develop a personal data protection law for Yemen. No draft or consultation text is published on an official site. Record as a draft (data-privacy/drafts) once an official text appears.",
+      "found": "2026-10-07"
+    },
+    {
+      "title": "مشروع قانون مكافحة جرائم المعلومات الإلكترونية",
+      "english_title": "Draft law on combating electronic information crimes",
+      "issuing_authority": "Unclear (referenced in a Ministry of Justice journal article, Sana'a-administered site)",
+      "note": "A research article in the Ministry of Justice journal (almjalh.moj.gov.ye) recommends adopting a pending draft cybercrime law with added AI provisions. No official draft text or parliamentary record was located, and attribution between the Aden government and the Sana'a de facto authorities is unclear. Not AI-specific as described; check if a text with AI provisions is published.",
+      "found": "2026-10-07"
+    }
+  ]
 }

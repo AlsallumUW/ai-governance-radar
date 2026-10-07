@@ -12,38 +12,303 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "The State of Palestine steers AI through strategy and policy led by the Ministry of Telecommunications and Digital Economy (MTDE); there is no AI-specific law and no personal data protection law in force. A national AI team formed by the Council of Ministers in 2021 under MTDE prepared a National AI Strategy and National AI Policy (2023), but their official texts sit on the national AI portal ai.gov.ps, which could not be read in this review, so they are held as leads. The AI commitments that can be verified from official documents are in MTDE's Digital Government Strategy 2024-2029 (AI infrastructure, skills and pilot AI services in government), the Ministry Strategy 2025-2027 (AI as a strategic priority and an update of the AI strategy with legal and ethical frameworks) and the General Policy for the Telecom and IT Sectors 2026-2028 (AI regulatory, ethics and transparency frameworks, especially for government AI). The direction is towards an updated AI strategy, AI governance and ethics frameworks, and a pending data protection decree-law.",
+    "lead_institutions": [
+      "Ministry of Telecommunications and Digital Economy (MTDE)",
+      "National AI Team (Council of Ministers, 2021)",
+      "Council of Ministers"
+    ],
+    "last_deep_review": "2026-10-07",
+    "review_notes": "Deep review 2026-10-07. ai.gov.ps (national AI portal holding the AI strategy and policy) fails TLS (self-signed certificate) and returns 503, so those documents are leads. The Official Gazette reference (mjr.ogb.gov.ps) is behind a Cloudflare challenge; dft.gov.ps, palestinecabinet.gov.ps, psi.gov.ps and muqtafi.birzeit.edu were unreachable through the proxy. pma.ps is a JavaScript single-page app whose legislation and fintech pages could not be read; the PMA fintech regulatory sandbox (launched 2022) is a general fintech sandbox with no AI-specific scope found, so it is not recorded. The old MTIT site (mtit.gov.ps) holds only pre-2021 documents with no AI content. Decree-Law 15/2017 on electronic transactions, Decree-Law 10/2018 on cybercrime and the later decree-law on electronic transactions and trust services were checked and excluded: they contain no AI provisions. The National Blockchain Policy 2026-2028 (MTDE) mentions AI once and is out of scope. Excluded university AI policies (not government). No precise-dated government action was confirmed on an official source, so no world events were added."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-c9ae029c7e31",
+      "official_title": "استراتيجية الحكومة الرقمية 2024-2029 فلسطين",
+      "english_title": "Digital Government Strategy 2024-2029 (Palestine)",
+      "jurisdiction_id": "PSE",
+      "issuing_authority": "Ministry of Telecommunications and Digital Economy (MTDE)",
+      "publisher_name": "Ministry of Telecommunications and Digital Economy (MTDE)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "strategy",
+        "public-sector"
+      ],
+      "category": "strategy",
+      "subcategory": null,
+      "legal_status": "national_strategy",
+      "publication_date": "2024",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Published on the MTDE website (Strategies page, file uploaded August 2024). The PDF document properties title it \"draft\" (مسودة); no Cabinet adoption decision was found on an official source. Prepared by the then Ministry of Telecom and IT with Cambridge consultants under the World Bank-funded Digital West Bank & Gaza project.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Palestine's digital-government strategy for 2024-2029, prepared by the Ministry of Telecommunications and IT with stakeholders. Its innovation objective (activity 4.8) commits the ministry to build government infrastructure for AI and big data, train civil servants in AI and data analytics, pilot AI applications in government services (e.g. security monitoring, smart health care) and run public awareness on the benefits and risks of AI. It lists ISO/IEC 23053 (framework for AI systems using machine learning) among the international standards recommended for government systems.",
+      "ai_governance_relevance": "Strategy with an explicit AI pillar for government use of AI; guides ministries, not binding.",
+      "source_url": "https://www.mtde.gov.ps/uploads/files/20240820121821_%D8%A7%D8%B3%D8%AA%D8%B1%D8%A7%D8%AA%D9%8A%D8%AC%D9%8A%D8%A9_%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D8%A9_%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A%D8%A9_2024-2029.pdf",
+      "official_pdf_url": "https://www.mtde.gov.ps/uploads/files/20240820121821_%D8%A7%D8%B3%D8%AA%D8%B1%D8%A7%D8%AA%D9%8A%D8%AC%D9%8A%D8%A9_%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D8%A9_%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A%D8%A9_2024-2029.pdf",
+      "official_webpage_url": "https://www.mtde.gov.ps/home/Strategies?culture=ar-SA",
+      "language": "ar",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-07",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Exact publication date (only file upload timestamp 2024-08-20 available)",
+        "Adoption status: PDF properties label it a draft"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-07",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-07",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-b94a0ec86674",
+      "organization_id": "o-8c68b45da212"
+    },
+    {
+      "id": "i-88bb58a79a0c",
+      "official_title": "استراتيجية وزارة الاتصالات والاقتصاد الرقمي 2025-2027",
+      "english_title": "Strategy of the Ministry of Telecommunications and Digital Economy 2025-2027",
+      "jurisdiction_id": "PSE",
+      "issuing_authority": "Ministry of Telecommunications and Digital Economy (MTDE)",
+      "publisher_name": "Ministry of Telecommunications and Digital Economy (MTDE)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "strategy",
+        "government-governance"
+      ],
+      "category": "strategy",
+      "subcategory": null,
+      "legal_status": "national_strategy",
+      "publication_date": "2025-05",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Ministry sector strategy dated May 2025 (أيار 2025) on the cover; published on the MTDE Strategies page (file uploaded January 2026). Covers 2025-2027.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "The ministry's three-year strategy for telecoms, IT, the digital economy and post. \"Enhancing artificial intelligence\" is one of its eleven strategic priorities, and it notes that the AI sector has developed following the launch of the national AI strategy and national AI policy. It commits the ministry to update the national AI strategy so as to set the legal, ethical and regulatory frameworks needed to deploy AI in the public and private sectors, prioritising AI use in government services, institutional efficiency, capacity building and research.",
+      "ai_governance_relevance": "Ministry strategy that names AI as a strategic priority and commits to an updated AI strategy with legal and ethical frameworks; not binding.",
+      "source_url": "https://www.mtde.gov.ps/uploads/files/20260127094605_%D8%A7%D8%B3%D8%AA%D8%B1%D8%A7%D8%AA%D8%AC%D9%8A%D8%A9_%D9%88%D8%B2%D8%A7%D8%B1%D8%A9_%D8%A7%D9%84%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%D8%A7%D8%AA_%D9%88%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF__%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A_-_2025-2027_-_2_-_END.pdf",
+      "official_pdf_url": "https://www.mtde.gov.ps/uploads/files/20260127094605_%D8%A7%D8%B3%D8%AA%D8%B1%D8%A7%D8%AA%D8%AC%D9%8A%D8%A9_%D9%88%D8%B2%D8%A7%D8%B1%D8%A9_%D8%A7%D9%84%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%D8%A7%D8%AA_%D9%88%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF__%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A_-_2025-2027_-_2_-_END.pdf",
+      "official_webpage_url": "https://www.mtde.gov.ps/home/Strategies?culture=ar-SA",
+      "language": "ar",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-07",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Exact day of publication"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-07",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-07",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-20689e458624",
+      "organization_id": "o-8c68b45da212"
+    },
+    {
+      "id": "i-705191717880",
+      "official_title": "السياسة العامة لقطاعي الاتصالات وتكنولوجيا المعلومات 2026-2028",
+      "english_title": "General Policy for the Telecommunications and Information Technology Sectors 2026-2028",
+      "jurisdiction_id": "PSE",
+      "issuing_authority": "Ministry of Telecommunications and Digital Economy (MTDE)",
+      "publisher_name": "Ministry of Telecommunications and Digital Economy (MTDE)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "strategy",
+        "government-governance",
+        "ethics"
+      ],
+      "category": "strategy",
+      "subcategory": null,
+      "legal_status": "national_strategy",
+      "publication_date": "2026",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Version 1.0 published on the MTDE website under telecom decisions (file uploaded August 2026; file name marks it \"final for adoption\"). The document states that sector policy is approved by the Council of Ministers; no Cabinet approval of this version was found on an official source, so it is recorded as published, not adopted.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Sector policy issued by the Ministry of Telecommunications and Digital Economy for 2026-2028 in two parts (telecoms and IT). In the IT part the State commits to develop comprehensive regulatory frameworks for emerging technologies including AI, IoT and cloud, setting ethical, security and operational safeguards, and to encourage national frameworks for the governance and ethics of AI that ensure transparency and non-discrimination, especially in AI used in government services. It also ties data governance to responsible AI and refers to the pending draft data protection law and cybersecurity law.",
+      "ai_governance_relevance": "Policy commitment to an AI regulatory and ethics framework, particularly for government AI; not binding until approved.",
+      "source_url": "https://www.mtde.gov.ps/uploads/files/20260805024039_%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9_%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9_%D9%84%D9%82%D8%B7%D8%A7%D8%B9%D9%8A_%D8%A7%D9%84%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%D8%A7%D8%AA_%D9%88%D8%AA%D9%83%D9%86%D9%88%D9%84%D9%88%D8%AC%D9%8A%D8%A7_%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA__%D9%86%D9%87%D8%A7%D8%A6%D9%8A_%D9%84%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF_v1.15_(1).pdf",
+      "official_pdf_url": "https://www.mtde.gov.ps/uploads/files/20260805024039_%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9_%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9_%D9%84%D9%82%D8%B7%D8%A7%D8%B9%D9%8A_%D8%A7%D9%84%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%D8%A7%D8%AA_%D9%88%D8%AA%D9%83%D9%86%D9%88%D9%84%D9%88%D8%AC%D9%8A%D8%A7_%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA__%D9%86%D9%87%D8%A7%D8%A6%D9%8A_%D9%84%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF_v1.15_(1).pdf",
+      "official_webpage_url": "https://www.mtde.gov.ps/home/tel_decisions?culture=ar-SA",
+      "language": "ar",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-07",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Council of Ministers approval status",
+        "Exact publication date"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-07",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-07",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-3962775950bf",
+      "organization_id": "o-8c68b45da212"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-8c68b45da212",
+      "jurisdiction_id": "PSE",
+      "name": "Ministry of Telecommunications and Digital Economy (MTDE)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Lead ministry for digital transformation and AI; heads the national AI team and publishes the national AI strategy and policy (ai.gov.ps).",
+      "source_url": "https://www.mtde.gov.ps/",
+      "authority_type": null,
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-b94a0ec86674",
+      "url": "https://www.mtde.gov.ps/uploads/files/20240820121821_%D8%A7%D8%B3%D8%AA%D8%B1%D8%A7%D8%AA%D9%8A%D8%AC%D9%8A%D8%A9_%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D8%A9_%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A%D8%A9_2024-2029.pdf",
+      "jurisdiction_ids": [
+        "PSE"
+      ],
+      "source_institutions": [
+        "Ministry of Telecommunications and Digital Economy (MTDE)"
+      ],
+      "instrument_ids": [
+        "i-c9ae029c7e31"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-10-07",
+      "checked_date": "2026-10-07",
+      "check_method": "Downloaded official PDF and read AI sections (pdftotext and rendered pages)",
+      "http_status": 200,
+      "final_url": "https://www.mtde.gov.ps/uploads/files/20240820121821_%D8%A7%D8%B3%D8%AA%D8%B1%D8%A7%D8%AA%D9%8A%D8%AC%D9%8A%D8%A9_%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D8%A9_%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A%D8%A9_2024-2029.pdf",
+      "link_status": "reachable",
+      "page_title": "استراتيجية الحكومة الرقمية 2024-2029 فلسطين",
+      "document_language": "ar",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-20689e458624",
+      "url": "https://www.mtde.gov.ps/uploads/files/20260127094605_%D8%A7%D8%B3%D8%AA%D8%B1%D8%A7%D8%AA%D8%AC%D9%8A%D8%A9_%D9%88%D8%B2%D8%A7%D8%B1%D8%A9_%D8%A7%D9%84%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%D8%A7%D8%AA_%D9%88%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF__%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A_-_2025-2027_-_2_-_END.pdf",
+      "jurisdiction_ids": [
+        "PSE"
+      ],
+      "source_institutions": [
+        "Ministry of Telecommunications and Digital Economy (MTDE)"
+      ],
+      "instrument_ids": [
+        "i-88bb58a79a0c"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "government-governance"
+      ],
+      "date_reviewed": "2026-10-07",
+      "checked_date": "2026-10-07",
+      "check_method": "Downloaded official PDF and read AI sections (pdftotext and rendered pages)",
+      "http_status": 200,
+      "final_url": "https://www.mtde.gov.ps/uploads/files/20260127094605_%D8%A7%D8%B3%D8%AA%D8%B1%D8%A7%D8%AA%D8%AC%D9%8A%D8%A9_%D9%88%D8%B2%D8%A7%D8%B1%D8%A9_%D8%A7%D9%84%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%D8%A7%D8%AA_%D9%88%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF__%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A_-_2025-2027_-_2_-_END.pdf",
+      "link_status": "reachable",
+      "page_title": "استراتيجية وزارة الاتصالات والاقتصاد الرقمي 2025-2027",
+      "document_language": "ar",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-3962775950bf",
+      "url": "https://www.mtde.gov.ps/uploads/files/20260805024039_%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9_%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9_%D9%84%D9%82%D8%B7%D8%A7%D8%B9%D9%8A_%D8%A7%D9%84%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%D8%A7%D8%AA_%D9%88%D8%AA%D9%83%D9%86%D9%88%D9%84%D9%88%D8%AC%D9%8A%D8%A7_%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA__%D9%86%D9%87%D8%A7%D8%A6%D9%8A_%D9%84%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF_v1.15_(1).pdf",
+      "jurisdiction_ids": [
+        "PSE"
+      ],
+      "source_institutions": [
+        "Ministry of Telecommunications and Digital Economy (MTDE)"
+      ],
+      "instrument_ids": [
+        "i-705191717880"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "government-governance",
+        "ethics"
+      ],
+      "date_reviewed": "2026-10-07",
+      "checked_date": "2026-10-07",
+      "check_method": "Downloaded official PDF and read AI sections (pdftotext and rendered pages)",
+      "http_status": 200,
+      "final_url": "https://www.mtde.gov.ps/uploads/files/20260805024039_%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9_%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9_%D9%84%D9%82%D8%B7%D8%A7%D8%B9%D9%8A_%D8%A7%D9%84%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%D8%A7%D8%AA_%D9%88%D8%AA%D9%83%D9%86%D9%88%D9%84%D9%88%D8%AC%D9%8A%D8%A7_%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA__%D9%86%D9%87%D8%A7%D8%A6%D9%8A_%D9%84%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF_v1.15_(1).pdf",
+      "link_status": "reachable",
+      "page_title": "السياسة العامة لقطاعي الاتصالات وتكنولوجيا المعلومات 2026-2028",
+      "document_language": "ar",
+      "error": null,
+      "content_type": "application/pdf"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "PSE",
     "country": "State of Palestine",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
-    "categories_searched": [
-      "strategy",
-      "government-governance",
+    "review_status": "DEEP REVIEW COMPLETE",
+    "categories_searched": {
+      "binding-law": "Laws & regulations",
+      "strategy": "Strategy & action plans",
+      "government-governance": "Government AI governance",
+      "ethics": "Responsible AI & ethics",
+      "risk-assurance": "Risk & assurance",
+      "public-sector": "Public-sector AI",
+      "procurement": "AI procurement",
+      "cyber-security": "Safety & cybersecurity",
+      "data-privacy": "Data & privacy",
+      "transparency": "Transparency & accountability",
+      "standards": "Standards & certification",
+      "sandbox": "Regulatory sandboxes",
+      "index-readiness": "Indices & maturity",
+      "sectoral": "Sectoral governance",
+      "generative-ai": "Generative & agentic AI",
+      "drafts": "Drafts & consultations",
+      "international": "Regional & international",
+      "historical": "Historical publications"
+    },
+    "categories_with_findings": [
       "ethics",
+      "government-governance",
       "public-sector",
-      "procurement",
-      "cyber-security",
-      "data-privacy",
-      "risk-assurance",
-      "transparency"
+      "strategy"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_where_no_material_was_found": [
       "binding-law",
-      "strategy",
-      "government-governance",
-      "ethics",
       "risk-assurance",
-      "public-sector",
       "procurement",
       "cyber-security",
       "data-privacy",
@@ -57,33 +322,165 @@
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "State of Palestine \"الذكاء الاصطناعي\" (استراتيجية OR تنظيم OR أخلاقيات) government ministry official",
       "State of Palestine \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "State of Palestine government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "State of Palestine \"الذكاء الاصطناعي\" cybersecurity authority secure development safety guidelines",
-      "State of Palestine privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "State of Palestine privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "الاستراتيجية الوطنية للذكاء الاصطناعي فلسطين وزارة الاتصالات والاقتصاد الرقمي",
+      "Palestine national artificial intelligence strategy Ministry of Telecommunications and Digital Economy",
+      "\"الاستراتيجية الوطنية للذكاء الاصطناعي\" فلسطين pdf gov.ps",
+      "\"السياسة الوطنية للذكاء الاصطناعي\" فلسطين",
+      "ai.gov.ps strategy pdf Palestine national AI policy",
+      "\"ai.gov.ps\"",
+      "الاستراتيجية الوطنية للذكاء الاصطناعي دولة فلسطين 2023 وثيقة الفريق الوطني للذكاء الاصطناعي",
+      "Palestine \"National Artificial Intelligence Policy\" OR \"National AI Policy\" Ministry Telecommunications Digital Economy 2023 pdf",
+      "قرار مجلس الوزراء تشكيل الفريق الوطني للذكاء الاصطناعي 2021 فلسطين",
+      "سلطة النقد الفلسطينية البيئة التجريبية الرقابية تعليمات الذكاء الاصطناعي",
+      "pma.ps regulatory sandbox fintech instructions Palestine Monetary Authority",
+      "Palestine Monetary Authority artificial intelligence guidelines banks 2024 OR 2025 OR 2026",
+      "سلطة النقد \"البيئة الرقابية التجريبية\" تعليمات رقم لسنة",
+      "مسودة قرار بقانون حماية البيانات الشخصية فلسطين وزارة الاتصالات استشارة",
+      "مؤسسة المواصفات والمقاييس الفلسطينية الذكاء الاصطناعي ISO/IEC 42001 مواصفة فلسطينية",
+      "Palestine Standards Institution artificial intelligence standard adoption ISO/IEC 22989 OR 42001 PS ISO",
+      "أسبوع فلسطين للذكاء الاصطناعي 2026 مجلس الوزراء خطة الحكومة الذكاء الاصطناعي المجلس الأعلى للذكاء الاصطناعي",
+      "وزارة التربية والتعليم الفلسطينية دليل استخدام الذكاء الاصطناعي في التعليم سياسة moe.edu.ps",
+      "وزارة التعليم العالي والبحث العلمي فلسطين سياسة استخدام الذكاء الاصطناعي في الجامعات تعليمات mohe.pna.ps",
+      "الاستراتيجية الوطنية للأمن السيبراني فلسطين قرار بقانون الأمن السيبراني مسودة الذكاء الاصطناعي",
+      "\"الذكاء الاصطناعي\" قرار بقانون OR \"قرار مجلس الوزراء\" الوقائع الفلسطينية 2024 OR 2025 OR 2026",
+      "Palestine government generative AI guidelines ChatGPT public employees circular ministry",
+      "الهيئة الفلسطينية لتنظيم قطاع الاتصالات الذكاء الاصطناعي تعليمات",
+      "maqam.najah.edu search: الذكاء الاصطناعي (legislation database, discovery only; no results)",
+      "mtde.gov.ps: Strategies, policy, IT/telecom/post laws, decisions and regulations pages; news pages 0-40 scanned for الذكاء الاصطناعي",
+      "mtit.gov.ps: policies and strategies, decisions and publications download pages"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-07",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
-    "discovery_result_count": 11,
-    "focused_result_count": 10
+    "no_material_found_note": "Searched, nothing found on an official source: no AI-specific law or general law with AI provisions (e-transactions, trust services and cybercrime decree-laws checked); no data protection law in force (draft only, a lead); no AI cybersecurity, procurement, transparency, sandbox, sectoral (PMA, education, health, telecom) or generative-AI guidance; no PSI adoption of AI standards found (PSI site unreachable). The national AI strategy, policy and ethics charter exist but their texts on ai.gov.ps could not be read, so they are leads. Regional instruments (UNESCO) apply via data/regional.",
+    "discovery_result_count": 24,
+    "focused_result_count": 3
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-e9d637e6ae76",
+      "date": "2026-10-07",
+      "recorded": "2026-10-07",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "PSE",
+      "instrument_id": "i-c9ae029c7e31",
+      "title": "Digital Government Strategy 2024-2029 (Palestine)",
+      "detail": "Added to the radar (published 2024).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.mtde.gov.ps/uploads/files/20240820121821_%D8%A7%D8%B3%D8%AA%D8%B1%D8%A7%D8%AA%D9%8A%D8%AC%D9%8A%D8%A9_%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D8%A9_%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A%D8%A9_2024-2029.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-c337f9e39761",
+      "date": "2026-10-07",
+      "recorded": "2026-10-07",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "PSE",
+      "instrument_id": "i-88bb58a79a0c",
+      "title": "Strategy of the Ministry of Telecommunications and Digital Economy 2025-2027",
+      "detail": "Added to the radar (published 2025-05).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.mtde.gov.ps/uploads/files/20260127094605_%D8%A7%D8%B3%D8%AA%D8%B1%D8%A7%D8%AA%D8%AC%D9%8A%D8%A9_%D9%88%D8%B2%D8%A7%D8%B1%D8%A9_%D8%A7%D9%84%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%D8%A7%D8%AA_%D9%88%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF__%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A_-_2025-2027_-_2_-_END.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-e936e01f02fa",
+      "date": "2026-10-07",
+      "recorded": "2026-10-07",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "PSE",
+      "instrument_id": "i-705191717880",
+      "title": "General Policy for the Telecommunications and Information Technology Sectors 2026-2028",
+      "detail": "Added to the radar (published 2026).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.mtde.gov.ps/uploads/files/20260805024039_%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9_%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9_%D9%84%D9%82%D8%B7%D8%A7%D8%B9%D9%8A_%D8%A7%D9%84%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%D8%A7%D8%AA_%D9%88%D8%AA%D9%83%D9%86%D9%88%D9%84%D9%88%D8%AC%D9%8A%D8%A7_%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA__%D9%86%D9%87%D8%A7%D8%A6%D9%8A_%D9%84%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF_v1.15_(1).pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-941beccc1f13",
+      "date": "2026-10-07",
+      "recorded": "2026-10-07",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "PSE",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 3 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "الاستراتيجية الوطنية للذكاء الاصطناعي",
+      "english_title": "National Artificial Intelligence Strategy (2023)",
+      "issuing_authority": "Ministry of Telecommunications and Digital Economy (MTDE)",
+      "note": "MTDE news item 22983 and the MTDE Strategy 2025-2027 confirm the national AI strategy was adopted/launched (2023). Official text expected at https://ai.gov.ps/ar/strategies, which was unreachable (TLS error/503). Add once readable.",
+      "found": "2026-10-07"
+    },
+    {
+      "title": "السياسة الوطنية للذكاء الاصطناعي",
+      "english_title": "National Artificial Intelligence Policy (2023)",
+      "issuing_authority": "Ministry of Telecommunications and Digital Economy (MTDE)",
+      "note": "Adoption stated in MTDE news 22983 and the MTDE Strategy 2025-2027; text expected on ai.gov.ps (unreachable).",
+      "found": "2026-10-07"
+    },
+    {
+      "title": "الميثاق الأخلاقي الوطني للذكاء الاصطناعي",
+      "english_title": "National AI Ethics Charter",
+      "issuing_authority": "Ministry of Telecommunications and Digital Economy (MTDE)",
+      "note": "Mentioned in MTDE news 23001 as a national AI ethics charter; no official text located.",
+      "found": "2026-10-07"
+    },
+    {
+      "title": "قرار مجلس الوزراء بتشكيل الفريق الوطني للذكاء الاصطناعي",
+      "english_title": "Council of Ministers decision forming the National AI Team (2021)",
+      "issuing_authority": "Council of Ministers",
+      "note": "16-member national AI team with a steering committee (MTDE news 22983). Decision number/date and gazette text not found; gazette portal behind Cloudflare.",
+      "found": "2026-10-07"
+    },
+    {
+      "title": "مسودة قرار بقانون بشأن حماية البيانات الشخصية",
+      "english_title": "Draft Decree-Law on Personal Data Protection",
+      "issuing_authority": "Ministry of Telecommunications and Digital Economy (MTDE)",
+      "note": "Referred to as a pending draft in the General Policy for Telecom and IT 2026-2028; no official consultation text published. Add when issued.",
+      "found": "2026-10-07"
+    },
+    {
+      "title": "مسودة قانون الأمن السيبراني",
+      "english_title": "Draft Cybersecurity Law",
+      "issuing_authority": "Ministry of Telecommunications and Digital Economy (MTDE)",
+      "note": "Referred to in the General Policy for Telecom and IT 2026-2028; no official text located; AI provisions unknown.",
+      "found": "2026-10-07"
+    }
+  ]
 }

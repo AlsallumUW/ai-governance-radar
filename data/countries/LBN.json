@@ -10,78 +10,769 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Lebanon has no AI-specific law or adopted national AI strategy. AI governance is being built by the Minister of State for Technology and Artificial Intelligence (MITAI), created in the 2025 government, whose LEAP roadmap (May 2025, updated March 2026) targets an 'AI-first government' by 2030 and proposes a Digital & AI Authority under the Prime Minister. The binding baseline is Law No. 81/2018 on Electronic Transactions and Personal Data, whose Article 86 bars judicial or administrative decisions based solely on automated profiling. Sector bodies have issued AI guidance: CRDP's National AI Education Framework (2025) for schools and the Ministry of Public Health's Digital Health Vision (2023). The law creating MITAI, a Digital Authority law and a parliamentary proposal for a National AI Authority are pending, and MITAI's National AI Framework is under consultation without a published text.",
+    "lead_institutions": [
+      "Ministry of State for Technology and Artificial Intelligence (MITAI)",
+      "Office of the Minister of State for Administrative Development (OMSAR)",
+      "Parliament of Lebanon (Information Technology Committee)",
+      "Ministry of Economy and Trade (Law 81/2018 personal data oversight)",
+      "Center for Educational Research and Development (CRDP)",
+      "Ministry of Public Health"
+    ],
+    "last_deep_review": "2026-10-07",
+    "review_notes": "Deep review 2026-10-07. Parliament law database (lp.gov.lb) serves the full text of Law 81/2018; its 2024-2026 law lists contain no AI or digital law. Blocked or unreachable for automated reading: omsar.gov.lb (Cloudflare challenge; old /Assets PDFs return 404 after site migration), economy.gov.lb and bdl.gov.lb (403), pcm.gov.lb, mot.gov.lb, tra.gov.lb, industry.gov.lb and libnor.gov.lb (connection timeouts), crdp.org HTML pages (403; the PDF downloaded), jo.pcm.gov.lb (Official Gazette, subscription login). mitai.gov.lb is a JavaScript app; its Public Consultations and Knowledge Hub pages list the National AI Framework, AI Readiness Framework, Cloud Policy Framework, Cyber Readiness Framework and an AI Law as 'coming soon' or 'proposed' with no downloadable text (recorded as leads). Not recorded: the Lebanese University Faculty of Law 'Guidelines on Governance and Ethics of AI in Lebanon' (academic, not a government instrument); MITAI news items and MoUs (press releases); the 2019 National Cyber Security Strategy (no AI content located and no official copy online). The 2019 Ministry of Industry AI strategy exists only as an ESCWA-hosted copy (lead). UNESCO Recommendation on the Ethics of AI applies through the UNESCO regional file. No subnational pass needed."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-e2fc9dbe7052",
+      "official_title": "قانون رقم 81 تاريخ 10/10/2018: المعاملات الإلكترونية والبيانات ذات الطابع الشخصي",
+      "english_title": "Law No. 81 of 10 October 2018 on Electronic Transactions and Personal Data",
+      "jurisdiction_id": "LBN",
+      "issuing_authority": "Parliament of Lebanon (Majlis al-Nuwwab)",
+      "publisher_name": "Parliament of Lebanon (Majlis al-Nuwwab)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "data-privacy"
+      ],
+      "category": "data-privacy",
+      "subcategory": null,
+      "legal_status": "binding_law",
+      "publication_date": "2018-10-10",
+      "effective_date": "2019-01-18",
+      "last_amended_date": null,
+      "current_status": "Law No. 81 dated 10 October 2018, published in Official Gazette No. 45 of 18 October 2018; the single article states it enters into force three months after publication (effective date computed from that rule). Full text (47 pp. PDF) served by the Parliament law database (session of 24-25 September 2018). MITAI's 2026 roadmap says a new data protection law has been drafted for Council of Ministers review.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Lebanon's general law on electronic writing and signatures, e-commerce, the .lb domain and personal data. Book V sets the personal-data rules for all automated and non-automated processing: collection for lawful, specific purposes, data-subject rights and controller duties. Article 86 gives everyone the right to know and contest the logic used in automated processing invoked against them, and bars judicial or administrative decisions that evaluate a person's conduct from resting solely on automated processing aimed at profiling.",
+      "ai_governance_relevance": "Primary-source material for assessing data-privacy.",
+      "source_url": "https://www.lp.gov.lb/LawDetails.aspx?Id=1793",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.lp.gov.lb/LawDetails.aspx?Id=1793",
+      "language": "ar",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-07",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "legislation_portal",
+      "evidence_reference": "deep-review-2026-10-07",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "in_force",
+      "first_recorded": "2026-10-07",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-70ec1a174a3d",
+      "organization_id": "o-525dcacae0ad"
+    },
+    {
+      "id": "i-4935afd1e0a0",
+      "official_title": "Lebanon’s Digital and AI Transformation: A Strategic Roadmap by the Minister of State for Technology and AI",
+      "english_title": "Lebanon's Digital and AI Transformation: A Strategic Roadmap (LEAP strategy)",
+      "jurisdiction_id": "LBN",
+      "issuing_authority": "Ministry of State for Technology and Artificial Intelligence (MITAI)",
+      "publisher_name": "Ministry of State for Technology and Artificial Intelligence (MITAI)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "strategy",
+        "government-governance",
+        "public-sector"
+      ],
+      "category": "strategy",
+      "subcategory": null,
+      "legal_status": "national_strategy",
+      "publication_date": "2025-05-15",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Slide-deck roadmap: 'Shared - May 15, 2025; Updated - March 05, 2026'. Issued by the Office of the Minister of State for Technology and AI (H.E. Dr. Kamal Shehadi); the document says the office becomes a full ministry once the MITAI law is approved by Parliament. No Council of Ministers adoption is stated in the document. Linked from the MITAI website (LEAP - Path to 2030).",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "MITAI's five-year LEAP roadmap for an 'AI-first government' by 2030, built on four tracks: governance foundations, digital and AI infrastructure, talent, and investment. It proposes a Digital & AI Authority reporting to the Prime Minister, a Cybersecurity Institute and an independent telecom and digital regulator, and lists 2025 outputs: the MITAI and Digital Authority laws before Parliament, draft data protection, cybersecurity and e-signature laws, and a National AI Framework and AI Readiness Framework under consultation.",
+      "ai_governance_relevance": "Primary-source material for assessing strategy, government-governance, public-sector.",
+      "source_url": "https://mitai.gov.lb/assets/MITAI_Strategy_Full_Presentation-C6XQD81p.pdf",
+      "official_pdf_url": "https://mitai.gov.lb/assets/MITAI_Strategy_Full_Presentation-C6XQD81p.pdf",
+      "official_webpage_url": "https://mitai.gov.lb/",
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-07",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-07",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-07",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-3e06068ff3df",
+      "organization_id": "o-896b78618457"
+    },
+    {
+      "id": "i-fe2f9c4e77f2",
+      "official_title": "الاستراتيجية الوطنية للتحول الرقمي في لبنان 2020-2030",
+      "english_title": "Lebanon Digital Transformation Strategy 2020-2030",
+      "jurisdiction_id": "LBN",
+      "issuing_authority": "Office of the Minister of State for Administrative Development (OMSAR)",
+      "publisher_name": "Office of the Minister of State for Administrative Development (OMSAR)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "strategy",
+        "public-sector"
+      ],
+      "category": "strategy",
+      "subcategory": null,
+      "legal_status": "national_strategy",
+      "publication_date": "2022",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Approved by the Council of Ministers (OMSAR news item, May 2022, not readable by automated access). OMSAR moved to a new website in 2025-26: the former English PDF (www.omsar.gov.lb/Assets/DT_EN.pdf) now returns 404 and the Arabic attachment URL is behind a Cloudflare challenge. Cited as 'Lebanon Digital Strategy (2020-2030)' in MITAI's roadmap.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Lebanon's government-wide digital transformation strategy prepared by OMSAR, covering e-services, interoperability, digital governance structures and data security, privacy and governance. MITAI's 2026 roadmap cites it as the basis for a proposed Digital Authority with data and AI management functions and a Cybersecurity Institute. The AI-specific content could not be read from the official copy during this review.",
+      "ai_governance_relevance": "Primary-source material for assessing strategy, public-sector.",
+      "source_url": "https://omsar.gov.lb/getattachment/6bc0abf6-d9d9-479b-a6f1-7663abcd9ee9/",
+      "official_pdf_url": "https://www.omsar.gov.lb/Assets/DT_EN.pdf",
+      "official_webpage_url": "https://omsar.gov.lb/?p=1936",
+      "language": "ar",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-07",
+      "verification_level": "primary_source_located",
+      "metadata_gaps": [
+        "Full text not read (OMSAR site behind Cloudflare challenge; old /Assets/DT_EN.pdf and DT.pdf now return 404)",
+        "Exact Council of Ministers approval date",
+        "AI-specific provisions"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-07",
+      "link_status": "inaccessible",
+      "document_access_type": "original_government_document",
+      "lifecycle": "adopted",
+      "first_recorded": "2026-10-07",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-3c293a9bf889",
+      "organization_id": "o-c7b087a018d9"
+    },
+    {
+      "id": "i-93373a13133c",
+      "official_title": "Lebanon's National AI Education Framework: A Guide to Policy, and Competencies for Teachers and Students (Version 1.0)",
+      "english_title": "Lebanon's National AI Education Framework: A Guide to Policy, and Competencies for Teachers and Students",
+      "jurisdiction_id": "LBN",
+      "issuing_authority": "Center for Educational Research and Development (CRDP)",
+      "publisher_name": "Center for Educational Research and Development (CRDP)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "sectoral",
+        "ethics",
+        "generative-ai"
+      ],
+      "category": "sectoral",
+      "subcategory": null,
+      "legal_status": "administrative_guideline",
+      "publication_date": "2025-06",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Version 1.0 dated June 2025 on the cover; uploaded to crdp.org in October 2025 (PDF created 7 October 2025). Issued by CRDP, the public curriculum body; the document does not state ministerial approval.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Sets an AI policy for Lebanese schools plus AI competency frameworks for students and teachers. Schools must keep teacher judgment in final assessments, not let AI determine grades, comply with Law 81/2018, tell parents and students when AI is used, audit tools for bias, require students to cite AI-generated content and train teachers before classroom use. It builds on UNESCO's 2024 AI competency frameworks and the 2021 Recommendation on the Ethics of AI.",
+      "ai_governance_relevance": "Primary-source material for assessing sectoral, ethics, generative-ai.",
+      "source_url": "https://www.crdp.org/sites/default/files/2025-10/AI%20Educational%20Framework.pdf",
+      "official_pdf_url": "https://www.crdp.org/sites/default/files/2025-10/AI%20Educational%20Framework.pdf",
+      "official_webpage_url": null,
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-07",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Formal endorsement by the Minister of Education not stated"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-07",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-07",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-2bbaf6b18275",
+      "organization_id": "o-8c0f4cd7934e"
+    },
+    {
+      "id": "i-bf599101b5a1",
+      "official_title": "Empowering Lebanon's Healthcare System: A Vision for Digital Health Transformation",
+      "english_title": "Empowering Lebanon's Healthcare System: A Vision for Digital Health Transformation (Digital Health Vision)",
+      "jurisdiction_id": "LBN",
+      "issuing_authority": "Ministry of Public Health",
+      "publisher_name": "Ministry of Public Health",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "sectoral",
+        "strategy",
+        "ethics"
+      ],
+      "category": "sectoral",
+      "subcategory": null,
+      "legal_status": "national_strategy",
+      "publication_date": "2023-07",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Dated July 2023, with a foreword by Minister of Public Health Dr. Firass Abiad. The AI ethical guidelines it announces were not found published.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "The Ministry of Public Health's digital health vision for EHRs, telehealth, interoperability and data governance. Its governance pillar commits to comprehensive ethical guidelines for responsible use of emerging technologies including AI and machine learning in health, developed with OMSAR, with emphasis on transparency, fairness and accountability and reference to WHO guidance on AI ethics in health.",
+      "ai_governance_relevance": "Primary-source material for assessing sectoral, strategy, ethics.",
+      "source_url": "https://www.moph.gov.lb/userfiles/files/About%20MOPH/StrategicPlans/Vision%20for%20Digital%20Health%20Transformation/Digital%20Health%20Vision%20Final%20Version-.pdf",
+      "official_pdf_url": "https://www.moph.gov.lb/userfiles/files/About%20MOPH/StrategicPlans/Vision%20for%20Digital%20Health%20Transformation/Digital%20Health%20Vision%20Final%20Version-.pdf",
+      "official_webpage_url": null,
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-07",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-07",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-07",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-e55316a5d2ab",
+      "organization_id": "o-49404c520fb1"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-525dcacae0ad",
+      "jurisdiction_id": "LBN",
+      "name": "Parliament of Lebanon (Majlis al-Nuwwab)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Issuer of recorded instrument(s).",
+      "source_url": "https://www.lp.gov.lb/LawDetails.aspx?Id=1793",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-896b78618457",
+      "jurisdiction_id": "LBN",
+      "name": "Ministry of State for Technology and Artificial Intelligence (MITAI)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Issuer of recorded instrument(s).",
+      "source_url": "https://mitai.gov.lb/",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-c7b087a018d9",
+      "jurisdiction_id": "LBN",
+      "name": "Office of the Minister of State for Administrative Development (OMSAR)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Issuer of recorded instrument(s).",
+      "source_url": "https://omsar.gov.lb/",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-8c0f4cd7934e",
+      "jurisdiction_id": "LBN",
+      "name": "Center for Educational Research and Development (CRDP)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Issuer of recorded instrument(s).",
+      "source_url": "https://www.crdp.org/",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-49404c520fb1",
+      "jurisdiction_id": "LBN",
+      "name": "Ministry of Public Health",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Issuer of recorded instrument(s).",
+      "source_url": "https://www.moph.gov.lb/",
+      "authority_type": null,
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-70ec1a174a3d",
+      "url": "https://www.lp.gov.lb/LawDetails.aspx?Id=1793",
+      "jurisdiction_ids": [
+        "LBN"
+      ],
+      "source_institutions": [
+        "Parliament of Lebanon (Majlis al-Nuwwab)"
+      ],
+      "instrument_ids": [
+        "i-e2fc9dbe7052"
+      ],
+      "categories_reviewed": [
+        "data-privacy"
+      ],
+      "date_reviewed": "2026-10-07",
+      "checked_date": "2026-10-07",
+      "check_method": "Full PDF downloaded from the Parliament law database (Webservice GetLawFile, ID 1793) and read; cover page checked visually",
+      "http_status": 200,
+      "final_url": "https://www.lp.gov.lb/LawDetails.aspx?Id=1793",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "ar",
+      "error": null,
+      "content_type": null
+    },
+    {
+      "id": "s-3e06068ff3df",
+      "url": "https://mitai.gov.lb/assets/MITAI_Strategy_Full_Presentation-C6XQD81p.pdf",
+      "jurisdiction_ids": [
+        "LBN"
+      ],
+      "source_institutions": [
+        "Ministry of State for Technology and Artificial Intelligence (MITAI)"
+      ],
+      "instrument_ids": [
+        "i-4935afd1e0a0"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "government-governance",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-10-07",
+      "checked_date": "2026-10-07",
+      "check_method": "Read in full during deep review (downloaded and text-extracted)",
+      "http_status": 200,
+      "final_url": "https://mitai.gov.lb/assets/MITAI_Strategy_Full_Presentation-C6XQD81p.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": null
+    },
+    {
+      "id": "s-3c293a9bf889",
+      "url": "https://omsar.gov.lb/getattachment/6bc0abf6-d9d9-479b-a6f1-7663abcd9ee9/",
+      "jurisdiction_ids": [
+        "LBN"
+      ],
+      "source_institutions": [
+        "Office of the Minister of State for Administrative Development (OMSAR)"
+      ],
+      "instrument_ids": [
+        "i-fe2f9c4e77f2"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-10-07",
+      "checked_date": "2026-10-07",
+      "check_method": "Located through search and MITAI roadmap citations; automated read blocked (Cloudflare 403 / 404)",
+      "http_status": 403,
+      "final_url": "https://omsar.gov.lb/getattachment/6bc0abf6-d9d9-479b-a6f1-7663abcd9ee9/",
+      "link_status": "inaccessible",
+      "page_title": null,
+      "document_language": "ar",
+      "error": "Not readable by automated access",
+      "content_type": null
+    },
+    {
+      "id": "s-2bbaf6b18275",
+      "url": "https://www.crdp.org/sites/default/files/2025-10/AI%20Educational%20Framework.pdf",
+      "jurisdiction_ids": [
+        "LBN"
+      ],
+      "source_institutions": [
+        "Center for Educational Research and Development (CRDP)"
+      ],
+      "instrument_ids": [
+        "i-93373a13133c"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "ethics",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-07",
+      "checked_date": "2026-10-07",
+      "check_method": "Read in full during deep review (downloaded and text-extracted)",
+      "http_status": 200,
+      "final_url": "https://www.crdp.org/sites/default/files/2025-10/AI%20Educational%20Framework.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": null
+    },
+    {
+      "id": "s-e55316a5d2ab",
+      "url": "https://www.moph.gov.lb/userfiles/files/About%20MOPH/StrategicPlans/Vision%20for%20Digital%20Health%20Transformation/Digital%20Health%20Vision%20Final%20Version-.pdf",
+      "jurisdiction_ids": [
+        "LBN"
+      ],
+      "source_institutions": [
+        "Ministry of Public Health"
+      ],
+      "instrument_ids": [
+        "i-bf599101b5a1"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "strategy",
+        "ethics"
+      ],
+      "date_reviewed": "2026-10-07",
+      "checked_date": "2026-10-07",
+      "check_method": "Read in full during deep review (downloaded and text-extracted)",
+      "http_status": 200,
+      "final_url": "https://www.moph.gov.lb/userfiles/files/About%20MOPH/StrategicPlans/Vision%20for%20Digital%20Health%20Transformation/Digital%20Health%20Vision%20Final%20Version-.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": null
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "LBN",
     "country": "Lebanon",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
-    "categories_searched": [
-      "strategy",
-      "government-governance",
-      "ethics",
-      "public-sector",
-      "procurement",
-      "cyber-security",
+    "review_status": "DEEP REVIEW COMPLETE",
+    "categories_searched": {
+      "binding-law": "Laws & regulations",
+      "strategy": "Strategy & action plans",
+      "government-governance": "Government AI governance",
+      "ethics": "Responsible AI & ethics",
+      "risk-assurance": "Risk & assurance",
+      "public-sector": "Public-sector AI",
+      "procurement": "AI procurement",
+      "cyber-security": "Safety & cybersecurity",
+      "data-privacy": "Data & privacy",
+      "transparency": "Transparency & accountability",
+      "standards": "Standards & certification",
+      "sandbox": "Regulatory sandboxes",
+      "index-readiness": "Indices & maturity",
+      "sectoral": "Sectoral governance",
+      "generative-ai": "Generative & agentic AI",
+      "drafts": "Drafts & consultations",
+      "international": "Regional & international",
+      "historical": "Historical publications"
+    },
+    "categories_with_findings": [
       "data-privacy",
-      "risk-assurance",
-      "transparency"
+      "ethics",
+      "generative-ai",
+      "government-governance",
+      "public-sector",
+      "sectoral",
+      "strategy"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_where_no_material_was_found": [
       "binding-law",
-      "strategy",
-      "government-governance",
-      "ethics",
       "risk-assurance",
-      "public-sector",
       "procurement",
       "cyber-security",
-      "data-privacy",
       "transparency",
       "standards",
       "sandbox",
       "index-readiness",
-      "sectoral",
-      "generative-ai",
       "drafts",
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Lebanon \"الذكاء الاصطناعي\" (استراتيجية OR تنظيم OR أخلاقيات) government ministry official",
       "Lebanon \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Lebanon government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Lebanon \"الذكاء الاصطناعي\" cybersecurity authority secure development safety guidelines",
-      "Lebanon privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Lebanon privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "Lebanon Digital Transformation Strategy 2020-2030 OMSAR pdf artificial intelligence",
+      "\"استراتيجية التحول الرقمي\" لبنان 2020-2030 pdf gov.lb",
+      "omsar.gov.lb wp-content uploads Digital Transformation Strategy pdf",
+      "Lebanon \"Digital Transformation Strategy\" 2020-2030 OMSAR \"artificial intelligence\" emerging technologies pillar Council of Ministers 12 May 2022",
+      "القانون رقم 81 تاريخ 10/10/2018 المعاملات الالكترونية والبيانات ذات الطابع الشخصي pdf",
+      "Law 81 2018 electronic transactions personal data Lebanon pdf site:gov.lb",
+      "قانون المعاملات الالكترونية والبيانات ذات الطابع الشخصي رقم 81 economy.gov.lb OR lp.gov.lb OR pcm.gov.lb",
+      "bdl.gov.lb law 81 electronic transactions personal data",
+      "economy.gov.lb \"Law 81\" electronic transactions",
+      "legiliban ul.edu.lb قانون 81 2018 المعاملات الالكترونية",
+      "lp.gov.lb law database: laws approved 2018, 2024, 2025, 2026 (all sessions listed and scanned for AI/digital/data laws)",
+      "Lebanon Ministry of Industry national AI strategy 2019 artificial intelligence industry strategy document",
+      "\"الاستراتيجية الوطنية للذكاء الاصطناعي في الصناعة اللبنانية\" 2020-2050 وزارة الصناعة",
+      "\"الذكاء الاصطناعي\" لبنان اقتراح قانون مجلس النواب 2025",
+      "مجلس الوزراء أقر مشروع قانون إنشاء وزارة التكنولوجيا والذكاء الاصطناعي لبنان",
+      "اقتراح قانون الهيئة الوطنية للذكاء الاصطناعي لبنان نواب",
+      "\"الإطار الوطني للذكاء الاصطناعي\" لبنان وزارة التكنولوجيا",
+      "mitai.gov.lb site bundle: public-consultation, knowledge-hub, numu pages and strategy asset",
+      "Banque du Liban circular artificial intelligence banks 2025",
+      "مصرف لبنان تعميم أساسي الذكاء الاصطناعي المصارف",
+      "UNESCO AI Readiness Assessment Methodology Lebanon 2025 report",
+      "المركز التربوي للبحوث والإنماء الذكاء الاصطناعي إرشادات استخدام المدارس لبنان وزارة التربية",
+      "crdp.org الذكاء الاصطناعي إطار مرجعي OR دليل OR سياسة استخدام 2025",
+      "Lebanon Ministry of Education AI policy guidelines generative AI schools 2025 MEHE",
+      "Lebanese University \"Guidelines on Governance and Ethics of AI in Lebanon\"",
+      "Lebanon national cybersecurity strategy 2019 artificial intelligence Presidency Council of Ministers pdf",
+      "OMSAR Lebanon artificial intelligence guidelines public sector use generative AI government employees",
+      "LIBNOR ISO/IEC 42001 artificial intelligence standard Lebanon adoption",
+      "Lebanon Ministry of Public Health artificial intelligence guidance OR Telecommunications Regulatory Authority artificial intelligence Lebanon"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-07",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
-    "discovery_result_count": 11,
-    "focused_result_count": 12
+    "no_material_found_note": "Searched official sources (official language and English) with no AI-specific published instrument found for: binding AI law (Parliament law lists 2024-2026 checked), risk/assurance, procurement, cyber-security AI guidance, transparency, standards (LIBNOR), sandbox (MITAI mentions a planned AI sandbox, no instrument), index/readiness (no UNESCO RAM for Lebanon), drafts with published text (pending drafts are recorded as leads), international treaties (no AI treaty signed; UNESCO Recommendation via regional file), historical (2019 industry AI strategy has no official copy).",
+    "discovery_result_count": 30,
+    "focused_result_count": 5
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-345615d62a3f",
+      "date": "2026-10-07",
+      "recorded": "2026-10-07",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "LBN",
+      "instrument_id": "i-e2fc9dbe7052",
+      "title": "Law No. 81 of 10 October 2018 on Electronic Transactions and Personal Data",
+      "detail": "Added to the radar (published 2018-10-10).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.lp.gov.lb/LawDetails.aspx?Id=1793",
+      "needs_review": false
+    },
+    {
+      "id": "c-36612d3fd546",
+      "date": "2026-10-07",
+      "recorded": "2026-10-07",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "LBN",
+      "instrument_id": "i-4935afd1e0a0",
+      "title": "Lebanon's Digital and AI Transformation: A Strategic Roadmap (LEAP strategy)",
+      "detail": "Added to the radar (published 2025-05-15).",
+      "from": null,
+      "to": null,
+      "source_url": "https://mitai.gov.lb/assets/MITAI_Strategy_Full_Presentation-C6XQD81p.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-c6a249914b74",
+      "date": "2026-10-07",
+      "recorded": "2026-10-07",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "LBN",
+      "instrument_id": "i-fe2f9c4e77f2",
+      "title": "Lebanon Digital Transformation Strategy 2020-2030",
+      "detail": "Added to the radar (published 2022).",
+      "from": null,
+      "to": null,
+      "source_url": "https://omsar.gov.lb/getattachment/6bc0abf6-d9d9-479b-a6f1-7663abcd9ee9/",
+      "needs_review": false
+    },
+    {
+      "id": "c-e897589b42f7",
+      "date": "2026-10-07",
+      "recorded": "2026-10-07",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "LBN",
+      "instrument_id": "i-93373a13133c",
+      "title": "Lebanon's National AI Education Framework: A Guide to Policy, and Competencies for Teachers and Students",
+      "detail": "Added to the radar (published 2025-06).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.crdp.org/sites/default/files/2025-10/AI%20Educational%20Framework.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-b006a91f51c2",
+      "date": "2026-10-07",
+      "recorded": "2026-10-07",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "LBN",
+      "instrument_id": "i-bf599101b5a1",
+      "title": "Empowering Lebanon's Healthcare System: A Vision for Digital Health Transformation (Digital Health Vision)",
+      "detail": "Added to the radar (published 2023-07).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.moph.gov.lb/userfiles/files/About%20MOPH/StrategicPlans/Vision%20for%20Digital%20Health%20Transformation/Digital%20Health%20Vision%20Final%20Version-.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-299d589ffe28",
+      "date": "2026-10-07",
+      "recorded": "2026-10-07",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "LBN",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 5 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-d0c33bb794ad",
+      "date": "2026-03-05",
+      "recorded": "2026-10-07",
+      "kind": "world",
+      "type": "revised",
+      "jurisdiction_id": "LBN",
+      "instrument_id": "i-4935afd1e0a0",
+      "title": "MITAI strategic roadmap updated",
+      "detail": "Updated version of the roadmap dated 5 March 2026, listing draft laws at Parliament and frameworks under consultation.",
+      "from": null,
+      "to": null,
+      "source_url": "https://mitai.gov.lb/assets/MITAI_Strategy_Full_Presentation-C6XQD81p.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-94dd41d4ed1a",
+      "date": "2025-05-15",
+      "recorded": "2026-10-07",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "LBN",
+      "instrument_id": "i-4935afd1e0a0",
+      "title": "MITAI strategic roadmap (LEAP) shared",
+      "detail": "Minister of State for Technology and AI shared the roadmap Lebanon’s Digital and AI Transformation (date on the document cover).",
+      "from": null,
+      "to": null,
+      "source_url": "https://mitai.gov.lb/assets/MITAI_Strategy_Full_Presentation-C6XQD81p.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-d460146a3ae8",
+      "date": "2018-10-10",
+      "recorded": "2026-10-07",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "LBN",
+      "instrument_id": "i-e2fc9dbe7052",
+      "title": "Law No. 81/2018 on Electronic Transactions and Personal Data issued",
+      "detail": "Law No. 81 dated 10 October 2018 issued; published in Official Gazette No. 45 of 18 October 2018 and in force three months after publication.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.lp.gov.lb/LawDetails.aspx?Id=1793",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "مشروع قانون إنشاء وزارة التكنولوجيا والذكاء الاصطناعي",
+      "english_title": "Draft law establishing the Ministry of Technology and Artificial Intelligence (MITAI Law)",
+      "issuing_authority": "Council of Ministers / Ministry of State for Technology and AI",
+      "note": "Approved by the Council of Ministers in 2025 and before Parliament ('At Parliament' per MITAI roadmap, March 2026). No official text published.",
+      "found": "2026-10-07"
+    },
+    {
+      "title": "Digital Authority Law (draft)",
+      "english_title": "Draft law establishing the Digital & AI Authority",
+      "issuing_authority": "Ministry of State for Technology and AI",
+      "note": "Listed as 'At Parliament' in the MITAI roadmap (March 2026); would create an independent authority under the Prime Minister for digital and AI standards and strategy execution. No text online.",
+      "found": "2026-10-07"
+    },
+    {
+      "title": "الإطار الوطني للذكاء الاصطناعي",
+      "english_title": "National AI Framework",
+      "issuing_authority": "Ministry of State for Technology and AI",
+      "note": "Listed as under public consultation on mitai.gov.lb (Public Consultations: 'Coming Soon') and in the roadmap; no document downloadable as of 2026-10-07.",
+      "found": "2026-10-07"
+    },
+    {
+      "title": "AI Readiness Framework",
+      "english_title": "AI Readiness Framework for ministries",
+      "issuing_authority": "Ministry of State for Technology and AI",
+      "note": "Listed as under consultation in the MITAI roadmap (March 2026); no text online.",
+      "found": "2026-10-07"
+    },
+    {
+      "title": "Artificial Intelligence Law (proposed)",
+      "english_title": "Artificial Intelligence Law",
+      "issuing_authority": "Ministry of State for Technology and AI",
+      "note": "Shown with status 'Proposed' in the mitai.gov.lb Knowledge Hub (under construction); no text online.",
+      "found": "2026-10-07"
+    },
+    {
+      "title": "اقتراح قانون إنشاء الهيئة الوطنية للذكاء الاصطناعي",
+      "english_title": "Law proposal to establish a National Authority for Artificial Intelligence",
+      "issuing_authority": "Members of Parliament (Free Patriotic Movement deputies)",
+      "note": "Submitted to Parliament on 4 June 2025 per press reports; no official text on lp.gov.lb.",
+      "found": "2026-10-07"
+    },
+    {
+      "title": "Draft Data Protection Law and Cybersecurity Law",
+      "english_title": "Draft Data Protection Law; draft Cybersecurity (Institute) Law",
+      "issuing_authority": "Ministry of State for Technology and AI",
+      "note": "Drafted for Council of Ministers review per MITAI roadmap (March 2026); listed as 'Draft' on mitai.gov.lb Knowledge Hub. Would replace or complement the personal-data part of Law 81/2018.",
+      "found": "2026-10-07"
+    },
+    {
+      "title": "الاستراتيجية الوطنية للذكاء الاصطناعي في الصناعة اللبنانية 2020-2050",
+      "english_title": "National Artificial Intelligence Strategy in Lebanese Industry (2020-2050)",
+      "issuing_authority": "Ministry of Industry",
+      "note": "Published August 2019; only an ESCWA-hosted copy is online (andp.unescwa.org, itself 403 to automated access); industry.gov.lb unreachable. Would be a historical strategy record if an official copy is found.",
+      "found": "2026-10-07"
+    },
+    {
+      "title": "AI Ecosystem Mapping Report",
+      "english_title": "Lebanon AI Ecosystem Mapping Report",
+      "issuing_authority": "Ministry of State for Technology and AI (NUMU programme)",
+      "note": "Offered on mitai.gov.lb/numu behind a sign-up form; not openly downloadable.",
+      "found": "2026-10-07"
+    }
+  ]
 }
