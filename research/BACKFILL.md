@@ -8,7 +8,8 @@ A one-off push to give all 195 countries a deep review, run from Claude Code (wh
 2. `python3 scripts/next_batch.py`: the countries for this run (one tier A country, or a batch of B/C countries; PROTOCOL §6).
 3. One sub-agent per country, in parallel. Each gets PROTOCOL.md in full and its country file, and returns the completed file.
 4. The lead: reads each file, runs `python3 scripts/validate.py` (0 errors), opens at least two `source_url`s per country, adds the countries to `done` in `queue.json`, then runs `log_changes.py` and `build.py`.
-5. Commit, push, open one PR titled `Deep review: <countries>` with the WEEKLY.md body (countries with a one-line summary, government actions, needs review, could not verify). Do not merge.
+5. **Re-check after a restart.** If a run is cut off (for example by a usage limit) and resumed, every record an agent wrote before the restart must be re-checked against its official text before the PR opens: re-read the source, confirm the dates, status and summary, and fix or flag anything that does not match. Say in the PR which records were re-checked and what changed.
+6. Commit, push, open one PR titled `Deep review: <countries>` with the WEEKLY.md body (countries with a one-line summary, government actions, needs review, could not verify). Do not merge.
 
 ## Running several at once
 
