@@ -107,6 +107,7 @@ Also for the country:
 
 - `narrative.summary`: 4–6 sentences covering the country's AI-governance approach, main instruments, lead institutions and current direction
 - `narrative.lead_institutions`: names of the bodies leading AI governance
+- `narrative.review_notes`: **public text**, shown to readers. In plain language, say which institutions were searched, which official sites could not be accessed, and what is pending (documents held as leads, gaps to fill later). Do not include HTTP, TLS or proxy errors, tool names, or the names of commercial or aggregator sites. Put those technical details in `coverage_audit.no_material_found_note`.
 - `coverage_audit.categories_with_findings` and `categories_where_no_material_was_found`: **every one of the 18 categories must be in one of these two lists**, so `categories_requiring_review` ends up empty
 - `narrative.last_deep_review`: the review date. Set it last, only when everything above is done.
 
