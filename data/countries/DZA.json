@@ -6,82 +6,628 @@
     "region": "Africa",
     "research_language": "ar",
     "type": "country",
-    "aliases": [],
+    "aliases": [
+      "Algérie",
+      "الجزائر",
+      "People's Democratic Republic of Algeria"
+    ],
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Algeria has no AI-specific law; AI is governed through strategy documents, sector guidance and the general personal-data law. The binding layer is Law 18-07 of 2018 on personal data, overseen by the National Authority for the Protection of Personal Data (ANPDP) and substantially amended by Law 25-11 of July 2025, which adds profiling and biometric definitions, data protection officers, processing registers and, for criminal-justice processing, limits on automated decisions and impact assessments. The High Commission for Digitalization's National Digital Transformation Strategy 2025–2030 (validated August 2024) mentions AI only as an enabling technology for digital governance. A dedicated National AI Strategy, built on data, digital infrastructure and skills, was examined by the Government on 25 May 2026 and is being implemented through sector committees chaired by the Ministry of Higher Education and Scientific Research (MESRS), but its text has not been published. In higher education, the 2023 university ethics charter and a note on digital ethics set out AI-ethics expectations.",
+    "lead_institutions": [
+      "Ministry of Higher Education and Scientific Research (MESRS)",
+      "High Commission for Digitalization (Haut-Commissariat à la Numérisation), Presidency of the Republic",
+      "National Authority for the Protection of Personal Data (ANPDP)",
+      "Ministry of Knowledge Economy, Start-ups and Micro-enterprises"
+    ],
+    "last_deep_review": "2026-10-07",
+    "review_notes": "Deep review 2026-10-07. The French edition of every Journal officiel issue from 2019 to issue 69 of 2026 (about 690 PDFs from joradp.dz) was downloaded and searched for 'intelligence artificielle'. The hits are founding and organisation texts for the Ecole nationale supérieure en intelligence artificielle (from 2021), research-unit orders, a 2025 MESRS order creating an AI thematic research network (DZAIR) under the ATRST, and an occupational-safety decree defining automated work. These are education or research infrastructure, not AI governance, and are not recorded. Presidential Decree 23-314 of 6 September 2023 creating the High Commission for Digitalization does not mention AI and is not recorded. Official titles are given from the French edition of the Journal officiel; the Arabic text is authentic, and the Arabic PDF links are kept in official_webpage_url. Sites that blocked or failed automated reading: anpdp.dz (HTTP 500), premier-ministre.gov.dz and bank-of-algeria.dz (TLS certificate chain not verifiable via the proxy), el-mouradia.dz, assi.dz, mpttn.gov.dz and numerisation.gov.dz (connection reset or 502), univ-jijel.dz (connection reset). No news agency or aggregator is used as a source. The national AI strategy, adopted at the African Start-up Conference (December 2024) and examined by the Government on 25 May 2026, is held as a lead until an official text is published. The 2 August 2023 note on digital ethics is not recorded separately; its URL is cited in the Charter of University Deontology and Ethics record."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-199efb78e542",
+      "official_title": "Loi n° 18-07 du 25 Ramadhan 1439 correspondant au 10 juin 2018 relative à la protection des personnes physiques dans le traitement des données à caractère personnel",
+      "english_title": "Law No. 18-07 of 10 June 2018 on the protection of natural persons in the processing of personal data",
+      "jurisdiction_id": "DZA",
+      "issuing_authority": "President of the Republic (law adopted by Parliament)",
+      "publisher_name": "Secretariat General of the Government (Journal officiel de la République algérienne)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "data-privacy"
+      ],
+      "category": "data-privacy",
+      "subcategory": null,
+      "legal_status": "binding_law",
+      "publication_date": "2018-06-10",
+      "effective_date": null,
+      "last_amended_date": "2025-07-24",
+      "current_status": "In force; published in Journal officiel No. 34 of 10 June 2018 (Arabic text authentic; French edition is the official translation). Art. 75 gives existing processors one year from the installation of the National Authority (ANPDP) to comply; no single commencement date is stated. Amended and completed by Law No. 25-11 of 24 July 2025, which repealed Arts. 10 and 11.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Algeria's general personal-data law: it sets lawful-processing principles, prior declaration or authorisation of processing with the National Authority for the Protection of Personal Data (ANPDP), data-subject rights, cross-border transfer limits and criminal penalties. As adopted, Art. 11 barred decisions with legal effects from being based solely on automated processing that profiles a person; Law 25-11 of 2025 repealed Arts. 10 and 11 and moved a similar rule into a new title on criminal-justice processing. The law binds public and private controllers, so it governs personal data used to train and run AI systems.",
+      "ai_governance_relevance": "Primary-source material for assessing data-privacy.",
+      "source_url": "https://www.joradp.dz/FTP/jo-francais/2018/F2018034.pdf",
+      "official_pdf_url": "https://www.joradp.dz/FTP/jo-francais/2018/F2018034.pdf",
+      "official_webpage_url": "https://www.joradp.dz/FTP/jo-arabe/2018/A2018034.pdf",
+      "language": "fr",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-b073e2d07759"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-10-07",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Commencement date (Art. 75 ties compliance to ANPDP installation; not stated in the law)"
+      ],
+      "source_kind": "legislation_portal",
+      "evidence_reference": "deep-review-2026-10-07",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "in_force",
+      "first_recorded": "2026-10-07",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-9b39f08b55b9",
+      "organization_id": "o-99cad6a0b677"
+    },
+    {
+      "id": "i-b073e2d07759",
+      "official_title": "Loi n° 25-11 du 28 Moharram 1447 correspondant au 24 juillet 2025 modifiant et complétant la loi n° 18-07 du 25 Ramadhan 1439 correspondant au 10 juin 2018 relative à la protection des personnes physiques dans le traitement des données à caractère personnel",
+      "english_title": "Law No. 25-11 of 24 July 2025 amending and completing Law No. 18-07 on the protection of natural persons in the processing of personal data",
+      "jurisdiction_id": "DZA",
+      "issuing_authority": "President of the Republic (law adopted by Parliament)",
+      "publisher_name": "Secretariat General of the Government (Journal officiel de la République algérienne)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "data-privacy"
+      ],
+      "category": "data-privacy",
+      "subcategory": null,
+      "legal_status": "binding_law",
+      "publication_date": "2025-07-24",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Published in Journal officiel No. 48 of 24 July 2025 (Arabic text authentic; French edition is the official translation). The law states no separate commencement date; some provisions (ANPDP regional poles) require implementing regulations.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Amends Law 18-07: adds definitions of biometric data, profiling and pseudonymisation; requires controllers and competent authorities to appoint a data protection officer and to keep a register of processing activities and an automated log of processing operations; and creates ANPDP regional audit poles. A new Title V bis on processing for crime prevention, investigation, prosecution and sentencing bans judicial or other legal-effect decisions based solely on automated profiling, requires a prior impact assessment where new technologies create high risk, and imposes 5-day breach notification to the ANPDP; it also repeals Arts. 10 and 11 of Law 18-07. These rules matter for profiling and biometric systems, including AI-based ones.",
+      "ai_governance_relevance": "Primary-source material for assessing data-privacy.",
+      "source_url": "https://www.joradp.dz/FTP/jo-francais/2025/F2025048.pdf",
+      "official_pdf_url": "https://www.joradp.dz/FTP/jo-francais/2025/F2025048.pdf",
+      "official_webpage_url": "https://www.joradp.dz/FTP/jo-arabe/2025/A2025048.pdf",
+      "language": "fr",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-199efb78e542"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-10-07",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Commencement date not stated in the law",
+        "Implementing regulations for regional poles not yet located"
+      ],
+      "source_kind": "legislation_portal",
+      "evidence_reference": "deep-review-2026-10-07",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "in_force",
+      "first_recorded": "2026-10-07",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-0dc5693d9b7f",
+      "organization_id": "o-99cad6a0b677"
+    },
+    {
+      "id": "i-db2a78a0105c",
+      "official_title": "Stratégie Nationale de la Transformation Numérique en Algérie — Pour une Algérie numérique 2030",
+      "english_title": "National Digital Transformation Strategy in Algeria — For a Digital Algeria 2030 (SNTN 2025–2030)",
+      "jurisdiction_id": "DZA",
+      "issuing_authority": "High Commission for Digitalization (Haut-Commissariat à la Numérisation), Presidency of the Republic",
+      "publisher_name": "High Commission for Digitalization (Haut-Commissariat à la Numérisation)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "strategy"
+      ],
+      "category": "strategy",
+      "subcategory": null,
+      "legal_status": "national_strategy",
+      "publication_date": "2024-08",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Published framework document; the official PDFs (French, Arabic, English) carry 'Version validée août 2024' (English: 'August 2nd 2024 version'). The HCN was created by Presidential Decree No. 23-314 of 6 September 2023. Public launch date not stated on the official site.",
+      "scope": null,
+      "sectors": [
+        "public administration"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Algeria's national digital transformation strategy for 2025–2030, built on five axes (ICT infrastructure, human capital and training, digital governance, digital economy, digital society) and 25 strategic objectives, with a planned overarching digital law and alignment with the national information-systems security framework. AI is not a separate pillar: the digital-governance axis names AI and the Internet of Things as emerging technologies to be introduced for modernising public administration. It guides ministries and public bodies but is not binding.",
+      "ai_governance_relevance": "Primary-source material for assessing strategy.",
+      "source_url": "https://www.hcn.dz/SNTN-Fr.pdf",
+      "official_pdf_url": "https://www.hcn.dz/SNTN-Fr.pdf",
+      "official_webpage_url": "https://www.hcn.dz/SNTN-En.pdf",
+      "language": "fr",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-07",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Exact validation/adoption date (document gives month only in French edition)"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-07",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-07",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-1348c84b9376",
+      "organization_id": "o-29a98c1fd51d"
+    },
+    {
+      "id": "i-984a08a1f758",
+      "official_title": "Charte de déontologie et d'éthique universitaires (août 2023)",
+      "english_title": "Charter of University Deontology and Ethics (August 2023 edition)",
+      "jurisdiction_id": "DZA",
+      "issuing_authority": "Ministry of Higher Education and Scientific Research (MESRS)",
+      "publisher_name": "Ministry of Higher Education and Scientific Research (MESRS)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "ethics",
+        "sectoral"
+      ],
+      "category": "ethics",
+      "subcategory": null,
+      "legal_status": "administrative_guideline",
+      "publication_date": "2023-08",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "August 2023 edition prepared by the National Council for Ethics and Deontology of the University Profession at the Minister's request; it updates the 2010 charter. MESRS invites members of the university community to sign it. Related: the National Council for Ethics and Deontology's 'Note sur l'éthique numérique' of 2 August 2023 (https://services.mesrs.dz/cned/download/Note_sur_ethique_numerique_2_Aout_2023.pdf) develops the charter's digital-ethics and AI points; it is not recorded as a separate instrument.",
+      "scope": null,
+      "sectors": [
+        "education"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "The charter of ethics and professional conduct for the whole public and private university community. Its new section 1.7 on digital ethics requires institutions to secure data, protect privacy, counter manipulation and discrimination from biased algorithms and datasets, and contribute to frameworks for the ethical governance of AI in higher education and research. It applies to staff and students as a sector code, not as legislation.",
+      "ai_governance_relevance": "Primary-source material for assessing ethics, sectoral.",
+      "source_url": "https://services.mesrs.dz/cned/download/Charte_du_Conseil-02-08-2023.pdf",
+      "official_pdf_url": "https://services.mesrs.dz/cned/download/Charte_du_Conseil-02-08-2023.pdf",
+      "official_webpage_url": "https://www.mesrs.dz/fr/ethique-et-deontologie/",
+      "language": "fr",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-07",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Exact day of issue (document states August 2023)"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-07",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-07",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-334fd14145be",
+      "organization_id": "o-64e9ff6ea156"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-99cad6a0b677",
+      "jurisdiction_id": "DZA",
+      "name": "President of the Republic (law adopted by Parliament)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Issuer of recorded instrument(s).",
+      "source_url": "https://www.joradp.dz/FTP/jo-francais/2018/F2018034.pdf",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-29a98c1fd51d",
+      "jurisdiction_id": "DZA",
+      "name": "High Commission for Digitalization (Haut-Commissariat à la Numérisation), Presidency of the Republic",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Issuer of recorded instrument(s).",
+      "source_url": "https://www.hcn.dz/SNTN-Fr.pdf",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-64e9ff6ea156",
+      "jurisdiction_id": "DZA",
+      "name": "Ministry of Higher Education and Scientific Research (MESRS)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Issuer of recorded instrument(s).",
+      "source_url": "https://services.mesrs.dz/cned/download/Charte_du_Conseil-02-08-2023.pdf",
+      "authority_type": null,
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-9b39f08b55b9",
+      "url": "https://www.joradp.dz/FTP/jo-francais/2018/F2018034.pdf",
+      "jurisdiction_ids": [
+        "DZA"
+      ],
+      "source_institutions": [
+        "President of the Republic (law adopted by Parliament)"
+      ],
+      "instrument_ids": [
+        "i-199efb78e542"
+      ],
+      "categories_reviewed": [
+        "data-privacy"
+      ],
+      "date_reviewed": "2026-10-07",
+      "checked_date": "2026-10-07",
+      "check_method": "Downloaded and read the official PDF (pdftotext)",
+      "http_status": 200,
+      "final_url": "https://www.joradp.dz/FTP/jo-francais/2018/F2018034.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "fr",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-0dc5693d9b7f",
+      "url": "https://www.joradp.dz/FTP/jo-francais/2025/F2025048.pdf",
+      "jurisdiction_ids": [
+        "DZA"
+      ],
+      "source_institutions": [
+        "President of the Republic (law adopted by Parliament)"
+      ],
+      "instrument_ids": [
+        "i-b073e2d07759"
+      ],
+      "categories_reviewed": [
+        "data-privacy"
+      ],
+      "date_reviewed": "2026-10-07",
+      "checked_date": "2026-10-07",
+      "check_method": "Downloaded and read the official PDF (pdftotext)",
+      "http_status": 200,
+      "final_url": "https://www.joradp.dz/FTP/jo-francais/2025/F2025048.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "fr",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-1348c84b9376",
+      "url": "https://www.hcn.dz/SNTN-Fr.pdf",
+      "jurisdiction_ids": [
+        "DZA"
+      ],
+      "source_institutions": [
+        "High Commission for Digitalization (Haut-Commissariat à la Numérisation), Presidency of the Republic"
+      ],
+      "instrument_ids": [
+        "i-db2a78a0105c"
+      ],
+      "categories_reviewed": [
+        "strategy"
+      ],
+      "date_reviewed": "2026-10-07",
+      "checked_date": "2026-10-07",
+      "check_method": "Downloaded and read the official PDF (pdftotext)",
+      "http_status": 200,
+      "final_url": "https://www.hcn.dz/SNTN-Fr.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "fr",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-334fd14145be",
+      "url": "https://services.mesrs.dz/cned/download/Charte_du_Conseil-02-08-2023.pdf",
+      "jurisdiction_ids": [
+        "DZA"
+      ],
+      "source_institutions": [
+        "Ministry of Higher Education and Scientific Research (MESRS)"
+      ],
+      "instrument_ids": [
+        "i-984a08a1f758"
+      ],
+      "categories_reviewed": [
+        "ethics",
+        "sectoral"
+      ],
+      "date_reviewed": "2026-10-07",
+      "checked_date": "2026-10-07",
+      "check_method": "Downloaded and read the official PDF (pdftotext)",
+      "http_status": 200,
+      "final_url": "https://services.mesrs.dz/cned/download/Charte_du_Conseil-02-08-2023.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "fr",
+      "error": null,
+      "content_type": "application/pdf"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "DZA",
     "country": "Algeria",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
-    "categories_searched": [
-      "strategy",
-      "government-governance",
-      "ethics",
-      "public-sector",
-      "procurement",
-      "cyber-security",
+    "review_status": "DEEP REVIEW COMPLETE",
+    "categories_searched": {
+      "binding-law": "Laws & regulations",
+      "strategy": "Strategy & action plans",
+      "government-governance": "Government AI governance",
+      "ethics": "Responsible AI & ethics",
+      "risk-assurance": "Risk & assurance",
+      "public-sector": "Public-sector AI",
+      "procurement": "AI procurement",
+      "cyber-security": "Safety & cybersecurity",
+      "data-privacy": "Data & privacy",
+      "transparency": "Transparency & accountability",
+      "standards": "Standards & certification",
+      "sandbox": "Regulatory sandboxes",
+      "index-readiness": "Indices & maturity",
+      "sectoral": "Sectoral governance",
+      "generative-ai": "Generative & agentic AI",
+      "drafts": "Drafts & consultations",
+      "international": "Regional & international",
+      "historical": "Historical publications"
+    },
+    "categories_with_findings": [
       "data-privacy",
-      "risk-assurance",
-      "transparency"
+      "ethics",
+      "sectoral",
+      "strategy"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_where_no_material_was_found": [
       "binding-law",
-      "strategy",
       "government-governance",
-      "ethics",
       "risk-assurance",
       "public-sector",
       "procurement",
       "cyber-security",
-      "data-privacy",
       "transparency",
       "standards",
       "sandbox",
       "index-readiness",
-      "sectoral",
       "generative-ai",
       "drafts",
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Algeria \"الذكاء الاصطناعي\" (استراتيجية OR تنظيم OR أخلاقيات) government ministry official",
       "Algeria \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Algeria government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Algeria \"الذكاء الاصطناعي\" cybersecurity authority secure development safety guidelines",
-      "Algeria privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Algeria privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "Algeria National Strategy for Research and Innovation in Artificial Intelligence 2020-2030 mesrs.dz pdf",
+      "الجزائر الجريدة الرسمية مرسوم رئاسي الذكاء الاصطناعي المجلس العلمي",
+      "loi 25-11 modifiant loi 18-07 protection des personnes physiques données à caractère personnel Algérie journal officiel 2025",
+      "\"loi n° 25-11\" 24 juillet 2025 journal officiel n° données à caractère personnel",
+      "Algérie stratégie nationale de l'intelligence artificielle 2025 conseil national décret présidentiel création",
+      "\"intelligence artificielle\" site:mesrs.dz",
+      "\"الذكاء الاصطناعي\" site:joradp.dz",
+      "Haut-Commissariat à la numérisation stratégie nationale de transformation numérique 2030 Algérie document intelligence artificielle",
+      "Algeria artificial intelligence law draft 2026 projet de loi intelligence artificielle Algérie",
+      "Conseil des ministres approuve stratégie nationale intelligence artificielle Algérie 2026",
+      "hcn.dz stratégie nationale de transformation numérique SNTN pdf télécharger",
+      "وزارة التعليم العالي الجزائر ميثاق أو دليل الاستخدام الأخلاقي للذكاء الاصطناعي في البحث العلمي والتعليم العالي",
+      "مجلس الوزراء الجزائر يصادق على الاستراتيجية الوطنية للذكاء الاصطناعي 2026",
+      "\"Stratégie nationale de recherche et d'innovation en intelligence artificielle\" Algérie 2020-2030 pdf dgrsdt",
+      "\"intelligence artificielle\" décret exécutif Journal officiel République algérienne création école nationale supérieure",
+      "upgrowth.dz journal officiel \"intelligence artificielle\" (discovery only)",
+      "IANOR norme algérienne NA ISO/IEC 42001 intelligence artificielle",
+      "Banque d'Algérie intelligence artificielle règlement instruction 2025 2026 fintech",
+      "ANPDP Algérie autorité nationale protection données personnelles délibération intelligence artificielle guide",
+      "ASSI Algérie Agence de sécurité des systèmes d'information référentiel national sécurité intelligence artificielle guide",
+      "Algérie ministère numérique décret 2025 ministère de l'économie de la connaissance intelligence artificielle attributions",
+      "Algérie bac sandbox réglementaire intelligence artificielle ARPCE OR \"Banque d'Algérie\" OR \"ministère de la santé\" guide IA officiel",
+      "الجزائر وزارة الرقمنة أو المحافظة السامية للرقمنة دليل استخدام الذكاء الاصطناعي في الإدارة العمومية",
+      "Journal officiel (joradp.dz) French edition 2019–2026, all issues: full-text search \"intelligence artificielle\", \"hypertrucage\", \"deepfake\", \"algorithm\", \"Haut-Commissariat à la numérisation\"",
+      "mesrs.dz site search: \"intelligence artificielle\" (FR) and \"الذكاء الاصطناعي\" (AR); MESRS ethics page",
+      "ianor.dz catalogue des normes algériennes 31 décembre 2025: 42001, 22989, 23894, intelligence artificielle",
+      "hcn.dz SNTN PDFs (FR/AR/EN): \"intelligence artificielle\", \"artificial intelligence\""
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-07",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
-    "discovery_result_count": 10,
-    "focused_result_count": 11
+    "no_material_found_note": "Searched and found no official AI-specific material for: binding AI law, AI governance body founding texts (no decree for the AI scientific council or national AI council in the Journal officiel 2019–2026), risk/assurance, public-sector AI rules, AI procurement, AI security guidance (ASSI), transparency, AI standards (IANOR catalogue to 31 Dec 2025 has no ISO/IEC 42001 or other AI standard), sandboxes, government AI indices, generative-AI guidance, published drafts or consultations, national treaties on AI, and superseded AI instruments. Regional instruments (AU Continental AI Strategy; UNESCO Recommendation) apply through data/regional.",
+    "discovery_result_count": 24,
+    "focused_result_count": 30
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-1f89c713802a",
+      "date": "2026-10-07",
+      "recorded": "2026-10-07",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "DZA",
+      "instrument_id": "i-199efb78e542",
+      "title": "Law No. 18-07 of 10 June 2018 on the protection of natural persons in the processing of personal data",
+      "detail": "Added to the radar (published 2018-06-10).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.joradp.dz/FTP/jo-francais/2018/F2018034.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-e481bb21f946",
+      "date": "2026-10-07",
+      "recorded": "2026-10-07",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "DZA",
+      "instrument_id": "i-b073e2d07759",
+      "title": "Law No. 25-11 of 24 July 2025 amending and completing Law No. 18-07 on the protection of natural persons in the processing of personal data",
+      "detail": "Added to the radar (published 2025-07-24).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.joradp.dz/FTP/jo-francais/2025/F2025048.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-506abece6600",
+      "date": "2026-10-07",
+      "recorded": "2026-10-07",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "DZA",
+      "instrument_id": "i-db2a78a0105c",
+      "title": "National Digital Transformation Strategy in Algeria — For a Digital Algeria 2030 (SNTN 2025–2030)",
+      "detail": "Added to the radar (published 2024-08).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.hcn.dz/SNTN-Fr.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-d09be0e48284",
+      "date": "2026-10-07",
+      "recorded": "2026-10-07",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "DZA",
+      "instrument_id": "i-984a08a1f758",
+      "title": "Charter of University Deontology and Ethics (August 2023 edition)",
+      "detail": "Added to the radar (published 2023-08).",
+      "from": null,
+      "to": null,
+      "source_url": "https://services.mesrs.dz/cned/download/Charte_du_Conseil-02-08-2023.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-f3d9d092ba68",
+      "date": "2026-10-07",
+      "recorded": "2026-10-07",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "DZA",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 4 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-11bad61f935b",
+      "date": "2025-07-24",
+      "recorded": "2026-10-07",
+      "kind": "world",
+      "type": "revised",
+      "jurisdiction_id": "DZA",
+      "instrument_id": "i-199efb78e542",
+      "title": "Law 18-07 amended by Law 25-11",
+      "detail": "Law No. 25-11 of 24 July 2025 (Journal officiel No. 48) amends and completes Law 18-07 and repeals its Arts. 10 and 11.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.joradp.dz/FTP/jo-francais/2025/F2025048.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-d34238adf6e7",
+      "date": "2025-07-24",
+      "recorded": "2026-10-07",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "DZA",
+      "instrument_id": "i-b073e2d07759",
+      "title": "Law 25-11 amending the personal data law published",
+      "detail": "Law No. 25-11 of 24 July 2025 published in Journal officiel No. 48.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.joradp.dz/FTP/jo-francais/2025/F2025048.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-6600011a9d04",
+      "date": "2018-06-10",
+      "recorded": "2026-10-07",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "DZA",
+      "instrument_id": "i-199efb78e542",
+      "title": "Law 18-07 on personal data protection published",
+      "detail": "Law No. 18-07 of 10 June 2018 published in Journal officiel No. 34.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.joradp.dz/FTP/jo-francais/2018/F2018034.pdf",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Stratégie nationale de l'intelligence artificielle",
+      "english_title": "National Artificial Intelligence Strategy",
+      "issuing_authority": "Government of Algeria (Ministry of Higher Education and Scientific Research; Ministry of Knowledge Economy, Start-ups and Micro-enterprises)",
+      "note": "Adopted at the African Start-up Conference (December 2024); a draft was examined at the Government meeting of 25 May 2026, with adoption by the Council of Ministers to follow. MESRS reports implementation meetings (third meeting on 21 September 2026). No official full text found on mesrs.dz, startup.dz, hcn.dz or the Prime Minister's site.",
+      "found": "2026-10-07"
+    },
+    {
+      "title": "Stratégie nationale de recherche et d'innovation en intelligence artificielle 2020–2030 (livre blanc)",
+      "english_title": "National Strategy for Research and Innovation in AI 2020–2030 (white paper)",
+      "issuing_authority": "Ministry of Higher Education and Scientific Research (MESRS)",
+      "note": "Prepared by MESRS from December 2019 (Constantine workshop), and a white paper was reported in 2021. No official full text found on mesrs.dz or dgrsdt.dz.",
+      "found": "2026-10-07"
+    },
+    {
+      "title": "Projet de décret portant création du Centre national de recherche en intelligence artificielle et données",
+      "english_title": "Draft decree creating the National Research Centre for AI and Data",
+      "issuing_authority": "Ministry of Higher Education and Scientific Research (MESRS)",
+      "note": "The updated draft decree was approved at the 21 September 2026 multisectoral meeting on the AI strategy (MESRS activity page) and sent on for legal procedure. Not yet in the Journal officiel.",
+      "found": "2026-10-07"
+    },
+    {
+      "title": "Loi sur le numérique",
+      "english_title": "Digital Law",
+      "issuing_authority": "High Commission for Digitalization (Haut-Commissariat à la Numérisation)",
+      "note": "The SNTN 2030 says that the HCN is preparing a comprehensive law regulating the digital domain. No draft published. Check it for AI provisions once it appears.",
+      "found": "2026-10-07"
+    }
+  ]
 }

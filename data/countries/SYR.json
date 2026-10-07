@@ -12,32 +12,138 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Syria has no AI-specific law, strategy, ethics framework or regulator guidance with an official text online as of October 2026. The one binding instrument that governs AI inputs is the Personal Data Protection Law (Law No. 12 of 2024, in force since 1 January 2025), which sets consent-based processing rules, data-subject rights and a Personal Data Protection Authority attached to the communications ministry. Digital policy is led by the Ministry of Communications and Information Technology (MoCT), with the National Agency for Information Technology Services (NAITS) publishing ICT laws, information-security policy and technical regulations, none of which mention AI. A national AI strategy discussed under the previous government (2022–2024) was never published as an official document, and since the 2025 transitional government MoCT has promoted AI through conferences and partnerships rather than published policy. Recorded leads include the 2024 executive instructions of the data protection law and the 2021 digital transformation strategy for government services.",
+    "lead_institutions": [
+      "Ministry of Communications and Information Technology (MoCT)",
+      "National Agency for Information Technology Services (NAITS)",
+      "Personal Data Protection Authority"
+    ],
+    "last_deep_review": "2026-10-07",
+    "review_notes": "Deep review 2026-10-07. moct.gov.sy, cb.gov.sy, pministry.gov.sy and mohe.gov.sy failed automated reading (TLS chain not verifiable / HTTP 503 to the fetcher); parliament.gov.sy, nans.gov.sy, mic.gov.sy and gov.sy were unreachable; sytra.gov.sy serves only a hosting placeholder page. NAITS (naits.gov.sy/laws) was readable and hosts the official texts of the ICT laws. Not recorded as AI instruments after reading the official texts (no AI provisions): Electronic Transactions Law No. 3 of 2014 (defines an automated 'electronic agent' but nothing AI-specific), Cybercrime Law No. 20 of 2022 (Ministry of Justice Circular No. 26 of 2026 now governs its procedures), Law No. 7 of 2023 establishing NAITS, the National Information Security Policy, and NAITS accreditation rules for electronic applications and information systems. SASMO's standards catalogue has no AI standard (no ISO/IEC 42001 adoption). Ministry of Health strategic plan and Ministry of Education pages have no AI policy text. The pre-2024 'National AI Strategy' is known only from state-newspaper reports (Al-Thawra, December 2024) with no issuing body or official text; held as a lead. News agencies and newspapers (SANA, Al-Watan, Al-Thawra) were used only for discovery. The UNESCO Recommendation on the Ethics of AI applies through the UNESCO regional file."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-87b2747b10fb",
+      "official_title": "القانون رقم /12/ لعام 2024 — قانون حماية البيانات الشخصية",
+      "english_title": "Personal Data Protection Law (Law No. 12 of 2024)",
+      "jurisdiction_id": "SYR",
+      "issuing_authority": "President of the Syrian Arab Republic (law passed by the People's Assembly)",
+      "publisher_name": "National Agency for Information Technology Services (NAITS)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "data-privacy"
+      ],
+      "category": "data-privacy",
+      "subcategory": null,
+      "legal_status": "binding_law",
+      "publication_date": "2024-03-28",
+      "effective_date": "2025-01-01",
+      "last_amended_date": null,
+      "current_status": "Issued in Damascus on 28 March 2024 (People's Assembly session of 18 March 2024); Article 46 makes it effective from 1 January 2025. Executive Instructions were issued by Prime Ministerial decision in 2024 (see leads). Enacted under the pre-December-2024 government; no repeal or amendment found by 2026-10-07, but its application under the transitional authorities and the status of the Personal Data Protection Authority were not confirmed from an official source.",
+      "scope": "Electronic processing of personal data by public and private controllers and processors in Syria",
+      "sectors": [],
+      "technology_scope": [
+        "AI",
+        "data"
+      ],
+      "summary": "Syria's general personal data law, covering electronic collection and processing of personal data. It bans processing or disclosure without the data subject's explicit consent except where the law permits, grants rights of access, correction, erasure, objection to processing or its results, and complaint, and requires controllers and processors to hold a licence or permit, appoint a data protection officer and apply approved security standards. It creates the Personal Data Protection Authority, attached to the Minister of Communications and Technology, which regulates processing and cross-border transfers; the law contains no AI-specific provisions but governs personal data used to train and run AI systems.",
+      "ai_governance_relevance": "Primary-source material for assessing data-privacy.",
+      "source_url": "https://naits.gov.sy/storage/media/kanon-hmay-albyanat-alshkhsy.pdf",
+      "official_pdf_url": "https://naits.gov.sy/storage/media/kanon-hmay-albyanat-alshkhsy.pdf",
+      "official_webpage_url": "https://naits.gov.sy/laws",
+      "language": "ar",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-07",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Official Gazette issue reference",
+        "Status of the Personal Data Protection Authority under the transitional government"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-07",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "in_force",
+      "first_recorded": "2026-10-07",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-93a257df049d",
+      "organization_id": "o-858b7c02f182"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-858b7c02f182",
+      "jurisdiction_id": "SYR",
+      "name": "President of the Syrian Arab Republic",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Issuer of recorded instrument(s).",
+      "source_url": "https://naits.gov.sy/storage/media/kanon-hmay-albyanat-alshkhsy.pdf",
+      "authority_type": null,
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-93a257df049d",
+      "url": "https://naits.gov.sy/storage/media/kanon-hmay-albyanat-alshkhsy.pdf",
+      "jurisdiction_ids": [
+        "SYR"
+      ],
+      "source_institutions": [
+        "National Agency for Information Technology Services (NAITS)"
+      ],
+      "instrument_ids": [
+        "i-87b2747b10fb"
+      ],
+      "categories_reviewed": [
+        "data-privacy"
+      ],
+      "date_reviewed": "2026-10-07",
+      "checked_date": "2026-10-07",
+      "check_method": "Downloaded PDF from NAITS laws page and read the full text (pages 1 and 20 checked visually for number and dates)",
+      "http_status": 200,
+      "final_url": "https://naits.gov.sy/storage/media/kanon-hmay-albyanat-alshkhsy.pdf",
+      "link_status": "reachable",
+      "page_title": "قانون حماية البيانات الشخصية",
+      "document_language": "ar",
+      "error": null,
+      "content_type": "application/pdf"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "SYR",
     "country": "Syrian Arab Republic",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
-    "categories_searched": [
-      "strategy",
-      "government-governance",
-      "ethics",
-      "public-sector",
-      "procurement",
-      "cyber-security",
-      "data-privacy",
-      "risk-assurance",
-      "transparency"
+    "review_status": "DEEP REVIEW COMPLETE",
+    "categories_searched": {
+      "binding-law": "Laws & regulations",
+      "strategy": "Strategy & action plans",
+      "government-governance": "Government AI governance",
+      "ethics": "Responsible AI & ethics",
+      "risk-assurance": "Risk & assurance",
+      "public-sector": "Public-sector AI",
+      "procurement": "AI procurement",
+      "cyber-security": "Safety & cybersecurity",
+      "data-privacy": "Data & privacy",
+      "transparency": "Transparency & accountability",
+      "standards": "Standards & certification",
+      "sandbox": "Regulatory sandboxes",
+      "index-readiness": "Indices & maturity",
+      "sectoral": "Sectoral governance",
+      "generative-ai": "Generative & agentic AI",
+      "drafts": "Drafts & consultations",
+      "international": "Regional & international",
+      "historical": "Historical publications"
+    },
+    "categories_with_findings": [
+      "data-privacy"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_where_no_material_was_found": [
       "binding-law",
       "strategy",
       "government-governance",
@@ -46,7 +152,6 @@
       "public-sector",
       "procurement",
       "cyber-security",
-      "data-privacy",
       "transparency",
       "standards",
       "sandbox",
@@ -57,33 +162,155 @@
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Syrian Arab Republic \"الذكاء الاصطناعي\" (استراتيجية OR تنظيم OR أخلاقيات) government ministry official",
       "Syrian Arab Republic \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Syrian Arab Republic government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Syrian Arab Republic \"الذكاء الاصطناعي\" cybersecurity authority secure development safety guidelines",
-      "Syrian Arab Republic privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Syrian Arab Republic privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "site:moct.gov.sy قانون حماية البيانات الشخصية رقم 12 لعام 2024 pdf",
+      "سوريا الاستراتيجية الوطنية للذكاء الاصطناعي وزارة الاتصالات والتقانة",
+      "\"moct.gov.sy\" قانون حماية البيانات الشخصية",
+      "Syria Law No. 12 of 2024 personal data protection official text",
+      "site:moct.gov.sy",
+      "site:parliament.gov.sy القانون رقم 20 لعام 2022 الجريمة المعلوماتية",
+      "Syria national artificial intelligence strategy 2022 committee Ministry of Communications and Technology",
+      "\"الذكاء الصنعي\" سوريا الاستراتيجية الوطنية لجنة 2022 وزارة الاتصالات والتقانة",
+      "مجلس الوزراء السوري يقر الإطار الوطني للذكاء الصنعي استراتيجية",
+      "Syria 2026 AI policy ministry artificial intelligence framework launched transitional government",
+      "\"parliament.gov.sy\" قانون حماية البيانات الشخصية الإلكترونية 2024",
+      "\"moct.gov.sy\" pdf قانون",
+      "قانون المعاملات الإلكترونية رقم 3 لعام 2014 سوريا pdf gov.sy",
+      "\"الهيئة الوطنية لخدمات تقانة المعلومات\" القانون رقم 7 لعام 2023",
+      "وزارة الاتصالات وتقانة المعلومات السورية الذكاء الاصطناعي سياسة وثيقة 2026",
+      "Syria Ministry of Communications and Information Technology AI strategy draft 2025 2026 Haykal national AI",
+      "moct.gov.sy السياسات والاستراتيجيات الذكاء الصنعي",
+      "moct.gov.sy التشريعات قانون حماية البيانات الشخصية الإلكترونية",
+      "\"الذكاء الصنعي\" \"الاستراتيجية الوطنية\" سورية لجنة إعداد وزارة الاتصالات والتقانة 2021",
+      "Syria \"national AI strategy\" OR \"artificial intelligence strategy\" 2022 OR 2023 Damascus ministry approved framework",
+      "مصرف سورية المركزي الذكاء الاصطناعي تعميم قرار التقانة المالية 2025 2026",
+      "قرار رئيس مجلس الوزراء رقم 29 التعليمات التنفيذية قانون حماية البيانات الشخصية رقم 12 لعام 2024",
+      "Syria joins Global AI Governance Initiative China joint statement Syrian foreign ministry 2026",
+      "UNESCO Readiness Assessment Methodology Syria artificial intelligence",
+      "مشروع قانون الذكاء الاصطناعي سوريا مجلس الشعب 2026",
+      "Syria cybersecurity strategy 2023 national cloud computing policy 2022 artificial intelligence MOCT document",
+      "moj.gov.sy site search: الذكاء الاصطناعي / الجرائم المعلوماتية / البيانات الشخصية",
+      "sasmo.gov.sy standards search: ذكاء / اصطناعي / 42001",
+      "naits.gov.sy/laws (full listing reviewed)",
+      "moh.gov.sy strategic plan (searched for الذكاء الاصطناعي)"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-07",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
-    "discovery_result_count": 12,
-    "focused_result_count": 10
+    "no_material_found_note": "Searched official sites (NAITS, Ministry of Justice, SASMO, Ministry of Health, Ministry of Education portal) and search engines in Arabic and English; MoCT, Central Bank, Prime Ministry and parliament sites could not be read automatically. No official AI-specific text found in any category except data protection law. The UNESCO Recommendation on the Ethics of AI applies via the regional file.",
+    "discovery_result_count": 35,
+    "focused_result_count": 9
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-06a7c18c501a",
+      "date": "2026-10-07",
+      "recorded": "2026-10-07",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "SYR",
+      "instrument_id": "i-87b2747b10fb",
+      "title": "Personal Data Protection Law (Law No. 12 of 2024)",
+      "detail": "Added to the radar (published 2024-03-28).",
+      "from": null,
+      "to": null,
+      "source_url": "https://naits.gov.sy/storage/media/kanon-hmay-albyanat-alshkhsy.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-6d639a641120",
+      "date": "2026-10-07",
+      "recorded": "2026-10-07",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "SYR",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 1 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-fd53fb8aed0d",
+      "date": "2025-01-01",
+      "recorded": "2026-10-07",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "SYR",
+      "instrument_id": "i-87b2747b10fb",
+      "title": "Personal Data Protection Law (Law No. 12 of 2024) takes effect",
+      "detail": "Article 46: the law is effective from 1 January 2025.",
+      "from": null,
+      "to": null,
+      "source_url": "https://naits.gov.sy/storage/media/kanon-hmay-albyanat-alshkhsy.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-e71faf6aa8a2",
+      "date": "2024-03-28",
+      "recorded": "2026-10-07",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "SYR",
+      "instrument_id": "i-87b2747b10fb",
+      "title": "Personal Data Protection Law (Law No. 12 of 2024) issued",
+      "detail": "Issued by the President in Damascus after People's Assembly approval on 18 March 2024.",
+      "from": null,
+      "to": null,
+      "source_url": "https://naits.gov.sy/storage/media/kanon-hmay-albyanat-alshkhsy.pdf",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "قرار رئيس مجلس الوزراء رقم 29 — التعليمات التنفيذية لقانون حماية البيانات الشخصية رقم 12 لعام 2024",
+      "english_title": "Executive Instructions for the Personal Data Protection Law (Prime Ministerial Decision No. 29 of 2024)",
+      "issuing_authority": "Prime Minister (Council of Ministers)",
+      "note": "Issued mid-2024 (state press, July 2024) under Article 45 of Law No. 12/2024; covers privacy policies, explicit consent, breach notification and cross-border transfers. Official text is on moct.gov.sy/pministry.gov.sy, which fail automated reading; NAITS does not host it. Add once the official text is readable.",
+      "found": "2026-10-07"
+    },
+    {
+      "title": "الاستراتيجية الوطنية للذكاء الاصطناعي",
+      "english_title": "National Artificial Intelligence Strategy (pre-2024 government)",
+      "issuing_authority": "Unknown (reported in state press)",
+      "note": "Al-Thawra (2 December 2024) described six pillars; no issuing body, adoption decision or official text located. Status after the change of government in December 2024 unknown; treat as unconfirmed.",
+      "found": "2026-10-07"
+    },
+    {
+      "title": "استراتيجية التحول الرقمي للخدمات الحكومية",
+      "english_title": "Digital Transformation Strategy for Government Services (to 2030)",
+      "issuing_authority": "Higher Steering Committee for E-Government / Ministry of Communications and Technology",
+      "note": "Approved August 2021 (state press); listed under 'Policies and strategies' on moct.gov.sy, which fails automated reading. Whether it has an AI pillar is unverified; record only if the official text shows AI content.",
+      "found": "2026-10-07"
+    },
+    {
+      "title": "Statement on joining the Global AI Governance Initiative",
+      "english_title": "Syrian Ministry of Foreign Affairs statement on joining China's Global AI Governance Initiative",
+      "issuing_authority": "Ministry of Foreign Affairs and Expatriates",
+      "note": "Reported 2023 (previous government); political statement, no official text located online. Not a treaty.",
+      "found": "2026-10-07"
+    }
+  ]
 }

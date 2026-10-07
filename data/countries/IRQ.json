@@ -10,78 +10,963 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Iraq has no AI law yet; AI governance is led from the Prime Minister's Office, whose adviser for scientific, academic and AI affairs drafts national policy under a Supreme Committee for AI chaired by the Prime Minister. In 2025 that office published a first-draft National AI Policy and a National Charter for AI Ethics, which proposes risk tiers, an AI ethics council and labelling of AI-generated content; neither has been formally adopted and the full national AI strategy was still being refined with the Ministry of Planning in 2026. Binding AI rules come so far from sector regulators: the Communications and Media Commission's Framework Regulations for Digital Platforms (in force 17 February 2025) require AI platforms to be licensed or notified, and the Central Bank of Iraq's 2025-2026 banking standards require deepfake and synthetic-identity safeguards. The CMC is now consulting on a dedicated AI Services Regulation (from 23 September 2026) with licensing, risk classification and outright bans on practices such as social scoring and mass biometric surveillance, alongside a digital-content draft that bans deceptive AI-generated content. Iraq has no general personal data protection law, which leaves AI data governance to sector rules and the drafts.",
+    "lead_institutions": [
+      "Prime Minister's Office (Adviser for Scientific and Academic Affairs and AI; National AI Centre)",
+      "Supreme Committee for Artificial Intelligence (chaired by the Prime Minister)",
+      "Communications and Media Commission (CMC)",
+      "Central Bank of Iraq (CBI)",
+      "Ministry of Planning"
+    ],
+    "last_deep_review": "2026-10-07",
+    "review_notes": "Deep review 2026-10-07. Previous file had no instruments; 7 added, none removed. The AI policy draft and ethics charter come from the PM Office AI portal (arabic.ai.gov.iq, linked from ai.gov.iq); both PDFs were read in full. The CMC AI services draft is a scanned PDF without a text layer: title, contents, preamble, scope, exemptions and prohibited uses were read from page images. CMC upload paths use a decomposed hamza (ي + U+0654) in file names; the URLs stored here are the working percent-encoded forms. Blocked to automated reading: pmo.iq (403), moc.gov.iq (403), iq.parliament.iq (403), gov.krd and dit.gov.krd (403), gds.gov.iq (proxy 502); cabinet.iq serves only a script shell. Al-Waqa'i al-Iraqiya (moj.gov.iq) search found no AI-specific gazette instrument. The National Development Plan 2024-2028 mentions AI only in passing (no AI pillar), so it is not recorded. A MOHESR circular of 3 March 2026 on AI tools in research is held as a lead: the only copy is on a university site, and the guide itself is behind a QR link that no longer resolves. Subnational pass (Kurdistan Region): no KRG AI instrument found, but the KRG portal could not be read. Sweep: no adoption of the national AI policy, ethics charter or national AI strategy found by 2026-10-07; the CMC AI draft consultation runs to about 23 October 2026."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-f8aea67dac83",
+      "official_title": "السياسة الوطنية للذكاء الاصطناعي (المسودة الأولى 2025)",
+      "english_title": "National Artificial Intelligence Policy (first draft, 2025)",
+      "jurisdiction_id": "IRQ",
+      "issuing_authority": "Prime Minister's Office (Committee for Drafting the National AI Strategy)",
+      "publisher_name": "Prime Minister's Office (Office of the Prime Minister's Adviser for Scientific and Academic Affairs and Artificial Intelligence)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "strategy",
+        "drafts",
+        "government-governance"
+      ],
+      "category": "strategy",
+      "subcategory": null,
+      "legal_status": "consultation_draft",
+      "publication_date": "2025",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Cover marked 'first draft 2025' (المسودة الأولى). Posted on the Prime Minister's Office AI portal (arabic.ai.gov.iq); the file was uploaded on 17 November 2025 per the portal's media record. No cabinet adoption found as of 2026-10-07; the full national AI strategy it is meant to lead into was still being refined with the Ministry of Planning in April 2026.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "First draft of Iraq's national AI policy, prepared by the committee drafting the national AI strategy under the Prime Minister (chair of the Supreme Committee for AI) with ministries, the CMC, UNESCO and ESCWA. It sets a vision of Iraq as a regional AI hub, applies to public and private sectors, and organises action under six axes (skills and jobs, R&D and entrepreneurship, data and infrastructure, priority sectors, international cooperation, enabling environment incl. AI legislation and an ethics charter). Governance would sit with the Supreme Council/Committee for AI, a new National AI Centre and an advisory committee, with annual review and monitoring indicators.",
+      "ai_governance_relevance": "Primary-source material for assessing strategy.",
+      "source_url": "https://arabic.ai.gov.iq/wp-content/uploads/2025/11/%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A%D8%A9-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-Dhiya.pdf",
+      "official_pdf_url": "https://arabic.ai.gov.iq/wp-content/uploads/2025/11/%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A%D8%A9-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-Dhiya.pdf",
+      "official_webpage_url": "https://arabic.ai.gov.iq/",
+      "language": "ar",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-02f3c7f4ddfe"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-10-07",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Exact publication date (only '2025' on the document)",
+        "Adoption status"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-07",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "draft",
+      "first_recorded": "2026-10-07",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-2fcb25f45949",
+      "organization_id": "o-6b1925c83d6e"
+    },
+    {
+      "id": "i-02f3c7f4ddfe",
+      "official_title": "الميثاق الوطني لأخلاقيات الذكاء الاصطناعي في العراق",
+      "english_title": "National Charter for Artificial Intelligence Ethics in Iraq",
+      "jurisdiction_id": "IRQ",
+      "issuing_authority": "Prime Minister's Office (Committee for Drafting the National AI Strategy)",
+      "publisher_name": "Prime Minister's Office (Office of the Prime Minister's Adviser for Scientific and Academic Affairs and Artificial Intelligence)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "ethics",
+        "risk-assurance",
+        "transparency",
+        "generative-ai"
+      ],
+      "category": "ethics",
+      "subcategory": null,
+      "legal_status": "nonbinding_guidance",
+      "publication_date": "2025",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Published on the Prime Minister's Office AI portal (file uploaded 17 November 2025 per the portal's media record). The document carries no adoption decision or date; it is not marked as a draft. Its prohibitions and the proposed national AI ethics council have no stated legal basis yet, so it is recorded as non-binding guidance.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Ethics charter in 22 articles prepared under the Prime Minister's Office, applying to all public, private and non-profit bodies and individuals that develop or use AI. It sets core values (dignity, fairness, digital sovereignty, sustainability, reliability) and principles on non-discrimination and bias testing, privacy by design, explainability and disclosure of AI interaction, human oversight and complaints, safety, and green AI. It proposes an independent national AI ethics council, a three-tier risk classification (low / medium-high needing impact assessment and prior approval / prohibited, e.g. social scoring and lethal autonomous weapons), duties on generative-AI developers to curb deepfakes and watermark AI-generated content, and data localisation for sensitive national data.",
+      "ai_governance_relevance": "Primary-source material for assessing ethics.",
+      "source_url": "https://arabic.ai.gov.iq/wp-content/uploads/2025/11/%D8%A7%D9%84%D9%85%D9%8A%D8%AB%D8%A7%D9%82-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A-%D9%84%D8%A3%D8%AE%D9%84%D8%A7%D9%82%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-1-1.pdf_20251117_143843_0000-1_compressed-1-1.pdf",
+      "official_pdf_url": "https://arabic.ai.gov.iq/wp-content/uploads/2025/11/%D8%A7%D9%84%D9%85%D9%8A%D8%AB%D8%A7%D9%82-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A-%D9%84%D8%A3%D8%AE%D9%84%D8%A7%D9%82%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-1-1.pdf_20251117_143843_0000-1_compressed-1-1.pdf",
+      "official_webpage_url": "https://arabic.ai.gov.iq/",
+      "language": "ar",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-f8aea67dac83"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-10-07",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Exact publication date (only the portal upload date is known)",
+        "Formal adoption instrument"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-07",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "published",
+      "first_recorded": "2026-10-07",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-202330817c42",
+      "organization_id": "o-6b1925c83d6e"
+    },
+    {
+      "id": "i-77a34c7447de",
+      "official_title": "اللائحة الإطارية للمنصات والخدمات الرقمية",
+      "english_title": "Framework Regulations for Digital Platforms and Services",
+      "jurisdiction_id": "IRQ",
+      "issuing_authority": "Communications and Media Commission (CMC)",
+      "publisher_name": "Communications and Media Commission (CMC)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "sectoral",
+        "binding-law"
+      ],
+      "category": "sectoral",
+      "subcategory": null,
+      "legal_status": "binding_regulation",
+      "publication_date": "2025",
+      "effective_date": "2025-02-17",
+      "last_amended_date": null,
+      "current_status": "States it comes into force on 17 February 2025. Arabic and English versions published on cmc.iq (uploaded March 2025). The dedicated AI regulation it announces was put to consultation in September 2026.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "CMC framework regulation, issued under CPA Order No. 65 of 2004, that brings digital platforms serving users in Iraq under licensing, registration or notification. 'Artificial-intelligence platforms' are an in-scope category: locally based AI platforms need a CMC licence and foreign-based ones must notify. AI platforms share the user-generated-content duties (moderation, transparency of content policies, automated plus human review, appeals), and Article 6.1.5 requires compliance with Iraqi AI rules and announces a forthcoming CMC AI regulation.",
+      "ai_governance_relevance": "Primary-source material for assessing sectoral.",
+      "source_url": "https://cmc.iq/wp-content/uploads/2025/03/Framework-regulations-for-digital-platforms-and-services-ar.pdf",
+      "official_pdf_url": "https://cmc.iq/wp-content/uploads/2025/03/Framework-regulations-for-digital-platforms-and-services-ar.pdf",
+      "official_webpage_url": "https://cmc.iq/wp-content/uploads/2025/03/Framework-regulations-for-digital-platforms-and-services-en.pdf",
+      "language": "ar",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-9039b66ffbed",
+        "i-3658334d2914"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-10-07",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Exact issue date (only the 17 February 2025 effective date is stated)"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-07",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "in_force",
+      "first_recorded": "2026-10-07",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-91f90ddc7a09",
+      "organization_id": "o-2bb80a2cb67f"
+    },
+    {
+      "id": "i-9039b66ffbed",
+      "official_title": "مسودة اللائحة التنظيمية لخدمات الذكاء الاصطناعي في جمهورية العراق",
+      "english_title": "Draft Regulation on Artificial Intelligence Services in the Republic of Iraq (public consultation)",
+      "jurisdiction_id": "IRQ",
+      "issuing_authority": "Communications and Media Commission (CMC)",
+      "publisher_name": "Communications and Media Commission (CMC)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "drafts",
+        "sectoral",
+        "risk-assurance",
+        "generative-ai",
+        "ethics",
+        "transparency"
+      ],
+      "category": "drafts",
+      "subcategory": null,
+      "legal_status": "consultation_draft",
+      "publication_date": "2026-09-23",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Opened for public consultation on 23 September 2026 for 30 days (comments to enquiries@cmc.iq), so open until about 23 October 2026. The PDF is a scanned 25-page document watermarked 'draft prepared for review and approval after public consultation' (Annex 4); text was read from page images.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Draft CMC regulation (Annex 4 to the 2025 digital-platforms framework) that would license all entities offering AI-based services in Iraq, including foreign services aimed at Iraqi users, on separate software and hardware tracks with risk classes. It bans outright mass biometric surveillance in public spaces without a court order, social scoring, AI built to manipulate opinion or spread disinformation, harmful AI aimed at children, autonomous lethal weapons and AI that breaks Iraqi law, and sets ethics, risk-assessment, generative/general-purpose AI, data-governance and digital-sovereignty, consumer-complaint, inspection and penalty provisions. Government applications are exempt from fees and licensing but must meet its cybersecurity and data-protection rules.",
+      "ai_governance_relevance": "Primary-source material for assessing drafts.",
+      "source_url": "https://cmc.iq/2026/09/23/%d8%a5%d8%b9%d9%84%d8%a7%d9%86-%d9%87%d9%8a%d8%a3%d8%a9-%d8%a7%d9%84%d8%a5%d8%b9%d9%84%d8%a7%d9%85-%d9%88%d8%a7%d9%84%d8%a7%d8%aa%d8%b5%d8%a7%d9%84%d8%a7%d8%aa-%d8%aa%d8%b7%d8%b1%d8%ad-%d9%85%d8%b3/",
+      "official_pdf_url": "https://cmc.iq/wp-content/uploads/2026/09/%D8%A7%D9%84%D9%84%D8%A7%D9%8A%D9%94%D8%AD%D8%A9-%D8%A7%D9%84%D8%AA%D9%86%D8%B8%D9%8A%D9%85%D9%8A%D8%A9-%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-%D9%81%D9%8A-%D8%AC%D9%85%D9%87%D9%88%D8%B1%D9%8A%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D8%A7%D9%84%D9%89-%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9-1287.pdf",
+      "official_webpage_url": "https://cmc.iq/2026/09/23/%d8%a5%d8%b9%d9%84%d8%a7%d9%86-%d9%87%d9%8a%d8%a3%d8%a9-%d8%a7%d9%84%d8%a5%d8%b9%d9%84%d8%a7%d9%85-%d9%88%d8%a7%d9%84%d8%a7%d8%aa%d8%b5%d8%a7%d9%84%d8%a7%d8%aa-%d8%aa%d8%b7%d8%b1%d8%ad-%d9%85%d8%b3/",
+      "language": "ar",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-77a34c7447de"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-10-07",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Scanned PDF without a text layer; article-level detail read from page images"
+      ],
+      "source_kind": "consultation_portal",
+      "evidence_reference": "deep-review-2026-10-07",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "consultation",
+      "first_recorded": "2026-10-07",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-5d13226dfe46",
+      "organization_id": "o-2bb80a2cb67f"
+    },
+    {
+      "id": "i-3658334d2914",
+      "official_title": "مسودة لائحة تنظيم المحتوى الرقمي في العراق",
+      "english_title": "Draft Regulation on Digital Content in Iraq (public consultation)",
+      "jurisdiction_id": "IRQ",
+      "issuing_authority": "Communications and Media Commission (CMC)",
+      "publisher_name": "Communications and Media Commission (CMC)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "drafts",
+        "generative-ai",
+        "sectoral"
+      ],
+      "category": "drafts",
+      "subcategory": null,
+      "legal_status": "consultation_draft",
+      "publication_date": "2026-09-13",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Put to public consultation by the CMC on 13 September 2026; no closing date stated in the announcement. Not adopted as of 2026-10-07.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Draft CMC regulation on digital content available to or aimed at the public in Iraq, issued under Order No. 65 of 2004 and integrated with the 2025 digital-platforms framework. Article 28 (disinformation, forgery and digital manipulation) prohibits misleading fake content, expressly including the use of AI or digital processing to produce content that deceives the public as to its authenticity. It also sets duties for platforms and digital service providers on reporting mechanisms, takedown, blocking and compliance.",
+      "ai_governance_relevance": "Primary-source material for assessing drafts.",
+      "source_url": "https://cmc.iq/2026/09/13/%D8%A5%D8%B9%D9%84%D8%A7%D9%86-%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9-%D8%B9%D8%A7%D9%85%D8%A9-%D8%A8%D8%B4%D8%A3%D9%86-%D9%85%D8%B3%D9%88%D8%AF%D8%A9-%D9%84%D8%A7%D8%A6%D8%AD%D8%A9-%D8%AA%D9%86/",
+      "official_pdf_url": "https://cmc.iq/wp-content/uploads/2026/09/%D9%84%D8%A7%D9%8A%D9%94%D8%AD%D8%A9_%D8%AA%D9%86%D8%B8%D9%8A%D9%85_%D8%A7%D9%84%D9%85%D8%AD%D8%AA%D9%88%D9%89_%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A_%D9%81%D9%8A_%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-1.pdf",
+      "official_webpage_url": "https://cmc.iq/2026/09/13/%D8%A5%D8%B9%D9%84%D8%A7%D9%86-%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9-%D8%B9%D8%A7%D9%85%D8%A9-%D8%A8%D8%B4%D8%A3%D9%86-%D9%85%D8%B3%D9%88%D8%AF%D8%A9-%D9%84%D8%A7%D8%A6%D8%AD%D8%A9-%D8%AA%D9%86/",
+      "language": "ar",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-77a34c7447de"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-10-07",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Consultation closing date"
+      ],
+      "source_kind": "consultation_portal",
+      "evidence_reference": "deep-review-2026-10-07",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "consultation",
+      "first_recorded": "2026-10-07",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-3224ade8dcba",
+      "organization_id": "o-2bb80a2cb67f"
+    },
+    {
+      "id": "i-d8a5236a8a5b",
+      "official_title": "دليل البنك المركزي العراقي الخاص بالتقييم التفصيلي لمعايير 2026 – مخصص للمصارف الرقمية",
+      "english_title": "CBI Detailed Assessment Guide for the 2026 Standards – Digital Banks",
+      "jurisdiction_id": "IRQ",
+      "issuing_authority": "Central Bank of Iraq (CBI)",
+      "publisher_name": "Central Bank of Iraq (CBI)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "sectoral"
+      ],
+      "category": "sectoral",
+      "subcategory": null,
+      "legal_status": "administrative_policy_mandatory_in_scope",
+      "publication_date": "2026-04-14",
+      "effective_date": "2026-04-14",
+      "last_amended_date": null,
+      "current_status": "Listed on the CBI banking-supervision page under 14 April 2026 with the digital-bank licensing rules, standards handbook and timeline. The guide states that the circular takes effect from its publication date and applies exclusively to all digital banks.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Mandatory CBI guide detailing how the 2026 standards for the new digital-bank licence class are assessed (ownership and governance, core banking, online banking, risk and compliance). For digital onboarding it requires safeguards against identity fraud through technologies that detect and prevent deepfakes and synthetic identities generated by AI, alongside liveness checks. The AI-specific content is limited to this anti-fraud requirement.",
+      "ai_governance_relevance": "Primary-source material for assessing sectoral.",
+      "source_url": "https://cbi.iq/static/uploads/up/file-177625032066306.pdf",
+      "official_pdf_url": "https://cbi.iq/static/uploads/up/file-177625032066306.pdf",
+      "official_webpage_url": "https://cbi.iq/page/139",
+      "language": "ar",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-77b64b6bbbdf"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-10-07",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-07",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "in_force",
+      "first_recorded": "2026-10-07",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-33d864a794b5",
+      "organization_id": "o-2e7fc1afa1ef"
+    },
+    {
+      "id": "i-77b64b6bbbdf",
+      "official_title": "دليل البنك المركزي العراقي الخاص بالتقييم التفصيلي لمعايير 2025 – مخصص للمصارف الخاصة التجارية والإسلامية",
+      "english_title": "CBI Detailed Assessment Guide for the 2025 Standards – Private Commercial and Islamic Banks (Banking Reform 2025)",
+      "jurisdiction_id": "IRQ",
+      "issuing_authority": "Central Bank of Iraq (CBI)",
+      "publisher_name": "Central Bank of Iraq (CBI)",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "sectoral"
+      ],
+      "category": "sectoral",
+      "subcategory": null,
+      "legal_status": "administrative_policy_mandatory_in_scope",
+      "publication_date": "2025",
+      "effective_date": "2025-08",
+      "last_amended_date": null,
+      "current_status": "Part of the CBI Banking Reform 2025 package listed on the CBI banking-reform project page; the guide states the reform enters into force in August 2025 and that its requirements are mandatory. No exact issue date is shown on the listing.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Mandatory CBI guide setting out how the 2025 banking-reform standards are assessed for private commercial and Islamic banks, read with the standards handbook and the reform-paths circular. Its electronic-onboarding requirements oblige banks to deploy technologies that detect and prevent deepfakes and AI-generated synthetic identities. Other content covers governance, ownership, risk management and technology systems and is not AI-specific.",
+      "ai_governance_relevance": "Primary-source material for assessing sectoral.",
+      "source_url": "https://cbi.iq/static/uploads/up/file-177615833416828.pdf",
+      "official_pdf_url": "https://cbi.iq/static/uploads/up/file-177615833416828.pdf",
+      "official_webpage_url": "https://cbi.iq/page/172",
+      "language": "ar",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-d8a5236a8a5b"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-10-07",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Exact issue date"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-review-2026-10-07",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "in_force",
+      "first_recorded": "2026-10-07",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-0a96df91ffce",
+      "organization_id": "o-2e7fc1afa1ef"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-6b1925c83d6e",
+      "jurisdiction_id": "IRQ",
+      "name": "Prime Minister's Office (Office of the Prime Minister's Adviser for Scientific and Academic Affairs and Artificial Intelligence)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Office of the Prime Minister; its AI adviser's office leads drafting of the national AI policy, ethics charter and strategy and hosts the Iraqi AI portal (ai.gov.iq).",
+      "source_url": "https://arabic.ai.gov.iq/",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-2bb80a2cb67f",
+      "jurisdiction_id": "IRQ",
+      "name": "Communications and Media Commission (CMC)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Independent regulator of telecoms, media and ICT under CPA Order No. 65 of 2004; licenses AI platforms under its 2025 digital-platforms framework and consulted on a dedicated AI services regulation in 2026.",
+      "source_url": "https://cmc.iq/",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-2e7fc1afa1ef",
+      "jurisdiction_id": "IRQ",
+      "name": "Central Bank of Iraq (CBI)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Banking regulator; its 2025-2026 banking-reform and digital-bank standards include AI-specific anti-fraud requirements.",
+      "source_url": "https://cbi.iq/page/139",
+      "authority_type": null,
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-2fcb25f45949",
+      "url": "https://arabic.ai.gov.iq/wp-content/uploads/2025/11/%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A%D8%A9-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-Dhiya.pdf",
+      "jurisdiction_ids": [
+        "IRQ"
+      ],
+      "source_institutions": [
+        "Prime Minister's Office (Office of the Prime Minister's Adviser for Scientific and Academic Affairs and Artificial Intelligence)"
+      ],
+      "instrument_ids": [
+        "i-f8aea67dac83"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "drafts",
+        "government-governance"
+      ],
+      "date_reviewed": "2026-10-07",
+      "checked_date": "2026-10-07",
+      "check_method": "Fetched and read (PDF text or page images) on 2026-10-07",
+      "http_status": 200,
+      "final_url": "https://arabic.ai.gov.iq/wp-content/uploads/2025/11/%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A%D8%A9-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-Dhiya.pdf",
+      "link_status": "reachable",
+      "page_title": "السياسة الوطنية للذكاء الاصطناعي (المسودة الأولى 2025)",
+      "document_language": "ar",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-202330817c42",
+      "url": "https://arabic.ai.gov.iq/wp-content/uploads/2025/11/%D8%A7%D9%84%D9%85%D9%8A%D8%AB%D8%A7%D9%82-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A-%D9%84%D8%A3%D8%AE%D9%84%D8%A7%D9%82%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-1-1.pdf_20251117_143843_0000-1_compressed-1-1.pdf",
+      "jurisdiction_ids": [
+        "IRQ"
+      ],
+      "source_institutions": [
+        "Prime Minister's Office (Office of the Prime Minister's Adviser for Scientific and Academic Affairs and Artificial Intelligence)"
+      ],
+      "instrument_ids": [
+        "i-02f3c7f4ddfe"
+      ],
+      "categories_reviewed": [
+        "ethics",
+        "risk-assurance",
+        "transparency",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-07",
+      "checked_date": "2026-10-07",
+      "check_method": "Fetched and read (PDF text or page images) on 2026-10-07",
+      "http_status": 200,
+      "final_url": "https://arabic.ai.gov.iq/wp-content/uploads/2025/11/%D8%A7%D9%84%D9%85%D9%8A%D8%AB%D8%A7%D9%82-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A-%D9%84%D8%A3%D8%AE%D9%84%D8%A7%D9%82%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-1-1.pdf_20251117_143843_0000-1_compressed-1-1.pdf",
+      "link_status": "reachable",
+      "page_title": "الميثاق الوطني لأخلاقيات الذكاء الاصطناعي في العراق",
+      "document_language": "ar",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-91f90ddc7a09",
+      "url": "https://cmc.iq/wp-content/uploads/2025/03/Framework-regulations-for-digital-platforms-and-services-ar.pdf",
+      "jurisdiction_ids": [
+        "IRQ"
+      ],
+      "source_institutions": [
+        "Communications and Media Commission (CMC)"
+      ],
+      "instrument_ids": [
+        "i-77a34c7447de"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-07",
+      "checked_date": "2026-10-07",
+      "check_method": "Fetched and read (PDF text or page images) on 2026-10-07",
+      "http_status": 200,
+      "final_url": "https://cmc.iq/wp-content/uploads/2025/03/Framework-regulations-for-digital-platforms-and-services-ar.pdf",
+      "link_status": "reachable",
+      "page_title": "اللائحة الإطارية للمنصات والخدمات الرقمية",
+      "document_language": "ar",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-5d13226dfe46",
+      "url": "https://cmc.iq/2026/09/23/%d8%a5%d8%b9%d9%84%d8%a7%d9%86-%d9%87%d9%8a%d8%a3%d8%a9-%d8%a7%d9%84%d8%a5%d8%b9%d9%84%d8%a7%d9%85-%d9%88%d8%a7%d9%84%d8%a7%d8%aa%d8%b5%d8%a7%d9%84%d8%a7%d8%aa-%d8%aa%d8%b7%d8%b1%d8%ad-%d9%85%d8%b3/",
+      "jurisdiction_ids": [
+        "IRQ"
+      ],
+      "source_institutions": [
+        "Communications and Media Commission (CMC)"
+      ],
+      "instrument_ids": [
+        "i-9039b66ffbed"
+      ],
+      "categories_reviewed": [
+        "drafts",
+        "sectoral",
+        "risk-assurance",
+        "generative-ai",
+        "ethics",
+        "transparency"
+      ],
+      "date_reviewed": "2026-10-07",
+      "checked_date": "2026-10-07",
+      "check_method": "Fetched and read (PDF text or page images) on 2026-10-07",
+      "http_status": 200,
+      "final_url": "https://cmc.iq/2026/09/23/%d8%a5%d8%b9%d9%84%d8%a7%d9%86-%d9%87%d9%8a%d8%a3%d8%a9-%d8%a7%d9%84%d8%a5%d8%b9%d9%84%d8%a7%d9%85-%d9%88%d8%a7%d9%84%d8%a7%d8%aa%d8%b5%d8%a7%d9%84%d8%a7%d8%aa-%d8%aa%d8%b7%d8%b1%d8%ad-%d9%85%d8%b3/",
+      "link_status": "reachable",
+      "page_title": "مسودة اللائحة التنظيمية لخدمات الذكاء الاصطناعي في جمهورية العراق",
+      "document_language": "ar",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-3224ade8dcba",
+      "url": "https://cmc.iq/2026/09/13/%D8%A5%D8%B9%D9%84%D8%A7%D9%86-%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9-%D8%B9%D8%A7%D9%85%D8%A9-%D8%A8%D8%B4%D8%A3%D9%86-%D9%85%D8%B3%D9%88%D8%AF%D8%A9-%D9%84%D8%A7%D8%A6%D8%AD%D8%A9-%D8%AA%D9%86/",
+      "jurisdiction_ids": [
+        "IRQ"
+      ],
+      "source_institutions": [
+        "Communications and Media Commission (CMC)"
+      ],
+      "instrument_ids": [
+        "i-3658334d2914"
+      ],
+      "categories_reviewed": [
+        "drafts",
+        "generative-ai",
+        "sectoral"
+      ],
+      "date_reviewed": "2026-10-07",
+      "checked_date": "2026-10-07",
+      "check_method": "Fetched and read (PDF text or page images) on 2026-10-07",
+      "http_status": 200,
+      "final_url": "https://cmc.iq/2026/09/13/%D8%A5%D8%B9%D9%84%D8%A7%D9%86-%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9-%D8%B9%D8%A7%D9%85%D8%A9-%D8%A8%D8%B4%D8%A3%D9%86-%D9%85%D8%B3%D9%88%D8%AF%D8%A9-%D9%84%D8%A7%D8%A6%D8%AD%D8%A9-%D8%AA%D9%86/",
+      "link_status": "reachable",
+      "page_title": "مسودة لائحة تنظيم المحتوى الرقمي في العراق",
+      "document_language": "ar",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-33d864a794b5",
+      "url": "https://cbi.iq/static/uploads/up/file-177625032066306.pdf",
+      "jurisdiction_ids": [
+        "IRQ"
+      ],
+      "source_institutions": [
+        "Central Bank of Iraq (CBI)"
+      ],
+      "instrument_ids": [
+        "i-d8a5236a8a5b"
+      ],
+      "categories_reviewed": [
+        "sectoral"
+      ],
+      "date_reviewed": "2026-10-07",
+      "checked_date": "2026-10-07",
+      "check_method": "Fetched and read (PDF text or page images) on 2026-10-07",
+      "http_status": 200,
+      "final_url": "https://cbi.iq/static/uploads/up/file-177625032066306.pdf",
+      "link_status": "reachable",
+      "page_title": "دليل البنك المركزي العراقي الخاص بالتقييم التفصيلي لمعايير 2026 – مخصص للمصارف الرقمية",
+      "document_language": "ar",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-0a96df91ffce",
+      "url": "https://cbi.iq/static/uploads/up/file-177615833416828.pdf",
+      "jurisdiction_ids": [
+        "IRQ"
+      ],
+      "source_institutions": [
+        "Central Bank of Iraq (CBI)"
+      ],
+      "instrument_ids": [
+        "i-77b64b6bbbdf"
+      ],
+      "categories_reviewed": [
+        "sectoral"
+      ],
+      "date_reviewed": "2026-10-07",
+      "checked_date": "2026-10-07",
+      "check_method": "Fetched and read (PDF text or page images) on 2026-10-07",
+      "http_status": 200,
+      "final_url": "https://cbi.iq/static/uploads/up/file-177615833416828.pdf",
+      "link_status": "reachable",
+      "page_title": "دليل البنك المركزي العراقي الخاص بالتقييم التفصيلي لمعايير 2025 – مخصص للمصارف الخاصة التجارية والإسلامية",
+      "document_language": "ar",
+      "error": null,
+      "content_type": "application/pdf"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "IRQ",
     "country": "Iraq",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
-    "categories_searched": [
-      "strategy",
-      "government-governance",
-      "ethics",
-      "public-sector",
-      "procurement",
-      "cyber-security",
-      "data-privacy",
-      "risk-assurance",
-      "transparency"
-    ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "review_status": "DEEP REVIEW COMPLETE",
+    "categories_searched": {
+      "binding-law": "Laws & regulations",
+      "strategy": "Strategy & action plans",
+      "government-governance": "Government AI governance",
+      "ethics": "Responsible AI & ethics",
+      "risk-assurance": "Risk & assurance",
+      "public-sector": "Public-sector AI",
+      "procurement": "AI procurement",
+      "cyber-security": "Safety & cybersecurity",
+      "data-privacy": "Data & privacy",
+      "transparency": "Transparency & accountability",
+      "standards": "Standards & certification",
+      "sandbox": "Regulatory sandboxes",
+      "index-readiness": "Indices & maturity",
+      "sectoral": "Sectoral governance",
+      "generative-ai": "Generative & agentic AI",
+      "drafts": "Drafts & consultations",
+      "international": "Regional & international",
+      "historical": "Historical publications"
+    },
+    "categories_with_findings": [
       "binding-law",
       "strategy",
       "government-governance",
       "ethics",
       "risk-assurance",
+      "transparency",
+      "sectoral",
+      "generative-ai",
+      "drafts"
+    ],
+    "categories_where_no_material_was_found": [
       "public-sector",
       "procurement",
       "cyber-security",
       "data-privacy",
-      "transparency",
       "standards",
       "sandbox",
       "index-readiness",
-      "sectoral",
-      "generative-ai",
-      "drafts",
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Iraq \"الذكاء الاصطناعي\" (استراتيجية OR تنظيم OR أخلاقيات) government ministry official",
       "Iraq \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Iraq government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Iraq \"الذكاء الاصطناعي\" cybersecurity authority secure development safety guidelines",
-      "Iraq privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Iraq privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "الميثاق الوطني لأخلاقيات الذكاء الاصطناعي في العراق مكتب رئيس مجلس الوزراء pdf",
+      "Iraq national AI policy draft 2025 Prime Minister's Office Supreme Committee for Artificial Intelligence pdf",
+      "\"السياسة الوطنية للذكاء الاصطناعي\" العراق المسودة الاولى",
+      "site:gov.iq الذكاء الاصطناعي الاستراتيجية الوطنية",
+      "arabic.ai.gov.iq WordPress media/pages/posts listing (PDF documents)",
+      "مجلس الوزراء العراقي قرار تشكيل اللجنة العليا للذكاء الاصطناعي",
+      "البنك المركزي العراقي الذكاء الاصطناعي تعليمات ضوابط",
+      "cbi.iq: الذكاء الاصطناعي",
+      "cbi.iq ضوابط المصارف الرقمية 2024 pdf البنك المركزي العراقي",
+      "Central Bank of Iraq artificial intelligence guidelines banks regulation 2025 2026",
+      "cbi.iq: المصارف الرقمية دليل التقييم التفصيلي لمعايير 2026 كتيب المعايير",
+      "cmc.iq: الذكاء الاصطناعي لائحة تنظيمية",
+      "cmc.iq WordPress search 'الذكاء الاصطناعي' and 2024-2026 PDF media listing",
+      "parliament.iq: الذكاء الاصطناعي قانون مشروع",
+      "مشروع قانون حماية البيانات الشخصية العراق مجلس النواب",
+      "Iraq personal data protection law draft 2025 2026 Council of Representatives first reading",
+      "مشروع قانون الجرائم المعلوماتية العراق 2025 مجلس النواب الذكاء الاصطناعي التزييف العميق",
+      "وزارة التعليم العالي العراق ضوابط استخدام الذكاء الاصطناعي في البحث العلمي",
+      "وزارة التعليم العالي والبحث العلمي العراقية تعليمات الاستخدام الأخلاقي للذكاء الاصطناعي mohesr.gov.iq",
+      "\"دليل سياسة استخدام أدوات الذكاء الاصطناعي في البحث العلمي\"",
+      "mop.gov.iq: الذكاء الاصطناعي استراتيجية",
+      "خطة التنمية الوطنية 2024-2028 وزارة التخطيط العراق pdf قانون ينظم استخدام الذكاء الاصطناعي",
+      "National Development Plan 2024-2028 (mop.gov.iq PDF, Arabic and English) searched for 'artificial intelligence' / 'الذكاء الاصطناعي'",
+      "moj.gov.iq: الذكاء الاصطناعي (Al-Waqa'i al-Iraqiya / Ministry of Justice)",
+      "مجلس الوزراء العراقي يقرر الذكاء الاصطناعي 2026 الاستراتيجية الوطنية للذكاء الاصطناعي إقرار",
+      "Iraq cabinet approves national artificial intelligence strategy 2026",
+      "الجهاز المركزي للتقييس والسيطرة النوعية العراق ISO/IEC 42001 مواصفة قياسية عراقية الذكاء الاصطناعي",
+      "البنك المركزي العراقي البيئة التجريبية التنظيمية sandbox تعليمات",
+      "العراق الأمن السيبراني المركز الوطني مستشارية الأمن القومي الذكاء الاصطناعي إرشادات سياسة",
+      "UNESCO readiness assessment methodology Iraq artificial intelligence report 2025",
+      "Kurdistan Regional Government artificial intelligence strategy policy KRG Department of Information Technology",
+      "حكومة إقليم كوردستان الذكاء الاصطناعي استراتيجية قرار مجلس الوزراء",
+      "زیرەکی دەستکرد حکومەتی هەرێمی کوردستان ستراتیژی ئەنجومەنی وەزیران",
+      "gov.krd Council of Ministers artificial intelligence decision KRG 2025 2026 AI government services policy",
+      "gov.krd: artificial intelligence",
+      "KRG Digital Transformation Strategy pdf dit.gov.krd artificial intelligence"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-07",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE",
+      "subnational_kurdistan": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
-    "discovery_result_count": 10,
-    "focused_result_count": 11
+    "no_material_found_note": "Searched, nothing found to record for: public-sector, procurement, cyber-security, data-privacy, standards, sandbox, index-readiness, international, historical. Iraq has no general personal data protection law or data-protection authority (the CMC's 2025 framework says a PDP law will follow); no AI-specific public-sector, procurement, cyber-security, standards (COSQC), sandbox or index instruments were found; no national AI treaty ratification (UNESCO Recommendation is handled at regional level). Kurdistan Region: no AI instrument found, but gov.krd blocks automated reading.",
+    "discovery_result_count": 41,
+    "focused_result_count": 7
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-524d2bb24125",
+      "date": "2026-10-07",
+      "recorded": "2026-10-07",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "IRQ",
+      "instrument_id": "i-f8aea67dac83",
+      "title": "National Artificial Intelligence Policy (first draft, 2025)",
+      "detail": "Added to the radar (published 2025).",
+      "from": null,
+      "to": null,
+      "source_url": "https://arabic.ai.gov.iq/wp-content/uploads/2025/11/%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A%D8%A9-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-Dhiya.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-62a8d1a3bb78",
+      "date": "2026-10-07",
+      "recorded": "2026-10-07",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "IRQ",
+      "instrument_id": "i-02f3c7f4ddfe",
+      "title": "National Charter for Artificial Intelligence Ethics in Iraq",
+      "detail": "Added to the radar (published 2025).",
+      "from": null,
+      "to": null,
+      "source_url": "https://arabic.ai.gov.iq/wp-content/uploads/2025/11/%D8%A7%D9%84%D9%85%D9%8A%D8%AB%D8%A7%D9%82-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A-%D9%84%D8%A3%D8%AE%D9%84%D8%A7%D9%82%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-1-1.pdf_20251117_143843_0000-1_compressed-1-1.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-86f169efba0a",
+      "date": "2026-10-07",
+      "recorded": "2026-10-07",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "IRQ",
+      "instrument_id": "i-77a34c7447de",
+      "title": "Framework Regulations for Digital Platforms and Services",
+      "detail": "Added to the radar (published 2025).",
+      "from": null,
+      "to": null,
+      "source_url": "https://cmc.iq/wp-content/uploads/2025/03/Framework-regulations-for-digital-platforms-and-services-ar.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-413a24e5a23e",
+      "date": "2026-10-07",
+      "recorded": "2026-10-07",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "IRQ",
+      "instrument_id": "i-9039b66ffbed",
+      "title": "Draft Regulation on Artificial Intelligence Services in the Republic of Iraq (public consultation)",
+      "detail": "Added to the radar (published 2026-09-23).",
+      "from": null,
+      "to": null,
+      "source_url": "https://cmc.iq/2026/09/23/%d8%a5%d8%b9%d9%84%d8%a7%d9%86-%d9%87%d9%8a%d8%a3%d8%a9-%d8%a7%d9%84%d8%a5%d8%b9%d9%84%d8%a7%d9%85-%d9%88%d8%a7%d9%84%d8%a7%d8%aa%d8%b5%d8%a7%d9%84%d8%a7%d8%aa-%d8%aa%d8%b7%d8%b1%d8%ad-%d9%85%d8%b3/",
+      "needs_review": false
+    },
+    {
+      "id": "c-c7e7cef2ef0d",
+      "date": "2026-10-07",
+      "recorded": "2026-10-07",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "IRQ",
+      "instrument_id": "i-3658334d2914",
+      "title": "Draft Regulation on Digital Content in Iraq (public consultation)",
+      "detail": "Added to the radar (published 2026-09-13).",
+      "from": null,
+      "to": null,
+      "source_url": "https://cmc.iq/2026/09/13/%D8%A5%D8%B9%D9%84%D8%A7%D9%86-%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9-%D8%B9%D8%A7%D9%85%D8%A9-%D8%A8%D8%B4%D8%A3%D9%86-%D9%85%D8%B3%D9%88%D8%AF%D8%A9-%D9%84%D8%A7%D8%A6%D8%AD%D8%A9-%D8%AA%D9%86/",
+      "needs_review": false
+    },
+    {
+      "id": "c-41b563308dce",
+      "date": "2026-10-07",
+      "recorded": "2026-10-07",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "IRQ",
+      "instrument_id": "i-d8a5236a8a5b",
+      "title": "CBI Detailed Assessment Guide for the 2026 Standards – Digital Banks",
+      "detail": "Added to the radar (published 2026-04-14).",
+      "from": null,
+      "to": null,
+      "source_url": "https://cbi.iq/static/uploads/up/file-177625032066306.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-cef09880d2e9",
+      "date": "2026-10-07",
+      "recorded": "2026-10-07",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "IRQ",
+      "instrument_id": "i-77b64b6bbbdf",
+      "title": "CBI Detailed Assessment Guide for the 2025 Standards – Private Commercial and Islamic Banks (Banking Reform 2025)",
+      "detail": "Added to the radar (published 2025).",
+      "from": null,
+      "to": null,
+      "source_url": "https://cbi.iq/static/uploads/up/file-177615833416828.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-a70d8045f4c3",
+      "date": "2026-10-07",
+      "recorded": "2026-10-07",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "IRQ",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 7 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-7a1e95edbef2",
+      "date": "2026-09-23",
+      "recorded": "2026-10-07",
+      "kind": "world",
+      "type": "consultation",
+      "jurisdiction_id": "IRQ",
+      "instrument_id": "i-9039b66ffbed",
+      "title": "Draft AI services regulation opened for consultation",
+      "detail": "CMC opened the draft Regulation on AI Services in the Republic of Iraq for 30 days of public consultation from 23 September 2026.",
+      "from": null,
+      "to": null,
+      "source_url": "https://cmc.iq/2026/09/23/%d8%a5%d8%b9%d9%84%d8%a7%d9%86-%d9%87%d9%8a%d8%a3%d8%a9-%d8%a7%d9%84%d8%a5%d8%b9%d9%84%d8%a7%d9%85-%d9%88%d8%a7%d9%84%d8%a7%d8%aa%d8%b5%d8%a7%d9%84%d8%a7%d8%aa-%d8%aa%d8%b7%d8%b1%d8%ad-%d9%85%d8%b3/",
+      "needs_review": false
+    },
+    {
+      "id": "c-0a76da8b06dd",
+      "date": "2026-09-13",
+      "recorded": "2026-10-07",
+      "kind": "world",
+      "type": "consultation",
+      "jurisdiction_id": "IRQ",
+      "instrument_id": "i-3658334d2914",
+      "title": "Draft digital-content regulation opened for consultation",
+      "detail": "CMC put the draft Regulation on Digital Content in Iraq (Art. 28 bans AI-generated deceptive content) to public consultation on 13 September 2026.",
+      "from": null,
+      "to": null,
+      "source_url": "https://cmc.iq/2026/09/13/%D8%A5%D8%B9%D9%84%D8%A7%D9%86-%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9-%D8%B9%D8%A7%D9%85%D8%A9-%D8%A8%D8%B4%D8%A3%D9%86-%D9%85%D8%B3%D9%88%D8%AF%D8%A9-%D9%84%D8%A7%D8%A6%D8%AD%D8%A9-%D8%AA%D9%86/",
+      "needs_review": false
+    },
+    {
+      "id": "c-006c8ef7ed0f",
+      "date": "2026-04-14",
+      "recorded": "2026-10-07",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "IRQ",
+      "instrument_id": "i-d8a5236a8a5b",
+      "title": "CBI publishes 2026 digital-bank standards incl. AI deepfake safeguards",
+      "detail": "Central Bank of Iraq lists the digital-bank licensing rules, standards handbook, detailed assessment guide and timeline under 14 April 2026; the guide takes effect on publication.",
+      "from": null,
+      "to": null,
+      "source_url": "https://cbi.iq/static/uploads/up/file-177625032066306.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-c186767fe5b6",
+      "date": "2025-02-17",
+      "recorded": "2026-10-07",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "IRQ",
+      "instrument_id": "i-77a34c7447de",
+      "title": "CMC digital-platforms framework (incl. AI platforms) in force",
+      "detail": "The Framework Regulations for Digital Platforms and Services state they come into force on 17 February 2025; AI platforms need a CMC licence (local) or notification (foreign).",
+      "from": null,
+      "to": null,
+      "source_url": "https://cmc.iq/wp-content/uploads/2025/03/Framework-regulations-for-digital-platforms-and-services-ar.pdf",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "قرار تشكيل اللجنة العليا للذكاء الاصطناعي",
+      "english_title": "Founding decision of the Supreme (Higher) Committee for Artificial Intelligence",
+      "issuing_authority": "Prime Minister / Council of Ministers",
+      "note": "The committee is chaired by the Prime Minister and has met since 2024 (second meeting reported on cmc.iq 3 Nov 2024; third meeting on mop.gov.iq). No official text of the founding decision was found; pmo.iq and cabinet portals block automated reading.",
+      "found": "2026-10-07"
+    },
+    {
+      "title": "الاستراتيجية الوطنية للذكاء الاصطناعي",
+      "english_title": "National Artificial Intelligence Strategy (in preparation)",
+      "issuing_authority": "Prime Minister's Office with the Ministry of Planning",
+      "note": "The 2025 national AI policy draft is described as the starting point for a full strategy; the Ministry of Planning reviewed the strategy's objectives with the PM's AI adviser on 26 April 2026 (mop.gov.iq/archives/37219). No official strategy text published.",
+      "found": "2026-10-07"
+    },
+    {
+      "title": "الاستراتيجية الوطنية المقدمة من قبل وزارة الاتصالات",
+      "english_title": "Ministry of Communications proposed national AI strategy",
+      "issuing_authority": "Ministry of Communications",
+      "note": "Cited in the national AI policy draft as an input paper. moc.gov.iq returns 403 to automated reading; no published text found.",
+      "found": "2026-10-07"
+    },
+    {
+      "title": "دليل سياسة استخدام أدوات الذكاء الاصطناعي في البحث العلمي",
+      "english_title": "Guide on the policy for using AI tools in scientific research",
+      "issuing_authority": "Ministry of Higher Education and Scientific Research (Research and Development Directorate)",
+      "note": "Circulated to all public and private universities by ministry letter dated 3 March 2026 (approved by the Deputy Minister for Scientific Research on 27 Feb 2026), requiring work in accordance with the guide. The letter is only hosted by the University of Mosul and the guide is behind a QR short-link that no longer resolves; no copy found on mohesr.gov.iq.",
+      "found": "2026-10-07"
+    },
+    {
+      "title": "المركز الوطني للذكاء الاصطناعي",
+      "english_title": "National AI Centre (Prime Minister's Office) – founding instrument",
+      "issuing_authority": "Prime Minister's Office",
+      "note": "Referred to on mop.gov.iq (26 Apr 2026) as attached to the Prime Minister's Office and proposed in the national AI policy draft. No founding order located.",
+      "found": "2026-10-07"
+    },
+    {
+      "title": "KRG Digital Transformation Strategy",
+      "english_title": "Kurdistan Regional Government Digital Transformation Strategy (2022)",
+      "issuing_authority": "Kurdistan Regional Government – Department of Information Technology",
+      "note": "Subnational (Kurdistan Region). Launched October 2022; gov.krd (incl. gov.krd/dxs/content/) returns 403 to automated reading, so whether it has an AI component could not be verified. Not recorded as an instrument.",
+      "found": "2026-10-07"
+    }
+  ]
 }
