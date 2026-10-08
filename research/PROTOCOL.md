@@ -84,6 +84,8 @@ Instruments from the EU, GCC, AU, ASEAN, UNESCO and similar bodies are stored **
 
 `build.py` attaches each instrument to every country it applies to. The country page then lists it with the national documents, marked "<body> level · applies here", and its dated changes appear in the country's Changes tab.
 
+**Convention 108:** when a country's own official ratification or accession act is found in its gazette during a deep review, record it as the source and add the country to the Convention 108 record's `applies_to` (create that record the first time; Tunisia acceded in 2017).
+
 Never copy a regional instrument into a country file. A country's own **transposition or implementing law** (e.g. a national law designating AI Act authorities) is a national instrument and goes in the country file.
 
 ## 3. Record standard (each instrument)
