@@ -43,6 +43,8 @@ The following are **never** sources, even when official:
 
 `validate.py` rejects them. If a document is known to exist but no official full text is online yet, record it under `leads` in the country file (not as an instrument) and promote it once the document is published.
 
+A file hosted by a third party counts as official only if the issuing body's own official page names that host as where it publishes the document. `source_url` is then the issuer's page.
+
 ## 2. Where to search (every country, every time)
 
 1. National AI body or AI office, if any
