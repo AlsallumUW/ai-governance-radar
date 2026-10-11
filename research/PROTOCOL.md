@@ -46,6 +46,7 @@ The following are **never** sources, even when official:
 A file hosted by a third party counts as official only if the issuing body's own official page names that host as where it publishes the document. `source_url` is then the issuer's page.
 
 Regulator decisions cite the decision itself, not the media release about it.
+Central-government publication portals (e.g. France's vie-publique.fr and ia.numerique.gouv.fr) count as official channels for documents of that government's own bodies.
 
 ## 2. Where to search (every country, every time)
 
