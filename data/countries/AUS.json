@@ -270,7 +270,8 @@
       "verification_level": "primary_source_located",
       "metadata_gaps": [
         "cyber.gov.au and asd.gov.au refused every automated request on 2026-10-11 (bot protection), so the ASD-hosted text could not be read",
-        "Publication date and co-sealing partners taken from partner-agency and ASD news listings, not from the ASD page itself"
+        "Publication date and co-sealing partners taken from partner-agency and ASD news listings, not from the ASD page itself",
+        "Retried 2026-10-11 with WebFetch and curl: WebFetch returned HTTP 503 for the cyber.gov.au page (and for asd.gov.au); curl with a browser user agent got a reset HTTP/2 stream, then timeout / empty reply over HTTP/1.1; text still not read"
       ],
       "source_kind": "official_publication",
       "evidence_reference": "aus-deep-review-A2-2026-10-11",
@@ -1020,7 +1021,8 @@
       "verification_level": "primary_source_located",
       "metadata_gaps": [
         "Official page refused automated access; full text not read",
-        "Not formally stated to be superseded; treated as historical because the National AI Plan now sets national direction"
+        "Not formally stated to be superseded; treated as historical because the National AI Plan now sets national direction",
+        "Retried 2026-10-11 with WebFetch and curl: WebFetch returned HTTP 503 for the industry.gov.au page(s); curl with a browser user agent got a reset HTTP/2 stream, then a timeout over HTTP/1.1; text still not read"
       ],
       "source_kind": "official_publication",
       "evidence_reference": "aus-deep-review-A2-2026-10-11",
@@ -1694,7 +1696,8 @@
       "verification_date": "2026-10-11",
       "verification_level": "primary_source_located",
       "metadata_gaps": [
-        "Release date inferred from the PDF's 'last updated 4 Jun 2026' stamp; no announcement read"
+        "Release date inferred from the PDF's 'last updated 4 Jun 2026' stamp; no announcement read",
+        "Retried 2026-10-11 with WebFetch and curl: WebFetch returned HTTP 503 for the digital.gov.au page and its PDF; curl with a browser user agent got a reset HTTP/2 stream, then an empty reply over HTTP/1.1; dates not re-confirmed"
       ],
       "source_kind": "official_publication",
       "evidence_reference": "aus-deep-review-A2-2026-10-11",
@@ -1801,7 +1804,8 @@
       "verification_date": "2026-10-11",
       "verification_level": "primary_source_located",
       "metadata_gaps": [
-        "Publication month (October 2024) from the DTA's own statement in search listings and the October 2024 file paths on the page; the page itself states only the pilot period"
+        "Publication month (October 2024) from the DTA's own statement in search listings and the October 2024 file paths on the page; the page itself states only the pilot period",
+        "Retried 2026-10-11 with WebFetch and curl: WebFetch returned HTTP 503 for the digital.gov.au page and its PDF; curl with a browser user agent got a reset HTTP/2 stream, then an empty reply over HTTP/1.1; dates not re-confirmed"
       ],
       "source_kind": "official_publication",
       "evidence_reference": "aus-deep-review-A2-2026-10-11",
@@ -1852,7 +1856,8 @@
       "verification_date": "2026-10-11",
       "verification_level": "primary_source_located",
       "metadata_gaps": [
-        "Release date taken from the 'last updated 12 Nov 2025' stamp on the plan's files"
+        "Release date taken from the 'last updated 12 Nov 2025' stamp on the plan's files",
+        "Retried 2026-10-11 with WebFetch and curl: WebFetch returned HTTP 503 for the digital.gov.au page and its PDF; curl with a browser user agent got a reset HTTP/2 stream, then an empty reply over HTTP/1.1; dates not re-confirmed"
       ],
       "source_kind": "official_publication",
       "evidence_reference": "aus-deep-review-A2-2026-10-11",
@@ -1903,7 +1908,8 @@
       "verification_date": "2026-10-11",
       "verification_level": "primary_source_located",
       "metadata_gaps": [
-        "Release date from the DTA media-release listing, not read directly"
+        "Release date from the DTA media-release listing, not read directly",
+        "Retried 2026-10-11 with WebFetch and curl: WebFetch returned HTTP 503 for the digital.gov.au page and its PDF; curl with a browser user agent got a reset HTTP/2 stream, then an empty reply over HTTP/1.1; dates not re-confirmed"
       ],
       "source_kind": "official_publication",
       "evidence_reference": "aus-deep-review-A2-2026-10-11",
@@ -1957,7 +1963,8 @@
       "verification_date": "2026-10-11",
       "verification_level": "primary_source_located",
       "metadata_gaps": [
-        "Release date from the DTA media-release listing, not read directly"
+        "Release date from the DTA media-release listing, not read directly",
+        "Retried 2026-10-11 with WebFetch and curl: WebFetch returned HTTP 503 for the digital.gov.au page and its PDF; curl with a browser user agent got a reset HTTP/2 stream, then an empty reply over HTTP/1.1; dates not re-confirmed"
       ],
       "source_kind": "official_publication",
       "evidence_reference": "aus-deep-review-A2-2026-10-11",
@@ -2010,7 +2017,8 @@
       "verification_date": "2026-10-11",
       "verification_level": "primary_source_located",
       "metadata_gaps": [
-        "Release month inferred from the PDF's 'last updated 11 Mar 2026' stamp"
+        "Release month inferred from the PDF's 'last updated 11 Mar 2026' stamp",
+        "Retried 2026-10-11 with WebFetch and curl: WebFetch returned HTTP 503 for the digital.gov.au page and its PDF; curl with a browser user agent got a reset HTTP/2 stream, then an empty reply over HTTP/1.1; dates not re-confirmed"
       ],
       "source_kind": "official_publication",
       "evidence_reference": "aus-deep-review-A2-2026-10-11",
@@ -2093,7 +2101,7 @@
       "publication_date": "2025-03",
       "effective_date": null,
       "last_amended_date": null,
-      "current_status": "Version 2.0 (Word file dated 13 March 2025; ClauseBank article revised 14 and 17 March 2025). Their use is not mandatory.",
+      "current_status": "Version 2.0. The ClauseBank page (article KB0010685, v28.0, last modified 17 March 2025) links the Word file 'DTA AI Model Clauses (Version 2.0 March 2025)'; the clauses refer to the Home Affairs DeepSeek Direction of 4 February 2025. The page states that use of the ClauseBank clauses is not mandatory.",
       "scope": "Australia (Commonwealth)",
       "sectors": [],
       "technology_scope": [
@@ -2110,9 +2118,9 @@
       "related_instruments": [],
       "regional_applicability": [],
       "verification_date": "2026-10-11",
-      "verification_level": "primary_source_located",
+      "verification_level": "reviewed_primary_metadata",
       "metadata_gaps": [
-        "No release date stated; month taken from the document and ClauseBank revision history"
+        "No day of release stated; month taken from the official file name ('Version 2.0 March 2025') and the ClauseBank revision history (14 and 17 March 2025)"
       ],
       "source_kind": "official_publication",
       "evidence_reference": "aus-deep-review-A2-2026-10-11",
@@ -2164,7 +2172,8 @@
       "verification_level": "primary_source_located",
       "metadata_gaps": [
         "cyber.gov.au and asd.gov.au refused every automated request on 2026-10-11 (bot protection), so the ASD-hosted text could not be read",
-        "Publication date and co-sealing partners taken from partner-agency and ASD news listings, not from the ASD page itself"
+        "Publication date and co-sealing partners taken from partner-agency and ASD news listings, not from the ASD page itself",
+        "Retried 2026-10-11 with WebFetch and curl: WebFetch returned HTTP 503 for the cyber.gov.au page (and for asd.gov.au); curl with a browser user agent got a reset HTTP/2 stream, then timeout / empty reply over HTTP/1.1; text still not read"
       ],
       "source_kind": "official_publication",
       "evidence_reference": "aus-deep-review-A2-2026-10-11",
@@ -2215,7 +2224,8 @@
       "verification_level": "primary_source_located",
       "metadata_gaps": [
         "cyber.gov.au and asd.gov.au refused every automated request on 2026-10-11 (bot protection), so the ASD-hosted text could not be read",
-        "Publication date and co-sealing partners taken from partner-agency and ASD news listings, not from the ASD page itself"
+        "Publication date and co-sealing partners taken from partner-agency and ASD news listings, not from the ASD page itself",
+        "Retried 2026-10-11 with WebFetch and curl: WebFetch returned HTTP 503 for the cyber.gov.au page (and for asd.gov.au); curl with a browser user agent got a reset HTTP/2 stream, then timeout / empty reply over HTTP/1.1; text still not read"
       ],
       "source_kind": "official_publication",
       "evidence_reference": "aus-deep-review-A2-2026-10-11",
@@ -2267,7 +2277,8 @@
       "verification_level": "primary_source_located",
       "metadata_gaps": [
         "cyber.gov.au and asd.gov.au refused every automated request on 2026-10-11 (bot protection), so the ASD-hosted text could not be read",
-        "Publication date and co-sealing partners taken from partner-agency and ASD news listings, not from the ASD page itself"
+        "Publication date and co-sealing partners taken from partner-agency and ASD news listings, not from the ASD page itself",
+        "Retried 2026-10-11 with WebFetch and curl: WebFetch returned HTTP 503 for the cyber.gov.au page (and for asd.gov.au); curl with a browser user agent got a reset HTTP/2 stream, then timeout / empty reply over HTTP/1.1; text still not read"
       ],
       "source_kind": "official_publication",
       "evidence_reference": "aus-deep-review-A2-2026-10-11",
@@ -2323,7 +2334,8 @@
       "verification_level": "primary_source_located",
       "metadata_gaps": [
         "cyber.gov.au and asd.gov.au refused every automated request on 2026-10-11 (bot protection), so the ASD-hosted text could not be read",
-        "Publication date and co-sealing partners taken from partner-agency and ASD news listings, not from the ASD page itself"
+        "Publication date and co-sealing partners taken from partner-agency and ASD news listings, not from the ASD page itself",
+        "Retried 2026-10-11 with WebFetch and curl: WebFetch returned HTTP 503 for the cyber.gov.au page (and for asd.gov.au); curl with a browser user agent got a reset HTTP/2 stream, then timeout / empty reply over HTTP/1.1; text still not read"
       ],
       "source_kind": "official_publication",
       "evidence_reference": "aus-deep-review-A2-2026-10-11",
@@ -2375,7 +2387,8 @@
       "verification_level": "primary_source_located",
       "metadata_gaps": [
         "cyber.gov.au and asd.gov.au refused every automated request on 2026-10-11 (bot protection), so the ASD-hosted text could not be read",
-        "Publication date and co-sealing partners taken from partner-agency and ASD news listings, not from the ASD page itself"
+        "Publication date and co-sealing partners taken from partner-agency and ASD news listings, not from the ASD page itself",
+        "Retried 2026-10-11 with WebFetch and curl: WebFetch returned HTTP 503 for the cyber.gov.au page (and for asd.gov.au); curl with a browser user agent got a reset HTTP/2 stream, then timeout / empty reply over HTTP/1.1; text still not read"
       ],
       "source_kind": "official_publication",
       "evidence_reference": "aus-deep-review-A2-2026-10-11",
@@ -2766,7 +2779,8 @@
       "verification_date": "2026-10-11",
       "verification_level": "primary_source_located",
       "metadata_gaps": [
-        "Signing date not stated on the DISR page; publication_date is the DISR publication date"
+        "Signing date not stated on the DISR page; publication_date is the DISR publication date",
+        "Retried 2026-10-11 with WebFetch and curl: WebFetch returned HTTP 503 for the industry.gov.au page(s); curl with a browser user agent got a reset HTTP/2 stream, then a timeout over HTTP/1.1; text still not read; MOU signing date still not found"
       ],
       "source_kind": "official_publication",
       "evidence_reference": "aus-deep-review-A2-2026-10-11",
@@ -2949,32 +2963,30 @@
       "publication_date": "2021-11-03",
       "effective_date": "2021-10-14",
       "last_amended_date": null,
-      "current_status": "Determination under s 52(1A) of the Privacy Act 1988 issued 14 October 2021, released by the OAIC on 3 November 2021 after a joint investigation with the UK ICO. Clearview sought review in the Administrative Appeals Tribunal but withdrew in August 2023; the OAIC statement of 21 August 2024 says the determination and its declarations still stand and that no further action would be taken at that time.",
+      "current_status": "Determination (decision and reasons) of the Australian Information Commissioner and Privacy Commissioner dated 14 October 2021, case reference CII20/00006, made after a joint investigation with the UK ICO; the OAIC published it on 3 November 2021 with a media release (oaic.gov.au/news/media-centre/clearview-ai-breached-australians-privacy). Clearview sought review in the Administrative Appeals Tribunal but withdrew in August 2023; the OAIC statement of 21 August 2024 says the determination and its declarations still stand and that no further action would be taken at that time.",
       "scope": "Australia (Commonwealth)",
       "sectors": [],
       "technology_scope": [
         "AI"
       ],
-      "summary": "Determination finding that Clearview AI breached the Privacy Act by scraping facial images from the web and social media to build biometric templates for its facial recognition search tool. The Commissioner found collection of sensitive information without consent and by unfair means, failure to notify, failure to ensure accuracy of disclosed information and failure to implement APP compliance practices. Clearview was ordered to stop collecting facial images and biometric templates from individuals in Australia and to destroy those already collected.",
+      "summary": "Determination finding that Clearview AI breached the Privacy Act by scraping facial images from the web and social media to build biometric vectors for its facial recognition search tool. The Commissioner found breaches of APPs 3.3 (sensitive information collected without consent), 3.5 (unfair means), 5 (no notification), 10.2 (accuracy of disclosed information) and 1.2 (no compliance practices). Under s 52(1A) Clearview was declared to stop collecting scraped and probe images and vectors from individuals in Australia and to destroy those already collected within 90 days.",
       "ai_governance_relevance": "Leading Australian decision on AI data scraping and biometric surveillance by a foreign AI company.",
-      "source_url": "https://www.oaic.gov.au/news/media-centre/clearview-ai-breached-australians-privacy",
-      "official_pdf_url": null,
-      "official_webpage_url": "https://www.oaic.gov.au/news/media-centre/clearview-ai-breached-australians-privacy",
+      "source_url": "https://www.oaic.gov.au/__data/assets/pdf_file/0016/11284/Commissioner-initiated-investigation-into-Clearview-AI,-Inc.-Privacy-2021-AICmr-54-14-October-2021.pdf",
+      "official_pdf_url": "https://www.oaic.gov.au/__data/assets/pdf_file/0016/11284/Commissioner-initiated-investigation-into-Clearview-AI,-Inc.-Privacy-2021-AICmr-54-14-October-2021.pdf",
+      "official_webpage_url": "https://www.oaic.gov.au/privacy/privacy-assessments-and-decisions/privacy-decisions/privacy-determinations",
       "language": "en",
       "supersedes": [],
       "superseded_by": [],
       "related_instruments": [],
       "regional_applicability": [],
       "verification_date": "2026-10-11",
-      "verification_level": "primary_source_located",
-      "metadata_gaps": [
-        "Full determination text not read: the OAIC links the AICmr series on AustLII, which refused access from the review environment; facts taken from the OAIC media release of 3 November 2021 and the OAIC statement of 21 August 2024"
-      ],
-      "source_kind": "official_publication",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
       "evidence_reference": "aus-deep-review-A3-2026-10-11",
       "link_status": "reachable",
       "document_access_type": "official_publication_or_full_text_page",
-      "source_id": "s-f8fe722bee6d",
+      "source_id": "s-42d671f9a0d7",
       "organization_id": "o-0fdcea815833",
       "first_recorded": "2026-10-11",
       "last_changed": "2021-11-03"
@@ -2999,7 +3011,7 @@
       "publication_date": "2024-11-19",
       "effective_date": "2024-10-29",
       "last_amended_date": null,
-      "current_status": "Determination dated 29 October 2024, published by the OAIC on 19 November 2024. On 4 February 2026 the Administrative Review Tribunal affirmed the findings under APP 1 and APP 5 but set aside the finding that Bunnings contravened APP 3.3, holding Bunnings could rely on exceptions to consent (OAIC statement of 4 February 2026).",
+      "current_status": "Determination dated 29 October 2024, listed in the OAIC privacy determinations register (full text in the AICmr series on AustLII) and announced in an OAIC media release of 19 November 2024 with a fact sheet. On 4 February 2026 the Administrative Review Tribunal affirmed the findings under APP 1 and APP 5 but set aside the finding that Bunnings contravened APP 3.3, holding Bunnings could rely on exceptions to consent (OAIC statement of 4 February 2026).",
       "scope": "Australia (Commonwealth)",
       "sectors": [
         "retail"
@@ -3009,9 +3021,9 @@
       ],
       "summary": "Determination finding that Bunnings breached the Privacy Act by using a CCTV-based facial recognition system that captured the faces of everyone entering 63 stores in Victoria and New South Wales between November 2018 and November 2021. The Commissioner found sensitive biometric information was collected without consent, without adequate notice and without required privacy policy content, and that Bunnings lacked practices to ensure compliance; Bunnings was ordered not to repeat the conduct. The Tribunal later upheld the notice and governance findings but not the consent finding.",
       "ai_governance_relevance": "Key decision on proportionality of AI-enabled facial recognition in retail, partly varied on review.",
-      "source_url": "https://www.oaic.gov.au/news/media-centre/bunnings-breached-australians-privacy-with-facial-recognition-tool",
-      "official_pdf_url": "https://www.oaic.gov.au/__data/assets/pdf_file/0027/243936/Bunnings-determination-factsheet.pdf",
-      "official_webpage_url": "https://www.oaic.gov.au/news/media-centre/bunnings-breached-australians-privacy-with-facial-recognition-tool",
+      "source_url": "https://www.oaic.gov.au/privacy/privacy-assessments-and-decisions/privacy-decisions/privacy-determinations",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.oaic.gov.au/privacy/privacy-assessments-and-decisions/privacy-decisions/privacy-determinations",
       "language": "en",
       "supersedes": [],
       "superseded_by": [],
@@ -3020,13 +3032,14 @@
       "verification_date": "2026-10-11",
       "verification_level": "primary_source_located",
       "metadata_gaps": [
-        "Full determination text not read: the OAIC links it on AustLII, which refused access from the review environment; facts taken from the OAIC media release, OAIC determinations register and OAIC statement on the Tribunal decision"
+        "Full determination text not read: the OAIC links it on AustLII, which refused access from the review environment; facts taken from the OAIC media release, OAIC determinations register and OAIC statement on the Tribunal decision",
+        "Retried 2026-10-11 with WebFetch and curl: full text is published only on AustLII (named by the OAIC register), which returned HTTP 403 to both curl and WebFetch; no OAIC-hosted copy of the determination found. source_url now the OAIC determinations register entry (title, date 29 October 2024, APPs 3.3, 5.1, 1.2 and 1.3, breach and remedies confirmed there)."
       ],
       "source_kind": "official_publication",
       "evidence_reference": "aus-deep-review-A3-2026-10-11",
       "link_status": "reachable",
       "document_access_type": "official_publication_or_full_text_page",
-      "source_id": "s-a0b7f3488c5c",
+      "source_id": "s-cf72290a48ad",
       "organization_id": "o-0fdcea815833",
       "first_recorded": "2026-10-11",
       "last_changed": "2024-11-19"
@@ -3051,7 +3064,7 @@
       "publication_date": "2025-09-18",
       "effective_date": "2025-08-26",
       "last_amended_date": null,
-      "current_status": "Determination dated 26 August 2025, published by the OAIC on 18 September 2025. The OAIC's facial recognition guide (updated 29 July 2026) states the determination remains under review in the Administrative Review Tribunal.",
+      "current_status": "Determination dated 26 August 2025, listed in the OAIC privacy determinations register (full text in the AICmr series on AustLII) and announced in an OAIC media release of 18 September 2025. The OAIC's facial recognition guide (updated 29 July 2026) states the determination remains under review in the Administrative Review Tribunal.",
       "scope": "Australia (Commonwealth)",
       "sectors": [
         "retail"
@@ -3061,9 +3074,9 @@
       ],
       "summary": "Determination finding that Kmart breached the Privacy Act by deploying facial recognition between June 2020 and July 2022 to capture the faces of everyone entering 28 stores, and everyone at returns counters, to detect refund fraud. The Commissioner found Kmart could not rely on the unlawful-activity exception to consent because collection was indiscriminate, of limited utility and disproportionate, and found breaches of APPs 3.3, 5 and 1.3. It is the second OAIC determination on retail facial recognition.",
       "ai_governance_relevance": "Applies the Privacy Act's consent exceptions to AI-enabled biometric surveillance in retail.",
-      "source_url": "https://www.oaic.gov.au/news/media-centre/18-kmarts-use-of-facial-recognition-to-tackle-refund-fraud-unlawful,-privacy-commissioner-finds",
+      "source_url": "https://www.oaic.gov.au/privacy/privacy-assessments-and-decisions/privacy-decisions/privacy-determinations",
       "official_pdf_url": null,
-      "official_webpage_url": "https://www.oaic.gov.au/news/media-centre/18-kmarts-use-of-facial-recognition-to-tackle-refund-fraud-unlawful,-privacy-commissioner-finds",
+      "official_webpage_url": "https://www.oaic.gov.au/privacy/privacy-assessments-and-decisions/privacy-decisions/privacy-determinations",
       "language": "en",
       "supersedes": [],
       "superseded_by": [],
@@ -3072,13 +3085,14 @@
       "verification_date": "2026-10-11",
       "verification_level": "primary_source_located",
       "metadata_gaps": [
-        "Full determination text not read: the OAIC links it on AustLII, which refused access from the review environment, and the OAIC-hosted PDF returned 404; facts taken from the OAIC media release and determinations register"
+        "Full determination text not read: the OAIC links it on AustLII, which refused access from the review environment, and the OAIC-hosted PDF returned 404; facts taken from the OAIC media release and determinations register",
+        "Retried 2026-10-11 with WebFetch and curl: the OAIC-hosted PDF (oaic.gov.au/__data/assets/pdf_file/0029/256583/...Kmart...AICmr-155-26-August-2025.pdf) returned HTTP 404 to curl and WebFetch, and the AustLII copy named by the OAIC register returned HTTP 403. source_url now the OAIC determinations register entry (title, date 26 August 2025, APPs 3.3, 3.4, 5.1, 5.2, 1.3 and 1.4 and breach finding confirmed there)."
       ],
       "source_kind": "official_publication",
       "evidence_reference": "aus-deep-review-A3-2026-10-11",
       "link_status": "reachable",
       "document_access_type": "official_publication_or_full_text_page",
-      "source_id": "s-7b11dba4ceb9",
+      "source_id": "s-cf72290a48ad",
       "organization_id": "o-0fdcea815833",
       "first_recorded": "2026-10-11",
       "last_changed": "2025-09-18"
@@ -3473,7 +3487,8 @@
       "verification_level": "primary_source_located",
       "metadata_gaps": [
         "Full text not read: esafety.gov.au refused or dropped connections from the review environment on 11 October 2026",
-        "Exact day of publication"
+        "Exact day of publication",
+        "Retried 2026-10-11 with WebFetch and curl: esafety.gov.au PDF and pages returned HTTP 503 to WebFetch and connection resets (HTTP/2 INTERNAL_ERROR) to curl."
       ],
       "source_kind": "official_document",
       "evidence_reference": "aus-deep-review-A3-2026-10-11",
@@ -4008,7 +4023,8 @@
       "verification_date": "2026-10-11",
       "verification_level": "primary_source_located",
       "metadata_gaps": [
-        "The full 2024 assessment questionnaire is now delivered through the login-only AIAF Platform; the public page describing requirements was read but the 2024 framework document itself was not located on an official site."
+        "The full 2024 assessment questionnaire is now delivered through the login-only AIAF Platform; the public page describing requirements was read but the 2024 framework document itself was not located on an official site.",
+        "Retried 2026-10-11 with WebFetch and curl: official page re-read (HTTP 200) but no public copy of the framework document itself was found on digital.nsw.gov.au (assessment delivered through the login-only AIAF Platform)."
       ],
       "source_kind": "official_publication",
       "evidence_reference": "aus-deep-review-A4-2026-10-11",
@@ -4546,7 +4562,8 @@
       "verification_date": "2026-10-11",
       "verification_level": "primary_source_located",
       "metadata_gaps": [
-        "Act text and commencement proclamation (sl-2025-630) could not be opened (HTTP 403); title, number, assent date, commencement date and scope taken from the official legislation-portal text as indexed by a search engine; offence section numbers not verified."
+        "Act text and commencement proclamation (sl-2025-630) could not be opened (HTTP 403); title, number, assent date, commencement date and scope taken from the official legislation-portal text as indexed by a search engine; offence section numbers not verified.",
+        "Retried 2026-10-11 with WebFetch and curl: Act PDF/HTML, commencement proclamation sl-2025-630 and the NSW Parliament bill page all returned HTTP 403 (bot challenge) to both WebFetch and curl; no event added."
       ],
       "source_kind": "legislation_portal",
       "evidence_reference": "aus-deep-review-A4-2026-10-11",
@@ -4854,9 +4871,9 @@
       "related_instruments": [],
       "regional_applicability": [],
       "verification_date": "2026-10-11",
-      "verification_level": "primary_source_located",
+      "verification_level": "reviewed_primary_metadata",
       "metadata_gaps": [
-        "No publication date on the page or document; 2021-06 taken from the official upload folder and document properties."
+        "No publication date on the page or document; 2021-06 taken from the official upload folder (wp-content/uploads/2021/06) of the Word version and its document properties."
       ],
       "source_kind": "official_publication",
       "evidence_reference": "aus-deep-review-A4-2026-10-11",
@@ -5108,7 +5125,8 @@
       "verification_date": "2026-10-11",
       "verification_level": "primary_source_located",
       "metadata_gaps": [
-        "Statement text not read (HTTP 403); date and pillars taken from the official Premier of Victoria media release of 30 January 2026 (premier.vic.gov.au)."
+        "Statement text not read (HTTP 403); date and pillars taken from the official Premier of Victoria media release of 30 January 2026 (premier.vic.gov.au).",
+        "Retried 2026-10-11 with WebFetch and curl: statement PDF, accessible DOCX and djsir page returned HTTP 403 (bot challenge) to WebFetch and curl."
       ],
       "source_kind": "official_document",
       "evidence_reference": "aus-deep-review-A4-2026-10-11",
@@ -5246,17 +5264,17 @@
       "publication_date": "2026-09",
       "effective_date": null,
       "last_amended_date": "2026-09-29",
-      "current_status": "QGEA framework version 2.0.0 (Word template FAIRA-framework-v2.0.0.docx), page status 'Current Non-mandated', effective September 2026 - current, last updated 29 September 2026. Its use (or an agreed equivalent) is required by the Artificial intelligence governance policy.",
+      "current_status": "QGEA framework version 2.0.0 (Final, September 2026; Word template FAIRA-framework-v2.0.0.docx), page status 'Current Non-mandated', effective September 2026 - current, page last updated 29 September 2026. The template itself states that under the AI governance policy, application of the FAIRA framework is a mandated requirement for all deployed uses of AI in the Queensland Government; scoped, low-risk limited trials may use FAIRA LITE (see the FAIRA guideline).",
       "scope": "Queensland",
       "sectors": [],
       "technology_scope": [
         "AI"
       ],
-      "summary": "Template tool for Queensland agencies evaluating AI solutions, consisting of a components analysis that fully describes the AI solution in its context of use and a values assessment that identifies risks, aligned to Australia's AI Ethics Principles, to be managed through the agency's ICT risk register. It supports transparency and accountability by documenting AI risks and mitigations across the lifecycle.",
+      "summary": "Template tool for Queensland Government agencies evaluating AI solutions, completed by a multidisciplinary team across the AI lifecycle: Part A, a components analysis that fully describes the AI solution in its context of use; Part B, a values assessment of benefits and risks against each of Australia's AI Ethics Principles as set out in the National Framework for the Assurance of AI in Government; and Part C, a catalogue of controls for AI risks. Identified risks are managed through the agency's ICT risk register, and the framework maps twelve domains of AI risk to the responsible Queensland officers and legislation.",
       "ai_governance_relevance": "The risk assessment template Queensland agencies use for AI.",
       "source_url": "https://www.forgov.qld.gov.au/information-technology/queensland-government-enterprise-architecture-qgea/qgea-directions-and-guidance/qgea-policies-standards-and-guidelines/faira-framework",
       "official_pdf_url": null,
-      "official_webpage_url": null,
+      "official_webpage_url": "https://www.forgov.qld.gov.au/information-technology/queensland-government-enterprise-architecture-qgea/qgea-directions-and-guidance/qgea-policies-standards-and-guidelines/faira-framework",
       "language": "en",
       "supersedes": [],
       "superseded_by": [],
@@ -5266,10 +5284,8 @@
       ],
       "regional_applicability": [],
       "verification_date": "2026-10-11",
-      "verification_level": "primary_source_located",
-      "metadata_gaps": [
-        "The Word template (https://www.forgov.qld.gov.au/__data/assets/word_doc/0029/524828/FAIRA-framework-v2.0.0.docx) was not read; summary from the official page."
-      ],
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
       "source_kind": "official_publication",
       "evidence_reference": "aus-deep-review-A4-2026-10-11",
       "link_status": "reachable",
@@ -5658,8 +5674,8 @@
       "lifecycle": "in_force",
       "publication_date": "2024-12-06",
       "effective_date": "2026-07-01",
-      "last_amended_date": null,
-      "current_status": "Act No. 51 of 2024, assented 6 December 2024. Parts 1 and 7 commenced 6 December 2024; Pt 2 Div 12, Pt 3 Div 8 and Parts 4-5 on 1 July 2025 (SL 2025/102); the remaining provisions, including the Information Privacy Principles (IPP 10 on automated decision-making), commence 1 July 2026 according to the Office of the Information Commissioner WA, with the notifiable breach scheme following. The official compilation read is as at 31 March 2026, when Part 2 was still uncommenced.",
+      "last_amended_date": "2026-07-01",
+      "current_status": "Act No. 51 of 2024, assented 6 December 2024. Per the compilation table of the official consolidation as at 1 July 2026 (PCO 00-g0-03): Parts 1 and 7 commenced 6 December 2024; Pt 2 Div 12, Pt 3 Div 8 and Parts 4-5 on 1 July 2025 (SL 2025/102 cl. 2); Pt 2 Divs 1-5 and 7-9 (including s 16 on automated decision-making), most of Divs 10-11, Div 13, Pt 3 Divs 1-5, 7 and 9, Pt 6 and Schedules 1 and 2 (the Information Privacy Principles, including IPP 10 on automated decision-making) on 1 July 2026 (SL 2026/128 cl. 2). Pt 2 Div 6, Div 10 Subdiv 4, ss 134-136 and Pt 3 Div 6 are uncommenced and fixed to commence 1 January 2027 (SL 2026/203 cl. 2). Amended by the Assisted Reproductive Technology and Surrogacy Act 2025 (from 1 July 2026) and the Education and Care Services National Law Application Act 2026 (from 1 May 2026, deleting Pt 6 Div 1 before it commenced).",
       "scope": "Western Australia",
       "sectors": [],
       "technology_scope": [
@@ -5667,9 +5683,9 @@
       ],
       "summary": "WA's first public-sector privacy law: it sets Information Privacy Principles for public entities, Ministers and their contracted service providers, authorises responsible information sharing, establishes a Chief Data Officer and amends the Freedom of Information Act 1992. It defines an automated decision-making process (s 16) as one using a computer or AI system to make, or materially assist in making, a decision; under IPP 10, entities using such processes with personal information for significant decisions must conduct and periodically review an impact assessment, notify affected individuals, explain on request how the process works, and provide a way to request human intervention.",
       "ai_governance_relevance": "First Australian statute to regulate public-sector automated decision-making involving personal information.",
-      "source_url": "https://www.legislation.wa.gov.au/legislation/prod/filestore.nsf/FileURL/mrdoc_49284.pdf/$FILE/Privacy%20and%20Responsible%20Information%20Sharing%20Act%202024%20-%20%5B00-e0-00%5D.pdf",
-      "official_pdf_url": "https://www.legislation.wa.gov.au/legislation/prod/filestore.nsf/FileURL/mrdoc_49284.pdf/$FILE/Privacy%20and%20Responsible%20Information%20Sharing%20Act%202024%20-%20%5B00-e0-00%5D.pdf",
-      "official_webpage_url": null,
+      "source_url": "https://www.legislation.wa.gov.au/legislation/statutes.nsf/law_a147470.html",
+      "official_pdf_url": "https://www.legislation.wa.gov.au/legislation/prod/filestore.nsf/FileURL/mrdoc_49691.pdf/$FILE/Privacy%20and%20Responsible%20Information%20Sharing%20Act%202024%20-%20%5B00-g0-03%5D.pdf",
+      "official_webpage_url": "https://www.legislation.wa.gov.au/legislation/statutes.nsf/law_a147470.html",
       "language": "en",
       "supersedes": [],
       "superseded_by": [],
@@ -5678,15 +5694,13 @@
       ],
       "regional_applicability": [],
       "verification_date": "2026-10-11",
-      "verification_level": "primary_source_located",
-      "metadata_gaps": [
-        "The official compilation (as at 31 March 2026) omits uncommenced Part 2, so the text of s 16 and IPP 10 was not read; their content and the 1 July 2026 commencement are taken from the Office of the Information Commissioner WA guidance. The commencement proclamation was not read."
-      ],
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
       "source_kind": "legislation_portal",
       "evidence_reference": "aus-deep-review-A4-2026-10-11",
       "link_status": "reachable",
       "document_access_type": "original_government_document",
-      "source_id": "s-021e2aae99c1",
+      "source_id": "s-59a882d0696b",
       "organization_id": "o-dd933f4e7d13",
       "first_recorded": "2026-10-11",
       "last_changed": null
@@ -5785,7 +5799,8 @@
       "verification_date": "2026-10-11",
       "verification_level": "primary_source_located",
       "metadata_gaps": [
-        "Act text could not be opened (HTTP 403); title, number, assent date, commencement clause and section headings taken from the official legislation-portal text as indexed by a search engine. Commencement date not verified."
+        "Act text could not be opened (HTTP 403); title, number, assent date, commencement clause and section headings taken from the official legislation-portal text as indexed by a search engine. Commencement date not verified.",
+        "Retried 2026-10-11 with WebFetch and curl: Act PDF and RTF on legislation.sa.gov.au and the SA Government Gazette site returned HTTP 403 (bot challenge) to WebFetch and curl; commencement still unverified; no event added."
       ],
       "source_kind": "legislation_portal",
       "evidence_reference": "aus-deep-review-A4-2026-10-11",
@@ -5837,7 +5852,8 @@
       "verification_date": "2026-10-11",
       "verification_level": "primary_source_located",
       "metadata_gaps": [
-        "PDF could not be opened (HTTP 403); title, version, dates and principles taken from the official PDF text as indexed by a search engine. Detailed requirements not verified."
+        "PDF could not be opened (HTTP 403); title, version, dates and principles taken from the official PDF text as indexed by a search engine. Detailed requirements not verified.",
+        "Retried 2026-10-11 with WebFetch and curl: guidance PDF (both dpac.tas.gov.au paths), the summary PDF and policies page returned HTTP 403 (bot challenge) to WebFetch and curl; no event added."
       ],
       "source_kind": "official_document",
       "evidence_reference": "aus-deep-review-A4-2026-10-11",
@@ -5889,7 +5905,8 @@
       "verification_date": "2026-10-11",
       "verification_level": "primary_source_located",
       "metadata_gaps": [
-        "Official pages could not be opened (HTTP 403); dates and content taken from the official pages as indexed by a search engine. Exact November 2025 version date and full text not verified."
+        "Official pages could not be opened (HTTP 403); dates and content taken from the official pages as indexed by a search engine. Exact November 2025 version date and full text not verified.",
+        "Retried 2026-10-11 with WebFetch and curl: dcdd.nt.gov.au and digitalterritory.nt.gov.au pages returned HTTP 403 (bot challenge) to WebFetch and curl; no event added."
       ],
       "source_kind": "official_publication",
       "evidence_reference": "aus-deep-review-A4-2026-10-11",
@@ -7519,7 +7536,7 @@
       ],
       "date_reviewed": "2026-10-11",
       "checked_date": "2026-10-11",
-      "check_method": "GET (curl) of the BuyICT ClauseBank article view (kb_view.do?sysparm_article=KB0010685) and of the linked AI model clauses Word file; both read",
+      "check_method": "Retried 2026-10-11: WebFetch of the SPA URL returned only a 'Page not found' shell (JavaScript page); read via curl (browser user agent) of the ClauseBank article view kb_view.do?sysparm_article=KB0010685 (HTTP 200) and of the linked Word file sys_attachment.do?sys_id=e535e2ca935caa10438b39cdfaba103d ('DTA AI Model Clauses (Version 2.0 March 2025).docx', HTTP 200); title, version, clause list and non-mandatory status checked",
       "http_status": 200,
       "final_url": "https://www.buyict.gov.au/sp?id=resources_and_policies&kb=KB0010685",
       "link_status": "reachable",
@@ -7966,84 +7983,6 @@
       "document_language": "en",
       "error": null,
       "content_type": "application/pdf"
-    },
-    {
-      "id": "s-f8fe722bee6d",
-      "url": "https://www.oaic.gov.au/news/media-centre/clearview-ai-breached-australians-privacy",
-      "jurisdiction_ids": [
-        "AUS"
-      ],
-      "source_institutions": [
-        "Office of the Australian Information Commissioner"
-      ],
-      "instrument_ids": [
-        "i-4255a3180d90"
-      ],
-      "categories_reviewed": [
-        "data-privacy"
-      ],
-      "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "GET (HTTP 200) OAIC media release and OAIC statement on Clearview AI read; determination text on AustLII not reachable",
-      "http_status": 200,
-      "final_url": "https://www.oaic.gov.au/news/media-centre/clearview-ai-breached-australians-privacy",
-      "link_status": "reachable",
-      "page_title": "Clearview AI breached Australians' privacy | OAIC",
-      "document_language": "en",
-      "error": null,
-      "content_type": "text/html"
-    },
-    {
-      "id": "s-a0b7f3488c5c",
-      "url": "https://www.oaic.gov.au/news/media-centre/bunnings-breached-australians-privacy-with-facial-recognition-tool",
-      "jurisdiction_ids": [
-        "AUS"
-      ],
-      "source_institutions": [
-        "Office of the Australian Information Commissioner"
-      ],
-      "instrument_ids": [
-        "i-f65e871e1b24"
-      ],
-      "categories_reviewed": [
-        "data-privacy"
-      ],
-      "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "GET (HTTP 200) OAIC media release, determinations register and OAIC statement of 4 February 2026 read; determination text on AustLII not reachable",
-      "http_status": 200,
-      "final_url": "https://www.oaic.gov.au/news/media-centre/bunnings-breached-australians-privacy-with-facial-recognition-tool",
-      "link_status": "reachable",
-      "page_title": "Bunnings breached Australians' privacy with facial recognition tool | OAIC",
-      "document_language": "en",
-      "error": null,
-      "content_type": "text/html"
-    },
-    {
-      "id": "s-7b11dba4ceb9",
-      "url": "https://www.oaic.gov.au/news/media-centre/18-kmarts-use-of-facial-recognition-to-tackle-refund-fraud-unlawful,-privacy-commissioner-finds",
-      "jurisdiction_ids": [
-        "AUS"
-      ],
-      "source_institutions": [
-        "Office of the Australian Information Commissioner"
-      ],
-      "instrument_ids": [
-        "i-b3a23d281fa7"
-      ],
-      "categories_reviewed": [
-        "data-privacy"
-      ],
-      "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "GET (HTTP 200) OAIC media release and determinations register read; determination text not reachable",
-      "http_status": 200,
-      "final_url": "https://www.oaic.gov.au/news/media-centre/18-kmarts-use-of-facial-recognition-to-tackle-refund-fraud-unlawful,-privacy-commissioner-finds",
-      "link_status": "reachable",
-      "page_title": "Kmart's use of facial recognition to tackle refund fraud unlawful, Privacy Commissioner finds | OAIC",
-      "document_language": "en",
-      "error": null,
-      "content_type": "text/html"
     },
     {
       "id": "s-5b14d6815d3d",
@@ -8956,7 +8895,7 @@
       ],
       "date_reviewed": "2026-10-11",
       "checked_date": "2026-10-11",
-      "check_method": "GET (curl) full text read",
+      "check_method": "GET (curl, browser user agent) official page re-read in full on 11 October 2026 (HTTP 200); Word version linked from the page; no on-page date",
       "http_status": 200,
       "final_url": "https://ovic.vic.gov.au/privacy/resources-for-organisations/artificial-intelligence-understanding-privacy-obligations/",
       "link_status": "reachable",
@@ -9165,7 +9104,7 @@
       ],
       "date_reviewed": "2026-10-11",
       "checked_date": "2026-10-11",
-      "check_method": "GET (curl) full text read",
+      "check_method": "GET (curl, browser user agent) official page (HTTP 200) and the linked Word template FAIRA-framework-v2.0.0.docx (HTTP 200, 1.3 MB) read in full",
       "http_status": 200,
       "final_url": "https://www.forgov.qld.gov.au/information-technology/queensland-government-enterprise-architecture-qgea/qgea-directions-and-guidance/qgea-policies-standards-and-guidelines/faira-framework",
       "link_status": "reachable",
@@ -9359,33 +9298,6 @@
       "error": null
     },
     {
-      "id": "s-021e2aae99c1",
-      "url": "https://www.legislation.wa.gov.au/legislation/prod/filestore.nsf/FileURL/mrdoc_49284.pdf/$FILE/Privacy%20and%20Responsible%20Information%20Sharing%20Act%202024%20-%20%5B00-e0-00%5D.pdf",
-      "jurisdiction_ids": [
-        "AUS"
-      ],
-      "source_institutions": [
-        "Parliament of Western Australia"
-      ],
-      "instrument_ids": [
-        "i-657d5e014530"
-      ],
-      "categories_reviewed": [
-        "binding-law",
-        "data-privacy",
-        "transparency"
-      ],
-      "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "GET (curl) official compilation PDFs [00-a0-01] and [00-e0-00] read (title, assent, commencement, compilation tables)",
-      "http_status": 200,
-      "final_url": "https://www.legislation.wa.gov.au/legislation/prod/filestore.nsf/FileURL/mrdoc_49284.pdf/$FILE/Privacy%20and%20Responsible%20Information%20Sharing%20Act%202024%20-%20%5B00-e0-00%5D.pdf",
-      "link_status": "reachable",
-      "page_title": "Privacy and Responsible Information Sharing Act 2024 - [00-e0-00] (as at 31 Mar 2026)",
-      "document_language": "en",
-      "error": null
-    },
-    {
       "id": "s-d5ab2286ce6a",
       "url": "https://www.wa.gov.au/organisation/office-of-the-information-commissioner/privacy-and-accountability-automated-decision-making",
       "jurisdiction_ids": [
@@ -9573,6 +9485,87 @@
       "page_title": "Recommendation 1 - Item 7.1 - Attachment A (Use of Artificial Intelligence and Generative AI Policy, February 2026)",
       "document_language": "en",
       "error": null
+    },
+    {
+      "id": "s-42d671f9a0d7",
+      "url": "https://www.oaic.gov.au/__data/assets/pdf_file/0016/11284/Commissioner-initiated-investigation-into-Clearview-AI,-Inc.-Privacy-2021-AICmr-54-14-October-2021.pdf",
+      "jurisdiction_ids": [
+        "AUS"
+      ],
+      "source_institutions": [
+        "Office of the Australian Information Commissioner"
+      ],
+      "instrument_ids": [
+        "i-4255a3180d90"
+      ],
+      "categories_reviewed": [
+        "data-privacy"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "GET (curl, browser user agent) OAIC-hosted determination PDF read in full (50 pages; cover page read as image): title, decision maker, decision date, case reference CII20/00006, findings and s 52(1A) declarations; OAIC privacy determinations register entry also read",
+      "http_status": 200,
+      "final_url": "https://www.oaic.gov.au/__data/assets/pdf_file/0016/11284/Commissioner-initiated-investigation-into-Clearview-AI,-Inc.-Privacy-2021-AICmr-54-14-October-2021.pdf",
+      "link_status": "reachable",
+      "page_title": "Commissioner initiated investigation into Clearview AI, Inc. (Privacy) [2021] AICmr 54 (14 October 2021)",
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-cf72290a48ad",
+      "url": "https://www.oaic.gov.au/privacy/privacy-assessments-and-decisions/privacy-decisions/privacy-determinations",
+      "jurisdiction_ids": [
+        "AUS"
+      ],
+      "source_institutions": [
+        "Office of the Australian Information Commissioner"
+      ],
+      "instrument_ids": [
+        "i-f65e871e1b24",
+        "i-b3a23d281fa7"
+      ],
+      "categories_reviewed": [
+        "data-privacy"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "GET (curl, browser user agent) OAIC privacy determinations register read (pages 1-2): entries for [2024] AICmr 230 and [2025] AICmr 155 with decision date, APPs, finding and remedies; the register states each full determination is published in the AICmr series on AustLII, which returned HTTP 403 to curl and WebFetch",
+      "http_status": 200,
+      "final_url": "https://www.oaic.gov.au/privacy/privacy-assessments-and-decisions/privacy-decisions/privacy-determinations",
+      "link_status": "reachable",
+      "page_title": "Privacy determinations | OAIC",
+      "document_language": "en",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-59a882d0696b",
+      "url": "https://www.legislation.wa.gov.au/legislation/statutes.nsf/law_a147470.html",
+      "jurisdiction_ids": [
+        "AUS"
+      ],
+      "source_institutions": [
+        "Parliamentary Counsel's Office (Western Australia)"
+      ],
+      "instrument_ids": [
+        "i-657d5e014530"
+      ],
+      "categories_reviewed": [
+        "binding-law",
+        "data-privacy",
+        "transparency"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "GET (curl, browser user agent) legislation.wa.gov.au law_a147470 page and versions list read (current consolidation 00-g0-03, currency from 1 Jul 2026); official PDF of 00-g0-03 read in full (s 16, Sch 1 IPP 10, compilation table and uncommenced provisions table citing SL 2026/128 and SL 2026/203)",
+      "http_status": 200,
+      "final_url": "https://www.legislation.wa.gov.au/legislation/statutes.nsf/law_a147470.html",
+      "link_status": "reachable",
+      "page_title": "WALW - Privacy and Responsible Information Sharing Act 2024 - Home Page",
+      "document_language": "en",
+      "error": null,
+      "content_type": "text/html"
     }
   ],
   "regional_applicability": [],
@@ -9765,7 +9758,7 @@
       "regional_inheritance": "COMPLETE",
       "gap_check": "COMPLETE"
     },
-    "no_material_found_note": " Technical review notes: Backfill run 2026-10-11 in five parts (A1 federal law and bills; A2 federal government; A3 federal regulators; A4 states and territories; A5 cities). No usage-limit interruption occurred; every record was built from official texts read in this run and the six earlier records were re-checked and fixed (domain-named publishers and organisations replaced). sandbox: no AI regulatory sandbox found (ASIC, APRA, DISR and state sites searched). index-readiness: no government-published AI readiness index or maturity assessment found. Access: cyber.gov.au and asd.gov.au (bot protection), dta.gov.au blog and media pages, esafety.gov.au (reset/503), accc.gov.au and humanrights.gov.au (403), tga.gov.au and health.gov.au (timeouts), parlinfo.aph.gov.au (403), NSW legislation and Parliament, IPC NSW, OIC Queensland, and most SA, Tasmanian, ACT and NT government hosts (403). Several industry.gov.au, digital.gov.au and finance.gov.au pages timing out on direct requests were read through a text-rendering fetch of the official URL (r.jina.ai), recorded in each source's check_method. TGA documents were read on the TGA consultation hub (consultations.tga.gov.au). DISR consultation PDFs are served from the consult.industry.gov.au platform's storage host, linked from the DISR consultation page (source_url is the DISR page). OAIC determinations (Clearview, Bunnings, Kmart) cite OAIC media releases; full texts on AustLII returned 403. 28 records are primary_source_located, including 9 state and territory records built from search-engine copies of official texts; world events whose dates came only from those copies (NSW Act No 57 of 2025 assent and commencement, SA depictions Act assent, Tasmanian guidance approval, NT AI Assurance Framework release) were not logged. The Basic Online Safety Expectations were found by A1 and A3 and are recorded once. The Privacy Act APP 1.7-1.9 automated-decision transparency commences 10 Dec 2026 and is not logged as a world event until it commences. The eSafety designated internet services standard effective date is left empty pending confirmation from eSafety's register. Brisbane, Perth, Gold Coast and Parramatta: no AI instrument found on official council sources.",
+    "no_material_found_note": " Technical review notes: Backfill run 2026-10-11 in five parts (A1 federal law and bills; A2 federal government; A3 federal regulators; A4 states and territories; A5 cities). No usage-limit interruption occurred; every record was built from official texts read in this run and the six earlier records were re-checked and fixed (domain-named publishers and organisations replaced). sandbox: no AI regulatory sandbox found (ASIC, APRA, DISR and state sites searched). index-readiness: no government-published AI readiness index or maturity assessment found. Access: cyber.gov.au and asd.gov.au (bot protection), dta.gov.au blog and media pages, esafety.gov.au (reset/503), accc.gov.au and humanrights.gov.au (403), tga.gov.au and health.gov.au (timeouts), parlinfo.aph.gov.au (403), NSW legislation and Parliament, IPC NSW, OIC Queensland, and most SA, Tasmanian, ACT and NT government hosts (403). Several industry.gov.au, digital.gov.au and finance.gov.au pages timing out on direct requests were read through a text-rendering fetch of the official URL (r.jina.ai), recorded in each source's check_method. TGA documents were read on the TGA consultation hub (consultations.tga.gov.au). DISR consultation PDFs are served from the consult.industry.gov.au platform's storage host, linked from the DISR consultation page (source_url is the DISR page). OAIC determinations cite the determination itself (PROTOCOL §1): Clearview [2021] AICmr 54 from the determination PDF on oaic.gov.au; Bunnings [2024] AICmr 230 and Kmart [2025] AICmr 155 from the OAIC privacy determinations register (full texts are published on AustLII, which returned 403; the OAIC-hosted Kmart PDF returned 404). 28 records are primary_source_located, including 9 state and territory records built from search-engine copies of official texts; world events whose dates came only from those copies (NSW Act No 57 of 2025 assent and commencement, SA depictions Act assent, Tasmanian guidance approval, NT AI Assurance Framework release) were not logged. The Basic Online Safety Expectations were found by A1 and A3 and are recorded once. The Privacy Act APP 1.7-1.9 automated-decision transparency commences 10 Dec 2026 and is not logged as a world event until it commences. The eSafety designated internet services standard effective date is left empty pending confirmation from eSafety's register. Brisbane, Perth, Gold Coast and Parramatta: no AI instrument found on official council sources. Second-method retry (BACKFILL step 4) on 2026-10-11: all 28 located-only records were retried with WebFetch and curl. Upgraded: DTA AI model clauses, Clearview determination, OVIC AI privacy guidance, Queensland FAIRA, WA PRIS Act (now cited from the legislation.wa.gov.au consolidation law_a147470; the 1 July 2026 commencement of Pt 2 Divs 1-5 incl. s 16 and Schedule 1 IPPs incl. IPP 10 under SL 2026/128 is confirmed in the consolidation's commencement table). Still located-only: cyber.gov.au, digital.gov.au, industry.gov.au and esafety.gov.au returned HTTP 503 to WebFetch and reset or timed out for curl; NSW legislation, Victorian, SA, Tasmanian and NT hosts returned 403 to both; the NSW AIAF document is available only inside a login platform.",
     "discovery_result_count": 15,
     "focused_result_count": 8
   },
@@ -11774,11 +11767,11 @@
       "jurisdiction_id": "AUS",
       "instrument_id": "i-657d5e014530",
       "title": "WA IPP 10 automated decision-making obligations apply",
-      "detail": "Information Privacy Principles including IPP 10 commence 1 July 2026 (per OIC WA).",
+      "detail": "Schedule 1 Information Privacy Principles (including IPP 10 on automated decision-making) and Pt 2 Divs 1-5 (including s 16) commence 1 July 2026 under SL 2026/128 cl. 2, per the compilation table of the official consolidation 00-g0-03.",
       "from": null,
       "to": null,
-      "source_url": "https://www.wa.gov.au/organisation/office-of-the-information-commissioner/privacy-and-accountability-automated-decision-making",
-      "needs_review": true
+      "source_url": "https://www.legislation.wa.gov.au/legislation/statutes.nsf/law_a147470.html",
+      "needs_review": false
     },
     {
       "id": "c-13691968b6a9",
