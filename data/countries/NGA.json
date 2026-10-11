@@ -10,82 +10,934 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Nigeria has no AI-specific law: several AI bills, including a National AI Commission bill and a digital economy bill with an AI chapter, are pending in the National Assembly. The main binding rules touching AI are the Nigeria Data Protection Act 2023, which limits decisions based solely on automated processing, and the Data Protection Commission's 2025 implementation directive, which adds duties for AI and emerging technologies. National policy rests on the National AI Strategy published in September 2025 by the communications ministry and the national AI centre (NCAIR), backed by NITDA's AI roadmap and 2026 cloud and digital-infrastructure rules that require AI governance and risk management from infrastructure providers. Sector regulators add AI-relevant rules: the communications regulator's 2026 internet code of practice sets duties for deploying AI, the securities regulator governs robo-advice algorithms, the central bank sets standards for automated anti-money-laundering systems, and the consumer protection regulator has drafts on AI-generated content and AI in marketing. Lagos, Kaduna and Ogun have no published state AI instrument.",
+    "lead_institutions": [
+      "Federal Ministry of Communications, Innovation and Digital Economy",
+      "National Information Technology Development Agency",
+      "National Centre for Artificial Intelligence and Robotics",
+      "Nigeria Data Protection Commission",
+      "Nigerian Communications Commission"
+    ],
+    "last_deep_review": "2026-10-11",
+    "review_notes": "This review was completed on 11 October 2026 and covers federal law, the federal government and ministries, regulators, and the three largest state AI hubs (Lagos, Kaduna and Ogun). African Union and ECOWAS instruments are shown through the regional files. Nigeria's AI bills have not been passed, so they are listed as leads. Two central bank documents could only be located because the bank's website blocked access, and Lagos State's announced AI guidelines have not been published."
   },
   "instruments": [
     {
       "id": "i-843c6c59aabf",
-      "official_title": "National Artificial Intelligence Strategy- 19092025",
-      "english_title": "National Artificial Intelligence Strategy (September 2025)",
       "jurisdiction_id": "NGA",
-      "issuing_authority": null,
-      "publisher_name": "ncair.nitda.gov.ng",
-      "authority_type": null,
-      "government_level": "national",
+      "official_title": "National Artificial Intelligence Strategy",
+      "english_title": "National Artificial Intelligence Strategy (September 2025)",
+      "issuing_authority": "Federal Ministry of Communications, Innovation and Digital Economy",
+      "publisher_name": "National Centre for Artificial Intelligence and Robotics",
+      "authority_type": "ministry",
       "categories": [
-        "strategy"
+        "strategy",
+        "ethics",
+        "government-governance"
       ],
       "category": "strategy",
-      "subcategory": null,
-      "legal_status": null,
-      "publication_date": null,
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2025-09",
       "effective_date": null,
       "last_amended_date": null,
-      "current_status": "Official source located; current status requires review",
+      "current_status": "Final text dated September 2025 on its cover (file name dated 19 September 2025), published by NCAIR (NITDA) and still linked from the NCAIR home page as the National Artificial Intelligence Strategy on 2026-10-11. The document calls itself a living document; it does not state a formal approval date or an end year. It replaces the August 2024 draft released for public review. The record previously held under this id with a file-name title is this document.",
       "scope": null,
       "sectors": [],
       "technology_scope": [
         "AI"
       ],
-      "summary": "Official source located for this governance category. The document’s adoption, legal effect, scope and version history remain under review.",
-      "ai_governance_relevance": "Primary-source material for assessing strategy & action plans.",
+      "summary": "Nigeria's first national AI strategy, led by the Federal Ministry of Communications, Innovation and Digital Economy after an April 2024 co-creation workshop and stakeholder review from July 2024 to January 2025. It sets the vision of Nigeria as a global leader in ethical and inclusive AI and organises 34 strategies under five pillars: foundational AI infrastructure, a world-class AI ecosystem, AI adoption and sector transformation, responsible and ethical AI, and a robust AI governance framework. Governance commitments include an AI Ethics Expert Group/National AI Ethics Commission, national AI ethical principles, an AI ethics assessment framework, an AI governance regulatory body and a national AI policy framework; it creates no binding obligations.",
+      "ai_governance_relevance": "Nigeria's central AI policy document; frames the planned AI ethics, governance and regulatory bodies.",
       "source_url": "https://ncair.nitda.gov.ng/wp-content/uploads/2025/09/National-Artificial-Intelligence-Strategy-19092025.pdf",
       "official_pdf_url": "https://ncair.nitda.gov.ng/wp-content/uploads/2025/09/National-Artificial-Intelligence-Strategy-19092025.pdf",
+      "official_webpage_url": "https://ncair.nitda.gov.ng/",
+      "language": "en",
+      "source_kind": "official_document",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "supersedes": [
+        "i-cfd25b9c17b6"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-11",
+      "evidence_reference": "nga-deep-review-G2-2026-10-11",
+      "source_id": "s-855c2970934b",
+      "organization_id": "o-d2aa17654222",
+      "first_recorded": "2026-10-06",
+      "last_changed": null
+    },
+    {
+      "jurisdiction_id": "NGA",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Nigeria (federal)",
+      "sectors": [],
+      "technology_scope": [
+        "AI",
+        "automated decision-making"
+      ],
+      "language": "en",
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-11",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "first_recorded": "2026-10-11",
+      "last_changed": null,
+      "english_title": "Nigeria Data Protection Act, 2023 (Act No. 37 of 2023)",
+      "issuing_authority": "National Assembly of the Federal Republic of Nigeria (assented to by the President, 12 June 2023)",
+      "publisher_name": "Federal Government Printer (Official Gazette), as published by the Nigeria Data Protection Commission",
+      "authority_type": "legislature",
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "category": "data-privacy",
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2023-07-01",
+      "effective_date": "2023-06-12",
+      "current_status": "In force. The Act states its commencement as 12 June 2023, the date of presidential assent; it was published in the Federal Republic of Nigeria Official Gazette Extraordinary No. 119, Vol. 110, of 1 July 2023 (Government Notice No. 82, Act No. 37). The bill passed the Senate on 3 May 2023 and the House of Representatives on 24 May 2023 per the schedule to the Act. In May 2026 the National Assembly's joint ICT committees announced a legislative review of the Act, citing AI among the reasons, and a Senate bill to amend it (physical offices for social media platforms) passed second reading in March 2025; neither has amended the Act as of 2026-10-11.",
+      "summary": "Nigeria's comprehensive data protection statute: it establishes the Nigeria Data Protection Commission, sets the principles and lawful bases for processing personal data, and imposes duties on data controllers and processors, including data privacy impact assessments for high-risk processing (s. 28), registration of controllers and processors of major importance, breach notification and cross-border transfer rules. Section 37 gives data subjects the right not to be subject to a decision based solely on automated processing, including profiling, that produces legal or similarly significant effects, with exceptions for contract, written law and consent, and requires controllers to provide human intervention, the right to express a point of view and to contest the decision. Controllers must also tell data subjects about the existence of automated decision-making, including profiling (ss. 27 and 34).",
+      "supersedes": [],
+      "superseded_by": [],
+      "source_kind": "official_document",
+      "official_pdf_url": "https://ndpc.gov.ng/wp-content/uploads/2024/03/Nigeria_Data_Protection_Act_2023.pdf",
+      "official_webpage_url": "https://ndpc.gov.ng/resources/",
+      "evidence_reference": "curl (browser user agent, --max-time 60): NDPC resources page read (lists 'Nigeria Data Protection Act, 2023'); the Official Gazette PDF (43 pp.) downloaded from ndpc.gov.ng and read with pdftotext: Official Gazette Extraordinary No. 119, Vol. 110, Lagos 1 July 2023, Act No. 37; commencement [12th Day of June, 2023]; s. 37 automated decision making; assent by President Bola Ahmed Tinubu 12 June 2023.",
+      "ai_governance_relevance": "Statutory basis for rules on automated decision-making and profiling (s. 37) and for NDPC's AI and emerging-technology directives; governs personal-data processing in AI training and use.",
+      "id": "i-e36d52d1cf04",
+      "official_title": "Nigeria Data Protection Act, 2023",
+      "source_url": "https://ndpc.gov.ng/wp-content/uploads/2024/03/Nigeria_Data_Protection_Act_2023.pdf",
+      "organization_id": "o-2b2def6ba1dc",
+      "source_id": "s-455d8550ec2b"
+    },
+    {
+      "jurisdiction_id": "NGA",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Nigeria (federal)",
+      "sectors": [],
+      "technology_scope": [
+        "AI",
+        "automated decision-making"
+      ],
+      "language": "en",
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-11",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "effective_date: the Directive is dated 20 March 2025 and several obligations run from 'the issuance of this GAID', but the text states no separate commencement date"
+      ],
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "first_recorded": "2026-10-11",
+      "last_changed": null,
+      "english_title": "General Application and Implementation Directive (GAID) 2025 under the Nigeria Data Protection Act 2023",
+      "issuing_authority": "Nigeria Data Protection Commission (National Commissioner/CEO)",
+      "publisher_name": "Nigeria Data Protection Commission",
+      "authority_type": "regulator",
+      "categories": [
+        "data-privacy",
+        "binding-law",
+        "risk-assurance",
+        "ethics"
+      ],
+      "category": "data-privacy",
+      "legal_status": "binding_regulation",
+      "lifecycle": "in_force",
+      "publication_date": "2025-03-20",
+      "effective_date": null,
+      "current_status": "Issued under the hand of the National Commissioner/CEO on 20 March 2025 (reference NDPC/NDP ACT-GAID/01/2025) pursuant to ss. 1(a), 6(c), 61 and 62 of the NDP Act; the PDF was uploaded to ndpc.gov.ng in July 2025. Article 3(3) provides that upon its issuance the Commission ceases to apply the Nigeria Data Protection Regulation 2019 as a legal instrument, without affecting anything done under it. A 19 September 2025 effective date reported by commentators is not stated in the Directive or on the NDPC site and is not recorded.",
+      "summary": "Binding directive issued by the NDPC under the NDP Act 2023 that sets out how the Act applies, including registration and compliance-audit filing for data controllers and processors of major importance, DPO duties, lawful bases, DPIAs, breach notification and cross-border transfers (117 pp., 52 articles and 10 schedules). Article 43 requires controllers and processors deploying emerging technologies such as artificial intelligence, IoT and blockchain to document technical and organisational parameters respecting the right not to be subject to solely automated or algorithmic decisions, privacy by design and child safeguards, to file them and a DPIA (assessing disparate outcomes and vulnerability indexes) with their compliance audit returns, and to test, retool and continuously monitor such tools or discard them for unmitigable privacy risk. Article 44 lets the Commission prioritise privacy-enhancing technologies, invites benchmarking against the UN resolution on AI, and requires organisations to refrain from AI systems that cannot be operated in compliance with international human rights law; automated decision-making also triggers DPIA and consent-record duties (Arts. 18 and 28), and Article 41 requires safeguards against profiling or algorithms that could lead to prejudiced outcomes.",
+      "supersedes": [
+        "i-1d9b7b154d37"
+      ],
+      "superseded_by": [],
+      "source_kind": "official_document",
+      "official_pdf_url": "https://ndpc.gov.ng/wp-content/uploads/2025/07/NDP-ACT-GAID-2025-MARCH-20TH.pdf",
       "official_webpage_url": null,
-      "language": null,
+      "evidence_reference": "curl (browser user agent, --max-time 60): located via the NDPC site's media index (uploaded 10 July 2025, title 'NDP-ACT-GAID-2025-MARCH-20TH'); full PDF (117 pp.) downloaded from ndpc.gov.ng and read with pdftotext: reference NDPC/NDP ACT-GAID/01/2025; authority ss. 1(a), 6(c), 61 and 62 NDP Act; Art. 3(3) on the NDPR; Arts. 43-44 on emerging technologies including AI; 'Issued under my hand this 20th Day of March, 2025', Dr Vincent O. Olatunji, National Commissioner/CEO.",
+      "ai_governance_relevance": "Nigeria's main binding rules specific to AI deployment in personal-data processing: documentation, DPIA, testing and monitoring duties for AI and other emerging technologies (Arts. 43-44).",
+      "id": "i-b91cb727dd46",
+      "official_title": "Nigeria Data Protection Act (NDP Act) 2023 General Application and Implementation Directive (GAID) 2025",
+      "source_url": "https://ndpc.gov.ng/wp-content/uploads/2025/07/NDP-ACT-GAID-2025-MARCH-20TH.pdf",
+      "organization_id": "o-b1c0012984c2",
+      "source_id": "s-98b88297fe9f"
+    },
+    {
+      "jurisdiction_id": "NGA",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Nigeria (federal)",
+      "sectors": [],
+      "technology_scope": [
+        "AI",
+        "automated decision-making"
+      ],
+      "language": "en",
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-11",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "effective_date: not stated in the text"
+      ],
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "first_recorded": "2026-10-11",
+      "last_changed": null,
+      "english_title": "Nigeria Data Protection Regulation 2019 (NDPR)",
+      "issuing_authority": "National Information Technology Development Agency (NITDA)",
+      "publisher_name": "Nigeria Data Protection Commission",
+      "authority_type": "agency",
+      "categories": [
+        "historical",
+        "data-privacy"
+      ],
+      "category": "historical",
+      "legal_status": "binding_regulation",
+      "lifecycle": "superseded",
+      "publication_date": "2019-01-25",
+      "effective_date": null,
+      "current_status": "Superseded. Signed on 25 January 2019 by NITDA under the NITDA Act 2007. Article 3(3) of the NDPC's General Application and Implementation Directive (GAID) 2025, issued 20 March 2025, provides that upon the GAID's issuance the Commission ceases to apply the NDPR as a legal instrument, without affecting anything done under it. The NDPC keeps the text on its resources page for reference.",
+      "summary": "Nigeria's first general data protection regulation, issued by NITDA: it set principles of lawful processing, consent, data security, privacy policies, third-party processing contracts, foreign transfer rules, data subject rights and an administrative redress panel, and required annual data protection audits. It required controllers to inform data subjects of the existence of automated decision-making, including profiling, with meaningful information about the logic involved, and gave a right to data portability where processing is automated. Replaced in practice by the Nigeria Data Protection Act 2023 and the NDPC's GAID 2025.",
+      "supersedes": [],
+      "superseded_by": [
+        "i-b91cb727dd46"
+      ],
+      "source_kind": "official_document",
+      "official_pdf_url": "https://ndpc.gov.ng/wp-content/uploads/2024/03/NigeriaDataProtectionRegulation.pdf",
+      "official_webpage_url": "https://ndpc.gov.ng/resources/",
+      "evidence_reference": "curl (browser user agent, --max-time 60): NDPC resources page lists 'NIGERIA DATA PROTECTION REGULATION 2019'; PDF (20 pp.) downloaded from ndpc.gov.ng and read with pdftotext: issued by NITDA under the NITDA Act 2007; 'This instrument was signed this 25th day of January, 2019'; automated decision-making provisions in Part 3.",
+      "ai_governance_relevance": "Historical predecessor of the NDP Act and GAID rules on automated decision-making and profiling.",
+      "id": "i-1d9b7b154d37",
+      "official_title": "Nigeria Data Protection Regulation 2019",
+      "source_url": "https://ndpc.gov.ng/wp-content/uploads/2024/03/NigeriaDataProtectionRegulation.pdf",
+      "organization_id": "o-8d2bde25244f",
+      "source_id": "s-77c9c7a178b6"
+    },
+    {
+      "id": "i-cfd25b9c17b6",
+      "jurisdiction_id": "NGA",
+      "official_title": "National Artificial Intelligence Strategy 2024 (Draft)",
+      "english_title": "National Artificial Intelligence Strategy 2024 – draft for public review (August 2024)",
+      "issuing_authority": "Federal Ministry of Communications, Innovation and Digital Economy",
+      "publisher_name": "National Centre for Artificial Intelligence and Robotics",
+      "authority_type": "ministry",
+      "categories": [
+        "drafts",
+        "strategy",
+        "historical"
+      ],
+      "category": "drafts",
+      "legal_status": "consultation_draft",
+      "lifecycle": "superseded",
+      "publication_date": "2024-08",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Draft dated August 2024 and watermarked 'DRAFT' on every page; still hosted on the NCAIR website (uploaded 1 August 2024). Superseded by the final National Artificial Intelligence Strategy of September 2025, which records that the first draft was opened to public review.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Draft of Nigeria's National Artificial Intelligence Strategy released by the Federal Ministry of Communications, Innovation and Digital Economy in August 2024 for public review, following the April 2024 co-creation workshop. It proposed the vision, strategic objectives and five pillars (infrastructure, ecosystem, adoption and sector transformation, responsible and ethical AI, and AI governance) carried into the final strategy, with an implementation horizon to 2028. Kept for the timeline; it has no legal effect.",
+      "ai_governance_relevance": "Consultation version of the national AI strategy.",
+      "source_url": "https://ncair.nitda.gov.ng/wp-content/uploads/2024/08/National-AI-Strategy_01082024-copy.pdf",
+      "official_pdf_url": "https://ncair.nitda.gov.ng/wp-content/uploads/2024/08/National-AI-Strategy_01082024-copy.pdf",
+      "official_webpage_url": null,
+      "language": "en",
+      "source_kind": "official_document",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "supersedes": [],
+      "superseded_by": [
+        "i-843c6c59aabf"
+      ],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-11",
+      "evidence_reference": "nga-deep-review-G2-2026-10-11",
+      "source_id": "s-ceae4c4efdf4",
+      "organization_id": "o-d2aa17654222",
+      "first_recorded": "2026-10-11",
+      "last_changed": null
+    },
+    {
+      "id": "i-f544be27f040",
+      "jurisdiction_id": "NGA",
+      "official_title": "Accelerating our Collective Prosperity through Technical Efficiency: A Strategic Plan for the Federal Ministry of Communications, Innovation & Digital Economy",
+      "english_title": "Strategic Blueprint of the Federal Ministry of Communications, Innovation and Digital Economy 2023–2027",
+      "issuing_authority": "Federal Ministry of Communications, Innovation and Digital Economy",
+      "publisher_name": "Federal Ministry of Communications, Innovation and Digital Economy",
+      "authority_type": "ministry",
+      "categories": [
+        "strategy"
+      ],
+      "category": "strategy",
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2023-10",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Dated October 2023; listed on the Ministry's Public Resources page. It sets the Ministry's strategic agenda for 2023–2027 and calls itself a living blueprint.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Ministerial strategic plan for 2023–2027 organised around knowledge, policy, infrastructure, innovation and trade. Its policy pillar commits the Ministry to formulate a National AI Strategy, with targets of a top-50 global ranking in AI readiness and adoption by 2030, over 50,000 AI-industry jobs and positioning Nigeria as a top-10 location for AI model training and talent. It is the plan from which the National Artificial Intelligence Strategy was mandated; it is not binding.",
+      "ai_governance_relevance": "Digital-economy strategy with an AI pillar that mandated the national AI strategy.",
+      "source_url": "https://fmcide.gov.ng/wp-content/uploads/2023/11/blueprint.pdf",
+      "official_pdf_url": "https://fmcide.gov.ng/wp-content/uploads/2023/11/blueprint.pdf",
+      "official_webpage_url": "https://fmcide.gov.ng/public-resources/",
+      "language": "en",
+      "source_kind": "official_document",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
       "supersedes": [],
       "superseded_by": [],
       "related_instruments": [],
       "regional_applicability": [],
-      "verification_date": "2026-10-06",
-      "verification_level": "primary_source_located",
-      "metadata_gaps": [
-        "Issuing authority",
-        "Publication/effective dates",
-        "Current legal status",
-        "Precise applicability",
-        "Version history",
-        "Authority type",
-        "Government level",
-        "Publication date",
-        "Effective date",
-        "Last amended date",
-        "Document language"
+      "verification_date": "2026-10-11",
+      "evidence_reference": "nga-deep-review-G2-2026-10-11",
+      "source_id": "s-d1ba2d8d7f34",
+      "organization_id": "o-d2aa17654222",
+      "first_recorded": "2026-10-11",
+      "last_changed": null
+    },
+    {
+      "id": "i-86466f5a2b9f",
+      "jurisdiction_id": "NGA",
+      "official_title": "AI Transformation Roadmap",
+      "english_title": "NITDA AI Transformation Roadmap (March 2025)",
+      "issuing_authority": "National Information Technology Development Agency",
+      "publisher_name": "National Information Technology Development Agency",
+      "authority_type": "agency",
+      "categories": [
+        "public-sector",
+        "generative-ai"
       ],
+      "category": "public-sector",
+      "legal_status": "administrative_guideline",
+      "lifecycle": "published",
+      "publication_date": "2025-03",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Dated March 2025 on the cover and published on nitda.gov.ng; an internal adoption plan for the agency itself. Cited in the NCAIR April 2026 two-year NAIS impact compilation as released in 2025.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "NITDA's plan to become an AI-enabled regulator by integrating document-processing automation (machine learning and robotic process automation), generative AI for content creation and drafting of regulatory instruments, and agentic AI for management and cross-departmental coordination. It covers people, culture, content, process and technology pillars, technical requirements, required skills and an action plan, with executive sponsorship and implementation by the Reforms Coordination and Service Improvement Unit. It applies only to NITDA's own operations and is presented as a model for other public institutions.",
+      "ai_governance_relevance": "Public-sector AI adoption plan, including generative and agentic AI, of the federal IT regulator.",
+      "source_url": "https://nitda.gov.ng/wp-content/uploads/2025/03/NITDA25-NITDA-AI-TRANSFORMATION-ROADMAP-4-compressed.pdf",
+      "official_pdf_url": "https://nitda.gov.ng/wp-content/uploads/2025/03/NITDA25-NITDA-AI-TRANSFORMATION-ROADMAP-4-compressed.pdf",
+      "official_webpage_url": null,
+      "language": "en",
       "source_kind": "official_document",
-      "evidence_reference": "turn145search12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
       "link_status": "reachable",
       "document_access_type": "original_government_document",
-      "source_id": "s-855c2970934b",
-      "organization_id": "o-18d92a3fc6f8",
-      "lifecycle": "unverified",
-      "first_recorded": "2026-10-06",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-11",
+      "evidence_reference": "nga-deep-review-G2-2026-10-11",
+      "source_id": "s-46dee8fbe1be",
+      "organization_id": "o-8d2bde25244f",
+      "first_recorded": "2026-10-11",
+      "last_changed": null
+    },
+    {
+      "id": "i-08e8575914e3",
+      "jurisdiction_id": "NGA",
+      "official_title": "National Cloud Technical Guideline, 2026",
+      "english_title": "National Cloud Technical Guideline 2026",
+      "issuing_authority": "National Information Technology Development Agency",
+      "publisher_name": "National Information Technology Development Agency",
+      "authority_type": "agency",
+      "categories": [
+        "public-sector",
+        "risk-assurance",
+        "standards"
+      ],
+      "category": "public-sector",
+      "legal_status": "binding_regulation",
+      "lifecycle": "adopted",
+      "publication_date": "2026-08-04",
+      "effective_date": "2027-01-01",
+      "last_amended_date": null,
+      "current_status": "Version 1.0, approval date 4 August 2026, effective 1 January 2027 (document information table and commencement clause); enforcement status stated as mandatory. Issued under sections 6 and 32 of the NITDA Act 2007 and listed on NITDA's Regulations page. Publication date recorded is the stated approval date.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Technical guideline implementing the National Cloud Computing Guideline for federal public institutions, cloud service providers, data-centre operators and other suppliers, covering procurement, security and resilience operations, migration, data sovereignty and data-centre standards. It defines AI infrastructure providers and requires that where AI infrastructure is used for government and regulated-sector workloads, providers implement AI governance, AI risk management, security, monitoring, incident response and auditability measures, aligning where appropriate with ISO/IEC 42001 and NITDA AI governance instruments. CSP evaluation also weighs ethical data handling in AI and automated systems in line with the NDPA GAID.",
+      "ai_governance_relevance": "Mandatory federal cloud rules with explicit AI-infrastructure governance and ISO/IEC 42001 alignment requirements.",
+      "source_url": "https://nitda.gov.ng/wp-content/uploads/2026/08/NATIONAL-CLOUD-TECHNICAL-GUIDELINE-2026_-Final.pdf",
+      "official_pdf_url": "https://nitda.gov.ng/wp-content/uploads/2026/08/NATIONAL-CLOUD-TECHNICAL-GUIDELINE-2026_-Final.pdf",
+      "official_webpage_url": "https://nitda.gov.ng/regulations/",
+      "language": "en",
+      "source_kind": "official_document",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-11",
+      "evidence_reference": "nga-deep-review-G2-2026-10-11",
+      "source_id": "s-1c6f61a03cda",
+      "organization_id": "o-8d2bde25244f",
+      "first_recorded": "2026-10-11",
+      "last_changed": null
+    },
+    {
+      "id": "i-ee20e15617ec",
+      "jurisdiction_id": "NGA",
+      "official_title": "National Digital Infrastructure Assurance Framework, 2026",
+      "english_title": "National Digital Infrastructure Assurance Framework (NDIAF) 2026",
+      "issuing_authority": "National Information Technology Development Agency",
+      "publisher_name": "National Information Technology Development Agency",
+      "authority_type": "agency",
+      "categories": [
+        "risk-assurance",
+        "public-sector",
+        "standards"
+      ],
+      "category": "risk-assurance",
+      "legal_status": "binding_regulation",
+      "lifecycle": "adopted",
+      "publication_date": "2026-08-04",
+      "effective_date": "2027-01-01",
+      "last_amended_date": null,
+      "current_status": "Version 2.0, approval date 4 August 2026, effective 1 January 2027. Issued under sections 6 and 32 of the NITDA Act 2007 (non-compliance with NITDA guidelines is an offence under section 17(4)); mandatory for procurement and use by public institutions and applied to regulated sectors through sector instruments. Listed on NITDA's Regulations page. Publication date recorded is the stated approval date.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Establishes a national assurance, certification and continuing-oversight regime for data centres, cloud services, integration services, AI infrastructure and sovereign compute supporting public institutions, regulated sectors and critical information infrastructure. AI infrastructure providers (high-performance computing, GPUs, model training and inference services) must hold cloud infrastructure and/or cloud service provider certification plus any AI and sovereign-compute endorsements NITDA prescribes; ISO/IEC 42001 is recognised as evidence of AI governance and management capability for providers offering AI infrastructure or hosting government or regulated-sector AI workloads.",
+      "ai_governance_relevance": "Certification regime that brings AI infrastructure providers under NITDA assurance and recognises ISO/IEC 42001.",
+      "source_url": "https://nitda.gov.ng/wp-content/uploads/2026/08/NATIONAL-DIGITAL-INFRASTRUCTURE-ASSURANCE-FRAMEWORK-2026_Final.pdf",
+      "official_pdf_url": "https://nitda.gov.ng/wp-content/uploads/2026/08/NATIONAL-DIGITAL-INFRASTRUCTURE-ASSURANCE-FRAMEWORK-2026_Final.pdf",
+      "official_webpage_url": "https://nitda.gov.ng/regulations/",
+      "language": "en",
+      "source_kind": "official_document",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-11",
+      "evidence_reference": "nga-deep-review-G2-2026-10-11",
+      "source_id": "s-3e3f880af750",
+      "organization_id": "o-8d2bde25244f",
+      "first_recorded": "2026-10-11",
+      "last_changed": null
+    },
+    {
+      "id": "i-83ebbdb03582",
+      "jurisdiction_id": "NGA",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Nigeria (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "en",
+      "verification_date": "2026-10-11",
+      "first_recorded": "2026-10-11",
       "last_changed": null,
-      "subnational_unit": null
+      "source_id": "s-493fc187c3ea",
+      "organization_id": "o-ef9b6ee7ed7a",
+      "document_access_type": "original_government_document",
+      "official_title": "Rules on Robo-Advisory Services",
+      "english_title": "Securities and Exchange Commission Rules on Robo-Advisory Services",
+      "issuing_authority": "Securities and Exchange Commission",
+      "publisher_name": "Securities and Exchange Commission",
+      "authority_type": "regulator",
+      "categories": [
+        "sectoral",
+        "risk-assurance"
+      ],
+      "legal_status": "binding_regulation",
+      "lifecycle": "in_force",
+      "publication_date": "2021-08-30",
+      "effective_date": null,
+      "current_status": "SEC rule executed on 30 August 2021 (part of the SEC's 'New Rules and Amendments executed 30 August 2021', listed on the SEC Rules and Regulations page) and made under the Investments and Securities Act 2007. No commencement date is stated in the text, so effective_date is left null. Not superseded as far as the SEC rules page shows; the Investments and Securities Act 2025 has since replaced the 2007 Act, and the rule's continuation under it was not checked.",
+      "summary": "Binding SEC rule for capital market operators and others offering digital (robo) advisory services, defined as investment advice through automated, algorithm-based client-facing tools with little or no human adviser involvement. Section 6 ('Governance and Supervision of Algorithms') requires boards and senior management to oversee the client-facing tool, mitigate fault or bias in algorithms, approve algorithm design and changes, and staff the firm to develop and review the algorithms; robo advisers also need an annual independent technology audit, suitability controls and risk disclosures, with special conditions for fully automated advisers.",
+      "ai_governance_relevance": "Nigeria's earliest binding sector rule on governance and testing of automated, algorithm-driven financial advice.",
+      "sectors": [
+        "finance"
+      ],
+      "source_url": "https://home.sec.gov.ng/documents/1292/Rules-on-Robo-Advisory-Services_Executed-30-August-2021.pdf",
+      "official_pdf_url": "https://home.sec.gov.ng/documents/1292/Rules-on-Robo-Advisory-Services_Executed-30-August-2021.pdf",
+      "official_webpage_url": "https://sec.gov.ng/our-mandate/regulation/rules-and-regulations",
+      "source_kind": "official_document",
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "evidence_reference": "curl (browser user agent, --max-time 60): 11-page PDF downloaded from the SEC's own document host and read in full (definitions, s.6 governance and supervision of algorithms, ss.15-16 suitability and fully automated exemption); SEC Rules and Regulations page checked for the 30 August 2021 executed-rules batch that includes robo-advisory services.",
+      "category": "sectoral"
+    },
+    {
+      "id": "i-15a3c88dd239",
+      "jurisdiction_id": "NGA",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Nigeria (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [
+        "i-38e6c442b46c"
+      ],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [
+        "full text not read (curl and WebFetch both HTTP 403)",
+        "comment deadline",
+        "AI/ML provisions unconfirmed from text"
+      ],
+      "language": "en",
+      "verification_date": "2026-10-11",
+      "first_recorded": "2026-10-11",
+      "last_changed": null,
+      "source_id": "s-4acb2336b5bc",
+      "organization_id": "o-6865e107982d",
+      "document_access_type": "original_government_document",
+      "official_title": "Exposure Draft of Baseline Standards for Automated Anti-Money Laundering (AML) Solutions",
+      "english_title": "Exposure Draft of Baseline Standards for Automated Anti-Money Laundering (AML) Solutions",
+      "issuing_authority": "Central Bank of Nigeria",
+      "publisher_name": "Central Bank of Nigeria",
+      "authority_type": "regulator",
+      "categories": [
+        "historical",
+        "drafts",
+        "sectoral"
+      ],
+      "legal_status": "consultation_draft",
+      "lifecycle": "superseded",
+      "publication_date": "2025-05-21",
+      "effective_date": null,
+      "current_status": "CBN circular ref. BSD/DIR/CON/AML/018/033 dated 21 May 2025 exposing the draft for comment (per the CBN circulars listing). Superseded by the final Baseline Standards issued on 10 March 2026. Text not read (site blocked automated access).",
+      "summary": "Consultation draft released by the CBN of baseline standards for automated anti-money laundering systems in banks and other financial institutions. Per the CBN listing it was exposed for stakeholder comment; its AI and machine-learning content could not be confirmed from the text, which was not accessible.",
+      "ai_governance_relevance": "Draft stage of the CBN's standards for automated (including machine-learning) AML systems.",
+      "sectors": [
+        "finance"
+      ],
+      "source_url": "https://www.cbn.gov.ng/Out/2025/CCD/Exposure%20Draft%20on%20Baseline%20Standards%20for%20Automated%20AML%20Solutions.pdf",
+      "official_pdf_url": "https://www.cbn.gov.ng/Out/2025/CCD/Exposure%20Draft%20on%20Baseline%20Standards%20for%20Automated%20AML%20Solutions.pdf",
+      "official_webpage_url": "https://www.cbn.gov.ng/Documents/circulars.html",
+      "source_kind": "official_document",
+      "verification_level": "primary_source_located",
+      "link_status": "inaccessible",
+      "evidence_reference": "curl (browser user agent, --max-time 60) returned HTTP 403 (anti-bot challenge) for the PDF; WebFetch also returned HTTP 403, so the text could not be read. Title, reference number and date confirmed from the CBN's own circulars listing (cbn.gov.ng circulars data feed, fetched by curl).",
+      "category": "historical"
+    },
+    {
+      "id": "i-38e6c442b46c",
+      "jurisdiction_id": "NGA",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Nigeria (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [
+        "i-15a3c88dd239"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [
+        "full text not read (curl and WebFetch both HTTP 403)",
+        "effective date and compliance deadlines",
+        "AI/ML provisions unconfirmed from text"
+      ],
+      "language": "en",
+      "verification_date": "2026-10-11",
+      "first_recorded": "2026-10-11",
+      "last_changed": null,
+      "source_id": "s-d03abb9c6a34",
+      "organization_id": "o-6865e107982d",
+      "document_access_type": "original_government_document",
+      "official_title": "Baseline Standards for Automated Anti-Money Laundering (AML) Solutions for Financial Institutions in Nigeria",
+      "english_title": "Baseline Standards for Automated Anti-Money Laundering (AML) Solutions for Financial Institutions in Nigeria",
+      "issuing_authority": "Central Bank of Nigeria",
+      "publisher_name": "Central Bank of Nigeria",
+      "authority_type": "regulator",
+      "categories": [
+        "sectoral",
+        "risk-assurance"
+      ],
+      "legal_status": "binding_regulation",
+      "lifecycle": "in_force",
+      "publication_date": "2026-03-10",
+      "effective_date": null,
+      "current_status": "Issued by CBN circular ref. BSD/DIR/PUB/LAB/019/002 dated 10 March 2026 (per the CBN circulars listing). A follow-up CBN letter ref. CMD/DIR/PUB/CIR/001006 of 31 March 2026, 'Implementation of the Baseline Standards for Automated AML/CFT/CPF Solutions', is also listed. Commencement and compliance deadlines (reported elsewhere as 18 months for banks and 24 months for other institutions) could not be confirmed because the text was not accessible; effective_date left null.",
+      "summary": "CBN standards, issued by circular to supervised financial institutions, setting minimum requirements for automated anti-money laundering, counter-terrorist-financing and counter-proliferation-financing systems. The CBN title and reference are confirmed from its circulars listing; the provisions on artificial intelligence and machine-learning models (validation, explainability, human oversight) could not be read on the official text and are unverified.",
+      "ai_governance_relevance": "First CBN instrument reported to set governance expectations for machine-learning models in banking compliance systems; needs text verification.",
+      "sectors": [
+        "finance"
+      ],
+      "source_url": "https://www.cbn.gov.ng/Out/2026/CCD/CBN%20issues%20Baseline%20Standards%20for%20Automated%20Anti-Money%20Laundering%20Solution.pdf",
+      "official_pdf_url": "https://www.cbn.gov.ng/Out/2026/CCD/CBN%20issues%20Baseline%20Standards%20for%20Automated%20Anti-Money%20Laundering%20Solution.pdf",
+      "official_webpage_url": "https://www.cbn.gov.ng/Documents/circulars.html",
+      "source_kind": "official_document",
+      "verification_level": "primary_source_located",
+      "link_status": "inaccessible",
+      "evidence_reference": "curl (browser user agent, --max-time 60) returned HTTP 403 (anti-bot challenge) for the PDF; WebFetch also returned HTTP 403, so the text could not be read. Title, reference number and date confirmed from the CBN's own circulars listing (cbn.gov.ng circulars data feed, fetched by curl).",
+      "category": "sectoral"
+    },
+    {
+      "id": "i-f55cfba7967e",
+      "jurisdiction_id": "NGA",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Nigeria (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "en",
+      "verification_date": "2026-10-11",
+      "first_recorded": "2026-10-11",
+      "last_changed": null,
+      "source_id": "s-7484251525cb",
+      "organization_id": "o-2dbe77520cb8",
+      "document_access_type": "original_government_document",
+      "official_title": "Internet Code of Practice 2026",
+      "english_title": "Internet Code of Practice 2026",
+      "issuing_authority": "Nigerian Communications Commission",
+      "publisher_name": "Nigerian Communications Commission",
+      "authority_type": "regulator",
+      "categories": [
+        "sectoral",
+        "binding-law"
+      ],
+      "legal_status": "binding_regulation",
+      "lifecycle": "in_force",
+      "publication_date": "2026-02-13",
+      "effective_date": null,
+      "current_status": "Dated 13 February 2026 and signed by the EVC/CEO; issued 'as a Guidelines' under s.70 of the Nigerian Communications Act 2003 and applying to all licensees. It replaces the Internet Code of Practice 2019 (s.8.3 transition). The accompanying NCC Guidance Notes (February 2026) set a 90-day regulatory gestation period from publication and full compliance 180 days from publication; no single commencement date is stated, so effective_date is left null.",
+      "summary": "NCC code binding on Internet Access Service Providers covering open internet, cybersecurity and data protection, child online safety, unlawful content and online platforms. Section 5.4 ('Deployment of Artificial Intelligence and Emerging Technologies') requires providers to notify the NCC before deploying AI tools in network management or customer engagement (services affected, replacements, upgrades, timelines and sunsetting), to inform affected subscribers especially where non-human interfaces handle complaints, to protect network integrity, comply with the NCC Cyber Security Framework and avoid accessing consumer data without consent, and to be able to withdraw AI tools on regulatory determination; the NCC may issue further AI guidance and governance standards.",
+      "ai_governance_relevance": "First telecoms-sector rule in Nigeria with explicit AI deployment obligations.",
+      "sectors": [
+        "telecommunications"
+      ],
+      "source_url": "https://ncc.gov.ng/sites/default/files/2026-02/Internet-Code-of-Practice-2026.pdf",
+      "official_pdf_url": "https://ncc.gov.ng/sites/default/files/2026-02/Internet-Code-of-Practice-2026.pdf",
+      "official_webpage_url": "https://ncc.gov.ng/documents",
+      "source_kind": "official_document",
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "evidence_reference": "curl (browser user agent, --max-time 60): PDF downloaded from ncc.gov.ng and read (preamble, legal basis s.1.2, AI section 5.4, transition s.8.3, signature 'Dated: February 13, 2026'); Guidance Notes on the Internet Code of Practice 2026 (ncc.gov.ng) also read for implementation timelines.",
+      "category": "sectoral"
+    },
+    {
+      "id": "i-3ed2258e38bd",
+      "jurisdiction_id": "NGA",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Nigeria (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "en",
+      "verification_date": "2026-10-11",
+      "first_recorded": "2026-10-11",
+      "last_changed": null,
+      "source_id": "s-8b8a5930549f",
+      "organization_id": "o-c3d815b3c04e",
+      "document_access_type": "original_government_document",
+      "official_title": "Consumer Protection Regulations Guidance Notes — 2026 (Exposure Draft)",
+      "english_title": "Consumer Protection Regulations Guidance Notes 2026 (Exposure Draft), including Guidance Note No. 1/2026 on AI-Generated and Digitally Altered Content in Consumer Communications",
+      "issuing_authority": "Federal Competition and Consumer Protection Commission",
+      "publisher_name": "Federal Competition and Consumer Protection Commission",
+      "authority_type": "regulator",
+      "categories": [
+        "drafts",
+        "generative-ai",
+        "transparency",
+        "sectoral"
+      ],
+      "legal_status": "consultation_draft",
+      "lifecycle": "consultation",
+      "publication_date": "2026-04-13",
+      "effective_date": null,
+      "current_status": "Exposure draft published with the FCCPC notice dated 13 April 2026 (together with the draft FCCP (Consumer Protection) Regulations, 2026); comments were due by 4 May 2026. No final version found on the FCCPC regulations page as of 2026-10-11.",
+      "summary": "Draft interpretive guidance under ss.17-18 of the Federal Competition and Consumer Protection Act 2018. Guidance Note No. 1/2026 says undisclosed AI-generated or materially altered content in commercial communications may be misleading or deceptive under ss.123-126 of the Act and sets expected practices: prominent disclosure of AI-generated content, no AI-generated fake testimonials, no deepfakes of real persons without consent and disclosure, internal review of AI content, and transparency for AI chatbots. The companion draft Consumer Protection Regulations presume exploitation of vulnerability where algorithmic profiling or automated decision-making targets vulnerable consumers.",
+      "ai_governance_relevance": "First consumer-protection guidance in Nigeria on generative-AI content, deepfakes and chatbots in marketing (draft).",
+      "sectors": [
+        "consumer-protection"
+      ],
+      "source_url": "https://fccpc.gov.ng/wp-content/uploads/2026/04/FCCPC-Consumer-Protection-Regulations-Guidance-Notes-2026-Exposure-Draft.pdf",
+      "official_pdf_url": "https://fccpc.gov.ng/wp-content/uploads/2026/04/FCCPC-Consumer-Protection-Regulations-Guidance-Notes-2026-Exposure-Draft.pdf",
+      "official_webpage_url": "https://fccpc.gov.ng/resources-library/regulations/",
+      "source_kind": "consultation_portal",
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "evidence_reference": "curl (browser user agent, --max-time 60): exposure-draft Guidance Notes PDF, the FCCPC exposure notice (dated 13 April 2026, comments by 4 May 2026) and the draft Consumer Protection Regulations 2026 downloaded from fccpc.gov.ng and read (Guidance Note No. 1/2026; draft regulation on algorithmic profiling).",
+      "category": "drafts"
+    },
+    {
+      "id": "i-fd592531e43b",
+      "jurisdiction_id": "NGA",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Nigeria (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "en",
+      "verification_date": "2026-10-11",
+      "first_recorded": "2026-10-11",
+      "last_changed": null,
+      "source_id": "s-0141d4eaf4b3",
+      "organization_id": "o-c3d815b3c04e",
+      "document_access_type": "official_publication_or_full_text_page",
+      "official_title": "Federal Competition and Consumer Protection Commission Sales Promotion Regulations, 2026 (Draft)",
+      "english_title": "Draft Sales Promotion (Amended) Regulations, 2026",
+      "issuing_authority": "Federal Competition and Consumer Protection Commission",
+      "publisher_name": "Federal Competition and Consumer Protection Commission",
+      "authority_type": "regulator",
+      "categories": [
+        "drafts",
+        "transparency",
+        "generative-ai",
+        "sectoral"
+      ],
+      "legal_status": "consultation_draft",
+      "lifecycle": "consultation",
+      "publication_date": "2026-09-30",
+      "effective_date": null,
+      "current_status": "Draft published on the FCCPC site on 30 September 2026 under the heading 'DRAFT Sales Promotion (Amended) Regulations, 2026'; to be made under ss.17, 18 and 163 of the FCCPA 2018 and to revoke the earlier sales promotion regulations. Not yet made; no comment deadline appears on the page or in the draft.",
+      "summary": "Draft FCCPC regulations on sales promotions in Nigeria, including digital promotions. Part V ('Artificial Intelligence and Automated Marketing') would require undertakings using AI, machine learning or automated tools for promotions, marketing or consumer engagement to register that use with the Commission, label AI-generated marketing content, keep AI chatbots and virtual influencers transparent, let consumers opt out of AI-driven marketing, keep two years of records on AI system design, data sources and decisions, and bear liability for misleading or discriminatory AI outcomes; a separate clause requires algorithmic offers, pricing and targeting to be transparent and non-discriminatory and lets the Commission demand the underlying logic.",
+      "ai_governance_relevance": "Proposed registration, labelling and record-keeping duties for AI used in marketing and promotions.",
+      "sectors": [
+        "consumer-protection"
+      ],
+      "source_url": "https://fccpc.gov.ng/draft-sales-promotion-amended-regulations-2026/",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://fccpc.gov.ng/draft-sales-promotion-amended-regulations-2026/",
+      "source_kind": "consultation_portal",
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "evidence_reference": "curl (browser user agent, --max-time 60): FCCPC page 'DRAFT Sales Promotion (Amended) Regulations, 2026' (dated 30 September 2026) read; linked draft (.docx on fccpc.gov.ng) downloaded and read (Part V on AI and automated marketing, algorithmic promotions clause, citation clause).",
+      "category": "drafts"
+    },
+    {
+      "id": "i-6c93662d5120",
+      "jurisdiction_id": "NGA",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Nigeria (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "en",
+      "verification_date": "2026-10-11",
+      "first_recorded": "2026-10-11",
+      "last_changed": null,
+      "source_id": "s-b0e45cfbc565",
+      "organization_id": "o-b1c0012984c2",
+      "document_access_type": "original_government_document",
+      "official_title": "Privacy by Design in Early-Stage Innovation: How Data Protection Advances AI-Driven DPI in Nigeria",
+      "english_title": "Privacy by Design in Early-Stage Innovation: How Data Protection Advances AI-Driven DPI in Nigeria (White Paper)",
+      "issuing_authority": "Nigeria Data Protection Commission (jointly with the Digital Impact Alliance)",
+      "publisher_name": "Nigeria Data Protection Commission",
+      "authority_type": "data_protection_authority",
+      "categories": [
+        "data-privacy",
+        "sandbox"
+      ],
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2025-11",
+      "effective_date": null,
+      "current_status": "White paper co-authored by the NDPC and the Digital Impact Alliance, with a foreword by the National Commissioner, published on ndpc.gov.ng in November 2025 (file uploaded 2025-11; the paper states no exact date). It reports that the NDPC is working on a regulatory sandbox policy extending to data protection and AI, which had not been published as of 2026-10-11.",
+      "summary": "NDPC paper reporting on a year-long project with nine Nigerian start-ups to embed privacy by design and NDPA 2023 / GAID compliance in AI-enabled digital public infrastructure (digital ID, payments, data exchange). It sets out lessons and recommendations, including that the NDPC is developing a regulatory sandbox for data protection and AI and that cross-regulator sandboxes are needed for the digital ecosystem. It is not binding.",
+      "ai_governance_relevance": "The data protection authority's published position on privacy by design for AI-driven innovation and its planned data-protection/AI sandbox.",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_url": "https://ndpc.gov.ng/wp-content/uploads/2025/11/NDPC_DIAL-White-Paper-Privacy-by-Design-in-Early-Stage-Innovation-.pdf",
+      "official_pdf_url": "https://ndpc.gov.ng/wp-content/uploads/2025/11/NDPC_DIAL-White-Paper-Privacy-by-Design-in-Early-Stage-Innovation-.pdf",
+      "official_webpage_url": "https://ndpc.gov.ng/",
+      "source_kind": "official_publication",
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "evidence_reference": "curl (browser user agent, --max-time 60): 23-page PDF downloaded from ndpc.gov.ng and read (foreword by the National Commissioner, executive summary, sandbox section); upload month taken from the NDPC media library (2025-11).",
+      "category": "data-privacy"
     }
   ],
   "organizations": [
     {
-      "id": "o-18d92a3fc6f8",
+      "id": "o-b1c0012984c2",
       "jurisdiction_id": "NGA",
-      "name": "ncair.nitda.gov.ng",
-      "publisher_name_verified": false,
-      "ai_governance_role": "Publisher of listed official material; complete institutional mandate and statutory responsibilities require review.",
-      "source_url": "https://ncair.nitda.gov.ng/wp-content/uploads/2025/09/National-Artificial-Intelligence-Strategy-19092025.pdf",
-      "authority_type": null,
-      "government_level": null
+      "name": "Nigeria Data Protection Commission",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Data protection authority under the Nigeria Data Protection Act 2023 (which restricts solely automated decisions, s.37); issues the GAID and publishes guidance and papers on data protection in AI.",
+      "source_url": "https://ndpc.gov.ng/",
+      "authority_type": "data_protection_authority",
+      "government_level": "national"
+    },
+    {
+      "id": "o-2b2def6ba1dc",
+      "jurisdiction_id": "NGA",
+      "name": "National Assembly",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Bicameral federal legislature (Senate and House of Representatives); enacted the Nigeria Data Protection Act 2023 and is considering AI bills, the National Digital Economy and E-Governance Bill and amendments to the Data Protection Act.",
+      "source_url": "https://nass.gov.ng/",
+      "authority_type": "legislature",
+      "government_level": "national"
+    },
+    {
+      "id": "o-8d2bde25244f",
+      "jurisdiction_id": "NGA",
+      "name": "National Information Technology Development Agency",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Federal IT regulator established by the NITDA Act 2007; issues guidelines, frameworks and standards for IT practice (including cloud and digital-infrastructure instruments with AI provisions) and hosts NCAIR.",
+      "source_url": "https://nitda.gov.ng/",
+      "authority_type": "agency",
+      "government_level": "national"
+    },
+    {
+      "id": "o-d2aa17654222",
+      "jurisdiction_id": "NGA",
+      "name": "Federal Ministry of Communications, Innovation and Digital Economy",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Federal ministry responsible for communications, innovation and the digital economy; led the drafting and finalisation of the National Artificial Intelligence Strategy and supervises NITDA, NCAIR and Galaxy Backbone.",
+      "source_url": "https://fmcide.gov.ng/",
+      "authority_type": "ministry",
+      "government_level": "national"
+    },
+    {
+      "id": "o-ef9b6ee7ed7a",
+      "jurisdiction_id": "NGA",
+      "name": "Securities and Exchange Commission",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Capital-market regulator under the Investments and Securities Act; makes rules for capital market operators, including the 2021 Rules on Robo-Advisory Services, which require governance and testing of advisory algorithms.",
+      "source_url": "https://sec.gov.ng/",
+      "authority_type": "regulator",
+      "government_level": "national"
+    },
+    {
+      "id": "o-6865e107982d",
+      "jurisdiction_id": "NGA",
+      "name": "Central Bank of Nigeria",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Central bank and banking/payments regulator; issued the 2026 Baseline Standards for Automated Anti-Money Laundering (AML) Solutions covering automated and machine-learning AML systems in supervised institutions.",
+      "source_url": "https://www.cbn.gov.ng/",
+      "authority_type": "regulator",
+      "government_level": "national"
+    },
+    {
+      "id": "o-2dbe77520cb8",
+      "jurisdiction_id": "NGA",
+      "name": "Nigerian Communications Commission",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Telecommunications regulator under the Nigerian Communications Act 2003; its Internet Code of Practice 2026 sets notification and governance rules for licensees deploying artificial intelligence on their networks.",
+      "source_url": "https://ncc.gov.ng/",
+      "authority_type": "regulator",
+      "government_level": "national"
+    },
+    {
+      "id": "o-c3d815b3c04e",
+      "jurisdiction_id": "NGA",
+      "name": "Federal Competition and Consumer Protection Commission",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Competition and consumer protection regulator under the FCCPA 2018; consulting in 2026 on consumer-protection guidance and sales-promotion regulations that address AI-generated content, AI marketing and algorithmic targeting.",
+      "source_url": "https://fccpc.gov.ng/",
+      "authority_type": "regulator",
+      "government_level": "national"
     }
   ],
   "sources": [
@@ -96,23 +948,439 @@
         "NGA"
       ],
       "source_institutions": [
-        "ncair.nitda.gov.ng"
+        "National Centre for Artificial Intelligence and Robotics"
       ],
       "instrument_ids": [
         "i-843c6c59aabf"
       ],
       "categories_reviewed": [
-        "strategy"
+        "strategy",
+        "ethics",
+        "government-governance"
       ],
-      "date_reviewed": "2026-10-06",
-      "checked_date": "2026-10-06",
-      "check_method": "GET; first 1 MiB; 14-second timeout",
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl GET (browser UA, --max-time 60) on 2026-10-11: HTTP 200, application/pdf; full text extracted with pdftotext and read (81 pages); NCAIR home page also fetched (HTTP 200) and links this PDF.",
       "http_status": 200,
       "final_url": "https://ncair.nitda.gov.ng/wp-content/uploads/2025/09/National-Artificial-Intelligence-Strategy-19092025.pdf",
       "link_status": "reachable",
       "page_title": null,
-      "document_language": null,
+      "document_language": "en",
       "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-455d8550ec2b",
+      "url": "https://ndpc.gov.ng/wp-content/uploads/2024/03/Nigeria_Data_Protection_Act_2023.pdf",
+      "jurisdiction_ids": [
+        "NGA"
+      ],
+      "source_institutions": [
+        "Federal Government Printer (Official Gazette), as published by the Nigeria Data Protection Commission"
+      ],
+      "instrument_ids": [
+        "i-e36d52d1cf04"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser user agent, --max-time 60): NDPC resources page read (lists 'Nigeria Data Protection Act, 2023'); the Official Gazette PDF (43 pp.) downloaded from ndpc.gov.ng and read with pdftotext: Official Gazette Extraordinary No. 119, Vol. 110, Lagos 1 July 2023, Act No. 37; commencement [12th Day of June, 2023]; s. 37 automated decision making; assent by President Bola Ahmed Tinubu 12 June 2023.",
+      "http_status": 200,
+      "final_url": "https://ndpc.gov.ng/wp-content/uploads/2024/03/Nigeria_Data_Protection_Act_2023.pdf",
+      "link_status": "reachable",
+      "page_title": "Nigeria Data Protection Act, 2023 (Official Gazette No. 119, Vol. 110, Act No. 37)",
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-98b88297fe9f",
+      "url": "https://ndpc.gov.ng/wp-content/uploads/2025/07/NDP-ACT-GAID-2025-MARCH-20TH.pdf",
+      "jurisdiction_ids": [
+        "NGA"
+      ],
+      "source_institutions": [
+        "Nigeria Data Protection Commission"
+      ],
+      "instrument_ids": [
+        "i-b91cb727dd46"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law",
+        "risk-assurance",
+        "ethics"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser user agent, --max-time 60): located via the NDPC site's media index (uploaded 10 July 2025, title 'NDP-ACT-GAID-2025-MARCH-20TH'); full PDF (117 pp.) downloaded from ndpc.gov.ng and read with pdftotext: reference NDPC/NDP ACT-GAID/01/2025; authority ss. 1(a), 6(c), 61 and 62 NDP Act; Art. 3(3) on the NDPR; Arts. 43-44 on emerging technologies including AI; 'Issued under my hand this 20th Day of March, 2025', Dr Vincent O. Olatunji, National Commissioner/CEO.",
+      "http_status": 200,
+      "final_url": "https://ndpc.gov.ng/wp-content/uploads/2025/07/NDP-ACT-GAID-2025-MARCH-20TH.pdf",
+      "link_status": "reachable",
+      "page_title": "NDP-ACT-GAID-2025-MARCH-20TH (NDPC/NDP ACT-GAID/01/2025)",
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-77c9c7a178b6",
+      "url": "https://ndpc.gov.ng/wp-content/uploads/2024/03/NigeriaDataProtectionRegulation.pdf",
+      "jurisdiction_ids": [
+        "NGA"
+      ],
+      "source_institutions": [
+        "Nigeria Data Protection Commission"
+      ],
+      "instrument_ids": [
+        "i-1d9b7b154d37"
+      ],
+      "categories_reviewed": [
+        "historical",
+        "data-privacy"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser user agent, --max-time 60): NDPC resources page lists 'NIGERIA DATA PROTECTION REGULATION 2019'; PDF (20 pp.) downloaded from ndpc.gov.ng and read with pdftotext: issued by NITDA under the NITDA Act 2007; 'This instrument was signed this 25th day of January, 2019'; automated decision-making provisions in Part 3.",
+      "http_status": 200,
+      "final_url": "https://ndpc.gov.ng/wp-content/uploads/2024/03/NigeriaDataProtectionRegulation.pdf",
+      "link_status": "reachable",
+      "page_title": "Nigeria Data Protection Regulation 2019",
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-ceae4c4efdf4",
+      "url": "https://ncair.nitda.gov.ng/wp-content/uploads/2024/08/National-AI-Strategy_01082024-copy.pdf",
+      "jurisdiction_ids": [
+        "NGA"
+      ],
+      "source_institutions": [
+        "National Centre for Artificial Intelligence and Robotics"
+      ],
+      "instrument_ids": [
+        "i-cfd25b9c17b6"
+      ],
+      "categories_reviewed": [
+        "drafts",
+        "strategy",
+        "historical"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl GET (browser UA, --max-time 60) on 2026-10-11: HTTP 200, application/pdf; full text extracted with pdftotext and read (73 pages, DRAFT watermark).",
+      "http_status": 200,
+      "final_url": "https://ncair.nitda.gov.ng/wp-content/uploads/2024/08/National-AI-Strategy_01082024-copy.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-d1ba2d8d7f34",
+      "url": "https://fmcide.gov.ng/wp-content/uploads/2023/11/blueprint.pdf",
+      "jurisdiction_ids": [
+        "NGA"
+      ],
+      "source_institutions": [
+        "Federal Ministry of Communications, Innovation and Digital Economy"
+      ],
+      "instrument_ids": [
+        "i-f544be27f040"
+      ],
+      "categories_reviewed": [
+        "strategy"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl GET (browser UA, --max-time 60) on 2026-10-11: HTTP 200, application/pdf; full text extracted with pdftotext and read (31 pages); Public Resources page fetched (HTTP 200) and links the PDF.",
+      "http_status": 200,
+      "final_url": "https://fmcide.gov.ng/wp-content/uploads/2023/11/blueprint.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-46dee8fbe1be",
+      "url": "https://nitda.gov.ng/wp-content/uploads/2025/03/NITDA25-NITDA-AI-TRANSFORMATION-ROADMAP-4-compressed.pdf",
+      "jurisdiction_ids": [
+        "NGA"
+      ],
+      "source_institutions": [
+        "National Information Technology Development Agency"
+      ],
+      "instrument_ids": [
+        "i-86466f5a2b9f"
+      ],
+      "categories_reviewed": [
+        "public-sector",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl GET (browser UA, --max-time 60) on 2026-10-11: HTTP 200, application/pdf; full text extracted with pdftotext and read (16 pages).",
+      "http_status": 200,
+      "final_url": "https://nitda.gov.ng/wp-content/uploads/2025/03/NITDA25-NITDA-AI-TRANSFORMATION-ROADMAP-4-compressed.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-1c6f61a03cda",
+      "url": "https://nitda.gov.ng/wp-content/uploads/2026/08/NATIONAL-CLOUD-TECHNICAL-GUIDELINE-2026_-Final.pdf",
+      "jurisdiction_ids": [
+        "NGA"
+      ],
+      "source_institutions": [
+        "National Information Technology Development Agency"
+      ],
+      "instrument_ids": [
+        "i-08e8575914e3"
+      ],
+      "categories_reviewed": [
+        "public-sector",
+        "risk-assurance",
+        "standards"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl GET (browser UA, --max-time 60) on 2026-10-11: HTTP 200, application/pdf; full text extracted with pdftotext and read; NITDA Regulations page fetched (HTTP 200) and links the PDF.",
+      "http_status": 200,
+      "final_url": "https://nitda.gov.ng/wp-content/uploads/2026/08/NATIONAL-CLOUD-TECHNICAL-GUIDELINE-2026_-Final.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-3e3f880af750",
+      "url": "https://nitda.gov.ng/wp-content/uploads/2026/08/NATIONAL-DIGITAL-INFRASTRUCTURE-ASSURANCE-FRAMEWORK-2026_Final.pdf",
+      "jurisdiction_ids": [
+        "NGA"
+      ],
+      "source_institutions": [
+        "National Information Technology Development Agency"
+      ],
+      "instrument_ids": [
+        "i-ee20e15617ec"
+      ],
+      "categories_reviewed": [
+        "risk-assurance",
+        "public-sector",
+        "standards"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl GET (browser UA, --max-time 60) on 2026-10-11: HTTP 200, application/pdf; full text extracted with pdftotext and read; NITDA Regulations page fetched (HTTP 200) and links the PDF.",
+      "http_status": 200,
+      "final_url": "https://nitda.gov.ng/wp-content/uploads/2026/08/NATIONAL-DIGITAL-INFRASTRUCTURE-ASSURANCE-FRAMEWORK-2026_Final.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-493fc187c3ea",
+      "url": "https://home.sec.gov.ng/documents/1292/Rules-on-Robo-Advisory-Services_Executed-30-August-2021.pdf",
+      "jurisdiction_ids": [
+        "NGA"
+      ],
+      "source_institutions": [
+        "Securities and Exchange Commission"
+      ],
+      "instrument_ids": [
+        "i-83ebbdb03582"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser user agent, --max-time 60): 11-page PDF downloaded from the SEC's own document host and read in full (definitions, s.6 governance and supervision of algorithms, ss.15-16 suitability and fully automated exemption); SEC Rules and Regulations page checked for the 30 August 2021 executed-rules batch that includes robo-advisory services.",
+      "final_url": "https://home.sec.gov.ng/documents/1292/Rules-on-Robo-Advisory-Services_Executed-30-August-2021.pdf",
+      "link_status": "reachable",
+      "document_language": "en",
+      "error": null,
+      "http_status": 200,
+      "page_title": "Rule on Robo-Advisory Services",
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-4acb2336b5bc",
+      "url": "https://www.cbn.gov.ng/Out/2025/CCD/Exposure%20Draft%20on%20Baseline%20Standards%20for%20Automated%20AML%20Solutions.pdf",
+      "jurisdiction_ids": [
+        "NGA"
+      ],
+      "source_institutions": [
+        "Central Bank of Nigeria"
+      ],
+      "instrument_ids": [
+        "i-15a3c88dd239"
+      ],
+      "categories_reviewed": [
+        "historical",
+        "drafts",
+        "sectoral"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser user agent, --max-time 60) returned HTTP 403 (anti-bot challenge) for the PDF; WebFetch also returned HTTP 403, so the text could not be read. Title, reference number and date confirmed from the CBN's own circulars listing (cbn.gov.ng circulars data feed, fetched by curl).",
+      "final_url": "https://www.cbn.gov.ng/Out/2025/CCD/Exposure%20Draft%20on%20Baseline%20Standards%20for%20Automated%20AML%20Solutions.pdf",
+      "link_status": "inaccessible",
+      "document_language": "en",
+      "error": "HTTP 403 anti-bot challenge for curl and WebFetch",
+      "http_status": 403,
+      "page_title": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-d03abb9c6a34",
+      "url": "https://www.cbn.gov.ng/Out/2026/CCD/CBN%20issues%20Baseline%20Standards%20for%20Automated%20Anti-Money%20Laundering%20Solution.pdf",
+      "jurisdiction_ids": [
+        "NGA"
+      ],
+      "source_institutions": [
+        "Central Bank of Nigeria"
+      ],
+      "instrument_ids": [
+        "i-38e6c442b46c"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser user agent, --max-time 60) returned HTTP 403 (anti-bot challenge) for the PDF; WebFetch also returned HTTP 403, so the text could not be read. Title, reference number and date confirmed from the CBN's own circulars listing (cbn.gov.ng circulars data feed, fetched by curl).",
+      "final_url": "https://www.cbn.gov.ng/Out/2026/CCD/CBN%20issues%20Baseline%20Standards%20for%20Automated%20Anti-Money%20Laundering%20Solution.pdf",
+      "link_status": "inaccessible",
+      "document_language": "en",
+      "error": "HTTP 403 anti-bot challenge for curl and WebFetch",
+      "http_status": 403,
+      "page_title": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-7484251525cb",
+      "url": "https://ncc.gov.ng/sites/default/files/2026-02/Internet-Code-of-Practice-2026.pdf",
+      "jurisdiction_ids": [
+        "NGA"
+      ],
+      "source_institutions": [
+        "Nigerian Communications Commission"
+      ],
+      "instrument_ids": [
+        "i-f55cfba7967e"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser user agent, --max-time 60): PDF downloaded from ncc.gov.ng and read (preamble, legal basis s.1.2, AI section 5.4, transition s.8.3, signature 'Dated: February 13, 2026'); Guidance Notes on the Internet Code of Practice 2026 (ncc.gov.ng) also read for implementation timelines.",
+      "final_url": "https://ncc.gov.ng/sites/default/files/2026-02/Internet-Code-of-Practice-2026.pdf",
+      "link_status": "reachable",
+      "document_language": "en",
+      "error": null,
+      "http_status": 200,
+      "page_title": "Internet Code of Practice 2026",
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-8b8a5930549f",
+      "url": "https://fccpc.gov.ng/wp-content/uploads/2026/04/FCCPC-Consumer-Protection-Regulations-Guidance-Notes-2026-Exposure-Draft.pdf",
+      "jurisdiction_ids": [
+        "NGA"
+      ],
+      "source_institutions": [
+        "Federal Competition and Consumer Protection Commission"
+      ],
+      "instrument_ids": [
+        "i-3ed2258e38bd"
+      ],
+      "categories_reviewed": [
+        "drafts",
+        "generative-ai",
+        "transparency",
+        "sectoral"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser user agent, --max-time 60): exposure-draft Guidance Notes PDF, the FCCPC exposure notice (dated 13 April 2026, comments by 4 May 2026) and the draft Consumer Protection Regulations 2026 downloaded from fccpc.gov.ng and read (Guidance Note No. 1/2026; draft regulation on algorithmic profiling).",
+      "final_url": "https://fccpc.gov.ng/wp-content/uploads/2026/04/FCCPC-Consumer-Protection-Regulations-Guidance-Notes-2026-Exposure-Draft.pdf",
+      "link_status": "reachable",
+      "document_language": "en",
+      "error": null,
+      "http_status": 200,
+      "page_title": "FCCPC Consumer Protection Regulations Guidance Notes — 2026",
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-0141d4eaf4b3",
+      "url": "https://fccpc.gov.ng/draft-sales-promotion-amended-regulations-2026/",
+      "jurisdiction_ids": [
+        "NGA"
+      ],
+      "source_institutions": [
+        "Federal Competition and Consumer Protection Commission"
+      ],
+      "instrument_ids": [
+        "i-fd592531e43b"
+      ],
+      "categories_reviewed": [
+        "drafts",
+        "transparency",
+        "generative-ai",
+        "sectoral"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser user agent, --max-time 60): FCCPC page 'DRAFT Sales Promotion (Amended) Regulations, 2026' (dated 30 September 2026) read; linked draft (.docx on fccpc.gov.ng) downloaded and read (Part V on AI and automated marketing, algorithmic promotions clause, citation clause).",
+      "final_url": "https://fccpc.gov.ng/draft-sales-promotion-amended-regulations-2026/",
+      "link_status": "reachable",
+      "document_language": "en",
+      "error": null,
+      "http_status": 200,
+      "page_title": "DRAFT Sales Promotion (Amended) Regulations, 2026",
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-b0e45cfbc565",
+      "url": "https://ndpc.gov.ng/wp-content/uploads/2025/11/NDPC_DIAL-White-Paper-Privacy-by-Design-in-Early-Stage-Innovation-.pdf",
+      "jurisdiction_ids": [
+        "NGA"
+      ],
+      "source_institutions": [
+        "Nigeria Data Protection Commission"
+      ],
+      "instrument_ids": [
+        "i-6c93662d5120"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "sandbox"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser user agent, --max-time 60): 23-page PDF downloaded from ndpc.gov.ng and read (foreword by the National Commissioner, executive summary, sandbox section); upload month taken from the NDPC media library (2025-11).",
+      "final_url": "https://ndpc.gov.ng/wp-content/uploads/2025/11/NDPC_DIAL-White-Paper-Privacy-by-Design-in-Early-Stage-Innovation-.pdf",
+      "link_status": "reachable",
+      "document_language": "en",
+      "error": null,
+      "http_status": 200,
+      "page_title": "Privacy by Design in Early-Stage Innovation",
       "content_type": "application/pdf"
     }
   ],
@@ -120,7 +1388,7 @@
   "coverage_audit": {
     "jurisdiction_id": "NGA",
     "country": "Nigeria",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -133,56 +1401,720 @@
       "transparency"
     ],
     "categories_with_findings": [
-      "strategy"
-    ],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
       "binding-law",
-      "strategy",
-      "government-governance",
+      "data-privacy",
+      "drafts",
       "ethics",
-      "risk-assurance",
+      "generative-ai",
+      "government-governance",
+      "historical",
       "public-sector",
+      "risk-assurance",
+      "sandbox",
+      "sectoral",
+      "standards",
+      "strategy",
+      "transparency"
+    ],
+    "categories_where_no_material_was_found": [
       "procurement",
       "cyber-security",
-      "data-privacy",
-      "transparency",
-      "standards",
-      "sandbox",
       "index-readiness",
-      "sectoral",
-      "generative-ai",
-      "drafts",
-      "international",
-      "historical"
+      "international"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Nigeria \"artificial intelligence\" (strategy OR regulation OR ethics) government ministry official",
       "Nigeria \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Nigeria government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Nigeria \"artificial intelligence\" cybersecurity authority secure development safety guidelines",
-      "Nigeria privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Nigeria privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "ndpc.gov.ng resources page: Nigeria Data Protection Act 2023; NDPR 2019",
+      "ndpc.gov.ng media/posts search: GAID; directive",
+      "NDPC GAID 2025 effective date",
+      "nass.gov.ng bill tracker search: artificial; deepfake; digital economy; NITDA; cybercrime; robot; synthetic (tracker only holds 8th/9th Assembly bills)",
+      "nass.gov.ng House order papers June 2023 - July 2026 (102 documents) full-text search: artificial intelligence; deepfake; synthetic media; digital economy and e-governance; NITDA; Cybercrimes",
+      "site:nass.gov.ng \"Artificial Intelligence\" bill",
+      "\"HB. 2567\" Nigerian Artificial Intelligence Bill 2025",
+      "\"National Artificial Intelligence Commission (Establishment) Bill\" SB 731 Senate",
+      "National Assembly bill artificial intelligence Nigeria 2025 second reading commission establishment bill",
+      "\"National Digital Economy and E-Governance Bill\" Senate passed third reading assent",
+      "Tinubu signs National Digital Economy and E-Governance Act 2026",
+      "Nigeria deepfake bill House of Representatives OR Senate 2025 2026",
+      "Nigeria Senate bill deepfakes artificial intelligence misuse criminalise",
+      "NITDA Act repeal re-enactment bill artificial intelligence",
+      "naltf.gov.ng posts search: digital economy; artificial intelligence; deepfake; SB. 731; Data Protection Act (Amendment)",
+      "ncair.nitda.gov.ng National Artificial Intelligence Strategy draft 2024 pdf",
+      "NITDA guidelines artificial intelligence public service Nigeria framework pdf nitda.gov.ng",
+      "NITDA \"Code of Practice for Artificial Intelligence\" draft nitda.gov.ng",
+      "\"National Artificial Intelligence Policy\" Nigeria NITDA draft 2022 2023 document",
+      "Office of the Head of the Civil Service of the Federation artificial intelligence policy guidelines civil servants Nigeria",
+      "Federal Ministry of Health Nigeria artificial intelligence health policy framework guidelines 2025",
+      "National Judicial Council guidelines use of artificial intelligence courts Nigeria",
+      "Nigeria judiciary ICT policy 2026 artificial intelligence National Judicial Council document njc.gov.ng",
+      "Nigeria federal ministry education artificial intelligence policy guidelines schools 2025 2026 education.gov.ng",
+      "National Universities Commission guidelines artificial intelligence use higher education Nigeria nuc.edu.ng",
+      "Nigeria federal government releases AI framework OR guidelines OR policy 2026 ministry artificial intelligence document gov.ng",
+      "\"National AI Trust\" Nigeria established fmcide",
+      "Nigeria \"National Data Strategy\" artificial intelligence NITDA OR FMCIDE pdf",
+      "Galaxy Backbone OR \"Ministry of Defence\" OR \"Budget and Economic Planning\" Nigeria artificial intelligence policy framework document",
+      "FCSSIP 2026-2030 Federal Civil Service Strategy artificial intelligence ohcsf",
+      "circular \"artificial intelligence\" \"Head of the Civil Service\" Nigeria use of generative AI official documents circular 2025 OR 2026",
+      "site search nitda.gov.ng ?s=artificial intelligence; NITDA Regulations, Publications and Draft Regulatory Instruments pages",
+      "ncair.nitda.gov.ng media library search 'artificial intelligence' and 'AI'",
+      "fmcide.gov.ng Public Resources page and media library (PDFs)",
+      "WordPress site search 'artificial intelligence' on ohcsf.gov.ng, education.gov.ng, nuc.edu.ng, fmino.gov.ng; health.gov.ng, gbb.gov.ng, finance.gov.ng, nationalplanning.gov.ng, defence.gov.ng, njc.gov.ng (no searchable index)",
+      "Central Bank of Nigeria circular artificial intelligence banks guidance",
+      "cbn.gov.ng circular baseline standards automated anti-money laundering solutions 2026",
+      "CBN exposure draft guidelines artificial intelligence financial institutions 2026",
+      "\"Baseline Standards for Automated\" AML CBN \"artificial intelligence\" \"machine learning\" model validation explainability",
+      "CBN circulars data feed filtered for: artificial, AI, machine learning, automat*, algorithm, AML, open banking, regtech, sandbox, fraud, cyber, consumer",
+      "SEC Nigeria artificial intelligence rules robo-advisory guidance",
+      "sec.gov.ng artificial intelligence capital market rules 2025 2026 exposure draft AI",
+      "NCC Nigerian Communications Commission artificial intelligence framework guidance",
+      "ncc.gov.ng Internet Code of Practice 2026 artificial intelligence emerging technologies",
+      "NDPC Nigeria Data Protection Commission artificial intelligence guidance automated decision",
+      "ndpc.gov.ng site search (posts and media library): artificial intelligence; all PDF uploads",
+      "NAICOM insurance artificial intelligence guidelines Nigeria circular",
+      "FCCPC regulations artificial intelligence algorithm automated decision consumer Nigeria 2025",
+      "fccpc.gov.ng draft Sales Promotion Regulations 2026",
+      "FCCPC Consumer Protection Regulations 2026 final issued gazetted Guidance Notes AI-generated content",
+      "Lagos State artificial intelligence policy guidelines public servants lagosstate.gov.ng",
+      "Lagos State AI guidelines released Ministry of Innovation Science and Technology document 2025 OR 2026",
+      "\"artificial intelligence\" guidelines site:lagosstate.gov.ng",
+      "Lagos State Science Research and Innovation Council LASRIC artificial intelligence policy document",
+      "Lagos State House of Assembly artificial intelligence bill 2025 2026",
+      "Kaduna State artificial intelligence policy OR law kdsg.gov.ng",
+      "Kaduna State \"artificial intelligence\" policy OR strategy OR framework launched state government 2025",
+      "Kaduna State data protection law OR ICT agency law automated decision",
+      "Ogun State artificial intelligence policy government",
+      "Ogun State Ministry of Communications and Digital Economy AI policy/strategy/guidelines",
+      "site searches: lagosstate.gov.ng ?s=artificial intelligence; most.lagosstate.gov.ng (TLS fail, http shell, WebFetch 503); kdsg.gov.ng wp-json posts/pages/media search=artificial; ogunstate.gov.ng ?s=artificial+intelligence (JS app)"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-11",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: Backfill run 2026-10-11 in four parts (G1 federal law via nass.gov.ng, naltf.gov.ng and NDPC; G2 federal government incl. ministry-level search, NITDA and NCAIR; G3 regulators SEC, CBN, NCC, NDPC, FCCPC, NAICOM; G4 top states Lagos, Kaduna, Ogun, 30-minute cap per PROTOCOL §6, finished in about 3 minutes with no state records). Run in parallel with MYS on separate branches. No interruption. The earlier strategy record was re-checked (title fixed, dated 2025-09 from the cover, issuer the communications ministry; supersedes the August 2024 draft); domain-named organisation dropped. AU/ECOWAS instruments are attached via the regional files. No AI Act or deepfake law enacted; AI bills (consolidated House AI bill, HB 2567, SB 731, the Digital Economy and E-Governance Bill with an AI chapter, NDPA amendment) are leads; nass.gov.ng publishes no Senate order papers or bill texts for the 10th Assembly and only ~100 House order papers (all searched). GAID effective date not stated in the text. Access: cbn.gov.ng PDFs 403 to curl and WebFetch (2 CBN records located only; dates from CBN's official circulars listing), commsinnovation.gov.ng unreachable (fmcide.gov.ng used), FMCIDE DPI framework PDF 500, most.lagosstate.gov.ng TLS mismatch/503, lagosstate.gov.ng and ogunstate.gov.ng script-rendered, aiguide.lagosstate.gov.ng expired certificate/503. Health regulators (NAFDAC, MDCN) not reached. procurement, cyber-security, index-readiness, international: no material found.",
     "discovery_result_count": 14,
     "focused_result_count": 15
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-1220128d38ee",
+      "date": "2026-10-11",
+      "recorded": "2026-10-11",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "NGA",
+      "instrument_id": "i-843c6c59aabf",
+      "title": "National Artificial Intelligence Strategy (September 2025)",
+      "detail": "Record updated: categories, issuing authority, legal status, lifecycle, publication date, summary, title.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-846f85db0583",
+      "date": "2026-10-11",
+      "recorded": "2026-10-11",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "NGA",
+      "instrument_id": "i-e36d52d1cf04",
+      "title": "Nigeria Data Protection Act, 2023 (Act No. 37 of 2023)",
+      "detail": "Added to the radar (published 2023-07-01).",
+      "from": null,
+      "to": null,
+      "source_url": "https://ndpc.gov.ng/wp-content/uploads/2024/03/Nigeria_Data_Protection_Act_2023.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-7240c9bf8760",
+      "date": "2026-10-11",
+      "recorded": "2026-10-11",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "NGA",
+      "instrument_id": "i-b91cb727dd46",
+      "title": "General Application and Implementation Directive (GAID) 2025 under the Nigeria Data Protection Act 2023",
+      "detail": "Added to the radar (published 2025-03-20).",
+      "from": null,
+      "to": null,
+      "source_url": "https://ndpc.gov.ng/wp-content/uploads/2025/07/NDP-ACT-GAID-2025-MARCH-20TH.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-c2adba21d725",
+      "date": "2026-10-11",
+      "recorded": "2026-10-11",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "NGA",
+      "instrument_id": "i-1d9b7b154d37",
+      "title": "Nigeria Data Protection Regulation 2019 (NDPR)",
+      "detail": "Added to the radar (published 2019-01-25).",
+      "from": null,
+      "to": null,
+      "source_url": "https://ndpc.gov.ng/wp-content/uploads/2024/03/NigeriaDataProtectionRegulation.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-873271b99771",
+      "date": "2026-10-11",
+      "recorded": "2026-10-11",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "NGA",
+      "instrument_id": "i-cfd25b9c17b6",
+      "title": "National Artificial Intelligence Strategy 2024 – draft for public review (August 2024)",
+      "detail": "Added to the radar (published 2024-08).",
+      "from": null,
+      "to": null,
+      "source_url": "https://ncair.nitda.gov.ng/wp-content/uploads/2024/08/National-AI-Strategy_01082024-copy.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-0011c79db2d7",
+      "date": "2026-10-11",
+      "recorded": "2026-10-11",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "NGA",
+      "instrument_id": "i-f544be27f040",
+      "title": "Strategic Blueprint of the Federal Ministry of Communications, Innovation and Digital Economy 2023–2027",
+      "detail": "Added to the radar (published 2023-10).",
+      "from": null,
+      "to": null,
+      "source_url": "https://fmcide.gov.ng/wp-content/uploads/2023/11/blueprint.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-63e2dfc588dd",
+      "date": "2026-10-11",
+      "recorded": "2026-10-11",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "NGA",
+      "instrument_id": "i-86466f5a2b9f",
+      "title": "NITDA AI Transformation Roadmap (March 2025)",
+      "detail": "Added to the radar (published 2025-03).",
+      "from": null,
+      "to": null,
+      "source_url": "https://nitda.gov.ng/wp-content/uploads/2025/03/NITDA25-NITDA-AI-TRANSFORMATION-ROADMAP-4-compressed.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-3293c4de0da4",
+      "date": "2026-10-11",
+      "recorded": "2026-10-11",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "NGA",
+      "instrument_id": "i-08e8575914e3",
+      "title": "National Cloud Technical Guideline 2026",
+      "detail": "Added to the radar (published 2026-08-04).",
+      "from": null,
+      "to": null,
+      "source_url": "https://nitda.gov.ng/wp-content/uploads/2026/08/NATIONAL-CLOUD-TECHNICAL-GUIDELINE-2026_-Final.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-fd8bebfd8e65",
+      "date": "2026-10-11",
+      "recorded": "2026-10-11",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "NGA",
+      "instrument_id": "i-ee20e15617ec",
+      "title": "National Digital Infrastructure Assurance Framework (NDIAF) 2026",
+      "detail": "Added to the radar (published 2026-08-04).",
+      "from": null,
+      "to": null,
+      "source_url": "https://nitda.gov.ng/wp-content/uploads/2026/08/NATIONAL-DIGITAL-INFRASTRUCTURE-ASSURANCE-FRAMEWORK-2026_Final.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-88abb2931ba4",
+      "date": "2026-10-11",
+      "recorded": "2026-10-11",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "NGA",
+      "instrument_id": "i-83ebbdb03582",
+      "title": "Securities and Exchange Commission Rules on Robo-Advisory Services",
+      "detail": "Added to the radar (published 2021-08-30).",
+      "from": null,
+      "to": null,
+      "source_url": "https://home.sec.gov.ng/documents/1292/Rules-on-Robo-Advisory-Services_Executed-30-August-2021.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-9ebe2030099a",
+      "date": "2026-10-11",
+      "recorded": "2026-10-11",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "NGA",
+      "instrument_id": "i-15a3c88dd239",
+      "title": "Exposure Draft of Baseline Standards for Automated Anti-Money Laundering (AML) Solutions",
+      "detail": "Added to the radar (published 2025-05-21).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.cbn.gov.ng/Out/2025/CCD/Exposure%20Draft%20on%20Baseline%20Standards%20for%20Automated%20AML%20Solutions.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-84550253e344",
+      "date": "2026-10-11",
+      "recorded": "2026-10-11",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "NGA",
+      "instrument_id": "i-38e6c442b46c",
+      "title": "Baseline Standards for Automated Anti-Money Laundering (AML) Solutions for Financial Institutions in Nigeria",
+      "detail": "Added to the radar (published 2026-03-10).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.cbn.gov.ng/Out/2026/CCD/CBN%20issues%20Baseline%20Standards%20for%20Automated%20Anti-Money%20Laundering%20Solution.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-cedccb640432",
+      "date": "2026-10-11",
+      "recorded": "2026-10-11",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "NGA",
+      "instrument_id": "i-f55cfba7967e",
+      "title": "Internet Code of Practice 2026",
+      "detail": "Added to the radar (published 2026-02-13).",
+      "from": null,
+      "to": null,
+      "source_url": "https://ncc.gov.ng/sites/default/files/2026-02/Internet-Code-of-Practice-2026.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-6acd3043138d",
+      "date": "2026-10-11",
+      "recorded": "2026-10-11",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "NGA",
+      "instrument_id": "i-3ed2258e38bd",
+      "title": "Consumer Protection Regulations Guidance Notes 2026 (Exposure Draft), including Guidance Note No. 1/2026 on AI-Generated and Digitally Altered Content in Consumer Communications",
+      "detail": "Added to the radar (published 2026-04-13).",
+      "from": null,
+      "to": null,
+      "source_url": "https://fccpc.gov.ng/wp-content/uploads/2026/04/FCCPC-Consumer-Protection-Regulations-Guidance-Notes-2026-Exposure-Draft.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-a4c9e7d02c71",
+      "date": "2026-10-11",
+      "recorded": "2026-10-11",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "NGA",
+      "instrument_id": "i-fd592531e43b",
+      "title": "Draft Sales Promotion (Amended) Regulations, 2026",
+      "detail": "Lifecycle recorded as consultation when added.",
+      "from": null,
+      "to": "consultation",
+      "source_url": "https://fccpc.gov.ng/draft-sales-promotion-amended-regulations-2026/",
+      "needs_review": false
+    },
+    {
+      "id": "c-2a6785f9e7f2",
+      "date": "2026-10-11",
+      "recorded": "2026-10-11",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "NGA",
+      "instrument_id": "i-fd592531e43b",
+      "title": "Draft Sales Promotion (Amended) Regulations, 2026",
+      "detail": "Added to the radar (published 2026-09-30).",
+      "from": null,
+      "to": null,
+      "source_url": "https://fccpc.gov.ng/draft-sales-promotion-amended-regulations-2026/",
+      "needs_review": false
+    },
+    {
+      "id": "c-f7fdac6f44a9",
+      "date": "2026-10-11",
+      "recorded": "2026-10-11",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "NGA",
+      "instrument_id": "i-6c93662d5120",
+      "title": "Privacy by Design in Early-Stage Innovation: How Data Protection Advances AI-Driven DPI in Nigeria (White Paper)",
+      "detail": "Added to the radar (published 2025-11).",
+      "from": null,
+      "to": null,
+      "source_url": "https://ndpc.gov.ng/wp-content/uploads/2025/11/NDPC_DIAL-White-Paper-Privacy-by-Design-in-Early-Stage-Innovation-.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-669605e680cc",
+      "date": "2026-10-11",
+      "recorded": "2026-10-11",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "NGA",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 16 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-e99ceddfcc65",
+      "date": "2026-09-30",
+      "recorded": "2026-10-11",
+      "kind": "world",
+      "type": "consultation",
+      "jurisdiction_id": "NGA",
+      "instrument_id": "i-fd592531e43b",
+      "title": "FCCPC publishes draft Sales Promotion Regulations 2026 with AI marketing rules",
+      "detail": "Draft published on the FCCPC site on 30 September 2026; Part V would require registration and labelling of AI used in marketing.",
+      "from": null,
+      "to": null,
+      "source_url": "https://fccpc.gov.ng/draft-sales-promotion-amended-regulations-2026/",
+      "needs_review": false
+    },
+    {
+      "id": "c-cedbb11811db",
+      "date": "2026-08-04",
+      "recorded": "2026-10-11",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "NGA",
+      "instrument_id": "i-08e8575914e3",
+      "title": "NITDA approves National Cloud Technical Guideline 2026 (AI infrastructure governance duties)",
+      "detail": "Version 1.0 approved 4 August 2026 under sections 6 and 32 of the NITDA Act; comes into effect 1 January 2027.",
+      "from": null,
+      "to": null,
+      "source_url": "https://nitda.gov.ng/wp-content/uploads/2026/08/NATIONAL-CLOUD-TECHNICAL-GUIDELINE-2026_-Final.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-c95ea69e6c9b",
+      "date": "2026-08-04",
+      "recorded": "2026-10-11",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "NGA",
+      "instrument_id": "i-ee20e15617ec",
+      "title": "NITDA approves National Digital Infrastructure Assurance Framework 2026 (covers AI infrastructure providers)",
+      "detail": "Version 2.0 approved 4 August 2026; comes into effect 1 January 2027.",
+      "from": null,
+      "to": null,
+      "source_url": "https://nitda.gov.ng/wp-content/uploads/2026/08/NATIONAL-DIGITAL-INFRASTRUCTURE-ASSURANCE-FRAMEWORK-2026_Final.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-932d813ac182",
+      "date": "2026-04-13",
+      "recorded": "2026-10-11",
+      "kind": "world",
+      "type": "consultation",
+      "jurisdiction_id": "NGA",
+      "instrument_id": "i-3ed2258e38bd",
+      "title": "FCCPC opens consultation on Consumer Protection Regulations and Guidance Notes 2026 (AI-generated content)",
+      "detail": "Exposure notice dated 13 April 2026; comments due 4 May 2026. Guidance Note No. 1/2026 covers AI-generated and digitally altered content.",
+      "from": null,
+      "to": null,
+      "source_url": "https://fccpc.gov.ng/wp-content/uploads/2026/04/FCCPC-Consumer-Protection-Exposure-Notice.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-8b966f22567b",
+      "date": "2026-03-10",
+      "recorded": "2026-10-11",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "NGA",
+      "instrument_id": "i-38e6c442b46c",
+      "title": "CBN issues Baseline Standards for Automated AML Solutions",
+      "detail": "Circular BSD/DIR/PUB/LAB/019/002 (date from the CBN circulars listing; text not read).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.cbn.gov.ng/Out/2026/CCD/CBN%20issues%20Baseline%20Standards%20for%20Automated%20Anti-Money%20Laundering%20Solution.pdf",
+      "needs_review": true
+    },
+    {
+      "id": "c-6d477d111155",
+      "date": "2026-02-13",
+      "recorded": "2026-10-11",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "NGA",
+      "instrument_id": "i-f55cfba7967e",
+      "title": "NCC issues Internet Code of Practice 2026 with AI deployment rules",
+      "detail": "Code dated 13 February 2026 under s.70 of the Nigerian Communications Act 2003; s.5.4 sets AI deployment notification and governance rules for Internet Access Service Providers.",
+      "from": null,
+      "to": null,
+      "source_url": "https://ncc.gov.ng/sites/default/files/2026-02/Internet-Code-of-Practice-2026.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-a571ed219678",
+      "date": "2025-05-21",
+      "recorded": "2026-10-11",
+      "kind": "world",
+      "type": "consultation",
+      "jurisdiction_id": "NGA",
+      "instrument_id": "i-15a3c88dd239",
+      "title": "CBN exposes draft Baseline Standards for Automated AML Solutions",
+      "detail": "Exposure draft circular BSD/DIR/CON/AML/018/033 (date from the CBN circulars listing; text not read).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.cbn.gov.ng/Out/2025/CCD/Exposure%20Draft%20on%20Baseline%20Standards%20for%20Automated%20AML%20Solutions.pdf",
+      "needs_review": true
+    },
+    {
+      "id": "c-4c93e0216ded",
+      "date": "2025-03-20",
+      "recorded": "2026-10-11",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "NGA",
+      "instrument_id": "i-b91cb727dd46",
+      "title": "NDPC issues the GAID 2025 under the Nigeria Data Protection Act",
+      "detail": "General Application and Implementation Directive (NDPC/NDP ACT-GAID/01/2025) issued by the National Commissioner/CEO on 20 March 2025, with Articles 43-44 on AI and other emerging technologies.",
+      "from": null,
+      "to": null,
+      "source_url": "https://ndpc.gov.ng/wp-content/uploads/2025/07/NDP-ACT-GAID-2025-MARCH-20TH.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-580c66105e68",
+      "date": "2025-03-20",
+      "recorded": "2026-10-11",
+      "kind": "world",
+      "type": "superseded",
+      "jurisdiction_id": "NGA",
+      "instrument_id": "i-1d9b7b154d37",
+      "title": "Nigeria Data Protection Regulation 2019 ceases to apply",
+      "detail": "Under Article 3(3) of the GAID 2025, the NDPC ceases to apply the NDPR 2019 as a legal instrument upon the GAID's issuance.",
+      "from": null,
+      "to": null,
+      "source_url": "https://ndpc.gov.ng/wp-content/uploads/2025/07/NDP-ACT-GAID-2025-MARCH-20TH.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-8bd9e5930df2",
+      "date": "2023-07-01",
+      "recorded": "2026-10-11",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "NGA",
+      "instrument_id": "i-e36d52d1cf04",
+      "title": "Nigeria Data Protection Act, 2023 published in the Official Gazette",
+      "detail": "Published as Act No. 37 in the Official Gazette Extraordinary No. 119, Vol. 110, of 1 July 2023.",
+      "from": null,
+      "to": null,
+      "source_url": "https://ndpc.gov.ng/wp-content/uploads/2024/03/Nigeria_Data_Protection_Act_2023.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-96579a324825",
+      "date": "2023-06-12",
+      "recorded": "2026-10-11",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "NGA",
+      "instrument_id": "i-e36d52d1cf04",
+      "title": "Nigeria Data Protection Act, 2023: presidential assent and commencement",
+      "detail": "President Bola Ahmed Tinubu assented to the Act on 12 June 2023, the commencement date stated in the Act.",
+      "from": null,
+      "to": null,
+      "source_url": "https://ndpc.gov.ng/wp-content/uploads/2024/03/Nigeria_Data_Protection_Act_2023.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-f6fb91a3063c",
+      "date": "2021-08-30",
+      "recorded": "2026-10-11",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "NGA",
+      "instrument_id": "i-83ebbdb03582",
+      "title": "SEC Rules on Robo-Advisory Services executed",
+      "detail": "The SEC executed its Rules on Robo-Advisory Services, including governance and supervision requirements for advisory algorithms.",
+      "from": null,
+      "to": null,
+      "source_url": "https://home.sec.gov.ng/documents/1292/Rules-on-Robo-Advisory-Services_Executed-30-August-2021.pdf",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "A Bill for an Act to Provide for Establishment of the National Institute for Artificial Intelligence and Robotic Studies Sciences Regulation Commission to ensure Proper Control of Usage of Artificial Intelligence (AI) Technology in Nigeria, Regulate the Development, Deployment, and use of Artificial Intelligence in Nigeria and for Related Matters (HBs. 143, 601, 942 and 1810)",
+      "english_title": "Consolidated House AI regulation bill (HBs 143, 601, 942 and 1810)",
+      "issuing_authority": "House of Representatives (National Assembly)",
+      "note": "Pending bill, not law. Sponsors: Hon. Sada Soli, Hon. Benjamin O. Kalu, Hon. Ademorin A. Kuye, Hon. Ibrahim Ayokunle Isiaka, Hon. Akin Rotimi. Listed for second reading on the House Order Paper of 3 December 2024 (No. 68, https://nass.gov.ng/documents/download/11167). Component bills: HB 143 (National Institute for Artificial Intelligence and Robotic Studies, Somolu, Lagos; first reading 18 July 2023) and HB 601 (National Artificial Intelligence and Robotic Sciences (Establishment) Bill; first reading 12 October 2023), per the House Bills Progression Chart (https://nass.gov.ng/documents/billdownload/11085.pdf); HB 942 (bill to ensure proper control of usage of AI technology, Hon. Sada Soli) listed for second reading on 12 March 2024 and 27 November 2024 order papers (https://nass.gov.ng/documents/download/11110, /11166). No later stage (committee report, third reading, Senate concurrence, assent) found in the House order papers published on nass.gov.ng up to 23 July 2026; bill text not published on nass.gov.ng.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Nigerian Artificial Intelligence Bill, 2025 (HB. 2567)",
+      "english_title": "Nigerian Artificial Intelligence Bill, 2025",
+      "issuing_authority": "House of Representatives (National Assembly)",
+      "note": "Pending bill, not law. Sponsor Hon. Ahmed Munir; first reading listed on the House Order Paper of Thursday 23 October 2025 (No. 35, third session, https://nass.gov.ng/documents/download/11215). No later stage found in the House order papers on nass.gov.ng; bill text not published there.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "National Artificial Intelligence Commission (Establishment) Bill, 2025 (SB. 731)",
+      "english_title": "National Artificial Intelligence Commission (Establishment) Bill, 2025",
+      "issuing_authority": "Senate (National Assembly)",
+      "note": "Pending bill, not law. Reported first reading in the Senate on 25 February 2025, sponsor Sen. Ibrahim Folorunsho Jimoh (Ondo South); would create a standalone AI regulatory commission. Not verified on an official source: nass.gov.ng publishes no Senate order papers or bill texts for the 10th Assembly (the only copy of the Senate order paper found is on a civil-society host). Promote or update once an official Senate record or bill text is located.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "National Digital Economy and E-Governance Bill, 2025",
+      "english_title": "National Digital Economy and E-Governance Bill, 2025",
+      "issuing_authority": "National Assembly (joint Senate and House committees on ICT); executive-backed bill of the Federal Ministry of Communications, Innovation and Digital Economy",
+      "note": "Pending bill, not law as of 2026-10-11. Bill text on nass.gov.ng (https://nass.gov.ng/documents/billdownload/11219.pdf, 63 pp.) includes Chapter Five 'Regulation of Artificial Intelligence and other Emerging Technologies': Part XI ethical governance of AI (s. 63 principles, s. 64 obligations of AI agents, s. 65 classification of AI systems by ministerial regulation, ss. 66-67 regulatory agency functions and powers including suspension orders and civil liability of AI agents) and Part XII regulatory sandboxes and testbeds for AI. The National Assembly Library Trust Fund reported a joint public hearing and plans for third reading in November 2025 (https://naltf.gov.ng/digital-economy-bill-poised-for-presidential-assent/) and, on 22 June 2026, that the Senate ICT committee chair said the bill was in its final legislative stage (https://naltf.gov.ng/digital-economy-egovernment-bill-ndpc-frameworks/). House bill number reported as HB. 1599 (not confirmed on nass.gov.ng). No assent found; record as an Act once assented and gazetted.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "A Bill for an Act to Amend the Nigeria Data Protection Act, 2023, to Make it Mandatory for Social Media Platforms to Have Physical Offices Within Nigeria and for Other Related Matters, 2025",
+      "english_title": "Nigeria Data Protection Act (Amendment) Bill, 2025 (Senate)",
+      "issuing_authority": "Senate (National Assembly)",
+      "note": "Pending bill, not law. Sponsor Sen. Ned Nwoko (Delta North); passed second reading in the Senate in the week of 18-20 March 2025 (https://naltf.gov.ng/senate-plenary-recap-march-18-20th-2025/) and had a public hearing before the Senate Committee on ICT and Cyber Security in July 2026 (https://naltf.gov.ng/senate-moves-to-compel-meta-tiktok-and-global-tech-giants-to-establish-physical-offices-in-nigeria/). Not AI-specific. Separately, the joint National Assembly ICT committees announced on 12 May 2026 a wider review of the NDP Act citing AI (https://naltf.gov.ng/national-assembly-initiates-review-of-national-data-protection-act/); no amendment bill text found.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Other AI-related bills in the House of Representatives (institutes and professional bodies)",
+      "english_title": "AI institute and professional-body bills",
+      "issuing_authority": "House of Representatives (National Assembly)",
+      "note": "Establishment bills without regulatory content, all pending: Artificial Intelligence Management and Finance Institute (AIMFIN) (Establishment) Bill, 2025 (HB. 2063, Hon. Usman Zannah; first reading 6 February 2025, second reading listed 9 July 2026); National Institute of Artificial Intelligence and Robotic Studies (Establishment) Bill, 2025 (HB. 2243, Hon. Muktar Zakari Chawai; first reading 7 May 2025); Federal Polytechnic of Artificial Intelligence and Digital Technology, Aliade (HB. 377; third reading listed 29 April 2026); Chartered Institute of Machine Learning and Artificial Intelligence, Nigeria Bill, 2026 (HB. 2814, Hon. Benjamin Adeyemi Olabinjo; first reading 23 July 2026). Senate: Artificial Intelligence, Innovation and Communication Technology Solutions Centre, Omuo-Ekiti bill (Sen. Adeyemi Adaramodu; second reading 11 November 2025). Sources: House order papers on nass.gov.ng (download ids 11175, 11193, 11241, 11242, 11263, 11275) and https://naltf.gov.ng/senate-advances-bill-to-establish-artificial-intelligence-and-innovation-centre-in-ekiti-state/. Not governance instruments; listed for completeness.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "National Artificial Intelligence Policy (draft, NITDA, 2022–2023)",
+      "english_title": "Draft National AI Policy (NAIP)",
+      "issuing_authority": "National Information Technology Development Agency",
+      "note": "NITDA called for expert volunteers in August 2022 and its Director General said in March 2023 that the first draft was ready for transmission to the Federal Executive Council. No official full text was found on nitda.gov.ng or ncair.nitda.gov.ng (site search and media listing, 2026-10-11); it appears to have been overtaken by the National AI Strategy. Promote only if an official text is located.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Draft Code of Practice for Artificial Intelligence (NITDA)",
+      "english_title": "Draft Nigeria Code of Practice for Artificial Intelligence",
+      "issuing_authority": "National Information Technology Development Agency",
+      "note": "Listed in NCAIR's April 2026 two-year NAIS impact compilation (citing press coverage). Not on NITDA's Regulations or Draft Regulatory Instruments pages or in site search on 2026-10-11. Promote as consultation_draft once NITDA publishes the text.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "National Artificial Intelligence Trust (approved by the Federal Executive Council)",
+      "english_title": "National AI Trust",
+      "issuing_authority": "Federal Ministry of Communications, Innovation and Digital Economy",
+      "note": "FMCIDE news of 12 June 2026 describes design convenings for a 'one of its kind' National AI Trust (ten AI experts plus two ministers per press reports of FEC approval). No founding instrument, FEC memo or charter is published on fmcide.gov.ng; record under government-governance when one appears.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "National Data Strategy (draft, NITDA, 2022)",
+      "english_title": "Draft National Data Strategy",
+      "issuing_authority": "National Information Technology Development Agency",
+      "note": "NITDA news of 10 November 2022 called for stakeholder review of a draft National Data Strategy; no text (draft or final) is published on nitda.gov.ng. AI content unknown.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Federal Ministry of Health AI framework under the Nigerian Digital Health Architecture",
+      "english_title": "FMoH AI in health framework (in development)",
+      "issuing_authority": "Federal Ministry of Health and Social Welfare",
+      "note": "Press reports (November 2025) say the Ministry is building an AI framework for safe deployment of AI tools within the Nigerian Digital Health Architecture. No document found on health.gov.ng.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "NUC 'Towards Responsible AI Integration in the Nigerian University System' and 'Roadmap for the Integration of Artificial Intelligence into the Nigerian University System'",
+      "english_title": "NUC responsible-AI integration policy and roadmap for universities",
+      "issuing_authority": "National Universities Commission",
+      "note": "Named by UNESCO-ICHEI as NUC policy documents developed after a July 2024 policy dialogue; not found on nuc.edu.ng (site search 2026-10-11). Sectoral (education) lead.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "NDPC regulatory sandbox policy (data protection and AI)",
+      "english_title": "NDPC regulatory sandbox policy covering data protection and AI",
+      "issuing_authority": "Nigeria Data Protection Commission",
+      "note": "The NDPC/DIAL white paper (Nov 2025, ndpc.gov.ng) says the NDPC is working on a regulatory sandbox policy extending to data protection and AI. No document found on ndpc.gov.ng (resources page and media library checked 2026-10-11). Record under 'sandbox' once published.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "NDPC AI System Impact Assessment (AISIA)",
+      "english_title": "NDPC AI System Impact Assessment",
+      "issuing_authority": "Nigeria Data Protection Commission",
+      "note": "NDPC news items of 23 April 2026 and 22 May 2026 (ndpc.gov.ng) present an 'AI System Impact Assessment (AISIA)' alongside DPIAs, but no AISIA template, framework or guidance document is published on ndpc.gov.ng. Record under risk-assurance if a document appears.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "NDPC proposed review of the Nigeria Data Protection Act 2023 for AI",
+      "english_title": "Proposed amendment of the NDPA 2023 to address AI",
+      "issuing_authority": "Nigeria Data Protection Commission",
+      "note": "News reports say the NDPC plans to seek an NDPA review to address AI, robotics and big data. No official proposal or bill found. Track with the National Assembly bill search (PART G1).",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "SEC capital-market AI governance framework",
+      "english_title": "SEC Nigeria AI governance framework for the capital market",
+      "issuing_authority": "Securities and Exchange Commission",
+      "note": "The SEC Director-General has said (2026 speeches reported in the press) that the SEC is developing AI governance frameworks requiring explainability, accountability and algorithmic fairness. No exposure draft found on sec.gov.ng rules page as of 2026-10-11.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "CBN letter: Implementation of the Baseline Standards for Automated AML/CFT/CPF Solutions (ref. CMD/DIR/PUB/CIR/001006, 31 March 2026)",
+      "english_title": "CBN implementation letter on the automated AML baseline standards",
+      "issuing_authority": "Central Bank of Nigeria",
+      "note": "Listed in the CBN circulars data feed (https://www.cbn.gov.ng/Out/2026/CCD/LETTER%20TO%20SUPERVISED%20INSTITUTIONS_IMPLEMENTATION%20OF%20THE%20BASELINE%20STANDARDS%20FOR%20AUTOMATED%20AML_CFT_CPF%20SOLUTIONS2.pdf); PDF blocked (HTTP 403) like other CBN PDFs. Read together with the Baseline Standards when the CBN site is reachable and add implementation dates to that record.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Lagos State AI Guidelines (title unconfirmed)",
+      "english_title": "Lagos State Artificial Intelligence Guidelines",
+      "issuing_authority": "Lagos State Government (Ministry of Innovation, Science and Technology)",
+      "government_level": "subnational",
+      "subnational_unit": "Lagos",
+      "note": "Announced by Commissioner Olatunbosun Alake in Nov 2024 (with the Federal AI Collective; target Q1/Q2 2025) and again in May 2025 ('in the coming weeks'), described as a non-binding framework for developers and companies. A May 2026 press-briefing report still speaks of 'rollout of AI guidelines'. No official text found: lagosstate.gov.ng is a JS app with no searchable posts; most.lagosstate.gov.ng fails TLS (curl, cert name mismatch), its http homepage returns a near-empty shell, and WebFetch returned HTTP 503. Third-party tracker regulations.ai lists it as adopted 1 Aug 2025 but cites 'lagos.state.gov.ng/ai-guidelines-not-publicly-available', i.e. no public official copy. Discovery sources only: von.gov.ng/?p=368271, thisdaylive.com 2025-05-22, nairametrics 2025-05-18, vanguardngr.com 2026-05. Record once an official copy and date are found. Also found: a Lagos State AI Guide platform at aiguide.lagosstate.gov.ng ('STANDARD Framework'); on 2026-10-11 curl failed (expired TLS certificate) and WebFetch returned HTTP 503, so its content could not be checked."
+    },
+    {
+      "title": "Lagos Innovation Bill (draft)",
+      "english_title": "Lagos Innovation Bill",
+      "issuing_authority": "Lagos State Government (Ministry of Innovation, Science and Technology)",
+      "government_level": "subnational",
+      "subnational_unit": "Lagos",
+      "note": "Reported (techpoint.africa; news) as a draft state bill to localise the Nigeria Startup Act, institutionalise university-industry-government collaboration and 'accelerate AI adoption'. Not found on any official Lagos portal or as a Lagos State House of Assembly bill; status and AI provisions unverified. Likely general innovation law, not AI-specific."
+    },
+    {
+      "title": "Kaduna State Information Technology and Digital Economy Agency bill / Kaduna State Digital Strategy",
+      "english_title": "Kaduna State ICT agency law and Digital Strategy",
+      "issuing_authority": "Kaduna State Government; Kaduna State House of Assembly",
+      "government_level": "subnational",
+      "subnational_unit": "Kaduna",
+      "note": "News (von.gov.ng) reports the Kaduna State House of Assembly passed a bill to establish an ICT/digital economy agency, and the state cites a Kaduna State Digital Strategy; the governor speaks of using AI and robotics in governance (3rd AI and Robotics Summit; AI4All Hausa lessons). No AI-specific Kaduna policy, law or guideline found; kdsg.gov.ng WordPress search for 'artificial intelligence' (posts, pages, media) returned only unrelated news. Not recorded (general ICT, AI provisions unverified)."
+    },
+    {
+      "title": "Ogun State AI programmes (OgunLEARN, Gen AI Fellowship) - no policy document",
+      "english_title": "Ogun State AI initiatives",
+      "issuing_authority": "Ogun State Government",
+      "government_level": "subnational",
+      "subnational_unit": "Ogun",
+      "note": "Only programmes found via news: OgunLEARN AI-powered learning platform under the OGSERA education digital agenda, and a Gen AI Fellowship with the Bosun Tijani Foundation (2025). No Ogun State AI policy, strategy or guideline found; ogunstate.gov.ng is a JS app with no searchable content via curl. Not recorded."
+    }
+  ]
 }
