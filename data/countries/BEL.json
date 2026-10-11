@@ -10,201 +10,1398 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Belgium had not yet passed a law implementing the EU AI Act or designated its authorities by October 2026; the government announced a bill for 2026 and the telecoms regulator BIPT is preparing to act as market surveillance authority, while the AI Act applies directly through the EU layer. At federal level, AI governance rests on the 2022 National Convergence Plan for AI and a 2025 federal charter for responsible AI use in public services signed by the minister and the heads of the federal administrations; the 2018 data protection law limits solely automated decisions in law enforcement, a 2022 labour law covers algorithmic management of platform workers, and a 2026 royal decree gives binding force to AI rules for real estate agents. The Data Protection Authority has issued AI guidance for professionals and citizens and ruled on automated decisions under Article 22 GDPR, and the FSMA issued a 2026 communication on frontier AI and cyber risk. Flanders has AI principles and generative AI rules for its administration and an AI-in-education vision, Wallonia's 2025–2029 digital strategy has an AI priority, and Brussels has a generative AI good-practice guide. Several bills on deepfakes, AI in public administration and biometric identification are pending.",
+    "lead_institutions": [
+      "FPS Policy and Support (BOSA)",
+      "FPS Economy, SMEs, Self-employed and Energy",
+      "Belgian Institute for Postal Services and Telecommunications",
+      "Data Protection Authority",
+      "Flemish Government"
+    ],
+    "last_deep_review": "2026-10-11",
+    "review_notes": "Deep review completed on 11 October 2026, covering federal laws and decrees, the federal government, federal regulators and standards, and the Flemish, Walloon and Brussels-Capital regions. Searches were made in French, Dutch and English. EU and Council of Europe instruments, including the AI Act, are recorded in the regional files. Several federal websites (BOSA, FPS Economy, the Belgian Official Gazette and the justice and finance portals) block automated access, so the 2022 National Convergence Plan is recorded from its official page as found but not fully read, and some federal texts are pending. Bills are listed as pending rather than as instruments. Pending: the AI Act implementation bill and authority designations, the 2025 circular banning DeepSeek in federal administrations, bills on deepfakes, biometric identification and AI in public administration, the Innoviris AI strategy and regional legislation."
   },
   "instruments": [
     {
-      "id": "i-229a2f905fcb",
-      "official_title": "Règlement sur l’intelligence artificielle | SPF Economie",
-      "english_title": "National guidance on the AI Act",
+      "id": "i-d0260dda6927",
       "jurisdiction_id": "BEL",
-      "issuing_authority": null,
-      "publisher_name": "economie.fgov.be",
-      "authority_type": null,
+      "official_title": "Loi relative à la protection des personnes physiques à l'égard des traitements de données à caractère personnel",
+      "english_title": "Act of 30 July 2018 on the protection of natural persons with regard to the processing of personal data",
+      "issuing_authority": "Federal Parliament (Chamber of Representatives) and the King (Federal Government of Belgium)",
+      "publisher_name": "FPS Justice (Moniteur belge / Belgisch Staatsblad)",
+      "authority_type": "government",
       "government_level": "national",
+      "subnational_unit": null,
       "categories": [
-        "government-governance"
+        "data-privacy",
+        "binding-law"
       ],
-      "category": "government-governance",
+      "category": "data-privacy",
       "subcategory": null,
-      "legal_status": null,
-      "publication_date": null,
-      "effective_date": null,
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2018-09-05",
+      "effective_date": "2018-09-05",
       "last_amended_date": null,
-      "current_status": "Official source located; current status requires review",
-      "scope": null,
-      "sectors": [],
-      "technology_scope": [
-        "AI"
+      "current_status": "In force. Law of 30 July 2018 (Dutch title: 'Wet betreffende de bescherming van natuurlijke personen met betrekking tot de verwerking van persoonsgegevens'), published in the Moniteur belge on 5 September 2018 (NUMAC 2018040581, p. 68616), entry into force 5 September 2018 per the Justel header; amended several times since (consolidated version on Justel). It is the national GDPR implementing law and transposes the Law Enforcement Directive (EU) 2016/680 in Title 2. No amendment referring to artificial intelligence was identified.",
+      "scope": "Belgium (federal); processing of personal data by public and private controllers, with specific regimes for criminal-justice authorities (Title 2) and intelligence and security services (Title 3)",
+      "sectors": [
+        "law enforcement",
+        "public administration"
       ],
-      "summary": "Official source located for this governance category. The document’s adoption, legal effect, scope and version history remain under review.",
-      "ai_governance_relevance": "Primary-source material for assessing government ai governance.",
-      "source_url": "https://economie.fgov.be/fr/themes/line/intelligence-artificielle/reglement-sur-lintelligence",
+      "technology_scope": [
+        "AI",
+        "algorithms",
+        "automated decision-making"
+      ],
+      "summary": "Belgium's framework data protection law implementing the GDPR and transposing the Law Enforcement Directive. Its AI-relevant provisions are in Title 2 (arts. 25-71, processing by competent authorities for the prevention, investigation and prosecution of criminal offences): article 35 allows decisions based solely on automated processing, including profiling, that produce adverse legal effects or significantly affect the person only where a law, decree, ordinance, EU law or international agreement provides appropriate safeguards, at least the right to obtain human intervention from the controller, and prohibits profiling that results in discrimination on the basis of the special categories of data in article 34.",
+      "ai_governance_relevance": "Sets the national rules on automated decision-making and profiling by police and criminal-justice authorities, and the general data protection framework that governs AI training and use.",
+      "source_url": "https://www.ejustice.just.fgov.be/eli/loi/2018/07/30/2018040581/justel",
       "official_pdf_url": null,
-      "official_webpage_url": "https://economie.fgov.be/fr/themes/line/intelligence-artificielle/reglement-sur-lintelligence",
+      "official_webpage_url": "https://www.ejustice.just.fgov.be/eli/loi/2018/07/30/2018040581/justel",
       "language": "fr",
       "supersedes": [],
       "superseded_by": [],
       "related_instruments": [],
       "regional_applicability": [],
-      "verification_date": "2026-10-06",
-      "verification_level": "primary_source_located",
-      "metadata_gaps": [
-        "Issuing authority",
-        "Publication/effective dates",
-        "Current legal status",
-        "Precise applicability",
-        "Version history",
-        "Authority type",
-        "Government level",
-        "Publication date",
-        "Effective date",
-        "Last amended date"
-      ],
-      "source_kind": "official_publication",
-      "evidence_reference": "turn8search0",
+      "verification_date": "2026-10-11",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "legislation_portal",
+      "evidence_reference": "Justel consolidated text (ejustice.just.fgov.be ELI page) read with WebFetch: header (promulgation 30 July 2018, publication 5 September 2018, NUMAC 2018040581, entry into force 5 September 2018), Title 2 scope and articles 34-35 quoted. curl (browser user agent, --max-time 60) received only the site's bot-challenge page.",
       "link_status": "reachable",
       "document_access_type": "official_publication_or_full_text_page",
-      "source_id": "s-c02803f79cf6",
-      "organization_id": "o-bdb3faa0b146",
-      "lifecycle": "unverified",
-      "first_recorded": "2026-10-06",
-      "last_changed": null,
-      "subnational_unit": null
+      "first_recorded": "2026-10-11",
+      "last_changed": "2018-09-05",
+      "source_id": "s-64a7c71c3d36",
+      "organization_id": "o-49163251ef76"
     },
     {
-      "id": "i-b66b081abc45",
-      "official_title": "Foire aux questions concernant l’intelligence artificielle, l’Artificial Intelligence Act de la Commission européenne, et les applications de ce dernier | SPF Economie",
-      "english_title": "AI Act and government AI applications: official FAQ",
+      "id": "i-7a641768a20b",
       "jurisdiction_id": "BEL",
-      "issuing_authority": null,
-      "publisher_name": "economie.fgov.be",
-      "authority_type": null,
+      "official_title": "Loi portant des dispositions diverses relatives au travail",
+      "english_title": "Act of 3 October 2022 containing various provisions relating to work (platform economy chapter: presumption of employment for digital platform work)",
+      "issuing_authority": "Federal Parliament (Chamber of Representatives) and the King (Federal Government of Belgium)",
+      "publisher_name": "FPS Justice (Moniteur belge / Belgisch Staatsblad)",
+      "authority_type": "government",
       "government_level": "national",
+      "subnational_unit": null,
       "categories": [
-        "government-governance"
+        "binding-law",
+        "sectoral"
       ],
-      "category": "government-governance",
+      "category": "binding-law",
       "subcategory": null,
-      "legal_status": null,
-      "publication_date": null,
-      "effective_date": null,
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2022-11-10",
+      "effective_date": "2023-01-01",
       "last_amended_date": null,
-      "current_status": "Official source located; current status requires review",
-      "scope": null,
-      "sectors": [],
-      "technology_scope": [
-        "AI"
+      "current_status": "In force. Law of 3 October 2022 (Dutch title: 'Wet houdende diverse arbeidsbepalingen'), published in the Moniteur belge on 10 November 2022 (NUMAC 2022206360, p. 81963). The law entered into force on 20 November 2022; under its article 18, section 1 of chapter 4 'Economie de plateformes' (which inserts article 337/3 into the Programme Law (I) of 27 December 2006) applies from 1 January 2023, and section 2 (accident insurance for platform workers) from a date to be set by the King. Belgium must also transpose the EU Platform Work Directive (EU) 2024/2831, including its algorithmic-management chapter, by 2 December 2026; no transposition bill had been tabled in the Chamber by 8 October 2026.",
+      "scope": "Belgium (federal); work performed via digital platforms that issue orders ('plateformes numériques donneuses d'ordres')",
+      "sectors": [
+        "employment",
+        "platform work"
       ],
-      "summary": "Official source located for this governance category. The document’s adoption, legal effect, scope and version history remain under review.",
-      "ai_governance_relevance": "Primary-source material for assessing government ai governance.",
-      "source_url": "https://economie.fgov.be/fr/themes/line/intelligence-artificielle/foire-aux-questions-concernant",
+      "technology_scope": [
+        "AI",
+        "algorithms",
+        "automated decision-making"
+      ],
+      "summary": "Omnibus labour law (the 2022 'labour deal') that, among other measures, introduces in article 337/3 of the Programme Law (I) of 27 December 2006 a rebuttable presumption of an employment relationship for people working through digital platforms. It defines a digital platform that issues orders as one that organises the work 'via an algorithm or any other equivalent method or technology', and requires that the qualification of the working relationship take account of the use of algorithms in the organisation of work. It is Belgium's first federal law to refer explicitly to algorithmic management of workers.",
+      "ai_governance_relevance": "Explicitly links employment-status rules to algorithmic organisation of work on digital labour platforms.",
+      "source_url": "https://www.ejustice.just.fgov.be/eli/loi/2022/10/03/2022206360/justel",
       "official_pdf_url": null,
-      "official_webpage_url": "https://economie.fgov.be/fr/themes/line/intelligence-artificielle/foire-aux-questions-concernant",
+      "official_webpage_url": "https://www.ejustice.just.fgov.be/eli/loi/2022/10/03/2022206360/justel",
       "language": "fr",
       "supersedes": [],
       "superseded_by": [],
       "related_instruments": [],
       "regional_applicability": [],
-      "verification_date": "2026-10-06",
-      "verification_level": "primary_source_located",
-      "metadata_gaps": [
-        "Issuing authority",
-        "Publication/effective dates",
-        "Current legal status",
-        "Precise applicability",
-        "Version history",
-        "Authority type",
-        "Government level",
-        "Publication date",
-        "Effective date",
-        "Last amended date"
-      ],
-      "source_kind": "official_publication",
-      "evidence_reference": "turn8search11",
+      "verification_date": "2026-10-11",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "legislation_portal",
+      "evidence_reference": "Justel consolidated text read with WebFetch: title, publication date 10 November 2022, entry into force 20 November 2022, article 15 (inserting art. 337/3 Programme Law 2006) with both 'algorithme' passages quoted, article 18 (chapter 4 section 1 from 1 January 2023). Found through a Moniteur belge full-text search ('algorithmes' + 'travailleurs' + 'plateforme'). curl not usable (bot-challenge page on ejustice).",
       "link_status": "reachable",
       "document_access_type": "official_publication_or_full_text_page",
-      "source_id": "s-245768f66f1d",
-      "organization_id": "o-bdb3faa0b146",
-      "lifecycle": "unverified",
-      "first_recorded": "2026-10-06",
-      "last_changed": null,
-      "subnational_unit": null
+      "first_recorded": "2026-10-11",
+      "last_changed": "2022-11-10",
+      "source_id": "s-75ecc084fdf8",
+      "organization_id": "o-49163251ef76"
+    },
+    {
+      "id": "i-3fcfe22fe3ad",
+      "jurisdiction_id": "BEL",
+      "official_title": "Arrêté royal portant approbation du code de déontologie de l'Institut professionnel des agents immobiliers",
+      "english_title": "Royal Decree of 20 July 2026 approving the code of ethics of the Professional Institute of Real Estate Agents (including rules on the use of artificial intelligence)",
+      "issuing_authority": "The King, on the proposal of the Minister for Middle Classes (Federal Government of Belgium); code drawn up by the National Council of the Professional Institute of Real Estate Agents (IPI/BIV)",
+      "publisher_name": "FPS Justice (Moniteur belge / Belgisch Staatsblad)",
+      "authority_type": "government",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "sectoral",
+        "binding-law",
+        "ethics"
+      ],
+      "category": "sectoral",
+      "subcategory": null,
+      "legal_status": "binding_regulation",
+      "lifecycle": "in_force",
+      "publication_date": "2026-09-21",
+      "effective_date": "2026-10-01",
+      "last_amended_date": null,
+      "current_status": "Published in the Moniteur belge on 21 September 2026 (NUMAC 2026006656; the annexed code also appears as NUMAC 2026A06656), signed 20 July 2026, countersigned by Minister E. Simonet (Middle Classes). Article 1 makes the annexed code binding; article 2 repeals the royal decree of 29 June 2018 approving the previous code with effect from 1 October 2026. The decree contains no separate commencement clause; 1 October 2026 is the repeal date stated in article 2 (and also the tenth day after publication). Legal basis: framework law of 3 August 2007 on regulated intellectual service professions (art. 8 §1) and law of 11 February 2013 on the real estate agent profession (art. 13); National Council decision of 24 June 2026. The preamble refers to the AI sub-title as articles 40 to 42, while in the annexed code the AI rules are articles 43 to 45. Dutch title not checked.",
+      "scope": "Belgium (federal); all real estate agents registered with the Professional Institute of Real Estate Agents and persons for whom they are responsible",
+      "sectors": [
+        "real estate",
+        "professional services"
+      ],
+      "technology_scope": [
+        "AI",
+        "algorithms",
+        "automated decision-making"
+      ],
+      "summary": "Royal decree giving binding force to the new code of ethics of Belgium's real estate agents, which adds a sub-title on the use of artificial intelligence and defines an 'AI system' in article 5 in terms aligned with the EU AI Act. Articles 43-45 provide that using an AI system cannot override an agent's ethical and legal duties; agents must critically review AI-generated output, be transparent with third parties about (even partial) AI use where legal obligations require, and have sufficient competence to control the systems used; they may not enter personal data into an 'open' AI system or use AI to deceive people.",
+      "ai_governance_relevance": "One of the first federal regulatory texts setting binding professional rules on the use of AI (including generative AI tools) by a regulated profession.",
+      "source_url": "https://www.ejustice.just.fgov.be/cgi/article_body.pl?language=fr&caller=summary&pub_date=2026-09-21&numac=2026006656",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.ejustice.just.fgov.be/cgi/article_body.pl?language=fr&caller=summary&pub_date=2026-09-21&numac=2026006656",
+      "language": "fr",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-11",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "legislation_portal",
+      "evidence_reference": "Moniteur belge text page (ejustice article_body, NUMAC 2026006656) read with WebFetch: title, signature date, articles 1-3 of the decree, preamble legal basis, and code articles 5, 43, 44, 45 (AI provisions) checked. Found through a Moniteur belge full-text search for 'intelligence artificielle'. curl received only the site's bot-challenge page; the ELI URL /eli/arrete/2026/07/20/2026006656/moniteur returned 404.",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "first_recorded": "2026-10-11",
+      "last_changed": "2026-09-21",
+      "source_id": "s-c6b07ea80bd5",
+      "organization_id": "o-49163251ef76"
+    },
+    {
+      "id": "i-914f7ff10c52",
+      "jurisdiction_id": "BEL",
+      "official_title": "Charte pour l'utilisation responsable de l'intelligence artificielle dans les services publics dans le cadre de la fourniture de services aux personnes, aux entreprises et aux organisations",
+      "english_title": "Charter for the responsible use of artificial intelligence in public services in the provision of services to individuals, businesses and organisations",
+      "issuing_authority": "Minister of Public Action and Modernisation, in charge of Digital Affairs (Vanessa Matz), with the Chairs of the College of Federal Public Services, the College of Public-Interest Bodies and the College of Public Social Security Institutions, on behalf of 40 adhering federal public bodies",
+      "publisher_name": "FPS Social Security",
+      "authority_type": "government",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "public-sector",
+        "ethics",
+        "risk-assurance",
+        "transparency",
+        "generative-ai"
+      ],
+      "category": "public-sector",
+      "subcategory": null,
+      "legal_status": "administrative_guideline",
+      "lifecycle": "adopted",
+      "publication_date": "2025-07-11",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Signed on 11 July 2025 (date on the signature page) by the Minister of Public Action and Modernisation and the chairs of the three federal colleges; Annex 2 lists the adhering federal public services, Defence, Federal Police, public-interest bodies and public social security institutions (40 bodies). It is a self-commitment of the adhering bodies, each of which must implement it in its strategic and operational policy; it creates no new legal obligations. Dutch title: 'Charter voor verantwoord gebruik van artificiële intelligentie in overheidsdiensten bij de dienstverlening aan individuen, bedrijven en organisaties'. The Minister's general policy note of 24 January 2026 (Chamber DOC 56 1282/030) states that it is to be extended to autonomous public enterprises. It follows a public consultation on a draft prepared by the AI4Belgium Ethics & Law working group in spring 2024.",
+      "scope": "Adhering federal public bodies, for AI systems used to take or support administrative decisions or to interact directly with individuals, businesses and organisations",
+      "sectors": [
+        "public administration"
+      ],
+      "technology_scope": [
+        "AI",
+        "generative AI"
+      ],
+      "summary": "Federal charter under which adhering public bodies commit to eight principles whenever they design, develop, procure or use AI systems (as defined by the EU AI Act, including generative AI) to take or support administrative decisions or to interact directly with the public: the option to deal with a staff member instead of an AI system, transparency (always telling people they are interacting with AI and documenting systems), human oversight of high-risk systems, the right of appeal, data quality, prior risk assessment and mitigation (including for purchased systems, with independent audits where appropriate), environmental sustainability and continuous AI training of staff. Bodies state they will not use an AI system that does not meet these principles, and each adhering body must build the charter into its strategic and operational policy.",
+      "ai_governance_relevance": "Main federal instrument governing the use of AI by Belgian federal public administrations.",
+      "source_url": "https://socialsecurity.belgium.be/fr/charte-ia",
+      "official_pdf_url": "https://socialsecurity.belgium.be/sites/default/files/content/docs/fr/publications/charte-ia-fr.pdf",
+      "official_webpage_url": "https://socialsecurity.belgium.be/fr/charte-ia",
+      "language": "fr",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-11",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_publication",
+      "evidence_reference": "curl (browser user agent, --max-time 60): FPS Social Security page 'Engagement pour une IA éthique dans les services publics' read (links 'Téléchargez la charte IA - 11/07/25'); French PDF (8 pp.) downloaded and read with pdftotext, including signature page dated 11 July 2025 and Annex 2 list of adhering bodies; Dutch PDF title checked; FPS Social Security news item of 4 November 2025 read; Chamber general policy note 'Numérique' DOC 56 1282/030 (24 January 2026) read for status",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-f7c142fa60a8",
+      "organization_id": "o-49163251ef76",
+      "first_recorded": "2026-10-11",
+      "last_changed": "2025-07-11"
+    },
+    {
+      "id": "i-e3ca951f9c45",
+      "jurisdiction_id": "BEL",
+      "official_title": "Plan national de convergence pour le développement de l'intelligence artificielle",
+      "english_title": "National Convergence Plan for the Development of Artificial Intelligence",
+      "issuing_authority": "Federal Government of Belgium (Council of Ministers), on the proposal of the State Secretary for Digitalisation",
+      "publisher_name": "FPS Policy and Support (BOSA)",
+      "authority_type": "government",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "strategy",
+        "government-governance",
+        "ethics"
+      ],
+      "category": "strategy",
+      "subcategory": null,
+      "legal_status": "national_strategy",
+      "lifecycle": "adopted",
+      "publication_date": "2022-10-28",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Federal AI plan approved by the Council of Ministers on 28 October 2022 (date stated on the BOSA page). Dutch title: 'Nationaal convergentieplan voor de ontwikkeling van artificiële intelligentie'. Still the federal reference plan in October 2026: the Minister in charge of Digital Affairs' general policy note of 24 January 2026 (Chamber DOC 56 1282/030) announces that it will be updated to integrate the principles of the AI Act, the AI Continent Action Plan and the Apply AI Strategy; no updated plan had been found by October 2026. Official page not readable during this review (bot challenge).",
+      "scope": "Federal government policy; regions run their own AI plans",
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "The federal government's AI roadmap, aimed at making Belgium a 'Smart AI Nation', organised around nine objectives (promoting trustworthy AI, ensuring cybersecurity, competitiveness and attractiveness, a data-driven economy and high-performance infrastructure, AI in healthcare, more sustainable mobility, environmental protection, lifelong learning, and better services for citizens), each with concrete action points set out in a detailed plan document. Implementation at federal level is supported by a joint steering committee of FPS BOSA and FPS Economy.",
+      "ai_governance_relevance": "Belgium's federal AI strategy.",
+      "source_url": "https://bosa.belgium.be/en/themes/digital-administration/digital-strategy-and-policy/national-convergence-plan-development",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://bosa.belgium.be/en/themes/digital-administration/digital-strategy-and-policy/national-convergence-plan-development",
+      "language": "fr",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-11",
+      "verification_level": "primary_source_located",
+      "metadata_gaps": [
+        "Official page and detailed plan PDF not readable (bot challenge on bosa.belgium.be; former PDF host offline): title wording, objectives and date taken from the search-engine index of the official page and should be re-checked against the full text",
+        "Number of action points not confirmed from the plan itself",
+        "Official PDF URL"
+      ],
+      "source_kind": "official_publication",
+      "evidence_reference": "Both fetch methods failed: curl (browser user agent, --max-time 60) and WebFetch both received the site's human-verification (bot) challenge page instead of the BOSA page, also for the bosa.d8.pr.belgium.be mirror and BOSA PDF paths; the detailed plan PDF formerly on the State Secretary's site (michel.belgium.be) no longer resolves. Approval date (Council of Ministers, 28 October 2022), nine objectives and the BOSA/FPS Economy steering committee taken from the search-engine index text of this BOSA page; plan still referred to as current, with an update announced, in the Minister's general policy note 'Numérique' of 24 January 2026 (Chamber DOC 56 1282/030, read with curl).",
+      "link_status": "inaccessible",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-2fed020d4013",
+      "organization_id": "o-49163251ef76",
+      "first_recorded": "2026-10-11",
+      "last_changed": "2022-10-28"
+    },
+    {
+      "official_title": "Les systèmes d'intelligence artificielle et le RGPD sous l'angle de la protection des données",
+      "english_title": "Artificial Intelligence Systems and the GDPR: A Data Protection Perspective (information brochure)",
+      "issuing_authority": "Data Protection Authority, General Secretariat",
+      "publisher_name": "Data Protection Authority",
+      "authority_type": "data_protection_authority",
+      "categories": [
+        "data-privacy",
+        "risk-assurance",
+        "transparency"
+      ],
+      "legal_status": "regulatory_opinion",
+      "lifecycle": "published",
+      "publication_date": "2024-09-19",
+      "last_amended_date": "2024-12",
+      "current_status": "Information brochure of the APD/GBA General Secretariat, announced on the APD website on 19 September 2024 together with a new 'Artificial intelligence' theme page. The original English version and the French and Dutch translations now online are all marked 'version December 2024' (French: 'Traduction – Version décembre 2024'; Dutch title: 'Artificiële-intelligentiesystemen en de AVG: Een benadering vanuit gegevensbescherming'). Explanatory guidance; it does not create obligations.",
+      "summary": "Explains how the GDPR applies to AI systems that process personal data, alongside the requirements of the EU AI Act (in force 1 August 2024), for legal professionals, data protection officers, technical staff and controllers and processors developing or deploying AI. It covers the AI-system definition, lawfulness, fairness and transparency, purpose limitation and data minimisation, accuracy, storage limitation, automated decision-making, security, data-subject rights and accountability, and translates them into 'user stories' as a practical compliance checklist for AI systems.",
+      "language": "fr",
+      "source_url": "https://www.autoriteprotectiondonnees.be/publications/brochure-d-information-sur-les-systemes-d-intelligence-artificielle-et-le-rgpd.pdf",
+      "official_pdf_url": "https://www.autoriteprotectiondonnees.be/publications/brochure-d-information-sur-les-systemes-d-intelligence-artificielle-et-le-rgpd.pdf",
+      "official_webpage_url": "https://www.autoriteprotectiondonnees.be/professionnel/themes/intelligence-artificielle",
+      "source_kind": "official_document",
+      "verification_level": "reviewed_primary_metadata",
+      "evidence_reference": "curl (browser user agent, --max-time 60): French PDF (24 pp.) read with pdftotext; English original and Dutch translation also downloaded; publication date from APD news item of 19 September 2024",
+      "ai_governance_relevance": "Data protection authority's main AI guidance for organisations developing or deploying AI in Belgium.",
+      "jurisdiction_id": "BEL",
+      "id": "i-d935b5baef7b",
+      "source_id": "s-c9da0124a147",
+      "organization_id": "o-2d29fc5a6872",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "effective_date": null,
+      "scope": "Belgium (federal)",
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-11",
+      "metadata_gaps": [],
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "first_recorded": "2026-10-11",
+      "last_changed": "2024-12"
+    },
+    {
+      "official_title": "L'impact de l'intelligence artificielle sur la vie privée",
+      "english_title": "The Impact of Artificial Intelligence on Privacy (information brochure for citizens)",
+      "issuing_authority": "Data Protection Authority, General Secretariat",
+      "publisher_name": "Data Protection Authority",
+      "authority_type": "data_protection_authority",
+      "categories": [
+        "data-privacy",
+        "transparency"
+      ],
+      "legal_status": "regulatory_opinion",
+      "lifecycle": "published",
+      "publication_date": "2026-04-13",
+      "current_status": "Published on 13 April 2026 as the first publication of the APD's 'IA & Protection des données' ('AI & data protection') series; French version dated 'Avril 2026', also issued in Dutch ('De impact van artificiële intelligentie op privacy') and English. Builds on the December 2024 professional brochure. Awareness guidance; no binding effect.",
+      "summary": "Brochure for citizens who use or interact with AI systems, explaining what an AI system is (using the AI Act definition), how AI models differ from traditional automation, the main application domains and the data-processing activities across the AI life cycle. It sets out the privacy risks AI poses to individuals, points of attention when sharing data with AI tools, and the GDPR rights (access, rectification, erasure, objection, rights on automated decisions) with practical steps for exercising them.",
+      "language": "fr",
+      "source_url": "https://www.autoriteprotectiondonnees.be/publications/l-impact-de-l-intelligence-artificielle-sur-la-vie-privee.pdf",
+      "official_pdf_url": "https://www.autoriteprotectiondonnees.be/publications/l-impact-de-l-intelligence-artificielle-sur-la-vie-privee.pdf",
+      "official_webpage_url": "https://www.autoriteprotectiondonnees.be/citoyen/actualites/2026/04/13/serie-ia-protection-des-donnees---l-impact-de-l-intelligence-artificielle-sur-la-vie-privee",
+      "source_kind": "official_document",
+      "verification_level": "reviewed_primary_metadata",
+      "related_instruments": [
+        "i-d935b5baef7b"
+      ],
+      "evidence_reference": "curl (browser user agent, --max-time 60): French PDF (19 pp.) read with pdftotext; Dutch version checked; APD news item of 13 April 2026 read",
+      "ai_governance_relevance": "Data protection authority's AI guidance for the public.",
+      "jurisdiction_id": "BEL",
+      "id": "i-cbc223abd084",
+      "source_id": "s-04dcef287936",
+      "organization_id": "o-2d29fc5a6872",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Belgium (federal)",
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-11",
+      "metadata_gaps": [],
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "first_recorded": "2026-10-11",
+      "last_changed": "2026-04-13"
+    },
+    {
+      "official_title": "Décision 168/2023 du 19 décembre 2023 de la Chambre Contentieuse (DOS-2023-02429)",
+      "english_title": "Litigation Chamber Decision 168/2023 of 19 December 2023: automated suspension of a customer account based on a credit-agency payment profile",
+      "issuing_authority": "Data Protection Authority, Litigation Chamber",
+      "publisher_name": "Data Protection Authority",
+      "authority_type": "data_protection_authority",
+      "categories": [
+        "data-privacy",
+        "transparency"
+      ],
+      "legal_status": "regulatory_opinion",
+      "lifecycle": "published",
+      "publication_date": "2023-12-19",
+      "current_status": "Decision (order under the simplified procedure, Article 95 §1 of the Act of 3 December 2017) of the Litigation Chamber; appeal possible to the Market Court within 30 days of notification. Published in French; the file on the APD site is named 'bevel-nr.-168-2023.pdf'. No later appeal ruling was found in this review.",
+      "summary": "On a complaint against a car-sharing platform that automatically suspended a user's account because a Dutch credit agency rated his payment profile as risky, the Litigation Chamber found that the platform had taken an automated decision falling under Article 22 GDPR as interpreted in CJEU SCHUFA (C-634/21). It ordered the platform to comply with the access and erasure requests within 30 days, including information on the logic behind the automated decision, and issued a warning on the compliance of the processing leading to automatic suspension with Articles 5, 6 and 22 GDPR (human intervention, the right to contest, a lawful basis).",
+      "language": "fr",
+      "source_url": "https://www.autoriteprotectiondonnees.be/publications/bevel-nr.-168-2023.pdf",
+      "official_pdf_url": "https://www.autoriteprotectiondonnees.be/publications/bevel-nr.-168-2023.pdf",
+      "source_kind": "official_document",
+      "verification_level": "reviewed_primary_metadata",
+      "evidence_reference": "curl (browser user agent, --max-time 60): decision PDF (8 pp.) read with pdftotext",
+      "ai_governance_relevance": "Belgian DPA enforcement on automated decision-making (Article 22 GDPR).",
+      "jurisdiction_id": "BEL",
+      "id": "i-c977143ad4b0",
+      "source_id": "s-e6fcb385bd65",
+      "organization_id": "o-2d29fc5a6872",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Belgium (federal)",
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "official_webpage_url": null,
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-11",
+      "metadata_gaps": [],
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "first_recorded": "2026-10-11",
+      "last_changed": "2023-12-19"
+    },
+    {
+      "official_title": "Communication FSMA_2026_15 du 15-06-26 — Impact des 'Frontier AI Systems' sur le risque cyber",
+      "english_title": "Communication FSMA_2026_15 of 15 June 2026 — Impact of frontier AI systems on cyber risk",
+      "issuing_authority": "Financial Services and Markets Authority",
+      "publisher_name": "Financial Services and Markets Authority",
+      "authority_type": "regulator",
+      "categories": [
+        "sectoral",
+        "cyber-security",
+        "generative-ai"
+      ],
+      "legal_status": "regulatory_opinion",
+      "lifecycle": "published",
+      "publication_date": "2026-06-15",
+      "sectors": [
+        "finance"
+      ],
+      "current_status": "FSMA communication published 15 June 2026 in French, Dutch ('Mededeling FSMA_2026_15 van 15-06-26 — Impact van 'Frontier AI Systems' op het cyberrisico') and English. Supervisory expectations addressed primarily to entities subject to DORA; the FSMA invites other financial entities to apply them.",
+      "summary": "Warns firms supervised by the FSMA that frontier AI models able to find and exploit software vulnerabilities at industrial scale sharply raise cyber risk, so that even small firms must revise upwards the likelihood and impact of an attack and shorten patching cycles. It sets out measures under the DORA Regulation in four groups (identify ICT assets; protect them through scanning, patching, access control, backups and network segmentation; detect and respond to incidents; challenge ICT providers) and states that the FSMA expects all DORA entities to implement them swiftly, noting that AI can also be used defensively.",
+      "language": "fr",
+      "source_url": "https://www.fsma.be/sites/default/files/media/files/2026-06/fsma_2026_15_fr.pdf",
+      "official_pdf_url": "https://www.fsma.be/sites/default/files/media/files/2026-06/fsma_2026_15_fr.pdf",
+      "official_webpage_url": "https://www.fsma.be/en/news/frontier-ai-systems-and-cyber-risk",
+      "source_kind": "official_document",
+      "verification_level": "reviewed_primary_metadata",
+      "evidence_reference": "curl (browser user agent, --max-time 60): French, Dutch and English PDFs (4 pp.) read with pdftotext; FSMA news article of 15/06/2026 read",
+      "ai_governance_relevance": "Financial regulator's supervisory expectations on AI-driven cyber risk.",
+      "jurisdiction_id": "BEL",
+      "id": "i-42ac1ab6731b",
+      "source_id": "s-0e1b9c1d81e5",
+      "organization_id": "o-0574d8d61772",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "sectoral",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Belgium (federal)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-11",
+      "metadata_gaps": [],
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "first_recorded": "2026-10-11",
+      "last_changed": "2026-06-15"
+    },
+    {
+      "official_title": "NBN ISO/IEC 42001:2026 Information technology — Artificial intelligence — Management system (ISO/IEC 42001:2023)",
+      "english_title": "NBN ISO/IEC 42001:2026 Information technology — Artificial intelligence — Management system (Belgian adoption of ISO/IEC 42001:2023)",
+      "issuing_authority": "Bureau for Standardisation (NBN)",
+      "publisher_name": "Bureau for Standardisation",
+      "authority_type": "standards_body",
+      "categories": [
+        "standards",
+        "risk-assurance"
+      ],
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2026",
+      "current_status": "Listed as 'Active' on NBN's ISO/IEC 42001 page. The year is taken from the designation; the exact publication date could not be read because NBN's standards catalogue was not accessible to either fetch method. An earlier Belgian edition (NBN ISO/IEC 42001:2024) was seen in search results only and is not recorded. Belgian standards are voluntary unless a law makes them mandatory; NBN states that the standard does not by itself guarantee AI Act compliance.",
+      "summary": "Belgian edition of ISO/IEC 42001, the management-system standard for organisations that develop, supply or use AI-based products or services, setting requirements for establishing, implementing, maintaining and continually improving an AI management system. NBN presents it as a framework for risk and opportunity management and for transparent, responsible AI use, and as a basis for third-party certification.",
+      "language": "en",
+      "source_url": "https://www.nbn.be/en/management-systems/iso-iec-42001",
+      "official_webpage_url": "https://www.nbn.be/en/management-systems/iso-iec-42001",
+      "source_kind": "official_publication",
+      "verification_level": "primary_source_located",
+      "metadata_gaps": [
+        "Exact publication date (NBN catalogue entry not accessible: curl got HTTP 403 and WebFetch got HTTP 403)",
+        "Standard text not read (sold by NBN)"
+      ],
+      "evidence_reference": "curl (browser user agent, --max-time 60): NBN ISO/IEC 42001 page read; catalogue detail page refused by both curl and WebFetch",
+      "ai_governance_relevance": "Belgian national adoption of the international AI management-system standard.",
+      "jurisdiction_id": "BEL",
+      "id": "i-cd3979724d6f",
+      "source_id": "s-45b2676e03a2",
+      "organization_id": "o-5620ce3a50bf",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "standards",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Belgium (federal)",
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-11",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "first_recorded": "2026-10-11",
+      "last_changed": "2026"
+    },
+    {
+      "id": "i-0c5f0d8fe973",
+      "jurisdiction_id": "BEL",
+      "official_title": "Principedocument Vlaamse AI-strategie",
+      "english_title": "Principles Document of the Flemish AI Strategy",
+      "issuing_authority": "Digitaal Vlaanderen (AI Expertisecentrum), within the Stuurorgaan Vlaams Informatie- en ICT-beleid",
+      "publisher_name": "Flemish Government (Digitaal Vlaanderen)",
+      "authority_type": "subnational_government",
+      "government_level": "subnational",
+      "subnational_unit": "Flanders",
+      "categories": [
+        "ethics",
+        "public-sector",
+        "government-governance",
+        "strategy"
+      ],
+      "category": "ethics",
+      "subcategory": null,
+      "legal_status": "administrative_guideline",
+      "lifecycle": "published",
+      "publication_date": "2024-02-21",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Document dated 21.02.24 (footer). The Digitaal Vlaanderen 'Vlaamse AI-strategie' page (checked 11 Oct 2026) still lists it as the principles document that 'will be further embedded' in the Flemish AI strategy being prepared by the AI Expertisecentrum within the Stuurorgaan Vlaams Informatie- en ICT-beleid; no full Flemish AI strategy for government had been published there.",
+      "scope": "Flanders",
+      "sectors": [
+        "public administration"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Sets six guiding principles for the development and use of AI by Flemish and local governments in Flanders: democratic, trustworthy (eight conditions applied to every AI application), human-centred, AI awareness (every staff member understands AI's possibilities, limits and risks), correct data use and management, and sustainability. The principles were agreed with representatives of Flemish and local authorities within the Steering Committee for Flemish information and ICT policy and are to be embedded in the forthcoming Flemish AI strategy for government.",
+      "ai_governance_relevance": "Flemish government-wide AI principles for public-sector use of AI.",
+      "source_url": "https://assets.vlaanderen.be/image/upload/v1708532045/principedocument_-_210224bis_ntcxb8.pdf",
+      "official_pdf_url": "https://assets.vlaanderen.be/image/upload/v1708532045/principedocument_-_210224bis_ntcxb8.pdf",
+      "official_webpage_url": "https://www.vlaanderen.be/digitaal-vlaanderen/vlaamse-digitale-strategie/vlaamse-ai-strategie",
+      "language": "nl",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-11",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "bel-deep-review-B4-2026-10-11",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-04087fea550f",
+      "organization_id": "o-ab7f3dd6c33e",
+      "first_recorded": "2026-10-11",
+      "last_changed": null
+    },
+    {
+      "id": "i-2eb16637056d",
+      "jurisdiction_id": "BEL",
+      "official_title": "Richtlijnen voor het gebruik van publiek toegankelijke generatieve AI",
+      "english_title": "Guidelines for the use of publicly accessible generative AI (Flemish Government)",
+      "issuing_authority": "Digitaal Vlaanderen (AI Expertisecentrum)",
+      "publisher_name": "Flemish Government (Digitaal Vlaanderen)",
+      "authority_type": "subnational_government",
+      "government_level": "subnational",
+      "subnational_unit": "Flanders",
+      "categories": [
+        "generative-ai",
+        "public-sector",
+        "data-privacy",
+        "risk-assurance"
+      ],
+      "category": "generative-ai",
+      "subcategory": null,
+      "legal_status": "administrative_guideline",
+      "lifecycle": "published",
+      "publication_date": "2025-02",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Current version 'Versie februari 2025' (linked on the Digitaal Vlaanderen AI-strategy page as of 11 Oct 2026). An earlier version of the same guidelines was published in February 2024 (earlier PDF on the same asset host); the 2025 version states that DeepSeek is 'op dit moment (februari 2025)' not suitable for professional use. A one-page infographic 'Richtlijnen voor gebruik van generatieve AI bij de Vlaamse overheid' summarises them.",
+      "scope": "Flanders",
+      "sectors": [
+        "public administration"
+      ],
+      "technology_scope": [
+        "AI",
+        "generative AI"
+      ],
+      "summary": "Provisional guidelines for staff of the Flemish government on using publicly accessible generative AI tools: explains generative AI and its risks, limits use to cases where risks can be managed, and sets rules such as never sharing privacy-sensitive or business-critical information, double-checking output, adding own expertise, being transparent about AI use, separating professional and personal accounts and weighing environmental impact. It gives examples of appropriate and inappropriate use, recommends Microsoft Copilot with enterprise data protection, and gives prompting tips; it implements the 'AI awareness' principle of the Flemish AI principles.",
+      "ai_governance_relevance": "Generative-AI use rules for Flemish public administration staff.",
+      "source_url": "https://assets.vlaanderen.be/image/upload/v1739459827/Richtlijnen_voor_het_gebruik_van_publiek_toegankelijke_generatieve_AI_10_mei_24_gfdemm.pdf",
+      "official_pdf_url": "https://assets.vlaanderen.be/image/upload/v1739459827/Richtlijnen_voor_het_gebruik_van_publiek_toegankelijke_generatieve_AI_10_mei_24_gfdemm.pdf",
+      "official_webpage_url": "https://www.vlaanderen.be/digitaal-vlaanderen/vlaamse-digitale-strategie/vlaamse-ai-strategie",
+      "language": "nl",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-11",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "exact day of publication not stated (month only)"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "bel-deep-review-B4-2026-10-11",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-ab71e14785ab",
+      "organization_id": "o-ab7f3dd6c33e",
+      "first_recorded": "2026-10-11",
+      "last_changed": null
+    },
+    {
+      "id": "i-d78f591c7dbc",
+      "jurisdiction_id": "BEL",
+      "official_title": "Verantwoorde AI in het Vlaamse onderwijs. Een collaboratief proces van ontwikkeling tot gebruik. Visietekst",
+      "english_title": "Responsible AI in Flemish education: a collaborative process from development to use (vision text)",
+      "issuing_authority": "Departement Onderwijs en Vorming (Kenniscentrum Digisprong), with the Kenniscentrum Data & Maatschappij",
+      "publisher_name": "Flemish Government (Department of Education and Training)",
+      "authority_type": "subnational_government",
+      "government_level": "subnational",
+      "subnational_unit": "Flanders",
+      "categories": [
+        "sectoral",
+        "ethics"
+      ],
+      "category": "sectoral",
+      "subcategory": null,
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2023-12",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Colophon: 'Datum van uitgave: December 2023', depot number D/2023/3241/459, responsible publisher the secretary-general of the Department of Education and Training. The vlaanderen.be publication page gives 'Publicatiedatum Juni 2024' (online publication); the colophon date is recorded. An English version ('Responsible AI in Flemish education') is also published. The text states it is a shared position of an advisory council and that member organisations may develop their own differing visions.",
+      "scope": "Flanders",
+      "sectors": [
+        "education"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Vision text on responsible AI in Flemish education, developed by the Department of Education's Kenniscentrum Digisprong and the Kenniscentrum Data & Maatschappij with an advisory council of education actors. It sets basic conditions for balancing the opportunities of AI against its risks to learning, user privacy and teachers' professional autonomy across the development and use of AI in education, and places responsible AI within the wider digitalisation of education. It is a non-binding basis for further action.",
+      "ai_governance_relevance": "Flemish education-sector guidance on responsible AI.",
+      "source_url": "https://www.vlaanderen.be/publicaties/verantwoorde-ai-in-het-vlaamse-onderwijs-een-collaboratief-proces-van-ontwikkeling-tot-gebruik-visietekst",
+      "official_pdf_url": "https://publicaties.vlaanderen.be/view-file/67479",
+      "official_webpage_url": "https://www.vlaanderen.be/publicaties/verantwoorde-ai-in-het-vlaamse-onderwijs-een-collaboratief-proces-van-ontwikkeling-tot-gebruik-visietekst",
+      "language": "nl",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-11",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "exact day of publication not stated (month only)"
+      ],
+      "source_kind": "official_publication",
+      "evidence_reference": "bel-deep-review-B4-2026-10-11",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-e247a1e0d834",
+      "organization_id": "o-ab7f3dd6c33e",
+      "first_recorded": "2026-10-11",
+      "last_changed": null
+    },
+    {
+      "id": "i-5f15f6875ea7",
+      "jurisdiction_id": "BEL",
+      "official_title": "Vlaams Beleidsplan Artificiële Intelligentie",
+      "english_title": "Flemish Policy Plan on Artificial Intelligence",
+      "issuing_authority": "Flemish Government",
+      "publisher_name": "Flanders Innovation & Entrepreneurship (VLAIO)",
+      "authority_type": "subnational_government",
+      "government_level": "subnational",
+      "subnational_unit": "Flanders",
+      "categories": [
+        "strategy"
+      ],
+      "category": "strategy",
+      "subcategory": null,
+      "legal_status": "national_strategy",
+      "lifecycle": "adopted",
+      "publication_date": "2019-03-22",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Approved by the Flemish Government on 22 March 2019 according to the VLAIO page (reference VR 2019 2203 DOC.0318/1QUATER cited in VLAIO ICON documentation). The official text could not be opened in this review (VLAIO site refused both fetch methods); whether a later plan replaces it was not confirmed on an official source.",
+      "scope": "Flanders",
+      "sectors": [
+        "research",
+        "industry",
+        "economy"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Flemish Government AI policy plan with an annual budget of about EUR 32 million in three strands: strategic basic research (the AI Vlaanderen research programme), uptake of AI by companies (about EUR 15 million a year, implemented by VLAIO), and flanking measures on awareness, training and ethical framing. Details are taken from the VLAIO page description seen during search; the plan text itself was not read.",
+      "ai_governance_relevance": "Flanders' regional AI strategy.",
+      "source_url": "https://www.vlaio.be/nl/andere-doelgroepen/vlaams-beleidsplan-artificiele-intelligentie",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.vlaio.be/nl/andere-doelgroepen/vlaams-beleidsplan-artificiele-intelligentie",
+      "language": "nl",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-11",
+      "verification_level": "primary_source_located",
+      "metadata_gaps": [
+        "official plan text not read (HTTP 403 to curl and WebFetch)",
+        "publication_date is the Flemish Government approval date as described by VLAIO, not checked against the decision",
+        "current status / successor plan not confirmed"
+      ],
+      "source_kind": "official_publication",
+      "evidence_reference": "bel-deep-review-B4-2026-10-11",
+      "link_status": "inaccessible",
+      "document_access_type": "original_government_document",
+      "source_id": "s-94f23544e356",
+      "organization_id": "o-ab7f3dd6c33e",
+      "first_recorded": "2026-10-11",
+      "last_changed": null
+    },
+    {
+      "id": "i-4a26493f9ee0",
+      "jurisdiction_id": "BEL",
+      "official_title": "Digital Wallonia 2025-2029 – Stratégie numérique de la Wallonie",
+      "english_title": "Digital Wallonia 2025-2029 – Digital Strategy of Wallonia",
+      "issuing_authority": "Walloon Government (coordinated by the Agence du Numérique)",
+      "publisher_name": "Agence du Numérique (Walloon Region)",
+      "authority_type": "subnational_government",
+      "government_level": "subnational",
+      "subnational_unit": "Wallonia",
+      "categories": [
+        "strategy",
+        "public-sector",
+        "cyber-security"
+      ],
+      "category": "strategy",
+      "subcategory": null,
+      "legal_status": "national_strategy",
+      "lifecycle": "adopted",
+      "publication_date": "2025-10-23",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Adopted by the Walloon Government on 23 October 2025 ('Le 23 octobre 2025, le Gouvernement Wallon a adopté la version 2025-2029 de Digital Wallonia'), replacing the earlier versions of the Digital Wallonia strategy (launched December 2015, updated 2018 and 2022). Published as web pages on digitalwallonia.be (one page per priority); no single PDF found. Current as of October 2026.",
+      "scope": "Wallonia",
+      "sectors": [
+        "economy",
+        "public administration",
+        "education"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Wallonia's digital strategy for 2025-2029, adopted by the Walloon Government, with six priorities aligned with the EU Digital Decade, one of which is artificial intelligence. The AI priority sets actions for an AI programme for economic actors (experts catalogue, pooled financing and support), linking companies with AI research, a regional AI skills programme for businesses and public services, a roadmap to guide companies and public bodies in complying with the AI Act and other EU rules, and deployment of AI in regional and local public services as part of administrative simplification. The Agence du Numérique coordinates governance and evaluation under the Government's authority.",
+      "ai_governance_relevance": "Wallonia's current regional strategy with a dedicated AI priority (successor framework to DigitalWallonia4.ai).",
+      "source_url": "https://www.digitalwallonia.be/fr/publications/strategie-digital-wallonia-2025-2029/",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.digitalwallonia.be/fr/publications/strategie-digital-wallonia-2025-2029-intelligence-artificielle/",
+      "language": "fr",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-11",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_publication",
+      "evidence_reference": "bel-deep-review-B4-2026-10-11",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-92f9c60620f7",
+      "organization_id": "o-c92104df87aa",
+      "first_recorded": "2026-10-11",
+      "last_changed": null
+    },
+    {
+      "id": "i-31edd84218fa",
+      "jurisdiction_id": "BEL",
+      "official_title": "IA générative – Guide de bonnes pratiques",
+      "english_title": "Generative AI – Good Practice Guide (Paradigm, Brussels-Capital Region)",
+      "issuing_authority": "Paradigm (public-interest body for digital transformation of the Brussels-Capital Region)",
+      "publisher_name": "Paradigm (Brussels-Capital Region)",
+      "authority_type": "subnational_government",
+      "government_level": "subnational",
+      "subnational_unit": "Brussels-Capital",
+      "categories": [
+        "generative-ai",
+        "public-sector",
+        "data-privacy"
+      ],
+      "category": "generative-ai",
+      "subcategory": null,
+      "legal_status": "administrative_guideline",
+      "lifecycle": "published",
+      "publication_date": "2025-09",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Guide states 'Date de publication : 09/2025'; announced on be.brussels on 22.09.2025 as Paradigm's internal good-practice guide, made available to others. Described as evolving; a separate security policy was announced. Dutch title not checked.",
+      "scope": "Brussels-Capital",
+      "sectors": [
+        "public administration"
+      ],
+      "technology_scope": [
+        "AI",
+        "generative AI"
+      ],
+      "summary": "Internal manual of Paradigm, the Brussels Region's digital-transformation body, on generative AI for general office use. It explains generative AI and its risks, sets rules on what to do and not do (e.g. never including confidential data in prompts, prohibiting use for certain specific content), lists the tools recommended internally, gives prompting good practices, and annexes settings for confidential data. It excludes business-specific applications, robotics and computer vision, which are handled separately.",
+      "ai_governance_relevance": "Brussels regional administration generative-AI use guidance.",
+      "source_url": "https://be.brussels/fr/propos-de-la-region/guide-de-bonnes-pratiques-sur-lia-generative",
+      "official_pdf_url": "https://admin.be.brussels/sites/default/files/2025-09/20250828_Guide_AI_template%20FR_version_PN.pdf",
+      "official_webpage_url": "https://be.brussels/fr/propos-de-la-region/guide-de-bonnes-pratiques-sur-lia-generative",
+      "language": "fr",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-11",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "exact day of publication of the guide not stated (month only)"
+      ],
+      "source_kind": "official_publication",
+      "evidence_reference": "bel-deep-review-B4-2026-10-11",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-19dce32a74cc",
+      "organization_id": "o-534c2b72eec2",
+      "first_recorded": "2026-10-11",
+      "last_changed": null
     }
   ],
   "organizations": [
     {
-      "id": "o-bdb3faa0b146",
+      "id": "o-49163251ef76",
       "jurisdiction_id": "BEL",
-      "name": "economie.fgov.be",
-      "publisher_name_verified": false,
-      "ai_governance_role": "Publisher of listed official material; complete institutional mandate and statutory responsibilities require review.",
-      "source_url": "https://economie.fgov.be/fr/themes/line/intelligence-artificielle/reglement-sur-lintelligence",
-      "authority_type": null,
-      "government_level": null
+      "name": "Federal Government of Belgium",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Federal executive (Council of Ministers). Adopted the National Convergence Plan for the Development of AI (28 October 2022); the Minister of Public Action and Modernisation, in charge of Digital Affairs, launched the federal Charter for the responsible use of AI in public services (July 2025) and announced a 2026 bill designating the national AI Act authorities.",
+      "source_url": "https://www.belgium.be/fr",
+      "authority_type": "government",
+      "government_level": "national"
+    },
+    {
+      "id": "o-2d29fc5a6872",
+      "jurisdiction_id": "BEL",
+      "name": "Data Protection Authority",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Belgian GDPR supervisory authority (Autorité de protection des données / Gegevensbeschermingsautoriteit), set up by the Act of 3 December 2017. Its General Secretariat publishes AI and data-protection guidance (2024 professional brochure on AI systems and the GDPR; 2026 'AI & data protection' series for citizens) and its Litigation Chamber decides complaints, including on automated decision-making under Article 22 GDPR.",
+      "source_url": "https://www.autoriteprotectiondonnees.be/",
+      "authority_type": "data_protection_authority",
+      "government_level": "national"
+    },
+    {
+      "id": "o-0574d8d61772",
+      "jurisdiction_id": "BEL",
+      "name": "Financial Services and Markets Authority",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Belgian conduct-of-business and financial-markets supervisor (FSMA). Issues communications to supervised firms; in June 2026 published communication FSMA_2026_15 on the cyber-risk impact of frontier AI systems for entities under DORA.",
+      "source_url": "https://www.fsma.be/",
+      "authority_type": "regulator",
+      "government_level": "national"
+    },
+    {
+      "id": "o-5620ce3a50bf",
+      "jurisdiction_id": "BEL",
+      "name": "Bureau for Standardisation",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Belgian national standards body (NBN), a public-interest body under the FPS Economy; publishes Belgian adoptions of European and international standards, including ISO/IEC 42001 on AI management systems.",
+      "source_url": "https://www.nbn.be/",
+      "authority_type": "standards_body",
+      "government_level": "national"
+    },
+    {
+      "id": "o-ab7f3dd6c33e",
+      "jurisdiction_id": "BEL",
+      "name": "Flemish Government",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Government of the Flemish Region and Community; approved the 2019 Flemish AI policy plan. Its agency Digitaal Vlaanderen (AI Expertisecentrum) issues AI principles and generative-AI guidelines for governments in Flanders; the Department of Education and Training (Kenniscentrum Digisprong) issues guidance on AI in education.",
+      "source_url": "https://www.vlaanderen.be/",
+      "authority_type": "subnational_government",
+      "government_level": "subnational",
+      "subnational_unit": "Flanders"
+    },
+    {
+      "id": "o-c92104df87aa",
+      "jurisdiction_id": "BEL",
+      "name": "Walloon Government",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Government of the Walloon Region; adopted the Digital Wallonia 2025-2029 digital strategy (with an AI priority) on 23 October 2025; the Agence du Numérique coordinates its implementation.",
+      "source_url": "https://www.wallonie.be/",
+      "authority_type": "subnational_government",
+      "government_level": "subnational",
+      "subnational_unit": "Wallonia"
+    },
+    {
+      "id": "o-534c2b72eec2",
+      "jurisdiction_id": "BEL",
+      "name": "Paradigm (Brussels-Capital Region)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Public-interest body for digital transformation of the Brussels-Capital Region; publishes the Region's internal good-practice guide on generative AI.",
+      "source_url": "https://paradigm.brussels/",
+      "authority_type": "subnational_government",
+      "government_level": "subnational",
+      "subnational_unit": "Brussels-Capital"
     }
   ],
   "sources": [
     {
-      "id": "s-c02803f79cf6",
-      "url": "https://economie.fgov.be/fr/themes/line/intelligence-artificielle/reglement-sur-lintelligence",
+      "id": "s-64a7c71c3d36",
+      "url": "https://www.ejustice.just.fgov.be/eli/loi/2018/07/30/2018040581/justel",
       "jurisdiction_ids": [
         "BEL"
       ],
       "source_institutions": [
-        "economie.fgov.be"
+        "FPS Justice (Moniteur belge / Belgisch Staatsblad)"
       ],
       "instrument_ids": [
-        "i-229a2f905fcb"
+        "i-d0260dda6927"
       ],
       "categories_reviewed": [
-        "government-governance"
+        "data-privacy",
+        "binding-law"
       ],
-      "date_reviewed": "2026-10-06",
-      "checked_date": "2026-10-06",
-      "check_method": "GET; first 1 MiB; 14-second timeout",
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "Justel consolidated text (ejustice.just.fgov.be ELI page) read with WebFetch: header (promulgation 30 July 2018, publication 5 September 2018, NUMAC 2018040581, entry into force 5 September 2018), Title 2 scope and articles 34-35 quoted. curl (browser user agent, --max-time 60) received only the site's bot-challenge page.",
       "http_status": 200,
-      "final_url": "https://economie.fgov.be/fr/themes/line/intelligence-artificielle/reglement-sur-lintelligence",
+      "final_url": "https://www.ejustice.just.fgov.be/eli/loi/2018/07/30/2018040581/justel",
       "link_status": "reachable",
-      "page_title": "Règlement sur l’intelligence artificielle | SPF Economie",
+      "page_title": "Loi relative à la protection des personnes physiques à l'égard des traitements de données à caractère personnel (Justel)",
+      "document_language": "fr",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-75ecc084fdf8",
+      "url": "https://www.ejustice.just.fgov.be/eli/loi/2022/10/03/2022206360/justel",
+      "jurisdiction_ids": [
+        "BEL"
+      ],
+      "source_institutions": [
+        "FPS Justice (Moniteur belge / Belgisch Staatsblad)"
+      ],
+      "instrument_ids": [
+        "i-7a641768a20b"
+      ],
+      "categories_reviewed": [
+        "binding-law",
+        "sectoral"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "Justel consolidated text read with WebFetch: title, publication date 10 November 2022, entry into force 20 November 2022, article 15 (inserting art. 337/3 Programme Law 2006) with both 'algorithme' passages quoted, article 18 (chapter 4 section 1 from 1 January 2023). Found through a Moniteur belge full-text search ('algorithmes' + 'travailleurs' + 'plateforme'). curl not usable (bot-challenge page on ejustice).",
+      "http_status": 200,
+      "final_url": "https://www.ejustice.just.fgov.be/eli/loi/2022/10/03/2022206360/justel",
+      "link_status": "reachable",
+      "page_title": "Loi portant des dispositions diverses relatives au travail (Justel)",
+      "document_language": "fr",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-c6b07ea80bd5",
+      "url": "https://www.ejustice.just.fgov.be/cgi/article_body.pl?language=fr&caller=summary&pub_date=2026-09-21&numac=2026006656",
+      "jurisdiction_ids": [
+        "BEL"
+      ],
+      "source_institutions": [
+        "FPS Justice (Moniteur belge / Belgisch Staatsblad)"
+      ],
+      "instrument_ids": [
+        "i-3fcfe22fe3ad"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "binding-law",
+        "ethics"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "Moniteur belge text page (ejustice article_body, NUMAC 2026006656) read with WebFetch: title, signature date, articles 1-3 of the decree, preamble legal basis, and code articles 5, 43, 44, 45 (AI provisions) checked. Found through a Moniteur belge full-text search for 'intelligence artificielle'. curl received only the site's bot-challenge page; the ELI URL /eli/arrete/2026/07/20/2026006656/moniteur returned 404.",
+      "http_status": 200,
+      "final_url": "https://www.ejustice.just.fgov.be/cgi/article_body.pl?language=fr&caller=summary&pub_date=2026-09-21&numac=2026006656",
+      "link_status": "reachable",
+      "page_title": "Arrêté royal portant approbation du code de déontologie de l'Institut professionnel des agents immobiliers (Moniteur belge)",
+      "document_language": "fr",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-f7c142fa60a8",
+      "url": "https://socialsecurity.belgium.be/fr/charte-ia",
+      "jurisdiction_ids": [
+        "BEL"
+      ],
+      "source_institutions": [
+        "FPS Social Security",
+        "Federal Government of Belgium"
+      ],
+      "instrument_ids": [
+        "i-914f7ff10c52"
+      ],
+      "categories_reviewed": [
+        "public-sector",
+        "ethics",
+        "risk-assurance",
+        "transparency",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser user agent, --max-time 60): FPS Social Security page 'Engagement pour une IA éthique dans les services publics' read (links 'Téléchargez la charte IA - 11/07/25'); French PDF (8 pp.) downloaded and read with pdftotext, including signature page dated 11 July 2025 and Annex 2 list of adhering bodies; Dutch PDF title checked; FPS Social Security news item of 4 November 2025 read; Chamber general policy note 'Numérique' DOC 56 1282/030 (24 January 2026) read for status",
+      "http_status": 200,
+      "final_url": "https://socialsecurity.belgium.be/fr/charte-ia",
+      "link_status": "reachable",
+      "page_title": "Engagement pour une IA éthique dans les services publics",
       "document_language": "fr",
       "error": null,
       "content_type": "text/html; charset=UTF-8"
     },
     {
-      "id": "s-245768f66f1d",
-      "url": "https://economie.fgov.be/fr/themes/line/intelligence-artificielle/foire-aux-questions-concernant",
+      "id": "s-2fed020d4013",
+      "url": "https://bosa.belgium.be/en/themes/digital-administration/digital-strategy-and-policy/national-convergence-plan-development",
       "jurisdiction_ids": [
         "BEL"
       ],
       "source_institutions": [
-        "economie.fgov.be"
+        "FPS Policy and Support (BOSA)"
       ],
       "instrument_ids": [
-        "i-b66b081abc45"
+        "i-e3ca951f9c45"
       ],
       "categories_reviewed": [
-        "government-governance"
+        "strategy",
+        "government-governance",
+        "ethics"
       ],
-      "date_reviewed": "2026-10-06",
-      "checked_date": "2026-10-06",
-      "check_method": "GET; first 1 MiB; 14-second timeout",
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "Both fetch methods failed: curl (browser user agent, --max-time 60) and WebFetch both received the site's human-verification (bot) challenge page instead of the BOSA page, also for the bosa.d8.pr.belgium.be mirror and BOSA PDF paths; the detailed plan PDF formerly on the State Secretary's site (michel.belgium.be) no longer resolves. Approval date (Council of Ministers, 28 October 2022), nine objectives and the BOSA/FPS Economy steering committee taken from the search-engine index text of this BOSA page; plan still referred to as current, with an update announced, in the Minister's general policy note 'Numérique' of 24 January 2026 (Chamber DOC 56 1282/030, read with curl).",
       "http_status": 200,
-      "final_url": "https://economie.fgov.be/fr/themes/line/intelligence-artificielle/foire-aux-questions-concernant",
+      "final_url": "https://bosa.belgium.be/en/themes/digital-administration/digital-strategy-and-policy/national-convergence-plan-development",
+      "link_status": "inaccessible",
+      "page_title": null,
+      "document_language": "en",
+      "error": "Human-verification challenge page returned to both curl and WebFetch",
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-c9da0124a147",
+      "url": "https://www.autoriteprotectiondonnees.be/publications/brochure-d-information-sur-les-systemes-d-intelligence-artificielle-et-le-rgpd.pdf",
+      "jurisdiction_ids": [
+        "BEL"
+      ],
+      "source_institutions": [
+        "Data Protection Authority"
+      ],
+      "instrument_ids": [
+        "i-d935b5baef7b"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "risk-assurance",
+        "transparency"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser user agent, --max-time 60): PDF (24 pp.) downloaded from autoriteprotectiondonnees.be and read with pdftotext ('Traduction – Version décembre 2024'); English original (version December 2024) and Dutch translation compared; publication date from the APD news item 'L'APD publie une brochure informative et un dossier thématique dédiés à l'IA' of 19 Sep 2024",
+      "http_status": 200,
+      "final_url": "https://autoriteprotectiondonnees.be/publications/brochure-d-information-sur-les-systemes-d-intelligence-artificielle-et-le-rgpd.pdf",
       "link_status": "reachable",
-      "page_title": "Foire aux questions concernant l’intelligence artificielle, l’Artificial Intelligence Act de la Commission européenne, et les applications de ce dernier | SPF Economie",
+      "page_title": "Les systèmes d'intelligence artificielle et le RGPD — Sous l'angle de la protection des données",
       "document_language": "fr",
       "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-04dcef287936",
+      "url": "https://www.autoriteprotectiondonnees.be/publications/l-impact-de-l-intelligence-artificielle-sur-la-vie-privee.pdf",
+      "jurisdiction_ids": [
+        "BEL"
+      ],
+      "source_institutions": [
+        "Data Protection Authority"
+      ],
+      "instrument_ids": [
+        "i-cbc223abd084"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "transparency"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser user agent, --max-time 60): PDF (19 pp.) downloaded (www.dataprotectionauthority.be serves the same file) and read with pdftotext ('Version française - Avril 2026'); APD news item of 13 April 2026 read",
+      "http_status": 200,
+      "final_url": "https://www.autoriteprotectiondonnees.be/publications/l-impact-de-l-intelligence-artificielle-sur-la-vie-privee.pdf",
+      "link_status": "reachable",
+      "page_title": "L'impact de l'intelligence artificielle sur la vie privée",
+      "document_language": "fr",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-e6fcb385bd65",
+      "url": "https://www.autoriteprotectiondonnees.be/publications/bevel-nr.-168-2023.pdf",
+      "jurisdiction_ids": [
+        "BEL"
+      ],
+      "source_institutions": [
+        "Data Protection Authority"
+      ],
+      "instrument_ids": [
+        "i-c977143ad4b0"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "transparency"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser user agent, --max-time 60): PDF (8 pp.) downloaded from autoriteprotectiondonnees.be (same file also on gegevensbeschermingsautoriteit.be) and read with pdftotext",
+      "http_status": 200,
+      "final_url": "https://www.autoriteprotectiondonnees.be/publications/bevel-nr.-168-2023.pdf",
+      "link_status": "reachable",
+      "page_title": "Chambre Contentieuse — Décision 168/2023 du 19 décembre 2023",
+      "document_language": "fr",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-0e1b9c1d81e5",
+      "url": "https://www.fsma.be/sites/default/files/media/files/2026-06/fsma_2026_15_fr.pdf",
+      "jurisdiction_ids": [
+        "BEL"
+      ],
+      "source_institutions": [
+        "Financial Services and Markets Authority"
+      ],
+      "instrument_ids": [
+        "i-42ac1ab6731b"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "cyber-security",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser user agent, --max-time 60): French PDF (4 pp.) read with pdftotext; Dutch and English versions and the FSMA news article 'Frontier AI Systems and cyber risk' (15/06/2026) also read",
+      "http_status": 200,
+      "final_url": "https://www.fsma.be/sites/default/files/media/files/2026-06/fsma_2026_15_fr.pdf",
+      "link_status": "reachable",
+      "page_title": "Communication FSMA_2026_15 du 15-06-26 — Impact des 'Frontier AI Systems' sur le risque cyber",
+      "document_language": "fr",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-45b2676e03a2",
+      "url": "https://www.nbn.be/en/management-systems/iso-iec-42001",
+      "jurisdiction_ids": [
+        "BEL"
+      ],
+      "source_institutions": [
+        "Bureau for Standardisation"
+      ],
+      "instrument_ids": [
+        "i-cd3979724d6f"
+      ],
+      "categories_reviewed": [
+        "standards",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser user agent, --max-time 60): NBN page read (lists 'NBN ISO/IEC 42001:2026 Active'); the NBN catalogue detail page (app.nbn.be) returned HTTP 403 to curl and to WebFetch",
+      "http_status": 200,
+      "final_url": "https://www.nbn.be/en/management-systems/iso-iec-42001",
+      "link_status": "reachable",
+      "page_title": "ISO/IEC 42001 - AI management",
+      "document_language": "en",
+      "error": null,
       "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "id": "s-04087fea550f",
+      "url": "https://assets.vlaanderen.be/image/upload/v1708532045/principedocument_-_210224bis_ntcxb8.pdf",
+      "jurisdiction_ids": [
+        "BEL"
+      ],
+      "source_institutions": [
+        "Flemish Government"
+      ],
+      "instrument_ids": [
+        "i-0c5f0d8fe973"
+      ],
+      "categories_reviewed": [
+        "ethics",
+        "public-sector",
+        "government-governance",
+        "strategy"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser UA, --max-time 60): Digitaal Vlaanderen 'Vlaamse AI-strategie' page read; PDF (14 pp.) downloaded from the asset host linked on that page and read with pdftotext",
+      "http_status": 200,
+      "final_url": "https://assets.vlaanderen.be/image/upload/v1708532045/principedocument_-_210224bis_ntcxb8.pdf",
+      "link_status": "reachable",
+      "page_title": "Principedocument Vlaamse AI-strategie",
+      "document_language": "nl",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-ab71e14785ab",
+      "url": "https://assets.vlaanderen.be/image/upload/v1739459827/Richtlijnen_voor_het_gebruik_van_publiek_toegankelijke_generatieve_AI_10_mei_24_gfdemm.pdf",
+      "jurisdiction_ids": [
+        "BEL"
+      ],
+      "source_institutions": [
+        "Flemish Government"
+      ],
+      "instrument_ids": [
+        "i-2eb16637056d"
+      ],
+      "categories_reviewed": [
+        "generative-ai",
+        "public-sector",
+        "data-privacy",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser UA, --max-time 60): Digitaal Vlaanderen AI-strategy page read (lists 'Versie februari 2025'); 11-page PDF downloaded and read with pdftotext; earlier Feb 2024 version and infographic PDF also read",
+      "http_status": 200,
+      "final_url": "https://assets.vlaanderen.be/image/upload/v1739459827/Richtlijnen_voor_het_gebruik_van_publiek_toegankelijke_generatieve_AI_10_mei_24_gfdemm.pdf",
+      "link_status": "reachable",
+      "page_title": "Richtlijnen voor het gebruik van publiek toegankelijke generatieve AI",
+      "document_language": "nl",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-e247a1e0d834",
+      "url": "https://www.vlaanderen.be/publicaties/verantwoorde-ai-in-het-vlaamse-onderwijs-een-collaboratief-proces-van-ontwikkeling-tot-gebruik-visietekst",
+      "jurisdiction_ids": [
+        "BEL"
+      ],
+      "source_institutions": [
+        "Flemish Government"
+      ],
+      "instrument_ids": [
+        "i-d78f591c7dbc"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "ethics"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser UA, --max-time 60): vlaanderen.be publication page read; 23-page PDF (publicaties.vlaanderen.be/view-file/67479) downloaded and colophon read with pdftotext",
+      "http_status": 200,
+      "final_url": "https://www.vlaanderen.be/publicaties/verantwoorde-ai-in-het-vlaamse-onderwijs-een-collaboratief-proces-van-ontwikkeling-tot-gebruik-visietekst",
+      "link_status": "reachable",
+      "page_title": "Verantwoorde AI in het Vlaamse onderwijs",
+      "document_language": "nl",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-94f23544e356",
+      "url": "https://www.vlaio.be/nl/andere-doelgroepen/vlaams-beleidsplan-artificiele-intelligentie",
+      "jurisdiction_ids": [
+        "BEL"
+      ],
+      "source_institutions": [
+        "Flemish Government"
+      ],
+      "instrument_ids": [
+        "i-5f15f6875ea7"
+      ],
+      "categories_reviewed": [
+        "strategy"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser UA, --max-time 60) returned HTTP 403; WebFetch also returned HTTP 403; located via search results showing VLAIO page content",
+      "http_status": 403,
+      "final_url": "https://www.vlaio.be/nl/andere-doelgroepen/vlaams-beleidsplan-artificiele-intelligentie",
+      "link_status": "inaccessible",
+      "page_title": "Vlaams beleidsplan",
+      "document_language": "nl",
+      "error": "HTTP 403 to both curl and WebFetch",
+      "content_type": null
+    },
+    {
+      "id": "s-92f9c60620f7",
+      "url": "https://www.digitalwallonia.be/fr/publications/strategie-digital-wallonia-2025-2029/",
+      "jurisdiction_ids": [
+        "BEL"
+      ],
+      "source_institutions": [
+        "Walloon Government"
+      ],
+      "instrument_ids": [
+        "i-4a26493f9ee0"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "public-sector",
+        "cyber-security"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser UA, --max-time 60): strategy announcement page (published 23 Oct 2025), 2025-2029 overview page and AI-priority page on digitalwallonia.be (run by the Agence du Numérique, Walloon public agency) read",
+      "http_status": 200,
+      "final_url": "https://www.digitalwallonia.be/fr/publications/strategie-digital-wallonia-2025-2029/",
+      "link_status": "reachable",
+      "page_title": "Stratégie Digital Wallonia 2025-2029",
+      "document_language": "fr",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-19dce32a74cc",
+      "url": "https://be.brussels/fr/propos-de-la-region/guide-de-bonnes-pratiques-sur-lia-generative",
+      "jurisdiction_ids": [
+        "BEL"
+      ],
+      "source_institutions": [
+        "Paradigm (Brussels-Capital Region)"
+      ],
+      "instrument_ids": [
+        "i-31edd84218fa"
+      ],
+      "categories_reviewed": [
+        "generative-ai",
+        "public-sector",
+        "data-privacy"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser UA, --max-time 60): be.brussels page (published 22.09.2025) read; linked 19-page PDF on admin.be.brussels downloaded and read with pdftotext",
+      "http_status": 200,
+      "final_url": "https://be.brussels/fr/propos-de-la-region/guide-de-bonnes-pratiques-sur-lia-generative",
+      "link_status": "reachable",
+      "page_title": "Guide de bonnes pratiques sur l’IA générative | Région de Bruxelles-Capitale",
+      "document_language": "fr",
+      "error": null,
+      "content_type": "text/html"
     }
   ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "BEL",
     "country": "Belgium",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -217,56 +1414,860 @@
       "transparency"
     ],
     "categories_with_findings": [
-      "government-governance"
-    ],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
       "binding-law",
-      "strategy",
-      "government-governance",
-      "ethics",
-      "risk-assurance",
-      "public-sector",
-      "procurement",
       "cyber-security",
       "data-privacy",
-      "transparency",
+      "ethics",
+      "generative-ai",
+      "government-governance",
+      "public-sector",
+      "risk-assurance",
+      "sectoral",
       "standards",
+      "strategy",
+      "transparency"
+    ],
+    "categories_where_no_material_was_found": [
+      "procurement",
       "sandbox",
       "index-readiness",
-      "sectoral",
-      "generative-ai",
       "drafts",
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Belgium \"intelligence artificielle\" (stratégie OR réglementation OR éthique) government ministry official",
       "Belgium \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Belgium government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Belgium \"intelligence artificielle\" cybersecurity authority secure development safety guidelines",
-      "Belgium privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Belgium privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "Belgique loi mise en oeuvre règlement intelligence artificielle autorité de surveillance du marché projet de loi 2025 2026",
+      "wetsontwerp uitvoering AI-verordening markttoezichtautoriteit België Kamer 2026",
+      "lachambre.be projet de loi \"règlement (UE) 2024/1689\" intelligence artificielle",
+      "ejustice.just.fgov.be arrêté royal \"2024/1689\" intelligence artificielle désignation autorité IBPT",
+      "dekamer.be wetsvoorstel artificiële intelligentie 2025 deepfakes",
+      "nouveau Code pénal belge 2024 deepfake hypertrucage image générée intelligence artificielle voyeurisme diffusion non consentie",
+      "proposition de loi deepnude \"intelligence artificielle\" Chambre des représentants Belgique images sexuelles générées 2025",
+      "site:lachambre.be \"intelligence artificielle\" proposition de loi 2025 2026",
+      "site:lachambre.be \"artificiële intelligentie\" wetsontwerp 2026",
+      "Belgique transposition directive (UE) 2024/2831 travail via plateforme gestion algorithmique avant-projet de loi 2026",
+      "omzetting richtlijn platformwerk België voorontwerp van wet ministerraad 2026 algoritmisch management",
+      "news.belgium.be Conseil des ministres avant-projet de loi intelligence artificielle règlement IA autorités compétentes 2026",
+      "Matz \"AI Act\" projet de loi autorités compétentes IBPT Conseil des ministres 2026",
+      "Moniteur belge full-text search: \"intelligence artificielle\"",
+      "Moniteur belge full-text search: \"2024/1689\"",
+      "Moniteur belge full-text search: algorithmes + travailleurs + plateforme",
+      "Moniteur belge full-text search: \"prise de décision automatisée\" + \"prix personnalisé\"",
+      "Chamber of Representatives dossier scan, 56th legislature DOC 56 0001-1810 and 55th legislature DOC 55 0001-4100, titles/descriptors: intelligence artificielle, algorithm, hypertrucage, deepfake",
+      "economie.fgov.be \"Règlement sur l'intelligence artificielle\" autorité de surveillance du marché Belgique",
+      "plan national de convergence pour le développement de l'intelligence artificielle 2022 Belgique",
+      "\"convergentieplan\" artificiële intelligentie pdf bosa.belgium.be",
+      "BOSA richtlijnen verantwoord gebruik artificiële intelligentie federale overheid generatieve AI",
+      "Belgium federal government AI strategy 2025 Vanessa Matz artificial intelligence plan BOSA",
+      "\"intelligence artificielle\" administration fédérale lignes directrices utilisation BOSA \"IA générative\" agents fédéraux",
+      "site:bosa.belgium.be artificial intelligence guidelines federal administration",
+      "site:bosa.belgium.be intelligence artificielle IA",
+      "site:economie.fgov.be artificiële intelligentie AI-verordening",
+      "projet de loi mise en œuvre règlement intelligence artificielle Belgique autorité de surveillance du marché IBPT désignation 2026",
+      "wetsontwerp uitvoering AI-verordening België markttoezichtautoriteit BIPT aangewezen Kamer",
+      "charte utilisation responsable intelligence artificielle administration fédérale juillet 2025 BOSA 40 organisations",
+      "Comité consultatif d'éthique des données et de l'IA administration fédérale arrêté ministériel 2024 Moniteur belge",
+      "Defensie AI strategie Belgische Defensie artificiële intelligentie mil.be",
+      "Belgium new national AI strategy 2026 federal government Matz AI plan adopted Council of Ministers",
+      "news.belgium.be Ministerraad artificiële intelligentie 2025 federale overheid charter verantwoord gebruik AI",
+      "intelligence artificielle santé SPF Santé publique stratégie IA soins de santé 2025",
+      "SPF Justice intelligence artificielle justice stratégie numérique IA magistrats lignes directrices",
+      "\"charte\" IA ph.belgium.be SPF Sécurité sociale intelligence artificielle",
+      "\"Charter for the responsible use of artificial intelligence\" Belgian federal administration signed",
+      "SPF Sécurité sociale charte intelligence artificielle socialsecurity.belgium.be AI",
+      "FOD Sociale Zekerheid AI-charter artificiële intelligentie sociale zekerheid",
+      "site:socialsecurity.belgium.be intelligence artificielle charte",
+      "site:emploi.belgique.be intelligence artificielle",
+      "site:health.belgium.be OR riziv.fgov.be OR fagg.be artificiële intelligentie AI",
+      "site:mil.be artificial intelligence Defence strategy",
+      "site:mil.be artificiële intelligentie Defensie visie AI",
+      "site:diplomatie.belgium.be Belgium position lethal autonomous weapons artificial intelligence",
+      "eHealth plan d'action IA soins de santé Belgique 2025 Vandenbroucke",
+      "Belgique stratégie fédérale \"Apply AI\" santé secteurs prioritaires 2026",
+      "\"plan d'action\" \"intelligence artificielle\" soins de santé SPF Santé publique 2026",
+      "AI-actieplan gezondheidszorg FOD Volksgezondheid artificiële intelligentie zorg 2026",
+      "BOSA \"IA générative\" guide agents fédéraux ChatGPT recommandations",
+      "FOD BOSA generatieve AI richtlijnen federale ambtenaren ChatGPT gebruik",
+      "AI4Belgium coalition who runs BOSA website ai4belgium.be government",
+      "\"koninklijk besluit\" \"Raadgevend Comité\" ethiek data artificiële intelligentie federale overheid Staatsblad",
+      "\"arrêté royal\" \"comité consultatif d'éthique\" \"données et l'intelligence artificielle\"",
+      "\"4 octobre 2023\" arrêté royal comité consultatif éthique données intelligence artificielle",
+      "\"24 mai 2024\" arrêté royal comité de pilotage intelligence artificielle",
+      "\"Stuurcomité Artificiële Intelligentie\" koninklijk besluit 2024",
+      "site:ejustice.just.fgov.be comité consultatif éthique données intelligence artificielle arrêté royal",
+      "site:lachambre.be projet de loi \"règlement (UE) 2024/1689\" 2026 désignation autorités",
+      "SPF Emploi intelligence artificielle bien-être au travail guide employeurs IA",
+      "marchés publics intelligence artificielle clauses types guide achat IA administration fédérale",
+      "FOD Financiën artificiële intelligentie AI strategie datamining belastingcontrole",
+      "loi-programme décembre 2025 Point de contact central datamining intelligence artificielle SPF Finances",
+      "FOD Justitie artificiële intelligentie justitie AI magistraten richtlijn",
+      "Belgium federal administration AI register inventory AI systems BOSA AI4Gov",
+      "\"Smart AI Nation\" Belgium roadmap federal 2025 2026",
+      "site:lachambre.be note de politique générale Numérique intelligence artificielle stratégie IA administration fédérale",
+      "circulaire DeepSeek interdiction administrations fédérales Moniteur belge 19 novembre 2025",
+      "omzendbrief DeepSeek verbod federale overheidsdiensten Belgisch Staatsblad",
+      "\"generatieve AI\" federale overheid ambtenaren richtlijnen BOSA AI4Gov AI Lab",
+      "site:economie.fgov.be \"Règlement sur l'intelligence artificielle\"",
+      "site:economie.fgov.be AI Act autorités compétentes désignation IBPT autorité notifiante",
+      "autoriteprotectiondonnees.be intelligence artificielle brochure système d'IA RGPD",
+      "gegevensbeschermingsautoriteit artificiële intelligentie brochure AI-systemen AVG",
+      "autoriteprotectiondonnees.be \"intelligence artificielle\" série publications IA citoyen professionnel 2025 2026",
+      "APD site search: intelligence artificielle; règlement sur l'intelligence artificielle; AI Act; 2024/1689; système d'IA",
+      "GBA site search: artificiële intelligentie",
+      "Autorité de protection des données avis avant-projet de loi règlement intelligence artificielle autorités compétentes surveillance du marché Belgique",
+      "Chambre Contentieuse APD décision \"intelligence artificielle\" OR \"décision automatisée\" article 22 RGPD",
+      "Geschillenkamer GBA beslissing \"artificiële intelligentie\" OR \"geautomatiseerde besluitvorming\" artikel 22 AVG",
+      "\"Autorité de protection des données\" rôle règlement IA autorité de surveillance du marché article 74 Belgique",
+      "Belgium AI Act market surveillance authority designated BIPT law 2025 2026 national competent authorities",
+      "wet uitvoering AI-verordening België markttoezichtautoriteit BIPT aanmelding 2026 Belgisch Staatsblad artificiële intelligentie",
+      "BIPT opinion \"AI Act\" OR \"artificial intelligence\" capacity competent authority market surveillance bill (bipt.be)",
+      "IBPT avis intelligence artificielle règlement IA autorité compétente (bipt.be, ibpt.be)",
+      "BIPT site search: artificial intelligence; AI Act",
+      "fsma.be intelligence artificielle IA communication circulaire secteur financier",
+      "FSMA \"artificial intelligence\" OR \"AI Act\" news article (fsma.be)",
+      "FSMA intelligence artificielle conseil en investissement robo-advice communication OR étude OR enquête (fsma.be)",
+      "FSMA artificiële intelligentie mededeling OR studie OR verzekeringen AI-verordening toezicht (fsma.be)",
+      "nbb.be artificial intelligence supervisory expectations insurers banks circular AI",
+      "National Bank of Belgium artificial intelligence AI Act supervision financial institutions (nbb.be)",
+      "Banque nationale de Belgique communication NBB_2026 intelligence artificielle \"frontier\" OR \"IA\" circulaire",
+      "Nationale Bank van België mededeling artificiële intelligentie verzekeringsondernemingen kredietinstellingen verwachtingen (nbb.be)",
+      "NBB communication artificial intelligence frontier AI cyber risk 2026 financial institutions (nbb.be)",
+      "NBB circulars and communications list 2025-2026 (nbb.be/en/financial-supervision/news)",
+      "Unia intelligence artificielle discrimination algorithmes recommandations publication (unia.be)",
+      "Belgian Competition Authority artificial intelligence AI paper OR opinion OR priority (belgiancompetition.be)",
+      "AFMPS FAGG intelligence artificielle dispositifs médicaux logiciel IA (afmps.be, fagg.be)",
+      "NBN ISO/IEC 42001 artificial intelligence management system standard Belgium (nbn.be)",
+      "\"NBN ISO/IEC 42001:2026\" OR \"NBN EN ISO/IEC 42001\" publication date",
+      "\"Foire aux questions concernant l'intelligence artificielle\" SPF Economie AI Act",
+      "economie.fgov.be veelgestelde vragen artificiële intelligentie AI Act toepassingen",
+      "Vlaams Beleidsplan Artificiële Intelligentie 2019 vlaanderen.be",
+      "Digitaal Vlaanderen richtlijnen generatieve AI Vlaamse overheid",
+      "Région de Bruxelles-Capitale stratégie intelligence artificielle paradigm.brussels lignes directrices IA",
+      "Gouvernement wallon stratégie intelligence artificielle DigitalWallonia4.ai plan",
+      "Innoviris \"Stratégie Intelligence Artificielle 2024-2029\"",
+      "Digital Wallonia stratégie numérique 2025-2029 PDF intelligence artificielle Gouvernement wallon adopte",
+      "Fédération Wallonie-Bruxelles intelligence artificielle enseignement balises circulaire IA",
+      "onderwijs.vlaanderen.be artificiële intelligentie in het onderwijs richtlijnen scholen",
+      "digitalwallonia.be DigitalWallonia4.ai stratégie intelligence artificielle 2019 publication Gouvernement wallon",
+      "paradigm.brussels intelligence artificielle administrations régionales charte IA générative recommandations",
+      "Vlaamse Regering AI-strategie 2025 \"Vlaams AI\" actieplan beleidsplan artificiële intelligentie herzien",
+      "decreet \"artificiële intelligentie\" Vlaamse Codex Belgisch Staatsblad 2024 2025 algoritme overheid",
+      "décret wallon OR ordonnance bruxelloise \"intelligence artificielle\" Moniteur belge 2025 2026 autorité"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-11",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "EU MEMBERSHIP LAYER IMPLEMENTED; INSTRUMENT-SPECIFIC APPLICABILITY REQUIRES REVIEW",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: Backfill run 2026-10-11 in four parts (B1 federal law; B2 federal government incl. ministry-level search; B3 regulators and standards; B4 regions, 30-minute cap per PROTOCOL §6, finished in about 5 minutes). Run in parallel with DEU on separate branches. No interruption. The two earlier records were dropped after re-checking: i-229a2f905fcb (FPS Economy 'Règlement sur l'IA' page) and i-b66b081abc45 (FPS Economy AI Act FAQ) are undated explainers of the EU AI Act with no national content and pages now behind a bot check; both are leads. Access: bosa.belgium.be, economie.fgov.be, belgium.be, justice/finances.belgium.be and ai4belgium.be serve a bot challenge to curl and WebFetch; ejustice.just.fgov.be (Moniteur/Justel) worked through WebFetch only (B1) and its full-text search shows only the latest 30 hits; NBN catalogue 403. B1 opened every Chamber dossier of the 56th legislature to 8 Oct 2026. The National Convergence Plan (2022) is located-only (date and objectives from the BOSA page's search index; michel.belgium.be gone); its world event was not logged. NBN ISO/IEC 42001:2026 located-only (catalogue 403). The 2019 Flemish AI policy plan is located-only (vlaio.be 403). Regional legislation was searched on the web only. procurement: no material found. sandbox: no material found. index-readiness: no material found. drafts: no material found. international: no material found. historical: no material found.",
     "discovery_result_count": 13,
     "focused_result_count": 15
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-a0f778466fb4",
+      "date": "2026-10-11",
+      "recorded": "2026-10-11",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "BEL",
+      "instrument_id": "i-d0260dda6927",
+      "title": "Act of 30 July 2018 on the protection of natural persons with regard to the processing of personal data",
+      "detail": "Added to the radar (published 2018-09-05).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.ejustice.just.fgov.be/eli/loi/2018/07/30/2018040581/justel",
+      "needs_review": false
+    },
+    {
+      "id": "c-e5d5905b74db",
+      "date": "2026-10-11",
+      "recorded": "2026-10-11",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "BEL",
+      "instrument_id": "i-7a641768a20b",
+      "title": "Act of 3 October 2022 containing various provisions relating to work (platform economy chapter: presumption of employment for digital platform work)",
+      "detail": "Added to the radar (published 2022-11-10).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.ejustice.just.fgov.be/eli/loi/2022/10/03/2022206360/justel",
+      "needs_review": false
+    },
+    {
+      "id": "c-4c60409fb974",
+      "date": "2026-10-11",
+      "recorded": "2026-10-11",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "BEL",
+      "instrument_id": "i-3fcfe22fe3ad",
+      "title": "Royal Decree of 20 July 2026 approving the code of ethics of the Professional Institute of Real Estate Agents (including rules on the use of artificial intelligence)",
+      "detail": "Lifecycle recorded as in_force when added.",
+      "from": null,
+      "to": "in_force",
+      "source_url": "https://www.ejustice.just.fgov.be/cgi/article_body.pl?language=fr&caller=summary&pub_date=2026-09-21&numac=2026006656",
+      "needs_review": false
+    },
+    {
+      "id": "c-d6217da0da84",
+      "date": "2026-10-11",
+      "recorded": "2026-10-11",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "BEL",
+      "instrument_id": "i-3fcfe22fe3ad",
+      "title": "Royal Decree of 20 July 2026 approving the code of ethics of the Professional Institute of Real Estate Agents (including rules on the use of artificial intelligence)",
+      "detail": "Added to the radar (published 2026-09-21).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.ejustice.just.fgov.be/cgi/article_body.pl?language=fr&caller=summary&pub_date=2026-09-21&numac=2026006656",
+      "needs_review": false
+    },
+    {
+      "id": "c-890fcf3c9330",
+      "date": "2026-10-11",
+      "recorded": "2026-10-11",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "BEL",
+      "instrument_id": "i-914f7ff10c52",
+      "title": "Charter for the responsible use of artificial intelligence in public services in the provision of services to individuals, businesses and organisations",
+      "detail": "Added to the radar (published 2025-07-11).",
+      "from": null,
+      "to": null,
+      "source_url": "https://socialsecurity.belgium.be/fr/charte-ia",
+      "needs_review": false
+    },
+    {
+      "id": "c-0df8a3269df0",
+      "date": "2026-10-11",
+      "recorded": "2026-10-11",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "BEL",
+      "instrument_id": "i-e3ca951f9c45",
+      "title": "National Convergence Plan for the Development of Artificial Intelligence",
+      "detail": "Added to the radar (published 2022-10-28).",
+      "from": null,
+      "to": null,
+      "source_url": "https://bosa.belgium.be/en/themes/digital-administration/digital-strategy-and-policy/national-convergence-plan-development",
+      "needs_review": false
+    },
+    {
+      "id": "c-c0de275704a8",
+      "date": "2026-10-11",
+      "recorded": "2026-10-11",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "BEL",
+      "instrument_id": "i-d935b5baef7b",
+      "title": "Artificial Intelligence Systems and the GDPR: A Data Protection Perspective (information brochure)",
+      "detail": "Added to the radar (published 2024-09-19).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.autoriteprotectiondonnees.be/publications/brochure-d-information-sur-les-systemes-d-intelligence-artificielle-et-le-rgpd.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-72247caf0834",
+      "date": "2026-10-11",
+      "recorded": "2026-10-11",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "BEL",
+      "instrument_id": "i-cbc223abd084",
+      "title": "The Impact of Artificial Intelligence on Privacy (information brochure for citizens)",
+      "detail": "Added to the radar (published 2026-04-13).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.autoriteprotectiondonnees.be/publications/l-impact-de-l-intelligence-artificielle-sur-la-vie-privee.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-90330f1265a8",
+      "date": "2026-10-11",
+      "recorded": "2026-10-11",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "BEL",
+      "instrument_id": "i-c977143ad4b0",
+      "title": "Litigation Chamber Decision 168/2023 of 19 December 2023: automated suspension of a customer account based on a credit-agency payment profile",
+      "detail": "Added to the radar (published 2023-12-19).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.autoriteprotectiondonnees.be/publications/bevel-nr.-168-2023.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-1767d207ba76",
+      "date": "2026-10-11",
+      "recorded": "2026-10-11",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "BEL",
+      "instrument_id": "i-42ac1ab6731b",
+      "title": "Communication FSMA_2026_15 of 15 June 2026 — Impact of frontier AI systems on cyber risk",
+      "detail": "Added to the radar (published 2026-06-15).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.fsma.be/sites/default/files/media/files/2026-06/fsma_2026_15_fr.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-756382aba2d8",
+      "date": "2026-10-11",
+      "recorded": "2026-10-11",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "BEL",
+      "instrument_id": "i-cd3979724d6f",
+      "title": "NBN ISO/IEC 42001:2026 Information technology — Artificial intelligence — Management system (Belgian adoption of ISO/IEC 42001:2023)",
+      "detail": "Added to the radar (published 2026).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.nbn.be/en/management-systems/iso-iec-42001",
+      "needs_review": false
+    },
+    {
+      "id": "c-7d8ffc5e5b5f",
+      "date": "2026-10-11",
+      "recorded": "2026-10-11",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "BEL",
+      "instrument_id": "i-0c5f0d8fe973",
+      "title": "Principles Document of the Flemish AI Strategy",
+      "detail": "Added to the radar (published 2024-02-21).",
+      "from": null,
+      "to": null,
+      "source_url": "https://assets.vlaanderen.be/image/upload/v1708532045/principedocument_-_210224bis_ntcxb8.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-0c33df33531f",
+      "date": "2026-10-11",
+      "recorded": "2026-10-11",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "BEL",
+      "instrument_id": "i-2eb16637056d",
+      "title": "Guidelines for the use of publicly accessible generative AI (Flemish Government)",
+      "detail": "Added to the radar (published 2025-02).",
+      "from": null,
+      "to": null,
+      "source_url": "https://assets.vlaanderen.be/image/upload/v1739459827/Richtlijnen_voor_het_gebruik_van_publiek_toegankelijke_generatieve_AI_10_mei_24_gfdemm.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-ee7f6c046aac",
+      "date": "2026-10-11",
+      "recorded": "2026-10-11",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "BEL",
+      "instrument_id": "i-d78f591c7dbc",
+      "title": "Responsible AI in Flemish education: a collaborative process from development to use (vision text)",
+      "detail": "Added to the radar (published 2023-12).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.vlaanderen.be/publicaties/verantwoorde-ai-in-het-vlaamse-onderwijs-een-collaboratief-proces-van-ontwikkeling-tot-gebruik-visietekst",
+      "needs_review": false
+    },
+    {
+      "id": "c-d16beac52215",
+      "date": "2026-10-11",
+      "recorded": "2026-10-11",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "BEL",
+      "instrument_id": "i-5f15f6875ea7",
+      "title": "Flemish Policy Plan on Artificial Intelligence",
+      "detail": "Added to the radar (published 2019-03-22).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.vlaio.be/nl/andere-doelgroepen/vlaams-beleidsplan-artificiele-intelligentie",
+      "needs_review": false
+    },
+    {
+      "id": "c-a32bd39b5a4e",
+      "date": "2026-10-11",
+      "recorded": "2026-10-11",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "BEL",
+      "instrument_id": "i-4a26493f9ee0",
+      "title": "Digital Wallonia 2025-2029 – Digital Strategy of Wallonia",
+      "detail": "Added to the radar (published 2025-10-23).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.digitalwallonia.be/fr/publications/strategie-digital-wallonia-2025-2029/",
+      "needs_review": false
+    },
+    {
+      "id": "c-e201d28edf84",
+      "date": "2026-10-11",
+      "recorded": "2026-10-11",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "BEL",
+      "instrument_id": "i-31edd84218fa",
+      "title": "Generative AI – Good Practice Guide (Paradigm, Brussels-Capital Region)",
+      "detail": "Added to the radar (published 2025-09).",
+      "from": null,
+      "to": null,
+      "source_url": "https://be.brussels/fr/propos-de-la-region/guide-de-bonnes-pratiques-sur-lia-generative",
+      "needs_review": false
+    },
+    {
+      "id": "c-b65c51ef74ee",
+      "date": "2026-10-11",
+      "recorded": "2026-10-11",
+      "kind": "radar",
+      "type": "removed",
+      "jurisdiction_id": "BEL",
+      "instrument_id": "i-229a2f905fcb",
+      "title": "National guidance on the AI Act",
+      "detail": "Removed from the radar (not an official source, duplicate, or out of scope).",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-86d6ce18acdc",
+      "date": "2026-10-11",
+      "recorded": "2026-10-11",
+      "kind": "radar",
+      "type": "removed",
+      "jurisdiction_id": "BEL",
+      "instrument_id": "i-b66b081abc45",
+      "title": "AI Act and government AI applications: official FAQ",
+      "detail": "Removed from the radar (not an official source, duplicate, or out of scope).",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-d534ddcce91f",
+      "date": "2026-10-11",
+      "recorded": "2026-10-11",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "BEL",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 16 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-2a53e2d3b647",
+      "date": "2026-09-21",
+      "recorded": "2026-10-11",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "BEL",
+      "instrument_id": "i-3fcfe22fe3ad",
+      "title": "Royal decree approving real estate agents' code of ethics with AI rules published",
+      "detail": "Royal decree of 20 July 2026 published in the Moniteur belge (NUMAC 2026006656); code arts. 43-45 set rules on agents' use of AI systems; previous 2018 code repealed from 1 October 2026.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.ejustice.just.fgov.be/cgi/article_body.pl?language=fr&caller=summary&pub_date=2026-09-21&numac=2026006656",
+      "needs_review": false
+    },
+    {
+      "id": "c-2ebbb2402939",
+      "date": "2026-06-15",
+      "recorded": "2026-10-11",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "BEL",
+      "instrument_id": "i-42ac1ab6731b",
+      "title": "FSMA communication FSMA_2026_15 on frontier AI systems and cyber risk",
+      "detail": "Supervisory expectations for DORA entities on AI-driven cyber risk.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.fsma.be/en/news/frontier-ai-systems-and-cyber-risk",
+      "needs_review": false
+    },
+    {
+      "id": "c-f27047387868",
+      "date": "2026-04-13",
+      "recorded": "2026-10-11",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "BEL",
+      "instrument_id": "i-cbc223abd084",
+      "title": "Data Protection Authority publishes citizen brochure on the impact of AI on privacy",
+      "detail": "First publication of the APD's 'AI & data protection' series.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.autoriteprotectiondonnees.be/citoyen/actualites/2026/04/13/serie-ia-protection-des-donnees---l-impact-de-l-intelligence-artificielle-sur-la-vie-privee",
+      "needs_review": false
+    },
+    {
+      "id": "c-923ed6615bc9",
+      "date": "2025-10-23",
+      "recorded": "2026-10-11",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "BEL",
+      "instrument_id": "i-4a26493f9ee0",
+      "title": "Walloon Government adopts Digital Wallonia 2025-2029 (AI priority)",
+      "detail": "The Walloon Government adopted the 2025-2029 version of its digital strategy, with artificial intelligence as one of six priorities.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.digitalwallonia.be/fr/publications/strategie-digital-wallonia-2025-2029/",
+      "needs_review": false
+    },
+    {
+      "id": "c-4ee0f2861117",
+      "date": "2025-07-11",
+      "recorded": "2026-10-11",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "BEL",
+      "instrument_id": "i-914f7ff10c52",
+      "title": "Federal charter for responsible AI use in public services signed",
+      "detail": "Signed on 11 July 2025 by the Minister of Public Action and Modernisation (Digital) and the chairs of the three federal colleges; 40 federal public bodies adhere.",
+      "from": null,
+      "to": null,
+      "source_url": "https://socialsecurity.belgium.be/sites/default/files/content/docs/fr/publications/charte-ia-fr.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-77415a3caa08",
+      "date": "2024-09-19",
+      "recorded": "2026-10-11",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "BEL",
+      "instrument_id": "i-d935b5baef7b",
+      "title": "Data Protection Authority publishes information brochure on AI systems and the GDPR",
+      "detail": "APD General Secretariat brochure (English original, French and Dutch translations) and new AI theme page announced on the APD website.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.autoriteprotectiondonnees.be/citoyen/actualites/2024/09/19/l-apd-publie-une-brochure-informative-et-un-dossier-thematique-dedies-a-l-ia",
+      "needs_review": false
+    },
+    {
+      "id": "c-f5af6046cbb8",
+      "date": "2023-12-19",
+      "recorded": "2026-10-11",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "BEL",
+      "instrument_id": "i-c977143ad4b0",
+      "title": "APD Litigation Chamber decision 168/2023 on an automated account suspension (Article 22 GDPR)",
+      "detail": "Order to comply with access and erasure requests and warning on automated decision-making.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.autoriteprotectiondonnees.be/publications/bevel-nr.-168-2023.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-5a560f9c845f",
+      "date": "2023-01-01",
+      "recorded": "2026-10-11",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "BEL",
+      "instrument_id": "i-7a641768a20b",
+      "title": "Platform work presumption (art. 337/3 Programme Law 2006) applies",
+      "detail": "Chapter 4 section 1 'Economie de plateformes' of the Act of 3 October 2022 applies from 1 January 2023 (art. 18).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.ejustice.just.fgov.be/eli/loi/2022/10/03/2022206360/justel",
+      "needs_review": false
+    },
+    {
+      "id": "c-7fafbd71601a",
+      "date": "2022-11-10",
+      "recorded": "2026-10-11",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "BEL",
+      "instrument_id": "i-7a641768a20b",
+      "title": "Labour Act of 3 October 2022 published (platform work presumption)",
+      "detail": "Published in the Moniteur belge (NUMAC 2022206360); inserts art. 337/3 Programme Law 2006 referring to algorithmic organisation of platform work.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.ejustice.just.fgov.be/eli/loi/2022/10/03/2022206360/justel",
+      "needs_review": false
+    },
+    {
+      "id": "c-9dd8b86e90d8",
+      "date": "2018-09-05",
+      "recorded": "2026-10-11",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "BEL",
+      "instrument_id": "i-d0260dda6927",
+      "title": "Data protection Act of 30 July 2018 published",
+      "detail": "Published in the Moniteur belge (NUMAC 2018040581) and in force the same day; Title 2 art. 35 regulates solely automated decisions and profiling by criminal-justice authorities.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.ejustice.just.fgov.be/eli/loi/2018/07/30/2018040581/justel",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Projet de loi désignant les autorités nationales compétentes pour le règlement (UE) 2024/1689 sur l'intelligence artificielle (annoncé)",
+      "english_title": "Federal bill designating Belgium's national competent authorities under the EU AI Act (announced, not tabled)",
+      "issuing_authority": "Federal Government of Belgium (Minister for Digitalisation with the Minister for Economy; coordination FPS Economy)",
+      "note": "Status as of 11 October 2026: NOT enacted, NOT tabled. A scan of every Chamber dossier of the 56th legislature (DOC 56 0001-1810, to 8 October 2026) found no government bill implementing Regulation (EU) 2024/1689, and a Moniteur belge full-text search for '2024/1689' returned no federal designation act (only the royal decree of 6 April 2026 on the BIPT staff framework, NUMAC 2026002879, whose report to the King cites the BIPT's future 'contrôle et coordination' of the AI Act and adds AI-related posts). The Minister for Digitalisation's policy note (DOC 56 1282/030, 24 January 2026, https://www.lachambre.be/FLWB/PDF/56/1282/56K1282030.pdf) states that 'En 2026, un projet de loi sera soumis à la Chambre' to designate the competent authorities and allow sanctions; the BIPT policy note (DOC 56 1282/007, 26 January 2026) says the BIPT is preparing for a central and coordinating role as market surveillance authority and notifying authority. Senate written questions 8-19 (answer 16 January 2025) and 8-98 (answer 5 May 2025) say the FPS Economy coordinates implementation and a governance proposal was being prepared for political validation. No avant-projet text has been published officially. Record as binding law once the bill is tabled/adopted.",
+      "url": "https://www.lachambre.be/FLWB/PDF/56/1282/56K1282030.pdf",
+      "status": "announced; not tabled",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Proposition de loi insérant un nouvel article dans le Code d'instruction criminelle afin de mettre en oeuvre l'article 5, paragraphe 5, du Règlement (UE) 2024/1689 sur l'intelligence artificielle (DOC 56 0601)",
+      "english_title": "Private member's bill to authorise real-time remote biometric identification for law enforcement under Article 5(5) AI Act",
+      "issuing_authority": "Chamber of Representatives (filed by Paul Van Tigchelt, Open Vld)",
+      "note": "Filed 17 December 2024, taken into consideration 9 January 2025, sent to the Justice Committee; status 'PENDANT CHAMBRE' on 11 October 2026 (no committee report). Would authorise real-time remote biometric identification in publicly accessible spaces for law-enforcement purposes under the AI Act's strict conditions. Text: https://www.lachambre.be/flwb/pdf/56/0601/56K0601001.pdf",
+      "url": "https://www.lachambre.be/kvvcr/showpage.cfm?section=/flwb&language=fr&cfm=/site/wwwcfm/flwb/flwbn.cfm?legislist=legisnr&dossierID=0601&legislat=56",
+      "status": "pending in committee",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Proposition de loi modifiant le Code de droit économique et la loi du 29 février 2024 introduisant le livre II du Code pénal afin de renforcer la protection des ressemblances numériques de personnes physiques, en particulier contre les deepfakes et autres manipulations synthétiques (DOC 56 1540)",
+      "english_title": "Private member's bill on protection of digital likeness against deepfakes, including non-consensual sexual deepfakes",
+      "issuing_authority": "Chamber of Representatives (filed by Meyrem Almaci and others, Ecolo-Groen)",
+      "note": "Filed 13 May 2026, taken into consideration 21 May 2026, Economy Committee; pending. Creates a civil-law right over one's digital likeness and strengthens criminal law against applications designed to produce non-consensual sexual deepfakes. Note: the new Criminal Code Book II (law of 29 February 2024, NUMAC 2024002088; Justel shows the commencement article amended by the law of 30 March 2026 and a 1 September 2026 entry-into-force date, while the header shows 8 April 2026) contains no express provision on AI-generated or manipulated images (arts. 135-137 cover recording/dissemination of a person's nude images; checked on Justel). Text: https://www.lachambre.be/FLWB/PDF/56/1540/56K1540001.pdf",
+      "url": "https://www.lachambre.be/kvvcr/showpage.cfm?section=/flwb&language=fr&cfm=/site/wwwcfm/flwb/flwbn.cfm?legislist=legisnr&dossierID=1540&legislat=56",
+      "status": "pending",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Proposition de loi modifiant le Code de droit économique en ce qui concerne la protection contre les hypertrucages (DOC 56 1728)",
+      "english_title": "Private member's bill creating a neighbouring right against AI-made imitations of image and voice (deepfakes)",
+      "issuing_authority": "Chamber of Representatives (filed by Leentje Grillaert and Steven Matheï, cd&v)",
+      "note": "Filed 7 September 2026, taken into consideration 17 September 2026; discussed in the Economy Committee on 22 September 2026; Council of State opinion requested 24 September 2026; pending. Text: https://www.lachambre.be/FLWB/PDF/56/1728/56K1728001.pdf",
+      "url": "https://www.lachambre.be/kvvcr/showpage.cfm?section=/flwb&language=fr&cfm=/site/wwwcfm/flwb/flwbn.cfm?legislist=legisnr&dossierID=1728&legislat=56",
+      "status": "pending; Council of State opinion requested",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Proposition de loi modifiant la loi du 11 avril 1994 relative à la publicité de l'administration et la loi du 17 juin 2016 relative aux marchés publics, en vue de l'utilisation d'une intelligence artificielle sûre, transparente et européenne (DOC 56 1583)",
+      "english_title": "Private member's bill requiring public authorities to use transparent, controllable European AI (administrative transparency and public procurement)",
+      "issuing_authority": "Chamber of Representatives (filed by Nele Daenen and Axel Weydts, Vooruit)",
+      "note": "Filed 28 May 2026, taken into consideration 4 June 2026; discussed in the Economy Committee on 22 September 2026; Council of State opinion requested 24 September 2026; pending. Text: https://www.lachambre.be/FLWB/PDF/56/1583/56K1583001.pdf",
+      "url": "https://www.lachambre.be/kvvcr/showpage.cfm?section=/flwb&language=fr&cfm=/site/wwwcfm/flwb/flwbn.cfm?legislist=legisnr&dossierID=1583&legislat=56",
+      "status": "pending; Council of State opinion requested",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Proposition de loi modifiant le Code de droit économique en vue d'instaurer une présomption d'utilisation d'oeuvres culturelles par l'intelligence artificielle (DOC 56 1797)",
+      "english_title": "Private member's bill introducing a presumption that copyright works were used to train AI models",
+      "issuing_authority": "Chamber of Representatives (filed by Patrick Prévot and others, PS)",
+      "note": "Filed 7 October 2026, taken into consideration 8 October 2026, Economy Committee; pending. Text: https://www.lachambre.be/FLWB/PDF/56/1797/56K1797001.pdf",
+      "url": "https://www.lachambre.be/kvvcr/showpage.cfm?section=/flwb&language=fr&cfm=/site/wwwcfm/flwb/flwbn.cfm?legislist=legisnr&dossierID=1797&legislat=56",
+      "status": "pending",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Proposition de résolution en vue d'une politique proactive et d'une stratégie cohérente en matière d'utilisation d'algorithmes, de données et d'intelligence artificielle au travail (DOC 56 0417)",
+      "english_title": "Draft resolution on algorithms, data and AI at work",
+      "issuing_authority": "Chamber of Representatives (filed by Anja Vanrobaeys, Vooruit)",
+      "note": "Filed 18 October 2024 (re-filing of lapsed DOC 55 3155); discussed in the Social Affairs Committee on 11 March 2025; pending. Non-binding resolution.",
+      "url": "https://www.lachambre.be/kvvcr/showpage.cfm?section=/flwb&language=fr&cfm=/site/wwwcfm/flwb/flwbn.cfm?legislist=legisnr&dossierID=0417&legislat=56",
+      "status": "pending",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Transposition de la directive (UE) 2024/2831 relative à l'amélioration des conditions de travail dans le cadre du travail via une plateforme (gestion algorithmique)",
+      "english_title": "Transposition of the EU Platform Work Directive (algorithmic management)",
+      "issuing_authority": "Federal Government of Belgium (Minister of Employment)",
+      "note": "Transposition deadline 2 December 2026. No bill tabled in the Chamber by 8 October 2026 and no official draft text found; the self-employed status management committee (abc-cgg.be) issued opinion 2026/05 on the transposition. Record once a bill or law is published.",
+      "url": "https://www.abc-cgg.be/fr/publications/avis-202605-transposition-de-la-directive-europeenne-relative-lamelioration-des-conditions",
+      "status": "no official draft found",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Lapsed AI bills of the 55th legislature (DOC 55 0322, 55 1904, 55 1349, 55 2188, 55 3155)",
+      "english_title": "Lapsed AI-related bills and resolutions, 2019-2024",
+      "issuing_authority": "Chamber of Representatives",
+      "note": "All marked 'CADUQUE' (lapsed at the 2024 dissolution): 55K0322 bill to ban fully autonomous weapon systems (amending the law of 8 June 2006 on weapons); 55K1904 bill amending the law of 11 April 1994 on administrative transparency to require transparency on public authorities' use of algorithms; 55K1349 resolution for a three-year moratorium on facial-recognition software on security cameras; 55K2188 resolution for a Belgian data-ethics advisory committee; 55K3155 resolution on algorithms and AI at work. No AI-specific law was adopted in the 55th legislature (scan of all Chamber dossiers).",
+      "url": "https://www.lachambre.be/kvvcr/showpage.cfm?section=/flwb&language=fr&cfm=/site/wwwcfm/flwb/flwbn.cfm?legislist=legisnr&dossierID=1904&legislat=55",
+      "status": "lapsed",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Circulaire interdisant l'usage du système d'intelligence artificielle DeepSeek dans les administrations publiques fédérales",
+      "english_title": "Circular prohibiting the use of the DeepSeek AI system in federal public administrations",
+      "issuing_authority": "Minister of Public Action and Modernisation (Digital) / FPS BOSA",
+      "note": "The Minister's general policy note 'Numérique' (Chamber DOC 56 1282/030, 24 January 2026) states the circular was published in the Moniteur belge on 19 November 2025; DeepSeek apps had to be removed from federal work devices by 1 December 2025. The Moniteur belge / Justel site (ejustice.just.fgov.be) and bosa.belgium.be returned a bot challenge to both curl and WebFetch, so the exact title, date and numac could not be confirmed. Record (generative-ai, public-sector, cyber-security; administrative_policy_mandatory_in_scope) once the Moniteur text is read.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Arrêté royal du 4 octobre 2023 portant création du Comité consultatif d'éthique des données et de l'intelligence artificielle du gouvernement fédéral",
+      "english_title": "Royal Decree of 4 October 2023 establishing the Federal Government Data and AI Ethics Advisory Committee",
+      "issuing_authority": "Federal Government (King, on proposal of the Minister for the Civil Service)",
+      "note": "Draft approved by the Council of Ministers on 7 July 2023 (committee within FPS BOSA giving non-binding opinions on ethical, legal, social and environmental issues of AI used in the federal administration). Decree date 4 October 2023 known only from secondary sources; title wording is provisional. Members appointed by ministerial decree of 8 May 2024 (BOSA news). Moniteur belge not reachable (bot challenge); record as binding_regulation / government-governance once the Justel text is read.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Arrêté royal du 24 mai 2024 relatif au comité de pilotage intelligence artificielle",
+      "english_title": "Royal Decree of 24 May 2024 on the federal Artificial Intelligence Steering Committee",
+      "issuing_authority": "Federal Government",
+      "note": "A secondary source cites a Royal Decree of 24 May 2024 establishing an Artificial Intelligence Steering Committee advising the federal government on AI (probably formalising the BOSA/FPS Economy steering committee of the 2022 convergence plan). Not confirmed on any official source; Moniteur belge unreachable. Title provisional.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Projet de loi désignant les autorités nationales compétentes pour le règlement (UE) 2024/1689 (AI Act)",
+      "english_title": "Bill designating Belgium's national competent authorities under the AI Act",
+      "issuing_authority": "Federal Government (Minister in charge of Digital Affairs with the Minister of Economy)",
+      "note": "The general policy note of 24 January 2026 (DOC 56 1282/030) announces that a bill will be submitted to the Chamber in 2026 to designate the national competent authorities and provide for sanctions. No bill text was found on the Chamber site by 11 October 2026; press in July 2026 reported that no supervisory authority had yet been formally designated (BIPT expected). Record the resulting law when adopted (likely owned by the legislation/regulator parts).",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Proposition de loi modifiant la loi du 11 avril 1994 relative à la publicité de l'administration et la loi du 17 juin 2016 relative aux marchés publics, en vue de l'utilisation d'une intelligence artificielle sûre, transparente et européenne (DOC 56 1583/001)",
+      "english_title": "Private member's bill on safe, transparent and European AI in public administration transparency and public procurement",
+      "issuing_authority": "Chamber of Representatives (tabled by Nele Daenen and Axel Weydts)",
+      "note": "Tabled 28 May 2026 (https://www.lachambre.be/FLWB/Pdf/56/1583/56K1583001.pdf, read). Pending private member's bill; not adopted as of October 2026.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Plan d'action fédéral relatif à l'intelligence artificielle dans les soins de santé",
+      "english_title": "Federal action plan on AI in healthcare (FPS Public Health)",
+      "issuing_authority": "FPS Public Health, Food Chain Safety and Environment / Minister of Social Affairs and Public Health",
+      "note": "The Minister of Health announced in the Chamber Health committee that FPS Public Health is preparing an AI-in-healthcare action plan (OECD/WHO/EU frameworks; FAMHP as market surveillance authority for medical AI). No published plan found on health.belgium.be by 11 October 2026.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Mise à jour du Plan national de convergence pour le développement de l'intelligence artificielle",
+      "english_title": "Update of the National Convergence Plan for AI",
+      "issuing_authority": "Federal Government",
+      "note": "Announced in the general policy note of 24 January 2026 (DOC 56 1282/030) to integrate the AI Act, the AI Continent Action Plan and the Apply AI Strategy; together with a federal-administration AI strategy (priority use cases from the College of Chairs, possible AI Centre of Excellence at BOSA, AI literacy training). No adopted document found by October 2026.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Projet de charte pour l'utilisation responsable de l'IA dans les services publics (consultation publique 2024)",
+      "english_title": "Draft charter for responsible AI use in public services (2024 public consultation)",
+      "issuing_authority": "FPS BOSA / AI4Belgium Ethics & Law working group",
+      "note": "Public consultation until 30 April 2024 on the BOSA site (not reachable: bot challenge). Superseded by the charter signed 11 July 2025; could be added as a historical consultation_draft if the official consultation page can be read.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Artificial Intelligence: Perception and adoption in Belgian Public Administrations",
+      "english_title": "Artificial Intelligence: Perception and adoption in Belgian Public Administrations (BOSA/AI4Belgium survey)",
+      "issuing_authority": "FPS BOSA (AI4Belgium)",
+      "note": "PDF at https://bosa.belgium.be/sites/default/files/content/documents/DTdocs/AI/Artificial%20Intelligence%20Perception%20and%20adoption%20in%20Belgian%20Public%20Administrations.pdf returned a bot challenge to curl; date unknown. Candidate for index-readiness once read.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Règlement sur l'intelligence artificielle (page du SPF Economie) — existing record i-229a2f905fcb",
+      "english_title": "FPS Economy AI Act information page",
+      "issuing_authority": "FPS Economy, SMEs, Self-employed and Energy",
+      "note": "economie.fgov.be returned a bot challenge to curl and WebFetch on every page; no date or content could be read. FPS Economy's readable newsroom (15 December 2025) and the 'AI Act pour moi' SME campaign only explain the EU AI Act; as of January-July 2026 no national authority had been designated, so the page is most likely an EU AI Act explainer with no national designation. Recommend dropping i-229a2f905fcb (or holding it here) until the page can be read and shown to contain national designations or guidance.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Foire aux questions concernant l'intelligence artificielle, l'Artificial Intelligence Act de la Commission européenne, et les applications de ce dernier",
+      "english_title": "FAQ on artificial intelligence and the EU AI Act (existing record i-b66b081abc45)",
+      "issuing_authority": "FPS Economy, SMEs, Self-employed and Energy",
+      "note": "Issuer is the FPS Economy (not the Data Protection Authority). https://economie.fgov.be/fr/themes/line/intelligence-artificielle/foire-aux-questions-concernant now shows a bot check to both curl and WebFetch. A March 2025 web-archive copy (used only for discovery) shows an undated explainer of the EU AI Act (definitions, scope, risk levels, GPAI, penalties, EU governance, timeline, AI Pact) whose only national content is 'La mise en place du cadre de gouvernance en Belgique est en cours'. No publication date is given. Recommend dropping it as an instrument, or folding it into the FPS Economy AI Act page (B2), unless a dated official version with national content is found.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "BIPT AI Act pages (Application of the AI Act; Classification of AI systems; Requirements for high-risk AI systems; Useful AI information for the sector)",
+      "english_title": "BIPT web guidance on the AI Act for operators",
+      "issuing_authority": "Belgian Institute for Postal Services and Telecommunications",
+      "note": "https://www.bipt.be/operators/digital/ia-act/application-of-the-ai-act and sibling pages (read with curl 2026-10-11): undated explainers of the EU AI Act timeline and risk classes, noting that high-risk AI used in telecoms for network management, customer-service automation or fraud detection must meet the requirements, and a link list 'pending the launch of a digital helpdesk'. No date, and no document designating BIPT as AI Act authority was found on bipt.be. Record once BIPT's designation (via the federal AI Act implementing law) or dated guidance is published.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "FAMHP: L'AFMPS renforce son engagement dans le domaine des logiciels médicaux et de l'intelligence artificielle avec un nouveau coordinateur",
+      "english_title": "FAMHP appoints a coordinator for medical software and AI",
+      "issuing_authority": "Federal Agency for Medicines and Health Products",
+      "note": "News item of 22/04/2026 (https://www.afmps.be/fr/news/lafmps_renforce_son_engagement_dans_le_domaine_des_logiciels_medicaux_et_de_lintelligence) stating that AI medical software is covered by the EU MDR/IVDR plus the AI Act and that FAMHP supervises it across its life cycle. It is a news item, not guidance; record any FAMHP guidance document on AI medical devices or in-house AI software once one is published.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Unia: Intelligence artificielle (IA) et discrimination (thematic dossier) and contributed reports (2025)",
+      "english_title": "Unia AI and discrimination dossier",
+      "issuing_authority": "Interfederal Centre for Equal Opportunities (Unia)",
+      "note": "https://www.unia.be/fr/dossiers/intelligence-artificielle-ia-discrimination is an undated awareness page. The two December 2025 reports listed by Unia ('Protection juridique contre la discrimination algorithmique en Europe', 15/12/2025; 'Lignes directrices politiques européennes relatives aux discriminations induites par l'IA et les algorithmes', 19/12/2025) are Council of Europe / EU project publications to which Unia contributed (the first states its content is the author's sole responsibility), so they are not recorded as Belgian official instruments. The first one makes Belgium-specific recommendations (public register of AI/ADM systems, FRIAs, anti-discrimination clauses in procurement).",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Stratégie Intelligence Artificielle 2024-2029 (Innoviris, Brussels Institute for Research and Innovation)",
+      "url": "https://www.innoviris.brussels/sites/default/files/2025-05/Strategie%20AI%2024-29_final_out.docx",
+      "status": "Document read (French .docx; Dutch version 'Strategie AI 24-29_final_out_NL.docx' July 2025) but it states no date or adoption; regional agency AI strategy with five objectives (hub, frontier AI, SME adoption, HPC access, EU funding). Promote once an Innoviris page with date is found.",
+      "government_level": "subnational",
+      "subnational_unit": "Brussels-Capital"
+    },
+    {
+      "title": "DigitalWallonia4.ai (2019 Walloon AI programme)",
+      "url": "https://www.digitalwallonia.be/",
+      "status": "Approved by the Walloon Government in April 2019 per press; no official government-issued programme document found on digitalwallonia.be or wallonie.be. Superseded in practice by the AI priority of Digital Wallonia 2025-2029.",
+      "government_level": "subnational",
+      "subnational_unit": "Wallonia"
+    },
+    {
+      "title": "Flemish AI literacy framework (AI-geletterdheidskader) for local and Flemish government staff",
+      "url": "https://www.vlaanderen.be/digitaal-vlaanderen/onze-diensten-en-platformen/ai-expertisecentrum/europese-ai-act",
+      "status": "Referenced on the Digitaal Vlaanderen AI Act page (blog 12 Feb 2025); framework document not opened (time cap).",
+      "government_level": "subnational",
+      "subnational_unit": "Flanders"
+    },
+    {
+      "title": "Flemish AI strategy for governments (Vlaamse AI-strategie) being drafted by Digitaal Vlaanderen within the Stuurorgaan",
+      "url": "https://www.vlaanderen.be/digitaal-vlaanderen/vlaamse-digitale-strategie/vlaamse-ai-strategie",
+      "status": "Announced as in preparation; only the principles document and genAI guidelines published as of Oct 2026.",
+      "government_level": "subnational",
+      "subnational_unit": "Flanders"
+    },
+    {
+      "title": "Paradigm 'Carnet' on chatbots in the public sector (2025)",
+      "url": "https://admin.be.brussels/sites/default/files/2025-10/Carnet%20chatbot%20FR.pdf",
+      "status": "Found via search, not opened (time cap).",
+      "government_level": "subnational",
+      "subnational_unit": "Brussels-Capital"
+    },
+    {
+      "title": "Flemish education minister's joint AI strategy with the five Flemish universities (EUR 10 million, June 2026)",
+      "url": null,
+      "status": "Reported in news only (June 2026); no official document found.",
+      "government_level": "subnational",
+      "subnational_unit": "Flanders"
+    },
+    {
+      "title": "Fédération Wallonie-Bruxelles guidance on AI in education",
+      "url": null,
+      "status": "No FWB circular or official guidance specific to AI in schools found (Gallilex circulars search via web; 2026-2027 back-to-school circulars reportedly do not mention AI).",
+      "government_level": "subnational",
+      "subnational_unit": "Wallonia"
+    },
+    {
+      "title": "Walloon Government agenda 16 April 2026: 'Digital Wallonia. Mesure d'accompagnement des entreprises wallonnes en intelligence artificielle'",
+      "url": "https://www.wallonie.be/sites/default/files/2026-04/16avril20260800-ordredujour.pdf",
+      "status": "Agenda item only (found via search, not opened); outcome/adopted text not verified.",
+      "government_level": "subnational",
+      "subnational_unit": "Wallonia"
+    }
+  ]
 }
