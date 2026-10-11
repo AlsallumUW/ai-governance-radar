@@ -45,6 +45,8 @@ The following are **never** sources, even when official:
 
 A file hosted by a third party counts as official only if the issuing body's own official page names that host as where it publishes the document. `source_url` is then the issuer's page.
 
+Regulator decisions cite the decision itself, not the media release about it.
+
 ## 2. Where to search (every country, every time)
 
 1. National AI body or AI office, if any
