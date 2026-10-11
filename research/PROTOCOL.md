@@ -61,6 +61,8 @@ Regulator decisions cite the decision itself, not the media release about it.
 10. Government open-consultation portal
 11. **Discovery aids only:** OECD.AI policy database, UNESCO RAM country reports, regional bodies (AU, ASEAN, GCC, OAS). Use them to find documents, but always record the official government source, never the aggregator.
 
+Also search each major ministry or department's own AI strategy, policy, guidance and playbooks, not only central-government and regulator documents.
+
 Search in the official language(s) **and** English. Record every query in `coverage_audit.search_queries`.
 
 ## 2a. Levels of government
