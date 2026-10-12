@@ -10,18 +10,203 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Monaco has no AI-specific law, strategy or public-sector AI guidance. AI is governed through its GDPR-style data protection law (Law No. 1.565 of 2024), which regulates decisions based solely on automated processing, requires information on their logic and impact assessments for profiling, and covers automated decisions by police and justice. The data protection authority (APDP) issued a critical opinion in December 2025 on a pending bill allowing police to use AI-based remote biometric identification. Monaco is a party to the Council of Europe's data protection convention (Convention 108).",
+    "lead_institutions": [
+      "Autorité de Protection des Données Personnelles (APDP)",
+      "Délégation Interministérielle chargée de la Transition Numérique"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was carried out on 12 October 2026 from the official legal database (Legimonaco), the Journal de Monaco and the data protection authority's website. The National Council's website could not be accessed, but its bills are mirrored on Legimonaco. The pending remote biometric identification bill is tracked as a lead."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "jurisdiction_id": "MCO",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Monaco (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "supersedes": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "fr",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "id": "i-048b85eae543",
+      "official_title": "Loi n° 1.565 du 3 décembre 2024 relative à la protection des données personnelles",
+      "english_title": "Law No. 1.565 of 3 December 2024 on the protection of personal data",
+      "issuing_authority": "National Council (law sanctioned and promulgated by the Sovereign Prince)",
+      "authority_type": "legislature",
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "category": "data-privacy",
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2024-12-13",
+      "effective_date": null,
+      "current_status": "Law dated 3 December 2024, published in the Journal de Monaco No. 8725 of 13 December 2024; it repeals Law No. 1.165 of 23 December 1993 (art. 118) and replaces the CCIN with the APDP (art. 107). Implemented by Sovereign Ordinance No. 11.327 of 10 July 2025. The text read contains no specific commencement clause, so effective_date is left null; art. 109 gives controllers one year from entry into force to bring existing processing into line.",
+      "summary": "Monaco's GDPR-aligned general data protection law, replacing the 1993 law on nominative information and creating the Personal Data Protection Authority (APDP). Article 19 gives data subjects the right not to be subject to a decision with legal or similarly significant effects based solely on automated processing, including profiling (with contract, consent or legal-authorisation exceptions), articles 11-12 require information on the existence and logic of automated decision-making, and article 35 makes systematic profiling-based evaluation a high-risk case requiring a data protection impact assessment. For police and justice processing, article 67 prohibits solely automated adverse decisions unless authorised by ministerial order after the APDP's opinion with safeguards, and bans discriminatory profiling based on sensitive data.",
+      "ai_governance_relevance": "Binding rules on automated decision-making, profiling and impact assessment that govern AI systems processing personal data in Monaco (Monaco is outside the EU, so the EU AI Act does not apply).",
+      "source_url": "https://legimonaco.mc/tnc/loi/2024/12-03-1.565/",
+      "official_pdf_url": "https://legimonaco.mc/tnc/loi/2024/12-03-1.565/?V=pdf&contentName=loi%20n%C2%B0%201.565%20(2024-12-03).pdf",
+      "official_webpage_url": "https://legimonaco.mc/tnc/loi/2024/12-03-1.565/",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "legislation_portal",
+      "organization_id": "o-48f111344081",
+      "publisher_name": "Legimonaco (Princely Government of Monaco)",
+      "source_id": "s-579fb0346985",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full consolidated text read on Legimonaco (arts. 1-118), incl. arts. 2, 11, 12, 19, 35 and 67 on automated decisions/profiling; date and Journal de Monaco publication (13 December 2024) taken from the Legimonaco notice and confirmed in the Journal de Monaco search listing (Journal n° 8725)"
+    },
+    {
+      "jurisdiction_id": "MCO",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Monaco (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "supersedes": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "fr",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "id": "i-a203bc3d5a1f",
+      "official_title": "Délibération n° 2025-022 du 10 décembre 2025 de l'Autorité de Protection des Données Personnelles portant avis sur la consultation du Président du Conseil National relative au projet de Loi relative à l'utilisation de la vidéoprotection et de la vidéosurveillance des lieux accessibles au public pour la détection, la recherche et l'identification des personnes recherchées ou signalées au moyen de système d'identification biométrique à distance",
+      "english_title": "Deliberation No. 2025-022 of 10 December 2025 of the Personal Data Protection Authority giving its opinion, at the request of the President of the National Council, on the bill on the use of video protection and video surveillance of publicly accessible places to detect, search for and identify wanted or flagged persons by means of remote biometric identification systems",
+      "issuing_authority": "Personal Data Protection Authority (APDP)",
+      "authority_type": "data_protection_authority",
+      "categories": [
+        "data-privacy",
+        "risk-assurance",
+        "public-sector"
+      ],
+      "category": "data-privacy",
+      "legal_status": "regulatory_opinion",
+      "lifecycle": "published",
+      "publication_date": "2025-12-10",
+      "effective_date": null,
+      "current_status": "Opinion adopted 10 December 2025 on referral by the President of the National Council (8 October 2025) and published by the APDP. The bill it addresses (Government bill No. 1.087, tabled December 2023) was still pending before the National Council on 2026-10-12 (see leads). It follows CCIN deliberation No. 2023-066 of 26 April 2023 on the earlier draft, which was not made public.",
+      "summary": "The APDP's opinion on Government bill No. 1.087, which would allow the police to use AI-based remote biometric (facial) identification on public video surveillance to find wanted or flagged persons. It compares the bill with the EU AI Act's restrictions on real-time remote biometric identification and finds the legal framework insufficient, citing the dual regime of Law No. 1.430 and Law No. 1.565, the absence of a mandatory impact assessment for police processing, and the risk of extension by regulation. It asks for safeguards including controls on training-data quality and ethics, disclosure of algorithmic bias and of acceptable false-positive and false-negative thresholds, display of the AI's confidence score, human verification, and clear liability for the AI provider.",
+      "ai_governance_relevance": "Regulator's expectations for police use of AI facial recognition; the main AI-specific regulatory text published in Monaco.",
+      "source_url": "https://apdp.mc/wp-content/uploads/2025/12/Deliberation-2025-022-portant-avis-sur-projet-Loi-biometrie-a-distance.pdf",
+      "official_pdf_url": "https://apdp.mc/wp-content/uploads/2025/12/Deliberation-2025-022-portant-avis-sur-projet-Loi-biometrie-a-distance.pdf",
+      "official_webpage_url": "https://apdp.mc/projet-de-loi-n-1087-identification-biometrique-a-distance/",
+      "sectors": [
+        "law-enforcement"
+      ],
+      "source_kind": "official_document",
+      "organization_id": "o-69b984dae781",
+      "publisher_name": "Personal Data Protection Authority",
+      "source_id": "s-b50a31990dbd",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full 24-page PDF read (pdftotext); date 10 December 2025 printed in the title; linked from the APDP news page on bill No. 1087"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-48f111344081",
+      "jurisdiction_id": "MCO",
+      "name": "National Council",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Monaco's legislature (Conseil National); passed Law No. 1.565 on personal data protection (rules on automated decisions and profiling) and is examining Government bill No. 1.087 on remote biometric identification in public video surveillance.",
+      "source_url": "https://legimonaco.mc/tnc/loi/2024/12-03-1.565/",
+      "authority_type": "legislature",
+      "government_level": "national"
+    },
+    {
+      "id": "o-69b984dae781",
+      "jurisdiction_id": "MCO",
+      "name": "Personal Data Protection Authority",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Monaco's data protection authority (Autorité de Protection des Données Personnelles, APDP), successor to the CCIN under Law No. 1.565; gives opinions on bills and supervises automated decision-making, profiling and biometric processing, including its December 2025 opinion on remote biometric identification.",
+      "source_url": "https://apdp.mc/",
+      "authority_type": "data_protection_authority",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-579fb0346985",
+      "url": "https://legimonaco.mc/tnc/loi/2024/12-03-1.565/",
+      "jurisdiction_ids": [
+        "MCO"
+      ],
+      "source_institutions": [
+        "National Council"
+      ],
+      "instrument_ids": [
+        "i-048b85eae543"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full consolidated text read on Legimonaco (arts. 1-118), incl. arts. 2, 11, 12, 19, 35 and 67 on automated decisions/profiling; date and Journal de Monaco publication (13 December 2024) taken from the Legimonaco notice and confirmed in the Journal de Monaco search listing (Journal n° 8725)",
+      "http_status": 200,
+      "final_url": "https://legimonaco.mc/tnc/loi/2024/12-03-1.565/",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "fr",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-b50a31990dbd",
+      "url": "https://apdp.mc/wp-content/uploads/2025/12/Deliberation-2025-022-portant-avis-sur-projet-Loi-biometrie-a-distance.pdf",
+      "jurisdiction_ids": [
+        "MCO"
+      ],
+      "source_institutions": [
+        "Personal Data Protection Authority"
+      ],
+      "instrument_ids": [
+        "i-a203bc3d5a1f"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "risk-assurance",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full 24-page PDF read (pdftotext); date 10 December 2025 printed in the title; linked from the APDP news page on bill No. 1087",
+      "http_status": 200,
+      "final_url": "https://apdp.mc/wp-content/uploads/2025/12/Deliberation-2025-022-portant-avis-sur-projet-Loi-biometrie-a-distance.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "fr",
+      "error": null,
+      "content_type": "application/pdf"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "MCO",
     "country": "Monaco",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -33,18 +218,18 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_with_findings": [
       "binding-law",
+      "data-privacy",
+      "public-sector",
+      "risk-assurance"
+    ],
+    "categories_where_no_material_was_found": [
       "strategy",
       "government-governance",
       "ethics",
-      "risk-assurance",
-      "public-sector",
       "procurement",
       "cyber-security",
-      "data-privacy",
       "transparency",
       "standards",
       "sandbox",
@@ -55,33 +240,147 @@
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Monaco \"intelligence artificielle\" (stratégie OR réglementation OR éthique) government ministry official",
       "Monaco \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Monaco government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Monaco \"intelligence artificielle\" cybersecurity authority secure development safety guidelines",
-      "Monaco privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Monaco privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "Monaco \"intelligence artificielle\" loi OR ordonnance souveraine legimonaco",
+      "Monaco gouvernement \"intelligence artificielle\" stratégie OR charte OR guide administration 2025",
+      "Conseil National Monaco proposition de loi intelligence artificielle",
+      "apdp.mc search: intelligence artificielle; IA; algorithme; décision automatisée; artificial intelligence",
+      "journaldemonaco.gouv.mc search: \"intelligence artificielle\"; hypertrucage; deepfake; algorithmique; \"système d'intelligence artificielle\"",
+      "ccaf.mc search: intelligence artificielle; artificial intelligence; IA",
+      "amsn.gouv.mc: site sections and Stratégie nationale pour la sécurité du numérique (no AI content)",
+      "Monaco loi identification biométrique à distance vidéoprotection projet de loi n° 1087",
+      "legimonaco ordonnance souveraine rendant exécutoire Convention 108",
+      "legimonaco \"Loi n° 1.565\" décision individuelle automatisée",
+      "gouv.mc intelligence artificielle Délégation Interministérielle Transition Numérique IA administration charte",
+      "Monaco Princely Government artificial intelligence strategy 2026 Extended Monaco",
+      "Monaco Direction de l'Education Nationale intelligence artificielle charte guide usage IA",
+      "legimonaco.mc proposition de loi \"intelligence artificielle\""
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. conseilnational.mc TLS error / 503 (bills read on Legimonaco); gouv.mc and AMSN site search 403 (individual pages only). Journal de Monaco full-text search: top 100 results for 'intelligence artificielle' read. Law 1.565 effective_date null (no commencement clause). Bill 1.087 tabling date: Legimonaco 18 Dec 2023, APDP 19 Dec 2023. Convention 108: Ordonnance Souveraine n° 2.118 of 23 March 2009 (JdM 10 April 2009), citing Law No. 1.354 of 4 Dec 2008; 108+ approved by Law No. 1.566 of 3 Dec 2024. Units covered: Law: Legimonaco (laws, ordinances, bills) and Journal de Monaco full-text search: no AI-specific law, ordinance or ministerial order; data protection Law No. 1.565 recorded; pending bill No. 1.087 on remote biometric identification held as a lead; no deepfake offence or public-sector algorithm rule found.; Government: gouv.mc digital-strategy pages (Extended Monaco) and Interministerial Delegation for Digital Transition: AI described as a priority but no AI strategy, charter or public-sector AI guideline published; searched, nothing found.; Ministries: Searched for education, health, justice, interior and finance AI documents via web search and the Journal de Monaco; searched, nothing found.; Regulators: APDP (one AI-relevant opinion recorded, joint statement as lead), CCAF financial regulator (searched, nothing found), AMSN cyber agency (national digital security strategy has no AI content; searched, nothing found).. Not reached: Conseil National website (conseilnational.mc) could not be read (TLS certificate failure with curl, HTTP 503 via WebFetch); its bills are mirrored on Legimonaco; gouv.mc site search blocked (HTTP 403) for automated access; read individual pages via WebFetch only; AMSN site search blocked (HTTP 403). Could not verify: Conseil National website (possible AI propositions de loi or reports) unreachable; Whether a 2025 AI report by the Interministerial Delegate for Digital Transition was officially published. strategy, government-governance, ethics, procurement, cyber-security, transparency, standards, sandbox, index-readiness, sectoral, generative-ai, drafts, international, historical: no material found.",
     "discovery_result_count": 11,
     "focused_result_count": 8
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-ec70b1046678",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "MCO",
+      "instrument_id": "i-048b85eae543",
+      "title": "Law No. 1.565 of 3 December 2024 on the protection of personal data",
+      "detail": "Added to the radar (published 2024-12-13).",
+      "from": null,
+      "to": null,
+      "source_url": "https://legimonaco.mc/tnc/loi/2024/12-03-1.565/",
+      "needs_review": false
+    },
+    {
+      "id": "c-6a0abe517561",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "MCO",
+      "instrument_id": "i-a203bc3d5a1f",
+      "title": "Deliberation No. 2025-022 of 10 December 2025 of the Personal Data Protection Authority giving its opinion, at the request of the President of the National Council, on the bill on the use of video protection and video surveillance of publicly accessible places to detect, search for and identify wanted or flagged persons by means of remote biometric identification systems",
+      "detail": "Added to the radar (published 2025-12-10).",
+      "from": null,
+      "to": null,
+      "source_url": "https://apdp.mc/wp-content/uploads/2025/12/Deliberation-2025-022-portant-avis-sur-projet-Loi-biometrie-a-distance.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-341a3465c56f",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "MCO",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 2 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-7b28473448be",
+      "date": "2025-12-10",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "MCO",
+      "instrument_id": "i-a203bc3d5a1f",
+      "title": "APDP opinion on remote biometric identification bill",
+      "detail": "APDP Deliberation No. 2025-022 gives its opinion on bill No. 1.087 on AI-based remote biometric identification in public video surveillance.",
+      "from": null,
+      "to": null,
+      "source_url": "https://apdp.mc/wp-content/uploads/2025/12/Deliberation-2025-022-portant-avis-sur-projet-Loi-biometrie-a-distance.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-90551f412554",
+      "date": "2024-12-13",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "MCO",
+      "instrument_id": "i-048b85eae543",
+      "title": "Law No. 1.565 on personal data protection published",
+      "detail": "Published in the Journal de Monaco No. 8725 of 13 December 2024; replaces Law No. 1.165 and sets rules on automated decisions and profiling (arts. 19, 35, 67).",
+      "from": null,
+      "to": null,
+      "source_url": "https://legimonaco.mc/tnc/loi/2024/12-03-1.565/",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Projet de loi n° 1.087 relative à l'utilisation de la vidéoprotection et de la vidéosurveillance des lieux accessibles au public pour la détection, la recherche et l'identification des personnes recherchées ou signalées au moyen de systèmes d'identification biométrique à distance",
+      "english_title": "Bill No. 1.087 on the use of video protection and video surveillance of publicly accessible places to detect, search for and identify wanted or flagged persons by means of remote biometric identification systems",
+      "issuing_authority": "Princely Government (tabled before the National Council)",
+      "note": "Pending Government bill. Legimonaco gives the tabling date as 18 December 2023 (the APDP opinion says 19 December 2023); no vote or enacted law found on Legimonaco or in the Journal de Monaco as of 2026-10-12. It would authorise police use of automated (AI) facial recognition on public video surveillance. Record as binding_law if adopted. https://legimonaco.mc/projet/1.087/",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Déclaration commune sur les images générées par l'IA",
+      "english_title": "Joint statement on AI-generated imagery and privacy",
+      "issuing_authority": "Personal Data Protection Authority (APDP), with 60 other data protection authorities",
+      "note": "Multi-authority international joint statement (61 authorities) relayed by the APDP on its news page (stated as published on Monday 23 February, year 2026 implied). Not a Monaco-specific instrument; kept as a lead. https://apdp.mc/declaration-commune-sur-les-images-generees-par-lia/",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Rapport de Frédéric Genta sur l'intelligence artificielle (2025)",
+      "english_title": "Report by the Interministerial Delegate for Digital Transition on artificial intelligence (2025)",
+      "issuing_authority": "Interministerial Delegation for Digital Transition",
+      "note": "Press reports (early 2025) say the outgoing interministerial delegate submitted a report urging Monaco to adopt AI and preserve AI sovereignty; no official text found on gouv.mc. The gouv.mc page 'Delivering the national digital strategy' describes AI as a priority of the Extended Monaco programme but links no AI strategy or guideline. Record only if an official document is published.",
+      "found": "2026-10-12"
+    }
+  ]
 }
