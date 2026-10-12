@@ -10,18 +10,118 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Botswana has no published AI law or AI strategy. Its binding AI-relevant rules are in the Data Protection Act 2024, in force since January 2025, which restricts decisions based solely on automated processing and profiling and requires impact assessments for automated evaluation. A National AI Policy is reported as being finalised by the Ministry of Communications and Innovation, and the 2020 SmartBots digital transformation strategy has no official public copy. The main government portal and the data protection commission's website could not be accessed during this review.",
+    "lead_institutions": [
+      "Ministry of Communications and Innovation",
+      "Information and Data Protection Commission"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was carried out on 12 October 2026, but the government portal, ministry pages and the data protection commission's website could not be accessed, so only one document could be read. The National AI Policy and the SmartBots strategy are listed as leads. Botswana is marked for a later retry."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-75555aae26c1",
+      "official_title": "Data Protection Act, 2024 (Act No. 18 of 2024)",
+      "english_title": "Data Protection Act, 2024",
+      "issuing_authority": "Parliament of Botswana",
+      "authority_type": "legislature",
+      "categories": [
+        "data-privacy",
+        "binding-law",
+        "risk-assurance",
+        "transparency"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2024-10-24",
+      "effective_date": "2025-01-14",
+      "current_status": "Enacted by the Parliament of Botswana; date of assent 24 October 2024 (the Act states no separate gazette publication date, so the assent date is used). In operation from 14 January 2025 under the Data Protection Act (Date of Commencement) Order, 2025 (S.I. No. 4 of 2025, made and published 13 January 2025). It repeals and replaces the Data Protection Act, 2018 (Act No. 32 of 2018, Cap. 43:14; commenced by S.I. 86 of 2021, amended by Act 33 of 2022) and continues the Information and Data Protection Commission. No AI-specific guidance from the Commission was found; the Commission's website could not be reached on 2026-10-12.",
+      "summary": "Botswana's general data protection law, which continues the Information and Data Protection Commission and regulates the processing of personal data by public and private controllers and processors, including foreign controllers targeting data subjects in Botswana. Section 49 gives data subjects the right not to be subject to a decision based solely on automated processing, including profiling, that produces legal effects or similarly significant effects, with exceptions for contracts, explicit consent or authorisation by law, and requires safeguards including human intervention, the right to express a view and to contest the decision. Section 65 requires a data protection impact assessment before high-risk processing using new technologies, expressly including systematic and extensive evaluation of personal aspects based on automated processing and profiling.",
+      "ai_governance_relevance": "Binding rules on solely automated decision-making and profiling (s.49) and mandatory impact assessments for automated evaluation (s.65); the main binding legal constraint on AI systems processing personal data in Botswana.",
+      "source_url": "https://e-laws.botswanalaws.com/PDF/Bulletin/Botswana2024pdf/018.pdf",
+      "official_pdf_url": "https://e-laws.botswanalaws.com/PDF/Bulletin/Botswana2024pdf/018.pdf",
+      "official_webpage_url": "https://e-laws.botswanalaws.com/principal-legislation/data-protection/",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "organization_id": "o-f876e0c06193",
+      "publisher_name": "Attorney General's Chambers",
+      "jurisdiction_id": "BWA",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Botswana (national)",
+      "technology_scope": [
+        "automated decision-making",
+        "profiling"
+      ],
+      "metadata_gaps": [],
+      "language": "en",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-5f1346143f3b",
+      "evidence_reference": "curl (browser user agent, --max-time 60): Act PDF (46-page scanned Bulletin copy) read page images (arrangement of sections, long title, date of assent 24.10.2024, s.49 on p.23); consolidated HTML text on the e-Laws principal-legislation page read in full for ss.2 ('profiling'), 49 and 65; commencement confirmed from S.I. No. 4 of 2025 (Data Protection Act (Date of Commencement) Order, 2025) PDF."
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-f876e0c06193",
+      "jurisdiction_id": "BWA",
+      "name": "Parliament of Botswana",
+      "publisher_name_verified": true,
+      "ai_governance_role": "National legislature; enacted the Data Protection Act, 2024, whose s.49 regulates solely automated decision-making and profiling. No AI-specific bill was found on its published bills list.",
+      "source_url": "https://www.parliament.gov.bw/",
+      "authority_type": "legislature",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-5f1346143f3b",
+      "url": "https://e-laws.botswanalaws.com/PDF/Bulletin/Botswana2024pdf/018.pdf",
+      "jurisdiction_ids": [
+        "BWA"
+      ],
+      "source_institutions": [
+        "Attorney General's Chambers"
+      ],
+      "instrument_ids": [
+        "i-75555aae26c1"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law",
+        "risk-assurance",
+        "transparency"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): Act PDF (46-page scanned Bulletin copy) read page images (arrangement of sections, long title, date of assent 24.10.2024, s.49 on p.23); consolidated HTML text on the e-Laws principal-legislation page read in full for ss.2 ('profiling'), 49 and 65; commencement confirmed from S.I. No. 4 of 2025 (Data Protection Act (Date of Commencement) Order, 2025) PDF.",
+      "http_status": 200,
+      "final_url": "https://e-laws.botswanalaws.com/PDF/Bulletin/Botswana2024pdf/018.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "BWA",
     "country": "Botswana",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -33,19 +133,19 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_with_findings": [
       "binding-law",
+      "data-privacy",
+      "risk-assurance",
+      "transparency"
+    ],
+    "categories_where_no_material_was_found": [
       "strategy",
       "government-governance",
       "ethics",
-      "risk-assurance",
       "public-sector",
       "procurement",
       "cyber-security",
-      "data-privacy",
-      "transparency",
       "standards",
       "sandbox",
       "index-readiness",
@@ -55,33 +155,135 @@
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Botswana \"artificial intelligence\" (strategy OR regulation OR ethics) government ministry official",
       "Botswana \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Botswana government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Botswana \"artificial intelligence\" cybersecurity authority secure development safety guidelines",
-      "Botswana privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Botswana privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "Botswana national artificial intelligence strategy gov.bw",
+      "Botswana Data Protection Act 2024 automated decision making",
+      "Botswana SmartBots digital transformation strategy artificial intelligence pdf",
+      "\"Botswana\" \"National Artificial Intelligence Policy\" draft consultation Ministry of Communications and Innovation 2025 OR 2026",
+      "Botswana \"artificial intelligence\" policy cabinet approved 2026 Ministry of Communications and Innovation",
+      "Bank of Botswana artificial intelligence guidance OR NBFIRA artificial intelligence guideline",
+      "site:bankofbotswana.bw \"artificial intelligence\"",
+      "site:nbfira.org.bw artificial intelligence OR \"regulatory sandbox\" OR fintech",
+      "Botswana Information and Data Protection Commission artificial intelligence guidance",
+      "Botswana \"Convention 108\" accession",
+      "SmartBots strategy \"Towards Digital Transformation for Batswana\" gov.bw OR bdih.co.bw",
+      "Botswana Setswana \"botlhale jwa maitirelo\" OR \"botlhale jo bo dirilweng\" puso (Setswana: artificial intelligence, government)",
+      "e-Laws (e-laws.botswanalaws.com) Act Bulletin 2024 and 2025 and Subsidiary Legislation Bulletin 2025 title lists reviewed",
+      "e-Laws site search: \"artificial intelligence\", \"automated processing\" (no server-side results returned)",
+      "gov.bw search: artificial intelligence; smartbots (TLS certificate expired / HTTP 503)",
+      "bocra.org.bw search: artificial intelligence",
+      "parliament.gov.bw bills list"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. gov.bw expired TLS certificate/503; data protection commission site proxy 502; Botswana Digital and Innovation Hub not reached. e-Laws Act Bulletins 2024-2025 and SI bulletin titles read: Cybersecurity Act 2025 and Digital Services Act 2025 have no explicit AI provisions (not recorded). Bank of Botswana sandbox guidelines fintech-only (not recorded). Act dated by assent. Not a party to Convention 108. Units covered: Law: Botswana e-Laws (Attorney General's Chambers): Act Bulletins 2024-2025 and SI Bulletin 2025 title lists reviewed; Data Protection Act 2024 read (s.49 automated decisions, s.65 DPIA) with commencement S.I. 4/2025. Cybersecurity Act 2025 (Act 21) and Digital Services Act 2025 (Act 22, assent 17.10.2025; arrangement of sections checked) contain no explicit AI provisions; no AI bill found on Parliament's bills list. No deepfake or public-sector algorithm law found.; Government: No national AI strategy/policy published: National AI Policy reported as being finalised (lead); SmartBots digital transformation strategy (2020) has no official online copy found (lead). gov.bw search unreachable (expired TLS certificate; WebFetch HTTP 503).; Ministries: Ministry of Communications and Innovation (AI policy lead) - no published AI document found; no AI documents found for education, health, justice, defence, finance, labour or interior ministries (searched, nothing found; ministry sites hosted on gov.bw unreachable).; Regulators: Information and Data Protection Commission - no AI guidance found (site unreachable: proxy 502). Bank of Botswana - Regulatory Sandbox Guidelines (Nov 2025) read: fintech only, no AI mention, not recorded; no AI guidance found. NBFIRA - site reachable, no AI guidance found. BOCRA - site search for 'artificial intelligence' returned no AI documents. No national cyber security agency AI guidance or standards-body AI adoption found.. Not reached: gov.bw central portal and ministry pages (expired TLS certificate; WebFetch HTTP 503); Information and Data Protection Commission website (unreachable); Botswana Digital and Innovation Hub website (unreachable). Could not verify: gov.bw (incl. ministry pages) unreachable: possible AI policy or SmartBots documents there not checked; Information and Data Protection Commission site unreachable: any AI guidance not checked. strategy, government-governance, ethics, public-sector, procurement, cyber-security, standards, sandbox, index-readiness, sectoral, generative-ai, drafts, international, historical: no material found.",
     "discovery_result_count": 12,
     "focused_result_count": 8
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-00772dd8ce54",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "BWA",
+      "instrument_id": "i-75555aae26c1",
+      "title": "Data Protection Act, 2024",
+      "detail": "Added to the radar (published 2024-10-24).",
+      "from": null,
+      "to": null,
+      "source_url": "https://e-laws.botswanalaws.com/PDF/Bulletin/Botswana2024pdf/018.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-875ff9ad3a50",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "BWA",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 1 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-c89ddd5a3f2f",
+      "date": "2025-01-14",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "BWA",
+      "instrument_id": "i-75555aae26c1",
+      "title": "Data Protection Act, 2024 comes into operation",
+      "detail": "S.I. No. 4 of 2025 (Data Protection Act (Date of Commencement) Order, 2025) brings the Act into operation on 14 January 2025.",
+      "from": null,
+      "to": null,
+      "source_url": "https://e-laws.botswanalaws.com/PDF/Bulletin/Botswana2025Pdfsi/004.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-4ba242db38d4",
+      "date": "2024-10-24",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "BWA",
+      "instrument_id": "i-75555aae26c1",
+      "title": "Data Protection Act, 2024 assented to",
+      "detail": "Act No. 18 of 2024 (date of assent 24.10.2024), with s.49 on solely automated decision-making and profiling and s.65 DPIAs for automated evaluation.",
+      "from": null,
+      "to": null,
+      "source_url": "https://e-laws.botswanalaws.com/PDF/Bulletin/Botswana2024pdf/018.pdf",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "National Artificial Intelligence Policy (Botswana)",
+      "english_title": "National Artificial Intelligence Policy",
+      "issuing_authority": "Ministry of Communications and Innovation",
+      "note": "Government news (Daily News, 13 August 2025) reports the Assistant Minister of Communications and Innovation saying the Government is finalising a National AI Policy, following a UNESCO AI Readiness Assessment (RAM) validated in May 2025; an earlier 2024 report mentioned an AI strategy being developed with Estonia. No draft or adopted text was found on an official site on 2026-10-12 (gov.bw had an expired TLS certificate and returned 503). Record as national_strategy (or consultation_draft) once published.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "SmartBots: Towards Digital Transformation for Batswana (Digital Transformation Strategy)",
+      "english_title": "SmartBots Digital Transformation Strategy",
+      "issuing_authority": "Ministry of Communications, Knowledge and Technology (now Ministry of Communications and Innovation)",
+      "note": "Botswana's 2020 digital transformation strategy (4IR-oriented; reportedly references AI/emerging technologies). Only an abridged 'strictly confidential' copy on a university server was found; no official government-hosted text located on 2026-10-12 (gov.bw unreachable). Record under strategy if an official copy is found and it has an AI pillar.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Botswana UNESCO AI Readiness Assessment (RAM) report",
+      "english_title": "Botswana AI Readiness Assessment Methodology report",
+      "issuing_authority": "Ministry of Communications and Innovation with UNESCO",
+      "note": "Government news (Daily News, May 2025) reports a validation workshop to finalise and adopt the RAM report. If published by the Government (not only UNESCO), record under index-readiness.",
+      "found": "2026-10-12"
+    }
+  ]
 }

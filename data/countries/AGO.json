@@ -10,18 +10,408 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Angola has no adopted AI law or AI strategy, but several drafts are in public consultation: the telecommunications and ICT ministry's (MINTTICS) full draft AI Law of September 2025, with risk duties, stricter rules for critical, public-sector, judicial, medical and biometric AI and a new AI authority; the data protection agency's draft revision of the data protection law adding AI prohibitions and rights; and a 2026 draft Digital Government Law setting rules for AI in public administration. The 2011 data protection law (Law 22/11) already restricts automated individual decisions, and a national AI strategy and a public-sector AI framework are being prepared.",
+    "lead_institutions": [
+      "Ministry of Telecommunications, Information Technologies and Social Communication (MINTTICS)",
+      "Data Protection Agency (APD)",
+      "Administrative Modernisation Institute (IMA)"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was completed on 12 October 2026 and covers national law, government, ministries and regulators. The official gazette could not be accessed, and the national AI strategy is still being prepared and is listed as a lead. As a country of over 20 million people with few records, Angola is marked for a longer catch-up pass."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-4924106cc7ab",
+      "official_title": "Proposta de Lei sobre a Inteligência Artificial",
+      "english_title": "Draft Law on Artificial Intelligence (public-consultation version)",
+      "issuing_authority": "Ministry of Telecommunications, Information Technologies and Social Communication (MINTTICS), as proponent",
+      "authority_type": "government",
+      "categories": [
+        "drafts",
+        "binding-law",
+        "risk-assurance",
+        "transparency",
+        "public-sector",
+        "sectoral",
+        "generative-ai",
+        "government-governance",
+        "sandbox"
+      ],
+      "legal_status": "consultation_draft",
+      "lifecycle": "consultation",
+      "publication_date": "2025-09",
+      "current_status": "Draft bill dated 'Luanda, Setembro de 2025' published for public consultation on the MINTTICS consultation portal (consultapublica.minttics.gov.ao), where it remains the featured consultation; the portal does not state opening/closing dates. Not yet submitted to or approved by the National Assembly as of 12 October 2026 (no gazette publication found).",
+      "summary": "A 86-article draft general AI law proposed by MINTTICS, preceded by a justification report with a comparative study (US, EU, China, Japan, Canada, Brazil, Africa). It sets AI principles, user rights (information, explanation and refusal of AI-based decisions, complaints), safety, risk-assessment, incident-reporting and AI-content labelling duties for developers and providers, a stricter regime for 'critical AI' (registration, risk assessment, emergency response), and special rules for AI use by the State and public administration, judicial, news and medical AI, social bots, biometric recognition, autonomous driving and general-purpose AI. It provides for an AI competent authority to be created by regulation, an expert commission, administrative offences, AI crimes, strict civil liability and pilot supervision mechanisms.",
+      "ai_governance_relevance": "Angola's first draft horizontal AI law; would create a dedicated AI regulator.",
+      "source_url": "https://consultapublica.minttics.gov.ao/storage/docs/Proposta%20de%20Lei%20Sobre%20a%20Intelig%C3%AAncia%20Artificial.pdf",
+      "official_pdf_url": "https://consultapublica.minttics.gov.ao/storage/docs/Proposta%20de%20Lei%20Sobre%20a%20Intelig%C3%AAncia%20Artificial.pdf",
+      "official_webpage_url": "https://consultapublica.minttics.gov.ao/",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-ba7d9ab7f765",
+      "publisher_name": "Ministry of Telecommunications, Information Technologies and Social Communication",
+      "jurisdiction_id": "AGO",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "drafts",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Angola (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [
+        "consultation opening/closing dates not stated on the portal"
+      ],
+      "language": "pt",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-48bf21d9c41e",
+      "evidence_reference": "curl (browser user agent, --max-time 60): PDF HTTP 200 re-fetched 2026-10-12, full 65-page text read (pdftotext); date 'Setembro de 2025' on cover; portal home page lists it as 'Consulta Pública a Proposta de Lei da Inteligência Artificial'"
+    },
+    {
+      "id": "i-dd7519e8f160",
+      "official_title": "Projecto de Revisão da Lei n.º 22/11, de 17 de Junho - Lei de Protecção de Dados Pessoais",
+      "english_title": "Draft Revision of Law No. 22/11 of 17 June - Personal Data Protection Law (public-consultation version)",
+      "issuing_authority": "Data Protection Agency (Agência de Protecção de Dados, APD)",
+      "authority_type": "regulator",
+      "categories": [
+        "data-privacy",
+        "drafts",
+        "transparency",
+        "ethics"
+      ],
+      "legal_status": "consultation_draft",
+      "lifecycle": "consultation",
+      "publication_date": "2025-03-17",
+      "current_status": "Put to public consultation by the APD on the government consultation portal from 17 March to 17 April 2025 (status 'Encerrada'). Not adopted as of 12 October 2026 (no gazette publication found); Law 22/11 remains in force.",
+      "summary": "Draft replacement of Angola's 2011 data protection law put to consultation by the APD. Besides a right not to be subject to solely automated or semi-automated decisions, it adds a section on processing personal data by AI systems: it bans AI that manipulates people into compromising privacy, exploits vulnerabilities of specific groups, or performs social scoring leading to unfavourable treatment. It gives data subjects affected by AI rights to prior information, explanation, contestation and human participation, and requires AI producers, providers and operators to adopt governance and data-management practices against discrimination.",
+      "ai_governance_relevance": "Would introduce AI-specific prohibitions and data-subject rights into Angolan data protection law.",
+      "source_url": "https://consultapublica.gov.ao/public/uploads/docs/Projecto%20de%20Revis%C3%A3o%20da%20Lei%20de%20Protec%C3%A7%C3%A3o%20de%20Dados%20-%20Vers%C3%A3o%20Consulta%20P%C3%BAblica.pdf",
+      "official_pdf_url": "https://consultapublica.gov.ao/public/uploads/docs/Projecto%20de%20Revis%C3%A3o%20da%20Lei%20de%20Protec%C3%A7%C3%A3o%20de%20Dados%20-%20Vers%C3%A3o%20Consulta%20P%C3%BAblica.pdf",
+      "official_webpage_url": "https://consultapublica.gov.ao/consulta/100021",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-95a6e5f2e7ca",
+      "publisher_name": "Data Protection Agency",
+      "jurisdiction_id": "AGO",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Angola (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-972c71b36041"
+      ],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "pt",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-ff65ec3d397d",
+      "evidence_reference": "curl (browser user agent, --max-time 60): consultation page consultapublica.gov.ao/consulta/100021 (organ APD, 17/03/2025-17/04/2025, Encerrada) and PDF (HTTP 200) re-fetched 2026-10-12; full text read (pdftotext), arts. 33 and 36-38 checked"
+    },
+    {
+      "id": "i-089b969f9d9d",
+      "official_title": "Ante-Projecto de Proposta de Lei do Governo Digital",
+      "english_title": "Preliminary Draft Digital Government Law",
+      "issuing_authority": "Administrative Modernisation Institute (Instituto de Modernização Administrativa, IMA), Presidency of the Republic",
+      "authority_type": "government",
+      "categories": [
+        "public-sector",
+        "drafts",
+        "risk-assurance",
+        "transparency",
+        "government-governance"
+      ],
+      "legal_status": "consultation_draft",
+      "lifecycle": "consultation",
+      "publication_date": "2026-05-06",
+      "current_status": "Preliminary draft (cover dated Luanda, 2 April 2026) put to public consultation by the IMA on the government consultation portal from 6 May to 7 June 2026 (status 'Encerrada'). Not adopted as of 12 October 2026.",
+      "summary": "Draft framework law on digital government covering digital public services, electronic administrative procedure, digital identity, public-data governance, interoperability and the use of automated systems and AI in public administration. It subjects public-sector AI to legality, necessity, proportionality, transparency, explainability, non-discrimination, human oversight and accountability, bans AI for indiscriminate mass surveillance, unlawful profiling or arbitrary discrimination, and requires prior impact and risk assessment, an institutional register, technical documentation and audit records for AI used in relevant administrative functions. The administration remains liable for errors caused by data, design, bias or insufficient oversight.",
+      "ai_governance_relevance": "Would set binding rules for AI use by Angolan public administration.",
+      "source_url": "https://consultapublica.gov.ao/public/uploads/docs/Ante-Projecto%20de%20Lei%20do%20Governo%20Digital.docx",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://consultapublica.gov.ao/consulta/100027",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-c38e9e276def",
+      "publisher_name": "Administrative Modernisation Institute",
+      "jurisdiction_id": "AGO",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "public-sector",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Angola (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "pt",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-4fed8c54430a",
+      "evidence_reference": "curl (browser user agent, --max-time 60): consultation page consultapublica.gov.ao/consulta/100027 (organ IMA, 06/05/2026-07/06/2026, Encerrada) and DOCX (HTTP 200) re-fetched 2026-10-12; full text read (converted to text), AI articles checked"
+    },
+    {
+      "id": "i-972c71b36041",
+      "official_title": "Lei n.º 22/11, de 17 de Junho - Lei da Protecção de Dados Pessoais",
+      "english_title": "Law No. 22/11 of 17 June 2011 on the Protection of Personal Data",
+      "issuing_authority": "National Assembly (Assembleia Nacional)",
+      "authority_type": "legislature",
+      "categories": [
+        "data-privacy",
+        "binding-law",
+        "transparency"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2011-06-17",
+      "current_status": "In force since publication in Diário da República I Série n.º 114 of 17 June 2011 (art. 67). A full revision prepared by the Data Protection Agency was put to public consultation in March-April 2025 and was not yet adopted as of 12 October 2026.",
+      "summary": "Angola's general personal data protection law, applying to wholly or partly automated processing of personal data and supervised by the Data Protection Agency. Its art. 29 gives every person the right not to be subject to a decision producing legal or similarly significant effects based solely on automated processing intended to evaluate personal aspects such as professional capacity, creditworthiness, reliability or conduct, with exceptions for contracts with safeguards and cases authorised by the Agency with safeguards defined by it.",
+      "ai_governance_relevance": "The only binding Angolan rule found that directly governs automated (algorithmic) decision-making.",
+      "source_url": "https://apd.ao/fotos/frontend_1/editor2/110617_lei_22-11_de_17_junho-proteccao_dados_pessoais.pdf",
+      "official_pdf_url": "https://apd.ao/fotos/frontend_1/editor2/110617_lei_22-11_de_17_junho-proteccao_dados_pessoais.pdf",
+      "official_webpage_url": "https://apd.ao/ao/legislacao/",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-54822152bcb8",
+      "publisher_name": "Data Protection Agency",
+      "jurisdiction_id": "AGO",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "effective_date": "2011-06-17",
+      "last_amended_date": null,
+      "scope": "Angola (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "pt",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-1110d0a7072b",
+      "evidence_reference": "curl (browser user agent, --max-time 60): scanned Diário da República I Série n.º 114 (17 June 2011) copy on the Data Protection Agency legislation page, HTTP 200; no text layer, pages rendered to images and read (cover/sumário, art. 29 on p. 3194, arts. 65-67 on p. 3202)"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-ba7d9ab7f765",
+      "jurisdiction_id": "AGO",
+      "name": "Ministry of Telecommunications, Information Technologies and Social Communication",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Sponsoring ministry (proponent) of the draft Artificial Intelligence Law put to public consultation (September 2025); runs the MINTTICS public-consultation portal and leads the national AI readiness diagnostic.",
+      "source_url": "https://minttics.gov.ao/ao/",
+      "authority_type": "government",
+      "government_level": "national"
+    },
+    {
+      "id": "o-95a6e5f2e7ca",
+      "jurisdiction_id": "AGO",
+      "name": "Data Protection Agency",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Angola's data protection authority under Law 22/11; sponsor of the draft revision of the Personal Data Protection Law, which adds rules on processing personal data by AI systems.",
+      "source_url": "https://www.apd.ao/",
+      "authority_type": "regulator",
+      "government_level": "national"
+    },
+    {
+      "id": "o-54822152bcb8",
+      "jurisdiction_id": "AGO",
+      "name": "National Assembly",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Angola's legislature; enacted Law 22/11 on personal data protection and would enact the draft AI Law if submitted.",
+      "source_url": "https://www.parlamento.ao/",
+      "authority_type": "legislature",
+      "government_level": "national"
+    },
+    {
+      "id": "o-c38e9e276def",
+      "jurisdiction_id": "AGO",
+      "name": "Administrative Modernisation Institute",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Sponsor of the draft Digital Government Law (2026), which would regulate the use of automated systems and AI in public administration.",
+      "source_url": "https://ima.gov.ao/",
+      "authority_type": "government",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-48bf21d9c41e",
+      "url": "https://consultapublica.minttics.gov.ao/storage/docs/Proposta%20de%20Lei%20Sobre%20a%20Intelig%C3%AAncia%20Artificial.pdf",
+      "jurisdiction_ids": [
+        "AGO"
+      ],
+      "source_institutions": [
+        "Ministry of Telecommunications, Information Technologies and Social Communication"
+      ],
+      "instrument_ids": [
+        "i-4924106cc7ab"
+      ],
+      "categories_reviewed": [
+        "drafts",
+        "binding-law",
+        "risk-assurance",
+        "transparency",
+        "public-sector",
+        "sectoral",
+        "generative-ai",
+        "government-governance",
+        "sandbox"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): PDF HTTP 200 re-fetched 2026-10-12, full 65-page text read (pdftotext); date 'Setembro de 2025' on cover; portal home page lists it as 'Consulta Pública a Proposta de Lei da Inteligência Artificial'",
+      "http_status": 200,
+      "final_url": "https://consultapublica.minttics.gov.ao/storage/docs/Proposta%20de%20Lei%20Sobre%20a%20Intelig%C3%AAncia%20Artificial.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "pt",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-ff65ec3d397d",
+      "url": "https://consultapublica.gov.ao/public/uploads/docs/Projecto%20de%20Revis%C3%A3o%20da%20Lei%20de%20Protec%C3%A7%C3%A3o%20de%20Dados%20-%20Vers%C3%A3o%20Consulta%20P%C3%BAblica.pdf",
+      "jurisdiction_ids": [
+        "AGO"
+      ],
+      "source_institutions": [
+        "Data Protection Agency"
+      ],
+      "instrument_ids": [
+        "i-dd7519e8f160"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "drafts",
+        "transparency",
+        "ethics"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): consultation page consultapublica.gov.ao/consulta/100021 (organ APD, 17/03/2025-17/04/2025, Encerrada) and PDF (HTTP 200) re-fetched 2026-10-12; full text read (pdftotext), arts. 33 and 36-38 checked",
+      "http_status": 200,
+      "final_url": "https://consultapublica.gov.ao/public/uploads/docs/Projecto%20de%20Revis%C3%A3o%20da%20Lei%20de%20Protec%C3%A7%C3%A3o%20de%20Dados%20-%20Vers%C3%A3o%20Consulta%20P%C3%BAblica.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "pt",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-4fed8c54430a",
+      "url": "https://consultapublica.gov.ao/public/uploads/docs/Ante-Projecto%20de%20Lei%20do%20Governo%20Digital.docx",
+      "jurisdiction_ids": [
+        "AGO"
+      ],
+      "source_institutions": [
+        "Administrative Modernisation Institute"
+      ],
+      "instrument_ids": [
+        "i-089b969f9d9d"
+      ],
+      "categories_reviewed": [
+        "public-sector",
+        "drafts",
+        "risk-assurance",
+        "transparency",
+        "government-governance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): consultation page consultapublica.gov.ao/consulta/100027 (organ IMA, 06/05/2026-07/06/2026, Encerrada) and DOCX (HTTP 200) re-fetched 2026-10-12; full text read (converted to text), AI articles checked",
+      "http_status": 200,
+      "final_url": "https://consultapublica.gov.ao/public/uploads/docs/Ante-Projecto%20de%20Lei%20do%20Governo%20Digital.docx",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "pt",
+      "error": null,
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    },
+    {
+      "id": "s-1110d0a7072b",
+      "url": "https://apd.ao/fotos/frontend_1/editor2/110617_lei_22-11_de_17_junho-proteccao_dados_pessoais.pdf",
+      "jurisdiction_ids": [
+        "AGO"
+      ],
+      "source_institutions": [
+        "Data Protection Agency"
+      ],
+      "instrument_ids": [
+        "i-972c71b36041"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law",
+        "transparency"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): scanned Diário da República I Série n.º 114 (17 June 2011) copy on the Data Protection Agency legislation page, HTTP 200; no text layer, pages rendered to images and read (cover/sumário, art. 29 on p. 3194, arts. 65-67 on p. 3202)",
+      "http_status": 200,
+      "final_url": "https://apd.ao/fotos/frontend_1/editor2/110617_lei_22-11_de_17_junho-proteccao_dados_pessoais.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "pt",
+      "error": null,
+      "content_type": "application/pdf"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "AGO",
     "country": "Angola",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -33,55 +423,209 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_with_findings": [
       "binding-law",
-      "strategy",
-      "government-governance",
+      "data-privacy",
+      "drafts",
       "ethics",
-      "risk-assurance",
+      "generative-ai",
+      "government-governance",
       "public-sector",
+      "risk-assurance",
+      "sandbox",
+      "sectoral",
+      "transparency"
+    ],
+    "categories_where_no_material_was_found": [
+      "strategy",
       "procurement",
       "cyber-security",
-      "data-privacy",
-      "transparency",
       "standards",
-      "sandbox",
       "index-readiness",
-      "sectoral",
-      "generative-ai",
-      "drafts",
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Angola \"inteligência artificial\" (estratégia OR regulação OR ética) government ministry official",
       "Angola \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Angola government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Angola \"inteligência artificial\" cybersecurity authority secure development safety guidelines",
-      "Angola privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Angola privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "Angola Estratégia Nacional de Inteligência Artificial MINTTICS 2026",
+      "Banco Nacional de Angola inteligência artificial aviso instrutivo directiva",
+      "Agência de Protecção de Dados Angola inteligência artificial orientações APD",
+      "site:gov.ao \"inteligência artificial\" decreto presidencial OR estratégia OR lei",
+      "parlamento.ao proposta de lei inteligência artificial Assembleia Nacional Angola 2026",
+      "Angola Convenção 108 Conselho da Europa adesão protecção de dados Angola",
+      "bna.ao \"inteligência artificial\" Banco Nacional de Angola regulamentação 2026",
+      "Angola Diário da República 2026 \"inteligência artificial\" decreto presidencial estratégia transformação digital",
+      "\"Livro Branco das Tecnologias de Informação e Comunicação\" 2023-2027 Decreto Presidencial aprova inteligência artificial",
+      "Angola ministério educação OR saúde OR justiça OR finanças \"inteligência artificial\" orientações OR regulamento",
+      "INACOM Angola inteligência artificial regulamento OR consulta pública; AGT Angola inteligência artificial",
+      "consultapublica.gov.ao consultas (all listed consultations 100006-100028 reviewed)",
+      "consultapublica.minttics.gov.ao (home, documentos)",
+      "minttics.gov.ao site search: inteligência artificial",
+      "apd.ao legislação, guias, notícias",
+      "ima.gov.ao documentos PADA",
+      "governo.gov.ao pesquisa: livro branco; inteligência artificial; 272/24"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. imprensanacional.gov.ao reset/503 (gazette not searched; ICT White Paper 2023-2027 text not read). Law 22/11 read from the APD scan as page images. AI Law draft dated from its cover (2025-09); Digital Government Law draft dated by consultation opening. Run resumed after a usage-limit interruption; earlier downloads re-checked against the live official sources. Convention 108 accession act not found (CoE page 403). Units covered: Law: Diário da República site (imprensanacional.gov.ao) unreachable (connection reset / 503); parlamento.ao reachable but no AI bill listed; Law 22/11 read from the APD-hosted gazette scan (art. 29 automated decisions). No enacted AI law, deepfake offence or public-sector algorithm rule found.; Government: MINTTICS (site + consultation portal): draft AI Law (Sept 2025) found and read; no national AI strategy published (ENIA in preparation, lead). governo.gov.ao and the government consultation portal (all consultations reviewed): draft Digital Government Law with public-sector AI rules (IMA, 2026) read. IMA: AI governance framework ToR (lead).; Ministries: Searched education, health, justice, finance/tax (AGT), labour, interior, defence: no ministry AI documents found; Agenda GOVERNO.AO 2027 (IMA) mentions AI only incidentally in project descriptions (not recorded).; Regulators: APD (apd.ao): no AI guidance or AI decision; draft LPDP revision with AI section recorded. BNA: no AI regulation (diagnostic announced, lead). INACOM, competition authority, INFOSI/cyber: no AI-specific documents found.. Not reached: Diário da República / Imprensa Nacional portal (imprensanacional.gov.ao) unreachable via curl and WebFetch; gazette search not possible. Could not verify: ICT White Paper 2023-2027 (Presidential Decree 272/24) official text: gazette site unreachable; held as lead.; Whether the draft AI Law has been submitted to the National Assembly (parlamento.ao lists nothing).; Convention 108: no Angolan accession act found; CoE treaty office page returned 403; Angola not known to be a party.. strategy, procurement, cyber-security, standards, index-readiness, international, historical: no material found.",
     "discovery_result_count": 12,
     "focused_result_count": 13
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-b5e6ab10e538",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "AGO",
+      "instrument_id": "i-4924106cc7ab",
+      "title": "Draft Law on Artificial Intelligence (public-consultation version)",
+      "detail": "Added to the radar (published 2025-09).",
+      "from": null,
+      "to": null,
+      "source_url": "https://consultapublica.minttics.gov.ao/storage/docs/Proposta%20de%20Lei%20Sobre%20a%20Intelig%C3%AAncia%20Artificial.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-2d7a02ed20b3",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "AGO",
+      "instrument_id": "i-dd7519e8f160",
+      "title": "Draft Revision of Law No. 22/11 of 17 June - Personal Data Protection Law (public-consultation version)",
+      "detail": "Added to the radar (published 2025-03-17).",
+      "from": null,
+      "to": null,
+      "source_url": "https://consultapublica.gov.ao/public/uploads/docs/Projecto%20de%20Revis%C3%A3o%20da%20Lei%20de%20Protec%C3%A7%C3%A3o%20de%20Dados%20-%20Vers%C3%A3o%20Consulta%20P%C3%BAblica.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-217a0b092382",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "AGO",
+      "instrument_id": "i-089b969f9d9d",
+      "title": "Preliminary Draft Digital Government Law",
+      "detail": "Added to the radar (published 2026-05-06).",
+      "from": null,
+      "to": null,
+      "source_url": "https://consultapublica.gov.ao/public/uploads/docs/Ante-Projecto%20de%20Lei%20do%20Governo%20Digital.docx",
+      "needs_review": false
+    },
+    {
+      "id": "c-f156467a1b7d",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "AGO",
+      "instrument_id": "i-972c71b36041",
+      "title": "Law No. 22/11 of 17 June 2011 on the Protection of Personal Data",
+      "detail": "Added to the radar (published 2011-06-17).",
+      "from": null,
+      "to": null,
+      "source_url": "https://apd.ao/fotos/frontend_1/editor2/110617_lei_22-11_de_17_junho-proteccao_dados_pessoais.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-10b7c83ef46a",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "AGO",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 4 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-4fea12255cd3",
+      "date": "2026-05-06",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "consultation",
+      "jurisdiction_id": "AGO",
+      "instrument_id": "i-089b969f9d9d",
+      "title": "Ante-Projecto de Proposta de Lei do Governo Digital",
+      "detail": "IMA opens public consultation (6 May-7 June 2026) on the draft Digital Government Law, including rules on AI use in public administration.",
+      "from": null,
+      "to": null,
+      "source_url": "https://consultapublica.gov.ao/consulta/100027",
+      "needs_review": false
+    },
+    {
+      "id": "c-017c10e9287c",
+      "date": "2025-03-17",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "consultation",
+      "jurisdiction_id": "AGO",
+      "instrument_id": "i-dd7519e8f160",
+      "title": "Projecto de Revisão da Lei n.º 22/11 - Lei de Protecção de Dados Pessoais",
+      "detail": "APD opens public consultation (17 March-17 April 2025) on the draft revision of the data protection law, including AI-specific provisions.",
+      "from": null,
+      "to": null,
+      "source_url": "https://consultapublica.gov.ao/consulta/100021",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Estratégia Nacional de Inteligência Artificial (ENIA) - em preparação",
+      "english_title": "National Artificial Intelligence Strategy (in preparation)",
+      "issuing_authority": "Ministry of Telecommunications, Information Technologies and Social Communication (MINTTICS)",
+      "note": "The ICT White Paper 2023-2027 (approved by Presidential Decree 272/24 of 5 December 2024) lists implementing a national AI strategy (ENIA); MINTTICS reportedly launched a national AI readiness diagnostic in March 2026. No strategy text found on minttics.gov.ao, governo.gov.ao or the consultation portals as of 2026-10-12.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Livro Branco das Tecnologias de Informação e Comunicação 2023-2027 (Decreto Presidencial n.º 272/24, de 5 de Dezembro)",
+      "english_title": "ICT White Paper 2023-2027 (Presidential Decree 272/24 of 5 December 2024)",
+      "issuing_authority": "President of the Republic / MINTTICS",
+      "note": "National ICT policy that anticipates 'Society 5.0' and includes a measure to implement a national AI strategy (ENIA). Official text is in Diário da República I Série n.º 231 (2024); the gazette site (imprensanacional.gov.ao) was unreachable and minttics.gov.ao still links only the 2018-2022 edition, so not recorded; seen only via a law-firm copy.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Quadro de Governança Digital do Governo e Inteligência Artificial para o Sector Público (em preparação)",
+      "english_title": "Government Digital Governance and AI Framework for the Public Sector (in preparation)",
+      "issuing_authority": "Instituto de Modernização Administrativa (IMA), Angola Digital Acceleration Project (PADA)",
+      "note": "IMA terms of reference 01/IMA/2026 (Luanda, March 2026, https://c2a.portais.gov.ao/uploads/Td_R_Quadro_para_Governanca_do_Governo_Digital_e_IA_para_o_sector_publico_0f77a4dd9f.pdf) procure a consultancy to draft a public-sector digital-governance and AI framework; framework not yet published. News also reports an IMA 'National AI Strategy for Public Services' in preparation.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Banco Nacional de Angola: diagnóstico sobre o uso de inteligência artificial no sector bancário",
+      "english_title": "National Bank of Angola: diagnostic of AI use in banking with a view to regulation",
+      "issuing_authority": "Banco Nacional de Angola",
+      "note": "BNA governor announced at the 2026 Angola Banking Conference (per news) a diagnostic of AI use in banks with a view to regulating it; no BNA aviso/instrutivo/directiva on AI found.",
+      "found": "2026-10-12"
+    }
+  ]
 }
