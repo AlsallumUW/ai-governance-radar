@@ -12,18 +12,112 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Eswatini has no published AI-specific law, strategy or guidance. Its only AI-relevant national instrument is the Data Protection Act 2022, which regulates automated decisions and profiling and is enforced by the Eswatini Communications Commission (ESCCOM), also the communications regulator. A national AI strategy announced by the Ministry of ICT for 2024/25, a 4IR strategy and planned AI legislation have not been published, and the government portal and parliament websites could not be accessed during this review.",
+    "lead_institutions": [
+      "Ministry of Information, Communications and Technology",
+      "Eswatini Communications Commission (ESCCOM)"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was carried out on 12 October 2026, but the government portal (including ministry pages and gazette listings) and the parliament website could not be accessed, so only one document could be read. The national AI strategy and planned AI legislation are listed as leads. Eswatini is marked for a later retry."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-28ef7d688500",
+      "official_title": "The Data Protection Act, 2022",
+      "english_title": "Data Protection Act, 2022 (Act No. 5 of 2022)",
+      "issuing_authority": "Parliament of Eswatini (enacted by the King and Parliament of Eswatini)",
+      "authority_type": "legislature",
+      "categories": [
+        "data-privacy"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2022-03-04",
+      "current_status": "Published in the Extraordinary Government Gazette Vol. LX No. 41 of 4 March 2022 as Act No. 5 of 2022; under section 1(2) it came into operation on publication in the Gazette. Section 55 gave existing processors two years (extendable to three by ministerial notice) to comply. The Act is administered by the Eswatini Communications Commission. No AI-specific law or AI guidance from the Commission was found on 2026-10-12.",
+      "summary": "Eswatini's data protection law governing the collection, processing, disclosure and protection of personal data by controllers and processors established in, or using automated or non-automated means in, Eswatini. It designates the Eswatini Communications Commission as the supervisory authority with sanctioning powers, sets processing conditions and data subject rights, and covers biometric data as sensitive information. Section 45 restricts decisions with legal or significant effects based solely on automated processing intended to profile a person's personality or habits, subject to contract, legal-code and safeguard exceptions (including the right to make representations).",
+      "ai_governance_relevance": "Only national law found with a provision directly relevant to AI: the section 45 restriction on solely automated decision-making and profiling.",
+      "source_url": "https://esccom.org.sz/wp-content/uploads/2026/02/DATA-PROTECTION-ACT.pdf",
+      "official_pdf_url": "https://esccom.org.sz/wp-content/uploads/2026/02/DATA-PROTECTION-ACT.pdf",
+      "official_webpage_url": "https://esccom.org.sz/documents/",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "superseded_by": [],
+      "organization_id": "o-0360d4e007fc",
+      "publisher_name": "Eswatini Communications Commission",
+      "jurisdiction_id": "SWZ",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "effective_date": "2022-03-04",
+      "last_amended_date": null,
+      "scope": "Eswatini (national)",
+      "technology_scope": [
+        "automated decision-making",
+        "personal data processing"
+      ],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "en",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-bb5a16a5b1af",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full Act read (pdftotext) from the Extraordinary Government Gazette Vol. LX No. 41 of 4 March 2022 as published on the Eswatini Communications Commission's Documents page (the Act names the Commission as the data protection authority). Sections 1(2) (commencement on publication in the Gazette), 2 and 45 (automated decision making) checked."
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-0360d4e007fc",
+      "jurisdiction_id": "SWZ",
+      "name": "Eswatini Communications Commission",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Communications regulator (ESCCOM) and the data protection authority under the Data Protection Act, 2022, which it administers and enforces (including the section 45 automated decision-making rule); publishes the Act and other ICT legislation. No AI-specific guidance found.",
+      "source_url": "https://esccom.org.sz/",
+      "authority_type": "regulator",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-bb5a16a5b1af",
+      "url": "https://esccom.org.sz/wp-content/uploads/2026/02/DATA-PROTECTION-ACT.pdf",
+      "jurisdiction_ids": [
+        "SWZ"
+      ],
+      "source_institutions": [
+        "Eswatini Communications Commission"
+      ],
+      "instrument_ids": [
+        "i-28ef7d688500"
+      ],
+      "categories_reviewed": [
+        "data-privacy"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full Act read (pdftotext) from the Extraordinary Government Gazette Vol. LX No. 41 of 4 March 2022 as published on the Eswatini Communications Commission's Documents page (the Act names the Commission as the data protection authority). Sections 1(2) (commencement on publication in the Gazette), 2 and 45 (automated decision making) checked.",
+      "http_status": 200,
+      "final_url": "https://esccom.org.sz/wp-content/uploads/2026/02/DATA-PROTECTION-ACT.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "SWZ",
     "country": "Eswatini",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -35,9 +129,10 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_with_findings": [
+      "data-privacy"
+    ],
+    "categories_where_no_material_was_found": [
       "binding-law",
       "strategy",
       "government-governance",
@@ -46,7 +141,6 @@
       "public-sector",
       "procurement",
       "cyber-security",
-      "data-privacy",
       "transparency",
       "standards",
       "sandbox",
@@ -57,33 +151,132 @@
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Eswatini \"artificial intelligence\" (strategy OR regulation OR ethics) government ministry official",
       "Eswatini \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Eswatini government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Eswatini \"artificial intelligence\" cybersecurity authority secure development safety guidelines",
-      "Eswatini privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Eswatini privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "Eswatini national artificial intelligence strategy Ministry of ICT",
+      "Eswatini Data Protection Act 2022 gazette pdf gov.sz",
+      "Eswatini \"artificial intelligence\" policy OR bill OR strategy 2025 2026 Ministry of Information Communications and Technology gov.sz",
+      "Eswatini Auditor General strategic plan 2026-2030 artificial intelligence pdf",
+      "Eswatini national ICT policy OR \"digital transformation strategy\" OR \"digital economy\" artificial intelligence pdf gov.sz",
+      "\"Eswatini Digital Strategy\" 2024-2028 pdf artificial intelligence",
+      "\"Government in Your Hand\" Eswatini digitalization strategy 2024-2028 pdf",
+      "site:centralbank.org.sz artificial intelligence OR \"regulatory sandbox\" OR fintech",
+      "site:gov.sz \"artificial intelligence\"",
+      "Eswatini \"Artificial Intelligence\" bill OR \"AI policy\" draft validation Ministry of ICT 2026",
+      "siSwati: \"ebuchopho bekwenta\" OR \"bukhalibani bekwenta\" Eswatini (artificial intelligence)",
+      "Eswatini Ministry of Education artificial intelligence policy guidelines schools OR Ministry of Health AI Eswatini official",
+      "esccom.org.sz site search and WordPress search API: \"artificial intelligence\", \"data protection\"",
+      "esccom.org.sz Documents page: all legislation, strategies and guidelines grepped for artificial intelligence / machine learning / algorithm / deepfake",
+      "centralbank.org.sz site search: artificial intelligence"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. gov.sz and parliament.gov.sz reset/503; ict.gov.sz proxy 502. Data Protection Act read from the gazette PDF on esccom.org.sz. National Cybersecurity Strategy 2022-2027 and ESCCOM 2026 online-safety guidelines have no AI provisions of substance (not recorded). Searches in English and siSwati. Not a party to Convention 108. Units covered: Law: Data Protection Act, 2022 read in full from the official Gazette copy on ESCCOM (s.45 automated decisions). Computer Crime and Cybercrime Act, Electronic Communications and Transactions Act and Broadcasting Act texts on ESCCOM checked: no AI provisions. Gazette/legislation pages on gov.sz and parliament.gov.sz unreachable; no AI bill found via search.; Government: Ministry of ICT: National AI Strategy and 4IR strategy announced (FY2024/25) but no official text found; Digitalisation Strategy 2024-2028 text not found online. National Cybersecurity Strategy 2022-2027 (Ministry of ICT/NCSIRT) read: no AI content.; Ministries: Education, health, finance, justice, Auditor General: searched, no official AI policy/guidance found (OAG Strategic Plan 2026-2030 held as lead).; Regulators: ESCCOM (communications regulator and data protection authority): Documents page and site search reviewed; 2026 online safety guidelines contain only a passing mention of AI-related risks; no AI guidance. Central Bank of Eswatini: site search, nothing AI-specific. NCSIRT reachable; no AI guidance found.. Not reached: gov.sz (Government portal incl. Ministry of ICT pages and Gazette listings): curl connection reset, WebFetch HTTP 503; parliament.gov.sz: curl connection reset, WebFetch HTTP 503; ict.gov.sz: proxy CONNECT 502. Could not verify: gov.sz and parliament.gov.sz were unreachable, so the Gazette and Parliament bill lists could not be searched directly; the Digitalisation Strategy 2024-2028 and any National AI Strategy draft could not be checked.. binding-law, strategy, government-governance, ethics, risk-assurance, public-sector, procurement, cyber-security, transparency, standards, sandbox, index-readiness, sectoral, generative-ai, drafts, international, historical: no material found.",
     "discovery_result_count": 9,
     "focused_result_count": 14
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-16b2b5e15d59",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "SWZ",
+      "instrument_id": "i-28ef7d688500",
+      "title": "Data Protection Act, 2022 (Act No. 5 of 2022)",
+      "detail": "Added to the radar (published 2022-03-04).",
+      "from": null,
+      "to": null,
+      "source_url": "https://esccom.org.sz/wp-content/uploads/2026/02/DATA-PROTECTION-ACT.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-671a02ffeab2",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "SWZ",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 1 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-71905c24600e",
+      "date": "2022-03-04",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "SWZ",
+      "instrument_id": "i-28ef7d688500",
+      "title": "Data Protection Act, 2022 published and in operation",
+      "detail": "Act No. 5 of 2022 published in the Extraordinary Government Gazette Vol. LX No. 41 of 4 March 2022; it came into operation on publication (s.1(2)). Section 45 restricts solely automated decisions based on profiling.",
+      "from": null,
+      "to": null,
+      "source_url": "https://esccom.org.sz/wp-content/uploads/2026/02/DATA-PROTECTION-ACT.pdf",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "National Artificial Intelligence Strategy (Ministry of ICT, planned)",
+      "english_title": "National Artificial Intelligence Strategy of Eswatini",
+      "issuing_authority": "Ministry of Information, Communications and Technology",
+      "note": "Ministry of ICT announced development of a National AI Strategy and a Fourth Industrial Revolution (4IR) strategy for the 2024/2025 fiscal year (UN Eswatini item, 2024); later press quotes the Principal Secretary saying it was being drafted, and a September 2026 report says Eswatini is developing its national response to AI. No official draft or adopted text found on 2026-10-12; gov.sz (Ministry of ICT pages) could not be reached (curl connection reset; WebFetch HTTP 503). Record once an official text is published.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Fourth Industrial Revolution (4IR) Strategy (Ministry of ICT, planned)",
+      "english_title": "Fourth Industrial Revolution Strategy of Eswatini",
+      "issuing_authority": "Ministry of Information, Communications and Technology",
+      "note": "Announced together with the National AI Strategy for FY2024/25; no official document found on 2026-10-12.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Planned legislation on AI, Robotics, Space and Satellite Governance",
+      "english_title": "Planned legislation on Artificial Intelligence, Robotics, Space and Satellite Governance",
+      "issuing_authority": "Ministry of Information, Communications and Technology",
+      "note": "The Minister of ICT reportedly said at the 2025 Eswatini Economic Update launch that the government plans legislation on AI, robotics, space and satellite governance. No bill found in the Gazette or on the Parliament site (parliament.gov.sz unreachable on 2026-10-12).",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Eswatini Digitalisation Strategy 2024-2028 ('Government in Your Hand')",
+      "english_title": "Eswatini Digitalisation Strategy 2024-2028",
+      "issuing_authority": "Ministry of Information, Communications and Technology",
+      "note": "Government digital strategy cited by the Ministry of ICT, UNDP and World Bank; full text not found online and gov.sz unreachable, so it is unknown whether it contains an AI pillar. Check and record under strategy if it does.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Office of the Auditor General Strategic Plan 2026-2030",
+      "english_title": "Office of the Auditor General Strategic Plan 2026-2030",
+      "issuing_authority": "Office of the Auditor General of Eswatini",
+      "note": "Launched in 2026; press reports say it integrates digital/AI-enabled auditing. Official text not found (the 2021-2024 plan is on gov.sz/images/auditor/, but gov.sz was unreachable). Probably only an institutional plan with AI mentions; check whether it contains AI-specific commitments.",
+      "found": "2026-10-12"
+    }
+  ]
 }

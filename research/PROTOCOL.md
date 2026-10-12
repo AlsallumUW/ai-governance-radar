@@ -48,6 +48,8 @@ A file hosted by a third party counts as official only if the issuing body's own
 Regulator decisions cite the decision itself, not the media release about it.
 Central-government publication portals (e.g. France's vie-publique.fr and ia.numerique.gouv.fr) count as official channels for documents of that government's own bodies.
 
+An official gazette copy hosted by another state body (e.g. a central bank or a national legal information institute run by the state) counts as official.
+
 ## 2. Where to search (every country, every time)
 
 1. National AI body or AI office, if any
