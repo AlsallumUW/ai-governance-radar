@@ -10,18 +10,116 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Guinea has no AI-specific law or published AI strategy. Its only binding text is the 2016 law on cybersecurity and personal data protection, whose Article 27 limits decisions based solely on automated profiling. A national AI roadmap for 2026-2035 was reportedly validated in December 2025 with UNDP support, but the digital ministry's website could not be accessed during this review and no official text was found.",
+    "lead_institutions": [
+      "Ministry of Posts, Telecommunications and Digital Economy",
+      "National Agency for Information Systems Security (ANSSI)"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was carried out on 12 October 2026, but the digital ministry, National Assembly and data protection authority websites could not be accessed, so only one document could be read. The national AI roadmap is listed as a lead. Guinea is marked for a later retry."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-fdab03c700f7",
+      "official_title": "Loi N° L/2016/037/AN relative à la cyber-sécurité et la protection des données à caractère personnel en République de Guinée",
+      "english_title": "Law No. L/2016/037/AN on Cybersecurity and the Protection of Personal Data in the Republic of Guinea",
+      "issuing_authority": "National Assembly (promulgated by the President of the Republic)",
+      "authority_type": "legislature",
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2016-07-26",
+      "effective_date": "2016-07-26",
+      "current_status": "Promulgated 26 July 2016; Article 65 states it enters into force from its promulgation and is to be published in the Journal Officiel. The ANSSI publishes the signed text on its laws page. Article 27 restricts decisions based solely on automated processing that evaluates personality or produces a profile. Controllers had one year from promulgation to comply (Article 63). No AI-specific amendment found as of October 2026.",
+      "summary": "Guinea's framework law on cybersecurity (first part, cybercrime offences and security of information systems) and personal data protection (second part, 65 articles). The data protection part requires declarations or authorisations with the authority in charge of personal data protection, sets processing principles (consent, purpose limitation, accuracy, security, transfer rules) and data subject rights of access, rectification and objection. Article 27 bars judicial decisions assessing a person's behaviour from being based on automated processing intended to evaluate their personality, and bars administrative or private decisions assessing human behaviour from being based solely on automated processing that defines the person's profile.",
+      "ai_governance_relevance": "Only binding Guinean text with an explicit rule on automated decision-making and profiling (Article 27); governs personal data used to train and run AI systems.",
+      "source_url": "https://anssi.gov.gn/wp-content/uploads/2025/03/loi_l2016037an_relative_a_la_cybersecurite_et_protection_des_do.pdf",
+      "official_pdf_url": "https://anssi.gov.gn/wp-content/uploads/2025/03/loi_l2016037an_relative_a_la_cybersecurite_et_protection_des_do.pdf",
+      "official_webpage_url": "https://anssi.gov.gn/nproject/loi-l037-2016-relative-a-la-cybersecurite-et-la-protection-des-donnees-a-caractere-personnel/",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-89d0399cd3b7",
+      "publisher_name": "National Agency for Information Systems Security (ANSSI)",
+      "jurisdiction_id": "GIN",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Guinea (national)",
+      "technology_scope": [
+        "data",
+        "automated decision-making"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [
+        "Journal Officiel publication reference not located (scanned gazette issues not searchable)"
+      ],
+      "language": "fr",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-7f2d7c8b3e5b",
+      "evidence_reference": "curl (browser user agent, --max-time 60): 57-page scanned PDF downloaded from the ANSSI 'Lois' page (no text layer); pages 1, 40-47 and 56-57 rendered to images and read: title page, Article 27 (automated decisions), Articles 63-65 and promulgation signature 'Conakry, le 26 JUIL. 2016' (Prof. Alpha Condé)"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-89d0399cd3b7",
+      "jurisdiction_id": "GIN",
+      "name": "National Assembly",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Guinea's legislature (Assemblée nationale) that adopted Law L/2016/037/AN on cybersecurity and personal data protection; since 2021 the National Transition Council (CNT) has acted as the legislative body.",
+      "source_url": "https://anssi.gov.gn/nproject/loi-l037-2016-relative-a-la-cybersecurite-et-la-protection-des-donnees-a-caractere-personnel/",
+      "authority_type": "legislature",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-7f2d7c8b3e5b",
+      "url": "https://anssi.gov.gn/wp-content/uploads/2025/03/loi_l2016037an_relative_a_la_cybersecurite_et_protection_des_do.pdf",
+      "jurisdiction_ids": [
+        "GIN"
+      ],
+      "source_institutions": [
+        "National Agency for Information Systems Security (ANSSI)"
+      ],
+      "instrument_ids": [
+        "i-fdab03c700f7"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): 57-page scanned PDF downloaded from the ANSSI 'Lois' page (no text layer); pages 1, 40-47 and 56-57 rendered to images and read: title page, Article 27 (automated decisions), Articles 63-65 and promulgation signature 'Conakry, le 26 JUIL. 2016' (Prof. Alpha Condé)",
+      "http_status": 200,
+      "final_url": "https://anssi.gov.gn/wp-content/uploads/2025/03/loi_l2016037an_relative_a_la_cybersecurite_et_protection_des_do.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "fr",
+      "error": null,
+      "content_type": "application/pdf"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "GIN",
     "country": "Guinea",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -33,10 +131,11 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_with_findings": [
       "binding-law",
+      "data-privacy"
+    ],
+    "categories_where_no_material_was_found": [
       "strategy",
       "government-governance",
       "ethics",
@@ -44,7 +143,6 @@
       "public-sector",
       "procurement",
       "cyber-security",
-      "data-privacy",
       "transparency",
       "standards",
       "sandbox",
@@ -55,33 +153,111 @@
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Guinea \"intelligence artificielle\" (stratégie OR réglementation OR éthique) government ministry official",
       "Guinea \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Guinea government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Guinea \"intelligence artificielle\" cybersecurity authority secure development safety guidelines",
-      "Guinea privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Guinea privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "Guinée stratégie nationale intelligence artificielle ministère des postes télécommunications économie numérique",
+      "Guinée loi L/2016/037/AN cybersécurité protection des données à caractère personnel",
+      "site:gov.gn intelligence artificielle",
+      "\"feuille de route\" intelligence artificielle Guinée 2026-2035 validation ministère",
+      "Guinée Conseil des ministres projet de loi intelligence artificielle OR \"protection des données\" 2025 2026",
+      "Guinea \"Stratégie nationale de cybersécurité\" OR \"politique nationale du numérique\" numérique intelligence artificielle gov.gn",
+      "site search 'intelligence artificielle': gouvernement.gov.gn, presidence.gov.gn, cnt.gov.gn, arpt.gov.gn, bcrg-guinee.org, anssi.gov.gn",
+      "sgg.gov.gn lois/décrets listings and journal-officiel.sgg.gov.gn index (browsed, no full-text search)"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. mpten.gov.gn proxy 502/DNS failure; assemblee.gov.gn and apdp.gov.gn proxy 502. sgg.gov.gn Journal officiel has no full-text search (scans). Law L/2016/037/AN read from the ANSSI scan as images (date from the signature page). ANSSI also hosts Decree D/2017/184/PRG/SGG ratifying the AU Malabo Convention (regional layer; not recorded). Not a party to Convention 108. Units covered: Law: Journal officiel/SGG portal (sgg.gov.gn, journal-officiel.sgg.gov.gn: listings only, scanned issues, no full-text search) and CNT site searched; ANSSI laws page gave the signed text of Law L/2016/037/AN (data protection incl. Art. 27 automated decisions). No AI-specific law, deepfake offence or AI bill found.; Government: Presidency and government portal searched: AI items are news only. National AI roadmap 2026-2035 (reported validated Dec 2025) and planned AI strategy and data strategy have no published official text -> leads.; Ministries: Digital ministry (mpten.gov.gn) unreachable by curl and WebFetch; no education, health, justice, defence, finance, labour or interior AI documents found.; Regulators: ANSSI (cyber), ARPT (telecom: AI staff-training news only), BCRG (central bank: no AI document) searched; the personal data protection authority has no reachable website. Searched, nothing AI-specific found.. Not reached: Ministry of Posts, Telecommunications and the Digital Economy website (mpten.gov.gn: DNS/proxy failure for curl and WebFetch); National Assembly site (assemblee.gov.gn: proxy 502); Data protection authority (apdp.gov.gn: proxy 502). Could not verify: National AI roadmap 2026-2035 (ministry site unreachable; only press reports). strategy, government-governance, ethics, risk-assurance, public-sector, procurement, cyber-security, transparency, standards, sandbox, index-readiness, sectoral, generative-ai, drafts, international, historical: no material found.",
     "discovery_result_count": 12,
     "focused_result_count": 10
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-37529a8b3a53",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "GIN",
+      "instrument_id": "i-fdab03c700f7",
+      "title": "Law No. L/2016/037/AN on Cybersecurity and the Protection of Personal Data in the Republic of Guinea",
+      "detail": "Added to the radar (published 2016-07-26).",
+      "from": null,
+      "to": null,
+      "source_url": "https://anssi.gov.gn/wp-content/uploads/2025/03/loi_l2016037an_relative_a_la_cybersecurite_et_protection_des_do.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-b97ed554309b",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "GIN",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 1 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-3a64dd93fa14",
+      "date": "2016-07-26",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "GIN",
+      "instrument_id": "i-fdab03c700f7",
+      "title": "Law L/2016/037/AN on cybersecurity and personal data protection promulgated",
+      "detail": "Promulgated by the President on 26 July 2016 and in force from promulgation (Article 65); Article 27 restricts decisions based solely on automated profiling.",
+      "from": null,
+      "to": null,
+      "source_url": "https://anssi.gov.gn/wp-content/uploads/2025/03/loi_l2016037an_relative_a_la_cybersecurite_et_protection_des_do.pdf",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Feuille de route nationale de l'intelligence artificielle 2026-2035",
+      "english_title": "National Artificial Intelligence Roadmap 2026-2035",
+      "issuing_authority": "Ministry of Posts, Telecommunications and the Digital Economy",
+      "note": "Reported validated on 20 December 2025 after a workshop with UNDP, building on the October 2025 AI Landscape Assessment (AILA). No official full text found; the ministry website (mpten.gov.gn) could not be reached. Promote once the ministry publishes the document.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Stratégie nationale d'intelligence artificielle (en préparation)",
+      "english_title": "National Artificial Intelligence Strategy (in preparation)",
+      "issuing_authority": "Ministry of Posts, Telecommunications and the Digital Economy",
+      "note": "The ministry announced in October 2025 that a national AI strategy (ethics, data protection and algorithmic accountability framework, skills) would follow the AILA assessment. No document published.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Stratégie nationale des données (en préparation)",
+      "english_title": "National Data Strategy (in preparation)",
+      "issuing_authority": "Government of Guinea",
+      "note": "Reported to be in preparation, linked to Simandou 2040 and covering AI and data-economy uses. No official document found.",
+      "found": "2026-10-12"
+    }
+  ]
 }
