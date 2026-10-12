@@ -10,371 +10,803 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Portugal steers AI through Council of Ministers acts: the National Digital Strategy (2024) and the National AI Agenda, approved in January 2026 with a governance model and 32 initiatives for 2026-2030, replacing the earlier AI Portugal 2030 strategy (2019) in practice. A 2026 decree-law requires prior authorisation for public-sector AI projects, the 2021 Charter of Human Rights in the Digital Age has an article on AI and algorithmic decisions, and the state technology agency (ARTE) publishes the GuIA guide for AI in public services. The law implementing the EU AI Act, with the communications regulator ANACOM as lead authority, is still pending; the data protection commission (CNPD) issued a 2026 opinion on AI in public procurement.",
+    "lead_institutions": [
+      "Presidency of the Council of Ministers",
+      "Agency for Technological Reform of the State (ARTE)",
+      "National Data Protection Commission (CNPD)",
+      "ANACOM"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was completed on 12 October 2026 and covers national law, government, ministries and regulators. The law implementing the EU AI Act and ANACOM's designation are still pending and are listed as leads."
   },
   "instruments": [
     {
       "id": "i-22c45f8072d7",
-      "official_title": "Agenda Nacional de Inteligência Artificial (ANIA)",
-      "english_title": "National Artificial Intelligence Agenda (ANIA)",
-      "jurisdiction_id": "PRT",
-      "issuing_authority": null,
-      "publisher_name": "digital.gov.pt",
-      "authority_type": null,
-      "government_level": "national",
+      "official_title": "Agenda Nacional de Inteligência Artificial — IA ao serviço da sociedade e da competitividade de Portugal",
+      "english_title": "National Artificial Intelligence Agenda (ANIA): AI at the service of society and Portugal's competitiveness",
+      "issuing_authority": "Government of Portugal",
+      "authority_type": "government",
       "categories": [
-        "strategy"
+        "strategy",
+        "ethics",
+        "public-sector"
       ],
+      "legal_status": "national_strategy",
+      "lifecycle": "adopted",
+      "publication_date": "2026-01",
+      "current_status": "Standalone agenda document dated January 2026 (author: Governo de Portugal) on digital.gov.pt (page updated 08.01.2026); formally approved as annex I of Council of Ministers Resolution 2/2026 (i-0bd1f56f2511).",
+      "summary": "Portugal's national AI agenda, framed as Action #20 of the 2026-27 Action Plan of the National Digital Strategy. It sets six guiding principles (including responsible innovation and the State as catalyst) and four pillars (infrastructure and data; innovation and adoption; talent and skills; responsibility and ethics), operationalised through 32 initiatives across universities, research centres, companies and public administration. It is aligned with the EU AI Continent Action Plan and Apply AI strategy.",
+      "ai_governance_relevance": "Current national AI strategy.",
+      "source_url": "https://bo.digital.gov.pt/api/assets/etic/f29cb51f-86dd-4e8d-9380-c76fa509e5ff/",
+      "official_pdf_url": "https://bo.digital.gov.pt/api/assets/etic/f29cb51f-86dd-4e8d-9380-c76fa509e5ff/",
+      "official_webpage_url": "https://digital.gov.pt/pt/documentos/agenda-nacional-de-ia",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-d31a358e815d",
+      "publisher_name": "Agency for Technological Reform of the State",
+      "jurisdiction_id": "PRT",
+      "government_level": "national",
+      "subnational_unit": null,
       "category": "strategy",
       "subcategory": null,
-      "legal_status": null,
-      "publication_date": null,
       "effective_date": null,
       "last_amended_date": null,
-      "current_status": "Official source located; current status requires review",
-      "scope": null,
-      "sectors": [],
+      "scope": "Portugal (national)",
       "technology_scope": [
         "AI"
       ],
-      "summary": "Official source located for this governance category. The document’s adoption, legal effect, scope and version history remain under review.",
-      "ai_governance_relevance": "Primary-source material for assessing strategy & action plans.",
-      "source_url": "https://digital.gov.pt/pt/estrategia-digital/agenda-nacional-de-ia",
-      "official_pdf_url": null,
-      "official_webpage_url": "https://digital.gov.pt/pt/estrategia-digital/agenda-nacional-de-ia",
-      "language": "pt",
-      "supersedes": [],
       "superseded_by": [],
       "related_instruments": [],
       "regional_applicability": [],
-      "verification_date": "2026-10-06",
-      "verification_level": "primary_source_located",
       "metadata_gaps": [
-        "Issuing authority",
-        "Publication/effective dates",
-        "Current legal status",
-        "Precise applicability",
-        "Version history",
-        "Authority type",
-        "Government level",
-        "Publication date",
-        "Effective date",
-        "Last amended date"
+        "Exact day of publication (document states January 2026)"
       ],
-      "source_kind": "official_publication",
-      "evidence_reference": "turn27search0",
-      "link_status": "reachable",
-      "document_access_type": "official_publication_or_full_text_page",
-      "source_id": "s-c2a4919afa05",
-      "organization_id": "o-d31a358e815d",
-      "lifecycle": "unverified",
-      "first_recorded": "2026-10-06",
+      "language": "pt",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
       "last_changed": null,
-      "subnational_unit": null
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-0aa43bf8237c",
+      "evidence_reference": "curl (browser user agent, --max-time 60): digital.gov.pt ANIA pages read; linked PDF downloaded and read with pdftotext (cover date 'Janeiro 2026', executive summary)"
     },
     {
       "id": "i-dacfcbc4d6b7",
-      "official_title": "GuIA – Guia para a Inteligência Artificial",
-      "english_title": "GuIA: Guide to Artificial Intelligence",
-      "jurisdiction_id": "PRT",
-      "issuing_authority": null,
-      "publisher_name": "digital.gov.pt",
-      "authority_type": null,
-      "government_level": "national",
+      "official_title": "GuIA — Guia para a Inteligência Artificial",
+      "english_title": "GuIA: Guide to Artificial Intelligence (ethical, transparent and responsible AI)",
+      "issuing_authority": "Agency for Technological Reform of the State (ARTE), originally Agency for Administrative Modernisation (AMA)",
+      "authority_type": "government",
       "categories": [
-        "public-sector"
+        "public-sector",
+        "ethics",
+        "risk-assurance",
+        "generative-ai"
       ],
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2026-03",
+      "current_status": "Current version v.1.3 dated March 2026 (ARTE); digital.gov.pt page (author AMA) last updated 30.06.2025. Earlier AMA versions were not dated on the page.",
+      "summary": "Public-administration guide (84 pages, version 1.3) promoting progressive adoption of ethical, transparent and responsible AI, produced under the 'Responsible AI' project. It is organised in three parts: values, principles and recommendations; assessment dimensions; and an ethical risk-assessment tool, with an executive summary published separately. It refers to the EU trustworthy-AI requirements (ALTAI) and covers risks such as deepfakes.",
+      "ai_governance_relevance": "Main national guidance on responsible AI use in public administration, with a risk-assessment tool.",
+      "source_url": "https://bo.digital.gov.pt/api/assets/etic/03da55eb-a8b8-47eb-a221-4a685eb082ea/",
+      "official_pdf_url": "https://bo.digital.gov.pt/api/assets/etic/03da55eb-a8b8-47eb-a221-4a685eb082ea/",
+      "official_webpage_url": "https://digital.gov.pt/pt/documentos/guia-para-a-inteligencia-artificial",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-d31a358e815d",
+      "publisher_name": "Agency for Technological Reform of the State",
+      "jurisdiction_id": "PRT",
+      "government_level": "national",
+      "subnational_unit": null,
       "category": "public-sector",
       "subcategory": null,
-      "legal_status": null,
-      "publication_date": null,
       "effective_date": null,
       "last_amended_date": null,
-      "current_status": "Official source located; current status requires review",
-      "scope": null,
-      "sectors": [],
+      "scope": "Portugal (national)",
       "technology_scope": [
         "AI"
       ],
-      "summary": "Official source located for this governance category. The document’s adoption, legal effect, scope and version history remain under review.",
-      "ai_governance_relevance": "Primary-source material for assessing public-sector ai.",
-      "source_url": "https://digital.gov.pt/pt/documentos/guia-para-a-inteligencia-artificial",
-      "official_pdf_url": null,
-      "official_webpage_url": "https://digital.gov.pt/pt/documentos/guia-para-a-inteligencia-artificial",
-      "language": "pt",
-      "supersedes": [],
       "superseded_by": [],
       "related_instruments": [],
       "regional_applicability": [],
-      "verification_date": "2026-10-06",
-      "verification_level": "primary_source_located",
       "metadata_gaps": [
-        "Issuing authority",
-        "Publication/effective dates",
-        "Current legal status",
-        "Precise applicability",
-        "Version history",
-        "Authority type",
-        "Government level",
-        "Publication date",
-        "Effective date",
-        "Last amended date"
+        "Date of first version"
       ],
-      "source_kind": "official_publication",
-      "evidence_reference": "turn27search2",
-      "link_status": "reachable",
-      "document_access_type": "official_publication_or_full_text_page",
-      "source_id": "s-8167cf114c33",
-      "organization_id": "o-d31a358e815d",
-      "lifecycle": "unverified",
-      "first_recorded": "2026-10-06",
+      "language": "pt",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
       "last_changed": null,
-      "subnational_unit": null
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-47c34b4b3032",
+      "evidence_reference": "curl (browser user agent, --max-time 60): digital.gov.pt page read; linked 84-page PDF downloaded and read with pdftotext (version v.1.3, 'Data: março de 2026')"
     },
     {
       "id": "i-df7d42c3e13f",
-      "official_title": "Decree-Law No. 85/2026",
-      "english_title": "Decree-Law No. 85/2026",
-      "jurisdiction_id": "PRT",
-      "issuing_authority": null,
-      "publisher_name": "digital.gov.pt",
-      "authority_type": null,
-      "government_level": "national",
+      "official_title": "Decreto-Lei n.º 85/2026 — Cria a Rede de Simplificação e Tecnologias do Estado",
+      "english_title": "Decree-Law No. 85/2026 creating the State Simplification and Technology Network",
+      "issuing_authority": "Government of Portugal (Council of Ministers)",
+      "authority_type": "government",
       "categories": [
-        "binding-law"
+        "binding-law",
+        "public-sector",
+        "government-governance"
       ],
+      "legal_status": "binding_regulation",
+      "lifecycle": "in_force",
+      "publication_date": "2026-04-13",
+      "current_status": "Published in Diário da República, 1st series, No. 71, 13 April 2026 (approved by Council of Ministers 26 February 2026, promulgated 2 April 2026). The text read contains no specific entry-into-force article, so effective_date is left null.",
+      "summary": "Decree-law creating the State Simplification and Technology Network under the minister for State reform, with a Coordination Committee for the Digital Strategy, and abolishing the Council for Digital in Public Administration (revoking RCM 94/2024). Article 6(1)(c) requires direct and indirect State administration bodies, including public enterprises, to obtain the Committee's prior authorisation for artificial intelligence projects developed by or for them, alongside large IT procurements, sovereign cloud and data-centre projects.",
+      "ai_governance_relevance": "Binding rule subjecting public-sector AI projects to central prior authorisation.",
+      "source_url": "https://bo.digital.gov.pt/api/assets/etic/7554f8d8-8788-4ce1-8497-06cea1d976a8/",
+      "official_pdf_url": "https://bo.digital.gov.pt/api/assets/etic/7554f8d8-8788-4ce1-8497-06cea1d976a8/",
+      "official_webpage_url": "https://digital.gov.pt/en/documentos/decreto-lei-85-2026",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-45f987f9b06b",
+      "publisher_name": "Agency for Technological Reform of the State",
+      "jurisdiction_id": "PRT",
+      "government_level": "national",
+      "subnational_unit": null,
       "category": "binding-law",
       "subcategory": null,
-      "legal_status": null,
-      "publication_date": null,
       "effective_date": null,
       "last_amended_date": null,
-      "current_status": "Official source located; current status requires review",
-      "scope": null,
-      "sectors": [],
+      "scope": "Portugal (national)",
       "technology_scope": [
         "AI"
       ],
-      "summary": "Official source located for this governance category. The document’s adoption, legal effect, scope and version history remain under review.",
-      "ai_governance_relevance": "Primary-source material for assessing laws & regulations.",
-      "source_url": "https://digital.gov.pt/en/documentos/decreto-lei-85-2026",
-      "official_pdf_url": null,
-      "official_webpage_url": "https://digital.gov.pt/en/documentos/decreto-lei-85-2026",
-      "language": "pt",
-      "supersedes": [],
       "superseded_by": [],
       "related_instruments": [],
       "regional_applicability": [],
-      "verification_date": "2026-10-06",
-      "verification_level": "primary_source_located",
       "metadata_gaps": [
-        "Issuing authority",
-        "Publication/effective dates",
-        "Current legal status",
-        "Precise applicability",
-        "Version history",
-        "Authority type",
-        "Government level",
-        "Publication date",
-        "Effective date",
-        "Last amended date"
+        "Effective date (no entry-into-force article in text)"
       ],
-      "source_kind": "official_publication",
-      "evidence_reference": "turn27search6",
-      "link_status": "reachable",
-      "document_access_type": "official_publication_or_full_text_page",
-      "source_id": "s-1326324676de",
-      "organization_id": "o-d31a358e815d",
-      "lifecycle": "unverified",
-      "first_recorded": "2026-10-06",
+      "language": "pt",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
       "last_changed": null,
-      "subnational_unit": null
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-94aa727e56a2",
+      "evidence_reference": "curl (browser user agent, --max-time 60): digital.gov.pt page read; linked Diário da República PDF (7 pp.) read in full with pdftotext; art. 6(1)(c) and art. 13 confirmed"
     },
     {
       "id": "i-0bd1f56f2511",
-      "official_title": "Resolution of the Council of Ministers No. 2/2026",
-      "english_title": "Resolution of the Council of Ministers No. 2/2026",
-      "jurisdiction_id": "PRT",
-      "issuing_authority": null,
-      "publisher_name": "digital.gov.pt",
-      "authority_type": null,
-      "government_level": "national",
+      "official_title": "Resolução do Conselho de Ministros n.º 2/2026 — Aprova a Agenda Nacional de Inteligência Artificial e o respetivo modelo de governação",
+      "english_title": "Council of Ministers Resolution No. 2/2026 approving the National Artificial Intelligence Agenda and its governance model",
+      "issuing_authority": "Council of Ministers (Presidency of the Council of Ministers)",
+      "authority_type": "government",
       "categories": [
-        "strategy"
+        "strategy",
+        "government-governance",
+        "sandbox"
       ],
+      "legal_status": "administrative_policy_mandatory_in_scope",
+      "lifecycle": "in_force",
+      "publication_date": "2026-01-08",
+      "current_status": "Published in Diário da República, 1st series, No. 5, 8 January 2026 (approved 4 December 2025); in force the day after publication (para. 6). The official digital.gov.pt page links the Diário da República PDF. Monitoring body (Council for Digital in Public Administration) was abolished by Decree-Law 85/2026, whose Coordination Committee for the Digital Strategy now follows strategic documents.",
+      "summary": "Resolution approving the National Artificial Intelligence Agenda (ANIA, annex I) and its Action Plan (PAANIA) for 2026-2030 (annex II). The plan has 32 initiatives in four pillars (infrastructure and data; innovation and adoption; talent and skills; responsibility and ethics), including defining the national AI Act competent authorities, coordination model and sanctions regime (IV.4), AI regulatory sandboxes (IV.5) and a national AI Act implementation guide with risk-assessment tools (IV.6). The plan is updated by the member of Government for State reform with finance, and monitoring was assigned to the Council for Digital in Public Administration.",
+      "ai_governance_relevance": "Formal government act adopting Portugal's current national AI strategy and action plan.",
+      "source_url": "https://bo.digital.gov.pt/api/assets/etic/6c8282d1-dd2d-438a-a60c-b8582c4858bb/",
+      "official_pdf_url": "https://bo.digital.gov.pt/api/assets/etic/6c8282d1-dd2d-438a-a60c-b8582c4858bb/",
+      "official_webpage_url": "https://digital.gov.pt/en/documentos/resolucao-do-conselho-de-ministros-2-2026",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-45f987f9b06b",
+      "publisher_name": "Agency for Technological Reform of the State",
+      "jurisdiction_id": "PRT",
+      "government_level": "national",
+      "subnational_unit": null,
       "category": "strategy",
       "subcategory": null,
-      "legal_status": null,
-      "publication_date": null,
-      "effective_date": null,
+      "effective_date": "2026-01-09",
       "last_amended_date": null,
-      "current_status": "Official source located; current status requires review",
-      "scope": null,
-      "sectors": [],
+      "scope": "Portugal (national)",
       "technology_scope": [
         "AI"
       ],
-      "summary": "Official source located for this governance category. The document’s adoption, legal effect, scope and version history remain under review.",
-      "ai_governance_relevance": "Primary-source material for assessing strategy & action plans.",
-      "source_url": "https://digital.gov.pt/en/documentos/resolucao-do-conselho-de-ministros-2-2026",
-      "official_pdf_url": null,
-      "official_webpage_url": "https://digital.gov.pt/en/documentos/resolucao-do-conselho-de-ministros-2-2026",
-      "language": "pt",
-      "supersedes": [],
       "superseded_by": [],
       "related_instruments": [],
       "regional_applicability": [],
-      "verification_date": "2026-10-06",
-      "verification_level": "primary_source_located",
-      "metadata_gaps": [
-        "Issuing authority",
-        "Publication/effective dates",
-        "Current legal status",
-        "Precise applicability",
-        "Version history",
-        "Authority type",
-        "Government level",
-        "Publication date",
-        "Effective date",
-        "Last amended date"
-      ],
-      "source_kind": "official_publication",
-      "evidence_reference": "turn27search8",
-      "link_status": "reachable",
-      "document_access_type": "official_publication_or_full_text_page",
-      "source_id": "s-1b5e4ce9aca6",
-      "organization_id": "o-d31a358e815d",
-      "lifecycle": "unverified",
-      "first_recorded": "2026-10-06",
+      "metadata_gaps": [],
+      "language": "pt",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
       "last_changed": null,
-      "subnational_unit": null
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-94d1249c777f",
+      "evidence_reference": "curl (browser user agent, --max-time 60): digital.gov.pt document page read and the linked Diário da República PDF (18 pp.) read in full with pdftotext; title, dates and operative paragraphs 1-6 confirmed"
+    },
+    {
+      "id": "i-e960e3f875e7",
+      "official_title": "Lei n.º 27/2021 — Carta Portuguesa de Direitos Humanos na Era Digital",
+      "english_title": "Law No. 27/2021: Portuguese Charter of Human Rights in the Digital Age",
+      "issuing_authority": "Assembly of the Republic",
+      "authority_type": "legislature",
+      "categories": [
+        "binding-law",
+        "ethics",
+        "transparency"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2021-05-17",
+      "current_status": "Published in Diário da República, 1st series, No. 95, 17 May 2021; enters into force 60 days after publication (art. 23), i.e. 16 July 2021. Later amendments to other articles were not reviewed; art. 9 checked in the original text.",
+      "summary": "Law approving the Portuguese Charter of Human Rights in the Digital Age. Article 9 requires the use of AI to respect fundamental rights, balancing explainability, safety, transparency and accountability and avoiding bias and discrimination; decisions with significant impact taken by means of algorithms must be communicated to those concerned and be open to appeal and auditable; robots are subject to beneficence, non-maleficence, autonomy and justice principles.",
+      "ai_governance_relevance": "General law with an explicit AI and algorithmic-decision provision (art. 9).",
+      "source_url": "https://files.diariodarepublica.pt/1s/2021/05/09500/0000500010.pdf",
+      "official_pdf_url": "https://files.diariodarepublica.pt/1s/2021/05/09500/0000500010.pdf",
+      "official_webpage_url": "https://diariodarepublica.pt/dr/detalhe/lei/27-2021-163442504",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-542585a3433d",
+      "publisher_name": "Assembly of the Republic",
+      "jurisdiction_id": "PRT",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "binding-law",
+      "subcategory": null,
+      "effective_date": "2021-07-16",
+      "last_amended_date": null,
+      "scope": "Portugal (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [
+        "Consolidated version / amendments not reviewed"
+      ],
+      "language": "pt",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-3d5a826bf340",
+      "evidence_reference": "curl (browser user agent, --max-time 60): Diário da República 1st-series PDF (pp. 5-10) read with pdftotext; art. 9 and art. 23 confirmed; diariodarepublica.pt detail page is JavaScript-only"
+    },
+    {
+      "id": "i-7bccf3fea0f3",
+      "official_title": "AI Portugal 2030 — An innovation and growth strategy to foster Artificial Intelligence in Portugal in the European context",
+      "english_title": "AI Portugal 2030: National Strategy for Artificial Intelligence",
+      "issuing_authority": "INCoDe.2030 Coordination Structure (Government of Portugal), with FCT, ANI, Ciência Viva and AMA",
+      "authority_type": "government",
+      "categories": [
+        "strategy",
+        "historical"
+      ],
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2019",
+      "current_status": "Published in English in 2019 (DGES news item of 3 June 2019 says it was launched 'this year' by INCoDe.2030 and links this PDF). The 2026 National AI Agenda is now the main national AI instrument; no official act formally revoking AI Portugal 2030 was found. The incode2030.gov.pt site returned HTTP 503 / connection reset.",
+      "summary": "Portugal's first national AI strategy, launched in 2019 under the INCoDe.2030 digital skills initiative and presented by the Minister of Science, Technology and Higher Education. It sets objectives of economic growth, scientific excellence and human development, with action lines including AI in public administration and its modernisation, and a chapter on ethics and safety.",
+      "ai_governance_relevance": "First national AI strategy; predecessor of the 2026 National AI Agenda.",
+      "source_url": "https://wwwcdn.dges.gov.pt/sites/default/files/estrategia_inteligencia_artificial_edit.pdf",
+      "official_pdf_url": "https://wwwcdn.dges.gov.pt/sites/default/files/estrategia_inteligencia_artificial_edit.pdf",
+      "official_webpage_url": "https://dges.gov.pt/pt/node/1537",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-c4694a671a6a",
+      "publisher_name": "Directorate-General for Higher Education",
+      "jurisdiction_id": "PRT",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "strategy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Portugal (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [
+        "Exact publication date (only 2019 stated)"
+      ],
+      "language": "en",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-e0be1059f911",
+      "evidence_reference": "curl (browser user agent, --max-time 60): 36-page PDF read with pdftotext; DGES (government) news page of 3 June 2019 linking it read; incode2030.gov.pt unreachable (503, reset)"
+    },
+    {
+      "id": "i-21ab93757469",
+      "official_title": "Lei n.º 58/2019 — Assegura a execução, na ordem jurídica nacional, do Regulamento (UE) 2016/679 relativo à proteção das pessoas singulares no que diz respeito ao tratamento de dados pessoais e à livre circulação desses dados",
+      "english_title": "Law No. 58/2019 ensuring the implementation in national law of the General Data Protection Regulation (EU) 2016/679",
+      "issuing_authority": "Assembly of the Republic",
+      "authority_type": "legislature",
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2019-08-08",
+      "current_status": "Published in Diário da República, 1st series, No. 151, 8 August 2019; in force the day after publication (art. 68(1)). Later amendments not reviewed.",
+      "summary": "Portugal's GDPR implementing law. It sets the organisation and powers of the CNPD as the national supervisory authority and adds national rules on specific processing, including video surveillance and employees' biometric data, which frame the processing of personal data by AI systems in Portugal.",
+      "ai_governance_relevance": "National data protection law governing personal-data processing for AI training and use; CNPD's statute.",
+      "source_url": "https://files.diariodarepublica.pt/1s/2019/08/15100/0000300040.pdf",
+      "official_pdf_url": "https://files.diariodarepublica.pt/1s/2019/08/15100/0000300040.pdf",
+      "official_webpage_url": "https://diariodarepublica.pt/dr/detalhe/lei/58-2019-123815982",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-542585a3433d",
+      "publisher_name": "Assembly of the Republic",
+      "jurisdiction_id": "PRT",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "effective_date": "2019-08-09",
+      "last_amended_date": null,
+      "scope": "Portugal (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [
+        "Consolidated version / amendments not reviewed"
+      ],
+      "language": "pt",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-fce45da69f04",
+      "evidence_reference": "curl (browser user agent, --max-time 60): dre.pt/application/conteudo/123815982 redirected to the Diário da República 1st-series PDF, read with pdftotext (summary, art. 68)"
+    },
+    {
+      "id": "i-da06e7120b9e",
+      "official_title": "Resolução do Conselho de Ministros n.º 207/2024 — Aprova a Estratégia Digital Nacional e o respetivo modelo de governação",
+      "english_title": "Council of Ministers Resolution No. 207/2024 approving the National Digital Strategy and its governance model",
+      "issuing_authority": "Council of Ministers (Presidency of the Council of Ministers)",
+      "authority_type": "government",
+      "categories": [
+        "strategy"
+      ],
+      "legal_status": "national_strategy",
+      "lifecycle": "in_force",
+      "publication_date": "2024-12-30",
+      "current_status": "Published in Diário da República, 1st series, No. 252, 30 December 2024 (approved 12 December 2024); in force the day after publication (para. 12). Its 2026-2027 Action Plan was published on 29 December 2025 (not recorded separately).",
+      "summary": "Resolution approving Portugal's National Digital Strategy (EDN) and its governance model. The strategy identifies AI as one of the century's major opportunities and aims to maximise safe, ethical and responsible adoption of AI across health, agriculture, education and business; its structuring initiative No. 10 is the National AI Agenda, later approved by RCM 2/2026.",
+      "ai_governance_relevance": "Digital strategy with an AI pillar; parent framework of the National AI Agenda.",
+      "source_url": "https://bo.digital.gov.pt/api/assets/etic/98dc25c5-46c6-4249-8010-4b1418cd0c45/",
+      "official_pdf_url": "https://bo.digital.gov.pt/api/assets/etic/98dc25c5-46c6-4249-8010-4b1418cd0c45/",
+      "official_webpage_url": "https://digital.gov.pt/pt/documentos/resolucao-do-conselho-de-ministros-207-2024",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-45f987f9b06b",
+      "publisher_name": "Agency for Technological Reform of the State",
+      "jurisdiction_id": "PRT",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "strategy",
+      "subcategory": null,
+      "effective_date": "2024-12-31",
+      "last_amended_date": null,
+      "scope": "Portugal (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "pt",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-4dc51e756c40",
+      "evidence_reference": "curl (browser user agent, --max-time 60): digital.gov.pt document page and the linked Diário da República PDF read with pdftotext (summary, AI section, para. 12)"
+    },
+    {
+      "id": "i-1b1894b7acc3",
+      "official_title": "Parecer/2026/39 — Projeto de Decreto-Lei que altera o Código dos Contratos Públicos",
+      "english_title": "CNPD Opinion 2026/39 on the draft Decree-Law amending the Public Contracts Code (including use of AI in public procurement)",
+      "issuing_authority": "National Data Protection Commission (CNPD)",
+      "authority_type": "regulator",
+      "categories": [
+        "data-privacy",
+        "procurement",
+        "public-sector"
+      ],
+      "legal_status": "regulatory_opinion",
+      "lifecycle": "adopted",
+      "publication_date": "2026-06-02",
+      "current_status": "Approved at the CNPD meeting of 2 June 2026. Non-binding opinion on a draft; the resulting decree-law was not identified (see leads).",
+      "summary": "Opinion requested by the Secretary of State of the Presidency of the Council of Ministers on a draft decree-law to simplify and digitalise public procurement, including the use of digital and artificial intelligence systems in procurement procedures. The CNPD recommends documentation, auditability, explainability and bias testing of algorithmic systems, limits on reuse of data for algorithmic training, mechanisms for explanation, contestation and human oversight, and training of procurement staff, and questions whether a decree-law is the right instrument.",
+      "ai_governance_relevance": "Data protection authority's position on AI use in public procurement.",
+      "source_url": "https://www.cnpd.pt/umbraco/surface/cnpdDecision/download/123309",
+      "official_pdf_url": "https://www.cnpd.pt/umbraco/surface/cnpdDecision/download/123309",
+      "official_webpage_url": null,
+      "sectors": [
+        "public-procurement"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-825c5e188fbe",
+      "publisher_name": "National Data Protection Commission",
+      "jurisdiction_id": "PRT",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Portugal (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "pt",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-067a01e584bd",
+      "evidence_reference": "curl (browser user agent, --max-time 60): CNPD decision PDF downloaded and read with pdftotext; approval date 2 June 2026 on the last page"
     }
   ],
   "organizations": [
     {
       "id": "o-d31a358e815d",
       "jurisdiction_id": "PRT",
-      "name": "digital.gov.pt",
-      "publisher_name_verified": false,
-      "ai_governance_role": "Publisher of listed official material; complete institutional mandate and statutory responsibilities require review.",
+      "name": "Agency for Technological Reform of the State",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Agência para a Reforma Tecnológica do Estado, I.P. (ARTE; successor to the Agency for Administrative Modernisation, AMA); runs the digital.gov.pt portal, publishes the National AI Agenda documents and authors the GuIA public-sector AI guide; named in the ANIA action plan as an implementing entity.",
       "source_url": "https://digital.gov.pt/pt/estrategia-digital/agenda-nacional-de-ia",
-      "authority_type": null,
-      "government_level": null
+      "authority_type": "government_agency",
+      "government_level": "national"
+    },
+    {
+      "id": "o-45f987f9b06b",
+      "jurisdiction_id": "PRT",
+      "name": "Presidency of the Council of Ministers",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Council of Ministers approved the National AI Agenda (RCM 2/2026) and Decree-Law 85/2026, which creates the State Simplification and Technology Network and requires prior authorisation of public-administration AI projects.",
+      "source_url": "https://files.diariodarepublica.pt/",
+      "authority_type": "government",
+      "government_level": "national"
+    },
+    {
+      "id": "o-542585a3433d",
+      "jurisdiction_id": "PRT",
+      "name": "Assembly of the Republic",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Portuguese Parliament; enacted the Portuguese Charter of Human Rights in the Digital Age (Law 27/2021), whose article 9 sets principles for the use of AI and robots.",
+      "source_url": "https://www.parlamento.pt/",
+      "authority_type": "legislature",
+      "government_level": "national"
+    },
+    {
+      "id": "o-c4694a671a6a",
+      "jurisdiction_id": "PRT",
+      "name": "INCoDe.2030 Coordination Structure",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Coordination structure of the Portugal INCoDe.2030 national digital skills initiative; promoted the 2019 AI Portugal 2030 national AI strategy with FCT, ANI, Ciência Viva and AMA.",
+      "source_url": "https://dges.gov.pt/pt/node/1537",
+      "authority_type": "government",
+      "government_level": "national"
+    },
+    {
+      "id": "o-825c5e188fbe",
+      "jurisdiction_id": "PRT",
+      "name": "National Data Protection Commission",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Comissão Nacional de Proteção de Dados (CNPD), Portugal's data protection authority under Law 58/2019; issues opinions on draft legislation, including AI-related provisions, and keeps its personal-data role alongside the AI Act authorities.",
+      "source_url": "https://www.cnpd.pt/",
+      "authority_type": "regulator",
+      "government_level": "national"
     }
   ],
   "sources": [
     {
-      "id": "s-c2a4919afa05",
-      "url": "https://digital.gov.pt/pt/estrategia-digital/agenda-nacional-de-ia",
+      "id": "s-94d1249c777f",
+      "url": "https://bo.digital.gov.pt/api/assets/etic/6c8282d1-dd2d-438a-a60c-b8582c4858bb/",
       "jurisdiction_ids": [
         "PRT"
       ],
       "source_institutions": [
-        "digital.gov.pt"
-      ],
-      "instrument_ids": [
-        "i-22c45f8072d7"
-      ],
-      "categories_reviewed": [
-        "strategy"
-      ],
-      "date_reviewed": "2026-10-06",
-      "checked_date": "2026-10-06",
-      "check_method": "GET; first 1 MiB; 14-second timeout",
-      "http_status": 200,
-      "final_url": "https://digital.gov.pt/pt/estrategia-digital/agenda-nacional-de-ia",
-      "link_status": "reachable",
-      "page_title": "Agenda Nacional de Inteligência Artificial (ANIA)",
-      "document_language": "pt",
-      "error": null,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "id": "s-8167cf114c33",
-      "url": "https://digital.gov.pt/pt/documentos/guia-para-a-inteligencia-artificial",
-      "jurisdiction_ids": [
-        "PRT"
-      ],
-      "source_institutions": [
-        "digital.gov.pt"
-      ],
-      "instrument_ids": [
-        "i-dacfcbc4d6b7"
-      ],
-      "categories_reviewed": [
-        "public-sector"
-      ],
-      "date_reviewed": "2026-10-06",
-      "checked_date": "2026-10-06",
-      "check_method": "GET; first 1 MiB; 14-second timeout",
-      "http_status": 200,
-      "final_url": "https://digital.gov.pt/pt/documentos/guia-para-a-inteligencia-artificial",
-      "link_status": "reachable",
-      "page_title": "GuIA – Guia para a Inteligência Artificial",
-      "document_language": "pt",
-      "error": null,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "id": "s-1326324676de",
-      "url": "https://digital.gov.pt/en/documentos/decreto-lei-85-2026",
-      "jurisdiction_ids": [
-        "PRT"
-      ],
-      "source_institutions": [
-        "digital.gov.pt"
-      ],
-      "instrument_ids": [
-        "i-df7d42c3e13f"
-      ],
-      "categories_reviewed": [
-        "binding-law"
-      ],
-      "date_reviewed": "2026-10-06",
-      "checked_date": "2026-10-06",
-      "check_method": "GET; first 1 MiB; 14-second timeout",
-      "http_status": 200,
-      "final_url": "https://digital.gov.pt/en/documentos/decreto-lei-85-2026",
-      "link_status": "reachable",
-      "page_title": "Decree-Law No. 85/2026",
-      "document_language": "pt",
-      "error": null,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
-      "id": "s-1b5e4ce9aca6",
-      "url": "https://digital.gov.pt/en/documentos/resolucao-do-conselho-de-ministros-2-2026",
-      "jurisdiction_ids": [
-        "PRT"
-      ],
-      "source_institutions": [
-        "digital.gov.pt"
+        "Agency for Technological Reform of the State"
       ],
       "instrument_ids": [
         "i-0bd1f56f2511"
       ],
       "categories_reviewed": [
-        "strategy"
+        "strategy",
+        "government-governance",
+        "sandbox"
       ],
-      "date_reviewed": "2026-10-06",
-      "checked_date": "2026-10-06",
-      "check_method": "GET; first 1 MiB; 14-second timeout",
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): digital.gov.pt document page read and the linked Diário da República PDF (18 pp.) read in full with pdftotext; title, dates and operative paragraphs 1-6 confirmed",
       "http_status": 200,
-      "final_url": "https://digital.gov.pt/en/documentos/resolucao-do-conselho-de-ministros-2-2026",
+      "final_url": "https://bo.digital.gov.pt/api/assets/etic/6c8282d1-dd2d-438a-a60c-b8582c4858bb/",
       "link_status": "reachable",
       "page_title": "Resolution of the Council of Ministers No. 2/2026",
       "document_language": "pt",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-0aa43bf8237c",
+      "url": "https://bo.digital.gov.pt/api/assets/etic/f29cb51f-86dd-4e8d-9380-c76fa509e5ff/",
+      "jurisdiction_ids": [
+        "PRT"
+      ],
+      "source_institutions": [
+        "Agency for Technological Reform of the State"
+      ],
+      "instrument_ids": [
+        "i-22c45f8072d7"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "ethics",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): digital.gov.pt ANIA pages read; linked PDF downloaded and read with pdftotext (cover date 'Janeiro 2026', executive summary)",
+      "http_status": 200,
+      "final_url": "https://bo.digital.gov.pt/api/assets/etic/f29cb51f-86dd-4e8d-9380-c76fa509e5ff/",
+      "link_status": "reachable",
+      "page_title": "Agenda Nacional de IA (ANIA)",
+      "document_language": "pt",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-47c34b4b3032",
+      "url": "https://bo.digital.gov.pt/api/assets/etic/03da55eb-a8b8-47eb-a221-4a685eb082ea/",
+      "jurisdiction_ids": [
+        "PRT"
+      ],
+      "source_institutions": [
+        "Agency for Technological Reform of the State"
+      ],
+      "instrument_ids": [
+        "i-dacfcbc4d6b7"
+      ],
+      "categories_reviewed": [
+        "public-sector",
+        "ethics",
+        "risk-assurance",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): digital.gov.pt page read; linked 84-page PDF downloaded and read with pdftotext (version v.1.3, 'Data: março de 2026')",
+      "http_status": 200,
+      "final_url": "https://bo.digital.gov.pt/api/assets/etic/03da55eb-a8b8-47eb-a221-4a685eb082ea/",
+      "link_status": "reachable",
+      "page_title": "GuIA – Guia para a Inteligência Artificial",
+      "document_language": "pt",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-94aa727e56a2",
+      "url": "https://bo.digital.gov.pt/api/assets/etic/7554f8d8-8788-4ce1-8497-06cea1d976a8/",
+      "jurisdiction_ids": [
+        "PRT"
+      ],
+      "source_institutions": [
+        "Agency for Technological Reform of the State"
+      ],
+      "instrument_ids": [
+        "i-df7d42c3e13f"
+      ],
+      "categories_reviewed": [
+        "binding-law",
+        "public-sector",
+        "government-governance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): digital.gov.pt page read; linked Diário da República PDF (7 pp.) read in full with pdftotext; art. 6(1)(c) and art. 13 confirmed",
+      "http_status": 200,
+      "final_url": "https://bo.digital.gov.pt/api/assets/etic/7554f8d8-8788-4ce1-8497-06cea1d976a8/",
+      "link_status": "reachable",
+      "page_title": "Decree-Law No. 85/2026",
+      "document_language": "pt",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-3d5a826bf340",
+      "url": "https://files.diariodarepublica.pt/1s/2021/05/09500/0000500010.pdf",
+      "jurisdiction_ids": [
+        "PRT"
+      ],
+      "source_institutions": [
+        "Assembly of the Republic"
+      ],
+      "instrument_ids": [
+        "i-e960e3f875e7"
+      ],
+      "categories_reviewed": [
+        "binding-law",
+        "ethics",
+        "transparency"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): Diário da República 1st-series PDF (pp. 5-10) read with pdftotext; art. 9 and art. 23 confirmed; diariodarepublica.pt detail page is JavaScript-only",
+      "http_status": 200,
+      "final_url": "https://files.diariodarepublica.pt/1s/2021/05/09500/0000500010.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "pt",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-e0be1059f911",
+      "url": "https://wwwcdn.dges.gov.pt/sites/default/files/estrategia_inteligencia_artificial_edit.pdf",
+      "jurisdiction_ids": [
+        "PRT"
+      ],
+      "source_institutions": [
+        "Directorate-General for Higher Education"
+      ],
+      "instrument_ids": [
+        "i-7bccf3fea0f3"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "historical"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): 36-page PDF read with pdftotext; DGES (government) news page of 3 June 2019 linking it read; incode2030.gov.pt unreachable (503, reset)",
+      "http_status": 200,
+      "final_url": "https://wwwcdn.dges.gov.pt/sites/default/files/estrategia_inteligencia_artificial_edit.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-fce45da69f04",
+      "url": "https://files.diariodarepublica.pt/1s/2019/08/15100/0000300040.pdf",
+      "jurisdiction_ids": [
+        "PRT"
+      ],
+      "source_institutions": [
+        "Assembly of the Republic"
+      ],
+      "instrument_ids": [
+        "i-21ab93757469"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): dre.pt/application/conteudo/123815982 redirected to the Diário da República 1st-series PDF, read with pdftotext (summary, art. 68)",
+      "http_status": 200,
+      "final_url": "https://files.diariodarepublica.pt/1s/2019/08/15100/0000300040.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "pt",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-4dc51e756c40",
+      "url": "https://bo.digital.gov.pt/api/assets/etic/98dc25c5-46c6-4249-8010-4b1418cd0c45/",
+      "jurisdiction_ids": [
+        "PRT"
+      ],
+      "source_institutions": [
+        "Agency for Technological Reform of the State"
+      ],
+      "instrument_ids": [
+        "i-da06e7120b9e"
+      ],
+      "categories_reviewed": [
+        "strategy"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): digital.gov.pt document page and the linked Diário da República PDF read with pdftotext (summary, AI section, para. 12)",
+      "http_status": 200,
+      "final_url": "https://bo.digital.gov.pt/api/assets/etic/98dc25c5-46c6-4249-8010-4b1418cd0c45/",
+      "link_status": "reachable",
+      "page_title": "Resolução do Conselho de Ministros n.º 207/2024",
+      "document_language": "pt",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-067a01e584bd",
+      "url": "https://www.cnpd.pt/umbraco/surface/cnpdDecision/download/123309",
+      "jurisdiction_ids": [
+        "PRT"
+      ],
+      "source_institutions": [
+        "National Data Protection Commission"
+      ],
+      "instrument_ids": [
+        "i-1b1894b7acc3"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "procurement",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): CNPD decision PDF downloaded and read with pdftotext; approval date 2 June 2026 on the last page",
+      "http_status": 200,
+      "final_url": "https://www.cnpd.pt/umbraco/surface/cnpdDecision/download/123309",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "pt",
+      "error": null,
+      "content_type": "application/pdf"
     }
   ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "PRT",
     "country": "Portugal",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -388,57 +820,422 @@
     ],
     "categories_with_findings": [
       "binding-law",
-      "public-sector",
-      "strategy"
-    ],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
-      "binding-law",
-      "strategy",
-      "government-governance",
-      "ethics",
-      "risk-assurance",
-      "public-sector",
-      "procurement",
-      "cyber-security",
       "data-privacy",
-      "transparency",
-      "standards",
+      "ethics",
+      "generative-ai",
+      "government-governance",
+      "historical",
+      "procurement",
+      "public-sector",
+      "risk-assurance",
       "sandbox",
+      "strategy",
+      "transparency"
+    ],
+    "categories_where_no_material_was_found": [
+      "cyber-security",
+      "standards",
       "index-readiness",
       "sectoral",
-      "generative-ai",
       "drafts",
-      "international",
-      "historical"
+      "international"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Portugal \"inteligência artificial\" (estratégia OR regulação OR ética) government ministry official",
       "Portugal \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Portugal government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Portugal \"inteligência artificial\" cybersecurity authority secure development safety guidelines",
-      "Portugal privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Portugal privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "AI Portugal 2030 estratégia nacional inteligência artificial",
+      "Agenda Nacional de Inteligência Artificial ANIA digital.gov.pt",
+      "Resolução do Conselho de Ministros 2/2026",
+      "Decreto-Lei 85/2026 Rede de Simplificação e Tecnologias do Estado",
+      "Carta Portuguesa de Direitos Humanos na Era Digital Lei 27/2021 artigo 9.º inteligência artificial",
+      "Regulamento (UE) 2024/1689 autoridade de fiscalização do mercado Portugal decreto-lei ANACOM",
+      "anacom.pt inteligência artificial ponto de contacto único",
+      "CNPD inteligência artificial orientações parecer (site:cnpd.pt)",
+      "CNPD deliberação reconhecimento facial algoritmo",
+      "Banco de Portugal / CMVM / ASF inteligência artificial (site-restricted)",
+      "Convenção 108 Resolução da Assembleia da República 23/93 Decreto do Presidente da República 21/93",
+      "Direção-Geral da Educação orientações inteligência artificial escolas",
+      "inteligência artificial orientações guia estratégia (portugal.gov.pt, cncs.gov.pt, sns.gov.pt, spms.min-saude.pt, dge.mec.pt, justica.gov.pt)",
+      "Estratégia Digital Nacional Resolução do Conselho de Ministros 207/2024",
+      "Lei 58/2019 execução RGPD"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "EU MEMBERSHIP LAYER IMPLEMENTED; INSTRUMENT-SPECIFIC APPLICABILITY REQUIRES REVIEW",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. incode2030.gov.pt 503/reset; SPMS AI white paper 403 to both methods; parlamento.pt bills not searched in depth; CMVM and ANACOM only searched. No act designating ANACOM found in the gazette. AI Portugal 2030 PDF on DGES, linked from its 3 June 2019 news page; not marked superseded (no revoking act). Convention 108: Resolução da AR 23/93 and Decreto do PR 21/93 (DR I-A n.º 159, 9 July 1993), recorded on the COE file. Units covered: Law: Diário da República (via dre.pt redirects to files.diariodarepublica.pt PDFs): Law 27/2021 art. 9 (AI), Law 58/2019 (GDPR execution), Decree-Law 85/2026 (prior authorisation of public AI projects), RCM 2/2026 and 207/2024; no national AI Act implementing law found (lead).; Government: digital.gov.pt (ARTE): ANIA, RCM 2/2026, EDN, GuIA, DL 85/2026; portugal.gov.pt news on ANIA; DGES page for AI Portugal 2030 (incode2030.gov.pt unreachable).; Ministries: Education (DGE: only a Portuguese copy of the European Commission ethical guidelines for educators, not national; ministry AI working group announced, no document found), Health (SPMS white paper, 403, lead; ERS AI Act page undated, lead), Justice/defence/finance/labour/interior: searched, nothing AI-specific found.; Regulators: CNPD (Opinion 2026/39 on AI in procurement recorded; otherwise news on EDPB/international statements only), Banco de Portugal/CMVM/ASF (speeches and articles only, no AI-specific guidance found), ANACOM (AI Act designation announced, no official act found), CNCS: searched, nothing AI-specific found.. Not reached: incode2030.gov.pt (HTTP 503 / connection reset); SPMS white paper (HTTP 403); parlamento.pt pending AI bills not searched in depth; CMVM and ANACOM own sites not browsed beyond search. Could not verify: SPMS AI white paper (HTTP 403); incode2030.gov.pt page for AI Portugal 2030 (503); Exact AI Act designation act for ANACOM (none found in gazette); Convention 108 deposit date (gazette notice not read). cyber-security, standards, index-readiness, sectoral, drafts, international: no material found.",
     "discovery_result_count": 10,
     "focused_result_count": 12
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-3bceabd3679e",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "PRT",
+      "instrument_id": "i-22c45f8072d7",
+      "title": "National Artificial Intelligence Agenda (ANIA): AI at the service of society and Portugal's competitiveness",
+      "detail": "Official source moved.",
+      "from": "https://digital.gov.pt/pt/estrategia-digital/agenda-nacional-de-ia",
+      "to": "https://bo.digital.gov.pt/api/assets/etic/f29cb51f-86dd-4e8d-9380-c76fa509e5ff/",
+      "source_url": "https://bo.digital.gov.pt/api/assets/etic/f29cb51f-86dd-4e8d-9380-c76fa509e5ff/",
+      "needs_review": false
+    },
+    {
+      "id": "c-9908af931fd2",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "PRT",
+      "instrument_id": "i-22c45f8072d7",
+      "title": "National Artificial Intelligence Agenda (ANIA): AI at the service of society and Portugal's competitiveness",
+      "detail": "Record updated: categories, issuing authority, legal status, lifecycle, publication date, scope, summary, title.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-21b1e54d3cd1",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "PRT",
+      "instrument_id": "i-dacfcbc4d6b7",
+      "title": "GuIA: Guide to Artificial Intelligence (ethical, transparent and responsible AI)",
+      "detail": "Official source moved.",
+      "from": "https://digital.gov.pt/pt/documentos/guia-para-a-inteligencia-artificial",
+      "to": "https://bo.digital.gov.pt/api/assets/etic/03da55eb-a8b8-47eb-a221-4a685eb082ea/",
+      "source_url": "https://bo.digital.gov.pt/api/assets/etic/03da55eb-a8b8-47eb-a221-4a685eb082ea/",
+      "needs_review": false
+    },
+    {
+      "id": "c-a9412658eb03",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "PRT",
+      "instrument_id": "i-dacfcbc4d6b7",
+      "title": "GuIA: Guide to Artificial Intelligence (ethical, transparent and responsible AI)",
+      "detail": "Record updated: categories, issuing authority, legal status, lifecycle, publication date, scope, summary, title.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-9e446c134a71",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "PRT",
+      "instrument_id": "i-df7d42c3e13f",
+      "title": "Decree-Law No. 85/2026 creating the State Simplification and Technology Network",
+      "detail": "Official source moved.",
+      "from": "https://digital.gov.pt/en/documentos/decreto-lei-85-2026",
+      "to": "https://bo.digital.gov.pt/api/assets/etic/7554f8d8-8788-4ce1-8497-06cea1d976a8/",
+      "source_url": "https://bo.digital.gov.pt/api/assets/etic/7554f8d8-8788-4ce1-8497-06cea1d976a8/",
+      "needs_review": false
+    },
+    {
+      "id": "c-a12802bed0e0",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "PRT",
+      "instrument_id": "i-df7d42c3e13f",
+      "title": "Decree-Law No. 85/2026 creating the State Simplification and Technology Network",
+      "detail": "Record updated: categories, issuing authority, legal status, lifecycle, publication date, scope, summary, title.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-24a6995916d6",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "PRT",
+      "instrument_id": "i-0bd1f56f2511",
+      "title": "Council of Ministers Resolution No. 2/2026 approving the National Artificial Intelligence Agenda and its governance model",
+      "detail": "Official source moved.",
+      "from": "https://digital.gov.pt/en/documentos/resolucao-do-conselho-de-ministros-2-2026",
+      "to": "https://bo.digital.gov.pt/api/assets/etic/6c8282d1-dd2d-438a-a60c-b8582c4858bb/",
+      "source_url": "https://bo.digital.gov.pt/api/assets/etic/6c8282d1-dd2d-438a-a60c-b8582c4858bb/",
+      "needs_review": false
+    },
+    {
+      "id": "c-2ebde39390a1",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "PRT",
+      "instrument_id": "i-0bd1f56f2511",
+      "title": "Council of Ministers Resolution No. 2/2026 approving the National Artificial Intelligence Agenda and its governance model",
+      "detail": "Record updated: categories, effective date, issuing authority, legal status, lifecycle, publication date, scope, summary, title.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-31ad24b2c64d",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "PRT",
+      "instrument_id": "i-e960e3f875e7",
+      "title": "Law No. 27/2021: Portuguese Charter of Human Rights in the Digital Age",
+      "detail": "Added to the radar (published 2021-05-17).",
+      "from": null,
+      "to": null,
+      "source_url": "https://files.diariodarepublica.pt/1s/2021/05/09500/0000500010.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-1a0a6f6a9a61",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "PRT",
+      "instrument_id": "i-7bccf3fea0f3",
+      "title": "AI Portugal 2030: National Strategy for Artificial Intelligence",
+      "detail": "Added to the radar (published 2019).",
+      "from": null,
+      "to": null,
+      "source_url": "https://wwwcdn.dges.gov.pt/sites/default/files/estrategia_inteligencia_artificial_edit.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-0b7651ea688a",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "PRT",
+      "instrument_id": "i-21ab93757469",
+      "title": "Law No. 58/2019 ensuring the implementation in national law of the General Data Protection Regulation (EU) 2016/679",
+      "detail": "Added to the radar (published 2019-08-08).",
+      "from": null,
+      "to": null,
+      "source_url": "https://files.diariodarepublica.pt/1s/2019/08/15100/0000300040.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-a80ecaa13457",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "PRT",
+      "instrument_id": "i-da06e7120b9e",
+      "title": "Council of Ministers Resolution No. 207/2024 approving the National Digital Strategy and its governance model",
+      "detail": "Added to the radar (published 2024-12-30).",
+      "from": null,
+      "to": null,
+      "source_url": "https://bo.digital.gov.pt/api/assets/etic/98dc25c5-46c6-4249-8010-4b1418cd0c45/",
+      "needs_review": false
+    },
+    {
+      "id": "c-16dacb21eed7",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "PRT",
+      "instrument_id": "i-1b1894b7acc3",
+      "title": "CNPD Opinion 2026/39 on the draft Decree-Law amending the Public Contracts Code (including use of AI in public procurement)",
+      "detail": "Added to the radar (published 2026-06-02).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.cnpd.pt/umbraco/surface/cnpdDecision/download/123309",
+      "needs_review": false
+    },
+    {
+      "id": "c-6d983a1f7f4d",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "PRT",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 9 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-b3df09fbe5fe",
+      "date": "2026-06-02",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "PRT",
+      "instrument_id": "i-1b1894b7acc3",
+      "title": "CNPD opinion on AI in public procurement (Parecer/2026/39)",
+      "detail": "CNPD approves its opinion on the draft decree-law amending the Public Contracts Code, including use of AI systems.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.cnpd.pt/umbraco/surface/cnpdDecision/download/123309",
+      "needs_review": false
+    },
+    {
+      "id": "c-de9e1b06d938",
+      "date": "2026-04-13",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "PRT",
+      "instrument_id": "i-df7d42c3e13f",
+      "title": "Decree-Law 85/2026 published: prior authorisation of public-sector AI projects",
+      "detail": "Creates the State Simplification and Technology Network; art. 6(1)(c) subjects public-administration AI projects to prior authorisation.",
+      "from": null,
+      "to": null,
+      "source_url": "https://bo.digital.gov.pt/api/assets/etic/7554f8d8-8788-4ce1-8497-06cea1d976a8/",
+      "needs_review": false
+    },
+    {
+      "id": "c-f1bf649440db",
+      "date": "2026-01-08",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "PRT",
+      "instrument_id": "i-0bd1f56f2511",
+      "title": "National AI Agenda approved (RCM 2/2026)",
+      "detail": "Council of Ministers Resolution 2/2026 published in Diário da República, approving ANIA and its 2026-2030 action plan.",
+      "from": null,
+      "to": null,
+      "source_url": "https://bo.digital.gov.pt/api/assets/etic/6c8282d1-dd2d-438a-a60c-b8582c4858bb/",
+      "needs_review": false
+    },
+    {
+      "id": "c-ecdacaa2210d",
+      "date": "2024-12-30",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "PRT",
+      "instrument_id": "i-da06e7120b9e",
+      "title": "National Digital Strategy approved (RCM 207/2024)",
+      "detail": "Council of Ministers Resolution 207/2024 published, approving the National Digital Strategy, whose initiative 10 is the National AI Agenda.",
+      "from": null,
+      "to": null,
+      "source_url": "https://bo.digital.gov.pt/api/assets/etic/98dc25c5-46c6-4249-8010-4b1418cd0c45/",
+      "needs_review": false
+    },
+    {
+      "id": "c-a1321592fb83",
+      "date": "2021-07-16",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "PRT",
+      "instrument_id": "i-e960e3f875e7",
+      "title": "Charter of Human Rights in the Digital Age in force",
+      "detail": "Enters into force 60 days after publication (art. 23).",
+      "from": null,
+      "to": null,
+      "source_url": "https://files.diariodarepublica.pt/1s/2021/05/09500/0000500010.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-20fc89138056",
+      "date": "2021-05-17",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "PRT",
+      "instrument_id": "i-e960e3f875e7",
+      "title": "Charter of Human Rights in the Digital Age published (Law 27/2021)",
+      "detail": "Art. 9 sets principles on AI use and algorithmic decisions.",
+      "from": null,
+      "to": null,
+      "source_url": "https://files.diariodarepublica.pt/1s/2021/05/09500/0000500010.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-87633c487fd9",
+      "date": "2019-08-08",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "PRT",
+      "instrument_id": "i-21ab93757469",
+      "title": "GDPR implementing law published (Law 58/2019)",
+      "detail": "Law 58/2019 published in Diário da República; in force the next day.",
+      "from": null,
+      "to": null,
+      "source_url": "https://files.diariodarepublica.pt/1s/2019/08/15100/0000300040.pdf",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Regulamento da Inteligência Artificial (página informativa da ERS)",
+      "english_title": "AI Regulation information page of the Health Regulatory Authority (ERS)",
+      "issuing_authority": "Entidade Reguladora da Saúde (ERS)",
+      "note": "https://www.ers.pt/pt/atividade/regulamento-da-inteligencia-artificial/ (read 2026-10-12 via curl) explains the AI Act for health providers and states that Portugal indicated ERS to the European Commission as one of the art. 77(2) fundamental-rights authorities, with ASAE, ACT, ANACOM, ERSE, ERC, GNS, IGAI, IGDN, IGEC, IGF, IGMTSSS, IGSJ and PJ. The page shows no publication date, so it is held as a lead; record as sectoral regulatory_opinion once a date is available.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Inteligência Artificial nas Organizações de Saúde — White paper (SPMS)",
+      "english_title": "Artificial Intelligence in Health Organisations: white paper (SPMS, Shared Services of the Ministry of Health)",
+      "issuing_authority": "SPMS — Serviços Partilhados do Ministério da Saúde, E.P.E.",
+      "note": "https://www.spms.min-saude.pt/wp-content/uploads/2025/11/White-paper_IA-4.pdf; curl and WebFetch both returned HTTP 403 on 2026-10-12, so title, date and content could not be verified (upload path suggests November 2025). Health-ministry AI guidance (human oversight, alignment with EU rules).",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Designação da ANACOM como autoridade de fiscalização do mercado e ponto de contacto único do Regulamento (UE) 2024/1689 / diploma nacional de execução do Regulamento da IA",
+      "english_title": "Designation of ANACOM as AI Act market surveillance authority and single point of contact / national AI Act implementing act",
+      "issuing_authority": "Government of Portugal",
+      "note": "Government announced on 19 September 2025 its intention to designate ANACOM; RCM 2/2026 initiative IV.4 (1st half 2026) plans the definition of competent authorities, coordination model and sanctions regime. No implementing decree-law or law was found in the Diário da República on 2026-10-12; record it once published.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Decreto-Lei que altera o Código dos Contratos Públicos (simplificação, digitalização, utilização de sistemas de inteligência artificial)",
+      "english_title": "Decree-Law amending the Public Contracts Code (simplification, digitalisation and use of AI systems)",
+      "issuing_authority": "Government of Portugal",
+      "note": "Draft reviewed by CNPD Opinion 2026/39 (2 June 2026). Final publication in the Diário da República not checked; record as binding_regulation / procurement if published with AI provisions.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Plano de Ação 2026-2027 da Estratégia Digital Nacional",
+      "english_title": "National Digital Strategy Action Plan 2026-2027",
+      "issuing_authority": "Government of Portugal",
+      "note": "Published 29 December 2025 per digital.gov.pt (https://digital.gov.pt/pt/documentos/estrategia-digital-nacional-plano-de-acao-2026-2027); Action #20 is the National AI Agenda. Not read in this review.",
+      "found": "2026-10-12"
+    }
+  ]
 }
