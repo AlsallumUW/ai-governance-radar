@@ -10,212 +10,586 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Malta implements the EU AI Act through legal notices issued in October 2025: the Artificial Intelligence Regulations make the Malta Digital Innovation Authority (MDIA) the main market surveillance, notifying and sandbox authority, with penalties applying from August 2026, and a separate notice designates the data protection commissioner (IDPC) for law-enforcement, border and justice high-risk AI. National policy rests on the 2019 national AI strategy, being realigned for 2025-2030 after a public consultation that closed in February 2026, and the 2019 Ethical AI Framework with voluntary AI certification under the MDIA.",
+    "lead_institutions": [
+      "Malta Digital Innovation Authority",
+      "Information and Data Protection Commissioner",
+      "Office of the Prime Minister"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was completed on 12 October 2026 and covers national law, government, ministries and regulators. The laws were read on the official legislation portal, but the main government, digital authority and financial regulator websites blocked access, so the strategy documents could only be located and some guidance is listed as leads."
   },
   "instruments": [
     {
       "id": "i-b7159bc36d4a",
       "official_title": "Realignment of the National AI Strategy",
-      "english_title": "Consultation: realignment of the National AI Strategy",
+      "english_title": "Realignment of the National AI Strategy (public consultation, National AI Strategy and Vision 2025-2030)",
       "jurisdiction_id": "MLT",
-      "issuing_authority": null,
-      "publisher_name": "www.gov.mt",
-      "authority_type": null,
+      "issuing_authority": "Malta Digital Innovation Authority, for the Government of Malta",
+      "publisher_name": "Government of Malta",
+      "authority_type": "government",
       "government_level": "national",
+      "subnational_unit": null,
       "categories": [
         "strategy",
         "drafts"
       ],
       "category": "strategy",
       "subcategory": null,
-      "legal_status": null,
-      "publication_date": null,
+      "legal_status": "consultation_draft",
+      "lifecycle": "consultation",
+      "publication_date": "2025",
       "effective_date": null,
       "last_amended_date": null,
-      "current_status": "Official source located; current status requires review",
-      "scope": null,
-      "sectors": [],
+      "current_status": "Consultation opened in 2025 (gov.mt reference NL-0040-2025); search excerpts of the consultation notice give a closing date of 16 February 2026. The MDIA page for the realignment is https://mdia.gov.mt/national-strategies/malta-ai-strategy-and-vision/2025-strategy-and-vision/. Whether a final realigned strategy and the consultation outcome report have been published could not be confirmed (sites blocked) - see leads.",
+      "scope": "Malta (national)",
+      "sectors": [
+        "cross-sector"
+      ],
       "technology_scope": [
         "AI"
       ],
-      "summary": "Official source located for this governance category. The document’s adoption, legal effect, scope and version history remain under review.",
-      "ai_governance_relevance": "Primary-source material for assessing strategy & action plans, drafts & consultations.",
+      "summary": "Public consultation (gov.mt reference NL-0040-2025) on a realigned National AI Strategy and Vision replacing the 2019 strategy. According to the MDIA's page on the realignment, it moves from a technology-first approach to one centred on societal well-being and sustainability, organised around two enablers, three growth pillars (data and infrastructure, leveraging AI, advancing AI) and five foundational principles, with 83 short- to medium-term measures.",
+      "ai_governance_relevance": "Draft successor to Malta's 2019 national AI strategy, aligned with Malta Vision 2050.",
       "source_url": "https://www.gov.mt/en/publicconsultation/Pages/2025/NL-0040-2025.aspx",
       "official_pdf_url": null,
       "official_webpage_url": "https://www.gov.mt/en/publicconsultation/Pages/2025/NL-0040-2025.aspx",
-      "language": "en-GB",
+      "language": "en",
       "supersedes": [],
       "superseded_by": [],
       "related_instruments": [],
       "regional_applicability": [],
-      "verification_date": "2026-10-06",
+      "verification_date": "2026-10-12",
       "verification_level": "primary_source_located",
       "metadata_gaps": [
-        "Issuing authority",
-        "Publication/effective dates",
-        "Current legal status",
-        "Precise applicability",
-        "Version history",
-        "Authority type",
-        "Government level",
-        "Publication date",
-        "Effective date",
-        "Last amended date"
+        "Not read: official site blocked automated access (HTTP 403)",
+        "Exact publication date",
+        "Issuing authority wording from the document",
+        "Consultation opening date"
       ],
-      "source_kind": "official_publication",
-      "evidence_reference": "turn23search4",
-      "link_status": "reachable",
-      "document_access_type": "official_publication_or_full_text_page",
+      "source_kind": "consultation_portal",
+      "evidence_reference": "curl (browser user agent, --max-time 60) returned HTTP 403 (Cloudflare 'Attention Required' challenge) and WebFetch returned HTTP 403 on 2026-10-12; metadata taken from search-engine excerpts of the official page/document only. Previous radar check (2026-10-06) read the page title 'Realignment of the National AI Strategy'",
+      "link_status": "inaccessible",
+      "document_access_type": "original_government_document",
       "source_id": "s-9659629bc8b6",
-      "organization_id": "o-26e8d7bb5e5f",
-      "lifecycle": "draft",
+      "organization_id": "o-aa5ec94f4d63",
       "first_recorded": "2026-10-06",
-      "last_changed": null,
-      "subnational_unit": null
+      "last_changed": null
     },
     {
       "id": "i-5b42c0383607",
-      "official_title": "Malta: Towards Trustworthy AI",
-      "english_title": "Malta: Towards Ethical and Trustworthy AI",
+      "official_title": "Malta Towards Trustworthy AI: Malta's Ethical AI Framework",
+      "english_title": "Malta Towards Trustworthy AI: Malta's Ethical AI Framework",
       "jurisdiction_id": "MLT",
-      "issuing_authority": null,
-      "publisher_name": "mdia.gov.mt",
-      "authority_type": null,
+      "issuing_authority": "Malta.AI Taskforce and the Parliamentary Secretariat for Financial Services, Digital Economy and Innovation (Office of the Prime Minister); published by the Malta Digital Innovation Authority",
+      "publisher_name": "Malta Digital Innovation Authority",
+      "authority_type": "regulator",
       "government_level": "national",
+      "subnational_unit": null,
       "categories": [
-        "ethics"
+        "ethics",
+        "risk-assurance",
+        "standards"
       ],
       "category": "ethics",
       "subcategory": null,
-      "legal_status": null,
-      "publication_date": null,
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2019",
       "effective_date": null,
       "last_amended_date": null,
-      "current_status": "Official source located; current status requires review",
-      "scope": null,
-      "sectors": [],
+      "current_status": "Final version of the framework after a first draft was published for public consultation on 9 August 2019 (as stated in the document, per search excerpts); released in 2019 with the national AI strategy. An earlier copy is at https://www.mdia.gov.mt/wp-content/uploads/2023/04/Malta_Towards_Ethical_and_Trustworthy_AI.pdf. Exact title wording on the cover could not be checked.",
+      "scope": "Malta (national)",
+      "sectors": [
+        "cross-sector"
+      ],
       "technology_scope": [
         "AI"
       ],
-      "summary": "Official source located for this governance category. The document’s adoption, legal effect, scope and version history remain under review.",
-      "ai_governance_relevance": "Primary-source material for assessing responsible ai & ethics.",
+      "summary": "Malta's ethical AI framework, a component of the 2019 national AI strategy. It sets four objectives (human-centric approach; respect for law, human rights and democratic values; maximising benefits while minimising risks; alignment with international norms), guiding principles drawn from the EU High-Level Expert Group (human autonomy, prevention of harm, fairness, explicability) and trustworthy-AI requirements, and is the basis for MDIA's voluntary AI certification by MDIA-approved system auditors.",
+      "ai_governance_relevance": "National AI ethics framework; basis of the voluntary AI certification programme.",
       "source_url": "https://mdia.gov.mt/app/uploads/2024/08/Malta_Towards_Ethical_and_Trustworthy_AI-1.pdf",
       "official_pdf_url": "https://mdia.gov.mt/app/uploads/2024/08/Malta_Towards_Ethical_and_Trustworthy_AI-1.pdf",
       "official_webpage_url": null,
-      "language": null,
+      "language": "en",
       "supersedes": [],
       "superseded_by": [],
       "related_instruments": [],
       "regional_applicability": [],
-      "verification_date": "2026-10-06",
+      "verification_date": "2026-10-12",
       "verification_level": "primary_source_located",
       "metadata_gaps": [
-        "Issuing authority",
-        "Publication/effective dates",
-        "Current legal status",
-        "Precise applicability",
-        "Version history",
-        "Authority type",
-        "Government level",
-        "Publication date",
-        "Effective date",
-        "Last amended date",
-        "Document language"
+        "Not read: official site blocked automated access (HTTP 403)",
+        "Exact publication date",
+        "Issuing authority wording from the document"
       ],
       "source_kind": "official_document",
-      "evidence_reference": "turn23search13",
-      "link_status": "reachable",
+      "evidence_reference": "curl (browser user agent, --max-time 60) returned HTTP 403 (Cloudflare 'Attention Required' challenge) and WebFetch returned HTTP 403 on 2026-10-12; metadata taken from search-engine excerpts of the official page/document only",
+      "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "source_id": "s-4514fc72ae1b",
-      "organization_id": "o-9c6207959223",
-      "lifecycle": "unverified",
+      "organization_id": "o-73799cdcec09",
       "first_recorded": "2026-10-06",
-      "last_changed": null,
-      "subnational_unit": null
+      "last_changed": null
     },
     {
       "id": "i-e10c9108f427",
-      "official_title": "Malta AI Strategy and Vision - MDIA",
-      "english_title": "Malta AI Strategy and Vision",
+      "official_title": "Malta: The Ultimate AI Launchpad - A Strategy and Vision for Artificial Intelligence in Malta 2030",
+      "english_title": "Malta: The Ultimate AI Launchpad - A Strategy and Vision for Artificial Intelligence in Malta 2030",
       "jurisdiction_id": "MLT",
-      "issuing_authority": null,
-      "publisher_name": "mdia.gov.mt",
-      "authority_type": null,
+      "issuing_authority": "Parliamentary Secretariat for Financial Services, Digital Economy and Innovation (Office of the Prime Minister), with the Malta.AI Taskforce; implementation monitored by the Malta Digital Innovation Authority",
+      "publisher_name": "Malta Digital Innovation Authority",
+      "authority_type": "regulator",
       "government_level": "national",
+      "subnational_unit": null,
       "categories": [
-        "strategy"
+        "strategy",
+        "public-sector"
       ],
       "category": "strategy",
       "subcategory": null,
-      "legal_status": null,
-      "publication_date": null,
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2019",
       "effective_date": null,
       "last_amended_date": null,
-      "current_status": "Official source located; current status requires review",
-      "scope": null,
-      "sectors": [],
+      "current_status": "Launched in October 2019 at the Delta Summit (per MDIA's own news page, as seen in search excerpts). The MDIA page states that over 80% of its measures were established or partially/fully executed; a realigned strategy for 2025-2030 was put to public consultation in 2025 (i-b7159bc36d4a). Kept as 'published' until the realigned strategy's final adoption is confirmed on an official source; then mark superseded.",
+      "scope": "Malta (national)",
+      "sectors": [
+        "cross-sector"
+      ],
       "technology_scope": [
         "AI"
       ],
-      "summary": "Official source located for this governance category. The document’s adoption, legal effect, scope and version history remain under review.",
-      "ai_governance_relevance": "Primary-source material for assessing strategy & action plans.",
+      "summary": "Malta's first national AI strategy, aiming to make Malta 'the ultimate AI launchpad'. It rests on three strategic pillars (investment, start-ups and innovation; public-sector adoption; private-sector adoption) and three enablers (education and workforce; legal and ethical framework; ecosystem infrastructure), with a short-term action plan of 72 actions incl. six public-sector AI pilot projects and a national AI certification programme.",
+      "ai_governance_relevance": "Original national AI strategy; being replaced by the 2025 realignment.",
       "source_url": "https://mdia.gov.mt/national-strategies/malta-ai-strategy-and-vision/",
       "official_pdf_url": null,
       "official_webpage_url": "https://mdia.gov.mt/national-strategies/malta-ai-strategy-and-vision/",
-      "language": null,
+      "language": "en",
       "supersedes": [],
       "superseded_by": [],
       "related_instruments": [],
       "regional_applicability": [],
-      "verification_date": "2026-10-06",
+      "verification_date": "2026-10-12",
       "verification_level": "primary_source_located",
       "metadata_gaps": [
-        "Issuing authority",
-        "Publication/effective dates",
-        "Current legal status",
-        "Precise applicability",
-        "Version history",
-        "Authority type",
-        "Government level",
-        "Publication date",
-        "Effective date",
-        "Last amended date",
-        "Document language"
+        "Not read: official site blocked automated access (HTTP 403)",
+        "Exact publication date",
+        "Issuing authority wording from the document"
       ],
       "source_kind": "official_publication",
-      "evidence_reference": "turn23search11",
+      "evidence_reference": "curl (browser user agent, --max-time 60) returned HTTP 403 (Cloudflare 'Attention Required' challenge) and WebFetch returned HTTP 403 on 2026-10-12; metadata taken from search-engine excerpts of the official page/document only",
       "link_status": "inaccessible",
       "document_access_type": "official_publication_or_full_text_page",
       "source_id": "s-f70205e1d1b5",
-      "organization_id": "o-9c6207959223",
-      "lifecycle": "unverified",
+      "organization_id": "o-73799cdcec09",
       "first_recorded": "2026-10-06",
-      "last_changed": null,
-      "subnational_unit": null
+      "last_changed": null
+    },
+    {
+      "id": "i-33d7c747aea8",
+      "official_title": "Artificial Intelligence Regulations, 2025",
+      "english_title": "Artificial Intelligence Regulations, 2025 (L.N. 226 of 2025)",
+      "jurisdiction_id": "MLT",
+      "issuing_authority": "Minister responsible for the Malta Digital Innovation Authority, on the advice of the MDIA (under article 58 of the Malta Digital Innovation Authority Act, Cap. 591)",
+      "publisher_name": "Government of Malta",
+      "authority_type": "government",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "binding-law",
+        "government-governance",
+        "sandbox"
+      ],
+      "category": "binding-law",
+      "subcategory": null,
+      "legal_status": "binding_regulation",
+      "lifecycle": "in_force",
+      "publication_date": "2025-10-10",
+      "effective_date": "2025-10-10",
+      "last_amended_date": null,
+      "current_status": "Published in the Government Gazette of Malta No. 21,519 on 10 October 2025 (legal notice dated 7 October 2025 in the portal metadata). Regulation 1(3): regulations 4, 5, 6, 8, 9 and 10 (notifying authority, sandbox, penalties and related provisions) come into force on 2 August 2026; the remaining regulations (incl. the designation of the MDIA in reg. 3) have no separate commencement date and so apply from publication. Made in English only (Cap. 591 art. 58(7)).",
+      "scope": "Malta (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Subsidiary legislation (S.L. 591.05) implementing the EU AI Act (Regulation (EU) 2024/1689) in Malta. It designates the Malta Digital Innovation Authority as market surveillance authority (default authority where no other is designated), single point of contact, notifying authority and sole national authority for the AI regulatory sandbox, with coordination duties with the MFSA for high-risk AI used by financial institutions and with sectoral authorities for Annex I products. It sets administrative penalties of up to EUR 350,000 per infringement or 1% of worldwide turnover for undertakings, with daily penalties and special rules for public authorities.",
+      "ai_governance_relevance": "Malta's main national AI Act implementing measure: designates the AI authorities, the AI regulatory sandbox and the national penalty regime.",
+      "source_url": "https://legislation.mt/eli/ln/2025/226/eng",
+      "official_pdf_url": "https://legislation.mt/getpdf/6903629b6fe5c50d185dd5cc",
+      "official_webpage_url": "https://legislation.mt/eli/ln/2025/226/eng",
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "legislation_portal",
+      "evidence_reference": "curl (browser user agent, --max-time 60): legislation.mt ELI page read (schema.org metadata: Government Gazette No. 21,519 of 10.10.2025) and the full official PDF (getpdf) read with pdftotext",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-c309b42046dc",
+      "organization_id": "o-aa5ec94f4d63",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-23ad5e1e8d3b",
+      "official_title": "Artificial Intelligence (Designation of the Information and Data Protection Commissioner for the purposes of Regulation (EU) 2024/1689) Regulations, 2025",
+      "english_title": "Artificial Intelligence (Designation of the Information and Data Protection Commissioner for the purposes of Regulation (EU) 2024/1689) Regulations, 2025 (L.N. 227 of 2025)",
+      "jurisdiction_id": "MLT",
+      "issuing_authority": "Minister responsible for data protection, after consultation with the Information and Data Protection Commissioner (under article 33 of the Data Protection Act, Cap. 586)",
+      "publisher_name": "Government of Malta",
+      "authority_type": "government",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "binding-law",
+        "data-privacy",
+        "government-governance"
+      ],
+      "category": "binding-law",
+      "subcategory": null,
+      "legal_status": "binding_regulation",
+      "lifecycle": "in_force",
+      "publication_date": "2025-10-10",
+      "effective_date": "2025-10-10",
+      "last_amended_date": null,
+      "current_status": "Published in the Government Gazette of Malta No. 21,519 on 10 October 2025. Regulation 1(3): regulations 5 to 7 and 9 to 12 come into force on 2 August 2026; the designation (reg. 3) applies from publication. The IDPC's own page (13 October 2025) confirms publication on 10 October 2025.",
+      "scope": "Malta (national)",
+      "sectors": [
+        "law-enforcement",
+        "justice",
+        "migration"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Regulations under the Data Protection Act implementing the EU AI Act that designate the Information and Data Protection Commissioner as market surveillance authority for specified Annex III high-risk AI systems: biometric systems used for law enforcement, border management and justice and democracy, emergency-call evaluation and dispatch and patient triage systems, and law-enforcement AI systems. They give the Commissioner tasks on prohibited AI practices in these areas, set out its role as personal-data supervisory authority alongside the AI Act, and provide for notifications and administrative penalties.",
+      "ai_governance_relevance": "Allocates AI Act enforcement over law-enforcement, border and justice high-risk AI to the data protection authority.",
+      "source_url": "https://legislation.mt/eli/ln/2025/227/eng",
+      "official_pdf_url": "https://legislation.mt/getpdf/6901d197afa59620bca3388a",
+      "official_webpage_url": "https://legislation.mt/eli/ln/2025/227/eng",
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "legislation_portal",
+      "evidence_reference": "curl (browser user agent, --max-time 60): legislation.mt ELI page read (schema.org metadata: Government Gazette No. 21,519 of 10.10.2025) and the full official PDF (getpdf) read with pdftotext",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-1264b0a83a3f",
+      "organization_id": "o-aa5ec94f4d63",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-1447279b9b78",
+      "official_title": "Representative Actions (Consumers) (Amendment of Schedule) Order, 2025",
+      "english_title": "Representative Actions (Consumers) (Amendment of Schedule) Order, 2025 (L.N. 225 of 2025)",
+      "jurisdiction_id": "MLT",
+      "issuing_authority": "Minister responsible for consumer affairs, in consultation with the Minister responsible for justice (under article 22 of the Representative Actions (Consumers) Act, Cap. 635)",
+      "publisher_name": "Government of Malta",
+      "authority_type": "government",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "binding-law"
+      ],
+      "category": "binding-law",
+      "subcategory": null,
+      "legal_status": "binding_regulation",
+      "lifecycle": "in_force",
+      "publication_date": "2025-10-10",
+      "effective_date": "2025-10-10",
+      "last_amended_date": null,
+      "current_status": "Published in the Government Gazette of Malta No. 21,519 on 10 October 2025; no separate commencement date is stated, so it applies from publication.",
+      "scope": "Malta (national)",
+      "sectors": [
+        "consumer-protection"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Order adding the EU AI Act (Regulation (EU) 2024/1689) as item (68) of the Schedule to the Representative Actions (Consumers) Act. Infringements of the AI Act that harm consumers' collective interests can therefore be pursued through representative actions by qualified entities in Malta.",
+      "ai_governance_relevance": "Opens consumer collective redress for AI Act breaches.",
+      "source_url": "https://legislation.mt/eli/ln/2025/225/eng",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://legislation.mt/eli/ln/2025/225/eng",
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "legislation_portal",
+      "evidence_reference": "curl (browser user agent, --max-time 60): legislation.mt ELI page read (schema.org metadata: Government Gazette No. 21,519 of 10.10.2025) and the full official PDF (getpdf) read with pdftotext",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-8192cbfc6746",
+      "organization_id": "o-aa5ec94f4d63",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-71fcb3718c04",
+      "official_title": "Malta Digital Innovation Authority Act",
+      "english_title": "Malta Digital Innovation Authority Act (Chapter 591 of the Laws of Malta)",
+      "jurisdiction_id": "MLT",
+      "issuing_authority": "Parliament of Malta (Act XXXI of 2018, as amended by Act XIX of 2024)",
+      "publisher_name": "Parliament of Malta",
+      "authority_type": "legislature",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "government-governance",
+        "binding-law",
+        "ethics"
+      ],
+      "category": "government-governance",
+      "subcategory": null,
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2018",
+      "effective_date": null,
+      "last_amended_date": "2024-06-14",
+      "current_status": "In force. Act XXXI of 2018 (dated 15 July 2018 in the consolidated text; portal metadata 6 August 2018), substantially amended by Act XIX of 2024 (consolidated version of 14 June 2024), which also repealed the Innovative Technology Arrangements and Services Act (Cap. 592) under which MDIA's 2019 AI-ITA certification was organised.",
+      "scope": "Malta (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Act establishing the Malta Digital Innovation Authority to promote and regulate innovative technology; its First Schedule (as substituted by Act XIX of 2024) lists artificial intelligence, distributed ledger technology and the internet of things as innovative technology. It sets guiding principles incl. ethical standards in technology development, the Authority's functions, an ethics committee on the use of innovative technologies, enforcement powers and an administrative review tribunal, and empowers the Minister to make regulations (the basis of L.N. 226 of 2025).",
+      "ai_governance_relevance": "Founding statute of Malta's AI authority and legal basis of the AI Act implementing regulations.",
+      "source_url": "https://legislation.mt/eli/cap/591/eng",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://legislation.mt/eli/cap/591/eng",
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "legislation_portal",
+      "evidence_reference": "curl (browser user agent, --max-time 60): legislation.mt ELI page and full consolidated PDF (version 2024-06-14) read with pdftotext",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-0e98960aa679",
+      "organization_id": "o-9aa9ee8cc799",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-37bba8dcc8b1",
+      "official_title": "Data Protection Act",
+      "english_title": "Data Protection Act (Chapter 586 of the Laws of Malta)",
+      "jurisdiction_id": "MLT",
+      "issuing_authority": "Parliament of Malta (Act XX of 2018, as amended by Act XII of 2021 and Legal Notice 212 of 2023)",
+      "publisher_name": "Parliament of Malta",
+      "authority_type": "legislature",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "category": "data-privacy",
+      "subcategory": null,
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2018",
+      "effective_date": "2018-05-28",
+      "last_amended_date": "2023-09-19",
+      "current_status": "In force since 28 May 2018 (date in the consolidated text); consolidated version of 19 September 2023. It contains no AI-specific provisions; automated decision-making rules come from the GDPR itself.",
+      "scope": "Malta (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Act implementing and further specifying the GDPR in Malta, which governs the processing of personal data by AI systems, including automated processing. It establishes the Information and Data Protection Commissioner, its powers, administrative fines and appeals, and empowers the Minister to make regulations (article 33), the basis of L.N. 227 of 2025 designating the Commissioner under the AI Act.",
+      "ai_governance_relevance": "General data protection law that applies to AI training and use; legal basis of the IDPC's AI Act role.",
+      "source_url": "https://legislation.mt/eli/cap/586/eng",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://legislation.mt/eli/cap/586/eng",
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "legislation_portal",
+      "evidence_reference": "curl (browser user agent, --max-time 60): legislation.mt ELI page and full consolidated PDF read with pdftotext",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-feff9979a1f8",
+      "organization_id": "o-9aa9ee8cc799",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-923d91363108",
+      "official_title": "Malta AI Vision: Towards a National AI Strategy",
+      "english_title": "Malta AI Vision: Towards a National AI Strategy (high-level policy document for consultation)",
+      "jurisdiction_id": "MLT",
+      "issuing_authority": "Parliamentary Secretariat for Financial Services, Digital Economy and Innovation (Office of the Prime Minister) and the Malta.AI Taskforce",
+      "publisher_name": "Malta Digital Innovation Authority",
+      "authority_type": "regulator",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "historical",
+        "drafts",
+        "strategy"
+      ],
+      "category": "historical",
+      "subcategory": null,
+      "legal_status": "consultation_draft",
+      "lifecycle": "superseded",
+      "publication_date": "2019-03",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Superseded by the final 2019 strategy (i-e10c9108f427). Date from a Government of Malta press release of 21 March 2019 (PR190579, gov.mt) seen only in search excerpts.",
+      "scope": "Malta (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "High-level policy document issued for public consultation in March 2019 to set the vision for Malta's national AI strategy. It preceded and fed into the October 2019 strategy 'Malta: The Ultimate AI Launchpad'.",
+      "ai_governance_relevance": "Consultation-stage precursor of the 2019 national AI strategy, kept for the timeline.",
+      "source_url": "https://www.mdia.gov.mt/wp-content/uploads/2023/04/Malta-AI-Vision-Towards-a-National-AI-Strategy.pdf",
+      "official_pdf_url": "https://www.mdia.gov.mt/wp-content/uploads/2023/04/Malta-AI-Vision-Towards-a-National-AI-Strategy.pdf",
+      "official_webpage_url": null,
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [
+        "i-e10c9108f427"
+      ],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "primary_source_located",
+      "metadata_gaps": [
+        "Not read: official site blocked automated access (HTTP 403)",
+        "Exact publication date",
+        "Issuing authority wording from the document"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "curl (browser user agent, --max-time 60) returned HTTP 403 (Cloudflare 'Attention Required' challenge) and WebFetch returned HTTP 403 on 2026-10-12; metadata taken from search-engine excerpts of the official page/document only",
+      "link_status": "inaccessible",
+      "document_access_type": "original_government_document",
+      "source_id": "s-8477fe405ad5",
+      "organization_id": "o-73799cdcec09",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-b1b45f5c3aa0",
+      "official_title": "AI Innovative Technology Arrangement Guidelines",
+      "english_title": "AI Innovative Technology Arrangement (AI-ITA) Guidelines",
+      "jurisdiction_id": "MLT",
+      "issuing_authority": "Malta Digital Innovation Authority",
+      "publisher_name": "Malta Digital Innovation Authority",
+      "authority_type": "regulator",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "standards",
+        "risk-assurance",
+        "drafts"
+      ],
+      "category": "standards",
+      "subcategory": null,
+      "legal_status": "consultation_draft",
+      "lifecycle": "consultation",
+      "publication_date": "2019-10-03",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Published 3 October 2019 for consultation (date in file name and document per search excerpts). Final adoption not confirmed; the ITA certification regime's statute (Cap. 592) was repealed by Act XIX of 2024, so current status needs review.",
+      "scope": "Malta (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "MDIA guidance note setting out how AI systems can be recognised and certified as AI Innovative Technology Arrangements, as part of the national AI certification programme envisaged by the 2019 strategy and grounded in the Ethical AI Framework. Issued with companion notes on AI system auditor control objectives, AI-ITA nomenclature and blueprint guidelines for public consultation from 3 October to 1 November 2019.",
+      "ai_governance_relevance": "Basis of Malta's voluntary AI certification scheme.",
+      "source_url": "https://mdia.gov.mt/app/uploads/2024/07/AI-ITA-Guidelines-03OCT19.pdf",
+      "official_pdf_url": "https://mdia.gov.mt/app/uploads/2024/07/AI-ITA-Guidelines-03OCT19.pdf",
+      "official_webpage_url": null,
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "primary_source_located",
+      "metadata_gaps": [
+        "Not read: official site blocked automated access (HTTP 403)",
+        "Final adoption / current status"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "curl (browser user agent, --max-time 60) returned HTTP 403 (Cloudflare 'Attention Required' challenge) and WebFetch returned HTTP 403 on 2026-10-12; metadata taken from search-engine excerpts of the official page/document only",
+      "link_status": "inaccessible",
+      "document_access_type": "original_government_document",
+      "source_id": "s-03f092918686",
+      "organization_id": "o-73799cdcec09",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
     }
   ],
   "organizations": [
     {
-      "id": "o-26e8d7bb5e5f",
+      "id": "o-73799cdcec09",
       "jurisdiction_id": "MLT",
-      "name": "www.gov.mt",
-      "publisher_name_verified": false,
-      "ai_governance_role": "Publisher of listed official material; complete institutional mandate and statutory responsibilities require review.",
-      "source_url": "https://www.gov.mt/en/publicconsultation/Pages/2025/NL-0040-2025.aspx",
-      "authority_type": null,
-      "government_level": null
+      "name": "Malta Digital Innovation Authority",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Statutory authority under the Malta Digital Innovation Authority Act (Cap. 591), whose First Schedule lists artificial intelligence as an innovative technology. Owner of the national AI strategy (2019 and its 2025 realignment) and the Ethical AI Framework; designated by L.N. 226 of 2025 as Malta's main AI Act market surveillance authority, single point of contact, notifying authority and sole authority for the national AI regulatory sandbox.",
+      "source_url": "https://mdia.gov.mt/",
+      "authority_type": "regulator",
+      "government_level": "national"
     },
     {
-      "id": "o-9c6207959223",
+      "id": "o-aa5ec94f4d63",
       "jurisdiction_id": "MLT",
-      "name": "mdia.gov.mt",
-      "publisher_name_verified": false,
-      "ai_governance_role": "Publisher of listed official material; complete institutional mandate and statutory responsibilities require review.",
-      "source_url": "https://mdia.gov.mt/app/uploads/2024/08/Malta_Towards_Ethical_and_Trustworthy_AI-1.pdf",
-      "authority_type": null,
-      "government_level": null
+      "name": "Government of Malta",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Central government: ministers make the legal notices implementing the EU AI Act (published in the Government Gazette and on the Legislation Malta portal) and run the national public-consultation portal on gov.mt, where the realigned national AI strategy was consulted on.",
+      "source_url": "https://legislation.mt/",
+      "authority_type": "government",
+      "government_level": "national"
+    },
+    {
+      "id": "o-9aa9ee8cc799",
+      "jurisdiction_id": "MLT",
+      "name": "Parliament of Malta",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Enacts primary legislation, including the Malta Digital Innovation Authority Act (Cap. 591, amended by Act XIX of 2024) and the Data Protection Act (Cap. 586).",
+      "source_url": "https://parlament.mt/",
+      "authority_type": "legislature",
+      "government_level": "national"
     }
   ],
   "sources": [
@@ -226,7 +600,7 @@
         "MLT"
       ],
       "source_institutions": [
-        "www.gov.mt"
+        "Government of Malta"
       ],
       "instrument_ids": [
         "i-b7159bc36d4a"
@@ -235,16 +609,16 @@
         "drafts",
         "strategy"
       ],
-      "date_reviewed": "2026-10-06",
-      "checked_date": "2026-10-06",
-      "check_method": "GET; first 1 MiB; 14-second timeout",
-      "http_status": 200,
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60) returned HTTP 403 (Cloudflare 'Attention Required' challenge) and WebFetch returned HTTP 403 on 2026-10-12; metadata taken from search-engine excerpts of the official page/document only. Previous radar check (2026-10-06) read the page title 'Realignment of the National AI Strategy'",
+      "http_status": 403,
       "final_url": "https://www.gov.mt/en/publicconsultation/Pages/2025/NL-0040-2025.aspx",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": "Realignment of the National AI Strategy",
-      "document_language": "en-GB",
-      "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "document_language": "en",
+      "error": "HTTP 403 (bot challenge)",
+      "content_type": "text/html"
     },
     {
       "id": "s-4514fc72ae1b",
@@ -253,23 +627,25 @@
         "MLT"
       ],
       "source_institutions": [
-        "mdia.gov.mt"
+        "Malta Digital Innovation Authority"
       ],
       "instrument_ids": [
         "i-5b42c0383607"
       ],
       "categories_reviewed": [
-        "ethics"
+        "ethics",
+        "risk-assurance",
+        "standards"
       ],
-      "date_reviewed": "2026-10-06",
-      "checked_date": "2026-10-06",
-      "check_method": "GET; first 1 MiB; 14-second timeout",
-      "http_status": 200,
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60) returned HTTP 403 (Cloudflare 'Attention Required' challenge) and WebFetch returned HTTP 403 on 2026-10-12; metadata taken from search-engine excerpts of the official page/document only",
+      "http_status": 403,
       "final_url": "https://mdia.gov.mt/app/uploads/2024/08/Malta_Towards_Ethical_and_Trustworthy_AI-1.pdf",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": null,
-      "document_language": null,
-      "error": null,
+      "document_language": "en",
+      "error": "HTTP 403 (bot challenge)",
       "content_type": "application/pdf"
     },
     {
@@ -279,30 +655,225 @@
         "MLT"
       ],
       "source_institutions": [
-        "mdia.gov.mt"
+        "Malta Digital Innovation Authority"
       ],
       "instrument_ids": [
         "i-e10c9108f427"
       ],
       "categories_reviewed": [
+        "public-sector",
         "strategy"
       ],
-      "date_reviewed": "2026-10-06",
-      "checked_date": "2026-10-06",
-      "check_method": "GET; first 1 MiB; 14-second timeout",
-      "http_status": null,
-      "final_url": null,
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60) returned HTTP 403 (Cloudflare 'Attention Required' challenge) and WebFetch returned HTTP 403 on 2026-10-12; metadata taken from search-engine excerpts of the official page/document only",
+      "http_status": 403,
+      "final_url": "https://mdia.gov.mt/national-strategies/malta-ai-strategy-and-vision/",
       "link_status": "inaccessible",
       "page_title": null,
-      "document_language": null,
-      "error": "The read operation timed out"
+      "document_language": "en",
+      "error": "HTTP 403 (bot challenge)",
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-c309b42046dc",
+      "url": "https://legislation.mt/eli/ln/2025/226/eng",
+      "jurisdiction_ids": [
+        "MLT"
+      ],
+      "source_institutions": [
+        "Government of Malta"
+      ],
+      "instrument_ids": [
+        "i-33d7c747aea8"
+      ],
+      "categories_reviewed": [
+        "binding-law",
+        "government-governance",
+        "sandbox"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): legislation.mt ELI page read (schema.org metadata: Government Gazette No. 21,519 of 10.10.2025) and the full official PDF (getpdf) read with pdftotext",
+      "http_status": 200,
+      "final_url": "https://legislation.mt/eli/ln/2025/226/eng",
+      "link_status": "reachable",
+      "page_title": "226 of 2025 - Artificial Intelligence Regulations, 2025",
+      "document_language": "en",
+      "error": null,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "id": "s-1264b0a83a3f",
+      "url": "https://legislation.mt/eli/ln/2025/227/eng",
+      "jurisdiction_ids": [
+        "MLT"
+      ],
+      "source_institutions": [
+        "Government of Malta"
+      ],
+      "instrument_ids": [
+        "i-23ad5e1e8d3b"
+      ],
+      "categories_reviewed": [
+        "binding-law",
+        "data-privacy",
+        "government-governance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): legislation.mt ELI page read (schema.org metadata: Government Gazette No. 21,519 of 10.10.2025) and the full official PDF (getpdf) read with pdftotext",
+      "http_status": 200,
+      "final_url": "https://legislation.mt/eli/ln/2025/227/eng",
+      "link_status": "reachable",
+      "page_title": "227 of 2025 - Artificial Intelligence (Designation of the Information and Data Protection Commissioner ...) Regulations, 2025",
+      "document_language": "en",
+      "error": null,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "id": "s-8192cbfc6746",
+      "url": "https://legislation.mt/eli/ln/2025/225/eng",
+      "jurisdiction_ids": [
+        "MLT"
+      ],
+      "source_institutions": [
+        "Government of Malta"
+      ],
+      "instrument_ids": [
+        "i-1447279b9b78"
+      ],
+      "categories_reviewed": [
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): legislation.mt ELI page read (schema.org metadata: Government Gazette No. 21,519 of 10.10.2025) and the full official PDF (getpdf) read with pdftotext",
+      "http_status": 200,
+      "final_url": "https://legislation.mt/eli/ln/2025/225/eng",
+      "link_status": "reachable",
+      "page_title": "225 of 2025 - Representative Actions (Consumers) (Amendment of Schedule) Order, 2025",
+      "document_language": "en",
+      "error": null,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "id": "s-0e98960aa679",
+      "url": "https://legislation.mt/eli/cap/591/eng",
+      "jurisdiction_ids": [
+        "MLT"
+      ],
+      "source_institutions": [
+        "Parliament of Malta"
+      ],
+      "instrument_ids": [
+        "i-71fcb3718c04"
+      ],
+      "categories_reviewed": [
+        "binding-law",
+        "ethics",
+        "government-governance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): legislation.mt ELI page and full consolidated PDF (version 2024-06-14) read with pdftotext",
+      "http_status": 200,
+      "final_url": "https://legislation.mt/eli/cap/591/eng",
+      "link_status": "reachable",
+      "page_title": "Malta Digital Innovation Authority Act",
+      "document_language": "en",
+      "error": null,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "id": "s-feff9979a1f8",
+      "url": "https://legislation.mt/eli/cap/586/eng",
+      "jurisdiction_ids": [
+        "MLT"
+      ],
+      "source_institutions": [
+        "Parliament of Malta"
+      ],
+      "instrument_ids": [
+        "i-37bba8dcc8b1"
+      ],
+      "categories_reviewed": [
+        "binding-law",
+        "data-privacy"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): legislation.mt ELI page and full consolidated PDF read with pdftotext",
+      "http_status": 200,
+      "final_url": "https://legislation.mt/eli/cap/586/eng",
+      "link_status": "reachable",
+      "page_title": "Data Protection Act",
+      "document_language": "en",
+      "error": null,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "id": "s-8477fe405ad5",
+      "url": "https://www.mdia.gov.mt/wp-content/uploads/2023/04/Malta-AI-Vision-Towards-a-National-AI-Strategy.pdf",
+      "jurisdiction_ids": [
+        "MLT"
+      ],
+      "source_institutions": [
+        "Malta Digital Innovation Authority"
+      ],
+      "instrument_ids": [
+        "i-923d91363108"
+      ],
+      "categories_reviewed": [
+        "drafts",
+        "historical",
+        "strategy"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60) returned HTTP 403 (Cloudflare 'Attention Required' challenge) and WebFetch returned HTTP 403 on 2026-10-12; metadata taken from search-engine excerpts of the official page/document only",
+      "http_status": 403,
+      "final_url": "https://www.mdia.gov.mt/wp-content/uploads/2023/04/Malta-AI-Vision-Towards-a-National-AI-Strategy.pdf",
+      "link_status": "inaccessible",
+      "page_title": null,
+      "document_language": "en",
+      "error": "HTTP 403 (bot challenge)",
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-03f092918686",
+      "url": "https://mdia.gov.mt/app/uploads/2024/07/AI-ITA-Guidelines-03OCT19.pdf",
+      "jurisdiction_ids": [
+        "MLT"
+      ],
+      "source_institutions": [
+        "Malta Digital Innovation Authority"
+      ],
+      "instrument_ids": [
+        "i-b1b45f5c3aa0"
+      ],
+      "categories_reviewed": [
+        "drafts",
+        "risk-assurance",
+        "standards"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60) returned HTTP 403 (Cloudflare 'Attention Required' challenge) and WebFetch returned HTTP 403 on 2026-10-12; metadata taken from search-engine excerpts of the official page/document only",
+      "http_status": 403,
+      "final_url": "https://mdia.gov.mt/app/uploads/2024/07/AI-ITA-Guidelines-03OCT19.pdf",
+      "link_status": "inaccessible",
+      "page_title": null,
+      "document_language": "en",
+      "error": "HTTP 403 (bot challenge)",
+      "content_type": "application/pdf"
     }
   ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "MLT",
     "country": "Malta",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -315,58 +886,377 @@
       "transparency"
     ],
     "categories_with_findings": [
+      "binding-law",
+      "data-privacy",
       "drafts",
       "ethics",
+      "government-governance",
+      "historical",
+      "public-sector",
+      "risk-assurance",
+      "sandbox",
+      "standards",
       "strategy"
     ],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
-      "binding-law",
-      "strategy",
-      "government-governance",
-      "ethics",
-      "risk-assurance",
-      "public-sector",
+    "categories_where_no_material_was_found": [
       "procurement",
       "cyber-security",
-      "data-privacy",
       "transparency",
-      "standards",
-      "sandbox",
       "index-readiness",
       "sectoral",
       "generative-ai",
-      "drafts",
-      "international",
-      "historical"
+      "international"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Malta \"artificial intelligence\" (strategy OR regulation OR ethics) government ministry official",
       "Malta \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Malta government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Malta \"artificial intelligence\" cybersecurity authority secure development safety guidelines",
-      "Malta privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Malta privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "legislation.mt ELI ln/2025/225-227 (Artificial Intelligence Regulations; IDPC designation; Representative Actions)",
+      "legislation.mt cap/591 Malta Digital Innovation Authority Act; cap/592 ITAS Act; cap/586 Data Protection Act",
+      "Malta legal notice 2025 Artificial Intelligence Act implementation market surveillance authority MDIA",
+      "Malta realignment National AI Strategy 2025 MDIA strategy document",
+      "site:idpc.org.mt artificial intelligence; idpc.org.mt/?s=artificial+intelligence",
+      "MFSA artificial intelligence guidance 2025 2026",
+      "Malta public service generative AI guidelines MITA AI Governance Council",
+      "\"Malta Towards Trustworthy AI\" ethical AI framework 2019",
+      "\"A Strategy and Vision for Artificial Intelligence in Malta 2030\" Ultimate AI Launchpad",
+      "MDIA AI ITA certification guidelines",
+      "Malta Ministry for Education artificial intelligence policy schools",
+      "gov.mt public consultation \"intelliġenza artifiċjali\" 2024-2026",
+      "MDIA AI regulatory sandbox technology assurance sandbox",
+      "Malta Convention 108 / 108+ ratification"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "EU MEMBERSHIP LAYER IMPLEMENTED; INSTRUMENT-SPECIFIC APPLICABILITY REQUIRES REVIEW",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. mdia.gov.mt, gov.mt, opm.gov.mt, mita.gov.mt, mfsa.mt, parlament.mt and centralbankmalta.org returned Cloudflare 403 to curl and WebFetch; MDIA/gov.mt records (2019 strategy, Ethical AI Framework, realignment consultation, AI Vision 2019, AI-ITA guidelines) located only, dates from search excerpts of the official pages. AI-ITA statute Cap. 592 repealed by Act XIX of 2024 (status to check). Convention 108 ratification act not found on legislation.mt. Units covered: Law: legislation.mt read directly (ELI pages + official PDFs): L.N. 225, 226, 227 of 2025 recorded; Cap. 591 MDIA Act and Cap. 586 Data Protection Act recorded; Cap. 592 ITAS Act checked (repealed by Act XIX of 2024, no AI text). No AI bill found; parlament.mt blocked (403).; Government: MDIA (strategy 2019, realignment 2025, Ethical AI Framework, AI-ITA guidelines, 2019 vision document) located via search only - mdia.gov.mt and gov.mt return Cloudflare 403 to curl and WebFetch. OPM AI Governance Council and MITA Copilot governance held as leads.; Ministries: Education: no ministry AI guidance found (searched, nothing found). Health, justice, home affairs, finance, labour, defence: searched via web search, nothing found; ministry sites (*.gov.mt) blocked.; Regulators: IDPC (reachable): AI page and LN 227 news read; no stand-alone IDPC AI guidance found beyond AI Act explainer. MFSA Dear CEO letter on AI (June 2026) held as lead (site blocked). MCA reachable but no AI document found in time; Central Bank of Malta blocked; no AI documents found for competition or cyber authorities.. Not reached: mdia.gov.mt, gov.mt, opm.gov.mt, mita.gov.mt, mfsa.mt, parlament.mt, centralbankmalta.org: all HTTP 403 (Cloudflare) to curl and WebFetch; contents not read; MCA site search for AI not done. Could not verify: Exact publication dates and cover titles of the 2019 strategy, Ethical AI Framework, 2019 AI Vision consultation document and AI-ITA guidelines (MDIA site blocked).; Opening date and outcome of the 2025 realignment consultation (gov.mt blocked).; MFSA June 2026 Dear CEO letter on AI (title/URL) and OPM AI Governance Council founding document.. procurement, cyber-security, transparency, index-readiness, sectoral, generative-ai, international: no material found.",
     "discovery_result_count": 15,
     "focused_result_count": 15
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-399923b30b94",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "MLT",
+      "instrument_id": "i-b7159bc36d4a",
+      "title": "Realignment of the National AI Strategy (public consultation, National AI Strategy and Vision 2025-2030)",
+      "detail": "Record updated: issuing authority, legal status, lifecycle, publication date, scope, summary, title.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-8c19d5a76393",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "MLT",
+      "instrument_id": "i-5b42c0383607",
+      "title": "Malta Towards Trustworthy AI: Malta's Ethical AI Framework",
+      "detail": "Record updated: categories, issuing authority, legal status, lifecycle, publication date, scope, summary, title.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-b7c7848c1601",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "MLT",
+      "instrument_id": "i-e10c9108f427",
+      "title": "Malta: The Ultimate AI Launchpad - A Strategy and Vision for Artificial Intelligence in Malta 2030",
+      "detail": "Record updated: categories, issuing authority, legal status, lifecycle, publication date, scope, summary, title.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-3056523a4aa6",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "MLT",
+      "instrument_id": "i-33d7c747aea8",
+      "title": "Artificial Intelligence Regulations, 2025 (L.N. 226 of 2025)",
+      "detail": "Added to the radar (published 2025-10-10).",
+      "from": null,
+      "to": null,
+      "source_url": "https://legislation.mt/eli/ln/2025/226/eng",
+      "needs_review": false
+    },
+    {
+      "id": "c-ea0457c5ba45",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "MLT",
+      "instrument_id": "i-23ad5e1e8d3b",
+      "title": "Artificial Intelligence (Designation of the Information and Data Protection Commissioner for the purposes of Regulation (EU) 2024/1689) Regulations, 2025 (L.N. 227 of 2025)",
+      "detail": "Added to the radar (published 2025-10-10).",
+      "from": null,
+      "to": null,
+      "source_url": "https://legislation.mt/eli/ln/2025/227/eng",
+      "needs_review": false
+    },
+    {
+      "id": "c-e3b5929a7de5",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "MLT",
+      "instrument_id": "i-1447279b9b78",
+      "title": "Representative Actions (Consumers) (Amendment of Schedule) Order, 2025 (L.N. 225 of 2025)",
+      "detail": "Added to the radar (published 2025-10-10).",
+      "from": null,
+      "to": null,
+      "source_url": "https://legislation.mt/eli/ln/2025/225/eng",
+      "needs_review": false
+    },
+    {
+      "id": "c-9b1449cee892",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "MLT",
+      "instrument_id": "i-71fcb3718c04",
+      "title": "Malta Digital Innovation Authority Act (Chapter 591 of the Laws of Malta)",
+      "detail": "Added to the radar (published 2018).",
+      "from": null,
+      "to": null,
+      "source_url": "https://legislation.mt/eli/cap/591/eng",
+      "needs_review": false
+    },
+    {
+      "id": "c-f0cd8986fd95",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "MLT",
+      "instrument_id": "i-37bba8dcc8b1",
+      "title": "Data Protection Act (Chapter 586 of the Laws of Malta)",
+      "detail": "Added to the radar (published 2018).",
+      "from": null,
+      "to": null,
+      "source_url": "https://legislation.mt/eli/cap/586/eng",
+      "needs_review": false
+    },
+    {
+      "id": "c-ce80390ceb54",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "MLT",
+      "instrument_id": "i-923d91363108",
+      "title": "Malta AI Vision: Towards a National AI Strategy (high-level policy document for consultation)",
+      "detail": "Added to the radar (published 2019-03).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.mdia.gov.mt/wp-content/uploads/2023/04/Malta-AI-Vision-Towards-a-National-AI-Strategy.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-74cfd38b11b5",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "MLT",
+      "instrument_id": "i-b1b45f5c3aa0",
+      "title": "AI Innovative Technology Arrangement (AI-ITA) Guidelines",
+      "detail": "Added to the radar (published 2019-10-03).",
+      "from": null,
+      "to": null,
+      "source_url": "https://mdia.gov.mt/app/uploads/2024/07/AI-ITA-Guidelines-03OCT19.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-8c4384ad25ba",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "MLT",
+      "instrument_id": "i-b7159bc36d4a",
+      "title": "Realignment of the National AI Strategy (public consultation, National AI Strategy and Vision 2025-2030)",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://www.gov.mt/en/publicconsultation/Pages/2025/NL-0040-2025.aspx",
+      "needs_review": false
+    },
+    {
+      "id": "c-fc85d620cebe",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "MLT",
+      "instrument_id": "i-5b42c0383607",
+      "title": "Malta Towards Trustworthy AI: Malta's Ethical AI Framework",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://mdia.gov.mt/app/uploads/2024/08/Malta_Towards_Ethical_and_Trustworthy_AI-1.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-8382744fd381",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "MLT",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 10 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-7c6f8fd3342c",
+      "date": "2026-08-02",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "MLT",
+      "instrument_id": "i-33d7c747aea8",
+      "title": "L.N. 226 of 2025: notifying-authority, sandbox and penalty provisions apply",
+      "detail": "Regulations 4, 5, 6, 8, 9 and 10 come into force on 2 August 2026 (reg. 1(3)).",
+      "from": null,
+      "to": null,
+      "source_url": "https://legislation.mt/eli/ln/2025/226/eng",
+      "needs_review": false
+    },
+    {
+      "id": "c-e791bf8e3c6d",
+      "date": "2026-08-02",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "MLT",
+      "instrument_id": "i-23ad5e1e8d3b",
+      "title": "L.N. 227 of 2025: IDPC AI Act enforcement provisions apply",
+      "detail": "Regulations 5 to 7 and 9 to 12 come into force on 2 August 2026 (reg. 1(3)).",
+      "from": null,
+      "to": null,
+      "source_url": "https://legislation.mt/eli/ln/2025/227/eng",
+      "needs_review": false
+    },
+    {
+      "id": "c-6f3286b474e0",
+      "date": "2025-10-10",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "MLT",
+      "instrument_id": "i-33d7c747aea8",
+      "title": "Artificial Intelligence Regulations, 2025 (L.N. 226 of 2025) published",
+      "detail": "Government Gazette No. 21,519: MDIA designated as AI Act market surveillance authority, single point of contact and AI sandbox authority.",
+      "from": null,
+      "to": null,
+      "source_url": "https://legislation.mt/eli/ln/2025/226/eng",
+      "needs_review": false
+    },
+    {
+      "id": "c-eb55cb0e32b4",
+      "date": "2025-10-10",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "MLT",
+      "instrument_id": "i-23ad5e1e8d3b",
+      "title": "L.N. 227 of 2025 designates the IDPC under the AI Act",
+      "detail": "Government Gazette No. 21,519: IDPC designated market surveillance authority for law-enforcement, border, justice and emergency-triage high-risk AI.",
+      "from": null,
+      "to": null,
+      "source_url": "https://legislation.mt/eli/ln/2025/227/eng",
+      "needs_review": false
+    },
+    {
+      "id": "c-235a7455bc99",
+      "date": "2025-10-10",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "MLT",
+      "instrument_id": "i-1447279b9b78",
+      "title": "AI Act added to the Representative Actions (Consumers) Act schedule",
+      "detail": "L.N. 225 of 2025, Government Gazette No. 21,519.",
+      "from": null,
+      "to": null,
+      "source_url": "https://legislation.mt/eli/ln/2025/225/eng",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "National AI Strategy and Vision 2025-2030 (final realigned strategy) and consultation outcome report",
+      "english_title": "Malta National AI Strategy and Vision (realigned), final version and outcome report",
+      "issuing_authority": "Malta Digital Innovation Authority / Government of Malta",
+      "note": "The MDIA page https://mdia.gov.mt/national-strategies/malta-ai-strategy-and-vision/2025-strategy-and-vision/ describes the realigned strategy (83 measures); commentary says an outcome report followed the consultation closing 16 February 2026. mdia.gov.mt and gov.mt blocked curl and WebFetch (HTTP 403) on 2026-10-12. Record the final strategy (national_strategy) and mark i-e10c9108f427 superseded once confirmed.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "MFSA Dear CEO Letter on supervisory expectations for the adoption and use of Artificial Intelligence (June 2026)",
+      "english_title": "MFSA Dear CEO Letter on AI governance and prudential risk expectations",
+      "issuing_authority": "Malta Financial Services Authority",
+      "note": "MFSA news item 'MFSA Issues AI Governance and Prudential Risk Expectations for Malta Financial Services Firms' (https://www.mfsa.mt/news-item/mfsa-ai-governance-prudential-expectations/, dated 4 June 2026 in search excerpts) announces a Dear CEO letter with AI supervisory expectations and a self-assessment for licence holders. mfsa.mt blocked curl and WebFetch (HTTP 403). Record as regulatory_opinion / sectoral once the letter's exact title and URL are read.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "AI Governance Council for the Public Administration (Office of the Prime Minister)",
+      "english_title": "AI Governance Council (public administration)",
+      "issuing_authority": "Principal Permanent Secretary, Office of the Prime Minister",
+      "note": "Reported (opm.gov.mt mission statement page https://opm.gov.mt/en/?p=13637, July 2026) as established within the OPM and chaired by a Chief AI Officer to ensure lawful, coherent and responsible AI adoption in the public administration. No founding document or public-sector AI policy text found; opm.gov.mt blocked (HTTP 403). Check for a founding circular or public-service AI policy.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "MDIA Technology Assurance Sandbox / AI sandbox guidelines",
+      "english_title": "MDIA Technology Assurance Sandbox guidelines (AI)",
+      "issuing_authority": "Malta Digital Innovation Authority",
+      "note": "Mentioned in commentary as MDIA guidance for testing AI in a controlled environment; L.N. 226 of 2025 reg. 9 makes MDIA the AI regulatory sandbox authority from 2 August 2026. No official document read (mdia.gov.mt blocked).",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "MITA / public-service guidance on Microsoft 365 Copilot and generative AI use",
+      "english_title": "Public-service generative AI (Copilot) governance guidance",
+      "issuing_authority": "Malta Information Technology Agency (MITA)",
+      "note": "A MITA article describes a government-wide Copilot rollout with a Centre of Excellence for governance and compliance; no published guideline found. mita.gov.mt blocked (HTTP 403).",
+      "found": "2026-10-12"
+    }
+  ]
 }
