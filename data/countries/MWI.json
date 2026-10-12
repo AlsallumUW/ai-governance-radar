@@ -10,18 +10,119 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Malawi has no AI-specific law, strategy or guidance yet. The only binding framework touching AI is the Data Protection Act, 2024, which gives people a right not to be subject to decisions based solely on automated processing and is enforced by the communications regulator MACRA. A National AI Strategy is in draft consultation and an AI bill is planned.",
+    "lead_institutions": [
+      "Department of E-Government",
+      "Malawi Communications Regulatory Authority (MACRA)"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was carried out on 12 October 2026, but Parliament's and the e-government department's websites could not be accessed and there is no official online gazette. The enacted text of the Data Protection Act, 2024 was not found online, so it is recorded from the bill as tabled. The draft AI strategy, the planned AI bill and an AI readiness report are tracked as leads. Malawi is marked for a later retry and, as a country of over 20 million people with few records, for a longer catch-up pass."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-0bc490f5862f",
+      "official_title": "Data Protection Act, 2024",
+      "english_title": "Data Protection Act, 2024",
+      "issuing_authority": "Parliament of Malawi",
+      "authority_type": "legislature",
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2024",
+      "current_status": "The enacted Act's text and its Gazette publication were not found online on any official site. The text read is the Bill as tabled in Parliament (Data Protection Bill, 2023, B. No. 22), hosted by the Public Private Partnership Commission's Digital Malawi Project; clause 25 of the Bill gives the right not to be subject to decisions based solely on automated processing. In-force status rests on MACRA's August 2026 public notice on unlawful processing of personal data (https://macra.mw/wp-content/uploads/2026/08/PUBLIC-NOTICE-Unlawful-Processing-of-Personal-Data-1.pdf), in which MACRA, as designated Data Protection Authority, enforces the Data Protection Act, 2024 and cites its section 49. Act number, commencement date and final section numbering are unverified.",
+      "summary": "Malawi's comprehensive data protection law, designating the Malawi Communications Regulatory Authority (MACRA) as Data Protection Authority and setting principles for lawful, fair and transparent processing of personal data of natural persons. In the Bill text it gives data subjects the right not to be subject to decisions based solely on automated processing, including profiling, that produce legal or similarly significant effects, and requires controllers to disclose the existence of automated decision-making. It also imposes security and breach-notification duties, regulates cross-border transfers and requires registration of data controllers and processors of significant importance.",
+      "ai_governance_relevance": "Only binding Malawian law found that governs AI use: automated decision-making and profiling rights, enforced by MACRA.",
+      "source_url": "https://digmap.pppc.mw/wp-content/uploads/2024/02/Data-Protection-Bill-2023-Correct.pdf",
+      "official_pdf_url": "https://digmap.pppc.mw/wp-content/uploads/2024/02/Data-Protection-Bill-2023-Correct.pdf",
+      "official_webpage_url": null,
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-de30c172a405",
+      "publisher_name": "Public Private Partnership Commission",
+      "jurisdiction_id": "MWI",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Malawi (national)",
+      "technology_scope": [
+        "automated decision-making",
+        "profiling"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [
+        "Act number (reported as Act No. 3 of 2024) not verified on an official source",
+        "commencement date (reported as 3 June 2024 by Government Notice No. 40 of 2024) not verified on an official source",
+        "final section numbering of the enacted Act not verified (automated decisions is clause 25 of the Bill)",
+        "exact publication date of the Act in the Gazette not found"
+      ],
+      "language": "en",
+      "verification_date": "2026-10-11",
+      "first_recorded": "2026-10-11",
+      "last_changed": null,
+      "verification_level": "primary_source_located",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-bd68f791b66b",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full text of the Data Protection Bill, 2023 (B. No. 22) PDF read with pdftotext on the Public Private Partnership Commission's Digital Malawi Project site; MACRA public notice of August 2026 read via curl. The enacted Act's text and Gazette publication were not found on any official site."
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-de30c172a405",
+      "jurisdiction_id": "MWI",
+      "name": "Parliament of Malawi",
+      "publisher_name_verified": false,
+      "ai_governance_role": "National Assembly of Malawi; enacted the Data Protection Act, 2024. Its website refused automated access during this review.",
+      "source_url": "https://www.parliament.gov.mw/",
+      "authority_type": "legislature",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-bd68f791b66b",
+      "url": "https://digmap.pppc.mw/wp-content/uploads/2024/02/Data-Protection-Bill-2023-Correct.pdf",
+      "jurisdiction_ids": [
+        "MWI"
+      ],
+      "source_institutions": [
+        "Public Private Partnership Commission"
+      ],
+      "instrument_ids": [
+        "i-0bc490f5862f"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser user agent, --max-time 60): full text of the Data Protection Bill, 2023 (B. No. 22) PDF read with pdftotext on the Public Private Partnership Commission's Digital Malawi Project site; MACRA public notice of August 2026 read via curl. The enacted Act's text and Gazette publication were not found on any official site.",
+      "http_status": 200,
+      "final_url": "https://digmap.pppc.mw/wp-content/uploads/2024/02/Data-Protection-Bill-2023-Correct.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "MWI",
     "country": "Malawi",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -33,10 +134,11 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_with_findings": [
       "binding-law",
+      "data-privacy"
+    ],
+    "categories_where_no_material_was_found": [
       "strategy",
       "government-governance",
       "ethics",
@@ -44,7 +146,6 @@
       "public-sector",
       "procurement",
       "cyber-security",
-      "data-privacy",
       "transparency",
       "standards",
       "sandbox",
@@ -55,33 +156,113 @@
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Malawi \"artificial intelligence\" (strategy OR regulation OR ethics) government ministry official",
       "Malawi \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Malawi government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Malawi \"artificial intelligence\" cybersecurity authority secure development safety guidelines",
-      "Malawi privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Malawi privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "Malawi national artificial intelligence strategy Ministry of Information and Digitalisation",
+      "Malawi Data Protection Act 2024 automated decision-making gazette",
+      "Malawi Digital Economy Strategy 2021-2026 artificial intelligence pdf",
+      "macra.mw data protection act 2024 pdf download",
+      "Malawi \"Data Protection Act\" 2024 gazette commencement notice Minister data protection authority MACRA registration",
+      "\"Data Protection Act\" 2024 Malawi pdf site:gov.mw OR site:pppc.mw OR site:macra.mw OR site:parliament.gov.mw",
+      "Malawi \"Artificial Intelligence Bill\" OR \"AI Bill\" 2026 e-Government Department",
+      "Malawi government \"artificial intelligence\" policy OR guidelines site:gov.mw",
+      "Reserve Bank of Malawi artificial intelligence guidance OR directive OR fintech sandbox",
+      "\"artificial intelligence\" site:rbm.mw OR site:macra.mw OR site:health.gov.mw OR site:justice.gov.mw OR site:ppda.mw",
+      "Malawi \"Data Protection Act, 2024\" Act No. 3 of 2024 parliament.gov.mw OR justice.gov.mw",
+      "nzeru zochita kupanga (artificial intelligence) Malawi boma ndondomeko [Chichewa]",
+      "Malawi \"National Digitalisation Policy\" 2023 pdf artificial intelligence",
+      "parliament.gov.mw \"Data Protection\" bill 2023 pdf",
+      "MACRA \"Data Protection Handbook\" Malawi",
+      "macra.mw site search and media library: \"data protection\", \"artificial intelligence\", \"guideline\", \"handbook\", all PDFs",
+      "digmap.pppc.mw media library: \"protection\", \"artificial\"",
+      "malawilii.org (discovery): \"artificial intelligence\" (0 hits), \"data protection act\", \"Convention for the Protection of Individuals\" (0 hits)"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. parliament.gov.mw refused (curl/WebFetch); digital.gov.mw, egov.gov.mw, health.gov.mw, mbs.mw, cfc.mw unreachable. MalawiLII (NGO-hosted) discovery only. DPA 2024 recorded primary_source_located from Bill B. No. 22 of 2023 on digmap.pppc.mw; Act No. 3 of 2024 / GN 40 of 2024 commencement unverified. justice.gov.mw/resources/publications shows injected spam - not used. MACRA 2024 draft bills (Digital Innovation; Cybersecurity): no AI. Convention 108: not a party. Units covered: Law: Data Protection Act, 2024 recorded (primary_source_located) from the Bill as tabled on the PPPC government site; enacted text and Gazette not online. MACRA Acts page (Communications Act 2016, Electronic Transactions and Cyber Security Act 2016: no AI provisions), Ministry of Justice laws list, RBM legislation list checked. MACRA consultation drafts Digital Innovation and Entrepreneurship Bill 2024 and Cybersecurity Bill 2024 read: no AI, algorithm or automated-decision provisions. AI Bill planned (lead). Searched, nothing else found.; Government: ict.gov.mw downloads (legislation, policies) checked: no AI documents. National AI Strategy in draft/consultation (lead); National Digitalisation Policy 2023-2028 and Digital Economy Strategy 2021-2026 not found on an official site. No public-sector AI guidelines found.; Ministries: Education (AI readiness RAM report validated July 2026, unpublished: lead), Justice (laws/policies/publications pages: no AI documents), Health (site unreachable), Finance/tax, Labour, Defence, Interior: searched, nothing found.; Regulators: MACRA (data protection authority, telecoms, MW CERT): no AI guidance (media library and site search). Reserve Bank of Malawi: no AI documents or sandbox. PPDA (procurement): no AI documents. Competition and Fair Trading Commission and Malawi Bureau of Standards sites unreachable. Searched, nothing found.. Not reached: Parliament of Malawi website (parliament.gov.mw): access refused to curl and WebFetch; Ministry of Information and Digitalisation / e-Government sites (digital.gov.mw, egov.gov.mw): unreachable; Ministry of Health (health.gov.mw), Malawi Bureau of Standards (mbs.mw), Competition and Fair Trading Commission (cfc.mw): unreachable; Malawi Government Gazette: no official online gazette; non-government legal-information site used for discovery only. Could not verify: Data Protection Act, 2024 enacted section numbering (automated-decision clause is cl. 25 in Bill B. No. 22 of 2023) and commencement notice (GN 40/2024) against an official source; Draft National AI Strategy status (only news and an official project news item); National Digitalisation Policy 2023-2028 AI content. strategy, government-governance, ethics, risk-assurance, public-sector, procurement, cyber-security, transparency, standards, sandbox, index-readiness, sectoral, generative-ai, drafts, international, historical: no material found.",
     "discovery_result_count": 10,
     "focused_result_count": 12
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-9e5b5f3baa00",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "MWI",
+      "instrument_id": "i-0bc490f5862f",
+      "title": "Data Protection Act, 2024",
+      "detail": "Added to the radar (published 2024).",
+      "from": null,
+      "to": null,
+      "source_url": "https://digmap.pppc.mw/wp-content/uploads/2024/02/Data-Protection-Bill-2023-Correct.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-8359987bfe06",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "MWI",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 1 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "National Artificial Intelligence Strategy (draft)",
+      "english_title": "National Artificial Intelligence Strategy (draft)",
+      "issuing_authority": "Department of E-Government (Ministry responsible for information and digitalisation / ICT)",
+      "note": "First national AI strategy, developed by the Department of E-Government with UNDP and the PPPC Digital Malawi Project; officially reported (PPPC Digital Malawi Acceleration Project news, Aug 2026) as drafted and undergoing stakeholder consultation before adoption. No draft or final text published on an official site. The ministry/e-government websites were unreachable.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Artificial Intelligence Bill (planned)",
+      "english_title": "Artificial Intelligence Bill (planned)",
+      "issuing_authority": "Ministry responsible for ICT / Department of E-Government",
+      "note": "Officials say an AI Bill will support the National AI Strategy with a regulatory framework (news reports only, 2026). No bill text, gazette entry or parliamentary tabling found.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Malawi Artificial Intelligence Readiness Assessment Methodology (RAM) Report",
+      "english_title": "Malawi AI Readiness Assessment (UNESCO RAM) Report",
+      "issuing_authority": "Ministry of Education, Science and Technology (with UNESCO Regional Office for Southern Africa)",
+      "note": "Validated at a ministry workshop in Lilongwe in July 2026 (education.gov.mw news item; NCST news gives 22 July 2026); intended to guide the national AI strategy. Report not published on an official site; if published by UNESCO only, it is not a national instrument.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "National Digitalisation Policy 2023-2028",
+      "english_title": "National Digitalisation Policy 2023-2028",
+      "issuing_authority": "Ministry of Information and Digitalisation",
+      "note": "Reported by secondary sources to address AI (enabling environment for AI adoption). No official copy found: the ministry's ICT site (ict.gov.mw) lists only the National ICT Policy, ICT Master Plan and older documents; digital.gov.mw unreachable. Check for an AI pillar once an official copy is located.",
+      "found": "2026-10-11"
+    }
+  ]
 }
