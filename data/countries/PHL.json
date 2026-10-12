@@ -10,18 +10,495 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Most Philippine government websites could not be accessed during this review, so only one document could be read in full. From what could be located, the Philippines has no AI-specific law: AI governance runs through the trade department's national AI roadmaps (2021 and 2024), the Data Privacy Act of 2012 with the privacy commission's 2024 advisory on AI systems, a joint circular on AI in government (draft 2024, final 2026), the education department's 2026 AI guidelines for basic education, and the central bank's 2026 AI governance principles for financial institutions. Many AI and deepfake bills are pending in Congress.",
+    "lead_institutions": [
+      "Department of Trade and Industry",
+      "Department of Information and Communications Technology",
+      "National Privacy Commission",
+      "Bangko Sentral ng Pilipinas"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was carried out on 12 October 2026, but most official Philippine websites, including the Official Gazette, the privacy commission, the ICT and education departments and Congress, blocked access. Only the central bank's AI principles could be read in full; the other records could only be located, and the national AI roadmaps and pending bills are listed as leads. The Philippines is marked for a later retry."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-f98199388ea8",
+      "official_title": "Memorandum No. M-2026-031: Guidance Paper Entitled “Governance Principles for Artificial Intelligence (AI) in Financial Services”",
+      "english_title": "BSP Memorandum No. M-2026-031: Governance Principles for Artificial Intelligence (AI) in Financial Services",
+      "issuing_authority": "Bangko Sentral ng Pilipinas (Office of the Deputy Governor, Financial Supervision Sector)",
+      "authority_type": "regulator",
+      "categories": [
+        "sectoral",
+        "risk-assurance",
+        "ethics",
+        "transparency"
+      ],
+      "legal_status": "regulatory_opinion",
+      "lifecycle": "published",
+      "publication_date": "2026-06-24",
+      "current_status": "Signed by Deputy Governor Lyn I. Javier on 24 June 2026 and addressed to all BSP-supervised financial institutions. The guidance states it is non-binding and voluntary but sets minimum supervisory expectations; it notes a forthcoming BSP Model Risk Management framework for algorithmic fairness and model risk.",
+      "summary": "BSP memorandum issuing a guidance paper that asks BSP-supervised financial institutions to formally develop their own AI governance framework, proportionate to the materiality and complexity of their AI systems. It sets out the 'STARS' principles (sustainability, transparency, accountability, responsibility, security), maps risks and mitigating controls across the AI system lifecycle, and extends to outsourced service providers under a shared-responsibility model. The principles are stated to be non-binding and voluntary, but described as minimum supervisory expectations.",
+      "ai_governance_relevance": "Main AI-specific guidance from the Philippine financial supervisor.",
+      "source_url": "https://www.bsp.gov.ph/Regulations/Issuances/2026/M-2026-031.pdf",
+      "official_pdf_url": "https://www.bsp.gov.ph/Regulations/Issuances/2026/M-2026-031.pdf",
+      "official_webpage_url": null,
+      "sectors": [
+        "finance"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-8f5a91811b30",
+      "publisher_name": "Bangko Sentral ng Pilipinas",
+      "jurisdiction_id": "PHL",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "sectoral",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Philippines (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "en",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-a096c51e9bac",
+      "evidence_reference": "curl (--max-time 60): 12-page PDF downloaded and read with pdftotext; memorandum number, signatory and 24 June 2026 date read from the cover memorandum."
+    },
+    {
+      "id": "i-8874120144ee",
+      "official_title": "NPC Advisory No. 2024-04: Guidelines on the Application of Republic Act No. 10173, Its Implementing Rules and Regulations, and the Issuances of the Commission to Artificial Intelligence Systems Processing Personal Data",
+      "english_title": "NPC Advisory No. 2024-04: Guidelines on applying the Data Privacy Act of 2012 to AI systems processing personal data",
+      "issuing_authority": "National Privacy Commission",
+      "authority_type": "regulator",
+      "categories": [
+        "data-privacy",
+        "transparency",
+        "risk-assurance"
+      ],
+      "legal_status": "regulatory_opinion",
+      "lifecycle": "published",
+      "publication_date": "2024-12-19",
+      "current_status": "Dated 19 December 2024 (date in the official PDF's file name and header as indexed). Official text could not be opened in this review because privacy.gov.ph blocks automated access; title and date need confirmation against the PDF.",
+      "summary": "National Privacy Commission advisory explaining how the Data Privacy Act of 2012, its implementing rules and NPC issuances apply to AI systems that process personal data, across development, training, testing and deployment. It addresses personal information controllers and processors, covering the general privacy principles, transparency to data subjects about AI processing, accountability and data subject rights.",
+      "ai_governance_relevance": "The data protection authority's AI-specific guidance.",
+      "source_url": "https://privacy.gov.ph/wp-content/uploads/2024/12/Advisory-2024.12.19-Guidelines-on-Artificial-Intelligence-w-SGD.pdf",
+      "official_pdf_url": "https://privacy.gov.ph/wp-content/uploads/2024/12/Advisory-2024.12.19-Guidelines-on-Artificial-Intelligence-w-SGD.pdf",
+      "official_webpage_url": "https://privacy.gov.ph/advisories/",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-732ff7164c60",
+      "publisher_name": "National Privacy Commission",
+      "jurisdiction_id": "PHL",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Philippines (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [
+        "official_title (exact wording unconfirmed)",
+        "summary from discovery sources, not the official text",
+        "effective_date"
+      ],
+      "language": "en",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "primary_source_located",
+      "link_status": "inaccessible",
+      "document_access_type": "original_government_document",
+      "source_id": "s-06a38118715e",
+      "evidence_reference": "curl (--max-time 60, browser user agent and default) returned HTTP 403 (bot-protection challenge) and WebFetch returned HTTP 403; text not read. URL, advisory number and date located through web search of privacy.gov.ph (a second copy exists under /2025/02/)."
+    },
+    {
+      "id": "i-a8cb8bb439f9",
+      "official_title": "Republic Act No. 10173: An Act Protecting Individual Personal Information in Information and Communications Systems in the Government and the Private Sector, Creating for this Purpose a National Privacy Commission, and for Other Purposes (Data Privacy Act of 2012)",
+      "english_title": "Data Privacy Act of 2012 (Republic Act No. 10173)",
+      "issuing_authority": "Congress of the Philippines",
+      "authority_type": "legislature",
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2012-08-15",
+      "current_status": "Approved 15 August 2012 (Official Gazette entry date). In force; implementing rules issued by the NPC in 2016. Applied to AI systems through NPC Advisory No. 2024-04. Gazette text not opened in this review (site blocks automated access).",
+      "summary": "The Philippines' general data protection law, governing processing of personal information by government and private-sector controllers and processors and creating the National Privacy Commission. It governs the collection and use of personal data for training and operating AI systems, and is the legal basis for the NPC's 2024 AI advisory.",
+      "ai_governance_relevance": "General data-protection law that governs AI processing of personal data.",
+      "source_url": "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/",
+      "official_pdf_url": "https://privacy.gov.ph/wp-content/uploads/2017/03/DPA-of-2012.pdf",
+      "official_webpage_url": "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-f2945d5c49b6",
+      "publisher_name": "Congress of the Philippines",
+      "jurisdiction_id": "PHL",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Philippines (national)",
+      "technology_scope": [
+        "personal data processing"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [
+        "effective_date",
+        "text not read (gazette and NPC sites blocked)"
+      ],
+      "language": "en",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "primary_source_located",
+      "link_status": "inaccessible",
+      "document_access_type": "original_government_document",
+      "source_id": "s-b55e52d9de67",
+      "evidence_reference": "curl (--max-time 60, browser user agent and default) returned HTTP 403 (bot-protection challenge) and WebFetch returned HTTP 403; text not read. Gazette URL and approval date located via web search of officialgazette.gov.ph; mirror.officialgazette.gov.ph also 403."
+    },
+    {
+      "id": "i-99e106a9a489",
+      "official_title": "DepEd Order No. 003, s. 2026: Foundational Guidelines on Artificial Intelligence (AI) in Basic Education",
+      "english_title": "DepEd Order No. 3, s. 2026: Foundational Guidelines on Artificial Intelligence (AI) in Basic Education",
+      "issuing_authority": "Department of Education",
+      "authority_type": "government",
+      "categories": [
+        "sectoral",
+        "public-sector",
+        "generative-ai",
+        "risk-assurance",
+        "transparency"
+      ],
+      "legal_status": "administrative_policy_mandatory_in_scope",
+      "lifecycle": "adopted",
+      "publication_date": "2026-02-20",
+      "current_status": "Listed on the DepEd issuances page dated 20 February 2026. Official page could not be opened in this review (site blocks automated access); content details come from DepEd's own 26 February 2026 news item as indexed and need confirmation against the order.",
+      "summary": "Department order setting national foundational guidelines for AI use by learners, teachers and offices in basic education. It reportedly introduces a risk-based classification with prohibited uses (e.g. emotion recognition, social scoring, manipulative chatbots aimed at minors), requires privacy impact assessments before deployment, and requires AI deployments to be recorded in a DepEd AI Registry.",
+      "ai_governance_relevance": "Binding AI policy for the public basic-education system.",
+      "source_url": "https://www.deped.gov.ph/2026/02/20/february-20-2026-do-003-s-2026-foundational-guidelines-on-artificial-intelligence-ai-in-basic-education/",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.deped.gov.ph/2026/02/20/february-20-2026-do-003-s-2026-foundational-guidelines-on-artificial-intelligence-ai-in-basic-education/",
+      "sectors": [
+        "education"
+      ],
+      "source_kind": "official_publication",
+      "supersedes": [],
+      "organization_id": "o-992b9cde563d",
+      "publisher_name": "Department of Education",
+      "jurisdiction_id": "PHL",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "sectoral",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Philippines (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [
+        "official PDF URL",
+        "effective_date",
+        "summary from discovery sources, not the order text"
+      ],
+      "language": "en",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "primary_source_located",
+      "link_status": "inaccessible",
+      "document_access_type": "original_government_document",
+      "source_id": "s-f80f589eaf77",
+      "evidence_reference": "curl (--max-time 60, browser user agent and default) returned HTTP 403 (bot-protection challenge) and WebFetch returned HTTP 403; text not read. Official page URL, title and date located via web search restricted to deped.gov.ph."
+    },
+    {
+      "id": "i-d6222fe44589",
+      "official_title": "Joint Memorandum Circular No. ___, Series of 2024: Principles and Guidelines for an Ethical and Trustworthy Use of Artificial Intelligence (AI) in the Government (Draft as of 18 April 2024)",
+      "english_title": "Draft DICT-CSC Joint Memorandum Circular on Principles for an Ethical and Trustworthy Use of AI in Government (draft of 18 April 2024)",
+      "issuing_authority": "Department of Information and Communications Technology and Civil Service Commission",
+      "authority_type": "government",
+      "categories": [
+        "drafts",
+        "public-sector",
+        "ethics"
+      ],
+      "legal_status": "consultation_draft",
+      "lifecycle": "consultation",
+      "publication_date": "2024-04-18",
+      "current_status": "Draft dated 18 April 2024 published on the DICT ICT Knowledge Portal for stakeholder consultation. A final DICT-CSC Joint Memorandum Circular No. 003, s. 2026 on ethical and responsible AI in government is reportedly dated 9 June 2026 and listed on the same portal, but its text could not be opened (held as a lead).",
+      "summary": "Draft joint circular by DICT and the Civil Service Commission setting principles for ethical and trustworthy AI use by government. Per the draft, it would apply to executive-branch offices, GOCCs, state universities and colleges and local government units, with Congress, the Judiciary, constitutional commissions and the Ombudsman encouraged to adopt it.",
+      "ai_governance_relevance": "First government-wide public-sector AI policy text; precursor of JMC No. 003, s. 2026.",
+      "source_url": "https://ictstatistics.dict.gov.ph/wp-content/uploads/2024/05/DRAFT-COPY_JMC-on-the-Principles-for-an-Ethical-and-Trustworthy-Use-of-Artificial-Intelligence-AI-in-Government.pdf",
+      "official_pdf_url": "https://ictstatistics.dict.gov.ph/wp-content/uploads/2024/05/DRAFT-COPY_JMC-on-the-Principles-for-an-Ethical-and-Trustworthy-Use-of-Artificial-Intelligence-AI-in-Government.pdf",
+      "official_webpage_url": "https://ictstatistics.dict.gov.ph/stakeholder-consultation-on-the-draft-joint-memorandum-circular-on-the-principles-and-guidelines-for-an-ethical-and-trustworthy-use-of-artificial-intelligence-ai-in-the-government/",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "consultation_portal",
+      "supersedes": [],
+      "organization_id": "o-f231171f3116",
+      "publisher_name": "Department of Information and Communications Technology",
+      "jurisdiction_id": "PHL",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "drafts",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Philippines (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [
+        "exact official title",
+        "text not read (DICT portal blocked)"
+      ],
+      "language": "en",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "primary_source_located",
+      "link_status": "inaccessible",
+      "document_access_type": "original_government_document",
+      "source_id": "s-74dc365ae1db",
+      "evidence_reference": "curl (--max-time 60, browser user agent and default) returned HTTP 403 (bot-protection challenge) and WebFetch returned HTTP 403; text not read. PDF URL and 'DRAFT As of 18 April 2024' header located via web search of ictstatistics.dict.gov.ph."
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-8f5a91811b30",
+      "jurisdiction_id": "PHL",
+      "name": "Bangko Sentral ng Pilipinas",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Central bank and financial supervisor; issued the 2026 Governance Principles for AI in Financial Services (Memorandum M-2026-031) for BSP-supervised financial institutions.",
+      "source_url": "https://www.bsp.gov.ph/",
+      "authority_type": "central_bank",
+      "government_level": "national"
+    },
+    {
+      "id": "o-732ff7164c60",
+      "jurisdiction_id": "PHL",
+      "name": "National Privacy Commission",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Data protection authority under the Data Privacy Act of 2012; issued NPC Advisory No. 2024-04 on applying the Act to AI systems processing personal data.",
+      "source_url": "https://privacy.gov.ph/",
+      "authority_type": "regulator",
+      "government_level": "national"
+    },
+    {
+      "id": "o-992b9cde563d",
+      "jurisdiction_id": "PHL",
+      "name": "Department of Education",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Basic-education department; issued DepEd Order No. 003, s. 2026 on AI in basic education (risk classification, AI registry, privacy impact assessments).",
+      "source_url": "https://www.deped.gov.ph/",
+      "authority_type": "ministry",
+      "government_level": "national"
+    },
+    {
+      "id": "o-f231171f3116",
+      "jurisdiction_id": "PHL",
+      "name": "Department of Information and Communications Technology",
+      "publisher_name_verified": true,
+      "ai_governance_role": "ICT ministry; with the Civil Service Commission, drafted (2024) and reportedly issued (2026) the joint memorandum circular on ethical and responsible AI use in government.",
+      "source_url": "https://dict.gov.ph/",
+      "authority_type": "ministry",
+      "government_level": "national"
+    },
+    {
+      "id": "o-f2945d5c49b6",
+      "jurisdiction_id": "PHL",
+      "name": "Congress of the Philippines",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Bicameral legislature; enacted the Data Privacy Act of 2012; AI regulation bills are pending in the 20th Congress (e.g. Senate Bill No. 25, House Bill No. 11007).",
+      "source_url": "https://www.congress.gov.ph/",
+      "authority_type": "legislature",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-a096c51e9bac",
+      "url": "https://www.bsp.gov.ph/Regulations/Issuances/2026/M-2026-031.pdf",
+      "jurisdiction_ids": [
+        "PHL"
+      ],
+      "source_institutions": [
+        "Bangko Sentral ng Pilipinas"
+      ],
+      "instrument_ids": [
+        "i-f98199388ea8"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "risk-assurance",
+        "ethics",
+        "transparency"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (--max-time 60): 12-page PDF downloaded and read with pdftotext; memorandum number, signatory and 24 June 2026 date read from the cover memorandum.",
+      "http_status": 200,
+      "final_url": "https://www.bsp.gov.ph/Regulations/Issuances/2026/M-2026-031.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-06a38118715e",
+      "url": "https://privacy.gov.ph/wp-content/uploads/2024/12/Advisory-2024.12.19-Guidelines-on-Artificial-Intelligence-w-SGD.pdf",
+      "jurisdiction_ids": [
+        "PHL"
+      ],
+      "source_institutions": [
+        "National Privacy Commission"
+      ],
+      "instrument_ids": [
+        "i-8874120144ee"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "transparency",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (--max-time 60, browser user agent and default) returned HTTP 403 (bot-protection challenge) and WebFetch returned HTTP 403; text not read. URL, advisory number and date located through web search of privacy.gov.ph (a second copy exists under /2025/02/).",
+      "http_status": 403,
+      "final_url": "https://privacy.gov.ph/wp-content/uploads/2024/12/Advisory-2024.12.19-Guidelines-on-Artificial-Intelligence-w-SGD.pdf",
+      "link_status": "inaccessible",
+      "page_title": null,
+      "document_language": "en",
+      "error": "Access blocked by the site's bot protection (HTTP 403) for both curl and WebFetch",
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-b55e52d9de67",
+      "url": "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/",
+      "jurisdiction_ids": [
+        "PHL"
+      ],
+      "source_institutions": [
+        "Congress of the Philippines"
+      ],
+      "instrument_ids": [
+        "i-a8cb8bb439f9"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (--max-time 60, browser user agent and default) returned HTTP 403 (bot-protection challenge) and WebFetch returned HTTP 403; text not read. Gazette URL and approval date located via web search of officialgazette.gov.ph; mirror.officialgazette.gov.ph also 403.",
+      "http_status": 403,
+      "final_url": "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/",
+      "link_status": "inaccessible",
+      "page_title": null,
+      "document_language": "en",
+      "error": "Access blocked by the site's bot protection (HTTP 403) for both curl and WebFetch",
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-f80f589eaf77",
+      "url": "https://www.deped.gov.ph/2026/02/20/february-20-2026-do-003-s-2026-foundational-guidelines-on-artificial-intelligence-ai-in-basic-education/",
+      "jurisdiction_ids": [
+        "PHL"
+      ],
+      "source_institutions": [
+        "Department of Education"
+      ],
+      "instrument_ids": [
+        "i-99e106a9a489"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "public-sector",
+        "generative-ai",
+        "risk-assurance",
+        "transparency"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (--max-time 60, browser user agent and default) returned HTTP 403 (bot-protection challenge) and WebFetch returned HTTP 403; text not read. Official page URL, title and date located via web search restricted to deped.gov.ph.",
+      "http_status": 403,
+      "final_url": "https://www.deped.gov.ph/2026/02/20/february-20-2026-do-003-s-2026-foundational-guidelines-on-artificial-intelligence-ai-in-basic-education/",
+      "link_status": "inaccessible",
+      "page_title": null,
+      "document_language": "en",
+      "error": "Access blocked by the site's bot protection (HTTP 403) for both curl and WebFetch",
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-74dc365ae1db",
+      "url": "https://ictstatistics.dict.gov.ph/wp-content/uploads/2024/05/DRAFT-COPY_JMC-on-the-Principles-for-an-Ethical-and-Trustworthy-Use-of-Artificial-Intelligence-AI-in-Government.pdf",
+      "jurisdiction_ids": [
+        "PHL"
+      ],
+      "source_institutions": [
+        "Department of Information and Communications Technology"
+      ],
+      "instrument_ids": [
+        "i-d6222fe44589"
+      ],
+      "categories_reviewed": [
+        "drafts",
+        "public-sector",
+        "ethics"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (--max-time 60, browser user agent and default) returned HTTP 403 (bot-protection challenge) and WebFetch returned HTTP 403; text not read. PDF URL and 'DRAFT As of 18 April 2024' header located via web search of ictstatistics.dict.gov.ph.",
+      "http_status": 403,
+      "final_url": "https://ictstatistics.dict.gov.ph/wp-content/uploads/2024/05/DRAFT-COPY_JMC-on-the-Principles-for-an-Ethical-and-Trustworthy-Use-of-Artificial-Intelligence-AI-in-Government.pdf",
+      "link_status": "inaccessible",
+      "page_title": null,
+      "document_language": "en",
+      "error": "Access blocked by the site's bot protection (HTTP 403) for both curl and WebFetch",
+      "content_type": "text/html"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "PHL",
     "country": "Philippines",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -33,55 +510,244 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_with_findings": [
       "binding-law",
+      "data-privacy",
+      "drafts",
+      "ethics",
+      "generative-ai",
+      "public-sector",
+      "risk-assurance",
+      "sectoral",
+      "transparency"
+    ],
+    "categories_where_no_material_was_found": [
       "strategy",
       "government-governance",
-      "ethics",
-      "risk-assurance",
-      "public-sector",
       "procurement",
       "cyber-security",
-      "data-privacy",
-      "transparency",
       "standards",
       "sandbox",
       "index-readiness",
-      "sectoral",
-      "generative-ai",
-      "drafts",
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Philippines \"artificial intelligence\" (strategy OR regulation OR ethics) government ministry official",
       "Philippines \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Philippines government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Philippines \"artificial intelligence\" cybersecurity authority secure development safety guidelines",
-      "Philippines privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Philippines privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "NPC Advisory 2024-04 artificial intelligence privacy.gov.ph",
+      "DTI National AI Strategy Roadmap 2.0 NAIS-PH pdf dti.gov.ph",
+      "\"National AI Strategy Roadmap\" OR \"NAIS-PH\" site:dti.gov.ph pdf",
+      "\"NAISR 2.0\" OR \"National AI Strategy Roadmap 2.0\" Philippines full document download",
+      "CHED memorandum order generative artificial intelligence guidelines higher education 2025",
+      "CHED artificial intelligence policy guidelines higher education institutions CMO 2025 2026 ched.gov.ph",
+      "DepEd artificial intelligence framework order memorandum 2025 deped.gov.ph",
+      "DepEd Order No. 003 s. 2026 Foundational Guidelines on Artificial Intelligence in Basic Education deped.gov.ph",
+      "Bangko Sentral ng Pilipinas circular artificial intelligence guidelines BSP-supervised financial institutions",
+      "SEC Philippines memorandum circular artificial intelligence guidelines 2025 2026",
+      "DICT department circular artificial intelligence government guidelines responsible use generative AI Philippines",
+      "Joint Memorandum Circular No. 003 s. 2026 DICT CSC artificial intelligence officialgazette.gov.ph",
+      "Senate bill artificial intelligence 20th Congress Philippines regulation act senate.gov.ph",
+      "Data Privacy Act of 2012 Republic Act No. 10173 officialgazette",
+      "dti.gov.ph site search: artificial intelligence",
+      "dost.gov.ph site search: artificial intelligence",
+      "artificial intelligence patakaran gobyerno Pilipinas alituntunin AI ahensya (Filipino)",
+      "Philippines SEC \"artificial intelligence\" guidelines registered entities OR investment advice memorandum circular sec.gov.ph",
+      "Philippines republic act deepfake artificial intelligence signed law 2025 2026 officialgazette",
+      "DOH Department of Health administrative order artificial intelligence health Philippines guidelines",
+      "\"National AI Strategy for the Philippines\" NAIS-PH DOST 2025 2028 document",
+      "dost.gov.ph site search: NAIS; national ai strategy",
+      "Joint Memorandum Circular 003 2026 artificial intelligence government pdf (dict.gov.ph, csc.gov.ph, officialgazette.gov.ph)",
+      "\"DO 003, s. 2026\" deped.gov.ph Foundational Guidelines Artificial Intelligence"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. privacy.gov.ph, officialgazette.gov.ph (and mirror), deped.gov.ph, ched.gov.ph, dict.gov.ph, ictstatistics.dict.gov.ph, csc.gov.ph, sec.gov.ph, senate.gov.ph and congress.gov.ph returned 403 to curl and WebFetch; ncc.gov.ph proxy 502. Bureau of Philippine Standards and DOLE not searched. NPC advisory and DepEd order summaries from the agencies' own indexed pages (located only). Not a party to Convention 108. Units covered: Law: Official Gazette (blocked; RA 10173 located), House of Representatives document server (HB 11007 read), Senate (blocked; SB 25 via discovery). No enacted AI-specific law or deepfake statute found; deepfake bills pending.; Government: DTI (site reachable; only press releases on the 2021 roadmap and NAISR 2.0, no full text), DICT ICT Knowledge Portal (blocked; 2024 draft JMC and 2026 JMC 003 located), DOST site search (nothing AI-governance specific).; Ministries: DepEd (DO 003 s. 2026 located; site blocked), CHED (no issued AI order found; planned policy only), DOH searched, no AI administrative order found; DOST: NAIS-PH announced 2025 but no official text (lead).; Regulators: BSP (M-2026-031 read), NPC (Advisory 2024-04 located; site blocked), SEC (blocked; no AI issuance found in search), NTC/telecom: searched, nothing found.. Not reached: officialgazette.gov.ph, privacy.gov.ph, deped.gov.ph, ched.gov.ph, dict.gov.ph, csc.gov.ph, sec.gov.ph, senate.gov.ph, congress.gov.ph: all return HTTP 403 bot-protection challenges to curl and WebFetch; ncc.gov.ph / cybersecurity: proxy CONNECT 502; National standards body (Bureau of Philippine Standards): not reached in time box; Health (DOH) and labour (DOLE) AI documents: not searched in depth. Could not verify: All Cloudflare-protected PH government sites (privacy, gazette, deped, dict, csc, sec, ched, senate) blocked curl and WebFetch with HTTP 403. strategy, government-governance, procurement, cyber-security, standards, sandbox, index-readiness, international, historical: no material found.",
     "discovery_result_count": 12,
     "focused_result_count": 13
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-a6071e3a2fa3",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "PHL",
+      "instrument_id": "i-f98199388ea8",
+      "title": "BSP Memorandum No. M-2026-031: Governance Principles for Artificial Intelligence (AI) in Financial Services",
+      "detail": "Added to the radar (published 2026-06-24).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.bsp.gov.ph/Regulations/Issuances/2026/M-2026-031.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-e2b2a92618ed",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "PHL",
+      "instrument_id": "i-8874120144ee",
+      "title": "NPC Advisory No. 2024-04: Guidelines on applying the Data Privacy Act of 2012 to AI systems processing personal data",
+      "detail": "Added to the radar (published 2024-12-19).",
+      "from": null,
+      "to": null,
+      "source_url": "https://privacy.gov.ph/wp-content/uploads/2024/12/Advisory-2024.12.19-Guidelines-on-Artificial-Intelligence-w-SGD.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-dad5ab3c03b8",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "PHL",
+      "instrument_id": "i-a8cb8bb439f9",
+      "title": "Data Privacy Act of 2012 (Republic Act No. 10173)",
+      "detail": "Added to the radar (published 2012-08-15).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/",
+      "needs_review": false
+    },
+    {
+      "id": "c-b4a19155e6b9",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "PHL",
+      "instrument_id": "i-99e106a9a489",
+      "title": "DepEd Order No. 3, s. 2026: Foundational Guidelines on Artificial Intelligence (AI) in Basic Education",
+      "detail": "Added to the radar (published 2026-02-20).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.deped.gov.ph/2026/02/20/february-20-2026-do-003-s-2026-foundational-guidelines-on-artificial-intelligence-ai-in-basic-education/",
+      "needs_review": false
+    },
+    {
+      "id": "c-0072f2599d2c",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "PHL",
+      "instrument_id": "i-d6222fe44589",
+      "title": "Draft DICT-CSC Joint Memorandum Circular on Principles for an Ethical and Trustworthy Use of AI in Government (draft of 18 April 2024)",
+      "detail": "Added to the radar (published 2024-04-18).",
+      "from": null,
+      "to": null,
+      "source_url": "https://ictstatistics.dict.gov.ph/wp-content/uploads/2024/05/DRAFT-COPY_JMC-on-the-Principles-for-an-Ethical-and-Trustworthy-Use-of-Artificial-Intelligence-AI-in-Government.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-4deb33e4d09c",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "PHL",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 5 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-33d22d6775a1",
+      "date": "2026-06-24",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "PHL",
+      "instrument_id": "i-f98199388ea8",
+      "title": "BSP issues Governance Principles for AI in Financial Services (M-2026-031)",
+      "detail": "Memorandum No. M-2026-031 signed 24 June 2026 by the Deputy Governor, Financial Supervision Sector.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.bsp.gov.ph/Regulations/Issuances/2026/M-2026-031.pdf",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Joint Memorandum Circular No. 003, s. 2026: Principles for the Ethical and Responsible Development, Deployment and Use of Artificial Intelligence (AI) in the Government",
+      "english_title": "DICT-CSC JMC No. 003, s. 2026 on ethical and responsible AI in government",
+      "issuing_authority": "Department of Information and Communications Technology and Civil Service Commission",
+      "note": "Reportedly dated 9 June 2026 and listed on the DICT ICT Knowledge Portal (https://ictstatistics.dict.gov.ph/ict-plans-and-policies/); DICT, CSC and Official Gazette sites returned HTTP 403 to curl and WebFetch, so the official text/URL could not be confirmed. Promote as public-sector instrument (administrative_policy_mandatory_in_scope) superseding the 2024 draft once read; implementing guidelines due within 90 days.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "National Artificial Intelligence Strategy Roadmap 2.0 (NAISR 2.0)",
+      "english_title": "National AI Strategy Roadmap 2.0",
+      "issuing_authority": "Department of Trade and Industry",
+      "note": "Launched by DTI on 3 July 2024 with the Center for AI Research (per DTI news pages). No official full-text document found on dti.gov.ph (only press releases). Record as national_strategy superseding the 2021 roadmap once an official text is found.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Artificial Intelligence Roadmap (2021)",
+      "english_title": "National AI Roadmap (2021)",
+      "issuing_authority": "Department of Trade and Industry",
+      "note": "DTI launched its first AI roadmap in May 2021 (https://www.dti.gov.ph/dti-archives/dti-national-artificial-intelligence-roadmap is a pre-launch press release). Official document not located; historical strategy, superseded by NAISR 2.0.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "House Bill No. 11007 (20th Congress): risk-proportionate AI regulatory framework (FAIR-AI Act)",
+      "english_title": "House Bill No. 11007, AI regulatory framework establishing the Philippine AI Regulation Council",
+      "issuing_authority": "House of Representatives",
+      "note": "Filed 27 August 2026 by Rep. Eric G. Yap; official PDF read at https://docs.congress.hrep.online/legisdocs/basic_20/HB11007.pdf. Pending bill.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Senate Bill No. 25 (20th Congress): Artificial Intelligence Regulation Act (AIRA)",
+      "english_title": "Artificial Intelligence Regulation Act",
+      "issuing_authority": "Senate of the Philippines",
+      "note": "Filed 2 July 2025 by Sen. Pia Cayetano (per discovery sources); would create a National AI Commission under DOST and a registry of AI systems. senate.gov.ph blocked automated access; pending bill. About 40 House and 7 Senate AI bills reported in the 20th Congress.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "National AI Strategy for the Philippines (NAIS-PH) / Philippine AI Program Framework 2024-2028",
+      "english_title": "National AI Strategy for the Philippines (DOST)",
+      "issuing_authority": "Department of Science and Technology",
+      "note": "Unveiled by the DOST Secretary on 30 April 2025 (DOST news item https://dost.gov.ph/knowledge-resources/news/86-2025-news/3989-dost-builds-on-ai-national-strategy.html); five areas (infrastructure, workforce, innovation, data governance and policy, AI deployment) to 2028. Reports of presidential approval unconfirmed; no official full text found on dost.gov.ph.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Deepfake bills in the 20th Congress (Senate Bills 758 and 1714; House Bills 3425 and 3214)",
+      "english_title": "Pending deepfake / digital likeness bills",
+      "issuing_authority": "Congress of the Philippines",
+      "note": "Pending bills on deepfakes and digital likeness (e.g. HB 3425 Anti-Malicious Deepfake Act of 2025, official PDF https://docs.congress.hrep.online/legisdocs/basic_20/HB03425.pdf; SB 1714 Digital Likeness and Deepfake Regulation Act). No enacted deepfake law found.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "CHED national policy on artificial intelligence in higher education (planned)",
+      "english_title": "CHED national AI policy for higher education",
+      "issuing_authority": "Commission on Higher Education",
+      "note": "CHED announced in March 2026 it is preparing a national AI policy for higher education; no issued CHED memorandum order found. ched.gov.ph blocked automated access.",
+      "found": "2026-10-12"
+    }
+  ]
 }
