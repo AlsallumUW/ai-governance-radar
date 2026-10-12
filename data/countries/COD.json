@@ -13,18 +13,114 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "The Democratic Republic of the Congo has no AI-specific law and no published AI strategy. AI appears in the 2019 Plan National du Numérique Horizon 2025, which includes an action to launch AI projects, and in the 2023 Code du numérique, which gives the National Digital Council a remit over AI ethics and sets rules on automated decisions and impact assessments; the Code's official text could not be read because the official gazette was unreachable. A first national AI strategy was validated by the government in August 2026 but has not been published.",
+    "lead_institutions": [
+      "Presidency of the Republic",
+      "Ministry of Digital Economy"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was carried out on 12 October 2026, but the official gazette, the legal database and the telecom regulator's websites could not be accessed, so only the 2019 digital plan could be read. The 2023 Digital Code and the national AI strategy are listed as leads. The DR Congo is marked for a later retry and, as a large country with few records, for a longer catch-up pass."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-69d86ee1e7ac",
+      "official_title": "Plan National du Numérique « Horizon 2025 »",
+      "english_title": "National Digital Plan \"Horizon 2025\" (For a connected and high-performing DRC)",
+      "issuing_authority": "Presidency of the Republic (Office of the Head of State; Special Adviser to the Head of State in charge of Digital), drafted by the Cadre de Concertation of digital-sector experts",
+      "authority_type": "government",
+      "categories": [
+        "strategy",
+        "government-governance"
+      ],
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2019-09",
+      "current_status": "Validated at the national validation workshop on 5 September 2019 (opened by the President on 3 September 2019) and published by the Presidency (document dated September 2019). Its 2025 horizon has passed; a successor Plan National du Numérique 2026-2030 (PNN2) and a first national AI strategy (SNIA) were being prepared by the Ministry of Digital Economy in 2025-2026 but no official text was found online as of 12 October 2026 (see leads), so this plan is not recorded as superseded.",
+      "summary": "The DRC's national digital plan to 2025, built on four strategic pillars (infrastructure; content; applications/uses; governance and regulation) broken down into strategic axes, objectives, actions and a chronogram of priority actions. It is a digital strategy rather than an AI strategy, but its infrastructure pillar includes an action to initiate projects in artificial intelligence, augmented reality, robotics and related fields and to create research centres, and it sets out an institutional framework for implementing the plan.",
+      "ai_governance_relevance": "The country's only published national digital strategy with explicit AI actions; precursor to the national AI strategy under preparation.",
+      "source_url": "https://www.presidence.cd/uploads/files/Presentation%20PNN_03_final.pdf",
+      "official_pdf_url": "https://www.presidence.cd/uploads/files/Presentation%20PNN_03_final.pdf",
+      "official_webpage_url": "https://www.presidence.cd/services/1/plan_national_du_numerique_horizon_2025",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "superseded_by": [],
+      "organization_id": "o-609a5a726c21",
+      "publisher_name": "Presidency of the Democratic Republic of the Congo",
+      "jurisdiction_id": "COD",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "strategy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Democratic Republic of the Congo (national)",
+      "technology_scope": [
+        "digital",
+        "AI"
+      ],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "fr",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-cea4179402fb",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full 124-page PDF read (pdftotext) from presidence.cd; the Presidency's PNN page links this PDF. Four pillars, AI action ('Initier des projets en intelligence artificielle...') and validation on 5 September 2019 confirmed in the text."
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-609a5a726c21",
+      "jurisdiction_id": "COD",
+      "name": "Presidency of the Democratic Republic of the Congo",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Office of the Head of State; its Special Adviser in charge of Digital coordinated and published the Plan National du Numérique Horizon 2025.",
+      "source_url": "https://www.presidence.cd/",
+      "authority_type": "government",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-cea4179402fb",
+      "url": "https://www.presidence.cd/uploads/files/Presentation%20PNN_03_final.pdf",
+      "jurisdiction_ids": [
+        "COD"
+      ],
+      "source_institutions": [
+        "Presidency of the Democratic Republic of the Congo"
+      ],
+      "instrument_ids": [
+        "i-69d86ee1e7ac"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "government-governance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): HTTP 200 application/pdf, 124 pages read with pdftotext; linked from the Presidency's PNN page",
+      "http_status": 200,
+      "final_url": "https://www.presidence.cd/uploads/files/Presentation%20PNN_03_final.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "fr",
+      "error": null,
+      "content_type": "application/pdf"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "COD",
     "country": "Democratic Republic of the Congo",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -36,12 +132,12 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
-      "binding-law",
-      "strategy",
+    "categories_with_findings": [
       "government-governance",
+      "strategy"
+    ],
+    "categories_where_no_material_was_found": [
+      "binding-law",
       "ethics",
       "risk-assurance",
       "public-sector",
@@ -58,33 +154,116 @@
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Democratic Republic of the Congo \"intelligence artificielle\" (stratégie OR réglementation OR éthique) government ministry official",
       "Democratic Republic of the Congo \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Democratic Republic of the Congo government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Democratic Republic of the Congo \"intelligence artificielle\" cybersecurity authority secure development safety guidelines",
-      "Democratic Republic of the Congo privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Democratic Republic of the Congo privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "RDC \"stratégie nationale\" \"intelligence artificielle\" ministère numérique 2025",
+      "\"Code du numérique\" ordonnance-loi 23/010 du 13 mars 2023 journal officiel pdf",
+      "\"Plan national du numérique\" \"Horizon 2025\" RDC pdf intelligence artificielle",
+      "\"Code du numérique\" RDC pdf site:gouv.cd OR site:cd ordonnance-loi 23/010",
+      "journalofficiel.cd \"code du numérique\" 2023 numéro spécial",
+      "site:journalofficiel.cd numérique 2023",
+      "primature.gouv.cd OR presidence.cd \"intelligence artificielle\" stratégie nationale RDC conseil des ministres",
+      "ministère postes télécommunications numérique RDC intelligence artificielle stratégie nationale validation 2026",
+      "RDC \"intelligence artificielle\" (Banque Centrale du Congo OR ARPTC OR \"Agence nationale de cybersécurité\" OR \"Autorité de protection des données\") directive OR guide",
+      "DRC Congo \"artificial intelligence\" policy ministry education OR health OR justice guidelines 2025 2026 official",
+      "\"Stratégie nationale de l'intelligence artificielle\" RDC compte rendu conseil des ministres août 2026 pdf",
+      "primature.gouv.cd site search: intelligence artificielle; code du numerique",
+      "presidence.cd site search: numerique"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. journalofficiel.cd 503; leganet.cd TLS error/503; arptc.gouv.cd TLS error/503; anssi.gouv.cd and adn.gouv.cd proxy 502; numerique.gouv.cd placeholder. Code du numérique (ordonnance-loi 23/010) read only from a non-official copy (droitnumerique.cd), held as a lead. Not a party to Convention 108. Units covered: Law: Journal officiel (journalofficiel.cd: HTTP 503) and leganet.cd (unreachable) could not be searched; Code du numérique 2023 identified and read from a non-official copy, held as a lead. No AI-specific law, deepfake offence or AI bill found.; Government: Presidency (presidence.cd, PNN Horizon 2025 found and read), Prime Minister's office (primature.gouv.cd search: nothing on AI), Secrétariat Général au Numérique (numerique.gouv.cd: placeholder site). National AI strategy (SNIA) and PNN2 validated by Government Aug 2026 but unpublished: leads.; Ministries: Searched, nothing found: no AI documents from education, health, justice, defence, finance, labour or interior ministries.; Regulators: ARPTC (unreachable), Agence nationale de cybersécurité / ANSSI (unreachable), Banque Centrale du Congo, data protection authority (provided for by the Code but not found operational): searched, no AI-specific documents found.. Not reached: journalofficiel.cd (HTTP 503 curl and WebFetch); leganet.cd (TLS/503); arptc.gouv.cd (TLS/503); anssi.gouv.cd / adn.gouv.cd (proxy 502). Could not verify: Official text of Code du numérique 2023; SNIA / PNN2 / PSEN status (press reports only). binding-law, ethics, risk-assurance, public-sector, procurement, cyber-security, data-privacy, transparency, standards, sandbox, index-readiness, sectoral, generative-ai, drafts, international, historical: no material found.",
     "discovery_result_count": 12,
     "focused_result_count": 12
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-a2c5ae0ad600",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "COD",
+      "instrument_id": "i-69d86ee1e7ac",
+      "title": "National Digital Plan \"Horizon 2025\" (For a connected and high-performing DRC)",
+      "detail": "Added to the radar (published 2019-09).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.presidence.cd/uploads/files/Presentation%20PNN_03_final.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-6e2708daeb5e",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "COD",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 1 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-582413732aeb",
+      "date": "2019-09-05",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "COD",
+      "instrument_id": "i-69d86ee1e7ac",
+      "title": "Plan National du Numérique Horizon 2025 validated",
+      "detail": "National Digital Plan validated at the national validation workshop in Kinshasa on 5 September 2019 (as stated in the plan).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.presidence.cd/uploads/files/Presentation%20PNN_03_final.pdf",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Ordonnance-loi n° 23/010 du 13 mars 2023 portant Code du numérique",
+      "english_title": "Ordinance-Law No. 23/010 of 13 March 2023 on the Digital Code",
+      "issuing_authority": "President of the Republic (ordinance-law; ratified by Parliament)",
+      "note": "Main AI-relevant binding law: art. 12 tasks the Conseil National du Numérique with overseeing the ethics of advanced digital tech, including AI; Book II Title III (personal data) creates an Autorité de protection des données, gives a right to information on automated decision-making including profiling, and art. 245 requires a data protection impact assessment for systematic automated evaluation/profiling producing legal effects. Text (168 pp., 'Fait à Kinshasa, le 13 mars 2023', in force on promulgation) was read only from a non-official copy (discovery). No official full text could be reached: the Journal officiel (journalofficiel.cd) returned HTTP 503 to curl and WebFetch, ARPTC (arptc.gouv.cd) and leganet.cd failed (TLS/503), and the Secrétariat Général au Numérique site (numerique.gouv.cd) is a placeholder. Record as binding_law / binding-law, data-privacy, government-governance, ethics once the official JO text is reachable.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Stratégie Nationale de l'Intelligence Artificielle (SNIA) de la République Démocratique du Congo",
+      "english_title": "National Artificial Intelligence Strategy of the DRC",
+      "issuing_authority": "Ministry of Digital Economy",
+      "note": "Drafting launched 8 October 2025 with PNN2; technical validation workshop 23-24 July 2026; presented and validated by members of the Government on 4 August 2026 and to be submitted to the Council of Ministers for formal adoption (press reports only). No official text or Council of Ministers record found online on 12 October 2026 (primature.gouv.cd and presidence.cd searched). Record as national_strategy once published; it may supersede the PNN Horizon 2025 for AI.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Plan National du Numérique 2026-2030 (PNN2) et Politique sectorielle de l'économie numérique (PSEN)",
+      "english_title": "National Digital Plan 2026-2030 and Digital Economy Sector Policy",
+      "issuing_authority": "Ministry of Digital Economy",
+      "note": "Successor to PNN Horizon 2025; drafting launched 8 October 2025; PSEN presented with the SNIA on 4 August 2026 (press reports). No official text found online. Record as strategy and mark the PNN Horizon 2025 superseded once published.",
+      "found": "2026-10-12"
+    }
+  ]
 }
