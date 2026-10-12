@@ -10,18 +10,450 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Nicaragua has no national AI law or strategy. Its AI-related instruments are the 2012 Personal Data Protection Law (Law 787), three 2026 guides from the National Education System on responsible and ethical use of AI by students, teachers and families, and the National Assembly's September 2026 decree approving the China-led World AI Cooperation Organization (WAICO) agreement.",
+    "lead_institutions": [
+      "Asamblea Nacional",
+      "Tecnológico Nacional (TecNacional) / Sistema Educativo Nacional"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was carried out on 12 October 2026 from the National Assembly's legislation portal, the official gazette and the national technological institute's website. A health-sector AI roadmap and an education catalogue of AI tools are tracked as leads."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-906dbb8ac859",
+      "official_title": "Ley N°. 787, Ley de Protección de Datos Personales",
+      "english_title": "Law No. 787, Personal Data Protection Law",
+      "issuing_authority": "National Assembly",
+      "authority_type": "legislature",
+      "categories": [
+        "data-privacy"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2012-03-29",
+      "current_status": "In force since publication in La Gaceta No. 61 of 29 March 2012 (approved 21 March 2012; art. 56). Implemented by a regulation (Reglamento de la Ley N° 787) and corrected by an erratum, both listed on the Asamblea legislation portal; no AI-specific amendment found. The 2026 National Education System AI guides cite it as part of the legal framework for AI use.",
+      "summary": "Nicaragua's general data protection law, protecting natural and legal persons against the processing, automated or not, of their personal data in public and private data files, and guaranteeing privacy and informational self-determination. It requires consent for processing and transfers, gives data subjects rights of information, access, rectification and deletion, obliges data controllers to register their files, and creates the Directorate for Personal Data Protection attached to the Ministry of Finance and Public Credit to supervise processing. It contains no AI-specific or automated-decision provisions but governs personal data used to train and run AI systems.",
+      "ai_governance_relevance": "Personal data protection law; governs personal data processed by AI systems (applies to automated and non-automated processing).",
+      "source_url": "http://legislacion.asamblea.gob.ni/normaweb.nsf/9e314815a08d4a6206257265005d21f9/e5d37e9b4827fc06062579ed0076ce1d",
+      "official_pdf_url": "http://legislacion.asamblea.gob.ni/gacetas/2012/3/g61.pdf",
+      "official_webpage_url": "http://legislacion.asamblea.gob.ni/normaweb.nsf/9e314815a08d4a6206257265005d21f9/e5d37e9b4827fc06062579ed0076ce1d",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-875fe8ce6f97",
+      "publisher_name": "National Assembly",
+      "jurisdiction_id": "NIC",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "effective_date": "2012-03-29",
+      "last_amended_date": null,
+      "scope": "Nicaragua (national)",
+      "technology_scope": [
+        "personal data",
+        "automated processing"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "es",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-fa89c54fc020",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full text read on the Asamblea Nacional legislation portal (approval 21 March 2012, La Gaceta No. 61 of 29 March 2012, art. 1 scope, arts. 28-29 Directorate, art. 56 entry into force); La Gaceta No. 61/2012 PDF read with pdftotext (Ley No. 787 listed in the summary at p. 2402)."
+    },
+    {
+      "id": "i-3f74dfe807d1",
+      "official_title": "Decreto A.N. N°. 8933, Decreto de Aprobación del “Acuerdo Sobre el Establecimiento de la Organización Mundial para la Cooperación en Inteligencia Artificial”",
+      "english_title": "Legislative Decree A.N. No. 8933 approving the Agreement on the Establishment of the World AI Cooperation Organization",
+      "issuing_authority": "National Assembly",
+      "authority_type": "legislature",
+      "categories": [
+        "international"
+      ],
+      "legal_status": "international_treaty",
+      "lifecycle": "adopted",
+      "publication_date": "2026-10-01",
+      "current_status": "Approved 29 September 2026 and published in La Gaceta No. 179 of 1 October 2026; the decree is in force from publication (art. 4). The agreement itself enters into force on deposit of the third instrument of ratification (art. XV); deposit of Nicaragua's ratification instrument was not confirmed on an official source as of 12 October 2026.",
+      "summary": "Legislative decree by which the National Assembly approves the Agreement on the Establishment of the World AI Cooperation Organization (WAICO), signed by Nicaragua in Shanghai on 16 July 2026, and instructs the Presidency to ratify it and deposit the instrument with the Government of the People's Republic of China. The annexed agreement creates an intergovernmental organization whose purposes include promoting AI development and application, expanding international AI cooperation, closing the AI divide and jointly mitigating AI risks to promote safe, reliable and ethical AI. The decree's recitals frame participation as serving technological sovereignty, digital transformation and global governance of emerging technologies.",
+      "ai_governance_relevance": "Nicaragua's national approval of an international AI cooperation and governance treaty.",
+      "source_url": "http://legislacion.asamblea.gob.ni/normaweb.nsf/9e314815a08d4a6206257265005d21f9/81741517a6793d5d06258e8300727080",
+      "official_pdf_url": "http://legislacion.asamblea.gob.ni/gacetas/2026/10/g179.pdf",
+      "official_webpage_url": "http://legislacion.asamblea.gob.ni/normaweb.nsf/9e314815a08d4a6206257265005d21f9/81741517a6793d5d06258e8300727080",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-875fe8ce6f97",
+      "publisher_name": "National Assembly",
+      "jurisdiction_id": "NIC",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "international",
+      "subcategory": null,
+      "effective_date": "2026-10-01",
+      "last_amended_date": null,
+      "scope": "Nicaragua (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "es",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-bc9b20291a0b",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full decree and annexed agreement read on the Asamblea Nacional legislation portal (Decreto A.N. No. 8933, approved 29 September 2026, La Gaceta No. 179 of 1 October 2026; arts. 1-4; agreement arts. I-III, XV); La Gaceta No. 179/2026 PDF read with pdftotext (Decreto A.N. No. 8933 listed in the summary, p. 9518)."
+    },
+    {
+      "id": "i-482e5caedb82",
+      "official_title": "Uso y manejo responsable y ético de la IA para estudiantes",
+      "english_title": "Responsible and ethical use and handling of AI for students",
+      "issuing_authority": "National Education System (Sistema Educativo Nacional), published by the National Technological Institute (Tecnológico Nacional)",
+      "authority_type": "government",
+      "categories": [
+        "sectoral",
+        "ethics",
+        "generative-ai"
+      ],
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2026-03-19",
+      "current_status": "Published in TecNacional's virtual library on 19 March 2026 together with companion guides for teachers and for parents; no expiry or revision stated.",
+      "summary": "Guide (cartilla) of the National Education System for students at all levels on using AI tools responsibly, critically and ethically in learning and daily life. It sets out the legal framework of the Cybercrime Law (No. 1042) and the Personal Data Protection Law (No. 787), recommendations for use, risks of improper use such as technological dependence, disinformation and exposure of personal data, and advice and examples on writing prompts for virtual assistants. It frames AI adoption under the National Education Strategy 'Bendiciones y Victorias' 2024-2026.",
+      "ai_governance_relevance": "AI-specific guidance setting expectations for responsible and ethical AI use across the national education system.",
+      "source_url": "https://tecnacional.edu.ni/media/Uso_y_manejo_responsable_y_etico_de_la_IA_para_estudiantes.pdf",
+      "official_pdf_url": "https://tecnacional.edu.ni/media/Uso_y_manejo_responsable_y_etico_de_la_IA_para_estudiantes.pdf",
+      "official_webpage_url": "https://www.tecnacional.edu.ni/documentos/uso-y-manejo-responsable-y-etico-de-la-ia-para-estudiantes/",
+      "sectors": [
+        "education"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-648712332fb9",
+      "publisher_name": "National Technological Institute",
+      "jurisdiction_id": "NIC",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "sectoral",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Nicaragua (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-a9237ee544b8",
+        "i-26c4664a82f0",
+        "i-906dbb8ac859"
+      ],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "es",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-8f1819376377",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full PDF read with pdftotext (presentation, introduction, scope, contents); the publication date 19 March 2026 is the 'Fecha de publicación' stated on TecNacional's own document page (https://www.tecnacional.edu.ni/documentos/uso-y-manejo-responsable-y-etico-de-la-ia-para-estudiantes/). The PDF itself prints no date."
+    },
+    {
+      "id": "i-a9237ee544b8",
+      "official_title": "Uso y manejo responsable y ético de la IA para maestras y maestros",
+      "english_title": "Responsible and ethical use and handling of AI for teachers",
+      "issuing_authority": "National Education System (Sistema Educativo Nacional), published by the National Technological Institute (Tecnológico Nacional)",
+      "authority_type": "government",
+      "categories": [
+        "sectoral",
+        "ethics",
+        "generative-ai"
+      ],
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2026-03-19",
+      "current_status": "Published in TecNacional's virtual library on 19 March 2026 together with companion guides for students and for parents; no expiry or revision stated.",
+      "summary": "Guide (cartilla) of the National Education System for teachers on integrating AI tools into teaching safely and ethically. It covers the legal framework of Laws No. 1042 and No. 787, advice and recommendations for classroom use (assessing a tool's purpose and risks before adoption, not entering students' sensitive information into AI platforms, checking privacy policies, supervising students' use), AI limitations, errors, bias and dependence, and practical case studies.",
+      "ai_governance_relevance": "AI-specific guidance setting expectations for responsible and ethical AI use across the national education system.",
+      "source_url": "https://tecnacional.edu.ni/media/Uso_y_manejo_responsable_y_etico_de_la_IA_para_maestras_y_maestros.pdf",
+      "official_pdf_url": "https://tecnacional.edu.ni/media/Uso_y_manejo_responsable_y_etico_de_la_IA_para_maestras_y_maestros.pdf",
+      "official_webpage_url": "https://www.tecnacional.edu.ni/documentos/uso-y-manejo-responsable-y-etico-de-la-ia-para-maestras-y-maestros/",
+      "sectors": [
+        "education"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-648712332fb9",
+      "publisher_name": "National Technological Institute",
+      "jurisdiction_id": "NIC",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "sectoral",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Nicaragua (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-482e5caedb82",
+        "i-26c4664a82f0",
+        "i-906dbb8ac859"
+      ],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "es",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-e534a7432705",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full PDF read with pdftotext (presentation, introduction, scope, contents); the publication date 19 March 2026 is the 'Fecha de publicación' stated on TecNacional's own document page (https://www.tecnacional.edu.ni/documentos/uso-y-manejo-responsable-y-etico-de-la-ia-para-maestras-y-maestros/). The PDF itself prints no date."
+    },
+    {
+      "id": "i-26c4664a82f0",
+      "official_title": "Acompañamiento a hijas e hijos en el uso y manejo responsable y ético de la IA",
+      "english_title": "Supporting daughters and sons in the responsible and ethical use and handling of AI",
+      "issuing_authority": "National Education System (Sistema Educativo Nacional), published by the National Technological Institute (Tecnológico Nacional)",
+      "authority_type": "government",
+      "categories": [
+        "sectoral",
+        "ethics",
+        "generative-ai"
+      ],
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2026-03-19",
+      "current_status": "Published in TecNacional's virtual library on 19 March 2026 together with companion guides for students and for teachers; no expiry or revision stated.",
+      "summary": "Guide (cartilla) of the National Education System for mothers, fathers and guardians on accompanying children and young people in safe, responsible and ethical use of AI tools. It sets out the legal framework of Laws No. 1042 and No. 787, the risks of AI for minors, and recommendations for family supervision of AI use, and states that its orientations are to be read as an extension of those laws.",
+      "ai_governance_relevance": "AI-specific guidance setting expectations for responsible and ethical AI use across the national education system.",
+      "source_url": "https://www.tecnacional.edu.ni/media/Acompanamiento_a_hijas_e_hijos_en_el_uso_y_manejo_responsable_y_etico_de_la_IA.pdf",
+      "official_pdf_url": "https://www.tecnacional.edu.ni/media/Acompanamiento_a_hijas_e_hijos_en_el_uso_y_manejo_responsable_y_etico_de_la_IA.pdf",
+      "official_webpage_url": "https://www.tecnacional.edu.ni/documentos/acompanamiento-hijas-e-hijos-en-el-uso-y-manejo-responsable-y-etico-de-la-ia/",
+      "sectors": [
+        "education"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-648712332fb9",
+      "publisher_name": "National Technological Institute",
+      "jurisdiction_id": "NIC",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "sectoral",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Nicaragua (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-482e5caedb82",
+        "i-a9237ee544b8",
+        "i-906dbb8ac859"
+      ],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "es",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-9c203c22d5de",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full PDF read with pdftotext (presentation, introduction, scope, contents); the publication date 19 March 2026 is the 'Fecha de publicación' stated on TecNacional's own document page (https://www.tecnacional.edu.ni/documentos/acompanamiento-hijas-e-hijos-en-el-uso-y-manejo-responsable-y-etico-de-la-ia/). The PDF itself prints no date."
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-875fe8ce6f97",
+      "jurisdiction_id": "NIC",
+      "name": "National Assembly",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Unicameral legislature of Nicaragua; enacted the Personal Data Protection Law (Law No. 787) and in September 2026 approved, by legislative decree, the Agreement on the Establishment of the World AI Cooperation Organization. Its legislation portal (legislacion.asamblea.gob.ni) hosts official texts and La Gaceta issues.",
+      "source_url": "https://www.asamblea.gob.ni/",
+      "authority_type": "legislature",
+      "government_level": "national"
+    },
+    {
+      "id": "o-648712332fb9",
+      "jurisdiction_id": "NIC",
+      "name": "National Technological Institute",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Tecnológico Nacional (TecNacional), the state technical-education institute that forms part of Nicaragua's National Education System; publishes the National Education System's 2026 guides on responsible and ethical AI use for students, teachers and families, and the 2026 catalogue of AI tools for teachers.",
+      "source_url": "https://www.tecnacional.edu.ni/",
+      "authority_type": "government",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-fa89c54fc020",
+      "url": "http://legislacion.asamblea.gob.ni/normaweb.nsf/9e314815a08d4a6206257265005d21f9/e5d37e9b4827fc06062579ed0076ce1d",
+      "jurisdiction_ids": [
+        "NIC"
+      ],
+      "source_institutions": [
+        "National Assembly"
+      ],
+      "instrument_ids": [
+        "i-906dbb8ac859"
+      ],
+      "categories_reviewed": [
+        "data-privacy"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full text read on the Asamblea Nacional legislation portal (approval 21 March 2012, La Gaceta No. 61 of 29 March 2012, art. 1 scope, arts. 28-29 Directorate, art. 56 entry into force); La Gaceta No. 61/2012 PDF read with pdftotext (Ley No. 787 listed in the summary at p. 2402).",
+      "http_status": 200,
+      "final_url": "http://legislacion.asamblea.gob.ni/normaweb.nsf/9e314815a08d4a6206257265005d21f9/e5d37e9b4827fc06062579ed0076ce1d",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "es",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-bc9b20291a0b",
+      "url": "http://legislacion.asamblea.gob.ni/normaweb.nsf/9e314815a08d4a6206257265005d21f9/81741517a6793d5d06258e8300727080",
+      "jurisdiction_ids": [
+        "NIC"
+      ],
+      "source_institutions": [
+        "National Assembly"
+      ],
+      "instrument_ids": [
+        "i-3f74dfe807d1"
+      ],
+      "categories_reviewed": [
+        "international"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full decree and annexed agreement read on the Asamblea Nacional legislation portal (Decreto A.N. No. 8933, approved 29 September 2026, La Gaceta No. 179 of 1 October 2026; arts. 1-4; agreement arts. I-III, XV); La Gaceta No. 179/2026 PDF read with pdftotext (Decreto A.N. No. 8933 listed in the summary, p. 9518).",
+      "http_status": 200,
+      "final_url": "http://legislacion.asamblea.gob.ni/normaweb.nsf/9e314815a08d4a6206257265005d21f9/81741517a6793d5d06258e8300727080",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "es",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-8f1819376377",
+      "url": "https://tecnacional.edu.ni/media/Uso_y_manejo_responsable_y_etico_de_la_IA_para_estudiantes.pdf",
+      "jurisdiction_ids": [
+        "NIC"
+      ],
+      "source_institutions": [
+        "National Technological Institute"
+      ],
+      "instrument_ids": [
+        "i-482e5caedb82"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "ethics",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full PDF read with pdftotext (presentation, introduction, scope, contents); the publication date 19 March 2026 is the 'Fecha de publicación' stated on TecNacional's own document page (https://www.tecnacional.edu.ni/documentos/uso-y-manejo-responsable-y-etico-de-la-ia-para-estudiantes/). The PDF itself prints no date.",
+      "http_status": 200,
+      "final_url": "https://tecnacional.edu.ni/media/Uso_y_manejo_responsable_y_etico_de_la_IA_para_estudiantes.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "es",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-e534a7432705",
+      "url": "https://tecnacional.edu.ni/media/Uso_y_manejo_responsable_y_etico_de_la_IA_para_maestras_y_maestros.pdf",
+      "jurisdiction_ids": [
+        "NIC"
+      ],
+      "source_institutions": [
+        "National Technological Institute"
+      ],
+      "instrument_ids": [
+        "i-a9237ee544b8"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "ethics",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full PDF read with pdftotext (presentation, introduction, scope, contents); the publication date 19 March 2026 is the 'Fecha de publicación' stated on TecNacional's own document page (https://www.tecnacional.edu.ni/documentos/uso-y-manejo-responsable-y-etico-de-la-ia-para-maestras-y-maestros/). The PDF itself prints no date.",
+      "http_status": 200,
+      "final_url": "https://tecnacional.edu.ni/media/Uso_y_manejo_responsable_y_etico_de_la_IA_para_maestras_y_maestros.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "es",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-9c203c22d5de",
+      "url": "https://www.tecnacional.edu.ni/media/Acompanamiento_a_hijas_e_hijos_en_el_uso_y_manejo_responsable_y_etico_de_la_IA.pdf",
+      "jurisdiction_ids": [
+        "NIC"
+      ],
+      "source_institutions": [
+        "National Technological Institute"
+      ],
+      "instrument_ids": [
+        "i-26c4664a82f0"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "ethics",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full PDF read with pdftotext (presentation, introduction, scope, contents); the publication date 19 March 2026 is the 'Fecha de publicación' stated on TecNacional's own document page (https://www.tecnacional.edu.ni/documentos/acompanamiento-hijas-e-hijos-en-el-uso-y-manejo-responsable-y-etico-de-la-ia/). The PDF itself prints no date.",
+      "http_status": 200,
+      "final_url": "https://www.tecnacional.edu.ni/media/Acompanamiento_a_hijas_e_hijos_en_el_uso_y_manejo_responsable_y_etico_de_la_IA.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "es",
+      "error": null,
+      "content_type": "application/pdf"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "NIC",
     "country": "Nicaragua",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -33,55 +465,262 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_with_findings": [
+      "data-privacy",
+      "ethics",
+      "generative-ai",
+      "international",
+      "sectoral"
+    ],
+    "categories_where_no_material_was_found": [
       "binding-law",
       "strategy",
       "government-governance",
-      "ethics",
       "risk-assurance",
       "public-sector",
       "procurement",
       "cyber-security",
-      "data-privacy",
       "transparency",
       "standards",
       "sandbox",
       "index-readiness",
-      "sectoral",
-      "generative-ai",
       "drafts",
-      "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Nicaragua \"inteligencia artificial\" (estrategia OR regulación OR ética) government ministry official",
       "Nicaragua \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Nicaragua government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Nicaragua \"inteligencia artificial\" cybersecurity authority secure development safety guidelines",
-      "Nicaragua privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Nicaragua privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "Nicaragua ley \"inteligencia artificial\" Asamblea Nacional aprobada",
+      "Nicaragua \"inteligencia artificial\" Ley 1042 reforma ciberdelitos La Gaceta",
+      "\"uso y manejo responsable y ético de la IA\" Nicaragua cartilla Sistema Educativo Nacional",
+      "site:legislacion.asamblea.gob.ni \"inteligencia artificial\"",
+      "Nicaragua 2025 2026 \"inteligencia artificial\" ley reforma Código Penal OR \"Ley de Telecomunicaciones\" OR estrategia nacional gob.ni",
+      "mined.gob.ni OR cnu.edu.ni \"inteligencia artificial\" lineamientos OR guía OR normativa",
+      "TELCOR OR SIBOIF OR \"Banco Central de Nicaragua\" \"inteligencia artificial\" norma OR resolución",
+      "asamblea.gob.ni \"inteligencia artificial\" iniciativa de ley Nicaragua diputados",
+      "legislacion.asamblea.gob.ni portal search: \"inteligencia artificial\"",
+      "legislacion.asamblea.gob.ni portal search: inteligencia artificial",
+      "legislacion.asamblea.gob.ni portal search: algoritmo*",
+      "legislacion.asamblea.gob.ni portal search: ultrafalso* / deepfake",
+      "legislacion.asamblea.gob.ni portal search: \"datos personales\"",
+      "legislacion.asamblea.gob.ni portal search: \"Convenio 108\"",
+      "legislacion.asamblea.gob.ni portal search: \"transformación digital\"",
+      "legislacion.asamblea.gob.ni portal search: ciberseguridad",
+      "tecnacional.edu.ni biblioteca virtual: inteligencia artificial"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. All units reached. Law 787 has no automated-decision provision; recorded as general data protection law. Decreto A.N. 8933 (WAICO approval) recorded as international_treaty, adopted, in force on publication 2026-10-01 (La Gaceta 179); deposit of ratification unverified. Education guides dated 2026-03-19 from the 'Fecha de publicación' line displayed on TecNacional's own document pages (PDFs undated) - page-stated date, not file metadata; issuer named only as Sistema Educativo Nacional. Ley 1042, Ley 1219, Cybersecurity Strategy 2020-2025: no AI. Ley 1243 (military code) AI in passing (lead). Convention 108: not a party. Units covered: Law: Asamblea Nacional legislation portal (normas jurídicas, incl. La Gaceta copies) searched in Spanish for inteligencia artificial, algoritmo, ultrafalso/deepfake, datos personales, Convenio 108, transformación digital, ciberseguridad. Found: Law No. 787 on personal data protection (recorded) and Legislative Decree A.N. No. 8933 approving the WAICO agreement (recorded). Cybercrime Law No. 1042 (2020) and its reform Law No. 1219 (2024), the National Cybersecurity Strategy 2020-2025 (Decreto Presidencial 24-2020) and the higher-education regulatory compendium (2023) contain no AI provisions. Law No. 1243 (military code reform, 2025) mentions AI only in passing (lead). No AI law, AI bill or deepfake offence found.; Government: Searched, nothing found: no national AI strategy, digital strategy with an AI pillar, national AI body, or public-sector AI/GenAI guideline published by the central government.; Ministries: Education: National Education System AI guides for students, teachers and families (recorded, TecNacional) and AI tools catalogue 2026 (lead); MINED and CNU searched, no separate AI documents found. Health: MINSA AI-in-health roadmap planned only (lead). Defence: AI mentioned in passing in the military code reform (lead). Justice, finance/tax, labour, interior: searched, nothing found.; Regulators: Searched, nothing found: data protection directorate (Ministry of Finance), central bank (BCN), banking supervisor (SIBOIF), telecom regulator (TELCOR) have no AI-specific documents; no national cyber agency AI guidance; no standards adoption, sandbox, procurement rule, algorithm register or AI index.. Not reached: none. Could not verify: Deposit of Nicaragua's WAICO ratification instrument (not found on an official source).; mined.gob.ni site search for inteligencia artificial returned an empty page by curl; no MINED copy of the education AI guides found by web search.. binding-law, strategy, government-governance, risk-assurance, public-sector, procurement, cyber-security, transparency, standards, sandbox, index-readiness, drafts, historical: no material found.",
     "discovery_result_count": 13,
     "focused_result_count": 8
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-afa48500a52a",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "NIC",
+      "instrument_id": "i-906dbb8ac859",
+      "title": "Law No. 787, Personal Data Protection Law",
+      "detail": "Added to the radar (published 2012-03-29).",
+      "from": null,
+      "to": null,
+      "source_url": "http://legislacion.asamblea.gob.ni/normaweb.nsf/9e314815a08d4a6206257265005d21f9/e5d37e9b4827fc06062579ed0076ce1d",
+      "needs_review": false
+    },
+    {
+      "id": "c-748efac49b9c",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "NIC",
+      "instrument_id": "i-3f74dfe807d1",
+      "title": "Legislative Decree A.N. No. 8933 approving the Agreement on the Establishment of the World AI Cooperation Organization",
+      "detail": "Lifecycle recorded as adopted when added.",
+      "from": null,
+      "to": "adopted",
+      "source_url": "http://legislacion.asamblea.gob.ni/normaweb.nsf/9e314815a08d4a6206257265005d21f9/81741517a6793d5d06258e8300727080",
+      "needs_review": false
+    },
+    {
+      "id": "c-0889bfef4e33",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "NIC",
+      "instrument_id": "i-3f74dfe807d1",
+      "title": "Legislative Decree A.N. No. 8933 approving the Agreement on the Establishment of the World AI Cooperation Organization",
+      "detail": "Added to the radar (published 2026-10-01).",
+      "from": null,
+      "to": null,
+      "source_url": "http://legislacion.asamblea.gob.ni/normaweb.nsf/9e314815a08d4a6206257265005d21f9/81741517a6793d5d06258e8300727080",
+      "needs_review": false
+    },
+    {
+      "id": "c-941f4e519bcc",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "NIC",
+      "instrument_id": "i-482e5caedb82",
+      "title": "Responsible and ethical use and handling of AI for students",
+      "detail": "Added to the radar (published 2026-03-19).",
+      "from": null,
+      "to": null,
+      "source_url": "https://tecnacional.edu.ni/media/Uso_y_manejo_responsable_y_etico_de_la_IA_para_estudiantes.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-0e79a3889460",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "NIC",
+      "instrument_id": "i-a9237ee544b8",
+      "title": "Responsible and ethical use and handling of AI for teachers",
+      "detail": "Added to the radar (published 2026-03-19).",
+      "from": null,
+      "to": null,
+      "source_url": "https://tecnacional.edu.ni/media/Uso_y_manejo_responsable_y_etico_de_la_IA_para_maestras_y_maestros.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-bdca337efda6",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "NIC",
+      "instrument_id": "i-26c4664a82f0",
+      "title": "Supporting daughters and sons in the responsible and ethical use and handling of AI",
+      "detail": "Added to the radar (published 2026-03-19).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.tecnacional.edu.ni/media/Acompanamiento_a_hijas_e_hijos_en_el_uso_y_manejo_responsable_y_etico_de_la_IA.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-c55ff05e5dcc",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "NIC",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 5 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-863d6f8d41a9",
+      "date": "2026-10-01",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "NIC",
+      "instrument_id": "i-3f74dfe807d1",
+      "title": "Decree approving the World AI Cooperation Organization agreement published",
+      "detail": "Legislative Decree A.N. No. 8933 published in La Gaceta No. 179; in force from publication.",
+      "from": null,
+      "to": null,
+      "source_url": "http://legislacion.asamblea.gob.ni/normaweb.nsf/9e314815a08d4a6206257265005d21f9/81741517a6793d5d06258e8300727080",
+      "needs_review": false
+    },
+    {
+      "id": "c-349fd39e9df7",
+      "date": "2026-09-29",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "NIC",
+      "instrument_id": "i-3f74dfe807d1",
+      "title": "National Assembly approves the World AI Cooperation Organization agreement",
+      "detail": "Legislative Decree A.N. No. 8933 approves the agreement signed in Shanghai on 16 July 2026 and instructs the Presidency to ratify it.",
+      "from": null,
+      "to": null,
+      "source_url": "http://legislacion.asamblea.gob.ni/normaweb.nsf/9e314815a08d4a6206257265005d21f9/81741517a6793d5d06258e8300727080",
+      "needs_review": false
+    },
+    {
+      "id": "c-77b9c5f347eb",
+      "date": "2026-03-19",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "NIC",
+      "instrument_id": "i-482e5caedb82",
+      "title": "National Education System publishes AI guides for students, teachers and families",
+      "detail": "Three guides on responsible and ethical AI use published in TecNacional's virtual library (date from the issuer's document pages).",
+      "from": null,
+      "to": null,
+      "source_url": "https://tecnacional.edu.ni/media/Uso_y_manejo_responsable_y_etico_de_la_IA_para_estudiantes.pdf",
+      "needs_review": true
+    },
+    {
+      "id": "c-72389bbf51b0",
+      "date": "2012-03-29",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "NIC",
+      "instrument_id": "i-906dbb8ac859",
+      "title": "Personal Data Protection Law (Law No. 787) published",
+      "detail": "Law No. 787, approved 21 March 2012, published in La Gaceta No. 61 and in force from publication.",
+      "from": null,
+      "to": null,
+      "source_url": "http://legislacion.asamblea.gob.ni/normaweb.nsf/9e314815a08d4a6206257265005d21f9/e5d37e9b4827fc06062579ed0076ce1d",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Catálogo de Herramientas de Inteligencia Artificial 2026",
+      "english_title": "Catalogue of Artificial Intelligence Tools 2026",
+      "issuing_authority": "Technology Commission of the National Education System (published by Tecnológico Nacional)",
+      "note": "Official document on tecnacional.edu.ni (document page states 'Fecha de publicación: 18 de febrero de 2026'); https://tecnacional.edu.ni/media/Catalogo_de_Herramientas_de_Inteligencia_Artificial_2026.pdf. Mostly a catalogue of AI tools by pedagogical use; it has a one-page ethics and safety section (verify outputs, acknowledge AI use, do not use AI to write or interpret results). Held as a lead because its main content is a tool listing rather than governance; could be promoted as education-sector guidance on review.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Ley N°. 1243, Ley de Reformas y Adiciones a la Ley N°. 181, Código de Organización, Jurisdicción y Previsión Social Militar",
+      "english_title": "Law No. 1243 amending Law No. 181, Code of Military Organization, Jurisdiction and Social Security",
+      "issuing_authority": "National Assembly",
+      "note": "Approved 26 March 2025, La Gaceta No. 60 of 28 March 2025 (http://legislacion.asamblea.gob.ni/normaweb.nsf/9e314815a08d4a6206257265005d21f9/10f6b20238e10b3f06258c5b0072bfa7). Mentions AI only in passing: the Army's functions include airspace/maritime surveillance 'con el empleo de tecnología moderna e inteligencia artificial' and contributing to the use of AI, and the Signals Corps develops ICT 'con el empleo de inteligencia artificial'. No rules on AI; fails the scope test.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Hoja de ruta nacional de inteligencia artificial en salud (MINSA)",
+      "english_title": "National roadmap for AI in health (Ministry of Health)",
+      "issuing_authority": "Ministry of Health (MINSA)",
+      "note": "Planned. A MINSA–PAHO/WHO national workshop (reported 17 September 2026) set 24-month priorities for responsible AI in health, including strengthening the regulatory and ethical framework; results are to feed a future national AI-in-health roadmap and governance mechanisms. No official MINSA document found online. Record once published.",
+      "found": "2026-10-12"
+    }
+  ]
 }

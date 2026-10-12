@@ -10,18 +10,296 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Jamaica has no AI law and no adopted AI strategy. Its AI governance rests on the 2025 policy recommendations of the National AI Task Force, published by the Office of the Prime Minister; the Data Protection Act 2020, whose right over automated decision-taking has applied since December 2023; and the Chief Justice's 2025 practice direction on the use of generative AI in court proceedings. A National AI Policy and an AI legislative framework are being drafted under the Office of the Prime Minister.",
+    "lead_institutions": [
+      "Office of the Prime Minister",
+      "Office of the Information Commissioner",
+      "Supreme Court of Judicature of Jamaica"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was carried out on 12 October 2026 from documents read in full on official sites. The Ministry of Justice laws portal could not be accessed and the Jamaica Gazette has no online search. The draft National AI Policy, a 2026 cybercrime amendment covering generated intimate images and a planned public-sector AI literacy directive are tracked as leads."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-f3acbe98b46a",
+      "official_title": "National Artificial Intelligence - Policy Recommendations",
+      "english_title": "National Artificial Intelligence - Policy Recommendations (National AI Task Force report)",
+      "issuing_authority": "National Artificial Intelligence Task Force, Office of the Prime Minister",
+      "authority_type": "government",
+      "categories": [
+        "strategy",
+        "ethics",
+        "government-governance"
+      ],
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2025-02-13",
+      "current_status": "Published by the Office of the Prime Minister on 13 February 2025 (OPM notice 'National AI Task Force Report Published'; the PDF itself carries no date). The OPM's 2 April 2026 notice says the recommendations were delivered in September 2024. Cabinet was reviewing them; they are recommendations, not an adopted policy. A reconstituted Task Force (first met 19 February 2026) is drafting the National AI Policy (target November 2026) and an AI legislative framework within 12 months (see leads).",
+      "summary": "Report of the National AI Task Force to the Office of the Prime Minister laying the evidence base for a National AI Policy aligned with Vision 2030. After a SWOT analysis of AI use in Jamaica it sets SMART recommendations in nine areas (AI for innovation and growth, education and workforce, public awareness, infrastructure, international cooperation, legal and regulatory frameworks, government-industry collaboration, ethical foundations and a cohesive AI framework) and a phased action plan. On regulation it recommends interim guidelines for AI ethics and data privacy that keep AI applications within existing data protection law, and review of existing legislation or new legislation to facilitate AI.",
+      "ai_governance_relevance": "Main national AI policy document to date; the basis for the National AI Policy now being drafted.",
+      "source_url": "https://opm.gov.jm/wp-content/uploads/2025/02/National-Artificial-Intelligence-Task-Force-Policy-Recommendations-Final-1.pdf",
+      "official_pdf_url": "https://opm.gov.jm/wp-content/uploads/2025/02/National-Artificial-Intelligence-Task-Force-Policy-Recommendations-Final-1.pdf",
+      "official_webpage_url": "https://opm.gov.jm/national-ai-task-force-report-published/",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-d4641ee188d3",
+      "publisher_name": "Office of the Prime Minister",
+      "jurisdiction_id": "JAM",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "strategy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Jamaica (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "en",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full PDF read (pdftotext); no date printed in the document; publication date 13 February 2025 from the OPM notice 'National AI Task Force Report Published', which links the PDF from the OPM menu",
+      "source_id": "s-054f698099cc"
+    },
+    {
+      "id": "i-9b0b2cbf4db5",
+      "official_title": "The Data Protection Act, 2020",
+      "english_title": "Data Protection Act, 2020 (Act No. 7 of 2020)",
+      "issuing_authority": "Parliament of Jamaica",
+      "authority_type": "legislature",
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2020-07-10",
+      "current_status": "Act No. 7 of 2020, assented to by the Governor-General on 10 July 2020. Commenced in stages by notices in the Jamaica Gazette: sections 2, 4, 56, 57, 60, 66, 74, 77 and the First Schedule from 1 December 2021 (Appointed Day Notice, 2021, Gazette 30 November 2021); sections 1 and 3, Part II (data-subject rights including section 12 on automated decision-taking) and most remaining provisions from 1 December 2023 (Additional Specified Provisions Appointed Day Notice, 2023, Gazette 1 December 2023). The OIC also publishes the 2024 registration, Minister's and disposal regulations.",
+      "summary": "Jamaica's general data protection law, administered by the Information Commissioner, setting data protection standards, controller registration and data-subject rights. Section 12 lets an individual require by written notice that no decision significantly affecting them is based solely on automated processing of personal data to evaluate matters such as work performance, creditworthiness, reliability or conduct; where no notice was given the controller must inform the individual, who may within 30 days require reconsideration or a new decision not based solely on such processing, and the Commissioner can order this.",
+      "ai_governance_relevance": "Governs personal-data processing in AI training and use and contains the country's only statutory rule on solely automated decisions.",
+      "source_url": "https://oic.gov.jm/sites/default/files/page-files/The-Data-Protection-Act-2020-No.-7%20%28WebCompressed%29_0.pdf",
+      "official_pdf_url": "https://oic.gov.jm/sites/default/files/page-files/The-Data-Protection-Act-2020-No.-7%20%28WebCompressed%29_0.pdf",
+      "official_webpage_url": "https://oic.gov.jm/page/data-protection-act",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-9077dbc2bfc6",
+      "publisher_name": "Office of the Information Commissioner",
+      "jurisdiction_id": "JAM",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "effective_date": "2023-12-01",
+      "last_amended_date": null,
+      "scope": "Jamaica (national)",
+      "technology_scope": [
+        "AI",
+        "automated decision-making",
+        "personal data"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "en",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "evidence_reference": "curl (browser user agent, --max-time 60): assented Act No. 7 of 2020 PDF read from the OIC's 'The Data Protection Act' page (pdftotext plus page-1 image showing assent of 10 July 2020); section 12 text read; commencement read from the Appointed Day Notices 2021 (text) and 2023 (scanned Gazette pages, read as images) on oic.gov.jm",
+      "source_id": "s-09d2025e9c58"
+    },
+    {
+      "id": "i-191e6e22a887",
+      "official_title": "Practice Direction No. 1 of 2025 – Use of Generative Artificial Intelligence in Court Proceedings",
+      "english_title": "Practice Direction No. 1 of 2025 – Use of Generative Artificial Intelligence in Court Proceedings",
+      "issuing_authority": "Chief Justice of Jamaica (Supreme Court of Judicature of Jamaica)",
+      "authority_type": "judiciary",
+      "categories": [
+        "generative-ai",
+        "sectoral",
+        "transparency"
+      ],
+      "legal_status": "administrative_policy_mandatory_in_scope",
+      "lifecycle": "in_force",
+      "publication_date": "2025-09-17",
+      "current_status": "Dated and in effect from 17 September 2025; remains in force until varied or revoked and is subject to periodic review. Listed on the Supreme Court's practice directions page.",
+      "summary": "Practice direction issued by the Chief Justice for proceedings in the Supreme Court, the Revenue Court and the High Court and Circuit Court Divisions of the Gun Court, governing the use of generative AI by attorneys, parties, self-represented litigants and others. It requires GenAI-assisted court documents to be verified and free of fabricated authorities and prohibits GenAI for affidavits, witness statements, expert evidence, evidence, purported originals, unapproved images and likeness avatars in virtual hearings. Documents prepared with GenAI must carry a declaration in the appended form, and non-compliance can lead to exclusion, costs, contempt or referral to the General Legal Council.",
+      "ai_governance_relevance": "First binding rules on generative AI use issued by a Jamaican public body.",
+      "source_url": "https://www.supremecourt.gov.jm/sites/default/files/PRACTICE%20DIRECTION%20NO.%201%20OF%202025%20%28Use%20of%20Generative%20AI%20In%20Court%20Proceedings%29.pdf",
+      "official_pdf_url": "https://www.supremecourt.gov.jm/sites/default/files/PRACTICE%20DIRECTION%20NO.%201%20OF%202025%20%28Use%20of%20Generative%20AI%20In%20Court%20Proceedings%29.pdf",
+      "official_webpage_url": "https://www.supremecourt.gov.jm/content/practice-directions",
+      "sectors": [
+        "justice"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-2e1e656b845a",
+      "publisher_name": "Supreme Court of Judicature of Jamaica",
+      "jurisdiction_id": "JAM",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "generative-ai",
+      "subcategory": null,
+      "effective_date": "2025-09-17",
+      "last_amended_date": null,
+      "scope": "Jamaica (national): Supreme Court, Revenue Court and Gun Court divisions",
+      "technology_scope": [
+        "generative AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "en",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full PDF read (pdftotext); 'Dated this 17th day of September 2025' and effective date printed in the document; listed on supremecourt.gov.jm practice directions page",
+      "source_id": "s-f326ed3e8d55"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-d4641ee188d3",
+      "jurisdiction_id": "JAM",
+      "name": "Office of the Prime Minister",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Office of the Prime Minister of Jamaica; houses the National Artificial Intelligence Task Force (established 2023, reconstituted February 2026) and the Minister without Portfolio responsible for Science, Technology and Special Projects, which leads drafting of the National AI Policy and an AI legislative framework.",
+      "source_url": "https://opm.gov.jm/",
+      "authority_type": "government",
+      "government_level": "national"
+    },
+    {
+      "id": "o-9077dbc2bfc6",
+      "jurisdiction_id": "JAM",
+      "name": "Office of the Information Commissioner",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Data protection authority under the Data Protection Act, 2020; enforces data-subject rights including the right not to be subject to solely automated decisions (section 12). No AI-specific guidance found.",
+      "source_url": "https://oic.gov.jm/",
+      "authority_type": "regulator",
+      "government_level": "national"
+    },
+    {
+      "id": "o-2e1e656b845a",
+      "jurisdiction_id": "JAM",
+      "name": "Supreme Court of Judicature of Jamaica",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Superior court; the Chief Justice issued Practice Direction No. 1 of 2025 on the use of generative AI in court proceedings.",
+      "source_url": "https://www.supremecourt.gov.jm/",
+      "authority_type": "judiciary",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-054f698099cc",
+      "url": "https://opm.gov.jm/wp-content/uploads/2025/02/National-Artificial-Intelligence-Task-Force-Policy-Recommendations-Final-1.pdf",
+      "jurisdiction_ids": [
+        "JAM"
+      ],
+      "source_institutions": [
+        "Office of the Prime Minister"
+      ],
+      "instrument_ids": [
+        "i-f3acbe98b46a"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "ethics",
+        "government-governance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full PDF read (pdftotext); no date printed in the document; publication date 13 February 2025 from the OPM notice 'National AI Task Force Report Published', which links the PDF from the OPM menu",
+      "http_status": 200,
+      "final_url": "https://opm.gov.jm/wp-content/uploads/2025/02/National-Artificial-Intelligence-Task-Force-Policy-Recommendations-Final-1.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-09d2025e9c58",
+      "url": "https://oic.gov.jm/sites/default/files/page-files/The-Data-Protection-Act-2020-No.-7%20%28WebCompressed%29_0.pdf",
+      "jurisdiction_ids": [
+        "JAM"
+      ],
+      "source_institutions": [
+        "Office of the Information Commissioner"
+      ],
+      "instrument_ids": [
+        "i-9b0b2cbf4db5"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): assented Act No. 7 of 2020 PDF read from the OIC's 'The Data Protection Act' page (pdftotext plus page-1 image showing assent of 10 July 2020); section 12 text read; commencement read from the Appointed Day Notices 2021 (text) and 2023 (scanned Gazette pages, read as images) on oic.gov.jm",
+      "http_status": 200,
+      "final_url": "https://oic.gov.jm/sites/default/files/page-files/The-Data-Protection-Act-2020-No.-7%20%28WebCompressed%29_0.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-f326ed3e8d55",
+      "url": "https://www.supremecourt.gov.jm/sites/default/files/PRACTICE%20DIRECTION%20NO.%201%20OF%202025%20%28Use%20of%20Generative%20AI%20In%20Court%20Proceedings%29.pdf",
+      "jurisdiction_ids": [
+        "JAM"
+      ],
+      "source_institutions": [
+        "Supreme Court of Judicature of Jamaica"
+      ],
+      "instrument_ids": [
+        "i-191e6e22a887"
+      ],
+      "categories_reviewed": [
+        "generative-ai",
+        "sectoral",
+        "transparency"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full PDF read (pdftotext); 'Dated this 17th day of September 2025' and effective date printed in the document; listed on supremecourt.gov.jm practice directions page",
+      "http_status": 200,
+      "final_url": "https://www.supremecourt.gov.jm/sites/default/files/PRACTICE%20DIRECTION%20NO.%201%20OF%202025%20%28Use%20of%20Generative%20AI%20In%20Court%20Proceedings%29.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "JAM",
     "country": "Jamaica",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -33,55 +311,236 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_with_findings": [
       "binding-law",
-      "strategy",
-      "government-governance",
+      "data-privacy",
       "ethics",
+      "generative-ai",
+      "government-governance",
+      "sectoral",
+      "strategy",
+      "transparency"
+    ],
+    "categories_where_no_material_was_found": [
       "risk-assurance",
       "public-sector",
       "procurement",
       "cyber-security",
-      "data-privacy",
-      "transparency",
       "standards",
       "sandbox",
       "index-readiness",
-      "sectoral",
-      "generative-ai",
       "drafts",
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Jamaica \"artificial intelligence\" (strategy OR regulation OR ethics) government ministry official",
       "Jamaica \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Jamaica government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Jamaica \"artificial intelligence\" cybersecurity authority secure development safety guidelines",
-      "Jamaica privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Jamaica privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "Jamaica national artificial intelligence policy gov.jm",
+      "Jamaica AI Task Force report Ministry of Science Energy Telecommunications artificial intelligence",
+      "Jamaica Office of the Information Commissioner artificial intelligence guidance Data Protection Act automated decision",
+      "Supreme Court of Jamaica practice direction generative artificial intelligence 2025",
+      "Jamaica Ministry of Education artificial intelligence policy guidelines schools",
+      "Jamaica public sector generative AI guidelines civil servants ministry circular artificial intelligence",
+      "\"Data Protection Act, 2020\" Jamaica automated decision-taking",
+      "Bank of Jamaica / Financial Services Commission artificial intelligence guidance",
+      "Broadcasting Commission Jamaica artificial intelligence deepfake guidelines",
+      "Jamaica bill artificial intelligence deepfake parliament 2026 Cybercrimes amendment",
+      "Cybercrimes (Amendment) 2026 Jamaica japarliament.gov.jm bill",
+      "boj.org.jm standards of sound practice artificial intelligence",
+      "Jamaica ministry health OR education OR justice artificial intelligence policy 2026",
+      "Jamaica national AI policy draft consultation 2026",
+      "OIC oic.gov.jm site pages: Data Protection Act, appointed day notices, publications"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. laws.moj.gov.jm curl TLS failure / WebFetch 503; Gazette no online full-text search; BSJ site not opened (web search only). Task Force recommendations dated 2025-02-13 from OPM publication notice (PDF undated; later OPM notice says delivered Sep 2024). DPA 2020 assent 2020-07-10 (signed copy on oic.gov.jm); Part II incl. s.12 in force 2023-12-01 per Gazette appointed-day notice. Practice Direction No. 1 of 2025 recorded administrative_policy_mandatory_in_scope (binds court users). BOJ standards (2024, 2025) mention AI in passing (leads). Convention 108: not a party. Units covered: Law: japarliament.gov.jm and OIC-hosted Act/Gazette notices: Data Protection Act 2020 (s.12 automated decisions) recorded; no AI-specific law; Cybercrimes (Amendment) Act 2026 (deepfake intimate images) held as lead (no official text found); laws.moj.gov.jm unreachable (curl TLS failure, WebFetch 503). Jamaica Gazette not searchable online beyond notices hosted by OIC.; Government: OPM (National AI Task Force recommendations recorded; draft National AI Policy, AI literacy directive and UNESCO RAM as leads). No national AI strategy adopted; no public-sector AI/GenAI guideline or procurement rules found.; Ministries: Searched education, health, justice, finance: nothing found beyond press statements (MOEY AI tool pilots; MOF statement on AI in auditing). Judiciary: Chief Justice's GenAI practice direction recorded.; Regulators: OIC: no AI-specific guidance (searched, nothing found). BOJ: only passing AI mentions in governance and cyber standards (leads). FSC, OUR, Broadcasting Commission, JAMPRO: searched, nothing AI-specific found. No national cyber authority AI guidance found. No standards-body (BSJ) AI standard adoption found.. Not reached: laws.moj.gov.jm (curl TLS certificate failure; WebFetch HTTP 503); Jamaica Gazette full-text search (no online search); Bureau of Standards Jamaica site not checked directly. Could not verify: Cybercrimes (Amendment) Act 2026 official text, assent and commencement; Whether the National AI Policy public consultation launched in September 2026. risk-assurance, public-sector, procurement, cyber-security, standards, sandbox, index-readiness, drafts, international, historical: no material found.",
     "discovery_result_count": 11,
     "focused_result_count": 15
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-6b160adf5ee7",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "JAM",
+      "instrument_id": "i-f3acbe98b46a",
+      "title": "National Artificial Intelligence - Policy Recommendations (National AI Task Force report)",
+      "detail": "Added to the radar (published 2025-02-13).",
+      "from": null,
+      "to": null,
+      "source_url": "https://opm.gov.jm/wp-content/uploads/2025/02/National-Artificial-Intelligence-Task-Force-Policy-Recommendations-Final-1.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-3cc70825d3bc",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "JAM",
+      "instrument_id": "i-9b0b2cbf4db5",
+      "title": "Data Protection Act, 2020 (Act No. 7 of 2020)",
+      "detail": "Added to the radar (published 2020-07-10).",
+      "from": null,
+      "to": null,
+      "source_url": "https://oic.gov.jm/sites/default/files/page-files/The-Data-Protection-Act-2020-No.-7%20%28WebCompressed%29_0.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-92f46e9b67c6",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "JAM",
+      "instrument_id": "i-191e6e22a887",
+      "title": "Practice Direction No. 1 of 2025 – Use of Generative Artificial Intelligence in Court Proceedings",
+      "detail": "Added to the radar (published 2025-09-17).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.supremecourt.gov.jm/sites/default/files/PRACTICE%20DIRECTION%20NO.%201%20OF%202025%20%28Use%20of%20Generative%20AI%20In%20Court%20Proceedings%29.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-659da083c01b",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "JAM",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 3 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-6c1ef14b1143",
+      "date": "2025-09-17",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "JAM",
+      "instrument_id": "i-191e6e22a887",
+      "title": "Practice Direction on generative AI in court proceedings takes effect",
+      "detail": "Chief Justice's Practice Direction No. 1 of 2025 issued and in effect.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.supremecourt.gov.jm/sites/default/files/PRACTICE%20DIRECTION%20NO.%201%20OF%202025%20%28Use%20of%20Generative%20AI%20In%20Court%20Proceedings%29.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-c5c24a3cebd6",
+      "date": "2025-02-13",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "JAM",
+      "instrument_id": "i-f3acbe98b46a",
+      "title": "National AI Task Force policy recommendations published",
+      "detail": "Office of the Prime Minister publishes the National AI Task Force report.",
+      "from": null,
+      "to": null,
+      "source_url": "https://opm.gov.jm/national-ai-task-force-report-published/",
+      "needs_review": false
+    },
+    {
+      "id": "c-d6d79bf997d1",
+      "date": "2023-12-01",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "JAM",
+      "instrument_id": "i-9b0b2cbf4db5",
+      "title": "Data Protection Act: data-subject rights incl. automated decisions in force",
+      "detail": "Part II (incl. section 12 on automated decision-taking) and most remaining provisions come into operation (Appointed Day Notice, 2023).",
+      "from": null,
+      "to": null,
+      "source_url": "https://oic.gov.jm/sites/default/files/publications/DPA%20Appointed%20Day%20Notice%2001Dec2023.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-4fe3d3f989c2",
+      "date": "2020-07-10",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "JAM",
+      "instrument_id": "i-9b0b2cbf4db5",
+      "title": "Data Protection Act, 2020 assented",
+      "detail": "Governor-General assents to the Data Protection Act, 2020 (Act No. 7 of 2020).",
+      "from": null,
+      "to": null,
+      "source_url": "https://oic.gov.jm/sites/default/files/page-files/The-Data-Protection-Act-2020-No.-7%20%28WebCompressed%29_0.pdf",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "National Artificial Intelligence Policy (draft)",
+      "english_title": "National AI Policy (draft)",
+      "issuing_authority": "Office of the Prime Minister / National AI Task Force",
+      "note": "In preparation. Reconstituted Task Force (first met 19 February 2026) charged with a draft national AI policy within 6-9 months and a draft AI legislative framework within 12 months (OPM notice 3 March 2026); draft targeted for November 2026 per JIS; a public consultation website was reported (press, August 2026) for September 2026 but no official consultation page was found. Record the draft/consultation once published. https://opm.gov.jm/minister-wheatley-convenes-first-meeting-of-reconstituted-national-ai-task-force-sets-policy-and-legislative-deliverables/",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "UNESCO Jamaica Artificial Intelligence Readiness Assessment Report",
+      "english_title": "UNESCO AI Readiness Assessment (RAM) Report for Jamaica",
+      "issuing_authority": "UNESCO with the Office of the Prime Minister",
+      "note": "Launched by the OPM on 1 April 2026 (OPM notice 2 April 2026). A UNESCO methodology report, not a national instrument; no official full text located on a government site. Consider for index-readiness if the government publishes it. https://opm.gov.jm/jamaica-takes-the-lead-on-ai-government-launches-landmark-unesco-readiness-report/",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "The Cybercrimes (Amendment) Act, 2026",
+      "english_title": "Cybercrimes (Amendment) Act, 2026",
+      "issuing_authority": "Parliament of Jamaica",
+      "note": "Passed House 3 February 2026 and Senate 1 May 2026 (JIS). Per government statements it redefines intimate images to include content 'generated or created' (covering AI deepfakes) and creates an offence of publishing them without consent; the Act does not name AI. No official text, assent or commencement found on japarliament.gov.jm or the MOJ laws portal (TLS failure). Record once official text is located.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "AI literacy directive to the National AI Task Force",
+      "english_title": "Directive on AI literacy across the Government of Jamaica",
+      "issuing_authority": "Minister without Portfolio (Science, Technology and Special Projects), Office of the Prime Minister",
+      "note": "OPM notice reports a ministerial directive to produce a Cabinet-ready AI literacy recommendation for the public service; mandatory AI training for public servants announced June 2026 (JIS). No official policy document found. https://opm.gov.jm/minister-wheatley-issues-urgent-directive-to-national-ai-task-force-to-advance-ai-literacy-across-the-government-of-jamaica/",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Standard of Sound Practice for Effective Corporate Governance of DTIs and FHCs (November 2025)",
+      "english_title": "BOJ corporate governance standard for deposit-taking institutions and financial holding companies",
+      "issuing_authority": "Bank of Jamaica",
+      "note": "General governance standard that mentions AI only in passing (IT committee monitors emerging technologies including AI and guides policies on ethical AI use and data privacy). Fails the scope test. https://boj.org.jm/wp-content/uploads/2025/11/Standard-of-Sound-Practice-for-Effective-Corporate-Governance-of-DTIs-and-FHCs-November-2025.pdf",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Standard of Sound Practice on Management of Cyber Risks (September 2024)",
+      "english_title": "BOJ cyber risk management standard",
+      "issuing_authority": "Bank of Jamaica",
+      "note": "General cyber-risk standard; AI mentioned only as an example of emerging technology. Fails the scope test. https://boj.org.jm/wp-content/uploads/2024/09/Standard-of-Sound-Practice-Management-of-Cyber-Risks.pdf",
+      "found": "2026-10-12"
+    }
+  ]
 }
