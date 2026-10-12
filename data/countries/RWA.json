@@ -10,82 +10,314 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Rwanda governs AI through its National AI Policy, approved by the Cabinet in 2023 and led by the Ministry of ICT and Innovation (MINICT), which also published an AI readiness and maturity framework and, with Singapore, an AI Playbook for Small States. Binding rules come from the 2021 data protection law, which gives people rights over decisions based solely on automated processing, and from the central bank's regulatory sandbox, which admits AI and machine-learning products. A National AI Agency, central-bank AI risk guidelines and a revision of the ICT law to cover AI are in progress but not yet officially published.",
+    "lead_institutions": [
+      "Ministry of ICT and Innovation (MINICT)",
+      "National Bank of Rwanda"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was carried out on 12 October 2026 from documents read in full on official sites. The central bank's document listings and the cybersecurity authority's website could not be accessed, so the bank's 2026 AI risk management guidelines could not be read. These guidelines, the National AI Agency and the ICT law revision are tracked as leads."
   },
   "instruments": [
     {
-      "id": "i-085796b953cc",
-      "official_title": "Republic of Rwanda",
-      "english_title": "National Artificial Intelligence Policy",
       "jurisdiction_id": "RWA",
-      "issuing_authority": null,
-      "publisher_name": "www.minict.gov.rw",
-      "authority_type": null,
       "government_level": "national",
-      "categories": [
-        "strategy"
-      ],
-      "category": "strategy",
+      "subnational_unit": null,
       "subcategory": null,
-      "legal_status": null,
-      "publication_date": null,
-      "effective_date": null,
       "last_amended_date": null,
-      "current_status": "Official source located; current status requires review",
-      "scope": null,
-      "sectors": [],
       "technology_scope": [
         "AI"
       ],
-      "summary": "Official source located for this governance category. The document’s adoption, legal effect, scope and version history remain under review.",
-      "ai_governance_relevance": "Primary-source material for assessing strategy & action plans.",
-      "source_url": "https://www.minict.gov.rw/fileadmin/user_upload/minict_user_upload/Documents/Artificial_Intelligence_Policy__1_.pdf",
-      "official_pdf_url": "https://www.minict.gov.rw/fileadmin/user_upload/minict_user_upload/Documents/Artificial_Intelligence_Policy__1_.pdf",
-      "official_webpage_url": null,
-      "language": null,
-      "supersedes": [],
-      "superseded_by": [],
       "related_instruments": [],
       "regional_applicability": [],
-      "verification_date": "2026-10-06",
-      "verification_level": "primary_source_located",
-      "metadata_gaps": [
-        "Issuing authority",
-        "Publication/effective dates",
-        "Current legal status",
-        "Precise applicability",
-        "Version history",
-        "Authority type",
-        "Government level",
-        "Publication date",
-        "Effective date",
-        "Last amended date",
-        "Document language"
-      ],
-      "source_kind": "official_document",
-      "evidence_reference": "turn156search10",
-      "link_status": "reachable",
-      "document_access_type": "original_government_document",
-      "source_id": "s-fcb92e8492ee",
-      "organization_id": "o-e56b3f3d9c08",
-      "lifecycle": "unverified",
-      "first_recorded": "2026-10-06",
+      "supersedes": [],
+      "superseded_by": [],
+      "verification_date": "2026-10-11",
+      "first_recorded": "2026-10-11",
       "last_changed": null,
-      "subnational_unit": null
+      "document_access_type": "original_government_document",
+      "source_kind": "official_document",
+      "link_status": "reachable",
+      "scope": "Rwanda (national)",
+      "id": "i-085796b953cc",
+      "official_title": "The National AI Policy",
+      "english_title": "National Artificial Intelligence Policy",
+      "issuing_authority": "Ministry of ICT and Innovation (MINICT), developed with the Rwanda Utilities Regulatory Authority (RURA)",
+      "publisher_name": "Ministry of ICT and Innovation",
+      "authority_type": "ministry",
+      "categories": [
+        "strategy",
+        "ethics",
+        "public-sector",
+        "government-governance"
+      ],
+      "legal_status": "national_strategy",
+      "lifecycle": "adopted",
+      "publication_date": "2023-04",
+      "effective_date": null,
+      "current_status": "Listed on MINICT's Policies page, which presents 'policies approved by the Cabinet'; the file is dated 27 April 2023 there and the document's back cover reads 'MINICT - 2022'. The Cabinet communiqué approving it (reported as 20 April 2023) is not on the Prime Minister's Office cabinet-decisions archive, so only the month is recorded. It remains the current national AI policy; in 2026 the Cabinet was reported to have approved a National AI Agency to take it forward (see leads).",
+      "summary": "Rwanda's national AI policy, developed by MINICT and RURA, with the vision of becoming a global centre for AI research and innovation and Africa's 'AI Lab and Responsible AI Champion'. It sets six priority areas (skills and AI literacy, infrastructure and compute, a data strategy, trustworthy AI adoption in the public sector, private-sector adoption, and practical AI ethical guidelines) with 14 key recommendations and an implementation plan assigning actions to MINICT, RURA, RISA, NCSA and others. It proposes a Responsible AI Office within MINICT to lead implementation, revised ICT procurement guidelines for AI, and annually updated AI ethical guidelines.",
+      "ai_governance_relevance": "Rwanda's core AI governance instrument; anchors public-sector AI adoption, ethics guidelines and the proposed Responsible AI Office.",
+      "sectors": [
+        "cross-sector"
+      ],
+      "language": "en",
+      "source_url": "https://www.minict.gov.rw/fileadmin/user_upload/minict_user_upload/Documents/Artificial_Intelligence_Policy__1_.pdf",
+      "official_pdf_url": "https://www.minict.gov.rw/fileadmin/user_upload/minict_user_upload/Documents/Artificial_Intelligence_Policy__1_.pdf",
+      "official_webpage_url": "https://www.minict.gov.rw/ai-policy",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Exact Cabinet approval date (official communiqué not located)"
+      ],
+      "organization_id": "o-e56b3f3d9c08",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full 23-page PDF read (pdftotext); same file also on the MINICT Policies page (Policies/Artificial_Intelligence_Policy.pdf, dated Apr 27, 2023)",
+      "category": "strategy",
+      "source_id": "s-fcb92e8492ee"
+    },
+    {
+      "jurisdiction_id": "RWA",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "technology_scope": [
+        "AI"
+      ],
+      "related_instruments": [
+        "i-085796b953cc"
+      ],
+      "regional_applicability": [],
+      "supersedes": [],
+      "superseded_by": [],
+      "verification_date": "2026-10-11",
+      "first_recorded": "2026-10-11",
+      "last_changed": null,
+      "document_access_type": "original_government_document",
+      "source_kind": "official_document",
+      "link_status": "reachable",
+      "scope": "Rwanda (national)",
+      "official_title": "AI Readiness and Maturity Framework for Rwanda",
+      "english_title": "AI Readiness and Maturity Framework for Rwanda",
+      "issuing_authority": "Ministry of ICT and Innovation (MINICT), with the Centre for the Fourth Industrial Revolution Rwanda (C4IR) and GIZ FAIR Forward",
+      "publisher_name": "Ministry of ICT and Innovation",
+      "authority_type": "ministry",
+      "categories": [
+        "index-readiness",
+        "strategy"
+      ],
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2023-11",
+      "effective_date": null,
+      "current_status": "Listed on MINICT's Policies page with the file dated 21 November 2023; the document itself carries no publication date, so only the month of the official listing is recorded.",
+      "summary": "A data-driven framework and dashboard developed by MINICT with C4IR and GIZ FAIR Forward to monitor Rwanda's readiness and maturity in implementing the National AI Policy. It maps indicators drawn from international AI indices (Oxford, Stanford, Tortoise) plus Rwanda-specific indicators onto the policy's six priority areas and reports a first-round assessment. It recommends building data-governance mechanisms and capacity around the dashboard and a scaling strategy for regular reassessment.",
+      "ai_governance_relevance": "Government-published AI readiness assessment tied to monitoring the National AI Policy.",
+      "sectors": [
+        "cross-sector"
+      ],
+      "language": "en",
+      "source_url": "https://www.minict.gov.rw/fileadmin/user_upload/minict_user_upload/Documents/Policies/AI_Readiness_and_Maturity_Framework_for_Rwanda.pdf",
+      "official_pdf_url": "https://www.minict.gov.rw/fileadmin/user_upload/minict_user_upload/Documents/Policies/AI_Readiness_and_Maturity_Framework_for_Rwanda.pdf",
+      "official_webpage_url": "https://www.minict.gov.rw/policies",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Exact publication date (only the official listing month)"
+      ],
+      "organization_id": "o-e56b3f3d9c08",
+      "evidence_reference": "curl (browser user agent, --max-time 60): 51-page PDF read (pdftotext); listing date from MINICT Policies page",
+      "category": "index-readiness",
+      "id": "i-309818361ed9",
+      "source_id": "s-14afd2e4ab1e"
+    },
+    {
+      "jurisdiction_id": "RWA",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "technology_scope": [
+        "AI"
+      ],
+      "related_instruments": [
+        "i-085796b953cc"
+      ],
+      "regional_applicability": [],
+      "supersedes": [],
+      "superseded_by": [],
+      "verification_date": "2026-10-11",
+      "first_recorded": "2026-10-11",
+      "last_changed": null,
+      "document_access_type": "original_government_document",
+      "source_kind": "official_document",
+      "link_status": "reachable",
+      "scope": "Rwanda (national)",
+      "official_title": "AI Playbook for Small States",
+      "english_title": "AI Playbook for Small States",
+      "issuing_authority": "Ministry of ICT and Innovation (MINICT) of Rwanda and the Infocomm Media Development Authority (IMDA) of Singapore, under the Digital Forum of Small States (Digital FOSS)",
+      "publisher_name": "Ministry of ICT and Innovation",
+      "authority_type": "ministry",
+      "categories": [
+        "government-governance",
+        "public-sector"
+      ],
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2024-09-22",
+      "effective_date": null,
+      "current_status": "Published 22 September 2024 (date stated on the cover); listed on MINICT's Policies page. A jointly authored international compilation, not a Rwandan policy with domestic effect.",
+      "summary": "A playbook co-developed by Rwanda's MINICT and Singapore's IMDA for the Digital Forum of Small States, compiling how small states have implemented AI strategies and policies. It is organised in four chapters: laying key building blocks, driving AI development and use, fostering a trusted environment, and forging global partnerships, with country case studies including Rwanda's National AI Policy and skills efforts. It offers non-binding practices for policymakers rather than obligations.",
+      "ai_governance_relevance": "Rwanda's international AI-governance cooperation output, published by MINICT.",
+      "sectors": [
+        "cross-sector"
+      ],
+      "language": "en",
+      "source_url": "https://www.minict.gov.rw/fileadmin/user_upload/minict_user_upload/Documents/Policies/AI_Playbook_for_Small_States.pdf",
+      "official_pdf_url": "https://www.minict.gov.rw/fileadmin/user_upload/minict_user_upload/Documents/Policies/AI_Playbook_for_Small_States.pdf",
+      "official_webpage_url": "https://www.minict.gov.rw/policies",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "organization_id": "o-e56b3f3d9c08",
+      "evidence_reference": "curl (browser user agent, --max-time 60): 43-page PDF read (pdftotext); cover states 'Published 22 September 2024'",
+      "category": "government-governance",
+      "id": "i-15e120b1534e",
+      "source_id": "s-86955cf39baa"
+    },
+    {
+      "jurisdiction_id": "RWA",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "technology_scope": [
+        "AI",
+        "automated decision-making",
+        "personal data"
+      ],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "supersedes": [],
+      "superseded_by": [],
+      "verification_date": "2026-10-11",
+      "first_recorded": "2026-10-11",
+      "last_changed": null,
+      "document_access_type": "original_government_document",
+      "source_kind": "official_document",
+      "link_status": "reachable",
+      "scope": "Rwanda (national)",
+      "official_title": "Law Nº 058/2021 of 13/10/2021 relating to the protection of personal data and privacy",
+      "english_title": "Law No. 058/2021 of 13 October 2021 relating to the protection of personal data and privacy",
+      "issuing_authority": "Parliament of the Republic of Rwanda (promulgated by the President of the Republic)",
+      "publisher_name": "Ministry of ICT and Innovation",
+      "authority_type": "legislature",
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2021-10-15",
+      "effective_date": "2021-10-15",
+      "current_status": "Published in Official Gazette nº Special of 15/10/2021 in Kinyarwanda, English and French; Article 70 provides that it comes into force on publication. The Gazette copy is hosted on MINICT's Laws page.",
+      "summary": "Rwanda's general data protection law, setting principles, lawful bases, data-subject rights, controller and processor obligations, cross-border transfer rules and sanctions, supervised by the public authority in charge of cyber security. Article 21 gives data subjects the right not to be subject to a decision based solely on automated processing, including profiling, that produces legal or similarly significant effects, with exceptions for explicit consent, contracts and authorisation by law with safeguards, and bars such evaluation from relying on sensitive data unless an Article 10 ground applies. It applies to processing in Rwanda and to processing of data of persons in Rwanda by those outside it.",
+      "ai_governance_relevance": "Binding rules on automated decision-making and profiling that govern AI systems processing personal data.",
+      "sectors": [
+        "cross-sector"
+      ],
+      "language": "en",
+      "source_url": "https://www.minict.gov.rw/fileadmin/user_upload/minict_user_upload/Documents/Laws/Law_relating_to_the_protection_of_personal_data_and_privacy.pdf",
+      "official_pdf_url": "https://www.minict.gov.rw/fileadmin/user_upload/minict_user_upload/Documents/Laws/Law_relating_to_the_protection_of_personal_data_and_privacy.pdf",
+      "official_webpage_url": "https://www.minict.gov.rw/laws",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "organization_id": "o-bfaaead30924",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full 82-page Official Gazette PDF read (pdftotext); Article 21 and Article 70 checked",
+      "category": "data-privacy",
+      "id": "i-0e2a71c5ca7b",
+      "source_id": "s-5841b4499e80"
+    },
+    {
+      "jurisdiction_id": "RWA",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "technology_scope": [
+        "AI",
+        "fintech"
+      ],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "supersedes": [],
+      "superseded_by": [],
+      "verification_date": "2026-10-11",
+      "first_recorded": "2026-10-11",
+      "last_changed": null,
+      "document_access_type": "original_government_document",
+      "source_kind": "official_document",
+      "link_status": "reachable",
+      "scope": "Rwanda (national)",
+      "official_title": "Regulation No 41/2022 of 13/04/2022 governing the regulatory sandbox",
+      "english_title": "Regulation No 41/2022 of 13 April 2022 governing the regulatory sandbox",
+      "issuing_authority": "National Bank of Rwanda",
+      "publisher_name": "National Bank of Rwanda",
+      "authority_type": "regulator",
+      "categories": [
+        "sandbox",
+        "sectoral"
+      ],
+      "legal_status": "binding_regulation",
+      "lifecycle": "in_force",
+      "publication_date": "2022-04-18",
+      "effective_date": "2022-04-18",
+      "current_status": "Published in Official Gazette nº 16 bis of 18/04/2022; Article 23 provides that it comes into force on publication. Not AI-specific: AI/machine learning is one of the technologies applicants can select in the sandbox application form.",
+      "summary": "National Bank of Rwanda regulation setting up a regulatory sandbox in which licensed financial institutions and other entities can test innovative financial products, services and solutions in a live environment within set parameters and timeframes. It sets eligibility criteria, the application and evaluation process, testing periods, risk assessment, customer safeguards, record-keeping and reporting duties, and exit rules. Its application form lists AI/machine learning among the technologies to be tested, so AI-based fintech can enter the sandbox.",
+      "ai_governance_relevance": "Financial-sector sandbox that explicitly admits AI/machine-learning solutions.",
+      "sectors": [
+        "finance"
+      ],
+      "language": "en",
+      "source_url": "https://www.bnr.rw/documents/18.04.2022_BNR_RegulatorySandbox.pdf",
+      "official_pdf_url": "https://www.bnr.rw/documents/18.04.2022_BNR_RegulatorySandbox.pdf",
+      "official_webpage_url": null,
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "organization_id": "o-978a58ff9c64",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full 45-page Official Gazette extract read (pdftotext); Articles 1, 2, 23 and the application form checked",
+      "category": "sandbox",
+      "id": "i-2329ae5f0b6b",
+      "source_id": "s-9da15c07a8d2"
     }
   ],
   "organizations": [
     {
       "id": "o-e56b3f3d9c08",
       "jurisdiction_id": "RWA",
-      "name": "www.minict.gov.rw",
-      "publisher_name_verified": false,
-      "ai_governance_role": "Publisher of listed official material; complete institutional mandate and statutory responsibilities require review.",
-      "source_url": "https://www.minict.gov.rw/fileadmin/user_upload/minict_user_upload/Documents/Artificial_Intelligence_Policy__1_.pdf",
-      "authority_type": null,
-      "government_level": null
+      "name": "Ministry of ICT and Innovation",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Ministry of Information Communication Technology and Innovation (MINICT); lead ministry for AI policy. Developed the National AI Policy with RURA, publishes the AI Readiness and Maturity Framework, and co-authored the Digital FOSS AI Playbook for Small States with Singapore's IMDA. The National AI Policy proposes a Responsible AI Office within MINICT to lead implementation.",
+      "source_url": "https://www.minict.gov.rw/ai-policy",
+      "authority_type": "ministry",
+      "government_level": "national"
+    },
+    {
+      "id": "o-978a58ff9c64",
+      "jurisdiction_id": "RWA",
+      "name": "National Bank of Rwanda",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Central bank and financial-sector regulator; issued Regulation No 41/2022 governing the regulatory sandbox, whose application form lists AI/machine learning among the technologies tested. Reported in 2026 to have issued AI risk-management guidelines for financial institutions (held as a lead; official text not reached).",
+      "source_url": "https://www.bnr.rw/",
+      "authority_type": "regulator",
+      "government_level": "national"
+    },
+    {
+      "id": "o-bfaaead30924",
+      "jurisdiction_id": "RWA",
+      "name": "Parliament of the Republic of Rwanda",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Legislature; adopted Law Nº 058/2021 relating to the protection of personal data and privacy, which includes a right not to be subject to solely automated decisions (Article 21).",
+      "source_url": "https://www.parliament.gov.rw/",
+      "authority_type": "legislature",
+      "government_level": "national"
     }
   ],
   "sources": [
@@ -96,22 +328,134 @@
         "RWA"
       ],
       "source_institutions": [
-        "www.minict.gov.rw"
+        "Ministry of ICT and Innovation"
       ],
       "instrument_ids": [
         "i-085796b953cc"
       ],
       "categories_reviewed": [
-        "strategy"
+        "strategy",
+        "ethics",
+        "public-sector",
+        "government-governance"
       ],
-      "date_reviewed": "2026-10-06",
-      "checked_date": "2026-10-06",
-      "check_method": "GET; first 1 MiB; 14-second timeout",
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser user agent, --max-time 60): full 23-page PDF read (pdftotext); same file also on the MINICT Policies page (Policies/Artificial_Intelligence_Policy.pdf, dated Apr 27, 2023)",
       "http_status": 200,
       "final_url": "https://www.minict.gov.rw/fileadmin/user_upload/minict_user_upload/Documents/Artificial_Intelligence_Policy__1_.pdf",
       "link_status": "reachable",
       "page_title": null,
-      "document_language": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-14afd2e4ab1e",
+      "url": "https://www.minict.gov.rw/fileadmin/user_upload/minict_user_upload/Documents/Policies/AI_Readiness_and_Maturity_Framework_for_Rwanda.pdf",
+      "jurisdiction_ids": [
+        "RWA"
+      ],
+      "source_institutions": [
+        "Ministry of ICT and Innovation"
+      ],
+      "instrument_ids": [
+        "i-309818361ed9"
+      ],
+      "categories_reviewed": [
+        "index-readiness",
+        "strategy"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser user agent, --max-time 60): 51-page PDF read (pdftotext); listing date from MINICT Policies page",
+      "http_status": 200,
+      "final_url": "https://www.minict.gov.rw/fileadmin/user_upload/minict_user_upload/Documents/Policies/AI_Readiness_and_Maturity_Framework_for_Rwanda.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-86955cf39baa",
+      "url": "https://www.minict.gov.rw/fileadmin/user_upload/minict_user_upload/Documents/Policies/AI_Playbook_for_Small_States.pdf",
+      "jurisdiction_ids": [
+        "RWA"
+      ],
+      "source_institutions": [
+        "Ministry of ICT and Innovation"
+      ],
+      "instrument_ids": [
+        "i-15e120b1534e"
+      ],
+      "categories_reviewed": [
+        "international",
+        "strategy",
+        "government-governance"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser user agent, --max-time 60): 43-page PDF read (pdftotext); cover states 'Published 22 September 2024'",
+      "http_status": 200,
+      "final_url": "https://www.minict.gov.rw/fileadmin/user_upload/minict_user_upload/Documents/Policies/AI_Playbook_for_Small_States.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-5841b4499e80",
+      "url": "https://www.minict.gov.rw/fileadmin/user_upload/minict_user_upload/Documents/Laws/Law_relating_to_the_protection_of_personal_data_and_privacy.pdf",
+      "jurisdiction_ids": [
+        "RWA"
+      ],
+      "source_institutions": [
+        "Ministry of ICT and Innovation"
+      ],
+      "instrument_ids": [
+        "i-0e2a71c5ca7b"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser user agent, --max-time 60): full 82-page Official Gazette PDF read (pdftotext); Article 21 and Article 70 checked",
+      "http_status": 200,
+      "final_url": "https://www.minict.gov.rw/fileadmin/user_upload/minict_user_upload/Documents/Laws/Law_relating_to_the_protection_of_personal_data_and_privacy.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-9da15c07a8d2",
+      "url": "https://www.bnr.rw/documents/18.04.2022_BNR_RegulatorySandbox.pdf",
+      "jurisdiction_ids": [
+        "RWA"
+      ],
+      "source_institutions": [
+        "National Bank of Rwanda"
+      ],
+      "instrument_ids": [
+        "i-2329ae5f0b6b"
+      ],
+      "categories_reviewed": [
+        "sandbox",
+        "sectoral"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser user agent, --max-time 60): full 45-page Official Gazette extract read (pdftotext); Articles 1, 2, 23 and the application form checked",
+      "http_status": 200,
+      "final_url": "https://www.bnr.rw/documents/18.04.2022_BNR_RegulatorySandbox.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
       "error": null,
       "content_type": "application/pdf"
     }
@@ -120,7 +464,7 @@
   "coverage_audit": {
     "jurisdiction_id": "RWA",
     "country": "Rwanda",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -133,56 +477,236 @@
       "transparency"
     ],
     "categories_with_findings": [
+      "binding-law",
+      "data-privacy",
+      "ethics",
+      "government-governance",
+      "index-readiness",
+      "public-sector",
+      "sandbox",
+      "sectoral",
       "strategy"
     ],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
-      "binding-law",
-      "strategy",
-      "government-governance",
-      "ethics",
+    "categories_where_no_material_was_found": [
       "risk-assurance",
-      "public-sector",
       "procurement",
       "cyber-security",
-      "data-privacy",
       "transparency",
       "standards",
-      "sandbox",
-      "index-readiness",
-      "sectoral",
       "generative-ai",
       "drafts",
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Rwanda \"artificial intelligence\" (strategy OR regulation OR ethics) government ministry official",
       "Rwanda \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Rwanda government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Rwanda \"artificial intelligence\" cybersecurity authority secure development safety guidelines",
-      "Rwanda privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Rwanda privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "Rwanda Cabinet communiqué approved National Artificial Intelligence Policy April 2023",
+      "Rwanda artificial intelligence guidelines site:gov.rw",
+      "Rwanda Law 058/2021 protection of personal data and privacy automated decision official gazette",
+      "Rwanda National Artificial Intelligence Agency cabinet 2026 law establishing",
+      "Rwanda generative AI guidelines public servants RISA OR MINICT OR MINEDUC OR Ministry of Health",
+      "\"ubwenge bw'ubukorano\" OR \"ubwenge buhangano\" Rwanda itegeko politiki",
+      "RURA guidelines ethical development implementation artificial intelligence",
+      "gov.rw \"Cabinet Communiqué\" \"Artificial Intelligence\" approved",
+      "artificial intelligence guidelines (rura.rw, bnr.rw, risa.gov.rw, moh.gov.rw, mineduc.gov.rw, dpo.gov.rw, ncsa.gov.rw, minijust.gov.rw, parliament.gov.rw, rsb.gov.rw)",
+      "Rwanda \"intelligence artificielle\" loi OR politique nationale Journal Officiel",
+      "Rwanda Ministry of Health artificial intelligence health guidelines OR strategy",
+      "National Bank of Rwanda artificial intelligence guideline OR regulation financial sector AI",
+      "\"Guidelines No. 52/2026\" artificial intelligence risk management financial institutions",
+      "Rwanda parliament bill artificial intelligence 2026 ICT law amendment",
+      "MINICT Policies and Laws pages browsed; Prime Minister's Office cabinet-decisions archive 2023 and 2026 (English communiqués scanned for 'artificial intelligence')"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. bnr.rw listings JS-rendered, API host HTTP 521; ncsa.gov.rw TLS name mismatch (dpo.gov.rw used). AI policy dated 2023-04 (MINICT file 27 Apr 2023; cover 'MINICT - 2022'; Cabinet approval 20 Apr 2023 secondary only). Readiness Framework dated by listing 2023-11. Playbook (MINICT + IMDA) recategorised from international to government-governance/public-sector at merge. BNR Reg 41/2022 sandbox not AI-specific (application form lists AI/ML) - kept under sandbox. Renamed i-085796b953cc and o-e56b3f3d9c08. Convention 108: not a party. Units covered: Law: MINICT Laws page (Gazette copies: data protection law, ICT law, cybercrime law, digital ID law); Official Gazette/parliament searched via web search for AI laws and bills: only the data protection law (Art. 21 automated decisions) has AI-relevant provisions; no AI law or AI bill found (ICT law revision announced, held as lead).; Government: MINICT AI page and Policies listing (National AI Policy, AI Readiness and Maturity Framework, AI Playbook for Small States; National Data Sharing Policy 2025 only mentions AI in passing, not recorded); Prime Minister's Office cabinet-decisions archive 2023/2026 scanned: no AI communiqué online.; Ministries: Searched, nothing found: no AI-specific documents from Health, Education, Justice, Defence, Finance/Tax, Labour or Interior (Health AI lab and civil-servant AI training reported only in media).; Regulators: BNR: regulatory sandbox regulation (AI/ML listed) recorded; 2026 AI risk-management guidelines held as lead (official text not reachable). DPO/NCSA site: compliance tools, no AI guidance. RURA, RISA: no AI-specific documents found (an RURA AI ethics guideline reported by secondary sources was not found on official sites).. Not reached: bnr.rw document listings (script-rendered site; API host returned HTTP 521); ncsa.gov.rw (TLS certificate name mismatch; dpo.gov.rw reached instead). Could not verify: BNR Guidelines No. 52/2026 on AI risk management (official text not reached); Cabinet approval of National AI Agency (8 June 2026) - communiqué not on PMO archive; Cabinet approval date of National AI Policy (20 April 2023). risk-assurance, procurement, cyber-security, transparency, standards, generative-ai, drafts, international, historical: no material found.",
     "discovery_result_count": 12,
     "focused_result_count": 11
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-f618ff6a29c7",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "RWA",
+      "instrument_id": "i-085796b953cc",
+      "title": "National Artificial Intelligence Policy",
+      "detail": "Record updated: categories, issuing authority, legal status, lifecycle, publication date, scope, summary, title.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-2a56c88ef604",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "RWA",
+      "instrument_id": "i-309818361ed9",
+      "title": "AI Readiness and Maturity Framework for Rwanda",
+      "detail": "Added to the radar (published 2023-11).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.minict.gov.rw/fileadmin/user_upload/minict_user_upload/Documents/Policies/AI_Readiness_and_Maturity_Framework_for_Rwanda.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-34d55c100ef6",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "RWA",
+      "instrument_id": "i-15e120b1534e",
+      "title": "AI Playbook for Small States",
+      "detail": "Added to the radar (published 2024-09-22).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.minict.gov.rw/fileadmin/user_upload/minict_user_upload/Documents/Policies/AI_Playbook_for_Small_States.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-b6e244ee5fb1",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "RWA",
+      "instrument_id": "i-0e2a71c5ca7b",
+      "title": "Law No. 058/2021 of 13 October 2021 relating to the protection of personal data and privacy",
+      "detail": "Added to the radar (published 2021-10-15).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.minict.gov.rw/fileadmin/user_upload/minict_user_upload/Documents/Laws/Law_relating_to_the_protection_of_personal_data_and_privacy.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-1c6c89fd6d24",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "RWA",
+      "instrument_id": "i-2329ae5f0b6b",
+      "title": "Regulation No 41/2022 of 13 April 2022 governing the regulatory sandbox",
+      "detail": "Added to the radar (published 2022-04-18).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.bnr.rw/documents/18.04.2022_BNR_RegulatorySandbox.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-031df0023faa",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "RWA",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 5 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-b144c263cfe2",
+      "date": "2024-09-22",
+      "recorded": "2026-10-11",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "RWA",
+      "instrument_id": "i-15e120b1534e",
+      "title": "AI Playbook for Small States published",
+      "detail": "MINICT and Singapore's IMDA published the Digital FOSS AI Playbook for Small States.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.minict.gov.rw/fileadmin/user_upload/minict_user_upload/Documents/Policies/AI_Playbook_for_Small_States.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-728a1c35522c",
+      "date": "2022-04-18",
+      "recorded": "2026-10-11",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "RWA",
+      "instrument_id": "i-2329ae5f0b6b",
+      "title": "BNR regulatory sandbox regulation published",
+      "detail": "Regulation No 41/2022 governing the regulatory sandbox published in Official Gazette nº 16 bis of 18/04/2022 and in force on publication; AI/machine learning listed among sandbox technologies.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.bnr.rw/documents/18.04.2022_BNR_RegulatorySandbox.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-eb996e344f4a",
+      "date": "2021-10-15",
+      "recorded": "2026-10-11",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "RWA",
+      "instrument_id": "i-0e2a71c5ca7b",
+      "title": "Data protection law published (Law Nº 058/2021)",
+      "detail": "Law relating to the protection of personal data and privacy published in Official Gazette nº Special of 15/10/2021; in force on publication (Article 70), including the right not to be subject to solely automated decisions (Article 21).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.minict.gov.rw/fileadmin/user_upload/minict_user_upload/Documents/Laws/Law_relating_to_the_protection_of_personal_data_and_privacy.pdf",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Guidelines No. 52/2026 on Artificial Intelligence Risk Management for Financial Institutions",
+      "english_title": "Guidelines No. 52/2026 on Artificial Intelligence Risk Management for Financial Institutions",
+      "issuing_authority": "National Bank of Rwanda",
+      "note": "Reported (aggregators, 2026) as issued on 4 June 2026 for all BNR-licensed institutions: AI inventories, board-set risk appetite, algorithmic impact assessments and notification before high-risk deployments, covering generative AI. Official text not reached: bnr.rw is a script-rendered site and its document API host returned errors; promote once the BNR PDF is located.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Cabinet decision approving the establishment of a National Artificial Intelligence Agency",
+      "english_title": "National Artificial Intelligence Agency (establishment)",
+      "issuing_authority": "Cabinet / Office of the Prime Minister",
+      "note": "Media report Cabinet approval on 8 June 2026 of a National AI Agency. The communiqué is not in the Prime Minister's Office cabinet-decisions archive (2026 list holds 4 March, 2 April, 30 June, 24 July, 18 September), and no establishing law or presidential order was found in the Official Gazette; record once a founding instrument is published.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Revision of Law Nº 24/2016 governing information and communication technologies to cover AI",
+      "english_title": "ICT law revision to integrate AI",
+      "issuing_authority": "Ministry of ICT and Innovation",
+      "note": "Government announced in 2025 that the 2016 ICT law would be revised to add AI use, accountability and ethics rules; no draft or bill found on MINICT or parliament.gov.rw.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Cabinet communiqué approving the National AI Policy (April 2023)",
+      "english_title": "Cabinet approval of the National AI Policy",
+      "issuing_authority": "Cabinet / Office of the Prime Minister",
+      "note": "Approval widely reported as 20 April 2023; the Prime Minister's Office 2023 archive only lists communiqués from June 2023 onward. Needed to fix the policy's exact adoption date.",
+      "found": "2026-10-11"
+    }
+  ]
 }
