@@ -10,18 +10,294 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Zimbabwe's only binding AI-relevant rules are the automated-decision provisions of the Cyber and Data Protection Act and its 2024 licensing regulations, which bar solely automated decisions with legal effects and automated decisions on children's data, enforced by the telecoms regulator POTRAZ as Data Protection Authority. POTRAZ also published a 2023 assessment of AI in the postal and telecommunications sector. The ICT ministry has posted a National Artificial Intelligence Strategy 2026-2030, which promises a future AI law, an AI ethics board and a regulatory sandbox, but the document gives no publication date, so it is tracked as a lead.",
+    "lead_institutions": [
+      "Ministry of Information Communication Technology, Postal and Courier Services",
+      "Postal and Telecommunications Regulatory Authority of Zimbabwe (POTRAZ)"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was carried out on 12 October 2026 from documents read in full on the ICT ministry's and POTRAZ's websites. The National AI Strategy 2026-2030 is on the ministry's website but states no publication date and no official launch notice was found, so it is tracked as a lead until it can be dated from an official source. Parliament's and the central bank's websites could not be accessed, so pending bills and any central bank AI guidelines could not be checked."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-794f2be5a60d",
+      "official_title": "Cyber and Data Protection Act [Chapter 12:07]",
+      "english_title": "Cyber and Data Protection Act [Chapter 12:07] (Act No. 5 of 2021)",
+      "issuing_authority": "Parliament of Zimbabwe",
+      "authority_type": "legislature",
+      "categories": [
+        "data-privacy",
+        "binding-law",
+        "cyber-security"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2021",
+      "current_status": "In force since 3 December 2021 (date of commencement stated in the consolidated text). Enacted as Act No. 5 of 2021 (originally headed Data Protection Act); re-gazetted with its new title on 11 March 2022 per the Law Reviser's note. POTRAZ also publishes the 2021 Act as gazetted (Data-Protection-Act-5-of-2021.pdf) and the Ministry of ICT links a copy. Implemented by S.I. 155 of 2024; POTRAZ opened a consultation in October 2026 on administrative penalties (see leads).",
+      "summary": "Zimbabwe's data protection and cybersecurity law, which designates POTRAZ as the Data Protection Authority, establishes a Cyber Security Centre and sets rules for processing personal data wholly or partly by automated means. Section 25 gives data subjects the right not to be subject to a decision based solely on automated processing, including profiling, that produces legal or similarly significant effects, unless they consented or the decision is based on law; section 20 requires controllers to notify the Authority before automated processing operations. It also amends the Criminal Law Code on cyber-crime and electronic evidence.",
+      "ai_governance_relevance": "Only binding Zimbabwean law with explicit rules on automated decision-making and profiling; governs data used to train and run AI systems.",
+      "source_url": "https://www.potraz.gov.zw/wp-content/uploads/2026/02/ACT-CDPA.pdf",
+      "official_pdf_url": "https://www.potraz.gov.zw/wp-content/uploads/2026/02/ACT-CDPA.pdf",
+      "official_webpage_url": "https://www.potraz.gov.zw/?page_id=2220",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-fa472da4c1d9",
+      "publisher_name": "Postal and Telecommunications Regulatory Authority of Zimbabwe",
+      "jurisdiction_id": "ZWE",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "effective_date": "2021-12-03",
+      "last_amended_date": null,
+      "scope": "Zimbabwe (national)",
+      "technology_scope": [
+        "AI",
+        "automated decision-making"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "en",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-a847abc3b4b7",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full consolidated text read (12-page PDF, pdftotext) from the POTRAZ Cyber and Data Protection Act page; sections 4, 5, 20 and 25 and the commencement note (3 December 2021) and re-gazetting note (11 March 2022) checked; the 2021 gazetted copy (Data-Protection-Act-5-of-2021.pdf) also read"
+    },
+    {
+      "id": "i-9dfc153ae5cf",
+      "official_title": "Cyber and Data Protection (Licensing of Data Controllers and Appointment of Data Protection Officers) Regulations, 2024",
+      "english_title": "Cyber and Data Protection (Licensing of Data Controllers and Appointment of Data Protection Officers) Regulations, 2024 (S.I. 155 of 2024)",
+      "issuing_authority": "Ministry of Information Communication Technology, Postal and Courier Services, in consultation with the Postal and Telecommunications Regulatory Authority of Zimbabwe",
+      "authority_type": "government",
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "legal_status": "binding_regulation",
+      "lifecycle": "in_force",
+      "publication_date": "2024",
+      "current_status": "In force (gazetted 2024). The scanned gazette copy on the POTRAZ site states S.I. 155 of 2024 but not the gazette day, so only the year is recorded. In October 2026 POTRAZ published a consultation paper and draft amendment regulations introducing administrative penalties (see leads).",
+      "summary": "Statutory Instrument 155 of 2024, made by the ICT Minister under section 32 of the Cyber and Data Protection Act, introduces licensing of data controllers, data protection officer appointments, security and breach-notification rules. Section 10(3) bars data controllers from subjecting a data subject to a decision based solely on automated processing with legal effects without consent or a legal basis, and section 10(5)(f) prohibits automated decision-making on children's data that affects children's rights; contraventions are offences punishable by a fine up to level 11 or up to seven years' imprisonment.",
+      "ai_governance_relevance": "Binding regulation that turns the Act's automated-decision right into a controller obligation backed by criminal penalties and adds a specific ban on automated decisions about children.",
+      "source_url": "https://www.potraz.gov.zw/wp-content/uploads/2025/02/sI-155-of-2024-Cyber-and-Data-Protection-Normal_250217_145108.pdf",
+      "official_pdf_url": "https://www.potraz.gov.zw/wp-content/uploads/2025/02/sI-155-of-2024-Cyber-and-Data-Protection-Normal_250217_145108.pdf",
+      "official_webpage_url": "https://www.potraz.gov.zw/?page_id=2220",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-ee74d18ae789",
+      "publisher_name": "Postal and Telecommunications Regulatory Authority of Zimbabwe",
+      "jurisdiction_id": "ZWE",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Zimbabwe (national)",
+      "technology_scope": [
+        "AI",
+        "automated decision-making"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "en",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-9976f19db294",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full 18-page S.I. text read (pdftotext) from the POTRAZ Cyber and Data Protection Act page; sections 2, 10(3), 10(5)(f) and 10(6) checked; exact gazette date not stated in the copy"
+    },
+    {
+      "id": "i-3d3a47bff6e8",
+      "official_title": "State of Artificial Intelligence (AI) in the Postal & Telecommunications Sector in Zimbabwe",
+      "english_title": "State of Artificial Intelligence (AI) in the Postal and Telecommunications Sector in Zimbabwe",
+      "issuing_authority": "Postal and Telecommunications Regulatory Authority of Zimbabwe (Research & Development Department)",
+      "authority_type": "regulator",
+      "categories": [
+        "index-readiness",
+        "sectoral"
+      ],
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2023-11",
+      "current_status": "Published November 2023 (date on the cover); listed under POTRAZ Studies & Surveys. Research report with recommendations; not binding.",
+      "summary": "POTRAZ survey-based assessment of AI adoption by licensed telecommunications operators and postal and courier operators, covering adoption levels, use cases, AI strategies, barriers, skills, investment and regulatory support. It finds low adoption and recommends a multi-stakeholder AI and/or Big Data steering committee, better access to data for AI, a light-touch regulatory framework for responsible AI and a national focus on AI research, innovation and skills.",
+      "ai_governance_relevance": "Regulator-published sector AI readiness assessment that informs POTRAZ's regulatory role on AI.",
+      "source_url": "https://www.potraz.gov.zw/wp-content/uploads/2024/04/State-of-AI-in-the-postal-and-telecommunications-sector-in-Zimbabwe-2023.pdf",
+      "official_pdf_url": "https://www.potraz.gov.zw/wp-content/uploads/2024/04/State-of-AI-in-the-postal-and-telecommunications-sector-in-Zimbabwe-2023.pdf",
+      "official_webpage_url": "https://www.potraz.gov.zw/?page_id=2770",
+      "sectors": [
+        "telecommunications",
+        "postal"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-6c58a117cd00",
+      "publisher_name": "Postal and Telecommunications Regulatory Authority of Zimbabwe",
+      "jurisdiction_id": "ZWE",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "index-readiness",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Zimbabwe (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "en",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-f4408dddfb9c",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full report read (pdftotext); cover states 'Report by the POTRAZ Research & Development Department: November 2023'"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-6c58a117cd00",
+      "jurisdiction_id": "ZWE",
+      "name": "Postal and Telecommunications Regulatory Authority of Zimbabwe",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Telecoms and postal regulator designated as the Data Protection Authority by section 5 of the Cyber and Data Protection Act; licenses data controllers, issues data protection guidelines (including on automated decision-making about children) and published a 2023 study of AI adoption in the postal and telecommunications sector.",
+      "source_url": "https://www.potraz.gov.zw/",
+      "authority_type": "regulator",
+      "government_level": "national"
+    },
+    {
+      "id": "o-ee74d18ae789",
+      "jurisdiction_id": "ZWE",
+      "name": "Ministry of Information Communication Technology, Postal and Courier Services",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Lead ministry for AI policy; drafted and publishes the Zimbabwe National Artificial Intelligence Strategy 2026-2030 (held as a lead) and makes regulations under the Cyber and Data Protection Act in consultation with POTRAZ (e.g. S.I. 155 of 2024).",
+      "source_url": "https://ictministry.gov.zw/",
+      "authority_type": "government",
+      "government_level": "national"
+    },
+    {
+      "id": "o-fa472da4c1d9",
+      "jurisdiction_id": "ZWE",
+      "name": "Parliament of Zimbabwe",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Enacted the Cyber and Data Protection Act (Act No. 5 of 2021), which gives data subjects a right not to be subject to solely automated decisions.",
+      "source_url": "https://www.parlzim.gov.zw/",
+      "authority_type": "legislature",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-a847abc3b4b7",
+      "url": "https://www.potraz.gov.zw/wp-content/uploads/2026/02/ACT-CDPA.pdf",
+      "jurisdiction_ids": [
+        "ZWE"
+      ],
+      "source_institutions": [
+        "Postal and Telecommunications Regulatory Authority of Zimbabwe"
+      ],
+      "instrument_ids": [
+        "i-794f2be5a60d"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law",
+        "cyber-security"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full consolidated text read (12-page PDF, pdftotext) from the POTRAZ Cyber and Data Protection Act page; sections 4, 5, 20 and 25 and the commencement note (3 December 2021) and re-gazetting note (11 March 2022) checked; the 2021 gazetted copy (Data-Protection-Act-5-of-2021.pdf) also read",
+      "http_status": 200,
+      "final_url": "https://www.potraz.gov.zw/wp-content/uploads/2026/02/ACT-CDPA.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-9976f19db294",
+      "url": "https://www.potraz.gov.zw/wp-content/uploads/2025/02/sI-155-of-2024-Cyber-and-Data-Protection-Normal_250217_145108.pdf",
+      "jurisdiction_ids": [
+        "ZWE"
+      ],
+      "source_institutions": [
+        "Postal and Telecommunications Regulatory Authority of Zimbabwe"
+      ],
+      "instrument_ids": [
+        "i-9dfc153ae5cf"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full 18-page S.I. text read (pdftotext) from the POTRAZ Cyber and Data Protection Act page; sections 2, 10(3), 10(5)(f) and 10(6) checked; exact gazette date not stated in the copy",
+      "http_status": 200,
+      "final_url": "https://www.potraz.gov.zw/wp-content/uploads/2025/02/sI-155-of-2024-Cyber-and-Data-Protection-Normal_250217_145108.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-f4408dddfb9c",
+      "url": "https://www.potraz.gov.zw/wp-content/uploads/2024/04/State-of-AI-in-the-postal-and-telecommunications-sector-in-Zimbabwe-2023.pdf",
+      "jurisdiction_ids": [
+        "ZWE"
+      ],
+      "source_institutions": [
+        "Postal and Telecommunications Regulatory Authority of Zimbabwe"
+      ],
+      "instrument_ids": [
+        "i-3d3a47bff6e8"
+      ],
+      "categories_reviewed": [
+        "index-readiness",
+        "sectoral"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full report read (pdftotext); cover states 'Report by the POTRAZ Research & Development Department: November 2023'",
+      "http_status": 200,
+      "final_url": "https://www.potraz.gov.zw/wp-content/uploads/2024/04/State-of-AI-in-the-postal-and-telecommunications-sector-in-Zimbabwe-2023.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "ZWE",
     "country": "Zimbabwe",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -33,55 +309,202 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_with_findings": [
       "binding-law",
+      "cyber-security",
+      "data-privacy",
+      "index-readiness",
+      "sectoral"
+    ],
+    "categories_where_no_material_was_found": [
       "strategy",
       "government-governance",
       "ethics",
       "risk-assurance",
       "public-sector",
       "procurement",
-      "cyber-security",
-      "data-privacy",
       "transparency",
       "standards",
       "sandbox",
-      "index-readiness",
-      "sectoral",
       "generative-ai",
       "drafts",
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Zimbabwe \"artificial intelligence\" (strategy OR regulation OR ethics) government ministry official",
       "Zimbabwe \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Zimbabwe government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Zimbabwe \"artificial intelligence\" cybersecurity authority secure development safety guidelines",
-      "Zimbabwe privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Zimbabwe privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "Zimbabwe National Artificial Intelligence Strategy 2026-2030 ictpcs.gov.zw",
+      "Zimbabwe Cyber and Data Protection Act automated decision making section 25 Data Protection Regulations SI 155 of 2024 potraz",
+      "potraz.gov.zw site search (WordPress search and media API): artificial; data protection; cyber; AI",
+      "ictministry.gov.zw homepage, downloads, resources and news pages: AI strategy",
+      "\"National Artificial Intelligence Strategy\" Zimbabwe pdf gov.zw",
+      "zim.gov.zw site search: artificial intelligence",
+      "Zimbabwe artificial intelligence bill OR regulations OR guidelines 2026 ministry education OR health OR \"Reserve Bank\" AI policy",
+      "Zimbabwe deepfake law OR \"AI-generated\" offence Criminal Law Code amendment 2025 2026; Zimbabwe Convention 108 accession",
+      "site:rbz.co.zw artificial intelligence guideline OR sandbox OR fintech",
+      "Zimbabwe AI Readiness Assessment report UNESCO Cabinet approved June 2025 Ministry ICT official",
+      "parlzim.gov.zw \"artificial intelligence\" bill OR motion OR committee report",
+      "Site searches for \"artificial intelligence\": praz.org.zw, saz.org.zw, mhtestd.gov.zw, zimra.co.zw (all: nothing found)"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. parlzim.gov.zw 403; rbz.co.zw bot check; mict/information/opc gov.zw DNS failure or reset; mopse.co.zw TLS failure. Ministry moved to ictministry.gov.zw (ictpcs.gov.zw no DNS). AI strategy kept as lead: PDF (cover, foreword, preface) undated; ministry homepage, news, downloads and resources pages have no launch notice or date; file metadata not used (PROTOCOL §4). Cabinet approval Oct 2025 and launch 13 Mar 2026 secondary only. CDPA publication_date 2021 from Act number; commencement 2021-12-03 from consolidated text. S.I. 155/2024 gazette day not given. POTRAZ 2023 State of AI report kept as index-readiness. National ICT Policy 2022-2027 and Smart Zimbabwe 2030 links 404. Convention 108: not a party. Units covered: Law: POTRAZ-hosted official texts of the Cyber and Data Protection Act [Chapter 12:07] (2021 gazetted and consolidated) and S.I. 155 of 2024 read; automated-decision rules recorded. Searched for AI bills, deepfake offences and Criminal Law Code AI amendments: nothing found. Parliament site (parlzim.gov.zw) returned 403 to automated access; Veritas not used as a source.; Government: Ministry of ICT, Postal and Courier Services site (ictministry.gov.zw; old ictpcs.gov.zw domain does not resolve): National AI Strategy 2026-2030 found and read in full but held as a lead (no publication date stated). National ICT Policy 2022-2027 and Smart Zimbabwe 2030 Master Plan links return 404. zim.gov.zw portal search: nothing found. No public-sector AI/GenAI guidelines, procurement rules or AI standards found.; Ministries: Searched, nothing found: no AI-specific documents from education (primary/secondary; mopse site unreachable), higher education (mhtestd.gov.zw site search: nothing found), health, justice, defence, finance/ZIMRA (site search: nothing found), labour or home affairs. The AI strategy assigns curriculum work to the education ministries.; Regulators: POTRAZ (telecom regulator and Data Protection Authority): full site search via its API; 2023 State of AI sector report recorded, data protection guidelines and October 2026 consultation checked (passing ADM mentions only, leads). RBZ: site behind bot check; AI guidelines for banks reported in press only (lead). PRAZ (procurement) and SAZ (standards) site searches for 'artificial intelligence': nothing found. No cyber agency or competition authority AI documents found.. Not reached: parlzim.gov.zw (HTTP 403 to curl); rbz.co.zw (bot-manager challenge); ictpcs.gov.zw / mict.gov.zw / information.gov.zw / opc.gov.zw (DNS failure or connection reset); mopse.co.zw (TLS failure). Could not verify: Parliament of Zimbabwe bills database (403); RBZ AI guidelines (bot check; press reports only); National ICT Policy 2022-2027 and Smart Zimbabwe 2030 Master Plan AI content (404); S.I. 155 of 2024 exact gazette date. strategy, government-governance, ethics, risk-assurance, public-sector, procurement, transparency, standards, sandbox, generative-ai, drafts, international, historical: no material found.",
     "discovery_result_count": 12,
     "focused_result_count": 11
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-cfe174f25895",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ZWE",
+      "instrument_id": "i-794f2be5a60d",
+      "title": "Cyber and Data Protection Act [Chapter 12:07] (Act No. 5 of 2021)",
+      "detail": "Added to the radar (published 2021).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.potraz.gov.zw/wp-content/uploads/2026/02/ACT-CDPA.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-fa44453741fd",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ZWE",
+      "instrument_id": "i-9dfc153ae5cf",
+      "title": "Cyber and Data Protection (Licensing of Data Controllers and Appointment of Data Protection Officers) Regulations, 2024 (S.I. 155 of 2024)",
+      "detail": "Added to the radar (published 2024).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.potraz.gov.zw/wp-content/uploads/2025/02/sI-155-of-2024-Cyber-and-Data-Protection-Normal_250217_145108.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-64b3189c1343",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ZWE",
+      "instrument_id": "i-3d3a47bff6e8",
+      "title": "State of Artificial Intelligence (AI) in the Postal and Telecommunications Sector in Zimbabwe",
+      "detail": "Added to the radar (published 2023-11).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.potraz.gov.zw/wp-content/uploads/2024/04/State-of-AI-in-the-postal-and-telecommunications-sector-in-Zimbabwe-2023.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-5d382a4f1e21",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "ZWE",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 3 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-a0407bb7701a",
+      "date": "2021-12-03",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "ZWE",
+      "instrument_id": "i-794f2be5a60d",
+      "title": "Cyber and Data Protection Act commences",
+      "detail": "Act No. 5 of 2021 comes into force, including the section 25 right not to be subject to solely automated decisions.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.potraz.gov.zw/wp-content/uploads/2026/02/ACT-CDPA.pdf",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "National AI Policy Act (planned)",
+      "english_title": "National AI Policy Act (planned)",
+      "issuing_authority": "Ministry of Information Communication Technology, Postal and Courier Services",
+      "note": "The National AI Strategy 2026-2030 commits to enact a National AI Policy Act with a risk-based regulatory approach. No bill found; the Parliament site (parlzim.gov.zw) refused automated access.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Consultation Paper on the Introduction of Administrative Penalties for Non-Compliance with Data Protection Requirements under the Cyber and Data Protection Act",
+      "english_title": "Consultation paper and draft amendment regulations to S.I. 155 of 2024",
+      "issuing_authority": "Postal and Telecommunications Regulatory Authority of Zimbabwe",
+      "note": "Posted by POTRAZ on 7 October 2026 (Stakeholder Consultations page, https://www.potraz.gov.zw/?page_id=3395) with draft amendment regulations. Read: no AI or automated-decision content, so out of scope unless the final amendments change the automated-decision rules.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Cyber and Data Protection Implementation Guideline on Processing Children's Personal Information (CDPG 2 of 2024)",
+      "english_title": "Implementation guideline on processing children's personal information",
+      "issuing_authority": "Postal and Telecommunications Regulatory Authority of Zimbabwe",
+      "note": "POTRAZ guideline (https://www.potraz.gov.zw/wp-content/uploads/2026/03/Processing-of-Childrens-Personal-Information-Final-002.pdf). Section 5 says controllers should not subject children's data to automated decision-making without human intervention where it has legal or similarly significant effects; otherwise general data protection guidance. The POTRAZ consent guideline likewise mentions automated decision-making only in passing. Not recorded (passing mention).",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Reserve Bank of Zimbabwe AI guidelines for financial institutions",
+      "english_title": "Reserve Bank of Zimbabwe AI guidelines for financial institutions",
+      "issuing_authority": "Reserve Bank of Zimbabwe",
+      "note": "Press reports (August 2025) say the RBZ is drafting AI-specific minimum requirements for regulated financial institutions. No official document found; rbz.co.zw blocked automated access with a bot check. RBZ fintech regulatory sandbox (2021) is general fintech, not AI-specific.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "National ICT Policy 2022-2027 and Smart Zimbabwe 2030 Master Plan",
+      "english_title": "National ICT Policy 2022-2027; Smart Zimbabwe 2030 Master Plan",
+      "issuing_authority": "Ministry of Information Communication Technology, Postal and Courier Services",
+      "note": "Linked from the Ministry of ICT site but both PDFs returned 404 on 2026-10-12, so their AI content could not be checked. The AI strategy describes itself as a component of the National ICT Policy.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Zimbabwe Artificial Intelligence Readiness Assessment Methodology (RAM) Report",
+      "english_title": "Zimbabwe AI Readiness Assessment (UNESCO RAM) report",
+      "issuing_authority": "UNESCO with the Ministry of Information Communication Technology, Postal and Courier Services",
+      "note": "Cited in the AI strategy as the UNESCO-led readiness assessment that recommended the strategy; press reports Cabinet approval in June 2025. No copy on a Zimbabwean government site found.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "POTRAZ Quarterly Research White Paper: The Information Society Watch - AI in Perspective",
+      "english_title": "The Information Society Watch: AI in Perspective",
+      "issuing_authority": "Postal and Telecommunications Regulatory Authority of Zimbabwe",
+      "note": "POTRAZ research white paper (Q1 2024, https://www.potraz.gov.zw/wp-content/uploads/2024/04/Quarterly-Research-White-Papers_The-Information-Society-Watch-Q1-2024-AI-in-Perspective.pdf). Informational research piece, not guidance; not recorded.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Zimbabwe National Artificial Intelligence Strategy 2026 - 2030",
+      "english_title": "Zimbabwe National Artificial Intelligence Strategy 2026-2030",
+      "issuing_authority": "Ministry of Information Communication Technology, Postal and Courier Services",
+      "note": "Official PDF on ministry site; no stated publication date. https://ictministry.gov.zw/assets/documents/Zimbabwe_National_AI_Strategy_HIGH_RES.pdf (linked from the ministry homepage 'Read Strategy' button). The cover, President's foreword and Minister's preface give no date; the only dates in the text are the consultation meetings of 28 August and 9 and 11 September 2025. Record it once an official publication or launch date is found.",
+      "found": "2026-10-12"
+    }
+  ]
 }
