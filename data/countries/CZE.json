@@ -10,82 +10,671 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Czechia's AI policy rests on the National AI Strategy 2030, approved by the government in July 2024 and replacing the 2019 strategy, with the EU AI Act applying directly; the national implementing law, which would make the Czech Telecommunication Office the main market surveillance authority, is still a draft. National law regulates real-time remote biometric identification at airports (2025) and creates deepfake offences (in force 2026). The Office of the Government issued a 2026 guide on ethical AI use in public administration, the Justice Ministry has an AI use policy, and the data protection and cyber security authorities have issued AI decisions and guidance, including on the government's 2025 DeepSeek ban.",
+    "lead_institutions": [
+      "Ministry of Industry and Trade",
+      "Office of the Government",
+      "Czech Telecommunication Office",
+      "Office for Personal Data Protection",
+      "National Cyber and Information Security Agency"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was completed on 12 October 2026 and covers national law, government, ministries and regulators. The draft AI Act law has not reached parliament and is listed as a lead, and the telecommunications office's website blocked access."
   },
   "instruments": [
     {
       "id": "i-10090dfb27ef",
-      "official_title": "Aktualizace Národní strategie umělé inteligence z roku 2019",
-      "english_title": "National AI Strategy of the Czech Republic 2030",
+      "official_title": "Národní strategie umělé inteligence České republiky 2030",
+      "english_title": "National Artificial Intelligence Strategy of the Czech Republic 2030 (NAIS 2030)",
       "jurisdiction_id": "CZE",
-      "issuing_authority": null,
-      "publisher_name": "vlada.gov.cz",
-      "authority_type": null,
+      "issuing_authority": "Government of the Czech Republic (approved by resolution No. 520 of 24 July 2024); prepared by the Ministry of Industry and Trade",
+      "publisher_name": "Government of the Czech Republic",
+      "authority_type": "government",
       "government_level": "national",
+      "subnational_unit": null,
       "categories": [
-        "strategy"
+        "strategy",
+        "government-governance",
+        "ethics",
+        "public-sector"
       ],
       "category": "strategy",
       "subcategory": null,
-      "legal_status": null,
-      "publication_date": null,
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2024-07-24",
       "effective_date": null,
       "last_amended_date": null,
-      "current_status": "Official source located; current status requires review",
-      "scope": null,
-      "sectors": [],
+      "current_status": "In force as the national AI strategy. Approved by government resolution No. 520 of 24 July 2024 (stated on the Ministry of Industry and Trade AI page, which also hosts the PDF and, since 2026, annexes 2 and 3 on labour-market impacts and AI R&D). It supersedes the 2019 strategy. Annual action plans are approved within the Digital Czechia implementation plans (the 2025 plan by resolution No. 237 of 2 April 2025; the plan documents themselves were not found online, see leads).",
+      "scope": "Czech Republic (national)",
+      "sectors": [
+        "cross-sector"
+      ],
       "technology_scope": [
         "AI"
       ],
-      "summary": "Official source located for this governance category. The document’s adoption, legal effect, scope and version history remain under review.",
-      "ai_governance_relevance": "Primary-source material for assessing strategy & action plans.",
+      "summary": "Update of the 2019 national AI strategy, setting the vision and goals to 2030 in seven interlinked areas: AI in research, development and innovation; education and expertise; skills and labour-market impacts; ethical and legal aspects (including supervisory capacity for EU AI Act enforcement and soft-law tools); security aspects; AI in industry and business; and AI in public administration and public services. It defines the institutional framework, with the Ministry of Industry and Trade as coordinator and the AI Committee (Výbor pro umělou inteligenci, a working group of the Committee for the Digital Economy and Society) overseeing implementation through annual action plans within the Digital Czechia implementation plans.",
+      "ai_governance_relevance": "Current national AI strategy; anchors annual NAIS action plans and Czech AI Act implementation work.",
       "source_url": "https://vlada.gov.cz/assets/evropske-zalezitosti/umela-inteligence/Umela_inteligence/Narodni-strategie-umele-intelience-CR-2030.pdf",
       "official_pdf_url": "https://vlada.gov.cz/assets/evropske-zalezitosti/umela-inteligence/Umela_inteligence/Narodni-strategie-umele-intelience-CR-2030.pdf",
-      "official_webpage_url": null,
-      "language": null,
+      "official_webpage_url": "https://mpo.gov.cz/cz/podnikani/digitalni-ekonomika/umela-inteligence/",
+      "source_kind": "official_document",
+      "document_access_type": "original_government_document",
+      "language": "cs",
+      "supersedes": [
+        "i-8604967408d4"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-06",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "source_id": "s-fff7c918aabd",
+      "organization_id": "o-6f334397544a",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full 79-page PDF read (pdftotext); approval by resolution No. 520 of 24 July 2024 confirmed on the Ministry of Industry and Trade AI page (mpo.gov.cz)"
+    },
+    {
+      "id": "i-8604967408d4",
+      "official_title": "Národní strategie umělé inteligence v České republice",
+      "english_title": "National Artificial Intelligence Strategy of the Czech Republic (2019)",
+      "jurisdiction_id": "CZE",
+      "issuing_authority": "Government of the Czech Republic (approved by resolution No. 314 of 6 May 2019); prepared by the Ministry of Industry and Trade",
+      "publisher_name": "Ministry of Industry and Trade",
+      "authority_type": "government",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "historical",
+        "strategy"
+      ],
+      "category": "historical",
+      "subcategory": null,
+      "legal_status": "national_strategy",
+      "lifecycle": "superseded",
+      "publication_date": "2019-05-06",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Superseded by the National AI Strategy of the Czech Republic 2030 (government resolution No. 520 of 24 July 2024). The approval by government resolution No. 314 of 6 May 2019 is stated in NAIS 2030; the Ministry of Industry and Trade page says the strategy was approved in May 2019.",
+      "scope": "Czech Republic (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "The Czech Republic's first national AI strategy, with the vision of making Czechia a 'model country for Europe' in AI, built on industry, defence and security. Its seven chapters covered research and development, investment and financing of the AI ecosystem, AI in industry and services, education and human capital, labour-market impacts, and legal and societal aspects including ethics and consumer protection. It led to the creation of the AI Committee to coordinate implementation.",
+      "ai_governance_relevance": "First national AI strategy; superseded by NAIS 2030 in July 2024.",
+      "source_url": "https://www.mpo.gov.cz/assets/cz/podnikani/2023/1/NAIS_kveten_2019.pdf",
+      "official_pdf_url": "https://www.mpo.gov.cz/assets/cz/podnikani/2023/1/NAIS_kveten_2019.pdf",
+      "official_webpage_url": "https://mpo.gov.cz/cz/podnikani/digitalni-ekonomika/umela-inteligence/",
+      "source_kind": "official_document",
+      "document_access_type": "original_government_document",
+      "language": "cs",
+      "supersedes": [],
+      "superseded_by": [
+        "i-10090dfb27ef"
+      ],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "source_id": "s-64d740241d4b",
+      "organization_id": "o-2b80604b3945",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full 54-page PDF read (pdftotext); approval date (resolution No. 314 of 6 May 2019) taken from NAIS 2030 and the Ministry of Industry and Trade AI page"
+    },
+    {
+      "id": "i-758f79c71863",
+      "official_title": "Zákon č. 230/2025 Sb., kterým se mění zákon č. 273/2008 Sb., o Policii České republiky, ve znění pozdějších předpisů, a některé další zákony",
+      "english_title": "Act No. 230/2025 Coll. amending Act No. 273/2008 Coll. on the Police of the Czech Republic and certain other acts (incl. new §§ 39a-39c of the Personal Data Processing Act on 'isolated' real-time remote biometric identification AI systems at international airports)",
+      "jurisdiction_id": "CZE",
+      "issuing_authority": "Parliament of the Czech Republic",
+      "publisher_name": "Ministry of the Interior (Collection of Laws, e-Sbírka)",
+      "authority_type": "legislature",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "binding-law",
+        "data-privacy",
+        "public-sector",
+        "risk-assurance"
+      ],
+      "category": "binding-law",
+      "subcategory": null,
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2025-07-10",
+      "effective_date": "2025-08-01",
+      "last_amended_date": null,
+      "current_status": "In force from 1 August 2025 (most provisions; a few unrelated points from 1 July 2027). Promulgated in the Collection of Laws on 10 July 2025. The Office for Personal Data Protection reports that, following this amendment, the Police facial-recognition system at Prague airport was deactivated on 1 August 2025 and its biometric data deleted.",
+      "scope": "Czech Republic (national)",
+      "sectors": [
+        "justice",
+        "public administration",
+        "transport"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Omnibus police law of 11 June 2025 whose Article IX amends Act No. 110/2019 Coll. by inserting §§ 39a-39c on an 'isolated system', defined as an AI system for real-time remote biometric identification under Art. 3(42) of the EU AI Act, used by a law-enforcement authority only within the premises of an international airport. Use is limited to the AI Act Art. 5 objectives (searching for victims and missing persons, suspects of Annex II offences punishable by at least 4 years, preventing imminent threats to life and terrorist attacks), requires prior written authorisation by a High Court judge for up to 12 months (with a fundamental-rights impact assessment summary and EU database registration), a 24-hour notification to a supervising officer for each person entered in the reference database, deletion after 90 days and a report to the Office for Personal Data Protection within 72 hours of first use.",
+      "ai_governance_relevance": "First Czech statute with explicit AI Act-based rules; national legal basis for law-enforcement real-time biometric identification (AI Act Art. 5(5)).",
+      "source_url": "https://www.e-sbirka.cz/sb/2025/230",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.e-sbirka.cz/sb/2025/230",
+      "source_kind": "legislation_portal",
+      "document_access_type": "official_publication_or_full_text_page",
+      "language": "cs",
       "supersedes": [],
       "superseded_by": [],
       "related_instruments": [],
       "regional_applicability": [],
-      "verification_date": "2026-10-06",
-      "verification_level": "primary_source_located",
-      "metadata_gaps": [
-        "Issuing authority",
-        "Publication/effective dates",
-        "Current legal status",
-        "Precise applicability",
-        "Version history",
-        "Authority type",
-        "Government level",
-        "Publication date",
-        "Effective date",
-        "Last amended date",
-        "Document language"
-      ],
-      "source_kind": "official_document",
-      "evidence_reference": "turn11search11",
-      "link_status": "reachable",
-      "document_access_type": "original_government_document",
-      "source_id": "s-fff7c918aabd",
-      "organization_id": "o-6f334397544a",
-      "lifecycle": "unverified",
-      "first_recorded": "2026-10-06",
+      "metadata_gaps": [],
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
       "last_changed": null,
-      "subnational_unit": null
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "source_id": "s-31875c3769d0",
+      "organization_id": "o-30e7176b3b90",
+      "evidence_reference": "curl (browser user agent, --max-time 60): e-Sbírka JSON service read (document metadata and all 392 text fragments of the promulgated text); Article IX (§§ 39a-39c) and the effectiveness clause (Article XI) read"
+    },
+    {
+      "id": "i-f0817420998c",
+      "official_title": "Zákon č. 110/2019 Sb., o zpracování osobních údajů",
+      "english_title": "Act No. 110/2019 Coll. on the Processing of Personal Data",
+      "jurisdiction_id": "CZE",
+      "issuing_authority": "Parliament of the Czech Republic",
+      "publisher_name": "Ministry of the Interior (Collection of Laws, e-Sbírka)",
+      "authority_type": "legislature",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "category": "data-privacy",
+      "subcategory": null,
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2019-04-24",
+      "effective_date": "2019-04-24",
+      "last_amended_date": null,
+      "current_status": "In force since its promulgation on 24 April 2019; amended several times, including by Act No. 230/2025 Coll. (AI biometric identification at airports, from 1 August 2025).",
+      "scope": "Czech Republic (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "National data protection law of 12 March 2019 that implements the GDPR, transposes the Law Enforcement Directive (EU) 2016/680 and establishes the Office for Personal Data Protection. § 39 permits a competent law-enforcement authority to take action affecting a data subject's rights based solely on automated processing only where another law expressly provides for it; it also governs data protection impact assessments and prior consultation (§§ 37-38). Since 1 August 2025 (Act No. 230/2025 Coll.) §§ 39a-39c regulate real-time remote biometric identification AI systems at international airports.",
+      "ai_governance_relevance": "Data protection law governing AI training and use; contains automated-decision and (since 2025) AI biometric-identification rules.",
+      "source_url": "https://www.e-sbirka.cz/sb/2019/110",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.e-sbirka.cz/sb/2019/110",
+      "source_kind": "legislation_portal",
+      "document_access_type": "official_publication_or_full_text_page",
+      "language": "cs",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "source_id": "s-78c9229a8af4",
+      "organization_id": "o-30e7176b3b90",
+      "evidence_reference": "curl (browser user agent, --max-time 60): e-Sbírka JSON service read (metadata and 587 text fragments of the promulgated text; § 39 and effectiveness clause checked)"
+    },
+    {
+      "id": "i-d8acf4aaf1bd",
+      "official_title": "Policie ČR (UOOU-04892/21) - Kamerový systém na letišti Václava Havla Praha",
+      "english_title": "Police of the Czech Republic (UOOU-04892/21): camera system at Václav Havel Airport Prague - inspection findings on automated facial recognition",
+      "jurisdiction_id": "CZE",
+      "issuing_authority": "Office for Personal Data Protection",
+      "publisher_name": "Office for Personal Data Protection",
+      "authority_type": "data_protection_authority",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "data-privacy",
+        "public-sector"
+      ],
+      "category": "data-privacy",
+      "subcategory": null,
+      "legal_status": "binding_regulation",
+      "lifecycle": "adopted",
+      "publication_date": "2025",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Inspection concluded in 2025 (file UOOU-04892/21); the Office's published summary gives only the year. The Police informed the Office that the system was deactivated on 1 August 2025 and all biometric data deleted, following the amendment of Act No. 110/2019 Coll. by Act No. 230/2025 Coll.",
+      "scope": "Czech Republic (national)",
+      "sectors": [
+        "justice",
+        "transport"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Inspection, concluded in 2025, of the Police's automated biometric facial-recognition system at Prague airport, which compared faces captured by cameras with a reference database of 'persons of interest'. The Office found the processing breached Art. 10 of the Law Enforcement Directive because the Police Act gives no explicit legal basis for processing biometric data for unique identification, and that biometric indexes of all persons were kept longer than necessary (this second finding was later set aside on the Police's objections); the President of the Office confirmed the other findings.",
+      "ai_governance_relevance": "First Czech regulator finding on police use of AI facial recognition; led to the system's deactivation when the 2025 statutory regime took effect.",
+      "source_url": "https://uoou.gov.cz/cinnost/ochrana-osobnich-udaju/ukoncene-kontroly/kontroly-za-rok-2025/kontrolni-cinnost-v-oblasti-ochrany-osobnich-udaju-2025/policie-cr-uoou-0489221",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://uoou.gov.cz/cinnost/ochrana-osobnich-udaju/ukoncene-kontroly/kontroly-za-rok-2025/kontrolni-cinnost-v-oblasti-ochrany-osobnich-udaju-2025/policie-cr-uoou-0489221",
+      "source_kind": "official_publication",
+      "document_access_type": "official_publication_or_full_text_page",
+      "language": "cs",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [
+        "exact date of inspection conclusion not stated (year only)"
+      ],
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "source_id": "s-678cd1c08f7d",
+      "organization_id": "o-6df7c64fb902",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full inspection summary page read on uoou.gov.cz (2025 inspections list)"
+    },
+    {
+      "id": "i-64e63b680e90",
+      "official_title": "ÚOOÚ k biometrické identifikaci nežádoucích osob na fotbalových stadionech",
+      "english_title": "Office for Personal Data Protection statement on biometric identification of unwanted persons at football stadiums",
+      "jurisdiction_id": "CZE",
+      "issuing_authority": "Office for Personal Data Protection",
+      "publisher_name": "Office for Personal Data Protection",
+      "authority_type": "data_protection_authority",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "data-privacy",
+        "sectoral"
+      ],
+      "category": "data-privacy",
+      "subcategory": null,
+      "legal_status": "regulatory_opinion",
+      "lifecycle": "published",
+      "publication_date": "2026-05-20",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Published on uoou.gov.cz on 20 May 2026 as a guidance statement; not a binding decision.",
+      "scope": "Czech Republic (national)",
+      "sectors": [
+        "sport",
+        "private security"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Statement from the Office's consultation practice on camera systems that process biometric data (facial characteristics) to keep banned persons out of football stadiums. It distinguishes ordinary CCTV (legitimate interest under GDPR Art. 6(1)(f)) from biometric identification, which is special-category processing prohibited by Art. 9(1) GDPR unless an Art. 9(2) exception applies, and sets out the strict conditions and risks (permanence of biometric data, misuse) that operators must assess before deploying such systems.",
+      "ai_governance_relevance": "Regulator guidance on biometric (facial recognition) systems in private venues.",
+      "source_url": "https://uoou.gov.cz/novinky/vse/uoou-k-biometricke-identifikaci-nezadoucich-osob-na-fotbalovych-stadionech",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://uoou.gov.cz/novinky/vse/uoou-k-biometricke-identifikaci-nezadoucich-osob-na-fotbalovych-stadionech",
+      "source_kind": "official_publication",
+      "document_access_type": "official_publication_or_full_text_page",
+      "language": "cs",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "source_id": "s-60a051acd30e",
+      "organization_id": "o-6df7c64fb902",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full statement page read on uoou.gov.cz (publication date 20.5.2026 shown on page)"
+    },
+    {
+      "id": "i-49afc05c595a",
+      "official_title": "Metodický materiál k usnesení č. 537 z 9. července 2025 o zákazu produktů, aplikací a služeb DeepSeek",
+      "english_title": "Methodological material on government resolution No. 537 of 9 July 2025 banning DeepSeek products, applications and services",
+      "jurisdiction_id": "CZE",
+      "issuing_authority": "National Cyber and Information Security Agency (NÚKIB)",
+      "publisher_name": "National Cyber and Information Security Agency",
+      "authority_type": "executive_agency",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "public-sector",
+        "cyber-security",
+        "generative-ai"
+      ],
+      "category": "public-sector",
+      "subcategory": null,
+      "legal_status": "administrative_guideline",
+      "lifecycle": "published",
+      "publication_date": "2025-07-09",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Version 1.0 dated 9 July 2025 (listed on nukib.gov.cz on 14 July 2025). The underlying government resolution No. 537 of 9 July 2025 is binding on state administration bodies; its own text was not found on an official site (see leads).",
+      "scope": "Czech Republic (national)",
+      "sectors": [
+        "public administration"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "NÚKIB guidance implementing government resolution No. 537 of 9 July 2025, which requires ministries, offices and other state administration bodies not to use products, applications, solutions, websites and web services (including the API) of the Chinese AI company DeepSeek in exercising their powers or on state-owned devices. It explains the security grounds (weak security, storage of user data in China and Russia, subjection to Chinese law enabling state access, links of the parent company to the Communist Party of China), defines the bodies covered and gives practical steps for blocking and removal, with a published list of DeepSeek network indicators.",
+      "ai_governance_relevance": "Public-sector ban on a generative-AI provider on cyber-security grounds.",
+      "source_url": "https://nukib.gov.cz/download/publikace/podpurne_materialy/Metodicky%20material%20k%20usneseni_DeepSeek.pdf",
+      "official_pdf_url": "https://nukib.gov.cz/download/publikace/podpurne_materialy/Metodicky%20material%20k%20usneseni_DeepSeek.pdf",
+      "official_webpage_url": "https://nukib.gov.cz/cs/infoservis/dokumenty-a-publikace/podpurne-materialy/",
+      "source_kind": "official_document",
+      "document_access_type": "original_government_document",
+      "language": "cs",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "source_id": "s-bf925d65cea7",
+      "organization_id": "o-3eb7e80beb7e",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full 9-page PDF read (pdftotext); listing date checked on NÚKIB supporting-materials page"
+    },
+    {
+      "id": "i-81a99e975cf0",
+      "official_title": "Nové AI frontier modely významně navyšují schopnost autonomně detekovat a zneužívat zranitelnosti: zneužití škodlivými aktéry je otázkou času (situační report)",
+      "english_title": "New AI frontier models significantly increase the ability to autonomously detect and exploit vulnerabilities: misuse by malicious actors is a matter of time (situation report)",
+      "jurisdiction_id": "CZE",
+      "issuing_authority": "National Cyber and Information Security Agency (NÚKIB)",
+      "publisher_name": "National Cyber and Information Security Agency",
+      "authority_type": "executive_agency",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "cyber-security",
+        "generative-ai",
+        "risk-assurance"
+      ],
+      "category": "cyber-security",
+      "subcategory": null,
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2026-06-18",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Dated Brno, 18 June 2026; listed in NÚKIB analyses on 29 June 2026. Analytical guidance, not binding.",
+      "scope": "Czech Republic (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "NÚKIB situation report assessing cybersecurity-focused frontier AI models (citing Anthropic's Mythos, April 2026) that can find, validate and chain software vulnerabilities at scale. It judges it almost certain that such capabilities will reach state and non-state attackers and very likely that they will shorten the time between discovery and exploitation, raising incident numbers in Czechia. It recommends effective vulnerability reporting and handling, rapid prioritisation of the riskiest weaknesses and, later, use of such tools to test one's own infrastructure.",
+      "ai_governance_relevance": "National cyber authority's AI threat assessment and recommendations.",
+      "source_url": "https://nukib.gov.cz/download/publikace/analyzy/AI%20frontier%20modely%20.pdf",
+      "official_pdf_url": "https://nukib.gov.cz/download/publikace/analyzy/AI%20frontier%20modely%20.pdf",
+      "official_webpage_url": "https://nukib.gov.cz/cs/infoservis/dokumenty-a-publikace/analyzy/",
+      "source_kind": "official_document",
+      "document_access_type": "original_government_document",
+      "language": "cs",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "source_id": "s-96f891a25145",
+      "organization_id": "o-3eb7e80beb7e",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full 5-page PDF read (pdftotext); listing date checked on NÚKIB analyses page"
+    },
+    {
+      "id": "i-71f1ac2877e3",
+      "official_title": "Etické a odpovědné využívání AI ve veřejné správě - Průvodce pro úřady a další organizace veřejné správy",
+      "english_title": "Ethical and Responsible Use of AI in Public Administration - Guide for authorities and other public administration organisations",
+      "jurisdiction_id": "CZE",
+      "issuing_authority": "Section for the State Service, Office of the Government of the Czech Republic (guarantor), with an author team from the Czech Metrology Institute, Czech Telecommunication Office, Digital and Information Agency, Ministry of Industry and Trade, Ministry of the Interior, NÚKIB and others",
+      "publisher_name": "Office of the Government of the Czech Republic",
+      "authority_type": "executive",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "public-sector",
+        "ethics",
+        "generative-ai",
+        "risk-assurance"
+      ],
+      "category": "public-sector",
+      "subcategory": null,
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2026-02",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "1st edition, February 2026 (only the month is stated in the document). Non-binding guidance; described as a 'living' document to be updated.",
+      "scope": "Czech Republic (national)",
+      "sectors": [
+        "public administration"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "First edition (February 2026, legal status as of February 2026) of a 45-page guide for civil servants, managers and methodologists on using AI in public administration. Part I sets AI basics and a 'minimum standard' for ethical and responsible AI use built on principles linked to the 2023 Code of Ethics of State Employees (AI as a tool, not a replacement for staff); Part II covers the legal framework (EU AI Act, GDPR) and safe work, quality assurance and checking of outputs; Part III covers AI governance, roles and responsibilities in public bodies, including internal rules for introducing and operating AI. It states that it is not a binding regulation but a support for organisations of all sizes.",
+      "ai_governance_relevance": "Central-government guidance on public-sector AI use, ethics and governance.",
+      "source_url": "https://vlada.gov.cz/assets/Statni_sluzba/Dokumenty/Ostatni_dokumenty/Pruvodce-Eticke-a-odpovedne-vyuzivani-AI-ve-VS.pdf",
+      "official_pdf_url": "https://vlada.gov.cz/assets/Statni_sluzba/Dokumenty/Ostatni_dokumenty/Pruvodce-Eticke-a-odpovedne-vyuzivani-AI-ve-VS.pdf",
+      "official_webpage_url": null,
+      "source_kind": "official_document",
+      "document_access_type": "original_government_document",
+      "language": "cs",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "source_id": "s-0696e922fd15",
+      "organization_id": "o-9ec96d0adfbd",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full 45-page PDF read (pdftotext); edition date 'únor 2026' on title and imprint pages"
+    },
+    {
+      "id": "i-ada4976b85b0",
+      "official_title": "Instrukce č. 11/2025 Ministerstva spravedlnosti ze dne 9. 12. 2025, č. j. 182/2025-OI-SP, kterou se mění instrukce č. 5/2022 o zajištění bezpečnosti informací v prostředí informačních a komunikačních technologií resortu spravedlnosti",
+      "english_title": "Ministry of Justice Instruction No. 11/2025 of 9 December 2025 amending Instruction No. 5/2022 on information security in the ICT environment of the justice sector (adds Policy No. 25 on the use of artificial intelligence)",
+      "jurisdiction_id": "CZE",
+      "issuing_authority": "Ministry of Justice",
+      "publisher_name": "Ministry of Justice",
+      "authority_type": "ministry",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "public-sector",
+        "generative-ai",
+        "cyber-security",
+        "sectoral"
+      ],
+      "category": "public-sector",
+      "subcategory": null,
+      "legal_status": "administrative_policy_mandatory_in_scope",
+      "lifecycle": "in_force",
+      "publication_date": "2025-12-09",
+      "effective_date": "2025-12-15",
+      "last_amended_date": null,
+      "current_status": "In force from 15 December 2025 (Article II); signed by the Minister of Justice.",
+      "scope": "Czech Republic (national)",
+      "sectors": [
+        "justice"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Internal instruction that adds Policy No. 25 'Use of Artificial Intelligence' to the justice sector's information-security rules, binding on all staff of the justice sector (and to be reflected in contracts with partners). It defines AI platforms and tools, allows only AI tools approved by the cyber security manager (currently only Microsoft Copilot on the ministry's secured tenant, with data kept in the EU and not used for training), sets data-minimisation rules for prompts, permits only certain data classification levels to be entered (entering 'especially sensitive' data is prohibited), and bans unapproved AI tools except by reasoned written exception.",
+      "ai_governance_relevance": "Binding sector-wide AI use policy for the justice sector (ministry and justice bodies).",
+      "source_url": "https://msp.gov.cz/documents/d/msp/instrukce-11_2025-docx",
+      "official_pdf_url": null,
+      "official_webpage_url": null,
+      "source_kind": "official_document",
+      "document_access_type": "original_government_document",
+      "language": "cs",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "source_id": "s-cbf39e50ca95",
+      "organization_id": "o-c7e87e28a97c",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full .docx read (document.xml text, incl. Policy No. 25 and the effectiveness clause)"
+    },
+    {
+      "id": "i-a67fcf18bd36",
+      "official_title": "Zákon č. 270/2025 Sb., kterým se mění zákon č. 40/2009 Sb., trestní zákoník, ve znění pozdějších předpisů, zákon č. 141/1961 Sb., o trestním řízení soudním (trestní řád), ve znění pozdějších předpisů, a další související zákony",
+      "english_title": "Act No. 270/2025 Coll. amending the Criminal Code, the Criminal Procedure Code and related acts (new deepfake offences: § 181(2) and § 191a of the Criminal Code)",
+      "jurisdiction_id": "CZE",
+      "issuing_authority": "Parliament of the Czech Republic",
+      "publisher_name": "Ministry of the Interior (Collection of Laws, e-Sbírka)",
+      "authority_type": "legislature",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "binding-law",
+        "generative-ai"
+      ],
+      "category": "binding-law",
+      "subcategory": null,
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2025-08-05",
+      "effective_date": "2026-01-01",
+      "last_amended_date": null,
+      "current_status": "Promulgated 5 August 2025; the Criminal Code provisions (Art. I, incl. points 60-63 and 73) take effect on 1 January 2026. The provisions are technology-neutral (the text does not mention AI) but target realistic fabricated depictions of real persons.",
+      "scope": "Czech Republic (national)",
+      "sectors": [
+        "justice",
+        "media"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Criminal-law amendment of 3 July 2025 that, among many changes, creates two offences targeting deepfakes. New § 181(2) punishes (up to two years, more if spread via a public computer network) whoever, intending to cause serious harm to another's rights, produces or disseminates a work that without authorisation depicts or uses another person's likeness or personal expression and appears genuine although the perpetrator knows it is not. New § 191a ('misuse of identity to produce pornography and its dissemination') punishes producing or distributing pornographic works depicting or using a person who did not consent, with higher penalties for online dissemination.",
+      "ai_governance_relevance": "Criminal offences for harmful synthetic media (deepfakes), including AI-generated pornography.",
+      "source_url": "https://www.e-sbirka.cz/sb/2025/270",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.e-sbirka.cz/sb/2025/270",
+      "source_kind": "legislation_portal",
+      "document_access_type": "official_publication_or_full_text_page",
+      "language": "cs",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "source_id": "s-f58d0389f9dd",
+      "organization_id": "o-30e7176b3b90",
+      "evidence_reference": "curl (browser user agent, --max-time 60): e-Sbírka JSON service read (promulgated text of Act No. 270/2025 Coll. and the consolidated Criminal Code as of 1 January 2026; §§ 181(2) and 191a and Article XLV effectiveness checked)"
     }
   ],
   "organizations": [
     {
       "id": "o-6f334397544a",
       "jurisdiction_id": "CZE",
-      "name": "vlada.gov.cz",
-      "publisher_name_verified": false,
-      "ai_governance_role": "Publisher of listed official material; complete institutional mandate and statutory responsibilities require review.",
-      "source_url": "https://vlada.gov.cz/assets/evropske-zalezitosti/umela-inteligence/Umela_inteligence/Narodni-strategie-umele-intelience-CR-2030.pdf",
-      "authority_type": null,
-      "government_level": null
+      "name": "Government of the Czech Republic",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Approves the national AI strategy (resolution No. 314/2019 and No. 520/2024) and its annual action plans within the Digital Czechia implementation plans; resolution No. 537 of 9 July 2025 bans DeepSeek products in state administration.",
+      "source_url": "https://vlada.gov.cz/",
+      "authority_type": "government",
+      "government_level": "national"
+    },
+    {
+      "id": "o-2b80604b3945",
+      "jurisdiction_id": "CZE",
+      "name": "Ministry of Industry and Trade",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Lead ministry (gestor) for the National AI Strategy 2030 and, since 28 May 2025, for the EU AI Act; hosts the AI Committee (Výbor pro umělou inteligenci) and prepared the draft national AI Act.",
+      "source_url": "https://mpo.gov.cz/cz/podnikani/digitalni-ekonomika/umela-inteligence/",
+      "authority_type": "ministry",
+      "government_level": "national"
+    },
+    {
+      "id": "o-30e7176b3b90",
+      "jurisdiction_id": "CZE",
+      "name": "Parliament of the Czech Republic",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Enacts laws, including Act No. 230/2025 Coll., which regulates police use of real-time remote biometric identification AI systems at international airports.",
+      "source_url": "https://www.psp.cz/",
+      "authority_type": "legislature",
+      "government_level": "national"
+    },
+    {
+      "id": "o-6df7c64fb902",
+      "jurisdiction_id": "CZE",
+      "name": "Office for Personal Data Protection",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Data protection supervisor; fundamental-rights body under Art. 77 of the EU AI Act; receives reports on use of airport real-time biometric identification systems under Act No. 110/2019 Coll.; issues opinions and inspection findings on facial recognition.",
+      "source_url": "https://uoou.gov.cz/",
+      "authority_type": "data_protection_authority",
+      "government_level": "national"
+    },
+    {
+      "id": "o-3eb7e80beb7e",
+      "jurisdiction_id": "CZE",
+      "name": "National Cyber and Information Security Agency",
+      "publisher_name_verified": true,
+      "ai_governance_role": "National cyber security authority; issued the methodological material implementing the government DeepSeek ban and threat analyses on AI frontier models.",
+      "source_url": "https://nukib.gov.cz/",
+      "authority_type": "executive_agency",
+      "government_level": "national"
+    },
+    {
+      "id": "o-9ec96d0adfbd",
+      "jurisdiction_id": "CZE",
+      "name": "Office of the Government of the Czech Republic",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Its Section for the State Service is guarantor of the February 2026 guide on ethical and responsible use of AI in public administration; the Office led EU negotiations on the AI Act until 2025.",
+      "source_url": "https://vlada.gov.cz/",
+      "authority_type": "executive",
+      "government_level": "national"
+    },
+    {
+      "id": "o-c7e87e28a97c",
+      "jurisdiction_id": "CZE",
+      "name": "Ministry of Justice",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Issues internal instructions for the justice sector, including Instruction No. 11/2025 adding an AI use policy to the sector's ICT security rules.",
+      "source_url": "https://msp.gov.cz/",
+      "authority_type": "ministry",
+      "government_level": "national"
     }
   ],
   "sources": [
@@ -96,31 +685,312 @@
         "CZE"
       ],
       "source_institutions": [
-        "vlada.gov.cz"
+        "Government of the Czech Republic"
       ],
       "instrument_ids": [
         "i-10090dfb27ef"
       ],
       "categories_reviewed": [
-        "strategy"
+        "strategy",
+        "government-governance",
+        "ethics",
+        "public-sector"
       ],
-      "date_reviewed": "2026-10-06",
-      "checked_date": "2026-10-06",
-      "check_method": "GET; first 1 MiB; 14-second timeout",
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full 79-page PDF read (pdftotext); approval by resolution No. 520 of 24 July 2024 confirmed on the Ministry of Industry and Trade AI page (mpo.gov.cz)",
       "http_status": 200,
       "final_url": "https://vlada.gov.cz/assets/evropske-zalezitosti/umela-inteligence/Umela_inteligence/Narodni-strategie-umele-intelience-CR-2030.pdf",
       "link_status": "reachable",
       "page_title": null,
-      "document_language": null,
+      "document_language": "cs",
       "error": null,
       "content_type": "application/pdf"
+    },
+    {
+      "id": "s-64d740241d4b",
+      "url": "https://www.mpo.gov.cz/assets/cz/podnikani/2023/1/NAIS_kveten_2019.pdf",
+      "jurisdiction_ids": [
+        "CZE"
+      ],
+      "source_institutions": [
+        "Ministry of Industry and Trade"
+      ],
+      "instrument_ids": [
+        "i-8604967408d4"
+      ],
+      "categories_reviewed": [
+        "historical",
+        "strategy"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full 54-page PDF read (pdftotext); approval date (resolution No. 314 of 6 May 2019) taken from NAIS 2030 and the Ministry of Industry and Trade AI page",
+      "http_status": 200,
+      "final_url": "https://www.mpo.gov.cz/assets/cz/podnikani/2023/1/NAIS_kveten_2019.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "cs",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-31875c3769d0",
+      "url": "https://www.e-sbirka.cz/sb/2025/230",
+      "jurisdiction_ids": [
+        "CZE"
+      ],
+      "source_institutions": [
+        "Ministry of the Interior (Collection of Laws, e-Sbírka)"
+      ],
+      "instrument_ids": [
+        "i-758f79c71863"
+      ],
+      "categories_reviewed": [
+        "binding-law",
+        "data-privacy",
+        "public-sector",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): e-Sbírka JSON service read (document metadata and all 392 text fragments of the promulgated text); Article IX (§§ 39a-39c) and the effectiveness clause (Article XI) read",
+      "http_status": 200,
+      "final_url": "https://www.e-sbirka.cz/sb/2025/230",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "cs",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-78c9229a8af4",
+      "url": "https://www.e-sbirka.cz/sb/2019/110",
+      "jurisdiction_ids": [
+        "CZE"
+      ],
+      "source_institutions": [
+        "Ministry of the Interior (Collection of Laws, e-Sbírka)"
+      ],
+      "instrument_ids": [
+        "i-f0817420998c"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): e-Sbírka JSON service read (metadata and 587 text fragments of the promulgated text; § 39 and effectiveness clause checked)",
+      "http_status": 200,
+      "final_url": "https://www.e-sbirka.cz/sb/2019/110",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "cs",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-678cd1c08f7d",
+      "url": "https://uoou.gov.cz/cinnost/ochrana-osobnich-udaju/ukoncene-kontroly/kontroly-za-rok-2025/kontrolni-cinnost-v-oblasti-ochrany-osobnich-udaju-2025/policie-cr-uoou-0489221",
+      "jurisdiction_ids": [
+        "CZE"
+      ],
+      "source_institutions": [
+        "Office for Personal Data Protection"
+      ],
+      "instrument_ids": [
+        "i-d8acf4aaf1bd"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full inspection summary page read on uoou.gov.cz (2025 inspections list)",
+      "http_status": 200,
+      "final_url": "https://uoou.gov.cz/cinnost/ochrana-osobnich-udaju/ukoncene-kontroly/kontroly-za-rok-2025/kontrolni-cinnost-v-oblasti-ochrany-osobnich-udaju-2025/policie-cr-uoou-0489221",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "cs",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-60a051acd30e",
+      "url": "https://uoou.gov.cz/novinky/vse/uoou-k-biometricke-identifikaci-nezadoucich-osob-na-fotbalovych-stadionech",
+      "jurisdiction_ids": [
+        "CZE"
+      ],
+      "source_institutions": [
+        "Office for Personal Data Protection"
+      ],
+      "instrument_ids": [
+        "i-64e63b680e90"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "sectoral"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full statement page read on uoou.gov.cz (publication date 20.5.2026 shown on page)",
+      "http_status": 200,
+      "final_url": "https://uoou.gov.cz/novinky/vse/uoou-k-biometricke-identifikaci-nezadoucich-osob-na-fotbalovych-stadionech",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "cs",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-bf925d65cea7",
+      "url": "https://nukib.gov.cz/download/publikace/podpurne_materialy/Metodicky%20material%20k%20usneseni_DeepSeek.pdf",
+      "jurisdiction_ids": [
+        "CZE"
+      ],
+      "source_institutions": [
+        "National Cyber and Information Security Agency"
+      ],
+      "instrument_ids": [
+        "i-49afc05c595a"
+      ],
+      "categories_reviewed": [
+        "public-sector",
+        "cyber-security",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full 9-page PDF read (pdftotext); listing date checked on NÚKIB supporting-materials page",
+      "http_status": 200,
+      "final_url": "https://nukib.gov.cz/download/publikace/podpurne_materialy/Metodicky%20material%20k%20usneseni_DeepSeek.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "cs",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-96f891a25145",
+      "url": "https://nukib.gov.cz/download/publikace/analyzy/AI%20frontier%20modely%20.pdf",
+      "jurisdiction_ids": [
+        "CZE"
+      ],
+      "source_institutions": [
+        "National Cyber and Information Security Agency"
+      ],
+      "instrument_ids": [
+        "i-81a99e975cf0"
+      ],
+      "categories_reviewed": [
+        "cyber-security",
+        "generative-ai",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full 5-page PDF read (pdftotext); listing date checked on NÚKIB analyses page",
+      "http_status": 200,
+      "final_url": "https://nukib.gov.cz/download/publikace/analyzy/AI%20frontier%20modely%20.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "cs",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-0696e922fd15",
+      "url": "https://vlada.gov.cz/assets/Statni_sluzba/Dokumenty/Ostatni_dokumenty/Pruvodce-Eticke-a-odpovedne-vyuzivani-AI-ve-VS.pdf",
+      "jurisdiction_ids": [
+        "CZE"
+      ],
+      "source_institutions": [
+        "Office of the Government of the Czech Republic"
+      ],
+      "instrument_ids": [
+        "i-71f1ac2877e3"
+      ],
+      "categories_reviewed": [
+        "public-sector",
+        "ethics",
+        "generative-ai",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full 45-page PDF read (pdftotext); edition date 'únor 2026' on title and imprint pages",
+      "http_status": 200,
+      "final_url": "https://vlada.gov.cz/assets/Statni_sluzba/Dokumenty/Ostatni_dokumenty/Pruvodce-Eticke-a-odpovedne-vyuzivani-AI-ve-VS.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "cs",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-cbf39e50ca95",
+      "url": "https://msp.gov.cz/documents/d/msp/instrukce-11_2025-docx",
+      "jurisdiction_ids": [
+        "CZE"
+      ],
+      "source_institutions": [
+        "Ministry of Justice"
+      ],
+      "instrument_ids": [
+        "i-ada4976b85b0"
+      ],
+      "categories_reviewed": [
+        "public-sector",
+        "generative-ai",
+        "cyber-security",
+        "sectoral"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full .docx read (document.xml text, incl. Policy No. 25 and the effectiveness clause)",
+      "http_status": 200,
+      "final_url": "https://msp.gov.cz/documents/d/msp/instrukce-11_2025-docx",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "cs",
+      "error": null,
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    },
+    {
+      "id": "s-f58d0389f9dd",
+      "url": "https://www.e-sbirka.cz/sb/2025/270",
+      "jurisdiction_ids": [
+        "CZE"
+      ],
+      "source_institutions": [
+        "Ministry of the Interior (Collection of Laws, e-Sbírka)"
+      ],
+      "instrument_ids": [
+        "i-a67fcf18bd36"
+      ],
+      "categories_reviewed": [
+        "binding-law",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): e-Sbírka JSON service read (promulgated text of Act No. 270/2025 Coll. and the consolidated Criminal Code as of 1 January 2026; §§ 181(2) and 191a and Article XLV effectiveness checked)",
+      "http_status": 200,
+      "final_url": "https://www.e-sbirka.cz/sb/2025/270",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "cs",
+      "error": null,
+      "content_type": "text/html"
     }
   ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "CZE",
     "country": "Czechia",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -133,56 +1003,420 @@
       "transparency"
     ],
     "categories_with_findings": [
-      "strategy"
-    ],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
       "binding-law",
-      "strategy",
-      "government-governance",
-      "ethics",
-      "risk-assurance",
-      "public-sector",
-      "procurement",
       "cyber-security",
       "data-privacy",
+      "ethics",
+      "generative-ai",
+      "government-governance",
+      "historical",
+      "public-sector",
+      "risk-assurance",
+      "sectoral",
+      "strategy"
+    ],
+    "categories_where_no_material_was_found": [
+      "procurement",
       "transparency",
       "standards",
       "sandbox",
       "index-readiness",
-      "sectoral",
-      "generative-ai",
       "drafts",
-      "international",
-      "historical"
+      "international"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Czechia \"umělá inteligence\" (strategie OR regulace OR etika) government ministry official",
       "Czechia \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Czechia government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Czechia \"umělá inteligence\" cybersecurity authority secure development safety guidelines",
-      "Czechia privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Czechia privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "Národní strategie umělé inteligence ČR 2030 usnesení vlády",
+      "zákon o umělé inteligenci Český telekomunikační úřad návrh 2025 2026 sbírka",
+      "psp.cz sněmovní tisk zákon o umělé inteligenci 2026 (and full scan of 10th-term prints for 'umělé'/'inteligen')",
+      "\"zákon o umělé inteligenci\" vláda schválila návrh 2026 MPO",
+      "odok.gov.cz návrh zákona o umělé inteligenci MPO připomínkové řízení",
+      "ctu.gov.cz umělá inteligence dozor AI Akt oddělení",
+      "uoou.gov.cz site search: inteligence; umělé inteligence; AI akt",
+      "NÚKIB umělá inteligence doporučení bezpečnost",
+      "vláda usnesení DeepSeek zákaz státní správa NÚKIB varování 2025",
+      "e-Sbírka: zákon 230/2025 Sb.; zákon 110/2019 Sb.; sdělení 115/2001 Sb. m. s. (Convention 108)",
+      "mpo.gov.cz umělá inteligence (AI page and news list)",
+      "cnb.cz umělá inteligence finanční trh ČNB očekávání AI dohled; ČNB stanovisko úřední sdělení AI akt",
+      "MŠMT doporučení umělá inteligence ve vzdělávání školy metodika; digitalizace.rvp.cz AI",
+      "Digitální a informační agentura umělá inteligence veřejná správa doporučení; pravidla bezpečného používání AI ve veřejné správě",
+      "ctu.gov.cz umělá inteligence AI Act ČTÚ informace pro poskytovatele",
+      "trestní zákoník deepfake novela 2025 2026 umělá inteligence",
+      "ČSN EN ISO/IEC 42001 umělá inteligence norma; agentura-cas.cz",
+      "Ministerstvo obrany strategie umělé inteligence; Ministerstvo zdravotnictví umělá inteligence strategie",
+      "MMR portal-vz.cz umělá inteligence veřejné zakázky; MPSV umělá inteligence trh práce",
+      "nukib.gov.cz publications: analyses, supporting materials, strategies (AI, DeepSeek)",
+      "Czech AI strategy English (National Artificial Intelligence Strategy of the Czech Republic 2030)"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "EU MEMBERSHIP LAYER IMPLEMENTED; INSTRUMENT-SPECIFIC APPLICABILITY REQUIRES REVIEW",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. ctu.gov.cz 403 to curl and WebFetch (one PDF via WebFetch). ODok/eKLEP old addresses 404 (draft AI Act not read); government resolutions 394/2025 and 537/2025 not read. All 687 prints of the Chamber's 10th term scanned: no AI bill. Act 270/2025 (deepfake offences) is technology-neutral but targets realistic fabricated depictions. Convention 108: MFA Communication 115/2001 Sb. m. s., recorded on the COE file. Units covered: Law: e-Sbírka (Collection of Laws) read through its JSON service: Act No. 230/2025 Coll. (airport real-time biometric identification AI systems), Act No. 110/2019 Coll. (personal data processing, § 39 automated decisions), Act No. 270/2025 Coll. (deepfake offences, Criminal Code §§ 181(2), 191a), Convention 108 notice No. 115/2001 Coll. Int. Treaties. Chamber of Deputies (psp.cz): all 687 prints of the 10th term scanned for 'umělé'/'inteligen' - no AI bill. The national AI Act (MPO draft) has not been adopted or introduced in Parliament (lead). e-Sbírka full-text search not usable by script; the government legislative portal (ODok/eKLEP) could not be reached at its old addresses.; Government: Ministry of Industry and Trade AI page and news (NAIS 2030 and 2019 strategy, action plan 2025 news, AI Act gestor), Office of the Government (NAIS 2030 PDF; February 2026 public-administration AI guide), government resolution No. 537/2025 DeepSeek ban (via NÚKIB material; resolution text a lead), resolution No. 394/2025 on AI Act implementation (lead), Digital and Information Agency (only AI training course materials found, no guidance document).; Ministries: Justice: Instruction No. 11/2025 AI use policy (recorded). Education: NPI school AI recommendations (lead - undated). Health: memorandum/strategy announced, no text (lead). Defence: only a 2025 FOI reply on AI use, no AI policy document found. Interior, Labour and Social Affairs, Finance, Regional Development (procurement): searched, no AI-specific policy documents found (MMR is piloting an AI tender-checking tool, no guidance).; Regulators: Office for Personal Data Protection: site search (2025 Police airport facial-recognition inspection and May 2026 stadium biometric statement recorded; other AI items are EDPB news). NÚKIB: publications, analyses and supporting materials (DeepSeek methodological material and June 2026 AI frontier models report recorded; national cyber security strategy 2026-2030 only mentions AI in passing). Czech National Bank: site search; its published FOI answer of May 2026 states it has issued no AI supervisory statement or benchmark (AI use falls under DORA and operational-risk rules). Czech Telecommunication Office (AI Act market-surveillance authority): site blocked automated access (HTTP 403); 2025 annual report read via WebFetch. Competition authority (ÚOHS) and standards bodies: nothing AI-specific found.. Not reached: Czech Telecommunication Office website (ctu.gov.cz returned HTTP 403 to curl and WebFetch for all pages except one PDF fetched via WebFetch); Government legislative portal ODok/eKLEP (old URLs 404) - draft AI Act text not read; Government resolutions database (resolutions No. 394/2025 and No. 537/2025 not read). Could not verify: Czech Telecommunication Office AI pages and notices (HTTP 403); Text of government resolutions No. 394/2025 and No. 537/2025; Draft national AI Act text and current legislative stage; NPI school AI recommendations publication date; ČSN EN ISO/IEC 42001 official listing. procurement, transparency, standards, sandbox, index-readiness, drafts, international: no material found.",
     "discovery_result_count": 12,
     "focused_result_count": 10
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-0c3a7c2c2ae0",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "CZE",
+      "instrument_id": "i-10090dfb27ef",
+      "title": "National Artificial Intelligence Strategy of the Czech Republic 2030 (NAIS 2030)",
+      "detail": "Record updated: categories, issuing authority, legal status, lifecycle, publication date, scope, summary, title.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-7f9bc5c257a6",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "CZE",
+      "instrument_id": "i-8604967408d4",
+      "title": "National Artificial Intelligence Strategy of the Czech Republic (2019)",
+      "detail": "Added to the radar (published 2019-05-06).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.mpo.gov.cz/assets/cz/podnikani/2023/1/NAIS_kveten_2019.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-dad68cebeaed",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "CZE",
+      "instrument_id": "i-758f79c71863",
+      "title": "Act No. 230/2025 Coll. amending Act No. 273/2008 Coll. on the Police of the Czech Republic and certain other acts (incl. new §§ 39a-39c of the Personal Data Processing Act on 'isolated' real-time remote biometric identification AI systems at international airports)",
+      "detail": "Added to the radar (published 2025-07-10).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.e-sbirka.cz/sb/2025/230",
+      "needs_review": false
+    },
+    {
+      "id": "c-15d371831906",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "CZE",
+      "instrument_id": "i-f0817420998c",
+      "title": "Act No. 110/2019 Coll. on the Processing of Personal Data",
+      "detail": "Added to the radar (published 2019-04-24).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.e-sbirka.cz/sb/2019/110",
+      "needs_review": false
+    },
+    {
+      "id": "c-7c25b24d1191",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "CZE",
+      "instrument_id": "i-d8acf4aaf1bd",
+      "title": "Police of the Czech Republic (UOOU-04892/21): camera system at Václav Havel Airport Prague - inspection findings on automated facial recognition",
+      "detail": "Added to the radar (published 2025).",
+      "from": null,
+      "to": null,
+      "source_url": "https://uoou.gov.cz/cinnost/ochrana-osobnich-udaju/ukoncene-kontroly/kontroly-za-rok-2025/kontrolni-cinnost-v-oblasti-ochrany-osobnich-udaju-2025/policie-cr-uoou-0489221",
+      "needs_review": false
+    },
+    {
+      "id": "c-d8a1164c5f03",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "CZE",
+      "instrument_id": "i-64e63b680e90",
+      "title": "Office for Personal Data Protection statement on biometric identification of unwanted persons at football stadiums",
+      "detail": "Added to the radar (published 2026-05-20).",
+      "from": null,
+      "to": null,
+      "source_url": "https://uoou.gov.cz/novinky/vse/uoou-k-biometricke-identifikaci-nezadoucich-osob-na-fotbalovych-stadionech",
+      "needs_review": false
+    },
+    {
+      "id": "c-4af6900bf337",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "CZE",
+      "instrument_id": "i-49afc05c595a",
+      "title": "Methodological material on government resolution No. 537 of 9 July 2025 banning DeepSeek products, applications and services",
+      "detail": "Added to the radar (published 2025-07-09).",
+      "from": null,
+      "to": null,
+      "source_url": "https://nukib.gov.cz/download/publikace/podpurne_materialy/Metodicky%20material%20k%20usneseni_DeepSeek.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-49109a28e866",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "CZE",
+      "instrument_id": "i-81a99e975cf0",
+      "title": "New AI frontier models significantly increase the ability to autonomously detect and exploit vulnerabilities: misuse by malicious actors is a matter of time (situation report)",
+      "detail": "Added to the radar (published 2026-06-18).",
+      "from": null,
+      "to": null,
+      "source_url": "https://nukib.gov.cz/download/publikace/analyzy/AI%20frontier%20modely%20.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-4aaf660f31ca",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "CZE",
+      "instrument_id": "i-71f1ac2877e3",
+      "title": "Ethical and Responsible Use of AI in Public Administration - Guide for authorities and other public administration organisations",
+      "detail": "Added to the radar (published 2026-02).",
+      "from": null,
+      "to": null,
+      "source_url": "https://vlada.gov.cz/assets/Statni_sluzba/Dokumenty/Ostatni_dokumenty/Pruvodce-Eticke-a-odpovedne-vyuzivani-AI-ve-VS.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-cf689a5e1567",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "CZE",
+      "instrument_id": "i-ada4976b85b0",
+      "title": "Ministry of Justice Instruction No. 11/2025 of 9 December 2025 amending Instruction No. 5/2022 on information security in the ICT environment of the justice sector (adds Policy No. 25 on the use of artificial intelligence)",
+      "detail": "Added to the radar (published 2025-12-09).",
+      "from": null,
+      "to": null,
+      "source_url": "https://msp.gov.cz/documents/d/msp/instrukce-11_2025-docx",
+      "needs_review": false
+    },
+    {
+      "id": "c-630dbb8222da",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "CZE",
+      "instrument_id": "i-a67fcf18bd36",
+      "title": "Act No. 270/2025 Coll. amending the Criminal Code, the Criminal Procedure Code and related acts (new deepfake offences: § 181(2) and § 191a of the Criminal Code)",
+      "detail": "Added to the radar (published 2025-08-05).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.e-sbirka.cz/sb/2025/270",
+      "needs_review": false
+    },
+    {
+      "id": "c-b41c0cdda29f",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "CZE",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 11 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-23db1cf87dcc",
+      "date": "2026-01-01",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "CZE",
+      "instrument_id": "i-a67fcf18bd36",
+      "title": "Deepfake offences (§ 181(2), § 191a Criminal Code) take effect",
+      "detail": "Act No. 270/2025 Coll. Criminal Code amendments apply from 1 January 2026.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.e-sbirka.cz/sb/2025/270",
+      "needs_review": false
+    },
+    {
+      "id": "c-0059df684db1",
+      "date": "2025-12-15",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "CZE",
+      "instrument_id": "i-ada4976b85b0",
+      "title": "Ministry of Justice AI use policy (Instruction No. 11/2025) takes effect",
+      "detail": "Policy No. 25 on the use of AI applies to all justice-sector staff from 15 December 2025.",
+      "from": null,
+      "to": null,
+      "source_url": "https://msp.gov.cz/documents/d/msp/instrukce-11_2025-docx",
+      "needs_review": false
+    },
+    {
+      "id": "c-0468aadcfb88",
+      "date": "2025-08-01",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "CZE",
+      "instrument_id": "i-758f79c71863",
+      "title": "Rules on airport real-time remote biometric identification AI systems take effect",
+      "detail": "Act No. 230/2025 Coll. takes effect on 1 August 2025 (first day of the month after promulgation).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.e-sbirka.cz/sb/2025/230",
+      "needs_review": false
+    },
+    {
+      "id": "c-27581ec521de",
+      "date": "2025-07-10",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "CZE",
+      "instrument_id": "i-758f79c71863",
+      "title": "Act No. 230/2025 Coll. (airport real-time biometric identification AI systems) promulgated",
+      "detail": "Promulgated in the Collection of Laws on 10 July 2025; inserts §§ 39a-39c into Act No. 110/2019 Coll.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.e-sbirka.cz/sb/2025/230",
+      "needs_review": false
+    },
+    {
+      "id": "c-823adfae3c16",
+      "date": "2025-07-09",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "CZE",
+      "instrument_id": "i-49afc05c595a",
+      "title": "Government bans DeepSeek in state administration; NÚKIB issues implementing guidance",
+      "detail": "Government resolution No. 537 of 9 July 2025; NÚKIB methodological material v1.0 dated 9 July 2025.",
+      "from": null,
+      "to": null,
+      "source_url": "https://nukib.gov.cz/download/publikace/podpurne_materialy/Metodicky%20material%20k%20usneseni_DeepSeek.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-bdfc91d383c8",
+      "date": "2024-07-24",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "CZE",
+      "instrument_id": "i-10090dfb27ef",
+      "title": "Government approves National AI Strategy of the Czech Republic 2030",
+      "detail": "Approved by government resolution No. 520 of 24 July 2024; supersedes the 2019 strategy.",
+      "from": null,
+      "to": null,
+      "source_url": "https://mpo.gov.cz/cz/podnikani/digitalni-ekonomika/umela-inteligence/",
+      "needs_review": false
+    },
+    {
+      "id": "c-78ea77b6657b",
+      "date": "2024-07-24",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "superseded",
+      "jurisdiction_id": "CZE",
+      "instrument_id": "i-8604967408d4",
+      "title": "2019 National AI Strategy superseded by NAIS 2030",
+      "detail": "Replaced by the National AI Strategy of the Czech Republic 2030 (resolution No. 520 of 24 July 2024).",
+      "from": null,
+      "to": null,
+      "source_url": "https://mpo.gov.cz/cz/podnikani/digitalni-ekonomika/umela-inteligence/",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Návrh zákona o umělé inteligenci",
+      "english_title": "Draft Act on Artificial Intelligence (national implementing law for the EU AI Act)",
+      "issuing_authority": "Ministry of Industry and Trade",
+      "note": "Government bill prepared by the Ministry of Industry and Trade (gestor of the EU AI Act since 28 May 2025) to designate national supervisory authorities (the Czech Telecommunication Office as main market-surveillance authority, with the Czech National Bank, the Office for Personal Data Protection and the Office for Technical Standardization, Metrology and State Testing) and set sanctions and a sandbox. Inter-ministerial comment procedure reported from late September 2025. Not found among the Chamber of Deputies prints of the 10th term (searched all 687 print entries on psp.cz on 2026-10-12), so it had not reached Parliament; draft text not located on an official open portal. Record when introduced or adopted.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Usnesení vlády č. 537 ze dne 9. července 2025 o zákazu produktů, aplikací a služeb DeepSeek",
+      "english_title": "Government resolution No. 537 of 9 July 2025 banning DeepSeek products, applications and services in state administration",
+      "issuing_authority": "Government of the Czech Republic",
+      "note": "Binding on ministries, offices and other state administration bodies; described in the NÚKIB methodological material (recorded). Resolution text not located on the government resolutions database during this review; record as administrative_policy_mandatory_in_scope once read.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Akční plán Národní strategie umělé inteligence ČR 2030 (pro rok 2025; Akční plán 2027 v přípravě)",
+      "english_title": "Action Plan of the National AI Strategy 2030 (2025 plan; 2027 plan in preparation)",
+      "issuing_authority": "Ministry of Industry and Trade / Government of the Czech Republic",
+      "note": "The 2025 action plan was approved as part of the Digital Czechia implementation plan by government resolution No. 237 of 2 April 2025 (MPO news page, 2 April 2025), allocating CZK 19 billion to project plans. The action plan document itself is not attached on mpo.gov.cz; record once the official text is found.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Usnesení vlády č. 394 ze dne 28. května 2025 k zajištění národní implementace nařízení o umělé inteligenci",
+      "english_title": "Government resolution No. 394 of 28 May 2025 on national implementation of the EU AI Act (MPO as AI Act lead; ČTÚ among market-surveillance authorities)",
+      "issuing_authority": "Government of the Czech Republic",
+      "note": "Cited in the Czech Telecommunication Office's 2025 annual report (resolution No. 394 of 28 May 2025 designating ČTÚ as one of the AI Act market-surveillance authorities) and on the MPO AI page (MPO designated AI Act gestor on 28 May 2025; ÚOOÚ and the Public Defender of Rights as Art. 77 bodies). Resolution text not read; record as government-governance once found.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Český telekomunikační úřad - sekce Umělá inteligence (informace k Aktu o umělé inteligenci, čl. 50, srpen 2026)",
+      "english_title": "Czech Telecommunication Office AI section and notices on the EU AI Act (incl. Art. 50 transparency obligations, August 2026)",
+      "issuing_authority": "Czech Telecommunication Office",
+      "note": "ČTÚ's 2025 annual report says it created a dedicated AI section on its website, an expert team and held an AI Act workshop; press reports an August 2026 ČTÚ notice on Art. 50 transparency duties and an internal measure (Opatření č. 37/2025) on staff AI use. ctu.gov.cz returned HTTP 403 to all automated requests on 2026-10-12 (the annual report was read via WebFetch only), so these pages could not be read.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Doporučení pro využívání umělé inteligence na základních a středních školách",
+      "english_title": "Recommendations for the use of AI in primary and secondary schools (with versions for principals and pupils; 2025 FAQ 'AI a právo ve škole')",
+      "issuing_authority": "National Pedagogical Institute of the Czech Republic (NPI ČR, MŠMT)",
+      "note": "Published on the NPI digitalizace.rvp.cz portal (https://digitalizace.rvp.cz/ke-stazeni#doporuceni-pro-ai; PDF https://revize.edu.cz/files/ai-doporuceni-online-a4.pdf, read). Sets recommendations in seven areas (open communication, individualisation, AI literacy, responsibility for outputs, children's rights and privacy, proportionality, wellbeing). The document and page state no publication date (PDF metadata 2023-08-29), and the MŠMT news page about NPI's AI materials returned 'page not found'; record as nonbinding_guidance (education) once an official dated listing is found.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Memorandum o spolupráci při zavádění AI do zdravotnictví / resortní strategie AI ve zdravotnictví",
+      "english_title": "Ministry of Health memorandum on safe use of AI in healthcare (2026) and planned health-sector AI strategy",
+      "issuing_authority": "Ministry of Health",
+      "note": "Ministry of Health press releases (mzd.gov.cz) report a 2026 cooperation memorandum with the Czech Association for AI, the Czech Medical Association J. E. Purkyně and IPVZ on rules for safe AI use in healthcare, and a national survey (February 2026) feeding a planned sector AI strategy. No memorandum or strategy text found; record when published.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "ČSN EN ISO/IEC 42001 Informační technologie - Umělá inteligence - Systém managementu",
+      "english_title": "Czech adoption of EN ISO/IEC 42001 (AI management system standard)",
+      "issuing_authority": "Czech Standards Agency (Česká agentura pro standardizaci)",
+      "note": "Commercial catalogues list the Czech edition as issued 1 September 2026; not confirmed on the Czech Standards Agency catalogue or the ÚNMZ bulletin during this review. Record under standards once the official listing is read.",
+      "found": "2026-10-12"
+    }
+  ]
 }
