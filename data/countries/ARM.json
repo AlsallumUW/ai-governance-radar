@@ -10,18 +10,774 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Armenia has no standalone AI law and no adopted national AI strategy; the 2021-2025 digitalisation strategy contained a few AI actions, and a high-tech sector strategy for 2026-2033 with AI as a priority was not confirmed as adopted. AI governance runs through the Ministry of High-Tech Industry, renamed in 2026 to include Artificial Intelligence, a 2025 state programme giving AI innovators free high-performance computing, 2026 relief for AI data-centre construction, and a 2026 amendment to the audiovisual media law requiring AI-generated content to be labelled. Draft Criminal Code amendments on AI-generated material were put to consultation in 2025, the government approved signing the Council of Europe AI Convention in December 2024, and the 2015 data protection law applies.",
+    "lead_institutions": [
+      "Ministry of High-Tech Industry and Artificial Intelligence",
+      "Government of Armenia",
+      "National Assembly"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was completed on 12 October 2026 and covers national law, government, ministries and regulators. The high-tech sector strategy could not be confirmed as adopted and is listed as a lead, and the data protection agency's website could not be reached."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-fbb9f380d2f3",
+      "official_title": "Անձնական տվյալների պաշտպանության մասին",
+      "english_title": "Law on Personal Data Protection (HO-49-N)",
+      "issuing_authority": "National Assembly of the Republic of Armenia",
+      "authority_type": "legislature",
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2015-06-18",
+      "current_status": "In force since 1 July 2015 (art. 28), amended several times; ARLIS shows the consolidated version in force from 15 August 2026. Published in the Official Bulletin (HHPT 2015.06.18/35(1124), art. 462). It contains no AI-specific provisions; the decision-making rule in art. 16 is the closest provision to automated-decision rules.",
+      "summary": "Armenia's general data protection law (HO-49-N, adopted 18 May 2015), governing the processing of personal data by public bodies and private persons, including automated processing, and setting principles of legality, proportionality, accuracy and minimal involvement of data subjects. Article 16 prohibits taking decisions with legal effects for a data subject on the basis of personal-data processing except with the subject's consent or where a law provides, and Article 13 sets special rules for biometric data. It establishes the authorised body for personal data protection (the Personal Data Protection Agency) with supervisory and sanctioning powers.",
+      "ai_governance_relevance": "General data protection law; governs personal data used to train and run AI systems and restricts decisions with legal effect based on personal-data processing (art. 16).",
+      "source_url": "https://www.arlis.am/hy/acts/229131/latest",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.arlis.am/hy/acts/229131/latest",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-205e527b81ca",
+      "publisher_name": "Ministry of Justice of the Republic of Armenia (ARLIS legal information system)",
+      "jurisdiction_id": "ARM",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "effective_date": "2015-07-01",
+      "last_amended_date": null,
+      "scope": "Armenia (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "hy",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-8e4b91f558bd",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full consolidated text and act metadata (number, adoption, publication and entry-into-force dates) read on the ARLIS official legal information system page; art. 16 (decisions based on processing) and art. 28 (entry into force 1 July 2015) checked"
+    },
+    {
+      "id": "i-cf1a965ac43d",
+      "official_title": "Հայաստանի թվայնացման ռազմավարությանը, ռազմավարության միջոցառումների ծրագրին և արդյունքային ցուցանիշներին հավանություն տալու մասին",
+      "english_title": "Decision on approving the Digitalization Strategy of Armenia, its action programme and result indicators (Digitalization Strategy 2021-2025, Government Decision N 183-L)",
+      "issuing_authority": "Government of the Republic of Armenia",
+      "authority_type": "government",
+      "categories": [
+        "strategy",
+        "public-sector"
+      ],
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2021-02-16",
+      "current_status": "Adopted 11 February 2021, published on the unified site 16 February 2021, listed on ARLIS as in force since 17 February 2021. The strategy period (2021-2025) has ended; no successor digitalization strategy was found on ARLIS, and the high-tech sector strategy 2026-2033 is held as a lead.",
+      "summary": "Government decision N 183-L of 11 February 2021 approving Armenia's Digitalization Strategy for 2021-2025 together with its action programme and result indicators, covering digital government, the digital economy, cybersecurity, data and e-services. AI appears only in a few actions, such as using AI (natural language processing) in the digital document-management system to support decision-making and supporting AI and cybersecurity research projects and demo labs; it has no dedicated AI pillar.",
+      "ai_governance_relevance": "National digital strategy with limited AI actions (AI in public document management; AI research projects).",
+      "source_url": "https://www.arlis.am/hy/acts/149957/latest",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.arlis.am/hy/acts/149957/latest",
+      "sectors": [
+        "public-sector",
+        "cross-sector"
+      ],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-4121b1497d1c",
+      "publisher_name": "Ministry of Justice of the Republic of Armenia (ARLIS legal information system)",
+      "jurisdiction_id": "ARM",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "strategy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Armenia (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "hy",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-6f63d98b73e5",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full consolidated text and act metadata (number, adoption, publication and entry-into-force dates) read on the ARLIS official legal information system page; AI references located in the action programme (3 mentions)"
+    },
+    {
+      "id": "i-d77cf74e8e78",
+      "official_title": "Պետության կողմից արհեստական բանականության ոլորտում բարձր արտադրողականությամբ հաշվողական ռեսուրսներին հասանելիության ապահովման պետական աջակցության փորձնական ծրագիրը հաստատելու մասին",
+      "english_title": "Decision on approving the pilot state-support programme for access to high-performance computing resources in the field of artificial intelligence (Government Decision N 1966-N)",
+      "issuing_authority": "Government of the Republic of Armenia",
+      "authority_type": "government",
+      "categories": [
+        "binding-law",
+        "government-governance"
+      ],
+      "legal_status": "binding_regulation",
+      "lifecycle": "in_force",
+      "publication_date": "2025-12-26",
+      "current_status": "Adopted 25 December 2025, officially published 26 December 2025, in force from 27 December 2025; the programme runs in 2026. A draft amending it (e-draft project 10424, July 2026) and a related draft procedure for public authorities' access to AI computing (e-draft 10426) were in consultation in 2026.",
+      "summary": "Government decision N 1966-N of 25 December 2025, adopted under the Law on State Support to the High-Tech Sector, approving a 2026 pilot programme that gives AI innovators 100% subsidised (free) access to high-performance computing (CPU/GPU cloud) resources. The Ministry of High-Tech Industry implements it and is authorised to conclude a subsidy agreement with Amazon Web Services, with a 2026 state-budget ceiling of AMD 400 million; the annex sets eligibility and the application procedure.",
+      "ai_governance_relevance": "First AI-specific government decree: state-funded AI compute access for innovators.",
+      "source_url": "https://www.arlis.am/hy/acts/218863/latest",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.arlis.am/hy/acts/218863/latest",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-4121b1497d1c",
+      "publisher_name": "Ministry of Justice of the Republic of Armenia (ARLIS legal information system)",
+      "jurisdiction_id": "ARM",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "binding-law",
+      "subcategory": null,
+      "effective_date": "2025-12-27",
+      "last_amended_date": null,
+      "scope": "Armenia (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "hy",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-d8055cd266f4",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full consolidated text and act metadata (number, adoption, publication and entry-into-force dates) read on the ARLIS official legal information system page; draft history cross-checked on e-draft.am project 9424 (consultation 24.11.2025-09.12.2025)"
+    },
+    {
+      "id": "i-0340681010b6",
+      "official_title": "«Տեսալսողական մեդիայի մասին» օրենքում լրացումներ կատարելու մասին",
+      "english_title": "Law amending the Law on Audiovisual Media (mandatory labelling of AI-generated synthetic content, HO-134-N)",
+      "issuing_authority": "National Assembly of the Republic of Armenia",
+      "authority_type": "legislature",
+      "categories": [
+        "binding-law",
+        "transparency",
+        "generative-ai",
+        "sectoral"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2026-04-18",
+      "current_status": "Adopted 7 April 2026, signed and officially published 18 April 2026, in force 28 April 2026 (tenth day after publication). The Ministry of High-Tech Industry's draft was on e-draft.am (project 9898, consultation 13-28 March 2026).",
+      "summary": "Law HO-134-N (adopted 7 April 2026) adds a definition of 'synthetic content' created or altered with generative AI, machine learning or other digital technologies and a new article 9.1 requiring audiovisual media service providers to label such content clearly ('Created by AI' for generative-AI content, 'Subjected to digital processing' for other digitally altered content). It sets how labels must appear in video, audio and images, allows lighter labelling for fiction, humour and educational programmes, empowers the regulator to set detailed requirements, and adds a fine of 300 times the minimum wage for breaches (art. 57).",
+      "ai_governance_relevance": "AI-specific labelling obligation for synthetic (AI-generated) content in broadcast media.",
+      "source_url": "https://www.arlis.am/hy/acts/224054/latest",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.arlis.am/hy/acts/224054/latest",
+      "sectors": [
+        "media"
+      ],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-205e527b81ca",
+      "publisher_name": "Ministry of Justice of the Republic of Armenia (ARLIS legal information system)",
+      "jurisdiction_id": "ARM",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "binding-law",
+      "subcategory": null,
+      "effective_date": "2026-04-28",
+      "last_amended_date": null,
+      "scope": "Armenia (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "hy",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-8a373234e952",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full consolidated text and act metadata (number, adoption, publication and entry-into-force dates) read on the ARLIS official legal information system page"
+    },
+    {
+      "id": "i-4beee0d2f0c1",
+      "official_title": "«Կառավարության կառուցվածքի և գործունեության մասին» օրենքում փոփոխություններ կատարելու մասին",
+      "english_title": "Law amending the Law on the Structure and Activities of the Government (HO-413-N; renaming the Ministry of High-Tech Industry as the Ministry of High-Tech Industry and Artificial Intelligence)",
+      "issuing_authority": "National Assembly of the Republic of Armenia",
+      "authority_type": "legislature",
+      "categories": [
+        "government-governance",
+        "binding-law"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2026-08-31",
+      "current_status": "Adopted 27 August 2026, officially published 31 August 2026, in force 1 September 2026. Subsequent Prime Minister decisions appoint officials of the renamed ministry.",
+      "summary": "Law HO-413-N (adopted 27 August 2026) restructures several ministries; among other changes it replaces 'Ministry of High-Tech Industry' with 'Ministry of High-Tech Industry and Artificial Intelligence' in the list of ministries and in the annex setting ministries' policy areas. It makes the high-tech ministry the named central government body for AI policy.",
+      "ai_governance_relevance": "Gives AI an explicit institutional home: the Ministry of High-Tech Industry and Artificial Intelligence.",
+      "source_url": "https://www.arlis.am/hy/acts/230376/latest",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.arlis.am/hy/acts/230376/latest",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-205e527b81ca",
+      "publisher_name": "Ministry of Justice of the Republic of Armenia (ARLIS legal information system)",
+      "jurisdiction_id": "ARM",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "government-governance",
+      "subcategory": null,
+      "effective_date": "2026-09-01",
+      "last_amended_date": null,
+      "scope": "Armenia (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "hy",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-22abed1e305a",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full consolidated text and act metadata (number, adoption, publication and entry-into-force dates) read on the ARLIS official legal information system page"
+    },
+    {
+      "id": "i-93d9c1747940",
+      "official_title": "ՀՀ կառավարության 2015 թվականի մարտի 19-ի N 596-Ն որոշման մեջ լրացում կատարելու մասին",
+      "english_title": "Decision amending Government Decision N 596-N of 19 March 2015 (fast-track urban-planning expertise for AI data centres, Government Decision N 728-N)",
+      "issuing_authority": "Government of the Republic of Armenia",
+      "authority_type": "government",
+      "categories": [
+        "sectoral",
+        "binding-law"
+      ],
+      "legal_status": "binding_regulation",
+      "lifecycle": "in_force",
+      "publication_date": "2026-05-27",
+      "current_status": "Adopted and officially published 27 May 2026, in force 28 May 2026. A further draft (e-draft 10551, August 2026) would let state expertise conclusions for AI data centres issue before the environmental impact expertise.",
+      "summary": "Government decision N 728-N of 27 May 2026 amends the construction permitting procedure so that the special treatment already available for certain projects also covers the construction, reconstruction or major repair of artificial intelligence (AI) data centres. It applies retroactively to urban-planning documents submitted for state expertise after 1 May 2026.",
+      "ai_governance_relevance": "Sector rule easing permits for AI data-centre infrastructure.",
+      "source_url": "https://www.arlis.am/hy/acts/225710/latest",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.arlis.am/hy/acts/225710/latest",
+      "sectors": [
+        "construction",
+        "infrastructure"
+      ],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-4121b1497d1c",
+      "publisher_name": "Ministry of Justice of the Republic of Armenia (ARLIS legal information system)",
+      "jurisdiction_id": "ARM",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "sectoral",
+      "subcategory": null,
+      "effective_date": "2026-05-28",
+      "last_amended_date": null,
+      "scope": "Armenia (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "hy",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-f3d1c96f3b73",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full consolidated text and act metadata (number, adoption, publication and entry-into-force dates) read on the ARLIS official legal information system page; draft history on e-draft.am project 10208"
+    },
+    {
+      "id": "i-86daf77e73ba",
+      "official_title": "«Արհեստական բանականության, մարդու իրավունքների, ժողովրդավարության և օրենքի գերակայության մասին» Եվրոպայի խորհրդի շրջանակային կոնվենցիայի ստորագրման առաջարկությանը հավանություն տալու մասին",
+      "english_title": "Decision approving the proposal to sign the Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law (Government Decision N 2063-A)",
+      "issuing_authority": "Government of the Republic of Armenia",
+      "authority_type": "government",
+      "categories": [
+        "international"
+      ],
+      "legal_status": "binding_regulation",
+      "lifecycle": "adopted",
+      "publication_date": "2024-12-27",
+      "current_status": "Adopted 27 December 2024, in force 28 December 2024 per ARLIS. Signature itself and any ratification were not verified on an Armenian official source in this review.",
+      "summary": "Government decision N 2063-A of 27 December 2024, adopted under the Law on International Treaties, approves Armenia's signature of the Council of Europe Framework Convention on AI and Human Rights, Democracy and the Rule of Law and instructs the Minister of Foreign Affairs to organise the signing. It is the national act authorising signature; it does not ratify the Convention.",
+      "ai_governance_relevance": "National act authorising signature of the first binding international AI treaty.",
+      "source_url": "https://www.arlis.am/hy/acts/201559/latest",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.arlis.am/hy/acts/201559/latest",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-4121b1497d1c",
+      "publisher_name": "Ministry of Justice of the Republic of Armenia (ARLIS legal information system)",
+      "jurisdiction_id": "ARM",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "international",
+      "subcategory": null,
+      "effective_date": "2024-12-28",
+      "last_amended_date": null,
+      "scope": "Armenia (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "hy",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-61fc50db3e60",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full consolidated text and act metadata (number, adoption, publication and entry-into-force dates) read on the ARLIS official legal information system page"
+    },
+    {
+      "id": "i-453d1f0f1ed3",
+      "official_title": "Հայաստանի Հանրապետության քրեական օրենսգրքում լրացումներ կատարելու մասին (նախագիծ)",
+      "english_title": "Draft Law amending the Criminal Code (use of AI-generated material as an aggravating element)",
+      "issuing_authority": "Ministry of Labour and Social Affairs of the Republic of Armenia",
+      "authority_type": "government",
+      "categories": [
+        "drafts",
+        "generative-ai",
+        "binding-law"
+      ],
+      "legal_status": "consultation_draft",
+      "lifecycle": "consultation",
+      "publication_date": "2025-09-29",
+      "current_status": "Public consultation 29 September - 14 October 2025 (project 9155); e-draft still shows it 'under discussion'. No adopted law was found on ARLIS.",
+      "summary": "Government draft law amending the 2021 Criminal Code, published for public consultation on e-draft.am. Among child-protection and online-harassment changes, it would add as an aggravating element of art. 258 (hooliganism-type offences) the use of AI-generated material that defames, threatens violence or contains sexual propositions, and extend art. 300(5) to imitated material 'including material created by artificial intelligence'.",
+      "ai_governance_relevance": "",
+      "source_url": "https://www.e-draft.am/projects/9155/about",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.e-draft.am/projects/9155/about",
+      "sectors": [
+        "justice"
+      ],
+      "source_kind": "consultation_portal",
+      "supersedes": [],
+      "organization_id": "o-6e4d9ba6bc79",
+      "publisher_name": "Ministry of Labour and Social Affairs of the Republic of Armenia",
+      "jurisdiction_id": "ARM",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "drafts",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Armenia (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "hy",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-66590bcec7ff",
+      "evidence_reference": "curl (browser user agent, --max-time 60): e-draft.am project page with the full draft text and consultation period read"
+    },
+    {
+      "id": "i-679827c025dd",
+      "official_title": "Արհեստական բանականության ոլորտում բարձր արտադրողականությամբ հաշվողական ռեսուրսներին հասանելիության ապահովման կարգը հաստատելու մասին (նախագիծ)",
+      "english_title": "Draft Government Decision approving the procedure for ensuring access to high-performance computing resources in the field of artificial intelligence (for public authorities)",
+      "issuing_authority": "Ministry of High-Tech Industry of the Republic of Armenia",
+      "authority_type": "government",
+      "categories": [
+        "drafts",
+        "public-sector"
+      ],
+      "legal_status": "consultation_draft",
+      "lifecycle": "consultation",
+      "publication_date": "2026-07-20",
+      "current_status": "Public consultation 20 July - 4 August 2026 (e-draft project 10426); not found as adopted on ARLIS on 2026-10-12.",
+      "summary": "Draft government decision setting a single procedure through which public authorities can submit AI projects and receive GPU computing capacity purchased by the Ministry of High-Tech Industry from Firebird AI (up to 181 leading GPUs under the purchase contract, based on Government decision N 450-A of 9 April 2026), with optional access to AWS resources under decision N 1966-N. It also opens the resources to natural and legal persons for AI research and sets the roles of the ministry and other bodies.",
+      "ai_governance_relevance": "",
+      "source_url": "https://www.e-draft.am/projects/10426/about",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.e-draft.am/projects/10426/about",
+      "sectors": [
+        "public-sector"
+      ],
+      "source_kind": "consultation_portal",
+      "supersedes": [],
+      "organization_id": "o-95ba268d8503",
+      "publisher_name": "Ministry of High-Tech Industry and Artificial Intelligence of the Republic of Armenia",
+      "jurisdiction_id": "ARM",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "drafts",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Armenia (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "hy",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-138d6193dd9b",
+      "evidence_reference": "curl (browser user agent, --max-time 60): e-draft.am project page and the attached draft decision (docx) read"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-205e527b81ca",
+      "jurisdiction_id": "ARM",
+      "name": "National Assembly of the Republic of Armenia",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Parliament; adopts laws including the 2015 Law on Personal Data Protection, the 2026 synthetic-content labelling amendments to the Law on Audiovisual Media and the 2026 law renaming the high-tech ministry to include artificial intelligence; ratified Convention 108 in 2012.",
+      "source_url": "https://www.parliament.am/",
+      "authority_type": "legislature",
+      "government_level": "national"
+    },
+    {
+      "id": "o-4121b1497d1c",
+      "jurisdiction_id": "ARM",
+      "name": "Government of the Republic of Armenia",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Cabinet; adopts government decisions such as the Digitalization Strategy 2021-2025 (N 183-L), the AI high-performance computing state-support pilot programme (N 1966-N) and the approval to sign the Council of Europe Framework Convention on AI (N 2063-A).",
+      "source_url": "https://www.gov.am/",
+      "authority_type": "government",
+      "government_level": "national"
+    },
+    {
+      "id": "o-95ba268d8503",
+      "jurisdiction_id": "ARM",
+      "name": "Ministry of High-Tech Industry and Artificial Intelligence of the Republic of Armenia",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Lead ministry for digital, high-tech and AI policy (renamed from the Ministry of High-Tech Industry by law HO-413-N, in force 1 September 2026); implements the AI compute support programme and drafted the AI compute access procedure and the high-tech sector strategy 2026-2033.",
+      "source_url": "https://hightech.gov.am/",
+      "authority_type": "ministry",
+      "government_level": "national"
+    },
+    {
+      "id": "o-6e4d9ba6bc79",
+      "jurisdiction_id": "ARM",
+      "name": "Ministry of Labour and Social Affairs of the Republic of Armenia",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Drafted the 2025 Criminal Code amendments that would treat the use of AI-generated material as an aggravating circumstance.",
+      "source_url": "https://www.mlsa.am/",
+      "authority_type": "ministry",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-8e4b91f558bd",
+      "url": "https://www.arlis.am/hy/acts/229131/latest",
+      "jurisdiction_ids": [
+        "ARM"
+      ],
+      "source_institutions": [
+        "National Assembly of the Republic of Armenia"
+      ],
+      "instrument_ids": [
+        "i-fbb9f380d2f3"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full consolidated text and act metadata (number, adoption, publication and entry-into-force dates) read on the ARLIS official legal information system page; art. 16 (decisions based on processing) and art. 28 (entry into force 1 July 2015) checked",
+      "http_status": 200,
+      "final_url": "https://www.arlis.am/hy/acts/229131/latest",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "hy",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-6f63d98b73e5",
+      "url": "https://www.arlis.am/hy/acts/149957/latest",
+      "jurisdiction_ids": [
+        "ARM"
+      ],
+      "source_institutions": [
+        "Government of the Republic of Armenia"
+      ],
+      "instrument_ids": [
+        "i-cf1a965ac43d"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full consolidated text and act metadata (number, adoption, publication and entry-into-force dates) read on the ARLIS official legal information system page; AI references located in the action programme (3 mentions)",
+      "http_status": 200,
+      "final_url": "https://www.arlis.am/hy/acts/149957/latest",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "hy",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-d8055cd266f4",
+      "url": "https://www.arlis.am/hy/acts/218863/latest",
+      "jurisdiction_ids": [
+        "ARM"
+      ],
+      "source_institutions": [
+        "Government of the Republic of Armenia"
+      ],
+      "instrument_ids": [
+        "i-d77cf74e8e78"
+      ],
+      "categories_reviewed": [
+        "binding-law",
+        "government-governance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full consolidated text and act metadata (number, adoption, publication and entry-into-force dates) read on the ARLIS official legal information system page; draft history cross-checked on e-draft.am project 9424 (consultation 24.11.2025-09.12.2025)",
+      "http_status": 200,
+      "final_url": "https://www.arlis.am/hy/acts/218863/latest",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "hy",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-8a373234e952",
+      "url": "https://www.arlis.am/hy/acts/224054/latest",
+      "jurisdiction_ids": [
+        "ARM"
+      ],
+      "source_institutions": [
+        "National Assembly of the Republic of Armenia"
+      ],
+      "instrument_ids": [
+        "i-0340681010b6"
+      ],
+      "categories_reviewed": [
+        "binding-law",
+        "transparency",
+        "generative-ai",
+        "sectoral"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full consolidated text and act metadata (number, adoption, publication and entry-into-force dates) read on the ARLIS official legal information system page",
+      "http_status": 200,
+      "final_url": "https://www.arlis.am/hy/acts/224054/latest",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "hy",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-22abed1e305a",
+      "url": "https://www.arlis.am/hy/acts/230376/latest",
+      "jurisdiction_ids": [
+        "ARM"
+      ],
+      "source_institutions": [
+        "National Assembly of the Republic of Armenia"
+      ],
+      "instrument_ids": [
+        "i-4beee0d2f0c1"
+      ],
+      "categories_reviewed": [
+        "government-governance",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full consolidated text and act metadata (number, adoption, publication and entry-into-force dates) read on the ARLIS official legal information system page",
+      "http_status": 200,
+      "final_url": "https://www.arlis.am/hy/acts/230376/latest",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "hy",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-f3d1c96f3b73",
+      "url": "https://www.arlis.am/hy/acts/225710/latest",
+      "jurisdiction_ids": [
+        "ARM"
+      ],
+      "source_institutions": [
+        "Government of the Republic of Armenia"
+      ],
+      "instrument_ids": [
+        "i-93d9c1747940"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full consolidated text and act metadata (number, adoption, publication and entry-into-force dates) read on the ARLIS official legal information system page; draft history on e-draft.am project 10208",
+      "http_status": 200,
+      "final_url": "https://www.arlis.am/hy/acts/225710/latest",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "hy",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-61fc50db3e60",
+      "url": "https://www.arlis.am/hy/acts/201559/latest",
+      "jurisdiction_ids": [
+        "ARM"
+      ],
+      "source_institutions": [
+        "Government of the Republic of Armenia"
+      ],
+      "instrument_ids": [
+        "i-86daf77e73ba"
+      ],
+      "categories_reviewed": [
+        "international"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full consolidated text and act metadata (number, adoption, publication and entry-into-force dates) read on the ARLIS official legal information system page",
+      "http_status": 200,
+      "final_url": "https://www.arlis.am/hy/acts/201559/latest",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "hy",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-66590bcec7ff",
+      "url": "https://www.e-draft.am/projects/9155/about",
+      "jurisdiction_ids": [
+        "ARM"
+      ],
+      "source_institutions": [
+        "Ministry of Labour and Social Affairs of the Republic of Armenia"
+      ],
+      "instrument_ids": [
+        "i-453d1f0f1ed3"
+      ],
+      "categories_reviewed": [
+        "drafts",
+        "generative-ai",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): e-draft.am project page with the full draft text and consultation period read",
+      "http_status": 200,
+      "final_url": "https://www.e-draft.am/projects/9155/about",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "hy",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-138d6193dd9b",
+      "url": "https://www.e-draft.am/projects/10426/about",
+      "jurisdiction_ids": [
+        "ARM"
+      ],
+      "source_institutions": [
+        "Ministry of High-Tech Industry and Artificial Intelligence of the Republic of Armenia"
+      ],
+      "instrument_ids": [
+        "i-679827c025dd"
+      ],
+      "categories_reviewed": [
+        "drafts",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): e-draft.am project page and the attached draft decision (docx) read",
+      "http_status": 200,
+      "final_url": "https://www.e-draft.am/projects/10426/about",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "hy",
+      "error": null,
+      "content_type": "text/html"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "ARM",
     "country": "Armenia",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -33,55 +789,429 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_with_findings": [
       "binding-law",
-      "strategy",
+      "data-privacy",
+      "drafts",
+      "generative-ai",
       "government-governance",
+      "international",
+      "public-sector",
+      "sectoral",
+      "strategy",
+      "transparency"
+    ],
+    "categories_where_no_material_was_found": [
       "ethics",
       "risk-assurance",
-      "public-sector",
       "procurement",
       "cyber-security",
-      "data-privacy",
-      "transparency",
       "standards",
       "sandbox",
       "index-readiness",
-      "sectoral",
-      "generative-ai",
-      "drafts",
-      "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Armenia \"արհեստական բանականություն\" (ռազմավարություն OR կարգավորում OR էթիկա) government ministry official",
       "Armenia \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Armenia government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Armenia \"արհեստական բանականություն\" cybersecurity authority secure development safety guidelines",
-      "Armenia privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Armenia privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "arlis.am simple_text: արհեստական բանականության",
+      "arlis.am simple_text: արհեստական բանականություն",
+      "arlis.am simple_text: ԱԲ",
+      "arlis.am simple_text: անձնական տվյալների պաշտպանության մասին",
+      "arlis.am simple_text: թվայնացման",
+      "arlis.am number 183-Լ year 2021",
+      "arlis.am simple_text: բարձր տեխնոլոգիական ոլորտի զարգացման / 2026-2033 / ռազմավարական ծրագիրը (2026)",
+      "arlis.am simple_text: տեսալսողական մեդիայի (2026)",
+      "arlis.am simple_text: կառավարության կառուցվածքի (2026)",
+      "arlis.am simple_text: կոնվենցիան վավերացնելու (2012)",
+      "e-draft.am q=արհեստական բանականություն",
+      "e-draft.am q=արհեստական բանականության",
+      "cba.am search: artificial intelligence",
+      "Armenia artificial intelligence strategy 2025 government decision Ministry of High-Tech Industry",
+      "արհեստական բանականության ռազմավարություն կառավարության որոշում",
+      "Armenia digitalization strategy 2021-2025 government decision 183-L artificial intelligence",
+      "Central Bank of Armenia artificial intelligence guidance financial institutions",
+      "Personal Data Protection Agency Armenia artificial intelligence guidance",
+      "hightech.gov.am artificial intelligence concept OR strategy OR roadmap 2026"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. pdpa.am 502; parliament.am not queried separately (laws read on ARLIS; e-draft.am searched). Incidental AI mentions in other ministries' drafts excluded. Decision 2063-A (approval to sign the CoE Framework Convention on AI) recorded as a national act under category international. Convention 108: National Assembly decision AZhO-315-N of 27 February 2012, recorded on the COE file. Units covered: Law: ARLIS searched (Armenian title search for AI terms, data protection, digitalization, audiovisual media, government structure, Convention 108); e-draft.am searched for AI drafts. Found: Personal Data Protection Law, AV media AI-labelling law, ministry-rename law, AI data-centre permitting decision, two consultation drafts. Parliament.am not separately searched (laws taken from ARLIS).; Government: Digitalization Strategy 2021-2025, AI HPC support programme (1966-N), CoE AI Convention signing approval found; no standalone national AI strategy/concept adopted; high-tech strategy 2026-2033 held as lead.; Ministries: Ministry of High-Tech Industry (and AI): website searched, only news/programme pages, no AI guidelines; Labour and Social Affairs (criminal-code AI draft); Justice/NSS/Health/Economy drafts with incidental AI mentions checked and excluded. Education, defence, finance: searched, nothing AI-specific found.; Regulators: Central Bank of Armenia: search found only an analytical paper, no AI guidance; Personal Data Protection Agency: no AI guidance found (pdpa.am unreachable); Audiovisual Media Commission: none beyond the law; cybersecurity/competition/standards: nothing found.. Not reached: pdpa.am (HTTP 502); parliament.am bill search (not separately queried). Could not verify: Adoption of the high-tech sector strategy 2026-2033 (marked adopted on e-draft, not on ARLIS); Personal Data Protection Agency AI guidance (pdpa.am 502). ethics, risk-assurance, procurement, cyber-security, standards, sandbox, index-readiness, historical: no material found.",
     "discovery_result_count": 14,
     "focused_result_count": 11
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-18269f2a59b0",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ARM",
+      "instrument_id": "i-fbb9f380d2f3",
+      "title": "Law on Personal Data Protection (HO-49-N)",
+      "detail": "Added to the radar (published 2015-06-18).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.arlis.am/hy/acts/229131/latest",
+      "needs_review": false
+    },
+    {
+      "id": "c-ffba08907ce3",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ARM",
+      "instrument_id": "i-cf1a965ac43d",
+      "title": "Decision on approving the Digitalization Strategy of Armenia, its action programme and result indicators (Digitalization Strategy 2021-2025, Government Decision N 183-L)",
+      "detail": "Added to the radar (published 2021-02-16).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.arlis.am/hy/acts/149957/latest",
+      "needs_review": false
+    },
+    {
+      "id": "c-85dabfed1ae7",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ARM",
+      "instrument_id": "i-d77cf74e8e78",
+      "title": "Decision on approving the pilot state-support programme for access to high-performance computing resources in the field of artificial intelligence (Government Decision N 1966-N)",
+      "detail": "Added to the radar (published 2025-12-26).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.arlis.am/hy/acts/218863/latest",
+      "needs_review": false
+    },
+    {
+      "id": "c-3c306cb71c54",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ARM",
+      "instrument_id": "i-0340681010b6",
+      "title": "Law amending the Law on Audiovisual Media (mandatory labelling of AI-generated synthetic content, HO-134-N)",
+      "detail": "Added to the radar (published 2026-04-18).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.arlis.am/hy/acts/224054/latest",
+      "needs_review": false
+    },
+    {
+      "id": "c-613278d4c99f",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "ARM",
+      "instrument_id": "i-4beee0d2f0c1",
+      "title": "Law amending the Law on the Structure and Activities of the Government (HO-413-N; renaming the Ministry of High-Tech Industry as the Ministry of High-Tech Industry and Artificial Intelligence)",
+      "detail": "Lifecycle recorded as in_force when added.",
+      "from": null,
+      "to": "in_force",
+      "source_url": "https://www.arlis.am/hy/acts/230376/latest",
+      "needs_review": false
+    },
+    {
+      "id": "c-c09bc020ba18",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ARM",
+      "instrument_id": "i-4beee0d2f0c1",
+      "title": "Law amending the Law on the Structure and Activities of the Government (HO-413-N; renaming the Ministry of High-Tech Industry as the Ministry of High-Tech Industry and Artificial Intelligence)",
+      "detail": "Added to the radar (published 2026-08-31).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.arlis.am/hy/acts/230376/latest",
+      "needs_review": false
+    },
+    {
+      "id": "c-29616e298736",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ARM",
+      "instrument_id": "i-93d9c1747940",
+      "title": "Decision amending Government Decision N 596-N of 19 March 2015 (fast-track urban-planning expertise for AI data centres, Government Decision N 728-N)",
+      "detail": "Added to the radar (published 2026-05-27).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.arlis.am/hy/acts/225710/latest",
+      "needs_review": false
+    },
+    {
+      "id": "c-6de4baf70b3d",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ARM",
+      "instrument_id": "i-86daf77e73ba",
+      "title": "Decision approving the proposal to sign the Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law (Government Decision N 2063-A)",
+      "detail": "Added to the radar (published 2024-12-27).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.arlis.am/hy/acts/201559/latest",
+      "needs_review": false
+    },
+    {
+      "id": "c-6b86bce703c6",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ARM",
+      "instrument_id": "i-453d1f0f1ed3",
+      "title": "Draft Law amending the Criminal Code (use of AI-generated material as an aggravating element)",
+      "detail": "Added to the radar (published 2025-09-29).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.e-draft.am/projects/9155/about",
+      "needs_review": false
+    },
+    {
+      "id": "c-d347c3b3ea62",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ARM",
+      "instrument_id": "i-679827c025dd",
+      "title": "Draft Government Decision approving the procedure for ensuring access to high-performance computing resources in the field of artificial intelligence (for public authorities)",
+      "detail": "Added to the radar (published 2026-07-20).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.e-draft.am/projects/10426/about",
+      "needs_review": false
+    },
+    {
+      "id": "c-e34bb1d43402",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "ARM",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 9 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-04e86c1cf404",
+      "date": "2026-08-27",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "ARM",
+      "instrument_id": "i-4beee0d2f0c1",
+      "title": "Law renaming the ministry to Ministry of High-Tech Industry and Artificial Intelligence adopted",
+      "detail": "Law HO-413-N; in force 1 September 2026.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.arlis.am/hy/acts/230376/latest",
+      "needs_review": false
+    },
+    {
+      "id": "c-11a227c5aa80",
+      "date": "2026-07-20",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "consultation",
+      "jurisdiction_id": "ARM",
+      "instrument_id": "i-679827c025dd",
+      "title": "Draft procedure for public authorities' access to AI computing opened for consultation",
+      "detail": "e-draft.am project 10426, 20 Jul - 4 Aug 2026.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.e-draft.am/projects/10426/about",
+      "needs_review": false
+    },
+    {
+      "id": "c-b28acbf1e35b",
+      "date": "2026-05-27",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "ARM",
+      "instrument_id": "i-93d9c1747940",
+      "title": "AI data-centre permitting amendment adopted",
+      "detail": "Government decision N 728-N.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.arlis.am/hy/acts/225710/latest",
+      "needs_review": false
+    },
+    {
+      "id": "c-a2418614a9d4",
+      "date": "2026-04-28",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "ARM",
+      "instrument_id": "i-0340681010b6",
+      "title": "AI synthetic-content labelling obligation in force",
+      "detail": "Law HO-134-N in force.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.arlis.am/hy/acts/224054/latest",
+      "needs_review": false
+    },
+    {
+      "id": "c-bcccdcc2c588",
+      "date": "2026-04-07",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "ARM",
+      "instrument_id": "i-0340681010b6",
+      "title": "Audiovisual Media Law amended to require AI-content labelling",
+      "detail": "Law HO-134-N adopted; published 18 April 2026.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.arlis.am/hy/acts/224054/latest",
+      "needs_review": false
+    },
+    {
+      "id": "c-aa968842e4ef",
+      "date": "2025-12-25",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "ARM",
+      "instrument_id": "i-d77cf74e8e78",
+      "title": "AI high-performance computing state-support pilot programme approved",
+      "detail": "Government decision N 1966-N; in force 27 December 2025.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.arlis.am/hy/acts/218863/latest",
+      "needs_review": false
+    },
+    {
+      "id": "c-f3aa015b474f",
+      "date": "2025-09-29",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "consultation",
+      "jurisdiction_id": "ARM",
+      "instrument_id": "i-453d1f0f1ed3",
+      "title": "Draft Criminal Code amendments on AI-generated material opened for consultation",
+      "detail": "e-draft.am project 9155, 29 Sep - 14 Oct 2025.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.e-draft.am/projects/9155/about",
+      "needs_review": false
+    },
+    {
+      "id": "c-de8dd871ddb9",
+      "date": "2024-12-27",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "ARM",
+      "instrument_id": "i-86daf77e73ba",
+      "title": "Government approves signing the CoE Framework Convention on AI",
+      "detail": "Government decision N 2063-A.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.arlis.am/hy/acts/201559/latest",
+      "needs_review": false
+    },
+    {
+      "id": "c-c8571a099691",
+      "date": "2021-02-11",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "ARM",
+      "instrument_id": "i-cf1a965ac43d",
+      "title": "Digitalization Strategy 2021-2025 approved",
+      "detail": "Government decision N 183-L.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.arlis.am/hy/acts/149957/latest",
+      "needs_review": false
+    },
+    {
+      "id": "c-cad4444c3d38",
+      "date": "2015-07-01",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "ARM",
+      "instrument_id": "i-fbb9f380d2f3",
+      "title": "Law on Personal Data Protection in force",
+      "detail": "Entry into force per art. 28.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.arlis.am/hy/acts/229131/latest",
+      "needs_review": false
+    },
+    {
+      "id": "c-55bc2eca282d",
+      "date": "2015-05-18",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "ARM",
+      "instrument_id": "i-fbb9f380d2f3",
+      "title": "Law on Personal Data Protection adopted",
+      "detail": "National Assembly adopted Law HO-49-N; in force 1 July 2015.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.arlis.am/hy/acts/229131/latest",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Հայաստանի Հանրապետության բարձր տեխնոլոգիական ոլորտի զարգացման 2026-2033 թվականների ռազմավարական ծրագիրը հաստատելու մասին",
+      "english_title": "Decision approving the Strategic Programme for the Development of the High-Tech Sector of Armenia 2026-2033",
+      "issuing_authority": "Government of the Republic of Armenia (drafted by the Ministry of High-Tech Industry)",
+      "note": "Draft on e-draft.am project 10219 (consultation 29 May - 14 June 2026; https://www.e-draft.am/projects/10219/about), with annexes making AI engineering and intelligent digital systems a priority direction, AI curricula at all education levels and mandatory cybersecurity standards for AI research bodies. e-draft marks it 'adopted', but no adopted N -L decision was found on ARLIS on 2026-10-12. Record as national_strategy (strategy, government-governance) once the adopted text and date are on ARLIS or gov.am.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "«ՀՀ կառավարության 2025 թվականի դեկտեմբերի 25-ի N 1966-Ն որոշման մեջ փոփոխություններ և լրացումներ կատարելու մասին» որոշման նախագիծ",
+      "english_title": "Draft decision amending Government Decision N 1966-N (AI HPC pilot programme)",
+      "issuing_authority": "Ministry of High-Tech Industry",
+      "note": "e-draft.am project 10424, consultation 20 July - 4 August 2026. Check adoption on ARLIS and update the N 1966-N record.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Personal Data Protection Agency AI guidance",
+      "english_title": "Personal Data Protection Agency guidance on AI (if any)",
+      "issuing_authority": "Personal Data Protection Agency (Ministry of Justice)",
+      "note": "pdpa.am returned HTTP 502 on 2026-10-12; no AI-specific guidance found via search. Re-check pdpa.am and moj.am.",
+      "found": "2026-10-12"
+    }
+  ]
 }
