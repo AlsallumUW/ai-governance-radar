@@ -10,18 +10,117 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "The Central African Republic has no published AI-specific law, strategy or guidance. Its only AI-relevant national instrument is the 2024 personal data protection law (Law 24.001), which defines profiling and gives people the right to know and contest the logic of automated decisions with legal effects. A national AI strategy for 2024-2028 has been mentioned by a minister but not published. Several government websites, including the official gazette, the government portal and the digital ministry, could not be accessed during this review.",
+    "lead_institutions": [
+      "Ministry of Posts, Telecommunications and Digital Economy",
+      "ARCEP-RCA",
+      "National Assembly"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was carried out on 12 October 2026, but the official gazette, the government portal, the digital ministry and parliament websites could not be accessed, so only one document could be read. The Central African Republic is marked for a later retry."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-9c48d5d2ebbc",
+      "official_title": "Loi n° 24.001 portant protection des données à caractère personnel",
+      "english_title": "Law No. 24.001 on the Protection of Personal Data",
+      "issuing_authority": "National Assembly (adopted) and President of the Republic (promulgated)",
+      "authority_type": "legislature",
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2024-01-25",
+      "effective_date": "2024-01-25",
+      "current_status": "Promulgated 25 January 2024; Art. 58 states it takes effect from its promulgation and is to be published in the Journal officiel (gazette reference not found online). Art. 57 gave the ministry in charge of the digital economy, posts and telecommunications 12 months to set up the data protection agency, with the ministry exercising its functions in the meantime; whether the agency has been established could not be confirmed from an official source. Copy published on the website of the telecom regulator ARCEP-RCA.",
+      "summary": "The Central African Republic's first general personal data protection law, applying to processing by controllers or processors established in the country and to processing that produces effects there, including public security and defence subject to specific derogations. It sets core processing principles, cross-border transfer rules, prior declaration/authorisation formalities, data subject rights and sanctions, and places compliance under an independent administrative data protection agency. It defines profiling and, under Art. 30, gives individuals a right to information allowing them to know and contest the logic of automated processing where a decision based on it produces legal effects on them.",
+      "ai_governance_relevance": "General data protection law governing personal data used in AI training and use; includes a profiling definition and a right to know and contest the logic of automated decisions (Art. 30).",
+      "source_url": "https://arcep.cf/documents/textes/lois/Loi_24_001_portant_protection_des_donnes_a_caractere_personnel.PDF",
+      "official_pdf_url": "https://arcep.cf/documents/textes/lois/Loi_24_001_portant_protection_des_donnes_a_caractere_personnel.PDF",
+      "official_webpage_url": null,
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-974a7402b11c",
+      "publisher_name": "Regulatory Authority for Electronic Communications and Posts (ARCEP-RCA)",
+      "jurisdiction_id": "CAF",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Central African Republic (national)",
+      "technology_scope": [
+        "data",
+        "automated processing"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [
+        "Journal officiel reference not found online"
+      ],
+      "language": "fr",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-32eecd170a22",
+      "evidence_reference": "curl (browser user agent, --max-time 60; first attempt reset, retry succeeded): 23-page scanned PDF (5.85 MB) read via pdftotext; promulgation date 25 January 2024 read from the signature page image (Fait à Bangui, le 25 JAN 2024, signed by President Faustin Archange Touadéra)"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-974a7402b11c",
+      "jurisdiction_id": "CAF",
+      "name": "National Assembly of the Central African Republic",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Adopted Law No. 24.001 of 25 January 2024 on the protection of personal data, the country's only identified national instrument bearing on AI (automated processing and profiling).",
+      "source_url": "https://arcep.cf/documents/textes/lois/Loi_24_001_portant_protection_des_donnes_a_caractere_personnel.PDF",
+      "authority_type": "legislature",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-32eecd170a22",
+      "url": "https://arcep.cf/documents/textes/lois/Loi_24_001_portant_protection_des_donnes_a_caractere_personnel.PDF",
+      "jurisdiction_ids": [
+        "CAF"
+      ],
+      "source_institutions": [
+        "Regulatory Authority for Electronic Communications and Posts (ARCEP-RCA)"
+      ],
+      "instrument_ids": [
+        "i-9c48d5d2ebbc"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60; first attempt reset, retry succeeded): 23-page scanned PDF (5.85 MB) read via pdftotext; promulgation date 25 January 2024 read from the signature page image (Fait à Bangui, le 25 JAN 2024, signed by President Faustin Archange Touadéra)",
+      "http_status": 200,
+      "final_url": "https://arcep.cf/documents/textes/lois/Loi_24_001_portant_protection_des_donnes_a_caractere_personnel.PDF",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "fr",
+      "error": null,
+      "content_type": "application/pdf"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "CAF",
     "country": "Central African Republic",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -33,10 +132,11 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_with_findings": [
       "binding-law",
+      "data-privacy"
+    ],
+    "categories_where_no_material_was_found": [
       "strategy",
       "government-governance",
       "ethics",
@@ -44,7 +144,6 @@
       "public-sector",
       "procurement",
       "cyber-security",
-      "data-privacy",
       "transparency",
       "standards",
       "sandbox",
@@ -55,33 +154,115 @@
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Central African Republic \"intelligence artificielle\" (stratégie OR réglementation OR éthique) government ministry official",
       "Central African Republic \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Central African Republic government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Central African Republic \"intelligence artificielle\" cybersecurity authority secure development safety guidelines",
-      "Central African Republic privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Central African Republic privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "République centrafricaine \"intelligence artificielle\" stratégie nationale ministère économie numérique",
+      "Centrafrique loi protection des données à caractère personnel promulguée",
+      "Central African Republic national artificial intelligence strategy 2025",
+      "Centrafrique \"intelligence artificielle\" ministère de l'économie numérique des postes et télécommunications document politique",
+      "arcep.cf documents textes lois décret numérique Centrafrique cybersécurité",
+      "Centrafrique stratégie nationale de développement du numérique \"intelligence artificielle\" 2030",
+      "Centrafrique loi cybersécurité lutte contre la cybercriminalité 2024 promulguée texte pdf",
+      "site:gouv.cf \"intelligence artificielle\"",
+      "site:arcep.cf",
+      "République centrafricaine Convention 108 adhésion protection des données Conseil de l'Europe",
+      "Gourna Zacko \"intelligence artificielle\" stratégie 2024-2028 Centrafrique",
+      "Centrafrique ministère économie numérique plan stratégique IA validation atelier PNUD UNESCO RAM"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. Journal officiel portal not reachable; assemblee-nationale.cf 502; gouvernement.cf, numerique.gouv.cf and sgg.cf reset/502. ARCEP-RCA site under construction (hosts law PDFs only). Law 24.001 read from the ARCEP-RCA scan (date from the signature page). BEAC/COBAC regional supervision not searched. Not a party to Convention 108. Units covered: Law: Data protection law 24.001 (2024) read in full from ARCEP-RCA; no AI-specific law, AI bill or deepfake/algorithm provision found. Journal officiel and National Assembly sites unreachable; searched, nothing else found.; Government: Searched for national AI strategy, digital strategy with AI pillar and public-sector AI guidance: a 2024-2028 AI strategy is claimed in a ministerial speech but no official text exists online (lead). Government portals (gouvernement.cf, numerique.gouv.cf, sgg.cf) unreachable.; Ministries: Searched education, health, justice, defence, finance, labour, interior AI documents: searched, nothing found.; Regulators: ARCEP-RCA (site under construction; only law PDFs hosted), data protection agency (no website found), cyber agency ANCY (no website found): no AI-specific documents found. Financial supervision is regional (BEAC/COBAC), not searched as national. No Sango-language AI material exists online; searches run in French and English.. Not reached: Journal officiel de la République centrafricaine (no online portal reachable); Assemblée nationale (assemblee-nationale.cf unreachable); gouvernement.cf / ministry digital economy sites (connection reset or 502). Could not verify: Journal officiel reference of Law 24.001; Whether the data protection agency has been set up; Official text of the 2024 cybersecurity law. strategy, government-governance, ethics, risk-assurance, public-sector, procurement, cyber-security, transparency, standards, sandbox, index-readiness, sectoral, generative-ai, drafts, international, historical: no material found.",
     "discovery_result_count": 10,
     "focused_result_count": 12
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-4866d80b25f7",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "CAF",
+      "instrument_id": "i-9c48d5d2ebbc",
+      "title": "Law No. 24.001 on the Protection of Personal Data",
+      "detail": "Added to the radar (published 2024-01-25).",
+      "from": null,
+      "to": null,
+      "source_url": "https://arcep.cf/documents/textes/lois/Loi_24_001_portant_protection_des_donnes_a_caractere_personnel.PDF",
+      "needs_review": false
+    },
+    {
+      "id": "c-b45bdff8fa94",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "CAF",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 1 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-fd3443d96d24",
+      "date": "2024-01-25",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "CAF",
+      "instrument_id": "i-9c48d5d2ebbc",
+      "title": "Personal data protection law (Law No. 24.001) promulgated",
+      "detail": "President promulgated Law No. 24.001 on the protection of personal data on 25 January 2024; it takes effect from promulgation (Art. 58).",
+      "from": null,
+      "to": null,
+      "source_url": "https://arcep.cf/documents/textes/lois/Loi_24_001_portant_protection_des_donnes_a_caractere_personnel.PDF",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Stratégie nationale sur l'intelligence artificielle 2024-2028",
+      "english_title": "National Artificial Intelligence Strategy 2024-2028",
+      "issuing_authority": "Ministry of Posts and Telecommunications / Ministry of Digital Economy",
+      "note": "Minister Justin Gourna Zacko reportedly said at an Abidjan digital event (2024) that the country had adopted a national AI strategy for 2024-2028; no official text or adoption act found on any government site. Possibly a reference to the digital pillar of the Plan national de développement 2024-2028.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Loi relative à la cybersécurité et à la lutte contre la cybercriminalité",
+      "english_title": "Law on Cybersecurity and the Fight against Cybercrime",
+      "issuing_authority": "National Assembly",
+      "note": "Voted 25 January 2024 per press reports; creates a national cybersecurity agency (ANCY). Not AI-specific; official text not found online. Check for any AI-relevant provisions once published.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Centre d'excellence en intelligence artificielle",
+      "english_title": "AI Centre of Excellence (partnership with Dure Technologies)",
+      "issuing_authority": "Government of the Central African Republic",
+      "note": "Announced 24 June 2025 per press; no official founding instrument found.",
+      "found": "2026-10-12"
+    }
+  ]
 }
