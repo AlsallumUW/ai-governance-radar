@@ -1,5 +1,5 @@
 {
-  "note": "Countries are deep-reviewed in wave order. Each country has a tier (see 'tiers' and PROTOCOL §6) that sets how much fits in one run: a tier A country is a run on its own; otherwise a run takes tier B and C countries in order until 'run_budget' points are used (B=1, C=0.5), skipping over A countries, which get their own runs. Move a country up by editing the waves; move it between tiers by editing 'tiers'. 'done' records the date of its last deep review. 'retry' lists countries whose deep review was limited by blocked official sites (fewer than 3 readable records), for a later pass.",
+  "note": "Countries are deep-reviewed in wave order. Each country has a tier (see 'tiers' and PROTOCOL §6) that sets how much fits in one run: a tier A country is a run on its own; otherwise a run takes tier B and C countries in order until 'run_budget' points are used (B=1, C=0.5), skipping over A countries, which get their own runs. Move a country up by editing the waves; move it between tiers by editing 'tiers'. 'done' records the date of its last deep review. 'retry' lists countries whose deep review was limited by blocked official sites (fewer than 3 readable records), for a later pass. 'thin' lists countries with a population over 20 million or a notable digital economy that ended a deep review with fewer than 10 records, for a longer catch-up pass after the backfill.",
   "run_budget": 6,
   "tier_cost": {
     "A": 6,
@@ -551,5 +551,10 @@
     "MMR",
     "PHL",
     "TJK"
+  ],
+  "thin": [
+    "THA",
+    "IDN",
+    "ZAF"
   ]
 }
