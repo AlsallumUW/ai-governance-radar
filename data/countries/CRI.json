@@ -10,18 +10,641 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Costa Rica governs AI mainly through policy led by the science and technology ministry (MICITT): the National AI Strategy 2024-2027, its 2025 action plan, and an AI chapter in the National Digital Technologies Code that guides public-sector use of AI. The judiciary has issued mandatory guidelines on generative AI use by judicial staff, and the education ministry has published an AI guide for teachers. The 2011 data protection law (Law 8968) is the only binding baseline, and several AI bills, including a main AI regulation bill, are still before the Legislative Assembly.",
+    "lead_institutions": [
+      "Ministry of Science, Innovation, Technology and Telecommunications (MICITT)",
+      "Poder Judicial"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was carried out on 12 October 2026 from documents read in full on official sites. The Legislative Assembly's bill status pages could not be checked directly, so the AI bills are tracked as leads, together with a planned AI sandbox and the national adoption of the ISO/IEC 42001 AI management standard."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-5542345403aa",
+      "authority_type": "ministry",
+      "sectors": [
+        "cross-sector"
+      ],
+      "organization_id": "o-0835f666724b",
+      "publisher_name": "Ministry of Science, Innovation, Technology and Telecommunications",
+      "jurisdiction_id": "CRI",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Costa Rica (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [
+        "i-91588a95563f"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "es",
+      "verification_date": "2026-10-11",
+      "first_recorded": "2026-10-11",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-45b1f4aab5f8",
+      "evidence_reference": "curl (browser user agent, --max-time 120): full 81-page PDF downloaded and read with pdftotext; title page states 'VERSIÓN 1.0. FECHA: 24 de octubre, 2024'; seven axes read at section 7; linked from MICITT's AI page",
+      "official_pdf_url": "https://www.micitt.go.cr/sites/default/files/2024-10/Estrategia%20Nacional%20de%20Inteligencia%20Artificial%20de%20Costa%20Rica%20ESP.pdf",
+      "official_webpage_url": "https://www.micitt.go.cr/gobierno_digital/inteligencia_artificial",
+      "source_kind": "official_document",
+      "official_title": "Estrategia Nacional de Inteligencia Artificial de Costa Rica 2024-2027",
+      "english_title": "National Artificial Intelligence Strategy of Costa Rica 2024-2027",
+      "issuing_authority": "Ministry of Science, Innovation, Technology and Telecommunications (MICITT)",
+      "categories": [
+        "strategy",
+        "ethics",
+        "government-governance",
+        "public-sector"
+      ],
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2024-10-24",
+      "summary": "Costa Rica's first national AI strategy (ENIA), led by MICITT and validated with the public sector, civil society, business and academia, with the objective of promoting the ethical, safe and responsible use, adoption and development of AI. It formally adopts the OECD definition of an AI system and organises public action in seven axes: ethical, safe and responsible AI; territorial articulation and economic development; R&D&I; smart government; talent and training; digital infrastructure and enabling technologies; and international leadership. Its first axis calls for an ethical and regulatory framework for AI, including regulatory sandboxes.",
+      "ai_governance_relevance": "Central national AI policy; the 2025 action plan, the CNTD AI chapter and the MEP teachers' guide are framed as its implementation.",
+      "current_status": "Version 1.0 dated 24 October 2024 is the version published on MICITT's AI page (81 pages). MICITT also publishes an official English version ('National Artificial Intelligence Strategy of Costa Rica', Feb 2025 upload) and an action plan (August 2025). The strategy covers 2024-2027.",
+      "source_url": "https://www.micitt.go.cr/sites/default/files/2024-10/Estrategia%20Nacional%20de%20Inteligencia%20Artificial%20de%20Costa%20Rica%20ESP.pdf",
+      "category": "strategy"
+    },
+    {
+      "id": "i-d5cd8a4ef00a",
+      "authority_type": "ministry",
+      "sectors": [
+        "cross-sector"
+      ],
+      "organization_id": "o-0835f666724b",
+      "publisher_name": "Ministry of Science, Innovation, Technology and Telecommunications",
+      "jurisdiction_id": "CRI",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Costa Rica (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-5542345403aa"
+      ],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "es",
+      "verification_date": "2026-10-11",
+      "first_recorded": "2026-10-11",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-7653ee7c980e",
+      "evidence_reference": "curl (browser user agent, --max-time 60): 55-page PDF downloaded and read with pdftotext; header 'VERSIÓN AGOSTO 2025'; linked from MICITT's AI page",
+      "official_pdf_url": "https://www.micitt.go.cr/sites/default/files/2025-10/Plan%20de%20Acci%C3%B3n%20ENIA%20-%20Versi%C3%B3n%2011%20agosto%202025%20Versi%C3%B3n%20Publicaci%C3%B3n.pdf",
+      "official_webpage_url": "https://www.micitt.go.cr/gobierno_digital/inteligencia_artificial",
+      "source_kind": "official_document",
+      "official_title": "Plan de Acción Estrategia Nacional de Inteligencia Artificial Costa Rica 2024-2027",
+      "english_title": "Action Plan of the National Artificial Intelligence Strategy of Costa Rica 2024-2027",
+      "issuing_authority": "Ministry of Science, Innovation, Technology and Telecommunications (MICITT)",
+      "categories": [
+        "strategy",
+        "sectoral",
+        "ethics",
+        "government-governance"
+      ],
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2025-08",
+      "summary": "Implementation plan for the ENIA 2024-2027, setting for each of its seven axes the lines of action, expected results, indicators, yearly targets to 2027 and responsible institutions. Under axis 1 it assigns MICITT to design the management model of an AI regulatory sandbox, the Ministry of Health to develop an ethical and regulatory framework for clinical diagnosis using AI software, and MIDEPLAN to develop an institutional framework and policy for AI use, alongside actions for PRODHAB, MEP and other agencies.",
+      "ai_governance_relevance": "Turns the national AI strategy into assigned, measurable commitments across ministries and regulators.",
+      "current_status": "Document headed 'VERSIÓN AGOSTO 2025'; the file name on MICITT's AI page reads 'Versión 11 agosto 2025 Versión Publicación'. Only the month is stated in the document, so publication_date is 2025-08.",
+      "source_url": "https://www.micitt.go.cr/sites/default/files/2025-10/Plan%20de%20Acci%C3%B3n%20ENIA%20-%20Versi%C3%B3n%2011%20agosto%202025%20Versi%C3%B3n%20Publicaci%C3%B3n.pdf",
+      "category": "strategy"
+    },
+    {
+      "id": "i-91588a95563f",
+      "authority_type": "ministry",
+      "sectors": [
+        "cross-sector"
+      ],
+      "organization_id": "o-0835f666724b",
+      "publisher_name": "Ministry of Science, Innovation, Technology and Telecommunications",
+      "jurisdiction_id": "CRI",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Costa Rica (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [
+        "i-5542345403aa"
+      ],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "es",
+      "verification_date": "2026-10-11",
+      "first_recorded": "2026-10-11",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-7c0a476e6b02",
+      "evidence_reference": "curl (browser user agent, --max-time 60): 67-page draft PDF read with pdftotext (cover 'VERSIÓN 12.03.2024', file version 21.03.24); consultation notice and dates read on MICITT's public consultations page",
+      "official_pdf_url": "https://www.micitt.go.cr/sites/default/files/transparencia/consulta-publica/Estrategia%20Nacional%20de%20Inteligencia%20Artificial%20(Version%2021.03.24)%20Para%20consulta%20pu%CC%81blica.pdf",
+      "official_webpage_url": "https://www.micitt.go.cr/transparencia/consultas-publicas",
+      "source_kind": "consultation_portal",
+      "official_title": "Estrategia Nacional de Inteligencia Artificial 2024-2027 - Consulta Pública no vinculante (versión 21.03.24)",
+      "english_title": "National Artificial Intelligence Strategy 2024-2027 - non-binding public consultation draft (version 21.03.24)",
+      "issuing_authority": "Ministry of Science, Innovation, Technology and Telecommunications (MICITT)",
+      "categories": [
+        "drafts",
+        "strategy",
+        "historical"
+      ],
+      "legal_status": "consultation_draft",
+      "lifecycle": "superseded",
+      "publication_date": "2024-03-22",
+      "summary": "Draft of the national AI strategy put to non-binding public consultation by MICITT under article 36 of the General Public Administration Law, with comments accepted from 22 March to 11 April 2024. The draft set guiding principles (human dignity, equality, human oversight, transparency, confidentiality, intellectual property protection), a governance model with an executive committee and territorial tables, and a situational analysis of Costa Rica.",
+      "ai_governance_relevance": "Consultation stage of the ENIA; kept for the timeline.",
+      "current_status": "Consultation ran 22 March - 11 April 2024 (MICITT public consultations page). Superseded by the final ENIA version 1.0 of 24 October 2024.",
+      "source_url": "https://www.micitt.go.cr/sites/default/files/transparencia/consulta-publica/Estrategia%20Nacional%20de%20Inteligencia%20Artificial%20(Version%2021.03.24)%20Para%20consulta%20pu%CC%81blica.pdf",
+      "category": "drafts"
+    },
+    {
+      "id": "i-b7a9959ceed0",
+      "authority_type": "ministry",
+      "sectors": [
+        "cross-sector"
+      ],
+      "organization_id": "o-0835f666724b",
+      "publisher_name": "Ministry of Science, Innovation, Technology and Telecommunications",
+      "jurisdiction_id": "CRI",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": "2026-04-30",
+      "scope": "Costa Rica (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-5542345403aa"
+      ],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "es",
+      "verification_date": "2026-10-11",
+      "first_recorded": "2026-10-11",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-40892a54aa2f",
+      "evidence_reference": "curl (browser user agent, --max-time 60): 230-page PDF read with pdftotext; version-control table, scope ('Alcance') and chapter 7 'Inteligencia Artificial' (pp. 184-206) read; linked from MICITT's Digital Governance page",
+      "official_pdf_url": "https://www.micitt.go.cr/sites/default/files/GobernanzaDigital/CNTD%20version%202026%20IPv6%20EMA.pdf",
+      "official_webpage_url": "https://www.micitt.go.cr/gobierno-digital/gobernanza-digital",
+      "source_kind": "official_document",
+      "official_title": "Código Nacional de Tecnologías Digitales",
+      "english_title": "National Digital Technologies Code",
+      "issuing_authority": "Ministry of Science, Innovation, Technology and Telecommunications (MICITT), Directorate of Digital Governance",
+      "categories": [
+        "public-sector",
+        "ethics",
+        "transparency",
+        "risk-assurance",
+        "generative-ai"
+      ],
+      "legal_status": "administrative_guideline",
+      "lifecycle": "published",
+      "publication_date": "2024-10-24",
+      "summary": "MICITT's code of guidelines for technology projects in the Costa Rican public sector; chapter 7 (added in version 5 of 24 October 2024, aligned with the ENIA) sets AI guidelines on governance and ethics, security, data, transparency and user rights. It asks entities to adopt institutional AI governance policies, keep human control over autonomous security systems, run impact assessments to avoid discrimination in essential, health, education, financial, benefits and recruitment services, and tell people when they interact with an AI system and label AI-generated content 'Generado con Inteligencia Artificial'. It cites reference standards such as ISO/IEC 42001, ISO/IEC 38507 and the NIST AI RMF.",
+      "ai_governance_relevance": "Main operational AI guidance for public-sector institutions.",
+      "current_status": "The version-control table records version 1.0 (16-02-2020, officialisation and entry into force), version 5 (24-10-2024, inclusion of chapter 7 on AI) and version 6 (30-04-2026, chapter 8 on IPv6); the 2026 version is the one published on MICITT's Digital Governance page. The code says it presents guidelines ('pautas') for public-sector technology projects; its binding force is not stated in the AI chapter. publication_date is the date of the version that added the AI chapter.",
+      "source_url": "https://www.micitt.go.cr/sites/default/files/GobernanzaDigital/CNTD%20version%202026%20IPv6%20EMA.pdf",
+      "category": "public-sector"
+    },
+    {
+      "id": "i-1d7da381d633",
+      "authority_type": "legislature",
+      "sectors": [
+        "cross-sector"
+      ],
+      "organization_id": "o-d24993864b74",
+      "publisher_name": "Legislative Assembly of Costa Rica",
+      "jurisdiction_id": "CRI",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "effective_date": "2011-09-05",
+      "last_amended_date": null,
+      "scope": "Costa Rica (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "es",
+      "verification_date": "2026-10-11",
+      "first_recorded": "2026-10-11",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-e09dc30bced4",
+      "evidence_reference": "curl (browser user agent, --max-time 60) on SCIJ (sinalevi.go.cr, PGR): full text loaded via the portal's own text endpoint and read (arts. 1-34 and transitories); Gaceta number and date from PRODHAB's official legislation page",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.prodhab.go.cr/acercade/normativa/",
+      "source_kind": "legislation_portal",
+      "official_title": "Ley de Protección de la Persona frente al Tratamiento de sus Datos Personales (Ley N.º 8968)",
+      "english_title": "Law on the Protection of Persons with regard to the Processing of their Personal Data (Law No. 8968)",
+      "issuing_authority": "Legislative Assembly of Costa Rica",
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2011-09-05",
+      "summary": "Costa Rica's general data protection law, guaranteeing the right to informational self-determination with respect to automated or manual processing of personal data held by public or private bodies. It sets principles of consent, data quality and security, special protection for sensitive data, data subject rights, and creates the Agency for the Protection of Inhabitants' Data (PRODHAB) with powers to register databases, resolve complaints and impose sanctions. It contains no AI-specific provision but governs personal data used to train and operate AI systems.",
+      "ai_governance_relevance": "Baseline legal framework for personal data in AI systems; cited by the CNTD AI chapter and the MEP AI guide.",
+      "current_status": "Text read on the Attorney General's legal information system (SCIJ), version 1 of 1 ('Rige a partir de su publicación'; signed 7 July 2011). PRODHAB's legislation page states it was approved on 27 June 2011, published in La Gaceta No. 170 of 5 September 2011, has not been amended, and is regulated by Executive Decree 37554-JP (2012, amended by 40008-JP and 41582).",
+      "source_url": "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=70975&param2=85989&param3=1",
+      "category": "data-privacy"
+    },
+    {
+      "id": "i-56bee115f5e3",
+      "authority_type": "judiciary",
+      "sectors": [
+        "justice"
+      ],
+      "organization_id": "o-5e620f8fde91",
+      "publisher_name": "Judicial Branch of Costa Rica",
+      "jurisdiction_id": "CRI",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Costa Rica (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "es",
+      "verification_date": "2026-10-11",
+      "first_recorded": "2026-10-11",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-7b960fb0c430",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full circular text retrieved through the Nexus.PJ (Poder Judicial) search service's own API and read; the document page itself is a JavaScript application",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://nexuspj.poder-judicial.go.cr/document/avi-1-0003-15389",
+      "source_kind": "official_publication",
+      "official_title": "Circular N.º 31-2026: Reglas y lineamientos éticos para el uso de Inteligencia Artificial Generativa (ChatGPT, Gemini y NotebookLM) por parte de las personas servidoras judiciales",
+      "english_title": "Circular No. 31-2026: Ethical rules and guidelines for the use of generative AI (ChatGPT, Gemini and NotebookLM) by judicial staff",
+      "issuing_authority": "Superior Council of the Judicial Branch (communicated by the General Secretariat of the Supreme Court of Justice)",
+      "categories": [
+        "public-sector",
+        "generative-ai",
+        "ethics",
+        "data-privacy"
+      ],
+      "legal_status": "administrative_policy_mandatory_in_scope",
+      "lifecycle": "in_force",
+      "publication_date": "2026-02-20",
+      "summary": "Communicates the 'basic guidelines for the use of authorised generative AI in the Judicial Branch', approved by the Superior Council on 12 February 2026 and stated to be of mandatory compliance for all judicial offices and staff. It sets a principle of human responsibility and non-delegation (the signer is solely responsible and must verify all AI output, including legal citations), requires staff to disable use of their data for model training before using tools such as ChatGPT or Gemini and otherwise prohibits entering sensitive or personal data, and lays down ethical principles on transparency, confidentiality and professional competence.",
+      "ai_governance_relevance": "First binding internal rule on generative AI use in the Costa Rican justice system.",
+      "current_status": "Circular dated San José, 20 February 2026, for publication once in the Boletín Judicial (published in Boletín Judicial No. 39 of 26 February 2026). On 13 August 2026 the Superior Council, acting on an internal audit report, instructed the Planning and IT directorates to formalise institutional generative-AI policies (see leads).",
+      "source_url": "https://nexuspj.poder-judicial.go.cr/document/avi-1-0003-15389",
+      "category": "public-sector"
+    },
+    {
+      "id": "i-0f38fa19b5f2",
+      "authority_type": "ministry",
+      "sectors": [
+        "education"
+      ],
+      "organization_id": "o-01025d82de93",
+      "publisher_name": "Ministry of Public Education",
+      "jurisdiction_id": "CRI",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Costa Rica (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "es",
+      "verification_date": "2026-10-11",
+      "first_recorded": "2026-10-11",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-3c355bbab734",
+      "evidence_reference": "curl (browser user agent, --max-time 60): 80-page PDF read with pdftotext; cataloguing data states 1st ed., MEP, 2026",
+      "official_pdf_url": "https://www.mep.go.cr/sites/default/files/2026-02/GuiaDocenteIA.pdf",
+      "official_webpage_url": null,
+      "source_kind": "official_document",
+      "official_title": "Inteligencia Artificial en clase: guía para docentes",
+      "english_title": "Artificial Intelligence in the Classroom: Guide for Teachers",
+      "issuing_authority": "Ministry of Public Education (MEP), Academic Vice-Ministry, Directorate of Technological Resources in Education",
+      "categories": [
+        "sectoral",
+        "generative-ai",
+        "ethics"
+      ],
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2026",
+      "summary": "MEP's guide for primary and secondary teachers on using AI tools in teaching, prepared with the UN system in Costa Rica, UNESCO and ULACIT and presented as an instrument for implementing the national AI strategy in classrooms. It covers ethical use, personal data protection under Law 8968, critical thinking, AI in projects and assessments, and the risks of plagiarism and dependence, with the principle that AI complements and does not replace the teacher.",
+      "ai_governance_relevance": "Ministry-level AI guidance for the education sector.",
+      "current_status": "First edition, San José: MEP, 2026 (ISBN 978-9977-60-644-6); PDF hosted on mep.go.cr. MEP news of 20 March 2026 refers to the guide. No day/month of publication is stated in the document.",
+      "source_url": "https://www.mep.go.cr/sites/default/files/2026-02/GuiaDocenteIA.pdf",
+      "category": "sectoral"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-0835f666724b",
+      "jurisdiction_id": "CRI",
+      "name": "Ministry of Science, Innovation, Technology and Telecommunications",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Lead ministry for digital government and AI; issued the National AI Strategy 2024-2027 and its 2025 action plan, and maintains the National Digital Technologies Code (CNTD) whose chapter 7 sets AI guidelines for public-sector technology projects.",
+      "source_url": "https://www.micitt.go.cr/",
+      "authority_type": "ministry",
+      "government_level": "national"
+    },
+    {
+      "id": "o-01025d82de93",
+      "jurisdiction_id": "CRI",
+      "name": "Ministry of Public Education",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Issued the teachers' guide on using AI in primary and secondary classrooms (2026), framed as an instrument for implementing the national AI strategy in education.",
+      "source_url": "https://www.mep.go.cr/",
+      "authority_type": "ministry",
+      "government_level": "national"
+    },
+    {
+      "id": "o-5e620f8fde91",
+      "jurisdiction_id": "CRI",
+      "name": "Judicial Branch of Costa Rica",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Its Superior Council adopted, and the Corte's General Secretariat communicated (Circular 31-2026), mandatory guidelines for judicial staff's use of authorised generative AI tools.",
+      "source_url": "https://www.poder-judicial.go.cr/",
+      "authority_type": "judiciary",
+      "government_level": "national"
+    },
+    {
+      "id": "o-d24993864b74",
+      "jurisdiction_id": "CRI",
+      "name": "Legislative Assembly of Costa Rica",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Enacted Law 8968 on personal data protection; several AI bills (files 23.771, 23.919, 24.484, 24.875) are pending and none has been approved.",
+      "source_url": "https://www.asamblea.go.cr/",
+      "authority_type": "legislature",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-45b1f4aab5f8",
+      "url": "https://www.micitt.go.cr/sites/default/files/2024-10/Estrategia%20Nacional%20de%20Inteligencia%20Artificial%20de%20Costa%20Rica%20ESP.pdf",
+      "jurisdiction_ids": [
+        "CRI"
+      ],
+      "source_institutions": [
+        "Ministry of Science, Innovation, Technology and Telecommunications"
+      ],
+      "instrument_ids": [
+        "i-5542345403aa"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "ethics",
+        "government-governance",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser user agent, --max-time 120): full 81-page PDF downloaded and read with pdftotext; title page states 'VERSIÓN 1.0. FECHA: 24 de octubre, 2024'; seven axes read at section 7; linked from MICITT's AI page",
+      "http_status": 200,
+      "final_url": "https://www.micitt.go.cr/sites/default/files/2024-10/Estrategia%20Nacional%20de%20Inteligencia%20Artificial%20de%20Costa%20Rica%20ESP.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "es",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-7653ee7c980e",
+      "url": "https://www.micitt.go.cr/sites/default/files/2025-10/Plan%20de%20Acci%C3%B3n%20ENIA%20-%20Versi%C3%B3n%2011%20agosto%202025%20Versi%C3%B3n%20Publicaci%C3%B3n.pdf",
+      "jurisdiction_ids": [
+        "CRI"
+      ],
+      "source_institutions": [
+        "Ministry of Science, Innovation, Technology and Telecommunications"
+      ],
+      "instrument_ids": [
+        "i-d5cd8a4ef00a"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "sectoral",
+        "ethics",
+        "government-governance"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser user agent, --max-time 60): 55-page PDF downloaded and read with pdftotext; header 'VERSIÓN AGOSTO 2025'; linked from MICITT's AI page",
+      "http_status": 200,
+      "final_url": "https://www.micitt.go.cr/sites/default/files/2025-10/Plan%20de%20Acci%C3%B3n%20ENIA%20-%20Versi%C3%B3n%2011%20agosto%202025%20Versi%C3%B3n%20Publicaci%C3%B3n.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "es",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-7c0a476e6b02",
+      "url": "https://www.micitt.go.cr/sites/default/files/transparencia/consulta-publica/Estrategia%20Nacional%20de%20Inteligencia%20Artificial%20(Version%2021.03.24)%20Para%20consulta%20pu%CC%81blica.pdf",
+      "jurisdiction_ids": [
+        "CRI"
+      ],
+      "source_institutions": [
+        "Ministry of Science, Innovation, Technology and Telecommunications"
+      ],
+      "instrument_ids": [
+        "i-91588a95563f"
+      ],
+      "categories_reviewed": [
+        "drafts",
+        "strategy",
+        "historical"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser user agent, --max-time 60): 67-page draft PDF read with pdftotext (cover 'VERSIÓN 12.03.2024', file version 21.03.24); consultation notice and dates read on MICITT's public consultations page",
+      "http_status": 200,
+      "final_url": "https://www.micitt.go.cr/sites/default/files/transparencia/consulta-publica/Estrategia%20Nacional%20de%20Inteligencia%20Artificial%20(Version%2021.03.24)%20Para%20consulta%20pu%CC%81blica.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "es",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-40892a54aa2f",
+      "url": "https://www.micitt.go.cr/sites/default/files/GobernanzaDigital/CNTD%20version%202026%20IPv6%20EMA.pdf",
+      "jurisdiction_ids": [
+        "CRI"
+      ],
+      "source_institutions": [
+        "Ministry of Science, Innovation, Technology and Telecommunications"
+      ],
+      "instrument_ids": [
+        "i-b7a9959ceed0"
+      ],
+      "categories_reviewed": [
+        "public-sector",
+        "ethics",
+        "transparency",
+        "risk-assurance",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser user agent, --max-time 60): 230-page PDF read with pdftotext; version-control table, scope ('Alcance') and chapter 7 'Inteligencia Artificial' (pp. 184-206) read; linked from MICITT's Digital Governance page",
+      "http_status": 200,
+      "final_url": "https://www.micitt.go.cr/sites/default/files/GobernanzaDigital/CNTD%20version%202026%20IPv6%20EMA.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "es",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-e09dc30bced4",
+      "url": "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=70975&param2=85989&param3=1",
+      "jurisdiction_ids": [
+        "CRI"
+      ],
+      "source_institutions": [
+        "Legislative Assembly of Costa Rica"
+      ],
+      "instrument_ids": [
+        "i-1d7da381d633"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser user agent, --max-time 60) on SCIJ (sinalevi.go.cr, PGR): full text loaded via the portal's own text endpoint and read (arts. 1-34 and transitories); Gaceta number and date from PRODHAB's official legislation page",
+      "http_status": 200,
+      "final_url": "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=70975&param2=85989&param3=1",
+      "link_status": "reachable",
+      "page_title": "Sistema Costarricense de Información Jurídica",
+      "document_language": "es",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-7b960fb0c430",
+      "url": "https://nexuspj.poder-judicial.go.cr/document/avi-1-0003-15389",
+      "jurisdiction_ids": [
+        "CRI"
+      ],
+      "source_institutions": [
+        "Judicial Branch of Costa Rica"
+      ],
+      "instrument_ids": [
+        "i-56bee115f5e3"
+      ],
+      "categories_reviewed": [
+        "public-sector",
+        "generative-ai",
+        "ethics",
+        "data-privacy"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser user agent, --max-time 60): full circular text retrieved through the Nexus.PJ (Poder Judicial) search service's own API and read; the document page itself is a JavaScript application",
+      "http_status": 200,
+      "final_url": "https://nexuspj.poder-judicial.go.cr/document/avi-1-0003-15389",
+      "link_status": "reachable",
+      "page_title": "Nexus.PJ",
+      "document_language": "es",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-3c355bbab734",
+      "url": "https://www.mep.go.cr/sites/default/files/2026-02/GuiaDocenteIA.pdf",
+      "jurisdiction_ids": [
+        "CRI"
+      ],
+      "source_institutions": [
+        "Ministry of Public Education"
+      ],
+      "instrument_ids": [
+        "i-0f38fa19b5f2"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "generative-ai",
+        "ethics"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser user agent, --max-time 60): 80-page PDF read with pdftotext; cataloguing data states 1st ed., MEP, 2026",
+      "http_status": 200,
+      "final_url": "https://www.mep.go.cr/sites/default/files/2026-02/GuiaDocenteIA.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "es",
+      "error": null,
+      "content_type": "application/pdf"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "CRI",
     "country": "Costa Rica",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -33,55 +656,333 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_with_findings": [
       "binding-law",
-      "strategy",
-      "government-governance",
+      "data-privacy",
+      "drafts",
       "ethics",
-      "risk-assurance",
+      "generative-ai",
+      "government-governance",
+      "historical",
       "public-sector",
+      "risk-assurance",
+      "sectoral",
+      "strategy",
+      "transparency"
+    ],
+    "categories_where_no_material_was_found": [
       "procurement",
       "cyber-security",
-      "data-privacy",
-      "transparency",
       "standards",
       "sandbox",
       "index-readiness",
-      "sectoral",
-      "generative-ai",
-      "drafts",
-      "international",
-      "historical"
+      "international"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Costa Rica \"inteligencia artificial\" (estrategia OR regulación OR ética) government ministry official",
       "Costa Rica \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Costa Rica government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Costa Rica \"inteligencia artificial\" cybersecurity authority secure development safety guidelines",
-      "Costa Rica privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Costa Rica privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "Estrategia Nacional de Inteligencia Artificial Costa Rica 2024-2027 MICITT pdf",
+      "Costa Rica proyecto de ley inteligencia artificial expediente Asamblea Legislativa",
+      "Poder Judicial Costa Rica lineamientos uso inteligencia artificial generativa Corte Plena circular",
+      "Costa Rica Convenio 108 protección de datos adhesión Consejo de Europa ley aprobación Asamblea Legislativa",
+      "PRODHAB inteligencia artificial guía OR lineamientos OR resolución datos personales",
+      "Costa Rica \"decreto ejecutivo\" OR \"directriz\" \"inteligencia artificial\" La Gaceta 2025 OR 2026",
+      "Ministerio de Educación Pública Costa Rica lineamientos inteligencia artificial uso docentes estudiantes MEP documento",
+      "SUGEF OR CONASSIF OR SUTEL OR \"Banco Central de Costa Rica\" inteligencia artificial reglamento OR lineamientos OR acuerdo",
+      "expediente 24.484 inteligencia artificial Costa Rica proyecto de ley",
+      "Costa Rica Código Penal reforma deepfake \"inteligencia artificial\" ley aprobada Asamblea Legislativa 2025 2026",
+      "INTECO norma INTE ISO/IEC 42001 inteligencia artificial Costa Rica adopción",
+      "Ministerio de Salud Costa Rica inteligencia artificial marco ético diagnóstico clínico software decreto OR lineamiento",
+      "sandbox regulatorio inteligencia artificial Costa Rica MICITT 2025 2026",
+      "Nexus.PJ: \"Lineamientos básicos para el uso de la Inteligencia Artificial Generativa\"",
+      "MICITT site: Inteligencia Artificial, Gobernanza Digital, Ciberseguridad, Consultas Públicas, Políticas Planes y Estrategias pages",
+      "PRODHAB site: normativa (Ley 8968, reglamento, directrices)"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. asamblea.go.cr bill status pages not reached (search results only); Ministry of Health library web search only; CoE treaty office 403. CNTD publication_date 2024-10-24 (version adding AI chapter), current v6 2026-04-30; administrative_guideline (self-described 'pautas'). Action plan 'agosto 2025' (file name 11 Aug). MEP guide year-only. Circular 31-2026 read via Nexus.PJ search API. ETD 2023-2027 and National Cybersecurity Strategy mention AI in passing (scope test). Convention 108: Bill 23.097 states intention to accede only; no act found. Units covered: Law: SCIJ (PGR) for Law 8968 (full text read); web search of La Gaceta/SCIJ for AI decrees and directives (none found); Assembly AI bills identified (23.771, 23.919, 24.484, 24.875) and held as leads; no deepfake or algorithm law enacted.; Government: MICITT AI, Digital Governance, Cybersecurity, public consultations and policies pages read: ENIA 2024-2027, action plan 2025, consultation draft 2024, CNTD AI chapter recorded; ETD 2023-2027 and National Cybersecurity Strategy 2023-2027 checked (AI only in passing).; Ministries: Education (MEP guide recorded); Health (AI clinical-diagnosis regulation searched, no official text: lead); Judiciary (Circular 31-2026 recorded); justice/defence/finance/labour/interior searched, nothing found.; Regulators: PRODHAB legislation and site searched (no AI guidance); SUGEF/CONASSIF, SUTEL, BCCR searched (no AI-specific document); INTECO 42001 adoption held as lead.. Not reached: asamblea.go.cr expediente status pages (bill status taken from search results only); Ministry of Health document library (searched via web only); Council of Europe treaty office (HTTP 403). Could not verify: Convention 108: no Costa Rican ratification or accession act found; a bill (file 23.097) states only an intention to accede; CoE treaty office returned 403.; Current status of AI bills on asamblea.go.cr.. procurement, cyber-security, standards, sandbox, index-readiness, international: no material found.",
     "discovery_result_count": 14,
     "focused_result_count": 11
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-3ce184271ace",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "CRI",
+      "instrument_id": "i-5542345403aa",
+      "title": "National Artificial Intelligence Strategy of Costa Rica 2024-2027",
+      "detail": "Added to the radar (published 2024-10-24).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.micitt.go.cr/sites/default/files/2024-10/Estrategia%20Nacional%20de%20Inteligencia%20Artificial%20de%20Costa%20Rica%20ESP.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-c75c032b0a38",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "CRI",
+      "instrument_id": "i-d5cd8a4ef00a",
+      "title": "Action Plan of the National Artificial Intelligence Strategy of Costa Rica 2024-2027",
+      "detail": "Added to the radar (published 2025-08).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.micitt.go.cr/sites/default/files/2025-10/Plan%20de%20Acci%C3%B3n%20ENIA%20-%20Versi%C3%B3n%2011%20agosto%202025%20Versi%C3%B3n%20Publicaci%C3%B3n.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-df764489357a",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "CRI",
+      "instrument_id": "i-91588a95563f",
+      "title": "National Artificial Intelligence Strategy 2024-2027 - non-binding public consultation draft (version 21.03.24)",
+      "detail": "Added to the radar (published 2024-03-22).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.micitt.go.cr/sites/default/files/transparencia/consulta-publica/Estrategia%20Nacional%20de%20Inteligencia%20Artificial%20(Version%2021.03.24)%20Para%20consulta%20pu%CC%81blica.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-b03e1997a667",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "CRI",
+      "instrument_id": "i-b7a9959ceed0",
+      "title": "National Digital Technologies Code",
+      "detail": "Added to the radar (published 2024-10-24).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.micitt.go.cr/sites/default/files/GobernanzaDigital/CNTD%20version%202026%20IPv6%20EMA.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-70623b9d6e8c",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "CRI",
+      "instrument_id": "i-1d7da381d633",
+      "title": "Law on the Protection of Persons with regard to the Processing of their Personal Data (Law No. 8968)",
+      "detail": "Added to the radar (published 2011-09-05).",
+      "from": null,
+      "to": null,
+      "source_url": "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=70975&param2=85989&param3=1",
+      "needs_review": false
+    },
+    {
+      "id": "c-5b661e5d5d78",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "CRI",
+      "instrument_id": "i-56bee115f5e3",
+      "title": "Circular No. 31-2026: Ethical rules and guidelines for the use of generative AI (ChatGPT, Gemini and NotebookLM) by judicial staff",
+      "detail": "Added to the radar (published 2026-02-20).",
+      "from": null,
+      "to": null,
+      "source_url": "https://nexuspj.poder-judicial.go.cr/document/avi-1-0003-15389",
+      "needs_review": false
+    },
+    {
+      "id": "c-9d1dad86ed13",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "CRI",
+      "instrument_id": "i-0f38fa19b5f2",
+      "title": "Artificial Intelligence in the Classroom: Guide for Teachers",
+      "detail": "Added to the radar (published 2026).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.mep.go.cr/sites/default/files/2026-02/GuiaDocenteIA.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-3f5c3e08b135",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "CRI",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 7 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-da9020b27e97",
+      "date": "2026-02-20",
+      "recorded": "2026-10-11",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "CRI",
+      "instrument_id": "i-56bee115f5e3",
+      "title": "Judiciary issues generative AI guidelines (Circular 31-2026)",
+      "detail": "Superior Council session 12-2026 of 12 February 2026 approved the guidelines; circular dated 20 February 2026.",
+      "from": null,
+      "to": null,
+      "source_url": "https://nexuspj.poder-judicial.go.cr/document/avi-1-0003-15389",
+      "needs_review": false
+    },
+    {
+      "id": "c-c0e989c4aa4a",
+      "date": "2024-10-24",
+      "recorded": "2026-10-11",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "CRI",
+      "instrument_id": "i-5542345403aa",
+      "title": "National AI Strategy 2024-2027 published",
+      "detail": "ENIA version 1.0 dated 24 October 2024.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.micitt.go.cr/sites/default/files/2024-10/Estrategia%20Nacional%20de%20Inteligencia%20Artificial%20de%20Costa%20Rica%20ESP.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-6f8393f37864",
+      "date": "2024-10-24",
+      "recorded": "2026-10-11",
+      "kind": "world",
+      "type": "revised",
+      "jurisdiction_id": "CRI",
+      "instrument_id": "i-b7a9959ceed0",
+      "title": "National Digital Technologies Code adds AI chapter",
+      "detail": "CNTD version 5 (24-10-2024) includes chapter 7 on Artificial Intelligence.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.micitt.go.cr/sites/default/files/GobernanzaDigital/CNTD%20version%202026%20IPv6%20EMA.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-c18e3783db95",
+      "date": "2024-03-22",
+      "recorded": "2026-10-11",
+      "kind": "world",
+      "type": "consultation",
+      "jurisdiction_id": "CRI",
+      "instrument_id": "i-91588a95563f",
+      "title": "National AI Strategy draft put to public consultation",
+      "detail": "MICITT non-binding public consultation on the ENIA 2024-2027 draft, 22 March - 11 April 2024.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.micitt.go.cr/transparencia/consultas-publicas",
+      "needs_review": false
+    },
+    {
+      "id": "c-78ad995fb79b",
+      "date": "2011-09-05",
+      "recorded": "2026-10-11",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "CRI",
+      "instrument_id": "i-1d7da381d633",
+      "title": "Data protection Law 8968 published",
+      "detail": "Law 8968 published in La Gaceta No. 170; in force from publication.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.prodhab.go.cr/acercade/normativa/",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Expediente 23.771: Ley de Regulación de la Inteligencia Artificial en Costa Rica",
+      "english_title": "Bill 23.771: Law on the Regulation of Artificial Intelligence in Costa Rica",
+      "issuing_authority": "Legislative Assembly of Costa Rica",
+      "note": "Filed 30 May 2023; substitute text approved by the Science, Technology and Education Committee on 12 September 2024 (affirmative majority report), on the plenary agenda since October 2024. Not approved as of October 2026 per secondary sources; status not confirmed on asamblea.go.cr. Pending bill.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Expediente 23.919: Ley para la promoción responsable de la Inteligencia Artificial en Costa Rica",
+      "english_title": "Bill 23.919: Law for the Responsible Promotion of AI in Costa Rica",
+      "issuing_authority": "Legislative Assembly of Costa Rica",
+      "note": "Filed 6 September 2023; reported by committee per secondary sources. Pending, not approved.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Expediente 24.484: Ley para la implementación de sistemas de inteligencia artificial (IA)",
+      "english_title": "Bill 24.484: Law for the Implementation of AI Systems",
+      "issuing_authority": "Legislative Assembly of Costa Rica",
+      "note": "Filed 6 August 2024; would prohibit e.g. manipulative and social-scoring AI and unauthorised synthetic use of a person's voice or image (art. 12). Pending, not approved.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Expediente 24.875: reforma al Código Electoral (artículo 136 bis) sobre uso de inteligencia artificial en propaganda electoral",
+      "english_title": "Bill 24.875: amendment to the Electoral Code (art. 136 bis) on AI in electoral propaganda",
+      "issuing_authority": "Legislative Assembly of Costa Rica",
+      "note": "Bill text found at https://www.asamblea.go.cr/sd/referencia_cedil/TA_14_2025/Vinculos/10_Exp24875.pdf (not read in full). Pending.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Reglamento para el control del diagnóstico clínico en salud mediante software con algoritmos y tecnologías de inteligencia artificial",
+      "english_title": "Regulation on the control of clinical diagnosis in health using software with algorithms and AI technologies",
+      "issuing_authority": "Ministry of Health",
+      "note": "ENIA action plan (line 1.1.2) assigns the Ministry of Health a 2025 target to formalise this ethical/regulatory framework; a law-firm note describes a regulation 'pending entry into force'. No official text, decree number or Gaceta publication found.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "INTE/ISO/IEC 42001:2026 Sistema de gestión de inteligencia artificial",
+      "english_title": "INTE/ISO/IEC 42001:2026 AI management system (national adoption)",
+      "issuing_authority": "Instituto de Normas Técnicas de Costa Rica (INTECO)",
+      "note": "National adoption of ISO/IEC 42001 reported as officialised in March 2026 (INTECO blog, news). Standard text is sold, and no official record with an exact date was read; INTECO's monthly new-standards list has since been overwritten.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Políticas institucionales para la Inteligencia Artificial Generativa del Poder Judicial",
+      "english_title": "Judicial Branch institutional policies on generative AI",
+      "issuing_authority": "Superior Council of the Judicial Branch",
+      "note": "Superior Council minutes 068-2026 (13 August 2026, art. XXVII, Nexus.PJ act-1-0003-9079-27) instructed the Planning and IT directorates to formalise institutional generative-AI policies immediately, following audit report 1084-56-IAC-SATI-2026. Record once adopted.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Sandbox regulatorio de IA (modelo de gestión)",
+      "english_title": "AI regulatory sandbox management model",
+      "issuing_authority": "MICITT",
+      "note": "ENIA action plan line 1.1.1: MICITT to design the management model of an AI regulatory sandbox (2025 target). No published sandbox document found.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Estrategia de Transformación Digital 2023-2027",
+      "english_title": "Digital Transformation Strategy 2023-2027",
+      "issuing_authority": "MICITT",
+      "note": "https://www.micitt.go.cr/sites/default/files/GobernanzaDigital/ETD%202023-2027%20V%20FINAL%2030-08-2023_v2.pdf - digital strategy with AI only as project lines (define the ENIA; AI support for clinical diagnosis in EDUS); no AI pillar, so not recorded. The 2018-2022 strategy mentions AI only in passing.",
+      "found": "2026-10-11"
+    }
+  ]
 }
