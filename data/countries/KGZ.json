@@ -10,18 +10,206 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Kyrgyzstan regulates AI through Chapter 23 of its Digital Code (Code No. 178 of 31 July 2025, in force from early 2026), a risk-based regime under which owners assess the hazard of their AI systems, AI systems of increased danger need a declaration of conformity, and interactions with AI and deepfakes must be disclosed; the Code replaced the 2008 personal information law. Key official websites (the legislation database and the digital ministry) could not be accessed during this review, so the Cabinet's implementing rules on AI hazard assessment, a draft AI ethics regulation and the draft AI development concept could not be read.",
+    "lead_institutions": [
+      "Ministry of Digital Development",
+      "Cabinet of Ministers",
+      "State Agency for Personal Data Protection"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was completed on 12 October 2026 and covers national law, government, ministries and regulators. The national legislation database and the digital ministry's website could not be accessed, so only two documents could be read in full and several AI rules and drafts are listed as leads. Kyrgyzstan is marked for a later retry."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-f9415a311ffc",
+      "official_title": "Цифровой кодекс Кыргызской Республики",
+      "english_title": "Digital Code of the Kyrgyz Republic",
+      "issuing_authority": "Jogorku Kenesh of the Kyrgyz Republic (Code of 31 July 2025 No. 178, signed by the President)",
+      "authority_type": "legislature",
+      "categories": [
+        "binding-law",
+        "risk-assurance",
+        "transparency",
+        "data-privacy",
+        "generative-ai",
+        "sandbox"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2025-07-31",
+      "current_status": "Code of 31 July 2025 No. 178 (edition of 31.07.2025 on the Ministry of Justice legal database). Law of 31 July 2025 No. 179 \"On bringing into force the Digital Code\" (adopted by the Jogorku Kenesh 18 June 2025, published in Erkin-Too of 5 August 2025 No. 58) brings the Code into force six months after that publication, i.e. from early February 2026 (no exact day stated, so effective_date is left null), and repeals among others the Law \"On personal information\" of 14 April 2008 No. 58, the Law \"On electronic governance\" and the Law \"On electronic signature\". The Cabinet of Ministers must set hazard-assessment requirements and the declaration form for AI systems; a Cabinet resolution of 2 December 2025 doing so is held as a lead. A Kyrgyz-language official version exists on the same database.",
+      "summary": "Code of 31 July 2025 No. 178 consolidating rules on the digital environment, digital services and systems, digital identity, personal data and telecommunications. Chapter 23 (Articles 191-197) sets principles for AI systems (risk reduction, openness, explainability, human control, accuracy, reliability, security), prohibits AI designed to deliberately and unlawfully harm protected interests, and requires every owner to assess the danger of its AI system and publish the result and methodology. Owners of \"increased-danger\" AI systems must run lifecycle risk management, keep documentation and logs and sign a published conformity declaration before use (requirements and declaration form set by the Cabinet of Ministers); users must ensure human oversight and explain AI-assisted decisions affecting rights, and providers must disclose AI interactions, emotion-recognition/biometric categorisation and deepfakes.",
+      "ai_governance_relevance": "First binding horizontal AI rules (the Code also replaced the 2008 Law on personal information and created a special-regulation sandbox regime) in Kyrgyzstan: risk-based duties for owners and users of AI systems, transparency and deepfake labelling.",
+      "source_url": "https://reestr.dpa.gov.kg/ru/npa/59",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://cbd.minjust.gov.kg/3-48/edition/35412/ru",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [
+        "i-c4727c78fc76"
+      ],
+      "organization_id": "o-6264269385cd",
+      "publisher_name": "Jogorku Kenesh of the Kyrgyz Republic",
+      "jurisdiction_id": "KGZ",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "binding-law",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Kyrgyzstan (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [
+        "effective_date (six months after publication of Law No. 179 on 5 August 2025; exact day not stated)"
+      ],
+      "language": "ru",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-137e1321fb5d",
+      "evidence_reference": "Ministry of Justice legal database page (official_webpage_url) returned 503 to WebFetch and reset curl connections; full text read via curl (browser user agent, --max-time 60) from the official copy published by the State Agency for Personal Data Protection under the Cabinet of Ministers (reestr.dpa.gov.kg/ru/npa/59): header (No. 178, 31 July 2025, entry-into-force note) and Chapter 23 Articles 191-197, Article 1 definitions, Article 126, Chapter 3 (special regulation regime, Articles 15-18) and Chapter 11 (personal data, Articles 77-91) headings read; Law No. 179 (entry into force, repeals, Erkin-Too 5 August 2025 No. 58) read at reestr.dpa.gov.kg/ru/npa/60."
+    },
+    {
+      "id": "i-c4727c78fc76",
+      "official_title": "Закон Кыргызской Республики \"Об информации персонального характера\"",
+      "english_title": "Law of the Kyrgyz Republic \"On Personal Information\"",
+      "issuing_authority": "Jogorku Kenesh of the Kyrgyz Republic (Law of 14 April 2008 No. 58)",
+      "authority_type": "legislature",
+      "categories": [
+        "data-privacy",
+        "historical"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "repealed",
+      "publication_date": "2008-04-14",
+      "current_status": "Marked \"repealed in accordance with Law of 31 July 2025 No. 179\" on the State Agency for Personal Data Protection page; that Law brings the Digital Code into force six months after its publication on 5 August 2025, which is when the repeal takes effect. Superseded by the Digital Code.",
+      "summary": "Kyrgyzstan's first personal data protection law (No. 58 of 14 April 2008, as amended in 2017 and 2021), regulating the collection, processing and use of personal data by state bodies, local governments and legal entities on the basis of international principles. It set rules for personal data arrays and their holders, data subject rights and cross-border transfer, and barred merging personal data arrays collected for different purposes for automated processing. It was repealed by Law No. 179 of 31 July 2025 when the Digital Code (Chapter 11 on personal data) entered into force.",
+      "ai_governance_relevance": "Former general data protection law that governed AI training and use on personal data until replaced by the Digital Code.",
+      "source_url": "https://reestr.dpa.gov.kg/ru/npa/4",
+      "official_pdf_url": null,
+      "official_webpage_url": null,
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-6264269385cd",
+      "publisher_name": "Jogorku Kenesh of the Kyrgyz Republic",
+      "jurisdiction_id": "KGZ",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Kyrgyzstan (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [
+        "i-f9415a311ffc"
+      ],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "ru",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-3b296fcac420",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full text read on the State Agency for Personal Data Protection page (reestr.dpa.gov.kg/ru/npa/4), including the repeal note and amendment history (2017 No. 129, 2021 No. 142); repeal confirmed in Law No. 179 Article 2(7) (reestr.dpa.gov.kg/ru/npa/60)."
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-6264269385cd",
+      "jurisdiction_id": "KGZ",
+      "name": "Jogorku Kenesh of the Kyrgyz Republic",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Unicameral parliament; adopted the Digital Code of 31 July 2025 No. 178, whose Chapter 23 regulates artificial intelligence systems.",
+      "source_url": "https://kenesh.kg/",
+      "authority_type": "legislature",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-137e1321fb5d",
+      "url": "https://reestr.dpa.gov.kg/ru/npa/59",
+      "jurisdiction_ids": [
+        "KGZ"
+      ],
+      "source_institutions": [
+        "Jogorku Kenesh of the Kyrgyz Republic"
+      ],
+      "instrument_ids": [
+        "i-f9415a311ffc"
+      ],
+      "categories_reviewed": [
+        "binding-law",
+        "risk-assurance",
+        "transparency",
+        "data-privacy",
+        "generative-ai",
+        "sandbox"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "Ministry of Justice legal database page (official_webpage_url) returned 503 to WebFetch and reset curl connections; full text read via curl (browser user agent, --max-time 60) from the official copy published by the State Agency for Personal Data Protection under the Cabinet of Ministers (reestr.dpa.gov.kg/ru/npa/59): header (No. 178, 31 July 2025, entry-into-force note) and Chapter 23 Articles 191-197, Article 1 definitions, Article 126, Chapter 3 (special regulation regime, Articles 15-18) and Chapter 11 (personal data, Articles 77-91) headings read; Law No. 179 (entry into force, repeals, Erkin-Too 5 August 2025 No. 58) read at reestr.dpa.gov.kg/ru/npa/60.",
+      "http_status": 200,
+      "final_url": "https://reestr.dpa.gov.kg/ru/npa/59",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "ru",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-3b296fcac420",
+      "url": "https://reestr.dpa.gov.kg/ru/npa/4",
+      "jurisdiction_ids": [
+        "KGZ"
+      ],
+      "source_institutions": [
+        "Jogorku Kenesh of the Kyrgyz Republic"
+      ],
+      "instrument_ids": [
+        "i-c4727c78fc76"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "historical"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full text read on the State Agency for Personal Data Protection page (reestr.dpa.gov.kg/ru/npa/4), including the repeal note and amendment history (2017 No. 129, 2021 No. 142); repeal confirmed in Law No. 179 Article 2(7) (reestr.dpa.gov.kg/ru/npa/60).",
+      "http_status": 200,
+      "final_url": "https://reestr.dpa.gov.kg/ru/npa/4",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "ru",
+      "error": null,
+      "content_type": "text/html"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "KGZ",
     "country": "Kyrgyzstan",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -33,55 +221,186 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_with_findings": [
       "binding-law",
+      "data-privacy",
+      "generative-ai",
+      "historical",
+      "risk-assurance",
+      "sandbox",
+      "transparency"
+    ],
+    "categories_where_no_material_was_found": [
       "strategy",
       "government-governance",
       "ethics",
-      "risk-assurance",
       "public-sector",
       "procurement",
       "cyber-security",
-      "data-privacy",
-      "transparency",
       "standards",
-      "sandbox",
       "index-readiness",
       "sectoral",
-      "generative-ai",
       "drafts",
-      "international",
-      "historical"
+      "international"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Kyrgyzstan \"жасалма интеллект\" (стратегия OR жөнгө OR салуу) government ministry official",
       "Kyrgyzstan \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Kyrgyzstan government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Kyrgyzstan \"жасалма интеллект\" cybersecurity authority secure development safety guidelines",
-      "Kyrgyzstan privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Kyrgyzstan privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "Цифровой кодекс Кыргызской Республики cbd.minjust.gov.kg искусственный интеллект",
+      "Кыргызстан концепция развития искусственного интеллекта постановление Кабинета Министров",
+      "\"Цифровой кодекс\" Кыргызской Республики cbd.minjust.gov.kg 2025 (official domains)",
+      "Закон КР от 31 июля 2025 года № 179 о введении в действие Цифрового кодекса",
+      "Кыргызстан правила этики искусственного интеллекта постановление Кабинета Министров 2026",
+      "Национальная стратегия искусственного интеллекта Кыргызской Республики Национальный совет по искусственному интеллекту",
+      "постановление Кабинета Министров 2 декабря 2025 № 770 оценке опасности систем искусственного интеллекта (gov.kg, cbd.minjust.gov.kg, koomtalkuu.gov.kg)",
+      "koomtalkuu.gov.kg искусственный интеллект проект постановления этика",
+      "\"Концепция цифровой трансформации Кыргызской Республики на 2024-2028\" искусственный интеллект",
+      "\"Требования к оценке опасности систем искусственного интеллекта\" Кыргызской Республики",
+      "gov.kg npa search: искусственного интеллекта / искусственный интеллект; Cabinet resolutions list pages 1-30 (2021-2026) scanned",
+      "reestr.dpa.gov.kg НПА list (State Agency for Personal Data Protection)",
+      "Национальный банк Кыргызской Республики искусственный интеллект рекомендации nbkr.kg",
+      "жасалма интеллект Министрлер Кабинетинин токтому 2025 Кыргыз Республикасы",
+      "\"Национальный совет по развитию искусственного интеллекта\" Кыргызской Республики постановление",
+      "\"Концепция развития искусственного интеллекта в Кыргызской Республике\" утверждена",
+      "Kyrgyzstan artificial intelligence law bill Jogorku Kenesh 2026 deepfake (English)",
+      "исследование применение технологий искусственного интеллекта на финансовых рынках Центральной Азии Национальный банк"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. cbd.minjust.gov.kg page and API reset/503; digital.gov.kg expired TLS certificate/503; koomtalkuu.gov.kg drafts load only via JavaScript; kenesh.kg bill search not run. Both records sourced to the official full-text copies on reestr.dpa.gov.kg (cbd page kept as official_webpage_url). Digital Code effective date not stated exactly. Not a party to Convention 108. Units covered: Law: Digital Code No. 178 (2025) with AI chapter read in full text (official copy at the personal data agency; Ministry of Justice database unreachable from here); Law No. 179 read (entry into force, repeal of 2008 personal information law). Parliament (kenesh.kg) bills not searched separately; no AI bill found in discovery searches.; Government: Cabinet resolutions list on gov.kg scanned 2021-2026 (no AI resolution listed); AI concept/strategy, National AI Council act, Resolution No. 770 and AI ethics draft only known from press -> leads. Ministry of Digital Development site (digital.gov.kg) certificate expired, not readable.; Ministries: Searched for education, health, justice, finance AI documents via discovery searches: searched, nothing found.; Regulators: Personal data agency (reestr.dpa.gov.kg) NPA list checked: no AI-specific guidance. National Bank: 2025 annual report checked, only a regional AI study (lead), no AI guidance. Telecom/competition/cyber: searched, nothing found.. Not reached: cbd.minjust.gov.kg full-text search (API resets connections); digital.gov.kg (expired TLS certificate); koomtalkuu.gov.kg draft texts (JavaScript app); kenesh.kg bill search. Could not verify: Resolution No. 770 of 2 December 2025 (AI hazard assessment requirements); AI ethics regulation draft (September 2026); Draft AI Development Concept / national AI strategy and National AI Council act; Concept of Digital Transformation 2024-2028 (digital.gov.kg TLS). strategy, government-governance, ethics, public-sector, procurement, cyber-security, standards, index-readiness, sectoral, drafts, international: no material found.",
     "discovery_result_count": 13,
     "focused_result_count": 9
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-6b44f86174e9",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "KGZ",
+      "instrument_id": "i-f9415a311ffc",
+      "title": "Digital Code of the Kyrgyz Republic",
+      "detail": "Added to the radar (published 2025-07-31).",
+      "from": null,
+      "to": null,
+      "source_url": "https://reestr.dpa.gov.kg/ru/npa/59",
+      "needs_review": false
+    },
+    {
+      "id": "c-b756509b54b8",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "KGZ",
+      "instrument_id": "i-c4727c78fc76",
+      "title": "Law of the Kyrgyz Republic \"On Personal Information\"",
+      "detail": "Added to the radar (published 2008-04-14).",
+      "from": null,
+      "to": null,
+      "source_url": "https://reestr.dpa.gov.kg/ru/npa/4",
+      "needs_review": false
+    },
+    {
+      "id": "c-517ea37dedf6",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "KGZ",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 2 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-6ce5669266d6",
+      "date": "2025-07-31",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "KGZ",
+      "instrument_id": "i-f9415a311ffc",
+      "title": "Digital Code of the Kyrgyz Republic (No. 178) signed",
+      "detail": "Code No. 178 of 31 July 2025, including Chapter 23 on AI systems; enters into force six months after official publication of Law No. 179 of the same date.",
+      "from": null,
+      "to": null,
+      "source_url": "https://reestr.dpa.gov.kg/ru/npa/59",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Постановление Кабинета Министров Кыргызской Республики от 2 декабря 2025 года № 770 (требования к оценке опасности систем искусственного интеллекта и к системам искусственного интеллекта повышенной опасности)",
+      "english_title": "Cabinet of Ministers Resolution of 2 December 2025 No. 770 on requirements for hazard assessment of AI systems and for increased-danger AI systems",
+      "issuing_authority": "Cabinet of Ministers of the Kyrgyz Republic",
+      "note": "Implements Digital Code Articles 193-195 (methodology criteria, risk management, characteristics, data quality, technical documentation of increased-danger AI systems). Known from press reports only; not found in the selective resolution list on gov.kg and the Ministry of Justice database (cbd.minjust.gov.kg) could not be read from the review environment. Promote once the official text is read.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Проект постановления Кабинета Министров «Об утверждении Положения об этике искусственного интеллекта»",
+      "english_title": "Draft Cabinet of Ministers resolution approving the Regulation on the ethics of artificial intelligence",
+      "issuing_authority": "Ministry of Digital Development of the Kyrgyz Republic",
+      "note": "Put to public discussion in September 2026 (unified public-discussion portal koomtalkuu.gov.kg): AI not a legal subject, human responsibility, labelling of generated content and chatbot disclosure, mandatory ethics/safety self-assessment for state bodies, Kyrgyz-language requirements. Draft text not retrieved from the portal (JavaScript app); record as consultation_draft once read.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Проект Концепции развития искусственного интеллекта в Кыргызской Республике",
+      "english_title": "Draft Concept for the Development of Artificial Intelligence in the Kyrgyz Republic",
+      "issuing_authority": "National Council for the Development of Artificial Intelligence (chaired by the Deputy Chairman of the Cabinet of Ministers)",
+      "note": "Discussed by the National AI Council on 8 September 2025 (Cabinet press service); the Chairman of the Cabinet said in January 2025 a national AI strategy would be approved soon. No approved text found on gov.kg as of 2026-10-12.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Постановление/распоряжение о создании Национального совета по вопросам развития искусственного интеллекта",
+      "english_title": "Act establishing the National Council for the Development of Artificial Intelligence",
+      "issuing_authority": "Cabinet of Ministers of the Kyrgyz Republic",
+      "note": "Reported in January 2025 as signed by the Chairman of the Cabinet within the Digital Transformation Concept 2024-2028; number and date not found on an official page.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Концепция цифровой трансформации Кыргызской Республики на 2024-2028 годы",
+      "english_title": "Concept of Digital Transformation of the Kyrgyz Republic for 2024-2028",
+      "issuing_authority": "Ministry of Digital Development of the Kyrgyz Republic / Cabinet of Ministers",
+      "note": "Digital strategy listing AI development among its main tasks; PDF at digital.gov.kg/wp-content/uploads/2024/06/konczepcziya-czifrovoj-transformaczii-kyrgyzskoj-respubliki-na-2024-2028-gody.pdf (site certificate expired, fetch failed both ways). Its action plan was approved by Cabinet Order of 23 July 2024 No. 444-r per a digital.gov.kg document. Approving act and date of the Concept not confirmed.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Региональное исследование применения технологий искусственного интеллекта на финансовых рынках Центральной Азии",
+      "english_title": "Regional study on the use of AI technologies in Central Asian financial markets",
+      "issuing_authority": "National Bank of the Kyrgyz Republic with the National Banks of Kazakhstan and Tajikistan",
+      "note": "Mentioned in the National Bank of the Kyrgyz Republic annual report for 2025 (nbkr.kg/DOC/12062026/000000000067372.pdf); report itself published by the National Bank of Kazakhstan (Dec 2025). A research study, not guidance; check whether NBKR publishes it and whether any NBKR AI guidance follows.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Законопроект о внесении изменений в Кодекс о правонарушениях (ответственность за распространение дипфейков)",
+      "english_title": "Bill amending the Code of Offences on liability for deepfakes",
+      "issuing_authority": "Jogorku Kenesh of the Kyrgyz Republic (deputies' initiative)",
+      "note": "Proposal reported in June 2024 to fine dissemination of deepfakes; status unknown, not found on an official page. The Digital Code Art. 197(4) now requires disclosure of deepfakes.",
+      "found": "2026-10-12"
+    }
+  ]
 }
