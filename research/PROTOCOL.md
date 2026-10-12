@@ -132,6 +132,7 @@ Also for the country:
 - Do not infer legal effect. A strategy is not binding. A draft is not adopted until an official source says so.
 - If two official sources conflict (e.g. dates), record the primary legal text's value and add a note in `current_status`.
 - Never use file metadata (creation or modification dates) as a publication date.
+- Effective dates computed from an instrument's own commencement clause and its official publication date are allowed, with the clause cited. Only file metadata is excluded.
 - Keep instrument ids stable. When updating a record, edit it in place; never delete and re-create it.
 
 ## 5. Logging changes

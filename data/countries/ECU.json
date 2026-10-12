@@ -10,83 +10,365 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Ecuador governs AI through the telecommunications ministry's (MINTEL) Strategy for the Ethical and Responsible Development and Use of AI 2025-2029, in force since its publication in the Official Register in January 2026, and through a 2023 ministerial order creating an AI committee. The data protection authority (SPDP) issued a binding 2026 rule applying the 2021 data protection law to AI systems, and a policy on AI use in its own administrative processes. The 2021 law itself regulates automated decisions. An AI regulatory sandbox has been announced and an AI bill is pending in the National Assembly.",
+    "lead_institutions": [
+      "Ministerio de Telecomunicaciones y de la Sociedad de la Información (MINTEL)",
+      "Superintendencia de Protección de Datos Personales (SPDP)"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was carried out on 12 October 2026 from documents read in full on official sites. The Official Register's search and the government consultation portal could not be used, so the 2025 consultation draft of the strategy is recorded without its text being read. The pending AI bill and the announced AI sandbox are tracked as leads."
   },
   "instruments": [
     {
       "id": "i-77f277979193",
-      "official_title": "Consulta pública de la Propuesta de Estrategia para el fomento del desarrollo y uso ético y responsable de la inteligencia artificial en el Ecuador - MINTEL - Consulta pública de la Propuesta de Estrategia para el fomento del desarrollo y uso ético y responsable de la inteligencia artificial en el Ecuador - MINTEL",
-      "english_title": "Public consultation on responsible AI strategy",
+      "official_title": "Propuesta de Estrategia para el fomento del desarrollo y uso ético y responsable de la inteligencia artificial en el Ecuador",
+      "english_title": "Proposed Strategy for Promoting the Development and Ethical and Responsible Use of Artificial Intelligence in Ecuador (public consultation draft)",
       "jurisdiction_id": "ECU",
-      "issuing_authority": null,
-      "publisher_name": "aportecivico.gobiernoelectronico.gob.ec",
-      "authority_type": null,
+      "issuing_authority": "Ministry of Telecommunications and Information Society (MINTEL)",
+      "publisher_name": "Ministry of Telecommunications and Information Society",
+      "authority_type": "government",
       "government_level": "national",
+      "subnational_unit": null,
       "categories": [
         "drafts",
-        "strategy"
+        "strategy",
+        "historical"
       ],
       "category": "drafts",
       "subcategory": null,
-      "legal_status": null,
-      "publication_date": null,
+      "legal_status": "consultation_draft",
+      "lifecycle": "superseded",
+      "publication_date": "2025-08-01",
       "effective_date": null,
       "last_amended_date": null,
-      "current_status": "Official source located; current status requires review",
-      "scope": null,
-      "sectors": [],
+      "current_status": "Consultation on Diálogo 2.0 ran 1-11 August 2025 (per the adopted strategy). Superseded by the strategy published in the Registro Oficial on 19 January 2026. The consultation page returned HTTP 502 on 2026-10-12, so the draft text itself could not be read.",
+      "scope": "Ecuador (national)",
+      "sectors": [
+        "cross-sector"
+      ],
       "technology_scope": [
         "AI"
       ],
-      "summary": "Official source located for this governance category. The document’s adoption, legal effect, scope and version history remain under review.",
-      "ai_governance_relevance": "Primary-source material for assessing drafts & consultations, strategy & action plans.",
+      "summary": "Draft national AI strategy prepared by MINTEL on the recommendations of the AI Committee (which sat from 31 July to 30 December 2024), first circulated to public bodies in December 2024. The proposal was published for citizen comment on the government's Diálogo 2.0 participation platform from 1 to 11 August 2025 and discussed at a workshop on 6 August 2025. It was replaced by the strategy issued by Acuerdo MINTEL-MINTEL-2025-0030.",
+      "ai_governance_relevance": "Consultation stage of the national AI strategy; kept for the timeline.",
       "source_url": "https://aportecivico.gobiernoelectronico.gob.ec/legislation/processes/78/draft_versions/99",
       "official_pdf_url": null,
       "official_webpage_url": "https://aportecivico.gobiernoelectronico.gob.ec/legislation/processes/78/draft_versions/99",
-      "language": null,
+      "language": "es",
+      "supersedes": [],
+      "superseded_by": [
+        "i-9f3ed05fd0b1"
+      ],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "primary_source_located",
+      "metadata_gaps": [
+        "Draft text not readable (consultation portal unavailable)"
+      ],
+      "source_kind": "consultation_portal",
+      "evidence_reference": "curl (browser user agent, --max-time 60) and WebFetch both returned HTTP 502 from the Diálogo 2.0 consultation portal on 2026-10-12. Title, consultation period (1-11 August 2025) and URL confirmed from the adopted strategy's own account of its preparation (Registro Oficial Suplemento No. 206, 19 January 2026, section 3 'Mesas de socialización del documento preliminar').",
+      "link_status": "inaccessible",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-4834abd26d8c",
+      "organization_id": "o-590896e386ef",
+      "first_recorded": "2026-10-06",
+      "last_changed": null
+    },
+    {
+      "id": "i-9f3ed05fd0b1",
+      "official_title": "Estrategia para el Fomento del Desarrollo y Uso Ético y Responsable de la Inteligencia Artificial en el Ecuador",
+      "english_title": "Strategy for Promoting the Development and Ethical and Responsible Use of Artificial Intelligence in Ecuador",
+      "jurisdiction_id": "ECU",
+      "issuing_authority": "Ministry of Telecommunications and Information Society (MINTEL), by Ministerial Agreement MINTEL-MINTEL-2025-0030",
+      "publisher_name": "Ministry of Telecommunications and Information Society",
+      "authority_type": "government",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "strategy",
+        "government-governance",
+        "ethics",
+        "risk-assurance"
+      ],
+      "category": "strategy",
+      "subcategory": null,
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2026-01-19",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Issued by Acuerdo MINTEL-MINTEL-2025-0030, signed 22 December 2025 and published in the Registro Oficial, Primer Suplemento No. 206, 19 January 2026, when the agreement entered into force. Presented officially by the minister on 10 March 2026. The Viceministry of ICT and the Undersecretariat for the Information Society and Digital Economy are charged with monitoring and periodic updating. MINTEL also publishes the signed agreement and annexes separately on its site (uploads 2026/01).",
+      "scope": "Ecuador (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Ecuador's first national AI strategy (EFIA), issued by Ministerial Agreement MINTEL-MINTEL-2025-0030 with a four-year horizon (2025-2029) and coordinated by MINTEL as governing body for digital transformation. It sets eleven guiding principles (including human oversight, transparency, information security and a risk-based approach) and three axes: AI governance (ethics, social and labour impact, risk management including an inventory of AI systems in operation), capacity and technology (talent, cloud infrastructure, data), and AI adoption and development (R&D, startups, technology free zones, a regulatory sandbox for emerging technologies, public-sector AI). Each line of action has initiatives with indicators and targets assigned to public bodies.",
+      "ai_governance_relevance": "Current national AI strategy and the anchor of Ecuador's AI governance model; basis for the MINTEL AI regulatory sandbox.",
+      "source_url": "https://www.telecomunicaciones.gob.ec/wp-content/uploads/2026/02/Registro_Oficial_Ano_l_Primer_Suplemento_No_206_del_19_de_enero_de_2026.pdf",
+      "official_pdf_url": "https://www.telecomunicaciones.gob.ec/wp-content/uploads/2026/02/Registro_Oficial_Ano_l_Primer_Suplemento_No_206_del_19_de_enero_de_2026.pdf",
+      "official_webpage_url": "https://www.telecomunicaciones.gob.ec/estrategia-nacional-para-el-fomento-del-desarrollo-y-uso-etico-y-responsable-de-la-inteligencia-artificial/",
+      "language": "es",
+      "supersedes": [
+        "i-77f277979193"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "curl (browser user agent, --max-time 60): MINTEL-hosted copy of Registro Oficial Primer Suplemento No. 206 (19 January 2026) read in full (pdftotext; 63 pages): Acuerdo MINTEL-MINTEL-2025-0030 signed 22 December 2025, in force on publication in the Registro Oficial, with the strategy annex. Same issue also read on the Constitutional Court's gazette repository (esacc.corteconstitucional.gob.ec). Launch confirmed on MINTEL press release No. 084 of 10 March 2026.",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-9cb6950b2c99",
+      "organization_id": "o-590896e386ef",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-4e4587b33947",
+      "official_title": "Acuerdo Nro. MINTEL-MINTEL-2023-0019",
+      "english_title": "Ministerial Agreement MINTEL-MINTEL-2023-0019 (creation of the Artificial Intelligence Committee)",
+      "jurisdiction_id": "ECU",
+      "issuing_authority": "Ministry of Telecommunications and Information Society (MINTEL)",
+      "publisher_name": "Ministry of Telecommunications and Information Society",
+      "authority_type": "government",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "government-governance"
+      ],
+      "category": "government-governance",
+      "subcategory": null,
+      "legal_status": "binding_regulation",
+      "lifecycle": "in_force",
+      "publication_date": "2023-11-16",
+      "effective_date": "2023-11-16",
+      "last_amended_date": null,
+      "current_status": "Signed 16 November 2023 and in force on signature (without prejudice to publication in the Registro Oficial). The 2026 strategy gives the date as 30 November 2023 and records that the committee was formed on 31 July 2024 and sat until 30 December 2024; the signed agreement's date is used here.",
+      "scope": "Ecuador (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Ministerial agreement ordering the actions needed to create the Artificial Intelligence Committee as a consultation, coordination and articulation mechanism to promote the implementation, monitoring and evaluation of AI development strategies in Ecuador. The committee may include public bodies, the private sector, civil society, academia and citizens, and acts under the Organic Law for Digital and Audiovisual Transformation; MINTEL's Undersecretariat for the Information Society and Digital Economy is charged with its creation.",
+      "ai_governance_relevance": "Founding instrument of Ecuador's multi-stakeholder AI Committee, whose recommendations produced the national AI strategy.",
+      "source_url": "https://www.telecomunicaciones.gob.ec/wp-content/uploads/2023/12/mintel-mintel-2023-0019-1-1.pdf",
+      "official_pdf_url": "https://www.telecomunicaciones.gob.ec/wp-content/uploads/2023/12/mintel-mintel-2023-0019-1-1.pdf",
+      "official_webpage_url": null,
+      "language": "es",
       "supersedes": [],
       "superseded_by": [],
       "related_instruments": [],
       "regional_applicability": [],
-      "verification_date": "2026-10-06",
-      "verification_level": "primary_source_located",
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "curl (browser user agent, --max-time 60): signed Quipux PDF on telecomunicaciones.gob.ec read in full (pdftotext; 4 pages): dated 16 November 2023, in force on signature.",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-caf586ca0aef",
+      "organization_id": "o-590896e386ef",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-89d95e38b1f0",
+      "official_title": "Norma General para la Garantía del Derecho de Protección de Datos Personales en el Uso de Sistemas de Inteligencia Artificial",
+      "english_title": "General Rule Guaranteeing the Right to Personal Data Protection in the Use of Artificial Intelligence Systems (Resolution SPDP-SPD-2026-0009-R)",
+      "jurisdiction_id": "ECU",
+      "issuing_authority": "Superintendency of Personal Data Protection (SPDP), Resolution SPDP-SPD-2026-0009-R",
+      "publisher_name": "Superintendency of Personal Data Protection",
+      "authority_type": "regulator",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "data-privacy",
+        "binding-law",
+        "risk-assurance",
+        "transparency"
+      ],
+      "category": "data-privacy",
+      "subcategory": null,
+      "legal_status": "binding_regulation",
+      "lifecycle": "adopted",
+      "publication_date": "2026-02-12",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Signed 12 February 2026; enters into force on publication in the Registro Oficial. Secondary sources report publication in Registro Oficial No. 240 of 10 March 2026, but this was not confirmed on an official site, so effective_date is left empty. A draft reform clarifying processors' obligations (limited to operations where they have access to or control over the data) was posted by the SPDP in June 2026 (see leads).",
+      "scope": "Ecuador (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Binding SPDP rule applying the Organic Law on Personal Data Protection to controllers and processors that develop, train, implement, deploy or provide AI systems processing personal data of Ecuadorian data subjects, wherever the system or provider is located. They must inform data subjects clearly about AI-based and automated processing, carry out risk management and impact assessments before development, apply security measures, enter AI processing and automated decisions with legal or rights effects in the record of processing activities, and audit AI systems according to risk; the right not to be subject to automated decisions is guaranteed. The SPDP may audit AI systems and impose corrective and precautionary measures.",
+      "ai_governance_relevance": "Ecuador's main binding AI-specific rule; defines developer, deployer, distributor and implementer roles for data-protection obligations.",
+      "source_url": "https://spdp.gob.ec/resol_ia_02_2026/",
+      "official_pdf_url": "https://spdp.gob.ec/wp-content/uploads/2026/02/ResolIA.pdf",
+      "official_webpage_url": "https://spdp.gob.ec/resol_ia_02_2026/",
+      "language": "es",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
       "metadata_gaps": [
-        "Issuing authority",
-        "Publication/effective dates",
-        "Current legal status",
-        "Precise applicability",
-        "Version history",
-        "Authority type",
-        "Government level",
-        "Publication date",
-        "Effective date",
-        "Last amended date",
-        "Document language"
+        "Effective date (Registro Oficial publication not confirmed on an official source)"
       ],
       "source_kind": "official_publication",
-      "evidence_reference": "turn88search2",
-      "link_status": "inaccessible",
+      "evidence_reference": "curl (browser user agent, --max-time 60): signed resolution PDF embedded on the SPDP page spdp.gob.ec/resol_ia_02_2026/ read in full (pdftotext); signed 12 February 2026; in force on publication in the Registro Oficial. The Registro Oficial issue itself was not located on an official site.",
+      "link_status": "reachable",
       "document_access_type": "official_publication_or_full_text_page",
-      "source_id": "s-4834abd26d8c",
-      "organization_id": "o-3f699c620c7e",
-      "lifecycle": "draft",
-      "first_recorded": "2026-10-06",
-      "last_changed": null,
-      "subnational_unit": null
+      "source_id": "s-f2171b38833d",
+      "organization_id": "o-bb2f92d7628d",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-590909aa882d",
+      "official_title": "Política para el Desarrollo y Uso de la Inteligencia Artificial en Procesos Administrativos de la Superintendencia de Protección de Datos Personales",
+      "english_title": "Policy for the Development and Use of Artificial Intelligence in the Administrative Processes of the Superintendency of Personal Data Protection (Resolution SPDP-SPD-2026-0007-R)",
+      "jurisdiction_id": "ECU",
+      "issuing_authority": "Superintendency of Personal Data Protection (SPDP), Resolution SPDP-SPD-2026-0007-R",
+      "publisher_name": "Superintendency of Personal Data Protection",
+      "authority_type": "regulator",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "public-sector",
+        "generative-ai",
+        "risk-assurance"
+      ],
+      "category": "public-sector",
+      "subcategory": null,
+      "legal_status": "administrative_policy_mandatory_in_scope",
+      "lifecycle": "in_force",
+      "publication_date": "2026-02-09",
+      "effective_date": "2026-02-09",
+      "last_amended_date": null,
+      "current_status": "Approved by Resolution SPDP-SPD-2026-0007-R, signed 9 February 2026 and in force on signature; binding within the SPDP only. The annexed policy is dated 30 December 2025.",
+      "scope": "Superintendency of Personal Data Protection (internal)",
+      "sectors": [
+        "public-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Mandatory internal policy for all SPDP authorities, staff and units on developing and using AI in the regulator's administrative processes. It sets governance roles for in-house agentic AI and expert systems (organisational lead, agentic-AI lead, development and security leads, with audit rights for the information security officer and data protection officer), lists the activities for which agentic and generative AI may be used, and requires risk management for both covering data protection, fairness, accuracy and robustness, explainability and information security.",
+      "ai_governance_relevance": "First published public-sector AI-use policy of an Ecuadorian state body; covers generative AI use by officials.",
+      "source_url": "https://spdp.gob.ec/resolucionia/",
+      "official_pdf_url": "https://spdp.gob.ec/wp-content/uploads/2026/05/07.01.01-SPSP-SPD-2026-0007-R-Politica-para-el-desarrollo-y-uso-de-IA-en-procesos-administrativos-signed.pdf",
+      "official_webpage_url": "https://spdp.gob.ec/resolucionia/",
+      "language": "es",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_publication",
+      "evidence_reference": "curl (browser user agent, --max-time 60): signed resolution and annex PDFs embedded on spdp.gob.ec/resolucionia/ read in full (pdftotext); signed 9 February 2026, in force on signature.",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-bbe4d245a6f7",
+      "organization_id": "o-bb2f92d7628d",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-7e7e74505388",
+      "official_title": "Ley Orgánica de Protección de Datos Personales",
+      "english_title": "Organic Law on Personal Data Protection",
+      "jurisdiction_id": "ECU",
+      "issuing_authority": "National Assembly",
+      "publisher_name": "National Assembly",
+      "authority_type": "legislature",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "category": "data-privacy",
+      "subcategory": null,
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2021-05-26",
+      "effective_date": "2021-05-26",
+      "last_amended_date": null,
+      "current_status": "Published in the Registro Oficial, Quinto Suplemento No. 459, 26 May 2021, in force on publication. Amended since (consolidated text lists the last reform on 22 May 2026); implemented by the General Regulation and SPDP secondary rules.",
+      "scope": "Ecuador (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Ecuador's comprehensive data protection law, applying to public and private processing of personal data and creating the Superintendency of Personal Data Protection as supervisory authority. Article 20 gives data subjects the right not to be subject to decisions based solely or partly on automated assessments, including profiling, that produce legal effects or affect their fundamental rights, with rights to a reasoned explanation, to submit observations, to obtain the evaluation criteria and data sources, and to challenge the decision.",
+      "ai_governance_relevance": "Legal basis for regulating AI that processes personal data, including the SPDP's 2026 AI rule.",
+      "source_url": "https://www.telecomunicaciones.gob.ec/wp-content/uploads/2021/06/Ley-Organica-de-Datos-Personales.pdf",
+      "official_pdf_url": "https://www.telecomunicaciones.gob.ec/wp-content/uploads/2021/06/Ley-Organica-de-Datos-Personales.pdf",
+      "official_webpage_url": null,
+      "language": "es",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "curl (browser user agent, --max-time 60): MINTEL-hosted scan of Registro Oficial Quinto Suplemento No. 459 (26 May 2021) confirmed title, issue and date (image PDF, 70 pages, no text layer); article text (art. 20 and final provision) read from the consolidated text also hosted on telecomunicaciones.gob.ec (2026/06, LEXIS-sourced consolidation, last reform 22 May 2026).",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-5efe927390ce",
+      "organization_id": "o-73754fcc1b7b",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
     }
   ],
   "organizations": [
     {
-      "id": "o-3f699c620c7e",
+      "id": "o-590896e386ef",
       "jurisdiction_id": "ECU",
-      "name": "aportecivico.gobiernoelectronico.gob.ec",
-      "publisher_name_verified": false,
-      "ai_governance_role": "Publisher of listed official material; complete institutional mandate and statutory responsibilities require review.",
-      "source_url": "https://aportecivico.gobiernoelectronico.gob.ec/legislation/processes/78/draft_versions/99",
-      "authority_type": null,
-      "government_level": null
+      "name": "Ministry of Telecommunications and Information Society",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Ministerio de Telecomunicaciones y de la Sociedad de la Información (MINTEL): governing body for telecommunications, the information society and digital transformation. Issued the national AI strategy (Acuerdo MINTEL-MINTEL-2025-0030) and the 2023 order creating the AI Committee, coordinates AI governance under the strategy and is leading the design of an AI regulatory sandbox.",
+      "source_url": "https://www.telecomunicaciones.gob.ec/",
+      "authority_type": "government",
+      "government_level": "national"
+    },
+    {
+      "id": "o-bb2f92d7628d",
+      "jurisdiction_id": "ECU",
+      "name": "Superintendency of Personal Data Protection",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Superintendencia de Protección de Datos Personales (SPDP): data protection supervisory authority created by the Organic Law on Personal Data Protection. Issued the general rule on data protection in the use of AI systems (SPDP-SPD-2026-0009-R), may audit AI systems processing personal data, and adopted an internal AI-use policy.",
+      "source_url": "https://spdp.gob.ec/",
+      "authority_type": "regulator",
+      "government_level": "national"
+    },
+    {
+      "id": "o-73754fcc1b7b",
+      "jurisdiction_id": "ECU",
+      "name": "National Assembly",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Asamblea Nacional: unicameral legislature; enacted the Organic Law on Personal Data Protection (2021). AI bills: the Proyecto de Ley Orgánica de Regulación y Promoción de Inteligencia Artificial was archived by the Plenary on 15 September 2026; a new AI governance bill was filed on 1 September 2026.",
+      "source_url": "https://www.asambleanacional.gob.ec/",
+      "authority_type": "legislature",
+      "government_level": "national"
     }
   ],
   "sources": [
@@ -97,31 +379,115 @@
         "ECU"
       ],
       "source_institutions": [
-        "aportecivico.gobiernoelectronico.gob.ec"
+        "Ministry of Telecommunications and Information Society"
       ],
       "instrument_ids": [
         "i-77f277979193"
       ],
       "categories_reviewed": [
         "drafts",
-        "strategy"
+        "strategy",
+        "historical"
       ],
-      "date_reviewed": "2026-10-06",
-      "checked_date": "2026-10-06",
-      "check_method": "GET; first 1 MiB; 14-second timeout",
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60) and WebFetch both returned HTTP 502 from the Diálogo 2.0 consultation portal on 2026-10-12. Title, consultation period (1-11 August 2025) and URL confirmed from the adopted strategy's own account of its preparation (Registro Oficial Suplemento No. 206, 19 January 2026, section 3 'Mesas de socialización del documento preliminar').",
       "http_status": 502,
       "final_url": "https://aportecivico.gobiernoelectronico.gob.ec/legislation/processes/78/draft_versions/99",
       "link_status": "inaccessible",
       "page_title": null,
-      "document_language": null,
-      "error": "HTTP Error 502: Bad Gateway"
+      "document_language": "es",
+      "error": "HTTP 502 Bad Gateway (curl and WebFetch)",
+      "content_type": null
+    },
+    {
+      "id": "s-9cb6950b2c99",
+      "url": "https://www.telecomunicaciones.gob.ec/wp-content/uploads/2026/02/Registro_Oficial_Ano_l_Primer_Suplemento_No_206_del_19_de_enero_de_2026.pdf",
+      "jurisdiction_ids": [
+        "ECU"
+      ],
+      "source_institutions": [
+        "Ministry of Telecommunications and Information Society"
+      ],
+      "instrument_ids": [
+        "i-9f3ed05fd0b1"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "government-governance",
+        "ethics",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): MINTEL-hosted copy of Registro Oficial Primer Suplemento No. 206 (19 January 2026) read in full (pdftotext; 63 pages): Acuerdo MINTEL-MINTEL-2025-0030 signed 22 December 2025, in force on publication in the Registro Oficial, with the strategy annex. Same issue also read on the Constitutional Court's gazette repository (esacc.corteconstitucional.gob.ec). Launch confirmed on MINTEL press release No. 084 of 10 March 2026.",
+      "http_status": 200,
+      "final_url": "https://www.telecomunicaciones.gob.ec/wp-content/uploads/2026/02/Registro_Oficial_Ano_l_Primer_Suplemento_No_206_del_19_de_enero_de_2026.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "es",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-caf586ca0aef",
+      "url": "https://www.telecomunicaciones.gob.ec/wp-content/uploads/2023/12/mintel-mintel-2023-0019-1-1.pdf",
+      "jurisdiction_ids": [
+        "ECU"
+      ],
+      "source_institutions": [
+        "Ministry of Telecommunications and Information Society"
+      ],
+      "instrument_ids": [
+        "i-4e4587b33947"
+      ],
+      "categories_reviewed": [
+        "government-governance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): signed Quipux PDF on telecomunicaciones.gob.ec read in full (pdftotext; 4 pages): dated 16 November 2023, in force on signature.",
+      "http_status": 200,
+      "final_url": "https://www.telecomunicaciones.gob.ec/wp-content/uploads/2023/12/mintel-mintel-2023-0019-1-1.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "es",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-5efe927390ce",
+      "url": "https://www.telecomunicaciones.gob.ec/wp-content/uploads/2021/06/Ley-Organica-de-Datos-Personales.pdf",
+      "jurisdiction_ids": [
+        "ECU"
+      ],
+      "source_institutions": [
+        "National Assembly"
+      ],
+      "instrument_ids": [
+        "i-7e7e74505388"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): MINTEL-hosted scan of Registro Oficial Quinto Suplemento No. 459 (26 May 2021) confirmed title, issue and date (image PDF, 70 pages, no text layer); article text (art. 20 and final provision) read from the consolidated text also hosted on telecomunicaciones.gob.ec (2026/06, LEXIS-sourced consolidation, last reform 22 May 2026).",
+      "http_status": 200,
+      "final_url": "https://www.telecomunicaciones.gob.ec/wp-content/uploads/2021/06/Ley-Organica-de-Datos-Personales.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "es",
+      "error": null,
+      "content_type": "application/pdf"
     }
   ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "ECU",
     "country": "Ecuador",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -134,57 +500,331 @@
       "transparency"
     ],
     "categories_with_findings": [
-      "drafts",
-      "strategy"
-    ],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
       "binding-law",
-      "strategy",
-      "government-governance",
+      "data-privacy",
+      "drafts",
       "ethics",
-      "risk-assurance",
+      "generative-ai",
+      "government-governance",
+      "historical",
       "public-sector",
+      "risk-assurance",
+      "strategy",
+      "transparency"
+    ],
+    "categories_where_no_material_was_found": [
       "procurement",
       "cyber-security",
-      "data-privacy",
-      "transparency",
       "standards",
       "sandbox",
       "index-readiness",
       "sectoral",
-      "generative-ai",
-      "drafts",
-      "international",
-      "historical"
+      "international"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Ecuador \"inteligencia artificial\" (estrategia OR regulación OR ética) government ministry official",
       "Ecuador \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Ecuador government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Ecuador \"inteligencia artificial\" cybersecurity authority secure development safety guidelines",
-      "Ecuador privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Ecuador privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "Ecuador MINTEL estrategia inteligencia artificial ética responsable acuerdo ministerial",
+      "Asamblea Nacional Ecuador proyecto de ley orgánica inteligencia artificial",
+      "site:telecomunicaciones.gob.ec inteligencia artificial estrategia sandbox",
+      "telecomunicaciones.gob.ec site search: inteligencia artificial; WordPress media search: Inteligencia, Comite, 2023-0019, politica, transformacion-digital",
+      "Superintendencia de Protección de Datos Personales Ecuador inteligencia artificial guía resolución",
+      "spdp.gob.ec site search and media/page search: inteligencia artificial, IA, 0009, reformatoria, ley, LOPDP; proyectos normativos page",
+      "registroficial.gob.ec search: inteligencia artificial",
+      "Acuerdo Ministerial MINTEL-MINTEL-2023-0019 Comité de Inteligencia Artificial Registro Oficial",
+      "\"SPDP-SPD-2026-0009-R\" Registro Oficial",
+      "Ley Orgánica para la Transformación Digital y Audiovisual inteligencia artificial artículo Registro Oficial 245",
+      "Ministerio de Educación Ecuador lineamientos uso inteligencia artificial acuerdo ministerial",
+      "Ecuador Consejo de la Judicatura inteligencia artificial resolución lineamientos uso jueces",
+      "Ecuador Superintendencia de Bancos OR SERCOP OR ARCOTEL \"inteligencia artificial\" norma resolución 2025 2026",
+      "Ecuador Convenio 108 protección de datos adhesión Consejo de Europa Ecuador"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. Registro Oficial site search unusable; Diálogo 2.0 consultation portal HTTP 502 (draft strategy i-77f277979193 stays primary_source_located, dated 2025-08-01 from consultation dates stated in the adopted strategy). Strategy source: RO 1S No. 206 copy hosted on MINTEL. Acuerdo MINTEL-2023-0019: signed copy 16 Nov 2023 vs strategy 30 Nov 2023 (signed date used). SPDP-SPD-2026-0009-R effective_date null (RO 240 of 10 Mar 2026 secondary only). LOPDP art. 20 read from LEXIS consolidated copy on telecomunicaciones.gob.ec (gazette scan has no text layer). SPDP internal AI policy kept: it is a binding policy on AI use in the authority's administrative processes. Health, labour, defence, SRI, interior, INEN sites not searched directly. Convention 108: not a party. Units covered: Law: Registro Oficial site search (no usable results) and gazette copies on MINTEL and Constitutional Court sites; National Assembly news on AI bills. Found: Organic Law on Personal Data Protection (art. 20 automated decisions). Organic Law for Digital and Audiovisual Transformation searched: no AI provisions. No AI law; one AI bill archived 15 Sep 2026, one pending (leads). No deepfake offence enacted (only proposed in the pending bill).; Government: MINTEL site and media library: national AI strategy (2026), its consultation draft (2025), AI Committee order (2023); Digital Transformation Policy 2025-2030 (lead, AI in passing); AI sandbox announced, no instrument yet.; Ministries: Education, justice/judiciary (Consejo de la Judicatura), and other ministries searched via web search: searched, nothing found. Labour, health, defence, finance/tax (SRI), interior: not searched individually beyond general queries; nothing surfaced.; Regulators: SPDP: AI general rule (SPDP-SPD-2026-0009-R), internal AI policy (SPDP-SPD-2026-0007-R), draft reform and 2025 draft (leads). Superintendencia de Bancos, SERCOP, ARCOTEL: searched, nothing AI-specific found. Superintendency of Economic Competition: ethics-code AI reform reported (lead). No national cyber or standards-body AI document found (INEN not searched directly).. Not reached: Registro Oficial full-text search (site search returned no results; edition No. 240 of 10 March 2026 not located officially); Diálogo 2.0 consultation portal (HTTP 502); Individual ministry sites (health, labour, defence, SRI, interior) and INEN/standards body not searched directly; Asamblea Nacional bill-tracking system (bill texts not read). Could not verify: Draft strategy text on aportecivico.gobiernoelectronico.gob.ec (HTTP 502 via curl and WebFetch).; Registro Oficial publication of SPDP-SPD-2026-0009-R.. procurement, cyber-security, standards, sandbox, index-readiness, sectoral, international: no material found.",
     "discovery_result_count": 11,
     "focused_result_count": 12
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-e4b3199768f6",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "ECU",
+      "instrument_id": "i-77f277979193",
+      "title": "Proposed Strategy for Promoting the Development and Ethical and Responsible Use of Artificial Intelligence in Ecuador (public consultation draft)",
+      "detail": "Record updated: categories, issuing authority, legal status, lifecycle, publication date, scope, summary, title.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-dd35e2accbdb",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ECU",
+      "instrument_id": "i-9f3ed05fd0b1",
+      "title": "Strategy for Promoting the Development and Ethical and Responsible Use of Artificial Intelligence in Ecuador",
+      "detail": "Added to the radar (published 2026-01-19).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.telecomunicaciones.gob.ec/wp-content/uploads/2026/02/Registro_Oficial_Ano_l_Primer_Suplemento_No_206_del_19_de_enero_de_2026.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-5231a926de59",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ECU",
+      "instrument_id": "i-4e4587b33947",
+      "title": "Ministerial Agreement MINTEL-MINTEL-2023-0019 (creation of the Artificial Intelligence Committee)",
+      "detail": "Added to the radar (published 2023-11-16).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.telecomunicaciones.gob.ec/wp-content/uploads/2023/12/mintel-mintel-2023-0019-1-1.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-f448aaec3deb",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ECU",
+      "instrument_id": "i-89d95e38b1f0",
+      "title": "General Rule Guaranteeing the Right to Personal Data Protection in the Use of Artificial Intelligence Systems (Resolution SPDP-SPD-2026-0009-R)",
+      "detail": "Added to the radar (published 2026-02-12).",
+      "from": null,
+      "to": null,
+      "source_url": "https://spdp.gob.ec/resol_ia_02_2026/",
+      "needs_review": false
+    },
+    {
+      "id": "c-08d2d2bb9be2",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ECU",
+      "instrument_id": "i-590909aa882d",
+      "title": "Policy for the Development and Use of Artificial Intelligence in the Administrative Processes of the Superintendency of Personal Data Protection (Resolution SPDP-SPD-2026-0007-R)",
+      "detail": "Added to the radar (published 2026-02-09).",
+      "from": null,
+      "to": null,
+      "source_url": "https://spdp.gob.ec/resolucionia/",
+      "needs_review": false
+    },
+    {
+      "id": "c-33ae4ecaed80",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ECU",
+      "instrument_id": "i-7e7e74505388",
+      "title": "Organic Law on Personal Data Protection",
+      "detail": "Added to the radar (published 2021-05-26).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.telecomunicaciones.gob.ec/wp-content/uploads/2021/06/Ley-Organica-de-Datos-Personales.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-40e10d39ec75",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "ECU",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 6 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-8dffaebee677",
+      "date": "2026-02-12",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "ECU",
+      "instrument_id": "i-89d95e38b1f0",
+      "title": "SPDP issues general rule on data protection in AI systems",
+      "detail": "Resolution SPDP-SPD-2026-0009-R signed; enters into force on publication in the Registro Oficial.",
+      "from": null,
+      "to": null,
+      "source_url": "https://spdp.gob.ec/wp-content/uploads/2026/02/ResolIA.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-019ee2a1d1b4",
+      "date": "2026-02-09",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "ECU",
+      "instrument_id": "i-590909aa882d",
+      "title": "SPDP adopts internal AI-use policy",
+      "detail": "Resolution SPDP-SPD-2026-0007-R signed and in force on signature.",
+      "from": null,
+      "to": null,
+      "source_url": "https://spdp.gob.ec/wp-content/uploads/2026/05/07.01.01-SPSP-SPD-2026-0007-R-Politica-para-el-desarrollo-y-uso-de-IA-en-procesos-administrativos-signed.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-d1a0a59ce9ad",
+      "date": "2026-01-19",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "ECU",
+      "instrument_id": "i-9f3ed05fd0b1",
+      "title": "National AI strategy published in the Registro Oficial",
+      "detail": "Acuerdo MINTEL-MINTEL-2025-0030 (signed 22 December 2025) published in Registro Oficial Primer Suplemento No. 206 and in force; it replaces the August 2025 consultation draft.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.telecomunicaciones.gob.ec/wp-content/uploads/2026/02/Registro_Oficial_Ano_l_Primer_Suplemento_No_206_del_19_de_enero_de_2026.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-a1d754da2720",
+      "date": "2026-01-19",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "superseded",
+      "jurisdiction_id": "ECU",
+      "instrument_id": "i-77f277979193",
+      "title": "Draft AI strategy superseded by the adopted strategy",
+      "detail": "The consultation draft is replaced by the strategy issued by Acuerdo MINTEL-MINTEL-2025-0030.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.telecomunicaciones.gob.ec/wp-content/uploads/2026/02/Registro_Oficial_Ano_l_Primer_Suplemento_No_206_del_19_de_enero_de_2026.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-9cfe15cfaac6",
+      "date": "2025-08-01",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "consultation",
+      "jurisdiction_id": "ECU",
+      "instrument_id": "i-77f277979193",
+      "title": "Draft national AI strategy opens for public comment",
+      "detail": "Proposal published on the Diálogo 2.0 platform for comment from 1 to 11 August 2025 (dates stated in the adopted strategy).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.telecomunicaciones.gob.ec/wp-content/uploads/2026/02/Registro_Oficial_Ano_l_Primer_Suplemento_No_206_del_19_de_enero_de_2026.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-b19248a2df84",
+      "date": "2023-11-16",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "ECU",
+      "instrument_id": "i-4e4587b33947",
+      "title": "MINTEL orders creation of the AI Committee",
+      "detail": "Acuerdo MINTEL-MINTEL-2023-0019 signed and in force on signature.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.telecomunicaciones.gob.ec/wp-content/uploads/2023/12/mintel-mintel-2023-0019-1-1.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-5c1f19332d7d",
+      "date": "2021-05-26",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "ECU",
+      "instrument_id": "i-7e7e74505388",
+      "title": "Organic Law on Personal Data Protection published",
+      "detail": "Published in Registro Oficial Quinto Suplemento No. 459 and in force; art. 20 sets the right not to be subject to automated decisions.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.telecomunicaciones.gob.ec/wp-content/uploads/2021/06/Ley-Organica-de-Datos-Personales.pdf",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Proyecto de Ley Orgánica para el Desarrollo, Uso Ético y Gobernanza de la Inteligencia Artificial",
+      "english_title": "Bill for an Organic Law on the Development, Ethical Use and Governance of Artificial Intelligence",
+      "issuing_authority": "National Assembly (filed by Assembly member Cecilia Baltazar)",
+      "note": "Pending bill, filed 1 September 2026 (Asamblea Nacional press note, asambleanacional.gob.ec/es/node/118939): risk classification, rights, governance, innovation and liability regime, with reforms to the Código Orgánico Integral Penal on AI misuse. Bill text not read; record if enacted.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Proyecto de Ley Orgánica de Regulación y Promoción de Inteligencia Artificial en Ecuador",
+      "english_title": "Bill for an Organic Law on the Regulation and Promotion of Artificial Intelligence in Ecuador",
+      "issuing_authority": "National Assembly",
+      "note": "Archived by the Plenary at first debate on 15 September 2026 (88 votes) on the report of the Education, Culture, Science and Technology Committee (asambleanacional.gob.ec/es/noticia/119354). Other 2024 AI bills were reported by the press; their status was not checked. Not a record.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Resolución reformatoria a la Resolución N° SPDP-SPD-2026-0009-R (proyecto)",
+      "english_title": "Draft resolution amending the SPDP general rule on data protection in AI systems",
+      "issuing_authority": "Superintendency of Personal Data Protection",
+      "note": "Draft amendment (docx) on spdp.gob.ec (uploads 2026/06) limiting processors' obligations to operations where they have access to, visibility of or control over the data. Official document on spdp.gob.ec; no stated publication date or consultation period found. Record as consultation draft if a dated consultation page is found, or the reform once adopted.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Proyecto de Reglamento de Inteligencia Artificial (SPDP, 2025)",
+      "english_title": "SPDP draft AI regulation (2025)",
+      "issuing_authority": "Superintendency of Personal Data Protection",
+      "note": "Draft file pr_REGLAMENTO-INTELIGENCIA-ARTIFICIAL_0825_postdaj.pdf on spdp.gob.ec (uploads 2025/09), apparently the predecessor of Resolution SPDP-SPD-2026-0009-R. Official document on spdp.gob.ec; no stated publication date found; not read.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Sandbox Regulatorio de Inteligencia Artificial (MINTEL)",
+      "english_title": "MINTEL AI regulatory sandbox",
+      "issuing_authority": "Ministry of Telecommunications and Information Society",
+      "note": "Presented 24 March 2026 (MINTEL press release No. 089) under line of action 18 of the national AI strategy; an implementation plan is being prepared with UNDP. No official sandbox instrument found as of 12 October 2026; record once issued.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Política Pública para la Transformación Digital del Ecuador 2025-2030",
+      "english_title": "Public Policy for the Digital Transformation of Ecuador 2025-2030",
+      "issuing_authority": "Ministry of Telecommunications and Information Society (Acuerdo MINTEL-MINTEL-2025-0005, signed 14 March 2025; Registro Oficial Primer Suplemento No. 15, 8 April 2025 per the AI strategy)",
+      "note": "General digital policy; AI appears only in one principle (freedom of choice in interactions with algorithms and AI systems) and as an example under the emerging-technologies axis. Below the scope test; cited as a basis of the AI strategy. https://www.telecomunicaciones.gob.ec/wp-content/uploads/2025/05/Politica-Publica-para-la-Transformacion-Digital-Ecuador-2025-2030-MINTEL-signed_f.pdf",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Código de ética de la Superintendencia de Competencia Económica (reforma sobre uso de IA)",
+      "english_title": "Superintendency of Economic Competition code of ethics (AI-use reform)",
+      "issuing_authority": "Superintendency of Economic Competition",
+      "note": "Press reports say the SCE amended its institutional ethics code to add principles on staff use of AI. Official text not located; internal instrument.",
+      "found": "2026-10-12"
+    }
+  ]
 }

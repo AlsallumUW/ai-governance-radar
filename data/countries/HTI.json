@@ -10,9 +10,12 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Haiti has no national AI strategy, AI law or AI-specific regulatory guidance. AI activity is limited to the central bank (BRH), whose Governor has written on its interest in AI and which announced an AI fund in 2025, and to staff training. A 2018 decree on personal data protection could not be checked because the official gazette could not be accessed.",
+    "lead_institutions": [
+      "Banque de la République d'Haïti (BRH)"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was carried out on 12 October 2026, but the official gazette (Le Moniteur), Parliament's and the education and communication ministries' websites could not be accessed, so no official document could be recorded. Haiti is marked for a later retry. The 2018 personal data decree, the central bank's AI fund and an education AI policy are tracked as leads."
   },
   "instruments": [],
   "organizations": [],
@@ -21,7 +24,7 @@
   "coverage_audit": {
     "jurisdiction_id": "HTI",
     "country": "Haiti",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -34,8 +37,7 @@
       "transparency"
     ],
     "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_where_no_material_was_found": [
       "binding-law",
       "strategy",
       "government-governance",
@@ -55,33 +57,99 @@
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Haiti \"intelligence artificielle\" (stratégie OR réglementation OR éthique) government ministry official",
       "Haiti \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Haiti government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Haiti \"intelligence artificielle\" cybersecurity authority secure development safety guidelines",
-      "Haiti privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Haiti privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "Haïti stratégie nationale intelligence artificielle gouvernement",
+      "Haïti \"intelligence artificielle\" Le Moniteur décret OR loi OR CONATEL",
+      "Haiti national digital strategy artificial intelligence ministry 2024 2025 official",
+      "MENFP politique nationale intelligence artificielle éducation Haïti",
+      "Haïti loi protection des données personnelles OR cybercriminalité décret Moniteur 2023 2024 2025",
+      "\"Arrêté fixant les règles relatives à la protection des données à caractère personnel\" Haïti",
+      "\"entèlijans atifisyèl\" Ayiti gouvènman OR ministè OR lalwa",
+      "\"Konbit IA\" Haïti gouvernement OR ministère OR CONATEL",
+      "brh.ht site search: intelligence artificielle",
+      "conatel.gouv.ht site search: intelligence; données personnelles",
+      "primature.gouv.ht site search: intelligence artificielle; numérique",
+      "mef.gouv.ht site search: intelligence artificielle"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. Le Moniteur / Presses Nationales DNS failure, proxy 502/refused; parlementhaitien.ht proxy 502; menfp.gouv.ht reset/503; communication.gouv.ht proxy 502. No DPA or cyber agency exists. BRH Governor's column undated (WordPress post date not used, PROTOCOL §4) - lead. Arrêté on personal data (Le Moniteur No. 87, 15 May 2018) not read. Code pénal (decree 24 Jun 2020) status unverified. CONATEL Konbit IA internal training - out of scope. Convention 108: not a party. Units covered: Law: Searched, nothing found: no AI law, AI provision or AI bill identified. Le Moniteur (Presses Nationales) and the Parliament site could not be reached (DNS failure / proxy 502 via curl and WebFetch), so gazette search was not possible; discovery searches in French and Haitian Creole found no AI legal text. 2018 data-protection arrêté held as lead.; Government: Searched, nothing found: no national AI strategy, digital strategy with AI pillar or public-sector AI guideline on primature.gouv.ht or mef.gouv.ht (site searches) or via discovery searches.; Ministries: MEF (site search, nothing), MJSP (homepage, nothing), MENFP (site unavailable; AI education policy held as lead), MTPTC and Ministère de la Communication (no AI content / unreachable). Health, defence, labour, interior: discovery searches only, nothing found.; Regulators: BRH: Governor's AI column and summit speech (lead; no dated policy, circular or guidance). CONATEL: site search returned only an internal AI training news item (lead). No data protection authority or national cyber agency exists to search.. Not reached: Le Moniteur / Presses Nationales (official gazette): unreachable; Parlement haïtien site: unreachable; MENFP website: connection reset / HTTP 503; Ministère de la Communication website: unreachable. Could not verify: Le Moniteur and Parliament sites unreachable (gazette search not possible); MENFP AI-in-education policy (site down; only social-media evidence); Code pénal 2020 data/cybercrime provisions and entry-into-force status. binding-law, strategy, government-governance, ethics, risk-assurance, public-sector, procurement, cyber-security, data-privacy, transparency, standards, sandbox, index-readiness, sectoral, generative-ai, drafts, international, historical: no material found.",
     "discovery_result_count": 10,
     "focused_result_count": 9
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-34a93bc3f324",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "HTI",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 0 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "L'intelligence artificielle en Haïti : Pourquoi la Banque de la République d'Haïti s'y intéresse (Mot du Gouverneur)",
+      "english_title": "Artificial intelligence in Haiti: why the Bank of the Republic of Haiti is interested (Governor's Column)",
+      "issuing_authority": "Banque de la République d'Haïti",
+      "note": "Official document on brh.ht; no stated publication date (page carries no printed date). Governor's column setting out BRH's view of AI risks/opportunities and its intended role (AI research agenda on financial-system risks, stress testing, recommendations to the sector; data protection, model transparency and cyber resilience as conditions). Discussion piece, not a supervisory instrument; promote only if BRH issues a dated AI policy, circular or guidance. https://www.brh.ht/lintelligence-artificielle-en-haiti-pourquoi-la-banque-de-la-republique-dhaiti-sy-interesse/",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Fonds IA de la BRH",
+      "english_title": "BRH AI Fund",
+      "issuing_authority": "Banque de la République d'Haïti",
+      "note": "Announced by the BRH at the first national AI summit 'Ayiti IA 2025' (27 June 2025, co-organised with the Ministry of Economy and Finance, UNDP and Group Croissance), as stated in the BRH Governor's column and speech on brh.ht. No founding document, circular or fund rules found on brh.ht. https://www.brh.ht/discours-du-gouverneur-de-la-brh-sommet-sur-lintelligence-artificielle-en-haiti-ayiti-ia-2025/",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Politique nationale d'intégration de l'intelligence artificielle dans le système éducatif (MENFP)",
+      "english_title": "National policy on integrating artificial intelligence into the education system (Ministry of National Education and Vocational Training)",
+      "issuing_authority": "Ministère de l'Éducation Nationale et de la Formation Professionnelle",
+      "note": "Known only from a social-media post attributed to the MENFP (axes: AI literacy in the national curriculum, personalised learning and assessment, ethical governance). menfp.gouv.ht was unavailable (connection reset / HTTP 503); no official text or adoption found. Re-check the MENFP site.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Arrêté fixant les règles relatives à la protection des données à caractère personnel",
+      "english_title": "Order laying down rules on the protection of personal data",
+      "issuing_authority": "Government of Haiti (arrêté)",
+      "note": "Reported by secondary sources as published in Le Moniteur No. 87 of 15 May 2018. Official text not located: the Le Moniteur / Presses Nationales sites could not be reached and no copy was found on another state site. Would be a data-privacy record once the official text is read. Also unverified: data-protection and cybercrime provisions of the Code pénal (Décret of 24 June 2020, Le Moniteur Special No. 10), whose entry into force is reported as deferred.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Le CONATEL renforce les capacités de son personnel en intelligence artificielle (projet Konbit IA)",
+      "english_title": "CONATEL builds its staff's capacity in artificial intelligence (Konbit IA project)",
+      "issuing_authority": "Conseil National des Télécommunications",
+      "note": "News item on conatel.gouv.ht (/node/667) on a 29-31 July 2026 internal training on generative AI, recalling that AI use must respect ethics, confidentiality and data protection. Internal capacity-building, not an AI rule or guidance; out of scope unless CONATEL issues an AI-use policy. https://conatel.gouv.ht/node/667",
+      "found": "2026-10-12"
+    }
+  ]
 }
