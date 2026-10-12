@@ -12,83 +12,716 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Turkey has no AI-specific law: AI policy rests on the National AI Strategy 2021-2025, issued by Presidential Circular 2021/18, and a 2024-2025 action plan. The Public Officials Ethics Board set principles for public officials' use of AI in 2024, the data protection authority (KVKK) has issued guidance on AI, generative AI and agentic AI, and the Ministry of National Education has an AI policy, ethics board directive and ethics guide. The data protection law gives a right to object to decisions made solely by automated systems, and AI bills are pending in parliament.",
+    "lead_institutions": [
+      "Presidency of the Republic of Türkiye Digital Transformation Office",
+      "Personal Data Protection Authority (KVKK)",
+      "Ministry of National Education",
+      "Public Officials Ethics Board"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was completed on 12 October 2026 and covers national law, government, ministries and regulators. The national AI strategy and the Ethics Board decision could only be located because their websites blocked access, and AI bills in parliament are listed as leads."
   },
   "instruments": [
     {
       "id": "i-0bc1c29de3f1",
-      "official_title": "T.C. Kamu Görevlileri Etik Kurulu | 2024/108 sayılı İlke Kararı (Yapay Zekâ Sistemlerinin Kullanımında Kamu Görevlilerinin Uyması Gereken Etik Davranış İlkeleri)",
-      "english_title": "Ethical conduct principles for public officials using AI (2024/108)",
+      "official_title": "2024/108 sayılı İlke Kararı: Yapay Zekâ Sistemlerinin Kullanımında Kamu Görevlilerinin Uyması Gereken Etik Davranış İlkeleri",
+      "english_title": "Principle Decision No. 2024/108: Ethical Conduct Principles to Be Observed by Public Officials in the Use of Artificial Intelligence Systems",
       "jurisdiction_id": "TUR",
-      "issuing_authority": null,
-      "publisher_name": "www.etik.gov.tr",
-      "authority_type": null,
+      "issuing_authority": "Public Officials Ethics Board (Kamu Görevlileri Etik Kurulu)",
+      "publisher_name": "Public Officials Ethics Board",
+      "authority_type": "ethics_body",
       "government_level": "national",
+      "subnational_unit": null,
       "categories": [
         "ethics",
-        "public-sector"
+        "public-sector",
+        "generative-ai"
       ],
       "category": "ethics",
       "subcategory": null,
-      "legal_status": null,
-      "publication_date": null,
+      "legal_status": "administrative_guideline",
+      "lifecycle": "adopted",
+      "publication_date": "2024-09-10",
       "effective_date": null,
       "last_amended_date": null,
-      "current_status": "Official source located; current status requires review",
-      "scope": null,
-      "sectors": [],
+      "current_status": "Ethics Board page not readable on 2026-10-12 (curl: TLS certificate chain error; WebFetch: HTTP 503). The decision text (Karar Tarihi 10.09.2024, Karar Sayısı 2024/108) was read in the Ministry of Interior's official distribution letter of 19.09.2024 republished by a Ministry of Health provincial directorate (dosyaism.saglik.gov.tr); title, date and content taken from that copy. Legal effect of an Ethics Board principle decision not stated in the text; recorded as guidance pending review.",
+      "scope": "Türkiye (national)",
+      "sectors": [
+        "public-administration"
+      ],
       "technology_scope": [
         "AI"
       ],
-      "summary": "Official source located for this governance category. The document’s adoption, legal effect, scope and version history remain under review.",
-      "ai_governance_relevance": "Primary-source material for assessing responsible ai & ethics, public-sector ai.",
+      "summary": "Principle decision of the Public Officials Ethics Board (decision date 10 September 2024, no. 2024/108) setting ethical conduct principles that public officials at every level should observe when using AI systems in public service. It asks officials to use AI to strengthen rather than replace their own judgement, to be aware that AI can produce incomplete or wrong outputs, mislead, entrench bias and harm legally protected interests, and to know the scope and terms of the AI system they use, in order to protect human rights, democratic values, the rule of law and trust in public institutions. The Ministry of Interior circulated it on 19 September 2024 to all 81 governorships and its central units for notification to every public official.",
+      "ai_governance_relevance": "Principle decision of the Public Officials Ethics Board (decision date 10 September 2024, no.",
       "source_url": "https://www.etik.gov.tr/icerikler/2024-108-sayili-ilke-karari-yapay-zeka-sistemlerinin-kullaniminda-kamu-gorevlilerinin-uymasi-gereken-etik-davranis-ilkeleri/",
       "official_pdf_url": null,
       "official_webpage_url": "https://www.etik.gov.tr/icerikler/2024-108-sayili-ilke-karari-yapay-zeka-sistemlerinin-kullaniminda-kamu-gorevlilerinin-uymasi-gereken-etik-davranis-ilkeleri/",
-      "language": null,
+      "language": "tr",
       "supersedes": [],
       "superseded_by": [],
       "related_instruments": [],
       "regional_applicability": [],
-      "verification_date": "2026-10-06",
+      "verification_date": "2026-10-12",
       "verification_level": "primary_source_located",
       "metadata_gaps": [
-        "Issuing authority",
-        "Publication/effective dates",
-        "Current legal status",
-        "Precise applicability",
-        "Version history",
-        "Authority type",
-        "Government level",
-        "Publication date",
-        "Effective date",
-        "Last amended date",
-        "Document language"
+        "Issuer page not reachable; text read via a government-distributed copy",
+        "Legal effect of the principle decision"
       ],
       "source_kind": "official_publication",
-      "evidence_reference": "turn185search2",
+      "evidence_reference": "curl --max-time 60 (browser UA): TLS 'unable to get local issuer certificate'; WebFetch: HTTP 503. Decision text read via Ministry of Interior distribution letter (19.09.2024) at https://dosyaism.saglik.gov.tr/Eklenti/229613/0/yapay-zeka-sistemlerinin-kullaniminda-kamu-gorevlilerinin-uymasi-gereken-etik-davranis-ilkeleripdf.pdf",
       "link_status": "inaccessible",
       "document_access_type": "official_publication_or_full_text_page",
       "source_id": "s-ce29223b7a4b",
       "organization_id": "o-4b90925c8e0f",
-      "lifecycle": "unverified",
       "first_recorded": "2026-10-06",
-      "last_changed": null,
-      "subnational_unit": null
+      "last_changed": null
+    },
+    {
+      "id": "i-b98645cafdee",
+      "official_title": "Ulusal Yapay Zekâ Stratejisi (2021-2025) konulu 2021/18 sayılı Cumhurbaşkanlığı Genelgesi",
+      "english_title": "Presidential Circular No. 2021/18 on the National Artificial Intelligence Strategy (2021-2025)",
+      "jurisdiction_id": "TUR",
+      "issuing_authority": "Presidency of the Republic of Türkiye (President Recep Tayyip Erdoğan)",
+      "publisher_name": "Presidency of the Republic of Türkiye",
+      "authority_type": "government",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "government-governance",
+        "strategy",
+        "public-sector"
+      ],
+      "category": "government-governance",
+      "subcategory": null,
+      "legal_status": "administrative_policy_mandatory_in_scope",
+      "lifecycle": "in_force",
+      "publication_date": "2021-08-20",
+      "effective_date": "2021-08-19",
+      "last_amended_date": null,
+      "current_status": "Published in the Official Gazette 20 August 2021 (No. 31574). The strategy period it governs ran to 2025; no successor circular or replacement strategy was found on official sites on 2026-10-12.",
+      "scope": "Türkiye (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Presidential circular dated 19 August 2021 and published in the Official Gazette of 20 August 2021 (No. 31574) announcing the National AI Strategy 2021-2025 prepared by the Digital Transformation Office and the Ministry of Industry and Technology. It establishes the National AI Strategy Steering Committee, chaired by the Vice President with the Head of the Digital Transformation Office and a deputy minister of industry and technology, meeting at least every three months with secretariat services from both bodies and able to create sub-committees and working groups. All public institutions are instructed to give the strategy's implementation every necessary support.",
+      "ai_governance_relevance": "Presidential circular dated 19 August 2021 and published in the Official Gazette of 20 August 2021 (No.",
+      "source_url": "https://www.resmigazete.gov.tr/eskiler/2021/08/20210820-22.pdf",
+      "official_pdf_url": "https://www.resmigazete.gov.tr/eskiler/2021/08/20210820-22.pdf",
+      "official_webpage_url": "https://www.resmigazete.gov.tr/eskiler/2021/08/20210820.htm",
+      "language": "tr",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "curl (browser UA, --max-time 60): Official Gazette PDF (scanned) rendered and read in full; issue index page 20210820.htm lists 'Ulusal Yapay Zekâ Stratejisi (2021-2025)' konulu Genelge 2021/18",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-03c37d04d18e",
+      "organization_id": "o-9c0779677111",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-acc31f09c1d3",
+      "official_title": "Ulusal Yapay Zekâ Stratejisi 2021-2025",
+      "english_title": "National Artificial Intelligence Strategy 2021-2025",
+      "jurisdiction_id": "TUR",
+      "issuing_authority": "Digital Transformation Office of the Presidency and Ministry of Industry and Technology",
+      "publisher_name": "Digital Transformation Office of the Presidency of the Republic of Türkiye",
+      "authority_type": "government",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "strategy",
+        "ethics",
+        "government-governance"
+      ],
+      "category": "strategy",
+      "subcategory": null,
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2021-08",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Announced by Presidential Circular 2021/18 (Official Gazette 20 August 2021), which states the strategy is published on the Digital Transformation Office website. Its action plan was updated as the 2024-2025 Action Plan (see leads). The strategy period ended in 2025; no successor strategy was found on official sites on 2026-10-12.",
+      "scope": "Türkiye (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Türkiye's first national AI strategy, prepared by the Presidency's Digital Transformation Office and the Ministry of Industry and Technology with public, private, civil-society and university participation, in line with the 11th Development Plan and the 2021 Presidential Annual Programme. It sets the country's AI priorities, aims, objectives and measures for 2021-2025, including national AI ethics principles, and is implemented and monitored through the Steering Committee created by Presidential Circular 2021/18.",
+      "ai_governance_relevance": "Türkiye's first national AI strategy, prepared by the Presidency's Digital Transformation Office and the Ministry of Industry and Technology with public, private, civil-society and university participation, in line with the 11th Development Plan and the 2021 Presidential Annual Programme.",
+      "source_url": "https://cbddo.gov.tr/uyzs",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://cbddo.gov.tr/uyzs",
+      "language": "tr",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "primary_source_located",
+      "metadata_gaps": [
+        "Strategy text not read (issuer site unreachable)",
+        "Exact publication day",
+        "Number of priorities, objectives and measures"
+      ],
+      "source_kind": "official_publication",
+      "evidence_reference": "cbddo.gov.tr not reachable on 2026-10-12: curl connection reset (https) / HTTP 503 (http); WebFetch HTTP 503. Facts on authorship and timing taken from Presidential Circular 2021/18 in the Official Gazette.",
+      "link_status": "inaccessible",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-f3e111745944",
+      "organization_id": "o-aab22baf4691",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-4a4eb4396e2a",
+      "official_title": "6698 sayılı Kişisel Verilerin Korunması Kanunu",
+      "english_title": "Personal Data Protection Law No. 6698",
+      "jurisdiction_id": "TUR",
+      "issuing_authority": "Grand National Assembly of Türkiye",
+      "publisher_name": "Grand National Assembly of Türkiye",
+      "authority_type": "legislature",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "category": "data-privacy",
+      "subcategory": null,
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2016-04-07",
+      "effective_date": "2016-04-07",
+      "last_amended_date": null,
+      "current_status": "In force as amended (consolidated text on the national legislation portal). Some provisions entered into force later than publication under its transitional articles; the 2016-04-07 date is the publication date.",
+      "scope": "Türkiye (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Türkiye's general data protection law (adopted 24 March 2016, Official Gazette 7 April 2016, No. 29677), applying to processing of personal data by wholly or partly automated means and governing AI training and use on personal data. Article 11(1)(g) gives data subjects the right to object to an outcome against them that arises from analysis of their data exclusively by automated systems. It creates the Personal Data Protection Authority and Board, which supervise compliance and impose administrative fines.",
+      "ai_governance_relevance": "Türkiye's general data protection law (adopted 24 March 2016, Official Gazette 7 April 2016, No.",
+      "source_url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.6698.pdf",
+      "official_pdf_url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.6698.pdf",
+      "official_webpage_url": "https://www.mevzuat.gov.tr/",
+      "language": "tr",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "legislation_portal",
+      "evidence_reference": "curl (browser UA, --max-time 60): consolidated PDF from mevzuat.gov.tr read (pdftotext); adoption 24/3/2016, Official Gazette 7/4/2016 No. 29677; art. 2 and art. 11(1)(g) checked",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-72bb8e8a3d5a",
+      "organization_id": "o-aaf64866dceb",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-4beb2cf2d6b3",
+      "official_title": "Yapay Zekâ Alanında Kişisel Verilerin Korunmasına Dair Tavsiyeler",
+      "english_title": "Recommendations on the Protection of Personal Data in the Field of Artificial Intelligence",
+      "jurisdiction_id": "TUR",
+      "issuing_authority": "Personal Data Protection Authority (Kişisel Verileri Koruma Kurumu)",
+      "publisher_name": "Personal Data Protection Authority",
+      "authority_type": "regulator",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "data-privacy",
+        "ethics",
+        "risk-assurance"
+      ],
+      "category": "data-privacy",
+      "subcategory": null,
+      "legal_status": "regulatory_opinion",
+      "lifecycle": "published",
+      "publication_date": "2025-04",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Current edition is KVKK Publication No. 76 dated April 2025 (Nisan 2025, Ankara), listed on the KVKK guides page. The recommendations were first released in 2021; that earlier release date was not confirmed on an official page during this review.",
+      "scope": "Türkiye (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "KVKK recommendations, under Law No. 6698, for developers, manufacturers, service providers and decision makers working in AI. They set general recommendations (lawful, fair, proportionate and accountable processing; respect for fundamental rights; privacy impact assessment for high-risk processing), specific recommendations for developers and service providers (privacy by design, data minimisation, avoidance of discriminatory outcomes, data subject rights, human intervention) and recommendations for decision makers.",
+      "ai_governance_relevance": "KVKK recommendations, under Law No.",
+      "source_url": "https://www.kvkk.gov.tr/SharedFolderServer/CMSFiles/25a1162f-0e61-4a43-98d0-3e7d057ac31a.pdf",
+      "official_pdf_url": "https://www.kvkk.gov.tr/SharedFolderServer/CMSFiles/25a1162f-0e61-4a43-98d0-3e7d057ac31a.pdf",
+      "official_webpage_url": "https://www.kvkk.gov.tr/Icerik/2030/rehberler?page=2",
+      "language": "tr",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "curl (browser UA, --max-time 60): 21-page PDF read (pdftotext); edition 'KVKK Yayınları No: 76, Nisan 2025, Ankara'; listed as 'Yapay Zeka Alanında Kişisel Verilerin Korunmasına Dair Tavsiyeler' on kvkk.gov.tr/Icerik/2030/rehberler?page=2",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-bce90f6451a3",
+      "organization_id": "o-9faa3c7f4bfa",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-0474193afdca",
+      "official_title": "Üretken Yapay Zekâ ve Kişisel Verilerin Korunması Rehberi (15 Soruda)",
+      "english_title": "Guide on Generative Artificial Intelligence and the Protection of Personal Data (in 15 Questions)",
+      "jurisdiction_id": "TUR",
+      "issuing_authority": "Personal Data Protection Authority (Kişisel Verileri Koruma Kurumu)",
+      "publisher_name": "Personal Data Protection Authority",
+      "authority_type": "regulator",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "generative-ai",
+        "data-privacy",
+        "transparency"
+      ],
+      "category": "generative-ai",
+      "subcategory": null,
+      "legal_status": "regulatory_opinion",
+      "lifecycle": "published",
+      "publication_date": "2025-11",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Published November 2025 (Yayın No: 113, Kasım 2025) and listed on the KVKK guides page.",
+      "scope": "Türkiye (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "KVKK guide (Publication No. 113) explaining in 15 questions how Law No. 6698 applies across the generative AI life cycle. It covers how controllers and processors are determined, the general principles and legal bases for processing, cross-border transfers, transparency, data subject rights and security measures, and adds advice for everyday users and for protecting children who use generative AI tools.",
+      "ai_governance_relevance": "KVKK guide (Publication No.",
+      "source_url": "https://www.kvkk.gov.tr/SharedFolderServer/CMSFiles/MTY5MjNmNmIwZWY3YTE.pdf",
+      "official_pdf_url": "https://www.kvkk.gov.tr/SharedFolderServer/CMSFiles/MTY5MjNmNmIwZWY3YTE.pdf",
+      "official_webpage_url": "https://www.kvkk.gov.tr/Icerik/2030/rehberler",
+      "language": "tr",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "curl (browser UA, --max-time 60): 64-page PDF read (pdftotext, contents and introduction); 'Yayın No: 113 Kasım 2025'; listed on kvkk.gov.tr/Icerik/2030/rehberler",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-b56b74942b7c",
+      "organization_id": "o-9faa3c7f4bfa",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-4dfbc116fe92",
+      "official_title": "Etken Yapay Zekâ (Agentic AI)",
+      "english_title": "Agentic Artificial Intelligence (Agentic AI)",
+      "jurisdiction_id": "TUR",
+      "issuing_authority": "Personal Data Protection Authority (Kişisel Verileri Koruma Kurumu)",
+      "publisher_name": "Personal Data Protection Authority",
+      "authority_type": "regulator",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "generative-ai",
+        "data-privacy",
+        "risk-assurance"
+      ],
+      "category": "generative-ai",
+      "subcategory": null,
+      "legal_status": "regulatory_opinion",
+      "lifecycle": "published",
+      "publication_date": "2026-02",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Dated February 2026 (Şubat 2026) and listed under KVKK 'Diğer Dokümanlar'.",
+      "scope": "Türkiye (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "KVKK paper on agentic AI systems and AI agents. It describes how agentic systems work and their potential use cases, sets out general risks and specific personal-data-protection risks they raise, and lists points controllers can take into account to comply with Law No. 6698 when deploying them.",
+      "ai_governance_relevance": "KVKK paper on agentic AI systems and AI agents.",
+      "source_url": "https://www.kvkk.gov.tr/SharedFolderServer/CMSFiles/MTY5YWE4ZDE0NWYwMWI.pdf",
+      "official_pdf_url": "https://www.kvkk.gov.tr/SharedFolderServer/CMSFiles/MTY5YWE4ZDE0NWYwMWI.pdf",
+      "official_webpage_url": "https://www.kvkk.gov.tr/Icerik/5383/diger-dokumanlar",
+      "language": "tr",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "curl (browser UA, --max-time 60): 46-page PDF read (pdftotext, contents and introduction); cover 'Şubat 2026'; listed on kvkk.gov.tr/Icerik/5383/diger-dokumanlar",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-f6003868800c",
+      "organization_id": "o-9faa3c7f4bfa",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-59c919eb888b",
+      "official_title": "İş Yerlerinde Üretken Yapay Zekâ Araçlarının Kullanımı",
+      "english_title": "Use of Generative AI Tools in the Workplace",
+      "jurisdiction_id": "TUR",
+      "issuing_authority": "Personal Data Protection Authority (Kişisel Verileri Koruma Kurumu)",
+      "publisher_name": "Personal Data Protection Authority",
+      "authority_type": "regulator",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "generative-ai",
+        "data-privacy"
+      ],
+      "category": "generative-ai",
+      "subcategory": null,
+      "legal_status": "regulatory_opinion",
+      "lifecycle": "published",
+      "publication_date": "2026-02",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Dated February 2026 (Şubat 2026) and listed under KVKK 'Diğer Dokümanlar'.",
+      "scope": "Türkiye (national)",
+      "sectors": [
+        "employment"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "KVKK paper on the use of generative AI tools in workplaces. It gives an overview of workplace use, describes the risks of uncontrolled use of such tools by employees ('shadow AI'), and sets out points employers can take into account to protect personal data.",
+      "ai_governance_relevance": "KVKK paper on the use of generative AI tools in workplaces.",
+      "source_url": "https://www.kvkk.gov.tr/SharedFolderServer/CMSFiles/MTY5YTdkNjdjNzJlMjM.pdf",
+      "official_pdf_url": "https://www.kvkk.gov.tr/SharedFolderServer/CMSFiles/MTY5YTdkNjdjNzJlMjM.pdf",
+      "official_webpage_url": "https://www.kvkk.gov.tr/Icerik/5383/diger-dokumanlar",
+      "language": "tr",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "curl (browser UA, --max-time 60): 18-page PDF read (pdftotext, contents and opening); cover 'Şubat 2026'; listed on kvkk.gov.tr/Icerik/5383/diger-dokumanlar",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-0e5afc2e2489",
+      "organization_id": "o-9faa3c7f4bfa",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-be718c3d1129",
+      "official_title": "Eğitimde Yapay Zekâ Politika Belgesi ve Eylem Planı (2025-2029)",
+      "english_title": "Artificial Intelligence in Education Policy Document and Action Plan (2025-2029)",
+      "jurisdiction_id": "TUR",
+      "issuing_authority": "Ministry of National Education, Directorate General for Innovation and Educational Technologies (YEĞİTEK)",
+      "publisher_name": "Ministry of National Education",
+      "authority_type": "ministry",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "sectoral",
+        "strategy",
+        "ethics"
+      ],
+      "category": "sectoral",
+      "subcategory": null,
+      "legal_status": "national_strategy",
+      "lifecycle": "in_force",
+      "publication_date": "2025-06-17",
+      "effective_date": "2025-06-17",
+      "last_amended_date": null,
+      "current_status": "Entered into force 17 June 2025 per the Ministry's announcement. An official English version was published by YEĞİTEK in July 2025 (https://yegitek.meb.gov.tr/meb_iys_dosyalar/2025_07/19150909_egitimde_yz_politika_belgesi_18072025_en.pdf).",
+      "scope": "Türkiye (national)",
+      "sectors": [
+        "education"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Education-sector AI policy of the Ministry of National Education, prepared within the National AI Strategy, with four goals (building an AI culture in education, expanding AI in curricula, supporting AI-assisted management and decision making, and strengthening technology, infrastructure and data analytics), 15 policy steps and 40 action steps over 2025-2029. It provides for an AI Applications Ethics Board to review AI projects and tools in the ministry.",
+      "ai_governance_relevance": "Education-sector AI policy of the Ministry of National Education, prepared within the National AI Strategy, with four goals (building an AI culture in education, expanding AI in curricula, supporting AI-assisted management and decision making, and strengthening technology, infrastructure and data analytics), 15 policy steps and 40 action steps over 2025-2029.",
+      "source_url": "https://yegitek.meb.gov.tr/meb_iys_dosyalar/2025_06/17092340_egitimdeyapayzekapolitikabelgesiveeylemplani202520291.pdf",
+      "official_pdf_url": "https://yegitek.meb.gov.tr/meb_iys_dosyalar/2025_06/17092340_egitimdeyapayzekapolitikabelgesiveeylemplani202520291.pdf",
+      "official_webpage_url": "https://www.meb.gov.tr/egitimde-yapay-zeka-politika-belgesi-ve-eylem-plani-yururluge-girdi/haber/37531/tr",
+      "language": "tr",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "curl (browser UA, --max-time 60): MEB announcement of 17 June 2025 read; its download link (meb.ai short link) resolves to the 56-page PDF on yegitek.meb.gov.tr; official English edition PDF read (cover and bibliographic page)",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-a6c2cab5a152",
+      "organization_id": "o-fcef8fce2f25",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-b9a856e54c75",
+      "official_title": "Millî Eğitim Bakanlığı Yapay Zekâ Uygulamaları Etik Kurulu Yönergesi",
+      "english_title": "Ministry of National Education Directive on the Artificial Intelligence Applications Ethics Board",
+      "jurisdiction_id": "TUR",
+      "issuing_authority": "Ministry of National Education (approved by the Minister on the proposal of the Board of Education)",
+      "publisher_name": "Ministry of National Education",
+      "authority_type": "ministry",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "sectoral",
+        "ethics",
+        "government-governance"
+      ],
+      "category": "sectoral",
+      "subcategory": null,
+      "legal_status": "administrative_policy_mandatory_in_scope",
+      "lifecycle": "in_force",
+      "publication_date": "2025-10-22",
+      "effective_date": "2025-10-22",
+      "last_amended_date": null,
+      "current_status": "Approved by the Minister on 22 October 2025 and in force on approval (art. 19); listed among directives on the MEB legislation portal.",
+      "scope": "Türkiye (national)",
+      "sectors": [
+        "education"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Ministerial directive setting ethical principles for AI applications in the Ministry of National Education and the procedures to apply and monitor them. It creates an 11-member AI Applications Ethics High Board chaired by the Head of the Board of Education, provincial and district AI ethics boards and school AI ethics teams, and requires teachers and central and provincial units to complete an Ethics Declaration Form for AI applications with their unit head's approval, with an appeal route to the High Board.",
+      "ai_governance_relevance": "Ministerial directive setting ethical principles for AI applications in the Ministry of National Education and the procedures to apply and monitor them.",
+      "source_url": "https://mevzuat.meb.gov.tr/dosyalar/2295.pdf",
+      "official_pdf_url": "https://mevzuat.meb.gov.tr/dosyalar/2295.pdf",
+      "official_webpage_url": "https://www.meb.gov.tr/mevzuat/liste.php?ara=5",
+      "language": "tr",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "legislation_portal",
+      "evidence_reference": "curl (browser UA, --max-time 60): 5-page PDF from mevzuat.meb.gov.tr read (pdftotext): approval memo dated 22.10.2025 signed 'OLUR' by the Minister; art. 3 legal basis, art. 19 entry into force on Minister's approval",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-2c72bbd578d4",
+      "organization_id": "o-fcef8fce2f25",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-86ac04438492",
+      "official_title": "Eğitimde Yapay Zekâ Uygulamaları Etik Kılavuzu",
+      "english_title": "Ethics Guide for Artificial Intelligence Applications in Education",
+      "jurisdiction_id": "TUR",
+      "issuing_authority": "Ministry of National Education, Board of Education (Talim ve Terbiye Kurulu Başkanlığı)",
+      "publisher_name": "Ministry of National Education",
+      "authority_type": "ministry",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "sectoral",
+        "ethics",
+        "risk-assurance"
+      ],
+      "category": "sectoral",
+      "subcategory": null,
+      "legal_status": "administrative_guideline",
+      "lifecycle": "published",
+      "publication_date": "2026-01-10",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Announced by the Ministry on 10 January 2026; the YAZEK ethics declaration system was to open on 2 February 2026.",
+      "scope": "Türkiye (national)",
+      "sectors": [
+        "education"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Guide implementing the Ministry's AI Applications Ethics Board Directive. It sets eight ethical principles for AI in education (human-centred and rights-based approach, equality and inclusion, transparency and explainability, privacy and data governance, reliability and technical robustness, accountability and human oversight, educational value, and conformity with national and moral values), explains how school ethics teams and provincial, district and high ethics boards work, when the Ethics Declaration Form must be filed, and how ethics violations are reported and handled through the YAZEK declaration system.",
+      "ai_governance_relevance": "Guide implementing the Ministry's AI Applications Ethics Board Directive.",
+      "source_url": "https://ttkb.meb.gov.tr/meb_iys_dosyalar/2026_01/09152326_egitimdeyapayzekauygulamalari_etik_kilavuzu.pdf",
+      "official_pdf_url": "https://ttkb.meb.gov.tr/meb_iys_dosyalar/2026_01/09152326_egitimdeyapayzekauygulamalari_etik_kilavuzu.pdf",
+      "official_webpage_url": "https://meb.gov.tr/egitimde-yapay-zeka-uygulamalari-etik-kilavuzu-yayimlandi/haber/39496/tr",
+      "language": "tr",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "curl (browser UA, --max-time 60): MEB announcement dated 10 January 2026 read; linked 36-page PDF on ttkb.meb.gov.tr read (pdftotext, contents)",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-7fd2ea8ea874",
+      "organization_id": "o-fcef8fce2f25",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-639e073744c5",
+      "official_title": "TÜBİTAK Yapay Zekâ Politikası",
+      "english_title": "TÜBİTAK Artificial Intelligence Policy",
+      "jurisdiction_id": "TUR",
+      "issuing_authority": "Scientific and Technological Research Council of Türkiye (TÜBİTAK), AI Coordination Group",
+      "publisher_name": "Scientific and Technological Research Council of Türkiye",
+      "authority_type": "agency",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "public-sector",
+        "ethics"
+      ],
+      "category": "public-sector",
+      "subcategory": null,
+      "legal_status": "administrative_policy_mandatory_in_scope",
+      "lifecycle": "published",
+      "publication_date": "2026-03",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Version 1.0 dated March 2026 (Mart 2026), published on tubitak.gov.tr.",
+      "scope": "Türkiye (national)",
+      "sectors": [
+        "research"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Institutional AI policy covering all TÜBİTAK functions (presidency, centres and institutes; project management, administration, finance, human resources and R&D). It sets core principles that it declares binding on all AI applications developed or used in the institution, including human-centred and ethical use with transparency, explainability, fairness, non-discrimination and accountability, human oversight and final approval in decisions, and a preference for domestic capabilities balanced with proven external solutions; it is aligned with the National AI Strategy 2021-2025.",
+      "ai_governance_relevance": "Institutional AI policy covering all TÜBİTAK functions (presidency, centres and institutes; project management, administration, finance, human resources and R&D).",
+      "source_url": "https://tubitak.gov.tr/sites/default/files/2026-03/TUBITAK_Yapay_Zeka_Politika_Belgesi_v1.0_tr.pdf",
+      "official_pdf_url": "https://tubitak.gov.tr/sites/default/files/2026-03/TUBITAK_Yapay_Zeka_Politika_Belgesi_v1.0_tr.pdf",
+      "official_webpage_url": null,
+      "language": "tr",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "curl (browser UA, --max-time 60): 8-page PDF read (pdftotext); cover 'Yapay Zekâ Politikası, Yapay Zekâ Koordinasyon Grubu, Mart 2026'",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-2f3e9e6d85b4",
+      "organization_id": "o-645541c5ccb0",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
     }
   ],
   "organizations": [
     {
       "id": "o-4b90925c8e0f",
       "jurisdiction_id": "TUR",
-      "name": "www.etik.gov.tr",
-      "publisher_name_verified": false,
-      "ai_governance_role": "Publisher of listed official material; complete institutional mandate and statutory responsibilities require review.",
-      "source_url": "https://www.etik.gov.tr/icerikler/2024-108-sayili-ilke-karari-yapay-zeka-sistemlerinin-kullaniminda-kamu-gorevlilerinin-uymasi-gereken-etik-davranis-ilkeleri/",
-      "authority_type": null,
-      "government_level": null
+      "name": "Public Officials Ethics Board",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Board under Law 5176 that sets ethical conduct principles for public officials; issued Principle Decision 2024/108 on public officials' use of AI systems.",
+      "source_url": "https://www.etik.gov.tr/",
+      "authority_type": "ethics_body",
+      "government_level": "national"
+    },
+    {
+      "id": "o-9c0779677111",
+      "jurisdiction_id": "TUR",
+      "name": "Presidency of the Republic of Türkiye",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Issued Presidential Circular 2021/18 putting the National AI Strategy 2021-2025 into effect and creating the National AI Strategy Steering Committee chaired by a Vice President.",
+      "source_url": "https://www.resmigazete.gov.tr/eskiler/2021/08/20210820-22.pdf",
+      "authority_type": "government",
+      "government_level": "national"
+    },
+    {
+      "id": "o-aab22baf4691",
+      "jurisdiction_id": "TUR",
+      "name": "Digital Transformation Office of the Presidency of the Republic of Türkiye",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Co-author (with the Ministry of Industry and Technology) of the National AI Strategy 2021-2025 and its publisher; provides the secretariat of the National AI Strategy Steering Committee.",
+      "source_url": "https://cbddo.gov.tr/",
+      "authority_type": "government",
+      "government_level": "national"
+    },
+    {
+      "id": "o-9faa3c7f4bfa",
+      "jurisdiction_id": "TUR",
+      "name": "Personal Data Protection Authority",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Data protection authority under Law 6698 (KVKK); has issued AI recommendations and guidance on generative and agentic AI.",
+      "source_url": "https://www.kvkk.gov.tr/",
+      "authority_type": "regulator",
+      "government_level": "national"
+    },
+    {
+      "id": "o-fcef8fce2f25",
+      "jurisdiction_id": "TUR",
+      "name": "Ministry of National Education",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Issued the AI in Education Policy Document and Action Plan (2025-2029), the AI Applications Ethics Board Directive and the AI ethics guide for education.",
+      "source_url": "https://www.meb.gov.tr/",
+      "authority_type": "ministry",
+      "government_level": "national"
+    },
+    {
+      "id": "o-645541c5ccb0",
+      "jurisdiction_id": "TUR",
+      "name": "Scientific and Technological Research Council of Türkiye",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Public research funding and R&D agency (TÜBİTAK); adopted an institutional AI policy in March 2026.",
+      "source_url": "https://tubitak.gov.tr/",
+      "authority_type": "agency",
+      "government_level": "national"
+    },
+    {
+      "id": "o-aaf64866dceb",
+      "jurisdiction_id": "TUR",
+      "name": "Grand National Assembly of Türkiye",
+      "publisher_name_verified": true,
+      "ai_governance_role": "National parliament; enacted the Personal Data Protection Law No. 6698 and the law approving Convention 108; AI bills have been submitted by members.",
+      "source_url": "https://www.tbmm.gov.tr/",
+      "authority_type": "legislature",
+      "government_level": "national"
     }
   ],
   "sources": [
@@ -99,31 +732,338 @@
         "TUR"
       ],
       "source_institutions": [
-        "www.etik.gov.tr"
+        "Public Officials Ethics Board"
       ],
       "instrument_ids": [
         "i-0bc1c29de3f1"
       ],
       "categories_reviewed": [
         "ethics",
-        "public-sector"
+        "public-sector",
+        "generative-ai"
       ],
-      "date_reviewed": "2026-10-06",
-      "checked_date": "2026-10-06",
-      "check_method": "GET; first 1 MiB; 14-second timeout",
-      "http_status": 502,
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl --max-time 60 (browser UA): TLS 'unable to get local issuer certificate'; WebFetch: HTTP 503. Decision text read via Ministry of Interior distribution letter (19.09.2024) at https://dosyaism.saglik.gov.tr/Eklenti/229613/0/yapay-zeka-sistemlerinin-kullaniminda-kamu-gorevlilerinin-uymasi-gereken-etik-davranis-ilkeleripdf.pdf",
+      "http_status": null,
       "final_url": "https://www.etik.gov.tr/icerikler/2024-108-sayili-ilke-karari-yapay-zeka-sistemlerinin-kullaniminda-kamu-gorevlilerinin-uymasi-gereken-etik-davranis-ilkeleri/",
       "link_status": "inaccessible",
       "page_title": null,
-      "document_language": null,
-      "error": "HTTP Error 502: Bad Gateway"
+      "document_language": "tr",
+      "error": "curl --max-time 60 (browser UA): TLS 'unable to get local issuer certificate'; WebFetch: HTTP 503. Decision text read via Ministry of Interior distribution letter (19.09.2024) at https://dosyaism.saglik.gov.tr/Eklenti/229613/0/yapay-zeka-sistemlerinin-kullaniminda-kamu-gorevlilerinin-uymasi-gereken-etik-davranis-ilkeleripdf.pdf",
+      "content_type": null
+    },
+    {
+      "id": "s-03c37d04d18e",
+      "url": "https://www.resmigazete.gov.tr/eskiler/2021/08/20210820-22.pdf",
+      "jurisdiction_ids": [
+        "TUR"
+      ],
+      "source_institutions": [
+        "Presidency of the Republic of Türkiye"
+      ],
+      "instrument_ids": [
+        "i-b98645cafdee"
+      ],
+      "categories_reviewed": [
+        "government-governance",
+        "strategy",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser UA, --max-time 60): Official Gazette PDF (scanned) rendered and read in full; issue index page 20210820.htm lists 'Ulusal Yapay Zekâ Stratejisi (2021-2025)' konulu Genelge 2021/18",
+      "http_status": 200,
+      "final_url": "https://www.resmigazete.gov.tr/eskiler/2021/08/20210820-22.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "tr",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-f3e111745944",
+      "url": "https://cbddo.gov.tr/uyzs",
+      "jurisdiction_ids": [
+        "TUR"
+      ],
+      "source_institutions": [
+        "Digital Transformation Office of the Presidency of the Republic of Türkiye"
+      ],
+      "instrument_ids": [
+        "i-acc31f09c1d3"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "ethics",
+        "government-governance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "cbddo.gov.tr not reachable on 2026-10-12: curl connection reset (https) / HTTP 503 (http); WebFetch HTTP 503. Facts on authorship and timing taken from Presidential Circular 2021/18 in the Official Gazette.",
+      "http_status": null,
+      "final_url": "https://cbddo.gov.tr/uyzs",
+      "link_status": "inaccessible",
+      "page_title": null,
+      "document_language": "tr",
+      "error": "cbddo.gov.tr not reachable on 2026-10-12: curl connection reset (https) / HTTP 503 (http); WebFetch HTTP 503. Facts on authorship and timing taken from Presidential Circular 2021/18 in the Official Gazette.",
+      "content_type": null
+    },
+    {
+      "id": "s-72bb8e8a3d5a",
+      "url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.6698.pdf",
+      "jurisdiction_ids": [
+        "TUR"
+      ],
+      "source_institutions": [
+        "Grand National Assembly of Türkiye"
+      ],
+      "instrument_ids": [
+        "i-4a4eb4396e2a"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser UA, --max-time 60): consolidated PDF from mevzuat.gov.tr read (pdftotext); adoption 24/3/2016, Official Gazette 7/4/2016 No. 29677; art. 2 and art. 11(1)(g) checked",
+      "http_status": 200,
+      "final_url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.6698.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "tr",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-bce90f6451a3",
+      "url": "https://www.kvkk.gov.tr/SharedFolderServer/CMSFiles/25a1162f-0e61-4a43-98d0-3e7d057ac31a.pdf",
+      "jurisdiction_ids": [
+        "TUR"
+      ],
+      "source_institutions": [
+        "Personal Data Protection Authority"
+      ],
+      "instrument_ids": [
+        "i-4beb2cf2d6b3"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "ethics",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser UA, --max-time 60): 21-page PDF read (pdftotext); edition 'KVKK Yayınları No: 76, Nisan 2025, Ankara'; listed as 'Yapay Zeka Alanında Kişisel Verilerin Korunmasına Dair Tavsiyeler' on kvkk.gov.tr/Icerik/2030/rehberler?page=2",
+      "http_status": 200,
+      "final_url": "https://www.kvkk.gov.tr/SharedFolderServer/CMSFiles/25a1162f-0e61-4a43-98d0-3e7d057ac31a.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "tr",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-b56b74942b7c",
+      "url": "https://www.kvkk.gov.tr/SharedFolderServer/CMSFiles/MTY5MjNmNmIwZWY3YTE.pdf",
+      "jurisdiction_ids": [
+        "TUR"
+      ],
+      "source_institutions": [
+        "Personal Data Protection Authority"
+      ],
+      "instrument_ids": [
+        "i-0474193afdca"
+      ],
+      "categories_reviewed": [
+        "generative-ai",
+        "data-privacy",
+        "transparency"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser UA, --max-time 60): 64-page PDF read (pdftotext, contents and introduction); 'Yayın No: 113 Kasım 2025'; listed on kvkk.gov.tr/Icerik/2030/rehberler",
+      "http_status": 200,
+      "final_url": "https://www.kvkk.gov.tr/SharedFolderServer/CMSFiles/MTY5MjNmNmIwZWY3YTE.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "tr",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-f6003868800c",
+      "url": "https://www.kvkk.gov.tr/SharedFolderServer/CMSFiles/MTY5YWE4ZDE0NWYwMWI.pdf",
+      "jurisdiction_ids": [
+        "TUR"
+      ],
+      "source_institutions": [
+        "Personal Data Protection Authority"
+      ],
+      "instrument_ids": [
+        "i-4dfbc116fe92"
+      ],
+      "categories_reviewed": [
+        "generative-ai",
+        "data-privacy",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser UA, --max-time 60): 46-page PDF read (pdftotext, contents and introduction); cover 'Şubat 2026'; listed on kvkk.gov.tr/Icerik/5383/diger-dokumanlar",
+      "http_status": 200,
+      "final_url": "https://www.kvkk.gov.tr/SharedFolderServer/CMSFiles/MTY5YWE4ZDE0NWYwMWI.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "tr",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-0e5afc2e2489",
+      "url": "https://www.kvkk.gov.tr/SharedFolderServer/CMSFiles/MTY5YTdkNjdjNzJlMjM.pdf",
+      "jurisdiction_ids": [
+        "TUR"
+      ],
+      "source_institutions": [
+        "Personal Data Protection Authority"
+      ],
+      "instrument_ids": [
+        "i-59c919eb888b"
+      ],
+      "categories_reviewed": [
+        "generative-ai",
+        "data-privacy"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser UA, --max-time 60): 18-page PDF read (pdftotext, contents and opening); cover 'Şubat 2026'; listed on kvkk.gov.tr/Icerik/5383/diger-dokumanlar",
+      "http_status": 200,
+      "final_url": "https://www.kvkk.gov.tr/SharedFolderServer/CMSFiles/MTY5YTdkNjdjNzJlMjM.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "tr",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-a6c2cab5a152",
+      "url": "https://yegitek.meb.gov.tr/meb_iys_dosyalar/2025_06/17092340_egitimdeyapayzekapolitikabelgesiveeylemplani202520291.pdf",
+      "jurisdiction_ids": [
+        "TUR"
+      ],
+      "source_institutions": [
+        "Ministry of National Education"
+      ],
+      "instrument_ids": [
+        "i-be718c3d1129"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "strategy",
+        "ethics"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser UA, --max-time 60): MEB announcement of 17 June 2025 read; its download link (meb.ai short link) resolves to the 56-page PDF on yegitek.meb.gov.tr; official English edition PDF read (cover and bibliographic page)",
+      "http_status": 200,
+      "final_url": "https://yegitek.meb.gov.tr/meb_iys_dosyalar/2025_06/17092340_egitimdeyapayzekapolitikabelgesiveeylemplani202520291.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "tr",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-2c72bbd578d4",
+      "url": "https://mevzuat.meb.gov.tr/dosyalar/2295.pdf",
+      "jurisdiction_ids": [
+        "TUR"
+      ],
+      "source_institutions": [
+        "Ministry of National Education"
+      ],
+      "instrument_ids": [
+        "i-b9a856e54c75"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "ethics",
+        "government-governance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser UA, --max-time 60): 5-page PDF from mevzuat.meb.gov.tr read (pdftotext): approval memo dated 22.10.2025 signed 'OLUR' by the Minister; art. 3 legal basis, art. 19 entry into force on Minister's approval",
+      "http_status": 200,
+      "final_url": "https://mevzuat.meb.gov.tr/dosyalar/2295.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "tr",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-7fd2ea8ea874",
+      "url": "https://ttkb.meb.gov.tr/meb_iys_dosyalar/2026_01/09152326_egitimdeyapayzekauygulamalari_etik_kilavuzu.pdf",
+      "jurisdiction_ids": [
+        "TUR"
+      ],
+      "source_institutions": [
+        "Ministry of National Education"
+      ],
+      "instrument_ids": [
+        "i-86ac04438492"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "ethics",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser UA, --max-time 60): MEB announcement dated 10 January 2026 read; linked 36-page PDF on ttkb.meb.gov.tr read (pdftotext, contents)",
+      "http_status": 200,
+      "final_url": "https://ttkb.meb.gov.tr/meb_iys_dosyalar/2026_01/09152326_egitimdeyapayzekauygulamalari_etik_kilavuzu.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "tr",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-2f3e9e6d85b4",
+      "url": "https://tubitak.gov.tr/sites/default/files/2026-03/TUBITAK_Yapay_Zeka_Politika_Belgesi_v1.0_tr.pdf",
+      "jurisdiction_ids": [
+        "TUR"
+      ],
+      "source_institutions": [
+        "Scientific and Technological Research Council of Türkiye"
+      ],
+      "instrument_ids": [
+        "i-639e073744c5"
+      ],
+      "categories_reviewed": [
+        "public-sector",
+        "ethics"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser UA, --max-time 60): 8-page PDF read (pdftotext); cover 'Yapay Zekâ Politikası, Yapay Zekâ Koordinasyon Grubu, Mart 2026'",
+      "http_status": 200,
+      "final_url": "https://tubitak.gov.tr/sites/default/files/2026-03/TUBITAK_Yapay_Zeka_Politika_Belgesi_v1.0_tr.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "tr",
+      "error": null,
+      "content_type": "application/pdf"
     }
   ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "TUR",
     "country": "Türkiye",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -136,57 +1076,395 @@
       "transparency"
     ],
     "categories_with_findings": [
-      "ethics",
-      "public-sector"
-    ],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
       "binding-law",
-      "strategy",
-      "government-governance",
+      "data-privacy",
       "ethics",
-      "risk-assurance",
+      "generative-ai",
+      "government-governance",
       "public-sector",
+      "risk-assurance",
+      "sectoral",
+      "strategy",
+      "transparency"
+    ],
+    "categories_where_no_material_was_found": [
       "procurement",
       "cyber-security",
-      "data-privacy",
-      "transparency",
       "standards",
       "sandbox",
       "index-readiness",
-      "sectoral",
-      "generative-ai",
       "drafts",
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Türkiye \"yapay zekâ\" (strateji OR düzenleme OR etik) government ministry official",
       "Türkiye \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Türkiye government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Türkiye \"yapay zekâ\" cybersecurity authority secure development safety guidelines",
-      "Türkiye privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Türkiye privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "cbddo.gov.tr Ulusal Yapay Zekâ Stratejisi 2024-2025 Eylem Planı pdf",
+      "\"Ulusal Yapay Zekâ Stratejisi\" 2021-2025 pdf site:gov.tr",
+      "Kamu Görevlileri Etik Kurulu 2024/108 ilke kararı yapay zekâ Resmî Gazete",
+      "\"Yapay Zeka Sistemlerinin Kullanımında Kamu Görevlilerinin Uyması Gereken Etik Davranış İlkeleri\" etik.gov.tr",
+      "kvkk.gov.tr üretken yapay zekâ rehber OR tavsiyeler yapay zeka kişisel veriler",
+      "kvkk.gov.tr \"Yapay Zekâ Alanında Kişisel Verilerin Korunmasına Dair Tavsiyeler\" pdf",
+      "KVKK site: Rehberler pages 1-5 and Diğer Dokümanlar scanned for 'yapay zekâ'",
+      "Yapay Zekâ Kanun Teklifi TBMM 2025 2026 durum",
+      "tbmm.gov.tr kanun teklifi \"yapay zeka\"",
+      "yapay zeka kanun teklifi (site:tbmm.gov.tr)",
+      "TS ISO/IEC 42001 yapay zekâ yönetim sistemi (site:tse.org.tr)",
+      "Milli Eğitim Bakanlığı \"Eğitimde Yapay Zekâ\" politika belgesi OR yönerge meb.gov.tr",
+      "\"Yapay Zekâ Uygulamaları Etik Kurulu Yönergesi\" mevzuat.meb.gov.tr; MEB mevzuat Yönerge list",
+      "yapay zeka yönetmelik OR rehber OR ilke (bddk.org.tr, spk.gov.tr, tcmb.gov.tr, btk.gov.tr, rtuk.gov.tr, rekabet.gov.tr)",
+      "yapay zekâ rehber OR yönerge OR genelge kamu (saglik.gov.tr, adalet.gov.tr, cbddo.gov.tr, sanayi.gov.tr, tse.org.tr, siberguvenlik.gov.tr)",
+      "Resmî Gazete: Kişisel Verilerin Otomatik İşleme Tabi Tutulması Karşısında Bireylerin Korunması Sözleşmesi onay (6669; 2016/8576)",
+      "Turkey national AI strategy 2021-2025 English"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. cbddo.gov.tr (reset/503), etik.gov.tr (TLS chain/503) and the sanayi.gov.tr action plan PDF (rejected) unreachable. Ethics Board decision 2024/108 text read in the Interior Ministry's official distribution letter (dosyaism.saglik.gov.tr). Convention 108: Council of Ministers ratification decision 2016/8576, Official Gazette 17 March 2016 No. 29656, recorded on the COE file. Units covered: Law: Official Gazette and mevzuat.gov.tr: no AI-specific law; Law 6698 (automated-decision objection right, art. 11(1)(g)) recorded; Presidential Circular 2021/18 recorded; AI bill 2/2234 (24 June 2024, in committee) verified on tbmm.gov.tr and held as a lead; 2025 bills held as leads (not verified); Convention 108 approval law 6669 and ratification decision 2016/8576 identified.; Government: Presidency circular, Digital Transformation Office (site unreachable: strategy recorded located-only, 2024-2025 action plan as lead), Public Officials Ethics Board decision 2024/108, TÜBİTAK institutional AI policy.; Ministries: Education (policy 2025-2029, ethics board directive, ethics guide recorded); Industry and Technology (action plan lead); Interior (circulated Ethics Board decision, no own AI document found); Health, Justice: searched, nothing AI-specific at national level found; Defence, Finance, Labour: not searched individually.; Regulators: KVKK: AI recommendations, generative AI guide, agentic AI and workplace GenAI papers recorded. BDDK, SPK, TCMB, BTK, RTÜK, Competition Authority, Cyber Security Directorate: searched, no AI-specific rule or guidance found (only journal articles and speeches).. Not reached: cbddo.gov.tr (connection reset / HTTP 503); etik.gov.tr (TLS chain error / HTTP 503); sanayi.gov.tr action plan PDF (request rejected); Ministries of Defence, Treasury and Finance, Labour: not individually searched; TSE: searched tse.org.tr, no national adoption of ISO/IEC 42001 found. Could not verify: National AI Strategy 2021-2025 text (cbddo.gov.tr unreachable); 2024-2025 Action Plan (sanayi.gov.tr rejected; cbddo unreachable); Ethics Board page on etik.gov.tr; 2025 AI bills (Öztürk; Penal Code amendment) on tbmm.gov.tr. procurement, cyber-security, standards, sandbox, index-readiness, drafts, international, historical: no material found.",
     "discovery_result_count": 11,
     "focused_result_count": 13
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-c8a6ff78ea21",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "TUR",
+      "instrument_id": "i-0bc1c29de3f1",
+      "title": "Principle Decision No. 2024/108: Ethical Conduct Principles to Be Observed by Public Officials in the Use of Artificial Intelligence Systems",
+      "detail": "Record updated: categories, issuing authority, legal status, lifecycle, publication date, scope, summary, title.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-3aef385695e2",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "TUR",
+      "instrument_id": "i-b98645cafdee",
+      "title": "Presidential Circular No. 2021/18 on the National Artificial Intelligence Strategy (2021-2025)",
+      "detail": "Added to the radar (published 2021-08-20).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.resmigazete.gov.tr/eskiler/2021/08/20210820-22.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-182d13fe62ec",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "TUR",
+      "instrument_id": "i-acc31f09c1d3",
+      "title": "National Artificial Intelligence Strategy 2021-2025",
+      "detail": "Added to the radar (published 2021-08).",
+      "from": null,
+      "to": null,
+      "source_url": "https://cbddo.gov.tr/uyzs",
+      "needs_review": false
+    },
+    {
+      "id": "c-dbb3c097f48a",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "TUR",
+      "instrument_id": "i-4a4eb4396e2a",
+      "title": "Personal Data Protection Law No. 6698",
+      "detail": "Added to the radar (published 2016-04-07).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.6698.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-7152109e39da",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "TUR",
+      "instrument_id": "i-4beb2cf2d6b3",
+      "title": "Recommendations on the Protection of Personal Data in the Field of Artificial Intelligence",
+      "detail": "Added to the radar (published 2025-04).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.kvkk.gov.tr/SharedFolderServer/CMSFiles/25a1162f-0e61-4a43-98d0-3e7d057ac31a.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-109690aabb3e",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "TUR",
+      "instrument_id": "i-0474193afdca",
+      "title": "Guide on Generative Artificial Intelligence and the Protection of Personal Data (in 15 Questions)",
+      "detail": "Added to the radar (published 2025-11).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.kvkk.gov.tr/SharedFolderServer/CMSFiles/MTY5MjNmNmIwZWY3YTE.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-8b36c8a3b9a4",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "TUR",
+      "instrument_id": "i-4dfbc116fe92",
+      "title": "Agentic Artificial Intelligence (Agentic AI)",
+      "detail": "Added to the radar (published 2026-02).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.kvkk.gov.tr/SharedFolderServer/CMSFiles/MTY5YWE4ZDE0NWYwMWI.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-342c5655848d",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "TUR",
+      "instrument_id": "i-59c919eb888b",
+      "title": "Use of Generative AI Tools in the Workplace",
+      "detail": "Added to the radar (published 2026-02).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.kvkk.gov.tr/SharedFolderServer/CMSFiles/MTY5YTdkNjdjNzJlMjM.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-49cdbecfcd94",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "TUR",
+      "instrument_id": "i-be718c3d1129",
+      "title": "Artificial Intelligence in Education Policy Document and Action Plan (2025-2029)",
+      "detail": "Added to the radar (published 2025-06-17).",
+      "from": null,
+      "to": null,
+      "source_url": "https://yegitek.meb.gov.tr/meb_iys_dosyalar/2025_06/17092340_egitimdeyapayzekapolitikabelgesiveeylemplani202520291.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-50fcc913fe10",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "TUR",
+      "instrument_id": "i-b9a856e54c75",
+      "title": "Ministry of National Education Directive on the Artificial Intelligence Applications Ethics Board",
+      "detail": "Added to the radar (published 2025-10-22).",
+      "from": null,
+      "to": null,
+      "source_url": "https://mevzuat.meb.gov.tr/dosyalar/2295.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-c0f70f0072e7",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "TUR",
+      "instrument_id": "i-86ac04438492",
+      "title": "Ethics Guide for Artificial Intelligence Applications in Education",
+      "detail": "Added to the radar (published 2026-01-10).",
+      "from": null,
+      "to": null,
+      "source_url": "https://ttkb.meb.gov.tr/meb_iys_dosyalar/2026_01/09152326_egitimdeyapayzekauygulamalari_etik_kilavuzu.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-906963771103",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "TUR",
+      "instrument_id": "i-639e073744c5",
+      "title": "TÜBİTAK Artificial Intelligence Policy",
+      "detail": "Added to the radar (published 2026-03).",
+      "from": null,
+      "to": null,
+      "source_url": "https://tubitak.gov.tr/sites/default/files/2026-03/TUBITAK_Yapay_Zeka_Politika_Belgesi_v1.0_tr.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-3642136e0ec8",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "TUR",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 12 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-96427a85e289",
+      "date": "2026-01-10",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "TUR",
+      "instrument_id": "i-86ac04438492",
+      "title": "Ethics Guide for AI Applications in Education published",
+      "detail": "Ministry announces the guide implementing the AI ethics board directive.",
+      "from": null,
+      "to": null,
+      "source_url": "https://meb.gov.tr/egitimde-yapay-zeka-uygulamalari-etik-kilavuzu-yayimlandi/haber/39496/tr",
+      "needs_review": false
+    },
+    {
+      "id": "c-ecab5252dd5a",
+      "date": "2025-10-22",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "TUR",
+      "instrument_id": "i-b9a856e54c75",
+      "title": "Ministry of National Education AI Applications Ethics Board Directive approved",
+      "detail": "Minister approves the directive, in force on approval.",
+      "from": null,
+      "to": null,
+      "source_url": "https://mevzuat.meb.gov.tr/dosyalar/2295.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-c9284f47fa99",
+      "date": "2025-06-17",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "TUR",
+      "instrument_id": "i-be718c3d1129",
+      "title": "AI in Education Policy Document and Action Plan (2025-2029) enters into force",
+      "detail": "Ministry of National Education puts its 2025-2029 AI in education policy into effect.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.meb.gov.tr/egitimde-yapay-zeka-politika-belgesi-ve-eylem-plani-yururluge-girdi/haber/37531/tr",
+      "needs_review": false
+    },
+    {
+      "id": "c-c7c818827610",
+      "date": "2024-09-10",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "TUR",
+      "instrument_id": "i-0bc1c29de3f1",
+      "title": "Public Officials Ethics Board adopts Principle Decision 2024/108 on AI use",
+      "detail": "Ethics Board sets ethical conduct principles for public officials using AI systems.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.etik.gov.tr/icerikler/2024-108-sayili-ilke-karari-yapay-zeka-sistemlerinin-kullaniminda-kamu-gorevlilerinin-uymasi-gereken-etik-davranis-ilkeleri/",
+      "needs_review": false
+    },
+    {
+      "id": "c-4b6272ea68c5",
+      "date": "2021-08-20",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "TUR",
+      "instrument_id": "i-b98645cafdee",
+      "title": "Presidential Circular 2021/18 on the National AI Strategy published",
+      "detail": "Official Gazette No. 31574 publishes the circular announcing the National AI Strategy 2021-2025 and creating its Steering Committee.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.resmigazete.gov.tr/eskiler/2021/08/20210820-22.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-5c341c9351a2",
+      "date": "2016-04-07",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "TUR",
+      "instrument_id": "i-4a4eb4396e2a",
+      "title": "Personal Data Protection Law No. 6698 published",
+      "detail": "Official Gazette No. 29677 publishes Law No. 6698.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.6698.pdf",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Ulusal Yapay Zekâ Stratejisi 2024-2025 Eylem Planı",
+      "english_title": "National Artificial Intelligence Strategy 2024-2025 Action Plan",
+      "issuing_authority": "Digital Transformation Office of the Presidency and Ministry of Industry and Technology",
+      "note": "Updated action plan of the National AI Strategy 2021-2025 (focus reported as generative AI, Turkish LLMs, compute and data, workforce). Official PDF URL https://www.sanayi.gov.tr/assets/pdf/UlusalYapayZekaStratejisi2024-2025EylemPlani.pdf found via search; on 2026-10-12 curl returned an HTML rejection page and WebFetch 'Request Rejected', and cbddo.gov.tr was unreachable, so its date and content were not verified on an official source. Promote as national_strategy once readable.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Yapay Zeka Kanun Teklifi (2/2234)",
+      "english_title": "Artificial Intelligence Bill (TBMM file no. 2/2234)",
+      "issuing_authority": "Grand National Assembly of Türkiye (private member's bill, first signatory Ömer Faruk Gergerlioğlu, HEDEP, Kocaeli)",
+      "note": "Verified on https://www.tbmm.gov.tr/Yasama/KanunTeklifi/e21539a0-888a-4500-81be-01904a918c53 on 2026-10-12: 28th term, year 2, file no. 2/2234, received 24/06/2024; aims at a regulatory framework for safe, ethical and fair AI use and personal data protection; status 'KOMİSYONDA' (lead committee: Industry, Trade, Energy, Natural Resources, Information and Technology; secondary: Justice, both since 25/06/2024). Pending bill, not law.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Yapay zekâ kanun teklifi (Halil Öztürk, September 2025)",
+      "english_title": "AI bill submitted by MP Halil Öztürk (September 2025)",
+      "issuing_authority": "Grand National Assembly of Türkiye (private member's bill)",
+      "note": "Media report a bill (Sept 2025) requiring labelling of AI-generated/deepfake content, 6-hour takedown of rights-violating content and fines up to TRY 10 million; a separate November 2025 bill reportedly amends the Turkish Penal Code (5237) on AI-related offences. Neither verified on tbmm.gov.tr; no AI-specific law enacted as of 2026-10-12 (no Official Gazette hit found).",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "TBMM Yapay Zekâ Meclis Araştırma Komisyonu raporu",
+      "english_title": "Report of the TBMM Parliamentary Research Commission on Artificial Intelligence",
+      "issuing_authority": "Grand National Assembly of Türkiye",
+      "note": "TBMM decided in October 2024 to set up a parliamentary research commission on AI; its report (if published) was not located on tbmm.gov.tr in this review.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Yapay Zekâ Araçları Kullanan Çocuklar İçin Ebeveynlere Yönelik Tavsiyeler",
+      "english_title": "Recommendations for Parents of Children Using AI Tools",
+      "issuing_authority": "Personal Data Protection Authority",
+      "note": "Undated KVKK leaflet at https://www.kvkk.gov.tr/SharedFolderServer/CMSFiles/MTY5NjRmZGEyY2I3ZDY.pdf (page https://www.kvkk.gov.tr/Icerik/8580/...). Read; no date stated, so held as lead. Awareness material rather than guidance.",
+      "found": "2026-10-12"
+    }
+  ]
 }

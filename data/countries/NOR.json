@@ -10,116 +10,1400 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Norway follows its 2020 national AI strategy and is implementing the EU AI Act through the EEA: a draft AI Act (KI-loven) naming the communications authority Nkom as coordinating supervisor went to consultation in 2025, with a bill now aimed at spring 2027. A new Public Administration Act adopted in 2025 sets rules on automated decisions, explanations and documentation, and data protection law applies the GDPR. The Data Protection Authority runs a long-standing AI sandbox and publishes AI guidance, the Auditor General audited AI use in central government in 2024, and the health and education directorates have AI plans and advice.",
+    "lead_institutions": [
+      "Ministry of Digitalisation and Public Governance",
+      "Norwegian Communications Authority (Nkom)",
+      "Norwegian Data Protection Authority (Datatilsynet)",
+      "Norwegian Directorate of Health"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was completed on 12 October 2026 and covers national law, government, ministries and regulators. The government's main website blocked access, so the national AI strategy and the draft AI Act consultation could only be located, and several government documents are listed as leads."
   },
   "instruments": [
     {
       "id": "i-dff0a42dd212",
-      "official_title": "The National Strategy for Artificial Intelligence - regjeringen.no",
+      "official_title": "Nasjonal strategi for kunstig intelligens",
       "english_title": "National Strategy for Artificial Intelligence",
       "jurisdiction_id": "NOR",
-      "issuing_authority": null,
-      "publisher_name": "www.regjeringen.no",
-      "authority_type": null,
+      "issuing_authority": "Ministry of Local Government and Modernisation (Kommunal- og moderniseringsdepartementet)",
+      "publisher_name": "Government of Norway (regjeringen.no)",
+      "authority_type": "government",
       "government_level": "national",
+      "subnational_unit": null,
       "categories": [
-        "strategy"
+        "strategy",
+        "ethics",
+        "government-governance",
+        "public-sector"
       ],
       "category": "strategy",
       "subcategory": null,
-      "legal_status": null,
-      "publication_date": null,
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2020-01-14",
       "effective_date": null,
       "last_amended_date": null,
-      "current_status": "Official source located; current status requires review",
-      "scope": null,
-      "sectors": [],
+      "current_status": "Norway's national AI strategy, presented 14 January 2020 by the Ministry of Local Government and Modernisation (date per the government's press release 'Regjeringen legger frem nasjonal strategi for kunstig intelligens', which could not be opened). Riksrevisjonen's Dokument 3:18 (2023–2024) cites it as the current national strategy in 2024; digitalisation policy since 2024 sits with the Ministry of Digitalisation and Public Governance, whose 2024 national digitalisation strategy also covers AI (see leads). An official English version is published on regjeringen.no (id2685594, /en/).",
+      "scope": "Norway (national)",
+      "sectors": [
+        "cross-sector"
+      ],
       "technology_scope": [
         "AI"
       ],
-      "summary": "Official source located for this governance category. The document’s adoption, legal effect, scope and version history remain under review.",
-      "ai_governance_relevance": "Primary-source material for assessing strategy & action plans.",
-      "source_url": "https://www.regjeringen.no/en/documents/nasjonal-strategi-for-kunstig-intelligens/id2685594/",
+      "summary": "The 2020 national AI strategy sets out the conditions for developing and using AI in Norway: data and data management, language resources (Norwegian and Sami), AI-friendly regulation, education and skills, research and innovation, communication networks and computing capacity. It sets out seven ethical principles for responsible and trustworthy AI, based on the EU high-level expert group guidelines, and commits the government to measures including regulatory sandboxes (incl. the Datatilsynet AI sandbox). It is a non-binding policy document addressed to government and the public and private sectors.",
+      "ai_governance_relevance": "Current national AI strategy; anchors ethics principles, the Datatilsynet sandbox and public-sector AI work.",
+      "source_url": "https://www.regjeringen.no/no/dokumenter/nasjonal-strategi-for-kunstig-intelligens/id2685594/",
       "official_pdf_url": null,
-      "official_webpage_url": "https://www.regjeringen.no/en/documents/nasjonal-strategi-for-kunstig-intelligens/id2685594/",
-      "language": "en",
+      "official_webpage_url": "https://www.regjeringen.no/no/dokumenter/nasjonal-strategi-for-kunstig-intelligens/id2685594/",
+      "language": "no",
       "supersedes": [],
       "superseded_by": [],
       "related_instruments": [],
       "regional_applicability": [],
-      "verification_date": "2026-10-06",
+      "verification_date": "2026-10-12",
       "verification_level": "primary_source_located",
       "metadata_gaps": [
-        "Issuing authority",
-        "Publication/effective dates",
-        "Current legal status",
-        "Precise applicability",
-        "Version history",
-        "Authority type",
-        "Government level",
-        "Publication date",
-        "Effective date",
-        "Last amended date"
+        "Full text not read (regjeringen.no blocked)",
+        "Publication date taken from the government press release listing, not the document",
+        "Summary based on the official citation in Riksrevisjonen Dokument 3:18 (2023–2024) and the press release; verify against the text"
       ],
       "source_kind": "official_publication",
-      "evidence_reference": "turn147search2",
+      "evidence_reference": "curl (browser user agent, --max-time 60) returned HTTP 403 (bot challenge) and WebFetch returned HTTP 403 for every regjeringen.no URL on 2026-10-12; located only. Existence, issuer (Kommunal- og moderniseringsdepartementet, 2020) and URL confirmed in Riksrevisjonen Dokument 3:18 (2023–2024) (PDF read via curl).",
+      "link_status": "inaccessible",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-9b1bc47b4410",
+      "organization_id": "o-3062ed12b8c3",
+      "first_recorded": "2026-10-06",
+      "last_changed": null
+    },
+    {
+      "id": "i-7cb0f82b3b32",
+      "official_title": "Høring – utkast til ny lov om kunstig intelligens – gjennomføring av EUs forordning om kunstig intelligens i norsk rett",
+      "english_title": "Consultation – draft new Act on artificial intelligence – implementation of the EU Artificial Intelligence Regulation in Norwegian law",
+      "jurisdiction_id": "NOR",
+      "issuing_authority": "Ministry of Digitalisation and Public Governance (Digitaliserings- og forvaltningsdepartementet)",
+      "publisher_name": "Government of Norway (regjeringen.no)",
+      "authority_type": "government",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "drafts",
+        "binding-law",
+        "government-governance",
+        "sandbox"
+      ],
+      "category": "drafts",
+      "subcategory": null,
+      "legal_status": "consultation_draft",
+      "lifecycle": "consultation",
+      "publication_date": "2025-06-30",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Sent on public consultation on 30 June 2025 (date confirmed by Datatilsynet's news item of the same day; the consultation deadline was reportedly 30 September 2025). The law was planned to apply from late summer 2026, but no bill (Prop. L) has been submitted to the Storting as of 12 October 2026: a government press release of 4 August 2026 ('Tung vil sende KI-loven med endringer på høring') reportedly announces a new consultation in autumn 2026 because of EU amendments to the AI Act (simplification package), with the bill aimed at spring 2027 (not read; see leads). The EU AI Act therefore does not yet apply as Norwegian law.",
+      "scope": "Norway (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Draft AI Act (KI-loven) that would incorporate the EU AI Act (Regulation (EU) 2024/1689) into Norwegian law via the EEA Agreement and add supplementary national provisions. Per the government and regulators, Nkom is to be the national coordinating AI supervisory authority, with sector supervisors responsible in their areas, and the law establishes a regulatory sandbox for AI run with Digdir and Datatilsynet. The law is to apply alongside the Personal Data Act.",
+      "ai_governance_relevance": "Norway's national implementation of the EU AI Act through the EEA; designates AI supervisory authorities.",
+      "source_url": "https://www.regjeringen.no/no/dokumenter/horing-utkast-til-ny-lov-om-kunstig-intelligens-gjennomforing-av-eus-forordning-om-kunstig-intelligens-i-norsk-rett/id3112327/",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.regjeringen.no/id3112327/",
+      "language": "no",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-53d5aa0ab491"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "primary_source_located",
+      "metadata_gaps": [
+        "Consultation documents not read (regjeringen.no blocked)",
+        "Consultation deadline not confirmed on the official page",
+        "Exact title per search-engine listing of the regjeringen.no page"
+      ],
+      "source_kind": "consultation_portal",
+      "evidence_reference": "curl (browser user agent, --max-time 60) returned HTTP 403 (bot challenge) and WebFetch returned HTTP 403 for every regjeringen.no URL on 2026-10-12; located only. Consultation date (30.06.2025), issuing ministry and content confirmed on datatilsynet.no/aktuelt/aktuelle-nyheter-2025/ny-lov-om-ki-sendt-pa-horing/ (read via curl); Nkom role confirmed on nkom.no/ki and datatilsynet.no news of 21.03.2025 (read via curl).",
+      "link_status": "inaccessible",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-dcc5398ae036",
+      "organization_id": "o-06627569c158",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-53d5aa0ab491",
+      "official_title": "Lov om behandling av personopplysninger (personopplysningsloven)",
+      "english_title": "Act on the processing of personal data (Personal Data Act)",
+      "jurisdiction_id": "NOR",
+      "issuing_authority": "Storting; administered by the Ministry of Justice and Public Security",
+      "publisher_name": "Lovdata",
+      "authority_type": "legislature",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "category": "data-privacy",
+      "subcategory": null,
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2018-06-15",
+      "effective_date": "2018-07-20",
+      "last_amended_date": null,
+      "current_status": "In force since 20 July 2018 (LOV-2018-06-15-38), as amended. Incorporates the GDPR into Norwegian law via the EEA Agreement.",
+      "scope": "Norway (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "The Personal Data Act incorporates the GDPR into Norwegian law as part of the act, including Article 22 on automated individual decision-making and profiling, and adds national supplementary rules. It governs the processing of personal data for training and use of AI systems and is supervised by Datatilsynet. The draft AI Act is intended to apply alongside it.",
+      "ai_governance_relevance": "General data protection law governing AI training and use; basis for Datatilsynet AI guidance and sandbox.",
+      "source_url": "https://lovdata.no/dokument/NL/lov/2018-06-15-38",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://lovdata.no/dokument/NL/lov/2018-06-15-38",
+      "language": "no",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "legislation_portal",
+      "evidence_reference": "curl (browser user agent, --max-time 60) returned HTTP 405; WebFetch read the Lovdata page: title, date LOV-2018-06-15-38, ministry (Justis- og beredskapsdepartementet), entry into force 20.07.2018 and GDPR Art. 22 confirmed.",
+      "link_status": "reachable",
+      "document_access_type": "legislation_portal_full_text",
+      "source_id": "s-aa12374421ae",
+      "organization_id": "o-e7abb4f7476d",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-c0b49b86b53e",
+      "official_title": "Kunstig intelligens og personvern",
+      "english_title": "Artificial intelligence and privacy",
+      "jurisdiction_id": "NOR",
+      "issuing_authority": "Norwegian Data Protection Authority (Datatilsynet)",
+      "publisher_name": "Norwegian Data Protection Authority",
+      "authority_type": "regulator",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "data-privacy",
+        "risk-assurance",
+        "transparency"
+      ],
+      "category": "data-privacy",
+      "subcategory": null,
+      "legal_status": "regulatory_opinion",
+      "lifecycle": "published",
+      "publication_date": "2018-01-11",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Published 11 January 2018; remains on Datatilsynet's reports page.",
+      "scope": "Norway (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Datatilsynet's report on how AI affects privacy, explaining how GDPR principles (purpose limitation, data minimisation, transparency, automated decisions) apply to machine learning. It includes recommendations for developers and users of AI and a section on tools and methods for privacy-friendly AI. It is guidance from the supervisory authority, not binding rules.",
+      "ai_governance_relevance": "Regulator's foundational AI and privacy guidance.",
+      "source_url": "https://www.datatilsynet.no/regelverk-og-verktoy/rapporter-og-utredninger/kunstig-intelligens/",
+      "official_pdf_url": "https://www.datatilsynet.no/globalassets/global/dokumenter-pdfer-skjema-ol/rettigheter-og-plikter/rapporter/rapport-om-ki-og-personvern.pdf",
+      "official_webpage_url": "https://www.datatilsynet.no/regelverk-og-verktoy/rapporter-og-utredninger/kunstig-intelligens/",
+      "language": "no",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_publication",
+      "evidence_reference": "curl (browser user agent, --max-time 60): official page read; title and publication date taken from the page",
       "link_status": "reachable",
       "document_access_type": "official_publication_or_full_text_page",
-      "source_id": "s-ff45739b30cb",
-      "organization_id": "o-4d00fb3395a8",
-      "lifecycle": "unverified",
-      "first_recorded": "2026-10-06",
-      "last_changed": null,
-      "subnational_unit": null
+      "source_id": "s-e8f8d2b82d9d",
+      "organization_id": "o-4a402772baf3",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-fc3e4c092670",
+      "official_title": "Strategi for arbeidet med kunstig intelligens",
+      "english_title": "Strategy for the work on artificial intelligence",
+      "jurisdiction_id": "NOR",
+      "issuing_authority": "Norwegian Data Protection Authority (Datatilsynet)",
+      "publisher_name": "Norwegian Data Protection Authority",
+      "authority_type": "regulator",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "government-governance",
+        "data-privacy"
+      ],
+      "category": "government-governance",
+      "subcategory": null,
+      "legal_status": "regulatory_opinion",
+      "lifecycle": "published",
+      "publication_date": "2024-03-22",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Published 22 March 2024.",
+      "scope": "Norway (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Datatilsynet's strategy for its internal and external work on AI, supporting its main strategy. It sets how the authority will use its tools (guidance, case handling, supervision, sandbox) to enable innovative AI use while protecting privacy, and coordinates AI-related enquiries and activities across the authority.",
+      "ai_governance_relevance": "Sets the data protection regulator's approach to AI supervision and guidance.",
+      "source_url": "https://www.datatilsynet.no/om-datatilsynet/planer/strategi-for-arbeidet-med-kunstig-intelligens/",
+      "official_pdf_url": "https://www.datatilsynet.no/contentassets/ccfdac22187b46af95873287bd3c8df6/datatilsynets-strategi-for-kunstig-intelligens.pdf",
+      "official_webpage_url": "https://www.datatilsynet.no/om-datatilsynet/planer/strategi-for-arbeidet-med-kunstig-intelligens/",
+      "language": "no",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_publication",
+      "evidence_reference": "curl (browser user agent, --max-time 60): official page read; title and publication date taken from the page",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-e8dc35f7991b",
+      "organization_id": "o-4a402772baf3",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-d88df5d0799b",
+      "official_title": "Å lykkes med åpenhet – hvordan informere om bruk av kunstig intelligens",
+      "english_title": "Succeeding with transparency – how to inform about the use of artificial intelligence",
+      "jurisdiction_id": "NOR",
+      "issuing_authority": "Norwegian Data Protection Authority (Datatilsynet)",
+      "publisher_name": "Norwegian Data Protection Authority",
+      "authority_type": "regulator",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "transparency",
+        "sandbox",
+        "public-sector"
+      ],
+      "category": "transparency",
+      "subcategory": null,
+      "legal_status": "regulatory_opinion",
+      "lifecycle": "published",
+      "publication_date": "2022-11-15",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Page last changed 15 November 2022 (the only date stated on the page).",
+      "scope": "Norway (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Guidance drawn from the AI sandbox on how organisations should inform people about the use of AI, with separate chapters for working life, public administration and schools. It explains GDPR transparency and information duties for AI-based processing and gives practical advice on explaining AI decisions.",
+      "ai_governance_relevance": "Regulator guidance on AI transparency obligations.",
+      "source_url": "https://www.datatilsynet.no/regelverk-og-verktoy/rapporter-og-utredninger/rapporter-fra-sandkassa/a-lykkes-med-apenhet-hvordan-informere-om-bruk-av-kunstig-intelligens/",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.datatilsynet.no/regelverk-og-verktoy/rapporter-og-utredninger/rapporter-fra-sandkassa/a-lykkes-med-apenhet-hvordan-informere-om-bruk-av-kunstig-intelligens/",
+      "language": "no",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_publication",
+      "evidence_reference": "curl (browser user agent, --max-time 60): official page read; title and publication date taken from the page",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-8cf099f5817f",
+      "organization_id": "o-4a402772baf3",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-c8a835100a79",
+      "official_title": "NAV: Prediksjonsmodell for sykefravær",
+      "english_title": "NAV: Prediction model for sick leave (sandbox exit report)",
+      "jurisdiction_id": "NOR",
+      "issuing_authority": "Norwegian Data Protection Authority (Datatilsynet)",
+      "publisher_name": "Norwegian Data Protection Authority",
+      "authority_type": "regulator",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "sandbox",
+        "public-sector",
+        "data-privacy"
+      ],
+      "category": "sandbox",
+      "subcategory": null,
+      "legal_status": "regulatory_opinion",
+      "lifecycle": "published",
+      "publication_date": "2022-01-17",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Published 17 January 2022.",
+      "scope": "Norway (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Exit report from Datatilsynet's AI sandbox on the Labour and Welfare Administration's (NAV) machine-learning model to predict which people on sick leave need follow-up. It assesses the legal basis for profiling in the public sector, fairness and how to explain the model to caseworkers and users.",
+      "ai_governance_relevance": "Regulator assessment of lawful public-sector AI profiling.",
+      "source_url": "https://www.datatilsynet.no/regelverk-og-verktoy/rapporter-og-utredninger/rapporter-fra-sandkassa/nav-prediksjonsmodell-for-sykefravar/",
+      "official_pdf_url": "https://www.datatilsynet.no/contentassets/a6b8cd826d424d50ae5eb256541bedeb/nav_sluttrapport.pdf",
+      "official_webpage_url": "https://www.datatilsynet.no/regelverk-og-verktoy/rapporter-og-utredninger/rapporter-fra-sandkassa/nav-prediksjonsmodell-for-sykefravar/",
+      "language": "no",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_publication",
+      "evidence_reference": "curl (browser user agent, --max-time 60): official page read; title and publication date taken from the page",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-6970a0a7cbf8",
+      "organization_id": "o-4a402772baf3",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-7ee4ab249e34",
+      "official_title": "Politihøgskolen: PrevBOT",
+      "english_title": "Norwegian Police University College: PrevBOT (sandbox exit report)",
+      "jurisdiction_id": "NOR",
+      "issuing_authority": "Norwegian Data Protection Authority (Datatilsynet)",
+      "publisher_name": "Norwegian Data Protection Authority",
+      "authority_type": "regulator",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "sandbox",
+        "sectoral",
+        "ethics"
+      ],
+      "category": "sandbox",
+      "subcategory": null,
+      "legal_status": "regulatory_opinion",
+      "lifecycle": "published",
+      "publication_date": "2024-03-20",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Published 20 March 2024.",
+      "scope": "Norway (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Exit report from Datatilsynet's AI sandbox on the Police University College's PrevBOT research project, an AI tool to patrol the open internet and flag grooming conversations. It assesses the legal basis for training on chat logs from criminal cases and the ethical and privacy issues of police AI.",
+      "ai_governance_relevance": "Regulator assessment of AI in law enforcement.",
+      "source_url": "https://www.datatilsynet.no/regelverk-og-verktoy/rapporter-og-utredninger/rapporter-fra-sandkassa/politihogskolen-prevbot/",
+      "official_pdf_url": "https://www.datatilsynet.no/contentassets/1bf8cff411294a79915fde0816655322/politihogskolen-sluttrapport-prevbot-norsk.pdf",
+      "official_webpage_url": "https://www.datatilsynet.no/regelverk-og-verktoy/rapporter-og-utredninger/rapporter-fra-sandkassa/politihogskolen-prevbot/",
+      "language": "no",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_publication",
+      "evidence_reference": "curl (browser user agent, --max-time 60): official page read; title and publication date taken from the page",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-28646a8c8b9c",
+      "organization_id": "o-4a402772baf3",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-99e5942a4221",
+      "official_title": "NTNU: Copilot med personvernbriller på",
+      "english_title": "NTNU: Copilot with privacy glasses on (sandbox exit report)",
+      "jurisdiction_id": "NOR",
+      "issuing_authority": "Norwegian Data Protection Authority (Datatilsynet)",
+      "publisher_name": "Norwegian Data Protection Authority",
+      "authority_type": "regulator",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "generative-ai",
+        "sandbox",
+        "public-sector"
+      ],
+      "category": "generative-ai",
+      "subcategory": null,
+      "legal_status": "regulatory_opinion",
+      "lifecycle": "published",
+      "publication_date": "2024-11-26",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Published 26 November 2024.",
+      "scope": "Norway (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Exit report from Datatilsynet's AI sandbox with NTNU on the privacy requirements and assessments a public body should make before deploying Microsoft 365 Copilot, a generative AI assistant. It covers DPIAs, access control and data processing in the M365 environment.",
+      "ai_governance_relevance": "Regulator guidance on deploying generative AI assistants in the public sector.",
+      "source_url": "https://www.datatilsynet.no/regelverk-og-verktoy/rapporter-og-utredninger/rapporter-fra-sandkassa/ntnu-copilot-med-personvernbriller-pa/",
+      "official_pdf_url": "https://www.datatilsynet.no/contentassets/dfac8d8cd50c4ceb991efc21cacec1b9/20241125-sluttrapport-copilot.pdf",
+      "official_webpage_url": "https://www.datatilsynet.no/regelverk-og-verktoy/rapporter-og-utredninger/rapporter-fra-sandkassa/ntnu-copilot-med-personvernbriller-pa/",
+      "language": "no",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_publication",
+      "evidence_reference": "curl (browser user agent, --max-time 60): official page read; title and publication date taken from the page",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-e265f43b194c",
+      "organization_id": "o-4a402772baf3",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-5652496ee2b1",
+      "official_title": "InkludMI: Intelligent inkludering",
+      "english_title": "InkludMI: Intelligent inclusion (sandbox exit report)",
+      "jurisdiction_id": "NOR",
+      "issuing_authority": "Norwegian Data Protection Authority (Datatilsynet)",
+      "publisher_name": "Norwegian Data Protection Authority",
+      "authority_type": "regulator",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "generative-ai",
+        "sandbox"
+      ],
+      "category": "generative-ai",
+      "subcategory": null,
+      "legal_status": "regulatory_opinion",
+      "lifecycle": "published",
+      "publication_date": "2026-03-16",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Published 16 March 2026.",
+      "scope": "Norway (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Exit report from Datatilsynet's sandbox on a generative-AI chatbot to help young people into work, used by caseworkers (incl. NAV) and users. It sets out the legal framework for processing personal data in such a chatbot.",
+      "ai_governance_relevance": "Recent regulator assessment of generative-AI chatbots handling personal data.",
+      "source_url": "https://www.datatilsynet.no/regelverk-og-verktoy/rapporter-og-utredninger/rapporter-fra-sandkassa/inkludmi-intelligent-inkludering/",
+      "official_pdf_url": "https://www.datatilsynet.no/contentassets/54f805aeb4b643598c284c0f22de35c4/sluttrapport-includmi---intelligent-inkludering.pdf",
+      "official_webpage_url": "https://www.datatilsynet.no/regelverk-og-verktoy/rapporter-og-utredninger/rapporter-fra-sandkassa/inkludmi-intelligent-inkludering/",
+      "language": "no",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_publication",
+      "evidence_reference": "curl (browser user agent, --max-time 60): official page read; title and publication date taken from the page",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-41b0478bacad",
+      "organization_id": "o-4a402772baf3",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-e1527b576612",
+      "official_title": "Bruk av kunstig intelligens i staten (Dokument 3:18 (2023−2024))",
+      "english_title": "Use of artificial intelligence in central government (Document 3:18 (2023–2024))",
+      "jurisdiction_id": "NOR",
+      "issuing_authority": "Office of the Auditor General of Norway (Riksrevisjonen)",
+      "publisher_name": "Office of the Auditor General of Norway",
+      "authority_type": "audit",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "index-readiness",
+        "public-sector",
+        "risk-assurance"
+      ],
+      "category": "index-readiness",
+      "subcategory": null,
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2024-09-02",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Submitted to the Storting by the Auditor General on 2 September 2024.",
+      "scope": "Norway (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Performance audit presented to the Storting on the use of AI in central government agencies. It finds that agencies exploit AI unevenly and little, that legal clarification, infrastructure, data, skills and Norwegian language resources are lacking, that ethical principles for responsible AI are followed to varying degrees, and that coordination of public-sector AI is inadequate. It recommends that the Ministry of Digitalisation and Public Governance strengthen coordination and enablers, and includes the minister's reply.",
+      "ai_governance_relevance": "Official assessment of public-sector AI readiness and governance gaps.",
+      "source_url": "https://www.riksrevisjonen.no/globalassets/rapporter/no-2023-2024/Kunstig-intelligens",
+      "official_pdf_url": "https://www.riksrevisjonen.no/globalassets/rapporter/no-2023-2024/Kunstig-intelligens",
+      "official_webpage_url": null,
+      "language": "no",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "curl (browser user agent, --max-time 60): PDF downloaded and read (pdftotext); title, document number and date 2 September 2024 confirmed.",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-269cc61453c7",
+      "organization_id": "o-a25f49288d10",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-eff3e711310e",
+      "official_title": "Felles KI-plan for trygg og effektiv bruk av KI i helse og omsorgstjenesten 2024 - 2025",
+      "english_title": "Joint AI plan for the safe and effective use of AI in the Norwegian health and care services 2024-2025",
+      "jurisdiction_id": "NOR",
+      "issuing_authority": "Norwegian Directorate of Health (Helsedirektoratet)",
+      "publisher_name": "Norwegian Directorate of Health",
+      "authority_type": "agency",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "sectoral",
+        "strategy",
+        "government-governance"
+      ],
+      "category": "sectoral",
+      "subcategory": null,
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2024-08-13",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "First published 2024-08-13 (no later professional revision stated on the page). Official English version: https://www.helsedirektoratet.no/rapporter/joint-ai-plan-for-the-safe-and-effective-use-of-ai-in-the-norwegian-health-and-care-services-2024-2025",
+      "scope": "Norway (national)",
+      "sectors": [
+        "health"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Joint plan of the national health agencies for safe and effective AI in the health and care services for 2024-2025. It organises the work in focus areas including sector collaboration through the AI council (KI-rådet), a cross-agency guidance service on AI regulation, and work on frameworks and guidance for using and quality-assuring AI. Helsedirektoratet states it will continue the approach in a joint AI plan for 2026-2027.",
+      "ai_governance_relevance": "Sectoral AI action plan for health.",
+      "source_url": "https://www.helsedirektoratet.no/rapporter/felles-ki-plan-for-trygg-og-effektiv-bruk-av-ki-i-helse-og-omsorgstjenesten-2024-2025",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.helsedirektoratet.no/rapporter/felles-ki-plan-for-trygg-og-effektiv-bruk-av-ki-i-helse-og-omsorgstjenesten-2024-2025",
+      "language": "no",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Report body read only in outline (dynamically loaded chapters)"
+      ],
+      "source_kind": "official_publication",
+      "evidence_reference": "curl (browser user agent, --max-time 60): official report page read; title and \"Først publisert\"/\"Siste faglige endring\" dates confirmed; report body is loaded dynamically and was read only in outline",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-5ab4352a8042",
+      "organization_id": "o-b547db3a130b",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-504c32401b85",
+      "official_title": "Rapport om kvalitetssikring: Bruk av kunstig intelligens i helse- og omsorgstjenesten",
+      "english_title": "Report on quality assurance: Use of artificial intelligence in health and care services",
+      "jurisdiction_id": "NOR",
+      "issuing_authority": "Norwegian Directorate of Health (Helsedirektoratet)",
+      "publisher_name": "Norwegian Directorate of Health",
+      "authority_type": "agency",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "sectoral",
+        "risk-assurance"
+      ],
+      "category": "sectoral",
+      "subcategory": null,
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2025-01-10",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "First published 2025-01-10 (no later professional revision stated on the page). Official English version: https://www.helsedirektoratet.no/rapporter/report-on-quality-assurance-use-of-artificial-intelligence-in-health-and-care-services",
+      "scope": "Norway (national)",
+      "sectors": [
+        "health"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Helsedirektoratet report setting a framework for quality assurance of AI systems used in the health and care services (presented on its AI page as \"Rammer for kvalitetssikring av KI-systemer\"). It addresses how health organisations should assess, validate and follow up AI systems before and during use.",
+      "ai_governance_relevance": "Sector guidance on AI quality assurance in health.",
+      "source_url": "https://www.helsedirektoratet.no/rapporter/rapport-om-kvalitetssikring-bruk-av-kunstig-intelligens-i-helse-og-omsorgstjenesten",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.helsedirektoratet.no/rapporter/rapport-om-kvalitetssikring-bruk-av-kunstig-intelligens-i-helse-og-omsorgstjenesten",
+      "language": "no",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Report body read only in outline (dynamically loaded chapters)"
+      ],
+      "source_kind": "official_publication",
+      "evidence_reference": "curl (browser user agent, --max-time 60): official report page read; title and \"Først publisert\"/\"Siste faglige endring\" dates confirmed; report body is loaded dynamically and was read only in outline",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-c9ba505d4e88",
+      "organization_id": "o-b547db3a130b",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-faa462259315",
+      "official_title": "Rapport om store språkmodeller i helse- og omsorgstjenesten: risikoer og tilpasninger til norske forhold",
+      "english_title": "Report on large language models in Norwegian health and care services: Risks and adaptations to Norwegian conditions",
+      "jurisdiction_id": "NOR",
+      "issuing_authority": "Norwegian Directorate of Health (Helsedirektoratet)",
+      "publisher_name": "Norwegian Directorate of Health",
+      "authority_type": "agency",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "generative-ai",
+        "sectoral",
+        "risk-assurance"
+      ],
+      "category": "generative-ai",
+      "subcategory": null,
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2025-04-16",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "First published 2025-04-16 (no later professional revision stated on the page). Official English version: https://www.helsedirektoratet.no/rapporter/report-on-large-language-models-in-norwegian-health-and-care-services-risks-and-adaptations-to-norwegian-conditions",
+      "scope": "Norway (national)",
+      "sectors": [
+        "health"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Helsedirektoratet report on the risks of large language models in the health and care services and on measures to ensure such models are adapted to Norwegian conditions (language, law and clinical practice). It complements a separate report on the maturity of large language models and possible uses.",
+      "ai_governance_relevance": "Sector guidance on generative AI risks in health.",
+      "source_url": "https://www.helsedirektoratet.no/rapporter/rapport-om-store-sprakmodeller-i-helse-og-omsorgstjenesten-risikoer-og-tilpasninger-til-norske-forhold",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.helsedirektoratet.no/rapporter/rapport-om-store-sprakmodeller-i-helse-og-omsorgstjenesten-risikoer-og-tilpasninger-til-norske-forhold",
+      "language": "no",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Report body read only in outline (dynamically loaded chapters)"
+      ],
+      "source_kind": "official_publication",
+      "evidence_reference": "curl (browser user agent, --max-time 60): official report page read; title and \"Først publisert\"/\"Siste faglige endring\" dates confirmed; report body is loaded dynamically and was read only in outline",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-cbe55e4d758a",
+      "organization_id": "o-b547db3a130b",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-3e4243b5d354",
+      "official_title": "Råd om kunstig intelligens i skolen",
+      "english_title": "Advice on artificial intelligence in schools",
+      "jurisdiction_id": "NOR",
+      "issuing_authority": "Norwegian Directorate for Education and Training (Utdanningsdirektoratet)",
+      "publisher_name": "Norwegian Directorate for Education and Training",
+      "authority_type": "agency",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "sectoral",
+        "generative-ai"
+      ],
+      "category": "sectoral",
+      "subcategory": null,
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2025-12-02",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Guidance page; the date is the \"Sist endret\" (last changed) date 2 December 2025, the only date stated. After the government's recommendation of 19 June 2026 that pupils in grades 1-7 should in principle not use generative AI, Udir is preparing new age-differentiated recommendations (page last changed 25 June 2026; see leads).",
+      "scope": "Norway (national)",
+      "sectors": [
+        "education"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "National advice from Udir to school owners, school leaders, teachers and parents on the use of AI in schools. It sets out recommendations such as covering AI-related topics in the curriculum, letting teachers judge when AI is relevant, varying teaching and assessment, using only solutions approved and privacy-assessed by the school owner, and showing particular caution with younger children. Use of AI must rest on local legal, ethical and pedagogical assessments.",
+      "ai_governance_relevance": "National education-sector AI guidance.",
+      "source_url": "https://www.udir.no/kvalitet-og-kompetanse/digitalisering-skole/kunstig-intelligens-i-skolen/rad-om-kunstig-intelligens-skolen/",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.udir.no/kvalitet-og-kompetanse/digitalisering-skole/kunstig-intelligens-i-skolen/rad-om-kunstig-intelligens-skolen/",
+      "language": "no",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_publication",
+      "evidence_reference": "curl (browser user agent, --max-time 60): official page read; advice text and \"Sist endret: 02.12.2025\" confirmed",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-e03c87f2f5a8",
+      "organization_id": "o-51e993517c3b",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-48c5a8b786b2",
+      "official_title": "Lov om saksbehandlingen i offentlig forvaltning (forvaltningsloven)",
+      "english_title": "Act on case handling in public administration (Public Administration Act)",
+      "jurisdiction_id": "NOR",
+      "issuing_authority": "Storting (bill Prop. 79 L (2024–2025) from the Ministry of Justice and Public Security)",
+      "publisher_name": "Storting",
+      "authority_type": "legislature",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "binding-law",
+        "public-sector",
+        "transparency"
+      ],
+      "category": "binding-law",
+      "subcategory": null,
+      "legal_status": "binding_law",
+      "lifecycle": "adopted",
+      "publication_date": "2025-06-11",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Adopted by the Storting on 11 June 2025 (Lovvedtak 119 (2024–2025), Innst. 478 L, Prop. 79 L (2024–2025)); under § 99 it enters into force when the King decides and will repeal the Public Administration Act of 10 February 1967. No entry-into-force date was found; the sanctioned law's Lovdata number was not confirmed.",
+      "scope": "Norway (national)",
+      "sectors": [
+        "public-administration"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "The new Public Administration Act replaces the 1967 act and includes the first general rules on automated case handling in Norwegian public administration. § 11 allows agencies to automate case handling and decisions where the usual requirements are met, but not decisions covered by GDPR Article 22 without a specific legal basis; § 12 requires safeguards against errors and unfair discrimination and suitable statistical methods for Article 22 decisions and gives a right to an explanation and manual review; § 13 requires agencies to document and, as a rule, publish the legal content of automated case-handling systems.",
+      "ai_governance_relevance": "Binding rules on automated (algorithmic) decision-making and transparency of rules-as-code systems in the public sector.",
+      "source_url": "https://www.stortinget.no/globalassets/pdf/lovvedtak/2024-2025/vedtak-202425-119.pdf",
+      "official_pdf_url": "https://www.stortinget.no/globalassets/pdf/lovvedtak/2024-2025/vedtak-202425-119.pdf",
+      "official_webpage_url": "https://stortinget.no/no/Saker-og-publikasjoner/Vedtak/Beslutninger/Lovvedtak/2024-2025/vedtak-202425-119/",
+      "language": "no",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Entry-into-force date (set by royal decree) not found",
+        "Lovdata LOV number of the sanctioned act not confirmed"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "curl (browser user agent, --max-time 60): Storting Lovvedtak 119 (2024–2025) PDF read (pdftotext); adoption 11 June 2025, §§ 11-13 and § 99 confirmed.",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-b730fb29cbcc",
+      "organization_id": "o-65fec40b45e4",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
     }
   ],
   "organizations": [
     {
-      "id": "o-4d00fb3395a8",
+      "id": "o-06627569c158",
       "jurisdiction_id": "NOR",
-      "name": "www.regjeringen.no",
-      "publisher_name_verified": false,
-      "ai_governance_role": "Publisher of listed official material; complete institutional mandate and statutory responsibilities require review.",
-      "source_url": "https://www.regjeringen.no/en/documents/nasjonal-strategi-for-kunstig-intelligens/id2685594/",
-      "authority_type": null,
-      "government_level": null
+      "name": "Ministry of Digitalisation and Public Governance",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Ministry responsible for digitalisation and AI policy (created 1 January 2024, taking over digitalisation from the Ministry of Local Government and Modernisation); owns the national AI strategy and the draft AI Act (KI-loven) implementing the EU AI Act in Norway.",
+      "source_url": "https://www.regjeringen.no/no/dep/dfd/id3002982/",
+      "authority_type": "government",
+      "government_level": "national"
+    },
+    {
+      "id": "o-3062ed12b8c3",
+      "jurisdiction_id": "NOR",
+      "name": "Ministry of Local Government and Modernisation",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Former ministry (renamed Ministry of Local Government and Regional Development in 2022) that issued the 2020 National Strategy for Artificial Intelligence.",
+      "source_url": "https://www.regjeringen.no/no/dokumenter/nasjonal-strategi-for-kunstig-intelligens/id2685594/",
+      "authority_type": "government",
+      "government_level": "national"
+    },
+    {
+      "id": "o-e7abb4f7476d",
+      "jurisdiction_id": "NOR",
+      "name": "Ministry of Justice and Public Security",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Ministry responsible for the Personal Data Act (personopplysningsloven), which incorporates the GDPR into Norwegian law.",
+      "source_url": "https://lovdata.no/dokument/NL/lov/2018-06-15-38",
+      "authority_type": "government",
+      "government_level": "national"
+    },
+    {
+      "id": "o-4a402772baf3",
+      "jurisdiction_id": "NOR",
+      "name": "Norwegian Data Protection Authority",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Datatilsynet: supervisory authority under the Personal Data Act; runs the regulatory sandbox for AI (since 2020) and publishes its exit reports and AI guidance; to contribute to joint AI guidance and the AI sandbox with Digdir and Nkom under the planned AI Act.",
+      "source_url": "https://www.datatilsynet.no/regelverk-og-verktoy/sandkasse-for-kunstig-intelligens/",
+      "authority_type": "regulator",
+      "government_level": "national"
+    },
+    {
+      "id": "o-a25f49288d10",
+      "jurisdiction_id": "NOR",
+      "name": "Office of the Auditor General of Norway",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Riksrevisjonen: the Storting's auditor; audited the use of AI in central government (Dokument 3:18 (2023–2024)).",
+      "source_url": "https://www.riksrevisjonen.no/globalassets/rapporter/no-2023-2024/Kunstig-intelligens",
+      "authority_type": "audit",
+      "government_level": "national"
+    },
+    {
+      "id": "o-b547db3a130b",
+      "jurisdiction_id": "NOR",
+      "name": "Norwegian Directorate of Health",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Helsedirektoratet: leads the joint AI plan for the health and care services, the AI council (KI-rådet) and the cross-agency AI guidance service with the Norwegian Medical Products Agency and the Norwegian Board of Health Supervision; publishes reports on quality assurance and large language models.",
+      "source_url": "https://www.helsedirektoratet.no/tema/kunstig-intelligens",
+      "authority_type": "agency",
+      "government_level": "national"
+    },
+    {
+      "id": "o-51e993517c3b",
+      "jurisdiction_id": "NOR",
+      "name": "Norwegian Directorate for Education and Training",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Udir: publishes national advice on AI in schools and, at the government's request (June 2026), is preparing age-differentiated recommendations on AI use by school level.",
+      "source_url": "https://www.udir.no/kvalitet-og-kompetanse/digitalisering-skole/kunstig-intelligens-i-skolen/rad-om-kunstig-intelligens-skolen/",
+      "authority_type": "agency",
+      "government_level": "national"
+    },
+    {
+      "id": "o-65fec40b45e4",
+      "jurisdiction_id": "NOR",
+      "name": "Storting",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Norwegian parliament; adopted the new Public Administration Act (2025) with rules on automated case handling and will consider the AI Act (KI-loven) bill.",
+      "source_url": "https://www.stortinget.no/",
+      "authority_type": "legislature",
+      "government_level": "national"
     }
   ],
   "sources": [
     {
-      "id": "s-ff45739b30cb",
-      "url": "https://www.regjeringen.no/en/documents/nasjonal-strategi-for-kunstig-intelligens/id2685594/",
+      "id": "s-9b1bc47b4410",
+      "url": "https://www.regjeringen.no/no/dokumenter/nasjonal-strategi-for-kunstig-intelligens/id2685594/",
       "jurisdiction_ids": [
         "NOR"
       ],
       "source_institutions": [
-        "www.regjeringen.no"
+        "Government of Norway (regjeringen.no)"
       ],
       "instrument_ids": [
         "i-dff0a42dd212"
       ],
       "categories_reviewed": [
-        "strategy"
+        "strategy",
+        "ethics",
+        "government-governance",
+        "public-sector"
       ],
-      "date_reviewed": "2026-10-06",
-      "checked_date": "2026-10-06",
-      "check_method": "GET; first 1 MiB; 14-second timeout",
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60) returned HTTP 403 (bot challenge) and WebFetch returned HTTP 403 for every regjeringen.no URL on 2026-10-12; located only. Existence, issuer (Kommunal- og moderniseringsdepartementet, 2020) and URL confirmed in Riksrevisjonen Dokument 3:18 (2023–2024) (PDF read via curl).",
+      "http_status": 403,
+      "final_url": "https://www.regjeringen.no/no/dokumenter/nasjonal-strategi-for-kunstig-intelligens/id2685594/",
+      "link_status": "inaccessible",
+      "page_title": null,
+      "document_language": "no",
+      "error": "HTTP 403 bot challenge",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "id": "s-dcc5398ae036",
+      "url": "https://www.regjeringen.no/no/dokumenter/horing-utkast-til-ny-lov-om-kunstig-intelligens-gjennomforing-av-eus-forordning-om-kunstig-intelligens-i-norsk-rett/id3112327/",
+      "jurisdiction_ids": [
+        "NOR"
+      ],
+      "source_institutions": [
+        "Government of Norway (regjeringen.no)"
+      ],
+      "instrument_ids": [
+        "i-7cb0f82b3b32"
+      ],
+      "categories_reviewed": [
+        "drafts",
+        "binding-law",
+        "government-governance",
+        "sandbox"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60) returned HTTP 403 (bot challenge) and WebFetch returned HTTP 403 for every regjeringen.no URL on 2026-10-12; located only. Consultation date (30.06.2025), issuing ministry and content confirmed on datatilsynet.no/aktuelt/aktuelle-nyheter-2025/ny-lov-om-ki-sendt-pa-horing/ (read via curl); Nkom role confirmed on nkom.no/ki and datatilsynet.no news of 21.03.2025 (read via curl).",
+      "http_status": 403,
+      "final_url": "https://www.regjeringen.no/no/dokumenter/horing-utkast-til-ny-lov-om-kunstig-intelligens-gjennomforing-av-eus-forordning-om-kunstig-intelligens-i-norsk-rett/id3112327/",
+      "link_status": "inaccessible",
+      "page_title": null,
+      "document_language": "no",
+      "error": "HTTP 403 bot challenge",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "id": "s-aa12374421ae",
+      "url": "https://lovdata.no/dokument/NL/lov/2018-06-15-38",
+      "jurisdiction_ids": [
+        "NOR"
+      ],
+      "source_institutions": [
+        "Lovdata"
+      ],
+      "instrument_ids": [
+        "i-53d5aa0ab491"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60) returned HTTP 405; WebFetch read the Lovdata page: title, date LOV-2018-06-15-38, ministry (Justis- og beredskapsdepartementet), entry into force 20.07.2018 and GDPR Art. 22 confirmed.",
       "http_status": 200,
-      "final_url": "https://www.regjeringen.no/en/documents/nasjonal-strategi-for-kunstig-intelligens/id2685594/",
+      "final_url": "https://lovdata.no/dokument/NL/lov/2018-06-15-38",
       "link_status": "reachable",
-      "page_title": "The National Strategy for Artificial Intelligence - regjeringen.no",
-      "document_language": "en",
+      "page_title": null,
+      "document_language": "no",
       "error": null,
       "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "id": "s-e8f8d2b82d9d",
+      "url": "https://www.datatilsynet.no/regelverk-og-verktoy/rapporter-og-utredninger/kunstig-intelligens/",
+      "jurisdiction_ids": [
+        "NOR"
+      ],
+      "source_institutions": [
+        "Norwegian Data Protection Authority"
+      ],
+      "instrument_ids": [
+        "i-c0b49b86b53e"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "risk-assurance",
+        "transparency"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): official page read; title and publication date taken from the page",
+      "http_status": 200,
+      "final_url": "https://www.datatilsynet.no/regelverk-og-verktoy/rapporter-og-utredninger/kunstig-intelligens/",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "no",
+      "error": null,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "id": "s-e8dc35f7991b",
+      "url": "https://www.datatilsynet.no/om-datatilsynet/planer/strategi-for-arbeidet-med-kunstig-intelligens/",
+      "jurisdiction_ids": [
+        "NOR"
+      ],
+      "source_institutions": [
+        "Norwegian Data Protection Authority"
+      ],
+      "instrument_ids": [
+        "i-fc3e4c092670"
+      ],
+      "categories_reviewed": [
+        "government-governance",
+        "data-privacy"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): official page read; title and publication date taken from the page",
+      "http_status": 200,
+      "final_url": "https://www.datatilsynet.no/om-datatilsynet/planer/strategi-for-arbeidet-med-kunstig-intelligens/",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "no",
+      "error": null,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "id": "s-8cf099f5817f",
+      "url": "https://www.datatilsynet.no/regelverk-og-verktoy/rapporter-og-utredninger/rapporter-fra-sandkassa/a-lykkes-med-apenhet-hvordan-informere-om-bruk-av-kunstig-intelligens/",
+      "jurisdiction_ids": [
+        "NOR"
+      ],
+      "source_institutions": [
+        "Norwegian Data Protection Authority"
+      ],
+      "instrument_ids": [
+        "i-d88df5d0799b"
+      ],
+      "categories_reviewed": [
+        "transparency",
+        "sandbox",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): official page read; title and publication date taken from the page",
+      "http_status": 200,
+      "final_url": "https://www.datatilsynet.no/regelverk-og-verktoy/rapporter-og-utredninger/rapporter-fra-sandkassa/a-lykkes-med-apenhet-hvordan-informere-om-bruk-av-kunstig-intelligens/",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "no",
+      "error": null,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "id": "s-6970a0a7cbf8",
+      "url": "https://www.datatilsynet.no/regelverk-og-verktoy/rapporter-og-utredninger/rapporter-fra-sandkassa/nav-prediksjonsmodell-for-sykefravar/",
+      "jurisdiction_ids": [
+        "NOR"
+      ],
+      "source_institutions": [
+        "Norwegian Data Protection Authority"
+      ],
+      "instrument_ids": [
+        "i-c8a835100a79"
+      ],
+      "categories_reviewed": [
+        "sandbox",
+        "public-sector",
+        "data-privacy"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): official page read; title and publication date taken from the page",
+      "http_status": 200,
+      "final_url": "https://www.datatilsynet.no/regelverk-og-verktoy/rapporter-og-utredninger/rapporter-fra-sandkassa/nav-prediksjonsmodell-for-sykefravar/",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "no",
+      "error": null,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "id": "s-28646a8c8b9c",
+      "url": "https://www.datatilsynet.no/regelverk-og-verktoy/rapporter-og-utredninger/rapporter-fra-sandkassa/politihogskolen-prevbot/",
+      "jurisdiction_ids": [
+        "NOR"
+      ],
+      "source_institutions": [
+        "Norwegian Data Protection Authority"
+      ],
+      "instrument_ids": [
+        "i-7ee4ab249e34"
+      ],
+      "categories_reviewed": [
+        "sandbox",
+        "sectoral",
+        "ethics"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): official page read; title and publication date taken from the page",
+      "http_status": 200,
+      "final_url": "https://www.datatilsynet.no/regelverk-og-verktoy/rapporter-og-utredninger/rapporter-fra-sandkassa/politihogskolen-prevbot/",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "no",
+      "error": null,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "id": "s-e265f43b194c",
+      "url": "https://www.datatilsynet.no/regelverk-og-verktoy/rapporter-og-utredninger/rapporter-fra-sandkassa/ntnu-copilot-med-personvernbriller-pa/",
+      "jurisdiction_ids": [
+        "NOR"
+      ],
+      "source_institutions": [
+        "Norwegian Data Protection Authority"
+      ],
+      "instrument_ids": [
+        "i-99e5942a4221"
+      ],
+      "categories_reviewed": [
+        "generative-ai",
+        "sandbox",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): official page read; title and publication date taken from the page",
+      "http_status": 200,
+      "final_url": "https://www.datatilsynet.no/regelverk-og-verktoy/rapporter-og-utredninger/rapporter-fra-sandkassa/ntnu-copilot-med-personvernbriller-pa/",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "no",
+      "error": null,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "id": "s-41b0478bacad",
+      "url": "https://www.datatilsynet.no/regelverk-og-verktoy/rapporter-og-utredninger/rapporter-fra-sandkassa/inkludmi-intelligent-inkludering/",
+      "jurisdiction_ids": [
+        "NOR"
+      ],
+      "source_institutions": [
+        "Norwegian Data Protection Authority"
+      ],
+      "instrument_ids": [
+        "i-5652496ee2b1"
+      ],
+      "categories_reviewed": [
+        "generative-ai",
+        "sandbox"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): official page read; title and publication date taken from the page",
+      "http_status": 200,
+      "final_url": "https://www.datatilsynet.no/regelverk-og-verktoy/rapporter-og-utredninger/rapporter-fra-sandkassa/inkludmi-intelligent-inkludering/",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "no",
+      "error": null,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "id": "s-269cc61453c7",
+      "url": "https://www.riksrevisjonen.no/globalassets/rapporter/no-2023-2024/Kunstig-intelligens",
+      "jurisdiction_ids": [
+        "NOR"
+      ],
+      "source_institutions": [
+        "Office of the Auditor General of Norway"
+      ],
+      "instrument_ids": [
+        "i-e1527b576612"
+      ],
+      "categories_reviewed": [
+        "index-readiness",
+        "public-sector",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): PDF downloaded and read (pdftotext); title, document number and date 2 September 2024 confirmed.",
+      "http_status": 200,
+      "final_url": "https://www.riksrevisjonen.no/globalassets/rapporter/no-2023-2024/Kunstig-intelligens",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "no",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-5ab4352a8042",
+      "url": "https://www.helsedirektoratet.no/rapporter/felles-ki-plan-for-trygg-og-effektiv-bruk-av-ki-i-helse-og-omsorgstjenesten-2024-2025",
+      "jurisdiction_ids": [
+        "NOR"
+      ],
+      "source_institutions": [
+        "Norwegian Directorate of Health"
+      ],
+      "instrument_ids": [
+        "i-eff3e711310e"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "strategy",
+        "government-governance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): official report page read; title and \"Først publisert\"/\"Siste faglige endring\" dates confirmed; report body is loaded dynamically and was read only in outline",
+      "http_status": 200,
+      "final_url": "https://www.helsedirektoratet.no/rapporter/felles-ki-plan-for-trygg-og-effektiv-bruk-av-ki-i-helse-og-omsorgstjenesten-2024-2025",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "no",
+      "error": null,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "id": "s-c9ba505d4e88",
+      "url": "https://www.helsedirektoratet.no/rapporter/rapport-om-kvalitetssikring-bruk-av-kunstig-intelligens-i-helse-og-omsorgstjenesten",
+      "jurisdiction_ids": [
+        "NOR"
+      ],
+      "source_institutions": [
+        "Norwegian Directorate of Health"
+      ],
+      "instrument_ids": [
+        "i-504c32401b85"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): official report page read; title and \"Først publisert\"/\"Siste faglige endring\" dates confirmed; report body is loaded dynamically and was read only in outline",
+      "http_status": 200,
+      "final_url": "https://www.helsedirektoratet.no/rapporter/rapport-om-kvalitetssikring-bruk-av-kunstig-intelligens-i-helse-og-omsorgstjenesten",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "no",
+      "error": null,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "id": "s-cbe55e4d758a",
+      "url": "https://www.helsedirektoratet.no/rapporter/rapport-om-store-sprakmodeller-i-helse-og-omsorgstjenesten-risikoer-og-tilpasninger-til-norske-forhold",
+      "jurisdiction_ids": [
+        "NOR"
+      ],
+      "source_institutions": [
+        "Norwegian Directorate of Health"
+      ],
+      "instrument_ids": [
+        "i-faa462259315"
+      ],
+      "categories_reviewed": [
+        "generative-ai",
+        "sectoral",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): official report page read; title and \"Først publisert\"/\"Siste faglige endring\" dates confirmed; report body is loaded dynamically and was read only in outline",
+      "http_status": 200,
+      "final_url": "https://www.helsedirektoratet.no/rapporter/rapport-om-store-sprakmodeller-i-helse-og-omsorgstjenesten-risikoer-og-tilpasninger-til-norske-forhold",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "no",
+      "error": null,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "id": "s-e03c87f2f5a8",
+      "url": "https://www.udir.no/kvalitet-og-kompetanse/digitalisering-skole/kunstig-intelligens-i-skolen/rad-om-kunstig-intelligens-skolen/",
+      "jurisdiction_ids": [
+        "NOR"
+      ],
+      "source_institutions": [
+        "Norwegian Directorate for Education and Training"
+      ],
+      "instrument_ids": [
+        "i-3e4243b5d354"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): official page read; advice text and \"Sist endret: 02.12.2025\" confirmed",
+      "http_status": 200,
+      "final_url": "https://www.udir.no/kvalitet-og-kompetanse/digitalisering-skole/kunstig-intelligens-i-skolen/rad-om-kunstig-intelligens-skolen/",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "no",
+      "error": null,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "id": "s-b730fb29cbcc",
+      "url": "https://www.stortinget.no/globalassets/pdf/lovvedtak/2024-2025/vedtak-202425-119.pdf",
+      "jurisdiction_ids": [
+        "NOR"
+      ],
+      "source_institutions": [
+        "Storting"
+      ],
+      "instrument_ids": [
+        "i-48c5a8b786b2"
+      ],
+      "categories_reviewed": [
+        "binding-law",
+        "public-sector",
+        "transparency"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): Storting Lovvedtak 119 (2024–2025) PDF read (pdftotext); adoption 11 June 2025, §§ 11-13 and § 99 confirmed.",
+      "http_status": 200,
+      "final_url": "https://www.stortinget.no/globalassets/pdf/lovvedtak/2024-2025/vedtak-202425-119.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "no",
+      "error": null,
+      "content_type": "application/pdf"
     }
   ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "NOR",
     "country": "Norway",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -132,56 +1416,434 @@
       "transparency"
     ],
     "categories_with_findings": [
-      "strategy"
-    ],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
       "binding-law",
-      "strategy",
-      "government-governance",
+      "data-privacy",
+      "drafts",
       "ethics",
-      "risk-assurance",
+      "generative-ai",
+      "government-governance",
+      "index-readiness",
       "public-sector",
+      "risk-assurance",
+      "sandbox",
+      "sectoral",
+      "strategy",
+      "transparency"
+    ],
+    "categories_where_no_material_was_found": [
       "procurement",
       "cyber-security",
-      "data-privacy",
-      "transparency",
       "standards",
-      "sandbox",
-      "index-readiness",
-      "sectoral",
-      "generative-ai",
-      "drafts",
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Norway \"kunstig intelligens\" (strategi OR regulering OR etikk) government ministry official",
       "Norway \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Norway government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Norway \"kunstig intelligens\" cybersecurity authority secure development safety guidelines",
-      "Norway privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Norway privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "KI-lov proposisjon Stortinget lov om kunstig intelligens 2026 Prop. L",
+      "\"lov om kunstig intelligens\" Prop. L (2025–2026) stortinget innst.",
+      "regjeringen.no høring \"lov om kunstig intelligens\" gjennomføring forordning høringsfrist",
+      "KI-loven ny høring 2026 Digitaliserings- og forvaltningsdepartementet EØS-tilpasning Stortinget våren 2027",
+      "\"Nasjonal strategi for kunstig intelligens\" Kommunal- og moderniseringsdepartementet 14.01.2020",
+      "digdir.no veiledning generativ KI offentlig sektor",
+      "digdir.no kunstig intelligens veiledning ansvarlig utvikling og bruk offentlig sektor generativ KI råd",
+      "Datatilsynet sandkasse sluttrapport kunstig intelligens 2025 2026",
+      "datatilsynet.no site search: kunstig intelligens",
+      "Finanstilsynet kunstig intelligens rundskriv forventninger 2025",
+      "finanstilsynet.no kunstig intelligens finansforetak tilsyn KI-forordningen markedsovervåkingsmyndighet",
+      "nkom.no/ki KI-loven koordinerende tilsynsmyndighet",
+      "udir.no kunstig intelligens i skolen veiledning generativ KI",
+      "udir.no nasjonale anbefalinger kunstig intelligens skolen 2026 barneskolen",
+      "Helsedirektoratet kunstig intelligens veileder helsetjenesten KI regulering",
+      "NSM kunstig intelligens sikkerhet råd anbefalinger nsm.no",
+      "Forsvarsdepartementet strategi kunstig intelligens forsvarssektoren",
+      "ny forvaltningslov 2025 lovdata automatiserte avgjørelser helautomatisert ikrafttredelse",
+      "lovdata TRAKTAT 1981-01-28-1 konvensjon personvern ETS 108"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. regjeringen.no 403 (bot challenge) to curl and WebFetch for all pages and PDFs; digdir.no 502/403 except the KI Norge page. Strategy (2020-01-14, from the press listing) and KI-lov consultation (2025-06-30, confirmed on datatilsynet.no and nkom.no) located only. Convention 108: Lovdata treaty entry TRAKTAT/1981-01-28-1, recorded on the COE file. Units covered: Law: Lovdata (Personal Data Act read; Convention 108 treaty entry read), Storting (new Public Administration Act Lovvedtak 119 (2024–2025) read; written question 15:768 read; no AI Act bill found), regjeringen.no consultations (KI-lov consultation located; site blocked HTTP 403 for curl and WebFetch). No standalone AI law in force; no deepfake-specific offence found.; Government: National AI strategy 2020 (located; regjeringen.no blocked), Ministry of Digitalisation and Public Governance (KI-lov, digitalisation strategy as lead), Digdir (site HTTP 502/403; guidance held as lead; KI Norge page read), Riksrevisjonen audit of AI in government (read).; Ministries: Health (Helsedirektoratet: joint AI plan, quality-assurance and LLM reports read), Education (Udir AI advice read; June 2026 recommendation as lead), Defence (AI strategy as lead, regjeringen.no blocked), Justice (Personal Data Act, Public Administration Act). Finance/tax, labour, interior: searched, no ministry-level AI document found beyond NAV sandbox report.; Regulators: Datatilsynet (AI report 2018, AI strategy 2024, sandbox exit reports incl. NAV, PrevBOT, NTNU Copilot, InkludMI, transparency guidance — read), Nkom (KI-loven information pages read; coordinating authority role recorded on organization), Finanstilsynet (searched: no AI-specific guidance or circular; only general supervisory priorities and a participant-authored fintech sandbox report), NSM (searched: no AI-specific security guidance found).. Not reached: regjeringen.no (all pages and PDFs returned HTTP 403 bot challenge to curl and WebFetch); digdir.no (HTTP 502 to curl, 403 to WebFetch); Konkurransetilsynet and Medietilsynet not searched for AI-specific documents (time box). Could not verify: All regjeringen.no documents (HTTP 403): national AI strategy text, KI-lov consultation documents, 4 Aug 2026 press release on new consultation, digitalisation strategy 2024, defence AI strategy; Digdir guidance pages (HTTP 502/403). procurement, cyber-security, standards, international, historical: no material found.",
     "discovery_result_count": 8,
     "focused_result_count": 11
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-3bb38a506bab",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "NOR",
+      "instrument_id": "i-dff0a42dd212",
+      "title": "National Strategy for Artificial Intelligence",
+      "detail": "Official source moved.",
+      "from": "https://www.regjeringen.no/en/documents/nasjonal-strategi-for-kunstig-intelligens/id2685594/",
+      "to": "https://www.regjeringen.no/no/dokumenter/nasjonal-strategi-for-kunstig-intelligens/id2685594/",
+      "source_url": "https://www.regjeringen.no/no/dokumenter/nasjonal-strategi-for-kunstig-intelligens/id2685594/",
+      "needs_review": false
+    },
+    {
+      "id": "c-b6ed69963f13",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "NOR",
+      "instrument_id": "i-dff0a42dd212",
+      "title": "National Strategy for Artificial Intelligence",
+      "detail": "Record updated: categories, issuing authority, legal status, lifecycle, publication date, scope, summary, title.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-b0077d8bacb5",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "NOR",
+      "instrument_id": "i-7cb0f82b3b32",
+      "title": "Consultation – draft new Act on artificial intelligence – implementation of the EU Artificial Intelligence Regulation in Norwegian law",
+      "detail": "Added to the radar (published 2025-06-30).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.regjeringen.no/no/dokumenter/horing-utkast-til-ny-lov-om-kunstig-intelligens-gjennomforing-av-eus-forordning-om-kunstig-intelligens-i-norsk-rett/id3112327/",
+      "needs_review": false
+    },
+    {
+      "id": "c-182c1cfb3908",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "NOR",
+      "instrument_id": "i-53d5aa0ab491",
+      "title": "Act on the processing of personal data (Personal Data Act)",
+      "detail": "Added to the radar (published 2018-06-15).",
+      "from": null,
+      "to": null,
+      "source_url": "https://lovdata.no/dokument/NL/lov/2018-06-15-38",
+      "needs_review": false
+    },
+    {
+      "id": "c-d04d3bc752c3",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "NOR",
+      "instrument_id": "i-c0b49b86b53e",
+      "title": "Artificial intelligence and privacy",
+      "detail": "Added to the radar (published 2018-01-11).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.datatilsynet.no/regelverk-og-verktoy/rapporter-og-utredninger/kunstig-intelligens/",
+      "needs_review": false
+    },
+    {
+      "id": "c-7667aa31bd88",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "NOR",
+      "instrument_id": "i-fc3e4c092670",
+      "title": "Strategy for the work on artificial intelligence",
+      "detail": "Added to the radar (published 2024-03-22).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.datatilsynet.no/om-datatilsynet/planer/strategi-for-arbeidet-med-kunstig-intelligens/",
+      "needs_review": false
+    },
+    {
+      "id": "c-6981ebb041a7",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "NOR",
+      "instrument_id": "i-d88df5d0799b",
+      "title": "Succeeding with transparency – how to inform about the use of artificial intelligence",
+      "detail": "Added to the radar (published 2022-11-15).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.datatilsynet.no/regelverk-og-verktoy/rapporter-og-utredninger/rapporter-fra-sandkassa/a-lykkes-med-apenhet-hvordan-informere-om-bruk-av-kunstig-intelligens/",
+      "needs_review": false
+    },
+    {
+      "id": "c-2fe16648904a",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "NOR",
+      "instrument_id": "i-c8a835100a79",
+      "title": "NAV: Prediction model for sick leave (sandbox exit report)",
+      "detail": "Added to the radar (published 2022-01-17).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.datatilsynet.no/regelverk-og-verktoy/rapporter-og-utredninger/rapporter-fra-sandkassa/nav-prediksjonsmodell-for-sykefravar/",
+      "needs_review": false
+    },
+    {
+      "id": "c-436eaeeee42b",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "NOR",
+      "instrument_id": "i-7ee4ab249e34",
+      "title": "Norwegian Police University College: PrevBOT (sandbox exit report)",
+      "detail": "Added to the radar (published 2024-03-20).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.datatilsynet.no/regelverk-og-verktoy/rapporter-og-utredninger/rapporter-fra-sandkassa/politihogskolen-prevbot/",
+      "needs_review": false
+    },
+    {
+      "id": "c-33b2f0571265",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "NOR",
+      "instrument_id": "i-99e5942a4221",
+      "title": "NTNU: Copilot with privacy glasses on (sandbox exit report)",
+      "detail": "Added to the radar (published 2024-11-26).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.datatilsynet.no/regelverk-og-verktoy/rapporter-og-utredninger/rapporter-fra-sandkassa/ntnu-copilot-med-personvernbriller-pa/",
+      "needs_review": false
+    },
+    {
+      "id": "c-ae012286b3a7",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "NOR",
+      "instrument_id": "i-5652496ee2b1",
+      "title": "InkludMI: Intelligent inclusion (sandbox exit report)",
+      "detail": "Added to the radar (published 2026-03-16).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.datatilsynet.no/regelverk-og-verktoy/rapporter-og-utredninger/rapporter-fra-sandkassa/inkludmi-intelligent-inkludering/",
+      "needs_review": false
+    },
+    {
+      "id": "c-2832503ef210",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "NOR",
+      "instrument_id": "i-e1527b576612",
+      "title": "Use of artificial intelligence in central government (Document 3:18 (2023–2024))",
+      "detail": "Added to the radar (published 2024-09-02).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.riksrevisjonen.no/globalassets/rapporter/no-2023-2024/Kunstig-intelligens",
+      "needs_review": false
+    },
+    {
+      "id": "c-ebcf4ecb565a",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "NOR",
+      "instrument_id": "i-eff3e711310e",
+      "title": "Joint AI plan for the safe and effective use of AI in the Norwegian health and care services 2024-2025",
+      "detail": "Added to the radar (published 2024-08-13).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.helsedirektoratet.no/rapporter/felles-ki-plan-for-trygg-og-effektiv-bruk-av-ki-i-helse-og-omsorgstjenesten-2024-2025",
+      "needs_review": false
+    },
+    {
+      "id": "c-b367d5e9d2f5",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "NOR",
+      "instrument_id": "i-504c32401b85",
+      "title": "Report on quality assurance: Use of artificial intelligence in health and care services",
+      "detail": "Added to the radar (published 2025-01-10).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.helsedirektoratet.no/rapporter/rapport-om-kvalitetssikring-bruk-av-kunstig-intelligens-i-helse-og-omsorgstjenesten",
+      "needs_review": false
+    },
+    {
+      "id": "c-d6142b285de4",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "NOR",
+      "instrument_id": "i-faa462259315",
+      "title": "Report on large language models in Norwegian health and care services: Risks and adaptations to Norwegian conditions",
+      "detail": "Added to the radar (published 2025-04-16).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.helsedirektoratet.no/rapporter/rapport-om-store-sprakmodeller-i-helse-og-omsorgstjenesten-risikoer-og-tilpasninger-til-norske-forhold",
+      "needs_review": false
+    },
+    {
+      "id": "c-77921757451e",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "NOR",
+      "instrument_id": "i-3e4243b5d354",
+      "title": "Advice on artificial intelligence in schools",
+      "detail": "Added to the radar (published 2025-12-02).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.udir.no/kvalitet-og-kompetanse/digitalisering-skole/kunstig-intelligens-i-skolen/rad-om-kunstig-intelligens-skolen/",
+      "needs_review": false
+    },
+    {
+      "id": "c-9c56437c463c",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "NOR",
+      "instrument_id": "i-48c5a8b786b2",
+      "title": "Act on case handling in public administration (Public Administration Act)",
+      "detail": "Added to the radar (published 2025-06-11).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.stortinget.no/globalassets/pdf/lovvedtak/2024-2025/vedtak-202425-119.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-28a8f97ffcd2",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "NOR",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 16 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-848ace09edcf",
+      "date": "2025-06-30",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "consultation",
+      "jurisdiction_id": "NOR",
+      "instrument_id": "i-7cb0f82b3b32",
+      "title": "Draft AI Act (KI-loven) sent on public consultation",
+      "detail": "The Ministry of Digitalisation and Public Governance sent a draft Act implementing the EU AI Act in Norwegian law on consultation (date per Datatilsynet).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.datatilsynet.no/aktuelt/aktuelle-nyheter-2025/ny-lov-om-ki-sendt-pa-horing/",
+      "needs_review": false
+    },
+    {
+      "id": "c-3522700c57f4",
+      "date": "2025-06-11",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "NOR",
+      "instrument_id": "i-48c5a8b786b2",
+      "title": "Storting adopts new Public Administration Act with rules on automated decisions",
+      "detail": "Lovvedtak 119 (2024–2025): new forvaltningsloven incl. §§ 11-13 on automated case handling and decisions.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.stortinget.no/globalassets/pdf/lovvedtak/2024-2025/vedtak-202425-119.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-3ce6517c1c1c",
+      "date": "2024-09-02",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "NOR",
+      "instrument_id": "i-e1527b576612",
+      "title": "Auditor General report on AI use in central government",
+      "detail": "Riksrevisjonen presented Dokument 3:18 (2023–2024) to the Storting.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.riksrevisjonen.no/globalassets/rapporter/no-2023-2024/Kunstig-intelligens",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Lov om kunstig intelligens (KI-loven) – lovproposisjon og ny høring",
+      "english_title": "Artificial Intelligence Act (KI-loven) – bill and new consultation",
+      "issuing_authority": "Ministry of Digitalisation and Public Governance",
+      "note": "Pending. No Prop. L submitted to the Storting as of 12 Oct 2026. Government press release of 4 Aug 2026 'Tung vil sende KI-loven med endringer på høring' (https://www.regjeringen.no/no/aktuelt/tung-vil-sende-ki-loven-med-endringer-pa-horing/id3169693/, not readable: regjeringen.no blocked) reportedly announces a new consultation in autumn 2026 after EU amendments to the AI Act, with the bill aimed at spring 2027. Record the new consultation and the bill when published; Nkom is the planned coordinating supervisory authority.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Fremtidens digitale Norge – nasjonal digitaliseringsstrategi 2024–2030",
+      "english_title": "The Digital Norway of the Future – national digitalisation strategy 2024-2030",
+      "issuing_authority": "Ministry of Digitalisation and Public Governance",
+      "note": "National digitalisation strategy launched autumn 2024 (per the minister's answer to written question 15:768 (2024–2025) on stortinget.no) with AI goals (computing capacity, national language models, AI-friendly regulation). regjeringen.no blocked (HTTP 403), so title, date and AI content not verified. Record as strategy once readable.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Strategi for kunstig intelligens i forsvarssektoren",
+      "english_title": "Strategy for artificial intelligence in the defence sector",
+      "issuing_authority": "Ministry of Defence",
+      "note": "Defence-sector AI strategy PDF at https://www.regjeringen.no/contentassets/a36197a7d69c45e68186b10117e76b5b/forsvarsdepartementet-kunstig-intelligens.pdf (regjeringen.no blocked; date not verified). Record once readable.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Veiledning for ansvarlig utvikling og bruk av kunstig intelligens i offentlig sektor / Bruk av generativ KI (Digdir)",
+      "english_title": "Guidance on responsible development and use of AI in the public sector / Use of generative AI (Digdir)",
+      "issuing_authority": "Norwegian Digitalisation Agency (Digdir)",
+      "note": "Digdir's non-binding public-sector AI guidance, incl. a generative-AI part (https://www.digdir.no/kunstig-intelligens/ansvarlig-anskaffelse-og-bruk-av-generativ-kunstig-intelligens-i-offentlig-sektor/4670, guidance hub https://www.digdir.no/kunstig-intelligens/veiledning-ansvarlig-bruk-og-utvikling-av-kunstig-intelligens/4601). digdir.no returned HTTP 502 (curl) and 403 (WebFetch) on 12 Oct 2026, so publication dates could not be read. Record as public-sector/generative-AI guidance once readable. Also: KI Norge, established by Digdir on assignment from the ministry (page dated 18 Sep 2025, read via WebFetch), opening August 2026.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Nye anbefalinger om bruk av KI etter trinn og alder (Udir)",
+      "english_title": "New recommendations on age-appropriate AI use by school level",
+      "issuing_authority": "Ministry of Education and Research / Norwegian Directorate for Education and Training",
+      "note": "Government recommendation of 19 June 2026 that pupils in grades 1-7 should in principle not use generative AI; Udir is elaborating the recommendations (page last changed 25 June 2026: https://www.udir.no/kvalitet-og-kompetanse/digitalisering-skole/kunstig-intelligens-i-skolen/kommer-nye-rad-om-bruk-av-kunstig-intelligens-pa-ulike-trinn/). Record the final recommendations once published.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Forskrift om automatisert saksbehandling i forvaltningen",
+      "english_title": "Regulation on automated case handling in public administration",
+      "issuing_authority": "Ministry of Justice and Public Security",
+      "note": "Regulation under the new Public Administration Act §§ 11-13 reportedly consulted (Sivilombudet consultation response). Not verified on regjeringen.no (blocked). Record when adopted.",
+      "found": "2026-10-12"
+    }
+  ]
 }
