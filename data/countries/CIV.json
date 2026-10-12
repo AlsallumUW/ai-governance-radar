@@ -12,18 +12,296 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Côte d'Ivoire governs AI through its National AI Strategy (SNIA 2030) and the companion National Data Governance Strategy (SNGD 2030), both published in 2024, which plan a National AI Agency, a National AI Council and an AI regulatory framework. The only binding text touching automated processing is the 2013 personal data protection law, enforced by the telecom and data protection regulator ARTCI, which bars court decisions based on automated processing. An AI bill announced in 2025 had not been tabled by October 2026.",
+    "lead_institutions": [
+      "Ministry of Digital Transition and Digitalisation",
+      "ARTCI"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was completed on 12 October 2026 and covers national law, government, ministries and regulators. The announced AI bill and the planned AI agency and council have no published official texts and are listed as leads. As a country of over 20 million people with few records, Côte d'Ivoire is marked for a longer catch-up pass."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-7e3e6d592887",
+      "official_title": "Stratégie Nationale de l'Intelligence Artificielle à l'horizon 2030 (SNIA 2030)",
+      "english_title": "National Artificial Intelligence Strategy to 2030 (SNIA 2030)",
+      "issuing_authority": "Ministère de la Transition Numérique et de la Digitalisation (Ministry of Digital Transition and Digitalisation)",
+      "authority_type": "government",
+      "categories": [
+        "strategy",
+        "government-governance",
+        "ethics",
+        "data-privacy",
+        "public-sector"
+      ],
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2024",
+      "current_status": "Published on the ministry's strategies page (also hosted on anssi.gouv.ci). The document is dated only 2024. No Council of Ministers adoption act or official launch date was found on official sites. The National AI Agency (ANIA) it proposes was not found established by an official text by October 2026 (see leads).",
+      "summary": "Côte d'Ivoire's first national AI strategy, with a vision of making inclusive, ethical and responsible AI an accelerator of transformation by 2030, built on three pillars: investment, inclusion and governance. The investment pillar includes an axis on drafting a regulatory and ethical framework (stronger personal-data law aligned with international standards, a supervisory entity for AI data, algorithmic audits for critical sectors such as health, education and public administration, and transparency obligations on developers). The governance pillar provides for a National AI Agency (ANIA) housing a National AI Council (CNIA) to steer, coordinate and monitor implementation.",
+      "ai_governance_relevance": "Central AI policy document; sets the plan for an AI regulatory framework and a national AI agency and council.",
+      "source_url": "https://www.telecom.gouv.ci/new/uploads/publications/174196670372.pdf",
+      "official_pdf_url": "https://www.telecom.gouv.ci/new/uploads/publications/174196670372.pdf",
+      "official_webpage_url": "https://www.telecom.gouv.ci/new/index.php/publications/sous-categorie/1",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-eefaa110eb86",
+      "publisher_name": "Ministry of Digital Transition and Technological Innovation",
+      "jurisdiction_id": "CIV",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "strategy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Côte d'Ivoire (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [
+        "publication_date: the document states only the year 2024; no official day/month or government adoption act found"
+      ],
+      "language": "fr",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-fca18c10a2b4",
+      "evidence_reference": "curl (browser user agent, --max-time 60): 71-page PDF downloaded (HTTP 200, application/pdf) from the ministry's Publications > Planification > Stratégies page and read (pdftotext); the document states only 'Côte d'Ivoire 2024' (copyright, Ministère de la Transition Numérique et de la Digitalisation), no day or month."
+    },
+    {
+      "id": "i-2ea0bd2d6aec",
+      "official_title": "Stratégie Nationale de la Gouvernance des Données à l'horizon 2030 (SNGD 2030)",
+      "english_title": "National Data Governance Strategy to 2030 (SNGD 2030)",
+      "issuing_authority": "Ministère de la Transition Numérique et de la Digitalisation (Ministry of Digital Transition and Digitalisation)",
+      "authority_type": "government",
+      "categories": [
+        "strategy",
+        "data-privacy",
+        "government-governance",
+        "ethics"
+      ],
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2024",
+      "current_status": "Published on the ministry's strategies page alongside the SNIA 2030; dated only 2024. No government adoption act found.",
+      "summary": "Companion strategy to the SNIA 2030 setting national data governance for 2024-2030 around six strategic pillars: culture and ethics, infrastructure, interoperability and accessibility, quality data, innovation, and skills. Among its objectives is creating the framework for secure AI development, and it proposes a strong public-sector data governance body, ideally attached to the Prime Minister's office, that would combine data governance and AI development outside the field of regulation. It includes actions on AI-based data processing, a supercomputer for data and AI, and AI and big-data R&D.",
+      "ai_governance_relevance": "Data-governance foundation for AI; proposes a combined data and AI governance body.",
+      "source_url": "https://www.telecom.gouv.ci/new/uploads/publications/174196707541.pdf",
+      "official_pdf_url": "https://www.telecom.gouv.ci/new/uploads/publications/174196707541.pdf",
+      "official_webpage_url": "https://www.telecom.gouv.ci/new/index.php/publications/sous-categorie/1",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-eefaa110eb86",
+      "publisher_name": "Ministry of Digital Transition and Technological Innovation",
+      "jurisdiction_id": "CIV",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "strategy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Côte d'Ivoire (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [
+        "publication_date: the document states only the year 2024"
+      ],
+      "language": "fr",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-b7cfb3281966",
+      "evidence_reference": "curl (browser user agent, --max-time 60): 61-page PDF downloaded (HTTP 200, application/pdf) from the ministry's Publications > Planification > Stratégies page and read (pdftotext); the document states only 'Côte d'Ivoire 2024' (copyright) and the period 2024-2030."
+    },
+    {
+      "id": "i-056b24186e0b",
+      "official_title": "Loi n° 2013-450 du 19 juin 2013 relative à la protection des données à caractère personnel",
+      "english_title": "Law No. 2013-450 of 19 June 2013 on the Protection of Personal Data",
+      "issuing_authority": "Assemblée nationale; promulgated by the President of the Republic",
+      "authority_type": "legislature",
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2013-08-08",
+      "current_status": "In force. Dated 19 June 2013 and published in the Journal officiel of 8 August 2013 (JORCI p. 474). The SNIA 2030 calls for it to be strengthened and aligned with international standards; no amending law found by October 2026.",
+      "summary": "Côte d'Ivoire's personal data protection law, applying to public and private controllers and making the authority in charge of personal data protection (ARTCI) responsible for declarations, authorisations and supervision of processing. It sets core principles (consent and other legal bases, purpose limitation, accuracy, transparency, security, confidentiality) and special rules for sensitive data. Article 25 prohibits any court decision involving an assessment of a person's behaviour from being based on automated processing of personal data intended to evaluate aspects of their personality.",
+      "ai_governance_relevance": "General data protection law governing AI training and use on personal data; contains an automated-processing rule (art. 25).",
+      "source_url": "https://www.artci.ci/wp-content/uploads/2024/05/loi_2013_450.pdf",
+      "official_pdf_url": "https://www.artci.ci/wp-content/uploads/2024/05/loi_2013_450.pdf",
+      "official_webpage_url": "https://artci.ci/textes-juridiques/lois/",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-0e3119633de8",
+      "publisher_name": "National Assembly",
+      "jurisdiction_id": "CIV",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Côte d'Ivoire (national)",
+      "technology_scope": [
+        "personal data processing",
+        "automated processing"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [
+        "effective_date: the law states no separate entry-into-force date (art. 54: published in the Journal officiel and executed as a law of the State; art. 53 gives existing controllers six months from entry into force to comply)"
+      ],
+      "language": "fr",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-f006646f1c9f",
+      "evidence_reference": "curl (browser user agent, --max-time 60): 9-page scan of the Journal officiel de la République de Côte d'Ivoire of 8 August 2013 (pp. 474ff) downloaded (HTTP 200) from ARTCI's Textes juridiques > Lois page; image-only PDF read page by page from rendered images (articles 1-25 and 49-54 checked, incl. art. 54 publication clause and art. 53 six-month transition). The same law is also published by the digital ministry (telecom.gouv.ci)."
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-eefaa110eb86",
+      "jurisdiction_id": "CIV",
+      "name": "Ministry of Digital Transition and Technological Innovation",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Ministry responsible for digital affairs (named Ministère de la Transition Numérique et de la Digitalisation when it published the 2024 strategies; Ministère de la Transition Numérique et de l'Innovation Technologique in 2026 Council of Ministers communiqués). Author and publisher of the National AI Strategy (SNIA 2030) and the National Data Governance Strategy (SNGD 2030).",
+      "source_url": "https://www.telecom.gouv.ci/",
+      "authority_type": "government",
+      "government_level": "national"
+    },
+    {
+      "id": "o-0e3119633de8",
+      "jurisdiction_id": "CIV",
+      "name": "National Assembly",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Assemblée nationale of Côte d'Ivoire; adopted Law 2013-450 on personal data protection. A specific AI bill announced by the government had not been found as tabled by October 2026.",
+      "source_url": "https://www.assnat.ci/",
+      "authority_type": "legislature",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-fca18c10a2b4",
+      "url": "https://www.telecom.gouv.ci/new/uploads/publications/174196670372.pdf",
+      "jurisdiction_ids": [
+        "CIV"
+      ],
+      "source_institutions": [
+        "Ministry of Digital Transition and Technological Innovation"
+      ],
+      "instrument_ids": [
+        "i-7e3e6d592887"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "government-governance",
+        "ethics",
+        "data-privacy",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): 71-page PDF downloaded (HTTP 200, application/pdf) from the ministry's Publications > Planification > Stratégies page and read (pdftotext); the document states only 'Côte d'Ivoire 2024' (copyright, Ministère de la Transition Numérique et de la Digitalisation), no day or month.",
+      "http_status": 200,
+      "final_url": "https://www.telecom.gouv.ci/new/uploads/publications/174196670372.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "fr",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-b7cfb3281966",
+      "url": "https://www.telecom.gouv.ci/new/uploads/publications/174196707541.pdf",
+      "jurisdiction_ids": [
+        "CIV"
+      ],
+      "source_institutions": [
+        "Ministry of Digital Transition and Technological Innovation"
+      ],
+      "instrument_ids": [
+        "i-2ea0bd2d6aec"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "data-privacy",
+        "government-governance",
+        "ethics"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): 61-page PDF downloaded (HTTP 200, application/pdf) from the ministry's Publications > Planification > Stratégies page and read (pdftotext); the document states only 'Côte d'Ivoire 2024' (copyright) and the period 2024-2030.",
+      "http_status": 200,
+      "final_url": "https://www.telecom.gouv.ci/new/uploads/publications/174196707541.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "fr",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-f006646f1c9f",
+      "url": "https://www.artci.ci/wp-content/uploads/2024/05/loi_2013_450.pdf",
+      "jurisdiction_ids": [
+        "CIV"
+      ],
+      "source_institutions": [
+        "National Assembly"
+      ],
+      "instrument_ids": [
+        "i-056b24186e0b"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): 9-page scan of the Journal officiel de la République de Côte d'Ivoire of 8 August 2013 (pp. 474ff) downloaded (HTTP 200) from ARTCI's Textes juridiques > Lois page; image-only PDF read page by page from rendered images (articles 1-25 and 49-54 checked, incl. art. 54 publication clause and art. 53 six-month transition). The same law is also published by the digital ministry (telecom.gouv.ci).",
+      "http_status": 200,
+      "final_url": "https://www.artci.ci/wp-content/uploads/2024/05/loi_2013_450.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "fr",
+      "error": null,
+      "content_type": "application/pdf"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "CIV",
     "country": "Côte d’Ivoire",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -35,18 +313,18 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_with_findings": [
       "binding-law",
-      "strategy",
-      "government-governance",
+      "data-privacy",
       "ethics",
-      "risk-assurance",
+      "government-governance",
       "public-sector",
+      "strategy"
+    ],
+    "categories_where_no_material_was_found": [
+      "risk-assurance",
       "procurement",
       "cyber-security",
-      "data-privacy",
       "transparency",
       "standards",
       "sandbox",
@@ -57,33 +335,145 @@
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Côte d’Ivoire \"intelligence artificielle\" (stratégie OR réglementation OR éthique) government ministry official",
       "Côte d’Ivoire \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Côte d’Ivoire government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Côte d’Ivoire \"intelligence artificielle\" cybersecurity authority secure development safety guidelines",
-      "Côte d’Ivoire privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Côte d’Ivoire privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "telecom.gouv.ci Publications > Stratégies (browsed)",
+      "telecom.gouv.ci Publications > Documents d'orientation (browsed)",
+      "telecom.gouv.ci Publications > textes juridiques (browsed)",
+      "Stratégie nationale de l'intelligence artificielle Côte d'Ivoire adoptée Conseil des ministres",
+      "Côte d'Ivoire projet de loi intelligence artificielle Conseil des ministres 2026",
+      "gouv.ci communiqué conseil des ministres \"intelligence artificielle\" stratégie nationale adopté (gouv.ci, telecom.gouv.ci, assnat.ci, sgg.gouv.ci)",
+      "artci.ci ?s=intelligence artificielle",
+      "artci.ci textes juridiques lois / ordonnances (browsed)",
+      "ARTCI intelligence artificielle données personnelles guide recommandation",
+      "Côte d'Ivoire national AI strategy 2030",
+      "Côte d'Ivoire AI bill status",
+      "Côte d'Ivoire Convention 108 accession"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. Journal officiel full-text search on sgg.gouv.ci and assnat.ci bill listings not reached; sector ministries only via web search. Run resumed after a usage-limit interruption; downloads re-checked against the official sites (one mislabelled file corrected). Strategies dated by year only (adoption act not found). SNNCI 2021-2025, the 2021 innovation strategy and the 2021-2025 cybersecurity strategy have no AI pillar (not recorded). Convention 108 accession act not found. Units covered: Law: Law 2013-450 (data protection) read from the Journal officiel scan; ARTCI and ministry law listings (2013-451 cybercrime, 2013-546 e-transactions, 2024-352 electronic communications, 2023-901 startups) checked by title: no AI provisions identified beyond art. 25 of 2013-450. No AI law; AI bill announced but not found (lead). Assemblée nationale and SGG Journal officiel not searched in depth.; Government: Ministry of Digital Transition strategy and orientation publication pages: SNIA 2030 and SNGD 2030 recorded; SNNCI 2021-2025 digital strategy (AI only mentioned as an emerging technology, no AI pillar), Stratégie d'Innovation 2021 and Stratégie nationale de cybersécurité 2021-2025 (no AI content) not recorded. Council of Ministers communiqués Feb and Aug 2026 checked.; Ministries: Searched, nothing found: no AI-specific documents from education, health, justice, defence, finance, labour or interior ministries found in official sources.; Regulators: ARTCI (data protection and telecom regulator): site search for 'intelligence artificielle' returned only event news and monitoring articles, no AI guidance or decisions. BCEAO (regional) not national-specific. ANSSI (cyber agency) hosts a copy of SNIA; no AI security guidance found. No national standards body AI adoption found.. Not reached: Journal officiel (sgg.gouv.ci) full-text search for 'intelligence artificielle'; assnat.ci bill listings; Sector ministries' own sites (searched only via web search). Could not verify: Government adoption of SNIA/SNGD (press reports only); AI bill status (press reports only). risk-assurance, procurement, cyber-security, transparency, standards, sandbox, index-readiness, sectoral, generative-ai, drafts, international, historical: no material found.",
     "discovery_result_count": 12,
     "focused_result_count": 15
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-27e882c2e640",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "CIV",
+      "instrument_id": "i-7e3e6d592887",
+      "title": "National Artificial Intelligence Strategy to 2030 (SNIA 2030)",
+      "detail": "Added to the radar (published 2024).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.telecom.gouv.ci/new/uploads/publications/174196670372.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-674c959cac80",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "CIV",
+      "instrument_id": "i-2ea0bd2d6aec",
+      "title": "National Data Governance Strategy to 2030 (SNGD 2030)",
+      "detail": "Added to the radar (published 2024).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.telecom.gouv.ci/new/uploads/publications/174196707541.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-332691282074",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "CIV",
+      "instrument_id": "i-056b24186e0b",
+      "title": "Law No. 2013-450 of 19 June 2013 on the Protection of Personal Data",
+      "detail": "Added to the radar (published 2013-08-08).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.artci.ci/wp-content/uploads/2024/05/loi_2013_450.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-aab77bd6ebcd",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "CIV",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 3 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-6fb8458b8096",
+      "date": "2013-06-19",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "CIV",
+      "instrument_id": "i-056b24186e0b",
+      "title": "Law 2013-450 on personal data protection adopted",
+      "detail": "Law No. 2013-450 of 19 June 2013 on the protection of personal data (published in the Journal officiel of 8 August 2013).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.artci.ci/wp-content/uploads/2024/05/loi_2013_450.pdf",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Projet de loi sur l'intelligence artificielle",
+      "english_title": "Artificial intelligence bill",
+      "issuing_authority": "Ministère de la Transition Numérique et de l'Innovation Technologique",
+      "note": "A specific AI bill was announced by government officials in 2025 (reported as being prepared for Parliament). No bill text, Council of Ministers adoption or tabling at the Assemblée nationale was found on official sites by 12 October 2026 (Council of Ministers communiqués of 4 February and 5 August 2026 checked: no AI bill).",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Agence Nationale de l'Intelligence Artificielle (ANIA) / Conseil National de l'IA (CNIA)",
+      "english_title": "National Artificial Intelligence Agency (ANIA) and National AI Council (CNIA)",
+      "issuing_authority": "Government of Côte d'Ivoire",
+      "note": "Planned by the SNIA 2030 (governance pillar). No founding decree found in official sources by October 2026.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Cadres de gouvernance de l'intelligence artificielle (Projet d'Accélération Digitale en Côte d'Ivoire, PADCI)",
+      "english_title": "AI governance frameworks under the Digital Acceleration Project (PADCI)",
+      "issuing_authority": "Ministère de la Transition Numérique et de l'Innovation Technologique",
+      "note": "Council of Ministers communiqué of 4 February 2026 ratified IDA loan No. 7931-CI (EUR 128.6m) for PADCI phase 1, which provides technical assistance to create and operationalise digital agencies and AI governance frameworks. No resulting AI governance document published yet.",
+      "found": "2026-10-12"
+    }
+  ]
 }
