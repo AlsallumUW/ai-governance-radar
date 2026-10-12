@@ -10,116 +10,892 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Chile steers AI through its National AI Policy, first approved by decree in 2021 and updated in 2024 for 2024-2031, and through public-sector guidance: a 2023 circular on AI tools in government, the transparency council's 2024 recommendations on algorithmic transparency, and the public procurement agency's AI procurement directive and standard tender terms for AI projects. The 2024 data protection law (Law 21.719), in force from December 2026, adds binding rules on automated decisions and profiling. The education ministry has issued a generative-AI guide and the Supreme Court's 2025 judicial ethics code includes an article on AI. A risk-based AI bill is still before the Senate.",
+    "lead_institutions": [
+      "Ministry of Science, Technology, Knowledge and Innovation",
+      "Consejo para la Transparencia (CPLT)",
+      "ChileCompra"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was carried out on 12 October 2026 from documents read in full on official sites, mainly the Ley Chile legislation service. The Chamber of Deputies' and the cybersecurity agency's search pages could not be accessed, so bills were checked through the Senate's service. The AI bill, a deepfake bill and the transparency council's planned binding instruction are tracked as leads."
   },
   "instruments": [
     {
       "id": "i-1476b34c4d58",
-      "official_title": "MinCiencia",
-      "english_title": "National AI Policy and action plan",
+      "official_title": "Aprueba actualización de la \"Política Nacional de Inteligencia Artificial\"",
+      "english_title": "Decree 12 approving the update of the National Artificial Intelligence Policy (2024 update)",
       "jurisdiction_id": "CHL",
-      "issuing_authority": null,
-      "publisher_name": "www.minciencia.gob.cl",
-      "authority_type": null,
+      "issuing_authority": "Ministry of Science, Technology, Knowledge and Innovation (Supreme Decree No. 12, signed by the President of the Republic and the Minister of Science)",
+      "publisher_name": "Ministry of Science, Technology, Knowledge and Innovation",
+      "authority_type": "ministry",
       "government_level": "national",
+      "subnational_unit": null,
       "categories": [
-        "strategy"
+        "strategy",
+        "government-governance",
+        "ethics",
+        "generative-ai"
       ],
       "category": "strategy",
       "subcategory": null,
-      "legal_status": null,
-      "publication_date": null,
+      "legal_status": "national_strategy",
+      "lifecycle": "in_force",
+      "publication_date": "2025-01-28",
       "effective_date": null,
       "last_amended_date": null,
-      "current_status": "Official source located; current status requires review",
-      "scope": null,
-      "sectors": [],
+      "current_status": "In force (Ley Chile marks it 'no derogado'). Signed 11 April 2024 and presented by the Minister of Science on 2 May 2024, but published in the Diario Oficial only on 28 January 2025. The policy PDF, action plan (177 initiatives, 14 ministries; 78% implemented or finished as of April 2025 per MinCiencia) and 2024 results report are linked from the MinCiencia page via Google Drive files. Record re-checked under its existing id; previously titled with the site name only.",
+      "scope": "Chile (national)",
+      "sectors": [
+        "cross-sector"
+      ],
       "technology_scope": [
         "AI"
       ],
-      "summary": "Official source located for this governance category. The document’s adoption, legal effect, scope and version history remain under review.",
-      "ai_governance_relevance": "Primary-source material for assessing strategy & action plans.",
-      "source_url": "https://www.minciencia.gob.cl/areas/inteligencia-artificial/Inteligencia-Artificial/politica-Nacional-Inteligencia-Artificial-Plan-Accion/",
+      "summary": "Supreme Decree No. 12 of 11 April 2024, published in the Diario Oficial on 28 January 2025, approves the 2024 update of Chile's National AI Policy and repeals Decree 20/2021. It keeps the three axes (enabling factors; development and adoption; governance and ethics) and the 10-year horizon to 2031, adopts the OECD definition of an AI system, and rewrites the governance and ethics axis after a participatory process (UNESCO RAM methodology and an online consultation), adding sub-axes such as international articulation, environment and climate, inclusion and non-discrimination, children and adolescents, and culture. An action plan of 177 initiatives coordinated by 14 ministries accompanies it.",
+      "ai_governance_relevance": "Current national AI policy, the main steering instrument for AI across government.",
+      "source_url": "https://www.bcn.cl/leychile/navegar?idNorma=1210664",
       "official_pdf_url": null,
-      "official_webpage_url": "https://www.minciencia.gob.cl/areas/inteligencia-artificial/Inteligencia-Artificial/politica-Nacional-Inteligencia-Artificial-Plan-Accion/",
+      "official_webpage_url": "https://www.minciencia.gob.cl/areas/inteligencia-artificial/politica-nacional-de-inteligencia-artificial/",
+      "language": "es",
+      "supersedes": [
+        "i-848002f30bf6"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "legislation_portal",
+      "evidence_reference": "curl (browser user agent, --max-time 60) of the Ley Chile (Biblioteca del Congreso Nacional) official XML service obtxml?opt=7&idNorma=1210664: full decree text read (TituloNorma, Organismo, fechaPromulgacion 2024-04-11, fechaPublicacion 2025-01-28, derogado='no derogado'; article II repeals Decree 20/2021). MinCiencia policy and action-plan pages also read (download links point to Google Drive files named by the ministry's page).",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-991222559606",
+      "organization_id": "o-4c426939e9c0",
+      "first_recorded": "2026-10-06",
+      "last_changed": null
+    },
+    {
+      "id": "i-848002f30bf6",
+      "official_title": "Aprueba Política Nacional de Inteligencia Artificial",
+      "english_title": "Decree 20 approving the National Artificial Intelligence Policy (2021)",
+      "jurisdiction_id": "CHL",
+      "issuing_authority": "Ministry of Science, Technology, Knowledge and Innovation (Supreme Decree No. 20)",
+      "publisher_name": "Ministry of Science, Technology, Knowledge and Innovation",
+      "authority_type": "ministry",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "strategy",
+        "historical",
+        "ethics"
+      ],
+      "category": "strategy",
+      "subcategory": null,
+      "legal_status": "national_strategy",
+      "lifecycle": "superseded",
+      "publication_date": "2021-12-03",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Repealed by article II of Decree 12 (published 28 January 2025). Diario Oficial edition 43119 of 3 December 2021 carries the decree.",
+      "scope": "Chile (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Chile's first National AI Policy, approved by Supreme Decree No. 20 of 20 September 2021 (published in the Diario Oficial on 3 December 2021) and presented in October 2021 with an action plan. It set four cross-cutting principles and three axes (enabling factors such as talent, infrastructure and data; development and adoption; and ethics, regulatory aspects and socio-economic impacts) with a 10-year horizon. It was repealed and replaced by the 2024 update (Decree 12).",
+      "ai_governance_relevance": "Historical first national AI strategy; replaced by the 2024 update.",
+      "source_url": "https://www.bcn.cl/leychile/navegar?idNorma=1169399",
+      "official_pdf_url": "https://minciencia.gob.cl/uploads/filer_public/bc/38/bc389daf-4514-4306-867c-760ae7686e2c/documento_politica_ia_digital_.pdf",
+      "official_webpage_url": "https://www.minciencia.gob.cl/areas/inteligencia-artificial/politica-nacional-de-inteligencia-artificial/",
+      "language": "es",
+      "supersedes": [],
+      "superseded_by": [
+        "i-1476b34c4d58"
+      ],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "legislation_portal",
+      "evidence_reference": "curl (browser user agent, --max-time 60) of the Ley Chile (Biblioteca del Congreso Nacional) official XML service obtxml?opt=7&idNorma=1169399: decree text read (fechaPromulgacion 2021-09-20, fechaPublicacion 2021-12-03, derogado='derogado'); 78-page policy PDF on minciencia.gob.cl downloaded and read (pdftotext).",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-67b1dbb16a68",
+      "organization_id": "o-4c426939e9c0",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-fd45ab58c92c",
+      "official_title": "Ley N° 21.719, que regula la protección y el tratamiento de los datos personales y crea la Agencia de Protección de Datos Personales",
+      "english_title": "Law No. 21.719 regulating the protection and processing of personal data and creating the Personal Data Protection Agency",
+      "jurisdiction_id": "CHL",
+      "issuing_authority": "National Congress; promulgated by the President of the Republic (Ministry General Secretariat of the Presidency)",
+      "publisher_name": "National Congress of Chile",
+      "authority_type": "legislature",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "category": "data-privacy",
+      "subcategory": null,
+      "legal_status": "binding_law",
+      "lifecycle": "adopted",
+      "publication_date": "2024-12-13",
+      "effective_date": "2026-12-01",
+      "last_amended_date": null,
+      "current_status": "Published 13 December 2024. Under its first transitory article the amendments to Laws 19.628, 20.285 and 19.496 enter into force on the first day of the 24th month after publication, i.e. 1 December 2026 (date computed from the transitory article). Not yet in force on 11 October 2026.",
+      "scope": "Chile (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Comprehensive reform of Law 19.628 that creates the Personal Data Protection Agency. New article 8 bis gives data subjects the right to object to and not be subject to decisions based on automated processing, including profiling, that produce legal effects or significantly affect them (with contract, consent and legal-authorisation exceptions), and in all such cases requires controllers to ensure information, an explanation, human intervention, the right to express a view and review of the decision. It also defines profiling and requires data protection impact assessments for systematic and extensive evaluation of personal aspects based on automated processing.",
+      "ai_governance_relevance": "Main binding rules on automated decision-making and profiling; governs AI training and use involving personal data.",
+      "source_url": "https://www.bcn.cl/leychile/navegar?idNorma=1209272",
+      "official_pdf_url": null,
+      "official_webpage_url": null,
       "language": "es",
       "supersedes": [],
       "superseded_by": [],
       "related_instruments": [],
       "regional_applicability": [],
-      "verification_date": "2026-10-06",
-      "verification_level": "primary_source_located",
-      "metadata_gaps": [
-        "Issuing authority",
-        "Publication/effective dates",
-        "Current legal status",
-        "Precise applicability",
-        "Version history",
-        "Authority type",
-        "Government level",
-        "Publication date",
-        "Effective date",
-        "Last amended date"
-      ],
-      "source_kind": "official_publication",
-      "evidence_reference": "turn77search0",
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "legislation_portal",
+      "evidence_reference": "curl (browser user agent, --max-time 60) of the Ley Chile (Biblioteca del Congreso Nacional) official XML service obtxml?opt=7&idNorma=1209272: full law text read (fechaPromulgacion 2024-11-25, fechaPublicacion 2024-12-13); art. 8 bis and first transitory article checked.",
       "link_status": "reachable",
-      "document_access_type": "official_publication_or_full_text_page",
-      "source_id": "s-4558e9fd2879",
+      "document_access_type": "original_government_document",
+      "source_id": "s-83e6765931c0",
+      "organization_id": "o-df0bc80cf91b",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-f5d19c64ea5b",
+      "official_title": "Oficio Circular N° 711: Lineamientos para el uso de herramientas de inteligencia artificial en el sector público",
+      "english_title": "Circular Letter No. 711: Guidelines for the use of artificial intelligence tools in the public sector",
+      "jurisdiction_id": "CHL",
+      "issuing_authority": "Minister Secretary General of the Presidency and Minister of Science, Technology, Knowledge and Innovation",
+      "publisher_name": "Ministry of Science, Technology, Knowledge and Innovation",
+      "authority_type": "ministry",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "public-sector",
+        "generative-ai",
+        "ethics",
+        "transparency"
+      ],
+      "category": "public-sector",
+      "subcategory": null,
+      "legal_status": "administrative_guideline",
+      "lifecycle": "published",
+      "publication_date": "2023-12-11",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Recommendations (not mandatory); no replacement found as of October 2026. Issued before Law 21.719 reforms Law 19.628. Digital Government Division functions have since moved to the Government Digital Secretariat (Ministry of Finance).",
+      "scope": "Chile (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Joint circular from the Ministry General Secretariat of the Presidency and the Ministry of Science, sent to 309 state bodies, recommending how agencies that develop or use AI tools should act through their digital transformation coordinators. It groups recommendations under people-centred AI (assess whether AI is the right solution, avoid arbitrary discrimination, involve citizens), transparency and explainability (inform the public about AI tools, chatbots and AI-supported decisions), privacy and data use (comply with Law 19.628, do not enter personal or sensitive data into generative AI tools not contracted by the agency, follow security technical standards) and staff training. The Digital Government Division may request information to follow up implementation.",
+      "ai_governance_relevance": "Main cross-government guidance on public-sector and generative AI use.",
+      "source_url": "https://minciencia.gob.cl/uploads/filer_public/ae/9a/ae9a7ce7-807b-4781-9ac3-9b253bfbe735/of_n711_2023_dis_lin_ia_minciencia.pdf",
+      "official_pdf_url": "https://minciencia.gob.cl/uploads/filer_public/ae/9a/ae9a7ce7-807b-4781-9ac3-9b253bfbe735/of_n711_2023_dis_lin_ia_minciencia.pdf",
+      "official_webpage_url": null,
+      "language": "es",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "curl (browser user agent, --max-time 60): 10-page PDF read (pdftotext; scanned page 1 viewed as image: OF. CIRC. N° 711, Santiago 11 DIC 2023, from the Minister Secretary General of the Presidency and the Minister of Science).",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-a1853127ef21",
       "organization_id": "o-4c426939e9c0",
-      "lifecycle": "unverified",
-      "first_recorded": "2026-10-06",
-      "last_changed": null,
-      "subnational_unit": null
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-09d6db712820",
+      "official_title": "Resolución Exenta N° 372: Aprueba texto de las recomendaciones del Consejo para la Transparencia sobre transparencia algorítmica",
+      "english_title": "Exempt Resolution No. 372 approving the Council for Transparency's recommendations on algorithmic transparency",
+      "jurisdiction_id": "CHL",
+      "issuing_authority": "Council for Transparency (Consejo para la Transparencia)",
+      "publisher_name": "Council for Transparency",
+      "authority_type": "independent_body",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "transparency",
+        "public-sector",
+        "risk-assurance"
+      ],
+      "category": "transparency",
+      "subcategory": null,
+      "legal_status": "regulatory_opinion",
+      "lifecycle": "published",
+      "publication_date": "2024-08-30",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "In force as recommendations ('no derogado' in Ley Chile). The CPLT published a 'Guía para la adopción de las recomendaciones ... sobre transparencia algorítmica' (PDF on consejotransparencia.cl, file dated January 2025, no date printed). A binding General Instruction on active algorithmic transparency was being prepared (see leads).",
+      "scope": "Chile (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Resolution of 12 August 2024, published in the Diario Oficial on 30 August 2024, approving the Council for Transparency's recommendations on transparency of automated and semi-automated decision systems (SDA), defined broadly to include AI, machine learning and predictive systems that support or replace decisions by public bodies. It recommends that ministries, regional governments, municipalities, armed and security forces and other administrative bodies proactively publish information on SDAs, especially those affecting fundamental rights (e.g. subsidy allocation, school assignment, inspection or sanction processes), and sets criteria for handling reserve or secrecy in access-to-information requests about them.",
+      "ai_governance_relevance": "Chile's main algorithmic transparency standard for the public sector.",
+      "source_url": "https://www.bcn.cl/leychile/navegar?idNorma=1206232",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.consejotransparencia.cl/portal-de-transparencia/material-transparencia-algoritmica/",
+      "language": "es",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "legislation_portal",
+      "evidence_reference": "curl (browser user agent, --max-time 60) of the Ley Chile (Biblioteca del Congreso Nacional) official XML service obtxml?opt=7&idNorma=1206232: resolution text read (fechaPromulgacion 2024-08-12, fechaPublicacion 2024-08-30, 'no derogado'). CPLT adoption guide PDF (32 pages) also downloaded and read.",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-fdccfebacfc2",
+      "organization_id": "o-8ca78728144e",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-d418cf021767",
+      "official_title": "Directiva de Contratación Pública N° 44/2026: Recomendaciones para la adquisición de proyectos que incluyen ciencia de datos e inteligencia artificial (IA)",
+      "english_title": "Public Procurement Directive No. 44/2026: Recommendations for acquiring projects that include data science and artificial intelligence (AI)",
+      "jurisdiction_id": "CHL",
+      "issuing_authority": "Directorate of Public Procurement (ChileCompra), Ministry of Finance",
+      "publisher_name": "Directorate of Public Procurement (ChileCompra)",
+      "authority_type": "government",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "procurement",
+        "public-sector",
+        "risk-assurance"
+      ],
+      "category": "procurement",
+      "subcategory": null,
+      "legal_status": "administrative_guideline",
+      "lifecycle": "published",
+      "publication_date": "2026-03-12",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Directives are reference guidance for buyers (art. 10 of the procurement regulation). Resolution point 2 revokes the previous Directive 44 approved by Exempt Resolution 583-B (the 2026 text says 'de 2015', but the 2023 resolution itself is dated 7 December 2023).",
+      "scope": "Chile (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Exempt resolution (folio 233-B) of 12 March 2026 approving a new version of Directive 44, updated for Law 21.634 modernising Law 19.886 and its new regulation (Decree 661/2024). It guides public buyers procuring data science or AI solutions under any procurement method, especially projects with high technological complexity, personal or sensitive data or automated decisions, recommending multidisciplinary teams, pre-feasibility and risk assessment (privacy, bias, transparency), contract clauses for algorithmic audits, data protection impact assessments and information security, and explainability and citizen participation mechanisms.",
+      "ai_governance_relevance": "Current AI procurement guidance for all public buyers.",
+      "source_url": "https://www.chilecompra.cl/wp-content/uploads/2026/03/Directiva-44-Ciencia-de-Datos-IA.pdf",
+      "official_pdf_url": "https://www.chilecompra.cl/wp-content/uploads/2026/03/Directiva-44-Ciencia-de-Datos-IA.pdf",
+      "official_webpage_url": "https://www.chilecompra.cl/2026/03/chilecompra-actualiza-directiva-para-la-contratacion-de-proyectos-de-ciencia-de-datos-e-inteligencia-artificial/",
+      "language": "es",
+      "supersedes": [
+        "i-2ac8dd3fa945"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "curl (browser user agent, --max-time 60): 26-page PDF read (pdftotext); dated Santiago 12-03-2026; ChileCompra news page of March 2026 also read.",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-cfeb910a4ecf",
+      "organization_id": "o-72c4c385b906",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-2ac8dd3fa945",
+      "official_title": "Directiva de Contratación Pública N° 44: Recomendaciones para la adquisición de proyectos que incluyen ciencia de datos e inteligencia artificial (IA) (2023)",
+      "english_title": "Public Procurement Directive No. 44: Recommendations for acquiring projects that include data science and artificial intelligence (AI) (2023)",
+      "jurisdiction_id": "CHL",
+      "issuing_authority": "Directorate of Public Procurement (ChileCompra) (Exempt Resolution No. 583-B)",
+      "publisher_name": "Directorate of Public Procurement (ChileCompra)",
+      "authority_type": "government",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "procurement",
+        "historical"
+      ],
+      "category": "procurement",
+      "subcategory": null,
+      "legal_status": "administrative_guideline",
+      "lifecycle": "superseded",
+      "publication_date": "2023-12-07",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Revoked and replaced by Directive 44/2026 (12 March 2026).",
+      "scope": "Chile (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "First version of Directive 44, approved by Exempt Resolution 583-B of 7 December 2023, to identify and prevent risks in the ethical treatment of data when public bodies contract data science and AI projects, complementing the standard tender bases for such projects. It set recommendations for each project stage, from problem research to contract management, including plain-language information platforms on the model and cybersecurity measures.",
+      "ai_governance_relevance": "Superseded first AI procurement directive.",
+      "source_url": "https://www.chilecompra.cl/wp-content/uploads/2023/12/Directiva-Recomendaciones-proyectos-Ciencia-Datos-IA.pdf",
+      "official_pdf_url": "https://www.chilecompra.cl/wp-content/uploads/2023/12/Directiva-Recomendaciones-proyectos-Ciencia-Datos-IA.pdf",
+      "official_webpage_url": "https://www.chilecompra.cl/2023/12/nueva-directiva-de-chilecompra-entrega-recomendaciones-para-la-gestion-de-proyectos-de-inteligencia-artificial-o-ciencia-de-datos/",
+      "language": "es",
+      "supersedes": [],
+      "superseded_by": [
+        "i-d418cf021767"
+      ],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "curl (browser user agent, --max-time 60): 23-page PDF read (pdftotext); resolution dated Santiago 7 December 2023, Exempt Resolution 583-B.",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-b40e1df84306",
+      "organization_id": "o-72c4c385b906",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-7b612128af7f",
+      "official_title": "Aprueba formato tipo de bases administrativas para la adquisición de proyectos de ciencia de datos e inteligencia artificial (Resolución N° 60, de 2022)",
+      "english_title": "Resolution No. 60 approving standard administrative tender bases for acquiring data science and artificial intelligence projects",
+      "jurisdiction_id": "CHL",
+      "issuing_authority": "Directorate of Public Procurement (ChileCompra)",
+      "publisher_name": "Directorate of Public Procurement (ChileCompra)",
+      "authority_type": "government",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "procurement",
+        "ethics"
+      ],
+      "category": "procurement",
+      "subcategory": null,
+      "legal_status": "administrative_guideline",
+      "lifecycle": "published",
+      "publication_date": "2022-12-28",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Published January 2023. Not confirmed whether the template has been updated for the new procurement regulation (Decree 661/2024); no replacement found on chilecompra.cl.",
+      "scope": "Chile (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Resolution No. 60 of 28 December 2022 approving a standard-form set of administrative tender bases that public bodies can use to procure data science and AI projects. The template builds ethical requirements into the tender (developed with the Algoritmos Éticos project and piloted with FONASA and the Public Criminal Defender's Office), so that buyers can include transparency, bias and data-protection conditions in contracts.",
+      "ai_governance_relevance": "Model tender clauses for AI procurement.",
+      "source_url": "https://www.chilecompra.cl/wp-content/uploads/2023/01/Bases-Tipo-Ciencia-de-Datos.pdf",
+      "official_pdf_url": "https://www.chilecompra.cl/wp-content/uploads/2023/01/Bases-Tipo-Ciencia-de-Datos.pdf",
+      "official_webpage_url": "https://www.chilecompra.cl/2023/01/ya-se-encuentra-disponible-bases-tipo-para-licitar-proyectos-de-algoritmos-e-inteligencia-artificial-con-requisitos-eticos/",
+      "language": "es",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "curl (browser user agent, --max-time 60): 86-page PDF read (first pages via pdftotext: Resolution No. 60 of 28 December 2022); ChileCompra news page of January 2023 read.",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-311032ea9908",
+      "organization_id": "o-72c4c385b906",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-458b30624794",
+      "official_title": "PotencIA el aprendizaje: Preguntas para la reflexión y práctica de la Inteligencia Artificial generativa en contextos educativos",
+      "english_title": "Boost learning: Questions for reflection and practice on generative artificial intelligence in educational settings",
+      "jurisdiction_id": "CHL",
+      "issuing_authority": "Ministry of Education (Innovation Centre)",
+      "publisher_name": "Ministry of Education",
+      "authority_type": "ministry",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "sectoral",
+        "generative-ai",
+        "ethics"
+      ],
+      "category": "sectoral",
+      "subcategory": null,
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2025-03",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Launched 12 March 2025 for all schools; replaces in practice the 2023 teacher guide on ChatGPT (see leads).",
+      "scope": "Chile (national)",
+      "sectors": [
+        "education"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Guide for teachers and school teams, prepared by the Ministry of Education's Innovation Centre under the National AI Policy, on integrating generative AI into teaching creatively, critically and responsibly. It sets six principles with reflection questions for using generative AI to teach and learn (including ethical use, privacy and human-centred learning) and proposes practical guidelines and classroom uses, framed as questions rather than fixed rules.",
+      "ai_governance_relevance": "Education ministry's guidance on generative AI in schools.",
+      "source_url": "https://ciudadaniadigital.mineduc.cl/wp-content/uploads/2025/03/PotencIA-el-aprendizaje-IA-en-educacion.pdf",
+      "official_pdf_url": "https://ciudadaniadigital.mineduc.cl/wp-content/uploads/2025/03/PotencIA-el-aprendizaje-IA-en-educacion.pdf",
+      "official_webpage_url": "https://www.mineduc.cl/mineduc-lanza-guia-para-potenciar-el-aprendizaje-integrando-el-uso-de-la-inteligencia-artificial-en-contextos-educativos/",
+      "language": "es",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "curl to ciudadaniadigital.mineduc.cl failed (connection reset); WebFetch retrieved the 19-page PDF, read with pdftotext (cover: 'Documento elaborado por el Centro de Innovación, Ministerio de Educación. Marzo 2025'); mineduc.cl launch news (12 March 2025) read via curl.",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-3df76f460ac9",
+      "organization_id": "o-c82abdf8b7d0",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-d78c81060d6a",
+      "official_title": "Acta N° 244-2025: XXVIII Jornadas de Reflexión de la Corte Suprema; Acuerdo relativo al Código de Ética Judicial",
+      "english_title": "Record No. 244-2025: Supreme Court agreement on the Judicial Code of Ethics (article 17 on artificial intelligence)",
+      "jurisdiction_id": "CHL",
+      "issuing_authority": "Supreme Court of Chile (Full Court)",
+      "publisher_name": "Supreme Court of Chile",
+      "authority_type": "judiciary",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "sectoral",
+        "ethics",
+        "generative-ai"
+      ],
+      "category": "sectoral",
+      "subcategory": null,
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2025-11-19",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "In force as ethical guidance; the code states its prescriptions do not entail legal obligations and are outside the disciplinary regime.",
+      "scope": "Chile (national)",
+      "sectors": [
+        "justice"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Supreme Court agreement of 10 November 2025 (published in the Diario Oficial on 19 November 2025) adopting the Judicial Code of Ethics for judges and others exercising jurisdiction. Its article 17 on responsibility in the use of AI and new technologies states that judicial decisions are always human and non-delegable, requires judges to keep meaningful control over and understand the tools they use, lists risks (data leaks, bias, opaque or inaccurate outputs, dependence on vendors), and gives practical rules such as not entering case data into unauthorised public tools, independently verifying AI outputs and citations, and recording any AI support used. The code is ethical guidance and expressly creates no legal or disciplinary obligations.",
+      "ai_governance_relevance": "Judiciary's standard for judges' use of AI.",
+      "source_url": "https://www.bcn.cl/leychile/navegar?idNorma=1218674",
+      "official_pdf_url": null,
+      "official_webpage_url": null,
+      "language": "es",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "legislation_portal",
+      "evidence_reference": "curl (browser user agent, --max-time 60) of the Ley Chile (Biblioteca del Congreso Nacional) official XML service obtxml?opt=7&idNorma=1218674: full text read (fechaPromulgacion 2025-11-10, fechaPublicacion 2025-11-19, 'no derogado'); article 17 and scope clause checked.",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-62b76663d7d3",
+      "organization_id": "o-badd11097a62",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
     }
   ],
   "organizations": [
     {
       "id": "o-4c426939e9c0",
       "jurisdiction_id": "CHL",
-      "name": "www.minciencia.gob.cl",
-      "publisher_name_verified": false,
-      "ai_governance_role": "Publisher of listed official material; complete institutional mandate and statutory responsibilities require review.",
-      "source_url": "https://www.minciencia.gob.cl/areas/inteligencia-artificial/Inteligencia-Artificial/politica-Nacional-Inteligencia-Artificial-Plan-Accion/",
-      "authority_type": null,
-      "government_level": null
+      "name": "Ministry of Science, Technology, Knowledge and Innovation",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Lead ministry for AI policy: issued the 2021 National AI Policy (Decree 20/2021) and its 2024 update (Decree 12/2024) with the action plan coordinated across 14 ministries, co-issued Circular Letter 711/2023 on AI use in the public sector, and sponsored the AI bill (Bulletin 16821-19).",
+      "source_url": "https://www.minciencia.gob.cl/areas/inteligencia-artificial/politica-nacional-de-inteligencia-artificial/",
+      "authority_type": "ministry",
+      "government_level": "national"
+    },
+    {
+      "id": "o-8ca78728144e",
+      "jurisdiction_id": "CHL",
+      "name": "Council for Transparency",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Autonomous public-law body overseeing the Transparency Law; issued the 2024 recommendations on algorithmic transparency for automated and semi-automated decision systems used by public bodies, and a 2025 guide on adopting them.",
+      "source_url": "https://www.consejotransparencia.cl/portal-de-transparencia/material-transparencia-algoritmica/",
+      "authority_type": "independent_body",
+      "government_level": "national"
+    },
+    {
+      "id": "o-72c4c385b906",
+      "jurisdiction_id": "CHL",
+      "name": "Directorate of Public Procurement (ChileCompra)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Central procurement authority under the Ministry of Finance; issued Procurement Directive 44 on acquiring data science and AI projects (2023, replaced 2026) and standard tender bases for data science and AI projects (2022).",
+      "source_url": "https://www.chilecompra.cl/",
+      "authority_type": "government",
+      "government_level": "national"
+    },
+    {
+      "id": "o-c82abdf8b7d0",
+      "jurisdiction_id": "CHL",
+      "name": "Ministry of Education",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Issued guidance for teachers on generative AI in education (PotencIA el aprendizaje, March 2025) through its Innovation Centre.",
+      "source_url": "https://www.mineduc.cl/",
+      "authority_type": "ministry",
+      "government_level": "national"
+    },
+    {
+      "id": "o-badd11097a62",
+      "jurisdiction_id": "CHL",
+      "name": "Supreme Court of Chile",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Adopted the Judicial Code of Ethics (Acta 244-2025), whose article 17 sets ethical standards for judges' use of AI.",
+      "source_url": "https://www.bcn.cl/leychile/navegar?idNorma=1218674",
+      "authority_type": "judiciary",
+      "government_level": "national"
+    },
+    {
+      "id": "o-df0bc80cf91b",
+      "jurisdiction_id": "CHL",
+      "name": "National Congress of Chile",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Enacted Law 21.719 on personal data protection (automated decisions, profiling, impact assessments); is considering the AI bill (Bulletins 16821-19 and 15869-19, Senate second reading) and a deepfake bill (Bulletin 17795-19).",
+      "source_url": "https://www.senado.cl/",
+      "authority_type": "legislature",
+      "government_level": "national"
     }
   ],
   "sources": [
     {
-      "id": "s-4558e9fd2879",
-      "url": "https://www.minciencia.gob.cl/areas/inteligencia-artificial/Inteligencia-Artificial/politica-Nacional-Inteligencia-Artificial-Plan-Accion/",
+      "id": "s-991222559606",
+      "url": "https://www.bcn.cl/leychile/navegar?idNorma=1210664",
       "jurisdiction_ids": [
         "CHL"
       ],
       "source_institutions": [
-        "www.minciencia.gob.cl"
+        "Ministry of Science, Technology, Knowledge and Innovation"
       ],
       "instrument_ids": [
         "i-1476b34c4d58"
       ],
       "categories_reviewed": [
-        "strategy"
+        "strategy",
+        "government-governance",
+        "ethics",
+        "generative-ai"
       ],
-      "date_reviewed": "2026-10-06",
-      "checked_date": "2026-10-06",
-      "check_method": "GET; first 1 MiB; 14-second timeout",
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60) of the Ley Chile (Biblioteca del Congreso Nacional) official XML service obtxml?opt=7&idNorma=1210664: full decree text read (TituloNorma, Organismo, fechaPromulgacion 2024-04-11, fechaPublicacion 2025-01-28, derogado='no derogado'; article II repeals Decree 20/2021). MinCiencia policy and action-plan pages also read (download links point to Google Drive files named by the ministry's page).",
       "http_status": 200,
-      "final_url": "https://www.minciencia.gob.cl/areas/inteligencia-artificial/Inteligencia-Artificial/politica-Nacional-Inteligencia-Artificial-Plan-Accion/",
+      "final_url": "https://www.bcn.cl/leychile/navegar?idNorma=1210664",
       "link_status": "reachable",
-      "page_title": "MinCiencia",
+      "page_title": null,
       "document_language": "es",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/xml"
+    },
+    {
+      "id": "s-67b1dbb16a68",
+      "url": "https://www.bcn.cl/leychile/navegar?idNorma=1169399",
+      "jurisdiction_ids": [
+        "CHL"
+      ],
+      "source_institutions": [
+        "Ministry of Science, Technology, Knowledge and Innovation"
+      ],
+      "instrument_ids": [
+        "i-848002f30bf6"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "historical",
+        "ethics"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60) of the Ley Chile (Biblioteca del Congreso Nacional) official XML service obtxml?opt=7&idNorma=1169399: decree text read (fechaPromulgacion 2021-09-20, fechaPublicacion 2021-12-03, derogado='derogado'); 78-page policy PDF on minciencia.gob.cl downloaded and read (pdftotext).",
+      "http_status": 200,
+      "final_url": "https://www.bcn.cl/leychile/navegar?idNorma=1169399",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "es",
+      "error": null,
+      "content_type": "text/xml"
+    },
+    {
+      "id": "s-83e6765931c0",
+      "url": "https://www.bcn.cl/leychile/navegar?idNorma=1209272",
+      "jurisdiction_ids": [
+        "CHL"
+      ],
+      "source_institutions": [
+        "National Congress of Chile"
+      ],
+      "instrument_ids": [
+        "i-fd45ab58c92c"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60) of the Ley Chile (Biblioteca del Congreso Nacional) official XML service obtxml?opt=7&idNorma=1209272: full law text read (fechaPromulgacion 2024-11-25, fechaPublicacion 2024-12-13); art. 8 bis and first transitory article checked.",
+      "http_status": 200,
+      "final_url": "https://www.bcn.cl/leychile/navegar?idNorma=1209272",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "es",
+      "error": null,
+      "content_type": "text/xml"
+    },
+    {
+      "id": "s-a1853127ef21",
+      "url": "https://minciencia.gob.cl/uploads/filer_public/ae/9a/ae9a7ce7-807b-4781-9ac3-9b253bfbe735/of_n711_2023_dis_lin_ia_minciencia.pdf",
+      "jurisdiction_ids": [
+        "CHL"
+      ],
+      "source_institutions": [
+        "Ministry of Science, Technology, Knowledge and Innovation"
+      ],
+      "instrument_ids": [
+        "i-f5d19c64ea5b"
+      ],
+      "categories_reviewed": [
+        "public-sector",
+        "generative-ai",
+        "ethics",
+        "transparency"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): 10-page PDF read (pdftotext; scanned page 1 viewed as image: OF. CIRC. N° 711, Santiago 11 DIC 2023, from the Minister Secretary General of the Presidency and the Minister of Science).",
+      "http_status": 200,
+      "final_url": "https://minciencia.gob.cl/uploads/filer_public/ae/9a/ae9a7ce7-807b-4781-9ac3-9b253bfbe735/of_n711_2023_dis_lin_ia_minciencia.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "es",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-fdccfebacfc2",
+      "url": "https://www.bcn.cl/leychile/navegar?idNorma=1206232",
+      "jurisdiction_ids": [
+        "CHL"
+      ],
+      "source_institutions": [
+        "Council for Transparency"
+      ],
+      "instrument_ids": [
+        "i-09d6db712820"
+      ],
+      "categories_reviewed": [
+        "transparency",
+        "public-sector",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60) of the Ley Chile (Biblioteca del Congreso Nacional) official XML service obtxml?opt=7&idNorma=1206232: resolution text read (fechaPromulgacion 2024-08-12, fechaPublicacion 2024-08-30, 'no derogado'). CPLT adoption guide PDF (32 pages) also downloaded and read.",
+      "http_status": 200,
+      "final_url": "https://www.bcn.cl/leychile/navegar?idNorma=1206232",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "es",
+      "error": null,
+      "content_type": "text/xml"
+    },
+    {
+      "id": "s-cfeb910a4ecf",
+      "url": "https://www.chilecompra.cl/wp-content/uploads/2026/03/Directiva-44-Ciencia-de-Datos-IA.pdf",
+      "jurisdiction_ids": [
+        "CHL"
+      ],
+      "source_institutions": [
+        "Directorate of Public Procurement (ChileCompra)"
+      ],
+      "instrument_ids": [
+        "i-d418cf021767"
+      ],
+      "categories_reviewed": [
+        "procurement",
+        "public-sector",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): 26-page PDF read (pdftotext); dated Santiago 12-03-2026; ChileCompra news page of March 2026 also read.",
+      "http_status": 200,
+      "final_url": "https://www.chilecompra.cl/wp-content/uploads/2026/03/Directiva-44-Ciencia-de-Datos-IA.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "es",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-b40e1df84306",
+      "url": "https://www.chilecompra.cl/wp-content/uploads/2023/12/Directiva-Recomendaciones-proyectos-Ciencia-Datos-IA.pdf",
+      "jurisdiction_ids": [
+        "CHL"
+      ],
+      "source_institutions": [
+        "Directorate of Public Procurement (ChileCompra)"
+      ],
+      "instrument_ids": [
+        "i-2ac8dd3fa945"
+      ],
+      "categories_reviewed": [
+        "procurement",
+        "historical"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): 23-page PDF read (pdftotext); resolution dated Santiago 7 December 2023, Exempt Resolution 583-B.",
+      "http_status": 200,
+      "final_url": "https://www.chilecompra.cl/wp-content/uploads/2023/12/Directiva-Recomendaciones-proyectos-Ciencia-Datos-IA.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "es",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-311032ea9908",
+      "url": "https://www.chilecompra.cl/wp-content/uploads/2023/01/Bases-Tipo-Ciencia-de-Datos.pdf",
+      "jurisdiction_ids": [
+        "CHL"
+      ],
+      "source_institutions": [
+        "Directorate of Public Procurement (ChileCompra)"
+      ],
+      "instrument_ids": [
+        "i-7b612128af7f"
+      ],
+      "categories_reviewed": [
+        "procurement",
+        "ethics"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): 86-page PDF read (first pages via pdftotext: Resolution No. 60 of 28 December 2022); ChileCompra news page of January 2023 read.",
+      "http_status": 200,
+      "final_url": "https://www.chilecompra.cl/wp-content/uploads/2023/01/Bases-Tipo-Ciencia-de-Datos.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "es",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-3df76f460ac9",
+      "url": "https://ciudadaniadigital.mineduc.cl/wp-content/uploads/2025/03/PotencIA-el-aprendizaje-IA-en-educacion.pdf",
+      "jurisdiction_ids": [
+        "CHL"
+      ],
+      "source_institutions": [
+        "Ministry of Education"
+      ],
+      "instrument_ids": [
+        "i-458b30624794"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "generative-ai",
+        "ethics"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl to ciudadaniadigital.mineduc.cl failed (connection reset); WebFetch retrieved the 19-page PDF, read with pdftotext (cover: 'Documento elaborado por el Centro de Innovación, Ministerio de Educación. Marzo 2025'); mineduc.cl launch news (12 March 2025) read via curl.",
+      "http_status": 200,
+      "final_url": "https://ciudadaniadigital.mineduc.cl/wp-content/uploads/2025/03/PotencIA-el-aprendizaje-IA-en-educacion.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "es",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-62b76663d7d3",
+      "url": "https://www.bcn.cl/leychile/navegar?idNorma=1218674",
+      "jurisdiction_ids": [
+        "CHL"
+      ],
+      "source_institutions": [
+        "Supreme Court of Chile"
+      ],
+      "instrument_ids": [
+        "i-d78c81060d6a"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "ethics",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60) of the Ley Chile (Biblioteca del Congreso Nacional) official XML service obtxml?opt=7&idNorma=1218674: full text read (fechaPromulgacion 2025-11-10, fechaPublicacion 2025-11-19, 'no derogado'); article 17 and scope clause checked.",
+      "http_status": 200,
+      "final_url": "https://www.bcn.cl/leychile/navegar?idNorma=1218674",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "es",
+      "error": null,
+      "content_type": "text/xml"
     }
   ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "CHL",
     "country": "Chile",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -132,56 +908,479 @@
       "transparency"
     ],
     "categories_with_findings": [
-      "strategy"
-    ],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
       "binding-law",
-      "strategy",
-      "government-governance",
-      "ethics",
-      "risk-assurance",
-      "public-sector",
-      "procurement",
-      "cyber-security",
       "data-privacy",
-      "transparency",
+      "ethics",
+      "generative-ai",
+      "government-governance",
+      "historical",
+      "procurement",
+      "public-sector",
+      "risk-assurance",
+      "sectoral",
+      "strategy",
+      "transparency"
+    ],
+    "categories_where_no_material_was_found": [
+      "cyber-security",
       "standards",
       "sandbox",
       "index-readiness",
-      "sectoral",
-      "generative-ai",
       "drafts",
-      "international",
-      "historical"
+      "international"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Chile \"inteligencia artificial\" (estrategia OR regulación OR ética) government ministry official",
       "Chile \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Chile government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Chile \"inteligencia artificial\" cybersecurity authority secure development safety guidelines",
-      "Chile privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Chile privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "bcn.cl leychile decreto aprueba \"Política Nacional de Inteligencia Artificial\"",
+      "\"Política Nacional de Inteligencia Artificial\" decreto 12 2024 Ministerio de Ciencia (bcn.cl, diariooficial.interior.gob.cl, minciencia.gob.cl)",
+      "Ley Chile \"Decreto 20\" 2021 \"Política Nacional de Inteligencia Artificial\"",
+      "Ley 21719 protección datos personales bcn leychile decisiones automatizadas",
+      "Chile proyecto de ley regula sistemas de inteligencia artificial boletín 16821-19 estado 2026",
+      "Chile gobierno digital lineamientos uso inteligencia artificial sector público circular 2024 2025 digital.gob.cl",
+      "inteligencia artificial resolución OR circular OR norma 2025 2026 CMF OR Superintendencia OR ChileCompra OR Mineduc OR CPLT",
+      "ChileCompra directiva inteligencia artificial ciencia de datos formulación de bases recomendaciones",
+      "Mineduc orientaciones uso inteligencia artificial en educación documento oficial",
+      "\"PotencIA el Aprendizaje\" guía Mineduc PDF inteligencia artificial generativa",
+      "Consejo para la Transparencia guía transparencia algorítmica 2025 decisiones automatizadas",
+      "ley publicada Diario Oficial inteligencia artificial deepfake OR ultrafalsificación OR contenido sintético Chile",
+      "ANCI Agencia Nacional de Ciberseguridad inteligencia artificial recomendaciones OR guía",
+      "CMF Chile inteligencia artificial norma OR documento de discusión entidades supervisadas 2025 2026",
+      "Gobierno Digital Chile guía inteligencia artificial generativa servicios públicos 2025 OR 2026",
+      "\"Consejo de Transformación Digital e Inteligencia Artificial\" Chile decreto crea",
+      "Chile Convenio 108 Consejo de Europa adhesión protección de datos ratificación",
+      "Ministerio de Ciencia 2026 inteligencia artificial nueva política OR plan OR decreto",
+      "digital.gob.cl site search: inteligencia artificial; digital.gob.cl/biblioteca (estándares y guías, estrategias, regulación)",
+      "tramitacion.senado.cl boletín 16821 and 17795"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. camara.cl Cloudflare 403 (Senate tramitación service used); anci.gob.cl search 403; CoE treaty office 403; INN catalogue not checked. i-1476b34c4d58 re-identified as Decree 12/2024 (source moved to Ley Chile; old MinCiencia source pruned); o-4c426939e9c0 renamed. Law 21.719 effective 2026-12-01 computed from first transitory article. Res. 583-B dated 7 Dec 2023 (Directive 44/2026 says 'de 2015'). Supreme Court Acta 244-2025 kept: art. 17 is a dedicated AI standard. CMF internal AI policy fails scope test (lead). Google Drive copies of policy/action plan not opened. Convention 108 act not found on Ley Chile. Units covered: Law: Ley Chile (BCN) official XML service searched for AI decrees/laws: Decree 20/2021 and Decree 12/2024 (AI policy), Law 21.719 (automated decisions), CPLT Res. 372/2024, Supreme Court Acta 244-2025 recorded. No enacted AI-specific law or deepfake offence found; AI bill 16821-19 and deepfake bill 17795-19 pending (Senate tramitación service) -> leads. camara.cl blocked automated access (Cloudflare 403).; Government: MinCiencia AI pages (policy, action plan, 2021 policy PDF), SEGPRES/MinCiencia Circular 711/2023, digital.gob.cl library (Government Digital Secretariat): no separate AI or generative-AI guideline found beyond Circular 711; council minutes -> lead.; Ministries: Education: PotencIA guide (recorded), 2023 ChatGPT guide (lead). Finance: ChileCompra Directive 44/2026, 2023 directive, standard AI tender bases (recorded). Justice: judiciary ethics code (Supreme Court, recorded). Health, defence, labour, interior, tax (SII): searched, no ministry-specific AI governance document found; their AI commitments sit in the policy action plan.; Regulators: CPLT (algorithmic transparency recommendations recorded; guide and pending general instruction -> leads). CMF: only internal AI policy (lead), no AI rule for supervised entities. ANCI (anci.gob.cl returned 403; no AI guidance found by search). Data protection agency under Law 21.719 not yet operating (law in force 1 Dec 2026): no AI guidance. Central bank, telecom (Subtel), competition (FNE): searched, nothing AI-specific found. Standards body (INN): not searched in depth; no ISO/IEC 42001 adoption found.. Not reached: camara.cl bill pages (Cloudflare 403; Senate tramitación service used instead); anci.gob.cl site search (403); Council of Europe treaty office (403) for Convention 108 status; INN national standards catalogue (ISO/IEC 42001 adoption) not checked directly. Could not verify: Convention 108: no Chilean accession/ratification act found on Ley Chile and Chile is not believed to be a party; CoE treaty office blocked (403). Set to null.; Whether ChileCompra's 2022 standard AI tender bases (Res. 60) were updated after the new procurement regulation (Decree 661/2024).; Google Drive copies of the 2024 policy PDF, action plan and results report (linked from MinCiencia) were not opened; policy content verified from the decree text on Ley Chile.. cyber-security, standards, sandbox, index-readiness, drafts, international: no material found.",
     "discovery_result_count": 11,
     "focused_result_count": 12
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-60950aecd9eb",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "CHL",
+      "instrument_id": "i-1476b34c4d58",
+      "title": "Decree 12 approving the update of the National Artificial Intelligence Policy (2024 update)",
+      "detail": "Official source moved.",
+      "from": "https://www.minciencia.gob.cl/areas/inteligencia-artificial/Inteligencia-Artificial/politica-Nacional-Inteligencia-Artificial-Plan-Accion/",
+      "to": "https://www.bcn.cl/leychile/navegar?idNorma=1210664",
+      "source_url": "https://www.bcn.cl/leychile/navegar?idNorma=1210664",
+      "needs_review": false
+    },
+    {
+      "id": "c-2bfe631a2f76",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "CHL",
+      "instrument_id": "i-1476b34c4d58",
+      "title": "Decree 12 approving the update of the National Artificial Intelligence Policy (2024 update)",
+      "detail": "Record updated: categories, issuing authority, legal status, lifecycle, publication date, scope, summary, title.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-cb4f6bd1587a",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "CHL",
+      "instrument_id": "i-848002f30bf6",
+      "title": "Decree 20 approving the National Artificial Intelligence Policy (2021)",
+      "detail": "Added to the radar (published 2021-12-03).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.bcn.cl/leychile/navegar?idNorma=1169399",
+      "needs_review": false
+    },
+    {
+      "id": "c-2b1e01b2879d",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "CHL",
+      "instrument_id": "i-fd45ab58c92c",
+      "title": "Law No. 21.719 regulating the protection and processing of personal data and creating the Personal Data Protection Agency",
+      "detail": "Added to the radar (published 2024-12-13).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.bcn.cl/leychile/navegar?idNorma=1209272",
+      "needs_review": false
+    },
+    {
+      "id": "c-c82ed3b72963",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "CHL",
+      "instrument_id": "i-f5d19c64ea5b",
+      "title": "Circular Letter No. 711: Guidelines for the use of artificial intelligence tools in the public sector",
+      "detail": "Added to the radar (published 2023-12-11).",
+      "from": null,
+      "to": null,
+      "source_url": "https://minciencia.gob.cl/uploads/filer_public/ae/9a/ae9a7ce7-807b-4781-9ac3-9b253bfbe735/of_n711_2023_dis_lin_ia_minciencia.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-b2f5addb7e43",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "CHL",
+      "instrument_id": "i-09d6db712820",
+      "title": "Exempt Resolution No. 372 approving the Council for Transparency's recommendations on algorithmic transparency",
+      "detail": "Added to the radar (published 2024-08-30).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.bcn.cl/leychile/navegar?idNorma=1206232",
+      "needs_review": false
+    },
+    {
+      "id": "c-c6b5c9d96fe3",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "CHL",
+      "instrument_id": "i-d418cf021767",
+      "title": "Public Procurement Directive No. 44/2026: Recommendations for acquiring projects that include data science and artificial intelligence (AI)",
+      "detail": "Added to the radar (published 2026-03-12).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.chilecompra.cl/wp-content/uploads/2026/03/Directiva-44-Ciencia-de-Datos-IA.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-10d0235e99c9",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "CHL",
+      "instrument_id": "i-2ac8dd3fa945",
+      "title": "Public Procurement Directive No. 44: Recommendations for acquiring projects that include data science and artificial intelligence (AI) (2023)",
+      "detail": "Added to the radar (published 2023-12-07).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.chilecompra.cl/wp-content/uploads/2023/12/Directiva-Recomendaciones-proyectos-Ciencia-Datos-IA.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-b4666d660b6c",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "CHL",
+      "instrument_id": "i-7b612128af7f",
+      "title": "Resolution No. 60 approving standard administrative tender bases for acquiring data science and artificial intelligence projects",
+      "detail": "Added to the radar (published 2022-12-28).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.chilecompra.cl/wp-content/uploads/2023/01/Bases-Tipo-Ciencia-de-Datos.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-69d7d050a4bc",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "CHL",
+      "instrument_id": "i-458b30624794",
+      "title": "Boost learning: Questions for reflection and practice on generative artificial intelligence in educational settings",
+      "detail": "Added to the radar (published 2025-03).",
+      "from": null,
+      "to": null,
+      "source_url": "https://ciudadaniadigital.mineduc.cl/wp-content/uploads/2025/03/PotencIA-el-aprendizaje-IA-en-educacion.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-ae6bc54e6efd",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "CHL",
+      "instrument_id": "i-d78c81060d6a",
+      "title": "Record No. 244-2025: Supreme Court agreement on the Judicial Code of Ethics (article 17 on artificial intelligence)",
+      "detail": "Added to the radar (published 2025-11-19).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.bcn.cl/leychile/navegar?idNorma=1218674",
+      "needs_review": false
+    },
+    {
+      "id": "c-ce0f3e33ad1d",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "CHL",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 10 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-9ac7a2a81441",
+      "date": "2026-03-12",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "revised",
+      "jurisdiction_id": "CHL",
+      "instrument_id": "i-d418cf021767",
+      "title": "ChileCompra Directive 44/2026 replaces 2023 version",
+      "detail": "New Directive 44/2026 approved, revoking the 2023 directive.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.chilecompra.cl/wp-content/uploads/2026/03/Directiva-44-Ciencia-de-Datos-IA.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-b36ac9e19e58",
+      "date": "2026-03-12",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "superseded",
+      "jurisdiction_id": "CHL",
+      "instrument_id": "i-2ac8dd3fa945",
+      "title": "2023 AI procurement directive revoked",
+      "detail": "Directive 44/2026 revokes Exempt Resolution 583-B.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.chilecompra.cl/wp-content/uploads/2026/03/Directiva-44-Ciencia-de-Datos-IA.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-eefcd242409d",
+      "date": "2025-11-19",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "CHL",
+      "instrument_id": "i-d78c81060d6a",
+      "title": "Judicial Code of Ethics with AI article published",
+      "detail": "Supreme Court Acta 244-2025 published in the Diario Oficial; article 17 covers AI use by judges.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.bcn.cl/leychile/navegar?idNorma=1218674",
+      "needs_review": false
+    },
+    {
+      "id": "c-c91790f444bb",
+      "date": "2025-01-28",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "CHL",
+      "instrument_id": "i-1476b34c4d58",
+      "title": "Updated National AI Policy (Decree 12) published",
+      "detail": "Decree 12 of 11 April 2024 approving the update of the National AI Policy published in the Diario Oficial; it repeals Decree 20/2021.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.bcn.cl/leychile/navegar?idNorma=1210664",
+      "needs_review": false
+    },
+    {
+      "id": "c-53b3fcc218cd",
+      "date": "2025-01-28",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "superseded",
+      "jurisdiction_id": "CHL",
+      "instrument_id": "i-848002f30bf6",
+      "title": "2021 National AI Policy repealed",
+      "detail": "Decree 12 (published 28 January 2025) repeals Decree 20/2021.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.bcn.cl/leychile/navegar?idNorma=1210664",
+      "needs_review": false
+    },
+    {
+      "id": "c-d09d7d973004",
+      "date": "2024-12-13",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "CHL",
+      "instrument_id": "i-fd45ab58c92c",
+      "title": "Personal Data Protection Law 21.719 published",
+      "detail": "Law 21.719 reforming Law 19.628 (automated decisions and profiling, impact assessments, new Agency) published in the Diario Oficial.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.bcn.cl/leychile/navegar?idNorma=1209272",
+      "needs_review": false
+    },
+    {
+      "id": "c-b0335a252155",
+      "date": "2024-08-30",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "CHL",
+      "instrument_id": "i-09d6db712820",
+      "title": "CPLT algorithmic transparency recommendations published",
+      "detail": "Exempt Resolution 372 of 12 August 2024 published in the Diario Oficial.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.bcn.cl/leychile/navegar?idNorma=1206232",
+      "needs_review": false
+    },
+    {
+      "id": "c-36aa7a74ae49",
+      "date": "2023-12-11",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "CHL",
+      "instrument_id": "i-f5d19c64ea5b",
+      "title": "Guidelines for AI tools in the public sector issued",
+      "detail": "SEGPRES and MinCiencia Circular Letter 711 sent to 309 state bodies.",
+      "from": null,
+      "to": null,
+      "source_url": "https://minciencia.gob.cl/uploads/filer_public/ae/9a/ae9a7ce7-807b-4781-9ac3-9b253bfbe735/of_n711_2023_dis_lin_ia_minciencia.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-d999da868de7",
+      "date": "2023-12-07",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "CHL",
+      "instrument_id": "i-2ac8dd3fa945",
+      "title": "ChileCompra Directive 44 on data science and AI procurement",
+      "detail": "Exempt Resolution 583-B approves Directive 44.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.chilecompra.cl/wp-content/uploads/2023/12/Directiva-Recomendaciones-proyectos-Ciencia-Datos-IA.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-39f89b350d4c",
+      "date": "2022-12-28",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "CHL",
+      "instrument_id": "i-7b612128af7f",
+      "title": "Standard tender bases for data science and AI projects approved",
+      "detail": "ChileCompra Resolution No. 60.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.chilecompra.cl/wp-content/uploads/2023/01/Bases-Tipo-Ciencia-de-Datos.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-d80de5bcf9bd",
+      "date": "2021-12-03",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "CHL",
+      "instrument_id": "i-848002f30bf6",
+      "title": "National AI Policy (Decree 20) published",
+      "detail": "Decree 20/2021 of MinCiencia approving Chile's first National AI Policy published in the Diario Oficial.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.bcn.cl/leychile/navegar?idNorma=1169399",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Proyecto de ley que regula los sistemas de inteligencia artificial (Boletín N° 16821-19, refundido con Boletín N° 15869-19)",
+      "english_title": "Bill regulating artificial intelligence systems (Bulletins 16821-19 and 15869-19)",
+      "issuing_authority": "Executive (MinCiencia) / National Congress",
+      "note": "Pending. Presidential message entered 7 May 2024; risk-based framework (unacceptable, high, limited, minimal risk). Chamber of Deputies approved it in general on 4 Aug 2025 and dispatched it to the Senate in Oct 2025; per the Senate tramitación service (checked 11 Oct 2026) it is in second constitutional reading, first report of the Senate Committee on Challenges of the Future, Science, Technology and Innovation; status 'En tramitación'. Record the law once published. https://tramitacion.senado.cl/wspublico/tramitacion.php?boletin=16821",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Proyecto de ley que regula la creación y difusión de imitaciones digitales realistas de la imagen, cuerpo o voz de las personas, generadas mediante inteligencia artificial (Boletín N° 17795-19)",
+      "english_title": "Bill regulating realistic AI-generated digital imitations (deepfakes) of people's image, body or voice",
+      "issuing_authority": "Chamber of Deputies (motion)",
+      "note": "Pending. Entered 21 Aug 2025; approved in general by the Chamber in July 2026; per the Senate tramitación service (11 Oct 2026) in first constitutional reading, second report of the Chamber's Science and Technology Committee. https://tramitacion.senado.cl/wspublico/tramitacion.php?boletin=17795",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Mociones sobre etiquetado de contenido generado por IA (Senado, 2025)",
+      "english_title": "Senate motions on labelling AI-generated content",
+      "issuing_authority": "Senate (motions)",
+      "note": "Two 2025 Senate motions (AI-content labels 'GENERADO POR IA' with metadata/watermarks; distinctive mark for AI applications) reported in the press; bulletin numbers and status not verified on senado.cl.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Instrucción General sobre transparencia activa de algoritmos (Consejo para la Transparencia)",
+      "english_title": "General Instruction on active algorithmic transparency (Council for Transparency)",
+      "issuing_authority": "Council for Transparency",
+      "note": "CPLT announced collaborative work (with Universidad Adolfo Ibáñez) toward a binding General Instruction on algorithmic transparency; not found as issued on consejotransparencia.cl (its 2026 consolidated active-transparency instruction, Res. Ex. 80/2026, contains no algorithm provisions). Also: CPLT 'Guía para la adopción de las recomendaciones ... sobre transparencia algorítmica' (PDF, Jan 2025, undated text) https://www.consejotransparencia.cl/wp-content/uploads/destacados/2025/03/GUIA-Transparencia-Algoritmica_ene2025_v3.pdf-copia.pdf",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Política de Inteligencia Artificial de la Comisión para el Mercado Financiero",
+      "english_title": "Financial Market Commission internal AI policy",
+      "issuing_authority": "Financial Market Commission (CMF)",
+      "note": "Approved at CMF Council ordinary session 443 of 8 May 2025 (per CMF documents); governs the CMF's own use of AI, not supervised entities, so internal use (scope test). No AI-specific rule for supervised entities found in CMF normativa search.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Consejo de Transformación Digital e Inteligencia Artificial",
+      "english_title": "Digital Transformation and AI Council",
+      "issuing_authority": "Government Digital Secretariat (Ministry of Finance)",
+      "note": "digital.gob.cl published minutes of a council session on digital identity (19 Aug 2026). The council's founding instrument (decree or resolution) was not found; record it if it is an AI governance body's founding act. https://digital.gob.cl/biblioteca/regulacion/minuta-consejo-de-transformacion-digital-e-inteligencia-artificial-vision-del-futuro-de-la-identidad-digital-en-chile/",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Guía para docentes: cómo usar ChatGPT para potenciar el aprendizaje activo",
+      "english_title": "Teacher guide: how to use ChatGPT to boost active learning",
+      "issuing_authority": "Ministry of Education",
+      "note": "2023 Mineduc teacher guide on ChatGPT (ciudadaniadigital.mineduc.cl); site refused curl connections and exact publication date not confirmed; superseded in practice by 'PotencIA el aprendizaje' (2025).",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Plan de Acción de la Política Nacional de Inteligencia Artificial (2024)",
+      "english_title": "Action Plan of the National AI Policy (2024)",
+      "issuing_authority": "Ministry of Science, Technology, Knowledge and Innovation",
+      "note": "177 initiatives across 14 ministries; linked from the MinCiencia policy page as a Google Drive file and treated as part of the policy record (i-1476b34c4d58); the Drive files were not opened. Ministry-level AI measures (education curricula, SME courses, finance-ministry ethics training) sit in this plan rather than in separate ministry instruments.",
+      "found": "2026-10-12"
+    }
+  ]
 }

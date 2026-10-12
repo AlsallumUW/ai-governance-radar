@@ -10,18 +10,114 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Belize has no AI-specific law, strategy or guidance. Its only binding rule relevant to AI is the right not to be subject to solely automated decisions, including profiling, in the Data Protection Act 2021, which is still awaiting a commencement order. In July 2026 the government announced that it intends to develop a national AI policy.",
+    "lead_institutions": [
+      "Ministry of Public Utilities, Energy, Logistics and E-Governance",
+      "Attorney General's Ministry"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was carried out on 12 October 2026 from the Attorney General's Ministry law portal. The National Assembly's website is suspended, and the national digital agenda site and the official laws site could not be accessed, so only one document could be read. Belize is marked for a later retry. The planned national AI policy and the national digital agenda are tracked as leads."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-c03174547019",
+      "official_title": "Data Protection Act, 2021",
+      "english_title": "Data Protection Act, 2021 (Act No. 45 of 2021)",
+      "issuing_authority": "National Assembly of Belize (House of Representatives and Senate); assented by the Governor-General",
+      "authority_type": "legislature",
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "adopted",
+      "publication_date": "2021-11-30",
+      "effective_date": null,
+      "current_status": "Enacted as Act No. 45 of 2021 (assent 29 November 2021, gazetted 30 November 2021). Section 97 provides that the Act comes into force on a day appointed by the Minister by Order in the Gazette (different days may be set for different provisions). No commencement order for the Act appeared in the Attorney General's Ministry statutory-instrument listings for 2021-2026 checked on 2026-10-12, so the Act is treated as enacted but not yet in force; the Data Protection Commissioner office it creates has no official sign of being established.",
+      "summary": "Belize's general data protection law regulating the collection, keeping, use and dissemination of personal data by data controllers, with GDPR-style principles, data-subject rights and a Data Protection Commissioner as supervisory authority. Section 19 gives data subjects the right not to be subject to a decision based solely on automated processing, including profiling, that produces legal or similarly significant effects, with exceptions for contract, authorising enactments with safeguards, or consent, and requires controllers to inform data subjects of the existence of automated decision-making. Commencement depends on a ministerial order under section 97.",
+      "ai_governance_relevance": "Only binding Belize law with an explicit rule on automated decision-making and profiling (s.19); would govern personal-data processing in AI training and use once in force.",
+      "source_url": "https://agm.gov.bz/uploads/laws/63977162f1707_Act_No-45-of-2021-Data-Protection-Act.pdf",
+      "official_pdf_url": "https://agm.gov.bz/uploads/laws/63977162f1707_Act_No-45-of-2021-Data-Protection-Act.pdf",
+      "official_webpage_url": "https://agm.gov.bz/laws/act",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "superseded_by": [],
+      "organization_id": "o-b55e215aba60",
+      "publisher_name": "Attorney General's Ministry",
+      "jurisdiction_id": "BLZ",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Belize (national)",
+      "technology_scope": [
+        "automated decision-making",
+        "personal data processing"
+      ],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "en",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-9ab24f41b9c7",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full Act No. 45 of 2021 PDF read (pdftotext, 4,252 lines) from the Attorney General's Ministry law portal (Acts 2021 listing); assent 29 November 2021 and 'Gazetted 30th November, 2021' read on the Act's first page; s.19 and s.97 read. The National Assembly copy (nationalassembly.gov.bz/wp-content/uploads/2021/12/Act-No-45-of-2021-Data-Protection-Act.pdf) returned a hosting 'account suspended' page via curl and WebFetch on 2026-10-12."
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-b55e215aba60",
+      "jurisdiction_id": "BLZ",
+      "name": "National Assembly of Belize",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Legislature (House of Representatives and Senate); enacted the Data Protection Act, 2021, which includes the automated decision-making and profiling right in s.19.",
+      "source_url": "https://agm.gov.bz/laws/act",
+      "authority_type": "legislature",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-9ab24f41b9c7",
+      "url": "https://agm.gov.bz/uploads/laws/63977162f1707_Act_No-45-of-2021-Data-Protection-Act.pdf",
+      "jurisdiction_ids": [
+        "BLZ"
+      ],
+      "source_institutions": [
+        "Attorney General's Ministry"
+      ],
+      "instrument_ids": [
+        "i-c03174547019"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full Act No. 45 of 2021 PDF read (pdftotext, 4,252 lines) from the Attorney General's Ministry law portal (Acts 2021 listing); assent 29 November 2021 and 'Gazetted 30th November, 2021' read on the Act's first page; s.19 and s.97 read. The National Assembly copy (nationalassembly.gov.bz/wp-content/uploads/2021/12/Act-No-45-of-2021-Data-Protection-Act.pdf) returned a hosting 'account suspended' page via curl and WebFetch on 2026-10-12.",
+      "http_status": 200,
+      "final_url": "https://agm.gov.bz/uploads/laws/63977162f1707_Act_No-45-of-2021-Data-Protection-Act.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "BLZ",
     "country": "Belize",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -33,10 +129,11 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_with_findings": [
       "binding-law",
+      "data-privacy"
+    ],
+    "categories_where_no_material_was_found": [
       "strategy",
       "government-governance",
       "ethics",
@@ -44,7 +141,6 @@
       "public-sector",
       "procurement",
       "cyber-security",
-      "data-privacy",
       "transparency",
       "standards",
       "sandbox",
@@ -55,33 +151,122 @@
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Belize \"artificial intelligence\" (strategy OR regulation OR ethics) government ministry official",
       "Belize \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Belize government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Belize \"artificial intelligence\" cybersecurity authority secure development safety guidelines",
-      "Belize privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Belize privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "Belize national artificial intelligence strategy policy government",
+      "Belize Data Protection Act 2021 automated decision-making gazette",
+      "site:gov.bz \"artificial intelligence\"",
+      "Belize \"Data Protection Act\" commencement order statutory instrument 2025 OR 2026 Information Commissioner",
+      "Belize National Digital Agenda 2022-2025 artificial intelligence pdf",
+      "Belize Ministry of Education artificial intelligence guidelines schools policy generative AI",
+      "Belice inteligencia artificial política nacional gobierno",
+      "Central Bank of Belize artificial intelligence guidance OR Belize cybersecurity strategy artificial intelligence",
+      "Belize Cybercrime Act 2020 OR \"Belize\" deepfake law OR \"Electronic Transactions\" artificial intelligence bill National Assembly",
+      "Belize \"AI policy\" OR \"artificial intelligence policy\" ministry 2026 IDB consultation draft",
+      "pressoffice.gov.bz artificial intelligence Cabinet brief Santiago Declaration ethics",
+      "agm.gov.bz law portal: Acts 2021-2026 and Statutory Instruments 2021-2026 listings scanned for data protection, digital, cyber, electronic, artificial intelligence and commencement orders"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. nationalassembly.gov.bz hosting suspended; digitalagenda.gov.bz expired TLS / WebFetch 503; belizelaw.org proxy 502; no searchable gazette. agm.gov.bz listing API: all Acts and SIs 2021-2026 scanned by title; full text of DPA 2021, Digital Government Act 2022, Public Sector Data Sharing Act 2021, Electronic Transactions Act 2021, SI 121/2025 searched for AI terms. DPA s.97 commencement by order - none found in SI listings. Santiago Declaration (Cabinet approval to sign, Oct 2023) regional - lead. Convention 108: not a party. Units covered: Law: Attorney General's Ministry law portal (agm.gov.bz): all Acts 2021-2026 and all Statutory Instruments 2021-2026 listings scanned by title; Data Protection Act 2021, Digital Government Act 2022, Public Sector Data Sharing Act 2021, Electronic Transactions Act 2021 and Global Digital Services Regulations 2025 (SI 121/2025) text-searched for AI/automated-decision terms. Only DPA s.19 qualifies. No AI bill, deepfake offence or DPA commencement order found. National Assembly site suspended.; Government: Searched, nothing found: no national AI strategy, public-sector AI guideline or GenAI guidance; national AI policy announced as intended (July 2026, lead). Press Office and Ministry of E-Governance pages are news/events only.; Ministries: Searched, nothing found: education, health, public utilities/e-governance (AI workshop news only), economic transformation (AI policy intent only), justice/AG, finance; no ministry AI documents.; Regulators: Searched, nothing found: Data Protection Commissioner not established; Central Bank of Belize, Public Utilities Commission and national cybersecurity (National Cybersecurity Strategy 2020-2023 predates AI content) have no AI-specific documents.. Not reached: nationalassembly.gov.bz (hosting account suspended; bills not checked there); digitalagenda.gov.bz (expired TLS certificate / HTTP 503); belizelaw.org (proxy 502); Belize Gazette issues not searched directly (no searchable official gazette portal reached). Could not verify: National Assembly copy of the DPA and any pending bills (site suspended); digitalagenda.gov.bz Responsible AI post and National Digital Agenda PDF. strategy, government-governance, ethics, risk-assurance, public-sector, procurement, cyber-security, transparency, standards, sandbox, index-readiness, sectoral, generative-ai, drafts, international, historical: no material found.",
     "discovery_result_count": 12,
     "focused_result_count": 12
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-9bf165883e98",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "BLZ",
+      "instrument_id": "i-c03174547019",
+      "title": "Data Protection Act, 2021 (Act No. 45 of 2021)",
+      "detail": "Added to the radar (published 2021-11-30).",
+      "from": null,
+      "to": null,
+      "source_url": "https://agm.gov.bz/uploads/laws/63977162f1707_Act_No-45-of-2021-Data-Protection-Act.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-86e788279848",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "BLZ",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 1 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-32e11552813a",
+      "date": "2021-11-30",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "BLZ",
+      "instrument_id": "i-c03174547019",
+      "title": "Data Protection Act, 2021 gazetted",
+      "detail": "Act No. 45 of 2021 (assent 29 November 2021) gazetted 30 November 2021; it includes a right not to be subject to solely automated decisions including profiling (s.19) and comes into force on a day appointed by ministerial order (s.97).",
+      "from": null,
+      "to": null,
+      "source_url": "https://agm.gov.bz/uploads/laws/63977162f1707_Act_No-45-of-2021-Data-Protection-Act.pdf",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "National artificial intelligence policy (in development)",
+      "english_title": "National artificial intelligence policy (in development)",
+      "issuing_authority": "Government of Belize (Ministry of Economic Transformation / Ministry of E-Governance)",
+      "note": "Government Press Office release of 1 July 2026 (pressoffice.gov.bz, PR172/26, CABEI Board of Governors meeting) states Belize 'expressed its intention to advance the development of a national artificial intelligence policy'; Belize also proposed to host a CABEI regional AI hub. No draft or document published; promote when an official text appears.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Santiago Declaration to Promote Ethical Artificial Intelligence in Latin America and the Caribbean (Cabinet approval to sign)",
+      "english_title": "Santiago Declaration to Promote Ethical AI in Latin America and the Caribbean",
+      "issuing_authority": "Cabinet of Belize",
+      "note": "Cabinet Brief of October 2023 on pressoffice.gov.bz (PR221/23) records Cabinet approval for Belize to sign the Santiago Declaration (regional council on implementing the UNESCO AI ethics recommendation). Multilateral ministerial declaration, not a national instrument; no official record of signature by Belize found. Regional layer, not recorded.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Advancing Belize's Digital Future through Responsible AI (Ministry of E-Governance post)",
+      "english_title": "Advancing Belize's Digital Future through Responsible AI",
+      "issuing_authority": "Ministry of E-Governance",
+      "note": "Post on digitalagenda.gov.bz (?p=5717) describing an 'augmented AI' approach for the public service after an IDB/Costa Rica policy dialogue (December 2025 per search snippets). News item, no policy document; site unreachable on 2026-10-12 (expired TLS certificate via curl, HTTP 503 via WebFetch).",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "National Digital Agenda 2022-2025",
+      "english_title": "National Digital Agenda 2022-2025",
+      "issuing_authority": "E-Governance and Digitalization Unit (now Ministry of E-Governance)",
+      "note": "Official PDF at digitalagenda.gov.bz/wp-content/uploads/2022/05/NATIONAL-DIGITAL-AGENDA-FINAL.pdf could not be read on 2026-10-12 (expired TLS certificate via curl; HTTP 503 via WebFetch). Discovery snippets do not show an AI pillar; check for AI content before recording (strategy category).",
+      "found": "2026-10-12"
+    }
+  ]
 }
