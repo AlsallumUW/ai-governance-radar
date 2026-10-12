@@ -10,18 +10,637 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Indonesia governs AI mainly through soft law: the national AI strategy 2020-2045, the communications ministry's 2023 circular on AI ethics, and the financial services authority's (OJK) AI ethics guide for fintech and AI governance guide for banks. Binding rules touching AI are the 2022 Personal Data Protection Law's provisions on automated decisions and a 2026 health ministry decree on software and AI medical devices. Presidential regulations on a National AI Roadmap 2026-2029 and on AI ethics were still awaiting signature in October 2026.",
+    "lead_institutions": [
+      "Ministry of Communication and Digital Affairs (Komdigi)",
+      "Financial Services Authority (OJK)",
+      "National Research and Innovation Agency (BRIN)",
+      "Ministry of Health"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was completed on 12 October 2026 and covers national law, government, ministries and regulators. The draft presidential regulations on an AI roadmap and AI ethics are listed as leads because they had not been signed, and the 2025 consultation documents could only be located because the ministry's site blocked access."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-332865db04ba",
+      "organization_id": "o-35a8f1f762f4",
+      "publisher_name": "Ministry of Communication and Digital Affairs",
+      "jurisdiction_id": "IDN",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "ethics",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Indonesia (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "official_pdf_url": null,
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-c4500553855b",
+      "evidence_reference": "curl (browser user agent, --max-time 60): JDIH Komdigi record page read, carrying full text of the circular and metadata (set and promulgated 19-12-2023, Jakarta)",
+      "official_title": "Surat Edaran Menteri Komunikasi dan Informatika Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial",
+      "english_title": "Circular of the Minister of Communication and Informatics No. 9 of 2023 on Artificial Intelligence Ethics",
+      "issuing_authority": "Minister of Communication and Informatics (now Ministry of Communication and Digital Affairs)",
+      "authority_type": "ministry",
+      "categories": [
+        "ethics",
+        "government-governance"
+      ],
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2023-12-19",
+      "current_status": "Set and promulgated in Jakarta on 19 December 2023 (JDIH Komdigi record). Still the ministry's operative AI-ethics instrument in October 2026: Komdigi's 2025 Concept AI Ethics Guideline was developed to strengthen it, and a Presidential Regulation on AI Ethics was awaiting the President's signature (see leads).",
+      "summary": "Ministerial circular addressed to businesses carrying out AI-based programming (KBLI 62015) and to public- and private-scope electronic system operators, giving ethical values and principles for AI consultation, analysis and programming. It serves as the ethics reference for the internal AI data and ethics policies that Ministerial Regulation 3/2021 already requires of such businesses, and sets out values (inclusivity, humanity, security, accessibility, transparency, credibility and accountability, personal data protection, sustainable development, intellectual property) and responsibilities, including that AI must not be operated as the determinant of policy or decisions concerning humanity and that providers must prevent racism and other harms.",
+      "ai_governance_relevance": "Indonesia's first national AI ethics instrument; the main AI-specific government text in force.",
+      "source_url": "https://jdih.komdigi.go.id/produk_hukum/view/id/883/t/surat+edaran+menteri+komunikasi+dan+informatika+nomor+9+tahun+2023",
+      "official_webpage_url": "https://jdih.komdigi.go.id/produk_hukum/view/id/883/t/surat+edaran+menteri+komunikasi+dan+informatika+nomor+9+tahun+2023",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "legislation_portal",
+      "language": "id"
+    },
+    {
+      "id": "i-c2aba710017f",
+      "organization_id": "o-6251931e16eb",
+      "publisher_name": "House of Representatives of the Republic of Indonesia",
+      "jurisdiction_id": "IDN",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "effective_date": "2022-10-17",
+      "last_amended_date": null,
+      "scope": "Indonesia (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "official_pdf_url": "https://jdih.kemenkeu.go.id/download/46c17b53-4a45-411c-9b76-c6799e5769fc/UU_Nomor_27_Tahun_2022%20Perlindungan%20Data%20Pribadi.pdf",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-e513d1c0ba7f",
+      "evidence_reference": "curl (browser user agent, --max-time 60): JDIH Komdigi record page (metadata: set and promulgated 17-10-2022, State Gazette 2022 No. 196) and the full signed text PDF from JDIH Kementerian Keuangan read with pdftotext (Art. 10, Art. 34(2)(a), signature block 17 October 2022); peraturan.bpk.go.id returned 403",
+      "official_title": "Undang-Undang Republik Indonesia Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi",
+      "english_title": "Law of the Republic of Indonesia No. 27 of 2022 on Personal Data Protection",
+      "issuing_authority": "President of the Republic of Indonesia with the approval of the House of Representatives (DPR)",
+      "authority_type": "legislature",
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2022-10-17",
+      "current_status": "Enacted and promulgated 17 October 2022 (State Gazette 2022 No. 196, Supplement No. 6820); in force from promulgation, with a two-year adjustment period for controllers. The implementing Government Regulation, which Art. 10(2) requires for objections to automated processing, was not found as issued on official portals (see leads).",
+      "summary": "Indonesia's general personal data protection law, binding on public and private controllers and processors. Art. 10 gives data subjects the right to object to decisions based solely on automated processing, including profiling, that have legal effects or significant impact on them, with procedures to be set by Government Regulation; Art. 34(2)(a) lists automated decision-making with legal or significant effects among high-risk processing that requires a data protection impact assessment.",
+      "ai_governance_relevance": "Binding rules on automated decision-making and profiling that apply to AI systems processing personal data.",
+      "source_url": "https://jdih.komdigi.go.id/produk_hukum/view/id/832/t/undangundang+nomor+27+tahun+2022",
+      "official_webpage_url": "https://jdih.komdigi.go.id/produk_hukum/view/id/832/t/undangundang+nomor+27+tahun+2022",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "legislation_portal",
+      "language": "id"
+    },
+    {
+      "id": "i-0b0a72bf6912",
+      "organization_id": "o-5633d6ae1fba",
+      "publisher_name": "National Research and Innovation Agency",
+      "jurisdiction_id": "IDN",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "strategy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Indonesia (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "official_pdf_url": "https://karya.brin.go.id/id/eprint/13918/1/Artikel_Michael_PR%20Elektronika_2020.pdf",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-1b6ac55b07bd",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full 180-page PDF downloaded from BRIN's official repository (karya.brin.go.id eprint 13918) and front matter read with pdftotext (ISBN 978-602-410-177-0; 'Cetakan pertama, Desember 2020'; foreword dated Jakarta, July 2020)",
+      "official_title": "Strategi Nasional Kecerdasan Artifisial Indonesia 2020-2045",
+      "english_title": "Indonesia National Artificial Intelligence Strategy 2020-2045 (Stranas KA)",
+      "issuing_authority": "Agency for the Assessment and Application of Technology (BPPT), working group on the national AI strategy (BPPT is now part of BRIN)",
+      "authority_type": "agency",
+      "categories": [
+        "strategy",
+        "ethics",
+        "government-governance"
+      ],
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2020-12",
+      "current_status": "First printed December 2020 by BPPT Press (foreword dated July 2020); BPPT has since been merged into BRIN, whose repository hosts the full text. It was not given legal force; Komdigi states the draft Presidential Regulation on the National AI Roadmap 2026-2029 is being prepared together with the Stranas KA, and that regulation was still unsigned in October 2026 (see leads).",
+      "summary": "Long-term national AI strategy drafted by a BPPT-convened quadruple-helix working group as the reference for ministries, agencies, regional governments and other stakeholders. Across eight chapters it sets a vision to 2045, a chapter on AI ethics and policy, focus areas (ethics and policy, talent, infrastructure and data, industrial research and innovation) and five priority sectors: health services, bureaucratic reform, education and research, food security, and mobility and smart cities.",
+      "ai_governance_relevance": "Indonesia's only published national AI strategy.",
+      "source_url": "https://karya.brin.go.id/id/eprint/13918/",
+      "official_webpage_url": "https://karya.brin.go.id/id/eprint/13918/",
+      "sectors": [
+        "cross-sector",
+        "health",
+        "education",
+        "public-sector"
+      ],
+      "source_kind": "official_publication",
+      "language": "id"
+    },
+    {
+      "id": "i-543843c315b3",
+      "organization_id": "o-ffa2d04ed6d1",
+      "publisher_name": "Financial Services Authority",
+      "jurisdiction_id": "IDN",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "sectoral",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Indonesia (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "official_pdf_url": "https://ojk.go.id/id/Publikasi/Roadmap-dan-Pedoman/ITSK/Documents/Panduan%20Kode%20Etik%20Kecerdasan%20Buatan%20AI%20Yang%20Bertanggungjawab%20dan%20Terpercaya%20di%20Industri%20Teknologi%20Finansial.pdf",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-cbac29a3edcd",
+      "evidence_reference": "curl (browser user agent, --max-time 60): OJK publication page (dated 4 December 2023) and the full guide PDF on ojk.go.id read with pdftotext",
+      "official_title": "Panduan Kode Etik Kecerdasan Buatan (Artificial Intelligence/AI) yang Bertanggung Jawab dan Terpercaya di Industri Teknologi Finansial",
+      "english_title": "Code of Ethics Guide for Responsible and Trustworthy Artificial Intelligence in the Financial Technology Industry",
+      "issuing_authority": "Financial Services Authority (OJK) with the fintech associations AFTECH, AFSI, AFPI and ALUDI",
+      "authority_type": "regulator",
+      "categories": [
+        "sectoral",
+        "ethics"
+      ],
+      "legal_status": "regulatory_opinion",
+      "lifecycle": "published",
+      "publication_date": "2023-12-04",
+      "current_status": "Posted on OJK's publication pages on 4 December 2023. A guide, not an OJK regulation (POJK).",
+      "summary": "Code-of-conduct guide issued by OJK with four fintech associations for fintech operators that develop or use AI. It sets four basic principles (beneficial; fair and accountable; transparent and explicable; robust and secure), drawing on the OECD AI Principles and the NIST AI Risk Management Framework, and describes expectations such as non-discrimination, consumer protection, data protection, human oversight and robustness testing across operators' AI-based business models.",
+      "ai_governance_relevance": "First financial-sector AI ethics guidance in Indonesia.",
+      "source_url": "https://ojk.go.id/id/Publikasi/Roadmap-dan-Pedoman/ITSK/Pages/Panduan-Kode-Etik-Kecerdasan-Buatan-(AI)-yang-Bertanggung-Jawab-dan-Terpercaya-di-Industri-Teknologi-Finansial.aspx",
+      "official_webpage_url": "https://ojk.go.id/id/Publikasi/Roadmap-dan-Pedoman/ITSK/Pages/Panduan-Kode-Etik-Kecerdasan-Buatan-(AI)-yang-Bertanggung-Jawab-dan-Terpercaya-di-Industri-Teknologi-Finansial.aspx",
+      "sectors": [
+        "finance"
+      ],
+      "source_kind": "official_publication",
+      "language": "id"
+    },
+    {
+      "id": "i-a57cf5a1b3fe",
+      "organization_id": "o-ffa2d04ed6d1",
+      "publisher_name": "Financial Services Authority",
+      "jurisdiction_id": "IDN",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "sectoral",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Indonesia (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "official_pdf_url": "https://ojk.go.id/id/Publikasi/Roadmap-dan-Pedoman/Perbankan/Documents/Tata%20Kelola%20Kecerdasan%20Artifisial%20Perbankan%20Indonesia.pdf",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-64e08e3daa61",
+      "evidence_reference": "curl (browser user agent, --max-time 60): OJK publication page (dated 29 April 2025) and the full 248-page bilingual PDF on ojk.go.id (resumed download) read with pdftotext (contents, foreword)",
+      "official_title": "Tata Kelola Kecerdasan Artifisial Perbankan Indonesia",
+      "english_title": "Artificial Intelligence Governance for Indonesian Banking",
+      "issuing_authority": "Financial Services Authority (OJK), Banking Supervision",
+      "authority_type": "regulator",
+      "categories": [
+        "sectoral",
+        "risk-assurance",
+        "generative-ai"
+      ],
+      "legal_status": "regulatory_opinion",
+      "lifecycle": "published",
+      "publication_date": "2025-04-29",
+      "current_status": "Published on OJK's banking roadmap and guidelines page on 29 April 2025 as a guide for banks; it complements POJK 11/POJK.03/2022 on bank IT operations and the Digital Banking Transformation Blueprint. The document is bilingual (Indonesian and English).",
+      "summary": "OJK guide for banks in Indonesia to develop and deploy AI, including advanced, generative and agentic AI systems, responsibly. Its chapters cover AI risks and challenges (including deepfakes and GenAI risks), a benchmark of AI regulation in other countries, guiding principles for responsible and trustworthy AI, AI risk management and governance with risk classification of AI systems, implementation steps for high-risk AI, and supervision and AI audit (using frameworks such as NIST AI RMF, COBIT, ISACA and IIA).",
+      "ai_governance_relevance": "Main banking-sector AI governance and risk-management reference from the financial supervisor.",
+      "source_url": "https://ojk.go.id/id/Publikasi/Roadmap-dan-Pedoman/Perbankan/Pages/Tata-Kelola-Kecerdasan-Artifisial-Perbankan-Indonesia.aspx",
+      "official_webpage_url": "https://ojk.go.id/id/Publikasi/Roadmap-dan-Pedoman/Perbankan/Pages/Tata-Kelola-Kecerdasan-Artifisial-Perbankan-Indonesia.aspx",
+      "sectors": [
+        "finance"
+      ],
+      "source_kind": "official_publication",
+      "language": "id"
+    },
+    {
+      "id": "i-c6999510fbcf",
+      "organization_id": "o-35a8f1f762f4",
+      "publisher_name": "Ministry of Communication and Digital Affairs",
+      "jurisdiction_id": "IDN",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "drafts",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Indonesia (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [
+        "Consultation documents not read (download link denied access to curl and WebFetch)",
+        "Content of the white paper and concept guideline"
+      ],
+      "official_pdf_url": null,
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "primary_source_located",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-5277fe61d17b",
+      "evidence_reference": "curl returned HTTP 403 for portal.komdigi.go.id and the s.komdigi.go.id download link; WebFetch read the consultation notice (posted 8 August 2025, deadline 22 August 2025); the JDIH Komdigi public-participation record (Tahun Terbit 2025) was read via curl. The consultation documents themselves could not be opened (both methods failed on the download link)",
+      "official_title": "Buku Putih Peta Jalan Kecerdasan Artifisial Nasional dan Konsep Pedoman Etika Kecerdasan Artifisial (Konsultasi Publik)",
+      "english_title": "White Paper on the National Artificial Intelligence Roadmap and Concept AI Ethics Guideline (public consultation)",
+      "issuing_authority": "Ministry of Communication and Digital Affairs (Komdigi)",
+      "authority_type": "ministry",
+      "categories": [
+        "drafts",
+        "strategy",
+        "ethics"
+      ],
+      "legal_status": "consultation_draft",
+      "lifecycle": "consultation",
+      "publication_date": "2025-08-08",
+      "current_status": "Put to public consultation on 8 August 2025 with comments due 22 August 2025. Both documents fed the draft Presidential Regulations on the National AI Roadmap 2026-2029 and on AI Ethics, whose inter-ministerial discussion was completed on 5 May 2026 (JDIH Komdigi news); neither had been signed as of October 2026 (see leads).",
+      "summary": "Two Komdigi consultation drafts: a white paper for a national AI roadmap prepared by a multi-stakeholder task force, and a concept AI ethics guideline intended to strengthen Circular 9/2023. The documents' text could not be opened, so their content is not summarised here.",
+      "ai_governance_relevance": "Drafts behind Indonesia's pending AI roadmap and AI ethics Presidential Regulations.",
+      "source_url": "https://portal.komdigi.go.id/kanal-publik/berita-kini/9531",
+      "official_webpage_url": "https://jdih.komdigi.go.id/dokumen-pembentukan-puu/detail/73",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "consultation_portal",
+      "language": "id"
+    },
+    {
+      "id": "i-c806fab28578",
+      "organization_id": "o-11a79b2a95eb",
+      "publisher_name": "Ministry of Health",
+      "jurisdiction_id": "IDN",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "sectoral",
+      "subcategory": null,
+      "effective_date": "2026-09-07",
+      "last_amended_date": null,
+      "scope": "Indonesia (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "official_pdf_url": "https://jdih.kemkes.go.id/storage/documents/pdfs/2026kepmenkes951.pdf",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-37fae4ae9c7d",
+      "evidence_reference": "curl (browser user agent, --max-time 60): JDIH Kemenkes record page (status Berlaku, set 07 Sep 2026) and the full 39-page decree PDF from jdih.kemkes.go.id read with pdftotext (operative part, signature 7 September 2026, Annex chapters on AI devices and local clinical validation)",
+      "official_title": "Keputusan Menteri Kesehatan Republik Indonesia Nomor HK.01.07/MENKES/951/2026 tentang Pedoman Izin Edar Alat Kesehatan Berbasis Perangkat Lunak",
+      "english_title": "Decree of the Minister of Health No. HK.01.07/MENKES/951/2026 on Guidelines for Marketing Authorisation of Software-Based Medical Devices",
+      "issuing_authority": "Minister of Health",
+      "authority_type": "ministry",
+      "categories": [
+        "sectoral",
+        "binding-law",
+        "risk-assurance"
+      ],
+      "legal_status": "binding_regulation",
+      "lifecycle": "in_force",
+      "publication_date": "2026-09-07",
+      "current_status": "Set in Jakarta on 7 September 2026 and in force from that date (fourth dictum); listed as 'Berlaku' (in force) on JDIH Kemenkes.",
+      "summary": "Ministerial decree setting the guideline the Ministry of Health applies when granting marketing authorisation (izin edar) for software-based medical devices: Software as a Medical Device, Software in a Medical Device and medical devices with AI applications, including machine-learning and generative models. It sets dossier content on the AI model and its training, requires local clinical validation in Indonesia for certain imported software (retrained on Indonesian data, or using moderate- to high-risk AI for diagnosis, screening or clinical decisions), and requires a new authorisation for changes affecting intended use, main function or clinical performance.",
+      "ai_governance_relevance": "First binding sector rule in Indonesia with specific requirements for AI-enabled products (health).",
+      "source_url": "https://jdih.kemkes.go.id/documents/keputusan-menteri-kesehatan-republik-indonesia-nomor-hk0107menkes9512026",
+      "official_webpage_url": "https://jdih.kemkes.go.id/documents/keputusan-menteri-kesehatan-republik-indonesia-nomor-hk0107menkes9512026",
+      "sectors": [
+        "health"
+      ],
+      "source_kind": "legislation_portal",
+      "language": "id"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-35a8f1f762f4",
+      "jurisdiction_id": "IDN",
+      "name": "Ministry of Communication and Digital Affairs",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Ministry responsible for digital policy (named Ministry of Communication and Informatics, Kominfo, until October 2024); issued Circular 9/2023 on AI ethics and leads the draft Presidential Regulations on the National AI Roadmap 2026-2029 and on AI Ethics.",
+      "source_url": "https://www.komdigi.go.id/",
+      "authority_type": "ministry",
+      "government_level": "national"
+    },
+    {
+      "id": "o-ffa2d04ed6d1",
+      "jurisdiction_id": "IDN",
+      "name": "Financial Services Authority",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Otoritas Jasa Keuangan (OJK), the integrated financial-services supervisor; issued the AI code of ethics guide for fintech (2023) and the AI governance guide for Indonesian banking (2025).",
+      "source_url": "https://ojk.go.id/",
+      "authority_type": "regulator",
+      "government_level": "national"
+    },
+    {
+      "id": "o-5633d6ae1fba",
+      "jurisdiction_id": "IDN",
+      "name": "National Research and Innovation Agency",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Badan Riset dan Inovasi Nasional (BRIN), which absorbed the Agency for the Assessment and Application of Technology (BPPT) that coordinated the National AI Strategy 2020-2045; its repository publishes the strategy.",
+      "source_url": "https://www.brin.go.id/",
+      "authority_type": "agency",
+      "government_level": "national"
+    },
+    {
+      "id": "o-11a79b2a95eb",
+      "jurisdiction_id": "IDN",
+      "name": "Ministry of Health",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Kementerian Kesehatan; issued Decree HK.01.07/MENKES/951/2026 on marketing authorisation of software-based medical devices, including AI-enabled devices.",
+      "source_url": "https://www.kemkes.go.id/",
+      "authority_type": "ministry",
+      "government_level": "national"
+    },
+    {
+      "id": "o-6251931e16eb",
+      "jurisdiction_id": "IDN",
+      "name": "House of Representatives of the Republic of Indonesia",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Dewan Perwakilan Rakyat (DPR); enacts laws jointly with the President, including Law 27/2022 on Personal Data Protection.",
+      "source_url": "https://www.dpr.go.id/",
+      "authority_type": "legislature",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-c4500553855b",
+      "url": "https://jdih.komdigi.go.id/produk_hukum/view/id/883/t/surat+edaran+menteri+komunikasi+dan+informatika+nomor+9+tahun+2023",
+      "jurisdiction_ids": [
+        "IDN"
+      ],
+      "source_institutions": [
+        "Ministry of Communication and Digital Affairs"
+      ],
+      "instrument_ids": [
+        "i-332865db04ba"
+      ],
+      "categories_reviewed": [
+        "ethics",
+        "government-governance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "page_title": null,
+      "error": null,
+      "check_method": "curl (browser user agent, --max-time 60): JDIH Komdigi record page read, carrying full text of the circular and metadata (set and promulgated 19-12-2023, Jakarta)",
+      "http_status": 200,
+      "final_url": null,
+      "link_status": "reachable",
+      "document_language": "id",
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-e513d1c0ba7f",
+      "url": "https://jdih.komdigi.go.id/produk_hukum/view/id/832/t/undangundang+nomor+27+tahun+2022",
+      "jurisdiction_ids": [
+        "IDN"
+      ],
+      "source_institutions": [
+        "House of Representatives of the Republic of Indonesia"
+      ],
+      "instrument_ids": [
+        "i-c2aba710017f"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "page_title": null,
+      "error": null,
+      "check_method": "curl (browser user agent, --max-time 60): JDIH Komdigi record page (metadata: set and promulgated 17-10-2022, State Gazette 2022 No. 196) and the full signed text PDF from JDIH Kementerian Keuangan read with pdftotext (Art. 10, Art. 34(2)(a), signature block 17 October 2022); peraturan.bpk.go.id returned 403",
+      "http_status": 200,
+      "final_url": null,
+      "link_status": "reachable",
+      "document_language": "id",
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-1b6ac55b07bd",
+      "url": "https://karya.brin.go.id/id/eprint/13918/",
+      "jurisdiction_ids": [
+        "IDN"
+      ],
+      "source_institutions": [
+        "National Research and Innovation Agency"
+      ],
+      "instrument_ids": [
+        "i-0b0a72bf6912"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "ethics",
+        "government-governance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "page_title": null,
+      "error": null,
+      "check_method": "curl (browser user agent, --max-time 60): full 180-page PDF downloaded from BRIN's official repository (karya.brin.go.id eprint 13918) and front matter read with pdftotext (ISBN 978-602-410-177-0; 'Cetakan pertama, Desember 2020'; foreword dated Jakarta, July 2020)",
+      "http_status": 200,
+      "final_url": null,
+      "link_status": "reachable",
+      "document_language": "id",
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-cbac29a3edcd",
+      "url": "https://ojk.go.id/id/Publikasi/Roadmap-dan-Pedoman/ITSK/Pages/Panduan-Kode-Etik-Kecerdasan-Buatan-(AI)-yang-Bertanggung-Jawab-dan-Terpercaya-di-Industri-Teknologi-Finansial.aspx",
+      "jurisdiction_ids": [
+        "IDN"
+      ],
+      "source_institutions": [
+        "Financial Services Authority"
+      ],
+      "instrument_ids": [
+        "i-543843c315b3"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "ethics"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "page_title": null,
+      "error": null,
+      "check_method": "curl (browser user agent, --max-time 60): OJK publication page (dated 4 December 2023) and the full guide PDF on ojk.go.id read with pdftotext",
+      "http_status": 200,
+      "final_url": null,
+      "link_status": "reachable",
+      "document_language": "id",
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-64e08e3daa61",
+      "url": "https://ojk.go.id/id/Publikasi/Roadmap-dan-Pedoman/Perbankan/Pages/Tata-Kelola-Kecerdasan-Artifisial-Perbankan-Indonesia.aspx",
+      "jurisdiction_ids": [
+        "IDN"
+      ],
+      "source_institutions": [
+        "Financial Services Authority"
+      ],
+      "instrument_ids": [
+        "i-a57cf5a1b3fe"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "risk-assurance",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "page_title": null,
+      "error": null,
+      "check_method": "curl (browser user agent, --max-time 60): OJK publication page (dated 29 April 2025) and the full 248-page bilingual PDF on ojk.go.id (resumed download) read with pdftotext (contents, foreword)",
+      "http_status": 200,
+      "final_url": null,
+      "link_status": "reachable",
+      "document_language": "id",
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-5277fe61d17b",
+      "url": "https://portal.komdigi.go.id/kanal-publik/berita-kini/9531",
+      "jurisdiction_ids": [
+        "IDN"
+      ],
+      "source_institutions": [
+        "Ministry of Communication and Digital Affairs"
+      ],
+      "instrument_ids": [
+        "i-c6999510fbcf"
+      ],
+      "categories_reviewed": [
+        "drafts",
+        "strategy",
+        "ethics"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "page_title": null,
+      "error": null,
+      "check_method": "curl returned HTTP 403 for portal.komdigi.go.id and the s.komdigi.go.id download link; WebFetch read the consultation notice (posted 8 August 2025, deadline 22 August 2025); the JDIH Komdigi public-participation record (Tahun Terbit 2025) was read via curl. The consultation documents themselves could not be opened (both methods failed on the download link)",
+      "http_status": 403,
+      "final_url": null,
+      "link_status": "reachable",
+      "document_language": "id",
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-37fae4ae9c7d",
+      "url": "https://jdih.kemkes.go.id/documents/keputusan-menteri-kesehatan-republik-indonesia-nomor-hk0107menkes9512026",
+      "jurisdiction_ids": [
+        "IDN"
+      ],
+      "source_institutions": [
+        "Ministry of Health"
+      ],
+      "instrument_ids": [
+        "i-c806fab28578"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "binding-law",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "page_title": null,
+      "error": null,
+      "check_method": "curl (browser user agent, --max-time 60): JDIH Kemenkes record page (status Berlaku, set 07 Sep 2026) and the full 39-page decree PDF from jdih.kemkes.go.id read with pdftotext (operative part, signature 7 September 2026, Annex chapters on AI devices and local clinical validation)",
+      "http_status": 200,
+      "final_url": null,
+      "link_status": "reachable",
+      "document_language": "id",
+      "content_type": "text/html"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "IDN",
     "country": "Indonesia",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -33,55 +652,340 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_with_findings": [
       "binding-law",
-      "strategy",
-      "government-governance",
+      "data-privacy",
+      "drafts",
       "ethics",
+      "generative-ai",
+      "government-governance",
       "risk-assurance",
+      "sectoral",
+      "strategy"
+    ],
+    "categories_where_no_material_was_found": [
       "public-sector",
       "procurement",
       "cyber-security",
-      "data-privacy",
       "transparency",
       "standards",
       "sandbox",
       "index-readiness",
-      "sectoral",
-      "generative-ai",
-      "drafts",
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Indonesia \"kecerdasan artifisial\" (strategi OR regulasi OR etika) government ministry official",
       "Indonesia \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Indonesia government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Indonesia \"kecerdasan artifisial\" cybersecurity authority secure development safety guidelines",
-      "Indonesia privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Indonesia privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "Peraturan Presiden kecerdasan artifisial 2026 peta jalan",
+      "Surat Edaran Menteri Komunikasi dan Informatika Nomor 9 Tahun 2023 Etika Kecerdasan Artifisial jdih.komdigi.go.id",
+      "OJK Panduan Kode Etik Kecerdasan Buatan yang Bertanggung Jawab dan Terpercaya di Industri Teknologi Finansial",
+      "Perpres Nomor 2026 tentang Etika Kecerdasan Artifisial ditetapkan",
+      "Strategi Nasional Kecerdasan Artifisial Indonesia 2020-2045 brin.go.id",
+      "OJK Tata Kelola Kecerdasan Artifisial Perbankan Indonesia 2025",
+      "Panduan Penggunaan Generative AI pada Pembelajaran di Perguruan Tinggi Kemendikbudristek 2024",
+      "Bank Indonesia kecerdasan artifisial pedoman sistem pembayaran bi.go.id",
+      "konsultasi publik Konsep Pedoman Etika Kecerdasan Artifisial Peta Jalan AI Komdigi",
+      "komdigi.go.id Konsultasi Publik Buku Putih Peta Jalan Kecerdasan Artifisial Nasional",
+      "UU 27 tahun 2022 pelindungan data pribadi pasal 10 pemrosesan secara otomatis",
+      "Peraturan Presiden Nomor Tahun 2026 Kecerdasan Artifisial peta jalan etika terbit",
+      "JDIH Komdigi berita (news list, items 113-120) kecerdasan artifisial",
+      "BSSN pedoman keamanan kecerdasan artifisial",
+      "Kementerian Kesehatan pedoman kecerdasan artifisial kesehatan Keputusan Menteri Kesehatan AI",
+      "HK.01.07/MENKES/951/2026 perangkat lunak alat kesehatan kecerdasan artifisial (jdih.kemkes.go.id)",
+      "Mahkamah Agung OR KemenPANRB OR Kemenkeu peraturan penggunaan kecerdasan artifisial instansi pemerintah",
+      "Permendikdasmen 13 Tahun 2025 mata pelajaran Koding dan Kecerdasan Artifisial",
+      "DPR RUU Kecerdasan Artifisial Prolegnas 2026",
+      "BSN SNI ISO/IEC 42001 kecerdasan artifisial",
+      "Indonesia national AI strategy / AI regulation (English)"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. peraturan.bpk.go.id 403 to both methods; peraturan.go.id and jdih.kemendikdasmen.go.id reset; Komdigi consultation documents 403 (consultation record located only). Indonesia is not a party to Convention 108. Units covered: Law: JDIH Komdigi (circulars, laws, legislative-drafting documents and news), JDIH Kemenkes, JDIH Kemenkeu (UU PDP text) searched. Found: UU 27/2022 PDP (automated decisions, DPIA), Kepmenkes 951/2026 (AI medical devices). No AI-specific law or AI bill found (DPR Prolegnas 2026 has no AI bill per search); the two AI Presidential Regulations are unsigned drafts (leads). peraturan.bpk.go.id (403) and peraturan.go.id (connection reset) could not be searched directly.; Government: Komdigi (Circular 9/2023; 2025 consultation on the AI roadmap white paper and AI ethics guideline concept; RPerpres on the National AI Roadmap 2026-2029 and on AI Ethics, pending), BRIN/BPPT (Stranas KA 2020-2045). No public-sector AI use rules, AI procurement guidance, algorithm register or government AI index found.; Ministries: Health: Kepmenkes 951/2026 recorded; national health-AI guidelines under preparation (June 2026 conference, no document). Education: Kemendikbudristek GenAI higher-education guide (2024) and Permendikdasmen 13/2025 (Coding and AI elective) held as leads, no reachable issuer-hosted text. Finance/tax (Kemenkeu), PANRB, interior, defence, labour, justice: searched, nothing AI-specific found.; Regulators: OJK: fintech AI code of ethics (2023) and banking AI governance (2025) recorded. Bank Indonesia: only BI Institute 'AI Playbook' knowledge publications, no AI rule or guidance. BSSN (cyber): nothing found. BSN (standards): no SNI adoption of ISO/IEC 42001 found. Data protection authority not yet established as a separate body (UU PDP mandates one); no AI guidance. KPPU (competition): nothing found.. Not reached: peraturan.bpk.go.id (HTTP 403 to curl and WebFetch); peraturan.go.id (connection reset); jdih.kemendikdasmen.go.id (connection reset); komdigi.go.id / s.komdigi.go.id consultation documents (HTTP 403). Could not verify: Content of Komdigi's 2025 National AI Roadmap white paper and Concept AI Ethics Guideline (download 403); Whether either AI Presidential Regulation was signed after early September 2026 (none found on JDIH Komdigi as of 2026-10-12); Permendikdasmen 13/2025 text (BPK 403; jdih.kemendikdasmen reset). public-sector, procurement, cyber-security, transparency, standards, sandbox, index-readiness, international, historical: no material found.",
     "discovery_result_count": 10,
     "focused_result_count": 12
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-4c5d5ad801b3",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "IDN",
+      "instrument_id": "i-332865db04ba",
+      "title": "Circular of the Minister of Communication and Informatics No. 9 of 2023 on Artificial Intelligence Ethics",
+      "detail": "Added to the radar (published 2023-12-19).",
+      "from": null,
+      "to": null,
+      "source_url": "https://jdih.komdigi.go.id/produk_hukum/view/id/883/t/surat+edaran+menteri+komunikasi+dan+informatika+nomor+9+tahun+2023",
+      "needs_review": false
+    },
+    {
+      "id": "c-256cf7f4b485",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "IDN",
+      "instrument_id": "i-c2aba710017f",
+      "title": "Law of the Republic of Indonesia No. 27 of 2022 on Personal Data Protection",
+      "detail": "Added to the radar (published 2022-10-17).",
+      "from": null,
+      "to": null,
+      "source_url": "https://jdih.komdigi.go.id/produk_hukum/view/id/832/t/undangundang+nomor+27+tahun+2022",
+      "needs_review": false
+    },
+    {
+      "id": "c-77bfb2c9c330",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "IDN",
+      "instrument_id": "i-0b0a72bf6912",
+      "title": "Indonesia National Artificial Intelligence Strategy 2020-2045 (Stranas KA)",
+      "detail": "Added to the radar (published 2020-12).",
+      "from": null,
+      "to": null,
+      "source_url": "https://karya.brin.go.id/id/eprint/13918/",
+      "needs_review": false
+    },
+    {
+      "id": "c-8b85b5cacbc9",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "IDN",
+      "instrument_id": "i-543843c315b3",
+      "title": "Code of Ethics Guide for Responsible and Trustworthy Artificial Intelligence in the Financial Technology Industry",
+      "detail": "Added to the radar (published 2023-12-04).",
+      "from": null,
+      "to": null,
+      "source_url": "https://ojk.go.id/id/Publikasi/Roadmap-dan-Pedoman/ITSK/Pages/Panduan-Kode-Etik-Kecerdasan-Buatan-(AI)-yang-Bertanggung-Jawab-dan-Terpercaya-di-Industri-Teknologi-Finansial.aspx",
+      "needs_review": false
+    },
+    {
+      "id": "c-c7c8f947f073",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "IDN",
+      "instrument_id": "i-a57cf5a1b3fe",
+      "title": "Artificial Intelligence Governance for Indonesian Banking",
+      "detail": "Added to the radar (published 2025-04-29).",
+      "from": null,
+      "to": null,
+      "source_url": "https://ojk.go.id/id/Publikasi/Roadmap-dan-Pedoman/Perbankan/Pages/Tata-Kelola-Kecerdasan-Artifisial-Perbankan-Indonesia.aspx",
+      "needs_review": false
+    },
+    {
+      "id": "c-fa4dedcb5b74",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "IDN",
+      "instrument_id": "i-c6999510fbcf",
+      "title": "White Paper on the National Artificial Intelligence Roadmap and Concept AI Ethics Guideline (public consultation)",
+      "detail": "Added to the radar (published 2025-08-08).",
+      "from": null,
+      "to": null,
+      "source_url": "https://portal.komdigi.go.id/kanal-publik/berita-kini/9531",
+      "needs_review": false
+    },
+    {
+      "id": "c-f613da033360",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "IDN",
+      "instrument_id": "i-c806fab28578",
+      "title": "Decree of the Minister of Health No. HK.01.07/MENKES/951/2026 on Guidelines for Marketing Authorisation of Software-Based Medical Devices",
+      "detail": "Lifecycle recorded as in_force when added.",
+      "from": null,
+      "to": "in_force",
+      "source_url": "https://jdih.kemkes.go.id/documents/keputusan-menteri-kesehatan-republik-indonesia-nomor-hk0107menkes9512026",
+      "needs_review": false
+    },
+    {
+      "id": "c-883de0eb954f",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "IDN",
+      "instrument_id": "i-c806fab28578",
+      "title": "Decree of the Minister of Health No. HK.01.07/MENKES/951/2026 on Guidelines for Marketing Authorisation of Software-Based Medical Devices",
+      "detail": "Added to the radar (published 2026-09-07).",
+      "from": null,
+      "to": null,
+      "source_url": "https://jdih.kemkes.go.id/documents/keputusan-menteri-kesehatan-republik-indonesia-nomor-hk0107menkes9512026",
+      "needs_review": false
+    },
+    {
+      "id": "c-75092de588df",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "IDN",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 7 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-b62ff358d716",
+      "date": "2026-09-07",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "IDN",
+      "instrument_id": "i-c806fab28578",
+      "title": "Health Minister's Decree 951/2026 on software-based (incl. AI) medical devices",
+      "detail": "Set on 7 September 2026 and in force the same day; covers SaMD, SiMD and AI-enabled medical devices, incl. local clinical validation.",
+      "from": null,
+      "to": null,
+      "source_url": "https://jdih.kemkes.go.id/documents/keputusan-menteri-kesehatan-republik-indonesia-nomor-hk0107menkes9512026",
+      "needs_review": false
+    },
+    {
+      "id": "c-3edda739e03d",
+      "date": "2025-08-08",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "consultation",
+      "jurisdiction_id": "IDN",
+      "instrument_id": "i-c6999510fbcf",
+      "title": "Komdigi opens consultation on national AI roadmap white paper and AI ethics guideline concept",
+      "detail": "Public consultation notice posted 8 August 2025; comments due 22 August 2025.",
+      "from": null,
+      "to": null,
+      "source_url": "https://portal.komdigi.go.id/kanal-publik/berita-kini/9531",
+      "needs_review": false
+    },
+    {
+      "id": "c-12680cfdabd7",
+      "date": "2025-04-29",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "IDN",
+      "instrument_id": "i-a57cf5a1b3fe",
+      "title": "OJK publishes AI Governance for Indonesian Banking",
+      "detail": "OJK guide on AI governance and risk management for banks published on 29 April 2025.",
+      "from": null,
+      "to": null,
+      "source_url": "https://ojk.go.id/id/Publikasi/Roadmap-dan-Pedoman/Perbankan/Pages/Tata-Kelola-Kecerdasan-Artifisial-Perbankan-Indonesia.aspx",
+      "needs_review": false
+    },
+    {
+      "id": "c-3229d51cd303",
+      "date": "2023-12-19",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "IDN",
+      "instrument_id": "i-332865db04ba",
+      "title": "Minister's Circular 9/2023 on AI Ethics issued",
+      "detail": "Circular of the Minister of Communication and Informatics on AI ethics set and promulgated on 19 December 2023.",
+      "from": null,
+      "to": null,
+      "source_url": "https://jdih.komdigi.go.id/produk_hukum/view/id/883/t/surat+edaran+menteri+komunikasi+dan+informatika+nomor+9+tahun+2023",
+      "needs_review": false
+    },
+    {
+      "id": "c-8cb098960b11",
+      "date": "2023-12-04",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "IDN",
+      "instrument_id": "i-543843c315b3",
+      "title": "OJK publishes AI code of ethics guide for fintech",
+      "detail": "OJK and four fintech associations' guide on responsible and trustworthy AI posted on OJK's publication page on 4 December 2023.",
+      "from": null,
+      "to": null,
+      "source_url": "https://ojk.go.id/id/Publikasi/Roadmap-dan-Pedoman/ITSK/Pages/Panduan-Kode-Etik-Kecerdasan-Buatan-(AI)-yang-Bertanggung-Jawab-dan-Terpercaya-di-Industri-Teknologi-Finansial.aspx",
+      "needs_review": false
+    },
+    {
+      "id": "c-e122568f405a",
+      "date": "2022-10-17",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "IDN",
+      "instrument_id": "i-c2aba710017f",
+      "title": "Personal Data Protection Law (UU 27/2022) enacted",
+      "detail": "Enacted and promulgated in Jakarta on 17 October 2022 (State Gazette 2022 No. 196); includes a right to object to solely automated decisions (Art. 10).",
+      "from": null,
+      "to": null,
+      "source_url": "https://jdih.komdigi.go.id/produk_hukum/view/id/832/t/undangundang+nomor+27+tahun+2022",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Rancangan Peraturan Presiden tentang Peta Jalan Kecerdasan Artifisial Nasional Tahun 2026-2029",
+      "english_title": "Draft Presidential Regulation on the National Artificial Intelligence Roadmap 2026-2029",
+      "issuing_authority": "Ministry of Communication and Digital Affairs (initiator); President of the Republic of Indonesia",
+      "note": "JDIH Komdigi news of 12 Feb 2026 (berita/view/113) and 6 May 2026 (berita/view/116): inter-ministerial plenary held 11 Feb 2026; harmonisation March 2026; finalisation meetings 27 April and 5 May 2026 completed cross-ministry discussion before submission to the President. Media in September 2026 said it awaited the President's signature. No signed Perpres found on JDIH Komdigi or other official portals by 2026-10-12. Record as binding_regulation / strategy once published.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Rancangan Peraturan Presiden tentang Etika Kecerdasan Artifisial",
+      "english_title": "Draft Presidential Regulation on Artificial Intelligence Ethics",
+      "issuing_authority": "Ministry of Communication and Digital Affairs (initiator); President of the Republic of Indonesia",
+      "note": "Prepared alongside the roadmap regulation (JDIH Komdigi news berita/view/113 and 116; Komdigi Biro Hukum answer document dokumen-pembentukan-puu/unduh/70 lists both drafts). Not signed as of 2026-10-12. Would likely supersede or build on SE Menkominfo 9/2023. Record as binding_regulation / ethics once published.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Peraturan Pemerintah pelaksanaan UU 27/2022 tentang Pelindungan Data Pribadi (incl. Art. 10(2) objections to automated processing)",
+      "english_title": "Government Regulation implementing the Personal Data Protection Law (including objections to automated decision-making)",
+      "issuing_authority": "Government of Indonesia (Komdigi as drafter)",
+      "note": "Art. 10(2) of Law 27/2022 requires a Government Regulation on objections to automated processing. No issued regulation found on official portals during this review; check JDIH Komdigi / peraturan.go.id.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Peraturan Menteri Pendidikan Dasar dan Menengah Nomor 13 Tahun 2025 (Perubahan atas Permendikbudristek 12/2024 tentang Kurikulum)",
+      "english_title": "Regulation of the Minister of Primary and Secondary Education No. 13 of 2025 amending the curriculum regulation (adds a Coding and Artificial Intelligence elective subject)",
+      "issuing_authority": "Ministry of Primary and Secondary Education",
+      "note": "Listed on peraturan.bpk.go.id (Details/322506; search snippet: set 11 July 2025, in force 15 July 2025); reportedly adds Art. 32A creating the elective subject 'Koding dan Kecerdasan Artifisial'. BPK returned 403 to curl and WebFetch and jdih.kemendikdasmen.go.id reset the connection, so not verified. Record as sectoral / binding_regulation (education) once read.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Panduan Penggunaan Generative Artificial Intelligence (GenAI) pada Pembelajaran di Perguruan Tinggi",
+      "english_title": "Guide to the Use of Generative AI in Higher-Education Learning",
+      "issuing_authority": "Directorate of Learning and Student Affairs, Directorate General of Higher Education, Research and Technology (then Ministry of Education, Culture, Research and Technology)",
+      "note": "Reportedly released 11 October 2024; full copies found only on university sites and a shortlink, and only a synopsis on dikti.go.id (https://dikti.go.id/api/file/humas-production/2025/06/cover-GenAI-Sinopsis-dan-Spesifikasi.pdf). Record as sectoral / generative-ai administrative_guideline once an official full-text host is found.",
+      "found": "2026-10-12"
+    }
+  ]
 }

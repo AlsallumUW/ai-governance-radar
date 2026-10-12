@@ -10,18 +10,469 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "South Africa has no AI-specific law: section 71 of the Protection of Personal Information Act on automated decision-making is the main binding rule. National AI policy rests on the communications department's August 2024 National AI Policy Framework; a Cabinet-approved Draft National AI Policy was published for comment in April 2026 and withdrawn in its entirety in June 2026. The financial sector regulators (FSCA and the Prudential Authority) published the first sector report on AI in 2025, and the 2020 Presidential Commission on the Fourth Industrial Revolution report remains a reference.",
+    "lead_institutions": [
+      "Department of Communications and Digital Technologies",
+      "Information Regulator",
+      "Financial Sector Conduct Authority"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was completed on 12 October 2026 and covers national law, government, ministries and regulators. The 2024 AI Policy Framework could only be located because the department's website was down, and the 2026 draft AI policy is shown as withdrawn."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-7ed01c02cc74",
+      "official_title": "Protection of Personal Information Act, 2013 (Act No. 4 of 2013)",
+      "english_title": "Protection of Personal Information Act, 2013 (POPIA)",
+      "issuing_authority": "Parliament of the Republic of South Africa (assented to by the President; published by The Presidency, Government Notice 912, Government Gazette No. 37067)",
+      "authority_type": "legislature",
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2013-11-26",
+      "current_status": "In force (commenced in stages by presidential proclamation; the commencement dates are not stated in the Act as published and were not checked against the proclamations in this review). The Information Regulator established under the Act enforces it.",
+      "summary": "South Africa's general data protection law: it sets eight conditions for lawful processing of personal information, regulates direct marketing, transborder flows and special personal information, and establishes the Information Regulator. Section 71 provides that a data subject may not be subject to a decision with legal consequences or substantial effect based solely on automated processing intended to profile the person (e.g. work performance, creditworthiness, health, conduct), unless the decision is linked to a contract with appropriate safeguards or governed by a law or code with such measures; the safeguards must let the person make representations and give sufficient information about the underlying logic of the processing.",
+      "ai_governance_relevance": "Binding rules on automated decision-making and profiling (s.71) and on personal data used to train and run AI systems; the main binding AI-relevant law in South Africa.",
+      "source_url": "https://www.gov.za/sites/default/files/gcis_document/201409/3706726-11act4of2013popi.pdf",
+      "official_pdf_url": "https://www.gov.za/sites/default/files/gcis_document/201409/3706726-11act4of2013popi.pdf",
+      "official_webpage_url": "https://www.gov.za/documents/protection-personal-information-act",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-134619b4ce6d",
+      "publisher_name": "The Presidency (Government Gazette)",
+      "jurisdiction_id": "ZAF",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "South Africa (national)",
+      "technology_scope": [
+        "AI",
+        "automated decision-making",
+        "personal data"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [
+        "effective_date (staggered commencement by proclamation not checked)"
+      ],
+      "language": "en",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-ac3be44f3ee2",
+      "evidence_reference": "curl (browser user agent, --max-time 60) of the gov.za Acts page and the Government Gazette No. 37067 PDF (26 November 2013); read with pdftotext including section 71 (Automated decision making)"
+    },
+    {
+      "id": "i-4fbb71517613",
+      "official_title": "Summary Report and Recommendations presented by the Presidential Commission on the Fourth Industrial Revolution; and Diagnostic Report of the Presidential Commission on the Fourth Industrial Revolution (General Notice 591 of 2020)",
+      "english_title": "Report of the Presidential Commission on the 4th Industrial Revolution (PC4IR): Summary Report and Recommendations, and Diagnostic Report",
+      "issuing_authority": "Presidential Commission on the Fourth Industrial Revolution; published by the Minister of Communications and Digital Technologies (General Notice 591, Government Gazette No. 43834)",
+      "authority_type": "government",
+      "categories": [
+        "strategy",
+        "government-governance"
+      ],
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2020-10-23",
+      "current_status": "Published for general information in Government Gazette No. 43834 of 23 October 2020. Its recommendations underlie later AI work (the Draft National AI Policy of 2026 builds on the 2024 AI Policy Framework, which followed this report). Not a binding instrument.",
+      "summary": "Report of the Presidential Commission on the 4th Industrial Revolution, published by the Minister of Communications and Digital Technologies under the Commission's terms of reference (Gazette No. 42388 of 9 April 2019). It diagnoses South Africa's readiness for 4IR technologies, including artificial intelligence, and makes key recommendations such as investing in human capacity, building digital infrastructure, establishing an AI institute (a 'creative AI, Big Data Analytics, Blockchain and Cybersecurity' institute), securing government and citizens' data and updating regulation.",
+      "ai_governance_relevance": "First government-commissioned national roadmap that framed AI as a priority and recommended an AI institute; precursor to the national AI policy process.",
+      "source_url": "https://www.gov.za/sites/default/files/gcis_document/202010/43834gen591.pdf",
+      "official_pdf_url": "https://www.gov.za/sites/default/files/gcis_document/202010/43834gen591.pdf",
+      "official_webpage_url": null,
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-68c294686f1b",
+      "publisher_name": "Department of Communications and Digital Technologies",
+      "jurisdiction_id": "ZAF",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "strategy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "South Africa (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "en",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-91ed20aa65c6",
+      "evidence_reference": "curl (browser user agent, --max-time 60) of the Government Gazette No. 43834 PDF on gov.za (222 pages); notice text, gazette date and table of key recommendations read with pdftotext"
+    },
+    {
+      "id": "i-5d9a0e9879f6",
+      "official_title": "South Africa National Artificial Intelligence Policy Framework",
+      "english_title": "South Africa National Artificial Intelligence Policy Framework",
+      "issuing_authority": "Department of Communications and Digital Technologies",
+      "authority_type": "government",
+      "categories": [
+        "strategy",
+        "ethics",
+        "government-governance"
+      ],
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2024-08",
+      "current_status": "Per the Explanatory Note of the Draft South Africa National AI Policy (Gazette No. 54477, 10 April 2026), the Framework dates from August 2024 and received 32 submissions; the draft policy built on it was withdrawn on 12 June 2026 (Notice 3978 of 2026), so the Framework remains the latest national AI policy document. The DCDT website could not be read to confirm the exact date and text.",
+      "summary": "Policy framework issued by the Department of Communications and Digital Technologies as the first step towards a national AI policy. The Draft National AI Policy of 2026 describes itself as based on this Framework and the 32 public submissions received on it, and says it expands the Framework's strategic pillars.",
+      "ai_governance_relevance": "Current reference framework for national AI policy after the 2026 draft policy was withdrawn.",
+      "source_url": "https://www.dcdt.gov.za/sa-national-ai-policy-framework/file/338-sa-national-ai-policy-framework.html",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.dcdt.gov.za/sa-national-ai-policy-framework/file/338-sa-national-ai-policy-framework.html",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-68c294686f1b",
+      "publisher_name": "Department of Communications and Digital Technologies",
+      "jurisdiction_id": "ZAF",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "strategy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "South Africa (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-471ea2f73a35",
+        "i-4fbb71517613"
+      ],
+      "regional_applicability": [],
+      "metadata_gaps": [
+        "full text not read (DCDT site unreachable)",
+        "exact publication date (only 'August 2024' stated in the 2026 draft policy)",
+        "summary of pillars not checked against the text"
+      ],
+      "language": "en",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "primary_source_located",
+      "link_status": "inaccessible",
+      "document_access_type": "original_government_document",
+      "source_id": "s-e7c81a2d7e38",
+      "evidence_reference": "DCDT download page located (URL cited in discovery sources); curl (--max-time 60) failed with a TLS certificate-chain error on www.dcdt.gov.za and WebFetch returned HTTP 503 on 2026-10-12. Month and year taken from the official Draft National AI Policy (Gazette No. 54477), which states 'National Artificial Intelligence Policy Framework of August 2024'."
+    },
+    {
+      "id": "i-471ea2f73a35",
+      "official_title": "Draft South Africa National Artificial Intelligence (AI) Policy",
+      "english_title": "Draft South Africa National Artificial Intelligence (AI) Policy (General Notice 3880 of 2026)",
+      "issuing_authority": "Minister of Communications and Digital Technologies (Department of Communications and Digital Technologies); approved by Cabinet on 25 March 2026",
+      "authority_type": "government",
+      "categories": [
+        "drafts",
+        "strategy",
+        "government-governance",
+        "ethics",
+        "historical"
+      ],
+      "legal_status": "consultation_draft",
+      "lifecycle": "repealed",
+      "publication_date": "2026-04-10",
+      "current_status": "Published for 60 days' public comment (deadline 10 June 2026) in Government Gazette No. 54477 of 10 April 2026 (notice signed 9 April 2026). Withdrawn in its entirety by the Minister through General Notice 3978 of 2026 (Gazette No. 54840, 12 June 2026; signed 4 June 2026), effective from the date of publication. The withdrawal notice states no reason. No replacement draft was found on official sites as of 2026-10-12.",
+      "summary": "Cabinet-approved draft national AI policy published by the Minister of Communications and Digital Technologies for public comment under section 85(2)(b) of the Constitution. It set out strategic pillars and a staged implementation (finalise the policy and draft rules for unacceptable risks in 2025/26; guidelines and high-risk requirements in 2026/27) and proposed new institutions including a National AI Commission/Office, an AI Ethics Board, an AI Regulatory Authority, an AI Ombudsperson Office, an AI Insurance Superfund and a National AI Safety Institute, with ICASA repositioned and a National AI Regulatory Forum coordinating the Information Regulator, Competition Commission, SARB, FSCA and others. It was withdrawn before finalisation.",
+      "ai_governance_relevance": "South Africa's first gazetted national AI policy draft; withdrawn, kept for the timeline.",
+      "source_url": "https://www.gov.za/sites/default/files/gcis_document/202604/54477gen3880.pdf",
+      "official_pdf_url": "https://www.gov.za/sites/default/files/gcis_document/202604/54477gen3880.pdf",
+      "official_webpage_url": null,
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-68c294686f1b",
+      "publisher_name": "Department of Communications and Digital Technologies",
+      "jurisdiction_id": "ZAF",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "drafts",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "South Africa (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-5d9a0e9879f6"
+      ],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "en",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-2e16cdadf84a",
+      "evidence_reference": "curl (browser user agent, --max-time 60) of the Government Gazette No. 54477 PDF on gov.za (86-page policy); notice, comment deadline, implementation plan and institutional proposals read with pdftotext. Withdrawal read from Government Gazette No. 54840 PDF (Notice 3978 of 2026) at https://www.gov.za/sites/default/files/gcis_document/202606/54840gen3978.pdf, linked from the gov.za notice page."
+    },
+    {
+      "id": "i-f6e4292473b9",
+      "official_title": "Artificial Intelligence in the South African Financial Sector",
+      "english_title": "Artificial Intelligence in the South African Financial Sector",
+      "issuing_authority": "Financial Sector Conduct Authority (FSCA) and Prudential Authority (PA, South African Reserve Bank)",
+      "authority_type": "regulator",
+      "categories": [
+        "sectoral",
+        "risk-assurance",
+        "generative-ai"
+      ],
+      "legal_status": "regulatory_opinion",
+      "lifecycle": "published",
+      "publication_date": "2025-11-24",
+      "current_status": "Published jointly on 24 November 2025 (date of the FSCA/PA press release; the report cover says November 2025) on the SARB Prudential Authority publications page, with a databook and survey questionnaire. Non-binding; it envisages future sector-wide guidance on ethical and responsible AI.",
+      "summary": "Joint FSCA and Prudential Authority report giving the first overview of AI, machine learning and generative AI adoption in South African financial institutions, based on a 2024 survey of banks, insurers, investment managers and payment providers. It reviews international regulatory approaches, use cases, risks (privacy, bias, explainability, systemic risk) and governance and ethics considerations, and sets out lessons: explainability methods, board-level AI governance and model risk management, disclosure of AI in consumer-impacting decisions such as credit and insurance pricing, coordination with the Information Regulator on POPIA, and planned sector-wide guidance.",
+      "ai_governance_relevance": "Financial supervisors' first AI-specific publication and signal of forthcoming sector guidance.",
+      "source_url": "https://www.resbank.co.za/content/dam/sarb/publications/prudential-authority/pa-public-awareness/covid-19-response/2025/artificial-intelligence-in-the-south-african-financial-sector/Artificial%20Intelligence%20in%20the%20South%20African%20Financial%20Sector.pdf",
+      "official_pdf_url": "https://www.resbank.co.za/content/dam/sarb/publications/prudential-authority/pa-public-awareness/covid-19-response/2025/artificial-intelligence-in-the-south-african-financial-sector/Artificial%20Intelligence%20in%20the%20South%20African%20Financial%20Sector.pdf",
+      "official_webpage_url": "https://www.resbank.co.za/en/home/publications/publication-detail-pages/prudential-authority/pa-public-awareness/Communication/2025/AI-in-the-South-African-Financial-Sector",
+      "sectors": [
+        "finance"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-f0685205e1d4",
+      "publisher_name": "South African Reserve Bank (Prudential Authority)",
+      "jurisdiction_id": "ZAF",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "sectoral",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "South Africa (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "en",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-12a5242417dc",
+      "evidence_reference": "curl (browser user agent, --max-time 60): SARB PA publication page and 56-page report PDF read (pdftotext); 24 November 2025 date from the joint FSCA/PA press release PDF on resbank.co.za"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-68c294686f1b",
+      "jurisdiction_id": "ZAF",
+      "name": "Department of Communications and Digital Technologies",
+      "publisher_name_verified": true,
+      "ai_governance_role": "National department leading AI policy: published the 2024 South Africa National AI Policy Framework, the Draft South Africa National AI Policy (Government Notice 3880 of 2026, withdrawn by Notice 3978 of 2026), and the Presidential Commission on the 4th Industrial Revolution report (Notice 591 of 2020).",
+      "source_url": "https://www.dcdt.gov.za/",
+      "authority_type": "government",
+      "government_level": "national"
+    },
+    {
+      "id": "o-134619b4ce6d",
+      "jurisdiction_id": "ZAF",
+      "name": "Parliament of the Republic of South Africa",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Enacted the Protection of Personal Information Act 4 of 2013, whose section 71 restricts decisions based solely on automated processing.",
+      "source_url": "https://www.parliament.gov.za/",
+      "authority_type": "legislature",
+      "government_level": "national"
+    },
+    {
+      "id": "o-f0685205e1d4",
+      "jurisdiction_id": "ZAF",
+      "name": "Financial Sector Conduct Authority",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Market-conduct regulator of financial institutions; co-published with the Prudential Authority the November 2025 report Artificial Intelligence in the South African Financial Sector.",
+      "source_url": "https://www.fsca.co.za/",
+      "authority_type": "regulator",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-ac3be44f3ee2",
+      "url": "https://www.gov.za/sites/default/files/gcis_document/201409/3706726-11act4of2013popi.pdf",
+      "jurisdiction_ids": [
+        "ZAF"
+      ],
+      "source_institutions": [
+        "The Presidency (Government Gazette)"
+      ],
+      "instrument_ids": [
+        "i-7ed01c02cc74"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60) of the gov.za Acts page and the Government Gazette No. 37067 PDF (26 November 2013); read with pdftotext including section 71 (Automated decision making)",
+      "http_status": 200,
+      "final_url": "https://www.gov.za/sites/default/files/gcis_document/201409/3706726-11act4of2013popi.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-91ed20aa65c6",
+      "url": "https://www.gov.za/sites/default/files/gcis_document/202010/43834gen591.pdf",
+      "jurisdiction_ids": [
+        "ZAF"
+      ],
+      "source_institutions": [
+        "Department of Communications and Digital Technologies"
+      ],
+      "instrument_ids": [
+        "i-4fbb71517613"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "government-governance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60) of the Government Gazette No. 43834 PDF on gov.za (222 pages); notice text, gazette date and table of key recommendations read with pdftotext",
+      "http_status": 200,
+      "final_url": "https://www.gov.za/sites/default/files/gcis_document/202010/43834gen591.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-e7c81a2d7e38",
+      "url": "https://www.dcdt.gov.za/sa-national-ai-policy-framework/file/338-sa-national-ai-policy-framework.html",
+      "jurisdiction_ids": [
+        "ZAF"
+      ],
+      "source_institutions": [
+        "Department of Communications and Digital Technologies"
+      ],
+      "instrument_ids": [
+        "i-5d9a0e9879f6"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "ethics",
+        "government-governance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "DCDT download page located (URL cited in discovery sources); curl (--max-time 60) failed with a TLS certificate-chain error on www.dcdt.gov.za and WebFetch returned HTTP 503 on 2026-10-12. Month and year taken from the official Draft National AI Policy (Gazette No. 54477), which states 'National Artificial Intelligence Policy Framework of August 2024'.",
+      "http_status": null,
+      "final_url": "https://www.dcdt.gov.za/sa-national-ai-policy-framework/file/338-sa-national-ai-policy-framework.html",
+      "link_status": "inaccessible",
+      "page_title": null,
+      "document_language": "en",
+      "error": "curl TLS certificate verification failure; WebFetch HTTP 503",
+      "content_type": null
+    },
+    {
+      "id": "s-2e16cdadf84a",
+      "url": "https://www.gov.za/sites/default/files/gcis_document/202604/54477gen3880.pdf",
+      "jurisdiction_ids": [
+        "ZAF"
+      ],
+      "source_institutions": [
+        "Department of Communications and Digital Technologies"
+      ],
+      "instrument_ids": [
+        "i-471ea2f73a35"
+      ],
+      "categories_reviewed": [
+        "drafts",
+        "strategy",
+        "government-governance",
+        "ethics",
+        "historical"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60) of the Government Gazette No. 54477 PDF on gov.za (86-page policy); notice, comment deadline, implementation plan and institutional proposals read with pdftotext. Withdrawal read from Government Gazette No. 54840 PDF (Notice 3978 of 2026) at https://www.gov.za/sites/default/files/gcis_document/202606/54840gen3978.pdf, linked from the gov.za notice page.",
+      "http_status": 200,
+      "final_url": "https://www.gov.za/sites/default/files/gcis_document/202604/54477gen3880.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-12a5242417dc",
+      "url": "https://www.resbank.co.za/content/dam/sarb/publications/prudential-authority/pa-public-awareness/covid-19-response/2025/artificial-intelligence-in-the-south-african-financial-sector/Artificial%20Intelligence%20in%20the%20South%20African%20Financial%20Sector.pdf",
+      "jurisdiction_ids": [
+        "ZAF"
+      ],
+      "source_institutions": [
+        "South African Reserve Bank (Prudential Authority)"
+      ],
+      "instrument_ids": [
+        "i-f6e4292473b9"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "risk-assurance",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): SARB PA publication page and 56-page report PDF read (pdftotext); 24 November 2025 date from the joint FSCA/PA press release PDF on resbank.co.za",
+      "http_status": 200,
+      "final_url": "https://www.resbank.co.za/content/dam/sarb/publications/prudential-authority/pa-public-awareness/covid-19-response/2025/artificial-intelligence-in-the-south-african-financial-sector/Artificial%20Intelligence%20in%20the%20South%20African%20Financial%20Sector.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "ZAF",
     "country": "South Africa",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -33,55 +484,244 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_with_findings": [
       "binding-law",
-      "strategy",
-      "government-governance",
+      "data-privacy",
+      "drafts",
       "ethics",
+      "generative-ai",
+      "government-governance",
+      "historical",
       "risk-assurance",
+      "sectoral",
+      "strategy"
+    ],
+    "categories_where_no_material_was_found": [
       "public-sector",
       "procurement",
       "cyber-security",
-      "data-privacy",
       "transparency",
       "standards",
       "sandbox",
       "index-readiness",
-      "sectoral",
-      "generative-ai",
-      "drafts",
-      "international",
-      "historical"
+      "international"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "South Africa \"artificial intelligence\" (strategy OR regulation OR ethics) government ministry official",
       "South Africa \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "South Africa government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "South Africa \"artificial intelligence\" cybersecurity authority secure development safety guidelines",
-      "South Africa privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "South Africa privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "gov.za site search (documents): artificial intelligence; artificial intelligence policy; artificial intelligence framework; AI policy; artificial; Draft South Africa National Artificial Intelligence; artificial intelligence comments invited; 54477; Protection of Personal Information Act; Fourth Industrial Revolution",
+      "web: South Africa National Artificial Intelligence Policy withdrawn gov.za DCDT 2026",
+      "web: dcdt.gov.za South Africa National AI Policy Framework pdf",
+      "web: site:dcdt.gov.za artificial intelligence",
+      "web: site:gov.za Draft South Africa National Artificial Intelligence policy notice 3880",
+      "web: Information Regulator South Africa artificial intelligence guidance note automated decision making",
+      "web: Information Regulator inforegulator.org.za artificial intelligence guidance note 2025 POPIA",
+      "inforegulator.org.za guidance-notes page and site search 'artificial intelligence'",
+      "web: FSCA Prudential Authority Artificial Intelligence in the South African Financial Sector report 2025",
+      "web: Report of the Presidential Commission on the 4th Industrial Revolution gazette 43834",
+      "web: South Africa Department of Public Service and Administration artificial intelligence guideline public service",
+      "web: South Africa Department of Basic Education / Higher Education guidelines artificial intelligence generative AI",
+      "web: South Africa ICASA / Competition Commission / SABS artificial intelligence report or SANS 42001",
+      "web: South Africa Council of Europe Convention 108 accession"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. dcdt.gov.za TLS chain error/503 (2024 Framework located only, month from the 2026 draft's reference). Information Regulator guidance PDFs reset; its guidance-notes page has no AI-specific note. Withdrawn draft recorded with lifecycle repealed (GN 3978 of 2026, Gazette 54840, 12 June 2026). South Africa is not a party to Convention 108. Units covered: Law: gov.za Acts and Government Gazette notices searched for AI: no AI-specific Act or bill found; POPIA (Act 4 of 2013) s.71 automated decision-making recorded. No deepfake-specific offence or public-sector algorithm law found. Parliament: no AI bill found in gov.za bills/draft bills search.; Government: DCDT: 2024 National AI Policy Framework (located only; dcdt.gov.za unreachable), Draft National AI Policy (GN 3880 of 2026, read) and its withdrawal (GN 3978 of 2026, read), PC4IR report (GN 591 of 2020, read). No national public-sector AI/GenAI guideline found (DPSA searched).; Ministries: Searched education (DBE/DHET), public service (DPSA), health, justice, finance/National Treasury/SARS, labour, home affairs, defence via gov.za document search and web search: no ministry-level AI policy, strategy or guideline found.; Regulators: Information Regulator: guidance-notes page read, no AI-specific guidance (site intermittent). FSCA/Prudential Authority: joint AI report (Nov 2025) recorded. ICASA, Competition Commission, SABS (standards), cyber (no national cyber authority AI guidance found): searched, nothing AI-specific found.. Not reached: Full text of the 2024 National AI Policy Framework on dcdt.gov.za (TLS error / HTTP 503); Information Regulator individual guidance PDFs (connection resets). Could not verify: South Africa National AI Policy Framework (DCDT, August 2024): full text and exact date not read; www.dcdt.gov.za failed with curl (TLS certificate chain) and WebFetch (HTTP 503).; Information Regulator AI or automated decision-making guidance (claimed by a secondary source): not found on the Regulator's guidance-notes page.. public-sector, procurement, cyber-security, transparency, standards, sandbox, index-readiness, international: no material found.",
     "discovery_result_count": 14,
     "focused_result_count": 14
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-d7be2520fd0b",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ZAF",
+      "instrument_id": "i-7ed01c02cc74",
+      "title": "Protection of Personal Information Act, 2013 (POPIA)",
+      "detail": "Added to the radar (published 2013-11-26).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.gov.za/sites/default/files/gcis_document/201409/3706726-11act4of2013popi.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-d81755974efd",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ZAF",
+      "instrument_id": "i-4fbb71517613",
+      "title": "Report of the Presidential Commission on the 4th Industrial Revolution (PC4IR): Summary Report and Recommendations, and Diagnostic Report",
+      "detail": "Added to the radar (published 2020-10-23).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.gov.za/sites/default/files/gcis_document/202010/43834gen591.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-5bb5fb779470",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ZAF",
+      "instrument_id": "i-5d9a0e9879f6",
+      "title": "South Africa National Artificial Intelligence Policy Framework",
+      "detail": "Added to the radar (published 2024-08).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.dcdt.gov.za/sa-national-ai-policy-framework/file/338-sa-national-ai-policy-framework.html",
+      "needs_review": false
+    },
+    {
+      "id": "c-1566399a1b07",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ZAF",
+      "instrument_id": "i-471ea2f73a35",
+      "title": "Draft South Africa National Artificial Intelligence (AI) Policy (General Notice 3880 of 2026)",
+      "detail": "Added to the radar (published 2026-04-10).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.gov.za/sites/default/files/gcis_document/202604/54477gen3880.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-8108d79aee4e",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ZAF",
+      "instrument_id": "i-f6e4292473b9",
+      "title": "Artificial Intelligence in the South African Financial Sector",
+      "detail": "Added to the radar (published 2025-11-24).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.resbank.co.za/content/dam/sarb/publications/prudential-authority/pa-public-awareness/covid-19-response/2025/artificial-intelligence-in-the-south-african-financial-sector/Artificial%20Intelligence%20in%20the%20South%20African%20Financial%20Sector.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-e94340b1dde6",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "ZAF",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 5 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-c89eac6bfcf4",
+      "date": "2026-06-12",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "repealed",
+      "jurisdiction_id": "ZAF",
+      "instrument_id": "i-471ea2f73a35",
+      "title": "Draft South Africa National AI Policy withdrawn",
+      "detail": "General Notice 3978 of 2026, Gazette No. 54840 (signed 4 June 2026): the Minister of Communications and Digital Technologies withdraws Notice 3880 of 2026 in its entirety, effective from publication.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.gov.za/sites/default/files/gcis_document/202606/54840gen3978.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-287c79e2bb93",
+      "date": "2026-04-10",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "consultation",
+      "jurisdiction_id": "ZAF",
+      "instrument_id": "i-471ea2f73a35",
+      "title": "Draft South Africa National AI Policy published for comment",
+      "detail": "General Notice 3880 of 2026, Gazette No. 54477: Cabinet-approved draft national AI policy published for 60 days' public comment (deadline 10 June 2026).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.gov.za/sites/default/files/gcis_document/202604/54477gen3880.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-4642baf49da0",
+      "date": "2025-11-24",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "ZAF",
+      "instrument_id": "i-f6e4292473b9",
+      "title": "FSCA and PA publish report on AI in the financial sector",
+      "detail": "Joint FSCA/Prudential Authority report Artificial Intelligence in the South African Financial Sector released.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.resbank.co.za/content/dam/sarb/publications/prudential-authority/pa-public-awareness/covid-19-response/2025/artificial-intelligence-in-the-south-african-financial-sector/Artificial%20Intelligence%20in%20the%20South%20African%20Financial%20Sector.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-39fa6df43581",
+      "date": "2020-10-23",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "ZAF",
+      "instrument_id": "i-4fbb71517613",
+      "title": "PC4IR report published in Government Gazette",
+      "detail": "General Notice 591 of 2020, Gazette No. 43834: Minister of Communications and Digital Technologies publishes the Presidential Commission on the 4th Industrial Revolution report.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.gov.za/sites/default/files/gcis_document/202010/43834gen591.pdf",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "National Artificial Intelligence Policy (revised draft after withdrawal of Notice 3880 of 2026)",
+      "english_title": "South Africa National AI Policy (revised draft)",
+      "issuing_authority": "Department of Communications and Digital Technologies",
+      "note": "The Draft South Africa National AI Policy (GN 3880 of 2026) was withdrawn by GN 3978 of 2026 (Gazette 54840, 12 June 2026). No revised draft was found on gov.za on 2026-10-12; watch the Government Gazette and dcdt.gov.za and record it when gazetted.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Information Regulator guidance on automated decision-making / artificial intelligence under POPIA",
+      "english_title": "Information Regulator AI or automated decision-making guidance",
+      "issuing_authority": "Information Regulator (South Africa)",
+      "note": "A secondary source claims the Regulator issued guidance in 2025 on POPIA and automated decision-making; the Regulator's guidance-notes page (read 2026-10-12) lists no AI-specific note (only direct marketing, elections misinformation/disinformation, special personal information, children, Covid-19, political parties). Re-check inforegulator.org.za (site intermittently unreachable) before recording anything.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "SA National AI Policy Framework (DCDT) full-text verification",
+      "english_title": "South Africa National Artificial Intelligence Policy Framework: full text and exact date",
+      "issuing_authority": "Department of Communications and Digital Technologies",
+      "note": "Recorded as primary_source_located (i-record 'South Africa National Artificial Intelligence Policy Framework'); www.dcdt.gov.za failed (TLS chain error / HTTP 503) on 2026-10-12. Re-fetch https://www.dcdt.gov.za/sa-national-ai-policy-framework/file/338-sa-national-ai-policy-framework.html, confirm exact date and pillars, and upgrade to reviewed_primary_metadata.",
+      "found": "2026-10-12"
+    }
+  ]
 }
