@@ -10,18 +10,388 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Georgia has no AI law or stand-alone AI strategy. AI is governed through the 2023 Law on Personal Data Protection, which regulates decisions based solely on automated processing and requires impact assessments, and a binding 2020 National Bank regulation on risk management of AI and machine-learning models used by banks and other lenders. The Digital Governance Strategy 2025-2030 calls for an ethical and legal framework for AI in the public sector, and in 2026 the Ministry of Economy gave one of its departments a mandate to promote AI development.",
+    "lead_institutions": [
+      "Ministry of Economy and Sustainable Development",
+      "Digital Governance Agency",
+      "National Bank of Georgia",
+      "Personal Data Protection Service"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was completed on 12 October 2026 and covers national law, government, ministries and regulators. The data protection authority's website could not be reached, so any AI guidance it has issued could not be checked."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "official_title": "საქართველოს კანონი პერსონალურ მონაცემთა დაცვის შესახებ",
+      "english_title": "Law of Georgia on Personal Data Protection (No. 3144-XIმს-Xმპ of 14 June 2023)",
+      "issuing_authority": "Parliament of Georgia",
+      "authority_type": "legislature",
+      "publisher_name": "Legislative Herald of Georgia (LEPL Sakartvelos Sakanonmdeblo Matsne, Ministry of Justice)",
+      "categories": [
+        "data-privacy",
+        "binding-law",
+        "risk-assurance",
+        "transparency"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2023-07-03",
+      "effective_date": "2024-03-01",
+      "last_amended_date": "2026-06-10",
+      "current_status": "In force. Adopted 14 June 2023 and published on matsne.gov.ge on 3 July 2023 (registration code 010100000.05.001.020936); most articles, including art. 19 on automated decisions, apply from 1 March 2024 and art. 31 (data protection impact assessment) from 1 June 2024 (art. 90). It replaced the Law on Personal Data Protection of 28 December 2011 (art. 89). Amended several times, most recently by Law No. 1694-Vმს-XIმპ of 10 June 2026 (published 15 June 2026); consolidated versions on matsne.",
+      "summary": "Georgia's general data protection law, enforced by the Personal Data Protection Service. Art. 19 gives data subjects the right not to be subject to a decision based solely on automated processing, including profiling, that has legal or similarly significant effects, unless based on explicit consent, necessary for a contract or authorised by law, and art. 13 gives a right to information about automated decisions and the logic involved. Art. 31 makes a data protection impact assessment mandatory where processing using new technologies is likely to create a high risk, including when fully automated decisions with legal, financial or similarly significant effects are taken.",
+      "ai_governance_relevance": "Main binding rules in Georgian law on automated decision-making and profiling by AI systems.",
+      "language": "ka",
+      "source_url": "https://matsne.gov.ge/ka/document/view/5827307",
+      "official_webpage_url": "https://matsne.gov.ge/ka/document/view/5827307",
+      "official_pdf_url": null,
+      "source_kind": "legislation_portal",
+      "document_access_type": "official_publication_or_full_text_page",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "automated decision-making",
+        "profiling"
+      ],
+      "id": "i-6b13b21e8c40",
+      "source_id": "s-367024c16d6e",
+      "organization_id": "o-d23f4f659907",
+      "jurisdiction_id": "GEO",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "evidence_reference": "curl (browser user agent, --max-time 60): matsne.gov.ge document page read in full (Georgian); adoption 14/06/2023, publication 03/07/2023, arts. 13, 19, 31 and 90 (entry into force) checked; amendment list read",
+      "scope": "Georgia (national)",
+      "category": "data-privacy"
+    },
+    {
+      "official_title": "მონაცემებზე დაფუძნებული სტატისტიკური, ხელოვნური ინტელექტის და მანქანური სწავლების მოდელების რისკების მართვის დებულების დამტკიცების თაობაზე",
+      "english_title": "Order of the President of the National Bank of Georgia No. 151/04 of 17 August 2020 on approving the Regulation on risk management of data-driven statistical, artificial intelligence and machine learning models",
+      "issuing_authority": "President of the National Bank of Georgia",
+      "authority_type": "regulator",
+      "publisher_name": "Legislative Herald of Georgia (LEPL Sakartvelos Sakanonmdeblo Matsne, Ministry of Justice)",
+      "categories": [
+        "sectoral",
+        "risk-assurance",
+        "binding-law"
+      ],
+      "legal_status": "binding_regulation",
+      "lifecycle": "in_force",
+      "publication_date": "2020-08-18",
+      "effective_date": "2021-01-01",
+      "last_amended_date": "2023-06-26",
+      "current_status": "In force from 1 January 2021 for models built or updated after that date, and from 1 September 2021 for all models (arts. 2-3). Amended by NBG President's Orders No. 46/04 of 2 May 2022 (published 3 May 2022) and No. 135/04 of 26 June 2023 (in force 1 July 2023); the consolidated text on matsne is behind a paywall, so the original version was read.",
+      "summary": "Binding National Bank of Georgia regulation that sets a risk-management framework for data-driven statistical, AI and machine-learning models used by commercial banks, non-bank depository institutions, microfinance organisations and lending entities. It requires model-risk policies and procedures covering development, implementation, testing, internal validation and accuracy thresholds, a three-lines-of-defence split of responsibilities, and validation requirements for purchased models; certain 'supervisory models' need NBG risk assessment and consent before use.",
+      "ai_governance_relevance": "Georgia's only AI-specific binding regulation found; governs AI/ML credit and risk models in the financial sector.",
+      "language": "ka",
+      "source_url": "https://matsne.gov.ge/ka/document/view/4964423",
+      "official_webpage_url": "https://matsne.gov.ge/ka/document/view/4964423",
+      "official_pdf_url": null,
+      "source_kind": "legislation_portal",
+      "document_access_type": "official_publication_or_full_text_page",
+      "sectors": [
+        "finance"
+      ],
+      "technology_scope": [
+        "AI",
+        "machine learning",
+        "statistical models"
+      ],
+      "id": "i-cf7b50d18b72",
+      "source_id": "s-c024d13616bf",
+      "organization_id": "o-73fa0e259711",
+      "jurisdiction_id": "GEO",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "evidence_reference": "curl (browser user agent, --max-time 60): matsne.gov.ge page read (original 2020 version, full text: order arts. 1-3 and regulation arts. 1-4); amending orders 46/04 (doc 5451815) and 135/04 (doc 5840572) headers read on matsne",
+      "scope": "Georgia (national)",
+      "category": "sectoral"
+    },
+    {
+      "official_title": "საქართველოს ციფრული მმართველობის 2025 – 2030 წლების სტრატეგია",
+      "english_title": "Digital Governance Strategy of Georgia 2025-2030 (approved by Government Resolution No. 100 of 3 April 2025, with its 2025-2026 Action Plan)",
+      "issuing_authority": "Government of Georgia",
+      "authority_type": "government",
+      "publisher_name": "Legislative Herald of Georgia (LEPL Sakartvelos Sakanonmdeblo Matsne, Ministry of Justice)",
+      "categories": [
+        "strategy",
+        "public-sector",
+        "ethics"
+      ],
+      "legal_status": "national_strategy",
+      "lifecycle": "adopted",
+      "publication_date": "2025-04-07",
+      "effective_date": null,
+      "current_status": "Approved by Government of Georgia Resolution No. 100 of 3 April 2025, published on matsne.gov.ge on 7 April 2025 and effective on publication. The strategy text is attachment 1 of the resolution page. Georgia has no stand-alone national AI strategy; this is the government strategy with an AI component.",
+      "summary": "The Government's digital governance strategy for 2025-2030, coordinated with the Digital Governance Agency. It notes that Georgia has no single definition, legal framework or central inventory of AI systems used by public institutions, and states that the state needs a unified vision and strategy for introducing AI and other emerging technologies in the public sector. It recommends reviewing AI opportunities for digital services and accessibility and pre-emptively developing an ethical and legal framework for AI regulation based on international standards.",
+      "ai_governance_relevance": "Only government-adopted strategy found that sets an AI policy direction (ethical and legal AI framework; public-sector AI inventory).",
+      "language": "ka",
+      "source_url": "https://matsne.gov.ge/ka/document/view/6467487",
+      "official_webpage_url": "https://matsne.gov.ge/ka/document/view/6467487",
+      "official_pdf_url": "https://matsne.gov.ge/ka/document/download/6467487/0/1",
+      "source_kind": "legislation_portal",
+      "document_access_type": "official_publication_or_full_text_page",
+      "sectors": [
+        "public administration"
+      ],
+      "id": "i-e6a483bbe5b8",
+      "source_id": "s-c0fefe61d829",
+      "organization_id": "o-b6579c5e67c2",
+      "jurisdiction_id": "GEO",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "evidence_reference": "curl (browser user agent, --max-time 60): matsne.gov.ge resolution page read (No. 100, adopted 03/04/2025, published 07/04/2025); attachment 1 (strategy PDF) downloaded and read with pdftotext, AI passages under problem 2 and objective 2.2 read; action-plan spreadsheet (attachment 2) checked, no AI activity found",
+      "scope": "Georgia (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "last_amended_date": null,
+      "category": "strategy"
+    },
+    {
+      "official_title": "„საქართველოს ეკონომიკისა და მდგრადი განვითარების სამინისტროს კავშირგაბმულობის, საინფორმაციო და თანამედროვე ტექნოლოგიების დეპარტამენტის დებულების დამტკიცების შესახებ“ საქართველოს ეკონომიკისა და მდგრადი განვითარების მინისტრის 2016 წლის 29 თებერვლის №1-1/103 ბრძანებაში ცვლილების შეტანის თაობაზე",
+      "english_title": "Order of the Minister of Economy and Sustainable Development No. 1-1/66 of 9 March 2026 amending Order No. 1-1/103 of 29 February 2016 on the Statute of the Ministry's Department of Communications, Information and Modern Technologies",
+      "issuing_authority": "Minister of Economy and Sustainable Development of Georgia",
+      "authority_type": "government",
+      "publisher_name": "Legislative Herald of Georgia (LEPL Sakartvelos Sakanonmdeblo Matsne, Ministry of Justice)",
+      "categories": [
+        "government-governance"
+      ],
+      "legal_status": "binding_regulation",
+      "lifecycle": "in_force",
+      "publication_date": "2026-03-10",
+      "effective_date": "2026-03-10",
+      "current_status": "In force on publication (art. 2); published on matsne.gov.ge on 10 March 2026 (registration code 010240070.22.024.016948).",
+      "summary": "Ministerial order that rewrites the tasks of the Ministry of Economy and Sustainable Development's Department of Communications, Information and Modern Technologies. It adds explicit tasks to promote advanced technologies and innovation for the development of artificial intelligence alongside digital transformation and the digital economy, to support other agencies in meeting digital-policy strategy goals, and to coordinate digital-transformation activities with government, business, civil society, academia and development partners.",
+      "ai_governance_relevance": "Designates the ministry department responsible for promoting AI development; the only instrument found that assigns an AI mandate to a government unit.",
+      "language": "ka",
+      "source_url": "https://matsne.gov.ge/ka/document/view/6809012",
+      "official_webpage_url": "https://matsne.gov.ge/ka/document/view/6809012",
+      "official_pdf_url": null,
+      "source_kind": "legislation_portal",
+      "document_access_type": "official_publication_or_full_text_page",
+      "sectors": [
+        "cross-sector"
+      ],
+      "id": "i-aae040bfc65c",
+      "source_id": "s-4b7c0b589939",
+      "organization_id": "o-c2196206cd0b",
+      "jurisdiction_id": "GEO",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "evidence_reference": "curl (browser user agent, --max-time 60): matsne.gov.ge page read in full (order No. 1-1/66, adopted 09/03/2026, published 10/03/2026, arts. 1-2; AI tasks in new art. 2(1) sub-paragraphs)",
+      "scope": "Georgia (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "last_amended_date": null,
+      "category": "government-governance"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-d23f4f659907",
+      "jurisdiction_id": "GEO",
+      "name": "Parliament of Georgia",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Legislature; adopted the 2023 Law on Personal Data Protection, which regulates automated individual decision-making and profiling.",
+      "source_url": "https://parliament.ge/",
+      "authority_type": "legislature",
+      "government_level": "national"
+    },
+    {
+      "id": "o-73fa0e259711",
+      "jurisdiction_id": "GEO",
+      "name": "National Bank of Georgia",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Central bank and financial supervisor; issued the binding regulation on risk management of data-driven statistical, AI and machine-learning models used by supervised lenders.",
+      "source_url": "https://nbg.gov.ge/",
+      "authority_type": "regulator",
+      "government_level": "national"
+    },
+    {
+      "id": "o-c2196206cd0b",
+      "jurisdiction_id": "GEO",
+      "name": "Ministry of Economy and Sustainable Development of Georgia",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Ministry responsible for digital economy and electronic communications policy; its Department of Communications, Information and Modern Technologies is tasked (Order 1-1/66 of 2026) with promoting AI development.",
+      "source_url": "https://www.economy.ge/",
+      "authority_type": "government",
+      "government_level": "national"
+    },
+    {
+      "id": "o-b6579c5e67c2",
+      "jurisdiction_id": "GEO",
+      "name": "Government of Georgia",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Executive; approved the Digital Governance Strategy 2025-2030, which calls for an ethical and legal framework for AI and an inventory of public-sector AI systems.",
+      "source_url": "https://www.gov.ge/",
+      "authority_type": "government",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-367024c16d6e",
+      "url": "https://matsne.gov.ge/ka/document/view/5827307",
+      "jurisdiction_ids": [
+        "GEO"
+      ],
+      "source_institutions": [
+        "Legislative Herald of Georgia (LEPL Sakartvelos Sakanonmdeblo Matsne, Ministry of Justice)"
+      ],
+      "instrument_ids": [
+        "i-6b13b21e8c40"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law",
+        "risk-assurance",
+        "transparency"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): matsne.gov.ge document page read in full (Georgian); adoption 14/06/2023, publication 03/07/2023, arts. 13, 19, 31 and 90 (entry into force) checked; amendment list read",
+      "http_status": 200,
+      "final_url": "https://matsne.gov.ge/ka/document/view/5827307",
+      "link_status": "reachable",
+      "page_title": "პერსონალურ მონაცემთა დაცვის შესახებ | სსიპ ”საქართველოს საკანონმდებლო მაცნე”",
+      "document_language": "ka",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-c024d13616bf",
+      "url": "https://matsne.gov.ge/ka/document/view/4964423",
+      "jurisdiction_ids": [
+        "GEO"
+      ],
+      "source_institutions": [
+        "Legislative Herald of Georgia (LEPL Sakartvelos Sakanonmdeblo Matsne, Ministry of Justice)"
+      ],
+      "instrument_ids": [
+        "i-cf7b50d18b72"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "risk-assurance",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): matsne.gov.ge page read (original 2020 version, full text: order arts. 1-3 and regulation arts. 1-4); amending orders 46/04 (doc 5451815) and 135/04 (doc 5840572) headers read on matsne",
+      "http_status": 200,
+      "final_url": "https://matsne.gov.ge/ka/document/view/4964423",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "ka",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-c0fefe61d829",
+      "url": "https://matsne.gov.ge/ka/document/view/6467487",
+      "jurisdiction_ids": [
+        "GEO"
+      ],
+      "source_institutions": [
+        "Legislative Herald of Georgia (LEPL Sakartvelos Sakanonmdeblo Matsne, Ministry of Justice)"
+      ],
+      "instrument_ids": [
+        "i-e6a483bbe5b8"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "public-sector",
+        "ethics"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): matsne.gov.ge resolution page read (No. 100, adopted 03/04/2025, published 07/04/2025); attachment 1 (strategy PDF) downloaded and read with pdftotext, AI passages under problem 2 and objective 2.2 read; action-plan spreadsheet (attachment 2) checked, no AI activity found",
+      "http_status": 200,
+      "final_url": "https://matsne.gov.ge/ka/document/view/6467487",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "ka",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-4b7c0b589939",
+      "url": "https://matsne.gov.ge/ka/document/view/6809012",
+      "jurisdiction_ids": [
+        "GEO"
+      ],
+      "source_institutions": [
+        "Legislative Herald of Georgia (LEPL Sakartvelos Sakanonmdeblo Matsne, Ministry of Justice)"
+      ],
+      "instrument_ids": [
+        "i-aae040bfc65c"
+      ],
+      "categories_reviewed": [
+        "government-governance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): matsne.gov.ge page read in full (order No. 1-1/66, adopted 09/03/2026, published 10/03/2026, arts. 1-2; AI tasks in new art. 2(1) sub-paragraphs)",
+      "http_status": 200,
+      "final_url": "https://matsne.gov.ge/ka/document/view/6809012",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "ka",
+      "error": null,
+      "content_type": "text/html"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "GEO",
     "country": "Georgia",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -33,55 +403,270 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_with_findings": [
       "binding-law",
-      "strategy",
-      "government-governance",
+      "data-privacy",
       "ethics",
-      "risk-assurance",
+      "government-governance",
       "public-sector",
+      "risk-assurance",
+      "sectoral",
+      "strategy",
+      "transparency"
+    ],
+    "categories_where_no_material_was_found": [
       "procurement",
       "cyber-security",
-      "data-privacy",
-      "transparency",
       "standards",
       "sandbox",
       "index-readiness",
-      "sectoral",
       "generative-ai",
       "drafts",
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Georgia \"ხელოვნური ინტელექტი\" (სტრატეგია OR რეგულაცია OR ეთიკა) government ministry official",
       "Georgia \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Georgia government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Georgia \"ხელოვნური ინტელექტი\" cybersecurity authority secure development safety guidelines",
-      "Georgia privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Georgia privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "matsne.gov.ge title search: ხელოვნური ინტელექტი / ხელოვნური ინტელექტის / ხელოვნური ინტელექტ / ხელოვნურ / ხელოვნური ინტელექტით",
+      "matsne.gov.ge title search: მანქანური სწავლ / ალგორითმ / დიპფეიკ",
+      "matsne.gov.ge title search: ციფრული მმართველობის / ციფრული ტრანსფორმაციის სტრატეგ / კიბერუსაფრთხოების სტრატეგ",
+      "matsne.gov.ge title search: ავტომატური დამუშავებისას / ავტომატური დამუშავების (Convention 108 ratification)",
+      "parliament.ge site search: ხელოვნური ინტელექტ (bills, documents, news)",
+      "Georgia national artificial intelligence strategy adopted government decree",
+      "საქართველო ხელოვნური ინტელექტის ეროვნული სტრატეგია მთავრობა 2026 ეკონომიკის სამინისტრო",
+      "parliament.ge ხელოვნური ინტელექტის შესახებ კანონპროექტი",
+      "Georgia parliament draft law artificial intelligence 2025 2026",
+      "Personal Data Protection Service Georgia artificial intelligence guidance pdps.ge",
+      "pdps.ge ხელოვნური ინტელექტი რეკომენდაცია პერსონალურ მონაცემთა დაცვის სამსახური",
+      "\"Personal Data Protection Service\" Georgia artificial intelligence recommendations guidelines inspection",
+      "National Bank of Georgia artificial intelligence guidance regulation",
+      "nbg.gov.ge artificial intelligence guidance principles financial institutions 2025",
+      "Georgia Digital Governance Agency artificial intelligence public sector guidelines dga.gov.ge",
+      "ციფრული მმართველობის სააგენტო ხელოვნური ინტელექტის გამოყენების სახელმძღვანელო საჯარო სექტორი",
+      "Georgia Ministry of Education Science and Youth artificial intelligence school curriculum guidelines"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. pdps.ge reset/503. NBG Order 151/04 consolidated text behind the matsne paywall (original 2020 text read; amending orders' headers checked). 2023 'Guiding Principles of the National Strategy on AI' is a university working-group paper (not recorded). Convention 108: Parliament Resolution No. 2010 of 28 October 2005, recorded on the COE file. Units covered: Law: matsne.gov.ge searched in Georgian (AI, machine learning, algorithm, deepfake, automated processing): Law on Personal Data Protection 2023 (automated decisions, DPIA) recorded; no AI-specific law, no deepfake or public-sector algorithm provisions found by title. parliament.ge searched: no AI bill registered (only a 2024 MP report on a PACE AI sub-committee meeting and news items).; Government: No stand-alone national AI strategy adopted (the 2023 'guiding principles' document is a university working-group paper, not a government act). Digital Governance Strategy 2025-2030 (Gov. Resolution No. 100) recorded for its AI objective. Digital Governance Agency site checked: AI items are news only (forums), no AI guidance document found.; Ministries: Economy (MoESD order 1-1/66 of 2026 assigning AI development tasks recorded); Education (mes.gov.ge homepage and searches: news only, no AI guidance document); Justice, Health, Defence, Finance, Interior, Labour: searched via matsne title search and web search, nothing AI-specific found.; Regulators: National Bank of Georgia: binding AI/ML model risk regulation (Order 151/04, 2020) recorded; no other NBG AI guidance found. Personal Data Protection Service: pdps.ge unreachable (connection reset via curl, HTTP 503 via WebFetch) and no AI guidance found by search. Communications Commission (comcom.ge) and cyber security (Digital Governance Agency CERT/Operative-Technical Agency): nothing AI-specific found.. Not reached: Personal Data Protection Service website (pdps.ge) could not be read (curl connection reset, WebFetch HTTP 503); its AI guidance, if any, unverified. Could not verify: Personal Data Protection Service AI guidance (pdps.ge unreachable); Consolidated text of NBG Order 151/04 after the 2022 and 2023 amendments (paywalled on matsne); original version read. procurement, cyber-security, standards, sandbox, index-readiness, generative-ai, drafts, international, historical: no material found.",
     "discovery_result_count": 11,
     "focused_result_count": 11
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-3f05937a1c18",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "GEO",
+      "instrument_id": "i-6b13b21e8c40",
+      "title": "Law of Georgia on Personal Data Protection (No. 3144-XIმს-Xმპ of 14 June 2023)",
+      "detail": "Added to the radar (published 2023-07-03).",
+      "from": null,
+      "to": null,
+      "source_url": "https://matsne.gov.ge/ka/document/view/5827307",
+      "needs_review": false
+    },
+    {
+      "id": "c-ecc856e73e8a",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "GEO",
+      "instrument_id": "i-cf7b50d18b72",
+      "title": "Order of the President of the National Bank of Georgia No. 151/04 of 17 August 2020 on approving the Regulation on risk management of data-driven statistical, artificial intelligence and machine learning models",
+      "detail": "Added to the radar (published 2020-08-18).",
+      "from": null,
+      "to": null,
+      "source_url": "https://matsne.gov.ge/ka/document/view/4964423",
+      "needs_review": false
+    },
+    {
+      "id": "c-a125e7ae28c5",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "GEO",
+      "instrument_id": "i-e6a483bbe5b8",
+      "title": "Digital Governance Strategy of Georgia 2025-2030 (approved by Government Resolution No. 100 of 3 April 2025, with its 2025-2026 Action Plan)",
+      "detail": "Added to the radar (published 2025-04-07).",
+      "from": null,
+      "to": null,
+      "source_url": "https://matsne.gov.ge/ka/document/view/6467487",
+      "needs_review": false
+    },
+    {
+      "id": "c-de283fe86fb5",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "GEO",
+      "instrument_id": "i-aae040bfc65c",
+      "title": "Order of the Minister of Economy and Sustainable Development No. 1-1/66 of 9 March 2026 amending Order No. 1-1/103 of 29 February 2016 on the Statute of the Ministry's Department of Communications, Information and Modern Technologies",
+      "detail": "Added to the radar (published 2026-03-10).",
+      "from": null,
+      "to": null,
+      "source_url": "https://matsne.gov.ge/ka/document/view/6809012",
+      "needs_review": false
+    },
+    {
+      "id": "c-0547c3aacc15",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "GEO",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 4 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-ac9bb74d47b9",
+      "date": "2026-03-10",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "GEO",
+      "instrument_id": "i-aae040bfc65c",
+      "title": "Economy ministry department given AI development mandate",
+      "detail": "Minister's Order No. 1-1/66 of 9 March 2026 adds promotion of AI development to the tasks of the Department of Communications, Information and Modern Technologies; in force on publication.",
+      "from": null,
+      "to": null,
+      "source_url": "https://matsne.gov.ge/ka/document/view/6809012",
+      "needs_review": false
+    },
+    {
+      "id": "c-3712e1ebfb1b",
+      "date": "2025-04-07",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "GEO",
+      "instrument_id": "i-e6a483bbe5b8",
+      "title": "Digital Governance Strategy 2025-2030 approved",
+      "detail": "Government Resolution No. 100 of 3 April 2025 approving the Digital Governance Strategy 2025-2030, which calls for an ethical and legal framework for AI, published on matsne.gov.ge.",
+      "from": null,
+      "to": null,
+      "source_url": "https://matsne.gov.ge/ka/document/view/6467487",
+      "needs_review": false
+    },
+    {
+      "id": "c-abd30642b1b5",
+      "date": "2024-06-01",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "GEO",
+      "instrument_id": "i-6b13b21e8c40",
+      "title": "Law on Personal Data Protection: impact assessment duty applies",
+      "detail": "Art. 31 (data protection impact assessment, mandatory for fully automated decisions with significant effects) applies from 1 June 2024 (art. 90(3)).",
+      "from": null,
+      "to": null,
+      "source_url": "https://matsne.gov.ge/ka/document/view/5827307",
+      "needs_review": false
+    },
+    {
+      "id": "c-96a765ade285",
+      "date": "2024-03-01",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "GEO",
+      "instrument_id": "i-6b13b21e8c40",
+      "title": "Law on Personal Data Protection: automated-decision rules apply",
+      "detail": "Most provisions, including art. 19 on solely automated decisions and profiling, apply from 1 March 2024 (art. 90(2)).",
+      "from": null,
+      "to": null,
+      "source_url": "https://matsne.gov.ge/ka/document/view/5827307",
+      "needs_review": false
+    },
+    {
+      "id": "c-7d0f2f33d919",
+      "date": "2023-07-03",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "GEO",
+      "instrument_id": "i-6b13b21e8c40",
+      "title": "Law on Personal Data Protection published",
+      "detail": "Law No. 3144-XIმს-Xმპ of 14 June 2023, including rules on automated individual decisions and profiling (art. 19), published on matsne.gov.ge.",
+      "from": null,
+      "to": null,
+      "source_url": "https://matsne.gov.ge/ka/document/view/5827307",
+      "needs_review": false
+    },
+    {
+      "id": "c-3aa3aa9ff0b8",
+      "date": "2023-06-26",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "revised",
+      "jurisdiction_id": "GEO",
+      "instrument_id": "i-cf7b50d18b72",
+      "title": "NBG AI/ML model risk regulation amended",
+      "detail": "Order No. 135/04 of 26 June 2023 amends the regulation; in force 1 July 2023.",
+      "from": null,
+      "to": null,
+      "source_url": "https://matsne.gov.ge/ka/document/view/5840572",
+      "needs_review": false
+    },
+    {
+      "id": "c-c16a38f05907",
+      "date": "2021-01-01",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "GEO",
+      "instrument_id": "i-cf7b50d18b72",
+      "title": "NBG AI/ML model risk regulation applies",
+      "detail": "Order No. 151/04 applies from 1 January 2021 to models built or updated after that date (art. 2-3).",
+      "from": null,
+      "to": null,
+      "source_url": "https://matsne.gov.ge/ka/document/view/4964423",
+      "needs_review": false
+    },
+    {
+      "id": "c-865ac687f90a",
+      "date": "2020-08-18",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "GEO",
+      "instrument_id": "i-cf7b50d18b72",
+      "title": "NBG regulation on AI and machine-learning model risk published",
+      "detail": "Order No. 151/04 of 17 August 2020 approving the Regulation on risk management of data-driven statistical, AI and ML models published on matsne.gov.ge.",
+      "from": null,
+      "to": null,
+      "source_url": "https://matsne.gov.ge/ka/document/view/4964423",
+      "needs_review": false
+    }
+  ],
+  "leads": []
 }
