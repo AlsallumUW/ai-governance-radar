@@ -10,18 +10,116 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Burkina Faso's AI governance rests on explicit AI clauses in its 2021 personal data protection law (Law 001-2021/AN), which requires transparency of AI-based processing, prior authorisation by the data protection commission (CIL) for predictive AI decision-support systems and limits on automated decisions. A national AI roadmap to 2030 was validated in June 2026 but has not been published, and there is no AI-specific law. The digital transition ministry's website could not be accessed during this review.",
+    "lead_institutions": [
+      "Ministry of Digital Transition",
+      "Commission de l'Informatique et des Libertés (CIL)"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was carried out on 12 October 2026, but the digital ministry's website and the official gazette search could not be accessed, so only one document could be read. The national AI roadmap is listed as a lead. Burkina Faso is marked for a later retry and, as a country of over 20 million people with few records, for a longer catch-up pass."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-bc3715316d30",
+      "authority_type": "legislature",
+      "jurisdiction_id": "BFA",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Burkina Faso (national)",
+      "technology_scope": [
+        "AI",
+        "personal data"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "document_access_type": "original_government_document",
+      "source_id": "s-ff0a07456678",
+      "sectors": [
+        "cross-sector"
+      ],
+      "official_title": "Loi n°001-2021/AN du 30 mars 2021 portant protection des personnes à l'égard du traitement des données à caractère personnel",
+      "english_title": "Law No. 001-2021/AN of 30 March 2021 on the protection of persons with regard to the processing of personal data",
+      "issuing_authority": "National Assembly",
+      "publisher_name": "National Assembly",
+      "organization_id": "o-e037d7dbb04a",
+      "categories": [
+        "data-privacy",
+        "binding-law",
+        "transparency"
+      ],
+      "category": "data-privacy",
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2021-03-30",
+      "effective_date": null,
+      "summary": "Burkina Faso's general personal data protection law, applying to automated and non-automated processing by public and private controllers established in or operating from the country, with the Commission de l'informatique et des libertés (CIL) as supervisory authority; it repeals Law 010-2004/AN. It contains explicit AI provisions: art. 15 bars court decisions based on automated profiling and administrative or private decisions based solely on it, art. 19 gives a right to know and contest the reasoning of automated processing and, where processing 'relève de l'intelligence artificielle', requires the criteria and nature of the data to be disclosed at collection, and art. 31 makes decision-support processing relying on AI techniques for predictive purposes subject to prior CIL authorisation.",
+      "ai_governance_relevance": "General law with explicit AI provisions (transparency of AI-based processing, prior authorisation of predictive AI decision-support, limits on automated decisions).",
+      "source_url": "https://assembleenationale.bf/storage/Loi/kDsWHXOTUCQFVESChh8BlBdiZnCrdTsOpXe1rzmH.pdf",
+      "official_pdf_url": "https://assembleenationale.bf/storage/Loi/kDsWHXOTUCQFVESChh8BlBdiZnCrdTsOpXe1rzmH.pdf",
+      "official_webpage_url": null,
+      "source_kind": "official_document",
+      "language": "fr",
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "current_status": "In force. Adopted by the National Assembly in public session on 30 March 2021 (date in the title and the National Assembly PDF); promulgated by Décret n°2021-0276/PRES of 20 April 2021 (text of the promulgation decree published by the CIL at https://cil.bf/wp-content/uploads/2026/09/Decret-2021-0276-promulguant-la-loi-n°001-2021-du-30-mars-2021-portant-protection-des-personnes-a-legart-du-traitement-des-donnees-a-caratere-personnel.pdf), which orders publication in the Journal officiel du Faso (JO issue reference not located). Implementing rules: Décret n°2022-0514/PRES-TRANS/PM/MJDHRI/MEFP of 18 July 2022 on modalities of application (held as a lead). Art. 81 gives existing processing one year from entry into force to comply; art. 82 repeals Law 010-2004/AN of 20 April 2004.",
+      "evidence_reference": "Re-checked 2026-10-12: curl (browser user agent, --max-time 60) of the National Assembly PDF: first attempt connection reset, retries HTTP 200 application/pdf 733,956 bytes (same file as first read); 36-page text re-read with pdftotext: art. 15, art. 19 (AI transparency), art. 31 (prior authorisation of AI predictive decision-support), arts. 81-83 and adoption date 30 March 2021 confirmed. Promulgation decree 2021-0276/PRES of 20 April 2021 read from the scanned PDF on cil.bf (HTTP 200)."
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-e037d7dbb04a",
+      "jurisdiction_id": "BFA",
+      "name": "National Assembly",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Legislature of Burkina Faso (Assemblée nationale; since 2022 the Transitional Legislative Assembly sits in its place); adopted Law 001-2021/AN on personal data protection, which contains explicit AI provisions.",
+      "source_url": "https://assembleenationale.bf/",
+      "authority_type": "legislature",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-ff0a07456678",
+      "url": "https://assembleenationale.bf/storage/Loi/kDsWHXOTUCQFVESChh8BlBdiZnCrdTsOpXe1rzmH.pdf",
+      "jurisdiction_ids": [
+        "BFA"
+      ],
+      "source_institutions": [
+        "National Assembly"
+      ],
+      "instrument_ids": [
+        "i-bc3715316d30"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law",
+        "transparency"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "Re-checked 2026-10-12: curl (browser user agent, --max-time 60) of the National Assembly PDF: first attempt connection reset, retries HTTP 200 application/pdf 733,956 bytes (same file as first read); 36-page text re-read with pdftotext: art. 15, art. 19 (AI transparency), art. 31 (prior authorisation of AI predictive decision-support), arts. 81-83 and adoption date 30 March 2021 confirmed. Promulgation decree 2021-0276/PRES of 20 April 2021 read from the scanned PDF on cil.bf (HTTP 200).",
+      "http_status": 200,
+      "final_url": "https://assembleenationale.bf/storage/Loi/kDsWHXOTUCQFVESChh8BlBdiZnCrdTsOpXe1rzmH.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "fr",
+      "error": null,
+      "content_type": "application/pdf"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "BFA",
     "country": "Burkina Faso",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -33,10 +131,12 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_with_findings": [
       "binding-law",
+      "data-privacy",
+      "transparency"
+    ],
+    "categories_where_no_material_was_found": [
       "strategy",
       "government-governance",
       "ethics",
@@ -44,8 +144,6 @@
       "public-sector",
       "procurement",
       "cyber-security",
-      "data-privacy",
-      "transparency",
       "standards",
       "sandbox",
       "index-readiness",
@@ -55,33 +153,104 @@
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Burkina Faso \"intelligence artificielle\" (stratégie OR réglementation OR éthique) government ministry official",
       "Burkina Faso \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Burkina Faso government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Burkina Faso \"intelligence artificielle\" cybersecurity authority secure development safety guidelines",
-      "Burkina Faso privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Burkina Faso privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "Burkina Faso stratégie nationale intelligence artificielle ministère transition digitale",
+      "Burkina Faso adhésion Convention 108 décret ratification protection des données Conseil de l'Europe",
+      "\"Burkina Faso\" Convention 108 accession deposit instrument Council of Europe 2023-2026",
+      "Burkina Faso feuille de route nationale intelligence artificielle 2030 site:gov.bf",
+      "ministère de la Transition digitale des Postes et des Communications électroniques intelligence artificielle SPIVTEN",
+      "\"Conseil des ministres\" Burkina Faso adopté \"intelligence artificielle\" stratégie OR feuille de route OR projet de loi 2026",
+      "cil.bf site search: intelligence artificielle",
+      "gouvernement.gov.bf site search: intelligence artificielle; feuille de route intelligence artificielle"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. mtdpce.gov.bf DNS failure/proxy 502; Journal officiel/legiburkina.bf search, ARCEP, ANSSI and BCEAO not reached; CoE treaty chart 403. Run resumed after a usage-limit interruption; the existing record was re-checked against the National Assembly PDF (promulgation decree 2021-0276/PRES added). Application decree 2022-0514 is an image-only scan (lead). Convention 108 accession act not found. Units covered: Law: National Assembly text of Law 001-2021/AN (AI provisions arts. 15, 19, 31) re-read; promulgation and application decrees located on cil.bf. No AI-specific law, deepfake offence or AI bill found (Legislative Assembly reported only AI training for deputies, July 2026).; Government: gouvernement.gov.bf (SIG) searched: only news on AI capacity-building (Primature, SIG) and a disclaimer communiqué; national AI roadmap 2026-2030 validated June 2026 but not published (lead). Ministry of Digital Transition site unreachable.; Ministries: Searched via government portal and web search (education, health, justice, defence, finance): no ministry AI documents found.; Regulators: CIL (cil.bf) laws/decrees/strategy/guides pages and site search: no AI guidance document (only a January 2025 video talk by the CIL president on AI and data protection). ARCEP, ANSSI, BCEAO not reached.. Not reached: Ministry of Digital Transition website (mtdpce.gov.bf: DNS failure / proxy 502); Journal officiel / legiburkina.bf gazette search; ARCEP, ANSSI, BCEAO AI-specific documents; Council of Europe treaty office chart for ETS 108 (HTTP 403). Could not verify: Convention 108: Burkina Faso was invited to accede in March 2017 and reported in 2021 it was moving to ratification, but no accession act or deposit was found in national sources and the CoE treaty chart returned HTTP 403; set to null.; National AI roadmap 2026-2030: only press reports of the 17 June 2026 validation workshop; no official text.. strategy, government-governance, ethics, risk-assurance, public-sector, procurement, cyber-security, standards, sandbox, index-readiness, sectoral, generative-ai, drafts, international, historical: no material found.",
     "discovery_result_count": 10,
     "focused_result_count": 11
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-52756e843df6",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "BFA",
+      "instrument_id": "i-bc3715316d30",
+      "title": "Law No. 001-2021/AN of 30 March 2021 on the protection of persons with regard to the processing of personal data",
+      "detail": "Added to the radar (published 2021-03-30).",
+      "from": null,
+      "to": null,
+      "source_url": "https://assembleenationale.bf/storage/Loi/kDsWHXOTUCQFVESChh8BlBdiZnCrdTsOpXe1rzmH.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-e4f302e2bc3c",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "BFA",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 1 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-644760b3aafe",
+      "date": "2021-03-30",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "BFA",
+      "instrument_id": "i-bc3715316d30",
+      "title": "Loi n°001-2021/AN du 30 mars 2021 portant protection des personnes à l'égard du traitement des données à caractère personnel",
+      "detail": "Adopted by the National Assembly in public session on 30 March 2021; promulgated by Décret n°2021-0276/PRES of 20 April 2021.",
+      "from": null,
+      "to": null,
+      "source_url": "https://assembleenationale.bf/storage/Loi/kDsWHXOTUCQFVESChh8BlBdiZnCrdTsOpXe1rzmH.pdf",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Feuille de route nationale de l'intelligence artificielle à l'horizon 2030",
+      "english_title": "National Artificial Intelligence Roadmap to 2030 (2026-2030)",
+      "issuing_authority": "Ministry of Digital Transition, Posts and Electronic Communications (SPIVTEN)",
+      "note": "Reported validated at a ministry workshop on 17 June 2026 (Plan national de relance 2026-2030; 'L'IA au service de tous les Burkinabè'). No official full text or Council of Ministers adoption found; ministry website (mtdpce.gov.bf) unreachable (DNS/proxy). Promote once published.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Décret n°2022-0514/PRES-TRANS/PM/MJDHRI/MEFP portant modalités d'application de la loi n°001-2021/AN du 30 mars 2021 portant protection des personnes à l'égard du traitement des données à caractère personnel",
+      "english_title": "Decree No. 2022-0514 on the modalities of application of Law No. 001-2021/AN on personal data protection",
+      "issuing_authority": "President of the Transition / Council of Ministers",
+      "note": "Signed 18 July 2022; 22-page scan without text layer at https://cil.bf/wp-content/uploads/2026/09/Decret-Application-CIL-1-1.pdf (HTTP 200). Covers CIL referral procedures, data-subject rights, controller obligations; whether it details the AI-specific prior-authorisation regime (art. 31 of the law) not confirmed (no OCR available). Record as instrument if AI content confirmed.",
+      "found": "2026-10-12"
+    }
+  ]
 }
