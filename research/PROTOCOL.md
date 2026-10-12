@@ -131,6 +131,7 @@ Also for the country:
 - Every fact must come from the official source document or page. If a fact is not stated there, leave it null.
 - Do not infer legal effect. A strategy is not binding. A draft is not adopted until an official source says so.
 - If two official sources conflict (e.g. dates), record the primary legal text's value and add a note in `current_status`.
+- Never use file metadata (creation or modification dates) as a publication date.
 - Keep instrument ids stable. When updating a record, edit it in place; never delete and re-create it.
 
 ## 5. Logging changes

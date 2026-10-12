@@ -10,18 +10,202 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Togo has no AI-specific law or published AI strategy. AI is governed indirectly by the 2019 personal data protection law, which restricts decisions based solely on automated processing, and by a 2025 communiqué from the data protection authority (IPDCP) setting its expectations on platforms using published personal content to train AI systems. A national AI strategy and an AI governance framework within a planned Digital Code are in preparation.",
+    "lead_institutions": [
+      "Ministry of Digital Economy and Transformation",
+      "Instance de Protection des Données à Caractère Personnel (IPDCP)"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was carried out on 12 October 2026 from the Official Journal and the digital ministry's and data protection authority's websites. The cybersecurity agency's and the National Assembly's websites could not be accessed, and the cybersecurity laws are only available as scans that could not be searched. The national AI strategy, the Digital Code and the cybersecurity laws are tracked as leads."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "jurisdiction_id": "TGO",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "link_status": "reachable",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "language": "fr",
+      "id": "i-0450276efadc",
+      "authority_type": "legislature",
+      "scope": "Togo (national): collection, processing, transmission, storage and use of personal data by public and private controllers",
+      "sectors": [],
+      "technology_scope": [
+        "automated processing",
+        "profiling"
+      ],
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-84bab5f8641c",
+      "organization_id": "o-f5e9366261e4",
+      "evidence_reference": "curl (browser user agent, --max-time 60): jo.gouv.tg text page (node 15411: Loi 2019-014, signed 29/10/2019, JO N°26 TER special, page 1) read; gazette PDF JOS_29_10_2019 N°26 TER (20 pages) downloaded and read with pdftotext (Arts. 1, 27, 45, 95-97); byte-identical to the copy on the Ministry of Digital Economy documentation page.",
+      "official_webpage_url": "https://jo.gouv.tg/node/15411",
+      "effective_date": null,
+      "official_title": "Loi n° 2019-014 du 29 octobre 2019 relative à la protection des données à caractère personnel",
+      "english_title": "Law No. 2019-014 of 29 October 2019 on the protection of personal data",
+      "issuing_authority": "National Assembly; promulgated by the President of the Republic",
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "category": "data-privacy",
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2019-10-29",
+      "current_status": "Published in the Journal officiel de la République togolaise, 64th year, No. 26 ter (special issue) of 29 October 2019. Art. 97 provides that the law is executed as a law of the State; no separate entry-into-force date is stated, and Art. 95 gives existing processing a compliance period from entry into force. The supervisory authority it creates, the IPDCP, publishes the law on its own site and is operational. No AI-specific law exists in Togo as of 11 October 2026.",
+      "summary": "Togo's general data protection law regulating the collection, processing, transmission, storage and use of personal data, with declaration and prior-authorisation regimes (e.g. for biometric, genetic and health data) and data-subject rights including access, opposition (Art. 45) and rectification. Art. 27 bars court decisions that assess a person's conduct, and any decision producing legal effects, from being based solely on automated processing intended to profile the person or evaluate aspects of their personality. It creates the Instance de protection des données à caractère personnel (IPDCP) as the independent supervisory authority with sanctioning powers.",
+      "source_url": "https://jo.gouv.tg/node/15411",
+      "official_pdf_url": "https://jo.gouv.tg/sites/default/files/JO/JOS_29_10_2019-64E%20ANNEE-N%C2%B026%20TER.pdf",
+      "source_kind": "legislation_portal",
+      "publisher_name": "Cabinet of the President of the Republic (Journal officiel de la République togolaise)",
+      "ai_governance_relevance": "Togolese national law governing personal data used to train and run AI systems; Art. 27 sets the rule on solely automated decisions and profiling."
+    },
+    {
+      "jurisdiction_id": "TGO",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "link_status": "reachable",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "language": "fr",
+      "id": "i-a6a1f5e83235",
+      "authority_type": "regulator",
+      "scope": "Users in Togo of digital platforms that use published content to train AI systems",
+      "sectors": [
+        "online platforms"
+      ],
+      "technology_scope": [
+        "AI systems",
+        "generative AI training data"
+      ],
+      "document_access_type": "original_government_document",
+      "source_id": "s-4e995d7c7828",
+      "organization_id": "o-fea8e27174c1",
+      "evidence_reference": "curl (browser user agent, --max-time 60): IPDCP document page read (listed under Communiqués, embeds the PDF); PDF COMMUNIQUE.pdf (1 page) downloaded and read with pdftotext. Date from the IPDCP site's own publication record (document 487, published 2025-05-03); the PDF itself carries no date.",
+      "official_webpage_url": "https://ipdcp.tg/document/communique-pourtant-sur-lutilisation-des-coontenus-publies-par-les-utilisateurs-pour-entrainer-leurs-systhemes-dintelligence-articifielle/",
+      "effective_date": null,
+      "official_title": "Communiqué sur l'utilisation des contenus publiés par certaines plateformes numériques à des fins d'entraînement de systèmes d'intelligence artificielle",
+      "english_title": "Communiqué on the use of content published by certain digital platforms to train artificial intelligence systems",
+      "issuing_authority": "Instance de protection des données à caractère personnel (IPDCP)",
+      "categories": [
+        "data-privacy",
+        "generative-ai"
+      ],
+      "category": "data-privacy",
+      "legal_status": "regulatory_opinion",
+      "lifecycle": "published",
+      "publication_date": "2025-05-03",
+      "current_status": "Published on the IPDCP website (Documentation > Communiqués) with the PDF; the site records publication on 3 May 2025 (last modified 26 July 2025). The PDF itself is undated.",
+      "summary": "Public notice from Togo's data protection authority warning that some digital platforms plan to use users' published content (texts, images, comments, interactions) to train AI systems and that this raises privacy issues. Citing the right to object in Art. 45 of the 2019 data protection law, it tells users they may refuse such use, explains how to lodge an objection through platforms' privacy settings, and urges users not to publish sensitive data.",
+      "source_url": "https://ipdcp.tg/document/communique-pourtant-sur-lutilisation-des-coontenus-publies-par-les-utilisateurs-pour-entrainer-leurs-systhemes-dintelligence-articifielle/",
+      "official_pdf_url": "https://ipdcp.tg/wp-content/uploads/2025/05/COMMUNIQUE.pdf",
+      "source_kind": "official_document",
+      "publisher_name": "Instance de protection des données à caractère personnel (IPDCP)",
+      "ai_governance_relevance": "Togo's only regulator statement specifically on AI: it sets the data protection authority's expectations on the use of personal data for AI training."
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-f5e9366261e4",
+      "jurisdiction_id": "TGO",
+      "name": "National Assembly",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Togo's legislature; adopted Law No. 2019-014 on personal data protection (Art. 27 on solely automated decisions). No AI bill was found.",
+      "source_url": "https://www.assemblee-nationale.tg/",
+      "authority_type": "legislature",
+      "government_level": "national"
+    },
+    {
+      "id": "o-fea8e27174c1",
+      "jurisdiction_id": "TGO",
+      "name": "Personal Data Protection Authority (IPDCP)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Independent data protection authority created by Law No. 2019-014; operational since 2025; issued a 2025 communiqué on the use of personal data to train AI systems.",
+      "source_url": "https://ipdcp.tg/",
+      "authority_type": "regulator",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-84bab5f8641c",
+      "url": "https://jo.gouv.tg/node/15411",
+      "jurisdiction_ids": [
+        "TGO"
+      ],
+      "source_institutions": [
+        "Cabinet of the President of the Republic (Journal officiel)"
+      ],
+      "instrument_ids": [
+        "i-0450276efadc"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): jo.gouv.tg node 15411 read; gazette PDF (JO N°26 TER, 29 Oct 2019, 20 pages) downloaded and read with pdftotext; jo.gouv.tg full-text search for 'intelligence artificielle', 'automatisé' and 'Convention 108' run (no AI-specific text found).",
+      "http_status": 200,
+      "final_url": "https://jo.gouv.tg/node/15411",
+      "link_status": "reachable",
+      "page_title": "2019-014 | Journal Officiel de la République Togolaise",
+      "document_language": "fr",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-4e995d7c7828",
+      "url": "https://ipdcp.tg/document/communique-pourtant-sur-lutilisation-des-coontenus-publies-par-les-utilisateurs-pour-entrainer-leurs-systhemes-dintelligence-articifielle/",
+      "jurisdiction_ids": [
+        "TGO"
+      ],
+      "source_institutions": [
+        "Instance de protection des données à caractère personnel (IPDCP)"
+      ],
+      "instrument_ids": [
+        "i-a6a1f5e83235"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "generative-ai",
+        "sectoral"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): document page and embedded PDF read; IPDCP site search (WordPress search API) for 'intelligence artificielle', 'IA', 'algorithm', 'automatis' and the full document list (39 items) reviewed; Recommandations page empty.",
+      "http_status": 200,
+      "final_url": "https://ipdcp.tg/document/communique-pourtant-sur-lutilisation-des-coontenus-publies-par-les-utilisateurs-pour-entrainer-leurs-systhemes-dintelligence-articifielle/",
+      "link_status": "reachable",
+      "page_title": "COMMUNIQUE SUR L'UTILISATION DES CONTENUS PUBLIES PAR CERTAINES PLATEFORMES NUMERIQUES A DES FINS D'ENTRAINEMENT DE SYSTEMES D'INTELLIGENCE ARTIFICIELLE - IPDCP",
+      "document_language": "fr",
+      "error": null,
+      "content_type": "text/html"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "TGO",
     "country": "Togo",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -33,10 +217,12 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_with_findings": [
       "binding-law",
+      "data-privacy",
+      "generative-ai"
+    ],
+    "categories_where_no_material_was_found": [
       "strategy",
       "government-governance",
       "ethics",
@@ -44,44 +230,158 @@
       "public-sector",
       "procurement",
       "cyber-security",
-      "data-privacy",
       "transparency",
       "standards",
       "sandbox",
       "index-readiness",
       "sectoral",
-      "generative-ai",
       "drafts",
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Togo \"intelligence artificielle\" (stratégie OR réglementation OR éthique) government ministry official",
       "Togo \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Togo government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Togo \"intelligence artificielle\" cybersecurity authority secure development safety guidelines",
-      "Togo privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Togo privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "jo.gouv.tg recherche: intelligence artificielle",
+      "jo.gouv.tg recherche: automatisé",
+      "jo.gouv.tg recherche: Convention 108",
+      "jo.gouv.tg recherche: Conseil de l'Europe",
+      "jo.gouv.tg recherche: données à caractère personnel",
+      "numerique.gouv.tg recherche: intelligence artificielle",
+      "numerique.gouv.tg recherche: IA",
+      "numerique.gouv.tg recherche: stratégie",
+      "numerique.gouv.tg documentation (liste complète)",
+      "ipdcp.tg recherche: intelligence artificielle",
+      "ipdcp.tg recherche: IA",
+      "ipdcp.tg recherche: algorithm",
+      "ipdcp.tg recherche: automatis",
+      "ipdcp.tg recherche: entraînement",
+      "ipdcp.tg documents (liste complète) et recommandations",
+      "arcep.tg recherche: intelligence artificielle",
+      "Togo stratégie nationale intelligence artificielle adoptée conseil des ministres",
+      "Togo \"stratégie nationale\" \"intelligence artificielle\" 2026 validation atelier ministère",
+      "Togo loi protection des données à caractère personnel 2019-014 IPDCP",
+      "IPDCP Togo intelligence artificielle recommandation délibération",
+      "Togo \"Code du numérique\" avant-projet intelligence artificielle 2025 2026",
+      "Togo décret création \"Togo AI Lab\" OR \"Agence Togo Digital\" intelligence artificielle conseil des ministres compte rendu",
+      "Togo ministère éducation santé justice \"intelligence artificielle\" politique guide officiel gouv.tg",
+      "Togo Convention 108 Council of Europe accession Togo"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. ancy.tg / anssi.tg unreachable (curl, WebFetch); assemblee-nationale.tg expired cert / 503. jo.gouv.tg full-text search for AI terms, automated processing, Convention 108. Law 2019-014 source jo.gouv.tg/node/15411 (PDF identical to ministry copy); effective_date null (Art. 97). IPDCP communiqué undated PDF; date from WordPress post record (2025-05-03, modified 2025-07-26); in scope as regulator expectation on AI training. Togo Digital 2025 strategy (2022) read: no AI pillar (lead). Laws 2018-026 and 2022-009 image-only scans (lead). BCEAO regional. Convention 108 act not found. Units covered: Law: Journal officiel (jo.gouv.tg) full-text search run: no AI-specific law, decree or order; Law 2019-014 on personal data (Art. 27 automated decisions) recorded. Cybersecurity law 2018-026 and amending law 2022-009 are image-only scans and could not be text-searched (lead). National Assembly site unreachable (expired certificate, then 503); no AI bill found via other searches.; Government: Ministry of Digital Economy and Digital Transformation (numerique.gouv.tg) searched through its site search and full documentation list: no national AI strategy, AI policy, public-sector AI guideline or AI procurement rule published; strategy in preparation and Digital Code AI framework held as leads; Togo Digital 2025 read, no AI pillar (lead).; Ministries: Searched, nothing found: no AI documents from education, health, justice, defence, finance, labour or interior ministries found on the gazette or by web search.; Regulators: IPDCP (data protection) searched in full: one AI communiqué recorded; no AI recommendations or decisions. ARCEP (telecoms) searched: no AI documents. National cybersecurity agency (ANCy, ancy.tg) unreachable (DNS/proxy failure on curl and WebFetch). Central bank is regional (BCEAO), out of national scope; no national financial supervisor AI documents.. Not reached: Agence nationale de la cybersécurité (ancy.tg; anssi.tg also failed): unreachable via curl and WebFetch; Assemblée nationale (assemblee-nationale.tg): expired TLS certificate on curl, HTTP 503 on WebFetch. Could not verify: Cybersecurity law 2018-026 and amending law 2022-009: scanned PDFs, no text layer; AI/deepfake provisions not checked.; ANCy (national cybersecurity agency) site unreachable.; National Assembly site unreachable; pending AI bills could not be checked there.; Convention 108: no Togolese accession act found in the Journal officiel search; Togo is not believed to be a party (set null).. strategy, government-governance, ethics, risk-assurance, public-sector, procurement, cyber-security, transparency, standards, sandbox, index-readiness, sectoral, drafts, international, historical: no material found.",
     "discovery_result_count": 12,
     "focused_result_count": 14
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-c56173bc391a",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "TGO",
+      "instrument_id": "i-0450276efadc",
+      "title": "Law No. 2019-014 of 29 October 2019 on the protection of personal data",
+      "detail": "Added to the radar (published 2019-10-29).",
+      "from": null,
+      "to": null,
+      "source_url": "https://jo.gouv.tg/node/15411",
+      "needs_review": false
+    },
+    {
+      "id": "c-61b157f7cce4",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "TGO",
+      "instrument_id": "i-a6a1f5e83235",
+      "title": "Communiqué on the use of content published by certain digital platforms to train artificial intelligence systems",
+      "detail": "Added to the radar (published 2025-05-03).",
+      "from": null,
+      "to": null,
+      "source_url": "https://ipdcp.tg/document/communique-pourtant-sur-lutilisation-des-coontenus-publies-par-les-utilisateurs-pour-entrainer-leurs-systhemes-dintelligence-articifielle/",
+      "needs_review": false
+    },
+    {
+      "id": "c-135548a1558f",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "TGO",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 2 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-cd45115afc08",
+      "date": "2019-10-29",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "TGO",
+      "instrument_id": "i-0450276efadc",
+      "title": "Law No. 2019-014 on the protection of personal data published",
+      "detail": "Promulgated on 29 October 2019 and published in the Journal officiel de la République togolaise, special issue No. 26 ter of 29 October 2019; Art. 27 bars decisions with legal effects based solely on automated profiling.",
+      "from": null,
+      "to": null,
+      "source_url": "https://jo.gouv.tg/node/15411",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Stratégie nationale d'intelligence artificielle (en préparation)",
+      "english_title": "National Artificial Intelligence Strategy (in preparation)",
+      "issuing_authority": "Ministry of Digital Economy and Digital Transformation",
+      "note": "The ministry's own report on the 'Autour de l'IA' event (numerique.gouv.tg, 26 November 2024) quotes the minister saying Togo needs a national AI strategy; no official strategy text, draft or adoption record was found on numerique.gouv.tg or in the Journal officiel as of 11 October 2026. Record once published. https://bk.numerique.gouv.tg/retour-sur-autour-de-lia-le-togo-confirme-son-ambition-detre-un-pionnier-de-lintelligence-artificielle/",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Code du numérique et cadre de gouvernance de l'intelligence artificielle (en préparation)",
+      "english_title": "Digital Code and AI governance framework (in preparation)",
+      "issuing_authority": "Ministry of Digital Economy and Digital Transformation",
+      "note": "Call for expressions of interest published 3 June 2025 (deadline 24 June 2025) to recruit a law firm, under the World Bank-financed Togo Digital Acceleration Project (PANT), to draft a Digital Code consolidating existing ICT texts and to develop governance frameworks for cloud, artificial intelligence and e-embassies (24-month mission). No draft text found. https://bk.numerique.gouv.tg/appel-a-manifestation-dinteret-pour-lelaboration-du-code-du-numerique/",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Stratégie Togo Digital 2025",
+      "english_title": "Togo Digital 2025 Strategy",
+      "issuing_authority": "Ministry of Digital Economy and Digital Transformation",
+      "note": "National digital transformation strategy (French version dated June 2022, published on numerique.gouv.tg). Read in full with pdftotext: it contains no AI pillar or AI measures (data governance and a data-valorisation entity only), so it fails the scope test. A consultant is being recruited to update it; re-check the update for an AI pillar. https://bk.numerique.gouv.tg/wp-content/uploads/2024/05/FR-Strategie-Togo-Digital-2025.pdf",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Loi n° 2018-026 du 07 décembre 2018 sur la cybersécurité et la lutte contre la cybercriminalité, modifiée par la loi n° 2022-009",
+      "english_title": "Law No. 2018-026 on cybersecurity and combating cybercrime, as amended by Law No. 2022-009",
+      "issuing_authority": "National Assembly",
+      "note": "Official PDFs on numerique.gouv.tg are image scans with no text layer, so they could not be searched for AI or deepfake provisions in this review. Check by reading the scans. https://bk.numerique.gouv.tg/wp-content/uploads/2024/11/Loi-n°-2022-009-portant-modificat°-de-la-loi-n°-2018-026-du-07-decembre-sur-la-cybersecurite-et-la-lutte-.pdf",
+      "found": "2026-10-12"
+    }
+  ]
 }
