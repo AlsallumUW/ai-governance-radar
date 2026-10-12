@@ -10,18 +10,111 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Grenada has no AI-specific law, strategy or guidance. Its only relevant instrument is the general Data Protection Act, 2023, which governs the personal data used by AI systems but has not yet been brought into force. AI appears only as a stated focus of the government's Division of ICT and the new Digital Transformation Agency.",
+    "lead_institutions": [
+      "Division of ICT",
+      "Parliament of Grenada"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was carried out on 12 October 2026 from the official laws portal, Parliament's website and the government portal. The official gazette's search could not be used, and 2026 Acts after No. 5 are not yet online. The Division of ICT's automation and ICT policies, whose texts are not published, are tracked as leads."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-fc5e03b7f62b",
+      "jurisdiction_id": "GRD",
+      "official_title": "Data Protection Act, 2023 (Act No. 1 of 2023)",
+      "english_title": "Data Protection Act, 2023 (Act No. 1 of 2023)",
+      "issuing_authority": "Parliament of Grenada (House of Representatives and Senate); assented to by the Deputy Governor-General",
+      "authority_type": "legislature",
+      "publisher_name": "Government of Grenada (Laws of Grenada portal; printed by the Government Printer)",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "categories": [
+        "data-privacy"
+      ],
+      "category": "data-privacy",
+      "legal_status": "binding_law",
+      "lifecycle": "adopted",
+      "publication_date": "2023-05-10",
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Personal data processed by public and private bodies in Grenada (national)",
+      "summary": "Grenada's first general data protection law applies to personal data processed by public and private bodies, including data processed wholly or partly by automatic equipment, and sets seven privacy and data protection principles (general, notice and choice, disclosure, security, retention, data integrity and access). It gives data subjects rights of access and rectification, restricts processing of sensitive personal data, and establishes an Information Commission with complaint-investigation, information-notice, enforcement-notice and search powers, backed by offences and penalties. It contains no AI-specific or automated-decision provisions, but governs personal data used to train and run AI systems once in force.",
+      "language": "en",
+      "source_url": "https://laws.gov.gd/index.php/acts/971-act-no-1-of-2023-data-protection-2023/viewdocument/971",
+      "official_pdf_url": "https://laws.gov.gd/index.php/acts/971-act-no-1-of-2023-data-protection-2023/viewdocument/971",
+      "official_webpage_url": "https://laws.gov.gd/index.php/acts/1358-2023",
+      "source_kind": "legislation_portal",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "verification_date": "2026-10-12",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "current_status": "Passed by the House of Representatives on 14 March 2023 and the Senate on 6 April 2023; assented to on 9 May 2023; dated 10 May 2023 and printed by the Government Printer on 10/5/2023. Section 1(2) provides that the Act comes into operation on a day appointed by the Minister (the Minister responsible for National Security) by Order in the Gazette. No commencement order was found in the Statutory Rules and Orders listed on the Laws of Grenada portal for 2023-2026 (checked 2026-10-12), so the Act is recorded as adopted but not yet in force.",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "sectors": [],
+      "technology_scope": [
+        "personal data processing",
+        "automated processing"
+      ],
+      "source_id": "s-cc8dc49b1789",
+      "organization_id": "o-609b8d9cd2f4",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "evidence_reference": "curl (browser user agent, --max-time 60) on 2026-10-12: Laws of Grenada portal Acts 2023 listing and Act No. 1 of 2023 PDF (44 pages) read with pdftotext (arrangement, preamble, s.1-2, Parts II-VI, schedules, passage and printing notes); SRO listings 2023-2026 checked for a commencement order.",
+      "ai_governance_relevance": "General data protection law; governs personal data used in AI training and use (no AI-specific provisions)."
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-609b8d9cd2f4",
+      "jurisdiction_id": "GRD",
+      "name": "Parliament of Grenada",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Enacted the Data Protection Act, 2023 (Act No. 1 of 2023), which establishes the Information Commission; the Digital Transformation Agency Bill 2026 was also laid before it.",
+      "source_url": "https://grenadaparliament.gd/",
+      "authority_type": "legislature",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-cc8dc49b1789",
+      "url": "https://laws.gov.gd/index.php/acts/971-act-no-1-of-2023-data-protection-2023/viewdocument/971",
+      "jurisdiction_ids": [
+        "GRD"
+      ],
+      "source_institutions": [
+        "Government of Grenada (Laws of Grenada portal)"
+      ],
+      "instrument_ids": [
+        "i-fc5e03b7f62b"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl GET (browser UA, --max-time 60) on 2026-10-12: HTTP 200 application/pdf (after the portal's cookie check), 44-page Act read with pdftotext. Listing page https://laws.gov.gd/index.php/acts/1358-2023 checked. The Government Printery page cited by search engines (gazettes.gov.gd/publications/2023/act-no-1-of-2023-data-protection-2023) returned HTTP 404.",
+      "http_status": 200,
+      "final_url": "https://laws.gov.gd/index.php/acts/971-act-no-1-of-2023-data-protection-2023/viewdocument/971",
+      "link_status": "reachable",
+      "page_title": "Act No 1 of 2023 Data Protection 2023",
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "GRD",
     "country": "Grenada",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -33,9 +126,10 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_with_findings": [
+      "data-privacy"
+    ],
+    "categories_where_no_material_was_found": [
       "binding-law",
       "strategy",
       "government-governance",
@@ -44,7 +138,6 @@
       "public-sector",
       "procurement",
       "cyber-security",
-      "data-privacy",
       "transparency",
       "standards",
       "sandbox",
@@ -55,33 +148,115 @@
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Grenada \"artificial intelligence\" (strategy OR regulation OR ethics) government ministry official",
       "Grenada \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Grenada government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Grenada \"artificial intelligence\" cybersecurity authority secure development safety guidelines",
-      "Grenada privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Grenada privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "Grenada government artificial intelligence policy strategy",
+      "Grenada Data Protection Act 2023 gazette",
+      "Grenada Data Protection Act 2023 commencement order Information Commission appointed",
+      "Grenada digital transformation bill 2026 parliament artificial intelligence",
+      "site:gov.gd \"artificial intelligence\"",
+      "\"Digital Transformation Agency\" Bill 2026 Grenada grenadaparliament.gd",
+      "gov.gd Division of ICT artificial intelligence Grenada policy guidelines public service AI",
+      "Grenada Ministry of Education artificial intelligence guidelines schools 2025 OR 2026",
+      "Grenada national AI strategy UNESCO readiness assessment OR \"AI policy\" consultation Grenada government 2026",
+      "Grenada NTRC OR \"Ministry of ICT\" artificial intelligence regulation deepfake cybercrime amendment",
+      "laws.gov.gd site search: \"data protection\"; \"artificial intelligence\"; browse Acts 2023-2026 and S.R.O. 2023-2026",
+      "grenadaparliament.gd site search: \"digital transformation\", \"artificial intelligence\", \"data protection\"; Bills listing"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. gazettes.gov.gd search HTTP 409 (Act 1/2023 page 404); laws.gov.gd Acts and S.R.O. listings 2023-2026 browsed, 2026 Acts listed only to No. 5. DPA 2023 has no automated-decision provision; recorded as general data protection law; no commencement S.R.O. found. Digital Transformation Agency Act 2026 (bill read): no AI (lead). Electronic Communications Act 2024: no AI. Grenada Digital Transformation Agenda only on ctu.int (not official). Convention 108: not a party. Units covered: Law: Laws of Grenada portal (Acts 2023-2026, S.R.O. 2023-2026, site search), Parliament bills and site search, Government Printery gazette site (homepage; search blocked): Data Protection Act 2023 found (not yet commenced); Electronic Communications Act 2024 (Act 4 of 2024, 179 pp.) scanned, no AI provisions; Digital Transformation Agency Bill 2026 read, no AI provisions (lead); no AI law, AI bill, deepfake offence or automated-decision rule found.; Government: gov.gd Division of ICT (Cabinet Office) page read: AI listed as a focus area and goal but no AI strategy, policy or guideline published; searched, no national AI strategy, public-sector AI guidance or UNESCO RAM found.; Ministries: Searched (web) education, ICT/digital transformation and other ministries for AI documents: searched, nothing found.; Regulators: Information Commission not yet established (Act not commenced); NTRC, ECCB-level national notices, cyber: searched, nothing AI-specific found.. Not reached: gazettes.gov.gd full-text search (search endpoint returned HTTP 409); individual gazette issues not opened; 2026 Acts after No. 5 not yet on the Laws of Grenada portal. Could not verify: Digital Transformation Agency Act No. 10 of 2026 assent date (31 August 2026) known only from news; enacted text not yet on official portals.; gazettes.gov.gd search unavailable (HTTP 409); publication page for Act No. 1 of 2023 returned 404.. binding-law, strategy, government-governance, ethics, risk-assurance, public-sector, procurement, cyber-security, transparency, standards, sandbox, index-readiness, sectoral, generative-ai, drafts, international, historical: no material found.",
     "discovery_result_count": 11,
     "focused_result_count": 11
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-b1b03b4aa44c",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "GRD",
+      "instrument_id": "i-fc5e03b7f62b",
+      "title": "Data Protection Act, 2023 (Act No. 1 of 2023)",
+      "detail": "Added to the radar (published 2023-05-10).",
+      "from": null,
+      "to": null,
+      "source_url": "https://laws.gov.gd/index.php/acts/971-act-no-1-of-2023-data-protection-2023/viewdocument/971",
+      "needs_review": false
+    },
+    {
+      "id": "c-d4e8af25f021",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "GRD",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 1 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-178f4e6c3e3d",
+      "date": "2023-05-09",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "GRD",
+      "instrument_id": "i-fc5e03b7f62b",
+      "title": "Data Protection Act, 2023 assented",
+      "detail": "Act No. 1 of 2023 assented to by the Deputy Governor-General on 9 May 2023 (passed by the House on 14 March and the Senate on 6 April 2023); commencement left to a ministerial order in the Gazette.",
+      "from": null,
+      "to": null,
+      "source_url": "https://laws.gov.gd/index.php/acts/971-act-no-1-of-2023-data-protection-2023/viewdocument/971",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Digital Transformation Agency Act, 2026 (Act No. 10 of 2026)",
+      "english_title": "Digital Transformation Agency Act, 2026",
+      "issuing_authority": "Parliament of Grenada",
+      "note": "Bill published on the Parliament site (https://grenadaparliament.gd/wp-content/uploads/2026/07/Digital-Transformation-Agency-Bill-2026-1.pdf, read 2026-10-12): creates a Digital Transformation Agency to lead and coordinate digital transformation across public bodies, which must follow its directives, codes, standards and guidelines. The bill text contains no AI provisions, so it fails the scope test. Reported as assented to on 31 August 2026 (news only); the Act is not yet on the Laws of Grenada portal (2026 Acts listed only to No. 5). Re-check if the Agency issues AI standards or guidelines.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Policy on Automation of Government Services; National ICT Policy (Division of ICT, Cabinet Office)",
+      "english_title": "Policy on Automation of Government Services; National ICT Policy",
+      "issuing_authority": "Division of ICT, Cabinet Office, Government of Grenada",
+      "note": "Listed as 'Strategy & Policies' on https://www.gov.gd/ict (read 2026-10-12), which also lists 'AI & Innovation' (AI-powered government tools, process automation, predictive analytics, content creation systems) and the goal 'Leverage AI for operational efficiency'. No document text or date is published on the page; record once an official text is available and if it sets expectations for AI.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Grenada Digital Transformation Agenda",
+      "english_title": "Grenada Digital Transformation Agenda",
+      "issuing_authority": "Government of Grenada (as presented at a Caribbean Telecommunications Union event)",
+      "note": "PDF found only on a third-party regional host (ctu.int/wp-content/uploads/2025/11/Grenada-Digital-Transformation-Agenda.pdf), not on a Government of Grenada site; reportedly lists leveraging AI among digital government goals. Not read; not an official source under the source rule.",
+      "found": "2026-10-12"
+    }
+  ]
 }
