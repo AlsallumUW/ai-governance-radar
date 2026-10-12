@@ -10,18 +10,1636 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Kazakhstan regulates AI through a dedicated, risk-based Law on Artificial Intelligence signed in November 2025 and in force since early 2026, with a companion law adding automated-decision rights to the personal data law and a growing set of implementing orders from the new Ministry of Artificial Intelligence and Digital Development (criteria for AI systems, high-risk lists, documentation, access to computing and the national AI platform). The 2026 Digital Code covers algorithmic systems and a constitutional law on Alatau City allows AI experimental legal regimes. Policy follows the AI Development Concept 2024-2029 and the 2026 Digital Qazaqstan strategy, with a presidential AI Development Council, an AI standard for secondary schools and a national AI standard.",
+    "lead_institutions": [
+      "Ministry of Artificial Intelligence and Digital Development",
+      "AI Development Council",
+      "Government of Kazakhstan"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was completed on 12 October 2026 and covers national law, government, ministries and regulators. The draft-acts portal and the presidential and parliament websites could not be reached, so some recent decrees and drafts are listed as leads."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-726bf5d8f4f6",
+      "official_title": "Закон Республики Казахстан от 17 ноября 2025 года № 230-VIII «Об искусственном интеллекте»",
+      "english_title": "Law of the Republic of Kazakhstan No. 230-VIII of 17 November 2025 on Artificial Intelligence",
+      "issuing_authority": "Parliament of the Republic of Kazakhstan (signed by the President)",
+      "authority_type": "legislature",
+      "categories": [
+        "binding-law",
+        "risk-assurance",
+        "transparency",
+        "government-governance",
+        "generative-ai"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2025-11-17",
+      "current_status": "Signed 17 November 2025 and published in Egemen Qazaqstan and Kazakhstanskaya Pravda No. 222 on 18 November 2025 (Adilet register No. 217048). Art. 31: enters into force sixty calendar days after first official publication. Amended by Law No. 326-VIII of 24 June 2026 (arts 1, 13, 17, 20, 28); Adilet lists the act as amended to 25 August 2026. An unofficial English translation is listed on Adilet. Implementing orders adopted in 2026 are recorded separately.",
+      "summary": "Kazakhstan's framework AI law. It sets regulatory principles (legality, fairness, transparency and explainability, accountability, human well-being, data protection, safety), the competences of the Government and the authorised AI body, classifies AI systems by risk (minimal, medium, high) and by autonomy, and bans systems that manipulate behaviour, exploit vulnerabilities, perform social scoring, infer sensitive traits from biometrics or recognise emotions without consent. Owners and operators must manage risks across the life cycle (reviewed at least annually), users must be told when goods or services are produced with AI, synthetic AI outputs must carry machine-readable and visible labels, and the law also covers trusted lists of high-risk systems, AI audits, copyright, liability for harm, the national AI platform and data libraries.",
+      "ai_governance_relevance": "Main AI statute; legal basis for the Ministry's implementing orders.",
+      "source_url": "https://old.adilet.zan.kz/rus/docs/Z2500000230",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://adilet.zan.kz/rus/docs/Z2500000230",
+      "sectors": [],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-6c40040cc2a6",
+      "publisher_name": "Parliament of the Republic of Kazakhstan",
+      "jurisdiction_id": "KAZ",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "binding-law",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Kazakhstan (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "ru",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-7b98eb5226c4",
+      "evidence_reference": "curl (browser user agent, --max-time 60) of the Ministry of Justice legal information system Adilet (old.adilet.zan.kz server-rendered edition; the new adilet.zan.kz front end renders only via JavaScript and returned no text to curl or WebFetch): full Russian text read, plus the act's 'Информация' page for date, publication and issuing body"
+    },
+    {
+      "id": "i-18bc31f22562",
+      "official_title": "Закон Республики Казахстан от 17 ноября 2025 года № 231-VIII «О внесении изменений и дополнений в некоторые законодательные акты Республики Казахстан по вопросам искусственного интеллекта и цифровизации»",
+      "english_title": "Law No. 231-VIII of 17 November 2025 amending certain legislative acts on artificial intelligence and digitalisation",
+      "issuing_authority": "Parliament of the Republic of Kazakhstan (signed by the President)",
+      "authority_type": "legislature",
+      "categories": [
+        "binding-law",
+        "data-privacy"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2025-11-17",
+      "current_status": "Published 18 November 2025 (Egemen Qazaqstan and Kazakhstanskaya Pravda No. 222). The personal-data amendment enters into force sixty calendar days after first official publication.",
+      "summary": "Companion law to the AI Law that aligns other statutes with it. Among other changes it inserts Article 19-1 into the Law on Personal Data and their Protection, which bans automated processing of personal data that creates, changes or ends a person's rights unless the person consents or a law allows it, and requires controllers to explain automated processing, accept objections and answer them within three working days.",
+      "ai_governance_relevance": "",
+      "source_url": "https://old.adilet.zan.kz/rus/docs/Z2500000231",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://adilet.zan.kz/rus/docs/Z2500000231",
+      "sectors": [],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-6c40040cc2a6",
+      "publisher_name": "Parliament of the Republic of Kazakhstan",
+      "jurisdiction_id": "KAZ",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "binding-law",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Kazakhstan (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "ru",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-06791aa6a310",
+      "evidence_reference": "curl (browser user agent, --max-time 60) of the Ministry of Justice legal information system Adilet (old.adilet.zan.kz server-rendered edition; the new adilet.zan.kz front end renders only via JavaScript and returned no text to curl or WebFetch): full Russian text read, plus the act's 'Информация' page for date, publication and issuing body"
+    },
+    {
+      "id": "i-c8f219c8d641",
+      "official_title": "Закон Республики Казахстан от 21 мая 2013 года № 94-V «О персональных данных и их защите»",
+      "english_title": "Law of the Republic of Kazakhstan No. 94-V of 21 May 2013 on Personal Data and their Protection",
+      "issuing_authority": "Parliament of the Republic of Kazakhstan",
+      "authority_type": "legislature",
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2013-05-21",
+      "current_status": "In force since 2013 and amended many times; first published in Kazakhstanskaya Pravda of 25 May 2013. The AI-relevant Article 19-1 was added by Law No. 231-VIII of 17 November 2025.",
+      "summary": "General personal data protection law governing collection and processing of personal data, including for AI training and use. As amended in 2025 it defines automated processing, regulates anonymisation of personal data collected for the national AI platform, and (Art. 19-1) restricts solely automated decisions with legal effect and gives data subjects rights to an explanation and to object.",
+      "ai_governance_relevance": "",
+      "source_url": "https://old.adilet.zan.kz/rus/docs/Z1300000094",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://adilet.zan.kz/rus/docs/Z1300000094",
+      "sectors": [],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-6c40040cc2a6",
+      "publisher_name": "Parliament of the Republic of Kazakhstan",
+      "jurisdiction_id": "KAZ",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Kazakhstan (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "ru",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-8e8d6ca74a0b",
+      "evidence_reference": "curl (browser user agent, --max-time 60) of the Ministry of Justice legal information system Adilet (old.adilet.zan.kz server-rendered edition; the new adilet.zan.kz front end renders only via JavaScript and returned no text to curl or WebFetch): full Russian text read, plus the act's 'Информация' page for date, publication and issuing body"
+    },
+    {
+      "id": "i-e6fc6819b598",
+      "official_title": "Цифровой кодекс Республики Казахстан от 9 января 2026 года № 255-VIII",
+      "english_title": "Digital Code of the Republic of Kazakhstan (No. 255-VIII of 9 January 2026)",
+      "issuing_authority": "Parliament of the Republic of Kazakhstan (signed by the President)",
+      "authority_type": "legislature",
+      "categories": [
+        "binding-law",
+        "transparency",
+        "risk-assurance",
+        "public-sector"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2026-01-09",
+      "current_status": "Published 10 January 2026 (Egemen Qazaqstan and Kazakhstanskaya Pravda No. 5-6); enters into force six months after first official publication (art. on entry into force). Already amended, including by Law No. 352-VIII of 23 July 2026.",
+      "summary": "Codified law on the digital environment, digital objects and state digitalisation. Article 43 defines algorithmic systems (including AI systems), prohibits discriminatory algorithmic decisions and gives people subject to fully automated decisions the right to be told an algorithmic system was used, to an explanation of the key factors, and to a human review where the decision has legal effects. Article 100 provides that quality audits of AI systems assess the quality and lawfulness of the data libraries used for training.",
+      "ai_governance_relevance": "",
+      "source_url": "https://old.adilet.zan.kz/rus/docs/K2600000255",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://adilet.zan.kz/rus/docs/K2600000255",
+      "sectors": [],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-6c40040cc2a6",
+      "publisher_name": "Parliament of the Republic of Kazakhstan",
+      "jurisdiction_id": "KAZ",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "binding-law",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Kazakhstan (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "ru",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-db23c07503f7",
+      "evidence_reference": "curl (browser user agent, --max-time 60) of the Ministry of Justice legal information system Adilet (old.adilet.zan.kz server-rendered edition; the new adilet.zan.kz front end renders only via JavaScript and returned no text to curl or WebFetch): full Russian text read, plus the act's 'Информация' page for date, publication and issuing body"
+    },
+    {
+      "id": "i-b7a9583dae2a",
+      "official_title": "Постановление Правительства Республики Казахстан от 24 июля 2024 года № 592 «Об утверждении Концепции развития искусственного интеллекта на 2024 – 2029 годы»",
+      "english_title": "Concept for the Development of Artificial Intelligence for 2024-2029 (Government Resolution No. 592 of 24 July 2024)",
+      "issuing_authority": "Government of the Republic of Kazakhstan",
+      "authority_type": "government",
+      "categories": [
+        "strategy",
+        "government-governance"
+      ],
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2024-07-24",
+      "current_status": "Effective from signature (24 July 2024). Adilet shows it as in force; not marked superseded by the 2026 Digital Qazaqstan strategy.",
+      "summary": "Kazakhstan's national AI strategy document for 2024-2029, approved by the Government. It analyses the current situation and sets directions covering data, infrastructure, human capital, AI research and the regulation of legal relations in AI, with a vision and principles for AI adoption; the then Ministry of Digital Development, Innovation and Aerospace Industry was charged with oversight and annual reporting.",
+      "ai_governance_relevance": "",
+      "source_url": "https://old.adilet.zan.kz/rus/docs/P2400000592",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://adilet.zan.kz/rus/docs/P2400000592",
+      "sectors": [],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-2eea242fb08c",
+      "publisher_name": "Government of the Republic of Kazakhstan",
+      "jurisdiction_id": "KAZ",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "strategy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Kazakhstan (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "ru",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-290cc471b0bd",
+      "evidence_reference": "curl (browser user agent, --max-time 60) of the Ministry of Justice legal information system Adilet (old.adilet.zan.kz server-rendered edition; the new adilet.zan.kz front end renders only via JavaScript and returned no text to curl or WebFetch): full Russian text read, plus the act's 'Информация' page for date, publication and issuing body"
+    },
+    {
+      "id": "i-534c623008a7",
+      "official_title": "Указ Президента Республики Казахстан от 9 июня 2026 года № 1311 «Об утверждении Общенациональной стратегии масштабной цифровизации и тотального внедрения технологий искусственного интеллекта \"Digital Qazaqstan\" до 2029 года»",
+      "english_title": "National Strategy for Large-Scale Digitalisation and Total Adoption of Artificial Intelligence Technologies 'Digital Qazaqstan' to 2029 (Presidential Decree No. 1311 of 9 June 2026)",
+      "issuing_authority": "President of the Republic of Kazakhstan",
+      "authority_type": "executive",
+      "categories": [
+        "strategy",
+        "public-sector"
+      ],
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2026-06-09",
+      "current_status": "Approved 9 June 2026; implemented through the Government action plan approved by Resolution No. 760 of 26 August 2026.",
+      "summary": "Presidential strategy, adopted under the national plan implementing the President's September 2025 address 'Kazakhstan in the era of artificial intelligence', setting the goal, principles and vision for digitalisation and AI to 2029. Its strategic directions cover digitalisation and AI adoption for citizens (public services) and for business and the economy, and the integration of international practice into the national AI ecosystem.",
+      "ai_governance_relevance": "",
+      "source_url": "https://old.adilet.zan.kz/rus/docs/U2600001311",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://adilet.zan.kz/rus/docs/U2600001311",
+      "sectors": [],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-e6ccf2617562",
+      "publisher_name": "President of the Republic of Kazakhstan",
+      "jurisdiction_id": "KAZ",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "strategy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Kazakhstan (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "ru",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-cbd6fc938bf5",
+      "evidence_reference": "curl (browser user agent, --max-time 60) of the Ministry of Justice legal information system Adilet (old.adilet.zan.kz server-rendered edition; the new adilet.zan.kz front end renders only via JavaScript and returned no text to curl or WebFetch): full Russian text read, plus the act's 'Информация' page for date, publication and issuing body"
+    },
+    {
+      "id": "i-bbda329dfcfc",
+      "official_title": "Постановление Правительства Республики Казахстан от 26 августа 2026 года № 760 «Об утверждении Плана действий по реализации Общенациональной стратегии масштабной цифровизации и тотального внедрения технологий искусственного интеллекта \"Digital Qazaqstan\" до 2029 года»",
+      "english_title": "Action Plan for the Digital Qazaqstan Strategy to 2029 (Government Resolution No. 760 of 26 August 2026)",
+      "issuing_authority": "Government of the Republic of Kazakhstan",
+      "authority_type": "government",
+      "categories": [
+        "strategy",
+        "public-sector"
+      ],
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2026-08-26",
+      "current_status": "",
+      "summary": "Government action plan implementing the Digital Qazaqstan digitalisation and AI strategy. Central and local executive bodies must carry out its measures and report twice a year to the Ministry of Artificial Intelligence and Digital Development, which reports a consolidated update to the Government Office.",
+      "ai_governance_relevance": "",
+      "source_url": "https://old.adilet.zan.kz/rus/docs/P2600000760",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://adilet.zan.kz/rus/docs/P2600000760",
+      "sectors": [],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-2eea242fb08c",
+      "publisher_name": "Government of the Republic of Kazakhstan",
+      "jurisdiction_id": "KAZ",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "strategy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Kazakhstan (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "ru",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-6081e76e1e25",
+      "evidence_reference": "curl (browser user agent, --max-time 60) of the Ministry of Justice legal information system Adilet (old.adilet.zan.kz server-rendered edition; the new adilet.zan.kz front end renders only via JavaScript and returned no text to curl or WebFetch): full Russian text read, plus the act's 'Информация' page for date, publication and issuing body"
+    },
+    {
+      "id": "i-d2367363d664",
+      "official_title": "Указ Президента Республики Казахстан от 19 мая 2025 года № 881 «Об образовании Совета по развитию искусственного интеллекта»",
+      "english_title": "Presidential Decree No. 881 of 19 May 2025 on establishing the Artificial Intelligence Development Council",
+      "issuing_authority": "President of the Republic of Kazakhstan",
+      "authority_type": "executive",
+      "categories": [
+        "government-governance"
+      ],
+      "legal_status": "binding_regulation",
+      "lifecycle": "in_force",
+      "publication_date": "2025-05-19",
+      "current_status": "Effective from signature; published in the Collection of Acts of the President and Government (SAPP) 2025 No. 11-12-13 art. 78. Adilet marks it as amended.",
+      "summary": "Creates the Artificial Intelligence Development Council as a consultative and advisory body under the President and approves its regulations. The Council addresses AI development tasks in Kazakhstan and monitors their implementation; the Ministry of Artificial Intelligence and Digital Development is its working body and working groups may be formed.",
+      "ai_governance_relevance": "",
+      "source_url": "https://old.adilet.zan.kz/rus/docs/U2500000881",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://adilet.zan.kz/rus/docs/U2500000881",
+      "sectors": [],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-e6ccf2617562",
+      "publisher_name": "President of the Republic of Kazakhstan",
+      "jurisdiction_id": "KAZ",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "government-governance",
+      "subcategory": null,
+      "effective_date": "2025-05-19",
+      "last_amended_date": null,
+      "scope": "Kazakhstan (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "ru",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-6d56db53abaf",
+      "evidence_reference": "curl (browser user agent, --max-time 60) of the Ministry of Justice legal information system Adilet (old.adilet.zan.kz server-rendered edition; the new adilet.zan.kz front end renders only via JavaScript and returned no text to curl or WebFetch): full Russian text read, plus the act's 'Информация' page for date, publication and issuing body"
+    },
+    {
+      "id": "i-8102c2381474",
+      "official_title": "Постановление Правительства Республики Казахстан от 23 января 2024 года № 25 «Об определении оператора национальной платформы искусственного интеллекта»",
+      "english_title": "Government Resolution No. 25 of 23 January 2024 designating the operator of the national artificial intelligence platform",
+      "issuing_authority": "Government of the Republic of Kazakhstan",
+      "authority_type": "government",
+      "categories": [
+        "government-governance",
+        "public-sector"
+      ],
+      "legal_status": "binding_regulation",
+      "lifecycle": "in_force",
+      "publication_date": "2024-01-23",
+      "current_status": "Effective from signature. The Ministry's implementation report of 30 September 2026 records an amendment to this resolution prepared under the AI Law.",
+      "summary": "Designates the joint-stock company National Information Technologies (NIT) as operator of the national AI platform under the Law on Informatization. The operator role is now also set out in Article 14 of the 2025 AI Law.",
+      "ai_governance_relevance": "",
+      "source_url": "https://old.adilet.zan.kz/rus/docs/P2400000025",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://adilet.zan.kz/rus/docs/P2400000025",
+      "sectors": [],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-2eea242fb08c",
+      "publisher_name": "Government of the Republic of Kazakhstan",
+      "jurisdiction_id": "KAZ",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "government-governance",
+      "subcategory": null,
+      "effective_date": "2024-01-23",
+      "last_amended_date": null,
+      "scope": "Kazakhstan (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "ru",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-9a536086d5b8",
+      "evidence_reference": "curl (browser user agent, --max-time 60) of the Ministry of Justice legal information system Adilet (old.adilet.zan.kz server-rendered edition; the new adilet.zan.kz front end renders only via JavaScript and returned no text to curl or WebFetch): full Russian text read, plus the act's 'Информация' page for date, publication and issuing body"
+    },
+    {
+      "id": "i-40ba214b50ca",
+      "official_title": "Приказ Заместителя Премьер-Министра – Министра искусственного интеллекта и цифрового развития Республики Казахстан от 1 апреля 2026 года № 171/НҚ «Об утверждении критериев отнесения объектов информатизации к системам искусственного интеллекта»",
+      "english_title": "Order No. 171/NK of 1 April 2026 approving criteria for classifying informatisation objects as artificial intelligence systems",
+      "issuing_authority": "Ministry of Artificial Intelligence and Digital Development",
+      "authority_type": "ministry",
+      "categories": [
+        "binding-law",
+        "risk-assurance"
+      ],
+      "legal_status": "binding_regulation",
+      "lifecycle": "in_force",
+      "publication_date": "2026-04-01",
+      "current_status": "Published in the electronic Reference Control Bank of legal acts on 8 April 2026.",
+      "summary": "Implementing order under Article 13(1)(6) of the AI Law that sets the criteria for deciding when an informatisation object counts as an AI system and so falls under the AI Law's obligations. Registered with the Ministry of Justice (No. 38288).",
+      "ai_governance_relevance": "",
+      "source_url": "https://old.adilet.zan.kz/rus/docs/V2600038288",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://adilet.zan.kz/rus/docs/V2600038288",
+      "sectors": [],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-77ab314f74b6",
+      "publisher_name": "Ministry of Artificial Intelligence and Digital Development of the Republic of Kazakhstan",
+      "jurisdiction_id": "KAZ",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "binding-law",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Kazakhstan (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "ru",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-c7036501024a",
+      "evidence_reference": "curl (browser user agent, --max-time 60) of the Ministry of Justice legal information system Adilet (old.adilet.zan.kz server-rendered edition; the new adilet.zan.kz front end renders only via JavaScript and returned no text to curl or WebFetch): full Russian text read, plus the act's 'Информация' page for date, publication and issuing body"
+    },
+    {
+      "id": "i-ef503a280ba4",
+      "official_title": "Приказ Заместителя Премьер-Министра – Министра искусственного интеллекта и цифрового развития Республики Казахстан от 10 апреля 2026 года № 196/НҚ «Об утверждении Правил формирования отраслевыми государственными органами перечней доверенных систем искусственного интеллекта высокой степени риска и их публикации на интернет-ресурсах государственных органов»",
+      "english_title": "Order No. 196/NK of 10 April 2026 approving Rules for sectoral state bodies to compile and publish lists of trusted high-risk AI systems",
+      "issuing_authority": "Ministry of Artificial Intelligence and Digital Development",
+      "authority_type": "ministry",
+      "categories": [
+        "risk-assurance",
+        "sectoral",
+        "transparency"
+      ],
+      "legal_status": "binding_regulation",
+      "lifecycle": "in_force",
+      "publication_date": "2026-04-10",
+      "current_status": "Published in the electronic Reference Control Bank on 15 April 2026.",
+      "summary": "Implements Article 19(1) of the AI Law: sets how sectoral government bodies form lists of trusted high-risk AI systems and publish them on their websites. Under the AI Law, owners seeking inclusion must have their systems audited. Registered with the Ministry of Justice (No. 38422).",
+      "ai_governance_relevance": "",
+      "source_url": "https://old.adilet.zan.kz/rus/docs/V2600038422",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://adilet.zan.kz/rus/docs/V2600038422",
+      "sectors": [],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-77ab314f74b6",
+      "publisher_name": "Ministry of Artificial Intelligence and Digital Development of the Republic of Kazakhstan",
+      "jurisdiction_id": "KAZ",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "risk-assurance",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Kazakhstan (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "ru",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-71b63ce41cc6",
+      "evidence_reference": "curl (browser user agent, --max-time 60) of the Ministry of Justice legal information system Adilet (old.adilet.zan.kz server-rendered edition; the new adilet.zan.kz front end renders only via JavaScript and returned no text to curl or WebFetch): full Russian text read, plus the act's 'Информация' page for date, publication and issuing body"
+    },
+    {
+      "id": "i-2600a5321490",
+      "official_title": "Приказ Заместителя Премьер-Министра – Министра искусственного интеллекта и цифрового развития Республики Казахстан от 15 апреля 2026 года № 202/НҚ «Об утверждении Правил разработки, применения и распространения машиночитаемых форм»",
+      "english_title": "Order No. 202/NK of 15 April 2026 approving Rules on developing, applying and distributing machine-readable forms",
+      "issuing_authority": "Ministry of Artificial Intelligence and Digital Development",
+      "authority_type": "ministry",
+      "categories": [
+        "transparency",
+        "binding-law"
+      ],
+      "legal_status": "binding_regulation",
+      "lifecycle": "in_force",
+      "publication_date": "2026-04-15",
+      "current_status": "Published in the electronic Reference Control Bank on 16 April 2026.",
+      "summary": "Implements Article 22(3) of the AI Law on machine-readable forms, which let AI systems and other data-processing tools automatically record and recognise conditions (such as permissions or restrictions on use) for transparency and accountability. Registered with the Ministry of Justice (No. 38444).",
+      "ai_governance_relevance": "",
+      "source_url": "https://old.adilet.zan.kz/rus/docs/V2600038444",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://adilet.zan.kz/rus/docs/V2600038444",
+      "sectors": [],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-77ab314f74b6",
+      "publisher_name": "Ministry of Artificial Intelligence and Digital Development of the Republic of Kazakhstan",
+      "jurisdiction_id": "KAZ",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "transparency",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Kazakhstan (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "ru",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-c947eb070e10",
+      "evidence_reference": "curl (browser user agent, --max-time 60) of the Ministry of Justice legal information system Adilet (old.adilet.zan.kz server-rendered edition; the new adilet.zan.kz front end renders only via JavaScript and returned no text to curl or WebFetch): full Russian text read, plus the act's 'Информация' page for date, publication and issuing body"
+    },
+    {
+      "id": "i-0215a9dbd7bb",
+      "official_title": "Об утверждении перечня документации на системы искусственного интеллекта",
+      "english_title": "Order approving the list of documentation for artificial intelligence systems (Order No. 95/NK of 25 February 2026)",
+      "issuing_authority": "Ministry of Artificial Intelligence and Digital Development",
+      "authority_type": "ministry",
+      "categories": [
+        "risk-assurance",
+        "transparency"
+      ],
+      "legal_status": "binding_regulation",
+      "lifecycle": "adopted",
+      "publication_date": "2026-02-25",
+      "current_status": "Posted in the Ministry's documents section on gov.kz (record 983050) on 16 March 2026 as an unnumbered copy (order plus annex). The Ministry's report on implementing adopted laws (as of 30 September 2026) records it as Order No. 95/NK of 25 February 2026, not subject to state registration; the date and number come from that report.",
+      "summary": "Order under Article 13(1)(5) of the AI Law listing the documentation owners and operators must keep for AI systems: a system document, a risk-management document (risk sources, controls, treatment plan), a document on data libraries and an organisational AI-principles policy. The required set scales with risk: minimal-risk systems need the system and risk documents, medium-risk add data-library documents, and high-risk add the AI-principles policy.",
+      "ai_governance_relevance": "",
+      "source_url": "https://www.gov.kz/uploads/2026/3/16/21bbc3796cfba28b52c8d321559f66c1_original.62757.docx",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.gov.kz/uploads/2026/3/16/21bbc3796cfba28b52c8d321559f66c1_original.62757.docx",
+      "sectors": [],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-77ab314f74b6",
+      "publisher_name": "Ministry of Artificial Intelligence and Digital Development of the Republic of Kazakhstan",
+      "jurisdiction_id": "KAZ",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "risk-assurance",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Kazakhstan (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "ru",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-0811aaca3fd6",
+      "evidence_reference": "curl (browser user agent) of the gov.kz public content API record 983050 of the Ministry; order and annex DOCX files downloaded from www.gov.kz/uploads and read in full; number and date taken from the Ministry's implementation report (gov.kz document 1074111)"
+    },
+    {
+      "id": "i-72989d00dc7a",
+      "official_title": "Приказ Заместителя Премьер-Министра – Министра искусственного интеллекта и цифрового развития Республики Казахстан от 13 августа 2026 года № 482/НҚ «Об утверждении правил взаимодействия оператора национальной платформы искусственного интеллекта с физическими и юридическими лицами в рамках оказания услуг на национальной платформе искусственного интеллекта для разработки, размещения платформенных программных продуктов, моделей искусственного интеллекта на национальной платформе искусственного интеллекта»",
+      "english_title": "Order No. 482/NK of 13 August 2026 approving Rules on interaction between the national AI platform operator and individuals and legal entities",
+      "issuing_authority": "Ministry of Artificial Intelligence and Digital Development",
+      "authority_type": "ministry",
+      "categories": [
+        "government-governance",
+        "public-sector"
+      ],
+      "legal_status": "binding_regulation",
+      "lifecycle": "in_force",
+      "publication_date": "2026-08-13",
+      "current_status": "Registered with the Ministry of Justice; published in the electronic Reference Control Bank on 18 August 2026.",
+      "summary": "Implementing order under the AI Law setting how the operator of the national AI platform provides services to individuals and companies that develop and host platform software products and AI models on the platform.",
+      "ai_governance_relevance": "",
+      "source_url": "https://old.adilet.zan.kz/rus/docs/V2600039591",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://adilet.zan.kz/rus/docs/V2600039591",
+      "sectors": [],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-77ab314f74b6",
+      "publisher_name": "Ministry of Artificial Intelligence and Digital Development of the Republic of Kazakhstan",
+      "jurisdiction_id": "KAZ",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "government-governance",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Kazakhstan (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "ru",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-1628bdf7b6b2",
+      "evidence_reference": "curl (browser user agent, --max-time 60) of the Ministry of Justice legal information system Adilet (old.adilet.zan.kz server-rendered edition; the new adilet.zan.kz front end renders only via JavaScript and returned no text to curl or WebFetch): full Russian text read, plus the act's 'Информация' page for date, publication and issuing body"
+    },
+    {
+      "id": "i-5270bb099ed8",
+      "official_title": "Приказ Заместителя Премьер-Министра – Министра искусственного интеллекта и цифрового развития Республики Казахстан от 27 августа 2026 года № 517/НҚ «Об утверждении Правил предоставления доступа к вычислительным ресурсам оператором национальной платформы искусственного интеллекта»",
+      "english_title": "Order No. 517/NK of 27 August 2026 approving Rules on access to computing resources provided by the national AI platform operator",
+      "issuing_authority": "Ministry of Artificial Intelligence and Digital Development",
+      "authority_type": "ministry",
+      "categories": [
+        "government-governance"
+      ],
+      "legal_status": "binding_regulation",
+      "lifecycle": "in_force",
+      "publication_date": "2026-08-27",
+      "current_status": "Registered with the Ministry of Justice; published in the electronic Reference Control Bank on 4 September 2026.",
+      "summary": "Implements Article 26 of the AI Law by setting the procedure for the national AI platform operator to give access to its computing resources for AI development.",
+      "ai_governance_relevance": "",
+      "source_url": "https://old.adilet.zan.kz/rus/docs/V2600039746",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://adilet.zan.kz/rus/docs/V2600039746",
+      "sectors": [],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-77ab314f74b6",
+      "publisher_name": "Ministry of Artificial Intelligence and Digital Development of the Republic of Kazakhstan",
+      "jurisdiction_id": "KAZ",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "government-governance",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Kazakhstan (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "ru",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-8720d6dcaf7e",
+      "evidence_reference": "curl (browser user agent, --max-time 60) of the Ministry of Justice legal information system Adilet (old.adilet.zan.kz server-rendered edition; the new adilet.zan.kz front end renders only via JavaScript and returned no text to curl or WebFetch): full Russian text read, plus the act's 'Информация' page for date, publication and issuing body"
+    },
+    {
+      "id": "i-84aea9d024e8",
+      "official_title": "Приказ Заместителя Премьер-Министра – Министра искусственного интеллекта и цифрового развития Республики Казахстан от 17 июня 2026 года № 326/НҚ «О реализации пилотного проекта по оказанию государственных услуг через платформу \"чат-приложение Alem GPT\"»",
+      "english_title": "Order No. 326/NK of 17 June 2026 on a pilot project for delivering public services through the 'Alem GPT chat application' platform",
+      "issuing_authority": "Ministry of Artificial Intelligence and Digital Development",
+      "authority_type": "ministry",
+      "categories": [
+        "public-sector",
+        "generative-ai",
+        "sandbox"
+      ],
+      "legal_status": "binding_regulation",
+      "lifecycle": "in_force",
+      "publication_date": "2026-06-17",
+      "current_status": "Published in the electronic Reference Control Bank on 26 June 2026.",
+      "summary": "Launches, under Article 22 of the Law on State and Socially Responsible Services, a pilot in which citizens request public services through the Alem GPT chat application, with AI agents identifying the life situation and routing requests to state information systems. It approves the service algorithm (including user consent to personal-data access, secure exchange, logging and audit) and involves National Information Technologies JSC and Astana Hub.",
+      "ai_governance_relevance": "",
+      "source_url": "https://old.adilet.zan.kz/rus/docs/G26IPM00326",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://adilet.zan.kz/rus/docs/G26IPM00326",
+      "sectors": [
+        "public-sector"
+      ],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-77ab314f74b6",
+      "publisher_name": "Ministry of Artificial Intelligence and Digital Development of the Republic of Kazakhstan",
+      "jurisdiction_id": "KAZ",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "public-sector",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Kazakhstan (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "ru",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-53f18e14ba2f",
+      "evidence_reference": "curl (browser user agent, --max-time 60) of the Ministry of Justice legal information system Adilet (old.adilet.zan.kz server-rendered edition; the new adilet.zan.kz front end renders only via JavaScript and returned no text to curl or WebFetch): full Russian text read, plus the act's 'Информация' page for date, publication and issuing body"
+    },
+    {
+      "id": "i-f1e8b9f35aeb",
+      "official_title": "Приказ и.о. Министра просвещения Республики Казахстан от 28 сентября 2026 года № 283-НҚ «Об утверждении Стандарта применения искусственного интеллекта в системе среднего образования Республики Казахстан»",
+      "english_title": "Standard for the Use of Artificial Intelligence in Secondary Education (Order No. 283-NK of 28 September 2026 of the Acting Minister of Enlightenment)",
+      "issuing_authority": "Ministry of Enlightenment of the Republic of Kazakhstan",
+      "authority_type": "ministry",
+      "categories": [
+        "sectoral",
+        "ethics",
+        "public-sector"
+      ],
+      "legal_status": "administrative_policy_mandatory_in_scope",
+      "lifecycle": "adopted",
+      "publication_date": "2026-09-28",
+      "current_status": "Adopted under Presidential Decree No. 1274 of 12 May 2026 on AI in education; published in the electronic Reference Control Bank on 8 October 2026.",
+      "summary": "Sets requirements for AI use in secondary schools: AI is an auxiliary tool that must not replace the teacher's professional responsibility or pupils' own learning, must suit learning goals and age, and AI-generated results must be checked by the person using them. Automatic decisions on assessing learning results or on disciplinary measures against pupils are not allowed, and personal data must be processed under personal-data law.",
+      "ai_governance_relevance": "",
+      "source_url": "https://old.adilet.zan.kz/rus/docs/G26HP000283",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://adilet.zan.kz/rus/docs/G26HP000283",
+      "sectors": [
+        "education"
+      ],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-e095ab0b9472",
+      "publisher_name": "Ministry of Enlightenment of the Republic of Kazakhstan",
+      "jurisdiction_id": "KAZ",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "sectoral",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Kazakhstan (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "ru",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-8e35c121962a",
+      "evidence_reference": "curl (browser user agent, --max-time 60) of the Ministry of Justice legal information system Adilet (old.adilet.zan.kz server-rendered edition; the new adilet.zan.kz front end renders only via JavaScript and returned no text to curl or WebFetch): full Russian text read, plus the act's 'Информация' page for date, publication and issuing body"
+    },
+    {
+      "id": "i-e2883d0a1ba0",
+      "official_title": "Конституционный закон Республики Казахстан от 8 мая 2026 года № 286-VIII «О специальном правовом режиме города Алатау»",
+      "english_title": "Constitutional Law No. 286-VIII of 8 May 2026 on the Special Legal Regime of Alatau City",
+      "issuing_authority": "Parliament of the Republic of Kazakhstan (signed by the President)",
+      "authority_type": "legislature",
+      "categories": [
+        "sandbox",
+        "binding-law"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2026-05-08",
+      "current_status": "Published 9 May 2026 (Egemen Qazaqstan and Kazakhstanskaya Pravda No. 86). Only Article 54 is AI-relevant.",
+      "summary": "Creates a special legal regime for Alatau City. Article 54 lets the city administration set experimental legal regimes for developing, testing and introducing innovations, and expressly lists artificial intelligence among the fields (with the Internet of things, digital and sensor networks, unmanned transport and robotics); results can be used to improve national legislation.",
+      "ai_governance_relevance": "",
+      "source_url": "https://old.adilet.zan.kz/rus/docs/Z2600000286",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://adilet.zan.kz/rus/docs/Z2600000286",
+      "sectors": [],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-6c40040cc2a6",
+      "publisher_name": "Parliament of the Republic of Kazakhstan",
+      "jurisdiction_id": "KAZ",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "sandbox",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Kazakhstan (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "ru",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-5de8dab4b20a",
+      "evidence_reference": "curl (browser user agent, --max-time 60) of the Ministry of Justice legal information system Adilet (old.adilet.zan.kz server-rendered edition; the new adilet.zan.kz front end renders only via JavaScript and returned no text to curl or WebFetch): full Russian text read, plus the act's 'Информация' page for date, publication and issuing body"
+    },
+    {
+      "id": "i-9b9d56cc757d",
+      "official_title": "СТ РК ISO/IEC 5339-2025 «Информационные технологии. Искусственный интеллект. Руководство для приложений искусственного интеллекта»",
+      "english_title": "National standard ST RK ISO/IEC 5339-2025 'Information technology - Artificial intelligence - Guidance for AI applications'",
+      "issuing_authority": "Committee for Technical Regulation and Metrology of the Ministry of Trade and Integration (Gosstandart)",
+      "authority_type": "executive_agency",
+      "categories": [
+        "standards",
+        "risk-assurance"
+      ],
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "in_force",
+      "publication_date": "2025-10-23",
+      "current_status": "Voluntary national standard. The Ministry of Artificial Intelligence and Digital Development's gov.kz notice of 8 October 2026 (record 1079516) gives the approving order and the 1 January 2026 application date and attaches the standard's English 'official edition' PDF.",
+      "summary": "National standard identical to ISO/IEC 5339:2024, approved by Order No. 64-NK of 23 October 2025 of the Chair of the Committee for Technical Regulation and Metrology and applied from 1 January 2026. It gives guidance on developing and using AI applications, stakeholder roles and responsibilities, and assessing system characteristics and impacts, with attention to risk management, safety, personal data, transparency and explainability; the Ministry presents it as a methodological basis for government bodies choosing AI solutions.",
+      "ai_governance_relevance": "",
+      "source_url": "https://www.gov.kz/uploads/2026/10/8/eb1f9f42de8be61fc21f58ea8ce02cd66d18c110bdb6423748e648b18beef763_original.16530062.pdf",
+      "official_pdf_url": "https://www.gov.kz/uploads/2026/10/8/eb1f9f42de8be61fc21f58ea8ce02cd66d18c110bdb6423748e648b18beef763_original.16530062.pdf",
+      "official_webpage_url": "https://www.gov.kz/uploads/2026/10/8/eb1f9f42de8be61fc21f58ea8ce02cd66d18c110bdb6423748e648b18beef763_original.16530062.pdf",
+      "sectors": [],
+      "source_kind": "official_publication",
+      "supersedes": [],
+      "organization_id": "o-92177296af94",
+      "publisher_name": "Ministry of Artificial Intelligence and Digital Development of the Republic of Kazakhstan",
+      "jurisdiction_id": "KAZ",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "standards",
+      "subcategory": null,
+      "effective_date": "2026-01-01",
+      "last_amended_date": null,
+      "scope": "Kazakhstan (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "ru",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-e636447a3cb6",
+      "evidence_reference": "curl (browser user agent) of the gov.kz public content API record 1079516 of the Ministry (notice text) and the attached PDF (title and foreword pages read with pdftotext)"
+    },
+    {
+      "id": "i-a2a0d5237ed2",
+      "official_title": "Report on the application of generative AI in financial services in AIFC",
+      "english_title": "Report on the application of generative AI in financial services in the AIFC",
+      "issuing_authority": "Astana Financial Services Authority",
+      "authority_type": "regulator",
+      "categories": [
+        "sectoral",
+        "generative-ai",
+        "index-readiness"
+      ],
+      "legal_status": "regulatory_opinion",
+      "lifecycle": "published",
+      "publication_date": "2025-12",
+      "current_status": "Applies within the Astana International Financial Centre only. The report PDF (dated December 2025) is hosted on the AIFC site and linked from AFSA's own news page.",
+      "summary": "AFSA report on its 2025 survey of all AIFC Authorised Persons (42 responses): 45% use AI, mostly in lower-risk areas such as customer communication and marketing, with heavy reliance on third-party tools and few full-scale deployments. AFSA states it will run another survey in 2026 to decide whether regulatory amendments on AI in financial services are needed, and invites firms to test AI solutions in the AIFC FinTech Lab sandbox.",
+      "ai_governance_relevance": "",
+      "source_url": "https://afsa.aifc.kz/afsa-publishes-a-report-on-the-application-of-generative-ai-in-financial-services-at-the-aifc/",
+      "official_pdf_url": "https://aifc.kz/wp-content/uploads/2025/12/application-of-ai-in-financial-services.pdf",
+      "official_webpage_url": "https://afsa.aifc.kz/afsa-publishes-a-report-on-the-application-of-generative-ai-in-financial-services-at-the-aifc/",
+      "sectors": [
+        "finance"
+      ],
+      "source_kind": "official_publication",
+      "supersedes": [],
+      "organization_id": "o-002a9e11dfa3",
+      "publisher_name": "Astana Financial Services Authority",
+      "jurisdiction_id": "KAZ",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "sectoral",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Kazakhstan (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "en",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-dc0ed45cfe29",
+      "evidence_reference": "curl (browser user agent) of the AFSA news page and the linked report PDF (aifc.kz, the AIFC's own site); report read with pdftotext"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-77ab314f74b6",
+      "jurisdiction_id": "KAZ",
+      "name": "Ministry of Artificial Intelligence and Digital Development of the Republic of Kazakhstan",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Central authorised body for AI under the Law on Artificial Intelligence (2025); issues the AI law's implementing orders (AI-system criteria, documentation list, trusted high-risk lists, machine-readable forms, national AI platform rules) and is the working body of the Presidential AI Development Council.",
+      "source_url": "https://www.gov.kz/memleket/entities/mdai",
+      "authority_type": "ministry",
+      "government_level": "national"
+    },
+    {
+      "id": "o-6c40040cc2a6",
+      "jurisdiction_id": "KAZ",
+      "name": "Parliament of the Republic of Kazakhstan",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Enacted the Law on Artificial Intelligence (No. 230-VIII), the companion AI and digitalisation amendments law (No. 231-VIII), the Digital Code (No. 255-VIII) and the Constitutional Law on the Alatau City special legal regime.",
+      "source_url": "https://www.parlam.kz/",
+      "authority_type": "legislature",
+      "government_level": "national"
+    },
+    {
+      "id": "o-2eea242fb08c",
+      "jurisdiction_id": "KAZ",
+      "name": "Government of the Republic of Kazakhstan",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Approved the AI Development Concept 2024-2029, the action plan for the Digital Qazaqstan strategy and designated the national AI platform operator.",
+      "source_url": "https://primeminister.kz/",
+      "authority_type": "government",
+      "government_level": "national"
+    },
+    {
+      "id": "o-e6ccf2617562",
+      "jurisdiction_id": "KAZ",
+      "name": "President of the Republic of Kazakhstan",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Created the AI Development Council (Decree No. 881, 2025) and approved the Digital Qazaqstan national strategy for digitalisation and AI (Decree No. 1311, 2026).",
+      "source_url": "https://www.akorda.kz/",
+      "authority_type": "executive",
+      "government_level": "national"
+    },
+    {
+      "id": "o-e095ab0b9472",
+      "jurisdiction_id": "KAZ",
+      "name": "Ministry of Enlightenment of the Republic of Kazakhstan",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Approved the Standard for the Use of Artificial Intelligence in Secondary Education (2026).",
+      "source_url": "https://www.gov.kz/memleket/entities/edu",
+      "authority_type": "ministry",
+      "government_level": "national"
+    },
+    {
+      "id": "o-92177296af94",
+      "jurisdiction_id": "KAZ",
+      "name": "Committee for Technical Regulation and Metrology of the Ministry of Trade and Integration of the Republic of Kazakhstan",
+      "publisher_name_verified": true,
+      "ai_governance_role": "National standards body (Gosstandart); adopted ST RK ISO/IEC 5339-2025 on AI applications.",
+      "source_url": "https://www.gov.kz/memleket/entities/ktrm",
+      "authority_type": "executive_agency",
+      "government_level": "national"
+    },
+    {
+      "id": "o-002a9e11dfa3",
+      "jurisdiction_id": "KAZ",
+      "name": "Astana Financial Services Authority",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Financial regulator of the Astana International Financial Centre (AIFC); published a December 2025 report on generative AI use by AIFC authorised firms and runs the AIFC FinTech Lab sandbox.",
+      "source_url": "https://afsa.aifc.kz/",
+      "authority_type": "regulator",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-7b98eb5226c4",
+      "url": "https://old.adilet.zan.kz/rus/docs/Z2500000230",
+      "jurisdiction_ids": [
+        "KAZ"
+      ],
+      "source_institutions": [
+        "Parliament of the Republic of Kazakhstan"
+      ],
+      "instrument_ids": [
+        "i-726bf5d8f4f6"
+      ],
+      "categories_reviewed": [
+        "binding-law",
+        "risk-assurance",
+        "transparency",
+        "government-governance",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60) of the Ministry of Justice legal information system Adilet (old.adilet.zan.kz server-rendered edition; the new adilet.zan.kz front end renders only via JavaScript and returned no text to curl or WebFetch): full Russian text read, plus the act's 'Информация' page for date, publication and issuing body",
+      "http_status": 200,
+      "final_url": "https://old.adilet.zan.kz/rus/docs/Z2500000230",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "ru",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-06791aa6a310",
+      "url": "https://old.adilet.zan.kz/rus/docs/Z2500000231",
+      "jurisdiction_ids": [
+        "KAZ"
+      ],
+      "source_institutions": [
+        "Parliament of the Republic of Kazakhstan"
+      ],
+      "instrument_ids": [
+        "i-18bc31f22562"
+      ],
+      "categories_reviewed": [
+        "binding-law",
+        "data-privacy"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60) of the Ministry of Justice legal information system Adilet (old.adilet.zan.kz server-rendered edition; the new adilet.zan.kz front end renders only via JavaScript and returned no text to curl or WebFetch): full Russian text read, plus the act's 'Информация' page for date, publication and issuing body",
+      "http_status": 200,
+      "final_url": "https://old.adilet.zan.kz/rus/docs/Z2500000231",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "ru",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-8e8d6ca74a0b",
+      "url": "https://old.adilet.zan.kz/rus/docs/Z1300000094",
+      "jurisdiction_ids": [
+        "KAZ"
+      ],
+      "source_institutions": [
+        "Parliament of the Republic of Kazakhstan"
+      ],
+      "instrument_ids": [
+        "i-c8f219c8d641"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60) of the Ministry of Justice legal information system Adilet (old.adilet.zan.kz server-rendered edition; the new adilet.zan.kz front end renders only via JavaScript and returned no text to curl or WebFetch): full Russian text read, plus the act's 'Информация' page for date, publication and issuing body",
+      "http_status": 200,
+      "final_url": "https://old.adilet.zan.kz/rus/docs/Z1300000094",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "ru",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-db23c07503f7",
+      "url": "https://old.adilet.zan.kz/rus/docs/K2600000255",
+      "jurisdiction_ids": [
+        "KAZ"
+      ],
+      "source_institutions": [
+        "Parliament of the Republic of Kazakhstan"
+      ],
+      "instrument_ids": [
+        "i-e6fc6819b598"
+      ],
+      "categories_reviewed": [
+        "binding-law",
+        "transparency",
+        "risk-assurance",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60) of the Ministry of Justice legal information system Adilet (old.adilet.zan.kz server-rendered edition; the new adilet.zan.kz front end renders only via JavaScript and returned no text to curl or WebFetch): full Russian text read, plus the act's 'Информация' page for date, publication and issuing body",
+      "http_status": 200,
+      "final_url": "https://old.adilet.zan.kz/rus/docs/K2600000255",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "ru",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-290cc471b0bd",
+      "url": "https://old.adilet.zan.kz/rus/docs/P2400000592",
+      "jurisdiction_ids": [
+        "KAZ"
+      ],
+      "source_institutions": [
+        "Government of the Republic of Kazakhstan"
+      ],
+      "instrument_ids": [
+        "i-b7a9583dae2a"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "government-governance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60) of the Ministry of Justice legal information system Adilet (old.adilet.zan.kz server-rendered edition; the new adilet.zan.kz front end renders only via JavaScript and returned no text to curl or WebFetch): full Russian text read, plus the act's 'Информация' page for date, publication and issuing body",
+      "http_status": 200,
+      "final_url": "https://old.adilet.zan.kz/rus/docs/P2400000592",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "ru",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-cbd6fc938bf5",
+      "url": "https://old.adilet.zan.kz/rus/docs/U2600001311",
+      "jurisdiction_ids": [
+        "KAZ"
+      ],
+      "source_institutions": [
+        "President of the Republic of Kazakhstan"
+      ],
+      "instrument_ids": [
+        "i-534c623008a7"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60) of the Ministry of Justice legal information system Adilet (old.adilet.zan.kz server-rendered edition; the new adilet.zan.kz front end renders only via JavaScript and returned no text to curl or WebFetch): full Russian text read, plus the act's 'Информация' page for date, publication and issuing body",
+      "http_status": 200,
+      "final_url": "https://old.adilet.zan.kz/rus/docs/U2600001311",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "ru",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-6081e76e1e25",
+      "url": "https://old.adilet.zan.kz/rus/docs/P2600000760",
+      "jurisdiction_ids": [
+        "KAZ"
+      ],
+      "source_institutions": [
+        "Government of the Republic of Kazakhstan"
+      ],
+      "instrument_ids": [
+        "i-bbda329dfcfc"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60) of the Ministry of Justice legal information system Adilet (old.adilet.zan.kz server-rendered edition; the new adilet.zan.kz front end renders only via JavaScript and returned no text to curl or WebFetch): full Russian text read, plus the act's 'Информация' page for date, publication and issuing body",
+      "http_status": 200,
+      "final_url": "https://old.adilet.zan.kz/rus/docs/P2600000760",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "ru",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-6d56db53abaf",
+      "url": "https://old.adilet.zan.kz/rus/docs/U2500000881",
+      "jurisdiction_ids": [
+        "KAZ"
+      ],
+      "source_institutions": [
+        "President of the Republic of Kazakhstan"
+      ],
+      "instrument_ids": [
+        "i-d2367363d664"
+      ],
+      "categories_reviewed": [
+        "government-governance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60) of the Ministry of Justice legal information system Adilet (old.adilet.zan.kz server-rendered edition; the new adilet.zan.kz front end renders only via JavaScript and returned no text to curl or WebFetch): full Russian text read, plus the act's 'Информация' page for date, publication and issuing body",
+      "http_status": 200,
+      "final_url": "https://old.adilet.zan.kz/rus/docs/U2500000881",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "ru",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-9a536086d5b8",
+      "url": "https://old.adilet.zan.kz/rus/docs/P2400000025",
+      "jurisdiction_ids": [
+        "KAZ"
+      ],
+      "source_institutions": [
+        "Government of the Republic of Kazakhstan"
+      ],
+      "instrument_ids": [
+        "i-8102c2381474"
+      ],
+      "categories_reviewed": [
+        "government-governance",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60) of the Ministry of Justice legal information system Adilet (old.adilet.zan.kz server-rendered edition; the new adilet.zan.kz front end renders only via JavaScript and returned no text to curl or WebFetch): full Russian text read, plus the act's 'Информация' page for date, publication and issuing body",
+      "http_status": 200,
+      "final_url": "https://old.adilet.zan.kz/rus/docs/P2400000025",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "ru",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-c7036501024a",
+      "url": "https://old.adilet.zan.kz/rus/docs/V2600038288",
+      "jurisdiction_ids": [
+        "KAZ"
+      ],
+      "source_institutions": [
+        "Ministry of Artificial Intelligence and Digital Development of the Republic of Kazakhstan"
+      ],
+      "instrument_ids": [
+        "i-40ba214b50ca"
+      ],
+      "categories_reviewed": [
+        "binding-law",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60) of the Ministry of Justice legal information system Adilet (old.adilet.zan.kz server-rendered edition; the new adilet.zan.kz front end renders only via JavaScript and returned no text to curl or WebFetch): full Russian text read, plus the act's 'Информация' page for date, publication and issuing body",
+      "http_status": 200,
+      "final_url": "https://old.adilet.zan.kz/rus/docs/V2600038288",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "ru",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-71b63ce41cc6",
+      "url": "https://old.adilet.zan.kz/rus/docs/V2600038422",
+      "jurisdiction_ids": [
+        "KAZ"
+      ],
+      "source_institutions": [
+        "Ministry of Artificial Intelligence and Digital Development of the Republic of Kazakhstan"
+      ],
+      "instrument_ids": [
+        "i-ef503a280ba4"
+      ],
+      "categories_reviewed": [
+        "risk-assurance",
+        "sectoral",
+        "transparency"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60) of the Ministry of Justice legal information system Adilet (old.adilet.zan.kz server-rendered edition; the new adilet.zan.kz front end renders only via JavaScript and returned no text to curl or WebFetch): full Russian text read, plus the act's 'Информация' page for date, publication and issuing body",
+      "http_status": 200,
+      "final_url": "https://old.adilet.zan.kz/rus/docs/V2600038422",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "ru",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-c947eb070e10",
+      "url": "https://old.adilet.zan.kz/rus/docs/V2600038444",
+      "jurisdiction_ids": [
+        "KAZ"
+      ],
+      "source_institutions": [
+        "Ministry of Artificial Intelligence and Digital Development of the Republic of Kazakhstan"
+      ],
+      "instrument_ids": [
+        "i-2600a5321490"
+      ],
+      "categories_reviewed": [
+        "transparency",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60) of the Ministry of Justice legal information system Adilet (old.adilet.zan.kz server-rendered edition; the new adilet.zan.kz front end renders only via JavaScript and returned no text to curl or WebFetch): full Russian text read, plus the act's 'Информация' page for date, publication and issuing body",
+      "http_status": 200,
+      "final_url": "https://old.adilet.zan.kz/rus/docs/V2600038444",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "ru",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-0811aaca3fd6",
+      "url": "https://www.gov.kz/uploads/2026/3/16/21bbc3796cfba28b52c8d321559f66c1_original.62757.docx",
+      "jurisdiction_ids": [
+        "KAZ"
+      ],
+      "source_institutions": [
+        "Ministry of Artificial Intelligence and Digital Development of the Republic of Kazakhstan"
+      ],
+      "instrument_ids": [
+        "i-0215a9dbd7bb"
+      ],
+      "categories_reviewed": [
+        "risk-assurance",
+        "transparency"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent) of the gov.kz public content API record 983050 of the Ministry; order and annex DOCX files downloaded from www.gov.kz/uploads and read in full; number and date taken from the Ministry's implementation report (gov.kz document 1074111)",
+      "http_status": 200,
+      "final_url": "https://www.gov.kz/uploads/2026/3/16/21bbc3796cfba28b52c8d321559f66c1_original.62757.docx",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "ru",
+      "error": null,
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    },
+    {
+      "id": "s-1628bdf7b6b2",
+      "url": "https://old.adilet.zan.kz/rus/docs/V2600039591",
+      "jurisdiction_ids": [
+        "KAZ"
+      ],
+      "source_institutions": [
+        "Ministry of Artificial Intelligence and Digital Development of the Republic of Kazakhstan"
+      ],
+      "instrument_ids": [
+        "i-72989d00dc7a"
+      ],
+      "categories_reviewed": [
+        "government-governance",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60) of the Ministry of Justice legal information system Adilet (old.adilet.zan.kz server-rendered edition; the new adilet.zan.kz front end renders only via JavaScript and returned no text to curl or WebFetch): full Russian text read, plus the act's 'Информация' page for date, publication and issuing body",
+      "http_status": 200,
+      "final_url": "https://old.adilet.zan.kz/rus/docs/V2600039591",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "ru",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-8720d6dcaf7e",
+      "url": "https://old.adilet.zan.kz/rus/docs/V2600039746",
+      "jurisdiction_ids": [
+        "KAZ"
+      ],
+      "source_institutions": [
+        "Ministry of Artificial Intelligence and Digital Development of the Republic of Kazakhstan"
+      ],
+      "instrument_ids": [
+        "i-5270bb099ed8"
+      ],
+      "categories_reviewed": [
+        "government-governance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60) of the Ministry of Justice legal information system Adilet (old.adilet.zan.kz server-rendered edition; the new adilet.zan.kz front end renders only via JavaScript and returned no text to curl or WebFetch): full Russian text read, plus the act's 'Информация' page for date, publication and issuing body",
+      "http_status": 200,
+      "final_url": "https://old.adilet.zan.kz/rus/docs/V2600039746",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "ru",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-53f18e14ba2f",
+      "url": "https://old.adilet.zan.kz/rus/docs/G26IPM00326",
+      "jurisdiction_ids": [
+        "KAZ"
+      ],
+      "source_institutions": [
+        "Ministry of Artificial Intelligence and Digital Development of the Republic of Kazakhstan"
+      ],
+      "instrument_ids": [
+        "i-84aea9d024e8"
+      ],
+      "categories_reviewed": [
+        "public-sector",
+        "generative-ai",
+        "sandbox"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60) of the Ministry of Justice legal information system Adilet (old.adilet.zan.kz server-rendered edition; the new adilet.zan.kz front end renders only via JavaScript and returned no text to curl or WebFetch): full Russian text read, plus the act's 'Информация' page for date, publication and issuing body",
+      "http_status": 200,
+      "final_url": "https://old.adilet.zan.kz/rus/docs/G26IPM00326",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "ru",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-8e35c121962a",
+      "url": "https://old.adilet.zan.kz/rus/docs/G26HP000283",
+      "jurisdiction_ids": [
+        "KAZ"
+      ],
+      "source_institutions": [
+        "Ministry of Enlightenment of the Republic of Kazakhstan"
+      ],
+      "instrument_ids": [
+        "i-f1e8b9f35aeb"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "ethics",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60) of the Ministry of Justice legal information system Adilet (old.adilet.zan.kz server-rendered edition; the new adilet.zan.kz front end renders only via JavaScript and returned no text to curl or WebFetch): full Russian text read, plus the act's 'Информация' page for date, publication and issuing body",
+      "http_status": 200,
+      "final_url": "https://old.adilet.zan.kz/rus/docs/G26HP000283",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "ru",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-5de8dab4b20a",
+      "url": "https://old.adilet.zan.kz/rus/docs/Z2600000286",
+      "jurisdiction_ids": [
+        "KAZ"
+      ],
+      "source_institutions": [
+        "Parliament of the Republic of Kazakhstan"
+      ],
+      "instrument_ids": [
+        "i-e2883d0a1ba0"
+      ],
+      "categories_reviewed": [
+        "sandbox",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60) of the Ministry of Justice legal information system Adilet (old.adilet.zan.kz server-rendered edition; the new adilet.zan.kz front end renders only via JavaScript and returned no text to curl or WebFetch): full Russian text read, plus the act's 'Информация' page for date, publication and issuing body",
+      "http_status": 200,
+      "final_url": "https://old.adilet.zan.kz/rus/docs/Z2600000286",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "ru",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-e636447a3cb6",
+      "url": "https://www.gov.kz/uploads/2026/10/8/eb1f9f42de8be61fc21f58ea8ce02cd66d18c110bdb6423748e648b18beef763_original.16530062.pdf",
+      "jurisdiction_ids": [
+        "KAZ"
+      ],
+      "source_institutions": [
+        "Committee for Technical Regulation and Metrology of the Ministry of Trade and Integration of the Republic of Kazakhstan"
+      ],
+      "instrument_ids": [
+        "i-9b9d56cc757d"
+      ],
+      "categories_reviewed": [
+        "standards",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent) of the gov.kz public content API record 1079516 of the Ministry (notice text) and the attached PDF (title and foreword pages read with pdftotext)",
+      "http_status": 200,
+      "final_url": "https://www.gov.kz/uploads/2026/10/8/eb1f9f42de8be61fc21f58ea8ce02cd66d18c110bdb6423748e648b18beef763_original.16530062.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "ru",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-dc0ed45cfe29",
+      "url": "https://afsa.aifc.kz/afsa-publishes-a-report-on-the-application-of-generative-ai-in-financial-services-at-the-aifc/",
+      "jurisdiction_ids": [
+        "KAZ"
+      ],
+      "source_institutions": [
+        "Astana Financial Services Authority"
+      ],
+      "instrument_ids": [
+        "i-a2a0d5237ed2"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "generative-ai",
+        "index-readiness"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent) of the AFSA news page and the linked report PDF (aifc.kz, the AIFC's own site); report read with pdftotext",
+      "http_status": 200,
+      "final_url": "https://afsa.aifc.kz/afsa-publishes-a-report-on-the-application-of-generative-ai-in-financial-services-at-the-aifc/",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "text/html"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "KAZ",
     "country": "Kazakhstan",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -33,55 +1651,539 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_with_findings": [
       "binding-law",
-      "strategy",
-      "government-governance",
+      "data-privacy",
       "ethics",
-      "risk-assurance",
+      "generative-ai",
+      "government-governance",
+      "index-readiness",
       "public-sector",
+      "risk-assurance",
+      "sandbox",
+      "sectoral",
+      "standards",
+      "strategy",
+      "transparency"
+    ],
+    "categories_where_no_material_was_found": [
       "procurement",
       "cyber-security",
-      "data-privacy",
-      "transparency",
-      "standards",
-      "sandbox",
-      "index-readiness",
-      "sectoral",
-      "generative-ai",
       "drafts",
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Kazakhstan \"жасанды интеллект\" (стратегия OR реттеу OR этика) government ministry official",
       "Kazakhstan \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Kazakhstan government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Kazakhstan \"жасанды интеллект\" cybersecurity authority secure development safety guidelines",
-      "Kazakhstan privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Kazakhstan privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "adilet.zan.kz Закон Республики Казахстан \"Об искусственном интеллекте\" 2025",
+      "old.adilet.zan.kz full-text search: искусственного интеллекта (pages 1-6 of 1,651 results)",
+      "old.adilet.zan.kz full-text search: Цифровой кодекс",
+      "gov.kz public content API: all documents of the Ministry of Artificial Intelligence and Digital Development (project maidd), titles filtered for искусственн/ИИ/данн/Концепц/кодекс",
+      "site:gov.kz искусственный интеллект концепция развития 2024-2029 постановление",
+      "site:gov.kz \"искусственного интеллекта\" mdai documents приказ",
+      "akorda.kz Глава государства подписал Закон «Об искусственном интеллекте»",
+      "Цифровой кодекс Республики Казахстан проект искусственный интеллект 2026 Мажилис",
+      "AFSA Astana Financial Services Authority artificial intelligence guidance OR rules consultation paper 2025 2026",
+      "Агентство по регулированию и развитию финансового рынка искусственный интеллект рекомендации финансовые организации"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. New adilet.zan.kz front end JavaScript-only and its API needs a login (laws read on the official old.adilet.zan.kz edition; source_url old.adilet, official_webpage_url new adilet). legalacts.egov.kz JavaScript-only; parlam.kz and akorda.kz no connection; zan.gov.kz TLS failure. ~1,600 gov.kz document titles of the AI ministry scanned via its public content API. AI Law and Digital Code effective dates not printed. Kazakhstan is not a party to Convention 108. Units covered: Law: Adilet (Ministry of Justice legal information system) searched through its server-rendered edition (full-text 'искусственного интеллекта', 1,651 hits; first 60 reviewed; 'Цифровой кодекс'). Recorded: AI Law 230-VIII, companion law 231-VIII, Personal Data Law (Art. 19-1 automated decisions), Digital Code 255-VIII (Art. 43 algorithmic systems), Alatau City constitutional law (Art. 54 AI experimental regimes). The new Constitution (referendum 15 March 2026) has no AI provision. No pending AI bill found; legalacts.egov.kz (draft acts portal) not searched (JavaScript-only).; Government: Presidential decrees (AI Development Council 2025; Digital Qazaqstan strategy 2026), Government resolutions (AI Concept 2024-2029; national AI platform operator; Digital Qazaqstan action plan) recorded. Year of Digitalisation and AI 2026 decree and the commission for it seen, not recorded (no AI governance content). No national AI procurement rules or AI ethics code found.; Ministries: Ministry of AI and Digital Development: all ~1,600 document records on gov.kz scanned by title; AI Law implementing orders recorded (criteria, documentation list, trusted high-risk lists, machine-readable forms, platform interaction, computing access, Alem GPT pilot). Ministry of Enlightenment AI standard for schools recorded. Other ministries (health, justice, defence, finance, labour, interior) only covered via Adilet full-text search; nothing AI-specific beyond professional standards and pilot automation orders.; Regulators: Personal-data protection is administered by the Ministry (no separate DPA guidance on AI found; its 2025-2026 personal-data security recommendations are generic). Gosstandart: ST RK ISO/IEC 5339-2025 recorded. AFSA (AIFC): generative AI survey report recorded; no AI rules. National Bank: regulatory sandbox exists but is not AI-specific; no AI guidance found. Information security committee: no AI-specific guidance found. Convention 108: no ratification or accession act found in an Adilet full-text search (convention108 set to null).. Not reached: legalacts.egov.kz draft acts portal (JavaScript-only) - drafts and consultations not checked there; parlam.kz (Mazhilis/Senate) - not reachable by curl from this environment; Ministry-by-ministry gov.kz document scans other than the Ministry of AI and Digital Development; Kazakh-language queries beyond Adilet's bilingual records. Could not verify: The new adilet.zan.kz front end and its API (auth required) could not be read; all law texts were read on old.adilet.zan.kz, the same Ministry of Justice system; zan.gov.kz (Reference Control Bank) failed TLS verification; akorda.kz and parlam.kz not reachable by curl. procurement, cyber-security, drafts, international, historical: no material found.",
     "discovery_result_count": 13,
     "focused_result_count": 10
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-58344e6b3112",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "KAZ",
+      "instrument_id": "i-726bf5d8f4f6",
+      "title": "Law of the Republic of Kazakhstan No. 230-VIII of 17 November 2025 on Artificial Intelligence",
+      "detail": "Added to the radar (published 2025-11-17).",
+      "from": null,
+      "to": null,
+      "source_url": "https://old.adilet.zan.kz/rus/docs/Z2500000230",
+      "needs_review": false
+    },
+    {
+      "id": "c-a7d0850fa89b",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "KAZ",
+      "instrument_id": "i-18bc31f22562",
+      "title": "Law No. 231-VIII of 17 November 2025 amending certain legislative acts on artificial intelligence and digitalisation",
+      "detail": "Added to the radar (published 2025-11-17).",
+      "from": null,
+      "to": null,
+      "source_url": "https://old.adilet.zan.kz/rus/docs/Z2500000231",
+      "needs_review": false
+    },
+    {
+      "id": "c-b927180767f8",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "KAZ",
+      "instrument_id": "i-c8f219c8d641",
+      "title": "Law of the Republic of Kazakhstan No. 94-V of 21 May 2013 on Personal Data and their Protection",
+      "detail": "Added to the radar (published 2013-05-21).",
+      "from": null,
+      "to": null,
+      "source_url": "https://old.adilet.zan.kz/rus/docs/Z1300000094",
+      "needs_review": false
+    },
+    {
+      "id": "c-642e4e7a7d25",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "KAZ",
+      "instrument_id": "i-e6fc6819b598",
+      "title": "Digital Code of the Republic of Kazakhstan (No. 255-VIII of 9 January 2026)",
+      "detail": "Added to the radar (published 2026-01-09).",
+      "from": null,
+      "to": null,
+      "source_url": "https://old.adilet.zan.kz/rus/docs/K2600000255",
+      "needs_review": false
+    },
+    {
+      "id": "c-5848a92cb451",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "KAZ",
+      "instrument_id": "i-b7a9583dae2a",
+      "title": "Concept for the Development of Artificial Intelligence for 2024-2029 (Government Resolution No. 592 of 24 July 2024)",
+      "detail": "Added to the radar (published 2024-07-24).",
+      "from": null,
+      "to": null,
+      "source_url": "https://old.adilet.zan.kz/rus/docs/P2400000592",
+      "needs_review": false
+    },
+    {
+      "id": "c-5aef80fe8732",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "KAZ",
+      "instrument_id": "i-534c623008a7",
+      "title": "National Strategy for Large-Scale Digitalisation and Total Adoption of Artificial Intelligence Technologies 'Digital Qazaqstan' to 2029 (Presidential Decree No. 1311 of 9 June 2026)",
+      "detail": "Added to the radar (published 2026-06-09).",
+      "from": null,
+      "to": null,
+      "source_url": "https://old.adilet.zan.kz/rus/docs/U2600001311",
+      "needs_review": false
+    },
+    {
+      "id": "c-824136ac9770",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "KAZ",
+      "instrument_id": "i-bbda329dfcfc",
+      "title": "Action Plan for the Digital Qazaqstan Strategy to 2029 (Government Resolution No. 760 of 26 August 2026)",
+      "detail": "Lifecycle recorded as published when added.",
+      "from": null,
+      "to": "published",
+      "source_url": "https://old.adilet.zan.kz/rus/docs/P2600000760",
+      "needs_review": false
+    },
+    {
+      "id": "c-2efbcacf6283",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "KAZ",
+      "instrument_id": "i-bbda329dfcfc",
+      "title": "Action Plan for the Digital Qazaqstan Strategy to 2029 (Government Resolution No. 760 of 26 August 2026)",
+      "detail": "Added to the radar (published 2026-08-26).",
+      "from": null,
+      "to": null,
+      "source_url": "https://old.adilet.zan.kz/rus/docs/P2600000760",
+      "needs_review": false
+    },
+    {
+      "id": "c-16196c1c977e",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "KAZ",
+      "instrument_id": "i-d2367363d664",
+      "title": "Presidential Decree No. 881 of 19 May 2025 on establishing the Artificial Intelligence Development Council",
+      "detail": "Added to the radar (published 2025-05-19).",
+      "from": null,
+      "to": null,
+      "source_url": "https://old.adilet.zan.kz/rus/docs/U2500000881",
+      "needs_review": false
+    },
+    {
+      "id": "c-7145f3d543db",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "KAZ",
+      "instrument_id": "i-8102c2381474",
+      "title": "Government Resolution No. 25 of 23 January 2024 designating the operator of the national artificial intelligence platform",
+      "detail": "Added to the radar (published 2024-01-23).",
+      "from": null,
+      "to": null,
+      "source_url": "https://old.adilet.zan.kz/rus/docs/P2400000025",
+      "needs_review": false
+    },
+    {
+      "id": "c-65dc692a6fb0",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "KAZ",
+      "instrument_id": "i-40ba214b50ca",
+      "title": "Order No. 171/NK of 1 April 2026 approving criteria for classifying informatisation objects as artificial intelligence systems",
+      "detail": "Added to the radar (published 2026-04-01).",
+      "from": null,
+      "to": null,
+      "source_url": "https://old.adilet.zan.kz/rus/docs/V2600038288",
+      "needs_review": false
+    },
+    {
+      "id": "c-7bced36e0fb7",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "KAZ",
+      "instrument_id": "i-ef503a280ba4",
+      "title": "Order No. 196/NK of 10 April 2026 approving Rules for sectoral state bodies to compile and publish lists of trusted high-risk AI systems",
+      "detail": "Added to the radar (published 2026-04-10).",
+      "from": null,
+      "to": null,
+      "source_url": "https://old.adilet.zan.kz/rus/docs/V2600038422",
+      "needs_review": false
+    },
+    {
+      "id": "c-bfecf8e27a21",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "KAZ",
+      "instrument_id": "i-2600a5321490",
+      "title": "Order No. 202/NK of 15 April 2026 approving Rules on developing, applying and distributing machine-readable forms",
+      "detail": "Added to the radar (published 2026-04-15).",
+      "from": null,
+      "to": null,
+      "source_url": "https://old.adilet.zan.kz/rus/docs/V2600038444",
+      "needs_review": false
+    },
+    {
+      "id": "c-e3d24f451477",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "KAZ",
+      "instrument_id": "i-0215a9dbd7bb",
+      "title": "Order approving the list of documentation for artificial intelligence systems (Order No. 95/NK of 25 February 2026)",
+      "detail": "Added to the radar (published 2026-02-25).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.gov.kz/uploads/2026/3/16/21bbc3796cfba28b52c8d321559f66c1_original.62757.docx",
+      "needs_review": false
+    },
+    {
+      "id": "c-b01adb2bb9e1",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "KAZ",
+      "instrument_id": "i-72989d00dc7a",
+      "title": "Order No. 482/NK of 13 August 2026 approving Rules on interaction between the national AI platform operator and individuals and legal entities",
+      "detail": "Lifecycle recorded as in_force when added.",
+      "from": null,
+      "to": "in_force",
+      "source_url": "https://old.adilet.zan.kz/rus/docs/V2600039591",
+      "needs_review": false
+    },
+    {
+      "id": "c-84cb5066ce1f",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "KAZ",
+      "instrument_id": "i-72989d00dc7a",
+      "title": "Order No. 482/NK of 13 August 2026 approving Rules on interaction between the national AI platform operator and individuals and legal entities",
+      "detail": "Added to the radar (published 2026-08-13).",
+      "from": null,
+      "to": null,
+      "source_url": "https://old.adilet.zan.kz/rus/docs/V2600039591",
+      "needs_review": false
+    },
+    {
+      "id": "c-3a1c3689366b",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "KAZ",
+      "instrument_id": "i-5270bb099ed8",
+      "title": "Order No. 517/NK of 27 August 2026 approving Rules on access to computing resources provided by the national AI platform operator",
+      "detail": "Lifecycle recorded as in_force when added.",
+      "from": null,
+      "to": "in_force",
+      "source_url": "https://old.adilet.zan.kz/rus/docs/V2600039746",
+      "needs_review": false
+    },
+    {
+      "id": "c-240e5b7f01cc",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "KAZ",
+      "instrument_id": "i-5270bb099ed8",
+      "title": "Order No. 517/NK of 27 August 2026 approving Rules on access to computing resources provided by the national AI platform operator",
+      "detail": "Added to the radar (published 2026-08-27).",
+      "from": null,
+      "to": null,
+      "source_url": "https://old.adilet.zan.kz/rus/docs/V2600039746",
+      "needs_review": false
+    },
+    {
+      "id": "c-f9c71e7e2ec1",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "KAZ",
+      "instrument_id": "i-84aea9d024e8",
+      "title": "Order No. 326/NK of 17 June 2026 on a pilot project for delivering public services through the 'Alem GPT chat application' platform",
+      "detail": "Added to the radar (published 2026-06-17).",
+      "from": null,
+      "to": null,
+      "source_url": "https://old.adilet.zan.kz/rus/docs/G26IPM00326",
+      "needs_review": false
+    },
+    {
+      "id": "c-0f79cd45a45a",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "KAZ",
+      "instrument_id": "i-f1e8b9f35aeb",
+      "title": "Standard for the Use of Artificial Intelligence in Secondary Education (Order No. 283-NK of 28 September 2026 of the Acting Minister of Enlightenment)",
+      "detail": "Lifecycle recorded as adopted when added.",
+      "from": null,
+      "to": "adopted",
+      "source_url": "https://old.adilet.zan.kz/rus/docs/G26HP000283",
+      "needs_review": false
+    },
+    {
+      "id": "c-a6fb12758f80",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "KAZ",
+      "instrument_id": "i-f1e8b9f35aeb",
+      "title": "Standard for the Use of Artificial Intelligence in Secondary Education (Order No. 283-NK of 28 September 2026 of the Acting Minister of Enlightenment)",
+      "detail": "Added to the radar (published 2026-09-28).",
+      "from": null,
+      "to": null,
+      "source_url": "https://old.adilet.zan.kz/rus/docs/G26HP000283",
+      "needs_review": false
+    },
+    {
+      "id": "c-6866b6b4d507",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "KAZ",
+      "instrument_id": "i-e2883d0a1ba0",
+      "title": "Constitutional Law No. 286-VIII of 8 May 2026 on the Special Legal Regime of Alatau City",
+      "detail": "Added to the radar (published 2026-05-08).",
+      "from": null,
+      "to": null,
+      "source_url": "https://old.adilet.zan.kz/rus/docs/Z2600000286",
+      "needs_review": false
+    },
+    {
+      "id": "c-e210cd21cba4",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "KAZ",
+      "instrument_id": "i-9b9d56cc757d",
+      "title": "National standard ST RK ISO/IEC 5339-2025 'Information technology - Artificial intelligence - Guidance for AI applications'",
+      "detail": "Added to the radar (published 2025-10-23).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.gov.kz/uploads/2026/10/8/eb1f9f42de8be61fc21f58ea8ce02cd66d18c110bdb6423748e648b18beef763_original.16530062.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-7254e0c1f18f",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "KAZ",
+      "instrument_id": "i-a2a0d5237ed2",
+      "title": "Report on the application of generative AI in financial services in the AIFC",
+      "detail": "Added to the radar (published 2025-12).",
+      "from": null,
+      "to": null,
+      "source_url": "https://afsa.aifc.kz/afsa-publishes-a-report-on-the-application-of-generative-ai-in-financial-services-at-the-aifc/",
+      "needs_review": false
+    },
+    {
+      "id": "c-de939260aa5c",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "KAZ",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 20 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-408622fecafc",
+      "date": "2026-06-09",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "KAZ",
+      "instrument_id": "i-534c623008a7",
+      "title": "Digital Qazaqstan national digitalisation and AI strategy approved",
+      "detail": "Presidential Decree No. 1311 of 9 June 2026.",
+      "from": null,
+      "to": null,
+      "source_url": "https://old.adilet.zan.kz/rus/docs/U2600001311",
+      "needs_review": false
+    },
+    {
+      "id": "c-2baf34778b42",
+      "date": "2026-01-09",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "KAZ",
+      "instrument_id": "i-e6fc6819b598",
+      "title": "Digital Code adopted",
+      "detail": "Digital Code No. 255-VIII signed 9 January 2026, published 10 January 2026; enters into force six months after publication.",
+      "from": null,
+      "to": null,
+      "source_url": "https://old.adilet.zan.kz/rus/docs/K2600000255",
+      "needs_review": false
+    },
+    {
+      "id": "c-6e614fc3b934",
+      "date": "2025-11-17",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "KAZ",
+      "instrument_id": "i-726bf5d8f4f6",
+      "title": "Law on Artificial Intelligence signed",
+      "detail": "Law No. 230-VIII signed by the President on 17 November 2025; published 18 November 2025; in force sixty calendar days after publication.",
+      "from": null,
+      "to": null,
+      "source_url": "https://old.adilet.zan.kz/rus/docs/Z2500000230",
+      "needs_review": false
+    },
+    {
+      "id": "c-f7c7a7473796",
+      "date": "2024-07-24",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "KAZ",
+      "instrument_id": "i-b7a9583dae2a",
+      "title": "AI Development Concept 2024-2029 approved",
+      "detail": "Government Resolution No. 592 of 24 July 2024 approves the AI Development Concept for 2024-2029.",
+      "from": null,
+      "to": null,
+      "source_url": "https://old.adilet.zan.kz/rus/docs/P2400000592",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Указ Президента Республики Казахстан от 12 мая 2026 года № 1274 «О мерах по внедрению искусственного интеллекта в систему образования» (title as cited)",
+      "english_title": "Presidential Decree No. 1274 of 12 May 2026 on measures to introduce artificial intelligence into the education system",
+      "issuing_authority": "President of the Republic of Kazakhstan",
+      "note": "Cited as the legal basis of the Ministry of Enlightenment's AI standard for secondary education (Order No. 283-NK). Not found at old.adilet.zan.kz/rus/docs/U2600001274 on 2026-10-12 (wrong id guess or not yet indexed); find its Adilet id and record as government-governance/sectoral.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Постановление Правительства Республики Казахстан «Об утверждении перечня приоритетных секторов экономики для внедрения искусственного интеллекта»",
+      "english_title": "Government resolution approving the list of priority economic sectors for AI adoption",
+      "issuing_authority": "Government of the Republic of Kazakhstan",
+      "note": "Required by the AI Law; the Ministry's implementation report as of 30 September 2026 says the draft was submitted to the Government Office on 22 July 2026. Check Adilet for the adopted resolution.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Указ Президента Республики Казахстан от 13 октября 2025 года № 1042 «О мерах по реализации Послания Главы государства народу Казахстана от 8 сентября 2025 года \"Казахстан в эпоху искусственного интеллекта: актуальные задачи и их решения через цифровую трансформацию\"»",
+      "english_title": "Presidential Decree No. 1042 of 13 October 2025 on implementing the 2025 State of the Nation Address 'Kazakhstan in the era of artificial intelligence' (national plan of measures)",
+      "issuing_authority": "President of the Republic of Kazakhstan",
+      "note": "Official text read on Adilet (U2500001042); it approves the national plan of measures for the AI-themed address and is the basis of the Digital Qazaqstan strategy. Not recorded as a separate instrument in this run; consider adding under strategy.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Распоряжение Премьер-Министра Республики Казахстан от 14 января 2026 года № 2-р «О мерах по реализации законов Республики Казахстан от 17 ноября 2025 года \"Об искусственном интеллекте\" и ...»",
+      "english_title": "Prime Minister's Order No. 2-r of 14 January 2026 on measures to implement the AI Law and the companion amendments law",
+      "issuing_authority": "Prime Minister of the Republic of Kazakhstan",
+      "note": "Lists the implementing acts of the AI Law with deadlines (Adilet R2600000002). Not recorded separately; implementing orders are recorded individually.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Закон Республики Казахстан от 24 июня 2026 года № 326-VIII (amending the Law on Artificial Intelligence, arts 1, 13, 17, 20, 28)",
+      "english_title": "Law No. 326-VIII of 24 June 2026 amending, among others, the Law on Artificial Intelligence",
+      "issuing_authority": "Parliament of the Republic of Kazakhstan",
+      "note": "Named in Adilet footnotes to the AI Law; title not read. Check whether it warrants its own record (amendments to AI system classification and audit).",
+      "found": "2026-10-12"
+    }
+  ]
 }

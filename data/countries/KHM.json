@@ -10,18 +10,301 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Cambodia has no AI law. AI is steered through the 2021 Digital Economy and Society Policy Framework and the 2022 Digital Government Policy, which commits to an AI policy and AI standards, while a National AI Strategy 2025-2030 went to consultation in June 2025 but had not been adopted. The National Bank's January 2026 technology and cyber risk guidelines set requirements for AI and machine learning, including human verification of significant automated decisions and disclosure that chatbots are not human. A personal data protection law is still being drafted, and there is no data protection authority yet.",
+    "lead_institutions": [
+      "Ministry of Post and Telecommunications",
+      "Supreme National Economic Council",
+      "National Bank of Cambodia"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was completed on 12 October 2026 and covers national law, government, ministries and regulators. The draft National AI Strategy, the draft data protection law and planned AI ethics guidelines have no published official text and are listed as leads."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-1c1ad7d9334a",
+      "official_title": "ក្របខណ្ឌគោលនយោបាយសេដ្ឋកិច្ច និងសង្គមឌីជីថលកម្ពុជា ២០២១-២០៣៥",
+      "english_title": "Cambodia Digital Economy and Society Policy Framework 2021-2035",
+      "issuing_authority": "Royal Government of Cambodia (prepared by the Supreme National Economic Council)",
+      "authority_type": "government",
+      "categories": [
+        "strategy",
+        "public-sector"
+      ],
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2021-05-10",
+      "current_status": "In force as Cambodia's 15-year umbrella digital policy (2021-2035). The Ministry of Post and Telecommunications' Khmer page states it was put into use on 10 May 2021; the cover of the official English version (also on mptc.gov.kh, https://asset.cambodia.gov.kh/mptc/media/EN-Policy-Framework-of-Digital-Economy-and-Society.pdf) reads 'Prepared by the Supreme National Economic Council, May 2021'. A monitoring and evaluation framework was under technical consultation in August 2025. Not a dedicated AI strategy; the draft National AI Strategy 2025-2030 is held as a lead.",
+      "summary": "The Royal Government's long-term policy framework for building a digital economy and society through three phases (digital foundations, adoption, transformation) and five goals, including digital government and trust in digital systems. Its digital-government and data-driven-governance measures call for expanding the use of artificial intelligence, data science and big data to create digital services, and for investing in infrastructure and the use of AI in data-driven governance systems. Implementation is assigned to ministries and digital committees with monitoring plans.",
+      "ai_governance_relevance": "Umbrella national digital policy; contains Cambodia's first government-level AI measures (AI in digital services and data-driven governance).",
+      "source_url": "https://asset.cambodia.gov.kh/mptc/media/Printed-_Digital-Economy-and-Society-Framework.pdf",
+      "official_pdf_url": "https://asset.cambodia.gov.kh/mptc/media/Printed-_Digital-Economy-and-Society-Framework.pdf",
+      "official_webpage_url": "https://mptc.gov.kh/2021/05/%e1%9e%80%e1%9f%92%e1%9e%9a%e1%9e%94%e1%9e%81%e1%9e%8e%e1%9f%92%e1%9e%8c%e1%9e%82%e1%9f%84%e1%9e%9b%e1%9e%93%e1%9e%99%e1%9f%84%e1%9e%94%e1%9e%b6%e1%9e%99%e1%9e%9f%e1%9f%81%e1%9e%8a%e1%9f%92%e1%9e%8b/",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-af1e2a6e1d3c",
+      "publisher_name": "Ministry of Post and Telecommunications",
+      "jurisdiction_id": "KHM",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "strategy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Cambodia (national)",
+      "technology_scope": [
+        "AI",
+        "digital technologies"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "km",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-5f5a726b8680",
+      "evidence_reference": "curl (browser user agent, --max-time 60): Khmer PDF (164 pages) downloaded from the MPTC asset host linked on the MPTC Khmer page (page title gives the 10 May 2021 launch date); official English version (200 pages) read in full via pdftotext, AI measures in section 3 (digital government; data-driven governance) checked"
+    },
+    {
+      "id": "i-3b72016859c4",
+      "official_title": "គោលនយោបាយរដ្ឋាភិបាលឌីជីថលកម្ពុជា ២០២២-២០៣៥",
+      "english_title": "Cambodia Digital Government Policy 2022-2035",
+      "issuing_authority": "Royal Government of Cambodia (prepared by the Ministry of Post and Telecommunications)",
+      "authority_type": "government",
+      "categories": [
+        "strategy",
+        "public-sector",
+        "standards"
+      ],
+      "legal_status": "national_strategy",
+      "lifecycle": "adopted",
+      "publication_date": "2022-01-28",
+      "current_status": "Adopted 28 January 2022 according to the Ministry of Post and Telecommunications' Khmer page title ('អនុម័តថ្ងៃទី២៨ ខែមករា ឆ្នាំ២០២២'); cover dated January 2022. Official English version: https://asset.cambodia.gov.kh/mptc/media/Cambodia_Digital_Government_Policy_2022_2035_English.pdf. Implements the Digital Economy and Society Policy Framework 2021-2035 for government.",
+      "summary": "Sets out how the Royal Government will build digital government by 2035 through ten strategies and action plans covering connectivity, digital governance, public-sector digital transformation, human capital and innovation. It commits the government to develop a policy and principles, standards, frameworks and mechanisms for leading technologies including artificial intelligence, and to develop technical standards for AI, big data, IoT and blockchain in line with international best practice, alongside a Law on Digital Government and rules on government data sharing. It also promotes innovation of public services using AI.",
+      "ai_governance_relevance": "Government-wide digital government policy; commits to an AI promotion policy and AI standards and frames public-sector AI use.",
+      "source_url": "https://asset.cambodia.gov.kh/mptc/2023/02/MPTC-Digital-Government-Policy-2022-2035-KH.pdf",
+      "official_pdf_url": "https://asset.cambodia.gov.kh/mptc/2023/02/MPTC-Digital-Government-Policy-2022-2035-KH.pdf",
+      "official_webpage_url": "https://mptc.gov.kh/en/2022/04/cambodia-digital-government-policy-2022-2035/",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-856aa255da42",
+      "publisher_name": "Ministry of Post and Telecommunications",
+      "jurisdiction_id": "KHM",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "strategy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Cambodia (national)",
+      "technology_scope": [
+        "AI",
+        "digital technologies"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "km",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-a18a3c1ab1ae",
+      "evidence_reference": "curl (browser user agent, --max-time 60): Khmer PDF (97 pages) downloaded from the MPTC asset host linked on the MPTC Khmer page (title gives adoption date 28 January 2022); official English version (89 pages) read via pdftotext, AI commitments in the digital governance strategy checked"
+    },
+    {
+      "id": "i-758423191119",
+      "official_title": "Technology and Cyber Risk Management Guidelines",
+      "english_title": "Technology and Cyber Risk Management Guidelines (TCRMG)",
+      "issuing_authority": "National Bank of Cambodia",
+      "authority_type": "regulator",
+      "categories": [
+        "sectoral",
+        "risk-assurance",
+        "cyber-security",
+        "transparency"
+      ],
+      "legal_status": "regulatory_opinion",
+      "lifecycle": "published",
+      "publication_date": "2026-01",
+      "current_status": "Issued January 2026 (cover date) and listed on the NBC Guidelines (IT policy) page; supersedes the Technology Risk Management Guidelines issued in 2019, which did not contain an AI section. Requirements are framed as 'compliance requirements' assessed in supervision, applied on a risk basis; no effective date stated. Only the English version was found on the NBC site.",
+      "summary": "The NBC's supervisory guidelines for banks and financial institutions on technology and cyber risk. Section 6.4 requires institutions to periodically assess AI/ML systems for legal and policy compliance, conduct comprehensive AI risk assessments, apply privacy and security by design, validate data and models against bias, use AI ethically (human autonomy, harm prevention, fairness, non-discrimination, transparency, explainability) and ensure robustness and safety. Related sections require human verification of solely big-data-based decisions that significantly affect customers and a right to challenge them, and require chatbots to disclose to customers that they are not human and to offer escalation to staff.",
+      "ai_governance_relevance": "First AI-specific supervisory requirements in Cambodia's financial sector.",
+      "source_url": "https://www.nbc.gov.kh/download_files/publication/itguideline_eng/National_Bank_of_Cambodia_TCRMG_2026.pdf",
+      "official_pdf_url": "https://www.nbc.gov.kh/download_files/publication/itguideline_eng/National_Bank_of_Cambodia_TCRMG_2026.pdf",
+      "official_webpage_url": "https://www.nbc.gov.kh/english/publications/guidelines_it_policy.php",
+      "sectors": [
+        "finance"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-6afcf5b7260e",
+      "publisher_name": "National Bank of Cambodia",
+      "jurisdiction_id": "KHM",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "sectoral",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Cambodia (national)",
+      "technology_scope": [
+        "AI",
+        "machine learning",
+        "big data analytics",
+        "chatbots"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "en",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-dd26a4f58441",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full PDF read via pdftotext (introduction, sections 6.3 big data, 6.4 AI/ML, 6.8 chatbot); cover dated January 2026; listed on the NBC Guidelines page"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-af1e2a6e1d3c",
+      "jurisdiction_id": "KHM",
+      "name": "Supreme National Economic Council",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Advisory body of the Royal Government on economic policy; prepared the Cambodia Digital Economy and Society Policy Framework 2021-2035, the umbrella digital policy that includes AI measures.",
+      "source_url": "https://mptc.gov.kh/en/2023/06/cambodia-digital-economy-and-society-policy-framework-2021-2035/",
+      "authority_type": "government",
+      "government_level": "national"
+    },
+    {
+      "id": "o-856aa255da42",
+      "jurisdiction_id": "KHM",
+      "name": "Ministry of Post and Telecommunications",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Ministry responsible for digital policy and digital government; prepared the Cambodia Digital Government Policy 2022-2035, leads the drafting of the National Artificial Intelligence Strategy 2025-2030 and of the draft Law on Personal Data Protection.",
+      "source_url": "https://mptc.gov.kh/en/",
+      "authority_type": "government",
+      "government_level": "national"
+    },
+    {
+      "id": "o-6afcf5b7260e",
+      "jurisdiction_id": "KHM",
+      "name": "National Bank of Cambodia",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Central bank and supervisor of banks and financial institutions; issued the Technology and Cyber Risk Management Guidelines (January 2026) with AI/ML, big-data and chatbot compliance requirements.",
+      "source_url": "https://www.nbc.gov.kh/",
+      "authority_type": "regulator",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-5f5a726b8680",
+      "url": "https://asset.cambodia.gov.kh/mptc/media/Printed-_Digital-Economy-and-Society-Framework.pdf",
+      "jurisdiction_ids": [
+        "KHM"
+      ],
+      "source_institutions": [
+        "Ministry of Post and Telecommunications"
+      ],
+      "instrument_ids": [
+        "i-1c1ad7d9334a"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): Khmer PDF (164 pages) downloaded from the MPTC asset host linked on the MPTC Khmer page (page title gives the 10 May 2021 launch date); official English version (200 pages) read in full via pdftotext, AI measures in section 3 (digital government; data-driven governance) checked",
+      "http_status": 200,
+      "final_url": "https://asset.cambodia.gov.kh/mptc/media/Printed-_Digital-Economy-and-Society-Framework.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "km",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-a18a3c1ab1ae",
+      "url": "https://asset.cambodia.gov.kh/mptc/2023/02/MPTC-Digital-Government-Policy-2022-2035-KH.pdf",
+      "jurisdiction_ids": [
+        "KHM"
+      ],
+      "source_institutions": [
+        "Ministry of Post and Telecommunications"
+      ],
+      "instrument_ids": [
+        "i-3b72016859c4"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "public-sector",
+        "standards"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): Khmer PDF (97 pages) downloaded from the MPTC asset host linked on the MPTC Khmer page (title gives adoption date 28 January 2022); official English version (89 pages) read via pdftotext, AI commitments in the digital governance strategy checked",
+      "http_status": 200,
+      "final_url": "https://asset.cambodia.gov.kh/mptc/2023/02/MPTC-Digital-Government-Policy-2022-2035-KH.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "km",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-dd26a4f58441",
+      "url": "https://www.nbc.gov.kh/download_files/publication/itguideline_eng/National_Bank_of_Cambodia_TCRMG_2026.pdf",
+      "jurisdiction_ids": [
+        "KHM"
+      ],
+      "source_institutions": [
+        "National Bank of Cambodia"
+      ],
+      "instrument_ids": [
+        "i-758423191119"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "risk-assurance",
+        "cyber-security",
+        "transparency"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full PDF read via pdftotext (introduction, sections 6.3 big data, 6.4 AI/ML, 6.8 chatbot); cover dated January 2026; listed on the NBC Guidelines page",
+      "http_status": 200,
+      "final_url": "https://www.nbc.gov.kh/download_files/publication/itguideline_eng/National_Bank_of_Cambodia_TCRMG_2026.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "KHM",
     "country": "Cambodia",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -33,55 +316,208 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
-      "binding-law",
+    "categories_with_findings": [
+      "cyber-security",
+      "public-sector",
+      "risk-assurance",
+      "sectoral",
+      "standards",
       "strategy",
+      "transparency"
+    ],
+    "categories_where_no_material_was_found": [
+      "binding-law",
       "government-governance",
       "ethics",
-      "risk-assurance",
-      "public-sector",
       "procurement",
-      "cyber-security",
       "data-privacy",
-      "transparency",
-      "standards",
       "sandbox",
       "index-readiness",
-      "sectoral",
       "generative-ai",
       "drafts",
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Cambodia \"បញ្ញាសិប្បនិម្មិត\" (យុទ្ធសាស្ត្រ OR ក្រមសីលធម៌) government ministry official",
       "Cambodia \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Cambodia government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Cambodia \"បញ្ញាសិប្បនិម្មិត\" cybersecurity authority secure development safety guidelines",
-      "Cambodia privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Cambodia privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "Cambodia National Artificial Intelligence Strategy 2025-2030 MPTC pdf",
+      "mptc.gov.kh national artificial intelligence strategy adopted Council of Ministers 2025",
+      "Cambodia \"National AI Strategy\" launched 2026",
+      "យុទ្ធសាស្ត្រជាតិស្តីពីបញ្ញាសិប្បនិម្មិត ក្រសួងប្រៃសណីយ៍ និងទូរគមនាគមន៍",
+      "mptc.gov.kh site search: artificial intelligence / AI strategy / personal data / បញ្ញាសិប្បនិម្មិត",
+      "mptc.gov.kh Law & Regulations listing (law-regulations)",
+      "Cambodia draft law personal data protection MPTC 2025 consultation",
+      "Cambodia Digital Economy and Society Policy Framework 2021-2035 (mptc.gov.kh, mef.gov.kh, digitaleconomy.gov.kh)",
+      "Cambodian Digital Government Policy 2022-2035 download (mptc.gov.kh)",
+      "MPTC Cambodia guideline generative AI use civil servants public sector 2026",
+      "National Bank of Cambodia artificial intelligence guideline banks 2025",
+      "artificial intelligence policy guideline (nbc.gov.kh, trc.gov.kh, moeys.gov.kh, mef.gov.kh, misti.gov.kh, nbfsa.gov.kh, serc.gov.kh)",
+      "misti.gov.kh AI Landscape in Cambodia current status future trends",
+      "Cambodia law sub-decree prakas \"artificial intelligence\" 2026",
+      "Cambodia Ministry of Education Youth and Sport AI guideline schools generative AI",
+      "Cambodia AI readiness assessment report UNESCO MPTC 2025",
+      "\"Cambodian Guidelines on AI Governance and Ethics\" MPTC"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. Royal Gazette has no searchable online portal; National Assembly and Senate bill pages not reached. Policies sourced to the Khmer PDFs on MPTC, checked against the official English versions on the same host. Draft AI Strategy distributed only by QR code. ESCAP-MISTI report held as a lead (UN publication). Not a party to Convention 108. Units covered: Law: Searched MPTC Law & Regulations listing and web for AI laws, sub-decrees, prakas and AI provisions in other laws (Khmer and English): no AI law or AI provision in force found. The draft Law on Personal Data Protection (MPTC, consultation July 2025) has no official published text (lead). No deepfake/automated-decision statute found. Royal Gazette not searchable online; nac.org.kh / senate.gov.kh not reached.; Government: Digital Economy and Society Policy Framework 2021-2035 and Digital Government Policy 2022-2035 recorded (AI measures); draft National AI Strategy 2025-2030 held as lead (consultation 2025, not adopted, text only via QR/third-party hosts); MPTC AI Promotion Strategy draft and National AI and Data Science Research Centre held as leads. MPTC AI training for civil servants (May-June 2026) is a training programme, not a guideline: no public-sector AI/GenAI guideline found. MPTC press release No. 970 PT (23 April 2025) on AI governance work read: planned Cambodian Guidelines on AI Governance and Ethics held as lead.; Ministries: MPTC (above); MISTI (ESCAP co-report, lead; 2023 landscape report not online); MoEYS searched (no AI guidance published; UNESCO-supported GenAI ethical framework project unfinished); MEF, health, justice, labour, interior, defence: searched, nothing AI-specific found.; Regulators: National Bank of Cambodia: Technology and Cyber Risk Management Guidelines (Jan 2026) recorded with AI/ML, big-data decision and chatbot requirements. NBFSA, TRC, SERC, competition, cyber: searched, nothing AI-specific found. No data protection authority exists yet.. Not reached: Royal Gazette (no searchable online portal); National Assembly / Senate bill pages (not searched directly). Could not verify: Draft National AI Strategy text on an official host (distributed only via QR code); Draft Law on Personal Data Protection text; Current adoption status of the National AI Strategy after July 2026. binding-law, government-governance, ethics, procurement, data-privacy, sandbox, index-readiness, generative-ai, drafts, international, historical: no material found.",
     "discovery_result_count": 9,
     "focused_result_count": 13
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-4a2217f3085b",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "KHM",
+      "instrument_id": "i-1c1ad7d9334a",
+      "title": "Cambodia Digital Economy and Society Policy Framework 2021-2035",
+      "detail": "Added to the radar (published 2021-05-10).",
+      "from": null,
+      "to": null,
+      "source_url": "https://asset.cambodia.gov.kh/mptc/media/Printed-_Digital-Economy-and-Society-Framework.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-725207c0f80b",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "KHM",
+      "instrument_id": "i-3b72016859c4",
+      "title": "Cambodia Digital Government Policy 2022-2035",
+      "detail": "Added to the radar (published 2022-01-28).",
+      "from": null,
+      "to": null,
+      "source_url": "https://asset.cambodia.gov.kh/mptc/2023/02/MPTC-Digital-Government-Policy-2022-2035-KH.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-109405c0e19a",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "KHM",
+      "instrument_id": "i-758423191119",
+      "title": "Technology and Cyber Risk Management Guidelines (TCRMG)",
+      "detail": "Added to the radar (published 2026-01).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.nbc.gov.kh/download_files/publication/itguideline_eng/National_Bank_of_Cambodia_TCRMG_2026.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-98fff55c8d4f",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "KHM",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 3 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-d1f7a5575052",
+      "date": "2022-01-28",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "KHM",
+      "instrument_id": "i-3b72016859c4",
+      "title": "Cambodia Digital Government Policy 2022-2035 adopted",
+      "detail": "Adopted 28 January 2022 according to the Ministry of Post and Telecommunications' official page; commits to a policy and standards for AI and other leading technologies.",
+      "from": null,
+      "to": null,
+      "source_url": "https://mptc.gov.kh/2022/02/%e1%9e%82%e1%9f%84%e1%9e%9b%e1%9e%93%e1%9e%99%e1%9f%84%e1%9e%94%e1%9e%b6%e1%9e%99%e1%9e%9a%e1%9e%8a%e1%9f%92%e1%9e%8b%e1%9e%b6%e1%9e%97%e1%9e%b7%e1%9e%94%e1%9e%b6%e1%9e%9b%e1%9e%8c%e1%9e%b8%e1%9e%87/",
+      "needs_review": false
+    },
+    {
+      "id": "c-8fd2ac4e8d67",
+      "date": "2021-05-10",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "KHM",
+      "instrument_id": "i-1c1ad7d9334a",
+      "title": "Cambodia Digital Economy and Society Policy Framework 2021-2035 launched",
+      "detail": "Put into use on 10 May 2021 according to the Ministry of Post and Telecommunications' official page; includes measures on AI in digital services and data-driven governance.",
+      "from": null,
+      "to": null,
+      "source_url": "https://mptc.gov.kh/2021/05/%e1%9e%80%e1%9f%92%e1%9e%9a%e1%9e%94%e1%9e%81%e1%9e%8e%e1%9f%92%e1%9e%8c%e1%9e%82%e1%9f%84%e1%9e%9b%e1%9e%93%e1%9e%99%e1%9f%84%e1%9e%94%e1%9e%b6%e1%9e%99%e1%9e%9f%e1%9f%81%e1%9e%8a%e1%9f%92%e1%9e%8b/",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "យុទ្ធសាស្ត្រជាតិស្តីពីបញ្ញាសិប្បនិម្មិត ២០២៥-២០៣០ (សេចក្តីព្រាង)",
+      "english_title": "Draft National Artificial Intelligence Strategy 2025-2030",
+      "issuing_authority": "Ministry of Post and Telecommunications",
+      "note": "MPTC opened a public consultation on the draft on 1 June 2025 (until 20 June 2025) at https://mptc.gov.kh/en/2025/06/announcement-on-progress-of-preparing-and-opening-public-consultation-on-draft-national-artificial-intelligence-strategy/ ; the draft, concept note and feedback form were distributed only via a QR code (not present on the page), so no official-host full text could be read. The English consultation version (v5, June 2025, six strategic priorities incl. ethical and responsible AI) circulates only on third-party hosts. National workshop held 1 July 2025; still described as not yet adopted in mid-2026. Promote as national_strategy once adopted text is published on an official site (or as consultation_draft if MPTC posts the draft itself). MPTC press release No. 970 PT of 23 April 2025 (https://asset.cambodia.gov.kh/mptc/2025/04/20250424-PR-Key-AI-Work-Final.pdf, unofficial English translation) states that the Royal Government approved the work by Letter No. 316 SCN.AS of 5 March 2024 and MPTC set up a Working Group on AI and Data Science R&D on 5 April 2024.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "សេចក្តីព្រាងច្បាប់ស្តីពីកិច្ចការពារទិន្នន័យផ្ទាល់ខ្លួន",
+      "english_title": "Draft Law on Personal Data Protection",
+      "issuing_authority": "Ministry of Post and Telecommunications",
+      "note": "MPTC held a consultative workshop on the draft on 23 July 2025 (https://mptc.gov.kh/en/2025/07/minister-chea-vandeth-presided-over-the-opening-ceremony-of-the-consultative-workshop-on-the-draft-law-on-personal-data-protection/) aiming to finish it by end-2025/early 2026, and a first National Conference on Personal Data Protection in October 2025. No official full text of the draft found on MPTC or other government sites, and no adopted law found as of 2026-10-12. Record under data-privacy (and drafts) when the official text is published.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "យុទ្ធសាស្ត្រលើកកម្ពស់ការអភិវឌ្ឍបញ្ញាសិប្បនិម្មិតរបស់ក្រសួងប្រៃសណីយ៍និងទូរគមនាគមន៍ (សេចក្តីព្រាង)",
+      "english_title": "Draft MPTC Artificial Intelligence Promotion Strategy",
+      "issuing_authority": "Ministry of Post and Telecommunications",
+      "note": "Input workshop on the draft held 30 April 2026 (https://mptc.gov.kh/en/2026/04/h-e-sam-sethserey-presided-over-the-workshop-to-gather-input-on-the-draft-artificial-intelligence-development-promotion-strategy-of-the-ministry-of-post-and-telecommunications/); sector strategy for AI in postal, telecoms and digital technology. No text published. Khmer title is a working rendering, not verified.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Artificial Intelligence: Empowering Innovation, Ethics, and Inclusion in Cambodia",
+      "english_title": "Artificial Intelligence: Empowering Innovation, Ethics, and Inclusion in Cambodia (UN ESCAP-MISTI COPAI report)",
+      "issuing_authority": "United Nations ESCAP with the Ministry of Industry, Science, Technology and Innovation",
+      "note": "Hosted on the MISTI CDN (https://cdn.misti.gov.kh/documents/20260409081135T17VXSvZjhsH.pdf, read 2026-10-12) but it is a United Nations publication (copyright UN 2025, ESCAP/2-TR/48) whose views are the authors'; it assesses Cambodia's AI landscape and recommends inter alia a National AI Ethics Framework. Not recorded as a government instrument; lead decides whether it counts under index-readiness. MISTI's earlier 'AI Landscape in Cambodia: Current Status and Future Trends' (2023, ISBN 9789924600091) was not found online on an official site. The UNESCO/CADT AI Readiness Assessment (RAM) report launched 1 July 2025 is a UNESCO publication (not recorded).",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "National AI and Data Science Research Centre",
+      "english_title": "National AI and Data Science Research Centre (MPTC project)",
+      "issuing_authority": "Ministry of Post and Telecommunications",
+      "note": "MPTC call for expressions of interest for consulting services for a National AI and Data Science Research Centre, posted 20 August 2026 on https://mptc.gov.kh/en/law-regulations/ . Institutional project, not yet an instrument; watch for a founding sub-decree or prakas (government-governance).",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Cambodian Guidelines on AI Governance and Ethics",
+      "english_title": "Cambodian Guidelines on AI Governance and Ethics (planned)",
+      "issuing_authority": "Ministry of Post and Telecommunications",
+      "note": "Listed as a next step (first draft due 30 May 2025) in MPTC press release No. 970 PT of 23 April 2025 (https://asset.cambodia.gov.kh/mptc/2025/04/20250424-PR-Key-AI-Work-Final.pdf), alongside Khmer translations of the ASEAN AI governance guides and a glossary of AI terms. No draft or final text found on official sites as of 2026-10-12. Would fall under ethics / government-governance.",
+      "found": "2026-10-12"
+    }
+  ]
 }
