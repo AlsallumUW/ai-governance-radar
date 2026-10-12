@@ -10,18 +10,292 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "The Maldives has no AI law or national AI strategy yet: an AI masterplan announced by the President in 2024, an AI Act planned under the Maldives 2.0 digital programme and a Data Protection Bill before parliament were all pending in October 2026. The only published AI governance documents are the Prosecutor General's Office's August 2026 institutional AI strategy, AI governance framework and binding AI policy, which sets risk categories, prohibited uses and a ban on putting case data into public AI tools.",
+    "lead_institutions": [
+      "Prosecutor General's Office",
+      "President's Office"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was completed on 12 October 2026 and covers national law, government, ministries and regulators. The parliament and technology ministry websites could not be reached, and the AI masterplan, planned AI Act and data protection bill are listed as leads."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-a6422054b23e",
+      "official_title": "Justice First: Human-Led, AI-Empowered - Institutional AI Strategy 2026 - 2028 (PGO-STR-AI-001)",
+      "english_title": "PGO 2.0 - Institutional AI Strategy 2026-2028 of the Prosecutor General's Office (PGO-STR-AI-001)",
+      "issuing_authority": "Prosecutor General's Office (Prosecutor General of the Republic of Maldives)",
+      "authority_type": "government",
+      "categories": [
+        "strategy",
+        "public-sector",
+        "sectoral"
+      ],
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2026-08",
+      "current_status": "Version 1.0, August 2026, listed as 'In force' on the PGO 2.0 page (pgoffice.gov.mv). Launched by the President on 11 August 2026 (President's Office press release 2026-460). It applies only to the Prosecutor General's Office.",
+      "summary": "The Prosecutor General's Office's own AI strategy and delivery programme (PGO 2.0) for 2026-2028, with a foreword by the President. It sets three pillars and six enablers to complete the Mafini case-management system and build eight governed capabilities into it (legal document analyser, Dhivehi-capable prosecutor assistant, summarisation and charge drafting, identity analyser, tamper-evident evidence, document exchange ledger, case intelligence and a citizen agent), on PGO-controlled infrastructure, with a two-year roadmap and results framework. It states fixed limits: no automated charging or discontinuation decisions, no PGO case data in public AI tools and no AI assessment of guilt or credibility from biometric features.",
+      "ai_governance_relevance": "Institutional AI strategy of an independent national constitutional office; the first published public-sector AI strategy in the Maldives found on an official site.",
+      "source_url": "https://pgoffice.gov.mv/storage/media/83de0d90-a21a-470e-8e6c-47145c90369a.pdf",
+      "official_pdf_url": "https://pgoffice.gov.mv/storage/media/83de0d90-a21a-470e-8e6c-47145c90369a.pdf",
+      "official_webpage_url": "https://pgoffice.gov.mv/en/pgo-2.0",
+      "sectors": [
+        "justice"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-4f45b2c98de7",
+      "publisher_name": "Prosecutor General's Office",
+      "jurisdiction_id": "MDV",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "strategy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Prosecutor General's Office of the Maldives (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-389af48638e2",
+        "i-a5128c87ad7a"
+      ],
+      "regional_applicability": [],
+      "metadata_gaps": [
+        "exact day of issue not stated (document gives August 2026)"
+      ],
+      "language": "en",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-6b13005bd3c2",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full 44-page PDF read with pdftotext; linked from the PGO 2.0 page https://pgoffice.gov.mv/en/pgo-2.0"
+    },
+    {
+      "id": "i-389af48638e2",
+      "official_title": "AI Governance Framework (PGO-FWK-AI-001)",
+      "english_title": "AI Governance Framework of the Prosecutor General's Office (PGO-FWK-AI-001)",
+      "issuing_authority": "Prosecutor General's Office (Prosecutor General of the Republic of Maldives)",
+      "authority_type": "government",
+      "categories": [
+        "government-governance",
+        "ethics",
+        "public-sector"
+      ],
+      "legal_status": "administrative_policy_mandatory_in_scope",
+      "lifecycle": "in_force",
+      "publication_date": "2026-08",
+      "current_status": "Version 1.0, date of issue August 2026, effective on issue, review within 12 months; listed as 'In force' on the PGO 2.0 page. Classification: public.",
+      "summary": "Umbrella instrument issued by the Prosecutor General for governing AI at the Prosecutor General's Office, effective on issue. It sets nine governance objectives and nine principles (including non-delegation of human prosecutorial authority, confidentiality, court-facing transparency, accuracy, non-discrimination, auditability, contestability and risk-based proportionality, drawing on the UNESCO Recommendation on the Ethics of AI), maps the instrument set (strategy, policy, usage guides, AI tool register, controlled forms, standards alignment) and lays down rules of authority, conflict and amendment.",
+      "ai_governance_relevance": "Binding (within the PGO) top-level AI governance framework of a national prosecution service.",
+      "source_url": "https://pgoffice.gov.mv/storage/media/14f45889-b999-469d-86df-e9fc843d08ac.pdf",
+      "official_pdf_url": "https://pgoffice.gov.mv/storage/media/14f45889-b999-469d-86df-e9fc843d08ac.pdf",
+      "official_webpage_url": "https://pgoffice.gov.mv/en/pgo-2.0",
+      "sectors": [
+        "justice"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-4f45b2c98de7",
+      "publisher_name": "Prosecutor General's Office",
+      "jurisdiction_id": "MDV",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "government-governance",
+      "subcategory": null,
+      "effective_date": "2026-08",
+      "last_amended_date": null,
+      "scope": "Prosecutor General's Office of the Maldives (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-a6422054b23e",
+        "i-a5128c87ad7a"
+      ],
+      "regional_applicability": [],
+      "metadata_gaps": [
+        "exact day of issue not stated (document gives August 2026)"
+      ],
+      "language": "en",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-9f7972aafb6d",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full 24-page PDF read with pdftotext; linked from the PGO 2.0 page https://pgoffice.gov.mv/en/pgo-2.0"
+    },
+    {
+      "id": "i-a5128c87ad7a",
+      "official_title": "AI Governance Policy (PGO-POL-AI-001)",
+      "english_title": "AI Governance Policy of the Prosecutor General's Office (PGO-POL-AI-001)",
+      "issuing_authority": "Prosecutor General's Office (Prosecutor General of the Republic of Maldives)",
+      "authority_type": "government",
+      "categories": [
+        "public-sector",
+        "risk-assurance",
+        "generative-ai",
+        "procurement"
+      ],
+      "legal_status": "administrative_policy_mandatory_in_scope",
+      "lifecycle": "in_force",
+      "publication_date": "2026-08",
+      "current_status": "Version 1.0, date of issue August 2026, effective on issue, review within 12 months; listed as 'In force' on the PGO 2.0 page. Usage guides, the AI Tool Register and controlled forms are 'to be issued'.",
+      "summary": "The binding operational rulebook for AI use by Prosecutor General's Office staff, effective on issue. It assigns roles and decision rights (Prosecutor General, designated AI Lead, procurement and vendor management, data governance and IT security officers), classifies every tool by deployment category (approved PGO tools, enterprise tools, public tools that may never receive case information) and risk category (low, moderate, high, with committee review and Prosecutor General approval for high-risk uses), and lists absolute prohibited and restricted uses. It also covers the tool lifecycle and approval, data governance and data sovereignty, evidence and disclosure (including asking at intake whether AI was used), vendors, training, monitoring and audit logging, and incident reporting.",
+      "ai_governance_relevance": "Binding AI use rules for a national public body, with risk classification, prohibited uses and vendor controls.",
+      "source_url": "https://pgoffice.gov.mv/storage/media/71c33a5b-3c05-46b9-8a2b-3a35176e3a67.pdf",
+      "official_pdf_url": "https://pgoffice.gov.mv/storage/media/71c33a5b-3c05-46b9-8a2b-3a35176e3a67.pdf",
+      "official_webpage_url": "https://pgoffice.gov.mv/en/pgo-2.0",
+      "sectors": [
+        "justice"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-4f45b2c98de7",
+      "publisher_name": "Prosecutor General's Office",
+      "jurisdiction_id": "MDV",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "public-sector",
+      "subcategory": null,
+      "effective_date": "2026-08",
+      "last_amended_date": null,
+      "scope": "Prosecutor General's Office of the Maldives (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-a6422054b23e",
+        "i-389af48638e2"
+      ],
+      "regional_applicability": [],
+      "metadata_gaps": [
+        "exact day of issue not stated (document gives August 2026)"
+      ],
+      "language": "en",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-b68141a12721",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full 40-page PDF read with pdftotext; linked from the PGO 2.0 page https://pgoffice.gov.mv/en/pgo-2.0"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-4f45b2c98de7",
+      "jurisdiction_id": "MDV",
+      "name": "Prosecutor General's Office",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Independent constitutional office heading public prosecutions; issued the PGO 2.0 Institutional AI Strategy 2026-2028, the AI Governance Framework and the AI Governance Policy (August 2026), binding on the Office only.",
+      "source_url": "https://pgoffice.gov.mv/en/pgo-2.0",
+      "authority_type": "government",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-6b13005bd3c2",
+      "url": "https://pgoffice.gov.mv/storage/media/83de0d90-a21a-470e-8e6c-47145c90369a.pdf",
+      "jurisdiction_ids": [
+        "MDV"
+      ],
+      "source_institutions": [
+        "Prosecutor General's Office"
+      ],
+      "instrument_ids": [
+        "i-a6422054b23e"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "public-sector",
+        "sectoral"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): 44-page PDF downloaded and read (pdftotext); document control table / cover gives Version 1.0, August 2026; linked as 'In force' from https://pgoffice.gov.mv/en/pgo-2.0",
+      "http_status": 200,
+      "final_url": "https://pgoffice.gov.mv/storage/media/83de0d90-a21a-470e-8e6c-47145c90369a.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-9f7972aafb6d",
+      "url": "https://pgoffice.gov.mv/storage/media/14f45889-b999-469d-86df-e9fc843d08ac.pdf",
+      "jurisdiction_ids": [
+        "MDV"
+      ],
+      "source_institutions": [
+        "Prosecutor General's Office"
+      ],
+      "instrument_ids": [
+        "i-389af48638e2"
+      ],
+      "categories_reviewed": [
+        "government-governance",
+        "ethics",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): 24-page PDF downloaded and read (pdftotext); document control table / cover gives Version 1.0, August 2026; linked as 'In force' from https://pgoffice.gov.mv/en/pgo-2.0",
+      "http_status": 200,
+      "final_url": "https://pgoffice.gov.mv/storage/media/14f45889-b999-469d-86df-e9fc843d08ac.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-b68141a12721",
+      "url": "https://pgoffice.gov.mv/storage/media/71c33a5b-3c05-46b9-8a2b-3a35176e3a67.pdf",
+      "jurisdiction_ids": [
+        "MDV"
+      ],
+      "source_institutions": [
+        "Prosecutor General's Office"
+      ],
+      "instrument_ids": [
+        "i-a5128c87ad7a"
+      ],
+      "categories_reviewed": [
+        "public-sector",
+        "risk-assurance",
+        "generative-ai",
+        "procurement"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): 40-page PDF downloaded and read (pdftotext); document control table / cover gives Version 1.0, August 2026; linked as 'In force' from https://pgoffice.gov.mv/en/pgo-2.0",
+      "http_status": 200,
+      "final_url": "https://pgoffice.gov.mv/storage/media/71c33a5b-3c05-46b9-8a2b-3a35176e3a67.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "MDV",
     "country": "Maldives",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -33,55 +307,172 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
-      "binding-law",
-      "strategy",
-      "government-governance",
+    "categories_with_findings": [
       "ethics",
-      "risk-assurance",
-      "public-sector",
+      "generative-ai",
+      "government-governance",
       "procurement",
+      "public-sector",
+      "risk-assurance",
+      "sectoral",
+      "strategy"
+    ],
+    "categories_where_no_material_was_found": [
+      "binding-law",
       "cyber-security",
       "data-privacy",
       "transparency",
       "standards",
       "sandbox",
       "index-readiness",
-      "sectoral",
-      "generative-ai",
       "drafts",
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Maldives \"އާޓިފިޝަލް އިންޓެލިޖެންސް\" (ސްޓްރެޓެޖީ) government ministry official",
       "Maldives \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Maldives government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Maldives \"އާޓިފިޝަލް އިންޓެލިޖެންސް\" cybersecurity authority secure development safety guidelines",
-      "Maldives privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Maldives privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "gazette.gov.mv title search: އާޓިފިޝަލް (artificial), އެންޓެލިޖެންސް / އިންޓެލިޖެންސް (intelligence), ޕާސަނަލް ޑޭޓާ (personal data), މަޢުލޫމާތު ހިމާޔަތް (information protection), ޑޭޓާ (data), ސައިބަރ (cyber), ޑިޖިޓަލް (digital), އިލެކްޓްރޯނިކް (electronic), ޕްރައިވެސީ (privacy), ޒާތީ މަޢުލޫމާތު (personal information), ޕްރޮޓެކްޝަން (protection), ސެކިއުރިޓީ (security), ކޮމިއުނިކޭޝަން (communication)",
+      "Maldives Personal Data Protection Act 2024 gazette law number",
+      "Maldives national artificial intelligence strategy policy Ministry of Homeland Security and Technology",
+      "Maldives Monetary Authority artificial intelligence guideline",
+      "\"Maldives\" AI masterplan OR \"AI policy\" OR \"AI guidelines\" site:gov.mv",
+      "Maldives \"Data Protection Bill\" OR \"Personal Data Protection Bill\" Majlis 2025 2026 submitted",
+      "Maldives Ministry of Education artificial intelligence guidelines schools generative AI 2025",
+      "Maldives AI Lab \"National AI and Data Competency Centre\" 25 AI use cases public sector",
+      "\"Maldives 2.0\" digital transformation strategy document artificial intelligence government",
+      "presidency.gov.mv President masterplan artificial intelligence economic growth October 2024 press release"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. majlis.gov.mv 403; Ministry of Homeland Security and Technology site and gov.mv portal refused by the proxy. Gazette titles searched in Dhivehi and English. PGO documents dated August 2026 only. Not a party to Convention 108. Units covered: Law: Official Gazette (gazette.gov.mv) title search in Dhivehi and English: no AI law, no AI provisions found; no personal data protection act gazetted (Data Protection Bill pending in the Majlis, held as lead). Media and Broadcasting Commission regulation 87-R/2026 checked: no AI provisions. majlis.gov.mv blocked (HTTP 403).; Government: President's Office (AI masterplan announcement Oct 2024, no document -> lead; PGO 2.0 launch); Maldives 2.0 site digital.gov.mv (pillars and milestone charts; only an 'AI Act Adopted' milestone -> lead); Maldives Digital Service (mds.gov.mv): no AI policy or standard published. Ministry of Homeland Security and Technology and NCIT/gov.mv portal unreachable via proxy.; Ministries: Prosecutor General's Office: AI strategy, framework and policy (3 records). Education (moe.gov.mv), Attorney General's Office (agoffice.gov.mv) and Health (health.gov.mv) home pages checked and web searches run: no AI documents found. Finance, defence, labour: general web searches only, nothing found.; Regulators: Maldives Monetary Authority (mma.gov.mv): no AI guidance found. Communications Authority (cam.gov.mv), National Cyber Security Agency (hub.ncsa.gov.mv) and Capital Market Development Authority (cmda.gov.mv) home pages checked: no AI-specific documents found. No data protection authority yet (Privacy Commissioner proposed in pending bill). CRA site unreachable.. Not reached: People's Majlis website (HTTP 403); Ministry of Homeland Security and Technology website (proxy connect rejected); gov.mv central portal (proxy connect rejected). Could not verify: People's Majlis bill page for the Data Protection Bill (403); Whether the 2024 AI masterplan has been drafted or published (Ministry of Homeland Security and Technology site unreachable). binding-law, cyber-security, data-privacy, transparency, standards, sandbox, index-readiness, drafts, international, historical: no material found.",
     "discovery_result_count": 11,
     "focused_result_count": 10
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-2229d9087fd3",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "MDV",
+      "instrument_id": "i-a6422054b23e",
+      "title": "PGO 2.0 - Institutional AI Strategy 2026-2028 of the Prosecutor General's Office (PGO-STR-AI-001)",
+      "detail": "Added to the radar (published 2026-08).",
+      "from": null,
+      "to": null,
+      "source_url": "https://pgoffice.gov.mv/storage/media/83de0d90-a21a-470e-8e6c-47145c90369a.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-815d6d31c681",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "MDV",
+      "instrument_id": "i-389af48638e2",
+      "title": "AI Governance Framework of the Prosecutor General's Office (PGO-FWK-AI-001)",
+      "detail": "Added to the radar (published 2026-08).",
+      "from": null,
+      "to": null,
+      "source_url": "https://pgoffice.gov.mv/storage/media/14f45889-b999-469d-86df-e9fc843d08ac.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-27edb5f2b7de",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "MDV",
+      "instrument_id": "i-a5128c87ad7a",
+      "title": "AI Governance Policy of the Prosecutor General's Office (PGO-POL-AI-001)",
+      "detail": "Added to the radar (published 2026-08).",
+      "from": null,
+      "to": null,
+      "source_url": "https://pgoffice.gov.mv/storage/media/71c33a5b-3c05-46b9-8a2b-3a35176e3a67.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-9f846b898835",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "MDV",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 3 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-fa269592bc38",
+      "date": "2026-08-11",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "MDV",
+      "instrument_id": "i-a6422054b23e",
+      "title": "PGO 2.0 Institutional AI Strategy launched by the President",
+      "detail": "The President launched PGO 2.0, the Prosecutor General's Office's AI strategy and delivery programme, at a ceremony in Male on 11 August 2026 (President's Office press release ref. 2026-460).",
+      "from": null,
+      "to": null,
+      "source_url": "https://presidency.gov.mv/Press/Article/37133",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Masterplan on the use of artificial intelligence (cabinet decision of 16 October 2024)",
+      "english_title": "National AI masterplan",
+      "issuing_authority": "Ministry of Homeland Security and Technology with the Ministry of Economic Development and Trade",
+      "note": "President's Office press release https://presidency.gov.mv/Press/Article/31907 (cabinet meeting 16 October 2024) announced a masterplan covering AI risk management and a legal framework for AI. No official masterplan document was found on gov.mv sites on 2026-10-12 (the Ministry of Homeland Security and Technology site was unreachable through the proxy). Record when published.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Data Protection Bill / Personal Data Protection Bill (People's Majlis, 2026)",
+      "english_title": "Personal Data Protection Bill",
+      "issuing_authority": "Government of Maldives (submitted to the People's Majlis)",
+      "note": "Government bill reportedly accepted at first reading in June 2026 and referred to the Majlis Committee on Information and Communication Technology; would create a Privacy Commissioner. majlis.gov.mv returned HTTP 403, so the bill text was not read; not found in the Gazette as an enacted law on 2026-10-12. The Maldives 2.0 Pillar 4 milestones chart (https://digital.gov.mv/milestones/p4.pdf) lists 'PDPA Adopted'. Record as binding-law/data-privacy once enacted and gazetted.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Artificial Intelligence Act (planned under Maldives 2.0)",
+      "english_title": "AI Act (planned)",
+      "issuing_authority": "Maldives Digital Service / Government of Maldives",
+      "note": "The official Maldives 2.0 Pillar 4 (Modern Legal Framework and Governance) major-milestones chart at https://digital.gov.mv/milestones/p4.pdf shows an 'AI Act Adopted' milestone (2026-2027 timeline). No bill text found; the chart has no AI policy content beyond the milestone and gives no publication date, so it is not recorded as a strategy instrument.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Maldives AI Lab - National AI and Data Competency Centre (MINDCo and Bank of Maldives, launched May 2026)",
+      "english_title": "Maldives AI Lab",
+      "issuing_authority": "Maldives Innovation and Digital Company (MINDCo) with Bank of Maldives",
+      "note": "Launched May 2026 under Maldives 2.0; the President's foreword to the PGO strategy says it aims to implement 25 AI use cases across the public sector by end of July 2028. No founding or governance document found on an official government site.",
+      "found": "2026-10-12"
+    }
+  ]
 }

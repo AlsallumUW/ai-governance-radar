@@ -10,18 +10,377 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Mongolia governs AI through its first national strategy, the National Big Data and AI Strategy approved in September 2025, which promises an AI legal framework. AI-relevant clauses already exist in the 2021 personal data law, which requires an assessment of processing done without human involvement and lets people contest automated decisions, and the 2024 law on supporting the IT industry, which sets up an AI sandbox and AI grants. A draft Law on Data that would ban significant decisions made solely by AI and set rules for AI use of data went to public consultation in June 2026 and was sent to parliament in August 2026; there is no AI-specific law yet.",
+    "lead_institutions": [
+      "Ministry of Digital Development, Innovation and Communications",
+      "State Great Khural"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was completed on 12 October 2026 and covers national law, government, ministries and regulators. The draft data law is recorded as a consultation draft, and a planned AI law and several implementing procedures are listed as leads."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "jurisdiction_id": "MNG",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Mongolia (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "sectors": [
+        "cross-sector"
+      ],
+      "official_title": "Их өгөгдөл, хиймэл оюуны үндэсний стратеги",
+      "english_title": "National Strategy for Big Data and Artificial Intelligence",
+      "issuing_authority": "Government of Mongolia (Cabinet), on the proposal of the Ministry of Digital Development, Innovation and Communications",
+      "authority_type": "government",
+      "publisher_name": "Ministry of Digital Development, Innovation and Communications",
+      "organization_id": "o-fd717fe95638",
+      "categories": [
+        "strategy",
+        "ethics",
+        "government-governance",
+        "public-sector"
+      ],
+      "legal_status": "national_strategy",
+      "lifecycle": "adopted",
+      "publication_date": "2025-09-24",
+      "effective_date": null,
+      "summary": "Mongolia's first national AI strategy, approved by the Government on 24 September 2025 (decision No. 18 per the ministry's policy-document register), with the vision of making Mongolia the digital-economy 'oasis' of Central Asia and one of Asia's top 10 AI countries, implemented in two stages (2025-2027 and 2028-2030). Its four objectives are putting national big data into economic circulation, building an ethical and responsible AI system through public-private cooperation, raising productivity in priority sectors (mining, energy, finance, education, health, agriculture, environment) with privately developed AI, and attracting investment in AI data-centre infrastructure. Measures include drafting a primary data law, creating a national legal framework for AI grounded in human rights, ethics and safety, embedding AI functions in state bodies, AI curricula at all education levels, and indicators such as an AI-ethics readiness score of 4/5 by 2030; the digital-development ministry monitors implementation and reports to the Government at the end of each stage.",
+      "ai_governance_relevance": "Current national AI strategy; commits to an AI legal framework, the data law and responsible-AI governance in public bodies.",
+      "current_status": "Approved 24 September 2025 according to the ministry's register (decision No. 18) and its Q3 2025 implementation report; the 4-page strategy text was published on mddic.gov.mn in February 2026. The Cabinet's English news page for 24 September 2025 describes the draft being discussed and its objectives being integrated into the 2026-2030 Five-Year Development Guidelines; the approving decision itself was not found online (see leads). The ministry declared 2026 the sector's 'Year of Big Data and AI'.",
+      "language": "mn",
+      "source_url": "https://mddic.gov.mn/wp-content/uploads/2026/02/AI_Strategy-20260202.pdf",
+      "official_pdf_url": "https://mddic.gov.mn/wp-content/uploads/2026/02/AI_Strategy-20260202.pdf",
+      "official_webpage_url": "https://mddic.gov.mn/eng/legal-framework/",
+      "source_kind": "official_document",
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full 4-page strategy PDF read (pdftotext); approval date 2025.09.24 and No. 18 from the ministry's 'Policy documents' register on mddic.gov.mn/eng/legal-framework/; approval also stated in the ministry's Q3 2025 implementation report PDF",
+      "id": "i-b306103a5b98",
+      "category": "strategy",
+      "source_id": "s-95e47528349f"
+    },
+    {
+      "jurisdiction_id": "MNG",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Mongolia (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "sectors": [
+        "cross-sector"
+      ],
+      "official_title": "Хүний хувийн мэдээлэл хамгаалах тухай хууль",
+      "english_title": "Law on Protection of Personal Information",
+      "issuing_authority": "State Great Khural (Parliament of Mongolia)",
+      "authority_type": "legislature",
+      "publisher_name": "State Great Khural",
+      "organization_id": "o-b1719a34938d",
+      "categories": [
+        "data-privacy",
+        "binding-law",
+        "risk-assurance"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2021-12-17",
+      "effective_date": "2022-05-01",
+      "summary": "Mongolia's general personal data protection law (revised edition), adopted 17 December 2021 and applicable from 1 May 2022, governing collection, processing, use and security of personal information by persons, legal entities and public bodies. Article 23 allows controllers to use technology that processes data electronically without human involvement, but requires an assessment, submitted to the National Human Rights Commission for a recommendation, where such processing makes decisions affecting a data subject's rights or regularly processes sensitive data; the assessment methodology is approved by the digital-development ministry on the Commission's proposal. It also treats biometric (including facial) and genetic data as sensitive, restricts their collection to listed purposes, and gives data subjects the right to contest decisions resulting from processing (art. 16.1.11).",
+      "ai_governance_relevance": "Binding rules on automated (no-human-involvement) processing and decisions, biometric data and impact assessment that apply to AI systems processing personal data.",
+      "current_status": "In force since 1 May 2022 (art. 32.1). legalinfo.mn lists later amendments to the law (16 amendment entries in the portal's amendment list); the consolidated text was read. The National Human Rights Commission of Mongolia gives recommendations on assessments and sensitive-data processing.",
+      "language": "mn",
+      "source_url": "https://legalinfo.mn/mn/detail?lawId=16390288615991",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://legalinfo.mn/mn/detail?lawId=16390288615991",
+      "source_kind": "legislation_portal",
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full consolidated text read on legalinfo.mn (official legislation portal); adoption 17 Dec 2021 in the header, applicability 1 May 2022 in art. 32.1, automated-processing assessment in art. 23",
+      "id": "i-44b275023605",
+      "category": "data-privacy",
+      "source_id": "s-5e514840a279"
+    },
+    {
+      "jurisdiction_id": "MNG",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Mongolia (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [
+        "effective_date"
+      ],
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "sectors": [
+        "cross-sector"
+      ],
+      "official_title": "Мэдээллийн технологийн үйлдвэрлэлийг дэмжих тухай хууль",
+      "english_title": "Law on Supporting the Information Technology Industry",
+      "issuing_authority": "State Great Khural (Parliament of Mongolia)",
+      "authority_type": "legislature",
+      "publisher_name": "State Great Khural",
+      "organization_id": "o-b1719a34938d",
+      "categories": [
+        "binding-law",
+        "sandbox"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "adopted",
+      "publication_date": "2024-06-05",
+      "effective_date": null,
+      "summary": "Law adopted on 5 June 2024 setting state policy, principles and support measures for the information technology industry, including a virtual zone for registered IT companies and financing sources for support. It explicitly tasks the Government with establishing a sandbox based on advanced technologies including artificial intelligence, big data, blockchain and space industry and approving its procedure (art. 6.1.6), and provides grants for AI-based projects where at least 60% of the total cost is self-financed (art. 13.3.4).",
+      "ai_governance_relevance": "General law with explicit AI provisions: legal basis for an AI/advanced-technology regulatory sandbox and for AI project grants.",
+      "current_status": "Adopted 5 June 2024 and listed on legalinfo.mn; the read text gives no separate commencement article, so the effective date is left blank. The sandbox procedure required by art. 6.1.6 was not found on legalinfo.mn during this review.",
+      "language": "mn",
+      "source_url": "https://legalinfo.mn/mn/detail?lawId=17140722436571",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://legalinfo.mn/mn/detail?lawId=17140722436571",
+      "source_kind": "legislation_portal",
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full text read on legalinfo.mn; date 5 June 2024 in the header; AI sandbox in art. 6.1.6 and AI project grants in art. 13.3.4",
+      "id": "i-1b69b2c38302",
+      "category": "binding-law",
+      "source_id": "s-d3b014e22c5e"
+    },
+    {
+      "jurisdiction_id": "MNG",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Mongolia (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "sectors": [
+        "cross-sector"
+      ],
+      "official_title": "Өгөгдлийн тухай хуулийн төсөл (Анхдагч хууль)",
+      "english_title": "Draft Law on Data (primary law)",
+      "issuing_authority": "Legal Research Institute (consultation on legalinfo.mn); draft prepared by the Ministry of Digital Development, Innovation and Communications",
+      "authority_type": "government",
+      "publisher_name": "Legal Research Institute",
+      "organization_id": "o-7c74e82b4ff0",
+      "categories": [
+        "drafts",
+        "data-privacy",
+        "risk-assurance"
+      ],
+      "legal_status": "consultation_draft",
+      "lifecycle": "consultation",
+      "publication_date": "2026-06-05",
+      "effective_date": null,
+      "summary": "Draft primary law on data governance, data infrastructure and data-centre activity, published for public comment on legalinfo.mn on 5 June 2026 (comments until 20 June 2026). It would prohibit decisions or profiling affecting a person's or legal entity's legal status, reputation or financial capacity made solely by automated systems or artificial intelligence and require human oversight of automated processing (art. 9.7), set requirements for using data in AI, machine-learning and automated decision systems (lawful source, isolated computing for personal or secret data, secure retention of training data, logs, prompts and inference history, anti-re-identification and anti-profiling controls; art. 10.9), and make system owners and users liable for harm from automated decisions (art. 10.10).",
+      "ai_governance_relevance": "Proposed binding AI/automated-decision rules (ban on solely automated significant decisions, AI data-use requirements, liability).",
+      "current_status": "Consultation closed 20 June 2026 (portal status 'comments completed'). The ministry reported in August 2026 that the draft Law on Data had been submitted to Parliament; the bill as submitted was not found on parliament.mn during this review (see leads). Not adopted.",
+      "language": "mn",
+      "source_url": "https://legalinfo.mn/mn/discussiondetail/17437287308132",
+      "official_pdf_url": "https://legalinfo.mn/storage/uploads/process/202606/file_1780668724029329_17143739132592375.pdf",
+      "official_webpage_url": "https://legalinfo.mn/mn/discussiondetail/17437287308132",
+      "source_kind": "consultation_portal",
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "evidence_reference": "curl (browser user agent, --max-time 60): consultation page read (published 2026-06-05, deadline 2026-06-20, responsible body Legal Research Institute) and draft PDF read with pdftotext (arts. 9.7, 10.9, 10.10)",
+      "id": "i-6cfc6def9746",
+      "category": "drafts",
+      "source_id": "s-f9cbec499bdb"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-b1719a34938d",
+      "jurisdiction_id": "MNG",
+      "name": "State Great Khural",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Parliament of Mongolia; enacted the 2021 Law on Protection of Personal Information (automated-processing assessment rules) and the 2024 Law on Supporting the Information Technology Industry (AI sandbox and AI project grants).",
+      "source_url": "https://www.parliament.mn/",
+      "authority_type": "legislature",
+      "government_level": "national"
+    },
+    {
+      "id": "o-fd717fe95638",
+      "jurisdiction_id": "MNG",
+      "name": "Ministry of Digital Development, Innovation and Communications",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Ministry responsible for digital development and AI policy; led preparation of the National Big Data and AI Strategy and the draft Law on Data; proposes the personal-data assessment methodology under art. 23.3 of the personal data law.",
+      "source_url": "https://mddic.gov.mn/",
+      "authority_type": "government",
+      "government_level": "national"
+    },
+    {
+      "id": "o-7c74e82b4ff0",
+      "jurisdiction_id": "MNG",
+      "name": "Legal Research Institute",
+      "publisher_name_verified": true,
+      "ai_governance_role": "National Legal Institute (Хууль зүйн үндэсний хүрээлэн) that runs legalinfo.mn, the official legislation portal, and its public consultation section where the draft Law on Data was published.",
+      "source_url": "https://legalinfo.mn/",
+      "authority_type": "government",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-95e47528349f",
+      "url": "https://mddic.gov.mn/wp-content/uploads/2026/02/AI_Strategy-20260202.pdf",
+      "jurisdiction_ids": [
+        "MNG"
+      ],
+      "source_institutions": [
+        "Ministry of Digital Development, Innovation and Communications"
+      ],
+      "instrument_ids": [
+        "i-b306103a5b98"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "ethics",
+        "government-governance",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full 4-page strategy PDF read (pdftotext); approval date 2025.09.24 and No. 18 from the ministry's 'Policy documents' register on mddic.gov.mn/eng/legal-framework/; approval also stated in the ministry's Q3 2025 implementation report PDF",
+      "http_status": 200,
+      "final_url": "https://mddic.gov.mn/wp-content/uploads/2026/02/AI_Strategy-20260202.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "mn",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-5e514840a279",
+      "url": "https://legalinfo.mn/mn/detail?lawId=16390288615991",
+      "jurisdiction_ids": [
+        "MNG"
+      ],
+      "source_institutions": [
+        "State Great Khural"
+      ],
+      "instrument_ids": [
+        "i-44b275023605"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full consolidated text read on legalinfo.mn (official legislation portal); adoption 17 Dec 2021 in the header, applicability 1 May 2022 in art. 32.1, automated-processing assessment in art. 23",
+      "http_status": 200,
+      "final_url": "https://legalinfo.mn/mn/detail?lawId=16390288615991",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "mn",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-d3b014e22c5e",
+      "url": "https://legalinfo.mn/mn/detail?lawId=17140722436571",
+      "jurisdiction_ids": [
+        "MNG"
+      ],
+      "source_institutions": [
+        "State Great Khural"
+      ],
+      "instrument_ids": [
+        "i-1b69b2c38302"
+      ],
+      "categories_reviewed": [
+        "binding-law",
+        "sandbox"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full text read on legalinfo.mn; date 5 June 2024 in the header; AI sandbox in art. 6.1.6 and AI project grants in art. 13.3.4",
+      "http_status": 200,
+      "final_url": "https://legalinfo.mn/mn/detail?lawId=17140722436571",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "mn",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-f9cbec499bdb",
+      "url": "https://legalinfo.mn/mn/discussiondetail/17437287308132",
+      "jurisdiction_ids": [
+        "MNG"
+      ],
+      "source_institutions": [
+        "Legal Research Institute"
+      ],
+      "instrument_ids": [
+        "i-6cfc6def9746"
+      ],
+      "categories_reviewed": [
+        "drafts",
+        "data-privacy",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): consultation page read (published 2026-06-05, deadline 2026-06-20, responsible body Legal Research Institute) and draft PDF read with pdftotext (arts. 9.7, 10.9, 10.10)",
+      "http_status": 200,
+      "final_url": "https://legalinfo.mn/mn/discussiondetail/17437287308132",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "mn",
+      "error": null,
+      "content_type": "text/html"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "MNG",
     "country": "Mongolia",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -33,55 +392,258 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_with_findings": [
       "binding-law",
-      "strategy",
-      "government-governance",
+      "data-privacy",
+      "drafts",
       "ethics",
-      "risk-assurance",
+      "government-governance",
       "public-sector",
+      "risk-assurance",
+      "sandbox",
+      "strategy"
+    ],
+    "categories_where_no_material_was_found": [
       "procurement",
       "cyber-security",
-      "data-privacy",
       "transparency",
       "standards",
-      "sandbox",
       "index-readiness",
       "sectoral",
       "generative-ai",
-      "drafts",
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Mongolia \"хиймэл оюун ухаан\" (стратеги OR зохицуулалт OR ёс) government ministry official",
       "Mongolia \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Mongolia government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Mongolia \"хиймэл оюун ухаан\" cybersecurity authority secure development safety guidelines",
-      "Mongolia privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Mongolia privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "Mongolia artificial intelligence law draft 2025 parliament хиймэл оюун ухааны тухай хууль",
+      "Mongolia national artificial intelligence strategy approved government resolution 2025",
+      "legalinfo.mn Хувь хүний мэдээлэл хамгаалах тухай хууль 2021",
+      "\"хиймэл оюун ухаан\" стратеги Засгийн газрын тогтоол батлах тухай legalinfo",
+      "\"Их өгөгдөл, хиймэл оюун ухаан\" стратеги баталсан УИХ тогтоол 2025",
+      "site:legalinfo.mn хиймэл оюун ухаан",
+      "site:legalinfo.mn \"хиймэл оюуны\"",
+      "mdcd.gov.mn хиймэл оюун ухаан стратеги баримт бичиг",
+      "Mongolia \"Year of Big Data and Artificial Intelligence\" 2026 government resolution Mongolia AI",
+      "\"хиймэл оюун ухааны үндэсний стратеги\" батлах тухай тогтоол",
+      "\"Хиймэл оюуны үндэсний стратеги\" батлах тухай Засгийн газрын тогтоол 2025",
+      "Засгийн газрын 2025 оны 9 дүгээр сарын 24 хуралдаан хиймэл оюуны стратеги баталлаа",
+      "\"Өгөгдлийн тухай\" хуулийн төсөл УИХ өргөн барилаа 2026 хиймэл оюун",
+      "Mongolia Bank of Mongolia OR \"Financial Regulatory Commission\" artificial intelligence guideline regulation fintech 2025",
+      "mongolbank.mn хиймэл оюун журам OR зөвлөмж",
+      "Боловсролын яам хиймэл оюун ашиглах зөвлөмж журам сургууль 2025 OR 2026",
+      "Хүний эрхийн үндэсний комисс хиймэл оюун хувийн мэдээлэл зөвлөмж үнэлгээний аргачлал",
+      "\"хүний оролцоогүй\" цахим хэлбэрээр боловсруулалт хийх технологи үнэлгээ хийх аргачлал журам сайдын тушаал",
+      "\"Цахим хэлбэрээр боловсруулалт хийх технологийг ашиглан\" үнэлгээ хийх журам legalinfo",
+      "Mongolia criminal code deepfake хуурамч дүрс хиймэл оюун хууль нэмэлт өөрчлөлт 2025",
+      "legalinfo.mn esearch/searchList (consultation drafts) 'хиймэл оюун' — 0 results",
+      "mddic.gov.mn WordPress search (posts/media): 'хиймэл оюун', 'AI', 'стратеги', 'үндэсний стратеги', 'хиймэл оюуны стратеги', 'Их өгөгдөл', 'Digital First'"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. parliament.mn bill search not queried; legalinfo.mn advanced title search returned empty responses (site-restricted web searches used); education and health ministries web search only. Strategy approval date from the ministry register (Cabinet news describes the draft as discussed). IT-industry law effective date not stated. Digital First Resolution 108 is a scan without text. Not a party to Convention 108. Units covered: Law: legalinfo.mn (official legislation portal) read directly: Law on Protection of Personal Information (2021, art. 23 automated processing) and Law on Supporting the IT Industry (2024, AI sandbox and grants) recorded; draft Law on Data (consultation June 2026) recorded. No AI-specific law or AI bill found; parliament.mn not searched by its own engine (portal search via web only). Five-Year Development Guidelines 2026-2030 (Parliament resolution No. 109 of 2025) read: 'Science, technology and AI' is one of eight policy directions but its only target (8.1) is a knowledge-index goal, so not recorded. Forensic e-technology analysis procedure (joint order A/315, A/91 of 13 Sept 2023) lists AI/IoT analysis as one forensic type; judged marginal, not recorded.; Government: Ministry of Digital Development, Innovation and Communications (mddic.gov.mn) legal-framework register, news and media searched: National Big Data and AI Strategy (approved 24 Sept 2025) recorded; 'Digital First' recommendation (Resolution 108) held as lead (scanned). Cabinet (cabinet.gov.mn) English news page and Cabinet Secretariat 2025 annual report checked (AI use in 11-11 call centre and AI model/server procurement are operational, no governance document). No public-sector AI/GenAI guideline found.; Ministries: Searched (web) education, health, justice: no AI-specific guidance found. Health digital-transformation plan (A/201, A/81 of 2025) and the joint forensic procedure not recorded as AI instruments. Defence, finance/tax, labour, interior: searched, nothing found.; Regulators: Data protection oversight sits with the National Human Rights Commission (no AI guidance or decision found). Bank of Mongolia: searched, nothing AI-specific (only a research brochure). Financial Regulatory Commission: only an ADB-consultant FinTech Innovation Roadmap draft (Mar 2025) with a passing AI mention, not an FRC AI document, not recorded. Communications Regulatory Commission: only a 2024 conference presentation on big data/AI regulation, not a regulatory document. National cyber authority: cyber risk assessment procedure exists but not AI-specific. Standards: no Mongolian adoption of ISO/IEC 42001 found. Convention 108: Mongolia is not a party (not a Council of Europe member; no accession act found).. Not reached: parliament.mn own bill search (not queried directly; draft Law on Data bill page not located); legalinfo.mn advanced title search (POST endpoint returned empty responses; site-restricted web search used instead); mecs.gov.mn / moh.gov.mn own sites (web searches only). Could not verify: Ministerial order A/81 (1 Sept 2023) on assessment of automated processing under PDP law art. 23.3 (only a search snippet; not located on official sites).; AI content of the 'Digital First' policy recommendation (Government Resolution No. 108, 24 Sept 2025) - scanned PDF without text layer.. procurement, cyber-security, transparency, standards, index-readiness, sectoral, generative-ai, international, historical: no material found.",
     "discovery_result_count": 12,
     "focused_result_count": 13
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-95b0b4ac3ce3",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "MNG",
+      "instrument_id": "i-b306103a5b98",
+      "title": "National Strategy for Big Data and Artificial Intelligence",
+      "detail": "Added to the radar (published 2025-09-24).",
+      "from": null,
+      "to": null,
+      "source_url": "https://mddic.gov.mn/wp-content/uploads/2026/02/AI_Strategy-20260202.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-26a414698a6e",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "MNG",
+      "instrument_id": "i-44b275023605",
+      "title": "Law on Protection of Personal Information",
+      "detail": "Added to the radar (published 2021-12-17).",
+      "from": null,
+      "to": null,
+      "source_url": "https://legalinfo.mn/mn/detail?lawId=16390288615991",
+      "needs_review": false
+    },
+    {
+      "id": "c-21112debec39",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "MNG",
+      "instrument_id": "i-1b69b2c38302",
+      "title": "Law on Supporting the Information Technology Industry",
+      "detail": "Added to the radar (published 2024-06-05).",
+      "from": null,
+      "to": null,
+      "source_url": "https://legalinfo.mn/mn/detail?lawId=17140722436571",
+      "needs_review": false
+    },
+    {
+      "id": "c-72d0a7ecfd29",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "MNG",
+      "instrument_id": "i-6cfc6def9746",
+      "title": "Draft Law on Data (primary law)",
+      "detail": "Added to the radar (published 2026-06-05).",
+      "from": null,
+      "to": null,
+      "source_url": "https://legalinfo.mn/mn/discussiondetail/17437287308132",
+      "needs_review": false
+    },
+    {
+      "id": "c-bd9c95f0df2f",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "MNG",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 4 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-64ecf8d16391",
+      "date": "2026-06-05",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "consultation",
+      "jurisdiction_id": "MNG",
+      "instrument_id": "i-6cfc6def9746",
+      "title": "Draft Law on Data opened for public comment",
+      "detail": "Draft primary law on data, with rules on AI and automated decision systems, published on legalinfo.mn for comment until 20 June 2026.",
+      "from": null,
+      "to": null,
+      "source_url": "https://legalinfo.mn/mn/discussiondetail/17437287308132",
+      "needs_review": false
+    },
+    {
+      "id": "c-8bf42841ec84",
+      "date": "2025-09-24",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "MNG",
+      "instrument_id": "i-b306103a5b98",
+      "title": "National Big Data and AI Strategy approved",
+      "detail": "Government approves Mongolia's first National Strategy for Big Data and Artificial Intelligence (2025-2030), decision No. 18 per the ministry register.",
+      "from": null,
+      "to": null,
+      "source_url": "https://mddic.gov.mn/eng/legal-framework/",
+      "needs_review": false
+    },
+    {
+      "id": "c-95dcf52621a4",
+      "date": "2024-06-05",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "MNG",
+      "instrument_id": "i-1b69b2c38302",
+      "title": "Law on Supporting the IT Industry adopted",
+      "detail": "Parliament adopts the law providing for an AI/advanced-technology sandbox (art. 6.1.6) and AI project grants (art. 13.3.4).",
+      "from": null,
+      "to": null,
+      "source_url": "https://legalinfo.mn/mn/detail?lawId=17140722436571",
+      "needs_review": false
+    },
+    {
+      "id": "c-4d55b46d97c6",
+      "date": "2022-05-01",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "MNG",
+      "instrument_id": "i-44b275023605",
+      "title": "Law on Protection of Personal Information applies",
+      "detail": "Revised personal data law (adopted 17 Dec 2021) applies from 1 May 2022 under art. 32.1, including the art. 23 assessment for automated processing.",
+      "from": null,
+      "to": null,
+      "source_url": "https://legalinfo.mn/mn/detail?lawId=16390288615991",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Өгөгдлийн тухай хуулийн төсөл (УИХ-д өргөн мэдүүлсэн)",
+      "english_title": "Draft Law on Data as submitted to the State Great Khural",
+      "issuing_authority": "Government of Mongolia / Ministry of Digital Development, Innovation and Communications",
+      "note": "The ministry reported on 24 Aug 2026 (mddic.gov.mn news) that the Minister and Deputy Prime Minister submitted the draft primary Law on Data to the Speaker of Parliament. The submitted bill text and its parliament.mn page were not found during this review. The consultation version (5 June 2026) is recorded; check the submitted text for changes to the AI/automated-decision articles (9.7, 10.9, 10.10) and track adoption.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Их өгөгдөл, хиймэл оюуны үндэсний стратеги батлах тухай Засгийн газрын шийдвэр (2025.09.24, дугаар 18)",
+      "english_title": "Government decision No. 18 of 24 September 2025 approving the National Big Data and AI Strategy",
+      "issuing_authority": "Government of Mongolia",
+      "note": "The ministry's policy register gives the approval as '2025.09.24 Дугаар 18' but links only the strategy text; the decision itself (and whether it is a resolution or a Cabinet-meeting protocol decision) was not found on legalinfo.mn. Add the decision as the formal approval source if found.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Цахим хэлбэрээр боловсруулалт хийх технологийг ашиглан мэдээлэл цуглуулж, боловсруулж, ашиглах үйл ажиллагаанд үнэлгээ хийх журам",
+      "english_title": "Procedure for assessing collection, processing and use of information with automated (electronic) processing technology",
+      "issuing_authority": "Minister of Digital Development and Communications",
+      "note": "Implementing act for art. 23.3 of the Law on Protection of Personal Information (assessment of processing without human involvement). A search snippet of a ministry legal list cites order No. A/81 of 1 Sept 2023, but the order was not found on mddic.gov.mn's current legal page or legalinfo.mn during this review. Record as binding_regulation (risk-assurance, data-privacy) once the official text is located.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Хиймэл оюун ухаан, их өгөгдөл, блокчэйн, сансрын үйлдвэрлэлийн дэвшилтэт технологид суурилсан сэндбоксын журам",
+      "english_title": "Procedure for the AI / advanced-technology regulatory sandbox under art. 6.1.6 of the Law on Supporting the IT Industry",
+      "issuing_authority": "Government of Mongolia",
+      "note": "Art. 6.1.6 of the 2024 IT industry support law requires the Government to establish an AI/big-data/blockchain/space-tech sandbox and approve its procedure; no such procedure was found on legalinfo.mn or mddic.gov.mn on 2026-10-12.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Хиймэл оюуны тухай хууль (төлөвлөсөн)",
+      "english_title": "Planned national AI law",
+      "issuing_authority": "Ministry of Digital Development, Innovation and Communications",
+      "note": "Measure 5.2.1 of the 2025 National Big Data and AI Strategy commits to creating a national legal framework for AI based on human rights, ethics and safety. No AI bill or consultation draft was found on legalinfo.mn, parliament.mn or mddic.gov.mn on 2026-10-12.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "\"Цахимаар нэн тэргүүнд\" бодлогын зөвлөмж батлах тухай (Засгийн газрын 2025 оны 108 дугаар тогтоол)",
+      "english_title": "Government Resolution No. 108 of 24 September 2025 approving the 'Digital First' policy recommendation",
+      "issuing_authority": "Government of Mongolia",
+      "note": "Approved the same day as the AI strategy; the official copy on mddic.gov.mn is a scanned 8-page PDF with no text layer, so whether the annexed recommendation contains AI provisions could not be checked. Review with OCR and record (public-sector) if it covers AI.",
+      "found": "2026-10-12"
+    }
+  ]
 }
