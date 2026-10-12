@@ -10,97 +10,104 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Slovenia implements the EU AI Act through a 2025 law (ZIUDHPUI) that sets up five market surveillance authorities, an AI regulatory sandbox run by the communications regulator AKOS, a mandatory register of AI systems in the public sector (published as open data in 2026) and a national council for AI ethics. Policy follows the National AI Strategy to 2030, adopted in March 2026 and replacing the 2021 national AI programme. The Ministry of Digital Transformation has issued guidelines on AI in public administration and the Information Commissioner has issued recommendations for public servants using AI at work.",
+    "lead_institutions": [
+      "Ministry of Digital Transformation",
+      "Information Commissioner",
+      "Agency for Communication Networks and Services (AKOS)",
+      "Government of the Republic of Slovenia"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was completed on 12 October 2026 and covers national law, government, ministries and regulators. One guidance document could only be located because its portal does not serve text without a login, and the strategy's action plans are listed as leads."
   },
   "instruments": [
     {
       "id": "i-5bbc3c37c090",
-      "official_title": "Nacionalna strategija za umetno inteligenco do leta 2030 | GOV.SI",
-      "english_title": "National AI Strategy until 2030",
+      "official_title": "Nacionalna strategija za umetno inteligenco do leta 2030 (NsUI 2030)",
+      "english_title": "National Artificial Intelligence Strategy until 2030 (NsUI 2030)",
       "jurisdiction_id": "SVN",
-      "issuing_authority": null,
-      "publisher_name": "www.gov.si",
-      "authority_type": null,
+      "issuing_authority": "Government of the Republic of Slovenia (prepared by the Ministry of Digital Transformation)",
+      "publisher_name": "Government of the Republic of Slovenia",
+      "authority_type": "government",
       "government_level": "national",
+      "subnational_unit": null,
       "categories": [
-        "strategy"
+        "strategy",
+        "government-governance",
+        "ethics",
+        "public-sector",
+        "generative-ai"
       ],
       "category": "strategy",
       "subcategory": null,
-      "legal_status": null,
-      "publication_date": null,
+      "legal_status": "national_strategy",
+      "lifecycle": "adopted",
+      "publication_date": "2026-03-05",
       "effective_date": null,
       "last_amended_date": null,
-      "current_status": "Official source located; current status requires review",
-      "scope": null,
-      "sectors": [],
+      "current_status": "Adopted by the Government on 5 March 2026 (stated on the gov.si project page; period 5.3.2026-31.12.2029, status 'V teku'). It upgrades the NpUI 2025. An official English version (NsUI2030_ang) and an annex on vulnerable groups are published on the same page. The page lists the Ministry of the Interior and Public Administration as responsible institution, while the strategy names the Ministry of Digital Transformation as national manager. A draft was put to public consultation in November 2025 under the name NpUI 2030.",
+      "scope": "Slovenia (national)",
+      "sectors": [
+        "cross-sector"
+      ],
       "technology_scope": [
         "AI"
       ],
-      "summary": "Official source located for this governance category. The document’s adoption, legal effect, scope and version history remain under review.",
-      "ai_governance_relevance": "Primary-source material for assessing strategy & action plans.",
+      "summary": "Slovenia's national AI strategy, adopted by the Government on 5 March 2026, succeeding the National Programme for AI to 2025. It sets ten guiding principles and five strategic goals (sovereign and trustworthy AI capacity; uptake in the economy, science, public sector and civil society; knowledge and ecosystem; security, resilience and defence; international standing) built on six horizontal building blocks, including ethics and regulation. Governance rests with the Ministry of Digital Transformation as national strategy manager, an inter-ministerial coordination group, a Government Council for AI and an AI Observatory, with measures to follow in action plans.",
+      "ai_governance_relevance": "Current national AI strategy; defines the national AI governance structure and responds to generative AI and the EU AI Act.",
       "source_url": "https://www.gov.si/zbirke/projekti-in-programi/nacionalna-strategija-za-umetno-inteligenco-do-leta-2030/",
-      "official_pdf_url": null,
+      "official_pdf_url": "https://www.gov.si/assets/ministrstva/MNZJU/MDP/DDD/DDD-dokumenti/NsUI2030-1.pdf",
       "official_webpage_url": "https://www.gov.si/zbirke/projekti-in-programi/nacionalna-strategija-za-umetno-inteligenco-do-leta-2030/",
       "language": "sl",
-      "supersedes": [],
+      "supersedes": [
+        "i-85ae72ff5196"
+      ],
       "superseded_by": [],
       "related_instruments": [],
       "regional_applicability": [],
-      "verification_date": "2026-10-06",
-      "verification_level": "primary_source_located",
-      "metadata_gaps": [
-        "Issuing authority",
-        "Publication/effective dates",
-        "Current legal status",
-        "Precise applicability",
-        "Version history",
-        "Authority type",
-        "Government level",
-        "Publication date",
-        "Effective date",
-        "Last amended date"
-      ],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
       "source_kind": "official_publication",
-      "evidence_reference": "turn30search0",
+      "evidence_reference": "curl (browser user agent, --max-time 60): gov.si project page read; 102-page PDF (NsUI2030-1.pdf) contents and summary read via pdftotext; adoption date 5 March 2026 from the project page",
       "link_status": "reachable",
-      "document_access_type": "official_publication_or_full_text_page",
+      "document_access_type": "original_government_document",
       "source_id": "s-f906c1474190",
       "organization_id": "o-7b3ac021375b",
-      "lifecycle": "unverified",
-      "first_recorded": "2026-10-06",
-      "last_changed": null,
-      "subnational_unit": null
+      "first_recorded": "2026-10-12",
+      "last_changed": null
     },
     {
       "id": "i-f925a42cd699",
-      "official_title": "Zbirka podatkov o sistemih umetne inteligence v javnem sektorju - Zbirke | OPSI - Odprti podatki Slovenije",
-      "english_title": "Register of AI systems in the public sector",
+      "official_title": "Zbirka podatkov o sistemih umetne inteligence v javnem sektorju",
+      "english_title": "Data Collection on Artificial Intelligence Systems in the Public Sector",
       "jurisdiction_id": "SVN",
-      "issuing_authority": null,
-      "publisher_name": "podatki.gov.si",
-      "authority_type": null,
+      "issuing_authority": "Ministry of Digital Transformation (published on OPSI by the Ministry of the Interior and Public Administration)",
+      "publisher_name": "Ministry of Digital Transformation",
+      "authority_type": "government",
       "government_level": "national",
+      "subnational_unit": null,
       "categories": [
         "transparency",
         "public-sector"
       ],
       "category": "transparency",
       "subcategory": null,
-      "legal_status": null,
-      "publication_date": null,
+      "legal_status": "administrative_policy_mandatory_in_scope",
+      "lifecycle": "in_force",
+      "publication_date": "2026-05-18",
       "effective_date": null,
       "last_amended_date": null,
-      "current_status": "Official source located; current status requires review",
-      "scope": null,
-      "sectors": [],
+      "current_status": "Added to the OPSI open data portal on 18 May 2026; legal basis stated as ZIUDHPUI (SOP 2025-01-3035). Contact organisation is the Ministry of Digital Transformation; OPSI lists the Ministry of the Interior and Public Administration as publisher. The required fields are set by ZIUDHPUI art. 21.",
+      "scope": "Slovenia (national)",
+      "sectors": [
+        "cross-sector"
+      ],
       "technology_scope": [
         "AI"
       ],
-      "summary": "Official source located for this governance category. The document’s adoption, legal effect, scope and version history remain under review.",
-      "ai_governance_relevance": "Primary-source material for assessing transparency & accountability, public-sector ai.",
+      "summary": "Official national register (single information point) through which public-sector bodies report the AI systems and AI-based IT solutions they use, established under art. 21 of ZIUDHPUI. Entries cover the body using the system, intended use and effects, basic principles of the algorithms, references to data protection and fundamental-rights impact assessments, and available legal remedies. Reporting is done through an e-service on the SPOT portal and the collection is published as open data (CC BY 4.0).",
+      "ai_governance_relevance": "Slovenia's public-sector AI/algorithm register, mandatory for public-sector bodies under ZIUDHPUI.",
       "source_url": "https://podatki.gov.si/dataset/zbirka-podatkov-o-sistemih-umetne-inteligence-v-javnem-sektorju",
       "official_pdf_url": null,
       "official_webpage_url": "https://podatki.gov.si/dataset/zbirka-podatkov-o-sistemih-umetne-inteligence-v-javnem-sektorju",
@@ -109,52 +116,387 @@
       "superseded_by": [],
       "related_instruments": [],
       "regional_applicability": [],
-      "verification_date": "2026-10-06",
-      "verification_level": "primary_source_located",
-      "metadata_gaps": [
-        "Issuing authority",
-        "Publication/effective dates",
-        "Current legal status",
-        "Precise applicability",
-        "Version history",
-        "Authority type",
-        "Government level",
-        "Publication date",
-        "Effective date",
-        "Last amended date"
-      ],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
       "source_kind": "official_publication",
-      "evidence_reference": "turn30search6",
+      "evidence_reference": "curl (browser user agent, --max-time 60): OPSI dataset page read (description, publisher, legal basis, date added 18.05.2026)",
       "link_status": "reachable",
       "document_access_type": "official_publication_or_full_text_page",
       "source_id": "s-accdf880c722",
       "organization_id": "o-5070ca87ab30",
-      "lifecycle": "unverified",
-      "first_recorded": "2026-10-06",
-      "last_changed": null,
-      "subnational_unit": null
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-85ae72ff5196",
+      "official_title": "Nacionalni program spodbujanja razvoja in uporabe umetne inteligence v Republiki Sloveniji do leta 2025 (NpUI)",
+      "english_title": "National Programme for the Promotion of the Development and Use of Artificial Intelligence in the Republic of Slovenia until 2025 (NpUI)",
+      "jurisdiction_id": "SVN",
+      "issuing_authority": "Government of the Republic of Slovenia (prepared by the Ministry of Public Administration with 16 other ministries and bodies)",
+      "publisher_name": "Government of the Republic of Slovenia",
+      "authority_type": "government",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "strategy",
+        "historical"
+      ],
+      "category": "strategy",
+      "subcategory": null,
+      "legal_status": "national_strategy",
+      "lifecycle": "superseded",
+      "publication_date": "2021-05-27",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Superseded: its period ended in 2025 and the NsUI 2030 page states that NsUI 2030 builds on the NpUI to 2025. Document information page states 'Ljubljana, 27. 5. 2021, potrjen s strani Vlade RS'.",
+      "scope": "Slovenia (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Slovenia's first national AI programme, confirmed by the Government on 27 May 2021 (and earlier by the ministry on 18 December 2020), prepared under the lead of the Ministry of Public Administration. It set strategic objectives covering the AI ecosystem, education, research, reference solutions, infrastructure, security, public trust, the legal and ethical framework and international cooperation to 2025. It was succeeded by the National AI Strategy to 2030 adopted on 5 March 2026.",
+      "ai_governance_relevance": "Superseded first national AI programme, kept for the timeline.",
+      "source_url": "https://www.gov.si/assets/ministrstva/MDP/DDD/NpUI-SI-2025.pdf",
+      "official_pdf_url": "https://www.gov.si/assets/ministrstva/MDP/DDD/NpUI-SI-2025.pdf",
+      "official_webpage_url": null,
+      "language": "sl",
+      "supersedes": [],
+      "superseded_by": [
+        "i-5bbc3c37c090"
+      ],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "curl (browser user agent, --max-time 60): 96-page PDF read (pdftotext) incl. document information page with Government confirmation date 27.5.2021",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-e8d72e2c5e85",
+      "organization_id": "o-7b3ac021375b",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-c14e72ab0e84",
+      "official_title": "Zakon o izvajanju uredbe (EU) o določitvi harmoniziranih pravil o umetni inteligenci (ZIUDHPUI)",
+      "english_title": "Act Implementing the Regulation (EU) Laying Down Harmonised Rules on Artificial Intelligence (ZIUDHPUI)",
+      "jurisdiction_id": "SVN",
+      "issuing_authority": "National Assembly of the Republic of Slovenia",
+      "publisher_name": "National Assembly of the Republic of Slovenia",
+      "authority_type": "legislature",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "binding-law",
+        "government-governance",
+        "sandbox",
+        "transparency",
+        "public-sector",
+        "ethics"
+      ],
+      "category": "binding-law",
+      "subcategory": null,
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2025-11-06",
+      "effective_date": "2025-11-21",
+      "last_amended_date": null,
+      "current_status": "In force since 21 November 2025 (art. 45: fifteenth day after publication on 6 November 2025). Transitional deadlines: single information point within two months, first sandbox by 2 August 2026 (art. 40; AKOS's June 2026 call notes the EU digital omnibus extends this to 2 August 2027), first call for ethics council members within 60 days.",
+      "scope": "Slovenia (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "National implementing act for the EU AI Act (Regulation 2024/1689), adopted by the National Assembly on 23 October 2025 and published in Uradni list RS No. 85/2025. It designates notifying authorities and five market surveillance authorities (AKOS as single point of contact, the Information Commissioner for prohibited practices and several Annex III areas, the Bank of Slovenia, the Insurance Supervision Agency and the Market Inspectorate), makes AKOS responsible for AI regulatory sandboxes, sets misdemeanour fines, and requires public-sector bodies to publish data on the AI systems they use at a single information point (art. 21). It also establishes a five-member National Council for Ethics in AI appointed by the Government (art. 23).",
+      "ai_governance_relevance": "Core national AI law: designates AI Act authorities, mandates the public-sector AI register and creates the national AI ethics council.",
+      "source_url": "https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2025-01-3035/zakon-o-izvajanju-uredbe-eu-o-dolocitvi-harmoniziranih-pravil-o-umetni-inteligenci-ziudhpui",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2025-01-3035/zakon-o-izvajanju-uredbe-eu-o-dolocitvi-harmoniziranih-pravil-o-umetni-inteligenci-ziudhpui",
+      "language": "sl",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "legislation_portal",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full text in Uradni list RS 85/2025 read, incl. promulgation decree, arts 1-23 and final provisions 40-45",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-2f954c8c0efb",
+      "organization_id": "o-33209f626c5e",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-a71c4d92cc80",
+      "official_title": "Zakon o varstvu osebnih podatkov (ZVOP-2)",
+      "english_title": "Personal Data Protection Act (ZVOP-2)",
+      "jurisdiction_id": "SVN",
+      "issuing_authority": "National Assembly of the Republic of Slovenia",
+      "publisher_name": "National Assembly of the Republic of Slovenia",
+      "authority_type": "legislature",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "category": "data-privacy",
+      "subcategory": null,
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2022-12-27",
+      "effective_date": "2023-01-26",
+      "last_amended_date": null,
+      "current_status": "In force from 26 January 2023 (art. 127: thirtieth day after publication on 27 December 2022). Later amendments (e.g. 2025) not reviewed here; consolidated text on PISRS.",
+      "scope": "Slovenia (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Slovenia's general data protection act implementing and supplementing the GDPR, adopted on 15 December 2022 and published in Uradni list RS No. 163/2022, replacing ZVOP-1 (2004). It governs processing of personal data wholly or partly by automated means, including national rules on biometrics, video surveillance and public-sector processing, and the Information Commissioner's supervision. It is the national data protection framework that applies to AI training and use involving personal data.",
+      "ai_governance_relevance": "National data protection law framing personal-data processing by AI systems; supervised by the Information Commissioner.",
+      "source_url": "https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2022-01-4187/zakon-o-varstvu-osebnih-podatkov-zvop-2",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2022-01-4187/zakon-o-varstvu-osebnih-podatkov-zvop-2",
+      "language": "sl",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "legislation_portal",
+      "evidence_reference": "curl (browser user agent, --max-time 60): Uradni list RS 163/2022 text read (promulgation decree, scope art. 3, final provision art. 127)",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-5666815b4663",
+      "organization_id": "o-33209f626c5e",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-6385b9af12f3",
+      "official_title": "Smernice za razvoj, uvedbo in uporabo umetne inteligence v javni upravi",
+      "english_title": "Guidelines for the Development, Introduction and Use of Artificial Intelligence in Public Administration",
+      "jurisdiction_id": "SVN",
+      "issuing_authority": "Ministry of Digital Transformation",
+      "publisher_name": "Ministry of Digital Transformation",
+      "authority_type": "government",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "public-sector",
+        "generative-ai",
+        "risk-assurance",
+        "cyber-security"
+      ],
+      "category": "public-sector",
+      "subcategory": null,
+      "legal_status": "administrative_guideline",
+      "lifecycle": "published",
+      "publication_date": "2026-03",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Adoption announced by the Ministry on gov.si on 17 March 2026; the document (release 2.0) is published on the ministry's NIO portal. Exact adoption date not stated in the announcement.",
+      "scope": "Slovenia (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Guidelines adopted by the Ministry of Digital Transformation for public administration bodies acting as deployers and providers of AI systems, giving practical, legal and ethical starting points for AI in internal processes and in services to citizens and businesses. Annex 1 gives recommendations to public employees on using publicly available generative AI tools; Annex 2 sets an exit strategy for cloud services and security requirements and recommendations for processing protected data in AI systems.",
+      "ai_governance_relevance": "Central government guidance on public-sector AI use, including generative AI and AI security.",
+      "source_url": "https://nio.gov.si/products/smernice%2Bza%2Brazvoj%2Buvajanje%2Bin%2Buporabo%2Bumetne%2Binteligence%2Bv%2Bjavni%2Bupravi?release=2.0",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.gov.si/novice/2026-03-17-ministrstvo-za-digitalno-preobrazbo-sprejelo-smernice-za-podatke-in-umetno-inteligenco/",
+      "language": "sl",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "primary_source_located",
+      "metadata_gaps": [
+        "Full text not read (NIO portal renders client-side)",
+        "Exact adoption date"
+      ],
+      "source_kind": "official_publication",
+      "evidence_reference": "curl (browser user agent, --max-time 60) and WebFetch: NIO portal page is a JavaScript application that returned no document content (its API requires a session); gov.si announcement of 17 March 2026 read via curl and used for the description",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-f493a6672318",
+      "organization_id": "o-5070ca87ab30",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-bb9997e578d3",
+      "official_title": "Varna in odgovorna uporaba umetne inteligence pri delu – Priporočila za javne uslužbence",
+      "english_title": "Safe and Responsible Use of Artificial Intelligence at Work – Recommendations for Public Servants",
+      "jurisdiction_id": "SVN",
+      "issuing_authority": "Information Commissioner of the Republic of Slovenia",
+      "publisher_name": "Information Commissioner of the Republic of Slovenia",
+      "authority_type": "regulator",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "data-privacy",
+        "generative-ai",
+        "public-sector"
+      ],
+      "category": "data-privacy",
+      "subcategory": null,
+      "legal_status": "regulatory_opinion",
+      "lifecycle": "published",
+      "publication_date": "2026-02",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Published on the Information Commissioner's AI 'Guidelines and recommendations' page; the PDF file name is dated 10 February 2026 (no date in the text). The Commissioner also publishes individual opinions on AI (e.g. 14 January, 20 January and 6 February 2026).",
+      "scope": "Slovenia (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Two-page recommendations from the Information Commissioner to public servants using AI tools at work. They advise checking the body's internal rules before using AI tools, not entering personal, confidential or other protected data unless the processing is lawful and specifically provided for, minimising data, and recognising that deleting obvious identifiers is not anonymisation. They also require users to verify outputs for errors (hallucinations) and bias and to keep final decisions and responsibility with humans.",
+      "ai_governance_relevance": "Data protection regulator's guidance on generative AI use in the public sector.",
+      "source_url": "https://www.ip-rs.si/umetna-inteligenca/smernice-in-priporo%C4%8Dila",
+      "official_pdf_url": "https://www.ip-rs.si/fileadmin/user_upload/Pdf/Priporocila/Varna%20in%20odgovorna%20uporaba%20UI%20pri%20delu_%20Priporo%C4%8Dila%20za%20javne%20uslu%C5%BEbence_10feb2026.pdf",
+      "official_webpage_url": "https://www.ip-rs.si/umetna-inteligenca/smernice-in-priporo%C4%8Dila",
+      "language": "sl",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_publication",
+      "evidence_reference": "curl (browser user agent, --max-time 60): IP-RS AI guidelines page and the 2-page PDF read (pdftotext)",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-946e5f5c65c3",
+      "organization_id": "o-86ef6f921265",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
+    },
+    {
+      "id": "i-29b1bdc7b3bb",
+      "official_title": "Javni poziv zainteresirani javnosti k oddaji predlogov za izbor vsebinskega področja regulativnega peskovnika za umetno inteligenco",
+      "english_title": "Public Call for Proposals on the Subject Area of the Artificial Intelligence Regulatory Sandbox",
+      "jurisdiction_id": "SVN",
+      "issuing_authority": "Agency for Communication Networks and Services of the Republic of Slovenia (AKOS)",
+      "publisher_name": "Agency for Communication Networks and Services of the Republic of Slovenia",
+      "authority_type": "regulator",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "sandbox",
+        "drafts"
+      ],
+      "category": "sandbox",
+      "subcategory": null,
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "consultation",
+      "publication_date": "2026-06-12",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Call No. 38292-2/2026/2 dated 12 June 2026. It notes the statutory deadline for the first sandbox (2 August 2026) is extended to 2 August 2027 by the EU digital omnibus on AI. Outcome (selected subject area) not yet published as of 12 October 2026.",
+      "scope": "Slovenia (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Public call by AKOS, issued under art. 17 of ZIUDHPUI, inviting companies, research bodies, public bodies and individuals to propose the subject area (from AI Act Annex I section A or Annex III) of Slovenia's first AI regulatory sandbox. It describes a two-phase process: selecting the sandbox subject area through this call, then a separate call to select AI systems for testing. Expressions of interest do not guarantee participation.",
+      "ai_governance_relevance": "First step in establishing the national AI Act regulatory sandbox.",
+      "source_url": "https://www.akos-rs.si/en/public-consultations-and-public-tenders/news/javni-poziv-za-izbor-vsebinskega-podrocja-regulativnega-peskovnika-za-umetno-inteligenco",
+      "official_pdf_url": "https://www.akos-rs.si/fileadmin/user_upload/dokumenti/Javna_posvetovanja_in_razpisi/Ragulativni_peskovniki_za_AI/JAVNI_POZIV_za_izbor_vsebinskega_podrocja__ZDSMA_.pdf",
+      "official_webpage_url": "https://www.akos-rs.si/en/public-consultations-and-public-tenders/news/javni-poziv-za-izbor-vsebinskega-podrocja-regulativnega-peskovnika-za-umetno-inteligenco",
+      "language": "sl",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "consultation_portal",
+      "evidence_reference": "curl (browser user agent, --max-time 60): AKOS call page and call PDF read (pdftotext)",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-4ed6eccd0dbe",
+      "organization_id": "o-341c5ef59ed2",
+      "first_recorded": "2026-10-12",
+      "last_changed": null
     }
   ],
   "organizations": [
     {
       "id": "o-7b3ac021375b",
       "jurisdiction_id": "SVN",
-      "name": "www.gov.si",
-      "publisher_name_verified": false,
-      "ai_governance_role": "Publisher of listed official material; complete institutional mandate and statutory responsibilities require review.",
-      "source_url": "https://www.gov.si/zbirke/projekti-in-programi/nacionalna-strategija-za-umetno-inteligenco-do-leta-2030/",
-      "authority_type": null,
-      "government_level": null
+      "name": "Government of the Republic of Slovenia",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Adopts national AI strategies and programmes (NpUI 2025 confirmed 27 May 2021; NsUI 2030 adopted 5 March 2026); appoints the members of the National Council for Ethics in AI under ZIUDHPUI art. 23.",
+      "source_url": "https://www.gov.si/",
+      "authority_type": "government",
+      "government_level": "national"
     },
     {
       "id": "o-5070ca87ab30",
       "jurisdiction_id": "SVN",
-      "name": "podatki.gov.si",
-      "publisher_name_verified": false,
-      "ai_governance_role": "Publisher of listed official material; complete institutional mandate and statutory responsibilities require review.",
-      "source_url": "https://podatki.gov.si/dataset/zbirka-podatkov-o-sistemih-umetne-inteligence-v-javnem-sektorju",
-      "authority_type": null,
-      "government_level": null
+      "name": "Ministry of Digital Transformation",
+      "publisher_name_verified": true,
+      "ai_governance_role": "National manager of NsUI 2030; ministry responsible for the information society under ZIUDHPUI (notifying authority for Annex III point 1); provides the public-sector AI systems data collection; issued the guidelines on AI in public administration.",
+      "source_url": "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-digitalno-preobrazbo/",
+      "authority_type": "government",
+      "government_level": "national"
+    },
+    {
+      "id": "o-33209f626c5e",
+      "jurisdiction_id": "SVN",
+      "name": "National Assembly of the Republic of Slovenia",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Enacted ZIUDHPUI (AI Act implementing law, 23 October 2025) and ZVOP-2 (Personal Data Protection Act, 15 December 2022).",
+      "source_url": "https://www.dz-rs.si/",
+      "authority_type": "legislature",
+      "government_level": "national"
+    },
+    {
+      "id": "o-86ef6f921265",
+      "jurisdiction_id": "SVN",
+      "name": "Information Commissioner of the Republic of Slovenia",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Data protection authority; under ZIUDHPUI a market surveillance authority supervising AI Act prohibited practices (art. 5) and several Annex III high-risk areas through state AI supervisors; issues AI recommendations and opinions.",
+      "source_url": "https://www.ip-rs.si/umetna-inteligenca/",
+      "authority_type": "regulator",
+      "government_level": "national"
+    },
+    {
+      "id": "o-341c5ef59ed2",
+      "jurisdiction_id": "SVN",
+      "name": "Agency for Communication Networks and Services of the Republic of Slovenia",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Market surveillance authority and single point of contact under ZIUDHPUI; responsible for establishing AI regulatory sandboxes (art. 17).",
+      "source_url": "https://www.akos-rs.si/",
+      "authority_type": "regulator",
+      "government_level": "national"
     }
   ],
   "sources": [
@@ -165,17 +507,21 @@
         "SVN"
       ],
       "source_institutions": [
-        "www.gov.si"
+        "Government of the Republic of Slovenia"
       ],
       "instrument_ids": [
         "i-5bbc3c37c090"
       ],
       "categories_reviewed": [
-        "strategy"
+        "strategy",
+        "government-governance",
+        "ethics",
+        "public-sector",
+        "generative-ai"
       ],
-      "date_reviewed": "2026-10-06",
-      "checked_date": "2026-10-06",
-      "check_method": "GET; first 1 MiB; 14-second timeout",
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): gov.si project page read; 102-page PDF (NsUI2030-1.pdf) contents and summary read via pdftotext; adoption date 5 March 2026 from the project page",
       "http_status": 200,
       "final_url": "https://www.gov.si/zbirke/projekti-in-programi/nacionalna-strategija-za-umetno-inteligenco-do-leta-2030/",
       "link_status": "reachable",
@@ -191,22 +537,191 @@
         "SVN"
       ],
       "source_institutions": [
-        "podatki.gov.si"
+        "Ministry of Digital Transformation"
       ],
       "instrument_ids": [
         "i-f925a42cd699"
       ],
       "categories_reviewed": [
-        "public-sector",
-        "transparency"
+        "transparency",
+        "public-sector"
       ],
-      "date_reviewed": "2026-10-06",
-      "checked_date": "2026-10-06",
-      "check_method": "GET; first 1 MiB; 14-second timeout",
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): OPSI dataset page read (description, publisher, legal basis, date added 18.05.2026)",
       "http_status": 200,
       "final_url": "https://podatki.gov.si/dataset/zbirka-podatkov-o-sistemih-umetne-inteligence-v-javnem-sektorju",
       "link_status": "reachable",
       "page_title": "Zbirka podatkov o sistemih umetne inteligence v javnem sektorju - Zbirke | OPSI - Odprti podatki Slovenije",
+      "document_language": "sl",
+      "error": null,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "id": "s-e8d72e2c5e85",
+      "url": "https://www.gov.si/assets/ministrstva/MDP/DDD/NpUI-SI-2025.pdf",
+      "jurisdiction_ids": [
+        "SVN"
+      ],
+      "source_institutions": [
+        "Government of the Republic of Slovenia"
+      ],
+      "instrument_ids": [
+        "i-85ae72ff5196"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "historical"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): 96-page PDF read (pdftotext) incl. document information page with Government confirmation date 27.5.2021",
+      "http_status": 200,
+      "final_url": "https://www.gov.si/assets/ministrstva/MDP/DDD/NpUI-SI-2025.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "sl",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-2f954c8c0efb",
+      "url": "https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2025-01-3035/zakon-o-izvajanju-uredbe-eu-o-dolocitvi-harmoniziranih-pravil-o-umetni-inteligenci-ziudhpui",
+      "jurisdiction_ids": [
+        "SVN"
+      ],
+      "source_institutions": [
+        "National Assembly of the Republic of Slovenia"
+      ],
+      "instrument_ids": [
+        "i-c14e72ab0e84"
+      ],
+      "categories_reviewed": [
+        "binding-law",
+        "government-governance",
+        "sandbox",
+        "transparency",
+        "public-sector",
+        "ethics"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full text in Uradni list RS 85/2025 read, incl. promulgation decree, arts 1-23 and final provisions 40-45",
+      "http_status": 200,
+      "final_url": "https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2025-01-3035/zakon-o-izvajanju-uredbe-eu-o-dolocitvi-harmoniziranih-pravil-o-umetni-inteligenci-ziudhpui",
+      "link_status": "reachable",
+      "page_title": "Uradni list",
+      "document_language": "sl",
+      "error": null,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "id": "s-5666815b4663",
+      "url": "https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2022-01-4187/zakon-o-varstvu-osebnih-podatkov-zvop-2",
+      "jurisdiction_ids": [
+        "SVN"
+      ],
+      "source_institutions": [
+        "National Assembly of the Republic of Slovenia"
+      ],
+      "instrument_ids": [
+        "i-a71c4d92cc80"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): Uradni list RS 163/2022 text read (promulgation decree, scope art. 3, final provision art. 127)",
+      "http_status": 200,
+      "final_url": "https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2022-01-4187/zakon-o-varstvu-osebnih-podatkov-zvop-2",
+      "link_status": "reachable",
+      "page_title": "Uradni list",
+      "document_language": "sl",
+      "error": null,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "id": "s-f493a6672318",
+      "url": "https://nio.gov.si/products/smernice%2Bza%2Brazvoj%2Buvajanje%2Bin%2Buporabo%2Bumetne%2Binteligence%2Bv%2Bjavni%2Bupravi?release=2.0",
+      "jurisdiction_ids": [
+        "SVN"
+      ],
+      "source_institutions": [
+        "Ministry of Digital Transformation"
+      ],
+      "instrument_ids": [
+        "i-6385b9af12f3"
+      ],
+      "categories_reviewed": [
+        "public-sector",
+        "generative-ai",
+        "risk-assurance",
+        "cyber-security"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60) and WebFetch: NIO portal page is a JavaScript application that returned no document content (its API requires a session); gov.si announcement of 17 March 2026 read via curl and used for the description",
+      "http_status": 200,
+      "final_url": "https://nio.gov.si/products/smernice%2Bza%2Brazvoj%2Buvajanje%2Bin%2Buporabo%2Bumetne%2Binteligence%2Bv%2Bjavni%2Bupravi?release=2.0",
+      "link_status": "reachable",
+      "page_title": "Portal NIO",
+      "document_language": "sl",
+      "error": null,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "id": "s-946e5f5c65c3",
+      "url": "https://www.ip-rs.si/umetna-inteligenca/smernice-in-priporo%C4%8Dila",
+      "jurisdiction_ids": [
+        "SVN"
+      ],
+      "source_institutions": [
+        "Information Commissioner of the Republic of Slovenia"
+      ],
+      "instrument_ids": [
+        "i-bb9997e578d3"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "generative-ai",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): IP-RS AI guidelines page and the 2-page PDF read (pdftotext)",
+      "http_status": 200,
+      "final_url": "https://www.ip-rs.si/umetna-inteligenca/smernice-in-priporo%C4%8Dila",
+      "link_status": "reachable",
+      "page_title": "Smernice in priporočila - IPRS",
+      "document_language": "sl",
+      "error": null,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "id": "s-4ed6eccd0dbe",
+      "url": "https://www.akos-rs.si/en/public-consultations-and-public-tenders/news/javni-poziv-za-izbor-vsebinskega-podrocja-regulativnega-peskovnika-za-umetno-inteligenco",
+      "jurisdiction_ids": [
+        "SVN"
+      ],
+      "source_institutions": [
+        "Agency for Communication Networks and Services of the Republic of Slovenia"
+      ],
+      "instrument_ids": [
+        "i-29b1bdc7b3bb"
+      ],
+      "categories_reviewed": [
+        "sandbox",
+        "drafts"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): AKOS call page and call PDF read (pdftotext)",
+      "http_status": 200,
+      "final_url": "https://www.akos-rs.si/en/public-consultations-and-public-tenders/news/javni-poziv-za-izbor-vsebinskega-podrocja-regulativnega-peskovnika-za-umetno-inteligenco",
+      "link_status": "reachable",
+      "page_title": null,
       "document_language": "sl",
       "error": null,
       "content_type": "text/html; charset=utf-8"
@@ -216,7 +731,7 @@
   "coverage_audit": {
     "jurisdiction_id": "SVN",
     "country": "Slovenia",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -229,58 +744,384 @@
       "transparency"
     ],
     "categories_with_findings": [
+      "binding-law",
+      "cyber-security",
+      "data-privacy",
+      "drafts",
+      "ethics",
+      "generative-ai",
+      "government-governance",
+      "historical",
       "public-sector",
+      "risk-assurance",
+      "sandbox",
       "strategy",
       "transparency"
     ],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
-      "binding-law",
-      "strategy",
-      "government-governance",
-      "ethics",
-      "risk-assurance",
-      "public-sector",
+    "categories_where_no_material_was_found": [
       "procurement",
-      "cyber-security",
-      "data-privacy",
-      "transparency",
       "standards",
-      "sandbox",
       "index-readiness",
       "sectoral",
-      "generative-ai",
-      "drafts",
-      "international",
-      "historical"
+      "international"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Slovenia \"umetna inteligenca\" (strategija OR regulacija OR etika) government ministry official",
       "Slovenia \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Slovenia government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Slovenia \"umetna inteligenca\" cybersecurity authority secure development safety guidelines",
-      "Slovenia privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Slovenia privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "\"Nacionalni program spodbujanja razvoja in uporabe umetne inteligence\" gov.si pdf",
+      "zakon o izvajanju uredbe o umetni inteligenci Slovenija predlog",
+      "Informacijski pooblaščenec umetna inteligenca smernice ip-rs.si",
+      "ip-rs.si umetna inteligenca smernice varstvo osebnih podatkov 2025",
+      "gov.si smernice uporaba generativne umetne inteligence javna uprava",
+      "AKOS regulativni peskovnik umetna inteligenca javni poziv akos-rs.si",
+      "Zakon o ratifikaciji Konvencije o varstvu posameznikov glede na avtomatsko obdelavo osebnih podatkov Uradni list RS mednarodne pogodbe",
+      "\"Smernice za razvoj, uvedbo in uporabo umetne inteligence v javni upravi\" pdf",
+      "Informacijski pooblaščenec mnenje umetna inteligenca ChatGPT generativna ip-rs.si publikacije",
+      "uradni-list.si Zakon o varstvu osebnih podatkov (ZVOP-2) 163/2022",
+      "ip-rs.si/umetna-inteligenca (site sections: mnenja, smernice in priporočila)",
+      "SIST ISO/IEC 42001 umetna inteligenca standard sist.si",
+      "Banka Slovenije umetna inteligenca nadzor smernice bsi.si"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "EU MEMBERSHIP LAYER IMPLEMENTED; INSTRUMENT-SPECIFIC APPLICABILITY REQUIRES REVIEW",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. NIO portal builds pages in the browser and its API needs a login (MDP guidelines located only, date from the 17 March 2026 announcement). gov.si AI ethics council page timed out. Bank of Slovenia, Insurance Supervision Agency, Market Inspectorate, SIST and URSIV/SI-CERT only at discovery level. Ministry responsibility unclear (MDP vs MNZJU, possible 2026 reorganisation). Convention 108: Uradni list RS 11/1994 (MP 3/1994), recorded on the COE file. Units covered: Law: Uradni list RS: ZIUDHPUI (AI Act implementing law, 85/2025) and ZVOP-2 (163/2022) read in full/key parts; Convention 108 ratification act (MP 3/1994) located. No standalone AI bill or deepfake-specific offence found in the time box.; Government: Government/MDP: NsUI 2030 (2026), NpUI 2025 (2021), MDP public-administration AI guidelines (2026, NIO portal), OPSI public-sector AI register.; Ministries: Searched education/science (gov.si 2024 news on generative-AI research guidelines refers to EU ERA-forum guidelines, not a national document), other ministries: no ministry-specific AI documents found in the time box.; Regulators: Information Commissioner (AI section: recommendations for public servants; individual AI opinions), AKOS (sandbox call). Bank of Slovenia, Insurance Supervision Agency, Market Inspectorate, SI-CERT/URSIV, SIST: no AI-specific documents found (not deeply searched).. Not reached: Bank of Slovenia / Insurance Supervision Agency AI supervisory documents (only discovery level); National standards body SIST adoption of ISO/IEC 42001 (one search, no SIST page found); Government Office for Information Security (URSIV) AI security guidance (not checked); National Council for Ethics in AI page (timed out). Could not verify: Full text of MDP 'Smernice za razvoj, uvedbo in uporabo UI v javni upravi' (NIO portal is client-side and its API needs a session; curl and WebFetch both returned no content); National Council for Ethics in AI working-body page (curl timed out). procurement, standards, index-readiness, sectoral, international: no material found.",
     "discovery_result_count": 7,
     "focused_result_count": 9
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-cc2f221a19a1",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "SVN",
+      "instrument_id": "i-5bbc3c37c090",
+      "title": "National Artificial Intelligence Strategy until 2030 (NsUI 2030)",
+      "detail": "Record updated: categories, issuing authority, legal status, lifecycle, publication date, scope, summary, title.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-a29f55d8663e",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "SVN",
+      "instrument_id": "i-f925a42cd699",
+      "title": "Data Collection on Artificial Intelligence Systems in the Public Sector",
+      "detail": "Record updated: issuing authority, legal status, lifecycle, publication date, scope, summary, title.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-5650652e66f6",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "SVN",
+      "instrument_id": "i-85ae72ff5196",
+      "title": "National Programme for the Promotion of the Development and Use of Artificial Intelligence in the Republic of Slovenia until 2025 (NpUI)",
+      "detail": "Added to the radar (published 2021-05-27).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.gov.si/assets/ministrstva/MDP/DDD/NpUI-SI-2025.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-ed82823f0437",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "SVN",
+      "instrument_id": "i-c14e72ab0e84",
+      "title": "Act Implementing the Regulation (EU) Laying Down Harmonised Rules on Artificial Intelligence (ZIUDHPUI)",
+      "detail": "Added to the radar (published 2025-11-06).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2025-01-3035/zakon-o-izvajanju-uredbe-eu-o-dolocitvi-harmoniziranih-pravil-o-umetni-inteligenci-ziudhpui",
+      "needs_review": false
+    },
+    {
+      "id": "c-eb5ab21c6fc7",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "SVN",
+      "instrument_id": "i-a71c4d92cc80",
+      "title": "Personal Data Protection Act (ZVOP-2)",
+      "detail": "Added to the radar (published 2022-12-27).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2022-01-4187/zakon-o-varstvu-osebnih-podatkov-zvop-2",
+      "needs_review": false
+    },
+    {
+      "id": "c-a60cf67e6745",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "SVN",
+      "instrument_id": "i-6385b9af12f3",
+      "title": "Guidelines for the Development, Introduction and Use of Artificial Intelligence in Public Administration",
+      "detail": "Added to the radar (published 2026-03).",
+      "from": null,
+      "to": null,
+      "source_url": "https://nio.gov.si/products/smernice%2Bza%2Brazvoj%2Buvajanje%2Bin%2Buporabo%2Bumetne%2Binteligence%2Bv%2Bjavni%2Bupravi?release=2.0",
+      "needs_review": false
+    },
+    {
+      "id": "c-5c77737e5fab",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "SVN",
+      "instrument_id": "i-bb9997e578d3",
+      "title": "Safe and Responsible Use of Artificial Intelligence at Work – Recommendations for Public Servants",
+      "detail": "Added to the radar (published 2026-02).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.ip-rs.si/umetna-inteligenca/smernice-in-priporo%C4%8Dila",
+      "needs_review": false
+    },
+    {
+      "id": "c-d1c085455789",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "SVN",
+      "instrument_id": "i-29b1bdc7b3bb",
+      "title": "Public Call for Proposals on the Subject Area of the Artificial Intelligence Regulatory Sandbox",
+      "detail": "Added to the radar (published 2026-06-12).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.akos-rs.si/en/public-consultations-and-public-tenders/news/javni-poziv-za-izbor-vsebinskega-podrocja-regulativnega-peskovnika-za-umetno-inteligenco",
+      "needs_review": false
+    },
+    {
+      "id": "c-ca66dfb2b013",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "SVN",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 8 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-e8a9030b0a71",
+      "date": "2026-06-12",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "consultation",
+      "jurisdiction_id": "SVN",
+      "instrument_id": "i-29b1bdc7b3bb",
+      "title": "AKOS opens public call on AI regulatory sandbox subject area",
+      "detail": "Call No. 38292-2/2026/2 dated 12 June 2026.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.akos-rs.si/en/public-consultations-and-public-tenders/news/javni-poziv-za-izbor-vsebinskega-podrocja-regulativnega-peskovnika-za-umetno-inteligenco",
+      "needs_review": false
+    },
+    {
+      "id": "c-ab5a9cafbbde",
+      "date": "2026-05-18",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "SVN",
+      "instrument_id": "i-f925a42cd699",
+      "title": "Public-sector AI systems register published on OPSI",
+      "detail": "Data collection added to the OPSI open data portal on 18 May 2026 (legal basis ZIUDHPUI).",
+      "from": null,
+      "to": null,
+      "source_url": "https://podatki.gov.si/dataset/zbirka-podatkov-o-sistemih-umetne-inteligence-v-javnem-sektorju",
+      "needs_review": false
+    },
+    {
+      "id": "c-b4af4077f6a5",
+      "date": "2026-03-05",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "SVN",
+      "instrument_id": "i-5bbc3c37c090",
+      "title": "Government adopts National AI Strategy to 2030 (NsUI 2030)",
+      "detail": "Adopted by the Government on 5 March 2026.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.gov.si/zbirke/projekti-in-programi/nacionalna-strategija-za-umetno-inteligenco-do-leta-2030/",
+      "needs_review": false
+    },
+    {
+      "id": "c-22f3934d4f28",
+      "date": "2026-03-05",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "superseded",
+      "jurisdiction_id": "SVN",
+      "instrument_id": "i-85ae72ff5196",
+      "title": "NpUI 2025 succeeded by NsUI 2030",
+      "detail": "NsUI 2030, adopted 5 March 2026, builds on and succeeds the National AI Programme to 2025.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.gov.si/assets/ministrstva/MDP/DDD/NpUI-SI-2025.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-58ba002def6b",
+      "date": "2025-11-21",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "SVN",
+      "instrument_id": "i-c14e72ab0e84",
+      "title": "ZIUDHPUI enters into force",
+      "detail": "Art. 45: in force on the fifteenth day after publication; designates AI Act authorities, sandbox authority, public-sector AI register and national AI ethics council.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2025-01-3035/zakon-o-izvajanju-uredbe-eu-o-dolocitvi-harmoniziranih-pravil-o-umetni-inteligenci-ziudhpui",
+      "needs_review": false
+    },
+    {
+      "id": "c-068d5df45cca",
+      "date": "2025-11-06",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "SVN",
+      "instrument_id": "i-c14e72ab0e84",
+      "title": "ZIUDHPUI published in the Official Gazette",
+      "detail": "Uradni list RS No. 85/2025.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2025-01-3035/zakon-o-izvajanju-uredbe-eu-o-dolocitvi-harmoniziranih-pravil-o-umetni-inteligenci-ziudhpui",
+      "needs_review": false
+    },
+    {
+      "id": "c-850a71d7fc25",
+      "date": "2025-10-23",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "SVN",
+      "instrument_id": "i-c14e72ab0e84",
+      "title": "National Assembly adopts AI Act implementing law (ZIUDHPUI)",
+      "detail": "Adopted at the National Assembly session of 23 October 2025.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2025-01-3035/zakon-o-izvajanju-uredbe-eu-o-dolocitvi-harmoniziranih-pravil-o-umetni-inteligenci-ziudhpui",
+      "needs_review": false
+    },
+    {
+      "id": "c-99eea7b47058",
+      "date": "2023-01-26",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "SVN",
+      "instrument_id": "i-a71c4d92cc80",
+      "title": "ZVOP-2 enters into force",
+      "detail": "Art. 127: in force on the thirtieth day after publication.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2022-01-4187/zakon-o-varstvu-osebnih-podatkov-zvop-2",
+      "needs_review": false
+    },
+    {
+      "id": "c-4c6405ff34c3",
+      "date": "2022-12-27",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "SVN",
+      "instrument_id": "i-a71c4d92cc80",
+      "title": "Personal Data Protection Act (ZVOP-2) published",
+      "detail": "Published in Uradni list RS No. 163/2022.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2022-01-4187/zakon-o-varstvu-osebnih-podatkov-zvop-2",
+      "needs_review": false
+    },
+    {
+      "id": "c-3be69154526d",
+      "date": "2021-05-27",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "SVN",
+      "instrument_id": "i-85ae72ff5196",
+      "title": "Government confirms National AI Programme to 2025 (NpUI)",
+      "detail": "Document information page: confirmed by the Government of the Republic of Slovenia on 27 May 2021.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.gov.si/assets/ministrstva/MDP/DDD/NpUI-SI-2025.pdf",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Akcijski načrt za izvajanje NsUI 2030",
+      "english_title": "Action plan(s) implementing the National AI Strategy 2030",
+      "issuing_authority": "Ministry of Digital Transformation",
+      "note": "NsUI 2030 states measures, owners, timelines and funding will be set in action plans; none found published as of 12 October 2026.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Nacionalni svet za etiko v umetni inteligenci – sklep o imenovanju",
+      "english_title": "National Council for Ethics in AI – appointment decision",
+      "issuing_authority": "Government of the Republic of Slovenia",
+      "note": "Council established by ZIUDHPUI art. 23; gov.si working-body page (gov.si/zbirke/delovna-telesa/nacionalni-svet-za-etiko-v-umetni-inteligenci/) timed out; appointment act and any opinions/guidelines not yet verified.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Svet Vlade Republike Slovenije za umetno inteligenco / Opazovalnica za UI",
+      "english_title": "Government Council for AI and AI Observatory",
+      "issuing_authority": "Government of the Republic of Slovenia",
+      "note": "Governance bodies foreseen in NsUI 2030 chapter 5; founding instruments not found.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Podatkovne semantične smernice",
+      "english_title": "Data Semantic Guidelines",
+      "issuing_authority": "Ministry of Digital Transformation",
+      "note": "Adopted with the public-administration AI guidelines (gov.si news 17 March 2026); data-interoperability document, AI relevance indirect; NIO portal text not readable by tools.",
+      "found": "2026-10-12"
+    }
+  ]
 }
