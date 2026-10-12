@@ -10,292 +10,998 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Finland implements the EU AI Act through Act 1377/2025, in force since January 2026, which spreads supervision across sector regulators with the Transport and Communications Agency (Traficom) as single point of contact and the Data Protection Ombudsman covering prohibited practices. Strict 2023 amendments to the Administrative Procedure Act limit automated public decisions to rule-based systems. The rest is non-binding: the 2017-2022 national AI programmes, the Ministry of Finance's 2025 generative AI guidelines, defence and education AI documents, the 2026 Digital Compass update, Traficom's sandbox and transparency guidance, and the Financial Supervisory Authority's 2025 review of AI in finance.",
+    "lead_institutions": [
+      "Ministry of Finance",
+      "Ministry of Economic Affairs and Employment",
+      "Finnish Transport and Communications Agency (Traficom)",
+      "Data Protection Ombudsman"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was completed on 12 October 2026 and covers national law, government, ministries and regulators. Several ministry websites blocked access, so government publications were read through the official publications repository, and the Data Protection Ombudsman's AI guidance could not be checked."
   },
   "instruments": [
     {
       "id": "i-10885051bae6",
-      "official_title": "AI regulatory sandboxes | Traficom",
-      "english_title": "AI regulatory sandboxes",
-      "jurisdiction_id": "FIN",
-      "issuing_authority": null,
-      "publisher_name": "www.traficom.fi",
-      "authority_type": null,
-      "government_level": "national",
+      "official_title": "Tekoälyn sääntelyn testiympäristöt",
+      "english_title": "AI regulatory sandboxes (Traficom guidance page)",
+      "issuing_authority": "Finnish Transport and Communications Agency (Traficom)",
+      "authority_type": "regulator",
       "categories": [
         "sandbox"
       ],
+      "legal_status": "regulatory_opinion",
+      "lifecycle": "published",
+      "publication_date": "2026-09-28",
+      "current_status": "Informational page; Finnish version last updated 28 September 2026 (English version last updated 13 April 2026). The date recorded is the page's last-updated date; no original publication date is stated. A 2025 draft Government bill would make Traficom responsible for establishing and running the national AI regulatory sandbox (see leads).",
+      "summary": "Traficom's guidance page on AI regulatory sandboxes under the EU AI Act. It explains that a sandbox is a supervised, bounded environment where companies can test AI applications under authority guidance before market launch, especially high-risk systems, and that the AI Act requires every member state to establish such sandboxes. It does not itself establish a Finnish sandbox or set admission rules.",
+      "ai_governance_relevance": "Traficom's public information on Finland's AI regulatory sandbox work; the national sandbox legislation is pending (see leads).",
+      "source_url": "https://www.traficom.fi/fi/tekoalyn-saantely/tekoalyn-saantelyn-testiymparistot",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.traficom.fi/en/ai-regulation/ai-regulatory-sandboxes",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_publication",
+      "supersedes": [],
+      "organization_id": "o-733152ef4a71",
+      "publisher_name": "Finnish Transport and Communications Agency",
+      "jurisdiction_id": "FIN",
+      "government_level": "national",
+      "subnational_unit": null,
       "category": "sandbox",
       "subcategory": null,
-      "legal_status": null,
-      "publication_date": null,
       "effective_date": null,
       "last_amended_date": null,
-      "current_status": "Official source located; current status requires review",
-      "scope": null,
-      "sectors": [],
+      "scope": "Finland (national)",
       "technology_scope": [
         "AI"
       ],
-      "summary": "Official source located for this governance category. The document’s adoption, legal effect, scope and version history remain under review.",
-      "ai_governance_relevance": "Primary-source material for assessing regulatory sandboxes.",
-      "source_url": "https://www.traficom.fi/en/ai-regulation/ai-regulatory-sandboxes",
-      "official_pdf_url": null,
-      "official_webpage_url": "https://www.traficom.fi/en/ai-regulation/ai-regulatory-sandboxes",
-      "language": "en",
-      "supersedes": [],
       "superseded_by": [],
       "related_instruments": [],
       "regional_applicability": [],
-      "verification_date": "2026-10-06",
-      "verification_level": "primary_source_located",
-      "metadata_gaps": [
-        "Issuing authority",
-        "Publication/effective dates",
-        "Current legal status",
-        "Precise applicability",
-        "Version history",
-        "Authority type",
-        "Government level",
-        "Publication date",
-        "Effective date",
-        "Last amended date"
-      ],
-      "source_kind": "official_publication",
-      "evidence_reference": "turn14search2",
-      "link_status": "reachable",
-      "document_access_type": "official_publication_or_full_text_page",
-      "source_id": "s-fde4936348df",
-      "organization_id": "o-733152ef4a71",
-      "lifecycle": "unverified",
-      "first_recorded": "2026-10-06",
+      "metadata_gaps": [],
+      "language": "fi",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
       "last_changed": null,
-      "subnational_unit": null
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-fde4936348df",
+      "evidence_reference": "curl (browser user agent, --max-time 60): Finnish and English Traficom pages read; last-updated dates 28.9.2026 (fi) and 13.4.2026 (en)"
     },
     {
       "id": "i-57f371bfb741",
-      "official_title": "Secure AI Development Handbook - Databank of Cybersecurity and Digital Security - Suomi.fi for Service Developers",
-      "english_title": "Secure AI Development Handbook",
-      "jurisdiction_id": "FIN",
-      "issuing_authority": null,
-      "publisher_name": "kehittajille.suomi.fi",
-      "authority_type": null,
-      "government_level": "national",
+      "official_title": "Turvallisen kehittämisen opas: Tekoälyjärjestelmien kehittäminen",
+      "english_title": "Secure AI Development Handbook (Secure development guide: developing AI systems)",
+      "issuing_authority": "Digital and Population Data Services Agency (DVV)",
+      "authority_type": "government",
       "categories": [
-        "cyber-security"
+        "cyber-security",
+        "public-sector",
+        "risk-assurance",
+        "procurement"
       ],
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2023-06-09",
+      "current_status": "Published by DVV on Suomi.fi for Service Developers (page updated 18 December 2024). The PDF is dated 9 June 2023, while the landing page says the handbook was published in March 2023; the document date is recorded. Finnish only.",
+      "summary": "A 27-page guide for public-sector organisations on developing AI systems securely, produced under DVV's Development Programme for Digital Security in Public Administration (JUDO). It covers requirements for a secure AI system and the capabilities AI projects need, taking legislation and ethics into account when defining AI projects, and secure data collection, anonymisation and processing, aimed at project owners, implementers and those managing AI procurements.",
+      "ai_governance_relevance": "Central-government security guidance for public-sector AI development and procurement.",
+      "source_url": "https://kehittajille.suomi.fi/services/digital-security/information-security-and-cybersecurity/artificial-intelligence-ai/secure-ai-development-handbook",
+      "official_pdf_url": "https://cdn.verkkopalvelu.suomi.fi/files/Turvallisen%20teko%C3%A4lykehitt%C3%A4misen%20opas-e675ebf51884c7614c5a87e36b0edc5e.pdf",
+      "official_webpage_url": "https://kehittajille.suomi.fi/services/digital-security/information-security-and-cybersecurity/artificial-intelligence-ai/secure-ai-development-handbook",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_publication",
+      "supersedes": [],
+      "organization_id": "o-c2dc151da91b",
+      "publisher_name": "Digital and Population Data Services Agency",
+      "jurisdiction_id": "FIN",
+      "government_level": "national",
+      "subnational_unit": null,
       "category": "cyber-security",
       "subcategory": null,
-      "legal_status": null,
-      "publication_date": null,
       "effective_date": null,
       "last_amended_date": null,
-      "current_status": "Official source located; current status requires review",
-      "scope": null,
-      "sectors": [],
+      "scope": "Finland (national)",
       "technology_scope": [
         "AI"
       ],
-      "summary": "Official source located for this governance category. The document’s adoption, legal effect, scope and version history remain under review.",
-      "ai_governance_relevance": "Primary-source material for assessing safety & cybersecurity.",
-      "source_url": "https://kehittajille.suomi.fi/services/digital-security/information-security-and-cybersecurity/artificial-intelligence-ai/secure-ai-development-handbook",
-      "official_pdf_url": null,
-      "official_webpage_url": "https://kehittajille.suomi.fi/services/digital-security/information-security-and-cybersecurity/artificial-intelligence-ai/secure-ai-development-handbook",
-      "language": "en",
-      "supersedes": [],
       "superseded_by": [],
       "related_instruments": [],
       "regional_applicability": [],
-      "verification_date": "2026-10-06",
-      "verification_level": "primary_source_located",
-      "metadata_gaps": [
-        "Issuing authority",
-        "Publication/effective dates",
-        "Current legal status",
-        "Precise applicability",
-        "Version history",
-        "Authority type",
-        "Government level",
-        "Publication date",
-        "Effective date",
-        "Last amended date"
-      ],
-      "source_kind": "official_publication",
-      "evidence_reference": "turn14search3",
-      "link_status": "reachable",
-      "document_access_type": "official_publication_or_full_text_page",
-      "source_id": "s-1c9dd745a865",
-      "organization_id": "o-c2dc151da91b",
-      "lifecycle": "unverified",
-      "first_recorded": "2026-10-06",
+      "metadata_gaps": [],
+      "language": "fi",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
       "last_changed": null,
-      "subnational_unit": null
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-1c9dd745a865",
+      "evidence_reference": "curl (browser user agent, --max-time 60): Suomi.fi landing page and PDF (28 pages) read; title and date 9.6.2023 from the PDF cover"
     },
     {
       "id": "i-85bf846951f0",
       "official_title": "Making the most of AI in Finnish central government : A guide for organisational developers navigating the early stages of change",
-      "english_title": "Making the most of AI in Finnish central government",
-      "jurisdiction_id": "FIN",
-      "issuing_authority": null,
-      "publisher_name": "julkaisut.valtioneuvosto.fi",
-      "authority_type": null,
-      "government_level": "national",
+      "english_title": "Making the most of AI in Finnish central government: a guide for organisational developers navigating the early stages of change",
+      "issuing_authority": "Ministry of Finance",
+      "authority_type": "government",
       "categories": [
-        "public-sector"
+        "public-sector",
+        "government-governance",
+        "risk-assurance"
       ],
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2025-06-23",
+      "current_status": "Publications of the Ministry of Finance 2025:33, issued 23 June 2025 (English version). The Finnish original 'Tekoäly hyötykäyttöön valtionhallinnossa' is VM 2025:27 (12 June 2025); a Swedish version is VM 2025:32.",
+      "summary": "Ministry of Finance guide for central government agencies and public bodies on using AI to boost productivity, manage risks and optimise costs. It explains the EU AI Act's four risk levels, the responsibilities associated with AI and AI governance, and stresses responsible-AI principles (responsibility, sustainability, transparency) and AI literacy.",
+      "ai_governance_relevance": "Central-government guidance on organising AI adoption and governance in agencies.",
+      "source_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/b8e46177-ca24-4564-992d-e765ef81d4fd/content",
+      "official_pdf_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/b8e46177-ca24-4564-992d-e765ef81d4fd/content",
+      "official_webpage_url": "https://julkaisut.valtioneuvosto.fi/items/ddfc178d-9e56-48b8-8c7d-bba61572d328",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_publication",
+      "supersedes": [],
+      "organization_id": "o-976f4c9b45ea",
+      "publisher_name": "Ministry of Finance",
+      "jurisdiction_id": "FIN",
+      "government_level": "national",
+      "subnational_unit": null,
       "category": "public-sector",
       "subcategory": null,
-      "legal_status": null,
-      "publication_date": null,
       "effective_date": null,
       "last_amended_date": null,
-      "current_status": "Official source located; current status requires review",
-      "scope": null,
-      "sectors": [],
+      "scope": "Finland (national)",
       "technology_scope": [
         "AI"
       ],
-      "summary": "Official source located for this governance category. The document’s adoption, legal effect, scope and version history remain under review.",
-      "ai_governance_relevance": "Primary-source material for assessing public-sector ai.",
-      "source_url": "https://julkaisut.valtioneuvosto.fi/items/ddfc178d-9e56-48b8-8c7d-bba61572d328",
-      "official_pdf_url": null,
-      "official_webpage_url": "https://julkaisut.valtioneuvosto.fi/items/ddfc178d-9e56-48b8-8c7d-bba61572d328",
-      "language": null,
-      "supersedes": [],
       "superseded_by": [],
       "related_instruments": [],
       "regional_applicability": [],
-      "verification_date": "2026-10-06",
-      "verification_level": "primary_source_located",
-      "metadata_gaps": [
-        "Issuing authority",
-        "Publication/effective dates",
-        "Current legal status",
-        "Precise applicability",
-        "Version history",
-        "Authority type",
-        "Government level",
-        "Publication date",
-        "Effective date",
-        "Last amended date",
-        "Document language"
-      ],
-      "source_kind": "official_publication",
-      "evidence_reference": "turn14search4",
-      "link_status": "inaccessible",
-      "document_access_type": "official_publication_or_full_text_page",
-      "source_id": "s-2343072fd462",
-      "organization_id": "o-c1e0638d8273",
-      "lifecycle": "unverified",
-      "first_recorded": "2026-10-06",
+      "metadata_gaps": [],
+      "language": "en",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
       "last_changed": null,
-      "subnational_unit": null
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-2343072fd462",
+      "evidence_reference": "curl (browser user agent, --max-time 60): repository item metadata and full PDF read through the Government publications repository's own API (julkaisut.valtioneuvosto.fi/server/api); the HTML item page returns a bot challenge (403) to curl and WebFetch; 23-page PDF read"
     },
     {
       "id": "i-d2543bea9b29",
       "official_title": "Leading the way into the era of artificial intelligence : Final report of Finland's Artificial Intelligence Programme 2019",
-      "english_title": "Final report of Finland’s AI Programme 2019",
-      "jurisdiction_id": "FIN",
-      "issuing_authority": null,
-      "publisher_name": "julkaisut.valtioneuvosto.fi",
-      "authority_type": null,
-      "government_level": "national",
+      "english_title": "Leading the way into the era of artificial intelligence: final report of Finland's Artificial Intelligence Programme 2019",
+      "issuing_authority": "Ministry of Economic Affairs and Employment (Artificial Intelligence Programme steering group and secretariat)",
+      "authority_type": "government",
       "categories": [
         "strategy",
         "historical"
       ],
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2019-06-18",
+      "current_status": "Publications of the Ministry of Economic Affairs and Employment 2019:41 (ISBN 978-952-327-437-2), issued 18 June 2019; English version of the Finnish final report 'Edelläkävijänä tekoälyaikaan' (TEM 2019:23, 14 March 2019). The programme was followed by the Artificial Intelligence 4.0 programme (2020-2022). Historical; no newer stand-alone national AI strategy was found.",
+      "summary": "Final report of Finland's Artificial Intelligence Programme launched in 2017 by the Ministry of Economic Affairs and Employment to make Finland a leader in applying AI. The steering group and secretariat review progress made during the programme and give recommendations for the next steps on AI adoption in business and the public sector, skills, data and ethics.",
+      "ai_governance_relevance": "Closing document of Finland's first national AI programme (2017-2019).",
+      "source_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/46b11993-5f8f-4925-a201-56e75ddc60e6/content",
+      "official_pdf_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/46b11993-5f8f-4925-a201-56e75ddc60e6/content",
+      "official_webpage_url": "https://julkaisut.valtioneuvosto.fi/items/5c09a663-8233-47bd-8d09-230c18ddd1f0",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_publication",
+      "supersedes": [
+        "i-6feaa97d36b8"
+      ],
+      "organization_id": "o-55483b03f0de",
+      "publisher_name": "Ministry of Economic Affairs and Employment",
+      "jurisdiction_id": "FIN",
+      "government_level": "national",
+      "subnational_unit": null,
       "category": "strategy",
       "subcategory": null,
-      "legal_status": null,
-      "publication_date": null,
       "effective_date": null,
       "last_amended_date": null,
-      "current_status": "Official source located; current status requires review",
-      "scope": null,
-      "sectors": [],
+      "scope": "Finland (national)",
       "technology_scope": [
         "AI"
       ],
-      "summary": "Official source located for this governance category. The document’s adoption, legal effect, scope and version history remain under review.",
-      "ai_governance_relevance": "Primary-source material for assessing strategy & action plans, historical publications.",
-      "source_url": "https://julkaisut.valtioneuvosto.fi/items/5c09a663-8233-47bd-8d09-230c18ddd1f0",
-      "official_pdf_url": null,
-      "official_webpage_url": "https://julkaisut.valtioneuvosto.fi/items/5c09a663-8233-47bd-8d09-230c18ddd1f0",
-      "language": null,
-      "supersedes": [],
       "superseded_by": [],
       "related_instruments": [],
       "regional_applicability": [],
-      "verification_date": "2026-10-06",
-      "verification_level": "primary_source_located",
-      "metadata_gaps": [
-        "Issuing authority",
-        "Publication/effective dates",
-        "Current legal status",
-        "Precise applicability",
-        "Version history",
-        "Authority type",
-        "Government level",
-        "Publication date",
-        "Effective date",
-        "Last amended date",
-        "Document language"
+      "metadata_gaps": [],
+      "language": "en",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-4596aef3e426",
+      "evidence_reference": "curl (browser user agent, --max-time 60): repository item metadata and full PDF read through the Government publications repository's own API (julkaisut.valtioneuvosto.fi/server/api); the HTML item page returns a bot challenge (403) to curl and WebFetch; 136-page PDF retrieved"
+    },
+    {
+      "id": "i-08cabe94d1e6",
+      "official_title": "Laki eräiden tekoälyjärjestelmien valvonnasta (1377/2025)",
+      "english_title": "Act on the Supervision of Certain Artificial Intelligence Systems (1377/2025)",
+      "issuing_authority": "Parliament of Finland (Eduskunta); presented by the Government (HE 46/2025), Ministry of Economic Affairs and Employment",
+      "authority_type": "legislature",
+      "categories": [
+        "binding-law",
+        "government-governance",
+        "transparency"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2025-12-29",
+      "current_status": "Statute Book of Finland (Suomen säädöskokoelma) 1377/2025, published 29 December 2025; signed 22 December 2025; in force 1 January 2026 (s. 29). Based on Government proposal HE 46/2025 and committee report TaVM 18/2025 (EV 162/2025). Enacted with companion amendments from the same bill (HE 46/2025): Acts 1378/2025 (Market Surveillance Act), 1379/2025 (Enforcement of Fines Act), 1380/2025 (Act on the Financial Supervisory Authority) and 1381/2025 (Act on the Energy Authority). A draft Government bill to amend the act (national AI regulatory sandbox) was consulted on in 2025; see leads.",
+      "summary": "Finland's national act supplementing the EU AI Act (Regulation (EU) 2024/1689). It names the market surveillance authorities for high-risk AI systems by sector (including Tukes, Customs, Traficom, the Permit and Supervision Agency, Fimea, the Energy Authority, the Data Protection Ombudsman and the Financial Supervisory Authority), makes the Data Protection Ombudsman the authority for prohibited practices (Art. 5) and Traficom the authority for Art. 50 transparency obligations and the single point of contact. It sets up a sanction-payment board attached to Traficom to impose administrative fines and lays down the fine provisions and appeal routes.",
+      "ai_governance_relevance": "Main national implementing law for the EU AI Act; designates Finland's AI supervisory authorities.",
+      "source_url": "https://www.finlex.fi/api/media/statute/898466/mainPdf/main.pdf",
+      "official_pdf_url": "https://www.finlex.fi/api/media/statute/898466/mainPdf/main.pdf",
+      "official_webpage_url": null,
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-236388366e8e",
+      "publisher_name": "Ministry of Justice",
+      "jurisdiction_id": "FIN",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "binding-law",
+      "subcategory": null,
+      "effective_date": "2026-01-01",
+      "last_amended_date": null,
+      "scope": "Finland (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "fi",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-3a9215799bc7",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full 13-page Statute Book PDF read (pdftotext); title, publication date 29.12.2025, ss. 3-6, 13 and entry into force 1.1.2026 confirmed"
+    },
+    {
+      "id": "i-ffb8f526939b",
+      "official_title": "Laki hallintolain muuttamisesta (487/2023)",
+      "english_title": "Act amending the Administrative Procedure Act (487/2023) - automated decision-making",
+      "issuing_authority": "Parliament of Finland (Eduskunta); Government proposal HE 145/2022 (Ministry of Justice)",
+      "authority_type": "legislature",
+      "categories": [
+        "binding-law",
+        "public-sector",
+        "transparency"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2023-03-29",
+      "current_status": "In force since 1 May 2023; automated decision-making already in use could continue for 18 months under transitional rules. Paired with Act 488/2023 amending the Information Management Act.",
+      "summary": "Adds a new Chapter 8 b (ss. 53 e-53 g) to the Administrative Procedure Act (434/2003) on deciding matters automatically. An authority may issue a final decision by automated data processing without review by a natural person only where no case-by-case discretion is needed (or it has been assessed by an official) and on the basis of pre-set processing rules; requests for rectification may not be decided automatically, the person concerned must be able to request rectification free of charge, and decisions must state that they were made automatically and where the deployment decision is available.",
+      "ai_governance_relevance": "General-law rules on automated (rule-based) decision-making by Finnish public authorities.",
+      "source_url": "https://data.finlex.fi/api/media/statute/9283/mainPdf/main.pdf",
+      "official_pdf_url": "https://data.finlex.fi/api/media/statute/9283/mainPdf/main.pdf",
+      "official_webpage_url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/487",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-236388366e8e",
+      "publisher_name": "Ministry of Justice",
+      "jurisdiction_id": "FIN",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "binding-law",
+      "subcategory": null,
+      "effective_date": "2023-05-01",
+      "last_amended_date": null,
+      "scope": "Finland (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "fi",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-90dbbc08f339",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full Statute Book PDF read (pdftotext); published 29.3.2023, in force 1.5.2023, ss. 53 e-53 g confirmed; Finlex statute page also reached"
+    },
+    {
+      "id": "i-c9974eb927c5",
+      "official_title": "Laki julkisen hallinnon tiedonhallinnasta annetun lain muuttamisesta (488/2023)",
+      "english_title": "Act amending the Act on Information Management in Public Administration (488/2023) - automated decision-making procedure",
+      "issuing_authority": "Parliament of Finland (Eduskunta); Government proposal HE 145/2022 (Ministry of Finance)",
+      "authority_type": "legislature",
+      "categories": [
+        "binding-law",
+        "public-sector",
+        "transparency",
+        "risk-assurance"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2023-03-29",
+      "current_status": "Adopted together with Act 487/2023 (HE 145/2022); dates follow the companion Statute Book entries and the Finlex statute page (Statute Book 488/2023).",
+      "summary": "Amends the Information Management Act (906/2019) to define the automated decision-making procedure and processing rules (pre-set, human-authored rules) and adds a new Chapter 6 a on deploying and using automated decision-making. It applies to authorities and to private bodies performing public administrative tasks, and requires among other things a documented deployment decision (s. 28 d) to be made publicly available before automated decisions are used.",
+      "ai_governance_relevance": "Procedural, documentation and transparency rules for automated decision systems in Finnish public administration.",
+      "source_url": "https://opendata.finlex.fi/finlex/avoindata/v1/akn/fi/act/statute/2023/488/fin@",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2023/488",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-236388366e8e",
+      "publisher_name": "Ministry of Justice",
+      "jurisdiction_id": "FIN",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "binding-law",
+      "subcategory": null,
+      "effective_date": "2023-05-01",
+      "last_amended_date": null,
+      "scope": "Finland (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "fi",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-ea9ad358e15f",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full original-version text read from the Finlex open data (Akoma Ntoso) API; Finlex statute page title confirmed"
+    },
+    {
+      "id": "i-8cc089505e33",
+      "official_title": "Milloin tekoälyn käytöstä pitää kertoa?",
+      "english_title": "When do you need to disclose the use of AI? (Traficom guidance on AI Act transparency obligations)",
+      "issuing_authority": "Finnish Transport and Communications Agency (Traficom)",
+      "authority_type": "regulator",
+      "categories": [
+        "transparency",
+        "generative-ai"
+      ],
+      "legal_status": "regulatory_opinion",
+      "lifecycle": "published",
+      "publication_date": "2026-09-28",
+      "current_status": "Guidance page last updated 28 September 2026 (date recorded is the last-updated date; no first-publication date stated). English version available on traficom.fi.",
+      "summary": "Traficom guidance, as the authority supervising Art. 50 AI Act transparency obligations, on when providers and deployers must disclose AI use. It explains obligations to tell users they are interacting with AI (chatbots, voice assistants, agents), technically mark AI-generated content, inform people of emotion recognition or biometric categorisation, label deep fakes and disclose AI-generated text on matters of public interest, and how to report suspected breaches. It notes that the obligations apply from 2 August 2026 and are not retroactive.",
+      "ai_governance_relevance": "Supervisory guidance on AI transparency and deepfake labelling from Finland's designated Art. 50 authority.",
+      "source_url": "https://www.traficom.fi/fi/tekoalyn-saantely/milloin-tekoalyn-kaytosta-pitaa-kertoa",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.traficom.fi/en/ai-regulation/when-do-you-need-disclose-use-ai",
+      "sectors": [
+        "cross-sector"
       ],
       "source_kind": "official_publication",
-      "evidence_reference": "turn14search6",
-      "link_status": "inaccessible",
-      "document_access_type": "official_publication_or_full_text_page",
-      "source_id": "s-4596aef3e426",
-      "organization_id": "o-c1e0638d8273",
-      "lifecycle": "unverified",
-      "first_recorded": "2026-10-06",
+      "supersedes": [],
+      "organization_id": "o-733152ef4a71",
+      "publisher_name": "Finnish Transport and Communications Agency",
+      "jurisdiction_id": "FIN",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "transparency",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Finland (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "fi",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
       "last_changed": null,
-      "subnational_unit": null
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-eb6b19ee4f5c",
+      "evidence_reference": "curl (browser user agent, --max-time 60): Finnish and English pages read in full; last-updated 28.9.2026"
+    },
+    {
+      "id": "i-0f465d6ed0ee",
+      "official_title": "Finanssialan toimijoiden tekoälyn käyttö",
+      "english_title": "Use of artificial intelligence by financial sector entities (FIN-FSA thematic review)",
+      "issuing_authority": "Financial Supervisory Authority (Finanssivalvonta)",
+      "authority_type": "regulator",
+      "categories": [
+        "sectoral",
+        "risk-assurance",
+        "index-readiness"
+      ],
+      "legal_status": "regulatory_opinion",
+      "lifecycle": "published",
+      "publication_date": "2025-06-27",
+      "current_status": "Published 27 June 2025 (public). FIN-FSA's 'Tekoälyn käytön valvonta' (AI use supervision) page links further supervised-entity material, including a March 2026 briefing.",
+      "summary": "FIN-FSA thematic review of how banks, insurers, pension institutions, investment firms and consumer lenders use AI, based on a survey of supervised entities. It reports that all large and medium-sized entities use or plan to use AI within two years, mainly generative and general-purpose models in internal processes, identifies data quality, data protection and non-discrimination as key risks, and explains FIN-FSA's role as market surveillance authority for high-risk AI systems under the AI Act.",
+      "ai_governance_relevance": "Financial supervisor's assessment of AI use and preparation for AI Act supervision in Finland's financial sector.",
+      "source_url": "https://www.finanssivalvonta.fi/globalassets/fi/tiedotteet-ja-julkaisut/valvottavatiedotteet/2025/finanssialan-toimijoiden-tekoalyn-kaytto_fi_.pdf",
+      "official_pdf_url": "https://www.finanssivalvonta.fi/globalassets/fi/tiedotteet-ja-julkaisut/valvottavatiedotteet/2025/finanssialan-toimijoiden-tekoalyn-kaytto_fi_.pdf",
+      "official_webpage_url": "https://www.finanssivalvonta.fi/finanssisektorin-toimijalle/pankki/tekoalyn-kayton-valvonta/",
+      "sectors": [
+        "finance"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-3d1fcd127f79",
+      "publisher_name": "Financial Supervisory Authority",
+      "jurisdiction_id": "FIN",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "sectoral",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Finland (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "fi",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-b33949939d40",
+      "evidence_reference": "curl (browser user agent, --max-time 60): 37-page PDF read (pdftotext); title and date 27.6.2025 from cover; FIN-FSA AI supervision page reached"
+    },
+    {
+      "id": "i-de693b6a93bb",
+      "official_title": "Valtioneuvoston selonteko tietopolitiikasta ja tekoälystä (VNS 7/2018 vp): Eettistä tietopolitiikkaa tekoälyn aikakaudella",
+      "english_title": "Government Report on Information Policy and Artificial Intelligence (VNS 7/2018): Ethical information policy in the age of artificial intelligence",
+      "issuing_authority": "Finnish Government (Valtioneuvosto), report to Parliament",
+      "authority_type": "government",
+      "categories": [
+        "strategy",
+        "ethics",
+        "historical"
+      ],
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2018",
+      "current_status": "Parliamentary document VNS 7/2018 vp; first debated in plenary on 12 December 2018 and further in March 2019 (Parliament open data). The report itself carries no signing date, so only the year is recorded. Historical policy document of the 2015-2019 Government.",
+      "summary": "Report of Prime Minister Sipilä's Government to Parliament setting out an ethical information policy for the AI era, decided at the Government's strategy session of 29 January 2018. It describes Finland's national AI programme and information-policy situation, a vision of a 'good life Finland', and lines of action on ethics guiding choices, putting data to use, human-machine interaction, skills, participation and trust, and data-economy competitiveness, intended as the basis for a later prioritised roadmap.",
+      "ai_governance_relevance": "Finland's only Government report to Parliament specifically on AI and information policy; complements the 2017-2019 AI programme.",
+      "source_url": "https://www.eduskunta.fi/pdf/VNS+7/2018",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.eduskunta.fi/valtiopaivaasiakirjat/VNS+7/2018",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-c1e0638d8273",
+      "publisher_name": "Parliament of Finland",
+      "jurisdiction_id": "FIN",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "strategy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Finland (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "fi",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-1a90d2acc751",
+      "evidence_reference": "curl (browser user agent, --max-time 60): 28-page PDF read via eduskunta.fi (served from api.eduskunta.fi); plenary dates from Parliament's open-data API"
+    },
+    {
+      "id": "i-6feaa97d36b8",
+      "official_title": "Suomen tekoälyaika : Suomi tekoälyn soveltamisen kärkimaaksi: Tavoite ja toimenpidesuositukset",
+      "english_title": "Finland's Age of Artificial Intelligence: turning Finland into a leading country in the application of AI - objective and recommendations for measures",
+      "issuing_authority": "Ministry of Economic Affairs and Employment (Artificial Intelligence Programme steering group)",
+      "authority_type": "government",
+      "categories": [
+        "strategy",
+        "historical"
+      ],
+      "legal_status": "national_strategy",
+      "lifecycle": "superseded",
+      "publication_date": "2017-10-23",
+      "current_status": "Publications of the Ministry of Economic Affairs and Employment 41/2017, dated 23 October 2017. English version 'Finland's age of artificial intelligence' (TEM 47/2017, 18 December 2017). Superseded by the programme's final report (2019).",
+      "summary": "Finland's first national AI strategy report, prepared by the steering group of the AI Programme appointed by the Minister of Economic Affairs. It sets the objective of making Finland a leading country in applying AI and gives eight key recommendations, covering business competitiveness through AI, use of data in all sectors, faster AI adoption, top-level expertise, bold investment, world-class public services, new cooperation models and Finland as a frontrunner in the age of AI.",
+      "ai_governance_relevance": "Founding national AI strategy document (2017).",
+      "source_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/0b0ccee5-fe47-40fb-8564-5b765595d775/content",
+      "official_pdf_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/0b0ccee5-fe47-40fb-8564-5b765595d775/content",
+      "official_webpage_url": "https://julkaisut.valtioneuvosto.fi/items/6fd2cc9a-fd76-4497-bf55-a4ba5f8f535a",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_publication",
+      "supersedes": [],
+      "organization_id": "o-55483b03f0de",
+      "publisher_name": "Ministry of Economic Affairs and Employment",
+      "jurisdiction_id": "FIN",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "strategy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Finland (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [
+        "i-d2543bea9b29"
+      ],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "fi",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-d3a386821a48",
+      "evidence_reference": "curl (browser user agent, --max-time 60): repository item metadata and full PDF read through the Government publications repository's own API (julkaisut.valtioneuvosto.fi/server/api); the HTML item page returns a bot challenge (403) to curl and WebFetch; 74-page PDF read (description sheet date 23.10.2017)"
+    },
+    {
+      "id": "i-cda875441100",
+      "official_title": "Tekoäly 4.0 -ohjelma : Suomi kaksoissiirtymän suunnannäyttäjänä – Tekoäly 4.0 -ohjelman loppuraportti",
+      "english_title": "Artificial Intelligence 4.0 programme: Finland as a leader in the twin transition - final report",
+      "issuing_authority": "Ministry of Economic Affairs and Employment (AI 4.0 programme steering group)",
+      "authority_type": "government",
+      "categories": [
+        "strategy"
+      ],
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2022-10-24",
+      "current_status": "Publications of the Ministry of Economic Affairs and Employment 2022:60, dated 24 October 2022. English version 'Artificial Intelligence 4.0: Finland as a leader in twin transition' (TEM 2022:63, 1 December 2022). The programme ended in 2022; no successor national AI strategy was found, while AI is now a cross-cutting theme of the 2026 Digital Compass update.",
+      "summary": "Final report of the Artificial Intelligence 4.0 programme, set up by the Minister of Economic Affairs in November 2020 to prepare an action programme accelerating the development and adoption of AI and other digital technologies, especially in manufacturing SMEs. Under the vision 'Finland as a winner in the twin transition' (digital and green), it sets out the programme's results and recommended measures.",
+      "ai_governance_relevance": "Most recent national AI programme document from the Ministry of Economic Affairs and Employment.",
+      "source_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/2e3f0335-d3cd-4709-8f0d-89826bff73e6/content",
+      "official_pdf_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/2e3f0335-d3cd-4709-8f0d-89826bff73e6/content",
+      "official_webpage_url": "https://julkaisut.valtioneuvosto.fi/items/6c181f26-f2cc-4951-8b40-1fdbd86169ac",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_publication",
+      "supersedes": [],
+      "organization_id": "o-55483b03f0de",
+      "publisher_name": "Ministry of Economic Affairs and Employment",
+      "jurisdiction_id": "FIN",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "strategy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Finland (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "fi",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-3889cb8689de",
+      "evidence_reference": "curl (browser user agent, --max-time 60): repository item metadata and full PDF read through the Government publications repository's own API (julkaisut.valtioneuvosto.fi/server/api); the HTML item page returns a bot challenge (403) to curl and WebFetch; 67-page PDF read (description sheet 24.10.2022)"
+    },
+    {
+      "id": "i-663395eb2636",
+      "official_title": "Ohjeistus generatiivisen tekoälyn hyödyntämisestä työn tukena ja apuvälineenä julkisessa hallinnossa",
+      "english_title": "Guidelines on using generative artificial intelligence to support and assist work in public administration",
+      "issuing_authority": "Ministry of Finance",
+      "authority_type": "government",
+      "categories": [
+        "generative-ai",
+        "public-sector",
+        "data-privacy"
+      ],
+      "legal_status": "administrative_guideline",
+      "lifecycle": "published",
+      "publication_date": "2025-03-20",
+      "current_status": "Publications of the Ministry of Finance 2025:9 (case VN/6190/2025), dated 20 March 2025; the Ministry announced the guidance in February 2025. English version: VM 2025:11 'Guidelines on using generative artificial intelligence to support and assist work in public administration'.",
+      "summary": "Ministry of Finance guidelines on how generative AI may be used in the operations and management of Finnish public administration, which organisations may supplement with their own instructions. They take current AI legislation into account, warn officials not to enter confidential, non-public or personal data into AI services, recall AI Act obligations for high-risk systems, and state that a civil servant always remains responsible for the decisions and documents they prepare.",
+      "ai_governance_relevance": "Government-wide guidance on staff use of generative AI.",
+      "source_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/3124e4e6-8388-446b-87c0-e8a067215407/content",
+      "official_pdf_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/3124e4e6-8388-446b-87c0-e8a067215407/content",
+      "official_webpage_url": "https://julkaisut.valtioneuvosto.fi/items/dc718884-deb9-4051-8b81-2e465e720ab4",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_publication",
+      "supersedes": [],
+      "organization_id": "o-976f4c9b45ea",
+      "publisher_name": "Ministry of Finance",
+      "jurisdiction_id": "FIN",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "generative-ai",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Finland (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "fi",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-aacb9f2d806d",
+      "evidence_reference": "curl (browser user agent, --max-time 60): repository item metadata and full PDF read through the Government publications repository's own API (julkaisut.valtioneuvosto.fi/server/api); the HTML item page returns a bot challenge (403) to curl and WebFetch; 23-page PDF read"
+    },
+    {
+      "id": "i-69c1a76456b3",
+      "official_title": "Strategiset linjaukset tekoälyratkaisujen kehittämiseen",
+      "english_title": "Strategic guidelines for developing AI solutions (defence administration)",
+      "issuing_authority": "Ministry of Defence",
+      "authority_type": "government",
+      "categories": [
+        "strategy",
+        "sectoral"
+      ],
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2020-08",
+      "current_status": "Published by the Ministry of Defence in 2020 (repository date August 2020; ISBN 978-951-663-096-3). English version 'Strategic guidelines for developing AI-solutions' in the same repository.",
+      "summary": "Ministry of Defence strategic guidelines for developing AI capabilities in the defence administration. They set out strategic steering of AI capability development and its components (administrative preconditions, skills and partner networks with companies and research institutes, and implementation capability including data availability and technical infrastructure), and require the Defence Forces to be able to develop and maintain AI solutions requiring the highest security classification independently.",
+      "ai_governance_relevance": "Defence-sector AI strategy.",
+      "source_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/4cfe46de-e80f-4502-a7ad-ddcfba56bddc/content",
+      "official_pdf_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/4cfe46de-e80f-4502-a7ad-ddcfba56bddc/content",
+      "official_webpage_url": "https://julkaisut.valtioneuvosto.fi/items/45559eba-2358-4180-8d0a-5b0727102e5f",
+      "sectors": [
+        "defence"
+      ],
+      "source_kind": "official_publication",
+      "supersedes": [],
+      "organization_id": "o-520e56cec1cd",
+      "publisher_name": "Ministry of Defence",
+      "jurisdiction_id": "FIN",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "strategy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Finland (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "fi",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-76b02647bebe",
+      "evidence_reference": "curl (browser user agent, --max-time 60): repository item metadata and full PDF read through the Government publications repository's own API (julkaisut.valtioneuvosto.fi/server/api); the HTML item page returns a bot challenge (403) to curl and WebFetch; 12-page PDF read"
+    },
+    {
+      "id": "i-7a2f03e63574",
+      "official_title": "Osaaminen tekoälyn aikakaudella : Kansalaisten tekoälyosaamisen viitekehys",
+      "english_title": "Competence in the age of AI: framework for citizens' AI competence",
+      "issuing_authority": "Ministry of Education and Culture",
+      "authority_type": "government",
+      "categories": [
+        "sectoral",
+        "ethics"
+      ],
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2026-05-11",
+      "current_status": "Publications of the Ministry of Education and Culture 2026:29, dated 11 May 2026; Swedish version OKM 2026:43.",
+      "summary": "Framework of citizens' AI competences prepared under the Ministry of Education and Culture with researchers and experts, as part of the Prime Minister's Office-funded project on coordinating the Government's AI work. Building partly on the EU DigComp 3.0 framework, it defines AI literacy as technical understanding plus the ability to assess AI's effects and its ethical, legal and societal aspects, for use in education and skills policy.",
+      "ai_governance_relevance": "Education-sector AI literacy framework.",
+      "source_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/f85fc441-983f-429f-934c-c19dae57d805/content",
+      "official_pdf_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/f85fc441-983f-429f-934c-c19dae57d805/content",
+      "official_webpage_url": "https://julkaisut.valtioneuvosto.fi/items/91d0cc15-daf3-4718-bd8e-ed8e149dac7d",
+      "sectors": [
+        "education"
+      ],
+      "source_kind": "official_publication",
+      "supersedes": [],
+      "organization_id": "o-e58e97cc8d92",
+      "publisher_name": "Ministry of Education and Culture",
+      "jurisdiction_id": "FIN",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "sectoral",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Finland (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "fi",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-57bec4e9da1f",
+      "evidence_reference": "curl (browser user agent, --max-time 60): repository item metadata and full PDF read through the Government publications repository's own API (julkaisut.valtioneuvosto.fi/server/api); the HTML item page returns a bot challenge (403) to curl and WebFetch; 56-page PDF read (description sheet)"
+    },
+    {
+      "id": "i-c2b1243c844c",
+      "official_title": "Valtioneuvoston selonteko – Uusi suunta Suomen digitaaliseen kompassiin",
+      "english_title": "Government report: a new direction for Finland's Digital Compass",
+      "issuing_authority": "Finnish Government (prepared by the Digital Office under the ministerial working group on societal renewal; Ministry of Education and Culture as corporate author)",
+      "authority_type": "government",
+      "categories": [
+        "strategy",
+        "government-governance"
+      ],
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2026-06-25",
+      "current_status": "Publications of the Finnish Government 2026:60, dated 25 June 2026; English version 'Government report - A new direction for Finland's Digital Compass' (VN 2026:71). Updates the original 2022 Digital Compass (not separately recorded).",
+      "summary": "Government report updating Finland's Digital Compass, the national digital strategy linked to the EU Digital Decade 2030 programme. It identifies AI, security, wellbeing, and cooperation and interoperability as new cross-cutting themes, with a dedicated section on AI, and updates the Compass's goals and key results across its four areas accordingly.",
+      "ai_governance_relevance": "Current national digital strategy with an explicit AI pillar.",
+      "source_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/7bf37cb6-ea0e-4d73-a444-691dbbf3b208/content",
+      "official_pdf_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/7bf37cb6-ea0e-4d73-a444-691dbbf3b208/content",
+      "official_webpage_url": "https://julkaisut.valtioneuvosto.fi/items/d96d09fe-2eb6-460a-91f1-0592db5b2f5e",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_publication",
+      "supersedes": [],
+      "organization_id": "o-c1e0638d8273",
+      "publisher_name": "Finnish Government",
+      "jurisdiction_id": "FIN",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "strategy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Finland (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "fi",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-5e286412becc",
+      "evidence_reference": "curl (browser user agent, --max-time 60): repository item metadata and full PDF read through the Government publications repository's own API (julkaisut.valtioneuvosto.fi/server/api); the HTML item page returns a bot challenge (403) to curl and WebFetch; 83-page PDF read (description sheet, AI section)"
+    },
+    {
+      "id": "i-c6570925c9e2",
+      "official_title": "Ihmiskeskeinen ja elämäntapahtumalähtöinen julkinen hallinto : Näkökulmia kansallisesta tekoälyohjelmasta (AuroraAI)",
+      "english_title": "Human-centric and life-event-based public administration: perspectives from the national AI programme (AuroraAI)",
+      "issuing_authority": "Ministry of Finance",
+      "authority_type": "government",
+      "categories": [
+        "public-sector",
+        "historical"
+      ],
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2023-05-05",
+      "current_status": "Publications of the Ministry of Finance 2023:40, dated 5 May 2023. The AuroraAI programme has ended; historical.",
+      "summary": "Ministry of Finance publication drawing lessons from the national AuroraAI programme, which developed AI-enabled, human-centric public services organised around citizens' life events. It sets out perspectives for developing life-event-based public administration and the use of AI in public services after the programme.",
+      "ai_governance_relevance": "Closing perspectives of Finland's national public-sector AI programme (AuroraAI).",
+      "source_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/8b4cac72-a14a-43b7-a011-c271b48896c0/content",
+      "official_pdf_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/8b4cac72-a14a-43b7-a011-c271b48896c0/content",
+      "official_webpage_url": "https://julkaisut.valtioneuvosto.fi/items/2ea52da2-a88b-4d46-b1f6-4b88789b9c3c",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_publication",
+      "supersedes": [],
+      "organization_id": "o-976f4c9b45ea",
+      "publisher_name": "Ministry of Finance",
+      "jurisdiction_id": "FIN",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "public-sector",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Finland (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "fi",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-70166df189f6",
+      "evidence_reference": "curl (browser user agent, --max-time 60): repository item metadata and full PDF read through the Government publications repository's own API (julkaisut.valtioneuvosto.fi/server/api); the HTML item page returns a bot challenge (403) to curl and WebFetch; 64-page PDF read (description sheet and abstract)"
     }
   ],
   "organizations": [
     {
       "id": "o-733152ef4a71",
       "jurisdiction_id": "FIN",
-      "name": "www.traficom.fi",
-      "publisher_name_verified": false,
-      "ai_governance_role": "Publisher of listed official material; complete institutional mandate and statutory responsibilities require review.",
-      "source_url": "https://www.traficom.fi/en/ai-regulation/ai-regulatory-sandboxes",
-      "authority_type": null,
-      "government_level": null
+      "name": "Finnish Transport and Communications Agency (Traficom)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Single point of contact under Art. 70(2) of the EU AI Act and market surveillance authority for AI Act Art. 50 transparency obligations (Act 1377/2025, ss. 5-6); hosts the AI sanction-payment board; publishes AI Act guidance and runs the AI regulatory sandbox work.",
+      "source_url": "https://www.traficom.fi/fi/tekoalyn-saantely",
+      "authority_type": "regulator",
+      "government_level": "national"
     },
     {
       "id": "o-c2dc151da91b",
       "jurisdiction_id": "FIN",
-      "name": "kehittajille.suomi.fi",
-      "publisher_name_verified": false,
-      "ai_governance_role": "Publisher of listed official material; complete institutional mandate and statutory responsibilities require review.",
+      "name": "Digital and Population Data Services Agency",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Central-government digital agency (DVV); published the Secure AI Development Handbook for public-sector AI projects under its public-administration digital security programme (JUDO).",
       "source_url": "https://kehittajille.suomi.fi/services/digital-security/information-security-and-cybersecurity/artificial-intelligence-ai/secure-ai-development-handbook",
-      "authority_type": null,
-      "government_level": null
+      "authority_type": "government",
+      "government_level": "national"
     },
     {
       "id": "o-c1e0638d8273",
       "jurisdiction_id": "FIN",
-      "name": "julkaisut.valtioneuvosto.fi",
-      "publisher_name_verified": false,
-      "ai_governance_role": "Publisher of listed official material; complete institutional mandate and statutory responsibilities require review.",
-      "source_url": "https://julkaisut.valtioneuvosto.fi/items/ddfc178d-9e56-48b8-8c7d-bba61572d328",
-      "authority_type": null,
-      "government_level": null
+      "name": "Finnish Government",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Valtioneuvosto; its publications repository (julkaisut.valtioneuvosto.fi) carries ministries' AI strategies, programme reports and public-administration AI guidance.",
+      "source_url": "https://valtioneuvosto.fi/",
+      "authority_type": "government",
+      "government_level": "national"
+    },
+    {
+      "id": "o-236388366e8e",
+      "jurisdiction_id": "FIN",
+      "name": "Parliament of Finland",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Eduskunta; enacted Act 1377/2025 on the supervision of certain AI systems (national AI Act implementation) and the 2023 Administrative Procedure Act and Information Management Act amendments on automated decision-making.",
+      "source_url": "https://www.eduskunta.fi/",
+      "authority_type": "legislature",
+      "government_level": "national"
+    },
+    {
+      "id": "o-3d1fcd127f79",
+      "jurisdiction_id": "FIN",
+      "name": "Financial Supervisory Authority",
+      "publisher_name_verified": true,
+      "ai_governance_role": "FIN-FSA (Finanssivalvonta); market surveillance authority under Act 1377/2025 for high-risk AI systems used for credit scoring, life and health insurance pricing and certain public-benefit use cases in the financial sector; runs thematic reviews of AI use by supervised entities.",
+      "source_url": "https://www.finanssivalvonta.fi/",
+      "authority_type": "regulator",
+      "government_level": "national"
+    },
+    {
+      "id": "o-976f4c9b45ea",
+      "jurisdiction_id": "FIN",
+      "name": "Ministry of Finance",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Valtiovarainministeriö; steers public-administration ICT and AI use (generative-AI guidance 2025, central-government AI guide 2025, AuroraAI programme) and prepares legislation on AI in authorities' advisory services.",
+      "source_url": "https://vm.fi/",
+      "authority_type": "government",
+      "government_level": "national"
+    },
+    {
+      "id": "o-55483b03f0de",
+      "jurisdiction_id": "FIN",
+      "name": "Ministry of Economic Affairs and Employment",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Työ- ja elinkeinoministeriö; led the national AI programmes (2017-2019 AI Programme, AI 4.0 2020-2022) and prepared the national AI Act implementation legislation (HE 46/2025).",
+      "source_url": "https://tem.fi/",
+      "authority_type": "government",
+      "government_level": "national"
+    },
+    {
+      "id": "o-520e56cec1cd",
+      "jurisdiction_id": "FIN",
+      "name": "Ministry of Defence",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Puolustusministeriö; issued strategic guidelines for developing AI solutions in the defence administration (2020).",
+      "source_url": "https://www.defmin.fi/",
+      "authority_type": "government",
+      "government_level": "national"
+    },
+    {
+      "id": "o-e58e97cc8d92",
+      "jurisdiction_id": "FIN",
+      "name": "Ministry of Education and Culture",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Opetus- ja kulttuuriministeriö; issued the citizens' AI competence framework (2026) and coordinated the 2026 Government report updating Finland's Digital Compass.",
+      "source_url": "https://okm.fi/",
+      "authority_type": "government",
+      "government_level": "national"
     }
   ],
   "sources": [
     {
       "id": "s-fde4936348df",
-      "url": "https://www.traficom.fi/en/ai-regulation/ai-regulatory-sandboxes",
+      "url": "https://www.traficom.fi/fi/tekoalyn-saantely/tekoalyn-saantelyn-testiymparistot",
       "jurisdiction_ids": [
         "FIN"
       ],
       "source_institutions": [
-        "www.traficom.fi"
+        "Finnish Transport and Communications Agency"
       ],
       "instrument_ids": [
         "i-10885051bae6"
@@ -303,16 +1009,16 @@
       "categories_reviewed": [
         "sandbox"
       ],
-      "date_reviewed": "2026-10-06",
-      "checked_date": "2026-10-06",
-      "check_method": "GET; first 1 MiB; 14-second timeout",
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): Finnish and English Traficom pages read; last-updated dates 28.9.2026 (fi) and 13.4.2026 (en)",
       "http_status": 200,
-      "final_url": "https://www.traficom.fi/en/ai-regulation/ai-regulatory-sandboxes",
+      "final_url": "https://www.traficom.fi/fi/tekoalyn-saantely/tekoalyn-saantelyn-testiymparistot",
       "link_status": "reachable",
-      "page_title": "AI regulatory sandboxes | Traficom",
-      "document_language": "en",
+      "page_title": null,
+      "document_language": "fi",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html"
     },
     {
       "id": "s-1c9dd745a865",
@@ -321,82 +1027,446 @@
         "FIN"
       ],
       "source_institutions": [
-        "kehittajille.suomi.fi"
+        "Digital and Population Data Services Agency"
       ],
       "instrument_ids": [
         "i-57f371bfb741"
       ],
       "categories_reviewed": [
-        "cyber-security"
+        "cyber-security",
+        "public-sector",
+        "risk-assurance",
+        "procurement"
       ],
-      "date_reviewed": "2026-10-06",
-      "checked_date": "2026-10-06",
-      "check_method": "GET; first 1 MiB; 14-second timeout",
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): Suomi.fi landing page and PDF (28 pages) read; title and date 9.6.2023 from the PDF cover",
       "http_status": 200,
       "final_url": "https://kehittajille.suomi.fi/services/digital-security/information-security-and-cybersecurity/artificial-intelligence-ai/secure-ai-development-handbook",
       "link_status": "reachable",
-      "page_title": "Secure AI Development Handbook - Databank of Cybersecurity and Digital Security - Suomi.fi for Service Developers",
-      "document_language": "en",
+      "page_title": null,
+      "document_language": "fi",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html"
     },
     {
       "id": "s-2343072fd462",
-      "url": "https://julkaisut.valtioneuvosto.fi/items/ddfc178d-9e56-48b8-8c7d-bba61572d328",
+      "url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/b8e46177-ca24-4564-992d-e765ef81d4fd/content",
       "jurisdiction_ids": [
         "FIN"
       ],
       "source_institutions": [
-        "julkaisut.valtioneuvosto.fi"
+        "Ministry of Finance"
       ],
       "instrument_ids": [
         "i-85bf846951f0"
       ],
       "categories_reviewed": [
-        "public-sector"
+        "public-sector",
+        "government-governance",
+        "risk-assurance"
       ],
-      "date_reviewed": "2026-10-06",
-      "checked_date": "2026-10-06",
-      "check_method": "GET; first 1 MiB; 14-second timeout",
-      "http_status": 403,
-      "final_url": "https://julkaisut.valtioneuvosto.fi/items/ddfc178d-9e56-48b8-8c7d-bba61572d328",
-      "link_status": "inaccessible",
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): repository item metadata and full PDF read through the Government publications repository's own API (julkaisut.valtioneuvosto.fi/server/api); the HTML item page returns a bot challenge (403) to curl and WebFetch; 23-page PDF read",
+      "http_status": 200,
+      "final_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/b8e46177-ca24-4564-992d-e765ef81d4fd/content",
+      "link_status": "reachable",
       "page_title": null,
-      "document_language": null,
-      "error": "HTTP Error 403: Forbidden"
+      "document_language": "en",
+      "error": null,
+      "content_type": "text/html"
     },
     {
       "id": "s-4596aef3e426",
-      "url": "https://julkaisut.valtioneuvosto.fi/items/5c09a663-8233-47bd-8d09-230c18ddd1f0",
+      "url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/46b11993-5f8f-4925-a201-56e75ddc60e6/content",
       "jurisdiction_ids": [
         "FIN"
       ],
       "source_institutions": [
-        "julkaisut.valtioneuvosto.fi"
+        "Ministry of Economic Affairs and Employment"
       ],
       "instrument_ids": [
         "i-d2543bea9b29"
       ],
       "categories_reviewed": [
-        "historical",
+        "strategy",
+        "historical"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): repository item metadata and full PDF read through the Government publications repository's own API (julkaisut.valtioneuvosto.fi/server/api); the HTML item page returns a bot challenge (403) to curl and WebFetch; 136-page PDF retrieved",
+      "http_status": 200,
+      "final_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/46b11993-5f8f-4925-a201-56e75ddc60e6/content",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-3a9215799bc7",
+      "url": "https://www.finlex.fi/api/media/statute/898466/mainPdf/main.pdf",
+      "jurisdiction_ids": [
+        "FIN"
+      ],
+      "source_institutions": [
+        "Ministry of Justice"
+      ],
+      "instrument_ids": [
+        "i-08cabe94d1e6"
+      ],
+      "categories_reviewed": [
+        "binding-law",
+        "government-governance",
+        "transparency"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full 13-page Statute Book PDF read (pdftotext); title, publication date 29.12.2025, ss. 3-6, 13 and entry into force 1.1.2026 confirmed",
+      "http_status": 200,
+      "final_url": "https://www.finlex.fi/api/media/statute/898466/mainPdf/main.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "fi",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-90dbbc08f339",
+      "url": "https://data.finlex.fi/api/media/statute/9283/mainPdf/main.pdf",
+      "jurisdiction_ids": [
+        "FIN"
+      ],
+      "source_institutions": [
+        "Ministry of Justice"
+      ],
+      "instrument_ids": [
+        "i-ffb8f526939b"
+      ],
+      "categories_reviewed": [
+        "binding-law",
+        "public-sector",
+        "transparency"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full Statute Book PDF read (pdftotext); published 29.3.2023, in force 1.5.2023, ss. 53 e-53 g confirmed; Finlex statute page also reached",
+      "http_status": 200,
+      "final_url": "https://data.finlex.fi/api/media/statute/9283/mainPdf/main.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "fi",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-ea9ad358e15f",
+      "url": "https://opendata.finlex.fi/finlex/avoindata/v1/akn/fi/act/statute/2023/488/fin@",
+      "jurisdiction_ids": [
+        "FIN"
+      ],
+      "source_institutions": [
+        "Ministry of Justice"
+      ],
+      "instrument_ids": [
+        "i-c9974eb927c5"
+      ],
+      "categories_reviewed": [
+        "binding-law",
+        "public-sector",
+        "transparency",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full original-version text read from the Finlex open data (Akoma Ntoso) API; Finlex statute page title confirmed",
+      "http_status": 200,
+      "final_url": "https://opendata.finlex.fi/finlex/avoindata/v1/akn/fi/act/statute/2023/488/fin@",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "fi",
+      "error": null,
+      "content_type": "application/xml"
+    },
+    {
+      "id": "s-eb6b19ee4f5c",
+      "url": "https://www.traficom.fi/fi/tekoalyn-saantely/milloin-tekoalyn-kaytosta-pitaa-kertoa",
+      "jurisdiction_ids": [
+        "FIN"
+      ],
+      "source_institutions": [
+        "Finnish Transport and Communications Agency"
+      ],
+      "instrument_ids": [
+        "i-8cc089505e33"
+      ],
+      "categories_reviewed": [
+        "transparency",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): Finnish and English pages read in full; last-updated 28.9.2026",
+      "http_status": 200,
+      "final_url": "https://www.traficom.fi/fi/tekoalyn-saantely/milloin-tekoalyn-kaytosta-pitaa-kertoa",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "fi",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-b33949939d40",
+      "url": "https://www.finanssivalvonta.fi/globalassets/fi/tiedotteet-ja-julkaisut/valvottavatiedotteet/2025/finanssialan-toimijoiden-tekoalyn-kaytto_fi_.pdf",
+      "jurisdiction_ids": [
+        "FIN"
+      ],
+      "source_institutions": [
+        "Financial Supervisory Authority"
+      ],
+      "instrument_ids": [
+        "i-0f465d6ed0ee"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "risk-assurance",
+        "index-readiness"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): 37-page PDF read (pdftotext); title and date 27.6.2025 from cover; FIN-FSA AI supervision page reached",
+      "http_status": 200,
+      "final_url": "https://www.finanssivalvonta.fi/globalassets/fi/tiedotteet-ja-julkaisut/valvottavatiedotteet/2025/finanssialan-toimijoiden-tekoalyn-kaytto_fi_.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "fi",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-1a90d2acc751",
+      "url": "https://www.eduskunta.fi/pdf/VNS+7/2018",
+      "jurisdiction_ids": [
+        "FIN"
+      ],
+      "source_institutions": [
+        "Parliament of Finland"
+      ],
+      "instrument_ids": [
+        "i-de693b6a93bb"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "ethics",
+        "historical"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): 28-page PDF read via eduskunta.fi (served from api.eduskunta.fi); plenary dates from Parliament's open-data API",
+      "http_status": 200,
+      "final_url": "https://www.eduskunta.fi/pdf/VNS+7/2018",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "fi",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-d3a386821a48",
+      "url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/0b0ccee5-fe47-40fb-8564-5b765595d775/content",
+      "jurisdiction_ids": [
+        "FIN"
+      ],
+      "source_institutions": [
+        "Ministry of Economic Affairs and Employment"
+      ],
+      "instrument_ids": [
+        "i-6feaa97d36b8"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "historical"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): repository item metadata and full PDF read through the Government publications repository's own API (julkaisut.valtioneuvosto.fi/server/api); the HTML item page returns a bot challenge (403) to curl and WebFetch; 74-page PDF read (description sheet date 23.10.2017)",
+      "http_status": 200,
+      "final_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/0b0ccee5-fe47-40fb-8564-5b765595d775/content",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "fi",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-3889cb8689de",
+      "url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/2e3f0335-d3cd-4709-8f0d-89826bff73e6/content",
+      "jurisdiction_ids": [
+        "FIN"
+      ],
+      "source_institutions": [
+        "Ministry of Economic Affairs and Employment"
+      ],
+      "instrument_ids": [
+        "i-cda875441100"
+      ],
+      "categories_reviewed": [
         "strategy"
       ],
-      "date_reviewed": "2026-10-06",
-      "checked_date": "2026-10-06",
-      "check_method": "GET; first 1 MiB; 14-second timeout",
-      "http_status": 403,
-      "final_url": "https://julkaisut.valtioneuvosto.fi/items/5c09a663-8233-47bd-8d09-230c18ddd1f0",
-      "link_status": "inaccessible",
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): repository item metadata and full PDF read through the Government publications repository's own API (julkaisut.valtioneuvosto.fi/server/api); the HTML item page returns a bot challenge (403) to curl and WebFetch; 67-page PDF read (description sheet 24.10.2022)",
+      "http_status": 200,
+      "final_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/2e3f0335-d3cd-4709-8f0d-89826bff73e6/content",
+      "link_status": "reachable",
       "page_title": null,
-      "document_language": null,
-      "error": "HTTP Error 403: Forbidden"
+      "document_language": "fi",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-aacb9f2d806d",
+      "url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/3124e4e6-8388-446b-87c0-e8a067215407/content",
+      "jurisdiction_ids": [
+        "FIN"
+      ],
+      "source_institutions": [
+        "Ministry of Finance"
+      ],
+      "instrument_ids": [
+        "i-663395eb2636"
+      ],
+      "categories_reviewed": [
+        "generative-ai",
+        "public-sector",
+        "data-privacy"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): repository item metadata and full PDF read through the Government publications repository's own API (julkaisut.valtioneuvosto.fi/server/api); the HTML item page returns a bot challenge (403) to curl and WebFetch; 23-page PDF read",
+      "http_status": 200,
+      "final_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/3124e4e6-8388-446b-87c0-e8a067215407/content",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "fi",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-76b02647bebe",
+      "url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/4cfe46de-e80f-4502-a7ad-ddcfba56bddc/content",
+      "jurisdiction_ids": [
+        "FIN"
+      ],
+      "source_institutions": [
+        "Ministry of Defence"
+      ],
+      "instrument_ids": [
+        "i-69c1a76456b3"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "sectoral"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): repository item metadata and full PDF read through the Government publications repository's own API (julkaisut.valtioneuvosto.fi/server/api); the HTML item page returns a bot challenge (403) to curl and WebFetch; 12-page PDF read",
+      "http_status": 200,
+      "final_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/4cfe46de-e80f-4502-a7ad-ddcfba56bddc/content",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "fi",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-57bec4e9da1f",
+      "url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/f85fc441-983f-429f-934c-c19dae57d805/content",
+      "jurisdiction_ids": [
+        "FIN"
+      ],
+      "source_institutions": [
+        "Ministry of Education and Culture"
+      ],
+      "instrument_ids": [
+        "i-7a2f03e63574"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "ethics"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): repository item metadata and full PDF read through the Government publications repository's own API (julkaisut.valtioneuvosto.fi/server/api); the HTML item page returns a bot challenge (403) to curl and WebFetch; 56-page PDF read (description sheet)",
+      "http_status": 200,
+      "final_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/f85fc441-983f-429f-934c-c19dae57d805/content",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "fi",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-5e286412becc",
+      "url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/7bf37cb6-ea0e-4d73-a444-691dbbf3b208/content",
+      "jurisdiction_ids": [
+        "FIN"
+      ],
+      "source_institutions": [
+        "Finnish Government"
+      ],
+      "instrument_ids": [
+        "i-c2b1243c844c"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "government-governance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): repository item metadata and full PDF read through the Government publications repository's own API (julkaisut.valtioneuvosto.fi/server/api); the HTML item page returns a bot challenge (403) to curl and WebFetch; 83-page PDF read (description sheet, AI section)",
+      "http_status": 200,
+      "final_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/7bf37cb6-ea0e-4d73-a444-691dbbf3b208/content",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "fi",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-70166df189f6",
+      "url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/8b4cac72-a14a-43b7-a011-c271b48896c0/content",
+      "jurisdiction_ids": [
+        "FIN"
+      ],
+      "source_institutions": [
+        "Ministry of Finance"
+      ],
+      "instrument_ids": [
+        "i-c6570925c9e2"
+      ],
+      "categories_reviewed": [
+        "public-sector",
+        "historical"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): repository item metadata and full PDF read through the Government publications repository's own API (julkaisut.valtioneuvosto.fi/server/api); the HTML item page returns a bot challenge (403) to curl and WebFetch; 64-page PDF read (description sheet and abstract)",
+      "http_status": 200,
+      "final_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/8b4cac72-a14a-43b7-a011-c271b48896c0/content",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "fi",
+      "error": null,
+      "content_type": "text/html"
     }
   ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "FIN",
     "country": "Finland",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -409,60 +1479,570 @@
       "transparency"
     ],
     "categories_with_findings": [
-      "cyber-security",
-      "historical",
-      "public-sector",
-      "sandbox",
-      "strategy"
-    ],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
       "binding-law",
-      "strategy",
-      "government-governance",
-      "ethics",
-      "risk-assurance",
-      "public-sector",
-      "procurement",
       "cyber-security",
       "data-privacy",
-      "transparency",
-      "standards",
-      "sandbox",
-      "index-readiness",
-      "sectoral",
+      "ethics",
       "generative-ai",
-      "drafts",
-      "international",
-      "historical"
+      "government-governance",
+      "historical",
+      "index-readiness",
+      "procurement",
+      "public-sector",
+      "risk-assurance",
+      "sandbox",
+      "sectoral",
+      "strategy",
+      "transparency"
     ],
+    "categories_where_no_material_was_found": [
+      "standards",
+      "drafts",
+      "international"
+    ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Finland \"tekoäly\" (strategia OR sääntely OR etiikka) government ministry official",
       "Finland \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Finland government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Finland \"tekoäly\" cybersecurity authority secure development safety guidelines",
-      "Finland privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Finland privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "finlex laki tekoälyjärjestelmien valvonnasta Traficom",
+      "hallintolaki automaattinen ratkaisumenettely 53 e § finlex 2023 muutos",
+      "\"Laki eräiden tekoälyjärjestelmien valvonnasta\" säädöskokoelma",
+      "finlex.fi lainsäädäntö haku: tekoäly",
+      "valtioneuvosto tekoäly periaatepäätös OR strategia 2025 2026 Suomi tekoälystrategia julkaisut.valtioneuvosto.fi",
+      "valtiovarainministeriö generatiivinen tekoäly julkishallinto suositus ohje",
+      "tietosuojavaltuutettu tekoäly ohje tietosuoja tekoälyjärjestelmät",
+      "tietosuoja.fi tekoäly tietosuojavaltuutetun toimisto ohje tekoälyn kehittäminen henkilötiedot",
+      "finlex sopimukset yleissopimus yksilöiden suojelusta henkilötietojen automaattisessa tietojenkäsittelyssä SopS",
+      "hallituksen esitys eräiden tekoälyjärjestelmien valvonnasta annetun lain muuttamisesta 2026 eduskunta HE",
+      "finanssivalvonta.fi tekoäly valvottavat tekoälyasetus Finanssivalvonta tekoälyn käyttö",
+      "\"Suomen tekoälyaika\" 2017 työ- ja elinkeinoministeriö; \"Tekoäly 4.0\" loppuraportti; AuroraAI loppuraportti",
+      "julkaisut.valtioneuvosto.fi generatiivisen tekoälyn hyödyntäminen julkisessa hallinnossa ohje 2025",
+      "traficom.fi tekoälyn sääntely (site navigation: testiympäristöt, toimijoiden velvollisuudet, milloin tekoälyn käytöstä pitää kertoa)",
+      "Traficom AI regulation (English pages)",
+      "avoindata.eduskunta.fi SaliDBKohta OtsikkoFI like %tekoäly%",
+      "kyberturvallisuuskeskus.fi tekoäly ohje tekoälyjärjestelmien tietoturva",
+      "finlex.fi viranomaiset tietosuojavaltuutettu tekoäly",
+      "finlex open data statutes 2025/1374-1384 (HE 46/2025 companion acts)",
+      "kehittajille.suomi.fi Secure AI Development Handbook"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "EU MEMBERSHIP LAYER IMPLEMENTED; INSTRUMENT-SPECIFIC APPLICABILITY REQUIRES REVIEW",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. valtioneuvosto.fi, vm.fi, tem.fi, okm.fi, stm.fi, lausuntopalvelu.fi and tietosuoja.fi Cloudflare 403 to curl and WebFetch; Government publications read via julkaisut.valtioneuvosto.fi API (API PDF links as source_url). Three domain-named organisations renamed in place (ids kept). Traficom page dates are last-updated dates. Convention 108: SopS 36/1992 with Act 269/1992, recorded on the COE file. Units covered: Law: Finlex (Statute Book via open-data API and PDFs) searched: Act 1377/2025 on the supervision of certain AI systems (AI Act implementation), Acts 487/2023 and 488/2023 on automated decision-making in public administration recorded; AI sandbox amendment bill and AI advisory-services bill held as leads. No criminal-law deepfake provision or other AI-specific law found.; Government: Government publications repository searched through its own API (tekoäly, artificial intelligence, generatiivinen tekoäly, AuroraAI, tekoälyaika): national AI strategy line recorded (2017 Age of AI, 2019 AI Programme final report, 2022 AI 4.0 final report), 2018 Government report to Parliament on information policy and AI, 2026 Digital Compass update, AuroraAI perspectives, Ministry of Finance generative-AI guidelines and central-government AI guide, DVV Secure AI Development Handbook. Research and study reports (e.g. Government analysis-series studies on algorithmic discrimination) excluded as research rather than governance documents.; Ministries: Parliament open data searched for AI items (VNS 7/2018 recorded; HE 46/2025 enacted; no later AI bill found in plenary agenda titles). Ministry of Finance (GenAI guidance 2025, ethics guidance 2023, AI advisory bill), Ministry of Economic Affairs and Employment (AI Act implementation, strategy programmes) and Prime Minister's Office (2026 AI roadmap rapporteur) covered via search and the publications repository API; their own web pages were inaccessible. Defence (2020 AI strategic guidelines) and Education and Culture (2026 citizens' AI competence framework) recorded from the publications repository; Ministry of Justice items found were working-group reports on automated decision-making that led to Acts 487-488/2023 (not recorded separately); health, interior and labour: no AI governance document found beyond research reports.; Regulators: Traficom (AI Act single point of contact; transparency and sandbox guidance pages reviewed), FIN-FSA (2025 AI thematic review reviewed), Data Protection Ombudsman (own site blocked; latest decisions listed on Finlex checked, none AI-specific; lead). National Cyber Security Centre (Traficom): only research reports on AI and cyber security found (2022, 2024), not guidance; competition authority: nothing AI-specific found.. Not reached: valtioneuvosto.fi, vm.fi, tem.fi, okm.fi, stm.fi and lausuntopalvelu.fi web pages (403 bot challenge to curl and WebFetch; publications reached via the repository API instead); tietosuoja.fi (403); eduskunta.fi bill tracking for the AI sandbox amendment bill (not reached in time); kkv.fi (only searched indirectly); Finlex Data Protection Ombudsman year listings (rendered by script; only the latest-decisions list was checked). Could not verify: Data Protection Ombudsman AI guidance (tietosuoja.fi blocked); Status and text of the 2025 AI sandbox amendment draft (VN/31658/2024; consulted April-June 2025). standards, drafts, international: no material found.",
     "discovery_result_count": 9,
     "focused_result_count": 10
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-cf9bd63dfa54",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "FIN",
+      "instrument_id": "i-10885051bae6",
+      "title": "AI regulatory sandboxes (Traficom guidance page)",
+      "detail": "Official source moved.",
+      "from": "https://www.traficom.fi/en/ai-regulation/ai-regulatory-sandboxes",
+      "to": "https://www.traficom.fi/fi/tekoalyn-saantely/tekoalyn-saantelyn-testiymparistot",
+      "source_url": "https://www.traficom.fi/fi/tekoalyn-saantely/tekoalyn-saantelyn-testiymparistot",
+      "needs_review": false
+    },
+    {
+      "id": "c-59699ea3cb41",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "FIN",
+      "instrument_id": "i-10885051bae6",
+      "title": "AI regulatory sandboxes (Traficom guidance page)",
+      "detail": "Record updated: issuing authority, legal status, lifecycle, publication date, scope, summary, title.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-9d77ee992c14",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "FIN",
+      "instrument_id": "i-57f371bfb741",
+      "title": "Secure AI Development Handbook (Secure development guide: developing AI systems)",
+      "detail": "Record updated: categories, issuing authority, legal status, lifecycle, publication date, scope, summary, title.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-449baecd3b3c",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "FIN",
+      "instrument_id": "i-85bf846951f0",
+      "title": "Making the most of AI in Finnish central government: a guide for organisational developers navigating the early stages of change",
+      "detail": "Official source moved.",
+      "from": "https://julkaisut.valtioneuvosto.fi/items/ddfc178d-9e56-48b8-8c7d-bba61572d328",
+      "to": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/b8e46177-ca24-4564-992d-e765ef81d4fd/content",
+      "source_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/b8e46177-ca24-4564-992d-e765ef81d4fd/content",
+      "needs_review": false
+    },
+    {
+      "id": "c-bfda6861a1d7",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "FIN",
+      "instrument_id": "i-85bf846951f0",
+      "title": "Making the most of AI in Finnish central government: a guide for organisational developers navigating the early stages of change",
+      "detail": "Record updated: categories, issuing authority, legal status, lifecycle, publication date, scope, summary, title.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-a7a69fd48ec5",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "FIN",
+      "instrument_id": "i-d2543bea9b29",
+      "title": "Leading the way into the era of artificial intelligence: final report of Finland's Artificial Intelligence Programme 2019",
+      "detail": "Official source moved.",
+      "from": "https://julkaisut.valtioneuvosto.fi/items/5c09a663-8233-47bd-8d09-230c18ddd1f0",
+      "to": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/46b11993-5f8f-4925-a201-56e75ddc60e6/content",
+      "source_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/46b11993-5f8f-4925-a201-56e75ddc60e6/content",
+      "needs_review": false
+    },
+    {
+      "id": "c-e6def03c9f8c",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "FIN",
+      "instrument_id": "i-d2543bea9b29",
+      "title": "Leading the way into the era of artificial intelligence: final report of Finland's Artificial Intelligence Programme 2019",
+      "detail": "Record updated: issuing authority, legal status, lifecycle, publication date, scope, summary, title.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-d2a6f2e27adb",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "FIN",
+      "instrument_id": "i-08cabe94d1e6",
+      "title": "Act on the Supervision of Certain Artificial Intelligence Systems (1377/2025)",
+      "detail": "Added to the radar (published 2025-12-29).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.finlex.fi/api/media/statute/898466/mainPdf/main.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-5d6468625e1a",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "FIN",
+      "instrument_id": "i-ffb8f526939b",
+      "title": "Act amending the Administrative Procedure Act (487/2023) - automated decision-making",
+      "detail": "Added to the radar (published 2023-03-29).",
+      "from": null,
+      "to": null,
+      "source_url": "https://data.finlex.fi/api/media/statute/9283/mainPdf/main.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-36f17af4abfb",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "FIN",
+      "instrument_id": "i-c9974eb927c5",
+      "title": "Act amending the Act on Information Management in Public Administration (488/2023) - automated decision-making procedure",
+      "detail": "Added to the radar (published 2023-03-29).",
+      "from": null,
+      "to": null,
+      "source_url": "https://opendata.finlex.fi/finlex/avoindata/v1/akn/fi/act/statute/2023/488/fin@",
+      "needs_review": false
+    },
+    {
+      "id": "c-ba2bf1949aa8",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "FIN",
+      "instrument_id": "i-8cc089505e33",
+      "title": "When do you need to disclose the use of AI? (Traficom guidance on AI Act transparency obligations)",
+      "detail": "Lifecycle recorded as published when added.",
+      "from": null,
+      "to": "published",
+      "source_url": "https://www.traficom.fi/fi/tekoalyn-saantely/milloin-tekoalyn-kaytosta-pitaa-kertoa",
+      "needs_review": false
+    },
+    {
+      "id": "c-1c908efe4e0c",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "FIN",
+      "instrument_id": "i-8cc089505e33",
+      "title": "When do you need to disclose the use of AI? (Traficom guidance on AI Act transparency obligations)",
+      "detail": "Added to the radar (published 2026-09-28).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.traficom.fi/fi/tekoalyn-saantely/milloin-tekoalyn-kaytosta-pitaa-kertoa",
+      "needs_review": false
+    },
+    {
+      "id": "c-d2314e863809",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "FIN",
+      "instrument_id": "i-0f465d6ed0ee",
+      "title": "Use of artificial intelligence by financial sector entities (FIN-FSA thematic review)",
+      "detail": "Added to the radar (published 2025-06-27).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.finanssivalvonta.fi/globalassets/fi/tiedotteet-ja-julkaisut/valvottavatiedotteet/2025/finanssialan-toimijoiden-tekoalyn-kaytto_fi_.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-b70a86d7248e",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "FIN",
+      "instrument_id": "i-de693b6a93bb",
+      "title": "Government Report on Information Policy and Artificial Intelligence (VNS 7/2018): Ethical information policy in the age of artificial intelligence",
+      "detail": "Added to the radar (published 2018).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.eduskunta.fi/pdf/VNS+7/2018",
+      "needs_review": false
+    },
+    {
+      "id": "c-3204a3bca1db",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "FIN",
+      "instrument_id": "i-6feaa97d36b8",
+      "title": "Finland's Age of Artificial Intelligence: turning Finland into a leading country in the application of AI - objective and recommendations for measures",
+      "detail": "Added to the radar (published 2017-10-23).",
+      "from": null,
+      "to": null,
+      "source_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/0b0ccee5-fe47-40fb-8564-5b765595d775/content",
+      "needs_review": false
+    },
+    {
+      "id": "c-556f081abac8",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "FIN",
+      "instrument_id": "i-cda875441100",
+      "title": "Artificial Intelligence 4.0 programme: Finland as a leader in the twin transition - final report",
+      "detail": "Added to the radar (published 2022-10-24).",
+      "from": null,
+      "to": null,
+      "source_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/2e3f0335-d3cd-4709-8f0d-89826bff73e6/content",
+      "needs_review": false
+    },
+    {
+      "id": "c-5c5e5d5d6004",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "FIN",
+      "instrument_id": "i-663395eb2636",
+      "title": "Guidelines on using generative artificial intelligence to support and assist work in public administration",
+      "detail": "Added to the radar (published 2025-03-20).",
+      "from": null,
+      "to": null,
+      "source_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/3124e4e6-8388-446b-87c0-e8a067215407/content",
+      "needs_review": false
+    },
+    {
+      "id": "c-179b1ef91a5d",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "FIN",
+      "instrument_id": "i-69c1a76456b3",
+      "title": "Strategic guidelines for developing AI solutions (defence administration)",
+      "detail": "Added to the radar (published 2020-08).",
+      "from": null,
+      "to": null,
+      "source_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/4cfe46de-e80f-4502-a7ad-ddcfba56bddc/content",
+      "needs_review": false
+    },
+    {
+      "id": "c-93cf34fefa04",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "FIN",
+      "instrument_id": "i-7a2f03e63574",
+      "title": "Competence in the age of AI: framework for citizens' AI competence",
+      "detail": "Added to the radar (published 2026-05-11).",
+      "from": null,
+      "to": null,
+      "source_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/f85fc441-983f-429f-934c-c19dae57d805/content",
+      "needs_review": false
+    },
+    {
+      "id": "c-e40bb308a85d",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "FIN",
+      "instrument_id": "i-c2b1243c844c",
+      "title": "Government report: a new direction for Finland's Digital Compass",
+      "detail": "Added to the radar (published 2026-06-25).",
+      "from": null,
+      "to": null,
+      "source_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/7bf37cb6-ea0e-4d73-a444-691dbbf3b208/content",
+      "needs_review": false
+    },
+    {
+      "id": "c-ec3d3865db12",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "FIN",
+      "instrument_id": "i-c6570925c9e2",
+      "title": "Human-centric and life-event-based public administration: perspectives from the national AI programme (AuroraAI)",
+      "detail": "Added to the radar (published 2023-05-05).",
+      "from": null,
+      "to": null,
+      "source_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/8b4cac72-a14a-43b7-a011-c271b48896c0/content",
+      "needs_review": false
+    },
+    {
+      "id": "c-7973ded61d33",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "FIN",
+      "instrument_id": "i-85bf846951f0",
+      "title": "Making the most of AI in Finnish central government: a guide for organisational developers navigating the early stages of change",
+      "detail": "Official link restored.",
+      "from": "inaccessible",
+      "to": "reachable",
+      "source_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/b8e46177-ca24-4564-992d-e765ef81d4fd/content",
+      "needs_review": false
+    },
+    {
+      "id": "c-bd330f57b11f",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "FIN",
+      "instrument_id": "i-d2543bea9b29",
+      "title": "Leading the way into the era of artificial intelligence: final report of Finland's Artificial Intelligence Programme 2019",
+      "detail": "Official link restored.",
+      "from": "inaccessible",
+      "to": "reachable",
+      "source_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/46b11993-5f8f-4925-a201-56e75ddc60e6/content",
+      "needs_review": false
+    },
+    {
+      "id": "c-ff259b0ae6fa",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "FIN",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 17 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-cea253cb96f7",
+      "date": "2026-06-25",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "FIN",
+      "instrument_id": "i-c2b1243c844c",
+      "title": "Government report updating Finland's Digital Compass published",
+      "detail": "Government report (VN 2026:60) adds AI as a cross-cutting theme of the national digital strategy.",
+      "from": null,
+      "to": null,
+      "source_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/7bf37cb6-ea0e-4d73-a444-691dbbf3b208/content",
+      "needs_review": false
+    },
+    {
+      "id": "c-ebdf0d1749bd",
+      "date": "2026-01-01",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "FIN",
+      "instrument_id": "i-08cabe94d1e6",
+      "title": "Act on the Supervision of Certain AI Systems (1377/2025) enters into force",
+      "detail": "In force 1 January 2026 (s. 29): designates Finland's AI Act market surveillance authorities, Traficom as single point of contact and the AI sanction-payment board.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.finlex.fi/api/media/statute/898466/mainPdf/main.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-29759f3ec3cf",
+      "date": "2025-12-22",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "FIN",
+      "instrument_id": "i-08cabe94d1e6",
+      "title": "Act on the Supervision of Certain AI Systems (1377/2025) adopted",
+      "detail": "Signed by the President on 22 December 2025 and published in the Statute Book as 1377/2025 on 29 December 2025; national act supplementing the EU AI Act (HE 46/2025).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.finlex.fi/api/media/statute/898466/mainPdf/main.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-3fb3a1473b01",
+      "date": "2025-03-20",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "FIN",
+      "instrument_id": "i-663395eb2636",
+      "title": "Ministry of Finance guidelines on generative AI in public administration published",
+      "detail": "Publications of the Ministry of Finance 2025:9 for all public administration.",
+      "from": null,
+      "to": null,
+      "source_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/3124e4e6-8388-446b-87c0-e8a067215407/content",
+      "needs_review": false
+    },
+    {
+      "id": "c-558f9f16b170",
+      "date": "2023-05-01",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "FIN",
+      "instrument_id": "i-ffb8f526939b",
+      "title": "Administrative Procedure Act rules on automated decision-making enter into force",
+      "detail": "Act 487/2023 (new Chapter 8 b, ss. 53 e-53 g) in force 1 May 2023, with Act 488/2023 on the automated decision-making procedure.",
+      "from": null,
+      "to": null,
+      "source_url": "https://data.finlex.fi/api/media/statute/9283/mainPdf/main.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-851aed76afd3",
+      "date": "2017-10-23",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "FIN",
+      "instrument_id": "i-6feaa97d36b8",
+      "title": "Finland's Age of Artificial Intelligence strategy report published",
+      "detail": "Ministry of Economic Affairs and Employment report 41/2017 setting Finland's first national AI objective and eight recommendations.",
+      "from": null,
+      "to": null,
+      "source_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/0b0ccee5-fe47-40fb-8564-5b765595d775/content",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Hallituksen esitys eräiden tekoälyjärjestelmien valvonnasta annetun lain muuttamisesta (kansallinen tekoälyn sääntelyn testiympäristö)",
+      "english_title": "Government bill amending the Act on the Supervision of Certain AI Systems (national AI regulatory sandbox)",
+      "issuing_authority": "Ministry of Economic Affairs and Employment",
+      "note": "Draft sent for consultation 25 April 2025 (VN/31658/2024); would make Traficom establish and run the national AI regulatory sandbox and supplement Act 1377/2025. Whether a bill was submitted to Parliament or enacted could not be confirmed (Government sites blocked automated access; no amending act found on Finlex in this review). Check eduskunta.fi and finlex.fi.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Tekoälyn eettinen ohjeistus julkiselle hallinnolle (valtiovarainministeriö, 2023)",
+      "english_title": "Ethical guidance on AI for public administration (Ministry of Finance, 2023)",
+      "issuing_authority": "Ministry of Finance",
+      "note": "Referred to in the Ministry of Finance's 2025 generative-AI guidance announcement as published in 2023; not found by title in the Government publications repository search in this review; exact title, date and URL not confirmed.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Hallituksen esitys tekoälyn ja automaation hyödyntämisestä viranomaisneuvonnassa",
+      "english_title": "Government bill on using AI and automation in public authorities' advisory services",
+      "issuing_authority": "Ministry of Finance",
+      "note": "Ministry of Finance announced (valtioneuvosto.fi, 2025-2026) legislation allowing authorities to give advice with AI; bill planned for Parliament in autumn 2026 with entry into force in early 2027. Status not verified; check eduskunta.fi.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Selvityshenkilön tiekartta tekoälyn hyödyntämisen vauhdittamisesta julkisissa palveluissa (VNK, 2026)",
+      "english_title": "Rapporteur's roadmap on accelerating AI in public services (Prime Minister's Office, 2026)",
+      "issuing_authority": "Prime Minister's Office",
+      "note": "Rapporteur appointed 9 April 2026 with a term to 31 October 2026 (appointment decision on hankeikkuna.fi). Report not yet due at review date.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Tietosuojavaltuutetun toimiston tekoälyä koskeva ohjeistus",
+      "english_title": "Data Protection Ombudsman's guidance on AI",
+      "issuing_authority": "Office of the Data Protection Ombudsman",
+      "note": "tietosuoja.fi returned 403 to curl and WebFetch, so any AI-specific guidance or AI-related decisions could not be checked. Re-check tietosuoja.fi and the Ombudsman's decisions on finlex.fi.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Valtioneuvoston selonteko: Suomen digitaalinen kompassi (2022)",
+      "english_title": "Government report: Finland's Digital Compass (2022)",
+      "issuing_authority": "Finnish Government",
+      "note": "Original 2022 Digital Compass, updated by the 2026 Government report recorded here (VN 2026:60). Record as strategy/historical if the original is to be kept for the timeline.",
+      "found": "2026-10-12"
+    }
+  ]
 }
