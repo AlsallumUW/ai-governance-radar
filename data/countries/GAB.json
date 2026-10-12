@@ -10,18 +10,446 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Gabon has no AI-specific law and no published AI strategy; one is being prepared with UNDP. Its binding AI rules are in other texts: the 2023 revision of the data protection law requires an opinion or declaration to the data protection authority (APDPVP) for AI systems that process personal data and adds rights over automated decisions and profiling; the 2023 cybersecurity law bans AI interception of communications without consent; a 2025 digitalisation ordinance names AI-enabled 'Smart-Government'; and a February 2026 ordinance bans harmful deepfakes and requires platforms to detect and label AI-generated content, overseen by the High Authority for Communication.",
+    "lead_institutions": [
+      "Ministry of the Digital Economy",
+      "Authority for the Protection of Personal Data and Privacy",
+      "High Authority for Communication"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was carried out on 12 October 2026 from the full texts in the Official Journal. The websites of the data protection authority, the digital ministry's numerique portal and the cybersecurity agency could not be accessed, so any guidance published only there may be missing. The national AI strategy is still in preparation and is tracked as a lead."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-bc3aa72394a1",
+      "official_title": "Loi n°001/2011 du 25 septembre 2011 relative à la protection des données à caractère personnel",
+      "english_title": "Law No. 001/2011 of 25 September 2011 on the protection of personal data",
+      "issuing_authority": "Parliament (National Assembly and Senate); promulgated by the President of the Republic",
+      "authority_type": "legislature",
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2011-09-25",
+      "current_status": "In force as amended by Law 025/2023 of 12 July 2023 (which repeals contrary provisions of this law). Published in Official Journal No. 74 of 24 October 2011; the gazette header dates the law 24/09/2011 while the signature line reads 'Fait à Libreville, le 25 septembre 2011' (signature date used here).",
+      "summary": "Gabon's framework personal data protection law, applying to automated and non-automated processing of personal data and setting up the National Commission for the Protection of Personal Data (CNPDCP) with declaration and authorisation regimes. It bars court decisions and other decisions with legal effects from being based solely on automated processing intended to profile a person or evaluate aspects of their personality. It was substantially revised by Law 025/2023, which replaced the CNPDCP with the APDPVP.",
+      "ai_governance_relevance": "Baseline data protection law; contains Gabon's original rule against decisions based solely on automated profiling.",
+      "source_url": "https://www.journal-officiel.ga/3344-001-2011-/",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.journal-officiel.ga/3344-001-2011-/",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-fcd3cb42a58a",
+      "publisher_name": "Secretariat General of the Government (Official Journal of the Gabonese Republic)",
+      "jurisdiction_id": "GAB",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": "2023-07-12",
+      "scope": "Gabon (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-cd8b1df6b9bb"
+      ],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "fr",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-26cf0ed67100",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full text read on the Official Journal portal (journal-officiel.ga, run by ANINF); gazette No. 74 of 24 October 2011, signature date 25 September 2011 confirmed"
+    },
+    {
+      "id": "i-cd8b1df6b9bb",
+      "official_title": "Loi n°025/2023 du 12 juillet 2023 portant modification de la loi n°001/2011 du 25 septembre 2011 relative à la protection des données à caractère personnel",
+      "english_title": "Law No. 025/2023 of 12 July 2023 amending Law No. 001/2011 of 25 September 2011 on the protection of personal data",
+      "issuing_authority": "Parliament (National Assembly and Senate); promulgated by the President of the Republic",
+      "authority_type": "legislature",
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2023-07-12",
+      "current_status": "In force; published in Official Journal No. 218 bis of 15 July 2023. The gazette header dates the law 09/07/2023 while the signature line reads 'Fait à Libreville, le 12 juillet 2023' (signature date used; Ordinance 0011/PR/2026 also cites it as of 12 July 2023). The implementing 'norms' for AI systems were not found published.",
+      "summary": "Comprehensive revision of Gabon's data protection law that replaces the CNPDCP with the Authority for the Protection of Personal Data and Privacy (APDPVP), adds AI and machine-learning definitions, a right to object to decisions based solely on automated processing including profiling, and information duties on the logic of automated decision-making. A section on technological innovation (arts. 177-178) aims to make AI 'trustworthy, human-centred, ethical, sustainable and inclusive', applies to AI technologies designed or used in Gabon, and requires any AI system that includes personal data to be subject to an APDPVP opinion or declaration under a standard; it also bans profiling of children save exceptions authorised by the APDPVP and subjects facial recognition processing to opinion or declaration.",
+      "ai_governance_relevance": "Gabon's main binding text with explicit AI provisions (AI systems processing personal data, automated decisions, profiling, facial recognition).",
+      "source_url": "https://www.journal-officiel.ga/20085-025-2023-/",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.journal-officiel.ga/20085-025-2023-/",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-fcd3cb42a58a",
+      "publisher_name": "Secretariat General of the Government (Official Journal of the Gabonese Republic)",
+      "jurisdiction_id": "GAB",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Gabon (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-bc3aa72394a1"
+      ],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "fr",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-5de3f2903331",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full text read on the Official Journal portal; arts. 1, 177-178, 193 and final article checked; signature date 12 July 2023"
+    },
+    {
+      "id": "i-6d9136823cf5",
+      "official_title": "Loi n°027/2023 du 12 juillet 2023 portant règlementation de la cybersécurité et de la lutte contre la cybercriminalité en République Gabonaise",
+      "english_title": "Law No. 027/2023 of 12 July 2023 regulating cybersecurity and the fight against cybercrime in the Gabonese Republic",
+      "issuing_authority": "Parliament (National Assembly and Senate); promulgated by the President of the Republic",
+      "authority_type": "legislature",
+      "categories": [
+        "cyber-security",
+        "binding-law"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2023-07-12",
+      "current_status": "In force; published in Official Journal No. 218 bis of 15 July 2023. The gazette header dates the law 11/07/2023 while the signature line reads 'Fait à Libreville, le 12 juillet 2023' (signature date used).",
+      "summary": "Gabon's cybersecurity and cybercrime law, setting security obligations for operators of networks, information systems and critical infrastructure and defining cybercrime offences. Its only explicit AI provision (art. 38) prohibits any natural or legal person, IT equipment or artificial intelligence from listening to, intercepting, storing or otherwise surveilling communications and traffic data without the users' consent unless legally authorised.",
+      "ai_governance_relevance": "General cyber law with one explicit AI provision (ban on AI-based interception of communications without consent).",
+      "source_url": "https://www.journal-officiel.ga/20087-027-2023-/",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.journal-officiel.ga/20087-027-2023-/",
+      "sectors": [
+        "cross-sector",
+        "telecommunications"
+      ],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-fcd3cb42a58a",
+      "publisher_name": "Secretariat General of the Government (Official Journal of the Gabonese Republic)",
+      "jurisdiction_id": "GAB",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "cyber-security",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Gabon (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "fr",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-268e9f3fb71d",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full text read on the Official Journal portal; art. 38 and signature date checked"
+    },
+    {
+      "id": "i-82568f5c05e7",
+      "official_title": "Ordonnance n°0006/PR/2025 du 12 août 2025 portant réglementation de la Digitalisation en République Gabonaise",
+      "english_title": "Ordinance No. 0006/PR/2025 of 12 August 2025 regulating digitalisation in the Gabonese Republic",
+      "issuing_authority": "President of the Republic, Head of State, Head of Government (ordinance under art. 99 of the Constitution)",
+      "authority_type": "government",
+      "categories": [
+        "public-sector",
+        "binding-law"
+      ],
+      "legal_status": "binding_regulation",
+      "lifecycle": "adopted",
+      "publication_date": "2025-08-12",
+      "current_status": "Signed 12 August 2025 and published in Official Journal No. 81 of 30 August 2025 (gazette header dates it 11/08/2025; signature date used). A bill to ratify it was presented to the Transitional National Assembly's committee (Assembly website); the ratification law was not found in the Official Journal.",
+      "summary": "Framework ordinance on the digitalisation of state services and public and private bodies, covering dematerialisation of administrative procedures, data collection and sharing, online platforms and payments, guided by principles of universality, interoperability, security, digital inclusion and national private-sector participation. It defines a 'Smart-Government' stage as using artificial intelligence and emerging technologies to make the administration proactive, alongside e-, mobile-, open- and digital-government stages. It sets no AI-specific obligations.",
+      "ai_governance_relevance": "Legal basis for digital government that names AI use in the administration ('Smart-Government') as a stage of public-sector digitalisation.",
+      "source_url": "https://www.journal-officiel.ga/21995-0006-pr-2025-/",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.journal-officiel.ga/21995-0006-pr-2025-/",
+      "sectors": [
+        "public-administration"
+      ],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-6f0681a2ec4b",
+      "publisher_name": "Secretariat General of the Government (Official Journal of the Gabonese Republic)",
+      "jurisdiction_id": "GAB",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "public-sector",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Gabon (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "fr",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-993dfb9d0b07",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full text read on the Official Journal portal; arts. 1-12 (incl. AI definition in art. 4) and signature date checked; ratification bill hearing seen on assemblee-nationale.ga"
+    },
+    {
+      "id": "i-14978b1b7878",
+      "official_title": "Ordonnance n°0011/PR/2026 du 26 février 2026 portant réglementation de l'usage des réseaux sociaux via les plateformes numériques en République Gabonaise",
+      "english_title": "Ordinance No. 0011/PR/2026 of 26 February 2026 regulating the use of social networks via digital platforms in the Gabonese Republic",
+      "issuing_authority": "President of the Republic, Head of State, Head of Government (ordinance under Law 042/2025 enabling legislation by ordinance during parliamentary recess)",
+      "authority_type": "government",
+      "categories": [
+        "binding-law",
+        "generative-ai",
+        "transparency",
+        "sectoral"
+      ],
+      "legal_status": "binding_regulation",
+      "lifecycle": "adopted",
+      "publication_date": "2026-02-26",
+      "current_status": "Signed 26 February 2026 and published in Official Journal No. 110 of 8 April 2026. As an ordinance it requires ratification by Parliament; ratification was not verified. Implementing regulations (art. 54) and the technical standards for AI-content detection were not found.",
+      "summary": "Regulates users, publishers and hosts of social networks and digital platforms whose content is accessible in Gabon, with a chapter on AI-generated content (arts. 32-34) that bans sexual deepfakes of identifiable people without consent, harmful deepfakes attributing false statements, sexual depictions of minors and AI imitation of state institutions for disinformation, gives depicted persons a 24-hour takedown right and lets the High Authority for Communication or prosecutors order independent audits of platforms' AI detection and labelling systems. Platforms must within 12 months deploy automatic detection of AI-generated content, apply a visible permanent label to it and hand origin metadata to the HAC; identity-usurpation offences committed through AI carry up to 10 years' imprisonment and a fine of up to 50 million FCFA.",
+      "ai_governance_relevance": "Gabon's first binding rules specifically on AI-generated content, deepfakes and AI-content labelling.",
+      "source_url": "https://www.journal-officiel.ga/22404-0011-pr-2026-/",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.journal-officiel.ga/22404-0011-pr-2026-/",
+      "sectors": [
+        "media",
+        "telecommunications"
+      ],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-6f0681a2ec4b",
+      "publisher_name": "Secretariat General of the Government (Official Journal of the Gabonese Republic)",
+      "jurisdiction_id": "GAB",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "binding-law",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Gabon (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "fr",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-327a6af7b336",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full text read on the Official Journal portal; arts. 3, 32-34, 42, 52-55 and signature date checked"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-fcd3cb42a58a",
+      "jurisdiction_id": "GAB",
+      "name": "Parliament",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Parliament of the Gabonese Republic (National Assembly and Senate); adopted Law 001/2011 on personal data protection and its 2023 revision (Law 025/2023) that adds AI provisions, and the 2023 cybersecurity law.",
+      "source_url": "https://www.assemblee-nationale.ga/",
+      "authority_type": "legislature",
+      "government_level": "national"
+    },
+    {
+      "id": "o-6f0681a2ec4b",
+      "jurisdiction_id": "GAB",
+      "name": "Presidency of the Republic",
+      "publisher_name_verified": true,
+      "ai_governance_role": "The President of the Republic, Head of State and Government, legislates by ordinance during parliamentary recess; issued Ordinance 0011/PR/2026 regulating social networks, which contains Gabon's AI-generated content and deepfake rules.",
+      "source_url": "https://www.journal-officiel.ga/",
+      "authority_type": "government",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-26cf0ed67100",
+      "url": "https://www.journal-officiel.ga/3344-001-2011-/",
+      "jurisdiction_ids": [
+        "GAB"
+      ],
+      "source_institutions": [
+        "Secretariat General of the Government (Official Journal of the Gabonese Republic)"
+      ],
+      "instrument_ids": [
+        "i-bc3aa72394a1"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full text read on the Official Journal portal (journal-officiel.ga, run by ANINF); gazette No. 74 of 24 October 2011, signature date 25 September 2011 confirmed",
+      "http_status": 200,
+      "final_url": "https://www.journal-officiel.ga/3344-001-2011-/",
+      "link_status": "reachable",
+      "page_title": "Journal Officiel de la République Gabonaise",
+      "document_language": "fr",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-5de3f2903331",
+      "url": "https://www.journal-officiel.ga/20085-025-2023-/",
+      "jurisdiction_ids": [
+        "GAB"
+      ],
+      "source_institutions": [
+        "Secretariat General of the Government (Official Journal of the Gabonese Republic)"
+      ],
+      "instrument_ids": [
+        "i-cd8b1df6b9bb"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full text read on the Official Journal portal; arts. 1, 177-178, 193 and final article checked; signature date 12 July 2023",
+      "http_status": 200,
+      "final_url": "https://www.journal-officiel.ga/20085-025-2023-/",
+      "link_status": "reachable",
+      "page_title": "Journal Officiel de la République Gabonaise",
+      "document_language": "fr",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-268e9f3fb71d",
+      "url": "https://www.journal-officiel.ga/20087-027-2023-/",
+      "jurisdiction_ids": [
+        "GAB"
+      ],
+      "source_institutions": [
+        "Secretariat General of the Government (Official Journal of the Gabonese Republic)"
+      ],
+      "instrument_ids": [
+        "i-6d9136823cf5"
+      ],
+      "categories_reviewed": [
+        "cyber-security",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full text read on the Official Journal portal; art. 38 and signature date checked",
+      "http_status": 200,
+      "final_url": "https://www.journal-officiel.ga/20087-027-2023-/",
+      "link_status": "reachable",
+      "page_title": "Journal Officiel de la République Gabonaise",
+      "document_language": "fr",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-993dfb9d0b07",
+      "url": "https://www.journal-officiel.ga/21995-0006-pr-2025-/",
+      "jurisdiction_ids": [
+        "GAB"
+      ],
+      "source_institutions": [
+        "Secretariat General of the Government (Official Journal of the Gabonese Republic)"
+      ],
+      "instrument_ids": [
+        "i-82568f5c05e7"
+      ],
+      "categories_reviewed": [
+        "public-sector",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full text read on the Official Journal portal; arts. 1-12 (incl. AI definition in art. 4) and signature date checked; ratification bill hearing seen on assemblee-nationale.ga",
+      "http_status": 200,
+      "final_url": "https://www.journal-officiel.ga/21995-0006-pr-2025-/",
+      "link_status": "reachable",
+      "page_title": "Journal Officiel de la République Gabonaise",
+      "document_language": "fr",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-327a6af7b336",
+      "url": "https://www.journal-officiel.ga/22404-0011-pr-2026-/",
+      "jurisdiction_ids": [
+        "GAB"
+      ],
+      "source_institutions": [
+        "Secretariat General of the Government (Official Journal of the Gabonese Republic)"
+      ],
+      "instrument_ids": [
+        "i-14978b1b7878"
+      ],
+      "categories_reviewed": [
+        "binding-law",
+        "generative-ai",
+        "transparency",
+        "sectoral"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): full text read on the Official Journal portal; arts. 3, 32-34, 42, 52-55 and signature date checked",
+      "http_status": 200,
+      "final_url": "https://www.journal-officiel.ga/22404-0011-pr-2026-/",
+      "link_status": "reachable",
+      "page_title": "Journal Officiel de la République Gabonaise",
+      "document_language": "fr",
+      "error": null,
+      "content_type": "text/html"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "GAB",
     "country": "Gabon",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -33,55 +461,258 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_with_findings": [
       "binding-law",
+      "cyber-security",
+      "data-privacy",
+      "generative-ai",
+      "public-sector",
+      "sectoral",
+      "transparency"
+    ],
+    "categories_where_no_material_was_found": [
       "strategy",
       "government-governance",
       "ethics",
       "risk-assurance",
-      "public-sector",
       "procurement",
-      "cyber-security",
-      "data-privacy",
-      "transparency",
       "standards",
       "sandbox",
       "index-readiness",
-      "sectoral",
-      "generative-ai",
       "drafts",
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Gabon \"intelligence artificielle\" (stratégie OR réglementation OR éthique) government ministry official",
       "Gabon \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Gabon government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Gabon \"intelligence artificielle\" cybersecurity authority secure development safety guidelines",
-      "Gabon privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Gabon privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "journal-officiel.ga recherche: \"intelligence artificielle\"",
+      "journal-officiel.ga recherche: \"caractère personnel\"",
+      "journal-officiel.ga recherche: \"001/2011\"",
+      "journal-officiel.ga recherche: \"Commission Nationale pour la Protection des Données\"",
+      "journal-officiel.ga recherche: \"APDPVP\"",
+      "journal-officiel.ga recherche: \"algorithme\"",
+      "journal-officiel.ga recherche: \"numérique stratégie\"",
+      "journal-officiel.ga recherche: \"transformation numérique\"",
+      "journal-officiel.ga recherche: \"comité technique\"",
+      "journal-officiel.ga recherche: \"dématérialisation\"",
+      "journal-officiel.ga recherche: \"réseaux sociaux\"",
+      "journal-officiel.ga recherche: \"digitalisation\"",
+      "assemblee-nationale.ga search: \"intelligence artificielle\"",
+      "arcep.ga search: \"intelligence artificielle\"",
+      "economie-numerique.gouv.ga search: \"intelligence artificielle\"",
+      "Gabon stratégie nationale intelligence artificielle ministère économie numérique",
+      "Gabon loi 001/2011 protection des données à caractère personnel CNPDCP texte",
+      "Gabon Convention 108 accession Council of Europe",
+      "Gabon \"stratégie nationale\" \"transformation digitale\" OR \"numérique\" 2025 2030 intelligence artificielle document pdf gouv.ga",
+      "APDPVP Gabon intelligence artificielle recommandation délibération 2025 2026"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. apdpvp.ga 403; cnpdcp.ga, numerique.gouv.ga, anincc.ga proxy 502. Journal search in French. Ordinances 0006/PR/2025 and 0011/PR/2026 recorded binding_regulation per brief rule for orders; ratification laws not found. Gazette header dates differ from signature dates for Laws 001/2011, 025/2023, 027/2023 and Ord. 0006/PR/2025; signature dates used. Convention 108 act not found. Units covered: Law: Official Journal portal (journal-officiel.ga) searched in French: AI provisions found in Law 025/2023 (data protection), Law 027/2023 (cybersecurity) and Ordinance 0011/PR/2026 (social networks, deepfakes, AI-content labelling); Law 001/2011 read. Penal Code (Law 042/2018) checked: no AI provision. Ordinance 0006/PR/2025 on digitalisation (AI 'Smart-Government' definition) found. No AI-specific law or pending AI bill found; National Assembly site search for 'intelligence artificielle' returned only the hearing on the digitalisation ordinance ratification bill.; Government: Ministry of Digital Economy, Digitalisation and Innovation website searched: only an AI hackathon event page, no AI strategy, guideline or public-sector AI document. Ministry and Directorate-General organisation decrees (0388/PR/MENNTI 2024, 0440/PR/MENNTI 2024, 0268/PR 2025, 0489/PR/MENDI 2025, 00030/PR 2026, 00050/PR/MENDI 2026) checked: no AI provisions. National AI strategy in preparation (lead).; Ministries: Searched, nothing found: no AI documents from education, health, justice, defence, finance, labour or interior ministries in the Official Journal or official sites.; Regulators: APDPVP/CNPDCP deliberations in the Official Journal: no AI guidance or AI decision found (APDPVP and CNPDCP websites not reachable). ARCEP website searched: only a news item on ARCEP's AI regulatory priorities presented in London, no AI guidance document. High Authority for Communication: AI-content powers come from Ordinance 0011/PR/2026; no HAC AI guidance found. No AI material from the central bank (BEAC/COBAC are regional), cyber agency (ANINCC site unreachable) or standards body.. Not reached: apdpvp.ga (HTTP 403); cnpdcp.ga (unreachable); numerique.gouv.ga (unreachable); anincc.ga national cybersecurity agency (unreachable). Could not verify: APDPVP website (403) and CNPDCP, numerique.gouv.ga and ANINCC sites (unreachable): any AI guidance published only there could not be checked.; Convention 108: no Gabonese ratification/accession act found in the Official Journal; Gabon does not appear among Convention 108 parties in Council of Europe material seen, so set to null.. strategy, government-governance, ethics, risk-assurance, procurement, standards, sandbox, index-readiness, drafts, international, historical: no material found.",
     "discovery_result_count": 11,
     "focused_result_count": 11
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-24f515753fc3",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "GAB",
+      "instrument_id": "i-bc3aa72394a1",
+      "title": "Law No. 001/2011 of 25 September 2011 on the protection of personal data",
+      "detail": "Added to the radar (published 2011-09-25).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.journal-officiel.ga/3344-001-2011-/",
+      "needs_review": false
+    },
+    {
+      "id": "c-041f629bc41a",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "GAB",
+      "instrument_id": "i-cd8b1df6b9bb",
+      "title": "Law No. 025/2023 of 12 July 2023 amending Law No. 001/2011 of 25 September 2011 on the protection of personal data",
+      "detail": "Added to the radar (published 2023-07-12).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.journal-officiel.ga/20085-025-2023-/",
+      "needs_review": false
+    },
+    {
+      "id": "c-1b67c9bb4bab",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "GAB",
+      "instrument_id": "i-6d9136823cf5",
+      "title": "Law No. 027/2023 of 12 July 2023 regulating cybersecurity and the fight against cybercrime in the Gabonese Republic",
+      "detail": "Added to the radar (published 2023-07-12).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.journal-officiel.ga/20087-027-2023-/",
+      "needs_review": false
+    },
+    {
+      "id": "c-59911e72b707",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "GAB",
+      "instrument_id": "i-82568f5c05e7",
+      "title": "Ordinance No. 0006/PR/2025 of 12 August 2025 regulating digitalisation in the Gabonese Republic",
+      "detail": "Added to the radar (published 2025-08-12).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.journal-officiel.ga/21995-0006-pr-2025-/",
+      "needs_review": false
+    },
+    {
+      "id": "c-1643ae5be743",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "GAB",
+      "instrument_id": "i-14978b1b7878",
+      "title": "Ordinance No. 0011/PR/2026 of 26 February 2026 regulating the use of social networks via digital platforms in the Gabonese Republic",
+      "detail": "Added to the radar (published 2026-02-26).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.journal-officiel.ga/22404-0011-pr-2026-/",
+      "needs_review": false
+    },
+    {
+      "id": "c-870cc7757a7e",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "GAB",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 5 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-7ab93bbbc075",
+      "date": "2026-02-26",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "GAB",
+      "instrument_id": "i-14978b1b7878",
+      "title": "Ordinance 0011/PR/2026 regulates social networks, deepfakes and AI-generated content",
+      "detail": "Signed 26 February 2026; published in Official Journal No. 110 of 8 April 2026. Platforms have 12 months from publication to deploy AI-content detection and labelling.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.journal-officiel.ga/22404-0011-pr-2026-/",
+      "needs_review": false
+    },
+    {
+      "id": "c-f64d9be14326",
+      "date": "2025-08-12",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "GAB",
+      "instrument_id": "i-82568f5c05e7",
+      "title": "Ordinance 0006/PR/2025 on digitalisation signed",
+      "detail": "Signed 12 August 2025; defines 'Smart-Government' as using AI to make the administration proactive. Published in Official Journal No. 81 of 30 August 2025.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.journal-officiel.ga/21995-0006-pr-2025-/",
+      "needs_review": false
+    },
+    {
+      "id": "c-8e5a583e11b3",
+      "date": "2023-07-12",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "revised",
+      "jurisdiction_id": "GAB",
+      "instrument_id": "i-cd8b1df6b9bb",
+      "title": "Law 025/2023 revises the data protection law and adds AI provisions",
+      "detail": "Signed 12 July 2023; creates the APDPVP and requires AI systems processing personal data to be subject to its opinion or a declaration.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.journal-officiel.ga/20085-025-2023-/",
+      "needs_review": false
+    },
+    {
+      "id": "c-15d58ef8b262",
+      "date": "2023-07-12",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "GAB",
+      "instrument_id": "i-6d9136823cf5",
+      "title": "Law 027/2023 on cybersecurity and cybercrime promulgated",
+      "detail": "Signed 12 July 2023; art. 38 bars AI from intercepting communications without consent.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.journal-officiel.ga/20087-027-2023-/",
+      "needs_review": false
+    },
+    {
+      "id": "c-c449c8c6b97b",
+      "date": "2011-09-25",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "GAB",
+      "instrument_id": "i-bc3aa72394a1",
+      "title": "Law 001/2011 on personal data protection promulgated",
+      "detail": "Signed in Libreville on 25 September 2011; published in Official Journal No. 74 of 24 October 2011.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.journal-officiel.ga/3344-001-2011-/",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Stratégie nationale de l'intelligence artificielle (en préparation)",
+      "english_title": "National Artificial Intelligence Strategy (in preparation)",
+      "issuing_authority": "Ministry of Digital Economy, Digitalisation and Innovation (with UNDP support)",
+      "note": "Press reports describe national consultations held in Libreville on 28-30 September 2026 to prepare a national AI strategy (22 challenges, 36 recommendations, horizon 2030) and mention a national technical committee on AI (CTN-IA). No official document or founding text was found on the ministry website (economie-numerique.gouv.ga) or in the Official Journal on 2026-10-12. Record once the strategy or the CTN-IA founding act is published.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Normes de l'APDPVP sur les systèmes d'intelligence artificielle (art. 178, loi n°025/2023)",
+      "english_title": "APDPVP standards on AI systems processing personal data (art. 178 of Law 025/2023)",
+      "issuing_authority": "Authority for the Protection of Personal Data and Privacy (APDPVP)",
+      "note": "Law 025/2023 provides that the operating terms of AI systems that include personal data are defined by a 'norme'. No such APDPVP deliberation was found in the Official Journal's APDPVP deliberations; the APDPVP website (apdpvp.ga) refused access (HTTP 403) and cnpdcp.ga was unreachable. Check again.",
+      "found": "2026-10-12"
+    }
+  ]
 }
