@@ -12,18 +12,364 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Laos has no AI law or adopted AI strategy yet; the Ministry of Technology and Communications (MTC) leads. A 2025 ministerial decision on digital technology business licenses AI businesses and requires AI safety standards based on ISO/IEC 42001 and related standards, and the 2026-2030 technology and communications development plan sets an AI goal including a national AI strategy, an AI innovation centre and a legal framework for ethical AI. A draft National AI Strategy 2026-2035 was approved in principle by the Government in September 2026 but has not been published; the 2021 digital economy vision names AI among core technologies, and the 2017 Law on Electronic Data Protection applies.",
+    "lead_institutions": [
+      "Ministry of Technology and Communications"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was completed on 12 October 2026 and covers national law, government, ministries and regulators. The draft National AI Strategy has not been published and is listed as a lead, and the official gazette and central bank websites could not be reached."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-8e7dc20e9303",
+      "official_title": "ກົດໝາຍວ່າດ້ວຍການປົກປ້ອງຂໍ້ມູນເອເລັກໂຕຣນິກ (ເລກທີ 25/ສພຊ)",
+      "english_title": "Law on Electronic Data Protection (No. 25/NA)",
+      "issuing_authority": "National Assembly of the Lao PDR (promulgated by Presidential Decree No. 117/PP of 23 June 2017)",
+      "authority_type": "legislature",
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2017-05-12",
+      "current_status": "In force. Art. 56: the law takes effect from the date of the presidential promulgation decree and 15 days after its publication in the Official Gazette; the gazette publication date is not stated on the MTC copy, so effective_date is left null. The MTC (the ministry formerly named Ministry of Posts and Telecommunications) administers it.",
+      "summary": "Laos's general law on the protection of electronic data, adopted by the National Assembly on 12 May 2017 (Resolution No. 012/NA) and promulgated by Presidential Decree No. 117/PP of 23 June 2017. It sets principles, rules and measures for managing and monitoring the protection of electronic data so that its collection, access, use and disclosure are safe and lawful, protecting the rights and interests of the state, individuals and organisations; it applies to persons, legal entities and organisations and is implemented by the Government. It is the baseline legal framework governing personal and other electronic data used to train and run AI systems in Laos; it contains no AI-specific provisions in the pages reviewed.",
+      "ai_governance_relevance": "Baseline data protection law governing electronic data used in AI systems.",
+      "source_url": "https://www.mtc.gov.la/index.php?r=site/downloadfile&file=a-4blUS5neIzJaRKjJAVeH/fe48aec1e8e039a9c5caf6af25a9ac3e.pdf",
+      "official_pdf_url": "https://www.mtc.gov.la/index.php?r=site/downloadfile&file=a-4blUS5neIzJaRKjJAVeH/fe48aec1e8e039a9c5caf6af25a9ac3e.pdf",
+      "official_webpage_url": "https://www.mtc.gov.la/index.php?r=site/detail&id=346",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-c26e763abd62",
+      "publisher_name": "Ministry of Technology and Communications",
+      "jurisdiction_id": "LAO",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Lao PDR (national)",
+      "technology_scope": [
+        "data"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [
+        "effective_date (Official Gazette publication date not on source)"
+      ],
+      "language": "lo",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-6ffcb29cdf58",
+      "evidence_reference": "curl (browser user agent, --max-time 60; mtc.gov.la resets connections intermittently, succeeded on retry): scanned 17-page PDF from the MTC laws page; promulgation decree (No. 117/PP, 23/6/2017), National Assembly resolution (No. 012/NA, 12/05/2017), law cover page (No. 25/NA, 12 May 2017, arts. 1-3) and final articles 53-56 read from page images."
+    },
+    {
+      "id": "i-613d506a6b61",
+      "official_title": "ຂໍ້ຕົກລົງວ່າດ້ວຍ ການດໍາເນີນທຸລະກິດດ້ານເຕັກໂນໂລຊີດິຈິຕອນ (ເລກທີ 3643/ກຕສ)",
+      "english_title": "Decision on Digital Technology Business Operations (No. 3643/MTC)",
+      "issuing_authority": "Ministry of Technology and Communications",
+      "authority_type": "government",
+      "categories": [
+        "binding-law",
+        "risk-assurance",
+        "standards",
+        "sectoral"
+      ],
+      "legal_status": "binding_regulation",
+      "lifecycle": "adopted",
+      "publication_date": "2025-09-29",
+      "current_status": "Signed decision No. 3643/MTC. Art. 56 states it takes effect from a date left blank on the published copy and after publication in the Official Gazette, so effective_date is null. The handwritten date on page 1 reads 29 September 2025 (the MTC proposal it cites is dated 12/09/2025); confirm the month against a clearer copy.",
+      "summary": "Ministerial decision of the Minister of Technology and Communications regulating 14 types of digital technology business in Laos, including 'artificial intelligence business' (art. 5), which it defines in art. 3 as technology enabling computer systems or machines to perform tasks requiring human-like intelligence such as learning, reasoning, problem-solving and decision-making. Art. 24 sets technical and safety standards for AI businesses: conformity with ISO/IEC 42001:2023, ISO/IEC 23053:2022, ISO/IEC 23894:2023 and ISO/IEC 29110, disclosure of the platform and AI model used, correctness and reliability, user documentation, complaint channels, safeguards so the AI system is not used to cause harm to society, and security protections. AI businesses are licensed by the Department of Digital Technology (annex) and a licence fee is set; the decision replaces several 2016-2017 MTC/MPT decisions.",
+      "ai_governance_relevance": "Only Lao legal instrument found with AI-specific obligations: licensing and ISO/IEC-based technical and safety standards for AI businesses.",
+      "source_url": "https://www.mtc.gov.la/index.php?r=site/downloadfile&file=dm6dJnUYu8h2enfJoN9xzi/0ab9aafd7d6777a862a7a67b302d0f9a.pdf",
+      "official_pdf_url": "https://www.mtc.gov.la/index.php?r=site/downloadfile&file=dm6dJnUYu8h2enfJoN9xzi/0ab9aafd7d6777a862a7a67b302d0f9a.pdf",
+      "official_webpage_url": "https://www.mtc.gov.la/index.php?r=site/detail&id=1945",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-dfc84d0dbfb5",
+      "publisher_name": "Ministry of Technology and Communications",
+      "jurisdiction_id": "LAO",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "binding-law",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Lao PDR (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [
+        "effective_date (left blank on source; gazette publication date unknown)"
+      ],
+      "language": "lo",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-db1632d6d02d",
+      "evidence_reference": "curl (browser user agent, --max-time 60; mtc.gov.la resets connections intermittently, succeeded on retry): 24-page scanned PDF (signed version) from the MTC decisions page; pages 1-4, 11, 23-24 read as page images (definitions art. 3, scope art. 5, AI standards art. 24, final articles, licensing annex); OCR layer partly garbled."
+    },
+    {
+      "id": "i-4af4cbcc2d36",
+      "official_title": "ວິໄສທັດການພັດທະນາເສດຖະກິດດິຈິຕອນ ແຫ່ງຊາດ ໄລຍະ 20 ປີ (2021-2040), ຍຸດທະສາດການພັດທະນາເສດຖະກິດດິຈິຕອນ ແຫ່ງຊາດ ໄລຍະ 10 ປີ (2021-2030) ແລະ ແຜນພັດທະນາເສດຖະກິດດິຈິຕອນ ແຫ່ງຊາດ ໄລຍະ 5 ປີ (2021-2025)",
+      "english_title": "20-Year National Digital Economy Development Vision (2021-2040), 10-Year National Digital Economy Development Strategy (2021-2030) and 5-Year National Digital Economy Development Plan (2021-2025)",
+      "issuing_authority": "Ministry of Technology and Communications (approved by the Government and the National Assembly)",
+      "authority_type": "government",
+      "categories": [
+        "strategy"
+      ],
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2021-12",
+      "current_status": "Published by MTC (Vientiane, December 2021); the MTC page also carries an unofficial English translation (https://mtc.gov.la/index.php?r=site/downloadfile&file=Wi_AjMvVbw1a5dfyK2hewd/d8041fafe380173c81841cdce0be35b4.pdf). Its 5-year plan component covered 2021-2025; the vision and strategy run to 2040 and 2030. A separate resolution approving the vision is on the MTC site (scanned, not read).",
+      "summary": "Laos's national digital economy vision, strategy and plan, prepared by the Ministry of Technology and Communications with line ministries and incorporated into the 9th National Socio-Economic Development Plan. It identifies artificial intelligence among the core digital technologies (with cloud, cybersecurity, big data, IoT and blockchain) and plans a feasibility study on AI and related technologies and human-resource development in new digital skills including AI and data science. It is the overarching digital policy framework within which the later AI-specific plans sit; it has no standalone AI pillar.",
+      "ai_governance_relevance": "Overarching digital economy strategy that names AI as a priority technology; precursor framework for the draft national AI strategy.",
+      "source_url": "https://www.mtc.gov.la/index.php?r=site/downloadfile&file=Wi_AjMvVbw1a5dfyK2hewd/9d9e38f9f1e38ec52837ba8ae57ca33f.pdf",
+      "official_pdf_url": "https://www.mtc.gov.la/index.php?r=site/downloadfile&file=Wi_AjMvVbw1a5dfyK2hewd/9d9e38f9f1e38ec52837ba8ae57ca33f.pdf",
+      "official_webpage_url": "https://www.mtc.gov.la/index.php?r=site/detail&id=1084",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-dfc84d0dbfb5",
+      "publisher_name": "Ministry of Technology and Communications",
+      "jurisdiction_id": "LAO",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "strategy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Lao PDR (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "lo",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-9393e05ba2e4",
+      "evidence_reference": "curl (browser user agent, --max-time 60; mtc.gov.la resets connections intermittently, succeeded on retry): 79-page Lao PDF and 58-page unofficial English PDF downloaded from the MTC digital-economy page; preface and AI passages read via pdftotext; month/year from the English cover (December 2021)."
+    },
+    {
+      "id": "i-77d387fa6c6a",
+      "official_title": "ແຜນພັດທະນາເຕັກໂນໂລຊີ ແລະ ການສື່ສານ 5 ປີ ຄັ້ງທີ IV (2026-2030)",
+      "english_title": "Fourth Five-Year Technology and Communications Development Plan (2026-2030)",
+      "issuing_authority": "Ministry of Technology and Communications",
+      "authority_type": "government",
+      "categories": [
+        "strategy",
+        "public-sector",
+        "government-governance"
+      ],
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2026-07-14",
+      "current_status": "Signed version published on the MTC website; the cover is dated Vientiane, 14 July 2026. It plans the national AI strategy whose 2026-2035 draft the Government agreed in principle in September 2026 (see leads).",
+      "summary": "The technology and communications sector's five-year plan for 2026-2030, implementing the sector's 10-year strategy and 20-year vision; its overall objective is to build digital government, economy and society 'using artificial intelligence as a key mechanism'. Goal 8 and priority work plan 8 are dedicated to AI: developing a national AI strategy, building an AI Innovation Center and AI Data Center, applying AI in digital public services, raising AI skills, and creating a legal framework and policies to manage and promote ethical AI development. Its project list includes a national AI strategy project, a 'Lao AI' development project, AI data infrastructure powered by clean energy and an AI economic special zone.",
+      "ai_governance_relevance": "Current government plan with a dedicated AI goal; commits MTC to a national AI strategy and an AI legal and ethics framework.",
+      "source_url": "https://www.mtc.gov.la/index.php?r=site/downloadfile&file=70j6IgD6dkfh8USnqIlmCf/3858c58b85b93dfdbdd29743aea2bbd4.pdf",
+      "official_pdf_url": "https://www.mtc.gov.la/index.php?r=site/downloadfile&file=70j6IgD6dkfh8USnqIlmCf/3858c58b85b93dfdbdd29743aea2bbd4.pdf",
+      "official_webpage_url": "https://www.mtc.gov.la/index.php?r=site/detail&id=2243",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-dfc84d0dbfb5",
+      "publisher_name": "Ministry of Technology and Communications",
+      "jurisdiction_id": "LAO",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "strategy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Lao PDR (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "lo",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-c8f217981405",
+      "evidence_reference": "curl (browser user agent, --max-time 60; mtc.gov.la resets connections intermittently, succeeded on retry): full 93-page PDF (signed version) read via pdftotext; date from the cover page; AI goal 8 and work plan 8 passages read."
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-dfc84d0dbfb5",
+      "jurisdiction_id": "LAO",
+      "name": "Ministry of Technology and Communications",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Lead ministry for digital and AI policy: publishes the digital economy vision/strategy and the 2026-2030 sector plan with an AI goal, drafts the national AI strategy (2026-2035), licenses AI businesses under Decision 3643/MTC and administers the Law on Electronic Data Protection.",
+      "source_url": "https://www.mtc.gov.la/",
+      "authority_type": "government",
+      "government_level": "national"
+    },
+    {
+      "id": "o-c26e763abd62",
+      "jurisdiction_id": "LAO",
+      "name": "National Assembly",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Legislature; adopted the Law on Electronic Data Protection (2017). No AI bill found.",
+      "source_url": "https://na.gov.la/",
+      "authority_type": "legislature",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-6ffcb29cdf58",
+      "url": "https://www.mtc.gov.la/index.php?r=site/downloadfile&file=a-4blUS5neIzJaRKjJAVeH/fe48aec1e8e039a9c5caf6af25a9ac3e.pdf",
+      "jurisdiction_ids": [
+        "LAO"
+      ],
+      "source_institutions": [
+        "Ministry of Technology and Communications"
+      ],
+      "instrument_ids": [
+        "i-8e7dc20e9303"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60; mtc.gov.la resets connections intermittently, succeeded on retry): scanned 17-page PDF from the MTC laws page; promulgation decree (No. 117/PP, 23/6/2017), National Assembly resolution (No. 012/NA, 12/05/2017), law cover page (No. 25/NA, 12 May 2017, arts. 1-3) and final articles 53-56 read from page images.",
+      "http_status": 200,
+      "final_url": "https://www.mtc.gov.la/index.php?r=site/downloadfile&file=a-4blUS5neIzJaRKjJAVeH/fe48aec1e8e039a9c5caf6af25a9ac3e.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "lo",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-db1632d6d02d",
+      "url": "https://www.mtc.gov.la/index.php?r=site/downloadfile&file=dm6dJnUYu8h2enfJoN9xzi/0ab9aafd7d6777a862a7a67b302d0f9a.pdf",
+      "jurisdiction_ids": [
+        "LAO"
+      ],
+      "source_institutions": [
+        "Ministry of Technology and Communications"
+      ],
+      "instrument_ids": [
+        "i-613d506a6b61"
+      ],
+      "categories_reviewed": [
+        "binding-law",
+        "risk-assurance",
+        "standards",
+        "sectoral"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60; mtc.gov.la resets connections intermittently, succeeded on retry): 24-page scanned PDF (signed version) from the MTC decisions page; pages 1-4, 11, 23-24 read as page images (definitions art. 3, scope art. 5, AI standards art. 24, final articles, licensing annex); OCR layer partly garbled.",
+      "http_status": 200,
+      "final_url": "https://www.mtc.gov.la/index.php?r=site/downloadfile&file=dm6dJnUYu8h2enfJoN9xzi/0ab9aafd7d6777a862a7a67b302d0f9a.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "lo",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-9393e05ba2e4",
+      "url": "https://www.mtc.gov.la/index.php?r=site/downloadfile&file=Wi_AjMvVbw1a5dfyK2hewd/9d9e38f9f1e38ec52837ba8ae57ca33f.pdf",
+      "jurisdiction_ids": [
+        "LAO"
+      ],
+      "source_institutions": [
+        "Ministry of Technology and Communications"
+      ],
+      "instrument_ids": [
+        "i-4af4cbcc2d36"
+      ],
+      "categories_reviewed": [
+        "strategy"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60; mtc.gov.la resets connections intermittently, succeeded on retry): 79-page Lao PDF and 58-page unofficial English PDF downloaded from the MTC digital-economy page; preface and AI passages read via pdftotext; month/year from the English cover (December 2021).",
+      "http_status": 200,
+      "final_url": "https://www.mtc.gov.la/index.php?r=site/downloadfile&file=Wi_AjMvVbw1a5dfyK2hewd/9d9e38f9f1e38ec52837ba8ae57ca33f.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "lo",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-c8f217981405",
+      "url": "https://www.mtc.gov.la/index.php?r=site/downloadfile&file=70j6IgD6dkfh8USnqIlmCf/3858c58b85b93dfdbdd29743aea2bbd4.pdf",
+      "jurisdiction_ids": [
+        "LAO"
+      ],
+      "source_institutions": [
+        "Ministry of Technology and Communications"
+      ],
+      "instrument_ids": [
+        "i-77d387fa6c6a"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "public-sector",
+        "government-governance"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60; mtc.gov.la resets connections intermittently, succeeded on retry): full 93-page PDF (signed version) read via pdftotext; date from the cover page; AI goal 8 and work plan 8 passages read.",
+      "http_status": 200,
+      "final_url": "https://www.mtc.gov.la/index.php?r=site/downloadfile&file=70j6IgD6dkfh8USnqIlmCf/3858c58b85b93dfdbdd29743aea2bbd4.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "lo",
+      "error": null,
+      "content_type": "application/pdf"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "LAO",
     "country": "Lao People's Democratic Republic",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -35,55 +381,210 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_with_findings": [
       "binding-law",
-      "strategy",
+      "data-privacy",
       "government-governance",
-      "ethics",
-      "risk-assurance",
       "public-sector",
+      "risk-assurance",
+      "sectoral",
+      "standards",
+      "strategy"
+    ],
+    "categories_where_no_material_was_found": [
+      "ethics",
       "procurement",
       "cyber-security",
-      "data-privacy",
       "transparency",
-      "standards",
       "sandbox",
       "index-readiness",
-      "sectoral",
       "generative-ai",
       "drafts",
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Lao People's Democratic Republic \"ປັນຍາປະດິດ\" (ຍຸດທະສາດ OR ກົດໝາຍ) government ministry official",
       "Lao People's Democratic Republic \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Lao People's Democratic Republic government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Lao People's Democratic Republic \"ປັນຍາປະດິດ\" cybersecurity authority secure development safety guidelines",
-      "Lao People's Democratic Republic privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Lao People's Democratic Republic privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "site:mtc.gov.la laws, decrees, decisions, notices and other publications listings (browsed)",
+      "Laos national artificial intelligence strategy Ministry of Technology and Communications 2025",
+      "ຍຸດທະສາດ ປັນຍາປະດິດ ສປປ ລາວ ກະຊວງເຕັກໂນໂລຊີ ແລະ ການສື່ສານ",
+      "\"ປັນຍາປະດິດ\" ດຳລັດ OR ຂໍ້ຕົກລົງ OR ນິຕິກຳ ສປປ ລາວ 2026",
+      "Lao PDR Law on Electronic Data Protection 2017 official gazette",
+      "Lao government monthly meeting September 2026 draft National Artificial Intelligence Strategy 2026-2035",
+      "Laos National Digital Economy Development Strategy 2021-2030 artificial intelligence decree",
+      "Bank of Lao PDR artificial intelligence guideline OR notice bol.gov.la AI",
+      "Laos Ministry of Education and Sports artificial intelligence policy; Ministry of Health digital health AI Laos",
+      "pdftotext grep 'ປັນຍາປະດິດ' / 'AI' across MTC laws, decrees and decisions PDFs"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. laoofficialgazette.gov.la reset/503 (effective dates depend on gazette publication); bol.gov.la reset. Most MTC PDFs are scans read as page images; Decision 3643/MTC date is handwritten (September 2025 reading to confirm). Cyber Security Law, Law on High Technology and Decree 825 not read in full (not AI-specific on their face). Not a party to Convention 108. Units covered: Law: MTC legal-document listings (laws, decrees, decisions) browsed and AI-scanned; Law on Electronic Data Protection and Decision 3643/MTC recorded. Official Gazette (laoofficialgazette.gov.la) unreachable (connection reset / HTTP 503). National Assembly site reachable; no AI bill found. Cyber Security Law and Law on High Technology are scanned PDFs, not AI-specific, not recorded.; Government: MTC strategies/plans: Digital Economy Vision/Strategy/Plan and 4th 5-year ICT plan recorded; draft National AI Strategy 2026-2035 held as lead (no official text). Telecom & Internet Strategy 2026-2040 decree (No. 825) is scanned; not AI-specific on its face, not recorded.; Ministries: Education (teacher AI competency framework in development, lead), health, finance: searched, no AI documents found.; Regulators: Bank of Lao PDR (site unreachable; nothing found by search); no separate data protection authority (MTC administers); no AI material from other regulators found.. Not reached: laoofficialgazette.gov.la (connection reset, WebFetch HTTP 503); bol.gov.la (connection reset). Could not verify: Official Gazette publication dates (site unreachable); Bank of Lao PDR AI guidance (site unreachable); Draft National AI Strategy 2026-2035 text (not published). ethics, procurement, cyber-security, transparency, sandbox, index-readiness, generative-ai, drafts, international, historical: no material found.",
     "discovery_result_count": 5,
     "focused_result_count": 13
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-f9677653dee9",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "LAO",
+      "instrument_id": "i-8e7dc20e9303",
+      "title": "Law on Electronic Data Protection (No. 25/NA)",
+      "detail": "Added to the radar (published 2017-05-12).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.mtc.gov.la/index.php?r=site/downloadfile&file=a-4blUS5neIzJaRKjJAVeH/fe48aec1e8e039a9c5caf6af25a9ac3e.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-6b961928ff88",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "LAO",
+      "instrument_id": "i-613d506a6b61",
+      "title": "Decision on Digital Technology Business Operations (No. 3643/MTC)",
+      "detail": "Added to the radar (published 2025-09-29).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.mtc.gov.la/index.php?r=site/downloadfile&file=dm6dJnUYu8h2enfJoN9xzi/0ab9aafd7d6777a862a7a67b302d0f9a.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-b0936856cf4f",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "LAO",
+      "instrument_id": "i-4af4cbcc2d36",
+      "title": "20-Year National Digital Economy Development Vision (2021-2040), 10-Year National Digital Economy Development Strategy (2021-2030) and 5-Year National Digital Economy Development Plan (2021-2025)",
+      "detail": "Added to the radar (published 2021-12).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.mtc.gov.la/index.php?r=site/downloadfile&file=Wi_AjMvVbw1a5dfyK2hewd/9d9e38f9f1e38ec52837ba8ae57ca33f.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-0ddca63be0da",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "LAO",
+      "instrument_id": "i-77d387fa6c6a",
+      "title": "Fourth Five-Year Technology and Communications Development Plan (2026-2030)",
+      "detail": "Added to the radar (published 2026-07-14).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.mtc.gov.la/index.php?r=site/downloadfile&file=70j6IgD6dkfh8USnqIlmCf/3858c58b85b93dfdbdd29743aea2bbd4.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-7dbd673e7105",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "LAO",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 4 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-e62bc06557c3",
+      "date": "2026-07-14",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "LAO",
+      "instrument_id": "i-77d387fa6c6a",
+      "title": "Fourth Five-Year Technology and Communications Development Plan (2026-2030) published",
+      "detail": "MTC plan with a dedicated AI goal (goal 8), including drafting a national AI strategy and an ethical AI legal framework.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.mtc.gov.la/index.php?r=site/downloadfile&file=70j6IgD6dkfh8USnqIlmCf/3858c58b85b93dfdbdd29743aea2bbd4.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-60e5993f5053",
+      "date": "2025-09-29",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "LAO",
+      "instrument_id": "i-613d506a6b61",
+      "title": "MTC Decision on Digital Technology Business (AI standards) signed",
+      "detail": "Minister of Technology and Communications signed Decision No. 3643/MTC, which licenses AI businesses and sets ISO/IEC-based AI technical and safety standards (art. 24). Handwritten date; month to be confirmed.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.mtc.gov.la/index.php?r=site/downloadfile&file=dm6dJnUYu8h2enfJoN9xzi/0ab9aafd7d6777a862a7a67b302d0f9a.pdf",
+      "needs_review": true
+    },
+    {
+      "id": "c-4021f21a8517",
+      "date": "2017-05-12",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "LAO",
+      "instrument_id": "i-8e7dc20e9303",
+      "title": "Law on Electronic Data Protection adopted",
+      "detail": "National Assembly adopted Law No. 25/NA on Electronic Data Protection (Resolution No. 012/NA of 12 May 2017).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.mtc.gov.la/index.php?r=site/downloadfile&file=a-4blUS5neIzJaRKjJAVeH/fe48aec1e8e039a9c5caf6af25a9ac3e.pdf",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "ຍຸດທະສາດປັນຍາປະດິດແຫ່ງຊາດ (2026-2035) (ຮ່າງ)",
+      "english_title": "Draft National Artificial Intelligence Strategy (2026-2035)",
+      "issuing_authority": "Ministry of Technology and Communications",
+      "note": "At its monthly meeting of 22-23 September 2026 the Government agreed in principle to the draft 10-year AI strategy and asked MTC to revise it (infrastructure, databases, personnel, AI-use priorities, investment/cooperation conditions). Reported by the Lao News Agency/press only; no official text published on mtc.gov.la as of 2026-10-12. Record once the adopted strategy (likely by decree) is published.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Lao PDR Artificial Intelligence Readiness Assessment Report (UNESCO RAM country report)",
+      "english_title": "Lao PDR AI Readiness Assessment (RAM) Country Report",
+      "issuing_authority": "Ministry of Technology and Communications with UNESCO",
+      "note": "Launched 27 January 2026 at a national AI workshop co-organised by MTC and UNESCO; official text not found on a Lao government site (only UNESCO/third-party hosts). Treat as index-readiness if MTC publishes it.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "AI Competency Framework for Teachers (Lao PDR)",
+      "english_title": "AI Competency Framework for Teachers",
+      "issuing_authority": "Ministry of Education and Sports",
+      "note": "Being developed by MoES with UNESCO Bangkok (aligned to the Digital Strategy for Education 2025-2035); no published document found.",
+      "found": "2026-10-12"
+    }
+  ]
 }
