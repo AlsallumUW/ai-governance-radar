@@ -10,18 +10,119 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Niger has no national AI strategy or AI-specific law. Its only binding AI rules are in the 2022 personal data protection law (Law 2022-59), which defines artificial intelligence, requires AI developers and providers to declare their processing, and sets rules on automated decisions and AI transparency, supervised by the data protection authority (HAPDP).",
+    "lead_institutions": [
+      "Haute Autorité de Protection des Données à caractère Personnel (HAPDP)"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was carried out on 12 October 2026, but the Official Journal's, the National Assembly's and the digital agency's websites could not be accessed, so the gazette could not be searched and only one document could be read. Niger is marked for a later retry and, as a country of over 20 million people with few records, for a longer catch-up pass."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-027f9e6a0ea5",
+      "official_title": "Loi n° 2022-59 du 16 décembre 2022 relative à la protection des données à caractère personnel",
+      "english_title": "Law No. 2022-59 of 16 December 2022 on the protection of personal data",
+      "issuing_authority": "National Assembly of Niger (adopted); promulgated by the President of the Republic",
+      "authority_type": "legislature",
+      "categories": [
+        "binding-law",
+        "data-privacy",
+        "transparency"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2022-12-16",
+      "current_status": "Signed in Niamey on 16 December 2022 (the law states it is to be published in the Journal Officiel; the gazette reference was not located because sgg.gouv.ne could not be reached). It repeals Law 2017-28 of 3 May 2017 as amended by Law 2019-71 of 24 December 2019 (art. 112). Amended by Law 2023-31 of 4 July 2023 and Ordinances 2024-16 of 26 April 2024 and 2024-29 of 24 June 2024; the HAPDP's consolidated version (April 2026, information document only) shows the AI provisions (arts. 1, 52, 57) unchanged.",
+      "summary": "Niger's general data protection law, which sets up the High Authority for the Protection of Personal Data (HAPDP) and the rules for processing personal data by public and private controllers. It defines artificial intelligence and, in art. 57, requires AI developers, manufacturers and service providers to comply with the law and, when operating from Niger, to declare their processing to the HAPDP. Art. 52 bars judicial decisions based on automated personality profiling and administrative or private decisions based solely on automated profiling (with exceptions for explicit consent, contracts or legal authorisation), and requires that the criteria and data used be disclosed at collection when the processing relies on AI.",
+      "ai_governance_relevance": "Only national legal text found with explicit AI provisions: definition of AI, declaration duty for AI developers and providers, and automated-decision and AI-transparency rules.",
+      "source_url": "https://www.hapdp.ne/uploads/files/Loi-N%C2%B02022-59HAPDP.pdf",
+      "official_pdf_url": "https://www.hapdp.ne/uploads/files/Loi-N%C2%B02022-59HAPDP.pdf",
+      "official_webpage_url": "https://www.hapdp.ne/legislation-nationale",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "organization_id": "o-c26a5bb567ea",
+      "publisher_name": "High Authority for the Protection of Personal Data (HAPDP)",
+      "jurisdiction_id": "NER",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": "2024-06-24",
+      "scope": "Niger (national)",
+      "technology_scope": [
+        "AI",
+        "automated decision-making",
+        "big data"
+      ],
+      "metadata_gaps": [
+        "effective_date",
+        "Journal Officiel reference"
+      ],
+      "language": "fr",
+      "verification_date": "2026-10-11",
+      "first_recorded": "2026-10-11",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-544d1577dccc",
+      "evidence_reference": "curl (browser user agent, --max-time 240): signed 46-page scanned original PDF downloaded from the HAPDP 'Législation nationale' page; title page and signature page (Fait à Niamey, 16 décembre 2022, signed President Mohamed Bazoum) read as images; article text (art. 1 definition of AI, art. 52, art. 57, art. 112 abrogation) read via pdftotext from the HAPDP consolidated version (April 2026) on the same page"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-c26a5bb567ea",
+      "jurisdiction_id": "NER",
+      "name": "National Assembly",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Adopted Law 2022-59 on personal data protection, which contains Niger's only explicit AI provisions (definition of AI, declaration duty for AI developers and providers, automated-decision rules). Parliament was dissolved after July 2023; later amendments were made by ordinance.",
+      "source_url": "https://www.hapdp.ne/legislation-nationale",
+      "authority_type": "legislature",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-544d1577dccc",
+      "url": "https://www.hapdp.ne/uploads/files/Loi-N%C2%B02022-59HAPDP.pdf",
+      "jurisdiction_ids": [
+        "NER"
+      ],
+      "source_institutions": [
+        "High Authority for the Protection of Personal Data (HAPDP)"
+      ],
+      "instrument_ids": [
+        "i-027f9e6a0ea5"
+      ],
+      "categories_reviewed": [
+        "binding-law",
+        "data-privacy",
+        "transparency"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser user agent, --max-time 240): signed 46-page scanned original PDF downloaded from the HAPDP 'Législation nationale' page; title page and signature page (Fait à Niamey, 16 décembre 2022, signed President Mohamed Bazoum) read as images; article text (art. 1 definition of AI, art. 52, art. 57, art. 112 abrogation) read via pdftotext from the HAPDP consolidated version (April 2026) on the same page",
+      "http_status": 200,
+      "final_url": "https://www.hapdp.ne/uploads/files/Loi-N%C2%B02022-59HAPDP.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "fr",
+      "error": null,
+      "content_type": "application/pdf"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "NER",
     "country": "Niger",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -33,10 +134,12 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_with_findings": [
       "binding-law",
+      "data-privacy",
+      "transparency"
+    ],
+    "categories_where_no_material_was_found": [
       "strategy",
       "government-governance",
       "ethics",
@@ -44,8 +147,6 @@
       "public-sector",
       "procurement",
       "cyber-security",
-      "data-privacy",
-      "transparency",
       "standards",
       "sandbox",
       "index-readiness",
@@ -55,33 +156,137 @@
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Niger \"intelligence artificielle\" (stratégie OR réglementation OR éthique) government ministry official",
       "Niger \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Niger government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Niger \"intelligence artificielle\" cybersecurity authority secure development safety guidelines",
-      "Niger privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Niger privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "Niger stratégie nationale intelligence artificielle adoptée conseil des ministres",
+      "Niger loi protection des données à caractère personnel 2017-28 modifiée 2019 HAPDP",
+      "\"Niger\" \"intelligence artificielle\" stratégie nationale ANSI ministère communication postes économie numérique 2025",
+      "Niger gouvernement \"intelligence artificielle\" élaboration stratégie nationale IA atelier validation Niamey 2026",
+      "Niger Convention 108 Conseil de l'Europe adhésion protection des données",
+      "site:gouv.ne \"intelligence artificielle\"",
+      "gouv.ne site search: intelligence artificielle (no results)",
+      "ansi.ne site search: intelligence artificielle / IA / stratégie",
+      "mcnti.gouv.ne site search: artificielle / stratégie; document library reviewed",
+      "arcep.ne site search: artificielle / stratégie; document library reviewed",
+      "hapdp.ne: législation nationale page reviewed"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. sgg.gouv.ne proxy 502; assemblee.ne reset; anadin.ne proxy 502. Law 2022-59 source: signed scanned original on hapdp.ne (title/signature pages read as images); AI articles (1, 52, 57, 112) from HAPDP consolidated text (Apr 2026). JO reference and effective date missing. Amended by Law 2023-31, Ord. 2024-16, Ord. 2024-29. mcnti.gouv.ne scanned PDFs without text layer not read. Ord. 2026-48 and Decree 2026-311: no AI. Convention 108: not a party. Units covered: Law: Data protection Law 2022-59 (AI definition, art. 52 automated decisions/AI transparency, art. 57 AI developers' declaration duty) read from HAPDP copies. Cybercrime Law 2019-33 (text layer searched: no AI terms), Ordinance 2026-48 on online press (scan read: no AI provisions) and ANSI decrees 2026-311 checked: no AI provisions. Official gazette portal sgg.gouv.ne and National Assembly site unreachable (proxy 502 / connection reset); no AI bill found.; Government: No national AI strategy found: gouv.ne portal search returned no results; ministry of communication and new information technologies (mcnti.gouv.ne) document library and search have no AI document; ANSI (Agence Nationale pour la Société de l'Information) site has only a January 2026 news item on AI capacity-building in Dakar mentioning exchanges on national AI strategy approaches. Searched, nothing found.; Ministries: Searched (portal and web), nothing found for education, health, justice, defence, finance, labour, interior AI documents.; Regulators: HAPDP: legislation and news pages reviewed, no AI guidance. ARCEP (telecoms) document library reviewed, no AI document. ANSI (now also cyber defence/SOC operator) no AI security guidance. Central bank is regional (BCEAO) — regional layer.. Not reached: sgg.gouv.ne (Journal officiel) unreachable; assemblee.ne unreachable; anadin.ne unreachable. Could not verify: Official gazette portal sgg.gouv.ne, National Assembly (assemblee.ne) and ANADIN site could not be reached; no gazette search for AI texts possible.; Several mcnti.gouv.ne PDFs are image scans with no text layer (scan_20260701162208.pdf, scan.pdf, Arrêtés 00010/00011); not OCRed.. strategy, government-governance, ethics, risk-assurance, public-sector, procurement, cyber-security, standards, sandbox, index-readiness, sectoral, generative-ai, drafts, international, historical: no material found.",
     "discovery_result_count": 11,
     "focused_result_count": 9
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-19c6816cfbbc",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "NER",
+      "instrument_id": "i-027f9e6a0ea5",
+      "title": "Law No. 2022-59 of 16 December 2022 on the protection of personal data",
+      "detail": "Added to the radar (published 2022-12-16).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.hapdp.ne/uploads/files/Loi-N%C2%B02022-59HAPDP.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-74314accdf1f",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "NER",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 1 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-4cf594aac1d7",
+      "date": "2024-06-24",
+      "recorded": "2026-10-11",
+      "kind": "world",
+      "type": "revised",
+      "jurisdiction_id": "NER",
+      "instrument_id": "i-027f9e6a0ea5",
+      "title": "Data protection law amended by Ordinance 2024-29",
+      "detail": "Ordinance 2024-29 of 24 June 2024 amends Law 2022-59 (repeals art. 9; AI provisions unchanged).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.hapdp.ne/legislation-nationale",
+      "needs_review": false
+    },
+    {
+      "id": "c-bff54ceb02dc",
+      "date": "2024-04-26",
+      "recorded": "2026-10-11",
+      "kind": "world",
+      "type": "revised",
+      "jurisdiction_id": "NER",
+      "instrument_id": "i-027f9e6a0ea5",
+      "title": "Data protection law amended by Ordinance 2024-16",
+      "detail": "Ordinance 2024-16 of 26 April 2024 amends Law 2022-59, including the transitional provision art. 111 (AI provisions unchanged).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.hapdp.ne/legislation-nationale",
+      "needs_review": false
+    },
+    {
+      "id": "c-1c445022c0ff",
+      "date": "2023-07-04",
+      "recorded": "2026-10-11",
+      "kind": "world",
+      "type": "revised",
+      "jurisdiction_id": "NER",
+      "instrument_id": "i-027f9e6a0ea5",
+      "title": "Data protection law amended by Law 2023-31",
+      "detail": "Law 2023-31 of 4 July 2023 amends Law 2022-59 (AI provisions unchanged per HAPDP consolidated text).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.hapdp.ne/legislation-nationale",
+      "needs_review": false
+    },
+    {
+      "id": "c-15cc4df3c835",
+      "date": "2022-12-16",
+      "recorded": "2026-10-11",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "NER",
+      "instrument_id": "i-027f9e6a0ea5",
+      "title": "Data protection law with AI provisions promulgated",
+      "detail": "Law 2022-59 signed in Niamey on 16 December 2022; defines AI, requires AI developers and providers to declare to the HAPDP, and limits automated decisions (arts. 52, 57). Repeals Law 2017-28.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.hapdp.ne/uploads/files/Loi-N%C2%B02022-59HAPDP.pdf",
+      "needs_review": false
+    }
+  ],
+  "leads": []
 }

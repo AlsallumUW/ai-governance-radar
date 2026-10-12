@@ -50,6 +50,8 @@ Central-government publication portals (e.g. France's vie-publique.fr and ia.num
 
 An official gazette copy hosted by another state body (e.g. a central bank or a national legal information institute run by the state) counts as official.
 
+Scope test: an instrument is included only if it governs, steers or sets expectations for AI. An institution's internal plan to use AI, or a general instrument that only mentions AI in passing (e.g. on a form), goes to leads.
+
 ## 2. Where to search (every country, every time)
 
 1. National AI body or AI office, if any
