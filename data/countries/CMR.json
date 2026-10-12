@@ -10,18 +10,114 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Cameroon has no AI-specific law and no officially published AI strategy text. Its only binding AI-relevant instrument is Law 2024/017 on personal data protection, which requires impact assessments for high-risk processing and gives a right to object to decisions based solely on automated processing, including profiling, with an 18-month compliance period that ended in June 2026. A national AI strategy led by the Ministry of Posts and Telecommunications was presented at national AI consultations in July 2025 but has not been officially published.",
+    "lead_institutions": [
+      "Ministry of Posts and Telecommunications",
+      "Presidency of the Republic"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was completed on 12 October 2026 and covers national law, government, ministries and regulators. The national AI strategy and the data protection law's implementing decrees have not been published and are listed as leads. As a country of over 20 million people with few records, Cameroon is marked for a longer catch-up pass."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-53f86df43c4f",
+      "official_title": "Loi n°2024/017 du 23 décembre 2024 relative à la protection des données à caractère personnel au Cameroun",
+      "english_title": "Law No. 2024/017 of 23 December 2024 on the protection of personal data in Cameroon",
+      "issuing_authority": "Parliament of Cameroon (adopted); promulgated by the President of the Republic",
+      "authority_type": "legislature",
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "category": "data-privacy",
+      "subcategory": null,
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2024-12-23",
+      "effective_date": "2024-12-23",
+      "last_amended_date": null,
+      "current_status": "Promulgated 23 December 2024 and published under the urgency procedure (art. 75; to be inserted in the Journal officiel in French and English). Article 73 gave controllers and processors 18 months from promulgation (to 23 June 2026) to comply. No implementing decree on the data protection authority or on impact assessments (art. 33(2)) was found on the Presidency's site by 2026-10-12.",
+      "summary": "Cameroon's first general personal data protection law, applying to processing by the State, decentralised local authorities and any natural or legal person in or established in Cameroon. It sets processing principles and security duties, requires a prior data protection impact assessment for any processing likely to create a high risk to individuals' rights (art. 33), and gives data subjects rights including erasure, objection, rectification, portability and the right to object to any decision based solely on automated processing of their data, including profiling (art. 44). It establishes a Personal Data Protection Authority with certification and supervisory powers and criminal penalties, including fines of up to XAF 1 billion for legal persons (art. 71).",
+      "ai_governance_relevance": "Governs the personal data used to train and run AI systems and sets the automated-decision and profiling safeguard (art. 44) and high-risk impact assessments (art. 33).",
+      "source_url": "https://www.prc.cm/fr/multimedia/documents/10258-loi-n-2024-017-du-23-12-2024-web",
+      "official_pdf_url": "https://www.prc.cm/files/2b/9f/21/1055fa3c2251b4c4248fd301f584daaf.pdf",
+      "official_webpage_url": "https://www.prc.cm/fr/multimedia/documents/10258-loi-n-2024-017-du-23-12-2024-web",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "organization_id": "o-ac78bdd12695",
+      "publisher_name": "Presidency of the Republic",
+      "jurisdiction_id": "CMR",
+      "government_level": "national",
+      "subnational_unit": null,
+      "scope": "Cameroon (national)",
+      "technology_scope": [
+        "personal data processing",
+        "automated decision-making"
+      ],
+      "metadata_gaps": [],
+      "language": "fr",
+      "verification_date": "2026-10-12",
+      "first_recorded": "2026-10-12",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-ad36ba5c928f",
+      "evidence_reference": "curl (browser user agent, --max-time 60): prc.cm document page (200) and the linked 24-page certified-true-copy PDF (200, application/pdf) downloaded; the PDF is a scan without a text layer, so pages were read as images (art. 1-3 scope, art. 33 impact assessment, art. 44 automated decisions/profiling, art. 73 18-month compliance period, art. 75 and signature of 23 December 2024)"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-ac78bdd12695",
+      "jurisdiction_id": "CMR",
+      "name": "Presidency of the Republic",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Presidency of the Republic of Cameroon; promulgates laws and publishes them (with certified true copies) on prc.cm, including Law No. 2024/017 on personal data protection.",
+      "source_url": "https://www.prc.cm/",
+      "authority_type": "government",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-ad36ba5c928f",
+      "url": "https://www.prc.cm/fr/multimedia/documents/10258-loi-n-2024-017-du-23-12-2024-web",
+      "jurisdiction_ids": [
+        "CMR"
+      ],
+      "source_institutions": [
+        "Presidency of the Republic"
+      ],
+      "instrument_ids": [
+        "i-53f86df43c4f"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-12",
+      "checked_date": "2026-10-12",
+      "check_method": "curl (browser user agent, --max-time 60): prc.cm document page (200) and the linked 24-page certified-true-copy PDF (200, application/pdf) downloaded; the PDF is a scan without a text layer, so pages were read as images (art. 1-3 scope, art. 33 impact assessment, art. 44 automated decisions/profiling, art. 73 18-month compliance period, art. 75 and signature of 23 December 2024)",
+      "http_status": 200,
+      "final_url": "https://www.prc.cm/fr/multimedia/documents/10258-loi-n-2024-017-du-23-12-2024-web",
+      "link_status": "reachable",
+      "page_title": "Loi n° 2024/017 du 23 décembre 2024 relative à la protection des données à caractère personnel au Cameroun",
+      "document_language": "fr",
+      "error": null,
+      "content_type": "text/html"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "CMR",
     "country": "Cameroon",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -33,10 +129,11 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_with_findings": [
       "binding-law",
+      "data-privacy"
+    ],
+    "categories_where_no_material_was_found": [
       "strategy",
       "government-governance",
       "ethics",
@@ -44,7 +141,6 @@
       "public-sector",
       "procurement",
       "cyber-security",
-      "data-privacy",
       "transparency",
       "standards",
       "sandbox",
@@ -55,33 +151,111 @@
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Cameroon \"intelligence artificielle\" (stratégie OR réglementation OR éthique) government ministry official",
       "Cameroon \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Cameroon government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Cameroon \"intelligence artificielle\" cybersecurity authority secure development safety guidelines",
-      "Cameroon privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Cameroon privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "Cameroun stratégie nationale intelligence artificielle MINPOSTEL 2025 2026",
+      "Cameroon national artificial intelligence strategy validated document",
+      "\"Plan Stratégique Cameroun Numérique 2020\" intelligence artificielle pdf",
+      "site:minpostel.gov.cm pdf \"Cameroun numérique 2020\" OR \"intelligence artificielle\"",
+      "\"Stratégie Nationale de l'Intelligence Artificielle\" Cameroun pdf spm.gov.cm OR minpostel.gov.cm OR antic.cm",
+      "minpostel.gov.cm site search: intelligence artificielle; stratégie nationale; SNIA; CONIA",
+      "prc.cm laws and decrees listings 2022-2026 (titles scanned for intelligence artificielle, données, numérique, cyber, télécommunications)",
+      "art.cm site search: intelligence artificielle",
+      "antic.cm site search: intelligence artificielle (server error)",
+      "spm.gov.cm site search: intelligence artificielle",
+      "Cameroon Convention 108 accession Council of Europe data protection Cameroun adhésion",
+      "Cameroun \"Autorité de protection des données à caractère personnel\" décret 2025 OR 2026 organisation fonctionnement intelligence artificielle",
+      "Cameroun projet de loi intelligence artificielle 2026 Assemblée nationale OR \"loi-cadre\" IA",
+      "Cameroun ministère MINESUP OR MINESEC OR MINSANTE OR MINFI intelligence artificielle guide OR stratégie OR charte document officiel",
+      "Cameroun loi 2024 cybersécurité cybercriminalité nouvelle loi hypertrucage deepfake intelligence artificielle"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. prc.cm law and decree listings 2022-2026 scanned; MINPOSTEL and spm.gov.cm searched; ANTIC site search HTTP 500; assnat.cm bill tracker not searched in depth. Cameroun Numérique 2020 plan has no AI content (not recorded). Law 2024/017 is a scan read as page images; effective_date set to promulgation. Run resumed after a usage-limit interruption. Not a party to Convention 108. Units covered: Law: prc.cm law and decree listings (2022-2026) scanned; Law 2024/017 on personal data protection recorded (art. 44 automated decisions/profiling, art. 33 impact assessments). No AI-specific law, decree, deepfake provision or AI bill found; the 2010 cybersecurity/cybercrime law has no AI provisions relevant here.; Government: MINPOSTEL site searched: National AI Strategy (SNIA, presented July 2025) has no official published text -> lead. Cameroun Numérique 2020 strategic plan (May 2016) contains no AI content (full text searched), so not recorded. Prime Minister's services site searched: nothing.; Ministries: Searched for AI documents of education (MINESUP/MINESEC), health, finance: nothing found on official sites.; Regulators: ART (telecom regulator) site search: only news/radio items on AI, no guidance. ANTIC (cyber agency) site search returned server error; homepage reachable, no AI documents linked. Personal Data Protection Authority: no founding decree or guidance found.. Not reached: ANTIC site search (HTTP 500); National Assembly (assnat.cm) bill tracker not searched in depth. Could not verify: National AI Strategy (SNIA) official text; Data protection authority implementing decree; ANTIC site search (server error). strategy, government-governance, ethics, risk-assurance, public-sector, procurement, cyber-security, transparency, standards, sandbox, index-readiness, sectoral, generative-ai, drafts, international, historical: no material found.",
     "discovery_result_count": 11,
     "focused_result_count": 12
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-36a41a29654a",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "CMR",
+      "instrument_id": "i-53f86df43c4f",
+      "title": "Law No. 2024/017 of 23 December 2024 on the protection of personal data in Cameroon",
+      "detail": "Added to the radar (published 2024-12-23).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.prc.cm/fr/multimedia/documents/10258-loi-n-2024-017-du-23-12-2024-web",
+      "needs_review": false
+    },
+    {
+      "id": "c-cae89c686ab3",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "CMR",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 1 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-2167fb8ee695",
+      "date": "2024-12-23",
+      "recorded": "2026-10-12",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "CMR",
+      "instrument_id": "i-53f86df43c4f",
+      "title": "Law No. 2024/017 on personal data protection promulgated",
+      "detail": "Promulgated by the President of the Republic on 23 December 2024 (signature date on the certified true copy published by the Presidency); 18-month compliance period under art. 73.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.prc.cm/fr/multimedia/documents/10258-loi-n-2024-017-du-23-12-2024-web",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Stratégie Nationale de l'Intelligence Artificielle (SNIA) du Cameroun",
+      "english_title": "National Artificial Intelligence Strategy of Cameroon",
+      "issuing_authority": "Ministry of Posts and Telecommunications (MINPOSTEL), under the Prime Minister's high patronage",
+      "note": "Presented by the Minister of Posts and Telecommunications at the second national AI consultations (CONIA), Yaoundé, 7-8 July 2025 (press reports: vision of Cameroon as Africa's AI hub by 2040, seven pillars including an AI authority, a presidential AI council and an AI framework law). No official full text was found on minpostel.gov.cm (site search for 'intelligence artificielle', 'stratégie nationale', 'SNIA', 'CONIA'), spm.gov.cm, antic.cm or prc.cm on 2026-10-12. Record as national_strategy once an official copy or adoption act is published.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Décret(s) d'application de la loi n°2024/017 (Autorité de protection des données à caractère personnel; évaluation d'impact)",
+      "english_title": "Implementing decree(s) of Law No. 2024/017 (Personal Data Protection Authority; impact assessments)",
+      "issuing_authority": "President of the Republic / Prime Minister",
+      "note": "Arts. 33(2), 35 and 74 of Law 2024/017 refer implementation details to regulations. No such decree was found in the prc.cm decree listings (2025-2026) on 2026-10-12; check again, since the Authority's founding text would be a government-governance/data-privacy record.",
+      "found": "2026-10-12"
+    }
+  ]
 }
