@@ -10,18 +10,203 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Somalia has no AI law, AI strategy or AI guidance. Its AI governance rests on the Data Protection Act (Law No. 005 of 2023), which restricts decisions based solely on automated processing and requires impact assessments, enforced by the Data Protection Authority, and on the Digital Transformation Strategy 2025-2030, which promotes AI adoption and proposes a fintech and AI regulatory sandbox. A national AI strategy is being prepared.",
+    "lead_institutions": [
+      "Ministry of Communications and Technology",
+      "Somalia Data Protection Authority",
+      "National Communications Authority"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was carried out on 12 October 2026 from documents on the ministry's, the data protection authority's and the communications regulator's websites. No online official gazette was found and Parliament's bill lists are not searchable online. The national AI strategy and the data protection regulations are tracked as leads."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "jurisdiction_id": "SOM",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Somalia (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "supersedes": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-11",
+      "first_recorded": "2026-10-11",
+      "last_changed": null,
+      "document_access_type": "original_government_document",
+      "id": "i-f9d705b20984",
+      "official_title": "Sharciga Dhowrista Xogta Dadweynaha",
+      "english_title": "Data Protection Act (Law No. 005 of 2023)",
+      "issuing_authority": "Federal Parliament of Somalia",
+      "authority_type": "legislature",
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "category": "data-privacy",
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2023",
+      "effective_date": null,
+      "current_status": "Approved unchanged by the Upper House on 16 March 2023 (resolution on dpa.gov.so); the Ministry of Communications and Technology publishes the government's English text as 'Law No. 005 of 2023, Data Protection Act'. Art. 43 makes it effective on adoption by Parliament, presidential promulgation and publication in the Official Bulletin; the promulgation and Bulletin dates are not stated on the official sources read, so effective_date is left null. The Data Protection Authority reports that the Council of Ministers approved implementing regulations (news dated 5 January 2026); their text is not online (see leads).",
+      "summary": "Somalia's comprehensive personal-data law: it establishes the Data Protection Authority (Arts. 6-13), sets lawfulness, purpose-limitation and consent rules for data controllers and processors, and requires registration of data controllers of major importance. Art. 23 gives data subjects the right not to be subject to a decision based solely on automated processing, including profiling, with legal or similarly significant effects, unless necessary for a contract, authorised by law with safeguards, or based on consent; Art. 18 requires controllers to inform data subjects of any automated decision-making. Chapter V sets security and breach-notification duties and requires data controllers of major importance to carry out and submit a data protection impact assessment before high-risk processing (Art. 29).",
+      "ai_governance_relevance": "Only binding Somali law with AI-relevant rules: the automated decision-making and profiling right (Art. 23), transparency on automated decisions and impact assessments apply to AI systems processing personal data.",
+      "sectors": [
+        "cross-sector"
+      ],
+      "language": "so",
+      "source_url": "https://dpa.gov.so/wp-content/uploads/2026/05/soo_udbin_qaraar_gole.pdf",
+      "official_pdf_url": "https://dpa.gov.so/wp-content/uploads/2026/05/soo_udbin_qaraar_gole.pdf",
+      "official_webpage_url": "https://dpa.gov.so/",
+      "source_kind": "official_document",
+      "organization_id": "o-e9957bda039d",
+      "publisher_name": "Somalia Data Protection Authority",
+      "metadata_gaps": [
+        "effective_date: promulgation and Official Bulletin dates not stated on official sources"
+      ],
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "source_id": "s-2d457da8495a",
+      "evidence_reference": "curl (browser user agent, --max-time 60): 40-page scanned Somali PDF (Upper House resolution 'Qaraar Gole: Ansixinta Sharciga Dhowrista Xogta Dadweynaha', 16 March 2023, with the law's text, Art. 41-43 on page 30) viewed as page images; the Ministry of Communications and Technology's English text 'Law No. 005 of 2023, Data Protection Act' (29 pages) read in full with pdftotext, incl. Art. 23 on solely automated decisions"
+    },
+    {
+      "jurisdiction_id": "SOM",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Somalia (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "supersedes": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-11",
+      "first_recorded": "2026-10-11",
+      "last_changed": null,
+      "document_access_type": "original_government_document",
+      "id": "i-7139a1d73c45",
+      "official_title": "Digital Transformation Strategy (DTS) for Somalia",
+      "english_title": "Digital Transformation Strategy for Somalia (2025-2030)",
+      "issuing_authority": "Ministry of Communications and Technology and National Communications Authority, with support from the International Telecommunication Union",
+      "authority_type": "ministry",
+      "categories": [
+        "strategy"
+      ],
+      "category": "strategy",
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2025-11",
+      "effective_date": null,
+      "current_status": "Final document dated November 2025 and published by the NCA after a national validation workshop held by the Ministry of Communications and Technology with ITU on 12-13 October 2025. No Cabinet approval act was found on official sites. It is the current national digital strategy; Somalia has no national AI strategy (see leads).",
+      "summary": "Somalia's national digital roadmap for 2025-2030, building on the National ICT Policy and Strategy 2019-2024, the NCA Strategic Plan 2023-2027 and the e-Government Strategy 2025-2029, with a steering committee and coordination office to run a portfolio of initiatives. Its innovation pillar promotes adoption of AI, IoT and blockchain through sandboxes and university research partnerships, proposes a fintech/AI regulatory sandbox (KPI: 50+ firms testing, NCA lead), and plans integration of AI and other advanced services in phase 3 (2029-2030). AI adoption is named as an indicator for future updates of the strategy.",
+      "ai_governance_relevance": "The only current national strategy with AI-specific actions (AI adoption via sandboxes, a planned fintech/AI regulatory sandbox).",
+      "sectors": [
+        "cross-sector"
+      ],
+      "language": "en",
+      "source_url": "https://nca.gov.so/uploads/documents/strategies/digital-transformation-strategy.pdf",
+      "official_pdf_url": "https://nca.gov.so/uploads/documents/strategies/digital-transformation-strategy.pdf",
+      "official_webpage_url": "https://nca.gov.so/resources/strategies",
+      "source_kind": "official_document",
+      "organization_id": "o-a5e8eabbc355",
+      "publisher_name": "National Communications Authority",
+      "metadata_gaps": [],
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "source_id": "s-3d1ff28def7f",
+      "evidence_reference": "curl (browser user agent, --max-time 60): 47-page PDF read with pdftotext (dated Nov. 2025); listed on nca.gov.so/resources/strategies; 12 October 2025 validation workshop confirmed on the NCA news page"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-e9957bda039d",
+      "jurisdiction_id": "SOM",
+      "name": "Federal Parliament of Somalia",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Bicameral federal legislature (House of the People and Upper House); passed the Data Protection Law (Law No. 005 of 2023), approved by the Upper House on 16 March 2023.",
+      "source_url": "https://www.senate.gov.so",
+      "authority_type": "legislature",
+      "government_level": "national"
+    },
+    {
+      "id": "o-a5e8eabbc355",
+      "jurisdiction_id": "SOM",
+      "name": "Ministry of Communications and Technology",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Federal ministry for ICT policy; publishes the Data Protection Act, the National ICT Policy and Strategy and the e-Government Strategy, led the Digital Transformation Strategy 2025-2030 with the NCA and ITU, and represents Somalia in international AI governance fora. No AI strategy or AI guidance published as of October 2026.",
+      "source_url": "https://moct.gov.so/",
+      "authority_type": "ministry",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-2d457da8495a",
+      "url": "https://dpa.gov.so/wp-content/uploads/2026/05/soo_udbin_qaraar_gole.pdf",
+      "jurisdiction_ids": [
+        "SOM"
+      ],
+      "source_institutions": [
+        "Somalia Data Protection Authority"
+      ],
+      "instrument_ids": [
+        "i-f9d705b20984"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser user agent, --max-time 60): 40-page scanned Somali PDF (Upper House resolution 'Qaraar Gole: Ansixinta Sharciga Dhowrista Xogta Dadweynaha', 16 March 2023, with the law's text, Art. 41-43 on page 30) viewed as page images; the Ministry of Communications and Technology's English text 'Law No. 005 of 2023, Data Protection Act' (29 pages) read in full with pdftotext, incl. Art. 23 on solely automated decisions",
+      "http_status": 200,
+      "final_url": "https://dpa.gov.so/wp-content/uploads/2026/05/soo_udbin_qaraar_gole.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "so",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-3d1ff28def7f",
+      "url": "https://nca.gov.so/uploads/documents/strategies/digital-transformation-strategy.pdf",
+      "jurisdiction_ids": [
+        "SOM"
+      ],
+      "source_institutions": [
+        "National Communications Authority"
+      ],
+      "instrument_ids": [
+        "i-7139a1d73c45"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "sandbox"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser user agent, --max-time 60): 47-page PDF read with pdftotext (dated Nov. 2025); listed on nca.gov.so/resources/strategies; 12 October 2025 validation workshop confirmed on the NCA news page",
+      "http_status": 200,
+      "final_url": "https://nca.gov.so/uploads/documents/strategies/digital-transformation-strategy.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "SOM",
     "country": "Somalia",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -33,18 +218,18 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_with_findings": [
       "binding-law",
-      "strategy",
+      "data-privacy",
+      "strategy"
+    ],
+    "categories_where_no_material_was_found": [
       "government-governance",
       "ethics",
       "risk-assurance",
       "public-sector",
       "procurement",
       "cyber-security",
-      "data-privacy",
       "transparency",
       "standards",
       "sandbox",
@@ -55,33 +240,125 @@
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Somalia \"sirdoonka macmalka ah\" (istaraatiijiyad OR xeer OR anshax) government ministry official",
       "Somalia \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Somalia government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Somalia \"sirdoonka macmalka ah\" cybersecurity authority secure development safety guidelines",
-      "Somalia privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Somalia privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "Somalia national artificial intelligence strategy Ministry of Communications and Technology",
+      "Somalia Data Protection Act 2023 automated decision dpa.gov.so",
+      "\"sirdoonka macmalka\" Wasaaradda Isgaarsiinta Soomaaliya",
+      "\"garaadka macmalka\" OR \"AI-da\" Soomaaliya istaraatiijiyad qaran wasaaradda",
+      "الصومال الذكاء الاصطناعي استراتيجية وطنية وزارة الاتصالات والتكنولوجيا",
+      "Somalia \"national AI strategy\" OR \"AI policy\" 2026 validation workshop ministry",
+      "site:gov.so \"artificial intelligence\" policy OR guideline OR strategy",
+      "site:parliament.gov.so OR site:parliament.so artificial intelligence bill Somalia",
+      "Central Bank of Somalia artificial intelligence guideline fintech regulatory sandbox",
+      "Somalia Ministry of Education OR Ministry of Health \"artificial intelligence\" policy guideline",
+      "moct.gov.so WordPress search: artificial, AI, strategy, policy, garaad, sirdoon",
+      "dpa.gov.so site search and media listing (Act, guidance, regulations)",
+      "nca.gov.so resources: law, regulations, strategies, consultations, research (full-text grep for AI terms)",
+      "centralbank.gov.so regulatory guidelines and publications listing"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. Official Bulletin: no online portal. parliament.gov.so / senate.gov.so bill lists not searchable. CBS PDFs: titles only (curl 403; WebFetch listing). DPA Somali text: scanned Upper House resolution (read as images); article wording from MoCT English text (second source). No promulgation/Bulletin date; in_force inferred from DPA operating. DTS 2025-2030 copyright ITU, validated 12 Oct 2025; no Cabinet approval found. Event 2023-03-16 = Upper House approval. Convention 108: not a party. Units covered: Law: No official gazette (Official Bulletin) portal online; parliament sites not indexed/searchable. Laws checked via moct.gov.so Acts/Laws page and dpa.gov.so: Data Protection Act (Law No. 005 of 2023, recorded); National Communications Law (no AI); draft Electronic Transactions Law (26 May 2023 draft; only 'automated message systems' for contracting, not AI governance, not recorded); Cybercrime Bill (Cabinet-approved per DTS, text not online, no AI provisions known). No AI law or AI bill found.; Government: MoCT policies/strategies pages read: National ICT Policy and Strategy 2019-2024 (mentions AI only as an emerging area and in the glossary, not recorded), e-Government Strategy 2025-2029 (Somali; AI only in glossary, not recorded), Digital Inclusion Policy (no AI), Digital Transformation Strategy 2025-2030 (recorded). No national AI strategy, AI ethics framework, public-sector AI or GenAI guidance found; MoCT AI news items are events only. SNAIC site (snaic.gov.so) under construction.; Ministries: Searched, nothing found: no AI documents from education, health, justice, defence, finance, labour or interior ministries (web search plus MoCT site); education minister only opened the AI Summit 2026.; Regulators: DPA (dpa.gov.so): templates, forms and guidance downloads checked, no AI-specific guidance; regulations approved but unpublished (lead). NCA: law, regulations, consultations, research and strategy listings grepped; cybersecurity compliance and risk-management frameworks contain no AI provisions; NCA Strategic Plan 2023-2027 mentions AI/ML only as an emerging trend. Central Bank of Somalia: regulatory guidelines and publications listing has no AI, algorithm or sandbox document. No competition authority or standards-body AI material found.. Not reached: Official Bulletin (Faafinta Rasmiga) - no online portal located; parliament.gov.so / senate.gov.so bill lists (not searchable online); Text of central bank PDFs not individually opened (titles only). Could not verify: Somali text Art. 23 (scanned PDF, no OCR available); English government text used for article content; Data Protection Act Regulations text (not online). government-governance, ethics, risk-assurance, public-sector, procurement, cyber-security, transparency, standards, sandbox, index-readiness, sectoral, generative-ai, drafts, international, historical: no material found.",
     "discovery_result_count": 11,
     "focused_result_count": 14
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-a02de5da5ff3",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "SOM",
+      "instrument_id": "i-f9d705b20984",
+      "title": "Data Protection Act (Law No. 005 of 2023)",
+      "detail": "Added to the radar (published 2023).",
+      "from": null,
+      "to": null,
+      "source_url": "https://dpa.gov.so/wp-content/uploads/2026/05/soo_udbin_qaraar_gole.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-21fc3e55a9ef",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "SOM",
+      "instrument_id": "i-7139a1d73c45",
+      "title": "Digital Transformation Strategy for Somalia (2025-2030)",
+      "detail": "Added to the radar (published 2025-11).",
+      "from": null,
+      "to": null,
+      "source_url": "https://nca.gov.so/uploads/documents/strategies/digital-transformation-strategy.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-a330af799e77",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "SOM",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 2 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-05e08d13f201",
+      "date": "2023-03-16",
+      "recorded": "2026-10-11",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "SOM",
+      "instrument_id": "i-f9d705b20984",
+      "title": "Upper House approves the Data Protection Law",
+      "detail": "The Upper House of the Federal Parliament approved the Data Protection Law (Sharciga Dhowrista Xogta Dadweynaha) unchanged, 30 votes in favour, 0 against (resolution dated 16 March 2023).",
+      "from": null,
+      "to": null,
+      "source_url": "https://dpa.gov.so/wp-content/uploads/2026/05/soo_udbin_qaraar_gole.pdf",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "National Artificial Intelligence Strategy (in preparation)",
+      "english_title": "National AI Strategy of Somalia",
+      "issuing_authority": "Ministry of Communications and Technology",
+      "note": "No official draft or adopted text found on moct.gov.so, nca.gov.so or snaic.gov.so (site under construction) as of 11 October 2026. Drafting support was advertised by UN ESCWA (consultancy notice, 2025); the NCA describes the Somalia National Artificial Intelligence Center (SNAIC) as providing AI policy guidance. Record once an official text is published.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Data Protection Act Regulations (approved by the Council of Ministers)",
+      "english_title": "Regulations under the Data Protection Act (Law No. 005 of 2023)",
+      "issuing_authority": "Council of Ministers / Somalia Data Protection Authority",
+      "note": "Approval reported on dpa.gov.so news (dated 5 January 2026, https://dpa.gov.so/news/council-of-ministries-approves-data-protection-act-regulations/); regulation text not published on dpa.gov.so or moct.gov.so. Check for automated-decision / profiling provisions once published.",
+      "found": "2026-10-11"
+    }
+  ]
 }

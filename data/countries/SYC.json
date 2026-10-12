@@ -10,18 +10,211 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Seychelles has no AI law or national AI strategy. Its AI governance rests on the Data Protection Act 2023, which covers profiling, requires impact assessments for automated decision-making and gives the Information Commission a review role, and on the National Artificial Intelligence in Education Framework 2026-2030 of the Ministry of Education, which sets rules for AI use in schools, including approved and prohibited AI tools. A private member's AI bill has been discussed but not tabled.",
+    "lead_institutions": [
+      "Information Commission",
+      "Ministry of Education and Human Resource Development"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was carried out on 12 October 2026 from the official gazette and ministry websites. The telecoms regulator's, the procurement board's and the National Assembly's bills pages could not be accessed. The proposed AI bill and the AI code of practice for schools are tracked as leads."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "jurisdiction_id": "SYC",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-11",
+      "first_recorded": "2026-10-11",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "id": "i-83d0814a7028",
+      "official_title": "Data Protection Act, 2023 (Act 24 of 2023)",
+      "english_title": "Data Protection Act, 2023 (Act 24 of 2023)",
+      "issuing_authority": "National Assembly of Seychelles; assented by the President of the Republic",
+      "authority_type": "legislature",
+      "categories": [
+        "binding-law",
+        "data-privacy",
+        "risk-assurance"
+      ],
+      "category": "data-privacy",
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2023-12-22",
+      "effective_date": "2023-12",
+      "current_status": "Passed by the National Assembly on 5 December 2023, assented 19 December 2023 and published as a supplement to the Official Gazette of 22 December 2023; repeals the Data Protection Act (Cap 57). The Act has no separate commencement section; the Information Commission states it came into effect following its passage in December 2023, so effective_date is given to the month only. Section 56 gave existing controllers and processors 18 months from commencement to comply. No regulations under s.30(2) on solely automated significant decisions were found in the Gazette.",
+      "summary": "Seychelles' general data protection law, applying to public and private processing of personal data by automatic, semi-automatic and manual means and enforced by the Information Commission. It defines 'profiling', requires a data protection impact assessment before systematic and extensive automated evaluation (including profiling) on which decisions with legal or similarly significant effects are based, tasks the Commission with examining any proposal for automated decision-making that may affect privacy, and lets the Minister make regulations safeguarding data subjects against significant decisions based solely on automated processing.",
+      "ai_governance_relevance": "The only Seychelles statute with explicit automated decision-making and profiling provisions; governs personal data used to train and run AI systems.",
+      "source_url": "https://www.gazette.sc/sites/default/files/2023-12/Act%2024%20-%202023%20-%20Data%20Protection%20Act%202023.pdf",
+      "official_pdf_url": "https://www.gazette.sc/sites/default/files/2023-12/Act%2024%20-%202023%20-%20Data%20Protection%20Act%202023.pdf",
+      "official_webpage_url": "https://www.infocom.sc/data-protection/",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "organization_id": "o-26bb46c03524",
+      "publisher_name": "Official Gazette of the Republic of Seychelles",
+      "scope": "Processing of personal data in Seychelles by public and private bodies (excluding criminal investigation, national security and purely personal activity)",
+      "metadata_gaps": [],
+      "language": "en",
+      "document_access_type": "original_government_document",
+      "source_id": "s-76d8c867a196",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full 50-page Act read from the Official Gazette supplement (pdftotext); s.6(1)(k) (Commission examines automated decision-making proposals), s.30(2) (regulations on significant decisions based solely on automated processing), s.40(2)(a) (DPIA for automated evaluation/profiling) and s.2 'profiling' confirmed; assent 19 December 2023, gazette supplement dated 22 December 2023; in-force status read on the Information Commission's Data Protection page (infocom.sc)"
+    },
+    {
+      "jurisdiction_id": "SYC",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-11",
+      "first_recorded": "2026-10-11",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "id": "i-16695221a76f",
+      "official_title": "National Artificial Intelligence in Education Framework, Seychelles 2026–2030",
+      "english_title": "National Artificial Intelligence in Education Framework, Seychelles 2026–2030",
+      "issuing_authority": "Ministry of Education and Human Resource Development",
+      "authority_type": "government",
+      "categories": [
+        "sectoral",
+        "government-governance",
+        "ethics",
+        "public-sector",
+        "procurement",
+        "generative-ai"
+      ],
+      "category": "sectoral",
+      "legal_status": "administrative_policy_mandatory_in_scope",
+      "lifecycle": "adopted",
+      "publication_date": "2026-03",
+      "effective_date": null,
+      "current_status": "Cover dated March 2026; posted in the Ministry's Frameworks download section (listed 29 July 2026). The document states it has been endorsed by the World Bank; Cabinet approval is reported only in press coverage, not on the official page, so no adoption date is recorded. It provides for a National AI in Education Steering Committee, an AI Code of Practice for Schools and approved/prohibited AI tools lists, none of which were found published yet.",
+      "summary": "Five-year framework (2026–2030) from the Ministry of Education and Human Resource Development for introducing AI in Seychelles state schools in a safe, ethical and human-centred way. It establishes a National AI in Education Steering Committee to set direction and approve AI tools against safety, data protection and pedagogical criteria, requires a nationally maintained Approved Educational AI Tools List and Prohibited Tools List to guide procurement and classroom use, and requires each school to designate an AI Lead Teacher. It sets ethical and legal safeguards (data protection, child safeguarding, transparency, bias mitigation, academic integrity) and bars high-stakes uses such as fully automated final grading, certification or student placement decisions, alongside teacher competency, curriculum, KPI and roadmap sections.",
+      "ai_governance_relevance": "Seychelles' first government AI policy document; the de facto public-sector AI governance framework for the education system.",
+      "source_url": "https://edu.gov.sc/download/ai-in-education-framework/",
+      "official_pdf_url": "https://edu.gov.sc/download/ai-in-education-framework/?wpdmdl=9652",
+      "official_webpage_url": "https://edu.gov.sc/frameworks/",
+      "sectors": [
+        "education"
+      ],
+      "source_kind": "official_document",
+      "organization_id": "o-7ef674d8f0a0",
+      "publisher_name": "Ministry of Education and Human Resource Development",
+      "scope": "State schools in Seychelles (primary and secondary), education leadership and school administration",
+      "metadata_gaps": [],
+      "language": "en",
+      "document_access_type": "original_government_document",
+      "source_id": "s-87aa11bfde56",
+      "evidence_reference": "curl (browser user agent, --max-time 60): Ministry download page (edu.gov.sc Frameworks section, listed 29 July 2026) and full 21-page PDF read (pdftotext); cover dated March 2026"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-26bb46c03524",
+      "jurisdiction_id": "SYC",
+      "name": "National Assembly",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Seychelles' unicameral legislature; passed the Data Protection Act, 2023, the only statute with automated decision-making provisions. A private member's AI bill (the 'Pro-Human Technology Bill') has been discussed but not tabled.",
+      "source_url": "https://www.nationalassembly.sc/",
+      "authority_type": "legislature",
+      "government_level": "national"
+    },
+    {
+      "id": "o-7ef674d8f0a0",
+      "jurisdiction_id": "SYC",
+      "name": "Ministry of Education and Human Resource Development",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Issued the National Artificial Intelligence in Education Framework 2026–2030 and is to host the National AI in Education Steering Committee.",
+      "source_url": "https://edu.gov.sc/",
+      "authority_type": "government",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-76d8c867a196",
+      "url": "https://www.gazette.sc/sites/default/files/2023-12/Act%2024%20-%202023%20-%20Data%20Protection%20Act%202023.pdf",
+      "jurisdiction_ids": [
+        "SYC"
+      ],
+      "source_institutions": [
+        "National Assembly"
+      ],
+      "instrument_ids": [
+        "i-83d0814a7028"
+      ],
+      "categories_reviewed": [
+        "binding-law",
+        "data-privacy",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser user agent, --max-time 60): full 50-page Act read from the Official Gazette supplement (pdftotext); s.6(1)(k) (Commission examines automated decision-making proposals), s.30(2) (regulations on significant decisions based solely on automated processing), s.40(2)(a) (DPIA for automated evaluation/profiling) and s.2 'profiling' confirmed; assent 19 December 2023, gazette supplement dated 22 December 2023; in-force status read on the Information Commission's Data Protection page (infocom.sc)",
+      "http_status": 200,
+      "final_url": "https://www.gazette.sc/sites/default/files/2023-12/Act%2024%20-%202023%20-%20Data%20Protection%20Act%202023.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-87aa11bfde56",
+      "url": "https://edu.gov.sc/download/ai-in-education-framework/",
+      "jurisdiction_ids": [
+        "SYC"
+      ],
+      "source_institutions": [
+        "Ministry of Education and Human Resource Development"
+      ],
+      "instrument_ids": [
+        "i-16695221a76f"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "government-governance",
+        "ethics",
+        "public-sector",
+        "procurement",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser user agent, --max-time 60): Ministry download page (edu.gov.sc Frameworks section, listed 29 July 2026) and full 21-page PDF read (pdftotext); cover dated March 2026",
+      "http_status": 200,
+      "final_url": "https://edu.gov.sc/download/ai-in-education-framework/",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "text/html; charset=UTF-8"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "SYC",
     "country": "Seychelles",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -33,55 +226,151 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_with_findings": [
       "binding-law",
-      "strategy",
-      "government-governance",
-      "ethics",
-      "risk-assurance",
-      "public-sector",
-      "procurement",
-      "cyber-security",
       "data-privacy",
+      "ethics",
+      "generative-ai",
+      "government-governance",
+      "procurement",
+      "public-sector",
+      "risk-assurance",
+      "sectoral"
+    ],
+    "categories_where_no_material_was_found": [
+      "strategy",
+      "cyber-security",
       "transparency",
       "standards",
       "sandbox",
       "index-readiness",
-      "sectoral",
-      "generative-ai",
       "drafts",
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Seychelles \"artificial intelligence\" (strategy OR regulation OR ethics) government ministry official",
       "Seychelles \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Seychelles government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Seychelles \"artificial intelligence\" cybersecurity authority secure development safety guidelines",
-      "Seychelles privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Seychelles privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "Seychelles national artificial intelligence strategy policy DICT",
+      "Seychelles Data Protection Act 2023 automated decision-making",
+      "gazette.sc search: \"data protection act 2023\"",
+      "gazette.sc search: \"artificial intelligence\" (10 hits, all trade-mark notices)",
+      "gazette.sc search: deepfake / \"automated decision\" / algorithm / Cybercrimes / \"convention 108\" / \"Convention for the Protection of Individuals\"",
+      "Seychelles Ministry of Education \"Artificial Intelligence in Education\" framework 2026-2030",
+      "edu.gov.sc site search and WordPress media search: artificial intelligence, framework, policy",
+      "Seychelles Information Commission artificial intelligence guidance data protection",
+      "infocom.sc site search: artificial intelligence; AI",
+      "Seychelles \"Pro-Human Technology Bill\" National Assembly",
+      "ict.gov.sc Policies and Strategic Plans pages (National ICT Policy, National Cybersecurity Policy 2019, National Cybersecurity Strategy 2019-2024: no AI content)",
+      "Central Bank of Seychelles OR \"Financial Services Authority\" Seychelles artificial intelligence guideline",
+      "fsaseychelles.sc site search: artificial intelligence",
+      "health.gov.sc site search: artificial intelligence",
+      "Seychelles cabinet approves national AI policy OR strategy OR council 2026",
+      "Seychelles intelligence artificielle stratégie nationale gouvernement",
+      "Seychelles Bureau of Standards ISO/IEC 42001 OR \"artificial intelligence\" standard",
+      "nationalassembly.sc report artificial intelligence governance 2026 committee"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. cra.sc reset; ppbsey.sc proxy 502; nationalassembly.sc/bills HTTP 500; dict.gov.sc no DNS (ict.gov.sc reached). gazette.sc 'artificial intelligence' hits: trade-mark notices only. DPA effective_date 2023-12 (no commencement section). Education Framework: administrative_policy_mandatory_in_scope (alt. administrative_guideline); Cabinet approval press-only. Cybercrimes (Amendment) Act 2025: no AI. Convention 108: not a party. Units covered: Law: Official Gazette (gazette.sc) searched for AI, automated decision, algorithm, deepfake, data protection, cybercrimes, Convention 108: Data Protection Act 2023 recorded; Cybercrimes and other Related Crimes (Amendment) Act 2025 read, no AI provisions; AI hits otherwise only trade-mark notices. No AI law or gazetted AI bill.; Government: DICT (ict.gov.sc) Policies/Strategic Plans: National ICT Policy, Cybersecurity Policy 2019 and Strategy 2019-2024 contain no AI content; no national AI strategy or public-sector AI guideline found (searched, nothing found).; Ministries: Education: National AI in Education Framework 2026-2030 recorded. Health (site search): nothing found. Other ministries (justice, defence, finance, labour, interior): web searches only, nothing found.; Regulators: Information Commission (DPA enforcer): no AI guidance or AI decisions found. Central Bank of Seychelles and FSA: no AI-specific documents found. Communications Regulatory Authority and Seychelles Bureau of Standards: searched, nothing found (cra.sc unreachable).. Not reached: cra.sc (Communications Regulatory Authority): connection reset; ppbsey.sc (Public Procurement Board): proxy 502; nationalassembly.sc/bills: HTTP 500; dict.gov.sc alias unreachable (ict.gov.sc reached). Could not verify: Cabinet approval of the AI in Education Framework (press only); Status of the Pro-Human Technology Bill (nationalassembly.sc bills page HTTP 500); CRA and Public Procurement Board sites unreachable. strategy, cyber-security, transparency, standards, sandbox, index-readiness, drafts, international, historical: no material found.",
     "discovery_result_count": 10,
     "focused_result_count": 15
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-1779b713ad7d",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "SYC",
+      "instrument_id": "i-83d0814a7028",
+      "title": "Data Protection Act, 2023 (Act 24 of 2023)",
+      "detail": "Added to the radar (published 2023-12-22).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.gazette.sc/sites/default/files/2023-12/Act%2024%20-%202023%20-%20Data%20Protection%20Act%202023.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-ffe9fce152ab",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "SYC",
+      "instrument_id": "i-16695221a76f",
+      "title": "National Artificial Intelligence in Education Framework, Seychelles 2026–2030",
+      "detail": "Added to the radar (published 2026-03).",
+      "from": null,
+      "to": null,
+      "source_url": "https://edu.gov.sc/download/ai-in-education-framework/",
+      "needs_review": false
+    },
+    {
+      "id": "c-7cd326a1a953",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "SYC",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 2 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-424706ae2e80",
+      "date": "2023-12-22",
+      "recorded": "2026-10-11",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "SYC",
+      "instrument_id": "i-83d0814a7028",
+      "title": "Data Protection Act, 2023 published in the Official Gazette",
+      "detail": "Act 24 of 2023 (assented 19 December 2023) published as a supplement to the Official Gazette of 22 December 2023, repealing the Data Protection Act (Cap 57); includes profiling, automated-decision DPIA and Commission review provisions.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.gazette.sc/sites/default/files/2023-12/Act%2024%20-%202023%20-%20Data%20Protection%20Act%202023.pdf",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Pro-Human Technology Bill (private member's bill on AI and emerging technologies)",
+      "english_title": "Pro-Human Technology Bill",
+      "issuing_authority": "National Assembly (private member's proposal)",
+      "note": "Proposed in 2024 as a private member's bill on AI and emerging technologies (employment protection, AI in education, protection against digital forgeries). Known only from news coverage and a National Assembly seminar news item; no bill text found in the Official Gazette (Bills are gazetted) or on nationalassembly.sc (bills page returned HTTP 500 on 2026-10-11). Record as a pending bill only once a gazetted Bill exists.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "AI Code of Practice for Schools / Approved and Prohibited Educational AI Tools Lists",
+      "english_title": "AI Code of Practice for Schools; Approved Educational AI Tools List and Prohibited Tools List",
+      "issuing_authority": "Ministry of Education and Human Resource Development (National AI in Education Steering Committee)",
+      "note": "Provided for in the National AI in Education Framework 2026–2030 (sections 5–6); not found on edu.gov.sc (Frameworks, Circulars, Information Notes) on 2026-10-11. Add when published.",
+      "found": "2026-10-11"
+    }
+  ]
 }

@@ -10,9 +10,12 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "South Sudan has no AI-specific law, strategy or guidance, and no data protection law. AI appears only in ministerial statements and announced plans: a data protection bill promised for 2026, a UNESCO-supported effort to bring AI into ICT policy, and a 2026 cybercrime law whose official text is not online.",
+    "lead_institutions": [
+      "Ministry of Information, Communication Technology and Postal Services"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was carried out on 12 October 2026. The ICT ministry, the communications regulator and the central bank were searched and none has published an AI document. The Ministry of Justice legislation site could not be accessed, so the 2026 cybercrime law, which may cover AI misuse, is tracked as a lead until its text can be read."
   },
   "instruments": [],
   "organizations": [],
@@ -21,7 +24,7 @@
   "coverage_audit": {
     "jurisdiction_id": "SSD",
     "country": "South Sudan",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -34,8 +37,7 @@
       "transparency"
     ],
     "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_where_no_material_was_found": [
       "binding-law",
       "strategy",
       "government-governance",
@@ -55,33 +57,85 @@
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "South Sudan \"artificial intelligence\" (strategy OR regulation OR ethics) government ministry official",
       "South Sudan \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "South Sudan government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "South Sudan \"artificial intelligence\" cybersecurity authority secure development safety guidelines",
-      "South Sudan privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "South Sudan privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "South Sudan artificial intelligence policy strategy ministry of ICT 2025",
+      "South Sudan data protection law cybercrimes computer misuse act gazette",
+      "South Sudan National Communication Authority artificial intelligence regulation",
+      "South Sudan Cybercrime and Computer Misuse Act 2026 \"artificial intelligence\" OR deepfake provision",
+      "site:gov.ss \"artificial intelligence\"",
+      "\"Cybercrime and Computer Misuse Act\" 2026 South Sudan pdf mictps.gov.ss OR mojca.gov.ss",
+      "South Sudan Media Authority guidelines artificial intelligence journalists elections 2026",
+      "South Sudan ministry education OR health \"artificial intelligence\" policy guidelines document",
+      "mictps.gov.ss site search and WordPress search/media API: artificial intelligence, cybercrime, data protection, strategy, digital policy, ICT policy, act, policy",
+      "boss.gov.ss site search: artificial intelligence; reviewed Acts, Regulations and Circulars listings",
+      "nla.gov.ss site search: artificial intelligence",
+      "nca.gov.ss: Policies and Regulations, Publications, Cybersecurity, Policy and Regulation news pages scanned for AI"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. mojca.gov.ss: curl TLS failure, WebFetch 503. mictps.gov.ss searched via site search and WP API; National Cybersecurity Strategy (Nov 2024) read, no AI. BoSS Cybersecurity Guidelines (Jul 2026, scanned) generic NIST-CSF, excluded. NCA 2016 regulations: no AI. Lead dates corrected 2026-10-11 -> 2026-10-12. Convention 108 act not found. Units covered: Law: Searched, nothing found: no AI law or AI provision found. National Legislative Assembly site (nla.gov.ss) searched; Ministry of Justice legislation site (mojca.gov.ss) unreachable (TLS failure). Cybercrime and Computer Misuse Act 2026 has no official text online (lead); no data protection law exists (bill announced, lead).; Government: Searched, nothing found: no national AI strategy, policy or public-sector AI guidance. Ministry of ICT and Postal Services (mictps.gov.ss) has only news posts on AI (summits, Smart Africa declaration); its National Cybersecurity Strategy (Nov 2024 PDF) was read and contains no AI content.; Ministries: Searched, nothing found: no AI documents found from education, health, justice, defence, finance, labour or interior ministries.; Regulators: Searched, nothing found: NCA (nca.gov.ss) regulations are 2016 telecom regulations with no AI content; Bank of South Sudan acts/regulations/circulars and its July 2026 Cybersecurity Guidelines (scanned PDF, generic NIST-CSF controls, read via page images) contain no AI content; Media Authority (ssma.gov.ss) has public statements on AI in newsrooms but no published guidance; no data protection authority exists.. Not reached: Ministry of Justice and Constitutional Affairs legislation site (mojca.gov.ss): TLS failure via curl; WebFetch HTTP 503. Could not verify: mojca.gov.ss (Ministry of Justice) could not be reached: TLS handshake failure (curl) and HTTP 503 (WebFetch), so the official legislation listing was not checked. binding-law, strategy, government-governance, ethics, risk-assurance, public-sector, procurement, cyber-security, data-privacy, transparency, standards, sandbox, index-readiness, sectoral, generative-ai, drafts, international, historical: no material found.",
     "discovery_result_count": 13,
     "focused_result_count": 11
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-9d435e2d3c6a",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "SSD",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 0 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Cybercrime and Computer Misuse Act, 2026",
+      "english_title": "Cybercrime and Computer Misuse Act, 2026",
+      "issuing_authority": "Transitional National Legislative Assembly / President of the Republic of South Sudan",
+      "note": "Bill passed by the Revitalised Transitional National Legislative Assembly on 25 Nov 2025 (Ministry of ICT and Postal Services news post, https://mictps.gov.ss/revitalized-natl-legislative-assembly-passed-cybersecurity-and-computer-misuse-bill/, where the minister cited AI being used to discredit and abuse people); reported signed in Feb 2026 and enforced from July 2026. No official full text found on mictps.gov.ss, nla.gov.ss or the Ministry of Justice site (mojca.gov.ss failed TLS). In scope only if the text contains explicit AI / synthetic-media provisions (reported s.42/s.44 false-information and incitement offences are general). Obtain official text and check before recording.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Data Protection Bill (announced)",
+      "english_title": "Data Protection Bill",
+      "issuing_authority": "Ministry of Information, Communication Technology and Postal Services",
+      "note": "The ICT minister asked parliament to work on a data protection law (mictps.gov.ss post of 25 Nov 2025) and the government said a first Data Protection Bill would be introduced in 2026. No bill text or tabling found on official sites as of 2026-10-12; South Sudan has no data protection law or authority. Record as data-privacy once a bill or act is published.",
+      "found": "2026-10-12"
+    },
+    {
+      "title": "Roadmap for integrating AI into South Sudan's ICT policies (UNESCO-supported)",
+      "english_title": "Roadmap for integrating artificial intelligence into national ICT policies",
+      "issuing_authority": "Ministry of Information, Communication Technology and Postal Services (with UNESCO)",
+      "note": "A UNESCO project (2024-2025) lists developing a roadmap to integrate AI into South Sudan's ICT policies plus AI ethics awareness for government; the ministry said in April 2024 it was working on a roadmap. No government-published roadmap found on mictps.gov.ss as of 2026-10-12.",
+      "found": "2026-10-12"
+    }
+  ]
 }

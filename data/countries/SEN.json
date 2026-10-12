@@ -10,18 +10,367 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Senegal steers AI through its 2023 National AI Strategy and Roadmap and the 2025 New Deal Technologique digital strategy, both of which commit to a national regulatory and ethical framework for AI that has not yet been adopted. Binding rules come only from the 2008 personal data protection law, which limits automated decisions and profiling; the data protection authority (CDP) issued a communiqué on AI and personal data in October 2025. A bill to replace the data protection law is reported to cover AI.",
+    "lead_institutions": [
+      "Ministry of Communication, Telecommunications and Digital Affairs",
+      "Commission de Protection des Données Personnelles (CDP)"
+    ],
+    "last_deep_review": "2026-10-12",
+    "review_notes": "This review was carried out on 12 October 2026 from documents read in full on the digital ministry's and the data protection authority's websites. The Official Journal, the National Assembly's and the telecoms regulator's websites could not be accessed. Senegal is a party to the Council of Europe's data protection convention (Convention 108), but the 2016 law authorising ratification could not be read on an official site, so the convention is not yet linked. The data protection bill and a national data roadmap are tracked as leads."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-a5a24ebc6b13",
+      "official_title": "Stratégie nationale et feuille de route du Sénégal sur l'Intelligence Artificielle",
+      "english_title": "National Strategy and Roadmap of Senegal on Artificial Intelligence",
+      "issuing_authority": "Ministry of Communication, Telecommunications and the Digital Economy (MCTEN)",
+      "authority_type": "government",
+      "categories": [
+        "strategy",
+        "government-governance",
+        "ethics"
+      ],
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2023",
+      "current_status": "Published by the ministry in 2023 (summary version dated 2023 on its cover); the full 92-page version, titled 'Stratégie de développement de l'intelligence artificielle', is also on mctn.sn (https://api.mctn.sn/fichier/afficher?path=medias%2Fdocuments%2FnOHunv4EKNtWQ8m95RQu1X9jqhf2v9bQDIHNII4Y.pdf). Still cited as the reference AI strategy (SNIA) by the Ministry of Telecommunications and Digital Affairs in September 2026, alongside the 2025 New Deal Technologique.",
+      "summary": "Senegal's first national AI strategy (SNIA), developed collaboratively between May and August 2023, sets four fundamental objectives to 2028 and four strategic orientations (human capital; 'from lab to market'; a West African AI hub; trustworthy AI as everyone's business) broken down into about 55 actions in three waves, with a priority roadmap costed at 6.7 billion FCFA over two years. Its governance orientation provides for a national consultation, a balanced and flexible AI regulation based on risk categorisation, an AI regulation guide, a pre-figuration body for a future AI regulator, regulatory sandboxes, mandatory impact assessments for some AI uses and ethical criteria in public procurement specifications, with a governance framework to be in place by the end of 2026.",
+      "ai_governance_relevance": "Current national AI strategy and the main source of Senegal's planned AI governance and regulatory framework.",
+      "source_url": "https://api.mctn.sn/fichier/afficher?path=medias%2Fdocuments%2F4fSq2GiiCpFrxavgvXerG6ZGibNV2xYHcuEG1d0y.pdf",
+      "official_pdf_url": "https://api.mctn.sn/fichier/afficher?path=medias%2Fdocuments%2F4fSq2GiiCpFrxavgvXerG6ZGibNV2xYHcuEG1d0y.pdf",
+      "official_webpage_url": "https://www.mctn.sn/documentation/strategie-nationale-et-feuille-de-route-du-senegal-sur-lintelligence-artificielle",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-4dd4c8f331da",
+      "publisher_name": "Ministry of Communication, Telecommunications and Digital Affairs",
+      "jurisdiction_id": "SEN",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "strategy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Senegal (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [
+        "publication_date: only the year (2023) is stated on the official document"
+      ],
+      "language": "fr",
+      "verification_date": "2026-10-11",
+      "first_recorded": "2026-10-11",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-56386a06f7ad",
+      "evidence_reference": "curl (browser user agent, --max-time 60): summary PDF (20 pages, cover 'Stratégie nationale et feuille de route du Sénégal sur l'Intelligence Artificielle (version résumée)', dated 2023) and full 92-page version read with pdftotext; both listed in the ministry's Documentation > IA section (mctn.sn, via its public API api.mctn.sn)"
+    },
+    {
+      "id": "i-8f66bd7d00bf",
+      "official_title": "New Deal Technologique – Horizon 2034",
+      "english_title": "Technological New Deal – Horizon 2034 (national digital strategy)",
+      "issuing_authority": "Ministry of Communication, Telecommunications and Digital Affairs (MCTN), launched by the President of the Republic",
+      "authority_type": "government",
+      "categories": [
+        "strategy",
+        "public-sector",
+        "government-governance"
+      ],
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2025-02-24",
+      "current_status": "Launched 24 February 2025 by the President of the Republic; implementation through priority programmes was under way in 2026 (e.g. launch of structuring projects on 24 March 2026). The PDF linked from the ministry's own 'Télécharger le New Deal Technologique' documentation entry is a placeholder file, so the strategy's dedicated site is the official copy.",
+      "summary": "Senegal's national digital strategy to 2034, launched on 24 February 2025 within the Vision Sénégal 2050 national transformation agenda and succeeding the Sénégal Numérique 2025 strategy. It is organised in four axes (digital sovereignty, digitalisation of public services, development of the digital economy, African digital leadership) implemented through a Digital Master Plan. Its strategic objective OS-3.3 on artificial intelligence commits to establishing a national regulatory and ethical framework for AI ensuring transparency, data protection and digital sovereignty, alongside AI infrastructure (data centres, supercomputing) and AI use in public administration.",
+      "ai_governance_relevance": "Current government digital strategy with an explicit AI pillar and a commitment to a national AI regulatory and ethical framework.",
+      "source_url": "https://www.newdealtechnologique.sn/files/Doc_NDT.pdf",
+      "official_pdf_url": "https://www.newdealtechnologique.sn/files/Doc_NDT.pdf",
+      "official_webpage_url": "https://www.mctn.sn/post/decouvrez-la-strategie-numerique-du-senegal-le-new-deal-technologique-horizon-2034",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-4dd4c8f331da",
+      "publisher_name": "Ministry of Communication, Telecommunications and Digital Affairs",
+      "jurisdiction_id": "SEN",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "strategy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Senegal (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "fr",
+      "verification_date": "2026-10-11",
+      "first_recorded": "2026-10-11",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-cc119e402896",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full 40-page PDF read (pdftotext) from newdealtechnologique.sn (site footer '© MCTN'); launch date 24 February 2025 stated on the ministry's mctn.sn posts of 24 Feb 2025, which link newdealtechnologique.sn as where the strategy is published"
+    },
+    {
+      "id": "i-9bd631f5bbdf",
+      "official_title": "Loi n° 2008-12 du 25 janvier 2008 portant sur la Protection des données à caractère personnel",
+      "english_title": "Law No. 2008-12 of 25 January 2008 on the Protection of Personal Data",
+      "issuing_authority": "National Assembly of Senegal (law promulgated by the President of the Republic)",
+      "authority_type": "legislature",
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2008-01-25",
+      "current_status": "In force; implemented by Decree 2008-721 of 30 June 2008. A revision bill to replace it (reported to address AI, biometrics and big data and to replace the CDP with a new authority) has not been adopted as of October 2026; held as a lead.",
+      "summary": "Senegal's general data protection law, which applies to automated and non-automated processing of personal data and creates the Personal Data Protection Commission (CDP) as an independent administrative authority. Article 48 prohibits court decisions involving an assessment of a person's behaviour from being based on automated processing intended to evaluate aspects of their personality, and bars any decision with legal effects from being taken solely on the basis of automated processing intended to profile the person, with limited contract-related exceptions. Automated processing on behalf of the State in sensitive areas requires a regulatory act after a reasoned CDP opinion (article 21).",
+      "ai_governance_relevance": "Binding rules on automated decision-making and profiling that govern AI systems processing personal data; a revision bill covering AI and biometrics is pending (see leads).",
+      "source_url": "https://www.cdp.sn/legislation/textes-legislatifs",
+      "official_pdf_url": "https://sppsyrftszniuaicadvk.supabase.co/storage/v1/object/sign/cdp_files/textes_juridiques/protection.pdf?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJjZHBfZmlsZXMvdGV4dGVzX2p1cmlkaXF1ZXMvcHJvdGVjdGlvbi5wZGYiLCJpYXQiOjE3MzcwNjc1MjUsImV4cCI6MTgzMTY3NTUyNX0.Yoqiz4dNto-P5OG54HZOwAedIOfksj2l3hreUNDjklM",
+      "official_webpage_url": "https://www.cdp.sn/legislation/textes-legislatifs",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_publication",
+      "supersedes": [],
+      "organization_id": "o-5c27d9a50743",
+      "publisher_name": "Personal Data Protection Commission",
+      "jurisdiction_id": "SEN",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Senegal (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [
+        "effective_date: not stated in the text read (Official Journal publication reference not available)"
+      ],
+      "language": "fr",
+      "verification_date": "2026-10-11",
+      "first_recorded": "2026-10-11",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-f79ff19e0d9c",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full text read (pdftotext) from the PDF the CDP's 'Textes législatifs' page links (file stored on the CDP's own storage service, named by the CDP site); articles 48 and 21 checked"
+    },
+    {
+      "id": "i-3f0dfb2a9aa2",
+      "official_title": "Communiqué sur l'usage de l'intelligence artificielle et la protection des données personnelles",
+      "english_title": "Communiqué on the Use of Artificial Intelligence and the Protection of Personal Data",
+      "issuing_authority": "Personal Data Protection Commission (CDP)",
+      "authority_type": "regulator",
+      "categories": [
+        "generative-ai",
+        "data-privacy",
+        "ethics"
+      ],
+      "legal_status": "regulatory_opinion",
+      "lifecycle": "published",
+      "publication_date": "2025-10-08",
+      "current_status": "Published on the CDP website on 8 October 2025 as a formal stamped communiqué.",
+      "summary": "Statement by the data protection authority responding to AI-generated videos and images of public figures, religious leaders and citizens circulating on social media, which it says can seriously harm human dignity and expose their authors to sanctions. It lists the risks of irresponsible AI use (mass collection of personal data without people's knowledge, identity theft and reputational harm, deceptive deepfakes) and calls for ethical use of AI systems, urging citizens to be vigilant, content creators to refrain from harmful manipulation and platforms to strengthen detection and reporting of illicit content.",
+      "ai_governance_relevance": "The data protection regulator's only AI-specific public guidance found; addresses generative AI and deepfakes.",
+      "source_url": "https://www.cdp.sn/medias/communiques",
+      "official_pdf_url": "https://sppsyrftszniuaicadvk.supabase.co/storage/v1/object/public/public_docs/communiques/communique-1759921022242.pdf",
+      "official_webpage_url": "https://www.cdp.sn/medias/communiques",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_publication",
+      "supersedes": [],
+      "organization_id": "o-5c27d9a50743",
+      "publisher_name": "Personal Data Protection Commission",
+      "jurisdiction_id": "SEN",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "generative-ai",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Senegal (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "fr",
+      "verification_date": "2026-10-11",
+      "first_recorded": "2026-10-11",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-f8f195c0b8fd",
+      "evidence_reference": "curl (browser user agent, --max-time 60): two-page stamped PDF read (rendered as images, read visually); date 8 October 2025 taken from the CDP site's communiqué/news listing, as the PDF itself is undated"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-4dd4c8f331da",
+      "jurisdiction_id": "SEN",
+      "name": "Ministry of Communication, Telecommunications and Digital Affairs",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Lead ministry for digital policy (MCTN; called Ministry of Communication, Telecommunications and the Digital Economy (MCTEN) when the 2023 AI strategy was drafted, and presenting itself as Ministry of Telecommunications and Digital Affairs in 2026 publications). Steered the 2023 national AI strategy and the 2025 New Deal Technologique digital strategy, and in 2026 led the national data-valorisation Blueprint covering data and AI use cases.",
+      "source_url": "https://www.mctn.sn/",
+      "authority_type": "ministry",
+      "government_level": "national"
+    },
+    {
+      "id": "o-5c27d9a50743",
+      "jurisdiction_id": "SEN",
+      "name": "Personal Data Protection Commission",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Commission de Protection des Données Personnelles (CDP), independent administrative authority created by Law 2008-12; supervises personal data processing, including automated decision-making limits, and issued an October 2025 communiqué on AI use and deepfakes.",
+      "source_url": "https://www.cdp.sn/",
+      "authority_type": "regulator",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-56386a06f7ad",
+      "url": "https://api.mctn.sn/fichier/afficher?path=medias%2Fdocuments%2F4fSq2GiiCpFrxavgvXerG6ZGibNV2xYHcuEG1d0y.pdf",
+      "jurisdiction_ids": [
+        "SEN"
+      ],
+      "source_institutions": [
+        "Ministry of Communication, Telecommunications and Digital Affairs"
+      ],
+      "instrument_ids": [
+        "i-a5a24ebc6b13"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "government-governance",
+        "ethics"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser user agent, --max-time 60): summary PDF (20 pages, cover 'Stratégie nationale et feuille de route du Sénégal sur l'Intelligence Artificielle (version résumée)', dated 2023) and full 92-page version read with pdftotext; both listed in the ministry's Documentation > IA section (mctn.sn, via its public API api.mctn.sn)",
+      "http_status": 200,
+      "final_url": "https://api.mctn.sn/fichier/afficher?path=medias%2Fdocuments%2F4fSq2GiiCpFrxavgvXerG6ZGibNV2xYHcuEG1d0y.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "fr",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-cc119e402896",
+      "url": "https://www.newdealtechnologique.sn/files/Doc_NDT.pdf",
+      "jurisdiction_ids": [
+        "SEN"
+      ],
+      "source_institutions": [
+        "Ministry of Communication, Telecommunications and Digital Affairs"
+      ],
+      "instrument_ids": [
+        "i-8f66bd7d00bf"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "public-sector",
+        "government-governance"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser user agent, --max-time 60): full 40-page PDF read (pdftotext) from newdealtechnologique.sn (site footer '© MCTN'); launch date 24 February 2025 stated on the ministry's mctn.sn posts of 24 Feb 2025, which link newdealtechnologique.sn as where the strategy is published",
+      "http_status": 200,
+      "final_url": "https://www.newdealtechnologique.sn/files/Doc_NDT.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "fr",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-f79ff19e0d9c",
+      "url": "https://www.cdp.sn/legislation/textes-legislatifs",
+      "jurisdiction_ids": [
+        "SEN"
+      ],
+      "source_institutions": [
+        "Personal Data Protection Commission"
+      ],
+      "instrument_ids": [
+        "i-9bd631f5bbdf"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser user agent, --max-time 60): full text read (pdftotext) from the PDF the CDP's 'Textes législatifs' page links (file stored on the CDP's own storage service, named by the CDP site); articles 48 and 21 checked",
+      "http_status": 200,
+      "final_url": "https://www.cdp.sn/legislation/textes-legislatifs",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "fr",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-f8f195c0b8fd",
+      "url": "https://www.cdp.sn/medias/communiques",
+      "jurisdiction_ids": [
+        "SEN"
+      ],
+      "source_institutions": [
+        "Personal Data Protection Commission"
+      ],
+      "instrument_ids": [
+        "i-3f0dfb2a9aa2"
+      ],
+      "categories_reviewed": [
+        "generative-ai",
+        "data-privacy",
+        "ethics"
+      ],
+      "date_reviewed": "2026-10-11",
+      "checked_date": "2026-10-11",
+      "check_method": "curl (browser user agent, --max-time 60): two-page stamped PDF read (rendered as images, read visually); date 8 October 2025 taken from the CDP site's communiqué/news listing, as the PDF itself is undated",
+      "http_status": 200,
+      "final_url": "https://www.cdp.sn/medias/communiques",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "fr",
+      "error": null,
+      "content_type": "text/html"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "SEN",
     "country": "Senegal",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -33,55 +382,210 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_with_findings": [
       "binding-law",
-      "strategy",
-      "government-governance",
+      "data-privacy",
       "ethics",
-      "risk-assurance",
+      "generative-ai",
+      "government-governance",
       "public-sector",
+      "strategy"
+    ],
+    "categories_where_no_material_was_found": [
+      "risk-assurance",
       "procurement",
       "cyber-security",
-      "data-privacy",
       "transparency",
       "standards",
       "sandbox",
       "index-readiness",
       "sectoral",
-      "generative-ai",
       "drafts",
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Senegal \"intelligence artificielle\" (stratégie OR réglementation OR éthique) government ministry official",
       "Senegal \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Senegal government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Senegal \"intelligence artificielle\" cybersecurity authority secure development safety guidelines",
-      "Senegal privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Senegal privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "Sénégal \"Stratégie nationale\" \"intelligence artificielle\" pdf numerique.gouv.sn OR communication.gouv.sn",
+      "\"Stratégie nationale et feuille de route du Sénégal sur l'intelligence artificielle\" pdf",
+      "Sénégal \"New Deal Technologique\" stratégie numérique document pdf intelligence artificielle",
+      "Sénégal loi autorisant ratification Convention 108 protection des personnes traitement automatisé données à caractère personnel",
+      "\"loi n° 2016-15\" Sénégal autorisant ratification convention 108 journal officiel",
+      "site:gouv.sn intelligence artificielle stratégie",
+      "Sénégal projet de loi \"données à caractère personnel\" 2025 OR 2026 conseil des ministres nouvelle loi intelligence artificielle",
+      "Sénégal ministère éducation OR santé OR justice \"intelligence artificielle\" guide OR charte OR stratégie officielle 2025 2026",
+      "mctn.sn Documentation (all 34 entries, incl. IA sub-category) and Actualités (293 posts) reviewed for intelligence artificielle / IA / New Deal / données / projet de loi",
+      "cdp.sn communiqués, articles, délibérations de portée générale and textes législatifs reviewed for intelligence artificielle / algorithmes / biométrie"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-12",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. jo.gouv.sn 503/reset (rechecked by lead: tunnel closed); assemblee-nationale.sn reset; artp.sn cert chain unverifiable; numerique.gouv.sn, communication.gouv.sn, senegal.gouv.sn proxy 502/DNS. Ministry domain www.mctn.sn (files on api.mctn.sn). NDT PDF on newdealtechnologique.sn (linked from ministry, footer '© MCTN'); ministry download is a placeholder. CDP PDFs on supabase.co named by CDP site; source_url = CDP page. Convention 108: Loi n° 2016-15 du 6 juillet 2016 (reported JO n° 6960, 3 Sep 2016) not found on JO, CDP pages/database/storage or mctn.sn; vie-publique.sn copy is volunteer-run (not official). Not attached. Units covered: Law: Official Journal (jo.gouv.sn) and National Assembly (assemblee-nationale.sn) unreachable (HTTP 503 / connection reset, curl and WebFetch). Laws read via the CDP's legislation page: Law 2008-12 (automated-decision rule, art. 48). No AI-specific law, deepfake offence or public-sector algorithm rule found; data protection revision bill held as lead.; Government: Digital ministry (mctn.sn, full Documentation and Actualités listings via its public API) and newdealtechnologique.sn: 2023 SNIA (summary + full version) and 2025 New Deal Technologique recorded; Blueprint on data valorisation and National Data Strategy held as leads. numerique.gouv.sn, communication.gouv.sn, senegal.gouv.sn unreachable (proxy 502 / DNS).; Ministries: Sector documents hosted by the digital ministry checked: Justice digital master plan SDNJ2027 and Digital Health strategic plan (no AI mentions), TVET digital strategy (AI mentioned only as a training field). No ministry-specific AI guidance (education, health, justice, defence, finance, labour, interior) found. Searched, nothing found.; Regulators: CDP (cdp.sn, all communiqués, articles and general deliberations): October 2025 AI communiqué recorded; no AI-specific deliberation. ARTP (artp.sn) TLS chain not verifiable; no AI document found by search. BCEAO is regional (not national). No national cyber agency or standards body AI document found.. Not reached: jo.gouv.sn (Official Journal) - HTTP 503 / connection reset; assemblee-nationale.sn - connection reset over HTTPS; artp.sn - TLS certificate chain could not be verified; numerique.gouv.sn / communication.gouv.sn / senegal.gouv.sn - proxy 502 or DNS failure. Could not verify: Law 2008-12 effective date and Official Journal reference (gazette unreachable).; Any AI bills before the National Assembly (assemblee-nationale.sn unreachable).; ARTP AI documents (site TLS not verifiable).. risk-assurance, procurement, cyber-security, transparency, standards, sandbox, index-readiness, sectoral, drafts, international, historical: no material found.",
     "discovery_result_count": 13,
     "focused_result_count": 12
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-f03a11145233",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "SEN",
+      "instrument_id": "i-a5a24ebc6b13",
+      "title": "National Strategy and Roadmap of Senegal on Artificial Intelligence",
+      "detail": "Added to the radar (published 2023).",
+      "from": null,
+      "to": null,
+      "source_url": "https://api.mctn.sn/fichier/afficher?path=medias%2Fdocuments%2F4fSq2GiiCpFrxavgvXerG6ZGibNV2xYHcuEG1d0y.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-3abedb2b0e56",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "SEN",
+      "instrument_id": "i-8f66bd7d00bf",
+      "title": "Technological New Deal – Horizon 2034 (national digital strategy)",
+      "detail": "Added to the radar (published 2025-02-24).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.newdealtechnologique.sn/files/Doc_NDT.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-46ad93bf412b",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "SEN",
+      "instrument_id": "i-9bd631f5bbdf",
+      "title": "Law No. 2008-12 of 25 January 2008 on the Protection of Personal Data",
+      "detail": "Added to the radar (published 2008-01-25).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.cdp.sn/legislation/textes-legislatifs",
+      "needs_review": false
+    },
+    {
+      "id": "c-3cac8d02fbbc",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "SEN",
+      "instrument_id": "i-3f0dfb2a9aa2",
+      "title": "Communiqué on the Use of Artificial Intelligence and the Protection of Personal Data",
+      "detail": "Added to the radar (published 2025-10-08).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.cdp.sn/medias/communiques",
+      "needs_review": false
+    },
+    {
+      "id": "c-791a120a9dc7",
+      "date": "2026-10-12",
+      "recorded": "2026-10-12",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "SEN",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 4 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-f45be43519db",
+      "date": "2025-10-08",
+      "recorded": "2026-10-11",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "SEN",
+      "instrument_id": "i-3f0dfb2a9aa2",
+      "title": "CDP communiqué on AI use and personal data",
+      "detail": "The data protection authority condemned harmful AI-generated content and deepfakes and called for ethical use of AI systems.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.cdp.sn/medias/communiques",
+      "needs_review": false
+    },
+    {
+      "id": "c-0fc3d3b41719",
+      "date": "2025-02-24",
+      "recorded": "2026-10-11",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "SEN",
+      "instrument_id": "i-8f66bd7d00bf",
+      "title": "New Deal Technologique digital strategy launched",
+      "detail": "The President of the Republic launched the national digital strategy New Deal Technologique (Horizon 2034), which includes an AI pillar and commits to a national AI regulatory and ethical framework.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.mctn.sn/post/decouvrez-la-strategie-numerique-du-senegal-le-new-deal-technologique-horizon-2034",
+      "needs_review": false
+    },
+    {
+      "id": "c-1ca05dbd04e3",
+      "date": "2008-01-25",
+      "recorded": "2026-10-11",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "SEN",
+      "instrument_id": "i-9bd631f5bbdf",
+      "title": "Personal data protection law (Law 2008-12) adopted",
+      "detail": "Law No. 2008-12 of 25 January 2008 on personal data protection, including limits on automated decision-making (art. 48), creates the CDP.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.cdp.sn/legislation/textes-legislatifs",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Projet de loi relatif à la protection des données à caractère personnel (révision de la loi n° 2008-12)",
+      "english_title": "Bill on the protection of personal data (revision of Law 2008-12)",
+      "issuing_authority": "Ministry of Communication, Telecommunications and Digital Affairs / Personal Data Protection Commission (CDP)",
+      "note": "A bill to replace Law 2008-12 has been in preparation since 2019; it is reported to cover AI, biometrics, big data and geolocation and to replace the CDP with a new data protection authority. No official text or Council of Ministers adoption was found on official sites as of 2026-10-11. Record as binding_law once adopted and published.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Blueprint National sur la Valorisation des Données",
+      "english_title": "National Blueprint on Data Valorisation (data and AI value-creation roadmap)",
+      "issuing_authority": "Ministry of Telecommunications and Digital Affairs (Directorate of ICT)",
+      "note": "National consultation on data and AI use cases held 1-2 July 2026 and validation workshop held 21-22 September 2026 (ministry news posts on mctn.sn, publications 585 and 661); developed with Smart Africa and GIZ under the SNIA and the national data strategy. The validated document was not published as of 2026-10-11.",
+      "found": "2026-10-11"
+    },
+    {
+      "title": "Stratégie nationale des données (2023 - 2028)",
+      "english_title": "National Data Strategy (2023-2028)",
+      "issuing_authority": "Ministry of Communication, Telecommunications and the Digital Economy",
+      "note": "Official PDF on mctn.sn (https://api.mctn.sn/fichier/afficher?path=medias%2Fdocuments%2FM9stI2FbvBKvgyba5Nku5OyIMd7lF6RHA7FAiRML.pdf) describes itself as the foundation of the AI strategy and includes a data regulatory pillar. Not recorded: the document states no publication date, and it is a data (not AI) strategy. Record under data-privacy/strategy if a dated official version or adoption act is found.",
+      "found": "2026-10-11"
+    }
+  ]
 }
