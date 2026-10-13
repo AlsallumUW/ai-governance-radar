@@ -55,8 +55,10 @@ def build():
     D = assemble()
     t = (ROOT / "site/template.html").read_text(encoding="utf-8")
     payload = json.dumps(D, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
-    for key in ["geometry", "basemap", "flags"]:
-        t = t.replace(f"__{key.upper()}__", (ROOT / f"site/assets/{key}.json").read_text(encoding="utf-8"), 1)
+    t = t.replace("__VENDOR_JS__", (ROOT / "site/vendor/d3-bundle.min.js").read_text(encoding="utf-8").replace("</", "<\\/"), 1)
+    t = t.replace("__GEOMETRY__", (ROOT / "site/assets/world.topo.json").read_text(encoding="utf-8"), 1)
+    t = t.replace("__FLAGS__", (ROOT / "site/assets/flags.json").read_text(encoding="utf-8"), 1)
+    t = t.replace("__APP_JS__", (ROOT / "site/app.js").read_text(encoding="utf-8"), 1)
     t = t.replace("__CHANGELOG_CSS__", (ROOT / "site/changelog.css").read_text(encoding="utf-8"), 1)
     t = t.replace("__CHANGELOG_JS__", (ROOT / "site/changelog.js").read_text(encoding="utf-8"), 1)
     t = t.replace("__DATABASE__", payload, 1)  # last, so data text can never be mistaken for a placeholder
