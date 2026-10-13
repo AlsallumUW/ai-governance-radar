@@ -194,7 +194,7 @@ def fig_years(N, today):
     take = (f"{peak} has the most country instruments ({tot[peak]}). {pct(since23, dated)}% of the {dated:,} dated country instruments were published in 2023 or later; "
             f"{pct(soft, dated)}% of all dated country instruments are non-binding.")
     desc = (f"National, state/provincial and local instruments by publication year. *{keys[-1]} runs to {fmt_date(today)} only. "
-            f"The row beneath the axis counts instruments of regional and international bodies (EU, GCC, AU, ASEAN, Council of Europe, UNESCO, OECD, ICESCO, G7), not stacked.")
+            f"The row beneath the axis counts instruments of regional and international bodies (EU, GCC, AU, ASEAN, Council of Europe, UNESCO, OECD, ICESCO, ALECSO, G7, G20), not stacked.")
     note = f"Undated: {und_c} country, {und_r} regional (not shown)"
     return afig("fig-years", "Instruments per year", take, desc, "".join(o), ["Year", "Binding or mandatory", "Non-binding", "Drafts", "Country total", "Regional bodies"], rows, note, LEGEND), {
         "years_total": sum(tot.values()), "undated_c": und_c, "undated_r": und_r, "regional_dated": sum(reg.values())}
