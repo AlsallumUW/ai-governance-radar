@@ -1,20 +1,33 @@
-# Prompt for the weekly Claude scheduled task
+# Prompt for the daily Claude scheduled task (weekly rotation)
 
-Schedule: every Sunday at 06:00 Riyadh time (Asia/Riyadh). Each run starts a fresh session with this prompt.
+Schedule: every day at 06:00 Riyadh time (Asia/Riyadh). Each run starts a fresh session with this prompt and sweeps that day's group from `research/queue.json` → `sweep_days`.
 
 ---
 
-You are running the weekly update of the AI Governance Radar repository: github.com/AlsallumUW/ai-governance-radar. The goal is one pull request with this week's changes, left open for a person to review. Never merge it.
+You are running today's part of the weekly update of the AI Governance Radar repository (github.com/AlsallumUW/ai-governance-radar). Each day of the week sweeps one group of countries. All runs in a week share one branch and one pull request, which stays open for a person to review. Never merge it, and never push to `main`.
 
-1. **Get the repository.** Clone it, or use the checkout in your working directory, and update `main`. Read in full: `research/WEEKLY.md`, `research/PROTOCOL.md` and `research/BACKFILL.md`. Follow WEEKLY.md step by step. PROTOCOL.md is the standard for every record and wins if anything disagrees.
-2. **Create the branch** `update/<YYYY-MM-DD>` (today's date) from `main`.
-3. **Deep reviews:** run `python3 scripts/next_batch.py` and deep-review any countries it prints (WEEKLY.md step 2). It normally prints nothing.
-4. **Retry list:** try every country in `research/queue.json` `retry` once (WEEKLY.md step 3). Record which ones now load and what changed. Leave the rest on `retry`.
-5. **Pending Convention 108:** try every country in `pending_c108` once (WEEKLY.md step 4).
-6. **Weekly sweep:** cover all 195 countries and the regional bodies (WEEKLY.md step 5). Use one sub-agent per wave plus one for the regional bodies, in parallel. Each sub-agent gets PROTOCOL.md in full and the rules below. Keep CETS 225 `party_status` in `data/regional/COE.json` current. Set `coverage_audit.last_sweep` for every country checked.
-7. **Commit each country** to the branch as soon as its sub-agent finishes.
-8. **Validate:** run `python3 scripts/validate.py` (0 errors required), then `python3 scripts/log_changes.py`, then `python3 scripts/build.py`.
-9. **Push and open the PR.** Push the branch and open one pull request titled `Weekly update <YYYY-MM-DD>`, with the body described in WEEKLY.md step 8. Do not merge it.
+1. **Get the repository.** Clone it, or use the checkout in your working directory. Read `research/WEEKLY.md`, `research/PROTOCOL.md` and `research/BACKFILL.md` in full. Follow WEEKLY.md step by step. PROTOCOL.md is the standard for every record and wins if anything disagrees.
+2. **Work out the day and the week.**
+   - `DAY=$(TZ=Asia/Riyadh date +%u)` gives 1 (Monday) to 7 (Sunday). `WEEK=$(TZ=Asia/Riyadh date +%G-W%V)`.
+   - Today's group is the entry in `research/queue.json` → `sweep_days.days` whose `day` equals `DAY`.
+   - Day 1 also covers the regional bodies and any deep reviews printed by `scripts/next_batch.py`.
+3. **Branch** `update/week-$WEEK`.
+   - If it already exists on origin, check it out and merge `origin/main` into it (keep both sides on conflicts).
+   - Otherwise create it from `main`.
+4. **Sweep today's group only** (WEEKLY.md step 4).
+   - This is a change check, not a deep review: at most 5 minutes per country.
+   - Run sub-agents in parallel, each taking a slice of the group. Give each one PROTOCOL.md in full and the rules below.
+   - Set `coverage_audit.last_sweep` to today for every country checked.
+5. **Day 1 only: regional bodies** (WEEKLY.md step 5). Keep CETS 225 `party_status` in `data/regional/COE.json` current.
+6. **Retry and Convention 108 in today's group** (WEEKLY.md step 6).
+   - Try each of today's countries that is on `retry` once, and record which now load and what changed.
+   - Try each of today's countries on `pending_c108` once.
+7. **Commit each country** to the branch as soon as its sub-agent finishes, and push.
+8. **Validate:** run `python3 scripts/validate.py` (0 errors required), then `python3 scripts/log_changes.py`, then `python3 scripts/build.py`. Commit and push.
+9. **Pull request** (WEEKLY.md step 9).
+   - If no open PR exists for `update/week-$WEEK`, open one titled `Weekly update $WEEK`.
+   - If one exists, update its body: add or replace today's `## Day <DAY> (<weekday> <date>): <group>` section, keep the other days' sections, and refresh the week summary at the top.
+   - Never merge.
 
 Rules (full text in PROTOCOL.md and WEEKLY.md):
 
@@ -51,7 +64,7 @@ Rules (full text in PROTOCOL.md and WEEKLY.md):
 
 **Convention 108**
 - Add a country to `applies_to` only from its own ratification or accession act. For countries that ratify by executive act, the official treaty series or foreign-ministry treaty record counts as the source.
-- Otherwise keep it on `pending_c108`.
+- Otherwise keep the country on `pending_c108`.
 
 **CETS 225**
 - `signed` comes from the Council of Europe's official page.
@@ -60,9 +73,9 @@ Rules (full text in PROTOCOL.md and WEEKLY.md):
 **Fetching**
 - Fetch with curl (`--max-time 60`), then WebFetch. Mark a record located-only only after both fail.
 - Every download has a 60–90 second limit.
-- Never spend more than 10 minutes on one site.
+- Spend at most 5 minutes per country in the sweep, and never more than 10 minutes on one site.
 - Never download more than 100 gazette issues in one run.
-- If a site blocks automated access, try the issuer's other official channels (gazette, consultation portal, other official pages). If none works, leave the field null and list it under "Could not verify".
+- If a site blocks automated access, try the issuer's other official channels. If none works, leave the field null and list it under "Could not verify".
 
 **Repository**
 - Keep instrument ids stable.
@@ -71,10 +84,10 @@ Rules (full text in PROTOCOL.md and WEEKLY.md):
 
 **Finish** with a short summary:
 - the PR link
-- countries deep-reviewed
+- the day and group
+- countries swept, and countries not swept or stopped by the cap
 - retry countries that now load
 - Convention 108 or CETS 225 changes
 - the number of government actions found
 - records added
 - the number of items needing review
-- countries not swept
