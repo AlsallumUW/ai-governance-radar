@@ -48,9 +48,9 @@ A file hosted by a third party counts as official only if the issuing body's own
 Regulator decisions cite the decision itself, not the media release about it.
 Central-government publication portals (e.g. France's vie-publique.fr and ia.numerique.gouv.fr) count as official channels for documents of that government's own bodies.
 
-An official gazette copy hosted by another state body (e.g. a central bank or a national legal information institute run by the state) counts as official.
+An official gazette copy hosted by another state body (e.g. a central bank or a national legal information institute run by the state) counts as official. The same applies to an official copy of any other government document hosted by another state body (e.g. a state planning institute's repository) when the issuer's own site cannot be reached; say in `current_status` where the copy is hosted.
 
-Scope test: an instrument is included only if it governs, steers or sets expectations for AI. An institution's internal plan to use AI, or a general instrument that only mentions AI in passing (e.g. on a form), goes to leads.
+Scope test: an instrument is included only if it governs, steers or sets expectations for AI. An institution's internal plan to use AI, or a general instrument that only mentions AI in passing (e.g. on a form), goes to leads. Curricula about AI and single institutions' internal policies (e.g. one university's AI-use policy) are leads; sector-wide rules from a regulator or ministry are records.
 
 ## 2. Where to search (every country, every time)
 
@@ -109,6 +109,7 @@ Required for a deep-reviewed country:
 - `publication_date`: ISO date (`YYYY-MM-DD`, or `YYYY-MM` / `YYYY` if that is all the source states)
 - `effective_date`: for binding instruments, when it applies (null for guidance)
 - `legal_status`: one of `binding_law`, `binding_regulation`, `administrative_policy_mandatory_in_scope`, `administrative_guideline`, `nonbinding_guidance`, `voluntary_code`, `national_strategy`, `consultation_draft`, `regulatory_opinion`, `international_treaty`
+  Court and judicial-council AI rules (practice directions, notices, judicial codes) are classed `administrative_policy_mandatory_in_scope` (binding on courts and court users only), not general regulations.
 - `lifecycle`: `draft` | `consultation` | `published` | `adopted` | `in_force` | `superseded` | `repealed`
 - `summary`: 2–3 sentences specific to this document, covering what it does, who it binds or guides, and any key obligations. **No boilerplate.**
 - `language`: ISO 639-1 code

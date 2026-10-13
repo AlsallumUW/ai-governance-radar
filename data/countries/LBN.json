@@ -275,6 +275,60 @@
       "subnational_unit": null,
       "source_id": "s-e55316a5d2ab",
       "organization_id": "o-49404c520fb1"
+    },
+    {
+      "id": "i-06f80456b695",
+      "jurisdiction_id": "LBN",
+      "authority_type": "ministry",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Lebanon (national health sector)",
+      "sectors": [
+        "health"
+      ],
+      "technology_scope": [
+        "AI",
+        "digital health"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-bf599101b5a1"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-10-13",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-926baa39f2cd",
+      "organization_id": "o-49404c520fb1",
+      "first_recorded": "2026-10-13",
+      "last_changed": null,
+      "evidence_reference": "curl (browser user agent, --max-time 60): MoPH strategy page (Pages/0/82273, 'Download National Digital Health Transformation Strategy 2025 - 2030', minister's foreword) and MoPH launch news page (Pages/0/80330, 'Date: 03/09/2025') read; 168-page PDF downloaded from moph.gov.lb and read with pdftotext (foreword, overview, chapter 5 governance priorities, chapter 6 'AI-Native Approach' incl. 6.2 design principles, 6.5-6.7 AI regulation and implementation requirements).",
+      "official_webpage_url": "https://www.moph.gov.lb/en/Pages/0/82273/national-digital-health-transformation-strategy-2025-2030",
+      "effective_date": null,
+      "official_title": "National Digital Health Transformation Strategy 2025-2030",
+      "english_title": "National Digital Health Transformation Strategy 2025-2030 (Digital Health Lebanon 2025-2030, with aspirations for 2040)",
+      "issuing_authority": "Ministry of Public Health",
+      "categories": [
+        "strategy",
+        "sectoral"
+      ],
+      "category": "strategy",
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2025-09-03",
+      "current_status": "Launched by Minister of Public Health Dr. Rakan Nassereldine with UNICEF on 3 September 2025 (MoPH launch notice dated 03/09/2025, with Ministers Fadi Makki (OMSAR) and Kamal Shehadi (Technology and AI) attending); full PDF published on the MoPH Strategic Plans page. Developed with UNICEF and the Copenhagen Institute for Futures Studies; builds on the MoPH 2023 Vision for Digital Health Transformation (cited in its references), which it does not state that it replaces. The AI-specific health regulations, ethics review board and AI oversight committee it calls for were not found published. Publication date source: MoPH launch news page 'Date: 03/09/2025'; the PDF itself carries no date beyond the 2025-2030 period.",
+      "summary": "The Ministry of Public Health's sectoral strategy for digitalising Lebanon's health system to 2030, organised around transformation priorities such as e-health governance (an e-Health Governance Council), standards and interoperability, workforce, policies and regulations and an innovation hub. Its chapter 6 'AI-Native Approach' sets design principles for health AI (human-centred design, transparency and explainability, clinical validation by human experts before use, privacy-by-design, equity, quality and safety, regulatory compliance as medical devices) and calls for AI-specific health regulations on bias detection, transparency and accountability guided by WHO principles, an AI oversight committee within the e-Health Governance Council, an ethics review board for AI applications and regulatory sandboxes in the innovation hub.",
+      "language": "en",
+      "source_url": "https://www.moph.gov.lb/userfiles/files/About%20MOPH/StrategicPlans/National%20Digital%20Health%20Transformation%20Strategy%20%202025%20-%202030/Digital%20health%20transformation%20final.pdf",
+      "official_pdf_url": "https://www.moph.gov.lb/userfiles/files/About%20MOPH/StrategicPlans/National%20Digital%20Health%20Transformation%20Strategy%20%202025%20-%202030/Digital%20health%20transformation%20final.pdf",
+      "source_kind": "official_document",
+      "publisher_name": "Ministry of Public Health",
+      "ai_governance_relevance": "Lebanese national sectoral instrument steering AI in health (strategy, sectoral)."
     }
   ],
   "organizations": [
@@ -466,6 +520,33 @@
       "document_language": "en",
       "error": null,
       "content_type": null
+    },
+    {
+      "id": "s-926baa39f2cd",
+      "url": "https://www.moph.gov.lb/userfiles/files/About%20MOPH/StrategicPlans/National%20Digital%20Health%20Transformation%20Strategy%20%202025%20-%202030/Digital%20health%20transformation%20final.pdf",
+      "jurisdiction_ids": [
+        "LBN"
+      ],
+      "source_institutions": [
+        "Ministry of Public Health"
+      ],
+      "instrument_ids": [
+        "i-06f80456b695"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "sectoral"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl (browser user agent, --max-time 60): PDF downloaded from moph.gov.lb (200, application/pdf, 168 pages) and read with pdftotext; linked from the MoPH strategy page https://www.moph.gov.lb/en/Pages/0/82273/national-digital-health-transformation-strategy-2025-2030; launch date from the MoPH news page https://www.moph.gov.lb/en/Pages/0/80330/launching-the-national-strategy-for-digital-transformation-in-the-health-sector-2025-2030 ('Date: 03/09/2025').",
+      "http_status": 200,
+      "final_url": "https://www.moph.gov.lb/userfiles/files/About%20MOPH/StrategicPlans/National%20Digital%20Health%20Transformation%20Strategy%20%202025%20-%202030/Digital%20health%20transformation%20final.pdf",
+      "link_status": "reachable",
+      "page_title": "National Digital Health Transformation Strategy 2025-2030",
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
     }
   ],
   "regional_applicability": [],
@@ -550,7 +631,43 @@
       "Lebanon national cybersecurity strategy 2019 artificial intelligence Presidency Council of Ministers pdf",
       "OMSAR Lebanon artificial intelligence guidelines public sector use generative AI government employees",
       "LIBNOR ISO/IEC 42001 artificial intelligence standard Lebanon adoption",
-      "Lebanon Ministry of Public Health artificial intelligence guidance OR Telecommunications Regulatory Authority artificial intelligence Lebanon"
+      "Lebanon Ministry of Public Health artificial intelligence guidance OR Telecommunications Regulatory Authority artificial intelligence Lebanon",
+      "وزارة التربية والتعليم العالي لبنان الذكاء الاصطناعي تعميم استخدام",
+      "Lebanon ministry artificial intelligence guidelines circular 2025 2026 gov.lb",
+      "وزارة العدل لبنان الذكاء الاصطناعي القضاء تعميم 2025",
+      "mehe.gov.lb artificial intelligence; mehe.gov.lb site search (ar/en) الذكاء الاصطناعي / artificial intelligence; MEHE circulars list",
+      "وزارة الصحة العامة لبنان الذكاء الاصطناعي إرشادات moph.gov.lb",
+      "site:moph.gov.lb \"artificial intelligence\"; moph.gov.lb Strategic Plans page",
+      "Lebanon Ministry of Public Health AI health strategy 2026 OR \"digital health strategy\" artificial intelligence moph",
+      "\"National Digital Health Transformation Strategy\" Lebanon 2025-2030 pdf moph.gov.lb",
+      "Lebanon Ministry of Finance artificial intelligence strategy OR guidelines finance.gov.lb customs AI",
+      "site:finance.gov.lb artificial intelligence",
+      "Lebanon Ministry of Economy and Trade OR Ministry of Industry artificial intelligence strategy document official 2025",
+      "\"الاستراتيجية الوطنية للذكاء الاصطناعي في الصناعة\" لبنان وزارة الصناعة pdf",
+      "site:justice.gov.lb الذكاء الاصطناعي",
+      "\"وزير العدل\" لبنان \"الذكاء الاصطناعي\" المحاكم مكننة قرار 2026",
+      "مجلس القضاء الأعلى لبنان الذكاء الاصطناعي القضاة تعميم استخدام",
+      "Lebanon Ministry of Justice artificial intelligence judiciary digital transformation strategy Adel Nassar",
+      "site:omsar.gov.lb الذكاء الاصطناعي",
+      "OMSAR \"artificial intelligence\" guidelines public administration Lebanon 2026",
+      "وزير التنمية الإدارية فادي مكي الذكاء الاصطناعي القطاع العام إطار OR دليل OR سياسة",
+      "\"Reinventing Government 2030\" Lebanon OMSAR strategy artificial intelligence",
+      "\"إعادة ابتكار الحكومة\" OR \"إعادة اختراع الحكومة\" 2030 لبنان وزارة التنمية الإدارية",
+      "وزارة الإعلام لبنان ميثاق الذكاء الاصطناعي الإعلام مرقص",
+      "Lebanon Ministry of Information Paul Morcos artificial intelligence media guidelines deepfake 2026",
+      "Liban ministère intelligence artificielle stratégie guide 2026 ministère de la Santé OR Agriculture OR Travail OR Justice",
+      "قوى الأمن الداخلي لبنان الذكاء الاصطناعي مذكرة OR تعميم OR استراتيجية",
+      "Lebanon Internal Security Forces OR \"General Security\" OR \"Ministry of Interior\" artificial intelligence policy guidelines official document",
+      "الجيش اللبناني الذكاء الاصطناعي استراتيجية OR سياسة lebarmy.gov.lb",
+      "وزارة الزراعة لبنان OR وزارة العمل لبنان OR وزارة البيئة لبنان \"الذكاء الاصطناعي\" استراتيجية خطة",
+      "Lebanon \"Ministry of Agriculture\" OR \"Ministry of Energy\" OR \"Ministry of Environment\" OR \"Ministry of Labor\" artificial intelligence strategy document 2025 2026",
+      "Lebanon Ministry of Telecommunications OR Ministry of Tourism OR Ministry of Displaced artificial intelligence policy document",
+      "وزارة الاقتصاد والتجارة لبنان الذكاء الاصطناعي حماية المستهلك OR وزارة الشؤون الاجتماعية الذكاء الاصطناعي لبنان دليل",
+      "site:economy.gov.lb artificial intelligence",
+      "وزارة الخارجية والمغتربين لبنان الذكاء الاصطناعي OR وزارة السياحة لبنان الذكاء الاصطناعي استراتيجية",
+      "Karami Ministry of Education Lebanon artificial intelligence policy schools 2026 launch",
+      "الوزيرة كرامي الذكاء الاصطناعي إطلاق سياسة OR إطار OR دليل التعليم 2026",
+      "Ministry homepages fetched and scanned for AI terms: mehe, moph, justice, finance, customs, economy, industry, labor, lebarmy, mfa, interior, isf, general-security, agriculture, public-works, energyandwater, moe, culture, mot, ministryinfo, mpt, pcm, csb, cnss, mosa, omsar, ppa, crdp, cnrs, tra, mitai (.gov.lb)"
     ],
     "review_date": "2026-10-07",
     "passes": {
@@ -569,11 +686,26 @@
       "regional_inheritance": "COMPLETE",
       "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "Searched official sources (official language and English) with no AI-specific published instrument found for: binding AI law (Parliament law lists 2024-2026 checked), risk/assurance, procurement, cyber-security AI guidance, transparency, standards (LIBNOR), sandbox (MITAI mentions a planned AI sandbox, no instrument), index/readiness (no UNESCO RAM for Lebanon), drafts with published text (pending drafts are recorded as leads), international treaties (no AI treaty signed; UNESCO Recommendation via regional file), historical (2019 industry AI strategy has no official copy). Technical review notes: Deep review 2026-10-07. Parliament law database (lp.gov.lb) serves the full text of Law 81/2018; its 2024-2026 law lists contain no AI or digital law. Blocked or unreachable for automated reading: omsar.gov.lb (Cloudflare challenge; old /Assets PDFs return 404 after site migration), economy.gov.lb and bdl.gov.lb (403), pcm.gov.lb, mot.gov.lb, tra.gov.lb, industry.gov.lb and libnor.gov.lb (connection timeouts), crdp.org HTML pages (403; the PDF downloaded), jo.pcm.gov.lb (Official Gazette, subscription login). mitai.gov.lb is a JavaScript app; its Public Consultations and Knowledge Hub pages list the National AI Framework, AI Readiness Framework, Cloud Policy Framework, Cyber Readiness Framework and an AI Law as 'coming soon' or 'proposed' with no downloadable text (recorded as leads). Not recorded: the Lebanese University Faculty of Law 'Guidelines on Governance and Ethics of AI in Lebanon' (academic, not a government instrument); MITAI news items and MoUs (press releases); the 2019 National Cyber Security Strategy (no AI content located and no official copy online). The 2019 Ministry of Industry AI strategy exists only as an ESCWA-hosted copy (lead). UNESCO Recommendation on the Ethics of AI applies through the UNESCO regional file. No subnational pass needed.",
+    "no_material_found_note": "Searched official sources (official language and English) with no AI-specific published instrument found for: binding AI law (Parliament law lists 2024-2026 checked), risk/assurance, procurement, cyber-security AI guidance, transparency, standards (LIBNOR), sandbox (MITAI mentions a planned AI sandbox, no instrument), index/readiness (no UNESCO RAM for Lebanon), drafts with published text (pending drafts are recorded as leads), international treaties (no AI treaty signed; UNESCO Recommendation via regional file), historical (2019 industry AI strategy has no official copy). Technical review notes: Deep review 2026-10-07. Parliament law database (lp.gov.lb) serves the full text of Law 81/2018; its 2024-2026 law lists contain no AI or digital law. Blocked or unreachable for automated reading: omsar.gov.lb (Cloudflare challenge; old /Assets PDFs return 404 after site migration), economy.gov.lb and bdl.gov.lb (403), pcm.gov.lb, mot.gov.lb, tra.gov.lb, industry.gov.lb and libnor.gov.lb (connection timeouts), crdp.org HTML pages (403; the PDF downloaded), jo.pcm.gov.lb (Official Gazette, subscription login). mitai.gov.lb is a JavaScript app; its Public Consultations and Knowledge Hub pages list the National AI Framework, AI Readiness Framework, Cloud Policy Framework, Cyber Readiness Framework and an AI Law as 'coming soon' or 'proposed' with no downloadable text (recorded as leads). Not recorded: the Lebanese University Faculty of Law 'Guidelines on Governance and Ethics of AI in Lebanon' (academic, not a government instrument); MITAI news items and MoUs (press releases); the 2019 National Cyber Security Strategy (no AI content located and no official copy online). The 2019 Ministry of Industry AI strategy exists only as an ESCWA-hosted copy (lead). UNESCO Recommendation on the Ethics of AI applies through the UNESCO regional file. No subnational pass needed. Ministry catch-up 2026-10-13 (PROTOCOL §2 ministry rule, applied after this country's deep review; one agent, 30 minutes, national ministries' own AI documents only, nothing else re-reviewed): 1 record(s) added. Ministries: Education and Higher Education (MEHE, incl. higher education/research): MEHE site search and circulars list checked; no ministry AI policy or circular found beyond the CRDP AI Education Framework already recorded; CNRS homepage: nothing found. Public Health (MoPH): National Digital Health Transformation Strategy 2025-2030 with an AI-native chapter (recorded); MoPH AI-in-healthcare webinar listings are events, not instruments. Justice (incl. judiciary, prosecution): justice.gov.lb homepage and searches; nothing found. Defence / Lebanese Armed Forces: lebarmy.gov.lb homepage and searches; nothing found. Finance (incl. tax, customs): finance.gov.lb homepage and searches; only press statements on planned customs AI risk analysis and an AI spokesperson; no document; customs.gov.lb unreachable. Interior / ISF / General Security: isf.gov.lb and general-security.gov.lb homepages and searches; only magazine articles and interviews (General Security magazine), no instrument; interior.gov.lb unreachable. Foreign Affairs and Emigrants: searches only (mfa.gov.lb unreachable); nothing found. Labour / Social Affairs / NSSF: searches; cnss.gov.lb homepage nothing; labor.gov.lb (403) and mosa.gov.lb unreachable; nothing found. Agriculture, Energy and Water, Environment, Culture: homepages and searches; nothing found. Telecommunications: Draft National Telecommunications and Digital Infrastructure Policy 2026-2030 (consultation draft, 10 March 2026) mentions AI only in passing (lead). Economy and Trade: searches only (economy.gov.lb 403); nothing found. Industry: industry.gov.lb unreachable; 2019 industry AI strategy remains a lead. Information: searches only (ministryinfo.gov.lb 403); anti-disinformation work but no AI document. Tourism: AI tourism app launch (product, not instrument); mot.gov.lb unreachable. Public Works and Transport, Youth and Sports: unreachable; searches found nothing. Administrative Development (OMSAR) / Civil Service Board: omsar.gov.lb 403; searches show the Reinventing Government 2030 reform and a civil-servant digital/AI readiness survey MoU, but no AI guidance for public servants; csb.gov.lb only a virtual-assistant feature. Technology and AI (MITAI): site bundle re-checked; frameworks still listed without documents (National AI Talent Development Policy added as lead).. Not reached: Ministry of Industry (industry.gov.lb: TLS failure / 503); Ministry of Interior and Municipalities (interior.gov.lb: proxy 502); Ministry of Foreign Affairs and Emigrants (mfa.gov.lb: connection reset); Ministry of Public Works and Transport (public-works.gov.lb: proxy 502); Ministry of Social Affairs (mosa.gov.lb: proxy 502); Ministry of Tourism (mot.gov.lb: connection reset); Ministry of Youth and Sports (proxy 502); Ministry of Economy and Trade, Ministry of Labor, Ministry of Information, OMSAR (403 to curl and WebFetch); Lebanese Customs (customs.gov.lb: TLS failure); Presidency of the Council of Ministers (pcm.gov.lb: TLS failure). Could not verify: Whether any ministry behind 403/unreachable sites (Economy, Labor, Information, Interior, MFA, Industry, Social Affairs, Public Works, Tourism, OMSAR) has an unpublicised AI document; searches found none..",
     "discovery_result_count": 30,
     "focused_result_count": 5
   },
   "changes": [
+    {
+      "id": "c-c747ffd39cbb",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "LBN",
+      "instrument_id": "i-06f80456b695",
+      "title": "National Digital Health Transformation Strategy 2025-2030 (Digital Health Lebanon 2025-2030, with aspirations for 2040)",
+      "detail": "Added to the radar (published 2025-09-03).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.moph.gov.lb/userfiles/files/About%20MOPH/StrategicPlans/National%20Digital%20Health%20Transformation%20Strategy%20%202025%20-%202030/Digital%20health%20transformation%20final.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-345615d62a3f",
       "date": "2026-10-07",
@@ -680,6 +812,21 @@
       "needs_review": false
     },
     {
+      "id": "c-22ebffb6f7f3",
+      "date": "2025-09-03",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "LBN",
+      "instrument_id": "i-06f80456b695",
+      "title": "Ministry of Public Health launches National Digital Health Transformation Strategy 2025-2030",
+      "detail": "Minister of Public Health Rakan Nassereldine launched the strategy with UNICEF; it includes an AI-native chapter with health-AI design principles and calls for AI-specific health regulation and an AI oversight committee.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.moph.gov.lb/en/Pages/0/80330/launching-the-national-strategy-for-digital-transformation-in-the-health-sector-2025-2030",
+      "needs_review": false
+    },
+    {
       "id": "c-94dd41d4ed1a",
       "date": "2025-05-15",
       "recorded": "2026-10-07",
@@ -773,6 +920,20 @@
       "issuing_authority": "Ministry of State for Technology and AI (NUMU programme)",
       "note": "Offered on mitai.gov.lb/numu behind a sign-up form; not openly downloadable.",
       "found": "2026-10-07"
+    },
+    {
+      "title": "National Telecommunications and Digital Infrastructure Policy (2026–2030), Draft 1.0 – 10 March 2026",
+      "english_title": "National Telecommunications and Digital Infrastructure Policy 2026-2030 (draft for public consultation)",
+      "issuing_authority": "Ministry of Telecommunications",
+      "note": "Official consultation draft on mpt.gov.lb (cms.mpt.gov.lb/uploads/2026/3/10/17731505154557af70eca002e4cd4aca09c15a641ad3e.pdf; news item 10 Mar 2026). Mentions AI only in passing (says AI needs separate laws and frameworks; calls for coordination with the AI ministry), so it fails the scope test; recheck if a final version adds AI provisions.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "National AI Talent Development Policy",
+      "english_title": "National AI Talent Development Policy",
+      "issuing_authority": "Ministry of State for Technology and Artificial Intelligence",
+      "note": "Listed as a milestone on mitai.gov.lb ('long-term national roadmap for cultivating AI skills, attracting global expertise, and retaining top local talent'); no document published.",
+      "found": "2026-10-13"
     }
   ]
 }
