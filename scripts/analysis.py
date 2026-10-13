@@ -194,7 +194,7 @@ def fig_years(N, today):
     take = (f"{peak} has the most country instruments ({tot[peak]}). {pct(since23, dated)}% of the {dated:,} dated country instruments were published in 2023 or later; "
             f"{pct(soft, dated)}% of all dated country instruments are non-binding.")
     desc = (f"National, state/provincial and local instruments by publication year. *{keys[-1]} runs to {fmt_date(today)} only. "
-            f"The row beneath the axis counts instruments of regional bodies (EU, GCC, AU, ASEAN, Council of Europe, UNESCO), not stacked.")
+            f"The row beneath the axis counts instruments of regional and international bodies (EU, GCC, AU, ASEAN, Council of Europe, UNESCO, OECD, ICESCO, G7), not stacked.")
     note = f"Undated: {und_c} country, {und_r} regional (not shown)"
     return afig("fig-years", "Instruments per year", take, desc, "".join(o), ["Year", "Binding or mandatory", "Non-binding", "Drafts", "Country total", "Regional bodies"], rows, note, LEGEND), {
         "years_total": sum(tot.values()), "undated_c": und_c, "undated_r": und_r, "regional_dated": sum(reg.values())}
@@ -514,7 +514,7 @@ def head1(title, desc, canon):
 
 
 def nav(active):
-    links = [("analysis", "Analysis"), ("timeline", "Timeline")]
+    links = [("analysis", "Analysis"), ("timeline", "Timeline"), ("suggest", "Suggest an update")]
     return ('<header class="topnav"><a class="back" id="backToMap" href="../">← World map</a><span class="site">AI Governance Radar</span>'
             '<nav class="toc sitenav" aria-label="Site">' + "".join(f'<a href="../{k}/"{" aria-current=page" if k == active else ""}>{v}</a>' for k, v in links)
             + '<a href="../?about=method">Methodology</a></nav></header>')
@@ -522,7 +522,7 @@ def nav(active):
 
 def foot(D):
     return (f'<footer class="pagefoot"><p>AI Governance Radar · official government sources only · data as of {e(fmt_date(D["meta"].get("build_date")))}</p>'
-            '<p><a href="../">World map</a> · <a href="../analysis/">Analysis</a> · <a href="../timeline/">Timeline</a> · <a href="../?about=method">Methodology</a></p></footer>')
+            '<p><a href="../">World map</a> · <a href="../analysis/">Analysis</a> · <a href="../timeline/">Timeline</a> · <a href="../suggest/">Suggest an update</a> · <a href="../?about=method">Methodology</a></p></footer>')
 
 
 DISCOVERY = "Recent years are better represented: newer documents are more often online, so growth since 2023 is partly a discovery effect."
@@ -640,8 +640,39 @@ def timeline_page(D, ctx):
     return "".join(H)
 
 
+# ---------------------------------------------------------------- update requests
+REPO_URL = "https://github.com/AlsallumUW/ai-governance-radar"
+SUGGEST_NOTE = "Suggestions are checked against official sources before anything is added. Submitting requires a free GitHub account."
+
+
+def suggest_page(D, ctx):
+    """A static form that opens a prefilled GitHub issue (template update-request.yml). No server, no e-mail."""
+    canon = f"{SITE_URL}suggest/"
+    title = "Suggest an update | AI Governance Radar"
+    desc = "Suggest a new AI-governance document, a correction, a status change or a broken link. Suggestions are checked against official sources."
+    juris = sorted(D["jurisdictions"], key=lambda j: (j["type"] != "country", j["name"]))
+    opts = ('<optgroup label="Countries">' + "".join(f'<option value="{e(j["id"])}">{e(j["name"])}</option>' for j in juris if j["type"] == "country") + '</optgroup>'
+            '<optgroup label="International bodies">' + "".join(f'<option value="{e(j["id"])}">{e(j["name"])}</option>' for j in juris if j["type"] != "country") + '</optgroup>')
+    kinds = ["New instrument", "Correction", "Status change", "Broken link"]
+    H = [head1(title, desc, canon), '<body class="cp sg">', nav("suggest"), '<main class="page">']
+    H.append('<header class="hero sg-hero"><p class="eyebrow">Update requests</p><h1>Suggest an update</h1>'
+             '<p class="stats-note">Found a new official AI-governance document, an error, a change of status or a broken link? Send it here. '
+             'Please give the official source: the document itself or the issuing body\'s own page. News articles, aggregators and social media cannot be used.</p></header>')
+    H.append(f'<form class="sg-form" id="sgForm" data-repo="{e(REPO_URL)}" novalidate>'
+             f'<label>Country or body<select name="country" id="sgCountry" required><option value="">Choose…</option>{opts}</select></label>'
+             '<fieldset><legend>What is new or wrong?</legend>' + "".join(
+                 f'<label class="radio"><input type="radio" name="change_type" value="{e(k)}"{" checked" if n == 0 else ""}> {e(k)}</label>' for n, k in enumerate(kinds)) + '</fieldset>'
+             '<label>Official source URL <span class="req">(required)</span><input type="url" name="source_url" id="sgUrl" required placeholder="https://" inputmode="url" autocomplete="off"></label>'
+             '<label>Notes<textarea name="notes" rows="5" placeholder="What should change, and where on the site (instrument title or page)."></textarea></label>'
+             '<p class="sg-error" id="sgError" role="alert" hidden></p>'
+             '<p class="sg-actions"><button type="submit" class="btn btn-primary">Open a GitHub issue</button></p>'
+             f'<p class="sg-note">{e(SUGGEST_NOTE)}</p></form>')
+    H.append('</main>' + foot(D) + '<script src="../assets/suggest.js" defer></script></body></html>')
+    return "".join(H)
+
+
 def write(D, recs, out, ctx):
-    for p, html_ in (("analysis", analysis_page(D, recs, ctx)), ("timeline", timeline_page(D, ctx))):
+    for p, html_ in (("analysis", analysis_page(D, recs, ctx)), ("timeline", timeline_page(D, ctx)), ("suggest", suggest_page(D, ctx))):
         (out / p).mkdir(parents=True, exist_ok=True)
         (out / p / "index.html").write_text(html_, encoding="utf-8")
 
