@@ -278,54 +278,6 @@
       "organization_id": "o-30d537113972"
     },
     {
-      "id": "i-1c0f7fe974ad",
-      "official_title": "100 Practical Applications and Use Cases of Generative AI",
-      "english_title": "100 Practical Applications and Use Cases of Generative AI",
-      "jurisdiction_id": "ARE",
-      "issuing_authority": "UAE Artificial Intelligence, Digital Economy and Remote Work Applications Office",
-      "publisher_name": "UAE Artificial Intelligence, Digital Economy and Remote Work Applications Office",
-      "authority_type": null,
-      "government_level": "national",
-      "categories": [
-        "generative-ai"
-      ],
-      "category": "generative-ai",
-      "subcategory": null,
-      "legal_status": "nonbinding_guidance",
-      "publication_date": "2023-04",
-      "effective_date": null,
-      "last_amended_date": null,
-      "current_status": "Published guide, version 1 (April 2023).",
-      "scope": null,
-      "sectors": [],
-      "technology_scope": [
-        "AI"
-      ],
-      "summary": "Government guide to generative AI tools and 100 use cases for individuals, businesses and employees. Includes responsible-use advice: protect personal data, verify output reliability, keep human review before relying on generated content.",
-      "ai_governance_relevance": "Primary-source material for assessing generative-ai.",
-      "source_url": "https://ai.gov.ae/wp-content/uploads/2023/04/406.-Generative-AI-Guide_ver1-EN.pdf",
-      "official_pdf_url": "https://ai.gov.ae/wp-content/uploads/2023/04/406.-Generative-AI-Guide_ver1-EN.pdf",
-      "official_webpage_url": null,
-      "language": "en",
-      "supersedes": [],
-      "superseded_by": [],
-      "related_instruments": [],
-      "regional_applicability": [],
-      "verification_date": "2026-10-06",
-      "verification_level": "reviewed_primary_metadata",
-      "metadata_gaps": [],
-      "source_kind": "official_document",
-      "evidence_reference": "deep-review-2026-10-06",
-      "link_status": "reachable",
-      "document_access_type": "original_government_document",
-      "lifecycle": "published",
-      "first_recorded": "2026-10-06",
-      "last_changed": null,
-      "subnational_unit": null,
-      "source_id": "s-55725b3cfee5",
-      "organization_id": "o-059246e188c9"
-    },
-    {
       "id": "i-6a95fff66327",
       "official_title": "The Practical Applications of Generative AI in Media: 100 Use Cases and Applications",
       "english_title": "100 Practical Applications and Use Cases of Generative AI in Media",
@@ -1170,32 +1122,6 @@
       "content_type": null
     },
     {
-      "id": "s-55725b3cfee5",
-      "url": "https://ai.gov.ae/wp-content/uploads/2023/04/406.-Generative-AI-Guide_ver1-EN.pdf",
-      "jurisdiction_ids": [
-        "ARE"
-      ],
-      "source_institutions": [
-        "UAE Artificial Intelligence, Digital Economy and Remote Work Applications Office"
-      ],
-      "instrument_ids": [
-        "i-1c0f7fe974ad"
-      ],
-      "categories_reviewed": [
-        "generative-ai"
-      ],
-      "date_reviewed": "2026-10-06",
-      "checked_date": "2026-10-06",
-      "check_method": "Read through web fetch during deep review",
-      "http_status": 200,
-      "final_url": "https://ai.gov.ae/wp-content/uploads/2023/04/406.-Generative-AI-Guide_ver1-EN.pdf",
-      "link_status": "reachable",
-      "page_title": null,
-      "document_language": "en",
-      "error": null,
-      "content_type": null
-    },
-    {
       "id": "s-d29b07f5086b",
       "url": "https://assets.u.ae/api/public/content/51a27b64ceb34313b6fc4543f1c3d4ed?v=f3dd1a12",
       "jurisdiction_ids": [
@@ -1581,6 +1507,21 @@
   },
   "changes": [
     {
+      "id": "c-201e752e56c9",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "removed",
+      "jurisdiction_id": "ARE",
+      "instrument_id": "i-1c0f7fe974ad",
+      "title": "100 Practical Applications and Use Cases of Generative AI",
+      "detail": "Removed from the radar (not an official source, duplicate, or out of scope).",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
       "id": "c-32889be6ccda",
       "date": "2026-10-06",
       "recorded": "2026-10-06",
@@ -1653,21 +1594,6 @@
       "from": null,
       "to": null,
       "source_url": "https://assets.u.ae/api/public/content/efd38f961c104415a22db5e177a73e02?v=57989b9e",
-      "needs_review": false
-    },
-    {
-      "id": "c-ab5ded9b485b",
-      "date": "2026-10-06",
-      "recorded": "2026-10-06",
-      "kind": "radar",
-      "type": "added",
-      "jurisdiction_id": "ARE",
-      "instrument_id": "i-1c0f7fe974ad",
-      "title": "100 Practical Applications and Use Cases of Generative AI",
-      "detail": "Added to the radar (published 2023-04).",
-      "from": null,
-      "to": null,
-      "source_url": "https://ai.gov.ae/wp-content/uploads/2023/04/406.-Generative-AI-Guide_ver1-EN.pdf",
       "needs_review": false
     },
     {
@@ -2042,6 +1968,13 @@
       "issuing_authority": "UAE Government (National Committee for Agentic AI per u.ae)",
       "note": "Full text at uaemodel.egsep.ae; issuer and date not stated in the document. Confirm before recording.",
       "found": "2026-10-06"
+    },
+    {
+      "title": "100 Practical Applications and Use Cases of Generative AI",
+      "english_title": "100 Practical Applications and Use Cases of Generative AI",
+      "issuing_authority": "UAE Artificial Intelligence, Digital Economy and Remote Work Applications Office",
+      "note": "Moved from records by the date audit (2026-10-13): no publication date is stated by the issuer. ai.gov.ae blocks all requests with a Cloudflare 'Attention Required' 403 (PDF, home page, /resources/, /publications/) for curl and WebFetch; no issuer text read. Record's 'version 1 (April 2023)' and evidence_reference 'deep-review-2026-10-06' do not cite where April 2023 is printed, so it may derive from the wp-content/uploads/2023/04 path. The issuer could not be reached and the recorded date rested on a file name, upload path or page metadata, which are not valid date sources. Official URL: https://ai.gov.ae/wp-content/uploads/2023/04/406.-Generative-AI-Guide_ver1-EN.pdf. Previously recorded as nonbinding_guidance, publication_date 2023-04.",
+      "found": "2026-10-13"
     }
   ]
 }

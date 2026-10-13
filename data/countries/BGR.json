@@ -250,61 +250,6 @@
       "last_changed": null,
       "supersedes": [],
       "superseded_by": [],
-      "metadata_gaps": [
-        "Exact official title",
-        "Exact publication date",
-        "Content not read"
-      ],
-      "sectors": [
-        "education"
-      ],
-      "id": "i-632e51f7b97f",
-      "official_title": "Насоки за използване на изкуствен интелект в училищното образование",
-      "english_title": "Guidelines on the use of artificial intelligence in school education",
-      "issuing_authority": "Ministry of Education and Science",
-      "publisher_name": "Ministry of Education and Science",
-      "authority_type": "ministry",
-      "organization_id": "o-5ea30cb76028",
-      "categories": [
-        "sectoral",
-        "generative-ai"
-      ],
-      "legal_status": "nonbinding_guidance",
-      "lifecycle": "published",
-      "publication_date": "2024-02",
-      "effective_date": null,
-      "summary": "Guidance from the Ministry of Education and Science for school leaders, teachers, pupils and parents on using AI tools in school education, covering school management, teachers' work with AI, pedagogical approaches to introducing pupils to AI and examples of use. It is described as supporting schools and as not mandatory.",
-      "ai_governance_relevance": "Education-sector AI guidance from the national education ministry.",
-      "current_status": "PDF on mon.bg (file path dated February 2024); mon.bg returned HTTP 403 to curl and WebFetch on 2026-10-12, so title, date and content come from the search-engine index of the official file and need checking.",
-      "source_url": "https://www.mon.bg/nfs/2024/02/nasoki-izpolzvane-ii_190224.pdf",
-      "official_pdf_url": "https://www.mon.bg/nfs/2024/02/nasoki-izpolzvane-ii_190224.pdf",
-      "official_webpage_url": null,
-      "language": "bg",
-      "source_kind": "official_document",
-      "verification_level": "primary_source_located",
-      "link_status": "inaccessible",
-      "document_access_type": "original_government_document",
-      "evidence_reference": "curl (browser user agent, --max-time 60) HTTP 403 and WebFetch HTTP 403",
-      "category": "sectoral",
-      "source_id": "s-fadcf0d4b4db"
-    },
-    {
-      "jurisdiction_id": "BGR",
-      "government_level": "national",
-      "subnational_unit": null,
-      "subcategory": null,
-      "last_amended_date": null,
-      "scope": "Bulgaria (national)",
-      "technology_scope": [
-        "AI"
-      ],
-      "related_instruments": [],
-      "regional_applicability": [],
-      "verification_date": "2026-10-12",
-      "first_recorded": "2026-10-12",
-      "last_changed": null,
-      "supersedes": [],
-      "superseded_by": [],
       "metadata_gaps": [],
       "sectors": [
         "finance"
@@ -326,7 +271,7 @@
       "effective_date": null,
       "summary": "Discussion paper by the Financial Supervision Commission on AI in the insurance, investment and pension-insurance sectors. It outlines the European Commission's April 2021 AI Act proposal (prohibited practices, high-risk classification, provider obligations), sets out four risk tasks for firms deploying AI (risk identification, assessment, prevention and control), and reports the results of an FSC survey of supervised entities on their use of AI, including their call for practical AI guidance and communication with the supervisor.",
       "ai_governance_relevance": "Only AI-specific document found from a Bulgarian financial supervisor.",
-      "current_status": "PDF published on fsc.bg (dated 2021 on the cover; file created October 2021). Non-binding; no later FSC AI guidance found.",
+      "current_status": "PDF published on fsc.bg (dated 2021 on the cover; Non-binding; no later FSC AI guidance found. Publication date source (date audit 2026-10-13): PDF cover and every page footer: 'Комисия за финансов надзор 2021 г.'.",
       "source_url": "https://www.fsc.bg/wp-content/uploads/2021/files/31039_file.pdf",
       "official_pdf_url": "https://www.fsc.bg/wp-content/uploads/2021/files/31039_file.pdf",
       "official_webpage_url": null,
@@ -369,16 +314,6 @@
       "ai_governance_role": "Bulgarian government; adopts national strategic documents and designated the national authorities protecting fundamental rights under Article 77 of the EU AI Act.",
       "source_url": "https://pris.government.bg/",
       "authority_type": "government",
-      "government_level": "national"
-    },
-    {
-      "id": "o-5ea30cb76028",
-      "jurisdiction_id": "BGR",
-      "name": "Ministry of Education and Science",
-      "publisher_name_verified": true,
-      "ai_governance_role": "Education ministry; published non-binding guidance on the use of AI in school education.",
-      "source_url": "https://www.mon.bg/",
-      "authority_type": "ministry",
       "government_level": "national"
     },
     {
@@ -504,32 +439,6 @@
       "http_status": null
     },
     {
-      "id": "s-fadcf0d4b4db",
-      "url": "https://www.mon.bg/nfs/2024/02/nasoki-izpolzvane-ii_190224.pdf",
-      "jurisdiction_ids": [
-        "BGR"
-      ],
-      "source_institutions": [
-        "Ministry of Education and Science"
-      ],
-      "instrument_ids": [
-        "i-632e51f7b97f"
-      ],
-      "categories_reviewed": [
-        "sectoral",
-        "generative-ai"
-      ],
-      "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60) HTTP 403 and WebFetch HTTP 403",
-      "final_url": "https://www.mon.bg/nfs/2024/02/nasoki-izpolzvane-ii_190224.pdf",
-      "link_status": "inaccessible",
-      "page_title": null,
-      "document_language": "bg",
-      "error": "HTTP 403 (curl and WebFetch)",
-      "http_status": 403
-    },
-    {
       "id": "s-517618f748f6",
       "url": "https://www.fsc.bg/wp-content/uploads/2021/files/31039_file.pdf",
       "jurisdiction_ids": [
@@ -639,6 +548,21 @@
   },
   "changes": [
     {
+      "id": "c-8e32ab322b2b",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "removed",
+      "jurisdiction_id": "BGR",
+      "instrument_id": "i-632e51f7b97f",
+      "title": "Guidelines on the use of artificial intelligence in school education",
+      "detail": "Removed from the radar (not an official source, duplicate, or out of scope).",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
       "id": "c-48b6c3178535",
       "date": "2026-10-12",
       "recorded": "2026-10-12",
@@ -696,21 +620,6 @@
       "from": null,
       "to": null,
       "source_url": "https://pris.government.bg/document/deef8dca4eba715a35b3dc266ae23adb/3ac6276165987a941aaa4305496b3e54",
-      "needs_review": false
-    },
-    {
-      "id": "c-33a8183845f6",
-      "date": "2026-10-12",
-      "recorded": "2026-10-12",
-      "kind": "radar",
-      "type": "added",
-      "jurisdiction_id": "BGR",
-      "instrument_id": "i-632e51f7b97f",
-      "title": "Guidelines on the use of artificial intelligence in school education",
-      "detail": "Added to the radar (published 2024-02).",
-      "from": null,
-      "to": null,
-      "source_url": "https://www.mon.bg/nfs/2024/02/nasoki-izpolzvane-ii_190224.pdf",
       "needs_review": false
     },
     {
@@ -788,6 +697,13 @@
       "issuing_authority": "Council of Ministers",
       "note": "Adoption on 16 December 2020 reported by secondary sources only; decision not located on pris.government.bg or gov.bg during this review (pris document pages timed out). Bulgarian adopted text of the Concept also not located on an official site.",
       "found": "2026-10-12"
+    },
+    {
+      "title": "Насоки за използване на изкуствен интелект в училищното образование",
+      "english_title": "Guidelines on the use of artificial intelligence in school education",
+      "issuing_authority": "Ministry of Education and Science",
+      "note": "Moved from records by the date audit (2026-10-13): no publication date is stated by the issuer. mon.bg returns HTTP 403 to curl (PDF and homepage) and WebFetch. Month currently rests only on the /nfs/2024/02/ path and '_190224' file name - neither valid; if the document cannot be read, move to leads. The issuer could not be reached and the recorded date rested on a file name, upload path or page metadata, which are not valid date sources. Official URL: https://www.mon.bg/nfs/2024/02/nasoki-izpolzvane-ii_190224.pdf. Previously recorded as nonbinding_guidance, publication_date 2024-02.",
+      "found": "2026-10-13"
     }
   ]
 }
