@@ -1,0 +1,10 @@
+const fs=require('fs'),ts=require('topojson-server'),tc=require('topojson-client'),tsim=require('topojson-simplify');
+const G=JSON.parse(fs.readFileSync(process.argv[2]));
+G.features.forEach(f=>{f.id=f.id||f.properties.iso_a3;f.properties={}});
+let topo=ts.topology({countries:G},1e5);
+topo=tsim.presimplify(topo); topo=tsim.simplify(topo,tsim.quantile(topo,0.35));
+const land=JSON.parse(fs.readFileSync('node_modules/world-atlas/land-50m.json'));
+topo.objects.countries.geometries.forEach(g=>{g.id=g.id});
+const out={countries:topo,land:land};
+fs.writeFileSync(process.argv[3],JSON.stringify(out));
+console.log('countries arcs',topo.arcs.length,'bytes',JSON.stringify(topo).length,'land bytes',JSON.stringify(land).length);

@@ -14,7 +14,7 @@ def assemble():
     recs = load_all()
     D = {"meta": meta["meta"], "categories": meta["categories"], "jurisdictions": [], "instruments": [],
          "organizations": [], "sources": [], "regional_applicability": [], "instrument_relationships": load(DATA / "relationships.json"),
-         "coverage_audit": [], "changes": list(load(DATA / "changes-global.json")), "narratives": {}}
+         "coverage_audit": [], "changes": list(load(DATA / "changes-global.json")), "narratives": {}, "regional_members": {}}
     order = sorted(recs.values(), key=lambda r: (r["jurisdiction"]["type"] != "country", r["jurisdiction"]["name"]))
     for r in order:
         j = r["jurisdiction"]
@@ -25,6 +25,7 @@ def assemble():
         if r.get("coverage_audit"): D["coverage_audit"].append(r["coverage_audit"])
         D["changes"] += r.get("changes", [])
         if r.get("narrative"): D["narratives"][j["id"]] = r["narrative"]
+        if j["type"] != "country" and r.get("members"): D["regional_members"][j["id"]] = r["members"]
     # regional / international instruments apply to each member country (EU AI Act -> all 27, etc.)
     D["regional_applicability"] = []
     for r in order:
@@ -55,8 +56,10 @@ def build():
     D = assemble()
     t = (ROOT / "site/template.html").read_text(encoding="utf-8")
     payload = json.dumps(D, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
-    for key in ["geometry", "basemap", "flags"]:
-        t = t.replace(f"__{key.upper()}__", (ROOT / f"site/assets/{key}.json").read_text(encoding="utf-8"), 1)
+    t = t.replace("__VENDOR_JS__", (ROOT / "site/vendor/d3-bundle.min.js").read_text(encoding="utf-8").replace("</", "<\\/"), 1)
+    t = t.replace("__GEOMETRY__", (ROOT / "site/assets/world.topo.json").read_text(encoding="utf-8"), 1)
+    t = t.replace("__FLAGS__", (ROOT / "site/assets/flags.json").read_text(encoding="utf-8"), 1)
+    t = t.replace("__APP_JS__", (ROOT / "site/app.js").read_text(encoding="utf-8"), 1)
     t = t.replace("__CHANGELOG_CSS__", (ROOT / "site/changelog.css").read_text(encoding="utf-8"), 1)
     t = t.replace("__CHANGELOG_JS__", (ROOT / "site/changelog.js").read_text(encoding="utf-8"), 1)
     t = t.replace("__DATABASE__", payload, 1)  # last, so data text can never be mistaken for a placeholder
