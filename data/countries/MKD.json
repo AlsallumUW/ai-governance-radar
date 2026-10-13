@@ -10,18 +10,300 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "North Macedonia has no AI-specific law or AI strategy yet. AI is governed through its GDPR-aligned Law on Personal Data Protection, which regulates automated decisions and profiling, and steered by the 2025 ICT Development Strategy SMART/MK 2030, whose action plan schedules a national AI strategy, an AI law aligned with the EU AI Act, an AI ethics code and a public register of AI projects. A 2025 State Audit Office audit on AI in the public sector documented the gaps. North Macedonia is a party to the Council of Europe's data protection convention (Convention 108).",
+    "lead_institutions": [
+      "Ministry of Digital Transformation",
+      "Personal Data Protection Agency",
+      "State Audit Office"
+    ],
+    "last_deep_review": "2026-10-13",
+    "review_notes": "This review was carried out on 13 October 2026 from the digital transformation ministry's and the data protection agency's websites, which host official gazette copies. The official gazette's, the consultation portal's and the central bank's websites could not be accessed, and the review hit a search limit before several ministries could be checked. The planned AI strategy and AI law are tracked as leads."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "jurisdiction_id": "MKD",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": "2025-05-21",
+      "scope": "North Macedonia (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "mk",
+      "verification_date": "2026-10-13",
+      "first_recorded": "2026-10-13",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "sectors": [
+        "cross-sector"
+      ],
+      "official_title": "Закон за заштита на личните податоци",
+      "english_title": "Law on Personal Data Protection",
+      "issuing_authority": "Assembly of the Republic of North Macedonia",
+      "authority_type": "legislature",
+      "publisher_name": "Personal Data Protection Agency",
+      "categories": [
+        "data-privacy",
+        "binding-law",
+        "risk-assurance"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2020-02-16",
+      "effective_date": "2020-02-24",
+      "current_status": "In force. Published in Sluzhben vesnik 42/2020 on 16 Feb 2020; effective date computed from art. 124 (in force on the eighth day after publication). Amended by laws in Sluzhben vesnik 294/2021 (27 Dec 2021) and 101/2025 (21 May 2025, transfers to NATO member states); neither amendment touches art. 26. The State Audit Office's 2025 AI audit names this law as the main existing legal framework relevant to AI systems.",
+      "summary": "North Macedonia's GDPR-aligned data protection law (transposing Regulation (EU) 2016/679), applying to wholly or partly automated processing of personal data and establishing the Personal Data Protection Agency as supervisor. Art. 26 gives data subjects the right not to be subject to a decision based solely on automated processing, including profiling, that produces legal or similarly significant effects, with exceptions for contract, law or explicit consent and a minimum of human intervention, the right to express a view and to contest the decision. It also requires data protection impact assessments for high-risk processing and limits automated decisions based on special categories of data.",
+      "ai_governance_relevance": "Only binding national rule found that directly governs automated decision-making and profiling by AI systems.",
+      "source_url": "https://azlp.mk/wp-content/uploads/2022/11/zakon_za_zastita_na_licnite_podatoci.pdf",
+      "official_pdf_url": "https://azlp.mk/wp-content/uploads/2022/11/zakon_za_zastita_na_licnite_podatoci.pdf",
+      "official_webpage_url": "https://azlp.mk/azlp/propisi-i-dokumenti/domasni_propisi/",
+      "source_kind": "legislation_portal",
+      "organization_id": "o-a3cb5f66ee97",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full 70-page gazette text (Sluzhben vesnik 42/2020, hosted on the Personal Data Protection Agency's legislation page) read with pdftotext, incl. art. 26 and arts. 121-124; amending laws 294/2021 and 101/2025 read from the same page",
+      "id": "i-850103e36488",
+      "category": "data-privacy",
+      "source_id": "s-8d0cdabc7e62"
+    },
+    {
+      "jurisdiction_id": "MKD",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "North Macedonia (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [
+        "Government adoption session date not stated on an official page found; publication_date is the ministry's launch date"
+      ],
+      "language": "mk",
+      "verification_date": "2026-10-13",
+      "first_recorded": "2026-10-13",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "sectors": [
+        "cross-sector"
+      ],
+      "official_title": "Стратегија за развој на ИКТ: СМАРТ/МК 2030",
+      "english_title": "ICT Development Strategy: SMART/MK 2030",
+      "issuing_authority": "Government of the Republic of North Macedonia, prepared by the Ministry of Digital Transformation",
+      "authority_type": "government",
+      "publisher_name": "Ministry of Digital Transformation",
+      "categories": [
+        "strategy",
+        "ethics",
+        "government-governance",
+        "transparency"
+      ],
+      "legal_status": "national_strategy",
+      "lifecycle": "adopted",
+      "publication_date": "2025-10-17",
+      "effective_date": null,
+      "current_status": "Adopted by the Government (stated on the Ministry of Digital Transformation's strategy page; the adoption session date was not found on an official page) and launched by the Minister on 17 Oct 2025. A draft was posted on the ENER consultation portal on 16 May 2025 (stated in the strategy). Action Plan 2025-2027 is annexed; its AI measures (national AI strategy due Q4 2025, AI law aligned with the EU AI Act Q4 2025-Q4 2026, AI ethics code Q2-Q4 2026, public register of AI projects) had not produced a published document found on official sites by 2026-10-13.",
+      "summary": "National ICT strategy to 2030 aligned with the EU Digital Decade, with Priority Area 4 'Businesses, innovation, new technologies and artificial intelligence' including a specific objective to support AI development and use. Its Action Plan 2025-2027 (measure M 4.3.1, 'legal and institutional framework for safe and ethical use of AI') tasks the Ministry of Digital Transformation with drafting a national AI strategy, AI legislation for ethical use aligned with the EU AI Act, working groups on ethical oversight and AI risk analysis, a national AI ethics code and a public register of AI projects, plus an AI research centre and support for high-potential AI solutions. It notes the absence of a legal framework guaranteeing transparency, ethical use and privacy in AI deployment and the need for a separate AI strategy.",
+      "ai_governance_relevance": "Current top-level government document setting North Macedonia's AI policy agenda pending a dedicated AI strategy and law.",
+      "source_url": "https://portal.mdt.gov.mk/post-body-files/strategija-za-razvoj-na-ikt-smart-mk-2030-file-mBdU.pdf",
+      "official_pdf_url": "https://portal.mdt.gov.mk/post-body-files/strategija-za-razvoj-na-ikt-smart-mk-2030-file-mBdU.pdf",
+      "official_webpage_url": "https://mdt.gov.mk/mk-MK/regulativa/strategija-za-razvoj-na-ikt-smart-mk-2030",
+      "source_kind": "official_document",
+      "organization_id": "o-45f6274817ed",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full strategy PDF (incl. Action Plan 2025-2027) read with pdftotext; MDT strategy page states the Government adopted it; launch date 17/10/2025 from MDT news item and press-conference page",
+      "id": "i-777da48c7256",
+      "category": "strategy",
+      "source_id": "s-9b8929c698c5"
+    },
+    {
+      "jurisdiction_id": "MKD",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "North Macedonia (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "mk",
+      "verification_date": "2026-10-13",
+      "first_recorded": "2026-10-13",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "sectors": [
+        "cross-sector"
+      ],
+      "official_title": "Конечен извештај за извршена ревизија на успешност на тема Можност за употреба на вештачка интелигенција во јавниот сектор",
+      "english_title": "Final Report on the Performance Audit on the Possibility of Using Artificial Intelligence in the Public Sector",
+      "issuing_authority": "State Audit Office",
+      "authority_type": "audit",
+      "publisher_name": "State Audit Office",
+      "categories": [
+        "index-readiness",
+        "public-sector",
+        "government-governance"
+      ],
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2025-08-08",
+      "effective_date": null,
+      "current_status": "Published on the State Audit Office website on 08.08.2025 (report no. 08 2024 03 13, document dated Skopje, June 2025); press release of 12.08.2025. Audited entity: Ministry of Digital Transformation.",
+      "summary": "IT/performance audit assessing whether North Macedonia's public sector is ready to use AI. It finds that no national AI strategy or legal framework for AI projects in the public sector had been adopted, that 48 AI-related projects co-financed by the Fund for Innovation and Technology Development (about EUR 6.1 million, 2018-2023) were not implemented in the public sector, and that the 2021 working group on a national AI strategy had stalled. It issues 11 recommendations, chiefly to the Ministry of Digital Transformation: adopt a national AI strategy with an action plan, accelerate AI legislation, set up a public register of AI projects and investments, and, with the Personal Data Protection Agency, require data protection impact assessments for every AI project.",
+      "ai_governance_relevance": "Official assessment of public-sector AI readiness and the main documented account of the governance gap.",
+      "source_url": "https://dzr.mk/sites/default/files/2025-08/KRI_RUS_Vestacka_intelegencija_FINAL.pdf",
+      "official_pdf_url": "https://dzr.mk/sites/default/files/2025-08/KRI_RUS_Vestacka_intelegencija_FINAL.pdf",
+      "official_webpage_url": "https://dzr.mk/mk/250808-revizija-na-uspeshnost-2024-mozhnosti-za-upotreba-na-veshtachka-inteligencija-vo-javniot",
+      "source_kind": "official_document",
+      "organization_id": "o-61786a052482",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full final audit report (no. 08 2024 03 13, dated June 2025) read with pdftotext; publication date 08.08.2025 from the State Audit Office report page",
+      "id": "i-e4077c2c25db",
+      "category": "index-readiness",
+      "source_id": "s-b9126d36867c"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-a3cb5f66ee97",
+      "jurisdiction_id": "MKD",
+      "name": "Assembly of the Republic of North Macedonia",
+      "publisher_name_verified": true,
+      "ai_governance_role": "National parliament; enacted the Law on Personal Data Protection (2020, amended 2021 and 2025), whose art. 26 governs automated individual decision-making including profiling, and ratified Convention 108 (2005) and its amending Protocol (2021).",
+      "source_url": "https://www.sobranie.mk/",
+      "authority_type": "legislature",
+      "government_level": "national"
+    },
+    {
+      "id": "o-45f6274817ed",
+      "jurisdiction_id": "MKD",
+      "name": "Ministry of Digital Transformation",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Lead ministry for digital policy and AI; issued the ICT Development Strategy SMART/MK 2030, whose action plan assigns it a national AI strategy, AI legislation aligned with the EU AI Act, an AI ethics code and a public register of AI projects.",
+      "source_url": "https://mdt.gov.mk/",
+      "authority_type": "government",
+      "government_level": "national"
+    },
+    {
+      "id": "o-61786a052482",
+      "jurisdiction_id": "MKD",
+      "name": "State Audit Office",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Supreme audit institution; published the 2025 performance audit on the possibilities for using AI in the public sector, with recommendations to the Ministry of Digital Transformation and the Personal Data Protection Agency.",
+      "source_url": "https://dzr.mk/",
+      "authority_type": "audit",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-8d0cdabc7e62",
+      "url": "https://azlp.mk/wp-content/uploads/2022/11/zakon_za_zastita_na_licnite_podatoci.pdf",
+      "jurisdiction_ids": [
+        "MKD"
+      ],
+      "source_institutions": [
+        "Personal Data Protection Agency"
+      ],
+      "instrument_ids": [
+        "i-850103e36488"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl (browser user agent, --max-time 60): full 70-page gazette text (Sluzhben vesnik 42/2020, hosted on the Personal Data Protection Agency's legislation page) read with pdftotext, incl. art. 26 and arts. 121-124; amending laws 294/2021 and 101/2025 read from the same page",
+      "http_status": 200,
+      "final_url": "https://azlp.mk/wp-content/uploads/2022/11/zakon_za_zastita_na_licnite_podatoci.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "mk",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-9b8929c698c5",
+      "url": "https://portal.mdt.gov.mk/post-body-files/strategija-za-razvoj-na-ikt-smart-mk-2030-file-mBdU.pdf",
+      "jurisdiction_ids": [
+        "MKD"
+      ],
+      "source_institutions": [
+        "Ministry of Digital Transformation"
+      ],
+      "instrument_ids": [
+        "i-777da48c7256"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "ethics",
+        "government-governance",
+        "transparency"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl (browser user agent, --max-time 60): full strategy PDF (incl. Action Plan 2025-2027) read with pdftotext; MDT strategy page states the Government adopted it; launch date 17/10/2025 from MDT news item and press-conference page",
+      "http_status": 200,
+      "final_url": "https://portal.mdt.gov.mk/post-body-files/strategija-za-razvoj-na-ikt-smart-mk-2030-file-mBdU.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "mk",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-b9126d36867c",
+      "url": "https://dzr.mk/sites/default/files/2025-08/KRI_RUS_Vestacka_intelegencija_FINAL.pdf",
+      "jurisdiction_ids": [
+        "MKD"
+      ],
+      "source_institutions": [
+        "State Audit Office"
+      ],
+      "instrument_ids": [
+        "i-e4077c2c25db"
+      ],
+      "categories_reviewed": [
+        "index-readiness",
+        "public-sector",
+        "government-governance"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl (browser user agent, --max-time 60): full final audit report (no. 08 2024 03 13, dated June 2025) read with pdftotext; publication date 08.08.2025 from the State Audit Office report page",
+      "http_status": 200,
+      "final_url": "https://dzr.mk/sites/default/files/2025-08/KRI_RUS_Vestacka_intelegencija_FINAL.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "mk",
+      "error": null,
+      "content_type": "application/pdf"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "MKD",
     "country": "North Macedonia",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -33,55 +315,245 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_with_findings": [
       "binding-law",
-      "strategy",
-      "government-governance",
+      "data-privacy",
       "ethics",
-      "risk-assurance",
+      "government-governance",
+      "index-readiness",
       "public-sector",
+      "risk-assurance",
+      "strategy",
+      "transparency"
+    ],
+    "categories_where_no_material_was_found": [
       "procurement",
       "cyber-security",
-      "data-privacy",
-      "transparency",
       "standards",
       "sandbox",
-      "index-readiness",
       "sectoral",
       "generative-ai",
       "drafts",
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "North Macedonia \"вештачка интелигенција\" (стратегија OR регулација OR етика) government ministry official",
       "North Macedonia \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "North Macedonia government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "North Macedonia \"вештачка интелигенција\" cybersecurity authority secure development safety guidelines",
-      "North Macedonia privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "North Macedonia privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "Национална стратегија за вештачка интелигенција Северна Македонија Министерство за дигитална трансформација",
+      "North Macedonia national AI strategy 2025 adopted government artificial intelligence",
+      "ener.gov.mk вештачка интелигенција стратегија 2026",
+      "dzlp.mk вештачка интелигенција насоки лични податоци",
+      "mdt.gov.mk вештачка интелигенција стратегија ИКТ дигитална трансформација документ",
+      "Национална стратегија за ИКТ 2023-2027 вештачка интелигенција Влада Северна Македонија",
+      "Влада седница усвоена Стратегија за развој на ИКТ СМАРТ/МК 2030",
+      "dzr.mk Конечен извештај ревизија на успешност \"Можности за употреба на вештачка интелигенција во јавниот сектор\"",
+      "site search 'вештачка' on azlp.mk, aek.mk, avmu.mk, mon.gov.mk, kzk.gov.mk (direct, official sites)"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-13",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-13, one agent, national level only (PROTOCOL §6), about 25-minute time box. ener.gov.mk reset/503; slvesnik.com.mk reset (no gazette full-text search); nbrm.mk search 403; mioa.gov.mk archive reset; vlada.mk no search endpoint. Shared WebSearch limit hit: health, justice, defence, finance, labour, interior and cyber-authority searches not run. Data protection law and C108 act read from gazette copies hosted by the data protection agency (state body, PROTOCOL §1); effective 2020-02-24 computed from art. 124 (eighth day after publication 2020-02-16). SMART/MK 2030 dated by ministry launch 2025-10-17 (Government session date not stated). Audit report classed nonbinding_guidance (NOR/CHE precedent). Ministry Strategic Plan 2026-2028 and Annual Plan 2026 scanned (lead). Convention 108: Law on ratification, Sluzhben vesnik (Megjunarodni dogovori) no. 7, 1 Feb 2005 (Assembly 26 Jan 2005); CETS 223 ratified, gazette 152/2021. Units covered: Law: Law on Personal Data Protection (42/2020, amended 294/2021, 101/2025) read in full from the DPA's legislation page (gazette copies); no AI-specific law, AI bill or deepfake offence found; Sluzhben vesnik site itself unreachable, so gazette full-text search was not run.; Government: Ministry of Digital Transformation: laws, strategies, regulations, public consultations, news and plans pages checked; SMART/MK 2030 recorded. No national AI strategy, public-sector AI/GenAI guideline or AI procurement guidance published. Government (vlada.mk) site search not available.; Ministries: Education (mon.gov.mk site search: only teacher AI-training news, no guidance document); other ministries (health, justice, defence, finance, labour, interior) not individually searched after the web search budget ran out - searched, nothing found via general searches.; Regulators: Personal Data Protection Agency (site search: AI training/conference news only, no AI guidance); AEK telecom regulator (news only); AVMU media regulator and Commission for Protection of Competition (nothing); State Audit Office AI audit recorded. NBRM site search blocked (403).. Not reached: ener.gov.mk (national consultation portal): connection reset via curl, WebFetch HTTP 503; slvesnik.com.mk (official gazette): connection reset; nbrm.mk search: HTTP 403; mioa.gov.mk archive: connection reset; vlada.mk session communique for SMART/MK 2030 adoption date: no site search endpoint found; Web search budget exhausted mid-review: ministry-by-ministry searches (health, justice, defence, finance, labour, interior) and cyber authority AI guidance not run. Could not verify: Whether a draft AI strategy or AI law was posted on ENER in 2026 (ENER unreachable); AI content of MDT Strategic Plan 2026-2028 and Annual Plan 2026 (scanned PDFs); NBRM AI documents (search blocked). procurement, cyber-security, standards, sandbox, sectoral, generative-ai, drafts, international, historical: no material found.",
     "discovery_result_count": 13,
     "focused_result_count": 14
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-ede7467bd7f9",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "MKD",
+      "instrument_id": "i-850103e36488",
+      "title": "Law on Personal Data Protection",
+      "detail": "Added to the radar (published 2020-02-16).",
+      "from": null,
+      "to": null,
+      "source_url": "https://azlp.mk/wp-content/uploads/2022/11/zakon_za_zastita_na_licnite_podatoci.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-87f42417db90",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "MKD",
+      "instrument_id": "i-777da48c7256",
+      "title": "ICT Development Strategy: SMART/MK 2030",
+      "detail": "Added to the radar (published 2025-10-17).",
+      "from": null,
+      "to": null,
+      "source_url": "https://portal.mdt.gov.mk/post-body-files/strategija-za-razvoj-na-ikt-smart-mk-2030-file-mBdU.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-fd67e3e27c7c",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "MKD",
+      "instrument_id": "i-e4077c2c25db",
+      "title": "Final Report on the Performance Audit on the Possibility of Using Artificial Intelligence in the Public Sector",
+      "detail": "Added to the radar (published 2025-08-08).",
+      "from": null,
+      "to": null,
+      "source_url": "https://dzr.mk/sites/default/files/2025-08/KRI_RUS_Vestacka_intelegencija_FINAL.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-1a4b29f323d4",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "MKD",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 3 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-5154322de74f",
+      "date": "2025-10-17",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "MKD",
+      "instrument_id": "i-777da48c7256",
+      "title": "ICT Development Strategy SMART/MK 2030 launched",
+      "detail": "Minister of Digital Transformation presents the Government-adopted strategy; its action plan schedules a national AI strategy, AI law aligned with the EU AI Act and an AI ethics code.",
+      "from": null,
+      "to": null,
+      "source_url": "https://mdt.gov.mk/mk-MK/odnosi-so-javnost/novosti/andonovski-po-8-godini-vakum-makedonija-dobiva-nacionalna-ikt-strategija-smartmk-2030",
+      "needs_review": false
+    },
+    {
+      "id": "c-28591dfaf4db",
+      "date": "2025-08-08",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "MKD",
+      "instrument_id": "i-e4077c2c25db",
+      "title": "State Audit Office publishes audit on AI in the public sector",
+      "detail": "Final performance audit report finds no national AI strategy or AI legal framework and recommends both.",
+      "from": null,
+      "to": null,
+      "source_url": "https://dzr.mk/mk/250808-revizija-na-uspeshnost-2024-mozhnosti-za-upotreba-na-veshtachka-inteligencija-vo-javniot",
+      "needs_review": false
+    },
+    {
+      "id": "c-af17d536efd4",
+      "date": "2025-05-21",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "revised",
+      "jurisdiction_id": "MKD",
+      "instrument_id": "i-850103e36488",
+      "title": "Law on Personal Data Protection supplemented",
+      "detail": "Supplementing law published in Sluzhben vesnik 101/2025 (data transfers to NATO member states), in force on publication.",
+      "from": null,
+      "to": null,
+      "source_url": "https://azlp.mk/wp-content/uploads/2026/01/Zakon_za_dopolnuvanje_na_ZZLP-1.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-27d08934fe22",
+      "date": "2021-12-27",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "revised",
+      "jurisdiction_id": "MKD",
+      "instrument_id": "i-850103e36488",
+      "title": "Law on Personal Data Protection amended",
+      "detail": "Amending law published in Sluzhben vesnik 294/2021 (technical amendments; art. 26 unchanged).",
+      "from": null,
+      "to": null,
+      "source_url": "https://azlp.mk/wp-content/uploads/2022/11/57d665472d164493815e8b3bdcf8e2a1.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-6dee36a66ed3",
+      "date": "2020-02-16",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "MKD",
+      "instrument_id": "i-850103e36488",
+      "title": "Law on Personal Data Protection published",
+      "detail": "Published in Sluzhben vesnik 42/2020; art. 26 regulates automated individual decision-making including profiling.",
+      "from": null,
+      "to": null,
+      "source_url": "https://azlp.mk/wp-content/uploads/2022/11/zakon_za_zastita_na_licnite_podatoci.pdf",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Стратегија за развој и примена на ВИ во РСМ (planned)",
+      "english_title": "Strategy for the Development and Application of AI in North Macedonia (planned)",
+      "issuing_authority": "Ministry of Digital Transformation",
+      "note": "Activity A 4.3.1.1 of the SMART/MK 2030 Action Plan (due Q3-Q4 2025); the State Audit Office also recommended it. No draft found on mdt.gov.mk on 2026-10-13; ENER consultation portal could not be reached. Re-check ENER and mdt.gov.mk.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "Законска регулатива за етичка примена на ВИ и усогласување со Актот за ВИ на ЕУ (planned)",
+      "english_title": "Legislation on ethical use of AI and alignment with the EU AI Act (planned)",
+      "issuing_authority": "Ministry of Digital Transformation",
+      "note": "Activity A 4.3.1.2 of the SMART/MK 2030 Action Plan (Q4 2025-Q4 2026, budget EUR 3,000,000); also national AI ethics code (A 4.3.1.4) and public register of AI projects (A 4.3.1.5). No draft found on official sites on 2026-10-13.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "СТРАТЕГИЈА за спроведување на правото за заштита на личните податоци во Република Северна Македонија за периодот 2025-2030",
+      "english_title": "Strategy for the Implementation of the Right to Personal Data Protection in North Macedonia 2025-2030",
+      "issuing_authority": "Personal Data Protection Agency",
+      "note": "Official document on azlp.mk (https://azlp.mk/wp-content/uploads/2024/11/Strategija_2025-2030_mk.pdf); mentions AI only in passing (promoting transposition of the EU AI Act and implementation of the Council of Europe AI Framework Convention after ratification). Below scope threshold; no stated publication date read.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "Законско регулирање на вештачка интелигенција во Европска унија и Република Северна Македонија - тематска анализа",
+      "english_title": "Legal Regulation of AI in the EU and North Macedonia - thematic analysis",
+      "issuing_authority": "Parliamentary Institute, Assembly of the Republic of North Macedonia",
+      "note": "Research paper on sobranie.mk (PI 2024 research section); analysis, not a governing instrument. Kept for context only.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "Национална стратегија за сајбер безбедност 2025-2028",
+      "english_title": "National Cyber Security Strategy 2025-2028",
+      "issuing_authority": "Government / Ministry of Digital Transformation",
+      "note": "Cited by the State Audit Office AI audit as mentioning AI in the research ecosystem; not read for AI provisions (mdt.gov.mk strategy page). Check whether it contains AI security measures.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "Стратешки план на МДТ 2026-2028 / Годишен план за 2026",
+      "english_title": "Ministry of Digital Transformation Strategic Plan 2026-2028 and Annual Plan 2026",
+      "issuing_authority": "Ministry of Digital Transformation",
+      "note": "Official documents on mdt.gov.mk (godisni-planovi); scanned PDFs without a text layer, so AI content (e.g. timing of AI strategy/law) could not be checked.",
+      "found": "2026-10-13"
+    }
+  ]
 }

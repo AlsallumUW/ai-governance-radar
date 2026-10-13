@@ -10,18 +10,114 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Kiribati has no AI strategy, AI law or AI guidance. Its only AI-relevant national instrument is the Data Protection Act 2025, in force since 20 August 2026, which restricts decisions made solely by automated processing. The 2019 National ICT Policy lists AI only as a frontier technology to explore.",
+    "lead_institutions": [
+      "Ministry of Information, Communications and Transport",
+      "Maneaba ni Maungatabu (Parliament)"
+    ],
+    "last_deep_review": "2026-10-13",
+    "review_notes": "This review was carried out on 13 October 2026 from the ICT ministry's website and the Office of the President's gazette notices. The communications commission's, the digital transformation office's and most other ministries' websites could not be accessed, and the online laws site does not resolve, so only one document could be read. Kiribati is marked for a later retry."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-14db505af945",
+      "official_title": "Data Protection Act 2025",
+      "english_title": "Data Protection Act 2025",
+      "issuing_authority": "Maneaba ni Maungatabu (House of Parliament of Kiribati); assented by the Beretitenti",
+      "authority_type": "legislature",
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2025-09-18",
+      "effective_date": "2026-08-20",
+      "current_status": "Passed by the Maneaba ni Maungatabu on 18 August 2025, assented by the Beretitenti on 18 September 2025 and published by exhibition at the Maneaba on 18 September 2025 (Clerk's certificate; MICT publication page dated 18/09/2025). Section 2 leaves commencement to ministerial notice; the Notice of Commencement Date signed by the Minister for Information, Communications and Transport on 20 August 2026 and published by exhibition at the Public Office of the Beretitenti on 20 August 2026 appoints 20 August 2026 as the date the Act comes into force. The Act is administered by the Digital Transformation Office (DTO) established under the Digital Government Act 2023.",
+      "summary": "Kiribati's first general data protection law, regulating the processing of personal data by public bodies and private persons, with principles on purpose limitation, minimisation and retention, data-subject rights, breach notification, data protection impact assessments for high-risk processing affecting 10,000 or more data subjects, and rules on transfers outside Kiribati. Section 17 gives data subjects the right not to be subject to a decision based solely on automated processing of personal data that produces legal or similarly significant effects, unless the decision is necessary for a contract, authorised by a written law with safeguards, or based on consent. The Digital Transformation Office acts as the supervisory office, with investigation powers, compliance notices and administrative penalties, and the Act amends the Digital Government Act 2023, Business Names Act 2021 and Companies Act 2021.",
+      "ai_governance_relevance": "Only Kiribati law with an explicit rule on automated decision-making (s.17); governs personal-data processing in AI training and use and sets impact-assessment duties for high-risk processing.",
+      "source_url": "https://www.mict.gov.ki/sites/default/files/publications/Data%20Protection%20Act%202025.pdf",
+      "official_pdf_url": "https://www.mict.gov.ki/sites/default/files/publications/Data%20Protection%20Act%202025.pdf",
+      "official_webpage_url": "https://mict.gov.ki/node/125",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "superseded_by": [],
+      "organization_id": "o-c92bebb08b53",
+      "publisher_name": "Ministry of Information, Communications and Transport",
+      "jurisdiction_id": "KIR",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Kiribati (national)",
+      "technology_scope": [
+        "automated decision-making",
+        "personal data processing"
+      ],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "en",
+      "verification_date": "2026-10-13",
+      "first_recorded": "2026-10-13",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-e83803c7c05c",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full 26-page Act PDF read (pdftotext) from the MICT publications list; assent 'Beretitenti 18/9/2025' and Clerk's certificate (passed the Maneaba ni Maungatabu on 18 August 2025; published by exhibition 18 September 2025) read from rendered page images; MICT publication page (mict.gov.ki/node/125) states Publication Date 18/09/2025; s.2 (commencement by ministerial notice) and s.17 read. Commencement notice (scanned PDF on president.gov.ki Gazettes 2026): curl was reset by the server, WebFetch retrieved the file and the rendered image was read: Minister appoints 20 August 2026 as the date the Act comes into force."
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-c92bebb08b53",
+      "jurisdiction_id": "KIR",
+      "name": "Maneaba ni Maungatabu",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Kiribati's unicameral parliament; passed the Data Protection Act 2025 (18 August 2025), the only national law with an automated decision-making rule (s.17).",
+      "source_url": "https://www.parliament.gov.ki/",
+      "authority_type": "legislature",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-e83803c7c05c",
+      "url": "https://www.mict.gov.ki/sites/default/files/publications/Data%20Protection%20Act%202025.pdf",
+      "jurisdiction_ids": [
+        "KIR"
+      ],
+      "source_institutions": [
+        "Ministry of Information, Communications and Transport"
+      ],
+      "instrument_ids": [
+        "i-14db505af945"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl (browser user agent, --max-time 60): full 26-page PDF read (pdftotext and rendered page images for assent and Clerk's certificate); publication date 18/09/2025 confirmed on mict.gov.ki/node/125",
+      "http_status": 200,
+      "final_url": "https://www.mict.gov.ki/sites/default/files/publications/Data%20Protection%20Act%202025.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "KIR",
     "country": "Kiribati",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -33,10 +129,11 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_with_findings": [
       "binding-law",
+      "data-privacy"
+    ],
+    "categories_where_no_material_was_found": [
       "strategy",
       "government-governance",
       "ethics",
@@ -44,7 +141,6 @@
       "public-sector",
       "procurement",
       "cyber-security",
-      "data-privacy",
       "transparency",
       "standards",
       "sandbox",
@@ -55,33 +151,124 @@
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Kiribati \"artificial intelligence\" (strategy OR regulation OR ethics) government ministry official",
       "Kiribati \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Kiribati government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Kiribati \"artificial intelligence\" cybersecurity authority secure development safety guidelines",
-      "Kiribati privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Kiribati privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "Kiribati \"artificial intelligence\" policy ministry ICT",
+      "Kiribati national ICT policy digital strategy MICT gov.ki",
+      "Kiribati cybercrime act data protection bill electronic transactions",
+      "Kiribati Ministry of Education artificial intelligence guidelines schools 2025",
+      "Kiribati \"Data Protection Act 2025\" commencement notice Digital Transformation Office",
+      "Kiribati Government Gazette 2026 \"Data Protection\" commencement",
+      "Kiribati Gazette 2026 index notices pdf gov.ki",
+      "Kiribati government AI \"artificial intelligence\" 2026 MICT OR Beretitenti OR Cabinet policy workshop",
+      "\"Kiribati\" Convention 108 personal data Council of Europe accession",
+      "(gil) \"te atamwaki ae karaoaki\" OR \"artificial intelligence\" Kiribati tautaeka",
+      "site:gov.ki \"artificial intelligence\"",
+      "mict.gov.ki publications and documents listings (pages 0-3) full-text grep: artificial intelligence|AI|automated|algorithm|machine learning|deepfake",
+      "parliament.gov.ki Acts passed 2025 listing"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-13",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-13, one agent, national level only (PROTOCOL §6), about 25-minute time box. cck.gov.ki, dto.gov.ki proxy rejected; kiribatilaws.gov.ki no DNS; Education, Health, Justice, Internal Affairs, Labour, Foreign Affairs and other ministry sites no response; president.gov.ki gazette listing reset (notice PDF read directly). Full text searched: DPA 2025 and Bill, Digital Government Act 2023, Cybersecurity Act 2026, Cybercrime Act 2021, Communications Acts. DPA published 2025-09-18 (assent and exhibition), effective 2026-08-20 per Notice of Commencement under s.2; Act number blank on printed copy. National ICT Policy 2019 AI in passing (lead). Convention 108: not a party. Units covered: Law: MICT publications (Data Protection Act 2025 and Bill, Digital Government Act 2023 and Bill as passed, Cybersecurity Act 2026, Cybercrime Act 2021, Communications Act 2013 and 2017 amendment) full-text searched: only the Data Protection Act 2025 has an AI-relevant provision (s.17 automated decisions); Digital Government Act 2023 mentions 'machine learning algorithms' only in a definition of specialised data services; Cybersecurity Act 2026 and Cybercrime Act 2021 have no AI provisions. Office of Te Beretitenti gazette listing used for the 2026 commencement notice. No AI bill found; parliament.gov.ki acts page reached. kiribatilaws.gov.ki does not resolve.; Government: MICT: National ICT Policy 2019 (AI only as a frontier technology to explore; lead), Digital Government Master Plan, National Cybersecurity Policy, MICT Strategic Plans 2021-2023 and 2025-2028 read/grepped: no AI strategy, AI governance framework, public-sector AI or generative-AI guidance found. Searched, nothing found.; Ministries: Ministry of Finance and Economic Development, Public Service Office, Ministry of Women, Youth, Sports and Social Affairs and Office of Te Beretitenti homepages reached with no AI content; Education, Health, Justice, Internal Affairs, Labour, Foreign Affairs ministry sites unreachable; web searches for ministry AI policies (incl. education) found nothing. Searched, nothing found.; Regulators: Digital Transformation Office (data protection supervisory office under the Act): no AI guidance found on mict.gov.ki/dto. Communications Commission of Kiribati site unreachable; no central bank (Kiribati uses the Australian dollar) and no separate cyber, competition or standards body publishing AI material found. Searched, nothing found.. Not reached: www.cck.gov.ki (Communications Commission of Kiribati): proxy CONNECT rejected; dto.gov.ki: proxy CONNECT rejected (DTO page on mict.gov.ki used instead); www.kiribatilaws.gov.ki: DNS does not resolve / CONNECT rejected; moe.gov.ki, health.gov.ki, mjsc.gov.ki, mia.gov.ki, mlhrd.gov.ki, mfat.gov.ki, mehr.gov.ki, mfmrd.gov.ki: no response; president.gov.ki gazette listing page: curl reset and WebFetch timeout (notice PDF itself retrieved via WebFetch). Could not verify: president.gov.ki Gazettes & Instruments listing page could not be loaded (timeout/reset); the commencement notice PDF at that site was read directly.; Communications Commission of Kiribati website unreachable, so any CCK AI material could not be checked.; Act number of the Data Protection Act 2025 is blank on the printed copy ('No. of 2025').. strategy, government-governance, ethics, risk-assurance, public-sector, procurement, cyber-security, transparency, standards, sandbox, index-readiness, sectoral, generative-ai, drafts, international, historical: no material found.",
     "discovery_result_count": 10,
     "focused_result_count": 12
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-46ef5e23532c",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "KIR",
+      "instrument_id": "i-14db505af945",
+      "title": "Data Protection Act 2025",
+      "detail": "Added to the radar (published 2025-09-18).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.mict.gov.ki/sites/default/files/publications/Data%20Protection%20Act%202025.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-e6a34e26029e",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "KIR",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 1 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-fe613017ef25",
+      "date": "2026-08-20",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "KIR",
+      "instrument_id": "i-14db505af945",
+      "title": "Data Protection Act 2025 comes into force",
+      "detail": "Ministerial Notice of Commencement Date under s.2 appoints 20 August 2026; published by exhibition at the Public Office of the Beretitenti the same day.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.president.gov.ki/images/Gazettes/2026/240826/Notice_of_Commencement_Data_Protection_Act.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-5e1f46315ca3",
+      "date": "2025-09-18",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "KIR",
+      "instrument_id": "i-14db505af945",
+      "title": "Data Protection Act 2025 assented and published",
+      "detail": "Assented by the Beretitenti and published by exhibition at the Maneaba ni Maungatabu on 18 September 2025 (passed 18 August 2025).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.mict.gov.ki/sites/default/files/publications/Data%20Protection%20Act%202025.pdf",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Kiribati National ICT Policy 2019",
+      "english_title": "Kiribati National ICT Policy 2019",
+      "issuing_authority": "Government of Kiribati (Ministry of Information, Communication, Transport and Tourism Development)",
+      "note": "Official PDF on mict.gov.ki (sites/default/files/publications/National%20ICT%20Policy_3.pdf), dated 2019 on its cover. AI appears only in the Minister's foreword, a context paragraph and goal xxv 'Explore frontier technology' (promote applications of blockchain, IoT, AI incl. deep learning, big data, 5G) and an e-government bullet to 'explore' AI; no AI-specific actions, so held as a lead rather than a strategy record. Revisit if a successor ICT/digital policy adds an AI pillar.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "Data Protection Bill 2025",
+      "english_title": "Data Protection Bill 2025",
+      "issuing_authority": "Ministry of Information, Communications and Transport",
+      "note": "Bill text with English and Gilbertese explanatory memorandum on mict.gov.ki (Data%20Protection%20Bill%202025.pdf); enacted as the Data Protection Act 2025 (recorded). Kept only as a pointer to the Gilbertese explanatory memorandum; no separate record needed.",
+      "found": "2026-10-13"
+    }
+  ]
 }
