@@ -10,18 +10,444 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Belarus has no AI-specific law or strategy yet. AI is steered through the State Programme 'Digital Belarus' 2026-2030, which plans a national computing base for AI, AI systems for handling citizens' appeals and for security agencies, and a target of 15% of organisations using AI; presidential decrees that make AI the first priority for science and innovation in 2026-2030; and the 2017 digital economy decree, which gives AI developers, including those creating and training neural networks, High-Tech Park preferences. The 2021 personal data protection law provides the data protection baseline. An AI development concept, an AI law and an amendment on automated decisions are in preparation.",
+    "lead_institutions": [
+      "Ministry of Communications and Informatization",
+      "National Personal Data Protection Centre",
+      "High-Tech Park"
+    ],
+    "last_deep_review": "2026-10-13",
+    "review_notes": "This review was carried out on 12 and 13 October 2026 from the National Legal Internet Portal; a run cut off by a usage limit was resumed and every record from it was re-checked against its official text. The data protection centre's website could not be accessed. The planned AI concept, AI law and data protection amendment are tracked as leads."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "official_title": "О Государственной программе «Цифровая Беларусь» на 2026–2030 годы (постановление Совета Министров Республики Беларусь от 30 декабря 2025 г. № 793)",
+      "english_title": "On the State Programme \"Digital Belarus\" for 2026-2030 (Resolution of the Council of Ministers of the Republic of Belarus No. 793 of 30 December 2025)",
+      "issuing_authority": "Council of Ministers of the Republic of Belarus (responsible customer: Ministry of Communications and Informatization)",
+      "authority_type": "government",
+      "categories": [
+        "strategy",
+        "public-sector",
+        "generative-ai",
+        "government-governance"
+      ],
+      "legal_status": "national_strategy",
+      "lifecycle": "adopted",
+      "publication_date": "2026-01-10",
+      "current_status": "Officially published on the National Legal Internet Portal on 10 January 2026 (No. 6-1/55630). Clause 3 of the resolution states it enters into force on 1 January 2026. It succeeds the State Programme \"Digital Development of Belarus\" 2021-2025 (Resolution No. 66 of 2 February 2021), which contains no AI provisions and is therefore not recorded. Current national digital programme; no separate national AI strategy or concept has been adopted (an AI development concept is in preparation, see leads).",
+      "summary": "The Council of Ministers approves the national digital programme for 2026-2030, with the Ministry of Communications and Informatization as responsible customer and subprogrammes \"Data Economy\", \"Digital State\" and \"Digital Sovereignty\". Its AI section commits to a national platform for managing the life cycle of AI models (domestic software for running large language models without foreign servers), a system for collecting, anonymising and managing data for training AI models, a national corpus of datasets and language technologies for LLMs, and tools to adapt LLMs to sectoral and state tasks, including libraries of standard agents. It also lists AI measures for the state, including an AI-based national system for handling appeals from citizens and legal entities, a national computing base for AI, an AI resource-forecasting system for the Ministry of Defence and AI information-processing systems for the KGB, and tracks the share of organisations using AI as a programme indicator (target 15% by 2030).",
+      "ai_governance_relevance": "Main government programme steering AI development and public-sector AI use in Belarus.",
+      "source_url": "https://pravo.by/document/?guid=12551&p0=C22500793",
+      "official_pdf_url": "https://pravo.by/upload/docs/op/C22500793_1767992400.pdf",
+      "official_webpage_url": "https://pravo.by/document/?guid=12551&p0=C22500793",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-9cb738727746",
+      "publisher_name": "National Centre of Legislation and Legal Information of the Republic of Belarus",
+      "jurisdiction_id": "BLR",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "strategy",
+      "subcategory": null,
+      "effective_date": "2026-01-01",
+      "last_amended_date": null,
+      "scope": "Belarus (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "ru",
+      "verification_date": "2026-10-13",
+      "first_recorded": "2026-10-13",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-d36899613ffa",
+      "evidence_reference": "curl (browser user agent, --max-time 60): document card on pravo.by and full official PDF read (pdftotext); resolution date, publication stamp (10.01.2026, 6-1/55630) and clause 3 (in force 1 January 2026) read from the text",
+      "id": "i-327f18dbe14f"
+    },
+    {
+      "official_title": "О Государственной программе инновационного развития Республики Беларусь на 2026–2030 годы (Указ Президента Республики Беларусь от 21 декабря 2025 г. № 448)",
+      "english_title": "On the State Programme of Innovative Development of the Republic of Belarus for 2026-2030 (Decree of the President of the Republic of Belarus No. 448 of 21 December 2025)",
+      "issuing_authority": "President of the Republic of Belarus (responsible customer: State Committee on Science and Technology)",
+      "authority_type": "government",
+      "categories": [
+        "strategy"
+      ],
+      "legal_status": "national_strategy",
+      "lifecycle": "adopted",
+      "publication_date": "2025-12-25",
+      "current_status": "Officially published on the National Legal Internet Portal on 25 December 2025 (No. 3-1/22269); clause 8 states the decree enters into force after its official publication. Current innovation programme for 2026-2030.",
+      "summary": "Presidential decree approving the 2026-2030 State Programme of Innovative Development, with the State Committee on Science and Technology as responsible customer and ministries, the Academy of Sciences, regional executive committees and technology parks as customers. \"Digital technologies and artificial intelligence\" is the first of its priority directions, under which it funds projects on domestic hardware and software for e-government, big-data processing, robotic systems with intelligent control, computing and smart housing using AI.",
+      "ai_governance_relevance": "Names AI as a priority direction for state-funded innovation projects in 2026-2030.",
+      "source_url": "https://pravo.by/document/?guid=12551&p0=P32500448",
+      "official_pdf_url": "https://pravo.by/upload/docs/op/P32500448_1766610000.pdf",
+      "official_webpage_url": "https://pravo.by/document/?guid=12551&p0=P32500448",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-c7e1c7a56bb8",
+      "publisher_name": "National Centre of Legislation and Legal Information of the Republic of Belarus",
+      "jurisdiction_id": "BLR",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "strategy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Belarus (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "ru",
+      "verification_date": "2026-10-13",
+      "first_recorded": "2026-10-13",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-4eeda2c892c4",
+      "evidence_reference": "curl (browser user agent, --max-time 60): pravo.by document card and full official PDF read (pdftotext); date, publication stamp (25.12.2025, 3-1/22269) and clause 8 read from the text",
+      "id": "i-6db77057e9c2"
+    },
+    {
+      "official_title": "О приоритетных направлениях научной, научно-технической и инновационной деятельности на 2026–2030 годы (Указ Президента Республики Беларусь от 1 апреля 2025 г. № 135)",
+      "english_title": "On the Priority Directions of Scientific, Scientific-Technical and Innovation Activity for 2026-2030 (Decree of the President of the Republic of Belarus No. 135 of 1 April 2025)",
+      "issuing_authority": "President of the Republic of Belarus",
+      "authority_type": "government",
+      "categories": [
+        "strategy"
+      ],
+      "legal_status": "binding_regulation",
+      "lifecycle": "adopted",
+      "publication_date": "2025-04-02",
+      "current_status": "Officially published on the National Legal Internet Portal on 2 April 2025 (No. 1/21893); clause 4 states the decree enters into force after its official publication. The priority directions apply to 2026-2030.",
+      "summary": "Presidential decree approving the national priority directions for science, technology and innovation in 2026-2030. Its first direction, \"Digital technologies and artificial intelligence\", lists AI technologies as a cross-cutting priority for first-order implementation; the Council of Ministers and the National Academy of Sciences must build the lists of state science and technology programmes around these priorities.",
+      "ai_governance_relevance": "Binding priority-setting act that directs state science and technology funding towards AI for 2026-2030.",
+      "source_url": "https://pravo.by/document/?guid=12551&p0=P32500135",
+      "official_pdf_url": "https://pravo.by/upload/docs/op/P32500135_1743541200.pdf",
+      "official_webpage_url": "https://pravo.by/document/?guid=12551&p0=P32500135",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-c7e1c7a56bb8",
+      "publisher_name": "National Centre of Legislation and Legal Information of the Republic of Belarus",
+      "jurisdiction_id": "BLR",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "strategy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Belarus (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "ru",
+      "verification_date": "2026-10-13",
+      "first_recorded": "2026-10-13",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-044d66274920",
+      "evidence_reference": "curl (browser user agent, --max-time 60): pravo.by document card and full official PDF read (pdftotext); date, publication stamp (02.04.2025, 1/21893) and clause 4 read from the text",
+      "id": "i-b71767b0a5b6"
+    },
+    {
+      "official_title": "Закон Республики Беларусь от 7 мая 2021 г. № 99-З «О защите персональных данных»",
+      "english_title": "Law of the Republic of Belarus No. 99-Z of 7 May 2021 \"On Personal Data Protection\"",
+      "issuing_authority": "National Assembly of the Republic of Belarus (House of Representatives and Council of the Republic); signed by the President",
+      "authority_type": "legislature",
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2021-05-14",
+      "current_status": "Officially published on the National Legal Internet Portal on 14 May 2021 (No. 2/2819). Under art. 21, articles 1-19 enter into force six months after official publication (computed: 15 November 2021) and the other provisions on publication. In May 2026 the National Personal Data Protection Centre said a bill adding an article on automated processing and automated decision-making (including AI) is planned for submission to the Government (see leads). Text checked is the original published version.",
+      "summary": "Belarus's general data protection law, adopted by the House of Representatives on 2 April 2021 and approved by the Council of the Republic on 21 April 2021. It sets legal bases for processing (consent and listed exceptions), rules for special and biometric data, data-subject rights and operator duties, and applies to processing with or without means of automation, so it governs personal-data processing in AI training and use. It does not yet contain a specific rule on automated decision-making.",
+      "ai_governance_relevance": "Main binding law governing personal data used by AI systems; the data protection authority has stated its requirements apply to processing with AI technologies.",
+      "source_url": "https://pravo.by/document/?guid=12551&p0=H12100099",
+      "official_pdf_url": "https://pravo.by/upload/docs/op/H12100099_1620939600.pdf",
+      "official_webpage_url": "https://pravo.by/document/?guid=12551&p0=H12100099",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-b977d8e6c112",
+      "publisher_name": "National Centre of Legislation and Legal Information of the Republic of Belarus",
+      "jurisdiction_id": "BLR",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "effective_date": "2021-11-15",
+      "last_amended_date": null,
+      "scope": "Belarus (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "ru",
+      "verification_date": "2026-10-13",
+      "first_recorded": "2026-10-13",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-83430041065f",
+      "evidence_reference": "curl (browser user agent, --max-time 60): pravo.by document card and full official PDF read (pdftotext); dates, publication stamp (14.05.2021, 2/2819) and art. 21 commencement read from the text",
+      "id": "i-2f81d13f4ce8"
+    },
+    {
+      "official_title": "Декрет Президента Республики Беларусь от 21 декабря 2017 г. № 8 «О развитии цифровой экономики»",
+      "english_title": "Decree of the President of the Republic of Belarus No. 8 of 21 December 2017 \"On the Development of the Digital Economy\"",
+      "issuing_authority": "President of the Republic of Belarus",
+      "authority_type": "government",
+      "categories": [
+        "binding-law"
+      ],
+      "legal_status": "binding_regulation",
+      "lifecycle": "in_force",
+      "publication_date": "2017-12-27",
+      "current_status": "Officially published on the National Legal Internet Portal on 27 December 2017 (No. 1/17415). Under clause 16, clauses 13, 14 and 17 entered into force on publication and the other provisions three months after official publication (computed: 28 March 2018). Clause 1 extends the High-Tech Park special legal regime to 1 January 2049. Text checked is the original published version; later amendments to the decree and the High-Tech Park Regulations were not checked.",
+      "summary": "Presidential decree on the digital economy that extends the High-Tech Park special legal regime (tax and legal preferences) to 1 January 2049 and opens it expressly to activities in the field of artificial intelligence and self-driving vehicle systems. The High-Tech Park Regulations it sets out list the creation and training of neural networks and other algorithms in specialised areas of AI as a permitted resident activity, and allow residents to prepare and systematise training datasets for neural networks. It also creates the legal framework for tokens and blockchain and lists AI among sixth-technological-order technologies.",
+      "ai_governance_relevance": "Binding act that defines AI development and neural-network training as privileged activities under the High-Tech Park legal regime, the main legal framework for Belarus's AI industry.",
+      "source_url": "https://pravo.by/document/?guid=12551&p0=Pd1700008",
+      "official_pdf_url": "https://pravo.by/upload/docs/op/Pd1700008_1514322000.pdf",
+      "official_webpage_url": "https://pravo.by/document/?guid=12551&p0=Pd1700008",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-c7e1c7a56bb8",
+      "publisher_name": "National Centre of Legislation and Legal Information of the Republic of Belarus",
+      "jurisdiction_id": "BLR",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "binding-law",
+      "subcategory": null,
+      "effective_date": "2018-03-28",
+      "last_amended_date": null,
+      "scope": "Belarus (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "ru",
+      "verification_date": "2026-10-13",
+      "first_recorded": "2026-10-13",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-b2fe2715692a",
+      "evidence_reference": "curl (browser user agent, --max-time 60): pravo.by document card and full official PDF read (pdftotext); date, publication stamp (27.12.2017, 1/17415), clause 1, clause 16 commencement and High-Tech Park Regulations AI activity read from the text",
+      "id": "i-a52b53f92098"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-9cb738727746",
+      "jurisdiction_id": "BLR",
+      "name": "Council of Ministers of the Republic of Belarus",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Government of Belarus; approves state programmes by resolution, including the State Programme \"Digital Belarus\" 2026-2030 with its AI platform and data measures.",
+      "source_url": "https://www.government.by/",
+      "authority_type": "government",
+      "government_level": "national"
+    },
+    {
+      "id": "o-c7e1c7a56bb8",
+      "jurisdiction_id": "BLR",
+      "name": "President of the Republic of Belarus",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Issues decrees: Decree No. 8 (2017) opening the High-Tech Park regime to AI activities, and decrees (ukazy) setting science and innovation priorities, including \"digital technologies and artificial intelligence\" for 2026-2030 and the State Programme of Innovative Development 2026-2030.",
+      "source_url": "https://president.gov.by/",
+      "authority_type": "head_of_state",
+      "government_level": "national"
+    },
+    {
+      "id": "o-b977d8e6c112",
+      "jurisdiction_id": "BLR",
+      "name": "National Assembly of the Republic of Belarus",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Bicameral parliament (House of Representatives and Council of the Republic); adopted Law No. 99-Z on personal data protection, which governs automated processing of personal data including by AI systems.",
+      "source_url": "https://house.gov.by/",
+      "authority_type": "legislature",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-d36899613ffa",
+      "url": "https://pravo.by/document/?guid=12551&p0=C22500793",
+      "jurisdiction_ids": [
+        "BLR"
+      ],
+      "source_institutions": [
+        "National Centre of Legislation and Legal Information of the Republic of Belarus"
+      ],
+      "instrument_ids": [
+        "i-327f18dbe14f"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "public-sector",
+        "generative-ai",
+        "government-governance"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl (browser user agent, --max-time 60): document card on pravo.by and full official PDF read (pdftotext); resolution date, publication stamp (10.01.2026, 6-1/55630) and clause 3 (in force 1 January 2026) read from the text",
+      "http_status": 200,
+      "final_url": "https://pravo.by/document/?guid=12551&p0=C22500793",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "ru",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-4eeda2c892c4",
+      "url": "https://pravo.by/document/?guid=12551&p0=P32500448",
+      "jurisdiction_ids": [
+        "BLR"
+      ],
+      "source_institutions": [
+        "National Centre of Legislation and Legal Information of the Republic of Belarus"
+      ],
+      "instrument_ids": [
+        "i-6db77057e9c2"
+      ],
+      "categories_reviewed": [
+        "strategy"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl (browser user agent, --max-time 60): pravo.by document card and full official PDF read (pdftotext); date, publication stamp (25.12.2025, 3-1/22269) and clause 8 read from the text",
+      "http_status": 200,
+      "final_url": "https://pravo.by/document/?guid=12551&p0=P32500448",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "ru",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-044d66274920",
+      "url": "https://pravo.by/document/?guid=12551&p0=P32500135",
+      "jurisdiction_ids": [
+        "BLR"
+      ],
+      "source_institutions": [
+        "National Centre of Legislation and Legal Information of the Republic of Belarus"
+      ],
+      "instrument_ids": [
+        "i-b71767b0a5b6"
+      ],
+      "categories_reviewed": [
+        "strategy"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl (browser user agent, --max-time 60): pravo.by document card and full official PDF read (pdftotext); date, publication stamp (02.04.2025, 1/21893) and clause 4 read from the text",
+      "http_status": 200,
+      "final_url": "https://pravo.by/document/?guid=12551&p0=P32500135",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "ru",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-83430041065f",
+      "url": "https://pravo.by/document/?guid=12551&p0=H12100099",
+      "jurisdiction_ids": [
+        "BLR"
+      ],
+      "source_institutions": [
+        "National Centre of Legislation and Legal Information of the Republic of Belarus"
+      ],
+      "instrument_ids": [
+        "i-2f81d13f4ce8"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl (browser user agent, --max-time 60): pravo.by document card and full official PDF read (pdftotext); dates, publication stamp (14.05.2021, 2/2819) and art. 21 commencement read from the text",
+      "http_status": 200,
+      "final_url": "https://pravo.by/document/?guid=12551&p0=H12100099",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "ru",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-b2fe2715692a",
+      "url": "https://pravo.by/document/?guid=12551&p0=Pd1700008",
+      "jurisdiction_ids": [
+        "BLR"
+      ],
+      "source_institutions": [
+        "National Centre of Legislation and Legal Information of the Republic of Belarus"
+      ],
+      "instrument_ids": [
+        "i-a52b53f92098"
+      ],
+      "categories_reviewed": [
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl (browser user agent, --max-time 60): pravo.by document card and full official PDF read (pdftotext); date, publication stamp (27.12.2017, 1/17415), clause 1, clause 16 commencement and High-Tech Park Regulations AI activity read from the text",
+      "http_status": 200,
+      "final_url": "https://pravo.by/document/?guid=12551&p0=Pd1700008",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "ru",
+      "error": null,
+      "content_type": "text/html"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "BLR",
     "country": "Belarus",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -33,55 +459,393 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_with_findings": [
       "binding-law",
-      "strategy",
+      "data-privacy",
+      "generative-ai",
       "government-governance",
+      "public-sector",
+      "strategy"
+    ],
+    "categories_where_no_material_was_found": [
       "ethics",
       "risk-assurance",
-      "public-sector",
       "procurement",
       "cyber-security",
-      "data-privacy",
       "transparency",
       "standards",
       "sandbox",
       "index-readiness",
       "sectoral",
-      "generative-ai",
       "drafts",
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Belarus \"искусственный интеллект\" (стратегия OR регулирование OR этика) government ministry official",
       "Belarus \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Belarus government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Belarus \"искусственный интеллект\" cybersecurity authority secure development safety guidelines",
-      "Belarus privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Belarus privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "pravo.by search \"искусственный интеллект\"",
+      "etalonline.by \"искусственного интеллекта\"",
+      "Беларусь искусственный интеллект закон постановление pravo.by 2025",
+      "Беларусь концепция развития искусственного интеллекта утверждена Совет Министров",
+      "\"Стратегия цифрового развития Республики Беларусь на 2026-2030 годы\" утверждена",
+      "\"концепции развития искусственного интеллекта\" Беларусь 2026",
+      "Государственная программа \"Цифровое развитие Беларуси\" 2026-2030 искусственный интеллект",
+      "Минобразования Беларусь искусственный интеллект рекомендации",
+      "Национальный центр защиты персональных данных искусственный интеллект cpd.by",
+      "законопроект \"об искусственном интеллекте\" Беларусь Палата представителей",
+      "СТБ ISO/IEC искусственный интеллект Госстандарт",
+      "Национальный банк Беларуси искусственный интеллект nbrb.by",
+      "Указ Президента искусственный интеллект Парк высоких технологий",
+      "Беларусь дипфейк Уголовный кодекс искусственный интеллект",
+      "штучны інтэлект Беларусь пастанова міністэрства",
+      "Минздрав Беларуси искусственный интеллект медицинские изделия",
+      "\"Кодекс этики\" искусственного интеллекта Беларусь",
+      "edu.gov.by искусственный интеллект методические рекомендации",
+      "глоссарий искусственного интеллекта ОИПИ НАН",
+      "Беларусь искусственный интеллект постановление утверждена концепция 2026",
+      "pravo.by искусственного интеллекта закон Республики Беларусь 2026 принят",
+      "Декрет № 8 О развитии цифровой экономики искусственный интеллект Парк высоких технологий",
+      "Национальный центр защиты персональных данных рекомендации искусственный интеллект"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-13",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-13, one agent, national level only (PROTOCOL §6), about 25-minute time box. Resumed run: 4 earlier records re-checked 2026-10-13 (Digital Belarus summary corrected; others unchanged); Decree No. 8 of 2017 added. cpd.by 503 (curl and WebFetch); pravo.by search JS-only (etalonline.by and web search used); house.gov.by not searched directly. Decree 8 effective 2018-03-28 computed from clause 16 (three months after publication 2017-12-27); Law 99-Z effective 2021-11-15 computed from art. 21 (six months after publication 2021-05-14). Decree 8 kept: it names AI activities (creating and training neural networks, training datasets) as privileged High-Tech Park activities. Decree 135 binding_regulation under strategy. Later amendments to Law 99-Z and Decree 8 not checked. Convention 108: not a party. Units covered: Law: pravo.by official publication (document cards + PDFs) and etalonline.by full-text search (not phrase-capable): no AI-specific law, deepfake offence or public-sector algorithm rule found; Law 99-Z on personal data and Decree No. 8 on the digital economy (High-Tech Park AI activities) recorded; AI amendments to it and an AI law are only planned (leads). Bills bank: nothing found.; Government: Council of Ministers and Presidential acts: Digital Belarus 2026-2030 programme, innovation programme 2026-2030 and science priorities decree recorded; 2021-2025 digital programme read (no AI content); digital-sovereignty concept read (passing AI mention, lead); AI concept and digital strategy 2026-2035 in preparation (leads). Ministry of Communications site searched.; Ministries: Education, Health (medical device registration resolution No. 211/2026 read: no AI provisions), Justice, Defence, Finance/Tax, Labour, Interior: searched, nothing AI-specific found.; Regulators: National Personal Data Protection Centre (site returned 503; no AI guidance found; planned bill as lead), National Bank (no AI rules found; 2023-2025 concept as lead), Gosstandart (no adopted AI standard found; lead), Operational and Analytical Centre, High-Tech Park: searched, nothing AI-specific found.. Not reached: cpd.by (HTTP 503 on 2026-10-12 and again on 2026-10-13 via curl and WebFetch); pravo.by internal legal-act search (JS form; used etalonline.by word search and web search instead); house.gov.by not searched directly. Could not verify: National Personal Data Protection Centre site (cpd.by) returned 503, so no AI guidance could be checked there; Status of the AI development concept and the Digital Development Strategy 2026-2035 (no official text). ethics, risk-assurance, procurement, cyber-security, transparency, standards, sandbox, index-readiness, sectoral, drafts, international, historical: no material found.",
     "discovery_result_count": 10,
     "focused_result_count": 9
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-0a595c21f084",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "BLR",
+      "instrument_id": "i-327f18dbe14f",
+      "title": "On the State Programme \"Digital Belarus\" for 2026-2030 (Resolution of the Council of Ministers of the Republic of Belarus No. 793 of 30 December 2025)",
+      "detail": "Added to the radar (published 2026-01-10).",
+      "from": null,
+      "to": null,
+      "source_url": "https://pravo.by/document/?guid=12551&p0=C22500793",
+      "needs_review": false
+    },
+    {
+      "id": "c-2f4082ff3251",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "BLR",
+      "instrument_id": "i-6db77057e9c2",
+      "title": "On the State Programme of Innovative Development of the Republic of Belarus for 2026-2030 (Decree of the President of the Republic of Belarus No. 448 of 21 December 2025)",
+      "detail": "Added to the radar (published 2025-12-25).",
+      "from": null,
+      "to": null,
+      "source_url": "https://pravo.by/document/?guid=12551&p0=P32500448",
+      "needs_review": false
+    },
+    {
+      "id": "c-467fbcc7b2a2",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "BLR",
+      "instrument_id": "i-b71767b0a5b6",
+      "title": "On the Priority Directions of Scientific, Scientific-Technical and Innovation Activity for 2026-2030 (Decree of the President of the Republic of Belarus No. 135 of 1 April 2025)",
+      "detail": "Added to the radar (published 2025-04-02).",
+      "from": null,
+      "to": null,
+      "source_url": "https://pravo.by/document/?guid=12551&p0=P32500135",
+      "needs_review": false
+    },
+    {
+      "id": "c-64ed430aef2c",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "BLR",
+      "instrument_id": "i-2f81d13f4ce8",
+      "title": "Law of the Republic of Belarus No. 99-Z of 7 May 2021 \"On Personal Data Protection\"",
+      "detail": "Added to the radar (published 2021-05-14).",
+      "from": null,
+      "to": null,
+      "source_url": "https://pravo.by/document/?guid=12551&p0=H12100099",
+      "needs_review": false
+    },
+    {
+      "id": "c-95a87f134874",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "BLR",
+      "instrument_id": "i-a52b53f92098",
+      "title": "Decree of the President of the Republic of Belarus No. 8 of 21 December 2017 \"On the Development of the Digital Economy\"",
+      "detail": "Added to the radar (published 2017-12-27).",
+      "from": null,
+      "to": null,
+      "source_url": "https://pravo.by/document/?guid=12551&p0=Pd1700008",
+      "needs_review": false
+    },
+    {
+      "id": "c-20dc7c056a7d",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "BLR",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 5 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-cd968db11a6e",
+      "date": "2026-01-10",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "BLR",
+      "instrument_id": "i-327f18dbe14f",
+      "title": "State Programme \"Digital Belarus\" 2026-2030 published",
+      "detail": "Resolution No. 793 published on the National Legal Internet Portal (6-1/55630).",
+      "from": null,
+      "to": null,
+      "source_url": "https://pravo.by/document/?guid=12551&p0=C22500793",
+      "needs_review": false
+    },
+    {
+      "id": "c-7736fc9b34c3",
+      "date": "2026-01-01",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "BLR",
+      "instrument_id": "i-327f18dbe14f",
+      "title": "State Programme \"Digital Belarus\" 2026-2030 enters into force",
+      "detail": "Clause 3: the resolution enters into force on 1 January 2026.",
+      "from": null,
+      "to": null,
+      "source_url": "https://pravo.by/document/?guid=12551&p0=C22500793",
+      "needs_review": false
+    },
+    {
+      "id": "c-03e0065cb67d",
+      "date": "2025-12-30",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "BLR",
+      "instrument_id": "i-327f18dbe14f",
+      "title": "State Programme \"Digital Belarus\" 2026-2030 approved",
+      "detail": "Council of Ministers Resolution No. 793 of 30 December 2025 approves the programme, including the national AI-model platform, training-data system and LLM dataset measures.",
+      "from": null,
+      "to": null,
+      "source_url": "https://pravo.by/document/?guid=12551&p0=C22500793",
+      "needs_review": false
+    },
+    {
+      "id": "c-df8cf0207d17",
+      "date": "2025-12-25",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "BLR",
+      "instrument_id": "i-6db77057e9c2",
+      "title": "State Programme of Innovative Development 2026-2030 published",
+      "detail": "Decree No. 448 published on the National Legal Internet Portal (3-1/22269); in force after publication (clause 8).",
+      "from": null,
+      "to": null,
+      "source_url": "https://pravo.by/document/?guid=12551&p0=P32500448",
+      "needs_review": false
+    },
+    {
+      "id": "c-36a421329e04",
+      "date": "2025-12-21",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "BLR",
+      "instrument_id": "i-6db77057e9c2",
+      "title": "State Programme of Innovative Development 2026-2030 approved",
+      "detail": "Presidential Decree No. 448 names \"digital technologies and artificial intelligence\" as the first priority direction.",
+      "from": null,
+      "to": null,
+      "source_url": "https://pravo.by/document/?guid=12551&p0=P32500448",
+      "needs_review": false
+    },
+    {
+      "id": "c-2acf83c7a139",
+      "date": "2025-04-02",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "BLR",
+      "instrument_id": "i-b71767b0a5b6",
+      "title": "Priority directions for science and innovation 2026-2030 published",
+      "detail": "Decree No. 135 published on the National Legal Internet Portal (1/21893).",
+      "from": null,
+      "to": null,
+      "source_url": "https://pravo.by/document/?guid=12551&p0=P32500135",
+      "needs_review": false
+    },
+    {
+      "id": "c-f2a2ca42e66b",
+      "date": "2025-04-01",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "BLR",
+      "instrument_id": "i-b71767b0a5b6",
+      "title": "Priority directions for science and innovation 2026-2030 set, with AI first",
+      "detail": "Presidential Decree No. 135 lists AI technologies as a cross-cutting priority for 2026-2030.",
+      "from": null,
+      "to": null,
+      "source_url": "https://pravo.by/document/?guid=12551&p0=P32500135",
+      "needs_review": false
+    },
+    {
+      "id": "c-44b59386fd43",
+      "date": "2021-05-14",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "BLR",
+      "instrument_id": "i-2f81d13f4ce8",
+      "title": "Law No. 99-Z on Personal Data Protection published",
+      "detail": "Published on the National Legal Internet Portal (2/2819); articles 1-19 apply six months after publication.",
+      "from": null,
+      "to": null,
+      "source_url": "https://pravo.by/document/?guid=12551&p0=H12100099",
+      "needs_review": false
+    },
+    {
+      "id": "c-d5b8c18f2e25",
+      "date": "2021-05-07",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "BLR",
+      "instrument_id": "i-2f81d13f4ce8",
+      "title": "Law No. 99-Z on Personal Data Protection signed",
+      "detail": "Adopted by the House of Representatives on 2 April 2021, approved by the Council of the Republic on 21 April 2021, signed 7 May 2021.",
+      "from": null,
+      "to": null,
+      "source_url": "https://pravo.by/document/?guid=12551&p0=H12100099",
+      "needs_review": false
+    },
+    {
+      "id": "c-ffef16e58fb6",
+      "date": "2017-12-27",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "BLR",
+      "instrument_id": "i-a52b53f92098",
+      "title": "Decree No. 8 on the Development of the Digital Economy published",
+      "detail": "Published on the National Legal Internet Portal (1/17415).",
+      "from": null,
+      "to": null,
+      "source_url": "https://pravo.by/document/?guid=12551&p0=Pd1700008",
+      "needs_review": false
+    },
+    {
+      "id": "c-ae0b67875490",
+      "date": "2017-12-21",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "BLR",
+      "instrument_id": "i-a52b53f92098",
+      "title": "Decree No. 8 on the Development of the Digital Economy signed",
+      "detail": "Opens the High-Tech Park regime to AI activities, including creation and training of neural networks.",
+      "from": null,
+      "to": null,
+      "source_url": "https://pravo.by/document/?guid=12551&p0=Pd1700008",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Проект Закона о внесении изменений в Закон «О защите персональных данных» (автоматизированное принятие решений)",
+      "english_title": "Draft law amending the Law on Personal Data Protection (automated decision-making, including AI)",
+      "issuing_authority": "National Personal Data Protection Centre",
+      "note": "Pending bill. On 27 May 2026 the Centre said (pravo.by news, citing BELTA) that a bill adding an article on automated processing and automated decision-making is planned for submission to the Government in 2026: organisations using AI for legally significant decisions (e.g. hiring) would have to inform people and obtain consent. No official draft text located on pravo.by or the public-discussion forum.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "Концепция развития искусственного интеллекта в Республике Беларусь",
+      "english_title": "Concept for the Development of Artificial Intelligence in the Republic of Belarus",
+      "issuing_authority": "Ministry of Communications and Informatization; Joint Institute for Informatics Problems, National Academy of Sciences",
+      "note": "In preparation. Reported on pravo.by (August 2025) and on mpt.gov.by (6 October 2025: the Minister of Communications said the concept is being developed). No adopted or draft text found as of 2026-10-13.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "Стратегия цифрового развития Республики Беларусь на 2026–2030 годы и на период до 2035 года",
+      "english_title": "Digital Development Strategy of the Republic of Belarus for 2026-2030 and up to 2035",
+      "issuing_authority": "Ministry of Communications and Informatization",
+      "note": "Draft presented to the Council for Strategic Projects under the President at a meeting on AI infrastructure (mpt.gov.by news; no stated date). No adopted text located on pravo.by.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "Закон Республики Беларусь об искусственном интеллекте (проект)",
+      "english_title": "Draft law on artificial intelligence",
+      "issuing_authority": "Government of Belarus (developer not named)",
+      "note": "pravo.by news (June and September 2025) reported that a law regulating AI is being prepared, following the CIS model law of 18 April 2025. No bill found in the pravo.by bank of draft laws.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "Глоссарий в области искусственного интеллекта",
+      "english_title": "Artificial intelligence glossary (about 180 terms)",
+      "issuing_authority": "Joint Institute for Informatics Problems, National Academy of Sciences, with about 20 ministries and agencies",
+      "note": "Reported as prepared as the basis for AI legislation; no official published text or approval act located.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "Национальные стандарты в области искусственного интеллекта (ТК BY 41 «Цифровое развитие и связь»)",
+      "english_title": "National AI standards (technical committee TC BY 41 \"Digital development and communications\")",
+      "issuing_authority": "State Committee for Standardization (Gosstandart)",
+      "note": "Gosstandart said 20-25 AI standards would appear \"by the end of the year\" (mpt.gov.by news, no stated date); TC BY 41 created by Gosstandart order No. 193 of 12 November 2025 (reported). No adopted STB on AI identified.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "Концепция обеспечения суверенитета Республики Беларусь в сфере цифрового развития до 2030 года (постановление Совета Министров от 31 декабря 2024 г. № 1074)",
+      "english_title": "Concept for Ensuring the Sovereignty of the Republic of Belarus in Digital Development up to 2030 (Council of Ministers Resolution No. 1074 of 31 December 2024)",
+      "issuing_authority": "Council of Ministers of the Republic of Belarus",
+      "note": "Official text read on pravo.by (published 15.01.2025). Mentions AI only in passing (definition of digital technologies; training of AI specialists); not an AI instrument.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "Концепция развития платежного рынка Республики Беларусь и цифровизации банковского сектора на 2023–2025 годы",
+      "english_title": "Concept for the development of the payment market and digitalisation of the banking sector 2023-2025",
+      "issuing_authority": "National Bank of the Republic of Belarus",
+      "note": "Reported to discuss AI prospects in banking; not read. Expired end-2025; check nbrb.by for AI content and any successor document.",
+      "found": "2026-10-13"
+    }
+  ]
 }

@@ -10,18 +10,281 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Montenegro has no AI-specific law or adopted AI strategy yet. Its binding AI-relevant rules are the automated decision-making and profiling provisions of two GDPR-aligned data protection laws published in September 2026, one general and one for law enforcement, which apply from March 2027; until then the 2008 data protection law applies. The first national AI Strategy 2026-2030, led by the Ministry of Public Administration with UNDP support, is still being drafted.",
+    "lead_institutions": [
+      "Ministry of Public Administration",
+      "Agency for Personal Data Protection and Free Access to Information"
+    ],
+    "last_deep_review": "2026-10-13",
+    "review_notes": "This review was carried out on 12 and 13 October 2026 from the official gazette and government websites; a run cut off by a usage limit was resumed and every record from it was re-checked against its official text. The draft national AI strategy is tracked as a lead."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-84f1609717fc",
+      "jurisdiction_id": "MNE",
+      "official_title": "Zakon o zaštiti podataka o ličnosti (Službeni list Crne Gore, br. 133/2026)",
+      "english_title": "Law on Personal Data Protection (Official Gazette of Montenegro No. 133/2026)",
+      "issuing_authority": "Parliament of Montenegro (Skupština Crne Gore); promulgated by the President of Montenegro",
+      "authority_type": "legislature",
+      "publisher_name": "Official Gazette of Montenegro (Službeni list Crne Gore)",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "category": "data-privacy",
+      "subcategory": null,
+      "legal_status": "binding_law",
+      "lifecycle": "adopted",
+      "publication_date": "2026-09-11",
+      "effective_date": "2027-03-19",
+      "last_amended_date": null,
+      "current_status": "Published 11 September 2026 in Službeni list Crne Gore No. 133/2026 (reg. no. 2294). Computed from art. 106: in force on the eighth day after publication (19 September 2026, as also stated on the gazette page) and applies six months after entry into force (gazette page: application from 19 March 2027). From that date it repeals the 2008 Law on Personal Data Protection (except arts. 35-40a on video surveillance, art. 105). Provisions referring to EU law apply from EU accession (art. 104).",
+      "scope": "Montenegro (national); processing of personal data by controllers and processors",
+      "summary": "Montenegro's new GDPR-aligned personal data protection law, adopted by Parliament on 4 September 2026, replaces the 2008 law and applies to controllers and processors processing personal data wholly or partly by automated means. Article 23 gives data subjects the right not to be subject to a decision based solely on automated processing, including profiling, that produces legal effects or similarly significantly affects them, with exceptions (contract, law, explicit consent) that require safeguards including human intervention, and arts. 14-16 require information on the existence and logic of automated decision-making. Under art. 35 a data protection impact assessment is required in particular for systematic and extensive evaluation of personal aspects based on automated processing, including profiling; supervision lies with the Agency for Personal Data Protection and Free Access to Information (art. 52).",
+      "ai_governance_relevance": "General data protection law with GDPR-style rules on solely automated decision-making and profiling (art. 23) and impact assessments for automated evaluation; the main binding rule set for AI systems processing personal data in Montenegro.",
+      "source_url": "https://www.sluzbenilist.me/propisi/398066",
+      "official_pdf_url": "https://www.sluzbenilist.me/propisi/398066/download",
+      "official_webpage_url": "https://www.sluzbenilist.me/propisi/398066",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "automated decision-making",
+        "profiling"
+      ],
+      "source_kind": "legislation_portal",
+      "supersedes": [
+        "i-4f072dd19d90"
+      ],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-accddb475c38"
+      ],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "sr",
+      "verification_date": "2026-10-13",
+      "first_recorded": "2026-10-13",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-b4038df7e47b",
+      "organization_id": "o-f0256253a803",
+      "evidence_reference": "Re-checked 2026-10-13 (resumed run): curl (browser user agent, --max-time 60) re-fetched the gazette record page and official PDF; gazette record page read (status, issue 133/2026, publication 11.09.2026, entry into force 19.09.2026, application 19.03.2027) and full 45-page official PDF read with pdftotext (promulgation decree, arts. 23, 104-106)"
+    },
+    {
+      "id": "i-accddb475c38",
+      "jurisdiction_id": "MNE",
+      "official_title": "Zakon o zaštiti podataka o ličnosti koje obrađuju nadležni organi u svrhu sprečavanja, istraživanja, otkrivanja ili gonjenja krivičnih djela ili izvršenja krivičnih sankcija",
+      "english_title": "Law on the Protection of Personal Data Processed by Competent Authorities for the Prevention, Investigation, Detection or Prosecution of Criminal Offences or the Execution of Criminal Sanctions",
+      "issuing_authority": "Parliament of Montenegro (Skupština Crne Gore); promulgated by the President of Montenegro",
+      "authority_type": "legislature",
+      "publisher_name": "Official Gazette of Montenegro (Službeni list Crne Gore)",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "category": "data-privacy",
+      "subcategory": null,
+      "legal_status": "binding_law",
+      "lifecycle": "adopted",
+      "publication_date": "2026-09-09",
+      "effective_date": "2027-03-17",
+      "last_amended_date": null,
+      "current_status": "Published 9 September 2026 in Službeni list Crne Gore No. 132/2026 (reg. no. 2261). Computed from art. 60: in force on the eighth day after publication (17 September 2026, as stated on the gazette page) and applies six months later (gazette page: application from 17 March 2027). Certain provisions apply from EU accession.",
+      "scope": "Montenegro (national); competent authorities processing personal data for criminal-justice purposes",
+      "summary": "Law transposing the law-enforcement data protection rules for police, prosecutors and other competent authorities processing personal data for criminal-justice purposes, adopted by Parliament on 4 September 2026. Article 13 prohibits decisions based solely on automated processing, including profiling, that produce adverse legal effects or significantly affect the data subject unless provided by law with safeguards including at least the right to human intervention, bars such decisions on special categories of data without appropriate safeguards, and prohibits profiling that leads to discrimination on the basis of special categories of data; it also defines profiling and sets security rules for automated processing systems.",
+      "ai_governance_relevance": "Binding limits on automated decision-making and profiling by law-enforcement and criminal-justice authorities (art. 13).",
+      "source_url": "https://www.sluzbenilist.me/propisi/397967",
+      "official_pdf_url": "https://www.sluzbenilist.me/propisi/397967/download",
+      "official_webpage_url": "https://www.sluzbenilist.me/propisi/397967",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "automated decision-making",
+        "profiling"
+      ],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-84f1609717fc"
+      ],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "sr",
+      "verification_date": "2026-10-13",
+      "first_recorded": "2026-10-13",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-0c425d7b7378",
+      "organization_id": "o-f0256253a803",
+      "evidence_reference": "Re-checked 2026-10-13 (resumed run): curl (browser user agent, --max-time 60) re-fetched the gazette record page and official PDF; gazette record page read (issue 132/2026, publication 09.09.2026, entry into force 17.09.2026, application 17.03.2027) and full official PDF read with pdftotext (promulgation decree, arts. 13 and 60)"
+    },
+    {
+      "id": "i-4f072dd19d90",
+      "jurisdiction_id": "MNE",
+      "official_title": "Zakon o zaštiti podataka o ličnosti (Službeni list Crne Gore, br. 79/2008)",
+      "english_title": "Law on Personal Data Protection (Official Gazette of Montenegro No. 79/2008, as amended)",
+      "issuing_authority": "Parliament of Montenegro (Skupština Crne Gore); promulgated by the President of Montenegro",
+      "authority_type": "legislature",
+      "publisher_name": "Official Gazette of Montenegro (Službeni list Crne Gore)",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "data-privacy",
+        "binding-law",
+        "historical"
+      ],
+      "category": "data-privacy",
+      "subcategory": null,
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2008-12-23",
+      "effective_date": "2009-06-30",
+      "last_amended_date": null,
+      "current_status": "Published 23 December 2008 in Službeni list Crne Gore No. 79/2008; in force 30 December 2008, applied from 30 June 2009 (gazette page). Amended by Nos. 70/09, 44/12, 22/17 and 77/24 (as listed in art. 105 of the 2026 law). Still in force; repealed from 19 March 2027, the date the new Law on Personal Data Protection (No. 133/2026) applies, except arts. 35-40a on video surveillance, which lapse when a law on video surveillance enters into force.",
+      "scope": "Montenegro (national); processing of personal data",
+      "summary": "Montenegro's 2008 personal data protection law, which applies to processing of personal data carried out automatically, wholly or partly, and to manual filing systems, and set up the supervisory Agency for Personal Data Protection. It sets the legal bases, data subject rights, rules on data collections and international transfers, but the original 2008 text contains no specific rule on solely automated decision-making or profiling (later amendments were not reviewed).",
+      "ai_governance_relevance": "Data protection law currently governing personal data processing by AI systems in Montenegro until the 2026 law applies.",
+      "source_url": "https://www.sluzbenilist.me/propisi/298231",
+      "official_pdf_url": "https://www.sluzbenilist.me/propisi/298231/download",
+      "official_webpage_url": "https://www.sluzbenilist.me/propisi/298231",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "automated processing of personal data"
+      ],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-84f1609717fc"
+      ],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "sr",
+      "verification_date": "2026-10-13",
+      "first_recorded": "2026-10-13",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-e916984906f8",
+      "organization_id": "o-f0256253a803",
+      "evidence_reference": "Re-checked 2026-10-13 (resumed run): curl (browser user agent, --max-time 60) re-fetched the gazette record page and official PDF; gazette record page read (issue 79/2008, publication 23.12.2008, entry into force 30.12.2008, application 30.06.2009) and original official PDF read with pdftotext; amendment list and repeal taken from art. 105 of Law No. 133/2026"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-f0256253a803",
+      "jurisdiction_id": "MNE",
+      "name": "Parliament of Montenegro",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Parliament of Montenegro (Skupština Crne Gore); adopted the 2026 Law on Personal Data Protection and the law-enforcement data protection law, which contain the national rules on solely automated decision-making and profiling.",
+      "source_url": "https://www.skupstina.me/",
+      "authority_type": "legislature",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-b4038df7e47b",
+      "url": "https://www.sluzbenilist.me/propisi/398066",
+      "jurisdiction_ids": [
+        "MNE"
+      ],
+      "source_institutions": [
+        "Official Gazette of Montenegro (Službeni list Crne Gore)"
+      ],
+      "instrument_ids": [
+        "i-84f1609717fc"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "Re-checked 2026-10-13 (resumed run): curl (browser user agent, --max-time 60) re-fetched the gazette record page and official PDF; gazette record page read (status, issue 133/2026, publication 11.09.2026, entry into force 19.09.2026, application 19.03.2027) and full 45-page official PDF read with pdftotext (promulgation decree, arts. 23, 104-106)",
+      "http_status": 200,
+      "final_url": "https://www.sluzbenilist.me/propisi/398066",
+      "link_status": "reachable",
+      "page_title": "Zakon o zaštiti podataka o ličnosti (Službeni list Crne Gore, br. 133/2026)",
+      "document_language": "sr",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-0c425d7b7378",
+      "url": "https://www.sluzbenilist.me/propisi/397967",
+      "jurisdiction_ids": [
+        "MNE"
+      ],
+      "source_institutions": [
+        "Official Gazette of Montenegro (Službeni list Crne Gore)"
+      ],
+      "instrument_ids": [
+        "i-accddb475c38"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "Re-checked 2026-10-13 (resumed run): curl (browser user agent, --max-time 60) re-fetched the gazette record page and official PDF; gazette record page read (issue 132/2026, publication 09.09.2026, entry into force 17.09.2026, application 17.03.2027) and full official PDF read with pdftotext (promulgation decree, arts. 13 and 60)",
+      "http_status": 200,
+      "final_url": "https://www.sluzbenilist.me/propisi/397967",
+      "link_status": "reachable",
+      "page_title": "Zakon o zaštiti podataka o ličnosti koje obrađuju nadležni organi u svrhu sprečavanja, istraživanja, otkrivanja ili gonjenja krivičnih djela ili izvršenja krivičnih sankcija",
+      "document_language": "sr",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-e916984906f8",
+      "url": "https://www.sluzbenilist.me/propisi/298231",
+      "jurisdiction_ids": [
+        "MNE"
+      ],
+      "source_institutions": [
+        "Official Gazette of Montenegro (Službeni list Crne Gore)"
+      ],
+      "instrument_ids": [
+        "i-4f072dd19d90"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law",
+        "historical"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "Re-checked 2026-10-13 (resumed run): curl (browser user agent, --max-time 60) re-fetched the gazette record page and official PDF; gazette record page read (issue 79/2008, publication 23.12.2008, entry into force 30.12.2008, application 30.06.2009) and original official PDF read with pdftotext; amendment list and repeal taken from art. 105 of Law No. 133/2026",
+      "http_status": 200,
+      "final_url": "https://www.sluzbenilist.me/propisi/298231",
+      "link_status": "reachable",
+      "page_title": "Zakon o zaštiti podataka o ličnosti (Službeni list Crne Gore, br. 79/2008)",
+      "document_language": "sr",
+      "error": null,
+      "content_type": "text/html"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "MNE",
     "country": "Montenegro",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -33,10 +296,12 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_with_findings": [
       "binding-law",
+      "data-privacy",
+      "historical"
+    ],
+    "categories_where_no_material_was_found": [
       "strategy",
       "government-governance",
       "ethics",
@@ -44,7 +309,6 @@
       "public-sector",
       "procurement",
       "cyber-security",
-      "data-privacy",
       "transparency",
       "standards",
       "sandbox",
@@ -52,36 +316,233 @@
       "sectoral",
       "generative-ai",
       "drafts",
-      "international",
-      "historical"
+      "international"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Montenegro \"вештачка интелигенција\" (стратегија OR регулација OR етика) government ministry official",
       "Montenegro \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Montenegro government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Montenegro \"вештачка интелигенција\" cybersecurity authority secure development safety guidelines",
-      "Montenegro privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Montenegro privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "gov.me sitemap (sitemap.gov.me) 2019-2026 article titles grep: vještačk / inteligencij / AI / algoritam / ChatGPT / generativ",
+      "gov.me pretraga: vještačka inteligencija",
+      "sluzbenilist.me propisi q=vještačk; vještačka inteligencija; vještačkoj inteligenciji; vjestacke inteligencije",
+      "sluzbenilist.me propisi q=zaštiti podataka o ličnosti; automatsku obradu; automatsku obradu ličnih podataka; obradom ličnih podataka",
+      "sluzbenilist.me propisi q=zaštiti lica u odnosu na automatsku obradu; Konvencije o zaštiti lica; potvrđivanju Protokola o izmjeni Konvencije o zaštiti; Okvirne konvencije Savjeta Evrope o vještačkoj",
+      "skupstina.me pretraga: vještačka inteligencija",
+      "Crna Gora vještačka inteligencija strategija gov.me",
+      "\"Strategija\" \"vještačke inteligencije\" 2026-2030 Crne Gore javna rasprava nacrt",
+      "Strategija digitalne transformacije Crne Gore 2022-2026 vještačka inteligencija",
+      "Zakon o zaštiti podataka o ličnosti Crna Gora 2025 usvojen Skupština novi zakon Službeni list",
+      "smjernice upotreba vještačke inteligencije Crna Gora obrazovanje OR uprava OR Agencija za zaštitu ličnih podataka",
+      "Montenegro deepfake criminal code amendment artificial intelligence Krivični zakonik",
+      "Montenegro artificial intelligence strategy 2025 Ministry of Public Administration draft",
+      "azlp.me / cbcg.me pretraga / ekip.me ?s= vještačka",
+      "isme.me AI standards (vještačka inteligencija standardi)",
+      "2026-10-13 re-run: sluzbenilist.me propisi q=vještačk (no results); gov.me article on 5th AI strategy working-group session re-read; web search: Strategija vještačke inteligencije Crne Gore 2026-2030 javna rasprava nacrt (no consultation found)"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-13",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-13, one agent, national level only (PROTOCOL §6), about 25-minute time box. Resumed run: all 3 records re-checked 2026-10-13 against gazette pages and PDFs (dates/status unchanged; summaries corrected). aemcg.org site search not run; ISME catalogue not checked for ISO/IEC 42001. 2026 laws: lifecycle adopted, effective_date = application date (2027-03-19, 2027-03-17), in force Sep 2026. 2008 law kept in_force (repeal effective 2027-03-19). Gazette search 'vještačk': no results. Convention 108: party by 2005 State Union ratification and succession; no Montenegrin act in the gazette, so not attached. Units covered: Law: Službeni list Crne Gore title search (AI terms, data protection, Convention 108/AI convention ratification acts): no AI law or AI-specific provisions in titles; new GDPR-aligned Law on Personal Data Protection 133/2026 and law-enforcement data protection law 132/2026 (automated decision-making rules) recorded, plus 2008 law. skupstina.me search returned nothing on AI; no pending AI bill or deepfake offence found.; Government: gov.me full sitemap 2019-2026 scanned (~190 pages) for AI titles: only news on the AI strategy working group (strategy 2026-2030 still in drafting, lead), AILA readiness report (UNDP-hosted, lead), trainings, chatbots and events. Digital Transformation Strategy 2022-2026 read: AI only in passing (lead). No public-sector AI or GenAI guideline found.; Ministries: Searched via gov.me sitemap and web search: education (AI-in-education project and trainings, no guideline), health (meeting news only), justice (judiciary AI modernisation news), defence ('Digitalni ađutant' news), interior (fraud warnings), finance and labour: searched, nothing found that governs AI.; Regulators: Agency for Personal Data Protection and Free Access to Information (azlp.me): only news mentions, no AI guidance; Central Bank (cbcg.me search: no results); EKIP (no results); ISME standards leaflet (lead, undated); audiovisual media regulator and cyber authority: searched via web, nothing found.. Not reached: Agency for Audiovisual Media Services (aemcg.org) own site search not run; ISME standards catalogue (national MEST adoption of ISO/IEC 42001) not checked. Could not verify: Whether the draft AI Strategy 2026-2030 has been put to public consultation (no gov.me item found up to 2026-10-13).; AILA report text (only on undp.org).. strategy, government-governance, ethics, risk-assurance, public-sector, procurement, cyber-security, transparency, standards, sandbox, index-readiness, sectoral, generative-ai, drafts, international: no material found.",
     "discovery_result_count": 13,
     "focused_result_count": 11
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-a114cd3f47f4",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "MNE",
+      "instrument_id": "i-84f1609717fc",
+      "title": "Law on Personal Data Protection (Official Gazette of Montenegro No. 133/2026)",
+      "detail": "Lifecycle recorded as adopted when added.",
+      "from": null,
+      "to": "adopted",
+      "source_url": "https://www.sluzbenilist.me/propisi/398066",
+      "needs_review": false
+    },
+    {
+      "id": "c-273c3215abf5",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "MNE",
+      "instrument_id": "i-84f1609717fc",
+      "title": "Law on Personal Data Protection (Official Gazette of Montenegro No. 133/2026)",
+      "detail": "Added to the radar (published 2026-09-11).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.sluzbenilist.me/propisi/398066",
+      "needs_review": false
+    },
+    {
+      "id": "c-d9483c59613a",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "MNE",
+      "instrument_id": "i-accddb475c38",
+      "title": "Law on the Protection of Personal Data Processed by Competent Authorities for the Prevention, Investigation, Detection or Prosecution of Criminal Offences or the Execution of Criminal Sanctions",
+      "detail": "Lifecycle recorded as adopted when added.",
+      "from": null,
+      "to": "adopted",
+      "source_url": "https://www.sluzbenilist.me/propisi/397967",
+      "needs_review": false
+    },
+    {
+      "id": "c-9c0f066b6613",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "MNE",
+      "instrument_id": "i-accddb475c38",
+      "title": "Law on the Protection of Personal Data Processed by Competent Authorities for the Prevention, Investigation, Detection or Prosecution of Criminal Offences or the Execution of Criminal Sanctions",
+      "detail": "Added to the radar (published 2026-09-09).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.sluzbenilist.me/propisi/397967",
+      "needs_review": false
+    },
+    {
+      "id": "c-4a1d7a624e01",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "MNE",
+      "instrument_id": "i-4f072dd19d90",
+      "title": "Law on Personal Data Protection (Official Gazette of Montenegro No. 79/2008, as amended)",
+      "detail": "Added to the radar (published 2008-12-23).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.sluzbenilist.me/propisi/298231",
+      "needs_review": false
+    },
+    {
+      "id": "c-bb86e8cfc15b",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "MNE",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 3 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-b4d19aa88cae",
+      "date": "2026-09-11",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "MNE",
+      "instrument_id": "i-84f1609717fc",
+      "title": "Law on Personal Data Protection published (Sl. list CG 133/2026)",
+      "detail": "Published in Službeni list Crne Gore No. 133/2026; enters into force on the eighth day after publication and applies six months later.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.sluzbenilist.me/propisi/398066",
+      "needs_review": false
+    },
+    {
+      "id": "c-fb1e79fb6052",
+      "date": "2026-09-09",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "MNE",
+      "instrument_id": "i-accddb475c38",
+      "title": "Law-enforcement data protection law published (Sl. list CG 132/2026)",
+      "detail": "Published in Službeni list Crne Gore No. 132/2026; enters into force on the eighth day after publication and applies six months later.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.sluzbenilist.me/propisi/397967",
+      "needs_review": false
+    },
+    {
+      "id": "c-31ca609a90d5",
+      "date": "2026-09-04",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "MNE",
+      "instrument_id": "i-84f1609717fc",
+      "title": "Parliament adopts new Law on Personal Data Protection",
+      "detail": "Adopted by the Parliament of Montenegro (28th convocation) on 4 September 2026, as stated in the law and the President's promulgation decree published in the Official Gazette.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.sluzbenilist.me/propisi/398066",
+      "needs_review": false
+    },
+    {
+      "id": "c-07554dfa05f6",
+      "date": "2026-09-04",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "MNE",
+      "instrument_id": "i-accddb475c38",
+      "title": "Parliament adopts law-enforcement data protection law",
+      "detail": "Adopted by the Parliament of Montenegro (28th convocation) on 4 September 2026, as stated in the law and the President's promulgation decree published in the Official Gazette.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.sluzbenilist.me/propisi/397967",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Strategija vještačke inteligencije Crne Gore za period 2026-2030 sa pratećim Akcionim planom za 2026. godinu (nacrt)",
+      "english_title": "Artificial Intelligence Strategy of Montenegro 2026-2030 with Action Plan for 2026 (draft)",
+      "issuing_authority": "Ministry of Public Administration",
+      "note": "First national AI strategy, being drafted by a working group coordinated by the Ministry of Public Administration with UNDP support (constitutive session October 2025; fifth session on 27 May 2026 discussed the first draft: https://www.gov.me/clanak/odrzana-peta-sjednica-radne-grupe-za-izradu-strategije-vjestacke-inteligencije-crne-gore-za-period-2026-2030). No draft text, public consultation or Government adoption found on gov.me as of 2026-10-13. Record as consultation_draft when published for public debate, or national_strategy once adopted.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "Izvještaj o procjeni spremnosti za primjenu vještačke inteligencije (AILA) / Artificial Intelligence Landscape Assessment",
+      "english_title": "Artificial Intelligence Landscape Assessment (AILA) report for Montenegro",
+      "issuing_authority": "Ministry of Public Administration and UNDP Montenegro",
+      "note": "Readiness assessment presented on 13 May 2025 (gov.me article https://www.gov.me/clanak/predstavljen-prvi-izvjestaj-o-spremnosti-crne-gore-za-primjenu-vjestacke-inteligencije-u-javnoj-upravi says it will be the basis for the national AI strategy). The report itself is hosted only on undp.org; no gov.me page names that host or carries the document, so it is not an official government source under the third-party-host rule (index-readiness).",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "Standardi iz oblasti vještačke inteligencije, informacionih tehnologija i cyber bezbjednosti",
+      "english_title": "Standards in the field of artificial intelligence, information technology and cyber security (leaflet)",
+      "issuing_authority": "Institute for Standardization of Montenegro (ISME)",
+      "note": "Official document on isme.me (https://isme.me/en/download/file/page-section/727); no stated publication date. Leaflet lists AI standards (EN ISO/IEC 22989, ISO/IEC 23894, ISO/IEC 42001 etc.) without MEST adoption references or dates; check the ISME catalogue for national adoption (e.g. MEST ISO/IEC 42001) before recording under standards.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "Strategija digitalne transformacije Crne Gore 2022-2026 sa Akcionim planom 2022-2023",
+      "english_title": "Digital Transformation Strategy of Montenegro 2022-2026 with Action Plan 2022-2023",
+      "issuing_authority": "Government of Montenegro (Ministry of Public Administration, Digital Society and Media)",
+      "note": "Adopted by the Government in December 2021 (gov.me article of 27.12.2021; PDF https://wapi.gov.me/download/0c802520-e016-41ee-a6e4-7af6eb66e19d?version=1.0). Full text read: AI is mentioned only in passing (glossary and open-data/interoperability context; no AI pillar or measures), so it fails the scope test; kept as context.",
+      "found": "2026-10-13"
+    }
+  ]
 }

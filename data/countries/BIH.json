@@ -10,18 +10,285 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Bosnia and Herzegovina has no national AI strategy or AI law at state level. Its AI governance rests on the GDPR-aligned Law on Personal Data Protection of 2025, which regulates automated decisions and profiling and requires impact assessments, and on its 2026 ratification of the Council of Europe Framework Convention on Artificial Intelligence, approved by the Parliamentary Assembly and ratified by the Presidency in September 2026. It is a party to the Council of Europe's data protection convention (Convention 108).",
+    "lead_institutions": [
+      "Presidency of Bosnia and Herzegovina",
+      "Parliamentary Assembly of Bosnia and Herzegovina",
+      "Personal Data Protection Agency"
+    ],
+    "last_deep_review": "2026-10-13",
+    "review_notes": "This review was carried out on 12 and 13 October 2026 at state level from the Official Gazette of Bosnia and Herzegovina and the data protection agency's website; a run cut off by a usage limit was resumed and its downloads re-read from the official texts. The communications regulator's and central bank's sites and Parliament's bill tracker were not checked directly. A reported parliamentary AI roadmap is tracked as a lead."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-9e5433b51399",
+      "official_title": "Zakon o zaštiti ličnih podataka",
+      "english_title": "Law on Personal Data Protection",
+      "issuing_authority": "Parliamentary Assembly of Bosnia and Herzegovina",
+      "authority_type": "legislature",
+      "categories": [
+        "data-privacy",
+        "binding-law",
+        "risk-assurance"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2025-02-28",
+      "current_status": "Published in the Official Gazette of BiH no. 12/25 on 2025-02-28. Art. 120: in force on the eighth day after publication (2025-03-08) and applied after 210 days from entry into force, i.e. from 2025-10-04 (computed; the Agency's notice says application starts in October 2025). Art. 116 gives controllers two years from entry into force to align. Art. 119 repeals the 2006 Law on Personal Data Protection (Official Gazette of BiH 49/06, 76/11, 89/11) from the start of application.",
+      "summary": "State-level data protection law adopted by the Parliamentary Assembly to align Bosnia and Herzegovina with the GDPR (Regulation (EU) 2016/679) and the Law Enforcement Directive. Art. 24 gives data subjects the right not to be subject to a decision based solely on automated processing, including profiling, with legal or similarly significant effects, and arts. 15-17 require information on the logic and consequences of automated decision-making; art. 37 requires a data protection impact assessment for systematic and extensive automated evaluation, including profiling, and for new technologies. Art. 67 bars competent (law-enforcement) authorities from decisions based solely on automated processing with adverse effects unless a special law provides safeguards.",
+      "ai_governance_relevance": "Main binding framework governing automated decision-making, profiling and personal data used to train and run AI systems in BiH; supervised by the Personal Data Protection Agency.",
+      "source_url": "https://www.sluzbenilist.ba/page/akt/aCRNh0ohz4nh78h77P7BE=",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.sluzbenilist.ba/page/akt/aCRNh0ohz4nh78h77P7BE=",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-ed7c2485e35e",
+      "publisher_name": "Official Gazette of Bosnia and Herzegovina (JP NIO Službeni list BiH)",
+      "jurisdiction_id": "BIH",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "effective_date": "2025-10-04",
+      "last_amended_date": null,
+      "scope": "Bosnia and Herzegovina (state level)",
+      "technology_scope": [
+        "AI",
+        "automated decision-making"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "bs",
+      "verification_date": "2026-10-13",
+      "first_recorded": "2026-10-13",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-42f36f4d0a45",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full text of the law read on the Official Gazette portal (sluzbenilist.ba, Službeni glasnik BiH 12/25, listed 28.02.2025); arts. 24, 37, 67, 119 and 120 checked; publication date 28.02.2025 also stated in the Personal Data Protection Agency's notice on azlp.ba (Novi zakon i obavještenje, id=4468); same text also hosted by the Agency (azlp.ba ?id=4465)."
+    },
+    {
+      "id": "i-232ee476dc3a",
+      "official_title": "Odluka o davanju saglasnosti za ratifikaciju Okvirne konvencije Vijeća Evrope o vještačkoj inteligenciji i ljudskim pravima, demokratiji i vladavini prava",
+      "english_title": "Decision giving consent to ratification of the Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law",
+      "issuing_authority": "Parliamentary Assembly of Bosnia and Herzegovina",
+      "authority_type": "legislature",
+      "categories": [
+        "international"
+      ],
+      "legal_status": "binding_regulation",
+      "lifecycle": "adopted",
+      "publication_date": "2026-07-09",
+      "current_status": "Adopted by the House of Representatives at its 38th session on 2026-04-29 and by the House of Peoples at its 21st session on 2026-06-30 (decision no. 01,02-21-1-885/26 of 30 June 2026); published in the Official Gazette of BiH - International Treaties no. 5/26 on 2026-07-09. Ratification followed by Presidency decision of 2026-09-03 (MU 9/26).",
+      "summary": "Decision of the Parliamentary Assembly, under art. IV.4(d) of the Constitution, consenting to ratification of the Council of Europe Framework Convention on AI and Human Rights, Democracy and the Rule of Law, signed by Bosnia and Herzegovina in Strasbourg on 9 December 2025. It is the parliamentary step required before the Presidency ratifies the treaty.",
+      "ai_governance_relevance": "National act on the first binding international AI treaty; the Convention itself is held on the Council of Europe regional record.",
+      "source_url": "https://www.sluzbenilist.ba/page/akt/fx2utJbtgUU=",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.sluzbenilist.ba/page/akt/fx2utJbtgUU=",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-ed7c2485e35e",
+      "publisher_name": "Official Gazette of Bosnia and Herzegovina (JP NIO Službeni list BiH)",
+      "jurisdiction_id": "BIH",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "international",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Bosnia and Herzegovina (state level)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-ad8d415dba13"
+      ],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "bs",
+      "verification_date": "2026-10-13",
+      "first_recorded": "2026-10-13",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-fa40fc92829b",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full text of the decision read on the Official Gazette portal (Službeni glasnik BiH - Međunarodni ugovori 5/26); issue date 9.7.2026 read on the issue page (sluzbenilist.ba/page/i/h5YsXqgztz5k76kjn45hmGfk=)."
+    },
+    {
+      "id": "i-ad8d415dba13",
+      "official_title": "Odluka o ratifikaciji Okvirne konvencije Vijeća Evrope o vještačkoj inteligenciji i ljudskim pravima, demokratiji i vladavini prava",
+      "english_title": "Decision on ratification of the Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law",
+      "issuing_authority": "Presidency of Bosnia and Herzegovina",
+      "authority_type": "government",
+      "categories": [
+        "international",
+        "binding-law"
+      ],
+      "legal_status": "binding_regulation",
+      "lifecycle": "in_force",
+      "publication_date": "2026-09-28",
+      "current_status": "Adopted by the Presidency at its 31st regular session on 2026-09-03 (no. 01-50-1-2342-27/26) with the Parliamentary Assembly's consent of 2026-06-30; published in the Official Gazette of BiH - International Treaties no. 9/26 on 2026-09-28 and, per art. 3, in force on the day of publication. The Convention's own entry into force for BiH depends on deposit of the instrument of ratification with the Council of Europe, not verified here.",
+      "summary": "Decision of the Presidency of Bosnia and Herzegovina, under art. V.3(d) of the Constitution, ratifying the Council of Europe Framework Convention on AI and Human Rights, Democracy and the Rule of Law signed on 9 December 2025 in Strasbourg. Art. 2 incorporates the Convention's translated text (printed in the gazette issue), so BiH takes on the Convention's obligations for activities across the lifecycle of AI systems; art. 3 provides for publication in Bosnian, Croatian and Serbian and entry into force on publication.",
+      "ai_governance_relevance": "Makes BiH a ratifying state of the first binding international AI treaty; the main source of AI-specific obligations at state level.",
+      "source_url": "https://www.sluzbenilist.ba/page/akt/CtJZohz4nh78h77RfD5vE=",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.sluzbenilist.ba/page/akt/CtJZohz4nh78h77RfD5vE=",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-c29db02658d3",
+      "publisher_name": "Official Gazette of Bosnia and Herzegovina (JP NIO Službeni list BiH)",
+      "jurisdiction_id": "BIH",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "international",
+      "subcategory": null,
+      "effective_date": "2026-09-28",
+      "last_amended_date": null,
+      "scope": "Bosnia and Herzegovina (state level)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-232ee476dc3a"
+      ],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "bs",
+      "verification_date": "2026-10-13",
+      "first_recorded": "2026-10-13",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-a27fc98d6937",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full text of the decision read on the Official Gazette portal (Službeni glasnik BiH - Međunarodni ugovori 9/26); issue date 28.9.2026 read on the issue page (sluzbenilist.ba/page/i/QXYVhjVP0Gg=); the Convention text itself is in the issue PDF, not on the act page."
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-ed7c2485e35e",
+      "jurisdiction_id": "BIH",
+      "name": "Parliamentary Assembly of Bosnia and Herzegovina",
+      "publisher_name_verified": true,
+      "ai_governance_role": "State-level legislature (House of Representatives and House of Peoples); enacted the Law on Personal Data Protection (Official Gazette of BiH 12/25) with rules on automated decision-making and profiling, and gave consent in 2026 to ratification of the Council of Europe Framework Convention on AI.",
+      "source_url": "https://www.parlament.ba/",
+      "authority_type": "legislature",
+      "government_level": "national"
+    },
+    {
+      "id": "o-c29db02658d3",
+      "jurisdiction_id": "BIH",
+      "name": "Presidency of Bosnia and Herzegovina",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Collective head of state; ratifies international treaties under art. V.3(d) of the Constitution; ratified the Council of Europe Framework Convention on AI on 3 September 2026.",
+      "source_url": "https://www.predsjednistvobih.ba/",
+      "authority_type": "government",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-42f36f4d0a45",
+      "url": "https://www.sluzbenilist.ba/page/akt/aCRNh0ohz4nh78h77P7BE=",
+      "jurisdiction_ids": [
+        "BIH"
+      ],
+      "source_institutions": [
+        "Parliamentary Assembly of Bosnia and Herzegovina"
+      ],
+      "instrument_ids": [
+        "i-9e5433b51399"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl (browser user agent, --max-time 60): full text of the law read on the Official Gazette portal (sluzbenilist.ba, Službeni glasnik BiH 12/25, listed 28.02.2025); arts. 24, 37, 67, 119 and 120 checked; publication date 28.02.2025 also stated in the Personal Data Protection Agency's notice on azlp.ba (Novi zakon i obavještenje, id=4468); same text also hosted by the Agency (azlp.ba ?id=4465).",
+      "http_status": 200,
+      "final_url": "https://www.sluzbenilist.ba/page/akt/aCRNh0ohz4nh78h77P7BE=",
+      "link_status": "reachable",
+      "page_title": "Službeni List- Pregled Dokumenta",
+      "document_language": "bs",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-fa40fc92829b",
+      "url": "https://www.sluzbenilist.ba/page/akt/fx2utJbtgUU=",
+      "jurisdiction_ids": [
+        "BIH"
+      ],
+      "source_institutions": [
+        "Parliamentary Assembly of Bosnia and Herzegovina"
+      ],
+      "instrument_ids": [
+        "i-232ee476dc3a"
+      ],
+      "categories_reviewed": [
+        "international"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl (browser user agent, --max-time 60): full text of the decision read on the Official Gazette portal (Službeni glasnik BiH - Međunarodni ugovori 5/26); issue date 9.7.2026 read on the issue page (sluzbenilist.ba/page/i/h5YsXqgztz5k76kjn45hmGfk=).",
+      "http_status": 200,
+      "final_url": "https://www.sluzbenilist.ba/page/akt/fx2utJbtgUU=",
+      "link_status": "reachable",
+      "page_title": "Službeni List- Pregled Dokumenta",
+      "document_language": "bs",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-a27fc98d6937",
+      "url": "https://www.sluzbenilist.ba/page/akt/CtJZohz4nh78h77RfD5vE=",
+      "jurisdiction_ids": [
+        "BIH"
+      ],
+      "source_institutions": [
+        "Presidency of Bosnia and Herzegovina"
+      ],
+      "instrument_ids": [
+        "i-ad8d415dba13"
+      ],
+      "categories_reviewed": [
+        "international",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl (browser user agent, --max-time 60): full text of the decision read on the Official Gazette portal (Službeni glasnik BiH - Međunarodni ugovori 9/26); issue date 28.9.2026 read on the issue page (sluzbenilist.ba/page/i/QXYVhjVP0Gg=); the Convention text itself is in the issue PDF, not on the act page.",
+      "http_status": 200,
+      "final_url": "https://www.sluzbenilist.ba/page/akt/CtJZohz4nh78h77RfD5vE=",
+      "link_status": "reachable",
+      "page_title": "Službeni List- Pregled Dokumenta",
+      "document_language": "bs",
+      "error": null,
+      "content_type": "text/html"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "BIH",
     "country": "Bosnia and Herzegovina",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -33,18 +300,19 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_with_findings": [
       "binding-law",
+      "data-privacy",
+      "international",
+      "risk-assurance"
+    ],
+    "categories_where_no_material_was_found": [
       "strategy",
       "government-governance",
       "ethics",
-      "risk-assurance",
       "public-sector",
       "procurement",
       "cyber-security",
-      "data-privacy",
       "transparency",
       "standards",
       "sandbox",
@@ -52,36 +320,222 @@
       "sectoral",
       "generative-ai",
       "drafts",
-      "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Bosnia and Herzegovina \"umjetna inteligencija\" (strategija OR regulacija OR etika) government ministry official",
       "Bosnia and Herzegovina \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Bosnia and Herzegovina government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Bosnia and Herzegovina \"umjetna inteligencija\" cybersecurity authority secure development safety guidelines",
-      "Bosnia and Herzegovina privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Bosnia and Herzegovina privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "sluzbenilist.ba title search: inteligencij",
+      "sluzbenilist.ba title search: vještačk",
+      "sluzbenilist.ba title search: umjetn",
+      "sluzbenilist.ba title search: вјештачк",
+      "sluzbenilist.ba title search: zaštiti ličnih podataka",
+      "sluzbenilist.ba MU issue lists 2026 (nivo 7) and 2004 (Convention 108)",
+      "Bosna i Hercegovina strategija vještačka inteligencija Vijeće ministara 2026",
+      "Bosnia and Herzegovina artificial intelligence law draft parliament 2026",
+      "Agencija za zaštitu ličnih podataka BiH vještačka inteligencija mišljenje smjernice",
+      "parlament.ba mapa puta vještačka inteligencija Parlamentarna skupština BiH",
+      "\"vještačke inteligencije\" smjernice institucije Bosne i Hercegovine Vijeće ministara usvojilo",
+      "Centralna banka BiH vještačka inteligencija Agencija za bankarstvo smjernice",
+      "\"Mapa puta\" \"vještačke inteligencije\" Parlamentarne skupštine Bosne i Hercegovine Kolegij",
+      "Ministarstvo komunikacija i prometa BiH vještačka inteligencija politika dokument",
+      "RAK Regulatorna agencija za komunikacije vještačka inteligencija pravilo deepfake mediji BiH",
+      "Izborni zakon BiH izmjene 2024 vještačka inteligencija sadržaj kampanja",
+      "vještačka inteligencija site:gov.ba",
+      "\"umjetna inteligencija\" OR \"vještačka inteligencija\" Vijeće ministara BiH sjednica usvojilo 2026",
+      "azlp.ba archives (publikacije, saopštenja, mišljenja, rješenja) scanned for vještačk/AI/algoritam/biometr",
+      "Program rada Vijeća ministara BiH za 2026 scanned for umjetn/vještač/inteligencij"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-13",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-13, one agent, national level only (PROTOCOL §6), about 25-minute time box. State level only (entities out of scope §6). rak.ba, cbbh.ba not crawled; parlament.ba bill tracker not queried; CoE treaty office Cloudflare-blocked (AI Convention deposit date unknown). Resumed run: no earlier fragment; sources re-read 2026-10-13. Law 12/25 effective 2025-10-04 computed from art. 120 (in force 2025-03-08, applies 210 days later). AI Convention: Parliamentary consent (Int. Treaties 5/26, 2026-07-09) and Presidency ratification (Int. Treaties 9/26, 2026-09-28, in force same day) recorded separately (Armenia precedent). 2006 data protection law full text subscriber-only (lead). Convention 108: Presidency decision 01-1236-29/04 of 21 July 2004 (Int. Treaties 7/04, 2004-09-19). Units covered: Law: Official Gazette portal (sluzbenilist.ba) title search in Bosnian/Croatian/Serbian (Latin and Cyrillic): only the two CoE AI Convention acts carry AI in the title; Law on Personal Data Protection 12/25 read in full. No AI law, AI bill, deepfake offence or public-sector algorithm rule found at state level.; Government: Council of Ministers: no national AI strategy, AI policy or public-sector AI guideline found (2026 work programme has no AI item); Ministry of Communications and Transport: searched, nothing found.; Ministries: Education, health, justice, defence, finance, security, civil affairs: searched via web and gazette titles, nothing AI-specific found (Civil Service Agency only runs AI trainings/surveys).; Regulators: Personal Data Protection Agency (azlp.ba) archives scanned: no AI guidance or decisions; Central Bank, Communications Regulatory Agency (RAK), Competition Council: searched, nothing found.. Not reached: rak.ba and cbbh.ba not crawled directly (web search only); parlament.ba bill tracker not queried directly (web search only); Council of Europe treaty office (blocked by Cloudflare) for deposit date of the AI Convention ratification. Could not verify: Deposit date of the CoE AI Convention ratification instrument (Council of Europe treaty office blocked).; Parliamentary Assembly AI Roadmap (no official copy found).. strategy, government-governance, ethics, public-sector, procurement, cyber-security, transparency, standards, sandbox, index-readiness, sectoral, generative-ai, drafts, historical: no material found.",
     "discovery_result_count": 12,
     "focused_result_count": 13
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-d6880ecdc000",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "BIH",
+      "instrument_id": "i-9e5433b51399",
+      "title": "Law on Personal Data Protection",
+      "detail": "Added to the radar (published 2025-02-28).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.sluzbenilist.ba/page/akt/aCRNh0ohz4nh78h77P7BE=",
+      "needs_review": false
+    },
+    {
+      "id": "c-e10969c3a27e",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "BIH",
+      "instrument_id": "i-232ee476dc3a",
+      "title": "Decision giving consent to ratification of the Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law",
+      "detail": "Added to the radar (published 2026-07-09).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.sluzbenilist.ba/page/akt/fx2utJbtgUU=",
+      "needs_review": false
+    },
+    {
+      "id": "c-ae449f2ad4ed",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "BIH",
+      "instrument_id": "i-ad8d415dba13",
+      "title": "Decision on ratification of the Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law",
+      "detail": "Lifecycle recorded as in_force when added.",
+      "from": null,
+      "to": "in_force",
+      "source_url": "https://www.sluzbenilist.ba/page/akt/CtJZohz4nh78h77RfD5vE=",
+      "needs_review": false
+    },
+    {
+      "id": "c-d9b42392c677",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "BIH",
+      "instrument_id": "i-ad8d415dba13",
+      "title": "Decision on ratification of the Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law",
+      "detail": "Added to the radar (published 2026-09-28).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.sluzbenilist.ba/page/akt/CtJZohz4nh78h77RfD5vE=",
+      "needs_review": false
+    },
+    {
+      "id": "c-0ed6b084c4bd",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "BIH",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 3 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-935f4dd09fa3",
+      "date": "2026-09-28",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "BIH",
+      "instrument_id": "i-ad8d415dba13",
+      "title": "Ratification decision on the CoE Framework Convention on AI published and in force",
+      "detail": "Published in Official Gazette of BiH - International Treaties 9/26; in force on publication (art. 3).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.sluzbenilist.ba/page/akt/CtJZohz4nh78h77RfD5vE=",
+      "needs_review": false
+    },
+    {
+      "id": "c-0c5fa0b10f72",
+      "date": "2026-09-03",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "BIH",
+      "instrument_id": "i-ad8d415dba13",
+      "title": "Presidency ratifies the CoE Framework Convention on AI",
+      "detail": "Decision no. 01-50-1-2342-27/26 adopted at the Presidency's 31st regular session.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.sluzbenilist.ba/page/akt/CtJZohz4nh78h77RfD5vE=",
+      "needs_review": false
+    },
+    {
+      "id": "c-96b81814bc4f",
+      "date": "2026-06-30",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "BIH",
+      "instrument_id": "i-232ee476dc3a",
+      "title": "Parliamentary Assembly consents to ratification of the CoE Framework Convention on AI",
+      "detail": "House of Peoples' approval on 30 June 2026 completed the consent decision (House of Representatives approved on 29 April 2026); published in MU 5/26 on 9 July 2026.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.sluzbenilist.ba/page/akt/fx2utJbtgUU=",
+      "needs_review": false
+    },
+    {
+      "id": "c-e898da51f25e",
+      "date": "2025-02-28",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "BIH",
+      "instrument_id": "i-9e5433b51399",
+      "title": "Law on Personal Data Protection published (Official Gazette of BiH 12/25)",
+      "detail": "GDPR-aligned law with rules on automated decision-making and profiling (arts. 24, 67) and impact assessments (art. 37); applies 210 days after entry into force.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.sluzbenilist.ba/page/akt/aCRNh0ohz4nh78h77P7BE=",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Mapa puta za vještačku inteligenciju Parlamentarne skupštine Bosne i Hercegovine (Roadmap for AI)",
+      "english_title": "Parliamentary Assembly of Bosnia and Herzegovina Roadmap for AI",
+      "issuing_authority": "Parliamentary Assembly of Bosnia and Herzegovina",
+      "note": "Reported (UNDP, 5 August 2026) as adopted by the Parliamentary Assembly for AI use in its own work, after a UNDP-supported AI readiness assessment. No copy found on parlament.ba on 2026-10-13. It appears to be an internal institutional plan; record only if published and it sets rules for AI use (public-sector).",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "Zakon o zaštiti ličnih podataka (Službeni glasnik BiH 49/06, 76/11, 89/11)",
+      "english_title": "Law on Personal Data Protection (2006, repealed)",
+      "issuing_authority": "Parliamentary Assembly of Bosnia and Herzegovina",
+      "note": "Predecessor data protection law, repealed by art. 119 of Law 12/25 from the start of its application (October 2025). Listed on sluzbenilist.ba (49/06 of 27.06.2006) but full text is subscriber-only; could be added as a historical record if an official free copy is found.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "Odluka o ratifikaciji Međunarodnog sporazuma između EU i BiH o učešću BiH u programu Unije Digitalna Evropa (2021-2027)",
+      "english_title": "Decision ratifying the EU-BiH agreement on BiH participation in the Digital Europe Programme (2021-2027)",
+      "issuing_authority": "Presidency of Bosnia and Herzegovina",
+      "note": "Službeni glasnik BiH - Međunarodni ugovori 9/24 (Presidency decision of 12.12.2024, https://www.sluzbenilist.ba/page/akt/gSLROwey12U=). Funding-programme participation covering AI among other areas; AI not governed by the act itself, so held as a lead under the scope test.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "Pravila za korištenje AI alata u Uredu za reviziju institucija BiH",
+      "english_title": "Rules for the use of AI tools at the Audit Office of the Institutions of BiH (reported in preparation)",
+      "issuing_authority": "Audit Office of the Institutions of Bosnia and Herzegovina",
+      "note": "Reported in August 2026 that the Audit Office is considering AI pilot projects and drafting rules for AI tools; no official document found on 2026-10-13.",
+      "found": "2026-10-13"
+    }
+  ]
 }
