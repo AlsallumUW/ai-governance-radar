@@ -73,6 +73,62 @@
       "subnational_unit": null,
       "source_id": "s-93a257df049d",
       "organization_id": "o-858b7c02f182"
+    },
+    {
+      "id": "i-a57abe247df0",
+      "jurisdiction_id": "SYR",
+      "official_title": "القرار التنظيمي 24/ت الخاص بترخيص التطبيقات الصحية الإلكترونية",
+      "english_title": "Ministry of Health Regulatory Decision No. 24/T of 2025 on the licensing of electronic health applications",
+      "issuing_authority": "Minister of Health (Ministry of Health of the Syrian Arab Republic)",
+      "publisher_name": "Ministry of Health",
+      "authority_type": "ministry",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "sectoral"
+      ],
+      "category": "sectoral",
+      "subcategory": null,
+      "legal_status": "binding_regulation",
+      "lifecycle": "in_force",
+      "publication_date": "2025",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Signed by Minister of Health Dr. Musab Nazzal al-Ali in Damascus in 2025; the day and month of signature are handwritten on the scanned original (they appear to read 2/12/2025) and are not used. Article 7 repeals Regulatory Decision No. 13/T of 2023 and orders publication in the Official Gazette (gazette reference not found). A Ministry of Health circular of September 2026 (No. 19/2449) requires owners of existing health apps to apply for a licence by 2 December 2026, after which unlicensed apps face suspension.",
+      "scope": "Mobile and web applications that provide medical or health services to users in Syria, their owners, scientific supervisors and data protection officers",
+      "sectors": [
+        "health"
+      ],
+      "technology_scope": [
+        "AI",
+        "health apps",
+        "data"
+      ],
+      "summary": "Ministerial regulatory decision setting the licensing regime for electronic health applications: apps need Ministry of Health approval and accreditation by the National Agency for Information Technology Services, must name a scientific supervisor and a data protection officer, host patient data on servers inside Syria, and may be suspended for breaches. Among the general conditions (Article 3), apps must not use artificial intelligence as a source of clinical information without review by the app's medical team, which makes human clinical oversight of AI output a licensing requirement.",
+      "ai_governance_relevance": "Binding health-sector rule with an explicit AI provision: AI may not be used as a source of clinical information in licensed health apps without verification by the medical team.",
+      "source_url": "https://api-website.moh.gov.sy/storage/ar/Regulatory_Decision_24_T.pdf",
+      "official_pdf_url": "https://api-website.moh.gov.sy/storage/ar/Regulatory_Decision_24_T.pdf",
+      "official_webpage_url": "https://moh.gov.sy/health-app-licensing",
+      "language": "ar",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-13",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Exact signature date (handwritten on the scan; only the printed year 2025 used)",
+        "Official Gazette publication reference",
+        "Effective date"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "curl (browser user agent, --max-time 60): moh.gov.sy/health-app-licensing page read (lists 'القرار التنظيمي 24/ت الخاص بترخيص التطبيقات الصحية الإلكترونية' with Annexes 1 and 2 and the 2026 circular); 5-page scanned PDF rendered to images and read page by page (AI condition in Article 3(b)(13); repeal and gazette clause in Article 7; signature block with printed year 2025).",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "first_recorded": "2026-10-13",
+      "last_changed": null,
+      "source_id": "s-b5202430c6c6",
+      "organization_id": "o-e0b94aed8ea4"
     }
   ],
   "organizations": [
@@ -84,6 +140,16 @@
       "ai_governance_role": "Issuer of recorded instrument(s).",
       "source_url": "https://naits.gov.sy/storage/media/kanon-hmay-albyanat-alshkhsy.pdf",
       "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-e0b94aed8ea4",
+      "jurisdiction_id": "SYR",
+      "name": "Ministry of Health",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Issued Regulatory Decision 24/T (2025) licensing electronic health apps, which bars unverified use of AI as a source of clinical information.",
+      "source_url": "https://moh.gov.sy/",
+      "authority_type": "ministry",
       "government_level": "national"
     }
   ],
@@ -110,6 +176,32 @@
       "final_url": "https://naits.gov.sy/storage/media/kanon-hmay-albyanat-alshkhsy.pdf",
       "link_status": "reachable",
       "page_title": "قانون حماية البيانات الشخصية",
+      "document_language": "ar",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-b5202430c6c6",
+      "url": "https://api-website.moh.gov.sy/storage/ar/Regulatory_Decision_24_T.pdf",
+      "jurisdiction_ids": [
+        "SYR"
+      ],
+      "source_institutions": [
+        "Ministry of Health"
+      ],
+      "instrument_ids": [
+        "i-a57abe247df0"
+      ],
+      "categories_reviewed": [
+        "sectoral"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl (browser user agent, --max-time 60): official PDF linked from moh.gov.sy/health-app-licensing downloaded (scanned, 5 pages); rendered with pdftoppm and read visually; text layer unusable.",
+      "http_status": 200,
+      "final_url": "https://api-website.moh.gov.sy/storage/ar/Regulatory_Decision_24_T.pdf",
+      "link_status": "reachable",
+      "page_title": "القرار التنظيمي 24/ت الخاص بترخيص التطبيقات الصحية الإلكترونية",
       "document_language": "ar",
       "error": null,
       "content_type": "application/pdf"
@@ -141,7 +233,8 @@
       "historical": "Historical publications"
     },
     "categories_with_findings": [
-      "data-privacy"
+      "data-privacy",
+      "sectoral"
     ],
     "categories_where_no_material_was_found": [
       "binding-law",
@@ -156,7 +249,6 @@
       "standards",
       "sandbox",
       "index-readiness",
-      "sectoral",
       "generative-ai",
       "drafts",
       "international",
@@ -198,7 +290,25 @@
       "moj.gov.sy site search: الذكاء الاصطناعي / الجرائم المعلوماتية / البيانات الشخصية",
       "sasmo.gov.sy standards search: ذكاء / اصطناعي / 42001",
       "naits.gov.sy/laws (full listing reviewed)",
-      "moh.gov.sy strategic plan (searched for الذكاء الاصطناعي)"
+      "moh.gov.sy strategic plan (searched for الذكاء الاصطناعي)",
+      "وزارة سورية الذكاء الاصطناعي استراتيجية دليل 2025",
+      "Syria ministry artificial intelligence strategy policy guidelines 2025 2026",
+      "وزارة التعليم العالي السورية الذكاء الاصطناعي سياسة استخدام الجامعات",
+      "وزارة الاتصالات وتقانة المعلومات سوريا الاستراتيجية الوطنية للذكاء الاصطناعي 2026",
+      "وزارة التربية السورية الذكاء الاصطناعي تعميم دليل المعلمين 2026",
+      "وزارة الصحة السورية الذكاء الاصطناعي سياسة إطار",
+      "وزارة العدل السورية الذكاء الاصطناعي القضاء تعميم",
+      "وزارة التنمية الإدارية سوريا الذكاء الاصطناعي العاملين في الدولة دليل",
+      "site:gov.sy الذكاء الاصطناعي",
+      "site:gov.sy \"artificial intelligence\"",
+      "وزارة التعليم العالي والبحث العلمي سوريا ضوابط استخدام الذكاء الاصطناعي في البحث العلمي والرسائل الجامعية قرار",
+      "مدونة السلوك الإعلامي وزارة الإعلام السورية الذكاء الاصطناعي",
+      "Syria Ministry of Information media code of conduct February 2026 artificial intelligence generated content",
+      "وزارة التربية والتعليم السورية إدخال الذكاء الاصطناعي في المناهج 2026 قرار",
+      "وزارة المالية السورية أو وزارة الاقتصاد السورية الذكاء الاصطناعي سياسة الهيئة العامة للضرائب الجمارك 2026",
+      "وزارة الاتصالات السورية تطلق الاستراتيجية الرقمية الذكاء الاصطناعي 2026 وثيقة",
+      "وزارة الدفاع السورية OR وزارة الداخلية السورية OR وزارة الشؤون الاجتماعية والعمل الذكاء الاصطناعي تعليمات",
+      "moj.gov.sy site search: الذكاء الاصطناعي / ذكاء / الاصطناعي"
     ],
     "review_date": "2026-10-07",
     "passes": {
@@ -217,11 +327,26 @@
       "regional_inheritance": "COMPLETE",
       "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "Searched official sites (NAITS, Ministry of Justice, SASMO, Ministry of Health, Ministry of Education portal) and search engines in Arabic and English; MoCT, Central Bank, Prime Ministry and parliament sites could not be read automatically. No official AI-specific text found in any category except data protection law. The UNESCO Recommendation on the Ethics of AI applies via the regional file. Technical review notes: Deep review 2026-10-07. moct.gov.sy, cb.gov.sy, pministry.gov.sy and mohe.gov.sy failed automated reading (TLS chain not verifiable / HTTP 503 to the fetcher); parliament.gov.sy, nans.gov.sy, mic.gov.sy and gov.sy were unreachable; sytra.gov.sy serves only a hosting placeholder page. NAITS (naits.gov.sy/laws) was readable and hosts the official texts of the ICT laws. Not recorded as AI instruments after reading the official texts (no AI provisions): Electronic Transactions Law No. 3 of 2014 (defines an automated 'electronic agent' but nothing AI-specific), Cybercrime Law No. 20 of 2022 (Ministry of Justice Circular No. 26 of 2026 now governs its procedures), Law No. 7 of 2023 establishing NAITS, the National Information Security Policy, and NAITS accreditation rules for electronic applications and information systems. SASMO's standards catalogue has no AI standard (no ISO/IEC 42001 adoption). Ministry of Health strategic plan and Ministry of Education pages have no AI policy text. The pre-2024 'National AI Strategy' is known only from state-newspaper reports (Al-Thawra, December 2024) with no issuing body or official text; held as a lead. News agencies and newspapers (SANA, Al-Watan, Al-Thawra) were used only for discovery. The UNESCO Recommendation on the Ethics of AI applies through the UNESCO regional file.",
+    "no_material_found_note": "Searched official sites (NAITS, Ministry of Justice, SASMO, Ministry of Health, Ministry of Education portal) and search engines in Arabic and English; MoCT, Central Bank, Prime Ministry and parliament sites could not be read automatically. No official AI-specific text found in any category except data protection law. The UNESCO Recommendation on the Ethics of AI applies via the regional file. Technical review notes: Deep review 2026-10-07. moct.gov.sy, cb.gov.sy, pministry.gov.sy and mohe.gov.sy failed automated reading (TLS chain not verifiable / HTTP 503 to the fetcher); parliament.gov.sy, nans.gov.sy, mic.gov.sy and gov.sy were unreachable; sytra.gov.sy serves only a hosting placeholder page. NAITS (naits.gov.sy/laws) was readable and hosts the official texts of the ICT laws. Not recorded as AI instruments after reading the official texts (no AI provisions): Electronic Transactions Law No. 3 of 2014 (defines an automated 'electronic agent' but nothing AI-specific), Cybercrime Law No. 20 of 2022 (Ministry of Justice Circular No. 26 of 2026 now governs its procedures), Law No. 7 of 2023 establishing NAITS, the National Information Security Policy, and NAITS accreditation rules for electronic applications and information systems. SASMO's standards catalogue has no AI standard (no ISO/IEC 42001 adoption). Ministry of Health strategic plan and Ministry of Education pages have no AI policy text. The pre-2024 'National AI Strategy' is known only from state-newspaper reports (Al-Thawra, December 2024) with no issuing body or official text; held as a lead. News agencies and newspapers (SANA, Al-Watan, Al-Thawra) were used only for discovery. The UNESCO Recommendation on the Ethics of AI applies through the UNESCO regional file. Ministry catch-up 2026-10-13 (PROTOCOL §2 ministry rule, applied after this country's deep review; one agent, 30 minutes, national ministries' own AI documents only, nothing else re-reviewed): 1 record(s) added. Ministries: Ministry of Health (moh.gov.sy): Regulatory Decision 24/T of 2025 on licensing electronic health apps, with an AI clinical-information rule (recorded); strategic plan, digital transformation and health-app pages checked, no other AI document. Ministry of Education: site unreachable (moe.gov.sy, curl and WebFetch 503); searches found nothing. Ministry of Higher Education and Scientific Research: site unreachable (mohe.gov.sy, curl and WebFetch 503); searches found only university research papers, no ministry AI rules. Ministry of Justice (moj.gov.sy): site search and circulars/decisions pages checked; nothing found. Ministry of Defence: site unreachable; searches found nothing. Ministry of Finance / tax / customs: site unreachable (mof.gov.sy); searches found nothing. Ministry of Interior: site is a holding page; nothing found. Ministry of Foreign Affairs and Expatriates (mofaex.gov.sy): homepage checked, nothing new (2023 Global AI Governance Initiative statement already a lead). Ministry of Social Affairs and Labour: site unreachable; nothing found. Ministry of Administrative Development: site unreachable; searches found employee database and training-policy work, no AI guidance. Ministry of Communications and Technology: site unreachable (moct.gov.sy, curl and WebFetch 503); searches found conferences and MoUs only, no AI document; NAITS laws page PDFs re-checked, none mention AI. Ministry of Information: Professional and Ethical Code of Conduct for the Media Sector (Feb 2026) reportedly has an AI article; no official text found (new lead). Ministries of Agriculture, Transport, Culture (homepages reachable) and Economy, Energy, Tourism, Water Resources (unreachable): nothing found.. Not reached: Ministry of Education (moe.gov.sy unreachable); Ministry of Higher Education and Scientific Research (mohe.gov.sy unreachable); Ministry of Communications and Technology (moct.gov.sy unreachable); Ministry of Finance (mof.gov.sy unreachable); Ministry of Administrative Development, Social Affairs and Labour, Defence, Economy, Tourism, Water Resources (sites unreachable; web search only); Ministry of Information (website not identified). Could not verify: Ministry of Information media code of conduct text (AI article) - no official copy found; Ministry of Education, Higher Education, Communications, Finance sites unreachable (curl and WebFetch).",
     "discovery_result_count": 35,
     "focused_result_count": 9
   },
   "changes": [
+    {
+      "id": "c-7c3efd7d9cad",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "SYR",
+      "instrument_id": "i-a57abe247df0",
+      "title": "Ministry of Health Regulatory Decision No. 24/T of 2025 on the licensing of electronic health applications",
+      "detail": "Added to the radar (published 2025).",
+      "from": null,
+      "to": null,
+      "source_url": "https://api-website.moh.gov.sy/storage/ar/Regulatory_Decision_24_T.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-06a7c18c501a",
       "date": "2026-10-07",
@@ -311,6 +436,13 @@
       "issuing_authority": "Ministry of Foreign Affairs and Expatriates",
       "note": "Reported 2023 (previous government); political statement, no official text located online. Not a treaty.",
       "found": "2026-10-07"
+    },
+    {
+      "title": "مدونة السلوك المهني والأخلاقي لقطاع الإعلام في سوريا",
+      "english_title": "Professional and Ethical Code of Conduct for the Media Sector in Syria",
+      "issuing_authority": "Ministry of Information",
+      "note": "Launched by the Ministry of Information in February 2026 (press reports); ten articles reportedly include one on artificial intelligence and modern technology. No official text located: the Ministry of Information website could not be identified or reached. Check the AI article and add as sectoral/generative-ai guidance once the official text is readable.",
+      "found": "2026-10-13"
     }
   ]
 }
