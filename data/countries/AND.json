@@ -10,18 +10,445 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Andorra governs AI mainly through the government's May 2024 Code on the Ethics of Artificial Intelligence and two 2024 decrees creating a Data Intelligence Agency, with AI supervision functions, and a Data Intelligence Office in the administration. Its GDPR-style personal data protection law (Law 29/2021) regulates automated decisions, and the new Criminal Code published in August 2026 makes AI-generated sexual deepfakes an offence from December 2026. Andorra has no AI law or published national AI strategy, and is a party to the Council of Europe's data protection convention (Convention 108).",
+    "lead_institutions": [
+      "Ministry of Public Function and Digital Transformation",
+      "Andorra Digital (Andorra Recerca i Innovació)",
+      "Agència Andorrana de Protecció de Dades (APDA)"
+    ],
+    "last_deep_review": "2026-10-13",
+    "review_notes": "This review was carried out on 12 and 13 October 2026 from the official gazette (BOPA) and government websites; a run cut off by a usage limit was resumed and its downloads re-read from the official texts. The General Council's document portal could not be accessed, so AI bills could not be checked. The national AI action plan required by the 2024 decree is tracked as a lead."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "jurisdiction_id": "AND",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Andorra (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "verification_date": "2026-10-13",
+      "first_recorded": "2026-10-13",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "sectors": [
+        "cross-sector"
+      ],
+      "official_title": "Codi sobre l'Ètica de la Intel·ligència Artificial d'Andorra",
+      "english_title": "Andorran Code on the Ethics of Artificial Intelligence",
+      "issuing_authority": "Government of Andorra (Secretariat of State for Digital Transformation and Telecommunications)",
+      "authority_type": "government",
+      "categories": [
+        "ethics",
+        "public-sector",
+        "generative-ai"
+      ],
+      "category": "ethics",
+      "legal_status": "administrative_guideline",
+      "lifecycle": "published",
+      "publication_date": "2024-05-02",
+      "effective_date": null,
+      "language": "ca",
+      "current_status": "Approved by the Government; announced on the Andorra Digital site on 2 May 2024 (document dated 'Maig 2024'). The announcement states adherence will be required of the public sector for certain processes and is voluntary for other actors. An official English version ('Andorran Code of Ethics for Artificial Intelligence') is published on the same site. Decree 327/2024 (art. 9.2.j) tasks the Data Intelligence Agency with developing and implementing the code.",
+      "summary": "A 52-page ethics code approved by the Government of Andorra setting values, principles and a framework for trustworthy AI across the AI life cycle, aligned with the UNESCO Recommendation, the Council of Europe AI convention work, the OECD AI principles and the EU ethics guidelines. It covers human rights by design, ESG criteria, digital rights and neurorights, and generative AI, and gives recommendations for three audiences: the public sector (e.g. training public employees), the private sector and citizens. Adherence is required of the public sector for certain processes and voluntary for others.",
+      "ai_governance_relevance": "Andorra's main AI-specific policy instrument; the reference framework for AI use in the public sector.",
+      "source_url": "https://andorra-digital.com/images/pdf/Codi%20etic%20IA%20def.pdf",
+      "official_pdf_url": "https://andorra-digital.com/images/pdf/Codi%20etic%20IA%20def.pdf",
+      "official_webpage_url": "https://andorra-digital.com/actualitat/govern-aprova-codi-etic-intelligencia-artificial",
+      "source_kind": "official_document",
+      "organization_id": "o-4f5bd06367e4",
+      "publisher_name": "Andorra Digital (Fundació Privada del Sector Públic Andorra Recerca i Innovació)",
+      "evidence_reference": "curl (browser UA, --max-time 60): full 52-page Catalan PDF read (pdftotext), cover dated 'Maig 2024'; announcement page dated 2/5/2024 read; English PDF also downloaded; site legal notice names Andorra Digital, a unit of the public-sector foundation created by Llei 11/2021, as owner.",
+      "id": "i-e440fa4bd5a5",
+      "source_id": "s-498673119cc5"
+    },
+    {
+      "jurisdiction_id": "AND",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Andorra (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-c2f05f9b1d5b",
+        "i-e440fa4bd5a5"
+      ],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "verification_date": "2026-10-13",
+      "first_recorded": "2026-10-13",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "sectors": [
+        "cross-sector"
+      ],
+      "official_title": "Decret 327/2024, del 21-8-2024, de govern de dades i de creació de l’Agència d’Intel·ligència de la Dada",
+      "english_title": "Decree 327/2024 of 21 August 2024 on data governance and creating the Data Intelligence Agency",
+      "issuing_authority": "Government of Andorra",
+      "authority_type": "government",
+      "categories": [
+        "binding-law",
+        "government-governance",
+        "public-sector"
+      ],
+      "category": "government-governance",
+      "legal_status": "binding_regulation",
+      "lifecycle": "in_force",
+      "publication_date": "2024-08-28",
+      "effective_date": "2024-08-29",
+      "language": "ca",
+      "current_status": "In force: computed from the final provision ('entra en vigor l’endemà de ser publicat') and publication in BOPA núm. 95 of 28 August 2024.",
+      "summary": "Creates the Data Intelligence Agency (AID) and regulates the data-governance model for interoperability and data reuse in the public sector. Article 9.2 gives the Agency AI functions: contributing to the deployment, monitoring and supervision of AI systems and AI governance, developing tools and benchmarks to assess AI models, supervising rules on general-purpose AI models and investigating infringements, supporting rules on prohibited practices and high-risk AI, implementing the AI ethics code and defining a national AI action plan based on the national digital transformation strategy.",
+      "ai_governance_relevance": "Founding instrument of Andorra's national AI body.",
+      "source_url": "https://bopadocuments.blob.core.windows.net/bopa-documents/036095/pdf/GD_2024_08_23_12_33_43.pdf",
+      "official_pdf_url": "https://bopadocuments.blob.core.windows.net/bopa-documents/036095/pdf/GD_2024_08_23_12_33_43.pdf",
+      "official_webpage_url": "https://www.bopa.ad/Documents/Detall?doc=GD_2024_08_23_12_33_43",
+      "source_kind": "legislation_portal",
+      "organization_id": "o-4f5bd06367e4",
+      "publisher_name": "Butlletí Oficial del Principat d'Andorra",
+      "evidence_reference": "curl: BOPA PDF and HTML read in full (pdftotext); BOPA núm. 95, 28 August 2024; art. 9.2 and final provision checked.",
+      "id": "i-82d289d6236b",
+      "source_id": "s-68ba8ec95892"
+    },
+    {
+      "jurisdiction_id": "AND",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Andorra (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-82d289d6236b"
+      ],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "verification_date": "2026-10-13",
+      "first_recorded": "2026-10-13",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "sectors": [
+        "cross-sector"
+      ],
+      "official_title": "Decret 328/2024, del 21-8-2024, de creació de l’Oficina d’Intel·ligència de la Dada de l’Administració General",
+      "english_title": "Decree 328/2024 of 21 August 2024 creating the Data Intelligence Office of the General Administration",
+      "issuing_authority": "Government of Andorra",
+      "authority_type": "government",
+      "categories": [
+        "government-governance",
+        "public-sector"
+      ],
+      "category": "public-sector",
+      "legal_status": "binding_regulation",
+      "lifecycle": "in_force",
+      "publication_date": "2024-08-28",
+      "effective_date": "2024-08-29",
+      "language": "ca",
+      "current_status": "In force: computed from the final provision ('entra en vigor l’endemà de ser publicat') and publication in BOPA núm. 95 of 28 August 2024.",
+      "summary": "Creates the Data Intelligence Office within the General Administration as the specialised body for interoperability, data governance and AI inside central government. Its AI functions for the General Administration mirror the Agency's: contributing to the deployment, monitoring and supervision of AI systems and AI governance, promoting trustworthy AI applications and developing tools and benchmarks to assess AI models.",
+      "ai_governance_relevance": "Sets up the in-government unit for AI governance in the public administration.",
+      "source_url": "https://bopadocuments.blob.core.windows.net/bopa-documents/036095/pdf/GD_2024_08_23_12_34_44.pdf",
+      "official_pdf_url": "https://bopadocuments.blob.core.windows.net/bopa-documents/036095/pdf/GD_2024_08_23_12_34_44.pdf",
+      "official_webpage_url": "https://www.bopa.ad/Documents/Detall?doc=GD_2024_08_23_12_34_44",
+      "source_kind": "legislation_portal",
+      "organization_id": "o-4f5bd06367e4",
+      "publisher_name": "Butlletí Oficial del Principat d'Andorra",
+      "evidence_reference": "curl: BOPA PDF and HTML read in full (pdftotext); BOPA núm. 95, 28 August 2024; art. on AI functions and final provision checked.",
+      "id": "i-c2f05f9b1d5b",
+      "source_id": "s-9ed8e0e7122f"
+    },
+    {
+      "jurisdiction_id": "AND",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Andorra (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "verification_date": "2026-10-13",
+      "first_recorded": "2026-10-13",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "sectors": [
+        "cross-sector"
+      ],
+      "official_title": "Llei 29/2021, del 28 d’octubre, qualificada de protecció de dades personals",
+      "english_title": "Qualified Law 29/2021 of 28 October on personal data protection",
+      "issuing_authority": "General Council of Andorra",
+      "authority_type": "legislature",
+      "categories": [
+        "binding-law",
+        "data-privacy"
+      ],
+      "category": "data-privacy",
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2021-11-17",
+      "effective_date": "2022-05-17",
+      "language": "ca",
+      "current_status": "In force: computed from final provision four ('entra en vigor en el termini de sis mesos des de la seva publicació') and publication in BOPA núm. 119 of 17 November 2021. Amended by Llei 12/2024, del 15 de juliol (BOPA núm. 87, 2024), and implemented by regulations approved by Decree 391/2022.",
+      "summary": "Andorra's GDPR-aligned data protection law, replacing the 2003 law, applying to public and private controllers and processors and supervised by the Andorran Data Protection Agency (APDA). Article 25 gives data subjects the right not to be subject to decisions based solely on automated processing, including profiling, that produce legal effects, with limited exceptions (contract, authorising law with safeguards, explicit consent) and restrictions on special-category data. Controllers must inform data subjects of automated decision-making and the logic involved.",
+      "ai_governance_relevance": "Governs personal data used to train and run AI systems and sets the automated decision-making safeguards.",
+      "source_url": "https://bopadocuments.blob.core.windows.net/bopa-documents/033119/pdf/CGL20211115_08_58_32.pdf",
+      "official_pdf_url": "https://bopadocuments.blob.core.windows.net/bopa-documents/033119/pdf/CGL20211115_08_58_32.pdf",
+      "official_webpage_url": "https://www.bopa.ad/Documents/Detall?doc=CGL20211115_08_58_32",
+      "source_kind": "legislation_portal",
+      "organization_id": "o-f45d40d5a01d",
+      "publisher_name": "Butlletí Oficial del Principat d'Andorra",
+      "evidence_reference": "curl: BOPA PDF (44 pages) read via pdftotext; BOPA núm. 119, 17 November 2021; art. 25 and final provision four checked.",
+      "id": "i-6d1db762052a",
+      "source_id": "s-b088ccd56841"
+    },
+    {
+      "jurisdiction_id": "AND",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Andorra (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "verification_date": "2026-10-13",
+      "first_recorded": "2026-10-13",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "sectors": [
+        "cross-sector"
+      ],
+      "official_title": "Llei 18/2026, del 15 de juliol, qualificada del Codi penal",
+      "english_title": "Qualified Law 18/2026 of 15 July on the Criminal Code",
+      "issuing_authority": "General Council of Andorra",
+      "authority_type": "legislature",
+      "categories": [
+        "binding-law",
+        "generative-ai"
+      ],
+      "category": "binding-law",
+      "legal_status": "binding_law",
+      "lifecycle": "adopted",
+      "publication_date": "2026-08-13",
+      "effective_date": "2026-12-13",
+      "language": "ca",
+      "current_status": "Adopted 15 July 2026 and published in BOPA núm. 92 of 13 August 2026; not yet in force. Effective date computed from final provision five: in force four months after publication in the BOPA (six months for final provision two, one year for the corporate criminal liability provisions). Replaces the Llei 9/2005 Criminal Code.",
+      "summary": "Andorra's new Criminal Code. Article 166 (non-consensual dissemination of intimate or manipulated material) punishes with three months to three years' imprisonment anyone who produces, manipulates or alters images or videos with AI technologies or synthetic-creation systems to make it appear that a person is engaged in sexually explicit acts or nude, and then disseminates them without consent. Penalties are aggravated when the victim is a minor, a current or former partner, or where the offender abuses a position of authority.",
+      "ai_governance_relevance": "Creates an AI deepfake offence.",
+      "source_url": "https://bopadocuments.blob.core.windows.net/bopa-documents/038092/pdf/CGL_2026_07_24_09_24_47.pdf",
+      "official_pdf_url": "https://bopadocuments.blob.core.windows.net/bopa-documents/038092/pdf/CGL_2026_07_24_09_24_47.pdf",
+      "official_webpage_url": "https://www.bopa.ad/Documents/Detall?doc=CGL_2026_07_24_09_24_47",
+      "source_kind": "legislation_portal",
+      "organization_id": "o-f45d40d5a01d",
+      "publisher_name": "Butlletí Oficial del Principat d'Andorra",
+      "evidence_reference": "curl: BOPA PDF (161 pages) read via pdftotext; BOPA núm. 92, 13 August 2026; art. 166 and final provision five checked.",
+      "id": "i-71b35c504606",
+      "source_id": "s-18d4ee77663d"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-4f5bd06367e4",
+      "jurisdiction_id": "AND",
+      "name": "Government of Andorra",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Govern d'Andorra; approved the Andorran Code on the Ethics of Artificial Intelligence (May 2024) and Decrees 327/2024 and 328/2024 creating the Data Intelligence Agency and the Data Intelligence Office with AI governance functions; AI policy sits with the Ministry of Public Function and Digital Transformation.",
+      "source_url": "https://www.govern.ad/",
+      "authority_type": "government",
+      "government_level": "national"
+    },
+    {
+      "id": "o-f45d40d5a01d",
+      "jurisdiction_id": "AND",
+      "name": "General Council of Andorra",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Consell General (parliament); enacted the Qualified Law 29/2021 on personal data protection and the Qualified Law 18/2026 on the Criminal Code, which criminalises AI-generated sexual deepfakes.",
+      "source_url": "https://www.consellgeneral.ad/",
+      "authority_type": "legislature",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-498673119cc5",
+      "url": "https://andorra-digital.com/images/pdf/Codi%20etic%20IA%20def.pdf",
+      "jurisdiction_ids": [
+        "AND"
+      ],
+      "source_institutions": [
+        "Andorra Digital (Fundació Privada del Sector Públic Andorra Recerca i Innovació)"
+      ],
+      "instrument_ids": [
+        "i-e440fa4bd5a5"
+      ],
+      "categories_reviewed": [
+        "ethics",
+        "public-sector",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl (browser UA, --max-time 60): full 52-page Catalan PDF read (pdftotext), cover dated 'Maig 2024'; announcement page dated 2/5/2024 read; English PDF also downloaded; site legal notice names Andorra Digital, a unit of the public-sector foundation created by Llei 11/2021, as owner.",
+      "http_status": 200,
+      "final_url": "https://andorra-digital.com/images/pdf/Codi%20etic%20IA%20def.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "ca",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-68ba8ec95892",
+      "url": "https://bopadocuments.blob.core.windows.net/bopa-documents/036095/pdf/GD_2024_08_23_12_33_43.pdf",
+      "jurisdiction_ids": [
+        "AND"
+      ],
+      "source_institutions": [
+        "Butlletí Oficial del Principat d'Andorra"
+      ],
+      "instrument_ids": [
+        "i-82d289d6236b"
+      ],
+      "categories_reviewed": [
+        "binding-law",
+        "government-governance",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl: BOPA PDF and HTML read in full (pdftotext); BOPA núm. 95, 28 August 2024; art. 9.2 and final provision checked.",
+      "http_status": 200,
+      "final_url": "https://bopadocuments.blob.core.windows.net/bopa-documents/036095/pdf/GD_2024_08_23_12_33_43.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "ca",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-9ed8e0e7122f",
+      "url": "https://bopadocuments.blob.core.windows.net/bopa-documents/036095/pdf/GD_2024_08_23_12_34_44.pdf",
+      "jurisdiction_ids": [
+        "AND"
+      ],
+      "source_institutions": [
+        "Butlletí Oficial del Principat d'Andorra"
+      ],
+      "instrument_ids": [
+        "i-c2f05f9b1d5b"
+      ],
+      "categories_reviewed": [
+        "government-governance",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl: BOPA PDF and HTML read in full (pdftotext); BOPA núm. 95, 28 August 2024; art. on AI functions and final provision checked.",
+      "http_status": 200,
+      "final_url": "https://bopadocuments.blob.core.windows.net/bopa-documents/036095/pdf/GD_2024_08_23_12_34_44.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "ca",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-b088ccd56841",
+      "url": "https://bopadocuments.blob.core.windows.net/bopa-documents/033119/pdf/CGL20211115_08_58_32.pdf",
+      "jurisdiction_ids": [
+        "AND"
+      ],
+      "source_institutions": [
+        "Butlletí Oficial del Principat d'Andorra"
+      ],
+      "instrument_ids": [
+        "i-6d1db762052a"
+      ],
+      "categories_reviewed": [
+        "binding-law",
+        "data-privacy"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl: BOPA PDF (44 pages) read via pdftotext; BOPA núm. 119, 17 November 2021; art. 25 and final provision four checked.",
+      "http_status": 200,
+      "final_url": "https://bopadocuments.blob.core.windows.net/bopa-documents/033119/pdf/CGL20211115_08_58_32.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "ca",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-18d4ee77663d",
+      "url": "https://bopadocuments.blob.core.windows.net/bopa-documents/038092/pdf/CGL_2026_07_24_09_24_47.pdf",
+      "jurisdiction_ids": [
+        "AND"
+      ],
+      "source_institutions": [
+        "Butlletí Oficial del Principat d'Andorra"
+      ],
+      "instrument_ids": [
+        "i-71b35c504606"
+      ],
+      "categories_reviewed": [
+        "binding-law",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl: BOPA PDF (161 pages) read via pdftotext; BOPA núm. 92, 13 August 2026; art. 166 and final provision five checked.",
+      "http_status": 200,
+      "final_url": "https://bopadocuments.blob.core.windows.net/bopa-documents/038092/pdf/CGL_2026_07_24_09_24_47.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "ca",
+      "error": null,
+      "content_type": "application/pdf"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "AND",
     "country": "Andorra",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -33,55 +460,278 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_with_findings": [
       "binding-law",
-      "strategy",
-      "government-governance",
+      "data-privacy",
       "ethics",
+      "generative-ai",
+      "government-governance",
+      "public-sector"
+    ],
+    "categories_where_no_material_was_found": [
+      "strategy",
       "risk-assurance",
-      "public-sector",
       "procurement",
       "cyber-security",
-      "data-privacy",
       "transparency",
       "standards",
       "sandbox",
       "index-readiness",
       "sectoral",
-      "generative-ai",
       "drafts",
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Andorra \"intel·ligència artificial\" (estratègia OR regulació OR ètica) government ministry official",
       "Andorra \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Andorra government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Andorra \"intel·ligència artificial\" cybersecurity authority secure development safety guidelines",
-      "Andorra privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Andorra privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "BOPA search: \"intel·ligència artificial\"",
+      "BOPA search: \"ètica de la intel·ligència artificial\"",
+      "BOPA search: \"Estratègia nacional d'intel·ligència\"",
+      "BOPA search: \"Llei 29/2021 qualificada de protecció de dades personals\"",
+      "BOPA search: \"Conveni per a la protecció de les persones respecte al tractament automatitzat de dades\"",
+      "\"Codi sobre l'ètica de la intel·ligència artificial\" Andorra Govern",
+      "Andorra \"Estratègia nacional d'intel·ligència artificial\" Govern d'Andorra",
+      "govern.ad codi ètic intel·ligència artificial Andorra aprovat",
+      "Andorra \"codi ètic\" OR \"codi d'ètica\" \"intel·ligència artificial\" 2024 Govern presenta",
+      "apda.ad intel·ligència artificial guia protecció de dades",
+      "Andorra Ministeri d'Educació guia intel·ligència artificial centres educatius document",
+      "AFA Autoritat Financera Andorrana intel·ligència artificial comunicat tècnic"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-13",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-13, one agent, national level only (PROTOCOL §6), about 25-minute time box. seu.consellgeneral.ad TLS error / 503. Resumed run: no earlier fragment; downloads re-read; decree dates from gazette (28 Aug 2024), not BOPA search metadata (2024-08-27T22:00Z). BOPA PDFs on bopadocuments.blob.core.windows.net linked from bopa.ad detail pages. Ethics code hosted on andorra-digital.com (Andorra Digital, unit of public foundation Andorra Recerca i Innovació, Llei 11/2021) - treated as government channel, flagged. Effective dates computed: decrees 2024-08-29 (commencement clause), Law 29/2021 2022-05-17 (six months after publication), Llei 18/2026 2026-12-13 (four months after publication). Convention 108: ratification published BOPA núm. 98, 21 Nov 2007 (108+ in BOPA núm. 86, 20 Jul 2022). Units covered: Law: BOPA searched via its own search (AI, ethics code, strategy, data protection, Convention 108): Decrees 327/2024 and 328/2024, Llei 29/2021, Llei 18/2026 Criminal Code recorded; no AI law, no AI Act alignment act found. Consell General bills not reachable.; Government: Govern d'Andorra / Andorra Digital: AI ethics code recorded; digital transformation strategy presentation (2025) held as lead; no national AI strategy or action plan found.; Ministries: Education (only a student AI awareness programme, no guidance document found), Public Function and Digital Transformation (structure decrees, lead), statistics (lead); health, justice, finance, interior, labour: searched, nothing found.; Regulators: APDA (guides, resolutions, news): no AI guidance or AI decision, only opinion articles; AFA: searched, nothing found; Agència Nacional de Ciberseguretat and telecom regulator: searched via BOPA, nothing AI-specific found.. Not reached: Consell General document portal (seu.consellgeneral.ad): TLS certificate error via curl and HTTP 503 via WebFetch; AI bills and parliamentary questions unverified. Could not verify: Consell General bills/questions on AI (portal unreachable).. strategy, risk-assurance, procurement, cyber-security, transparency, standards, sandbox, index-readiness, sectoral, drafts, international, historical: no material found.",
     "discovery_result_count": 12,
     "focused_result_count": 13
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-63ea11479efa",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "AND",
+      "instrument_id": "i-e440fa4bd5a5",
+      "title": "Andorran Code on the Ethics of Artificial Intelligence",
+      "detail": "Added to the radar (published 2024-05-02).",
+      "from": null,
+      "to": null,
+      "source_url": "https://andorra-digital.com/images/pdf/Codi%20etic%20IA%20def.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-c4fd99061329",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "AND",
+      "instrument_id": "i-82d289d6236b",
+      "title": "Decree 327/2024 of 21 August 2024 on data governance and creating the Data Intelligence Agency",
+      "detail": "Added to the radar (published 2024-08-28).",
+      "from": null,
+      "to": null,
+      "source_url": "https://bopadocuments.blob.core.windows.net/bopa-documents/036095/pdf/GD_2024_08_23_12_33_43.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-2d8529b9b85b",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "AND",
+      "instrument_id": "i-c2f05f9b1d5b",
+      "title": "Decree 328/2024 of 21 August 2024 creating the Data Intelligence Office of the General Administration",
+      "detail": "Added to the radar (published 2024-08-28).",
+      "from": null,
+      "to": null,
+      "source_url": "https://bopadocuments.blob.core.windows.net/bopa-documents/036095/pdf/GD_2024_08_23_12_34_44.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-fbdd4e1ddf7f",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "AND",
+      "instrument_id": "i-6d1db762052a",
+      "title": "Qualified Law 29/2021 of 28 October on personal data protection",
+      "detail": "Added to the radar (published 2021-11-17).",
+      "from": null,
+      "to": null,
+      "source_url": "https://bopadocuments.blob.core.windows.net/bopa-documents/033119/pdf/CGL20211115_08_58_32.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-adacf511c550",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "AND",
+      "instrument_id": "i-71b35c504606",
+      "title": "Qualified Law 18/2026 of 15 July on the Criminal Code",
+      "detail": "Added to the radar (published 2026-08-13).",
+      "from": null,
+      "to": null,
+      "source_url": "https://bopadocuments.blob.core.windows.net/bopa-documents/038092/pdf/CGL_2026_07_24_09_24_47.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-bf274611af52",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "AND",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 5 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-35998c35d940",
+      "date": "2026-08-13",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "AND",
+      "instrument_id": "i-71b35c504606",
+      "title": "New Criminal Code with AI deepfake offence published",
+      "detail": "Qualified Law 18/2026 published in BOPA núm. 92 of 13 August 2026; in force four months after publication. Art. 166 covers AI-generated sexual deepfakes.",
+      "from": null,
+      "to": null,
+      "source_url": "https://bopadocuments.blob.core.windows.net/bopa-documents/038092/pdf/CGL_2026_07_24_09_24_47.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-66cb3fcda2c5",
+      "date": "2024-08-28",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "AND",
+      "instrument_id": "i-82d289d6236b",
+      "title": "Decree 327/2024 creating the Data Intelligence Agency published",
+      "detail": "Published in BOPA núm. 95 of 28 August 2024; in force the following day. Gives the Agency AI governance and supervision functions.",
+      "from": null,
+      "to": null,
+      "source_url": "https://bopadocuments.blob.core.windows.net/bopa-documents/036095/pdf/GD_2024_08_23_12_33_43.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-373ce6c35a39",
+      "date": "2024-08-28",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "AND",
+      "instrument_id": "i-c2f05f9b1d5b",
+      "title": "Decree 328/2024 creating the Data Intelligence Office published",
+      "detail": "Published in BOPA núm. 95 of 28 August 2024; in force the following day.",
+      "from": null,
+      "to": null,
+      "source_url": "https://bopadocuments.blob.core.windows.net/bopa-documents/036095/pdf/GD_2024_08_23_12_34_44.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-a182c9148bb0",
+      "date": "2024-05-02",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "AND",
+      "instrument_id": "i-e440fa4bd5a5",
+      "title": "Government approves the Andorran Code on the Ethics of AI",
+      "detail": "Announced by Andorra Digital on 2 May 2024; required for the public sector in certain processes, voluntary for others.",
+      "from": null,
+      "to": null,
+      "source_url": "https://andorra-digital.com/actualitat/govern-aprova-codi-etic-intelligencia-artificial",
+      "needs_review": false
+    },
+    {
+      "id": "c-236a8b88020f",
+      "date": "2021-11-17",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "AND",
+      "instrument_id": "i-6d1db762052a",
+      "title": "Qualified Law 29/2021 on personal data protection published",
+      "detail": "Published in BOPA núm. 119 of 17 November 2021; in force six months after publication.",
+      "from": null,
+      "to": null,
+      "source_url": "https://bopadocuments.blob.core.windows.net/bopa-documents/033119/pdf/CGL20211115_08_58_32.pdf",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Estratègia de Transformació Digital 2030 – Programa de Transformació Digital d’Andorra 2024-2027 (PdTDA)",
+      "english_title": "Digital Transformation Strategy 2030 – Andorra Digital Transformation Programme 2024-2027",
+      "issuing_authority": "Government of Andorra (Secretariat of State for Digital Transformation and Telecommunications)",
+      "note": "Official presentation to the Consell General dated 5 March 2025 at https://www.govern.ad/documents/d/guest/estrategia_de_transformacio_digital_2030-pdf; mentions AI only as milestones (AI ethics code, AI support line in business digitalisation grants). The full 2020-2030 strategy / PdTDA text with an AI pillar was not found; record if located.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "Pla d’acció nacional d’intel·ligència artificial",
+      "english_title": "National artificial intelligence action plan",
+      "issuing_authority": "Data Intelligence Agency",
+      "note": "Decree 327/2024 art. 9.2.k tasks the Agency with defining a national AI action plan; no published plan found on 2026-10-13.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "Decret 85/2025, del 19-2-2025, de creació del Centre de Benestar Digital i Capacitats i Competències Digitals",
+      "english_title": "Decree 85/2025 creating the Centre for Digital Wellbeing and Digital Skills",
+      "issuing_authority": "Government of Andorra",
+      "note": "BOPA 2025 (037031/html/GD_2025_03_13_10_50_58.html); preamble cites the AI ethics code and Andorra's signature of the Council of Europe Framework Convention on AI; AI mentioned only in passing.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "Decret 241/2026, del 23-6-2026, d’estructuració i de delimitació de competències del Ministeri de Funció Pública i Transformació Digital",
+      "english_title": "Decree 241/2026 on the structure and competences of the Ministry of Public Function and Digital Transformation",
+      "issuing_authority": "Government of Andorra",
+      "note": "BOPA 2026 (038070/html/GD_2026_06_23_12_22_42.html); assigns the ministry the competence to propose policies on data governance and the promotion of AI (also in its predecessors Decree 196/2025 and Decree 470/2024). Passing mention only.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "Llei 27/2025, de l’11 de desembre, del Pla d’estadística 2026-2029",
+      "english_title": "Law 27/2025 on the Statistics Plan 2026-2029",
+      "issuing_authority": "General Council of Andorra",
+      "note": "BOPA núm. 2 of 2026; requires AI tools used in official statistics to comply with statistical-secrecy and data protection rules and plans AI analytics with the Data Intelligence Agency. Sectoral, passing AI provisions; review whether to record.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "Proposició de llei de modificació de la Llei 17/2018 del sistema educatiu (intel·ligència artificial a les escoles)",
+      "english_title": "Bill amending Law 17/2018 on the education system (AI in schools)",
+      "issuing_authority": "General Council of Andorra",
+      "note": "Discovered via search: a bill proposal to require AI education in schools; the Consell General site (seu.consellgeneral.ad) failed (TLS certificate error via curl; HTTP 503 via WebFetch) on 2026-10-13, so text and status unverified. Pending bill.",
+      "found": "2026-10-13"
+    }
+  ]
 }

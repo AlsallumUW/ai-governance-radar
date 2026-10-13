@@ -10,9 +10,13 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Albania has no AI law in force. Public-sector AI use rests on the 2023 Law on e-governance, which defines AI and regulates its use by public bodies, and on a 2024 Council of Ministers decision setting an AI methodology and technical standards; the Digital Agenda 2022-2026 and the 2025-2030 education digital agenda add AI objectives. A draft AI law aligned with the EU AI Act was put to public consultation in May-June 2026 and a draft National AI Strategy 2025-2030 in 2025; neither has been adopted. Albania is a party to the Council of Europe's data protection convention (Convention 108), and Parliament approved ratification of the Council of Europe AI Convention in September 2026.",
+    "lead_institutions": [
+      "National Agency for Information Society (AKSHI)",
+      "Council of Ministers"
+    ],
+    "last_deep_review": "2026-10-13",
+    "review_notes": "This review was carried out on 12 and 13 October 2026 from the official legal database (qbz.gov.al) and the government consultation portal; a run cut off by a usage limit was resumed and its downloads re-read against the official texts. The data protection commissioner's website could not be accessed and Parliament's website was not searched directly. The 2024 data protection law, whose publication date could not be confirmed, and the AI Convention ratification law are tracked as leads."
   },
   "instruments": [
     {
@@ -20,198 +24,516 @@
       "official_title": "Projektligj “Për Inteligjencën Artificiale”",
       "english_title": "Draft Law on Artificial Intelligence",
       "jurisdiction_id": "ALB",
-      "issuing_authority": null,
-      "publisher_name": "konsultimipublik.gov.al",
-      "authority_type": null,
+      "issuing_authority": "National Agency for Information Society (AKSHI), as draft law of the Council of Ministers",
+      "publisher_name": "National Agency for Information Society",
+      "authority_type": "government",
       "government_level": "national",
+      "subnational_unit": null,
       "categories": [
         "drafts",
-        "binding-law"
+        "risk-assurance",
+        "transparency",
+        "sandbox",
+        "generative-ai"
       ],
       "category": "drafts",
       "subcategory": null,
-      "legal_status": null,
-      "publication_date": null,
+      "legal_status": "consultation_draft",
+      "lifecycle": "consultation",
+      "publication_date": "2026-05-29",
       "effective_date": null,
       "last_amended_date": null,
-      "current_status": "Official source located; current status requires review",
-      "scope": null,
-      "sectors": [],
+      "current_status": "Published for public consultation by AKSHI on the national e-consultation register (RENJK no. 982) for 20 working days, 29.05.2026 to 26.06.2026, with public meetings on 11 and 17 June 2026 (consultative document). No later stage (adoption by the Council of Ministers or submission to the Assembly) was found on 2026-10-13. If enacted it would enter into force 15 days after publication in the Fletorja Zyrtare (draft art. 106).",
+      "scope": "Albania (national)",
+      "sectors": [
+        "cross-sector"
+      ],
       "technology_scope": [
         "AI"
       ],
-      "summary": "Official source located for this governance category. The document’s adoption, legal effect, scope and version history remain under review.",
-      "ai_governance_relevance": "Primary-source material for assessing drafts & consultations, laws & regulations.",
-      "source_url": "https://konsultimipublik.gov.al/Konsultime/Detaje/982",
+      "summary": "Draft framework AI law of 106 articles and 13 annexes that its explanatory report says follows the structure of the EU AI Act (Regulation (EU) 2024/1689). It would set harmonised rules for placing AI systems on the market and using them, ban certain AI practices (with conditions on real-time remote biometric identification for law enforcement), set requirements for high-risk systems and transparency and general-purpose AI model obligations, create market surveillance, a national AI-system register and AI regulatory sandboxes, with fines. It names AKSHI as coordinating authority and the Information and Data Protection Commissioner among the competent authorities, and gives 12-24 month transition periods.",
+      "ai_governance_relevance": "Albania's proposed horizontal AI law aligning with the EU AI Act.",
+      "source_url": "https://konsultimipublik.gov.al/documents/RENJK_982_Projektligj_AI_FINAL_Konsultim_docx.docx",
       "official_pdf_url": null,
       "official_webpage_url": "https://konsultimipublik.gov.al/Konsultime/Detaje/982",
-      "language": null,
+      "language": "sq",
       "supersedes": [],
       "superseded_by": [],
       "related_instruments": [],
       "regional_applicability": [],
-      "verification_date": "2026-10-06",
-      "verification_level": "primary_source_located",
-      "metadata_gaps": [
-        "Issuing authority",
-        "Publication/effective dates",
-        "Current legal status",
-        "Precise applicability",
-        "Version history",
-        "Authority type",
-        "Government level",
-        "Publication date",
-        "Effective date",
-        "Last amended date",
-        "Document language"
-      ],
-      "source_kind": "official_publication",
-      "evidence_reference": "turn47search0",
+      "verification_date": "2026-10-13",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "consultation_portal",
+      "evidence_reference": "curl (browser user agent, --max-time 60): draft law text (.docx, 162 KB), consultative document and explanatory report (relacion) downloaded from konsultimipublik.gov.al/documents/ and read in full; 2026-10-13 re-download byte-identical to the 2026-10-12 copy. The Detaje/982 page returns only an Incapsula script shell to curl.",
       "link_status": "reachable",
-      "document_access_type": "official_publication_or_full_text_page",
-      "source_id": "s-35c1ac2b7789",
-      "organization_id": "o-989490370aa0",
-      "lifecycle": "draft",
-      "first_recorded": "2026-10-06",
-      "last_changed": null,
-      "subnational_unit": null
+      "document_access_type": "original_government_document",
+      "source_id": "s-1fc242d189f6",
+      "organization_id": "o-608b3d517d1c",
+      "first_recorded": "2026-10-13",
+      "last_changed": null
     },
     {
       "id": "i-367dbd253ab2",
-      "official_title": "\"Per miratimin e Strategjise Kombetare te Inteligjences Artificiale te Shqiperise 2025-2030 dhe te Planit te Veprimit\"",
-      "english_title": "Draft National AI Strategy 2025–2030 and action plan",
+      "official_title": "Projektvendim “Për miratimin e Strategjisë Kombëtare të Inteligjencës Artificiale të Shqipërisë 2025-2030 dhe të Planit të Veprimit”",
+      "english_title": "Draft Decision on the approval of Albania's National Artificial Intelligence Strategy 2025-2030 and its Action Plan",
       "jurisdiction_id": "ALB",
-      "issuing_authority": null,
-      "publisher_name": "www.konsultimipublik.gov.al",
-      "authority_type": null,
+      "issuing_authority": "National Agency for Information Society (AKSHI), as draft decision of the Council of Ministers",
+      "publisher_name": "National Agency for Information Society",
+      "authority_type": "government",
       "government_level": "national",
+      "subnational_unit": null,
       "categories": [
         "drafts",
-        "strategy"
+        "strategy",
+        "public-sector",
+        "ethics"
       ],
       "category": "drafts",
       "subcategory": null,
-      "legal_status": null,
-      "publication_date": null,
+      "legal_status": "consultation_draft",
+      "lifecycle": "consultation",
+      "publication_date": "2025-08-14",
       "effective_date": null,
       "last_amended_date": null,
-      "current_status": "Official source located; current status requires review",
-      "scope": null,
-      "sectors": [],
+      "current_status": "Draft decision put to public consultation by AKSHI on the national e-consultation register (RENJK no. 864) from 14.08.2025 to 11.09.2025, with an online meeting on 28 August and a meeting at AKSHI on 9 September 2025 (consultative document). No Council of Ministers decision approving it was found in the qbz.gov.al search for 'inteligjencës artificiale' (198 hits reviewed 2026-10-12) or by web search on 2026-10-13, so it is treated as a draft.",
+      "scope": "Albania (national)",
+      "sectors": [
+        "cross-sector"
+      ],
       "technology_scope": [
         "AI"
       ],
-      "summary": "Official source located for this governance category. The document’s adoption, legal effect, scope and version history remain under review.",
-      "ai_governance_relevance": "Primary-source material for assessing drafts & consultations, strategy & action plans.",
-      "source_url": "https://www.konsultimipublik.gov.al/Konsultime/Detaje/864",
+      "summary": "Draft first national AI strategy, 'AI Strategy 2030: Leap towards Wellbeing', setting a vision of AI 'made in Albania, for Albania' that is ethical, safe and inclusive. It reviews AI use in public administration, a SWOT analysis and high-potential sectors (public services, health, education, agriculture), and sets six pillars (infrastructure and ecosystem, AI in industry, education and workforce, regulatory framework, data as a strategic enabler, international cooperation) with a maturity roadmap and action plan. It builds on Law 43/2023 on e-governance and the 2024 AI methodology and technical standards (VKM 479/2024) and aligns with the Digital Agenda and the S3 smart specialisation strategy.",
+      "ai_governance_relevance": "Draft national AI strategy; would be the first dedicated AI strategy once approved by the Council of Ministers.",
+      "source_url": "https://konsultimipublik.gov.al/documents/RENJK_864_Strategjia-Kombetare-e-Inteligjences-Artificiale-2025-2030-dhe-plani-i-veprimit.docx",
       "official_pdf_url": null,
       "official_webpage_url": "https://www.konsultimipublik.gov.al/Konsultime/Detaje/864",
-      "language": null,
+      "language": "sq",
       "supersedes": [],
       "superseded_by": [],
       "related_instruments": [],
       "regional_applicability": [],
-      "verification_date": "2026-10-06",
-      "verification_level": "primary_source_located",
-      "metadata_gaps": [
-        "Issuing authority",
-        "Publication/effective dates",
-        "Current legal status",
-        "Precise applicability",
-        "Version history",
-        "Authority type",
-        "Government level",
-        "Publication date",
-        "Effective date",
-        "Last amended date",
-        "Document language"
-      ],
-      "source_kind": "official_publication",
-      "evidence_reference": "turn47search1",
+      "verification_date": "2026-10-13",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "consultation_portal",
+      "evidence_reference": "curl (browser user agent, --max-time 60): strategy and action plan (.docx), explanatory report and consultative document downloaded from konsultimipublik.gov.al/documents/ and read; 2026-10-13 re-download byte-identical. The Detaje/864 page returns only an Incapsula script shell to curl.",
       "link_status": "reachable",
-      "document_access_type": "official_publication_or_full_text_page",
-      "source_id": "s-ad219d2d2bf8",
-      "organization_id": "o-40a8f10b72e6",
-      "lifecycle": "draft",
-      "first_recorded": "2026-10-06",
-      "last_changed": null,
-      "subnational_unit": null
+      "document_access_type": "original_government_document",
+      "source_id": "s-d7151041c4d7",
+      "organization_id": "o-608b3d517d1c",
+      "first_recorded": "2026-10-13",
+      "last_changed": null
+    },
+    {
+      "id": "i-8e2f94f6378e",
+      "official_title": "Vendim nr. 479, datë 24.7.2024 “Për miratimin e dokumentit të metodologjisë dhe standardet teknike për përdorimin e inteligjencës artificiale në Republikën e Shqipërisë”",
+      "english_title": "Council of Ministers Decision No. 479 of 24 July 2024 on the approval of the methodology and technical standards for the use of artificial intelligence in the Republic of Albania",
+      "jurisdiction_id": "ALB",
+      "issuing_authority": "Council of Ministers",
+      "publisher_name": "Council of Ministers",
+      "authority_type": "government",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "public-sector",
+        "government-governance",
+        "risk-assurance",
+        "ethics"
+      ],
+      "category": "public-sector",
+      "subcategory": null,
+      "legal_status": "binding_regulation",
+      "lifecycle": "in_force",
+      "publication_date": "2024-07-29",
+      "effective_date": "2024-07-24",
+      "last_amended_date": null,
+      "current_status": "Published in Fletorja Zyrtare no. 130 of 29.07.2024 (qbz.gov.al act metadata). In force immediately ('hyn në fuqi menjëherë', point 2 of the decision), i.e. from its adoption on 24.7.2024. No amendment found.",
+      "scope": "Albania (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Decision adopted under art. 39(2) of Law 43/2023 approving a methodology and technical standards for using AI technology in Albania, drawing on NIST AI RMF 1.0, OECD and EU practice. The annex sets purpose and scope, standards, principles, risks and challenges, guidance and monitoring of AI implementation, including documentation and impact assessment of AI-based changes to information systems. AKSHI, ministries and other public institutions are charged with implementing it.",
+      "ai_governance_relevance": "Albania's main in-force AI-specific rulebook for AI use in public information systems.",
+      "source_url": "https://qbz.gov.al/eli/vendim/2024/07/24/479",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://qbz.gov.al/eli/vendim/2024/07/24/479",
+      "language": "sq",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-13",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "legislation_portal",
+      "evidence_reference": "qbz.gov.al official gazette PDF (Qendra e Botimeve Zyrtare) downloaded with curl (browser user agent, --max-time 60) on 2026-10-12 and read in full with pdftotext; re-checked 2026-10-13 against the saved official text; gazette number/date from the qbz.gov.al act metadata (search API). On 2026-10-13 the ELI page returned HTTP 200 (single-page app shell) while qbz content/search endpoints timed out (curl and WebFetch).",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-bab6303a308d",
+      "organization_id": "o-facb6ed4ee24",
+      "first_recorded": "2026-10-13",
+      "last_changed": null
+    },
+    {
+      "id": "i-425b35566a9f",
+      "official_title": "Ligj nr. 43/2023 “Për qeverisjen elektronike”",
+      "english_title": "Law No. 43/2023 on Electronic Governance",
+      "jurisdiction_id": "ALB",
+      "issuing_authority": "Assembly of the Republic of Albania",
+      "publisher_name": "Assembly of the Republic of Albania",
+      "authority_type": "legislature",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "binding-law",
+        "public-sector"
+      ],
+      "category": "binding-law",
+      "subcategory": null,
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2023-07-04",
+      "effective_date": "2023-07-19",
+      "last_amended_date": null,
+      "current_status": "Adopted 15.6.2023, promulgated by decree no. 96 of 3.7.2023 and published in Fletorja Zyrtare no. 99 of 04.07.2023 (qbz metadata). In force 15 days after publication (art. 59), computed as 2023-07-19. Amended by Laws 100/2024 and 25/2026, which do not change art. 39 (amending texts read).",
+      "scope": "Albania (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "General e-governance law that defines artificial intelligence (art. 4(16): the simulation of human intelligence processes through computer systems and algorithms). Art. 39 provides that AI technology is to be applied, where possible, in public ICT systems to support innovation in the digital economy, and requires the Council of Ministers to set a methodology and technical standards for its use, which it did with VKM 479/2024.",
+      "ai_governance_relevance": "Statutory basis for public-sector AI use and for the AI methodology and standards.",
+      "source_url": "https://qbz.gov.al/eli/ligj/2023/06/15/43",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://qbz.gov.al/eli/ligj/2023/06/15/43",
+      "language": "sq",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-13",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "legislation_portal",
+      "evidence_reference": "qbz.gov.al official gazette PDF (Qendra e Botimeve Zyrtare) downloaded with curl (browser user agent, --max-time 60) on 2026-10-12 and read in full with pdftotext; re-checked 2026-10-13 against the saved official text; gazette number/date from the qbz.gov.al act metadata (search API). On 2026-10-13 the ELI page returned HTTP 200 (single-page app shell) while qbz content/search endpoints timed out (curl and WebFetch).",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-5925f65276fe",
+      "organization_id": "o-753db9ce2f98",
+      "first_recorded": "2026-10-13",
+      "last_changed": null
+    },
+    {
+      "id": "i-8a3997f9d81a",
+      "official_title": "Vendim nr. 370, datë 1.6.2022 “Për miratimin e strategjisë ndërsektoriale ‘Agjenda digjitale e Shqipërisë’ dhe të planit të veprimit 2022–2026”",
+      "english_title": "Council of Ministers Decision No. 370 of 1 June 2022 approving the cross-sectoral strategy 'Digital Agenda of Albania' and its Action Plan 2022-2026",
+      "jurisdiction_id": "ALB",
+      "issuing_authority": "Council of Ministers",
+      "publisher_name": "Council of Ministers",
+      "authority_type": "government",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "strategy",
+        "public-sector"
+      ],
+      "category": "strategy",
+      "subcategory": null,
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2022-06-05",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Published in Fletorja Zyrtare no. 84 of 05.06.2022 (qbz metadata); the decision enters into force on publication. Covers 2022-2026; no successor digital agenda found.",
+      "scope": "Albania (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Cross-sectoral digital strategy for 2022-2026 that aims to drive investment in advanced computing, data processing, AI, cybersecurity and advanced digital skills. Its platforms pillar includes a dedicated objective (6.5.2) on AI platforms: enabling AI use in public-sector projects and services to deliver proactive services, with a high-performance computing centre and big-data/machine-learning analysis of government data. Implementation is assigned to AKSHI and the ministries named in the action plan.",
+      "ai_governance_relevance": "Current digital strategy with an AI pillar; the draft AI strategy 2025-2030 is designed to align with it.",
+      "source_url": "https://qbz.gov.al/eli/vendim/2022/06/01/370",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://qbz.gov.al/eli/vendim/2022/06/01/370",
+      "language": "sq",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-13",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "legislation_portal",
+      "evidence_reference": "qbz.gov.al official gazette PDF (Qendra e Botimeve Zyrtare) downloaded with curl (browser user agent, --max-time 60) on 2026-10-12 and read in full with pdftotext; re-checked 2026-10-13 against the saved official text; gazette number/date from the qbz.gov.al act metadata (search API). On 2026-10-13 the ELI page returned HTTP 200 (single-page app shell) while qbz content/search endpoints timed out (curl and WebFetch).",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-3d1da4d360e0",
+      "organization_id": "o-facb6ed4ee24",
+      "first_recorded": "2026-10-13",
+      "last_changed": null
+    },
+    {
+      "id": "i-a9be5911e58e",
+      "official_title": "Vendim nr. 733, datë 3.12.2025 “Për miratimin e planit të veprimit të Agjendës Digjitale për Arsimin 2025–2030, duke përfshirë standardet për arritjen e kompetencës digjitale”",
+      "english_title": "Council of Ministers Decision No. 733 of 3 December 2025 approving the Action Plan of the Digital Agenda for Education 2025-2030, including standards for achieving digital competence",
+      "jurisdiction_id": "ALB",
+      "issuing_authority": "Council of Ministers (on the proposal of the Minister of Education)",
+      "publisher_name": "Council of Ministers",
+      "authority_type": "government",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "sectoral",
+        "generative-ai",
+        "strategy"
+      ],
+      "category": "sectoral",
+      "subcategory": null,
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2025-12-10",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Published in Fletorja Zyrtare no. 229 of 10.12.2025 (qbz metadata); enters into force on publication. The generative-AI guidelines it foresees were not found as a published document (see leads).",
+      "scope": "Albania (national)",
+      "sectors": [
+        "cross-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Education-sector digital action plan whose Objective 3 is to enable and encourage innovative technologies such as AI. It commits the Ministry of Education to develop and apply guidelines and practical cases for the ethical and effective use of generative AI in education (measure 8) and to include AI in the pre-university ICT curriculum (measure 10), alongside teacher digital-skills training.",
+      "ai_governance_relevance": "Sets government expectations for generative AI use and AI education in schools.",
+      "source_url": "https://qbz.gov.al/eli/vendim/2025/12/03/733",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://qbz.gov.al/eli/vendim/2025/12/03/733",
+      "language": "sq",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-13",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "legislation_portal",
+      "evidence_reference": "qbz.gov.al official gazette PDF (Qendra e Botimeve Zyrtare) downloaded with curl (browser user agent, --max-time 60) on 2026-10-12 and read in full with pdftotext; re-checked 2026-10-13 against the saved official text; gazette number/date from the qbz.gov.al act metadata (search API). On 2026-10-13 the ELI page returned HTTP 200 (single-page app shell) while qbz content/search endpoints timed out (curl and WebFetch).",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-b21faaa92b50",
+      "organization_id": "o-facb6ed4ee24",
+      "first_recorded": "2026-10-13",
+      "last_changed": null
     }
   ],
   "organizations": [
     {
-      "id": "o-989490370aa0",
+      "id": "o-608b3d517d1c",
       "jurisdiction_id": "ALB",
-      "name": "konsultimipublik.gov.al",
-      "publisher_name_verified": false,
-      "ai_governance_role": "Publisher of listed official material; complete institutional mandate and statutory responsibilities require review.",
-      "source_url": "https://konsultimipublik.gov.al/Konsultime/Detaje/982",
-      "authority_type": null,
-      "government_level": null
+      "name": "National Agency for Information Society",
+      "publisher_name_verified": true,
+      "ai_governance_role": "National Agency for Information Society (Agjencia Kombëtare e Shoqërisë së Informacionit, AKSHI); prepared the draft National AI Strategy 2025-2030 and the draft Law on AI and ran both public consultations; charged with implementing the AI methodology and technical standards (VKM 479/2024) and named in the draft AI law as coordinating authority/AI structure.",
+      "source_url": "https://akshi.gov.al/",
+      "authority_type": "government",
+      "government_level": "national"
     },
     {
-      "id": "o-40a8f10b72e6",
+      "id": "o-facb6ed4ee24",
       "jurisdiction_id": "ALB",
-      "name": "www.konsultimipublik.gov.al",
-      "publisher_name_verified": false,
-      "ai_governance_role": "Publisher of listed official material; complete institutional mandate and statutory responsibilities require review.",
-      "source_url": "https://www.konsultimipublik.gov.al/Konsultime/Detaje/864",
-      "authority_type": null,
-      "government_level": null
+      "name": "Council of Ministers",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Council of Ministers of the Republic of Albania; adopts decisions (VKM) approving national strategies and the methodology and technical standards for AI use under art. 39 of Law 43/2023 on e-governance.",
+      "source_url": "https://kryeministria.al/",
+      "authority_type": "government",
+      "government_level": "national"
+    },
+    {
+      "id": "o-753db9ce2f98",
+      "jurisdiction_id": "ALB",
+      "name": "Assembly of the Republic of Albania",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Albania's parliament; enacted Law 43/2023 on e-governance (art. 39 on AI use) and Law 124/2024 on personal data protection, and in September 2026 adopted the law ratifying the Council of Europe Framework Convention on AI.",
+      "source_url": "https://www.parlament.al/",
+      "authority_type": "legislature",
+      "government_level": "national"
     }
   ],
   "sources": [
     {
-      "id": "s-35c1ac2b7789",
-      "url": "https://konsultimipublik.gov.al/Konsultime/Detaje/982",
+      "id": "s-1fc242d189f6",
+      "url": "https://konsultimipublik.gov.al/documents/RENJK_982_Projektligj_AI_FINAL_Konsultim_docx.docx",
       "jurisdiction_ids": [
         "ALB"
       ],
       "source_institutions": [
-        "konsultimipublik.gov.al"
+        "National Agency for Information Society"
       ],
       "instrument_ids": [
         "i-29254cce7b3d"
       ],
       "categories_reviewed": [
-        "binding-law",
-        "drafts"
+        "drafts",
+        "risk-assurance",
+        "transparency",
+        "sandbox",
+        "generative-ai"
       ],
-      "date_reviewed": "2026-10-06",
-      "checked_date": "2026-10-06",
-      "check_method": "GET; first 1 MiB; 14-second timeout",
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl (browser user agent, --max-time 60): draft law text (.docx, 162 KB), consultative document and explanatory report (relacion) downloaded from konsultimipublik.gov.al/documents/ and read in full; 2026-10-13 re-download byte-identical to the 2026-10-12 copy. The Detaje/982 page returns only an Incapsula script shell to curl.",
       "http_status": 200,
-      "final_url": "https://konsultimipublik.gov.al/Konsultime/Detaje/982",
+      "final_url": "https://konsultimipublik.gov.al/documents/RENJK_982_Projektligj_AI_FINAL_Konsultim_docx.docx",
       "link_status": "reachable",
       "page_title": null,
-      "document_language": null,
+      "document_language": "sq",
       "error": null,
-      "content_type": "text/html"
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
     },
     {
-      "id": "s-ad219d2d2bf8",
-      "url": "https://www.konsultimipublik.gov.al/Konsultime/Detaje/864",
+      "id": "s-d7151041c4d7",
+      "url": "https://konsultimipublik.gov.al/documents/RENJK_864_Strategjia-Kombetare-e-Inteligjences-Artificiale-2025-2030-dhe-plani-i-veprimit.docx",
       "jurisdiction_ids": [
         "ALB"
       ],
       "source_institutions": [
-        "www.konsultimipublik.gov.al"
+        "National Agency for Information Society"
       ],
       "instrument_ids": [
         "i-367dbd253ab2"
       ],
       "categories_reviewed": [
         "drafts",
-        "strategy"
+        "strategy",
+        "public-sector",
+        "ethics"
       ],
-      "date_reviewed": "2026-10-06",
-      "checked_date": "2026-10-06",
-      "check_method": "GET; first 1 MiB; 14-second timeout",
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl (browser user agent, --max-time 60): strategy and action plan (.docx), explanatory report and consultative document downloaded from konsultimipublik.gov.al/documents/ and read; 2026-10-13 re-download byte-identical. The Detaje/864 page returns only an Incapsula script shell to curl.",
       "http_status": 200,
-      "final_url": "https://www.konsultimipublik.gov.al/Konsultime/Detaje/864",
+      "final_url": "https://konsultimipublik.gov.al/documents/RENJK_864_Strategjia-Kombetare-e-Inteligjences-Artificiale-2025-2030-dhe-plani-i-veprimit.docx",
       "link_status": "reachable",
       "page_title": null,
-      "document_language": null,
+      "document_language": "sq",
+      "error": null,
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    },
+    {
+      "id": "s-bab6303a308d",
+      "url": "https://qbz.gov.al/eli/vendim/2024/07/24/479",
+      "jurisdiction_ids": [
+        "ALB"
+      ],
+      "source_institutions": [
+        "Council of Ministers"
+      ],
+      "instrument_ids": [
+        "i-8e2f94f6378e"
+      ],
+      "categories_reviewed": [
+        "public-sector",
+        "government-governance",
+        "risk-assurance",
+        "ethics"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "qbz.gov.al official gazette PDF (Qendra e Botimeve Zyrtare) downloaded with curl (browser user agent, --max-time 60) on 2026-10-12 and read in full with pdftotext; re-checked 2026-10-13 against the saved official text; gazette number/date from the qbz.gov.al act metadata (search API). On 2026-10-13 the ELI page returned HTTP 200 (single-page app shell) while qbz content/search endpoints timed out (curl and WebFetch).",
+      "http_status": 200,
+      "final_url": "https://qbz.gov.al/eli/vendim/2024/07/24/479",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "sq",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-5925f65276fe",
+      "url": "https://qbz.gov.al/eli/ligj/2023/06/15/43",
+      "jurisdiction_ids": [
+        "ALB"
+      ],
+      "source_institutions": [
+        "Assembly of the Republic of Albania"
+      ],
+      "instrument_ids": [
+        "i-425b35566a9f"
+      ],
+      "categories_reviewed": [
+        "binding-law",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "qbz.gov.al official gazette PDF (Qendra e Botimeve Zyrtare) downloaded with curl (browser user agent, --max-time 60) on 2026-10-12 and read in full with pdftotext; re-checked 2026-10-13 against the saved official text; gazette number/date from the qbz.gov.al act metadata (search API). On 2026-10-13 the ELI page returned HTTP 200 (single-page app shell) while qbz content/search endpoints timed out (curl and WebFetch).",
+      "http_status": 200,
+      "final_url": "https://qbz.gov.al/eli/ligj/2023/06/15/43",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "sq",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-3d1da4d360e0",
+      "url": "https://qbz.gov.al/eli/vendim/2022/06/01/370",
+      "jurisdiction_ids": [
+        "ALB"
+      ],
+      "source_institutions": [
+        "Council of Ministers"
+      ],
+      "instrument_ids": [
+        "i-8a3997f9d81a"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "qbz.gov.al official gazette PDF (Qendra e Botimeve Zyrtare) downloaded with curl (browser user agent, --max-time 60) on 2026-10-12 and read in full with pdftotext; re-checked 2026-10-13 against the saved official text; gazette number/date from the qbz.gov.al act metadata (search API). On 2026-10-13 the ELI page returned HTTP 200 (single-page app shell) while qbz content/search endpoints timed out (curl and WebFetch).",
+      "http_status": 200,
+      "final_url": "https://qbz.gov.al/eli/vendim/2022/06/01/370",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "sq",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-b21faaa92b50",
+      "url": "https://qbz.gov.al/eli/vendim/2025/12/03/733",
+      "jurisdiction_ids": [
+        "ALB"
+      ],
+      "source_institutions": [
+        "Council of Ministers"
+      ],
+      "instrument_ids": [
+        "i-a9be5911e58e"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "generative-ai",
+        "strategy"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "qbz.gov.al official gazette PDF (Qendra e Botimeve Zyrtare) downloaded with curl (browser user agent, --max-time 60) on 2026-10-12 and read in full with pdftotext; re-checked 2026-10-13 against the saved official text; gazette number/date from the qbz.gov.al act metadata (search API). On 2026-10-13 the ELI page returned HTTP 200 (single-page app shell) while qbz content/search endpoints timed out (curl and WebFetch).",
+      "http_status": 200,
+      "final_url": "https://qbz.gov.al/eli/vendim/2025/12/03/733",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "sq",
       "error": null,
       "content_type": "text/html"
     }
@@ -220,7 +542,7 @@
   "coverage_audit": {
     "jurisdiction_id": "ALB",
     "country": "Albania",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -235,56 +557,338 @@
     "categories_with_findings": [
       "binding-law",
       "drafts",
-      "strategy"
-    ],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
-      "binding-law",
-      "strategy",
-      "government-governance",
       "ethics",
-      "risk-assurance",
+      "generative-ai",
+      "government-governance",
       "public-sector",
+      "risk-assurance",
+      "sandbox",
+      "sectoral",
+      "strategy",
+      "transparency"
+    ],
+    "categories_where_no_material_was_found": [
       "procurement",
       "cyber-security",
       "data-privacy",
-      "transparency",
       "standards",
-      "sandbox",
       "index-readiness",
-      "sectoral",
-      "generative-ai",
-      "drafts",
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Albania \"inteligjencë artificiale\" (strategji OR rregullim OR etikë) government ministry official",
       "Albania \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Albania government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Albania \"inteligjencë artificiale\" cybersecurity authority secure development safety guidelines",
-      "Albania privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Albania privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "qbz.gov.al search API: \"inteligjenc* artificial*\" (198 hits reviewed)",
+      "qbz.gov.al search API: Diella; \"inteligjencës artificiale\"; algoritëm; deepfake (timed out 2026-10-13)",
+      "Vendim Këshilli i Ministrave miratimin e Strategjisë Kombëtare të Inteligjencës Artificiale 2025-2030",
+      "Diella ministri virtual inteligjencës artificiale vendim Këshilli i Ministrave qbz",
+      "idp.al inteligjenca artificiale udhëzim Komisioneri",
+      "ligji 124/2024 \"Për mbrojtjen e të dhënave personale\" Fletorja Zyrtare nr. 2025 botuar",
+      "parlament.al projektligji \"Për inteligjencën artificiale\" 2026 Kuvendi komisioni",
+      "Banka e Shqipërisë OR AMF OR AKEP OR AKSK \"inteligjencës artificiale\" udhëzim rregullore 2025 2026"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-13",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-13, one agent, national level only (PROTOCOL §6), about 25-minute time box. idp.al firewall blocks curl; parlament.al not searched directly; qbz.gov.al live search/gazette timed out 2026-10-13 (qbz texts saved 2026-10-12 used). Resumed run: existing records re-checked and corrected. VKM 479/2024 effective 2024-07-24 ('hyn në fuqi menjëherë', in force on adoption). Law 43/2023 effective 2023-07-19 computed from art. 59 (15 days after publication 2023-07-04). Placeholder orgs o-989490370aa0, o-40a8f10b72e6 pruned. Law 93/2026 (CoE AI Convention ratification, decree 512 of 6 Oct 2026) lead pending gazette publication. Convention 108: Law 9288 of 7 Oct 2004 (decree 4375 of 26 Oct 2004). Units covered: Law: qbz.gov.al (official gazette/legislation portal) searched for AI terms (198 acts reviewed on 2026-10-12); Law 43/2023 (AI article) recorded; Law 124/2024 (automated decisions) and Law 93/2026 (CoE AI Convention ratification) held as leads pending gazette dates; no AI-specific law in force; draft AI law at consultation stage; no bill found before the Assembly.; Government: AKSHI/e-consultation portal: draft AI strategy 2025-2030 and draft AI law recorded; Council of Ministers AI methodology VKM 479/2024 and Digital Agenda 2022-2026 recorded; no adopted AI strategy found.; Ministries: Education: Digital Agenda for Education action plan (GenAI guidelines foreseen) recorded; defence/security, procurement, cyber strategies mention AI only in passing (leads); health, justice, finance, labour, interior: searched via qbz, nothing AI-specific found.; Regulators: Information and Data Protection Commissioner (idp.al blocks curl; web search found no AI guidance document, only information-request replies); Bank of Albania, AMF, AKEP, AKSK (cyber): searched, nothing AI-specific found.. Not reached: idp.al site pages (WAF blocks curl; only search-engine discovery); parlament.al (not searched directly); qbz.gov.al live search on 2026-10-13 (timeouts). Could not verify: Gazette publication date of Law 124/2024 (qbz.gov.al timeouts; held as lead).; Whether the draft AI strategy or draft AI law advanced after consultation (no official record found).; idp.al AI guidance (site blocks automated access).. procurement, cyber-security, data-privacy, standards, index-readiness, international, historical: no material found.",
     "discovery_result_count": 8,
     "focused_result_count": 10
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-f93f52a62fcb",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "ALB",
+      "instrument_id": "i-29254cce7b3d",
+      "title": "Draft Law on Artificial Intelligence",
+      "detail": "Official source moved.",
+      "from": "https://konsultimipublik.gov.al/Konsultime/Detaje/982",
+      "to": "https://konsultimipublik.gov.al/documents/RENJK_982_Projektligj_AI_FINAL_Konsultim_docx.docx",
+      "source_url": "https://konsultimipublik.gov.al/documents/RENJK_982_Projektligj_AI_FINAL_Konsultim_docx.docx",
+      "needs_review": false
+    },
+    {
+      "id": "c-3c5ccfd80907",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "ALB",
+      "instrument_id": "i-29254cce7b3d",
+      "title": "Draft Law on Artificial Intelligence",
+      "detail": "Record updated: categories, issuing authority, legal status, lifecycle, publication date, scope, summary.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-5bd391188ddf",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "ALB",
+      "instrument_id": "i-367dbd253ab2",
+      "title": "Draft Decision on the approval of Albania's National Artificial Intelligence Strategy 2025-2030 and its Action Plan",
+      "detail": "Official source moved.",
+      "from": "https://www.konsultimipublik.gov.al/Konsultime/Detaje/864",
+      "to": "https://konsultimipublik.gov.al/documents/RENJK_864_Strategjia-Kombetare-e-Inteligjences-Artificiale-2025-2030-dhe-plani-i-veprimit.docx",
+      "source_url": "https://konsultimipublik.gov.al/documents/RENJK_864_Strategjia-Kombetare-e-Inteligjences-Artificiale-2025-2030-dhe-plani-i-veprimit.docx",
+      "needs_review": false
+    },
+    {
+      "id": "c-e784d901294f",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "ALB",
+      "instrument_id": "i-367dbd253ab2",
+      "title": "Draft Decision on the approval of Albania's National Artificial Intelligence Strategy 2025-2030 and its Action Plan",
+      "detail": "Record updated: categories, issuing authority, legal status, lifecycle, publication date, scope, summary, title.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-efdc877d0b99",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ALB",
+      "instrument_id": "i-8e2f94f6378e",
+      "title": "Council of Ministers Decision No. 479 of 24 July 2024 on the approval of the methodology and technical standards for the use of artificial intelligence in the Republic of Albania",
+      "detail": "Added to the radar (published 2024-07-29).",
+      "from": null,
+      "to": null,
+      "source_url": "https://qbz.gov.al/eli/vendim/2024/07/24/479",
+      "needs_review": false
+    },
+    {
+      "id": "c-98bbaa63145f",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ALB",
+      "instrument_id": "i-425b35566a9f",
+      "title": "Law No. 43/2023 on Electronic Governance",
+      "detail": "Added to the radar (published 2023-07-04).",
+      "from": null,
+      "to": null,
+      "source_url": "https://qbz.gov.al/eli/ligj/2023/06/15/43",
+      "needs_review": false
+    },
+    {
+      "id": "c-3b7c33ec5718",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ALB",
+      "instrument_id": "i-8a3997f9d81a",
+      "title": "Council of Ministers Decision No. 370 of 1 June 2022 approving the cross-sectoral strategy 'Digital Agenda of Albania' and its Action Plan 2022-2026",
+      "detail": "Added to the radar (published 2022-06-05).",
+      "from": null,
+      "to": null,
+      "source_url": "https://qbz.gov.al/eli/vendim/2022/06/01/370",
+      "needs_review": false
+    },
+    {
+      "id": "c-97635f9c4772",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ALB",
+      "instrument_id": "i-a9be5911e58e",
+      "title": "Council of Ministers Decision No. 733 of 3 December 2025 approving the Action Plan of the Digital Agenda for Education 2025-2030, including standards for achieving digital competence",
+      "detail": "Added to the radar (published 2025-12-10).",
+      "from": null,
+      "to": null,
+      "source_url": "https://qbz.gov.al/eli/vendim/2025/12/03/733",
+      "needs_review": false
+    },
+    {
+      "id": "c-fc0283667e26",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "ALB",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 6 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-e978254bb146",
+      "date": "2026-05-29",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "consultation",
+      "jurisdiction_id": "ALB",
+      "instrument_id": "i-29254cce7b3d",
+      "title": "Draft Law on Artificial Intelligence opens for public consultation",
+      "detail": "AKSHI consultation on the e-register, 29.05.2026-26.06.2026.",
+      "from": null,
+      "to": null,
+      "source_url": "https://konsultimipublik.gov.al/documents/RENJK_982_Projektligj_AI_FINAL_Konsultim_docx.docx",
+      "needs_review": false
+    },
+    {
+      "id": "c-56cdfd3bd1db",
+      "date": "2025-12-03",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "ALB",
+      "instrument_id": "i-a9be5911e58e",
+      "title": "Digital Agenda for Education action plan 2025-2030 adopted",
+      "detail": "Council of Ministers Decision 733; includes generative-AI guidelines and AI in ICT curriculum.",
+      "from": null,
+      "to": null,
+      "source_url": "https://qbz.gov.al/eli/vendim/2025/12/03/733",
+      "needs_review": false
+    },
+    {
+      "id": "c-24d260298419",
+      "date": "2025-08-14",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "consultation",
+      "jurisdiction_id": "ALB",
+      "instrument_id": "i-367dbd253ab2",
+      "title": "Draft National AI Strategy 2025-2030 opens for public consultation",
+      "detail": "AKSHI consultation on the e-register, 14.08.2025-11.09.2025.",
+      "from": null,
+      "to": null,
+      "source_url": "https://konsultimipublik.gov.al/documents/RENJK_864_Strategjia-Kombetare-e-Inteligjences-Artificiale-2025-2030-dhe-plani-i-veprimit.docx",
+      "needs_review": false
+    },
+    {
+      "id": "c-64b035d084f1",
+      "date": "2024-07-24",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "ALB",
+      "instrument_id": "i-8e2f94f6378e",
+      "title": "Council of Ministers adopts AI methodology and technical standards (VKM 479/2024)",
+      "detail": "In force immediately; published in Fletorja Zyrtare no. 130 of 29.07.2024.",
+      "from": null,
+      "to": null,
+      "source_url": "https://qbz.gov.al/eli/vendim/2024/07/24/479",
+      "needs_review": false
+    },
+    {
+      "id": "c-d7c761927051",
+      "date": "2023-07-04",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "ALB",
+      "instrument_id": "i-425b35566a9f",
+      "title": "Law 43/2023 on e-governance published",
+      "detail": "Published in Fletorja Zyrtare no. 99; art. 39 governs AI use in public ICT systems.",
+      "from": null,
+      "to": null,
+      "source_url": "https://qbz.gov.al/eli/ligj/2023/06/15/43",
+      "needs_review": false
+    },
+    {
+      "id": "c-78b4fd98cb5c",
+      "date": "2022-06-01",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "ALB",
+      "instrument_id": "i-8a3997f9d81a",
+      "title": "Digital Agenda of Albania 2022-2026 adopted",
+      "detail": "Council of Ministers Decision 370; includes an AI-platforms objective.",
+      "from": null,
+      "to": null,
+      "source_url": "https://qbz.gov.al/eli/vendim/2022/06/01/370",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Ligj nr. 124/2024 “Për mbrojtjen e të dhënave personale”",
+      "english_title": "Law No. 124/2024 on Personal Data Protection",
+      "issuing_authority": "Assembly of the Republic of Albania",
+      "note": "GDPR-aligned data protection law (adopted 19.12.2024, promulgated by decree no. 5 of 15.1.2025); art. 20 gives the right not to be subject to solely automated decisions including profiling, and arts. 13-14 require information on the logic of automated decision-making. Full official text read (idp.al copy https://idp.al/wp-content/uploads/2025/07/ligj-2024-12-19-124.pdf; qbz ELI https://qbz.gov.al/eli/ligj/2024/12/19/124). The gazette publication date could not be confirmed on an official source on 2026-10-13 (qbz.gov.al search and gazette endpoints timed out; the text itself carries no publication date; a non-official snippet says Fletorja Zyrtare 2025 no. 9). Promote as a data-privacy binding_law record once the gazette date is confirmed (in force 15 days after publication, art. 101).",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "Ligj nr. 93/2026 “Për ratifikimin e Konventës kuadër të Këshillit të Evropës për Inteligjencën Artificiale, të Drejtat e Njeriut, Demokracinë dhe Shtetin e së Drejtës”",
+      "english_title": "Law No. 93/2026 ratifying the Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law",
+      "issuing_authority": "Assembly of the Republic of Albania",
+      "note": "Adopted by the Assembly on 18.9.2026 (text on qbz.gov.al as 'ligj nr. 93, dt. 18.9.2026.docx'); promulgated by Presidential Decree no. 512 of 6.10.2026; in force 15 days after publication in the Fletorja Zyrtare (art. 2). Gazette publication not yet confirmed on 2026-10-13. This is the national ratification act of a regional (Council of Europe) instrument: handle via data/regional (add ALB to the Framework Convention's applies_to once published) rather than as a country instrument.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "Udhëzime për përdorimin e IA-së gjeneruese në arsim (Ministria e Arsimit)",
+      "english_title": "Guidelines on the use of generative AI in education (Ministry of Education)",
+      "issuing_authority": "Ministry of Education",
+      "note": "Foreseen by measure 8 of the Digital Agenda for Education action plan 2025-2030 (VKM 733/2025). No published guideline found on 2026-10-13.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "Vendim nr. 606, datë 23.10.2025 “Për miratimin e Strategjisë Kombëtare për Sigurinë Kibernetike 2025–2030 dhe të planit të veprimit 2025–2027”",
+      "english_title": "National Cybersecurity Strategy 2025-2030 and Action Plan 2025-2027",
+      "issuing_authority": "Council of Ministers",
+      "note": "Mentions AI only as a tool (action 1.3.1.1 integrating AI for threat detection; 5.3.5 AI for analysing hybrid threats); no AI-security rules or guidance. Fletorja Zyrtare no. 198 of 27.10.2025. Kept as lead under the scope test.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "Ligj nr. 16/2024 “Për disa shtesa dhe ndryshime në ligjin nr. 162/2020, ‘Për prokurimin publik’”",
+      "english_title": "Law No. 16/2024 amending the Public Procurement Law 162/2020",
+      "issuing_authority": "Assembly of the Republic of Albania",
+      "note": "Requires the electronic procurement system, dynamic purchasing system and e-auction to be developed using advanced AI technology and robotic processes (FZ no. 40 of 04.03.2024). Mandates AI use in a system rather than governing AI; held as lead.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "Vendim nr. 62/2025 “Për miratimin e përbërjes dhe programit politik të Këshillit të Ministrave”",
+      "english_title": "Assembly Decision 62/2025 approving the composition and political programme of the Council of Ministers",
+      "issuing_authority": "Assembly of the Republic of Albania",
+      "note": "States that the Prime Minister holds responsibility for setting up and running the 'Virtual Minister of Artificial Intelligence Diella' and commits to AI across public administration (FZ no. 168 of 19.09.2025). No separate legal act establishing Diella's role was found on qbz.gov.al. Lead only.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "Rekomandim në lidhje me Kapitujt I, IV, V dhe VII të Draft-Konventës së Këshillit të Evropës për AI (Avokati i Popullit)",
+      "english_title": "People's Advocate recommendation on chapters I, IV, V and VII of the draft Council of Europe AI Convention",
+      "issuing_authority": "People's Advocate (Ombudsman)",
+      "note": "Official PDF on avokatipopullit.gov.al found by web search; not read (no time). Opinion on a regional treaty draft; likely out of scope.",
+      "found": "2026-10-13"
+    }
+  ]
 }
