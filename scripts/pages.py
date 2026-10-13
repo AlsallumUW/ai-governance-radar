@@ -39,6 +39,18 @@ def kind(i):
     return "binding" if i.get("legal_status") in BINDING else "soft"
 
 
+PIPE_TYPE = {"binding_law": "Law", "binding_regulation": "Regulation", "international_treaty": "Treaty",
+             "administrative_policy_mandatory_in_scope": "Mandatory policy", "administrative_guideline": "Guideline", "regulatory_opinion": "Opinion",
+             "nonbinding_guidance": "Guidance", "voluntary_code": "Code", "national_strategy": "Strategy"}
+
+
+def pipe_type(i):
+    """Type label for an item in the "Open and upcoming" list: drafts say Draft; anything else in consultation says what it is."""
+    if i.get("legal_status") == "consultation_draft": return "Draft"
+    t = PIPE_TYPE.get(i.get("legal_status"), "Document")
+    return f"{t} — open for comment" if i.get("lifecycle") == "consultation" else f"{t} — {LIFE.get(i.get('lifecycle'), 'draft').lower()}"
+
+
 KIND_LABEL = {"binding": "Binding or mandatory", "soft": "Non-binding", "draft": "Drafts"}
 KIND_CLASS = {"binding": "b", "soft": "n", "draft": "d"}
 COUNT_NOTE = ("Binding or mandatory: laws, regulations, treaties and policies mandatory within their scope · Non-binding: strategies, guidelines, "
@@ -285,7 +297,8 @@ def country_page(j, D, rec, flags, ctx):
              + (f'<p class="chips" aria-label="Memberships">{chips}</p>' if chips else "")
              + f'<ul class="facts">{"".join(treaty)}<li><span class="k">Last reviewed</span><span class="v">{e(fmt_date(narr.get("last_deep_review")) or "Not yet deep-reviewed")}</span></li></ul>'
              + '<dl class="stats">' + "".join(f'<div><dt>{k}</dt><dd>{v}</dd></div>' for k, v in stats) + '</dl>'
-             + f'<p class="stats-note">{COUNT_NOTE} Leads: documents not yet verified as in-scope instruments. Counts include state, provincial and local instruments; regional instruments are listed separately.</p></header>')
+             + f'<p class="stats-note">{COUNT_NOTE} Leads: documents not yet verified as in-scope instruments. Counts include state, provincial and local instruments; regional instruments are listed separately.</p>'
+             + f'<p class="hero-links"><a href="../../timeline/?country={e(jid)}">See this country on the timeline →</a><a href="../../analysis/">Global analysis →</a></p></header>')
     # b. overview + c. charts in a two-column grid
     ov = ""
     zero = ""
@@ -311,13 +324,14 @@ def country_page(j, D, rec, flags, ctx):
             pl += f'<li data-date="{e(c["date"])}"><time datetime="{e(c["date"])}">{e(fmt_date(c["date"]))}</time><span class="pl-kind">{e(EVENT.get(c.get("type"), c.get("type")))}</span><span class="pl-title">{e(c.get("title"))}</span></li>'
         pl += '</ol><p class="pl-none muted" hidden>No upcoming dated actions.</p>' if future else '</ol><p class="pl-none muted">No upcoming dated actions recorded.</p>'
         pl += '<div class="pl-passed" hidden><h4>Date passed since this page was built</h4><ol class="pipeline"></ol></div>'
-        if pipe_drafts: pl += '<h4>Drafts and consultations</h4><ol class="pipeline">'
+        if pipe_drafts: pl += '<h4>Drafts and documents open for comment</h4><ol class="pipeline">'
         for i in pipe_drafts[:12]:
             d = i.get("publication_date")
-            pl += f'<li><time datetime="{e(d or "")}">{e(fmt_date(d) or "Undated")}</time><span class="pl-kind">{e(LIFE.get(i.get("lifecycle"), "Draft"))}</span><span class="pl-title">{e(i.get("english_title") or i.get("official_title"))}</span></li>'
+            pl += f'<li><time datetime="{e(d or "")}">{e(fmt_date(d) or "Undated")}</time><span class="pl-kind">{e(pipe_type(i))}</span><span class="pl-title">{e(i.get("english_title") or i.get("official_title"))}</span></li>'
         if pipe_drafts: pl += '</ol>'
         more = len(future) + len(pipe_drafts) - min(12, len(future)) - min(12, len(pipe_drafts))
-        figs.append(f'<figure class="fig" id="fig-pipeline" data-asof="{e(today)}"><figcaption><h3>Pipeline <span class="asof">Upcoming as of {e(fmt_date(today))}</span></h3><p class="fig-desc">Dated government actions still ahead, then drafts or consultations not yet adopted.</p></figcaption>{pl}'
+        figs.append(f'<figure class="fig" id="fig-pipeline" data-asof="{e(today)}"><figcaption><h3>Open and upcoming <span class="asof">Upcoming as of {e(fmt_date(today))}</span></h3><p class="fig-desc">Dated government actions still ahead, then drafts and other documents still open for comment.</p></figcaption>{pl}'
+                    + ('<p class="fig-tools">Includes non-draft documents still open for comment.</p>' if any(i.get("legal_status") != "consultation_draft" for i in pipe_drafts[:12]) else "")
                     + (f'<p class="fig-tools">{more} more in the instrument list.</p>' if more > 0 else "") + '</figure>')
     H.append('<div class="lede-grid">' + (ov or '<section id="overview" class="block prose"><h2>Overview</h2><p class="muted">No narrative summary has been written for this jurisdiction yet.</p></section>')
              + '<aside id="charts" class="panels" aria-label="Charts">' + "".join(figs) + '</aside></div>')
@@ -382,7 +396,8 @@ def body_page(b, D, rec, flags, ctx):
     stats = [("Instruments", len(rows)), ("Binding or mandatory", n_bind), ("Non-binding", len(rows) - n_bind - n_draft), ("Drafts", n_draft), ("Member states", len(members))]
     H.append(f'<header class="hero" id="top"><p class="eyebrow">Regional / international body</p><h1>{e(b["name"])}</h1>'
              + '<dl class="stats">' + "".join(f'<div><dt>{k}</dt><dd>{v}</dd></div>' for k, v in stats) + '</dl>'
-             + f'<p class="stats-note">{COUNT_NOTE} Instruments are stored once for the body and listed on each country page they apply to.</p></header>')
+             + f'<p class="stats-note">{COUNT_NOTE} Instruments are stored once for the body and listed on each country page they apply to.</p>'
+             + f'<p class="hero-links"><a href="../../timeline/?body={e(bid)}">See this body and its members on the timeline →</a><a href="../../analysis/">Global analysis →</a></p></header>')
     years_svg, years_tab, undated = chart_years(rows); status_svg, status_tab = chart_status(rows)
     figs = []
     if years_svg: figs.append(figure("fig-years", "Instruments per year", "By publication year: binding or mandatory, non-binding and drafts.",
@@ -418,7 +433,7 @@ def body_page(b, D, rec, flags, ctx):
 
 def footer(D):
     return (f'<footer class="pagefoot"><p>AI Governance Radar · official government sources only · data as of {e(fmt_date(D["meta"].get("build_date")))}</p>'
-            '<p><a href="../../" id="footMap">World map</a> · <a href="../../?about=method">Methodology</a></p></footer>')
+            '<p><a href="../../" id="footMap">World map</a> · <a href="../../analysis/">Analysis</a> · <a href="../../timeline/">Timeline</a> · <a href="../../?about=method">Methodology</a></p></footer>')
 
 
 def write_all(D, recs, out, flags):
@@ -444,7 +459,7 @@ def write_all(D, recs, out, flags):
            "orgs": {o["id"]: o for o in D["organizations"]}, "srcs": {s["id"]: s for s in D["sources"]},
            "today": D["meta"].get("build_date") or dt.date.today().isoformat()}
     (out / "assets").mkdir(parents=True, exist_ok=True)
-    for f in ("country.css", "country.js"):
+    for f in ("country.css", "country.js", "analysis.css", "analysis.js", "timeline.js"):
         (out / "assets" / f).write_text((ROOT / "site" / f).read_text(encoding="utf-8"), encoding="utf-8")
     n = 0
     for rec in recs.values():
@@ -454,4 +469,6 @@ def write_all(D, recs, out, flags):
         else:
             p = out / "body" / j["id"]; html_ = body_page(j, D, rec, flags, ctx)
         p.mkdir(parents=True, exist_ok=True); (p / "index.html").write_text(html_, encoding="utf-8"); n += 1
+    import analysis
+    analysis.write(D, recs, out, ctx)
     return n
