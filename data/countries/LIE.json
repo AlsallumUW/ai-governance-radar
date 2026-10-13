@@ -10,18 +10,455 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Liechtenstein has no AI-specific law yet: the EU AI Act still awaits incorporation into the EEA Agreement and a national implementing act. Its AI governance rests on the government's 2026 AI Strategy for the national administration, the 2018 Data Protection Act, which regulates automated individual decisions and profiling, and the data protection authority's guidance on AI, chatbots and the risks of the DeepSeek service. Liechtenstein is a party to the Council of Europe's data protection convention (Convention 108).",
+    "lead_institutions": [
+      "Government of the Principality of Liechtenstein",
+      "Datenschutzstelle (Data Protection Authority)"
+    ],
+    "last_deep_review": "2026-10-13",
+    "review_notes": "This review was carried out on 12 and 13 October 2026 from the official law database, the government's and the data protection authority's websites; a run cut off by a usage limit was resumed and its downloads re-verified against the live official sources. The national administration portal (llv.li) and the financial market authority's site could not be accessed, so the education office's AI teaching guideline and the government's May 2026 reply to Parliament on AI are tracked as leads, together with the EEA incorporation of the AI Act."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-e1df8f199e52",
+      "official_title": "KI-Strategie der Liechtensteinischen Landesverwaltung",
+      "english_title": "AI Strategy of the Liechtenstein National Administration",
+      "issuing_authority": "Government of the Principality of Liechtenstein (prepared by the Task Force KI under the Ministry for General Government Affairs and Finance)",
+      "authority_type": "government",
+      "categories": [
+        "strategy",
+        "public-sector",
+        "government-governance",
+        "ethics",
+        "risk-assurance",
+        "transparency",
+        "generative-ai"
+      ],
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2026-04-21",
+      "current_status": "Adopted by the Government at its meeting of 14 April 2026 and published with the full text and a short version on 21 April 2026 (Government media release; document version 1.0, last amended 9 April 2026). It has no fixed validity period; a fundamental revision is due by 2030 at the latest. The strategy notes that the EU AI Act still awaits incorporation into the EEA Agreement and that Liechtenstein's AI Act authorities have not yet been designated (to be set out in an implementing act).",
+      "summary": "Strategy adopted by the Government for the whole Liechtenstein National Administration (LLV), setting a vision, mission and four principles (responsible, human-centred, transparent, efficient and innovative) for using AI. It sets goals and measures in four fields of action (people, organisation, governance, infrastructure), including AI training, an organisational concept with defined roles, a release and compliance process for AI tools, a uniform risk assessment and pre-classification of AI uses against the EU AI Act risk categories, an internal AI use inventory and controlled testing environments. It replaces the 2023 basic paper on AI use with a new internal 'KI-Merkblatt' and anchors the work in the EU AI Act and the Council of Europe AI Convention, which Liechtenstein signed in February 2025.",
+      "ai_governance_relevance": "First AI strategy of the Liechtenstein government; governs AI use across the national administration and prepares AI Act implementation.",
+      "source_url": "https://www.regierung.li/files/attachments/ki-strategie.pdf",
+      "official_pdf_url": "https://www.regierung.li/files/attachments/ki-strategie.pdf",
+      "official_webpage_url": "https://www.regierung.li/medienportal-medium/16182/234380/1/medienmitteilung",
+      "sectors": [
+        "public-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-5449a8d1424d",
+      "publisher_name": "Government of the Principality of Liechtenstein",
+      "jurisdiction_id": "LIE",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "strategy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Liechtenstein (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "de",
+      "verification_date": "2026-10-13",
+      "first_recorded": "2026-10-13",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-00c7e354d6d4",
+      "evidence_reference": "curl (browser user agent, --max-time 60) re-fetched 2026-10-13 (HTTP 200, application/pdf); full PDF read with pdftotext; adoption date 14 April 2026 and publication on 21 April 2026 confirmed on the Government media release (regierung.li medienportal 234380), which links the same PDF; short version at https://www.regierung.li/files/attachments/ki-strategie-kurzversion.pdf"
+    },
+    {
+      "id": "i-ce126978c910",
+      "official_title": "Datenschutzgesetz (DSG) vom 4. Oktober 2018",
+      "english_title": "Data Protection Act (DSG) of 4 October 2018",
+      "issuing_authority": "Parliament of the Principality of Liechtenstein (Landtag), with the sanction of the Reigning Prince",
+      "authority_type": "legislature",
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2018-12-07",
+      "current_status": "Published in the Landesgesetzblatt, LGBl. 2018 Nr. 272, issued 7 December 2018; in force on 1 January 2019 under art. 91 (in force on 1 January 2019 subject to the referendum period expiring unused). Consolidated version in force from 1 April 2026 on gesetze.li.",
+      "summary": "Liechtenstein's general data protection law, which implements the GDPR (applicable via the EEA) and transposes the Law Enforcement Directive (EU) 2016/680, and applies to processing by public bodies and to automated processing by private bodies. Art. 37 restricts the GDPR art. 22 right not to be subject to solely automated decisions, including profiling, permitting solely automated decisions (beyond the GDPR art. 22(2)(a) and (c) exceptions) in insurance-contract benefits, due-diligence risk assessment under the Due Diligence Act and credit business, subject to safeguards, and the Act sets the powers of the Data Protection Authority (Datenschutzstelle). It is the main national law governing the use of personal data to train and run AI systems.",
+      "ai_governance_relevance": "Data protection law governing automated decision-making, profiling and personal-data processing by AI systems.",
+      "source_url": "https://www.gesetze.li/konso/2018272000",
+      "official_pdf_url": "https://www.gesetze.li/konso/pdf/2018272000",
+      "official_webpage_url": "https://www.gesetze.li/chrono/2018272000",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-0d8acb1e9317",
+      "publisher_name": "Rechtsdienst der Regierung (Lilex legislation database)",
+      "jurisdiction_id": "LIE",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "effective_date": "2019-01-01",
+      "last_amended_date": null,
+      "scope": "Liechtenstein (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "de",
+      "verification_date": "2026-10-13",
+      "first_recorded": "2026-10-13",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-43a27f725858",
+      "evidence_reference": "curl (browser user agent, --max-time 60) re-fetched 2026-10-13 (HTTP 200) for the consolidated text and the original gazette entry (gesetze.li/chrono/2018272000); full text read; gazette line 'Jahrgang 2018 Nr. 272 ausgegeben am 7. Dezember 2018' and art. 91 commencement clause confirmed; art. 37 found via the portal's own full-text search ('automatisierte Einzelentscheidung')"
+    },
+    {
+      "id": "i-8628b163889f",
+      "official_title": "Chatbots",
+      "english_title": "Chatbots (data protection guidance)",
+      "issuing_authority": "Data Protection Authority (Datenschutzstelle)",
+      "authority_type": "regulator",
+      "categories": [
+        "data-privacy",
+        "generative-ai"
+      ],
+      "legal_status": "regulatory_opinion",
+      "lifecycle": "published",
+      "publication_date": "2023-10-27",
+      "current_status": "Published on the Authority's 'Themen A-Z' pages; announced in its news item of 27 October 2023. Page reachable on 2026-10-13.",
+      "summary": "Guidance from the Datenschutzstelle on the data protection requirements for operating chatbots, including generative AI chatbots such as ChatGPT. It requires controllers to identify the correct GDPR legal basis (art. 6(1), and art. 9(2) for special-category data), inform users transparently about all processing, and consider cookies, storage periods, sensitive data and reuse of chatbot data by processors for their own purposes.",
+      "ai_governance_relevance": "Regulator guidance on deploying AI-based chatbots in compliance with the GDPR.",
+      "source_url": "https://www.datenschutzstelle.li/datenschutz/themen-z/chatbots",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.datenschutzstelle.li/aktuelles/chatbots",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_publication",
+      "supersedes": [],
+      "organization_id": "o-e4f96cf01ba3",
+      "publisher_name": "Data Protection Authority Liechtenstein",
+      "jurisdiction_id": "LIE",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Liechtenstein (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "de",
+      "verification_date": "2026-10-13",
+      "first_recorded": "2026-10-13",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-d79c29ab875a",
+      "evidence_reference": "curl (browser user agent, --max-time 60) re-fetched 2026-10-13 (HTTP 200); full page read; date 27.10.2023 taken from the Authority's own news item 'Chatbots' (datenschutzstelle.li/aktuelles/chatbots) announcing the guidance"
+    },
+    {
+      "id": "i-e195e6ef7eda",
+      "official_title": "Künstliche Intelligenz",
+      "english_title": "Artificial Intelligence (data protection information and guidance)",
+      "issuing_authority": "Data Protection Authority (Datenschutzstelle)",
+      "authority_type": "regulator",
+      "categories": [
+        "data-privacy",
+        "generative-ai"
+      ],
+      "legal_status": "regulatory_opinion",
+      "lifecycle": "published",
+      "publication_date": "2023-05-09",
+      "current_status": "Published on the Authority's 'Themen A-Z' pages; announced in its news item of 9 May 2023. Page reachable on 2026-10-13.",
+      "summary": "Information article by the Datenschutzstelle explaining AI and generative AI systems (e.g. ChatGPT), their opportunities and risks, and how they interact with data protection law. It states that a fully data-protection-compliant, risk-free use of public cloud-based generative AI with personal data is not yet possible and advises users, as an interim rule, not to enter personal data or other sensitive data (professional or business secrets) into such systems, especially large language models.",
+      "ai_governance_relevance": "Regulator's interim guidance on personal data in generative AI tools.",
+      "source_url": "https://www.datenschutzstelle.li/datenschutz/themen-z/kuenstliche-intelligenz",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.datenschutzstelle.li/aktuelles/kuenstliche-intelligenz",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_publication",
+      "supersedes": [],
+      "organization_id": "o-e4f96cf01ba3",
+      "publisher_name": "Data Protection Authority Liechtenstein",
+      "jurisdiction_id": "LIE",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Liechtenstein (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "de",
+      "verification_date": "2026-10-13",
+      "first_recorded": "2026-10-13",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-fc19715c726e",
+      "evidence_reference": "curl (browser user agent, --max-time 60) re-fetched 2026-10-13 (HTTP 200); full page read; date 09.05.2023 taken from the Authority's own news item 'Künstliche Intelligenz' (datenschutzstelle.li/aktuelles/kuenstliche-intelligenz)"
+    },
+    {
+      "id": "i-f42378a1a9a2",
+      "official_title": "Wichtiger Hinweis: Risiken bei der Nutzung von DeepSeek",
+      "english_title": "Important notice: risks of using DeepSeek",
+      "issuing_authority": "Data Protection Authority (Datenschutzstelle)",
+      "authority_type": "regulator",
+      "categories": [
+        "data-privacy",
+        "generative-ai"
+      ],
+      "legal_status": "regulatory_opinion",
+      "lifecycle": "published",
+      "publication_date": "2025-02-13",
+      "current_status": "News notice dated 13.02.2025 on the Authority's website; reachable on 2026-10-13.",
+      "summary": "Notice from the Datenschutzstelle warning that the generative AI model DeepSeek R1 poses serious data protection risks because prompts may be recorded and processed without adequate safeguards, processing takes place in China and the provider has no EU/EEA representative. It recommends not installing the DeepSeek model in any IT environment, never entering personal or confidential data in its online interface, and preferring AI tools that comply with the GDPR and the AI Act.",
+      "ai_governance_relevance": "Regulator advice on a specific generative AI model.",
+      "source_url": "https://www.datenschutzstelle.li/aktuelles/wichtiger-hinweis-risiken-bei-der-nutzung-von-deepseek",
+      "official_pdf_url": null,
+      "official_webpage_url": null,
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_publication",
+      "supersedes": [],
+      "organization_id": "o-e4f96cf01ba3",
+      "publisher_name": "Data Protection Authority Liechtenstein",
+      "jurisdiction_id": "LIE",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Liechtenstein (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "de",
+      "verification_date": "2026-10-13",
+      "first_recorded": "2026-10-13",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-1b1e2bc0ffd1",
+      "evidence_reference": "curl (browser user agent, --max-time 60) re-fetched 2026-10-13 (HTTP 200); full notice read; date 13.02.2025 printed on the page"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-5449a8d1424d",
+      "jurisdiction_id": "LIE",
+      "name": "Government of the Principality of Liechtenstein",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Regierung des Fürstentums Liechtenstein; adopted the AI strategy of the national administration (14 April 2026) and the 2023 rolling basic paper on AI use in the administration; its Stabsstelle für Digitale Innovation leads EEA incorporation and national implementation of the EU AI Act.",
+      "source_url": "https://www.regierung.li/",
+      "authority_type": "government",
+      "government_level": "national"
+    },
+    {
+      "id": "o-e4f96cf01ba3",
+      "jurisdiction_id": "LIE",
+      "name": "Data Protection Authority Liechtenstein",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Datenschutzstelle (DSS), the national data protection supervisory authority under the GDPR and the Data Protection Act; publishes guidance on AI, chatbots and generative AI tools.",
+      "source_url": "https://www.datenschutzstelle.li/",
+      "authority_type": "regulator",
+      "government_level": "national"
+    },
+    {
+      "id": "o-0d8acb1e9317",
+      "jurisdiction_id": "LIE",
+      "name": "Parliament of the Principality of Liechtenstein",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Landtag; enacted the Data Protection Act 2018 and received an October 2025 interpellation on AI, cloud computing and technological infrastructure.",
+      "source_url": "https://www.landtag.li/",
+      "authority_type": "legislature",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-00c7e354d6d4",
+      "url": "https://www.regierung.li/files/attachments/ki-strategie.pdf",
+      "jurisdiction_ids": [
+        "LIE"
+      ],
+      "source_institutions": [
+        "Government of the Principality of Liechtenstein"
+      ],
+      "instrument_ids": [
+        "i-e1df8f199e52"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "public-sector",
+        "government-governance",
+        "ethics",
+        "risk-assurance",
+        "transparency",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl (browser user agent, --max-time 60) re-fetched 2026-10-13 (HTTP 200, application/pdf); full PDF read with pdftotext; adoption date 14 April 2026 and publication on 21 April 2026 confirmed on the Government media release (regierung.li medienportal 234380), which links the same PDF; short version at https://www.regierung.li/files/attachments/ki-strategie-kurzversion.pdf",
+      "http_status": 200,
+      "final_url": "https://www.regierung.li/files/attachments/ki-strategie.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "de",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-43a27f725858",
+      "url": "https://www.gesetze.li/konso/2018272000",
+      "jurisdiction_ids": [
+        "LIE"
+      ],
+      "source_institutions": [
+        "Rechtsdienst der Regierung (Lilex legislation database)"
+      ],
+      "instrument_ids": [
+        "i-ce126978c910"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl (browser user agent, --max-time 60) re-fetched 2026-10-13 (HTTP 200) for the consolidated text and the original gazette entry (gesetze.li/chrono/2018272000); full text read; gazette line 'Jahrgang 2018 Nr. 272 ausgegeben am 7. Dezember 2018' and art. 91 commencement clause confirmed; art. 37 found via the portal's own full-text search ('automatisierte Einzelentscheidung')",
+      "http_status": 200,
+      "final_url": "https://www.gesetze.li/konso/2018272000",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "de",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-d79c29ab875a",
+      "url": "https://www.datenschutzstelle.li/datenschutz/themen-z/chatbots",
+      "jurisdiction_ids": [
+        "LIE"
+      ],
+      "source_institutions": [
+        "Data Protection Authority Liechtenstein"
+      ],
+      "instrument_ids": [
+        "i-8628b163889f"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl (browser user agent, --max-time 60) re-fetched 2026-10-13 (HTTP 200); full page read; date 27.10.2023 taken from the Authority's own news item 'Chatbots' (datenschutzstelle.li/aktuelles/chatbots) announcing the guidance",
+      "http_status": 200,
+      "final_url": "https://www.datenschutzstelle.li/datenschutz/themen-z/chatbots",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "de",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-fc19715c726e",
+      "url": "https://www.datenschutzstelle.li/datenschutz/themen-z/kuenstliche-intelligenz",
+      "jurisdiction_ids": [
+        "LIE"
+      ],
+      "source_institutions": [
+        "Data Protection Authority Liechtenstein"
+      ],
+      "instrument_ids": [
+        "i-e195e6ef7eda"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl (browser user agent, --max-time 60) re-fetched 2026-10-13 (HTTP 200); full page read; date 09.05.2023 taken from the Authority's own news item 'Künstliche Intelligenz' (datenschutzstelle.li/aktuelles/kuenstliche-intelligenz)",
+      "http_status": 200,
+      "final_url": "https://www.datenschutzstelle.li/datenschutz/themen-z/kuenstliche-intelligenz",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "de",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-1b1e2bc0ffd1",
+      "url": "https://www.datenschutzstelle.li/aktuelles/wichtiger-hinweis-risiken-bei-der-nutzung-von-deepseek",
+      "jurisdiction_ids": [
+        "LIE"
+      ],
+      "source_institutions": [
+        "Data Protection Authority Liechtenstein"
+      ],
+      "instrument_ids": [
+        "i-f42378a1a9a2"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl (browser user agent, --max-time 60) re-fetched 2026-10-13 (HTTP 200); full notice read; date 13.02.2025 printed on the page",
+      "http_status": 200,
+      "final_url": "https://www.datenschutzstelle.li/aktuelles/wichtiger-hinweis-risiken-bei-der-nutzung-von-deepseek",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "de",
+      "error": null,
+      "content_type": "text/html"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "LIE",
     "country": "Liechtenstein",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -33,55 +470,306 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_with_findings": [
       "binding-law",
-      "strategy",
-      "government-governance",
+      "data-privacy",
       "ethics",
-      "risk-assurance",
+      "generative-ai",
+      "government-governance",
       "public-sector",
+      "risk-assurance",
+      "strategy",
+      "transparency"
+    ],
+    "categories_where_no_material_was_found": [
       "procurement",
       "cyber-security",
-      "data-privacy",
-      "transparency",
       "standards",
       "sandbox",
       "index-readiness",
       "sectoral",
-      "generative-ai",
       "drafts",
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Liechtenstein \"künstliche Intelligenz\" (Strategie OR Regulierung OR Ethik) government ministry official",
       "Liechtenstein \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Liechtenstein government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Liechtenstein \"künstliche Intelligenz\" cybersecurity authority secure development safety guidelines",
-      "Liechtenstein privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Liechtenstein privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "gesetze.li Volltext: \"künstliche Intelligenz\"",
+      "gesetze.li Volltext: \"künstlicher Intelligenz\"",
+      "gesetze.li Volltext: KI-System",
+      "gesetze.li Volltext: Deepfake",
+      "gesetze.li Volltext: \"automatisierte Einzelentscheidung\"",
+      "gesetze.li Volltext: Algorithmus",
+      "gesetze.li Volltext: \"2024/1689\"",
+      "regierung.li Medienmitteilungen KI / Künstliche Intelligenz",
+      "regierung.li Im Fokus KI-Strategie der Landesverwaltung",
+      "datenschutzstelle.li Aktuelles / Themen A-Z: Künstliche Intelligenz, Chatbots, Profiling, DeepSeek",
+      "Liechtenstein Künstliche Intelligenz FMA Wegleitung OR Mitteilung KI fma-li.li",
+      "Liechtenstein Vernehmlassungsbericht KI-Verordnung Durchführungsgesetz Künstliche Intelligenz 2026",
+      "Landtag Liechtenstein Interpellation Künstliche Intelligenz Cloud-Computing Interpellationsbeantwortung 2026",
+      "Schulamt Liechtenstein Künstliche Intelligenz Leitfaden Schulen KI Unterricht llv.li",
+      "Digitale Agenda Liechtenstein 2019 Regierung pdf künstliche Intelligenz",
+      "Stabsstelle Cyber-Sicherheit Liechtenstein künstliche Intelligenz Empfehlung OR Amt für Kommunikation KI-Verordnung zuständige Behörde",
+      "site:fma-li.li künstliche Intelligenz"
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-13",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-13, one agent, national level only (PROTOCOL §6), about 25-minute time box. llv.li HTTP 403 (curl and WebFetch) - blocks Schulamt, Stabsstelle Cyber-Sicherheit, Amt für Kommunikation, bua.llv.li; fma-li.li reset (homepage via WebFetch only). Resumed run: no earlier fragment; downloads re-verified 2026-10-13. AI Strategy addresses the national administration (filed national_strategy). DSG in force 2019-01-01 per art. 91. English organisation names not confirmed as official usage. Convention 108: LGBl. 2004 Nr. 167 (12 Aug 2004), Landtag consent 11 Mar 2004, in force 1 Sep 2004. Units covered: Law: gesetze.li (Lilex) full-text searches for AI, KI-System, deepfake, automated decisions, algorithm and AI Act number: only the Data Protection Act carries AI-relevant provisions (art. 37); no AI law, deepfake offence or AI Act implementing act. landtag.li: AI interpellation (Oct 2025) found; no AI bill.; Government: regierung.li: AI Strategy of the National Administration (2026) recorded; 2023 basic paper and 2026 interpellation reply held as leads (no public text / llv.li blocked). Digitale Agenda 2019 not located as an official full text; searched, no AI-specific instrument found.; Ministries: Ministry pages on regierung.li searched via media releases; education (Schulamt AI teaching guideline) found but unreadable (llv.li 403) - lead. Health, justice, finance, labour, interior, defence: searched, nothing found.; Regulators: Datenschutzstelle: three AI guidance items recorded, Meta/LinkedIn AI-training notices as lead. FMA: homepage read via WebFetch, nothing AI-specific (curl reset). Amt für Kommunikation, Stabsstelle Cyber-Sicherheit: searched, nothing AI-specific found (llv.li blocked).. Not reached: llv.li (Landesverwaltung incl. Schulamt, Stabsstelle Cyber-Sicherheit, Amt für Kommunikation, bua.llv.li): HTTP 403 to curl and WebFetch; fma-li.li: curl connection reset; only homepage read via WebFetch. Could not verify: Schulamt AI teaching guideline (llv.li 403); Interpellation reply of 12 May 2026 (bua.llv.li 403); 2023 rolling basic paper / KI-Merkblatt (no public text); FMA AI-specific publications (site partly unreachable). procurement, cyber-security, standards, sandbox, index-readiness, sectoral, drafts, international, historical: no material found.",
     "discovery_result_count": 11,
     "focused_result_count": 12
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-8011a043a4fe",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "LIE",
+      "instrument_id": "i-e1df8f199e52",
+      "title": "AI Strategy of the Liechtenstein National Administration",
+      "detail": "Added to the radar (published 2026-04-21).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.regierung.li/files/attachments/ki-strategie.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-2b2f619e2231",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "LIE",
+      "instrument_id": "i-ce126978c910",
+      "title": "Data Protection Act (DSG) of 4 October 2018",
+      "detail": "Added to the radar (published 2018-12-07).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.gesetze.li/konso/2018272000",
+      "needs_review": false
+    },
+    {
+      "id": "c-d07d13860bfa",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "LIE",
+      "instrument_id": "i-8628b163889f",
+      "title": "Chatbots (data protection guidance)",
+      "detail": "Added to the radar (published 2023-10-27).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.datenschutzstelle.li/datenschutz/themen-z/chatbots",
+      "needs_review": false
+    },
+    {
+      "id": "c-1d493b6553c7",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "LIE",
+      "instrument_id": "i-e195e6ef7eda",
+      "title": "Artificial Intelligence (data protection information and guidance)",
+      "detail": "Added to the radar (published 2023-05-09).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.datenschutzstelle.li/datenschutz/themen-z/kuenstliche-intelligenz",
+      "needs_review": false
+    },
+    {
+      "id": "c-3f2b76c3b2cb",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "LIE",
+      "instrument_id": "i-f42378a1a9a2",
+      "title": "Important notice: risks of using DeepSeek",
+      "detail": "Added to the radar (published 2025-02-13).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.datenschutzstelle.li/aktuelles/wichtiger-hinweis-risiken-bei-der-nutzung-von-deepseek",
+      "needs_review": false
+    },
+    {
+      "id": "c-fe1be7d2a28c",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "LIE",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 5 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-7f8f851fe203",
+      "date": "2026-04-21",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "LIE",
+      "instrument_id": "i-e1df8f199e52",
+      "title": "AI Strategy of the National Administration published",
+      "detail": "Full text and short version published with the Government media release of 21 April 2026.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.regierung.li/medienportal-medium/16182/234380/1/medienmitteilung",
+      "needs_review": false
+    },
+    {
+      "id": "c-aa41f88dfb3f",
+      "date": "2026-04-14",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "LIE",
+      "instrument_id": "i-e1df8f199e52",
+      "title": "Government adopts the AI Strategy of the National Administration",
+      "detail": "Adopted at the Government meeting of 14 April 2026 (media release of 21 April 2026).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.regierung.li/medienportal-medium/16182/234380/1/medienmitteilung",
+      "needs_review": false
+    },
+    {
+      "id": "c-047e1ca61c6e",
+      "date": "2025-02-13",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "LIE",
+      "instrument_id": "i-f42378a1a9a2",
+      "title": "Data Protection Authority warns about DeepSeek",
+      "detail": "Notice of 13 February 2025.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.datenschutzstelle.li/aktuelles/wichtiger-hinweis-risiken-bei-der-nutzung-von-deepseek",
+      "needs_review": false
+    },
+    {
+      "id": "c-9cdbb439171f",
+      "date": "2023-10-27",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "LIE",
+      "instrument_id": "i-8628b163889f",
+      "title": "Data Protection Authority publishes chatbot guidance",
+      "detail": "News item of 27 October 2023.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.datenschutzstelle.li/aktuelles/chatbots",
+      "needs_review": false
+    },
+    {
+      "id": "c-1c57dc55d4fd",
+      "date": "2023-05-09",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "LIE",
+      "instrument_id": "i-e195e6ef7eda",
+      "title": "Data Protection Authority publishes AI information article",
+      "detail": "News item of 9 May 2023.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.datenschutzstelle.li/aktuelles/kuenstliche-intelligenz",
+      "needs_review": false
+    },
+    {
+      "id": "c-aa1acf5ec762",
+      "date": "2019-01-01",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "LIE",
+      "instrument_id": "i-ce126978c910",
+      "title": "Data Protection Act enters into force",
+      "detail": "In force on 1 January 2019 under art. 91.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.gesetze.li/konso/2018272000",
+      "needs_review": false
+    },
+    {
+      "id": "c-d7e2303778d0",
+      "date": "2018-12-07",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "LIE",
+      "instrument_id": "i-ce126978c910",
+      "title": "Data Protection Act published (LGBl. 2018 Nr. 272)",
+      "detail": "Issued in the Landesgesetzblatt on 7 December 2018.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.gesetze.li/chrono/2018272000",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Rollierendes Grundlagenpapier bei der Verwendung von Künstlicher Intelligenz (KI) in der Landesverwaltung (2023), since revised as the internal 'KI-Merkblatt'",
+      "english_title": "Rolling basic paper on the use of AI in the National Administration (now the AI fact sheet)",
+      "issuing_authority": "Government of the Principality of Liechtenstein",
+      "note": "Adopted by the Government on 28 November 2023 (media release of 1 December 2023, regierung.li medienportal 231488): sets principles, conduct rules for staff and prohibited use cases. The AI Strategy (2026) says it was revised into an internal 'KI-Merkblatt' published LLV-wide, with FAQ and a Microsoft Copilot basic paper. No public full text found on regierung.li; llv.li returned HTTP 403 to curl and WebFetch. Record (administrative_policy_mandatory_in_scope, public-sector) if a public text appears.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "Interpellationsbeantwortung betreffend Künstliche Intelligenz (KI), Cloud-Computing und technologische Infrastruktur",
+      "english_title": "Government reply to the interpellation on AI, cloud computing and technological infrastructure",
+      "issuing_authority": "Government of the Principality of Liechtenstein",
+      "note": "Adopted by the Government on 12 May 2026 (media release regierung.li medienportal 234435): risk-based, stepwise approach; AI only as decision support, no fully automated decisions with legal effect; regulatory sandboxes for SMEs. Full text on bua.llv.li, which returned HTTP 403 (bot challenge) to curl and WebFetch. The interpellation itself (20 October 2025) is at https://www.landtag.li/files/attachments/interpellation-betreffend-kuenstliche-intelligenz-ki-o-u-.pdf. Assess once readable.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "Einsatz Künstlicher Intelligenz (KI) im Unterricht – Leitfaden für Lehr- und Schulpersonal",
+      "english_title": "Use of AI in teaching – guideline for teaching and school staff",
+      "issuing_authority": "Schulamt (Office of Education)",
+      "note": "Official document on llv.li (https://www.llv.li/serviceportal2/amtsstellen/schulamt/richtlinien/ki_leitfaden-fuer-den-unterricht_2026_fin.pdf); search snippets indicate it is dated April 2026 and rules out pupils' use of freely accessible AI tools in class. curl and WebFetch both returned HTTP 403, so title, date and content could not be confirmed from the document. Record as administrative_guideline / sectoral (education) once readable.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "EEA incorporation of Regulation (EU) 2024/1689 (AI Act) and national implementing act (Durchführungsgesetz)",
+      "english_title": "EEA incorporation of the AI Act and national implementing law",
+      "issuing_authority": "Government of the Principality of Liechtenstein (Stabsstelle für Digitale Innovation)",
+      "note": "The AI Strategy (April 2026) states the AI Act is not yet incorporated into the EEA Agreement and that competent authorities are not yet designated; roles are to be set in an implementing act. No bill, consultation report or gazette entry found on gesetze.li (searches 'künstliche Intelligenz', '2024/1689', 'KI-System') or regierung.li. Watch for a Vernehmlassungsbericht and the EEA Joint Committee decision.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "Wichtiger Hinweis: KI-Training durch Meta / LinkedIn – Widerspruch",
+      "english_title": "Important notices: AI training by Meta (objection by 26 May 2025) and LinkedIn (objection by 2 November 2025)",
+      "issuing_authority": "Data Protection Authority (Datenschutzstelle)",
+      "note": "Consumer notices on datenschutzstelle.li/aktuelles explaining how to object to the use of personal data for AI training by Meta and LinkedIn. Short time-bound advisories; kept as leads, not records.",
+      "found": "2026-10-13"
+    }
+  ]
 }
