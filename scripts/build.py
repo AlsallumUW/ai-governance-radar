@@ -14,7 +14,7 @@ def assemble():
     recs = load_all()
     D = {"meta": meta["meta"], "categories": meta["categories"], "jurisdictions": [], "instruments": [],
          "organizations": [], "sources": [], "regional_applicability": [], "instrument_relationships": load(DATA / "relationships.json"),
-         "coverage_audit": [], "changes": list(load(DATA / "changes-global.json")), "narratives": {}}
+         "coverage_audit": [], "changes": list(load(DATA / "changes-global.json")), "narratives": {}, "regional_members": {}}
     order = sorted(recs.values(), key=lambda r: (r["jurisdiction"]["type"] != "country", r["jurisdiction"]["name"]))
     for r in order:
         j = r["jurisdiction"]
@@ -25,6 +25,7 @@ def assemble():
         if r.get("coverage_audit"): D["coverage_audit"].append(r["coverage_audit"])
         D["changes"] += r.get("changes", [])
         if r.get("narrative"): D["narratives"][j["id"]] = r["narrative"]
+        if j["type"] != "country" and r.get("members"): D["regional_members"][j["id"]] = r["members"]
     # regional / international instruments apply to each member country (EU AI Act -> all 27, etc.)
     D["regional_applicability"] = []
     for r in order:
