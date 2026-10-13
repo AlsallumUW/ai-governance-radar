@@ -297,7 +297,8 @@ def country_page(j, D, rec, flags, ctx):
              + (f'<p class="chips" aria-label="Memberships">{chips}</p>' if chips else "")
              + f'<ul class="facts">{"".join(treaty)}<li><span class="k">Last reviewed</span><span class="v">{e(fmt_date(narr.get("last_deep_review")) or "Not yet deep-reviewed")}</span></li></ul>'
              + '<dl class="stats">' + "".join(f'<div><dt>{k}</dt><dd>{v}</dd></div>' for k, v in stats) + '</dl>'
-             + f'<p class="stats-note">{COUNT_NOTE} Leads: documents not yet verified as in-scope instruments. Counts include state, provincial and local instruments; regional instruments are listed separately.</p></header>')
+             + f'<p class="stats-note">{COUNT_NOTE} Leads: documents not yet verified as in-scope instruments. Counts include state, provincial and local instruments; regional instruments are listed separately.</p>'
+             + f'<p class="hero-links"><a href="../../timeline/?country={e(jid)}">See this country on the timeline →</a><a href="../../analysis/">Global analysis →</a></p></header>')
     # b. overview + c. charts in a two-column grid
     ov = ""
     zero = ""
@@ -395,7 +396,8 @@ def body_page(b, D, rec, flags, ctx):
     stats = [("Instruments", len(rows)), ("Binding or mandatory", n_bind), ("Non-binding", len(rows) - n_bind - n_draft), ("Drafts", n_draft), ("Member states", len(members))]
     H.append(f'<header class="hero" id="top"><p class="eyebrow">Regional / international body</p><h1>{e(b["name"])}</h1>'
              + '<dl class="stats">' + "".join(f'<div><dt>{k}</dt><dd>{v}</dd></div>' for k, v in stats) + '</dl>'
-             + f'<p class="stats-note">{COUNT_NOTE} Instruments are stored once for the body and listed on each country page they apply to.</p></header>')
+             + f'<p class="stats-note">{COUNT_NOTE} Instruments are stored once for the body and listed on each country page they apply to.</p>'
+             + f'<p class="hero-links"><a href="../../timeline/?body={e(bid)}">See this body and its members on the timeline →</a><a href="../../analysis/">Global analysis →</a></p></header>')
     years_svg, years_tab, undated = chart_years(rows); status_svg, status_tab = chart_status(rows)
     figs = []
     if years_svg: figs.append(figure("fig-years", "Instruments per year", "By publication year: binding or mandatory, non-binding and drafts.",
@@ -431,7 +433,7 @@ def body_page(b, D, rec, flags, ctx):
 
 def footer(D):
     return (f'<footer class="pagefoot"><p>AI Governance Radar · official government sources only · data as of {e(fmt_date(D["meta"].get("build_date")))}</p>'
-            '<p><a href="../../" id="footMap">World map</a> · <a href="../../?about=method">Methodology</a></p></footer>')
+            '<p><a href="../../" id="footMap">World map</a> · <a href="../../analysis/">Analysis</a> · <a href="../../timeline/">Timeline</a> · <a href="../../?about=method">Methodology</a></p></footer>')
 
 
 def write_all(D, recs, out, flags):
@@ -457,7 +459,7 @@ def write_all(D, recs, out, flags):
            "orgs": {o["id"]: o for o in D["organizations"]}, "srcs": {s["id"]: s for s in D["sources"]},
            "today": D["meta"].get("build_date") or dt.date.today().isoformat()}
     (out / "assets").mkdir(parents=True, exist_ok=True)
-    for f in ("country.css", "country.js"):
+    for f in ("country.css", "country.js", "analysis.css", "analysis.js", "timeline.js"):
         (out / "assets" / f).write_text((ROOT / "site" / f).read_text(encoding="utf-8"), encoding="utf-8")
     n = 0
     for rec in recs.values():
@@ -467,4 +469,6 @@ def write_all(D, recs, out, flags):
         else:
             p = out / "body" / j["id"]; html_ = body_page(j, D, rec, flags, ctx)
         p.mkdir(parents=True, exist_ok=True); (p / "index.html").write_text(html_, encoding="utf-8"); n += 1
+    import analysis
+    analysis.write(D, recs, out, ctx)
     return n
