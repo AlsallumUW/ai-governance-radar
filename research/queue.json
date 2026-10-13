@@ -743,14 +743,19 @@
           "IRN",
           "TUR"
         ],
-        "workload": 28.5,
+        "workload": 33.5,
         "regional": [
           "EU",
           "GCC",
           "AU",
           "ASEAN",
           "COE",
-          "UNESCO"
+          "UNESCO",
+          "OECD",
+          "ICESCO",
+          "ALECSO",
+          "G7",
+          "G20"
         ]
       },
       {
@@ -976,7 +981,36 @@
         ],
         "workload": 33.5
       }
-    ]
+    ],
+    "monday_leads": {
+      "note": "Leads on regional and international bodies retried on every Monday run (WEEKLY.md step 5). Promote a lead only from an official text with its date as printed; otherwise record 'still pending' and why in the PR.",
+      "items": [
+        {
+          "body": "G20",
+          "lead": "G20 Osaka Leaders' Declaration (28-29 June 2019), in which leaders welcomed the G20 AI Principles",
+          "where": "Japan's Ministry of Foreign Affairs (mofa.go.jp) or another official G20 presidency or member-government site",
+          "why_pending": "mofa.go.jp returned 403"
+        },
+        {
+          "body": "ALECSO",
+          "lead": "Approval of the ALECSO Charter on AI Ethics by member-state representatives (17 June 2025)",
+          "where": "alecso.org: meeting report or decision text",
+          "why_pending": "reported only in an ALECSO news item"
+        },
+        {
+          "body": "ICESCO",
+          "lead": "Adoption of the Riyadh Charter on AI for the Islamic World by the ICESCO Executive Council (45th session, Tunis, February 2025) and General Conference (15th session, Kazan, May 2026)",
+          "where": "icesco.org: final report or decisions of the session",
+          "why_pending": "reported only in ICESCO news items"
+        },
+        {
+          "body": "LAS",
+          "lead": "League of Arab States AI texts: Arab AI Strategy and Arab Ethical Charter for AI (Council of Arab Ministers of Communications and Information)",
+          "where": "las.int",
+          "why_pending": "las.int could not be reached; known only from news. Add the League as a body only with an official member list and an official text"
+        }
+      ]
+    }
   },
   "amendment_dates": [
     {
