@@ -19,6 +19,8 @@ You are running today's part of the weekly update of the AI Governance Radar rep
    - Run sub-agents in parallel, each taking a slice of the group. Give each one PROTOCOL.md in full and the rules below.
    - Set `coverage_audit.last_sweep` to today for every country checked.
 5. **Day 1 only: regional bodies** (WEEKLY.md step 5). Keep CETS 225 `party_status` in `data/regional/COE.json` current.
+   - For OECD, ICESCO, ALECSO, G7 and G20, check new or revised AI instruments on the body's own official site and membership changes; for the OECD, also new adherents to the AI Recommendation (update `adherents` and `applies_to` like CETS 225).
+   - Retry each lead in `research/queue.json` → `sweep_days.monday_leads` once (Osaka G20 Leaders' Declaration, ALECSO 17 June 2025 approval, ICESCO adoption of the Riyadh Charter, League of Arab States AI texts on las.int).
 6. **Retry and Convention 108 in today's group** (WEEKLY.md step 6).
    - Try each of today's countries that is on `retry` once, and record which now load and what changed.
    - Try each of today's countries on `pending_c108` once.
