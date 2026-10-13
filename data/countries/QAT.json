@@ -283,59 +283,6 @@
       "organization_id": "o-35e6a843c97e"
     },
     {
-      "id": "i-15400059964b",
-      "official_title": "AI Guidelines for Developers",
-      "english_title": "MCIT AI Guidelines for Developers",
-      "jurisdiction_id": "QAT",
-      "issuing_authority": "Ministry of Communications and Information Technology (MCIT)",
-      "publisher_name": "Ministry of Communications and Information Technology (MCIT)",
-      "authority_type": null,
-      "government_level": "national",
-      "categories": [
-        "ethics",
-        "risk-assurance"
-      ],
-      "category": "ethics",
-      "subcategory": null,
-      "legal_status": "nonbinding_guidance",
-      "publication_date": "2025-05",
-      "effective_date": null,
-      "last_amended_date": null,
-      "current_status": "Published May 2025 (upload path) as the developer companion to the MCIT ethical AI principles. mcit.gov.qa returns server errors to automated reading.",
-      "scope": null,
-      "sectors": [],
-      "technology_scope": [
-        "AI"
-      ],
-      "summary": "MCIT guidance for organisations that develop AI systems, published as a companion to its ethical AI principles. Detailed content could not be re-read in this review (site errors) and should be confirmed from the document.",
-      "ai_governance_relevance": "Primary-source material for assessing ethics, risk-assurance.",
-      "source_url": "https://www.mcit.gov.qa/wp-content/uploads/sites/4/2025/05/AI-Guidelines-Developers_-EN.pdf",
-      "official_pdf_url": "https://www.mcit.gov.qa/wp-content/uploads/sites/4/2025/05/AI-Guidelines-Developers_-EN.pdf",
-      "official_webpage_url": null,
-      "language": "en",
-      "supersedes": [],
-      "superseded_by": [],
-      "related_instruments": [],
-      "regional_applicability": [],
-      "verification_date": "2026-10-06",
-      "verification_level": "primary_source_located",
-      "metadata_gaps": [
-        "Content to be confirmed from the document",
-        "Content to be re-read from the document",
-        "Exact day of publication"
-      ],
-      "source_kind": "official_document",
-      "evidence_reference": "deep-review-2026-10-06",
-      "link_status": "inaccessible",
-      "document_access_type": "original_government_document",
-      "lifecycle": "published",
-      "first_recorded": "2026-10-06",
-      "last_changed": null,
-      "subnational_unit": null,
-      "source_id": "s-83e9e7c18c7b",
-      "organization_id": "o-35e6a843c97e"
-    },
-    {
       "id": "i-eced60140ebc",
       "official_title": "National Artificial Intelligence Policy",
       "english_title": "National Artificial Intelligence Policy (consultation draft)",
@@ -612,33 +559,6 @@
       "content_type": null
     },
     {
-      "id": "s-83e9e7c18c7b",
-      "url": "https://www.mcit.gov.qa/wp-content/uploads/sites/4/2025/05/AI-Guidelines-Developers_-EN.pdf",
-      "jurisdiction_ids": [
-        "QAT"
-      ],
-      "source_institutions": [
-        "Ministry of Communications and Information Technology (MCIT)"
-      ],
-      "instrument_ids": [
-        "i-15400059964b"
-      ],
-      "categories_reviewed": [
-        "ethics",
-        "risk-assurance"
-      ],
-      "date_reviewed": "2026-10-06",
-      "checked_date": "2026-10-06",
-      "check_method": "Located through official listing; automated read blocked",
-      "http_status": null,
-      "final_url": "https://www.mcit.gov.qa/wp-content/uploads/sites/4/2025/05/AI-Guidelines-Developers_-EN.pdf",
-      "link_status": "inaccessible",
-      "page_title": null,
-      "document_language": "en",
-      "error": "Automated access blocked (robots/403/500)",
-      "content_type": null
-    },
-    {
       "id": "s-4644ac2ed5b4",
       "url": "https://www.sharek.gov.qa/en/articles/open-policy-consultation/national-artificial-intelligence-policy/693e55bdda9b7524b3e10a5e",
       "jurisdiction_ids": [
@@ -775,6 +695,21 @@
   },
   "changes": [
     {
+      "id": "c-68d10333b390",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "removed",
+      "jurisdiction_id": "QAT",
+      "instrument_id": "i-15400059964b",
+      "title": "MCIT AI Guidelines for Developers",
+      "detail": "Removed from the radar (not an official source, duplicate, or out of scope).",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
       "id": "c-f6af7f70978d",
       "date": "2026-10-06",
       "recorded": "2026-10-06",
@@ -850,21 +785,6 @@
       "needs_review": false
     },
     {
-      "id": "c-0438918acdf1",
-      "date": "2026-10-06",
-      "recorded": "2026-10-06",
-      "kind": "radar",
-      "type": "corrected",
-      "jurisdiction_id": "QAT",
-      "instrument_id": "i-15400059964b",
-      "title": "MCIT AI Guidelines for Developers",
-      "detail": "Record updated: categories, issuing authority, legal status, lifecycle, publication date, summary, title.",
-      "from": null,
-      "to": null,
-      "source_url": null,
-      "needs_review": false
-    },
-    {
       "id": "c-bceb5061138f",
       "date": "2026-10-06",
       "recorded": "2026-10-06",
@@ -932,6 +852,13 @@
       "issuing_authority": "National Cyber Security Agency (NCSA)",
       "note": "Launched February 2024 (bilingual). No official download located on ncsa.gov.qa; add once found.",
       "found": "2026-10-06"
+    },
+    {
+      "title": "AI Guidelines for Developers",
+      "english_title": "MCIT AI Guidelines for Developers",
+      "issuing_authority": "Ministry of Communications and Information Technology (MCIT)",
+      "note": "Moved from records by the date audit (2026-10-13): no publication date is stated by the issuer. PDF returns HTTP 500 (curl and WebFetch); mcit.gov.qa/en/ returns 403. Note: current value comes only from the /2025/05/ upload path, not from any issuer text. The issuer could not be reached and the recorded date rested on a file name, upload path or page metadata, which are not valid date sources. Official URL: https://www.mcit.gov.qa/wp-content/uploads/sites/4/2025/05/AI-Guidelines-Developers_-EN.pdf. Previously recorded as nonbinding_guidance, publication_date 2025-05.",
+      "found": "2026-10-13"
     }
   ]
 }
