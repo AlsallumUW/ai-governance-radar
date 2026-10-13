@@ -10,18 +10,195 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "Tonga has no AI strategy or AI-specific law. AI is covered by two 2025 Acts: the Computer Crimes Act, in force since October 2025, which defines AI and deepfakes and criminalises harmful electronic communications including intimate recordings made with generative AI; and the Privacy Act, enacted in December 2025 but not yet in force, which gives a right not to be subject to decisions based solely on automated processing and a right to object to profiling.",
+    "lead_institutions": [
+      "Attorney General's Office",
+      "Digital Transformation Department (MEIDECC)"
+    ],
+    "last_deep_review": "2026-10-13",
+    "review_notes": "This review was carried out on 13 October 2026 from the Attorney General's Office legislation portal and the official gazette supplements. The digital transformation department's, the ministry's (MEIDECC) and the Prime Minister's Office websites could not be accessed, so any AI policy published only there could not be checked. Tonga is marked for a later retry. The digital government framework and AI policy work are tracked as leads."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "jurisdiction_id": "TON",
+      "authority_type": "legislature",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Tonga (national)",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-13",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "organization_id": "o-9d673cf22907",
+      "first_recorded": "2026-10-13",
+      "last_changed": null,
+      "language": "en",
+      "source_kind": "legislation_portal",
+      "publisher_name": "Attorney General's Office (Tongan Legislation portal)",
+      "official_webpage_url": "https://ago.gov.to/cms/legislation/acts-by-year.html",
+      "issuing_authority": "Legislative Assembly of Tonga; assented to by King Tupou VI",
+      "id": "i-15e3dd421d5c",
+      "official_title": "Privacy Act 2025",
+      "english_title": "Privacy Act 2025 (Act 34 of 2025)",
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "category": "data-privacy",
+      "legal_status": "binding_law",
+      "lifecycle": "adopted",
+      "publication_date": "2025-12-17",
+      "effective_date": null,
+      "sectors": [],
+      "technology_scope": [
+        "automated decision-making",
+        "profiling",
+        "personal data"
+      ],
+      "summary": "Tonga's first general data protection law: it sets lawful bases and requirements for processing personal information by data controllers and processors (including the State), breach notification, personal information protection impact assessments and rules on transfers outside the Kingdom, and creates a Privacy Commission headed by a Privacy Commissioner with enforcement notices and pecuniary penalties. Section 44 gives data subjects the right not to be subject to a decision based solely on automated processing, including profiling, that produces legal or similarly significant effects, unless it is necessary for a contract, authorised by a written law with safeguards, or consented to; section 45 adds a right to object to processing, including profiling.",
+      "current_status": "Act 34 of 2025, assented to by King Tupou VI on 16 December 2025 and issued with Tonga Government Gazette Supplement Extraordinary No.17 of 17 December 2025. Section 1(2): comes into force on a date proclaimed by Cabinet. No commencement proclamation was found in the Gazette Supplements Extraordinary through No.05 of 2026 or in the commencement notes of the Attorney General's Office acts-by-year listing (checked 2026-10-13), so it is treated as enacted but not yet in force. A Tongan-language version (Lao ki he Totonu ki he Meʻa Fakafoʻituitui 2025) is published alongside.",
+      "source_url": "https://ago.gov.to/cms/images/LEGISLATION/PRINCIPAL/2025/2025-0052/PrivacyAct2025_1.pdf",
+      "official_pdf_url": "https://ago.gov.to/cms/images/LEGISLATION/PRINCIPAL/2025/2025-0052/PrivacyAct2025_1.pdf",
+      "source_id": "s-b4af626b09a8",
+      "evidence_reference": "curl (browser user agent, --max-time 60): Act PDF read with pdftotext (assent, s.1 commencement, ss.38, 44, 45); Gazette Supplement Extraordinary No.17/2025 read for issue date; 2026 Gazette Supplements Extraordinary 01-05 and ago.gov.to acts-by-year 2025 commencement notes checked for a proclamation.",
+      "ai_governance_relevance": "General data protection law with an explicit right not to be subject to solely automated decisions, including profiling; governs AI use of personal information."
+    },
+    {
+      "jurisdiction_id": "TON",
+      "authority_type": "legislature",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Tonga (national)",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-13",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "organization_id": "o-9d673cf22907",
+      "first_recorded": "2026-10-13",
+      "last_changed": null,
+      "language": "en",
+      "source_kind": "legislation_portal",
+      "publisher_name": "Attorney General's Office (Tongan Legislation portal)",
+      "official_webpage_url": "https://ago.gov.to/cms/legislation/acts-by-year.html",
+      "issuing_authority": "Legislative Assembly of Tonga; assented to by King Tupou VI",
+      "id": "i-2dd9e34d1b14",
+      "official_title": "Computer Crimes Act 2025",
+      "english_title": "Computer Crimes Act 2025 (Act 15 of 2025)",
+      "categories": [
+        "binding-law",
+        "generative-ai",
+        "cyber-security"
+      ],
+      "category": "binding-law",
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2025-09-04",
+      "effective_date": "2025-10-01",
+      "sectors": [
+        "criminal justice"
+      ],
+      "technology_scope": [
+        "AI",
+        "generative AI",
+        "deepfakes"
+      ],
+      "summary": "Criminal law on computer-related offences and investigative powers (search warrants, preservation and production of computer data). Section 18 defines 'AI' and 'deep fake' (visual or audio content generated or manipulated using AI that misrepresents someone or something) and makes it an offence to use a service to post a menacing, harassing or harmful electronic communication, expressly including intimate recordings created with generative AI deepfakes. Posting such an intimate recording is punishable by a fine of up to TOP 50,000, up to 7 years' imprisonment, or both.",
+      "current_status": "Act 15 of 2025, assented to by King Tupou VI on 28 August 2025 and issued with Tonga Government Gazette Supplement Extraordinary No.10 of 4 September 2025. In force since 1 October 2025 by Cabinet proclamation under section 1(2), published in Gazette Supplement Extraordinary No.12 of 1 October 2025.",
+      "source_url": "https://ago.gov.to/cms/images/LEGISLATION/PRINCIPAL/2025/2025-0030/ComputerCrimesAct2025_1.pdf",
+      "official_pdf_url": "https://ago.gov.to/cms/images/LEGISLATION/PRINCIPAL/2025/2025-0030/ComputerCrimesAct2025_1.pdf",
+      "source_id": "s-25a30a8662db",
+      "evidence_reference": "curl (browser user agent, --max-time 60): Act PDF read with pdftotext (assent, s.1, s.18); Gazette Supplement Extraordinary No.10/2025 (issue) and No.12/2025 (commencement proclamation) read.",
+      "ai_governance_relevance": "Creates an AI deepfake-related offence: defines AI and deep fakes and criminalises posting harmful AI-generated intimate recordings."
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-9d673cf22907",
+      "jurisdiction_id": "TON",
+      "name": "Attorney General's Office",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Publishes Tonga's official legislation, bills and Government Gazette supplements (Tongan Legislation portal), including the Privacy Act 2025 and Computer Crimes Act 2025.",
+      "source_url": "https://ago.gov.to/cms/",
+      "authority_type": "ministry",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-b4af626b09a8",
+      "url": "https://ago.gov.to/cms/images/LEGISLATION/PRINCIPAL/2025/2025-0052/PrivacyAct2025_1.pdf",
+      "jurisdiction_ids": [
+        "TON"
+      ],
+      "source_institutions": [
+        "Attorney General's Office"
+      ],
+      "instrument_ids": [
+        "i-15e3dd421d5c"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl (browser user agent, --max-time 60): Act PDF read with pdftotext (assent, s.1 commencement, ss.38, 44, 45); Gazette Supplement Extraordinary No.17/2025 read for issue date; 2026 Gazette Supplements Extraordinary 01-05 and ago.gov.to acts-by-year 2025 commencement notes checked for a proclamation.",
+      "http_status": 200,
+      "final_url": "https://ago.gov.to/cms/images/LEGISLATION/PRINCIPAL/2025/2025-0052/PrivacyAct2025_1.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-25a30a8662db",
+      "url": "https://ago.gov.to/cms/images/LEGISLATION/PRINCIPAL/2025/2025-0030/ComputerCrimesAct2025_1.pdf",
+      "jurisdiction_ids": [
+        "TON"
+      ],
+      "source_institutions": [
+        "Attorney General's Office"
+      ],
+      "instrument_ids": [
+        "i-2dd9e34d1b14"
+      ],
+      "categories_reviewed": [
+        "binding-law",
+        "generative-ai",
+        "cyber-security"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl (browser user agent, --max-time 60): Act PDF read with pdftotext (assent, s.1, s.18); Gazette Supplement Extraordinary No.10/2025 (issue) and No.12/2025 (commencement proclamation) read.",
+      "http_status": 200,
+      "final_url": "https://ago.gov.to/cms/images/LEGISLATION/PRINCIPAL/2025/2025-0030/ComputerCrimesAct2025_1.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "TON",
     "country": "Tonga",
-    "review_status": "PARTIAL REVIEW — NOT DEEPLY REVIEWED",
+    "review_status": "DEEP REVIEW COMPLETE",
     "categories_searched": [
       "strategy",
       "government-governance",
@@ -33,55 +210,182 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
+    "categories_with_findings": [
       "binding-law",
+      "cyber-security",
+      "data-privacy",
+      "generative-ai"
+    ],
+    "categories_where_no_material_was_found": [
       "strategy",
       "government-governance",
       "ethics",
       "risk-assurance",
       "public-sector",
       "procurement",
-      "cyber-security",
-      "data-privacy",
       "transparency",
       "standards",
       "sandbox",
       "index-readiness",
       "sectoral",
-      "generative-ai",
       "drafts",
       "international",
       "historical"
     ],
+    "categories_requiring_review": [],
     "search_queries": [
       "Tonga \"artificial intelligence\" (strategy OR regulation OR ethics) government ministry official",
       "Tonga \"artificial intelligence\" government (procurement OR \"public sector\" OR cybersecurity OR privacy OR assurance OR sandbox) official",
       "Tonga government procurement authority artificial intelligence procurement guidelines contract clauses tender disclosure",
       "Tonga \"artificial intelligence\" cybersecurity authority secure development safety guidelines",
-      "Tonga privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance"
+      "Tonga privacy regulator artificial intelligence public sector assurance impact assessment transparency guidance",
+      "Tonga \"artificial intelligence\" policy MEIDECC",
+      "Tonga national AI strategy OR \"AI policy\" government 2025",
+      "Tonga data protection bill parliament 2024 OR 2025",
+      "site:gov.to \"artificial intelligence\"",
+      "Tonga Digital Transformation Department AI guidelines public service generative AI",
+      "\"poto fakaʻatamai\" OR \"AI\" Tonga fale alea lao 2026 artificial intelligence bill (Tongan)",
+      "Tonga \"Digital Government Strategic Framework\" OR \"digital transformation strategy\" 2025-2030 artificial intelligence pdf",
+      "Tonga National Cybersecurity Strategy 2024 OR 2025 artificial intelligence CERT Tonga",
+      "ago.gov.to basic search: \"artificial intelligence\"; acts-by-year 2025/2026; bills-by-year 2025/2026; gazettes-by-year 2025/2026",
+      "parliament.gov.to search: \"artificial intelligence\"; \"AI governance\"",
+      "reservebank.to search: \"artificial intelligence\"",
+      "gov.to search: \"artificial intelligence\""
     ],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-13",
     "passes": {
-      "institutions": "NOT YET FULLY REVIEWED",
-      "legislation": "NOT YET FULLY REVIEWED",
-      "national_strategy": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "general_AI_governance": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "public_sector": "DISCOVERY SEARCH RUN; DOCUMENT REVIEW INCOMPLETE",
-      "procurement": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "security": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "privacy_data": "SEPARATE TARGETED SEARCH RUN; AUTHORITY AND DOCUMENT REVIEW INCOMPLETE",
-      "standards_assurance": "NOT YET FULLY REVIEWED",
-      "sector_regulators": "NOT YET FULLY REVIEWED",
-      "drafts_consultations": "NOT YET FULLY REVIEWED",
-      "historical_validation": "NOT YET FULLY REVIEWED",
-      "regional_inheritance": "NOT YET FULLY REVIEWED",
-      "gap_check": "NOT YET FULLY REVIEWED"
+      "institutions": "COMPLETE",
+      "legislation": "COMPLETE",
+      "national_strategy": "COMPLETE",
+      "general_AI_governance": "COMPLETE",
+      "public_sector": "COMPLETE",
+      "procurement": "COMPLETE",
+      "security": "COMPLETE",
+      "privacy_data": "COMPLETE",
+      "standards_assurance": "COMPLETE",
+      "sector_regulators": "COMPLETE",
+      "drafts_consultations": "COMPLETE",
+      "historical_validation": "COMPLETE",
+      "regional_inheritance": "COMPLETE",
+      "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "No category has a completed absence finding; missing records remain unresolved.",
+    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-13, one agent, national level only (PROTOCOL §6), about 25-minute time box. Digital Transformation Department and MEIDECC sites connection failed; pmo.gov.to 403. Privacy Act 2025 (Act 34) effective_date null (commencement by Cabinet proclamation; none found in Gazette Supplements Extraordinary 01-05 of 2026; regular 2026 Gazettes not checked). Computer Crimes Act (Act 15 of 2025) in force 2025-10-01 by proclamation (Supplement Extraordinary No. 12). Publication dates = gazette supplement dates (assent dates in current_status). Searched in English and Tongan. Convention 108: not a party. Units covered: Law: ago.gov.to (Attorney General's Office legislation portal): acts 2025-2026, bills 2025-2026, Gazette Supplements Extraordinary 2025-2026 checked; Privacy Act 2025 and Computer Crimes Act 2025 recorded; Personal Health Information Protection, Consumer Protection and Civil Registration and Digital ID Acts 2025 checked (no AI provisions beyond passing mention). Parliament: no AI bill; only news on AI conferences. Searched, no AI-specific law or bill found.; Government: gov.to national portal search and web searches: no national AI strategy, AI policy or public-sector AI guideline found (searched, nothing found). Digital Transformation Department and MEIDECC sites unreachable; pmo.gov.to 403.; Ministries: Web searches for education, health, justice, finance AI documents: searched, nothing found.; Regulators: National Reserve Bank of Tonga site search: only economic commentary mentioning AI, no AI guidance. Privacy Commission not yet established (Act not in force). Communications Commission (Act in force 20 April 2026) and CERT Tonga: no AI documents found.. Not reached: Digital Transformation Department website (connection failed); MEIDECC website (connection failed); Prime Minister's Office pmo.gov.to (HTTP 403). Could not verify: Digital Transformation Department / MEIDECC / PMO sites unreachable; any AI policy or guideline published only there could not be checked.. strategy, government-governance, ethics, risk-assurance, public-sector, procurement, transparency, standards, sandbox, index-readiness, sectoral, drafts, international, historical: no material found.",
     "discovery_result_count": 11,
     "focused_result_count": 12
   },
-  "changes": []
+  "changes": [
+    {
+      "id": "c-9e1652f9f17b",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "TON",
+      "instrument_id": "i-15e3dd421d5c",
+      "title": "Privacy Act 2025 (Act 34 of 2025)",
+      "detail": "Added to the radar (published 2025-12-17).",
+      "from": null,
+      "to": null,
+      "source_url": "https://ago.gov.to/cms/images/LEGISLATION/PRINCIPAL/2025/2025-0052/PrivacyAct2025_1.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-c5ee4811519e",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "TON",
+      "instrument_id": "i-2dd9e34d1b14",
+      "title": "Computer Crimes Act 2025 (Act 15 of 2025)",
+      "detail": "Added to the radar (published 2025-09-04).",
+      "from": null,
+      "to": null,
+      "source_url": "https://ago.gov.to/cms/images/LEGISLATION/PRINCIPAL/2025/2025-0030/ComputerCrimesAct2025_1.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-5995c9666c69",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "TON",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 2 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-43f6d62c3553",
+      "date": "2025-12-17",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "TON",
+      "instrument_id": "i-15e3dd421d5c",
+      "title": "Privacy Act 2025 issued with Gazette",
+      "detail": "Act 34 of 2025 (assented 16 December 2025) issued with Tonga Government Gazette Supplement Extraordinary No.17; includes right not to be subject to solely automated decisions (s.44). Commencement awaits Cabinet proclamation.",
+      "from": null,
+      "to": null,
+      "source_url": "https://ago.gov.to/cms/images/LEGISLATION/GAZETTES/2025/2025-0044/GazetteSupplementExtraordinaryNo.172025.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-47d4b9cc4ef1",
+      "date": "2025-10-01",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "TON",
+      "instrument_id": "i-2dd9e34d1b14",
+      "title": "Computer Crimes Act 2025 comes into force",
+      "detail": "Cabinet proclamation under s.1(2), Gazette Supplement Extraordinary No.12 of 1 October 2025.",
+      "from": null,
+      "to": null,
+      "source_url": "https://ago.gov.to/cms/images/LEGISLATION/GAZETTES/2025/2025-0029/GazetteSupplementExtraordinaryNo.122025.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-1b2d22572cbb",
+      "date": "2025-09-04",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "TON",
+      "instrument_id": "i-2dd9e34d1b14",
+      "title": "Computer Crimes Act 2025 issued with Gazette",
+      "detail": "Act 15 of 2025 (assented 28 August 2025) issued with Tonga Government Gazette Supplement Extraordinary No.10; s.18 creates AI deepfake-related harmful communication offence.",
+      "from": null,
+      "to": null,
+      "source_url": "https://ago.gov.to/cms/images/LEGISLATION/GAZETTES/2025/2025-0017/GazetteSupplementExtraordinaryNo.102025.pdf",
+      "needs_review": false
+    }
+  ],
+  "leads": [
+    {
+      "title": "Civil Registration and Digital Identification Act 2025",
+      "english_title": "Civil Registration and Digital Identification Act 2025 (Act 33 of 2025)",
+      "issuing_authority": "Legislative Assembly of Tonga",
+      "note": "Official text at https://ago.gov.to/cms/images/LEGISLATION/PRINCIPAL/2025/2025-0051/CivilRegistrationandDigitalIdentificationAct2025_1.pdf. Mentions profiling and automated decision-making only in a notice requirement (whether profiling or automated decision-making may be applied to personal information); AI mentioned in passing, so not recorded (scope test).",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "Tonga Digital Government Strategic Framework 2019-2024",
+      "english_title": "Tonga Digital Government Strategic Framework 2019-2024",
+      "issuing_authority": "Prime Minister's Office, Digital Transformation Department",
+      "note": "Referenced in secondary sources; no official copy located (pmo.gov.to returned 403; Digital Transformation Department sites unreachable). AI content unknown; check whether a successor digital strategy has an AI pillar.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "Digital Transformation Department AI-related policy work",
+      "english_title": "Digital Transformation Department AI-related policy work",
+      "issuing_authority": "Digital Transformation Department (Prime Minister's Office)",
+      "note": "Secondary sources (UNDP blog, July 2026) describe digital-first government reforms including AI tools in Tongan; no official AI policy, strategy or guideline document found. Re-check when the Department's site is reachable.",
+      "found": "2026-10-13"
+    }
+  ]
 }
