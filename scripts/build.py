@@ -5,6 +5,7 @@
 """
 import csv, io, json, sys
 from common import ROOT, DATA, load, load_all
+import pages
 
 OUT = ROOT / "dist"
 
@@ -70,9 +71,10 @@ def build():
     buf = io.StringIO(); w = csv.DictWriter(buf, f, extrasaction="ignore"); w.writeheader(); w.writerows(D["changes"])
     (OUT / "changes.csv").write_text("﻿" + buf.getvalue(), encoding="utf-8")
     (OUT / ".nojekyll").write_text("")
+    n_pages = pages.write_all(D, load_all(), OUT, json.loads((ROOT / "site/assets/flags.json").read_text(encoding="utf-8")))
     print(f"built dist/index.html ({len(t)/1e6:.1f} MB): {len(D['jurisdictions'])} jurisdictions, "
           f"{len(D['instruments'])} instruments, {len(D['changes'])} change events, "
-          f"{D['meta']['deeply_reviewed_country_count']} deep-reviewed countries")
+          f"{D['meta']['deeply_reviewed_country_count']} deep-reviewed countries; {n_pages} country/body pages")
 
 
 if __name__ == "__main__":
