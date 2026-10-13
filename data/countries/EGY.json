@@ -444,6 +444,65 @@
       "subnational_unit": null,
       "source_id": "s-050ae8e64fa7",
       "organization_id": "o-652df13048bb"
+    },
+    {
+      "id": "i-e22c5cf0ebb1",
+      "jurisdiction_id": "EGY",
+      "official_title": "الدليل الاسترشادي لضوابط استخدام الذكاء الاصطناعي في التعليم العالي والبحث العلمي",
+      "english_title": "Guiding Manual on Controls for the Use of Artificial Intelligence in Higher Education and Scientific Research (Third Edition, September 2025)",
+      "issuing_authority": "Supreme Council of Universities (chaired by the Minister of Higher Education and Scientific Research)",
+      "publisher_name": "Supreme Council of Universities",
+      "authority_type": "ministry",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "sectoral",
+        "generative-ai",
+        "ethics"
+      ],
+      "category": "sectoral",
+      "subcategory": null,
+      "legal_status": "administrative_guideline",
+      "lifecycle": "published",
+      "publication_date": "2025-09",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Third edition; the cover reads 'الإصدار الثالث – سبتمبر 2025' and carries a foreword by the Minister of Higher Education and Scientific Research. Publication date source (date audit 2026-10-13): month and year printed on the cover. The Supreme Council of Universities' own site (scu.eg) was unavailable, so the text was read from the copy deposited in the repository of the Institute of National Planning, a state body; an earlier second edition (February 2025) circulates on university sites but could not be downloaded. Media report council approval on 30 September 2025; not confirmed on an official page. Official copy hosted by the Institute of National Planning (a state planning institute) repository, because the Supreme Council of Universities' own site (scu.eg) could not be reached; accepted under PROTOCOL §1 (official copies hosted by another state body).",
+      "scope": "Egypt (national): universities and higher-education institutions",
+      "sectors": [
+        "education",
+        "research"
+      ],
+      "technology_scope": [
+        "AI",
+        "generative AI",
+        "agentic AI"
+      ],
+      "summary": "Guidance from the Supreme Council of Universities setting controls for AI use by universities, faculty, students and researchers. It sets academic-integrity and mandatory-disclosure rules for AI use in teaching, assessment, research and publication (including prohibited uses such as generating scientific conclusions without disclosure), calls on universities to set up standing AI ethics committees and internal AI policies, and adds controls for agentic AI, a risk classification and assessment model for university AI uses with human verification (hybrid grading) and periodic audits. Annexes provide a model internal university AI policy and a model AI-use declaration form.",
+      "ai_governance_relevance": "Egyptian ministry-level (higher education) guidance shaping AI use in universities and research (sectoral, generative-ai, ethics).",
+      "source_url": "https://documents.inp.edu.eg/server/api/core/bitstreams/748989ef-72c2-4b30-80d8-8008fd1f9522/content",
+      "official_pdf_url": "https://documents.inp.edu.eg/server/api/core/bitstreams/748989ef-72c2-4b30-80d8-8008fd1f9522/content",
+      "official_webpage_url": "https://documents.inp.edu.eg/handle/123456789/8772",
+      "language": "ar",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-8e1da64d2787"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-10-13",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Copy on the issuer's own site (scu.eg) not yet checked"
+      ],
+      "source_kind": "official_document",
+      "evidence_reference": "curl (browser user agent, --max-time 60): full PDF read with pdftotext (cover, preparation committee, table of contents, disclosure note, minister's foreword, sections 3, 5, 7 and annexes); repository item metadata read (dc.date.issued 2025-10, not used as publication date).",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "first_recorded": "2026-10-13",
+      "last_changed": null,
+      "source_id": "s-bfa5b5608fdc",
+      "organization_id": "o-8225df67860e"
     }
   ],
   "organizations": [
@@ -475,6 +534,16 @@
       "ai_governance_role": "Regulator of non-banking financial markets; issues binding board decisions, including rules on algorithmic and AI-based robo-advisory services.",
       "source_url": "https://fra.gov.eg/",
       "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-8225df67860e",
+      "jurisdiction_id": "EGY",
+      "name": "Supreme Council of Universities",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Body chaired by the Minister of Higher Education and Scientific Research that governs Egyptian public universities; issued the guide on AI use in higher education and scientific research.",
+      "source_url": "https://scu.eg/",
+      "authority_type": "ministry",
       "government_level": "national"
     }
   ],
@@ -695,6 +764,35 @@
       "document_language": "ar",
       "error": null,
       "content_type": "application/pdf"
+    },
+    {
+      "id": "s-bfa5b5608fdc",
+      "url": "https://documents.inp.edu.eg/server/api/core/bitstreams/748989ef-72c2-4b30-80d8-8008fd1f9522/content",
+      "jurisdiction_ids": [
+        "EGY"
+      ],
+      "source_institutions": [
+        "Supreme Council of Universities",
+        "Institute of National Planning"
+      ],
+      "instrument_ids": [
+        "i-e22c5cf0ebb1"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "generative-ai",
+        "ethics"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl (browser user agent, --max-time 60): PDF downloaded from the Institute of National Planning document repository and read with pdftotext. scu.eg returned 503 (curl and WebFetch); the guide's own SCU page could not be reached.",
+      "http_status": 200,
+      "final_url": "https://documents.inp.edu.eg/server/api/core/bitstreams/748989ef-72c2-4b30-80d8-8008fd1f9522/content",
+      "link_status": "reachable",
+      "page_title": "الدليل الاسترشادي لضوابط استخدام الذكاء الاصطناعي",
+      "document_language": "ar",
+      "error": null,
+      "content_type": "application/pdf"
     }
   ],
   "regional_applicability": [],
@@ -768,7 +866,26 @@
       "ai.gov.eg resources (strategy, charter, governance framework, guidelines, open data policy) — direct site review",
       "mcit.gov.eg/en/Artificial_Intelligence — direct site review",
       "fra.gov.eg القرارات والضوابط المنظمة للتكنولوجيا المالية — direct site review (الذكاء الاصطناعي / الخوارزميات)",
-      "portal.pdpc.gov.eg laws and guidelines — direct site review"
+      "portal.pdpc.gov.eg laws and guidelines — direct site review",
+      "المجلس الأعلى للجامعات دليل استخدام الذكاء الاصطناعي في التعليم العالي والبحث العلمي",
+      "Egypt Ministry of Higher Education guidelines use of artificial intelligence universities 2025",
+      "\"الدليل الاسترشادي\" \"الذكاء الاصطناعي\" site:scu.eg OR site:mohesr.gov.eg",
+      "site:mohesr.gov.eg الذكاء الاصطناعي دليل",
+      "وزارة الصحة المصرية الذكاء الاصطناعي دليل إرشادي سياسة",
+      "مصر وزارة الصحة والسكان قرار وزاري الذكاء الاصطناعي الرعاية الصحية إطار حوكمة 2026",
+      "Egypt Ministry of Health and Population artificial intelligence strategy health guidelines document",
+      "الاستراتيجية الوطنية للصحة الرقمية مصر وزارة الصحة والسكان الذكاء الاصطناعي pdf",
+      "وزارة التربية والتعليم مصر ضوابط استخدام الذكاء الاصطناعي المدارس",
+      "وزارة التربية والتعليم والتعليم الفني الذكاء الاصطناعي دليل المعلم مبادئ استخدام 2025 2026 مصر",
+      "Egypt Ministry of Justice OR \"Public Prosecution\" artificial intelligence guidelines decision 2025 2026",
+      "النيابة العامة المصرية الذكاء الاصطناعي ضوابط كتاب دوري OR وزارة العدل الذكاء الاصطناعي قرار",
+      "مجلس القضاء الأعلى OR مجلس الدولة مصر ضوابط استخدام الذكاء الاصطناعي في المحاكم قرار",
+      "الجهاز المركزي للتنظيم والإدارة الذكاء الاصطناعي دليل الجهاز الإداري للدولة",
+      "وزارة المالية المصرية مصلحة الضرائب الجمارك الذكاء الاصطناعي سياسة استخدام دليل",
+      "وزارة التخطيط والتنمية الاقتصادية مصر الذكاء الاصطناعي إطار OR دليل OR استراتيجية الجهاز الإداري",
+      "وزارة الداخلية OR وزارة الدفاع OR وزارة الخارجية مصر الذكاء الاصطناعي استراتيجية وثيقة رسمية",
+      "Egypt ministry \"artificial intelligence\" policy document agriculture OR transport OR tourism OR culture OR labour ministry AI strategy Egypt 2025",
+      "الأزهر وثيقة أخلاقيات الذكاء الاصطناعي OR وزارة الأوقاف الذكاء الاصطناعي ضوابط مصر"
     ],
     "review_date": "2026-10-06",
     "passes": {
@@ -787,11 +904,26 @@
       "regional_inheritance": "COMPLETE",
       "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "Searched, nothing official found for: cyber-security (no AI-specific guidance from NTRA, EG-CERT or the Supreme Cybersecurity Council); standards (no Egyptian Organization for Standardization adoption of AI standards located); sandbox (FRA Decision 163/2024 and the CBE sandbox are FinTech-general; the AI Audit Lab/regulatory sandbox is only planned in the Governance Framework); index-readiness (no government-published AI index; the strategy's CAF is a planning method); drafts (AI law draft not published; the Governance Framework v1.0 consultation draft is not online); international (AU and UNESCO instruments inherited from data/regional; Arab League texts are regional). Technical review notes: Deep review 2026-10-06 (resumed from an interrupted attempt; reused downloaded official PDFs, re-checked every source URL live with HTTP 200). All eight instruments were read from official PDFs on ai.gov.eg, mcit.gov.eg and fra.gov.eg. The Personal Data Protection Law No. 151 of 2020 and its Executive Regulations (Prime Ministerial Decree No. 816 of 2025) have no official full text online: pdpc.gov.eg redirects to portal.pdpc.gov.eg (a login portal with no law texts, and a TLS certificate mismatch on the bare domain), and MCIT has no legislation page; texts found only on law-firm and aggregator sites, which are not admissible. Both are therefore leads. The FinTech Law No. 5 of 2022 (fra.gov.eg PDF) could not be machine-read (legacy font encoding), so its AI provisions, cited by the 2025 strategy, could not be verified; recorded as a lead. FRA Board Decision 163 of 2024 (regulatory lab) and the CBE regulatory sandbox cover FinTech in general, not AI specifically, so they are not recorded. Egypt is an AU member; AU and UNESCO instruments come from data/regional and are not copied here. Arab League documents on MCIT's site (Arab AI Strategy, Arab Charter for AI Ethics) are regional and not recorded as national. Removed: none (file had no instruments).",
+    "no_material_found_note": "Searched, nothing official found for: cyber-security (no AI-specific guidance from NTRA, EG-CERT or the Supreme Cybersecurity Council); standards (no Egyptian Organization for Standardization adoption of AI standards located); sandbox (FRA Decision 163/2024 and the CBE sandbox are FinTech-general; the AI Audit Lab/regulatory sandbox is only planned in the Governance Framework); index-readiness (no government-published AI index; the strategy's CAF is a planning method); drafts (AI law draft not published; the Governance Framework v1.0 consultation draft is not online); international (AU and UNESCO instruments inherited from data/regional; Arab League texts are regional). Technical review notes: Deep review 2026-10-06 (resumed from an interrupted attempt; reused downloaded official PDFs, re-checked every source URL live with HTTP 200). All eight instruments were read from official PDFs on ai.gov.eg, mcit.gov.eg and fra.gov.eg. The Personal Data Protection Law No. 151 of 2020 and its Executive Regulations (Prime Ministerial Decree No. 816 of 2025) have no official full text online: pdpc.gov.eg redirects to portal.pdpc.gov.eg (a login portal with no law texts, and a TLS certificate mismatch on the bare domain), and MCIT has no legislation page; texts found only on law-firm and aggregator sites, which are not admissible. Both are therefore leads. The FinTech Law No. 5 of 2022 (fra.gov.eg PDF) could not be machine-read (legacy font encoding), so its AI provisions, cited by the 2025 strategy, could not be verified; recorded as a lead. FRA Board Decision 163 of 2024 (regulatory lab) and the CBE regulatory sandbox cover FinTech in general, not AI specifically, so they are not recorded. Egypt is an AU member; AU and UNESCO instruments come from data/regional and are not copied here. Arab League documents on MCIT's site (Arab AI Strategy, Arab Charter for AI Ethics) are regional and not recorded as national. Removed: none (file had no instruments). Ministry catch-up 2026-10-13 (PROTOCOL §2 ministry rule, applied after this country's deep review; one agent, 30 minutes, national ministries' own AI documents only, nothing else re-reviewed): 1 record(s) added. Ministries: Ministry of Higher Education and Scientific Research / Supreme Council of Universities: Guiding Manual on Controls for AI Use in Higher Education and Scientific Research, 3rd ed., Sept 2025 (recorded); ministry's National Higher Education and Research Strategy: National Policy for Sustainable Innovation 2025 mentions AI only in passing (not recorded). Ministry of Education and Technical Education: AI curriculum and teacher-training announcements only; no AI policy or guidance document found (moe.gov.eg returned 403). Ministry of Health and Population: no AI guidance found; National Health Strategy 2024-2030 / digital health strategy not found as an official text with AI rules (mohp.gov.eg TLS failure). Ministry of Justice, Public Prosecution, Supreme Judicial Council, State Council: AI training programmes only; nothing found. Ministry of Defence: nothing found. Ministry of Finance, Egyptian Tax Authority, Customs: AI deployment statements only; nothing found. Ministry of Interior: nothing found. Ministry of Foreign Affairs: nothing found. Ministry of Labour / social insurance: nothing found. Ministry of Planning, Economic Development and International Cooperation: nothing found. Central Agency for Organization and Administration (civil service): 'Kemet' AI chatbot launch only; no public-servant AI guidance found. Agriculture, transport, tourism, culture, industry/trade, environment, energy, Awqaf/Al-Azhar: nothing found. MCIT: already recorded (Generative AI Guidelines).. Not reached: Supreme Council of Universities website scu.eg (503); Ministry of Health and Population website mohp.gov.eg (TLS failure); Ministry of Education website moe.gov.eg (403). Could not verify: Council approval of the SCU guide on 30 September 2025 (media only).; First (2023) and second (February 2025) editions of the SCU guide (second-edition copy at dentfac.mans.edu.eg could not be downloaded)..",
     "discovery_result_count": 24,
     "focused_result_count": 19
   },
   "changes": [
+    {
+      "id": "c-b3346bb80fea",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "EGY",
+      "instrument_id": "i-e22c5cf0ebb1",
+      "title": "Guiding Manual on Controls for the Use of Artificial Intelligence in Higher Education and Scientific Research (Third Edition, September 2025)",
+      "detail": "Added to the radar (published 2025-09).",
+      "from": null,
+      "to": null,
+      "source_url": "https://documents.inp.edu.eg/server/api/core/bitstreams/748989ef-72c2-4b30-80d8-8008fd1f9522/content",
+      "needs_review": false
+    },
     {
       "id": "c-4fdb13772bb2",
       "date": "2026-10-06",
