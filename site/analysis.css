@@ -76,3 +76,16 @@
 .fig-note{margin:8px 0 0;font-size:13px;color:var(--ink-2);max-width:var(--text)}
 .discovery{margin:12px 0 0;font-size:15px;color:var(--ink-2);max-width:var(--text)}
 @media print{.scope-toggle{display:none}}
+/* update requests */
+.sg-hero{padding:40px 0 20px}
+.sg-form{display:grid;gap:18px;max-width:640px;padding:24px 0}
+.sg-form label{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600;color:var(--ink)}
+.sg-form select,.sg-form input[type=url],.sg-form textarea{font:inherit;font-size:16px;font-weight:400;color:var(--ink);background:var(--surface);border:1px solid var(--axis);border-radius:6px;padding:9px 10px;width:100%;min-width:0}
+.sg-form fieldset{border:1px solid var(--hair);border-radius:8px;padding:10px 14px;margin:0;display:flex;flex-wrap:wrap;gap:6px 18px}
+.sg-form legend{font-size:14px;font-weight:600;padding:0 4px}
+.sg-form label.radio{flex-direction:row;align-items:center;gap:8px;font-weight:400}
+.sg-form .req{font-weight:400;color:var(--muted)}
+.btn-primary{background:var(--accent);border-color:var(--accent);color:var(--page)}
+.sg-error{margin:0;color:#b42318;font-size:14px}
+.sg-note{margin:0;font-size:14px;color:var(--ink-2)}
+@media (prefers-color-scheme:dark){:root:where(:not([data-theme="light"])) .sg-error{color:#ff8a7a}}

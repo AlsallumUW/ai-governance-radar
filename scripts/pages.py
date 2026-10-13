@@ -29,7 +29,9 @@ LIFE = {"draft": "Draft", "consultation": "In consultation", "published": "Publi
 VERIFY = {"reviewed_primary_metadata": "Reviewed against the official text", "primary_source_located": "Official source located; text not fully reviewed"}
 EVENT = {"published": "Published", "revised": "Revised", "consultation": "Consultation", "adopted": "Adopted", "applied": "Applies / in force",
          "superseded": "Superseded", "repealed": "Repealed"}
-BODY_ORDER = ["EU", "GCC", "AU", "ASEAN", "COE", "UNESCO"]
+BODY_ORDER = ["EU", "GCC", "AU", "ASEAN", "COE", "UNESCO", "OECD", "ICESCO", "ALECSO", "G7", "G20"]
+# old body codes: a redirect page is kept at /body/<old>/ and links with ?body=<old> are read as the new code
+BODY_REDIRECTS = {"ISESCO": "ICESCO"}
 
 e = lambda s: html.escape(str(s if s is not None else ""), quote=True)
 
@@ -290,6 +292,8 @@ def country_page(j, D, rec, flags, ctx):
     chips = "".join(f'<a class="chip" href="../../body/{b}/">{e(ctx["jur"][b].get("short_name") or b)}</a>' for b in memberships)
     treaty = []
     treaty.append(f'<li><span class="k">CETS 225 (CoE AI Convention)</span><span class="v">{e(cets_text(jid, ctx))}</span></li>')
+    oa = ctx["oecd"].get(jid)
+    if oa: treaty.append(f'<li><span class="k">OECD AI Recommendation</span><span class="v">Adherent{" (OECD member)" if oa.get("member") else " · non-member, since " + fmt_date(oa["date"]) if oa.get("date") else " · non-member"}</span></li>')
     treaty.append(f'<li><span class="k">Convention 108 (data protection)</span><span class="v">{"Party" if c108 else "Party; ratification act pending verification" if c108_pending else "Not recorded as a party"}</span></li>')
     stats = [("Instruments", len(rows_all)), ("Binding or mandatory", n_bind), ("Non-binding", n_soft), ("Drafts", n_draft), ("Leads", len(leads))]
     H.append('<header class="hero" id="top"><p class="eyebrow">' + e(j.get("region") or "") + (' · Country profile' if j.get("region") else 'Country profile') + '</p>'
@@ -298,7 +302,7 @@ def country_page(j, D, rec, flags, ctx):
              + f'<ul class="facts">{"".join(treaty)}<li><span class="k">Last reviewed</span><span class="v">{e(fmt_date(narr.get("last_deep_review")) or "Not yet deep-reviewed")}</span></li></ul>'
              + '<dl class="stats">' + "".join(f'<div><dt>{k}</dt><dd>{v}</dd></div>' for k, v in stats) + '</dl>'
              + f'<p class="stats-note">{COUNT_NOTE} Leads: documents not yet verified as in-scope instruments. Counts include state, provincial and local instruments; regional instruments are listed separately.</p>'
-             + f'<p class="hero-links"><a href="../../timeline/?country={e(jid)}">See this country on the timeline →</a><a href="../../analysis/">Global analysis →</a></p></header>')
+             + f'<p class="hero-links"><a href="../../timeline/?country={e(jid)}">See this country on the timeline →</a><a href="../../analysis/">Global analysis →</a><a href="../../suggest/?country={e(jid)}">Suggest an update →</a></p></header>')
     # b. overview + c. charts in a two-column grid
     ov = ""
     zero = ""
@@ -397,7 +401,7 @@ def body_page(b, D, rec, flags, ctx):
     H.append(f'<header class="hero" id="top"><p class="eyebrow">Regional / international body</p><h1>{e(b["name"])}</h1>'
              + '<dl class="stats">' + "".join(f'<div><dt>{k}</dt><dd>{v}</dd></div>' for k, v in stats) + '</dl>'
              + f'<p class="stats-note">{COUNT_NOTE} Instruments are stored once for the body and listed on each country page they apply to.</p>'
-             + f'<p class="hero-links"><a href="../../timeline/?body={e(bid)}">See this body and its members on the timeline →</a><a href="../../analysis/">Global analysis →</a></p></header>')
+             + f'<p class="hero-links"><a href="../../timeline/?body={e(bid)}">See this body and its members on the timeline →</a><a href="../../analysis/">Global analysis →</a><a href="../../suggest/?country={e(bid)}">Suggest an update →</a></p></header>')
     years_svg, years_tab, undated = chart_years(rows); status_svg, status_tab = chart_status(rows)
     figs = []
     if years_svg: figs.append(figure("fig-years", "Instruments per year", "By publication year: binding or mandatory, non-binding and drafts.",
@@ -406,6 +410,12 @@ def body_page(b, D, rec, flags, ctx):
     if status_svg: figs.append(figure("fig-status", "Legal-status mix", "Instruments by legal status, from most to least binding.", '<p class="legend"><span><i class="sw s-b"></i>Binding or mandatory</span><span><i class="sw s-n"></i>Non-binding</span><span><i class="sw s-d"></i>Drafts</span></p>' + status_svg, status_tab))
     ov = '<section id="overview" class="block prose"><h2>Overview</h2>' + ("".join(f'<p>{e(p)}</p>' for p in re.split(r"\n\s*\n", narr.get("summary") or "") if p.strip())
                                                                           or f'<p>{e(b.get("overview") or "")}</p>')
+    if bid == "OECD" and ctx["oecd"]:
+        adh = sorted(ctx["oecd"].items(), key=lambda kv: (kv[1].get("member") is not True, ctx["jur"].get(kv[0], {}).get("name", kv[0])))
+        link = lambda c: f'<a href="../../{"body" if ctx["jur"].get(c, {}).get("type") != "country" else "country"}/{c}/">{e(ctx["jur"].get(c, {}).get("name", c))}</a>'
+        ov += ('<h3 class="minor">Adherents to the AI Recommendation</h3><table class="data-table plain-table"><thead><tr><th scope="col">Adherent</th><th scope="col">Status</th><th scope="col">Adhered</th></tr></thead><tbody>'
+               + "".join(f'<tr><th scope="row">{link(c)}</th><td>{"OECD member" if a.get("member") else "Non-member"}</td><td>{e(fmt_date(a.get("date")) or "Date not listed")}</td></tr>' for c, a in adh)
+               + '</tbody></table>')
     if bid == "COE" and ctx["cets"]:
         rows_c = [(c, cets_text(c, ctx)) for c in ctx["cets"]] + [(c, cets_text(c, ctx)) for c in ctx["members"].get("EU", ()) if c not in ctx["cets"]]
         order = lambda r: ({"Ratified": 0, "Signed": 1}.get(r[1], 2), ctx["jur"].get(r[0], {}).get("name", r[0]))
@@ -433,7 +443,7 @@ def body_page(b, D, rec, flags, ctx):
 
 def footer(D):
     return (f'<footer class="pagefoot"><p>AI Governance Radar · official government sources only · data as of {e(fmt_date(D["meta"].get("build_date")))}</p>'
-            '<p><a href="../../" id="footMap">World map</a> · <a href="../../analysis/">Analysis</a> · <a href="../../timeline/">Timeline</a> · <a href="../../?about=method">Methodology</a></p></footer>')
+            '<p><a href="../../" id="footMap">World map</a> · <a href="../../analysis/">Analysis</a> · <a href="../../timeline/">Timeline</a> · <a href="../../suggest/">Suggest an update</a> · <a href="../../?about=method">Methodology</a></p></footer>')
 
 
 def write_all(D, recs, out, flags):
@@ -444,8 +454,9 @@ def write_all(D, recs, out, flags):
         i = inst.get(a["instrument_id"])
         if i: inherited.setdefault(a["jurisdiction_id"], []).append(i)
     members = {k: set(v) for k, v in (D.get("regional_members") or {}).items()}
-    cets, c108, eu_cets = {}, set(), None
+    cets, c108, eu_cets, oecd = {}, set(), None, {}
     for i in D["instruments"]:
+        if i["jurisdiction_id"] == "OECD" and i.get("adherents"): oecd = i["adherents"]
         if i["jurisdiction_id"] == "COE" and i.get("party_status"):
             cets = {k: v.get("status") for k, v in i["party_status"].items()}
             eu_cets = (i["party_status"].get("EU") or {}).get("date") or ("?" if "EU" in i["party_status"] else None)
@@ -455,11 +466,11 @@ def write_all(D, recs, out, flags):
         q = json.loads((ROOT / "research/queue.json").read_text(encoding="utf-8")); c108_pending = set(q.get("pending_c108") or [])
     except Exception:
         c108_pending = set()
-    ctx = {"jur": jur, "inherited": inherited, "members": members, "cets": cets, "eu_cets": eu_cets, "c108": c108, "c108_pending": c108_pending,
+    ctx = {"jur": jur, "inherited": inherited, "members": members, "cets": cets, "eu_cets": eu_cets, "c108": c108, "c108_pending": c108_pending, "oecd": oecd,
            "orgs": {o["id"]: o for o in D["organizations"]}, "srcs": {s["id"]: s for s in D["sources"]},
            "today": D["meta"].get("build_date") or dt.date.today().isoformat()}
     (out / "assets").mkdir(parents=True, exist_ok=True)
-    for f in ("country.css", "country.js", "analysis.css", "analysis.js", "timeline.js"):
+    for f in ("country.css", "country.js", "analysis.css", "analysis.js", "timeline.js", "suggest.js"):
         (out / "assets" / f).write_text((ROOT / "site" / f).read_text(encoding="utf-8"), encoding="utf-8")
     n = 0
     for rec in recs.values():
@@ -469,6 +480,14 @@ def write_all(D, recs, out, flags):
         else:
             p = out / "body" / j["id"]; html_ = body_page(j, D, rec, flags, ctx)
         p.mkdir(parents=True, exist_ok=True); (p / "index.html").write_text(html_, encoding="utf-8"); n += 1
+    for old_code, new_code in BODY_REDIRECTS.items():
+        p = out / "body" / old_code; p.mkdir(parents=True, exist_ok=True)
+        to = f"../{new_code}/"; name = ctx["jur"].get(new_code, {}).get("name", new_code)
+        (p / "index.html").write_text(
+            f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:,">'
+            f'<title>{e(old_code)} is now {e(new_code)} | AI Governance Radar</title><link rel="canonical" href="{SITE_URL}body/{new_code}/"><meta name="robots" content="noindex">'
+            f'<meta http-equiv="refresh" content="0; url={to}"><script>location.replace("{to}"+location.search+location.hash)</script></head>'
+            f'<body><p>{e(old_code)} is now {e(new_code)}. Continue to <a href="{to}">{e(name)}</a>.</p></body></html>', encoding="utf-8")
     import analysis
     analysis.write(D, recs, out, ctx)
     return n

@@ -73,8 +73,8 @@ def afig(fid, title, takeaway, desc, body, head, rows, note="", legend=""):
 
 
 # ---------------------------------------------------------------- AI-relevant dates for older binding laws
-# Binding-or-mandatory instruments first published before 2016 are mostly general laws (data protection, copyright, sector
-# laws) recorded because a provision now applies to AI. On the adoption curve they are dated by the AI-relevant provision,
+# Instruments first published before 2016 are mostly general binding laws (data protection, copyright, sector
+# laws) recorded because a provision now applies to AI. On the adoption curve (the any-instrument and binding lines) they are dated by the AI-relevant provision,
 # never by the original enactment: (1) a dated government action on the record whose text names the AI-relevant change, else
 # (2) a dated amendment stated in the record's own current_status or summary, quoted below; the quote is checked against the
 # record at every build, so a record edit that removes it drops the date. Records with neither are left off the line and
@@ -97,14 +97,14 @@ AMEND_TEXT = {
 
 
 def ai_dates(D, cids):
-    """{id: (date, basis)} for pre-2016 binding country instruments with an AI-relevant date; and the list without one."""
+    """{id: (date, basis)} for country instruments first published before AI_CUTOFF that have an AI-relevant date; and the list without one."""
     ev = {}
     for c in D["changes"]:
         if c.get("kind") == "world" and c.get("instrument_id") and c.get("type") in ("revised", "adopted", "applied") and c.get("date"):
             if AI_TERMS.search((c.get("title") or "") + " " + (c.get("detail") or "")): ev.setdefault(c["instrument_id"], []).append(c)
     dated, missing = {}, []
     for i in D["instruments"]:
-        if i["jurisdiction_id"] not in cids or kind(i) != "binding" or not i.get("publication_date") or i["publication_date"][:4] >= AI_CUTOFF: continue
+        if i["jurisdiction_id"] not in cids or not i.get("publication_date") or i["publication_date"][:4] >= AI_CUTOFF: continue
         later = sorted((c for c in ev.get(i["id"], []) if c["date"] > i["publication_date"]), key=lambda c: c["date"])
         if later:
             dated[i["id"]] = (later[0]["date"], f'government action: {later[0].get("title")}')
@@ -194,7 +194,7 @@ def fig_years(N, today):
     take = (f"{peak} has the most country instruments ({tot[peak]}). {pct(since23, dated)}% of the {dated:,} dated country instruments were published in 2023 or later; "
             f"{pct(soft, dated)}% of all dated country instruments are non-binding.")
     desc = (f"National, state/provincial and local instruments by publication year. *{keys[-1]} runs to {fmt_date(today)} only. "
-            f"The row beneath the axis counts instruments of regional bodies (EU, GCC, AU, ASEAN, Council of Europe, UNESCO), not stacked.")
+            f"The row beneath the axis counts instruments of regional and international bodies (EU, GCC, AU, ASEAN, Council of Europe, UNESCO, OECD, ICESCO, ALECSO, G7, G20), not stacked.")
     note = f"Undated: {und_c} country, {und_r} regional (not shown)"
     return afig("fig-years", "Instruments per year", take, desc, "".join(o), ["Year", "Binding or mandatory", "Non-binding", "Drafts", "Country total", "Regional bodies"], rows, note, LEGEND), {
         "years_total": sum(tot.values()), "undated_c": und_c, "undated_r": und_r, "regional_dated": sum(reg.values())}
@@ -207,12 +207,13 @@ def fig_adoption(N, today):
         for i in rows:
             y = year(i.get("publication_date"))
             if y is None: continue
-            first_any[c] = min(first_any.get(c, 9999), y)
             if i.get("legal_status") == "national_strategy" and i.get("government_level") == "national":
                 first_strat[c] = min(first_strat.get(c, 9999), y)
+            # records first published before AI_CUTOFF count from their AI-relevant date, or not at all (both lines alike)
+            if i["id"] in N["ai_dated"]: y = int(N["ai_dated"][i["id"]][0][:4])
+            elif i["id"] in N["ai_missing_ids"]: continue
+            first_any[c] = min(first_any.get(c, 9999), y)
             if kind(i) == "binding":
-                if i["id"] in N["ai_dated"]: y = int(N["ai_dated"][i["id"]][0][:4])
-                elif i["id"] in N["ai_missing_ids"]: continue
                 first_bind[c] = min(first_bind.get(c, 9999), y)
     start, last = 2010, int(today[:4])
     ys = list(range(start, last + 1))
@@ -252,16 +253,19 @@ def fig_adoption(N, today):
     pre = {k: sum(1 for v in f.values() if v < start) for k, _, f, _ in series}
     s20 = cum["strat"][ys.index(2020)]
     moved = len(N["ai_dated"]); miss = len(N["ai_missing"])
-    take = (f"By {fmt_date(today)}, {cum['any'][-1]} of 195 countries had at least one recorded instrument, {cum['strat'][-1]} a national AI strategy and "
+    off = sorted(c for c, rows in N["by_c"].items() if rows and c not in first_any)
+    take = (f"By {fmt_date(today)}, {cum['any'][-1]} of 195 countries had at least one recorded instrument with an AI-relevant date, {cum['strat'][-1]} a national AI strategy and "
             f"{cum['bind'][-1]} at least one binding-or-mandatory instrument with an AI-relevant date. Countries with a national AI strategy rose from {s20} at the end of 2020 to {cum['strat'][-1]}.")
     desc = ("Cumulative countries, counted from the date of the earliest qualifying instrument found. The binding-or-mandatory line includes state, provincial and local "
             "instruments and general laws (data protection, copyright, sector laws) that apply to AI: the records do not reliably separate AI-specific laws from these, so "
-            f"one line is shown. Binding instruments first published before {AI_CUTOFF} are dated by the AI-relevant amendment or provision where the record states it "
-            f"({moved} instruments); {miss} with no such date in the record are left off this line until a data pass finds it. The other two lines use publication dates. "
-            f"Regional instruments (such as the EU AI Act) are not counted. *{last} runs to {fmt_date(today)}.")
-    return afig("fig-adoption", "Adoption curve", take, desc, "".join(o), ["End of year", "Countries with at least one instrument", "Countries with a national AI strategy",
+            f"one line is shown. On the any-instrument and binding lines, instruments first published before {AI_CUTOFF} are dated by the AI-relevant amendment or provision "
+            f"where the record states it ({moved} instruments); {miss} with no such date in the record are left off both lines until a data pass finds it"
+            + (f", so {len(off)} countries whose only records are among them ({', '.join(N['jur'][c]['name'] for c in off)}) are not on the any-instrument line yet. " if off else ". ")
+            + 
+            f"The strategy line uses publication dates. Regional instruments (such as the EU AI Act) are not counted. *{last} runs to {fmt_date(today)}.")
+    return afig("fig-adoption", "Adoption curve", take, desc, "".join(o), ["End of year", "Countries with at least one instrument (AI-relevant date)", "Countries with a national AI strategy",
                 "Countries with at least one binding-or-mandatory instrument (AI-relevant date)"], rows,
-                f"Before {start}: {pre['any']} / {pre['strat']} / {pre['bind']} countries (included in the {start} values) · {moved} older binding instruments re-dated, {miss} awaiting an amendment date (research/queue.json)", legend), {
+                f"Before {start}: {pre['any']} / {pre['strat']} / {pre['bind']} countries (included in the {start} values) · {moved} pre-{AI_CUTOFF} instruments re-dated, {miss} awaiting an amendment date (research/queue.json)", legend), {
         "any": cum["any"][-1], "strat": cum["strat"][-1], "bind": cum["bind"][-1], "moved": moved, "missing": miss}
 
 
@@ -510,7 +514,7 @@ def head1(title, desc, canon):
 
 
 def nav(active):
-    links = [("analysis", "Analysis"), ("timeline", "Timeline")]
+    links = [("analysis", "Analysis"), ("timeline", "Timeline"), ("suggest", "Suggest an update")]
     return ('<header class="topnav"><a class="back" id="backToMap" href="../">← World map</a><span class="site">AI Governance Radar</span>'
             '<nav class="toc sitenav" aria-label="Site">' + "".join(f'<a href="../{k}/"{" aria-current=page" if k == active else ""}>{v}</a>' for k, v in links)
             + '<a href="../?about=method">Methodology</a></nav></header>')
@@ -518,7 +522,7 @@ def nav(active):
 
 def foot(D):
     return (f'<footer class="pagefoot"><p>AI Governance Radar · official government sources only · data as of {e(fmt_date(D["meta"].get("build_date")))}</p>'
-            '<p><a href="../">World map</a> · <a href="../analysis/">Analysis</a> · <a href="../timeline/">Timeline</a> · <a href="../?about=method">Methodology</a></p></footer>')
+            '<p><a href="../">World map</a> · <a href="../analysis/">Analysis</a> · <a href="../timeline/">Timeline</a> · <a href="../suggest/">Suggest an update</a> · <a href="../?about=method">Methodology</a></p></footer>')
 
 
 DISCOVERY = "Recent years are better represented: newer documents are more often online, so growth since 2023 is partly a discovery effect."
@@ -636,8 +640,39 @@ def timeline_page(D, ctx):
     return "".join(H)
 
 
+# ---------------------------------------------------------------- update requests
+REPO_URL = "https://github.com/AlsallumUW/ai-governance-radar"
+SUGGEST_NOTE = "Suggestions are checked against official sources before anything is added. Submitting requires a free GitHub account."
+
+
+def suggest_page(D, ctx):
+    """A static form that opens a prefilled GitHub issue (template update-request.yml). No server, no e-mail."""
+    canon = f"{SITE_URL}suggest/"
+    title = "Suggest an update | AI Governance Radar"
+    desc = "Suggest a new AI-governance document, a correction, a status change or a broken link. Suggestions are checked against official sources."
+    juris = sorted(D["jurisdictions"], key=lambda j: (j["type"] != "country", j["name"]))
+    opts = ('<optgroup label="Countries">' + "".join(f'<option value="{e(j["id"])}">{e(j["name"])}</option>' for j in juris if j["type"] == "country") + '</optgroup>'
+            '<optgroup label="International bodies">' + "".join(f'<option value="{e(j["id"])}">{e(j["name"])}</option>' for j in juris if j["type"] != "country") + '</optgroup>')
+    kinds = ["New instrument", "Correction", "Status change", "Broken link"]
+    H = [head1(title, desc, canon), '<body class="cp sg">', nav("suggest"), '<main class="page">']
+    H.append('<header class="hero sg-hero"><p class="eyebrow">Update requests</p><h1>Suggest an update</h1>'
+             '<p class="stats-note">Found a new official AI-governance document, an error, a change of status or a broken link? Send it here. '
+             'Please give the official source: the document itself or the issuing body\'s own page. News articles, aggregators and social media cannot be used.</p></header>')
+    H.append(f'<form class="sg-form" id="sgForm" data-repo="{e(REPO_URL)}" novalidate>'
+             f'<label>Country or body<select name="country" id="sgCountry" required><option value="">Choose…</option>{opts}</select></label>'
+             '<fieldset><legend>What is new or wrong?</legend>' + "".join(
+                 f'<label class="radio"><input type="radio" name="change_type" value="{e(k)}"{" checked" if n == 0 else ""}> {e(k)}</label>' for n, k in enumerate(kinds)) + '</fieldset>'
+             '<label>Official source URL <span class="req">(required)</span><input type="url" name="source_url" id="sgUrl" required placeholder="https://" inputmode="url" autocomplete="off"></label>'
+             '<label>Notes<textarea name="notes" rows="5" placeholder="What should change, and where on the site (instrument title or page)."></textarea></label>'
+             '<p class="sg-error" id="sgError" role="alert" hidden></p>'
+             '<p class="sg-actions"><button type="submit" class="btn btn-primary">Open a GitHub issue</button></p>'
+             f'<p class="sg-note">{e(SUGGEST_NOTE)}</p></form>')
+    H.append('</main>' + foot(D) + '<script src="../assets/suggest.js" defer></script></body></html>')
+    return "".join(H)
+
+
 def write(D, recs, out, ctx):
-    for p, html_ in (("analysis", analysis_page(D, recs, ctx)), ("timeline", timeline_page(D, ctx))):
+    for p, html_ in (("analysis", analysis_page(D, recs, ctx)), ("timeline", timeline_page(D, ctx)), ("suggest", suggest_page(D, ctx))):
         (out / p).mkdir(parents=True, exist_ok=True)
         (out / p / "index.html").write_text(html_, encoding="utf-8")
 

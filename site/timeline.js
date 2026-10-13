@@ -21,6 +21,7 @@ const fromSel=form.elements.from,toSel=form.elements.to;
 for(let y=Y0;y<=Y1;y++){fromSel.add(new Option(y,y));toSel.add(new Option(y,y))}
 fromSel.remove(0);toSel.remove(0);
 function readURL(){const q=new URLSearchParams(location.search),f={};KEYS.forEach(k=>f[k]=q.get(k)||'');
+  const ALIAS={ISESCO:'ICESCO'};if(ALIAS[f.body])f.body=ALIAS[f.body];if(ALIAS[f.country])f.country=ALIAS[f.country];
   if(f.country&&!J[f.country])f.country='';if(f.body&&!T.bodies[f.body])f.body='';
   f.from=+f.from||DEF_FROM;f.to=+f.to||Y1;f.from=Math.min(Math.max(f.from,Y0),Y1);f.to=Math.min(Math.max(f.to,f.from),Y1);return f}
 function writeURL(f){const q=new URLSearchParams();KEYS.forEach(k=>{const v=f[k];if(k==='from'&&+v===DEF_FROM)return;if(k==='to'&&+v===Y1)return;if(v)q.set(k,v)});
