@@ -50,6 +50,11 @@ The scheduled task runs **every day at 06:00 Riyadh time**. Each run sweeps one 
 5. **Regional bodies (Day 1 only).** Sweep `data/regional/*.json` the same way. Also keep the CETS 225 `party_status` in `data/regional/COE.json` current:
    - `signed` comes from the Council of Europe's official treaty page.
    - `ratified` needs the country's own ratification act as the source (gazette, legislation portal or official treaty series). Until the act's publication is confirmed, keep the country `signed`, hold the act as a lead in the country file, and explain in `note`.
+   - **Update requests (Day 1, Monday only).** List the open issues labelled `update-request` (opened from the site's "Suggest an update" form; template `.github/ISSUE_TEMPLATE/update-request.yml`). For each one:
+     - Verify the suggestion against official sources under PROTOCOL.md, starting from the source URL given. A suggestion is never a source in itself, and neither is a news article it links.
+     - **Verified:** make the change on `$BR` (new record, correction, status change or link fix), commit it with the issue number in the message, list it in the PR's Day 1 section, and reply on the issue with what changed and the PR link.
+     - **Not verified or out of scope:** reply on the issue saying why (for example: no official text found, fails the scope test, date not printed in the document, already recorded) and what would let it be added.
+     - Never close an issue without a reply. Close it only after replying, once the change is in the weekly PR or the reply explains why nothing will change; otherwise leave it open with a reply saying what is pending.
 6. **Retry and Convention 108 for today's group.** Retry countries are tried here once, beyond the 5-minute sweep.
    - **Retry:** for each country in today's group that is on `retry`, try once to load the blocked official sites. `retry_notes` and `coverage_audit.no_material_found_note` list them. Use curl (`--max-time 60`, browser user agent), then WebFetch.
      - **A site now loads:** read the blocked items, promote leads that pass the rules, upgrade `primary_source_located` records you can now read, and fix anything that does not match.
