@@ -10,15 +10,15 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": "Thailand governs AI through the Cabinet-approved National AI Action Plan 2022-2027, voluntary governance guidance from the Electronic Transactions Development Agency (ETDA) and the digital economy ministry, including a 2024 generative AI governance guideline for organisations, and the Personal Data Protection Act 2019. The Bank of Thailand issued an AI risk management policy guideline for financial institutions in September 2025. A risk-based AI law remains a draft that ETDA is revising after a 2025 public consultation.",
+    "summary": "Thailand governs AI through soft law and sector rules: the National AI Action Plan 2022-2027, guidelines from the Electronic Transactions Development Agency (ETDA) on generative AI and AI governance, AI risk-management guidelines from the Bank of Thailand and the insurance regulator, and national adoptions of the ISO/IEC 42001, 23894 and 42005 AI standards. The 2019 Personal Data Protection Act governs data used in AI. ETDA's consolidated Draft Artificial Intelligence Act, which replaced earlier drafts from 2023 and 2025, went to public hearing in July-August 2026 and awaits Cabinet approval.",
     "lead_institutions": [
       "Ministry of Digital Economy and Society",
       "Electronic Transactions Development Agency (ETDA)",
       "Ministry of Higher Education, Science, Research and Innovation",
       "Bank of Thailand"
     ],
-    "last_deep_review": "2026-10-12",
-    "review_notes": "This review was completed on 12 October 2026 and covers national law, government, ministries and regulators. The draft AI law and the 2021 AI Ethics Guideline could not be read on official sites and are listed as leads."
+    "last_deep_review": "2026-10-13",
+    "review_notes": "This review was first completed on 12 October 2026 and redone in a longer pass on 13 October 2026, covering the central law portal, Parliament, the government, each ministry and each sector regulator. The Royal Gazette's search and the securities, data protection and cybersecurity regulators' websites could not be accessed, so their AI guidance is tracked as leads, together with a Supreme Court AI instruction and a higher-education AI notification."
   },
   "instruments": [
     {
@@ -37,7 +37,7 @@
       "legal_status": "national_strategy",
       "lifecycle": "adopted",
       "publication_date": "2022-07-26",
-      "current_status": "In force for 2022-2027. The title page states the version approved by the Cabinet on 26 July 2565 (2022). A progress deck published on ai.in.th (Key Milestones and Progress, updated June 2026) reports an action plan revision for 2026-2027 after the National AI Committee meeting of 1 May 2025; a follow-on plan for 2028-2032 has been reported but no official document was found (see leads). An English summary is also published on ai.in.th.",
+      "current_status": "Adopted plan covering 2022-2027. The title page states the version approved by the Cabinet on 26 July 2565 (2022). A 'Key Milestones and Progress' deck listed on the ai.in.th plan page reports an action plan revision for 2026-2027 after the National AI Committee meeting of 1 May 2025; a follow-on plan for 2028-2032 has been reported but no official document was found (see leads). An English summary of the plan is also published on ai.in.th.",
       "summary": "Six-year national AI action plan approved by the Cabinet on 26 July 2022, with the vision of a complete, integrated AI ecosystem that raises the economy and quality of life by 2027. It sets five strategies: preparing society, ethics, law and regulation for AI (ELSI); national AI infrastructure; AI workforce development (at least 30,000 AI personnel); AI technology and innovation; and promoting AI adoption in the public and private sectors, including sandbox mechanisms for AI start-ups. It assigns implementation to a national AI committee and lead agencies under the two proposing ministries.",
       "ai_governance_relevance": "Current national AI strategy; anchors ETDA's AI governance work, the AI ethics agenda and the draft AI law.",
       "source_url": "https://www.ai.in.th/wp-content/uploads/2022/12/20220726-AI.pdf",
@@ -66,14 +66,14 @@
       "regional_applicability": [],
       "metadata_gaps": [],
       "language": "th",
-      "verification_date": "2026-10-12",
+      "verification_date": "2026-10-13",
       "first_recorded": "2026-10-12",
       "last_changed": null,
       "verification_level": "reviewed_primary_metadata",
       "link_status": "reachable",
       "document_access_type": "original_government_document",
       "source_id": "s-242b317ef5d4",
-      "evidence_reference": "curl (browser user agent, --max-time 60): full 251-page PDF read (pdftotext); title page states Cabinet approval on 26 July 2565 (2022); linked from the ai.in.th national AI plan page (NECTEC/NSTDA)."
+      "evidence_reference": "Re-checked 2026-10-13: curl (browser user agent, --max-time 60) full 251-page PDF read with pdftotext; title page states Cabinet approval on 26 July 2565 (2022); linked from the ai.in.th national AI plan page (NECTEC/NSTDA), whose listing was also read via WebFetch."
     },
     {
       "id": "i-88a1b2dcd848",
@@ -118,14 +118,14 @@
       "regional_applicability": [],
       "metadata_gaps": [],
       "language": "th",
-      "verification_date": "2026-10-12",
+      "verification_date": "2026-10-13",
       "first_recorded": "2026-10-12",
       "last_changed": null,
       "verification_level": "reviewed_primary_metadata",
       "link_status": "reachable",
       "document_access_type": "original_government_document",
       "source_id": "s-0af66ba4fe01",
-      "evidence_reference": "curl (browser user agent, --max-time 60): full PDF read (pdftotext), cover dated 12 September 2568 (2025); draft hearing PDF also read."
+      "evidence_reference": "Re-checked 2026-10-13: curl (browser user agent, --max-time 60) HTTP 200, full 13-page PDF read with pdftotext; cover dated 12 กันยายน 2568 (12 September 2025) and issued by the BOT IT Risk Supervision and Examination Department."
     },
     {
       "id": "i-d20a025c59ce",
@@ -141,7 +141,7 @@
       "legal_status": "nonbinding_guidance",
       "lifecycle": "published",
       "publication_date": "2024-10-30",
-      "current_status": "Announced by MDES and ETDA on 30 October 2024 (ETDA news page dated 30 Oct 2567). The PDF currently served from the ETDA e-book page is version 2.0 dated 25 November 2024 (file name). Voluntary guidance.",
+      "current_status": "Announced by MDES and ETDA on 30 October 2024 (ETDA news page dated 30 ต.ค. 67, which links the e-book page carrying this PDF). The e-book currently served is a later revision of the launch text; no revision date is printed in the document. Voluntary guidance.",
       "summary": "Guideline for executives and staff of public and private organisations on governing the use of generative AI. Its five chapters explain generative AI, its benefits and limitations, its risks and how to manage them, models for deploying it in an organisation, and key considerations for governed use, with an appendix containing a sample organisational generative AI use policy. It extends ETDA's AI Governance Guideline for Executives and is voluntary.",
       "ai_governance_relevance": "National generative-AI governance guidance from the AI Governance Center.",
       "source_url": "https://www.etda.or.th/getattachment/6050a4b7-defd-4dba-8cbc-ff6a444a3d08/20241125-Generative-AI-Guideline_V2-0.pdf.aspx",
@@ -170,14 +170,14 @@
       "regional_applicability": [],
       "metadata_gaps": [],
       "language": "th",
-      "verification_date": "2026-10-12",
+      "verification_date": "2026-10-13",
       "first_recorded": "2026-10-12",
       "last_changed": null,
       "verification_level": "reviewed_primary_metadata",
       "link_status": "reachable",
       "document_access_type": "original_government_document",
       "source_id": "s-dcad222d2c88",
-      "evidence_reference": "curl (browser user agent, --max-time 60): full 63-page PDF read (pdftotext); launch date from ETDA news page https://www.etda.or.th/th/pr-news/AI_Gov_Anual.aspx (30 Oct 2567), which links the e-book page carrying this PDF."
+      "evidence_reference": "Re-checked 2026-10-13: curl (browser user agent, --max-time 60) HTTP 200, full 63-page PDF read with pdftotext; launch date from ETDA news page https://www.etda.or.th/th/pr-news/AI_Gov_Anual.aspx (30 ต.ค. 67), re-read by curl."
     },
     {
       "id": "i-256f87252fba",
@@ -193,7 +193,7 @@
       "legal_status": "nonbinding_guidance",
       "lifecycle": "published",
       "publication_date": "2023",
-      "current_status": "Published on the ETDA AIGC Research and Recommendation page; only the year 2023 is stated (file name). An ETDA news item of 29 August 2023 describes the Thai-language version 'แนวทางการประยุกต์ใช้ปัญญาประดิษฐ์อย่างมีธรรมาภิบาลสำหรับผู้บริหารองค์กร' as Thailand's first AI governance guideline; the Thai edition file was not located.",
+      "current_status": "Listed under the year heading '2023' on ETDA's AIGC Research and Recommendation page (the issuer's own page); no day or month is stated. An ETDA news item of 29 August 2023 describes the Thai-language version 'แนวทางการประยุกต์ใช้ปัญญาประดิษฐ์อย่างมีธรรมาภิบาลสำหรับผู้บริหารองค์กร' as Thailand's first AI governance guideline; the Thai edition file was not located.",
       "summary": "ETDA's first AI governance guideline for organisational leaders, presented as an English-language deck. It sets out a governance framework of three components (AI governance structure, AI strategy including responsible-AI strategy and AI risk management, and AI operation across the lifecycle), restates Thailand's six AI ethics principles, and maps practice to standards such as ISO/IEC 23894 and the NIST AI RMF. It is voluntary guidance for executives of public and private organisations.",
       "ai_governance_relevance": "Baseline national AI governance guideline later extended by the generative AI guideline.",
       "source_url": "https://www.etda.or.th/getattachment/Our-Service/AIGC/Research-and-Recommendation/Thailand%E2%80%99s-AI-Governance-Guideline-for-Executive_2023.pdf.aspx?lang=th-TH",
@@ -221,18 +221,18 @@
       "related_instruments": [],
       "regional_applicability": [],
       "metadata_gaps": [
-        "exact publication date not stated (year only)",
+        "exact publication date not stated (year only, from the issuer's listing page)",
         "Thai-language edition not located"
       ],
       "language": "en",
-      "verification_date": "2026-10-12",
+      "verification_date": "2026-10-13",
       "first_recorded": "2026-10-12",
       "last_changed": null,
       "verification_level": "reviewed_primary_metadata",
       "link_status": "reachable",
       "document_access_type": "original_government_document",
       "source_id": "s-a587f8110a36",
-      "evidence_reference": "curl (browser user agent, --max-time 60): full English PDF (presentation) read with pdftotext; listed on the ETDA AIGC Research and Recommendation page."
+      "evidence_reference": "Re-checked 2026-10-13: curl (browser user agent, --max-time 60) HTTP 200, full 18-page English PDF read with pdftotext (no date printed in the document); year taken from the '2023' heading under which ETDA lists it on https://www.etda.or.th/th/Our-Service/AIGC/ResearchandRec.aspx (read by curl), not from the file name."
     },
     {
       "id": "i-d415ff7d36b5",
@@ -246,7 +246,7 @@
       "legal_status": "nonbinding_guidance",
       "lifecycle": "published",
       "publication_date": "2023",
-      "current_status": "2023 edition (year stated in the file name and by ETDA as the first, baseline year). ETDA and NSTDA released a 2024 follow-up survey on 15 October 2024 (ETDA news page); a Thailand AI Readiness Assessment 2026 is listed on ai.in.th.",
+      "current_status": "Listed under the year heading '2023' on ETDA's AIGC Research and Recommendation page (the issuer's own page); no day or month is stated. ETDA and NSTDA released a 2024 follow-up survey on 15 October 2024 (ETDA news list); a Thailand AI Readiness Assessment 2026 page is listed on ai.in.th.",
       "summary": "Government study by ETDA and NSTDA measuring the readiness of Thai public and private organisations to adopt AI for digital services, carried out to support the National AI Action Plan 2022-2027. It reports survey results on AI adoption, defines an AI readiness measurement and proposes future programmes and an AI governance framework for adoption. It is the 2023 baseline for later annual readiness surveys.",
       "ai_governance_relevance": "Government-published AI readiness assessment.",
       "source_url": "https://www.etda.or.th/getattachment/Our-Service/AIGC/Research-and-Recommendation/Thailand-AI-Readiness_Report-2023_AIGC.pdf.aspx?lang=th-TH",
@@ -274,17 +274,17 @@
       "related_instruments": [],
       "regional_applicability": [],
       "metadata_gaps": [
-        "exact publication date not stated (year only)"
+        "exact publication date not stated (year only, from the issuer's listing page)"
       ],
       "language": "th",
-      "verification_date": "2026-10-12",
+      "verification_date": "2026-10-13",
       "first_recorded": "2026-10-12",
       "last_changed": null,
       "verification_level": "reviewed_primary_metadata",
       "link_status": "reachable",
       "document_access_type": "original_government_document",
       "source_id": "s-7ed63dfde707",
-      "evidence_reference": "curl (browser user agent, --max-time 60): full 42-page PDF (slides) read with pdftotext; listed on the ETDA AIGC Research and Recommendation page."
+      "evidence_reference": "Re-checked 2026-10-13: curl (browser user agent, --max-time 60) HTTP 200, full 42-page PDF (slides) read with pdftotext; year taken from the '2023' heading on https://www.etda.or.th/th/Our-Service/AIGC/ResearchandRec.aspx (read by curl), not from the file name."
     },
     {
       "id": "i-a754e0399fcd",
@@ -298,7 +298,7 @@
       "legal_status": "binding_law",
       "lifecycle": "in_force",
       "publication_date": "2019-05-27",
-      "current_status": "In force. Section 2 brings the Act into force the day after publication (28 May 2019), except chapters 2, 3, 5, 6 and 7 and sections 95-96, which were to apply one year after publication; that later date was postponed by royal decrees (not re-read in this review; the obligations are generally reported to apply from 1 June 2022).",
+      "current_status": "In force. Section 2 brings the Act into force the day after publication in the Royal Gazette (28 May 2019), except chapters 2, 3, 5, 6 and 7 and sections 95-96, which were to apply one year after publication; that later date was postponed by royal decrees (the 2021 decree in Royal Gazette vol. 138 part 32 Kor could not be opened in this review). The PDPC put a draft replacement Personal Data Protection Act to public consultation on law.go.th from 7 to 21 November 2025; its explanatory note contains no AI or automated decision-making provisions (see leads).",
       "summary": "Thailand's general data protection law, published in the Royal Gazette (vol. 136, part 69 Kor, p. 52) on 27 May 2019. It governs collection, use and disclosure of personal data, including for training and operating AI systems, sets lawful bases, data-subject rights, sensitive-data rules and cross-border transfer conditions, and establishes the Personal Data Protection Committee and its office. It has no AI-specific provisions.",
       "ai_governance_relevance": "General data protection law that applies to AI training and use.",
       "source_url": "https://ratchakitcha.soc.go.th/documents/17082307.pdf",
@@ -327,14 +327,396 @@
       "regional_applicability": [],
       "metadata_gaps": [],
       "language": "th",
-      "verification_date": "2026-10-12",
+      "verification_date": "2026-10-13",
       "first_recorded": "2026-10-12",
       "last_changed": null,
       "verification_level": "reviewed_primary_metadata",
       "link_status": "reachable",
       "document_access_type": "original_government_document",
       "source_id": "s-68a005b4521d",
-      "evidence_reference": "curl (browser user agent, --max-time 60): full 44-page Royal Gazette PDF read (pdftotext); gazette reference and section 2 confirmed."
+      "evidence_reference": "Re-checked 2026-10-13: curl (browser user agent, --max-time 60) HTTP 200, full 44-page Royal Gazette PDF read with pdftotext; gazette reference (vol. 136, part 69 Kor, p. 52, 27 May 2019) and section 2 confirmed."
+    },
+    {
+      "id": "i-3e42726f8feb",
+      "official_title": "ร่างพระราชบัญญัติว่าด้วยปัญญาประดิษฐ์ พ.ศ. ....",
+      "authority_type": "government",
+      "jurisdiction_id": "THA",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Thailand (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "verification_date": "2026-10-13",
+      "first_recorded": "2026-10-13",
+      "last_changed": null,
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "sectors": [
+        "cross-sector"
+      ],
+      "english_title": "Draft Artificial Intelligence Act B.E. ....",
+      "issuing_authority": "Electronic Transactions Development Agency, Ministry of Digital Economy and Society (draft for public hearing)",
+      "categories": [
+        "drafts",
+        "binding-law",
+        "generative-ai",
+        "transparency",
+        "sandbox",
+        "risk-assurance"
+      ],
+      "category": "drafts",
+      "legal_status": "consultation_draft",
+      "lifecycle": "consultation",
+      "publication_date": "2026-07-09",
+      "current_status": "Draft bill put to public hearing by ETDA on the Central Law System (law.go.th) from 9 July to 14 August 2026; the hearing has closed and no hearing summary or Cabinet approval was found. Not yet submitted to Parliament. It consolidates ETDA's earlier draft principles (2025) and draft AI promotion bill (2023). Draft section 2: in force the day after Royal Gazette publication, with chapters 3-5 applying 180 days later.",
+      "summary": "ETDA's consolidated draft Artificial Intelligence Act, put to public hearing in July-August 2026, combining AI promotion and risk-based regulation. It provides AI testing (sandbox) projects, data sharing, standards and certification of support services; prohibits AI uses that manipulate users through subliminal techniques or cause wide-scale unfair discrimination; lets royal decrees designate high-risk AI (for health, environment, energy, telecoms, transport and similar areas) with duties for providers and deployers, plus transparency duties for deepfakes and chatbots. It gives the supervising office powers to order corrections and suspend services in serious incidents, and sets civil liability and administrative fines of up to 5 million baht.",
+      "ai_governance_relevance": "Thailand's main draft horizontal AI law.",
+      "source_url": "https://law.go.th/listeningDetail?survey_id=NzU4MERHQV9MQVdfRlJPTlRFTkQ=",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://law.go.th/listeningDetail?survey_id=NzU4MERHQV9MQVdfRlJPTlRFTkQ=",
+      "source_kind": "consultation_portal",
+      "organization_id": "o-e98ac1896a69",
+      "publisher_name": "Office of the Council of State (Central Law System, law.go.th)",
+      "language": "th",
+      "verification_level": "reviewed_primary_metadata",
+      "source_id": "s-41819c7a3734",
+      "evidence_reference": "law.go.th survey 7580 read via its API (curl); attached draft bill PDF read in full with pdftotext (615 lines, 7 chapters, sections 1-63+)."
+    },
+    {
+      "id": "i-e28f56f4c48d",
+      "official_title": "(ร่าง) หลักการของกฎหมายว่าด้วยปัญญาประดิษฐ์",
+      "authority_type": "government",
+      "jurisdiction_id": "THA",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Thailand (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [
+        "i-3e42726f8feb"
+      ],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "verification_date": "2026-10-13",
+      "first_recorded": "2026-10-13",
+      "last_changed": null,
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "sectors": [
+        "cross-sector"
+      ],
+      "english_title": "Draft Principles of the Law on Artificial Intelligence",
+      "issuing_authority": "Electronic Transactions Development Agency, Ministry of Digital Economy and Society",
+      "categories": [
+        "drafts",
+        "binding-law",
+        "risk-assurance",
+        "historical"
+      ],
+      "category": "drafts",
+      "legal_status": "consultation_draft",
+      "lifecycle": "superseded",
+      "publication_date": "2025-05-10",
+      "current_status": "Put to public hearing on law.go.th from 10 May to 24 June 2025 (dates stated in the hearing conclusion on law.go.th); 93 respondents, mostly supportive. A hearing summary was posted on 22 April 2026. Followed by the full Draft Artificial Intelligence Act put to hearing on 9 July 2026, which supersedes these principles.",
+      "summary": "ETDA's draft principles for Thailand's first AI law, published for public hearing in May-June 2025. They propose a risk-based framework under which prohibited-risk and high-risk AI are not listed in the law itself but defined jointly by the enforcing agency and sector regulators, with duties falling on AI providers, deployers, importers and distributors. The consultation record states the principles create no licensing system, no new committee and no criminal penalties.",
+      "ai_governance_relevance": "Policy blueprint for the 2026 draft AI Act.",
+      "source_url": "https://law.go.th/listeningDetail?survey_id=NTMxNkRHQV9MQVdfRlJPTlRFTkQ=",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://law.go.th/listeningDetail?survey_id=NTMxNkRHQV9MQVdfRlJPTlRFTkQ=",
+      "source_kind": "consultation_portal",
+      "organization_id": "o-e98ac1896a69",
+      "publisher_name": "Office of the Council of State (Central Law System, law.go.th)",
+      "language": "th",
+      "verification_level": "reviewed_primary_metadata",
+      "source_id": "s-6776cd0b04d8",
+      "evidence_reference": "law.go.th survey 5316 record read via its API with curl (problem statement, principles, affected parties, necessity checklist and hearing conclusion)."
+    },
+    {
+      "id": "i-2b467f4050fb",
+      "official_title": "(ร่าง) พระราชบัญญัติว่าด้วยการส่งเสริมและสนับสนุนนวัตกรรมปัญญาประดิษฐ์แห่งประเทศไทย พ.ศ. ....",
+      "authority_type": "government",
+      "jurisdiction_id": "THA",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Thailand (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [
+        "i-3e42726f8feb"
+      ],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "verification_date": "2026-10-13",
+      "first_recorded": "2026-10-13",
+      "last_changed": null,
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "sectors": [
+        "cross-sector"
+      ],
+      "english_title": "Draft Act on the Promotion and Support of Artificial Intelligence Innovation in Thailand B.E. ....",
+      "issuing_authority": "Electronic Transactions Development Agency, Ministry of Digital Economy and Society",
+      "categories": [
+        "drafts",
+        "historical",
+        "sandbox",
+        "risk-assurance"
+      ],
+      "category": "drafts",
+      "legal_status": "consultation_draft",
+      "lifecycle": "superseded",
+      "publication_date": "2023-07-18",
+      "current_status": "Put to public hearing on law.go.th from 18 July to 20 August 2023 together with two draft ETDA notices under it (AI risk-assessment guidance and an AI sandbox; see leads). Not enacted; ETDA later consolidated it with its AI regulation drafts into the 2026 Draft Artificial Intelligence Act.",
+      "summary": "ETDA's 2023 draft AI promotion bill, designed to build an AI ecosystem with as few restrictive measures as possible. It provides seven tools: registration of AI, an AI innovation testing centre (sandbox), data sharing, standards, risk assessment, standard contract terms, and a fund to compensate damage from AI use, with the Minister of Digital Economy and Society in charge and a five-yearly review of the Act.",
+      "ai_governance_relevance": "Earlier draft AI law, kept for the timeline.",
+      "source_url": "https://law.go.th/listeningDetail?survey_id=MjM4MkRHQV9MQVdfRlJPTlRFTkQ=",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://law.go.th/listeningDetail?survey_id=MjM4MkRHQV9MQVdfRlJPTlRFTkQ=",
+      "source_kind": "consultation_portal",
+      "organization_id": "o-e98ac1896a69",
+      "publisher_name": "Office of the Council of State (Central Law System, law.go.th)",
+      "language": "th",
+      "verification_level": "reviewed_primary_metadata",
+      "source_id": "s-e302188b8ee2",
+      "evidence_reference": "law.go.th survey 2382 record read via its API with curl; draft bill PDF read with pdftotext (sections 1-5 confirmed)."
+    },
+    {
+      "id": "i-742ace78fe0d",
+      "official_title": "แนวปฏิบัติ เรื่อง การกำกับดูแลการใช้งานปัญญาประดิษฐ์ สำหรับบริษัทประกันภัย (AI Governance Guideline)",
+      "authority_type": "regulator",
+      "jurisdiction_id": "THA",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Thailand (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [
+        "exact day of publication not stated (month only)"
+      ],
+      "verification_date": "2026-10-13",
+      "first_recorded": "2026-10-13",
+      "last_changed": null,
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "sectors": [
+        "insurance"
+      ],
+      "english_title": "Guideline on the Governance of Artificial Intelligence Use for Insurance Companies (AI Governance Guideline)",
+      "issuing_authority": "Office of Insurance Commission (Information Technology Group)",
+      "categories": [
+        "sectoral",
+        "risk-assurance",
+        "generative-ai",
+        "transparency"
+      ],
+      "category": "sectoral",
+      "legal_status": "regulatory_opinion",
+      "lifecycle": "published",
+      "publication_date": "2025-11",
+      "current_status": "Published November 2025 (month and year printed on the cover; no day stated). It supplements OIC notices and guidelines already in force, such as IT risk management and outsourcing rules.",
+      "summary": "OIC guideline for insurance companies on managing the new risks of using AI, applied proportionately to risk with emphasis on customer-facing and high-risk uses such as underwriting, premium setting and claims handling. It has four parts: AI governance (board oversight, an AI policy within enterprise risk management, three lines of defence and at least annual reporting on AI risk), robustness and AI security, transparency and explainability, and fairness and consumer protection. It also covers third-party AI services, human oversight levels and generative AI hallucination risks.",
+      "ai_governance_relevance": "Insurance regulator's AI governance expectations.",
+      "source_url": "https://www.oic.or.th/web-upload/1xff0d34e409a13ef56eea54c52a291126/m_document/3014/7538/file_download/ee6b2c168a27527cdc5d77568407d21b.pdf",
+      "official_pdf_url": "https://www.oic.or.th/web-upload/1xff0d34e409a13ef56eea54c52a291126/m_document/3014/7538/file_download/ee6b2c168a27527cdc5d77568407d21b.pdf",
+      "official_webpage_url": null,
+      "source_kind": "official_document",
+      "organization_id": "o-276907c2a26e",
+      "publisher_name": "Office of Insurance Commission",
+      "language": "th",
+      "verification_level": "reviewed_primary_metadata",
+      "source_id": "s-1e7faec83690",
+      "evidence_reference": "curl: full PDF read with pdftotext; cover date November 2568 (2025)."
+    },
+    {
+      "id": "i-aa6d7873a932",
+      "official_title": "เทคโนโลยีสารสนเทศ - ปัญญาประดิษฐ์ - ระบบการจัดการ (มตช. 42001-2567)",
+      "authority_type": "government",
+      "jurisdiction_id": "THA",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Thailand (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [
+        "full standard text is sold by TISI and was not read; metadata from TISI's official catalogue",
+        "gazette volume and page not stated in the catalogue"
+      ],
+      "verification_date": "2026-10-13",
+      "first_recorded": "2026-10-13",
+      "last_changed": null,
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "sectors": [
+        "cross-sector"
+      ],
+      "english_title": "TCAS 42001-2567 Information technology - Artificial intelligence - Management system (national adoption of ISO/IEC 42001)",
+      "issuing_authority": "Thai Industrial Standards Institute, Ministry of Industry",
+      "categories": [
+        "standards",
+        "risk-assurance"
+      ],
+      "category": "standards",
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2024-07-17",
+      "current_status": "Published in the Royal Gazette on 17 July 2024 according to TISI's official standards catalogue. Voluntary standard. TISI has also issued มตช. 42006-2568 (requirements for bodies certifying AI management systems; no gazette date shown).",
+      "summary": "Thai national certification standard (มตช.) adopting ISO/IEC 42001, setting requirements for establishing, implementing, maintaining and continually improving an AI management system within an organisation. It applies to any organisation, whatever its size or type, that provides or uses AI-based products or services, and is the basis for certifying AI management systems in Thailand. Use is voluntary.",
+      "ai_governance_relevance": "National adoption of an ISO/IEC AI standard.",
+      "source_url": "https://service.tisi.go.th/tisi-standard-shop/item/nac/159",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://service.tisi.go.th/tisi-standard-shop/item/nac/159",
+      "source_kind": "official_publication",
+      "organization_id": "o-fd3907eb89ca",
+      "publisher_name": "Thai Industrial Standards Institute",
+      "language": "th",
+      "verification_level": "primary_source_located",
+      "source_id": "s-13f2e482bcc8",
+      "evidence_reference": "TISI official catalogue record (tbl=nac, id=159) read via curl; gazette date 2024-07-17 as stated by TISI."
+    },
+    {
+      "id": "i-94225599af02",
+      "official_title": "เทคโนโลยีสารสนเทศ - ปัญญาประดิษฐ์ - ข้อแนะนำการจัดการความเสี่ยง (มอก. 23894-2567)",
+      "authority_type": "government",
+      "jurisdiction_id": "THA",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Thailand (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [
+        "full standard text is sold by TISI and was not read; metadata from TISI's official catalogue",
+        "gazette volume and page not stated in the catalogue"
+      ],
+      "verification_date": "2026-10-13",
+      "first_recorded": "2026-10-13",
+      "last_changed": null,
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "sectors": [
+        "cross-sector"
+      ],
+      "english_title": "TIS 23894-2567 Information technology - Artificial intelligence - Guidance on risk management (national adoption of ISO/IEC 23894)",
+      "issuing_authority": "Thai Industrial Standards Institute, Ministry of Industry",
+      "categories": [
+        "standards",
+        "risk-assurance"
+      ],
+      "category": "standards",
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2025-10-15",
+      "current_status": "Published in the Royal Gazette on 15 October 2025 according to TISI's official standards catalogue. Voluntary standard; one of about a dozen ISO/IEC AI standards TISI has adopted since 2023 (see leads).",
+      "summary": "Thai Industrial Standard adopting ISO/IEC 23894, giving guidance to organisations that develop, produce, deploy or use AI-based products, systems and services on managing AI-specific risks. It explains how to integrate AI risk management into an organisation's activities and functions and describes processes for implementing it. It is a voluntary general standard.",
+      "ai_governance_relevance": "National adoption of an ISO/IEC AI standard.",
+      "source_url": "https://service.tisi.go.th/tisi-standard-shop/item/tis/8839",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://service.tisi.go.th/tisi-standard-shop/item/tis/8839",
+      "source_kind": "official_publication",
+      "organization_id": "o-fd3907eb89ca",
+      "publisher_name": "Thai Industrial Standards Institute",
+      "language": "th",
+      "verification_level": "primary_source_located",
+      "source_id": "s-7fa1f272204f",
+      "evidence_reference": "TISI official catalogue record (tbl=tis, id=8839) read via curl; gazette date 2025-10-15 as stated by TISI."
+    },
+    {
+      "id": "i-412597e7de55",
+      "official_title": "เทคโนโลยีสารสนเทศ - ปัญญาประดิษฐ์ - การประเมินผลกระทบของระบบปัญญาประดิษฐ์ (มตช. 42005-2568)",
+      "authority_type": "government",
+      "jurisdiction_id": "THA",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Thailand (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [
+        "full standard text is sold by TISI and was not read; metadata from TISI's official catalogue",
+        "gazette volume and page not stated in the catalogue"
+      ],
+      "verification_date": "2026-10-13",
+      "first_recorded": "2026-10-13",
+      "last_changed": null,
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "sectors": [
+        "cross-sector"
+      ],
+      "english_title": "TCAS 42005-2568 Information technology - Artificial intelligence - AI system impact assessment (national adoption of ISO/IEC 42005)",
+      "issuing_authority": "Thai Industrial Standards Institute, Ministry of Industry",
+      "categories": [
+        "standards",
+        "risk-assurance"
+      ],
+      "category": "standards",
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2025-12-11",
+      "current_status": "Published in the Royal Gazette on 11 December 2025 according to TISI's official standards catalogue. Voluntary standard.",
+      "summary": "Thai national certification standard (มตช.) adopting ISO/IEC 42005, guiding organisations in assessing the impacts of an AI system and its foreseeable uses on individuals and society. It covers how and when to carry out the assessment, the AI lifecycle stages at which it should be done, and how to document it. Use is voluntary.",
+      "ai_governance_relevance": "National adoption of an ISO/IEC AI standard.",
+      "source_url": "https://service.tisi.go.th/tisi-standard-shop/item/nac/273",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://service.tisi.go.th/tisi-standard-shop/item/nac/273",
+      "source_kind": "official_publication",
+      "organization_id": "o-fd3907eb89ca",
+      "publisher_name": "Thai Industrial Standards Institute",
+      "language": "th",
+      "verification_level": "primary_source_located",
+      "source_id": "s-4b9502f3f4dc",
+      "evidence_reference": "TISI official catalogue record (tbl=nac, id=273) read via curl; gazette date 2025-12-11 as stated by TISI."
     }
   ],
   "organizations": [
@@ -377,6 +759,26 @@
       "source_url": "https://www.parliament.go.th/",
       "authority_type": "legislature",
       "government_level": "national"
+    },
+    {
+      "id": "o-276907c2a26e",
+      "jurisdiction_id": "THA",
+      "name": "Office of Insurance Commission",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Insurance regulator (สำนักงาน คปภ.); published the November 2025 AI Governance Guideline for insurance companies.",
+      "source_url": "https://www.oic.or.th/",
+      "authority_type": "regulator",
+      "government_level": "national"
+    },
+    {
+      "id": "o-fd3907eb89ca",
+      "jurisdiction_id": "THA",
+      "name": "Thai Industrial Standards Institute",
+      "publisher_name_verified": true,
+      "ai_governance_role": "National standards body (สมอ.) under the Ministry of Industry; has adopted ISO/IEC AI standards as Thai Industrial Standards (มอก.) and national certification standards (มตช.), including ISO/IEC 42001, 23894 and 42005.",
+      "source_url": "https://www.tisi.go.th/",
+      "authority_type": "government",
+      "government_level": "national"
     }
   ],
   "sources": [
@@ -399,9 +801,9 @@
         "public-sector",
         "sandbox"
       ],
-      "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full 251-page PDF read (pdftotext); title page states Cabinet approval on 26 July 2565 (2022); linked from the ai.in.th national AI plan page (NECTEC/NSTDA).",
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "Re-checked 2026-10-13: curl (browser user agent, --max-time 60) HTTP 200 PDF, full text read with pdftotext; title page states Cabinet approval on 26 July 2565 (2022). Plan page https://www.ai.in.th/about-ai-thailand/ read via WebFetch.",
       "http_status": 200,
       "final_url": "https://www.ai.in.th/wp-content/uploads/2022/12/20220726-AI.pdf",
       "link_status": "reachable",
@@ -427,9 +829,9 @@
         "risk-assurance",
         "generative-ai"
       ],
-      "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full PDF read (pdftotext), cover dated 12 September 2568 (2025); draft hearing PDF also read.",
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "Re-checked 2026-10-13: curl (browser user agent, --max-time 60) HTTP 200 PDF, full text read with pdftotext; cover dated 12 September 2568 (2025).",
       "http_status": 200,
       "final_url": "https://www.bot.or.th/content/dam/bot/fipcs/documents/FOG/2568/ThaiPDF/25680178.pdf",
       "link_status": "reachable",
@@ -455,9 +857,9 @@
         "government-governance",
         "risk-assurance"
       ],
-      "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full 63-page PDF read (pdftotext); launch date from ETDA news page https://www.etda.or.th/th/pr-news/AI_Gov_Anual.aspx (30 Oct 2567), which links the e-book page carrying this PDF.",
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "Re-checked 2026-10-13: curl (browser user agent, --max-time 60) HTTP 200 PDF, full text read with pdftotext; launch date 30 Oct 2024 confirmed on the ETDA news page https://www.etda.or.th/th/pr-news/AI_Gov_Anual.aspx.",
       "http_status": 200,
       "final_url": "https://www.etda.or.th/getattachment/6050a4b7-defd-4dba-8cbc-ff6a444a3d08/20241125-Generative-AI-Guideline_V2-0.pdf.aspx",
       "link_status": "reachable",
@@ -483,9 +885,9 @@
         "ethics",
         "risk-assurance"
       ],
-      "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full English PDF (presentation) read with pdftotext; listed on the ETDA AIGC Research and Recommendation page.",
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "Re-checked 2026-10-13: curl (browser user agent, --max-time 60) HTTP 200 PDF, full text read with pdftotext; listed under '2023' on the ETDA AIGC Research and Recommendation page (read by curl).",
       "http_status": 200,
       "final_url": "https://www.etda.or.th/getattachment/Our-Service/AIGC/Research-and-Recommendation/Thailand%E2%80%99s-AI-Governance-Guideline-for-Executive_2023.pdf.aspx?lang=th-TH",
       "link_status": "reachable",
@@ -509,9 +911,9 @@
       "categories_reviewed": [
         "index-readiness"
       ],
-      "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full 42-page PDF (slides) read with pdftotext; listed on the ETDA AIGC Research and Recommendation page.",
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "Re-checked 2026-10-13: curl (browser user agent, --max-time 60) HTTP 200 PDF, full text read with pdftotext; listed under '2023' on the ETDA AIGC Research and Recommendation page (read by curl).",
       "http_status": 200,
       "final_url": "https://www.etda.or.th/getattachment/Our-Service/AIGC/Research-and-Recommendation/Thailand-AI-Readiness_Report-2023_AIGC.pdf.aspx?lang=th-TH",
       "link_status": "reachable",
@@ -535,9 +937,9 @@
       "categories_reviewed": [
         "data-privacy"
       ],
-      "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full 44-page Royal Gazette PDF read (pdftotext); gazette reference and section 2 confirmed.",
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "Re-checked 2026-10-13: curl (browser user agent, --max-time 60) HTTP 200 PDF, full text read with pdftotext; Royal Gazette vol. 136 part 69 Kor p. 52, 27 May 2562 (2019), section 2 confirmed.",
       "http_status": 200,
       "final_url": "https://ratchakitcha.soc.go.th/documents/17082307.pdf",
       "link_status": "reachable",
@@ -545,6 +947,203 @@
       "document_language": "th",
       "error": null,
       "content_type": "application/pdf"
+    },
+    {
+      "id": "s-41819c7a3734",
+      "url": "https://law.go.th/listeningDetail?survey_id=NzU4MERHQV9MQVdfRlJPTlRFTkQ=",
+      "jurisdiction_ids": [
+        "THA"
+      ],
+      "source_institutions": [
+        "Electronic Transactions Development Agency"
+      ],
+      "instrument_ids": [
+        "i-3e42726f8feb"
+      ],
+      "categories_reviewed": [
+        "drafts",
+        "binding-law",
+        "generative-ai",
+        "transparency",
+        "sandbox",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl (browser user agent, --max-time 60): law.go.th is a JavaScript app, so the page record was read from its own API (apig.law.go.th dga-user-service-survey/surveys/<id>, survey 7580: agency สพธอ., hearing 9 July - 14 August 2026, type ร่างกฎหมาย); the attached draft bill PDF (20260709105614246_d22604640833.pdf, served by the law.go.th back office) was downloaded and read in full with pdftotext.",
+      "http_status": 200,
+      "final_url": "https://law.go.th/listeningDetail?survey_id=NzU4MERHQV9MQVdfRlJPTlRFTkQ=",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "th",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-6776cd0b04d8",
+      "url": "https://law.go.th/listeningDetail?survey_id=NTMxNkRHQV9MQVdfRlJPTlRFTkQ=",
+      "jurisdiction_ids": [
+        "THA"
+      ],
+      "source_institutions": [
+        "Electronic Transactions Development Agency"
+      ],
+      "instrument_ids": [
+        "i-e28f56f4c48d"
+      ],
+      "categories_reviewed": [
+        "drafts",
+        "binding-law",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl (browser user agent, --max-time 60): law.go.th page record read from its API (survey 5316: agency สพธอ., hearing 10 May - 24 June 2025, summary of principles in the record, hearing conclusion text and 'Summary of public hearing on Draft Principle for AI regulation' file uploaded 22 April 2026). WebFetch of the JavaScript page returns 403.",
+      "http_status": 200,
+      "final_url": "https://law.go.th/listeningDetail?survey_id=NTMxNkRHQV9MQVdfRlJPTlRFTkQ=",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "th",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-e302188b8ee2",
+      "url": "https://law.go.th/listeningDetail?survey_id=MjM4MkRHQV9MQVdfRlJPTlRFTkQ=",
+      "jurisdiction_ids": [
+        "THA"
+      ],
+      "source_institutions": [
+        "Electronic Transactions Development Agency"
+      ],
+      "instrument_ids": [
+        "i-2b467f4050fb"
+      ],
+      "categories_reviewed": [
+        "drafts",
+        "historical",
+        "sandbox"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl (browser user agent, --max-time 60): law.go.th record read from its API (survey 2382: agency สพธอ., hearing 18 July - 20 August 2023, type ร่างกฎหมาย); attached draft bill PDF downloaded and read with pdftotext.",
+      "http_status": 200,
+      "final_url": "https://law.go.th/listeningDetail?survey_id=MjM4MkRHQV9MQVdfRlJPTlRFTkQ=",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "th",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-1e7faec83690",
+      "url": "https://www.oic.or.th/web-upload/1xff0d34e409a13ef56eea54c52a291126/m_document/3014/7538/file_download/ee6b2c168a27527cdc5d77568407d21b.pdf",
+      "jurisdiction_ids": [
+        "THA"
+      ],
+      "source_institutions": [
+        "Office of Insurance Commission"
+      ],
+      "instrument_ids": [
+        "i-742ace78fe0d"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "risk-assurance",
+        "generative-ai",
+        "transparency"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl (browser user agent, --max-time 60): HTTP 200 PDF on oic.or.th, full 19-page text read with pdftotext; cover states 'เผยแพร่เมื่อ เดือน พฤศจิกายน พ.ศ. 2568'.",
+      "http_status": 200,
+      "final_url": "https://www.oic.or.th/web-upload/1xff0d34e409a13ef56eea54c52a291126/m_document/3014/7538/file_download/ee6b2c168a27527cdc5d77568407d21b.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "th",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-13f2e482bcc8",
+      "url": "https://service.tisi.go.th/tisi-standard-shop/item/nac/159",
+      "jurisdiction_ids": [
+        "THA"
+      ],
+      "source_institutions": [
+        "Thai Industrial Standards Institute"
+      ],
+      "instrument_ids": [
+        "i-aa6d7873a932"
+      ],
+      "categories_reviewed": [
+        "standards",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl --http1.1 (browser user agent, --max-time 60): the shop page is a JavaScript app; its record was read from TISI's own catalogue API (service.tisi.go.th standard-shop api/view-api, tbl=nac, id=159) giving standard number มตช. 42001-2567, Thai and English titles, abstract and gazette date 2024-07-17. WebFetch of the page returned only the app shell. The standard text itself is sold by TISI and was not read.",
+      "http_status": 200,
+      "final_url": "https://service.tisi.go.th/tisi-standard-shop/item/nac/159",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "th",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-7fa1f272204f",
+      "url": "https://service.tisi.go.th/tisi-standard-shop/item/tis/8839",
+      "jurisdiction_ids": [
+        "THA"
+      ],
+      "source_institutions": [
+        "Thai Industrial Standards Institute"
+      ],
+      "instrument_ids": [
+        "i-94225599af02"
+      ],
+      "categories_reviewed": [
+        "standards",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl --http1.1 (browser user agent, --max-time 60): the shop page is a JavaScript app; its record was read from TISI's own catalogue API (service.tisi.go.th standard-shop api/view-api, tbl=tis, id=8839) giving standard number มอก. 23894-2567, Thai and English titles, abstract and gazette date 2025-10-15. WebFetch of the page returned only the app shell. The standard text itself is sold by TISI and was not read.",
+      "http_status": 200,
+      "final_url": "https://service.tisi.go.th/tisi-standard-shop/item/tis/8839",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "th",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-4b9502f3f4dc",
+      "url": "https://service.tisi.go.th/tisi-standard-shop/item/nac/273",
+      "jurisdiction_ids": [
+        "THA"
+      ],
+      "source_institutions": [
+        "Thai Industrial Standards Institute"
+      ],
+      "instrument_ids": [
+        "i-412597e7de55"
+      ],
+      "categories_reviewed": [
+        "standards",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl --http1.1 (browser user agent, --max-time 60): the shop page is a JavaScript app; its record was read from TISI's own catalogue API (service.tisi.go.th standard-shop api/view-api, tbl=nac, id=273) giving standard number มตช. 42005-2568, Thai and English titles, abstract and gazette date 2025-12-11. WebFetch of the page returned only the app shell. The standard text itself is sold by TISI and was not read.",
+      "http_status": 200,
+      "final_url": "https://service.tisi.go.th/tisi-standard-shop/item/nac/273",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "th",
+      "error": null,
+      "content_type": "text/html"
     }
   ],
   "regional_applicability": [],
@@ -564,26 +1163,26 @@
       "transparency"
     ],
     "categories_with_findings": [
+      "binding-law",
       "data-privacy",
+      "drafts",
       "ethics",
       "generative-ai",
       "government-governance",
+      "historical",
       "index-readiness",
       "public-sector",
       "risk-assurance",
       "sandbox",
       "sectoral",
-      "strategy"
+      "standards",
+      "strategy",
+      "transparency"
     ],
     "categories_where_no_material_was_found": [
-      "binding-law",
       "procurement",
       "cyber-security",
-      "transparency",
-      "standards",
-      "drafts",
-      "international",
-      "historical"
+      "international"
     ],
     "categories_requiring_review": [],
     "search_queries": [
@@ -608,9 +1207,33 @@
       "\"แนวปฏิบัติจริยธรรมปัญญาประดิษฐ์\" สำนักงานคณะกรรมการดิจิทัลเพื่อเศรษฐกิจและสังคมแห่งชาติ pdf",
       "ก.ล.ต. แนวทาง ปัญญาประดิษฐ์ AI ผู้ประกอบธุรกิจหลักทรัพย์ sec.or.th 2568",
       "pdpc.or.th ปัญญาประดิษฐ์ แนวปฏิบัติ คุ้มครองข้อมูลส่วนบุคคล AI",
-      "ปัญญาประดิษฐ์ แนวทาง ประกาศ กสทช. OR สกมช. OR สำนักงานการแข่งขันทางการค้า AI guideline 2568"
+      "ปัญญาประดิษฐ์ แนวทาง ประกาศ กสทช. OR สกมช. OR สำนักงานการแข่งขันทางการค้า AI guideline 2568",
+      "law.go.th API surveys/search 'ปัญญาประดิษฐ์' / 'ปัญญา' / 'AI' / 'Generative' / 'deepfake' / 'อัลกอริทึม' / 'ข้อมูลส่วนบุคคล'",
+      "ร่างพระราชบัญญัติ ปัญญาประดิษฐ์ รับฟังความคิดเห็น 2569 law.go.th ETDA",
+      "etda.or.th ร่าง พ.ร.บ. ปัญญาประดิษฐ์ รับฟังความคิดเห็น กรกฎาคม 2569",
+      "oic.or.th แนวปฏิบัติ การกำกับดูแลการใช้งานปัญญาประดิษฐ์ สำหรับบริษัทประกันภัย",
+      "ก.ล.ต. แนวทางการใช้ปัญญาประดิษฐ์ ตลาดทุน รับฟังความคิดเห็น 2568 sec.or.th",
+      "TISI standard-shop api index-api search 'ปัญญาประดิษฐ์'",
+      "มอก. ISO/IEC 42001 ระบบการบริหารปัญญาประดิษฐ์ สมอ. มาตรฐาน",
+      "สกมช. AI Security Guidelines แนวปฏิบัติการใช้ปัญญาประดิษฐ์อย่างมั่นคงปลอดภัย",
+      "PDPC สคส. แนวปฏิบัติ ปัญญาประดิษฐ์ ข้อมูลส่วนบุคคล 2568 2569",
+      "กสทช. ประกาศ ปัญญาประดิษฐ์ deepfake แนวทาง สื่อ",
+      "สำนักงานคณะกรรมการการแข่งขันทางการค้า ปัญญาประดิษฐ์ อัลกอริทึม แนวทาง",
+      "อย. ซอฟต์แวร์เป็นเครื่องมือแพทย์ ปัญญาประดิษฐ์ SaMD fda.moph.go.th",
+      "กระทรวงสาธารณสุข แนวทาง ธรรมาภิบาล ปัญญาประดิษฐ์ ทางการแพทย์ 2568",
+      "ประกาศกระทรวง อว. แนวปฏิบัติเกี่ยวกับการจัดการเรียนการสอนด้านปัญญาประดิษฐ์ 2568",
+      "สพฐ. คู่มือ แนวทางการใช้ AI สำหรับครู นักเรียน สถานศึกษา 2568",
+      "คำแนะนำของประธานศาลฎีกาเกี่ยวกับการใช้เทคโนโลยีปัญญาประดิษฐ์ในการปฏิบัติงานคดี พ.ศ. 2568",
+      "สำนักงานตำรวจแห่งชาติ OR กระทรวงยุติธรรม OR กระทรวงกลาโหม แนวทาง การใช้ปัญญาประดิษฐ์",
+      "กรมสรรพากร OR กระทรวงการคลัง แนวทางการใช้ปัญญาประดิษฐ์ ภาครัฐ 2568",
+      "กรมบัญชีกลาง จัดซื้อจัดจ้าง ปัญญาประดิษฐ์ แนวทาง AI procurement",
+      "กระทรวงแรงงาน OR กระทรวงเกษตรและสหกรณ์ OR กระทรวงการต่างประเทศ OR กระทรวงมหาดไทย แนวปฏิบัติ การใช้ปัญญาประดิษฐ์",
+      "DGA สพร. แนวทางการใช้ปัญญาประดิษฐ์ภาครัฐ Generative AI 2567 2568",
+      "ratchakitcha ประกาศ ปัญญาประดิษฐ์ 2568",
+      "parliament.go.th section77 ร่างพระราชบัญญัติ ปัญญาประดิษฐ์",
+      "คำสั่ง OR ระเบียบสำนักนายกรัฐมนตรี คณะกรรมการ ปัญญาประดิษฐ์แห่งชาติ 2568"
     ],
-    "review_date": "2026-10-12",
+    "review_date": "2026-10-13",
     "passes": {
       "institutions": "COMPLETE",
       "legislation": "COMPLETE",
@@ -627,11 +1250,131 @@
       "regional_inheritance": "COMPLETE",
       "gap_check": "COMPLETE"
     },
-    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. ai-ethics.onde.go.th and dgti.dga.or.th reset/503; law.go.th consultation page JavaScript-only/403; sec.or.th cyber-AI.pdf reset/403. Health, education, justice, defence, labour and interior ministries not searched in depth; TISI not checked. aitif.bde.go.th shows injected spam and was not used. PDPA postponement decrees not re-read. Not a party to Convention 108. Units covered: Law: Royal Gazette (PDPA 2019 read); law.go.th consultation for draft AI law principles located but unreadable; no enacted AI-specific law or AI provisions in other laws found; no AI bill in Parliament found.; Government: National AI Action Plan 2022-2027 (ai.in.th, NECTEC) and its June 2026 progress deck; MDES/ETDA AIGC documents (executive and generative AI guidelines, readiness study, research papers - expert papers excluded); ONDE AI ethics guideline (site unreachable, lead); DGA public-sector AI framework (unreachable, lead).; Ministries: Searched MDES, MHESI, DGA; no separate AI policy documents from education, health, justice, defence, finance, labour or interior ministries found in this time box.; Regulators: BOT (2025 AI risk guideline read, draft hearing version read); SEC (AI/ML framework located, unreadable, lead); PDPC (AI subcommittee exists, no AI guidance found); NBTC (only an internal office security policy with GenAI rules for its own staff), NCSA (awareness events only), Trade Competition Commission: searched, no AI-specific regulatory document found.. Not reached: ai-ethics.onde.go.th (connection reset / 503); dgti.dga.or.th (connection reset / 503); law.go.th consultation page (JS app, 403); sec.or.th cyber-AI.pdf (reset / 403); Individual line ministries (health, education, justice, defence, labour, interior) only lightly searched; Thai Industrial Standards Institute (ISO/IEC 42001 adoption) not checked. Could not verify: Draft AI law principles text (law.go.th); Thailand AI Ethics Guideline official copy (ONDE); DGA AI Government Framework; SEC AI/ML governance framework. binding-law, procurement, cyber-security, transparency, standards, drafts, international, historical: no material found.",
+    "no_material_found_note": " Technical review notes: thin pass 2026-10-13 (second, longer deep review: up to 45 minutes, one agent, national level only, PROTOCOL §6; every existing record re-checked; each ministry and sector regulator searched one by one). Thin pass 2026-10-13: 6 existing records re-checked; dates previously taken from file names removed or re-sourced to issuer pages (PROTOCOL §4). law.go.th read via its own API (apig.law.go.th survey endpoints); draft PDFs on an AWS host used by law.go.th, so source_url = hearing page. Added Draft AI Act 2026, draft principles 2025 (promoted from lead) and 2023 draft bill (both superseded), OIC AI Governance Guideline (Nov 2025), TISI adoptions of ISO/IEC 42001, 23894, 42005 (primary_source_located: sold standards, metadata from TISI catalogue API). Not reached: ratchakitcha search 403, sec.or.th 403, pdpc.or.th 403, ncsa.or.th app shell, ai-ethics.onde.go.th and dgti.dga.or.th reset/503, opsc.coj.go.th reset, Thai FDA SaMD JS app, pr.moph.go.th 403. Draft AI Act english_title is a working translation. Convention 108: not a party. Units covered: Law: Royal Gazette: PDPA 2019 re-read; gazette search portal returns 403 so AI terms were searched through web search restricted to ratchakitcha.soc.go.th (no AI-specific act, decree or AI provisions in other laws found; a 2021 MDES digital-ID notice mentions AI only in passing). Central Law System law.go.th searched through its own API: Draft AI Act (July 2026), draft AI law principles (2025), 2023 draft AI promotion bill and its two draft ETDA notices, NHSO AI chest X-ray payment drafts, and the draft replacement PDPA (no AI provisions). Krisdika: searched via law.go.th (run by the Council of State); no AI law. Courts: Supreme Court President's AI instruction (2025) located in news only (lead).; Parliament: parliament.go.th section 77 hearing list and search checked: no AI bill or deepfake bill listed; a 2023 motion for a special committee on AI was seen; People's Party draft AI bill reported in July 2026 but not found on parliament sites (lead).; Government: National AI Action Plan 2022-2027 (ai.in.th) re-read; ai.in.th page lists no revised plan document; MDES/ETDA AIGC guidelines re-read; MDES AI Ethics Guideline found on etda.or.th but undated (lead); ETDA 2022 recommendation paper and 'AI in Government Services' explainer (no date) not recorded; DGA AI Government Framework still unreachable (reset/503); no national AI committee founding instrument found in the gazette search; no AI procurement rule from the Comptroller General's Department found.; Ministries: Education (OBEC 2025 AI handbook cited in research only; no official copy found); Higher education (MHESI 2025 notification on AI teaching in curricula, news only, lead); Health (MOPH AI committee news only, no instrument; NHSO AI chest X-ray payment drafts, lead); Justice (no ministry AI document found; judiciary instruction is a lead); Defence (none found); Finance/tax (Revenue Department 2025 data governance notice, not AI-specific; no AI guidance); Labour (none found); Interior/police (none found); Agriculture (none found); Foreign affairs (none found); Consumer Protection Board (internal AI guideline 2026, lead).; Regulators: Bank of Thailand (2025 AI risk guideline re-read); SEC (two AI governance PDFs and an AI/ML handbook located, all 403, lead); OIC insurance (Nov 2025 AI Governance Guideline read and recorded); NBTC telecoms/media (no AI instrument found); Thai FDA medical devices (SaMD guidance page is a JavaScript app; no AI-specific document read); higher-education standards committee (see MHESI lead); Trade Competition Commission (no AI or algorithm guidance found); PDPC (draft AI guidance reported Feb 2026, pdpc.or.th 403, lead); NCSA cyber (AI Security Guidelines Oct 2025, no official copy, lead); TISI standards (ISO/IEC 42001, 23894 and 42005 adoptions recorded from TISI's catalogue; about a dozen more AI standards listed, lead).. Not reached: ratchakitcha.soc.go.th search and old DATA/PDF paths (403 to curl); searched only through web search; sec.or.th AI documents (403 to curl and WebFetch); pdpc.or.th (403); ncsa.or.th (JavaScript app; curl returns only the shell); ai-ethics.onde.go.th and onde.go.th (connection reset / 503); dgti.dga.or.th (connection reset / 503); opsc.coj.go.th (connection reset); coj.go.th search results load dynamically; medical.fda.moph.go.th SaMD page (JavaScript app); pr.moph.go.th (403 to WebFetch). Could not verify: NCSA AI Security Guidelines (1 Oct 2025) - no official copy; Supreme Court President's instruction on AI in court work (2025); MHESI notification on AI teaching in higher education (2025); SEC AI governance documents (403); PDPC draft AI guidance (Feb 2026); Royal decree postponing PDPA obligations (2021) - gazette link blocked. procurement, cyber-security, international: no material found.",
     "discovery_result_count": 11,
     "focused_result_count": 11
   },
   "changes": [
+    {
+      "id": "c-9b6c1dc6a2e5",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "THA",
+      "instrument_id": "i-3e42726f8feb",
+      "title": "Draft Artificial Intelligence Act B.E. ....",
+      "detail": "Added to the radar (published 2026-07-09).",
+      "from": null,
+      "to": null,
+      "source_url": "https://law.go.th/listeningDetail?survey_id=NzU4MERHQV9MQVdfRlJPTlRFTkQ=",
+      "needs_review": false
+    },
+    {
+      "id": "c-a3ced8ff6ab8",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "THA",
+      "instrument_id": "i-e28f56f4c48d",
+      "title": "Draft Principles of the Law on Artificial Intelligence",
+      "detail": "Added to the radar (published 2025-05-10).",
+      "from": null,
+      "to": null,
+      "source_url": "https://law.go.th/listeningDetail?survey_id=NTMxNkRHQV9MQVdfRlJPTlRFTkQ=",
+      "needs_review": false
+    },
+    {
+      "id": "c-55754e1d3bb3",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "THA",
+      "instrument_id": "i-2b467f4050fb",
+      "title": "Draft Act on the Promotion and Support of Artificial Intelligence Innovation in Thailand B.E. ....",
+      "detail": "Added to the radar (published 2023-07-18).",
+      "from": null,
+      "to": null,
+      "source_url": "https://law.go.th/listeningDetail?survey_id=MjM4MkRHQV9MQVdfRlJPTlRFTkQ=",
+      "needs_review": false
+    },
+    {
+      "id": "c-297f9bbff12c",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "THA",
+      "instrument_id": "i-742ace78fe0d",
+      "title": "Guideline on the Governance of Artificial Intelligence Use for Insurance Companies (AI Governance Guideline)",
+      "detail": "Added to the radar (published 2025-11).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.oic.or.th/web-upload/1xff0d34e409a13ef56eea54c52a291126/m_document/3014/7538/file_download/ee6b2c168a27527cdc5d77568407d21b.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-adb161a8097f",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "THA",
+      "instrument_id": "i-aa6d7873a932",
+      "title": "TCAS 42001-2567 Information technology - Artificial intelligence - Management system (national adoption of ISO/IEC 42001)",
+      "detail": "Added to the radar (published 2024-07-17).",
+      "from": null,
+      "to": null,
+      "source_url": "https://service.tisi.go.th/tisi-standard-shop/item/nac/159",
+      "needs_review": false
+    },
+    {
+      "id": "c-bb2303b00b2e",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "THA",
+      "instrument_id": "i-94225599af02",
+      "title": "TIS 23894-2567 Information technology - Artificial intelligence - Guidance on risk management (national adoption of ISO/IEC 23894)",
+      "detail": "Added to the radar (published 2025-10-15).",
+      "from": null,
+      "to": null,
+      "source_url": "https://service.tisi.go.th/tisi-standard-shop/item/tis/8839",
+      "needs_review": false
+    },
+    {
+      "id": "c-55b5fd780723",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "THA",
+      "instrument_id": "i-412597e7de55",
+      "title": "TCAS 42005-2568 Information technology - Artificial intelligence - AI system impact assessment (national adoption of ISO/IEC 42005)",
+      "detail": "Added to the radar (published 2025-12-11).",
+      "from": null,
+      "to": null,
+      "source_url": "https://service.tisi.go.th/tisi-standard-shop/item/nac/273",
+      "needs_review": false
+    },
+    {
+      "id": "c-97aad480f9d5",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "THA",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 13 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
     {
       "id": "c-902352b8cc45",
       "date": "2026-10-12",
@@ -738,6 +1481,51 @@
       "needs_review": false
     },
     {
+      "id": "c-ff57155e0aaa",
+      "date": "2026-07-09",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "consultation",
+      "jurisdiction_id": "THA",
+      "instrument_id": "i-3e42726f8feb",
+      "title": "ETDA opens public hearing on the Draft Artificial Intelligence Act",
+      "detail": "law.go.th hearing record (survey 7580) runs from 9 July to 14 August 2026.",
+      "from": null,
+      "to": null,
+      "source_url": "https://law.go.th/listeningDetail?survey_id=NzU4MERHQV9MQVdfRlJPTlRFTkQ=",
+      "needs_review": false
+    },
+    {
+      "id": "c-df5f472e1c6c",
+      "date": "2025-12-11",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "THA",
+      "instrument_id": "i-412597e7de55",
+      "title": "Thailand adopts ISO/IEC 42005 as TCAS 42005-2568",
+      "detail": "TISI's official catalogue gives the Royal Gazette publication date as 11 December 2025.",
+      "from": null,
+      "to": null,
+      "source_url": "https://service.tisi.go.th/tisi-standard-shop/item/nac/273",
+      "needs_review": false
+    },
+    {
+      "id": "c-55a93f773ed9",
+      "date": "2025-10-15",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "THA",
+      "instrument_id": "i-94225599af02",
+      "title": "Thailand adopts ISO/IEC 23894 as TIS 23894-2567",
+      "detail": "TISI's official catalogue gives the Royal Gazette publication date as 15 October 2025.",
+      "from": null,
+      "to": null,
+      "source_url": "https://service.tisi.go.th/tisi-standard-shop/item/tis/8839",
+      "needs_review": false
+    },
+    {
       "id": "c-10f396226989",
       "date": "2025-09-12",
       "recorded": "2026-10-12",
@@ -753,6 +1541,21 @@
       "needs_review": false
     },
     {
+      "id": "c-87d834b32fb5",
+      "date": "2025-05-10",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "consultation",
+      "jurisdiction_id": "THA",
+      "instrument_id": "i-e28f56f4c48d",
+      "title": "ETDA opens public hearing on draft principles of an AI law",
+      "detail": "law.go.th hearing conclusion states the hearing ran from 10 May to 24 June 2025 with 93 respondents.",
+      "from": null,
+      "to": null,
+      "source_url": "https://law.go.th/listeningDetail?survey_id=NTMxNkRHQV9MQVdfRlJPTlRFTkQ=",
+      "needs_review": false
+    },
+    {
       "id": "c-a7aee9ce6831",
       "date": "2024-10-30",
       "recorded": "2026-10-12",
@@ -765,6 +1568,36 @@
       "from": null,
       "to": null,
       "source_url": "https://www.etda.or.th/th/pr-news/AI_Gov_Anual.aspx",
+      "needs_review": false
+    },
+    {
+      "id": "c-8dfd3a0bbe29",
+      "date": "2024-07-17",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "THA",
+      "instrument_id": "i-aa6d7873a932",
+      "title": "Thailand adopts ISO/IEC 42001 as national standard TCAS 42001-2567",
+      "detail": "TISI's official catalogue gives the Royal Gazette publication date as 17 July 2024.",
+      "from": null,
+      "to": null,
+      "source_url": "https://service.tisi.go.th/tisi-standard-shop/item/nac/159",
+      "needs_review": false
+    },
+    {
+      "id": "c-59c0a26902cf",
+      "date": "2023-07-18",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "consultation",
+      "jurisdiction_id": "THA",
+      "instrument_id": "i-2b467f4050fb",
+      "title": "ETDA opens public hearing on draft AI innovation promotion bill",
+      "detail": "law.go.th hearing record (survey 2382) runs from 18 July to 20 August 2023.",
+      "from": null,
+      "to": null,
+      "source_url": "https://law.go.th/listeningDetail?survey_id=MjM4MkRHQV9MQVdfRlJPTlRFTkQ=",
       "needs_review": false
     },
     {
@@ -800,31 +1633,10 @@
   ],
   "leads": [
     {
-      "title": "(ร่าง) หลักการของกฎหมายว่าด้วยปัญญาประดิษฐ์",
-      "english_title": "Draft Principles of the Law on Artificial Intelligence",
-      "issuing_authority": "Ministry of Digital Economy and Society / Electronic Transactions Development Agency",
-      "note": "Draft principles for Thailand's first AI law (risk-based, high-risk AI duties) put to public consultation on the Central Law System (law.go.th listeningDetail?survey_id=NTMxNkRHQV9MQVdfRlJPTlRFTkQ=) until 24 June 2025, per ETDA news of 11 June 2025 (https://www.etda.or.th/th/pr-news/law_ai.aspx). law.go.th could not be read (JS app; WebFetch 403), so the draft text and opening date are unverified. The ai.in.th progress deck (June 2026) says ETDA is consolidating the AI Regulation Act 2022 and AI Promotion Act 2023 drafts and revising the consolidated draft before resubmission to the MDES committee. No bill before Parliament found.",
-      "found": "2026-10-12"
-    },
-    {
-      "title": "แนวปฏิบัติจริยธรรมปัญญาประดิษฐ์ (Thailand AI Ethics Guideline)",
-      "english_title": "Thailand AI Ethics Guideline",
-      "issuing_authority": "Office of the National Digital Economy and Society Commission (ONDE), Ministry of Digital Economy and Society",
-      "note": "Six-principle AI ethics guideline acknowledged/endorsed by the Cabinet on 2 February 2021 for government agencies (Cabinet Secretariat letter นร 0505/ว 74 of 4 Feb 2021, as cited by ai-ethics.onde.go.th). No official full-text copy found: ai-ethics.onde.go.th reset connections (curl) and returned 503 (WebFetch); copies seen only on a university site.",
-      "found": "2026-10-12"
-    },
-    {
       "title": "กรอบการทำงานปัญญาประดิษฐ์ภาครัฐ (AI Government Framework)",
       "english_title": "AI Government Framework",
       "issuing_authority": "Digital Government Development Agency (DGA)",
       "note": "Public-sector AI adoption framework e-book (c. 2021) at https://dgti.dga.or.th/wp-content/uploads/2021/01/AI-Government-Framework.pdf; curl connection reset and WebFetch 503, date and text unverified.",
-      "found": "2026-10-12"
-    },
-    {
-      "title": "กรอบการกำกับดูแลการใช้งานปัญญาประดิษฐ์ (Artificial Intelligence) และ Machine Learning",
-      "english_title": "SEC framework for governing the use of AI and machine learning by capital-market intermediaries",
-      "issuing_authority": "Securities and Exchange Commission, Thailand",
-      "note": "Document at https://www.sec.or.th/TH/Documents/CyberResilience/cyber-AI.pdf (senior-management oversight, kill switch, complaint handling); curl reset and WebFetch 403, so title, date and status unverified. SEC 2025 plan mentions responsible-AI guidance.",
       "found": "2026-10-12"
     },
     {
@@ -833,6 +1645,97 @@
       "issuing_authority": "National AI Committee",
       "note": "Reported in news as approved in principle by the National AI Committee with four strategies; no official document found.",
       "found": "2026-10-12"
+    },
+    {
+      "title": "แนวปฏิบัติการใช้ปัญญาประดิษฐ์อย่างมั่นคงปลอดภัย (AI Security Guidelines)",
+      "english_title": "Guidelines for the Secure Use of Artificial Intelligence (AI Security Guidelines)",
+      "issuing_authority": "National Cyber Security Agency (NCSA)",
+      "note": "AI security guideline (data poisoning, prompt injection, model evasion; for government agencies and critical infrastructure) reported as announced by NCSA on 1 October 2025. ncsa.or.th is a JavaScript app (curl returns only the shell) and no official copy was found; the only full-text copy seen is on a news site. Promote once an NCSA-hosted copy is located.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "คำแนะนำของประธานศาลฎีกาเกี่ยวกับการใช้เทคโนโลยีปัญญาประดิษฐ์ในการปฏิบัติงานคดี พ.ศ. 2568",
+      "english_title": "Instruction of the President of the Supreme Court on the Use of AI Technology in Court Proceedings B.E. 2568 (2025)",
+      "issuing_authority": "President of the Supreme Court / Office of the Judiciary",
+      "note": "Instruction on AI use by judges and parties (judicial independence, no AI on the merits or evidence, confidentiality, verification and disclosure of AI-generated content), announced by the Courts of Justice spokesman on 9 October 2025. Full text not found on coj.go.th (site search is dynamic; opsc.coj.go.th reset) or in the Royal Gazette. A Civil Court rule on AI in pleadings (2025) is also reported.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "ประกาศกระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัยและนวัตกรรม เรื่อง แนวปฏิบัติเกี่ยวกับการจัดการเรียนการสอนด้านปัญญาประดิษฐ์ (AI) ในหลักสูตรการศึกษาของสถาบันอุดมศึกษา พ.ศ. 2568",
+      "english_title": "MHESI Notification on Guidelines for AI Teaching in Higher Education Curricula B.E. 2568 (2025)",
+      "issuing_authority": "Ministry of Higher Education, Science, Research and Innovation",
+      "note": "Ministerial notification reported as signed on 9 October 2025 after approval by the Higher Education Standards Committee, requiring AI teaching across higher-education curricula. Official text not found on mhesi.go.th or in the Royal Gazette (ratchakitcha search returns 403). Check the Royal Gazette.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "แนวปฏิบัติ การกำกับดูแลการใช้งานปัญญาประดิษฐ์ (ก.ล.ต.) / Artificial Intelligence Governance",
+      "english_title": "SEC framework for governing the use of AI and machine learning by capital-market intermediaries",
+      "issuing_authority": "Securities and Exchange Commission, Thailand",
+      "note": "Updated 2026-10-13: two SEC PDFs located, https://www.sec.or.th/TH/Documents/CyberResilience/cyber-AI.pdf and https://www.sec.or.th/TH/Documents/CyberResilience/Artificial-Intelligence-Governance.pdf, plus an SEC news release on an AI/ML handbook (https://publish.sec.or.th/nrs/9932s.pdf). All return 403 to curl and WebFetch, so title, date and status are unverified.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "Digital Thailand - AI Ethics Guideline (หลักการและแนวทางจริยธรรมปัญญาประดิษฐ์)",
+      "english_title": "Digital Thailand - AI Ethics Guideline",
+      "issuing_authority": "Ministry of Digital Economy and Society",
+      "note": "Updated 2026-10-13: the full 46-page MDES guideline (cover: Ministry of Digital Economy and Society) is served on etda.or.th at https://www.etda.or.th/getattachment/9d370f25-f37a-4b7c-b661-48d2d730651d/Digital-Thailand-AI-Ethics-Principle-and-Guideline.pdf.aspx?lang=th-TH (read by curl). Official document on etda.or.th; no stated publication date in the document or on a page found. ai-ethics.onde.go.th still unreachable (connection reset / 503). Same document as the existing Thailand AI Ethics Guideline lead.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "(ร่าง) ประกาศสำนักงานพัฒนาธุรกรรมทางอิเล็กทรอนิกส์ เรื่อง แนวทางในการกำหนดหลักเกณฑ์และวิธีการประเมินความเสี่ยงจากการใช้งานระบบปัญญาประดิษฐ์ พ.ศ. ....",
+      "english_title": "Draft ETDA Notification on Guidelines for Criteria and Methods of Assessing Risks from the Use of AI Systems",
+      "issuing_authority": "Electronic Transactions Development Agency",
+      "note": "Subordinate draft under the 2023 draft AI promotion bill; public hearing on law.go.th 18 July - 20 August 2023 (survey 2383, draft PDF read). Lapsed with that bill; kept as a lead for the timeline.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "(ร่าง) ประกาศสำนักงานพัฒนาธุรกรรมทางอิเล็กทรอนิกส์ เรื่อง ศูนย์ทดสอบนวัตกรรมปัญญาประดิษฐ์ (AI Sandbox)",
+      "english_title": "Draft ETDA Notification on the AI Innovation Testing Centre (AI Sandbox)",
+      "issuing_authority": "Electronic Transactions Development Agency",
+      "note": "Subordinate draft under the 2023 draft AI promotion bill; public hearing on law.go.th 18 July - 20 August 2023 (survey 2447, draft PDF read). Lapsed; kept as a lead.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "ประกาศสำนักงานหลักประกันสุขภาพแห่งชาติ เรื่อง การจ่ายค่าใช้จ่ายเพื่อบริการสาธารณสุข กรณีบริการอ่านภาพรังสีทรวงอกด้วยระบบปัญญาประดิษฐ์ในบัญชีนวัตกรรมไทย",
+      "english_title": "NHSO Notification on payment for AI chest X-ray reading services on the Thai Innovation List",
+      "issuing_authority": "National Health Security Office",
+      "note": "Payment rules for AI chest X-ray reading under universal health coverage; drafts heard on law.go.th in 2025 (surveys 5597, 5789) and for fiscal 2027 (surveys 8254, 8422, 14 Sep - 8 Oct 2026). A health-financing rule for one AI service rather than AI governance; check whether the adopted notices set AI-system conditions before promoting.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "ร่างพระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคล พ.ศ. ....",
+      "english_title": "Draft Personal Data Protection Act (replacement bill)",
+      "issuing_authority": "Office of the Personal Data Protection Committee",
+      "note": "Public hearing on law.go.th 7-21 November 2025 (survey 6088). Its explanatory note (read) contains no AI or automated decision-making provisions, so it is outside scope unless the bill text adds them. The PDPC is also reported to have consulted on draft AI-and-personal-data guidance until 25 February 2026; no official copy found (pdpc.or.th returns 403).",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "มาตรฐานผลิตภัณฑ์อุตสาหกรรม ด้านปัญญาประดิษฐ์ (มอก. 3645-2566, 24028-2566, 24368-2566, 27563-2567, 23053-2567, 24027-2567, 38507-2567, 4255-2567, 4270-2567, 4271-2567, 4272-2567, 29119 เล่ม 11-2567; มตช. 42006-2568)",
+      "english_title": "Other Thai adoptions of ISO/IEC AI standards",
+      "issuing_authority": "Thai Industrial Standards Institute",
+      "note": "Listed in TISI's official catalogue (search 'ปัญญาประดิษฐ์'), e.g. TIS 24028-2566 (trustworthiness, gazette 6 January 2024); no ISO/IEC 22989 adoption is listed. Only 42001, 23894 and 42005 were recorded; add others if the radar wants every adoption.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "แนวปฏิบัติการประยุกต์ใช้ปัญญาประดิษฐ์ สำนักงานคณะกรรมการคุ้มครองผู้บริโภค (2569-1.0)",
+      "english_title": "Office of the Consumer Protection Board AI Application Guideline (v2569-1.0)",
+      "issuing_authority": "Office of the Consumer Protection Board",
+      "note": "Internal AI use guideline for OCPB staff, effective April 2026 (https://www.ocpb.go.th/images/article/article_20260511152227.pdf, read). An institution's internal guideline, not a rule for consumers or businesses; kept as a lead.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "เอกสารข้อเสนอแนะเกี่ยวกับแนวทางการกำกับดูแลและส่งเสริมเทคโนโลยีดิจิทัลสมัยใหม่ (Emerging Digital Law Recommendation Paper): การกำกับดูแลเทคโนโลยีปัญญาประดิษฐ์สำหรับธุรกรรมอิเล็กทรอนิกส์และบริการดิจิทัล",
+      "english_title": "Emerging Digital Law Recommendation Paper: AI Governance for e-Business and Digital Services",
+      "issuing_authority": "Electronic Transactions Development Agency",
+      "note": "ETDA study and recommendation paper dated 28 October 2565 (2022), prepared with a law firm and Thammasat University (270 pages, read). A comparative study that informed later AI law drafts rather than an instrument setting expectations; kept as a lead.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "ร่างพระราชบัญญัติปัญญาประดิษฐ์ (ฉบับพรรคประชาชน)",
+      "english_title": "People's Party draft AI bill",
+      "issuing_authority": "Members of the House of Representatives (People's Party)",
+      "note": "Opposition draft AI bill reported as discussed at a party forum on 26 July 2026. Not found on the parliament.go.th section 77 hearing list or bills tracker; promote if introduced.",
+      "found": "2026-10-13"
     }
   ]
 }
