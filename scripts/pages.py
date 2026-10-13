@@ -39,6 +39,18 @@ def kind(i):
     return "binding" if i.get("legal_status") in BINDING else "soft"
 
 
+PIPE_TYPE = {"binding_law": "Law", "binding_regulation": "Regulation", "international_treaty": "Treaty",
+             "administrative_policy_mandatory_in_scope": "Mandatory policy", "administrative_guideline": "Guideline", "regulatory_opinion": "Opinion",
+             "nonbinding_guidance": "Guidance", "voluntary_code": "Code", "national_strategy": "Strategy"}
+
+
+def pipe_type(i):
+    """Type label for an item in the "Open and upcoming" list: drafts say Draft; anything else in consultation says what it is."""
+    if i.get("legal_status") == "consultation_draft": return "Draft"
+    t = PIPE_TYPE.get(i.get("legal_status"), "Document")
+    return f"{t} — open for comment" if i.get("lifecycle") == "consultation" else f"{t} — {LIFE.get(i.get('lifecycle'), 'draft').lower()}"
+
+
 KIND_LABEL = {"binding": "Binding or mandatory", "soft": "Non-binding", "draft": "Drafts"}
 KIND_CLASS = {"binding": "b", "soft": "n", "draft": "d"}
 COUNT_NOTE = ("Binding or mandatory: laws, regulations, treaties and policies mandatory within their scope · Non-binding: strategies, guidelines, "
@@ -311,13 +323,14 @@ def country_page(j, D, rec, flags, ctx):
             pl += f'<li data-date="{e(c["date"])}"><time datetime="{e(c["date"])}">{e(fmt_date(c["date"]))}</time><span class="pl-kind">{e(EVENT.get(c.get("type"), c.get("type")))}</span><span class="pl-title">{e(c.get("title"))}</span></li>'
         pl += '</ol><p class="pl-none muted" hidden>No upcoming dated actions.</p>' if future else '</ol><p class="pl-none muted">No upcoming dated actions recorded.</p>'
         pl += '<div class="pl-passed" hidden><h4>Date passed since this page was built</h4><ol class="pipeline"></ol></div>'
-        if pipe_drafts: pl += '<h4>Drafts and consultations</h4><ol class="pipeline">'
+        if pipe_drafts: pl += '<h4>Drafts and documents open for comment</h4><ol class="pipeline">'
         for i in pipe_drafts[:12]:
             d = i.get("publication_date")
-            pl += f'<li><time datetime="{e(d or "")}">{e(fmt_date(d) or "Undated")}</time><span class="pl-kind">{e(LIFE.get(i.get("lifecycle"), "Draft"))}</span><span class="pl-title">{e(i.get("english_title") or i.get("official_title"))}</span></li>'
+            pl += f'<li><time datetime="{e(d or "")}">{e(fmt_date(d) or "Undated")}</time><span class="pl-kind">{e(pipe_type(i))}</span><span class="pl-title">{e(i.get("english_title") or i.get("official_title"))}</span></li>'
         if pipe_drafts: pl += '</ol>'
         more = len(future) + len(pipe_drafts) - min(12, len(future)) - min(12, len(pipe_drafts))
-        figs.append(f'<figure class="fig" id="fig-pipeline" data-asof="{e(today)}"><figcaption><h3>Pipeline <span class="asof">Upcoming as of {e(fmt_date(today))}</span></h3><p class="fig-desc">Dated government actions still ahead, then drafts or consultations not yet adopted.</p></figcaption>{pl}'
+        figs.append(f'<figure class="fig" id="fig-pipeline" data-asof="{e(today)}"><figcaption><h3>Open and upcoming <span class="asof">Upcoming as of {e(fmt_date(today))}</span></h3><p class="fig-desc">Dated government actions still ahead, then drafts and other documents still open for comment.</p></figcaption>{pl}'
+                    + ('<p class="fig-tools">Includes non-draft documents still open for comment.</p>' if pipe_drafts else "")
                     + (f'<p class="fig-tools">{more} more in the instrument list.</p>' if more > 0 else "") + '</figure>')
     H.append('<div class="lede-grid">' + (ov or '<section id="overview" class="block prose"><h2>Overview</h2><p class="muted">No narrative summary has been written for this jurisdiction yet.</p></section>')
              + '<aside id="charts" class="panels" aria-label="Charts">' + "".join(figs) + '</aside></div>')
