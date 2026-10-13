@@ -2,7 +2,7 @@
 (function(){'use strict';
 const f=document.getElementById('sgForm');if(!f)return;
 const sel=document.getElementById('sgCountry'),url=document.getElementById('sgUrl'),err=document.getElementById('sgError');
-const q=new URLSearchParams(location.search),pre=(q.get('country')||'').toUpperCase();
+const q=new URLSearchParams(location.search),pre0=(q.get('country')||'').toUpperCase(),pre=({ISESCO:'ICESCO'})[pre0]||pre0;
 if(pre&&sel.querySelector(`option[value="${pre}"]`))sel.value=pre;
 const t=q.get('type');if(t){const r=f.querySelector(`input[name=change_type][value="${t}"]`);if(r)r.checked=true}
 function valid(u){try{const x=new URL(u);return x.protocol==='https:'||x.protocol==='http:'}catch(e){return false}}

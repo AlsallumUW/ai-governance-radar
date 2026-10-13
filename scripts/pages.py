@@ -29,7 +29,9 @@ LIFE = {"draft": "Draft", "consultation": "In consultation", "published": "Publi
 VERIFY = {"reviewed_primary_metadata": "Reviewed against the official text", "primary_source_located": "Official source located; text not fully reviewed"}
 EVENT = {"published": "Published", "revised": "Revised", "consultation": "Consultation", "adopted": "Adopted", "applied": "Applies / in force",
          "superseded": "Superseded", "repealed": "Repealed"}
-BODY_ORDER = ["EU", "GCC", "AU", "ASEAN", "COE", "UNESCO", "OECD", "ISESCO", "G7"]
+BODY_ORDER = ["EU", "GCC", "AU", "ASEAN", "COE", "UNESCO", "OECD", "ICESCO", "G7"]
+# old body codes: a redirect page is kept at /body/<old>/ and links with ?body=<old> are read as the new code
+BODY_REDIRECTS = {"ISESCO": "ICESCO"}
 
 e = lambda s: html.escape(str(s if s is not None else ""), quote=True)
 
@@ -478,6 +480,14 @@ def write_all(D, recs, out, flags):
         else:
             p = out / "body" / j["id"]; html_ = body_page(j, D, rec, flags, ctx)
         p.mkdir(parents=True, exist_ok=True); (p / "index.html").write_text(html_, encoding="utf-8"); n += 1
+    for old_code, new_code in BODY_REDIRECTS.items():
+        p = out / "body" / old_code; p.mkdir(parents=True, exist_ok=True)
+        to = f"../{new_code}/"; name = ctx["jur"].get(new_code, {}).get("name", new_code)
+        (p / "index.html").write_text(
+            f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:,">'
+            f'<title>{e(old_code)} is now {e(new_code)} | AI Governance Radar</title><link rel="canonical" href="{SITE_URL}body/{new_code}/"><meta name="robots" content="noindex">'
+            f'<meta http-equiv="refresh" content="0; url={to}"><script>location.replace("{to}"+location.search+location.hash)</script></head>'
+            f'<body><p>{e(old_code)} is now {e(new_code)}. Continue to <a href="{to}">{e(name)}</a>.</p></body></html>', encoding="utf-8")
     import analysis
     analysis.write(D, recs, out, ctx)
     return n
