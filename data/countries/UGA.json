@@ -10,13 +10,14 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": "Uganda has no AI-specific law or strategy yet. AI is covered by the Data Protection and Privacy Act 2019, which gives rights over automated decision-taking, and the 2020 National Fourth Industrial Revolution Strategy. A 2025 national AI landscape assessment by the ICT ministry and the ITU, which proposes an AI risk management framework, feeds a National AI and Emerging Technologies Strategy and an AI framework that are still being developed.",
+    "summary": "Uganda has no AI-specific law or strategy yet. AI is covered by the Data Protection and Privacy Act 2019 (in force since 3 May 2019), which gives rights over automated decision-taking, and the 2020 National Fourth Industrial Revolution Strategy. In 2026 the National Information Technology Authority (NITA-U) issued two frameworks binding on public bodies, the National Information Security Policy and the e-Government Interoperability Framework, which require AI risk assessments, bias testing, explainability and human oversight. A 2025 national AI landscape assessment by the ICT ministry and the ITU feeds a National AI and Emerging Technologies Strategy that is still in consultation.",
     "lead_institutions": [
       "Ministry of ICT and National Guidance",
+      "National Information Technology Authority - Uganda",
       "Personal Data Protection Office"
     ],
-    "last_deep_review": "2026-10-12",
-    "review_notes": "This review was carried out on 12 October 2026 from documents on the ICT ministry's website. The Uganda Gazette has no searchable online portal and the data protection office's site has no document listing. The national AI strategy, the AI framework and the 2021 data protection regulations are tracked as leads. As a country of over 20 million people with few records, Uganda is marked for a longer catch-up pass."
+    "last_deep_review": "2026-10-13",
+    "review_notes": "This review was first completed on 12 October 2026 and redone in a longer pass on 13 October 2026, covering Parliament, the ICT ministry, NITA-U's guidelines and laws pages, each line ministry and each sector regulator. The Uganda Gazette has no searchable online portal, and the data protection office's, health and justice ministries', standards bureau's and revenue authority's sites could not be accessed. The national AI strategy (its June 2026 target has passed with no text published), the 2021 data protection regulations, the Copyright (Amendment) Bill 2025 and the judiciary's use of AI are tracked as leads."
   },
   "instruments": [
     {
@@ -32,7 +33,7 @@
       "regional_applicability": [],
       "supersedes": [],
       "superseded_by": [],
-      "verification_date": "2026-10-12",
+      "verification_date": "2026-10-13",
       "first_recorded": "2026-10-12",
       "last_changed": null,
       "document_access_type": "original_government_document",
@@ -56,8 +57,8 @@
       "legal_status": "binding_law",
       "lifecycle": "in_force",
       "publication_date": "2019-02-25",
-      "effective_date": null,
-      "current_status": "In force. The copy on the Ministry of ICT and National Guidance 'Acts and Laws' page is the assented Act (date of assent 25 February 2019 handwritten on the assent page); it does not state the commencement date, so effective_date is left null. The Act now appears in the revised laws as Cap. 97. Its implementing Data Protection and Privacy Regulations, 2021 and proposals to amend the Act to address AI are held as leads.",
+      "effective_date": "2019-05-03",
+      "current_status": "In force since 3 May 2019. The copy on the Ministry of ICT and National Guidance 'Acts and Laws' page is the assented Act (date of assent 25 February 2019 handwritten on the assent page). The official revised edition, published by NITA-U on its 'Laws and Regulations' page as the Data Protection and Privacy Act, Cap. 97, states 'Commencement: 3 May, 2019' and keeps section 27 (rights in relation to automated decision-taking). Its implementing Data Protection and Privacy Regulations, 2021 and proposals to amend the Act to address AI are held as leads.",
       "summary": "Uganda's general data protection law, binding on public bodies and private data collectors, processors and controllers; it sets data protection principles, consent, purpose limitation, security and breach-notification duties, and creates the Personal Data Protection Office under the National Information Technology Authority - Uganda (the 'Authority'). Section 27 gives data subjects rights in relation to automated decision-taking: they may require that significant decisions are not based solely on automated processing, must be notified when such a decision is taken, and may require reconsideration within 21 days, with complaints to the Authority. These provisions are the main existing legal rules applying to AI systems that process personal data in Uganda.",
       "ai_governance_relevance": "Only enacted law with an explicit automated decision-making provision (s. 27); governs personal data used to train and run AI.",
       "source_url": "https://ict.go.ug/site/documents/Data-Protection-and-Privacy-Act-2019.pdf",
@@ -66,12 +67,11 @@
       "organization_id": "o-0d5b9f2f84be",
       "verification_level": "reviewed_primary_metadata",
       "metadata_gaps": [
-        "Commencement date not stated in the assented copy read",
         "Uganda Gazette publication reference not located on an official site"
       ],
       "id": "i-5737ecd9df76",
       "source_id": "s-29462760fbb1",
-      "evidence_reference": "curl (browser user agent, --max-time 60): 32-page scanned PDF of the assented Act read as page images (title page, assent page dated 25/2/2019, arrangement of sections, s. 2 definitions, ss. 25-28 incl. s. 27 automated decision-taking)"
+      "evidence_reference": "curl (browser user agent, --max-time 60): 32-page scanned PDF of the assented Act read as page images (title page, assent page dated 25/2/2019, arrangement of sections, s. 2 definitions, ss. 25-28 incl. s. 27 automated decision-taking); re-checked 2026-10-13: assented PDF re-fetched by curl (HTTP 200); commencement date 3 May 2019 and s. 27 read in the revised edition Cap. 97 PDF on nita.go.ug (curl, pdftotext)"
     },
     {
       "jurisdiction_id": "UGA",
@@ -86,7 +86,7 @@
       "regional_applicability": [],
       "supersedes": [],
       "superseded_by": [],
-      "verification_date": "2026-10-12",
+      "verification_date": "2026-10-13",
       "first_recorded": "2026-10-12",
       "last_changed": null,
       "document_access_type": "original_government_document",
@@ -125,7 +125,7 @@
       ],
       "id": "i-e791120ff304",
       "source_id": "s-609faf5cf663",
-      "evidence_reference": "curl (browser user agent, --max-time 60): 15-page executive summary PDF read (pdftotext); year 2020 confirmed from the Ministry/ITU AI landscape assessment PDF (citation 'Uganda National 4IR Strategy, 2020')"
+      "evidence_reference": "curl (browser user agent, --max-time 60): 15-page executive summary PDF read (pdftotext); year 2020 confirmed from the Ministry/ITU AI landscape assessment PDF (citation 'Uganda National 4IR Strategy, 2020'); re-checked 2026-10-13 by curl (HTTP 200, still listed on the Ministry's document page)"
     },
     {
       "jurisdiction_id": "UGA",
@@ -140,7 +140,7 @@
       "regional_applicability": [],
       "supersedes": [],
       "superseded_by": [],
-      "verification_date": "2026-10-12",
+      "verification_date": "2026-10-13",
       "first_recorded": "2026-10-12",
       "last_changed": null,
       "document_access_type": "original_government_document",
@@ -178,7 +178,118 @@
       ],
       "id": "i-06b0a66d1b61",
       "source_id": "s-bf459c854904",
-      "evidence_reference": "curl (browser user agent, --max-time 60): 134-page PDF read (pdftotext): acknowledgements, Minister's foreword, executive summary, contents of section 6 (proposed AI risk management framework) and recommendations; listed on the Ministry's Reports page"
+      "evidence_reference": "curl (browser user agent, --max-time 60): 134-page PDF read (pdftotext): acknowledgements, Minister's foreword, executive summary, contents of section 6 (proposed AI risk management framework) and recommendations; listed on the Ministry's Reports page; re-checked 2026-10-13 by curl (HTTP 200, still listed on the Ministry's document page)"
+    },
+    {
+      "jurisdiction_id": "UGA",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "technology_scope": [
+        "AI"
+      ],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "supersedes": [],
+      "superseded_by": [],
+      "verification_date": "2026-10-13",
+      "first_recorded": "2026-10-13",
+      "last_changed": null,
+      "document_access_type": "original_government_document",
+      "source_kind": "official_document",
+      "link_status": "reachable",
+      "scope": "Uganda (national)",
+      "language": "en",
+      "official_title": "National Information Security Framework (NISF): National Information Security Policy (NISP) 2026",
+      "id": "i-1104857d85d7",
+      "sectors": [
+        "cross-sector",
+        "public-sector"
+      ],
+      "english_title": "National Information Security Framework (NISF) – National Information Security Policy (NISP) 2026",
+      "issuing_authority": "National Information Technology Authority - Uganda (NITA-U); launched by the Minister of ICT and National Guidance",
+      "publisher_name": "National Information Technology Authority - Uganda",
+      "authority_type": "agency",
+      "categories": [
+        "cyber-security",
+        "risk-assurance",
+        "public-sector"
+      ],
+      "category": "cyber-security",
+      "legal_status": "administrative_policy_mandatory_in_scope",
+      "lifecycle": "adopted",
+      "publication_date": "2026-07-15",
+      "effective_date": null,
+      "current_status": "Launched on 15 July 2026 by the Minister of ICT and National Guidance at an event hosted by NITA-U under the UDAP-GovNet project (NITA-U news page). It updates the 2014 National Information Security Framework; the document states that the policy is mandatory for all public and private organisations that use, own or operate protected computers, critical information infrastructure, official communications systems or personal data processing environments. No separate commencement date is stated.",
+      "summary": "Uganda's updated national information security policy and framework, setting mandatory minimum security requirements for Ministries, Departments and Agencies, Local Governments, critical information infrastructure operators and other entities processing national information, aligned with ISO/IEC 27001/27002, NIST CSF and national laws. Its control section 5.2.4.3 on Artificial Intelligence requires organisations to carry out initial and ongoing AI risk assessments covering privacy, bias, fairness and explainability, audit AI systems for emerging ethical risks, comply with the Data Protection and Privacy Act (with DPIAs) when AI processes personal data, protect models and training data against poisoning and leakage, perform adversarial testing and performance monitoring, keep high-impact AI decisions auditable and transparent, and maintain human oversight of AI-driven critical decisions. It also defines an AI Security/Controller role with ISO/IEC 23894-related competences.",
+      "ai_governance_relevance": "First binding-in-scope national instrument with AI-specific security, risk and human-oversight controls.",
+      "source_url": "https://nita.go.ug/sites/default/files/2026-07/Updated-National%20Information%20Security%20Framework%20%28NISF%29.pdf",
+      "official_pdf_url": "https://nita.go.ug/sites/default/files/2026-07/Updated-National%20Information%20Security%20Framework%20%28NISF%29.pdf",
+      "official_webpage_url": "https://nita.go.ug/guidelines-it-standards",
+      "organization_id": "o-f1e3173259df",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "No commencement date stated in the document"
+      ],
+      "evidence_reference": "curl (browser user agent, --max-time 60): full PDF read (pdftotext): preface, version history, s. 1.2 applicability (mandatory), s. 5.2.4.3 Artificial Intelligence controls and AI Security/Controller role; launch date 15 July 2026 from the NITA-U news page 'Hon. Lumumba launches updated National Information Security Framework (NISF) 2026' and the Ministry of ICT news item of 16 July 2026",
+      "source_id": "s-b615b6c19c54"
+    },
+    {
+      "jurisdiction_id": "UGA",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "technology_scope": [
+        "AI"
+      ],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "supersedes": [],
+      "superseded_by": [],
+      "verification_date": "2026-10-13",
+      "first_recorded": "2026-10-13",
+      "last_changed": null,
+      "document_access_type": "original_government_document",
+      "source_kind": "official_document",
+      "link_status": "reachable",
+      "scope": "Uganda (national)",
+      "language": "en",
+      "official_title": "Uganda e-Government Interoperability Framework (e-GIF) e-GIF-2026",
+      "id": "i-7dc009da307e",
+      "sectors": [
+        "public-sector"
+      ],
+      "english_title": "Uganda e-Government Interoperability Framework 2026 (e-GIF-2026)",
+      "issuing_authority": "National Information Technology Authority - Uganda (NITA-U)",
+      "publisher_name": "National Information Technology Authority - Uganda",
+      "authority_type": "agency",
+      "categories": [
+        "public-sector",
+        "ethics",
+        "transparency",
+        "government-governance"
+      ],
+      "category": "public-sector",
+      "legal_status": "administrative_policy_mandatory_in_scope",
+      "lifecycle": "adopted",
+      "publication_date": "2026-04-15",
+      "effective_date": null,
+      "current_status": "Second version of the national e-GIF, dated 15 April 2026 on its cover and published on NITA-U's 'Guidelines & IT standards' page with its companion reference architecture (GIRA-2026). It builds on and replaces e-GIF-2021 (not recorded). The document states it is mandatory for all Ministries, Departments, Agencies and Local Governments; no launch notice or commencement date was found.",
+      "summary": "Mandatory interoperability framework for all Ugandan Ministries, Departments, Agencies and Local Governments, with which all digital initiatives, procurement and system developments must conform. It sets principles for AI in public administration: AI as an additive layer that systems must be able to run without, a mandatory human review 'break point' for critical processes, full traceability before automation, and bounded delegation for autonomous agents, plus an ethics-by-design approach requiring explainable and auditable AI-assisted decisions affecting citizens' rights, mandatory human-in-the-loop for complex decision support, and bias testing. It also calls for clarifying the legal bases for automated and AI-assisted decisions.",
+      "ai_governance_relevance": "Sets binding-in-scope AI principles (human oversight, transparency, bias testing) for government systems.",
+      "source_url": "https://nita.go.ug/sites/default/files/2026-07/Uganda%20e-Government%20Interoperability%20Framework%20%28e-GIF%29-2026.pdf",
+      "official_pdf_url": "https://nita.go.ug/sites/default/files/2026-07/Uganda%20e-Government%20Interoperability%20Framework%20%28e-GIF%29-2026.pdf",
+      "official_webpage_url": "https://nita.go.ug/guidelines-it-standards",
+      "organization_id": "o-f1e3173259df",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Date is the cover date of the document; no launch notice found",
+        "No commencement date stated"
+      ],
+      "evidence_reference": "curl (browser user agent, --max-time 60): full PDF read (pdftotext): cover dated April 15, 2026, scope/mandatory statement, s. 3.3 AI for interoperability, s. 3.3.1 principles for AI implementations, s. 3.3.2 ethics-by-design, s. 5.3.3 legal framework for AI and automated decisions; listed on NITA-U 'Guidelines & IT standards' page",
+      "source_id": "s-2ce63b1c4255"
     }
   ],
   "organizations": [
@@ -201,6 +312,16 @@
       "source_url": "https://www.parliament.go.ug/",
       "authority_type": "legislature",
       "government_level": "national"
+    },
+    {
+      "id": "o-f1e3173259df",
+      "jurisdiction_id": "UGA",
+      "name": "National Information Technology Authority - Uganda",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Statutory authority under the Ministry of ICT and National Guidance that sets IT standards for government and hosts the Personal Data Protection Office. Issued the National Information Security Framework/Policy 2026 (mandatory AI security and risk controls) and the e-Government Interoperability Framework 2026 (AI principles, human-in-the-loop and algorithmic transparency for public-sector AI); developing a national AI framework for government under UDAP-GovNet.",
+      "source_url": "https://nita.go.ug/",
+      "authority_type": "agency",
+      "government_level": "national"
     }
   ],
   "sources": [
@@ -220,9 +341,9 @@
         "data-privacy",
         "binding-law"
       ],
-      "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): 32-page scanned PDF of the assented Act read as page images (title page, assent page dated 25/2/2019, arrangement of sections, s. 2 definitions, ss. 25-28 incl. s. 27 automated decision-taking)",
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl (browser user agent, --max-time 60): 32-page scanned PDF of the assented Act read as page images (title page, assent page dated 25/2/2019, arrangement of sections, s. 2 definitions, ss. 25-28 incl. s. 27 automated decision-taking); re-checked 2026-10-13 by curl (browser user agent, --max-time 60): HTTP 200",
       "http_status": 200,
       "final_url": "https://ict.go.ug/site/documents/Data-Protection-and-Privacy-Act-2019.pdf",
       "link_status": "reachable",
@@ -247,9 +368,9 @@
         "strategy",
         "government-governance"
       ],
-      "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): 15-page executive summary PDF read (pdftotext); year 2020 confirmed from the Ministry/ITU AI landscape assessment PDF (citation 'Uganda National 4IR Strategy, 2020')",
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl (browser user agent, --max-time 60): 15-page executive summary PDF read (pdftotext); year 2020 confirmed from the Ministry/ITU AI landscape assessment PDF (citation 'Uganda National 4IR Strategy, 2020'); re-checked 2026-10-13 by curl (browser user agent, --max-time 60): HTTP 200",
       "http_status": 200,
       "final_url": "https://ict.go.ug/site/documents/Executive-Summary-Ugandas-National-4IR-Strategy.pdf",
       "link_status": "reachable",
@@ -274,11 +395,68 @@
         "index-readiness",
         "risk-assurance"
       ],
-      "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): 134-page PDF read (pdftotext): acknowledgements, Minister's foreword, executive summary, contents of section 6 (proposed AI risk management framework) and recommendations; listed on the Ministry's Reports page",
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl (browser user agent, --max-time 60): 134-page PDF read (pdftotext): acknowledgements, Minister's foreword, executive summary, contents of section 6 (proposed AI risk management framework) and recommendations; listed on the Ministry's Reports page; re-checked 2026-10-13 by curl (browser user agent, --max-time 60): HTTP 200",
       "http_status": 200,
       "final_url": "https://ict.go.ug/site/documents/uganda-national-ai-landscape-assessment.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-b615b6c19c54",
+      "url": "https://nita.go.ug/sites/default/files/2026-07/Updated-National%20Information%20Security%20Framework%20%28NISF%29.pdf",
+      "jurisdiction_ids": [
+        "UGA"
+      ],
+      "source_institutions": [
+        "National Information Technology Authority - Uganda"
+      ],
+      "instrument_ids": [
+        "i-1104857d85d7"
+      ],
+      "categories_reviewed": [
+        "cyber-security",
+        "risk-assurance",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl (browser user agent, --max-time 60): full PDF read (pdftotext): preface, version history, s. 1.2 applicability (mandatory), s. 5.2.4.3 Artificial Intelligence controls and AI Security/Controller role; launch date 15 July 2026 from the NITA-U news page 'Hon. Lumumba launches updated National Information Security Framework (NISF) 2026' and the Ministry of ICT news item of 16 July 2026",
+      "http_status": 200,
+      "final_url": "https://nita.go.ug/sites/default/files/2026-07/Updated-National%20Information%20Security%20Framework%20%28NISF%29.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-2ce63b1c4255",
+      "url": "https://nita.go.ug/sites/default/files/2026-07/Uganda%20e-Government%20Interoperability%20Framework%20%28e-GIF%29-2026.pdf",
+      "jurisdiction_ids": [
+        "UGA"
+      ],
+      "source_institutions": [
+        "National Information Technology Authority - Uganda"
+      ],
+      "instrument_ids": [
+        "i-7dc009da307e"
+      ],
+      "categories_reviewed": [
+        "public-sector",
+        "ethics",
+        "transparency",
+        "government-governance"
+      ],
+      "date_reviewed": "2026-10-13",
+      "checked_date": "2026-10-13",
+      "check_method": "curl (browser user agent, --max-time 60): full PDF read (pdftotext): cover dated April 15, 2026, scope/mandatory statement, s. 3.3 AI for interoperability, s. 3.3.1 principles for AI implementations, s. 3.3.2 ethics-by-design, s. 5.3.3 legal framework for AI and automated decisions; listed on NITA-U 'Guidelines & IT standards' page",
+      "http_status": 200,
+      "final_url": "https://nita.go.ug/sites/default/files/2026-07/Uganda%20e-Government%20Interoperability%20Framework%20%28e-GIF%29-2026.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
@@ -304,18 +482,18 @@
     ],
     "categories_with_findings": [
       "binding-law",
+      "cyber-security",
       "data-privacy",
+      "ethics",
       "government-governance",
       "index-readiness",
+      "public-sector",
       "risk-assurance",
-      "strategy"
+      "strategy",
+      "transparency"
     ],
     "categories_where_no_material_was_found": [
-      "ethics",
-      "public-sector",
       "procurement",
-      "cyber-security",
-      "transparency",
       "standards",
       "sandbox",
       "sectoral",
@@ -341,9 +519,25 @@
       "NITA-U artificial intelligence guidelines public service OR Ministry of Public Service AI policy Uganda",
       "parliament.go.ug artificial intelligence bill 2025 OR 2026 Uganda",
       "Uganda Ministry of Education OR Ministry of Health artificial intelligence guidelines policy document",
-      "\"Data Protection and Privacy Regulations, 2021\" Uganda statutory instrument official"
+      "\"Data Protection and Privacy Regulations, 2021\" Uganda statutory instrument official",
+      "Uganda National Artificial Intelligence Strategy 2026 launched ict.go.ug",
+      "\"Data Protection and Privacy Regulations, 2021\" Uganda pdf pdpo.go.ug",
+      "Uganda Personal Data Protection Office guidance artificial intelligence 2025 OR 2026",
+      "parliament.go.ug bill artificial intelligence OR deepfake 2026 Uganda",
+      "parliament.go.ug site search: artificial intelligence; deepfake; data protection amendment",
+      "Uganda Communications Commission artificial intelligence task force report framework ucc.co.ug",
+      "ucc.co.ug WordPress search: artificial intelligence",
+      "Bank of Uganda artificial intelligence guidance OR circular OR fintech regulatory sandbox AI",
+      "Uganda Ministry of Education OR NCHE OR Ministry of Health artificial intelligence policy guidelines 2025 2026",
+      "Uganda Copyright and Neighbouring Rights (Amendment) Bill artificial intelligence passed parliament",
+      "Uganda Judiciary guidelines use of artificial intelligence courts 2025 OR 2026",
+      "UNBS \"ISO/IEC 42001\" Uganda standard adopted artificial intelligence",
+      "Uganda Ministry of Public Service OR NITA-U guidelines generative AI use in government ChatGPT circular",
+      "Uganda Ministry of Health digital health strategy artificial intelligence guidelines health.go.ug",
+      "Uganda Gazette statutory instrument \"artificial intelligence\" 2025 OR 2026 regulations",
+      "nita.go.ug Guidelines & IT standards / Laws and Regulations / Research reports (artificial intelligence)"
     ],
-    "review_date": "2026-10-12",
+    "review_date": "2026-10-13",
     "passes": {
       "institutions": "COMPLETE",
       "legislation": "COMPLETE",
@@ -360,11 +554,71 @@
       "regional_inheritance": "COMPLETE",
       "gap_check": "COMPLETE"
     },
-    "no_material_found_note": " Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. UPPC gazette: no searchable portal (web search). pdpo.go.ug JS-only; BoU circulars not read directly. DPPA 2019 from ict.go.ug scan (assent page and s.27 read as images); commencement (reported 3 May 2019) unconfirmed. 4IR Strategy year 2020 from landscape assessment citation. Landscape assessment ITU co-publication (ITU copyright/ISBN) on Ministry Reports page with Minister's foreword. BoU Cyber and Technology Risk Management Guidelines 2024: AI in passing (lead, scope test). Convention 108: not a party. Units covered: Law: Ministry of ICT 'Acts and Laws' page (Data Protection and Privacy Act 2019, Computer Misuse Act 2011, Electronic Transactions/Signatures Acts) and web search of Parliament/Gazette/ULII for AI laws and bills: only the DPPA (s. 27 automated decision-taking) has AI-relevant provisions; no AI law or AI bill found (DPPA amendment calls held as lead).; Government: Ministry of ICT and National Guidance: all five document listings (strategies, policies, guidelines, reports, acts) read; recorded the National 4IR Strategy and the Ministry/ITU AI landscape assessment; Digital Vision Uganda 2040 and the ICT Strategic Plan 2025/26-2029/30 mention AI only in passing (AI Framework activity held as lead); National AI & Emerging Technologies Strategy still in consultation (lead). No public-sector AI or GenAI guideline found (NITA-U framework is a lead).; Ministries: Searched, nothing found: Education and Sports, Health, Public Service, Finance, Justice, Defence, Internal Affairs, Gender/Labour have no AI documents found.; Regulators: PDPO (script-rendered portal, no AI guidance found), UCC (AI task force, no published framework; lead), Bank of Uganda (cyber/technology risk guidelines mention AI only in passing; lead), NITA-U (AI framework in development; lead), UNBS (no AI standard adoption found), competition: none.. Not reached: Uganda Gazette (UPPC) has no searchable online portal; relied on web search; pdpo.go.ug document listing (script-rendered portal); bou.or.ug circulars not read directly. Could not verify: Data Protection and Privacy Regulations 2021 official copy; UCC AI task force report; Bank of Uganda AI-related guidance text; Convention 108: Uganda not found as a party (no accession act found). ethics, public-sector, procurement, cyber-security, transparency, standards, sandbox, sectoral, generative-ai, drafts, international, historical: no material found.",
+    "no_material_found_note": " Technical review notes: thin pass 2026-10-13 (second, longer deep review: up to 45 minutes, one agent, national level only, PROTOCOL §6; every existing record re-checked; each ministry and sector regulator searched one by one). UPPC gazette: no searchable portal (web search). pdpo.go.ug JS-only; BoU circulars not read directly. DPPA 2019 from ict.go.ug scan (assent page and s.27 read as images); commencement 3 May 2019 now confirmed from the official revised edition Cap. 97 on nita.go.ug. 4IR Strategy year 2020 from landscape assessment citation. Landscape assessment ITU co-publication (ITU copyright/ISBN) on Ministry Reports page with Minister's foreword. BoU Cyber and Technology Risk Management Guidelines 2024: AI in passing (lead, scope test). Convention 108: not a party. Thin pass 2026-10-13: 3 records re-checked; i-5737ecd9df76 effective_date 2019-05-03 (Cap. 97 'Commencement: 3 May, 2019'). Added NITA-U NISP 2026 (2026-07-15, launch date on NITA-U news page; s.5.2.4.3 AI controls) and e-GIF-2026 (2026-04-15, cover date). Not reached: parliament.go.ug news/bills (503), pdpo.go.ug (JS-only), health.go.ug and mojca.go.ug (502), unbs.go.ug (403), nda.or.ug and ulii.org (bot check), bou.or.ug circulars, ura.go.ug. Units covered: Law: Uganda Gazette (UPPC): still no searchable online portal; web search for AI statutory instruments found none. Parliament (parliament.go.ug): bills page shows a stale list; site search for 'artificial intelligence', 'deepfake' and 'data protection amendment' found no AI, deepfake or DPPA amendment bill; it surfaced the Copyright and Neighbouring Rights (Amendment) Bill 2025 passed with AI-related committee recommendations (lead; page HTTP 503). NITA-U 'Laws and Regulations' page: revised editions Cap. 96-99 (DPPA Cap. 97 confirms commencement 3 May 2019) and NITA-U regulations; no AI provisions beyond DPPA s. 27; DPP Regulations 2021 not posted.; Government: Ministry of ICT and National Guidance: all five document listings re-read (no new documents); news pages: National AI & Emerging Technologies Strategy still in consultation (13 Mar 2026), UNESCO RAM readiness report validated 26 May 2026 (lead), UN Global Dialogue statement 7 Jul 2026 (no instrument). NITA-U: 'Guidelines & IT standards' page yields two new records: NISF/NISP 2026 (AI controls s. 5.2.4.3) and e-GIF-2026 (AI principles); research reports page has no AI documents; national AI framework for government still unpublished (existing lead). No standalone public-sector GenAI guideline found.; Ministries: Education and Sports (education.go.ug homepage: only an AI skills training news item; no AI policy); Health (health.go.ug unreachable, HTTP 502; web search: only the 2020/21-2024/25 digital health strategic plan, no AI guidance); Justice/Constitutional Affairs (mojca.go.ug unreachable; Judiciary: AI tools in rollout, no AI rules - lead); Defence: nothing found (web search); Finance/Planning (finance.go.ug homepage: AI mentions in news only; URA site no reply): nothing; Labour/Gender: nothing found; Internal Affairs/Police: nothing found; Agriculture: nothing found; Foreign Affairs: only the Geneva AI governance statement (press release, no instrument); Public Service: no GenAI/AI circular found; Science, Technology and Innovation: conference remarks only.; Regulators: Bank of Uganda (site redesigned; 2021 sandbox framework link now returns HTML; no AI guidance found; 2024 cyber/technology risk guidelines remain a lead); Capital Markets Authority (cmauganda.co.ug: no AI content); Insurance Regulatory Authority (ira.go.ug: no AI content); Uganda Communications Commission (ucc.co.ug WordPress search for 'artificial intelligence': news only, no AI Task Force report or framework - lead kept); National Drug Authority (nda.or.ug blocked by bot check; nothing found by search); National Council for Higher Education (unche.or.ug: no AI content); competition: Ministry of Trade competition function, nothing found; Personal Data Protection Office (pdpo.go.ug script-only; NITA-U PDPO service page lists audits and advisory services, no AI guidance or decisions); cyber security: NITA-U NISF 2026 recorded, UG-CERT (UCC) no AI guidance; UNBS (unbs.go.ug HTTP 403; no national adoption of ISO/IEC 42001/23894/22989 found by search).. Not reached: Uganda Gazette (UPPC): no searchable online portal; parliament.go.ug news/bill pages intermittently HTTP 503 (copyright bill text not read); pdpo.go.ug (script-only portal); health.go.ug and mojca.go.ug (HTTP 502); unbs.go.ug (HTTP 403) and nda.or.ug (bot check); bou.or.ug circulars (redesigned site, document links return HTML); ura.go.ug (no reply); ulii.org (bot check). Could not verify: Data Protection and Privacy Regulations, 2021 official copy (not on ict.go.ug or nita.go.ug; pdpo.go.ug script-only); Copyright and Neighbouring Rights (Amendment) Bill 2025 text and AI provisions / assent; UCC AI Task Force report; Bank of Uganda AI-related guidance text; UNBS adoption of ISO/IEC AI standards. procurement, standards, sandbox, sectoral, generative-ai, drafts, international, historical: no material found.",
     "discovery_result_count": 12,
     "focused_result_count": 14
   },
   "changes": [
+    {
+      "id": "c-34ae7399efa2",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "UGA",
+      "instrument_id": "i-5737ecd9df76",
+      "title": "Data Protection and Privacy Act, 2019",
+      "detail": "Record updated: effective date.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-0644fb8d3a13",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "UGA",
+      "instrument_id": "i-1104857d85d7",
+      "title": "National Information Security Framework (NISF) – National Information Security Policy (NISP) 2026",
+      "detail": "Added to the radar (published 2026-07-15).",
+      "from": null,
+      "to": null,
+      "source_url": "https://nita.go.ug/sites/default/files/2026-07/Updated-National%20Information%20Security%20Framework%20%28NISF%29.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-2251f875e70b",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "UGA",
+      "instrument_id": "i-7dc009da307e",
+      "title": "Uganda e-Government Interoperability Framework 2026 (e-GIF-2026)",
+      "detail": "Added to the radar (published 2026-04-15).",
+      "from": null,
+      "to": null,
+      "source_url": "https://nita.go.ug/sites/default/files/2026-07/Uganda%20e-Government%20Interoperability%20Framework%20%28e-GIF%29-2026.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-85fd05c4b3a4",
+      "date": "2026-10-13",
+      "recorded": "2026-10-13",
+      "kind": "radar",
+      "type": "radar",
+      "jurisdiction_id": "UGA",
+      "instrument_id": null,
+      "title": "Deep review completed",
+      "detail": "Country reviewed to the full record standard; 5 documents recorded.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
     {
       "id": "c-5de571f8b0c1",
       "date": "2026-10-12",
@@ -426,6 +680,51 @@
       "needs_review": false
     },
     {
+      "id": "c-9d2243b31207",
+      "date": "2026-07-15",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "UGA",
+      "instrument_id": "i-1104857d85d7",
+      "title": "National Information Security Framework/Policy 2026 launched",
+      "detail": "Minister of ICT and National Guidance launched the updated NISF 2026, which includes mandatory AI risk, security and human-oversight controls (s. 5.2.4.3).",
+      "from": null,
+      "to": null,
+      "source_url": "https://nita.go.ug/sites/default/files/2026-07/Updated-National%20Information%20Security%20Framework%20%28NISF%29.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-74f3c0468022",
+      "date": "2026-04-15",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "UGA",
+      "instrument_id": "i-7dc009da307e",
+      "title": "e-Government Interoperability Framework 2026 issued",
+      "detail": "NITA-U e-GIF-2026, dated 15 April 2026, sets mandatory interoperability rules for MDAs and LGs including AI implementation principles and human-in-the-loop requirements.",
+      "from": null,
+      "to": null,
+      "source_url": "https://nita.go.ug/sites/default/files/2026-07/Uganda%20e-Government%20Interoperability%20Framework%20%28e-GIF%29-2026.pdf",
+      "needs_review": true
+    },
+    {
+      "id": "c-10ebdd8645c1",
+      "date": "2019-05-03",
+      "recorded": "2026-10-13",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "UGA",
+      "instrument_id": "i-5737ecd9df76",
+      "title": "Data Protection and Privacy Act, 2019 commences",
+      "detail": "The Act commenced on 3 May 2019 (commencement line in the official revised edition, Cap. 97).",
+      "from": null,
+      "to": null,
+      "source_url": "https://nita.go.ug/sites/default/files/2026-09/Data%20Protection%20and%20Privacy%20Act%20cap%2097.pdf",
+      "needs_review": false
+    },
+    {
       "id": "c-253400185247",
       "date": "2019-02-25",
       "recorded": "2026-10-12",
@@ -483,6 +782,27 @@
       "issuing_authority": "Bank of Uganda",
       "note": "Reported to apply from 1 December 2024 to supervised financial institutions; AI is only mentioned in passing among transforming technologies, so it fails the scope test unless the official text contains AI-specific requirements. Not read on bou.or.ug.",
       "found": "2026-10-12"
+    },
+    {
+      "title": "Copyright and Neighbouring Rights (Amendment) Bill, 2025",
+      "english_title": "Copyright and Neighbouring Rights (Amendment) Bill, 2025",
+      "issuing_authority": "Parliament of Uganda",
+      "note": "Parliament site search (parliament.go.ug news 4304 'Smiles for creatives as MPs pass copyright law') shows MPs passed the bill with committee recommendations on a framework for managing content created with AI; the news page and bill text could not be opened (HTTP 503) and assent was not confirmed. Check for AI provisions in the assented Act.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "Uganda AI Readiness Assessment Report (UNESCO RAM)",
+      "english_title": "Uganda Artificial Intelligence Readiness Assessment Report",
+      "issuing_authority": "Ministry of ICT and National Guidance with UNESCO",
+      "note": "Validated at a workshop on 26 May 2026 (ict.go.ug news 'Government of Uganda and UNESCO Validate Uganda's AI Readiness Report'); final report not published on ict.go.ug as of 2026-10-13. Record under index-readiness once published.",
+      "found": "2026-10-13"
+    },
+    {
+      "title": "Judiciary of Uganda use of AI in court processes",
+      "english_title": "Judiciary AI tools and guidance",
+      "issuing_authority": "Judiciary of Uganda",
+      "note": "Judiciary is rolling out AI-enabled transcription and research tools with its 2026 paperless transition (Chief Justice circular reported in media); only a 2024 Judicial Conference presentation on judiciary.go.ug found, no AI rules for courts. Internal use plan; record only if a guideline on AI use is issued.",
+      "found": "2026-10-13"
     }
   ]
 }
