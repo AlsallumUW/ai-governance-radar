@@ -71,3 +71,8 @@
 @media (max-width:560px){.topnav{gap:12px}.toc.sitenav{gap:12px}.tl-filters label{flex:1 1 40%;max-width:none}}
 @media print{.chart-index,.caution a,.tl-filters,.tl-brush-wrap{display:none}.an-grid{display:block}.afig{break-inside:avoid;max-width:none;margin-bottom:14pt}.fig .chart{max-height:none}}
 @media (max-width:560px){#fig-heat .fig-chart,#fig-region .fig-chart{overflow-x:auto}#fig-heat .chart{min-width:620px}#fig-region .chart{min-width:540px}}
+.scope-toggle{display:inline-flex;align-items:center;gap:8px;margin:8px 0 2px;font-size:14px;font-weight:600;color:var(--ink);cursor:pointer}
+.scope-toggle input{width:18px;height:18px;accent-color:var(--accent)}
+.fig-note{margin:8px 0 0;font-size:13px;color:var(--ink-2);max-width:var(--text)}
+.discovery{margin:12px 0 0;font-size:15px;color:var(--ink-2);max-width:var(--text)}
+@media print{.scope-toggle{display:none}}

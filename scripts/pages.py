@@ -331,7 +331,7 @@ def country_page(j, D, rec, flags, ctx):
         if pipe_drafts: pl += '</ol>'
         more = len(future) + len(pipe_drafts) - min(12, len(future)) - min(12, len(pipe_drafts))
         figs.append(f'<figure class="fig" id="fig-pipeline" data-asof="{e(today)}"><figcaption><h3>Open and upcoming <span class="asof">Upcoming as of {e(fmt_date(today))}</span></h3><p class="fig-desc">Dated government actions still ahead, then drafts and other documents still open for comment.</p></figcaption>{pl}'
-                    + ('<p class="fig-tools">Includes non-draft documents still open for comment.</p>' if pipe_drafts else "")
+                    + ('<p class="fig-tools">Includes non-draft documents still open for comment.</p>' if any(i.get("legal_status") != "consultation_draft" for i in pipe_drafts[:12]) else "")
                     + (f'<p class="fig-tools">{more} more in the instrument list.</p>' if more > 0 else "") + '</figure>')
     H.append('<div class="lede-grid">' + (ov or '<section id="overview" class="block prose"><h2>Overview</h2><p class="muted">No narrative summary has been written for this jurisdiction yet.</p></section>')
              + '<aside id="charts" class="panels" aria-label="Charts">' + "".join(figs) + '</aside></div>')
