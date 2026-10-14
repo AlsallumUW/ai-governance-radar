@@ -527,7 +527,7 @@ def body_page(b, D, rec, flags, ctx):
     bid = b["id"]; cats = D["categories"]
     rows = [i for i in D["instruments"] if i["jurisdiction_id"] == bid]
     narr = D["narratives"].get(bid) or {}
-    members = sorted(ctx["members"].get(bid, ()), key=lambda c: ctx["jur"].get(c, {}).get("name", c))
+    members = sorted(ctx["members"].get(bid, ()), key=lambda c: i18n.name_key(ctx["jur"].get(c, {}).get("name", c)))
     canon = f"{SITE_URL}body/{bid}/"
     title = f"{b['name']}: AI governance instruments | AI Governance Radar"
     desc = first_sentence(narr.get("summary")) or f"Instruments of the {b['name']} recorded on the AI Governance Radar, and the countries they apply to."
@@ -550,7 +550,7 @@ def body_page(b, D, rec, flags, ctx):
     ov = '<section id="overview" class="block prose"><h2>Overview</h2>' + ("".join(f'<p>{e(p)}</p>' for p in re.split(r"\n\s*\n", narr.get("summary") or "") if p.strip())
                                                                           or f'<p>{e(b.get("overview") or "")}</p>')
     if bid == "OECD" and ctx["oecd"]:
-        adh = sorted(ctx["oecd"].items(), key=lambda kv: (kv[1].get("member") is not True, ctx["jur"].get(kv[0], {}).get("name", kv[0])))
+        adh = sorted(ctx["oecd"].items(), key=lambda kv: (kv[1].get("member") is not True, i18n.name_key(ctx["jur"].get(kv[0], {}).get("name", kv[0]))))
         link = lambda c: f'<a href="../../{"body" if ctx["jur"].get(c, {}).get("type") != "country" else "country"}/{c}/">{e(ctx["jur"].get(c, {}).get("name", c))}</a>'
         ov += ('<h3 class="minor">Adherents to the AI Recommendation</h3><table class="data-table plain-table"><thead><tr><th scope="col">Adherent</th><th scope="col">Status</th><th scope="col">Adhered</th></tr></thead><tbody>'
                + "".join(f'<tr><th scope="row">{link(c)}</th><td>{"OECD member" if a.get("member") else "Non-member"}</td><td>{e(fmt_date(a.get("date")) or "Date not listed")}</td></tr>' for c, a in adh)
@@ -599,7 +599,7 @@ def credits_page(D, ctx):
     """/credits/: every photo used on the site, with author, licence and a link to its Commons page."""
     photos = ctx["photos"]; jur = ctx["jur"]
     rows, fallback = [], []
-    for cid in sorted((c for c, j in jur.items() if j.get("type") == "country"), key=lambda c: jur[c].get("name", c)):
+    for cid in sorted((c for c, j in jur.items() if j.get("type") == "country"), key=lambda c: i18n.name_key(jur[c].get("name", c))):
         ph = photos.get(cid) or {}
         ims = [(ROLE_LABEL[r], ph[r]) for r in ROLE_LABEL if ph.get(r)]
         if not ph.get("hero"): fallback.append(cid)

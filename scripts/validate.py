@@ -122,6 +122,9 @@ def check_i18n():
     countries = {q.stem for q in (DATA / "countries").glob("*.json")}
     miss = sorted(countries - set(d.get("countries", {})))
     if miss: E(f"countries without an Arabic name: {miss}")
+    order = set(d.get("sort_order", []))
+    unsorted = sorted(n for n in list(d.get("countries", {}).values()) + list(d.get("bodies", {}).values()) if n not in order)
+    if unsorted: E(f"names missing from sort_order (rerun the strings generator): {unsorted}")
     for k, v in (d.get("country_overrides") or {}).items():
         if d["countries"].get(k) != v: E(f"country override {k} not applied")
     return errs

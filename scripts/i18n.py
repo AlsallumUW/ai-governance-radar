@@ -95,6 +95,16 @@ def translate(text):
     return text
 
 
+_RANK = {n: k for k, n in enumerate(D.get("sort_order", []))}
+
+
+def name_key(name):
+    """Sort key for a country or body name: English order on English pages, Arabic collation (ar.json sort_order) on Arabic pages."""
+    if LANG != "ar": return (0, name)
+    ar = translate(name)
+    return (_RANK.get(ar, len(_RANK)), ar)
+
+
 def T(en, **kw):
     """A sentence with {placeholders}: the Arabic template when LANG is "ar" (values are passed already formatted)."""
     t = STR.get(en, en) if LANG == "ar" else en

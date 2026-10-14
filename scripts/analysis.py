@@ -452,7 +452,7 @@ def fig_treaty(N, ctx):
     cids = N["cids"]; jur = N["jur"]
     eu = set(ctx["members"].get("EU", ()))
     st = {}
-    for c in sorted(cids, key=lambda c: jur[c]["name"]):
+    for c in sorted(cids, key=lambda c: i18n.name_key(jur[c]["name"])):
         s = ctx["cets"].get(c)
         st[c] = "Ratified" if s == "ratified" else "Signed" if s == "signed" else "EU signatory only" if c in eu else "None"
     order = ["Ratified", "Signed", "EU signatory only", "None"]
@@ -625,7 +625,7 @@ def timeline_page(D, ctx):
     title = "Publication timeline | AI Governance Radar"
     desc = _T("Every dated AI-governance instrument recorded by the radar on one time axis, filterable by country, region, body, category, status and level. Data as of {date}.", date=fmt_date(ctx['today']))
     sel = lambda name, label, opts: (f'<label>{e(label)}<select name="{name}" data-f="{name}"><option value="">All</option>' + opts + '</select></label>')
-    countries = sorted(((k, v[0]) for k, v in T["jurisdictions"].items() if v[2]), key=lambda kv: kv[1])
+    countries = sorted(((k, v[0]) for k, v in T["jurisdictions"].items() if v[2]), key=lambda kv: i18n.name_key(kv[1]))
     st_opts = ('<optgroup label="Group">' + "".join(f'<option value="{g}">{e(KIND_LABEL[g])}</option>' for g in ("binding", "soft", "draft")) + '</optgroup>'
                '<optgroup label="Legal status">' + "".join(f'<option value="{k}">{e(v)}</option>' for k, v in T["statuses"] if k) + '</optgroup>')
     filters = ('<form class="tl-filters" id="tlFilters" role="search" aria-label="Filter the timeline" onsubmit="return false">'
@@ -664,7 +664,7 @@ def suggest_page(D, ctx):
     canon = f"{SITE_URL}suggest/"
     title = "Suggest an update | AI Governance Radar"
     desc = "Suggest a new AI-governance document, a correction, a status change or a broken link. Suggestions are checked against official sources."
-    juris = sorted(D["jurisdictions"], key=lambda j: (j["type"] != "country", j["name"]))
+    juris = sorted(D["jurisdictions"], key=lambda j: (j["type"] != "country", i18n.name_key(j["name"])))
     opts = ('<optgroup label="Countries">' + "".join(f'<option value="{e(j["id"])}">{e(j["name"])}</option>' for j in juris if j["type"] == "country") + '</optgroup>'
             '<optgroup label="International bodies">' + "".join(f'<option value="{e(j["id"])}">{e(j["name"])}</option>' for j in juris if j["type"] != "country") + '</optgroup>')
     kinds = ["New instrument", "Correction", "Status change", "Broken link"]
