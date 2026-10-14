@@ -29,15 +29,16 @@ def host(u):
 
 
 PHOTO_LICENCES = re.compile(r"^(Public domain|CC0 1\.0|CC BY(-SA)? \d\.\d( [a-z]{2,3})?)$")
-PHOTO_ROLES = ("hero", "government", "skyline", "heritage")
+PHOTO_ROLES = ("hero", "feature", "backdrop", "band")
+PHOTO_ASPECT = {"hero": 16 / 9, "feature": 4 / 5, "backdrop": 3 / 2, "band": 21 / 9}
 PHOTO_FIELDS = ["role", "file", "file_small", "width", "height", "width_small", "subject", "caption", "why", "alt",
                 "title", "author", "license", "license_url", "commons_url", "source_width"]
 PHOTO_CAPS = {"hero": (200_000, 80_000), "other": (150_000, 60_000)}
 
 
 def check_photos():
-    """data/photos.json (UX phase 2c): every country has a hero and at least 3 photos in distinct roles; allowed licences only;
-    files present and within size; every field filled; a reason for each role left empty."""
+    """data/photos.json (UX phase 2d): every country has exactly four photos, one in each role (hero, feature, backdrop, band),
+    cropped to that role's shape; allowed licences only; files present and within size; every field filled."""
     p = DATA / "photos.json"
     if not p.exists(): return [], []
     errs, warns = [], []
@@ -50,11 +51,7 @@ def check_photos():
         if cid not in countries: E("not a country file")
         ims = ph.get("photos") or []
         roles = [im.get("role") for im in ims]
-        if len(ims) < 3: E(f"only {len(ims)} photos (minimum 3)")
-        if len(set(roles)) != len(roles): E(f"duplicate roles {roles}")
-        if "hero" not in roles: E("no hero photo")
-        for r in PHOTO_ROLES:
-            if r not in roles and not (ph.get("missing") or {}).get(r): E(f"no {r} photo and no reason in missing.{r}")
+        if sorted(roles) != sorted(PHOTO_ROLES): E(f"roles are {roles}; need exactly one each of {', '.join(PHOTO_ROLES)}")
         for im in ims:
             if im.get("role") not in PHOTO_ROLES: E(f"{im.get('file')} role must be one of {PHOTO_ROLES}")
             for f in PHOTO_FIELDS:
@@ -63,6 +60,9 @@ def check_photos():
             if (im.get("license") or "").startswith("CC BY") and "cropped and resized" not in (im.get("changes") or ""):
                 E(f"{im.get('file')} is {im.get('license')} but has no modification note (changes: \"cropped and resized\")")
             if not (im.get("commons_url") or "").startswith("https://commons.wikimedia.org/wiki/File:"): E(f"{im.get('file')} commons_url is not a Commons file page")
+            a = PHOTO_ASPECT.get(im.get("role"))
+            if a and im.get("width") and im.get("height") and abs(im["width"] / im["height"] - a) > 0.02 * a:
+                E(f"{im.get('file')} is {im['width']}x{im['height']}, not the {im.get('role')} shape")
             caps = PHOTO_CAPS["hero" if im.get("role") == "hero" else "other"]
             for f, cap in zip(("file", "file_small"), caps):
                 q = site / (im.get(f) or "")

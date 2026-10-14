@@ -36,6 +36,7 @@ let bundle=null;const getBundle=()=>bundle?Promise.resolve(bundle):fetch('profil
 $$('[data-export]').forEach(b=>b.addEventListener('click',()=>{b.disabled=true;getBundle().then(B=>{const base=`AI-Governance-Radar-${jid}-${stamp}`;if(b.dataset.export==='json')dl(JSON.stringify(B,null,2),base+'.json','application/json');else{const rows=[...B.instruments.map(i=>({...i,layer:i.jurisdiction_id===jid?'national':'regional'})),...(B.regional_instruments_applying_here||[]).map(i=>({...i,jurisdiction_id:i.regional_jurisdiction_id,layer:'regional ('+i.regional_jurisdiction_id+')'}))];dl('﻿'+[F.map(cell).join(','),...rows.map(r=>F.map(k=>cell(r[k])).join(','))].join('\r\n'),base+'.csv','text/csv')}}).catch(()=>alert('The download could not be prepared. Please try again.')).finally(()=>{b.disabled=false})}));
 
 /* ---------------------------------------------------------------- scroll design (UX phase 2b) */
+const bands=$$('.pb-media').filter(m=>m.firstElementChild&&m.firstElementChild.tagName==='IMG');
 const root=document.documentElement,bar=$('.topnav'),hero=$('#top'),media=$('.hero-media'),railEl=$('.rail'),railIn=$('.rail-in');
 const reduce=matchMedia('(prefers-reduced-motion: reduce)');
 const setSbw=()=>root.style.setProperty('--sbw',(innerWidth-root.clientWidth)+'px');setSbw();addEventListener('resize',setSbw);
@@ -52,17 +53,20 @@ function frame(){ticking=false;const y=scrollY,vh=innerHeight,max=Math.max(1,roo
   const line=(bar?bar.offsetHeight:0)+vh*.25;let cur=secs[0]||null;for(const s of secs){if(s.getBoundingClientRect().top<=line)cur=s}
   if(y+vh>=root.scrollHeight-4&&secs.length)cur=secs[secs.length-1];
   if(cur!==current){current=cur;links.forEach(a=>{const on=cur&&a.getAttribute('href')==='#'+cur.id;if(on)a.setAttribute('aria-current','true');else a.removeAttribute('aria-current')})}
-  if(railIn&&railEl.offsetParent){const r=railIn.getBoundingClientRect();railEl.classList.toggle('dim',$$('.photo-break').some(b=>{const q=b.getBoundingClientRect();return q.top<r.bottom&&q.bottom>r.top}))}}
+  if(railIn&&railEl.offsetParent){const r=railIn.getBoundingClientRect(),over=el=>{const q=el.getBoundingClientRect();return q.top<r.bottom&&q.bottom>r.top};
+    railEl.classList.toggle('dim',$$('.photo-break,.closing').some(over));railEl.classList.toggle('ondark',$$('.charts-sec.has-bg .cs-bg').some(b=>b.offsetWidth>innerWidth*.6&&over(b)))}
+  /* band photo: gentle parallax while it crosses the viewport */
+  if(!reduce.matches)bands.forEach(b=>{const q=b.getBoundingClientRect();if(q.bottom<0||q.top>vh)return;const t=(q.top+q.height/2-vh/2)/(vh/2+q.height/2);b.firstElementChild.style.transform=`translate3d(0,${(t*q.height*.06).toFixed(1)}px,0)`})}
 addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(frame)}},{passive:true});addEventListener('resize',frame);frame();
 /* sections fade in once as they enter; charts grow from zero; header counts count up */
 function motion(){if(reduce.matches||!('IntersectionObserver' in window))return;
-  const els=$$('.intro,.content>section.block,.lede-grid>.block,.fig,.photo-break,.photo-pair .pp');
+  const els=$$('.intro,.content>section.block,.lede-grid>.block,.ov-grid>.block,.ov-photo,.charts-h,.fig,.photo-break,.closing-in');
   root.classList.add('js-motion');els.forEach(el=>el.classList.add('rv'));
   const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}}),{rootMargin:'0px 0px -6% 0px',threshold:0});
   els.forEach(el=>io.observe(el));
   $$('.hero dd[data-count]').forEach(dd=>{const v=+dd.dataset.count;if(!(v>1))return;const t0=performance.now(),dur=Math.min(900,400+v*4);dd.textContent='0';
     const step=t=>{const k=Math.min(1,(t-t0)/dur),e=1-Math.pow(1-k,3);dd.textContent=String(Math.round(v*e));if(k<1)requestAnimationFrame(step)};requestAnimationFrame(step)})}
 motion();
-reduce.addEventListener&&reduce.addEventListener('change',()=>{if(reduce.matches){root.classList.remove('js-motion');if(media)media.style.transform='';$$('.hero dd[data-count]').forEach(dd=>dd.textContent=dd.dataset.count)}});
+reduce.addEventListener&&reduce.addEventListener('change',()=>{if(reduce.matches){root.classList.remove('js-motion');if(media)media.style.transform='';bands.forEach(b=>b.firstElementChild.style.transform='');$$('.hero dd[data-count]').forEach(dd=>dd.textContent=dd.dataset.count)}});
 addEventListener('beforeprint',()=>{$$('.rv').forEach(el=>el.classList.add('in'));$$('.hero dd[data-count]').forEach(dd=>dd.textContent=dd.dataset.count);if(media)media.style.transform=''});
 })();
