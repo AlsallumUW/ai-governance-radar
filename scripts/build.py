@@ -6,6 +6,7 @@
 import csv, hashlib, io, json, re, sys
 from common import ROOT, DATA, load, load_all
 import pages
+import i18n
 
 OUT = ROOT / "dist"
 
@@ -94,6 +95,77 @@ def bust_urls(out):
     return n, len(hashes)
 
 
+# ---------------------------------------------------------------- Arabic mirror (UX phase 4b)
+AR = OUT / "ar"
+FONT = ('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
+        '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap">')
+
+
+def build_ar(D, map_html, flags):
+    """dist/ar/: every page again, generated with Arabic templates and dates, then the remaining interface text translated.
+    Photos, data files and assets are shared with the English site (links are pointed back to them in localise())."""
+    i18n.LANG = "ar"
+    try:
+        AR.mkdir(exist_ok=True)
+        (AR / "index.html").write_text(i18n.translate_html(map_html), encoding="utf-8")
+        n = pages.write_all(D, load_all(), AR, flags, mirror=True)
+        for page in AR.rglob("*.html"):
+            if page.name == "index.html" and page.parent == AR: continue
+            page.write_text(i18n.translate_html(page.read_text(encoding="utf-8")), encoding="utf-8")
+    finally:
+        i18n.LANG = "en"
+    if (AR / "assets").is_dir() and not any((AR / "assets").iterdir()): (AR / "assets").rmdir()
+    (OUT / "assets").mkdir(exist_ok=True)
+    (OUT / "assets" / "i18n-ar.js").write_text(i18n.runtime_js(), encoding="utf-8")
+    (OUT / "assets" / "ar.css").write_text((ROOT / "site/i18n/ar.css").read_text(encoding="utf-8"), encoding="utf-8")
+    return n
+
+
+def localise(out):
+    """Both languages: lang/dir, hreflang alternates and the language switch; Arabic pages also get the font, the runtime
+    translator, and links to shared files (photos, assets, data) pointed back at the main site."""
+    import os
+    for page in out.rglob("*.html"):
+        rel = page.relative_to(out).as_posix()
+        ar = rel.startswith("ar/")
+        path = rel[3:] if ar else rel                      # page path within its language, e.g. country/SAU/index.html
+        url = path[:-len("index.html")] if path.endswith("index.html") else path
+        depth = url.count("/")
+        up = "../" * (depth + (1 if ar else 0))           # from this page to the site root
+        other = (up + url) if ar else (up + "ar/" + url)   # same page in the other language
+        t = page.read_text(encoding="utf-8")
+        if '<html lang="en">' not in t: continue
+        alt = (f'<link rel="alternate" hreflang="en" href="{pages.SITE_URL}{url}"><link rel="alternate" hreflang="ar" href="{pages.SITE_URL}ar/{url}">'
+               f'<link rel="alternate" hreflang="x-default" href="{pages.SITE_URL}{url}">')
+        switch = (f'<a class="lang-switch" href="{other or "./"}" hreflang="en" lang="en">English</a>' if ar else
+                  f'<a class="lang-switch" href="{other}" hreflang="ar" lang="ar">العربية</a>')
+        if ar:
+            t = t.replace('<html lang="en">', '<html lang="ar" dir="rtl">', 1)
+            t = t.replace("</head>", FONT + f'<link rel="stylesheet" href="{up}assets/ar.css">' + alt + f'<script src="{up}assets/i18n-ar.js"></script></head>', 1)
+            # shared files: a relative link that resolves outside dist/ar/ content is pointed at the main site
+            base = page.parent
+            def link(u):
+                if "://" in u or u.startswith(("#", "data:", "mailto:", "/", "?")): return u
+                path_ = re.split(r"[?#]", u, maxsplit=1)[0]
+                tgt = os.path.normpath(base / path_)
+                if os.path.exists(tgt): return u
+                rest = os.path.relpath(tgt, AR)
+                if rest.startswith("..") or not os.path.exists(out / rest): return u
+                return os.path.relpath(out / rest, base).replace(os.sep, "/") + ("/" if path_.endswith("/") else "") + u[len(path_):]
+            t = re.sub(r'(\b(?:src|href)=")([^"]+)(")', lambda m: m.group(1) + link(m.group(2)) + m.group(3), t)
+            t = re.sub(r'((?:srcset|imagesrcset)=")([^"]+)(")', lambda m: m.group(1) + ", ".join(
+                " ".join([link(q.split()[0])] + q.split()[1:]) for q in m.group(2).split(",") if q.strip()) + m.group(3), t)
+        else:
+            t = t.replace("</head>", alt + "</head>", 1)
+        if '<span class="site">' in t:
+            t = re.sub(r'(<span class="site">[^<]*</span>)', lambda m: m.group(1) + switch, t, count=1)
+        elif '<div class="actions">' in t:
+            t = t.replace('<div class="actions">', '<div class="actions">' + switch.replace('class="lang-switch"', 'class="button lang-switch"'), 1)
+        else:
+            t = t.replace("<body>", "<body>" + switch, 1) if "<body>" in t else t
+        page.write_text(t, encoding="utf-8")
+
+
 def build():
     D = assemble()
     t = (ROOT / "site/template.html").read_text(encoding="utf-8")
@@ -112,11 +184,14 @@ def build():
     buf = io.StringIO(); w = csv.DictWriter(buf, f, extrasaction="ignore"); w.writeheader(); w.writerows(D["changes"])
     (OUT / "changes.csv").write_text("﻿" + buf.getvalue(), encoding="utf-8")
     (OUT / ".nojekyll").write_text("")
-    n_pages = pages.write_all(D, load_all(), OUT, json.loads((ROOT / "site/assets/flags.json").read_text(encoding="utf-8")))
+    flags = json.loads((ROOT / "site/assets/flags.json").read_text(encoding="utf-8"))
+    n_pages = pages.write_all(D, load_all(), OUT, flags)
+    n_ar = build_ar(D, t, flags)
+    localise(OUT)
     n_busted, n_files = bust_urls(OUT)
     print(f"built dist/index.html ({len(t)/1e6:.1f} MB): {len(D['jurisdictions'])} jurisdictions, "
           f"{len(D['instruments'])} instruments, {len(D['changes'])} change events, "
-          f"{D['meta']['deeply_reviewed_country_count']} deep-reviewed countries; {n_pages} country/body pages; cache-busted {n_files} asset URLs in {n_busted} pages")
+          f"{D['meta']['deeply_reviewed_country_count']} deep-reviewed countries; {n_pages} country/body pages ({n_ar} in Arabic); cache-busted {n_files} asset URLs in {n_busted} pages")
 
 
 if __name__ == "__main__":

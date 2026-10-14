@@ -2,7 +2,7 @@
 .sitenav a[aria-current]{color:var(--ink);font-weight:650}
 .toc.sitenav{display:flex}
 .stats4{grid-template-columns:repeat(4,minmax(0,1fr))}
-.caution{margin:22px 0 0;padding:14px 16px;border-left:4px solid var(--s-n);background:var(--surface);border-radius:0 8px 8px 0;max-width:var(--text);font-size:15px;line-height:1.55}
+.caution{margin:22px 0 0;padding:14px 16px;border-inline-start:4px solid var(--s-n);background:var(--surface);border-start-end-radius:8px;border-end-end-radius:8px;max-width:var(--text);font-size:15px;line-height:1.55}
 .chart-index{display:flex;flex-wrap:wrap;gap:8px 18px;padding:18px 0;border-bottom:1px solid var(--hair);font-size:14px}
 .an-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:28px;padding-top:32px}
 .an-grid #fig-years,.an-grid #fig-adoption,.an-grid #fig-heat{grid-column:1/-1}
@@ -56,10 +56,10 @@
 #tlBrush .sel{fill:var(--s-b);fill-opacity:.12;stroke:var(--s-b);stroke-width:1}
 .tl-card{position:absolute;z-index:6;width:min(340px,92vw);background:var(--surface);color:var(--ink);border:1px solid var(--axis);border-radius:10px;padding:12px 14px;box-shadow:0 8px 24px rgba(0,0,0,.18);font-size:14px;line-height:1.45}
 .tl-card h4{margin:0 0 6px;font-size:15px;line-height:1.35}.tl-card p{margin:2px 0;color:var(--ink-2)}.tl-card .k{color:var(--muted)}
-.tl-card .links{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px}.tl-card .x{position:absolute;top:6px;right:8px}
+.tl-card .links{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px}.tl-card .x{position:absolute;top:6px;inset-inline-end:8px}
 .tl-list{display:none}
 .tl-year{margin:22px 0 0}.tl-year h3{font-size:15px;margin:0;padding:8px 0;border-bottom:1px solid var(--hair);position:sticky;top:46px;background:var(--page)}
-.tl-year h3 .count{color:var(--muted);font-weight:500;margin-left:6px}
+.tl-year h3 .count{color:var(--muted);font-weight:500;margin-inline-start:6px}
 .tl-year ol{list-style:none;margin:0;padding:0}
 .tl-year li{display:grid;grid-template-columns:12px 1fr;gap:2px 10px;padding:10px 0;border-bottom:1px solid var(--hair);font-size:14px}
 .tl-year li .sw{margin-top:5px;border-radius:50%;grid-row:span 3}
