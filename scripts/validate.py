@@ -29,33 +29,42 @@ def host(u):
 
 
 PHOTO_LICENCES = re.compile(r"^(Public domain|CC0 1\.0|CC BY(-SA)? \d\.\d( [a-z]{2,3})?)$")
-PHOTO_SUBJECTS = {"parliament", "monument", "heritage_site", "landscape", "skyline"}
-PHOTO_FIELDS = ["file", "file_small", "width", "height", "title", "author", "license", "license_url", "commons_url", "shows", "alt"]
+PHOTO_ROLES = ("hero", "government", "skyline", "heritage")
+PHOTO_FIELDS = ["role", "file", "file_small", "width", "height", "width_small", "subject", "caption", "why", "alt",
+                "title", "author", "license", "license_url", "commons_url", "source_width"]
+PHOTO_CAPS = {"hero": (200_000, 80_000), "other": (150_000, 60_000)}
 
 
 def check_photos():
-    """data/photos.json (UX phase 2b): allowed licences only, files present and within size, every field filled."""
+    """data/photos.json (UX phase 2c): every country has a hero and at least 3 photos in distinct roles; allowed licences only;
+    files present and within size; every field filled; a reason for each role left empty."""
     p = DATA / "photos.json"
     if not p.exists(): return [], []
     errs, warns = [], []
-    countries = {q.stem for q in (DATA / "countries").glob("*.json")}
+    countries = {q.stem for q in (DATA / "countries").glob("*.json") if load(q)["jurisdiction"].get("type") == "country"}
     site = DATA.parent / "site"
-    for cid, ph in load(p).get("countries", {}).items():
+    data = load(p).get("countries", {})
+    for cid in sorted(countries - set(data)): errs.append(f"photos {cid}: no photos")
+    for cid, ph in data.items():
         E = lambda m: errs.append(f"photos {cid}: {m}")
         if cid not in countries: E("not a country file")
-        ims = ([ph["hero"]] if ph.get("hero") else []) + list(ph.get("secondary") or [])
-        if not ph.get("hero") and not ph.get("fallback_reason"): E("no hero and no fallback_reason")
-        if len(ph.get("secondary") or []) > 2: E("more than 2 secondary photos")
+        ims = ph.get("photos") or []
+        roles = [im.get("role") for im in ims]
+        if len(ims) < 3: E(f"only {len(ims)} photos (minimum 3)")
+        if len(set(roles)) != len(roles): E(f"duplicate roles {roles}")
+        if "hero" not in roles: E("no hero photo")
+        for r in PHOTO_ROLES:
+            if r not in roles and not (ph.get("missing") or {}).get(r): E(f"no {r} photo and no reason in missing.{r}")
         for im in ims:
+            if im.get("role") not in PHOTO_ROLES: E(f"{im.get('file')} role must be one of {PHOTO_ROLES}")
             for f in PHOTO_FIELDS:
                 if f not in im or (im[f] in ("", None) and f != "license_url"): E(f"{im.get('file')} missing {f}")
             if not PHOTO_LICENCES.match(im.get("license") or ""): E(f"{im.get('file')} licence not allowed: {im.get('license')}")
             if (im.get("license") or "").startswith("CC BY") and "cropped and resized" not in (im.get("changes") or ""):
                 E(f"{im.get('file')} is {im.get('license')} but has no modification note (changes: \"cropped and resized\")")
-            if im.get("subject_type") not in PHOTO_SUBJECTS: E(f"{im.get('file')} subject_type must be one of {sorted(PHOTO_SUBJECTS)}")
-            if not (im.get("why") or "").strip(): E(f"{im.get('file')} missing why")
             if not (im.get("commons_url") or "").startswith("https://commons.wikimedia.org/wiki/File:"): E(f"{im.get('file')} commons_url is not a Commons file page")
-            for f, cap in (("file", 200_000), ("file_small", 80_000)):
+            caps = PHOTO_CAPS["hero" if im.get("role") == "hero" else "other"]
+            for f, cap in zip(("file", "file_small"), caps):
                 q = site / (im.get(f) or "")
                 if not q.is_file(): E(f"missing image {im.get(f)}")
                 elif q.stat().st_size > cap: warns.append(f"photos {cid}: {im.get(f)} is {q.stat().st_size // 1000} KB (target {cap // 1000} KB)")
