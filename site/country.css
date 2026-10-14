@@ -199,7 +199,7 @@ body.cp{overflow-x:clip}
 .pb-what{color:var(--ink-2)}
 .photo-break figcaption a{color:inherit}
 /* credits page */
-.table-wrap{overflow-x:auto;margin:24px 0}.credits-table td,.credits-table th{font-size:13px;vertical-align:top}
+.table-wrap{overflow-x:auto;margin:24px 0}.credits-table{min-width:720px}.credits-table td,.credits-table th{font-size:13px;vertical-align:top}
 /* scroll motion (added by country.js; nothing is hidden without JavaScript or with reduced motion) */
 .js-motion .rv{opacity:0;transform:translateY(18px);transition:opacity .4s var(--ease),transform .4s var(--ease)}
 .js-motion .rv.in{opacity:1;transform:none}
