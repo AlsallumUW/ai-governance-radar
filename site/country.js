@@ -56,7 +56,7 @@ function frame(){ticking=false;const y=scrollY,vh=innerHeight,max=Math.max(1,roo
 addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(frame)}},{passive:true});addEventListener('resize',frame);frame();
 /* sections fade in once as they enter; charts grow from zero; header counts count up */
 function motion(){if(reduce.matches||!('IntersectionObserver' in window))return;
-  const els=$$('.intro,.content>section.block,.lede-grid>.block,.fig,.photo-break');
+  const els=$$('.intro,.content>section.block,.lede-grid>.block,.fig,.photo-break,.photo-pair .pp');
   root.classList.add('js-motion');els.forEach(el=>el.classList.add('rv'));
   const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}}),{rootMargin:'0px 0px -6% 0px',threshold:0});
   els.forEach(el=>io.observe(el));

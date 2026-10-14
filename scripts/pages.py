@@ -248,7 +248,7 @@ def hero(eyebrow, h1, stats, photo=None, art=None, kind=None):
             '<dl class="stats">' + "".join(f'<div><dt>{a}</dt><dd data-count="{v}">{v}</dd></div>' for a, v in stats) + '</dl></div>')
     if photo:
         media = f'<div class="hero-media">{img_tag(photo, "hero-img")}</div><div class="hero-scrim" aria-hidden="true"></div>'
-        foot = f'<p class="hero-credit">{credit(photo)}</p>'
+        foot = f'<p class="hero-credit"><span class="hero-cap">{e(photo["caption"])}</span>{credit(photo)}</p>'
     else:
         media = f'<div class="hero-art">{art or ""}</div>'; foot = ""
     return f'<header class="hero hero--{k}" id="top">{media}{body}{foot}</header>'
@@ -271,10 +271,10 @@ def bar_ident(name, stats):
 
 # ---------------------------------------------------------------- photos (UX phase 2b)
 def img_tag(im, cls="", lazy=False, sizes="100vw"):
-    """<img> for a stored photo: 800 and 1600 px WebP, paths relative to a country/body page."""
+    """<img> for a stored photo (hero 800/1600 px, others 640/1280 px WebP), paths relative to a country/body page."""
     big, small = "../../" + im["file"], "../../" + im["file_small"]
     attrs = 'loading="lazy" decoding="async"' if lazy else 'fetchpriority="high" decoding="async"'
-    return (f'<img class="{cls}" src="{e(big if not lazy else small)}" srcset="{e(small)} 800w, {e(big)} 1600w" sizes="{sizes}" '
+    return (f'<img class="{cls}" src="{e(big if not lazy else small)}" srcset="{e(small)} {im["width_small"]}w, {e(big)} {im["width"]}w" sizes="{sizes}" '
             f'width="{im["width"]}" height="{im["height"]}" alt="{e(im["alt"])}" {attrs}>')
 
 
@@ -288,8 +288,19 @@ def credit(im):
 
 
 def photo_break(im):
-    return (f'<figure class="photo-break"><div class="pb-media">{img_tag(im, lazy=True)}</div>'
-            f'<figcaption><span class="pb-what">{e(im["shows"])}</span>{credit(im)}</figcaption></figure>')
+    """Full-bleed heritage / landscape photo before the instrument lists, caption over the image, credit below."""
+    return (f'<figure class="photo-break"><div class="pb-media">{img_tag(im, lazy=True)}<p class="pb-cap"><span>{e(im["caption"])}</span></p></div>'
+            f'<figcaption>{credit(im)}</figcaption></figure>')
+
+
+def photo_pair(ims):
+    """Seat of government and city skyline side by side after the overview (stacked on phones), each with caption and credit."""
+    ims = [im for im in ims if im]
+    if not ims: return ""
+    return (f'<section class="photo-pair{" single" if len(ims) == 1 else ""}" aria-label="Photographs">'
+            + "".join(f'<figure class="pp"><div class="pp-media">{img_tag(im, lazy=True, sizes="(min-width: 760px) 50vw, 100vw")}</div>'
+                      f'<figcaption><span class="pp-cap">{e(im["caption"])}</span>{credit(im)}</figcaption></figure>' for im in ims)
+            + '</section>')
 
 
 def rail(sections, locator_svg=""):
@@ -369,7 +380,6 @@ def country_page(j, D, rec, flags, ctx):
              + f'<ul class="facts">{"".join(treaty)}<li><span class="k">Last reviewed</span><span class="v">{e(fmt_date(narr.get("last_deep_review")) or "Not yet deep-reviewed")}</span></li></ul>'
              + f'<p class="stats-note">{COUNT_NOTE} Leads: documents not yet verified as in-scope instruments. Counts include state, provincial and local instruments; regional instruments are listed separately.</p>'
              + f'<p class="hero-links"><a href="../../timeline/?country={e(jid)}">See this country on the timeline →</a><a href="../../analysis/">Global analysis →</a><a href="../../suggest/?country={e(jid)}">Suggest an update →</a></p></section>')
-    breaks = list(ph.get("secondary") or [])
     # b. overview + c. charts in a two-column grid
     ov = ""
     zero = ""
@@ -406,8 +416,10 @@ def country_page(j, D, rec, flags, ctx):
                     + (f'<p class="fig-tools">{more} more in the instrument list.</p>' if more > 0 else "") + '</figure>')
     H.append('<div class="lede-grid">' + (ov or '<section id="overview" class="block prose"><h2>Overview</h2><p class="muted">No narrative summary has been written for this jurisdiction yet.</p></section>')
              + '<aside id="charts" class="panels" aria-label="Charts">' + "".join(figs) + '</aside></div>')
-    # d. instruments (a full-width photo break before the first list, when the country has secondary photos)
-    if breaks and (nat or regional or sub): H.append(photo_break(breaks.pop(0)))
+    H.append(photo_pair([ph.get("government"), ph.get("skyline")]))
+    # d. instruments (a full-width heritage / landscape photo before the first list, else before the method note)
+    heritage = ph.get("heritage")
+    if heritage and (nat or regional or sub): H.append(photo_break(heritage)); heritage = None
     if nat: H.append(instruments_section(nat, orgs, srcs, cats, lead='<p class="section-lede">National instruments. Sort and filter below; the list prints in full.</p>'))
     # e. regional
     if regional:
@@ -426,8 +438,8 @@ def country_page(j, D, rec, flags, ctx):
                  + "".join(f'<details class="unit"><summary><span>{e(u)}</span><span class="count">{len(rs)}</span></summary><div class="inst-list">'
                            + "".join(inst_item(i, orgs, srcs, cats) for i in sorted(rs, key=lambda i: date_key(i.get("publication_date")), reverse=True)) + '</div></details>'
                            for u, rs in sorted(byu.items())) + '</section>')
-    # g. leads (second photo break before leads, else before the method note)
-    if breaks: H.append(photo_break(breaks.pop(0)))
+    # g. leads
+    if heritage: H.append(photo_break(heritage))
     if leads:
         H.append(f'<section id="leads" class="block"><details class="leads"><summary><h2>Leads — not yet verified as in-scope instruments <span class="count">{len(leads)}</span></h2></summary>'
                  '<p class="section-lede">Documents found during research that are not recorded as instruments: no official text could be read, no stated date, still pending, or outside the scope test.</p><ul class="lead-list">'
@@ -515,11 +527,15 @@ def footer(D, up="../../"):
             f'<p><a href="{up}" id="footMap">World map</a> · <a href="{up}analysis/">Analysis</a> · <a href="{up}timeline/">Timeline</a> · <a href="{up}suggest/">Suggest an update</a> · <a href="{up}?about=method">Methodology</a> · <a href="{up}credits/">Photo credits</a></p></footer>')
 
 
+ROLE_LABEL = {"hero": "Header", "government": "Seat of government", "skyline": "City", "heritage": "Heritage / landscape"}
+
+
 def load_photos():
-    """data/photos.json -> {ISO3: {"hero": image | None, "secondary": [image, ...]}}"""
+    """data/photos.json -> {ISO3: {role: image}} with roles hero, government, skyline, heritage"""
     p = ROOT / "data/photos.json"
     if not p.exists(): return {}
-    return json.loads(p.read_text(encoding="utf-8")).get("countries", {})
+    return {cid: {im["role"]: im for im in ph.get("photos") or []}
+            for cid, ph in json.loads(p.read_text(encoding="utf-8")).get("countries", {}).items()}
 
 
 def credits_page(D, ctx):
@@ -528,11 +544,11 @@ def credits_page(D, ctx):
     rows, fallback = [], []
     for cid in sorted((c for c, j in jur.items() if j.get("type") == "country"), key=lambda c: jur[c].get("name", c)):
         ph = photos.get(cid) or {}
-        ims = ([("Header", ph["hero"])] if ph.get("hero") else []) + [("Section break", im) for im in ph.get("secondary") or []]
+        ims = [(ROLE_LABEL[r], ph[r]) for r in ROLE_LABEL if ph.get(r)]
         if not ph.get("hero"): fallback.append(cid)
         for role, im in ims:
             lic = f'<a href="{e(im["license_url"])}" rel="license noopener">{e(im["license"])}</a>' if im.get("license_url") else e(im["license"])
-            rows.append(f'<tr><th scope="row"><a href="../country/{cid}/">{e(jur.get(cid, {}).get("name", cid))}</a></th><td>{role}</td><td>{e(im["shows"])}</td>'
+            rows.append(f'<tr><th scope="row"><a href="../country/{cid}/">{e(jur.get(cid, {}).get("name", cid))}</a></th><td>{role}</td><td>{e(im["subject"])}</td>'
                         f'<td>{e(im["author"])}</td><td>{lic}</td><td><a href="{e(im["commons_url"])}" rel="noopener">{e(im["title"])}</a></td></tr>')
     n_img = len(rows)
     title = "Photo credits | AI Governance Radar"
@@ -540,7 +556,7 @@ def credits_page(D, ctx):
          '<body class="cp credits"><header class="topnav"><a class="back" id="backToMap" href="../">← World map</a><span class="site">AI Governance Radar</span></header>',
          '<main class="page"><header class="hero"><p class="eyebrow">About the photos</p><h1>Photo credits</h1>'
          f'<p class="section-lede">{n_img} photos on {sum(1 for c in photos.values() if c.get("hero"))} country pages. All come from Wikimedia Commons under a public-domain, CC0, CC BY or CC BY-SA licence, '
-         'were cropped to landscape, resized and converted to WebP for this site, and are served from this site (not hotlinked). Each photo carries its own credit line where it appears. '
+         'were cropped to landscape, resized and converted to WebP for this site, and are served from this site (not hotlinked). Each photo carries a caption and its own credit line where it appears. '
          'Images under CC BY-SA are shared here under the same licence; changes: cropped and resized to WebP. '
          'Regional and international bodies are shown with a map of their members rather than a logo.</p></header>'
          '<div class="table-wrap"><table class="data-table plain-table credits-table"><thead><tr><th scope="col">Country</th><th scope="col">Used as</th><th scope="col">What it shows</th>'
