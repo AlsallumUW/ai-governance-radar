@@ -71,6 +71,26 @@ def check_photos():
     return errs, warns
 
 
+def check_explore_overrides():
+    """data/explore_overrides.json: each entry names a group label and exactly four distinct country ISO3 codes, none of them the country itself."""
+    p = DATA / "explore_overrides.json"
+    if not p.exists(): return []
+    countries = {q.stem for q in (DATA / "countries").glob("*.json") if load(q)["jurisdiction"].get("type") == "country"}
+    errs = []
+    for cid, ov in load(p).items():
+        if cid.startswith("_"): continue
+        E = lambda m: errs.append(f"explore_overrides {cid}: {m}")
+        if cid not in countries: E("not a country")
+        if not isinstance(ov, dict) or not (ov.get("group") or "").strip(): E("missing group label"); continue
+        cs = ov.get("countries")
+        if not isinstance(cs, list) or len(cs) != 4: E("needs exactly 4 countries"); continue
+        if len(set(cs)) != 4: E(f"duplicate countries {cs}")
+        for c in cs:
+            if c == cid: E("lists the country itself")
+            elif c not in countries: E(f"{c} is not a valid country ISO3 code")
+    return errs
+
+
 def check(only=None):
     cats = set(load(DATA / "meta.json")["categories"])
     errs, warns, ids, srcids = [], [], Counter(), Counter()
@@ -138,6 +158,7 @@ def check(only=None):
     if not only:
         e2, w2 = check_photos()
         errs += e2; warns += w2
+        errs += check_explore_overrides()
         from next_batch import QUEUE, check_queue
         errs += check_queue(load(QUEUE), [p.stem for p in (DATA / "countries").glob("*.json")])
     return errs, warns
