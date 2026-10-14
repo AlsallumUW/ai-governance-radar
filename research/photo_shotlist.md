@@ -1,254 +1,208 @@
-# Country photo shot list (UX Phase 2c)
+# Country photo shot list (UX Phase 2d)
 
-Four photos per country, each a different subject:
+Four photos per country, one in each slot, each a different subject. The slot is chosen by how the photo crops as well as by subject:
 
-- **Hero**: the single most iconic image of the country.
-- **Government**: parliament, presidential or royal palace, or main government building (exterior).
-- **City**: the capital or a major city, with its landmarks visible.
-- **Heritage**: a UNESCO World Heritage site or a natural landmark the country is proud of.
+- **Hero** (16:9): the most iconic image, behind the country name.
+- **Feature** (4:5 portrait, beside the overview): the seat of government, or another representative subject where no usable exterior exists.
+- **Backdrop** (3:2, dimmed behind the charts): the capital or a major city.
+- **Band** (21:9 strip before the instruments): a UNESCO site or a signature landscape.
 
-Editorial rules: no identifiable people (small, distant figures are accepted only where the landmark clearly dominates); no watermarks, collages or heavy filters; no politically disputed sites (no Jerusalem sites for either Israel or Palestine); no conflict damage, military, police, protests, flags-only images or maps.
-Where Commons has no image that meets the bar, the slot is left empty and the reason is given below the table (*—*).
+Editorial rules: no identifiable people (small, distant figures only where the landmark clearly dominates); no watermarks, collages or heavy filters; no politically disputed sites (no Jerusalem sites for either Israel or Palestine); no conflict damage, military, police, protests, flags-only images or maps.
 
-| ISO | Country | Hero | Government | City | Heritage / landscape |
+| ISO | Country | Hero | Feature | Backdrop | Band |
 |---|---|---|---|---|---|
 | AFG | Afghanistan | Blue Mosque, Mazar-i-Sharif | Arg, the presidential palace, Kabul | Herat and its citadel | Band-e Amir National Park |
-| AGO | Angola | Kalandula Falls | National Assembly of Angola, Luanda | Luanda and its bay | Tundavala Gap, Huíla |
 | ALB | Albania | Berat old town | Parliament of Albania, Tirana | Skanderbeg Square, Tirana | Butrint |
+| DZA | Algeria | Tassili n'Ajjer | People's National Assembly, Algiers | Notre-Dame d'Afrique above the Bay of Algiers | Arch of Trajan, Timgad |
 | AND | Andorra | Madriu-Perafita-Claror Valley | Casa de la Vall, Andorra la Vella | Andorra la Vella | Sant Joan de Caselles |
-| ARE | United Arab Emirates | Burj Khalifa and the Dubai skyline | Qasr Al Hosn, Abu Dhabi | Abu Dhabi skyline | Liwa Oasis dunes, Rub' al Khali |
+| AGO | Angola | Kalandula Falls | National Assembly of Angola, Luanda | Luanda and its bay | Tundavala Gap, Huíla |
+| ATG | Antigua and Barbuda | English Harbour and Nelson's Dockyard | Parliament Building, St. John's | St. John's, Antigua | Half Moon Bay, Antigua |
 | ARG | Argentina | Perito Moreno Glacier | Casa Rosada, Buenos Aires | Obelisco, Avenida 9 de Julio, Buenos Aires | Iguazú Falls |
 | ARM | Armenia | Khor Virap and Mount Ararat | National Assembly of Armenia, Yerevan | Yerevan and Mount Ararat | Geghard Monastery |
-| ATG | Antigua and Barbuda | English Harbour and Nelson's Dockyard | Parliament Building, St. John's | St. John's, Antigua | Half Moon Bay, Antigua |
 | AUS | Australia | Sydney Opera House | Parliament House, Canberra | Melbourne skyline | Uluru |
 | AUT | Austria | Hallstatt | Austrian Parliament Building, Vienna | Vienna from St Stephen's Cathedral | Schönbrunn Palace |
 | AZE | Azerbaijan | Maiden Tower and the Old City of Baku | Government House, Baku | Baku and the Flame Towers | Palace of Shaki Khans |
-| BDI | Burundi | Lake Tanganyika, Burundi | — | Bujumbura | Karera Falls |
-| BEL | Belgium | Grand-Place, Brussels | Palace of the Nation, Brussels | Atomium, Brussels | Bruges historic centre |
-| BEN | Benin | Royal Palaces of Abomey | Presidential Palace, Cotonou | Cotonou | Pendjari National Park |
-| BFA | Burkina Faso | Grand Mosque of Bobo-Dioulasso | Kosyam Palace, Ouagadougou | Monument to the National Heroes, Ouagadougou | Sindou Peaks |
-| BGD | Bangladesh | Sundarbans | Jatiya Sangsad Bhaban, Dhaka | Dhaka | Sixty Dome Mosque, Bagerhat |
-| BGR | Bulgaria | Rila Monastery | National Assembly of Bulgaria, Sofia | Alexander Nevsky Cathedral, Sofia | Ancient City of Nesebar |
-| BHR | Bahrain | Qal'at al-Bahrain | Gudaibiya Palace, Manama | Manama skyline | Al Fateh Grand Mosque |
 | BHS | Bahamas | Exuma Cays from the air | House of Assembly, Nassau | Nassau harbour and Paradise Island | Dean's Blue Hole, Long Island |
-| BIH | Bosnia and Herzegovina | Stari Most, Mostar | Presidency Building, Sarajevo | Sarajevo | Mehmed Paša Sokolović Bridge, Višegrad |
-| BLR | Belarus | Mir Castle | House of Government, Minsk | Minsk skyline | Nesvizh Castle |
-| BLZ | Belize | Great Blue Hole | National Assembly, Belmopan | Belize City swing bridge | Xunantunich |
-| BOL | Bolivia | Salar de Uyuni | Palacio Quemado, La Paz | La Paz and Illimani | Gate of the Sun, Tiwanaku |
-| BRA | Brazil | Christ the Redeemer, Rio de Janeiro | National Congress, Brasília | Rio de Janeiro and Sugarloaf Mountain | Lençóis Maranhenses |
+| BHR | Bahrain | Qal'at al-Bahrain | Gudaibiya Palace, Manama | Manama skyline | Al Fateh Grand Mosque |
+| BGD | Bangladesh | Sundarbans | Jatiya Sangsad Bhaban, Dhaka | Dhaka | Sixty Dome Mosque, Bagerhat |
 | BRB | Barbados | Bathsheba, east coast of Barbados | Parliament Buildings, Bridgetown | The Careenage, Bridgetown | St Nicholas Abbey |
-| BRN | Brunei Darussalam | Sultan Omar Ali Saifuddien Mosque | Istana Nurul Iman | Kampong Ayer, Bandar Seri Begawan | Jame' Asr Hassanil Bolkiah Mosque |
+| BLR | Belarus | Mir Castle | House of Government, Minsk | Minsk skyline | Nesvizh Castle |
+| BEL | Belgium | Grand-Place, Brussels | Palace of the Nation, Brussels | Atomium, Brussels | Bruges historic centre |
+| BLZ | Belize | Great Blue Hole | National Assembly, Belmopan | Belize City swing bridge | Xunantunich |
+| BEN | Benin | Royal Palaces of Abomey | Presidential Palace, Cotonou | Cotonou | Pendjari National Park |
 | BTN | Bhutan | Paro Taktsang (Tiger's Nest) | Tashichho Dzong, Thimphu | Thimphu | Punakha Dzong |
+| BOL | Bolivia | Salar de Uyuni | Palacio Quemado, La Paz | La Paz and Illimani | Gate of the Sun, Tiwanaku |
+| BIH | Bosnia and Herzegovina | Stari Most, Mostar | Presidency Building, Sarajevo | Sarajevo | Mehmed Paša Sokolović Bridge, Višegrad |
 | BWA | Botswana | Okavango Delta | National Assembly, Gaborone | Gaborone skyline | Tsodilo Hills |
-| CAF | Central African Republic | Boali Falls | — | Bangui | Dzanga Bai, Dzanga-Sangha |
+| BRA | Brazil | Christ the Redeemer, Rio de Janeiro | National Congress, Brasília | Rio de Janeiro and Sugarloaf Mountain | Lençóis Maranhenses |
+| BRN | Brunei Darussalam | Sultan Omar Ali Saifuddien Mosque | Istana Nurul Iman | Kampong Ayer, Bandar Seri Begawan | Jame' Asr Hassanil Bolkiah Mosque |
+| BGR | Bulgaria | Rila Monastery | National Assembly of Bulgaria, Sofia | Alexander Nevsky Cathedral, Sofia | Ancient City of Nesebar |
+| BFA | Burkina Faso | Grand Mosque of Bobo-Dioulasso | Kosyam Palace, Ouagadougou | Monument to the National Heroes, Ouagadougou | Sindou Peaks |
+| BDI | Burundi | Lake Tanganyika, Burundi | Tea plantations, Burundi highlands | Bujumbura | Karera Falls |
+| CPV | Cabo Verde | Pico do Fogo | National Assembly, Praia | Praia | Cidade Velha |
+| KHM | Cambodia | Angkor Wat | Royal Palace, Phnom Penh | Phnom Penh skyline | Prasat Thom, Koh Ker |
+| CMR | Cameroon | Lobé Falls | Unity Palace, Yaoundé | CNPS building, Yaoundé | Royal Palace of Bafut |
 | CAN | Canada | Moraine Lake, Banff National Park | Centre Block, Parliament Hill, Ottawa | Toronto skyline and CN Tower | Château Frontenac, Old Quebec |
-| CHE | Switzerland | Matterhorn | Federal Palace, Bern | Geneva and the Jet d'Eau | Lavaux vineyard terraces |
+| CAF | Central African Republic | Boali Falls | Western lowland gorilla, Dzanga-Sangha | Bangui | Dzanga Bai, Dzanga-Sangha |
+| TCD | Chad | Lakes of Ounianga | Palais de la Démocratie, N'Djamena | Place de la Nation, N'Djamena | Zakouma National Park |
 | CHL | Chile | Ahu Tongariki, Rapa Nui | La Moneda Palace, Santiago | Santiago and the Andes | Torres del Paine |
 | CHN | China | Great Wall of China | Great Hall of the People, Beijing | Shanghai Pudong skyline | Forbidden City, Beijing |
-| CIV | Côte d’Ivoire | Basilica of Our Lady of Peace, Yamoussoukro | Presidential Palace, Yamoussoukro | Abidjan Plateau skyline | Taï National Park |
-| CMR | Cameroon | Lobé Falls | Unity Palace, Yaoundé | CNPS building, Yaoundé | Royal Palace of Bafut |
-| COD | Democratic Republic of the Congo | Mount Nyiragongo, Virunga National Park | — | Boulevard du 30 Juin, Kinshasa | Lake Kivu |
-| COG | Congo | Odzala-Kokoua National Park | — | Brazzaville and the Nabemba Tower | Basilica of Sainte-Anne, Brazzaville |
 | COL | Colombia | Cartagena walled city | Capitolio Nacional, Bogotá | Bogotá from Monserrate | Cocora Valley |
-| COM | Comoros | Old Friday Mosque, Moroni | — | Moroni waterfront | Mount Karthala |
-| CPV | Cabo Verde | Pico do Fogo | National Assembly, Praia | Praia | Cidade Velha |
+| COM | Comoros | Old Friday Mosque, Moroni | Mohéli beach | Moroni waterfront | Mount Karthala |
+| COG | Congo | Odzala-Kokoua National Park | Gorges de Diosso | Brazzaville and the Nabemba Tower | Basilica of Sainte-Anne, Brazzaville |
 | CRI | Costa Rica | Arenal Volcano | Castillo Azul, San José | San José | Poás Volcano |
+| HRV | Croatia | Dubrovnik | Croatian Parliament, Zagreb | Zagreb skyline | Plitvice Lakes |
 | CUB | Cuba | Viñales Valley | National Capitol, Havana | Havana Malecón | Trinidad, Cuba |
 | CYP | Cyprus | Petra tou Romiou (Aphrodite's Rock) | Presidential Palace, Nicosia | Limassol skyline | Tombs of the Kings, Paphos |
 | CZE | Czechia | Charles Bridge and Prague Castle | Straka Academy, Prague | Prague Old Town and bridges | Český Krumlov |
-| DEU | Germany | Brandenburg Gate, Berlin | Reichstag building, Berlin | Frankfurt skyline | Neuschwanstein Castle |
-| DJI | Djibouti | Lake Assal | Presidential Palace, Djibouti City | — | Lac Abbé |
-| DMA | Dominica | Trafalgar Falls | House of Assembly, Roseau | Roseau waterfront | Boiling Lake |
+| CIV | Côte d’Ivoire | Basilica of Our Lady of Peace, Yamoussoukro | Presidential Palace, Yamoussoukro | Abidjan Plateau skyline | Taï National Park |
+| PRK | Democratic People's Republic of Korea | Mount Paektu and Heaven Lake | Mansudae Assembly Hall, Pyongyang | Pyongyang and the Taedong River | Kaesong historic monuments |
+| COD | Democratic Republic of the Congo | Mount Nyiragongo, Virunga National Park | Mountain gorilla, Virunga | Boulevard du 30 Juin, Kinshasa | Lake Kivu |
 | DNK | Denmark | Nyhavn, Copenhagen | Christiansborg Palace, Copenhagen | Copenhagen from the Round Tower | Kronborg Castle |
+| DJI | Djibouti | Lake Assal | People's Palace, Djibouti City | Rue de Marseille, Djibouti City | Lac Abbé |
+| DMA | Dominica | Trafalgar Falls | House of Assembly, Roseau | Roseau waterfront | Boiling Lake |
 | DOM | Dominican Republic | Saona Island | National Palace, Santo Domingo | Santo Domingo skyline | Alcázar de Colón |
-| DZA | Algeria | Tassili n'Ajjer | People's National Assembly, Algiers | Notre-Dame d'Afrique above the Bay of Algiers | Arch of Trajan, Timgad |
 | ECU | Ecuador | Pinnacle Rock, Bartolomé Island, Galápagos | Carondelet Palace, Quito | Quito | Cotopaxi |
 | EGY | Egypt | Pyramids of Giza | Egyptian Parliament, New Administrative Capital | Cairo and the Nile | Temple of Nefertari, Abu Simbel |
-| ERI | Eritrea | Fiat Tagliero building, Asmara | Government buildings, Asmara | Massawa waterfront | Dahlak Archipelago |
-| ESP | Spain | Alhambra, Granada | Palacio de las Cortes, Madrid | Cuatro Torres, Madrid | Mosque–Cathedral and Roman bridge, Córdoba |
-| EST | Estonia | Tallinn Old Town | Toompea Castle, Tallinn | Tallinn skyline from the bay | Lahemaa National Park |
-| ETH | Ethiopia | Bete Giyorgis, Lalibela | — | Addis Ababa skyline | Simien Mountains |
-| FIN | Finland | Helsinki Cathedral | Parliament House, Helsinki | Helsinki city centre | Suomenlinna sea fortress |
-| FJI | Fiji | Mamanuca Islands | Government Buildings, Suva | Suva | Levuka |
-| FRA | France | Eiffel Tower, Paris | Élysée Palace, Paris | Paris from Montmartre | Mont-Saint-Michel |
-| FSM | Micronesia (Federated States of) | Nan Madol, Pohnpei | Capitol complex, Palikir | Kolonia, Pohnpei | Ant Atoll, Pohnpei |
-| GAB | Gabon | Forest elephants, Loango National Park | Léon Mba Palace, Libreville | Libreville seafront | Lopé National Park |
-| GBR | United Kingdom | Palace of Westminster, London | Buckingham Palace, London | City of London skyline | Stonehenge, Wiltshire |
-| GEO | Georgia | Gergeti Trinity Church and Mount Kazbek | Presidential Palace, Tbilisi | Old Tbilisi and Narikala Fortress | Ushguli, Svaneti |
-| GHA | Ghana | Cape Coast Castle | Jubilee House, Accra | Independence Square, Accra | Kakum National Park |
-| GIN | Guinea | Fouta Djallon highlands | Palais du Peuple, Conakry | — | Grand Mosque of Conakry |
-| GMB | Gambia | Arch 22, Banjul | National Assembly, Banjul | Banjul | Gambia River |
-| GNB | Guinea-Bissau | Presidential Palace, Bissau | Colinas de Boé Palace, Bissau | Bissau Velho | — |
+| SLV | El Salvador | Santa Ana Volcano crater lake | National Palace, San Salvador | San Salvador and its volcano | Joya de Cerén |
 | GNQ | Equatorial Guinea | Malabo Cathedral | Presidential Palace, Malabo | Malabo and Pico Basilé | Monte Alén National Park |
+| ERI | Eritrea | Fiat Tagliero building, Asmara | Government buildings, Asmara | Massawa waterfront | Dahlak Archipelago |
+| EST | Estonia | Tallinn Old Town | Toompea Castle, Tallinn | Tallinn skyline from the bay | Lahemaa National Park |
+| SWZ | Eswatini | Malolotja Nature Reserve | Parliament of Eswatini, Lobamba | Mbabane | Mlilwane Wildlife Sanctuary |
+| ETH | Ethiopia | Bete Giyorgis, Lalibela | Obelisk of Axum | Addis Ababa skyline | Simien Mountains |
+| FJI | Fiji | Mamanuca Islands | Government Buildings, Suva | Suva | Levuka |
+| FIN | Finland | Helsinki Cathedral | Parliament House, Helsinki | Helsinki city centre | Suomenlinna sea fortress |
+| FRA | France | Eiffel Tower, Paris | Élysée Palace, Paris | Paris from Montmartre | Mont-Saint-Michel |
+| GAB | Gabon | Forest elephants, Loango National Park | Léon Mba Palace, Libreville | Libreville seafront | Lopé National Park |
+| GMB | Gambia | Arch 22, Banjul | National Assembly, Banjul | Banjul | Gambia River |
+| GEO | Georgia | Gergeti Trinity Church and Mount Kazbek | Presidential Palace, Tbilisi | Old Tbilisi and Narikala Fortress | Ushguli, Svaneti |
+| DEU | Germany | Brandenburg Gate, Berlin | Reichstag building, Berlin | Frankfurt skyline | Neuschwanstein Castle |
+| GHA | Ghana | Cape Coast Castle | Jubilee House, Accra | Independence Square, Accra | Kakum National Park |
 | GRC | Greece | Acropolis of Athens | Hellenic Parliament, Athens | Thessaloniki waterfront and White Tower | Meteora |
-| GRD | Grenada | Grand Anse Beach | Parliament of Grenada, St. George's | The Carenage, St. George's | Molinere Underwater Sculpture Park |
+| GRD | Grenada | Grand Anse Beach | Parliament of Grenada, St. George's | The Carenage, St. George's | Grand Etang Lake |
 | GTM | Guatemala | Tikal | National Palace of Culture, Guatemala City | Guatemala City skyline | Lake Atitlán |
+| GIN | Guinea | Fouta Djallon highlands | Palais du Peuple, Conakry | Conakry | Grand Mosque of Conakry |
+| GNB | Guinea-Bissau | Presidential Palace, Bissau | Colinas de Boé Palace, Bissau | Bissau Velho | Bijagós Archipelago |
 | GUY | Guyana | Kaieteur Falls | Parliament Building, Georgetown | Georgetown from the air | Rupununi |
+| HTI | Haiti | Citadelle Laferrière | Bassin Bleu, Jacmel | Cap-Haïtien | Sans-Souci Palace, Milot |
+| VAT | Holy See / Vatican City | St. Peter's Basilica | Palace of the Governorate, Vatican City | St. Peter's dome over the Tiber | Vatican Gardens |
 | HND | Honduras | Copán | Former Presidential Palace, Tegucigalpa | Tegucigalpa | Roatán and the Mesoamerican Reef |
-| HRV | Croatia | Dubrovnik | Croatian Parliament, Zagreb | Zagreb skyline | Plitvice Lakes |
-| HTI | Haiti | Citadelle Laferrière | — | Cap-Haïtien | Sans-Souci Palace, Milot |
 | HUN | Hungary | Hungarian Parliament Building, Budapest | Sándor Palace, Budapest | Budapest and the Danube from Gellért Hill | Hortobágy National Park |
-| IDN | Indonesia | Borobudur | Merdeka Palace, Jakarta | Jakarta skyline and Monas | Jatiluwih rice terraces, Bali |
+| ISL | Iceland | Kirkjufell | Alþingishúsið, Reykjavík | Reykjavík | Þingvellir National Park |
 | IND | India | Taj Mahal, Agra | Rashtrapati Bhavan, New Delhi | Mumbai skyline | Hampi |
-| IRL | Ireland | Cliffs of Moher | Leinster House, Dublin | Ha'penny Bridge and the Liffey, Dublin | Skellig Michael |
+| IDN | Indonesia | Borobudur | Merdeka Palace, Jakarta | Jakarta skyline and Monas | Jatiluwih rice terraces, Bali |
 | IRN | Iran | Persepolis | Islamic Consultative Assembly, Tehran | Tehran and the Alborz | Naqsh-e Jahan Square, Isfahan |
 | IRQ | Iraq | Ziggurat of Ur | Baghdad Convention Center | Baghdad and the Tigris | Erbil Citadel |
-| ISL | Iceland | Kirkjufell | Alþingishúsið, Reykjavík | Reykjavík | Þingvellir National Park |
-| ISR | Israel | Masada | — | Tel Aviv skyline | Bahá'í Gardens, Haifa |
+| IRL | Ireland | Cliffs of Moher | Leinster House, Dublin | Ha'penny Bridge and the Liffey, Dublin | Skellig Michael |
+| ISR | Israel | Masada | Dead Sea coast near Ein Gedi | Tel Aviv skyline | Bahá'í Gardens, Haifa |
 | ITA | Italy | Colosseum, Rome | Palazzo Montecitorio, Rome | Florence and the Duomo | Tre Cime di Lavaredo, Dolomites |
-| JAM | Jamaica | Dunn's River Falls, Ocho Rios | — | Montego Bay | Blue Mountains |
-| JOR | Jordan | Al-Khazneh, Petra | Parliament of Jordan, Amman | Amman skyline | Wadi Rum |
+| JAM | Jamaica | Dunn's River Falls, Ocho Rios | Rose Hall Great House, Montego Bay | Montego Bay | Blue Mountains |
 | JPN | Japan | Mount Fuji and Chureito Pagoda | National Diet Building, Tokyo | Tokyo skyline | Himeji Castle |
+| JOR | Jordan | Al-Khazneh, Petra | Parliament of Jordan, Amman | Amman skyline | Wadi Rum |
 | KAZ | Kazakhstan | Big Almaty Lake | Ak Orda Presidential Palace, Astana | Astana and the Ishim River | Mausoleum of Khoja Ahmed Yasawi, Turkistan |
 | KEN | Kenya | Maasai Mara | Parliament Buildings, Nairobi | Nairobi skyline | Mount Kenya |
-| KGZ | Kyrgyzstan | Issyk-Kul | Jogorku Kenesh, Bishkek | Ala-Too Square, Bishkek | Sulaiman-Too, Osh |
-| KHM | Cambodia | Angkor Wat | Royal Palace, Phnom Penh | Phnom Penh skyline | Prasat Thom, Koh Ker |
 | KIR | Kiribati | South Tarawa from the air | Maneaba ni Maungatabu, Ambo | Causeway, South Tarawa | Kiritimati |
-| KNA | Saint Kitts and Nevis | Brimstone Hill Fortress | Government Headquarters, Basseterre | Basseterre and Port Zante | Nevis Peak |
-| KOR | Republic of Korea | Gyeongbokgung Palace, Seoul | National Assembly Proceeding Hall, Seoul | Seoul skyline and Lotte World Tower | Seongsan Ilchulbong, Jeju |
 | KWT | Kuwait | Grand Mosque, Kuwait City | Seif Palace, Kuwait City | Kuwait Towers | Failaka Island |
+| KGZ | Kyrgyzstan | Issyk-Kul | Jogorku Kenesh, Bishkek | Ala-Too Square, Bishkek | Sulaiman-Too, Osh |
 | LAO | Lao People's Democratic Republic | Wat Xieng Thong, Luang Prabang | Presidential Palace, Vientiane | Vientiane from the Patuxai | Kuang Si Falls |
+| LVA | Latvia | House of the Blackheads, Riga | Saeima building, Riga | Riga Old Town | Rundāle Palace |
 | LBN | Lebanon | Temple of Bacchus, Baalbek | Parliament of Lebanon, Beirut | Beirut skyline | Kadisha Valley and the Cedars |
+| LSO | Lesotho | Maletsunyane Falls | Qiloane hill, Thaba Bosiu | Maseru | Sani Pass |
 | LBR | Liberia | Lake Piso and Robertsport | Capitol Building, Monrovia | Monrovia | Sapo National Park |
-| LBY | Libya | Leptis Magna | Red Castle, Tripoli | Tripoli central business district | Ghadames old town |
-| LCA | Saint Lucia | The Pitons, Soufrière | Government House, Castries | Castries | Marigot Bay |
+| LBY | Libya | Leptis Magna | Tripoli central business district | Red Castle, Tripoli | Ghadames old town |
 | LIE | Liechtenstein | Vaduz Castle | Landtag building, Vaduz | Vaduz and the Rhine Valley | Gutenberg Castle, Balzers |
-| LKA | Sri Lanka | Sigiriya | Parliament of Sri Lanka, Sri Jayawardenepura Kotte | Colombo skyline | Galle Fort |
-| LSO | Lesotho | Maletsunyane Falls | — | Maseru | Sani Pass |
 | LTU | Lithuania | Trakai Island Castle | Seimas Palace, Vilnius | Vilnius Old Town at sunset | Curonian Spit |
 | LUX | Luxembourg | Luxembourg City and the Grund | Grand Ducal Palace, Luxembourg City | Adolphe Bridge, Luxembourg City | Vianden Castle |
-| LVA | Latvia | House of the Blackheads, Riga | Saeima building, Riga | Riga Old Town | Rundāle Palace |
-| MAR | Morocco | Aït Benhaddou | Parliament of Morocco, Rabat | Rabat and the Bouregreg | Erg Chebbi, Merzouga |
-| MCO | Monaco | Port Hercule, Monte Carlo | Prince's Palace of Monaco | Monaco from La Turbie | Monte Carlo Casino |
-| MDA | Republic of Moldova | Orheiul Vechi and the Răut valley | Government House, Chișinău | Chișinău | Soroca Fortress |
 | MDG | Madagascar | Avenue of the Baobabs | Iavoloha Palace, Antananarivo | Antananarivo and Lake Anosy | Tsingy de Bemaraha |
-| MDV | Maldives | Maldives atolls from the air | — | Malé from the air | Malé Friday Mosque (Hukuru Miskiy) |
-| MEX | Mexico | El Castillo, Chichén Itzá | National Palace, Mexico City | Paseo de la Reforma skyline, Mexico City | Teotihuacan |
-| MHL | Marshall Islands | Majuro atoll | — | Majuro lagoon shore | Laura Beach, Majuro |
-| MKD | North Macedonia | Church of St John at Kaneo, Lake Ohrid | Assembly of North Macedonia, Skopje | Skopje Fortress (Kale) | Matka Canyon |
-| MLI | Mali | Great Mosque of Djenné | — | Bamako and the Niger River | Bandiagara Escarpment |
-| MLT | Malta | Valletta and the Grand Harbour | Auberge de Castille, Valletta | Sliema waterfront | Ġgantija temples, Gozo |
-| MMR | Myanmar | Dhammayangyi Temple, Bagan | Hluttaw complex, Naypyidaw | Shwedagon Pagoda, Yangon | Inle Lake |
-| MNE | Montenegro | Bay of Kotor | Blue Palace, Cetinje | Budva Riviera | Black Lake, Durmitor |
-| MNG | Mongolia | Khongoryn Els dunes, Gobi | Government Palace, Ulaanbaatar | Ulaanbaatar | Erdene Zuu Monastery |
-| MOZ | Mozambique | Bazaruto Archipelago | — | Maputo skyline | Island of Mozambique |
-| MRT | Mauritania | Friday Mosque, Chinguetti | — | Saudi Mosque, Nouakchott | Richat Structure |
-| MUS | Mauritius | Le Morne Brabant | Government House, Port Louis | Port Louis | Seven Coloured Earths, Chamarel |
-| MWI | Malawi | Lake Malawi | Parliament Building, Lilongwe | — | Mount Mulanje |
+| MWI | Malawi | Lake Malawi | Parliament Building, Lilongwe | Nkhata Bay | Mount Mulanje |
 | MYS | Malaysia | Petronas Towers, Kuala Lumpur | Perdana Putra, Putrajaya | Kuala Lumpur skyline | Mount Kinabalu |
+| MDV | Maldives | Maldives atolls from the air | Malé Friday Mosque (Hukuru Miskiy) | Malé from the air | Sandbank at Kuramathi |
+| MLI | Mali | Great Mosque of Djenné | Sankoré Mosque, Timbuktu | Bamako and the Niger River | Bandiagara Escarpment |
+| MLT | Malta | Valletta and the Grand Harbour | Auberge de Castille, Valletta | Sliema waterfront | Ġgantija temples, Gozo |
+| MHL | Marshall Islands | Majuro atoll | Holy Rosary Church, Likiep Atoll | Majuro lagoon shore | Laura Beach, Majuro |
+| MRT | Mauritania | Friday Mosque, Chinguetti | Oasis of Varesse, Adrar | Saudi Mosque, Nouakchott | Richat Structure |
+| MUS | Mauritius | Le Morne Brabant | Government House, Port Louis | Port Louis | Seven Coloured Earths, Chamarel |
+| MEX | Mexico | El Castillo, Chichén Itzá | National Palace, Mexico City | Paseo de la Reforma skyline, Mexico City | Teotihuacan |
+| FSM | Micronesia (Federated States of) | Nan Madol, Pohnpei | Capitol complex, Palikir | Kolonia, Pohnpei | Ant Atoll, Pohnpei |
+| MCO | Monaco | Port Hercule, Monte Carlo | Prince's Palace of Monaco | Monaco from La Turbie | Monte Carlo Casino |
+| MNG | Mongolia | Khongoryn Els dunes, Gobi | Erdene Zuu Monastery | Ulaanbaatar | Government Palace, Ulaanbaatar |
+| MNE | Montenegro | Bay of Kotor | Blue Palace, Cetinje | Budva Riviera | Black Lake, Durmitor |
+| MAR | Morocco | Aït Benhaddou | Parliament of Morocco, Rabat | Rabat and the Bouregreg | Erg Chebbi, Merzouga |
+| MOZ | Mozambique | Bazaruto Archipelago | Cathedral of Our Lady of the Immaculate Conception, Maputo | Maputo skyline | Island of Mozambique |
+| MMR | Myanmar | Dhammayangyi Temple, Bagan | Hluttaw complex, Naypyidaw | Shwedagon Pagoda, Yangon | Inle Lake |
 | NAM | Namibia | Deadvlei | Tintenpalast, Windhoek | Windhoek and Christ Church | Fish River Canyon |
-| NER | Niger | Grand Mosque of Agadez | National Assembly, Niamey | Niamey and the Niger River | Aïr Mountains and Ténéré |
-| NGA | Nigeria | Zuma Rock | National Assembly Complex, Abuja | Lagos | Osun-Osogbo Sacred Grove |
-| NIC | Nicaragua | Concepción volcano, Ometepe | National Assembly, Managua | Granada Cathedral | León Cathedral |
-| NLD | Netherlands | Kinderdijk windmills | Binnenhof, The Hague | Rotterdam and the Erasmus Bridge | Amsterdam canal ring |
-| NOR | Norway | Reine, Lofoten | Storting building, Oslo | Oslo Opera House and Bjørvika | Geirangerfjord |
+| NRU | Nauru | Anibare Bay | Parliament House, Yaren | Nauru from the air | Buada Lagoon |
 | NPL | Nepal | Mount Everest | Federal Parliament, Kathmandu | Swayambhunath, Kathmandu | Bhaktapur Durbar Square |
-| NRU | Nauru | Anibare Bay | Parliament House, Yaren | — | Buada Lagoon |
+| NLD | Netherlands | Kinderdijk windmills | Binnenhof, The Hague | Rotterdam and the Erasmus Bridge | Amsterdam canal ring |
 | NZL | New Zealand | Milford Sound | The Beehive, Wellington | Auckland skyline | Aoraki / Mount Cook |
+| NIC | Nicaragua | Concepción volcano, Ometepe | Granada Cathedral | National Assembly, Managua | León Cathedral |
+| NER | Niger | Grand Mosque of Agadez | National Assembly, Niamey | Niamey and the Niger River | Aïr Mountains and Ténéré |
+| NGA | Nigeria | Zuma Rock | Lagos | National Assembly Complex, Abuja | Osun-Osogbo Sacred Grove |
+| MKD | North Macedonia | Church of St John at Kaneo, Lake Ohrid | Assembly of North Macedonia, Skopje | Skopje Fortress (Kale) | Matka Canyon |
+| NOR | Norway | Reine, Lofoten | Storting building, Oslo | Oslo Opera House and Bjørvika | Geirangerfjord |
 | OMN | Oman | Sultan Qaboos Grand Mosque, Muscat | Al Alam Palace, Muscat | Muttrah Corniche, Muscat | Bahla Fort |
 | PAK | Pakistan | Badshahi Mosque, Lahore | Parliament House, Islamabad | Faisal Mosque and Islamabad | Lahore Fort |
+| PLW | Palau | Rock Islands, Palau | Capitol complex, Ngerulmud | Koror | Jellyfish Lake |
 | PAN | Panama | Panama Canal | Palacio de las Garzas, Panama City | Panama City skyline | Casco Viejo |
+| PNG | Papua New Guinea | Papua New Guinea Highlands | Parliament House, Port Moresby | Port Moresby | Tavurvur and Rabaul caldera |
+| PRY | Paraguay | Jesuit Mission of La Santísima Trinidad | Palacio de los López, Asunción | Asunción skyline | Saltos del Monday |
 | PER | Peru | Machu Picchu | Government Palace, Lima | Lima skyline | Plaza de Armas, Cusco |
 | PHL | Philippines | Banaue Rice Terraces | Malacañang Palace, Manila | Makati skyline | Chocolate Hills, Bohol |
-| PLW | Palau | Rock Islands, Palau | Capitol complex, Ngerulmud | Koror | Jellyfish Lake |
-| PNG | Papua New Guinea | Papua New Guinea Highlands | Parliament House, Port Moresby | — | Tavurvur and Rabaul caldera |
 | POL | Poland | Wawel Castle, Kraków | Presidential Palace, Warsaw | Warsaw skyline | Malbork Castle |
-| PRK | Democratic People's Republic of Korea | Mount Paektu and Heaven Lake | Mansudae Assembly Hall, Pyongyang | Pyongyang and the Taedong River | Kaesong historic monuments |
 | PRT | Portugal | Belém Tower, Lisbon | São Bento Palace, Lisbon | Lisbon, Alfama | Pena Palace, Sintra |
-| PRY | Paraguay | Jesuit Mission of La Santísima Trinidad | Palacio de los López, Asunción | Asunción skyline | Saltos del Monday |
-| PSE | State of Palestine | Church of the Nativity, Bethlehem | Mukataa, Ramallah | Bethlehem | Mar Saba Monastery |
-| QAT | Qatar | Museum of Islamic Art, Doha | Amiri Diwan, Doha | Doha West Bay skyline | Al Zubarah Fort |
-| ROU | Romania | Peleș Castle, Sinaia | Palace of the Parliament, Bucharest | Brașov and the Black Church | Voroneț Monastery |
+| QAT | Qatar | Museum of Islamic Art, Doha | Doha West Bay skyline | Amiri Diwan, Doha | Al Zubarah Fort |
+| KOR | Republic of Korea | Gyeongbokgung Palace, Seoul | National Assembly Proceeding Hall, Seoul | Seoul skyline and Lotte World Tower | Seongsan Ilchulbong, Jeju |
+| MDA | Republic of Moldova | Orheiul Vechi and the Răut valley | Government House, Chișinău | Chișinău | Soroca Fortress |
+| ROU | Romania | Peleș Castle, Sinaia | Brașov and the Black Church | Palace of the Parliament, Bucharest | Voroneț Monastery |
 | RUS | Russian Federation | Saint Basil's Cathedral, Moscow | Kremlin Senate, Moscow | Moscow City skyline | Lake Baikal, Olkhon Island |
 | RWA | Rwanda | Mountain gorilla, Volcanoes National Park | Parliament of Rwanda, Kigali | Kigali Convention Centre | Nyungwe Forest |
-| SAU | Saudi Arabia | At-Turaif, Diriyah | Ministry of Interior, Riyadh | Riyadh skyline and Kingdom Centre | Hegra, AlUla |
-| SDN | Sudan | Pyramids of Meroë | — | Khartoum and the Nile | Jebel Barkal |
-| SEN | Senegal | Lac Rose | National Assembly, Dakar | Dakar skyline | Gorée Island |
-| SGP | Singapore | Gardens by the Bay | Parliament House, Singapore | Marina Bay skyline | Singapore Botanic Gardens |
-| SLB | Solomon Islands | Marovo Lagoon | National Parliament, Honiara | Honiara | East Rennell |
-| SLE | Sierra Leone | Tokeh Beach | State House, Freetown | — | Bunce Island |
-| SLV | El Salvador | Santa Ana Volcano crater lake | National Palace, San Salvador | San Salvador and its volcano | Joya de Cerén |
+| KNA | Saint Kitts and Nevis | Brimstone Hill Fortress | Government Headquarters, Basseterre | Basseterre and Port Zante | Nevis Peak |
+| LCA | Saint Lucia | The Pitons, Soufrière | Government House, Castries | Castries | Marigot Bay |
+| VCT | Saint Vincent and the Grenadines | Tobago Cays | La Soufrière, St Vincent | Kingstown | Bequia from the air |
+| WSM | Samoa | To Sua Ocean Trench | Government Building, Apia | Lalomanu Beach, Upolu | Robert Louis Stevenson Museum, Vailima |
 | SMR | San Marino | Guaita tower, Mount Titano | Palazzo Pubblico, San Marino | San Marino city | Mount Titano |
-| SOM | Somalia | Kismayo coast | — | Mogadishu | Laas Geel rock paintings |
-| SRB | Serbia | Temple of Saint Sava, Belgrade | National Assembly of Serbia, Belgrade | Belgrade Waterfront | Studenica Monastery |
-| SSD | South Sudan | Mountains near Kimotong, Eastern Equatoria | — | The White Nile at Juba | Boma National Park |
 | STP | Sao Tome and Principe | Banana Beach, Príncipe | Presidential Palace, São Tomé | São Tomé city | Pico Cão Grande |
-| SUR | Suriname | Brownsberg Nature Park | Presidential Palace, Paramaribo | Waterkant, Paramaribo | Cathedral Basilica of Saints Peter and Paul, Paramaribo |
+| SAU | Saudi Arabia | At-Turaif, Diriyah | Ministry of Interior, Riyadh | Riyadh skyline and Kingdom Centre | Hegra, AlUla |
+| SEN | Senegal | Lac Rose | National Assembly, Dakar | Dakar skyline | Gorée Island |
+| SRB | Serbia | Temple of Saint Sava, Belgrade | National Assembly of Serbia, Belgrade | Belgrade Waterfront | Studenica Monastery |
+| SYC | Seychelles | Anse Source d'Argent, La Digue | Clock Tower, Victoria | Victoria, Seychelles | Vallée de Mai, Praslin |
+| SLE | Sierra Leone | Tokeh Beach | State House, Freetown | Freetown | Bunce Island |
+| SGP | Singapore | Gardens by the Bay | Parliament House, Singapore | Marina Bay skyline | Singapore Botanic Gardens |
 | SVK | Slovakia | Spiš Castle | National Council of the Slovak Republic, Bratislava | Bratislava Castle and the Danube | Štrbské Pleso, High Tatras |
 | SVN | Slovenia | Lake Bled | Government building, Ljubljana | Ljubljana Castle and the old town | Škocjan Caves |
-| SWE | Sweden | Stockholm City Hall | Riksdag building, Stockholm | Gamla stan, Stockholm | Visby |
-| SWZ | Eswatini | Malolotja Nature Reserve | Parliament of Eswatini, Lobamba | Mbabane | Mlilwane Wildlife Sanctuary |
-| SYC | Seychelles | Anse Source d'Argent, La Digue | — | Victoria, Seychelles | Vallée de Mai, Praslin |
-| SYR | Syrian Arab Republic | Krak des Chevaliers | — | Damascus and Mount Qasioun | Bosra Roman theatre |
-| TCD | Chad | Lakes of Ounianga | Palais de la Démocratie, N'Djamena | Place de la Nation, N'Djamena | Zakouma National Park |
-| TGO | Togo | Kpimé Falls, Kpalimé | National Assembly, Lomé | — | Koutammakou, the Land of the Batammariba |
-| THA | Thailand | Wat Arun, Bangkok | Sappaya-Sapasathan, Bangkok | Grand Palace, Bangkok | Wat Chaiwatthanaram, Ayutthaya |
-| TJK | Tajikistan | Iskanderkul | Palace of the Nation, Dushanbe | Dushanbe | Pamir Mountains |
-| TKM | Turkmenistan | Darvaza gas crater | Oguzhan Presidential Palace, Ashgabat | Ashgabat | Mausoleum of Sultan Sanjar, Merv |
-| TLS | Timor-Leste | Cristo Rei of Dili and the coast | Government Palace, Dili | Dili waterfront | Jaco Island |
-| TON | Tonga | Vava'u harbour | Royal Palace, Nuku'alofa | — | Ha'amonga 'a Maui |
-| TTO | Trinidad and Tobago | Pigeon Point, Tobago | Red House, Port of Spain | — | Pitch Lake |
-| TUN | Tunisia | Sidi Bou Said | Assembly of the Representatives of the People, Bardo | Medina of Tunis | Amphitheatre of El Jem |
-| TUR | Türkiye | Hagia Sophia, Istanbul | Grand National Assembly, Ankara | Galata Tower and Istanbul | Göreme valleys, Cappadocia |
-| TUV | Tuvalu | Funafuti lagoon | Government building, Vaiaku | Fongafale, Funafuti | Funafuti Conservation Area |
-| TZA | United Republic of Tanzania | Mount Kilimanjaro | — | Dar es Salaam | Ngorongoro Crater |
-| UGA | Uganda | Murchison Falls | — | Kampala skyline | Kasubi Tombs, Kampala |
-| UKR | Ukraine | Kyiv Pechersk Lavra | Mariinskyi Palace, Kyiv | St Sophia's Cathedral and central Kyiv | Kamianets-Podilskyi Castle |
-| URY | Uruguay | Colonia del Sacramento | Legislative Palace, Montevideo | Montevideo skyline | La Mano, Punta del Este |
-| USA | United States | Statue of Liberty | White House, Washington, D.C. | New York City skyline | Grand Canyon |
-| UZB | Uzbekistan | Registan, Samarkand | Oliy Majlis, Tashkent | Tashkent | Itchan Kala, Khiva |
-| VAT | Holy See / Vatican City | St. Peter's Basilica | Palace of the Governorate, Vatican City | St. Peter's dome over the Tiber | Vatican Gardens |
-| VCT | Saint Vincent and the Grenadines | Tobago Cays | — | Kingstown | Bequia from the air |
-| VEN | Venezuela | Angel Falls | — | Caracas from El Ávila | Mount Roraima |
-| VNM | Viet Nam | Hạ Long Bay | Presidential Palace, Hanoi | Ho Chi Minh City skyline | Imperial City, Huế |
-| VUT | Vanuatu | Mount Yasur, Tanna | Parliament House, Port Vila | — | Champagne Beach, Espiritu Santo |
-| WSM | Samoa | To Sua Ocean Trench | Government Building, Apia | — | Robert Louis Stevenson Museum, Vailima |
-| YEM | Yemen | Dragon's blood trees, Socotra | — | Old City of Sana'a | Shibam, Hadramawt |
+| SLB | Solomon Islands | Marovo Lagoon | National Parliament, Honiara | Honiara | East Rennell |
+| SOM | Somalia | Kismayo coast | Daallo Mountain, Cal Madow | Mogadishu | Laas Geel rock paintings |
 | ZAF | South Africa | Table Mountain, Cape Town | Union Buildings, Pretoria | Johannesburg skyline | Drakensberg |
-| ZMB | Zambia | Victoria Falls from the air | — | Downtown Lusaka | South Luangwa National Park |
+| SSD | South Sudan | Mountains near Kimotong, Eastern Equatoria | Thatched house in Bor | The White Nile at Juba | Boma National Park |
+| ESP | Spain | Alhambra, Granada | Palacio de las Cortes, Madrid | Cuatro Torres, Madrid | Mosque–Cathedral and Roman bridge, Córdoba |
+| LKA | Sri Lanka | Sigiriya | Parliament of Sri Lanka, Sri Jayawardenepura Kotte | Colombo skyline | Galle Fort |
+| PSE | State of Palestine | Church of the Nativity, Bethlehem | Mukataa, Ramallah | Bethlehem | Mar Saba Monastery |
+| SDN | Sudan | Pyramids of Meroë | Hanafi Mosque, Suakin | Khartoum and the Nile | Jebel Barkal |
+| SUR | Suriname | Brownsberg Nature Park | Presidential Palace, Paramaribo | Waterkant, Paramaribo | Cathedral Basilica of Saints Peter and Paul, Paramaribo |
+| SWE | Sweden | Stockholm City Hall | Riksdag building, Stockholm | Gamla stan, Stockholm | Visby |
+| CHE | Switzerland | Matterhorn | Federal Palace, Bern | Geneva and the Jet d'Eau | Lavaux vineyard terraces |
+| SYR | Syrian Arab Republic | Krak des Chevaliers | Great Colonnade, Palmyra | Damascus and Mount Qasioun | Bosra Roman theatre |
+| TJK | Tajikistan | Iskanderkul | Palace of the Nation, Dushanbe | Dushanbe | Pamir Mountains |
+| THA | Thailand | Wat Arun, Bangkok | Sappaya-Sapasathan, Bangkok | Grand Palace, Bangkok | Wat Chaiwatthanaram, Ayutthaya |
+| TLS | Timor-Leste | Cristo Rei of Dili and the coast | Government Palace, Dili | Dili waterfront | Jaco Island |
+| TGO | Togo | Kpimé Falls, Kpalimé | National Assembly, Lomé | Palais de Lomé | Koutammakou, the Land of the Batammariba |
+| TON | Tonga | Vava'u harbour | Royal Palace, Nuku'alofa | Nuku'alofa waterfront | Ha'amonga 'a Maui |
+| TTO | Trinidad and Tobago | Pigeon Point, Tobago | Red House, Port of Spain | Queen's Park Savannah, Port of Spain | Pitch Lake |
+| TUN | Tunisia | Sidi Bou Said | Assembly of the Representatives of the People, Bardo | Medina of Tunis | Amphitheatre of El Jem |
+| TKM | Turkmenistan | Darvaza gas crater | Oguzhan Presidential Palace, Ashgabat | Ashgabat | Mausoleum of Sultan Sanjar, Merv |
+| TUV | Tuvalu | Funafuti lagoon | Government building, Vaiaku | Fongafale, Funafuti | Funafuti Conservation Area |
+| TUR | Türkiye | Hagia Sophia, Istanbul | Galata Tower and Istanbul | Grand National Assembly, Ankara | Göreme valleys, Cappadocia |
+| UGA | Uganda | Murchison Falls | Mountain gorilla, Bwindi | Kampala skyline | Kasubi Tombs, Kampala |
+| UKR | Ukraine | Kyiv Pechersk Lavra | Mariinskyi Palace, Kyiv | St Sophia's Cathedral and central Kyiv | Kamianets-Podilskyi Castle |
+| ARE | United Arab Emirates | Burj Khalifa and the Dubai skyline | Qasr Al Hosn, Abu Dhabi | Abu Dhabi skyline | Liwa Oasis dunes, Rub' al Khali |
+| GBR | United Kingdom | Palace of Westminster, London | Buckingham Palace, London | City of London skyline | Stonehenge, Wiltshire |
+| TZA | United Republic of Tanzania | Mount Kilimanjaro | Sultan's Palace, Stone Town, Zanzibar | Dar es Salaam | Ngorongoro Crater |
+| USA | United States | Statue of Liberty | White House, Washington, D.C. | New York City skyline | Grand Canyon |
+| URY | Uruguay | Colonia del Sacramento | Legislative Palace, Montevideo | Montevideo skyline | La Mano, Punta del Este |
+| UZB | Uzbekistan | Registan, Samarkand | Oliy Majlis, Tashkent | Tashkent | Itchan Kala, Khiva |
+| VUT | Vanuatu | Mount Yasur, Tanna | Parliament House, Port Vila | Port Vila harbour | Champagne Beach, Espiritu Santo |
+| VEN | Venezuela | Angel Falls | Médanos de Coro | Caracas from El Ávila | Mount Roraima |
+| VNM | Viet Nam | Hạ Long Bay | Presidential Palace, Hanoi | Ho Chi Minh City skyline | Imperial City, Huế |
+| YEM | Yemen | Dragon's blood trees, Socotra | Dar al-Hajar, Wadi Dhahr | Old City of Sana'a | Shibam, Hadramawt |
+| ZMB | Zambia | Victoria Falls from the air | Kafue River at sunset | Downtown Lusaka | South Luangwa National Park |
 | ZWE | Zimbabwe | Great Zimbabwe | New Parliament Building, Mount Hampden | Harare | Mana Pools National Park |
-
-## Roles without a photo (38 slots in 38 countries)
-
-Every country has at least three photos.
-
-| ISO | Country | Role | Why |
-|---|---|---|---|
-| BDI | Burundi | government | Commons has no usable exterior photo of the presidential palace or Kigobe parliament (only street views with people or blurred shots) |
-| CAF | Central African Republic | government | Commons has no usable exterior photo of the Presidential Palace or National Assembly in Bangui |
-| COD | Democratic Republic of the Congo | government | Commons photos of the Palais du Peuple are interiors, sessions with people, or show rubbish in the foreground |
-| COG | Congo | government | Commons has no usable exterior photo of the Palais du Parlement in Brazzaville at the required size; the only one is 1280px wide |
-| COM | Comoros | government | Commons has no usable exterior photo of Beit-Salam or the Assembly of the Union |
-| DJI | Djibouti | city | Commons has no clear skyline of Djibouti City; available views are port cranes, street scenes or maps |
-| ETH | Ethiopia | government | Commons has no usable exterior photo of the National Palace, Unity Palace or Parliament in Addis Ababa (only interiors with people) |
-| GIN | Guinea | city | Commons has no clear skyline of Conakry; available city views are street scenes with people |
-| GNB | Guinea-Bissau | heritage | Commons has no usable landscape-format photo of the Bijagós Archipelago (only maps and satellite images with logos) |
-| HTI | Haiti | government | Commons has no usable recent exterior photo of the National Palace or a government building in Port-au-Prince |
-| ISR | Israel | government | Israel's parliament and government sit in Jerusalem, which this site does not picture for Israel or Palestine because of its disputed status |
-| JAM | Jamaica | government | Commons has no usable exterior photo of Gordon House or Jamaica House (search results are buildings of the same name abroad) |
-| LSO | Lesotho | government | Commons has no usable exterior photo of the Royal Palace or Parliament in Maseru (only official events with people) |
-| MDV | Maldives | government | Commons has no usable exterior photo of the President's Office or People's Majlis (only official meetings with people) |
-| MHL | Marshall Islands | government | Commons has no usable exterior photo of the Capitol building in Majuro |
-| MLI | Mali | government | Commons has no usable exterior photo of Koulouba Palace or the National Assembly (only official meetings) |
-| MOZ | Mozambique | government | Commons has no usable exterior photo of the Ponta Vermelha Palace or the Assembly of the Republic |
-| MRT | Mauritania | government | Commons has no usable exterior photo of the Presidential Palace or National Assembly in Nouakchott |
-| MWI | Malawi | city | Commons has no clear city view of Lilongwe or Blantyre (only street scenes and old photos) |
-| NRU | Nauru | city | Nauru has no city skyline; Commons views of Yaren are aerials of the whole island |
-| PNG | Papua New Guinea | city | Commons has no usable skyline of Port Moresby (search returns forests elsewhere) |
-| SDN | Sudan | government | Commons has no full-size exterior photo of the Republican Palace (only small or historic images) |
-| SLE | Sierra Leone | city | Commons has no usable skyline photo of Freetown |
-| SOM | Somalia | government | Commons photos of Villa Somalia and the Federal Parliament are interiors with people or historic images |
-| SSD | South Sudan | government | Commons has no usable exterior photo of the National Legislative Assembly or other government buildings in Juba |
-| SYC | Seychelles | government | Commons has State House in Victoria only as a very wide panorama that cannot be cropped to size without the original file |
-| SYR | Syrian Arab Republic | government | Commons has no usable exterior photo of the People's Assembly building in Damascus |
-| TGO | Togo | city | Commons has no usable skyline of Lomé (search returns other West African cities) |
-| TON | Tonga | city | Commons has no usable skyline of Nuku'alofa; the Royal Palace photo is the main city view |
-| TTO | Trinidad and Tobago | city | Commons has no current skyline photo of Port of Spain (search returns other cities) |
-| TZA | United Republic of Tanzania | government | Commons has no usable exterior photo of State House or the Parliament in Dodoma (only official events with people) |
-| UGA | Uganda | government | Commons photos of the Parliament of Uganda are sessions, protests or a gateway with people |
-| VCT | Saint Vincent and the Grenadines | government | Commons has no usable exterior photo of the Parliament or Court House in Kingstown |
-| VEN | Venezuela | government | Commons photos of Miraflores Palace and the Federal Legislative Palace are logos, events or small images; search also returned other countries' parliaments |
-| VUT | Vanuatu | city | Commons has no usable view of Port Vila (search returns other harbours) |
-| WSM | Samoa | city | Commons has no usable skyline photo of Apia |
-| YEM | Yemen | government | Commons has no usable exterior photo of the Presidential Palace in Sana'a |
-| ZMB | Zambia | government | Commons photos of the National Assembly of Zambia are sessions with people |
