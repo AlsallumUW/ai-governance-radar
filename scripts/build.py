@@ -3,7 +3,7 @@
 
     python3 scripts/build.py            -> dist/index.html, dist/data.json, dist/changes.csv
 """
-import csv, io, json, sys
+import csv, hashlib, io, json, re, sys
 from common import ROOT, DATA, load, load_all
 import pages
 
@@ -53,6 +53,47 @@ def assemble():
     return D
 
 
+# Cache-busting: every local image, CSS and JS URL in the built HTML gets ?v=<first 8 hex chars of the file's sha1>,
+# so a changed file gets a new URL and browsers and the CDN cannot keep serving the old copy after a deploy.
+BUST_EXT = (".webp", ".jpg", ".jpeg", ".png", ".gif", ".svg", ".avif", ".css", ".js")
+BUST_ATTR = re.compile(r'\b(src|href|srcset|imagesrcset|content)="([^"]+)"')
+
+
+def bust_urls(out):
+    hashes, n = {}, 0
+
+    def tag(url, base):
+        if "?" in url or "#" in url:
+            return url
+        if url.startswith(pages.SITE_URL):
+            f = out / url[len(pages.SITE_URL):]
+        elif "://" in url or url.startswith(("data:", "mailto:", "/")):
+            return url
+        else:
+            f = (base / url).resolve()
+        if f.suffix.lower() not in BUST_EXT or not f.is_file():
+            return url
+        if f not in hashes:
+            hashes[f] = hashlib.sha1(f.read_bytes()).hexdigest()[:8]
+        return f"{url}?v={hashes[f]}"
+
+    for page in out.rglob("*.html"):
+        base, t = page.parent, page.read_text(encoding="utf-8")
+
+        def attr(m):
+            name, val = m.group(1), m.group(2)
+            if name in ("srcset", "imagesrcset"):
+                val = ", ".join(" ".join([tag(p.split()[0], base)] + p.split()[1:]) for p in val.split(",") if p.strip())
+            else:
+                val = tag(val, base)
+            return f'{name}="{val}"'
+
+        new = BUST_ATTR.sub(attr, t)
+        if new != t:
+            page.write_text(new, encoding="utf-8"); n += 1
+    return n, len(hashes)
+
+
 def build():
     D = assemble()
     t = (ROOT / "site/template.html").read_text(encoding="utf-8")
@@ -72,9 +113,10 @@ def build():
     (OUT / "changes.csv").write_text("﻿" + buf.getvalue(), encoding="utf-8")
     (OUT / ".nojekyll").write_text("")
     n_pages = pages.write_all(D, load_all(), OUT, json.loads((ROOT / "site/assets/flags.json").read_text(encoding="utf-8")))
+    n_busted, n_files = bust_urls(OUT)
     print(f"built dist/index.html ({len(t)/1e6:.1f} MB): {len(D['jurisdictions'])} jurisdictions, "
           f"{len(D['instruments'])} instruments, {len(D['changes'])} change events, "
-          f"{D['meta']['deeply_reviewed_country_count']} deep-reviewed countries; {n_pages} country/body pages")
+          f"{D['meta']['deeply_reviewed_country_count']} deep-reviewed countries; {n_pages} country/body pages; cache-busted {n_files} asset URLs in {n_busted} pages")
 
 
 if __name__ == "__main__":
