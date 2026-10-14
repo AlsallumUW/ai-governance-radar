@@ -113,7 +113,7 @@ def _audit(its, st):
 
 
 # ---------------------------------------------------------------- quality checks on a translation
-_NUM = re.compile(r"\d+(?:[.,]\d+)*")
+_NUM = re.compile(r"[0-9]+(?:[.,][0-9]+)*")
 _ACR = re.compile(r"\b[A-Z][A-Z0-9&]{2,}\b")
 
 
@@ -145,7 +145,7 @@ def problems(en, ar):
     out = []
     if not isinstance(ar, str) or not ar.strip(): return ["empty"]
     if re.search("[«»]", ar): out.append("uses «»")
-    if re.search("[٠-٩۰-۹]", ar): out.append("Eastern Arabic digits")
+    if re.search("[٠-٩۰-۹]", ar) and not re.search("[٠-٩۰-۹]", en): out.append("Eastern Arabic digits")   # unless quoting a source
     if not AR.search(ar): out.append("no Arabic text")
     en = _strip_glossary(en)
     miss = [n for n in _NUM.findall(en) if n not in ar and n.replace(",", "") not in ar.replace(",", "").replace("،", "")]
