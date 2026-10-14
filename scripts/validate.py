@@ -28,6 +28,40 @@ def host(u):
     return (m.group(1).lower() if m else "")
 
 
+PHOTO_LICENCES = re.compile(r"^(Public domain|CC0 1\.0|CC BY(-SA)? \d\.\d( [a-z]{2,3})?)$")
+PHOTO_SUBJECTS = {"parliament", "monument", "heritage_site", "landscape", "skyline"}
+PHOTO_FIELDS = ["file", "file_small", "width", "height", "title", "author", "license", "license_url", "commons_url", "shows", "alt"]
+
+
+def check_photos():
+    """data/photos.json (UX phase 2b): allowed licences only, files present and within size, every field filled."""
+    p = DATA / "photos.json"
+    if not p.exists(): return [], []
+    errs, warns = [], []
+    countries = {q.stem for q in (DATA / "countries").glob("*.json")}
+    site = DATA.parent / "site"
+    for cid, ph in load(p).get("countries", {}).items():
+        E = lambda m: errs.append(f"photos {cid}: {m}")
+        if cid not in countries: E("not a country file")
+        ims = ([ph["hero"]] if ph.get("hero") else []) + list(ph.get("secondary") or [])
+        if not ph.get("hero") and not ph.get("fallback_reason"): E("no hero and no fallback_reason")
+        if len(ph.get("secondary") or []) > 2: E("more than 2 secondary photos")
+        for im in ims:
+            for f in PHOTO_FIELDS:
+                if f not in im or (im[f] in ("", None) and f != "license_url"): E(f"{im.get('file')} missing {f}")
+            if not PHOTO_LICENCES.match(im.get("license") or ""): E(f"{im.get('file')} licence not allowed: {im.get('license')}")
+            if (im.get("license") or "").startswith("CC BY") and "cropped and resized" not in (im.get("changes") or ""):
+                E(f"{im.get('file')} is {im.get('license')} but has no modification note (changes: \"cropped and resized\")")
+            if im.get("subject_type") not in PHOTO_SUBJECTS: E(f"{im.get('file')} subject_type must be one of {sorted(PHOTO_SUBJECTS)}")
+            if not (im.get("why") or "").strip(): E(f"{im.get('file')} missing why")
+            if not (im.get("commons_url") or "").startswith("https://commons.wikimedia.org/wiki/File:"): E(f"{im.get('file')} commons_url is not a Commons file page")
+            for f, cap in (("file", 200_000), ("file_small", 80_000)):
+                q = site / (im.get(f) or "")
+                if not q.is_file(): E(f"missing image {im.get(f)}")
+                elif q.stat().st_size > cap: warns.append(f"photos {cid}: {im.get(f)} is {q.stat().st_size // 1000} KB (target {cap // 1000} KB)")
+    return errs, warns
+
+
 def check(only=None):
     cats = set(load(DATA / "meta.json")["categories"])
     errs, warns, ids, srcids = [], [], Counter(), Counter()
@@ -93,6 +127,8 @@ def check(only=None):
     for k, n in srcids.items():
         if n > 1: errs.append(f"duplicate source id {k}")
     if not only:
+        e2, w2 = check_photos()
+        errs += e2; warns += w2
         from next_batch import QUEUE, check_queue
         errs += check_queue(load(QUEUE), [p.stem for p in (DATA / "countries").glob("*.json")])
     return errs, warns

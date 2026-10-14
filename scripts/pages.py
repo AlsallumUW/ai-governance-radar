@@ -7,8 +7,9 @@ Called from build.py: pages.write_all(D, recs, out_dir, flags) writes
 Charts are rendered here as static SVG (no JavaScript needed to read them); country.js adds
 sorting, filters, chart/table toggles, tooltips and the per-country export.
 """
-import datetime as dt, html, json, os, re
+import datetime as dt, html, json, os, re, shutil
 from common import ROOT
+import geo
 
 SITE_URL = os.environ.get("RADAR_SITE_URL", "https://alsallumuw.github.io/ai-governance-radar/").rstrip("/") + "/"
 BINDING = {"binding_law", "binding_regulation", "international_treaty", "administrative_policy_mandatory_in_scope"}
@@ -118,7 +119,7 @@ def chart_years(rows):
     step = 1 if mx <= 6 else 2 if mx <= 12 else 5 if mx <= 30 else 10 if mx <= 60 else 20 if mx <= 120 else 50
     top = ((mx + step - 1) // step) * step
     bw = min(22, pw / len(keys) * .66)
-    out = [f'<svg viewBox="0 0 {W} {H}" class="chart" role="img" aria-label="Instruments per publication year: binding or mandatory, non-binding and drafts">']
+    out = [f'<svg viewBox="0 0 {W} {H}" class="chart grow-y" role="img" aria-label="Instruments per publication year: binding or mandatory, non-binding and drafts">']
     for t in range(0, top + 1, step):
         y = T + ph - ph * t / top
         out.append(f'<line class="grid" x1="{L}" x2="{W - R}" y1="{y:.1f}" y2="{y:.1f}"/><text class="tick" x="{L - 6}" y="{y + 3:.1f}" text-anchor="end">{t}</text>')
@@ -130,6 +131,7 @@ def chart_years(rows):
         segs = [(KIND_CLASS[x], bk[x], KIND_LABEL[x]) for x in ("soft", "binding", "draft")]
         y0 = base
         drawn = [(c, v, nm) for c, v, nm in segs if v]
+        out.append(f'<g class="col" style="--i:{n};transform-origin:0 {base:.1f}px">')
         for idx, (c, v, nm) in enumerate(drawn):
             h = ph * v / top; y1 = y0 - h
             gap = 2 if idx > 0 else 0
@@ -144,6 +146,7 @@ def chart_years(rows):
             else:
                 out.append(f'<rect class="mark s-{c}" x="{x:.1f}" y="{yy:.1f}" width="{bw:.1f}" height="{hh:.1f}" data-tip="{e(label)}: {v} {nm.lower()}"><title>{e(label)}: {v} {nm.lower()}</title></rect>')
             y0 = y1
+        out.append('</g>')
         if n % lab_every == 0 or n == len(keys) - 1:
             out.append(f'<text class="tick" x="{cx:.1f}" y="{H - B + 16}" text-anchor="middle">{e(label)}</text>')
     out.append(f'<line class="axis" x1="{L}" x2="{W - R}" y1="{T + ph}" y2="{T + ph}"/></svg>')
@@ -161,15 +164,15 @@ def chart_status(rows):
     W, rowh, L, R = 360, 26, 158, 30
     H = rowh * len(items) + 8
     mx = max(v for _, v in items)
-    out = [f'<svg viewBox="0 0 {W} {H}" class="chart" role="img" aria-label="Instruments by legal status, ordered by legal weight">']
+    out = [f'<svg viewBox="0 0 {W} {H}" class="chart grow-x" role="img" aria-label="Instruments by legal status, ordered by legal weight">']
     for n, (k, v) in enumerate(items):
         y = 4 + n * rowh; w = max(2, (W - L - R) * v / mx); bh = 14; by = y + (rowh - bh) / 2
         r = min(4, w / 2)
         d = f"M{L},{by}H{L + w - r:.1f}Q{L + w:.1f},{by} {L + w:.1f},{by + r}V{by + bh - r}Q{L + w:.1f},{by + bh} {L + w - r:.1f},{by + bh}H{L}Z"
         lab = STATUS_LABEL.get(k) or k.replace('_', ' ').capitalize()
         out.append(f'<text class="cat" x="{L - 10}" y="{by + 11}" text-anchor="end">{e(lab)}</text>'
-                   f'<path class="mark s-{KIND_CLASS[kind({"legal_status": k})]}" d="{d}" data-tip="{e(lab)}: {v} ({KIND_LABEL[kind({"legal_status": k})].lower()})"><title>{e(lab)}: {v}</title></path>'
-                   f'<text class="val" x="{L + w + 6:.1f}" y="{by + 11}">{v}</text>')
+                   f'<path class="mark s-{KIND_CLASS[kind({"legal_status": k})]}" style="--i:{n};transform-origin:{L}px 0" d="{d}" data-tip="{e(lab)}: {v} ({KIND_LABEL[kind({"legal_status": k})].lower()})"><title>{e(lab)}: {v}</title></path>'
+                   f'<text class="val" style="--i:{n}" x="{L + w + 6:.1f}" y="{by + 11}">{v}</text>')
     out.append(f'<line class="axis" x1="{L}" x2="{L}" y1="0" y2="{H}"/></svg>')
     table = ('<table class="data-table"><thead><tr><th scope="col">Legal status</th><th scope="col">Instruments</th></tr></thead><tbody>'
              + "".join(f'<tr><th scope="row">{e(STATUS_LABEL.get(k) or k.replace('_', ' ').capitalize())}</th><td>{v}</td></tr>' for k, v in items) + "</tbody></table>")
@@ -226,18 +229,76 @@ def figure(fid, title, desc, svg, table, note=""):
             f'<p class="fig-tools"><button type="button" class="linkbtn" data-toggle-table="{fid}" aria-expanded="false">Show as table</button>{(" · " + note) if note else ""}</p></figure>')
 
 
-def head(title, desc, canon, page_type="article"):
+def head(title, desc, canon, page_type="article", preload=None):
     return (f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
             f'<meta name="color-scheme" content="light dark"><link rel="icon" href="data:,"><title>{e(title)}</title><meta name="description" content="{e(desc)}">'
             f'<link rel="canonical" href="{e(canon)}"><meta property="og:type" content="{page_type}"><meta property="og:site_name" content="AI Governance Radar">'
             f'<meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{e(canon)}">'
             f'<meta name="twitter:card" content="summary"><meta name="twitter:title" content="{e(title)}"><meta name="twitter:description" content="{e(desc)}">'
-            f'<link rel="stylesheet" href="../../assets/country.css"></head>')
+            + (f'<meta property="og:image" content="{e(SITE_URL + preload["file"])}">' if preload else "")
+            + (f'<link rel="preload" as="image" href="../../{e(preload["file_small"])}" imagesrcset="../../{e(preload["file_small"])} 800w, ../../{e(preload["file"])} 1600w" imagesizes="100vw" fetchpriority="high">' if preload else "")
+            + '<link rel="stylesheet" href="../../assets/country.css"></head>')
 
 
-def topbar(sections):
+def hero(eyebrow, h1, stats, photo=None, art=None, kind=None):
+    """Full-width page header. With a photo: the photo under a scrim, name and counts over it, credit line below.
+    Without one: a country silhouette (kind None) or the member map of a body (kind "map") on a tinted background."""
+    k = "photo" if photo else (kind or "shape")
+    body = (f'<div class="hero-body"><p class="eyebrow">{eyebrow}</p>{h1}'
+            '<dl class="stats">' + "".join(f'<div><dt>{a}</dt><dd data-count="{v}">{v}</dd></div>' for a, v in stats) + '</dl></div>')
+    if photo:
+        media = f'<div class="hero-media">{img_tag(photo, "hero-img")}</div><div class="hero-scrim" aria-hidden="true"></div>'
+        foot = f'<p class="hero-credit">{credit(photo)}</p>'
+    else:
+        media = f'<div class="hero-art">{art or ""}</div>'; foot = ""
+    return f'<header class="hero hero--{k}" id="top">{media}{body}{foot}</header>'
+
+
+def topbar(sections, ident=""):
+    """Sticky top bar. Once the hero has scrolled away (country.js adds .stuck) it also shows the page's name and counts.
+    On narrow screens the section links collapse into a menu (a plain <details>, so it works without JavaScript)."""
+    links = "".join(f'<a href="#{k}">{e(v)}</a>' for k, v in sections)
     return ('<header class="topnav"><a class="back" id="backToMap" href="../../">← World map</a><span class="site">AI Governance Radar</span>'
-            '<nav class="toc" aria-label="On this page">' + "".join(f'<a href="#{k}">{e(v)}</a>' for k, v in sections) + '</nav></header>')
+            + (f'<span class="bar-id" aria-hidden="true">{ident}</span>' if ident else "")
+            + f'<nav class="toc" aria-label="On this page">{links}</nav>'
+            + f'<details class="secmenu"><summary>Sections</summary><nav aria-label="On this page (menu)">{links}</nav></details>'
+            + '<div class="progress" aria-hidden="true"><i></i></div></header>')
+
+
+def bar_ident(name, stats):
+    return f'<b>{e(name)}</b>' + "".join(f'<span><em>{v}</em> {e(k.lower() if n else k)}</span>' for n, (k, v) in enumerate(stats[:4]))
+
+
+# ---------------------------------------------------------------- photos (UX phase 2b)
+def img_tag(im, cls="", lazy=False, sizes="100vw"):
+    """<img> for a stored photo: 800 and 1600 px WebP, paths relative to a country/body page."""
+    big, small = "../../" + im["file"], "../../" + im["file_small"]
+    attrs = 'loading="lazy" decoding="async"' if lazy else 'fetchpriority="high" decoding="async"'
+    return (f'<img class="{cls}" src="{e(big if not lazy else small)}" srcset="{e(small)} 800w, {e(big)} 1600w" sizes="{sizes}" '
+            f'width="{im["width"]}" height="{im["height"]}" alt="{e(im["alt"])}" {attrs}>')
+
+
+def credit(im):
+    """Credit line. CC BY / CC BY-SA credits name the changes made ("cropped and resized"), as the licences require."""
+    lic = e(im["license"])
+    if im.get("license_url"): lic = f'<a href="{e(im["license_url"])}" rel="license noopener" target="_blank">{lic}</a>'
+    if im.get("changes"): lic += f' ({e(im["changes"])})'
+    return (f'<span class="photo-credit">Photo: <a href="{e(im["commons_url"])}" rel="noopener" target="_blank">{e(im["author"])}</a>, '
+            f'{lic}, via Wikimedia Commons</span>')
+
+
+def photo_break(im):
+    return (f'<figure class="photo-break"><div class="pb-media">{img_tag(im, lazy=True)}</div>'
+            f'<figcaption><span class="pb-what">{e(im["shows"])}</span>{credit(im)}</figcaption></figure>')
+
+
+def rail(sections, locator_svg=""):
+    """Desktop side rail: locator map, section links (current one highlighted by country.js) and a reading-progress line."""
+    return ('<aside class="rail" aria-label="Page navigation"><div class="rail-in">'
+            + (f'<div class="rail-map">{locator_svg}</div>' if locator_svg else "")
+            + '<nav class="rail-nav" aria-label="Sections"><span class="rail-track" aria-hidden="true"><i></i></span><ol>'
+            + "".join(f'<li><a href="#{k}">{e(v)}</a></li>' for k, v in sections) + '</ol></nav>'
+            + '<p class="rail-top"><a href="#top">Back to top ↑</a></p></div></aside>')
 
 
 def instruments_section(rows, orgs, srcs, cats, sid="instruments", heading="Instruments", lead=""):
@@ -287,7 +348,6 @@ def country_page(j, D, rec, flags, ctx):
     if sub: secs.append(("subnational", "Subnational"))
     if leads: secs.append(("leads", "Leads"))
     secs.append(("method", "Method"))
-    H = [head(title, desc, canon), '<body class="cp">', topbar(secs), '<main class="page">']
     # a. header
     chips = "".join(f'<a class="chip" href="../../body/{b}/">{e(ctx["jur"][b].get("short_name") or b)}</a>' for b in memberships)
     treaty = []
@@ -296,13 +356,20 @@ def country_page(j, D, rec, flags, ctx):
     if oa: treaty.append(f'<li><span class="k">OECD AI Recommendation</span><span class="v">Adherent{" (OECD member)" if oa.get("member") else " · non-member, since " + fmt_date(oa["date"]) if oa.get("date") else " · non-member"}</span></li>')
     treaty.append(f'<li><span class="k">Convention 108 (data protection)</span><span class="v">{"Party" if c108 else "Party; ratification act pending verification" if c108_pending else "Not recorded as a party"}</span></li>')
     stats = [("Instruments", len(rows_all)), ("Binding or mandatory", n_bind), ("Non-binding", n_soft), ("Drafts", n_draft), ("Leads", len(leads))]
-    H.append('<header class="hero" id="top"><p class="eyebrow">' + e(j.get("region") or "") + (' · Country profile' if j.get("region") else 'Country profile') + '</p>'
-             + f'<h1>{"<img class=flag src=" + chr(34) + flag + chr(34) + " alt=" + chr(34) + chr(34) + ">" if flag else ""}{e(j["name"])}</h1>'
+    ph = ctx["photos"].get(jid) or {}
+    hero_img = ph.get("hero")
+    H = [head(title, desc, canon, preload=hero_img), f'<body class="cp" data-jid="{e(jid)}" data-build="{e(D["meta"].get("build_date") or "")}">',
+         topbar(secs, bar_ident(j["name"], stats)), '<main id="main">']
+    eyebrow = e(j.get("region") or "") + (' · Country profile' if j.get("region") else 'Country profile')
+    h1 = f'<h1>{"<img class=flag src=" + chr(34) + flag + chr(34) + " alt=" + chr(34) + chr(34) + ">" if flag else ""}{e(j["name"])}</h1>'
+    H.append(hero(eyebrow, h1, stats, photo=hero_img, art=None if hero_img else geo.silhouette(jid, j["name"])))
+    H.append('<div class="page layout">' + rail(secs, geo.locator(jid, j["name"])) + '<div class="content">')
+    H.append('<section class="intro" aria-label="Memberships and treaty status">'
              + (f'<p class="chips" aria-label="Memberships">{chips}</p>' if chips else "")
              + f'<ul class="facts">{"".join(treaty)}<li><span class="k">Last reviewed</span><span class="v">{e(fmt_date(narr.get("last_deep_review")) or "Not yet deep-reviewed")}</span></li></ul>'
-             + '<dl class="stats">' + "".join(f'<div><dt>{k}</dt><dd>{v}</dd></div>' for k, v in stats) + '</dl>'
              + f'<p class="stats-note">{COUNT_NOTE} Leads: documents not yet verified as in-scope instruments. Counts include state, provincial and local instruments; regional instruments are listed separately.</p>'
-             + f'<p class="hero-links"><a href="../../timeline/?country={e(jid)}">See this country on the timeline →</a><a href="../../analysis/">Global analysis →</a><a href="../../suggest/?country={e(jid)}">Suggest an update →</a></p></header>')
+             + f'<p class="hero-links"><a href="../../timeline/?country={e(jid)}">See this country on the timeline →</a><a href="../../analysis/">Global analysis →</a><a href="../../suggest/?country={e(jid)}">Suggest an update →</a></p></section>')
+    breaks = list(ph.get("secondary") or [])
     # b. overview + c. charts in a two-column grid
     ov = ""
     zero = ""
@@ -339,7 +406,8 @@ def country_page(j, D, rec, flags, ctx):
                     + (f'<p class="fig-tools">{more} more in the instrument list.</p>' if more > 0 else "") + '</figure>')
     H.append('<div class="lede-grid">' + (ov or '<section id="overview" class="block prose"><h2>Overview</h2><p class="muted">No narrative summary has been written for this jurisdiction yet.</p></section>')
              + '<aside id="charts" class="panels" aria-label="Charts">' + "".join(figs) + '</aside></div>')
-    # d. instruments
+    # d. instruments (a full-width photo break before the first list, when the country has secondary photos)
+    if breaks and (nat or regional or sub): H.append(photo_break(breaks.pop(0)))
     if nat: H.append(instruments_section(nat, orgs, srcs, cats, lead='<p class="section-lede">National instruments. Sort and filter below; the list prints in full.</p>'))
     # e. regional
     if regional:
@@ -358,7 +426,8 @@ def country_page(j, D, rec, flags, ctx):
                  + "".join(f'<details class="unit"><summary><span>{e(u)}</span><span class="count">{len(rs)}</span></summary><div class="inst-list">'
                            + "".join(inst_item(i, orgs, srcs, cats) for i in sorted(rs, key=lambda i: date_key(i.get("publication_date")), reverse=True)) + '</div></details>'
                            for u, rs in sorted(byu.items())) + '</section>')
-    # g. leads
+    # g. leads (second photo break before leads, else before the method note)
+    if breaks: H.append(photo_break(breaks.pop(0)))
     if leads:
         H.append(f'<section id="leads" class="block"><details class="leads"><summary><h2>Leads — not yet verified as in-scope instruments <span class="count">{len(leads)}</span></h2></summary>'
                  '<p class="section-lede">Documents found during research that are not recorded as instruments: no official text could be read, no stated date, still pending, or outside the scope test.</p><ul class="lead-list">'
@@ -381,9 +450,8 @@ def country_page(j, D, rec, flags, ctx):
               "leads": leads, "organizations": [o for o in D["organizations"] if o.get("jurisdiction_id") == jid],
               "sources": [s for s in D["sources"] if any(i.get("source_id") == s["id"] for i in rows_all)], "coverage_audit": audit or None,
               "changes": [c for c in D["changes"] if c.get("jurisdiction_id") == jid]}
-    H.append('</main>' + footer(D) + '<script id="profile-data" type="application/json">' + json.dumps(bundle, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
-             + '</script><script src="../../assets/country.js" defer></script></body></html>')
-    return "".join(H)
+    H.append('</div></div></main>' + footer(D) + '<script src="../../assets/country.js" defer></script></body></html>')
+    return "".join(H), bundle
 
 
 def body_page(b, D, rec, flags, ctx):
@@ -395,13 +463,15 @@ def body_page(b, D, rec, flags, ctx):
     title = f"{b['name']}: AI governance instruments | AI Governance Radar"
     desc = first_sentence(narr.get("summary")) or f"Instruments of the {b['name']} recorded on the AI Governance Radar, and the countries they apply to."
     secs = [("overview", "Overview"), ("charts", "Charts"), ("instruments", "Instruments")] + ([("members", "Members")] if members else []) + [("method", "Method")]
-    H = [head(title, desc, canon), '<body class="cp">', topbar(secs), '<main class="page">']
     n_bind = sum(1 for i in rows if kind(i) == "binding"); n_draft = sum(1 for i in rows if kind(i) == "draft")
     stats = [("Instruments", len(rows)), ("Binding or mandatory", n_bind), ("Non-binding", len(rows) - n_bind - n_draft), ("Drafts", n_draft), ("Member states", len(members))]
-    H.append(f'<header class="hero" id="top"><p class="eyebrow">Regional / international body</p><h1>{e(b["name"])}</h1>'
-             + '<dl class="stats">' + "".join(f'<div><dt>{k}</dt><dd>{v}</dd></div>' for k, v in stats) + '</dl>'
-             + f'<p class="stats-note">{COUNT_NOTE} Instruments are stored once for the body and listed on each country page they apply to.</p>'
-             + f'<p class="hero-links"><a href="../../timeline/?body={e(bid)}">See this body and its members on the timeline →</a><a href="../../analysis/">Global analysis →</a><a href="../../suggest/?country={e(bid)}">Suggest an update →</a></p></header>')
+    H = [head(title, desc, canon), f'<body class="cp" data-jid="{e(bid)}" data-build="{e(D["meta"].get("build_date") or "")}">',
+         topbar(secs, bar_ident(b.get("short_name") or b["name"], stats)), '<main id="main">']
+    # no logos (trademarks): the hero shows the member states on a world map
+    H.append(hero("Regional / international body", f'<h1>{e(b["name"])}</h1>', stats, art=geo.world(members, b["name"], body=bid) if members else None, kind="map"))
+    H.append('<div class="page layout">' + rail(secs) + '<div class="content">')
+    H.append(f'<section class="intro" aria-label="About the counts"><p class="stats-note">{COUNT_NOTE} Instruments are stored once for the body and listed on each country page they apply to.</p>'
+             + f'<p class="hero-links"><a href="../../timeline/?body={e(bid)}">See this body and its members on the timeline →</a><a href="../../analysis/">Global analysis →</a><a href="../../suggest/?country={e(bid)}">Suggest an update →</a></p></section>')
     years_svg, years_tab, undated = chart_years(rows); status_svg, status_tab = chart_status(rows)
     figs = []
     if years_svg: figs.append(figure("fig-years", "Instruments per year", "By publication year: binding or mandatory, non-binding and drafts.",
@@ -436,14 +506,50 @@ def body_page(b, D, rec, flags, ctx):
     bundle = {"meta": {"title": D["meta"].get("title"), "build_date": D["meta"].get("build_date"), "export": "single jurisdiction", "jurisdiction_id": bid, "url": canon},
               "jurisdiction": b, "narrative": narr or None, "members": members, "instruments": rows,
               "organizations": [o for o in D["organizations"] if o.get("jurisdiction_id") == bid], "changes": [c for c in D["changes"] if c.get("jurisdiction_id") == bid]}
-    H.append('</main>' + footer(D) + '<script id="profile-data" type="application/json">' + json.dumps(bundle, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
-             + '</script><script src="../../assets/country.js" defer></script></body></html>')
-    return "".join(H)
+    H.append('</div></div></main>' + footer(D) + '<script src="../../assets/country.js" defer></script></body></html>')
+    return "".join(H), bundle
 
 
-def footer(D):
+def footer(D, up="../../"):
     return (f'<footer class="pagefoot"><p>AI Governance Radar · official government sources only · data as of {e(fmt_date(D["meta"].get("build_date")))}</p>'
-            '<p><a href="../../" id="footMap">World map</a> · <a href="../../analysis/">Analysis</a> · <a href="../../timeline/">Timeline</a> · <a href="../../suggest/">Suggest an update</a> · <a href="../../?about=method">Methodology</a></p></footer>')
+            f'<p><a href="{up}" id="footMap">World map</a> · <a href="{up}analysis/">Analysis</a> · <a href="{up}timeline/">Timeline</a> · <a href="{up}suggest/">Suggest an update</a> · <a href="{up}?about=method">Methodology</a> · <a href="{up}credits/">Photo credits</a></p></footer>')
+
+
+def load_photos():
+    """data/photos.json -> {ISO3: {"hero": image | None, "secondary": [image, ...]}}"""
+    p = ROOT / "data/photos.json"
+    if not p.exists(): return {}
+    return json.loads(p.read_text(encoding="utf-8")).get("countries", {})
+
+
+def credits_page(D, ctx):
+    """/credits/: every photo used on the site, with author, licence and a link to its Commons page."""
+    photos = ctx["photos"]; jur = ctx["jur"]
+    rows, fallback = [], []
+    for cid in sorted((c for c, j in jur.items() if j.get("type") == "country"), key=lambda c: jur[c].get("name", c)):
+        ph = photos.get(cid) or {}
+        ims = ([("Header", ph["hero"])] if ph.get("hero") else []) + [("Section break", im) for im in ph.get("secondary") or []]
+        if not ph.get("hero"): fallback.append(cid)
+        for role, im in ims:
+            lic = f'<a href="{e(im["license_url"])}" rel="license noopener">{e(im["license"])}</a>' if im.get("license_url") else e(im["license"])
+            rows.append(f'<tr><th scope="row"><a href="../country/{cid}/">{e(jur.get(cid, {}).get("name", cid))}</a></th><td>{role}</td><td>{e(im["shows"])}</td>'
+                        f'<td>{e(im["author"])}</td><td>{lic}</td><td><a href="{e(im["commons_url"])}" rel="noopener">{e(im["title"])}</a></td></tr>')
+    n_img = len(rows)
+    title = "Photo credits | AI Governance Radar"
+    H = [head(title, "Authors and licences of the photos used on the AI Governance Radar country pages.", f"{SITE_URL}credits/").replace('href="../../assets/', 'href="../assets/'),
+         '<body class="cp credits"><header class="topnav"><a class="back" id="backToMap" href="../">← World map</a><span class="site">AI Governance Radar</span></header>',
+         '<main class="page"><header class="hero"><p class="eyebrow">About the photos</p><h1>Photo credits</h1>'
+         f'<p class="section-lede">{n_img} photos on {sum(1 for c in photos.values() if c.get("hero"))} country pages. All come from Wikimedia Commons under a public-domain, CC0, CC BY or CC BY-SA licence, '
+         'were cropped to landscape, resized and converted to WebP for this site, and are served from this site (not hotlinked). Each photo carries its own credit line where it appears. '
+         'Images under CC BY-SA are shared here under the same licence; changes: cropped and resized to WebP. '
+         'Regional and international bodies are shown with a map of their members rather than a logo.</p></header>'
+         '<div class="table-wrap"><table class="data-table plain-table credits-table"><thead><tr><th scope="col">Country</th><th scope="col">Used as</th><th scope="col">What it shows</th>'
+         '<th scope="col">Author</th><th scope="col">Licence</th><th scope="col">Commons file</th></tr></thead><tbody>' + "".join(rows) + '</tbody></table></div>']
+    if fallback:
+        H.append('<p class="section-lede">No suitable freely licensed photo was found for: ' + ", ".join(f'<a href="../country/{c}/">{e(jur.get(c, {}).get("name", c))}</a>' for c in fallback)
+                 + '. These pages show an outline of the country instead.</p>')
+    H.append('</main>' + footer(D, "../") + '</body></html>')
+    return "".join(H)
 
 
 def write_all(D, recs, out, flags):
@@ -468,18 +574,25 @@ def write_all(D, recs, out, flags):
         c108_pending = set()
     ctx = {"jur": jur, "inherited": inherited, "members": members, "cets": cets, "eu_cets": eu_cets, "c108": c108, "c108_pending": c108_pending, "oecd": oecd,
            "orgs": {o["id"]: o for o in D["organizations"]}, "srcs": {s["id"]: s for s in D["sources"]},
-           "today": D["meta"].get("build_date") or dt.date.today().isoformat()}
+           "today": D["meta"].get("build_date") or dt.date.today().isoformat(), "photos": load_photos()}
     (out / "assets").mkdir(parents=True, exist_ok=True)
     for f in ("country.css", "country.js", "analysis.css", "analysis.js", "timeline.js", "suggest.js"):
         (out / "assets" / f).write_text((ROOT / "site" / f).read_text(encoding="utf-8"), encoding="utf-8")
+    # photos (site/img) are copied as they are; never hotlinked
+    if (ROOT / "site/img").is_dir():
+        shutil.copytree(ROOT / "site/img", out / "img", dirs_exist_ok=True)
     n = 0
     for rec in recs.values():
         j = rec["jurisdiction"]
         if j["type"] == "country":
-            p = out / "country" / j["id"]; html_ = country_page(j, D, rec, flags, ctx)
+            p = out / "country" / j["id"]; html_, bundle = country_page(j, D, rec, flags, ctx)
         else:
-            p = out / "body" / j["id"]; html_ = body_page(j, D, rec, flags, ctx)
+            p = out / "body" / j["id"]; html_, bundle = body_page(j, D, rec, flags, ctx)
         p.mkdir(parents=True, exist_ok=True); (p / "index.html").write_text(html_, encoding="utf-8"); n += 1
+        # the export bundle is fetched only when someone downloads the profile, so it stays out of the first page load
+        (p / "profile.json").write_text(json.dumps(bundle, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    (out / "credits").mkdir(exist_ok=True)
+    (out / "credits" / "index.html").write_text(credits_page(D, ctx), encoding="utf-8")
     for old_code, new_code in BODY_REDIRECTS.items():
         p = out / "body" / old_code; p.mkdir(parents=True, exist_ok=True)
         to = f"../{new_code}/"; name = ctx["jur"].get(new_code, {}).get("name", new_code)
