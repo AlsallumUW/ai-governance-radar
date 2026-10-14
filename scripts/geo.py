@@ -152,7 +152,8 @@ def locator(iso, name="", W=200, H=150):
     x0, y0, x1, y1 = _bbox(main)
     k = math.cos(math.radians(max(-70, min(70, (y0 + y1) / 2))))
     # window: country plus context, at least 28° of longitude, keeping the W:H ratio
-    span_x = max((x1 - x0) * k * 2.2, (y1 - y0) * 2.2 * W / H, 28 * k)
+    tiny = max(x1 - x0, y1 - y0) < 3  # small island states: show more ocean so neighbours give context
+    span_x = max((x1 - x0) * k * 2.2, (y1 - y0) * 2.2 * W / H, (60 if tiny else 28) * k)
     span_y = span_x * H / W
     cx, cy = ((x0 + x1) / 2) * k, (y0 + y1) / 2
     sx = W / span_x
