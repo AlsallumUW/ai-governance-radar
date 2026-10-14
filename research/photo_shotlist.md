@@ -181,7 +181,7 @@ Editorial rules: no identifiable people (small, distant figures only where the l
 | SUR | Suriname | Brownsberg Nature Park | Presidential Palace, Paramaribo | Waterkant, Paramaribo | Cathedral Basilica of Saints Peter and Paul, Paramaribo |
 | SWE | Sweden | Stockholm City Hall | Riksdag building, Stockholm | Gamla stan, Stockholm | Visby |
 | CHE | Switzerland | Matterhorn | Federal Palace, Bern | Geneva and the Jet d'Eau | Lavaux vineyard terraces |
-| SYR | Syrian Arab Republic | Krak des Chevaliers | Great Colonnade, Palmyra | Damascus and Mount Qasioun | Bosra Roman theatre |
+| SYR | Syrian Arab Republic | Krak des Chevaliers | Citadel of Bosra | Damascus and Mount Qasioun | Umayyad Mosque, Damascus |
 | TJK | Tajikistan | Iskanderkul | Palace of the Nation, Dushanbe | Dushanbe | Pamir Mountains |
 | THA | Thailand | Wat Arun, Bangkok | Sappaya-Sapasathan, Bangkok | Grand Palace, Bangkok | Wat Chaiwatthanaram, Ayutthaya |
 | TLS | Timor-Leste | Cristo Rei of Dili and the coast | Government Palace, Dili | Dili waterfront | Jaco Island |
@@ -192,7 +192,7 @@ Editorial rules: no identifiable people (small, distant figures only where the l
 | TKM | Turkmenistan | Darvaza gas crater | Oguzhan Presidential Palace, Ashgabat | Ashgabat | Mausoleum of Sultan Sanjar, Merv |
 | TUV | Tuvalu | Funafuti lagoon | Government building, Vaiaku | Fongafale, Funafuti | Funafuti Conservation Area |
 | TUR | Türkiye | Hagia Sophia, Istanbul | Galata Tower and Istanbul | Grand National Assembly, Ankara | Göreme valleys, Cappadocia |
-| UGA | Uganda | Murchison Falls | Mountain gorilla, Bwindi | Kampala skyline | Kasubi Tombs, Kampala |
+| UGA | Uganda | Murchison Falls | Sipi Falls, Mount Elgon | Kampala skyline | Kasubi Tombs, Kampala |
 | UKR | Ukraine | Kyiv Pechersk Lavra | Mariinskyi Palace, Kyiv | St Sophia's Cathedral and central Kyiv | Kamianets-Podilskyi Castle |
 | ARE | United Arab Emirates | Burj Khalifa and the Dubai skyline | Qasr Al Hosn, Abu Dhabi | Abu Dhabi skyline | Liwa Oasis dunes, Rub' al Khali |
 | GBR | United Kingdom | Palace of Westminster, London | Buckingham Palace, London | City of London skyline | Stonehenge, Wiltshire |

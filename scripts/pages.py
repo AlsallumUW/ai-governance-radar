@@ -7,9 +7,10 @@ Called from build.py: pages.write_all(D, recs, out_dir, flags) writes
 Charts are rendered here as static SVG (no JavaScript needed to read them); country.js adds
 sorting, filters, chart/table toggles, tooltips and the per-country export.
 """
-import datetime as dt, html, json, os, re, shutil
+import collections, datetime as dt, html, json, os, re, shutil
 from common import ROOT
 import geo
+from subregions import SUBREGION
 
 SITE_URL = os.environ.get("RADAR_SITE_URL", "https://alsallumuw.github.io/ai-governance-radar/").rstrip("/") + "/"
 BINDING = {"binding_law", "binding_regulation", "international_treaty", "administrative_policy_mandatory_in_scope"}
@@ -306,16 +307,22 @@ def backdrop(im):
 
 
 def closing_strip(jid, j, ctx, hero_img):
-    """End of page: the hero photo, faded and desaturated, behind links to four other countries in the same region and back to the map."""
-    region = j.get("region")
-    peers = sorted((c for c, x in ctx["jur"].items() if x.get("type") == "country" and x.get("region") == region and c != jid), key=lambda c: ctx["jur"][c]["name"])
-    if region and peers:
-        after = [c for c in peers if ctx["jur"][c]["name"] > j["name"]] + [c for c in peers if ctx["jur"][c]["name"] <= j["name"]]
-        peers = after[:4]
-    links = "".join(f'<li><a href="../../country/{c}/">{e(ctx["jur"][c]["name"])} <span aria-hidden="true">→</span></a></li>' for c in peers)
+    """End of page: the hero photo, faded and desaturated, behind links to four other countries and back to the map.
+    The four are the countries of the same UN subregion with the most recorded instruments, topped up from the wider region."""
+    jur, n = ctx["jur"], ctx["n_inst"]
+    rank = lambda cs: sorted(cs, key=lambda c: (-n.get(c, 0), jur[c]["name"]))
+    countries = [c for c, x in jur.items() if x.get("type") == "country" and c != jid]
+    sub = SUBREGION.get(jid)
+    peers = rank([c for c in countries if SUBREGION.get(c) == sub])[:4]
+    label = sub or j.get("region") or ""
+    if len(peers) < 4 and j.get("region"):
+        peers += rank([c for c in countries if jur[c].get("region") == j["region"] and c not in peers])[:4 - len(peers)]
+        region = "the Americas" if j["region"] == "Americas" else j["region"]
+        label = f"{sub}, then the rest of {region}" if sub else region
+    links = "".join(f'<li><a href="../../country/{c}/">{e(jur[c]["name"])} <span class="cl-n">{n.get(c, 0)}</span></a></li>' for c in peers)
     bg = f'<div class="closing-bg" aria-hidden="true"><img src="../../{e(hero_img["file_small"])}" alt="" loading="lazy" decoding="async" width="{hero_img["width_small"]}" height="{round(hero_img["width_small"] * 9 / 16)}"></div>' if hero_img else ""
     return (f'<section class="closing" aria-label="Explore other countries">{bg}<div class="closing-in"><h2>Explore other countries</h2>'
-            + (f'<p class="closing-sub">More from {e(region)}</p><ul class="closing-links">{links}</ul>' if links else "")
+            + (f'<p class="closing-sub">The most-documented countries in {e(label)} (number of instruments)</p><ul class="closing-links">{links}</ul>' if links else "")
             + '<p class="closing-map"><a href="../../" data-keep-query>← Back to the world map</a></p></div></section>')
 
 
@@ -608,7 +615,8 @@ def write_all(D, recs, out, flags):
         c108_pending = set()
     ctx = {"jur": jur, "inherited": inherited, "members": members, "cets": cets, "eu_cets": eu_cets, "c108": c108, "c108_pending": c108_pending, "oecd": oecd,
            "orgs": {o["id"]: o for o in D["organizations"]}, "srcs": {s["id"]: s for s in D["sources"]},
-           "today": D["meta"].get("build_date") or dt.date.today().isoformat(), "photos": load_photos()}
+           "today": D["meta"].get("build_date") or dt.date.today().isoformat(), "photos": load_photos(),
+           "n_inst": collections.Counter(i["jurisdiction_id"] for i in D["instruments"])}
     (out / "assets").mkdir(parents=True, exist_ok=True)
     for f in ("country.css", "country.js", "analysis.css", "analysis.js", "timeline.js", "suggest.js"):
         (out / "assets" / f).write_text((ROOT / "site" / f).read_text(encoding="utf-8"), encoding="utf-8")
