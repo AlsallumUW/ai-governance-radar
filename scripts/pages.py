@@ -313,6 +313,9 @@ def closing_strip(jid, j, ctx, hero_img):
     are ranked by number of recorded instruments; countries with none are used only if four cannot be found otherwise."""
     jur, n, mem = ctx["jur"], ctx["n_inst"], ctx["members"]
     sub = SUBREGION.get(jid)
+    # never link Israel and GCC / ALECSO member pages to each other in the automatic choice
+    arab = set(mem.get("GCC", ())) | set(mem.get("ALECSO", ()))
+    blocked = arab if jid == "ISR" else ({"ISR"} if jid in arab else set())
     groups = [(b, jur[b].get("short_name") or b, set(mem.get(b, ()))) for b in ("GCC", "ALECSO", "ASEAN", "AU", "EU") if jid in mem.get(b, ())]
     if sub: groups.append(("sub", sub, {c for c, r in SUBREGION.items() if r == sub}))
     groups += [(b, jur[b].get("short_name") or b, set(mem.get(b, ()))) for b in ("ICESCO", "COE", "OECD", "G20", "G7") if jid in mem.get(b, ())]
@@ -320,10 +323,12 @@ def closing_strip(jid, j, ctx, hero_img):
     for allow_zero in (False, True):
         for key, name, cs in groups:
             if len(peers) == 4: break
-            cand = sorted((c for c in cs if c != jid and c not in peers and jur.get(c, {}).get("type") == "country" and (allow_zero or n.get(c, 0) > 0)),
+            cand = sorted((c for c in cs if c != jid and c not in peers and c not in blocked and jur.get(c, {}).get("type") == "country" and (allow_zero or n.get(c, 0) > 0)),
                           key=lambda c: (-n.get(c, 0), jur[c]["name"]))[:4 - len(peers)]
             if cand: peers += cand; used.append(name) if name not in used else None
     label = "From " + ", then ".join(f"{u} (UN subregion)" if u == sub else f"{u} members" for u in used) if used else ""
+    ov = ctx["explore_overrides"].get(jid)
+    if ov: peers, label = ov["countries"], f'From {ov["group"]}'
     links = "".join(f'<li><a href="../../country/{c}/">{e(jur[c]["name"])}' + (f' <span class="cl-n" title="instruments recorded">{n[c]}</span>' if n.get(c) else "") + '</a></li>' for c in peers)
     bg = f'<div class="closing-bg" aria-hidden="true"><img src="../../{e(hero_img["file_small"])}" alt="" loading="lazy" decoding="async" width="{hero_img["width_small"]}" height="{round(hero_img["width_small"] * 9 / 16)}"></div>' if hero_img else ""
     return (f'<section class="closing" aria-label="Explore other countries">{bg}<div class="closing-in"><h2>Explore other countries</h2>'
@@ -621,6 +626,7 @@ def write_all(D, recs, out, flags):
     ctx = {"jur": jur, "inherited": inherited, "members": members, "cets": cets, "eu_cets": eu_cets, "c108": c108, "c108_pending": c108_pending, "oecd": oecd,
            "orgs": {o["id"]: o for o in D["organizations"]}, "srcs": {s["id"]: s for s in D["sources"]},
            "today": D["meta"].get("build_date") or dt.date.today().isoformat(), "photos": load_photos(),
+           "explore_overrides": {k: v for k, v in json.loads((ROOT / "data/explore_overrides.json").read_text(encoding="utf-8")).items() if not k.startswith("_")} if (ROOT / "data/explore_overrides.json").exists() else {},
            "n_inst": collections.Counter(i["jurisdiction_id"] for i in D["instruments"])}
     (out / "assets").mkdir(parents=True, exist_ok=True)
     for f in ("country.css", "country.js", "analysis.css", "analysis.js", "timeline.js", "suggest.js"):
