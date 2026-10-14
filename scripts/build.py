@@ -101,6 +101,10 @@ FONT = ('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="p
         '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap">')
 
 
+# summaries and status notes are published text in their own language: dir="auto" lets an English one sit and align left
+DATA_DIR = re.compile(r'(<p class="(?:inst-sum|inst-status)")')
+
+
 def build_ar(D, map_html, flags):
     """dist/ar/: every page again, generated with Arabic templates and dates, then the remaining interface text translated.
     Photos, data files and assets are shared with the English site (links are pointed back to them in localise())."""
@@ -111,7 +115,7 @@ def build_ar(D, map_html, flags):
         n = pages.write_all(D, load_all(), AR, flags, mirror=True)
         for page in AR.rglob("*.html"):
             if page.name == "index.html" and page.parent == AR: continue
-            page.write_text(i18n.translate_html(page.read_text(encoding="utf-8")), encoding="utf-8")
+            page.write_text(DATA_DIR.sub(r'\1 dir="auto"', i18n.translate_html(page.read_text(encoding="utf-8"))), encoding="utf-8")
     finally:
         i18n.LANG = "en"
     if (AR / "assets").is_dir() and not any((AR / "assets").iterdir()): (AR / "assets").rmdir()
