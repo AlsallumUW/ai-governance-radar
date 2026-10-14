@@ -279,9 +279,12 @@ def img_tag(im, cls="", lazy=False, sizes="100vw"):
 
 
 def credit(im):
+    """Credit line. CC BY / CC BY-SA credits name the changes made ("cropped and resized"), as the licences require."""
+    lic = e(im["license"])
+    if im.get("license_url"): lic = f'<a href="{e(im["license_url"])}" rel="license noopener" target="_blank">{lic}</a>'
+    if im.get("changes"): lic += f' ({e(im["changes"])})'
     return (f'<span class="photo-credit">Photo: <a href="{e(im["commons_url"])}" rel="noopener" target="_blank">{e(im["author"])}</a>, '
-            f'<a href="{e(im["license_url"])}" rel="license noopener" target="_blank">{e(im["license"])}</a>, via Wikimedia Commons</span>') if im.get("license_url") else (
-            f'<span class="photo-credit">Photo: <a href="{e(im["commons_url"])}" rel="noopener" target="_blank">{e(im["author"])}</a>, {e(im["license"])}, via Wikimedia Commons</span>')
+            f'{lic}, via Wikimedia Commons</span>')
 
 
 def photo_break(im):
@@ -465,7 +468,7 @@ def body_page(b, D, rec, flags, ctx):
     H = [head(title, desc, canon), f'<body class="cp" data-jid="{e(bid)}" data-build="{e(D["meta"].get("build_date") or "")}">',
          topbar(secs, bar_ident(b.get("short_name") or b["name"], stats)), '<main id="main">']
     # no logos (trademarks): the hero shows the member states on a world map
-    H.append(hero("Regional / international body", f'<h1>{e(b["name"])}</h1>', stats, art=geo.world(members, b["name"]) if members else None, kind="map"))
+    H.append(hero("Regional / international body", f'<h1>{e(b["name"])}</h1>', stats, art=geo.world(members, b["name"], body=bid) if members else None, kind="map"))
     H.append('<div class="page layout">' + rail(secs) + '<div class="content">')
     H.append(f'<section class="intro" aria-label="About the counts"><p class="stats-note">{COUNT_NOTE} Instruments are stored once for the body and listed on each country page they apply to.</p>'
              + f'<p class="hero-links"><a href="../../timeline/?body={e(bid)}">See this body and its members on the timeline →</a><a href="../../analysis/">Global analysis →</a><a href="../../suggest/?country={e(bid)}">Suggest an update →</a></p></section>')
@@ -537,7 +540,8 @@ def credits_page(D, ctx):
          '<body class="cp credits"><header class="topnav"><a class="back" id="backToMap" href="../">← World map</a><span class="site">AI Governance Radar</span></header>',
          '<main class="page"><header class="hero"><p class="eyebrow">About the photos</p><h1>Photo credits</h1>'
          f'<p class="section-lede">{n_img} photos on {sum(1 for c in photos.values() if c.get("hero"))} country pages. All come from Wikimedia Commons under a public-domain, CC0, CC BY or CC BY-SA licence, '
-         'were resized and converted to WebP for this site, and are served from this site (not hotlinked). Each photo carries its own credit line where it appears. '
+         'were cropped to landscape, resized and converted to WebP for this site, and are served from this site (not hotlinked). Each photo carries its own credit line where it appears. '
+         'Images under CC BY-SA are shared here under the same licence; changes: cropped and resized to WebP. '
          'Regional and international bodies are shown with a map of their members rather than a logo.</p></header>'
          '<div class="table-wrap"><table class="data-table plain-table credits-table"><thead><tr><th scope="col">Country</th><th scope="col">Used as</th><th scope="col">What it shows</th>'
          '<th scope="col">Author</th><th scope="col">Licence</th><th scope="col">Commons file</th></tr></thead><tbody>' + "".join(rows) + '</tbody></table></div>']

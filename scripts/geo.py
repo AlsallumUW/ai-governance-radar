@@ -205,8 +205,44 @@ def silhouette(iso, name="", W=1200, H=640):
             f'<path d="{d}"/></svg>')
 
 
-def world(highlight, name="", W=960, H=470):
-    """Equal Earth world map, members highlighted (body pages)."""
+# Territory rules for the body maps: one list. Each entry names a part of a member's outline in world.topo.json
+# (matched by the ring's centre falling in `box` = lon0, lat0, lon1, lat1).
+#   "overseas_region": legally part of the state but overseas; highlighted only for the bodies in `included_in`
+#                      (EU outermost regions, TFEU art. 349/355(1)); every other body shows main territory only.
+#   "dependency":      not part of the member's main territory and outside these bodies; never highlighted.
+# Greenland, Faroe Islands, New Caledonia, French Polynesia, Wallis and Futuna, Saint Pierre and Miquelon,
+# Saint Barthélemy, Aruba, Curaçao, Sint Maarten and UK overseas territories are not drawn as part of any
+# member in world.topo.json, so they can never be highlighted; Caribbean Netherlands and Clipperton are, hence listed.
+TERRITORIES = [
+    {"iso": "FRA", "name": "French Guiana", "box": (-55, 1, -51, 6.5), "status": "overseas_region", "included_in": ["EU"]},
+    {"iso": "FRA", "name": "Guadeloupe", "box": (-62, 15.8, -60.9, 16.6), "status": "overseas_region", "included_in": ["EU"]},
+    {"iso": "FRA", "name": "Martinique", "box": (-61.3, 14.3, -60.7, 15), "status": "overseas_region", "included_in": ["EU"]},
+    {"iso": "FRA", "name": "Saint-Martin", "box": (-63.2, 18, -62.9, 18.2), "status": "overseas_region", "included_in": ["EU"]},
+    {"iso": "FRA", "name": "Mayotte", "box": (44.9, -13.1, 45.4, -12.5), "status": "overseas_region", "included_in": ["EU"]},
+    {"iso": "FRA", "name": "Réunion", "box": (55.1, -21.5, 56, -20.8), "status": "overseas_region", "included_in": ["EU"]},
+    {"iso": "PRT", "name": "Azores", "box": (-32, 36.5, -24.5, 40), "status": "overseas_region", "included_in": ["EU"]},
+    {"iso": "PRT", "name": "Madeira", "box": (-17.5, 32.3, -16, 33.2), "status": "overseas_region", "included_in": ["EU"]},
+    {"iso": "ESP", "name": "Canary Islands", "box": (-18.5, 27.5, -13, 29.6), "status": "overseas_region", "included_in": ["EU"]},
+    {"iso": "FRA", "name": "Clipperton Island", "box": (-110, 9.5, -108.5, 11), "status": "dependency"},
+    {"iso": "NLD", "name": "Caribbean Netherlands (Bonaire, Sint Eustatius, Saba)", "box": (-69, 11.8, -62.8, 18), "status": "dependency"},
+    {"iso": "NOR", "name": "Bouvet Island", "box": (2.5, -55, 4.5, -54), "status": "dependency"},
+    {"iso": "NZL", "name": "Tokelau", "box": (-173, -10, -171, -8), "status": "dependency"},
+]
+
+
+def _member_part(cid, ring, body):
+    """True if this ring of member `cid` is highlighted on `body`'s map (see TERRITORIES)."""
+    if not ring: return False
+    x = sum(p[0] for p in ring) / len(ring); y = sum(p[1] for p in ring) / len(ring)
+    for t in TERRITORIES:
+        b = t["box"]
+        if t["iso"] == cid and b[0] <= x <= b[2] and b[1] <= y <= b[3]:
+            return t["status"] == "overseas_region" and body in t.get("included_in", [])
+    return True
+
+
+def world(highlight, name="", W=960, H=470, body=None):
+    """Equal Earth world map, members highlighted (body pages). Overseas parts follow TERRITORIES."""
     S = _shapes(); hl = set(highlight)
     # Equal Earth projection (Šavrič, Patterson, Jenny 2018)
     A1, A2, A3, A4 = 1.340264, -0.081106, 0.000893, 0.003796; M = math.sqrt(3) / 2
@@ -217,16 +253,21 @@ def world(highlight, name="", W=960, H=470):
         x = l * math.cos(t) / (M * (A1 + 3 * A2 * t2 + t6 * (7 * A3 + 9 * A4 * t2)))
         y = t * (A1 + A2 * t2 + t6 * (A3 + A4 * t2))
         return x, y
-    xmax = ee(180, 0)[0]; ymax = ee(0, 90)[1]
+    xmax = ee(180, 0)[0]
     s = W / (2 * xmax)
     top = ee(0, 84)[1] * s; bot = -ee(0, -58)[1] * s
     Hc = top + bot
     px = lambda lon, lat: (W / 2 + ee(lon, lat)[0] * s, top - ee(lon, lat)[1] * s)
     land, mem = [], []
     for cid, rings in S.items():
-        d = _path([[px(*p) for p in r] for r in rings], 0.6, 0.4, nd=1)
-        if not d: continue
-        (mem if cid in hl else land).append(d)
+        if cid in hl:
+            on = [r for r in rings if _member_part(cid, r, body)]; off = [r for r in rings if not _member_part(cid, r, body)]
+        else:
+            on, off = [], rings
+        d = _path([[px(*p) for p in r] for r in off], 0.6, 0.4, nd=1)
+        if d: land.append(d)
+        d = _path([[px(*p) for p in r] for r in on], 0.6, 0.05, nd=1)  # keep small member islands visible
+        if d: mem.append(d)
     label = f"World map: member states of {name} highlighted" if name else "World map"
     return (f'<svg class="worldmap" viewBox="0 0 {W} {Hc:.0f}" role="img" aria-label="{label}">'
             f'<path class="wm-land" d="{"".join(land)}"/><path class="wm-me" d="{"".join(mem)}"/></svg>')

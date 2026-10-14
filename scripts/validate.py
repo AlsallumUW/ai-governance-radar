@@ -29,6 +29,7 @@ def host(u):
 
 
 PHOTO_LICENCES = re.compile(r"^(Public domain|CC0 1\.0|CC BY(-SA)? \d\.\d( [a-z]{2,3})?)$")
+PHOTO_SUBJECTS = {"parliament", "monument", "heritage_site", "landscape", "skyline"}
 PHOTO_FIELDS = ["file", "file_small", "width", "height", "title", "author", "license", "license_url", "commons_url", "shows", "alt"]
 
 
@@ -49,6 +50,10 @@ def check_photos():
             for f in PHOTO_FIELDS:
                 if f not in im or (im[f] in ("", None) and f != "license_url"): E(f"{im.get('file')} missing {f}")
             if not PHOTO_LICENCES.match(im.get("license") or ""): E(f"{im.get('file')} licence not allowed: {im.get('license')}")
+            if (im.get("license") or "").startswith("CC BY") and "cropped and resized" not in (im.get("changes") or ""):
+                E(f"{im.get('file')} is {im.get('license')} but has no modification note (changes: \"cropped and resized\")")
+            if im.get("subject_type") not in PHOTO_SUBJECTS: E(f"{im.get('file')} subject_type must be one of {sorted(PHOTO_SUBJECTS)}")
+            if not (im.get("why") or "").strip(): E(f"{im.get('file')} missing why")
             if not (im.get("commons_url") or "").startswith("https://commons.wikimedia.org/wiki/File:"): E(f"{im.get('file')} commons_url is not a Commons file page")
             for f, cap in (("file", 200_000), ("file_small", 80_000)):
                 q = site / (im.get(f) or "")
