@@ -91,6 +91,45 @@ def check_explore_overrides():
     return errs
 
 
+def check_i18n():
+    """Arabic interface (site/i18n/ar.json) against the approved terminology (research/aigr_arabic_terms.csv, the only authority for its terms)."""
+    import json
+    from common import ROOT
+    errs = []
+    csv_p, ar_p = ROOT / "research/aigr_arabic_terms.csv", ROOT / "site/i18n/ar.json"
+    if not ar_p.exists(): return errs
+    import i18n
+    terms = i18n.terms()
+    if not terms: return [f"{csv_p.name}: no terms"]
+    d = json.loads(ar_p.read_text(encoding="utf-8"))
+    E = lambda m: errs.append(f"i18n: {m}")
+    for f in (csv_p, ar_p, ROOT / "site/i18n/runtime.js"):
+        if re.search("[«»]", f.read_text(encoding="utf-8")): E(f"{f.name} uses «» quotation marks (use \"\")")
+    low = {k.lower(): v for k, v in terms.items()}
+    for en, ar in d.get("strings", {}).items():           # a CSV term used as a whole string must be the CSV's Arabic
+        if en.lower() in low and ar != low[en.lower()]: E(f"strings['{en}'] = '{ar}', but the CSV term is '{low[en.lower()]}'")
+        a, b = set(re.findall(r"\{(\w+)\}", en)), set(re.findall(r"\{(\w+)\}", ar))
+        if a != b: E(f"strings['{en[:60]}']: placeholders {sorted(a)} vs {sorted(b)}")
+    names = {"EU": "European Union", "COE": "Council of Europe", "GCC": "Gulf Cooperation Council (GCC)", "AU": "African Union"}
+    for k, ar in d.get("bodies", {}).items():
+        t = terms.get(names.get(k, k))
+        if t and ar != t: E(f"bodies['{k}'] = '{ar}', but the CSV term is '{t}'")
+    for rx, rep in d.get("patterns", []):
+        try: n = re.compile(rx).groups
+        except re.error as e: E(f"pattern {rx!r}: {e}"); continue
+        bad = [g for g in re.findall(r"\{[td]?(\d)\}", rep) if int(g) > n]
+        if bad: E(f"pattern {rx!r} refers to missing groups {bad}")
+    countries = {q.stem for q in (DATA / "countries").glob("*.json")}
+    miss = sorted(countries - set(d.get("countries", {})))
+    if miss: E(f"countries without an Arabic name: {miss}")
+    order = set(d.get("sort_order", []))
+    unsorted = sorted(n for n in list(d.get("countries", {}).values()) + list(d.get("bodies", {}).values()) if n not in order)
+    if unsorted: E(f"names missing from sort_order (rerun the strings generator): {unsorted}")
+    for k, v in (d.get("country_overrides") or {}).items():
+        if d["countries"].get(k) != v: E(f"country override {k} not applied")
+    return errs
+
+
 def check(only=None):
     cats = set(load(DATA / "meta.json")["categories"])
     errs, warns, ids, srcids = [], [], Counter(), Counter()
@@ -159,6 +198,7 @@ def check(only=None):
         e2, w2 = check_photos()
         errs += e2; warns += w2
         errs += check_explore_overrides()
+        errs += check_i18n()
         from next_batch import QUEUE, check_queue
         errs += check_queue(load(QUEUE), [p.stem for p in (DATA / "countries").glob("*.json")])
     return errs, warns

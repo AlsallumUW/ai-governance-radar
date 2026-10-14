@@ -10,6 +10,7 @@ sorting, filters, chart/table toggles, tooltips and the per-country export.
 import collections, datetime as dt, html, json, os, re, shutil
 from common import ROOT
 import geo
+import i18n
 from subregions import SUBREGION
 
 SITE_URL = os.environ.get("RADAR_SITE_URL", "https://alsallumuw.github.io/ai-governance-radar/").rstrip("/") + "/"
@@ -74,8 +75,11 @@ def fmt_date(d):
     if not d: return ""
     try:
         if len(d) == 4: return d
-        if len(d) == 7: return dt.date(int(d[:4]), int(d[5:7]), 1).strftime("%b %Y")
-        x = dt.date.fromisoformat(d[:10]); return f"{x.day} {x.strftime('%b %Y')}"
+        if len(d) == 7:
+            x = dt.date(int(d[:4]), int(d[5:7]), 1)
+            return f"{i18n.MONTHS[x.month - 1]} {x.year}" if i18n.LANG == "ar" else x.strftime("%b %Y")
+        x = dt.date.fromisoformat(d[:10])
+        return f"{x.day} {i18n.MONTHS[x.month - 1]} {x.year}" if i18n.LANG == "ar" else f"{x.day} {x.strftime('%b %Y')}"
     except ValueError:
         return d
 
@@ -195,15 +199,33 @@ def coverage_grid(cats, audit, rows):
 
 
 # ---------------------------------------------------------------- page fragments
+AR_SCRIPT = re.compile(r"[\u0600-\u06FF]")
+
+
+def inst_titles(i, title, orig):
+    """English pages: the English title, then the official title if it differs. Arabic pages: the official title as
+    published; if it is not in Arabic, the English title below it and, once translated (phase 4b part B), an Arabic
+    machine translation marked as such."""
+    if i18n.LANG != "ar":
+        return f'<h3 class="inst-title">{e(title)}</h3>' + (f'<p class="inst-orig" dir="auto" lang="{e(i.get("language") or "")}">{e(orig)}</p>' if orig else "")
+    official = i.get("official_title") or title
+    h = f'<h3 class="inst-title" dir="auto" lang="{e(i.get("language") or "")}">{e(official)}</h3>'
+    if not AR_SCRIPT.search(official or ""):
+        if i.get("english_title") and i["english_title"] != official: h += f'<p class="inst-orig" dir="ltr" lang="en">{e(i["english_title"])}</p>'
+        mt = i18n.content(i["id"], "title")
+        if mt: h += f'<p class="inst-mt">{e(mt)} <span class="mt-label">{e(i18n.T("Machine translation"))}</span></p>'
+    return h
+
+
 def inst_item(i, orgs, srcs, cats, regional_from=None):
     title = i.get("english_title") or i.get("official_title")
     orig = i.get("official_title") if i.get("official_title") and i.get("official_title") != title else None
     issuer = i.get("issuing_authority") or orgs.get(i.get("organization_id"), {}).get("name") or i.get("publisher_name")
     st = i.get("legal_status"); src = srcs.get(i.get("source_id"), {})
     dates = []
-    if i.get("publication_date"): dates.append(f'Published <time datetime="{e(i["publication_date"])}">{e(fmt_date(i["publication_date"]))}</time>')
-    if i.get("effective_date"): dates.append(f'Effective <time datetime="{e(i["effective_date"])}">{e(fmt_date(i["effective_date"]))}</time>')
-    if i.get("last_amended_date"): dates.append(f'Amended {e(fmt_date(i["last_amended_date"]))}')
+    if i.get("publication_date"): dates.append(i18n.T("Published {date}", date=f'<time datetime="{e(i["publication_date"])}">{e(fmt_date(i["publication_date"]))}</time>'))
+    if i.get("effective_date"): dates.append(i18n.T("Effective {date}", date=f'<time datetime="{e(i["effective_date"])}">{e(fmt_date(i["effective_date"]))}</time>'))
+    if i.get("last_amended_date"): dates.append(i18n.T("Amended {date}", date=e(fmt_date(i["last_amended_date"]))))
     tags = [f'<span class="tag tag-{kind(i)}">{e(STATUS_LABEL.get(st) or (st or "Status not recorded").replace("_", " ").capitalize())}</span>']
     if i.get("lifecycle") in LIFE: tags.append(f'<span class="tag">{e(LIFE[i["lifecycle"]])}</span>')
     if i.get("government_level") in ("subnational", "local") and i.get("subnational_unit"): tags.append(f'<span class="tag">{e(i["subnational_unit"])}</span>')
@@ -215,7 +237,7 @@ def inst_item(i, orgs, srcs, cats, regional_from=None):
     catnames = " · ".join(cats.get(c, c) for c in i.get("categories", []))
     return (f'<article class="inst" data-date="{e(date_key(i.get("publication_date")))}" data-weight="{WEIGHT.get(st, 9)}" data-type="{TYPE_OF.get(st, "guidance")}"'
             f' data-cats="{e(" ".join(i.get("categories", [])))}" data-cat="{e(i.get("category") or "")}" data-text="{e((title + " " + (orig or "") + " " + (issuer or "")).lower())}">'
-            f'<h3 class="inst-title">{e(title)}</h3>' + (f'<p class="inst-orig" dir="auto" lang="{e(i.get("language") or "")}">{e(orig)}</p>' if orig else "")
+            + inst_titles(i, title, orig)
             + f'<p class="inst-meta">{e(issuer)}{" · " if issuer and dates else ""}{" · ".join(dates)}</p>'
             + f'<p class="tags">{"".join(tags)}</p>'
             + (f'<p class="inst-sum">{e(i.get("summary"))}</p>' if i.get("summary") else "")
@@ -505,7 +527,7 @@ def body_page(b, D, rec, flags, ctx):
     bid = b["id"]; cats = D["categories"]
     rows = [i for i in D["instruments"] if i["jurisdiction_id"] == bid]
     narr = D["narratives"].get(bid) or {}
-    members = sorted(ctx["members"].get(bid, ()), key=lambda c: ctx["jur"].get(c, {}).get("name", c))
+    members = sorted(ctx["members"].get(bid, ()), key=lambda c: i18n.name_key(ctx["jur"].get(c, {}).get("name", c)))
     canon = f"{SITE_URL}body/{bid}/"
     title = f"{b['name']}: AI governance instruments | AI Governance Radar"
     desc = first_sentence(narr.get("summary")) or f"Instruments of the {b['name']} recorded on the AI Governance Radar, and the countries they apply to."
@@ -528,7 +550,7 @@ def body_page(b, D, rec, flags, ctx):
     ov = '<section id="overview" class="block prose"><h2>Overview</h2>' + ("".join(f'<p>{e(p)}</p>' for p in re.split(r"\n\s*\n", narr.get("summary") or "") if p.strip())
                                                                           or f'<p>{e(b.get("overview") or "")}</p>')
     if bid == "OECD" and ctx["oecd"]:
-        adh = sorted(ctx["oecd"].items(), key=lambda kv: (kv[1].get("member") is not True, ctx["jur"].get(kv[0], {}).get("name", kv[0])))
+        adh = sorted(ctx["oecd"].items(), key=lambda kv: (kv[1].get("member") is not True, i18n.name_key(ctx["jur"].get(kv[0], {}).get("name", kv[0]))))
         link = lambda c: f'<a href="../../{"body" if ctx["jur"].get(c, {}).get("type") != "country" else "country"}/{c}/">{e(ctx["jur"].get(c, {}).get("name", c))}</a>'
         ov += ('<h3 class="minor">Adherents to the AI Recommendation</h3><table class="data-table plain-table"><thead><tr><th scope="col">Adherent</th><th scope="col">Status</th><th scope="col">Adhered</th></tr></thead><tbody>'
                + "".join(f'<tr><th scope="row">{link(c)}</th><td>{"OECD member" if a.get("member") else "Non-member"}</td><td>{e(fmt_date(a.get("date")) or "Date not listed")}</td></tr>' for c, a in adh)
@@ -577,7 +599,7 @@ def credits_page(D, ctx):
     """/credits/: every photo used on the site, with author, licence and a link to its Commons page."""
     photos = ctx["photos"]; jur = ctx["jur"]
     rows, fallback = [], []
-    for cid in sorted((c for c, j in jur.items() if j.get("type") == "country"), key=lambda c: jur[c].get("name", c)):
+    for cid in sorted((c for c, j in jur.items() if j.get("type") == "country"), key=lambda c: i18n.name_key(jur[c].get("name", c))):
         ph = photos.get(cid) or {}
         ims = [(ROLE_LABEL[r], ph[r]) for r in ROLE_LABEL if ph.get(r)]
         if not ph.get("hero"): fallback.append(cid)
@@ -603,7 +625,8 @@ def credits_page(D, ctx):
     return "".join(H)
 
 
-def write_all(D, recs, out, flags):
+def write_all(D, recs, out, flags, mirror=False):
+    """mirror=True: a language mirror (dist/ar/) that shares the photos and assets of the main site instead of copying them."""
     jur = {j["id"]: j for j in D["jurisdictions"]}
     inst = {i["id"]: i for i in D["instruments"]}
     inherited = {}
@@ -629,10 +652,10 @@ def write_all(D, recs, out, flags):
            "explore_overrides": {k: v for k, v in json.loads((ROOT / "data/explore_overrides.json").read_text(encoding="utf-8")).items() if not k.startswith("_")} if (ROOT / "data/explore_overrides.json").exists() else {},
            "n_inst": collections.Counter(i["jurisdiction_id"] for i in D["instruments"])}
     (out / "assets").mkdir(parents=True, exist_ok=True)
-    for f in ("country.css", "country.js", "analysis.css", "analysis.js", "timeline.js", "suggest.js"):
+    for f in () if mirror else ("country.css", "country.js", "analysis.css", "analysis.js", "timeline.js", "suggest.js"):
         (out / "assets" / f).write_text((ROOT / "site" / f).read_text(encoding="utf-8"), encoding="utf-8")
     # photos (site/img) are copied as they are; never hotlinked
-    if (ROOT / "site/img").is_dir():
+    if (ROOT / "site/img").is_dir() and not mirror:
         shutil.copytree(ROOT / "site/img", out / "img", dirs_exist_ok=True)
     n = 0
     for rec in recs.values():

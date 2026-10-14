@@ -1,0 +1,27 @@
+/* Arabic pages only (UX phase 4b): IBM Plex Sans Arabic, Arabic line height, no letter-spacing, charts kept left to right */
+html[lang="ar"] body,html[lang="ar"] button,html[lang="ar"] input,html[lang="ar"] select,html[lang="ar"] textarea{font-family:"IBM Plex Sans Arabic",system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif}
+html[lang="ar"] *{letter-spacing:0!important}
+html[lang="ar"] body.cp{line-height:1.85}
+html[lang="ar"] .prose p{line-height:1.95}
+html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] h3{line-height:1.35}
+html[lang="ar"] .eyebrow,html[lang="ar"] .minor,html[lang="ar"] .label{text-transform:none}
+/* charts and the map keep a left-to-right time axis and layout; Western digits are used throughout */
+html[lang="ar"] svg,html[lang="ar"] .fig-chart,html[lang="ar"] .tl-axis,html[lang="ar"] .tl-brush,html[lang="ar"] #mapSvg{direction:ltr}
+html[lang="ar"] svg text{unicode-bidi:plaintext}
+/* labels written in CSS */
+html[lang="ar"] details.leads>summary::after{content:"عرض"}
+html[lang="ar"] details.leads[open]>summary::after{content:"إخفاء"}
+@media (max-width:900px){html[lang="ar"] .topnav.stuck .back::before{content:"→"}}
+/* text that is English inside Arabic pages (official titles, names) reads in its own direction */
+html[lang="ar"] [lang="en"],html[lang="ar"] .inst-orig{unicode-bidi:isolate}
+/* data text (official titles, summaries, names) keeps its own direction, so English paragraphs read correctly until translated */
+html[lang="ar"] .inst-sum,html[lang="ar"] .inst-status,html[lang="ar"] .inst-meta,html[lang="ar"] .prose p,html[lang="ar"] .plain li,html[lang="ar"] .lead-list li,
+html[lang="ar"] .pp-cap,html[lang="ar"] .pb-cap span,html[lang="ar"] .hero-cap,html[lang="ar"] .tl-card p,html[lang="ar"] .tl-card h4,html[lang="ar"] .pl-title,html[lang="ar"] .credits-table td{unicode-bidi:plaintext}
+/* machine translation label */
+.inst-mt{margin:2px 0 6px;color:var(--ink-2)}
+.mt-label{display:inline-block;margin-inline-start:6px;padding:0 7px;border-radius:999px;background:var(--tag);color:var(--muted);font-size:11px;font-weight:600;vertical-align:.1em}
+/* Arabic legend labels run longer than the English ones: let them wrap */
+html[lang="ar"] .legend{flex-wrap:wrap;row-gap:4px}
+html[lang="ar"] .legend span{white-space:normal}
+/* an English summary or note on an Arabic page: aligned to the left edge of its column, like the English title above it */
+html[lang="ar"] .inst-sum:dir(ltr),html[lang="ar"] .inst-status:dir(ltr){margin-right:auto;text-align:left}
