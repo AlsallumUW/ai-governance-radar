@@ -7,7 +7,7 @@ Four photos per country, each a different subject:
 - **City**: the capital or a major city, with its landmarks visible.
 - **Heritage**: a UNESCO World Heritage site or a natural landmark the country is proud of.
 
-Editorial rules: no identifiable people (small, distant figures are accepted only where the landmark clearly dominates); no watermarks, collages or heavy filters; no politically disputed sites as heroes; no conflict damage, military, police, protests, flags-only images or maps.
+Editorial rules: no identifiable people (small, distant figures are accepted only where the landmark clearly dominates); no watermarks, collages or heavy filters; no politically disputed sites (no Jerusalem sites for either Israel or Palestine); no conflict damage, military, police, protests, flags-only images or maps.
 Where Commons has no image that meets the bar, the slot is left empty and the reason is given below the table (*—*).
 
 | ISO | Country | Hero | Government | City | Heritage / landscape |
@@ -94,7 +94,7 @@ Where Commons has no image that meets the bar, the slot is left empty and the re
 | IRN | Iran | Persepolis | Islamic Consultative Assembly, Tehran | Tehran and the Alborz | Naqsh-e Jahan Square, Isfahan |
 | IRQ | Iraq | Ziggurat of Ur | Baghdad Convention Center | Baghdad and the Tigris | Erbil Citadel |
 | ISL | Iceland | Kirkjufell | Alþingishúsið, Reykjavík | Reykjavík | Þingvellir National Park |
-| ISR | Israel | Masada | Knesset building, Jerusalem | Tel Aviv skyline | Bahá'í Gardens, Haifa |
+| ISR | Israel | Masada | — | Tel Aviv skyline | Bahá'í Gardens, Haifa |
 | ITA | Italy | Colosseum, Rome | Palazzo Montecitorio, Rome | Florence and the Duomo | Tre Cime di Lavaredo, Dolomites |
 | JAM | Jamaica | Dunn's River Falls, Ocho Rios | — | Montego Bay | Blue Mountains |
 | JOR | Jordan | Al-Khazneh, Petra | Parliament of Jordan, Amman | Amman skyline | Wadi Rum |
@@ -208,7 +208,7 @@ Where Commons has no image that meets the bar, the slot is left empty and the re
 | ZMB | Zambia | Victoria Falls from the air | — | Downtown Lusaka | South Luangwa National Park |
 | ZWE | Zimbabwe | Great Zimbabwe | New Parliament Building, Mount Hampden | Harare | Mana Pools National Park |
 
-## Roles without a photo (37 slots in 37 countries)
+## Roles without a photo (38 slots in 38 countries)
 
 Every country has at least three photos.
 
@@ -224,6 +224,7 @@ Every country has at least three photos.
 | GIN | Guinea | city | Commons has no clear skyline of Conakry; available city views are street scenes with people |
 | GNB | Guinea-Bissau | heritage | Commons has no usable landscape-format photo of the Bijagós Archipelago (only maps and satellite images with logos) |
 | HTI | Haiti | government | Commons has no usable recent exterior photo of the National Palace or a government building in Port-au-Prince |
+| ISR | Israel | government | Israel's parliament and government sit in Jerusalem, which this site does not picture for Israel or Palestine because of its disputed status |
 | JAM | Jamaica | government | Commons has no usable exterior photo of Gordon House or Jamaica House (search results are buildings of the same name abroad) |
 | LSO | Lesotho | government | Commons has no usable exterior photo of the Royal Palace or Parliament in Maseru (only official events with people) |
 | MDV | Maldives | government | Commons has no usable exterior photo of the President's Office or People's Majlis (only official meetings with people) |
