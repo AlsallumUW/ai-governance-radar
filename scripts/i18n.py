@@ -111,10 +111,36 @@ def T(en, **kw):
     return t.format(**kw)
 
 
-def content(rid, field):
-    """Machine translation of a content field (phase 4b part B, data/i18n/ar/); None until translated."""
+def content(rid, field, en=None):
+    """Machine translation of a published text (phase 4b part B, data/i18n/ar/) on Arabic pages; None on English pages, before
+    it is translated, when it was skipped, or when the English has changed since (a stale translation is never shown)."""
     if LANG != "ar": return None
-    return _CONTENT.get(rid, {}).get(field, {}).get("ar") if isinstance(_CONTENT.get(rid, {}).get(field), dict) else None
+    entry = _CONTENT.get(rid, {}).get(field)
+    if not isinstance(entry, dict) or entry.get("ar") in (None, "", []): return None
+    if en is not None:
+        from i18n_content import src_hash
+        if entry.get("src") != src_hash(en): return None
+    return entry["ar"]
+
+
+def mt_note(anchor):
+    """The machine-translation label with a link to the English original (localise() points EN_ORIGINAL at the English page)."""
+    return (f'<p class="mt-note"><span class="mt-label">{T("Machine translation")}</span> '
+            f'<a href="EN_ORIGINAL#{anchor}" hreflang="en">{T("English original")}</a></p>')
+
+
+def change_title(c, instruments):
+    """(Arabic title of a change event, True if it is a machine translation) or (None, False). A change that carries its
+    instrument's title shows that instrument's Arabic official title, or the translation of its English title."""
+    t = content(c.get("id"), "title", c.get("title"))
+    if t: return t, True
+    i = instruments.get(c.get("instrument_id"))
+    if i and c.get("title") in (i.get("english_title"), i.get("official_title")):
+        off = i.get("official_title") or ""
+        if re.search(r"[\u0600-\u06FF]", off): return off, False
+        t = content(i["id"], "title", i.get("english_title"))
+        if t: return t, True
+    return None, False
 
 
 def _load_content():

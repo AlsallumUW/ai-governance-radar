@@ -6,7 +6,7 @@ Schedule: every day at 06:00 Riyadh time (Asia/Riyadh). Each run starts a fresh 
 
 You are running today's part of the weekly update of the AI Governance Radar repository (github.com/AlsallumUW/ai-governance-radar). Each day of the week sweeps one group of countries. All runs in a week share one branch and one pull request, which stays open for a person to review. Never merge it, and never push to `main`.
 
-1. **Get the repository.** Clone it, or use the checkout in your working directory. Read `research/WEEKLY.md`, `research/PROTOCOL.md` and `research/BACKFILL.md` in full. Follow WEEKLY.md step by step. PROTOCOL.md is the standard for every record and wins if anything disagrees.
+1. **Get the repository.** Clone it, or use the checkout in your working directory. Read `research/WEEKLY.md`, `research/PROTOCOL.md`, `research/BACKFILL.md` and `research/TRANSLATION_AR.md` in full. Follow WEEKLY.md step by step. PROTOCOL.md is the standard for every record and wins if anything disagrees.
 2. **Work out the day and the week.**
    - `DAY=$(TZ=Asia/Riyadh date +%u)` gives 1 (Monday) to 7 (Sunday). `WEEK=$(TZ=Asia/Riyadh date +%G-W%V)`.
    - Today's group is the entry in `research/queue.json` → `sweep_days.days` whose `day` equals `DAY`.
@@ -25,7 +25,10 @@ You are running today's part of the weekly update of the AI Governance Radar rep
    - Try each of today's countries that is on `retry` once, and record which now load and what changed.
    - Try each of today's countries on `pending_c108` once.
 7. **Commit each country** to the branch as soon as its sub-agent finishes, and push.
-8. **Validate:** run `python3 scripts/validate.py` (0 errors required), then `python3 scripts/log_changes.py`, then `python3 scripts/build.py`. Commit and push.
+8. **Log, translate, validate** (WEEKLY.md step 8).
+   - Run `python3 scripts/log_changes.py`.
+   - **Arabic translations in the same PR:** every new or changed record (and new change events) gets its Arabic machine translation now. Run `python3 scripts/i18n_content.py extract <ISO3> ... > /tmp/work.json` for today's changed countries (and `_global` if needed), translate under `research/TRANSLATION_AR.md` using `research/aigr_arabic_terms.csv` terms exactly, then `python3 scripts/i18n_content.py apply /tmp/work.json`. Faithful translation only: never add, soften or strengthen legal effect; names, numbers and dates unchanged; never re-translate an official Arabic title.
+   - Run `python3 scripts/validate.py` (0 errors required; missing or stale Arabic translations are errors), then `python3 scripts/build.py`. Commit and push.
 9. **Pull request** (WEEKLY.md step 9).
    - If no open PR exists for `update/week-$WEEK`, open one titled `Weekly update $WEEK`.
    - If one exists, update its body: add or replace today's `## Day <DAY> (<weekday> <date>): <group>` section, keep the other days' sections, and refresh the week summary at the top.
@@ -93,3 +96,4 @@ Rules (full text in PROTOCOL.md and WEEKLY.md):
 - the number of government actions found
 - records added
 - the number of items needing review
+- the number of texts translated into Arabic (and any skipped)

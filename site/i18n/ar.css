@@ -19,7 +19,9 @@ html[lang="ar"] .inst-sum,html[lang="ar"] .inst-status,html[lang="ar"] .inst-met
 html[lang="ar"] .pp-cap,html[lang="ar"] .pb-cap span,html[lang="ar"] .hero-cap,html[lang="ar"] .tl-card p,html[lang="ar"] .tl-card h4,html[lang="ar"] .pl-title,html[lang="ar"] .credits-table td{unicode-bidi:plaintext}
 /* machine translation label */
 .inst-mt{margin:2px 0 6px;color:var(--ink-2)}
-.mt-label{display:inline-block;margin-inline-start:6px;padding:0 7px;border-radius:999px;background:var(--tag);color:var(--muted);font-size:11px;font-weight:600;vertical-align:.1em}
+.mt-label{display:inline-block;margin-inline-start:6px;padding:0 7px;border-radius:999px;background:var(--tag,rgba(127,127,127,.16));color:var(--muted,inherit);font-size:11px;font-weight:600;line-height:1.7;vertical-align:.1em;white-space:nowrap}
+.mt-note{margin:6px 0 0;font-size:13px;color:var(--muted,inherit)}.mt-note .mt-label{margin-inline-start:0;margin-inline-end:6px}
+.hero-cap .mt-label,.pb-cap .mt-label{background:rgba(0,0,0,.35);color:inherit}
 /* Arabic legend labels run longer than the English ones: let them wrap */
 html[lang="ar"] .legend{flex-wrap:wrap;row-gap:4px}
 html[lang="ar"] .legend span{white-space:normal}

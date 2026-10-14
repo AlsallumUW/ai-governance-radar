@@ -212,7 +212,7 @@ def inst_titles(i, title, orig):
     h = f'<h3 class="inst-title" dir="auto" lang="{e(i.get("language") or "")}">{e(official)}</h3>'
     if not AR_SCRIPT.search(official or ""):
         if i.get("english_title") and i["english_title"] != official: h += f'<p class="inst-orig" dir="ltr" lang="en">{e(i["english_title"])}</p>'
-        mt = i18n.content(i["id"], "title")
+        mt = i18n.content(i["id"], "title", i.get("english_title"))
         if mt: h += f'<p class="inst-mt">{e(mt)} <span class="mt-label">{e(i18n.T("Machine translation"))}</span></p>'
     return h
 
@@ -235,13 +235,17 @@ def inst_item(i, orgs, srcs, cats, regional_from=None):
     if i.get("official_pdf_url") and i.get("official_pdf_url") != i.get("source_url"):
         links.append(f'<a href="{e(i["official_pdf_url"])}" rel="noopener noreferrer" target="_blank">PDF</a>')
     catnames = " · ".join(cats.get(c, c) for c in i.get("categories", []))
-    return (f'<article class="inst" data-date="{e(date_key(i.get("publication_date")))}" data-weight="{WEIGHT.get(st, 9)}" data-type="{TYPE_OF.get(st, "guidance")}"'
-            f' data-cats="{e(" ".join(i.get("categories", [])))}" data-cat="{e(i.get("category") or "")}" data-text="{e((title + " " + (orig or "") + " " + (issuer or "")).lower())}">'
+    title_ar = i18n.content(i["id"], "title", i.get("english_title"))
+    sum_ar = i18n.content(i["id"], "summary", i.get("summary"))
+    st_ar = i18n.content(i["id"], "status", i.get("current_status"))
+    return (f'<article class="inst" id="{e(i["id"])}" data-date="{e(date_key(i.get("publication_date")))}" data-weight="{WEIGHT.get(st, 9)}" data-type="{TYPE_OF.get(st, "guidance")}"'
+            f' data-cats="{e(" ".join(i.get("categories", [])))}" data-cat="{e(i.get("category") or "")}" data-text="{e((title + " " + (orig or "") + " " + (title_ar or "") + " " + (issuer or "")).lower())}">'
             + inst_titles(i, title, orig)
             + f'<p class="inst-meta">{e(issuer)}{" · " if issuer and dates else ""}{" · ".join(dates)}</p>'
             + f'<p class="tags">{"".join(tags)}</p>'
-            + (f'<p class="inst-sum">{e(i.get("summary"))}</p>' if i.get("summary") else "")
-            + (f'<p class="inst-status">{e(i.get("current_status"))}</p>' if i.get("current_status") else "")
+            + (f'<p class="inst-sum"{ar_attr(sum_ar)}>{e(sum_ar or i.get("summary"))}</p>' if i.get("summary") else "")
+            + (f'<p class="inst-status"{ar_attr(st_ar)}>{e(st_ar or i.get("current_status"))}</p>' if i.get("current_status") else "")
+            + (i18n.mt_note(i["id"]) if sum_ar or st_ar or title_ar else "")
             + f'<p class="inst-foot">{" · ".join(links)}<span class="verify v-{e(vl)}">{e(VERIFY.get(vl, vl or "Verification not recorded"))}</span>'
             + (f'<span class="inst-cats">{e(catnames)}</span>' if catnames else "") + '</p></article>')
 
@@ -271,7 +275,7 @@ def hero(eyebrow, h1, stats, photo=None, art=None, kind=None):
             '<dl class="stats">' + "".join(f'<div><dt>{a}</dt><dd data-count="{v}">{v}</dd></div>' for a, v in stats) + '</dl></div>')
     if photo:
         media = f'<div class="hero-media">{img_tag(photo, "hero-img")}</div><div class="hero-scrim" aria-hidden="true"></div>'
-        foot = f'<p class="hero-credit"><span class="hero-cap">{e(photo["caption"])}</span>{credit(photo)}</p>'
+        foot = f'<p class="hero-credit"><span class="hero-cap">{cap(photo)}</span>{credit(photo)}</p>'
     else:
         media = f'<div class="hero-art">{art or ""}</div>'; foot = ""
     return f'<header class="hero hero--{k}" id="top">{media}{body}{foot}</header>'
@@ -298,7 +302,7 @@ def img_tag(im, cls="", lazy=False, sizes="100vw", alt=None):
     big, small = "../../" + im["file"], "../../" + im["file_small"]
     attrs = 'loading="lazy" decoding="async"' if lazy else 'fetchpriority="high" decoding="async"'
     return (f'<img class="{cls}" src="{e(big if not lazy else small)}" srcset="{e(small)} {im["width_small"]}w, {e(big)} {im["width"]}w" sizes="{sizes}" '
-            f'width="{im["width"]}" height="{im["height"]}" alt="{e(im["alt"] if alt is None else alt)}" {attrs}>')
+            f'width="{im["width"]}" height="{im["height"]}" alt="{e((im.get("alt_ar") or im["alt"]) if alt is None else alt)}" {attrs}>')
 
 
 def credit(im):
@@ -312,20 +316,20 @@ def credit(im):
 
 def photo_band(im):
     """Full-bleed 21:9 heritage / landscape strip before the instrument lists, caption over the image, credit below (gentle parallax in country.js)."""
-    return (f'<figure class="photo-break"><div class="pb-media">{img_tag(im, lazy=True)}<p class="pb-cap"><span>{e(im["caption"])}</span></p></div>'
+    return (f'<figure class="photo-break"><div class="pb-media">{img_tag(im, lazy=True)}<p class="pb-cap"><span>{cap(im)}</span></p></div>'
             f'<figcaption>{credit(im)}</figcaption></figure>')
 
 
 def feature_photo(im):
     """Portrait (4:5) photo beside the overview text; sticky on wide screens while the text scrolls, full width above the text on phones."""
     return (f'<figure class="ov-photo"><div class="ov-media">{img_tag(im, lazy=True, sizes="(min-width: 900px) 420px, 100vw")}</div>'
-            f'<figcaption><span class="pp-cap">{e(im["caption"])}</span>{credit(im)}</figcaption></figure>')
+            f'<figcaption><span class="pp-cap">{cap(im)}</span>{credit(im)}</figcaption></figure>')
 
 
 def backdrop(im):
     """City photo behind the charts section: fixed (sticky), dimmed and blurred on wide screens; a plain image band above the charts on phones."""
     return (f'<div class="cs-bg" aria-hidden="true"><div class="cs-bg-in">{img_tag(im, lazy=True, sizes="100vw", alt="")}</div></div>'
-            f'<p class="cs-cap"><span class="pp-cap">{e(im["caption"])}</span>{credit(im)}</p>')
+            f'<p class="cs-cap"><span class="pp-cap">{cap(im)}</span>{credit(im)}</p>')
 
 
 def closing_strip(jid, j, ctx, hero_img):
@@ -406,6 +410,7 @@ def country_page(j, D, rec, flags, ctx):
     today = ctx["today"]
     pipe_drafts = sorted([i for i in rows_all if i.get("legal_status") == "consultation_draft" or i.get("lifecycle") in ("consultation", "draft")],
                          key=lambda i: date_key(i.get("publication_date")), reverse=True)
+    inst_by_id = {i["id"]: i for i in rows_all}
     future = sorted([c for c in D["changes"] if c.get("jurisdiction_id") == jid and c.get("kind") == "world" and (c.get("date") or "") > today],
                     key=lambda c: c.get("date") or "")
     secs.append(("charts", "Charts"))
@@ -438,14 +443,18 @@ def country_page(j, D, rec, flags, ctx):
     # b. overview + c. charts in a two-column grid
     ov = ""
     zero = ""
+    sum_ar = i18n.content(jid, "summary", narr.get("summary"))
+    lead_ar = i18n.content(jid, "lead_institutions", narr.get("lead_institutions"))
+    cov_ar = i18n.content(jid, "coverage_note", audit.get("no_material_found_note"))
+    notes_ar = i18n.content(jid, "review_notes", narr.get("review_notes"))
     if not rows_all:
         zero = f'<p class="zero"><strong>No official AI-specific instruments found as of {e(fmt_date(narr.get("last_deep_review")) or "the latest review")}.</strong></p>'
-        if audit.get("no_material_found_note"): zero += f'<p class="zero-note">{e(audit["no_material_found_note"])}</p>'
+        if audit.get("no_material_found_note"): zero += f'<p class="zero-note"{ar_attr(cov_ar)}>{e(cov_ar or audit["no_material_found_note"])}</p>'
     if narr.get("summary") or narr.get("lead_institutions") or zero:
-        ov = '<section id="overview" class="block prose"><h2>Overview</h2>' + zero + "".join(f'<p>{e(p)}</p>' for p in re.split(r"\n\s*\n", narr.get("summary") or "") if p.strip())
+        ov = '<section id="overview" class="block prose"><h2>Overview</h2>' + zero + paras(sum_ar or narr.get("summary"), sum_ar)
         if narr.get("lead_institutions"):
-            ov += '<h3 class="minor">Lead institutions</h3><ul class="plain">' + "".join(f'<li>{e(x)}</li>' for x in narr["lead_institutions"]) + '</ul>'
-        ov += '</section>'
+            ov += '<h3 class="minor">Lead institutions</h3><ul class="plain">' + "".join(f'<li{ar_attr(lead_ar)}>{e(x)}</li>' for x in (lead_ar or narr["lead_institutions"])) + '</ul>'
+        ov += (i18n.mt_note("overview") if sum_ar or lead_ar or (zero and cov_ar) else "") + '</section>'
     figs = []
     if years_svg:
         figs.append(figure("fig-years", "Instruments per year", "By publication year: binding or mandatory, non-binding and drafts. Undated instruments are left out.",
@@ -457,13 +466,13 @@ def country_page(j, D, rec, flags, ctx):
     if pipe_drafts or future:
         pl = '<ol class="pipeline" data-upcoming>'
         for c in future[:12]:
-            pl += f'<li data-date="{e(c["date"])}"><time datetime="{e(c["date"])}">{e(fmt_date(c["date"]))}</time><span class="pl-kind">{e(EVENT.get(c.get("type"), c.get("type")))}</span><span class="pl-title">{e(c.get("title"))}</span></li>'
+            pl += f'<li data-date="{e(c["date"])}"><time datetime="{e(c["date"])}">{e(fmt_date(c["date"]))}</time><span class="pl-kind">{e(EVENT.get(c.get("type"), c.get("type")))}</span><span class="pl-title"{ar_attr(i18n.change_title(c, inst_by_id)[0])}>{e(i18n.change_title(c, inst_by_id)[0] or c.get("title"))}{mt_tag(i18n.change_title(c, inst_by_id)[1])}</span></li>'
         pl += '</ol><p class="pl-none muted" hidden>No upcoming dated actions.</p>' if future else '</ol><p class="pl-none muted">No upcoming dated actions recorded.</p>'
         pl += '<div class="pl-passed" hidden><h4>Date passed since this page was built</h4><ol class="pipeline"></ol></div>'
         if pipe_drafts: pl += '<h4>Drafts and documents open for comment</h4><ol class="pipeline">'
         for i in pipe_drafts[:12]:
             d = i.get("publication_date")
-            pl += f'<li><time datetime="{e(d or "")}">{e(fmt_date(d) or "Undated")}</time><span class="pl-kind">{e(pipe_type(i))}</span><span class="pl-title">{e(i.get("english_title") or i.get("official_title"))}</span></li>'
+            pl += f'<li><time datetime="{e(d or "")}">{e(fmt_date(d) or "Undated")}</time><span class="pl-kind">{e(pipe_type(i))}</span><span class="pl-title"{ar_attr(ar_title(i))}>{e(ar_title(i) or i.get("english_title") or i.get("official_title"))}{mt_tag(ar_title(i) and ar_title(i) != i.get("official_title"))}</span></li>'
         if pipe_drafts: pl += '</ol>'
         more = len(future) + len(pipe_drafts) - min(12, len(future)) - min(12, len(pipe_drafts))
         figs.append(f'<figure class="fig" id="fig-pipeline" data-asof="{e(today)}"><figcaption><h3>Open and upcoming <span class="asof">Upcoming as of {e(fmt_date(today))}</span></h3><p class="fig-desc">Dated government actions still ahead, then drafts and other documents still open for comment.</p></figcaption>{pl}'
@@ -504,10 +513,11 @@ def country_page(j, D, rec, flags, ctx):
                  + '</ul></details></section>')
     # h. method
     m = '<section id="method" class="block prose method"><h2>Method note</h2>'
-    if narr.get("review_notes"): m += f'<p>{e(narr["review_notes"])}</p>'
+    if narr.get("review_notes"): m += f'<p{ar_attr(notes_ar)}>{e(notes_ar or narr["review_notes"])}</p>'
     m += f'<p>Coverage: {cov_counts["found"]} of the 18 governance categories have documents; {cov_counts["none"]} were searched with no material found; {cov_counts["na"]} were not assessed.' + (f' Review date {e(fmt_date(audit.get("review_date")))}.' if audit.get("review_date") else "") + '</p>'
     if audit.get("no_material_found_note"):
-        m += f'<details class="tech"><summary>Technical coverage note</summary><p>{e(audit["no_material_found_note"])}</p></details>'
+        m += f'<details class="tech"><summary>Technical coverage note</summary><p{ar_attr(cov_ar)}>{e(cov_ar or audit["no_material_found_note"])}</p></details>'
+    if notes_ar or cov_ar: m += i18n.mt_note("method")
     m += ('<p>Only official government and official-body sources are recorded. Dates come from the document or the issuer\'s own page; empty fields mean not verified. '
           '<a href="../../?about=method" data-keep-query>Read the full methodology</a>.</p>'
           '<p class="export"><span>Download this profile:</span><button type="button" class="btn" data-export="csv">CSV</button><button type="button" class="btn" data-export="json">JSON</button></p></section>')
@@ -547,8 +557,8 @@ def body_page(b, D, rec, flags, ctx):
                                       '<p class="legend"><span><i class="sw s-b"></i>Binding or mandatory</span><span><i class="sw s-n"></i>Non-binding</span><span><i class="sw s-d"></i>Drafts</span></p>' + years_svg, years_tab,
                                       f"{undated} undated not shown" if undated else ""))
     if status_svg: figs.append(figure("fig-status", "Legal-status mix", "Instruments by legal status, from most to least binding.", '<p class="legend"><span><i class="sw s-b"></i>Binding or mandatory</span><span><i class="sw s-n"></i>Non-binding</span><span><i class="sw s-d"></i>Drafts</span></p>' + status_svg, status_tab))
-    ov = '<section id="overview" class="block prose"><h2>Overview</h2>' + ("".join(f'<p>{e(p)}</p>' for p in re.split(r"\n\s*\n", narr.get("summary") or "") if p.strip())
-                                                                          or f'<p>{e(b.get("overview") or "")}</p>')
+    bsum_ar = i18n.content(bid, "summary", narr.get("summary")); bnotes_ar = i18n.content(bid, "review_notes", narr.get("review_notes"))
+    ov = '<section id="overview" class="block prose"><h2>Overview</h2>' + (paras(bsum_ar or narr.get("summary"), bsum_ar) or f'<p>{e(b.get("overview") or "")}</p>') + (i18n.mt_note("overview") if bsum_ar else "")
     if bid == "OECD" and ctx["oecd"]:
         adh = sorted(ctx["oecd"].items(), key=lambda kv: (kv[1].get("member") is not True, i18n.name_key(ctx["jur"].get(kv[0], {}).get("name", kv[0]))))
         link = lambda c: f'<a href="../../{"body" if ctx["jur"].get(c, {}).get("type") != "country" else "country"}/{c}/">{e(ctx["jur"].get(c, {}).get("name", c))}</a>'
@@ -568,7 +578,7 @@ def body_page(b, D, rec, flags, ctx):
         H.append(f'<section id="members" class="block"><h2>Member states <span class="count">{len(members)}</span></h2><p class="member-grid">'
                  + "".join(f'<a class="chip" href="../../country/{c}/">{e(ctx["jur"].get(c, {}).get("name", c))}</a>' for c in members) + '</p>'
                  + (f'<p class="section-lede">{e((rec.get("members_source") or {}).get("comment"))}</p>' if rec.get("members_source") else "") + '</section>')
-    H.append('<section id="method" class="block prose method"><h2>Method note</h2>' + (f'<p>{e(narr.get("review_notes"))}</p>' if narr.get("review_notes") else "")
+    H.append('<section id="method" class="block prose method"><h2>Method note</h2>' + (f'<p{ar_attr(bnotes_ar)}>{e(bnotes_ar or narr.get("review_notes"))}</p>' + (i18n.mt_note("method") if bnotes_ar else "") if narr.get("review_notes") else "")
              + (f'<p>{e(rec.get("membership_note"))}</p>' if rec.get("membership_note") else "")
              + '<p>Only official sources are recorded. <a href="../../?about=method" data-keep-query>Read the full methodology</a>.</p>'
              '<p class="export"><span>Download this profile:</span><button type="button" class="btn" data-export="csv">CSV</button><button type="button" class="btn" data-export="json">JSON</button></p></section>')
@@ -587,12 +597,43 @@ def footer(D, up="../../"):
 ROLE_LABEL = {"hero": "Header", "feature": "Beside the overview", "backdrop": "Behind the charts", "band": "Before the instruments"}
 
 
+def cap(im):
+    """Photo caption; on Arabic pages its machine translation, marked as such."""
+    if im.get("caption_ar"): return f'<span lang="ar">{e(im["caption_ar"])}</span> <span class="mt-label">{e(i18n.T("Machine translation"))}</span>'
+    return e(im["caption"])
+
+
+def mt_tag(on):
+    return f' <span class="mt-label">{e(i18n.T("Machine translation"))}</span>' if on else ""
+
+
+def ar_attr(t):
+    return ' lang="ar" dir="rtl"' if t else ""
+
+
+def ar_title(i):
+    """Arabic pages: an Arabic official title, else the machine translation of the English title."""
+    if i18n.LANG != "ar": return None
+    if AR_SCRIPT.search(i.get("official_title") or ""): return i["official_title"]
+    return i18n.content(i["id"], "title", i.get("english_title"))
+
+
+def paras(text, is_ar=False):
+    return "".join(f'<p{ar_attr(is_ar)}>{e(p)}</p>' for p in re.split(r"\n\s*\n", text or "") if p.strip())
+
+
 def load_photos():
     """data/photos.json -> {ISO3: {role: image}} with roles hero, feature, backdrop, band"""
     p = ROOT / "data/photos.json"
     if not p.exists(): return {}
-    return {cid: {im["role"]: im for im in ph.get("photos") or []}
-            for cid, ph in json.loads(p.read_text(encoding="utf-8")).get("countries", {}).items()}
+    out = {cid: {im["role"]: dict(im) for im in ph.get("photos") or []}
+           for cid, ph in json.loads(p.read_text(encoding="utf-8")).get("countries", {}).items()}
+    for cid, ims in out.items():          # Arabic pages: machine-translated caption and alt text (credits stay as published)
+        for role, im in ims.items():
+            for f in ("caption", "alt"):
+                t = i18n.content(f"photo:{cid}:{role}", f, im.get(f))
+                if t: im[f + "_ar"] = t
+    return out
 
 
 def credits_page(D, ctx):

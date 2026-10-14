@@ -111,7 +111,11 @@ def build_ar(D, map_html, flags):
     i18n.LANG = "ar"
     try:
         AR.mkdir(exist_ok=True)
-        (AR / "index.html").write_text(i18n.translate_html(map_html), encoding="utf-8")
+        inst = {i["id"]: i for i in D["instruments"]}
+        ct = {c["id"]: (t if mt else [t]) for c in D["changes"] if c.get("id") for t, mt in [i18n.change_title(c, inst)] if t and t != c.get("title")}
+        ct_js = ('<script>window.AR_CT=' + json.dumps({"_label": i18n.T("Machine translation"), **ct}, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+                 + ';</script>') if ct else ""
+        (AR / "index.html").write_text(i18n.translate_html(map_html).replace("</head>", ct_js + "</head>", 1), encoding="utf-8")
         n = pages.write_all(D, load_all(), AR, flags, mirror=True)
         for page in AR.rglob("*.html"):
             if page.name == "index.html" and page.parent == AR: continue
@@ -157,6 +161,7 @@ def localise(out):
                 if rest.startswith("..") or not os.path.exists(out / rest): return u
                 return os.path.relpath(out / rest, base).replace(os.sep, "/") + ("/" if path_.endswith("/") else "") + u[len(path_):]
             t = re.sub(r'(\b(?:src|href)=")([^"]+)(")', lambda m: m.group(1) + link(m.group(2)) + m.group(3), t)
+            t = t.replace('href="EN_ORIGINAL#', f'href="{other or "./"}#')      # machine-translation notes link the English page
             t = re.sub(r'((?:srcset|imagesrcset)=")([^"]+)(")', lambda m: m.group(1) + ", ".join(
                 " ".join([link(q.split()[0])] + q.split()[1:]) for q in m.group(2).split(",") if q.strip()) + m.group(3), t)
         else:

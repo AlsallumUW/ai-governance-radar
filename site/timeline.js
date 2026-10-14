@@ -7,11 +7,11 @@ const J=T.jurisdictions,ST=T.statuses,CAT=T.categories,LV=T.levels;
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 /* items: dates of year-only or month-only precision sit mid-year / mid-month */
-const items=T.items.map(r=>{const [id,j,d,g,t,iss,s,c,l,u,app]=r;let x=null,prec=null;
+const items=T.items.map(r=>{const [id,j,d,g,t,iss,s,c,l,u,app,mt]=r;let x=null,prec=null;
   if(/^\d{4}-\d{2}-\d{2}$/.test(d)){x=Date.UTC(+d.slice(0,4),+d.slice(5,7)-1,+d.slice(8,10));prec='day'}
   else if(/^\d{4}-\d{2}$/.test(d)){x=Date.UTC(+d.slice(0,4),+d.slice(5,7)-1,15);prec='month'}
   else if(/^\d{4}$/.test(d)){x=Date.UTC(+d,6,1);prec='year'}
-  return{id,j,d,g,t,iss,s,c,l,u,app,x,prec,y:x==null?null:new Date(x).getUTCFullYear()}});
+  return{id,j,d,g,t,iss,s,c,l,u,app,mt,x,prec,y:x==null?null:new Date(x).getUTCFullYear()}});
 const fmt=it=>{if(!it.d)return'Undated';if(it.prec==='year')return it.d+' (year only)';const m=MON[+it.d.slice(5,7)-1];return it.prec==='month'?`${m} ${it.d.slice(0,4)}`:`${+it.d.slice(8,10)} ${m} ${it.d.slice(0,4)}`};
 const years=items.filter(i=>i.y!=null).map(i=>i.y),Y0=Math.min(...years),Y1=Math.max(...years,+T.asof.slice(0,4));
 const DEF_FROM=Math.max(Y0,2016);
@@ -48,7 +48,7 @@ const el=(n,a,p)=>{const e=document.createElementNS(NS,n);for(const k in a)e.set
 let dots=[],pinned=null;
 const pageURL=it=>(J[it.j]&&J[it.j][2]?'../country/':'../body/')+it.j+'/';
 function cardHTML(it){const jj=J[it.j]||[it.j];const via=!J[it.j][2]&&F.country&&it.j!==F.country?` · applies to ${esc(J[F.country][0])} through membership`:'';
-  return `<button type="button" class="linkbtn x" aria-label="Close">Close</button><h4>${esc(it.t)}</h4>`
+  return `<button type="button" class="linkbtn x" aria-label="Close">Close</button><h4>${esc(it.t)}${it.mt?` <span class="mt-label">${esc(T.mt_label||'')}</span>`:''}</h4>`
   +`<p><span class="k">${J[it.j][2]?'Country':'Body'}:</span> ${esc(jj[0])}${via}</p><p><span class="k">Issuer:</span> ${esc(it.iss||'Not recorded')}</p>`
   +`<p><span class="k">Date:</span> ${esc(fmt(it))}</p><p><span class="k">Status:</span> ${esc(ST[it.s][1])} · ${esc(T.groups[it.g])}</p>`
   +`<p class="links"><a href="${pageURL(it)}">${J[it.j][2]?'Country':'Body'} page →</a>${it.u?`<a href="${esc(it.u)}" target="_blank" rel="noopener">Official source ↗</a>`:''}</p>`}
