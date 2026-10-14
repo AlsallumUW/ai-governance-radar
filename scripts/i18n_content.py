@@ -117,6 +117,26 @@ _NUM = re.compile(r"\d+(?:[.,]\d+)*")
 _ACR = re.compile(r"\b[A-Z][A-Z0-9&]{2,}\b")
 
 
+_GA = None
+
+
+def _glossary_acronyms():
+    """Acronyms that the approved terms already render in Arabic (ASEAN, UNESCO, OECD, GCC ...): no Latin copy needed."""
+    global _GA
+    if _GA is None:
+        import i18n
+        _GA = {a for k in i18n.terms() for a in _ACR.findall(k)}
+    return _GA
+
+
+def _strip_glossary(en):
+    """Drop glossary terms whose Arabic carries no digits (G7, G20) before the number check: their Arabic replaces them."""
+    import i18n
+    for k, v in i18n.terms().items():
+        if re.search(r"\d", k) and not re.search(r"\d", v): en = re.sub(r"\b" + re.escape(k) + r"\b", " ", en)
+    return en
+
+
 def problems(en, ar):
     """Mechanical checks: numbers kept (Western digits), no «», no Eastern Arabic digits, Latin acronyms kept."""
     if isinstance(en, list):
@@ -127,9 +147,10 @@ def problems(en, ar):
     if re.search("[«»]", ar): out.append("uses «»")
     if re.search("[٠-٩۰-۹]", ar): out.append("Eastern Arabic digits")
     if not AR.search(ar): out.append("no Arabic text")
+    en = _strip_glossary(en)
     miss = [n for n in _NUM.findall(en) if n not in ar and n.replace(",", "") not in ar.replace(",", "").replace("،", "")]
     if miss: out.append(f"numbers missing: {miss[:5]}")
-    acr = [a for a in set(_ACR.findall(en)) if a not in ar]
+    acr = [a for a in set(_ACR.findall(en)) if a not in ar and a not in _glossary_acronyms()]
     if acr: out.append(f"acronyms missing: {sorted(acr)[:5]}")
     return out
 
