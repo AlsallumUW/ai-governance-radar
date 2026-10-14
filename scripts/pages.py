@@ -308,21 +308,26 @@ def backdrop(im):
 
 def closing_strip(jid, j, ctx, hero_img):
     """End of page: the hero photo, faded and desaturated, behind links to four other countries and back to the map.
-    The four are the countries of the same UN subregion with the most recorded instruments, topped up from the wider region."""
-    jur, n = ctx["jur"], ctx["n_inst"]
-    rank = lambda cs: sorted(cs, key=lambda c: (-n.get(c, 0), jur[c]["name"]))
-    countries = [c for c, x in jur.items() if x.get("type") == "country" and c != jid]
+    Candidates come from groups the country belongs to, in this order: GCC, ALECSO, ASEAN, AU, EU, its UN subregion, then
+    ICESCO, COE, OECD, G20, G7. The first group fills the four places and later groups top it up. Within a group countries
+    are ranked by number of recorded instruments; countries with none are used only if four cannot be found otherwise."""
+    jur, n, mem = ctx["jur"], ctx["n_inst"], ctx["members"]
     sub = SUBREGION.get(jid)
-    peers = rank([c for c in countries if SUBREGION.get(c) == sub])[:4]
-    label = sub or j.get("region") or ""
-    if len(peers) < 4 and j.get("region"):
-        peers += rank([c for c in countries if jur[c].get("region") == j["region"] and c not in peers])[:4 - len(peers)]
-        region = "the Americas" if j["region"] == "Americas" else j["region"]
-        label = f"{sub}, then the rest of {region}" if sub else region
-    links = "".join(f'<li><a href="../../country/{c}/">{e(jur[c]["name"])} <span class="cl-n">{n.get(c, 0)}</span></a></li>' for c in peers)
+    groups = [(b, jur[b].get("short_name") or b, set(mem.get(b, ()))) for b in ("GCC", "ALECSO", "ASEAN", "AU", "EU") if jid in mem.get(b, ())]
+    if sub: groups.append(("sub", sub, {c for c, r in SUBREGION.items() if r == sub}))
+    groups += [(b, jur[b].get("short_name") or b, set(mem.get(b, ()))) for b in ("ICESCO", "COE", "OECD", "G20", "G7") if jid in mem.get(b, ())]
+    peers, used = [], []
+    for allow_zero in (False, True):
+        for key, name, cs in groups:
+            if len(peers) == 4: break
+            cand = sorted((c for c in cs if c != jid and c not in peers and jur.get(c, {}).get("type") == "country" and (allow_zero or n.get(c, 0) > 0)),
+                          key=lambda c: (-n.get(c, 0), jur[c]["name"]))[:4 - len(peers)]
+            if cand: peers += cand; used.append(name) if name not in used else None
+    label = "From " + ", then ".join(f"{u} (UN subregion)" if u == sub else f"{u} members" for u in used) if used else ""
+    links = "".join(f'<li><a href="../../country/{c}/">{e(jur[c]["name"])}' + (f' <span class="cl-n" title="instruments recorded">{n[c]}</span>' if n.get(c) else "") + '</a></li>' for c in peers)
     bg = f'<div class="closing-bg" aria-hidden="true"><img src="../../{e(hero_img["file_small"])}" alt="" loading="lazy" decoding="async" width="{hero_img["width_small"]}" height="{round(hero_img["width_small"] * 9 / 16)}"></div>' if hero_img else ""
     return (f'<section class="closing" aria-label="Explore other countries">{bg}<div class="closing-in"><h2>Explore other countries</h2>'
-            + (f'<p class="closing-sub">The most-documented countries in {e(label)} (number of instruments)</p><ul class="closing-links">{links}</ul>' if links else "")
+            + (f'<p class="closing-sub">{e(label)} · ranked by instruments recorded</p><ul class="closing-links">{links}</ul>' if links else "")
             + '<p class="closing-map"><a href="../../" data-keep-query>← Back to the world map</a></p></div></section>')
 
 
