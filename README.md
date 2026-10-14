@@ -10,6 +10,7 @@ Every record links to the original government source, and every change is logged
 data/countries/XXX.json   one file per country: narrative, instruments, sources, coverage, change log
 data/regional/XXX.json    EU, GCC, AU, ASEAN, COE, UNESCO
 data/meta.json            categories and methodology
+data/photos.json          country-page photos: file, author, licence, Commons page, alt text (images in site/img/)
 research/PROTOCOL.md      the record standard a country must meet to count as deep-reviewed
 research/WEEKLY.md        the weekly update routine
 research/queue.json       review order (GCC → MENA → G20 → EU → rest of world)
