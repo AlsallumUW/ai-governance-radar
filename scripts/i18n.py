@@ -123,10 +123,9 @@ def content(rid, field, en=None):
     return entry["ar"]
 
 
-def mt_note(anchor):
-    """The machine-translation label with a link to the English original (localise() points EN_ORIGINAL at the English page)."""
-    return (f'<p class="mt-note"><span class="mt-label">{T("Machine translation")}</span> '
-            f'<a href="EN_ORIGINAL#{anchor}" hreflang="en">{T("English original")}</a></p>')
+def orig_link(anchor):
+    """Small "original text" link placed beside a translated title or summary (localise() points EN_ORIGINAL at the English page)."""
+    return f' <a class="orig-link" href="EN_ORIGINAL#{anchor}" hreflang="en">{T("Original text")}</a>'
 
 
 def change_title(c, instruments):
@@ -190,5 +189,5 @@ def translate_html(doc):
 
 def runtime_js():
     """assets/i18n-ar.js: the dictionary and the same matching rules, applied to text that scripts add to Arabic pages."""
-    data = {"s": STR, "p": D.get("patterns", []), "m": MONTHS, "em": {k: v for k, v in EN_MONTHS.items()}}
+    data = {"s": {k: v for k, v in STR.items() if k != "Machine translation"}, "p": D.get("patterns", []), "m": MONTHS, "em": {k: v for k, v in EN_MONTHS.items()}}
     return ("(function(){'use strict';var I=" + json.dumps(data, ensure_ascii=False, separators=(",", ":")) + ";\n" + (ROOT / "site/i18n/runtime.js").read_text(encoding="utf-8") + "})();")

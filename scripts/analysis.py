@@ -611,13 +611,12 @@ def timeline_data(D, ctx):
         rows.append([i["id"], i["jurisdiction_id"], d, ["binding", "soft", "draft"].index(kind(i)),
                      ar_title(i) or i.get("english_title") or i.get("official_title") or "", iss, st_keys.index(i.get("legal_status") or ""),
                      [cat_keys.index(c) for c in i.get("categories", []) if c in cat_keys], lv.index(i.get("government_level")) if i.get("government_level") in lv else 0,
-                     i.get("source_url") or i.get("official_webpage_url") or "", app.get(i["id"], [])]
-                    + ([1] if ar_title(i) and ar_title(i) != i.get("official_title") else []))
+                     i.get("source_url") or i.get("official_webpage_url") or "", app.get(i["id"], [])])
     bodies = {b: [jur[b]["name"] if b in jur else b, sorted(ctx["members"].get(b, ()))] for b in BODY_ORDER if b in jur}
     return {"asof": ctx["today"], "fields": ["id", "jurisdiction", "date", "group", "title", "issuer", "status", "categories", "level", "source", "applies_to"],
             "groups": [KIND_LABEL[g] for g in ("binding", "soft", "draft")], "statuses": [[k, STATUS_LABEL.get(k) or (k.replace("_", " ").capitalize() if k else "Not recorded")] for k in st_keys],
             "categories": [[k, v] for k, v in D["categories"].items()], "levels": [[k, v] for k, v in LEVELS], "regions": REGIONS,
-            "jurisdictions": J, "bodies": bodies, "items": rows, **({"mt_label": i18n.T("Machine translation")} if i18n.LANG == "ar" else {})}
+            "jurisdictions": J, "bodies": bodies, "items": rows}
 
 
 def timeline_page(D, ctx):

@@ -1,7 +1,8 @@
 # Arabic machine translations
 
-The Arabic pages (`/ar/`) show machine translations of published content, labelled "ترجمة آلية" with a link to the English
-original. They are stored in `data/i18n/ar/` (one file per country, `regional/` for bodies, `_global.json`), keyed by
+The Arabic pages (`/ar/`) show translations of published content, with a small "النص الأصلي" link beside each translated
+title or summary that opens the original. The Arabic Methodology states: "النصوص العربية للوثائق غير المنشورة بالعربية مترجمة،
+والنص الأصلي هو المرجع." They are stored in `data/i18n/ar/` (one file per country, `regional/` for bodies, `_global.json`), keyed by
 record id, each with a hash of its English source. `scripts/validate.py` fails when a text has no translation or its
 English has changed since it was translated (stale), so new or changed records are translated in the same PR.
 

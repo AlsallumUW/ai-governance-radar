@@ -102,7 +102,7 @@ FONT = ('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="p
 
 
 # summaries and status notes are published text in their own language: dir="auto" lets an English one sit and align left
-DATA_DIR = re.compile(r'(<p class="(?:inst-sum|inst-status)")')
+DATA_DIR = re.compile(r'(<p class="(?:inst-sum|inst-status)")(?=>)')     # English text only; translations carry lang/dir
 
 
 def build_ar(D, map_html, flags):
@@ -112,10 +112,12 @@ def build_ar(D, map_html, flags):
     try:
         AR.mkdir(exist_ok=True)
         inst = {i["id"]: i for i in D["instruments"]}
-        ct = {c["id"]: (t if mt else [t]) for c in D["changes"] if c.get("id") for t, mt in [i18n.change_title(c, inst)] if t and t != c.get("title")}
-        ct_js = ('<script>window.AR_CT=' + json.dumps({"_label": i18n.T("Machine translation"), **ct}, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
-                 + ';</script>') if ct else ""
-        (AR / "index.html").write_text(i18n.translate_html(map_html).replace("</head>", ct_js + "</head>", 1), encoding="utf-8")
+        ct = {c["id"]: t for c in D["changes"] if c.get("id") for t, _ in [i18n.change_title(c, inst)] if t and t != c.get("title")}
+        ct_js = ('<script>window.AR_CT=' + json.dumps(ct, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/") + ';</script>') if ct else ""
+        method = f'<p class="ar-note">{i18n.T("Arabic texts of documents not published in Arabic are translations; the original text is authoritative.")}</p>'
+        ar_map = i18n.translate_html(map_html).replace("</head>", ct_js + "</head>", 1)
+        k = ar_map.index("</p>", ar_map.index('id="methodDialog"')) + 4      # after the dialog's first paragraph
+        (AR / "index.html").write_text(ar_map[:k] + method + ar_map[k:], encoding="utf-8")
         n = pages.write_all(D, load_all(), AR, flags, mirror=True)
         for page in AR.rglob("*.html"):
             if page.name == "index.html" and page.parent == AR: continue

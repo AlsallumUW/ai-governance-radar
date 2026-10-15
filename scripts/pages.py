@@ -213,7 +213,7 @@ def inst_titles(i, title, orig):
     if not AR_SCRIPT.search(official or ""):
         if i.get("english_title") and i["english_title"] != official: h += f'<p class="inst-orig" dir="ltr" lang="en">{e(i["english_title"])}</p>'
         mt = i18n.content(i["id"], "title", i.get("english_title"))
-        if mt: h += f'<p class="inst-mt">{e(mt)} <span class="mt-label">{e(i18n.T("Machine translation"))}</span></p>'
+        if mt: h += f'<p class="inst-mt" lang="ar">{e(mt)}{i18n.orig_link(i["id"])}</p>'
     return h
 
 
@@ -243,9 +243,8 @@ def inst_item(i, orgs, srcs, cats, regional_from=None):
             + inst_titles(i, title, orig)
             + f'<p class="inst-meta">{e(issuer)}{" · " if issuer and dates else ""}{" · ".join(dates)}</p>'
             + f'<p class="tags">{"".join(tags)}</p>'
-            + (f'<p class="inst-sum"{ar_attr(sum_ar)}>{e(sum_ar or i.get("summary"))}</p>' if i.get("summary") else "")
+            + (f'<p class="inst-sum"{ar_attr(sum_ar)}>{e(sum_ar or i.get("summary"))}{i18n.orig_link(i["id"]) if sum_ar else ""}</p>' if i.get("summary") else "")
             + (f'<p class="inst-status"{ar_attr(st_ar)}>{e(st_ar or i.get("current_status"))}</p>' if i.get("current_status") else "")
-            + (i18n.mt_note(i["id"]) if sum_ar or st_ar or title_ar else "")
             + f'<p class="inst-foot">{" · ".join(links)}<span class="verify v-{e(vl)}">{e(VERIFY.get(vl, vl or "Verification not recorded"))}</span>'
             + (f'<span class="inst-cats">{e(catnames)}</span>' if catnames else "") + '</p></article>')
 
@@ -449,12 +448,12 @@ def country_page(j, D, rec, flags, ctx):
     notes_ar = i18n.content(jid, "review_notes", narr.get("review_notes"))
     if not rows_all:
         zero = f'<p class="zero"><strong>No official AI-specific instruments found as of {e(fmt_date(narr.get("last_deep_review")) or "the latest review")}.</strong></p>'
-        if audit.get("no_material_found_note"): zero += f'<p class="zero-note"{ar_attr(cov_ar)}>{e(cov_ar or audit["no_material_found_note"])}</p>'
+        if audit.get("no_material_found_note"): zero += f'<p class="zero-note"{ar_attr(cov_ar)}>{e(cov_ar or audit["no_material_found_note"])}{i18n.orig_link("overview") if cov_ar else ""}</p>'
     if narr.get("summary") or narr.get("lead_institutions") or zero:
-        ov = '<section id="overview" class="block prose"><h2>Overview</h2>' + zero + paras(sum_ar or narr.get("summary"), sum_ar)
+        ov = '<section id="overview" class="block prose"><h2>Overview</h2>' + zero + paras(sum_ar or narr.get("summary"), sum_ar, "overview")
         if narr.get("lead_institutions"):
             ov += '<h3 class="minor">Lead institutions</h3><ul class="plain">' + "".join(f'<li{ar_attr(lead_ar)}>{e(x)}</li>' for x in (lead_ar or narr["lead_institutions"])) + '</ul>'
-        ov += (i18n.mt_note("overview") if sum_ar or lead_ar or (zero and cov_ar) else "") + '</section>'
+        ov += '</section>'
     figs = []
     if years_svg:
         figs.append(figure("fig-years", "Instruments per year", "By publication year: binding or mandatory, non-binding and drafts. Undated instruments are left out.",
@@ -466,13 +465,13 @@ def country_page(j, D, rec, flags, ctx):
     if pipe_drafts or future:
         pl = '<ol class="pipeline" data-upcoming>'
         for c in future[:12]:
-            pl += f'<li data-date="{e(c["date"])}"><time datetime="{e(c["date"])}">{e(fmt_date(c["date"]))}</time><span class="pl-kind">{e(EVENT.get(c.get("type"), c.get("type")))}</span><span class="pl-title"{ar_attr(i18n.change_title(c, inst_by_id)[0])}>{e(i18n.change_title(c, inst_by_id)[0] or c.get("title"))}{mt_tag(i18n.change_title(c, inst_by_id)[1])}</span></li>'
+            pl += f'<li data-date="{e(c["date"])}"><time datetime="{e(c["date"])}">{e(fmt_date(c["date"]))}</time><span class="pl-kind">{e(EVENT.get(c.get("type"), c.get("type")))}</span><span class="pl-title"{ar_attr(i18n.change_title(c, inst_by_id)[0])}>{e(i18n.change_title(c, inst_by_id)[0] or c.get("title"))}</span></li>'
         pl += '</ol><p class="pl-none muted" hidden>No upcoming dated actions.</p>' if future else '</ol><p class="pl-none muted">No upcoming dated actions recorded.</p>'
         pl += '<div class="pl-passed" hidden><h4>Date passed since this page was built</h4><ol class="pipeline"></ol></div>'
         if pipe_drafts: pl += '<h4>Drafts and documents open for comment</h4><ol class="pipeline">'
         for i in pipe_drafts[:12]:
             d = i.get("publication_date")
-            pl += f'<li><time datetime="{e(d or "")}">{e(fmt_date(d) or "Undated")}</time><span class="pl-kind">{e(pipe_type(i))}</span><span class="pl-title"{ar_attr(ar_title(i))}>{e(ar_title(i) or i.get("english_title") or i.get("official_title"))}{mt_tag(ar_title(i) and ar_title(i) != i.get("official_title"))}</span></li>'
+            pl += f'<li><time datetime="{e(d or "")}">{e(fmt_date(d) or "Undated")}</time><span class="pl-kind">{e(pipe_type(i))}</span><span class="pl-title"{ar_attr(ar_title(i))}>{e(ar_title(i) or i.get("english_title") or i.get("official_title"))}</span></li>'
         if pipe_drafts: pl += '</ol>'
         more = len(future) + len(pipe_drafts) - min(12, len(future)) - min(12, len(pipe_drafts))
         figs.append(f'<figure class="fig" id="fig-pipeline" data-asof="{e(today)}"><figcaption><h3>Open and upcoming <span class="asof">Upcoming as of {e(fmt_date(today))}</span></h3><p class="fig-desc">Dated government actions still ahead, then drafts and other documents still open for comment.</p></figcaption>{pl}'
@@ -513,11 +512,10 @@ def country_page(j, D, rec, flags, ctx):
                  + '</ul></details></section>')
     # h. method
     m = '<section id="method" class="block prose method"><h2>Method note</h2>'
-    if narr.get("review_notes"): m += f'<p{ar_attr(notes_ar)}>{e(notes_ar or narr["review_notes"])}</p>'
+    if narr.get("review_notes"): m += f'<p{ar_attr(notes_ar)}>{e(notes_ar or narr["review_notes"])}{i18n.orig_link("method") if notes_ar else ""}</p>'
     m += f'<p>Coverage: {cov_counts["found"]} of the 18 governance categories have documents; {cov_counts["none"]} were searched with no material found; {cov_counts["na"]} were not assessed.' + (f' Review date {e(fmt_date(audit.get("review_date")))}.' if audit.get("review_date") else "") + '</p>'
     if audit.get("no_material_found_note"):
-        m += f'<details class="tech"><summary>Technical coverage note</summary><p{ar_attr(cov_ar)}>{e(cov_ar or audit["no_material_found_note"])}</p></details>'
-    if notes_ar or cov_ar: m += i18n.mt_note("method")
+        m += f'<details class="tech"><summary>Technical coverage note</summary><p{ar_attr(cov_ar)}>{e(cov_ar or audit["no_material_found_note"])}{i18n.orig_link("method") if cov_ar else ""}</p></details>'
     m += ('<p>Only official government and official-body sources are recorded. Dates come from the document or the issuer\'s own page; empty fields mean not verified. '
           '<a href="../../?about=method" data-keep-query>Read the full methodology</a>.</p>'
           '<p class="export"><span>Download this profile:</span><button type="button" class="btn" data-export="csv">CSV</button><button type="button" class="btn" data-export="json">JSON</button></p></section>')
@@ -558,7 +556,7 @@ def body_page(b, D, rec, flags, ctx):
                                       f"{undated} undated not shown" if undated else ""))
     if status_svg: figs.append(figure("fig-status", "Legal-status mix", "Instruments by legal status, from most to least binding.", '<p class="legend"><span><i class="sw s-b"></i>Binding or mandatory</span><span><i class="sw s-n"></i>Non-binding</span><span><i class="sw s-d"></i>Drafts</span></p>' + status_svg, status_tab))
     bsum_ar = i18n.content(bid, "summary", narr.get("summary")); bnotes_ar = i18n.content(bid, "review_notes", narr.get("review_notes"))
-    ov = '<section id="overview" class="block prose"><h2>Overview</h2>' + (paras(bsum_ar or narr.get("summary"), bsum_ar) or f'<p>{e(b.get("overview") or "")}</p>') + (i18n.mt_note("overview") if bsum_ar else "")
+    ov = '<section id="overview" class="block prose"><h2>Overview</h2>' + (paras(bsum_ar or narr.get("summary"), bsum_ar, "overview") or f'<p>{e(b.get("overview") or "")}</p>')
     if bid == "OECD" and ctx["oecd"]:
         adh = sorted(ctx["oecd"].items(), key=lambda kv: (kv[1].get("member") is not True, i18n.name_key(ctx["jur"].get(kv[0], {}).get("name", kv[0]))))
         link = lambda c: f'<a href="../../{"body" if ctx["jur"].get(c, {}).get("type") != "country" else "country"}/{c}/">{e(ctx["jur"].get(c, {}).get("name", c))}</a>'
@@ -578,7 +576,7 @@ def body_page(b, D, rec, flags, ctx):
         H.append(f'<section id="members" class="block"><h2>Member states <span class="count">{len(members)}</span></h2><p class="member-grid">'
                  + "".join(f'<a class="chip" href="../../country/{c}/">{e(ctx["jur"].get(c, {}).get("name", c))}</a>' for c in members) + '</p>'
                  + (f'<p class="section-lede">{e((rec.get("members_source") or {}).get("comment"))}</p>' if rec.get("members_source") else "") + '</section>')
-    H.append('<section id="method" class="block prose method"><h2>Method note</h2>' + (f'<p{ar_attr(bnotes_ar)}>{e(bnotes_ar or narr.get("review_notes"))}</p>' + (i18n.mt_note("method") if bnotes_ar else "") if narr.get("review_notes") else "")
+    H.append('<section id="method" class="block prose method"><h2>Method note</h2>' + (f'<p{ar_attr(bnotes_ar)}>{e(bnotes_ar or narr.get("review_notes"))}{i18n.orig_link("method") if bnotes_ar else ""}</p>' if narr.get("review_notes") else "")
              + (f'<p>{e(rec.get("membership_note"))}</p>' if rec.get("membership_note") else "")
              + '<p>Only official sources are recorded. <a href="../../?about=method" data-keep-query>Read the full methodology</a>.</p>'
              '<p class="export"><span>Download this profile:</span><button type="button" class="btn" data-export="csv">CSV</button><button type="button" class="btn" data-export="json">JSON</button></p></section>')
@@ -599,12 +597,8 @@ ROLE_LABEL = {"hero": "Header", "feature": "Beside the overview", "backdrop": "B
 
 def cap(im):
     """Photo caption; on Arabic pages its machine translation, marked as such."""
-    if im.get("caption_ar"): return f'<span lang="ar">{e(im["caption_ar"])}</span> <span class="mt-label">{e(i18n.T("Machine translation"))}</span>'
+    if im.get("caption_ar"): return f'<span lang="ar">{e(im["caption_ar"])}</span>'
     return e(im["caption"])
-
-
-def mt_tag(on):
-    return f' <span class="mt-label">{e(i18n.T("Machine translation"))}</span>' if on else ""
 
 
 def ar_attr(t):
@@ -618,8 +612,10 @@ def ar_title(i):
     return i18n.content(i["id"], "title", i.get("english_title"))
 
 
-def paras(text, is_ar=False):
-    return "".join(f'<p{ar_attr(is_ar)}>{e(p)}</p>' for p in re.split(r"\n\s*\n", text or "") if p.strip())
+def paras(text, is_ar=False, anchor=None):
+    """Paragraphs of a narrative; a translated one ends with the small link to the original text."""
+    ps = [p for p in re.split(r"\n\s*\n", text or "") if p.strip()]
+    return "".join(f'<p{ar_attr(is_ar)}>{e(p)}{i18n.orig_link(anchor) if is_ar and anchor and n == len(ps) - 1 else ""}</p>' for n, p in enumerate(ps))
 
 
 def load_photos():
