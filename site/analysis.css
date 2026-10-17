@@ -92,3 +92,7 @@
 /* UX phase 5: dark labels on heat step 7 in dark mode (AA contrast) */
 @media (prefers-color-scheme:dark){:root:where(:not([data-theme="light"])) .chart .h7+.hv{fill:#0b0b0b}}
 :root[data-theme="dark"] .chart .h7+.hv{fill:#0b0b0b}
+/* in-bar labels take a colour that reads on their bar (AA) */
+.chart .mark.s-b+.inlab{fill:#0b1029}
+@media (prefers-color-scheme:dark){:root:where(:not([data-theme="light"])) .chart .mark.s-n+.inlab,:root:where(:not([data-theme="light"])) .chart .mark.s-d+.inlab{fill:#0b1029}}
+:root[data-theme="dark"] .chart .mark.s-n+.inlab,:root[data-theme="dark"] .chart .mark.s-d+.inlab{fill:#0b1029}
