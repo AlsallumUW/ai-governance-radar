@@ -269,7 +269,9 @@ def inst_item(i, orgs, srcs, cats, regional_from=None):
             + (f'<p class="inst-sum"{ar_attr(sum_ar)}>{e(sum_ar or i.get("summary"))}{i18n.orig_link(i["id"]) if sum_ar else ""}</p>' if i.get("summary") else "")
             + (f'<p class="inst-status"{ar_attr(st_ar)}>{e(st_ar or i.get("current_status"))}</p>' if i.get("current_status") else "")
             + f'<p class="inst-foot">{" · ".join(links)}<span class="verify v-{e(vl)}">{e(VERIFY.get(vl, vl or "Verification not recorded"))}</span>'
-            + (f'<span class="inst-cats">{e(catnames)}</span>' if catnames else "") + '</p></article>')
+            + (f'<span class="inst-cats">{e(catnames)}</span>' if catnames else "") + '</p>'
+            + (f'<details class="src-notes"><summary>Source notes</summary><p lang="en" dir="ltr">{e(i["evidence_reference"])}</p></details>' if i.get("evidence_reference") else "")
+            + '</article>')
 
 
 def figure(fid, title, desc, svg, table, note=""):
