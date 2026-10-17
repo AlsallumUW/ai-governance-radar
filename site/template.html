@@ -49,7 +49,7 @@
 .lg-note{font-size:9.5px;color:#a9b2d6}.lg-ring{display:inline-flex;align-items:center;gap:6px;font-size:10px}
 .map-legend>span .ring-sw{margin-inline-end:0}
 /* hover / tap card */
-.map-tip{width:300px;padding:0;overflow:hidden;background:#151b40f7;border:1px solid #36448a;box-shadow:0 16px 40px #0009;border-radius:12px}
+.map-tip{width:300px;padding:0;overflow:hidden;background:#151b40;border:1px solid #36448a;box-shadow:0 16px 40px #0009;border-radius:12px}
 .map-tip.is-pinned{pointer-events:auto}
 .card-photo{margin:0;position:relative;aspect-ratio:16/9;background:#1b2350}.card-photo img{display:block;width:100%;height:100%;object-fit:cover}
 .card-photo figcaption{position:absolute;inset-inline:0;bottom:0;padding:14px 10px 6px;font-size:10px;color:#eef1fb;background:linear-gradient(transparent,#0b1029d9)}
@@ -75,8 +75,8 @@
 .ls-item:hover,.ls-item:focus-visible{background:#1f2858}
 .ls-item .country-flag{width:20px;height:15px;margin:0}
 .ls-name{font-weight:650}.ls-title{color:#c2c9ea;overflow:hidden;text-overflow:ellipsis;min-width:0}.ls-date{color:#98a2cc;font-size:10px;font-variant-numeric:tabular-nums}
-@media(prefers-reduced-motion:reduce){.radar-sweep{display:none}.ring-pulse{animation:none;opacity:.6}.ls-track{animation:none}.ls-viewport{overflow-x:auto}.ls-dup{display:none}}
-@media(max-width:760px){.map-mode{top:8px;inset-inline-start:8px}.map-caption{top:46px}.map-mode button{padding:6px 11px}.map-tip{width:min(300px,calc(100% - 16px))}.latest-strip{min-height:42px}.ls-item{max-width:300px}}
+@media(prefers-reduced-motion:reduce){.radar-sweep{display:none}.ring-pulse{animation:none;opacity:.6}.ls-track,[dir="rtl"] .ls-track{animation:none}.ls-viewport{overflow-x:auto}.ls-dup{display:none}}
+@media(max-width:760px){.map-mode{top:8px;inset-inline-start:8px}.map-caption{top:46px}.map-mode button{padding:6px 11px}.map-tip{width:min(300px,calc(100% - 16px))}.map-tip .card-photo{aspect-ratio:21/9}.map-tip{max-height:calc(100% - 16px);overflow-y:auto;overscroll-behavior:contain}.latest-strip{min-height:42px}.ls-item{max-width:300px}}
 </style><style id="changelog-css">__CHANGELOG_CSS__</style></head><body><div id="app">
 <header class="topbar"><div class="brand"><div class="brand-icon" aria-hidden="true"></div><div><div class="eyebrow">Global policy intelligence</div><h1>AI Governance Radar</h1></div><span class="edition">GOVERNMENT DOCUMENTS</span><nav class="views" role="tablist" aria-label="Main view"><button class="view-tab active" role="tab" aria-selected="true" data-view="map">Map</button><button class="view-tab" role="tab" aria-selected="false" data-view="updates">Updates</button></nav><nav class="views pagelinks" aria-label="More pages"><a class="view-tab" href="analysis/">Analysis</a><a class="view-tab" href="timeline/">Timeline</a><a class="view-tab" href="suggest/">Suggest an update</a></nav></div><div class="actions"><button class="button" id="directoryBtn">195 countries</button><button class="button" id="methodBtn">Methodology</button><button class="button" id="exportBtn">Export data</button><button class="button" id="resetBtn">Reset map</button></div></header>
 <main class="layout" id="layout"><aside class="sidebar"><section><div class="label">Find a jurisdiction</div><div class="search-wrap"><input id="searchInput" type="search" aria-label="Search countries or governance records" placeholder="Country or governance term…" autocomplete="off"><div id="searchResults" class="search-results" hidden></div></div></section>
