@@ -758,9 +758,29 @@
   "https://": "https://",
   "English original": "النص الأصلي بالإنجليزية",
   "Original text": "النص الأصلي",
-  "Arabic texts of documents not published in Arabic are translations; the original text is authoritative.": "النصوص العربية للوثائق غير المنشورة بالعربية مترجمة، والنص الأصلي هو المرجع."
+  "Arabic texts of documents not published in Arabic are translations; the original text is authoritative.": "النصوص العربية للوثائق غير المنشورة بالعربية مترجمة، والنص الأصلي هو المرجع.",
+  "Globe": "الكرة الأرضية",
+  "Map view": "طريقة عرض الخريطة",
+  "Latest": "الأحدث",
+  "Latest government actions": "أحدث الإجراءات الحكومية",
+  "Latest document": "أحدث وثيقة",
+  "Documents recorded": "الوثائق المرصودة",
+  "Counts documents recorded; it does not rate the quality of governance.": "يحتسب الوثائق المرصودة، ولا يقيّم جودة الحوكمة.",
+  "Government action in the last 30 days": "إجراء حكومي خلال آخر 30 يومًا",
+  "Open country page →": "← فتح صفحة الدولة",
+  "GLOBE · GOVERNMENT AI GOVERNANCE": "الكرة الأرضية · حوكمة الذكاء الاصطناعي الحكومية",
+  "Drafts": "المسودات",
+  "Non-binding": "غير ملزم"
  },
  "patterns": [
+  [
+   "^1 government action in the last 30 days$",
+   "إجراء حكومي واحد خلال آخر 30 يومًا"
+  ],
+  [
+   "^(\\d[\\d,]*) government actions in the last 30 days$",
+   "إجراءات حكومية خلال آخر 30 يومًا: {1}"
+  ],
   [
    "^(\\d[\\d,]*) documents?$",
    "{1} وثيقة"
