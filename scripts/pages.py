@@ -419,7 +419,7 @@ def country_page(j, D, rec, flags, ctx):
     orgs, srcs = ctx["orgs"], ctx["srcs"]
     canon = f"{SITE_URL}country/{jid}/"
     memberships = [b for b in BODY_ORDER if jid in ctx["members"].get(b, ())]
-    cets = ctx["cets"].get(jid); c108 = jid in ctx["c108"]; c108_pending = jid in ctx["c108_pending"]
+    cets = ctx["cets"].get(jid); c108 = jid in ctx["c108"]
     n_bind = sum(1 for i in rows_all if kind(i) == "binding"); n_draft = sum(1 for i in rows_all if kind(i) == "draft"); n_soft = len(rows_all) - n_bind - n_draft
     title = f"{j['name']}: AI governance profile | AI Governance Radar"
     desc = first_sentence(narr.get("summary")) or f"Official AI-governance laws, strategies and guidance recorded for {j['name']}."
@@ -448,7 +448,8 @@ def country_page(j, D, rec, flags, ctx):
     if cets_line: treaty.append(f'<li><span class="k">CETS 225 (CoE AI Convention)</span><span class="v">{e(cets_line)}</span></li>')
     oa = ctx["oecd"].get(jid)
     if oa: treaty.append(f'<li><span class="k">OECD AI Recommendation</span><span class="v">Adherent{" (OECD member)" if oa.get("member") else " · non-member, since " + fmt_date(oa["date"]) if oa.get("date") else " · non-member"}</span></li>')
-    if c108 or c108_pending: treaty.append(f'<li><span class="k">Convention 108 (data protection)</span><span class="v">{"Party" if c108 else "Party; ratification act pending verification"}</span></li>')
+    # countries in pending_c108 show no line here; the analysis page note explains them
+    if c108: treaty.append('<li><span class="k">Convention 108 (data protection)</span><span class="v">Party</span></li>')
     stats = [("Instruments", len(rows_all)), ("Binding or mandatory", n_bind), ("Non-binding", n_soft), ("Drafts", n_draft), ("Leads", len(leads))]
     ph = ctx["photos"].get(jid) or {}
     hero_img = ph.get("hero")
