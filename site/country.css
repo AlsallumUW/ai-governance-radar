@@ -1,11 +1,11 @@
 /* AI Governance Radar · country and body pages (editorial template) */
-:root{color-scheme:light;--page:#f9f9f7;--surface:#fcfcfb;--ink:#0b0b0b;--ink-2:#52514e;--muted:#6f6d68;--hair:#e1e0d9;--axis:#c3c2b7;--ring:rgba(11,11,11,.10);
-  --s-b:#2a78d6;--s-n:#eb6834;--s-d:#169a6b;--accent:#1c5cab;--chip:#eef3fa;--chip-ink:#184f95;--tag:#f1f0ec;--tag-b:#e3eefc;--tag-b-ink:#104281;--tag-d:#fdeee7;--tag-d-ink:#8a3510;
-  --cov-found:#2a78d6;--cov-none:#c3c2b7;--maxw:1180px;--text:68ch}
-@media (prefers-color-scheme:dark){:root:where(:not([data-theme="light"])){color-scheme:dark;--page:#0d0d0d;--surface:#1a1a19;--ink:#f0efec;--ink-2:#c3c2b7;--muted:#a3a19a;--hair:#2c2c2a;--axis:#383835;--ring:rgba(255,255,255,.10);
-  --s-b:#3987e5;--s-n:#d95926;--s-d:#199e70;--accent:#86b6ef;--chip:#16263a;--chip-ink:#b7d3f6;--tag:#232321;--tag-b:#13253d;--tag-b-ink:#b7d3f6;--tag-d:#33200f;--tag-d-ink:#f2b38f;--cov-found:#3987e5;--cov-none:#4a4a46}}
-:root[data-theme="dark"]{color-scheme:dark;--page:#0d0d0d;--surface:#1a1a19;--ink:#f0efec;--ink-2:#c3c2b7;--muted:#a3a19a;--hair:#2c2c2a;--axis:#383835;--ring:rgba(255,255,255,.10);
-  --s-b:#3987e5;--s-n:#d95926;--s-d:#199e70;--accent:#86b6ef;--chip:#16263a;--chip-ink:#b7d3f6;--tag:#232321;--tag-b:#13253d;--tag-b-ink:#b7d3f6;--tag-d:#33200f;--tag-d-ink:#f2b38f;--cov-found:#3987e5;--cov-none:#4a4a46}
+:root{color-scheme:light;--page:#f6f8fb;--surface:#ffffff;--ink:#0f1430;--ink-2:#3b4470;--muted:#596183;--hair:#dde2ee;--axis:#b3bad2;--ring:rgba(15,20,48,.10);
+  --s-b:#1f8a70;--s-n:#d9601f;--s-d:#3f7d9a;--accent:#17785f;--chip:#e3f3ee;--chip-ink:#145c49;--tag:#eef1f7;--tag-b:#e3f3ee;--tag-b-ink:#145c49;--tag-d:#fff0e8;--tag-d-ink:#9a3a0c;
+  --cov-found:#1f8a70;--cov-none:#b3bad2;--maxw:1180px;--text:68ch}
+@media (prefers-color-scheme:dark){:root:where(:not([data-theme="light"])){color-scheme:dark;--page:#0f1430;--surface:#151b40;--ink:#eef1fb;--ink-2:#c3c9e4;--muted:#9aa3c7;--hair:#26326c;--axis:#34407a;--ring:rgba(255,255,255,.10);
+  --s-b:#3ead92;--s-n:#fc9c3c;--s-d:#8bbcc4;--accent:#3ead92;--chip:#173352;--chip-ink:#9fe3cf;--tag:#1b2350;--tag-b:#173352;--tag-b-ink:#9fe3cf;--tag-d:#3a2214;--tag-d-ink:#fdb48f;--cov-found:#3ead92;--cov-none:#3a4478}}
+:root[data-theme="dark"]{color-scheme:dark;--page:#0f1430;--surface:#151b40;--ink:#eef1fb;--ink-2:#c3c9e4;--muted:#9aa3c7;--hair:#26326c;--axis:#34407a;--ring:rgba(255,255,255,.10);
+  --s-b:#3ead92;--s-n:#fc9c3c;--s-d:#8bbcc4;--accent:#3ead92;--chip:#173352;--chip-ink:#9fe3cf;--tag:#1b2350;--tag-b:#173352;--tag-b-ink:#9fe3cf;--tag-d:#3a2214;--tag-d-ink:#fdb48f;--cov-found:#3ead92;--cov-none:#3a4478}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
 body.cp{margin:0;background:var(--page);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;overflow-wrap:anywhere}
 a{color:var(--accent);text-underline-offset:2px}a:hover{text-decoration-thickness:2px}
@@ -116,9 +116,9 @@ details.leads[open]>summary::after{content:"Hide"}
   h2{break-after:avoid}
 }
 /* ===================================================== UX phase 2b: photo hero, side rail, sticky bar, scroll motion */
-:root{--rail:0px;--gap:0px;--bar-h:49px;--hero-ink:#fff;--tint:#e3eefc;--tint-ink:#1c5cab;--loc-sea:#eef3fa;--loc-land:#d9d8d0;--loc-me:#1c5cab;--ease:cubic-bezier(.2,.7,.2,1)}
-@media (prefers-color-scheme:dark){:root:where(:not([data-theme="light"])){--tint:#13253d;--tint-ink:#86b6ef;--loc-sea:#16202c;--loc-land:#3a3a37;--loc-me:#86b6ef}}
-:root[data-theme="dark"]{--tint:#13253d;--tint-ink:#86b6ef;--loc-sea:#16202c;--loc-land:#3a3a37;--loc-me:#86b6ef}
+:root{--rail:0px;--gap:0px;--bar-h:49px;--hero-ink:#fff;--tint:#e3f3ee;--tint-ink:#145c49;--loc-sea:#eef1f7;--loc-land:#cfd5e6;--loc-me:#17785f;--ease:cubic-bezier(.2,.7,.2,1)}
+@media (prefers-color-scheme:dark){:root:where(:not([data-theme="light"])){--tint:#173352;--tint-ink:#9fe3cf;--loc-sea:#131938;--loc-land:#2f3a72;--loc-me:#3ead92}}
+:root[data-theme="dark"]{--tint:#173352;--tint-ink:#9fe3cf;--loc-sea:#131938;--loc-land:#2f3a72;--loc-me:#3ead92}
 body.cp{overflow-x:clip}
 #main{display:block}
 /* sticky bar: name and counts appear once the hero has scrolled away */
