@@ -70,3 +70,9 @@ motion();
 reduce.addEventListener&&reduce.addEventListener('change',()=>{if(reduce.matches){root.classList.remove('js-motion');if(media)media.style.transform='';bands.forEach(b=>b.firstElementChild.style.transform='');$$('.hero dd[data-count]').forEach(dd=>dd.textContent=dd.dataset.count)}});
 addEventListener('beforeprint',()=>{$$('.rv').forEach(el=>el.classList.add('in'));$$('.hero dd[data-count]').forEach(dd=>dd.textContent=dd.dataset.count);if(media)media.style.transform=''});
 })();
+/* header counts: (i) button opens the definitions; Escape or a click elsewhere closes them */
+(function(){const b=document.querySelector('.info-btn'),p=b&&document.getElementById(b.getAttribute('aria-controls'));if(!p)return;
+const set=o=>{p.hidden=!o;b.setAttribute('aria-expanded',String(o))};
+b.addEventListener('click',e=>{e.stopPropagation();set(p.hidden)});
+document.addEventListener('click',e=>{if(!p.hidden&&!p.contains(e.target))set(false)});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!p.hidden){set(false);b.focus()}})})();

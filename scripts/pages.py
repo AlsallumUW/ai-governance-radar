@@ -93,6 +93,29 @@ def cets_text(jid, ctx):
     return "Not signed"
 
 
+def cets_positive(jid, ctx):
+    """Header line for CETS 225 on a country page: ratified, signed or covered by the EU's signature; None otherwise."""
+    s = ctx["cets"].get(jid)
+    if s: return {"ratified": "Ratified", "signed": "Signed"}.get(s, s.capitalize())
+    eu = ctx.get("eu_cets")
+    if eu and jid in ctx["members"].get("EU", ()):
+        return f"EU signatory ({fmt_date(eu)})" if eu != "?" else "EU signatory"
+    return None
+
+
+COUNT_DEFS = ["Binding or mandatory: laws, regulations, treaties and policies mandatory within their scope",
+              "Non-binding: strategies, guidelines, guidance, codes and opinions", "Drafts: consultation drafts.",
+              "Leads: documents not yet verified as in-scope instruments.",
+              "Counts include state, provincial and local instruments; regional instruments are listed separately."]
+
+
+def count_info():
+    """Small (i) button beside the header counts; the definitions open in a popover (country.js)."""
+    return ('<div class="count-info"><button type="button" class="info-btn" aria-expanded="false" aria-controls="countDefs" aria-label="About the counts">'
+            '<span aria-hidden="true">i</span></button><div class="info-pop" id="countDefs" role="region" aria-label="About the counts" hidden>'
+            '<p class="info-h">How the counts are defined</p><ul>' + "".join(f"<li>{e(t)}</li>" for t in COUNT_DEFS) + '</ul></div></div>')
+
+
 def first_sentence(t, n=158):
     t = re.sub(r"\s+", " ", t or "").strip()
     s = re.split(r"(?<=[.!?])\s", t)[0]
@@ -266,12 +289,12 @@ def head(title, desc, canon, page_type="article", preload=None):
             + '<link rel="stylesheet" href="../../assets/country.css"></head>')
 
 
-def hero(eyebrow, h1, stats, photo=None, art=None, kind=None):
+def hero(eyebrow, h1, stats, photo=None, art=None, kind=None, info=""):
     """Full-width page header. With a photo: the photo under a scrim, name and counts over it, credit line below.
     Without one: a country silhouette (kind None) or the member map of a body (kind "map") on a tinted background."""
     k = "photo" if photo else (kind or "shape")
     body = (f'<div class="hero-body"><p class="eyebrow">{eyebrow}</p>{h1}'
-            '<dl class="stats">' + "".join(f'<div><dt>{a}</dt><dd data-count="{v}">{v}</dd></div>' for a, v in stats) + '</dl></div>')
+            '<div class="stats-row"><dl class="stats">' + "".join(f'<div><dt>{a}</dt><dd data-count="{v}">{v}</dd></div>' for a, v in stats) + f'</dl>{info}</div></div>')
     if photo:
         media = f'<div class="hero-media">{img_tag(photo, "hero-img")}</div><div class="hero-scrim" aria-hidden="true"></div>'
         foot = f'<p class="hero-credit"><span class="hero-cap">{cap(photo)}</span>{credit(photo)}</p>'
@@ -421,10 +444,11 @@ def country_page(j, D, rec, flags, ctx):
     # a. header
     chips = "".join(f'<a class="chip" href="../../body/{b}/">{e(ctx["jur"][b].get("short_name") or b)}</a>' for b in memberships)
     treaty = []
-    treaty.append(f'<li><span class="k">CETS 225 (CoE AI Convention)</span><span class="v">{e(cets_text(jid, ctx))}</span></li>')
+    cets_line = cets_positive(jid, ctx)
+    if cets_line: treaty.append(f'<li><span class="k">CETS 225 (CoE AI Convention)</span><span class="v">{e(cets_line)}</span></li>')
     oa = ctx["oecd"].get(jid)
     if oa: treaty.append(f'<li><span class="k">OECD AI Recommendation</span><span class="v">Adherent{" (OECD member)" if oa.get("member") else " · non-member, since " + fmt_date(oa["date"]) if oa.get("date") else " · non-member"}</span></li>')
-    treaty.append(f'<li><span class="k">Convention 108 (data protection)</span><span class="v">{"Party" if c108 else "Party; ratification act pending verification" if c108_pending else "Not recorded as a party"}</span></li>')
+    if c108 or c108_pending: treaty.append(f'<li><span class="k">Convention 108 (data protection)</span><span class="v">{"Party" if c108 else "Party; ratification act pending verification"}</span></li>')
     stats = [("Instruments", len(rows_all)), ("Binding or mandatory", n_bind), ("Non-binding", n_soft), ("Drafts", n_draft), ("Leads", len(leads))]
     ph = ctx["photos"].get(jid) or {}
     hero_img = ph.get("hero")
@@ -432,12 +456,11 @@ def country_page(j, D, rec, flags, ctx):
          topbar(secs, bar_ident(j["name"], stats)), '<main id="main">']
     eyebrow = e(j.get("region") or "") + (' · Country profile' if j.get("region") else 'Country profile')
     h1 = f'<h1>{"<img class=flag src=" + chr(34) + flag + chr(34) + " alt=" + chr(34) + chr(34) + ">" if flag else ""}{e(j["name"])}</h1>'
-    H.append(hero(eyebrow, h1, stats, photo=hero_img, art=None if hero_img else geo.silhouette(jid, j["name"])))
+    H.append(hero(eyebrow, h1, stats, photo=hero_img, art=None if hero_img else geo.silhouette(jid, j["name"]), info=count_info()))
     H.append('<div class="page layout">' + rail(secs, geo.locator(jid, j["name"])) + '<div class="content">')
     H.append('<section class="intro" aria-label="Memberships and treaty status">'
              + (f'<p class="chips" aria-label="Memberships">{chips}</p>' if chips else "")
              + f'<ul class="facts">{"".join(treaty)}<li><span class="k">Last reviewed</span><span class="v">{e(fmt_date(narr.get("last_deep_review")) or "Not yet deep-reviewed")}</span></li></ul>'
-             + f'<p class="stats-note">{COUNT_NOTE} Leads: documents not yet verified as in-scope instruments. Counts include state, provincial and local instruments; regional instruments are listed separately.</p>'
              + f'<p class="hero-links"><a href="../../timeline/?country={e(jid)}">See this country on the timeline →</a><a href="../../analysis/">Global analysis →</a><a href="../../suggest/?country={e(jid)}">Suggest an update →</a></p></section>')
     # b. overview + c. charts in a two-column grid
     ov = ""
