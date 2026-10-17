@@ -310,3 +310,8 @@ body.cp{overflow-x:clip}
 .info-pop .info-h{margin:0 0 6px;font-weight:650}
 .info-pop ul{margin:0;padding-inline-start:18px;display:grid;gap:4px}
 @media (max-width:560px){.count-info{margin-top:36px}}
+/* research source notes under each instrument, collapsed by default */
+.src-notes{margin:6px 0 0;font-size:13px;color:var(--muted)}
+.src-notes summary{cursor:pointer;width:max-content;max-width:100%;color:var(--ink-2)}
+.src-notes summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.src-notes p{margin:6px 0 0;padding:8px 10px;border-inline-start:2px solid var(--hair);overflow-wrap:anywhere;text-align:start;unicode-bidi:plaintext}

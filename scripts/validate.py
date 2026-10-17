@@ -143,6 +143,11 @@ def check_translations():
     return errs, warns
 
 
+BINDING_STATUSES = ("binding_law", "binding_regulation")
+# current_status is shown to the public; research-log wording belongs in evidence_reference (shown under "Source notes")
+STATUS_LOG = re.compile(r"audit 20\d\d|\bcurl\b|HTTP [0-9]{3}|not read|fetch", re.I)
+
+
 def check(only=None):
     cats = set(load(DATA / "meta.json")["categories"])
     errs, warns, ids, srcids = [], [], Counter(), Counter()
@@ -166,6 +171,10 @@ def check(only=None):
             bad = [c for c in i.get("categories", []) if c not in cats]
             if bad: E(f"{k} unknown categories {bad}")
             if i.get("category") not in i.get("categories", []): E(f"{k} primary category not in categories")
+            if i.get("legal_status") in BINDING_STATUSES and "binding-law" not in i.get("categories", []):
+                E(f"{k} is {i['legal_status']} but lacks the binding-law category")
+            m = STATUS_LOG.search(i.get("current_status") or "")
+            if m: E(f"{k} current_status contains research-log wording '{m.group(0)}' (move it to evidence_reference)")
             if i.get("lifecycle") not in LIFECYCLE: E(f"{k} lifecycle '{i.get('lifecycle')}' not one of {LIFECYCLE}")
             for f in ["publication_date", "effective_date", "last_amended_date", "verification_date"]:
                 if i.get(f) and not ISO.match(i[f]): E(f"{k} {f} not ISO date: {i[f]}")
