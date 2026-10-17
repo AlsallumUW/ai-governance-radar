@@ -8,7 +8,7 @@ Called from pages.write_all with the same context the country pages use. Nothing
 import json, math, re, statistics
 import i18n
 from i18n import tr
-from pages import (e, kind, KIND_LABEL, KIND_CLASS, COUNT_NOTE, STATUS_LABEL, BODY_ORDER, SITE_URL, fmt_date, year)
+from pages import (ar_title, e, kind, KIND_LABEL, KIND_CLASS, COUNT_NOTE, STATUS_LABEL, BODY_ORDER, SITE_URL, fmt_date, year)
 
 REGIONS = ["Africa", "Americas", "Asia", "Europe", "Oceania"]
 GROUPS = ("soft", "binding", "draft")          # stack order, bottom to top (orange / blue / aqua: the weak pair is never adjacent)
@@ -609,7 +609,7 @@ def timeline_data(D, ctx):
         iss = (i.get("issuing_authority") or i.get("publisher_name") or "")
         if len(iss) > 140: iss = iss[:139].rsplit(" ", 1)[0] + "…"
         rows.append([i["id"], i["jurisdiction_id"], d, ["binding", "soft", "draft"].index(kind(i)),
-                     i.get("english_title") or i.get("official_title") or "", iss, st_keys.index(i.get("legal_status") or ""),
+                     ar_title(i) or i.get("english_title") or i.get("official_title") or "", iss, st_keys.index(i.get("legal_status") or ""),
                      [cat_keys.index(c) for c in i.get("categories", []) if c in cat_keys], lv.index(i.get("government_level")) if i.get("government_level") in lv else 0,
                      i.get("source_url") or i.get("official_webpage_url") or "", app.get(i["id"], [])])
     bodies = {b: [jur[b]["name"] if b in jur else b, sorted(ctx["members"].get(b, ()))] for b in BODY_ORDER if b in jur}

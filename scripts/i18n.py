@@ -111,10 +111,35 @@ def T(en, **kw):
     return t.format(**kw)
 
 
-def content(rid, field):
-    """Machine translation of a content field (phase 4b part B, data/i18n/ar/); None until translated."""
+def content(rid, field, en=None):
+    """Machine translation of a published text (phase 4b part B, data/i18n/ar/) on Arabic pages; None on English pages, before
+    it is translated, when it was skipped, or when the English has changed since (a stale translation is never shown)."""
     if LANG != "ar": return None
-    return _CONTENT.get(rid, {}).get(field, {}).get("ar") if isinstance(_CONTENT.get(rid, {}).get(field), dict) else None
+    entry = _CONTENT.get(rid, {}).get(field)
+    if not isinstance(entry, dict) or entry.get("ar") in (None, "", []): return None
+    if en is not None:
+        from i18n_content import src_hash
+        if entry.get("src") != src_hash(en): return None
+    return entry["ar"]
+
+
+def orig_link(anchor):
+    """Small "original text" link placed beside a translated title or summary (localise() points EN_ORIGINAL at the English page)."""
+    return f' <a class="orig-link" href="EN_ORIGINAL#{anchor}" hreflang="en">{T("Original text")}</a>'
+
+
+def change_title(c, instruments):
+    """(Arabic title of a change event, True if it is a machine translation) or (None, False). A change that carries its
+    instrument's title shows that instrument's Arabic official title, or the translation of its English title."""
+    t = content(c.get("id"), "title", c.get("title"))
+    if t: return t, True
+    i = instruments.get(c.get("instrument_id"))
+    if i and c.get("title") in (i.get("english_title"), i.get("official_title")):
+        off = i.get("official_title") or ""
+        if re.search(r"[\u0600-\u06FF]", off): return off, False
+        t = content(i["id"], "title", i.get("english_title"))
+        if t: return t, True
+    return None, False
 
 
 def _load_content():
@@ -164,5 +189,5 @@ def translate_html(doc):
 
 def runtime_js():
     """assets/i18n-ar.js: the dictionary and the same matching rules, applied to text that scripts add to Arabic pages."""
-    data = {"s": STR, "p": D.get("patterns", []), "m": MONTHS, "em": {k: v for k, v in EN_MONTHS.items()}}
+    data = {"s": {k: v for k, v in STR.items() if k != "Machine translation"}, "p": D.get("patterns", []), "m": MONTHS, "em": {k: v for k, v in EN_MONTHS.items()}}
     return ("(function(){'use strict';var I=" + json.dumps(data, ensure_ascii=False, separators=(",", ":")) + ";\n" + (ROOT / "site/i18n/runtime.js").read_text(encoding="utf-8") + "})();")

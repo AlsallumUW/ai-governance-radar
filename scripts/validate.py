@@ -130,6 +130,19 @@ def check_i18n():
     return errs
 
 
+def check_translations():
+    """Arabic machine translations (data/i18n/ar/): every text the Arabic pages translate must have a translation whose source
+    hash matches the current English (missing or stale = error); a skipped text is a warning."""
+    if not (DATA / "i18n" / "ar").is_dir(): return [], []
+    from i18n_content import audit
+    errs, warns = [], []
+    for jid, r in audit().items():
+        if r["missing"]: errs.append(f"{jid}: {len(r['missing'])} texts without an Arabic translation, e.g. {r['missing'][:3]} (python3 scripts/i18n_content.py extract {jid})")
+        if r["stale"]: errs.append(f"{jid}: {len(r['stale'])} Arabic translations are stale (English changed), e.g. {r['stale'][:3]}")
+        if r["skipped"]: warns.append(f"{jid}: {len(r['skipped'])} texts left untranslated (skip), e.g. {r['skipped'][:3]}")
+    return errs, warns
+
+
 def check(only=None):
     cats = set(load(DATA / "meta.json")["categories"])
     errs, warns, ids, srcids = [], [], Counter(), Counter()
@@ -199,6 +212,8 @@ def check(only=None):
         errs += e2; warns += w2
         errs += check_explore_overrides()
         errs += check_i18n()
+        e3, w3 = check_translations()
+        errs += e3; warns += w3
         from next_batch import QUEUE, check_queue
         errs += check_queue(load(QUEUE), [p.stem for p in (DATA / "countries").glob("*.json")])
     return errs, warns

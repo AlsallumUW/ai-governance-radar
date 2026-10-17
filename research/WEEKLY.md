@@ -68,10 +68,19 @@ The scheduled task runs **every day at 06:00 Riyadh time**. Each run sweeps one 
      - **Report:** record "now loads" (what changed) or "still blocked" (which sites).
    - **Convention 108:** for each country in today's group that is on `pending_c108`, try once to read its own ratification or accession act (PROTOCOL §2b). If it is read, add the country to the Convention 108 record's `applies_to` in `data/regional/COE.json`, cite the act as a source, and remove it from `pending_c108`.
 7. **Commit as you go.** Commit each country's file to `$BR` as soon as its sub-agent finishes, and push. An interruption then loses only unfinished countries. If a run is cut off and resumed, re-check every record written before the restart against its official text before updating the PR (BACKFILL.md step 5).
-8. **Validate and log.**
+8. **Log, translate, validate.**
    ```bash
-   python3 scripts/validate.py          # must pass with 0 errors
    python3 scripts/log_changes.py       # writes change events vs origin/main
+   python3 scripts/i18n_content.py status
+   ```
+   - **Arabic translations, in this same PR.** Every new or changed record gets its Arabic machine translation now:
+     extract the missing and stale texts for the countries changed today (`python3 scripts/i18n_content.py extract <ISO3> ... > /tmp/work.json`,
+     include `_global` if `data/changes-global.json` changed), translate them under `research/TRANSLATION_AR.md` using the terms in
+     `research/aigr_arabic_terms.csv` exactly, and store them with `python3 scripts/i18n_content.py apply /tmp/work.json`.
+     Translate faithfully: never add, soften or strengthen legal effect; keep names, numbers and dates unchanged.
+     Never re-translate an official Arabic title. Report the number of texts translated (and any skipped) in today's PR section.
+   ```bash
+   python3 scripts/validate.py          # must pass with 0 errors (missing or stale Arabic translations are errors)
    python3 scripts/build.py             # must build
    ```
    Commit and push.
@@ -86,6 +95,7 @@ The scheduled task runs **every day at 06:00 Riyadh time**. Each run sweeps one 
      - **Retry**: each retry country in the group, "now loads" (with what changed) or "still blocked"
      - **Convention 108 / CETS 225**: results for the group's `pending_c108` countries and, on Day 1, any CETS 225 status change
      - **Needs review** and **Could not verify**
+     - **Arabic translations**: texts translated today, and any left untranslated (skip) with the reason
      - `validate.py` output (error and warning counts)
    - **Week summary at the top of the body:** keep a short list of which days have run so far, with totals of actions found and records added.
 
@@ -142,5 +152,5 @@ The scheduled task runs **every day at 06:00 Riyadh time**. Each run sweeps one 
 **Run mechanics**
 - Commit each country as it finishes.
 - Keep instrument ids stable: edit records in place.
-- Do not touch `site/` or `scripts/` in a weekly run. Propose tool changes in the PR description instead.
+- Do not touch `site/` or `scripts/` in a weekly run (Arabic translations go in `data/i18n/ar/`, which is data). Propose tool changes in the PR description instead.
 - Link checking runs separately in GitHub Actions every Monday (`.github/workflows/links.yml`).
