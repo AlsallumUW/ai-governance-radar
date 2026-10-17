@@ -22,7 +22,7 @@ ISSUER = {
     "government_department": "Governments and ministries", "government_council": "Governments and ministries", "head_of_state": "Governments and ministries",
     "subnational_government": "Governments and ministries", "local_government": "Governments and ministries", "municipal": "Governments and ministries",
     "regulator": "Regulators", "data_protection_authority": "Regulators", "central_bank": "Regulators", "cybersecurity_agency": "Regulators",
-    "oversight_body": "Regulators",
+    "oversight_body": "Regulators", "national_authority": "Regulators",
     "judiciary": "Courts and judicial councils", "court": "Courts and judicial councils", "judicial_body": "Courts and judicial councils",
     "standards_body": "Other", "advisory_body": "Other", "independent_body": "Other", "audit": "Other", "audit_body": "Other",
     "attorney_general": "Other", "prosecution_service": "Other", "ethics_body": "Other", "sector_body": "Other", "public_body": "Other",
