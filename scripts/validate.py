@@ -7,7 +7,7 @@
 
 Countries whose narrative.last_deep_review is set are held to the full deep-review standard.
 """
-import re, sys
+import json, re, sys
 from collections import Counter
 from common import DATA, LIFECYCLE, LINK_STATUS, RADAR_TYPES, WORLD_TYPES, jurisdiction_files, load
 
@@ -149,6 +149,10 @@ STATUS_LOG = re.compile(r"audit 20\d\d|\bcurl\b|HTTP [0-9]{3}|not read|fetch|aut
                         r"|this record|the radar(?! tecnol[oó]gico)", re.I)
 
 
+# review_notes and no_material_found_note are public text too: also no agent/tool/run vocabulary
+NOTE_LOG = re.compile(STATUS_LOG.pattern + r"|\bHTTP\b|WebFetch|\bTLS\b|\bproxy\b|\bagents?\b|sub-?agent|\bPROTOCOL\b|\bpilot\b|thin pass|\btier [ABC]\b|batch run", re.I)
+
+
 def check(only=None):
     cats = set(load(DATA / "meta.json")["categories"])
     errs, warns, ids, srcids = [], [], Counter(), Counter()
@@ -174,6 +178,7 @@ def check(only=None):
             if i.get("category") not in i.get("categories", []): E(f"{k} primary category not in categories")
             if i.get("legal_status") in BINDING_STATUSES and "binding-law" not in i.get("categories", []):
                 E(f"{k} is {i['legal_status']} but lacks the binding-law category")
+            if re.search(r"turn\d+[a-z]+\d+", json.dumps(i, ensure_ascii=False)): E(f"{k} contains a search-tool citation token (turnNsearchN)")
             for f in ("current_status", "summary"):
                 m = STATUS_LOG.search(i.get(f) or "")
                 if m: E(f"{k} {f} contains research-log wording '{m.group(0)}' (move it to evidence_reference)")
@@ -208,6 +213,10 @@ def check(only=None):
             removed_ids = {x.get("instrument_id") for x in r.get("changes", []) if x.get("type") == "removed"}
             if c.get("instrument_id") and c["instrument_id"] not in inst_ids and c["instrument_id"] not in removed_ids:
                 E(f"change {c.get('id')} points to missing instrument {c['instrument_id']}")
+        for f, v in (("narrative.review_notes", (r.get("narrative") or {}).get("review_notes")),
+                     ("coverage_audit.no_material_found_note", (r.get("coverage_audit") or {}).get("no_material_found_note"))):
+            m = NOTE_LOG.search(v or "")
+            if m: E(f"{f} contains research-log wording '{m.group(0)}' (public text; move it to coverage_audit.technical_note)")
         if deep:
             n = r.get("narrative") or {}
             if not n.get("summary"): E("deep-reviewed but narrative.summary is empty")

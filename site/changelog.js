@@ -5,7 +5,7 @@ const $=s=>document.querySelector(s),$$=s=>Array.from(document.querySelectorAll(
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 let F={};try{F=JSON.parse(document.getElementById('flags').textContent)}catch(e){}
 const J=new Map(D.jurisdictions.map(j=>[j.id,j])),I=new Map(D.instruments.map(i=>[i.id,i]));
-const TYPES={published:['Published','new'],revised:['Revised','rev'],consultation:['Consultation','draft'],adopted:['Adopted','adopt'],applied:['Applied / in force','applied'],superseded:['Superseded','end'],repealed:['Repealed','end'],added:['Added to radar','radar'],corrected:['Record corrected','radar'],removed:['Removed','radar'],link:['Link change','radar'],radar:['Radar update','radar']};
+const TYPES={published:['Published','new'],revised:['Revised','rev'],consultation:['Consultation','draft'],adopted:['Adopted','adopt'],applied:['Applied / in force','applied'],event:['Event','applied'],superseded:['Superseded','end'],repealed:['Repealed','end'],added:['Added to radar','radar'],corrected:['Record corrected','radar'],removed:['Removed','radar'],link:['Link change','radar'],radar:['Radar update','radar']};
 const LIFE={draft:'Draft',consultation:'In consultation',published:'Published',adopted:'Adopted',in_force:'In force',superseded:'Superseded',repealed:'Repealed'};
 const age=R.ageOf;
 const label=t=>(TYPES[t]||[t])[0],tone=t=>(TYPES[t]||['','radar'])[1];

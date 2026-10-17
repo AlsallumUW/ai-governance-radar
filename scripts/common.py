@@ -4,7 +4,7 @@ import datetime as dt, hashlib, json, pathlib, subprocess
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 
-WORLD_TYPES = ["published", "revised", "consultation", "adopted", "applied", "superseded", "repealed"]
+WORLD_TYPES = ["published", "revised", "consultation", "adopted", "applied", "superseded", "repealed", "event"]  # event: a dated government action that is not a change to an instrument (e.g. hosting an intergovernmental forum)
 RADAR_TYPES = ["added", "corrected", "removed", "link", "radar"]
 LIFECYCLE = ["draft", "consultation", "published", "adopted", "in_force", "superseded", "repealed", "unverified"]
 LINK_STATUS = ["reachable", "redirected", "inaccessible", "broken", "not_checked"]
