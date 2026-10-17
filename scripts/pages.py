@@ -31,7 +31,7 @@ LIFE = {"draft": "Draft", "consultation": "In consultation", "published": "Publi
         "superseded": "Superseded", "repealed": "Repealed"}
 VERIFY = {"reviewed_primary_metadata": "Reviewed against the official text", "primary_source_located": "Official source located; text not fully reviewed"}
 EVENT = {"published": "Published", "revised": "Revised", "consultation": "Consultation", "adopted": "Adopted", "applied": "Applies / in force",
-         "superseded": "Superseded", "repealed": "Repealed"}
+         "superseded": "Superseded", "repealed": "Repealed", "event": "Event"}
 BODY_ORDER = ["EU", "GCC", "AU", "ASEAN", "COE", "UNESCO", "OECD", "ICESCO", "ALECSO", "G7", "G20"]
 # old body codes: a redirect page is kept at /body/<old>/ and links with ?body=<old> are read as the new code
 BODY_REDIRECTS = {"ISESCO": "ICESCO"}
