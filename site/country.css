@@ -299,3 +299,14 @@ body.cp{overflow-x:clip}
 /* language switch (UX phase 4b) */
 .lang-switch{font-size:14px;font-weight:600;color:var(--accent);text-decoration:none;padding:3px 10px;border:1px solid var(--hair);border-radius:999px;white-space:nowrap}
 .lang-switch:hover{border-color:var(--accent)}
+/* header counts: definitions behind a small (i) button */
+.stats-row{display:flex;align-items:flex-start;gap:10px}.stats-row .stats{flex:1;min-width:0}
+.count-info{position:relative;flex:none;margin-top:44px}
+.info-btn{display:grid;place-items:center;width:28px;height:28px;padding:0;border-radius:50%;border:1.5px solid currentColor;background:transparent;color:inherit;font:italic 700 15px/1 Georgia,"Times New Roman",serif;cursor:pointer;opacity:.85}
+.info-btn:hover,.info-btn[aria-expanded="true"]{opacity:1;background:color-mix(in srgb,currentColor 14%,transparent)}
+.info-btn:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.hero--photo .info-btn{color:#fff}
+.info-pop{position:absolute;bottom:calc(100% + 10px);inset-inline-end:0;z-index:20;width:min(380px,calc(100vw - 32px));padding:14px 16px;border:1px solid var(--hair);border-radius:10px;background:var(--surface);color:var(--ink);box-shadow:0 12px 32px rgba(0,0,0,.28);font-size:14px;line-height:1.5;text-align:start}
+.info-pop .info-h{margin:0 0 6px;font-weight:650}
+.info-pop ul{margin:0;padding-inline-start:18px;display:grid;gap:4px}
+@media (max-width:560px){.count-info{margin-top:36px}}
