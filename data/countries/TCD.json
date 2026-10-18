@@ -16,7 +16,7 @@
       "Presidency of the Republic of Chad"
     ],
     "last_deep_review": "2026-10-12",
-    "review_notes": "This review was carried out on 12 October 2026, but the official gazette, the presidency, the digital ministry and the national ICT agency websites could not be accessed, so no document could be read in full. Chad is marked for a later retry."
+    "review_notes": "A follow-up check on 18 October 2026 reached the Presidency, the telecoms regulator and the digital development agency, but the official gazette, the data protection and cyber authority, the digital ministry, the government and the National Assembly websites still could not be accessed. The full text of the 2015 data protection law, the decree creating the directorate-general for AI and the national digital and AI strategy remain pending."
   },
   "instruments": [
     {
@@ -50,7 +50,7 @@
       "organization_id": "o-e859da5fb8fa",
       "first_recorded": "2026-10-12",
       "last_changed": null,
-      "evidence_reference": "curl (browser user agent, --max-time 60): ARCEP Chad 'Lois' page read; it lists 'Loi N°007/PR/2015 portant Protection des Données à Caractère Personnel' with a PDF link. The PDF link returned HTTP 404 to curl and to WebFetch (all other law PDFs on the page also 404). Official gazette (sgg.td) and ANSICE site unreachable (DNS failure / HTTP 403). Summary note: Its specific obligations could not be checked because the official text was not accessible. Status note: The linked official PDF was broken on 2026-10-12, so the text could not be read.",
+      "evidence_reference": "curl (browser user agent, --max-time 60): ARCEP Chad 'Lois' page read; it lists 'Loi N°007/PR/2015 portant Protection des Données à Caractère Personnel' with a PDF link. The PDF link returned HTTP 404 to curl and to WebFetch (all other law PDFs on the page also 404). Official gazette (sgg.td) and ANSICE site unreachable (DNS failure / HTTP 403). Summary note: Its specific obligations could not be checked because the official text was not accessible. Status note: The linked official PDF was broken on 2026-10-12, so the text could not be read. local-retry-2026-10-18: ARCEP 'Lois' page re-read (HTTP 200, same listing); the Law 007/PR/2015 PDF and the other law PDFs still return HTTP 404 via curl and headless browser, so the official text remains unread. Presidency site now opens but its 'Actes du Chef de l'Etat' list (latest item June 2024) does not carry this law.",
       "official_webpage_url": "https://arcep.td/lois.html",
       "effective_date": null,
       "official_title": "Loi N°007/PR/2015 portant Protection des Données à Caractère Personnel",
@@ -104,15 +104,15 @@
         "binding-law",
         "cyber-security"
       ],
-      "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): page read (HTTP 200), lists Laws 012-015/PR/2014 and 006-009/PR/2015 with PDF links; every linked PDF returned HTTP 404 to curl and WebFetch, so the law text was not read.",
+      "date_reviewed": "2026-10-18",
+      "checked_date": "2026-10-18",
+      "check_method": "local-retry-2026-10-18: curl with browser user agent and headless browser fallback; page read (HTTP 200) with the same law list; linked PDF for Law 007/PR/2015 (and other law PDFs) still HTTP 404.",
       "http_status": 200,
       "final_url": "https://arcep.td/lois.html",
       "link_status": "reachable",
       "page_title": "Lois - ARCEP Tchad",
       "document_language": "fr",
-      "error": "linked PDFs return HTTP 404",
+      "error": null,
       "content_type": "text/html"
     }
   ],
@@ -170,7 +170,13 @@
       "تشاد الذكاء الاصطناعي استراتيجية وطنية وزارة الاتصالات الاقتصاد الرقمي",
       "adetic.td site search: intelligence artificielle; stratégie; IA (WordPress search API)",
       "arcep.td Lois / Décrets / Ordonnances pages",
-      "Tchad Convention 108 adhésion protection des données Conseil de l'Europe"
+      "Tchad Convention 108 adhésion protection des données Conseil de l'Europe",
+      "presidence.td site search: intelligence artificielle; 2690; organigramme; données personnelles; transformation digitale",
+      "presidence.td Actes du Chef de l'Etat document list",
+      "adetic.td site search: intelligence artificielle",
+      "arcep.td Lois / Décrets / Ordonnances pages (re-check)",
+      "\"loi n°007/PR/2015\" protection des données à caractère personnel pdf",
+      "Tchad ministère des télécommunications économie numérique site officiel intelligence artificielle direction générale"
     ],
     "review_date": "2026-10-12",
     "passes": {
@@ -192,7 +198,7 @@
     "no_material_found_note": "Chad's laws (through the telecoms regulator's law list), the digital ministry, other ministries and regulators were searched in French, English and Arabic, and no qualifying AI-governance document was found in any category other than data and privacy. The official gazette portal, the data protection and cyber authority, the Presidency, the government and the National Assembly sites were unavailable. Still to check: the full text of the 2015 data protection law, the decree creating the directorate-general for AI and a national digital and AI strategy in preparation.",
     "discovery_result_count": 12,
     "focused_result_count": 8,
-    "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. sgg.td DNS failure; ansice.td and presidence.td 403 to curl and WebFetch; digital ministry, gouvernement.td, primature.td and National Assembly sites proxy 502/unreachable. Data protection law located only on the arcep.td law list (all law PDFs there 404; year only). Not a party to Convention 108. Units covered: Law: ARCEP law listing read (2014-2015 digital laws incl. data protection Law 007/PR/2015; no AI law or AI provisions found); official gazette/SGG portal unreachable (DNS); web search for AI laws, deepfake offences and AI bills found nothing.; Government: Ministry of Telecommunications/Digital Economy: national digital & AI strategy 2026-2031 in preparation (lead); DG IA created by October 2025 decree (lead, no official text online); ADETIC site searched (only news on AI training, no documents). Searched, nothing else found.; Ministries: Education, health, justice, defence, finance, labour, interior: searched via web in French/English/Arabic, no AI documents found.; Regulators: ANSICE (data protection and cyber authority) site 403 to curl and WebFetch; ARCEP: no AI-specific document; central bank is regional (BEAC/COBAC, regional layer). Searched, nothing found.. Not reached: sgg.td (Journal officiel portal) - DNS failure; ansice.td - HTTP 403; presidence.td - HTTP 403; ministry digital site / gouvernement.td / primature.td / assemblee nationale site - proxy 502 / unreachable. Could not verify: Full text and dates of Law 007/PR/2015; Decree 2690/PR/PM/MTENDA/2025 (DG IA); UNESCO RAM report for Chad. binding-law, strategy, government-governance, ethics, risk-assurance, public-sector, procurement, cyber-security, transparency, standards, sandbox, index-readiness, sectoral, generative-ai, drafts, international, historical: no material found."
+    "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. sgg.td DNS failure; ansice.td and presidence.td 403 to curl and WebFetch; digital ministry, gouvernement.td, primature.td and National Assembly sites proxy 502/unreachable. Data protection law located only on the arcep.td law list (all law PDFs there 404; year only). Not a party to Convention 108. Units covered: Law: ARCEP law listing read (2014-2015 digital laws incl. data protection Law 007/PR/2015; no AI law or AI provisions found); official gazette/SGG portal unreachable (DNS); web search for AI laws, deepfake offences and AI bills found nothing.; Government: Ministry of Telecommunications/Digital Economy: national digital & AI strategy 2026-2031 in preparation (lead); DG IA created by October 2025 decree (lead, no official text online); ADETIC site searched (only news on AI training, no documents). Searched, nothing else found.; Ministries: Education, health, justice, defence, finance, labour, interior: searched via web in French/English/Arabic, no AI documents found.; Regulators: ANSICE (data protection and cyber authority) site 403 to curl and WebFetch; ARCEP: no AI-specific document; central bank is regional (BEAC/COBAC, regional layer). Searched, nothing found.. Not reached: sgg.td (Journal officiel portal) - DNS failure; ansice.td - HTTP 403; presidence.td - HTTP 403; ministry digital site / gouvernement.td / primature.td / assemblee nationale site - proxy 502 / unreachable. Could not verify: Full text and dates of Law 007/PR/2015; Decree 2690/PR/PM/MTENDA/2025 (DG IA); UNESCO RAM report for Chad. binding-law, strategy, government-governance, ethics, risk-assurance, public-sector, procurement, cyber-security, transparency, standards, sandbox, index-readiness, sectoral, generative-ai, drafts, international, historical: no material found. Local retry 2026-10-18 (home connection, Saudi Arabia; curl with Chrome UA, headless Edge fallback): OPENED presidence.td (HTTP 200; some requests reset; Actes du Chef de l'Etat list latest item 13 June 2024, no AI or data protection acts; site search found only news articles), arcep.td Lois/Décrets/Ordonnances (200; all law PDFs incl. Loi-N°007-PR-2015.pdf still 404 via curl and browser), adetic.td (200; AI training news only). STILL FAILED: sgg.td, www.sgg.td (DNS not resolved); ansice.td / www.ansice.td (connection reset / 403 bot verification, not bypassed); gouvernement.td, primature.td, assemblee-nationale.td, assembleenationale.td, mtenda.gouv.td, mpntic.td, numerique.td, anarmp.td (DNS not resolved / no connection). No new instruments; leads unchanged in status."
   },
   "changes": [
     {
@@ -231,28 +237,28 @@
       "title": "Stratégie Nationale de Transformation Digitale et de l'Intelligence Artificielle 2026-2031",
       "english_title": "National Strategy for Digital Transformation and Artificial Intelligence 2026-2031",
       "issuing_authority": "Ministry of Telecommunications, Digital Economy and Digitalisation of the Administration",
-      "note": "In preparation with UNDP support (consultancy tender reported dated 21 August 2026, deadline 4 September 2026). No official text published as of 2026-10-12; ministry site unreachable. Record once adopted and published.",
+      "note": "In preparation with UNDP support (consultancy tender reported dated 21 August 2026, deadline 4 September 2026). No official text published as of 2026-10-12; ministry site unreachable. Record once adopted and published. Update 2026-10-18: still no official text; the ministry website could not be reached and the digital development agency (ADETIC) site carries only news on AI training, no strategy document.",
       "found": "2026-10-12"
     },
     {
       "title": "Décret n°2690/PR/PM/MTENDA/2025 du 21 octobre 2025 portant organigramme du Ministère des Télécommunications, de l'Économie Numérique et de la Digitalisation de l'Administration",
       "english_title": "Decree No. 2690/PR/PM/MTENDA/2025 of 21 October 2025 on the organisation of the Ministry of Telecommunications, Digital Economy and Digitalisation of the Administration (creating a Directorate-General for Artificial Intelligence)",
       "issuing_authority": "Presidency of the Republic of Chad",
-      "note": "Reported in national press as creating the Directorate-General for AI (DG IA) within the ministry; title wording unconfirmed. No official text found online (gazette/sgg.td, presidence.td and ministry sites unreachable). Would be a binding_regulation / government-governance record.",
+      "note": "Reported in national press as creating the Directorate-General for AI (DG IA) within the ministry; title wording unconfirmed. No official text found online (gazette/sgg.td, presidence.td and ministry sites unreachable). Would be a binding_regulation / government-governance record. Update 2026-10-18: Presidency site now reachable; its list of Head of State acts (latest June 2024) and site search for '2690' and 'organigramme' did not return this decree. Gazette portal still unreachable.",
       "found": "2026-10-12"
     },
     {
       "title": "Rapport national d'évaluation de l'état de préparation à l'intelligence artificielle (RAM UNESCO) – Tchad",
       "english_title": "Chad national AI Readiness Assessment report (UNESCO RAM)",
       "issuing_authority": "Ministry of Telecommunications and Digital Economy with UNESCO",
-      "note": "Validation workshop held in N'Djamena on 6 September 2024 (press reports). No official published report found; would be index-readiness if published by the government.",
+      "note": "Validation workshop held in N'Djamena on 6 September 2024 (press reports). No official published report found; would be index-readiness if published by the government. Update 2026-10-18: no published report found on the Presidency or ADETIC sites; ministry site unreachable.",
       "found": "2026-10-12"
     },
     {
       "title": "Décret n°075/PR/2019 du 21 janvier 2019 fixant les dispositions d'application de la loi n°007/PR/2015",
       "english_title": "Decree No. 075/PR/2019 of 21 January 2019 implementing Law No. 007/PR/2015 on personal data protection",
       "issuing_authority": "Presidency of the Republic of Chad",
-      "note": "Cited in legal literature; no official online text found. Would complete the data-privacy record.",
+      "note": "Cited in legal literature; no official online text found. Would complete the data-privacy record. Update 2026-10-18: no official text found; Presidency acts list and site search returned nothing; gazette portal and data protection authority site still not accessible.",
       "found": "2026-10-12"
     }
   ]
