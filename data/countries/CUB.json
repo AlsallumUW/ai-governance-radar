@@ -10,12 +10,12 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": "Cuba has no AI-specific law. Its AI governance rests on a Strategy for the Development and Use of Artificial Intelligence led by the Ministry of Communications, approved in 2024 under the Digital Transformation Policy, whose official text could not be found, and on the general personal data protection law, Law 149 of 2022.",
+    "summary": "Cuba has no AI-specific law. Its AI governance rests on a Strategy for the Development and Use of Artificial Intelligence led by the Ministry of Communications, approved in 2024 under the Digital Transformation Policy, whose official text could not be found, and on the personal data protection law, Law 149 of 2022, which gives people a right to object to automated profiling that significantly harms their interests.",
     "lead_institutions": [
       "Ministry of Communications (MINCOM)"
     ],
     "last_deep_review": "2026-10-12",
-    "review_notes": "This review was carried out on 12 October 2026, but none of the Cuban government websites, including the Official Gazette, could be accessed. The data protection law is recorded from its official gazette address without its text being read, and the AI strategy and digital transformation policy are tracked as leads. Cuba is marked for a later retry."
+    "review_notes": "On 18 October 2026 the Official Gazette, the National Assembly, the Ministry of Justice, the science ministry and the Central Bank were reachable, and the official text of Law 149/2022 was checked. The Ministry of Communications site and the Presidency site could not be accessed, so the AI strategy and the Digital Transformation Policy remain leads."
   },
   "instruments": [
     {
@@ -39,7 +39,7 @@
       "publication_date": "2022-08-25",
       "effective_date": null,
       "last_amended_date": null,
-      "current_status": "Adopted by the National Assembly on 14 May 2022 and published in the Gaceta Oficial, Edición Ordinaria No. 90 of 25 August 2022 (per the Ministry of Communications). Official text could not be opened from the research environment, so the entry-into-force date and any provisions on automated processing are unverified. The Ministry of Communications issued Resolution 58/2022 on the security of personal data in electronic form under it (see leads).",
+      "current_status": "Adopted by the National Assembly of People's Power at its session of 14 May 2022 and published in the Gaceta Oficial, Edición Ordinaria No. 90 of 25 August 2022 (GOC-2022-832-O90). The law states that it enters into force 180 days after its publication in the Gaceta Oficial. The Ministry of Justice is charged with overseeing compliance. The same gazette issue carries Ministry of Communications Resolution 58/2022 on the security of personal data in electronic form (see leads).",
       "scope": "Cuba (national)",
       "sectors": [
         "cross-sector"
@@ -48,8 +48,8 @@
         "data",
         "AI"
       ],
-      "summary": "Cuba's first comprehensive personal data protection law, setting the principles, procedures and definitions for processing personal data and giving effect to the constitutional right of individuals to access their personal data and to request its non-disclosure. It applies to public and private processing of personal data, which includes data used to train and run AI systems.",
-      "ai_governance_relevance": "Only general law in force that governs personal-data processing by AI systems in Cuba; no AI-specific law exists.",
+      "summary": "Cuba's personal data protection law. It sets the principles, procedures and definitions for protecting personal data held in physical or digital records and databases, public or private, and regulates processing by public and private persons and entities. Article 23 lets individuals object to processing, automated or not, that significantly harms their interests and is intended to evaluate personal aspects or to analyse or predict matters such as work performance, economic situation, health, reliability or behaviour.",
+      "ai_governance_relevance": "Only general law identified that governs personal-data processing by AI systems in Cuba; it includes a right to object to automated or non-automated profiling-type processing (Article 23.2). No AI-specific law exists.",
       "source_url": "https://www.gacetaoficial.gob.cu/sites/default/files/goc-2022-o90_0.pdf",
       "official_pdf_url": "https://www.gacetaoficial.gob.cu/sites/default/files/goc-2022-o90_0.pdf",
       "official_webpage_url": null,
@@ -58,22 +58,19 @@
       "superseded_by": [],
       "related_instruments": [],
       "regional_applicability": [],
-      "verification_date": "2026-10-12",
-      "verification_level": "primary_source_located",
+      "verification_date": "2026-10-18",
+      "verification_level": "reviewed_primary_metadata",
       "metadata_gaps": [
-        "Official text not read (site unreachable)",
-        "Effective date",
-        "Automated-decision / profiling provisions",
-        "Publication date taken from Ministry of Communications statement, not the gazette itself"
+        "Effective date not printed as a calendar date (law states entry into force 180 days after publication)"
       ],
       "source_kind": "official_document",
-      "evidence_reference": "curl (browser user agent, --max-time 60) failed (connection reset; all gob.cu hosts unreachable from the research environment) and WebFetch failed (HTTP 503). URL identified through search; publication in Gaceta Oficial Edición Ordinaria No. 90 of 25 August 2022 and adoption by the National Assembly on 14 May 2022 as stated by the Ministry of Communications (mincom.gob.cu/es/print/5823, seen only as a search snippet; page also unreachable). Summary note: No AI-specific provision could be confirmed because the official text could not be opened. Link note: As of 17 October 2026 the Cuban Official Gazette site (gacetaoficial.gob.cu) could not be reached from our checker (connection reset); the Ministry of Communications site was also unreachable, so no other official copy was confirmed.",
-      "link_status": "inaccessible",
+      "evidence_reference": "local-retry-2026-10-18: official Gaceta Oficial PDF (GOC-2022-O90, 18 pages) opened via curl with HTTP 200 and read; title, issuer, adoption date (14 May 2022), publication (Edición Ordinaria No. 90, 25 August 2022, GOC-2022-832-O90), Article 23.2 on objection to automated processing, Disposición Final Primera (Ministry of Justice oversight) and Quinta (entry into force 180 days after publication) checked against the official text. Earlier record (2026-10-12) relied on a ministry search snippet.",
+      "link_status": "reachable",
       "document_access_type": "original_government_document",
       "source_id": "s-3babb37eaa0b",
       "organization_id": "o-b9817ec531d9",
       "first_recorded": "2026-10-12",
-      "last_changed": null
+      "last_changed": "2026-10-18"
     }
   ],
   "organizations": [
@@ -81,7 +78,7 @@
       "id": "o-b9817ec531d9",
       "jurisdiction_id": "CUB",
       "name": "National Assembly of People's Power",
-      "publisher_name_verified": false,
+      "publisher_name_verified": true,
       "ai_governance_role": "Cuba's legislature (Asamblea Nacional del Poder Popular); enacted Law No. 149/2022 on personal data protection. No AI bill identified.",
       "source_url": "https://www.parlamentocubano.gob.cu/",
       "authority_type": "legislature",
@@ -105,16 +102,16 @@
         "data-privacy",
         "binding-law"
       ],
-      "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60) failed (connection reset; all gob.cu hosts unreachable from the research environment) and WebFetch failed (HTTP 503). URL identified through search; publication in Gaceta Oficial Edición Ordinaria No. 90 of 25 August 2022 and adoption by the National Assembly on 14 May 2022 as stated by the Ministry of Communications (mincom.gob.cu/es/print/5823, seen only as a search snippet; page also unreachable).",
-      "http_status": null,
-      "final_url": null,
-      "link_status": "inaccessible",
-      "page_title": null,
+      "date_reviewed": "2026-10-18",
+      "checked_date": "2026-10-18",
+      "check_method": "curl with a browser user agent from a connection in Saudi Arabia; PDF text read",
+      "http_status": 200,
+      "final_url": "https://www.gacetaoficial.gob.cu/sites/default/files/goc-2022-o90_0.pdf",
+      "link_status": "reachable",
+      "page_title": "Gaceta Oficial No. 90 Ordinaria de 25 de agosto de 2022",
       "document_language": "es",
-      "error": "connection reset (curl); HTTP 503 (WebFetch)",
-      "content_type": null
+      "error": null,
+      "content_type": "application/pdf"
     }
   ],
   "regional_applicability": [],
@@ -172,7 +169,12 @@
       "Cuba Ministerio de Educación Superior \"inteligencia artificial\" lineamientos OR indicaciones OR resolución uso universidades",
       "Cuba Asamblea Nacional ley \"inteligencia artificial\" cronograma legislativo OR \"Código Penal\" \"inteligencia artificial\"",
       "site:mincom.gob.cu \"inteligencia artificial\" marco regulatorio resolución",
-      "gacetaoficial.gob.cu internal search: inteligencia artificial (site unreachable)"
+      "gacetaoficial.gob.cu internal search: inteligencia artificial (site unreachable)",
+      "gacetaoficial.gob.cu internal search: inteligencia artificial (no results)",
+      "gacetaoficial.gob.cu internal search: transformacion digital",
+      "parlamentocubano.gob.cu internal search: inteligencia artificial",
+      "gacetaoficial.gob.cu \"inteligencia artificial\" 2025 OR 2026",
+      "Cuba \"Política para la Transformación Digital\" Gaceta Oficial GOC decreto acuerdo texto"
     ],
     "review_date": "2026-10-12",
     "passes": {
@@ -191,12 +193,42 @@
       "regional_inheritance": "COMPLETE",
       "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "Law, the lead communications ministry, other ministries and regulators were searched at national level, mainly through general web searches. No qualifying AI-governance document was found for strategies, government AI bodies, ethics, risk and assurance, public-sector rules, procurement, cybersecurity, transparency, standards, sandboxes, readiness indices, sector rules, generative AI, drafts and consultations, international agreements, or past instruments. All official government sites, including the Official Gazette, were unavailable, so the official text of Law 149/2022 and the texts of the AI strategy and the Digital Transformation Policy remain to be checked.",
+    "no_material_found_note": "Law, the lead communications ministry, other ministries and regulators were searched at national level, including the Official Gazette and National Assembly search tools. No qualifying AI-governance document was found for strategies, government AI bodies, ethics, risk and assurance, public-sector rules, procurement, cybersecurity, transparency, standards, sandboxes, readiness indices, sector rules, generative AI, drafts and consultations, international agreements, or past instruments. The Ministry of Communications site could not be accessed, so the texts of the AI strategy and the Digital Transformation Policy remain to be checked.",
     "discovery_result_count": 9,
     "focused_result_count": 11,
-    "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. gacetaoficial.gob.cu, mincom.gob.cu, parlamentocubano.gob.cu, bc.gob.cu, citma.gob.cu, minjus.gob.cu, presidencia.gob.cu: curl reset, WebFetch 503. Web search only. Law 149 recorded primary_source_located (GOC-2022-O90 PDF URL found via search, link inaccessible); 2022-08-25 from MINCOM search snippet. MINCOM Res. 58/2022 (lead, AI relevance unclear). Convention 108: not a party. Units covered: Law: Gaceta Oficial and parliamentocubano.gob.cu unreachable (connection reset / HTTP 503); searched via web search: no AI-specific law, decree or resolution, no AI bill and no AI penal provision found. Law 149/2022 on personal data protection recorded (located only).; Government: MINCOM (lead ministry): AI strategy approved May 2024 and Digital Transformation Policy known only from ministry statements; no official text found -> leads. AI Consortium -> lead.; Ministries: Searched, nothing found: higher education (MES), education, health (MINSAP), justice, defence, finance, labour, interior - no AI documents identified.; Regulators: Searched, nothing found: no independent DPA (MINCOM administers data rules; Res. 58/2022 -> lead), Central Bank (BCC), cyber security, CITMA - no AI-specific documents.. Not reached: All gob.cu sites (gacetaoficial.gob.cu, mincom.gob.cu, parlamentocubano.gob.cu, bc.gob.cu, citma.gob.cu, minjus.gob.cu, presidencia.gob.cu) unreachable by curl and WebFetch; gazette own-search not run. Could not verify: Law 149/2022 official PDF (gacetaoficial.gob.cu unreachable); AI strategy and Digital Transformation Policy texts. strategy, government-governance, ethics, risk-assurance, public-sector, procurement, cyber-security, transparency, standards, sandbox, index-readiness, sectoral, generative-ai, drafts, international, historical: no material found."
+    "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. gacetaoficial.gob.cu, mincom.gob.cu, parlamentocubano.gob.cu, bc.gob.cu, citma.gob.cu, minjus.gob.cu, presidencia.gob.cu: curl reset, WebFetch 503. Web search only. Law 149 recorded primary_source_located (GOC-2022-O90 PDF URL found via search, link inaccessible); 2022-08-25 from MINCOM search snippet. MINCOM Res. 58/2022 (lead, AI relevance unclear). Convention 108: not a party. Units covered: Law: Gaceta Oficial and parliamentocubano.gob.cu unreachable (connection reset / HTTP 503); searched via web search: no AI-specific law, decree or resolution, no AI bill and no AI penal provision found. Law 149/2022 on personal data protection recorded (located only).; Government: MINCOM (lead ministry): AI strategy approved May 2024 and Digital Transformation Policy known only from ministry statements; no official text found -> leads. AI Consortium -> lead.; Ministries: Searched, nothing found: higher education (MES), education, health (MINSAP), justice, defence, finance, labour, interior - no AI documents identified.; Regulators: Searched, nothing found: no independent DPA (MINCOM administers data rules; Res. 58/2022 -> lead), Central Bank (BCC), cyber security, CITMA - no AI-specific documents.. Not reached: All gob.cu sites (gacetaoficial.gob.cu, mincom.gob.cu, parlamentocubano.gob.cu, bc.gob.cu, citma.gob.cu, minjus.gob.cu, presidencia.gob.cu) unreachable by curl and WebFetch; gazette own-search not run. Could not verify: Law 149/2022 official PDF (gacetaoficial.gob.cu unreachable); AI strategy and Digital Transformation Policy texts. strategy, government-governance, ethics, risk-assurance, public-sector, procurement, cyber-security, transparency, standards, sandbox, index-readiness, sectoral, generative-ai, drafts, international, historical: no material found. Local retry 2026-10-18: opened via curl from Saudi Arabia: gacetaoficial.gob.cu (GOC-2022-O90 PDF HTTP 200, read; /es/search/node keyword search works, 'inteligencia artificial' 0 results; note site footer says last updated 2021, index may be stale), parlamentocubano.gob.cu (200; search shows only news mentions of AI, no AI bill; current draft bills listed are identity, central administration, housing, land), minjus.gob.cu (200), citma.gob.cu (200), bc.gob.cu (200). Still failed: mincom.gob.cu (HTTP 403 'Acceso restringido', IP not allowed, both curl and headless Edge), presidencia.gob.cu (HTTP 500 maintenance page). Law 149 raised to reviewed_primary_metadata; Res. 58/2022 read in same gazette issue, kept as lead (no AI content). Time box 20 min; MINCOM-dependent leads not resolvable."
   },
   "changes": [
+    {
+      "id": "c-80dace2fd2e5",
+      "date": "2026-10-18",
+      "recorded": "2026-10-18",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "CUB",
+      "instrument_id": "i-8b6cc0439a77",
+      "title": "Law No. 149 on Personal Data Protection",
+      "detail": "Record updated: summary.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-abf8f8e9112e",
+      "date": "2026-10-18",
+      "recorded": "2026-10-18",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "CUB",
+      "instrument_id": "i-8b6cc0439a77",
+      "title": "Law No. 149 on Personal Data Protection",
+      "detail": "Official link restored.",
+      "from": "inaccessible",
+      "to": "reachable",
+      "source_url": "https://www.gacetaoficial.gob.cu/sites/default/files/goc-2022-o90_0.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-fd41d99d76bc",
       "date": "2026-10-12",
@@ -233,35 +265,35 @@
       "title": "Estrategia para el Desarrollo y Uso de la Inteligencia Artificial",
       "english_title": "Strategy for the Development and Use of Artificial Intelligence",
       "issuing_authority": "Ministry of Communications (MINCOM); approved by the Council of Ministers",
-      "note": "Ministry of Communications statements say the strategy was approved in May 2024 as part of the Política para la Transformación Digital and presented publicly in January 2025; six axes (ethics and legal framework, human capital, applications and services, public administration, science and innovation, social communication). No official full text or gazette publication found; mincom.gob.cu and gacetaoficial.gob.cu unreachable from the research environment. Record once the official text is located (e.g. mincom.gob.cu/es/print/6983).",
+      "note": "Ministry of Communications statements say the strategy was approved in May 2024 as part of the Política para la Transformación Digital and presented publicly in January 2025; six axes (ethics and legal framework, human capital, applications and services, public administration, science and innovation, social communication). No official full text or gazette publication found; mincom.gob.cu and gacetaoficial.gob.cu unreachable from the research environment. Record once the official text is located (e.g. mincom.gob.cu/es/print/6983). 2026-10-18: Ministry of Communications site refused access from the research location (access restricted by IP); the Official Gazette keyword search returned no result for 'inteligencia artificial'. Still no official text; kept as lead.",
       "found": "2026-10-12"
     },
     {
       "title": "Política para la Transformación Digital y Agenda Digital (hasta 2030)",
       "english_title": "Digital Transformation Policy and Digital Agenda (to 2030)",
       "issuing_authority": "Council of Ministers / Ministry of Communications",
-      "note": "Approved by the Council of Ministers in 2024 per MINCOM (vice-minister statement, mincom.gob.cu/es/print/6807); the AI strategy sits under it. No official text, gazette reference or exact date found; check whether it has an AI pillar (strategy category).",
+      "note": "Approved by the Council of Ministers in 2024 per MINCOM (vice-minister statement, mincom.gob.cu/es/print/6807); the AI strategy sits under it. No official text, gazette reference or exact date found; check whether it has an AI pillar (strategy category). 2026-10-18: Official Gazette keyword search did not return the policy; Ministry of Communications site refused access. Kept as lead.",
       "found": "2026-10-12"
     },
     {
       "title": "Resolución 58/2022 del Ministro de Comunicaciones (Reglamento para la seguridad de los datos personales en soporte electrónico)",
       "english_title": "Ministry of Communications Resolution 58/2022 (Regulation on the security of personal data in electronic form)",
       "issuing_authority": "Ministry of Communications",
-      "note": "Implements Law 149/2022 for electronic personal data; PDF at https://www.mincom.gob.cu/sites/default/files/marcoregulatorio/r_58-22_registro_de_base_datos_personales_.pdf (unreachable). Unclear whether it has AI-relevant content; general data-security rule, not recorded.",
+      "note": "Implements Law 149/2022 for electronic personal data; PDF at https://www.mincom.gob.cu/sites/default/files/marcoregulatorio/r_58-22_registro_de_base_datos_personales_.pdf (unreachable). Unclear whether it has AI-relevant content; general data-security rule, not recorded. 2026-10-18: official text read in Gaceta Oficial No. 90 Ordinaria of 25 August 2022 (GOC-2022-833-O90, https://www.gacetaoficial.gob.cu/sites/default/files/goc-2022-o90_0.pdf), dated 19 August 2022, entering into force 180 days after publication. It sets security requirements for processing personal data in electronic form, citing the growth of automated processing; no AI-specific provisions. Kept as lead (general data-security rule).",
       "found": "2026-10-12"
     },
     {
       "title": "Consorcio de Inteligencia Artificial",
       "english_title": "Artificial Intelligence Consortium",
       "issuing_authority": "Ministry of Communications; coordinated by the Havana Science and Technology Park",
-      "note": "Created under the 2024 AI strategy with 22 founding organizations (MINCOM news). Institutional initiative; no founding legal instrument found.",
+      "note": "Created under the 2024 AI strategy with 22 founding organizations (MINCOM news). Institutional initiative; no founding legal instrument found. 2026-10-18: Parliament site news (December 2025) mentions AI at FIHAV 2025 and a national portal of AI solutions; no founding legal instrument found. Kept as lead.",
       "found": "2026-10-12"
     },
     {
       "title": "Política de Uso de la Inteligencia Artificial",
       "english_title": "Policy on the Use of Artificial Intelligence",
       "issuing_authority": "Government of Cuba",
-      "note": "Mentioned in a Cuban government presentation at UNCTAD (2025) alongside the Digital Transformation Policy; possibly the same as the AI strategy. No official text found.",
+      "note": "Mentioned in a Cuban government presentation at UNCTAD (2025) alongside the Digital Transformation Policy; possibly the same as the AI strategy. No official text found. 2026-10-18: no official text found on reachable government sites. Kept as lead.",
       "found": "2026-10-12"
     }
   ]

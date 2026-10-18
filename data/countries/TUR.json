@@ -70,8 +70,8 @@
         "Legal effect of the principle decision"
       ],
       "source_kind": "official_publication",
-      "evidence_reference": "curl --max-time 60 (browser UA): TLS 'unable to get local issuer certificate'; WebFetch: HTTP 503. Decision text read via Ministry of Interior distribution letter (19.09.2024) at https://dosyaism.saglik.gov.tr/Eklenti/229613/0/yapay-zeka-sistemlerinin-kullaniminda-kamu-gorevlilerinin-uymasi-gereken-etik-davranis-ilkeleripdf.pdf. Status note: Ethics Board page not readable on 2026-10-12 (curl: TLS certificate chain error; WebFetch: HTTP 503). The decision text was read in the Ministry of Interior's official distribution letter of 19.09.2024 republished by a Ministry of Health provincial directorate (dosyaism.saglik.gov.tr); title, date and content taken from that copy. Link note: As of 17 October 2026 the Public Officials Ethics Board site could not be reached (connection timeout/HTTP 503); no other official copy was found.",
-      "link_status": "inaccessible",
+      "evidence_reference": "curl --max-time 60 (browser UA): TLS 'unable to get local issuer certificate'; WebFetch: HTTP 503. Decision text read via Ministry of Interior distribution letter (19.09.2024) at https://dosyaism.saglik.gov.tr/Eklenti/229613/0/yapay-zeka-sistemlerinin-kullaniminda-kamu-gorevlilerinin-uymasi-gereken-etik-davranis-ilkeleripdf.pdf. Status note: Ethics Board page not readable on 2026-10-12 (curl: TLS certificate chain error; WebFetch: HTTP 503). The decision text was read in the Ministry of Interior's official distribution letter of 19.09.2024 republished by a Ministry of Health provincial directorate (dosyaism.saglik.gov.tr); title, date and content taken from that copy.",
+      "link_status": "reachable",
       "document_access_type": "official_publication_or_full_text_page",
       "source_id": "s-ce29223b7a4b",
       "organization_id": "o-4b90925c8e0f",
@@ -180,7 +180,7 @@
         "Number of priorities, objectives and measures"
       ],
       "source_kind": "official_publication",
-      "evidence_reference": "cbddo.gov.tr not reachable on 2026-10-12: curl connection reset (https) / HTTP 503 (http); WebFetch HTTP 503. Facts on authorship and timing taken from Presidential Circular 2021/18 in the Official Gazette. Link note: As of 17 October 2026 the Digital Transformation Office site could not be reached (connection timeout/HTTP 503); no other official copy was found.",
+      "evidence_reference": "cbddo.gov.tr not reachable on 2026-10-12: curl connection reset (https) / HTTP 503 (http); WebFetch HTTP 503. Facts on authorship and timing taken from Presidential Circular 2021/18 in the Official Gazette. Link note: As of 18 October 2026 (checked with curl with a browser user agent from a connection in Saudi Arabia and a desktop browser) the Digital Transformation Office site cannot be reached; no other official copy was found.",
       "link_status": "inaccessible",
       "document_access_type": "official_publication_or_full_text_page",
       "source_id": "s-f3e111745944",
@@ -745,14 +745,14 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl --max-time 60 (browser UA): TLS 'unable to get local issuer certificate'; WebFetch: HTTP 503. Decision text read via Ministry of Interior distribution letter (19.09.2024) at https://dosyaism.saglik.gov.tr/Eklenti/229613/0/yapay-zeka-sistemlerinin-kullaniminda-kamu-gorevlilerinin-uymasi-gereken-etik-davranis-ilkeleripdf.pdf",
-      "http_status": null,
+      "checked_date": "2026-10-18",
+      "check_method": "curl with a browser user agent from a connection in Saudi Arabia",
+      "http_status": 200,
       "final_url": "https://www.etik.gov.tr/icerikler/2024-108-sayili-ilke-karari-yapay-zeka-sistemlerinin-kullaniminda-kamu-gorevlilerinin-uymasi-gereken-etik-davranis-ilkeleri/",
-      "link_status": "inaccessible",
+      "link_status": "reachable",
       "page_title": null,
       "document_language": "tr",
-      "error": "curl --max-time 60 (browser UA): TLS 'unable to get local issuer certificate'; WebFetch: HTTP 503. Decision text read via Ministry of Interior distribution letter (19.09.2024) at https://dosyaism.saglik.gov.tr/Eklenti/229613/0/yapay-zeka-sistemlerinin-kullaniminda-kamu-gorevlilerinin-uymasi-gereken-etik-davranis-ilkeleripdf.pdf",
+      "error": null,
       "content_type": null
     },
     {
@@ -801,7 +801,7 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
+      "checked_date": "2026-10-18",
       "check_method": "cbddo.gov.tr not reachable on 2026-10-12: curl connection reset (https) / HTTP 503 (http); WebFetch HTTP 503. Facts on authorship and timing taken from Presidential Circular 2021/18 in the Official Gazette.",
       "http_status": null,
       "final_url": "https://cbddo.gov.tr/uyzs",
@@ -1147,6 +1147,21 @@
     "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. cbddo.gov.tr (reset/503), etik.gov.tr (TLS chain/503) and the sanayi.gov.tr action plan PDF (rejected) unreachable. Ethics Board decision 2024/108 text read in the Interior Ministry's official distribution letter (dosyaism.saglik.gov.tr). Convention 108: Council of Ministers ratification decision 2016/8576, Official Gazette 17 March 2016 No. 29656, recorded on the COE file. Units covered: Law: Official Gazette and mevzuat.gov.tr: no AI-specific law; Law 6698 (automated-decision objection right, art. 11(1)(g)) recorded; Presidential Circular 2021/18 recorded; AI bill 2/2234 (24 June 2024, in committee) verified on tbmm.gov.tr and held as a lead; 2025 bills held as leads (not verified); Convention 108 approval law 6669 and ratification decision 2016/8576 identified.; Government: Presidency circular, Digital Transformation Office (site unreachable: strategy recorded located-only, 2024-2025 action plan as lead), Public Officials Ethics Board decision 2024/108, TÜBİTAK institutional AI policy.; Ministries: Education (policy 2025-2029, ethics board directive, ethics guide recorded); Industry and Technology (action plan lead); Interior (circulated Ethics Board decision, no own AI document found); Health, Justice: searched, nothing AI-specific at national level found; Defence, Finance, Labour: not searched individually.; Regulators: KVKK: AI recommendations, generative AI guide, agentic AI and workplace GenAI papers recorded. BDDK, SPK, TCMB, BTK, RTÜK, Competition Authority, Cyber Security Directorate: searched, no AI-specific rule or guidance found (only journal articles and speeches).. Not reached: cbddo.gov.tr (connection reset / HTTP 503); etik.gov.tr (TLS chain error / HTTP 503); sanayi.gov.tr action plan PDF (request rejected); Ministries of Defence, Treasury and Finance, Labour: not individually searched; TSE: searched tse.org.tr, no national adoption of ISO/IEC 42001 found. Could not verify: National AI Strategy 2021-2025 text (cbddo.gov.tr unreachable); 2024-2025 Action Plan (sanayi.gov.tr rejected; cbddo unreachable); Ethics Board page on etik.gov.tr; 2025 AI bills (Öztürk; Penal Code amendment) on tbmm.gov.tr. procurement, cyber-security, standards, sandbox, index-readiness, drafts, international, historical: no material found."
   },
   "changes": [
+    {
+      "id": "c-31ba3c054a18",
+      "date": "2026-10-18",
+      "recorded": "2026-10-18",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "TUR",
+      "instrument_id": "i-0bc1c29de3f1",
+      "title": "Principle Decision No. 2024/108: Ethical Conduct Principles to Be Observed by Public Officials in the Use of Artificial Intelligence Systems",
+      "detail": "Official link restored.",
+      "from": "inaccessible",
+      "to": "reachable",
+      "source_url": "https://www.etik.gov.tr/icerikler/2024-108-sayili-ilke-karari-yapay-zeka-sistemlerinin-kullaniminda-kamu-gorevlilerinin-uymasi-gereken-etik-davranis-ilkeleri/",
+      "needs_review": false
+    },
     {
       "id": "c-574d60c6c6f7",
       "date": "2026-10-13",

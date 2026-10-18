@@ -62,7 +62,7 @@
         "Exact launch date"
       ],
       "source_kind": "official_document",
-      "evidence_reference": "deep-review-2026-10-06. Summary note: The pillar-level content could not be re-read from the official PDF in this review (site errors) and should be confirmed. Link note: As of 17 October 2026 the MCIT site returns an error/maintenance page (HTTP 500/403); no other official government copy was found. Status note: mcit.gov.qa returns server errors to automated reading; metadata from the document title and listing.",
+      "evidence_reference": "deep-review-2026-10-06. Summary note: The pillar-level content could not be re-read from the official PDF in this review (site errors) and should be confirmed. Status note: mcit.gov.qa returns server errors to automated reading; metadata from the document title and listing. Link note: As of 18 October 2026 (checked with curl with a browser user agent from a connection in Saudi Arabia and a desktop browser) the MCIT site opens but this PDF address returns a server error; no other official copy was found.",
       "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "lifecycle": "published",
@@ -224,8 +224,8 @@
         "Compliance timeline"
       ],
       "source_kind": "official_document",
-      "evidence_reference": "deep-review-2026-10-06. Status note: The QCB PDF could not be read automatically (certificate error). Link note: As of 17 October 2026 the Qatar Central Bank site could not be reached (connection timeout/HTTP 503); no other official copy was found.",
-      "link_status": "inaccessible",
+      "evidence_reference": "deep-review-2026-10-06. Status note: The QCB PDF could not be read automatically (certificate error).",
+      "link_status": "reachable",
       "document_access_type": "original_government_document",
       "lifecycle": "published",
       "first_recorded": "2026-10-06",
@@ -559,7 +559,7 @@
         "strategy"
       ],
       "date_reviewed": "2026-10-06",
-      "checked_date": "2026-10-06",
+      "checked_date": "2026-10-18",
       "check_method": "Located through official listing; automated read blocked",
       "http_status": null,
       "final_url": "https://www.mcit.gov.qa/wp-content/uploads/sites/4/2025/02/national_artificial_intelligence_strategy_for_qatar_2019_en.pdf",
@@ -638,14 +638,14 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-06",
-      "checked_date": "2026-10-06",
-      "check_method": "Located through official listing; automated read blocked",
-      "http_status": null,
+      "checked_date": "2026-10-18",
+      "check_method": "curl with a browser user agent from a connection in Saudi Arabia",
+      "http_status": 200,
       "final_url": "https://www.qcb.gov.qa/Services/Financial%20Technology/QCB_Artificial_Intelligence_Guideline.pdf",
-      "link_status": "inaccessible",
+      "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
-      "error": "Automated access blocked (robots/403/500)",
+      "error": null,
       "content_type": null
     },
     {
@@ -888,6 +888,21 @@
     "technical_note": "Method note (original): Deep review completed on 6 October 2026. The websites of the Ministry of Communications and IT, the legal portal and Qatar Central Bank could not be read automatically, so several dates are held at year or month level and marked for confirmation. As of 6 October 2026 the National AI Policy, published for consultation in December 2025, had not been adopted.\n\nCoverage note (original): Technical review notes: Deep review 2026-10-06. mcit.gov.qa, almeezan.qa and qcb.gov.qa block or fail automated reading; several dates are held at year or month level and flagged in metadata_gaps. Dates were cross-checked only against official pages; news agencies were not used as sources. Sweep: no adoption of the National AI Policy found by 2026-10-06. Ministry catch-up 2026-10-13 (PROTOCOL §2 ministry rule, applied after this country's deep review; one agent, 30 minutes, national ministries' own AI documents only, nothing else re-reviewed): 2 record(s) added. Ministries: Ministry of Education and Higher Education: no ministry AI policy, guideline or framework document found (edu.gov.qa unreachable by curl and WebFetch; only news of AI platforms/agreements); Ministry of Public Health: nothing found (no AI-specific guideline on moph.gov.qa or research.moph.gov.qa; Dec 2024 AI health-research ethics workshop is an event only); Ministry of Justice / Supreme Judiciary Council / Public Prosecution: nothing found (MoJ AI legal-knowledge platform is a project; moj.gov.qa and pp.gov.qa unreachable; sjc.gov.qa homepage no AI items); Qatar International Court and Dispute Resolution Centre (QFC courts): Practice Direction No. 1 of 2026 on AI (recorded) and Practice Guidance on AI use (recorded); Ministry of Defence: nothing found (mod.gov.qa unreachable); Ministry of Finance / General Tax Authority / General Authority of Customs: nothing found (customs AI services launched Jan 2026 are projects, not instruments; mof.gov.qa 403); Ministry of Interior: nothing found (portal.moi.gov.qa 503); Ministry of Foreign Affairs: nothing found (homepage news item only); Ministry of Labour: nothing found (mol.gov.qa unreachable); Ministry of Social Development and Family: nothing found; Ministry of Municipality, Ministry of Transport, Ministry of Commerce and Industry, Ministry of Environment and Climate Change, Ministry of Endowments and Islamic Affairs, Ministry of Culture, Ministry of Sports and Youth: nothing found; Civil Service and Government Development Bureau: nothing found (no public-servant AI guidance located); Ministry of Communications and Information Technology: already covered by existing records; site in maintenance/403 during this pass. Not reached: Ministry of Education and Higher Education website (edu.gov.qa) unreachable by curl and WebFetch; Ministry of Justice (moj.gov.qa), Public Prosecution (pp.gov.qa), Ministry of Defence (mod.gov.qa), Ministry of Labour (mol.gov.qa), General Authority of Customs (customs.gov.qa), Ministry of Culture (moc.gov.qa), Planning and Statistics Authority (psa.gov.qa) unreachable by curl; checked only via web search; Ministry of Interior portal returned 503; Ministry of Finance and Hukoomi portal returned 403. Could not verify: English version of the QICDRC Practice Guidance on AI (only the Arabic PDF located on the official site).; Whether the Ministry of Education and Higher Education has issued AI-in-schools guidance (site unreachable; press says regulatory frameworks are being developed).."
   },
   "changes": [
+    {
+      "id": "c-7b4a9db05562",
+      "date": "2026-10-18",
+      "recorded": "2026-10-18",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "QAT",
+      "instrument_id": "i-e0351f2825db",
+      "title": "QCB Artificial Intelligence Guideline",
+      "detail": "Official link restored.",
+      "from": "inaccessible",
+      "to": "reachable",
+      "source_url": "https://www.qcb.gov.qa/Services/Financial%20Technology/QCB_Artificial_Intelligence_Guideline.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-68d10333b390",
       "date": "2026-10-13",

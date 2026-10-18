@@ -16,7 +16,7 @@
       "Office of the Regulator"
     ],
     "last_deep_review": "2026-10-13",
-    "review_notes": "This review was carried out on 13 October 2026. The official legislation portal, the Office of the Regulator's and the education ministry's websites could not be accessed, so only one document could be read. Samoa is marked for a later retry. The planned AI regulatory framework and data privacy framework are tracked as leads."
+    "review_notes": "This review was updated on 18 October 2026. The Office of the Regulator, the Ministry of Education and Culture, Parliament and the communications ministry were searched again and no new AI document was found; the official legislation portal still could not be accessed and the Attorney General's website was not usable, so a consolidated law search for AI provisions remains pending."
   },
   "instruments": [
     {
@@ -102,8 +102,8 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "curl (browser user agent, --max-time 60): full PDF read (pdftotext); AI content in principle 'Capability-building', priorities 2.3, 3.2, 4.3, 4.4, 5.3, 5.4 and the M&E table; launch date 17 April 2026 stated on the MCIT launch notice (read via WebFetch). The policy's own 'Effective and review date' and 'Approval of policy' sections are left blank in the published PDF.",
+      "checked_date": "2026-10-18",
+      "check_method": "local-retry-2026-10-18: curl (Chrome user agent) re-fetch of the official PDF, HTTP 200, 33 pages; content previously read in full on 2026-10-13. curl (browser user agent, --max-time 60): full PDF read (pdftotext); AI content in principle 'Capability-building', priorities 2.3, 3.2, 4.3, 4.4, 5.3, 5.4 and the M&E table; launch date 17 April 2026 stated on the MCIT launch notice (read via WebFetch). The policy's own 'Effective and review date' and 'Approval of policy' sections are left blank in the published PDF.",
       "http_status": 200,
       "final_url": "https://mcit.gov.ws/wp-content/uploads/2026/04/Samoa-National-ICT-Policy-2026.pdf",
       "link_status": "reachable",
@@ -167,7 +167,12 @@
       "Samoa Act 2024 OR 2025 OR 2026 \"artificial intelligence\" OR deepfake legislation parliament Samoa",
       "mcit.gov.ws site search (WordPress API): artificial; AI; policy; cyber; plan",
       "palemene.ws site search: artificial; data protection; deepfake; privacy; cyber; online harm; Bills, Acts and Regulations page reviewed",
-      "health.gov.ws site search: artificial intelligence"
+      "health.gov.ws site search: artificial intelligence",
+      "regulator.gov.ws site search: artificial; legislation, consultations, publications pages reviewed; Communications Sector Plan 2022-2027 PDF text search (artificial, AI, machine learning, emerging technologies)",
+      "mesc.gov.ws site search and WordPress search API: artificial intelligence / artificial",
+      "palemene.ws site search: artificial; data protection; Bills, Acts and Regulations page re-checked for 2024-2026 entries",
+      "mcit.gov.ws WordPress posts API: latest 10 posts (to 2026-10-09) reviewed by title; 'Towards a Digital Samoa' post read",
+      "cbs.gov.ws home page reviewed; ag.gov.ws site search: artificial intelligence"
     ],
     "review_date": "2026-10-13",
     "passes": {
@@ -186,10 +191,10 @@
       "regional_inheritance": "COMPLETE",
       "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "Samoa's Parliament bills and acts, the communications ministry, other ministries and regulators were searched. Apart from the National ICT Policy 2025/26-2030/31, no qualifying AI-governance document was found. The legislation portal, the Office of the Regulator and the Ministry of Education sites were unavailable, so the consolidated law search for AI still needs to be run.",
+    "no_material_found_note": "Samoa's Parliament bills and acts, the communications ministry, the Office of the Regulator, the Ministry of Education and Culture, the Central Bank and other ministries were searched. Apart from the National ICT Policy 2025/26-2030/31, no qualifying AI-governance document was found. The legislation portal could not be accessed, so the consolidated law search for AI still needs to be run.",
     "discovery_result_count": 10,
     "focused_result_count": 10,
-    "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-13, one agent, national level only (PROTOCOL §6), about 25-minute time box. samoalaws.gov.ws proxy 502 / no DNS; regulator.gov.ws and mesc.gov.ws reset. palemene.ws bills list stops at 2023. ICT Policy kept: explicit AI commitments (priority 2.3 responsible AI in digital government; 4.4 AI regulatory framework, 'Not started'); dated 2026-04-17 from MCIT launch notice (PDF approval fields blank). National Cybersecurity Strategy 2025/26-2030/31 mentions AI once (lead). Convention 108: not a party. Units covered: Law: Parliament of Samoa (palemene.ws) bills/acts page and site search: no AI bill or act, no data protection bill, no deepfake offence found (list runs to 2023 bills). samoalaws.gov.ws could not be reached (proxy 502 / DNS failure via curl and WebFetch). Searched, nothing found.; Government: MCIT: National ICT Policy 2025/26-2030/31 recorded; National Cybersecurity Strategy 2025/26-2030/31 (AI in passing only), older ICT/broadband/communications policies, Information Security Policy, corporate plans reviewed by title; no AI strategy, AI ethics, public-sector AI or procurement guidance found.; Ministries: Health (site search, nothing), Finance (site search, nothing); Education (mesc.gov.ws unreachable) and Justice searched via web search, nothing found.; Regulators: Office of the Regulator (regulator.gov.ws) unreachable (connection reset); Central Bank of Samoa site search not available (JS app), web search found no AI guidance; no data protection authority or standards body AI material exists.. Not reached: samoalaws.gov.ws (legislation portal: proxy 502 and DNS failure); regulator.gov.ws (Office of the Regulator: connection reset); mesc.gov.ws (Ministry of Education: connection reset). Could not verify: samoalaws.gov.ws legislation portal unreachable, so the consolidated law search for AI provisions was not run there; Office of the Regulator and Ministry of Education sites unreachable. binding-law, government-governance, ethics, risk-assurance, procurement, cyber-security, data-privacy, transparency, standards, sandbox, index-readiness, sectoral, generative-ai, drafts, international, historical: no material found."
+    "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-13, one agent, national level only (PROTOCOL §6), about 25-minute time box. samoalaws.gov.ws proxy 502 / no DNS; regulator.gov.ws and mesc.gov.ws reset. palemene.ws bills list stops at 2023. ICT Policy kept: explicit AI commitments (priority 2.3 responsible AI in digital government; 4.4 AI regulatory framework, 'Not started'); dated 2026-04-17 from MCIT launch notice (PDF approval fields blank). National Cybersecurity Strategy 2025/26-2030/31 mentions AI once (lead). Convention 108: not a party. Units covered: Law: Parliament of Samoa (palemene.ws) bills/acts page and site search: no AI bill or act, no data protection bill, no deepfake offence found (list runs to 2023 bills). samoalaws.gov.ws could not be reached (proxy 502 / DNS failure via curl and WebFetch). Searched, nothing found.; Government: MCIT: National ICT Policy 2025/26-2030/31 recorded; National Cybersecurity Strategy 2025/26-2030/31 (AI in passing only), older ICT/broadband/communications policies, Information Security Policy, corporate plans reviewed by title; no AI strategy, AI ethics, public-sector AI or procurement guidance found.; Ministries: Health (site search, nothing), Finance (site search, nothing); Education (mesc.gov.ws unreachable) and Justice searched via web search, nothing found.; Regulators: Office of the Regulator (regulator.gov.ws) unreachable (connection reset); Central Bank of Samoa site search not available (JS app), web search found no AI guidance; no data protection authority or standards body AI material exists.. Not reached: samoalaws.gov.ws (legislation portal: proxy 502 and DNS failure); regulator.gov.ws (Office of the Regulator: connection reset); mesc.gov.ws (Ministry of Education: connection reset). Could not verify: samoalaws.gov.ws legislation portal unreachable, so the consolidated law search for AI provisions was not run there; Office of the Regulator and Ministry of Education sites unreachable. binding-law, government-governance, ethics, risk-assurance, procurement, cyber-security, data-privacy, transparency, standards, sandbox, index-readiness, sectoral, generative-ai, drafts, international, historical: no material found. Local retry 2026-10-18 (home connection, Saudi Arabia; curl with Chrome user agent, headless Edge fallback): OPENED regulator.gov.ws (HTTP 200; site search 0 results for 'artificial'; Communications Sector Plan 2022-2027 PDF, 70 pages, no AI mention, only 'emerging technologies' in standards outcome 4.4.1); mesc.gov.ws (HTTP 200; site search and WP search API: nothing for artificial intelligence); palemene.ws (HTTP 200; searches 'artificial' and 'data protection' no results; bills page shows no 2024-2026 entries); mcit.gov.ws (HTTP 200; posts to 2026-10-09, nothing new on AI; ICT Policy PDF re-fetched HTTP 200); cbs.gov.ws (HTTP 200, no AI material on home page). STILL FAILED: samoalaws.gov.ws and www.samoalaws.gov.ws (DNS resolution failure via curl and headless Edge, http and https). ag.gov.ws opened but the site is defaced (posts 'Hacked by ...' dated October 2026); not used as a source."
   },
   "changes": [
     {
@@ -250,21 +255,21 @@
       "title": "Data privacy framework (planned)",
       "english_title": "Data privacy framework (planned)",
       "issuing_authority": "Government of Samoa (MCIT)",
-      "note": "National ICT Policy 2025/26-2030/31 priority 3.1 commits to enacting a data privacy framework; no bill found on the Parliament of Samoa bills page (palemene.ws) as of 2026-10-13. Samoa has no general data protection law found.",
+      "note": "National ICT Policy 2025/26-2030/31 priority 3.1 commits to enacting a data privacy framework; no bill found on the Parliament of Samoa bills page (palemene.ws) as of 2026-10-13. Samoa has no general data protection law found. Update 2026-10-18: Parliament of Samoa site search for 'data protection' and the bills page returned no data protection bill; the official legislation portal still could not be accessed.",
       "found": "2026-10-13"
     },
     {
       "title": "AI regulatory framework for emerging technologies (planned, ICT Policy priority 4.4)",
       "english_title": "AI regulatory framework (planned)",
       "issuing_authority": "MCIT and Office of the Regulator",
-      "note": "ICT Policy M&E table marks priority 4.4 (regulatory frameworks for emerging technologies incl. AI; Telecommunications Act modernisation) as 'Not started'. Watch for a draft.",
+      "note": "ICT Policy M&E table marks priority 4.4 (regulatory frameworks for emerging technologies incl. AI; Telecommunications Act modernisation) as 'Not started'. Watch for a draft. Update 2026-10-18: Office of the Regulator website reviewed (legislation, consultations, publications, site search for 'artificial'): no AI framework, draft or consultation published; its Communications Sector Plan 2022-2027 refers only generally to emerging technologies in technical standards, with no AI content.",
       "found": "2026-10-13"
     },
     {
       "title": "Strengthening Samoa's Readiness for AI Risks (MCIT-UNDP workshop, 13-14 November 2025)",
       "english_title": "Strengthening Samoa's Readiness for AI Risks",
       "issuing_authority": "Ministry of Communications and Information Technology",
-      "note": "MCIT news post https://mcit.gov.ws/strengthening-samoas-readiness-for-ai-risks/ announces a technical workshop on AI trust and safety with UNDP; no policy document published. Watch for any resulting AI trust-and-safety guidance.",
+      "note": "MCIT news post https://mcit.gov.ws/strengthening-samoas-readiness-for-ai-risks/ announces a technical workshop on AI trust and safety with UNDP; no policy document published. Watch for any resulting AI trust-and-safety guidance. Update 2026-10-18: MCIT posts up to 9 October 2026 reviewed; no resulting AI guidance published.",
       "found": "2026-10-13"
     },
     {

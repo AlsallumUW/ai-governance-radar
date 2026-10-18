@@ -10,7 +10,7 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": "Australia has no AI-specific Act. Its National AI Plan (December 2025) relies on existing laws, a new Australian AI Safety Institute and voluntary guidance rather than the mandatory guardrails for high-risk AI proposed in 2024, which were not taken forward. AI-relevant Commonwealth law includes the Privacy Act, which from 10 December 2026 requires privacy policies to disclose substantially automated decisions, the 2024 offences for deepfake sexual material, the generative-AI expectations in the Basic Online Safety Expectations, and provisions allowing decisions by computer program in social security, migration, citizenship and NDIS law. Government use of AI is governed by the Digital Transformation Agency's mandatory policy for responsible use of AI (version 2.0 from December 2025), with its AI technical standard, impact assessment tool and transparency statements, and by the national framework for the assurance of AI in government agreed with the states in 2024; the National AI Centre's Guidance for AI Adoption (2025) replaced the Voluntary AI Safety Standard. Regulators add guidance and enforcement: the privacy regulator's AI guidance and facial recognition determinations, eSafety's online safety standard covering generative AI, ASIC's review of AI governance in financial services, APRA's 2026 letter on AI and the TGA's review of AI in medical device software. New South Wales has the most developed state regime, with a mandatory AI Operational Policy and AI Assessment Framework; Victoria, Queensland and Western Australia (whose new privacy law adds automated-decision duties from July 2026) have their own policies, and the City of Adelaide has an AI policy.",
+    "summary": "Australia has no AI-specific Act. Its National AI Plan (December 2025) relies on existing laws, a new Australian AI Safety Institute and voluntary guidance rather than the mandatory guardrails for high-risk AI proposed in 2024, which were not taken forward. AI-relevant Commonwealth law includes the Privacy Act, which from 10 December 2026 requires privacy policies to disclose substantially automated decisions, the 2024 offences for deepfake sexual material, the generative-AI expectations in the Basic Online Safety Expectations, and provisions allowing decisions by computer program in social security, migration, citizenship and NDIS law. Government use of AI is governed by the Digital Transformation Agency's mandatory policy for responsible use of AI (version 2.0 from December 2025), with its AI technical standard, impact assessment tool and transparency statements, and by the national framework for the assurance of AI in government agreed with the states in 2024; the National AI Centre's Guidance for AI Adoption (2025) replaced the Voluntary AI Safety Standard. Regulators add guidance and enforcement: the privacy regulator's AI guidance and facial recognition determinations, eSafety's online safety standard covering generative AI, ASIC's review of AI governance in financial services, APRA's 2026 letter on AI and the TGA's review of AI in medical device software. The Federal Court and the Federal Circuit and Family Court issued rules on court users' use of AI in 2026, and a 2025 security direction requires Commonwealth entities to remove DeepSeek products. New South Wales has the most developed state regime, with a mandatory AI Operational Policy and AI Assessment Framework; Victoria, Queensland and Western Australia (whose new privacy law adds automated-decision duties from July 2026) have their own policies, and the City of Adelaide has an AI policy.",
     "lead_institutions": [
       "Department of Industry, Science and Resources (National AI Centre and Australian AI Safety Institute)",
       "Digital Transformation Agency",
@@ -20,7 +20,7 @@
       "Department of Customer Service (NSW)"
     ],
     "last_deep_review": "2026-10-11",
-    "review_notes": "Deep review completed on 11 October 2026, covering Commonwealth laws, bills and legislative instruments, federal departments, agencies and regulators, all states and territories, and several major cities. Many official sites were unavailable, so records from them are marked as located but not fully checked, and bills and other items, such as eSafety's online safety codes for AI companion chatbots and the ACT and South Australian AI policies, are listed as leads to check later."
+    "review_notes": "Deep review completed on 11 October 2026, covering Commonwealth laws, bills and legislative instruments, federal departments, agencies, courts and regulators, all states and territories, and several major cities; on 18 October 2026 the education, protective security, health safety and quality, Services Australia and federal court sites were checked again and their AI documents added. The industry department's page for the 2021 AI Action Plan still could not be accessed, and bills and other items, such as eSafety's online safety codes for AI companion chatbots and the ACT and South Australian AI policies, are listed as leads to check later."
   },
   "instruments": [
     {
@@ -1028,7 +1028,7 @@
         "Retried 2026-10-11 with WebFetch and curl: WebFetch returned HTTP 503 for the industry.gov.au page(s); curl with a browser user agent got a reset HTTP/2 stream, then a timeout over HTTP/1.1; text still not read"
       ],
       "source_kind": "official_publication",
-      "evidence_reference": "aus-deep-review-A2-2026-10-11. Link note: As of 17 October 2026 the official page did not open (timeout or refused); a copy is hosted on the OECD.AI policy observatory (https://wp.oecd.ai/app/uploads/2021/12/Australia_AI_Action_Plan_2021.pdf), which the radar does not use as a source.",
+      "evidence_reference": "aus-deep-review-A2-2026-10-11. Link note: As of 18 October 2026 (checked with curl with a browser user agent from a connection in Saudi Arabia and a desktop browser) the department site returns an access-denied page; no other official copy was found. Local retry 2026-10-18: curl timed out; headless browser got a bot-verification page (status 403); still not read.",
       "link_status": "inaccessible",
       "document_access_type": "official_publication_or_full_text_page",
       "source_id": "s-ce58a58630f2",
@@ -4362,7 +4362,7 @@
         "Retried 2026-10-11 with WebFetch and curl: Act PDF/HTML, commencement proclamation sl-2025-630 and the NSW Parliament bill page all returned HTTP 403 (bot challenge) to both WebFetch and curl; no event added."
       ],
       "source_kind": "legislation_portal",
-      "evidence_reference": "aus-deep-review-A4-2026-10-11. Link note: As of 17 October 2026 the official page refuses automated access (HTTP 403, bot check); no other official copy was found. The NSW Parliament site is blocked the same way.",
+      "evidence_reference": "aus-deep-review-A4-2026-10-11. Link note: As of 18 October 2026 (checked with curl with a browser user agent from a connection in Saudi Arabia and a desktop browser) the NSW legislation site opens but the PDF could not be retrieved; no other official copy was found.",
       "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "source_id": "s-5a1bb5009976",
@@ -4925,7 +4925,7 @@
         "Retried 2026-10-11 with WebFetch and curl: statement PDF, accessible DOCX and djsir page returned HTTP 403 (bot challenge) to WebFetch and curl."
       ],
       "source_kind": "official_document",
-      "evidence_reference": "aus-deep-review-A4-2026-10-11. Status note: djsir.vic.gov.au returned HTTP 403 to automated access. Link note: As of 17 October 2026 the official page refuses automated access (HTTP 403, bot check); no other official copy was found.",
+      "evidence_reference": "aus-deep-review-A4-2026-10-11. Status note: djsir.vic.gov.au returned HTTP 403 to automated access. Link note: As of 18 October 2026 (checked with curl with a browser user agent from a connection in Saudi Arabia and a desktop browser) the department site opens but the PDF could not be retrieved; no other official copy was found.",
       "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "source_id": "s-827bd643eca8",
@@ -5546,7 +5546,7 @@
         "Retried 2026-10-11 with WebFetch and curl: Act PDF and RTF on legislation.sa.gov.au and the SA Government Gazette site returned HTTP 403 (bot challenge) to WebFetch and curl; commencement still unverified; no event added."
       ],
       "source_kind": "legislation_portal",
-      "evidence_reference": "aus-deep-review-A4-2026-10-11. Link note: As of 17 October 2026 the official page refuses automated access (HTTP 403, bot check); no other official copy was found.",
+      "evidence_reference": "aus-deep-review-A4-2026-10-11. Link note: As of 18 October 2026 (checked with curl with a browser user agent from a connection in Saudi Arabia and a desktop browser) the South Australian legislation site resets the connection; no other official copy was found.",
       "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "source_id": "s-25f967dcd10e",
@@ -5599,7 +5599,7 @@
         "Retried 2026-10-11 with WebFetch and curl: guidance PDF (both dpac.tas.gov.au paths), the summary PDF and policies page returned HTTP 403 (bot challenge) to WebFetch and curl; no event added."
       ],
       "source_kind": "official_document",
-      "evidence_reference": "aus-deep-review-A4-2026-10-11. Link note: As of 17 October 2026 the official page refuses automated access (HTTP 403, bot check); no other official copy was found.",
+      "evidence_reference": "aus-deep-review-A4-2026-10-11. Link note: As of 18 October 2026 (checked with curl with a browser user agent from a connection in Saudi Arabia and a desktop browser) the department site opens but the PDF could not be retrieved; no other official copy was found.",
       "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "source_id": "s-13bc06026dde",
@@ -5652,8 +5652,8 @@
         "Retried 2026-10-11 with WebFetch and curl: dcdd.nt.gov.au and digitalterritory.nt.gov.au pages returned HTTP 403 (bot challenge) to WebFetch and curl; no event added."
       ],
       "source_kind": "official_publication",
-      "evidence_reference": "aus-deep-review-A4-2026-10-11. Link note: As of 17 October 2026 the official page refuses automated access (HTTP 403, bot check); no other official copy was found. The Digital Territory copy is blocked the same way.",
-      "link_status": "inaccessible",
+      "evidence_reference": "aus-deep-review-A4-2026-10-11.",
+      "link_status": "reachable",
       "document_access_type": "original_government_document",
       "source_id": "s-d79d8bbd35ff",
       "organization_id": "o-b8c1991e6819",
@@ -5971,6 +5971,264 @@
       "organization_id": "o-10de9bbfa2a3",
       "first_recorded": "2026-10-13",
       "last_changed": null
+    },
+    {
+      "id": "i-b10b9518a326",
+      "jurisdiction_id": "AUS",
+      "official_title": "Australian Framework for Generative Artificial Intelligence in Schools",
+      "english_title": "Australian Framework for Generative Artificial Intelligence (AI) in Schools",
+      "issuing_authority": "Education Ministers (developed by the National AI in Schools Taskforce); published by the Department of Education",
+      "publisher_name": "Department of Education",
+      "authority_type": "ministry",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "sectoral",
+        "generative-ai",
+        "ethics"
+      ],
+      "category": "sectoral",
+      "subcategory": null,
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2023",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Published 2023 (Commonwealth of Australia, 2023). The framework provides for review by Education Ministers within 12 months of publication and every 12 months after; a 2024 review is published on the same page.",
+      "scope": "Australia (Commonwealth)",
+      "sectors": [
+        "education"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "National framework, agreed through Education Ministers, guiding the safe, responsible and ethical use of generative AI in Australian schools. It sets 6 principles (teaching and learning; human and social wellbeing; transparency; fairness; accountability; privacy, security and safety) and 25 guiding statements for policy makers, school leaders, teachers, students and parents. It describes itself as aspirational and is meant to help jurisdictions and school sectors align their own policies.",
+      "ai_governance_relevance": "National guidance for generative AI use in schools across all jurisdictions and sectors.",
+      "source_url": "https://www.education.gov.au/schooling/resources/australian-framework-generative-artificial-intelligence-ai-schools",
+      "official_pdf_url": "https://www.education.gov.au/download/17416/australian-framework-generative-artificial-intelligence-ai-schools/35400/australian-framework-generative-ai-schools/pdf",
+      "official_webpage_url": "https://www.education.gov.au/schooling/resources/australian-framework-generative-artificial-intelligence-ai-schools",
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-18",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_publication",
+      "evidence_reference": "local-retry-2026-10-18: official page and 8-page PDF read via headless browser (curl timed out). PDF prints only '(c) Commonwealth of Australia, 2023'; page document metadata shows 'Creation Date 17 November 2023', 'Modified date 17 June 2025' (the modification adds the 2024 review). Publication date stored as year only. Earlier lead cited 1 December 2023 from a search rendering; not printed on the official page.",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-f72d7229945b",
+      "organization_id": "o-093b9c7f77d8",
+      "first_recorded": "2026-10-18",
+      "last_changed": "2023"
+    },
+    {
+      "id": "i-6d1c514ec4f4",
+      "jurisdiction_id": "AUS",
+      "official_title": "PSPF Direction 001-2025: DeepSeek Products, Applications and Web Services",
+      "english_title": "Protective Security Policy Framework Direction 001-2025 on DeepSeek products, applications and web services",
+      "issuing_authority": "Secretary of the Department of Home Affairs (Protective Security Policy Framework)",
+      "publisher_name": "Department of Home Affairs",
+      "authority_type": "ministry",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "cyber-security",
+        "public-sector",
+        "generative-ai"
+      ],
+      "category": "cyber-security",
+      "subcategory": null,
+      "legal_status": "administrative_policy_mandatory_in_scope",
+      "lifecycle": "in_force",
+      "publication_date": "2025-02-04",
+      "effective_date": "2025-02-04",
+      "last_amended_date": null,
+      "current_status": "Publication date 4 February 2025; page last updated 14 February 2025. Applies from 4 February 2025 to non-corporate Commonwealth entities, whose accountable authorities must adhere to it.",
+      "scope": "Australia (Commonwealth)",
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Direction issued under the Protective Security Policy Framework finding that DeepSeek products, applications and web services pose an unacceptable security risk to the Australian Government. All non-corporate Commonwealth entities must identify and remove existing instances, prevent access, use or installation on government systems and mobile devices, and report completion to Home Affairs. Open-source models deployed locally with mitigations are excluded, and exemptions may be sought only for time-limited national security or regulatory functions.",
+      "ai_governance_relevance": "Mandatory Commonwealth security direction banning a generative AI product on government systems.",
+      "source_url": "https://www.protectivesecurity.gov.au/publications-library/direction-001-2025-deepseek-products-applications-and-web-services",
+      "official_pdf_url": "https://www.protectivesecurity.gov.au/system/files/2025-02/PSPF-Direction-001-2025_1.pdf",
+      "official_webpage_url": "https://www.protectivesecurity.gov.au/publications-library/direction-001-2025-deepseek-products-applications-and-web-services",
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-18",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_publication",
+      "evidence_reference": "local-retry-2026-10-18: official page and 2-page signed PDF (Stephanie Foster PSM, Secretary, 'February 2025') read via headless browser (curl timed out). Page: 'Publication date 4 February 2025', 'Last updated 14 February 2025'. Requirements apply 'As of 4 February 2025'.",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-e84229797158",
+      "organization_id": "o-a998d7ee5cb3",
+      "first_recorded": "2026-10-18",
+      "last_changed": "2025-02-04"
+    },
+    {
+      "id": "i-51e6a0a82595",
+      "jurisdiction_id": "AUS",
+      "official_title": "Use of Generative Artificial Intelligence Practice Note (GPN-AI)",
+      "english_title": "Federal Court of Australia: Use of Generative Artificial Intelligence Practice Note (GPN-AI)",
+      "issuing_authority": "Chief Justice of the Federal Court of Australia (D S Mortimer)",
+      "publisher_name": "Federal Court of Australia",
+      "authority_type": "judiciary",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "sectoral",
+        "generative-ai",
+        "transparency"
+      ],
+      "category": "sectoral",
+      "subcategory": null,
+      "legal_status": "administrative_policy_mandatory_in_scope",
+      "lifecycle": "in_force",
+      "publication_date": "2026-04-16",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "General practice note dated 16 April 2026, signed by Chief Justice D S Mortimer. Applies to all persons who appear before or file documents with the Federal Court.",
+      "scope": "Australia (Commonwealth)",
+      "sectors": [
+        "justice"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Sets the Federal Court's expectations for generative AI use by litigants, lawyers, witnesses and others in proceedings: users must understand its limits, must not let it adversely affect the administration of justice, and must disclose its use if the Court requires. Persons responsible for filed documents are expected to confirm facts, authorities and evidence, and use of generative AI must be disclosed at the start of affidavits, expert reports and evidentiary material where it was used to analyse information or create multimedia. Confidential, suppressed or privileged information must not be entered contrary to the obligations that apply to it, and misuse can lead to adverse costs orders.",
+      "ai_governance_relevance": "Mandatory court rules on generative AI use in Federal Court proceedings.",
+      "source_url": "https://www.fedcourt.gov.au/law-and-practice/practice-documents/practice-notes/gpn-ai",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.fedcourt.gov.au/law-and-practice/practice-documents/practice-notes/gpn-ai",
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-18",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_publication",
+      "evidence_reference": "local-retry-2026-10-18: full practice note text read on the official page via headless browser (curl returned 403). Heading and signature: 'D S Mortimer, Chief Justice 16 April 2026'. An RTF version is linked on the page. The superseded April 2025 Notice to the Profession remains a lead.",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-f1ee56b8392a",
+      "organization_id": "o-8715068c65ec",
+      "first_recorded": "2026-10-18",
+      "last_changed": "2026-04-16"
+    },
+    {
+      "id": "i-7c04840b1f30",
+      "jurisdiction_id": "AUS",
+      "official_title": "Use of Artificial Intelligence (PD-AI) - FCFCOA Practice Direction",
+      "english_title": "Federal Circuit and Family Court of Australia Practice Direction: Use of Artificial Intelligence (PD-AI)",
+      "issuing_authority": "Chief Justice and Chief Judge of the Federal Circuit and Family Court of Australia (Justice William Alstergren)",
+      "publisher_name": "Federal Circuit and Family Court of Australia",
+      "authority_type": "judiciary",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "sectoral",
+        "generative-ai",
+        "data-privacy"
+      ],
+      "category": "sectoral",
+      "subcategory": null,
+      "legal_status": "administrative_policy_mandatory_in_scope",
+      "lifecycle": "in_force",
+      "publication_date": "2026-05-29",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Issued 29 May 2026. Applies to all proceedings in Divisions 1 and 2 of the Federal Circuit and Family Court; the Court says it will be reviewed regularly.",
+      "scope": "Australia (Commonwealth)",
+      "sectors": [
+        "justice"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Sets principles (integrity, accountability, accuracy, confidentiality, safety, education) and responsibilities for litigants, lawyers, experts and other court users who use AI, including generative AI, in the Courts. Users must verify AI output, including that cited cases and legislation exist, must not fabricate or alter media, and must not use AI to perpetrate family violence or litigation abuse; expert witnesses must disclose use and others must be able to explain it if asked. Information obtained under court orders, subpoena or subject to suppression must not be entered into a generative AI tool unless it stays in a closed environment, is not used for training and is used only for that proceeding.",
+      "ai_governance_relevance": "Mandatory court rules on AI use in Federal Circuit and Family Court proceedings.",
+      "source_url": "https://www.fcfcoa.gov.au/pd/pd-ai",
+      "official_pdf_url": "https://www.fcfcoa.gov.au/sites/default/files/2026-05/fcfcoa_pd_-_use_of_artificial_intelligence_-_pd-ai_-_0526v1.pdf",
+      "official_webpage_url": "https://www.fcfcoa.gov.au/pd/pd-ai",
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-18",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_publication",
+      "evidence_reference": "local-retry-2026-10-18: official page and 9-page PDF read via headless browser (curl timed out). Signed by Justice William Alstergren, 'Issued: 29 May 2026'.",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-79e38da380cd",
+      "organization_id": "o-719dd377c97d",
+      "first_recorded": "2026-10-18",
+      "last_changed": "2026-05-29"
+    },
+    {
+      "id": "i-92d507d11265",
+      "jurisdiction_id": "AUS",
+      "official_title": "AI Clinical Use Guide: Guidance for clinicians (Version 1.0)",
+      "english_title": "AI Clinical Use Guide: Guidance for clinicians (Version 1.0)",
+      "issuing_authority": "Australian Commission on Safety and Quality in Health Care",
+      "publisher_name": "Australian Commission on Safety and Quality in Health Care",
+      "authority_type": "agency",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "sectoral",
+        "risk-assurance",
+        "data-privacy"
+      ],
+      "category": "sectoral",
+      "subcategory": null,
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2025-08",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Version 1.0, August 2025. Published with two AI safety scenarios (interpretation of medical images; ambient scribe).",
+      "scope": "Australia (Commonwealth)",
+      "sectors": [
+        "health"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Guidance helping clinicians use AI tools safely and responsibly in patient care, structured around before, while and after use. It asks clinicians to assess evidence and intended use, recognise when a tool is a medical device under TGA regulation, inform patients and follow consent procedures, meet Privacy Act requirements, use only organisation-authorised tools, review all AI outputs for accuracy, guard against automation bias, label AI-assisted records and report incidents.",
+      "ai_governance_relevance": "National clinical guidance on safe use of AI in healthcare.",
+      "source_url": "https://www.safetyandquality.gov.au/resources/ai-clinical-use-guide",
+      "official_pdf_url": "https://www.safetyandquality.gov.au/sites/default/files/resources/attachments//ai-clinical-use-guide.pdf",
+      "official_webpage_url": "https://www.safetyandquality.gov.au/resources/ai-clinical-use-guide",
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-18",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_publication",
+      "evidence_reference": "local-retry-2026-10-18: official page and 7-page PDF read via headless browser (curl timed out). PDF footer: 'Version 1.0 - August 2025'; page: 'Publication Year: 2025'. Earlier lead cited 13 August 2025 from a search rendering; not printed on the official sources read.",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-a7daefc5982b",
+      "organization_id": "o-9eb1b394d32f",
+      "first_recorded": "2026-10-18",
+      "last_changed": "2025-08"
     }
   ],
   "organizations": [
@@ -6426,6 +6684,46 @@
       "source_url": "https://creative.gov.au/",
       "authority_type": "agency",
       "government_level": "national"
+    },
+    {
+      "id": "o-a998d7ee5cb3",
+      "jurisdiction_id": "AUS",
+      "name": "Department of Home Affairs",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Administers the Protective Security Policy Framework; its Secretary may issue PSPF Directions to Commonwealth entities, including the 2025 direction on DeepSeek AI products.",
+      "source_url": "https://www.homeaffairs.gov.au/",
+      "authority_type": "ministry",
+      "government_level": "national"
+    },
+    {
+      "id": "o-8715068c65ec",
+      "jurisdiction_id": "AUS",
+      "name": "Federal Court of Australia",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Superior court of record; issued the Use of Generative Artificial Intelligence Practice Note (GPN-AI) for court users in 2026.",
+      "source_url": "https://www.fedcourt.gov.au/",
+      "authority_type": "judiciary",
+      "government_level": "national"
+    },
+    {
+      "id": "o-719dd377c97d",
+      "jurisdiction_id": "AUS",
+      "name": "Federal Circuit and Family Court of Australia",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Federal court for family law, migration and general federal matters; issued the Practice Direction on Use of Artificial Intelligence (PD-AI) in 2026.",
+      "source_url": "https://www.fcfcoa.gov.au/",
+      "authority_type": "judiciary",
+      "government_level": "national"
+    },
+    {
+      "id": "o-9eb1b394d32f",
+      "jurisdiction_id": "AUS",
+      "name": "Australian Commission on Safety and Quality in Health Care",
+      "publisher_name_verified": true,
+      "ai_governance_role": "National health safety and quality body; publishes the AI Clinical Use Guide for clinicians.",
+      "source_url": "https://www.safetyandquality.gov.au/",
+      "authority_type": "agency",
+      "government_level": "national"
     }
   ],
   "sources": [
@@ -6852,14 +7150,14 @@
         "strategy"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-17",
-      "check_method": "Full text read through a text-rendering fetch of the official URL (direct automated requests to this host time out); official page metadata checked",
-      "http_status": null,
+      "checked_date": "2026-10-18",
+      "check_method": "curl (timeout) then headless browser: bot-verification page",
+      "http_status": 403,
       "final_url": null,
       "link_status": "inaccessible",
       "page_title": "Australia's Artificial Intelligence Action Plan",
       "document_language": "en",
-      "error": "Host refused or timed out on automated requests (bot protection); not readable on 2026-10-11"
+      "error": "Bot verification page (403); curl timed out"
     },
     {
       "id": "s-e55f352a1596",
@@ -8556,7 +8854,7 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
+      "checked_date": "2026-10-18",
       "check_method": "GET (curl) and fetch returned HTTP 403; metadata from search-indexed official text",
       "http_status": 403,
       "final_url": "https://legislation.nsw.gov.au/view/pdf/asmade/act-2025-57",
@@ -8845,7 +9143,7 @@
         "strategy"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
+      "checked_date": "2026-10-18",
       "check_method": "GET (curl) and fetch returned HTTP 403; official media release PDF on premier.vic.gov.au read",
       "http_status": 403,
       "final_url": "https://djsir.vic.gov.au/__data/assets/pdf_file/0004/2454124/The-Victorian-Governments-AI-Mission-Statement.pdf",
@@ -9136,7 +9434,7 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
+      "checked_date": "2026-10-18",
       "check_method": "GET (curl) and fetch returned HTTP 403; metadata from search-indexed official text",
       "http_status": 403,
       "final_url": "https://www.legislation.sa.gov.au/_legislation-documents/lz/v/a/2025/summary-offences-humiliating-degrading-or-invasive-depictions-amendment-act-2025_19/2025.19.un.pdf",
@@ -9163,7 +9461,7 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
+      "checked_date": "2026-10-18",
       "check_method": "GET (curl) and fetch returned HTTP 403; metadata from search-indexed official text",
       "http_status": 403,
       "final_url": "https://www.dpac.tas.gov.au/__data/assets/pdf_file/0022/420466/FINAL-Guidance-for-AI-v1.4.pdf",
@@ -9190,14 +9488,14 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "GET (curl) and fetch returned HTTP 403; metadata from search-indexed official pages",
-      "http_status": 403,
+      "checked_date": "2026-10-18",
+      "check_method": "desktop browser from a connection in Saudi Arabia",
+      "http_status": 200,
       "final_url": "https://dcdd.nt.gov.au/publications/artificial-intelligence-assurance-framework",
-      "link_status": "inaccessible",
+      "link_status": "reachable",
       "page_title": "Artificial Intelligence Assurance Framework | Department of Corporate and Digital Development",
       "document_language": "en",
-      "error": "HTTP 403 (bot challenge) from dcdd.nt.gov.au and digitalterritory.nt.gov.au"
+      "error": null
     },
     {
       "id": "s-247a95559b30",
@@ -9443,6 +9741,146 @@
       "document_language": "en",
       "error": null,
       "content_type": "application/pdf"
+    },
+    {
+      "id": "s-f72d7229945b",
+      "url": "https://www.education.gov.au/schooling/resources/australian-framework-generative-artificial-intelligence-ai-schools",
+      "jurisdiction_ids": [
+        "AUS"
+      ],
+      "source_institutions": [
+        "Department of Education"
+      ],
+      "instrument_ids": [
+        "i-b10b9518a326"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "generative-ai",
+        "ethics"
+      ],
+      "date_reviewed": "2026-10-18",
+      "checked_date": "2026-10-18",
+      "check_method": "Headless browser GET (HTTP 200) after curl failed; page and full official text read",
+      "http_status": 200,
+      "final_url": "https://www.education.gov.au/schooling/resources/australian-framework-generative-artificial-intelligence-ai-schools",
+      "link_status": "reachable",
+      "page_title": "Australian Framework for Generative Artificial Intelligence (AI) in Schools - Department of Education, Australian Government",
+      "document_language": "en",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-e84229797158",
+      "url": "https://www.protectivesecurity.gov.au/publications-library/direction-001-2025-deepseek-products-applications-and-web-services",
+      "jurisdiction_ids": [
+        "AUS"
+      ],
+      "source_institutions": [
+        "Department of Home Affairs"
+      ],
+      "instrument_ids": [
+        "i-6d1c514ec4f4"
+      ],
+      "categories_reviewed": [
+        "cyber-security",
+        "public-sector",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-18",
+      "checked_date": "2026-10-18",
+      "check_method": "Headless browser GET (HTTP 200) after curl failed; page and full official text read",
+      "http_status": 200,
+      "final_url": "https://www.protectivesecurity.gov.au/publications-library/direction-001-2025-deepseek-products-applications-and-web-services",
+      "link_status": "reachable",
+      "page_title": "Direction 001-2025 on DeepSeek Products, Applications and Web Services | Protective Security Policy Framework",
+      "document_language": "en",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-f1ee56b8392a",
+      "url": "https://www.fedcourt.gov.au/law-and-practice/practice-documents/practice-notes/gpn-ai",
+      "jurisdiction_ids": [
+        "AUS"
+      ],
+      "source_institutions": [
+        "Federal Court of Australia"
+      ],
+      "instrument_ids": [
+        "i-51e6a0a82595"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "generative-ai",
+        "transparency"
+      ],
+      "date_reviewed": "2026-10-18",
+      "checked_date": "2026-10-18",
+      "check_method": "Headless browser GET (HTTP 200) after curl failed; page and full official text read",
+      "http_status": 200,
+      "final_url": "https://www.fedcourt.gov.au/law-and-practice/practice-documents/practice-notes/gpn-ai",
+      "link_status": "reachable",
+      "page_title": "Use of Generative Artificial Intelligence Practice Note (GPN-AI)",
+      "document_language": "en",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-79e38da380cd",
+      "url": "https://www.fcfcoa.gov.au/pd/pd-ai",
+      "jurisdiction_ids": [
+        "AUS"
+      ],
+      "source_institutions": [
+        "Federal Circuit and Family Court of Australia"
+      ],
+      "instrument_ids": [
+        "i-7c04840b1f30"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "generative-ai",
+        "data-privacy"
+      ],
+      "date_reviewed": "2026-10-18",
+      "checked_date": "2026-10-18",
+      "check_method": "Headless browser GET (HTTP 200) after curl failed; page and full official text read",
+      "http_status": 200,
+      "final_url": "https://www.fcfcoa.gov.au/pd/pd-ai",
+      "link_status": "reachable",
+      "page_title": "FCFCOA Practice Direction: Use of Artificial Intelligence | Federal Circuit and Family Court of Australia",
+      "document_language": "en",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-a7daefc5982b",
+      "url": "https://www.safetyandquality.gov.au/resources/ai-clinical-use-guide",
+      "jurisdiction_ids": [
+        "AUS"
+      ],
+      "source_institutions": [
+        "Australian Commission on Safety and Quality in Health Care"
+      ],
+      "instrument_ids": [
+        "i-92d507d11265"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "risk-assurance",
+        "data-privacy"
+      ],
+      "date_reviewed": "2026-10-18",
+      "checked_date": "2026-10-18",
+      "check_method": "Headless browser GET (HTTP 200) after curl failed; page and full official text read",
+      "http_status": 200,
+      "final_url": "https://www.safetyandquality.gov.au/resources/ai-clinical-use-guide",
+      "link_status": "reachable",
+      "page_title": "AI Clinical Use Guide | Australian Commission on Safety and Quality in Health Care",
+      "document_language": "en",
+      "error": null,
+      "content_type": "text/html"
     }
   ],
   "regional_applicability": [],
@@ -9641,7 +10079,14 @@
       "Department of Infrastructure Transport Regional Development Communications artificial intelligence policy",
       "Department of Social Services OR Veterans' Affairs OR NDIA artificial intelligence policy framework gov.au 2025",
       "Office for the Arts OR Creative Australia artificial intelligence policy guidance",
-      "Department of Home Affairs artificial intelligence policy OR strategy AI transparency statement Australian Border Force"
+      "Department of Home Affairs artificial intelligence policy OR strategy AI transparency statement Australian Border Force",
+      "education.gov.au Australian Framework for Generative AI in Schools (official page and PDF)",
+      "protectivesecurity.gov.au PSPF Direction 001-2025 DeepSeek (official page and PDF)",
+      "servicesaustralia.gov.au Automation and AI Strategy 2025-27 (official page and PDF)",
+      "fedcourt.gov.au GPN-AI practice note",
+      "fcfcoa.gov.au PD-AI practice direction (page and PDF)",
+      "safetyandquality.gov.au AI Clinical Use Guide (page and PDF)",
+      "industry.gov.au/node/92040 Australia's AI Action Plan 2021"
     ],
     "review_date": "2026-10-11",
     "passes": {
@@ -9663,9 +10108,99 @@
     "no_material_found_note": "Federal laws and bills, the federal government, regulators and ministries, all states and territories, and major cities were searched. No AI regulatory sandbox or government-published AI readiness index was found, and Brisbane, Perth, Gold Coast and Parramatta had no AI document on official council sources. Many official sites were unavailable, so a number of records are marked as located but not fully checked and their dates need a manual check.",
     "discovery_result_count": 15,
     "focused_result_count": 8,
-    "technical_note": "Method note (original): Deep review completed on 11 October 2026, covering Commonwealth laws, bills and legislative instruments, federal departments and agencies, federal regulators, all six states and two territories, and the cities of Sydney, Melbourne, Brisbane, Adelaide, Perth, Gold Coast, Parramatta and Hobart. Many official websites could not be read automatically, including the Australian Cyber Security Centre, the eSafety Commissioner, the ACCC, the Australian Human Rights Commission and most South Australian, Tasmanian, ACT and Northern Territory government sites; records from those sites are marked as located but not fully read, or held as pending. Bills before Parliament are listed as pending rather than as instruments. Pending: eSafety's online safety codes covering AI companion chatbots, the ACCC's digital platform reports on AI, the Human Rights Commission's 2021 report on human rights and technology, the TGA's guidance on digital scribes, the ACT and South Australian AI policies, and the founding documents of the Australian AI Safety Institute.\n\nCoverage note (original): Technical review notes: Backfill run 2026-10-11 in five parts (A1 federal law and bills; A2 federal government; A3 federal regulators; A4 states and territories; A5 cities). No usage-limit interruption occurred; every record was built from official texts read in this run and the six earlier records were re-checked and fixed (domain-named publishers and organisations replaced). sandbox: no AI regulatory sandbox found (ASIC, APRA, DISR and state sites searched). index-readiness: no government-published AI readiness index or maturity assessment found. Access: cyber.gov.au and asd.gov.au (bot protection), dta.gov.au blog and media pages, esafety.gov.au (reset/503), accc.gov.au and humanrights.gov.au (403), tga.gov.au and health.gov.au (timeouts), parlinfo.aph.gov.au (403), NSW legislation and Parliament, IPC NSW, OIC Queensland, and most SA, Tasmanian, ACT and NT government hosts (403). Several industry.gov.au, digital.gov.au and finance.gov.au pages timing out on direct requests were read through a text-rendering fetch of the official URL (r.jina.ai), recorded in each source's check_method. TGA documents were read on the TGA consultation hub (consultations.tga.gov.au). DISR consultation PDFs are served from the consult.industry.gov.au platform's storage host, linked from the DISR consultation page (source_url is the DISR page). OAIC determinations cite the determination itself (PROTOCOL §1): Clearview [2021] AICmr 54 from the determination PDF on oaic.gov.au; Bunnings [2024] AICmr 230 and Kmart [2025] AICmr 155 from the OAIC privacy determinations register (full texts are published on AustLII, which returned 403; the OAIC-hosted Kmart PDF returned 404). 28 records are primary_source_located, including 9 state and territory records built from search-engine copies of official texts; world events whose dates came only from those copies (NSW Act No 57 of 2025 assent and commencement, SA depictions Act assent, Tasmanian guidance approval, NT AI Assurance Framework release) were not logged. The Basic Online Safety Expectations were found by A1 and A3 and are recorded once. The Privacy Act APP 1.7-1.9 automated-decision transparency commences 10 Dec 2026 and is not logged as a world event until it commences. The eSafety designated internet services standard effective date is left empty pending confirmation from eSafety's register. Brisbane, Perth, Gold Coast and Parramatta: no AI instrument found on official council sources. Second-method retry (BACKFILL step 4) on 2026-10-11: all 28 located-only records were retried with WebFetch and curl. Upgraded: DTA AI model clauses, Clearview determination, OVIC AI privacy guidance, Queensland FAIRA, WA PRIS Act (now cited from the legislation.wa.gov.au consolidation law_a147470; the 1 July 2026 commencement of Pt 2 Divs 1-5 incl. s 16 and Schedule 1 IPPs incl. IPP 10 under SL 2026/128 is confirmed in the consolidation's commencement table). Still located-only: cyber.gov.au, digital.gov.au, industry.gov.au and esafety.gov.au returned HTTP 503 to WebFetch and reset or timed out for curl; NSW legislation, Victorian, SA, Tasmanian and NT hosts returned 403 to both; the NSW AIAF document is available only inside a login platform. Ministry catch-up 2026-10-13 (PROTOCOL §2 ministry rule, applied after this country's deep review; one agent, 30 minutes, national ministries' own AI documents only, nothing else re-reviewed): 3 record(s) added. Ministries: Department of Education (schools): Australian Framework for Generative AI in Schools 2023 (recorded, located-only); Government response to 'Study Buddy or Influencer' inquiry 2026 (recorded); 2024 Framework Review (lead); Higher education / research (TEQSA, ARC): TEQSA gen-AI assessment principles and toolkit (lead; regulator); no Department-level higher-education AI policy found; Department of Health, Disability and Ageing: nothing new beyond existing records (AI Accountable Official page only); Australian Commission on Safety and Quality in Health Care: AI Clinical Use Guide 2025 (recorded, located-only); Justice: Attorney-General's Department: nothing new beyond existing ADM consultation and Privacy exposure draft (Copyright and AI Reference Group is a forum, no instrument); Federal Court: GPN-AI 2026 (recorded, located-only), April 2025 notice (lead); Federal Circuit and Family Court: PD-AI 2026 (recorded, located-only); High Court, Administrative Review Tribunal, Fair Work Commission, CDPP: nothing found; Department of Defence: Policy Settings for Responsible Use of AI in Defence (lead, no verified date); A Method for Ethical AI in Defence 2021 (lead, not an official position); ASD Ethical AI framework (lead); Treasury: Review of AI and the Australian Consumer Law final report 2025 (recorded); ATO: no published AI policy (lead); customs (ABF): covered by Home Affairs transparency statement only; Department of Home Affairs: PSPF Direction 001-2025 on DeepSeek (recorded, located-only); PSPF generative-AI advisory already a lead (date still unverified); AI transparency statement (lead group); AFP: AI strategy 2026 (lead, no official text located); Department of Foreign Affairs and Trade: nothing new (International Engagement strategy already a lead; 2021 Cyber and Critical Technology Engagement Strategy mentions AI only as one critical technology); Department of Employment and Workplace Relations: Third-Party AI Assessment Framework (lead); Services Australia: Automation and AI Strategy 2025-27 (recorded, located-only); Department of Social Services, NDIA: nothing found; Veterans' Affairs: internal AI policy being finalised (in transparency-statement lead); Department of Agriculture, Fisheries and Forestry: transparency statement only, no AI policy; Infrastructure, Transport, Regional Development, Communications, Sport and the Arts: transparency statement only (Digital Duty of Care exposure draft already a lead); Climate Change, Energy, Environment and Water: nothing found; Industry, Science and Resources: already fully covered; Arts: Creative Australia generative AI principles 2025 (recorded), Screen Australia AI principles (lead); Public administration (Finance, DTA, APSC, PM&C): already covered by existing DTA/Finance records; APSC: no separate AI guidance found. Not reached: Department of Climate Change, Energy, the Environment and Water (one search only, nothing found; site not opened); Department of the Prime Minister and Cabinet (not searched separately; covered by existing whole-of-government records); Department of Social Services and NDIA sites (not opened; nothing found in search). Could not verify: education.gov.au, protectivesecurity.gov.au, servicesaustralia.gov.au, fedcourt.gov.au, fcfcoa.gov.au, safetyandquality.gov.au, defence.gov.au, dewr.gov.au, teqsa.gov.au and agriculture.gov.au all refused automated fetches (HTTP/2 stream errors, empty replies, Cloudflare 403, timeouts) on 2026-10-13 with both curl and WebFetch. The six records from these sites are primary_source_located; their dates come from the issuers' official pages as shown in search results and need a manual check.; Services Australia strategy: the June 2025 launch month comes from the agency's 2030 Strategy as indexed; no date printed on the strategy itself was read.."
+    "technical_note": "Method note (original): Deep review completed on 11 October 2026, covering Commonwealth laws, bills and legislative instruments, federal departments and agencies, federal regulators, all six states and two territories, and the cities of Sydney, Melbourne, Brisbane, Adelaide, Perth, Gold Coast, Parramatta and Hobart. Many official websites could not be read automatically, including the Australian Cyber Security Centre, the eSafety Commissioner, the ACCC, the Australian Human Rights Commission and most South Australian, Tasmanian, ACT and Northern Territory government sites; records from those sites are marked as located but not fully read, or held as pending. Bills before Parliament are listed as pending rather than as instruments. Pending: eSafety's online safety codes covering AI companion chatbots, the ACCC's digital platform reports on AI, the Human Rights Commission's 2021 report on human rights and technology, the TGA's guidance on digital scribes, the ACT and South Australian AI policies, and the founding documents of the Australian AI Safety Institute.\n\nCoverage note (original): Technical review notes: Backfill run 2026-10-11 in five parts (A1 federal law and bills; A2 federal government; A3 federal regulators; A4 states and territories; A5 cities). No usage-limit interruption occurred; every record was built from official texts read in this run and the six earlier records were re-checked and fixed (domain-named publishers and organisations replaced). sandbox: no AI regulatory sandbox found (ASIC, APRA, DISR and state sites searched). index-readiness: no government-published AI readiness index or maturity assessment found. Access: cyber.gov.au and asd.gov.au (bot protection), dta.gov.au blog and media pages, esafety.gov.au (reset/503), accc.gov.au and humanrights.gov.au (403), tga.gov.au and health.gov.au (timeouts), parlinfo.aph.gov.au (403), NSW legislation and Parliament, IPC NSW, OIC Queensland, and most SA, Tasmanian, ACT and NT government hosts (403). Several industry.gov.au, digital.gov.au and finance.gov.au pages timing out on direct requests were read through a text-rendering fetch of the official URL (r.jina.ai), recorded in each source's check_method. TGA documents were read on the TGA consultation hub (consultations.tga.gov.au). DISR consultation PDFs are served from the consult.industry.gov.au platform's storage host, linked from the DISR consultation page (source_url is the DISR page). OAIC determinations cite the determination itself (PROTOCOL §1): Clearview [2021] AICmr 54 from the determination PDF on oaic.gov.au; Bunnings [2024] AICmr 230 and Kmart [2025] AICmr 155 from the OAIC privacy determinations register (full texts are published on AustLII, which returned 403; the OAIC-hosted Kmart PDF returned 404). 28 records are primary_source_located, including 9 state and territory records built from search-engine copies of official texts; world events whose dates came only from those copies (NSW Act No 57 of 2025 assent and commencement, SA depictions Act assent, Tasmanian guidance approval, NT AI Assurance Framework release) were not logged. The Basic Online Safety Expectations were found by A1 and A3 and are recorded once. The Privacy Act APP 1.7-1.9 automated-decision transparency commences 10 Dec 2026 and is not logged as a world event until it commences. The eSafety designated internet services standard effective date is left empty pending confirmation from eSafety's register. Brisbane, Perth, Gold Coast and Parramatta: no AI instrument found on official council sources. Second-method retry (BACKFILL step 4) on 2026-10-11: all 28 located-only records were retried with WebFetch and curl. Upgraded: DTA AI model clauses, Clearview determination, OVIC AI privacy guidance, Queensland FAIRA, WA PRIS Act (now cited from the legislation.wa.gov.au consolidation law_a147470; the 1 July 2026 commencement of Pt 2 Divs 1-5 incl. s 16 and Schedule 1 IPPs incl. IPP 10 under SL 2026/128 is confirmed in the consolidation's commencement table). Still located-only: cyber.gov.au, digital.gov.au, industry.gov.au and esafety.gov.au returned HTTP 503 to WebFetch and reset or timed out for curl; NSW legislation, Victorian, SA, Tasmanian and NT hosts returned 403 to both; the NSW AIAF document is available only inside a login platform. Ministry catch-up 2026-10-13 (PROTOCOL §2 ministry rule, applied after this country's deep review; one agent, 30 minutes, national ministries' own AI documents only, nothing else re-reviewed): 3 record(s) added. Ministries: Department of Education (schools): Australian Framework for Generative AI in Schools 2023 (recorded, located-only); Government response to 'Study Buddy or Influencer' inquiry 2026 (recorded); 2024 Framework Review (lead); Higher education / research (TEQSA, ARC): TEQSA gen-AI assessment principles and toolkit (lead; regulator); no Department-level higher-education AI policy found; Department of Health, Disability and Ageing: nothing new beyond existing records (AI Accountable Official page only); Australian Commission on Safety and Quality in Health Care: AI Clinical Use Guide 2025 (recorded, located-only); Justice: Attorney-General's Department: nothing new beyond existing ADM consultation and Privacy exposure draft (Copyright and AI Reference Group is a forum, no instrument); Federal Court: GPN-AI 2026 (recorded, located-only), April 2025 notice (lead); Federal Circuit and Family Court: PD-AI 2026 (recorded, located-only); High Court, Administrative Review Tribunal, Fair Work Commission, CDPP: nothing found; Department of Defence: Policy Settings for Responsible Use of AI in Defence (lead, no verified date); A Method for Ethical AI in Defence 2021 (lead, not an official position); ASD Ethical AI framework (lead); Treasury: Review of AI and the Australian Consumer Law final report 2025 (recorded); ATO: no published AI policy (lead); customs (ABF): covered by Home Affairs transparency statement only; Department of Home Affairs: PSPF Direction 001-2025 on DeepSeek (recorded, located-only); PSPF generative-AI advisory already a lead (date still unverified); AI transparency statement (lead group); AFP: AI strategy 2026 (lead, no official text located); Department of Foreign Affairs and Trade: nothing new (International Engagement strategy already a lead; 2021 Cyber and Critical Technology Engagement Strategy mentions AI only as one critical technology); Department of Employment and Workplace Relations: Third-Party AI Assessment Framework (lead); Services Australia: Automation and AI Strategy 2025-27 (recorded, located-only); Department of Social Services, NDIA: nothing found; Veterans' Affairs: internal AI policy being finalised (in transparency-statement lead); Department of Agriculture, Fisheries and Forestry: transparency statement only, no AI policy; Infrastructure, Transport, Regional Development, Communications, Sport and the Arts: transparency statement only (Digital Duty of Care exposure draft already a lead); Climate Change, Energy, Environment and Water: nothing found; Industry, Science and Resources: already fully covered; Arts: Creative Australia generative AI principles 2025 (recorded), Screen Australia AI principles (lead); Public administration (Finance, DTA, APSC, PM&C): already covered by existing DTA/Finance records; APSC: no separate AI guidance found. Not reached: Department of Climate Change, Energy, the Environment and Water (one search only, nothing found; site not opened); Department of the Prime Minister and Cabinet (not searched separately; covered by existing whole-of-government records); Department of Social Services and NDIA sites (not opened; nothing found in search). Could not verify: education.gov.au, protectivesecurity.gov.au, servicesaustralia.gov.au, fedcourt.gov.au, fcfcoa.gov.au, safetyandquality.gov.au, defence.gov.au, dewr.gov.au, teqsa.gov.au and agriculture.gov.au all refused automated fetches (HTTP/2 stream errors, empty replies, Cloudflare 403, timeouts) on 2026-10-13 with both curl and WebFetch. The six records from these sites are primary_source_located; their dates come from the issuers' official pages as shown in search results and need a manual check.; Services Australia strategy: the June 2025 launch month comes from the agency's 2030 Strategy as indexed; no date printed on the strategy itself was read.. Local retry 2026-10-18 (home connection, Saudi Arabia): curl with a Chrome user agent timed out on education.gov.au, protectivesecurity.gov.au, servicesaustralia.gov.au, fcfcoa.gov.au, safetyandquality.gov.au and industry.gov.au, and got HTTP 403 on fedcourt.gov.au; headless Edge then opened all six ministry/court sites (HTTP 200) and their PDFs. Recorded from full text: Framework for Generative AI in Schools, PSPF Direction 001-2025, Federal Court GPN-AI, FCFCOA PD-AI, ACSQHC AI Clinical Use Guide. Services Australia Automation and AI Strategy 2025-27 read in full but no publication date printed, kept as lead. industry.gov.au/node/92040 still returned a bot-verification page (403) in headless Edge; not solved, still inaccessible."
   },
   "changes": [
+    {
+      "id": "c-65b1074c3ad6",
+      "date": "2026-10-18",
+      "recorded": "2026-10-18",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "AUS",
+      "instrument_id": "i-b10b9518a326",
+      "title": "Australian Framework for Generative Artificial Intelligence (AI) in Schools",
+      "detail": "Added to the radar (published 2023).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.education.gov.au/schooling/resources/australian-framework-generative-artificial-intelligence-ai-schools",
+      "needs_review": false
+    },
+    {
+      "id": "c-78fa8e77e383",
+      "date": "2026-10-18",
+      "recorded": "2026-10-18",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "AUS",
+      "instrument_id": "i-6d1c514ec4f4",
+      "title": "Protective Security Policy Framework Direction 001-2025 on DeepSeek products, applications and web services",
+      "detail": "Added to the radar (published 2025-02-04).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.protectivesecurity.gov.au/publications-library/direction-001-2025-deepseek-products-applications-and-web-services",
+      "needs_review": false
+    },
+    {
+      "id": "c-b8ba51f4dd3a",
+      "date": "2026-10-18",
+      "recorded": "2026-10-18",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "AUS",
+      "instrument_id": "i-51e6a0a82595",
+      "title": "Federal Court of Australia: Use of Generative Artificial Intelligence Practice Note (GPN-AI)",
+      "detail": "Added to the radar (published 2026-04-16).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.fedcourt.gov.au/law-and-practice/practice-documents/practice-notes/gpn-ai",
+      "needs_review": false
+    },
+    {
+      "id": "c-1177cbf165eb",
+      "date": "2026-10-18",
+      "recorded": "2026-10-18",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "AUS",
+      "instrument_id": "i-7c04840b1f30",
+      "title": "Federal Circuit and Family Court of Australia Practice Direction: Use of Artificial Intelligence (PD-AI)",
+      "detail": "Added to the radar (published 2026-05-29).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.fcfcoa.gov.au/pd/pd-ai",
+      "needs_review": false
+    },
+    {
+      "id": "c-3f3d3baca0f9",
+      "date": "2026-10-18",
+      "recorded": "2026-10-18",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "AUS",
+      "instrument_id": "i-92d507d11265",
+      "title": "AI Clinical Use Guide: Guidance for clinicians (Version 1.0)",
+      "detail": "Added to the radar (published 2025-08).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.safetyandquality.gov.au/resources/ai-clinical-use-guide",
+      "needs_review": false
+    },
+    {
+      "id": "c-31d798d6027d",
+      "date": "2026-10-18",
+      "recorded": "2026-10-18",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "AUS",
+      "instrument_id": "i-6fd49d7b0ddf",
+      "title": "Northern Territory Government Artificial Intelligence (AI) Assurance Framework",
+      "detail": "Official link restored.",
+      "from": "inaccessible",
+      "to": "reachable",
+      "source_url": "https://dcdd.nt.gov.au/publications/artificial-intelligence-assurance-framework",
+      "needs_review": false
+    },
     {
       "id": "c-2e0e0ad76826",
       "date": "2026-10-13",
@@ -11797,6 +12332,21 @@
       "needs_review": false
     },
     {
+      "id": "c-7a47b2808779",
+      "date": "2026-05-29",
+      "recorded": "2026-10-18",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "AUS",
+      "instrument_id": "i-7c04840b1f30",
+      "title": "FCFCOA Practice Direction on Use of AI (PD-AI) issued",
+      "detail": "Federal Circuit and Family Court of Australia Practice Direction: Use of Artificial Intelligence (PD-AI).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.fcfcoa.gov.au/pd/pd-ai",
+      "needs_review": false
+    },
+    {
       "id": "c-42a96f0e389f",
       "date": "2026-05-18",
       "recorded": "2026-10-11",
@@ -11824,6 +12374,21 @@
       "from": null,
       "to": null,
       "source_url": "https://www.apra.gov.au/news-and-publications/apra-letter-industry-artificial-intelligence-ai",
+      "needs_review": false
+    },
+    {
+      "id": "c-540781e8627f",
+      "date": "2026-04-16",
+      "recorded": "2026-10-18",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "AUS",
+      "instrument_id": "i-51e6a0a82595",
+      "title": "Federal Court Generative AI Practice Note (GPN-AI) issued",
+      "detail": "Federal Court of Australia: Use of Generative Artificial Intelligence Practice Note (GPN-AI).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.fedcourt.gov.au/law-and-practice/practice-documents/practice-notes/gpn-ai",
       "needs_review": false
     },
     {
@@ -12052,6 +12617,21 @@
       "needs_review": false
     },
     {
+      "id": "c-90cfc87ebd2b",
+      "date": "2025-08",
+      "recorded": "2026-10-18",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "AUS",
+      "instrument_id": "i-92d507d11265",
+      "title": "ACSQHC AI Clinical Use Guide published",
+      "detail": "AI Clinical Use Guide: Guidance for clinicians (Version 1.0).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.safetyandquality.gov.au/resources/ai-clinical-use-guide",
+      "needs_review": false
+    },
+    {
       "id": "c-0bc0569eb895",
       "date": "2025-06-24",
       "recorded": "2026-10-13",
@@ -12079,6 +12659,21 @@
       "from": null,
       "to": null,
       "source_url": "https://www.legislation.gov.au/C2024A00128/asmade/text",
+      "needs_review": false
+    },
+    {
+      "id": "c-e2bd20a7acd3",
+      "date": "2025-02-04",
+      "recorded": "2026-10-18",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "AUS",
+      "instrument_id": "i-6d1c514ec4f4",
+      "title": "PSPF Direction 001-2025 on DeepSeek issued",
+      "detail": "Protective Security Policy Framework Direction 001-2025 on DeepSeek products, applications and web services.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.protectivesecurity.gov.au/publications-library/direction-001-2025-deepseek-products-applications-and-web-services",
       "needs_review": false
     },
     {
@@ -12484,6 +13079,21 @@
       "from": null,
       "to": null,
       "source_url": "https://consult.industry.gov.au/supporting-responsible-ai",
+      "needs_review": false
+    },
+    {
+      "id": "c-c7140f082773",
+      "date": "2023",
+      "recorded": "2026-10-18",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "AUS",
+      "instrument_id": "i-b10b9518a326",
+      "title": "Australian Framework for Generative AI in Schools published",
+      "detail": "Australian Framework for Generative Artificial Intelligence (AI) in Schools.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.education.gov.au/schooling/resources/australian-framework-generative-artificial-intelligence-ai-schools",
       "needs_review": false
     },
     {
@@ -13029,7 +13639,7 @@
       "title": "2024 Review of the Australian Framework for Generative Artificial Intelligence in Schools",
       "english_title": "2024 Review of the Australian Framework for Generative AI in Schools",
       "issuing_authority": "Department of Education (National AI Schools Taskforce; endorsed by Education Ministers)",
-      "note": "Review endorsed by Education Ministers in June 2025; agreed annual review cycle. Official document on education.gov.au (https://www.education.gov.au/schooling/announcements/2024-review-australian-framework-generative-artificial-intelligence-schools); not read (site blocked automated access). Could be added as a related record to the Framework once read.",
+      "note": "Review endorsed by Education Ministers in June 2025; agreed annual review cycle. Official document on education.gov.au (https://www.education.gov.au/schooling/announcements/2024-review-australian-framework-generative-artificial-intelligence-schools); not read (site blocked automated access). Could be added as a related record to the Framework once read. Update 2026-10-18: education.gov.au opened; the 2024 Review is downloadable from the Framework page (PDF/DOCX) but was not read in this pass.",
       "found": "2026-10-13"
     },
     {
@@ -13092,42 +13702,42 @@
       "title": "Australian Framework for Generative Artificial Intelligence (AI) in Schools",
       "english_title": "Australian Framework for Generative Artificial Intelligence (AI) in Schools",
       "issuing_authority": "Education Ministers Meeting (Australian, state and territory education ministers); published by the Department of Education",
-      "note": "Official page https://www.education.gov.au/schooling/resources/australian-framework-generative-artificial-intelligence-ai-schools could not be read (curl and WebFetch both refused: HTTP/2 errors, Cloudflare 403 or timeouts). The reported date 2023-12-01 comes only from a search-engine rendering of the issuer's page, so not recorded (ministry catch-up 2026-10-13). Record once the official text or page can be read.",
+      "note": "Official page https://www.education.gov.au/schooling/resources/australian-framework-generative-artificial-intelligence-ai-schools could not be read (curl and WebFetch both refused: HTTP/2 errors, Cloudflare 403 or timeouts). The reported date 2023-12-01 comes only from a search-engine rendering of the issuer's page, so not recorded (ministry catch-up 2026-10-13). Record once the official text or page can be read. Update 2026-10-18: official text read and recorded as instrument i-b10b9518a326; this lead entry can be removed.",
       "found": "2026-10-13"
     },
     {
       "title": "Direction 001-2025 on DeepSeek Products, Applications and Web Services",
       "english_title": "Protective Security Policy Framework Direction 001-2025 on DeepSeek products, applications and web services",
       "issuing_authority": "Secretary of the Department of Home Affairs (under the Protective Security Policy Framework)",
-      "note": "Official page https://www.protectivesecurity.gov.au/publications-library/direction-001-2025-deepseek-products-applications-and-web-services could not be read (curl and WebFetch both refused: HTTP/2 errors, Cloudflare 403 or timeouts). The reported date 2025-02-04 comes only from a search-engine rendering of the issuer's page, so not recorded (ministry catch-up 2026-10-13). Record once the official text or page can be read.",
+      "note": "Official page https://www.protectivesecurity.gov.au/publications-library/direction-001-2025-deepseek-products-applications-and-web-services could not be read (curl and WebFetch both refused: HTTP/2 errors, Cloudflare 403 or timeouts). The reported date 2025-02-04 comes only from a search-engine rendering of the issuer's page, so not recorded (ministry catch-up 2026-10-13). Record once the official text or page can be read. Update 2026-10-18: official text read and recorded as instrument i-6d1c514ec4f4; this lead entry can be removed.",
       "found": "2026-10-13"
     },
     {
       "title": "Automation and Artificial Intelligence Strategy 2025-27",
       "english_title": "Services Australia Automation and Artificial Intelligence Strategy 2025-27",
       "issuing_authority": "Services Australia",
-      "note": "Official page https://www.servicesaustralia.gov.au/automation-and-artificial-intelligence-ai-use could not be read (curl and WebFetch both refused: HTTP/2 errors, Cloudflare 403 or timeouts). The reported date 2025-06 comes only from a search-engine rendering of the issuer's page, so not recorded (ministry catch-up 2026-10-13). Record once the official text or page can be read.",
+      "note": "Official page https://www.servicesaustralia.gov.au/automation-and-artificial-intelligence-ai-use could not be read (curl and WebFetch both refused: HTTP/2 errors, Cloudflare 403 or timeouts). The reported date 2025-06 comes only from a search-engine rendering of the issuer's page, so not recorded (ministry catch-up 2026-10-13). Record once the official text or page can be read. Update 2026-10-18: official page and full 21-page strategy PDF (https://www.servicesaustralia.gov.au/sites/default/files/2025-05/automation-and-ai-strategy-2025-27.pdf) were read. It sets six priorities (trust; human-led initiatives; consistent governance, assurance and investment; contemporary legislation and simplified policy; workforce capability; modular systems) and notes appointment of an AI Accountable Official. Neither the strategy nor the page prints a publication date (only the 2025-27 period and a /2025-05/ upload path), so it is held as a lead under the date rule; lead reviewer to decide whether to record with publication_date '2025'.",
       "found": "2026-10-13"
     },
     {
       "title": "Use of Generative Artificial Intelligence Practice Note (GPN-AI)",
       "english_title": "Federal Court of Australia Use of Generative Artificial Intelligence Practice Note (GPN-AI)",
       "issuing_authority": "Chief Justice of the Federal Court of Australia (D S Mortimer)",
-      "note": "Official page https://www.fedcourt.gov.au/law-and-practice/practice-documents/practice-notes/gpn-ai could not be read (curl and WebFetch both refused: HTTP/2 errors, Cloudflare 403 or timeouts). The reported date 2026-04-16 comes only from a search-engine rendering of the issuer's page, so not recorded (ministry catch-up 2026-10-13). Record once the official text or page can be read.",
+      "note": "Official page https://www.fedcourt.gov.au/law-and-practice/practice-documents/practice-notes/gpn-ai could not be read (curl and WebFetch both refused: HTTP/2 errors, Cloudflare 403 or timeouts). The reported date 2026-04-16 comes only from a search-engine rendering of the issuer's page, so not recorded (ministry catch-up 2026-10-13). Record once the official text or page can be read. Update 2026-10-18: official text read and recorded as instrument i-51e6a0a82595; this lead entry can be removed.",
       "found": "2026-10-13"
     },
     {
       "title": "Use of Artificial Intelligence (PD-AI) – FCFCOA Practice Direction",
       "english_title": "Federal Circuit and Family Court of Australia Practice Direction: Use of Artificial Intelligence (PD-AI)",
       "issuing_authority": "Chief Justice of the Federal Circuit and Family Court of Australia",
-      "note": "Official page https://www.fcfcoa.gov.au/pd/pd-ai could not be read (curl and WebFetch both refused: HTTP/2 errors, Cloudflare 403 or timeouts). The reported date 2026-05-29 comes only from a search-engine rendering of the issuer's page, so not recorded (ministry catch-up 2026-10-13). Record once the official text or page can be read.",
+      "note": "Official page https://www.fcfcoa.gov.au/pd/pd-ai could not be read (curl and WebFetch both refused: HTTP/2 errors, Cloudflare 403 or timeouts). The reported date 2026-05-29 comes only from a search-engine rendering of the issuer's page, so not recorded (ministry catch-up 2026-10-13). Record once the official text or page can be read. Update 2026-10-18: official text read and recorded as instrument i-7c04840b1f30; this lead entry can be removed.",
       "found": "2026-10-13"
     },
     {
       "title": "AI Clinical Use Guide",
       "english_title": "AI Clinical Use Guide (Version 1.0)",
       "issuing_authority": "Australian Commission on Safety and Quality in Health Care",
-      "note": "Official page https://www.safetyandquality.gov.au/resources/ai-clinical-use-guide could not be read (curl and WebFetch both refused: HTTP/2 errors, Cloudflare 403 or timeouts). The reported date 2025-08-13 comes only from a search-engine rendering of the issuer's page, so not recorded (ministry catch-up 2026-10-13). Record once the official text or page can be read.",
+      "note": "Official page https://www.safetyandquality.gov.au/resources/ai-clinical-use-guide could not be read (curl and WebFetch both refused: HTTP/2 errors, Cloudflare 403 or timeouts). The reported date 2025-08-13 comes only from a search-engine rendering of the issuer's page, so not recorded (ministry catch-up 2026-10-13). Record once the official text or page can be read. Update 2026-10-18: official text read and recorded as instrument i-92d507d11265; this lead entry can be removed.",
       "found": "2026-10-13"
     }
   ]

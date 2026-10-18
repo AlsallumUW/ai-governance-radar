@@ -12,13 +12,14 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": "Official Iranian government websites could not be accessed during this review, so no official text could be read and this entry is incomplete. From the official pages that could be located, Iran governs AI mainly through the Supreme Council of the Cultural Revolution, which in June 2024 created a National AI Steering Council and a National AI Organization and endorsed a National AI Document. A National AI Development Law was reportedly approved in August 2026, but its official text could not be checked. Iran has no general data protection law; a personal data protection bill is pending.",
+    "summary": "Most official Iranian government websites, including those of the Supreme Council of the Cultural Revolution, parliament and the official gazette, could not be accessed, so this entry is incomplete. Iran governs AI mainly through the Supreme Council of the Cultural Revolution, which on 29 Khordad 1403 (18 June 2024) approved the outline of a National AI Document, created a National AI Steering Council and established a National AI Organization under the President, as confirmed by the presidency's official report. An earlier draft National AI Development Roadmap was published by the ICT ministry's research institute in October 2022. A National AI Development Law was reportedly approved in August 2026, but its official text could not be checked. Iran has no general data protection law; a personal data protection bill is pending.",
     "lead_institutions": [
       "Supreme Council of the Cultural Revolution",
-      "National Artificial Intelligence Organization"
+      "National Artificial Intelligence Organization",
+      "Ministry of Information and Communications Technology"
     ],
     "last_deep_review": "2026-10-12",
-    "review_notes": "This review was carried out on 12 October 2026, but Iran's official government, parliament and gazette websites were unavailable. The one recorded document could only be located, not checked in full, and the reported 2026 AI law and the National AI Document are listed as leads for a later retry."
+    "review_notes": "A follow-up check on 18 October 2026 reached the presidency and ICT ministry websites, which confirmed the 2024 council decision and yielded the 2022 draft AI roadmap. The websites of the Supreme Council of the Cultural Revolution, parliament, its research centre and the official gazette still could not be accessed, so the 2026 AI law, the National AI Document and the Seventh Plan provision remain pending."
   },
   "instruments": [
     {
@@ -38,10 +39,11 @@
       "superseded_by": [],
       "related_instruments": [],
       "regional_applicability": [],
-      "verification_date": "2026-10-12",
+      "verification_date": "2026-10-18",
       "verification_level": "primary_source_located",
       "metadata_gaps": [
-        "official page not readable (curl and WebFetch both failed); title, resolution number, approval and notification dates and article text taken from the search-engine index of the official sccr.ir page and must be re-checked against the page itself",
+        "official resolution page still not readable; title, resolution number, notification number and notification date taken from the search-engine index of the official sccr.ir page and must be re-checked against the page itself",
+        "the session date (29 Khordad 1403) and the content (approval of the National AI Document outline, creation of the steering council and of the National AI Organization under the President, statute within three months) are confirmed by the official presidency report of the same day, not by the resolution text",
         "date and text of the later amendment of the note (tabsareh) to this single-article resolution not found"
       ],
       "link_status": "inaccessible",
@@ -50,7 +52,7 @@
       "organization_id": "o-3b0f8238639b",
       "first_recorded": "2026-10-12",
       "last_changed": null,
-      "evidence_reference": "curl (browser user agent, --max-time 60): connection reset; WebFetch: HTTP 503. Official page located via a site-restricted search of sccr.ir; its indexed text gives resolution no. 236 (notification no. 6614), session 901, approved 29 Khordad 1403, notified 10 Tir 1403. Status note: Resolution details as indexed from the official page (not read directly). No official text of the National AI Development Law could be located or read. Link note: As of 17 October 2026 the official server could not be reached from our checker (connection reset/timeout); no other reachable official copy was found.",
+      "evidence_reference": "curl (browser user agent, --max-time 60): connection reset; WebFetch: HTTP 503. Official page located via a site-restricted search of sccr.ir; its indexed text gives resolution no. 236 (notification no. 6614), session 901, approved 29 Khordad 1403, notified 10 Tir 1403. Status note: Resolution details as indexed from the official page (not read directly). No official text of the National AI Development Law could be located or read. Link note: As of 18 October 2026 (checked with curl with a browser user agent from a connection in Saudi Arabia and a desktop browser) the site cannot be reached; no other official copy was found. local-retry-2026-10-18: sccr.ir still not reachable (curl connection timeout; headless browser timeout). Official presidency news page https://president.ir/fa/152404 opened via curl (HTTP 200) and read: dated Tuesday 29 Khordad 1403, reports that the Supreme Council of the Cultural Revolution session chaired by the acting President approved the outline of the National AI Document, the establishment of the National AI Organization as an independent body under the President (statute to be approved by the Council within 3 months) and the formation of an AI steering council of ministers, heads of relevant bodies and individuals; corroborating source s-bc8183cc3252 added. verification_level kept at primary_source_located because the resolution text itself was not read.",
       "official_webpage_url": "https://sccr.ir/pro/3432/%D8%AA%D8%B4%DA%A9%DB%8C%D9%84-%D8%B4%D9%88%D8%B1%D8%A7%DB%8C-%D9%85%D9%84%DB%8C-%D8%B1%D8%A7%D9%87%D8%A8%D8%B1%DB%8C-%D9%88-%D8%AA%D8%A3%D8%B3%DB%8C%D8%B3-%D8%B3%D8%A7%D8%B2%D9%85%D8%A7%D9%86-%D9%85%D9%84%DB%8C-%D9%87%D9%88%D8%B4-%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C-",
       "effective_date": null,
       "official_title": "تشکیل شورای ملی راهبری و تأسیس سازمان ملی هوش مصنوعی",
@@ -73,6 +75,67 @@
       "source_kind": "official_publication",
       "publisher_name": "Supreme Council of the Cultural Revolution",
       "ai_governance_relevance": "Iranian national instrument founding the national AI governance bodies (government-governance, strategy)."
+    },
+    {
+      "id": "i-656c704cf699",
+      "jurisdiction_id": "IRN",
+      "authority_type": "government",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Iran (national)",
+      "sectors": [
+        "health",
+        "transport",
+        "agriculture",
+        "education",
+        "industry",
+        "environment"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-da97f9ccd5b3"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-10-18",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "PDF text layer extracts Persian in reversed order, so the body was read only in part (cover, licence page, minister's foreword); detailed targets and project lists not checked",
+        "no information on whether a final version was adopted; later superseded in practice by the Supreme Council of the Cultural Revolution's National AI Document (2024), but no official statement of supersession was found"
+      ],
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-c18dab64a768",
+      "organization_id": "o-9fe486384e3c",
+      "first_recorded": "2026-10-18",
+      "last_changed": null,
+      "evidence_reference": "local-retry-2026-10-18: ICT ministry news page http://www.ict.gov.ir/fa/news/125180/ opened via curl (HTTP 200) and read: dated 25 Mehr 1401, announces publication of the draft by the AI Innovation and Development Centre of the ICT Research Institute and links http://ai-center.ir/airoadmap; that page (redirects to https://ai-center.ir/draft-national-ai-development-roadmap/) opened via curl and links the draft PDF https://ai-center.ir/wp-content/uploads/2024/08/70254_427.pdf, downloaded via curl (HTTP 200, 74 pages) and read in part: cover title 'پیش‌نویس نقشه راه توسعه ملی هوش مصنوعی', dated Mehr 1401, CC-BY-SA 4.0 licence of the ICT Research Institute, foreword by the ICT minister.",
+      "official_webpage_url": "http://www.ict.gov.ir/fa/news/125180/",
+      "effective_date": null,
+      "official_title": "پیش‌نویس نقشه راه توسعه ملی هوش مصنوعی",
+      "english_title": "Draft National AI Development Roadmap",
+      "issuing_authority": "ICT Research Institute (Ministry of Information and Communications Technology)",
+      "categories": [
+        "drafts",
+        "strategy"
+      ],
+      "category": "drafts",
+      "legal_status": "consultation_draft",
+      "lifecycle": "draft",
+      "publication_date": "2022-10-17",
+      "current_status": "Draft published by the ICT Research Institute's AI Innovation and Development Centre and announced by the Ministry of ICT on 25 Mehr 1401 (17 October 2022); the document is dated Mehr 1401. No adopted final version was found.",
+      "summary": "Draft national roadmap for AI development prepared by the AI Innovation and Development Centre of the ICT Research Institute, with input from academia, industry and the private sector, using the methodology of the Supreme Council of Science, Research and Technology. It sets a vision, macro policies, values and strategies with actions, programmes and projects in two parts: developing AI applications in priority areas such as health, transport, agriculture, education, industry and the environment, and building enablers such as specialised human resources, infrastructure, standards, data release and legal and ethical issues.",
+      "language": "fa",
+      "source_url": "https://ai-center.ir/wp-content/uploads/2024/08/70254_427.pdf",
+      "official_pdf_url": "https://ai-center.ir/wp-content/uploads/2024/08/70254_427.pdf",
+      "source_kind": "official_publication",
+      "publisher_name": "ICT Research Institute",
+      "ai_governance_relevance": "Earlier government draft of a national AI roadmap, preceding the 2024 National AI Document (drafts, strategy)."
     }
   ],
   "organizations": [
@@ -84,6 +147,16 @@
       "ai_governance_role": "Approved the National AI Document (outline) and resolution no. 236 creating the National AI Steering Council and the National AI Organization (June 2024).",
       "source_url": "https://sccr.ir/",
       "authority_type": "council",
+      "government_level": "national"
+    },
+    {
+      "id": "o-9fe486384e3c",
+      "jurisdiction_id": "IRN",
+      "name": "ICT Research Institute (Ministry of Information and Communications Technology)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Research institute of the ICT ministry; its AI Innovation and Development Centre prepared and published the draft National AI Development Roadmap (Mehr 1401 / October 2022).",
+      "source_url": "https://ai-center.ir/",
+      "authority_type": "government",
       "government_level": "national"
     }
   ],
@@ -105,15 +178,70 @@
         "strategy"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): connection reset by peer; WebFetch: HTTP 503. Both failed; all Iranian official hosts tried (sccr.ir, rc.majlis.ir, qavanin.ir, rrk.ir, isti.ir, ict.gov.ir, president.ir) were unreachable from this environment. Page located through a site-restricted search of sccr.ir.",
+      "checked_date": "2026-10-18",
+      "check_method": "local retry from Saudi Arabia: curl with browser user agent (connection timed out after ~21 s) and headless Edge (page load timeout 60 s). Not reachable.",
       "http_status": null,
       "final_url": null,
       "link_status": "inaccessible",
       "page_title": "تشکیل شورای ملی راهبری و تأسیس سازمان ملی هوش مصنوعی",
       "document_language": "fa",
-      "error": "connection reset (curl); HTTP 503 (WebFetch)",
+      "error": "connection timeout (curl and headless browser)",
       "content_type": null
+    },
+    {
+      "id": "s-bc8183cc3252",
+      "url": "https://president.ir/fa/152404",
+      "jurisdiction_ids": [
+        "IRN"
+      ],
+      "source_institutions": [
+        "Office of the President of the Islamic Republic of Iran"
+      ],
+      "instrument_ids": [
+        "i-da97f9ccd5b3"
+      ],
+      "categories_reviewed": [
+        "government-governance",
+        "strategy"
+      ],
+      "date_reviewed": "2026-10-18",
+      "checked_date": "2026-10-18",
+      "check_method": "curl with browser user agent; HTML page read in full (official presidency news report on the Supreme Council of the Cultural Revolution session of 29 Khordad 1403).",
+      "http_status": 200,
+      "final_url": "https://president.ir/fa/152404",
+      "link_status": "reachable",
+      "page_title": "تصویب کلیات سند ملی، تأسیس سازمان ملی و تشکیل شورای راهبری هوش مصنوعی/ کلیات اساسنامه خانه ملی گفتگوی آزاد تصویب شد",
+      "document_language": "fa",
+      "error": null,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "id": "s-c18dab64a768",
+      "url": "https://ai-center.ir/wp-content/uploads/2024/08/70254_427.pdf",
+      "jurisdiction_ids": [
+        "IRN"
+      ],
+      "source_institutions": [
+        "ICT Research Institute",
+        "Ministry of Information and Communications Technology"
+      ],
+      "instrument_ids": [
+        "i-656c704cf699"
+      ],
+      "categories_reviewed": [
+        "drafts",
+        "strategy"
+      ],
+      "date_reviewed": "2026-10-18",
+      "checked_date": "2026-10-18",
+      "check_method": "curl with browser user agent: PDF downloaded (74 pages) and text extracted; ministry announcement page http://www.ict.gov.ir/fa/news/125180/ also opened (HTTP 200).",
+      "http_status": 200,
+      "final_url": "https://ai-center.ir/wp-content/uploads/2024/08/70254_427.pdf",
+      "link_status": "reachable",
+      "page_title": "پیش‌نویس نقشه راه توسعه ملی هوش مصنوعی",
+      "document_language": "fa",
+      "error": null,
+      "content_type": "application/pdf"
     }
   ],
   "regional_applicability": [],
@@ -130,11 +258,15 @@
       "cyber-security",
       "data-privacy",
       "risk-assurance",
-      "transparency"
+      "transparency",
+      "drafts",
+      "standards",
+      "sectoral"
     ],
     "categories_with_findings": [
       "government-governance",
-      "strategy"
+      "strategy",
+      "drafts"
     ],
     "categories_where_no_material_was_found": [
       "binding-law",
@@ -150,7 +282,6 @@
       "index-readiness",
       "sectoral",
       "generative-ai",
-      "drafts",
       "international",
       "historical"
     ],
@@ -174,7 +305,11 @@
       "راهنمای اخلاقی کاربرد هوش مصنوعی در پژوهش‌های علوم پزشکی کمیته ملی اخلاق",
       "قانون برنامه پنجساله هفتم پیشرفت متن rc.majlis.ir",
       "آیین‌نامه OR دستورالعمل هوش مصنوعی وزارت ابلاغ ۱۴۰۴ دستگاه‌های اجرایی",
-      "لایحه حمایت از داده‌ها و اطلاعات شخصی وضعیت مجلس ۱۴۰۵"
+      "لایحه حمایت از داده‌ها و اطلاعات شخصی وضعیت مجلس ۱۴۰۵",
+      "قانون ملی توسعه هوش مصنوعی (site: qavanin.ir, president.ir, dotic.ir, rc.majlis.ir)",
+      "قانون برنامه هفتم پیشرفت qavanin.ir Law TreeText",
+      "president.ir search: هوش مصنوعی / قانون هوش مصنوعی / سازمان ملی هوش مصنوعی / اساسنامه سازمان ملی هوش مصنوعی",
+      "ict.gov.ir news 125180 پیش‌نویس سند نقشه راه توسعه ملی هوش مصنوعی"
     ],
     "review_date": "2026-10-12",
     "passes": {
@@ -193,12 +328,42 @@
       "regional_inheritance": "COMPLETE",
       "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "National sources in Iran were searched, including parliament's laws and bills, the Supreme Council of the Cultural Revolution, the presidency, ministries and regulators. Apart from one council resolution, located but not checked in full, no qualifying material was found. All official Iranian websites were unavailable, so the National AI Development Law, the National AI Document, a draft AI roadmap of the information and communications technology ministry and a data protection bill remain leads to check later.",
+    "no_material_found_note": "National sources in Iran were searched, including parliament's laws and bills, the Supreme Council of the Cultural Revolution, the presidency, ministries and regulators. Apart from one council resolution, located but not checked in full, and a 2022 draft AI roadmap of the ICT ministry's research institute, no qualifying material was found. The websites of the council, parliament and the official gazette could not be accessed, so the National AI Development Law, the National AI Document, the Seventh Plan provision on AI and a data protection bill remain leads to check later.",
     "discovery_result_count": 8,
     "focused_result_count": 10,
-    "technical_note": "Method note (original): This review was carried out on 12 October 2026, but official Iranian websites could not be accessed: every government, parliament and gazette site refused the connection. The one recorded document could therefore only be located, not read, and the reported 2026 AI law and the National AI Document are listed as leads. Iran is marked for a later retry.\n\nCoverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. All Iranian official hosts (sccr.ir, rc.majlis.ir, qavanin.ir, rrk.ir, isti.ir, ict.gov.ir, president.ir, ai.gov.ir) failed with curl (reset) and WebFetch (503/502). The single record (SCCR resolution 236) is located only from the search engine's indexed copy of the official page; its adoption event was dropped because the date was not read on the source. Iran is not a party to Convention 108. Units covered: Law: Searched for Majlis laws and bills on AI (National AI Development Law 2026, Seventh Development Plan Law Art. 65(c)) and the data protection bill; rc.majlis.ir, qavanin.ir and rrk.ir unreachable, so held as leads.; Government: Supreme Council of the Cultural Revolution (resolution no. 236 recorded, located only; National AI Document held as lead), presidency and Vice-Presidency for Science and Technology (National AI Organization); sccr.ir, president.ir, isti.ir unreachable.; Ministries: Searched ICT (draft roadmap lead), health/medical ethics, education, administrative and recruitment organisation: no official AI document text located; sites unreachable.; Regulators: No data protection authority exists; searched cyber/passive defence, central bank and telecom regulator AI documents: searched, nothing found.. Not reached: All Iranian official hosts (sccr.ir, rc.majlis.ir, qavanin.ir, rrk.ir, isti.ir, ict.gov.ir, president.ir, ai.gov.ir) unreachable by curl and WebFetch; no document text could be read; Ministry-level AI documents (health, education, justice, defence, finance) not checkable on their sites; Central Bank of Iran, CRA (telecom regulator), AFTA/passive defence AI documents. Could not verify: sccr.ir/pro/3432 (resolution no. 236); National AI Document official text; National AI Development Law official text and dates; Seventh Plan Law Art. 65(c) wording; ICT ministry draft AI roadmap page. binding-law, ethics, risk-assurance, public-sector, procurement, cyber-security, data-privacy, transparency, standards, sandbox, index-readiness, sectoral, generative-ai, drafts, international, historical: no material found."
+    "technical_note": "Method note (original): This review was carried out on 12 October 2026, but official Iranian websites could not be accessed: every government, parliament and gazette site refused the connection. The one recorded document could therefore only be located, not read, and the reported 2026 AI law and the National AI Document are listed as leads. Iran is marked for a later retry.\n\nCoverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. All Iranian official hosts (sccr.ir, rc.majlis.ir, qavanin.ir, rrk.ir, isti.ir, ict.gov.ir, president.ir, ai.gov.ir) failed with curl (reset) and WebFetch (503/502). The single record (SCCR resolution 236) is located only from the search engine's indexed copy of the official page; its adoption event was dropped because the date was not read on the source. Iran is not a party to Convention 108. Units covered: Law: Searched for Majlis laws and bills on AI (National AI Development Law 2026, Seventh Development Plan Law Art. 65(c)) and the data protection bill; rc.majlis.ir, qavanin.ir and rrk.ir unreachable, so held as leads.; Government: Supreme Council of the Cultural Revolution (resolution no. 236 recorded, located only; National AI Document held as lead), presidency and Vice-Presidency for Science and Technology (National AI Organization); sccr.ir, president.ir, isti.ir unreachable.; Ministries: Searched ICT (draft roadmap lead), health/medical ethics, education, administrative and recruitment organisation: no official AI document text located; sites unreachable.; Regulators: No data protection authority exists; searched cyber/passive defence, central bank and telecom regulator AI documents: searched, nothing found.. Not reached: All Iranian official hosts (sccr.ir, rc.majlis.ir, qavanin.ir, rrk.ir, isti.ir, ict.gov.ir, president.ir, ai.gov.ir) unreachable by curl and WebFetch; no document text could be read; Ministry-level AI documents (health, education, justice, defence, finance) not checkable on their sites; Central Bank of Iran, CRA (telecom regulator), AFTA/passive defence AI documents. Could not verify: sccr.ir/pro/3432 (resolution no. 236); National AI Document official text; National AI Development Law official text and dates; Seventh Plan Law Art. 65(c) wording; ICT ministry draft AI roadmap page. binding-law, ethics, risk-assurance, public-sector, procurement, cyber-security, data-privacy, transparency, standards, sandbox, index-readiness, sectoral, generative-ai, drafts, international, historical: no material found.\n\nLocal retry 2026-10-18 (home connection in Saudi Arabia, ~20 min): reachable: president.ir (HTTP 200; news page 152404 read; site search used), ict.gov.ir (301 then 200; news 125180 read), ai-center.ir (ITRC AI centre; draft roadmap PDF downloaded), cbi.ir (200, homepage only, not searched for AI documents in the time box), shora-gc.ir (301, not searched). Still failing: sccr.ir (curl connect timeout; headless Edge 60 s timeout), rc.majlis.ir (TLS handshake failure in curl; ERR_CONNECTION_CLOSED in headless Edge), rrk.ir, isti.ir, cra.ir, parliran.ir (connect timeouts), irna.ir (reset), ai.gov.ir and isiri.gov.ir (DNS not resolved), dotic.ir (403), qavanin.ir and dolat.ir (curl gets a JavaScript redirect stub; headless Edge gets an ASP.NET runtime error page for search and law TreeText pages). Added i-656c704cf699 (draft roadmap, PDF text layer reversed so only partly read) and corroborating presidency source s-bc8183cc3252 for i-da97f9ccd5b3. Search list not completed (council, parliament, gazette, standards body, central bank and telecom regulator not searched in full), so last_deep_review left unchanged."
   },
   "changes": [
+    {
+      "id": "c-656c704cf699",
+      "date": "2026-10-18",
+      "recorded": "2026-10-18",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "IRN",
+      "instrument_id": "i-656c704cf699",
+      "title": "Draft National AI Development Roadmap",
+      "detail": "Added to the radar (published 2022-10-17).",
+      "from": null,
+      "to": null,
+      "source_url": "https://ai-center.ir/wp-content/uploads/2024/08/70254_427.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-c5eebe2a9758",
+      "date": "2026-10-18",
+      "recorded": "2026-10-18",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "IRN",
+      "instrument_id": "i-656c704cf699",
+      "title": "Draft National AI Development Roadmap",
+      "detail": "Added to the radar (published 2022-10-17).",
+      "from": null,
+      "to": null,
+      "source_url": "https://ai-center.ir/wp-content/uploads/2024/08/70254_427.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-671816b48a70",
       "date": "2026-10-12",
@@ -235,35 +400,35 @@
       "title": "قانون ملی توسعه هوش مصنوعی",
       "english_title": "National Artificial Intelligence Development Law",
       "issuing_authority": "Islamic Consultative Assembly (Majlis)",
-      "note": "Reported as approved by the Majlis on 28 Mordad 1405 (19 August 2026), confirmed by the Guardian Council on 4 Shahrivar 1405 (26 August 2026) and communicated to the President for implementation by the Speaker on 22 Shahrivar 1405 (13 September 2026) under Article 123 of the Constitution; 12 articles and 8 notes; gives the National AI Organization a statutory basis as an independent body under the President, sets duties on compute, data access, skills, security assessment and financing, and reportedly a four-level risk classification. Dates come from discovery reports only. No official text could be located on rc.majlis.ir, qavanin.ir or rrk.ir (all unreachable). Record as binding_law once the official text (Majlis law database or Official Gazette) is read. Earlier: 'طرح ملی هوش مصنوعی' general outline approved 28 Ordibehesht 1404.",
+      "note": "Reported as approved by the Majlis on 28 Mordad 1405 (19 August 2026), confirmed by the Guardian Council on 4 Shahrivar 1405 (26 August 2026) and communicated to the President for implementation by the Speaker on 22 Shahrivar 1405 (13 September 2026) under Article 123 of the Constitution; 12 articles and 8 notes; gives the National AI Organization a statutory basis as an independent body under the President, sets duties on compute, data access, skills, security assessment and financing, and reportedly a four-level risk classification. Dates come from discovery reports only. No official text could be located on rc.majlis.ir, qavanin.ir or rrk.ir (all unreachable). Record as binding_law once the official text (Majlis law database or Official Gazette) is read. Earlier: 'طرح ملی هوش مصنوعی' general outline approved 28 Ordibehesht 1404. Update 2026-10-18: rechecked; the Majlis research centre site (rc.majlis.ir) refused the connection, the national laws portal qavanin.ir answered only with a redirect/error page, and rrk.ir timed out; the official presidency site search found no text of the law. Still a lead.",
       "found": "2026-10-12"
     },
     {
       "title": "سند ملی هوش مصنوعی جمهوری اسلامی ایران",
       "english_title": "National Artificial Intelligence Document of the Islamic Republic of Iran",
       "issuing_authority": "Supreme Council of the Cultural Revolution",
-      "note": "National AI strategy (ten-year horizon to place Iran among the top ten AI countries; application areas and enablers incl. data, standards, legal and ethical issues). Outline endorsed at SCCR session 901 (29 Khordad 1403 / 18 June 2024) with detailed provisions delegated to the standing council; reported as communicated to executive bodies in Mordad 1403 (August 2024). Official full text on sccr.ir not located (only a keyword listing page, https://sccr.ir/keywords/1/11996/, and copies on non-official sites); sccr.ir unreachable. Record as national_strategy once the official text is read.",
+      "note": "National AI strategy (ten-year horizon to place Iran among the top ten AI countries; application areas and enablers incl. data, standards, legal and ethical issues). Outline endorsed at SCCR session 901 (29 Khordad 1403 / 18 June 2024) with detailed provisions delegated to the standing council; reported as communicated to executive bodies in Mordad 1403 (August 2024). Official full text on sccr.ir not located (only a keyword listing page, https://sccr.ir/keywords/1/11996/, and copies on non-official sites); sccr.ir unreachable. Record as national_strategy once the official text is read. Update 2026-10-18: sccr.ir still unreachable. The official presidency report of 29 Khordad 1403 (https://president.ir/fa/152404) confirms approval of the document's outline and its ten-year top-10 goal, but the document text itself was not found on an official site. Still a lead.",
       "found": "2026-10-12"
     },
     {
       "title": "قانون برنامه پنجساله هفتم پیشرفت جمهوری اسلامی ایران (بند ج ماده ۶۵)",
       "english_title": "Seventh Five-Year Development Plan Law (1403-1407), Article 65(c)",
       "issuing_authority": "Islamic Consultative Assembly (Majlis)",
-      "note": "Reportedly obliges the government to implement a national AI development programme. Law approved 1 Khordad 1403. Official text page on rc.majlis.ir / qavanin.ir not located and those sites were unreachable; verify Article 65(c) wording before recording as binding_law (AI provision in a general law).",
+      "note": "Reportedly obliges the government to implement a national AI development programme. Law approved 1 Khordad 1403. Official text page on rc.majlis.ir / qavanin.ir not located and those sites were unreachable; verify Article 65(c) wording before recording as binding_law (AI provision in a general law). Update 2026-10-18: rc.majlis.ir refused the connection and qavanin.ir law pages returned a server error page; Article 65(c) wording still not read.",
       "found": "2026-10-12"
     },
     {
       "title": "لایحه حمایت از داده‌ها و اطلاعات شخصی",
       "english_title": "Personal Data Protection Bill",
       "issuing_authority": "Ministry of Information and Communications Technology / Cabinet",
-      "note": "Iran has no general personal data protection law. A government bill prepared by the ICT ministry has been reported at cabinet/legal-commission stage and as headed to the Majlis; no adoption found. Pending bill.",
+      "note": "Iran has no general personal data protection law. A government bill prepared by the ICT ministry has been reported at cabinet/legal-commission stage and as headed to the Majlis; no adoption found. Pending bill. Update 2026-10-18: no official bill text located; Majlis and laws portals not readable.",
       "found": "2026-10-12"
     },
     {
       "title": "پیش‌نویس سند نقشه راه توسعه ملی هوش مصنوعی",
       "english_title": "Draft National AI Development Roadmap",
       "issuing_authority": "ICT Research Institute (Ministry of ICT)",
-      "note": "Earlier draft roadmap published for comment by the ICT Research Institute, announced on the ICT ministry site (http://www.ict.gov.ir/fa/news/125180/). Page unreachable; date and whether the draft text is attached could not be checked. Possible historical/drafts record.",
+      "note": "Earlier draft roadmap published for comment by the ICT Research Institute, announced on the ICT ministry site (http://www.ict.gov.ir/fa/news/125180/). Page unreachable; date and whether the draft text is attached could not be checked. Possible historical/drafts record. Update 2026-10-18: ministry page opened (dated 25 Mehr 1401) and the draft PDF read; recorded as instrument i-656c704cf699.",
       "found": "2026-10-12"
     }
   ]

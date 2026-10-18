@@ -1201,7 +1201,7 @@
         "Exact publication date (May 2022 per discovery sources)",
         "Legal nature as stated in the text"
       ],
-      "link_status": "inaccessible",
+      "link_status": "reachable",
       "document_access_type": "original_government_document",
       "government_level": "national",
       "subnational_unit": null,
@@ -1211,7 +1211,7 @@
       "related_instruments": [],
       "regional_applicability": [],
       "verification_date": "2026-10-11",
-      "evidence_reference": "esp-deep-review-E2-2026-10-11. Link note: As of 17 October 2026 the Ministry of Labour server (mites.gob.es) fails TLS certificate verification and trabajo.gob.es was unreachable; no other official copy was found.",
+      "evidence_reference": "esp-deep-review-E2-2026-10-11.",
       "source_id": "s-9d08710b1264",
       "organization_id": "o-e2eed30e0499",
       "first_recorded": "2026-10-11",
@@ -4427,14 +4427,14 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl GET failed (TLS certificate chain; plain HTTP returned 503); WebFetch returned 503. Both methods failed; URL from search results on the ministry host",
-      "http_status": 503,
+      "checked_date": "2026-10-18",
+      "check_method": "curl with a browser user agent from a connection in Saudi Arabia",
+      "http_status": 200,
       "final_url": "https://www.mites.gob.es/ficheros/ministerio/inicio_destacados/Guia_Algoritmos_ES.pdf",
-      "link_status": "inaccessible",
+      "link_status": "reachable",
       "page_title": null,
       "document_language": "es",
-      "error": "curl TLS verification failure; HTTP 503 via http and WebFetch",
+      "error": null,
       "content_type": null
     },
     {
@@ -5860,6 +5860,21 @@
     "technical_note": "Coverage note (original): Technical review notes: Backfill run 2026-10-11 in four parts (E1 national law via BOE search and congreso.es; E2 national government incl. ministry-level search; E3 regulators; E4 top regions Catalonia, Madrid, Andalusia, Basque Country, Valencia, 30-minute cap per PROTOCOL §6, finished in about 8 minutes). Run in parallel with FRA on separate branches. No interruption. Both earlier records re-checked and retitled (2024 AI Strategy re-sourced to the MTDFP PDF; the MTDFP 'announcement' identified as the SEDIA resolution of 20 Dec 2024 opening the first AI sandbox call). EU and CoE instruments are attached via the regional files. Dedupe: E2's collective record for the 16 sandbox/AESIA AI Act guides dropped in favour of E3's 16 individual AESIA guide records. AI governance bill 121/000096 and the two deepfake-related organic bills lapsed on dissolution of the Cortes (RD 806/2026, 6 Oct 2026) and are leads; the 2025 anteproyecto is recorded as superseded. AEPD decisions recorded as regulatory_opinion (no decision status). Access: mites.gob.es (TLS error/503; Labour algorithm guide located-only), sede.defensa.gob.es BOD and portal.mineco.gob.es unreachable, aepd.es paged listings 403 (RSS used), CTBG R/0701/2018 PDF 404, Catalan generative-AI criteria (429/bot check). Located-only (1): Labour ministry algorithmic-information guide (2022-05). CNMV, AEMPS, DGSFP: nothing AI-specific published. Galicia Ley 2/2025 and Extremadura DL 2/2023 noted as leads (outside the five regions). procurement, index-readiness, international: no material found."
   },
   "changes": [
+    {
+      "id": "c-b510c8763d26",
+      "date": "2026-10-18",
+      "recorded": "2026-10-18",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "ESP",
+      "instrument_id": "i-d358d5eb8fb0",
+      "title": "Algorithmic information in the workplace: practical guide and tool on employers' obligation to inform about the use of algorithms at work",
+      "detail": "Official link restored.",
+      "from": "inaccessible",
+      "to": "reachable",
+      "source_url": "https://www.mites.gob.es/ficheros/ministerio/inicio_destacados/Guia_Algoritmos_ES.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-cd1b99735186",
       "date": "2026-10-11",

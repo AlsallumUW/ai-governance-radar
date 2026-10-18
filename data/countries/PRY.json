@@ -10,13 +10,14 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": "Paraguay has no AI law or adopted national AI strategy. The only AI instrument found is the Supreme Court's 2026 operational policy setting binding guidelines for the use of AI systems, including generative AI, in the Judiciary. The ICT ministry (MITIC) is preparing a national AI roadmap after a UNESCO readiness assessment, AI bills are pending in Congress, and a comprehensive personal data protection law (Law 7593 of 2025) has been promulgated.",
+    "summary": "Paraguay has no AI law or adopted national AI strategy. The Supreme Court's 2026 operational policy sets binding guidelines for the use of AI systems, including generative AI, in the Judiciary. Law No. 7593/2025 on personal data protection, published in November 2025 and due to enter into force 24 months later, gives people the right to have automated decisions reviewed and contested, requires impact assessments for automated profiling with significant effects, and creates a data protection agency within the ICT ministry (MITIC). MITIC is preparing a national AI roadmap after a UNESCO readiness assessment, and AI bills are pending in Congress.",
     "lead_institutions": [
       "Ministerio de Tecnologías de la Información y Comunicación (MITIC)",
-      "Corte Suprema de Justicia"
+      "Corte Suprema de Justicia",
+      "Congreso de la Nación"
     ],
     "last_deep_review": "2026-10-12",
-    "review_notes": "This review was carried out on 12 October 2026, but the Official Gazette, Congress's bill system, the Chamber of Deputies', the central bank's and the Presidency's websites could not be accessed, so only one document could be read. Paraguay is marked for a later retry. The 2025 data protection law, the AI bills and the national AI roadmap are tracked as leads."
+    "review_notes": "Reviewed again on 18 October 2026: the Congress library, the Chamber of Deputies, the central bank and the telecoms regulator were searched, and the 2025 data protection law was added. The Official Gazette, the Presidency, MITIC, the Senate, the bill system and the procurement agency could not be accessed, so the AI bills and the national AI roadmap remain pending as leads."
   },
   "instruments": [
     {
@@ -72,6 +73,58 @@
       "document_access_type": "original_government_document",
       "source_id": "s-10725d307db0",
       "evidence_reference": "curl (browser user agent, --max-time 60): full PDF read (pdftotext) - Secretaría General note, Resolución N° 12.677 of 4 March 2026 and its 10-page annex; Poder Judicial news page of 9 April 2026 links the PDF"
+    },
+    {
+      "id": "i-21f41edcd6e6",
+      "official_title": "Ley N° 7593/2025 De Protección de Datos Personales en la República del Paraguay",
+      "english_title": "Law No. 7593/2025 on Personal Data Protection in the Republic of Paraguay",
+      "issuing_authority": "National Congress (Congreso de la Nación)",
+      "authority_type": "legislature",
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "adopted",
+      "publication_date": "2025-11-27",
+      "current_status": "Passed by the Chamber of Deputies on 14 October 2025 and the Senate on 5 November 2025; promulgated and published on 27 November 2025 according to the Congress library's official law collection. Article 57 provides that it enters into force 24 months after its official publication, and the Executive must issue implementing regulations within 24 months of publication in the Official Gazette. The text read is the Congress library's official copy.",
+      "summary": "Comprehensive personal data protection law applying to wholly or partly automated processing by public and private controllers and processors in Paraguay or targeting people in Paraguay. It defines profiling, requires a data protection impact assessment for systematic automated evaluation (including profiling) that produces legal or similarly significant effects, and requires controllers to disclose automated decisions and meaningful information about the logic involved. Article 33 gives data subjects the right to request review of automated or semi-automated decisions that affect them, to express their view and to contest the decision, and creates the National Personal Data Protection Agency within MITIC as supervisory authority.",
+      "ai_governance_relevance": "Sets binding rules on automated decision-making, profiling and impact assessments that govern AI systems processing personal data, and creates the authority that will supervise them.",
+      "source_url": "https://www.bacn.gov.py/leyes-paraguayas/12924/ley-n-75932025--de-proteccin-de-datos-personales-en-la-repblica-del-paraguay",
+      "official_pdf_url": "https://www.bacn.gov.py/descarga/12924/2025_7593.pdf",
+      "official_webpage_url": "https://www.bacn.gov.py/leyes-paraguayas/12924/ley-n-75932025--de-proteccin-de-datos-personales-en-la-repblica-del-paraguay",
+      "sectors": [],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "superseded_by": [],
+      "organization_id": "o-1ead9c4b0b16",
+      "publisher_name": "National Congress",
+      "jurisdiction_id": "PRY",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "effective_date": "2027-11-27",
+      "last_amended_date": null,
+      "scope": "Paraguay (public and private sectors)",
+      "technology_scope": [
+        "automated decision-making",
+        "profiling"
+      ],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [
+        "Official Gazette issue not consulted (gazette site not accessible); effective date computed from Art. 57 and the publication date stated by the Congress library"
+      ],
+      "language": "es",
+      "verification_date": "2026-10-18",
+      "first_recorded": "2026-10-18",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-7e1f83bac96d",
+      "evidence_reference": "local-retry-2026-10-18: full law text read on the official BACN (Biblioteca y Archivo del Congreso de la Nacion) law page via headless browser (curl got connection reset); page states Fecha de Promulgacion 27-11-2025 and Fecha de Publicacion 27-11-2025 and links the official PDF (17.54 MB, not downloaded). Checked Arts. 1-3, the impact-assessment and information-duty provisions, 30 (objection incl. profiling), 33 (automated decisions), 34 (Agency), 57 (entry into force 24 months after official publication), 60, 61."
     }
   ],
   "organizations": [
@@ -83,6 +136,16 @@
       "ai_governance_role": "Head of the Paraguayan Judiciary (Corte Suprema de Justicia); approved by Resolution No. 12.677 (2026) the binding operational policy on AI use by magistrates and judicial officials.",
       "source_url": "https://www.pj.gov.py/",
       "authority_type": "judiciary",
+      "government_level": "national"
+    },
+    {
+      "id": "o-1ead9c4b0b16",
+      "jurisdiction_id": "PRY",
+      "name": "National Congress",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Paraguay's legislature (Congreso de la Nación); enacted Law No. 7593/2025 on personal data protection, which regulates automated decisions and profiling; AI bills are pending before it.",
+      "source_url": "https://www.bacn.gov.py/",
+      "authority_type": "legislature",
       "government_level": "national"
     }
   ],
@@ -115,6 +178,33 @@
       "document_language": "es",
       "error": null,
       "content_type": "application/pdf"
+    },
+    {
+      "id": "s-7e1f83bac96d",
+      "url": "https://www.bacn.gov.py/leyes-paraguayas/12924/ley-n-75932025--de-proteccin-de-datos-personales-en-la-repblica-del-paraguay",
+      "jurisdiction_ids": [
+        "PRY"
+      ],
+      "source_institutions": [
+        "National Congress"
+      ],
+      "instrument_ids": [
+        "i-21f41edcd6e6"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-18",
+      "checked_date": "2026-10-18",
+      "check_method": "local-retry-2026-10-18: headless browser (curl connection reset); full HTML law text read",
+      "http_status": 200,
+      "final_url": "https://www.bacn.gov.py/leyes-paraguayas/12924/ley-n-75932025--de-proteccin-de-datos-personales-en-la-repblica-del-paraguay",
+      "link_status": "reachable",
+      "page_title": "Ley Nº 7593/2025 / DE PROTECCIÓN DE DATOS PERSONALES EN LA REPÚBLICA DEL PARAGUAY.",
+      "document_language": "es",
+      "error": null,
+      "content_type": "text/html"
     }
   ],
   "regional_applicability": [],
@@ -137,16 +227,16 @@
       "ethics",
       "generative-ai",
       "public-sector",
-      "sectoral"
+      "sectoral",
+      "data-privacy",
+      "binding-law"
     ],
     "categories_where_no_material_was_found": [
-      "binding-law",
       "strategy",
       "government-governance",
       "risk-assurance",
       "procurement",
       "cyber-security",
-      "data-privacy",
       "transparency",
       "standards",
       "sandbox",
@@ -177,7 +267,14 @@
       "\"Ley N° 7593\" \"datos personales\" pdf gov.py",
       "Paraguay Convenio 108 Consejo de Europa adhesión protección de datos ley aprueba",
       "Paraguay \"inteligencia artificial\" resolución DNCP OR BCP OR CONATEL OR \"Ministerio de Salud\" OR \"Ministerio de Hacienda\" lineamientos 2025 2026",
-      "senado.gov.py búsqueda \"inteligencia artificial\""
+      "senado.gov.py búsqueda \"inteligencia artificial\"",
+      "local retry 2026-10-18: gacetaoficial.gov.py, presidencia.gov.py, silpy.congreso.gov.py, mitic.gov.py, senado.gov.py, dncp.gov.py (home pages)",
+      "\"Ley N° 7593\" protección de datos personales pdf gov.py",
+      "Paraguay proyecto de ley inteligencia artificial diputados.gov.py OR senado.gov.py 2026",
+      "bacn.gov.py leyes-paraguayas ?q=7593 / ?q=inteligencia artificial",
+      "diputados.gov.py ?s=inteligencia artificial",
+      "bcp.gov.py ?s=inteligencia artificial",
+      "conatel.gov.py home page / marco regulatorio"
     ],
     "review_date": "2026-10-12",
     "passes": {
@@ -196,12 +293,27 @@
       "regional_inheritance": "COMPLETE",
       "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "Paraguay's national law library, the ICT ministry, ministries (including the judiciary) and regulators were searched. No qualifying AI-governance document was found for binding law, strategy, government AI governance, risk and assurance, procurement, cybersecurity, data and privacy, transparency, standards, sandboxes, readiness indices, drafts, international agreements or historical publications. The official gazette, the bill search, the Chamber of Deputies, the central bank and the Presidency sites were unavailable, so the new data protection law, two AI bills and a possible national AI roadmap are listed as leads to check later.",
+    "no_material_found_note": "Paraguay's national law library, the ICT ministry, the Chamber of Deputies, ministries and regulators were searched. No qualifying AI-governance document was found for an AI-specific law, strategy, government AI governance, risk and assurance, procurement, cybersecurity, transparency, standards, sandboxes, readiness indices, drafts, international agreements or historical publications. Two AI bills and a possible national AI roadmap are listed as leads because the official gazette, the Senate, the bill system and the ICT ministry sites could not be accessed.",
     "discovery_result_count": 12,
     "focused_result_count": 10,
-    "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. gacetaoficial.gov.py reset/503; SILpy JS-only (search unusable); diputados.gov.py TLS name mismatch / 503; bcp.gov.py 403; presidencia.gov.py reset. BACN law collection stops at 2024. MITIC guias/lineamientos/publicaciones/informes/resoluciones/marco-legal: AI mentions only events/travel. Ley 7593/2025 (data protection) official text not reachable - lead. Judiciary PEI 2026-2030 action 3.8 internal (scope test, lead). Convention 108: not a party. Units covered: Law: BACN (collection ends at 2024 laws; no AI law), Gaceta Oficial attempted (unreachable), SILpy attempted (script-only); no AI law in force; two AI bills and Ley 7593/2025 held as leads; Government: MITIC site searched (search, guias-y-documentos, lineamientos-tic, publicaciones, informes, resoluciones, marco-legal): only event/travel resolutions mentioning AI; no national AI strategy, public-sector AI guideline or published roadmap text found; Ministries: Education (MEC), health, finance, defence, labour, interior: searched, nothing found. Judiciary (Supreme Court): binding AI-use policy found and recorded; Regulators: Data protection agency (created by Ley 7593, not yet operating publicly), BCP (site 403), CONATEL, DNCP, CERT-Py: searched, no AI-specific instruments found. Not reached: Gaceta Oficial (gacetaoficial.gov.py: connection reset / HTTP 503); SILpy bill search (JavaScript-only application); diputados.gov.py (TLS name mismatch / 503); bcp.gov.py (HTTP 403); presidencia.gov.py (connection reset). Could not verify: Ley 7593/2025 official text and dates (gazette unreachable); AI bill numbers and status on SILpy; Whether MITIC has formally published the National AI Roadmap. binding-law, strategy, government-governance, risk-assurance, procurement, cyber-security, data-privacy, transparency, standards, sandbox, index-readiness, drafts, international, historical: no material found."
+    "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. gacetaoficial.gov.py reset/503; SILpy JS-only (search unusable); diputados.gov.py TLS name mismatch / 503; bcp.gov.py 403; presidencia.gov.py reset. BACN law collection stops at 2024. MITIC guias/lineamientos/publicaciones/informes/resoluciones/marco-legal: AI mentions only events/travel. Ley 7593/2025 (data protection) official text not reachable - lead. Judiciary PEI 2026-2030 action 3.8 internal (scope test, lead). Convention 108: not a party. Units covered: Law: BACN (collection ends at 2024 laws; no AI law), Gaceta Oficial attempted (unreachable), SILpy attempted (script-only); no AI law in force; two AI bills and Ley 7593/2025 held as leads; Government: MITIC site searched (search, guias-y-documentos, lineamientos-tic, publicaciones, informes, resoluciones, marco-legal): only event/travel resolutions mentioning AI; no national AI strategy, public-sector AI guideline or published roadmap text found; Ministries: Education (MEC), health, finance, defence, labour, interior: searched, nothing found. Judiciary (Supreme Court): binding AI-use policy found and recorded; Regulators: Data protection agency (created by Ley 7593, not yet operating publicly), BCP (site 403), CONATEL, DNCP, CERT-Py: searched, no AI-specific instruments found. Not reached: Gaceta Oficial (gacetaoficial.gov.py: connection reset / HTTP 503); SILpy bill search (JavaScript-only application); diputados.gov.py (TLS name mismatch / 503); bcp.gov.py (HTTP 403); presidencia.gov.py (connection reset). Could not verify: Ley 7593/2025 official text and dates (gazette unreachable); AI bill numbers and status on SILpy; Whether MITIC has formally published the National AI Roadmap. binding-law, strategy, government-governance, risk-assurance, procurement, cyber-security, data-privacy, transparency, standards, sandbox, index-readiness, drafts, international, historical: no material found. Local retry 2026-10-18 (home connection, Saudi Arabia, ~20-minute box): DNS resolution failed (local resolver and 8.8.8.8 timeout) for gacetaoficial.gov.py (www and bare), presidencia.gov.py, silpy.congreso.gov.py, mitic.gov.py, senado.gov.py, dncp.gov.py - still not accessible. Opened: diputados.gov.py (curl 200; WordPress ?s= search returns home page only, no AI bill found), bcp.gov.py (curl 403, headless Edge 200; ?s= search returns home page only), conatel.gov.py (curl 200; nothing AI-related on home page), bacn.gov.py (curl reset on law page, headless Edge 200). BACN now carries Ley 7593/2025 (page 12924; Fecha de Promulgacion and Publicacion 27-11-2025; full HTML text read; PDF 17.54 MB not downloaded) - promoted from lead to instrument i-21f41edcd6e6; effective_date 2027-11-27 computed from Art. 57 (24 months after official publication) and the BACN publication date. BACN keyword search does not filter (returns default listing). Search list not completed (MITIC, gazette, Senate, procurement, cyber authority not reached), so last_deep_review not changed."
   },
   "changes": [
+    {
+      "id": "c-889b3576f089",
+      "date": "2026-10-18",
+      "recorded": "2026-10-18",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "PRY",
+      "instrument_id": "i-21f41edcd6e6",
+      "title": "Law No. 7593/2025 on Personal Data Protection in the Republic of Paraguay",
+      "detail": "Added to the radar (published 2025-11-27).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.bacn.gov.py/leyes-paraguayas/12924/ley-n-75932025--de-proteccin-de-datos-personales-en-la-repblica-del-paraguay",
+      "needs_review": false
+    },
     {
       "id": "c-d7b6b0530d1b",
       "date": "2026-10-12",
@@ -246,6 +358,21 @@
       "to": null,
       "source_url": "https://www.pj.gov.py/descargas/ID1-133_resolucion_nro_12677_politica_operacional_que_establece_directrices_para_el_uso_de_sistemas_de_inteligencia_artificial_version_1.pdf",
       "needs_review": false
+    },
+    {
+      "id": "c-7992a8f233dd",
+      "date": "2025-11-27",
+      "recorded": "2026-10-18",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "PRY",
+      "instrument_id": "i-21f41edcd6e6",
+      "title": "Personal data protection law published",
+      "detail": "Law No. 7593/2025 on personal data protection was promulgated and published on 27 November 2025; it enters into force 24 months after publication.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.bacn.gov.py/leyes-paraguayas/12924/ley-n-75932025--de-proteccin-de-datos-personales-en-la-repblica-del-paraguay",
+      "needs_review": false
     }
   ],
   "leads": [
@@ -253,35 +380,35 @@
       "title": "Ley N° 7593/2025 De Protección de Datos Personales",
       "english_title": "Law No. 7593/2025 on Personal Data Protection",
       "issuing_authority": "National Congress; promulgated by the Executive",
-      "note": "Comprehensive data protection law promulgated November 2025 (creates the Agencia Nacional de Protección de Datos Personales; reported to include a right to challenge solely automated decisions; two-year transition to November 2027). Official full text not reached: Gaceta Oficial site unreachable (connection reset/503), the BACN law collection ends at 2024 laws, SILpy is a script-only app. Promote under data-privacy once the gazette text is read.",
+      "note": "Comprehensive data protection law promulgated November 2025 (creates the Agencia Nacional de Protección de Datos Personales; reported to include a right to challenge solely automated decisions; two-year transition to November 2027). Official full text not reached: Gaceta Oficial site unreachable (connection reset/503), the BACN law collection ends at 2024 laws, SILpy is a script-only app. Promote under data-privacy once the gazette text is read. 2026-10-18: official full text read on the Congress library law page; promoted to instrument i-21f41edcd6e6.",
       "found": "2026-10-12"
     },
     {
       "title": "Proyecto de Ley que regula y promueve la creación, desarrollo, innovación e implementación de Sistemas de Inteligencia Artificial (IA)",
       "english_title": "Bill regulating and promoting the creation, development, innovation and implementation of AI systems",
       "issuing_authority": "Senate (Cámara de Senadores)",
-      "note": "Risk-based AI bill reported as filed in the Senate (2025-2026) and referred to committees incl. Constitutional Affairs and Science, Technology, Innovation and Future; pending, not located on SILpy.",
+      "note": "Risk-based AI bill reported as filed in the Senate (2025-2026) and referred to committees incl. Constitutional Affairs and Science, Technology, Innovation and Future; pending, not located on SILpy. 2026-10-18: still not located on an official site (Senate and bill system not accessible; Chamber of Deputies site search returns no results); kept as lead.",
       "found": "2026-10-12"
     },
     {
       "title": "Proyecto de Ley que promueve el uso de la inteligencia artificial a favor del desarrollo económico y social del país",
       "english_title": "Bill promoting the use of AI for the country's economic and social development",
       "issuing_authority": "Chamber of Deputies (Cámara de Diputados)",
-      "note": "Pending bill; public hearing by the Social Equity Committee on 4 June 2025 reported; status not confirmed on SILpy.",
+      "note": "Pending bill; public hearing by the Social Equity Committee on 4 June 2025 reported; status not confirmed on SILpy. 2026-10-18: Chamber of Deputies site opened but its search returned nothing on the bill; bill system not accessible; kept as lead.",
       "found": "2026-10-12"
     },
     {
       "title": "Hoja de Ruta Nacional de Inteligencia Artificial / Informe de Evaluación del Estadio de Preparación (RAM) de Paraguay",
       "english_title": "National AI Roadmap / Paraguay AI Readiness Assessment (UNESCO RAM) report",
       "issuing_authority": "Ministry of Information and Communication Technologies (MITIC) with CONACYT and UNESCO",
-      "note": "MITIC presented the RAM report and a national AI roadmap (2025-2026); no official full text found on mitic.gov.py (guias-y-documentos, publicaciones, informes, lineamientos-tic, resoluciones searched). No national AI strategy adopted.",
+      "note": "MITIC presented the RAM report and a national AI roadmap (2025-2026); no official full text found on mitic.gov.py (guias-y-documentos, publicaciones, informes, lineamientos-tic, resoluciones searched). No national AI strategy adopted. 2026-10-18: MITIC site not accessible; no official text found; kept as lead.",
       "found": "2026-10-12"
     },
     {
       "title": "Plan Estratégico Institucional 2026-2030 del Poder Judicial (Acción Estratégica 3.8)",
       "english_title": "Judiciary Institutional Strategic Plan 2026-2030 (Strategic Action 3.8)",
       "issuing_authority": "Supreme Court of Justice",
-      "note": "Internal institutional plan to incorporate AI tools in judicial process management (cited in Resolution 12.677); internal plan to use AI, not a governance instrument.",
+      "note": "Internal institutional plan to incorporate AI tools in judicial process management (cited in Resolution 12.677); internal plan to use AI, not a governance instrument. 2026-10-18: no change; kept as lead.",
       "found": "2026-10-12"
     }
   ]

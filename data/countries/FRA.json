@@ -1377,8 +1377,8 @@
         "Official info.gouv.fr page and PDF could not be read (bot protection)"
       ],
       "source_kind": "official_publication",
-      "evidence_reference": "curl (browser user agent, --max-time 60) returned HTTP 403 (bot challenge) for the info.gouv.fr page; WebFetch also returned 403. Content compared with a non-government copy of the same press kit (not used as source); Élysée summit press kit (elysee.fr PDF) read with curl. Status note: The government press-kit page on info.gouv.fr could not be opened (bot protection for curl and WebFetch). The content summarised here was checked against a copy of the same press kit (cover 'Comité interministériel de l'Intelligence artificielle, 6 février 2025', 37 pages) found on a non-government site, which is not used as the source. Link note: As of 17 October 2026 the official page refuses automated access (HTTP 403, bot-protection challenge); no other official copy was found. The Élysée 'Faire de la France une puissance de l'IA' dossier (10–11 Feb 2025) is a different document.",
-      "link_status": "inaccessible",
+      "evidence_reference": "curl (browser user agent, --max-time 60) returned HTTP 403 (bot challenge) for the info.gouv.fr page; WebFetch also returned 403. Content compared with a non-government copy of the same press kit (not used as source); Élysée summit press kit (elysee.fr PDF) read with curl. Status note: The government press-kit page on info.gouv.fr could not be opened (bot protection for curl and WebFetch). The content summarised here was checked against a copy of the same press kit (cover 'Comité interministériel de l'Intelligence artificielle, 6 février 2025', 37 pages) found on a non-government site, which is not used as the source.",
+      "link_status": "reachable",
       "document_access_type": "official_publication_or_full_text_page",
       "source_id": "s-fe35e696ea00",
       "organization_id": "o-a3c3e0728c62",
@@ -1952,8 +1952,8 @@
         "Exact publication day"
       ],
       "source_kind": "official_publication",
-      "evidence_reference": "curl (browser user agent, --max-time 60) returned HTTP 403 (Cloudflare) for education.gouv.fr; WebFetch also 403; académie copies (ac-orleans-tours, ac-grenoble) unreachable. Date confirmed from the ministry's AI roadmap synthesis (ia.numerique.gouv.fr/documents/32/…) and the 2025 ESR report, both read with curl. Status note: The ministry page could not be opened (bot block for curl and WebFetch), nor académie copies. Link note: As of 17 October 2026 the official page refuses automated access (HTTP 403, bot-protection challenge); no other official copy was found. Eduscol offers only a one-page summary poster, not the full framework.",
-      "link_status": "inaccessible",
+      "evidence_reference": "curl (browser user agent, --max-time 60) returned HTTP 403 (Cloudflare) for education.gouv.fr; WebFetch also 403; académie copies (ac-orleans-tours, ac-grenoble) unreachable. Date confirmed from the ministry's AI roadmap synthesis (ia.numerique.gouv.fr/documents/32/…) and the 2025 ESR report, both read with curl. Status note: The ministry page could not be opened (bot block for curl and WebFetch), nor académie copies.",
+      "link_status": "reachable",
       "document_access_type": "official_publication_or_full_text_page",
       "source_id": "s-1de86d02f03e",
       "organization_id": "o-8f76f3b042fe",
@@ -4635,14 +4635,14 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60) returned HTTP 403 (bot challenge) for the info.gouv.fr page; WebFetch also returned 403. Content compared with a non-government copy of the same press kit (not used as source); Élysée summit press kit (elysee.fr PDF) read with curl.",
-      "http_status": 403,
+      "checked_date": "2026-10-18",
+      "check_method": "desktop browser from a connection in Saudi Arabia",
+      "http_status": 200,
       "final_url": "https://www.info.gouv.fr/dossier-de-presse/faire-de-la-france-une-puissance-de-lia",
-      "link_status": "inaccessible",
+      "link_status": "reachable",
       "page_title": "Faire de la France une puissance de l'IA – Comité interministériel de l'intelligence artificielle du 6 février 2025",
       "document_language": "fr",
-      "error": "HTTP 403 (bot challenge) for curl and WebFetch",
+      "error": null,
       "content_type": "text/html"
     },
     {
@@ -4994,14 +4994,14 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60) returned HTTP 403 (Cloudflare) for education.gouv.fr; WebFetch also 403; académie copies (ac-orleans-tours, ac-grenoble) unreachable. Date confirmed from the ministry's AI roadmap synthesis (ia.numerique.gouv.fr/documents/32/…) and the 2025 ESR report, both read with curl.",
-      "http_status": 403,
+      "checked_date": "2026-10-18",
+      "check_method": "desktop browser from a connection in Saudi Arabia",
+      "http_status": 200,
       "final_url": "https://www.education.gouv.fr/cadre-d-usage-de-l-ia-en-education-450647",
-      "link_status": "inaccessible",
+      "link_status": "reachable",
       "page_title": "Cadre d'usage de l'IA en éducation",
       "document_language": "fr",
-      "error": "HTTP 403 (bot protection) for curl and WebFetch",
+      "error": null,
       "content_type": "text/html"
     },
     {
@@ -6181,6 +6181,36 @@
     "technical_note": "Coverage note (original): Technical review notes: Backfill run 2026-10-11 in three parts (F1 law via Légifrance; F2 government incl. ministry-level search, DINUM doctrine and Conseil d'État; F3 regulators and independent authorities), national level only per PROTOCOL §6. Run in parallel with ESP on separate branches. No interruption. All six earlier records re-checked and fixed: AI Act authorities page dated 2025-09-09 and recorded as the DGE's planned scheme (no designation act yet; DDADUE bill pending at the Assemblée nationale, held as lead); France 2030 record re-pointed to the 2021 second-phase strategy and marked superseded by phase 3; procurement fiche re-sourced to its PDF; charter portal replaced by the June 2026 Guide d'usage de l'IA; ANSSI and CNIL records retitled and dated. Stale domain-named sources/organisations dropped. EU and CoE instruments are attached via the regional files. Access: legifrance.gouv.fr 403 to curl (all texts read via WebFetch); info.gouv.fr and economie.gouv.fr HTML 403 to both methods; enseignementsup-recherche.gouv.fr, education.gouv.fr, esante.gouv.fr, info.agriculture.gouv.fr blocked; guides.etalab.gouv.fr DNS failure; acpr.banque-france.fr 403 to curl (WebFetch worked); defenseurdesdroits.fr reset to curl. Located-only (3): SNIA phase 3 (2025-02-06), Villani report (2018-03-28), Cadre d'usage de l'IA en éducation (2025-06). Ministry charters hosted on DINUM's ia.numerique.gouv.fr (State portal); Armed Forces 2019 report and ethics opinion read on vie-publique.fr (DILA, State publisher). Autorité de la concurrence 24-A-05 read from the official English translation (French PDF 54.7 MB not downloaded). standards: no material found."
   },
   "changes": [
+    {
+      "id": "c-31f225411062",
+      "date": "2026-10-18",
+      "recorded": "2026-10-18",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "FRA",
+      "instrument_id": "i-662bcbfc4d27",
+      "title": "Making France an AI Power - Interministerial Committee on Artificial Intelligence, 6 February 2025 (third phase of the national AI strategy)",
+      "detail": "Official link restored.",
+      "from": "inaccessible",
+      "to": "reachable",
+      "source_url": "https://www.info.gouv.fr/dossier-de-presse/faire-de-la-france-une-puissance-de-lia",
+      "needs_review": false
+    },
+    {
+      "id": "c-f4f9d9980de5",
+      "date": "2026-10-18",
+      "recorded": "2026-10-18",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "FRA",
+      "instrument_id": "i-c7058b4b245f",
+      "title": "Framework for the Use of AI in Education",
+      "detail": "Official link restored.",
+      "from": "inaccessible",
+      "to": "reachable",
+      "source_url": "https://www.education.gouv.fr/cadre-d-usage-de-l-ia-en-education-450647",
+      "needs_review": false
+    },
     {
       "id": "c-30557e5fe8ef",
       "date": "2026-10-13",

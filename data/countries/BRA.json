@@ -1762,8 +1762,8 @@
         "Exact article numbers and wording"
       ],
       "source_kind": "legislation_portal",
-      "evidence_reference": "bra-deep-review-B3-2026-10-11. Status note: Official TSE pages could not be opened (HTTP 403 to curl and WebFetch). The regional court acts cite Resolução TSE nº 23.610/2019 'com as alterações das Resoluções TSE nº 23.732/2024 e nº 23.755/2026'. Summary note: Detailed provisions (arts. 9º-B to 9º-D of the consolidated resolution) were not verified against the official text. Link note: As of 17 October 2026 the official page refuses automated access (HTTP 403); no other official copy was found. The TSE and regional electoral court sites are all blocked.",
-      "link_status": "inaccessible",
+      "evidence_reference": "bra-deep-review-B3-2026-10-11. Status note: Official TSE pages could not be opened (HTTP 403 to curl and WebFetch). The regional court acts cite Resolução TSE nº 23.610/2019 'com as alterações das Resoluções TSE nº 23.732/2024 e nº 23.755/2026'. Summary note: Detailed provisions (arts. 9º-B to 9º-D of the consolidated resolution) were not verified against the official text.",
+      "link_status": "reachable",
       "document_access_type": "official_publication_or_full_text_page",
       "source_id": "s-86d9177a8b98",
       "organization_id": "o-c143c9fb5db0",
@@ -1818,8 +1818,8 @@
         "Provisions"
       ],
       "source_kind": "official_document",
-      "evidence_reference": "bra-deep-review-B3-2026-10-11. Status note: Official TSE pages could not be opened (HTTP 403). Summary note: The TSE public communication was not verified against the text. Provisions must be checked against the official text. Link note: As of 17 October 2026 the official page refuses automated access (HTTP 403); no other official copy was found. The TSE and regional electoral court sites are all blocked.",
-      "link_status": "inaccessible",
+      "evidence_reference": "bra-deep-review-B3-2026-10-11. Status note: Official TSE pages could not be opened (HTTP 403). Summary note: The TSE public communication was not verified against the text. Provisions must be checked against the official text.",
+      "link_status": "reachable",
       "document_access_type": "original_government_document",
       "source_id": "s-46da0f9be713",
       "organization_id": "o-c143c9fb5db0",
@@ -3560,7 +3560,7 @@
         "Effective date not verified."
       ],
       "source_kind": "legislation_portal",
-      "evidence_reference": "bra-deep-review-B5-2026-10-11. Link note: As of 17 October 2026 the official site could not be reached (connection timed out); no other official copy was found.",
+      "evidence_reference": "bra-deep-review-B5-2026-10-11. Link note: As of 18 October 2026 (checked with curl with a browser user agent from a connection in Saudi Arabia and a desktop browser) the Rio de Janeiro city council site cannot be reached; no other official copy was found.",
       "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "source_id": "s-52cf8fc44867",
@@ -6066,14 +6066,14 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl GET with browser user agent: HTTP 403; WebFetch: HTTP 403; also tre-sp.jus.br HTTP 403",
-      "http_status": 403,
+      "checked_date": "2026-10-18",
+      "check_method": "desktop browser from a connection in Saudi Arabia",
+      "http_status": 200,
       "final_url": "https://www.tse.jus.br/legislacao/compilada/res/2024/resolucao-no-23-732-de-27-de-fevereiro-de-2024",
-      "link_status": "inaccessible",
+      "link_status": "reachable",
       "page_title": null,
       "document_language": "pt",
-      "error": "HTTP 403 (access blocked for automated clients)",
+      "error": null,
       "content_type": "text/html"
     },
     {
@@ -6095,14 +6095,14 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl GET with browser user agent: HTTP 403; WebFetch: HTTP 403",
-      "http_status": 403,
+      "checked_date": "2026-10-18",
+      "check_method": "desktop browser from a connection in Saudi Arabia",
+      "http_status": 200,
       "final_url": "https://www.tse.jus.br/eleicoes/eleicoes-2026-content/normas-e-documentacoes/arquivos-2026/resolucao-e-voto-propaganda",
-      "link_status": "inaccessible",
+      "link_status": "reachable",
       "page_title": null,
       "document_language": "pt",
-      "error": "HTTP 403 (access blocked for automated clients)",
+      "error": null,
       "content_type": "text/html"
     },
     {
@@ -7049,7 +7049,7 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
+      "checked_date": "2026-10-18",
       "check_method": "Câmara Municipal legislation page tried with curl (TLS connection reset), curl with a browser user agent over http (HTTP 503) and WebFetch (HTTP 503). Law number, date and quoted articles read in the GT-6 report PDF on lgpd.prefeitura.rio; veto of PL 2970/2024 read in D.O. Rio 5 May 2025, p. 7.",
       "http_status": 503,
       "final_url": "https://aplicnt.camara.rj.gov.br/APL/Legislativos/contlei.nsf/c5e78996b82f9e0303257960005fdc93/173bf9c68e23e98d03258c9f0064342b?OpenDocument",
@@ -7880,6 +7880,36 @@
     "technical_note": "Method note (original): Deep review completed on 11 October 2026, covering federal laws, decrees and bills, federal ministries, the courts' national council, federal regulators, nine priority states plus Ceará, and the cities of São Paulo, Rio de Janeiro, Recife, Belo Horizonte, Curitiba and Porto Alegre. Searches were made in Portuguese and English. Some official websites could not be read automatically, including the electoral court, the Rio de Janeiro state assembly's legislation database, the Rio city council and the platform hosting the full Brazilian AI Plan; records from those sites are marked as located but not fully read, or held as pending. Bills, including the national AI bill PL 2338/2023, are listed as pending rather than as instruments. Pending: the national AI bill, Rio de Janeiro state's AI and facial-recognition law, the G20 Maceió and BRICS AI declarations, AI rules of other ministries and of the remaining states, and Salvador and Fortaleza.\n\nCoverage note (original): Technical review notes: Backfill run 2026-10-11 in five parts (B1 federal law and bills; B2 federal government; B3 federal regulators; B4 states; B5 cities). No usage-limit interruption occurred; every record was built from official texts read in this run and the three earlier records were re-checked and fixed (site-name suffixes removed, domain-named publisher replaced). Second fetch method (BACKFILL step 4) was used throughout: Planalto and MCTI pages refused Chrome-agent curl and WebFetch but loaded with a Firefox user agent; several state portals were read via WebFetch. index-readiness: no government-published AI readiness index found. Located-only (4): TSE Resoluções 23.732/2024 and 23.755/2026 (tse.jus.br, all TRE sites, sintse and DJE returned 403 to curl with Chrome and Firefox agents and to WebFetch); PBIA 2024-2028 (full text only on the JavaScript-only pbia.cgee.org.br; MCTI page and CCT minutes of 23 July 2024 read; no approving decree or CCT resolution found); Rio Lei 8.926/2025 (Câmara Municipal legislation site unreachable; content from the Prefeitura's report and the D.O. Rio veto message). Decreto 12.976/2026 was found by the lead's own check of a decree cited in B3 leads (AI appears only in the body text, not the index summary); Decreto 12.975/2026 has no AI wording. LGPD effective date 2020-09-18 follows Lei 14.058/2020 (conversion of MP 959/2020 without the deferral). ANPD organisation recorded under its current name (Lei 15.352/2026); earlier documents keep 'Autoridade Nacional de Proteção de Dados' as issuing authority. AI-enabled public-security decrees (São Paulo Smart Sampa, SP Muralha Paulista, SC SIVI-SC) are recorded as sectoral; Smart Sampa's decree does not use the words 'inteligência artificial'. Salvador and Fortaleza: web searches only, nothing found. cyber-security: no AI-specific guidance from the GSI or CTIR Gov was found (lead-level web search; gov.br/gsi not searched in depth). standards: ABNT NBR ISO/IEC 42001:2024 and 23894:2023 appear in commercial standards catalogues but were not confirmed on ABNT's official catalogue, so they are held as a lead. international: the G20 Maceió (2024) and BRICS Rio (2025) AI texts were not found on a Brazilian government site and are leads. Ministry catch-up 2026-10-13 (PROTOCOL §2 ministry rule, applied after this country's deep review; one agent, 30 minutes, national ministries' own AI documents only, nothing else re-reviewed): 7 record(s) added. Ministries: Ministério da Educação (schools/higher ed.; incl. CAPES, Inep, CNE): no new MEC AI document. The Referencial (2026) is still not reachable on gov.br/mec, so the lead is kept; Inep 742/2025 and MEC 526/2026 mention AI only in passing (lead); Ministério da Saúde: nothing found beyond the DenaSUS innovation lab ordinance GM/MS 6.552/2025 (lead); no MS AI strategy, policy or generative AI guidance in the DOU or on gov.br/saude; Ministério da Justiça e Segurança Pública (incl. PF, CNPCP, Senappen): no ministry AI policy found; the AI clauses in Portaria MJSP 1.122/2026 and CNPCP Res. 36/2024 are held as leads. The judiciary and CNJ were already recorded; Ministério da Defesa: Portaria GAB CHEC-MD 3.742/2026 on generative AI in the defence colleges (recorded); the Defence AI Policy (Portaria GM-MD 4.360/2026) was not found officially (lead); the GT ordinance 3.477/2025 is in the lead note; Ministério da Fazenda (Receita Federal, CARF, PGFN, STN): Portaria RFB 647/2026, the Receita Federal AI policy (recorded); Portaria CARF/MF 142/2026 on generative AI (recorded); nothing found for PGFN, STN or the ministry itself; Coaf (financial intelligence unit): Portaria Coaf 4/2025 on generative AI guidelines (recorded); Ministério das Relações Exteriores: no AI policy found; Portaria MRE 673/2026 has a passing clause (lead); MRE 605/2025 is not about AI; Ministério do Trabalho e Emprego: nothing found (MTE 1.234/2024 only mentions AI and work in passing); Ministério da Previdência Social / INSS: no AI policy; AI clauses appear only in its security and data policies (lead); AI lab MPS 135/2026 (lead); Ministério do Desenvolvimento e Assistência Social: nothing found (PDTI targets only); Ministério da Agricultura e Pecuária: Portaria MAPA 859/2025 approving a generative AI use guide (recorded); Ministério dos Transportes; Portos e Aeroportos; Minas e Energia; Cidades; Comunicações: no ministry-level AI document found (MPOR security policy has an AI clause, lead); Ministério do Meio Ambiente e Mudança do Clima: nothing beyond a PDTI action to add AI governance guidelines (Portaria GM/MMA 1.592/2026); Ministério do Desenvolvimento, Indústria, Comércio e Serviços / INPI: draft AI patent examination guidelines under consultation (lead); nothing else; Ministério da Cultura; Turismo; Esporte: nothing found (only project funding mentions); Ministério das Mulheres: Portaria GM/MMulheres 134/2026, a generative AI good-practice policy (recorded); Ministério dos Direitos Humanos e da Cidadania: Portaria 1.522/2025 on guidelines for ethical AI use (recorded); Ministério do Planejamento e Orçamento: GT for an MPO AI policy (Portaria GM/MPO 326/2026, lead); Ministério da Ciência, Tecnologia e Inovação: PGTIC Portaria 10.476/2026 AI chapter (lead); EBIA and PBIA already recorded; Ministério da Gestão e da Inovação (public administration/civil service): already recorded (E-IA/MGI, Portaria MGI 3.485/2026, SGD guides); not re-reviewed; Ministério dos Povos Indígenas / Funai: only a strategic-plan item and internal rules (no AI document); Advocacia-Geral da União: a generative AI use guide was reported, but no official text was found in the DOU or on gov.br/agu in this pass; Controladoria-Geral da União: already recorded (generative AI guide, Portaria 3.113/2025). Not reached: Advocacia-Geral da União internal bulletin (Boletim de Serviço) – AGU generative AI guide not located; Ministério da Defesa internal bulletin – Portaria GM-MD 4.360/2026 not located; Ministério da Saúde intranet/SEIDIGI pages beyond the DOU and a web search; PGFN and Banco do Brasil/Caixa-type state companies (not searched). Could not verify: Portaria GM-MD nº 4.360/2026 (Defence AI Policy): no official text found; MEC Referencial para Desenvolvimento e Uso Responsáveis de IA na Educação: gov.br/mec returned HTML/login for the documents path; AGU Guia de Uso de IA Generativa: no official text found; INPI draft AI patent examination guidelines: draft file not located on gov.br/inpi."
   },
   "changes": [
+    {
+      "id": "c-e92ef9853d72",
+      "date": "2026-10-18",
+      "recorded": "2026-10-18",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "BRA",
+      "instrument_id": "i-05495f81d958",
+      "title": "TSE Resolution No. 23,732 of 27 February 2024 amending Resolution No. 23,610/2019 on electoral propaganda (AI rules)",
+      "detail": "Official link restored.",
+      "from": "inaccessible",
+      "to": "reachable",
+      "source_url": "https://www.tse.jus.br/legislacao/compilada/res/2024/resolucao-no-23-732-de-27-de-fevereiro-de-2024",
+      "needs_review": false
+    },
+    {
+      "id": "c-69910761b8b0",
+      "date": "2026-10-18",
+      "recorded": "2026-10-18",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "BRA",
+      "instrument_id": "i-6119a23a04ac",
+      "title": "TSE Resolution No. 23,755/2026 amending Resolution No. 23,610/2019 on electoral propaganda for the 2026 elections",
+      "detail": "Official link restored.",
+      "from": "inaccessible",
+      "to": "reachable",
+      "source_url": "https://www.tse.jus.br/eleicoes/eleicoes-2026-content/normas-e-documentacoes/arquivos-2026/resolucao-e-voto-propaganda",
+      "needs_review": false
+    },
     {
       "id": "c-1ee0408d704f",
       "date": "2026-10-13",
