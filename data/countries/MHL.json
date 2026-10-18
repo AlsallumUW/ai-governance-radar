@@ -10,16 +10,120 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": "The Marshall Islands has no AI-specific law, strategy or guidance. Its 2025 package of digital laws, including a Personal Data Protection Act for government bodies and a Cybersecurity Act, is the only relevant framework, but their official texts could not be read.",
+    "summary": "The Marshall Islands has no AI-specific law, strategy or guidance. The main relevant instrument is the Personal Data Protection Act 2025, which applies data protection principles to core Government ministries and agencies and makes the Economic Policy, Planning and Statistics Office (EPSSO) the competent authority; it has no AI-specific provisions. The rest of the 2025 digital-law package (cybersecurity, cybercrimes, electronic transactions, digital identity and telecommunications reform) does not address AI. The Nitijela is the main source of relevant law, and no national AI body or strategy has been identified.",
     "lead_institutions": [
-      "Nitijela (Parliament of the Marshall Islands)"
+      "Nitijela (Parliament of the Marshall Islands)",
+      "Economic Policy, Planning and Statistics Office (EPSSO)"
     ],
-    "last_deep_review": "2026-10-13",
-    "review_notes": "This review was carried out on 13 October 2026, but Parliament's legislation portal and the banking commission's and health ministry's websites were unavailable, so no official document could be checked and the Marshall Islands will be reviewed again later. The 2025 Personal Data Protection Act and Cybersecurity Act are listed as leads."
+    "last_deep_review": "2026-10-18",
+    "review_notes": "The Nitijela's legislation portal, including the 2025 public laws, was searched and the Personal Data Protection Act 2025 was checked against its official text; the 2025 cybersecurity, cybercrime and digital laws contain no AI provisions. The government portal, the banking commission and the education system's websites could not be accessed, and the certification date of the data protection law is still to be confirmed."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-9bbacdb6d2af",
+      "official_title": "Personal Data Protection Act 2025",
+      "english_title": "Personal Data Protection Act 2025",
+      "jurisdiction_id": "MHL",
+      "issuing_authority": "Nitijela (Parliament) of the Republic of the Marshall Islands",
+      "publisher_name": "Nitijela (Parliament) of the Republic of the Marshall Islands",
+      "authority_type": null,
+      "government_level": "national",
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "category": "data-privacy",
+      "subcategory": null,
+      "legal_status": "binding_law",
+      "publication_date": "2025",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Enacted as Public Law 2025-43 and codified as Title 6, Chapter 4 of the Marshall Islands Revised Code. The Nitijela's codified text gives a commencement date of October 7, 2025, while section 418 provides that the Act takes effect twelve months after the date of certification; the certification date is not printed in the text.",
+      "scope": "Core Government ministries and agencies that collect, use, store, process, disclose or transfer personal data of natural persons in the Republic; excludes law enforcement, national intelligence and national security purposes.",
+      "sectors": [
+        "public-sector"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "The Marshall Islands' first personal data protection law, applying only to core Government ministries and agencies. It sets six principles (legitimate purpose, data minimisation, accuracy, retention, integrity and security, accountability), names the Economic Policy, Planning and Statistics Office (EPSSO) as the competent authority with powers to issue guidance and regulations, and gives residents a right to sue a ministry or agency for injunctions or corrective orders but not damages. It also requires ministries to run complaint processes, report yearly to EPSSO, and allows data sharing between agencies under a safe harbour; it contains no provisions specific to AI or automated decision-making.",
+      "ai_governance_relevance": "General data protection law governing how government bodies process personal data, including by automated means; relevant to any public-sector AI use.",
+      "source_url": "https://rmiparliament.org/cms/images/LEGISLATION/PRINCIPAL/2025/2025-0043/2025-0043_1.pdf",
+      "official_pdf_url": "https://rmiparliament.org/cms/images/LEGISLATION/PRINCIPAL/2025/2025-0043/2025-0043_1.pdf",
+      "official_webpage_url": "https://rmiparliament.org/cms/library/public-laws-by-years/60-2025.html",
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-18",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [
+        "Date of certification (section 418 sets effect twelve months after certification)"
+      ],
+      "source_kind": "legislation_portal",
+      "evidence_reference": "local-retry-2026-10-18: official Nitijela codified-text PDF (6 MIRC Ch. 4, Source: P.L. 2025-43, 12 pages) read in full via curl from rmiparliament.org; listed as PL 2025-43 on the Nitijela Public Laws 2025 index.",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "lifecycle": "adopted",
+      "first_recorded": "2026-10-18",
+      "last_changed": null,
+      "subnational_unit": null,
+      "source_id": "s-3faaeb3a72b5",
+      "organization_id": "o-a19f2120681f"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-a19f2120681f",
+      "jurisdiction_id": "MHL",
+      "name": "Nitijela (Parliament) of the Republic of the Marshall Islands",
+      "publisher_name_verified": true,
+      "ai_governance_role": "National legislature; enacted the Personal Data Protection Act 2025 and the 2025 digital-law package and publishes the official texts.",
+      "source_url": "https://rmiparliament.org/cms/library/public-laws-by-years/60-2025.html",
+      "authority_type": null,
+      "government_level": "national"
+    },
+    {
+      "id": "o-73256a5e3e2c",
+      "jurisdiction_id": "MHL",
+      "name": "Economic Policy, Planning and Statistics Office (EPSSO)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Competent authority under the Personal Data Protection Act 2025 (section 406), empowered to issue guidance, policies and regulations on government handling of personal data.",
+      "source_url": "https://rmiparliament.org/cms/images/LEGISLATION/PRINCIPAL/2025/2025-0043/2025-0043_1.pdf",
+      "authority_type": null,
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-3faaeb3a72b5",
+      "url": "https://rmiparliament.org/cms/images/LEGISLATION/PRINCIPAL/2025/2025-0043/2025-0043_1.pdf",
+      "jurisdiction_ids": [
+        "MHL"
+      ],
+      "source_institutions": [
+        "Nitijela (Parliament) of the Republic of the Marshall Islands"
+      ],
+      "instrument_ids": [
+        "i-9bbacdb6d2af"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-10-18",
+      "checked_date": "2026-10-18",
+      "check_method": "Read official codified-text PDF in full and the Nitijela Public Laws 2025 index (local retry, curl)",
+      "http_status": 200,
+      "final_url": "https://rmiparliament.org/cms/images/LEGISLATION/PRINCIPAL/2025/2025-0043/2025-0043_1.pdf",
+      "link_status": "reachable",
+      "page_title": "Personal Data Protection Act 2025",
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "MHL",
@@ -36,9 +140,11 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
+    "categories_with_findings": [
+      "data-privacy",
+      "binding-law"
+    ],
     "categories_where_no_material_was_found": [
-      "binding-law",
       "strategy",
       "government-governance",
       "ethics",
@@ -46,7 +152,6 @@
       "public-sector",
       "procurement",
       "cyber-security",
-      "data-privacy",
       "transparency",
       "standards",
       "sandbox",
@@ -77,9 +182,12 @@
       "Marshall Islands Ministry of Education Public School System artificial intelligence policy students",
       "Marshall Islands Nitijela bill \"artificial intelligence\" OR deepfake OR \"Cybercrime\" 2026",
       "Marshall Islands Office of the President press release \"AI\" digital government 2026",
-      "\"Artificial Intelligence\" Aelōñ̄ in Ṃajeļ kien jikuul (Marshallese)"
+      "\"Artificial Intelligence\" Aelōñ̄ in Ṃajeļ kien jikuul (Marshallese)",
+      "rmiparliament.org Public Laws by Years 2025 (pages 1-2) reviewed: PL 2025-19 to PL 2025-55",
+      "rmiparliament.org LEGISLATION/PRINCIPAL/2025 2025-0043 Personal Data Protection Act 2025 official text",
+      "Cybersecurity Act 2025 / Cybercrimes Act 2025 / Digital Transformation and Identity Verification Act 2025 / Electronic Transactions Act 2025 / Telecommunications (Reform) Act 2025 official texts: \"artificial\" OR algorithm OR \"automated decision\" OR deepfake"
     ],
-    "review_date": "2026-10-13",
+    "review_date": "2026-10-18",
     "passes": {
       "institutions": "COMPLETE",
       "legislation": "COMPLETE",
@@ -96,12 +204,27 @@
       "regional_inheritance": "COMPLETE",
       "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "The laws and bills, national government, ministries and regulators of the Marshall Islands were searched for AI laws, strategies, guidelines and guidance. No qualifying AI-governance document was found in any category; the 2025 Personal Data Protection Act and Cybersecurity Act were identified but are listed as leads. Parliament's legislation portal and several ministry and regulator websites were unavailable, so the texts of the 2025 data protection and cybersecurity laws remain to be checked.",
+    "no_material_found_note": "The laws and bills, national government, ministries and regulators of the Marshall Islands were searched for AI laws, strategies, guidelines and guidance. Apart from the Personal Data Protection Act 2025, which covers government handling of personal data, no qualifying document was found; the 2025 cybersecurity, cybercrime and other digital laws contain no AI provisions.",
     "discovery_result_count": 11,
     "focused_result_count": 11,
-    "technical_note": "Method note (original): This review was carried out on 13 October 2026, but Parliament's legislation portal blocks automated access and the banking commission's and health ministry's websites could not be accessed, so no official document could be read. The Marshall Islands is marked for a later retry. The 2025 Personal Data Protection Act and Cybersecurity Act are tracked as leads.\n\nCoverage note (original): Technical review notes: tier B/C batch run 2026-10-13, one agent, national level only (PROTOCOL §6), about 25-minute time box. rmiparliament.org captcha/403 (curl and WebFetch); Banking Commission and Ministry of Health sites rejected by egress proxy; ntamar.net parked; rmigovernment.org hosts unrelated content. PDPA 2025 (P.L. 2025-43) official PDF URL recorded in lead; only PacLII bill copy readable (not official); certification date unconfirmed, so lead not located-only record. Digital Transformation and Identity Verification Act 2025, Electronic Transactions Act 2025: not AI-related. Convention 108: not a party. Units covered: Law: Searched for AI laws, AI provisions, deepfake/cybercrime and AI bills: none found. The 2025 digital-law package (Personal Data Protection Act 2025, Cybersecurity Act 2025, Digital Transformation and Identity Verification Act 2025, Electronic Transactions Act 2025) was identified, but the Nitijela legislation portal (rmiparliament.org) returned a captcha/403 to curl and WebFetch, so no official text could be read; PDPA and Cybersecurity Act held as leads.; Government: Searched for a national AI strategy, digital/ICT strategy with an AI pillar, public-sector AI/GenAI guidelines and Digital Transformation Unit documents: searched, nothing found. No official national AI strategy or policy located; the Digital RMI programme is a World Bank project (not a national AI instrument).; Ministries: Education (Public School System), health, justice, finance, transport/communications/IT: searched, nothing found on AI. Several ministry domains were unreachable or parked; rmigovernment.org now hosts unrelated content.; Regulators: No data protection authority yet operating (EPSSO reportedly designated under the PDPA, unverified); National Telecommunications Authority domain ntamar.net is parked; Banking Commission site unreachable. Searched, nothing found on AI.. Not reached: rmiparliament.org (Nitijela legislation portal and gazette texts): captcha/403 to curl and WebFetch; Banking Commission and Ministry of Health websites: connection refused through egress proxy. Could not verify: Personal Data Protection Act 2025 text, certification date and commencement (rmiparliament.org blocked); Cybersecurity Act 2025 text (rmiparliament.org blocked). binding-law, strategy, government-governance, ethics, risk-assurance, public-sector, procurement, cyber-security, data-privacy, transparency, standards, sandbox, index-readiness, sectoral, generative-ai, drafts, international, historical: no material found."
+    "technical_note": "Method note (original): This review was carried out on 13 October 2026, but Parliament's legislation portal blocks automated access and the banking commission's and health ministry's websites could not be accessed, so no official document could be read. The Marshall Islands is marked for a later retry. The 2025 Personal Data Protection Act and Cybersecurity Act are tracked as leads.\n\nCoverage note (original): Technical review notes: tier B/C batch run 2026-10-13, one agent, national level only (PROTOCOL §6), about 25-minute time box. rmiparliament.org captcha/403 (curl and WebFetch); Banking Commission and Ministry of Health sites rejected by egress proxy; ntamar.net parked; rmigovernment.org hosts unrelated content. PDPA 2025 (P.L. 2025-43) official PDF URL recorded in lead; only PacLII bill copy readable (not official); certification date unconfirmed, so lead not located-only record. Digital Transformation and Identity Verification Act 2025, Electronic Transactions Act 2025: not AI-related. Convention 108: not a party. Units covered: Law: Searched for AI laws, AI provisions, deepfake/cybercrime and AI bills: none found. The 2025 digital-law package (Personal Data Protection Act 2025, Cybersecurity Act 2025, Digital Transformation and Identity Verification Act 2025, Electronic Transactions Act 2025) was identified, but the Nitijela legislation portal (rmiparliament.org) returned a captcha/403 to curl and WebFetch, so no official text could be read; PDPA and Cybersecurity Act held as leads.; Government: Searched for a national AI strategy, digital/ICT strategy with an AI pillar, public-sector AI/GenAI guidelines and Digital Transformation Unit documents: searched, nothing found. No official national AI strategy or policy located; the Digital RMI programme is a World Bank project (not a national AI instrument).; Ministries: Education (Public School System), health, justice, finance, transport/communications/IT: searched, nothing found on AI. Several ministry domains were unreachable or parked; rmigovernment.org now hosts unrelated content.; Regulators: No data protection authority yet operating (EPSSO reportedly designated under the PDPA, unverified); National Telecommunications Authority domain ntamar.net is parked; Banking Commission site unreachable. Searched, nothing found on AI.. Not reached: rmiparliament.org (Nitijela legislation portal and gazette texts): captcha/403 to curl and WebFetch; Banking Commission and Ministry of Health websites: connection refused through egress proxy. Could not verify: Personal Data Protection Act 2025 text, certification date and commencement (rmiparliament.org blocked); Cybersecurity Act 2025 text (rmiparliament.org blocked). binding-law, strategy, government-governance, ethics, risk-assurance, public-sector, procurement, cyber-security, data-privacy, transparency, standards, sandbox, index-readiness, sectoral, generative-ai, drafts, international, historical: no material found.\n\nLocal retry 2026-10-18: rmiparliament.org now opens via curl (HTTP 200, no captcha). Read in full: PDPA 2025 codified PDF LEGISLATION/PRINCIPAL/2025/2025-0043/2025-0043_1.pdf (header 'Commencement : October 7, 2025', Source P.L. 2025-43; s.418 says effect 12 months after certification, certification date not printed; header date stored only in current_status, effective_date left null). EPSSO confirmed as competent authority (s.406). Public Laws 2025 index pages 1-2 opened. Codified PDFs for 2025-0025, 0026, 0027, 0028 and 0040 opened and text-searched for artificial/algorithm/automated decision/deepfake: no AI provisions (the Phoca 'download=' copies of 2025-27/28/26 are scanned images without text). 'bills-before-nitijela' URL guessed returned 404 (not a confirmed path). Still failing: rmigovernment.org (connection reset, curl and headless Edge), rmibankingcommission.org and rmipss.org (DNS not resolved). rmihealth.org opened (HTTP 200) but no AI material checked in depth."
   },
   "changes": [
+    {
+      "id": "c-cd9e3b209088",
+      "date": "2026-10-18",
+      "recorded": "2026-10-18",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "MHL",
+      "instrument_id": "i-9bbacdb6d2af",
+      "title": "Personal Data Protection Act 2025",
+      "detail": "Added to the radar (published 2025).",
+      "from": null,
+      "to": null,
+      "source_url": "https://rmiparliament.org/cms/images/LEGISLATION/PRINCIPAL/2025/2025-0043/2025-0043_1.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-db6f1f22c286",
       "date": "2026-10-13",
@@ -123,14 +246,14 @@
       "title": "Personal Data Protection Act 2025 (P.L. 2025-43)",
       "english_title": "Personal Data Protection Act 2025",
       "issuing_authority": "Nitijela (Parliament) of the Republic of the Marshall Islands",
-      "note": "General data protection law for personal data processed by core government ministries and agencies (data-privacy category once verified). Official enacted text is listed by the Nitijela at https://rmiparliament.org/cms/images/LEGISLATION/PRINCIPAL/2025/2025-0043/2025-0043_1.pdf (public laws 2025 index: https://rmiparliament.org/cms/library/public-laws-by-years/60-2025.html), but on 2026-10-13 the Nitijela site returned only a captcha/403 page to both curl and WebFetch, so the text, certification date and commencement could not be read. A bill copy exists on PacLII (pacliirms.paclii.org, not an official host). Secondary sources report the Economic Policy, Planning and Statistics Office (EPSSO) as competent authority and effect twelve months after certification (s.418); unverified. Re-check the official PDF: record as binding_law / data-privacy with the certification date, and check for any automated-decision or profiling provisions.",
+      "note": "General data protection law for personal data processed by core government ministries and agencies (data-privacy category once verified). Official enacted text is listed by the Nitijela at https://rmiparliament.org/cms/images/LEGISLATION/PRINCIPAL/2025/2025-0043/2025-0043_1.pdf (public laws 2025 index: https://rmiparliament.org/cms/library/public-laws-by-years/60-2025.html), but on 2026-10-13 the Nitijela site returned only a captcha/403 page to both curl and WebFetch, so the text, certification date and commencement could not be read. A bill copy exists on PacLII (pacliirms.paclii.org, not an official host). Secondary sources report the Economic Policy, Planning and Statistics Office (EPSSO) as competent authority and effect twelve months after certification (s.418); unverified. Re-check the official PDF: record as binding_law / data-privacy with the certification date, and check for any automated-decision or profiling provisions. Update 2026-10-18: the official text opened and was read; recorded as an instrument (i-9bbacdb6d2af). Lead kept for history.",
       "found": "2026-10-13"
     },
     {
       "title": "Cybersecurity Act 2025",
       "english_title": "Cybersecurity Act 2025",
       "issuing_authority": "Nitijela (Parliament) of the Republic of the Marshall Islands",
-      "note": "General cybersecurity framework law of the 2025 digital-law package (with the Digital Transformation and Identity Verification Act 2025 and the Electronic Transactions Act 2025). Official text on rmiparliament.org could not be reached on 2026-10-13 (captcha/403); only a PacLII bill copy was discoverable. Not AI-specific as far as known; check the official text for any AI provisions before recording.",
+      "note": "General cybersecurity framework law of the 2025 digital-law package (with the Digital Transformation and Identity Verification Act 2025 and the Electronic Transactions Act 2025). Official text on rmiparliament.org could not be reached on 2026-10-13 (captcha/403); only a PacLII bill copy was discoverable. Not AI-specific as far as known; check the official text for any AI provisions before recording. Update 2026-10-18: the official codified text (40 MIRC Ch. 4, Source: P.L. 2025-0027, Commencement: April 21, 2025) at https://rmiparliament.org/cms/images/LEGISLATION/PRINCIPAL/2025/2025-0027/2025-0027_1.pdf opened and was searched; it contains no artificial-intelligence provisions, so it stays a lead (out of scope as a general cybersecurity law). The Digital Transformation and Identity Verification Act 2025, Electronic Transactions Act 2025, Telecommunications (Reform) Act 2025 and Cybercrimes Act 2025 (P.L. 2025-40) official texts were also searched and contain no AI provisions.",
       "found": "2026-10-13"
     }
   ]
