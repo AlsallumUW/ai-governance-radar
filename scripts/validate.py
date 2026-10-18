@@ -149,10 +149,13 @@ def check_translations():
 BINDING_STATUSES = ("binding_law", "binding_regulation")
 # current_status is shown to the public; research-log wording belongs in evidence_reference (shown under "Source notes")
 STATUS_LOG = re.compile(r"audit 20\d\d|\bcurl\b|HTTP [0-9]{3}|not read|fetch|automated access|automated reading|blocks automated|could not be read"
-                        r"|this record|the radar(?! tecnol[oó]gico)", re.I)
+                        r"|this record|the radar(?! tecnol[oó]gico)"
+                        r"|held as (?:a )?leads?|in this review|\b(?:effective|publication|last_amended)_date\b|\bnull\b|WebFetch|pdftotext|headless", re.I)
 
 
 # review_notes and no_material_found_note are public text too: also no agent/tool/run vocabulary
+# overview summaries state what is established; process wording belongs in the method note (narrative.review_notes)
+SUMMARY_PROCESS = re.compile(r"could not be|in this review|held as (?:a )?leads?", re.I)
 NOTE_LOG = re.compile(STATUS_LOG.pattern + r"|\bHTTP\b|WebFetch|\bTLS\b|\bproxy\b|\bagents?\b|sub-?agent|\bPROTOCOL\b|\bpilot\b|thin pass|\btier [ABC]\b|batch run", re.I)
 
 
@@ -217,6 +220,8 @@ def check(only=None):
             removed_ids = {x.get("instrument_id") for x in r.get("changes", []) if x.get("type") == "removed"}
             if c.get("instrument_id") and c["instrument_id"] not in inst_ids and c["instrument_id"] not in removed_ids:
                 E(f"change {c.get('id')} points to missing instrument {c['instrument_id']}")
+        m = SUMMARY_PROCESS.search((r.get("narrative") or {}).get("summary") or "")
+        if m: E(f"narrative.summary contains process wording '{m.group(0)}' (state what is established; move it to review_notes as 'Not yet verified from the official text: ...')")
         for f, v in (("narrative.review_notes", (r.get("narrative") or {}).get("review_notes")),
                      ("coverage_audit.no_material_found_note", (r.get("coverage_audit") or {}).get("no_material_found_note"))):
             m = NOTE_LOG.search(v or "")

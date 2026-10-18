@@ -125,7 +125,8 @@ def issuer_names(D):
         ar = i18n.content(jid, "lead_institutions", en) if en else None
         if isinstance(ar, list) and len(ar) == len(en):
             for e, a in zip(en, ar):
-                if e and a: out.setdefault(e.strip(), a.strip())
+                if e and a:
+                    out.setdefault(e.strip(), a.strip()); out.setdefault(re.sub(r"\s*\([^()]*\)\s*$", "", e).strip(), a.strip())
     return out
 
 
@@ -220,6 +221,7 @@ def build():
     t = t.replace("__APP_JS__", (ROOT / "site/app.js").read_text(encoding="utf-8"), 1)
     t = t.replace("__CHANGELOG_CSS__", (ROOT / "site/changelog.css").read_text(encoding="utf-8"), 1)
     t = t.replace("__CHANGELOG_JS__", (ROOT / "site/changelog.js").read_text(encoding="utf-8"), 1)
+    t = t.replace("__BUILD_DATE__", pages.fmt_date(D["meta"].get("build_date")))
     t = t.replace("__DATABASE__", payload, 1)  # last, so data text can never be mistaken for a placeholder
     OUT.mkdir(exist_ok=True)
     (OUT / "index.html").write_text(t, encoding="utf-8")

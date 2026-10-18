@@ -497,7 +497,7 @@
       "category": "drafts",
       "subcategory": null,
       "legal_status": "consultation_draft",
-      "lifecycle": "consultation",
+      "lifecycle": "consultation_closed",
       "publication_date": "2026-03-30",
       "effective_date": null,
       "last_amended_date": null,
@@ -531,7 +531,7 @@
       "source_id": "s-b6fd4c5aa751",
       "organization_id": "o-c3aeae8d9e2e",
       "first_recorded": "2026-10-10",
-      "last_changed": null
+      "last_changed": "2026-10-19"
     },
     {
       "id": "i-53c574c269d1",
@@ -776,7 +776,7 @@
       "publication_date": "2026-04-13",
       "effective_date": null,
       "last_amended_date": null,
-      "current_status": "Office Memorandum dated 13 April 2026, posted on the MeitY website on 16 April 2026 (Orders and Notices). No amendment to the composition or terms of reference was found on the MeitY site as of 10 October 2026, and the companion Technology and Policy Expert Committee (TPEC) order was not found there (held as a lead).",
+      "current_status": "Office Memorandum dated 13 April 2026, posted on the MeitY website on 16 April 2026 (Orders and Notices). No amendment to the composition or terms of reference was found on the MeitY site as of 10 October 2026, and the companion Technology and Policy Expert Committee (TPEC) order was not found there (listed under Leads).",
       "scope": "India (national)",
       "sectors": [],
       "technology_scope": [
@@ -2472,9 +2472,9 @@
       "evidence_reference": "N4: SEBI report page and PDF read 2026-10-10",
       "link_status": "reachable",
       "document_access_type": "official_publication_or_full_text_page",
-      "lifecycle": "consultation",
+      "lifecycle": "consultation_closed",
       "first_recorded": "2026-10-10",
-      "last_changed": "2024-11-13",
+      "last_changed": "2026-10-19",
       "source_id": "s-b89f0636c04b",
       "organization_id": "o-8dbcae1fb166"
     },
@@ -2688,9 +2688,9 @@
       "evidence_reference": "N4: SEBI report page and PDF read 2026-10-10",
       "link_status": "reachable",
       "document_access_type": "official_publication_or_full_text_page",
-      "lifecycle": "consultation",
+      "lifecycle": "consultation_closed",
       "first_recorded": "2026-10-10",
-      "last_changed": "2025-06-20",
+      "last_changed": "2026-10-19",
       "source_id": "s-5b3637b54792",
       "organization_id": "o-8dbcae1fb166"
     },
@@ -7579,6 +7579,51 @@
     "technical_note": "Method note (original): Deep review completed on 10 October 2026, covering national laws and rules, MeitY and the IndiaAI Mission, NITI Aayog, the Principal Scientific Adviser, the Telecommunication Engineering Centre and the Ministry of Defence, sector regulators (securities, banking, health, telecoms, cybersecurity and competition) and state governments. Searches were made in English and Hindi. Several official websites could not be read automatically, including most state government portals, the IndiaAI document store, the Election Commission and the insurance regulator. Records from those sources are marked as located but not fully read, or held as pending. Pending: the AI policies of Karnataka, Uttar Pradesh, Odisha, Rajasthan and Assam, Telangana's later AI strategy, the Election Commission's advisories on AI in campaigns, insurance regulator AI measures, the national adoption of ISO/IEC AI standards, and two earlier MeitY advisories with no official copy online.\n\nCoverage note (original): Technical review notes: Backfill run in five parts (N1 laws and rules; N2 MeitY and IndiaAI; N3 NITI Aayog, PSA, TEC and other national papers; N4 sector regulators; N5 states). The first attempt on 2026-10-08 was stopped by a usage limit before any fragment was written; on 2026-10-10 all five parts were rebuilt from freshly read official texts, reusing earlier downloads only after re-fetching or re-reading them, so no record written before the restart remained unchecked. index-readiness: no government-published AI readiness index or maturity assessment was found (NITI and MeitY listings searched). Access problems: meity.gov.in renders client-side and returns 200 for any path, so documents were located through the site's own document API and read from www.meity.gov.in/static/uploads; IndiaAI's S3 document store (indiaai.s3.ap-south-1.amazonaws.com) returned 403, so the January 2025 sub-committee report and the public-sector AI competency framework are primary_source_located; TEC releases the final TEC 57090:2025 text only after a registration form, so that record is built from TEC's standards listing and the consultation draft; RBI PDFs sit behind a bot challenge, so RBI records cite the RBI HTML pages carrying the full text; eci.gov.in returned 406 and irdai.gov.in 504, so ECI deepfake advisories and IRDAI AI items are leads; egazette.gov.in needs an extra CA bundle. States: most state portals refused connections from this environment. All tn.gov.in hosts were unreachable, so the two Tamil Nadu records (2020 Safe and Ethical AI Policy, G.O. 25/2024 TN AI Mission) were located through indexed copies of the official files and are primary_source_located with link_status inaccessible. Karnataka, Uttar Pradesh, Telangana (beyond the 2020 framework), Odisha, Rajasthan and Assam portals could not be read; their AI instruments are leads. Punjab, Delhi, West Bengal and Madhya Pradesh were searched by web search only. The OPSA white papers were found by two parts and deduplicated; the AI Impact Summit Declaration (19 Feb 2026) is recorded under IND international as a summit outcome hosted by India. BIS adoptions of ISO/IEC 42001, 23894 and 22989 appear in BIS listings without dates, so they are leads. The IT Act 2000 has no explicit AI provisions and is recorded only as the parent Act of the IT Rules; the Bharatiya Nyaya Sanhita, Bharatiya Sakshya Adhiniyam and Telecommunications Act 2023 were not checked for AI wording. Two MeitY advisories (26 Dec 2023, 1 Mar 2024) have no official copy online and are leads; the 15 Mar 2024 advisory that replaced them is recorded. Ministry catch-up 2026-10-13 (PROTOCOL §2 ministry rule, applied after this country's deep review; one agent, 30 minutes, national ministries' own AI documents only, nothing else re-reviewed): 2 record(s) added. Ministries: Ministry of Education (school education, higher education; CBSE, UGC, AICTE): nothing in scope found; CBSE AI curriculum circular Acad-15/2026 noted as lead (curriculum, not governance); no UGC/AICTE AI-use guideline found (AICTE site 403); Ministry of Health and Family Welfare: SAHI (Feb 2026) still held as existing lead - abdm.gov.in and nha.gov.in returned HTTP 403 to curl and WebFetch; only a PIB explainer and a third-party copy found; nothing else; Judiciary (Supreme Court of India): White Paper on AI and Judiciary, November 2025 (recorded); draft Regulations for Use of AI in Courts, 2026 (recorded); Ministry of Law and Justice (Department of Justice, Legal Affairs): nothing found (eCourts Phase III AI only as a funded pilot component); Ministry of Defence: ETAI framework (existing lead) still not online officially; HQ IDS 'AI in Military Domain' paper and Army AI roadmap added as leads; mod.gov.in did not respond; Ministry of Finance (Expenditure, Revenue/CBDT, CBIC): DoE 29 Jan 2025 AI-tools note still unpublished (existing lead); nothing else found (incometaxindia.gov.in 403, finmin.gov.in no response); Ministry of Home Affairs (incl. I4C, police): nothing found; Ministry of External Affairs: nothing found; Ministry of Labour and Employment: nothing found (only parliamentary replies); Ministry of Agriculture and Farmers Welfare: nothing found (agriwelfare.gov.in 403); Ministry of Road Transport and Highways: nothing found; Ministry of Power; Ministry of Environment, Forest and Climate Change: nothing found; Ministry of Commerce and Industry (DPIIT): generative-AI copyright working paper (existing lead) - dpiit.gov.in not machine-readable/403; access note added as lead; Ministry of Information and Broadcasting: nothing found (only tenders and press items); Ministry of Culture; Ministry of Tourism: nothing found (indiaculture.gov.in no response); Ministry of Statistics and Programme Implementation: nothing found (AI only in passing in draft NPOS); Department of Telecommunications; Department of Science and Technology: nothing new beyond TEC standards already recorded; Department of Personnel and Training / DARPG (public administration): nothing found beyond the competency framework already recorded (dopt.gov.in no response). Not reached: Ministry of Defence site (mod.gov.in) did not respond; Department of Personnel and Training site (dopt.gov.in) did not respond; National Health Authority / ABDM (403); AICTE (403); DPIIT (JavaScript site, 403 to WebFetch); Ministry of Culture site did not respond. Could not verify: SAHI full text (official host blocked); ETAI framework text; DPIIT generative AI and copyright working paper (official copy); Whether the Supreme Court's draft AI regulations have been finalised after 15 July 2026."
   },
   "changes": [
+    {
+      "id": "c-ad49bdf34fb1",
+      "date": "2026-10-19",
+      "recorded": "2026-10-19",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "IND",
+      "instrument_id": "i-820dad4cd471",
+      "title": "Draft IT (Intermediary Guidelines and Digital Media Ethics Code) Second Amendment Rules, 2026 (intermediary compliance with Ministry advisories, SGI label display and digital media oversight)",
+      "detail": "Record updated: lifecycle.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-943ebe32c6f8",
+      "date": "2026-10-19",
+      "recorded": "2026-10-19",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "IND",
+      "instrument_id": "i-cf514bfa4278",
+      "title": "Consultation paper: assigning responsibility for the use of AI tools by MIIs, registered intermediaries and other SEBI-regulated persons",
+      "detail": "Record updated: lifecycle.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-e2b1fc314822",
+      "date": "2026-10-19",
+      "recorded": "2026-10-19",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "IND",
+      "instrument_id": "i-ddaeb112e6da",
+      "title": "Consultation Paper on Guidelines for Responsible Usage of AI/ML in Indian Securities Markets",
+      "detail": "Record updated: lifecycle.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
     {
       "id": "c-6117f7b78bb9",
       "date": "2026-10-13",

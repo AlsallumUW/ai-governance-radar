@@ -2279,7 +2279,7 @@
       "category": "drafts",
       "subcategory": null,
       "legal_status": "consultation_draft",
-      "lifecycle": "consultation",
+      "lifecycle": "consultation_closed",
       "publication_date": "2026-06-19",
       "effective_date": null,
       "last_amended_date": null,
@@ -2311,7 +2311,7 @@
       "source_id": "s-ca2c127ad0b0",
       "organization_id": "o-cd39db4e4e90",
       "first_recorded": "2026-10-11",
-      "last_changed": null
+      "last_changed": "2026-10-19"
     },
     {
       "id": "i-aa0b66552235",
@@ -4870,6 +4870,21 @@
     "technical_note": "Method note (original): Deep review completed on 11 October 2026, covering national laws, decrees and bills, the national government and ministries, regulators, Buenos Aires City and the provinces of Buenos Aires, Córdoba, Santa Fe, Neuquén, San Luis, Río Negro, Salta and Mendoza, and the cities of Rosario, Córdoba, Mendoza, Salta and Mar del Plata. Searches were made in Spanish and English. The provinces of Tucumán, Entre Ríos, Chubut and Misiones were not reached, and Mendoza province was only partly covered; they are listed as pending. Some official websites could not be read automatically, including the Senate's bill pages and parts of Buenos Aires City's official bulletin. Bills, including the national AI and data-protection bills, are listed as pending rather than as instruments. Pending: a national AI law, data-protection reform, the 2019 national AI plan (no official copy online), Santa Fe's law on AI in administrative procedure, and the Buenos Aires Supreme Court's draft AI regulation.\n\nCoverage note (original): Technical review notes: Backfill run 2026-10-11 in five parts (R1 national law and bills; R2 national government incl. ministry-level search per PROTOCOL §2; R3 regulators; R4 provinces; R5 Buenos Aires City operational documents and cities). No usage-limit interruption; the three earlier records were re-checked and fixed (i-338245c4109a now points to Disposición 2/2023 itself, the 'Ley simple' page being only an explainer). Download limits (BACKFILL step 4) applied: curl --max-time 60, gazette searches instead of bulk downloads. R4 was stopped at its 45-minute limit at the maintainer's request: Tucumán, Entre Ríos, Chubut and Misiones not reached; Mendoza partial (Senate site 403, gazette has no keyword search); Córdoba, Neuquén, San Luis, Río Negro and Salta partial (mainly judiciary acordadas and one executive act each). These are listed as leads. R4 and R5 both found three Buenos Aires City instruments (Res. 58/SECITD/26 AI plan, Disp. 25/DGESM/25 schools AI framework, Res. Pres. 206/CMCABA/25 judiciary AI guide); the records for the legal acts were kept and the duplicate document records dropped. Convention 108: Argentina's approval law Ley 27.483 (2019) was found, so the COE Convention 108 record was created with Argentina in applies_to (PROTOCOL §2b). Located-only (1): Buenos Aires City Res. 1166/MEDGC/26 (city bulletin unreachable). senado.gob.ar blocked; HCDN's project database used for bill status. InfoLEG requires a Firefox user agent. standards: no IRAM adoption of ISO/IEC AI standards confirmed. index-readiness: no government-published AI readiness index."
   },
   "changes": [
+    {
+      "id": "c-d7b8b71db54b",
+      "date": "2026-10-19",
+      "recorded": "2026-10-19",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "ARG",
+      "instrument_id": "i-220580711ba6",
+      "title": "Resolution SC 1719/26 publishing the draft Regulation for the development and responsible use of AI of the Supreme Court of Justice of the Province of Buenos Aires",
+      "detail": "Record updated: lifecycle.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
     {
       "id": "c-41834696faa0",
       "date": "2026-10-11",

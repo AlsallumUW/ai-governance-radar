@@ -7,6 +7,7 @@ Called from build.py: pages.write_all(D, recs, out_dir, flags) writes
 Charts are rendered here as static SVG (no JavaScript needed to read them); country.js adds
 sorting, filters, chart/table toggles, tooltips and the per-country export.
 """
+from urllib.parse import urlparse
 import collections, datetime as dt, html, json, os, re, shutil
 from common import ROOT
 import geo
@@ -27,7 +28,7 @@ TYPE_OF = {"binding_law": "law", "binding_regulation": "regulation", "internatio
            "regulatory_opinion": "guidance", "voluntary_code": "guidance", "national_strategy": "strategy", "consultation_draft": "draft"}
 TYPES = [("law", "Law"), ("regulation", "Regulation"), ("treaty", "Treaty"), ("mandatory", "Mandatory policy"), ("guidance", "Guidance & opinions"),
          ("strategy", "Strategy"), ("draft", "Draft / consultation")]
-LIFE = {"draft": "Draft", "consultation": "In consultation", "published": "Published", "adopted": "Adopted", "in_force": "In force",
+LIFE = {"draft": "Draft", "consultation": "In consultation", "consultation_closed": "Consultation closed", "published": "Published", "adopted": "Adopted", "in_force": "In force",
         "superseded": "Superseded", "repealed": "Repealed"}
 VERIFY = {"reviewed_primary_metadata": "Reviewed against the official text", "primary_source_located": "Official source located; text not fully reviewed"}
 EVENT = {"published": "Published", "revised": "Revised", "consultation": "Consultation", "adopted": "Adopted", "applied": "Applies / in force",
@@ -240,10 +241,52 @@ def inst_titles(i, title, orig):
     return h
 
 
+OWNER_CONFIRMED = re.compile(r"(?:[Dd]etails|[Dd]ate|[Dd]etail) confirmed by Faisal, (\d{4}-\d{2}-\d{2})")
+
+
+def check_line(i):
+    """One plain line under a document saying what it was checked against (the research notes in evidence_reference
+    stay in the data and the exports, not on the page)."""
+    m = OWNER_CONFIRMED.search(i.get("evidence_reference") or "")
+    if m: return f'<p class="inst-check">{e(i18n.T("Confirmed from the official document, {date}", date=fmt_date(m.group(1))))}</p>'
+    url = i.get("source_url") or i.get("official_pdf_url") or ""
+    host = re.sub(r"^www\.", "", urlparse(url).hostname or "")
+    if not host or not i.get("verification_date"): return ""
+    pdf = urlparse(url).path.lower().endswith(".pdf") or (i.get("official_pdf_url") or "") == url
+    tpl = "Checked against the official PDF on {domain}, {date}" if pdf else "Checked against the official page on {domain}, {date}"
+    return f'<p class="inst-check">{e(i18n.T(tpl, domain=host, date=fmt_date(i["verification_date"])))}</p>'
+
+
+_AR_ISSUERS = None
+
+
+def _bare(name):
+    """A body's name without a trailing acronym in brackets: "Central Bank of the UAE (CBUAE)" -> "Central Bank of the UAE"."""
+    return re.sub(r"\s*\([^()]*\)\s*$", "", name or "").strip()
+
+
+def ar_issuer(name):
+    """Arabic pages: an issuing body's Arabic name where the site has one (each country's translated lead institutions, the
+    same source as the map panel and the Updates rows); otherwise the name as published."""
+    global _AR_ISSUERS
+    if i18n.LANG != "ar" or not name: return name
+    if _AR_ISSUERS is None:
+        from common import jurisdiction_files, load
+        _AR_ISSUERS = {}
+        for f in jurisdiction_files():
+            r = load(f); en = list((r.get("narrative") or {}).get("lead_institutions") or [])
+            ar = i18n.content(r["jurisdiction"]["id"], "lead_institutions", en) if en else None
+            if isinstance(ar, list) and len(ar) == len(en):
+                for a, b in zip(en, ar):
+                    if a and b:
+                        _AR_ISSUERS.setdefault(a.strip(), b.strip()); _AR_ISSUERS.setdefault(_bare(a), b.strip())
+    return _AR_ISSUERS.get(name.strip()) or _AR_ISSUERS.get(_bare(name)) or name
+
+
 def inst_item(i, orgs, srcs, cats, regional_from=None):
     title = i.get("english_title") or i.get("official_title")
     orig = i.get("official_title") if i.get("official_title") and i.get("official_title") != title else None
-    issuer = i.get("issuing_authority") or orgs.get(i.get("organization_id"), {}).get("name") or i.get("publisher_name")
+    issuer = ar_issuer(i.get("issuing_authority") or orgs.get(i.get("organization_id"), {}).get("name") or i.get("publisher_name"))
     st = i.get("legal_status"); src = srcs.get(i.get("source_id"), {})
     dates = []
     if i.get("publication_date"): dates.append(i18n.T("Published {date}", date=f'<time datetime="{e(i["publication_date"])}">{e(fmt_date(i["publication_date"]))}</time>'))
@@ -270,7 +313,7 @@ def inst_item(i, orgs, srcs, cats, regional_from=None):
             + (f'<p class="inst-status"{ar_attr(st_ar)}>{e(st_ar or i.get("current_status"))}</p>' if i.get("current_status") else "")
             + f'<p class="inst-foot">{" · ".join(links)}<span class="verify v-{e(vl)}">{e(VERIFY.get(vl, vl or "Verification not recorded"))}</span>'
             + (f'<span class="inst-cats">{e(catnames)}</span>' if catnames else "") + '</p>'
-            + (f'<details class="src-notes"><summary>Source notes</summary><p lang="en" dir="ltr">{e(i["evidence_reference"])}</p></details>' if i.get("evidence_reference") else "")
+            + check_line(i)
             + '</article>')
 
 
@@ -432,7 +475,7 @@ def country_page(j, D, rec, flags, ctx):
     status_svg, status_tab = chart_status(rows_all)
     cov_html, cov_counts = coverage_grid(cats, audit, rows_all)
     today = ctx["today"]
-    pipe_drafts = sorted([i for i in rows_all if i.get("legal_status") == "consultation_draft" or i.get("lifecycle") in ("consultation", "draft")],
+    pipe_drafts = sorted([i for i in rows_all if i.get("legal_status") == "consultation_draft" or i.get("lifecycle") in ("consultation", "consultation_closed", "draft")],
                          key=lambda i: date_key(i.get("publication_date")), reverse=True)
     inst_by_id = {i["id"]: i for i in rows_all}
     future = sorted([c for c in D["changes"] if c.get("jurisdiction_id") == jid and c.get("kind") == "world" and (c.get("date") or "") > today],
@@ -457,7 +500,8 @@ def country_page(j, D, rec, flags, ctx):
     hero_img = ph.get("hero")
     H = [head(title, desc, canon, preload=hero_img), f'<body class="cp" data-jid="{e(jid)}" data-build="{e(D["meta"].get("build_date") or "")}">',
          topbar(secs, bar_ident(j["name"], stats)), '<main id="main">']
-    eyebrow = e(j.get("region") or "") + (' · Country profile' if j.get("region") else 'Country profile')
+    reg = SUBREGION.get(jid) or j.get("region") or ""   # UN M49 subregion, e.g. "Western Asia"
+    eyebrow = e(reg) + (' · Country profile' if reg else 'Country profile')
     h1 = f'<h1>{"<img class=flag src=" + chr(34) + flag + chr(34) + " alt=" + chr(34) + chr(34) + ">" if flag else ""}{e(j["name"])}</h1>'
     H.append(hero(eyebrow, h1, stats, photo=hero_img, art=None if hero_img else geo.silhouette(jid, j["name"]), info=count_info()))
     H.append('<div class="page layout">' + rail(secs, geo.locator(jid, j["name"])) + '<div class="content">')
@@ -558,7 +602,7 @@ def leads_section(leads):
     return (f'<section id="leads" class="block"><details class="leads"><summary><h2>Leads — not yet verified as in-scope instruments <span class="count">{len(leads)}</span></h2></summary>'
             '<p class="section-lede">Documents found during research that are not recorded as instruments: no official text could be read, no stated date, still pending, or outside the scope test.</p><ul class="lead-list">'
             + "".join(f'<li><strong>{e(l.get("english_title") or l.get("title"))}</strong>' + (f'<span class="inst-orig" dir="auto">{e(l.get("title"))}</span>' if l.get("english_title") and l.get("english_title") != l.get("title") else "")
-                      + (f'<span class="inst-meta">{e(l.get("issuing_authority"))}</span>' if l.get("issuing_authority") else "") + (f'<span class="lead-note">{e(l.get("note"))}</span>' if l.get("note") else "") + '</li>' for l in leads)
+                      + (f'<span class="inst-meta">{e(l.get("issuing_authority"))}</span>' if l.get("issuing_authority") else "") + '</li>' for l in leads)
             + '</ul></details></section>')
 
 
@@ -607,10 +651,9 @@ def body_page(b, D, rec, flags, ctx):
     if members:
         H.append(f'<section id="members" class="block"><h2>Member states <span class="count">{len(members)}</span></h2><p class="member-grid">'
                  + "".join(f'<a class="chip" href="../../country/{c}/">{e(ctx["jur"].get(c, {}).get("name", c))}</a>' for c in members) + '</p>'
-                 + (f'<p class="section-lede">{e((rec.get("members_source") or {}).get("comment"))}</p>' if rec.get("members_source") else "") + '</section>')
+                  + '</section>')
     if leads: H.append(leads_section(leads))
     H.append('<section id="method" class="block prose method"><h2>Method note</h2>' + (f'<p{ar_attr(bnotes_ar)}>{e(bnotes_ar or narr.get("review_notes"))}{i18n.orig_link("method") if bnotes_ar else ""}</p>' if narr.get("review_notes") else "")
-             + (f'<p>{e(rec.get("membership_note"))}</p>' if rec.get("membership_note") else "")
              + '<p>Only official sources are recorded. <a href="../../?about=method" data-keep-query>Read the full methodology</a>.</p>'
              '<p class="export"><span>Download this profile:</span><button type="button" class="btn" data-export="csv">CSV</button><button type="button" class="btn" data-export="json">JSON</button></p></section>')
     bundle = {"meta": {"title": D["meta"].get("title"), "build_date": D["meta"].get("build_date"), "export": "single jurisdiction", "jurisdiction_id": bid, "url": canon},
@@ -621,7 +664,7 @@ def body_page(b, D, rec, flags, ctx):
 
 
 def footer(D, up="../../"):
-    return (f'<footer class="pagefoot"><p>AI Governance Radar · official government sources only · data as of {e(fmt_date(D["meta"].get("build_date")))}</p>'
+    return (f'<footer class="pagefoot"><p>AI Governance Radar · Prepared by Faisal Alsallum · Data as of {e(fmt_date(D["meta"].get("build_date")))}</p>'
             f'<p><a href="{up}" id="footMap">World map</a> · <a href="{up}analysis/">Analysis</a> · <a href="{up}timeline/">Timeline</a> · <a href="{up}suggest/">Suggest an update</a> · <a href="{up}?about=method">Methodology</a> · <a href="{up}credits/">Photo credits</a></p></footer>')
 
 
