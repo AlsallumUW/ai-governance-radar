@@ -10,13 +10,13 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": "Guinea has no AI-specific law or published AI strategy. Its only binding text is the 2016 law on cybersecurity and personal data protection, whose Article 27 limits decisions based solely on automated profiling. A national AI roadmap for 2026-2035 was reportedly validated in December 2025 with UNDP support, but the digital ministry's website could not be accessed during this review and no official text was found.",
+    "summary": "Guinea has no AI-specific law or published AI strategy. Its only binding text with an AI-relevant rule is the 2016 law on cybersecurity and personal data protection, whose Article 27 limits decisions based solely on automated profiling. A national AI roadmap for 2026-2035 was reportedly validated in December 2025 with UNDP support, and a national AI strategy has been announced, but no official text of either has been published on reachable government sites. The Simandou 2040 development plan laws adopted in March 2026 cover digital infrastructure but contain no AI provisions. The digital ministry leads AI policy work, with the information systems security agency (ANSSI) responsible for cybersecurity.",
     "lead_institutions": [
       "Ministry of Posts, Telecommunications and Digital Economy",
       "National Agency for Information Systems Security (ANSSI)"
     ],
     "last_deep_review": "2026-10-12",
-    "review_notes": "This review was carried out on 12 October 2026, but the digital ministry, National Assembly and data protection authority websites could not be accessed, so only one document could be read. The national AI roadmap is listed as a lead. Guinea is marked for a later retry."
+    "review_notes": "Reviewed again on 18 October 2026: the Official Journal, the Secretariat-General of Government (laws, decrees, texts open for comment, Council of Ministers reports), the Presidency, the Prime Minister's office, the government portal, the cybersecurity agency and the central bank were searched, but the digital ministry, National Assembly, telecom regulator and data protection authority websites could not be accessed. The national AI roadmap 2026-2035, the planned AI strategy and the data strategy remain leads pending official publication."
   },
   "instruments": [
     {
@@ -64,14 +64,14 @@
         "Journal Officiel publication reference not located (scanned gazette issues not searchable)"
       ],
       "language": "fr",
-      "verification_date": "2026-10-12",
+      "verification_date": "2026-10-18",
       "first_recorded": "2026-10-12",
       "last_changed": null,
       "verification_level": "reviewed_primary_metadata",
       "link_status": "reachable",
       "document_access_type": "original_government_document",
       "source_id": "s-7f2d7c8b3e5b",
-      "evidence_reference": "curl (browser user agent, --max-time 60): 57-page scanned PDF downloaded from the ANSSI 'Lois' page (no text layer); pages 1, 40-47 and 56-57 rendered to images and read: title page, Article 27 (automated decisions), Articles 63-65 and promulgation signature 'Conakry, le 26 JUIL. 2016' (Prof. Alpha Condé)"
+      "evidence_reference": "curl (browser user agent, --max-time 60): 57-page scanned PDF downloaded from the ANSSI 'Lois' page (no text layer); pages 1, 40-47 and 56-57 rendered to images and read: title page, Article 27 (automated decisions), Articles 63-65 and promulgation signature 'Conakry, le 26 JUIL. 2016' (Prof. Alpha Condé); local-retry-2026-10-18: ANSSI law page and PDF link re-opened via curl (HTTP 200), download link to the same PDF confirmed; fields unchanged"
     }
   ],
   "organizations": [
@@ -104,8 +104,8 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): 57-page scanned PDF downloaded from the ANSSI 'Lois' page (no text layer); pages 1, 40-47 and 56-57 rendered to images and read: title page, Article 27 (automated decisions), Articles 63-65 and promulgation signature 'Conakry, le 26 JUIL. 2016' (Prof. Alpha Condé)",
+      "checked_date": "2026-10-18",
+      "check_method": "local-retry-2026-10-18: curl (Chrome user agent) opened the ANSSI law page (HTTP 200) listing this PDF as the download; PDF previously read as page images (title page, Art. 27, Arts. 63-65, signature page)",
       "http_status": 200,
       "final_url": "https://anssi.gov.gn/wp-content/uploads/2025/03/loi_l2016037an_relative_a_la_cybersecurite_et_protection_des_do.pdf",
       "link_status": "reachable",
@@ -167,9 +167,13 @@
       "Guinée Conseil des ministres projet de loi intelligence artificielle OR \"protection des données\" 2025 2026",
       "Guinea \"Stratégie nationale de cybersécurité\" OR \"politique nationale du numérique\" numérique intelligence artificielle gov.gn",
       "site search 'intelligence artificielle': gouvernement.gov.gn, presidence.gov.gn, cnt.gov.gn, arpt.gov.gn, bcrg-guinee.org, anssi.gov.gn",
-      "sgg.gov.gn lois/décrets listings and journal-officiel.sgg.gov.gn index (browsed, no full-text search)"
+      "sgg.gov.gn lois/décrets listings and journal-officiel.sgg.gov.gn index (browsed, no full-text search)",
+      "local retry 2026-10-18: Guinée ministère des postes télécommunications économie numérique feuille de route intelligence artificielle 2026-2035 (discovery only)",
+      "local retry 2026-10-18: Guinée \"intelligence artificielle\" site:gov.gn (discovery only)",
+      "site search 'intelligence artificielle' 2026-10-18: presidence.gov.gn, primature.gov.gn, gouvernement.gov.gn, anssi.gov.gn, bcrg-guinee.org",
+      "sgg.gov.gn listings 2026-10-18: lois, décrets, projets de textes à commenter; journal-officiel.sgg.gov.gn latest JO and Council of Ministers reports (Nov 2025 - Sept 2026) scanned for 'intelligence artificielle'"
     ],
-    "review_date": "2026-10-12",
+    "review_date": "2026-10-18",
     "passes": {
       "institutions": "COMPLETE",
       "legislation": "COMPLETE",
@@ -186,10 +190,10 @@
       "regional_inheritance": "COMPLETE",
       "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "The Official Journal listings (scanned issues with no full-text search), the legislature's site, the cybersecurity agency's laws page, the Presidency, the government portal, ministries and regulators were searched at national level. No qualifying AI-governance document was found for strategies, government AI bodies, ethics, risk and assurance, public-sector rules, procurement, cybersecurity, transparency, standards, sandboxes, readiness indices, sector rules, generative AI, drafts and consultations, international agreements, or past instruments. The digital ministry, National Assembly and data protection authority sites were unavailable, and the national AI roadmap 2026-2035 has no published official text, so it remains a lead to check later.",
+    "no_material_found_note": "The Official Journal, the government's legislation and draft-text listings, Council of Ministers reports, the Presidency, the Prime Minister's office, the cybersecurity agency and the central bank were searched at national level, and no AI-specific document was found in any category other than data protection. The digital ministry, National Assembly, telecom regulator and data protection authority sites could not be accessed. The national AI roadmap 2026-2035 has no published official text and remains a lead.",
     "discovery_result_count": 12,
     "focused_result_count": 10,
-    "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. mpten.gov.gn proxy 502/DNS failure; assemblee.gov.gn and apdp.gov.gn proxy 502. sgg.gov.gn Journal officiel has no full-text search (scans). Law L/2016/037/AN read from the ANSSI scan as images (date from the signature page). ANSSI also hosts Decree D/2017/184/PRG/SGG ratifying the AU Malabo Convention (regional layer; not recorded). Not a party to Convention 108. Units covered: Law: Journal officiel/SGG portal (sgg.gov.gn, journal-officiel.sgg.gov.gn: listings only, scanned issues, no full-text search) and CNT site searched; ANSSI laws page gave the signed text of Law L/2016/037/AN (data protection incl. Art. 27 automated decisions). No AI-specific law, deepfake offence or AI bill found.; Government: Presidency and government portal searched: AI items are news only. National AI roadmap 2026-2035 (reported validated Dec 2025) and planned AI strategy and data strategy have no published official text -> leads.; Ministries: Digital ministry (mpten.gov.gn) unreachable by curl and WebFetch; no education, health, justice, defence, finance, labour or interior AI documents found.; Regulators: ANSSI (cyber), ARPT (telecom: AI staff-training news only), BCRG (central bank: no AI document) searched; the personal data protection authority has no reachable website. Searched, nothing AI-specific found.. Not reached: Ministry of Posts, Telecommunications and the Digital Economy website (mpten.gov.gn: DNS/proxy failure for curl and WebFetch); National Assembly site (assemblee.gov.gn: proxy 502); Data protection authority (apdp.gov.gn: proxy 502). Could not verify: National AI roadmap 2026-2035 (ministry site unreachable; only press reports). strategy, government-governance, ethics, risk-assurance, public-sector, procurement, cyber-security, transparency, standards, sandbox, index-readiness, sectoral, generative-ai, drafts, international, historical: no material found."
+    "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. mpten.gov.gn proxy 502/DNS failure; assemblee.gov.gn and apdp.gov.gn proxy 502. sgg.gov.gn Journal officiel has no full-text search (scans). Law L/2016/037/AN read from the ANSSI scan as images (date from the signature page). ANSSI also hosts Decree D/2017/184/PRG/SGG ratifying the AU Malabo Convention (regional layer; not recorded). Not a party to Convention 108. Units covered: Law: Journal officiel/SGG portal (sgg.gov.gn, journal-officiel.sgg.gov.gn: listings only, scanned issues, no full-text search) and CNT site searched; ANSSI laws page gave the signed text of Law L/2016/037/AN (data protection incl. Art. 27 automated decisions). No AI-specific law, deepfake offence or AI bill found.; Government: Presidency and government portal searched: AI items are news only. National AI roadmap 2026-2035 (reported validated Dec 2025) and planned AI strategy and data strategy have no published official text -> leads.; Ministries: Digital ministry (mpten.gov.gn) unreachable by curl and WebFetch; no education, health, justice, defence, finance, labour or interior AI documents found.; Regulators: ANSSI (cyber), ARPT (telecom: AI staff-training news only), BCRG (central bank: no AI document) searched; the personal data protection authority has no reachable website. Searched, nothing AI-specific found.. Not reached: Ministry of Posts, Telecommunications and the Digital Economy website (mpten.gov.gn: DNS/proxy failure for curl and WebFetch); National Assembly site (assemblee.gov.gn: proxy 502); Data protection authority (apdp.gov.gn: proxy 502). Could not verify: National AI roadmap 2026-2035 (ministry site unreachable; only press reports). strategy, government-governance, ethics, risk-assurance, public-sector, procurement, cyber-security, transparency, standards, sandbox, index-readiness, sectoral, generative-ai, drafts, international, historical: no material found. Local retry 2026-10-18 (home connection, Saudi Arabia, ~20 min): still failing - mpten.gov.gn (DNS not resolved, curl and headless Edge, http and https, www and bare; domain confirmed by link on sgg.gov.gn), assemblee.gov.gn (connection refused on 80/443), apdp.gov.gn and arpt.gov.gn (DNS not resolved), cnt.gov.gn (HTTP 200 but maintenance page). Opened: sgg.gov.gn (lois, décrets, textecom listings; Simandou 2040 laws downloadfile/572 and /573 read, no AI text; decree 0301 of 06 Oct 2026 on ministry attributions downloadfile/590 is a 33-page scan without text layer, not read), journal-officiel.sgg.gov.gn (home + 6 Council of Ministers reports 13/11/2025-03/09/2026 text-searched, no AI mention; one needed headless Edge after curl reset), presidence.gov.gn, primature.gov.gn, gouvernement.gov.gn search (news only: Oct 2026 SGG forum on AI), anssi.gov.gn search (0 results) and law page (HTTP 200), bcrg-guinee.org search (no AI document). No new instruments. Possible follow-up: OCR decree 0301 for digital ministry AI attributions (likely lead only)."
   },
   "changes": [
     {
@@ -243,21 +247,21 @@
       "title": "Feuille de route nationale de l'intelligence artificielle 2026-2035",
       "english_title": "National Artificial Intelligence Roadmap 2026-2035",
       "issuing_authority": "Ministry of Posts, Telecommunications and the Digital Economy",
-      "note": "Reported validated on 20 December 2025 after a workshop with UNDP, building on the October 2025 AI Landscape Assessment (AILA). No official full text found; the ministry website (mpten.gov.gn) could not be reached. Promote once the ministry publishes the document.",
+      "note": "Reported validated on 20 December 2025 after a workshop with UNDP, building on the October 2025 AI Landscape Assessment (AILA). Checked again on 2026-10-18: the ministry website still could not be reached, and no official text was found on the government, Presidency, Prime Minister's, Official Journal or Secretariat-General of Government sites. Promote once the ministry publishes the document.",
       "found": "2026-10-12"
     },
     {
       "title": "Stratégie nationale d'intelligence artificielle (en préparation)",
       "english_title": "National Artificial Intelligence Strategy (in preparation)",
       "issuing_authority": "Ministry of Posts, Telecommunications and the Digital Economy",
-      "note": "The ministry announced in October 2025 that a national AI strategy (ethics, data protection and algorithmic accountability framework, skills) would follow the AILA assessment. No document published.",
+      "note": "The ministry announced in October 2025 that a national AI strategy (ethics, data protection and algorithmic accountability framework, skills) would follow the AILA assessment. Checked again on 2026-10-18: no document published on any reachable official site.",
       "found": "2026-10-12"
     },
     {
       "title": "Stratégie nationale des données (en préparation)",
       "english_title": "National Data Strategy (in preparation)",
       "issuing_authority": "Government of Guinea",
-      "note": "Reported to be in preparation, linked to Simandou 2040 and covering AI and data-economy uses. No official document found.",
+      "note": "Reported to be in preparation, linked to Simandou 2040 and covering AI and data-economy uses. Checked on 2026-10-18: the Simandou 2040 plan law and the Simandou 2026-2030 programme law (L/2026/004/CNT and L/2026/005, 5 March 2026, Official Journal) were read and contain no AI provision; no data strategy published.",
       "found": "2026-10-12"
     }
   ]
