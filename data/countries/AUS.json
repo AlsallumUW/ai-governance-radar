@@ -1028,7 +1028,7 @@
         "Retried 2026-10-11 with WebFetch and curl: WebFetch returned HTTP 503 for the industry.gov.au page(s); curl with a browser user agent got a reset HTTP/2 stream, then a timeout over HTTP/1.1; text still not read"
       ],
       "source_kind": "official_publication",
-      "evidence_reference": "aus-deep-review-A2-2026-10-11. Link note: As of 17 October 2026 the official page did not open (timeout or refused); a copy is hosted on the OECD.AI policy observatory (https://wp.oecd.ai/app/uploads/2021/12/Australia_AI_Action_Plan_2021.pdf), which the radar does not use as a source.",
+      "evidence_reference": "aus-deep-review-A2-2026-10-11. Link note: As of 18 October 2026 (checked with curl with a browser user agent from a connection in Saudi Arabia and a desktop browser) the department site returns an access-denied page; no other official copy was found.",
       "link_status": "inaccessible",
       "document_access_type": "official_publication_or_full_text_page",
       "source_id": "s-ce58a58630f2",
@@ -4362,7 +4362,7 @@
         "Retried 2026-10-11 with WebFetch and curl: Act PDF/HTML, commencement proclamation sl-2025-630 and the NSW Parliament bill page all returned HTTP 403 (bot challenge) to both WebFetch and curl; no event added."
       ],
       "source_kind": "legislation_portal",
-      "evidence_reference": "aus-deep-review-A4-2026-10-11. Link note: As of 17 October 2026 the official page refuses automated access (HTTP 403, bot check); no other official copy was found. The NSW Parliament site is blocked the same way.",
+      "evidence_reference": "aus-deep-review-A4-2026-10-11. Link note: As of 18 October 2026 (checked with curl with a browser user agent from a connection in Saudi Arabia and a desktop browser) the NSW legislation site opens but the PDF could not be retrieved; no other official copy was found.",
       "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "source_id": "s-5a1bb5009976",
@@ -4925,7 +4925,7 @@
         "Retried 2026-10-11 with WebFetch and curl: statement PDF, accessible DOCX and djsir page returned HTTP 403 (bot challenge) to WebFetch and curl."
       ],
       "source_kind": "official_document",
-      "evidence_reference": "aus-deep-review-A4-2026-10-11. Status note: djsir.vic.gov.au returned HTTP 403 to automated access. Link note: As of 17 October 2026 the official page refuses automated access (HTTP 403, bot check); no other official copy was found.",
+      "evidence_reference": "aus-deep-review-A4-2026-10-11. Status note: djsir.vic.gov.au returned HTTP 403 to automated access. Link note: As of 18 October 2026 (checked with curl with a browser user agent from a connection in Saudi Arabia and a desktop browser) the department site opens but the PDF could not be retrieved; no other official copy was found.",
       "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "source_id": "s-827bd643eca8",
@@ -5546,7 +5546,7 @@
         "Retried 2026-10-11 with WebFetch and curl: Act PDF and RTF on legislation.sa.gov.au and the SA Government Gazette site returned HTTP 403 (bot challenge) to WebFetch and curl; commencement still unverified; no event added."
       ],
       "source_kind": "legislation_portal",
-      "evidence_reference": "aus-deep-review-A4-2026-10-11. Link note: As of 17 October 2026 the official page refuses automated access (HTTP 403, bot check); no other official copy was found.",
+      "evidence_reference": "aus-deep-review-A4-2026-10-11. Link note: As of 18 October 2026 (checked with curl with a browser user agent from a connection in Saudi Arabia and a desktop browser) the South Australian legislation site resets the connection; no other official copy was found.",
       "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "source_id": "s-25f967dcd10e",
@@ -5599,7 +5599,7 @@
         "Retried 2026-10-11 with WebFetch and curl: guidance PDF (both dpac.tas.gov.au paths), the summary PDF and policies page returned HTTP 403 (bot challenge) to WebFetch and curl; no event added."
       ],
       "source_kind": "official_document",
-      "evidence_reference": "aus-deep-review-A4-2026-10-11. Link note: As of 17 October 2026 the official page refuses automated access (HTTP 403, bot check); no other official copy was found.",
+      "evidence_reference": "aus-deep-review-A4-2026-10-11. Link note: As of 18 October 2026 (checked with curl with a browser user agent from a connection in Saudi Arabia and a desktop browser) the department site opens but the PDF could not be retrieved; no other official copy was found.",
       "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "source_id": "s-13bc06026dde",
@@ -5652,8 +5652,8 @@
         "Retried 2026-10-11 with WebFetch and curl: dcdd.nt.gov.au and digitalterritory.nt.gov.au pages returned HTTP 403 (bot challenge) to WebFetch and curl; no event added."
       ],
       "source_kind": "official_publication",
-      "evidence_reference": "aus-deep-review-A4-2026-10-11. Link note: As of 17 October 2026 the official page refuses automated access (HTTP 403, bot check); no other official copy was found. The Digital Territory copy is blocked the same way.",
-      "link_status": "inaccessible",
+      "evidence_reference": "aus-deep-review-A4-2026-10-11.",
+      "link_status": "reachable",
       "document_access_type": "original_government_document",
       "source_id": "s-d79d8bbd35ff",
       "organization_id": "o-b8c1991e6819",
@@ -6852,7 +6852,7 @@
         "strategy"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-17",
+      "checked_date": "2026-10-18",
       "check_method": "Full text read through a text-rendering fetch of the official URL (direct automated requests to this host time out); official page metadata checked",
       "http_status": null,
       "final_url": null,
@@ -8556,7 +8556,7 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
+      "checked_date": "2026-10-18",
       "check_method": "GET (curl) and fetch returned HTTP 403; metadata from search-indexed official text",
       "http_status": 403,
       "final_url": "https://legislation.nsw.gov.au/view/pdf/asmade/act-2025-57",
@@ -8845,7 +8845,7 @@
         "strategy"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
+      "checked_date": "2026-10-18",
       "check_method": "GET (curl) and fetch returned HTTP 403; official media release PDF on premier.vic.gov.au read",
       "http_status": 403,
       "final_url": "https://djsir.vic.gov.au/__data/assets/pdf_file/0004/2454124/The-Victorian-Governments-AI-Mission-Statement.pdf",
@@ -9136,7 +9136,7 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
+      "checked_date": "2026-10-18",
       "check_method": "GET (curl) and fetch returned HTTP 403; metadata from search-indexed official text",
       "http_status": 403,
       "final_url": "https://www.legislation.sa.gov.au/_legislation-documents/lz/v/a/2025/summary-offences-humiliating-degrading-or-invasive-depictions-amendment-act-2025_19/2025.19.un.pdf",
@@ -9163,7 +9163,7 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
+      "checked_date": "2026-10-18",
       "check_method": "GET (curl) and fetch returned HTTP 403; metadata from search-indexed official text",
       "http_status": 403,
       "final_url": "https://www.dpac.tas.gov.au/__data/assets/pdf_file/0022/420466/FINAL-Guidance-for-AI-v1.4.pdf",
@@ -9190,14 +9190,14 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "GET (curl) and fetch returned HTTP 403; metadata from search-indexed official pages",
-      "http_status": 403,
+      "checked_date": "2026-10-18",
+      "check_method": "desktop browser from a connection in Saudi Arabia",
+      "http_status": 200,
       "final_url": "https://dcdd.nt.gov.au/publications/artificial-intelligence-assurance-framework",
-      "link_status": "inaccessible",
+      "link_status": "reachable",
       "page_title": "Artificial Intelligence Assurance Framework | Department of Corporate and Digital Development",
       "document_language": "en",
-      "error": "HTTP 403 (bot challenge) from dcdd.nt.gov.au and digitalterritory.nt.gov.au"
+      "error": null
     },
     {
       "id": "s-247a95559b30",

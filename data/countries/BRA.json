@@ -1762,8 +1762,8 @@
         "Exact article numbers and wording"
       ],
       "source_kind": "legislation_portal",
-      "evidence_reference": "bra-deep-review-B3-2026-10-11. Status note: Official TSE pages could not be opened (HTTP 403 to curl and WebFetch). The regional court acts cite Resolução TSE nº 23.610/2019 'com as alterações das Resoluções TSE nº 23.732/2024 e nº 23.755/2026'. Summary note: Detailed provisions (arts. 9º-B to 9º-D of the consolidated resolution) were not verified against the official text. Link note: As of 17 October 2026 the official page refuses automated access (HTTP 403); no other official copy was found. The TSE and regional electoral court sites are all blocked.",
-      "link_status": "inaccessible",
+      "evidence_reference": "bra-deep-review-B3-2026-10-11. Status note: Official TSE pages could not be opened (HTTP 403 to curl and WebFetch). The regional court acts cite Resolução TSE nº 23.610/2019 'com as alterações das Resoluções TSE nº 23.732/2024 e nº 23.755/2026'. Summary note: Detailed provisions (arts. 9º-B to 9º-D of the consolidated resolution) were not verified against the official text.",
+      "link_status": "reachable",
       "document_access_type": "official_publication_or_full_text_page",
       "source_id": "s-86d9177a8b98",
       "organization_id": "o-c143c9fb5db0",
@@ -1818,8 +1818,8 @@
         "Provisions"
       ],
       "source_kind": "official_document",
-      "evidence_reference": "bra-deep-review-B3-2026-10-11. Status note: Official TSE pages could not be opened (HTTP 403). Summary note: The TSE public communication was not verified against the text. Provisions must be checked against the official text. Link note: As of 17 October 2026 the official page refuses automated access (HTTP 403); no other official copy was found. The TSE and regional electoral court sites are all blocked.",
-      "link_status": "inaccessible",
+      "evidence_reference": "bra-deep-review-B3-2026-10-11. Status note: Official TSE pages could not be opened (HTTP 403). Summary note: The TSE public communication was not verified against the text. Provisions must be checked against the official text.",
+      "link_status": "reachable",
       "document_access_type": "original_government_document",
       "source_id": "s-46da0f9be713",
       "organization_id": "o-c143c9fb5db0",
@@ -3560,7 +3560,7 @@
         "Effective date not verified."
       ],
       "source_kind": "legislation_portal",
-      "evidence_reference": "bra-deep-review-B5-2026-10-11. Link note: As of 17 October 2026 the official site could not be reached (connection timed out); no other official copy was found.",
+      "evidence_reference": "bra-deep-review-B5-2026-10-11. Link note: As of 18 October 2026 (checked with curl with a browser user agent from a connection in Saudi Arabia and a desktop browser) the Rio de Janeiro city council site cannot be reached; no other official copy was found.",
       "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "source_id": "s-52cf8fc44867",
@@ -6066,14 +6066,14 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl GET with browser user agent: HTTP 403; WebFetch: HTTP 403; also tre-sp.jus.br HTTP 403",
-      "http_status": 403,
+      "checked_date": "2026-10-18",
+      "check_method": "desktop browser from a connection in Saudi Arabia",
+      "http_status": 200,
       "final_url": "https://www.tse.jus.br/legislacao/compilada/res/2024/resolucao-no-23-732-de-27-de-fevereiro-de-2024",
-      "link_status": "inaccessible",
+      "link_status": "reachable",
       "page_title": null,
       "document_language": "pt",
-      "error": "HTTP 403 (access blocked for automated clients)",
+      "error": null,
       "content_type": "text/html"
     },
     {
@@ -6095,14 +6095,14 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl GET with browser user agent: HTTP 403; WebFetch: HTTP 403",
-      "http_status": 403,
+      "checked_date": "2026-10-18",
+      "check_method": "desktop browser from a connection in Saudi Arabia",
+      "http_status": 200,
       "final_url": "https://www.tse.jus.br/eleicoes/eleicoes-2026-content/normas-e-documentacoes/arquivos-2026/resolucao-e-voto-propaganda",
-      "link_status": "inaccessible",
+      "link_status": "reachable",
       "page_title": null,
       "document_language": "pt",
-      "error": "HTTP 403 (access blocked for automated clients)",
+      "error": null,
       "content_type": "text/html"
     },
     {
@@ -7049,7 +7049,7 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
+      "checked_date": "2026-10-18",
       "check_method": "Câmara Municipal legislation page tried with curl (TLS connection reset), curl with a browser user agent over http (HTTP 503) and WebFetch (HTTP 503). Law number, date and quoted articles read in the GT-6 report PDF on lgpd.prefeitura.rio; veto of PL 2970/2024 read in D.O. Rio 5 May 2025, p. 7.",
       "http_status": 503,
       "final_url": "https://aplicnt.camara.rj.gov.br/APL/Legislativos/contlei.nsf/c5e78996b82f9e0303257960005fdc93/173bf9c68e23e98d03258c9f0064342b?OpenDocument",

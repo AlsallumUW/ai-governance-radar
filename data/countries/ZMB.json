@@ -74,9 +74,9 @@
       "publisher_name": "Ministry of Technology and Science",
       "category": "strategy",
       "verification_level": "primary_source_located",
-      "link_status": "inaccessible",
+      "link_status": "reachable",
       "source_id": "s-95f0c15a1849",
-      "evidence_reference": "curl (browser user agent, --max-time 60) failed TLS certificate verification on www.mots.gov.zm and WebFetch returned HTTP 503, so the ministry page was not read; the URL is the ministry page cited for the strategy by secondary discovery sources. Content and fields were checked against a 60-page copy of the ministry's document found through a discovery aid (not used as the source). Link note: As of 17 October 2026 the Ministry of Technology and Science (mots.gov.zm) site cannot be reached (connection timeout / HTTP 503); no other official copy was found."
+      "evidence_reference": "curl (browser user agent, --max-time 60) failed TLS certificate verification on www.mots.gov.zm and WebFetch returned HTTP 503, so the ministry page was not read; the URL is the ministry page cited for the strategy by secondary discovery sources. Content and fields were checked against a 60-page copy of the ministry's document found through a discovery aid (not used as the source)."
     },
     {
       "authority_type": "legislature",
@@ -129,9 +129,9 @@
       "publisher_name": "National Assembly of Zambia",
       "category": "data-privacy",
       "verification_level": "primary_source_located",
-      "link_status": "inaccessible",
+      "link_status": "reachable",
       "source_id": "s-8050195f38b8",
-      "evidence_reference": "curl (browser user agent, --max-time 60) failed TLS certificate verification on www.parliament.gov.zm (plain HTTP returned 503) and WebFetch returned HTTP 503, so the National Assembly page was not read. The Act text (No. 3 of 2021, 40 pages, date of assent 23 March 2021, [24th March, 2021]) was read in a copy found through discovery aids; the ZambiaLII legislation record was used for discovery only. Link note: As of 17 October 2026 the Parliament of Zambia (parliament.gov.zm) site cannot be reached (connection timeout / HTTP 503); no other official copy was found."
+      "evidence_reference": "curl (browser user agent, --max-time 60) failed TLS certificate verification on www.parliament.gov.zm (plain HTTP returned 503) and WebFetch returned HTTP 503, so the National Assembly page was not read. The Act text (No. 3 of 2021, 40 pages, date of assent 23 March 2021, [24th March, 2021]) was read in a copy found through discovery aids; the ZambiaLII legislation record was used for discovery only."
     },
     {
       "authority_type": "regulator",
@@ -238,14 +238,14 @@
         "sandbox"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60) failed TLS certificate verification on www.mots.gov.zm and WebFetch returned HTTP 503, so the ministry page was not read; the URL is the ministry page cited for the strategy by secondary discovery sources. Content and fields were checked against a 60-page copy of the ministry's document found through a discovery aid (not used as the source).",
-      "http_status": null,
+      "checked_date": "2026-10-18",
+      "check_method": "curl with a browser user agent from a connection in Saudi Arabia",
+      "http_status": 200,
       "final_url": "https://www.mots.gov.zm/?p=4492",
-      "link_status": "inaccessible",
+      "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
-      "error": "curl: TLS certificate verification failed (unable to get local issuer certificate); WebFetch: HTTP 503",
+      "error": null,
       "content_type": null
     },
     {
@@ -266,14 +266,14 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60) failed TLS certificate verification on www.parliament.gov.zm (plain HTTP returned 503) and WebFetch returned HTTP 503, so the National Assembly page was not read. The Act text (No. 3 of 2021, 40 pages, date of assent 23 March 2021, [24th March, 2021]) was read in a copy found through discovery aids; the ZambiaLII legislation record was used for discovery only.",
-      "http_status": null,
+      "checked_date": "2026-10-18",
+      "check_method": "curl with a browser user agent from a connection in Saudi Arabia",
+      "http_status": 200,
       "final_url": "https://www.parliament.gov.zm/node/8853",
-      "link_status": "inaccessible",
+      "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
-      "error": "curl: TLS certificate verification failed (unable to get local issuer certificate); WebFetch: HTTP 503",
+      "error": null,
       "content_type": null
     },
     {
