@@ -167,3 +167,7 @@ Every country gets the **same standard** (§1–§5): all 18 categories closed, 
 **Changing tiers.** If a tier C country turns out to have 6 or more national instruments, finish it, then move it to B in `queue.json` and say so in the PR. If a tier B country needs a subnational pass or clearly exceeds a run, stop after it, move it to A and list the rest of the batch as not started.
 
 **Working in parallel.** In a run with several countries, each country may be researched by its own sub-agent. Give each one this protocol in full and its country file. The lead researcher then runs `validate.py`, opens at least two `source_url`s per country to spot-check them, and writes the PR.
+
+## 7. Country photos
+
+18. Photos come from Wikimedia Commons under PD, CC0, CC BY or CC BY-SA (licence and author read from the Commons file page), are credited "(cropped and resized)" and show no identifiable people, watermarks, conflict damage, military, police or protests. No politically disputed sites: no Jerusalem sites for Israel; for the State of Palestine, Jerusalem sites are allowed (owner's decision, 19 October 2026). Slots and the per-country list are in `research/photo_shotlist.md`.
