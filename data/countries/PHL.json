@@ -10,7 +10,7 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": "Most Philippine government websites could not be accessed during this review, so only one document could be read in full. From what could be located, the Philippines has no AI-specific law: AI governance runs through the trade department's national AI roadmaps (2021 and 2024), the Data Privacy Act of 2012 with the privacy commission's 2024 advisory on AI systems, a joint circular on AI in government (draft 2024, final 2026), the education department's 2026 AI guidelines for basic education, and the central bank's 2026 AI governance principles for financial institutions. Many AI and deepfake bills are pending in Congress.",
+    "summary": "The Philippines has no AI-specific law. AI governance runs through the trade department's national AI roadmaps (2021 and 2024), the Data Privacy Act of 2012 with the privacy commission's December 2024 advisory on applying it to AI systems, a joint circular on AI in government (draft 2024, reported final 2026), the education department's 2026 AI guidelines for basic education, and the central bank's 2026 AI governance principles for financial institutions. Many AI and deepfake bills are pending in Congress.",
     "lead_institutions": [
       "Department of Trade and Industry",
       "Department of Information and Communications Technology",
@@ -18,7 +18,7 @@
       "Bangko Sentral ng Pilipinas"
     ],
     "last_deep_review": "2026-10-12",
-    "review_notes": "This review was carried out on 12 October 2026, but most official Philippine websites, including the Official Gazette, the privacy commission, the ICT and education departments and Congress, blocked access. Only the central bank's AI principles could be read in full; the other records could only be located, and the national AI roadmaps and pending bills are listed as leads. The Philippines is marked for a later retry."
+    "review_notes": "Rechecked on 18 October 2026: the privacy commission, civil service commission, trade department and House document sites opened, so the Data Privacy Act and the privacy commission's AI advisory were read in full. The Official Gazette, the ICT and education departments, the securities regulator, the development planning department and both chambers' main websites still could not be accessed, so the 2026 joint circular on AI in government and the education department's AI order remain unconfirmed."
   },
   "instruments": [
     {
@@ -87,16 +87,16 @@
       "legal_status": "binding_law",
       "lifecycle": "in_force",
       "publication_date": "2012-08-15",
-      "current_status": "Approved 15 August 2012 (Official Gazette entry date, not yet confirmed in the entry) and in force; implementing rules were issued by the NPC in 2016. Applied to AI systems through NPC Advisory No. 2024-04.",
+      "current_status": "Approved by the President on 15 August 2012 and in force. The Act states that it takes effect fifteen days after publication in at least two national newspapers of general circulation. The privacy commission applies it to AI systems through NPC Advisory No. 2024-04.",
       "summary": "The Philippines' general data protection law, governing processing of personal information by government and private-sector controllers and processors and creating the National Privacy Commission. It governs the collection and use of personal data for training and operating AI systems, and is the legal basis for the NPC's 2024 AI advisory.",
       "ai_governance_relevance": "General data-protection law that governs AI processing of personal data.",
-      "source_url": "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/",
+      "source_url": "https://privacy.gov.ph/wp-content/uploads/2017/03/DPA-of-2012.pdf",
       "official_pdf_url": "https://privacy.gov.ph/wp-content/uploads/2017/03/DPA-of-2012.pdf",
       "official_webpage_url": "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/",
       "sectors": [
         "cross-sector"
       ],
-      "source_kind": "legislation_portal",
+      "source_kind": "official_document",
       "supersedes": [],
       "organization_id": "o-f2945d5c49b6",
       "publisher_name": "Congress of the Philippines",
@@ -115,18 +115,17 @@
       "related_instruments": [],
       "regional_applicability": [],
       "metadata_gaps": [
-        "effective_date",
-        "text not read (gazette and NPC sites blocked)"
+        "effective_date"
       ],
       "language": "en",
-      "verification_date": "2026-10-12",
+      "verification_date": "2026-10-18",
       "first_recorded": "2026-10-12",
       "last_changed": null,
-      "verification_level": "primary_source_located",
-      "link_status": "inaccessible",
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
       "document_access_type": "original_government_document",
       "source_id": "s-b55e52d9de67",
-      "evidence_reference": "curl (--max-time 60, browser user agent and default) returned HTTP 403 (bot-protection challenge) and WebFetch returned HTTP 403; text not read. Gazette URL and approval date located via web search of officialgazette.gov.ph; mirror.officialgazette.gov.ph also 403. Status note: Gazette text not opened in this review (site blocks automated access). Publication date not re-verified (date audit 2026-10-13): Not read: curl (browser UA) HTTP 403 and WebFetch HTTP 403 (bot protection). Also tried privacy.gov.ph DPA PDF (403), legacy.senate.gov.ph RA 10173 PDF (403), elibrary.judiciary.gov.ph (TLS fail/503). Date currently rests on the gazette URL only, never confirmed in the entry. Link note: As of 18 October 2026 (checked with curl with a browser user agent from a connection in Saudi Arabia and a desktop browser) the Official Gazette site shows a bot-verification challenge; no other official copy was found."
+      "evidence_reference": "local-retry-2026-10-18: official signed text (26-page PDF) published by the National Privacy Commission at privacy.gov.ph downloaded via curl with a browser user agent and read; title, Republic Act No. 10173 and 'Approved: AUG 15 2012' read from the signature page; effectivity clause (Sec. 45) read. Official Gazette entry still shows a bot-verification challenge. curl (--max-time 60, browser user agent and default) returned HTTP 403 (bot-protection challenge) and WebFetch returned HTTP 403; text not read. Gazette URL and approval date located via web search of officialgazette.gov.ph; mirror.officialgazette.gov.ph also 403. Status note: Gazette text not opened in this review (site blocks automated access). Publication date not re-verified (date audit 2026-10-13): Not read: curl (browser UA) HTTP 403 and WebFetch HTTP 403 (bot protection). Also tried privacy.gov.ph DPA PDF (403), legacy.senate.gov.ph RA 10173 PDF (403), elibrary.judiciary.gov.ph (TLS fail/503). Date currently rests on the gazette URL only, never confirmed in the entry. Link note: As of 18 October 2026 (checked with curl with a browser user agent from a connection in Saudi Arabia and a desktop browser) the Official Gazette site shows a bot-verification challenge; no other official copy was found."
     },
     {
       "id": "i-99e106a9a489",
@@ -184,7 +183,7 @@
       "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "source_id": "s-f80f589eaf77",
-      "evidence_reference": "curl (--max-time 60, browser user agent and default) returned HTTP 403 (bot-protection challenge) and WebFetch returned HTTP 403; text not read. Official page URL, title and date located via web search restricted to deped.gov.ph. Status note: Official page could not be opened in this review (site blocks automated access); the news item was seen as indexed. Publication date not re-verified (date audit 2026-10-13): Not read: curl (browser UA) HTTP 403 and WebFetch HTTP 403 (bot protection). Also tried deped.gov.ph/2026/ (403). Date rests on the URL/page slug only. Link note: As of 18 October 2026 (checked with curl with a browser user agent from a connection in Saudi Arabia and a desktop browser) the DepEd page loads blank; no other official copy was found."
+      "evidence_reference": "local-retry-2026-10-18: DepEd page returned HTTP 403 to curl and a blank page (HTTP 403) to headless browser; text still not read. curl (--max-time 60, browser user agent and default) returned HTTP 403 (bot-protection challenge) and WebFetch returned HTTP 403; text not read. Official page URL, title and date located via web search restricted to deped.gov.ph. Status note: Official page could not be opened in this review (site blocks automated access); the news item was seen as indexed. Publication date not re-verified (date audit 2026-10-13): Not read: curl (browser UA) HTTP 403 and WebFetch HTTP 403 (bot protection). Also tried deped.gov.ph/2026/ (403). Date rests on the URL/page slug only. Link note: As of 18 October 2026 (checked with curl with a browser user agent from a connection in Saudi Arabia and a desktop browser) the DepEd page loads blank; no other official copy was found."
     },
     {
       "id": "i-d6222fe44589",
@@ -239,7 +238,63 @@
       "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "source_id": "s-74dc365ae1db",
-      "evidence_reference": "curl (--max-time 60, browser user agent and default) returned HTTP 403 (bot-protection challenge) and WebFetch returned HTTP 403; text not read. PDF URL and 'DRAFT As of 18 April 2024' header located via web search of ictstatistics.dict.gov.ph. Link note: As of 18 October 2026 (checked with curl with a browser user agent from a connection in Saudi Arabia and a desktop browser) the DICT site shows a bot-verification challenge; no other official copy was found."
+      "evidence_reference": "local-retry-2026-10-18: ictstatistics.dict.gov.ph and dict.gov.ph (including the dict.gov.ph/ictstatistics/ path) returned HTTP 403 bot-verification to curl and headless browser; text still not read. curl (--max-time 60, browser user agent and default) returned HTTP 403 (bot-protection challenge) and WebFetch returned HTTP 403; text not read. PDF URL and 'DRAFT As of 18 April 2024' header located via web search of ictstatistics.dict.gov.ph. Link note: As of 18 October 2026 (checked with curl with a browser user agent from a connection in Saudi Arabia and a desktop browser) the DICT site shows a bot-verification challenge; no other official copy was found."
+    },
+    {
+      "id": "i-1f5c660f2c6d",
+      "official_title": "NPC Advisory No. 2024-04: Guidelines on the Application of Republic Act No. 10173 or the Data Privacy Act of 2012 (DPA), its Implementing Rules and Regulations, and the Issuances of the Commission to Artificial Intelligence Systems Processing Personal Data",
+      "english_title": "NPC Advisory No. 2024-04: Guidelines on applying the Data Privacy Act of 2012 to AI systems processing personal data",
+      "issuing_authority": "National Privacy Commission",
+      "authority_type": "regulator",
+      "categories": [
+        "data-privacy",
+        "transparency",
+        "risk-assurance"
+      ],
+      "legal_status": "regulatory_opinion",
+      "lifecycle": "published",
+      "publication_date": "2024-12-19",
+      "current_status": "Advisory dated 19 December 2024, signed by the Privacy Commissioner and two Deputy Privacy Commissioners, and listed on the privacy commission's advisories page.",
+      "summary": "Privacy commission advisory explaining how the Data Privacy Act, its implementing rules and the commission's issuances apply when personal data is processed in developing or deploying AI systems, including training and testing. It sets expectations on transparency (explaining purposes, inputs, risks, outputs and impacts of AI processing), accountability (documented measures, responsibility for outsourced processing), fairness, accuracy, data minimisation, lawful basis including for publicly available data, and mechanisms to uphold data subject rights.",
+      "ai_governance_relevance": "Main AI-specific guidance from the Philippine data protection authority.",
+      "source_url": "https://privacy.gov.ph/wp-content/uploads/2025/02/Advisory-2024.12.19-Guidelines-on-Artificial-Intelligence-w-SGD.pdf",
+      "official_pdf_url": "https://privacy.gov.ph/wp-content/uploads/2025/02/Advisory-2024.12.19-Guidelines-on-Artificial-Intelligence-w-SGD.pdf",
+      "official_webpage_url": "https://privacy.gov.ph/advisories/",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-ce118d5ca05a",
+      "publisher_name": "National Privacy Commission",
+      "jurisdiction_id": "PHL",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Philippines (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-a8cb8bb439f9"
+      ],
+      "regional_applicability": [],
+      "metadata_gaps": [
+        "effective_date"
+      ],
+      "language": "en",
+      "verification_date": "2026-10-18",
+      "first_recorded": "2026-10-18",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-d1604b6d6eb4",
+      "evidence_reference": "local-retry-2026-10-18: listed on privacy.gov.ph/advisories/ (opened via curl); 5-page signed PDF downloaded via headless browser (curl connection reset) and read with pdfplumber; advisory number, 'DATE : 19 December 2024', subject and signatories read from the document. The earlier 2024/12 upload path now returns 404; the commission's listing links the 2025/02 path."
     }
   ],
   "organizations": [
@@ -282,6 +337,16 @@
       "source_url": "https://www.congress.gov.ph/",
       "authority_type": "legislature",
       "government_level": "national"
+    },
+    {
+      "id": "o-ce118d5ca05a",
+      "jurisdiction_id": "PHL",
+      "name": "National Privacy Commission",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Data protection authority created by the Data Privacy Act of 2012; issued NPC Advisory No. 2024-04 on applying the Act to AI systems processing personal data.",
+      "source_url": "https://privacy.gov.ph/",
+      "authority_type": "regulator",
+      "government_level": "national"
     }
   ],
   "sources": [
@@ -316,12 +381,13 @@
     },
     {
       "id": "s-b55e52d9de67",
-      "url": "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/",
+      "url": "https://privacy.gov.ph/wp-content/uploads/2017/03/DPA-of-2012.pdf",
       "jurisdiction_ids": [
         "PHL"
       ],
       "source_institutions": [
-        "Congress of the Philippines"
+        "Congress of the Philippines",
+        "National Privacy Commission"
       ],
       "instrument_ids": [
         "i-a8cb8bb439f9"
@@ -330,16 +396,16 @@
         "data-privacy",
         "binding-law"
       ],
-      "date_reviewed": "2026-10-12",
+      "date_reviewed": "2026-10-18",
       "checked_date": "2026-10-18",
-      "check_method": "curl (--max-time 60, browser user agent and default) returned HTTP 403 (bot-protection challenge) and WebFetch returned HTTP 403; text not read. Gazette URL and approval date located via web search of officialgazette.gov.ph; mirror.officialgazette.gov.ph also 403.",
-      "http_status": 403,
-      "final_url": "https://www.officialgazette.gov.ph/2012/08/15/republic-act-no-10173/",
-      "link_status": "inaccessible",
+      "check_method": "local-retry-2026-10-18: curl with browser user agent, HTTP 200, 26-page PDF read with pdfplumber; Official Gazette entry still 403 bot-verification (curl and headless browser).",
+      "http_status": 200,
+      "final_url": "https://privacy.gov.ph/wp-content/uploads/2017/03/DPA-of-2012.pdf",
+      "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
-      "error": "Access blocked by the site's bot protection (HTTP 403) for both curl and WebFetch",
-      "content_type": "text/html"
+      "error": null,
+      "content_type": "application/pdf"
     },
     {
       "id": "s-f80f589eaf77",
@@ -362,13 +428,13 @@
       ],
       "date_reviewed": "2026-10-12",
       "checked_date": "2026-10-18",
-      "check_method": "curl (--max-time 60, browser user agent and default) returned HTTP 403 (bot-protection challenge) and WebFetch returned HTTP 403; text not read. Official page URL, title and date located via web search restricted to deped.gov.ph.",
+      "check_method": "local-retry-2026-10-18: DepEd page returned HTTP 403 to curl and a blank page (HTTP 403) to headless browser; text still not read.",
       "http_status": 403,
       "final_url": "https://www.deped.gov.ph/2026/02/20/february-20-2026-do-003-s-2026-foundational-guidelines-on-artificial-intelligence-ai-in-basic-education/",
       "link_status": "inaccessible",
       "page_title": null,
       "document_language": "en",
-      "error": "Access blocked by the site's bot protection (HTTP 403) for both curl and WebFetch",
+      "error": "Bot-verification challenge (HTTP 403) to curl and headless browser",
       "content_type": "text/html"
     },
     {
@@ -390,14 +456,42 @@
       ],
       "date_reviewed": "2026-10-12",
       "checked_date": "2026-10-18",
-      "check_method": "curl (--max-time 60, browser user agent and default) returned HTTP 403 (bot-protection challenge) and WebFetch returned HTTP 403; text not read. PDF URL and 'DRAFT As of 18 April 2024' header located via web search of ictstatistics.dict.gov.ph.",
+      "check_method": "local-retry-2026-10-18: ictstatistics.dict.gov.ph and dict.gov.ph (including the dict.gov.ph/ictstatistics/ path) returned HTTP 403 bot-verification to curl and headless browser; text still not read.",
       "http_status": 403,
       "final_url": "https://ictstatistics.dict.gov.ph/wp-content/uploads/2024/05/DRAFT-COPY_JMC-on-the-Principles-for-an-Ethical-and-Trustworthy-Use-of-Artificial-Intelligence-AI-in-Government.pdf",
       "link_status": "inaccessible",
       "page_title": null,
       "document_language": "en",
-      "error": "Access blocked by the site's bot protection (HTTP 403) for both curl and WebFetch",
+      "error": "Bot-verification challenge (HTTP 403) to curl and headless browser",
       "content_type": "text/html"
+    },
+    {
+      "id": "s-d1604b6d6eb4",
+      "url": "https://privacy.gov.ph/wp-content/uploads/2025/02/Advisory-2024.12.19-Guidelines-on-Artificial-Intelligence-w-SGD.pdf",
+      "jurisdiction_ids": [
+        "PHL"
+      ],
+      "source_institutions": [
+        "National Privacy Commission"
+      ],
+      "instrument_ids": [
+        "i-1f5c660f2c6d"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "transparency",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-18",
+      "checked_date": "2026-10-18",
+      "check_method": "local-retry-2026-10-18: headless browser download (curl connection reset), 5-page PDF read with pdfplumber; linked from privacy.gov.ph/advisories/.",
+      "http_status": 200,
+      "final_url": "https://privacy.gov.ph/wp-content/uploads/2025/02/Advisory-2024.12.19-Guidelines-on-Artificial-Intelligence-w-SGD.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
     }
   ],
   "regional_applicability": [],
@@ -468,7 +562,12 @@
       "\"National AI Strategy for the Philippines\" NAIS-PH DOST 2025 2028 document",
       "dost.gov.ph site search: NAIS; national ai strategy",
       "Joint Memorandum Circular 003 2026 artificial intelligence government pdf (dict.gov.ph, csc.gov.ph, officialgazette.gov.ph)",
-      "\"DO 003, s. 2026\" deped.gov.ph Foundational Guidelines Artificial Intelligence"
+      "\"DO 003, s. 2026\" deped.gov.ph Foundational Guidelines Artificial Intelligence",
+      "privacy.gov.ph advisories listing: artificial intelligence",
+      "csc.gov.ph government issuances and memorandum circulars: joint memorandum circular artificial intelligence 2026",
+      "Joint Memorandum Circular 003 2026 artificial intelligence government DICT CSC pdf (csc.gov.ph, dict.gov.ph, dbm.gov.ph, officialgazette.gov.ph)",
+      "dti.gov.ph site search: artificial intelligence (2026-10-18)",
+      "depdev.gov.ph site search: artificial intelligence"
     ],
     "review_date": "2026-10-12",
     "passes": {
@@ -490,7 +589,7 @@
     "no_material_found_note": "The Philippines' official gazette, Congress, the trade, ICT and science departments, other departments and regulators were searched. No qualifying AI-governance document was found for strategy, government AI governance, procurement, cybersecurity, standards, sandboxes, readiness indices, international agreements or historical publications. Many official sites, including the Official Gazette, the privacy commission, the education agencies, the ICT department, the securities regulator, the Senate and the House, were unavailable, and the standards bureau and the health and labour departments are still to be checked in depth.",
     "discovery_result_count": 12,
     "focused_result_count": 13,
-    "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. privacy.gov.ph, officialgazette.gov.ph (and mirror), deped.gov.ph, ched.gov.ph, dict.gov.ph, ictstatistics.dict.gov.ph, csc.gov.ph, sec.gov.ph, senate.gov.ph and congress.gov.ph returned 403 to curl and WebFetch; ncc.gov.ph proxy 502. Bureau of Philippine Standards and DOLE not searched. NPC advisory and DepEd order summaries from the agencies' own indexed pages (located only). Not a party to Convention 108. Units covered: Law: Official Gazette (blocked; RA 10173 located), House of Representatives document server (HB 11007 read), Senate (blocked; SB 25 via discovery). No enacted AI-specific law or deepfake statute found; deepfake bills pending.; Government: DTI (site reachable; only press releases on the 2021 roadmap and NAISR 2.0, no full text), DICT ICT Knowledge Portal (blocked; 2024 draft JMC and 2026 JMC 003 located), DOST site search (nothing AI-governance specific).; Ministries: DepEd (DO 003 s. 2026 located; site blocked), CHED (no issued AI order found; planned policy only), DOH searched, no AI administrative order found; DOST: NAIS-PH announced 2025 but no official text (lead).; Regulators: BSP (M-2026-031 read), NPC (Advisory 2024-04 located; site blocked), SEC (blocked; no AI issuance found in search), NTC/telecom: searched, nothing found.. Not reached: officialgazette.gov.ph, privacy.gov.ph, deped.gov.ph, ched.gov.ph, dict.gov.ph, csc.gov.ph, sec.gov.ph, senate.gov.ph, congress.gov.ph: all return HTTP 403 bot-protection challenges to curl and WebFetch; ncc.gov.ph / cybersecurity: proxy CONNECT 502; National standards body (Bureau of Philippine Standards): not reached in time box; Health (DOH) and labour (DOLE) AI documents: not searched in depth. Could not verify: All Cloudflare-protected PH government sites (privacy, gazette, deped, dict, csc, sec, ched, senate) blocked curl and WebFetch with HTTP 403. strategy, government-governance, procurement, cyber-security, standards, sandbox, index-readiness, international, historical: no material found."
+    "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. privacy.gov.ph, officialgazette.gov.ph (and mirror), deped.gov.ph, ched.gov.ph, dict.gov.ph, ictstatistics.dict.gov.ph, csc.gov.ph, sec.gov.ph, senate.gov.ph and congress.gov.ph returned 403 to curl and WebFetch; ncc.gov.ph proxy 502. Bureau of Philippine Standards and DOLE not searched. NPC advisory and DepEd order summaries from the agencies' own indexed pages (located only). Not a party to Convention 108. Units covered: Law: Official Gazette (blocked; RA 10173 located), House of Representatives document server (HB 11007 read), Senate (blocked; SB 25 via discovery). No enacted AI-specific law or deepfake statute found; deepfake bills pending.; Government: DTI (site reachable; only press releases on the 2021 roadmap and NAISR 2.0, no full text), DICT ICT Knowledge Portal (blocked; 2024 draft JMC and 2026 JMC 003 located), DOST site search (nothing AI-governance specific).; Ministries: DepEd (DO 003 s. 2026 located; site blocked), CHED (no issued AI order found; planned policy only), DOH searched, no AI administrative order found; DOST: NAIS-PH announced 2025 but no official text (lead).; Regulators: BSP (M-2026-031 read), NPC (Advisory 2024-04 located; site blocked), SEC (blocked; no AI issuance found in search), NTC/telecom: searched, nothing found.. Not reached: officialgazette.gov.ph, privacy.gov.ph, deped.gov.ph, ched.gov.ph, dict.gov.ph, csc.gov.ph, sec.gov.ph, senate.gov.ph, congress.gov.ph: all return HTTP 403 bot-protection challenges to curl and WebFetch; ncc.gov.ph / cybersecurity: proxy CONNECT 502; National standards body (Bureau of Philippine Standards): not reached in time box; Health (DOH) and labour (DOLE) AI documents: not searched in depth. Could not verify: All Cloudflare-protected PH government sites (privacy, gazette, deped, dict, csc, sec, ched, senate) blocked curl and WebFetch with HTTP 403. strategy, government-governance, procurement, cyber-security, standards, sandbox, index-readiness, international, historical: no material found. Local retry 2026-10-18 (home connection, Saudi Arabia, ~20 min): opened: privacy.gov.ph (advisories page and PDFs; DPA PDF via curl, AI advisory PDF via headless browser after curl connection reset; old 2024/12 advisory path now 404), csc.gov.ph (curl 200; no AI JMC in listings), dti.gov.ph search (200), docs.congress.hrep.online (HB 11007 PDF via headless browser). Still failing: officialgazette.gov.ph, dict.gov.ph (incl. /ictstatistics/ and /department-circulars), ictstatistics.dict.gov.ph, sec.gov.ph, congress.gov.ph, depdev.gov.ph: HTTP 403 bot-verification for curl and headless browser; deped.gov.ph 403/blank; web.senate.gov.ph Cloudflare 523 origin unreachable. NPC Advisory 2026-01 (data scraping, 13 April 2026) read but contains no AI reference, so not recorded. Not searched this pass: BPS standards, cyber authority, procurement, DOH/DOLE."
   },
   "changes": [
     {
@@ -604,14 +703,14 @@
       "title": "Joint Memorandum Circular No. 003, s. 2026: Principles for the Ethical and Responsible Development, Deployment and Use of Artificial Intelligence (AI) in the Government",
       "english_title": "DICT-CSC JMC No. 003, s. 2026 on ethical and responsible AI in government",
       "issuing_authority": "Department of Information and Communications Technology and Civil Service Commission",
-      "note": "Reportedly dated 9 June 2026 and listed on the DICT ICT Knowledge Portal (https://ictstatistics.dict.gov.ph/ict-plans-and-policies/); DICT, CSC and Official Gazette sites returned HTTP 403 to curl and WebFetch, so the official text/URL could not be confirmed. Promote as public-sector instrument (administrative_policy_mandatory_in_scope) superseding the 2024 draft once read; implementing guidelines due within 90 days.",
+      "note": "Reportedly dated 9 June 2026 and listed on the DICT ICT Knowledge Portal (https://ictstatistics.dict.gov.ph/ict-plans-and-policies/); DICT, CSC and Official Gazette sites returned HTTP 403 to curl and WebFetch, so the official text/URL could not be confirmed. Promote as public-sector instrument (administrative_policy_mandatory_in_scope) superseding the 2024 draft once read; implementing guidelines due within 90 days. Update 2026-10-18: DICT sites still blocked; CSC website opened but no AI joint circular found in its issuance listings; not confirmed.",
       "found": "2026-10-12"
     },
     {
       "title": "National Artificial Intelligence Strategy Roadmap 2.0 (NAISR 2.0)",
       "english_title": "National AI Strategy Roadmap 2.0",
       "issuing_authority": "Department of Trade and Industry",
-      "note": "Launched by DTI on 3 July 2024 with the Center for AI Research (per DTI news pages). No official full-text document found on dti.gov.ph (only press releases). Record as national_strategy superseding the 2021 roadmap once an official text is found.",
+      "note": "Launched by DTI on 3 July 2024 with the Center for AI Research (per DTI news pages). No official full-text document found on dti.gov.ph (only press releases). Record as national_strategy superseding the 2021 roadmap once an official text is found. Update 2026-10-18: DTI site search opened; still no official full text found.",
       "found": "2026-10-12"
     },
     {
@@ -625,14 +724,14 @@
       "title": "House Bill No. 11007 (20th Congress): risk-proportionate AI regulatory framework (FAIR-AI Act)",
       "english_title": "House Bill No. 11007, AI regulatory framework establishing the Philippine AI Regulation Council",
       "issuing_authority": "House of Representatives",
-      "note": "Filed 27 August 2026 by Rep. Eric G. Yap; official PDF read at https://docs.congress.hrep.online/legisdocs/basic_20/HB11007.pdf. Pending bill.",
+      "note": "Filed 27 August 2026 by Rep. Eric G. Yap; official PDF read at https://docs.congress.hrep.online/legisdocs/basic_20/HB11007.pdf. Pending bill. Update 2026-10-18: official PDF still opens on the House document server.",
       "found": "2026-10-12"
     },
     {
       "title": "Senate Bill No. 25 (20th Congress): Artificial Intelligence Regulation Act (AIRA)",
       "english_title": "Artificial Intelligence Regulation Act",
       "issuing_authority": "Senate of the Philippines",
-      "note": "Filed 2 July 2025 by Sen. Pia Cayetano (per discovery sources); would create a National AI Commission under DOST and a registry of AI systems. senate.gov.ph blocked automated access; pending bill. About 40 House and 7 Senate AI bills reported in the 20th Congress.",
+      "note": "Filed 2 July 2025 by Sen. Pia Cayetano (per discovery sources); would create a National AI Commission under DOST and a registry of AI systems. senate.gov.ph blocked automated access; pending bill. About 40 House and 7 Senate AI bills reported in the 20th Congress. Update 2026-10-18: Senate legislative information system unreachable (origin error); still not read on an official site.",
       "found": "2026-10-12"
     },
     {
@@ -653,14 +752,14 @@
       "title": "CHED national policy on artificial intelligence in higher education (planned)",
       "english_title": "CHED national AI policy for higher education",
       "issuing_authority": "Commission on Higher Education",
-      "note": "CHED announced in March 2026 it is preparing a national AI policy for higher education; no issued CHED memorandum order found. ched.gov.ph blocked automated access.",
+      "note": "CHED announced in March 2026 it is preparing a national AI policy for higher education; no issued CHED memorandum order found. ched.gov.ph blocked automated access. Update 2026-10-18: not re-checked.",
       "found": "2026-10-12"
     },
     {
       "title": "NPC Advisory No. 2024-04: Guidelines on the Application of Republic Act No. 10173, Its Implementing Rules and Regulations, and the Issuances of the Commission to Artificial Intelligence Systems Processing Personal Data",
       "english_title": "NPC Advisory No. 2024-04: Guidelines on applying the Data Privacy Act of 2012 to AI systems processing personal data",
       "issuing_authority": "National Privacy Commission",
-      "note": "Moved from records by the date audit (2026-10-13): no publication date is stated by the issuer. Not read: curl (browser UA) HTTP 403 and WebFetch HTTP 403 (bot protection). Also tried privacy.gov.ph/advisories/ and /data-privacy-act/ (403). The issuer could not be reached and the recorded date rested on a file name, upload path or page metadata, which are not valid date sources. Official URL: https://privacy.gov.ph/wp-content/uploads/2024/12/Advisory-2024.12.19-Guidelines-on-Artificial-Intelligence-w-SGD.pdf. Previously recorded as regulatory_opinion, publication_date 2024-12-19.",
+      "note": "Moved from records by the date audit (2026-10-13): no publication date is stated by the issuer. Not read: curl (browser UA) HTTP 403 and WebFetch HTTP 403 (bot protection). Also tried privacy.gov.ph/advisories/ and /data-privacy-act/ (403). The issuer could not be reached and the recorded date rested on a file name, upload path or page metadata, which are not valid date sources. Official URL: https://privacy.gov.ph/wp-content/uploads/2024/12/Advisory-2024.12.19-Guidelines-on-Artificial-Intelligence-w-SGD.pdf. Previously recorded as regulatory_opinion, publication_date 2024-12-19. Update 2026-10-18: official signed text read on privacy.gov.ph (dated 19 December 2024 in the document) and promoted to instrument i-1f5c660f2c6d.",
       "found": "2026-10-13"
     }
   ]
