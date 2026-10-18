@@ -46,9 +46,13 @@ const secs=[...new Set(links.map(a=>a.getAttribute('href').slice(1)))].map(id=>d
 const menu=$('.secmenu');if(menu)$$('a',menu).forEach(a=>a.addEventListener('click',()=>{menu.open=false}));
 /* the hero becomes the slim sticky bar once it has scrolled away */
 if(hero&&bar&&'IntersectionObserver' in window){new IntersectionObserver(([en])=>{bar.classList.toggle('stuck',!en.isIntersecting)},{rootMargin:`-${bar.offsetHeight}px 0px 0px 0px`}).observe(hero)}
+/* charts backdrop reveal (wide screens): --rv goes 0 to 1 as the charts heading rises from near the bottom of the screen to ~35% from the top */
+const rvSec=$('.charts-sec.has-bg'),rvH=rvSec&&$('.charts-h',rvSec);
+if(rvH){const hint=document.createElement('div');hint.className='rv-hint';hint.setAttribute('aria-hidden','true');hint.textContent=rvH.textContent;rvSec.appendChild(hint)}
 let ticking=false,current=null;
 function frame(){ticking=false;const y=scrollY,vh=innerHeight,max=Math.max(1,root.scrollHeight-vh),p=Math.min(1,Math.max(0,y/max));
   root.style.setProperty('--p',p.toFixed(4));
+  if(rvH){if(innerWidth<760)rvSec.style.removeProperty('--rv');else rvSec.style.setProperty('--rv',Math.min(1,Math.max(0,(vh*.95-rvH.getBoundingClientRect().top)/(vh*.6))).toFixed(3))}
   if(media&&!reduce.matches){const h=hero.offsetHeight;if(y<h)media.style.transform=`translate3d(0,${(y*.3).toFixed(1)}px,0)`}
   const line=(bar?bar.offsetHeight:0)+vh*.25;let cur=secs[0]||null;for(const s of secs){if(s.getBoundingClientRect().top<=line)cur=s}
   if(y+vh>=root.scrollHeight-4&&secs.length)cur=secs[secs.length-1];
@@ -60,7 +64,7 @@ function frame(){ticking=false;const y=scrollY,vh=innerHeight,max=Math.max(1,roo
 addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(frame)}},{passive:true});addEventListener('resize',frame);frame();
 /* sections fade in once as they enter; charts grow from zero; header counts count up */
 function motion(){if(reduce.matches||!('IntersectionObserver' in window))return;
-  const els=$$('.intro,.content>section.block,.lede-grid>.block,.ov-grid>.block,.ov-photo,.charts-h,.fig,.photo-break,.closing-in');
+  const els=$$('.intro,.content>section.block,.lede-grid>.block,.ov-grid>.block,.ov-photo,.charts-h,.fig,.photo-break,.closing-in').filter(el=>!(el===rvH&&innerWidth>=760));
   root.classList.add('js-motion');els.forEach(el=>el.classList.add('rv'));
   const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}}),{rootMargin:'0px 0px -6% 0px',threshold:0});
   els.forEach(el=>io.observe(el));
