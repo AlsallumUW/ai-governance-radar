@@ -116,6 +116,19 @@ def map_photos():
     return out
 
 
+def issuer_names(D):
+    """Arabic names of issuing bodies that the site already has: each country's translated lead institutions, matched by
+    position to the English list (used for the issuer line in the map panel and the Updates rows)."""
+    out = {}
+    for jid, n in (D.get("narratives") or {}).items():
+        en = list((n or {}).get("lead_institutions") or [])
+        ar = i18n.content(jid, "lead_institutions", en) if en else None
+        if isinstance(ar, list) and len(ar) == len(en):
+            for e, a in zip(en, ar):
+                if e and a: out.setdefault(e.strip(), a.strip())
+    return out
+
+
 def build_ar(D, map_html, flags):
     """dist/ar/: every page again, generated with Arabic templates and dates, then the remaining interface text translated.
     Photos, data files and assets are shared with the English site (links are pointed back to them in localise())."""
@@ -125,9 +138,13 @@ def build_ar(D, map_html, flags):
         inst = {i["id"]: i for i in D["instruments"]}
         ct = {c["id"]: t for c in D["changes"] if c.get("id") for t, _ in [i18n.change_title(c, inst)] if t and t != c.get("title")}
         ct_js = ('<script>window.AR_CT=' + json.dumps(ct, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/") + ';</script>') if ct else ""
+        # Updates rows: Arabic one-line event details (government actions)
+        cd = {c["id"]: t for c in D["changes"] if c.get("kind") == "world" and c.get("detail") and (t := i18n.content(c["id"], "detail", c["detail"]))}
+        if cd: ct_js += '<script>window.AR_CD=' + json.dumps(cd, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/") + ';</script>'
         # living map card on the Arabic page: translated hero captions and document titles
         arm = {"captions": {cid: t for cid, ph in map_photos().items() if (t := i18n.content(f"photo:{cid}:hero", "caption", ph["caption"]))},
-               "titles": {i["id"]: t for i in D["instruments"] if (t := i18n.content(i["id"], "title", i.get("english_title")))}}
+               "titles": {i["id"]: t for i in D["instruments"] if (t := i18n.content(i["id"], "title", i.get("english_title")))},
+               "issuers": issuer_names(D)}
         ct_js += '<script>window.AR_MAP=' + json.dumps(arm, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/") + ';</script>'
         method = f'<p class="ar-note">{i18n.T("Arabic texts of documents not published in Arabic are translations; the original text is authoritative.")}</p>'
         ar_map = i18n.translate_html(map_html).replace("</head>", ct_js + "</head>", 1)
