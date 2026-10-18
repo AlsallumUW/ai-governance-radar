@@ -15,7 +15,7 @@
       "Haute Autorité de Protection des Données à caractère Personnel (HAPDP)"
     ],
     "last_deep_review": "2026-10-12",
-    "review_notes": "This review was carried out on 12 October 2026, but the Official Journal's, the National Assembly's and the digital agency's websites could not be accessed, so the gazette could not be searched and only one document could be read. Niger is marked for a later retry and, as a country of over 20 million people with few records, for a longer catch-up pass."
+    "review_notes": "A follow-up review on 18 October 2026 searched the Presidency's official texts page (including the 2025-2029 Refoundation Programme), the digital ministry, the national information society agency, the telecoms regulator and the data protection authority, and found no further AI-specific document. The Official Journal, National Assembly and digital agency websites still could not be accessed, so the gazette and parliamentary records remain to be searched."
   },
   "instruments": [
     {
@@ -66,14 +66,14 @@
         "Journal Officiel reference"
       ],
       "language": "fr",
-      "verification_date": "2026-10-12",
+      "verification_date": "2026-10-18",
       "first_recorded": "2026-10-12",
       "last_changed": null,
       "verification_level": "reviewed_primary_metadata",
       "link_status": "reachable",
       "document_access_type": "original_government_document",
       "source_id": "s-544d1577dccc",
-      "evidence_reference": "curl (browser user agent, --max-time 240): signed 46-page scanned original PDF downloaded from the HAPDP 'Législation nationale' page; title page and signature page (Fait à Niamey, 16 décembre 2022, signed President Mohamed Bazoum) read as images; article text (art. 1 definition of AI, art. 52, art. 57, art. 112 abrogation) read via pdftotext from the HAPDP consolidated version (April 2026) on the same page"
+      "evidence_reference": "local-retry-2026-10-18: official PDF link and HAPDP legislation page re-checked (reachable, unchanged); record fields unchanged. curl (browser user agent, --max-time 240): signed 46-page scanned original PDF downloaded from the HAPDP 'Législation nationale' page; title page and signature page (Fait à Niamey, 16 décembre 2022, signed President Mohamed Bazoum) read as images; article text (art. 1 definition of AI, art. 52, art. 57, art. 112 abrogation) read via pdftotext from the HAPDP consolidated version (April 2026) on the same page"
     }
   ],
   "organizations": [
@@ -107,8 +107,8 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 240): signed 46-page scanned original PDF downloaded from the HAPDP 'Législation nationale' page; title page and signature page (Fait à Niamey, 16 décembre 2022, signed President Mohamed Bazoum) read as images; article text (art. 1 definition of AI, art. 52, art. 57, art. 112 abrogation) read via pdftotext from the HAPDP consolidated version (April 2026) on the same page",
+      "checked_date": "2026-10-18",
+      "check_method": "local-retry-2026-10-18: HEAD request with browser user agent to the signed original PDF on the HAPDP 'Législation nationale' page (HTTP 200); page listing re-checked, same documents listed. Earlier read (2026-10-12): curl (browser user agent, --max-time 240): signed 46-page scanned original PDF downloaded from the HAPDP 'Législation nationale' page; title page and signature page (Fait à Niamey, 16 décembre 2022, signed President Mohamed Bazoum) read as images; article text (art. 1 definition of AI, art. 52, art. 57, art. 112 abrogation) read via pdftotext from the HAPDP consolidated version (April 2026) on the same page",
       "http_status": 200,
       "final_url": "https://www.hapdp.ne/uploads/files/Loi-N%C2%B02022-59HAPDP.pdf",
       "link_status": "reachable",
@@ -173,7 +173,15 @@
       "ansi.ne site search: intelligence artificielle / IA / stratégie",
       "mcnti.gouv.ne site search: artificielle / stratégie; document library reviewed",
       "arcep.ne site search: artificielle / stratégie; document library reviewed",
-      "hapdp.ne: législation nationale page reviewed"
+      "hapdp.ne: législation nationale page reviewed",
+      "presidence.ne 'Textes officiels' page reviewed (decrees, ordinances, Programme de la Refondation PRR 2025-2029): PRR full text searched for 'intelligence artificielle' / 'IA' (no match)",
+      "ansi.ne search: intelligence artificielle; 'Stratégies Niger 2.0' page reviewed (no AI pillar); site pages and media library listed",
+      "mcnti.gouv.ne search: intelligence artificielle (no results)",
+      "arcep.ne search: intelligence (no results)",
+      "hapdp.ne search: intelligence; législation nationale page re-checked",
+      "gouv.ne site search: intelligence artificielle (search function broken)",
+      "Niger stratégie nationale intelligence artificielle 2025 2026 ministère communication nouvelles technologies (discovery)",
+      "Niger \"intelligence artificielle\" ordonnance OR décret OR arrêté 2025 2026 conseil des ministres (discovery)"
     ],
     "review_date": "2026-10-12",
     "passes": {
@@ -195,7 +203,7 @@
     "no_material_found_note": "Niger's laws, the government portal, the digital ministry, other ministries and regulators were searched. Only the data protection law, which includes AI provisions, was found; no national AI strategy or AI bill was found, and there was no material in any other category. The official gazette, National Assembly and a digital agency's websites were unavailable, and some scanned ministry documents remain to be checked.",
     "discovery_result_count": 11,
     "focused_result_count": 9,
-    "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. sgg.gouv.ne proxy 502; assemblee.ne reset; anadin.ne proxy 502. Law 2022-59 source: signed scanned original on hapdp.ne (title/signature pages read as images); AI articles (1, 52, 57, 112) from HAPDP consolidated text (Apr 2026). JO reference and effective date missing. Amended by Law 2023-31, Ord. 2024-16, Ord. 2024-29. mcnti.gouv.ne scanned PDFs without text layer not read. Ord. 2026-48 and Decree 2026-311: no AI. Convention 108: not a party. Units covered: Law: Data protection Law 2022-59 (AI definition, art. 52 automated decisions/AI transparency, art. 57 AI developers' declaration duty) read from HAPDP copies. Cybercrime Law 2019-33 (text layer searched: no AI terms), Ordinance 2026-48 on online press (scan read: no AI provisions) and ANSI decrees 2026-311 checked: no AI provisions. Official gazette portal sgg.gouv.ne and National Assembly site unreachable (proxy 502 / connection reset); no AI bill found.; Government: No national AI strategy found: gouv.ne portal search returned no results; ministry of communication and new information technologies (mcnti.gouv.ne) document library and search have no AI document; ANSI (Agence Nationale pour la Société de l'Information) site has only a January 2026 news item on AI capacity-building in Dakar mentioning exchanges on national AI strategy approaches. Searched, nothing found.; Ministries: Searched (portal and web), nothing found for education, health, justice, defence, finance, labour, interior AI documents.; Regulators: HAPDP: legislation and news pages reviewed, no AI guidance. ARCEP (telecoms) document library reviewed, no AI document. ANSI (now also cyber defence/SOC operator) no AI security guidance. Central bank is regional (BCEAO) — regional layer.. Not reached: sgg.gouv.ne (Journal officiel) unreachable; assemblee.ne unreachable; anadin.ne unreachable. Could not verify: Official gazette portal sgg.gouv.ne, National Assembly (assemblee.ne) and ANADIN site could not be reached; no gazette search for AI texts possible.; Several mcnti.gouv.ne PDFs are image scans with no text layer (scan_20260701162208.pdf, scan.pdf, Arrêtés 00010/00011); not OCRed.. strategy, government-governance, ethics, risk-assurance, public-sector, procurement, cyber-security, standards, sandbox, index-readiness, sectoral, generative-ai, drafts, international, historical: no material found."
+    "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. sgg.gouv.ne proxy 502; assemblee.ne reset; anadin.ne proxy 502. Law 2022-59 source: signed scanned original on hapdp.ne (title/signature pages read as images); AI articles (1, 52, 57, 112) from HAPDP consolidated text (Apr 2026). JO reference and effective date missing. Amended by Law 2023-31, Ord. 2024-16, Ord. 2024-29. mcnti.gouv.ne scanned PDFs without text layer not read. Ord. 2026-48 and Decree 2026-311: no AI. Convention 108: not a party. Units covered: Law: Data protection Law 2022-59 (AI definition, art. 52 automated decisions/AI transparency, art. 57 AI developers' declaration duty) read from HAPDP copies. Cybercrime Law 2019-33 (text layer searched: no AI terms), Ordinance 2026-48 on online press (scan read: no AI provisions) and ANSI decrees 2026-311 checked: no AI provisions. Official gazette portal sgg.gouv.ne and National Assembly site unreachable (proxy 502 / connection reset); no AI bill found.; Government: No national AI strategy found: gouv.ne portal search returned no results; ministry of communication and new information technologies (mcnti.gouv.ne) document library and search have no AI document; ANSI (Agence Nationale pour la Société de l'Information) site has only a January 2026 news item on AI capacity-building in Dakar mentioning exchanges on national AI strategy approaches. Searched, nothing found.; Ministries: Searched (portal and web), nothing found for education, health, justice, defence, finance, labour, interior AI documents.; Regulators: HAPDP: legislation and news pages reviewed, no AI guidance. ARCEP (telecoms) document library reviewed, no AI document. ANSI (now also cyber defence/SOC operator) no AI security guidance. Central bank is regional (BCEAO) — regional layer.. Not reached: sgg.gouv.ne (Journal officiel) unreachable; assemblee.ne unreachable; anadin.ne unreachable. Could not verify: Official gazette portal sgg.gouv.ne, National Assembly (assemblee.ne) and ANADIN site could not be reached; no gazette search for AI texts possible.; Several mcnti.gouv.ne PDFs are image scans with no text layer (scan_20260701162208.pdf, scan.pdf, Arrêtés 00010/00011); not OCRed.. strategy, government-governance, ethics, risk-assurance, public-sector, procurement, cyber-security, standards, sandbox, index-readiness, sectoral, generative-ai, drafts, international, historical: no material found. Local retry 2026-10-18 (home connection, Saudi Arabia, about 30 min): sgg.gouv.ne, assemblee.ne and anadin.ne (with and without www) do not resolve in DNS (curl error 6, Edge ERR_NAME_NOT_RESOLVED) - still not accessible. Opened: hapdp.ne (legislation page 200; Law 2022-59 PDF HEAD 200; site very slow, large scanned PDFs such as e-transactions Law 2019-03 and Decree 2020-309 timed out after partial download, not read), ansi.ne (search and WP REST listing; 'Stratégies Niger 2.0' page has no AI pillar, no strategy document), mcnti.gouv.ne (search: no AI results), arcep.ne (search: none), presidence.ne 'Textes officiels' page (opened with headless Edge; lists Programme de la Refondation PRR 2025-2029 (Nov 2025, 95 pp.) and Charte de la Refondation; PRR text extracted and searched: no 'intelligence artificielle'/'IA' match; mentions only digital inclusion). gouv.ne search returns a PHP error. Not done in this pass: standards body, procurement authority (ARMP), sector ministries' sites, BCEAO (regional). No new records; last_deep_review left unchanged."
   },
   "changes": [
     {
