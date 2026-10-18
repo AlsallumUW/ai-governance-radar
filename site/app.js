@@ -52,28 +52,37 @@ const docCount=j=>(includeRegional?all(j):national(j)).length;
 /* government actions (kind "world") in the last 30 days */
 /* days since a date, counted from local midnight today in the reader's browser (not the build date); inLast(d,30) = today and the 29 days before */
 const DAY=864e5,TODAY=(()=>{const t=new Date();t.setHours(0,0,0,0);return t.getTime()})(),fullDate=d=>d.length===4?d+'-12-31':d.length===7?d+'-28':d,ageOf=d=>d?Math.round((TODAY-new Date(fullDate(d)+'T00:00:00').getTime())/DAY):1e9,inLast=(d,n)=>{const a=ageOf(d);return a>=0&&a<n};
-const recent=new Map();D.changes.forEach(c=>{if(c.kind!=='world'||jurisdictionByID.get(c.jurisdiction_id)?.type!=='country')return;if(inLast(c.date,30))recent.set(c.jurisdiction_id,(recent.get(c.jurisdiction_id)||0)+1)});
+/* pulses follow the Updates window (30/60/90 days, default 30); state/provincial actions sit in their country's changes */
+let winDays=(()=>{const d=new URLSearchParams(Q0).get('days');return ['30','60','90'].includes(d)?+d:30})();
+const recent=new Map(),recentItems=new Map();
+function countRecent(){recent.clear();recentItems.clear();D.changes.forEach(c=>{const id=c.jurisdiction_id;if(c.kind!=='world'||jurisdictionByID.get(id)?.type!=='country'||!inLast(c.date,winDays))return;recent.set(id,(recent.get(id)||0)+1);if(!recentItems.has(id))recentItems.set(id,[]);recentItems.get(id).push(c)})}
+countRecent();
+/* "What's new" panel and pulse legend labels: English here, translated on Arabic pages by site/i18n/ar.json (checked by check_ar_charts.py) */
+const WN_L=/*WN_L*/{"legend":"Updates in the last {d} days","n1":"1 update in the last {d} days","n":"{n} updates in the last {d} days","sub":"{s} of {n} are state/provincial-level","more":"+ {m} more on the country profile","open":"Open country profile →","src":"Official source ↗","close":"Close","aria":"{c}: updates in the last {d} days","pulse1":"{c}: 1 update in the last {d} days","pulse":"{c}: {n} updates in the last {d} days","card1":"1 government action in the last {d} days","card":"{n} government actions in the last {d} days","published":"Published","adopted":"Adopted","applied":"In force","consultation":"Consultation opened","revised":"Amended","superseded":"Superseded","repealed":"Repealed","event":"Event","binding":"Binding or mandatory","soft":"Non-binding","draft":"Draft"}/*/WN_L*/;
+const L=(k,o={})=>WN_L[k].replace(/\{(\w)\}/g,(_,x)=>o[x]??'');
+const pulseR=n=>Math.sqrt(Math.min(Math.max(n,1),10));
+const hasPulse=id=>recent.has(id)&&countryPaths.has(id)&&!countryPaths.get(id).classList.contains('is-dim');
 const zoom=d3.zoom().scaleExtent([1,48]).filter(e=>mode==='map'&&(!e.ctrlKey||e.type==='wheel')&&!e.button).on('zoom',e=>{transform=e.transform;zoomLayer.attr('transform',transform);shell.style.setProperty('--k',transform.k);placeRadar();placeRings();if(pinned)placeCard(pinned)});
 function largestPart(f){if(f.geometry.type!=='MultiPolygon')return f;let best=null,max=-1;for(const c of f.geometry.coordinates){const g={type:'Feature',geometry:{type:'Polygon',coordinates:c}},a=d3.geoArea(g);if(a>max){max=a;best=g}}return best}
 const narrow=matchMedia('(max-width:760px)');
 function layout(){const r=shell.getBoundingClientRect();width=Math.max(280,r.width);const S={type:'Sphere'};path.projection(flat);
-  if(narrow.matches){flat.fitWidth(width-12,S);const lg=$('#mapLegend'),[[,y0],[,y1]]=path.bounds(S),top=48,bottom=46+(lg&&!lg.hidden?lg.offsetHeight+6:0);height=Math.ceil(y1-y0)+top+bottom;flat.fitExtent([[6,top],[width-6,height-bottom]],S);shell.style.height=height+'px';shell.style.minHeight='0'}
+  if(narrow.matches){flat.fitWidth(width-12,S);const lg=$('#mapLegend'),[[,y0],[,y1]]=path.bounds(S),top=48,bottom=46+(lg&&!lg.hidden?lg.offsetHeight+6:0)+(typeof pulseLegend!=='undefined'&&pulseLegend.offsetHeight?pulseLegend.offsetHeight+6:0);height=Math.ceil(y1-y0)+top+bottom;flat.fitExtent([[6,top],[width-6,height-bottom]],S);shell.style.height=height+'px';shell.style.minHeight='0'}
   else{shell.style.height='';shell.style.minHeight='';height=Math.max(260,r.height);flat.fitExtent([[10,10],[width-10,height-10]],S)}
   countriesFC.features.forEach(f=>centers.set(f.id,path.centroid(largestPart(f))));
   globe.translate([width/2,height/2]).scale(baseR()*globeK).rotate(rot);
-  path.projection(projection);svg.attr('viewBox',`0 0 ${width} ${height}`);zoom.extent([[0,0],[width,height]]).translateExtent([[-width*.1,-height*.1],[width*1.1,height*1.1]]);render();placeRadar()}
+  path.projection(projection);svg.attr('viewBox',`0 0 ${width} ${height}`);zoom.extent([[0,0],[width,height]]).translateExtent([[-width*.1,-height*.1],[width*1.1,height*1.1]]);render();placeRadar();placePulseLegend()}
 const baseR=()=>Math.max(80,Math.min(width,height)/2-22);
 function render(){const g=mode==='globe';svg.select('#sphere').attr('d',path({type:'Sphere'}));svg.select('#graticule').attr('d',g?path(graticule):null);svg.select('#land').attr('d',path(landFC));
   countriesFC.features.forEach(f=>countryPaths.get(f.id)?.setAttribute('d',path(f)||''));svg.select('#borders').attr('d',path(borders));
   const [cx,cy]=globe.translate(),R=globe.scale();svg.select('#globeGlow').attr('cx',cx).attr('cy',cy).attr('r',g?R*1.16:0);placeRings();if(pinned)placeCard(pinned)}
 function initMap(){const g=zoomLayer.select('#countries').node();countriesFC.features.forEach(f=>{const j=jurisdictionByID.get(f.id);if(!j)return;geoCenters.set(f.id,d3.geoCentroid(largestPart(f)));const p=document.createElementNS('http://www.w3.org/2000/svg','path');p.setAttribute('class','country');p.dataset.iso=f.id;p.setAttribute('tabindex','0');p.setAttribute('role','button');p.setAttribute('aria-label',j.name);
-    p.addEventListener('pointerdown',e=>{lastPointer=e.pointerType});p.addEventListener('pointerenter',e=>showTip(j,e));p.addEventListener('pointermove',e=>moveTip(e));p.addEventListener('pointerleave',hideTip);
-    p.addEventListener('click',()=>{if(lastPointer==='touch'&&pinned!==f.id){pin(f.id);return}select(f.id)});p.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select(f.id)}});g.appendChild(p);countryPaths.set(f.id,p)});
+    p.addEventListener('pointerdown',e=>{lastPointer=e.pointerType});p.addEventListener('pointerenter',e=>{if(panel.hidden)showTip(j,e)});p.addEventListener('pointermove',e=>moveTip(e));p.addEventListener('pointerleave',hideTip);
+    p.addEventListener('click',e=>{if(hasPulse(f.id)){openUpdates(f.id,e);return}if(lastPointer==='touch'&&pinned!==f.id){pin(f.id);return}select(f.id)});p.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();if(hasPulse(f.id))openUpdates(f.id,null);else select(f.id)}});g.appendChild(p);countryPaths.set(f.id,p)});
   layout();svg.call(zoom).on('dblclick.zoom',null);
   svg.call(d3.drag().filter(e=>mode==='globe'&&!e.button).on('start',()=>{stopSpin();svg.classed('is-dragging',true)}).on('drag',e=>{const k=.28/globeK;rot=[rot[0]+e.dx*k,Math.max(-80,Math.min(80,rot[1]-e.dy*k))];globe.rotate(rot);render()}).on('end',()=>svg.classed('is-dragging',false)));
   svg.on('wheel.globe',e=>{if(mode!=='globe')return;e.preventDefault();stopSpin();setGlobeK(globeK*Math.exp(-e.deltaY*.0015),0)},{passive:false});
   svg.on('pointerdown.spin',()=>{if(mode==='globe')stopSpin()});
-  new ResizeObserver(()=>layout()).observe(shell);
+  new ResizeObserver(()=>{layout();placePanel()}).observe(shell);
   $('#zoomIn').onclick=()=>mode==='globe'?setGlobeK(globeK*1.6):svg.transition().duration(reduced.matches?0:250).call(zoom.scaleBy,1.8);
   $('#zoomOut').onclick=()=>mode==='globe'?setGlobeK(globeK/1.6):svg.transition().duration(reduced.matches?0:250).call(zoom.scaleBy,1/1.8);
   $('#zoomReset').onclick=()=>resetMap();
@@ -81,7 +90,7 @@ function initMap(){const g=zoomLayer.select('#countries').node();countriesFC.fea
   shell.addEventListener('click',e=>{if(pinned&&!e.target.closest('.country,.map-tip,.latest-strip'))unpin()});
   buildLatest();applyHighlight()}
 function setGlobeK(k,ms=250){stopSpin();const k0=globeK,k1=Math.max(.8,Math.min(9,k));if(reduced.matches||!ms){globeK=k1;globe.scale(baseR()*globeK);render();return}d3.transition().duration(ms).tween('gk',()=>{const i=d3.interpolate(k0,k1);return t=>{globeK=i(t);globe.scale(baseR()*globeK);render()}})}
-function setMode(m){if(m===mode)return;mode=m;unpin();hideTip();$$('[data-mode]').forEach(b=>{const on=b.dataset.mode===m;b.classList.toggle('active',on);b.setAttribute('aria-pressed',String(on))});shell.classList.toggle('is-globe',m==='globe');
+function setMode(m){if(m===mode)return;mode=m;unpin();hideTip();closeUpdates();$$('[data-mode]').forEach(b=>{const on=b.dataset.mode===m;b.classList.toggle('active',on);b.setAttribute('aria-pressed',String(on))});shell.classList.toggle('is-globe',m==='globe');
   if(m==='globe'){transform=d3.zoomIdentity;zoomLayer.attr('transform',null);projection=globe}else{projection=flat;zoomLayer.attr('transform',transform)}
   path.projection(projection);render();placeRadar();applyHighlight();if(m==='globe')startSpin();else stopSpin()}
 function startSpin(){if(reduced.matches||userMoved||spinTimer)return;let last=null;spinTimer=d3.timer(t=>{if(document.hidden){last=t;return}const dt=last===null?0:t-last;last=t;rot=[rot[0]+dt*.006,rot[1]];globe.rotate(rot);render()})}
@@ -97,10 +106,60 @@ function focusCountry(id,done){const f=featureByID.get(id),end=()=>{if(done)done
 const zoomTo=id=>focusCountry(id);
 /* screen position of a country's centre; null when it is on the far side of the globe */
 function screenPos(id){if(mode==='globe'){const c=geoCenters.get(id);if(!c||d3.geoDistance(c,[-rot[0],-rot[1]])>Math.PI/2-.05)return null;return globe(c)}const c=centers.get(id);return c&&!isNaN(c[0])?transform.apply(c):null}
-/* orange pulsing rings: a government action in the last 30 days */
-function placeRings(){const g=svg.select('#rings');const data=[...recent.keys()].filter(id=>countryPaths.has(id)&&!countryPaths.get(id).classList.contains('is-dim')).map(id=>({id,p:screenPos(id)})).filter(d=>d.p);
-  const s=g.selectAll('g.ring').data(data,d=>d.id);s.exit().remove();const e=s.enter().append('g').attr('class','ring').attr('aria-hidden','true');e.append('circle').attr('class','ring-pulse').attr('r',7);e.append('circle').attr('class','ring-core').attr('r',3.2);
-  e.merge(s).attr('transform',d=>`translate(${d.p[0].toFixed(1)},${d.p[1].toFixed(1)})`)}
+/* orange pulses: government actions in the Updates window, area ∝ count (capped at 10); larger ones drawn first so small ones stay clickable */
+function placeRings(){const g=svg.select('#rings');let hits=svg.select('#ringHits');if(hits.empty())hits=svg.insert('g','#rings').attr('id','ringHits');
+  const data=[...recent.keys()].filter(hasPulse).map(id=>({id,n:recent.get(id),p:screenPos(id)})).filter(d=>d.p);
+  const open=(ev,d)=>{ev.stopPropagation();openUpdates(d.id,ev)},enter=(ev,d)=>{const j=jurisdictionByID.get(d.id);if(j&&panel.hidden)showTip(j,ev)};
+  /* invisible hit circles sit in a layer beneath every core, so a core always takes the click and the hit areas only fill the gaps */
+  const hs=hits.selectAll('circle.ring-hit').data(data,d=>d.id);hs.exit().remove();
+  hs.enter().append('circle').attr('class','ring-hit').attr('aria-hidden','true').on('click',open).on('pointerenter',enter).on('pointermove',ev=>moveTip(ev)).on('pointerleave',()=>hideTip())
+   .merge(hs).attr('r',d=>Math.max(11,8*pulseR(d.n)).toFixed(1)).attr('cx',d=>d.p[0].toFixed(1)).attr('cy',d=>d.p[1].toFixed(1));
+  hits.selectAll('circle.ring-hit').sort((a,b)=>b.n-a.n);
+  const s=g.selectAll('g.ring').data(data,d=>d.id);s.exit().remove();
+  const e=s.enter().append('g').attr('class','ring').attr('role','button').attr('tabindex','0');
+  e.append('circle').attr('class','ring-pulse');e.append('circle').attr('class','ring-core');e.append('text').attr('class','ring-n').attr('dy','0.35em');
+  e.on('click',open).on('keydown',(ev,d)=>{if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();openUpdates(d.id,ev)}})
+   .on('pointerenter',enter).on('pointermove',ev=>moveTip(ev)).on('pointerleave',()=>hideTip());
+  const m=e.merge(s);
+  m.attr('aria-label',d=>L(d.n===1?'pulse1':'pulse',{c:jurisdictionByID.get(d.id)?.name,n:d.n,d:winDays}));
+  m.select('.ring-pulse').attr('r',d=>(8*pulseR(d.n)).toFixed(1));
+  m.select('.ring-core').attr('r',d=>(4.2*pulseR(d.n)).toFixed(1));
+  m.select('.ring-n').text(d=>d.n>=3?(d.n>99?'99+':d.n):'');
+  m.attr('transform',d=>`translate(${d.p[0].toFixed(1)},${d.p[1].toFixed(1)})`);
+  g.selectAll('g.ring').sort((a,b)=>b.n-a.n)}
+/* legend for pulse sizes (bottom end corner of the map, phones too) */
+const pulseLegend=document.createElement('div');pulseLegend.className='pulse-legend';pulseLegend.setAttribute('aria-hidden','true');shell.appendChild(pulseLegend);
+function renderPulseLegend(){pulseLegend.innerHTML=`<b>${esc(L('legend',{d:winDays}))}</b><div class="sz">`+[1,5,10].map(n=>{const r=4.2*pulseR(n);return `<span><i style="width:${(r*2).toFixed(0)}px;height:${(r*2).toFixed(0)}px"></i>${n===10?'10+':n}</span>`}).join('')+'</div>'}
+/* phones: the documents legend spans the bottom, so the size legend sits just above it (bottom end corner) */
+function placePulseLegend(){const lg=$('#mapLegend');pulseLegend.style.bottom=narrow.matches&&lg&&!lg.hidden?(lg.offsetTop>0?shell.clientHeight-lg.offsetTop+6:46)+'px':''}
+renderPulseLegend();
+/* "What's new" panel: a country's government actions in the Updates window (beside the click; bottom sheet on phones) */
+const panel=document.createElement('div');panel.className='wn-panel';panel.hidden=true;panel.setAttribute('role','dialog');panel.setAttribute('aria-modal','false');panel.tabIndex=-1;shell.appendChild(panel);
+const ACT={published:'published',adopted:'adopted',applied:'applied',consultation:'consultation',revised:'revised',superseded:'superseded',repealed:'repealed',event:'event'};
+const SUBN=new Set(['subnational','local']);
+const fmtShort=d=>{if(!d)return '';if(d.length<10)return fmtDate(d);return new Date(d+'T00:00:00').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'})};
+let wnFor=null,wnReturn=null,wnAt=null;
+function profileURL(id){const p=new URLSearchParams(location.search);p.delete('view');if(winDays!==30)p.set('days',winDays);else p.delete('days');const s=p.toString();return (jurisdictionByID.get(id)?.type!=='country'?'body/':'country/')+id+'/'+(s?'?'+s:'')}
+function openUpdates(id,ev){const j=jurisdictionByID.get(id),items=(recentItems.get(id)||[]).slice().sort((a,b)=>(b.date||'').localeCompare(a.date||''));if(!j||!items.length){select(id);return}
+  const same=!panel.hidden&&wnFor===id;if(!same)wnReturn=document.activeElement;unpin();hideTip();
+  const CT=window.AR_CT||{},n=items.length,sub=items.filter(c=>SUBN.has(instrumentByID.get(c.instrument_id)?.government_level)).length,shown=items.slice(0,8);
+  panel.innerHTML=`<div class="wn-h"><div><h3>${flag(j)}<span>${esc(j.name)}</span></h3><p class="wn-n">${esc(L(n===1?'n1':'n',{n,d:winDays}))}</p>${sub?`<p class="wn-sub">${esc(L('sub',{s:sub,n}))}</p>`:''}</div><button class="wn-x" type="button" aria-label="${esc(L('close'))}">×</button></div>`
+   +`<ul class="wn-list">${shown.map(c=>{const i=instrumentByID.get(c.instrument_id),t=i?docTitle(i):(CT[c.id]||c.title),iss=i&&(i.publisher_name||i.issuing_authority),src=c.source_url||i?.source_url,k=i&&kindOf(i);
+      return `<li><div class="wn-meta"><span>${esc(fmtShort(c.date))}</span><span class="wn-act">${esc(L(ACT[c.type]||'event'))}</span>${k?`<span class="wn-chip ${k==='binding'?'b':k==='draft'?'d':'n'}">${esc(L(k))}</span>`:''}</div>`
+       +`<div class="wn-t" dir="auto">${esc(t)}</div>`+(iss?`<div class="wn-iss" dir="auto">${esc(iss)}</div>`:'')
+       +(src?`<a class="wn-src" href="${esc(src)}" target="_blank" rel="noopener noreferrer">${esc(L('src'))}</a>`:'')+'</li>'}).join('')}`
+   +(n>shown.length?`<li class="wn-more">${esc(L('more',{m:n-shown.length}))}</li>`:'')+'</ul>'
+   +`<div class="wn-f"><a href="${esc(profileURL(id))}">${esc(L('open'))}</a></div>`;
+  panel.setAttribute('aria-label',L('aria',{c:j.name,d:winDays}));panel.hidden=false;wnFor=id;
+  if(ev&&ev.clientX>0)wnAt=[ev.clientX-shell.getBoundingClientRect().left,ev.clientY-shell.getBoundingClientRect().top];else if(!same||!wnAt){const p=screenPos(id);wnAt=p||[width/2,height/2]}
+  placePanel();panel.querySelector('.wn-x').onclick=closeUpdates;panel.querySelector('.wn-x').focus()}
+function placePanel(){if(panel.hidden)return;if(narrow.matches){panel.style.left=panel.style.top='';return}const r=shell.getBoundingClientRect(),w=panel.offsetWidth,h=panel.offsetHeight,rtl=document.documentElement.dir==='rtl',[x,y]=wnAt;
+  let Lx=rtl?x-w-18:x+18;if(Lx+w>r.width-12||Lx<12)Lx=rtl?x+18:x-w-18;Lx=Math.max(12,Math.min(r.width-w-12,Lx));let Ty=Math.max(12,Math.min(r.height-h-12,y-40));panel.style.left=Lx+'px';panel.style.top=Ty+'px'}
+function closeUpdates(){if(panel.hidden)return;panel.hidden=true;wnFor=null;const r=wnReturn;wnReturn=null;if(r&&document.contains(r)&&r.focus)try{r.focus()}catch(e){}}
+addEventListener('keydown',e=>{if(e.key==='Escape'&&!panel.hidden)closeUpdates()});
+document.addEventListener('pointerdown',e=>{if(!panel.hidden&&!panel.contains(e.target)&&!e.target.closest('#rings g.ring,#ringHits,.country'))closeUpdates()});
+/* the Updates window selector (changelog.js) resizes pulses, the legend and an open panel */
+addEventListener('radar:days',e=>{const d=+e.detail;if(![30,60,90].includes(d)||d===winDays)return;winDays=d;countRecent();renderPulseLegend();placeRings();if(wnFor){const id=wnFor;if(recent.has(id))openUpdates(id,null);else closeUpdates()}})
 /* hover / tap card */
 const fmtDate=d=>{if(!d)return '';if(d.length===4)return d;const x=new Date((d.length===7?d+'-01':d)+'T00:00:00');return x.toLocaleDateString('en-GB',d.length===7?{month:'long',year:'numeric'}:{day:'numeric',month:'long',year:'numeric'})};
 const isAr=s=>/[؀-ۿ]/.test(s||'');
@@ -112,7 +171,7 @@ function cardHTML(j,pinnedCard){const ph=PH[j.id],n=national(j),k={binding:0,sof
   return (ph?`<figure class="card-photo"><img src="${ROOT}${esc(ph.file)}" width="640" height="360" alt="" loading="lazy" decoding="async"><figcaption>${esc((ROOT&&ARM.captions&&ARM.captions[j.id])||ph.caption||'')}</figcaption></figure>`:'')
    +`<div class="card-body"><strong>${flag(j)}<span>${esc(j.name)}</span></strong>${extra.join('')}`
    +`<div class="card-counts"><span class="cc cc-b"><b>${k.binding}</b><span>Binding or mandatory</span></span><span class="cc cc-n"><b>${k.soft}</b><span>Non-binding</span></span><span class="cc cc-d"><b>${k.draft}</b><span>Drafts</span></span></div>`
-   +(r?`<div class="card-actions"><i class="ring-sw"></i><span>${r} government action${r===1?'':'s'} in the last 30 days</span></div>`:'')
+   +(r?`<div class="card-actions"><i class="ring-sw"></i><span>${esc(L(r===1?'card1':'card',{n:r,d:winDays}))}</span></div>`:'')
    +(last?`<div class="card-latest"><span class="card-k">Latest document</span><span class="card-t" dir="auto">${esc(docTitle(last))}</span><span class="card-d">${esc(fmtDate(last.publication_date))}</span></div>`:'')
    +(pinnedCard?`<a class="card-open" href="${pageURL(j.id)}">Open country page →</a>`:'')+'</div>'}
 function showTip(j,e){if(e.pointerType==='touch'||pinned)return;tip.innerHTML=cardHTML(j,false);tip.hidden=false;tip.classList.remove('is-pinned');moveTip(e);countryPaths.get(j.id)?.classList.add('is-hover')}
@@ -128,8 +187,8 @@ function applyHighlight(){const fil=filtering();let n=0;countryPaths.forEach((p,
   renderLegend(fil);if(narrow.matches&&!shell.hidden&&width)layout();placeRings();if(pinned)pin(pinned);syncURL()}
 function renderLegend(fil){const box=$('#mapLegend');box.classList.toggle('legend-shade',!fil&&!body);if(body==='OECD'){box.innerHTML='<span><i class="sw b-member"></i>OECD members (all adhere to the AI Recommendation)</span><span><i class="sw b-adh"></i>Non-member adherents</span>';box.hidden=false}else if(body==='COE'){box.innerHTML='<span><i class="sw b-ratified"></i>CETS 225 ratified</span><span><i class="sw b-signed"></i>CETS 225 signed</span><span><i class="sw b-c108"></i>Convention 108 party only</span><span><i class="sw b-coe"></i>CoE member, neither</span>';box.hidden=false}else if(body){box.innerHTML=`<span><i class="sw b-member"></i>${esc(jurisdictionByID.get(body)?.short_name||body)} members</span>`;box.hidden=false}
   if(body){box.insertAdjacentHTML('beforeend',`<a class="legend-link" href="${pageURL(body)}">Open ${esc(jurisdictionByID.get(body)?.short_name||body)} page →</a>`)}
-  else if(fil){box.innerHTML=`<span><i class="sw is-match"></i>Matching ${includeRegional?'national or regional':'national'} documents</span><span><i class="sw is-dim"></i>No match</span><span><i class="ring-sw"></i>Government action in the last 30 days</span>`;box.hidden=false}
-  else{const lab=['0','1–2','3–5','6–10','11–20','21–50','51–100','101+'],col=[ZERO,...RAMP];box.innerHTML=`<div class="lg-head">Documents recorded</div><div class="ramp">${col.map((c,k)=>`<span class="rk"><i style="background:${c}"></i><small>${lab[k]}</small></span>`).join('')}</div><div class="lg-note">Counts documents recorded; it does not rate the quality of governance.</div><span class="lg-ring"><i class="ring-sw"></i>Government action in the last 30 days</span>`;box.hidden=false}}
+  else if(fil){box.innerHTML=`<span><i class="sw is-match"></i>Matching ${includeRegional?'national or regional':'national'} documents</span><span><i class="sw is-dim"></i>No match</span>`;box.hidden=false}
+  else{const lab=['0','1–2','3–5','6–10','11–20','21–50','51–100','101+'],col=[ZERO,...RAMP];box.innerHTML=`<div class="lg-head">Documents recorded</div><div class="ramp">${col.map((c,k)=>`<span class="rk"><i style="background:${c}"></i><small>${lab[k]}</small></span>`).join('')}</div><div class="lg-note">Counts documents recorded; it does not rate the quality of governance.</div>`;box.hidden=false}}
 /* radar sweep: flat map only, about 7 s per turn (CSS animation) */
 function origin(){const p=flat([0,0])||[width/2,height/2];return transform.apply(p)}
 function placeRadar(){const o=origin(),sw=$('#sweep');const r=Math.hypot(width,height);sw.style.width=sw.style.height=(r*2)+'px';sw.style.left=o[0]+'px';sw.style.top=o[1]+'px'}
