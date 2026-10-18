@@ -261,6 +261,25 @@ body.cp{overflow-x:clip}
   .cs-bg{margin:0 -16px}.cs-bg-in img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;display:block}
   .cs-cap{padding:8px 0 22px}
 }
+/* reveal: on wide screens the city photo first shows clear in a "window" before the charts heading; as the reader
+   scrolls on, --rv (0 to 1, set by country.js) blurs and dims it while the heading and cards rise in over it */
+@media (min-width:760px){
+  .charts-sec.has-bg{padding-top:0}
+  .charts-sec.has-bg::before{content:"";display:block;height:min(82vh,760px)}
+  .charts-sec.has-bg .cs-bg-in img{filter:blur(calc(var(--rv,1) * 5px)) saturate(calc(1 - var(--rv,1) * .15));transform:scale(calc(1 + var(--rv,1) * .06))}
+  .charts-sec.has-bg .cs-bg-in::after{opacity:var(--rv,1)}
+  .charts-sec.has-bg .cs-bg-in::before{content:"";position:absolute;inset:auto 0 0 0;height:30%;z-index:1;pointer-events:none;
+    background:linear-gradient(to top,rgba(8,10,14,.55),transparent);opacity:calc(1 - var(--rv,1))}
+  .charts-sec.has-bg .cs-cap{top:calc(min(82vh,760px) - 70px);bottom:auto;inset-inline-start:0;inset-inline-end:auto;align-items:flex-start;text-align:start;
+    opacity:calc(1 - var(--rv,1) * 1.6);z-index:2;text-shadow:0 1px 8px rgba(0,0,0,.55)}
+  .charts-sec.has-bg .cs-cap .pp-cap{font-size:20px;font-weight:600;letter-spacing:.01em}
+  .charts-sec.has-bg .charts-h,.charts-sec.has-bg .panels{opacity:calc(.25 + var(--rv,1) * .75);transform:translateY(calc((1 - var(--rv,1)) * 40px))}
+  .rv-hint{position:absolute;left:50%;top:calc(min(82vh,760px) - 44px);transform:translateX(-50%);z-index:2;color:#fff;font-size:12px;letter-spacing:.12em;text-transform:uppercase;
+    opacity:calc(.85 - var(--rv,1) * 2);pointer-events:none;text-shadow:0 1px 6px rgba(0,0,0,.6)}
+  .rv-hint::after{content:"";display:block;width:1px;height:22px;margin:6px auto 0;background:#fff;animation:rvh 1.8s ease-in-out infinite}
+}
+@keyframes rvh{0%,100%{transform:scaleY(.3);transform-origin:top}50%{transform:scaleY(1)}}
+@media (max-width:759px){.rv-hint{display:none}}
 /* the side rail reads light-on-dark while it passes over the charts backdrop */
 .rail-map,.rail-nav li a,.rail-track,.rail-top a{transition:color .2s,opacity .2s,background-color .2s}
 .rail.ondark .rail-map{opacity:0}
@@ -288,9 +307,12 @@ body.cp{overflow-x:clip}
   .cs-bg-in{position:absolute!important;inset:0;height:auto!important}
   .pb-media img{transform:none!important;top:0;height:100%}
   .rail-map,.rail-nav li a,.rail-track,.rail-top a{transition:none}
+  .charts-sec.has-bg .cs-bg-in img,.charts-sec.has-bg .charts-h,.charts-sec.has-bg .panels{transform:none!important}
+  .rv-hint::after{animation:none}
 }
 @media print{
-  .ov-photo,.cs-bg,.cs-cap,.closing{display:none!important}
+  .ov-photo,.cs-bg,.cs-cap,.closing,.rv-hint,.charts-sec.has-bg::before{display:none!important}
+  .charts-sec.has-bg .charts-h,.charts-sec.has-bg .panels{opacity:1!important;transform:none!important}
   .ov-grid{display:block}.charts-sec{margin-top:14pt;padding:0!important}.charts-sec .panels{display:block}.charts-h{color:#000!important}
 }
 .legend span{overflow-wrap:normal;white-space:nowrap}
