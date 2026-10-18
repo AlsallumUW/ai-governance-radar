@@ -530,12 +530,7 @@ def country_page(j, D, rec, flags, ctx):
                            for u, rs in sorted(byu.items())) + '</section>')
     # g. leads
     if band: H.append(photo_band(band))
-    if leads:
-        H.append(f'<section id="leads" class="block"><details class="leads"><summary><h2>Leads — not yet verified as in-scope instruments <span class="count">{len(leads)}</span></h2></summary>'
-                 '<p class="section-lede">Documents found during research that are not recorded as instruments: no official text could be read, no stated date, still pending, or outside the scope test.</p><ul class="lead-list">'
-                 + "".join(f'<li><strong>{e(l.get("english_title") or l.get("title"))}</strong>' + (f'<span class="inst-orig" dir="auto">{e(l.get("title"))}</span>' if l.get("english_title") and l.get("english_title") != l.get("title") else "")
-                           + (f'<span class="inst-meta">{e(l.get("issuing_authority"))}</span>' if l.get("issuing_authority") else "") + (f'<span class="lead-note">{e(l.get("note"))}</span>' if l.get("note") else "") + '</li>' for l in leads)
-                 + '</ul></details></section>')
+    if leads: H.append(leads_section(leads))
     # h. method
     m = '<section id="method" class="block prose method"><h2>Method note</h2>'
     if narr.get("review_notes"): m += f'<p{ar_attr(notes_ar)}>{e(notes_ar or narr["review_notes"])}{i18n.orig_link("method") if notes_ar else ""}</p>'
@@ -558,6 +553,15 @@ def country_page(j, D, rec, flags, ctx):
     return "".join(H), bundle
 
 
+def leads_section(leads):
+    """Collapsed list of a jurisdiction's leads (country and body pages)."""
+    return (f'<section id="leads" class="block"><details class="leads"><summary><h2>Leads — not yet verified as in-scope instruments <span class="count">{len(leads)}</span></h2></summary>'
+            '<p class="section-lede">Documents found during research that are not recorded as instruments: no official text could be read, no stated date, still pending, or outside the scope test.</p><ul class="lead-list">'
+            + "".join(f'<li><strong>{e(l.get("english_title") or l.get("title"))}</strong>' + (f'<span class="inst-orig" dir="auto">{e(l.get("title"))}</span>' if l.get("english_title") and l.get("english_title") != l.get("title") else "")
+                      + (f'<span class="inst-meta">{e(l.get("issuing_authority"))}</span>' if l.get("issuing_authority") else "") + (f'<span class="lead-note">{e(l.get("note"))}</span>' if l.get("note") else "") + '</li>' for l in leads)
+            + '</ul></details></section>')
+
+
 def body_page(b, D, rec, flags, ctx):
     bid = b["id"]; cats = D["categories"]
     rows = [i for i in D["instruments"] if i["jurisdiction_id"] == bid]
@@ -566,7 +570,8 @@ def body_page(b, D, rec, flags, ctx):
     canon = f"{SITE_URL}body/{bid}/"
     title = f"{b['name']}: AI governance instruments | AI Governance Radar"
     desc = first_sentence(narr.get("summary")) or f"Instruments of the {b['name']} recorded on the AI Governance Radar, and the countries they apply to."
-    secs = [("overview", "Overview"), ("charts", "Charts"), ("instruments", "Instruments")] + ([("members", "Members")] if members else []) + [("method", "Method")]
+    leads = rec.get("leads") or []
+    secs = [("overview", "Overview"), ("charts", "Charts"), ("instruments", "Instruments")] + ([("members", "Members")] if members else []) + ([("leads", "Leads")] if leads else []) + [("method", "Method")]
     n_bind = sum(1 for i in rows if kind(i) == "binding"); n_draft = sum(1 for i in rows if kind(i) == "draft")
     stats = [("Instruments", len(rows)), ("Binding or mandatory", n_bind), ("Non-binding", len(rows) - n_bind - n_draft), ("Drafts", n_draft), ("Member states", len(members))]
     H = [head(title, desc, canon), f'<body class="cp" data-jid="{e(bid)}" data-build="{e(D["meta"].get("build_date") or "")}">',
@@ -603,12 +608,13 @@ def body_page(b, D, rec, flags, ctx):
         H.append(f'<section id="members" class="block"><h2>Member states <span class="count">{len(members)}</span></h2><p class="member-grid">'
                  + "".join(f'<a class="chip" href="../../country/{c}/">{e(ctx["jur"].get(c, {}).get("name", c))}</a>' for c in members) + '</p>'
                  + (f'<p class="section-lede">{e((rec.get("members_source") or {}).get("comment"))}</p>' if rec.get("members_source") else "") + '</section>')
+    if leads: H.append(leads_section(leads))
     H.append('<section id="method" class="block prose method"><h2>Method note</h2>' + (f'<p{ar_attr(bnotes_ar)}>{e(bnotes_ar or narr.get("review_notes"))}{i18n.orig_link("method") if bnotes_ar else ""}</p>' if narr.get("review_notes") else "")
              + (f'<p>{e(rec.get("membership_note"))}</p>' if rec.get("membership_note") else "")
              + '<p>Only official sources are recorded. <a href="../../?about=method" data-keep-query>Read the full methodology</a>.</p>'
              '<p class="export"><span>Download this profile:</span><button type="button" class="btn" data-export="csv">CSV</button><button type="button" class="btn" data-export="json">JSON</button></p></section>')
     bundle = {"meta": {"title": D["meta"].get("title"), "build_date": D["meta"].get("build_date"), "export": "single jurisdiction", "jurisdiction_id": bid, "url": canon},
-              "jurisdiction": b, "narrative": narr or None, "members": members, "instruments": rows,
+              "jurisdiction": b, "narrative": narr or None, "members": members, "instruments": rows, "leads": leads,
               "organizations": [o for o in D["organizations"] if o.get("jurisdiction_id") == bid], "changes": [c for c in D["changes"] if c.get("jurisdiction_id") == bid]}
     H.append('</div></div></main>' + footer(D) + '<script src="../../assets/country.js" defer></script></body></html>')
     return "".join(H), bundle
