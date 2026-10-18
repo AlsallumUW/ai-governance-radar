@@ -8,6 +8,9 @@
 Countries whose narrative.last_deep_review is set are held to the full deep-review standard.
 """
 import json, re, sys
+
+# official gazettes and legal portals: where an act is published, not who issued it (PROTOCOL: issuer vs gazette)
+GAZETTE = re.compile(r"gazette|bolet[ií]n oficial|di[aá]rio oficial|moniteur belge|staatsblad|staatscourant|slu[zž]beni (list|glasnik)|journal officiel|official journal|infoleg|legislation platform|gaceta oficial|legislation\.gov|federal register|normattiva|e-gov law|sb[ií]rka|stj[oó]rnart[ií][dð]indi|imprenta nacional|imprensa nacional|bundesgesetzblatt|gazzetta ufficiale|al meezan", re.I)
 from collections import Counter
 from common import DATA, LIFECYCLE, LINK_STATUS, RADAR_TYPES, WORLD_TYPES, jurisdiction_files, load
 
@@ -194,6 +197,7 @@ def check(only=None):
             if gl in ("subnational", "local") and not i.get("subnational_unit"): E(f"{k} is {gl} but subnational_unit is empty")
             if len((i.get("official_title") or "").strip()) < 4: W(f"{k} official_title looks truncated: '{i.get('official_title')}'")
             if re.search(r"\*\*|^\w+\.\s", i.get("official_title") or ""): W(f"{k} official_title looks like scraped text")
+            if GAZETTE.search(i.get("publisher_name") or ""): W(f"{k} publisher_name looks like a gazette or legal portal; use the issuing body and keep the gazette in the source/evidence fields")
             if DOMAINISH.match(i.get("publisher_name") or ""): W(f"{k} publisher is a domain, not an institution: {i.get('publisher_name')}")
             if deep:
                 miss = [f for f in DEEP_FIELDS if not i.get(f)]

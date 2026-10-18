@@ -34,7 +34,7 @@
       "metadata_gaps": [],
       "link_status": "reachable",
       "first_recorded": "2026-10-12",
-      "last_changed": null,
+      "last_changed": "2026-10-18",
       "language": "fr",
       "id": "i-0450276efadc",
       "authority_type": "legislature",
@@ -47,7 +47,7 @@
       "document_access_type": "official_publication_or_full_text_page",
       "source_id": "s-84bab5f8641c",
       "organization_id": "o-f5e9366261e4",
-      "evidence_reference": "curl (browser user agent, --max-time 60): jo.gouv.tg text page (node 15411: Loi 2019-014, signed 29/10/2019, JO N°26 TER special, page 1) read; gazette PDF JOS_29_10_2019 N°26 TER (20 pages) downloaded and read with pdftotext (Arts. 1, 27, 45, 95-97); byte-identical to the copy on the Ministry of Digital Economy documentation page.",
+      "evidence_reference": "curl (browser user agent, --max-time 60): jo.gouv.tg text page (node 15411: Loi 2019-014, signed 29/10/2019, JO N°26 TER special, page 1) read; gazette PDF JOS_29_10_2019 N°26 TER (20 pages) downloaded and read with pdftotext (Arts. 1, 27, 45, 95-97); byte-identical to the copy on the Ministry of Digital Economy documentation page. Published in: Cabinet of the President of the Republic (Journal officiel de la République togolaise).",
       "official_webpage_url": "https://jo.gouv.tg/node/15411",
       "effective_date": null,
       "official_title": "Loi n° 2019-014 du 29 octobre 2019 relative à la protection des données à caractère personnel",
@@ -66,7 +66,7 @@
       "source_url": "https://jo.gouv.tg/node/15411",
       "official_pdf_url": "https://jo.gouv.tg/sites/default/files/JO/JOS_29_10_2019-64E%20ANNEE-N%C2%B026%20TER.pdf",
       "source_kind": "legislation_portal",
-      "publisher_name": "Cabinet of the President of the Republic (Journal officiel de la République togolaise)",
+      "publisher_name": "National Assembly; promulgated by the President of the Republic",
       "ai_governance_relevance": "Togolese national law governing personal data used to train and run AI systems; Art. 27 sets the rule on solely automated decisions and profiling."
     }
   ],
@@ -204,21 +204,6 @@
     "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. ancy.tg / anssi.tg unreachable (curl, WebFetch); assemblee-nationale.tg expired cert / 503. jo.gouv.tg full-text search for AI terms, automated processing, Convention 108. Law 2019-014 source jo.gouv.tg/node/15411 (PDF identical to ministry copy); effective_date null (Art. 97). IPDCP communiqué undated PDF; date from WordPress post record (2025-05-03, modified 2025-07-26); in scope as regulator expectation on AI training. Togo Digital 2025 strategy (2022) read: no AI pillar (lead). Laws 2018-026 and 2022-009 image-only scans (lead). BCEAO regional. Convention 108 act not found. Units covered: Law: Journal officiel (jo.gouv.tg) full-text search run: no AI-specific law, decree or order; Law 2019-014 on personal data (Art. 27 automated decisions) recorded. Cybersecurity law 2018-026 and amending law 2022-009 are image-only scans and could not be text-searched (lead). National Assembly site unreachable (expired certificate, then 503); no AI bill found via other searches.; Government: Ministry of Digital Economy and Digital Transformation (numerique.gouv.tg) searched through its site search and full documentation list: no national AI strategy, AI policy, public-sector AI guideline or AI procurement rule published; strategy in preparation and Digital Code AI framework held as leads; Togo Digital 2025 read, no AI pillar (lead).; Ministries: Searched, nothing found: no AI documents from education, health, justice, defence, finance, labour or interior ministries found on the gazette or by web search.; Regulators: IPDCP (data protection) searched in full: one AI communiqué recorded; no AI recommendations or decisions. ARCEP (telecoms) searched: no AI documents. National cybersecurity agency (ANCy, ancy.tg) unreachable (DNS/proxy failure on curl and WebFetch). Central bank is regional (BCEAO), out of national scope; no national financial supervisor AI documents.. Not reached: Agence nationale de la cybersécurité (ancy.tg; anssi.tg also failed): unreachable via curl and WebFetch; Assemblée nationale (assemblee-nationale.tg): expired TLS certificate on curl, HTTP 503 on WebFetch. Could not verify: Cybersecurity law 2018-026 and amending law 2022-009: scanned PDFs, no text layer; AI/deepfake provisions not checked.; ANCy (national cybersecurity agency) site unreachable.; National Assembly site unreachable; pending AI bills could not be checked there.; Convention 108: no Togolese accession act found in the Journal officiel search; Togo is not believed to be a party (set null).. strategy, government-governance, ethics, risk-assurance, public-sector, procurement, cyber-security, transparency, standards, sandbox, index-readiness, sectoral, drafts, international, historical: no material found."
   },
   "changes": [
-    {
-      "id": "c-06e2e0c2b241",
-      "date": "2026-10-13",
-      "recorded": "2026-10-13",
-      "kind": "radar",
-      "type": "removed",
-      "jurisdiction_id": "TGO",
-      "instrument_id": "i-a6a1f5e83235",
-      "title": "Communiqué on the use of content published by certain digital platforms to train artificial intelligence systems",
-      "detail": "Removed from the radar (not an official source, duplicate, or out of scope).",
-      "from": null,
-      "to": null,
-      "source_url": null,
-      "needs_review": false
-    },
     {
       "id": "c-c56173bc391a",
       "date": "2026-10-12",
