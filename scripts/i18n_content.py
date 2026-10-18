@@ -7,7 +7,7 @@
 Each file maps a record id to its translated fields:
     {"<record id>": {"<field>": {"ar": "...", "src": "<hash of the English source>"}}}
 Record ids: an instrument id (fields title, summary, status), a jurisdiction id (fields summary, lead_institutions,
-review_notes, coverage_note), a change id (field title) or "photo:<ISO3>:<role>" (fields caption, alt).
+review_notes, coverage_note), a change id (fields title; detail for government actions, kind "world") or "photo:<ISO3>:<role>" (fields caption, alt).
 "ar" is null with a "skip" reason when a text could not be translated with confidence; the page then shows the English.
 
 Rules (research/WEEKLY.md): use research/aigr_arabic_terms.csv terms; translate faithfully, never adding, softening or
@@ -61,6 +61,7 @@ def items(rec, photos=None):
     if a.get("no_material_found_note"): out.append((jid, "coverage_note", a["no_material_found_note"]))
     for c in rec.get("changes", []):
         if c.get("title") and not title_from_instrument(c, by_id): out.append((c["id"], "title", c["title"]))
+        if c.get("kind") == "world" and c.get("detail"): out.append((c["id"], "detail", c["detail"]))
     for ph in ((photos or {}).get(jid) or {}).get("photos", []):
         for f in ("caption", "alt"):
             if ph.get(f): out.append((f"photo:{jid}:{ph['role']}", f, ph[f]))
@@ -75,7 +76,9 @@ def title_from_instrument(c, by_id):
 
 def global_items():
     p = DATA / "changes-global.json"
-    return [(c["id"], "title", c["title"]) for c in (load(p) if p.exists() else []) if c.get("title")]
+    cs = load(p) if p.exists() else []
+    return ([(c["id"], "title", c["title"]) for c in cs if c.get("title")]
+            + [(c["id"], "detail", c["detail"]) for c in cs if c.get("kind") == "world" and c.get("detail")])
 
 
 def stored(p):
