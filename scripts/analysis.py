@@ -60,7 +60,13 @@ def round_end(x, y, w, h, r):
     return f"M{x:.1f},{y:.1f}H{x + w - r:.1f}Q{x + w:.1f},{y:.1f} {x + w:.1f},{y + r:.1f}V{y + h - r:.1f}Q{x + w:.1f},{y + h:.1f} {x + w - r:.1f},{y + h:.1f}H{x:.1f}Z"
 
 
+def cell(c):
+    """An empty value shows as a dash, never as None/null."""
+    return "—" if c is None or str(c).strip() in ("", "None", "null") else c
+
+
 def table(head, rows, first_is_header=True):
+    rows = [[cell(c) for c in r] for r in rows]
     return ('<table class="data-table"><thead><tr>' + "".join(f'<th scope="col">{e(h)}</th>' for h in head) + '</tr></thead><tbody>'
             + "".join('<tr>' + "".join((f'<th scope="row">{e(c)}</th>' if n == 0 and first_is_header else f'<td>{e(c)}</td>') for n, c in enumerate(r)) + '</tr>' for r in rows)
             + '</tbody></table>')
@@ -535,7 +541,7 @@ def nav(active):
 
 
 def foot(D):
-    return (f'<footer class="pagefoot"><p>AI Governance Radar · official government sources only · data as of {e(fmt_date(D["meta"].get("build_date")))}</p>'
+    return (f'<footer class="pagefoot"><p>AI Governance Radar · Prepared by Faisal Alsallum · Data as of {e(fmt_date(D["meta"].get("build_date")))}</p>'
             '<p><a href="../">World map</a> · <a href="../analysis/">Analysis</a> · <a href="../timeline/">Timeline</a> · <a href="../suggest/">Suggest an update</a> · <a href="../?about=method">Methodology</a></p></footer>')
 
 

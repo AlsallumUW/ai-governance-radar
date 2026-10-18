@@ -46,7 +46,7 @@ def detect(old, new, date):
         p = o[k]
         known = p.get("lifecycle") not in (None, "unverified")
         placeholder_fix = deep_now and p.get("lifecycle") in PLACEHOLDER  # first real status set during a deep review
-        if known and not placeholder_fix and p.get("lifecycle") != i["lifecycle"]:
+        if known and not placeholder_fix and p.get("lifecycle") != i["lifecycle"] and i["lifecycle"] != "consultation_closed":
             typ = LIFE_TO_TYPE.get(i["lifecycle"], "revised")
             when = i.get("effective_date") if typ == "applied" and i.get("effective_date") else date
             evs.append(event(when, "world", typ, jid, k, title, "Status changed.", p.get("lifecycle"), i["lifecycle"], i.get("source_url"), date, True))

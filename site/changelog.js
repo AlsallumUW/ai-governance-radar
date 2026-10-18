@@ -6,7 +6,7 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&
 let F={};try{F=JSON.parse(document.getElementById('flags').textContent)}catch(e){}
 const J=new Map(D.jurisdictions.map(j=>[j.id,j])),I=new Map(D.instruments.map(i=>[i.id,i]));
 const TYPES={published:['Published','new'],revised:['Revised','rev'],consultation:['Consultation','draft'],adopted:['Adopted','adopt'],applied:['Applied / in force','applied'],event:['Event','applied'],superseded:['Superseded','end'],repealed:['Repealed','end'],added:['Added to radar','radar'],corrected:['Record corrected','radar'],removed:['Removed','radar'],link:['Link change','radar'],radar:['Radar update','radar']};
-const LIFE={draft:'Draft',consultation:'In consultation',published:'Published',adopted:'Adopted',in_force:'In force',superseded:'Superseded',repealed:'Repealed'};
+const LIFE={draft:'Draft',consultation:'In consultation',consultation_closed:'Consultation closed',published:'Published',adopted:'Adopted',in_force:'In force',superseded:'Superseded',repealed:'Repealed'};
 const age=R.ageOf;
 const label=t=>(TYPES[t]||[t])[0],tone=t=>(TYPES[t]||['','radar'])[1];
 const flag=j=>{if(!j)return '<span class="cl-globe">◈</span>';const s=F[(j.iso2||(j.id==='EU'?'EU':'')).toLowerCase()];return s?`<img class="cl-flag" src="${s}" alt="">`:'<span class="cl-globe">◈</span>'};
@@ -48,5 +48,5 @@ const latest=R.groupDocs(C.filter(c=>isWorld(c)&&age(c.date)>=0)).slice(0,4);
 if(latest.length){const sec=document.createElement('section');sec.innerHTML=`<div class="filter-row"><div class="label">Latest changes</div><button class="clear" id="clAll">View all</button></div><ol class="cl-mini">${latest.map(g=>{const j=J.get(g.jid);return `<li><button data-cl-open="${g.jid||''}"><span class="cl-ms">${R.msHTML(g)}</span><span class="cl-mini-t">${flag(j)} ${esc(R.groupTitle(g))}</span><span class="small">${fmt(g.date)}</span></button></li>`}).join('')}</ol>`;const anchor=$('.legend-section');anchor.parentNode.insertBefore(sec,anchor);sec.querySelectorAll('[data-cl-open]').forEach(b=>b.onclick=()=>b.dataset.clOpen&&R.select(b.dataset.clOpen));$('#clAll').onclick=()=>btn.click()}
 // ---- export + methodology
 const ex=$('#exportDialog .actions');if(ex){const b=document.createElement('button');b.className='button';b.textContent='Change log · CSV';b.onclick=()=>{const f=['date','recorded','kind','type','jurisdiction_id','instrument_id','title','detail','from','to','source_url','needs_review'],cell=v=>'"'+String(v??'').replace(/"/g,'""')+'"';const csv='﻿'+[f.map(cell).join(','),...C.map(r=>f.map(k=>cell(r[k])).join(','))].join('\r\n');const a=document.createElement('a'),u=URL.createObjectURL(new Blob([csv],{type:'text/csv'}));a.href=u;a.download='AI-governance-change-log.csv';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),1500)};ex.appendChild(b)}
-$$('#methodDialog p').forEach(p=>{if(/automatic update\/monitoring/.test(p.textContent))p.textContent='No rankings are included. '+(D.meta.change_policy||'')});
+
 })();

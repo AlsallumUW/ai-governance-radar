@@ -7,7 +7,7 @@ Four photos per country, one in each slot, each a different subject. The slot is
 - **Backdrop** (3:2, dimmed behind the charts): the capital or a major city.
 - **Band** (21:9 strip before the instruments): a UNESCO site or a signature landscape.
 
-Editorial rules: no identifiable people (small, distant figures only where the landmark clearly dominates); no watermarks, collages or heavy filters; no politically disputed sites (no Jerusalem sites for either Israel or Palestine); no conflict damage, military, police, protests, flags-only images or maps.
+Editorial rules: no identifiable people (small, distant figures only where the landmark clearly dominates); no watermarks, collages or heavy filters; no politically disputed sites (no Jerusalem sites for Israel; for Palestine, Jerusalem sites are allowed by the owner's decision of 19 October 2026); no conflict damage, military, police, protests, flags-only images or maps.
 
 | ISO | Country | Hero | Feature | Backdrop | Band |
 |---|---|---|---|---|---|
@@ -176,7 +176,7 @@ Editorial rules: no identifiable people (small, distant figures only where the l
 | SSD | South Sudan | Mountains near Kimotong, Eastern Equatoria | Thatched house in Bor | The White Nile at Juba | Boma National Park |
 | ESP | Spain | Alhambra, Granada | Palacio de las Cortes, Madrid | Cuatro Torres, Madrid | Mosque–Cathedral and Roman bridge, Córdoba |
 | LKA | Sri Lanka | Sigiriya | Parliament of Sri Lanka, Sri Jayawardenepura Kotte | Colombo skyline | Galle Fort |
-| PSE | State of Palestine | Church of the Nativity, Bethlehem | Mukataa, Ramallah | Bethlehem | Mar Saba Monastery |
+| PSE | State of Palestine | Al-Aqsa Mosque (Qibli mosque), Jerusalem | Mukataa, Ramallah | Church of the Nativity, Bethlehem | Hisham's Palace (Khirbat al-Mafjar), Jericho |
 | SDN | Sudan | Pyramids of Meroë | Hanafi Mosque, Suakin | Khartoum and the Nile | Jebel Barkal |
 | SUR | Suriname | Brownsberg Nature Park | Presidential Palace, Paramaribo | Waterkant, Paramaribo | Cathedral Basilica of Saints Peter and Paul, Paramaribo |
 | SWE | Sweden | Stockholm City Hall | Riksdag building, Stockholm | Gamla stan, Stockholm | Visby |

@@ -7,6 +7,7 @@ Called from build.py: pages.write_all(D, recs, out_dir, flags) writes
 Charts are rendered here as static SVG (no JavaScript needed to read them); country.js adds
 sorting, filters, chart/table toggles, tooltips and the per-country export.
 """
+from urllib.parse import urlparse
 import collections, datetime as dt, html, json, os, re, shutil
 from common import ROOT
 import geo
@@ -27,7 +28,7 @@ TYPE_OF = {"binding_law": "law", "binding_regulation": "regulation", "internatio
            "regulatory_opinion": "guidance", "voluntary_code": "guidance", "national_strategy": "strategy", "consultation_draft": "draft"}
 TYPES = [("law", "Law"), ("regulation", "Regulation"), ("treaty", "Treaty"), ("mandatory", "Mandatory policy"), ("guidance", "Guidance & opinions"),
          ("strategy", "Strategy"), ("draft", "Draft / consultation")]
-LIFE = {"draft": "Draft", "consultation": "In consultation", "published": "Published", "adopted": "Adopted", "in_force": "In force",
+LIFE = {"draft": "Draft", "consultation": "In consultation", "consultation_closed": "Consultation closed", "published": "Published", "adopted": "Adopted", "in_force": "In force",
         "superseded": "Superseded", "repealed": "Repealed"}
 VERIFY = {"reviewed_primary_metadata": "Reviewed against the official text", "primary_source_located": "Official source located; text not fully reviewed"}
 EVENT = {"published": "Published", "revised": "Revised", "consultation": "Consultation", "adopted": "Adopted", "applied": "Applies / in force",
@@ -240,6 +241,22 @@ def inst_titles(i, title, orig):
     return h
 
 
+OWNER_CONFIRMED = re.compile(r"(?:[Dd]etails|[Dd]ate|[Dd]etail) confirmed by Faisal, (\d{4}-\d{2}-\d{2})")
+
+
+def check_line(i):
+    """One plain line under a document saying what it was checked against (the research notes in evidence_reference
+    stay in the data and the exports, not on the page)."""
+    m = OWNER_CONFIRMED.search(i.get("evidence_reference") or "")
+    if m: return f'<p class="inst-check">{e(i18n.T("Confirmed from the official document, {date}", date=fmt_date(m.group(1))))}</p>'
+    url = i.get("source_url") or i.get("official_pdf_url") or ""
+    host = re.sub(r"^www\.", "", urlparse(url).hostname or "")
+    if not host or not i.get("verification_date"): return ""
+    pdf = urlparse(url).path.lower().endswith(".pdf") or (i.get("official_pdf_url") or "") == url
+    tpl = "Checked against the official PDF on {domain}, {date}" if pdf else "Checked against the official page on {domain}, {date}"
+    return f'<p class="inst-check">{e(i18n.T(tpl, domain=host, date=fmt_date(i["verification_date"])))}</p>'
+
+
 def inst_item(i, orgs, srcs, cats, regional_from=None):
     title = i.get("english_title") or i.get("official_title")
     orig = i.get("official_title") if i.get("official_title") and i.get("official_title") != title else None
@@ -270,7 +287,7 @@ def inst_item(i, orgs, srcs, cats, regional_from=None):
             + (f'<p class="inst-status"{ar_attr(st_ar)}>{e(st_ar or i.get("current_status"))}</p>' if i.get("current_status") else "")
             + f'<p class="inst-foot">{" · ".join(links)}<span class="verify v-{e(vl)}">{e(VERIFY.get(vl, vl or "Verification not recorded"))}</span>'
             + (f'<span class="inst-cats">{e(catnames)}</span>' if catnames else "") + '</p>'
-            + (f'<details class="src-notes"><summary>Source notes</summary><p lang="en" dir="ltr">{e(i["evidence_reference"])}</p></details>' if i.get("evidence_reference") else "")
+            + check_line(i)
             + '</article>')
 
 
@@ -432,7 +449,7 @@ def country_page(j, D, rec, flags, ctx):
     status_svg, status_tab = chart_status(rows_all)
     cov_html, cov_counts = coverage_grid(cats, audit, rows_all)
     today = ctx["today"]
-    pipe_drafts = sorted([i for i in rows_all if i.get("legal_status") == "consultation_draft" or i.get("lifecycle") in ("consultation", "draft")],
+    pipe_drafts = sorted([i for i in rows_all if i.get("legal_status") == "consultation_draft" or i.get("lifecycle") in ("consultation", "consultation_closed", "draft")],
                          key=lambda i: date_key(i.get("publication_date")), reverse=True)
     inst_by_id = {i["id"]: i for i in rows_all}
     future = sorted([c for c in D["changes"] if c.get("jurisdiction_id") == jid and c.get("kind") == "world" and (c.get("date") or "") > today],
@@ -621,7 +638,7 @@ def body_page(b, D, rec, flags, ctx):
 
 
 def footer(D, up="../../"):
-    return (f'<footer class="pagefoot"><p>AI Governance Radar · official government sources only · data as of {e(fmt_date(D["meta"].get("build_date")))}</p>'
+    return (f'<footer class="pagefoot"><p>AI Governance Radar · Prepared by Faisal Alsallum · Data as of {e(fmt_date(D["meta"].get("build_date")))}</p>'
             f'<p><a href="{up}" id="footMap">World map</a> · <a href="{up}analysis/">Analysis</a> · <a href="{up}timeline/">Timeline</a> · <a href="{up}suggest/">Suggest an update</a> · <a href="{up}?about=method">Methodology</a> · <a href="{up}credits/">Photo credits</a></p></footer>')
 
 
