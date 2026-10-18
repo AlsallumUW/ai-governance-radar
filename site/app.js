@@ -154,7 +154,7 @@ function openUpdates(id,ev){const j=jurisdictionByID.get(id),docs=groupDocs(rece
   const same=!panel.hidden&&wnFor===id;if(!same)wnReturn=document.activeElement;unpin();hideTip();
   const n=docs.length,sub=docs.filter(g=>SUBN.has(g.inst?.government_level)).length,shown=docs.slice(0,8);
   panel.innerHTML=`<div class="wn-h"><div><h3>${flag(j)}<span>${esc(j.name)}</span></h3><p class="wn-n">${esc(L(n===1?'n1':'n',{n,d:winDays}))}</p>${sub?`<p class="wn-sub">${esc(L('sub',{s:sub,n}))}</p>`:''}</div><button class="wn-x" type="button" aria-label="${esc(L('close'))}">×</button></div>`
-   +`<ul class="wn-list">${shown.map(g=>{const i=g.inst,iss=i&&(i.publisher_name||i.issuing_authority),src=g.latest.source_url||i?.source_url,k=i&&kindOf(i);
+   +`<ul class="wn-list">${shown.map(g=>{const i=g.inst,iss=i&&(i.issuing_authority||i.publisher_name),src=g.latest.source_url||i?.source_url,k=i&&kindOf(i);
       return `<li><div class="wn-meta"><span>${esc(fmtShort(g.date))}</span>${k?`<span class="wn-chip ${k==='binding'?'b':k==='draft'?'d':'n'}">${esc(L(k))}</span>`:''}</div>`
        +`<div class="wn-ms">${msHTML(g)}</div><div class="wn-t" dir="auto">${esc(groupTitle(g))}</div>`+(iss?`<div class="wn-iss" dir="auto">${esc(issuerName(iss))}</div>`:'')
        +(src?`<a class="wn-src" href="${esc(src)}" target="_blank" rel="noopener noreferrer">${esc(L('src'))}</a>`:'')+'</li>'}).join('')}`
