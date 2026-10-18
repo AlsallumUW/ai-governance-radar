@@ -149,7 +149,8 @@ def check_translations():
 BINDING_STATUSES = ("binding_law", "binding_regulation")
 # current_status is shown to the public; research-log wording belongs in evidence_reference (shown under "Source notes")
 STATUS_LOG = re.compile(r"audit 20\d\d|\bcurl\b|HTTP [0-9]{3}|not read|fetch|automated access|automated reading|blocks automated|could not be read"
-                        r"|this record|the radar(?! tecnol[oó]gico)", re.I)
+                        r"|this record|the radar(?! tecnol[oó]gico)"
+                        r"|held as (?:a )?leads?|in this review|(?:effective|publication|last_amended)_date|null|WebFetch|pdftotext|headless", re.I)
 
 
 # review_notes and no_material_found_note are public text too: also no agent/tool/run vocabulary
