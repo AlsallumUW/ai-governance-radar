@@ -458,6 +458,57 @@
       "category": "historical",
       "evidence_reference": "curl (browser user agent, --max-time 60, CA bundle supplemented with the missing Sectigo intermediate) 2026-10-13: DCDT 'National AI Summit' page and the 53-page PDF read with pdftotext (title page 'October 2023', foreword, contents incl. C2 AI governance, C2.2 regulation approach, C3 timelines).",
       "source_id": "s-f8fc404a4f6c"
+    },
+    {
+      "id": "i-9f81ef5f0fec",
+      "official_title": "Communication to Stakeholders MD08-2025/2026: Regulatory Requirements of Artificial Intelligence and Machine Learning (AI/ML) Enabled Medical Devices",
+      "jurisdiction_id": "ZAF",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "South Africa (national)",
+      "superseded_by": [],
+      "supersedes": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "en",
+      "verification_date": "2026-10-18",
+      "first_recorded": "2026-10-18",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "effective_date": null,
+      "technology_scope": [
+        "AI"
+      ],
+      "english_title": "SAHPRA Communication MD08-2025/2026: Regulatory Requirements of AI/ML-Enabled Medical Devices",
+      "issuing_authority": "South African Health Products Regulatory Authority (SAHPRA)",
+      "authority_type": "regulator",
+      "categories": [
+        "sectoral",
+        "risk-assurance"
+      ],
+      "legal_status": "administrative_guideline",
+      "lifecycle": "published",
+      "publication_date": "2025-09-26",
+      "current_status": "Issued 26 September 2025 as SAHPRA Communication to Stakeholders, Issue No. MD08-2025/2026. The text states that formal regulatory pathways for AI/ML-enabled medical devices are yet to be developed and that SAHPRA has not yet called up medical devices for product registration; establishment licensing under s.22C of the Medicines and Related Substances Act 101 of 1965 applies. It is a communication to industry, not a regulation; no commencement clause.",
+      "summary": "SAHPRA's communication to industry setting out its position on AI/ML-enabled medical devices and IVDs, including software as a medical device. It states that such devices need SAHPRA authorisation and a medical device establishment licence, are classified under the existing four-class risk system, and must meet existing essential principles, ISO 13485 quality management and clinical-evidence requirements, with Class C and D devices also needing approval from a reference regulator. It sets guiding principles (patient safety, transparency and explainability, cybersecurity and POPIA privacy, performance monitoring, clinical evaluation), post-market surveillance and incident-reporting expectations, and interim change-control expectations for adaptive algorithms.",
+      "ai_governance_relevance": "Health products regulator's guidance on AI/ML-enabled medical devices.",
+      "source_url": "https://www.sahpra.org.za/?p=18572",
+      "official_pdf_url": "https://www.sahpra.org.za/wp-content/uploads/2025/09/MD08-20252026_-SAHPRA-Communication-to-Industry-AI-Medical-devices_Acknowledgements.pdf",
+      "official_webpage_url": "https://www.sahpra.org.za/?p=18572",
+      "sectors": [
+        "health"
+      ],
+      "source_kind": "official_document",
+      "organization_id": "o-74bcdac61419",
+      "publisher_name": "South African Health Products Regulatory Authority",
+      "category": "sectoral",
+      "evidence_reference": "curl (browser user agent, --max-time 60) 2026-10-18: PDF at the SAHPRA uploads path returned (served via the site search result for 'MD08'), read with pdftotext: header 'Communication to Stakeholders, Issue No.: MD08-2025/2026, 26 September 2025'; sections on guiding principles, regulatory requirements, post-market surveillance, change control.",
+      "source_id": "s-99d3a2b46434"
     }
   ],
   "organizations": [
@@ -508,6 +559,16 @@
       "publisher_name_verified": true,
       "ai_governance_role": "Competition authority; its Media and Digital Platforms Market Inquiry (final report 13 November 2025) imposed remedial actions on Google, Microsoft, OpenAI and others, including AI Overviews controls and AI training opt-outs for news publishers.",
       "source_url": "https://www.compcom.co.za/",
+      "authority_type": "regulator",
+      "government_level": "national"
+    },
+    {
+      "id": "o-74bcdac61419",
+      "jurisdiction_id": "ZAF",
+      "name": "South African Health Products Regulatory Authority",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Statutory regulator of medicines and medical devices; issued Communication MD08-2025/2026 on the regulatory requirements of AI/ML-enabled medical devices (26 September 2025).",
+      "source_url": "https://www.sahpra.org.za/",
       "authority_type": "regulator",
       "government_level": "national"
     }
@@ -737,6 +798,33 @@
       "document_language": "en",
       "error": null,
       "content_type": "application/pdf"
+    },
+    {
+      "id": "s-99d3a2b46434",
+      "url": "https://www.sahpra.org.za/wp-content/uploads/2025/09/MD08-20252026_-SAHPRA-Communication-to-Industry-AI-Medical-devices_Acknowledgements.pdf",
+      "jurisdiction_ids": [
+        "ZAF"
+      ],
+      "source_institutions": [
+        "South African Health Products Regulatory Authority"
+      ],
+      "instrument_ids": [
+        "i-9f81ef5f0fec"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-18",
+      "checked_date": "2026-10-18",
+      "check_method": "curl (browser user agent, --max-time 60) 2026-10-18: PDF read with pdftotext",
+      "http_status": 200,
+      "final_url": "https://www.sahpra.org.za/wp-content/uploads/2025/09/MD08-20252026_-SAHPRA-Communication-to-Industry-AI-Medical-devices_Acknowledgements.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
     }
   ],
   "regional_applicability": [],
@@ -820,7 +908,8 @@
       "web: Electoral Commission AI framework deepfakes 2026 local elections; IEC draft electoral code AI labelling",
       "web: Department of Health AI policy / digital health strategy",
       "web: SANDF / Defence / SAPS / Labour / Agriculture / DIRCO AI policy document",
-      "web: Minister Malatsi withdraws draft AI policy April 2026"
+      "web: Minister Malatsi withdraws draft AI policy April 2026",
+      "2026-10-18 change check: web 'South Africa national artificial intelligence policy gazette October 2026'; gov.za search 'artificial intelligence'; sahpra.org.za search 'artificial intelligence' and 'MD08'; inforegulator.org.za search; web IEC disinformation code; web judiciary AI guidelines 2026"
     ],
     "review_date": "2026-10-13",
     "passes": {
@@ -842,7 +931,8 @@
     "no_material_found_note": "South Africa's Government Gazette, Parliament, the communications and digital technologies department, each ministry and sector regulators were searched. No qualifying document was found for procurement, cybersecurity, standards, sandboxes, readiness indices or international agreements. Several sites, including the health products regulator, the Council on Higher Education, Parliament's bills pages and the basic education department, were unavailable, so a medical-device AI communication and draft election campaigning rules are listed as leads to check later.",
     "discovery_result_count": 14,
     "focused_result_count": 14,
-    "technical_note": "Coverage note (original): Technical review notes: thin pass 2026-10-13 (second, longer deep review: up to 45 minutes, one agent, national level only, PROTOCOL §6; every existing record re-checked; each ministry and sector regulator searched one by one). Thin pass 2026-10-13: 5 existing records re-checked. POPIA effective 2020-07-01 for ss.55-109 (incl. s.71) per Proclamation R.21 of 2020 (Gazette 43461). AI Policy Framework upgraded to reviewed_primary_metadata (dcdt.gov.za incomplete TLS chain; Sectigo intermediate fetched from the CA added to the bundle, verification kept on); dated 2024-10 from cover (2026 draft calls it 'August 2024'); reclassified consultation_draft (issued for comment, never adopted); new source = DCDT Gazettes download page. Added HPCSA Booklet 20 (PDF on hpcsa-blogs.co.za linked from HPCSA corporate post), Competition Commission MDPMI Annexure 8 remedies (binding_regulation under s.43D; s.43E gazette notice not found), DCDT 2023 AI planning discussion document (superseded). Not reached: SAHPRA reset/503, CHE timeout, parliament.gov.za bills reset, education.gov.za 403, HPCSA and IEC document lists JS-only. SABS: no SANS adoption of ISO/IEC 42001/23894/22989 found. Convention 108: not a party. Units covered: Law: Government Gazette via gov.za search (AI, deepfake, generative AI, automated decision, algorithm): no AI-specific Act, regulation or deepfake offence; POPIA s.71 re-checked and commencement (Proclamation R.21 of 2020: 1 July 2020) added. Parliament: no AI, deepfake or AI-related data protection bill in current bills (PMG used for discovery); Parliament media alert of 25 May 2026 on the draft policy withdrawal read.; Government: DCDT: 2024 National AI Policy Framework now read in full (October 2024, comment draft); 2023 discussion document 'AI Planning: Adoption of AI by Government' added; Draft National AI Policy 2026 and its withdrawal re-checked, Cabinet approval of withdrawal (3 June 2026) added. DPSA: no AI directive/circular found (DPSA AI chatbot only). No AI procurement rules found (Treasury). DSTI: no AI strategy document found.; Ministries: Education (DBE: National AI in Education Framework reported as work in progress, no document; site returned 403) / Higher Education (DHET: nothing); Health (NDoH: no AI policy found; HPCSA guidelines recorded under regulators); Justice (DoJ: nothing; judiciary draft AI policy as lead); Defence (nothing); Finance/National Treasury and SARS (only internal AI-use plans and recruitment notices, out of scope); Labour (nothing); Home Affairs/Police (nothing); Agriculture (nothing); DIRCO (nothing); Public Service (DPSA nothing); Science (DSTI nothing).; Regulators: SARB Prudential Authority + FSCA: joint AI report re-checked (no newer AI guidance found); ICASA: site search, nothing; Competition Commission: MDPMI remedial actions with AI measures recorded; Information Regulator: guidance notes re-read, no AI note (election mis/disinformation note with deepfake paragraphs as lead); SAHPRA: AI/ML medical devices communication located but site unreachable (lead); HPCSA: Booklet 20 AI ethical guidelines recorded; CHE: site timed out, web search found no CHE AI guidance; SABS: site reached (after CA fix), no SANS adoption of ISO/IEC 42001/23894/22989 found; cyber (SSA/Cybersecurity Hub): no AI guidance found; Electoral Commission: draft AI-labelling code rules reported, text not found (lead); Film and Publication Board: nothing found.. Not reached: SAHPRA website (connection reset / HTTP 503); Council on Higher Education website (timeout); parliament.gov.za bills pages (connection reset; PMG used for discovery); education.gov.za search (HTTP 403); hpcsa.co.za document list (script-rendered); elections.org.za document pages (script-rendered). Could not verify: SAHPRA MD08-2025/2026 AI/ML-enabled medical devices communication (site unreachable by curl and WebFetch); IEC draft digital campaigning rules (June 2026): official text not found; Gazette notice publishing the MDPMI final report under s.43E(1) (effective date of remedies). procurement, cyber-security, standards, sandbox, index-readiness, international: no material found."
+    "technical_note": "Coverage note (original): Technical review notes: thin pass 2026-10-13 (second, longer deep review: up to 45 minutes, one agent, national level only, PROTOCOL §6; every existing record re-checked; each ministry and sector regulator searched one by one). Thin pass 2026-10-13: 5 existing records re-checked. POPIA effective 2020-07-01 for ss.55-109 (incl. s.71) per Proclamation R.21 of 2020 (Gazette 43461). AI Policy Framework upgraded to reviewed_primary_metadata (dcdt.gov.za incomplete TLS chain; Sectigo intermediate fetched from the CA added to the bundle, verification kept on); dated 2024-10 from cover (2026 draft calls it 'August 2024'); reclassified consultation_draft (issued for comment, never adopted); new source = DCDT Gazettes download page. Added HPCSA Booklet 20 (PDF on hpcsa-blogs.co.za linked from HPCSA corporate post), Competition Commission MDPMI Annexure 8 remedies (binding_regulation under s.43D; s.43E gazette notice not found), DCDT 2023 AI planning discussion document (superseded). Not reached: SAHPRA reset/503, CHE timeout, parliament.gov.za bills reset, education.gov.za 403, HPCSA and IEC document lists JS-only. SABS: no SANS adoption of ISO/IEC 42001/23894/22989 found. Convention 108: not a party. Units covered: Law: Government Gazette via gov.za search (AI, deepfake, generative AI, automated decision, algorithm): no AI-specific Act, regulation or deepfake offence; POPIA s.71 re-checked and commencement (Proclamation R.21 of 2020: 1 July 2020) added. Parliament: no AI, deepfake or AI-related data protection bill in current bills (PMG used for discovery); Parliament media alert of 25 May 2026 on the draft policy withdrawal read.; Government: DCDT: 2024 National AI Policy Framework now read in full (October 2024, comment draft); 2023 discussion document 'AI Planning: Adoption of AI by Government' added; Draft National AI Policy 2026 and its withdrawal re-checked, Cabinet approval of withdrawal (3 June 2026) added. DPSA: no AI directive/circular found (DPSA AI chatbot only). No AI procurement rules found (Treasury). DSTI: no AI strategy document found.; Ministries: Education (DBE: National AI in Education Framework reported as work in progress, no document; site returned 403) / Higher Education (DHET: nothing); Health (NDoH: no AI policy found; HPCSA guidelines recorded under regulators); Justice (DoJ: nothing; judiciary draft AI policy as lead); Defence (nothing); Finance/National Treasury and SARS (only internal AI-use plans and recruitment notices, out of scope); Labour (nothing); Home Affairs/Police (nothing); Agriculture (nothing); DIRCO (nothing); Public Service (DPSA nothing); Science (DSTI nothing).; Regulators: SARB Prudential Authority + FSCA: joint AI report re-checked (no newer AI guidance found); ICASA: site search, nothing; Competition Commission: MDPMI remedial actions with AI measures recorded; Information Regulator: guidance notes re-read, no AI note (election mis/disinformation note with deepfake paragraphs as lead); SAHPRA: AI/ML medical devices communication located but site unreachable (lead); HPCSA: Booklet 20 AI ethical guidelines recorded; CHE: site timed out, web search found no CHE AI guidance; SABS: site reached (after CA fix), no SANS adoption of ISO/IEC 42001/23894/22989 found; cyber (SSA/Cybersecurity Hub): no AI guidance found; Electoral Commission: draft AI-labelling code rules reported, text not found (lead); Film and Publication Board: nothing found.. Not reached: SAHPRA website (connection reset / HTTP 503); Council on Higher Education website (timeout); parliament.gov.za bills pages (connection reset; PMG used for discovery); education.gov.za search (HTTP 403); hpcsa.co.za document list (script-rendered); elections.org.za document pages (script-rendered). Could not verify: SAHPRA MD08-2025/2026 AI/ML-enabled medical devices communication (site unreachable by curl and WebFetch); IEC draft digital campaigning rules (June 2026): official text not found; Gazette notice publishing the MDPMI final report under s.43E(1) (effective date of remedies). procurement, cyber-security, standards, sandbox, index-readiness, international: no material found. Weekly sweep 2026-10-18: SAHPRA site loads again (MD08-2025/2026 PDF read and promoted, i-9f81ef5f0fec); no revised AI policy gazetted; Information Regulator still lists no AI note; dcdt.gov.za and parliament bills page not reachable/no AI item.",
+    "last_sweep": "2026-10-18"
   },
   "changes": [
     {
@@ -1159,6 +1249,19 @@
       "to": "2020-07-01",
       "source_url": "https://www.gov.za/sites/default/files/gcis_document/201409/3706726-11act4of2013popi.pdf",
       "needs_review": true
+    },
+    {
+      "id": "c-5a1e0d7b3f42",
+      "date": "2025-09-26",
+      "recorded": "2026-10-18",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "ZAF",
+      "instrument_id": "i-9f81ef5f0fec",
+      "title": "SAHPRA Communication MD08-2025/2026: Regulatory Requirements of AI/ML-Enabled Medical Devices",
+      "detail": "SAHPRA issued its communication to industry on AI/ML-enabled medical devices, dated 26 September 2025 on the document.",
+      "source_url": "https://www.sahpra.org.za/wp-content/uploads/2025/09/MD08-20252026_-SAHPRA-Communication-to-Industry-AI-Medical-devices_Acknowledgements.pdf",
+      "needs_review": false
     }
   ],
   "leads": [
@@ -1177,17 +1280,10 @@
       "found": "2026-10-12"
     },
     {
-      "title": "SAHPRA MD08-2025/2026: Regulatory Requirements of Artificial Intelligence and Machine Learning (AI/ML) Enabled Medical Devices",
-      "english_title": "SAHPRA communication to industry on AI/ML-enabled medical devices",
-      "issuing_authority": "South African Health Products Regulatory Authority (SAHPRA)",
-      "note": "Official SAHPRA communication to industry located (https://www.sahpra.org.za/wp-content/uploads/2025/09/MD08-20252026_-SAHPRA-Communication-to-Industry-AI-Medical-devices_Acknowledgements.pdf; listing https://www.sahpra.org.za/?p=18572). sahpra.org.za reset curl connections and returned HTTP 503 to WebFetch on 2026-10-13, so the text and its printed date could not be read; promote once read (likely sectoral/regulatory_opinion, health).",
-      "found": "2026-10-13"
-    },
-    {
       "title": "Electoral Commission draft amendments to the Electoral Code (digital campaigning, labelling of AI-generated content) for the 2026 local government elections",
       "english_title": "IEC draft digital campaigning rules (AI labelling, deepfakes, bots)",
       "issuing_authority": "Electoral Commission of South Africa",
-      "note": "Reported as published on 30 June 2026 for comment; would require labelling of AI-generated campaign material and discourage deepfakes and bots. Official text not found on elections.org.za (script-rendered pages) or gov.za on 2026-10-13. Find the gazette notice or IEC document and record as consultation_draft (or adopted rules).",
+      "note": "Reported as published on 30 June 2026 for comment; would require labelling of AI-generated campaign material and discourage deepfakes and bots. Official text not found on elections.org.za (script-rendered pages) or gov.za on 2026-10-13. Find the gazette notice or IEC document and record as consultation_draft (or adopted rules). Update 2026-10-18: the Electoral Commission's statement on gov.za says it promulgated the final 'Electoral Code of Conduct Countering Disinformation in the Local Government Elections' on 4 September 2026 under s.88(a) of the Municipal Electoral Act 27 of 2000, effective immediately until the declaration of results, requiring clear labelling of AI-generated (synthetic) content. The code text was not found on elections.org.za or gov.za, so it stays a lead until the text is read.",
       "found": "2026-10-13"
     },
     {
@@ -1201,7 +1297,7 @@
       "title": "Judiciary policy on the use of artificial intelligence in courts (draft)",
       "english_title": "South African judiciary AI policy (draft)",
       "issuing_authority": "Office of the Chief Justice / South African Judiciary",
-      "note": "Secondary reports (October 2026) say a draft judiciary AI policy was presented at the Judges' Conference and is being finalised; no official text found. Watch judiciary.org.za.",
+      "note": "Secondary reports (October 2026) say a draft judiciary AI policy was presented at the Judges' Conference and is being finalised; no official text found. Watch judiciary.org.za. 2026-10-18: no published judiciary AI policy found; still a draft per press only.",
       "found": "2026-10-13"
     },
     {
