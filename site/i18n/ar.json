@@ -788,6 +788,30 @@
  },
  "patterns": [
   [
+   "^(≤?\\d{4}): (\\d[\\d,]*) (binding or mandatory|non-binding|drafts) \\(of (\\d[\\d,]*)\\)$",
+   "{1} — {t3}: {2} (من {4})"
+  ],
+  [
+   "^(≤?\\d{4}): (\\d[\\d,]*) (binding or mandatory|non-binding|drafts)$",
+   "{1} — {t3}: {2}"
+  ],
+  [
+   "^(.+): (\\d[\\d,]*) \\((binding or mandatory|non-binding|drafts)\\)$",
+   "{t1}: {2} ({t3})"
+  ],
+  [
+   "^(.+): (Documents found|Searched, none found|Not assessed) \\((\\d[\\d,]*)\\)$",
+   "{t1}: {t2} ({3})"
+  ],
+  [
+   "^(.+): (Documents found|Searched, none found|Not assessed)$",
+   "{t1}: {t2}"
+  ],
+  [
+   "^(.+): (\\d[\\d,]*) \\((\\d+)%\\)$",
+   "{t1}: {2} ({3}%)"
+  ],
+  [
    "^1 government action in the last 30 days$",
    "إجراء حكومي واحد خلال آخر 30 يومًا"
   ],
@@ -961,7 +985,7 @@
   ],
   [
    "^(.+): (\\d[\\d,]*) regional-body instruments?$",
-   "{1}: {2} من وثائق الهيئات الإقليمية"
+   "{t1}: {2} من وثائق الهيئات الإقليمية"
   ],
   [
    "^Instruments per country by region \\((.+)\\): every country as a dot, with the median and the middle half marked$",

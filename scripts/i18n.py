@@ -177,7 +177,7 @@ def translate_html(doc):
             if low.startswith(("<script", "<style", "<!--")): out.append(part); continue
             if low.startswith("<meta"):
                 part = _META.sub(lambda m: m.group(1) + _esca(translate(html.unescape(m.group(2)))) + m.group(3), part)
-            elif not low.startswith("<path"):
+            else:
                 part = _ATTR.sub(lambda m: m.group(1) + _esca(translate(html.unescape(m.group(2)))) + m.group(3), part)
             out.append(part)
         else:
