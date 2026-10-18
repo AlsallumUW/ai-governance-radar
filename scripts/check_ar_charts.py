@@ -34,11 +34,29 @@ def items(doc):
     for m in LEGEND.finditer(doc): yield "legend", _text(m.group(2))
 
 
+def map_labels():
+    """Living-map "What's new" panel and pulse legend: the labels app.js builds at run time (WN_L), filled with sample
+    values and passed through the same dictionary the Arabic page uses (site/i18n/ar.json via scripts/i18n.py)."""
+    import json
+    import i18n
+    src = (ROOT / "site/app.js").read_text(encoding="utf-8")
+    m = re.search(r"/\*WN_L\*/(\{.*?\})/\*/WN_L\*/", src, re.S)
+    if not m: yield "map panel", "WN_L labels not found in site/app.js"; return
+    sample = {"c": "Saudi Arabia", "n": "5", "s": "2", "m": "4"}
+    for key, tpl in json.loads(m.group(1)).items():
+        for d in ("30", "60", "90"):
+            en = re.sub(r"\{(\w)\}", lambda x: sample.get(x.group(1), d), tpl)
+            yield ("pulse legend" if key == "legend" else "map panel"), i18n.translate(en)
+            if "{d}" not in tpl: break
+
+
 def check():
     bad = {}
     for p in sorted(AR.rglob("*.html")):
         for kind, t in items(p.read_text(encoding="utf-8")):
             if t and latin(t): bad.setdefault((kind, t), []).append(str(p.relative_to(AR)))
+    for kind, t in map_labels():
+        if t and latin(t): bad.setdefault((kind, t), []).append("index.html (site/app.js WN_L)")
     return bad
 
 

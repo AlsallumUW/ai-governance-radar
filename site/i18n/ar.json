@@ -784,9 +784,58 @@
   "All dates": "جميع التواريخ",
   "Upcoming dates": "التواريخ القادمة",
   "Source notes": "ملاحظات المصدر",
-  "Event": "فعالية"
+  "Event": "فعالية",
+  "Published": "منشور",
+  "Adopted": "معتمد",
+  "In force": "ساري المفعول",
+  "Consultation opened": "طُرح لاستطلاع المرئيات",
+  "Amended": "معدَّل",
+  "Superseded": "مستبدل بإصدار أحدث",
+  "Repealed": "ملغى",
+  "Draft": "مسودة",
+  "Open country profile →": "← فتح صفحة الدولة"
  },
  "patterns": [
+  [
+   "^Updates in the last (\\d+) days$",
+   "التحديثات خلال آخر {1} يومًا"
+  ],
+  [
+   "^1 update in the last (\\d+) days$",
+   "تحديث واحد خلال آخر {1} يومًا"
+  ],
+  [
+   "^(\\d[\\d,]*) updates in the last (\\d+) days$",
+   "تحديثات خلال آخر {2} يومًا: {1}"
+  ],
+  [
+   "^(\\d[\\d,]*) of (\\d[\\d,]*) are state/provincial-level$",
+   "{1} من {2} على مستوى الولايات أو الأقاليم"
+  ],
+  [
+   "^\\+ (\\d[\\d,]*) more on the country profile$",
+   "+ {1} أخرى في صفحة الدولة"
+  ],
+  [
+   "^(.+): updates in the last (\\d+) days$",
+   "{t1}: التحديثات خلال آخر {2} يومًا"
+  ],
+  [
+   "^(.+): 1 update in the last (\\d+) days$",
+   "{t1}: تحديث واحد خلال آخر {2} يومًا"
+  ],
+  [
+   "^(.+): (\\d[\\d,]*) updates in the last (\\d+) days$",
+   "{t1}: تحديثات خلال آخر {3} يومًا: {2}"
+  ],
+  [
+   "^1 government action in the last (\\d+) days$",
+   "إجراء حكومي واحد خلال آخر {1} يومًا"
+  ],
+  [
+   "^(\\d[\\d,]*) government actions in the last (\\d+) days$",
+   "إجراءات حكومية خلال آخر {2} يومًا: {1}"
+  ],
   [
    "^(≤?\\d{4}): (\\d[\\d,]*) (binding or mandatory|non-binding|drafts) \\(of (\\d[\\d,]*)\\)$",
    "{1} — {t3}: {2} (من {4})"
