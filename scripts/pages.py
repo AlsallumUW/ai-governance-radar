@@ -260,6 +260,11 @@ def check_line(i):
 _AR_ISSUERS = None
 
 
+def _bare(name):
+    """A body's name without a trailing acronym in brackets: "Central Bank of the UAE (CBUAE)" -> "Central Bank of the UAE"."""
+    return re.sub(r"\s*\([^()]*\)\s*$", "", name or "").strip()
+
+
 def ar_issuer(name):
     """Arabic pages: an issuing body's Arabic name where the site has one (each country's translated lead institutions, the
     same source as the map panel and the Updates rows); otherwise the name as published."""
@@ -273,8 +278,9 @@ def ar_issuer(name):
             ar = i18n.content(r["jurisdiction"]["id"], "lead_institutions", en) if en else None
             if isinstance(ar, list) and len(ar) == len(en):
                 for a, b in zip(en, ar):
-                    if a and b: _AR_ISSUERS.setdefault(a.strip(), b.strip())
-    return _AR_ISSUERS.get(name.strip(), name)
+                    if a and b:
+                        _AR_ISSUERS.setdefault(a.strip(), b.strip()); _AR_ISSUERS.setdefault(_bare(a), b.strip())
+    return _AR_ISSUERS.get(name.strip()) or _AR_ISSUERS.get(_bare(name)) or name
 
 
 def inst_item(i, orgs, srcs, cats, regional_from=None):

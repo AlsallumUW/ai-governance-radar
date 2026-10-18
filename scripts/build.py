@@ -125,7 +125,8 @@ def issuer_names(D):
         ar = i18n.content(jid, "lead_institutions", en) if en else None
         if isinstance(ar, list) and len(ar) == len(en):
             for e, a in zip(en, ar):
-                if e and a: out.setdefault(e.strip(), a.strip())
+                if e and a:
+                    out.setdefault(e.strip(), a.strip()); out.setdefault(re.sub(r"\s*\([^()]*\)\s*$", "", e).strip(), a.strip())
     return out
 
 
