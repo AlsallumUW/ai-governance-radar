@@ -1621,9 +1621,9 @@
       "evidence_reference": "rus-deep-review-U3-2026-10-11",
       "link_status": "reachable",
       "document_access_type": "original_government_document",
-      "lifecycle": "consultation",
+      "lifecycle": "consultation_closed",
       "first_recorded": "2026-10-11",
-      "last_changed": null,
+      "last_changed": "2026-10-19",
       "source_id": "s-d745356b87dc",
       "organization_id": "o-8d70119a66c9"
     },
@@ -1782,9 +1782,9 @@
       "evidence_reference": "rus-deep-review-U3-2026-10-11",
       "link_status": "reachable",
       "document_access_type": "original_government_document",
-      "lifecycle": "consultation",
+      "lifecycle": "consultation_closed",
       "first_recorded": "2026-10-11",
-      "last_changed": null,
+      "last_changed": "2026-10-19",
       "source_id": "s-a64308d207cf",
       "organization_id": "o-8d70119a66c9"
     },
@@ -4355,6 +4355,36 @@
     "technical_note": "Coverage note (original): Technical review notes: Backfill run 2026-10-11 in four parts (U1 federal law and decrees; U2 federal government, ministries and national standards; U3 regulators; U4 top regions only, 30-minute cap per PROTOCOL §6). RUS had no earlier records. Each document was tried at most twice (curl --max-time 60, then WebFetch); if both failed the record was marked located-only or held as a lead. Reachable official hosts: kremlin.ru (consolidated acts), publication.pravo.gov.ru (search API; many PDFs are scans without a text layer, read as page images), government.ru, cbr.ru, mos.ru (documents API), protect.gost.ru (Rosstandart catalogue). Blocked by both methods: digital.gov.ru, economy.gov.ru, ac.gov.ru, rkn.gov.ru, rospatent.gov.ru, fas.gov.ru, cikrf.ru, fstec.ru, edu.gov.ru, minobrnauki, minpromtorg, mil.ru, rst.gov.ru, sozd.duma.gov.ru (bill statuses come from news-based discovery only), pravo.gov.ru, Tatarstan and Saint Petersburg portals. Located-only (12): national AI standards (GOST R and PNST) read from catalogue records only (12 of 119 AI standards on the portal recorded; sector series not itemised). Overlaps resolved: Order 2129-r and Resolution 861 (U1/U2), Resolution 1684 and Roszdravnadzor Orders 4472/123 (U2/U3) recorded once; duplicate world events dropped. Future-dated event (243-FZ main provisions from 2027-03-01) not logged; the date is in the record. U4: Moscow partial (only Resolution 2662-PP readable; acts implementing 123-FZ not found on mos.ru), Tatarstan and Saint Petersburg leads only, Nizhny Novgorod and Novosibirsk not reached. sandbox findings are the experimental legal regimes. procurement: no material found. index-readiness: no material found. international: no material found."
   },
   "changes": [
+    {
+      "id": "c-e500df2bdd00",
+      "date": "2026-10-19",
+      "recorded": "2026-10-19",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "RUS",
+      "instrument_id": "i-1e2b21021aa7",
+      "title": "Consultation paper 'Application of Artificial Intelligence in the Financial Market'",
+      "detail": "Record updated: lifecycle.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-f55f521961b5",
+      "date": "2026-10-19",
+      "recorded": "2026-10-19",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "RUS",
+      "instrument_id": "i-9bfb5e9bf8e8",
+      "title": "Consultation paper 'Application of Artificial Intelligence in the Financial Market: Current Status and Conditions for Further Development'",
+      "detail": "Record updated: lifecycle.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
     {
       "id": "c-d897cfcf7ddf",
       "date": "2026-10-11",

@@ -1775,7 +1775,7 @@
       "category": "drafts",
       "subcategory": null,
       "legal_status": "consultation_draft",
-      "lifecycle": "consultation",
+      "lifecycle": "consultation_closed",
       "publication_date": "2026-07-14",
       "effective_date": null,
       "last_amended_date": null,
@@ -1809,7 +1809,7 @@
       "source_id": "s-22b5b728e2d0",
       "organization_id": "o-66f7c8e954e0",
       "first_recorded": "2026-10-11",
-      "last_changed": "2026-07-14"
+      "last_changed": "2026-10-19"
     },
     {
       "id": "i-533489a12d2e",
@@ -3517,6 +3517,21 @@
     "technical_note": "Method note (original): Deep review completed on 11 October 2026, covering federal laws and regulations, the federal government and ministries, the data protection authority, RTR, KommAustria and the competition authority, and the Länder of Vienna, Upper Austria and Styria. Searches were made in German and English. EU instruments such as the AI Act are recorded in the EU file. The Financial Market Authority's website could not be read automatically, so its AI material is pending. RTR's AI Act guidance pages carry no dates and are held as pending. Pending: the national AI Act implementation law and authority designations, the amendment to administrative procedure law allowing fully automated decisions (passed by Parliament in September 2026, not yet published), the 2026 criminal law amendment on artificially created material, a new adaptive AI strategy announced for 2027, and Styria (no official AI document found).\n\nCoverage note (original): Technical review notes: Backfill run 2026-10-11 in four parts (A1 national law; A2 federal government incl. ministry-level search; A3 regulators; A4 top Länder, 30-minute cap per PROTOCOL §6, finished in about 8 minutes). Run in parallel with CHE on separate branches. No interruption; the three earlier records were re-checked and fixed (full German titles, institutions instead of domains). EU-level instruments are attached via data/regional/EU.json and not recorded here. Overlaps resolved: BGBl. I 6/2024 (AI Service Desk, found by A1, A2, A3) and BGBl. I 76/2026 (school law, A1/A2) recorded once; duplicate events dropped. fma.gv.at returned a 403 bot challenge to curl and WebFetch (FMA AI page, survey and PDFs are leads). dsb.gv.at reset connections intermittently (retries succeeded). No ÖNORM adoption of ISO/IEC 42001 could be confirmed (shop search renders only with JavaScript; lead). Styria: RIS Land law and steiermark.at searched, no AI instrument. Located-only (1): the undated 2023 'Schulpaket KI'. cyber-security: no material found. standards: no material found. index-readiness: no material found."
   },
   "changes": [
+    {
+      "id": "c-3309f0c62e37",
+      "date": "2026-10-19",
+      "recorded": "2026-10-19",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "AUT",
+      "instrument_id": "i-d5176eb9b251",
+      "title": "Draft Regulation of the Federal Minister of Education amending the curricula of academic secondary schools (AHS), including the new subject \"Informatics and Artificial Intelligence\" (consultation draft, July 2026)",
+      "detail": "Record updated: lifecycle.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
     {
       "id": "c-53828fb34473",
       "date": "2026-10-13",

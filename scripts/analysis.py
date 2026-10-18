@@ -562,7 +562,7 @@ def analysis_page(D, recs, ctx):
     lvl = {k: sum(1 for i in N["C"] if i.get("government_level") == k) for k in ("national", "subnational", "local")}
     grp = {g: sum(1 for i in N["C"] if kind(i) == g) for g in GROUPS}
     zero = sum(1 for c in N["cids"] if not N["by_c"][c])
-    stats = [("Countries", len(N["countries"])), ("Instruments", f"{n_all:,}"), ("Leads", f"{N['leads']:,}"), ("Countries with none found", zero)]
+    stats = [("Countries", len(N["countries"])), ("Instruments", f"{n_all:,}"), ("Countries with none found", zero)]
     recon = [
         ("Instruments in the full export (CSV / JSON)", n_all),
         ("· national", lvl["national"]), ("· state / provincial", lvl["subnational"]), ("· local", lvl["local"]), ("· regional bodies", nR),

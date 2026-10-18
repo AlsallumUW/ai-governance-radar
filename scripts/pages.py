@@ -257,10 +257,30 @@ def check_line(i):
     return f'<p class="inst-check">{e(i18n.T(tpl, domain=host, date=fmt_date(i["verification_date"])))}</p>'
 
 
+_AR_ISSUERS = None
+
+
+def ar_issuer(name):
+    """Arabic pages: an issuing body's Arabic name where the site has one (each country's translated lead institutions, the
+    same source as the map panel and the Updates rows); otherwise the name as published."""
+    global _AR_ISSUERS
+    if i18n.LANG != "ar" or not name: return name
+    if _AR_ISSUERS is None:
+        from common import jurisdiction_files, load
+        _AR_ISSUERS = {}
+        for f in jurisdiction_files():
+            r = load(f); en = list((r.get("narrative") or {}).get("lead_institutions") or [])
+            ar = i18n.content(r["jurisdiction"]["id"], "lead_institutions", en) if en else None
+            if isinstance(ar, list) and len(ar) == len(en):
+                for a, b in zip(en, ar):
+                    if a and b: _AR_ISSUERS.setdefault(a.strip(), b.strip())
+    return _AR_ISSUERS.get(name.strip(), name)
+
+
 def inst_item(i, orgs, srcs, cats, regional_from=None):
     title = i.get("english_title") or i.get("official_title")
     orig = i.get("official_title") if i.get("official_title") and i.get("official_title") != title else None
-    issuer = i.get("issuing_authority") or orgs.get(i.get("organization_id"), {}).get("name") or i.get("publisher_name")
+    issuer = ar_issuer(i.get("issuing_authority") or orgs.get(i.get("organization_id"), {}).get("name") or i.get("publisher_name"))
     st = i.get("legal_status"); src = srcs.get(i.get("source_id"), {})
     dates = []
     if i.get("publication_date"): dates.append(i18n.T("Published {date}", date=f'<time datetime="{e(i["publication_date"])}">{e(fmt_date(i["publication_date"]))}</time>'))
@@ -474,7 +494,8 @@ def country_page(j, D, rec, flags, ctx):
     hero_img = ph.get("hero")
     H = [head(title, desc, canon, preload=hero_img), f'<body class="cp" data-jid="{e(jid)}" data-build="{e(D["meta"].get("build_date") or "")}">',
          topbar(secs, bar_ident(j["name"], stats)), '<main id="main">']
-    eyebrow = e(j.get("region") or "") + (' · Country profile' if j.get("region") else 'Country profile')
+    reg = SUBREGION.get(jid) or j.get("region") or ""   # UN M49 subregion, e.g. "Western Asia"
+    eyebrow = e(reg) + (' · Country profile' if reg else 'Country profile')
     h1 = f'<h1>{"<img class=flag src=" + chr(34) + flag + chr(34) + " alt=" + chr(34) + chr(34) + ">" if flag else ""}{e(j["name"])}</h1>'
     H.append(hero(eyebrow, h1, stats, photo=hero_img, art=None if hero_img else geo.silhouette(jid, j["name"]), info=count_info()))
     H.append('<div class="page layout">' + rail(secs, geo.locator(jid, j["name"])) + '<div class="content">')
