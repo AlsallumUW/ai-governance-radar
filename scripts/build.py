@@ -219,6 +219,8 @@ def build():
     print(f"built dist/index.html ({len(t)/1e6:.1f} MB): {len(D['jurisdictions'])} jurisdictions, "
           f"{len(D['instruments'])} instruments, {len(D['changes'])} change events, "
           f"{D['meta']['deeply_reviewed_country_count']} deep-reviewed countries; {n_pages} country/body pages ({n_ar} in Arabic); cache-busted {n_files} asset URLs in {n_busted} pages")
+    import check_ar_charts
+    return check_ar_charts.main()   # fails the build if an Arabic chart tooltip or legend is left in English
 
 
 if __name__ == "__main__":
