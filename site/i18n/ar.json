@@ -797,6 +797,30 @@
  },
  "patterns": [
   [
+   "^1 document with updates in the last (\\d+) days$",
+   "وثيقة واحدة محدَّثة خلال آخر {1} يومًا"
+  ],
+  [
+   "^(\\d[\\d,]*) documents with updates in the last (\\d+) days$",
+   "وثائق محدَّثة خلال آخر {2} يومًا: {1}"
+  ],
+  [
+   "^(.+): 1 document with updates in the last (\\d+) days$",
+   "{t1}: وثيقة واحدة محدَّثة خلال آخر {2} يومًا"
+  ],
+  [
+   "^(.+): (\\d[\\d,]*) documents with updates in the last (\\d+) days$",
+   "{t1}: وثائق محدَّثة خلال آخر {3} يومًا: {2}"
+  ],
+  [
+   "^documents? with updates · (.+)$",
+   "وثائق محدَّثة · {t1}"
+  ],
+  [
+   "^documents? with updates$",
+   "وثائق محدَّثة"
+  ],
+  [
    "^Updates in the last (\\d+) days$",
    "التحديثات خلال آخر {1} يومًا"
   ],
