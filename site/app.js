@@ -55,10 +55,13 @@ const DAY=864e5,TODAY=(()=>{const t=new Date();t.setHours(0,0,0,0);return t.getT
 /* pulses follow the Updates window (30/60/90 days, default 30); state/provincial actions sit in their country's changes */
 let winDays=(()=>{const d=new URLSearchParams(Q0).get('days');return ['30','60','90'].includes(d)?+d:30})();
 const recent=new Map(),recentItems=new Map();
-function countRecent(){recent.clear();recentItems.clear();D.changes.forEach(c=>{const id=c.jurisdiction_id;if(c.kind!=='world'||jurisdictionByID.get(id)?.type!=='country'||!inLast(c.date,winDays))return;recent.set(id,(recent.get(id)||0)+1);if(!recentItems.has(id))recentItems.set(id,[]);recentItems.get(id).push(c)})}
+function countRecent(){recent.clear();recentItems.clear();D.changes.forEach(c=>{const id=c.jurisdiction_id;if(c.kind!=='world'||jurisdictionByID.get(id)?.type!=='country'||!inLast(c.date,winDays))return;if(!recentItems.has(id))recentItems.set(id,[]);recentItems.get(id).push(c)});recentItems.forEach((ev,id)=>recent.set(id,groupDocs(ev).length))}
+/* one entry per document: a document's milestones (adopted, published, in force...) are grouped by instrument_id; events without one stay single; newest first */
+function groupDocs(events){const m=new Map();events.forEach(c=>{const k=c.instrument_id?c.jurisdiction_id+'|'+c.instrument_id:'c|'+c.id;if(!m.has(k))m.set(k,{key:k,jid:c.jurisdiction_id,inst:instrumentByID.get(c.instrument_id)||null,events:[]});m.get(k).events.push(c)});
+  const out=[...m.values()];out.forEach(g=>{g.events.sort((a,b)=>(a.date||'').localeCompare(b.date||''));g.latest=g.events[g.events.length-1];g.date=g.latest.date;g.review=g.events.some(c=>c.needs_review)});return out.sort((a,b)=>(b.date||'').localeCompare(a.date||''))}
 countRecent();
 /* "What's new" panel and pulse legend labels: English here, translated on Arabic pages by site/i18n/ar.json (checked by check_ar_charts.py) */
-const WN_L=/*WN_L*/{"legend":"Updates in the last {d} days","n1":"1 update in the last {d} days","n":"{n} updates in the last {d} days","sub":"{s} of {n} are state/provincial-level","more":"+ {m} more on the country profile","open":"Open country profile →","src":"Official source ↗","close":"Close","aria":"{c}: updates in the last {d} days","pulse1":"{c}: 1 update in the last {d} days","pulse":"{c}: {n} updates in the last {d} days","card1":"1 government action in the last {d} days","card":"{n} government actions in the last {d} days","published":"Published","adopted":"Adopted","applied":"In force","consultation":"Consultation opened","revised":"Amended","superseded":"Superseded","repealed":"Repealed","event":"Event","binding":"Binding or mandatory","soft":"Non-binding","draft":"Draft"}/*/WN_L*/;
+const WN_L=/*WN_L*/{"legend":"Updates in the last {d} days","n1":"1 document with updates in the last {d} days","n":"{n} documents with updates in the last {d} days","sub":"{s} of {n} are state/provincial-level","more":"+ {m} more on the country profile","open":"Open country profile →","src":"Official source ↗","close":"Close","aria":"{c}: updates in the last {d} days","pulse1":"{c}: 1 document with updates in the last {d} days","pulse":"{c}: {n} documents with updates in the last {d} days","card1":"1 document with updates in the last {d} days","card":"{n} documents with updates in the last {d} days","published":"Published","adopted":"Adopted","applied":"In force","consultation":"Consultation opened","revised":"Amended","superseded":"Superseded","repealed":"Repealed","event":"Event","binding":"Binding or mandatory","soft":"Non-binding","draft":"Draft"}/*/WN_L*/;
 const L=(k,o={})=>WN_L[k].replace(/\{(\w)\}/g,(_,x)=>o[x]??'');
 const pulseR=n=>Math.sqrt(Math.min(Math.max(n,1),10));
 const hasPulse=id=>recent.has(id)&&countryPaths.has(id)&&!countryPaths.get(id).classList.contains('is-dim');
@@ -139,14 +142,19 @@ const ACT={published:'published',adopted:'adopted',applied:'applied',consultatio
 const SUBN=new Set(['subnational','local']);
 const fmtShort=d=>{if(!d)return '';if(d.length<10)return fmtDate(d);return new Date(d+'T00:00:00').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'})};
 let wnFor=null,wnReturn=null,wnAt=null;
+const THIS_YEAR=String(new Date(TODAY).getFullYear());
+/* short milestone date: day and month (year only when it is not this year); Arabic month names on Arabic pages */
+const dayMonth=d=>{if(!d||d.length<10)return fmtDate(d);let t=fmtShort(d);if(AR&&I18N.date&&I18N.date(t))t=I18N.date(t);return d.slice(0,4)===THIS_YEAR?t.replace(/ \d{4}$/,''):t};
+function groupTitle(g){if(g.inst)return docTitle(g.inst);const CT=window.AR_CT||{};return CT[g.latest.id]||g.latest.title||''}
+function msHTML(g){return g.events.map(c=>`<span class="ms"><b>${esc(L(ACT[c.type]||'event'))}</b> <span class="ms-d">${esc(dayMonth(c.date))}</span></span>`).join('<span class="ms-sep" aria-hidden="true"> · </span>')}
 function profileURL(id){const p=new URLSearchParams(location.search);p.delete('view');if(winDays!==30)p.set('days',winDays);else p.delete('days');const s=p.toString();return (jurisdictionByID.get(id)?.type!=='country'?'body/':'country/')+id+'/'+(s?'?'+s:'')}
-function openUpdates(id,ev){const j=jurisdictionByID.get(id),items=(recentItems.get(id)||[]).slice().sort((a,b)=>(b.date||'').localeCompare(a.date||''));if(!j||!items.length){select(id);return}
+function openUpdates(id,ev){const j=jurisdictionByID.get(id),docs=groupDocs(recentItems.get(id)||[]);if(!j||!docs.length){select(id);return}
   const same=!panel.hidden&&wnFor===id;if(!same)wnReturn=document.activeElement;unpin();hideTip();
-  const CT=window.AR_CT||{},n=items.length,sub=items.filter(c=>SUBN.has(instrumentByID.get(c.instrument_id)?.government_level)).length,shown=items.slice(0,8);
+  const n=docs.length,sub=docs.filter(g=>SUBN.has(g.inst?.government_level)).length,shown=docs.slice(0,8);
   panel.innerHTML=`<div class="wn-h"><div><h3>${flag(j)}<span>${esc(j.name)}</span></h3><p class="wn-n">${esc(L(n===1?'n1':'n',{n,d:winDays}))}</p>${sub?`<p class="wn-sub">${esc(L('sub',{s:sub,n}))}</p>`:''}</div><button class="wn-x" type="button" aria-label="${esc(L('close'))}">×</button></div>`
-   +`<ul class="wn-list">${shown.map(c=>{const i=instrumentByID.get(c.instrument_id),t=i?docTitle(i):(CT[c.id]||c.title),iss=i&&(i.publisher_name||i.issuing_authority),src=c.source_url||i?.source_url,k=i&&kindOf(i);
-      return `<li><div class="wn-meta"><span>${esc(fmtShort(c.date))}</span><span class="wn-act">${esc(L(ACT[c.type]||'event'))}</span>${k?`<span class="wn-chip ${k==='binding'?'b':k==='draft'?'d':'n'}">${esc(L(k))}</span>`:''}</div>`
-       +`<div class="wn-t" dir="auto">${esc(t)}</div>`+(iss?`<div class="wn-iss" dir="auto">${esc(iss)}</div>`:'')
+   +`<ul class="wn-list">${shown.map(g=>{const i=g.inst,iss=i&&(i.publisher_name||i.issuing_authority),src=g.latest.source_url||i?.source_url,k=i&&kindOf(i);
+      return `<li><div class="wn-meta"><span>${esc(fmtShort(g.date))}</span>${k?`<span class="wn-chip ${k==='binding'?'b':k==='draft'?'d':'n'}">${esc(L(k))}</span>`:''}</div>`
+       +`<div class="wn-ms">${msHTML(g)}</div><div class="wn-t" dir="auto">${esc(groupTitle(g))}</div>`+(iss?`<div class="wn-iss" dir="auto">${esc(iss)}</div>`:'')
        +(src?`<a class="wn-src" href="${esc(src)}" target="_blank" rel="noopener noreferrer">${esc(L('src'))}</a>`:'')+'</li>'}).join('')}`
    +(n>shown.length?`<li class="wn-more">${esc(L('more',{m:n-shown.length}))}</li>`:'')+'</ul>'
    +`<div class="wn-f"><a href="${esc(profileURL(id))}">${esc(L('open'))}</a></div>`;
@@ -195,8 +203,8 @@ function placeRadar(){const o=origin(),sw=$('#sweep');const r=Math.hypot(width,h
 function startAnimation(){if(mode==='globe')startSpin()}
 reduced.addEventListener('change',()=>{if(reduced.matches)stopSpin()});
 /* "Latest" strip: the 12 most recent government actions */
-function buildLatest(){const box=$('#latestTrack');if(!box)return;const CT=window.AR_CT||{},items=D.changes.filter(c=>c.kind==='world'&&jurisdictionByID.get(c.jurisdiction_id)?.type==='country'&&ageOf(c.date)>=0).slice(0,12);
-  const one=c=>{const j=jurisdictionByID.get(c.jurisdiction_id);return `<button type="button" class="ls-item" data-latest="${j.id}">${flag(j)}<span class="ls-name">${esc(j.name)}</span><span class="ls-title" dir="auto">${esc(CT[c.id]||c.title)}</span><span class="ls-date">${esc(fmtDate(c.date))}</span></button>`};
+function buildLatest(){const box=$('#latestTrack');if(!box)return;const items=groupDocs(D.changes.filter(c=>c.kind==='world'&&jurisdictionByID.get(c.jurisdiction_id)?.type==='country'&&ageOf(c.date)>=0)).slice(0,12);
+  const one=g=>{const j=jurisdictionByID.get(g.jid);return `<button type="button" class="ls-item" data-latest="${j.id}">${flag(j)}<span class="ls-name">${esc(j.name)}</span><span class="ls-title" dir="auto">${esc(groupTitle(g))}</span><span class="ls-date">${esc(fmtDate(g.date))}</span></button>`};
   const html=items.map(one).join('');box.innerHTML=`<div class="ls-set">${html}</div><div class="ls-set ls-dup" aria-hidden="true">${html}</div>`;
   box.querySelectorAll('.ls-dup button').forEach(b=>b.tabIndex=-1);
   box.querySelectorAll('[data-latest]').forEach(b=>b.onclick=e=>{e.stopPropagation();const id=b.dataset.latest;showView('map');focusCountry(id,()=>pin(id))})}
@@ -242,5 +250,5 @@ $('#statRecords').textContent=D.instruments.length;$('#statNational').textConten
 (function restore(){const p=new URLSearchParams(Q0);(p.get('cat')||'').split(',').filter(c=>D.categories[c]).forEach(c=>{filters.add(c);const b=$(`.chip[data-cat="${c}"]`);if(b){b.classList.add('active');b.setAttribute('aria-pressed','true')}});if(TYPES.some(x=>x[0]===p.get('type'))){docType=p.get('type');$('#typeFilter').value=docType}if(ORGS.some(x=>x[0]===p.get('org'))){orgType=p.get('org');$('#orgFilter').value=orgType}if(p.get('status')&&$(`#statusFilter option[value="${p.get('status')}"]`)){status=p.get('status');$('#statusFilter').value=status}if(p.get('regional')==='1'){includeRegional=true;$('#includeRegional').checked=true}const BODY_ALIAS={ISESCO:'ICESCO'};if(BODY_ALIAS[p.get('body')])p.set('body',BODY_ALIAS[p.get('body')]);if(p.get('body')&&jurisdictionByID.get(p.get('body'))?.type!=='country'){body=p.get('body');$$('[data-body]').forEach(b=>{b.classList.toggle('active',b.dataset.body===body);b.setAttribute('aria-pressed',String(b.dataset.body===body))})}})();
 try{initMap()}catch(e){console.error(e);$('#mapError').hidden=false}
 (function(){const p=new URLSearchParams(Q0);if(p.get('view')==='updates')showView('updates');if(p.get('about')==='method'){p.delete('about');history.replaceState(null,'',location.pathname+(p.toString()?'?'+p:''));$('#methodDialog').showModal()}})();
-window.RADAR_TEST={data:D,initialQuery:Q0,ageOf,inLast,syncURL,select,focusCountry,setMode,pin,get mode(){return mode},get rot(){return rot},recent,inherited,national,filters,reduced,countryPaths,centers,geometryCount:countriesFC.features.length,resetMap,zoomTo,applyHighlight,setBody,showView,get transform(){return transform},projection,exportCountry,exportAll};
+window.RADAR_TEST={data:D,groupDocs,msHTML,groupTitle,kindOf,dayMonth,initialQuery:Q0,ageOf,inLast,syncURL,select,focusCountry,setMode,pin,get mode(){return mode},get rot(){return rot},recent,inherited,national,filters,reduced,countryPaths,centers,geometryCount:countriesFC.features.length,resetMap,zoomTo,applyHighlight,setBody,showView,get transform(){return transform},projection,exportCountry,exportAll};
 })();
