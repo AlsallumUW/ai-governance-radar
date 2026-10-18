@@ -134,6 +134,7 @@ Also for the country:
 - Do not infer legal effect. A strategy is not binding. A draft is not adopted until an official source says so.
 - If two official sources conflict (e.g. dates), record the primary legal text's value and add a note in `current_status`.
 - Never use file metadata (creation or modification dates) as a publication date.
+- A re-issued cover is last_amended_date, not publication_date. When an issuer republishes a document with a new cover date or edition, `publication_date` stays the first issue and the new cover date goes in `last_amended_date`; say both in `current_status` (e.g. "First issued January 2024; current edition version 1 dated May 2025 (SDAIA-P115).").
 - Effective dates computed from an instrument's own commencement clause and its official publication date are allowed, with the clause cited. Only file metadata is excluded.
 - Keep instrument ids stable. When updating a record, edit it in place; never delete and re-create it.
 
