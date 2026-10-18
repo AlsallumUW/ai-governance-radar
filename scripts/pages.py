@@ -542,8 +542,7 @@ def country_page(j, D, rec, flags, ctx):
     m += f'<p>Coverage: {cov_counts["found"]} of the 18 governance categories have documents; {cov_counts["none"]} were searched with no material found; {cov_counts["na"]} were not assessed.' + (f' Review date {e(fmt_date(audit.get("review_date")))}.' if audit.get("review_date") else "") + '</p>'
     if audit.get("no_material_found_note"):
         m += f'<p class="cov-note"{ar_attr(cov_ar)}>{e(cov_ar or audit["no_material_found_note"])}{i18n.orig_link("method") if cov_ar else ""}</p>'
-    if audit.get("technical_note"):
-        m += f'<details class="tech"><summary>Technical coverage note</summary><p lang="en" dir="ltr">{e(audit["technical_note"])}</p></details>'
+    # coverage_audit.technical_note stays in the data files (researchers only); it is not shown on public pages
     m += ('<p>Only official government and official-body sources are recorded. Dates come from the document or the issuer\'s own page; empty fields mean not verified. '
           '<a href="../../?about=method" data-keep-query>Read the full methodology</a>.</p>'
           '<p class="export"><span>Download this profile:</span><button type="button" class="btn" data-export="csv">CSV</button><button type="button" class="btn" data-export="json">JSON</button></p></section>')
