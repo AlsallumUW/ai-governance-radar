@@ -10,14 +10,14 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": "The Central African Republic has no published AI-specific law, strategy or guidance. Its only AI-relevant national instrument is the 2024 personal data protection law (Law 24.001), which defines profiling and gives people the right to know and contest the logic of automated decisions with legal effects. A national AI strategy for 2024-2028 has been mentioned by a minister but not published. Several government websites, including the official gazette, the government portal and the digital ministry, could not be accessed during this review.",
+    "summary": "The Central African Republic has no published AI-specific law, strategy or guidance. Its only AI-relevant national instrument is the 2024 personal data protection law (Law 24.001), which defines profiling and gives people the right to know and contest the logic of automated decisions with legal effects. A national AI strategy for 2024-2028 has been mentioned by a minister but not published, and a 2024 cybersecurity law and an announced AI centre of excellence have no official text online. The government portal could be searched, but the official gazette, parliament, presidency and digital ministry websites could not be accessed.",
     "lead_institutions": [
       "Ministry of Posts, Telecommunications and Digital Economy",
       "ARCEP-RCA",
       "National Assembly"
     ],
     "last_deep_review": "2026-10-12",
-    "review_notes": "This review was carried out on 12 October 2026, but the official gazette, the government portal, the digital ministry and parliament websites could not be accessed, so only one document could be read. The Central African Republic is marked for a later retry."
+    "review_notes": "On 18 October 2026 the government portal and the telecoms regulator's website were searched again and the data protection law was re-checked; the official gazette, National Assembly, presidency, digital ministry and procurement authority websites could not be accessed. The national AI strategy, the 2024 cybersecurity law and the AI centre of excellence remain pending until official texts are published."
   },
   "instruments": [
     {
@@ -65,14 +65,14 @@
         "Journal officiel reference not found online"
       ],
       "language": "fr",
-      "verification_date": "2026-10-12",
+      "verification_date": "2026-10-18",
       "first_recorded": "2026-10-12",
       "last_changed": null,
       "verification_level": "reviewed_primary_metadata",
       "link_status": "reachable",
       "document_access_type": "original_government_document",
       "source_id": "s-32eecd170a22",
-      "evidence_reference": "curl (browser user agent, --max-time 60; first attempt reset, retry succeeded): 23-page scanned PDF (5.85 MB) read via pdftotext; promulgation date 25 January 2024 read from the signature page image (Fait à Bangui, le 25 JAN 2024, signed by President Faustin Archange Touadéra)"
+      "evidence_reference": "curl (browser user agent, --max-time 60; first attempt reset, retry succeeded): 23-page scanned PDF (5.85 MB) read via pdftotext; promulgation date 25 January 2024 read from the signature page image (Fait à Bangui, le 25 JAN 2024, signed by President Faustin Archange Touadéra); local-retry-2026-10-18: official PDF re-downloaded via curl (HTTP 200, 23 pages, 5,850,740 bytes), text re-read; fields unchanged."
     }
   ],
   "organizations": [
@@ -105,8 +105,8 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60; first attempt reset, retry succeeded): 23-page scanned PDF (5.85 MB) read via pdftotext; promulgation date 25 January 2024 read from the signature page image (Fait à Bangui, le 25 JAN 2024, signed by President Faustin Archange Touadéra)",
+      "checked_date": "2026-10-18",
+      "check_method": "local-retry-2026-10-18: curl with browser user agent, HTTP 200 application/pdf, 23-page scanned PDF re-read",
       "http_status": 200,
       "final_url": "https://arcep.cf/documents/textes/lois/Loi_24_001_portant_protection_des_donnes_a_caractere_personnel.PDF",
       "link_status": "reachable",
@@ -172,7 +172,14 @@
       "site:arcep.cf",
       "République centrafricaine Convention 108 adhésion protection des données Conseil de l'Europe",
       "Gourna Zacko \"intelligence artificielle\" stratégie 2024-2028 Centrafrique",
-      "Centrafrique ministère économie numérique plan stratégique IA validation atelier PNUD UNESCO RAM"
+      "Centrafrique ministère économie numérique plan stratégique IA validation atelier PNUD UNESCO RAM",
+      "gouvernement.cf site search: intelligence artificielle",
+      "gouvernement.cf site search: protection des données",
+      "gouvernement.cf site search: cybersécurité",
+      "gouvernement.cf site search: numérique",
+      "Centrafrique loi cybersécurité cybercriminalité 2024 texte pdf site officiel",
+      "République centrafricaine \"intelligence artificielle\" stratégie nationale 2025 ministère économie numérique postes télécommunications",
+      "arcep.cf documents textes lois PDF Loi 24 002 cybersécurité"
     ],
     "review_date": "2026-10-12",
     "passes": {
@@ -191,10 +198,10 @@
       "regional_inheritance": "COMPLETE",
       "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "National law, the government, ministries and regulators were searched in French and English. No qualifying documents were found for strategy, government AI governance, ethics, risk and assurance, public-sector AI, procurement, cybersecurity, transparency, standards, regulatory sandboxes, indices and readiness, sectoral rules, generative AI, drafts, international instruments or historical publications. The official gazette, National Assembly and government sites were unavailable, so these remain to be checked.",
+    "no_material_found_note": "National law, the government portal, ministries and regulators were searched in French and English, and no qualifying AI documents were found beyond the 2024 data protection law. The official gazette, National Assembly and digital ministry websites could not be accessed, so these remain to be checked.",
     "discovery_result_count": 10,
     "focused_result_count": 12,
-    "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. Journal officiel portal not reachable; assemblee-nationale.cf 502; gouvernement.cf, numerique.gouv.cf and sgg.cf reset/502. ARCEP-RCA site under construction (hosts law PDFs only). Law 24.001 read from the ARCEP-RCA scan (date from the signature page). BEAC/COBAC regional supervision not searched. Not a party to Convention 108. Units covered: Law: Data protection law 24.001 (2024) read in full from ARCEP-RCA; no AI-specific law, AI bill or deepfake/algorithm provision found. Journal officiel and National Assembly sites unreachable; searched, nothing else found.; Government: Searched for national AI strategy, digital strategy with AI pillar and public-sector AI guidance: a 2024-2028 AI strategy is claimed in a ministerial speech but no official text exists online (lead). Government portals (gouvernement.cf, numerique.gouv.cf, sgg.cf) unreachable.; Ministries: Searched education, health, justice, defence, finance, labour, interior AI documents: searched, nothing found.; Regulators: ARCEP-RCA (site under construction; only law PDFs hosted), data protection agency (no website found), cyber agency ANCY (no website found): no AI-specific documents found. Financial supervision is regional (BEAC/COBAC), not searched as national. No Sango-language AI material exists online; searches run in French and English.. Not reached: Journal officiel de la République centrafricaine (no online portal reachable); Assemblée nationale (assemblee-nationale.cf unreachable); gouvernement.cf / ministry digital economy sites (connection reset or 502). Could not verify: Journal officiel reference of Law 24.001; Whether the data protection agency has been set up; Official text of the 2024 cybersecurity law. strategy, government-governance, ethics, risk-assurance, public-sector, procurement, cyber-security, transparency, standards, sandbox, index-readiness, sectoral, generative-ai, drafts, international, historical: no material found."
+    "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. Journal officiel portal not reachable; assemblee-nationale.cf 502; gouvernement.cf, numerique.gouv.cf and sgg.cf reset/502. ARCEP-RCA site under construction (hosts law PDFs only). Law 24.001 read from the ARCEP-RCA scan (date from the signature page). BEAC/COBAC regional supervision not searched. Not a party to Convention 108. Units covered: Law: Data protection law 24.001 (2024) read in full from ARCEP-RCA; no AI-specific law, AI bill or deepfake/algorithm provision found. Journal officiel and National Assembly sites unreachable; searched, nothing else found.; Government: Searched for national AI strategy, digital strategy with AI pillar and public-sector AI guidance: a 2024-2028 AI strategy is claimed in a ministerial speech but no official text exists online (lead). Government portals (gouvernement.cf, numerique.gouv.cf, sgg.cf) unreachable.; Ministries: Searched education, health, justice, defence, finance, labour, interior AI documents: searched, nothing found.; Regulators: ARCEP-RCA (site under construction; only law PDFs hosted), data protection agency (no website found), cyber agency ANCY (no website found): no AI-specific documents found. Financial supervision is regional (BEAC/COBAC), not searched as national. No Sango-language AI material exists online; searches run in French and English.. Not reached: Journal officiel de la République centrafricaine (no online portal reachable); Assemblée nationale (assemblee-nationale.cf unreachable); gouvernement.cf / ministry digital economy sites (connection reset or 502). Could not verify: Journal officiel reference of Law 24.001; Whether the data protection agency has been set up; Official text of the 2024 cybersecurity law. strategy, government-governance, ethics, risk-assurance, public-sector, procurement, cyber-security, transparency, standards, sandbox, index-readiness, sectoral, generative-ai, drafts, international, historical: no material found. Local retry 2026-10-18 (home connection, Saudi Arabia, ~20 min): www.gouvernement.cf now opens (HTTP 200; Drupal portal last updated ~2018; site search for intelligence artificielle, protection des données, cybersécurité returned no results; numérique returned only a fibre-optic project and a health donation item). www.arcep.cf opens (HTTP 200, still 'site en construction'); Law 24.001 PDF re-downloaded HTTP 200 and re-read; arcep.cf/documents/ and /documents/textes/lois/ directory listings 403; guessed cybersecurity-law PDF path 404. DNS does not resolve (curl and headless Edge): numerique.gouv.cf, www.sgg.cf, assemblee-nationale.cf and www.assemblee-nationale.cf, www.presidence.cf, www.journalofficiel.cf, www.armp.cf, ancy.cf. Web discovery found only press coverage of the cybersecurity law (voted 25 January 2024, creates ANCY) and of the AI centre of excellence; no official texts. No new instruments."
   },
   "changes": [
     {
@@ -248,21 +255,21 @@
       "title": "Stratégie nationale sur l'intelligence artificielle 2024-2028",
       "english_title": "National Artificial Intelligence Strategy 2024-2028",
       "issuing_authority": "Ministry of Posts and Telecommunications / Ministry of Digital Economy",
-      "note": "Minister Justin Gourna Zacko reportedly said at an Abidjan digital event (2024) that the country had adopted a national AI strategy for 2024-2028; no official text or adoption act found on any government site. Possibly a reference to the digital pillar of the Plan national de développement 2024-2028.",
+      "note": "Minister Justin Gourna Zacko reportedly said at an Abidjan digital event (2024) that the country had adopted a national AI strategy for 2024-2028; no official text or adoption act found on any government site. Possibly a reference to the digital pillar of the Plan national de développement 2024-2028. 2026-10-18: government portal search for 'intelligence artificielle' returned no results; digital ministry site does not resolve; still no official text.",
       "found": "2026-10-12"
     },
     {
       "title": "Loi relative à la cybersécurité et à la lutte contre la cybercriminalité",
       "english_title": "Law on Cybersecurity and the Fight against Cybercrime",
       "issuing_authority": "National Assembly",
-      "note": "Voted 25 January 2024 per press reports; creates a national cybersecurity agency (ANCY). Not AI-specific; official text not found online. Check for any AI-relevant provisions once published.",
+      "note": "Voted 25 January 2024 per press reports; creates a national cybersecurity agency (ANCY). Not AI-specific; official text not found online. Check for any AI-relevant provisions once published. 2026-10-18: not found on the government portal or the telecoms regulator's site; gazette and parliament sites do not resolve; still no official text.",
       "found": "2026-10-12"
     },
     {
       "title": "Centre d'excellence en intelligence artificielle",
       "english_title": "AI Centre of Excellence (partnership with Dure Technologies)",
       "issuing_authority": "Government of the Central African Republic",
-      "note": "Announced 24 June 2025 per press; no official founding instrument found.",
+      "note": "Announced 24 June 2025 per press; no official founding instrument found. 2026-10-18: no official founding instrument found on the government portal; still press-only.",
       "found": "2026-10-12"
     }
   ]
