@@ -9,7 +9,7 @@ sorting, filters, chart/table toggles, tooltips and the per-country export.
 """
 from urllib.parse import urlparse
 import collections, datetime as dt, html, json, os, re, shutil
-from common import ROOT
+from common import ROOT, public
 import geo
 import i18n
 from subregions import SUBREGION
@@ -782,7 +782,7 @@ def write_all(D, recs, out, flags, mirror=False):
             p = out / "body" / j["id"]; html_, bundle = body_page(j, D, rec, flags, ctx)
         p.mkdir(parents=True, exist_ok=True); (p / "index.html").write_text(html_, encoding="utf-8"); n += 1
         # the export bundle is fetched only when someone downloads the profile, so it stays out of the first page load
-        (p / "profile.json").write_text(json.dumps(bundle, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+        (p / "profile.json").write_text(json.dumps(public(bundle), ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     (out / "credits").mkdir(exist_ok=True)
     (out / "credits" / "index.html").write_text(credits_page(D, ctx), encoding="utf-8")
     for old_code, new_code in BODY_REDIRECTS.items():

@@ -67,3 +67,20 @@ def lifecycle_of(i):
     if cs.startswith(("approved", "adopted", "endorsed", "strategy approved")): return "adopted"
     if cs.startswith(("published", "normative", "mandatory", "opened")) or i.get("publication_date"): return "published"
     return "unverified"
+
+
+# ---------------------------------------------------------------- public data
+# Research-process fields stay in data/ (the repository) but never reach dist/: no notes on how a document was found,
+# checked or fetched in anything published (embedded data, data.json, profile.json, CSV and download files).
+INTERNAL_FIELDS = {"technical_note", "evidence_reference", "check_method", "search_queries", "needs_review", "final_url",
+                   "page_title", "http_status", "error", "content_type", "checked_date", "date_reviewed", "passes",
+                   "discovery_result_count", "focused_result_count", "categories_requiring_review", "categories_searched",
+                   "source_role", "publisher_name_verified", "note", "metadata_gaps"}
+# "note" is research text on leads and regional applicability rows; public notes have their own named fields
+
+
+def public(obj):
+    """A copy of obj without INTERNAL_FIELDS, at any depth."""
+    if isinstance(obj, dict): return {k: public(v) for k, v in obj.items() if k not in INTERNAL_FIELDS}
+    if isinstance(obj, list): return [public(v) for v in obj]
+    return obj

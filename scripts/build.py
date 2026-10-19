@@ -4,7 +4,7 @@
     python3 scripts/build.py            -> dist/index.html, dist/data.json, dist/changes.csv
 """
 import csv, hashlib, io, json, re, sys
-from common import ROOT, DATA, load, load_all
+from common import ROOT, DATA, load, load_all, public
 import pages
 import i18n
 
@@ -145,15 +145,15 @@ def build_ar(D, map_html, flags):
         AR.mkdir(exist_ok=True)
         inst = {i["id"]: i for i in D["instruments"]}
         ct = {c["id"]: t for c in D["changes"] if c.get("id") for t, _ in [i18n.change_title(c, inst)] if t and t != c.get("title")}
-        ct_js = ('<script>window.AR_CT=' + json.dumps(ct, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/") + ';</script>') if ct else ""
         # Updates rows: Arabic one-line event details (government actions)
         cd = {c["id"]: t for c in D["changes"] if c.get("kind") == "world" and c.get("detail") and (t := i18n.content(c["id"], "detail", c["detail"]))}
-        if cd: ct_js += '<script>window.AR_CD=' + json.dumps(cd, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/") + ';</script>'
         # living map card on the Arabic page: translated hero captions and document titles
         arm = {"captions": {cid: t for cid, ph in map_photos().items() if (t := i18n.content(f"photo:{cid}:hero", "caption", ph["caption"]))},
                "titles": {i["id"]: t for i in D["instruments"] if (t := i18n.content(i["id"], "title", i.get("english_title")))},
                "issuers": issuer_names(D)}
-        ct_js += '<script>window.AR_MAP=' + json.dumps(arm, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/") + ';</script>'
+        # Arabic tables for the home page (change titles and details, map captions, titles, issuers): one shared, cached file
+        ar_url = shared_asset("home-ar.json", json.dumps({"CT": ct, "CD": cd, "MAP": arm}, ensure_ascii=False, separators=(",", ":")))
+        ct_js = '<link rel="preload" href="' + ar_url + '" as="fetch" crossorigin="anonymous"><script>window.RADAR_ASSETS.ar=' + json.dumps(ar_url) + '</script>'
         method = f'<p class="ar-note">{i18n.T("Arabic texts of documents not published in Arabic are translations; the original text is authoritative.")}</p>'
         ar_map = i18n.translate_html(map_html).replace("</head>", ct_js + "</head>", 1)
         k = ar_map.index("</p>", ar_map.index('id="methodDialog"')) + 4      # after the dialog's first paragraph
@@ -217,24 +217,78 @@ def localise(out):
         page.write_text(t, encoding="utf-8")
 
 
+# The home page loads its data from shared, cacheable files instead of embedding them (EN and AR pages use the same
+# files; each URL carries a content hash so a new build is never served from an old cache):
+#   assets/data.min.json     the fields the map, panel and Updates tab use
+#   assets/world.topo.json   full country and land geometry; assets/world.topo.lo.json: low detail for the moving globe
+#   assets/flags.json        flag images
+#   data.json                the full public dataset, fetched only for downloads
+MIN_FIELDS = {
+    "instruments": ["id", "jurisdiction_id", "official_title", "english_title", "legal_status", "lifecycle", "categories",
+                    "issuing_authority", "publisher_name", "authority_type", "organization_id", "source_id", "source_url",
+                    "publication_date", "verification_level", "government_level", "subnational_unit", "party_status",
+                    "adherents", "regional_applicability"],
+    "jurisdictions": ["id", "iso2", "name", "short_name", "type", "aliases"],
+    "sources": ["id", "link_status"],
+    "organizations": ["id", "jurisdiction_id", "name", "authority_type", "government_level", "subnational_unit"],
+    "regional_applicability": ["instrument_id", "jurisdiction_id", "regional_jurisdiction_id"],
+}
+
+
+def min_data(P):
+    m = {k: P[k] for k in ("meta", "categories", "changes", "regional_members")}
+    for k, fields in MIN_FIELDS.items():
+        m[k] = [{f: x[f] for f in fields if f in x} for x in P[k]]
+    return m
+
+
+def shared_asset(name, text):
+    """Write dist/assets/<name> and return its URL with a content hash."""
+    (OUT / "assets").mkdir(parents=True, exist_ok=True)
+    (OUT / "assets" / name).write_text(text, encoding="utf-8")
+    return f"assets/{name}?v={hashlib.sha1(text.encode('utf-8')).hexdigest()[:8]}"
+
+
+FORBIDDEN = re.compile(r"\bcurl\b|local-retry|WebFetch|maintainer|confirmed by Faisal", re.I)
+
+
+def check_public(out):
+    """Fail the build if research-process wording reaches anything published (pages, data files, downloads)."""
+    bad = []
+    for f in out.rglob("*"):
+        if f.suffix.lower() not in (".html", ".json", ".csv", ".js", ".txt", ".xml") or not f.is_file(): continue
+        t = f.read_text(encoding="utf-8", errors="ignore")
+        for m in FORBIDDEN.finditer(t):
+            bad.append(f"{f.relative_to(out).as_posix()}: '{m.group(0)}' ...{t[max(0, m.start() - 60):m.end() + 40]!r}")
+    for b in bad[:25]: print("PUBLIC DATA CHECK:", b)
+    if bad: print(f"PUBLIC DATA CHECK FAILED: {len(bad)} occurrence(s) of research-process wording in dist/")
+    return 1 if bad else 0
+
+
 def build():
     D = assemble()
+    P = public(D)                       # what may be published: no research-process fields
     t = (ROOT / "site/template.html").read_text(encoding="utf-8")
-    payload = json.dumps(D, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     t = t.replace("__VENDOR_JS__", (ROOT / "site/vendor/d3-bundle.min.js").read_text(encoding="utf-8").replace("</", "<\\/"), 1)
-    t = t.replace("__GEOMETRY__", (ROOT / "site/assets/world.topo.json").read_text(encoding="utf-8"), 1)
-    t = t.replace("__FLAGS__", (ROOT / "site/assets/flags.json").read_text(encoding="utf-8"), 1)
+    full_json = json.dumps(P, ensure_ascii=False, separators=(",", ":"))
+    OUT.mkdir(exist_ok=True)
+    (OUT / "data.json").write_text(full_json, encoding="utf-8")
+    assets = {"data": shared_asset("data.min.json", json.dumps(min_data(P), ensure_ascii=False, separators=(",", ":"))),
+              "geo": shared_asset("world.topo.json", (ROOT / "site/assets/world.topo.json").read_text(encoding="utf-8")),
+              "geoLo": shared_asset("world.topo.lo.json", (ROOT / "site/assets/world.topo.lo.json").read_text(encoding="utf-8")),
+              "flags": shared_asset("flags.json", (ROOT / "site/assets/flags.json").read_text(encoding="utf-8")),
+              "full": f"data.json?v={hashlib.sha1(full_json.encode('utf-8')).hexdigest()[:8]}"}
+    t = t.replace("__ASSET_PRELOADS__", "".join(f'<link rel="preload" href="{u}" as="fetch" crossorigin="anonymous">' for k, u in assets.items() if k != "full"), 1)
+    t = t.replace("__ASSETS__", json.dumps(assets), 1)
     t = t.replace("__PHOTOS__", json.dumps(map_photos(), ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/"), 1)
     t = t.replace("__APP_JS__", (ROOT / "site/app.js").read_text(encoding="utf-8"), 1)
     t = t.replace("__CHANGELOG_CSS__", (ROOT / "site/changelog.css").read_text(encoding="utf-8"), 1)
     t = t.replace("__CHANGELOG_JS__", (ROOT / "site/changelog.js").read_text(encoding="utf-8"), 1)
     t = t.replace("__BUILD_DATE__", pages.fmt_date(D["meta"].get("build_date")))
-    t = t.replace("__DATABASE__", payload, 1)  # last, so data text can never be mistaken for a placeholder
     OUT.mkdir(exist_ok=True)
     (OUT / "index.html").write_text(t, encoding="utf-8")
-    (OUT / "data.json").write_text(json.dumps(D, ensure_ascii=False, indent=1), encoding="utf-8")
-    f = ["date", "recorded", "kind", "type", "jurisdiction_id", "instrument_id", "title", "detail", "from", "to", "source_url", "needs_review"]
-    buf = io.StringIO(); w = csv.DictWriter(buf, f, extrasaction="ignore"); w.writeheader(); w.writerows(D["changes"])
+    f = ["date", "recorded", "kind", "type", "jurisdiction_id", "instrument_id", "title", "detail", "from", "to", "source_url"]
+    buf = io.StringIO(); w = csv.DictWriter(buf, f, extrasaction="ignore"); w.writeheader(); w.writerows(P["changes"])
     (OUT / "changes.csv").write_text("﻿" + buf.getvalue(), encoding="utf-8")
     (OUT / ".nojekyll").write_text("")
     flags = json.loads((ROOT / "site/assets/flags.json").read_text(encoding="utf-8"))
@@ -246,7 +300,8 @@ def build():
           f"{len(D['instruments'])} instruments, {len(D['changes'])} change events, "
           f"{D['meta']['deeply_reviewed_country_count']} deep-reviewed countries; {n_pages} country/body pages ({n_ar} in Arabic); cache-busted {n_files} asset URLs in {n_busted} pages")
     import check_ar_charts
-    return check_ar_charts.main()   # fails the build if an Arabic chart tooltip or legend is left in English
+    rc = check_ar_charts.main()   # fails the build if an Arabic chart tooltip or legend is left in English
+    return rc or check_public(OUT)
 
 
 if __name__ == "__main__":

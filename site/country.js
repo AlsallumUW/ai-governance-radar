@@ -50,18 +50,31 @@ if(hero&&bar&&'IntersectionObserver' in window){new IntersectionObserver(([en])=
 const rvSec=$('.charts-sec.has-bg'),rvH=rvSec&&$('.charts-h',rvSec);
 if(rvH){const hint=document.createElement('div');hint.className='rv-hint';hint.setAttribute('aria-hidden','true');hint.textContent=rvH.textContent;rvSec.appendChild(hint)}
 let ticking=false,current=null;
-function frame(){ticking=false;const y=scrollY,vh=innerHeight,max=Math.max(1,root.scrollHeight-vh),p=Math.min(1,Math.max(0,y/max));
-  root.style.setProperty('--p',p.toFixed(4));
-  if(rvH){if(innerWidth<760)rvSec.style.removeProperty('--rv');else rvSec.style.setProperty('--rv',Math.min(1,Math.max(0,(vh*.95-rvH.getBoundingClientRect().top)/(vh*.6))).toFixed(3))}
-  if(media&&!reduce.matches){const h=hero.offsetHeight;if(y<h)media.style.transform=`translate3d(0,${(y*.3).toFixed(1)}px,0)`}
-  const line=(bar?bar.offsetHeight:0)+vh*.25;let cur=secs[0]||null;for(const s of secs){if(s.getBoundingClientRect().top<=line)cur=s}
-  if(y+vh>=root.scrollHeight-4&&secs.length)cur=secs[secs.length-1];
+/* Positions are measured once (and again on resize or when the page height changes), never on every scroll frame;
+   each frame reads first and writes after, and --p goes on the two progress bars only, not on <html>. */
+const prog=$$('.progress i,.rail-track i'),darks=$$('.photo-break,.closing'),bgs=$$('.charts-sec.has-bg .cs-bg');
+let M=null;
+function measure(){const y=scrollY,abs=el=>{const q=el.getBoundingClientRect();return {top:q.top+y,bottom:q.bottom+y,h:q.height,w:q.width}};
+  M={docH:root.scrollHeight,barH:bar?bar.offsetHeight:0,heroH:hero?hero.offsetHeight:0,secs:secs.map(s=>abs(s).top),rv:rvH?abs(rvH).top:0,
+     darks:darks.map(abs),bgs:bgs.map(abs),bands:bands.map(abs),railOn:!!(railIn&&railEl.offsetParent)}}
+function frame(){ticking=false;if(!M)measure();
+  /* reads */
+  const y=scrollY,vh=innerHeight,max=Math.max(1,M.docH-vh),p=Math.min(1,Math.max(0,y/max)),wide=innerWidth>=760;
+  const line=M.barH+vh*.25;let cur=secs[0]||null;M.secs.forEach((t,k)=>{if(t-y<=line)cur=secs[k]});
+  if(y+vh>=M.docH-4&&secs.length)cur=secs[secs.length-1];
+  const r=M.railOn?railIn.getBoundingClientRect():null,over=q=>r&&q.top-y<r.bottom&&q.bottom-y>r.top;
+  /* writes */
+  prog.forEach(el=>el.style.setProperty('--p',p.toFixed(4)));
+  if(rvH){if(!wide)rvSec.style.removeProperty('--rv');else rvSec.style.setProperty('--rv',Math.min(1,Math.max(0,(vh*.95-(M.rv-y))/(vh*.6))).toFixed(3))}
+  if(media&&!reduce.matches&&y<M.heroH)media.style.transform=`translate3d(0,${(y*.3).toFixed(1)}px,0)`;
   if(cur!==current){current=cur;links.forEach(a=>{const on=cur&&a.getAttribute('href')==='#'+cur.id;if(on)a.setAttribute('aria-current','true');else a.removeAttribute('aria-current')})}
-  if(railIn&&railEl.offsetParent){const r=railIn.getBoundingClientRect(),over=el=>{const q=el.getBoundingClientRect();return q.top<r.bottom&&q.bottom>r.top};
-    railEl.classList.toggle('dim',$$('.photo-break,.closing').some(over));railEl.classList.toggle('ondark',$$('.charts-sec.has-bg .cs-bg').some(b=>b.offsetWidth>innerWidth*.6&&over(b)))}
+  if(r){railEl.classList.toggle('dim',M.darks.some(over));railEl.classList.toggle('ondark',M.bgs.some(q=>q.w>innerWidth*.6&&over(q)))}
   /* band photo: gentle parallax while it crosses the viewport */
-  if(!reduce.matches)bands.forEach(b=>{const q=b.getBoundingClientRect();if(q.bottom<0||q.top>vh)return;const t=(q.top+q.height/2-vh/2)/(vh/2+q.height/2);b.firstElementChild.style.transform=`translate3d(0,${(t*q.height*.06).toFixed(1)}px,0)`})}
-addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(frame)}},{passive:true});addEventListener('resize',frame);frame();
+  if(!reduce.matches)M.bands.forEach((q,k)=>{const top=q.top-y;if(top+q.h<0||top>vh)return;const t=(top+q.h/2-vh/2)/(vh/2+q.h/2);bands[k].firstElementChild.style.transform=`translate3d(0,${(t*q.h*.06).toFixed(1)}px,0)`})}
+const remeasure=()=>{M=null;if(!ticking){ticking=true;requestAnimationFrame(frame)}};
+addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(frame)}},{passive:true});addEventListener('resize',remeasure);
+if('ResizeObserver' in window)new ResizeObserver(remeasure).observe(document.body);
+addEventListener('load',remeasure);frame();
 /* sections fade in once as they enter; charts grow from zero; header counts count up */
 function motion(){if(reduce.matches||!('IntersectionObserver' in window))return;
   const els=$$('.intro,.content>section.block,.lede-grid>.block,.ov-grid>.block,.ov-photo,.charts-h,.fig,.photo-break,.closing-in').filter(el=>!(el===rvH&&innerWidth>=760));
