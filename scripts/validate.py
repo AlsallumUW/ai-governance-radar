@@ -237,6 +237,10 @@ def check(only=None):
         added = collections.Counter(c.get("instrument_id") for c in r.get("changes", []) if c.get("kind") == "radar" and c.get("type") == "added" and c.get("instrument_id"))
         for iid, n in added.items():
             if n > 1: E(f"{n} radar 'added' events for {iid} (keep the earliest)")
+        for x in r.get("instruments", []):   # a binding law or regulation whose full effective date has passed is in force
+            ef = x.get("effective_date") or ""
+            if x.get("legal_status") in ("binding_law", "binding_regulation") and x.get("lifecycle") == "adopted" and len(ef) == 10 and ef <= TODAY:
+                W(f"{x['id']} took effect on {ef} but lifecycle is still 'adopted' (check the official text; set in_force)")
         for x in r.get("instruments", []):   # a consultation past its closing date is flipped by scripts/due_consultations.py
             cc = x.get("consultation_closes")
             if cc and not ISO.match(cc): E(f"{x['id']} consultation_closes '{cc}' is not an ISO date")
