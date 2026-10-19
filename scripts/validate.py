@@ -150,6 +150,10 @@ BINDING_STATUSES = ("binding_law", "binding_regulation")
 # an issuer field names the issuing body: no placeholders, gazette citations or dates
 _MON = r"(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?"
 ISSUER_BAD = re.compile(r"\bunknown\b|\bunclear\b|gazette|\b\d{4}-\d{2}-\d{2}\b|\b\d{1,2} " + _MON + r" \d{4}\b|\b" + _MON + r" \d{1,2}, \d{4}\b|\b\d{1,2}/\d{1,2}/\d{2,4}\b", re.I)
+# schema vocabulary (field names, status codes) and its apologetic wording never appear in public text
+SCHEMA = (r"\b(?:legal_status|current_status|issuing_authority|publisher_name|verification_level|evidence_reference|source_kind"
+          r"|regulatory_opinion|nonbinding_guidance|binding_regulation|binding_law|administrative_guideline|administrative_policy_mandatory_in_scope"
+          r"|consultation_draft|consultation_closed|voluntary_code|national_strategy|international_treaty)\b|for want of a")
 # process wording that the public text must not carry (any public field); keep the detail in coverage_audit.technical_note
 PROCESS = (r"could not be (?:accessed|opened|reached|retrieved|checked|read|downloaded|loaded)|(?:from|in) the review environment"
            r"|(?:site|website|portal|page|domain)s? (?:\w+ ){0,3}(?:blocked|blocks)|\bblocked (?:automated|access|by)|was not searched|were not searched|\breportedly\b"
@@ -158,13 +162,13 @@ PROCESS = (r"could not be (?:accessed|opened|reached|retrieved|checked|read|down
 # current_status is shown to the public; research-log wording belongs in evidence_reference (shown under "Source notes")
 STATUS_LOG = re.compile(r"audit 20\d\d|\bcurl\b|HTTP [0-9]{3}|not read|fetch|automated access|automated reading|blocks automated|could not be read"
                         r"|this record|the radar(?! tecnol[oó]gico)"
-                        r"|" + PROCESS +
+                        r"|" + PROCESS + r"|" + SCHEMA +
                         r"|held as (?:a )?leads?|in this review|\b(?:effective|publication|last_amended)_date\b|\bnull\b|WebFetch|pdftotext|headless", re.I)
 
 
 # review_notes and no_material_found_note are public text too: also no agent/tool/run vocabulary
 # overview summaries state what is established; process wording belongs in the method note (narrative.review_notes)
-SUMMARY_PROCESS = re.compile(r"could not be|in this review|held as (?:a )?leads?|" + PROCESS, re.I)
+SUMMARY_PROCESS = re.compile(r"could not be|in this review|held as (?:a )?leads?|" + PROCESS + r"|" + SCHEMA, re.I)
 NOTE_LOG = re.compile(STATUS_LOG.pattern + r"|\bHTTP\b|WebFetch|\bTLS\b|\bproxy\b|\bagents?\b|sub-?agent|\bPROTOCOL\b|\bpilot\b|thin pass|\btier [ABC]\b|batch run", re.I)
 
 
