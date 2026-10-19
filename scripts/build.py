@@ -277,7 +277,7 @@ def check_public(out, vocab=frozenset()):
     for f in out.rglob("*.html"):
         t = f.read_text(encoding="utf-8", errors="ignore")
         t = re.sub(r"<(script|style)\b.*?</\1>", " ", t, flags=re.S); t = html.unescape(re.sub(r"<[^>]+>", " ", t)); t = VISIBLE_OK.sub(" ", t)
-        for m in list(VISIBLE_FORBIDDEN.finditer(t)) + [m for m in re.finditer(r"[a-z]+(?:_[a-z0-9]+)+", t) if m.group(0) in vocab]:
+        for m in list(VISIBLE_FORBIDDEN.finditer(t)) + [m for m in re.finditer(r"\b[a-z]+(?:_[a-z0-9]+)+\b", t) if m.group(0) in vocab]:
             bad.append(f"{f.relative_to(out).as_posix()} (visible): '{m.group(0)}' ...{t[max(0, m.start() - 60):m.end() + 40]!r}")
     for b in bad[:25]: print("PUBLIC DATA CHECK:", b)
     if bad: print(f"PUBLIC DATA CHECK FAILED: {len(bad)} occurrence(s) of research-process wording in dist/")
