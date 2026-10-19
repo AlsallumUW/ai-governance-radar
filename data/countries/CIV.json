@@ -72,7 +72,7 @@
       "first_recorded": "2026-10-12",
       "last_changed": "2026-10-13",
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "source_id": "s-fca18c10a2b4",
       "evidence_reference": "Re-checked 2026-10-13. curl (browser user agent, --max-time 60): 71-page PDF (HTTP 200, application/pdf, 1.69 MB) downloaded from the ministry's Publications > Planification > Stratégies page and read with pdftotext; it states only 'Côte d'Ivoire 2024'. WebFetch of the same PDF URL also returned the file (HTTP 200, binary). Handover date read via WebFetch from the gouv.ci news notice (curl to gouv.ci was reset)."
@@ -127,7 +127,7 @@
       "first_recorded": "2026-10-12",
       "last_changed": "2026-10-13",
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "source_id": "s-b7cfb3281966",
       "evidence_reference": "Re-checked 2026-10-13. curl (browser user agent, --max-time 60): 61-page PDF (HTTP 200, application/pdf, 8.1 MB) downloaded and read with pdftotext; it states only 'Côte d'Ivoire 2024' and the period 2024-2030. The strategies listing page was re-read by curl (HTTP 200). Handover date read via WebFetch from the gouv.ci notice."
@@ -230,14 +230,14 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "Re-checked 2026-10-13. curl (browser user agent, --max-time 60): 71-page PDF (HTTP 200, application/pdf, 1.69 MB) downloaded from the ministry's Publications > Planification > Stratégies page and read with pdftotext; it states only 'Côte d'Ivoire 2024'. WebFetch of the same PDF URL also returned the file (HTTP 200, binary). Handover date read via WebFetch from the gouv.ci news notice (curl to gouv.ci was reset).",
-      "http_status": 200,
+      "checked_date": "2026-10-19",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
+      "http_status": null,
       "final_url": "https://www.telecom.gouv.ci/new/uploads/publications/174196670372.pdf",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": null,
       "document_language": "fr",
-      "error": null,
+      "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>",
       "content_type": "application/pdf"
     },
     {
@@ -259,14 +259,14 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "Re-checked 2026-10-13. curl (browser user agent, --max-time 60): 61-page PDF (HTTP 200, application/pdf, 8.1 MB) downloaded and read with pdftotext; it states only 'Côte d'Ivoire 2024' and the period 2024-2030. The strategies listing page was re-read by curl (HTTP 200). Handover date read via WebFetch from the gouv.ci notice.",
-      "http_status": 200,
+      "checked_date": "2026-10-19",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
+      "http_status": null,
       "final_url": "https://www.telecom.gouv.ci/new/uploads/publications/174196707541.pdf",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": null,
       "document_language": "fr",
-      "error": null,
+      "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>",
       "content_type": "application/pdf"
     },
     {
@@ -286,8 +286,8 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "Re-checked 2026-10-13. curl (browser user agent, --max-time 60): the Journal officiel scan of 8 August 2013 (HTTP 200, application/pdf, 6.2 MB) was downloaded again from ARTCI's Textes juridiques > Lois page. WebFetch of the ARTCI Lois page confirmed the title and the download link. The text was read in full in the first pass (image-only scan, articles 1-25 and 49-54).",
+      "checked_date": "2026-10-19",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://www.artci.ci/wp-content/uploads/2024/05/loi_2013_450.pdf",
       "link_status": "reachable",
@@ -399,6 +399,36 @@
     "technical_note": "Coverage note (original): Technical review notes: thin pass 2026-10-13 (second, longer deep review: up to 45 minutes, one agent, national level only, PROTOCOL §6; every existing record re-checked; each ministry and sector regulator searched one by one). Thin pass 2026-10-13: 3 existing records re-checked with curl and WebFetch; SNIA and SNGD current_status updated with the official handover to the Prime Minister (13 Mar 2025, gouv.ci notice; no adoption act found; publication_date stays 2024); Law 2013-450 JO scan reachable again, no amendment. sgg.gouv.ci Journal officiel needs login (no gazette search). Not reached: ANSSI (TLS/503), finances.gouv.ci, emploi.gouv.ci (403), concurrence.ci, anaq-sup.ci, crepmf.org, ARTCI LINP AI paper (404), CoE treaty page (403). CODINORM: no ISO/IEC 42001/23894/22989 adoption. BCEAO, CREPMF, CIMA regional. SNDECI 2024-2028 AI in passing (lead). Convention 108: not a party. Units covered: Law: Journal officiel (sgg.gouv.ci): full-text search is not public (login and download code required), so no gazette search was possible. Law listings on the digital ministry and ARTCI sites were re-checked (2013-450, 2013-451 cybercrime, 2013-546 e-transactions, 2017-803 information society, 2023-901 startups, 2024-352 electronic communications, decrees 2013-302, 2014-729, 2015-80): none found to contain AI-specific provisions beyond art. 25 of 2013-450. Ordinance 2024-950 (e-administration exchanges, ratified April 2025) has no AI content according to the ministry notice. No deepfake or AI offence and no data-protection amendment were found. Law 2013-450 was re-checked (kept).; Parliament: assnat.ci: the law listings (mostly up to 2019) and 2026 session news were checked. No AI bill, data protection bill or deepfake bill has been tabled. The 2nd ordinary session of 2026 (opened 1 October 2026) lists AI only as an internal modernisation and MP-training topic (lead). The AI bill announced in 2025 remains a lead.; Government: Digital ministry (MTNIT): strategies page re-checked (SNIA 2030 and SNGD 2030 kept; SNNCI 2021-2025 evaluation, innovation strategy and cybersecurity strategy 2021-2025 have no AI pillar). Reports, orientation, decree and ordinance pages were checked, and 2025-2026 news on AI was scanned. Found: an official handover date of 13 March 2025 for both strategies (gouv.ci), and leads for the national AI alliance pact (11 Sep 2026), the 2026-2028 digital roadmap AI pillar, the Mistral partnership and the JDN 2026 recommendations. Council of Ministers communiqués on gouv.ci/sgg.gouv.ci: no AI decree or bill (the Feb 2026 PADCI loan ratification is already a lead). ANSUT: AI event news only.; Ministries: Education (MENA): SNDECI 2024-2028 digital education strategy mentions AI only in passing (lead), and no AI charter or guidance was found. Higher education (MESRS): AI promotion events only, no AI guidance. Health: no AI document (only a clinical research training item). Justice: no AI directive found. Defence: SIADE AI/defence fair only, no AI doctrine. Finance/tax (finances.gouv.ci unreachable; DGI): nothing. Labour/employment (emploi.gouv.ci 403): nothing found via web search. Interior/security: nothing. Agriculture: speeches on AI only. Foreign affairs: Paris AI Action Summit declaration signature (international, Feb 2025), no national document. Several ministry sites are script-rendered and were searched through web search with domain filters.; Regulators: ARTCI (telecoms and data protection authority): site search and Décisions page show only AI event news, plus authorisation decisions with no AI-specific content (e.g. video-surveillance). A reported LINP AI paper returned 404 (lead). BCEAO, CREPMF (unreachable) and CIMA/CRCA are regional bodies, and BCEAO and CIMA site searches returned no AI rules. HACA (audiovisual regulator): hosts RIARC/REFRAM network AI principles and a declaration, which are not national (lead). AIRP (pharmaceutical regulator): no AI content. Higher-education quality agency (ANAQ-Sup): site unreachable, nothing found. Competition commission: site unreachable, nothing found. ANSSI (cyber agency): TLS/503 errors on both methods; web search found only a hosted SNIA copy, no AI security guidance. CODINORM (standards): no national adoption of ISO/IEC 42001/23894/22989 found. ARCOP (public procurement regulator): site search returned no AI content.; Convention 108: Côte d'Ivoire is not a party: no accession act or law authorising ratification was found on assnat.ci or the digital ministry and ARTCI sites, and the Council of Europe treaty page was not reachable (403). Set to null.. Not reached: Journal officiel full text (sgg.gouv.ci: login and download code required); ANSSI site (anssi.gouv.ci: certificate error with curl, HTTP 503 with WebFetch); finances.gouv.ci, emploi.gouv.ci (403), concurrence.ci, anaq-sup.ci, crepmf.org: unreachable; covered only through web search; ARTCI LINP AI paper (404); Council of Europe treaty office page (403). Could not verify: Journal officiel full-text search (gated) - no gazette check for AI terms was possible; Government adoption act for SNIA/SNGD: none found; only the 13 March 2025 handover is stated officially; ARTCI LINP AI paper (404); ANSSI documents page (unreachable). risk-assurance, procurement, cyber-security, transparency, standards, sandbox, index-readiness, sectoral, generative-ai, drafts, international, historical: no material found.\nWording note 2026-10-19 (narrative.review_notes): The Official Journal requires a login, and the cyber agency's, finance and labour ministries' and the competition and higher-education quality bodies' websites could not be accessed.\nWording note 2026-10-19 (coverage_audit.no_material_found_note): The Official Journal's full-text search requires a login and several ministry and regulator sites were unavailable, so these remain to be checked,"
   },
   "changes": [
+    {
+      "id": "c-b8776f3f0a87",
+      "date": "2026-10-19",
+      "recorded": "2026-10-19",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "CIV",
+      "instrument_id": "i-7e3e6d592887",
+      "title": "National Artificial Intelligence Strategy to 2030 (SNIA 2030)",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://www.telecom.gouv.ci/new/uploads/publications/174196670372.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-126d491ff048",
+      "date": "2026-10-19",
+      "recorded": "2026-10-19",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "CIV",
+      "instrument_id": "i-2ea0bd2d6aec",
+      "title": "National Data Governance Strategy to 2030 (SNGD 2030)",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://www.telecom.gouv.ci/new/uploads/publications/174196707541.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-b884ad86a07b",
       "date": "2026-10-13",

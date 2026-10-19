@@ -106,8 +106,8 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-18",
-      "check_method": "local-retry-2026-10-18: curl with browser user agent; official Act PDF returned HTTP 200 (application/pdf, 46 pages); e-Laws consolidated principal-legislation page also HTTP 200. Earlier check (2026-10-12): curl (browser user agent, --max-time 60): Act PDF (46-page scanned Bulletin copy) read page images (arrangement of sections, long title, date of assent 24.10.2024, s.49 on p.23); consolidated HTML text on the e-Laws principal-legislation page read in full for ss.2 ('profiling'), 49 and 65; commencement confirmed from S.I. No. 4 of 2025 (Data Protection Act (Date of Commencement) Order, 2025) PDF.",
+      "checked_date": "2026-10-19",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://e-laws.botswanalaws.com/PDF/Bulletin/Botswana2024pdf/018.pdf",
       "link_status": "reachable",

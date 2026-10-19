@@ -178,14 +178,14 @@
         "strategy"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-18",
-      "check_method": "local retry from Saudi Arabia: curl with browser user agent (connection timed out after ~21 s) and headless Edge (page load timeout 60 s). Not reachable.",
+      "checked_date": "2026-10-19",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": null,
-      "final_url": null,
+      "final_url": "https://sccr.ir/pro/3432/%D8%AA%D8%B4%DA%A9%DB%8C%D9%84-%D8%B4%D9%88%D8%B1%D8%A7%DB%8C-%D9%85%D9%84%DB%8C-%D8%B1%D8%A7%D9%87%D8%A8%D8%B1%DB%8C-%D9%88-%D8%AA%D8%A3%D8%B3%DB%8C%D8%B3-%D8%B3%D8%A7%D8%B2%D9%85%D8%A7%D9%86-%D9%85%D9%84%DB%8C-%D9%87%D9%88%D8%B4-%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C-",
       "link_status": "inaccessible",
       "page_title": "تشکیل شورای ملی راهبری و تأسیس سازمان ملی هوش مصنوعی",
       "document_language": "fa",
-      "error": "connection timeout (curl and headless browser)",
+      "error": "URLError: <urlopen error timed out>",
       "content_type": null
     },
     {
@@ -205,14 +205,14 @@
         "strategy"
       ],
       "date_reviewed": "2026-10-18",
-      "checked_date": "2026-10-18",
-      "check_method": "curl with browser user agent; HTML page read in full (official presidency news report on the Supreme Council of the Cultural Revolution session of 29 Khordad 1403).",
-      "http_status": 200,
+      "checked_date": "2026-10-19",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
+      "http_status": 504,
       "final_url": "https://president.ir/fa/152404",
-      "link_status": "reachable",
+      "link_status": "broken",
       "page_title": "تصویب کلیات سند ملی، تأسیس سازمان ملی و تشکیل شورای راهبری هوش مصنوعی/ کلیات اساسنامه خانه ملی گفتگوی آزاد تصویب شد",
       "document_language": "fa",
-      "error": null,
+      "error": "HTTP Error 504: Gateway Time-out",
       "content_type": "text/html; charset=UTF-8"
     },
     {
@@ -233,8 +233,8 @@
         "strategy"
       ],
       "date_reviewed": "2026-10-18",
-      "checked_date": "2026-10-18",
-      "check_method": "curl with browser user agent: PDF downloaded (74 pages) and text extracted; ministry announcement page http://www.ict.gov.ir/fa/news/125180/ also opened (HTTP 200).",
+      "checked_date": "2026-10-19",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://ai-center.ir/wp-content/uploads/2024/08/70254_427.pdf",
       "link_status": "reachable",
@@ -335,6 +335,21 @@
     "last_sweep": "2026-10-19"
   },
   "changes": [
+    {
+      "id": "c-d0ea5c5c0b4c",
+      "date": "2026-10-19",
+      "recorded": "2026-10-19",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "IRN",
+      "instrument_id": "i-da97f9ccd5b3",
+      "title": "Formation of the National AI Steering Council and Establishment of the National Artificial Intelligence Organization",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "broken",
+      "source_url": "https://president.ir/fa/152404",
+      "needs_review": false
+    },
     {
       "id": "c-656c704cf699",
       "date": "2026-10-18",

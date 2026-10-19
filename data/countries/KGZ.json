@@ -188,7 +188,7 @@
       "first_recorded": "2026-10-18",
       "last_changed": null,
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "source_id": "s-695b6d11eae9",
       "evidence_reference": "local-retry-2026-10-18: found in the Ministry of Justice central legal database as a document referring to the Digital Code; document record (No. 770, adopted 02.12.2025, Erkin-Too 05.12.2025 No. 96 (3753), status 'in force') and full resolution text read through the database's public data service; Annex 1 (hazard-assessment methodology requirements, Chapter 1) read; Annexes 2-5 identified by title (database records 230036499, 230036510, 230036526, 230036545). Document page also renders in a headless browser."
@@ -245,7 +245,7 @@
       "first_recorded": "2026-10-18",
       "last_changed": null,
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "source_id": "s-4f2d4877dc06",
       "evidence_reference": "local-retry-2026-10-18: found in the Ministry of Justice central legal database as a document referring to the Digital Code; document record (No. 1181-t, 31.12.2025, status 'in force'; register entry-into-force field 06.02.2026, not printed in the text) and full order text including Annex 2 declaration form read through the database's public data service; document page also rendered in a headless browser."
@@ -295,8 +295,8 @@
         "sandbox"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-18",
-      "check_method": "Ministry of Justice legal database page (official_webpage_url) returned 503 to WebFetch and reset curl connections; full text read via curl (browser user agent, --max-time 60) from the official copy published by the State Agency for Personal Data Protection under the Cabinet of Ministers (reestr.dpa.gov.kg/ru/npa/59): header (No. 178, 31 July 2025, entry-into-force note) and Chapter 23 Articles 191-197, Article 1 definitions, Article 126, Chapter 3 (special regulation regime, Articles 15-18) and Chapter 11 (personal data, Articles 77-91) headings read; Law No. 179 (entry into force, repeals, Erkin-Too 5 August 2025 No. 58) read at reestr.dpa.gov.kg/ru/npa/60. local-retry-2026-10-18: re-checked by curl (browser user agent), HTTP 200.",
+      "checked_date": "2026-10-19",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://reestr.dpa.gov.kg/ru/npa/59",
       "link_status": "reachable",
@@ -322,8 +322,8 @@
         "historical"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-18",
-      "check_method": "curl (browser user agent, --max-time 60): full text read on the State Agency for Personal Data Protection page (reestr.dpa.gov.kg/ru/npa/4), including the repeal note and amendment history (2017 No. 129, 2021 No. 142); repeal confirmed in Law No. 179 Article 2(7) (reestr.dpa.gov.kg/ru/npa/60). local-retry-2026-10-18: re-checked by curl (browser user agent), HTTP 200.",
+      "checked_date": "2026-10-19",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://reestr.dpa.gov.kg/ru/npa/4",
       "link_status": "reachable",
@@ -350,14 +350,14 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-18",
-      "checked_date": "2026-10-18",
-      "check_method": "local-retry-2026-10-18: found in the Ministry of Justice central legal database as a document referring to the Digital Code; document record (No. 770, adopted 02.12.2025, Erkin-Too 05.12.2025 No. 96 (3753), status 'in force') and full resolution text read through the database's public data service; Annex 1 (hazard-assessment methodology requirements, Chapter 1) read; Annexes 2-5 identified by title (database records 230036499, 230036510, 230036526, 230036545). Document page also renders in a headless browser.",
-      "http_status": 200,
+      "checked_date": "2026-10-19",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
+      "http_status": null,
       "final_url": "https://cbd.minjust.gov.kg/230036451/edition/42741/ru",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": null,
       "document_language": "ru",
-      "error": null,
+      "error": "RemoteDisconnected: Remote end closed connection without response",
       "content_type": "text/html"
     },
     {
@@ -378,14 +378,14 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-18",
-      "checked_date": "2026-10-18",
-      "check_method": "local-retry-2026-10-18: found in the Ministry of Justice central legal database as a document referring to the Digital Code; document record (No. 1181-t, 31.12.2025, status 'in force'; register entry-into-force field 06.02.2026, not printed in the text) and full order text including Annex 2 declaration form read through the database's public data service; document page also rendered in a headless browser.",
-      "http_status": 200,
+      "checked_date": "2026-10-19",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
+      "http_status": null,
       "final_url": "https://cbd.minjust.gov.kg/230039502/edition/45932/ru",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": null,
       "document_language": "ru",
-      "error": null,
+      "error": "RemoteDisconnected: Remote end closed connection without response",
       "content_type": "text/html"
     }
   ],
@@ -508,6 +508,36 @@
       "from": null,
       "to": null,
       "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-10983a6a583b",
+      "date": "2026-10-19",
+      "recorded": "2026-10-19",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "KGZ",
+      "instrument_id": "i-f2c631a913b3",
+      "title": "Cabinet of Ministers Resolution of 2 December 2025 No. 770 approving requirements for the methodology for assessing the hazard of artificial intelligence systems and requirements for increased-danger artificial intelligence systems",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://cbd.minjust.gov.kg/230036451/edition/42741/ru",
+      "needs_review": false
+    },
+    {
+      "id": "c-79016b73bddd",
+      "date": "2026-10-19",
+      "recorded": "2026-10-19",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "KGZ",
+      "instrument_id": "i-904b4a3244fc",
+      "title": "Cabinet of Ministers Order of 31 December 2025 No. 1181-t approving requirements for the content and the form of the declaration of conformity of increased-danger artificial intelligence systems with the mandatory requirements of the Digital Code",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://cbd.minjust.gov.kg/230039502/edition/45932/ru",
       "needs_review": false
     },
     {

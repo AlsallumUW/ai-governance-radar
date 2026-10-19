@@ -68,7 +68,7 @@
       ],
       "source_kind": "consultation_portal",
       "evidence_reference": "curl (browser user agent, --max-time 60) and WebFetch both returned HTTP 502 from the Diálogo 2.0 consultation portal on 2026-10-12. Title, consultation period (1-11 August 2025) and URL confirmed from the adopted strategy's own account of its preparation (Registro Oficial Suplemento No. 206, 19 January 2026, section 3 'Mesas de socialización del documento preliminar'). Status note: The consultation page returned HTTP 502 on 2026-10-12, so the draft text itself could not be read. Link note: As of 18 October 2026 (checked with curl with a browser user agent from a connection in Saudi Arabia and a desktop browser) the consultation portal cannot be reached; no other official copy was found.",
-      "link_status": "inaccessible",
+      "link_status": "broken",
       "document_access_type": "official_publication_or_full_text_page",
       "source_id": "s-4834abd26d8c",
       "organization_id": "o-590896e386ef",
@@ -391,14 +391,14 @@
         "historical"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-18",
-      "check_method": "curl (browser user agent, --max-time 60) and WebFetch both returned HTTP 502 from the Diálogo 2.0 consultation portal on 2026-10-12. Title, consultation period (1-11 August 2025) and URL confirmed from the adopted strategy's own account of its preparation (Registro Oficial Suplemento No. 206, 19 January 2026, section 3 'Mesas de socialización del documento preliminar').",
+      "checked_date": "2026-10-19",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 502,
       "final_url": "https://aportecivico.gobiernoelectronico.gob.ec/legislation/processes/78/draft_versions/99",
-      "link_status": "inaccessible",
+      "link_status": "broken",
       "page_title": null,
       "document_language": "es",
-      "error": "HTTP 502 Bad Gateway (curl and WebFetch)",
+      "error": "HTTP Error 502: Bad Gateway",
       "content_type": null
     },
     {
@@ -420,8 +420,8 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): MINTEL-hosted copy of Registro Oficial Primer Suplemento No. 206 (19 January 2026) read in full (pdftotext; 63 pages): Acuerdo MINTEL-MINTEL-2025-0030 signed 22 December 2025, in force on publication in the Registro Oficial, with the strategy annex. Same issue also read on the Constitutional Court's gazette repository (esacc.corteconstitucional.gob.ec). Launch confirmed on MINTEL press release No. 084 of 10 March 2026.",
+      "checked_date": "2026-10-19",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://www.telecomunicaciones.gob.ec/wp-content/uploads/2026/02/Registro_Oficial_Ano_l_Primer_Suplemento_No_206_del_19_de_enero_de_2026.pdf",
       "link_status": "reachable",
@@ -446,8 +446,8 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): signed Quipux PDF on telecomunicaciones.gob.ec read in full (pdftotext; 4 pages): dated 16 November 2023, in force on signature.",
+      "checked_date": "2026-10-19",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://www.telecomunicaciones.gob.ec/wp-content/uploads/2023/12/mintel-mintel-2023-0019-1-1.pdf",
       "link_status": "reachable",
@@ -473,8 +473,8 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): MINTEL-hosted scan of Registro Oficial Quinto Suplemento No. 459 (26 May 2021) confirmed title, issue and date (image PDF, 70 pages, no text layer); article text (art. 20 and final provision) read from the consolidated text also hosted on telecomunicaciones.gob.ec (2026/06, LEXIS-sourced consolidation, last reform 22 May 2026).",
+      "checked_date": "2026-10-19",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://www.telecomunicaciones.gob.ec/wp-content/uploads/2021/06/Ley-Organica-de-Datos-Personales.pdf",
       "link_status": "reachable",
@@ -567,6 +567,21 @@
     "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. Registro Oficial site search unusable; Diálogo 2.0 consultation portal HTTP 502 (draft strategy i-77f277979193 stays primary_source_located, dated 2025-08-01 from consultation dates stated in the adopted strategy). Strategy source: RO 1S No. 206 copy hosted on MINTEL. Acuerdo MINTEL-2023-0019: signed copy 16 Nov 2023 vs strategy 30 Nov 2023 (signed date used). SPDP-SPD-2026-0009-R effective_date null (RO 240 of 10 Mar 2026 secondary only). LOPDP art. 20 read from LEXIS consolidated copy on telecomunicaciones.gob.ec (gazette scan has no text layer). SPDP internal AI policy kept: it is a binding policy on AI use in the authority's administrative processes. Health, labour, defence, SRI, interior, INEN sites not searched directly. Convention 108: not a party. Units covered: Law: Registro Oficial site search (no usable results) and gazette copies on MINTEL and Constitutional Court sites; National Assembly news on AI bills. Found: Organic Law on Personal Data Protection (art. 20 automated decisions). Organic Law for Digital and Audiovisual Transformation searched: no AI provisions. No AI law; one AI bill archived 15 Sep 2026, one pending (leads). No deepfake offence enacted (only proposed in the pending bill).; Government: MINTEL site and media library: national AI strategy (2026), its consultation draft (2025), AI Committee order (2023); Digital Transformation Policy 2025-2030 (lead, AI in passing); AI sandbox announced, no instrument yet.; Ministries: Education, justice/judiciary (Consejo de la Judicatura), and other ministries searched via web search: searched, nothing found. Labour, health, defence, finance/tax (SRI), interior: not searched individually beyond general queries; nothing surfaced.; Regulators: SPDP: AI general rule (SPDP-SPD-2026-0009-R), internal AI policy (SPDP-SPD-2026-0007-R), draft reform and 2025 draft (leads). Superintendencia de Bancos, SERCOP, ARCOTEL: searched, nothing AI-specific found. Superintendency of Economic Competition: ethics-code AI reform reported (lead). No national cyber or standards-body AI document found (INEN not searched directly).. Not reached: Registro Oficial full-text search (site search returned no results; edition No. 240 of 10 March 2026 not located officially); Diálogo 2.0 consultation portal (HTTP 502); Individual ministry sites (health, labour, defence, SRI, interior) and INEN/standards body not searched directly; Asamblea Nacional bill-tracking system (bill texts not read). Could not verify: Draft strategy text on aportecivico.gobiernoelectronico.gob.ec (HTTP 502 via curl and WebFetch).; Registro Oficial publication of SPDP-SPD-2026-0009-R.. procurement, cyber-security, standards, sandbox, index-readiness, sectoral, international: no material found.\nWording note 2026-10-19 (no_material_found_note): The Official Register's full-text search did not work and the consultation portal was unavailable, several ministries (health, labour, defence, tax, interior) and the standards body were not searched directly, and pending AI bills are listed under Leads, so these remain to be checked."
   },
   "changes": [
+    {
+      "id": "c-a20bf9033ad6",
+      "date": "2026-10-19",
+      "recorded": "2026-10-19",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "ECU",
+      "instrument_id": "i-77f277979193",
+      "title": "Proposed Strategy for Promoting the Development and Ethical and Responsible Use of Artificial Intelligence in Ecuador (public consultation draft)",
+      "detail": "Official link no longer reachable.",
+      "from": "inaccessible",
+      "to": "broken",
+      "source_url": "https://aportecivico.gobiernoelectronico.gob.ec/legislation/processes/78/draft_versions/99",
+      "needs_review": false
+    },
     {
       "id": "c-e4b3199768f6",
       "date": "2026-10-12",

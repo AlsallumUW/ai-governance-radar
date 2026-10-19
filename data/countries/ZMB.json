@@ -73,7 +73,7 @@
       "publisher_name": "Ministry of Technology and Science",
       "category": "strategy",
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "source_id": "s-95f0c15a1849",
       "evidence_reference": "local-retry-2026-10-18: official 60-page PDF read via curl from the ministry's media library (found through the site's own media search; not listed on the Downloads page, page_id=972); cover, foreword (Hon Felix Mutati, Minister), acknowledgement, governance sections 7.1-7.4 and pillars checked against the record fields. Previous source_url https://www.mots.gov.zm/?p=4492 is the ministry's launch news item (dated '21 -11- 24', published 25 November 2024), which has no download link; kept as official_webpage_url. Earlier (2026-10-12): fields first taken from a copy found through a discovery aid; now confirmed identical in content."
     },
@@ -127,7 +127,7 @@
       "publisher_name": "National Assembly of Zambia",
       "category": "data-privacy",
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "source_id": "s-8050195f38b8",
       "evidence_reference": "local-retry-2026-10-18: National Assembly page https://www.parliament.gov.zm/node/8853 opened (HTTP 200, title 'The Data Protection Act, 2021') and its linked 40-page official PDF read via curl; title, Act number, date of assent (23rd March, 2021), date [24th March, 2021], s.1 commencement, s.46, s.58 and s.62 checked against the record. A copy is also listed on the Ministry of Technology and Science Downloads page."
     },
@@ -236,14 +236,14 @@
         "sandbox"
       ],
       "date_reviewed": "2026-10-18",
-      "checked_date": "2026-10-18",
-      "check_method": "curl with a browser user agent from a connection in Saudi Arabia; 60-page PDF text extracted and read",
-      "http_status": 200,
+      "checked_date": "2026-10-19",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
+      "http_status": null,
       "final_url": "https://www.mots.gov.zm/wp-content/uploads/2025/02/Zambia-Ai-Strategy-Book-option-2.pdf",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": "National Artificial Intelligence Strategy 2024-2026",
       "document_language": "en",
-      "error": null,
+      "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.",
       "content_type": "application/pdf"
     },
     {
@@ -264,14 +264,14 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-18",
-      "checked_date": "2026-10-18",
-      "check_method": "curl with a browser user agent from a connection in Saudi Arabia; page and linked official PDF (40 pages) read",
-      "http_status": 200,
+      "checked_date": "2026-10-19",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
+      "http_status": null,
       "final_url": "https://www.parliament.gov.zm/node/8853",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": "The Data Protection Act, 2021 | National Assembly of Zambia",
       "document_language": "en",
-      "error": null,
+      "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.",
       "content_type": "text/html"
     },
     {
@@ -291,8 +291,8 @@
         "sectoral"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): SEC guideline page and 20-page PDF read (pdftotext); dated 9 December 2020 in the document.",
+      "checked_date": "2026-10-19",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://www.seczambia.org.zm/wp-content/uploads/2026/05/Regulatory-Sandbox-Guidelines-for-Capital-Markets_Final_OnlineSharing.pdf",
       "link_status": "reachable",
@@ -391,6 +391,36 @@
     "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. mots.gov.zm, parliament.gov.zm, zicta.zm: curl TLS failure / WebFetch 503; smartzambia.gov.zm, dpc.gov.zm proxy 502; ZambiaLII pages Cloudflare (search API used for discovery only). Strategy: primary_source_located, content checked against OECD.AI copy (cover 2024-2026, headers 2025-2027); mots.gov.zm/?p=4492 not confirmed to carry the file. DPA 2021 primary_source_located (parliament.gov.zm/node/8853 unreachable; commencement reported 1 Apr 2021, S.I. 22/2021). SEC Guideline No. 3 of 2020 para 18(j) lists 'Artificial Intelligence' as an admission category in the guideline text - kept (sandbox). PIA sandbox: no AI. Cyber Security Act 2025, Cyber Crimes Act 2025: no AI. Gazette 7918 (8 May 2026) and 7708 (31 Jan 2025) not opened (Cloudflare). Convention 108: not a party. Units covered: Law: ZambiaLII full-text search (discovery) of Acts, statutory instruments, bills and Government Gazette: no Act or SI mentions 'artificial intelligence'; Data Protection Act 2021 s.62 (automated decisions) recorded; Cyber Security Act 2025 and Cyber Crimes Act 2025 searched, no AI or deepfake provisions found; Electronic Communications and Transactions Act 2021 only uses 'algorithm' for encryption/hashes. Data protection repeal bill held as lead. National Assembly site unreachable.; Government: National Artificial Intelligence Strategy 2024-2026 recorded (ministry site unreachable; located only). No public-sector/GenAI guidelines, AI procurement rules, AI ethics guidelines or National AI Council instrument found; Smart Zambia site unreachable. National ICT Policy (2023) and Digital Transformation Strategy not located on an official site; no evidence of an AI pillar.; Ministries: Education (reported AI plans only, lead), Health, Justice, Finance, Labour, Home Affairs, Defence: searched, nothing found.; Regulators: SEC capital-markets sandbox recorded (AI is an admissible category). PIA sandbox guidelines read: no AI mention. Bank of Zambia, Data Protection Commissioner, ZICTA, CCPC, Zambia Cyber Security Agency: searched, no AI-specific document found (dpc.gov.zm, zicta.zm unreachable).. Not reached: mots.gov.zm (TLS failure / HTTP 503); parliament.gov.zm (TLS failure / HTTP 503); zicta.zm (TLS failure / HTTP 503); smartzambia.gov.zm (proxy 502); dpc.gov.zm / dataprotection.gov.zm (proxy 502 / no response); ZambiaLII document pages (Cloudflare challenge; search API used for discovery). Could not verify: National Artificial Intelligence Strategy 2024-2026 (mots.gov.zm unreachable); Data Protection Act, 2021 on parliament.gov.zm (unreachable); commencement 1 April 2021 not confirmed officially; Convention 108: no evidence Zambia is a party; set to null. public-sector, procurement, cyber-security, transparency, standards, index-readiness, generative-ai, drafts, international, historical: no material found. Local retry 2026-10-18 (Saudi Arabia, curl + headless Edge, ~30 min): mots.gov.zm opened (HTTP 200); strategy PDF not on Downloads page (page_id=972) but found via WordPress media endpoint ?rest_route=/wp/v2/media&search=strategy -> /wp-content/uploads/2025/02/Zambia-Ai-Strategy-Book-option-2.pdf (60 pp, same content as the earlier copy); /wp-json/ path returns 404. parliament.gov.zm opened (node/8853 HTTP 200, Act PDF 40 pp read; search/node works; bills list read). Strategy and DPA raised to reviewed_primary_metadata. NDTS and National ICT Policy 2023 read: passing AI mentions only (lead). 2025 STI Policy PDF image-only (no OCR). zicta.zm opened but site search is client-rendered and returned nothing; boz.zm opened, search not functional; zabs.org.zm and cabinet.gov.zm search: no AI documents. Still failing: dpc.gov.zm (DNS not resolved), smartzambia.gov.zm and cyber.gov.zm (no response). Not completed in time box: ministry-by-ministry sweep (health, education, finance, justice, agriculture), ZPPA, sector regulators beyond BoZ/SEC; last_deep_review left unchanged.\nWording note 2026-10-19 (narrative.review_notes): The data protection commissioner's, Smart Zambia's and the cyber security agency's websites could not be accessed, and a full search of sector regulators and ministries is still pending.\nWording note 2026-10-19 (coverage_audit.no_material_found_note): The data protection office, Smart Zambia and cyber security agency sites were unavailable."
   },
   "changes": [
+    {
+      "id": "c-f9ccf6d1a5c0",
+      "date": "2026-10-19",
+      "recorded": "2026-10-19",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "ZMB",
+      "instrument_id": "i-e6f5870cfa2c",
+      "title": "National Artificial Intelligence Strategy 2024-2026",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://www.mots.gov.zm/wp-content/uploads/2025/02/Zambia-Ai-Strategy-Book-option-2.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-84f1404c2b8f",
+      "date": "2026-10-19",
+      "recorded": "2026-10-19",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "ZMB",
+      "instrument_id": "i-64ae43981753",
+      "title": "Data Protection Act, 2021 (Act No. 3 of 2021)",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://www.parliament.gov.zm/node/8853",
+      "needs_review": false
+    },
     {
       "id": "c-e2f3b24aac13",
       "date": "2026-10-18",
