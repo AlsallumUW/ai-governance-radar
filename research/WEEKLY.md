@@ -47,6 +47,7 @@ The scheduled task runs **every day at 06:00 Riyadh time**. Each run sweeps one 
      - add world events only for precise dates stated on an official source
      - set `coverage_audit.last_sweep` to today for every country checked, including those with no findings
    - **If the 5-minute cap stops a country:** note what was not checked and move on.
+   - **Closed consultations (every day, all countries, not only today's group).** Run `python3 scripts/due_consultations.py --apply`. It sets `lifecycle` to `consultation_closed` for every record whose `consultation_closes` date (the last day for comments, as printed on the official page) has passed. When you record or update a consultation, fill `consultation_closes` whenever the official page prints a closing date. `validate.py` warns about any consultation left open past that date.
 5. **Regional bodies (Day 1 only).** Sweep `data/regional/*.json` the same way. Also keep the CETS 225 `party_status` in `data/regional/COE.json` current:
    - `signed` comes from the Council of Europe's official treaty page.
    - `ratified` needs the country's own ratification act as the source (gazette, legislation portal or official treaty series). Until the act's publication is confirmed, keep the country `signed`, hold the act as a lead in the country file, and explain in `note`.
