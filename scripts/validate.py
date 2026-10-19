@@ -147,6 +147,9 @@ def check_translations():
 
 
 BINDING_STATUSES = ("binding_law", "binding_regulation")
+# an issuer field names the issuing body: no placeholders, gazette citations or dates
+_MON = r"(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?"
+ISSUER_BAD = re.compile(r"\bunknown\b|\bunclear\b|gazette|\b\d{4}-\d{2}-\d{2}\b|\b\d{1,2} " + _MON + r" \d{4}\b|\b" + _MON + r" \d{1,2}, \d{4}\b|\b\d{1,2}/\d{1,2}/\d{2,4}\b", re.I)
 # process wording that the public text must not carry (any public field); keep the detail in coverage_audit.technical_note
 PROCESS = (r"could not be (?:accessed|opened|reached|retrieved|checked|read|downloaded|loaded)|(?:from|in) the review environment"
            r"|(?:site|website|portal|page|domain)s? (?:\w+ ){0,3}(?:blocked|blocks)|\bblocked (?:automated|access|by)|was not searched|were not searched|\breportedly\b"
@@ -226,6 +229,10 @@ def check(only=None):
             removed_ids = {x.get("instrument_id") for x in r.get("changes", []) if x.get("type") == "removed"}
             if c.get("instrument_id") and c["instrument_id"] not in inst_ids and c["instrument_id"] not in removed_ids:
                 E(f"change {c.get('id')} points to missing instrument {c['instrument_id']}")
+        for x in r.get("instruments", []) + r.get("leads", []):   # issuer fields name the issuing body only
+            for f in ("issuing_authority", "publisher_name"):
+                m = ISSUER_BAD.search(x.get(f) or "")
+                if m: W(f"{x.get('id') or 'lead ' + repr((x.get('english_title') or x.get('title') or '')[:50])} {f} contains '{m.group(0)}' (name the issuing body only; gazette citations and dates go in the source fields)")
         for l in r.get("leads", []):     # lead titles are shown on the public pages
             m = SUMMARY_PROCESS.search(" ".join(str(l.get(f) or "") for f in ("title", "english_title", "issuing_authority")))
             if m: E(f"lead '{(l.get('english_title') or l.get('title') or '')[:60]}' contains process wording '{m.group(0)}'")
