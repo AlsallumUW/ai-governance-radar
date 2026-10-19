@@ -6,7 +6,7 @@
 
 Each file maps a record id to its translated fields:
     {"<record id>": {"<field>": {"ar": "...", "src": "<hash of the English source>"}}}
-Record ids: an instrument id (fields title, summary, status), a jurisdiction id (fields summary, lead_institutions,
+Record ids: "issuer:<ISO3>:<hash of the English name>" (field name: an issuing body or publisher as named in a record or lead), an instrument id (fields title, summary, status), a jurisdiction id (fields summary, lead_institutions,
 review_notes, coverage_note), a change id (fields title; detail for government actions, kind "world") or "photo:<ISO3>:<role>" (fields caption, alt).
 "ar" is null with a "skip" reason when a text could not be translated with confidence; the page then shows the English.
 
@@ -37,6 +37,12 @@ def path_for(jid, rec=None):
     return BASE / ("regional" if rec["jurisdiction"].get("type") != "country" else "") / f"{jid}.json"
 
 
+def issuer_id(name, jid):
+    """Content id of an issuing body's name in one jurisdiction (the same English name can have a different Arabic name in
+    another country, e.g. "Ministry of Education")."""
+    return f"issuer:{jid}:{src_hash(name)}"
+
+
 def is_arabic(text):
     """An official title counts as Arabic when most of its letters are Arabic."""
     letters = re.findall(r"[^\W\d_]", text or "")
@@ -62,6 +68,12 @@ def items(rec, photos=None):
     for c in rec.get("changes", []):
         if c.get("title") and not title_from_instrument(c, by_id): out.append((c["id"], "title", c["title"]))
         if c.get("kind") == "world" and c.get("detail"): out.append((c["id"], "detail", c["detail"]))
+    seen = set()
+    for i in rec.get("instruments", []) + rec.get("leads", []):
+        for f in ("issuing_authority", "publisher_name"):
+            name = (i.get(f) or "").strip()
+            if name and name not in seen and not is_arabic(name):
+                seen.add(name); out.append((issuer_id(name, jid), "name", name))
     for ph in ((photos or {}).get(jid) or {}).get("photos", []):
         for f in ("caption", "alt"):
             if ph.get(f): out.append((f"photo:{jid}:{ph['role']}", f, ph[f]))

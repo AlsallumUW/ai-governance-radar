@@ -117,9 +117,16 @@ def map_photos():
 
 
 def issuer_names(D):
-    """Arabic names of issuing bodies that the site already has: each country's translated lead institutions, matched by
-    position to the English list (used for the issuer line in the map panel and the Updates rows)."""
+    """Arabic names of issuing bodies for the issuer line in the map panel and the Updates rows: the content pipeline's
+    translated issuer names (data/i18n/ar, "issuer:<hash>"), then each country's translated lead institutions, matched by
+    position to the English list."""
+    from i18n_content import issuer_id
     out = {}
+    for i in D["instruments"]:
+        for f in ("issuing_authority", "publisher_name"):
+            n = (i.get(f) or "").strip()
+            k = f"{i['jurisdiction_id']}|{n}"   # per country: the same English name can differ in Arabic
+            if n and k not in out and (t := i18n.content(issuer_id(n, i["jurisdiction_id"]), "name", n)): out[k] = t
     for jid, n in (D.get("narratives") or {}).items():
         en = list((n or {}).get("lead_institutions") or [])
         ar = i18n.content(jid, "lead_institutions", en) if en else None

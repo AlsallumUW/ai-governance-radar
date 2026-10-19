@@ -265,11 +265,14 @@ def _bare(name):
     return re.sub(r"\s*\([^()]*\)\s*$", "", name or "").strip()
 
 
-def ar_issuer(name):
+def ar_issuer(name, jid=None):
     """Arabic pages: an issuing body's Arabic name where the site has one (each country's translated lead institutions, the
     same source as the map panel and the Updates rows); otherwise the name as published."""
     global _AR_ISSUERS
     if i18n.LANG != "ar" or not name: return name
+    from i18n_content import issuer_id
+    t = jid and i18n.content(issuer_id(name.strip(), jid), "name", name.strip())
+    if t: return t
     if _AR_ISSUERS is None:
         from common import jurisdiction_files, load
         _AR_ISSUERS = {}
@@ -286,7 +289,7 @@ def ar_issuer(name):
 def inst_item(i, orgs, srcs, cats, regional_from=None):
     title = i.get("english_title") or i.get("official_title")
     orig = i.get("official_title") if i.get("official_title") and i.get("official_title") != title else None
-    issuer = ar_issuer(i.get("issuing_authority") or orgs.get(i.get("organization_id"), {}).get("name") or i.get("publisher_name"))
+    issuer = ar_issuer(i.get("issuing_authority") or orgs.get(i.get("organization_id"), {}).get("name") or i.get("publisher_name"), i.get("jurisdiction_id"))
     st = i.get("legal_status"); src = srcs.get(i.get("source_id"), {})
     dates = []
     if i.get("publication_date"): dates.append(i18n.T("Published {date}", date=f'<time datetime="{e(i["publication_date"])}">{e(fmt_date(i["publication_date"]))}</time>'))
@@ -574,7 +577,7 @@ def country_page(j, D, rec, flags, ctx):
                            for u, rs in sorted(byu.items())) + '</section>')
     # g. leads
     if band: H.append(photo_band(band))
-    if leads: H.append(leads_section(leads))
+    if leads: H.append(leads_section(leads, jid))
     # h. method
     m = '<section id="method" class="block prose method"><h2>Method note</h2>'
     if narr.get("review_notes"): m += f'<p{ar_attr(notes_ar)}>{e(notes_ar or narr["review_notes"])}{i18n.orig_link("method") if notes_ar else ""}</p>'
@@ -597,12 +600,12 @@ def country_page(j, D, rec, flags, ctx):
     return "".join(H), bundle
 
 
-def leads_section(leads):
+def leads_section(leads, jid=None):
     """Collapsed list of a jurisdiction's leads (country and body pages)."""
     return (f'<section id="leads" class="block"><details class="leads"><summary><h2>Leads — not yet verified as in-scope instruments <span class="count">{len(leads)}</span></h2></summary>'
             '<p class="section-lede">Documents found during research that are not recorded as instruments: no official text could be read, no stated date, still pending, or outside the scope test.</p><ul class="lead-list">'
             + "".join(f'<li><strong>{e(l.get("english_title") or l.get("title"))}</strong>' + (f'<span class="inst-orig" dir="auto">{e(l.get("title"))}</span>' if l.get("english_title") and l.get("english_title") != l.get("title") else "")
-                      + (f'<span class="inst-meta">{e(l.get("issuing_authority"))}</span>' if l.get("issuing_authority") else "") + '</li>' for l in leads)
+                      + (f'<span class="inst-meta">{e(ar_issuer(l.get("issuing_authority"), jid))}</span>' if l.get("issuing_authority") else "") + '</li>' for l in leads)
             + '</ul></details></section>')
 
 
@@ -652,7 +655,7 @@ def body_page(b, D, rec, flags, ctx):
         H.append(f'<section id="members" class="block"><h2>Member states <span class="count">{len(members)}</span></h2><p class="member-grid">'
                  + "".join(f'<a class="chip" href="../../country/{c}/">{e(ctx["jur"].get(c, {}).get("name", c))}</a>' for c in members) + '</p>'
                   + '</section>')
-    if leads: H.append(leads_section(leads))
+    if leads: H.append(leads_section(leads, bid))
     H.append('<section id="method" class="block prose method"><h2>Method note</h2>' + (f'<p{ar_attr(bnotes_ar)}>{e(bnotes_ar or narr.get("review_notes"))}{i18n.orig_link("method") if bnotes_ar else ""}</p>' if narr.get("review_notes") else "")
              + '<p>Only official sources are recorded. <a href="../../?about=method" data-keep-query>Read the full methodology</a>.</p>'
              '<p class="export"><span>Download this profile:</span><button type="button" class="btn" data-export="csv">CSV</button><button type="button" class="btn" data-export="json">JSON</button></p></section>')
