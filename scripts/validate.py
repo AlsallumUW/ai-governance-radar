@@ -226,6 +226,9 @@ def check(only=None):
             removed_ids = {x.get("instrument_id") for x in r.get("changes", []) if x.get("type") == "removed"}
             if c.get("instrument_id") and c["instrument_id"] not in inst_ids and c["instrument_id"] not in removed_ids:
                 E(f"change {c.get('id')} points to missing instrument {c['instrument_id']}")
+        for l in r.get("leads", []):     # lead titles are shown on the public pages
+            m = SUMMARY_PROCESS.search(" ".join(str(l.get(f) or "") for f in ("title", "english_title", "issuing_authority")))
+            if m: E(f"lead '{(l.get('english_title') or l.get('title') or '')[:60]}' contains process wording '{m.group(0)}'")
         m = SUMMARY_PROCESS.search((r.get("narrative") or {}).get("summary") or "")
         if m: E(f"narrative.summary contains process wording '{m.group(0)}' (state what is established; move it to review_notes as 'Not yet verified from the official text: ...')")
         for f, v in (("narrative.review_notes", (r.get("narrative") or {}).get("review_notes")),
