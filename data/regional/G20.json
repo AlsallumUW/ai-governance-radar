@@ -73,7 +73,12 @@
     {
       "title": "G20 Osaka Leaders' Declaration (28-29 June 2019), welcoming the G20 AI Principles",
       "url": "https://www.mofa.go.jp/",
-      "note": "Japan's foreign ministry site returned 403; the declaration text is needed to record the leaders' endorsement."
+      "note": "Retried 2026-10-19: mofa.go.jp (HTML and PDF), consilium.europa.eu and other member-government copies still returned HTTP 403 or 404; no readable text, so the leaders' endorsement is not recorded."
+    },
+    {
+      "title": "G20 2026 US presidency AI documents: 'The G20 AI Prosperity Objectives' and 'AI Prosperity Compact' (G20 Innovation Ministerial, Raleigh-Durham, September 2026)",
+      "url": "https://g20.org/",
+      "note": "Listed on the US presidency's official G20 site (g20.org) with PDFs hosted on commerce.gov; the PDFs returned HTTP 403, so title, issuer and date could not be read from the documents and the page prints no document date. Not recorded until the text is read and any G20-level endorsement is stated in it."
     }
   ],
   "organizations": [
@@ -168,7 +173,8 @@
     "search_queries": [],
     "review_date": "2026-10-13",
     "no_material_found_note": "The G20 presidency sites and the Japanese and Indian foreign ministry sites were checked; not yet verified from the official text: the declaration. The texts were read from Global Affairs Canada's G20 and New Delhi declaration pages and from the Tsukuba statement published by Japan's Ministry of Internal Affairs and Communications.",
-    "technical_note": "Method note (original): Membership is taken from Global Affairs Canada's G20 page (Canada is a G20 member and past host); the G20 presidency site and several past presidency sites could not be read. The African Union's accession is recorded from the New Delhi Leaders' Declaration of 9-10 September 2023 as published on the same Canadian government site, which gives no exact accession day. The AI Principles come from the PDF of the Tsukuba ministerial statement published by Japan's Ministry of Internal Affairs and Communications. Pending: the Osaka Leaders' Declaration (June 2019), in which leaders welcomed the principles, on Japan's foreign ministry site, which could not be read; and later G20 statements on AI.\n\nCoverage note (original): Tried: mofa.go.jp (403), g20.org (403), g20.org.za (SSL error), gov.br/g20 (404), g20.in (connection failed), mea.gov.in (JavaScript-rendered, declaration not in page). Read: international.gc.ca G20 page and New Delhi declaration page; soumu.go.jp Tsukuba statement PDF.\nWording note 2026-10-19 (narrative.review_notes): The G20 presidency sites and Japan's foreign ministry site were unavailable, so the Osaka\nWording note 2026-10-19 (coverage_audit.no_material_found_note): The G20 presidency sites and the Japanese and Indian foreign ministry sites were tried but were unavailable or did not show the declaration."
+    "technical_note": "Method note (original): Membership is taken from Global Affairs Canada's G20 page (Canada is a G20 member and past host); the G20 presidency site and several past presidency sites could not be read. The African Union's accession is recorded from the New Delhi Leaders' Declaration of 9-10 September 2023 as published on the same Canadian government site, which gives no exact accession day. The AI Principles come from the PDF of the Tsukuba ministerial statement published by Japan's Ministry of Internal Affairs and Communications. Pending: the Osaka Leaders' Declaration (June 2019), in which leaders welcomed the principles, on Japan's foreign ministry site, which could not be read; and later G20 statements on AI.\n\nCoverage note (original): Tried: mofa.go.jp (403), g20.org (403), g20.org.za (SSL error), gov.br/g20 (404), g20.in (connection failed), mea.gov.in (JavaScript-rendered, declaration not in page). Read: international.gc.ca G20 page and New Delhi declaration page; soumu.go.jp Tsukuba statement PDF.\nWording note 2026-10-19 (narrative.review_notes): The G20 presidency sites and Japan's foreign ministry site were unavailable, so the Osaka\nWording note 2026-10-19 (coverage_audit.no_material_found_note): The G20 presidency sites and the Japanese and Indian foreign ministry sites were tried but were unavailable or did not show the declaration.",
+    "last_sweep": "2026-10-19"
   },
   "changes": [
     {
@@ -210,7 +216,7 @@
   ],
   "members_source": {
     "source_url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/g20/index.aspx?lang=eng",
-    "comment": "Global Affairs Canada, 'Canada and the G20' (read 2026-10-13): 'The G20 comprises nineteen countries and two regional unions. The African Union became the G20's 21st member in 2023. ... The 21 members are: African Union, Argentina, Australia, Brazil, Canada, China, European Union, Germany, France, India, Indonesia, Italy, Japan, Mexico, Russia, Saudi Arabia, South Africa, South Korea, Türkiye, United Kingdom, United States of America.' Only the 19 countries are listed in members; the EU and the AU are recorded in union_members."
+    "comment": "Global Affairs Canada, 'Canada and the G20' (read 2026-10-13): 'The G20 comprises nineteen countries and two regional unions. The African Union became the G20's 21st member in 2023. ... The 21 members are: African Union, Argentina, Australia, Brazil, Canada, China, European Union, Germany, France, India, Indonesia, Italy, Japan, Mexico, Russia, Saudi Arabia, South Africa, South Korea, Türkiye, United Kingdom, United States of America.' Only the 19 countries are listed in members; the EU and the AU are recorded in union_members. Re-checked 2026-10-19: the 2026 US presidency site (g20.org) lists 'State Participants' as Argentina, Australia, Brazil, Canada, China, France, Germany, India, Indonesia, Italy, Japan, Mexico, Poland, Russia, Saudi Arabia, South Korea, Türkiye, United Kingdom and United States (South Africa is not listed; Poland is), with the African Union and European Union as non-state participants. This is the presidency's participant list, not a statement that membership changed, so members is left unchanged pending a clear official statement."
   },
   "union_members": {
     "EU": {

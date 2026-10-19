@@ -458,6 +458,57 @@
       "category": "historical",
       "evidence_reference": "curl (browser user agent, --max-time 60, CA bundle supplemented with the missing Sectigo intermediate) 2026-10-13: DCDT 'National AI Summit' page and the 53-page PDF read with pdftotext (title page 'October 2023', foreword, contents incl. C2 AI governance, C2.2 regulation approach, C3 timelines).",
       "source_id": "s-f8fc404a4f6c"
+    },
+    {
+      "id": "i-9f81ef5f0fec",
+      "official_title": "Communication to Stakeholders MD08-2025/2026: Regulatory Requirements of Artificial Intelligence and Machine Learning (AI/ML) Enabled Medical Devices",
+      "jurisdiction_id": "ZAF",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "South Africa (national)",
+      "superseded_by": [],
+      "supersedes": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "en",
+      "verification_date": "2026-10-18",
+      "first_recorded": "2026-10-18",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "effective_date": null,
+      "technology_scope": [
+        "AI"
+      ],
+      "english_title": "SAHPRA Communication MD08-2025/2026: Regulatory Requirements of AI/ML-Enabled Medical Devices",
+      "issuing_authority": "South African Health Products Regulatory Authority (SAHPRA)",
+      "authority_type": "regulator",
+      "categories": [
+        "sectoral",
+        "risk-assurance"
+      ],
+      "legal_status": "administrative_guideline",
+      "lifecycle": "published",
+      "publication_date": "2025-09-26",
+      "current_status": "Issued 26 September 2025 as SAHPRA Communication to Stakeholders, Issue No. MD08-2025/2026. The text states that formal regulatory pathways for AI/ML-enabled medical devices are yet to be developed and that SAHPRA has not yet called up medical devices for product registration; establishment licensing under s.22C of the Medicines and Related Substances Act 101 of 1965 applies. It is a communication to industry, not a regulation; no commencement clause.",
+      "summary": "SAHPRA's communication to industry setting out its position on AI/ML-enabled medical devices and IVDs, including software as a medical device. It states that such devices need SAHPRA authorisation and a medical device establishment licence, are classified under the existing four-class risk system, and must meet existing essential principles, ISO 13485 quality management and clinical-evidence requirements, with Class C and D devices also needing approval from a reference regulator. It sets guiding principles (patient safety, transparency and explainability, cybersecurity and POPIA privacy, performance monitoring, clinical evaluation), post-market surveillance and incident-reporting expectations, and interim change-control expectations for adaptive algorithms.",
+      "ai_governance_relevance": "Health products regulator's guidance on AI/ML-enabled medical devices.",
+      "source_url": "https://www.sahpra.org.za/?p=18572",
+      "official_pdf_url": "https://www.sahpra.org.za/wp-content/uploads/2025/09/MD08-20252026_-SAHPRA-Communication-to-Industry-AI-Medical-devices_Acknowledgements.pdf",
+      "official_webpage_url": "https://www.sahpra.org.za/?p=18572",
+      "sectors": [
+        "health"
+      ],
+      "source_kind": "official_document",
+      "organization_id": "o-74bcdac61419",
+      "publisher_name": "South African Health Products Regulatory Authority",
+      "category": "sectoral",
+      "evidence_reference": "curl (browser user agent, --max-time 60) 2026-10-18: PDF at the SAHPRA uploads path returned (served via the site search result for 'MD08'), read with pdftotext: header 'Communication to Stakeholders, Issue No.: MD08-2025/2026, 26 September 2025'; sections on guiding principles, regulatory requirements, post-market surveillance, change control.",
+      "source_id": "s-99d3a2b46434"
     }
   ],
   "organizations": [
@@ -508,6 +559,16 @@
       "publisher_name_verified": true,
       "ai_governance_role": "Competition authority; its Media and Digital Platforms Market Inquiry (final report 13 November 2025) imposed remedial actions on Google, Microsoft, OpenAI and others, including AI Overviews controls and AI training opt-outs for news publishers.",
       "source_url": "https://www.compcom.co.za/",
+      "authority_type": "regulator",
+      "government_level": "national"
+    },
+    {
+      "id": "o-74bcdac61419",
+      "jurisdiction_id": "ZAF",
+      "name": "South African Health Products Regulatory Authority",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Statutory regulator of medicines and medical devices; issued Communication MD08-2025/2026 on the regulatory requirements of AI/ML-enabled medical devices (26 September 2025).",
+      "source_url": "https://www.sahpra.org.za/",
       "authority_type": "regulator",
       "government_level": "national"
     }
@@ -737,6 +798,33 @@
       "document_language": "en",
       "error": null,
       "content_type": "application/pdf"
+    },
+    {
+      "id": "s-99d3a2b46434",
+      "url": "https://www.sahpra.org.za/wp-content/uploads/2025/09/MD08-20252026_-SAHPRA-Communication-to-Industry-AI-Medical-devices_Acknowledgements.pdf",
+      "jurisdiction_ids": [
+        "ZAF"
+      ],
+      "source_institutions": [
+        "South African Health Products Regulatory Authority"
+      ],
+      "instrument_ids": [
+        "i-9f81ef5f0fec"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-18",
+      "checked_date": "2026-10-18",
+      "check_method": "curl (browser user agent, --max-time 60) 2026-10-18: PDF read with pdftotext",
+      "http_status": 200,
+      "final_url": "https://www.sahpra.org.za/wp-content/uploads/2025/09/MD08-20252026_-SAHPRA-Communication-to-Industry-AI-Medical-devices_Acknowledgements.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
     }
   ],
   "regional_applicability": [],
@@ -888,6 +976,21 @@
       "from": null,
       "to": null,
       "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-60f5d9c8f83d",
+      "date": "2026-10-18",
+      "recorded": "2026-10-18",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "ZAF",
+      "instrument_id": "i-9f81ef5f0fec",
+      "title": "SAHPRA Communication MD08-2025/2026: Regulatory Requirements of AI/ML-Enabled Medical Devices",
+      "detail": "Added to the radar (published 2025-09-26).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.sahpra.org.za/?p=18572",
       "needs_review": false
     },
     {
@@ -1173,6 +1276,19 @@
       "from": null,
       "to": null,
       "source_url": "https://www.compcom.co.za/wp-content/uploads/2025/11/MDPMI-Releases-Final-Report-13-November-2025-2.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-5a1e0d7b3f42",
+      "date": "2025-09-26",
+      "recorded": "2026-10-18",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "ZAF",
+      "instrument_id": "i-9f81ef5f0fec",
+      "title": "SAHPRA Communication MD08-2025/2026: Regulatory Requirements of AI/ML-Enabled Medical Devices",
+      "detail": "SAHPRA issued its communication to industry on AI/ML-enabled medical devices, dated 26 September 2025 on the document.",
+      "source_url": "https://www.sahpra.org.za/wp-content/uploads/2025/09/MD08-20252026_-SAHPRA-Communication-to-Industry-AI-Medical-devices_Acknowledgements.pdf",
       "needs_review": false
     },
     {
