@@ -43,7 +43,7 @@
       "link_status": "reachable",
       "document_access_type": "original_government_document",
       "first_recorded": "2026-10-12",
-      "last_changed": null,
+      "last_changed": "2026-10-19",
       "language": "fr",
       "source_kind": "official_document",
       "categories": [
@@ -55,7 +55,7 @@
       "authority_type": "head_of_state",
       "official_title": "Loi n° 2014-038 sur la protection des données à caractère personnel",
       "english_title": "Law No. 2014-038 on the protection of personal data",
-      "issuing_authority": "President of the Republic of Madagascar (law adopted by the National Assembly on 16 December 2014)",
+      "issuing_authority": "President of the Republic of Madagascar",
       "publisher_name": "Centre National de Législation (Prime Minister's Office)",
       "legal_status": "binding_law",
       "lifecycle": "in_force",
@@ -68,7 +68,7 @@
       "current_status": "Promulgated in Antananarivo on 9 January 2015 after adoption by the National Assembly on 16 December 2014 and High Constitutional Court decision no. 02-HCC/D3 of 7 January 2015. The national legislation portal (CNLEGIS) lists it as in force, published in Journal Officiel no. 3630 of 20 July 2015, p. 3272, and links Decree no. 2023-1541 as its implementing decree. CMIL members were designated by Decree no. 2025-814 of 30 July 2025 (located on the portal).",
       "source_id": "s-7d74dd3908b0",
       "organization_id": "o-7701f2abcc9c",
-      "evidence_reference": "curl (browser user agent, --max-time 60): CNLEGIS keyword search (AJAX result list) gave the record (Loi 2014-038, JO 3630, 20-07-2015, p. 3272, état 'En vigueur') with full HTML text; official PDF from cnlegis.gov.mg read with pdftotext (Articles 1-78, adoption 16-12-2014, signature 09-01-2015). local-retry-2026-10-18: official PDF re-opened via curl (HTTP 200) and title/signature checked; no change.",
+      "evidence_reference": "curl (browser user agent, --max-time 60): CNLEGIS keyword search (AJAX result list) gave the record (Loi 2014-038, JO 3630, 20-07-2015, p. 3272, état 'En vigueur') with full HTML text; official PDF from cnlegis.gov.mg read with pdftotext (Articles 1-78, adoption 16-12-2014, signature 09-01-2015). local-retry-2026-10-18: official PDF re-opened via curl (HTTP 200) and title/signature checked; no change. Issuing act details: President of the Republic of Madagascar (law adopted by the National Assembly on 16 December 2014).",
       "ai_governance_relevance": "Malagasy national instrument governing automated decision-making and profiling (data-privacy)."
     },
     {
@@ -308,6 +308,21 @@
     "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. cmil.mg does not resolve; artec.mg reset; National Assembly PDF uploads 403 (law read on CNLEGIS). CNLEGIS keyword search: AI hits only diploma-equivalence orders. Decree 2023-1541 labelled 'Abrogé' on CNLEGIS but Decree 2025-696 repeals only its Article 90 (recorded in force). No Malagasy-language search. Convention 108 act not found. Units covered: Law: CNLEGIS national legislation portal keyword search (French): no AI law or AI provision; data protection Law 2014-038 (automated-decision/profiling rule, Art. 3) and its implementing Decree 2023-1541 (amended by Decree 2025-696) recorded. National Assembly site: law PDF copy forbidden (403); no AI bill found.; Government: Ministry of Digital Development, Posts and Telecommunications site and document library searched: no national AI strategy, AI policy or public-sector AI guidance published; only news posts on AI cooperation (Riyadh, Cairo, Sept/July 2026). National cybersecurity strategy launched Dec 2025 but text not online (lead).; Ministries: Searched, nothing found: no AI documents from education, health, justice, finance/customs, defence, labour or interior on official sites (customs AI use reported only in news).; Regulators: CMIL website does not resolve (no AI guidance found); central bank site search: nothing AI-specific; ARTEC (telecom regulator) site refused connections. Convention 108: no ratification or accession act found on CNLEGIS (searches 'Conseil de l'Europe', 'STE 108').. Not reached: CMIL website (cmil.mg) - domain does not resolve; ARTEC website (connection reset); National Assembly document uploads (403). Could not verify: CMIL own website (cmil.mg) unreachable: any CMIL AI guidance or deliberations unverified; ARTEC site unreachable; National Cybersecurity Strategy (Dec 2025) text not online. binding-law, strategy, government-governance, ethics, risk-assurance, public-sector, procurement, cyber-security, transparency, standards, sandbox, index-readiness, sectoral, generative-ai, drafts, international, historical: no material found. Local retry 2026-10-18 (home connection, ~30 min): STILL FAILING: cmil.mg and www.cmil.mg do not resolve (curl and headless Edge); www.artec.mg connect timeout on 443 and 80; www.assemblee-nationale.mg reset; banque-centrale.mg serves a hosting default page (site down); arpp.mg does not resolve. OPENED: mndpt.gov.mg (search, /lois/, /decrets/ - lists Loi 2014-006 cybercrime, Decrees 2026-1602 e-signature and 2026-1959 interoperability; both 2026 decree PDFs are image scans with no text layer, not OCRed, titles not AI-related); assemblee-nationale.mg bare domain opens (99 texts list; filters/pagination are client-side, only first page readable; no AI bill seen; site search returned home page); senat.mg opens (no AI items); bnm.mg opens (search ISO/IEC: no AI standards adoption found); armp.mg e-GP portal opens via browser only (cert name mismatch for curl), no AI guidance; cnlegis.gov.mg keyword search works via session POST to page_find_direct_mots + page_data_result_direct_mots (JSON): AI hits still only diploma-equivalence orders; 'cybersécurité' returns Loi 2024-004 authorising ratification and Décret 2025-266 of 12-03-2025 ratifying the AU Malabo Convention (JO 4276, 16-04-2025) - regional layer, not recorded in the country file (same practice as GIN/DJI); Decree 2024-107 (MNDPT attributions) listed without PDF. Both existing source PDFs re-downloaded (200). Ministries of health/education/finance/justice/agriculture/interior own sites not individually re-checked in this pass, so last_deep_review left unchanged.\nWording note 2026-10-19 (narrative.review_notes): The data protection commission's and telecom regulator's websites still could not be accessed and the central bank's site was unavailable; the national cybersecurity strategy and the 2023-2028 digital strategic plan are listed under Leads until their texts are published.\nWording note 2026-10-19 (coverage_audit.no_material_found_note): The data protection authority's and the telecoms regulator's websites were unavailable and the national cybersecurity strategy text is not online, so these remain to be checked."
   },
   "changes": [
+    {
+      "id": "c-f409265f4648",
+      "date": "2026-10-19",
+      "recorded": "2026-10-19",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "MDG",
+      "instrument_id": "i-69a7eb6f6ade",
+      "title": "Law No. 2014-038 on the protection of personal data",
+      "detail": "Record updated: issuing authority.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
     {
       "id": "c-cad9e24743da",
       "date": "2026-10-12",
