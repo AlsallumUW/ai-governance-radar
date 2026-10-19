@@ -1,6 +1,11 @@
-(function(){'use strict';
+(async function(){'use strict';
 const Q0=location.search; // query at load: the map's first render rewrites the URL before the restore code below reads it
-const D=JSON.parse(document.getElementById('database').textContent),T=JSON.parse(document.getElementById('geometry').textContent),F=JSON.parse(document.getElementById('flags').textContent);
+const PRE=document.documentElement.lang==='ar'?'../':'',AS=window.RADAR_ASSETS||{};   // Arabic page sits one folder down
+const getJSON=u=>fetch(PRE+u).then(r=>{if(!r.ok)throw new Error(u+' '+r.status);return r.json()});
+let D,T,TL,F,AX;try{[D,T,TL,F,AX]=await Promise.all([getJSON(AS.data),getJSON(AS.geo),getJSON(AS.geoLo),getJSON(AS.flags),AS.ar?getJSON(AS.ar):null])}
+catch(e){const l=document.getElementById('mapLoading');if(l)l.textContent='The data could not be loaded. Please reload the page.';throw e}
+if(AX){window.AR_CT=AX.CT;window.AR_CD=AX.CD;window.AR_MAP=AX.MAP}   // Arabic page: tables from assets/home-ar.json
+document.getElementById('mapLoading')?.remove();document.body.classList.remove('is-loading');
 const $=s=>document.querySelector(s),$$=s=>Array.from(document.querySelectorAll(s)),esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m])),norm=s=>String(s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
 // Arabic pages: country names are matched and sorted in Arabic (i18n-ar.js defines I18N before this script runs)
 const AR=document.documentElement.lang==='ar'&&window.I18N,arName=j=>AR?I18N.t(j.name):'',byName=AR?(a,b)=>arCol.compare(arName(a),arName(b)):(a,b)=>a.name.localeCompare(b.name),arCol=new Intl.Collator('ar');
@@ -37,6 +42,14 @@ function bodyClass(id){if(!body)return '';if(body==='OECD'){const a=OECD_ADH[id]
 /* ---------- living map (UX phase 5): flat Equal Earth map or orthographic globe ---------- */
 const svg=d3.select('#mapSvg'),zoomLayer=svg.select('#zoomLayer'),shell=$('#mapShell'),tip=$('#mapTip');
 const countriesFC=topojson.feature(T.countries,T.countries.objects.countries),landFC=topojson.feature(T.land,T.land.objects.land),borders=topojson.mesh(T.countries,T.countries.objects.countries,(a,b)=>a!==b);
+// low-detail copy (scripts/make_topo_lo.py): drawn while the globe moves; land always uses it on the globe
+/* motion geometry also leaves out islands under ~500 km2 (invisible at globe scale); each country keeps its largest part */
+/* simplification can flip a small ring's winding, which d3 reads as "everything except this ring": any polygon larger
+   than a hemisphere is turned back the right way (no country or land mass is that large) */
+const orient=c=>d3.geoArea({type:'Polygon',coordinates:c})>2*Math.PI?c.map(r=>r.slice().reverse()):c;
+const dropIslets=f=>{const g=f.geometry;if(!g)return f;if(g.type==='Polygon')return {...f,geometry:{type:'Polygon',coordinates:orient(g.coordinates)}};if(g.type!=='MultiPolygon')return f;const P=g.coordinates.map(orient),A=P.map(c=>d3.geoArea({type:'Polygon',coordinates:c})),m=Math.max(...A);return {...f,geometry:{type:'MultiPolygon',coordinates:P.filter((c,k)=>A[k]>=1.2e-5||A[k]===m)}}};
+const countriesLo=new Map(topojson.feature(TL.countries,TL.countries.objects.countries).features.map(f=>[f.id,dropIslets(f)])),landLo=dropIslets(topojson.feature(TL.land,TL.land.objects.land).features?{type:'Feature',geometry:{type:'MultiPolygon',coordinates:topojson.feature(TL.land,TL.land.objects.land).features.flatMap(f=>f.geometry.type==='MultiPolygon'?f.geometry.coordinates:[f.geometry.coordinates])}}:topojson.feature(TL.land,TL.land.objects.land)),bordersLo=topojson.mesh(TL.countries,TL.countries.objects.countries,(a,b)=>a!==b);
+await new Promise(r=>setTimeout(r));   // yield: keep start-up in short tasks (no multi-second freeze on phones)
 const flat=d3.geoEqualEarth(),globe=d3.geoOrthographic().clipAngle(90).precision(.5),graticule=d3.geoGraticule10();
 let mode='map',projection=flat;const path=d3.geoPath(flat);
 const countryPaths=new Map(),centers=new Map(),geoCenters=new Map(),featureByID=new Map(countriesFC.features.map(f=>[f.id,f]));
@@ -66,7 +79,8 @@ const L=(k,o={})=>WN_L[k].replace(/\{(\w)\}/g,(_,x)=>o[x]??'');
 const pulseR=n=>Math.sqrt(Math.min(Math.max(n,1),10));
 const hasPulse=id=>recent.has(id)&&countryPaths.has(id)&&!countryPaths.get(id).classList.contains('is-dim');
 const zoom=d3.zoom().scaleExtent([1,48]).filter(e=>mode==='map'&&(!e.ctrlKey||e.type==='wheel')&&!e.button).on('zoom',e=>{transform=e.transform;zoomLayer.attr('transform',transform);shell.style.setProperty('--k',transform.k);placeRadar();placeRings();if(pinned)placeCard(pinned)});
-function largestPart(f){if(f.geometry.type!=='MultiPolygon')return f;let best=null,max=-1;for(const c of f.geometry.coordinates){const g={type:'Feature',geometry:{type:'Polygon',coordinates:c}},a=d3.geoArea(g);if(a>max){max=a;best=g}}return best}
+const LP=new Map();function largestPart(f){if(!LP.has(f))LP.set(f,largestPart0(f));return LP.get(f)}
+function largestPart0(f){if(f.geometry.type!=='MultiPolygon')return f;let best=null,max=-1;for(const c of f.geometry.coordinates){const g={type:'Feature',geometry:{type:'Polygon',coordinates:c}},a=d3.geoArea(g);if(a>max){max=a;best=g}}return best}
 const narrow=matchMedia('(max-width:760px)');
 function layout(){const r=shell.getBoundingClientRect();width=Math.max(280,r.width);const S={type:'Sphere'};path.projection(flat);
   if(narrow.matches){flat.fitWidth(width-12,S);const lg=$('#mapLegend'),[[,y0],[,y1]]=path.bounds(S),top=48,bottom=46+(lg&&!lg.hidden?lg.offsetHeight+6:0)+(typeof pulseLegend!=='undefined'&&pulseLegend.offsetHeight?pulseLegend.offsetHeight+6:0);height=Math.ceil(y1-y0)+top+bottom;flat.fitExtent([[6,top],[width-6,height-bottom]],S);shell.style.height=height+'px';shell.style.minHeight='0'}
@@ -75,14 +89,22 @@ function layout(){const r=shell.getBoundingClientRect();width=Math.max(280,r.wid
   globe.translate([width/2,height/2]).scale(baseR()*globeK).rotate(rot);
   path.projection(projection);svg.attr('viewBox',`0 0 ${width} ${height}`);zoom.extent([[0,0],[width,height]]).translateExtent([[-width*.1,-height*.1],[width*1.1,height*1.1]]);render();placeRadar();placePulseLegend()}
 const baseR=()=>Math.max(80,Math.min(width,height)/2-22);
-function render(){const g=mode==='globe';svg.select('#sphere').attr('d',path({type:'Sphere'}));svg.select('#graticule').attr('d',g?path(graticule):null);svg.select('#land').attr('d',path(landFC));
-  countriesFC.features.forEach(f=>countryPaths.get(f.id)?.setAttribute('d',path(f)||''));svg.select('#borders').attr('d',path(borders));
+let moving=false,idleT=0,rafPending=false;
+function motion(){moving=true;clearTimeout(idleT);idleT=setTimeout(()=>{moving=false;if(mode==='globe')render()},150)}
+function frame(){motion();if(rafPending)return;rafPending=true;requestAnimationFrame(()=>{rafPending=false;render()})}
+/* globe: a country whose whole outline lies on the far side is skipped without projecting it (centre + angular radius,
+   computed once); while moving the outline is resampled more coarsely (precision 2 px instead of 0.5 px) */
+const CULL=new Map();function cullOf(f){if(!CULL.has(f.id)){const c=d3.geoCentroid(f);let r=0;const walk=a=>{if(typeof a[0]==='number'){const d=d3.geoDistance(c,a);if(d>r)r=d}else a.forEach(walk)};walk(f.geometry.coordinates);CULL.set(f.id,{c,r})}return CULL.get(f.id)}
+function render(){const g=mode==='globe',lo=g&&moving;globe.precision(lo?2:.5);svg.select('#sphere').attr('d',path({type:'Sphere'}));svg.select('#graticule').attr('d',g?path(graticule):null);svg.select('#land').attr('d',path(g?landLo:landFC));
+  const vc=[-rot[0],-rot[1]];
+  countriesFC.features.forEach(f=>{const el=countryPaths.get(f.id);if(!el)return;if(g){const q=cullOf(f);if(d3.geoDistance(q.c,vc)>Math.PI/2+q.r+.02){if(el.getAttribute('d'))el.setAttribute('d','');return}}el.setAttribute('d',path(lo?countriesLo.get(f.id)||f:f)||'')});
+  svg.select('#borders').attr('d',path(lo?bordersLo:borders));
   const [cx,cy]=globe.translate(),R=globe.scale();svg.select('#globeGlow').attr('cx',cx).attr('cy',cy).attr('r',g?R*1.16:0);placeRings();if(pinned)placeCard(pinned)}
 function initMap(){const g=zoomLayer.select('#countries').node();countriesFC.features.forEach(f=>{const j=jurisdictionByID.get(f.id);if(!j)return;geoCenters.set(f.id,d3.geoCentroid(largestPart(f)));const p=document.createElementNS('http://www.w3.org/2000/svg','path');p.setAttribute('class','country');p.dataset.iso=f.id;p.setAttribute('tabindex','0');p.setAttribute('role','button');p.setAttribute('aria-label',j.name);
     p.addEventListener('pointerdown',e=>{lastPointer=e.pointerType});p.addEventListener('pointerenter',e=>{if(panel.hidden)showTip(j,e)});p.addEventListener('pointermove',e=>moveTip(e));p.addEventListener('pointerleave',hideTip);
     p.addEventListener('click',e=>{if(hasPulse(f.id)){openUpdates(f.id,e);return}if(lastPointer==='touch'&&pinned!==f.id){pin(f.id);return}select(f.id)});p.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();if(hasPulse(f.id))openUpdates(f.id,null);else select(f.id)}});g.appendChild(p);countryPaths.set(f.id,p)});
   layout();svg.call(zoom).on('dblclick.zoom',null);
-  svg.call(d3.drag().filter(e=>mode==='globe'&&!e.button).on('start',()=>{stopSpin();svg.classed('is-dragging',true)}).on('drag',e=>{const k=.28/globeK;rot=[rot[0]+e.dx*k,Math.max(-80,Math.min(80,rot[1]-e.dy*k))];globe.rotate(rot);render()}).on('end',()=>svg.classed('is-dragging',false)));
+  svg.call(d3.drag().filter(e=>mode==='globe'&&!e.button).on('start',()=>{stopSpin();svg.classed('is-dragging',true)}).on('drag',e=>{const k=.28/globeK;rot=[rot[0]+e.dx*k,Math.max(-80,Math.min(80,rot[1]-e.dy*k))];globe.rotate(rot);frame()}).on('end',()=>svg.classed('is-dragging',false)));
   svg.on('wheel.globe',e=>{if(mode!=='globe')return;e.preventDefault();stopSpin();setGlobeK(globeK*Math.exp(-e.deltaY*.0015),0)},{passive:false});
   svg.on('pointerdown.spin',()=>{if(mode==='globe')stopSpin()});
   new ResizeObserver(()=>{layout();placePanel()}).observe(shell);
@@ -92,18 +114,23 @@ function initMap(){const g=zoomLayer.select('#countries').node();countriesFC.fea
   $$('[data-mode]').forEach(b=>b.onclick=()=>setMode(b.dataset.mode));
   shell.addEventListener('click',e=>{if(pinned&&!e.target.closest('.country,.map-tip,.latest-strip'))unpin()});
   buildLatest();applyHighlight()}
-function setGlobeK(k,ms=250){stopSpin();const k0=globeK,k1=Math.max(.8,Math.min(9,k));if(reduced.matches||!ms){globeK=k1;globe.scale(baseR()*globeK);render();return}d3.transition().duration(ms).tween('gk',()=>{const i=d3.interpolate(k0,k1);return t=>{globeK=i(t);globe.scale(baseR()*globeK);render()}})}
+function setGlobeK(k,ms=250){stopSpin();const k0=globeK,k1=Math.max(.8,Math.min(9,k));if(reduced.matches){globeK=k1;globe.scale(baseR()*globeK);render();return}if(!ms){globeK=k1;globe.scale(baseR()*globeK);frame();return}d3.transition().duration(ms).tween('gk',()=>{const i=d3.interpolate(k0,k1);return t=>{globeK=i(t);globe.scale(baseR()*globeK);motion();render()}})}
 function setMode(m){if(m===mode)return;mode=m;unpin();hideTip();closeUpdates();$$('[data-mode]').forEach(b=>{const on=b.dataset.mode===m;b.classList.toggle('active',on);b.setAttribute('aria-pressed',String(on))});shell.classList.toggle('is-globe',m==='globe');
   if(m==='globe'){transform=d3.zoomIdentity;zoomLayer.attr('transform',null);projection=globe}else{projection=flat;zoomLayer.attr('transform',transform)}
   path.projection(projection);render();placeRadar();applyHighlight();if(m==='globe')startSpin();else stopSpin()}
-function startSpin(){if(reduced.matches||userMoved||spinTimer)return;let last=null;spinTimer=d3.timer(t=>{if(document.hidden){last=t;return}const dt=last===null?0:t-last;last=t;rot=[rot[0]+dt*.006,rot[1]];globe.rotate(rot);render()})}
+let mapVisible=true;
+const spinOK=()=>mode==='globe'&&!shell.hidden&&mapVisible&&!document.hidden;
+function startSpin(){if(reduced.matches||userMoved||spinTimer||!spinOK())return;let last=null;spinTimer=d3.timer(t=>{if(!spinOK()){pauseSpin();return}const dt=last===null?0:t-last;last=t;rot=[rot[0]+dt*.006,rot[1]];globe.rotate(rot);motion();render()})}
+function pauseSpin(){if(spinTimer){spinTimer.stop();spinTimer=null}}
+new IntersectionObserver(es=>{mapVisible=es[es.length-1].isIntersecting;if(mapVisible)startSpin();else pauseSpin()}).observe(shell);
+document.addEventListener('visibilitychange',()=>{if(document.hidden)pauseSpin();else startSpin()});
 function stopSpin(){userMoved=true;if(spinTimer){spinTimer.stop();spinTimer=null}}
 function resetMap(){unpin();if(mode==='globe'){rot=[-30,-18];globe.rotate(rot);setGlobeK(1,reduced.matches?0:300)}else svg.transition().duration(reduced.matches?0:300).call(zoom.transform,d3.zoomIdentity)}
 /* smooth zoom (map) or rotation (globe) to a country, about 650 ms */
 function focusCountry(id,done){const f=featureByID.get(id),end=()=>{if(done)done()};if(!f||shell.hidden){end();return}
   if(mode==='globe'){stopSpin();const [lon,lat]=geoCenters.get(id)||d3.geoCentroid(f),r0=rot.slice(),r1=[-lon,Math.max(-80,Math.min(80,-lat))],k0=globeK,k1=Math.max(globeK,1.6);
     if(reduced.matches){rot=r1;globeK=k1;globe.rotate(rot).scale(baseR()*globeK);render();end();return}
-    d3.transition().duration(650).ease(d3.easeCubicInOut).tween('rot',()=>{const i=d3.interpolate(r0,r1),z=d3.interpolate(k0,k1);return t=>{rot=i(t);globeK=z(t);globe.rotate(rot).scale(baseR()*globeK);render()}}).on('end',end).on('interrupt',end);return}
+    d3.transition().duration(650).ease(d3.easeCubicInOut).tween('rot',()=>{const i=d3.interpolate(r0,r1),z=d3.interpolate(k0,k1);return t=>{rot=i(t);globeK=z(t);globe.rotate(rot).scale(baseR()*globeK);motion();render()}}).on('end',end).on('interrupt',end);return}
   const [[x0,y0],[x1,y1]]=d3.geoPath(flat).bounds(largestPart(f)),k=Math.max(1,Math.min(12,.55/Math.max((x1-x0)/width,(y1-y0)/height))),t=d3.zoomIdentity.translate(width/2,height/2).scale(k).translate(-(x0+x1)/2,-(y0+y1)/2);
   if(reduced.matches){svg.call(zoom.transform,t);end();return}svg.transition().duration(650).ease(d3.easeCubicInOut).call(zoom.transform,t).on('end',end).on('interrupt',end)}
 const zoomTo=id=>focusCountry(id);
@@ -235,14 +262,16 @@ $('#searchInput').oninput=e=>{const q=norm(e.target.value.trim()),out=$('#search
 $('#methodBtn').onclick=()=>$('#methodDialog').showModal();$('#exportBtn').onclick=()=>{fillExportCountries();$('#exportDialog').showModal()};$$('[data-close]').forEach(b=>b.onclick=()=>document.getElementById(b.dataset.close).close());$('#resetBtn').onclick=()=>{resetMap();$('#clearFilters').click()};
 
 /* ---------- export ---------- */
-const INST_FIELDS=['id','jurisdiction_id','layer','government_level','subnational_unit','official_title','english_title','categories','legal_status','lifecycle','issuing_authority','publisher_name','authority_type','publication_date','effective_date','last_amended_date','current_status','summary','language','source_url','official_pdf_url','official_webpage_url','verification_level','verification_date','metadata_gaps','link_status','first_recorded'];
+const INST_FIELDS=['id','jurisdiction_id','layer','government_level','subnational_unit','official_title','english_title','categories','legal_status','lifecycle','issuing_authority','publisher_name','authority_type','publication_date','effective_date','last_amended_date','current_status','summary','language','source_url','official_pdf_url','official_webpage_url','verification_level','verification_date','link_status','first_recorded'];
 function csv(rows,fields){const cell=v=>'"'+String(Array.isArray(v)?v.join(' | '):v??'').replace(/"/g,'""')+'"';return '﻿'+[fields.map(cell).join(','),...rows.map(r=>fields.map(k=>cell(r[k])).join(','))].join('\r\n')}
 function download(content,name,type){const a=document.createElement('a'),u=URL.createObjectURL(new Blob([content],{type}));a.href=u;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),1500);toast(`Downloaded ${name}`)}
 function instRow(i,layer){return {...i,layer,link_status:sourceByID.get(i.source_id)?.link_status||'',authority_type:i.authority_type||orgByID.get(i.organization_id)?.authority_type||''}}
 const stamp=()=>D.meta.build_date||D.meta.research_date||'';
-function countryBundle(j){const n=national(j),r=inherited(j);return {meta:{...D.meta,export:'single jurisdiction',jurisdiction_id:j.id,exported_from:'AI Governance Radar'},jurisdiction:j,narrative:D.narratives[j.id]||null,instruments:n,regional_instruments_applying_here:r.map(i=>({id:i.id,regional_jurisdiction_id:i.jurisdiction_id,english_title:i.english_title,legal_status:i.legal_status,source_url:i.source_url})),organizations:D.organizations.filter(o=>o.jurisdiction_id===j.id),sources:D.sources.filter(s=>n.some(i=>i.source_id===s.id)),coverage_audit:D.coverage_audit.find(a=>a.jurisdiction_id===j.id)||null,changes:D.changes.filter(c=>c.jurisdiction_id===j.id)}}
-function exportCountry(j,kind){const base=`AI-Governance-Radar-${j.id}-${stamp()}`;if(kind==='json')download(JSON.stringify(countryBundle(j),null,2),base+'.json','application/json');else download(csv([...national(j).map(i=>instRow(i,'national')),...inherited(j).map(i=>instRow(i,'regional ('+i.jurisdiction_id+')'))],INST_FIELDS),base+'.csv','text/csv')}
-function exportAll(kind){const base=`AI-Governance-Radar-all-${stamp()}`;if(kind==='json')download(JSON.stringify(D,null,2),base+'.json','application/json');else if(kind==='csv')download(csv(D.instruments.map(i=>instRow(i,jurisdictionByID.get(i.jurisdiction_id)?.type==='country'?'national':'regional')),INST_FIELDS),base+'.csv','text/csv');else download(csv(D.coverage_audit,['jurisdiction_id','country','review_status','categories_with_findings','categories_where_no_material_was_found','search_queries','review_date','last_sweep']),'AI-governance-coverage-audit.csv','text/csv')}
+async function countryBundle(j){const X=await full(),I=new Map(X.instruments.map(i=>[i.id,i])),n=X.instruments.filter(i=>i.jurisdiction_id===j.id),r=X.regional_applicability.filter(a=>a.jurisdiction_id===j.id).map(a=>I.get(a.instrument_id)).filter(Boolean);return {n,r,bundle:{meta:{...X.meta,export:'single jurisdiction',jurisdiction_id:j.id,exported_from:'AI Governance Radar'},jurisdiction:X.jurisdictions.find(x=>x.id===j.id)||j,narrative:X.narratives[j.id]||null,instruments:n,regional_instruments_applying_here:r.map(i=>({id:i.id,regional_jurisdiction_id:i.jurisdiction_id,english_title:i.english_title,legal_status:i.legal_status,source_url:i.source_url})),organizations:X.organizations.filter(o=>o.jurisdiction_id===j.id),sources:X.sources.filter(s=>n.some(i=>i.source_id===s.id)),coverage_audit:X.coverage_audit.find(a=>a.jurisdiction_id===j.id)||null,changes:X.changes.filter(c=>c.jurisdiction_id===j.id)}}}
+async function exportCountry(j,kind){const base=`AI-Governance-Radar-${j.id}-${stamp()}`,{n,r,bundle}=await countryBundle(j);if(kind==='json')download(JSON.stringify(bundle,null,2),base+'.json','application/json');else download(csv([...n.map(i=>instRow(i,'national')),...r.map(i=>instRow(i,'regional ('+i.jurisdiction_id+')'))],INST_FIELDS),base+'.csv','text/csv')}
+/* downloads use the full public data (data.json), fetched only when someone downloads; the page itself loads assets/data.min.json */
+let FULLP=null;const full=()=>FULLP||(FULLP=getJSON(AS.full));
+async function exportAll(kind){const X=await full(),base=`AI-Governance-Radar-all-${stamp()}`,J=new Map(X.jurisdictions.map(j=>[j.id,j]));if(kind==='json')download(JSON.stringify(X,null,2),base+'.json','application/json');else if(kind==='csv')download(csv(X.instruments.map(i=>instRow(i,J.get(i.jurisdiction_id)?.type==='country'?'national':'regional')),INST_FIELDS),base+'.csv','text/csv');else download(csv(X.coverage_audit,['jurisdiction_id','country','review_status','categories_with_findings','categories_where_no_material_was_found','review_date','last_sweep']),'AI-governance-coverage-audit.csv','text/csv')}
 $$('[data-export]').forEach(b=>b.onclick=()=>exportAll(b.dataset.export));
 function fillExportCountries(){const s=$('#exportCountry');if(!s.options.length)s.innerHTML=D.jurisdictions.slice().sort((a,b)=>(a.type!=='country')-(b.type!=='country')||byName(a,b)).map(j=>`<option value="${j.id}">${esc(j.name)}</option>`).join('');if(selected)s.value=selected}
 $$('[data-export-country]').forEach(b=>b.onclick=()=>{const j=jurisdictionByID.get($('#exportCountry').value);if(j)exportCountry(j,b.dataset.exportCountry)});
@@ -250,7 +279,10 @@ function toast(m){const t=$('#toast');t.textContent=m;t.hidden=false;clearTimeou
 
 $('#statRecords').textContent=(D.instruments.length).toLocaleString('en-US');$('#statNational').textContent=(D.jurisdictions.filter(j=>j.type==='country'&&national(j).length).length).toLocaleString('en-US');$('#statReviewed').textContent=(D.instruments.filter(i=>i.verification_level==='reviewed_primary_metadata').length).toLocaleString('en-US');
 (function restore(){const p=new URLSearchParams(Q0);(p.get('cat')||'').split(',').filter(c=>D.categories[c]).forEach(c=>{filters.add(c);const b=$(`.chip[data-cat="${c}"]`);if(b){b.classList.add('active');b.setAttribute('aria-pressed','true')}});if(TYPES.some(x=>x[0]===p.get('type'))){docType=p.get('type');$('#typeFilter').value=docType}if(ORGS.some(x=>x[0]===p.get('org'))){orgType=p.get('org');$('#orgFilter').value=orgType}if(p.get('status')&&$(`#statusFilter option[value="${p.get('status')}"]`)){status=p.get('status');$('#statusFilter').value=status}if(p.get('regional')==='1'){includeRegional=true;$('#includeRegional').checked=true}const BODY_ALIAS={ISESCO:'ICESCO'};if(BODY_ALIAS[p.get('body')])p.set('body',BODY_ALIAS[p.get('body')]);if(p.get('body')&&jurisdictionByID.get(p.get('body'))?.type!=='country'){body=p.get('body');$$('[data-body]').forEach(b=>{b.classList.toggle('active',b.dataset.body===body);b.setAttribute('aria-pressed',String(b.dataset.body===body))})}})();
+await new Promise(r=>setTimeout(r));   // yield: keep start-up in short tasks (no multi-second freeze on phones)
 try{initMap()}catch(e){console.error(e);$('#mapError').hidden=false}
+await new Promise(r=>setTimeout(r));   // yield: keep start-up in short tasks (no multi-second freeze on phones)
 (function(){const p=new URLSearchParams(Q0);if(p.get('view')==='updates')showView('updates');if(p.get('about')==='method'){p.delete('about');history.replaceState(null,'',location.pathname+(p.toString()?'?'+p:''));$('#methodDialog').showModal()}})();
-window.RADAR_TEST={data:D,groupDocs,issuerName,msHTML,groupTitle,kindOf,dayMonth,initialQuery:Q0,ageOf,inLast,syncURL,select,focusCountry,setMode,pin,get mode(){return mode},get rot(){return rot},recent,inherited,national,filters,reduced,countryPaths,centers,geometryCount:countriesFC.features.length,resetMap,zoomTo,applyHighlight,setBody,showView,get transform(){return transform},projection,exportCountry,exportAll};
+window.RADAR_TEST={data:D,flags:F,groupDocs,issuerName,msHTML,groupTitle,kindOf,dayMonth,initialQuery:Q0,ageOf,inLast,syncURL,select,focusCountry,setMode,pin,get mode(){return mode},get rot(){return rot},recent,inherited,national,filters,reduced,countryPaths,centers,geometryCount:countriesFC.features.length,resetMap,zoomTo,applyHighlight,setBody,showView,get transform(){return transform},projection,exportCountry,exportAll};
+setTimeout(()=>document.dispatchEvent(new Event('radar:ready')));   // the Updates tab builds in its own task
 })();

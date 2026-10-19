@@ -154,7 +154,7 @@ ISSUER_BAD = re.compile(r"\bunknown\b|\bunclear\b|gazette|\b\d{4}-\d{2}-\d{2}\b|
 # schema vocabulary (field names, status codes) and its apologetic wording never appear in public text
 SCHEMA = (r"\b(?:legal_status|current_status|issuing_authority|publisher_name|verification_level|evidence_reference|source_kind"
           r"|regulatory_opinion|nonbinding_guidance|binding_regulation|binding_law|administrative_guideline|administrative_policy_mandatory_in_scope"
-          r"|consultation_draft|consultation_closed|voluntary_code|national_strategy|international_treaty)\b|for want of a")
+          r"|consultation_draft|consultation_closed|voluntary_code|national_strategy|international_treaty|needs_review|technical_note)\b|for want of a|[Oo]wned record")
 # process wording that the public text must not carry (any public field); keep the detail in coverage_audit.technical_note
 PROCESS = (r"could not be (?:accessed|opened|reached|retrieved|checked|read|downloaded|loaded)|(?:from|in) the review environment"
            r"|(?:site|website|portal|page|domain)s? (?:\w+ ){0,3}(?:blocked|blocks)|\bblocked (?:automated|access|by)|was not searched|were not searched|\breportedly\b"

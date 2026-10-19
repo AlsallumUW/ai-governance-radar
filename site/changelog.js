@@ -1,9 +1,11 @@
 (function(){'use strict';
+// the map script loads the data first (assets/data.min.json); start once it is in
+function start(){
 const R=window.RADAR_TEST;if(!R||!R.data)return;
 const D=R.data,C=(D.changes||[]).slice();
 const $=s=>document.querySelector(s),$$=s=>Array.from(document.querySelectorAll(s));
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
-let F={};try{F=JSON.parse(document.getElementById('flags').textContent)}catch(e){}
+const F=R.flags||{};
 const J=new Map(D.jurisdictions.map(j=>[j.id,j])),I=new Map(D.instruments.map(i=>[i.id,i]));
 const TYPES={published:['Published','new'],revised:['Revised','rev'],consultation:['Consultation','draft'],adopted:['Adopted','adopt'],applied:['Applied / in force','applied'],event:['Event','applied'],superseded:['Superseded','end'],repealed:['Repealed','end'],added:['Added to radar','radar'],corrected:['Record corrected','radar'],removed:['Removed','radar'],link:['Link change','radar'],radar:['Radar update','radar']};
 const LIFE={draft:'Draft',consultation:'In consultation',consultation_closed:'Consultation closed',published:'Published',adopted:'Adopted',in_force:'In force',superseded:'Superseded',repealed:'Repealed'};
@@ -49,4 +51,5 @@ if(latest.length){const sec=document.createElement('section');sec.innerHTML=`<di
 // ---- export + methodology
 const ex=$('#exportDialog .actions');if(ex){const b=document.createElement('button');b.className='button';b.textContent='Change log · CSV';b.onclick=()=>{const f=['date','recorded','kind','type','jurisdiction_id','instrument_id','title','detail','from','to','source_url','needs_review'],cell=v=>'"'+String(v??'').replace(/"/g,'""')+'"';const csv='﻿'+[f.map(cell).join(','),...C.map(r=>f.map(k=>cell(r[k])).join(','))].join('\r\n');const a=document.createElement('a'),u=URL.createObjectURL(new Blob([csv],{type:'text/csv'}));a.href=u;a.download='AI-governance-change-log.csv';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),1500)};ex.appendChild(b)}
 
-})();
+}
+if(window.RADAR_TEST)start();else document.addEventListener('radar:ready',start,{once:true})})();

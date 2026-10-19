@@ -338,3 +338,5 @@ body.cp{overflow-x:clip}
 .src-notes summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .src-notes p{margin:6px 0 0;padding:8px 10px;border-inline-start:2px solid var(--hair);overflow-wrap:anywhere;text-align:start;unicode-bidi:plaintext}
 .inst-check{margin:6px 0 0;font-size:13px;color:var(--muted)}
+/* the sticky bar keeps one line, so the page below does not shift when it appears (phone CLS) */
+.topnav .bar-id{text-overflow:ellipsis;flex:0 1 auto}.secmenu{flex:0 0 auto}.secmenu>summary,.topnav .lang-switch,.topnav .back{white-space:nowrap}
