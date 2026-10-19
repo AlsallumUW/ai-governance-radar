@@ -52,7 +52,7 @@ PIPE_TYPE = {"binding_law": "Law", "binding_regulation": "Regulation", "internat
 
 def pipe_type(i):
     """Type label for an item in the "Open and upcoming" list: drafts say Draft; anything else in consultation says what it is."""
-    if i.get("legal_status") == "consultation_draft": return "Draft"
+    if i.get("legal_status") == "consultation_draft": return "Draft" if i.get("lifecycle") in ("consultation", "draft") else f"Draft — {LIFE.get(i.get('lifecycle'), 'draft').lower()}"
     t = PIPE_TYPE.get(i.get("legal_status"), "Document")
     return f"{t} — open for comment" if i.get("lifecycle") == "consultation" else f"{t} — {LIFE.get(i.get('lifecycle'), 'draft').lower()}"
 
@@ -85,22 +85,27 @@ def fmt_date(d):
         return d
 
 
+def eu_cover(ctx):
+    """How EU members are covered by CETS 225 through the EU: its ratification once recorded, else its signature."""
+    return "Covered by the EU's ratification" if ctx.get("eu_cets_status") == "ratified" else "Covered by the EU's signature"
+
+
 def cets_text(jid, ctx):
     s = ctx["cets"].get(jid)
     if s: return {"ratified": "Ratified", "signed": "Signed"}.get(s, s.capitalize())
     eu = ctx.get("eu_cets")
     if eu and jid in ctx["members"].get("EU", ()):
-        return f"Not signed nationally · EU signatory ({fmt_date(eu)})" if eu != "?" else "Not signed nationally · EU signatory"
+        return f"Not signed nationally · {eu_cover(ctx)} ({fmt_date(eu)})" if eu != "?" else f"Not signed nationally · {eu_cover(ctx)}"
     return "Not signed"
 
 
 def cets_positive(jid, ctx):
-    """Header line for CETS 225 on a country page: ratified, signed or covered by the EU's signature; None otherwise."""
+    """Header line for CETS 225 on a country page: ratified, signed or covered through the EU; None otherwise."""
     s = ctx["cets"].get(jid)
     if s: return {"ratified": "Ratified", "signed": "Signed"}.get(s, s.capitalize())
     eu = ctx.get("eu_cets")
     if eu and jid in ctx["members"].get("EU", ()):
-        return f"EU signatory ({fmt_date(eu)})" if eu != "?" else "EU signatory"
+        return f"{eu_cover(ctx)} ({fmt_date(eu)})" if eu != "?" else eu_cover(ctx)
     return None
 
 
@@ -478,7 +483,10 @@ def country_page(j, D, rec, flags, ctx):
     status_svg, status_tab = chart_status(rows_all)
     cov_html, cov_counts = coverage_grid(cats, audit, rows_all)
     today = ctx["today"]
-    pipe_drafts = sorted([i for i in rows_all if i.get("legal_status") == "consultation_draft" or i.get("lifecycle") in ("consultation", "consultation_closed", "draft")],
+    # open for comment: lifecycle "consultation" only; drafts whose consultation has closed are listed apart (most recent few)
+    pipe_drafts = sorted([i for i in rows_all if i.get("lifecycle") == "consultation"], key=lambda i: date_key(i.get("publication_date")), reverse=True)
+    pipe_closed = sorted([i for i in rows_all if i.get("lifecycle") in ("consultation_closed", "draft")
+                          or (i.get("legal_status") == "consultation_draft" and i.get("lifecycle") not in ("consultation", "superseded", "repealed"))],
                          key=lambda i: date_key(i.get("publication_date")), reverse=True)
     inst_by_id = {i["id"]: i for i in rows_all}
     future = sorted([c for c in D["changes"] if c.get("jurisdiction_id") == jid and c.get("kind") == "world" and (c.get("date") or "") > today],
@@ -535,7 +543,7 @@ def country_page(j, D, rec, flags, ctx):
     if status_svg:
         figs.append(figure("fig-status", "Legal-status mix", "Instruments by legal status, from most to least binding.", '<p class="legend"><span><i class="sw s-b"></i>Binding or mandatory</span><span><i class="sw s-n"></i>Non-binding</span><span><i class="sw s-d"></i>Drafts</span></p>' + status_svg, status_tab))
     figs.append(f'<figure class="fig" id="fig-coverage"><figcaption><h3>Category coverage</h3><p class="fig-desc">{cov_counts["found"]} of 18 categories with documents · {cov_counts["none"]} searched with none found · {cov_counts["na"]} not assessed.</p></figcaption>{cov_html}</figure>')
-    if pipe_drafts or future:
+    if pipe_drafts or pipe_closed or future:
         pl = '<ol class="pipeline" data-upcoming>'
         for c in future[:12]:
             pl += f'<li data-date="{e(c["date"])}"><time datetime="{e(c["date"])}">{e(fmt_date(c["date"]))}</time><span class="pl-kind">{e(EVENT.get(c.get("type"), c.get("type")))}</span><span class="pl-title"{ar_attr(i18n.change_title(c, inst_by_id)[0])}>{e(i18n.change_title(c, inst_by_id)[0] or c.get("title"))}</span></li>'
@@ -546,8 +554,13 @@ def country_page(j, D, rec, flags, ctx):
             d = i.get("publication_date")
             pl += f'<li><time datetime="{e(d or "")}">{e(fmt_date(d) or "Undated")}</time><span class="pl-kind">{e(pipe_type(i))}</span><span class="pl-title"{ar_attr(ar_title(i))}>{e(ar_title(i) or i.get("english_title") or i.get("official_title"))}</span></li>'
         if pipe_drafts: pl += '</ol>'
-        more = len(future) + len(pipe_drafts) - min(12, len(future)) - min(12, len(pipe_drafts))
-        figs.append(f'<figure class="fig" id="fig-pipeline" data-asof="{e(today)}"><figcaption><h3>Open and upcoming <span class="asof">Upcoming as of {e(fmt_date(today))}</span></h3><p class="fig-desc">Dated government actions still ahead, then drafts and other documents still open for comment.</p></figcaption>{pl}'
+        if pipe_closed: pl += '<h4>Recent drafts (consultation closed)</h4><ol class="pipeline">'
+        for i in pipe_closed[:6]:
+            d = i.get("publication_date")
+            pl += f'<li><time datetime="{e(d or "")}">{e(fmt_date(d) or "Undated")}</time><span class="pl-kind">{e(pipe_type(i))}</span><span class="pl-title"{ar_attr(ar_title(i))}>{e(ar_title(i) or i.get("english_title") or i.get("official_title"))}</span></li>'
+        if pipe_closed: pl += '</ol>'
+        more = len(future) + len(pipe_drafts) + len(pipe_closed) - min(12, len(future)) - min(12, len(pipe_drafts)) - min(6, len(pipe_closed))
+        figs.append(f'<figure class="fig" id="fig-pipeline" data-asof="{e(today)}"><figcaption><h3>Open and upcoming <span class="asof">Upcoming as of {e(fmt_date(today))}</span></h3><p class="fig-desc">Dated government actions still ahead, then documents still open for comment, then recent drafts whose consultation has closed.</p></figcaption>{pl}'
                     + ('<p class="fig-tools">Includes non-draft documents still open for comment.</p>' if any(i.get("legal_status") != "consultation_draft" for i in pipe_drafts[:12]) else "")
                     + (f'<p class="fig-tools">{more} more in the instrument list.</p>' if more > 0 else "") + '</figure>')
     feat, bdrop, band = ph.get("feature"), ph.get("backdrop"), ph.get("band")
@@ -750,19 +763,20 @@ def write_all(D, recs, out, flags, mirror=False):
         i = inst.get(a["instrument_id"])
         if i: inherited.setdefault(a["jurisdiction_id"], []).append(i)
     members = {k: set(v) for k, v in (D.get("regional_members") or {}).items()}
-    cets, c108, eu_cets, oecd = {}, set(), None, {}
+    cets, c108, eu_cets, eu_cets_status, oecd = {}, set(), None, None, {}
     for i in D["instruments"]:
         if i["jurisdiction_id"] == "OECD" and i.get("adherents"): oecd = i["adherents"]
         if i["jurisdiction_id"] == "COE" and i.get("party_status"):
             cets = {k: v.get("status") for k, v in i["party_status"].items()}
             eu_cets = (i["party_status"].get("EU") or {}).get("date") or ("?" if "EU" in i["party_status"] else None)
+            eu_cets_status = (i["party_status"].get("EU") or {}).get("status")
         if i["jurisdiction_id"] == "COE" and "Convention for the Protection of Individuals" in (i.get("english_title") or ""):
             c108 = set(i.get("regional_applicability") or [])
     try:
         q = json.loads((ROOT / "research/queue.json").read_text(encoding="utf-8")); c108_pending = set(q.get("pending_c108") or [])
     except Exception:
         c108_pending = set()
-    ctx = {"jur": jur, "inherited": inherited, "members": members, "cets": cets, "eu_cets": eu_cets, "c108": c108, "c108_pending": c108_pending, "oecd": oecd,
+    ctx = {"jur": jur, "inherited": inherited, "members": members, "cets": cets, "eu_cets": eu_cets, "eu_cets_status": eu_cets_status, "c108": c108, "c108_pending": c108_pending, "oecd": oecd,
            "orgs": {o["id"]: o for o in D["organizations"]}, "srcs": {s["id"]: s for s in D["sources"]},
            "today": D["meta"].get("build_date") or dt.date.today().isoformat(), "photos": load_photos(),
            "explore_overrides": {k: v for k, v in json.loads((ROOT / "data/explore_overrides.json").read_text(encoding="utf-8")).items() if not k.startswith("_")} if (ROOT / "data/explore_overrides.json").exists() else {},
