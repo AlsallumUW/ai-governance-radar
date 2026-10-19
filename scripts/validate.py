@@ -147,15 +147,21 @@ def check_translations():
 
 
 BINDING_STATUSES = ("binding_law", "binding_regulation")
+# process wording that the public text must not carry (any public field); keep the detail in coverage_audit.technical_note
+PROCESS = (r"could not be (?:accessed|opened|reached|retrieved|checked|read|downloaded|loaded)|(?:from|in) the review environment"
+           r"|(?:site|website|portal|page|domain)s? (?:\w+ ){0,3}(?:blocked|blocks)|\bblocked (?:automated|access|by)|was not searched|were not searched|\breportedly\b"
+           r"|\bunreachable\b|\binaccessible\b|(?:site|website|portal|page|domain|gazette)s? (?:\w+ ){0,3}(?:was|were|is|are) (?:unavailable|offline|down)\b"
+           r"|bot (?:protection|challenge)|returned an error|timed out")
 # current_status is shown to the public; research-log wording belongs in evidence_reference (shown under "Source notes")
 STATUS_LOG = re.compile(r"audit 20\d\d|\bcurl\b|HTTP [0-9]{3}|not read|fetch|automated access|automated reading|blocks automated|could not be read"
                         r"|this record|the radar(?! tecnol[oó]gico)"
+                        r"|" + PROCESS +
                         r"|held as (?:a )?leads?|in this review|\b(?:effective|publication|last_amended)_date\b|\bnull\b|WebFetch|pdftotext|headless", re.I)
 
 
 # review_notes and no_material_found_note are public text too: also no agent/tool/run vocabulary
 # overview summaries state what is established; process wording belongs in the method note (narrative.review_notes)
-SUMMARY_PROCESS = re.compile(r"could not be|in this review|held as (?:a )?leads?", re.I)
+SUMMARY_PROCESS = re.compile(r"could not be|in this review|held as (?:a )?leads?|" + PROCESS, re.I)
 NOTE_LOG = re.compile(STATUS_LOG.pattern + r"|\bHTTP\b|WebFetch|\bTLS\b|\bproxy\b|\bagents?\b|sub-?agent|\bPROTOCOL\b|\bpilot\b|thin pass|\btier [ABC]\b|batch run", re.I)
 
 

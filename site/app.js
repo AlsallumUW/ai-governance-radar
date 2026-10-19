@@ -146,7 +146,7 @@ const THIS_YEAR=String(new Date(TODAY).getFullYear());
 /* short milestone date: day and month (year only when it is not this year); Arabic month names on Arabic pages */
 const dayMonth=d=>{if(!d||d.length<10)return fmtDate(d);let t=fmtShort(d);if(AR&&I18N.date&&I18N.date(t))t=I18N.date(t);return d.slice(0,4)===THIS_YEAR?t.replace(/ \d{4}$/,''):t};
 /* Arabic pages: an issuing body's Arabic name where the site has one (build.py AR_MAP.issuers), else the name as published */
-const issuerName=s=>{const k=String(s||'').trim(),m=ROOT&&ARM.issuers;return (m&&(m[k]||m[k.replace(/\s*\([^()]*\)\s*$/,'')]))||s};
+const issuerName=(s,j)=>{const k=String(s||'').trim(),m=ROOT&&ARM.issuers;return (m&&(m[j+'|'+k]||m[k]||m[k.replace(/\s*\([^()]*\)\s*$/,'')]))||s};
 function groupTitle(g){if(g.inst)return docTitle(g.inst);const CT=window.AR_CT||{};return CT[g.latest.id]||g.latest.title||''}
 function msHTML(g){return g.events.map(c=>`<span class="ms"><b>${esc(L(ACT[c.type]||'event'))}</b> <span class="ms-d">${esc(dayMonth(c.date))}</span></span>`).join('<span class="ms-sep" aria-hidden="true"> · </span>')}
 function profileURL(id){const p=new URLSearchParams(location.search);p.delete('view');if(winDays!==30)p.set('days',winDays);else p.delete('days');const s=p.toString();return (jurisdictionByID.get(id)?.type!=='country'?'body/':'country/')+id+'/'+(s?'?'+s:'')}
@@ -156,7 +156,7 @@ function openUpdates(id,ev){const j=jurisdictionByID.get(id),docs=groupDocs(rece
   panel.innerHTML=`<div class="wn-h"><div><h3>${flag(j)}<span>${esc(j.name)}</span></h3><p class="wn-n">${esc(L(n===1?'n1':'n',{n,d:winDays}))}</p>${sub?`<p class="wn-sub">${esc(L('sub',{s:sub,n}))}</p>`:''}</div><button class="wn-x" type="button" aria-label="${esc(L('close'))}">×</button></div>`
    +`<ul class="wn-list">${shown.map(g=>{const i=g.inst,iss=i&&(i.issuing_authority||i.publisher_name),src=g.latest.source_url||i?.source_url,k=i&&kindOf(i);
       return `<li><div class="wn-meta"><span>${esc(fmtShort(g.date))}</span>${k?`<span class="wn-chip ${k==='binding'?'b':k==='draft'?'d':'n'}">${esc(L(k))}</span>`:''}</div>`
-       +`<div class="wn-ms">${msHTML(g)}</div><div class="wn-t" dir="auto">${esc(groupTitle(g))}</div>`+(iss?`<div class="wn-iss" dir="auto">${esc(issuerName(iss))}</div>`:'')
+       +`<div class="wn-ms">${msHTML(g)}</div><div class="wn-t" dir="auto">${esc(groupTitle(g))}</div>`+(iss?`<div class="wn-iss" dir="auto">${esc(issuerName(iss,i.jurisdiction_id))}</div>`:'')
        +(src?`<a class="wn-src" href="${esc(src)}" target="_blank" rel="noopener noreferrer">${esc(L('src'))}</a>`:'')+'</li>'}).join('')}`
    +(n>shown.length?`<li class="wn-more">${esc(L('more',{m:n-shown.length}))}</li>`:'')+'</ul>'
    +`<div class="wn-f"><a href="${esc(profileURL(id))}">${esc(L('open'))}</a></div>`;

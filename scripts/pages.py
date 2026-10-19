@@ -265,11 +265,14 @@ def _bare(name):
     return re.sub(r"\s*\([^()]*\)\s*$", "", name or "").strip()
 
 
-def ar_issuer(name):
+def ar_issuer(name, jid=None):
     """Arabic pages: an issuing body's Arabic name where the site has one (each country's translated lead institutions, the
     same source as the map panel and the Updates rows); otherwise the name as published."""
     global _AR_ISSUERS
     if i18n.LANG != "ar" or not name: return name
+    from i18n_content import issuer_id
+    t = jid and i18n.content(issuer_id(name.strip(), jid), "name", name.strip())
+    if t: return t
     if _AR_ISSUERS is None:
         from common import jurisdiction_files, load
         _AR_ISSUERS = {}
@@ -286,7 +289,7 @@ def ar_issuer(name):
 def inst_item(i, orgs, srcs, cats, regional_from=None):
     title = i.get("english_title") or i.get("official_title")
     orig = i.get("official_title") if i.get("official_title") and i.get("official_title") != title else None
-    issuer = ar_issuer(i.get("issuing_authority") or orgs.get(i.get("organization_id"), {}).get("name") or i.get("publisher_name"))
+    issuer = ar_issuer(i.get("issuing_authority") or orgs.get(i.get("organization_id"), {}).get("name") or i.get("publisher_name"), i.get("jurisdiction_id"))
     st = i.get("legal_status"); src = srcs.get(i.get("source_id"), {})
     dates = []
     if i.get("publication_date"): dates.append(i18n.T("Published {date}", date=f'<time datetime="{e(i["publication_date"])}">{e(fmt_date(i["publication_date"]))}</time>'))
