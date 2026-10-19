@@ -7,7 +7,7 @@
 
 Countries whose narrative.last_deep_review is set are held to the full deep-review standard.
 """
-import datetime as _dt, json, re, sys
+import collections, datetime as _dt, json, re, sys
 TODAY = _dt.date.today().isoformat()
 
 # official gazettes and legal portals: where an act is published, not who issued it (PROTOCOL: issuer vs gazette)
@@ -234,6 +234,9 @@ def check(only=None):
             removed_ids = {x.get("instrument_id") for x in r.get("changes", []) if x.get("type") == "removed"}
             if c.get("instrument_id") and c["instrument_id"] not in inst_ids and c["instrument_id"] not in removed_ids:
                 E(f"change {c.get('id')} points to missing instrument {c['instrument_id']}")
+        added = collections.Counter(c.get("instrument_id") for c in r.get("changes", []) if c.get("kind") == "radar" and c.get("type") == "added" and c.get("instrument_id"))
+        for iid, n in added.items():
+            if n > 1: E(f"{n} radar 'added' events for {iid} (keep the earliest)")
         for x in r.get("instruments", []):   # a consultation past its closing date is flipped by scripts/due_consultations.py
             cc = x.get("consultation_closes")
             if cc and not ISO.match(cc): E(f"{x['id']} consultation_closes '{cc}' is not an ISO date")
