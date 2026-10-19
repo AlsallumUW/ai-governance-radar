@@ -504,7 +504,7 @@ def fig_issuer(N):
         else:
             unc += 1; unc_types[t or "missing"] = unc_types.get(t or "missing", 0) + 1
     tot = len(N["C"])
-    bars = [(k, cnt[k]) for k in ISSUER_ORDER] + [("Unclassified", unc)]
+    bars = [(k, cnt[k]) for k in ISSUER_ORDER] + ([("Unclassified", unc)] if unc else [])
     W, rh, L, Rr = 720, 30, 220, 80
     H = rh * len(bars) + 8
     mx = max(v for _, v in bars)
@@ -517,9 +517,9 @@ def fig_issuer(N):
     o.append(f'<line class="axis" x1="{L}" x2="{L}" y1="0" y2="{H}"/></svg>')
     rows = [[k, v, f"{pct(v, tot)}%"] for k, v in bars] + [["Total", tot, "100%"]]
     big = max(ISSUER_ORDER, key=lambda k: cnt[k])
-    take = _T("{big} issued {pb}% of country instruments, legislatures {pl}% and regulators {pr}%. "
-              "{unc} instruments ({pu}%) have no issuer type recorded and are left unclassified.",
-              big=tr(big), pb=pct(cnt[big], tot), pl=pct(cnt['Legislatures'], tot), pr=pct(cnt['Regulators'], tot), unc=unc, pu=pct(unc, tot))
+    take = _T("{big} issued {pb}% of country instruments, legislatures {pl}% and regulators {pr}%.",
+              big=tr(big), pb=pct(cnt[big], tot), pl=pct(cnt['Legislatures'], tot), pr=pct(cnt['Regulators'], tot))
+    if unc: take += " " + _T("{unc} instruments ({pu}%) have no issuer type recorded and are left unclassified.", unc=unc, pu=pct(unc, tot))
     desc = ("National, state/provincial and local instruments by the type of body that issued them: the record's authority type, else that of its issuing organisation. "
             "Governments and ministries include executive agencies, heads of state and local governments; regulators include data-protection authorities and central banks; "
             "other covers standards bodies, advisory and independent bodies, auditors and prosecutors.")
