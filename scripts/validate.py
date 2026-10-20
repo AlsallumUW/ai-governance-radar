@@ -154,12 +154,12 @@ ISSUER_BAD = re.compile(r"\bunknown\b|\bunclear\b|gazette|\b\d{4}-\d{2}-\d{2}\b|
 # schema vocabulary (field names, status codes) and its apologetic wording never appear in public text
 SCHEMA = (r"\b(?:legal_status|current_status|issuing_authority|publisher_name|verification_level|evidence_reference|source_kind"
           r"|regulatory_opinion|nonbinding_guidance|binding_regulation|binding_law|administrative_guideline|administrative_policy_mandatory_in_scope"
-          r"|consultation_draft|consultation_closed|voluntary_code|national_strategy|international_treaty|needs_review|technical_note)\b|for want of a|[Oo]wned record")
+          r"|consultation_draft|consultation_closed|voluntary_code|national_strategy|international_treaty|needs_review|technical_note|source_url|official_pdf_url|official_webpage_url|organization_id|source_id)\b|for want of a|[Oo]wned record")
 # process wording that the public text must not carry (any public field); keep the detail in coverage_audit.technical_note
 PROCESS = (r"could not be (?:accessed|opened|reached|retrieved|checked|read|downloaded|loaded)|(?:from|in) the review environment"
            r"|(?:site|website|portal|page|domain)s? (?:\w+ ){0,3}(?:blocked|blocks)|\bblocked (?:automated|access|by)|was not searched|were not searched|\breportedly\b"
            r"|\bunreachable\b|\binaccessible\b|(?:site|website|portal|page|domain|gazette)s? (?:\w+ ){0,3}(?:was|were|is|are) (?:unavailable|offline|down)\b"
-           r"|bot (?:protection|challenge)|returned an error|timed out")
+           r"|bot (?:protection|challenge)|returned an error|timed out|search excerpts?")
 # current_status is shown to the public; research-log wording belongs in evidence_reference (shown under "Source notes")
 STATUS_LOG = re.compile(r"audit 20\d\d|\bcurl\b|HTTP [0-9]{3}|not read|fetch|automated access|automated reading|blocks automated|could not be read"
                         r"|this record|the radar(?! tecnol[oó]gico)"
@@ -237,6 +237,10 @@ def check(only=None):
         added = collections.Counter(c.get("instrument_id") for c in r.get("changes", []) if c.get("kind") == "radar" and c.get("type") == "added" and c.get("instrument_id"))
         for iid, n in added.items():
             if n > 1: E(f"{n} radar 'added' events for {iid} (keep the earliest)")
+        for x in r.get("instruments", []):   # a binding law or regulation whose full effective date has passed is in force
+            ef = x.get("effective_date") or ""
+            if x.get("legal_status") in ("binding_law", "binding_regulation") and x.get("lifecycle") == "adopted" and len(ef) == 10 and ef <= TODAY:
+                W(f"{x['id']} took effect on {ef} but lifecycle is still 'adopted' (check the official text; set in_force)")
         for x in r.get("instruments", []):   # a consultation past its closing date is flipped by scripts/due_consultations.py
             cc = x.get("consultation_closes")
             if cc and not ISO.match(cc): E(f"{x['id']} consultation_closes '{cc}' is not an ISO date")
