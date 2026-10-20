@@ -112,7 +112,10 @@ def cets_positive(jid, ctx):
 COUNT_DEFS = ["Binding or mandatory: laws, regulations, treaties and policies mandatory within their scope",
               "Non-binding: strategies, guidelines, guidance, codes and opinions", "Drafts: consultation drafts.",
               "Leads: documents not yet verified as in-scope instruments.",
-              "Counts include state, provincial and local instruments; regional instruments are listed separately."]
+              "Counts include state, provincial and local instruments. Instruments of regional and international bodies are not counted; they are listed on each body's own page."]
+
+
+BODY_NOTE = "Instruments of these bodies are on their own pages and are not counted for this country."
 
 
 def count_info():
@@ -465,7 +468,6 @@ def country_page(j, D, rec, flags, ctx):
     rows_all = [i for i in D["instruments"] if i["jurisdiction_id"] == jid]
     nat = [i for i in rows_all if i.get("government_level") not in ("subnational", "local")]
     sub = [i for i in rows_all if i.get("government_level") in ("subnational", "local")]
-    regional = ctx["inherited"].get(jid, [])
     leads = rec.get("leads") or []
     narr = D["narratives"].get(jid) or {}
     audit = next((a for a in D["coverage_audit"] if a.get("jurisdiction_id") == jid), {}) or {}
@@ -500,7 +502,6 @@ def country_page(j, D, rec, flags, ctx):
                     key=lambda c: c.get("date") or "")
     secs.append(("charts", "Charts"))
     if nat: secs.append(("instruments", "Instruments"))
-    if regional: secs.append(("regional", "Regional"))
     if sub: secs.append(("subnational", "Subnational"))
     if leads: secs.append(("leads", "Leads"))
     secs.append(("method", "Method"))
@@ -524,7 +525,7 @@ def country_page(j, D, rec, flags, ctx):
     H.append(hero(eyebrow, h1, stats, photo=hero_img, art=None if hero_img else geo.silhouette(jid, j["name"]), info=count_info()))
     H.append('<div class="page layout">' + rail(secs, geo.locator(jid, j["name"])) + '<div class="content">')
     H.append('<section class="intro" aria-label="Memberships and treaty status">'
-             + (f'<p class="chips" aria-label="Memberships">{chips}</p>' if chips else "")
+             + (f'<p class="chips" aria-label="Memberships">{chips}</p><p class="chips-note">{e(BODY_NOTE)}</p>' if chips else "")
              + f'<ul class="facts">{"".join(treaty)}<li><span class="k">Last reviewed</span><span class="v">{e(fmt_date(narr.get("last_deep_review")) or "Not yet deep-reviewed")}</span></li></ul>'
              + f'<p class="hero-links"><a href="../../timeline/?country={e(jid)}">See this country on the timeline →</a><a href="../../analysis/">Global analysis →</a><a href="../../suggest/?country={e(jid)}">Suggest an update →</a></p></section>')
     # b. overview + c. charts in a two-column grid
@@ -576,17 +577,8 @@ def country_page(j, D, rec, flags, ctx):
     H.append(f'<section id="charts" class="charts-sec{" has-bg" if bdrop else ""}" aria-label="Charts">' + (backdrop(bdrop) if bdrop else "")
              + '<h2 class="charts-h">Charts</h2><div class="panels">' + "".join(figs) + '</div></section>')
     # d. instruments (a full-width 21:9 heritage / landscape band before the first list, else before the method note)
-    if band and (nat or regional or sub): H.append(photo_band(band)); band = None
+    if band and (nat or sub): H.append(photo_band(band)); band = None
     if nat: H.append(instruments_section(nat, orgs, srcs, cats, lead='<p class="section-lede">National instruments. Sort and filter below; the list prints in full.</p>'))
-    # e. regional
-    if regional:
-        byb = {}
-        for i in regional: byb.setdefault(i["jurisdiction_id"], []).append(i)
-        H.append(f'<section id="regional" class="block"><h2>Regional and international instruments <span class="count">{len(regional)}</span></h2>'
-                 '<p class="section-lede">Instruments of bodies this country belongs to, or treaties it has signed or ratified. Their legal effect follows each instrument\'s own scope.</p>'
-                 + "".join(f'<h3 class="minor"><a href="../../body/{b}/">{e(ctx["jur"][b]["name"])}</a></h3><div class="inst-list">'
-                           + "".join(inst_item(i, orgs, srcs, cats, regional_from=ctx["jur"][b].get("short_name") or b) for i in rs) + '</div>'
-                           for b, rs in sorted(byb.items(), key=lambda kv: BODY_ORDER.index(kv[0]) if kv[0] in BODY_ORDER else 99)) + '</section>')
     # f. subnational
     if sub:
         byu = {}
@@ -612,7 +604,6 @@ def country_page(j, D, rec, flags, ctx):
     H.append(closing_strip(jid, j, ctx, hero_img))
     bundle = {"meta": {"title": D["meta"].get("title"), "build_date": D["meta"].get("build_date"), "export": "single jurisdiction", "jurisdiction_id": jid, "url": canon},
               "jurisdiction": j, "narrative": narr or None, "instruments": rows_all,
-              "regional_instruments_applying_here": [{"id": i["id"], "regional_jurisdiction_id": i["jurisdiction_id"], "english_title": i.get("english_title"), "legal_status": i.get("legal_status"), "source_url": i.get("source_url")} for i in regional],
               "leads": leads, "organizations": [o for o in D["organizations"] if o.get("jurisdiction_id") == jid],
               "sources": [s for s in D["sources"] if any(i.get("source_id") == s["id"] for i in rows_all)], "coverage_audit": audit or None,
               "changes": [c for c in D["changes"] if c.get("jurisdiction_id") == jid]}
@@ -646,7 +637,7 @@ def body_page(b, D, rec, flags, ctx):
     # no logos (trademarks): the hero shows the member states on a world map
     H.append(hero("Regional / international body", f'<h1>{e(b["name"])}</h1>', stats, art=geo.world(members, b["name"], body=bid) if members else None, kind="map"))
     H.append('<div class="page layout">' + rail(secs) + '<div class="content">')
-    H.append(f'<section class="intro" aria-label="About the counts"><p class="stats-note">{COUNT_NOTE} Instruments are stored once for the body and listed on each country page they apply to.</p>'
+    H.append(f'<section class="intro" aria-label="About the counts"><p class="stats-note">{COUNT_NOTE} Instruments are recorded once for the body and are not counted on member countries\' pages.</p>'
              + f'<p class="hero-links"><a href="../../timeline/?body={e(bid)}">See this body and its members on the timeline →</a><a href="../../analysis/">Global analysis →</a><a href="../../suggest/?country={e(bid)}">Suggest an update →</a></p></section>')
     years_svg, years_tab, undated = chart_years(rows); status_svg, status_tab = chart_status(rows)
     figs = []
