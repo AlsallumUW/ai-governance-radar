@@ -229,7 +229,6 @@ MIN_FIELDS = {
                     "publication_date", "verification_level", "government_level", "subnational_unit", "party_status",
                     "adherents", "regional_applicability"],
     "jurisdictions": ["id", "iso2", "name", "short_name", "type", "aliases"],
-    "sources": ["id", "link_status"],
     "organizations": ["id", "jurisdiction_id", "name", "authority_type", "government_level", "subnational_unit"],
     "regional_applicability": ["instrument_id", "jurisdiction_id", "regional_jurisdiction_id"],
 }

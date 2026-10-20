@@ -159,7 +159,7 @@ SCHEMA = (r"\b(?:legal_status|current_status|issuing_authority|publisher_name|ve
 PROCESS = (r"could not be (?:accessed|opened|reached|retrieved|checked|read|downloaded|loaded)|(?:from|in) the review environment"
            r"|(?:site|website|portal|page|domain)s? (?:\w+ ){0,3}(?:blocked|blocks)|\bblocked (?:automated|access|by)|was not searched|were not searched|\breportedly\b"
            r"|\bunreachable\b|\binaccessible\b|(?:site|website|portal|page|domain|gazette)s? (?:\w+ ){0,3}(?:was|were|is|are) (?:unavailable|offline|down)\b"
-           r"|bot (?:protection|challenge)|returned an error|timed out")
+           r"|bot (?:protection|challenge)|returned an error|timed out|search excerpts?")
 # current_status is shown to the public; research-log wording belongs in evidence_reference (shown under "Source notes")
 STATUS_LOG = re.compile(r"audit 20\d\d|\bcurl\b|HTTP [0-9]{3}|not read|fetch|automated access|automated reading|blocks automated|could not be read"
                         r"|this record|the radar(?! tecnol[oó]gico)"
