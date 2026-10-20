@@ -483,8 +483,15 @@ def country_page(j, D, rec, flags, ctx):
     status_svg, status_tab = chart_status(rows_all)
     cov_html, cov_counts = coverage_grid(cats, audit, rows_all)
     today = ctx["today"]
-    # open for comment: lifecycle "consultation" only; drafts whose consultation has closed are listed apart (most recent few)
-    pipe_drafts = sorted([i for i in rows_all if i.get("lifecycle") == "consultation"], key=lambda i: date_key(i.get("publication_date")), reverse=True)
+    # open for comment: lifecycle "consultation" only; drafts whose consultation has closed are listed apart (most recent few).
+    # A consultation with no closing date is listed only while it is under 6 months old (display rule; lifecycle unchanged).
+    stale = (dt.date.fromisoformat(today) - dt.timedelta(days=183)).isoformat()
+    def open_now(i):
+        if i.get("lifecycle") != "consultation": return False
+        if i.get("consultation_closes"): return i["consultation_closes"] >= today
+        pub = i.get("publication_date") or ""
+        return len(pub) == 10 and pub >= stale or len(pub) == 7 and pub >= stale[:7]
+    pipe_drafts = sorted([i for i in rows_all if open_now(i)], key=lambda i: date_key(i.get("publication_date")), reverse=True)
     pipe_closed = sorted([i for i in rows_all if i.get("lifecycle") in ("consultation_closed", "draft")
                           or (i.get("legal_status") == "consultation_draft" and i.get("lifecycle") not in ("consultation", "superseded", "repealed"))],
                          key=lambda i: date_key(i.get("publication_date")), reverse=True)
