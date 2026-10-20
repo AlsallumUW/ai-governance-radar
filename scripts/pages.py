@@ -115,9 +115,6 @@ COUNT_DEFS = ["Binding or mandatory: laws, regulations, treaties and policies ma
               "Counts include state, provincial and local instruments. Instruments of regional and international bodies are not counted; they are listed on each body's own page."]
 
 
-BODY_NOTE = "Instruments of these bodies are on their own pages and are not counted for this country."
-
-
 def count_info():
     """Small (i) button beside the header counts; the definitions open in a popover (country.js)."""
     return ('<div class="count-info"><button type="button" class="info-btn" aria-expanded="false" aria-controls="countDefs" aria-label="About the counts">'
@@ -473,7 +470,6 @@ def country_page(j, D, rec, flags, ctx):
     audit = next((a for a in D["coverage_audit"] if a.get("jurisdiction_id") == jid), {}) or {}
     orgs, srcs = ctx["orgs"], ctx["srcs"]
     canon = f"{SITE_URL}country/{jid}/"
-    memberships = [b for b in BODY_ORDER if jid in ctx["members"].get(b, ())]
     cets = ctx["cets"].get(jid); c108 = jid in ctx["c108"]
     n_bind = sum(1 for i in rows_all if kind(i) == "binding"); n_draft = sum(1 for i in rows_all if kind(i) == "draft"); n_soft = len(rows_all) - n_bind - n_draft
     title = f"{j['name']}: AI governance profile | AI Governance Radar"
@@ -506,14 +502,6 @@ def country_page(j, D, rec, flags, ctx):
     if leads: secs.append(("leads", "Leads"))
     secs.append(("method", "Method"))
     # a. header
-    chips = "".join(f'<a class="chip" href="../../body/{b}/">{e(ctx["jur"][b].get("short_name") or b)}</a>' for b in memberships)
-    treaty = []
-    cets_line = cets_positive(jid, ctx)
-    if cets_line: treaty.append(f'<li><span class="k">CETS 225 (CoE AI Convention)</span><span class="v">{e(cets_line)}</span></li>')
-    oa = ctx["oecd"].get(jid)
-    if oa: treaty.append(f'<li><span class="k">OECD AI Recommendation</span><span class="v">Adherent{" (OECD member)" if oa.get("member") else " · non-member, since " + fmt_date(oa["date"]) if oa.get("date") else " · non-member"}</span></li>')
-    # countries in pending_c108 show no line here; the analysis page note explains them
-    if c108: treaty.append('<li><span class="k">Convention 108 (data protection)</span><span class="v">Party</span></li>')
     stats = [("Instruments", len(rows_all)), ("Binding or mandatory", n_bind), ("Non-binding", n_soft), ("Drafts", n_draft), ("Leads", len(leads))]
     ph = ctx["photos"].get(jid) or {}
     hero_img = ph.get("hero")
@@ -524,9 +512,9 @@ def country_page(j, D, rec, flags, ctx):
     h1 = f'<h1>{"<img class=flag src=" + chr(34) + flag + chr(34) + " alt=" + chr(34) + chr(34) + ">" if flag else ""}{e(j["name"])}</h1>'
     H.append(hero(eyebrow, h1, stats, photo=hero_img, art=None if hero_img else geo.silhouette(jid, j["name"]), info=count_info()))
     H.append('<div class="page layout">' + rail(secs, geo.locator(jid, j["name"])) + '<div class="content">')
-    H.append('<section class="intro" aria-label="Memberships and treaty status">'
-             + (f'<p class="chips" aria-label="Memberships">{chips}</p><p class="chips-note">{e(BODY_NOTE)}</p>' if chips else "")
-             + f'<ul class="facts">{"".join(treaty)}<li><span class="k">Last reviewed</span><span class="v">{e(fmt_date(narr.get("last_deep_review")) or "Not yet deep-reviewed")}</span></li></ul>'
+    # memberships and treaty facts are not shown on country pages (leadership review, 20 Oct 2026): bodies have their own pages
+    H.append('<section class="intro" aria-label="Last reviewed">'
+             + f'<ul class="facts"><li><span class="k">Last reviewed</span><span class="v">{e(fmt_date(narr.get("last_deep_review")) or "Not yet deep-reviewed")}</span></li></ul>'
              + f'<p class="hero-links"><a href="../../timeline/?country={e(jid)}">See this country on the timeline →</a><a href="../../analysis/">Global analysis →</a><a href="../../suggest/?country={e(jid)}">Suggest an update →</a></p></section>')
     # b. overview + c. charts in a two-column grid
     ov = ""
