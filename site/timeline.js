@@ -35,7 +35,7 @@ $('#tlReset').addEventListener('click',()=>{F={country:'',region:'',body:'',cat:
 const catIdx=k=>CAT.findIndex(c=>c[0]===k),stIdx=k=>ST.findIndex(s=>s[0]===k),lvIdx=k=>LV.findIndex(l=>l[0]===k);
 function match(it,f){
   const jj=J[it.j]||['','',0];
-  if(f.country){if(!(it.j===f.country||(!jj[2]&&it.app.includes(f.country))))return false}
+  if(f.country){if(it.j!==f.country)return false}
   if(f.region){if(!jj[2]||jj[1]!==f.region)return false}
   if(f.body){const m=T.bodies[f.body][1];if(!(it.j===f.body||(jj[2]&&m.includes(it.j))))return false}
   if(f.cat&&!it.c.includes(catIdx(f.cat)))return false;
@@ -109,7 +109,7 @@ function render(light){hideCard(true);
   const inR=dated.filter(it=>it.y>=F.from&&it.y<=F.to),out=dated.length-inR.length;
   const ctx=[F.country&&J[F.country][0],F.region,F.body&&T.bodies[F.body][0]+' members',F.cat&&CAT[catIdx(F.cat)][1],F.status&&(GROUP.includes(F.status)?T.groups[GROUP.indexOf(F.status)]:ST[stIdx(F.status)]?.[1]),F.level&&LV[lvIdx(F.level)][1]].filter(Boolean);
   status.textContent=`${inR.length.toLocaleString('en')} instrument${inR.length===1?'':'s'} published ${F.from===F.to?'in '+F.from:F.from+'–'+F.to}${ctx.length?' · '+ctx.join(' · '):''}`
-    +(out?` · ${out} outside these years`:'')+` · ${undated} undated instrument${undated===1?'':'s'} excluded`+(F.country?'. Includes regional instruments that apply to this country.':'');
+    +(out?` · ${out} outside these years`:'')+` · ${undated} undated instrument${undated===1?'':'s'} excluded`;
   drawBrush(dated);if(phone()){if(!light)drawList(inR)}else drawMain(inR)}
 toForm();render();
 let lastPhone=phone(),rt;addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{const p=phone();if(p!==lastPhone){lastPhone=p}render()},120)});

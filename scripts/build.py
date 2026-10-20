@@ -187,8 +187,12 @@ def localise(out):
         if '<html lang="en">' not in t: continue
         alt = (f'<link rel="alternate" hreflang="en" href="{pages.SITE_URL}{url}"><link rel="alternate" hreflang="ar" href="{pages.SITE_URL}ar/{url}">'
                f'<link rel="alternate" hreflang="x-default" href="{pages.SITE_URL}{url}">')
-        switch = (f'<a class="lang-switch" href="{other or "./"}" hreflang="en" lang="en">English</a>' if ar else
-                  f'<a class="lang-switch" href="{other}" hreflang="ar" lang="ar">العربية</a>')
+        # language switch: always the last item of the top bar, so it sits in the corner (top-right in English,
+        # top-left in Arabic), as on most government sites
+        globe = ('<svg class="ls-ico" viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.3"/>'
+                 '<path d="M1.5 8h13M8 1.5c2 2 2.8 4.2 2.8 6.5S10 12.5 8 14.5M8 1.5C6 3.5 5.2 5.7 5.2 8S6 12.5 8 14.5" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>')
+        switch = (f'<a class="lang-switch" href="{other or "./"}" hreflang="en" lang="en" aria-label="English version">{globe}<span>English</span></a>' if ar else
+                  f'<a class="lang-switch" href="{other}" hreflang="ar" lang="ar" aria-label="النسخة العربية">{globe}<span>العربية</span></a>')
         if ar:
             t = t.replace('<html lang="en">', '<html lang="ar" dir="rtl">', 1)
             t = t.replace("</head>", FONT + f'<link rel="stylesheet" href="{up}assets/ar.css">' + alt + f'<script src="{up}assets/i18n-ar.js"></script></head>', 1)
@@ -208,10 +212,14 @@ def localise(out):
                 " ".join([link(q.split()[0])] + q.split()[1:]) for q in m.group(2).split(",") if q.strip()) + m.group(3), t)
         else:
             t = t.replace("</head>", alt + "</head>", 1)
-        if '<span class="site">' in t:
-            t = re.sub(r'(<span class="site">[^<]*</span>)', lambda m: m.group(1) + switch, t, count=1)
-        elif '<div class="actions">' in t:
-            t = t.replace('<div class="actions">', '<div class="actions">' + switch.replace('class="lang-switch"', 'class="button lang-switch"'), 1)
+        if '<header class="topnav">' in t:
+            a = t.index('<header class="topnav">'); b = t.index('</header>', a)
+            p_ = t.find('<div class="progress"', a, b)
+            at = p_ if p_ > 0 else b
+            t = t[:at] + switch + t[at:]
+        elif '<header class="topbar">' in t:
+            a = t.index('<header class="topbar">'); b = t.index('</header>', a)
+            t = t[:b] + switch.replace('class="lang-switch"', 'class="button lang-switch"') + t[b:]
         else:
             t = t.replace("<body>", "<body>" + switch, 1) if "<body>" in t else t
         page.write_text(t, encoding="utf-8")
