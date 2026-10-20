@@ -2,7 +2,7 @@
 (function(){'use strict';
 const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>Array.from(r.querySelectorAll(s));
 const T=JSON.parse(document.getElementById('tl-data').textContent);
-const NS='http://www.w3.org/2000/svg',GC=['b','n','d'],GROUP=['binding','soft','draft'];
+const NS='http://www.w3.org/2000/svg',GC=['b','n','d','i'],GROUP=['binding','soft','draft','internal'];   // order of T.groups (analysis.TL_GROUPS)
 const J=T.jurisdictions,ST=T.statuses,CAT=T.categories,LV=T.levels;
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
@@ -61,7 +61,7 @@ function drawMain(rows){
   const W=Math.max(320,chartBox.clientWidth||900),r=4,dia=2*r+1,L=8,R=8,top=10,axisH=26;
   const x0=Date.UTC(F.from,0,1),x1=Date.UTC(F.to+1,0,1),pw=W-L-R,X=t=>L+pw*(t-x0)/(x1-x0);
   const ncol=Math.floor(pw/dia),col=new Map();
-  const sorted=rows.slice().sort((a,b)=>[1,0,2][a.g]-[1,0,2][b.g]||a.x-b.x);
+  const sorted=rows.slice().sort((a,b)=>[2,0,3,1][a.g]-[2,0,3,1][b.g]||a.x-b.x);
   sorted.forEach(it=>{const c=Math.min(ncol-1,Math.max(0,Math.floor((X(it.x)-L)/dia)));if(!col.has(c))col.set(c,[]);col.get(c).push(it)});
   const maxN=Math.max(1,...Array.from(col.values(),v=>v.length));
   const plotH=Math.min(380,Math.max(120,maxN*dia)),step=Math.min(dia,(plotH-r)/Math.max(1,maxN-1||1));

@@ -27,7 +27,7 @@ const nationalCache=new Map(),inheritedCache=new Map();
 function national(j){if(!nationalCache.has(j.id))nationalCache.set(j.id,D.instruments.filter(i=>i.jurisdiction_id===j.id));return nationalCache.get(j.id)}
 function inherited(j){if(!inheritedCache.has(j.id))inheritedCache.set(j.id,D.regional_applicability.filter(a=>a.jurisdiction_id===j.id).map(a=>instrumentByID.get(a.instrument_id)).filter(Boolean));return inheritedCache.get(j.id)}
 function all(j){return [...national(j),...inherited(j)]}
-function matches(i){return (!filters.size||i.categories.some(c=>filters.has(c)))&&(!docType||typeOf(i)===docType)&&(!orgType||orgOf(i)===orgType)&&(status==='all'||status==='binding'&&['binding_law','binding_regulation'].includes(i.legal_status)||status==='draft'&&i.categories.includes('drafts')||status==='reviewed'&&i.verification_level==='reviewed_primary_metadata'||status==='pending'&&i.verification_level!=='reviewed_primary_metadata')}
+function matches(i){return (!filters.size||i.categories.some(c=>filters.has(c)))&&(!docType||typeOf(i)===docType)&&(!orgType||orgOf(i)===orgType)&&(status==='all'||status==='binding'&&['binding_law','binding_regulation'].includes(i.legal_status)||status==='internal'&&INTERNAL.has(i.legal_status)||status==='draft'&&i.categories.includes('drafts')||status==='reviewed'&&i.verification_level==='reviewed_primary_metadata'||status==='pending'&&i.verification_level!=='reviewed_primary_metadata')}
 const filtering=()=>filters.size||docType||orgType||status!=='all';
 function mapMatchCount(j){return national(j).filter(matches).length}
 
@@ -56,8 +56,8 @@ const countryPaths=new Map(),centers=new Map(),geoCenters=new Map(),featureByID=
 let width=0,height=0,transform=d3.zoomIdentity,globeK=1,rot=[-30,-18],spinTimer=null,userMoved=false,pinned=null,lastPointer='mouse';
 const ROOT=document.documentElement.lang==='ar'?'../':'';                 // Arabic page sits one folder down
 const PH=JSON.parse(document.getElementById('photos')?.textContent||'{}'),ARM=window.AR_MAP||{};
-const BINDING=new Set(['binding_law','binding_regulation','international_treaty','administrative_policy_mandatory_in_scope']);
-const kindOf=i=>i.legal_status==='consultation_draft'?'draft':BINDING.has(i.legal_status)?'binding':'soft';
+const BINDING=new Set(['binding_law','binding_regulation','international_treaty']),INTERNAL=new Set(['administrative_policy_mandatory_in_scope']);
+const kindOf=i=>i.legal_status==='consultation_draft'?'draft':BINDING.has(i.legal_status)?'binding':INTERNAL.has(i.legal_status)?'internal':'soft';
 /* documents recorded: single-hue ramp, breaks 1/3/6/11/21/51/101+ (it counts documents; it does not rate governance) */
 const BREAKS=[1,3,6,11,21,51,101],RAMP=d3.quantize(d3.interpolateLab('#3a4a8f','#8bbcc4'),7),ZERO='#2a3363';
 const shade=n=>{if(!n)return ZERO;let k=0;while(k<6&&n>=BREAKS[k+1])k++;return RAMP[k]};
@@ -74,7 +74,7 @@ function groupDocs(events){const m=new Map();events.forEach(c=>{const k=c.instru
   const out=[...m.values()];out.forEach(g=>{g.events.sort((a,b)=>(a.date||'').localeCompare(b.date||''));g.latest=g.events[g.events.length-1];g.date=g.latest.date;g.review=g.events.some(c=>c.needs_review)});return out.sort((a,b)=>(b.date||'').localeCompare(a.date||''))}
 countRecent();
 /* "What's new" panel and pulse legend labels: English here, translated on Arabic pages by site/i18n/ar.json (checked by check_ar_charts.py) */
-const WN_L=/*WN_L*/{"legend":"Updates in the last {d} days","n1":"1 document with updates in the last {d} days","n":"{n} documents with updates in the last {d} days","sub":"{s} of {n} are state/provincial-level","more":"+ {m} more on the country profile","open":"Open country profile →","src":"Official source ↗","close":"Close","aria":"{c}: updates in the last {d} days","pulse1":"{c}: 1 document with updates in the last {d} days","pulse":"{c}: {n} documents with updates in the last {d} days","card1":"1 document with updates in the last {d} days","card":"{n} documents with updates in the last {d} days","published":"Published","adopted":"Adopted","applied":"In force","consultation":"Consultation opened","revised":"Amended","superseded":"Superseded","repealed":"Repealed","event":"Event","binding":"Binding or mandatory","soft":"Non-binding","draft":"Draft"}/*/WN_L*/;
+const WN_L=/*WN_L*/{"legend":"Updates in the last {d} days","n1":"1 document with updates in the last {d} days","n":"{n} documents with updates in the last {d} days","sub":"{s} of {n} are state/provincial-level","more":"+ {m} more on the country profile","open":"Open country profile →","src":"Official source ↗","close":"Close","aria":"{c}: updates in the last {d} days","pulse1":"{c}: 1 document with updates in the last {d} days","pulse":"{c}: {n} documents with updates in the last {d} days","card1":"1 document with updates in the last {d} days","card":"{n} documents with updates in the last {d} days","published":"Published","adopted":"Adopted","applied":"In force","consultation":"Consultation opened","revised":"Amended","superseded":"Superseded","repealed":"Repealed","event":"Event","binding":"Binding","internal":"Internal government rules","soft":"Non-binding","draft":"Draft"}/*/WN_L*/;
 const L=(k,o={})=>WN_L[k].replace(/\{(\w)\}/g,(_,x)=>o[x]??'');
 const pulseR=n=>Math.sqrt(Math.min(Math.max(n,1),10));
 const hasPulse=id=>recent.has(id)&&countryPaths.has(id)&&!countryPaths.get(id).classList.contains('is-dim');
@@ -182,7 +182,7 @@ function openUpdates(id,ev){const j=jurisdictionByID.get(id),docs=groupDocs(rece
   const n=docs.length,sub=docs.filter(g=>SUBN.has(g.inst?.government_level)).length,shown=docs.slice(0,8);
   panel.innerHTML=`<div class="wn-h"><div><h3>${flag(j)}<span>${esc(j.name)}</span></h3><p class="wn-n">${esc(L(n===1?'n1':'n',{n,d:winDays}))}</p>${sub?`<p class="wn-sub">${esc(L('sub',{s:sub,n}))}</p>`:''}</div><button class="wn-x" type="button" aria-label="${esc(L('close'))}">×</button></div>`
    +`<ul class="wn-list">${shown.map(g=>{const i=g.inst,iss=i&&(i.issuing_authority||i.publisher_name),src=g.latest.source_url||i?.source_url,k=i&&kindOf(i);
-      return `<li><div class="wn-meta"><span>${esc(fmtShort(g.date))}</span>${k?`<span class="wn-chip ${k==='binding'?'b':k==='draft'?'d':'n'}">${esc(L(k))}</span>`:''}</div>`
+      return `<li><div class="wn-meta"><span>${esc(fmtShort(g.date))}</span>${k?`<span class="wn-chip ${k==='binding'?'b':k==='internal'?'i':k==='draft'?'d':'n'}">${esc(L(k))}</span>`:''}</div>`
        +`<div class="wn-ms">${msHTML(g)}</div><div class="wn-t" dir="auto">${esc(groupTitle(g))}</div>`+(iss?`<div class="wn-iss" dir="auto">${esc(issuerName(iss,i.jurisdiction_id))}</div>`:'')
        +(src?`<a class="wn-src" href="${esc(src)}" target="_blank" rel="noopener noreferrer">${esc(L('src'))}</a>`:'')+'</li>'}).join('')}`
    +(n>shown.length?`<li class="wn-more">${esc(L('more',{m:n-shown.length}))}</li>`:'')+'</ul>'
@@ -202,12 +202,12 @@ const fmtDate=d=>{if(!d)return '';if(d.length===4)return d;const x=new Date((d.l
 const isAr=s=>/[؀-ۿ]/.test(s||'');
 function latestDoc(j){let best=null;for(const i of national(j)){if(i.publication_date&&(!best||i.publication_date>best.publication_date))best=i}return best}
 function docTitle(i){if(ROOT&&isAr(i.official_title))return i.official_title;return (ROOT&&ARM.titles&&ARM.titles[i.id])||i.english_title||i.official_title||''}
-function cardHTML(j,pinnedCard){const ph=PH[j.id],n=national(j),k={binding:0,soft:0,draft:0};n.forEach(i=>k[kindOf(i)]++);const r=recent.get(j.id)||0,last=latestDoc(j),extra=[];
+function cardHTML(j,pinnedCard){const ph=PH[j.id],n=national(j),k={binding:0,internal:0,soft:0,draft:0};n.forEach(i=>k[kindOf(i)]++);const r=recent.get(j.id)||0,last=latestDoc(j),extra=[];
   if(body){const c=bodyClass(j.id);extra.push(`<div class="tip-match">${{'b-member':'Member of '+esc(jurisdictionByID.get(body)?.short_name||body)+(body==='OECD'?' · adheres to the AI Recommendation':''),'b-adh':'Non-member adherent to the OECD AI Recommendation','b-ratified':'CETS 225: ratified','b-signed':'CETS 225: signed','b-c108':'Convention 108 party'+(BODY_MEMBERS.get('COE')?.has(j.id)?' · CoE member':' · not a CoE member'),'b-coe':'Council of Europe member (no CETS 225 or Convention 108 status recorded)'}[c]||'Not shown as a member'}</div>`)}
   else if(filtering()){const m=mapMatchCount(j);extra.push(`<div class="tip-match">${m} matching document${m===1?'':'s'}</div>`)}
   return (ph?`<figure class="card-photo"><img src="${ROOT}${esc(ph.file)}" width="640" height="360" alt="" loading="lazy" decoding="async"><figcaption>${esc((ROOT&&ARM.captions&&ARM.captions[j.id])||ph.caption||'')}</figcaption></figure>`:'')
    +`<div class="card-body"><strong>${flag(j)}<span>${esc(j.name)}</span></strong>${extra.join('')}`
-   +`<div class="card-counts"><span class="cc cc-b"><b>${k.binding}</b><span>Binding or mandatory</span></span><span class="cc cc-n"><b>${k.soft}</b><span>Non-binding</span></span><span class="cc cc-d"><b>${k.draft}</b><span>Drafts</span></span></div>`
+   +`<div class="card-counts"><span class="cc cc-b"><b>${k.binding}</b><span>Binding</span></span><span class="cc cc-i"><b>${k.internal}</b><span>Internal government rules</span></span><span class="cc cc-n"><b>${k.soft}</b><span>Non-binding</span></span><span class="cc cc-d"><b>${k.draft}</b><span>Drafts</span></span></div>`
    +(r?`<div class="card-actions"><i class="ring-sw"></i><span>${esc(L(r===1?'card1':'card',{n:r,d:winDays}))}</span></div>`:'')
    +(last?`<div class="card-latest"><span class="card-k">Latest document</span><span class="card-t" dir="auto">${esc(docTitle(last))}</span><span class="card-d">${esc(fmtDate(last.publication_date))}</span></div>`:'')
    +(pinnedCard?`<a class="card-open" href="${pageURL(j.id)}">Open country page →</a>`:'')+'</div>'}

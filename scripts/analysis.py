@@ -8,12 +8,11 @@ Called from pages.write_all with the same context the country pages use. Nothing
 import json, math, re, statistics
 import i18n
 from i18n import tr
-from pages import (ar_title, e, kind, KIND_LABEL, KIND_CLASS, COUNT_NOTE, STATUS_LABEL, BODY_ORDER, SITE_URL, fmt_date, year)
+from pages import (ar_title, e, kind, KINDS, KIND_LABEL, KIND_CLASS, KIND_LEGEND, COUNT_NOTE, STATUS_LABEL, BODY_ORDER, SITE_URL, fmt_date, year)
 
 REGIONS = ["Africa", "Americas", "Asia", "Europe", "Oceania"]
-GROUPS = ("soft", "binding", "draft")          # stack order, bottom to top (orange / blue / aqua: the weak pair is never adjacent)
-LEGEND = ('<p class="legend"><span><i class="sw s-b"></i>Binding or mandatory</span><span><i class="sw s-n"></i>Non-binding</span>'
-          '<span><i class="sw s-d"></i>Drafts</span></p>')
+GROUPS = ("soft", "internal", "binding", "draft")   # stack order, bottom to top (purple / blue / mint / teal)
+LEGEND = KIND_LEGEND                                   # legend and table order: pages.KINDS
 # issuer type: the record's authority_type, else its organisation's. Anything not listed here is reported as unclassified.
 ISSUER = {
     "legislature": "Legislatures", "parliament": "Legislatures",
@@ -156,7 +155,7 @@ def fig_years(N, today):
     first = 2016
     last = int(today[:4])
     keys = ["≤2015"] + [str(y) for y in range(first, last + 1)]
-    bk = {k: {"binding": 0, "soft": 0, "draft": 0} for k in keys}
+    bk = {k: {g: 0 for g in KINDS} for k in keys}
     reg = {k: 0 for k in keys}
     und_c = und_r = 0
     for i in C:
@@ -172,7 +171,7 @@ def fig_years(N, today):
     tot = {k: sum(v.values()) for k, v in bk.items()}
     mx = max(tot.values()) or 1; step = nice_step(mx); top = -(-mx // step) * step
     bw = pw / len(keys) * .62
-    o = [f'<svg viewBox="0 0 {W} {H}" class="chart" role="img" aria-label="Country instruments per publication year, stacked by binding or mandatory, non-binding and drafts">']
+    o = [f'<svg viewBox="0 0 {W} {H}" class="chart" role="img" aria-label="Country instruments per publication year, stacked by binding, internal government rules, non-binding and drafts">']
     for t in range(0, top + 1, step):
         y = T + ph - ph * t / top
         o.append(f'<line class="grid" x1="{L}" x2="{W - Rr}" y1="{y:.1f}" y2="{y:.1f}"/><text class="tick" x="{L - 6}" y="{y + 4:.1f}" text-anchor="end">{t}</text>')
@@ -194,9 +193,9 @@ def fig_years(N, today):
             o.append(f'<text class="tick reg" x="{cx:.1f}" y="{T + ph + 36}" text-anchor="middle" data-tip="{e(k)}: {reg[k]} regional-body instrument{"s" if reg[k] != 1 else ""}">{reg[k]}</text>')
     o.append(f'<text class="tick" x="{L - 6}" y="{T + ph + 36}" text-anchor="end">Regional</text>')
     o.append(f'<line class="axis" x1="{L}" x2="{W - Rr}" y1="{T + ph}" y2="{T + ph}"/></svg>')
-    rows = [[k, bk[k]["binding"], bk[k]["soft"], bk[k]["draft"], tot[k], reg[k]] for k in keys]
-    rows.append(["Undated", "", "", "", und_c, und_r])
-    rows.append(["Total", sum(r[1] for r in rows[:-1]), sum(r[2] for r in rows[:-1]), sum(r[3] for r in rows[:-1]), len(C), len(R)])
+    rows = [[k, *[bk[k][g] for g in KINDS], tot[k], reg[k]] for k in keys]
+    rows.append(["Undated", *[""] * len(KINDS), und_c, und_r])
+    rows.append(["Total", *[sum(r[n] for r in rows[:-1]) for n in range(1, len(KINDS) + 1)], len(C), len(R)])
     peak = max((k for k in keys if k != "≤2015"), key=lambda k: tot[k])
     dated = len(C) - und_c
     since23 = sum(tot[k] for k in keys if k not in ("≤2015",) and int(k) >= 2023)
@@ -207,7 +206,7 @@ def fig_years(N, today):
               "The row beneath the axis counts instruments of regional and international bodies (EU, GCC, AU, ASEAN, Council of Europe, UNESCO, OECD, ICESCO, ALECSO, G7, G20), not stacked.",
               y=keys[-1], date=fmt_date(today))
     note = _T("Undated: {c} country, {r} regional (not shown)", c=und_c, r=und_r)
-    return afig("fig-years", "Instruments per year", take, desc, "".join(o), ["Year", "Binding or mandatory", "Non-binding", "Drafts", "Country total", "Regional bodies"], rows, note, LEGEND), {
+    return afig("fig-years", "Instruments per year", take, desc, "".join(o), ["Year", *[KIND_LABEL[g] for g in KINDS], "Country total", "Regional bodies"], rows, note, LEGEND), {
         "years_total": sum(tot.values()), "undated_c": und_c, "undated_r": und_r, "regional_dated": sum(reg.values())}
 
 
@@ -229,7 +228,7 @@ def fig_adoption(N, today):
     start, last = 2010, int(today[:4])
     ys = list(range(start, last + 1))
     series = [("any", "At least one instrument", first_any, "ln-a"), ("strat", "A national AI strategy", first_strat, "ln-s"),
-              ("bind", "Binding or mandatory, incl. data protection and sector laws that apply to AI", first_bind, "ln-b")]
+              ("bind", "Binding, incl. data protection and sector laws that apply to AI", first_bind, "ln-b")]
     cum = {k: [sum(1 for v in f.values() if v <= y) for y in ys] for k, _, f, _ in series}
     W, H, L, Rr, T, B = 720, 300, 40, 150, 14, 28
     if i18n.LANG == "ar": Rr = 235      # room for the longer Arabic end labels ("الاستراتيجية الوطنية ... · 116")
@@ -237,7 +236,7 @@ def fig_adoption(N, today):
     top = 200
     X = lambda n: L + pw * n / (len(ys) - 1)
     Y = lambda v: T + ph - ph * v / top
-    o = [f'<svg viewBox="0 0 {W} {H}" class="chart" role="img" aria-label="Cumulative number of countries by year: with at least one instrument, with a national AI strategy, with at least one binding-or-mandatory instrument">']
+    o = [f'<svg viewBox="0 0 {W} {H}" class="chart" role="img" aria-label="Cumulative number of countries by year: with at least one instrument, with a national AI strategy, with at least one binding instrument (law, regulation or treaty)">']
     for t in range(0, top + 1, 50):
         o.append(f'<line class="grid" x1="{L}" x2="{L + pw}" y1="{Y(t):.1f}" y2="{Y(t):.1f}"/><text class="tick" x="{L - 6}" y="{Y(t) + 4:.1f}" text-anchor="end">{t}</text>')
     o.append(f'<line class="grid ref" x1="{L}" x2="{L + pw}" y1="{Y(195):.1f}" y2="{Y(195):.1f}"/><text class="tick" x="{L + 4}" y="{Y(195) - 4:.1f}">195 countries</text>')
@@ -255,21 +254,21 @@ def fig_adoption(N, today):
     lab_y.sort()
     for n in range(1, len(lab_y)):          # keep direct labels from colliding
         if lab_y[n][0] - lab_y[n - 1][0] < 28: lab_y[n][0] = lab_y[n - 1][0] + 28
-    short = {"any": "Any instrument", "strat": "National AI strategy", "bind": "Binding or mandatory"}
+    short = {"any": "Any instrument", "strat": "National AI strategy", "bind": "Binding"}
     for yy, k, name, cls in lab_y:
         o.append(f'<text class="dlab {cls}-t" x="{L + pw + 10}" y="{yy + 4:.1f}">{e(short[k])} · {cum[k][-1]}</text>')
     o.append(f'<line class="axis" x1="{L}" x2="{L + pw}" y1="{T + ph}" y2="{T + ph}"/></svg>')
     legend = ('<p class="legend"><span><i class="sw ln-a"></i>At least one instrument</span><span><i class="sw ln-s"></i>National AI strategy</span>'
-              '<span><i class="sw ln-b"></i>Binding or mandatory, incl. data protection and sector laws that apply to AI</span></p>')
+              '<span><i class="sw ln-b"></i>Binding, incl. data protection and sector laws that apply to AI</span></p>')
     rows = [[y, cum["any"][n], cum["strat"][n], cum["bind"][n]] for n, y in enumerate(ys)]
     pre = {k: sum(1 for v in f.values() if v < start) for k, _, f, _ in series}
     s20 = cum["strat"][ys.index(2020)]
     moved = len(N["ai_dated"]); miss = len(N["ai_missing"])
     off = sorted(c for c, rows in N["by_c"].items() if rows and c not in first_any)
     take = _T("By {date}, {any} of 195 countries had at least one recorded instrument with an AI-relevant date, {strat} a national AI strategy and "
-              "{bind} at least one binding-or-mandatory instrument with an AI-relevant date. Countries with a national AI strategy rose from {s20} at the end of 2020 to {strat}.",
+              "{bind} at least one binding instrument (law, regulation or treaty) with an AI-relevant date. Countries with a national AI strategy rose from {s20} at the end of 2020 to {strat}.",
               date=fmt_date(today), any=cum['any'][-1], strat=cum['strat'][-1], bind=cum['bind'][-1], s20=s20)
-    desc = (_T("Cumulative countries, counted from the date of the earliest qualifying instrument found. The binding-or-mandatory line includes state, provincial and local "
+    desc = (_T("Cumulative countries, counted from the date of the earliest qualifying instrument found. The binding line (laws, regulations and treaties; internal government rules are not counted) includes state, provincial and local "
                "instruments and general laws (data protection, copyright, sector laws) that apply to AI: the records do not reliably separate AI-specific laws from these, so "
                "one line is shown. On the any-instrument and binding lines, instruments first published before {cutoff} are dated by the AI-relevant amendment or provision "
                "where the record states it ({moved} instruments); {miss} with no such date in the record are left off both lines",
@@ -278,7 +277,7 @@ def fig_adoption(N, today):
                   names=LS().join(tr(N['jur'][c]['name']) for c in off)) if off else ". ")
             + _T("The strategy line uses publication dates. Regional instruments (such as the EU AI Act) are not counted. *{y} runs to {date}.", y=last, date=fmt_date(today)))
     return afig("fig-adoption", "Adoption curve", take, desc, "".join(o), ["End of year", "Countries with at least one instrument (AI-relevant date)", "Countries with a national AI strategy",
-                "Countries with at least one binding-or-mandatory instrument (AI-relevant date)"], rows,
+                "Countries with at least one binding instrument (AI-relevant date)"], rows,
                 _T("Before {start}: {a} / {s} / {b} countries (included in the {start} values) · {moved} pre-{cutoff} instruments re-dated, {miss} without an AI-relevant date",
                    start=start, a=pre['any'], s=pre['strat'], b=pre['bind'], moved=moved, cutoff=AI_CUTOFF, miss=miss), legend), {
         "any": cum["any"][-1], "strat": cum["strat"][-1], "bind": cum["bind"][-1], "moved": moved, "missing": miss}
@@ -351,16 +350,16 @@ def region_parts(N, by_c, scope):
     rows = [[r, s["n"], f'{s["med"]:g}', f'{s["q1"]:g}', f'{s["q3"]:g}', s["min"], s["max"], s["zero"], s["top"]] for r, s in stats.items()]
     rows.append(["All countries", sum(s["n"] for s in stats.values()), "", "", "", "", "", sum(s["zero"] for s in stats.values()), f"Total instruments: {sum(len(v) for v in by_c.values())}"])
     part1 = (stats, "".join(o), ["Region", "Countries", "Median per country", "Lower quartile", "Upper quartile", "Minimum", "Maximum", "Countries with none", "Most instruments"], rows, legend)
-    mix = {r: {"binding": 0, "soft": 0, "draft": 0} for r in REGIONS}
+    mix = {r: {g: 0 for g in KINDS} for r in REGIONS}
     for c, rows_c in by_c.items():
         for i in rows_c: mix[N["jur"][c].get("region")][kind(i)] += 1
     W2, rh, L2, R2 = 720, 34, 92, 46
     H2 = rh * len(REGIONS) + 8
-    o = [f'<svg viewBox="0 0 {W2} {H2}" class="chart" role="img" aria-label="Share of each region\'s instruments that are binding or mandatory, non-binding and drafts ({e(dict(SCOPES)[scope].lower())})">']
+    o = [f'<svg viewBox="0 0 {W2} {H2}" class="chart" role="img" aria-label="Share of each region\'s instruments that are binding, internal government rules, non-binding and drafts ({e(dict(SCOPES)[scope].lower())})">']
     for n, r in enumerate(REGIONS):
         tot = sum(mix[r].values()) or 1; x = L2; y = 4 + n * rh; bh = 20
         o.append(f'<text class="cat" x="{L2 - 12}" y="{y + 15}" text-anchor="end">{e(r)}</text>')
-        drawn = [(g, mix[r][g]) for g in ("binding", "soft", "draft") if mix[r][g]]   # legend order
+        drawn = [(g, mix[r][g]) for g in KINDS if mix[r][g]]   # legend order
         for idx, (g, v) in enumerate(drawn):
             w = (W2 - L2 - R2) * v / tot; gap = 2 if idx else 0
             tip = f"{r}: {v} {KIND_LABEL[g].lower()} ({pct(v, tot)}% of {tot})"
@@ -372,9 +371,9 @@ def region_parts(N, by_c, scope):
             x += w
         o.append(f'<text class="val" x="{W2 - R2 + 6}" y="{y + 15}">{sum(mix[r].values())}</text>')
     o.append(f'<line class="axis" x1="{L2}" x2="{L2}" y1="0" y2="{H2}"/></svg>')
-    rows = [[r, mix[r]["binding"], mix[r]["soft"], mix[r]["draft"], sum(mix[r].values()), f'{pct(mix[r]["binding"], sum(mix[r].values()))}%'] for r in REGIONS]
-    rows.append(["Total", *[sum(mix[r][g] for r in REGIONS) for g in ("binding", "soft", "draft")], sum(sum(m.values()) for m in mix.values()), ""])
-    part2 = (mix, "".join(o), ["Region", "Binding or mandatory", "Non-binding", "Drafts", "Total", "Binding share"], rows, LEGEND)
+    rows = [[r, *[mix[r][g] for g in KINDS], sum(mix[r].values()), f'{pct(mix[r]["binding"], sum(mix[r].values()))}%'] for r in REGIONS]
+    rows.append(["Total", *[sum(mix[r][g] for r in REGIONS) for g in KINDS], sum(sum(m.values()) for m in mix.values()), ""])
+    part2 = (mix, "".join(o), ["Region", *[KIND_LABEL[g] for g in KINDS], "Total", "Binding share"], rows, LEGEND)
     return part1, part2, reg
 
 
@@ -400,7 +399,7 @@ def fig_region(N):
     bs = lambda m, r: pct(m[r]["binding"], sum(m[r].values()))
     hv, lv = max(bs(mn, r) for r in REGIONS), min(bs(mn, r) for r in REGIONS)
     join = lambda xs: xs[0] if len(xs) == 1 else LS().join(xs[:-1]) + (" و" if i18n.LANG == "ar" else " and ") + xs[-1]
-    m_nat = _T("At national level, binding or mandatory instruments are {hv}% of recorded instruments in {a} and {lv}% in {b}.",
+    m_nat = _T("At national level, binding instruments (laws, regulations and treaties) are {hv}% of recorded instruments in {a} and {lv}% in {b}.",
                hv=hv, a=join([rn(r) for r in REGIONS if bs(mn, r) == hv]), lv=lv, b=join([rn(r) for r in REGIONS if bs(mn, r) == lv]))
     natc = region_counts(N, "nat")
     for r in REGIONS:   # name a single country when it supplies most of a region's national instruments
@@ -409,7 +408,7 @@ def fig_region(N):
             nm = tr(c['name']) if i18n.LANG == "ar" else ('The ' if c['name'].startswith('United') else '') + c['name']
             m_nat += " " + _T("{name} supplies {n} of the {t} national instruments in {r} ({p}%).", name=nm, n=n, t=t, r=rn(r), p=pct(n, t))
     big = max(REGIONS, key=lambda r: abs(bs(ma, r) - bs(mn, r)))
-    m_all = _T("Adding state/provincial and local instruments changes the binding-or-mandatory share most in {r}, from {a}% to {b}%; "
+    m_all = _T("Adding state/provincial and local instruments changes the binding share most in {r}, from {a}% to {b}%; "
                "in the other regions it moves by at most {m} points.", r=rn(big), a=bs(mn, big), b=bs(ma, big), m=max(abs(bs(ma, r) - bs(mn, r)) for r in REGIONS if r != big))
     desc2 = {"nat": "Share of each region's national-level instruments in each group; the number at the end is the region's total.",
              "all": "Share of each region's instruments, including state/provincial and local, in each group; the number at the end is the region's total."}
@@ -573,11 +572,12 @@ def analysis_page(D, recs, ctx):
         ("Instruments per country and Group mix, by region (national level only, the default): per-country counts and group mix", f'{kc["box_nat"]} and {kc["mix_nat"]} (= national {lvl["national"]})'),
         ("Instruments per country and Group mix, by region (including state/provincial and local): per-country counts and group mix", f'{kc["box_all"]} and {kc["mix_all"]} (= country instruments {nC})'),
         ("Issuer types: country instruments", f'{kf["issuer_total"]}'),
-        ("Group totals for country instruments (binding or mandatory / non-binding / drafts)", f'{grp["binding"]} / {grp["soft"]} / {grp["draft"]}'),
+        ("Group totals for country instruments (binding / internal government rules / non-binding / drafts)", f'{grp["binding"]} / {grp["internal"]} / {grp["soft"]} / {grp["draft"]}'),
     ]
     assert ka["years_total"] + ka["undated_c"] == nC and ka["regional_dated"] + ka["undated_r"] == nR and kf["issuer_total"] == nC
     assert kc["box_nat"] == kc["mix_nat"] == lvl["national"] and kc["box_all"] == kc["mix_all"] == nC
     assert lvl["national"] + lvl["subnational"] + lvl["local"] == nC and nC + nR == n_all
+    assert sum(grp.values()) == nC
     canon = f"{SITE_URL}analysis/"
     title = "Global analysis | AI Governance Radar"
     desc = _T("Charts across all 195 countries: AI governance instruments per year, adoption, regions, categories, treaties and issuers. Data as of {date}.", date=fmt_date(today))
@@ -601,6 +601,9 @@ def analysis_page(D, recs, ctx):
 
 
 # ---------------------------------------------------------------- timeline
+TL_GROUPS = ("binding", "soft", "draft", "internal")   # group index in the timeline JSON; site/timeline.js GROUP/GC follow this order
+
+
 def timeline_data(D, ctx):
     jur = ctx["jur"]
     st_keys = sorted({i.get("legal_status") or "" for i in D["instruments"]}, key=lambda s: (s == "", s))
@@ -616,13 +619,13 @@ def timeline_data(D, ctx):
         d = i.get("publication_date") or ""
         iss = (i.get("issuing_authority") or i.get("publisher_name") or "")
         if len(iss) > 140: iss = iss[:139].rsplit(" ", 1)[0] + "…"
-        rows.append([i["id"], i["jurisdiction_id"], d, ["binding", "soft", "draft"].index(kind(i)),
+        rows.append([i["id"], i["jurisdiction_id"], d, TL_GROUPS.index(kind(i)),
                      ar_title(i) or i.get("english_title") or i.get("official_title") or "", iss, st_keys.index(i.get("legal_status") or ""),
                      [cat_keys.index(c) for c in i.get("categories", []) if c in cat_keys], lv.index(i.get("government_level")) if i.get("government_level") in lv else 0,
                      i.get("source_url") or i.get("official_webpage_url") or "", app.get(i["id"], [])])
     bodies = {b: [jur[b]["name"] if b in jur else b, sorted(ctx["members"].get(b, ()))] for b in BODY_ORDER if b in jur}
     return {"asof": ctx["today"], "fields": ["id", "jurisdiction", "date", "group", "title", "issuer", "status", "categories", "level", "source", "applies_to"],
-            "groups": [KIND_LABEL[g] for g in ("binding", "soft", "draft")], "statuses": [[k, STATUS_LABEL.get(k) or (k.replace("_", " ").capitalize() if k else "Not recorded")] for k in st_keys],
+            "groups": [KIND_LABEL[g] for g in TL_GROUPS], "statuses": [[k, STATUS_LABEL.get(k) or (k.replace("_", " ").capitalize() if k else "Not recorded")] for k in st_keys],
             "categories": [[k, v] for k, v in D["categories"].items()], "levels": [[k, v] for k, v in LEVELS], "regions": REGIONS,
             "jurisdictions": J, "bodies": bodies, "items": rows}
 
@@ -634,7 +637,7 @@ def timeline_page(D, ctx):
     desc = _T("Every dated AI-governance instrument recorded by the radar on one time axis, filterable by country, region, body, category, status and level. Data as of {date}.", date=fmt_date(ctx['today']))
     sel = lambda name, label, opts: (f'<label>{e(label)}<select name="{name}" data-f="{name}"><option value="">All</option>' + opts + '</select></label>')
     countries = sorted(((k, v[0]) for k, v in T["jurisdictions"].items() if v[2]), key=lambda kv: i18n.name_key(kv[1]))
-    st_opts = ('<optgroup label="Group">' + "".join(f'<option value="{g}">{e(KIND_LABEL[g])}</option>' for g in ("binding", "soft", "draft")) + '</optgroup>'
+    st_opts = ('<optgroup label="Group">' + "".join(f'<option value="{g}">{e(KIND_LABEL[g])}</option>' for g in KINDS) + '</optgroup>'
                '<optgroup label="Legal status">' + "".join(f'<option value="{k}">{e(v)}</option>' for k, v in T["statuses"] if k) + '</optgroup>')
     filters = ('<form class="tl-filters" id="tlFilters" role="search" aria-label="Filter the timeline" onsubmit="return false">'
                + sel("country", "Country", "".join(f'<option value="{k}">{e(v)}</option>' for k, v in countries))

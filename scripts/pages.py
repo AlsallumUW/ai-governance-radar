@@ -15,7 +15,8 @@ import i18n
 from subregions import SUBREGION
 
 SITE_URL = os.environ.get("RADAR_SITE_URL", "https://alsallumuw.github.io/ai-governance-radar/").rstrip("/") + "/"
-BINDING = {"binding_law", "binding_regulation", "international_treaty", "administrative_policy_mandatory_in_scope"}
+BINDING = {"binding_law", "binding_regulation", "international_treaty"}
+INTERNAL = {"administrative_policy_mandatory_in_scope"}   # binds only government bodies or their staff
 WEIGHT = {"binding_law": 0, "international_treaty": 1, "binding_regulation": 2, "administrative_policy_mandatory_in_scope": 3,
           "administrative_guideline": 4, "regulatory_opinion": 4, "nonbinding_guidance": 5, "voluntary_code": 5,
           "national_strategy": 6, "consultation_draft": 7}
@@ -42,7 +43,8 @@ e = lambda s: html.escape(str(s if s is not None else ""), quote=True)
 
 def kind(i):
     if i.get("legal_status") == "consultation_draft": return "draft"
-    return "binding" if i.get("legal_status") in BINDING else "soft"
+    if i.get("legal_status") in BINDING: return "binding"
+    return "internal" if i.get("legal_status") in INTERNAL else "soft"
 
 
 PIPE_TYPE = {"binding_law": "Law", "binding_regulation": "Regulation", "international_treaty": "Treaty",
@@ -57,10 +59,14 @@ def pipe_type(i):
     return f"{t} — open for comment" if i.get("lifecycle") == "consultation" else f"{t} — {LIFE.get(i.get('lifecycle'), 'draft').lower()}"
 
 
-KIND_LABEL = {"binding": "Binding or mandatory", "soft": "Non-binding", "draft": "Drafts"}
-KIND_CLASS = {"binding": "b", "soft": "n", "draft": "d"}
-COUNT_NOTE = ("Binding or mandatory: laws, regulations, treaties and policies mandatory within their scope · Non-binding: strategies, guidelines, "
+KINDS = ("binding", "internal", "soft", "draft")      # legend and table order
+KIND_LABEL = {"binding": "Binding", "internal": "Internal government rules", "soft": "Non-binding", "draft": "Drafts"}
+KIND_CLASS = {"binding": "b", "internal": "i", "soft": "n", "draft": "d"}
+DEF_BINDING = "Binding: laws, regulations and treaties"
+DEF_INTERNAL = "Internal government rules: policies, directives and orders that bind only government bodies or their staff"
+COUNT_NOTE = (DEF_BINDING + " · " + DEF_INTERNAL + " · Non-binding: strategies, guidelines, "
               "guidance, codes and opinions · Drafts: consultation drafts.")
+KIND_LEGEND = ('<p class="legend">' + "".join(f'<span><i class="sw s-{KIND_CLASS[k]}"></i>{KIND_LABEL[k]}</span>' for k in KINDS) + '</p>')
 
 
 def year(d):
@@ -109,7 +115,7 @@ def cets_positive(jid, ctx):
     return None
 
 
-COUNT_DEFS = ["Binding or mandatory: laws, regulations, treaties and policies mandatory within their scope",
+COUNT_DEFS = [DEF_BINDING, DEF_INTERNAL,
               "Non-binding: strategies, guidelines, guidance, codes and opinions", "Drafts: consultation drafts.",
               "Leads: documents not yet verified as in-scope instruments.",
               "Counts include state, provincial and local instruments. Instruments of regional and international bodies are not counted; they are listed on each body's own page."]
@@ -131,7 +137,7 @@ def first_sentence(t, n=158):
 
 # ---------------------------------------------------------------- charts (static SVG)
 def chart_years(rows):
-    """Stacked columns per publication year: non-binding, binding or mandatory, drafts. Returns (svg, table, undated)."""
+    """Stacked columns per publication year: non-binding, internal government rules, binding, drafts. Returns (svg, table, undated)."""
     dated = [(year(i.get("publication_date")), kind(i)) for i in rows]
     undated = sum(1 for y, _ in dated if y is None)
     ys = [y for y, _ in dated if y]
@@ -144,16 +150,16 @@ def chart_years(rows):
     for y, b in dated:
         if y is None: continue
         k = max(y, lo) if earlier else y
-        buckets.setdefault(k, {"binding": 0, "soft": 0, "draft": 0})[b] += 1
+        buckets.setdefault(k, {k: 0 for k in KINDS})[b] += 1
     keys = list(range(lo, hi + 1))
     W, H, L, R, T, B = 360, 190, 26, 4, 10, 26
     pw, ph = W - L - R, H - T - B
-    Z = {"binding": 0, "soft": 0, "draft": 0}
+    Z = {k: 0 for k in KINDS}
     mx = max(sum(buckets.get(k, Z).values()) for k in keys) or 1
     step = 1 if mx <= 6 else 2 if mx <= 12 else 5 if mx <= 30 else 10 if mx <= 60 else 20 if mx <= 120 else 50
     top = ((mx + step - 1) // step) * step
     bw = min(22, pw / len(keys) * .66)
-    out = [f'<svg viewBox="0 0 {W} {H}" class="chart grow-y" role="img" aria-label="Instruments per publication year: binding or mandatory, non-binding and drafts">']
+    out = [f'<svg viewBox="0 0 {W} {H}" class="chart grow-y" role="img" aria-label="Instruments per publication year: binding, internal government rules, non-binding and drafts">']
     for t in range(0, top + 1, step):
         y = T + ph - ph * t / top
         out.append(f'<line class="grid" x1="{L}" x2="{W - R}" y1="{y:.1f}" y2="{y:.1f}"/><text class="tick" x="{L - 6}" y="{y + 3:.1f}" text-anchor="end">{t}</text>')
@@ -162,7 +168,7 @@ def chart_years(rows):
         bk = buckets.get(k, Z)
         cx = L + pw * (n + .5) / len(keys); x = cx - bw / 2; base = T + ph
         label = (f"≤{k}" if earlier and k == lo else str(k))
-        segs = [(KIND_CLASS[x], bk[x], KIND_LABEL[x]) for x in ("soft", "binding", "draft")]
+        segs = [(KIND_CLASS[x], bk[x], KIND_LABEL[x]) for x in ("soft", "internal", "binding", "draft")]
         y0 = base
         drawn = [(c, v, nm) for c, v, nm in segs if v]
         out.append(f'<g class="col" style="--i:{n};transform-origin:0 {base:.1f}px">')
@@ -184,8 +190,8 @@ def chart_years(rows):
         if n % lab_every == 0 or n == len(keys) - 1:
             out.append(f'<text class="tick" x="{cx:.1f}" y="{H - B + 16}" text-anchor="middle">{e(label)}</text>')
     out.append(f'<line class="axis" x1="{L}" x2="{W - R}" y1="{T + ph}" y2="{T + ph}"/></svg>')
-    table = ('<table class="data-table"><thead><tr><th scope="col">Year</th><th scope="col">Binding or mandatory</th><th scope="col">Non-binding</th><th scope="col">Drafts</th><th scope="col">Total</th></tr></thead><tbody>'
-             + "".join(f'<tr><th scope="row">{"≤"+str(k) if earlier and k == lo else k}</th><td>{buckets[k]["binding"]}</td><td>{buckets[k]["soft"]}</td><td>{buckets[k]["draft"]}</td><td>{sum(buckets[k].values())}</td></tr>' for k in keys if k in buckets)
+    table = ('<table class="data-table"><thead><tr><th scope="col">Year</th><th scope="col">Binding</th><th scope="col">Internal government rules</th><th scope="col">Non-binding</th><th scope="col">Drafts</th><th scope="col">Total</th></tr></thead><tbody>'
+             + "".join(f'<tr><th scope="row">{"≤"+str(k) if earlier and k == lo else k}</th><td>{buckets[k]["binding"]}</td><td>{buckets[k]["internal"]}</td><td>{buckets[k]["soft"]}</td><td>{buckets[k]["draft"]}</td><td>{sum(buckets[k].values())}</td></tr>' for k in keys if k in buckets)
              + "</tbody></table>")
     return "".join(out), table, undated
 
@@ -368,7 +374,7 @@ def topbar(sections, ident=""):
 
 
 def bar_ident(name, stats):
-    return f'<b>{e(name)}</b>' + "".join(f'<span><em>{v}</em> {e(k.lower() if n else k)}</span>' for n, (k, v) in enumerate(stats[:4]))
+    return f'<b>{e(name)}</b>' + "".join(f'<span><em>{v}</em> {e(k.lower() if n else k)}</span>' for n, (k, v) in enumerate(stats[:5]))
 
 
 # ---------------------------------------------------------------- photos (UX phase 2b)
@@ -471,7 +477,8 @@ def country_page(j, D, rec, flags, ctx):
     orgs, srcs = ctx["orgs"], ctx["srcs"]
     canon = f"{SITE_URL}country/{jid}/"
     cets = ctx["cets"].get(jid); c108 = jid in ctx["c108"]
-    n_bind = sum(1 for i in rows_all if kind(i) == "binding"); n_draft = sum(1 for i in rows_all if kind(i) == "draft"); n_soft = len(rows_all) - n_bind - n_draft
+    n_bind = sum(1 for i in rows_all if kind(i) == "binding"); n_int = sum(1 for i in rows_all if kind(i) == "internal")
+    n_draft = sum(1 for i in rows_all if kind(i) == "draft"); n_soft = len(rows_all) - n_bind - n_int - n_draft
     title = f"{j['name']}: AI governance profile | AI Governance Radar"
     desc = first_sentence(narr.get("summary")) or f"Official AI-governance laws, strategies and guidance recorded for {j['name']}."
     flag = flags.get((j.get("iso2") or "").lower())
@@ -502,7 +509,7 @@ def country_page(j, D, rec, flags, ctx):
     if leads: secs.append(("leads", "Leads"))
     secs.append(("method", "Method"))
     # a. header
-    stats = [("Instruments", len(rows_all)), ("Binding or mandatory", n_bind), ("Non-binding", n_soft), ("Drafts", n_draft), ("Leads", len(leads))]
+    stats = [("Instruments", len(rows_all)), ("Binding", n_bind), ("Internal government rules", n_int), ("Non-binding", n_soft), ("Drafts", n_draft), ("Leads", len(leads))]
     ph = ctx["photos"].get(jid) or {}
     hero_img = ph.get("hero")
     H = [head(title, desc, canon, preload=hero_img), f'<body class="cp" data-jid="{e(jid)}" data-build="{e(D["meta"].get("build_date") or "")}">',
@@ -533,11 +540,11 @@ def country_page(j, D, rec, flags, ctx):
         ov += '</section>'
     figs = []
     if years_svg:
-        figs.append(figure("fig-years", "Instruments per year", "By publication year: binding or mandatory, non-binding and drafts. Undated instruments are left out.",
-                           '<p class="legend"><span><i class="sw s-b"></i>Binding or mandatory</span><span><i class="sw s-n"></i>Non-binding</span><span><i class="sw s-d"></i>Drafts</span></p>' + years_svg, years_tab,
+        figs.append(figure("fig-years", "Instruments per year", "By publication year: binding, internal government rules, non-binding and drafts. Undated instruments are left out.",
+                           KIND_LEGEND + years_svg, years_tab,
                            f"{undated} undated instrument{'s' if undated != 1 else ''} not shown" if undated else ""))
     if status_svg:
-        figs.append(figure("fig-status", "Legal-status mix", "Instruments by legal status, from most to least binding.", '<p class="legend"><span><i class="sw s-b"></i>Binding or mandatory</span><span><i class="sw s-n"></i>Non-binding</span><span><i class="sw s-d"></i>Drafts</span></p>' + status_svg, status_tab))
+        figs.append(figure("fig-status", "Legal-status mix", "Instruments by legal status, from most to least binding.", KIND_LEGEND + status_svg, status_tab))
     figs.append(f'<figure class="fig" id="fig-coverage"><figcaption><h3>Category coverage</h3><p class="fig-desc">{cov_counts["found"]} of 18 categories with documents · {cov_counts["none"]} searched with none found · {cov_counts["na"]} not assessed.</p></figcaption>{cov_html}</figure>')
     if pipe_drafts or pipe_closed or future:
         pl = '<ol class="pipeline" data-upcoming>'
@@ -618,8 +625,8 @@ def body_page(b, D, rec, flags, ctx):
     desc = first_sentence(narr.get("summary")) or f"Instruments of the {b['name']} recorded on the AI Governance Radar, and the countries they apply to."
     leads = rec.get("leads") or []
     secs = [("overview", "Overview"), ("charts", "Charts"), ("instruments", "Instruments")] + ([("members", "Members")] if members else []) + ([("leads", "Leads")] if leads else []) + [("method", "Method")]
-    n_bind = sum(1 for i in rows if kind(i) == "binding"); n_draft = sum(1 for i in rows if kind(i) == "draft")
-    stats = [("Instruments", len(rows)), ("Binding or mandatory", n_bind), ("Non-binding", len(rows) - n_bind - n_draft), ("Drafts", n_draft), ("Member states", len(members))]
+    n_bind = sum(1 for i in rows if kind(i) == "binding"); n_int = sum(1 for i in rows if kind(i) == "internal"); n_draft = sum(1 for i in rows if kind(i) == "draft")
+    stats = [("Instruments", len(rows)), ("Binding", n_bind), ("Internal government rules", n_int), ("Non-binding", len(rows) - n_bind - n_int - n_draft), ("Drafts", n_draft), ("Member states", len(members))]
     H = [head(title, desc, canon), f'<body class="cp" data-jid="{e(bid)}" data-build="{e(D["meta"].get("build_date") or "")}">',
          topbar(secs, bar_ident(b.get("short_name") or b["name"], stats)), '<main id="main">']
     # no logos (trademarks): the hero shows the member states on a world map
@@ -629,10 +636,10 @@ def body_page(b, D, rec, flags, ctx):
              + f'<p class="hero-links"><a href="../../timeline/?body={e(bid)}">See this body and its members on the timeline →</a><a href="../../analysis/">Global analysis →</a><a href="../../suggest/?country={e(bid)}">Suggest an update →</a></p></section>')
     years_svg, years_tab, undated = chart_years(rows); status_svg, status_tab = chart_status(rows)
     figs = []
-    if years_svg: figs.append(figure("fig-years", "Instruments per year", "By publication year: binding or mandatory, non-binding and drafts.",
-                                      '<p class="legend"><span><i class="sw s-b"></i>Binding or mandatory</span><span><i class="sw s-n"></i>Non-binding</span><span><i class="sw s-d"></i>Drafts</span></p>' + years_svg, years_tab,
+    if years_svg: figs.append(figure("fig-years", "Instruments per year", "By publication year: binding, internal government rules, non-binding and drafts.",
+                                      KIND_LEGEND + years_svg, years_tab,
                                       f"{undated} undated not shown" if undated else ""))
-    if status_svg: figs.append(figure("fig-status", "Legal-status mix", "Instruments by legal status, from most to least binding.", '<p class="legend"><span><i class="sw s-b"></i>Binding or mandatory</span><span><i class="sw s-n"></i>Non-binding</span><span><i class="sw s-d"></i>Drafts</span></p>' + status_svg, status_tab))
+    if status_svg: figs.append(figure("fig-status", "Legal-status mix", "Instruments by legal status, from most to least binding.", KIND_LEGEND + status_svg, status_tab))
     bsum_ar = i18n.content(bid, "summary", narr.get("summary")); bnotes_ar = i18n.content(bid, "review_notes", narr.get("review_notes"))
     ov = '<section id="overview" class="block prose"><h2>Overview</h2>' + (paras(bsum_ar or narr.get("summary"), bsum_ar, "overview") or f'<p>{e(b.get("overview") or "")}</p>')
     if bid == "OECD" and ctx["oecd"]:

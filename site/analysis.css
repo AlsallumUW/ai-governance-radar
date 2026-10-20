@@ -48,7 +48,7 @@
 .tl-chart{position:relative}
 #tlSvg{width:100%;height:auto;display:block;touch-action:pan-y}
 #tlSvg .dot{stroke:var(--surface);stroke-width:1}
-#tlSvg .dot.s-b{fill:var(--s-b)}#tlSvg .dot.s-n{fill:var(--s-n)}#tlSvg .dot.s-d{fill:var(--s-d)}
+#tlSvg .dot.s-b{fill:var(--s-b)}#tlSvg .dot.s-i{fill:var(--s-i)}#tlSvg .dot.s-n{fill:var(--s-n)}#tlSvg .dot.s-d{fill:var(--s-d)}
 #tlSvg .dot.hl{stroke:var(--ink);stroke-width:2}
 .tl-brush-wrap{margin-top:8px}.tl-brush-h{font-size:13px;color:var(--muted);margin:0 0 4px}
 #tlBrush{width:100%;height:auto;display:block;cursor:crosshair;touch-action:none;user-select:none}
@@ -93,6 +93,6 @@
 @media (prefers-color-scheme:dark){:root:where(:not([data-theme="light"])) .chart .h7+.hv{fill:#0b0b0b}}
 :root[data-theme="dark"] .chart .h7+.hv{fill:#0b0b0b}
 /* in-bar labels take a colour that reads on their bar (AA) */
-.chart .mark.s-b+.inlab{fill:#0b1029}
+.chart .mark.s-b+.inlab,.chart .mark.s-i+.inlab{fill:#0b1029}
 @media (prefers-color-scheme:dark){:root:where(:not([data-theme="light"])) .chart .mark.s-n+.inlab,:root:where(:not([data-theme="light"])) .chart .mark.s-d+.inlab{fill:#0b1029}}
 :root[data-theme="dark"] .chart .mark.s-n+.inlab,:root[data-theme="dark"] .chart .mark.s-d+.inlab{fill:#0b1029}
