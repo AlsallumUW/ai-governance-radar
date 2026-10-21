@@ -4039,6 +4039,58 @@
       "organization_id": "o-97f37526a95a",
       "first_recorded": "2026-10-19",
       "last_changed": null
+    },
+    {
+      "id": "i-e5db6ff99f75",
+      "jurisdiction_id": "SGP",
+      "official_title": "Security Assessment Handbook for Agentic AI Coding Assistants",
+      "english_title": "Security Assessment Handbook for Agentic AI Coding Assistants",
+      "issuing_authority": "Cyber Security Agency of Singapore",
+      "publisher_name": "Cyber Security Agency of Singapore",
+      "authority_type": "executive_agency",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "cyber-security",
+        "generative-ai",
+        "risk-assurance"
+      ],
+      "category": "cyber-security",
+      "subcategory": null,
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2026-10-15",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "CSA publication page dated 15 October 2026 (the date printed on the page). The handbook builds on the 2024 Guidelines and Companion Guide on Securing AI Systems and the Securing Agentic AI addendum (i-30ffc64a0ec4). The handbook text is provided as an interactive resource on the page; no separate PDF link was found.",
+      "scope": "Singapore (national)",
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "CSA handbook giving security practitioners and developers a methodology to assess IDE-based and CLI-based agentic AI coding assistants. It sets out how such assistants work, trust boundaries, threats and attack paths mapped to MITRE ATLAS, and tiered controls drawn from CSA's Addendum on Securing Agentic AI. It is guidance for adopters and does not create obligations.",
+      "ai_governance_relevance": "Singapore national instrument shaping AI governance (cyber-security, generative-ai, risk-assurance).",
+      "source_url": "https://www.csa.gov.sg/resources/publications/security-assessment-handbook-for-agentic-ai-coding-assistants/",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.csa.gov.sg/resources/publications/security-assessment-handbook-for-agentic-ai-coding-assistants/",
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-30ffc64a0ec4"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-10-21",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_publication",
+      "evidence_reference": "curl (browser user agent, --max-time 60): CSA publication page read in full.",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "first_recorded": "2026-10-21",
+      "last_changed": "2026-10-15",
+      "source_id": "s-e5db6ff99f75",
+      "organization_id": "o-e7a64fe73a77"
     }
   ],
   "organizations": [
@@ -6321,6 +6373,34 @@
       "document_language": "en",
       "error": null,
       "content_type": null
+    },
+    {
+      "id": "s-e5db6ff99f75",
+      "url": "https://www.csa.gov.sg/resources/publications/security-assessment-handbook-for-agentic-ai-coding-assistants/",
+      "jurisdiction_ids": [
+        "SGP"
+      ],
+      "source_institutions": [
+        "Cyber Security Agency of Singapore"
+      ],
+      "instrument_ids": [
+        "i-e5db6ff99f75"
+      ],
+      "categories_reviewed": [
+        "cyber-security",
+        "generative-ai",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-21",
+      "checked_date": "2026-10-21",
+      "check_method": "curl (browser user agent, --max-time 60): CSA publication page read in full.",
+      "http_status": 200,
+      "final_url": "https://www.csa.gov.sg/resources/publications/security-assessment-handbook-for-agentic-ai-coding-assistants/",
+      "link_status": "reachable",
+      "page_title": "Security Assessment Handbook for Agentic AI Coding Assistants",
+      "document_language": "en",
+      "error": null,
+      "content_type": "text/html"
     }
   ],
   "regional_applicability": [],
@@ -6467,8 +6547,8 @@
     "no_material_found_note": "Singapore's laws, the government and ministries, regulators, standards and sandboxes were searched. No AI procurement guidance or clauses have been published (undated government technology playbooks are listed as leads), and no government-published AI readiness index was found. Some national standards are recorded from catalogue entries and free previews only, because their full texts are paid.",
     "discovery_result_count": 10,
     "focused_result_count": 14,
-    "technical_note": "Coverage note (original): Technical review notes: Backfill run 2026-10-11 at national level only (PROTOCOL §6) in four parts (S1 laws; S2 government incl. ministry-level search; S3 regulators; S4 standards and sandboxes). No usage-limit interruption; the four earlier records were re-checked and fixed (the agentic AI record now points to the framework, not the press release; site-name prefixes and domain-named publishers removed). curl worked on almost every site; Singapore Statutes Online throttled repeated requests (paused requests succeeded) and enterprisesg.gov.sg needed WebFetch. Located-only (11): Singapore Standards and Technical References read from eShop catalogue entries and free previews (full texts paid; year-only dates). Overlaps resolved: PDPC synthetic data guide and SGH/Kajima practical guidance (S1/S3), AV Rules 2017 (S1/S4), Starter Kit (S2/S4), AIHGle 2.0 (S2/S3) recorded once; duplicate events dropped. Third-party host: IMDA pages name aiverifyfoundation.sg as where the GenAI framework and the 2023 discussion paper are published (PROTOCOL §1). The Singapore Consensus on Global AI Safety Research Priorities is recorded from the Government's SCAI site. The Criminal Law (Miscellaneous Amendments) Act 2025 commencement (17 Aug 2026) is from the Ministry of Home Affairs release; the SSO commencement notification was not read. procurement: no AI procurement guidance or clauses published (GovTech playbooks undated, leads). index-readiness: no government-published AI readiness index.\n\nCatch-up sweep 2026-10-19: checked IMDA press releases, CSA advisories and press releases (to 15 Oct 2026), PDPC announcements, MAS (search), MDDI (search). Found i-313a2837685b (IMDA Starter Kit for Testing Agentic Systems, 14 Oct 2026); leads: AI Verify Foundation AI Tester Accreditation Programme and CSA SICW 2026 agentic AI tabletop outcome statement. Ruled out: CSA quantum-safe advisory, cyber workforce study and accreditation framework, MoUs (not AI instruments); IMDA FAIRS taskforce (sector taskforce, no document). IPOS AI and IP consultation (i-57bbf1283c6e) still open until 22 Oct 2026. Not reached: none.",
-    "last_sweep": "2026-10-19"
+    "technical_note": "Coverage note (original): Technical review notes: Backfill run 2026-10-11 at national level only (PROTOCOL §6) in four parts (S1 laws; S2 government incl. ministry-level search; S3 regulators; S4 standards and sandboxes). No usage-limit interruption; the four earlier records were re-checked and fixed (the agentic AI record now points to the framework, not the press release; site-name prefixes and domain-named publishers removed). curl worked on almost every site; Singapore Statutes Online throttled repeated requests (paused requests succeeded) and enterprisesg.gov.sg needed WebFetch. Located-only (11): Singapore Standards and Technical References read from eShop catalogue entries and free previews (full texts paid; year-only dates). Overlaps resolved: PDPC synthetic data guide and SGH/Kajima practical guidance (S1/S3), AV Rules 2017 (S1/S4), Starter Kit (S2/S4), AIHGle 2.0 (S2/S3) recorded once; duplicate events dropped. Third-party host: IMDA pages name aiverifyfoundation.sg as where the GenAI framework and the 2023 discussion paper are published (PROTOCOL §1). The Singapore Consensus on Global AI Safety Research Priorities is recorded from the Government's SCAI site. The Criminal Law (Miscellaneous Amendments) Act 2025 commencement (17 Aug 2026) is from the Ministry of Home Affairs release; the SSO commencement notification was not read. procurement: no AI procurement guidance or clauses published (GovTech playbooks undated, leads). index-readiness: no government-published AI readiness index.\n\nCatch-up sweep 2026-10-19: checked IMDA press releases, CSA advisories and press releases (to 15 Oct 2026), PDPC announcements, MAS (search), MDDI (search). Found i-313a2837685b (IMDA Starter Kit for Testing Agentic Systems, 14 Oct 2026); leads: AI Verify Foundation AI Tester Accreditation Programme and CSA SICW 2026 agentic AI tabletop outcome statement. Ruled out: CSA quantum-safe advisory, cyber workforce study and accreditation framework, MoUs (not AI instruments); IMDA FAIRS taskforce (sector taskforce, no document). IPOS AI and IP consultation (i-57bbf1283c6e) still open until 22 Oct 2026. Not reached: none. Change check 2026-10-21: IMDA, CSA, MAS and PDPC listing pages read; PDPC and MAS listing pages are script-rendered so only search results were used for them.",
+    "last_sweep": "2026-10-21"
   },
   "changes": [
     {
@@ -8734,6 +8814,21 @@
       "from": null,
       "to": null,
       "source_url": "https://sso.agc.gov.sg/Acts-Supp/26-2012/Published/20211231?DocDate=20121203",
+      "needs_review": false
+    },
+    {
+      "id": "c-23107cee1736",
+      "date": "2026-10-15",
+      "recorded": "2026-10-21",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "SGP",
+      "instrument_id": "i-e5db6ff99f75",
+      "title": "CSA publishes Security Assessment Handbook for Agentic AI Coding Assistants",
+      "detail": "CSA publication page dated 15 October 2026.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.csa.gov.sg/resources/publications/security-assessment-handbook-for-agentic-ai-coding-assistants/",
       "needs_review": false
     }
   ],
