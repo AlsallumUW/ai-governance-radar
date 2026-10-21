@@ -39,7 +39,7 @@ EVENT = {"published": "Published", "revised": "Revised", "consultation": "Consul
 GROUP_ORDER = ["un-system", "europe", "africa", "americas", "asia-pacific", "arab-islamic", "economic", "finance-standards", "security", "summits", "other"]
 GROUP_LABEL = {"un-system": "UN system", "europe": "Europe", "africa": "Africa", "americas": "Americas", "asia-pacific": "Asia and the Pacific",
                "arab-islamic": "Arab and Islamic organisations", "economic": "Economic groupings",
-               "finance-standards": "Financial and law-enforcement standard-setters", "security": "Security",
+               "finance-standards": "International financial institutions", "security": "Security",
                "summits": "Summits and multilateral declarations", "other": "Other"}
 
 

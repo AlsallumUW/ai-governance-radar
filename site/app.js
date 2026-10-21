@@ -257,7 +257,7 @@ $('#clearFilters').onclick=()=>{filters.clear();status='all';docType='';orgType=
 /* International bodies: one dropdown, grouped like the Global and regional documents page (group, then English name).
    Only bodies with member states are offered; summits and other bodies whose signatories vary by document are not. */
 const GROUP_ORDER=['un-system','europe','africa','americas','asia-pacific','arab-islamic','economic','finance-standards','security','summits','other'];
-const GROUP_LABEL={'un-system':'UN system','europe':'Europe','africa':'Africa','americas':'Americas','asia-pacific':'Asia and the Pacific','arab-islamic':'Arab and Islamic organisations','economic':'Economic groupings','finance-standards':'Financial and law-enforcement standard-setters','security':'Security','summits':'Summits and multilateral declarations','other':'Other'};
+const GROUP_LABEL={'un-system':'UN system','europe':'Europe','africa':'Africa','americas':'Americas','asia-pacific':'Asia and the Pacific','arab-islamic':'Arab and Islamic organisations','economic':'Economic groupings','finance-standards':'International financial institutions','security':'Security','summits':'Summits and multilateral declarations','other':'Other'};
 const groupOf=j=>GROUP_ORDER.includes(j.group)?j.group:'other';
 const MAP_BODIES=D.jurisdictions.filter(j=>j.type!=='country'&&j.members_rule!=='none'&&(D.regional_members?.[j.id]||[]).length).sort((a,b)=>GROUP_ORDER.indexOf(groupOf(a))-GROUP_ORDER.indexOf(groupOf(b))||a.name.toLowerCase().localeCompare(b.name.toLowerCase()));
 const bodyLabel=j=>AR?(j.name_ar||I18N.t(j.name)):j.name;

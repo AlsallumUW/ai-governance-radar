@@ -233,7 +233,8 @@ def check(only=None):
             if c.get("kind") == "radar" and ty not in RADAR_TYPES: E(f"change {c.get('id')} bad radar type {ty}")
             if c.get("kind") not in ("world", "radar"): E(f"change {c.get('id')} bad kind {c.get('kind')}")
             if c.get("date") and not ISO.match(c["date"]): E(f"change {c.get('id')} bad date {c['date']}")
-            if c.get("source_url") and NEWS.search(host(c["source_url"])): E(f"change {c.get('id')} cites a news/aggregator site: {host(c['source_url'])}")
+            own_oecd_c = jid in ("OECD", "G7") and host(c.get("source_url")).endswith("oecd.ai") and "/dashboards/" not in (c.get("source_url") or "")
+            if c.get("source_url") and NEWS.search(host(c["source_url"])) and not own_oecd_c: E(f"change {c.get('id')} cites a news/aggregator site: {host(c['source_url'])}")
             removed_ids = {x.get("instrument_id") for x in r.get("changes", []) if x.get("type") == "removed"}
             if c.get("instrument_id") and c["instrument_id"] not in inst_ids and c["instrument_id"] not in removed_ids:
                 E(f"change {c.get('id')} points to missing instrument {c['instrument_id']}")
