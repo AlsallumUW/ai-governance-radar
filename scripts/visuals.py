@@ -41,7 +41,8 @@ def banner(page, ctx, eyebrow, h1, lede="", stats=None, info=""):
     if not im:
         return f'<header class="hero pg-hero" id="top">{body}</header>'
     alt = im.get("alt_ar") or im["alt"]
-    img = (f'<img class="hero-img" src="../{e(im["file"])}" srcset="../{e(im["file_small"])} {im["width_small"]}w, ../{e(im["file"])} {im["width"]}w" '
+    large = f', ../{e(im["file_large"])} {im["width_large"]}w' if im.get("file_large") else ""
+    img = (f'<img class="hero-img" src="../{e(im["file"])}" srcset="../{e(im["file_small"])} {im["width_small"]}w, ../{e(im["file"])} {im["width"]}w{large}" '
            f'sizes="100vw" width="{im["width"]}" height="{im["height"]}" alt="{e(alt)}" fetchpriority="high" decoding="async">')
     return (f'<header class="hero hero--photo pg-hero" id="top"><div class="hero-media">{img}</div><div class="hero-scrim" aria-hidden="true"></div>'
             f'{body}<p class="hero-credit"><span class="hero-cap">{cap(im)}</span>{credit(im)}</p></header>')
@@ -52,7 +53,7 @@ def banner_preload(page, ctx):
     im = (ctx.get("page_photos", {}).get(page) or {}).get("hero")
     if not im: return ""
     return (f'<link rel="preload" as="image" href="../{e(im["file_small"])}" imagesrcset="../{e(im["file_small"])} {im["width_small"]}w, '
-            f'../{e(im["file"])} {im["width"]}w" imagesizes="100vw" fetchpriority="high">')
+            f'../{e(im["file"])} {im["width"]}w' + (f', ../{e(im["file_large"])} {im["width_large"]}w' if im.get("file_large") else "") + '" imagesizes="100vw" fetchpriority="high">')
 
 
 # ---------------------------------------------------------------- projection and geometry

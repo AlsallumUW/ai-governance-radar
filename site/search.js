@@ -294,9 +294,9 @@ load().then(()=>{
   $('#srTopics').innerHTML=GROUPS.map(g=>`<button type="button" class="sr-topic" data-key="${esc(g.key)}" aria-pressed="false" translate="no">${esc(g.label)}</button>`).join('');
   $('#srTopics').addEventListener('click',ev=>{const b=ev.target.closest('.sr-topic');if(!b)return;const g=GROUPS.find(x=>x.key===b.dataset.key);F.q=g.q;F.rel=true;toForm();update()});
   $('#srMoreT').addEventListener('click',()=>{TOPALL=!TOPALL;topics();if(!TOPALL)$('#srMoreT').focus()});
-  /* the map at the top: selecting a country makes it the search's only country, then brings the results into view */
+  /* the map at the top: selecting a country makes it the search's only country, then brings the keyword search into view */
   if(mapFig)mapFig.addEventListener('wm:pick',ev=>{const c=ev.detail.iso3;if(!J[c])return;F.j=[c];F.region=[];F.body=[];chips();update();
-    sum.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'})});
+    $('#srForm').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});setTimeout(()=>$('#srQ').focus({preventScroll:true}),400)});
   /* ...and clearing it there (the chip's ×, "Show all countries", Escape or the same country again) removes it here too */
   if(mapFig)mapFig.addEventListener('wm:unpick',ev=>{const d=ev.detail||{};F.j=d.all?F.j.filter(c=>!J[c]||J[c][2]!=='c'):F.j.filter(c=>c!==d.iso3);chips();update()});
   buildOpts();F=readURL();toForm();render();

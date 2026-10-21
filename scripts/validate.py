@@ -87,6 +87,11 @@ def check_photos():
                     q = site / (im.get(f) or "")
                     if not q.is_file(): E(f"missing image {im.get(f)}")
                     elif q.stat().st_size > cap: warns.append(f"photos {cid}: {im.get(f)} is {q.stat().st_size // 1000} KB (target {cap // 1000} KB)")
+                if im.get("file_large"):     # optional high-resolution banner (site pages): must exist, sit in the same folder and stay under 450 KB
+                    q = site / im["file_large"]
+                    if not im["file_large"].startswith(f"img/{kind}/{cid}/"): E(f"{im['file_large']} is not under img/{kind}/{cid}/")
+                    elif not q.is_file(): E(f"missing image {im['file_large']}")
+                    elif q.stat().st_size > 450_000: warns.append(f"photos {cid}: {im['file_large']} is {q.stat().st_size // 1000} KB (target 450 KB)")
     return errs, warns
 
 
