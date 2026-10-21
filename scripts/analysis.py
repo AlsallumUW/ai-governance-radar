@@ -583,7 +583,7 @@ def analysis_page(D, recs, ctx):
     title = "Global analysis | AI Governance Radar"
     desc = _T("Charts across all 195 countries: AI governance instruments per year, adoption, regions, categories, treaties and issuers. Data as of {date}.", date=fmt_date(today))
     H = [head1(title, desc, canon), '<body class="cp an">', nav("analysis"), '<main class="page">']
-    H.append(f'<header class="hero" id="top"><p class="eyebrow">{e(_T("Global analysis · data snapshot {date}", date=fmt_date(today)))}</p><h1>AI governance in 195 countries</h1>'
+    H.append(f'<header class="hero" id="top"><p class="eyebrow">{e(_T("Global analysis · data as of {date}", date=fmt_date(today)))}</p><h1>AI governance in 195 countries</h1>'
              + '<dl class="stats stats4">' + "".join(f'<div><dt>{k}</dt><dd>{v}</dd></div>' for k, v in stats) + '</dl>'
              + f'<p class="stats-note">{e(tr(COUNT_NOTE))} ' + e(_T("Instruments: {c} national, state/provincial and local, plus {r} of regional bodies. ", c=f"{nC:,}", r=nR))
              + e(_T("Leads: documents found but not yet verified as in-scope instruments; they are not counted in any chart.")) + '</p>'
@@ -592,7 +592,7 @@ def analysis_page(D, recs, ctx):
     H.append('<nav class="chart-index" aria-label="Charts"><a href="#fig-years">Per year</a><a href="#fig-adoption">Adoption</a><a href="#fig-region">Regions</a>'
              '<a href="#fig-heat">Categories</a><a href="#fig-treaty">Treaties</a><a href="#fig-issuer">Issuers</a><a href="#recon">How the numbers add up</a></nav>')
     H.append('<div class="an-grid">' + fa + fb + fc1 + fc2 + fd + fe + ff + '</div>')
-    H.append('<section id="recon" class="block"><h2>How the numbers add up</h2><p class="section-lede">Every chart is built from the same snapshot as the export on the map page. '
+    H.append('<section id="recon" class="block"><h2>How the numbers add up</h2><p class="section-lede">Every chart is built from the same data as the export on the map page. '
              'Charts use instruments issued in each country; the region charts (c) default to national-level instruments, with a switch to add state/provincial and local ones, '
              'and the other charts include all three levels. Regional-body instruments are shown separately in chart a and left out of the others, '
              'so a regional instrument is never counted once per member state. Totals below are checked at every build for both settings of the switch.</p>'
@@ -647,7 +647,7 @@ def timeline_page(D, ctx):
                + '<label>From<select name="from" data-f="from"></select></label><label>To<select name="to" data-f="to"></select></label>'
                + '<button type="button" class="btn" id="tlReset">Clear filters</button></form>')
     H = [head1(title, desc, canon), '<body class="cp tl">', nav("timeline"), '<main class="page tl-page">']
-    H.append(f'<header class="hero tl-hero"><p class="eyebrow">{e(_T("Publication timeline · data snapshot {date}", date=fmt_date(ctx["today"])))}</p><h1>Publication timeline</h1>'
+    H.append(f'<header class="hero tl-hero"><p class="eyebrow">{e(_T("Publication timeline · data as of {date}", date=fmt_date(ctx["today"])))}</p><h1>Publication timeline</h1>'
              '<p class="stats-note">Every dated instrument (national, state/provincial, local and regional) placed at its publication date, newest at the right. '
              'Dates given only as a year or a month are placed mid-year or mid-month. ' + e(CAUTION) + ' <a href="../?about=method">Methodology</a></p>'
              f'<p class="discovery">{e(DISCOVERY)}</p></header>')

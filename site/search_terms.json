@@ -1,5 +1,5 @@
 {
- "_about": "Synonym groups for the document search (site/search.js) and its Suggested topics chips. A query term that equals, or is contained in, a member of a group (spaces ignored) also searches every member of that group. Arabic wording follows research/aigr_arabic_terms.csv (SDAIA Data and AI Glossary) where it has the same concept: التزييف العميق, التعرف على الوجوه, نموذج لغوي كبير, نموذج أساس, بوت محادثة, مركبة ذاتية التحكم, قابلية التفسير, البيانات الشخصية, الخصوصية, الشفافية, التحيز, الأمن السيبراني; the spec's wording is kept beside it.",
+ "_about": "Synonym groups for the document search (site/search.js) and its Suggested topics chips; the first eight groups are the chips shown before \"More topics\". A query term that equals, or is contained in, a member of a group (spaces ignored) also searches every member of that group. Arabic wording follows the SDAIA Data and AI Glossary (2nd ed. 2024, research/aigr_arabic_terms.csv) where it has the same concept. Arabic matching is substring matching, so the glossary's indefinite form (تزييف عميق، تعرف على الوجوه، قياسات حيوية، ذكاء اصطناعي توليدي، بيانات شخصية، خصوصية، تحيز، شفافية، مركز البيانات، مركبة ذاتية التحكم، وكيل ذكي) is listed beside the definite form: a definite form such as التزييف العميق does not find the indefinite تزييف عميق in a text.",
  "groups": [
   {
    "key": "deepfakes",
@@ -19,13 +19,14 @@
     "التزييف العميق",
     "المحتوى المزيف",
     "الوسائط المصطنعة",
-    "المحتوى المولد بالذكاء الاصطناعي"
+    "المحتوى المولد بالذكاء الاصطناعي",
+    "تزييف عميق"
    ]
   },
   {
    "key": "sovereignty",
    "label_en": "AI and data sovereignty",
-   "label_ar": "السيادة الرقمية",
+   "label_ar": "سيادة البيانات والذكاء الاصطناعي",
    "en": [
     "ai sovereignty",
     "sovereign ai",
@@ -44,24 +45,6 @@
     "الذكاء الاصطناعي السيادي",
     "السيادة التقنية",
     "توطين البيانات"
-   ]
-  },
-  {
-   "key": "facial-recognition",
-   "label_en": "Facial recognition",
-   "label_ar": "التعرف على الوجوه",
-   "en": [
-    "facial recognition",
-    "face recognition",
-    "biometric identification",
-    "remote biometric",
-    "biometric surveillance"
-   ],
-   "ar": [
-    "التعرف على الوجوه",
-    "التعرف على الوجه",
-    "التعرف البيومتري",
-    "تحديد القياسات الحيوية عن بعد"
    ]
   },
   {
@@ -84,13 +67,14 @@
     "بوت محادثة",
     "روبوت المحادثة",
     "نموذج أساس",
-    "النماذج التأسيسية"
+    "النماذج التأسيسية",
+    "ذكاء اصطناعي توليدي"
    ]
   },
   {
    "key": "agentic-ai",
    "label_en": "Agentic AI",
-   "label_ar": "الذكاء الاصطناعي التوكيلي",
+   "label_ar": "وكلاء الذكاء الاصطناعي",
    "en": [
     "agentic",
     "ai agent",
@@ -98,8 +82,47 @@
    ],
    "ar": [
     "وكلاء الذكاء الاصطناعي",
-    "الذكاء الاصطناعي الوكيلي",
-    "الذكاء الاصطناعي التوكيلي"
+    "وكيل ذكي",
+    "الوكلاء الأذكياء",
+    "نظام متعدد الوكلاء",
+    "الذكاء الاصطناعي الوكيلي"
+   ]
+  },
+  {
+   "key": "facial-recognition",
+   "label_en": "Facial recognition",
+   "label_ar": "التعرف على الوجوه",
+   "en": [
+    "facial recognition",
+    "face recognition",
+    "biometric identification",
+    "remote biometric",
+    "biometric surveillance"
+   ],
+   "ar": [
+    "التعرف على الوجوه",
+    "التعرف على الوجه",
+    "التعرف البيومتري",
+    "تحديد القياسات الحيوية عن بعد",
+    "تعرف على الوجوه",
+    "قياسات حيوية"
+   ]
+  },
+  {
+   "key": "personal-data",
+   "label_en": "Personal data and privacy",
+   "label_ar": "البيانات الشخصية والخصوصية",
+   "en": [
+    "personal data",
+    "data protection",
+    "privacy"
+   ],
+   "ar": [
+    "حماية البيانات الشخصية",
+    "البيانات الشخصية",
+    "الخصوصية",
+    "بيانات شخصية",
+    "خصوصية"
    ]
   },
   {
@@ -219,7 +242,7 @@
   {
    "key": "autonomous-vehicles",
    "label_en": "Autonomous vehicles",
-   "label_ar": "المركبات ذاتية القيادة",
+   "label_ar": "المركبات ذاتية التحكم",
    "en": [
     "autonomous vehicle",
     "self-driving",
@@ -227,8 +250,11 @@
     "driverless"
    ],
    "ar": [
+    "مركبة ذاتية التحكم",
+    "المركبات ذاتية التحكم",
     "المركبات ذاتية القيادة",
-    "مركبة ذاتية التحكم"
+    "سيارة ذاتية القيادة",
+    "السيارات ذاتية القيادة"
    ]
   },
   {
@@ -263,21 +289,6 @@
    ]
   },
   {
-   "key": "personal-data",
-   "label_en": "Personal data and privacy",
-   "label_ar": "البيانات الشخصية والخصوصية",
-   "en": [
-    "personal data",
-    "data protection",
-    "privacy"
-   ],
-   "ar": [
-    "حماية البيانات الشخصية",
-    "البيانات الشخصية",
-    "الخصوصية"
-   ]
-  },
-  {
    "key": "transparency",
    "label_en": "Transparency",
    "label_ar": "الشفافية",
@@ -288,7 +299,8 @@
    ],
    "ar": [
     "الشفافية",
-    "قابلية التفسير"
+    "قابلية التفسير",
+    "شفافية"
    ]
   },
   {
@@ -303,7 +315,8 @@
    "ar": [
     "التحيز",
     "التمييز",
-    "العدالة"
+    "العدالة",
+    "تحيز"
    ]
   },
   {
@@ -350,7 +363,8 @@
    "ar": [
     "مراكز البيانات",
     "القدرة الحاسوبية",
-    "الحوسبة الفائقة"
+    "الحوسبة الفائقة",
+    "مركز البيانات"
    ]
   },
   {

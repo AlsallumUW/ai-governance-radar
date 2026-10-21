@@ -147,8 +147,11 @@ function marked(text,rs,from=0,to=text.length){let h='',p=from;
   return h+esc(text.slice(p,to))}
 function cut(text,a,len){let s=Math.max(0,a-70),e=Math.min(text.length,s+len);if(e===text.length)s=Math.max(0,e-len);
   if(s>0){const sp=text.indexOf(' ',s);if(sp>=0&&sp<a)s=sp+1}if(e<text.length){const sp=text.lastIndexOf(' ',e);if(sp>a)e=sp}return[s,e]}
+/* Arabic page: the Arabic summary is always the excerpt (highlighted when the match is in it, otherwise its opening); English page: English first */
 function excerpt(it){
-  const order=AR?['sa','sta','sum','st']:['sum','st','sa','sta'];
+  if(AR&&it.sa){const txt=it.sa,rs=ranges(txt),[s,e]=cut(txt,rs.length?rs[0][0]:0,200);
+    return{k:'sa',html:(s>0?'… ':'')+marked(txt,rs,s,e)+(e<txt.length?' …':'')}}
+  const order=AR?['sta','sum','st']:['sum','st','sa','sta'];
   for(const k of order){const txt=it[k];if(!txt||!Q.length)continue;const rs=ranges(txt);if(!rs.length)continue;
     const[s,e]=cut(txt,rs[0][0],200);return{k,html:(s>0?'… ':'')+marked(txt,rs,s,e)+(e<txt.length?' …':'')}}
   const k=AR&&it.sa?'sa':'sum',txt=it[k]||'';if(!txt)return null;const[s,e]=cut(txt,0,200);return{k,html:esc(txt.slice(s,e))+(e<txt.length?' …':'')}}
@@ -164,14 +167,14 @@ function row(it){
   const issuer=AR&&it.issa?it.issa:it.iss;
   const tl=marked(main,ranges(main));
   const date=`<time datetime="${esc(it.d)}">${esc(fmtD(it.d))}</time>`+(it.via?`<span class="sr-via"><span>${esc(EV[it.via[1]]?EV[it.via[1]][0]:it.via[1])}</span> <span>${esc(fmtD(it.via[0]))}</span></span>`:'');
-  return`<tr><td class="c-j"><span class="lbl">${body?'Body':'Country'}</span><span class="v"><span translate="no">${esc(jName(it.j))}</span><a class="sr-cp" href="${pageURL(it)}">${body?'Body page':'Country page'}</a></span></td>`
+  return`<tr><td class="c-j"><span class="lbl">${body?'Body':'Country'}</span><span class="v"><a class="sr-jl" href="${pageURL(it)}" translate="no">${esc(jName(it.j))}</a></span></td>`
     +`<td class="c-t"><span class="sr-title" translate="no" dir="auto">${it.u?`<a href="${esc(it.u)}" target="_blank" rel="noopener noreferrer">${tl}</a>`:tl}</span>`
     +(second?`<span class="sr-ot" translate="no" dir="auto">${marked(second,ranges(second))}</span>`:'')
     +(ex?`<span class="sr-ex" translate="no" dir="auto"${isAr(it[ex.k])?' lang="ar"':' lang="en"'}>${ex.html}</span>`:'')+'</td>'
     +`<td class="c-i"><span class="lbl">Issuer</span><span class="v" translate="no" dir="auto">${esc(issuer||'')}</span></td>`
     +`<td class="c-d"><span class="lbl">Date</span><span class="v">${date}</span></td>`
-    +`<td class="c-s"><span class="lbl">Status</span><span class="v">${esc(AR?st[2]:st[1])}</span></td></tr>`}
-const HEAD='<table class="sr-table"><thead><tr><th scope="col">Country</th><th scope="col">Title</th><th scope="col">Issuer</th><th scope="col">Date</th><th scope="col">Status</th></tr></thead><tbody>';
+    +`<td class="c-s"><span class="lbl">Legal status</span><span class="v">${esc(AR?st[2]:st[1])}</span></td></tr>`}
+const HEAD='<table class="sr-table"><thead><tr><th scope="col">Country</th><th scope="col">Title</th><th scope="col">Issuer</th><th scope="col">Date</th><th scope="col">Legal status</th></tr></thead><tbody>';
 function rangeLabel(){const r=F.range;
   if(!r)return'All time';if(r==='12m')return'Last 12 months';if(/^\d+$/.test(r)&&r.length<4)return`Last ${r} days`;if(/^\d{4}$/.test(r))return`Year ${r}`;
   const a=F.from&&F.to&&F.from>F.to?F.to:F.from,b=F.from&&F.to&&F.from>F.to?F.from:F.to;
@@ -189,9 +192,20 @@ function render(keepShown){
   more.hidden=n<=SHOWN;$('#srShown').textContent=n>SHOWN?`Showing ${SHOWN.toLocaleString('en')} of ${n.toLocaleString('en')}`:'';
   csvB.disabled=!n;csvB.textContent=`Download CSV (${n.toLocaleString('en')})`;
   /* related terms */
+  /* shown in the page's language only ("and their Arabic/English equivalents" when the other language has some); the search uses them all */
   const also=[];Q.forEach(q=>q.shown.forEach(([nn,raw])=>{if(nn!==q.n&&!Q.some(x=>x.n===nn)&&!also.includes(raw))also.push(raw)}));
-  $('#srAlso').hidden=!also.length;$('#srAlsoList').innerHTML=also.map(a=>`<bdi>${esc(a)}</bdi>`).join(AR?'، ':', ');
-  $$('#srTopics button').forEach(b=>b.setAttribute('aria-pressed',String(Q.some(q=>q.groups.some(g=>g.key===b.dataset.key)))))}
+  const mine=also.filter(a=>isAr(a)===AR),other=also.length>mine.length,list=mine.length?mine:also;
+  $('#srAlso').hidden=!also.length;$('#srAlsoList').innerHTML=list.map(a=>`<bdi>${esc(a)}</bdi>`).join(AR?'، ':', ');
+  const x=$('#srAlsoX');x.hidden=!(mine.length&&other);x.textContent=x.hidden?'':' '+tr(AR?'and their English equivalents':'and their Arabic equivalents');
+  $$('#srTopics button').forEach(b=>b.setAttribute('aria-pressed',String(Q.some(q=>q.groups.some(g=>g.key===b.dataset.key)))));
+  topics()}
+
+/* Suggested topics: the first TOPN groups, then "More topics"; a pressed topic among the others shows them all */
+const TOPN=8;let TOPALL=false;
+function topics(){const bs=$$('#srTopics .sr-topic'),mb=$('#srMoreT');if(!mb)return;
+  const forced=bs.some((b,n)=>n>=TOPN&&b.getAttribute('aria-pressed')==='true'),all=TOPALL||forced;
+  bs.forEach((b,n)=>{b.hidden=n>=TOPN&&!all});
+  mb.hidden=bs.length<=TOPN||forced;mb.setAttribute('aria-expanded',String(all));mb.textContent=tr(all?'Fewer topics':'More topics')}
 
 /* ------------------------------------------------------------ controls */
 function toForm(){qIn.value=F.q;form.elements.mode.value=F.all?'all':'any';$('#srRel').checked=F.rel;$('#srActions').checked=F.actions;
@@ -276,6 +290,7 @@ load().then(()=>{
   const ys=$('#srYear');YEARS.forEach(y=>ys.add(new Option(y,y)));
   $('#srTopics').innerHTML=GROUPS.map(g=>`<button type="button" class="sr-topic" data-key="${esc(g.key)}" aria-pressed="false" translate="no">${esc(g.label)}</button>`).join('');
   $('#srTopics').addEventListener('click',ev=>{const b=ev.target.closest('.sr-topic');if(!b)return;const g=GROUPS.find(x=>x.key===b.dataset.key);F.q=g.q;F.rel=true;toForm();update()});
+  $('#srMoreT').addEventListener('click',()=>{TOPALL=!TOPALL;topics();if(!TOPALL)$('#srMoreT').focus()});
   buildOpts();F=readURL();toForm();render();
   window.RADAR_SEARCH={count:()=>RES.length,state:()=>JSON.parse(JSON.stringify(F)),asOf:()=>ASOF,
     rows:()=>RES.map(it=>({id:it.id,j:it.j,d:it.d,via:it.via,type:J[it.j][2]})),terms:()=>Q.map(q=>q.alts.map(a=>a[1]))};
