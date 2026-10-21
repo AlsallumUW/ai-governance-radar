@@ -131,6 +131,8 @@ def credit_fields(ii):
     if not author:
         if lic in ("Public domain", "CC0 1.0"): author = "Unknown author"
         else: raise ValueError(f"{lic} needs an author credit, and Commons lists none")
+    author = re.sub(r"\s*(You are free to use|Photo portfolio|\(\s*Flickr\s*\)).*$", "", author).strip()
+    author = re.sub(r"^(Fotograf|Photographer|Photo|Author):\s*", "", author, flags=re.I)
     if len(author) > 160: author = author[:159].rsplit(" ", 1)[0] + "…"
     url = v("LicenseUrl").strip()
     if not url and lic == "CC0 1.0": url = "https://creativecommons.org/publicdomain/zero/1.0/"
