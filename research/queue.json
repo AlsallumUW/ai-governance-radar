@@ -1326,5 +1326,1228 @@
       "added": "2026-10-20",
       "why": "Consultation closed 5 Aug 2026; the consultation page now redirects to NCA's Public Consultations list (status Closed, no detail page); no final version on the regulatory documents page as of 20 Oct 2026."
     }
-  ]
+  ],
+  "pending_link_recheck": {
+    "note": "Official links that gave no answer or an error from the test machine in Riyadh on 19-20 Oct 2026 (Updates-link check, PR for Faisal's report). Kept unchanged: most are live official sites that block or drop connections from outside their country or from automated clients. Retry each host once a week (WEEKLY.md step 6); when a URL answers with an error page, fix it under PROTOCOL.md; when it loads, remove it here.",
+    "checked": "2026-10-20",
+    "hosts": [
+      {
+        "host": "andorra-digital.com",
+        "jurisdictions": [
+          "AND"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://andorra-digital.com/actualitat/govern-aprova-codi-etic-intelligencia-artificial"
+        ]
+      },
+      {
+        "host": "apiperiodico.jalisco.gob.mx",
+        "jurisdictions": [
+          "MEX"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://apiperiodico.jalisco.gob.mx/api/newspaper/getAsset?q=newspaper/22418/1721939532-2024-07-25-VI.pdf",
+          "https://apiperiodico.jalisco.gob.mx/api/newspaper/getAsset?q=newspaper/25318/1781723676-2026-06-18-VI.pdf"
+        ]
+      },
+      {
+        "host": "aplicnt.camara.rj.gov.br",
+        "jurisdictions": [
+          "BRA"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://aplicnt.camara.rj.gov.br/APL/Legislativos/contlei.nsf/c5e78996b82f9e0303257960005fdc93/173bf9c68e23e98d03258c9f0064342b?OpenDocument"
+        ]
+      },
+      {
+        "host": "aportecivico.gobiernoelectronico.gob.ec",
+        "jurisdictions": [
+          "ECU"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://aportecivico.gobiernoelectronico.gob.ec/legislation/processes/78/draft_versions/99"
+        ]
+      },
+      {
+        "host": "apps.legislature.ky.gov",
+        "jurisdictions": [
+          "USA"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://apps.legislature.ky.gov/law/acts/24RS/documents/0072.pdf",
+          "https://apps.legislature.ky.gov/law/acts/25RS/documents/0066.pdf"
+        ]
+      },
+      {
+        "host": "atos.cnj.jus.br",
+        "jurisdictions": [
+          "BRA"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://atos.cnj.jus.br/atos/detalhar/6001"
+        ]
+      },
+      {
+        "host": "cait.gov.kw",
+        "jurisdictions": [
+          "KWT"
+        ],
+        "reason": "no response from the test machine (#111 Gulf/Asia browser check and 20 Oct recheck); no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://cait.gov.kw/en/kuwait-strategy/",
+          "https://cait.gov.kw/media/filer_public/3f/b4/3fb49a45-4a78-4489-8898-b68e2bd260ca/kuwait_national_strategy.pdf"
+        ]
+      },
+      {
+        "host": "cbddo.gov.tr",
+        "jurisdictions": [
+          "TUR"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://cbddo.gov.tr/uyzs"
+        ]
+      },
+      {
+        "host": "cjc-ccm.ca",
+        "jurisdictions": [
+          "CAN"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://cjc-ccm.ca/en/news/canadian-judicial-council-issues-guidelines-use-artificial-intelligence-canadian-courts",
+          "https://cjc-ccm.ca/sites/default/files/documents/2024/AI%20Guidelines%20-%20FINAL%20-%202024-09%20-%20EN.pdf"
+        ]
+      },
+      {
+        "host": "cmbhsildownload.cmbh.mg.gov.br",
+        "jurisdictions": [
+          "BRA"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://cmbhsildownload.cmbh.mg.gov.br/silinternet/servico/download/documentoDaNorma?idDocDaNorma=2c907f769006fba801900c33cbac001e",
+          "https://cmbhsildownload.cmbh.mg.gov.br/silinternet/servico/download/documentoDaNorma?idDocDaNorma=2c907f769f7504e9019f89b7030f0053",
+          "https://cmbhsildownload.cmbh.mg.gov.br/silinternet/servico/download/documentoDaNorma?idDocDaNorma=2c907f769f7504e9019f89d37d3b0070",
+          "https://cmbhsildownload.cmbh.mg.gov.br/silinternet/servico/download/documentoDaNorma?idDocDaNorma=2c907f769fbe234101a01f2b2f8c023d"
+        ]
+      },
+      {
+        "host": "cms.thedigital.gov.ua",
+        "jurisdictions": [
+          "UKR"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://cms.thedigital.gov.ua/storage/uploads/files/page/community/docs/%D0%94%D0%BE%D1%80%D0%BE%D0%B6%D0%BD%D1%8F_%D0%BA%D0%B0%D1%80%D1%82%D0%B0_%D0%B7_%D1%80%D0%B5%D0%B3%D1%83%D0%BB%D1%8E%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F_%D0%A8%D0%86_%D0%B2_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%96_compressed.pdf"
+        ]
+      },
+      {
+        "host": "cms.tn.gov.in",
+        "jurisdictions": [
+          "IND"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://cms.tn.gov.in/cms_migrated/document/GO/it_e_25_2024_Ms.pdf"
+        ]
+      },
+      {
+        "host": "codes.ohio.gov",
+        "jurisdictions": [
+          "USA"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://codes.ohio.gov/ohio-revised-code/section-3301.24"
+        ]
+      },
+      {
+        "host": "colaboracion.dnp.gov.co",
+        "jurisdictions": [
+          "COL"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://colaboracion.dnp.gov.co/CDT/Conpes/Econ%C3%B3micos/4144.pdf"
+        ]
+      },
+      {
+        "host": "comunicacionjudicial.jusrionegro.gov.ar",
+        "jurisdictions": [
+          "ARG"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://comunicacionjudicial.jusrionegro.gov.ar/wp-content/uploads/protocolo_IAGen.pdf"
+        ]
+      },
+      {
+        "host": "consultapublica.gov.ao",
+        "jurisdictions": [
+          "AGO"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://consultapublica.gov.ao/consulta/100021",
+          "https://consultapublica.gov.ao/consulta/100027",
+          "https://consultapublica.gov.ao/public/uploads/docs/Ante-Projecto%20de%20Lei%20do%20Governo%20Digital.docx",
+          "https://consultapublica.gov.ao/public/uploads/docs/Projecto%20de%20Revis%C3%A3o%20da%20Lei%20de%20Protec%C3%A7%C3%A3o%20de%20Dados%20-%20Vers%C3%A3o%20Consulta%20P%C3%BAblica.pdf"
+        ]
+      },
+      {
+        "host": "courts.ca.gov",
+        "jurisdictions": [
+          "USA"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://courts.ca.gov/cms/rules/index/ten/rule10_430"
+        ]
+      },
+      {
+        "host": "crtc.gc.ca",
+        "jurisdictions": [
+          "CAN"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://crtc.gc.ca/eng/archive/2025/2025-299.htm"
+        ]
+      },
+      {
+        "host": "csc.gov.ae",
+        "jurisdictions": [
+          "ARE"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://csc.gov.ae/documents/38662/1042755/National+Cyber+Security+Policy+for+Artificial+Intelligence_v1.1.pdf/aeca22fd-f413-f1ac-a01f-14446e62f982?t=1771617654295"
+        ]
+      },
+      {
+        "host": "dit.goa.gov.in",
+        "jurisdictions": [],
+        "reason": "no response from the test machine (#111 Gulf/Asia browser check and 20 Oct recheck)",
+        "urls": [
+          "https://dit.goa.gov.in/assets/books/goa_ai_policy_draft.pdf"
+        ]
+      },
+      {
+        "host": "docs.legis.wisconsin.gov",
+        "jurisdictions": [
+          "USA"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://docs.legis.wisconsin.gov/2023/related/acts/123",
+          "https://docs.legis.wisconsin.gov/2023/related/acts/224",
+          "https://docs.legis.wisconsin.gov/2025/related/acts/34",
+          "https://docs.legis.wisconsin.gov/code/executive_orders/2019_tony_evers/2023-211"
+        ]
+      },
+      {
+        "host": "document.kerala.gov.in",
+        "jurisdictions": [
+          "IND"
+        ],
+        "reason": "no response from the test machine (#111 Gulf/Asia browser check and 20 Oct recheck); server error or security-check page",
+        "urls": [
+          "https://document.kerala.gov.in/documents/governmentorders/govtorder2603202612:11:43.pdf",
+          "https://document.kerala.gov.in/index/en"
+        ]
+      },
+      {
+        "host": "dome.recife.pe.gov.br",
+        "jurisdictions": [
+          "BRA"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://dome.recife.pe.gov.br/upload_dome/DO_036_28.03.26-assinado.pdf"
+        ]
+      },
+      {
+        "host": "dst.gujarat.gov.in",
+        "jurisdictions": [
+          "IND"
+        ],
+        "reason": "no response from the test machine (#111 Gulf/Asia browser check and 20 Oct recheck); no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://dst.gujarat.gov.in/GovernmentResolutions",
+          "https://dst.gujarat.gov.in/Notification",
+          "https://dst.gujarat.gov.in/ViewFile?fileName=EqJ2TlVJgYTCNGhOgjP77hHfmUYD00%E2%9C%BFG%E2%9C%BFnl9KC449JTUEEZNfc6K8dw1mvrIkTES%E2%9C%BFvPdFIwqSygKRrDu5P9EXZiSUXOpuE2TfMB5Y93aKiwrlg2ySmzGmRLUpD%E2%9C%BFGzGMAf5XiUSI7jqTi%E2%9C%BFhIHi13QDQ%E2%99%AC%E2%99%AC",
+          "https://dst.gujarat.gov.in/ViewFile?fileName=GkUtlgH%E2%9C%A4T4H2QRGIP37CVQIV0%E2%9C%A4U9m1mluWaNGa352UJp6P1wG4QMNOqn9tj4wRt2YUclCdj3OQfCA7OpUgQ23NZUo5I8LjCyYGvttmjBlpTCy9QU970X3G3cCjqBiYeSR0ZbsQAQxR0lkTN45BiF%E2%9C%BFw%E2%99%AC%E2%99%AC",
+          "https://dst.gujarat.gov.in/ViewFile?fileName=Q8ocqLTAr%E2%9C%A45WdhWot0m04IIwesjPh4Ilbog8JmkFTsyvMQATsakqMy6b9jpmjPQsH7I3SHg0DB0hiGCcGqsTdSxD%E2%9C%A4ANBxzx7E1YNlnB%E2%9C%A4MQjJ5KjfYpdgCPJK2vfeikumeOxdaSd3raLlY9JbKeGoAg%E2%99%AC%E2%99%AC",
+          "https://dst.gujarat.gov.in/ViewFile?fileName=wKb4HJPjE81gwZNiRxKFzIylsKQNavbyz93vz9J0eK4CTC%E2%9C%A4a2iD%E2%9C%A4mU6KGc4r1sbROivQpq8Qcz%E2%9C%BF9USwWcaHtsZoaAGx1oBucQ21ZQv2XYM19rWJSWpkF1QjATMJoEocuVC4Cz9EMHirR7C%E2%9C%BFQOHpnYA%E2%99%AC%E2%99%AC",
+          "https://dst.gujarat.gov.in/ViewFile?fileName=wR7VtNZFG%E2%9C%BF%E2%9C%BFb9Xz0CsI8oHbz1aqwuKB91H6rqITEiM28F5W2pP%E2%9C%A491SV4u7xrpMXOJpCiTdQrfnAByXw66Kwxkzq2PC%E2%9C%BFGFPBNw4f942SRexbxGJDlQ3KVAjjiK0CSpbPD8FcNM28c9gOfAT50OzMfnA%E2%99%AC%E2%99%AC",
+          "https://dst.gujarat.gov.in/ViewFile?fileName=zZd7wFNCfgJ4kA4128nPFK571D1HezKDzap35i4HK0QA%E2%9C%A4FZD8KQ5x0wLEjFqlmb66glpf5ujIpGJ7I48AYvYs5sr1BGT7TWHzmXnKNz04t%E2%9C%A4i6iPcPZCWk2tbzLzVOmt90CTqfEV7WXreYrVqTv7XYA%E2%99%AC%E2%99%AC"
+        ]
+      },
+      {
+        "host": "gc.nh.gov",
+        "jurisdictions": [
+          "USA"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://gc.nh.gov/rsa/html/LII/507-H/507-H-mrg.htm",
+          "https://gc.nh.gov/rsa/html/LXII/639/639-3.htm",
+          "https://gc.nh.gov/rsa/html/LXIII/664/664-14-c.htm"
+        ]
+      },
+      {
+        "host": "govextra.gov.il",
+        "jurisdictions": [
+          "ISR"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://govextra.gov.il/media/bkwfd2t2/israel-ai-plan_hebrew.pdf"
+        ]
+      },
+      {
+        "host": "home.inai.org.mx",
+        "jurisdictions": [
+          "MEX"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://home.inai.org.mx/?page_id=3418"
+        ]
+      },
+      {
+        "host": "info.sjpd.org",
+        "jurisdictions": [
+          "USA"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://info.sjpd.org/records/pc-13650_library/Department_Orders/2026-015%20Use%20of%20Generative%20AI%20in%20Police%20Report%20Writing.pdf"
+        ]
+      },
+      {
+        "host": "istitlaa.ncc.gov.sa",
+        "jurisdictions": [
+          "SAU"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://istitlaa.ncc.gov.sa/en/Transportation/citc/globalailaw/Pages/default.aspx"
+        ]
+      },
+      {
+        "host": "it.tn.gov.in",
+        "jurisdictions": [
+          "IND"
+        ],
+        "reason": "no response from the test machine (#111 Gulf/Asia browser check and 20 Oct recheck); no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://it.tn.gov.in/en/node/419",
+          "https://it.tn.gov.in/sites/default/files/2021-06/TN_Safe_Ethical_AI_policy_2020.pdf"
+        ]
+      },
+      {
+        "host": "its.idaho.gov",
+        "jurisdictions": [
+          "USA"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://its.idaho.gov/wp-content/uploads/2024/09/AI-PSG_FINALAug2025.pdf"
+        ]
+      },
+      {
+        "host": "jo.gouv.tg",
+        "jurisdictions": [
+          "TGO"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://jo.gouv.tg/node/15411"
+        ]
+      },
+      {
+        "host": "justice.gov.et",
+        "jurisdictions": [
+          "ETH"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://justice.gov.et/en/law/artificial-intelligence-institute-establishment-council-of-ministers-regulation-customs-regulation-council-of-ministers-regulation-no-510-2022/",
+          "https://justice.gov.et/en/law/medemer-university-of-artificial-intelligence-establishment-council-of-ministers-regulation-no-588-2026/",
+          "https://justice.gov.et/en/law/personal-data-protection-proclamation/"
+        ]
+      },
+      {
+        "host": "le.utah.gov",
+        "jurisdictions": [
+          "USA"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://le.utah.gov/~2024/bills/static/SB0149.html",
+          "https://le.utah.gov/~2025/bills/static/HB0452.html",
+          "https://le.utah.gov/~2025/bills/static/SB0226.html",
+          "https://le.utah.gov/~2025/bills/static/SB0332.html",
+          "https://le.utah.gov/~2026/bills/static/HB0273.html",
+          "https://le.utah.gov/~2026/bills/static/HB0276.html",
+          "https://le.utah.gov/~2026/bills/static/HB0320.html"
+        ]
+      },
+      {
+        "host": "legis.alepe.pe.gov.br",
+        "jurisdictions": [
+          "BRA"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://legis.alepe.pe.gov.br/texto.aspx?id=80008&tipo=TEXTOORIGINAL"
+        ]
+      },
+      {
+        "host": "legis.la.gov",
+        "jurisdictions": [
+          "USA"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://legis.la.gov/legis/ViewDocument.aspx?d=1425558",
+          "https://legis.la.gov/legis/ViewDocument.aspx?d=1480202",
+          "https://legis.la.gov/legis/ViewDocument.aspx?d=1481219",
+          "https://legis.la.gov/legis/ViewDocument.aspx?d=1481244"
+        ]
+      },
+      {
+        "host": "legislatie.just.ro",
+        "jurisdictions": [
+          "ROU"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://legislatie.just.ro/Public/DetaliiDocumentAfis/286251"
+        ]
+      },
+      {
+        "host": "legislature.idaho.gov",
+        "jurisdictions": [
+          "USA"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2024/legislation/H0465.pdf",
+          "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2024/legislation/H0575.pdf",
+          "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2024/legislation/H0664.pdf",
+          "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2026/legislation/S1227E1.pdf",
+          "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2026/legislation/S1297E1.pdf"
+        ]
+      },
+      {
+        "host": "ljcp.gov.pk",
+        "jurisdictions": [
+          "PAK"
+        ],
+        "reason": "server error or security-check page",
+        "urls": [
+          "https://ljcp.gov.pk/SliderDetail/NTI1NmRiN2EtM2M2MC00MzgyLWFlNmEtNmQ5ZmU5MWE4MjFh"
+        ]
+      },
+      {
+        "host": "malegislature.gov",
+        "jurisdictions": [
+          "USA"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://malegislature.gov/Laws/SessionLaws/Acts/2024/Chapter118"
+        ]
+      },
+      {
+        "host": "minio-spgg-api.sanpedro.gob.mx",
+        "jurisdictions": [
+          "MEX"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://minio-spgg-api.sanpedro.gob.mx/spgg/files/85600b5b-c86b-4d47-aa0d-5294ff5e44d9.pdf"
+        ]
+      },
+      {
+        "host": "moitt.gov.pk",
+        "jurisdictions": [
+          "PAK"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://moitt.gov.pk/SiteImage/Policies/National%20AI%20Policy%20Consultation%20Draft%20V1%20(1).pdf"
+        ]
+      },
+      {
+        "host": "montreal.ca",
+        "jurisdictions": [
+          "CAN"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://montreal.ca/unites/service-des-technologies-de-linformation"
+        ]
+      },
+      {
+        "host": "ndlegis.gov",
+        "jurisdictions": [
+          "USA"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://ndlegis.gov/assembly/68-2023/regular/documents/23-0346-05000.pdf",
+          "https://ndlegis.gov/assembly/69-2025/regular/documents/25-0034-05000.pdf",
+          "https://ndlegis.gov/assembly/69-2025/regular/documents/25-0529-05000.pdf",
+          "https://ndlegis.gov/assembly/69-2025/regular/documents/25-0908-04000.pdf",
+          "https://ndlegis.gov/assembly/69-2025/regular/documents/25-1064-05000.pdf"
+        ]
+      },
+      {
+        "host": "nebraskalegislature.gov",
+        "jurisdictions": [
+          "USA"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://nebraskalegislature.gov/FloorDocs/108/PDF/Slip/LB1074.pdf",
+          "https://nebraskalegislature.gov/FloorDocs/109/PDF/Slip/LB383.pdf",
+          "https://nebraskalegislature.gov/FloorDocs/109/PDF/Slip/LB525.pdf"
+        ]
+      },
+      {
+        "host": "oipc.ab.ca",
+        "jurisdictions": [
+          "CAN"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://oipc.ab.ca/wp-content/uploads/2025/08/AI-Comments-from-the-OIPC-Regarding-Responsible-AI-Governance-in-Alberta-July-15-2025.pdf"
+        ]
+      },
+      {
+        "host": "ojk.go.id",
+        "jurisdictions": [
+          "IDN"
+        ],
+        "reason": "no response from the test machine (#111 Gulf/Asia browser check and 20 Oct recheck); no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://ojk.go.id/id/Publikasi/Roadmap-dan-Pedoman/ITSK/Documents/Panduan%20Kode%20Etik%20Kecerdasan%20Buatan%20AI%20Yang%20Bertanggungjawab%20dan%20Terpercaya%20di%20Industri%20Teknologi%20Finansial.pdf",
+          "https://ojk.go.id/id/Publikasi/Roadmap-dan-Pedoman/ITSK/Pages/Panduan-Kode-Etik-Kecerdasan-Buatan-(AI)-yang-Bertanggung-Jawab-dan-Terpercaya-di-Industri-Teknologi-Finansial.aspx",
+          "https://ojk.go.id/id/Publikasi/Roadmap-dan-Pedoman/Perbankan/Documents/Tata%20Kelola%20Kecerdasan%20Artifisial%20Perbankan%20Indonesia.pdf",
+          "https://ojk.go.id/id/Publikasi/Roadmap-dan-Pedoman/Perbankan/Pages/Tata-Kelola-Kecerdasan-Artifisial-Perbankan-Indonesia.aspx"
+        ]
+      },
+      {
+        "host": "pris.government.bg",
+        "jurisdictions": [
+          "BGR"
+        ],
+        "reason": "server error or security-check page",
+        "urls": [
+          "https://pris.government.bg/document/deef8dca4eba715a35b3dc266ae23adb/3ac6276165987a941aaa4305496b3e54"
+        ]
+      },
+      {
+        "host": "pub.njleg.gov",
+        "jurisdictions": [
+          "USA"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://pub.njleg.gov/Bills/2022/PL23/266_.HTM",
+          "https://pub.njleg.gov/Bills/2024/PL25/40_.HTM"
+        ]
+      },
+      {
+        "host": "qbz.gov.al",
+        "jurisdictions": [
+          "ALB"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://qbz.gov.al/eli/ligj/2023/06/15/43",
+          "https://qbz.gov.al/eli/vendim/2022/06/01/370",
+          "https://qbz.gov.al/eli/vendim/2024/07/24/479",
+          "https://qbz.gov.al/eli/vendim/2025/12/03/733"
+        ]
+      },
+      {
+        "host": "sccr.ir",
+        "jurisdictions": [
+          "IRN"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://sccr.ir/pro/3432/%D8%AA%D8%B4%DA%A9%DB%8C%D9%84-%D8%B4%D9%88%D8%B1%D8%A7%DB%8C-%D9%85%D9%84%DB%8C-%D8%B1%D8%A7%D9%87%D8%A8%D8%B1%DB%8C-%D9%88-%D8%AA%D8%A3%D8%B3%DB%8C%D8%B3-%D8%B3%D8%A7%D8%B2%D9%85%D8%A7%D9%86-%D9%85%D9%84%DB%8C-%D9%87%D9%88%D8%B4-%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C-"
+        ]
+      },
+      {
+        "host": "scpd.gov.kw",
+        "jurisdictions": [
+          "KWT"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://scpd.gov.kw/archive/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D9%85%D8%A4%D8%B4%D8%B1%20%D8%A7%D9%84%D8%AC%D8%A7%D9%87%D8%B2%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D9%8A%D8%A9%20%D9%84%D9%84%D8%B0%D9%83%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A%202022.pdf"
+        ]
+      },
+      {
+        "host": "spdp.gob.ec",
+        "jurisdictions": [
+          "ECU"
+        ],
+        "reason": "error page (404) on 19-20 Oct; site unreachable when rechecked, so no replacement found yet",
+        "urls": [
+          "https://spdp.gob.ec/resol_ia_02_2026/",
+          "https://spdp.gob.ec/wp-content/uploads/2026/02/ResolIA.pdf"
+        ]
+      },
+      {
+        "host": "startup.telangana.gov.in",
+        "jurisdictions": [
+          "IND"
+        ],
+        "reason": "no response from the test machine (#111 Gulf/Asia browser check and 20 Oct recheck); no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://startup.telangana.gov.in/government-policies/",
+          "https://startup.telangana.gov.in/wp-content/uploads/2025/02/AI-framework-1.pdf"
+        ]
+      },
+      {
+        "host": "webserver.rilegislature.gov",
+        "jurisdictions": [
+          "USA"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://webserver.rilegislature.gov/PublicLaws/law24/law24430.htm",
+          "https://webserver.rilegislature.gov/PublicLaws/law25/law25409.htm",
+          "https://webserver.rilegislature.gov/PublicLaws/law26/law26199.htm",
+          "https://webserver.rilegislature.gov/PublicLaws/law26/law26374.htm",
+          "https://webserver.rilegislature.gov/PublicLaws/law26/law26376.htm"
+        ]
+      },
+      {
+        "host": "webstore.kebs.org",
+        "jurisdictions": [
+          "KEN"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://webstore.kebs.org/index.php?route=product/product&product_id=19208"
+        ]
+      },
+      {
+        "host": "www.almg.gov.br",
+        "jurisdictions": [
+          "BRA"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.almg.gov.br/legislacao-mineira/texto/DLB/2873/2025/"
+        ]
+      },
+      {
+        "host": "www.cas.go.jp",
+        "jurisdictions": [
+          "JPN"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.cas.go.jp/jp/seisaku/jinkouchinou/pdf/aigensoku.pdf"
+        ]
+      },
+      {
+        "host": "www.cert-in.org.in",
+        "jurisdictions": [
+          "IND"
+        ],
+        "reason": "no response from the test machine (#111 Gulf/Asia browser check and 20 Oct recheck); no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.cert-in.org.in/Downloader?pageid=6&type=2&fileName=CIGU-2026-0003.pdf",
+          "https://www.cert-in.org.in/PDF/Blueprint_for_Defending_against_AI_Assisted_Exploitataion.pdf",
+          "https://www.cert-in.org.in/PDF/TechnicalGuidelines-on-SBOM,QBOM&CBOM,AIBOM_and_HBOM_ver2.0.pdf",
+          "https://www.cert-in.org.in/s2cMainServlet?pageid=GUIDLNVIEW02&refcode=CISG-2024-02",
+          "https://www.cert-in.org.in/s2cMainServlet?pageid=GUIDLNVIEW02&refcode=CISG-2026-02",
+          "https://www.cert-in.org.in/s2cMainServlet?pageid=GUIDLNVIEW02&refcode=CISG-2026-03",
+          "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2023-0015",
+          "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2024-0060",
+          "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2025-0013",
+          "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0020"
+        ]
+      },
+      {
+        "host": "www.chilecompra.cl",
+        "jurisdictions": [
+          "CHL"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.chilecompra.cl/wp-content/uploads/2026/03/Directiva-44-Ciencia-de-Datos-IA.pdf"
+        ]
+      },
+      {
+        "host": "www.csa.gov.sg",
+        "jurisdictions": [
+          "SGP"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.csa.gov.sg/resources/publications/addendum-on-securing-ai-systems/"
+        ]
+      },
+      {
+        "host": "www.cyber.gov.au",
+        "jurisdictions": [
+          "AUS"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.cyber.gov.au/business-government/secure-design/artificial-intelligence/ai-data-security",
+          "https://www.cyber.gov.au/business-government/secure-design/artificial-intelligence/careful-adoption-of-agentic-ai-services",
+          "https://www.cyber.gov.au/business-government/secure-design/artificial-intelligence/deploying-ai-systems-securely",
+          "https://www.cyber.gov.au/business-government/secure-design/artificial-intelligence/engaging-with-artificial-intelligence",
+          "https://www.cyber.gov.au/business-government/secure-design/operational-technology-environments/principles-for-the-secure-integration-of-artificial-intelligence-in-operational-technology"
+        ]
+      },
+      {
+        "host": "www.digital.gov.au",
+        "jurisdictions": [
+          "AUS"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.digital.gov.au/ai/ai-in-government-policy",
+          "https://www.digital.gov.au/ai/ai-in-government-policy/standard-ai-transparency-statements",
+          "https://www.digital.gov.au/ai/impact-assessment-tool",
+          "https://www.digital.gov.au/ai/impact-assessment-tool/guidance",
+          "https://www.digital.gov.au/policy/ai/AI-POC-to-scale",
+          "https://www.digital.gov.au/policy/ai/AI-technical-standard",
+          "https://www.digital.gov.au/policy/ai/agency-guidance-public-generative-ai",
+          "https://www.digital.gov.au/policy/ai/agentic-ai-addendum",
+          "https://www.digital.gov.au/policy/ai/australian-public-service-ai-plan-2025",
+          "https://www.digital.gov.au/policy/ai/policy2",
+          "https://www.digital.gov.au/policy/ai/staff-guidance-public-generative-ai"
+        ]
+      },
+      {
+        "host": "www.digitalservice.metro.tokyo.lg.jp",
+        "jurisdictions": [],
+        "reason": "no response from the test machine (#111 Gulf/Asia browser check and 20 Oct recheck)",
+        "urls": [
+          "https://www.digitalservice.metro.tokyo.lg.jp/business/ai/ai-strategy"
+        ]
+      },
+      {
+        "host": "www.diputados.gob.mx",
+        "jurisdictions": [
+          "MEX"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGPDPPSO.pdf"
+        ]
+      },
+      {
+        "host": "www.education.gov.au",
+        "jurisdictions": [
+          "AUS"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.education.gov.au/schooling/resources/australian-framework-generative-artificial-intelligence-ai-schools"
+        ]
+      },
+      {
+        "host": "www.energy.gov",
+        "jurisdictions": [
+          "USA"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.energy.gov/cio/articles/department-energy-doe-artificial-intelligence-ai-compliance-plan"
+        ]
+      },
+      {
+        "host": "www.epa.gov",
+        "jurisdictions": [
+          "USA"
+        ],
+        "reason": "server error or security-check page",
+        "urls": [
+          "https://www.epa.gov/system/files/documents/2025-10/epa_ai_strategy_plan_final2025.pdf"
+        ]
+      },
+      {
+        "host": "www.euskadi.eus",
+        "jurisdictions": [
+          "ESP"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.euskadi.eus/contenidos/informacion/estrategia_ia/es_def/adjuntos/Estrategia-de-Gobierno-de-la-IA-CAE_VFinal.pdf",
+          "https://www.euskadi.eus/manifiesto-etico/principios-de-los-sistemas-de-inteligencia-artificial/web01-a3data/es/"
+        ]
+      },
+      {
+        "host": "www.fcfcoa.gov.au",
+        "jurisdictions": [
+          "AUS"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.fcfcoa.gov.au/pd/pd-ai"
+        ]
+      },
+      {
+        "host": "www.fiji.gov.fj",
+        "jurisdictions": [
+          "FJI"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.fiji.gov.fj/decisions-made-at-the-5th-cabinet-meeting-held-on-april-01-2025/",
+          "https://www.fiji.gov.fj/deputy-prime-minister-manoa-kamikamicas-speech-at-the-launch-of-the-national-development-plan-2025-2029-and-vision-2050/",
+          "https://www.fiji.gov.fj/wp-content/uploads/2026/04/NPDF_final-9.pdf"
+        ]
+      },
+      {
+        "host": "www.finance.gov.au",
+        "jurisdictions": [
+          "AUS"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.finance.gov.au/government/public-data/data-and-digital-ministers-meeting/national-framework-assurance-artificial-intelligence-government"
+        ]
+      },
+      {
+        "host": "www.hangzhou.gov.cn",
+        "jurisdictions": [],
+        "reason": "error page (404)",
+        "urls": [
+          "https://www.hangzhou.gov.cn/art/2025/6/20/art_1229063381_1852124.html"
+        ]
+      },
+      {
+        "host": "www.hcnl.gob.mx",
+        "jurisdictions": [
+          "MEX"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.hcnl.gob.mx/trabajo_legislativo/leyes/pdf/LEY%20DE%20ACCESO%20DE%20LAS%20MUJERES%20A%20UNA%20VIDA%20LIBRE%20DE%20VIOLENCIA.pdf",
+          "https://www.hcnl.gob.mx/trabajo_legislativo/leyes/pdf/LEY%20DE%20CIENCIA%20TECNOLOGIA%20E%20INNOVACION%20DEL%20ESTADO%20DE%20NUEVO%20LEON.pdf",
+          "https://www.hcnl.gob.mx/trabajo_legislativo/leyes/pdf/LEY%20DE%20EDUCACION%20PARA%20EL%20ESTADO%20DE%20NUEVO%20LEON.pdf"
+        ]
+      },
+      {
+        "host": "www.ilga.gov",
+        "jurisdictions": [
+          "USA"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.ilga.gov/Documents/Legislation/PublicActs/103/PDF/103-0825.pdf",
+          "https://www.ilga.gov/Legislation/PublicActs/View/095-0994",
+          "https://www.ilga.gov/Legislation/PublicActs/View/101-0260",
+          "https://www.ilga.gov/Legislation/PublicActs/View/103-0451",
+          "https://www.ilga.gov/Legislation/PublicActs/View/103-0804",
+          "https://www.ilga.gov/Legislation/PublicActs/View/103-0836",
+          "https://www.ilga.gov/Legislation/PublicActs/View/104-0054"
+        ]
+      },
+      {
+        "host": "www.in.gov.br",
+        "jurisdictions": [
+          "BRA"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.in.gov.br/en/web/dou/-/portaria-gm-n-4.617-de-6-de-abril-de-2021-*-313212172",
+          "https://www.in.gov.br/en/web/dou/-/portaria-gm-n-4.617-de-6-de-abril-de-2021-312911562",
+          "https://www.in.gov.br/en/web/dou/-/portaria-mcti-n-4.979-de-13-de-julho-de-2021-332164912",
+          "https://www.in.gov.br/en/web/dou/-/portaria-mgi-n-3.485-de-24-de-abril-de-2026-702070785",
+          "https://www.in.gov.br/en/web/dou/-/portaria-n-3.113-de-19-de-setembro-de-2025-657183391",
+          "https://www.in.gov.br/en/web/dou/-/portaria-sgd/mgi-n-473-de-20-de-janeiro-de-2026-682795741",
+          "https://www.in.gov.br/en/web/dou/-/portaria-sgd/mgi-n-5.395-de-1-de-julho-de-2026-716377346",
+          "https://www.in.gov.br/en/web/dou/-/portaria-sgd/mgi-n-6.618-de-25-de-setembro-de-2024-586759348",
+          "https://www.in.gov.br/en/web/dou/-/resolucao-citdigital-n-2-de-8-de-maio-de-2025-628599624",
+          "https://www.in.gov.br/en/web/dou/-/resolucao-citdigital-n-3-de-10-de-junho-de-2025-639315548",
+          "https://www.in.gov.br/web/dou/-/despacho-decisorio-n-20/2024/pr/anpd-569297245",
+          "https://www.in.gov.br/web/dou/-/despacho-decisorio-n-33/2024/pr/anpd-581192714",
+          "https://www.in.gov.br/web/dou/-/edital-n-2/2025-638543844",
+          "https://www.in.gov.br/web/dou/-/portaria-carf/mf-n-142-de-27-de-marco-de-2026-696063041",
+          "https://www.in.gov.br/web/dou/-/portaria-coaf-n-4-de-20-de-marco-de-2025-619305554",
+          "https://www.in.gov.br/web/dou/-/portaria-gab-chec-md-n-3.742-de-13-de-julho-de-2026-718721093",
+          "https://www.in.gov.br/web/dou/-/portaria-gm/mmulheres-n-134-de-22-de-setembro-de-2026-733722966",
+          "https://www.in.gov.br/web/dou/-/portaria-mapa-n-859-de-13-de-novembro-de-2025-668949723",
+          "https://www.in.gov.br/web/dou/-/portaria-n-1.522-de-1-de-setembro-de-2025-652650114",
+          "https://www.in.gov.br/web/dou/-/portaria-rfb-n-647-de-5-de-fevereiro-de-2026-686826469",
+          "https://www.in.gov.br/web/dou/-/resolucao-cd/anpd-n-30-de-23-de-dezembro-de-2025-677947163",
+          "https://www.in.gov.br/web/dou/-/resolucao-de-diretoria-colegiada-rdc-n-657-de-24-de-marco-de-2022-389603457"
+        ]
+      },
+      {
+        "host": "www.industry.gov.au",
+        "jurisdictions": [
+          "AUS"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.industry.gov.au/node/92040",
+          "https://www.industry.gov.au/publications/australian-government-response-senate-select-committee-adopting-artificial-intelligence-ai-report",
+          "https://www.industry.gov.au/publications/australias-ai-ethics-principles",
+          "https://www.industry.gov.au/publications/bletchley-declaration-countries-attending-ai-safety-summit-1-2-november-2023",
+          "https://www.industry.gov.au/publications/expectations-data-centres-and-ai-infrastructure-developers",
+          "https://www.industry.gov.au/publications/guidance-for-ai-adoption",
+          "https://www.industry.gov.au/publications/memorandum-understanding-artificial-intelligence-safety-collaboration-between-australia-and-canada",
+          "https://www.industry.gov.au/publications/memorandum-understanding-cooperation-artificial-intelligence-between-australia-and-singapore",
+          "https://www.industry.gov.au/publications/national-ai-plan",
+          "https://www.industry.gov.au/publications/seoul-declaration-countries-attending-ai-seoul-summit-21-22-may-2024",
+          "https://www.industry.gov.au/publications/voluntary-ai-safety-standard"
+        ]
+      },
+      {
+        "host": "www.journal-officiel.ga",
+        "jurisdictions": [
+          "GAB"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.journal-officiel.ga/20085-025-2023-/",
+          "https://www.journal-officiel.ga/20087-027-2023-/",
+          "https://www.journal-officiel.ga/21995-0006-pr-2025-/",
+          "https://www.journal-officiel.ga/22404-0011-pr-2026-/",
+          "https://www.journal-officiel.ga/3344-001-2011-/"
+        ]
+      },
+      {
+        "host": "www.judiciary.uk",
+        "jurisdictions": [
+          "GBR"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.judiciary.uk/guidance-and-resources/artificial-intelligence-ai-judicial-guidance-october-2025/",
+          "https://www.judiciary.uk/wp-content/uploads/2025/10/Artificial-Intelligence-AI-Guidance-for-Judicial-Office-Holders-2.pdf"
+        ]
+      },
+      {
+        "host": "www.knf.gov.pl",
+        "jurisdictions": [
+          "POL"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.knf.gov.pl/?articleId=99168&p_id=18"
+        ]
+      },
+      {
+        "host": "www.law.go.kr",
+        "jurisdictions": [],
+        "reason": "no response from the test machine (#111 Gulf/Asia browser check and 20 Oct recheck)",
+        "urls": [
+          "https://www.law.go.kr/법령/인공지능발전과신뢰기반조성등에관한기본법"
+        ]
+      },
+      {
+        "host": "www.legislabahia.ba.gov.br",
+        "jurisdictions": [
+          "BRA"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.legislabahia.ba.gov.br/documentos/decreto-no-23792-de-17-de-junho-de-2025"
+        ]
+      },
+      {
+        "host": "www.legislation.gov.au",
+        "jurisdictions": [
+          "AUS"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.legislation.gov.au/C2004A03712/latest/text",
+          "https://www.legislation.gov.au/C2024A00128/asmade/text"
+        ]
+      },
+      {
+        "host": "www.legislature.mi.gov",
+        "jurisdictions": [
+          "USA"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.legislature.mi.gov/documents/2023-2024/publicact/htm/2023-PA-0263.htm",
+          "https://www.legislature.mi.gov/documents/2023-2024/publicact/htm/2023-PA-0265.htm",
+          "https://www.legislature.mi.gov/documents/2025-2026/publicact/htm/2025-PA-0011.htm"
+        ]
+      },
+      {
+        "host": "www.mcit.gov.qa",
+        "jurisdictions": [
+          "QAT"
+        ],
+        "reason": "server error or security-check page",
+        "urls": [
+          "https://www.mcit.gov.qa/wp-content/uploads/sites/4/2025/02/national_artificial_intelligence_strategy_for_qatar_2019_en.pdf"
+        ]
+      },
+      {
+        "host": "www.meti.go.jp",
+        "jurisdictions": [
+          "JPN"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.meti.go.jp/policy/mono_info_service/connected_industries/sharing_and_utilization/20260409001-1.pdf",
+          "https://www.meti.go.jp/shingikai/mono_info_service/ai_shakai_jisso/20260331_report.html"
+        ]
+      },
+      {
+        "host": "www.metro.tokyo.lg.jp",
+        "jurisdictions": [
+          "JPN"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.metro.tokyo.lg.jp/information/press/2026/03/2026033059"
+        ]
+      },
+      {
+        "host": "www.micitt.go.cr",
+        "jurisdictions": [
+          "CRI"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.micitt.go.cr/sites/default/files/2024-10/Estrategia%20Nacional%20de%20Inteligencia%20Artificial%20de%20Costa%20Rica%20ESP.pdf"
+        ]
+      },
+      {
+        "host": "www.mineducacion.gov.co",
+        "jurisdictions": [
+          "COL"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.mineducacion.gov.co/1780/articles-429623_Decalogo_inteligencia_artificial.pdf"
+        ]
+      },
+      {
+        "host": "www.mlaw.gov.sg",
+        "jurisdictions": [],
+        "reason": "no response from the test machine (#111 Gulf/Asia browser check and 20 Oct recheck)",
+        "urls": [
+          "https://www.mlaw.gov.sg/launch-of-guide-for-using-generative-artificial-intelligence-in-the-legal-sector/"
+        ]
+      },
+      {
+        "host": "www.moj.go.jp",
+        "jurisdictions": [
+          "JPN"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.moj.go.jp/content/001468286.pdf",
+          "https://www.moj.go.jp/housei/shihouseido/housei10_00134.html"
+        ]
+      },
+      {
+        "host": "www.nsf.gov",
+        "jurisdictions": [
+          "USA"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.nsf.gov/policies/ai/merit-review"
+        ]
+      },
+      {
+        "host": "www.oregonlegislature.gov",
+        "jurisdictions": [
+          "USA"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.oregonlegislature.gov/bills_laws/lawsstatutes/2023orlaw0369.pdf",
+          "https://www.oregonlegislature.gov/bills_laws/lawsstatutes/2024orLaw0062.pdf",
+          "https://www.oregonlegislature.gov/bills_laws/lawsstatutes/2025orlaw0116.pdf",
+          "https://www.oregonlegislature.gov/bills_laws/lawsstatutes/2025orlaw0378.pdf",
+          "https://www.oregonlegislature.gov/bills_laws/lawsstatutes/2025orlaw0396.pdf",
+          "https://www.oregonlegislature.gov/bills_laws/lawsstatutes/2026orlaw0085.pdf"
+        ]
+      },
+      {
+        "host": "www.palegis.us",
+        "jurisdictions": [
+          "USA"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.palegis.us/statutes/unconsolidated/law-information/view-statute?txtType=PDF&SessYr=2024&ActNum=0125.&SessInd=0",
+          "https://www.palegis.us/statutes/unconsolidated/law-information/view-statute?txtType=PDF&SessYr=2025&ActNum=0035.&SessInd=0"
+        ]
+      },
+      {
+        "host": "www.protectivesecurity.gov.au",
+        "jurisdictions": [
+          "AUS"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.protectivesecurity.gov.au/publications-library/direction-001-2025-deepseek-products-applications-and-web-services"
+        ]
+      },
+      {
+        "host": "www.ris.bka.gv.at",
+        "jurisdictions": [
+          "AUT"
+        ],
+        "reason": "server error or security-check page",
+        "urls": [
+          "https://www.ris.bka.gv.at/Dokument.wxe?Abfrage=Begut&Dokumentnummer=BEGUT_AD6D75E6_E747_4303_B1F5_E9A0B7DA7A93",
+          "https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2024_I_6/BGBLA_2024_I_6.pdf",
+          "https://www.ris.bka.gv.at/Dokumente/LgblAuth/LGBLA_OB_20250612_46/LGBLA_OB_20250612_46.pdf",
+          "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10001597",
+          "https://www.ris.bka.gv.at/eli/bgbl/I/2020/87/20200724",
+          "https://www.ris.bka.gv.at/eli/bgbl/I/2021/25/20210122",
+          "https://www.ris.bka.gv.at/eli/bgbl/I/2024/50/20240430",
+          "https://www.ris.bka.gv.at/eli/bgbl/I/2024/6",
+          "https://www.ris.bka.gv.at/eli/bgbl/I/2024/6/20240226",
+          "https://www.ris.bka.gv.at/eli/bgbl/I/2026/76/20260729",
+          "https://www.ris.bka.gv.at/eli/bgbl/II/2018/278/20181109",
+          "https://www.ris.bka.gv.at/eli/bgbl/II/2024/297/20241031"
+        ]
+      },
+      {
+        "host": "www.safetyandquality.gov.au",
+        "jurisdictions": [
+          "AUS"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.safetyandquality.gov.au/resources/ai-clinical-use-guide"
+        ]
+      },
+      {
+        "host": "www.scai.gov.sg",
+        "jurisdictions": [
+          "SGP"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.scai.gov.sg/2025/scai2025-report/"
+        ]
+      },
+      {
+        "host": "www.scpd.gov.kw",
+        "jurisdictions": [
+          "KWT"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.scpd.gov.kw/archive/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1%20%D9%85%D8%A4%D8%B4%D8%B1%20%D8%A7%D9%84%D8%AC%D8%A7%D9%87%D8%B2%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D9%8A%D8%A9%20%D9%84%D9%84%D8%B0%D9%83%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A%202023.pdf"
+        ]
+      },
+      {
+        "host": "www.spdp.gob.ec",
+        "jurisdictions": [
+          "ECU"
+        ],
+        "reason": "server error or security-check page",
+        "urls": [
+          "https://www.spdp.gob.ec/resoluciones/"
+        ]
+      },
+      {
+        "host": "www.telecom.gouv.ci",
+        "jurisdictions": [
+          "CIV"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.telecom.gouv.ci/new/uploads/publications/174196670372.pdf",
+          "https://www.telecom.gouv.ci/new/uploads/publications/174196707541.pdf"
+        ]
+      },
+      {
+        "host": "www.telecomunicaciones.gob.ec",
+        "jurisdictions": [
+          "ECU"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.telecomunicaciones.gob.ec/wp-content/uploads/2021/06/Ley-Organica-de-Datos-Personales.pdf",
+          "https://www.telecomunicaciones.gob.ec/wp-content/uploads/2023/12/mintel-mintel-2023-0019-1-1.pdf",
+          "https://www.telecomunicaciones.gob.ec/wp-content/uploads/2026/02/Registro_Oficial_Ano_l_Primer_Suplemento_No_206_del_19_de_enero_de_2026.pdf"
+        ]
+      },
+      {
+        "host": "www.tga.gov.au",
+        "jurisdictions": [
+          "AUS"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.tga.gov.au/news/news-articles/outcome-digital-scribe-review",
+          "https://www.tga.gov.au/products/medical-devices/software-and-artificial-intelligence-ai/overview/types-software-based-medical-devices/digital-scribes"
+        ]
+      },
+      {
+        "host": "www.uradni-list.si",
+        "jurisdictions": [
+          "SVN"
+        ],
+        "reason": "server error or security-check page",
+        "urls": [
+          "https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2022-01-4187/zakon-o-varstvu-osebnih-podatkov-zvop-2",
+          "https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2025-01-3035/zakon-o-izvajanju-uredbe-eu-o-dolocitvi-harmoniziranih-pravil-o-umetni-inteligenci-ziudhpui"
+        ]
+      },
+      {
+        "host": "www.yucatan.gob.mx",
+        "jurisdictions": [
+          "MEX"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://www.yucatan.gob.mx/docs/diario_oficial/diarios/2026/2026-07-28_1.pdf"
+        ]
+      },
+      {
+        "host": "www8.tjmg.jus.br",
+        "jurisdictions": [
+          "BRA"
+        ],
+        "reason": "server error or security-check page",
+        "urls": [
+          "https://www8.tjmg.jus.br/institucional/at/pdf/pc18342026.pdf"
+        ]
+      },
+      {
+        "host": "zakon.rada.gov.ua",
+        "jurisdictions": [
+          "UKR"
+        ],
+        "reason": "no response from the test machine (timeout, reset or DNS)",
+        "urls": [
+          "https://zakon.rada.gov.ua/laws/show/1351-2024-%D1%80",
+          "https://zakon.rada.gov.ua/laws/show/1556-2020-%D1%80",
+          "https://zakon.rada.gov.ua/laws/show/438-2021-%D1%80"
+        ]
+      }
+    ]
+  }
 }

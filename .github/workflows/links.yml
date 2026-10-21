@@ -23,5 +23,5 @@ jobs:
           if git diff --quiet; then echo "No link changes"; exit 0; fi
           B="links/$(date +%F)"
           git config user.name "aigr-bot"; git config user.email "aigr-bot@users.noreply.github.com"
-          git checkout -b "$B" && git commit -am "Link check $(date +%F)" && git push -u origin "$B"
+          git checkout -b "$B" && git add -A data research/link_check_events.json && git commit -m "Link check $(date +%F)" && git push -u origin "$B"
           gh pr create --title "Link check $(date +%F)" --body "Automated weekly link check. Review status changes in the Changes tab of each country, then merge."
