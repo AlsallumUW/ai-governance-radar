@@ -57,7 +57,7 @@
         "public-sector"
       ],
       "legal_status": "consultation_draft",
-      "lifecycle": "consultation",
+      "lifecycle": "consultation_closed",
       "publication_date": "2026-07",
       "current_status": "Draft dated July 2026, released for public participation by the State Department for ICT and the Digital Economy; the public notice set a 4 August 2026 deadline and a ministry news item of 5 August 2026 says the deadline was extended to 11 August 2026. Not adopted as of 2026-10-13 (no official adoption notice found on ict.go.ke).",
       "summary": "Draft national policy (cover: 'Kenya Artificial Intelligence and Other Emerging Technologies Policy, July 2026') setting a cross-sector framework for the governance, development, deployment and use of AI and other emerging technologies, building on the AI Strategy 2025-2030, the Digital Master Plan and the Data Protection Act. It adopts a risk-based, full-lifecycle approach with stronger assessment, documentation and oversight duties for high-risk systems, applies to public and private actors in Kenya, foreign providers whose AI outputs are used in Kenya and all public-sector AI procurement, and proposes an AI and other Emerging Technologies Council for strategic oversight. Sector regulators would issue aligned sectoral guidelines and standards, and new legislation is proposed to formalise the framework.",
@@ -73,7 +73,8 @@
       "source_id": "s-686d196ce435",
       "organization_id": "o-23b063985a8d",
       "evidence_reference": "curl (browser user agent, --max-time 60, CA bundle completed with the Sectigo DV R36 intermediate certificate fetched from the issuer's AIA URL; verification on): consultation page and the full draft policy PDF (July 2026) read with pdftotext on 2026-10-13; deadline extension read on the ministry news page of 5 August 2026; 4 August 2026 deadline on the official public notice (gaa.go.ke).",
-      "category": "drafts"
+      "category": "drafts",
+      "consultation_closes": "2026-08-11"
     },
     {
       "jurisdiction_id": "KEN",
@@ -339,7 +340,8 @@
       "source_id": "s-d10a7f58d893",
       "organization_id": "o-d63539f40fc0",
       "evidence_reference": "curl (browser user agent, --max-time 60): CBK consultation page read; Guidance_Notes.zip downloaded from centralbank.go.ke and 'Draft Guidance Note on Artificial Intelligence.pdf' (cover dated August 2026) read in full with pdftotext; CBK public notice of 10 September 2026 read (comments by 7 November 2026)",
-      "category": "sectoral"
+      "category": "sectoral",
+      "consultation_closes": "2026-11-07"
     },
     {
       "jurisdiction_id": "KEN",
@@ -928,6 +930,21 @@
     "technical_note": "Coverage note (original): Technical review notes: thin pass 2026-10-13 (second, longer deep review: up to 45 minutes, one agent, national level only, PROTOCOL §6; every existing record re-checked; each ministry and sector regulator searched one by one). Thin pass 2026-10-13: 6 existing records re-checked; i-8f4306ef802f, i-4fc0af5ceda3, i-b1675ab3e91d now read in full from ict.go.ke (server omits its Sectigo intermediate certificate; intermediate fetched from the issuer's published URL, TLS verification kept on). Final strategy kept at 2025-03 from cover (ministry launch news item dated 27 Mar 2025). Added ODPC Guidance Note on AI (July 2026; status from PDF and ODPC page; consultation 1-17 Aug 2026 reported only by aggregators), PPB Guideline on Medical Device Software (Feb 2026, s. 2.8 AI-enabled devices), KEBS KS 3007:2025 (store page only). Not reached: kenyalaw.org (403), icta.go.ke (TLS/503), cue.or.ke, health.go.ke. Senate Bills No. 4 of 2026 still at first reading per parliament.go.ke. Convention 108: not a party. Units covered: Law: Data Protection Act 2019 and Data Protection (General) Regulations 2021 re-read from ODPC-hosted gazette copies (unchanged). Kenya Law / Kenya Gazette portal (kenyalaw.org, new.kenyalaw.org) returned HTTP 403 to curl and WebFetch, so no gazette AI search and no amendment history. Parliament: Senate Artificial Intelligence Bill 2026 (Senate Bills No. 4) still pending (lead kept; first reading 2 April 2026 per digest); no deepfake bill or data protection amendment bill found; National Assembly order paper of 13 October 2026 lists only a requested statement on AI regulation.; Government: MICDE (ict.go.ke, now reachable): final AI Strategy 2025-2030, January 2025 draft strategy and July 2026 draft AI and Emerging Technologies Policy all read in full; AI Strategy Implementation Roadmap found (lead, undated); Government Enterprise Architecture draft with AI chapter (lead); Communications Policy 2026: no AI content. ICT Authority (icta.go.ke): TLS chain to an untrusted legacy root (curl) and HTTP 503 (WebFetch), not reached. No public-sector GenAI circular or AI procurement rule found (PPRA searched).; Ministries: Education: no official AI guideline (AI in Education guidelines in development, lead). Health: no ministry AI document; its regulator PPB issued the MDSW guideline (recorded). Justice/Judiciary: draft Judiciary AI policy only on third-party sites (lead). Defence, Finance/Treasury (incl. KRA), Labour, Interior/police, Agriculture, Foreign Affairs: searched, no AI documents found. Public Service: only training programmes, no guideline.; Regulators: CBK: draft AI guidance note re-checked (no change); AI survey report (lead, undated). CMA: no AI document (general 2019 sandbox only). IRA, RBA, SASRA: nothing found. Communications Authority: regulatory sandbox page covering AI services (lead, no document). Media Council: AI handbook and election guidelines with AI chapter (leads, undated). PPB (health products): MDSW guideline with AI-device section (recorded). CUE (higher education): site unreachable, nothing found in searches. Competition Authority: only speeches/news on AI markets. ODPC: Guidance Note on AI July 2026 (recorded as draft); Emerging Technologies note (lead). NC4 (cyber): nothing found. KEBS: KS 3007:2025 (recorded); KS ISO/IEC 42001 and other ISO/IEC AI adoptions (lead, no adoption date).. Not reached: kenyalaw.org / new.kenyalaw.org (Kenya Gazette and legislation portal): HTTP 403 to curl and WebFetch; icta.go.ke (ICT Authority): certificate chains to a legacy root not in the trust store (curl); HTTP 503 (WebFetch); cue.or.ke (Commission for University Education): connection failed; health.go.ke: connection failed; kenyanews.go.ke (discovery only): TLS error / HTTP 503. Could not verify: Later amendments to the Data Protection Act 2019 (Kenya Law unreachable); Kenya Gazette AI search (Kenya Law unreachable); Adoption dates of KS ISO/IEC AI standards (no gazette access); Current stage of the Senate AI Bill 2026 beyond first reading; Final status of the ODPC AI guidance note and the draft national AI policy. procurement, cyber-security, sandbox, index-readiness, international: no material found.\nWording note 2026-10-19 (narrative.review_notes): The ICT ministry's site is now readable, so the final AI strategy, the 2025 draft strategy and the 2026 draft AI policy were read in full. The national law reports site and the ICT Authority's site could not be accessed.\nWording note 2026-10-19 (coverage_audit.no_material_found_note): The national law and gazette portal and some other official sites were unavailable, so later"
   },
   "changes": [
+    {
+      "id": "c-3d995e210508",
+      "date": "2026-10-19",
+      "recorded": "2026-10-19",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "KEN",
+      "instrument_id": "i-8f4306ef802f",
+      "title": "Draft Kenya Artificial Intelligence and Other Emerging Technologies Policy",
+      "detail": "Record updated: lifecycle.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
     {
       "id": "c-90f9742731c7",
       "date": "2026-10-13",

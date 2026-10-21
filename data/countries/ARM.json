@@ -374,7 +374,7 @@
       "language": "hy",
       "verification_date": "2026-10-12",
       "first_recorded": "2026-10-12",
-      "last_changed": null,
+      "last_changed": "2026-10-19",
       "verification_level": "reviewed_primary_metadata",
       "link_status": "reachable",
       "document_access_type": "original_government_document",
@@ -393,9 +393,9 @@
         "binding-law"
       ],
       "legal_status": "consultation_draft",
-      "lifecycle": "consultation",
+      "lifecycle": "consultation_closed",
       "publication_date": "2025-09-29",
-      "current_status": "Public consultation 29 September - 14 October 2025 (project 9155); e-draft still shows it 'under discussion'. No adopted law was found on ARLIS.",
+      "current_status": "Public consultation 29 September - 14 October 2025 (project 9155); e-draft still shows it 'under discussion'. No adopted law was found on ARLIS. Consultation closed on 14 October 2025.",
       "summary": "Government draft law amending the 2021 Criminal Code, published for public consultation on e-draft.am. Among child-protection and online-harassment changes, it would add as an aggravating element of art. 258 (hooliganism-type offences) the use of AI-generated material that defames, threatens violence or contains sexual propositions, and extend art. 300(5) to imitated material 'including material created by artificial intelligence'.",
       "ai_governance_relevance": "",
       "source_url": "https://www.e-draft.am/projects/9155/about",
@@ -431,7 +431,8 @@
       "link_status": "reachable",
       "document_access_type": "original_government_document",
       "source_id": "s-66590bcec7ff",
-      "evidence_reference": "curl (browser user agent, --max-time 60): e-draft.am project page with the full draft text and consultation period read"
+      "evidence_reference": "curl (browser user agent, --max-time 60): e-draft.am project page with the full draft text and consultation period read",
+      "consultation_closes": "2025-10-14"
     },
     {
       "id": "i-679827c025dd",
@@ -444,9 +445,9 @@
         "public-sector"
       ],
       "legal_status": "consultation_draft",
-      "lifecycle": "consultation",
+      "lifecycle": "consultation_closed",
       "publication_date": "2026-07-20",
-      "current_status": "Public consultation 20 July - 4 August 2026 (e-draft project 10426); not found as adopted on ARLIS on 2026-10-12.",
+      "current_status": "Public consultation 20 July - 4 August 2026 (e-draft project 10426); not found as adopted on ARLIS on 2026-10-12. Consultation closed on 4 August 2026.",
       "summary": "Draft government decision setting a single procedure through which public authorities can submit AI projects and receive GPU computing capacity purchased by the Ministry of High-Tech Industry from Firebird AI (up to 181 leading GPUs under the purchase contract, based on Government decision N 450-A of 9 April 2026), with optional access to AWS resources under decision N 1966-N. It also opens the resources to natural and legal persons for AI research and sets the roles of the ministry and other bodies.",
       "ai_governance_relevance": "",
       "source_url": "https://www.e-draft.am/projects/10426/about",
@@ -482,7 +483,8 @@
       "link_status": "reachable",
       "document_access_type": "original_government_document",
       "source_id": "s-138d6193dd9b",
-      "evidence_reference": "curl (browser user agent, --max-time 60): e-draft.am project page and the attached draft decision (docx) read"
+      "evidence_reference": "curl (browser user agent, --max-time 60): e-draft.am project page and the attached draft decision (docx) read",
+      "consultation_closes": "2026-08-04"
     }
   ],
   "organizations": [
@@ -862,6 +864,36 @@
     "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. pdpa.am 502; parliament.am not queried separately (laws read on ARLIS; e-draft.am searched). Incidental AI mentions in other ministries' drafts excluded. Decision 2063-A (approval to sign the CoE Framework Convention on AI) recorded as a national act under category international. Convention 108: National Assembly decision AZhO-315-N of 27 February 2012, recorded on the COE file. Units covered: Law: ARLIS searched (Armenian title search for AI terms, data protection, digitalization, audiovisual media, government structure, Convention 108); e-draft.am searched for AI drafts. Found: Personal Data Protection Law, AV media AI-labelling law, ministry-rename law, AI data-centre permitting decision, two consultation drafts. Parliament.am not separately searched (laws taken from ARLIS).; Government: Digitalization Strategy 2021-2025, AI HPC support programme (1966-N), CoE AI Convention signing approval found; no standalone national AI strategy/concept adopted; high-tech strategy 2026-2033 held as lead.; Ministries: Ministry of High-Tech Industry (and AI): website searched, only news/programme pages, no AI guidelines; Labour and Social Affairs (criminal-code AI draft); Justice/NSS/Health/Economy drafts with incidental AI mentions checked and excluded. Education, defence, finance: searched, nothing AI-specific found.; Regulators: Central Bank of Armenia: search found only an analytical paper, no AI guidance; Personal Data Protection Agency: no AI guidance found (pdpa.am unreachable); Audiovisual Media Commission: none beyond the law; cybersecurity/competition/standards: nothing found.. Not reached: pdpa.am (HTTP 502); parliament.am bill search (not separately queried). Could not verify: Adoption of the high-tech sector strategy 2026-2033 (marked adopted on e-draft, not on ARLIS); Personal Data Protection Agency AI guidance (pdpa.am 502). ethics, risk-assurance, procurement, cyber-security, standards, sandbox, index-readiness, historical: no material found.\nWording note 2026-10-19 (narrative.review_notes): The high-tech sector strategy could not be confirmed as adopted and is listed as a lead, and the data protection agency's website could not be reached.\nWording note 2026-10-19 (coverage_audit.no_material_found_note): The data protection agency's site was unavailable and Parliament's bill search was not checked separately, so these and the adoption status"
   },
   "changes": [
+    {
+      "id": "c-cbbecf75b9c5",
+      "date": "2026-10-19",
+      "recorded": "2026-10-19",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "ARM",
+      "instrument_id": "i-453d1f0f1ed3",
+      "title": "Draft Law amending the Criminal Code (use of AI-generated material as an aggravating element)",
+      "detail": "Record updated: lifecycle.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-ae783851c712",
+      "date": "2026-10-19",
+      "recorded": "2026-10-19",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "ARM",
+      "instrument_id": "i-679827c025dd",
+      "title": "Draft Government Decision approving the procedure for ensuring access to high-performance computing resources in the field of artificial intelligence (for public authorities)",
+      "detail": "Record updated: lifecycle.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
     {
       "id": "c-18269f2a59b0",
       "date": "2026-10-12",

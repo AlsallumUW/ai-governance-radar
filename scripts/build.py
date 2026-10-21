@@ -3,7 +3,7 @@
 
     python3 scripts/build.py            -> dist/index.html, dist/data.json, dist/changes.csv
 """
-import csv, hashlib, io, json, re, sys
+import csv, hashlib, html, io, json, re, sys
 from common import ROOT, DATA, load, load_all, public
 import pages
 import i18n
@@ -187,8 +187,12 @@ def localise(out):
         if '<html lang="en">' not in t: continue
         alt = (f'<link rel="alternate" hreflang="en" href="{pages.SITE_URL}{url}"><link rel="alternate" hreflang="ar" href="{pages.SITE_URL}ar/{url}">'
                f'<link rel="alternate" hreflang="x-default" href="{pages.SITE_URL}{url}">')
-        switch = (f'<a class="lang-switch" href="{other or "./"}" hreflang="en" lang="en">English</a>' if ar else
-                  f'<a class="lang-switch" href="{other}" hreflang="ar" lang="ar">العربية</a>')
+        # language switch: always the last item of the top bar, so it sits in the corner (top-right in English,
+        # top-left in Arabic), as on most government sites
+        globe = ('<svg class="ls-ico" viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.3"/>'
+                 '<path d="M1.5 8h13M8 1.5c2 2 2.8 4.2 2.8 6.5S10 12.5 8 14.5M8 1.5C6 3.5 5.2 5.7 5.2 8S6 12.5 8 14.5" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>')
+        switch = (f'<a class="lang-switch" href="{other or "./"}" hreflang="en" lang="en" aria-label="English version">{globe}<span>English</span></a>' if ar else
+                  f'<a class="lang-switch" href="{other}" hreflang="ar" lang="ar" aria-label="النسخة العربية">{globe}<span>العربية</span></a>')
         if ar:
             t = t.replace('<html lang="en">', '<html lang="ar" dir="rtl">', 1)
             t = t.replace("</head>", FONT + f'<link rel="stylesheet" href="{up}assets/ar.css">' + alt + f'<script src="{up}assets/i18n-ar.js"></script></head>', 1)
@@ -208,10 +212,14 @@ def localise(out):
                 " ".join([link(q.split()[0])] + q.split()[1:]) for q in m.group(2).split(",") if q.strip()) + m.group(3), t)
         else:
             t = t.replace("</head>", alt + "</head>", 1)
-        if '<span class="site">' in t:
-            t = re.sub(r'(<span class="site">[^<]*</span>)', lambda m: m.group(1) + switch, t, count=1)
-        elif '<div class="actions">' in t:
-            t = t.replace('<div class="actions">', '<div class="actions">' + switch.replace('class="lang-switch"', 'class="button lang-switch"'), 1)
+        if '<header class="topnav">' in t:
+            a = t.index('<header class="topnav">'); b = t.index('</header>', a)
+            p_ = t.find('<div class="progress"', a, b)
+            at = p_ if p_ > 0 else b
+            t = t[:at] + switch + t[at:]
+        elif '<header class="topbar">' in t:
+            a = t.index('<header class="topbar">'); b = t.index('</header>', a)
+            t = t[:b] + switch.replace('class="lang-switch"', 'class="button lang-switch"') + t[b:]
         else:
             t = t.replace("<body>", "<body>" + switch, 1) if "<body>" in t else t
         page.write_text(t, encoding="utf-8")
@@ -229,7 +237,6 @@ MIN_FIELDS = {
                     "publication_date", "verification_level", "government_level", "subnational_unit", "party_status",
                     "adherents", "regional_applicability"],
     "jurisdictions": ["id", "iso2", "name", "short_name", "type", "aliases"],
-    "sources": ["id", "link_status"],
     "organizations": ["id", "jurisdiction_id", "name", "authority_type", "government_level", "subnational_unit"],
     "regional_applicability": ["instrument_id", "jurisdiction_id", "regional_jurisdiction_id"],
 }
@@ -250,9 +257,23 @@ def shared_asset(name, text):
 
 
 FORBIDDEN = re.compile(r"\bcurl\b|local-retry|WebFetch|maintainer|confirmed by Faisal", re.I)
+# visible page text only (scripts, styles and tags removed): repository paths, internal notes and raw field values
+VISIBLE_FORBIDDEN = re.compile(r"\bresearch/(?:queue|PROTOCOL|WEEKLY|BACKFILL|TRANSLATION)|\.json\)|data pass")
+VISIBLE_OK = re.compile(r"[\w.+-]+@[\w.-]+|https?://\S+|www\.\S+")   # e-mail addresses and URLs quoted in text
 
 
-def check_public(out):
+def schema_vocab(D):
+    """Field names and coded values of the dataset (legal_status, lifecycle, binding_law, ...): never visible on a page."""
+    v = set()
+    for k in ("instruments", "sources", "organizations", "changes", "jurisdictions"):
+        for x in D[k]:
+            v.update(f for f in x if "_" in f)
+            for f in ("legal_status", "lifecycle", "authority_type", "verification_level", "link_status", "government_level", "kind", "type"):
+                if isinstance(x.get(f), str) and "_" in x[f]: v.add(x[f])
+    return frozenset(v)
+
+
+def check_public(out, vocab=frozenset()):
     """Fail the build if research-process wording reaches anything published (pages, data files, downloads)."""
     bad = []
     for f in out.rglob("*"):
@@ -260,6 +281,11 @@ def check_public(out):
         t = f.read_text(encoding="utf-8", errors="ignore")
         for m in FORBIDDEN.finditer(t):
             bad.append(f"{f.relative_to(out).as_posix()}: '{m.group(0)}' ...{t[max(0, m.start() - 60):m.end() + 40]!r}")
+    for f in out.rglob("*.html"):
+        t = f.read_text(encoding="utf-8", errors="ignore")
+        t = re.sub(r"<(script|style)\b.*?</\1>", " ", t, flags=re.S); t = html.unescape(re.sub(r"<[^>]+>", " ", t)); t = VISIBLE_OK.sub(" ", t)
+        for m in list(VISIBLE_FORBIDDEN.finditer(t)) + [m for m in re.finditer(r"\b[a-z]+(?:_[a-z0-9]+)+\b", t) if m.group(0) in vocab]:
+            bad.append(f"{f.relative_to(out).as_posix()} (visible): '{m.group(0)}' ...{t[max(0, m.start() - 60):m.end() + 40]!r}")
     for b in bad[:25]: print("PUBLIC DATA CHECK:", b)
     if bad: print(f"PUBLIC DATA CHECK FAILED: {len(bad)} occurrence(s) of research-process wording in dist/")
     return 1 if bad else 0
@@ -301,7 +327,7 @@ def build():
           f"{D['meta']['deeply_reviewed_country_count']} deep-reviewed countries; {n_pages} country/body pages ({n_ar} in Arabic); cache-busted {n_files} asset URLs in {n_busted} pages")
     import check_ar_charts
     rc = check_ar_charts.main()   # fails the build if an Arabic chart tooltip or legend is left in English
-    return rc or check_public(OUT)
+    return rc or check_public(OUT, schema_vocab(D))
 
 
 if __name__ == "__main__":

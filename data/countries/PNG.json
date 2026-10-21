@@ -163,9 +163,9 @@
         "public-sector"
       ],
       "legal_status": "consultation_draft",
-      "lifecycle": "consultation",
+      "lifecycle": "consultation_closed",
       "publication_date": "2026-08-06",
-      "current_status": "Government draft Bill under public consultation from 6 August to 21 August 2026; the Minister for ICT's statement of 6 August 2026 says he instructed DICT and NICTA to expedite it for introduction in the September 2026 sitting of Parliament, but no evidence of introduction or passage has been found. The current text is the undated 'Proposed Draft – 5th Version' (the date recorded is the consultation opening date), and commencement would be by notice in the National Gazette (s. 2), with Parts IV-XIII able to commence on different days.",
+      "current_status": "Government draft Bill under public consultation from 6 August to 21 August 2026; the Minister for ICT's statement of 6 August 2026 says he instructed DICT and NICTA to expedite it for introduction in the September 2026 sitting of Parliament, but no evidence of introduction or passage has been found. The current text is the undated 'Proposed Draft – 5th Version' (the date recorded is the consultation opening date), and commencement would be by notice in the National Gazette (s. 2), with Parts IV-XIII able to commence on different days. Consultation closed on 21 August 2026.",
       "summary": "Draft Bill giving legal effect to the National Data Governance and Data Protection Policy 2024, covering personal and government data, data-subject rights, breach notification, cross-border transfers and sovereign hosting, with NICTA deemed the National Data Authority on an interim basis. It contains an interim risk-based AI framework: public bodies may not make decisions affecting rights or access to significant public services solely by automated means without meaningful human review (s. 69), individuals get a right to human review of AI/automated decisions with Tok Pisin notices (s. 70), and Part VIII sets responsible-AI principles, high-risk system duties (DPIA, bias testing, audit records, transparency, registration with the Authority), prohibited practices (subliminal manipulation, exploitation of vulnerabilities, government social scoring, real-time remote biometric identification without court authorisation, election/judicial manipulation) punishable by fines up to K5 million, and chatbot disclosure duties. Part VIII applies until a dedicated national AI law is enacted.",
       "ai_governance_relevance": "First draft legislation in PNG with binding-style AI rules (interim AI governance pending a National AI Act).",
       "sectors": [
@@ -178,7 +178,8 @@
       "official_webpage_url": "https://www.ict.gov.pg/data-governance-and-data-protection-bill-2026/",
       "source_id": "s-63f2568067e4",
       "evidence_reference": "curl (browser user agent, --max-time 60): consultation portal page and Public Consultation Notice read (consultation opens 6 August 2026, closes 21 August 2026); full 39-page fifth-draft Bill PDF read (pdftotext), incl. ss. 69-70 and Part VIII (ss. 87-92); the third-draft PDF linked from the portal now returns 404; Minister's release of 6 August 2026 on ict.gov.pg. Status note: Consultation dates per the DICT consultation portal and notice. parliament.gov.pg bills page unreachable. The current text is on ict.gov.pg.",
-      "category": "data-privacy"
+      "category": "data-privacy",
+      "consultation_closes": "2026-08-21"
     }
   ],
   "organizations": [
@@ -360,6 +361,21 @@
     "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-13, one agent, national level only (PROTOCOL §6), about 25-minute time box. parliament.gov.pg bills page 404; no online searchable gazette. Strategy (i-5c2920c03033) re-identified as consultation draft dated 2026-03-23 per Acting Minister's statement of 22 Mar 2026 (PDF undated); o-8e671932a90a renamed in place; s-b3d74ab827c1 kept. Adoption Framework Part 1 dated 2026-02-27 from cover. DGDP Bill 5th draft dated 2026-08-06 (consultation opening; PDF undated); recorded as government consultation draft (introduction in Parliament not confirmed). National Data Governance & Data Protection Policy 2024 scanned, no OCR (lead). Digital Government Act 2022, Digital Transformation Policy 2020, Cloud Policy 2023 AI in passing. Convention 108: not a party. Units covered: Law: No enacted AI law or AI provisions found. Searched: ict.gov.pg Legislations (Digital Government Act 2022 - no AI provisions, NICT Act 2009), ICT Legislation Consultation (Data Governance and Data Protection Bill 2026 - recorded as consultation draft; Cybersecurity Bill 2026 notice - no AI provisions; Verifiable Credentials Bill). parliament.gov.pg bills page returned 404; PacLII used only for discovery, nothing found. Deepfake/Cybercrime Code amendments announced only (lead).; Government: DICT: draft Government AI Adoption Framework Part 1 (recorded), draft National Sovereign AI and Digital Transformation Strategy (recorded), Part 2 Implementation Pack not online (lead). Endorsed policies checked for AI content: Digital Transformation Policy 2020 and Government Cloud Policy 2023 mention AI only in passing; National Cyber Security Strategy 2024-2030 and Social Media Policy 2025: no AI content; Data Governance & Data Protection Policy 2024 scanned (lead). Dept of PM & NEC (pmnec.gov.pg): only news on AI intentions, no documents.; Ministries: Searched, nothing found: no AI documents from education, health, justice, defence, treasury/finance, labour or interior ministries surfaced in searches of gov.pg sites.; Regulators: Searched, nothing found: no standalone data protection authority exists (NICTA proposed as interim National Data Authority in the DGDP Bill); NICTA, Bank of PNG and National Cyber Security Centre - no AI-specific documents found.. Not reached: parliament.gov.pg bills register (page returned 404; no AI bill found via search); National Gazette (Government Printing Office) - no online searchable gazette reached. Could not verify: National Data Governance & Data Protection Policy 2024 (scanned PDF; no OCR available) - AI content and date unverified.; Whether the DGDP Bill 2026 was introduced in Parliament in September 2026 (parliament.gov.pg bills page 404).; Whether consultation on the AI Strategy / Adoption Framework has closed or any final version was endorsed by NEC.. binding-law, procurement, cyber-security, standards, sandbox, index-readiness, sectoral, generative-ai, international, historical: no material found.\nWording note 2026-10-19 (narrative.review_notes): Parliament's bills page returned an error and there is no searchable online National Gazette, so it could not be confirmed whether the data protection bill has been introduced in Parliament.\nWording note 2026-10-19 (coverage_audit.no_material_found_note): Parliament's bills page and an online gazette were unavailable, and it remains to check whether"
   },
   "changes": [
+    {
+      "id": "c-8e278f8f168c",
+      "date": "2026-10-19",
+      "recorded": "2026-10-19",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "PNG",
+      "instrument_id": "i-6b960e5f66ba",
+      "title": "Data Governance and Data Protection Bill 2026 (fifth draft for public consultation)",
+      "detail": "Record updated: lifecycle.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
     {
       "id": "c-b50f184f4682",
       "date": "2026-10-13",

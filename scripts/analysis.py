@@ -26,7 +26,7 @@ ISSUER = {
     "judiciary": "Courts and judicial councils", "court": "Courts and judicial councils", "judicial_body": "Courts and judicial councils",
     "standards_body": "Other", "advisory_body": "Other", "independent_body": "Other", "audit": "Other", "audit_body": "Other",
     "attorney_general": "Other", "prosecution_service": "Other", "ethics_body": "Other", "sector_body": "Other", "public_body": "Other",
-    "military_agency": "Other", "council": "Other",
+    "military_agency": "Other", "council": "Other", "intergovernmental_body": "Other", "regional": "Other",
 }
 ISSUER_ORDER = ["Legislatures", "Governments and ministries", "Regulators", "Courts and judicial councils", "Other"]
 LEVELS = [("national", "National"), ("subnational", "State / provincial"), ("local", "Local"), ("regional", "Regional body")]
@@ -232,6 +232,7 @@ def fig_adoption(N, today):
               ("bind", "Binding or mandatory, incl. data protection and sector laws that apply to AI", first_bind, "ln-b")]
     cum = {k: [sum(1 for v in f.values() if v <= y) for y in ys] for k, _, f, _ in series}
     W, H, L, Rr, T, B = 720, 300, 40, 150, 14, 28
+    if i18n.LANG == "ar": Rr = 235      # room for the longer Arabic end labels ("الاستراتيجية الوطنية ... · 116")
     pw, ph = W - L - Rr, H - T - B
     top = 200
     X = lambda n: L + pw * n / (len(ys) - 1)
@@ -271,14 +272,14 @@ def fig_adoption(N, today):
     desc = (_T("Cumulative countries, counted from the date of the earliest qualifying instrument found. The binding-or-mandatory line includes state, provincial and local "
                "instruments and general laws (data protection, copyright, sector laws) that apply to AI: the records do not reliably separate AI-specific laws from these, so "
                "one line is shown. On the any-instrument and binding lines, instruments first published before {cutoff} are dated by the AI-relevant amendment or provision "
-               "where the record states it ({moved} instruments); {miss} with no such date in the record are left off both lines until a data pass finds it",
+               "where the record states it ({moved} instruments); {miss} with no such date in the record are left off both lines",
                cutoff=AI_CUTOFF, moved=moved, miss=miss)
             + (_T(", so {n} countries whose only records are among them ({names}) are not on the any-instrument line yet. ", n=len(off),
                   names=LS().join(tr(N['jur'][c]['name']) for c in off)) if off else ". ")
             + _T("The strategy line uses publication dates. Regional instruments (such as the EU AI Act) are not counted. *{y} runs to {date}.", y=last, date=fmt_date(today)))
     return afig("fig-adoption", "Adoption curve", take, desc, "".join(o), ["End of year", "Countries with at least one instrument (AI-relevant date)", "Countries with a national AI strategy",
                 "Countries with at least one binding-or-mandatory instrument (AI-relevant date)"], rows,
-                _T("Before {start}: {a} / {s} / {b} countries (included in the {start} values) · {moved} pre-{cutoff} instruments re-dated, {miss} awaiting an amendment date (research/queue.json)",
+                _T("Before {start}: {a} / {s} / {b} countries (included in the {start} values) · {moved} pre-{cutoff} instruments re-dated, {miss} without an AI-relevant date",
                    start=start, a=pre['any'], s=pre['strat'], b=pre['bind'], moved=moved, cutoff=AI_CUTOFF, miss=miss), legend), {
         "any": cum["any"][-1], "strat": cum["strat"][-1], "bind": cum["bind"][-1], "moved": moved, "missing": miss}
 
@@ -359,7 +360,7 @@ def region_parts(N, by_c, scope):
     for n, r in enumerate(REGIONS):
         tot = sum(mix[r].values()) or 1; x = L2; y = 4 + n * rh; bh = 20
         o.append(f'<text class="cat" x="{L2 - 12}" y="{y + 15}" text-anchor="end">{e(r)}</text>')
-        drawn = [(g, mix[r][g]) for g in GROUPS if mix[r][g]]
+        drawn = [(g, mix[r][g]) for g in ("binding", "soft", "draft") if mix[r][g]]   # legend order
         for idx, (g, v) in enumerate(drawn):
             w = (W2 - L2 - R2) * v / tot; gap = 2 if idx else 0
             tip = f"{r}: {v} {KIND_LABEL[g].lower()} ({pct(v, tot)}% of {tot})"
@@ -460,13 +461,14 @@ def fig_treaty(N, ctx):
     st = {}
     for c in sorted(cids, key=lambda c: i18n.name_key(jur[c]["name"])):
         s = ctx["cets"].get(c)
-        st[c] = "Ratified" if s == "ratified" else "Signed" if s == "signed" else "EU signatory only" if c in eu else "None"
-    order = ["Ratified", "Signed", "EU signatory only", "None"]
+        st[c] = "Ratified" if s == "ratified" else "Signed" if s == "signed" else "EU" if c in eu else "None"
+    order = ["Ratified", "Signed", "EU", "None"]
+    euw = "ratification" if ctx.get("eu_cets_status") == "ratified" else "signature"
     cnt = {k: sum(1 for v in st.values() if v == k) for k in order}
     c108 = len(ctx["c108"] & cids); c108p = len(ctx["c108_pending"] & cids)
     bars = [("CETS 225: ratified", cnt["Ratified"], "t1"), ("CETS 225: signed, not ratified", cnt["Signed"], "t2"),
-            ("CETS 225: EU signatory only", cnt["EU signatory only"], "t3"), ("CETS 225: none", cnt["None"], "t4"),
-            ("Convention 108: parties verified from national ratification acts in this dataset", c108, "t1"), ("Convention 108: ratification act pending verification", c108p, "t3")]
+            (f"CETS 225: covered by the EU's {euw}", cnt["EU"], "t3"), ("CETS 225: none", cnt["None"], "t4"),
+            ("Convention 108: parties confirmed from national ratification acts in this dataset", c108, "t1"), ("Convention 108: national ratification act not yet recorded", c108p, "t3")]
     W, rh, L, Rr = 720, 30, 400, 40
     H = rh * len(bars) + 22
     o = [f'<svg viewBox="0 0 {W} {H}" class="chart" role="img" aria-label="CETS 225 status of the 195 countries, and Convention 108 parties">']
@@ -480,10 +482,11 @@ def fig_treaty(N, ctx):
     small = ('<table class="data-table plain-table small-table"><thead><tr><th scope="col">Signed or ratified CETS 225 in its own name</th><th scope="col">Status</th></tr></thead><tbody>'
              + "".join(f'<tr><th scope="row"><a href="../country/{c}/">{e(jur[c]["name"])}</a></th><td>{e(st[c])}</td></tr>' for c in st if st[c] in ("Ratified", "Signed"))
              + '</tbody></table>')
-    rows = [[jur[c]["name"], c, st[c], "Party" if c in ctx["c108"] else "Pending verification" if c in ctx["c108_pending"] else "Not recorded"] for c in st]
+    label = {"Ratified": "Ratified", "Signed": "Signed", "EU": f"Covered by the EU's {euw}", "None": "None"}
+    rows = [[jur[c]["name"], c, label[st[c]], "Party" if c in ctx["c108"] else "National act not yet recorded" if c in ctx["c108_pending"] else "Not recorded"] for c in st]
     take = _T(("{r} country has" if cnt['Ratified'] == 1 else "{r} countries have") + " ratified CETS 225 and {s} more have signed it in their own name; {eu} EU members are covered "
-              "only by the EU's signature. {c} Convention 108 parties are verified from national ratification acts in this dataset, with {p} more pending verification.",
-              r=cnt['Ratified'], s=cnt['Signed'], eu=cnt['EU signatory only'], c=c108, p=c108p)
+              "through the EU's " + euw + ". {c} Convention 108 parties are confirmed from national ratification acts in this dataset; for {p} more the national act is not yet recorded.",
+              r=cnt['Ratified'], s=cnt['Signed'], eu=cnt['EU'], c=c108, p=c108p)
     desc = ("Out of 195 countries. CETS 225 status from the Council of Europe record in this dataset; 'ratified' needs the country's own ratification act. "
             "Convention 108 counts only parties whose ratification or accession act was found, so it is lower than the treaty office's own list.")
     c108_link = ('<p class="fig-note">The official list of Convention 108 parties is longer; see the Council of Europe Treaty Office '
@@ -501,7 +504,7 @@ def fig_issuer(N):
         else:
             unc += 1; unc_types[t or "missing"] = unc_types.get(t or "missing", 0) + 1
     tot = len(N["C"])
-    bars = [(k, cnt[k]) for k in ISSUER_ORDER] + [("Unclassified", unc)]
+    bars = [(k, cnt[k]) for k in ISSUER_ORDER] + ([("Unclassified", unc)] if unc else [])
     W, rh, L, Rr = 720, 30, 220, 80
     H = rh * len(bars) + 8
     mx = max(v for _, v in bars)
@@ -514,14 +517,13 @@ def fig_issuer(N):
     o.append(f'<line class="axis" x1="{L}" x2="{L}" y1="0" y2="{H}"/></svg>')
     rows = [[k, v, f"{pct(v, tot)}%"] for k, v in bars] + [["Total", tot, "100%"]]
     big = max(ISSUER_ORDER, key=lambda k: cnt[k])
-    take = _T("{big} issued {pb}% of country instruments, legislatures {pl}% and regulators {pr}%. "
-              "{unc} instruments ({pu}%) have no issuer type recorded and are left unclassified.",
-              big=tr(big), pb=pct(cnt[big], tot), pl=pct(cnt['Legislatures'], tot), pr=pct(cnt['Regulators'], tot), unc=unc, pu=pct(unc, tot))
+    take = _T("{big} issued {pb}% of country instruments, legislatures {pl}% and regulators {pr}%.",
+              big=tr(big), pb=pct(cnt[big], tot), pl=pct(cnt['Legislatures'], tot), pr=pct(cnt['Regulators'], tot))
+    if unc: take += " " + _T("{unc} instruments ({pu}%) have no issuer type recorded and are left unclassified.", unc=unc, pu=pct(unc, tot))
     desc = ("National, state/provincial and local instruments by the type of body that issued them: the record's authority type, else that of its issuing organisation. "
             "Governments and ministries include executive agencies, heads of state and local governments; regulators include data-protection authorities and central banks; "
             "other covers standards bodies, advisory and independent bodies, auditors and prosecutors.")
-    return afig("fig-issuer", "Issuer types", take, desc, "".join(o), ["Issuer type", "Instruments", "Share"], rows,
-                "Unclassified: " + ", ".join(f"{k} {v}" for k, v in sorted(unc_types.items(), key=lambda kv: -kv[1]))), {"issuer_total": sum(cnt.values()) + unc, "unclassified": unc}
+    return afig("fig-issuer", "Issuer types", take, desc, "".join(o), ["Issuer type", "Instruments", "Share"], rows), {"issuer_total": sum(cnt.values()) + unc, "unclassified": unc}
 
 
 # ---------------------------------------------------------------- pages
@@ -562,15 +564,15 @@ def analysis_page(D, recs, ctx):
     lvl = {k: sum(1 for i in N["C"] if i.get("government_level") == k) for k in ("national", "subnational", "local")}
     grp = {g: sum(1 for i in N["C"] if kind(i) == g) for g in GROUPS}
     zero = sum(1 for c in N["cids"] if not N["by_c"][c])
-    stats = [("Countries", len(N["countries"])), ("Instruments", f"{n_all:,}"), ("Countries with none found", zero)]
+    stats = [("Countries", len(N["countries"])), ("Instruments", f"{nC:,}"), ("Countries with none found", zero)]
     recon = [
         ("Instruments in the full export (CSV / JSON)", n_all),
         ("· national", lvl["national"]), ("· state / provincial", lvl["subnational"]), ("· local", lvl["local"]), ("· regional bodies", nR),
-        ("Chart a: dated country instruments + undated country instruments", f'{ka["years_total"]} + {ka["undated_c"]} = {ka["years_total"] + ka["undated_c"]}'),
-        ("Chart a: dated regional instruments + undated regional instruments", f'{ka["regional_dated"]} + {ka["undated_r"]} = {ka["regional_dated"] + ka["undated_r"]}'),
-        ("Chart c, national-level only (default): per-country counts and group mix", f'{kc["box_nat"]} and {kc["mix_nat"]} (= national {lvl["national"]})'),
-        ("Chart c, including state/provincial and local: per-country counts and group mix", f'{kc["box_all"]} and {kc["mix_all"]} (= country instruments {nC})'),
-        ("Chart f (issuer types): country instruments", f'{kf["issuer_total"]}'),
+        ("Instruments per year: dated country instruments + undated country instruments", f'{ka["years_total"]} + {ka["undated_c"]} = {ka["years_total"] + ka["undated_c"]}'),
+        ("Instruments per year: dated regional instruments + undated regional instruments", f'{ka["regional_dated"]} + {ka["undated_r"]} = {ka["regional_dated"] + ka["undated_r"]}'),
+        ("Instruments per country and Group mix, by region (national level only, the default): per-country counts and group mix", f'{kc["box_nat"]} and {kc["mix_nat"]} (= national {lvl["national"]})'),
+        ("Instruments per country and Group mix, by region (including state/provincial and local): per-country counts and group mix", f'{kc["box_all"]} and {kc["mix_all"]} (= country instruments {nC})'),
+        ("Issuer types: country instruments", f'{kf["issuer_total"]}'),
         ("Group totals for country instruments (binding or mandatory / non-binding / drafts)", f'{grp["binding"]} / {grp["soft"]} / {grp["draft"]}'),
     ]
     assert ka["years_total"] + ka["undated_c"] == nC and ka["regional_dated"] + ka["undated_r"] == nR and kf["issuer_total"] == nC
