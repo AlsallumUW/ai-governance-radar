@@ -23,9 +23,14 @@ function normMap(s){let out='',map=[],sp=false;
 const reEsc=s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
 const LATIN=/^[a-z0-9 ]+$/;
 const isAr=s=>/[\u0600-\u06FF]/.test(s||'');
-function altSrc(a){let s=a.trim().split(' ').filter(Boolean).map(reEsc).join(' ?');   // a space may match no separator: "deep fake" finds "deepfake"
-  if(LATIN.test(a)&&a.replace(/ /g,'').length<=3)s='(?<![\\p{L}\\p{N}])'+s+'(?![\\p{L}\\p{N}])';   // "ai", "llm": whole words only
-  return s}
+/* Latin text: a typed term must start at a word boundary (a prefix is fine: "regulat" finds "regulation"); a related term from a
+   synonym group must be a whole word or phrase, optionally plural ("compute" does not find "computer"). Very short typed terms
+   ("ai", "llm") are whole words too. Arabic keeps substring matching, so prefixes such as ال، و، ب still match. */
+const B0='(?<![\\p{L}\\p{N}])',B1='(?![\\p{L}\\p{N}])';
+function altSrc(a,typed){let s=a.trim().split(' ').filter(Boolean).map(reEsc).join(' ?');   // a space may match no separator: "deep fake" finds "deepfake"
+  if(isAr(a))return s;
+  if(typed&&a.replace(/ /g,'').length>3)return B0+s;
+  return B0+s+'(?:e?s)?'+B1}
 /* containment needs a few letters: "ai" or "gpu" expand only on an exact match */
 const canContain=ns=>ns.length>=4||(ns.length>=3&&!LATIN.test(ns));
 
@@ -36,11 +41,12 @@ function parseQ(q){q=String(q||'').replace(/[“”„«»]/g,'"').replace(/،/g
   while((m=re.exec(q))){const t=(m[1]!=null?m[1]:m[2]).trim();if(t&&!out.some(x=>norm(x)===norm(t)))out.push(t)}
   return out}
 let GROUPS=[];
-function expand(term,rel){const n=norm(term).trim(),ns=n.replace(/ /g,''),alts=new Map([[n,term]]),groups=[];
-  if(rel&&ns)GROUPS.forEach(g=>{if(g.m.some(x=>x.ns===ns||(canContain(ns)&&x.ns.includes(ns)))){groups.push(g);g.m.forEach(x=>{if(!alts.has(x.n))alts.set(x.n,x.raw)})}});
-  const shown=[...alts];if(AR)shown.sort((a,b)=>isAr(b[1])-isAr(a[1]));   // "Also searching": the page's language first
-  const list=[...alts].sort((a,b)=>b[0].length-a[0].length);                  // longest first, so a highlight covers the whole phrase
-  const src=list.map(a=>altSrc(a[0])).join('|');
+function expand(term,rel){const n=norm(term).trim(),ns=n.replace(/ /g,''),alts=new Map([[n,[term,true]]]),groups=[];
+  if(rel&&ns)GROUPS.forEach(g=>{if(g.m.some(x=>x.ns===ns||(canContain(ns)&&x.ns.includes(ns)))){groups.push(g);g.m.forEach(x=>{if(!alts.has(x.n))alts.set(x.n,[x.raw,false])})}});
+  const all=[...alts].map(([k,[raw,typed]])=>[k,raw,typed]);
+  const shown=all.slice();if(AR)shown.sort((a,b)=>isAr(b[1])-isAr(a[1]));   // "Also searching": the page's language first
+  const list=all.slice().sort((a,b)=>b[0].length-a[0].length);                  // longest first, so a highlight covers the whole phrase
+  const src=list.map(a=>altSrc(a[0],a[2])).join('|');
   return{term,n,alts:list,shown,groups,re:new RegExp(src,'u'),reG:new RegExp(src,'gu')}}
 
 /* ------------------------------------------------------------ data */
@@ -251,7 +257,7 @@ document.addEventListener('click',ev=>{if(!ev.target.closest('.sr-combo'))closeL
 /* ------------------------------------------------------------ CSV export (exactly the current results) */
 function cell(v){v=v==null?'':String(v);return/[",\r\n]/.test(v)||/^\s|\s$/.test(v)?'"'+v.replace(/"/g,'""')+'"':v}
 function matchedTerms(it){const out=[];
-  Q.forEach(q=>q.alts.forEach(([n,raw])=>{const re=new RegExp(altSrc(n),'u');if(FT.some(k=>it.N[k]&&re.test(it.N[k]))&&!out.includes(raw))out.push(raw)}));return out.join('; ')}
+  Q.forEach(q=>q.alts.forEach(([n,raw,typed])=>{const re=new RegExp(altSrc(n,typed),'u');if(FT.some(k=>it.N[k]&&re.test(it.N[k]))&&!out.includes(raw))out.push(raw)}));return out.join('; ')}
 function csv(){
   const lab=(x,k)=>x?(AR?x[2]:x[1]):(k||'');
   const site=T.site+(AR?'ar/':'');
