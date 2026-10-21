@@ -9,7 +9,7 @@ const fmtD=d=>{if(!d)return'Undated';if(d.length===4)return d;const m=MON[+d.sli
 const PER=50;
 
 /* ------------------------------------------------------------ normalisation (text and query alike) */
-const DIAC=/[ؐ-ًؚ-ٰٟۖ-ۜ۟-۪ۨ-ۭـ]/g;
+const DIAC=/[\u0610-\u061A\u064B-\u065F\u0670\u06D6-\u06DC\u06DF-\u06E8\u06EA-\u06ED\u0640]/g;
 const SEPC='[\\s\\-_/\\u2010-\\u2015\\u00AD]',SEP=new RegExp(SEPC+'+','g'),SEP1=new RegExp('^'+SEPC+'$');
 const fold=s=>s.replace(DIAC,'').replace(/[أإآٱ]/g,'ا').replace(/ة/g,'ه').replace(/ى/g,'ي');
 const norm=s=>fold(String(s||'').toLowerCase()).replace(SEP,' ');
@@ -22,6 +22,7 @@ function normMap(s){let out='',map=[],sp=false;
   return[out,map]}
 const reEsc=s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
 const LATIN=/^[a-z0-9 ]+$/;
+const isAr=s=>/[\u0600-\u06FF]/.test(s||'');
 function altSrc(a){let s=a.trim().split(' ').filter(Boolean).map(reEsc).join(' ?');   // a space may match no separator: "deep fake" finds "deepfake"
   if(LATIN.test(a)&&a.replace(/ /g,'').length<=3)s='(?<![\\p{L}\\p{N}])'+s+'(?![\\p{L}\\p{N}])';   // "ai", "llm": whole words only
   return s}
@@ -37,9 +38,10 @@ function parseQ(q){q=String(q||'').replace(/[“”„«»]/g,'"').replace(/،/g
 let GROUPS=[];
 function expand(term,rel){const n=norm(term).trim(),ns=n.replace(/ /g,''),alts=new Map([[n,term]]),groups=[];
   if(rel&&ns)GROUPS.forEach(g=>{if(g.m.some(x=>x.ns===ns||(canContain(ns)&&x.ns.includes(ns)))){groups.push(g);g.m.forEach(x=>{if(!alts.has(x.n))alts.set(x.n,x.raw)})}});
-  const list=[...alts].sort((a,b)=>b[0].length-a[0].length);
+  const shown=[...alts];if(AR)shown.sort((a,b)=>isAr(b[1])-isAr(a[1]));   // "Also searching": the page's language first
+  const list=[...alts].sort((a,b)=>b[0].length-a[0].length);                  // longest first, so a highlight covers the whole phrase
   const src=list.map(a=>altSrc(a[0])).join('|');
-  return{term,n,alts:list,groups,re:new RegExp(src,'u'),reG:new RegExp(src,'gu')}}
+  return{term,n,alts:list,shown,groups,re:new RegExp(src,'u'),reG:new RegExp(src,'gu')}}
 
 /* ------------------------------------------------------------ data */
 let T,J,ITEMS=[],ST={},LC={},CATS=[],TYPES=[],EV={},YEARS=[],ASOF='';
@@ -147,7 +149,6 @@ function excerpt(it){
 
 /* ------------------------------------------------------------ rendering */
 const form=$('#srForm'),qIn=$('#srQ'),sum=$('#srSummary'),box=$('#srResults'),note=$('#srNote'),more=$('#srMore'),csvB=$('#srCsv');
-const isAr=s=>/[؀-ۿ]/.test(s||'');
 const jName=id=>J[id]?(AR?J[id][1]:J[id][0]):id;
 const pageURL=it=>`../${J[it.j]&&J[it.j][2]==='c'?'country':'body'}/${it.j}/#${it.id}`;
 function titles(it){const ar=it.at||(isAr(it.ot)?it.ot:'');
@@ -182,8 +183,8 @@ function render(keepShown){
   more.hidden=n<=SHOWN;$('#srShown').textContent=n>SHOWN?`Showing ${SHOWN.toLocaleString('en')} of ${n.toLocaleString('en')}`:'';
   csvB.disabled=!n;csvB.textContent=`Download CSV (${n.toLocaleString('en')})`;
   /* related terms */
-  const also=[];Q.forEach(q=>q.alts.forEach(([nn,raw])=>{if(nn!==q.n&&!Q.some(x=>x.n===nn)&&!also.includes(raw))also.push(raw)}));
-  $('#srAlso').hidden=!also.length;$('#srAlsoList').textContent=also.join(', ');
+  const also=[];Q.forEach(q=>q.shown.forEach(([nn,raw])=>{if(nn!==q.n&&!Q.some(x=>x.n===nn)&&!also.includes(raw))also.push(raw)}));
+  $('#srAlso').hidden=!also.length;$('#srAlsoList').innerHTML=also.map(a=>`<bdi>${esc(a)}</bdi>`).join(AR?'، ':', ');
   $$('#srTopics button').forEach(b=>b.setAttribute('aria-pressed',String(Q.some(q=>q.groups.some(g=>g.key===b.dataset.key)))))}
 
 /* ------------------------------------------------------------ controls */
@@ -260,7 +261,7 @@ function csv(){
     ['Categories',it=>it.cat.map(c=>lab(CATS[c])).join('; ')],['Matched terms',matchedTerms],['Summary',it=>it.sum],...(AR?[['Arabic summary',it=>it.sa]]:[]),
     ['Official source',it=>it.u],['Radar page',it=>`${site}${J[it.j][2]==='c'?'country':'body'}/${it.j}/#${it.id}`]];
   const head=cols.map(c=>cell(AR?tr(c[0]):c[0])).join(',');
-  return'﻿'+[head,...RES.map(it=>cols.map(c=>cell(c[1](it))).join(','))].join('\r\n')+'\r\n'}
+  return'\ufeff'+[head,...RES.map(it=>cols.map(c=>cell(c[1](it))).join(','))].join('\r\n')+'\r\n'}
 function dl(text,name,type){const a=document.createElement('a'),u=URL.createObjectURL(new Blob([text],{type}));a.href=u;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),1500)}
 csvB.addEventListener('click',()=>dl(csv(),`AI-Governance-Radar-search-${ASOF}.csv`,'text/csv;charset=utf-8'));
 
