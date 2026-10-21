@@ -111,13 +111,16 @@ def search_page(D, ctx, head1, nav, foot):
                   for i, n in (("srData", "search.json"), ("srTerms", "search_terms.json")))
     H = [head1(title, LEDE, canon).replace("</head>", pre + visuals.banner_preload("search", ctx) + "</head>", 1), '<body class="cp sr">', nav("search"), '<main id="main">']
     H.append(visuals.banner("search", ctx, "", "Search documents", lede=LEDE))
-    H.append('<div class="page sr-page">' + visuals.search_map(D, ctx))
+    H.append('<div class="page sr-page">')
+    smap = visuals.search_map(D, ctx)
     seg = "".join(f'<button type="button" class="seg-b" data-range="{k}" aria-pressed="{"true" if not k else "false"}">{e(v)}</button>' for k, v in PRESETS)
     types = "".join(f'<option value="{k}">{e(v)}</option>' for k, v in TYPES)
     cats = "".join(f'<option value="{k}">{e(v)}</option>' for k, v in D["categories"].items())
     sorts = "".join(f'<option value="{k}">{e(v)}</option>' for k, v in SORTS)
     H.append(
-        '<form class="sr-form" id="srForm" role="search" aria-label="Search documents" onsubmit="return false">'
+        '<form class="sr-wrap" id="srForm" role="search" aria-label="Search documents" onsubmit="return false">'
+        # top card: keywords and countries, above the map
+        '<div class="sr-form sr-top">'
         # keywords
         '<div class="sr-sec sr-kw"><label class="sr-h" for="srQ">Keywords</label>'
         '<input type="search" id="srQ" name="q" autocomplete="off" spellcheck="false" placeholder="For example: deepfake, &quot;data sovereignty&quot;" aria-describedby="srHelp">'
@@ -129,13 +132,6 @@ def search_page(D, ctx, head1, nav, foot):
         '<p class="sr-also" id="srAlso" hidden><span>Also searching:</span> <span class="sr-also-list" id="srAlsoList" translate="no"></span><span id="srAlsoX" hidden></span></p>'
         '<div class="sr-topics"><span class="sr-sub" id="srTopicsH">Suggested topics</span><div class="sr-chips" id="srTopics" role="group" aria-labelledby="srTopicsH"></div>'
         '<button type="button" class="sr-moret" id="srMoreT" aria-controls="srTopics" aria-expanded="false" hidden>More topics</button></div></div>'
-        # date
-        '<fieldset class="sr-sec sr-date"><legend class="sr-h">Date</legend>'
-        f'<div class="seg" role="group" aria-label="Date range">{seg}</div>'
-        '<div class="sr-date-x"><label class="sr-inline" id="srYearL" hidden>Year <select id="srYear"></select></label>'
-        '<span class="sr-custom" id="srCustom" hidden><label class="sr-inline">From <input type="date" id="srFrom"></label><label class="sr-inline">To <input type="date" id="srTo"></label></span></div>'
-        f'<p class="sr-help" id="srAsof">{e(i18n.T("Data as of {date}", date=asof))}</p>'
-        '<label class="sr-check"><input type="checkbox" id="srActions"> Include amendments and entry into force</label></fieldset>'
         # jurisdictions
         '<div class="sr-sec sr-jur"><label class="sr-h" for="srJ">Countries, regions and bodies</label>'
         '<div class="sr-picked" id="srPicked"><span class="sr-all" id="srAll">All countries</span></div>'
@@ -143,6 +139,14 @@ def search_page(D, ctx, head1, nav, foot):
         'placeholder="Type a country, region or body" aria-describedby="srJHelp">'
         '<ul class="sr-list" id="srJList" role="listbox" aria-label="Countries, regions and bodies" hidden></ul></div>'
         '<p class="sr-help" id="srJHelp">You can pick more than one.</p></div>'
+        '</div>' + smap + '<div class="sr-form sr-bottom">'
+        # date
+        '<fieldset class="sr-sec sr-date"><legend class="sr-h">Date</legend>'
+        f'<div class="seg" role="group" aria-label="Date range">{seg}</div>'
+        '<div class="sr-date-x"><label class="sr-inline" id="srYearL" hidden>Year <select id="srYear"></select></label>'
+        '<span class="sr-custom" id="srCustom" hidden><label class="sr-inline">From <input type="date" id="srFrom"></label><label class="sr-inline">To <input type="date" id="srTo"></label></span></div>'
+        f'<p class="sr-help" id="srAsof">{e(i18n.T("Data as of {date}", date=asof))}</p>'
+        '<label class="sr-check"><input type="checkbox" id="srActions"> Include amendments and entry into force</label></fieldset>'
         # more
         '<details class="sr-sec sr-more" id="srMoreF"><summary>More filters</summary><div class="sr-more-in">'
         f'<label class="sr-inline">Document type <select id="srType"><option value="">All types</option>{types}</select></label>'
@@ -150,7 +154,7 @@ def search_page(D, ctx, head1, nav, foot):
         # bar
         f'<div class="sr-bar"><label class="sr-inline">Sort <select id="srSort">{sorts}</select></label>'
         '<button type="button" class="btn" id="srCsv" disabled>Download CSV</button><button type="button" class="btn" id="srClear">Clear all</button></div>'
-        '</form>')
+        '</div></form>')
     H.append('<p class="sr-summary" id="srSummary" role="status" aria-live="polite">Loading…</p>'
              '<div class="sr-results" id="srResults"></div>'
              '<p class="sr-note" id="srNote" hidden></p>'
