@@ -11,6 +11,23 @@ import i18n
 OUT = ROOT / "dist"
 
 
+UN_OBSERVERS = ("PSE", "VAT")      # UN General Assembly observer states: in the dataset, not UN members
+
+
+def body_members(recs):
+    """{body code: [ISO3]} from each body's jurisdiction.members_rule: "un_members" = every UN member state in data/countries
+    (computed here, never stored), "list" = the file's members, "none" = no members (signatories vary by document).
+    A file without members_rule uses its members list when it has one."""
+    un = sorted(r["jurisdiction"]["id"] for r in recs.values() if r["jurisdiction"]["type"] == "country" and r["jurisdiction"]["id"] not in UN_OBSERVERS)
+    out = {}
+    for r in recs.values():
+        j = r["jurisdiction"]
+        if j["type"] == "country": continue
+        rule = j.get("members_rule") or ("list" if r.get("members") else "none")
+        out[j["id"]] = un if rule == "un_members" else list(r.get("members") or []) if rule == "list" else []
+    return out
+
+
 def assemble():
     meta = load(DATA / "meta.json")
     recs = load_all()
@@ -18,6 +35,7 @@ def assemble():
          "organizations": [], "sources": [], "regional_applicability": [], "instrument_relationships": load(DATA / "relationships.json"),
          "coverage_audit": [], "changes": list(load(DATA / "changes-global.json")), "narratives": {}, "regional_members": {}}
     order = sorted(recs.values(), key=lambda r: (r["jurisdiction"]["type"] != "country", r["jurisdiction"]["name"]))
+    members = body_members(recs)
     for r in order:
         j = r["jurisdiction"]
         D["jurisdictions"].append(j)
@@ -27,15 +45,17 @@ def assemble():
         if r.get("coverage_audit"): D["coverage_audit"].append(r["coverage_audit"])
         D["changes"] += r.get("changes", [])
         if r.get("narrative"): D["narratives"][j["id"]] = r["narrative"]
-        if j["type"] != "country" and r.get("members"): D["regional_members"][j["id"]] = r["members"]
+        if j["type"] != "country" and members.get(j["id"]): D["regional_members"][j["id"]] = members[j["id"]]
     # regional / international instruments apply to each member country (EU AI Act -> all 27, etc.)
     D["regional_applicability"] = []
     for r in order:
         j = r["jurisdiction"]
         if j["type"] == "country": continue
         for i in r.get("instruments", []):
-            rule = i.get("applies_to", "members")
-            targets = r.get("members", []) if rule == "members" else (rule if isinstance(rule, list) else [])
+            # a document with its own signatories (summit declarations) applies to them, not to a membership
+            rule = i.get("applies_to", "signatories" if i.get("signatories") else "members")
+            targets = (members.get(j["id"], []) if rule == "members" else list(i.get("signatories") or []) if rule == "signatories"
+                       else (rule if isinstance(rule, list) else []))
             i["regional_applicability"] = targets
             for cid in targets:
                 D["regional_applicability"].append({"jurisdiction_id": cid, "instrument_id": i["id"], "regional_jurisdiction_id": j["id"],
@@ -236,7 +256,7 @@ MIN_FIELDS = {
                     "issuing_authority", "publisher_name", "authority_type", "organization_id", "source_id", "source_url",
                     "publication_date", "verification_level", "government_level", "subnational_unit", "party_status",
                     "adherents", "regional_applicability"],
-    "jurisdictions": ["id", "iso2", "name", "short_name", "type", "aliases"],
+    "jurisdictions": ["id", "iso2", "name", "short_name", "type", "aliases", "group", "name_ar", "short_name_ar", "members_rule"],
     "organizations": ["id", "jurisdiction_id", "name", "authority_type", "government_level", "subnational_unit"],
     "regional_applicability": ["instrument_id", "jurisdiction_id", "regional_jurisdiction_id"],
 }

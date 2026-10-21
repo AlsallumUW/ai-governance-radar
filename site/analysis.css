@@ -76,19 +76,6 @@
 .fig-note{margin:8px 0 0;font-size:13px;color:var(--ink-2);max-width:var(--text)}
 .discovery{margin:12px 0 0;font-size:15px;color:var(--ink-2);max-width:var(--text)}
 @media print{.scope-toggle{display:none}}
-/* update requests */
-.sg-hero{padding:40px 0 20px}
-.sg-form{display:grid;gap:18px;max-width:640px;padding:24px 0}
-.sg-form label{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600;color:var(--ink)}
-.sg-form select,.sg-form input[type=url],.sg-form textarea{font:inherit;font-size:16px;font-weight:400;color:var(--ink);background:var(--surface);border:1px solid var(--axis);border-radius:6px;padding:9px 10px;width:100%;min-width:0}
-.sg-form fieldset{border:1px solid var(--hair);border-radius:8px;padding:10px 14px;margin:0;display:flex;flex-wrap:wrap;gap:6px 18px}
-.sg-form legend{font-size:14px;font-weight:600;padding:0 4px}
-.sg-form label.radio{flex-direction:row;align-items:center;gap:8px;font-weight:400}
-.sg-form .req{font-weight:400;color:var(--muted)}
-.btn-primary{background:var(--accent);border-color:var(--accent);color:var(--page)}
-.sg-error{margin:0;color:#b42318;font-size:14px}
-.sg-note{margin:0;font-size:14px;color:var(--ink-2)}
-@media (prefers-color-scheme:dark){:root:where(:not([data-theme="light"])) .sg-error{color:#ff8a7a}}
 /* UX phase 5: dark labels on heat step 7 in dark mode (AA contrast) */
 @media (prefers-color-scheme:dark){:root:where(:not([data-theme="light"])) .chart .h7+.hv{fill:#0b0b0b}}
 :root[data-theme="dark"] .chart .h7+.hv{fill:#0b0b0b}
@@ -183,3 +170,30 @@ html[lang="ar"] .sr-title,html[lang="ar"] .sr-ot,html[lang="ar"] .sr-ex,html[lan
   .sr-via{display:inline;margin-inline-start:8px}
 }
 @media print{.sr-form,.sr-morep{display:none}}
+/* Global and regional documents (/global/) */
+.gd-lede{margin:14px 0 0;font-size:16px}
+.gd-group{margin:22px 0 0}
+.gd-gh{margin:0 0 10px;font-size:15px;font-weight:650;letter-spacing:.02em;color:var(--ink-2)}
+.gd-gh .count{color:var(--muted);font-weight:500;margin-inline-start:4px}
+.gd-orgs{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
+.gd-org{display:flex;flex-direction:column;gap:2px;padding:12px 14px;border:1px solid var(--hair);border-radius:8px;background:var(--surface);min-width:0}
+.gd-oname{font-weight:650;font-size:15px;line-height:1.35;text-decoration:none}.gd-oname:hover{text-decoration:underline}
+.gd-om{font-size:13px;color:var(--muted)}
+.gd-controls .gd-y select{min-width:7.5em}
+.gd-controls select{max-width:100%}
+.gd-actions{display:flex;flex-wrap:wrap;gap:8px;margin:0;flex-basis:100%}
+.gd-list{max-width:900px}
+.gd-row{padding:18px 0}
+.gd-on{margin:0 0 4px;font-size:13px;font-weight:600;letter-spacing:.02em}
+.gd-on a{text-decoration:none}.gd-on a:hover{text-decoration:underline}
+.gd-row .inst-title{font-size:1.06rem}
+.gd-row .inst-title a{color:var(--ink);text-decoration-color:var(--axis)}
+.gd-row .inst-title a:hover{text-decoration-color:var(--ink)}
+.gd-row .tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 0}
+.gd-none{font-size:15px;padding:18px 0}
+details.signed{margin:10px 0 0;font-size:14px}
+details.signed>summary{cursor:pointer;color:var(--accent);font-weight:600}
+details.signed .member-grid{margin:10px 0 0}
+details.signed .chip{font-size:13px}
+@media (max-width:560px){.gd-controls label{flex:1 1 140px}.gd-controls .grow{flex-basis:100%}.gd-orgs{grid-template-columns:1fr}}
+@media print{.chart-index,.gd-controls,.gd-actions{display:none}}

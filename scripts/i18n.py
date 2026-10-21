@@ -38,11 +38,12 @@ def load():
     names = {}
     for p in sorted((ROOT / "data/countries").glob("*.json")) + sorted((ROOT / "data/regional").glob("*.json")):
         j = json.loads(p.read_text(encoding="utf-8"))["jurisdiction"]
-        ar = d.get("countries", {}).get(j["id"]) or d.get("bodies", {}).get(j["id"])
+        # bodies: name_ar / short_name_ar in their own data file first, then the bodies / body_short entries here
+        ar = d.get("countries", {}).get(j["id"]) or (j.get("name_ar") if j["type"] != "country" else None) or d.get("bodies", {}).get(j["id"])
         if ar:
             names[j["name"]] = ar
-            if j.get("short_name") and j["short_name"] != j["id"]: names[j["short_name"]] = ar
-            if j["type"] != "country": names[j["id"]] = d.get("body_short", {}).get(j["id"], ar)
+            if j.get("short_name") and j["short_name"] != j["id"]: names[j["short_name"]] = j.get("short_name_ar") or ar
+            if j["type"] != "country": names[j["id"]] = j.get("short_name_ar") or d.get("body_short", {}).get(j["id"], ar)
     for k, v in names.items(): s.setdefault(k, v)
     pats = [(re.compile(p), r) for p, r in d.get("patterns", [])]
     return d, s, pats

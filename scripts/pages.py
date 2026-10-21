@@ -18,22 +18,54 @@ SITE_URL = os.environ.get("RADAR_SITE_URL", "https://alsallumuw.github.io/ai-gov
 BINDING = {"binding_law", "binding_regulation", "international_treaty", "administrative_policy_mandatory_in_scope"}
 WEIGHT = {"binding_law": 0, "international_treaty": 1, "binding_regulation": 2, "administrative_policy_mandatory_in_scope": 3,
           "administrative_guideline": 4, "regulatory_opinion": 4, "nonbinding_guidance": 5, "voluntary_code": 5,
-          "national_strategy": 6, "consultation_draft": 7}
+          "national_strategy": 6, "consultation_draft": 7, "nonbinding_recommendation": 4, "declaration": 5, "regional_strategy": 6}
 STATUS_LABEL = {"binding_law": "Law (binding)", "international_treaty": "International treaty", "binding_regulation": "Regulation (binding)",
                 "administrative_policy_mandatory_in_scope": "Mandatory policy (in scope)", "administrative_guideline": "Administrative guideline",
                 "regulatory_opinion": "Regulatory opinion", "nonbinding_guidance": "Non-binding guidance", "voluntary_code": "Voluntary code",
-                "national_strategy": "National strategy", "consultation_draft": "Draft / consultation"}
+                "national_strategy": "National strategy", "consultation_draft": "Draft / consultation",
+                "nonbinding_recommendation": "Recommendation or resolution", "declaration": "Declaration", "regional_strategy": "Strategy"}
 TYPE_OF = {"binding_law": "law", "binding_regulation": "regulation", "international_treaty": "treaty",
            "administrative_policy_mandatory_in_scope": "mandatory", "administrative_guideline": "guidance", "nonbinding_guidance": "guidance",
-           "regulatory_opinion": "guidance", "voluntary_code": "guidance", "national_strategy": "strategy", "consultation_draft": "draft"}
+           "regulatory_opinion": "guidance", "voluntary_code": "guidance", "national_strategy": "strategy", "consultation_draft": "draft",
+           "nonbinding_recommendation": "recommendation", "declaration": "declaration", "regional_strategy": "strategy"}
 TYPES = [("law", "Law"), ("regulation", "Regulation"), ("treaty", "Treaty"), ("mandatory", "Mandatory policy"), ("guidance", "Guidance & opinions"),
-         ("strategy", "Strategy"), ("draft", "Draft / consultation")]
+         ("recommendation", "Recommendation or resolution"), ("declaration", "Declaration"), ("strategy", "Strategy"), ("draft", "Draft / consultation")]
 LIFE = {"draft": "Draft", "consultation": "In consultation", "consultation_closed": "Consultation closed", "published": "Published", "adopted": "Adopted", "in_force": "In force",
         "superseded": "Superseded", "repealed": "Repealed"}
 VERIFY = {"reviewed_primary_metadata": "Reviewed against the official text", "primary_source_located": "Official source located; text not fully reviewed"}
 EVENT = {"published": "Published", "revised": "Revised", "consultation": "Consultation", "adopted": "Adopted", "applied": "Applies / in force",
          "superseded": "Superseded", "repealed": "Repealed", "event": "Event"}
-BODY_ORDER = ["EU", "GCC", "AU", "ASEAN", "COE", "UNESCO", "OECD", "ICESCO", "ALECSO", "G7", "G20"]
+# regional and international bodies are grouped (data/regional/<CODE>.json -> jurisdiction.group) and ordered by group, then English name
+GROUP_ORDER = ["un-system", "europe", "africa", "americas", "asia-pacific", "arab-islamic", "economic", "finance-standards", "security", "summits", "other"]
+GROUP_LABEL = {"un-system": "UN system", "europe": "Europe", "africa": "Africa", "americas": "Americas", "asia-pacific": "Asia and the Pacific",
+               "arab-islamic": "Arab and Islamic organisations", "economic": "Economic groupings",
+               "finance-standards": "Financial and law-enforcement standard-setters", "security": "Security",
+               "summits": "Summits and multilateral declarations", "other": "Other"}
+
+
+def body_group(j):
+    g = (j or {}).get("group")
+    return g if g in GROUP_LABEL else "other"
+
+
+def body_order(jurisdictions):
+    """Codes of every regional / international body, by group (GROUP_ORDER) and then English name."""
+    js = jurisdictions.values() if isinstance(jurisdictions, dict) else jurisdictions
+    return [j["id"] for j in sorted((j for j in js if j.get("type") != "country"),
+                                    key=lambda j: (GROUP_ORDER.index(body_group(j)), (j.get("name") or j["id"]).lower()))]
+
+
+def body_name(j, short=False):
+    """A body's name in the page language: on Arabic pages name_ar / short_name_ar from its data file, else site/i18n/ar.json."""
+    en = (j.get("short_name") or j["id"]) if short else j.get("name") or j["id"]
+    if i18n.LANG != "ar": return en
+    return body_name_ar(j, short) or en
+
+
+def body_name_ar(j, short=False):
+    """Arabic name of a body whatever the page language (None if the site has none)."""
+    if short: return j.get("short_name_ar") or i18n.D.get("body_short", {}).get(j["id"]) or body_name_ar(j)
+    return j.get("name_ar") or i18n.D.get("bodies", {}).get(j["id"]) or None
 # old body codes: a redirect page is kept at /body/<old>/ and links with ?body=<old> are read as the new code
 BODY_REDIRECTS = {"ISESCO": "ICESCO"}
 
@@ -47,7 +79,8 @@ def kind(i):
 
 PIPE_TYPE = {"binding_law": "Law", "binding_regulation": "Regulation", "international_treaty": "Treaty",
              "administrative_policy_mandatory_in_scope": "Mandatory policy", "administrative_guideline": "Guideline", "regulatory_opinion": "Opinion",
-             "nonbinding_guidance": "Guidance", "voluntary_code": "Code", "national_strategy": "Strategy"}
+             "nonbinding_guidance": "Guidance", "voluntary_code": "Code", "national_strategy": "Strategy",
+             "nonbinding_recommendation": "Recommendation", "declaration": "Declaration", "regional_strategy": "Strategy"}
 
 
 def pipe_type(i):
@@ -291,7 +324,19 @@ def ar_issuer(name, jid=None):
     return _AR_ISSUERS.get(name.strip()) or _AR_ISSUERS.get(_bare(name)) or name
 
 
-def inst_item(i, orgs, srcs, cats, regional_from=None):
+def signed_by(i, jur, up="../../"):
+    """Summit declarations and other texts endorsed document by document: "Signed by N governments", names in a <details>."""
+    sig = [c for c in (i.get("signatories") or []) if c]
+    if not sig: return ""
+    name = lambda c: body_name(jur[c]) if jur.get(c, {}).get("type") not in (None, "country") else i18n.tr(jur.get(c, {}).get("name", c))
+    href = lambda c: f'{up}{"country" if jur.get(c, {}).get("type") == "country" else "body"}/{c}/'
+    chips = "".join((f'<a class="chip" href="{href(c)}">{e(name(c))}</a>' if c in jur else f'<span class="chip">{e(c)}</span>')
+                    for c in sorted(sig, key=lambda c: i18n.name_key(jur.get(c, {}).get("name", c))))
+    lab = i18n.T("Signed by 1 government") if len(sig) == 1 else i18n.T("Signed by {n} governments", n=len(sig))
+    return f'<details class="signed"><summary>{e(lab)}</summary><p class="member-grid">{chips}</p></details>'
+
+
+def inst_item(i, orgs, srcs, cats, regional_from=None, jur=None):
     title = i.get("english_title") or i.get("official_title")
     orig = i.get("official_title") if i.get("official_title") and i.get("official_title") != title else None
     issuer = ar_issuer(i.get("issuing_authority") or orgs.get(i.get("organization_id"), {}).get("name") or i.get("publisher_name"), i.get("jurisdiction_id"))
@@ -322,6 +367,7 @@ def inst_item(i, orgs, srcs, cats, regional_from=None):
             + f'<p class="inst-foot">{" · ".join(links)}<span class="verify v-{e(vl)}">{e(VERIFY.get(vl, vl or "Verification not recorded"))}</span>'
             + (f'<span class="inst-cats">{e(catnames)}</span>' if catnames else "") + '</p>'
             + check_line(i)
+            + (signed_by(i, jur) if jur is not None else "")
             + '</article>')
 
 
@@ -446,7 +492,7 @@ def rail(sections, locator_svg=""):
             + '<p class="rail-top"><a href="#top">Back to top ↑</a></p></div></aside>')
 
 
-def instruments_section(rows, orgs, srcs, cats, sid="instruments", heading="Instruments", lead=""):
+def instruments_section(rows, orgs, srcs, cats, sid="instruments", heading="Instruments", lead="", jur=None):
     present_types = [t for t in TYPES if any(TYPE_OF.get(i.get("legal_status")) == t[0] for i in rows)]
     present_cats = [(k, v) for k, v in cats.items() if any(k in i.get("categories", []) for i in rows)]
     rows = sorted(rows, key=lambda i: (date_key(i.get("publication_date")), i.get("english_title") or ""), reverse=True)
@@ -456,7 +502,7 @@ def instruments_section(rows, orgs, srcs, cats, sid="instruments", heading="Inst
                 '<label>Category <select data-fcat><option value="">All categories</option>' + "".join(f'<option value="{k}">{e(v)}</option>' for k, v in present_cats) + '</select></label>'
                 '<label class="grow">Search <input type="search" data-fq placeholder="Title or issuer"></label></div>')
     return (f'<section id="{sid}" class="block list-block"><h2>{e(heading)} <span class="count">{len(rows)}</span></h2>{lead}{controls}'
-            f'<p class="list-status" aria-live="polite"></p><div class="inst-list" data-list>' + "".join(inst_item(i, orgs, srcs, cats) for i in rows) + '</div></section>')
+            f'<p class="list-status" aria-live="polite"></p><div class="inst-list" data-list>' + "".join(inst_item(i, orgs, srcs, cats, jur=jur) for i in rows) + '</div></section>')
 
 
 # ---------------------------------------------------------------- pages
@@ -515,7 +561,7 @@ def country_page(j, D, rec, flags, ctx):
     # memberships and treaty facts are not shown on country pages (leadership review, 20 Oct 2026): bodies have their own pages
     H.append('<section class="intro" aria-label="Last reviewed">'
              + f'<ul class="facts"><li><span class="k">Last reviewed</span><span class="v">{e(fmt_date(narr.get("last_deep_review")) or "Not yet deep-reviewed")}</span></li></ul>'
-             + f'<p class="hero-links"><a href="../../timeline/?country={e(jid)}">See this country on the timeline →</a><a href="../../analysis/">Global analysis →</a><a href="../../suggest/?country={e(jid)}">Suggest an update →</a></p></section>')
+             + f'<p class="hero-links"><a href="../../timeline/?country={e(jid)}">See this country on the timeline →</a><a href="../../analysis/">Global analysis →</a></p></section>')
     # b. overview + c. charts in a two-column grid
     ov = ""
     zero = ""
@@ -613,20 +659,23 @@ def body_page(b, D, rec, flags, ctx):
     rows = [i for i in D["instruments"] if i["jurisdiction_id"] == bid]
     narr = D["narratives"].get(bid) or {}
     members = sorted(ctx["members"].get(bid, ()), key=lambda c: i18n.name_key(ctx["jur"].get(c, {}).get("name", c)))
+    no_members = b.get("members_rule") == "none" or not members
     canon = f"{SITE_URL}body/{bid}/"
     title = f"{b['name']}: AI governance instruments | AI Governance Radar"
     desc = first_sentence(narr.get("summary")) or f"Instruments of the {b['name']} recorded on the AI Governance Radar, and the countries they apply to."
     leads = rec.get("leads") or []
     secs = [("overview", "Overview"), ("charts", "Charts"), ("instruments", "Instruments")] + ([("members", "Members")] if members else []) + ([("leads", "Leads")] if leads else []) + [("method", "Method")]
     n_bind = sum(1 for i in rows if kind(i) == "binding"); n_draft = sum(1 for i in rows if kind(i) == "draft")
-    stats = [("Instruments", len(rows)), ("Binding or mandatory", n_bind), ("Non-binding", len(rows) - n_bind - n_draft), ("Drafts", n_draft), ("Member states", len(members))]
+    stats = [("Instruments", len(rows)), ("Binding or mandatory", n_bind), ("Non-binding", len(rows) - n_bind - n_draft), ("Drafts", n_draft)] + ([] if no_members else [("Member states", len(members))])
     H = [head(title, desc, canon), f'<body class="cp" data-jid="{e(bid)}" data-build="{e(D["meta"].get("build_date") or "")}">',
-         topbar(secs, bar_ident(b.get("short_name") or b["name"], stats)), '<main id="main">']
+         topbar(secs, bar_ident(body_name(b, short=True), stats)), '<main id="main">']
     # no logos (trademarks): the hero shows the member states on a world map
-    H.append(hero("Regional / international body", f'<h1>{e(b["name"])}</h1>', stats, art=geo.world(members, b["name"], body=bid) if members else None, kind="map"))
+    H.append(hero("Regional / international body", f'<h1>{e(body_name(b))}</h1>', stats, art=geo.world(members, b["name"], body=bid) if members else None, kind="map"))
     H.append('<div class="page layout">' + rail(secs) + '<div class="content">')
     H.append(f'<section class="intro" aria-label="About the counts"><p class="stats-note">{COUNT_NOTE} Instruments are recorded once for the body and are not counted on member countries\' pages.</p>'
-             + f'<p class="hero-links"><a href="../../timeline/?body={e(bid)}">See this body and its members on the timeline →</a><a href="../../analysis/">Global analysis →</a><a href="../../suggest/?country={e(bid)}">Suggest an update →</a></p></section>')
+             + ('<p class="stats-note">Signatories vary by document.</p>' if no_members else "")
+             + f'<p class="hero-links"><a href="../../timeline/?body={e(bid)}">' + ("See this body on the timeline →" if no_members else "See this body and its members on the timeline →")
+             + '</a><a href="../../global/">Global and regional documents →</a><a href="../../analysis/">Global analysis →</a></p></section>')
     years_svg, years_tab, undated = chart_years(rows); status_svg, status_tab = chart_status(rows)
     figs = []
     if years_svg: figs.append(figure("fig-years", "Instruments per year", "By publication year: binding or mandatory, non-binding and drafts.",
@@ -649,7 +698,7 @@ def body_page(b, D, rec, flags, ctx):
                + "".join(f'<tr><th scope="row">{link(c)}</th><td>{e(s)}</td></tr>' for c, s in sorted(rows_c, key=order)) + '</tbody></table>')
     ov += '</section>'
     H.append('<div class="lede-grid">' + ov + '<aside id="charts" class="panels" aria-label="Charts">' + "".join(figs) + '</aside></div>')
-    if rows: H.append(instruments_section(rows, ctx["orgs"], ctx["srcs"], cats))
+    if rows: H.append(instruments_section(rows, ctx["orgs"], ctx["srcs"], cats, jur=ctx["jur"]))
     if members:
         H.append(f'<section id="members" class="block"><h2>Member states <span class="count">{len(members)}</span></h2><p class="member-grid">'
                  + "".join(f'<a class="chip" href="../../country/{c}/">{e(ctx["jur"].get(c, {}).get("name", c))}</a>' for c in members) + '</p>'
@@ -667,7 +716,7 @@ def body_page(b, D, rec, flags, ctx):
 
 def footer(D, up="../../"):
     return (f'<footer class="pagefoot"><p>AI Governance Radar · Prepared by Faisal Alsallum · Data as of {e(fmt_date(D["meta"].get("build_date")))}</p>'
-            f'<p><a href="{up}" id="footMap">World map</a> · <a href="{up}search/">Search</a> · <a href="{up}analysis/">Analysis</a> · <a href="{up}timeline/">Timeline</a> · <a href="{up}suggest/">Suggest an update</a> · <a href="{up}?about=method">Methodology</a> · <a href="{up}credits/">Photo credits</a></p></footer>')
+            f'<p><a href="{up}" id="footMap">World map</a> · <a href="{up}search/">Search</a> · <a href="{up}analysis/">Analysis</a> · <a href="{up}timeline/">Timeline</a> · <a href="{up}global/">Global and regional documents</a> · <a href="{up}?about=method">Methodology</a> · <a href="{up}credits/">Photo credits</a></p></footer>')
 
 
 ROLE_LABEL = {"hero": "Header", "feature": "Beside the overview", "backdrop": "Behind the charts", "band": "Before the instruments"}
@@ -766,9 +815,9 @@ def write_all(D, recs, out, flags, mirror=False):
            "orgs": {o["id"]: o for o in D["organizations"]}, "srcs": {s["id"]: s for s in D["sources"]},
            "today": D["meta"].get("build_date") or dt.date.today().isoformat(), "photos": load_photos(),
            "explore_overrides": {k: v for k, v in json.loads((ROOT / "data/explore_overrides.json").read_text(encoding="utf-8")).items() if not k.startswith("_")} if (ROOT / "data/explore_overrides.json").exists() else {},
-           "n_inst": collections.Counter(i["jurisdiction_id"] for i in D["instruments"])}
+           "n_inst": collections.Counter(i["jurisdiction_id"] for i in D["instruments"]), "body_order": body_order(jur)}
     (out / "assets").mkdir(parents=True, exist_ok=True)
-    for f in () if mirror else ("country.css", "country.js", "analysis.css", "analysis.js", "timeline.js", "suggest.js", "search.js"):
+    for f in () if mirror else ("country.css", "country.js", "analysis.css", "analysis.js", "timeline.js", "search.js", "global.js"):
         (out / "assets" / f).write_text((ROOT / "site" / f).read_text(encoding="utf-8"), encoding="utf-8")
     # photos (site/img) are copied as they are; never hotlinked
     if (ROOT / "site/img").is_dir() and not mirror:

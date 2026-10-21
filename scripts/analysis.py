@@ -9,7 +9,7 @@ Called from pages.write_all with the same context the country pages use. Nothing
 import json, math, re, statistics
 import i18n
 from i18n import tr
-from pages import (ar_title, e, kind, KIND_LABEL, KIND_CLASS, COUNT_NOTE, STATUS_LABEL, BODY_ORDER, SITE_URL, fmt_date, year)
+from pages import (ar_title, body_group, e, kind, KIND_LABEL, KIND_CLASS, COUNT_NOTE, GROUP_LABEL, STATUS_LABEL, SITE_URL, fmt_date, year)
 
 REGIONS = ["Africa", "Americas", "Asia", "Europe", "Oceania"]
 GROUPS = ("soft", "binding", "draft")          # stack order, bottom to top (orange / blue / aqua: the weak pair is never adjacent)
@@ -205,7 +205,7 @@ def fig_years(N, today):
     take = _T("{peak} has the most country instruments ({n}). {p23}% of the {dated} dated country instruments were published in 2023 or later; "
               "{psoft}% of all dated country instruments are non-binding.", peak=peak, n=tot[peak], p23=pct(since23, dated), dated=f"{dated:,}", psoft=pct(soft, dated))
     desc = _T("National, state/provincial and local instruments by publication year. *{y} runs to {date} only. "
-              "The row beneath the axis counts instruments of regional and international bodies (EU, GCC, AU, ASEAN, Council of Europe, UNESCO, OECD, ICESCO, ALECSO, G7, G20), not stacked.",
+              "The row beneath the axis counts instruments of regional and international bodies (listed on the Global and regional documents page), not stacked.",
               y=keys[-1], date=fmt_date(today))
     note = _T("Undated: {c} country, {r} regional (not shown)", c=und_c, r=und_r)
     return afig("fig-years", "Instruments per year", take, desc, "".join(o), ["Year", "Binding or mandatory", "Non-binding", "Drafts", "Country total", "Regional bodies"], rows, note, LEGEND), {
@@ -537,7 +537,7 @@ def head1(title, desc, canon):
 
 
 def nav(active):
-    links = [("search", "Search"), ("analysis", "Analysis"), ("timeline", "Timeline"), ("suggest", "Suggest an update")]
+    links = [("search", "Search"), ("analysis", "Analysis"), ("timeline", "Timeline"), ("global", "Global and regional documents")]
     return ('<header class="topnav"><a class="back" id="backToMap" href="../">← World map</a><span class="site">AI Governance Radar</span>'
             '<nav class="toc sitenav" aria-label="Site">' + "".join(f'<a href="../{k}/"{" aria-current=page" if k == active else ""}>{v}</a>' for k, v in links)
             + '<a href="../?about=method">Methodology</a></nav></header>')
@@ -545,7 +545,7 @@ def nav(active):
 
 def foot(D):
     return (f'<footer class="pagefoot"><p>AI Governance Radar · Prepared by Faisal Alsallum · Data as of {e(fmt_date(D["meta"].get("build_date")))}</p>'
-            '<p><a href="../">World map</a> · <a href="../search/">Search</a> · <a href="../analysis/">Analysis</a> · <a href="../timeline/">Timeline</a> · <a href="../suggest/">Suggest an update</a> · <a href="../?about=method">Methodology</a></p></footer>')
+            '<p><a href="../">World map</a> · <a href="../search/">Search</a> · <a href="../analysis/">Analysis</a> · <a href="../timeline/">Timeline</a> · <a href="../global/">Global and regional documents</a> · <a href="../?about=method">Methodology</a></p></footer>')
 
 
 DISCOVERY = "Recent years are better represented: newer documents are more often online, so growth since 2023 is partly a discovery effect."
@@ -621,11 +621,22 @@ def timeline_data(D, ctx):
                      ar_title(i) or i.get("english_title") or i.get("official_title") or "", iss, st_keys.index(i.get("legal_status") or ""),
                      [cat_keys.index(c) for c in i.get("categories", []) if c in cat_keys], lv.index(i.get("government_level")) if i.get("government_level") in lv else 0,
                      i.get("source_url") or i.get("official_webpage_url") or "", app.get(i["id"], [])])
-    bodies = {b: [jur[b]["name"] if b in jur else b, sorted(ctx["members"].get(b, ()))] for b in BODY_ORDER if b in jur}
+    # [name, members, group]; a body without members (signatories vary by document) filters to its own documents only
+    bodies = {b: [jur[b]["name"], sorted(ctx["members"].get(b, ())), body_group(jur[b])] for b in ctx["body_order"]}
     return {"asof": ctx["today"], "fields": ["id", "jurisdiction", "date", "group", "title", "issuer", "status", "categories", "level", "source", "applies_to"],
             "groups": [KIND_LABEL[g] for g in ("binding", "soft", "draft")], "statuses": [[k, STATUS_LABEL.get(k) or (k.replace("_", " ").capitalize() if k else "Not recorded")] for k in st_keys],
             "categories": [[k, v] for k, v in D["categories"].items()], "levels": [[k, v] for k, v in LEVELS], "regions": REGIONS,
             "jurisdictions": J, "bodies": bodies, "items": rows}
+
+
+def body_options(bodies):
+    """<option>s for a body filter, in <optgroup>s by group (bodies are already in group order)."""
+    out, last = [], None
+    for k, v in bodies.items():
+        if v[2] != last:
+            out.append(("</optgroup>" if last else "") + f'<optgroup label="{e(GROUP_LABEL[v[2]])}">'); last = v[2]
+        out.append(f'<option value="{k}">{e(v[0])}</option>')
+    return "".join(out) + ("</optgroup>" if last else "")
 
 
 def timeline_page(D, ctx):
@@ -640,7 +651,7 @@ def timeline_page(D, ctx):
     filters = ('<form class="tl-filters" id="tlFilters" role="search" aria-label="Filter the timeline" onsubmit="return false">'
                + sel("country", "Country", "".join(f'<option value="{k}">{e(v)}</option>' for k, v in countries))
                + sel("region", "Region", "".join(f'<option>{r}</option>' for r in REGIONS))
-               + sel("body", "International body (members)", "".join(f'<option value="{k}">{e(v[0])}</option>' for k, v in T["bodies"].items()))
+               + sel("body", "International body (members)", body_options(T["bodies"]))
                + sel("cat", "Category", "".join(f'<option value="{k}">{e(v)}</option>' for k, v in T["categories"]))
                + sel("status", "Legal status", st_opts)
                + sel("level", "Government level", "".join(f'<option value="{k}">{e(v)}</option>' for k, v in LEVELS))
@@ -663,45 +674,28 @@ def timeline_page(D, ctx):
     return "".join(H)
 
 
-# ---------------------------------------------------------------- update requests
-REPO_URL = "https://github.com/AlsallumUW/ai-governance-radar"
-SUGGEST_NOTE = "Suggestions are checked against official sources before anything is added. Submitting requires a free GitHub account."
-
-
-def suggest_page(D, ctx):
-    """A static form that opens a prefilled GitHub issue (template update-request.yml). No server, no e-mail."""
-    canon = f"{SITE_URL}suggest/"
-    title = "Suggest an update | AI Governance Radar"
-    desc = "Suggest a new AI-governance document, a correction, a status change or a broken link. Suggestions are checked against official sources."
-    juris = sorted(D["jurisdictions"], key=lambda j: (j["type"] != "country", i18n.name_key(j["name"])))
-    opts = ('<optgroup label="Countries">' + "".join(f'<option value="{e(j["id"])}">{e(j["name"])}</option>' for j in juris if j["type"] == "country") + '</optgroup>'
-            '<optgroup label="International bodies">' + "".join(f'<option value="{e(j["id"])}">{e(j["name"])}</option>' for j in juris if j["type"] != "country") + '</optgroup>')
-    kinds = ["New instrument", "Correction", "Status change", "Broken link"]
-    H = [head1(title, desc, canon), '<body class="cp sg">', nav("suggest"), '<main class="page">']
-    H.append('<header class="hero sg-hero"><p class="eyebrow">Update requests</p><h1>Suggest an update</h1>'
-             '<p class="stats-note">Found a new official AI-governance document, an error, a change of status or a broken link? Send it here. '
-             'Please give the official source: the document itself or the issuing body\'s own page. News articles, aggregators and social media cannot be used.</p></header>')
-    H.append(f'<form class="sg-form" id="sgForm" data-repo="{e(REPO_URL)}" novalidate>'
-             f'<label>Country or body<select name="country" id="sgCountry" required><option value="">Choose…</option>{opts}</select></label>'
-             '<fieldset><legend>What is new or wrong?</legend>' + "".join(
-                 f'<label class="radio"><input type="radio" name="change_type" value="{e(k)}"{" checked" if n == 0 else ""}> {e(k)}</label>' for n, k in enumerate(kinds)) + '</fieldset>'
-             '<label>Official source URL <span class="req">(required)</span><input type="url" name="source_url" id="sgUrl" required placeholder="https://" inputmode="url" autocomplete="off"></label>'
-             '<label>Notes<textarea name="notes" rows="5" placeholder="What should change, and where on the site (instrument title or page)."></textarea></label>'
-             '<p class="sg-error" id="sgError" role="alert" hidden></p>'
-             '<p class="sg-actions"><button type="submit" class="btn btn-primary">Open a GitHub issue</button></p>'
-             f'<p class="sg-note">{e(SUGGEST_NOTE)}</p></form>')
-    H.append('</main>' + foot(D) + '<script src="../assets/suggest.js" defer></script></body></html>')
-    return "".join(H)
+def moved_stub():
+    """/suggest/ (the update-request form, removed 21 Oct 2026): a tiny page that sends old links to the home page."""
+    if i18n.LANG == "ar":
+        return ('<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:,">'
+                f'<title>نُقلت هذه الصفحة | رادار حوكمة الذكاء الاصطناعي</title><meta name="robots" content="noindex"><link rel="canonical" href="{SITE_URL}ar/">'
+                '<meta http-equiv="refresh" content="0; url=../"></head><body><p>نُقلت هذه الصفحة. <a href="../">انتقل إلى الصفحة الرئيسية</a>.</p></body></html>')
+    # lang="en" plus an attribute: localise() leaves the stub alone (no language switch, no alternates)
+    return ('<!doctype html><html lang="en" data-moved><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:,">'
+            f'<title>This page has moved | AI Governance Radar</title><meta name="robots" content="noindex"><link rel="canonical" href="{SITE_URL}">'
+            '<meta http-equiv="refresh" content="0; url=../"></head><body><p>This page has moved. <a href="../">Continue to the home page</a>.</p></body></html>')
 
 
 def write(D, recs, out, ctx):
-    import search
-    pages_ = (("analysis", analysis_page(D, recs, ctx)), ("timeline", timeline_page(D, ctx)), ("suggest", suggest_page(D, ctx)),
-              ("search", search.search_page(D, ctx, head1, nav, foot)))
+    import search, globaldocs
+    pages_ = (("analysis", analysis_page(D, recs, ctx)), ("timeline", timeline_page(D, ctx)),
+              ("search", search.search_page(D, ctx, head1, nav, foot)), ("global", globaldocs.global_page(D, ctx, head1, nav, foot)))
     if i18n.LANG != "ar": search.write_assets(out)      # shared data files: written once, beside the English assets
     for p, html_ in pages_:
         (out / p).mkdir(parents=True, exist_ok=True)
         (out / p / "index.html").write_text(html_, encoding="utf-8")
+    (out / "suggest").mkdir(parents=True, exist_ok=True)
+    (out / "suggest" / "index.html").write_text(moved_stub(), encoding="utf-8")
 
 
 if __name__ == "__main__":
