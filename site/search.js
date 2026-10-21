@@ -197,7 +197,7 @@ function render(keepShown){
   const mine=also.filter(a=>isAr(a)===AR),other=also.length>mine.length,list=mine.length?mine:also;
   $('#srAlso').hidden=!also.length;$('#srAlsoList').innerHTML=list.map(a=>`<bdi>${esc(a)}</bdi>`).join(AR?'، ':', ');
   const x=$('#srAlsoX');x.hidden=!(mine.length&&other);x.textContent=x.hidden?'':' '+tr(AR?'and their English equivalents':'and their Arabic equivalents');
-  $$('#srTopics button').forEach(b=>b.setAttribute('aria-pressed',String(Q.some(q=>q.groups.some(g=>g.key===b.dataset.key)))));
+  $$('#srTopics button,#srCloud button').forEach(b=>b.setAttribute('aria-pressed',String(Q.some(q=>q.groups.some(g=>g.key===b.dataset.key)))));
   topics()}
 
 /* Suggested topics: the first TOPN groups, then "More topics"; a pressed topic among the others shows them all */
@@ -291,6 +291,10 @@ load().then(()=>{
   $('#srTopics').innerHTML=GROUPS.map(g=>`<button type="button" class="sr-topic" data-key="${esc(g.key)}" aria-pressed="false" translate="no">${esc(g.label)}</button>`).join('');
   $('#srTopics').addEventListener('click',ev=>{const b=ev.target.closest('.sr-topic');if(!b)return;const g=GROUPS.find(x=>x.key===b.dataset.key);F.q=g.q;F.rel=true;toForm();update()});
   $('#srMoreT').addEventListener('click',()=>{TOPALL=!TOPALL;topics();if(!TOPALL)$('#srMoreT').focus()});
+  /* the topic cloud at the top of the page runs the same search as the chips, then brings the results into view */
+  const cloud=$('#srCloud');if(cloud)cloud.addEventListener('click',ev=>{const b=ev.target.closest('.tb-b');if(!b)return;const g=GROUPS.find(x=>x.key===b.dataset.key);if(!g)return;
+    F.q=g.q;F.rel=true;toForm();update();
+    sum.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'})});
   buildOpts();F=readURL();toForm();render();
   window.RADAR_SEARCH={count:()=>RES.length,state:()=>JSON.parse(JSON.stringify(F)),asOf:()=>ASOF,
     rows:()=>RES.map(it=>({id:it.id,j:it.j,d:it.d,via:it.via,type:J[it.j][2]})),terms:()=>Q.map(q=>q.alts.map(a=>a[1]))};

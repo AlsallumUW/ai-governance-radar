@@ -830,7 +830,7 @@ def credits_page(D, ctx):
         H.append('<p class="section-lede">No suitable freely licensed photo was found for: ' + ", ".join(f'<a href="../country/{c}/">{e(jur.get(c, {}).get("name", c))}</a>' for c in fallback)
                  + '. These pages show an outline of the country instead.</p>')
     if brows:
-        H.append('<h2 class="credits-h">International and regional organisations</h2>' + table_("Organisation", brows))
+        H.append('<h2 class="credits-h" id="organisations">International and regional organisations</h2>' + table_("Organisation", brows))
     H.append('</main>' + footer(D, "../") + '</body></html>')
     return "".join(H)
 

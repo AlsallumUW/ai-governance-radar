@@ -9,6 +9,7 @@ the matching, filtering and CSV export in the browser. Nothing here edits data.
 """
 import hashlib, json
 import i18n
+import visuals
 from common import ROOT
 from pages import (ar_issuer, ar_title, body_name_ar, e, fmt_date, EVENT, LIFE, SITE_URL, STATUS_LABEL, TYPES, TYPE_OF)
 from subregions import SUBREGION
@@ -109,8 +110,8 @@ def search_page(D, ctx, head1, nav, foot):
     pre = "".join(f'<link rel="preload" id="{i}" href="{_url(n)}" as="fetch" crossorigin="anonymous">'
                   for i, n in (("srData", "search.json"), ("srTerms", "search_terms.json")))
     H = [head1(title, LEDE, canon).replace("</head>", pre + "</head>", 1), '<body class="cp sr">', nav("search"), '<main class="page sr-page">']
-    H.append('<header class="hero sr-hero"><h1>Search documents</h1>'
-             f'<p class="stats-note sr-lede">{e(LEDE)}</p></header>')
+    H.append('<header class="hero sr-hero hero-split"><div class="hero-text"><h1>Search documents</h1>'
+             f'<p class="stats-note sr-lede">{e(LEDE)}</p></div>' + visuals.topic_cloud(D, ctx) + '</header>')
     seg = "".join(f'<button type="button" class="seg-b" data-range="{k}" aria-pressed="{"true" if not k else "false"}">{e(v)}</button>' for k, v in PRESETS)
     types = "".join(f'<option value="{k}">{e(v)}</option>' for k, v in TYPES)
     cats = "".join(f'<option value="{k}">{e(v)}</option>' for k, v in D["categories"].items())
