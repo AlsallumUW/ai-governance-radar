@@ -6,15 +6,20 @@
     "type": "regional",
     "group": "economic",
     "iso2": null,
-    "overview": "Intergovernmental organisation of 38 member countries. Its AI Recommendation is open to non-members, so it applies to its Adherents rather than to OECD membership."
+    "overview": "Intergovernmental organisation of 38 member countries. Its AI Recommendation is open to non-members, so it applies to its Adherents rather than to OECD membership.",
+    "name_ar": "منظمة التعاون الاقتصادي والتنمية",
+    "short_name_ar": "منظمة التعاون الاقتصادي والتنمية",
+    "official_site": "https://www.oecd.org",
+    "members_rule": "list"
   },
   "narrative": {
-    "summary": "The OECD's one AI-specific legal instrument is the Recommendation of the Council on Artificial Intelligence (OECD/LEGAL/0449), adopted on 22 May 2019 and revised in November 2023 and May 2024. Its five principles and five policy recommendations are not legally binding, but Adherents commit to implement them. They are 50 countries (all 38 OECD Members and 12 non-members) and the European Union. The radar attaches the Recommendation to each adhering country, so it appears on their pages; country pages also show the adherence.",
+    "summary": "The OECD Council adopted the Recommendation on Artificial Intelligence in 2019, the first intergovernmental standard on AI, and revised it in November 2023 (definition of an AI system) and May 2024. The OECD has since issued implementation guidance in its own name, including a companion document on data access and sharing in the age of AI and due diligence guidance for responsible AI for enterprises. The Global Partnership on AI, launched in 2020 and integrated with the OECD in 2024, has adopted ministerial declarations in Tokyo (2022), New Delhi (2023, 2024) and Belgrade (2024).",
     "lead_institutions": [
       "OECD Council",
-      "OECD Digital Policy Committee"
+      "Digital Policy Committee",
+      "Global Partnership on AI (GPAI) Council"
     ],
-    "last_deep_review": null,
+    "last_deep_review": "2026-10-21",
     "review_notes": "The OECD Compendium of Legal Instruments was searched for AI-specific instruments and only the AI Recommendation was found; adherents and adherence dates are taken from the instrument's page. Membership (38) is taken from the same site's country list, which marks each country as a Member."
   },
   "instruments": [
@@ -23,24 +28,26 @@
       "official_title": "Recommendation of the Council on Artificial Intelligence",
       "english_title": "OECD Recommendation of the Council on Artificial Intelligence (OECD/LEGAL/0449)",
       "jurisdiction_id": "OECD",
-      "issuing_authority": "OECD Council (meeting at Ministerial level), on the proposal of the Digital Policy Committee",
-      "publisher_name": "Organisation for Economic Co-operation and Development (OECD)",
+      "issuing_authority": "OECD Council (meeting at Ministerial level)",
+      "publisher_name": "OECD Council (meeting at Ministerial level)",
       "authority_type": "intergovernmental_body",
       "government_level": "regional",
       "subnational_unit": null,
       "categories": [
         "international",
         "ethics",
-        "government-governance"
+        "government-governance",
+        "risk-assurance",
+        "transparency"
       ],
       "category": "international",
       "subcategory": null,
-      "legal_status": "nonbinding_guidance",
+      "legal_status": "nonbinding_recommendation",
       "lifecycle": "in_force",
       "publication_date": "2019-05-22",
       "effective_date": "2019-05-22",
       "last_amended_date": "2024-05-03",
-      "current_status": "In force. Adopted by the OECD Council meeting at Ministerial level on 22 May 2019 (C(2019)34, C/MIN(2019)3/FINAL); revised by the Council on 8 November 2023 to update the definition of an 'AI system' (C(2023)151) and by the Council meeting at Ministerial level on 3 May 2024 (C/MIN(2024)16/FINAL), as stated on the OECD Compendium of Legal Instruments. OECD Recommendations 'are not legally binding' but 'represent a political commitment' by Adherents (OECD booklet of the instrument). Adherents: the 38 OECD Members, 12 non-member countries and the European Union; adherence dates for non-members as listed on the instrument page. The PDF linked is the 2023 English booklet; the current English text as amended in 2024 is on the instrument page.",
+      "current_status": "In force. Adopted by the OECD Council at Ministerial level on 22 May 2019 and revised on 8 November 2023 and 3 May 2024; it applies to its Adherents (OECD Members and non-member adherents).",
       "scope": "OECD Members and non-member Adherents",
       "sectors": [
         "cross-sector"
@@ -48,7 +55,7 @@
       "technology_scope": [
         "AI"
       ],
-      "summary": "The first intergovernmental standard on AI. It sets five values-based principles for responsible stewardship of trustworthy AI (inclusive growth and well-being; human rights and democratic values, including fairness and privacy; transparency and explainability; robustness, security and safety; accountability) and five recommendations for national policies and international co-operation (AI research investment, an enabling digital ecosystem and policy environment, human capacity and labour-market transition, and international co-operation). Adherents commit to promote and implement it; it is not legally binding.",
+      "summary": "Sets five values-based principles for trustworthy AI and five recommendations to governments on investment, enabling ecosystems, policy environment, skills and international co-operation. The Council revised the definition of an AI system on 8 November 2023 and revised the text on 3 May 2024 to address safety, misinformation and disinformation, environmental sustainability, and to move traceability and risk management under the accountability principle.",
       "ai_governance_relevance": "Intergovernmental AI principles adhered to by 50 countries and the EU; basis for the G20 AI Principles and the G7 Hiroshima Process texts.",
       "source_url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0449",
       "official_pdf_url": "https://legalinstruments.oecd.org/api/download/?uri=/public/8cb6159f-a74e-490d-a7ae-2aa632568b98.pdf",
@@ -62,7 +69,7 @@
       "verification_level": "reviewed_primary_metadata",
       "metadata_gaps": [],
       "source_kind": "official_publication",
-      "evidence_reference": null,
+      "evidence_reference": "Research pass 2026-10-21: Corrections to existing record: (1) legal_status should be nonbinding_recommendation per the spec (OECD Council Recommendation), currently nonbinding_guidance; (2) add 2023-11-08 revision (updated AI system definition; DPC approved draft 16 Oct 2023, Council adopted 8 Nov 2023) alongside last_amended_date 2024-05-03. Read via legalinstruments.oecd.org/api/instruments/OECD-LEGAL-0449 on 2026-10-21; change history also lists 2024-01-07 with no description (linked to the 2024 Report to Council). Adherent count in API data: 51 countries.",
       "link_status": "reachable",
       "document_access_type": "original_government_document",
       "source_id": "s-719ace2d7fe7",
@@ -479,6 +486,364 @@
         }
       },
       "first_recorded": "2026-10-13"
+    },
+    {
+      "id": "i-904d02082d83",
+      "official_title": "Enhancing Access to and Sharing of Data in the Age of Artificial Intelligence: Companion Document to the OECD Council Recommendation on Enhancing Access to and Sharing of Data",
+      "english_title": "Enhancing Access to and Sharing of Data in the Age of Artificial Intelligence (Companion Document to the OECD Recommendation on Enhancing Access to and Sharing of Data)",
+      "issuing_authority": "OECD Digital Policy Committee, with the Committee for Scientific and Technological Policy and the Public Governance Committee",
+      "publisher_name": "OECD Digital Policy Committee, with the Committee for Scientific and Technological Policy and the Public Governance Committee",
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2025-02-05",
+      "effective_date": null,
+      "summary": "Implementation guidance for Adherents and other data ecosystem actors on applying the 2021 OECD Recommendation on Enhancing Access to and Sharing of Data, focused on how AI developments affect data access and sharing. It explains key concepts and illustrates the Recommendation's principles with public and private sector examples.",
+      "current_status": "Approved and declassified by the OECD Digital Policy Committee, with the Committee for Scientific and Technological Policy and the Public Governance Committee, on 21 November 2024. Non-binding guidance accompanying a Council Recommendation.",
+      "source_url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0463",
+      "official_pdf_url": "https://one.oecd.org/document/COM/DSTI/CDEP/STP/GOV/PGC(2024)1/FINAL/en/pdf",
+      "official_webpage_url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0463",
+      "language": "en",
+      "jurisdiction_id": "OECD",
+      "authority_type": "intergovernmental_body",
+      "government_level": "regional",
+      "subnational_unit": null,
+      "categories": [
+        "international",
+        "data-privacy",
+        "government-governance"
+      ],
+      "category": "international",
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "ai_governance_relevance": null,
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-21",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "PDF read 2026-10-21 via WebFetch: cover date 5 February 2025; approval note quoted (DPC with CSTP and PGC, 21 November 2024). Linked from the 0463 instrument page (API). Recorded because it is committee-approved implementation guidance whose main subject is AI; the parent Recommendation 0463 itself is a lead (AI only in background).",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-af65ae736343",
+      "organization_id": "o-3c9b6df5cf0b",
+      "first_recorded": "2026-10-21",
+      "last_changed": "2025-02-05",
+      "applies_to": "members"
+    },
+    {
+      "id": "i-4fefe19e1c71",
+      "official_title": "OECD Due Diligence Guidance for Responsible AI",
+      "english_title": "OECD Due Diligence Guidance for Responsible AI",
+      "issuing_authority": "Organisation for Economic Co-operation and Development",
+      "publisher_name": "Organisation for Economic Co-operation and Development",
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2026-02-19",
+      "effective_date": null,
+      "summary": "Practical guidance for enterprises on applying the OECD standards on responsible business conduct and the OECD AI Principles when developing and using AI. It sets out a due diligence process to identify, prevent, mitigate and account for adverse impacts across the AI value chain and seeks alignment with other national and international AI risk management frameworks.",
+      "current_status": "Published by the OECD in February 2026 as non-binding guidance for enterprises.",
+      "source_url": "https://www.oecd.org/en/publications/oecd-due-diligence-guidance-for-responsible-ai_41671712-en.html",
+      "official_pdf_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/02/oecd-due-diligence-guidance-for-responsible-ai_7831bb49/41671712-en.pdf",
+      "official_webpage_url": "https://www.oecd.org/en/publications/oecd-due-diligence-guidance-for-responsible-ai_41671712-en.html",
+      "language": "en",
+      "jurisdiction_id": "OECD",
+      "authority_type": "intergovernmental_body",
+      "government_level": "regional",
+      "subnational_unit": null,
+      "categories": [
+        "international",
+        "risk-assurance",
+        "ethics"
+      ],
+      "category": "international",
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "ai_governance_relevance": null,
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-21",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "Date 19 February 2026 from the OECD publication page's date field (read via WebFetch, which reported it in the page metadata block; visible text not rendered). PDF blocked by robots for WebFetch, so approving committee not confirmed; check foreword for the approval note (likely Working Party on RBC / Investment Committee and DPC). If the editor prefers printed dates only, set to 2026-02. Australian NCP page says it was released at the India AI Impact Summit 2026.",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-a3e5c5db8f81",
+      "organization_id": "o-00f6b311edce",
+      "first_recorded": "2026-10-21",
+      "last_changed": "2026-02-19",
+      "applies_to": "members"
+    },
+    {
+      "id": "i-917e653ec850",
+      "official_title": "Joint Statement from founding members of the Global Partnership on Artificial Intelligence",
+      "english_title": "Joint Statement from Founding Members of the Global Partnership on Artificial Intelligence",
+      "issuing_authority": "Global Partnership on AI",
+      "publisher_name": "Global Partnership on AI",
+      "legal_status": "declaration",
+      "lifecycle": "published",
+      "publication_date": "2020-06-15",
+      "effective_date": null,
+      "summary": "Launches the Global Partnership on AI (GPAI), an international multistakeholder initiative to guide the responsible development and use of AI, grounded in human rights, inclusion, diversity, innovation and economic growth, and in line with the OECD AI Recommendation. Experts work on responsible AI, data governance, the future of work, and innovation and commercialisation, and on AI in the COVID-19 response.",
+      "current_status": "Joint statement of the founding members (Australia, Canada, France, Germany, India, Italy, Japan, Mexico, New Zealand, the Republic of Korea, Singapore, Slovenia, the United Kingdom, the United States and the European Union). Political commitment, not legally binding.",
+      "source_url": "https://www.gov.uk/government/publications/joint-statement-from-founding-members-of-the-global-partnership-on-artificial-intelligence/joint-statement-from-founding-members-of-the-global-partnership-on-artificial-intelligence",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.gov.uk/government/publications/joint-statement-from-founding-members-of-the-global-partnership-on-artificial-intelligence/joint-statement-from-founding-members-of-the-global-partnership-on-artificial-intelligence",
+      "language": "en",
+      "jurisdiction_id": "OECD",
+      "authority_type": "intergovernmental_body",
+      "government_level": "regional",
+      "subnational_unit": null,
+      "categories": [
+        "international",
+        "ethics",
+        "government-governance"
+      ],
+      "category": "international",
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "ai_governance_relevance": null,
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-21",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_publication",
+      "evidence_reference": "Published date 15 June 2020 as printed on GOV.UK (founding member government). Same text on canada.ca (ISED news 2020/06) and soumu.go.jp. GPAI had no own site carrying the text; OECD.AI GPAI declarations page starts at 2022.",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-123570a9c0e6",
+      "organization_id": "o-2d430eb69b1b",
+      "first_recorded": "2026-10-21",
+      "last_changed": "2020-06-15",
+      "applies_to": "members"
+    },
+    {
+      "id": "i-b58d53f585da",
+      "official_title": "GPAI Ministers' Declaration 2022",
+      "english_title": "GPAI Ministers' Declaration 2022 (Tokyo)",
+      "issuing_authority": "Global Partnership on AI",
+      "publisher_name": "Global Partnership on AI",
+      "legal_status": "declaration",
+      "lifecycle": "adopted",
+      "publication_date": "2022-11-22",
+      "effective_date": null,
+      "summary": "GPAI ministers meeting in Tokyo recommit to the human-centric values of the OECD AI Recommendation and oppose unlawful and irresponsible uses of AI. They pledge to strengthen GPAI as a multistakeholder initiative, fund its secretariat and project pool, deepen co-operation with the OECD and UNESCO, and implement the 2023 work plan under India's incoming chair.",
+      "current_status": "Adopted by the Ministers of GPAI Members in Tokyo on 22 November 2022. Political declaration.",
+      "source_url": "https://oecd.ai/en/gpai-declarations",
+      "official_pdf_url": "https://wp.oecd.ai/app/uploads/2025/01/GPAIMinistersDeclaration2022.pdf",
+      "official_webpage_url": "https://oecd.ai/en/gpai-declarations",
+      "language": "en",
+      "jurisdiction_id": "OECD",
+      "authority_type": "intergovernmental_body",
+      "government_level": "regional",
+      "subnational_unit": null,
+      "categories": [
+        "international",
+        "ethics",
+        "government-governance"
+      ],
+      "category": "international",
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "ai_governance_relevance": null,
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-21",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "PDF read 2026-10-21; declaration states ministers convened in Tokyo on 21 and 22 November 2022; date taken as 22 November 2022 as printed.",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-903f4d627401",
+      "organization_id": "o-2d430eb69b1b",
+      "first_recorded": "2026-10-21",
+      "last_changed": "2022-11-22",
+      "applies_to": "members"
+    },
+    {
+      "id": "i-d4fe51d06a3b",
+      "official_title": "2023 Ministerial Declaration",
+      "english_title": "GPAI 2023 Ministerial Declaration (New Delhi)",
+      "issuing_authority": "Global Partnership on AI",
+      "publisher_name": "Global Partnership on AI",
+      "legal_status": "declaration",
+      "lifecycle": "adopted",
+      "publication_date": "2023-12-14",
+      "effective_date": null,
+      "summary": "GPAI ministers recommit to safe, secure and trustworthy AI grounded in democratic values, human rights and the OECD AI Recommendation, and to advancing safe AI in their jurisdictions. They aim to widen equitable access to compute and data, build capacity in low- and middle-income countries, add sustainable agriculture as a thematic priority, co-ordinate with the G7, G20, OECD and UNESCO, and broaden membership.",
+      "current_status": "Adopted by the GPAI Ministerial Council at its fifth meeting on 13 December 2023 in New Delhi; the declaration is dated 14 December 2023. Political declaration.",
+      "source_url": "https://oecd.ai/en/gpai-declarations",
+      "official_pdf_url": "https://one.oecd.org/document/GPAI(2023)2/en/pdf",
+      "official_webpage_url": "https://oecd.ai/en/gpai-declarations",
+      "language": "en",
+      "jurisdiction_id": "OECD",
+      "authority_type": "intergovernmental_body",
+      "government_level": "regional",
+      "subnational_unit": null,
+      "categories": [
+        "international",
+        "ethics",
+        "government-governance",
+        "risk-assurance"
+      ],
+      "category": "international",
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "ai_governance_relevance": null,
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-21",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "Read one.oecd.org GPAI(2023)2 on 2026-10-21; also on wp.oecd.ai/app/uploads/2025/01/2023-GPAI-Ministerial-Declaration.pdf.",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-903f4d627401",
+      "organization_id": "o-2d430eb69b1b",
+      "first_recorded": "2026-10-21",
+      "last_changed": "2023-12-14",
+      "applies_to": "members"
+    },
+    {
+      "id": "i-aeb5f08fb681",
+      "official_title": "2024 GPAI New Delhi Declaration",
+      "english_title": "2024 GPAI New Delhi Declaration",
+      "issuing_authority": "Global Partnership on AI",
+      "publisher_name": "Global Partnership on AI",
+      "legal_status": "declaration",
+      "lifecycle": "adopted",
+      "publication_date": "2024-07",
+      "effective_date": null,
+      "summary": "Sets a renewed vision for GPAI as an integrated partnership with the OECD, placing OECD members and GPAI countries on an equal footing under the GPAI brand on the basis of the OECD AI Recommendation. Members decide new memberships, observers and work priorities by consensus; governance runs through a Council, Plenary and Steering Group, and the GPAI and OECD expert groups merge into one expert community.",
+      "current_status": "Adopted by GPAI Ministers in New Delhi on 3-4 July 2024. Political declaration.",
+      "source_url": "https://oecd.ai/en/gpai-declarations",
+      "official_pdf_url": "https://wp.oecd.ai/app/uploads/2025/01/gpai-new-delhi-declaration-2024.pdf",
+      "official_webpage_url": "https://oecd.ai/en/gpai-declarations",
+      "language": "en",
+      "jurisdiction_id": "OECD",
+      "authority_type": "intergovernmental_body",
+      "government_level": "regional",
+      "subnational_unit": null,
+      "categories": [
+        "international",
+        "government-governance",
+        "ethics"
+      ],
+      "category": "international",
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "ai_governance_relevance": null,
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-21",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "PDF prints '3-4 July 2024' (meeting dates) with no single signature date; month given only.",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-903f4d627401",
+      "organization_id": "o-2d430eb69b1b",
+      "first_recorded": "2026-10-21",
+      "last_changed": "2024-07",
+      "applies_to": "members"
+    },
+    {
+      "id": "i-41d3b79a11c4",
+      "official_title": "GPAI Belgrade Ministerial Declaration",
+      "english_title": "GPAI Belgrade Ministerial Declaration",
+      "issuing_authority": "Global Partnership on AI",
+      "publisher_name": "Global Partnership on AI",
+      "legal_status": "declaration",
+      "lifecycle": "adopted",
+      "publication_date": "2024-12-04",
+      "effective_date": null,
+      "summary": "GPAI ministers, building on the 2024 New Delhi Declaration's integrated partnership with the OECD, commit to evidence-based joint work on AI and employment, data governance, intellectual property and bridging global AI divides, and to welcoming new members, including developing and emerging economies.",
+      "current_status": "Adopted by GPAI ministers and representatives at the GPAI Summit in Belgrade on 3-4 December 2024, co-led by Serbia and the Slovak Republic; dated 4 December 2024. Political declaration.",
+      "source_url": "https://oecd.ai/en/gpai-declarations",
+      "official_pdf_url": "https://wp.oecd.ai/app/uploads/2024/12/GPAI-Belgrade-Declaration-final-3.pdf",
+      "official_webpage_url": "https://oecd.ai/en/gpai-declarations",
+      "language": "en",
+      "jurisdiction_id": "OECD",
+      "authority_type": "intergovernmental_body",
+      "government_level": "regional",
+      "subnational_unit": null,
+      "categories": [
+        "international",
+        "government-governance",
+        "ethics"
+      ],
+      "category": "international",
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "ai_governance_relevance": null,
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-21",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "PDF read 2026-10-21; dated 4 December 2024.",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-903f4d627401",
+      "organization_id": "o-2d430eb69b1b",
+      "first_recorded": "2026-10-21",
+      "last_changed": "2024-12-04",
+      "applies_to": "members"
     }
   ],
   "organizations": [
@@ -489,6 +854,46 @@
       "publisher_name_verified": true,
       "ai_governance_role": "Adopts and revises OECD legal instruments, including the AI Recommendation.",
       "source_url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0449",
+      "authority_type": "intergovernmental_body",
+      "government_level": "regional"
+    },
+    {
+      "id": "o-6307d35f292f",
+      "jurisdiction_id": "OECD",
+      "name": "OECD Council (meeting at Ministerial level)",
+      "publisher_name_verified": true,
+      "ai_governance_role": null,
+      "source_url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0449",
+      "authority_type": "intergovernmental_body",
+      "government_level": "regional"
+    },
+    {
+      "id": "o-3c9b6df5cf0b",
+      "jurisdiction_id": "OECD",
+      "name": "OECD Digital Policy Committee, with the Committee for Scientific and Technological Policy and the Public Governance Committee",
+      "publisher_name_verified": true,
+      "ai_governance_role": null,
+      "source_url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0463",
+      "authority_type": "intergovernmental_body",
+      "government_level": "regional"
+    },
+    {
+      "id": "o-00f6b311edce",
+      "jurisdiction_id": "OECD",
+      "name": "Organisation for Economic Co-operation and Development",
+      "publisher_name_verified": true,
+      "ai_governance_role": null,
+      "source_url": "https://www.oecd.org/en/publications/oecd-due-diligence-guidance-for-responsible-ai_41671712-en.html",
+      "authority_type": "intergovernmental_body",
+      "government_level": "regional"
+    },
+    {
+      "id": "o-2d430eb69b1b",
+      "jurisdiction_id": "OECD",
+      "name": "Global Partnership on AI",
+      "publisher_name_verified": true,
+      "ai_governance_role": null,
+      "source_url": "https://www.gov.uk/government/publications/joint-statement-from-founding-members-of-the-global-partnership-on-artificial-intelligence/joint-statement-from-founding-members-of-the-global-partnership-on-artificial-intelligence",
       "authority_type": "intergovernmental_body",
       "government_level": "regional"
     }
@@ -507,9 +912,11 @@
         "i-6b2cbaa553f7"
       ],
       "categories_reviewed": [
-        "international",
         "ethics",
-        "government-governance"
+        "government-governance",
+        "international",
+        "risk-assurance",
+        "transparency"
       ],
       "date_reviewed": "2026-10-13",
       "checked_date": "2026-10-13",
@@ -521,13 +928,129 @@
       "document_language": null,
       "error": null,
       "content_type": "text/html"
+    },
+    {
+      "id": "s-af65ae736343",
+      "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0463",
+      "jurisdiction_ids": [
+        "OECD"
+      ],
+      "source_institutions": [
+        "OECD Digital Policy Committee, with the Committee for Scientific and Technological Policy and the Public Governance Committee"
+      ],
+      "instrument_ids": [
+        "i-904d02082d83"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "government-governance",
+        "international"
+      ],
+      "date_reviewed": "2026-10-21",
+      "checked_date": "2026-10-21",
+      "check_method": "WebFetch (research pass)",
+      "http_status": null,
+      "final_url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0463",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": null
+    },
+    {
+      "id": "s-a3e5c5db8f81",
+      "url": "https://www.oecd.org/en/publications/oecd-due-diligence-guidance-for-responsible-ai_41671712-en.html",
+      "jurisdiction_ids": [
+        "OECD"
+      ],
+      "source_institutions": [
+        "Organisation for Economic Co-operation and Development"
+      ],
+      "instrument_ids": [
+        "i-4fefe19e1c71"
+      ],
+      "categories_reviewed": [
+        "ethics",
+        "international",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-21",
+      "checked_date": "2026-10-21",
+      "check_method": "WebFetch (research pass)",
+      "http_status": null,
+      "final_url": "https://www.oecd.org/en/publications/oecd-due-diligence-guidance-for-responsible-ai_41671712-en.html",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": null
+    },
+    {
+      "id": "s-123570a9c0e6",
+      "url": "https://www.gov.uk/government/publications/joint-statement-from-founding-members-of-the-global-partnership-on-artificial-intelligence/joint-statement-from-founding-members-of-the-global-partnership-on-artificial-intelligence",
+      "jurisdiction_ids": [
+        "OECD"
+      ],
+      "source_institutions": [
+        "Global Partnership on AI"
+      ],
+      "instrument_ids": [
+        "i-917e653ec850"
+      ],
+      "categories_reviewed": [
+        "ethics",
+        "government-governance",
+        "international"
+      ],
+      "date_reviewed": "2026-10-21",
+      "checked_date": "2026-10-21",
+      "check_method": "WebFetch (research pass)",
+      "http_status": null,
+      "final_url": "https://www.gov.uk/government/publications/joint-statement-from-founding-members-of-the-global-partnership-on-artificial-intelligence/joint-statement-from-founding-members-of-the-global-partnership-on-artificial-intelligence",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": null
+    },
+    {
+      "id": "s-903f4d627401",
+      "url": "https://oecd.ai/en/gpai-declarations",
+      "jurisdiction_ids": [
+        "OECD"
+      ],
+      "source_institutions": [
+        "Global Partnership on AI"
+      ],
+      "instrument_ids": [
+        "i-b58d53f585da",
+        "i-d4fe51d06a3b",
+        "i-aeb5f08fb681",
+        "i-41d3b79a11c4"
+      ],
+      "categories_reviewed": [
+        "ethics",
+        "government-governance",
+        "international",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-21",
+      "checked_date": "2026-10-21",
+      "check_method": "WebFetch (research pass)",
+      "http_status": null,
+      "final_url": "https://oecd.ai/en/gpai-declarations",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": null
     }
   ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "OECD",
-    "country": "OECD",
-    "review_status": "PARTIAL REGIONAL REVIEW",
+    "country": "Organisation for Economic Co-operation and Development",
+    "review_status": "REGIONAL REVIEW",
     "categories_searched": [
       "binding-law",
       "strategy",
@@ -549,19 +1072,19 @@
       "historical"
     ],
     "categories_with_findings": [
+      "data-privacy",
       "ethics",
       "government-governance",
-      "international"
+      "international",
+      "risk-assurance",
+      "transparency"
     ],
     "categories_where_no_material_was_found": [
       "binding-law",
       "strategy",
-      "risk-assurance",
       "public-sector",
       "procurement",
       "cyber-security",
-      "data-privacy",
-      "transparency",
       "standards",
       "sandbox",
       "index-readiness",
@@ -572,10 +1095,10 @@
     ],
     "categories_requiring_review": [],
     "search_queries": [],
-    "review_date": "2026-10-13",
+    "review_date": "2026-10-21",
     "no_material_found_note": "All 504 instrument titles in the OECD Compendium of Legal Instruments were searched for AI terms, and only the AI Recommendation (OECD/LEGAL/0449) was found.",
-    "technical_note": "Method note (original): The OECD Compendium of Legal Instruments was searched for AI-specific instruments; only the AI Recommendation was found. Adherents and adherence dates are taken from the instrument's page on that site. The OECD's member-countries page could not be read, so OECD membership (38) is taken from the same site's country list, which marks each country as a Member.\n\nCoverage note (original): Instrument page is rendered by JavaScript; read through the site's own API (legalinstruments.oecd.org/api/instruments/OECD-LEGAL-0449). Searched all 504 instrument titles via legalinstruments.oecd.org/api/instruments/keys for AI terms: only OECD/LEGAL/0449. oecd.org members page returned HTTP 403.\nWording note 2026-10-19 (narrative.review_notes): The OECD's member-countries page was unavailable, so membership\nWording note 2026-10-19 (coverage_audit.no_material_found_note): The OECD's member-countries page was unavailable.\n\nCatch-up sweep 2026-10-19 (window from 2026-10-06): checked legalinstruments.oecd.org API instrument list (504 titles) for AI terms - only OECD/LEGAL/0449. Found nothing new. Not reached: oecd.org newsroom (discovery searches only).",
-    "last_sweep": "2026-10-19"
+    "technical_note": "International-organisations research pass 2026-10-21. Searched: legalinstruments.oecd.org API: full list of 504 instrument keys/titles (api/instruments/keys) searched for AI, data, digital, algorithm terms; legalinstruments.oecd.org API pages for OECD-LEGAL-0449, 0463, 0488, 0389; oecd.ai/en/gpai-declarations; oecd.ai/en/transparency/about; one.oecd.org GPAI(2023)2 and COM/DSTI/CDEP/STP/GOV/PGC(2024)1/FINAL; oecd.org publication page for the Due Diligence Guidance for Responsible AI; gov.uk GPAI founding joint statement; soumu.go.jp press release 7 February 2025",
+    "last_sweep": "2026-10-21"
   },
   "changes": [
     {
@@ -681,8 +1204,64 @@
   ],
   "members_source": {
     "source_url": "https://legalinstruments.oecd.org/api/lists?lang=en",
-    "official_list_url": "https://www.oecd.org/en/about/members-partners.html",
-    "comment": "www.oecd.org/en/about/members-partners.html returned HTTP 403 (bot challenge) to curl and WebFetch. Membership taken from the OECD Legal Instruments site's own country reference list (countries with kind='Member', active=true): exactly 38, matching the 38 Members shown as adherents of OECD/LEGAL/0449. Same site that hosts the instrument; official OECD site. Re-read 2026-10-19: adherent list of OECD/LEGAL/0449 (51 adherents) and the 38 Members unchanged."
+    "comment": "Unchanged from data/regional/OECD.json: 38 Members from the OECD Legal Instruments site's country reference list (kind 'Member'); oecd.org members page blocks automated access. Not re-read in this pass (2026-10-21)."
   },
-  "membership_note": "OECD Member countries. The AI Recommendation applies to its Adherents (all Members plus 12 non-member countries and the EU), listed on the instrument."
+  "membership_note": "The OECD has 38 member countries. Its AI Recommendation is open to non-members and applies to its Adherents; the Global Partnership on AI (GPAI), integrated with the OECD since 2024, has its own wider membership.",
+  "leads": [
+    {
+      "title": "Recommendation of the Council on Enhancing Access to and Sharing of Data (OECD/LEGAL/0463), 6 October 2021",
+      "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0463",
+      "note": "Main subject is data access and sharing; AI appears in the background as context only. Its AI-focused companion document is recorded."
+    },
+    {
+      "title": "Declaration on a Trusted, Sustainable and Inclusive Digital Future (OECD/LEGAL/0488), 15 December 2022",
+      "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0488",
+      "note": "Digital ministerial declaration (Gran Canaria); AI is a passing mention ('harness the power of AI and emerging technologies')."
+    },
+    {
+      "title": "Recommendation of the Council on Children in the Digital Environment (OECD/LEGAL/0389), revised 31 May 2021",
+      "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0389",
+      "note": "No mention of AI in the text or background."
+    },
+    {
+      "title": "Recommendation of the Council on Digital Government Strategies (OECD/LEGAL/0406), 2014",
+      "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0406",
+      "note": "Predates AI focus; not an AI instrument (title search of all 504 instruments found only 0449 on AI)."
+    },
+    {
+      "title": "OECD Ministerial Council Statement 2024 (C/MIN(2024)16/FINAL), 2-3 May 2024",
+      "url": "https://www.oecd.org/en/about/news/press-releases/2024/05/oecd-ministerial-council-statement-and-outcomes-2024.html",
+      "note": "General ministerial statement at which the AI Recommendation revision was adopted; AI paragraphs are not a dedicated section. Not read in full."
+    },
+    {
+      "title": "Report to Council on the Implementation of the Recommendation on AI (2024)",
+      "url": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0449",
+      "note": "Implementation report to the Council; noted, not an adopted instrument."
+    },
+    {
+      "title": "OECD Framework for the Classification of AI Systems (February 2022)",
+      "url": "https://oecd.ai/en/classification",
+      "note": "Published in the OECD Digital Economy Papers series; analytical tool, not adopted by members."
+    },
+    {
+      "title": "Explanatory memorandum on the updated OECD definition of an AI system (March 2024)",
+      "url": "https://oecd.ai/en/ai-principles",
+      "note": "OECD Artificial Intelligence Papers series; explanatory paper, not adopted text."
+    },
+    {
+      "title": "Summary statement of the GPAI Co-Chairs, GPAI Council, New Delhi, 20 February 2026",
+      "url": "https://oecd.ai/en/gpai-council-meeting-co-chairs-summary-statement-2026",
+      "note": "Co-chairs' summary (Singapore and Korea), not a text adopted by the Council; records admission of Malta and Saudi Arabia as GPAI members."
+    },
+    {
+      "title": "GPAI Council summary record, Belgrade, 4 December 2024",
+      "url": "https://wp.oecd.ai/app/uploads/2025/01/GPAI-Council_Summary-record_4-Dec-2024.pdf",
+      "note": "Meeting record, not a governance text."
+    },
+    {
+      "title": "Hiroshima AI Process Reporting Framework (launched February 2025, hosted on OECD.AI)",
+      "url": "https://oecd.ai/en/transparency/about",
+      "note": "Recorded under G7: Japan's MIC (G7) states the G7 agreed the questionnaire and operational procedure with the OECD's co-operation; the OECD hosts it."
+    }
+  ]
 }

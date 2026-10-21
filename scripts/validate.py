@@ -207,7 +207,10 @@ def check(only=None):
                 if i.get(f) and not ISO.match(i[f]): E(f"{k} {f} not ISO date: {i[f]}")
             if not re.match(r"^https?://", i.get("source_url") or ""): E(f"{k} source_url missing or not http(s)")
             for f in ("source_url", "official_pdf_url", "official_webpage_url"):
-                if i.get(f) and NEWS.search(host(i[f])): E(f"{k} {f} is a news/aggregator site, not an official source: {host(i[f])}")
+                # oecd.ai is the OECD's own site: allowed only for the OECD's and the G7's own documents (GPAI declarations, the
+                # Hiroshima reporting framework), never as a source for a country's document (its policy database is an aggregator)
+                own_oecd = jid in ("OECD", "G7") and host(i.get(f)).endswith("oecd.ai") and "/dashboards/" not in (i.get(f) or "")
+                if i.get(f) and NEWS.search(host(i[f])) and not own_oecd: E(f"{k} {f} is a news/aggregator site, not an official source: {host(i[f])}")
             if i.get("source_kind") not in ALLOWED_KINDS: E(f"{k} source_kind '{i.get('source_kind')}' not allowed (must be one of {sorted(ALLOWED_KINDS)})")
             gl = i.get("government_level")
             if gl not in LEVELS: E(f"{k} government_level '{gl}' not one of {sorted(LEVELS)}")
