@@ -179,8 +179,10 @@ html[lang="ar"] .sr-title,html[lang="ar"] .sr-ot,html[lang="ar"] .sr-ex,html[lan
 .gd-org{display:flex;flex-direction:column;gap:2px;padding:12px 14px;border:1px solid var(--hair);border-radius:8px;background:var(--surface);min-width:0}
 .gd-oname{font-weight:650;font-size:15px;line-height:1.35;text-decoration:none}.gd-oname:hover{text-decoration:underline}
 .gd-om{font-size:13px;color:var(--muted)}
+.gd-controls label{min-width:0;max-width:100%}
+.gd-controls select{width:100%;max-width:100%}
+.gd-controls .gd-org-f{flex:1 1 240px;max-width:340px}
 .gd-controls .gd-y select{min-width:7.5em}
-.gd-controls select{max-width:100%}
 .gd-actions{display:flex;flex-wrap:wrap;gap:8px;margin:0;flex-basis:100%}
 .gd-list{max-width:900px}
 .gd-row{padding:18px 0}
@@ -195,5 +197,5 @@ details.signed{margin:10px 0 0;font-size:14px}
 details.signed>summary{cursor:pointer;color:var(--accent);font-weight:600}
 details.signed .member-grid{margin:10px 0 0}
 details.signed .chip{font-size:13px}
-@media (max-width:560px){.gd-controls label{flex:1 1 140px}.gd-controls .grow{flex-basis:100%}.gd-orgs{grid-template-columns:1fr}}
+@media (max-width:560px){.gd-controls label{flex:1 1 140px}.gd-controls .grow,.gd-controls .gd-org-f{flex-basis:100%;max-width:none}.gd-orgs{grid-template-columns:1fr}}
 @media print{.chart-index,.gd-controls,.gd-actions{display:none}}

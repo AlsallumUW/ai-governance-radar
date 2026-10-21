@@ -138,7 +138,7 @@ def global_page(D, ctx, head1, nav, foot):
     present_cats = [(k, v) for k, v in cats.items() if any(k in i.get("categories", []) for i in rows)]
     sel = lambda f, label, opts, cls="": f'<label{cls}>{e(label)} <select data-f="{f}">{opts}</select></label>'
     controls = ('<div class="list-controls gd-controls" role="group" aria-label="Filter the documents">'
-                + sel("org", "Organisation", '<option value="">All organisations</option>' + "".join(org_opts))
+                + sel("org", "Organisation", '<option value="">All organisations</option>' + "".join(org_opts), ' class="gd-org-f"')
                 + sel("type", "Type", '<option value="">All types</option>' + "".join(f'<option value="{e(k)}">{e(_status(k))}</option>' for k in sts))
                 + sel("cat", "Category", '<option value="">All categories</option>' + "".join(f'<option value="{k}">{e(v)}</option>' for k, v in present_cats))
                 + sel("from", "From", '<option value="">Any year</option>' + yopts, ' class="gd-y"')
