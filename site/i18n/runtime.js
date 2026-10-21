@@ -17,14 +17,17 @@ function tr(text){
   var d=arDate(core);if(d)return lead+d+trail;
   return text}
 var ATTRS=['placeholder','aria-label','title','alt'],SKIP={SCRIPT:1,STYLE:1,TEXTAREA:1};
-function textNode(n){var v=n.nodeValue,u=tr(v);if(u!==v)n.nodeValue=u}
-function attrs(el){for(var i=0;i<ATTRS.length;i++){var v=el.getAttribute&&el.getAttribute(ATTRS[i]);if(v){var u=tr(v);if(u!==v)el.setAttribute(ATTRS[i],u)}}}
+/* data a script marks translate="no" (titles, names, excerpts) is left as published */
+function keep(el){return !!(el&&el.closest&&el.closest('[translate="no"]'))}
+function textNode(n){if(keep(n.parentNode))return;var v=n.nodeValue,u=tr(v);if(u!==v)n.nodeValue=u}
+function attrs(el){if(keep(el))return;for(var i=0;i<ATTRS.length;i++){var v=el.getAttribute&&el.getAttribute(ATTRS[i]);if(v){var u=tr(v);if(u!==v)el.setAttribute(ATTRS[i],u)}}}
 function walk(root){
   if(root.nodeType===3){if(!root.parentNode||!SKIP[root.parentNode.nodeName])textNode(root);return}
   if(root.nodeType!==1||SKIP[root.nodeName])return;
   attrs(root);
   if(root.nodeName==='INPUT'&&(root.type==='button'||root.type==='submit')&&root.value){var u=tr(root.value);if(u!==root.value)root.value=u}
-  var w=document.createTreeWalker(root,NodeFilter.SHOW_ELEMENT|NodeFilter.SHOW_TEXT,null),n;
+  if(keep(root))return;
+  var w=document.createTreeWalker(root,NodeFilter.SHOW_ELEMENT|NodeFilter.SHOW_TEXT,{acceptNode:function(x){return x.nodeType===1&&x.getAttribute('translate')==='no'?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT}}),n;
   while((n=w.nextNode())){if(n.nodeType===3){if(!SKIP[n.parentNode.nodeName])textNode(n)}else if(!SKIP[n.nodeName])attrs(n)}}
 window.I18N={t:tr,date:arDate,lang:'ar'};
 function start(){

@@ -1,0 +1,389 @@
+{
+ "_about": "Synonym groups for the document search (site/search.js) and its Suggested topics chips; the first eight groups are the chips shown before \"More topics\". A query term that equals, or is contained in, a member of a group (spaces ignored) also searches every member of that group. Arabic wording follows the SDAIA Data and AI Glossary (2nd ed. 2024, research/aigr_arabic_terms.csv) where it has the same concept. Arabic matching is substring matching, so the glossary's indefinite form (تزييف عميق، تعرف على الوجوه، قياسات حيوية، ذكاء اصطناعي توليدي، بيانات شخصية، خصوصية، تحيز، شفافية، مركز البيانات، مركبة ذاتية التحكم، وكيل ذكي) is listed beside the definite form: a definite form such as التزييف العميق does not find the indefinite تزييف عميق in a text.",
+ "groups": [
+  {
+   "key": "deepfakes",
+   "label_en": "Deepfakes",
+   "label_ar": "التزييف العميق",
+   "en": [
+    "deepfake",
+    "deep fake",
+    "synthetic media",
+    "synthetic content",
+    "manipulated media",
+    "ai-generated content",
+    "face swap",
+    "voice cloning"
+   ],
+   "ar": [
+    "التزييف العميق",
+    "المحتوى المزيف",
+    "الوسائط المصطنعة",
+    "المحتوى المولد بالذكاء الاصطناعي",
+    "تزييف عميق"
+   ]
+  },
+  {
+   "key": "sovereignty",
+   "label_en": "AI and data sovereignty",
+   "label_ar": "سيادة البيانات والذكاء الاصطناعي",
+   "en": [
+    "ai sovereignty",
+    "sovereign ai",
+    "digital sovereignty",
+    "data sovereignty",
+    "technological sovereignty",
+    "sovereign cloud",
+    "sovereign compute",
+    "data localisation",
+    "data localization",
+    "data residency"
+   ],
+   "ar": [
+    "السيادة الرقمية",
+    "سيادة البيانات",
+    "الذكاء الاصطناعي السيادي",
+    "السيادة التقنية",
+    "توطين البيانات"
+   ]
+  },
+  {
+   "key": "generative-ai",
+   "label_en": "Generative AI",
+   "label_ar": "الذكاء الاصطناعي التوليدي",
+   "en": [
+    "generative ai",
+    "genai",
+    "large language model",
+    "llm",
+    "foundation model",
+    "general-purpose ai",
+    "chatbot"
+   ],
+   "ar": [
+    "الذكاء الاصطناعي التوليدي",
+    "نموذج لغوي كبير",
+    "النماذج اللغوية الكبيرة",
+    "بوت محادثة",
+    "روبوت المحادثة",
+    "نموذج أساس",
+    "النماذج التأسيسية",
+    "ذكاء اصطناعي توليدي"
+   ]
+  },
+  {
+   "key": "agentic-ai",
+   "label_en": "Agentic AI",
+   "label_ar": "وكلاء الذكاء الاصطناعي",
+   "en": [
+    "agentic",
+    "ai agent",
+    "autonomous agent"
+   ],
+   "ar": [
+    "وكلاء الذكاء الاصطناعي",
+    "وكيل ذكي",
+    "الوكلاء الأذكياء",
+    "نظام متعدد الوكلاء",
+    "الذكاء الاصطناعي الوكيلي"
+   ]
+  },
+  {
+   "key": "facial-recognition",
+   "label_en": "Facial recognition",
+   "label_ar": "التعرف على الوجوه",
+   "en": [
+    "facial recognition",
+    "face recognition",
+    "biometric identification",
+    "remote biometric",
+    "biometric surveillance"
+   ],
+   "ar": [
+    "التعرف على الوجوه",
+    "التعرف على الوجه",
+    "التعرف البيومتري",
+    "تحديد القياسات الحيوية عن بعد",
+    "تعرف على الوجوه",
+    "قياسات حيوية"
+   ]
+  },
+  {
+   "key": "personal-data",
+   "label_en": "Personal data and privacy",
+   "label_ar": "البيانات الشخصية والخصوصية",
+   "en": [
+    "personal data",
+    "data protection",
+    "privacy"
+   ],
+   "ar": [
+    "حماية البيانات الشخصية",
+    "البيانات الشخصية",
+    "الخصوصية",
+    "بيانات شخصية",
+    "خصوصية"
+   ]
+  },
+  {
+   "key": "children",
+   "label_en": "Children",
+   "label_ar": "الأطفال",
+   "en": [
+    "children",
+    "child",
+    "minors",
+    "child safety"
+   ],
+   "ar": [
+    "الأطفال",
+    "القاصرين",
+    "حماية الطفل"
+   ]
+  },
+  {
+   "key": "elections",
+   "label_en": "Elections",
+   "label_ar": "الانتخابات",
+   "en": [
+    "election",
+    "electoral",
+    "political advertising"
+   ],
+   "ar": [
+    "الانتخابات",
+    "الدعاية الانتخابية"
+   ]
+  },
+  {
+   "key": "disinformation",
+   "label_en": "Disinformation",
+   "label_ar": "المعلومات المضللة",
+   "en": [
+    "disinformation",
+    "misinformation",
+    "fake news",
+    "information integrity"
+   ],
+   "ar": [
+    "المعلومات المضللة",
+    "الأخبار الكاذبة",
+    "التضليل"
+   ]
+  },
+  {
+   "key": "copyright",
+   "label_en": "Copyright",
+   "label_ar": "حقوق المؤلف",
+   "en": [
+    "copyright",
+    "intellectual property",
+    "text and data mining"
+   ],
+   "ar": [
+    "حقوق المؤلف",
+    "الملكية الفكرية"
+   ]
+  },
+  {
+   "key": "employment",
+   "label_en": "Employment",
+   "label_ar": "التوظيف",
+   "en": [
+    "employment",
+    "workers",
+    "workplace",
+    "labour",
+    "labor",
+    "hiring",
+    "recruitment"
+   ],
+   "ar": [
+    "التوظيف",
+    "العمال",
+    "بيئة العمل",
+    "سوق العمل"
+   ]
+  },
+  {
+   "key": "health",
+   "label_en": "Health",
+   "label_ar": "الرعاية الصحية",
+   "en": [
+    "healthcare",
+    "health care",
+    "medical device",
+    "clinical",
+    "patient"
+   ],
+   "ar": [
+    "الرعاية الصحية",
+    "الأجهزة الطبية",
+    "المرضى"
+   ]
+  },
+  {
+   "key": "military",
+   "label_en": "Military and defence",
+   "label_ar": "الاستخدامات العسكرية",
+   "en": [
+    "autonomous weapon",
+    "lethal autonomous",
+    "military ai",
+    "defence",
+    "defense"
+   ],
+   "ar": [
+    "الأسلحة ذاتية التشغيل",
+    "الاستخدامات العسكرية",
+    "الدفاع"
+   ]
+  },
+  {
+   "key": "autonomous-vehicles",
+   "label_en": "Autonomous vehicles",
+   "label_ar": "المركبات ذاتية التحكم",
+   "en": [
+    "autonomous vehicle",
+    "self-driving",
+    "automated driving",
+    "driverless"
+   ],
+   "ar": [
+    "مركبة ذاتية التحكم",
+    "المركبات ذاتية التحكم",
+    "المركبات ذاتية القيادة",
+    "سيارة ذاتية القيادة",
+    "السيارات ذاتية القيادة"
+   ]
+  },
+  {
+   "key": "risk-assessment",
+   "label_en": "Risk assessment",
+   "label_ar": "تقييم المخاطر",
+   "en": [
+    "high-risk",
+    "risk assessment",
+    "impact assessment",
+    "conformity assessment"
+   ],
+   "ar": [
+    "عالية المخاطر",
+    "تقييم المخاطر",
+    "تقييم الأثر"
+   ]
+  },
+  {
+   "key": "sandbox",
+   "label_en": "Regulatory sandboxes",
+   "label_ar": "البيئات التنظيمية التجريبية",
+   "en": [
+    "regulatory sandbox",
+    "sandbox"
+   ],
+   "ar": [
+    "البيئة التجريبية التنظيمية",
+    "البيئة التجريبية",
+    "بيئة تنظيمية تجريبية",
+    "البيئات التنظيمية التجريبية"
+   ]
+  },
+  {
+   "key": "transparency",
+   "label_en": "Transparency",
+   "label_ar": "الشفافية",
+   "en": [
+    "transparency",
+    "explainability",
+    "explainable"
+   ],
+   "ar": [
+    "الشفافية",
+    "قابلية التفسير",
+    "شفافية"
+   ]
+  },
+  {
+   "key": "bias",
+   "label_en": "Bias and fairness",
+   "label_ar": "التحيز والعدالة",
+   "en": [
+    "bias",
+    "discrimination",
+    "fairness"
+   ],
+   "ar": [
+    "التحيز",
+    "التمييز",
+    "العدالة",
+    "تحيز"
+   ]
+  },
+  {
+   "key": "education",
+   "label_en": "Education",
+   "label_ar": "التعليم",
+   "en": [
+    "education",
+    "school",
+    "students",
+    "university",
+    "universities"
+   ],
+   "ar": [
+    "التعليم",
+    "المدارس",
+    "الطلاب",
+    "الجامعات"
+   ]
+  },
+  {
+   "key": "cybersecurity",
+   "label_en": "Cybersecurity",
+   "label_ar": "الأمن السيبراني",
+   "en": [
+    "cybersecurity",
+    "cyber security"
+   ],
+   "ar": [
+    "الأمن السيبراني"
+   ]
+  },
+  {
+   "key": "compute",
+   "label_en": "Compute and data centres",
+   "label_ar": "القدرة الحاسوبية ومراكز البيانات",
+   "en": [
+    "data centre",
+    "data center",
+    "compute",
+    "gpu",
+    "supercomputer"
+   ],
+   "ar": [
+    "مراكز البيانات",
+    "القدرة الحاسوبية",
+    "الحوسبة الفائقة",
+    "مركز البيانات"
+   ]
+  },
+  {
+   "key": "finance",
+   "label_en": "Finance",
+   "label_ar": "القطاع المالي",
+   "en": [
+    "banking",
+    "bank",
+    "financial services",
+    "insurance",
+    "fintech"
+   ],
+   "ar": [
+    "البنوك",
+    "القطاع المالي",
+    "التأمين",
+    "التقنية المالية"
+   ]
+  }
+ ]
+}
