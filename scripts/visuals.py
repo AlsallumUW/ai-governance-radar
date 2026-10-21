@@ -403,12 +403,16 @@ def _ybin(y):
 
 def timeline_map(D, ctx):
     cids = _countries(D, ctx)
-    first = {}
+    first, fmon = {}, {}
     for i in D["instruments"]:
         c, d = i["jurisdiction_id"], i.get("publication_date") or ""
         if c in ctx["jur"] and ctx["jur"][c]["type"] == "country" and len(d) >= 4:
             first[c] = min(first.get(c, 9999), int(d[:4]))
+            # month index (year * 12 + month - 1); a year-only date counts from July of that year
+            mi = int(d[:4]) * 12 + (int(d[5:7]) - 1 if len(d) >= 7 else 6)
+            fmon[c] = min(fmon.get(c, 10 ** 6), mi)
     last = int(ctx["today"][:4])
+    last_m = last * 12 + int(ctx["today"][5:7]) - 1
     # the darkest shade goes to the earliest adopters
     nb = len(YEAR_BINS)
     items = {}
@@ -416,7 +420,7 @@ def timeline_map(D, ctx):
         y = first.get(c)
         info = T("First dated document: {year}", year=y) if y else T("No dated document recorded")
         b = nb + 1 - _ybin(y) if y else 0
-        items[c] = {"cls": f"m{b}", "tip": f"{i18n.tr(ctx['jur'][c]['name'])}: {info}", "attrs": {"i": info, "b": b, **({"y": y} if y else {})}}
+        items[c] = {"cls": f"m{b}", "tip": f"{i18n.tr(ctx['jur'][c]['name'])}: {info}", "attrs": {"i": info, "b": b, **({"y": y, "m": fmon[c]} if y else {})}}
     keys = [(0, T("None recorded"))]
     for k, (lo, hi) in enumerate(YEAR_BINS, 1):
         hi = min(hi, last)
@@ -426,14 +430,14 @@ def timeline_map(D, ctx):
     ctl = (f'<div class="wm-ctl wm-play"><button type="button" class="btn wm-pb" aria-pressed="false" data-play="{e(T("Play"))}" data-pause="{e(T("Pause"))}">'
            f'<svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path class="i-play" d="M3 1.5v9l7.5-4.5z"/><path class="i-pause" d="M2.5 1.5h2.6v9H2.5zM6.9 1.5h2.6v9H6.9z"/></svg>'
            f'<span>{e(T("Play"))}</span></button>'
-           f'<label class="wm-yr"><span aria-hidden="true">{YEAR_FROM}</span><span class="vh">{e(T("Year"))}</span><input type="range" min="{YEAR_FROM}" max="{last}" step="1" value="{last}" '
+           f'<label class="wm-yr"><span aria-hidden="true">{YEAR_FROM}</span><span class="vh">{e(T("Month"))}</span><input type="range" min="{YEAR_FROM * 12}" max="{last_m}" step="1" value="{last_m}" '
            f'aria-valuetext="{last}"><span aria-hidden="true">{last}</span></label>'
            f'<output class="wm-count" aria-live="polite">{e(T("{n} countries by {y}", n=n_last, y=last))}</output></div>')
-    note = e(T("Year of the earliest instrument with a publication date, at any level of government. At the slider's first year, every earlier first document is included."))
+    note = e(T("Month of the earliest instrument with a publication date, at any level of government (documents dated only by year count from July of that year). At the slider's start, every earlier first document is included."))
     return map_card("timeline", "map", T("When countries published their first AI governance document"),
-                    T("Each country is shaded by the year of its earliest dated instrument. Move the slider, or press Play, to follow adoption year by year."),
+                    T("Each country is shaded by the year of its earliest dated instrument. Move the slider, or press Play, to follow adoption month by month."),
                     world(items, label), legend(T("First dated document"), keys), below=ctl, note=note,
-                    data={"t-one": TT("1 country by {y}"), "t-many": TT("{n} countries by {y}")})
+                    data={"t-one": TT("1 country by {y}"), "t-many": TT("{n} countries by {y}"), "t-one-s": TT("1 country"), "t-many-s": TT("{n} countries")})
 
 
 # ---------------------------------------------------------------- Global

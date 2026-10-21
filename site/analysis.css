@@ -446,3 +446,25 @@ html[dir="rtl"] .wm-chip{padding:6px 14px 6px 12px}
 @media (prefers-reduced-motion:reduce){.wm-c path,.wm-dots circle{transition:none}}
 @media print{.wm-card,.wm-ctl{display:none}.wmap{break-inside:avoid}}
 #srForm{scroll-margin-top:84px}
+/* search: keywords and countries above the map, the other filters below it, right before the results */
+.sr-wrap{display:block}
+.sr-wrap .sr-top{margin-top:32px}
+.sr-wrap .sr-bottom{margin-top:24px}
+.sr-wrap>.wmap{margin-top:24px}
+@media (min-width:1000px){.sr-top{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);column-gap:36px}.sr-top .sr-jur{border-top:0}}
+@media (min-width:1000px){.sr-top .sr-sec{border-bottom:0}}
+/* timeline map: the month and running count shown large on the map; countries publishing their first document flash */
+.wm-when{position:absolute;left:3%;bottom:7%;display:flex;flex-direction:column;gap:2px;pointer-events:none;direction:inherit}
+html[lang="ar"] .wm-when{direction:rtl;text-align:start}
+.wm-when-d{font-size:clamp(20px,3.2vw,40px);font-weight:700;color:var(--ink);letter-spacing:-.01em;line-height:1.1;font-variant-numeric:tabular-nums}
+.wm-when-n{font-size:clamp(13px,1.4vw,17px);color:var(--ink-2);font-weight:600}
+.wmap a.wm-new path,.wmap a.wm-new circle{stroke:#f5a623;stroke-width:2.2;paint-order:stroke}
+@media (prefers-reduced-motion:no-preference){.wmap a.wm-new path,.wmap a.wm-new circle{animation:wmflash 1s ease-out}}
+@keyframes wmflash{from{stroke-width:5}to{stroke-width:2.2}}
+@media (max-width:600px){
+  .wm-keys{flex-wrap:wrap;row-gap:8px}
+  .wm-keys span{min-width:0;flex:0 0 auto;font-size:11px}
+  .wm-keys span .wk{width:34px}
+  .wm-when{left:3%;bottom:3%}
+  .wm-when-d{font-size:16px}.wm-when-n{font-size:11.5px}
+}

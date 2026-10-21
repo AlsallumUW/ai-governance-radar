@@ -133,18 +133,29 @@ function analysis(m){const f=m.fig,blob=$('#map-lens');if(!blob)return;
   lens=lenses.includes(qget('lens'))?qget('lens'):'docs';const tp=qget('topic');if(tp&&ci(tp)>=0){topic=tp;tsel.value=tp}
   render()}
 
-/* ------------------------------------------------------------ Timeline: year slider and Play */
+/* ------------------------------------------------------------ Timeline: month slider and Play
+   The slider moves month by month; the current month and the running count are shown large on the map itself, and the
+   countries that publish their first document in that month flash briefly. About 6 months a second when playing. */
 function timeline(m){const f=m.fig,range=$('input[type=range]',f),out=$('.wm-count',f),btn=$('.wm-pb',f);if(!range)return;
-  const min=+range.min,max=+range.max;let timer=null;
-  const paint=Y=>{let n=0;m.links.forEach(a=>{const y=+a.dataset.y||0,on=y&&y<=Y;if(on)n++;setBin(a,on?a.dataset.b:0)});
-    range.value=Y;range.setAttribute('aria-valuetext',String(Y));out.textContent=fill(n===1?f.dataset.tOne:f.dataset.tMany,{n,y:Y})};
+  const min=+range.min,max=+range.max;let timer=null,prev=null;
+  const AR=document.documentElement.lang==='ar';
+  const MF=new Intl.DateTimeFormat(AR?'ar-u-ca-gregory-nu-latn':'en-GB',{month:'long',year:'numeric',timeZone:'UTC'});
+  const lab=M=>MF.format(new Date(Date.UTC(Math.floor(M/12),M%12,1)));
+  const stage=$('.wm-stage',f),ov=document.createElement('div');ov.className='wm-when';ov.setAttribute('aria-hidden','true');
+  ov.innerHTML='<span class="wm-when-d"></span><span class="wm-when-n"></span>';stage.appendChild(ov);
+  const paint=M=>{let n=0;m.links.forEach(a=>{const mi=+a.dataset.m||0,on=mi&&mi<=M;if(on)n++;setBin(a,on?a.dataset.b:0);
+      a.classList.toggle('wm-new',!!(on&&prev!==null&&mi>prev&&M-mi<2))});
+    prev=M;const L=lab(M);range.value=M;range.setAttribute('aria-valuetext',L);
+    const t=fill(n===1?f.dataset.tOne:f.dataset.tMany,{n,y:L});out.textContent=t;
+    $('.wm-when-d',ov).textContent=L;$('.wm-when-n',ov).textContent=fill(n===1?f.dataset.tOneS:f.dataset.tManyS,{n})};
   const stop=()=>{clearInterval(timer);timer=null;btn.setAttribute('aria-pressed','false');$('span',btn).textContent=btn.dataset.play};
-  const play=()=>{let Y=+range.value>=max?min:+range.value;paint(Y);btn.setAttribute('aria-pressed','true');$('span',btn).textContent=btn.dataset.pause;
-    timer=setInterval(()=>{Y++;if(Y>max){stop();return}paint(Y)},RM.matches?1100:650)};
+  const play=()=>{let M=+range.value>=max?min:+range.value;prev=null;paint(M);btn.setAttribute('aria-pressed','true');$('span',btn).textContent=btn.dataset.pause;
+    timer=setInterval(()=>{M++;if(M>max){stop();m.links.forEach(a=>a.classList.remove('wm-new'));return}paint(M)},RM.matches?700:170)};
   btn.addEventListener('click',()=>timer?stop():play());
-  range.addEventListener('input',()=>{if(timer)stop();paint(+range.value)});
-  /* once, when the map first comes into view: play the years through (not with reduced motion) */
-  if(!RM.matches&&'IntersectionObserver' in window){const io=new IntersectionObserver(es=>{if(es.some(e=>e.isIntersecting)){io.disconnect();setTimeout(()=>{if(!timer&&+range.value===max)play()},400)}},{threshold:.6});io.observe($('.wm-stage',f))}}
+  range.addEventListener('input',()=>{if(timer)stop();prev=null;paint(+range.value)});
+  prev=null;paint(max);
+  /* once, when the map first comes into view: play the months through (not with reduced motion) */
+  if(!RM.matches&&'IntersectionObserver' in window){const io=new IntersectionObserver(es=>{if(es.some(e=>e.isIntersecting)){io.disconnect();setTimeout(()=>{if(!timer&&+range.value===max)play()},400)}},{threshold:.6});io.observe(stage)}}
 
 /* ------------------------------------------------------------ Global: organisation explorer */
 function globalMap(m){const f=m.fig,blob=$('#map-orgs');if(!blob)return;
