@@ -8,6 +8,8 @@
 .an-grid #fig-years,.an-grid #fig-adoption,.an-grid #fig-heat{grid-column:1/-1}
 .afig{scroll-margin-top:64px}
 .afig .fig-chart{max-width:900px}.afig .fig-table{max-width:900px;overflow-x:auto}
+/* charts sit in a centred 900px column inside their card (title, notes, legend and chart share one left edge) */
+.afig>*{max-width:900px;margin-inline:auto}
 .takeaway{margin:6px 0 2px;font-size:15px;line-height:1.5;color:var(--ink);max-width:var(--text)}
 .chart .grid.ref{stroke:var(--axis);stroke-dasharray:3 3}
 .chart .tick.reg{fill:var(--ink-2)}
@@ -75,6 +77,7 @@
 .scope-toggle{display:inline-flex;align-items:center;gap:8px;margin:8px 0 2px;font-size:14px;font-weight:600;color:var(--ink);cursor:pointer}
 .scope-toggle input{width:18px;height:18px;accent-color:var(--accent)}
 .fig-note{margin:8px 0 0;font-size:13px;color:var(--ink-2);max-width:var(--text)}
+.afig>.fig-note{margin:8px auto 0;max-width:900px}
 .discovery{margin:12px 0 0;font-size:15px;color:var(--ink-2);max-width:var(--text)}
 @media print{.scope-toggle{display:none}}
 /* UX phase 5: dark labels on heat step 7 in dark mode (AA contrast) */
