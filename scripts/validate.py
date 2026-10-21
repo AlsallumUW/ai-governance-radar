@@ -37,6 +37,7 @@ PHOTO_ROLES = ("hero", "feature", "backdrop", "band")
 PHOTO_ASPECT = {"hero": 16 / 9, "feature": 4 / 5, "backdrop": 3 / 2, "band": 21 / 9}
 PHOTO_FIELDS = ["role", "file", "file_small", "width", "height", "width_small", "subject", "caption", "why", "alt",
                 "title", "author", "license", "license_url", "commons_url", "source_width"]
+PAGE_PHOTO_PAGES = ("analysis", "timeline", "global", "search")
 PHOTO_CAPS = {"hero": (200_000, 80_000), "other": (150_000, 60_000)}
 
 
@@ -44,7 +45,8 @@ def check_photos():
     """data/photos.json (UX phase 2d): every country has exactly four photos, one in each role (hero, feature, backdrop, band),
     cropped to that role's shape; allowed licences only; files present and within size; every field filled.
     International and regional organisations ("bodies", images under site/img/bodies/<CODE>/) get the same checks when they
-    have photos; a body without photos is only a warning (its page shows the member map instead)."""
+    have photos; a body without photos is only a warning (its page shows the member map instead). The site pages ("pages":
+    analysis, timeline, global, search; images under site/img/pages/<page>/) need one photo each, role hero."""
     p = DATA / "photos.json"
     if not p.exists(): return [], []
     errs, warns = [], []
@@ -56,15 +58,19 @@ def check_photos():
     bdata = d.get("bodies") or {}
     for cid in sorted(countries - set(data)): errs.append(f"photos {cid}: no photos")
     for bid in sorted(bodies - set(bdata)): warns.append(f"photos {bid}: no photos (the page shows the member map)")
-    for kind, known, entries in (("countries", countries, data), ("bodies", bodies, bdata)):
+    # site pages (Analysis, Timeline, Global, Search): one banner photo each, role hero, under img/pages/<page>/
+    pdata = d.get("pages") or {}
+    for pg in sorted(set(PAGE_PHOTO_PAGES) - set(pdata)): warns.append(f"photos {pg}: no banner photo (the page shows a plain header)")
+    for kind, known, entries in (("countries", countries, data), ("bodies", bodies, bdata), ("pages", set(PAGE_PHOTO_PAGES), pdata)):
+        need = ("hero",) if kind == "pages" else PHOTO_ROLES
         for cid, ph in entries.items():
             E = lambda m: errs.append(f"photos {cid}: {m}")
-            if cid not in known: E("not a country file" if kind == "countries" else "not a body file (data/regional)")
+            if cid not in known: E({"countries": "not a country file", "bodies": "not a body file (data/regional)"}.get(kind, f"not a site page ({', '.join(PAGE_PHOTO_PAGES)})"))
             ims = ph.get("photos") or []
             roles = [im.get("role") for im in ims]
-            if sorted(roles) != sorted(PHOTO_ROLES): E(f"roles are {roles}; need exactly one each of {', '.join(PHOTO_ROLES)}")
+            if sorted(roles) != sorted(need): E(f"roles are {roles}; need exactly one each of {', '.join(need)}")
             for im in ims:
-                if im.get("role") not in PHOTO_ROLES: E(f"{im.get('file')} role must be one of {PHOTO_ROLES}")
+                if im.get("role") not in need: E(f"{im.get('file')} role must be one of {need}")
                 for f in PHOTO_FIELDS:
                     if f not in im or (im[f] in ("", None) and f != "license_url"): E(f"{im.get('file')} missing {f}")
                 if not PHOTO_LICENCES.match(im.get("license") or ""): E(f"{im.get('file')} licence not allowed: {im.get('license')}")

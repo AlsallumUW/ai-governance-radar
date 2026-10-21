@@ -157,7 +157,7 @@ function excerpt(it){
   const k=AR&&it.sa?'sa':'sum',txt=it[k]||'';if(!txt)return null;const[s,e]=cut(txt,0,200);return{k,html:esc(txt.slice(s,e))+(e<txt.length?' …':'')}}
 
 /* ------------------------------------------------------------ rendering */
-const form=$('#srForm'),qIn=$('#srQ'),sum=$('#srSummary'),box=$('#srResults'),note=$('#srNote'),more=$('#srMore'),csvB=$('#srCsv');
+const mapFig=$('figure.wmap[data-map="search"]'),form=$('#srForm'),qIn=$('#srQ'),sum=$('#srSummary'),box=$('#srResults'),note=$('#srNote'),more=$('#srMore'),csvB=$('#srCsv');
 const jName=id=>J[id]?(AR?J[id][1]:J[id][0]):id;
 const pageURL=it=>`../${J[it.j]&&J[it.j][2]==='c'?'country':'body'}/${it.j}/#${it.id}`;
 function titles(it){const ar=it.at||(isAr(it.ot)?it.ot:'');
@@ -190,6 +190,8 @@ function render(keepShown){
   note.hidden=!LEFT||F.range==='';
   note.textContent=LEFT===1?'1 matching document has only a year, or no date, and is not placed in this range.':`${LEFT.toLocaleString('en')} matching documents have only a year, or no date, and are not placed in this range.`;
   more.hidden=n<=SHOWN;$('#srShown').textContent=n>SHOWN?`Showing ${SHOWN.toLocaleString('en')} of ${n.toLocaleString('en')}`:'';
+  /* the map shows where the current results come from (country documents only) */
+  if(mapFig&&window.RadarMap){const per={};RES.forEach(it=>{if(J[it.j][2]==='c')per[it.j]=(per[it.j]||0)+1});window.RadarMap.shade(mapFig,per)}
   csvB.disabled=!n;csvB.textContent=`Download CSV (${n.toLocaleString('en')})`;
   /* related terms */
   /* shown in the page's language only ("and their Arabic/English equivalents" when the other language has some); the search uses them all */
@@ -197,7 +199,7 @@ function render(keepShown){
   const mine=also.filter(a=>isAr(a)===AR),other=also.length>mine.length,list=mine.length?mine:also;
   $('#srAlso').hidden=!also.length;$('#srAlsoList').innerHTML=list.map(a=>`<bdi>${esc(a)}</bdi>`).join(AR?'، ':', ');
   const x=$('#srAlsoX');x.hidden=!(mine.length&&other);x.textContent=x.hidden?'':' '+tr(AR?'and their English equivalents':'and their Arabic equivalents');
-  $$('#srTopics button,#srCloud button').forEach(b=>b.setAttribute('aria-pressed',String(Q.some(q=>q.groups.some(g=>g.key===b.dataset.key)))));
+  $$('#srTopics button').forEach(b=>b.setAttribute('aria-pressed',String(Q.some(q=>q.groups.some(g=>g.key===b.dataset.key)))));
   topics()}
 
 /* Suggested topics: the first TOPN groups, then "More topics"; a pressed topic among the others shows them all */
@@ -291,9 +293,8 @@ load().then(()=>{
   $('#srTopics').innerHTML=GROUPS.map(g=>`<button type="button" class="sr-topic" data-key="${esc(g.key)}" aria-pressed="false" translate="no">${esc(g.label)}</button>`).join('');
   $('#srTopics').addEventListener('click',ev=>{const b=ev.target.closest('.sr-topic');if(!b)return;const g=GROUPS.find(x=>x.key===b.dataset.key);F.q=g.q;F.rel=true;toForm();update()});
   $('#srMoreT').addEventListener('click',()=>{TOPALL=!TOPALL;topics();if(!TOPALL)$('#srMoreT').focus()});
-  /* the topic cloud at the top of the page runs the same search as the chips, then brings the results into view */
-  const cloud=$('#srCloud');if(cloud)cloud.addEventListener('click',ev=>{const b=ev.target.closest('.tb-b');if(!b)return;const g=GROUPS.find(x=>x.key===b.dataset.key);if(!g)return;
-    F.q=g.q;F.rel=true;toForm();update();
+  /* the map at the top: selecting a country makes it the search's only country, then brings the results into view */
+  if(mapFig)mapFig.addEventListener('wm:pick',ev=>{const c=ev.detail.iso3;if(!J[c])return;F.j=[c];F.region=[];F.body=[];chips();update();
     sum.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'})});
   buildOpts();F=readURL();toForm();render();
   window.RADAR_SEARCH={count:()=>RES.length,state:()=>JSON.parse(JSON.stringify(F)),asOf:()=>ASOF,

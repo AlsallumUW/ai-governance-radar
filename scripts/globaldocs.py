@@ -99,12 +99,10 @@ def global_page(D, ctx, head1, nav, foot):
     stats = [("Organisations", len(bodies)), ("Documents", len(rows)), ("Treaties and binding acts", n_bind), ("Since 2024", n_24)]
     canon = f"{SITE_URL}global/"
     title = "Global and regional documents | AI Governance Radar"
-    H = [head1(title, LEDE, canon), '<body class="cp gd">', nav("global"), '<main class="page gd-page">']
-    H.append(f'<header class="hero gd-hero hero-split" id="top"><div class="hero-text"><p class="eyebrow">{e(i18n.T("Data as of {date}", date=fmt_date(today)))}</p>'
-             '<h1>Global and regional documents</h1>'
-             f'<p class="section-lede gd-lede">{e(LEDE)}</p>'
-             '<dl class="stats stats4">' + "".join(f'<div><dt>{e(k)}</dt><dd>{v:,}</dd></div>' for k, v in stats) + '</dl></div>'
-             + visuals.org_mosaic(D, ctx) + '</header>')
+    H = [head1(title, LEDE, canon).replace("</head>", visuals.banner_preload("global", ctx) + "</head>", 1), '<body class="cp gd">', nav("global"), '<main id="main">']
+    H.append(visuals.banner("global", ctx, i18n.T("Data as of {date}", date=fmt_date(today)), "Global and regional documents", lede=LEDE,
+                            stats=[(k, f"{v:,}") for k, v in stats]))
+    H.append('<div class="page gd-page">' + visuals.global_map(D, ctx))
     H.append('<nav class="chart-index" aria-label="On this page"><a href="#organisations">Organisations</a><a href="#documents">Documents</a></nav>')
     H.append(f'<section id="organisations" class="block"><h2>Organisations <span class="count">{len(bodies)}</span></h2>'
              f'{org_cards(bodies, by, ctx)}</section>')
@@ -138,5 +136,5 @@ def global_page(D, ctx, head1, nav, foot):
              '<div class="inst-list gd-list" id="gdList">' + "".join(doc_row(i, jur[i["jurisdiction_id"]], cats, ctx, n) for n, i in enumerate(rows)) + '</div>'
              '<p class="gd-none muted" id="gdNone" hidden>No documents match these filters.</p>'
              f'<script type="application/json" id="gd-csv">{csv}</script></section>')
-    H.append('</main>' + foot(D) + '<script src="../assets/global.js" defer></script></body></html>')
+    H.append('</div></main>' + foot(D) + '<script src="../assets/maps.js" defer></script><script src="../assets/global.js" defer></script></body></html>')
     return "".join(H)

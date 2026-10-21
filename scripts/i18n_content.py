@@ -3,11 +3,12 @@
     data/i18n/ar/<ISO3>.json            country records
     data/i18n/ar/regional/<CODE>.json   regional and international bodies
     data/i18n/ar/_global.json           change events not tied to a jurisdiction
+    data/i18n/ar/_pages.json            banner photos of the site pages (data/photos.json "pages": analysis, timeline, global, search)
 
 Each file maps a record id to its translated fields:
     {"<record id>": {"<field>": {"ar": "...", "src": "<hash of the English source>"}}}
 Record ids: "issuer:<ISO3>:<hash of the English name>" (field name: an issuing body or publisher as named in a record or lead), an instrument id (fields title, summary, status), a jurisdiction id (fields summary, lead_institutions,
-review_notes, coverage_note), a change id (fields title; detail for government actions, kind "world") or "photo:<ISO3 or body code>:<role>" (fields caption, alt).
+review_notes, coverage_note), a change id (fields title; detail for government actions, kind "world") or "photo:<ISO3, body code or page>:<role>" (fields caption, alt).
 "ar" is null with a "skip" reason when a text could not be translated with confidence; the page then shows the English.
 
 Rules (research/WEEKLY.md): use research/aigr_arabic_terms.csv terms; translate faithfully, never adding, softening or
@@ -32,7 +33,7 @@ def src_hash(text):
 
 
 def path_for(jid, rec=None):
-    if jid == "_global": return BASE / "_global.json"
+    if jid in ("_global", "_pages"): return BASE / f"{jid}.json"
     rec = rec or load(next(p for p in jurisdiction_files() if p.stem == jid))
     return BASE / ("regional" if rec["jurisdiction"].get("type") != "country" else "") / f"{jid}.json"
 
@@ -93,6 +94,13 @@ def global_items():
             + [(c["id"], "detail", c["detail"]) for c in cs if c.get("kind") == "world" and c.get("detail")])
 
 
+def pages_items():
+    """Captions and alt texts of the site pages' banner photos (data/photos.json "pages")."""
+    p = DATA / "photos.json"
+    pages = (load(p).get("pages") or {}) if p.exists() else {}
+    return [(f"photo:{pg}:{ph['role']}", f, ph[f]) for pg, v in pages.items() for ph in v.get("photos") or [] for f in ("caption", "alt") if ph.get(f)]
+
+
 def all_photos():
     """data/photos.json: {ISO3 or body code: {"photos": [...]}} for countries and international and regional organisations."""
     p = DATA / "photos.json"
@@ -124,6 +132,8 @@ def audit(only=None):
         res[jid] = _audit(items(rec, photos), stored(path_for(jid, rec)))
     if not only or "_global" in only:
         res["_global"] = _audit(global_items(), stored(path_for("_global")))
+    if not only or "_pages" in only:
+        res["_pages"] = _audit(pages_items(), stored(path_for("_pages")))
     return res
 
 
@@ -184,6 +194,7 @@ def extract(jids):
     work = []
     for jid in jids:
         if jid == "_global": its, st = global_items(), stored(path_for("_global"))
+        elif jid == "_pages": its, st = pages_items(), stored(path_for("_pages"))
         else:
             rec = load(next(p for p in jurisdiction_files() if p.stem == jid))
             its, st = items(rec, photos), stored(path_for(jid, rec))

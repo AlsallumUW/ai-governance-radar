@@ -664,13 +664,14 @@ def analysis_page(D, recs, ctx):
     canon = f"{SITE_URL}analysis/"
     title = "Global analysis | AI Governance Radar"
     desc = _T("Charts across all 195 countries: AI governance instruments per year, adoption, regions, categories, treaties and issuers. Data as of {date}.", date=fmt_date(today))
-    H = [head1(title, desc, canon), '<body class="cp an">', nav("analysis"), '<main class="page">']
-    H.append(f'<header class="hero hero-split" id="top"><div class="hero-text"><p class="eyebrow">{e(_T("Global analysis · data as of {date}", date=fmt_date(today)))}</p><h1>AI governance in 195 countries</h1>'
-             + '<div class="stats-row"><dl class="stats stats4">' + "".join(f'<div><dt>{k}</dt><dd>{v}</dd></div>' for k, v in stats) + '</dl>'
-             + count_info(COUNT_DEFS[:3] + ["Leads: documents found but not yet verified as in-scope instruments; they are not counted in any chart."]) + '</div>'
-             + '<p class="stats-note">' + e(_T("Instruments: {c} national, state/provincial and local, plus {r} of international and regional organisations.", c=f"{nC:,}", r=nR)) + '</p>'
+    H = [head1(title, desc, canon).replace("</head>", visuals.banner_preload("analysis", ctx) + "</head>", 1), '<body class="cp an">', nav("analysis"), '<main id="main">']
+    H.append(visuals.banner("analysis", ctx, _T("Global analysis · data as of {date}", date=fmt_date(today)), "AI governance in 195 countries", stats=stats,
+                            info=count_info(COUNT_DEFS[:3] + ["Leads: documents found but not yet verified as in-scope instruments; they are not counted in any chart."])))
+    H.append('<div class="page">')
+    H.append('<div class="pg-notes"><p class="stats-note">' + e(_T("Instruments: {c} national, state/provincial and local, plus {r} of international and regional organisations.", c=f"{nC:,}", r=nR)) + '</p>'
              + f'<aside class="caution" role="note"><strong>Read with care.</strong> {e(CAUTION)} <a href="../?about=method">Methodology</a></aside>'
-             + f'<p class="discovery">{e(DISCOVERY)}</p></div>' + visuals.world_map(D, ctx) + '</header>')
+             + f'<p class="discovery">{e(DISCOVERY)}</p></div>')
+    H.append(visuals.analysis_map(D, ctx))
     # each chart keeps the letter the page's notes use for it ("chart a", "the region charts (c)"); the index shows the same letters
     H.append('<nav class="chart-index" aria-label="Charts">' + "".join(f'<a href="#{f}" data-key="{key(f)}">{t}</a>' for f, t in (
              ("fig-years", "Per year"), ("fig-adoption", "Adoption"), ("fig-region", "Regions"), ("fig-rank", "Country ranking"), ("fig-heat", "Categories"),
@@ -681,7 +682,7 @@ def analysis_page(D, recs, ctx):
              'and the other charts include all three levels. Regional-body instruments are shown separately in chart a and left out of the others, '
              'so a regional instrument is never counted once per member state. Totals below are checked at every build for both settings of the switch.</p>'
              + table(["Check", "Count"], recon) + '</section>')
-    H.append('</main>' + foot(D) + '<script src="../assets/analysis.js" defer></script></body></html>')
+    H.append('</div></main>' + foot(D) + '<script src="../assets/maps.js" defer></script><script src="../assets/analysis.js" defer></script></body></html>')
     return "".join(H)
 
 
@@ -741,11 +742,12 @@ def timeline_page(D, ctx):
                + sel("level", "Government level", "".join(f'<option value="{k}">{e(v)}</option>' for k, v in LEVELS))
                + '<label>From<select name="from" data-f="from"></select></label><label>To<select name="to" data-f="to"></select></label>'
                + '<button type="button" class="btn" id="tlReset">Clear filters</button></form>')
-    H = [head1(title, desc, canon), '<body class="cp tl">', nav("timeline"), '<main class="page tl-page">']
-    H.append(f'<header class="hero tl-hero hero-split"><div class="hero-text"><p class="eyebrow">{e(_T("Publication timeline · data as of {date}", date=fmt_date(ctx["today"])))}</p><h1>Publication timeline</h1>'
-             '<p class="stats-note">Every dated instrument (national, state/provincial, local and regional) placed at its publication date, newest at the right. '
+    H = [head1(title, desc, canon).replace("</head>", visuals.banner_preload("timeline", ctx) + "</head>", 1), '<body class="cp tl">', nav("timeline"), '<main id="main">']
+    H.append(visuals.banner("timeline", ctx, _T("Publication timeline · data as of {date}", date=fmt_date(ctx["today"])), "Publication timeline"))
+    H.append('<div class="page tl-page"><div class="pg-notes"><p class="stats-note">Every dated instrument (national, state/provincial, local and regional) placed at its publication date, newest at the right. '
              'Documents dated only by year or month are spread across that year or month and drawn as open circles. ' + e(CAUTION) + ' <a href="../?about=method">Methodology</a></p>'
-             f'<p class="discovery">{e(DISCOVERY)}</p></div>' + visuals.rise_band(D, ctx) + '</header>')
+             f'<p class="discovery">{e(DISCOVERY)}</p></div>')
+    H.append(visuals.timeline_map(D, ctx))
     H.append('<section class="tl-panel" aria-label="Timeline">' + filters)
     H.append('<p class="tl-status" id="tlStatus" aria-live="polite"></p>' + LEGEND.replace('class="legend"', 'class="legend tl-legend"'))
     H.append('<div class="tl-chart" id="tlChart"><svg id="tlSvg" class="chart" role="img" aria-label="Instruments by publication date"></svg>'
@@ -753,8 +755,8 @@ def timeline_page(D, ctx):
              '<div class="tl-card" id="tlCard" hidden role="dialog" aria-label="Instrument details"></div></div>')
     H.append('<div class="tl-list" id="tlList"></div></section>')
     H.append('<noscript><p>The timeline needs JavaScript. Every instrument is also listed on its country page and in the export on the map page.</p></noscript>')
-    H.append('</main>' + foot(D) + '<script id="tl-data" type="application/json">' + json.dumps(T, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
-             + '</script><script src="../assets/timeline.js" defer></script></body></html>')
+    H.append('</div></main>' + foot(D) + '<script id="tl-data" type="application/json">' + json.dumps(T, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+             + '</script><script src="../assets/maps.js" defer></script><script src="../assets/timeline.js" defer></script></body></html>')
     return "".join(H)
 
 

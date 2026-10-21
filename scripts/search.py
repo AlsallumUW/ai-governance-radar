@@ -109,9 +109,9 @@ def search_page(D, ctx, head1, nav, foot):
     asof = fmt_date(ctx["today"])
     pre = "".join(f'<link rel="preload" id="{i}" href="{_url(n)}" as="fetch" crossorigin="anonymous">'
                   for i, n in (("srData", "search.json"), ("srTerms", "search_terms.json")))
-    H = [head1(title, LEDE, canon).replace("</head>", pre + "</head>", 1), '<body class="cp sr">', nav("search"), '<main class="page sr-page">']
-    H.append('<header class="hero sr-hero hero-split"><div class="hero-text"><h1>Search documents</h1>'
-             f'<p class="stats-note sr-lede">{e(LEDE)}</p></div>' + visuals.topic_cloud(D, ctx) + '</header>')
+    H = [head1(title, LEDE, canon).replace("</head>", pre + visuals.banner_preload("search", ctx) + "</head>", 1), '<body class="cp sr">', nav("search"), '<main id="main">']
+    H.append(visuals.banner("search", ctx, "", "Search documents", lede=LEDE))
+    H.append('<div class="page sr-page">' + visuals.search_map(D, ctx))
     seg = "".join(f'<button type="button" class="seg-b" data-range="{k}" aria-pressed="{"true" if not k else "false"}">{e(v)}</button>' for k, v in PRESETS)
     types = "".join(f'<option value="{k}">{e(v)}</option>' for k, v in TYPES)
     cats = "".join(f'<option value="{k}">{e(v)}</option>' for k, v in D["categories"].items())
@@ -156,5 +156,5 @@ def search_page(D, ctx, head1, nav, foot):
              '<p class="sr-note" id="srNote" hidden></p>'
              '<p class="sr-morep"><span class="sr-shown" id="srShown"></span><button type="button" class="btn" id="srMore" hidden>Show more</button></p>'
              '<noscript><p>The search needs JavaScript. Every document is also listed on its country page and in the export on the map page.</p></noscript>')
-    H.append('</main>' + foot(D) + '<script src="../assets/search.js" defer></script></body></html>')
+    H.append('</div></main>' + foot(D) + '<script src="../assets/maps.js" defer></script><script src="../assets/search.js" defer></script></body></html>')
     return "".join(H)
