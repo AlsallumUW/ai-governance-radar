@@ -12,6 +12,11 @@ const items=T.items.map(r=>{const [id,j,d,g,t,iss,s,c,l,u,app]=r;let x=null,prec
   else if(/^\d{4}-\d{2}$/.test(d)){x=Date.UTC(+d.slice(0,4),+d.slice(5,7)-1,15);prec='month'}
   else if(/^\d{4}$/.test(d)){x=Date.UTC(+d,6,1);prec='year'}
   return{id,j,d,g,t,iss,s,c,l,u,app,x,prec,y:x==null?null:new Date(x).getUTCFullYear()}});
+/* year-only and month-only dates are spread evenly across their year / month (in a stable order) instead of
+   piling up on one day, and drawn as open circles so they read as approximate */
+{const per=new Map();items.forEach(it=>{if(it.prec==='year'||it.prec==='month'){const k=it.prec+it.d;if(!per.has(k))per.set(k,[]);per.get(k).push(it)}});
+  per.forEach(v=>{v.sort((a,b)=>a.id<b.id?-1:1);const it0=v[0],y=+it0.d.slice(0,4),a=it0.prec==='year'?Date.UTC(y,0,1):Date.UTC(y,+it0.d.slice(5,7)-1,1),
+    b=Math.min(it0.prec==='year'?Date.UTC(y+1,0,1):Date.UTC(y,+it0.d.slice(5,7),1),Date.UTC(+T.asof.slice(0,4),+T.asof.slice(5,7)-1,+T.asof.slice(8,10))+864e5);v.forEach((it,k)=>{it.x=a+(b-a)*(k+.5)/v.length})})}
 const fmt=it=>{if(!it.d)return'Undated';if(it.prec==='year')return it.d+' (year only)';const m=MON[+it.d.slice(5,7)-1];return it.prec==='month'?`${m} ${it.d.slice(0,4)}`:`${+it.d.slice(8,10)} ${m} ${it.d.slice(0,4)}`};
 const years=items.filter(i=>i.y!=null).map(i=>i.y),Y0=Math.min(...years),Y1=Math.max(...years,+T.asof.slice(0,4));
 const DEF_FROM=Math.max(Y0,2016);
@@ -74,7 +79,7 @@ function drawMain(rows){
   if(span===1)for(let m=1;m<12;m++){const gx=X(Date.UTC(F.from,m,1));el('line',{class:'grid',x1:gx,x2:gx,y1:top+plotH-6,y2:top+plotH},svg);const t=el('text',{class:'tick',x:gx+2,y:top+plotH+18},svg);t.textContent=MON[m]}
   el('line',{class:'axis',x1:L,x2:W-R,y1:top+plotH,y2:top+plotH},svg);
   const g=el('g',{},svg);
-  col.forEach((v,c)=>v.forEach((it,k)=>{const cx=L+c*dia+r+.5,cy=base-k*step;const n=el('circle',{class:'dot s-'+GC[it.g],cx,cy,r},g);dots.push({it,node:n,cx,cy})}));
+  col.forEach((v,c)=>v.forEach((it,k)=>{const cx=L+c*dia+r+.5,cy=base-k*step;const n=el('circle',{class:'dot s-'+GC[it.g]+(it.prec==='day'?'':' approx'),cx,cy,r},g);dots.push({it,node:n,cx,cy})}));
   svg.setAttribute('aria-label',`${rows.length} instruments by publication date, ${F.from} to ${F.to}`)}
 function nearest(ev){const b=svg.getBoundingClientRect(),vb=svg.viewBox.baseVal,sx=vb.width/b.width,px=(ev.clientX-b.left)*sx,py=(ev.clientY-b.top)*sx;let best=null,bd=144;
   for(const d of dots){const dx=d.cx-px,dy=d.cy-py,dd=dx*dx+dy*dy;if(dd<bd){bd=dd;best=d}}return best&&{d:best,x:best.cx/sx,y:best.cy/sx}}

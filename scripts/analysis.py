@@ -661,7 +661,7 @@ def timeline_page(D, ctx):
     H = [head1(title, desc, canon), '<body class="cp tl">', nav("timeline"), '<main class="page tl-page">']
     H.append(f'<header class="hero tl-hero"><p class="eyebrow">{e(_T("Publication timeline · data as of {date}", date=fmt_date(ctx["today"])))}</p><h1>Publication timeline</h1>'
              '<p class="stats-note">Every dated instrument (national, state/provincial, local and regional) placed at its publication date, newest at the right. '
-             'Dates given only as a year or a month are placed mid-year or mid-month. ' + e(CAUTION) + ' <a href="../?about=method">Methodology</a></p>'
+             'Documents dated only by year or month are spread across that year or month and drawn as open circles. ' + e(CAUTION) + ' <a href="../?about=method">Methodology</a></p>'
              f'<p class="discovery">{e(DISCOVERY)}</p></header>')
     H.append(filters)
     H.append('<p class="tl-status" id="tlStatus" aria-live="polite"></p>' + LEGEND.replace('class="legend"', 'class="legend tl-legend"'))
