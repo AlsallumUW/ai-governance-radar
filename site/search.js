@@ -191,7 +191,8 @@ function render(keepShown){
   note.textContent=LEFT===1?'1 matching document has only a year, or no date, and is not placed in this range.':`${LEFT.toLocaleString('en')} matching documents have only a year, or no date, and are not placed in this range.`;
   more.hidden=n<=SHOWN;$('#srShown').textContent=n>SHOWN?`Showing ${SHOWN.toLocaleString('en')} of ${n.toLocaleString('en')}`:'';
   /* the map shows where the current results come from (country documents only) */
-  if(mapFig&&window.RadarMap){const per={};RES.forEach(it=>{if(J[it.j][2]==='c')per[it.j]=(per[it.j]||0)+1});window.RadarMap.shade(mapFig,per)}
+  if(mapFig&&window.RadarMap){const per={};RES.forEach(it=>{if(J[it.j][2]==='c')per[it.j]=(per[it.j]||0)+1});window.RadarMap.shade(mapFig,per);
+    if(window.RadarMap.select)window.RadarMap.select(mapFig,F.j.filter(c=>J[c]&&J[c][2]==='c'))}
   csvB.disabled=!n;csvB.textContent=`Download CSV (${n.toLocaleString('en')})`;
   /* related terms */
   /* shown in the page's language only ("and their Arabic/English equivalents" when the other language has some); the search uses them all */
@@ -296,6 +297,8 @@ load().then(()=>{
   /* the map at the top: selecting a country makes it the search's only country, then brings the results into view */
   if(mapFig)mapFig.addEventListener('wm:pick',ev=>{const c=ev.detail.iso3;if(!J[c])return;F.j=[c];F.region=[];F.body=[];chips();update();
     sum.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'})});
+  /* ...and clearing it there (the chip's ×, "Show all countries", Escape or the same country again) removes it here too */
+  if(mapFig)mapFig.addEventListener('wm:unpick',ev=>{const d=ev.detail||{};F.j=d.all?F.j.filter(c=>!J[c]||J[c][2]!=='c'):F.j.filter(c=>c!==d.iso3);chips();update()});
   buildOpts();F=readURL();toForm();render();
   window.RADAR_SEARCH={count:()=>RES.length,state:()=>JSON.parse(JSON.stringify(F)),asOf:()=>ASOF,
     rows:()=>RES.map(it=>({id:it.id,j:it.j,d:it.d,via:it.via,type:J[it.j][2]})),terms:()=>Q.map(q=>q.alts.map(a=>a[1]))};

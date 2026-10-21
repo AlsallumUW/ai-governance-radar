@@ -9,7 +9,8 @@ const CSV=JSON.parse($('#gd-csv').textContent);
 let shown=rows.slice();
 const valid=(k,v)=>k==='q'?v:(ctl[k]&&Array.from(ctl[k].options).some(o=>o.value===v)?v:'');
 function readURL(){const q=new URLSearchParams(location.search);KEYS.forEach(k=>{ctl[k].value=valid(k,q.get(k)||'')});if(!ctl.sort.value)ctl.sort.value='newest'}
-function writeURL(){const q=new URLSearchParams();KEYS.forEach(k=>{const v=ctl[k].value.trim();if(v&&!(k==='sort'&&v==='newest'))q.set(k,v)});
+/* other parameters (the map's ?country=) are kept */
+function writeURL(){const q=new URLSearchParams(location.search);KEYS.forEach(k=>q.delete(k));KEYS.forEach(k=>{const v=ctl[k].value.trim();if(v&&!(k==='sort'&&v==='newest'))q.set(k,v)});
   const s=q.toString();history.replaceState(null,'',location.pathname+(s?'?'+s:'')+location.hash)}
 const coll=new Intl.Collator(AR?'ar':'en');
 function apply(){
