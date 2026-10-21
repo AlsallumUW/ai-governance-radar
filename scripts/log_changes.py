@@ -9,10 +9,12 @@ Government actions (adopted, applied, revised, superseded, ...) that are inferre
 marked needs_review=true. Filling in a field that was previously unknown (e.g. lifecycle 'unverified' -> 'adopted')
 is logged as a radar correction, not as a government action. The same applies when a placeholder lifecycle (draft, unverified or none)
 changes in the same diff that adds the record or deep-reviews its country: the first real status is a correction, not a new event.
-The researcher should also add world events by hand when the source gives a precise date (see research/PROTOCOL.md, section 5).
+A new record also gets a world event for its publication (published, adopted or put to consultation) dated with its
+publication date when that date gives at least the month, unless a world event for it was entered by hand. Other
+government actions with a precise date are still added by hand (see research/PROTOCOL.md, section 5).
 """
 import datetime as dt, sys
-from common import DATA, event, lifecycle_of, load_all, load_all_at, save, today
+from common import DATA, event, lifecycle_of, load_all, load_all_at, publication_event, save, today
 
 TRACKED = {"official_title": "title", "english_title": "title", "issuing_authority": "issuing authority",
            "publication_date": "publication date", "legal_status": "legal status", "scope": "scope",
@@ -29,6 +31,7 @@ def detect(old, new, date):
     n = {i["id"]: i for i in new.get("instruments", [])}
     jid = new["jurisdiction"]["id"]
     on, nn = (old.get("narrative") or {}), (new.get("narrative") or {})
+    world_done = {c.get("instrument_id") for c in new.get("changes", []) if c.get("kind") == "world"}
     deep_now = bool(nn.get("last_deep_review")) and nn.get("last_deep_review") != on.get("last_deep_review")
     for k, i in n.items():
         title = i.get("english_title") or i.get("official_title")
@@ -42,6 +45,10 @@ def detect(old, new, date):
                 evs.append(event(date, "radar", "corrected", jid, k, title, f"Lifecycle recorded as {i['lifecycle']} when added.",
                                  None, i["lifecycle"], i.get("source_url"), date))
             evs.append(event(date, "radar", "added", jid, k, title, "Added to the radar" + (f" (published {pub})." if pub else "."), url=i.get("source_url"), recorded=date))
+            # the publication itself is a government action: log it unless the researcher already entered a world event for it
+            if k not in world_done:
+                pe = publication_event(new, i, date)
+                if pe: evs.append(pe)
             continue
         p = o[k]
         known = p.get("lifecycle") not in (None, "unverified")

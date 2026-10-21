@@ -140,7 +140,7 @@ Also for the country:
 
 ## 5. Logging changes
 
-`scripts/log_changes.py` logs radar events (added, corrected, link, removed) and infers status changes automatically. When the source gives a precise date for a **government action**, also add the world event by hand in the country's `changes`:
+`scripts/log_changes.py` logs radar events (added, corrected, link, removed) and infers status changes automatically. For a new record whose publication date gives at least the month (YYYY-MM or YYYY-MM-DD), it also logs the publication as a world event (published, adopted, or put to consultation; detail "Published by <issuer>."), so the document appears in Updates; a year-only date gets none, because it cannot be placed in the Updates time windows (month-only dates count as the 28th of the month). If you enter a world event for the record by hand, the automatic one is not added. Translate the new event details into Arabic with the rest of the record ("الجهة الناشرة: …", "الجهة المعتمِدة: …", "الجهة التي طرحتها للاستشارة العامة: …"). `scripts/add_publication_events.py` backfills these events for older records. When the source gives a precise date for any other **government action**, add the world event by hand in the country's `changes`:
 
 ```json
 {"date": "2025-08-02", "kind": "world", "type": "applied", "jurisdiction_id": "EU",

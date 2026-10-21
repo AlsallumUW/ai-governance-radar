@@ -1,5 +1,5 @@
 """Shared helpers for the AI Governance Radar repository."""
-import datetime as dt, hashlib, json, pathlib, subprocess
+import datetime as dt, hashlib, json, pathlib, re, subprocess
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -90,3 +90,33 @@ def public(obj):
     if isinstance(obj, dict): return {k: public(v) for k, v in obj.items() if k not in INTERNAL_FIELDS}
     if isinstance(obj, list): return [public(v) for v in obj if not link_check_event(v)]
     return obj
+
+
+ADOPT_STATUSES = {"nonbinding_recommendation", "declaration", "international_treaty"}
+ARABIC_NAME = re.compile(r"[\u0600-\u06FF]")
+
+
+def short_issuer(name, sep=";", paren=r"\(([^()]*)\)"):
+    """An issuer name as one short phrase: the part before ';' and without long parenthetical notes (acronyms kept)."""
+    s = (name or "").strip().split(sep)[0]
+    s = re.sub(r"\s*" + paren, lambda m: m.group(0) if len(m.group(1)) <= 24 and not re.match(r"(?:published|hosted|co-hosted|set up|with|convened)\b", m.group(1)) else "", s)
+    return re.sub(r"\s+", " ", s).strip(" .,;")
+
+
+PUB_DATE = re.compile(r"^\d{4}-\d{2}(-\d{2})?$")
+
+
+def publication_event(rec, i, recorded=None):
+    """The government action behind a record's publication date ("published", "adopted" or "consultation"), or None
+    when the date is missing or gives only a year (a year alone cannot be placed in the Updates time windows).
+    Month-only dates ("2026-09") are kept as they are; the Updates page shows them as the month."""
+    d = str(i.get("publication_date") or "")
+    if not PUB_DATE.match(d): return None
+    life = i.get("lifecycle")
+    if life in ("consultation", "consultation_closed") or i.get("legal_status") == "consultation_draft": typ, verb = "consultation", "Published for consultation by"
+    elif life == "adopted" and i.get("legal_status") in ADOPT_STATUSES: typ, verb = "adopted", "Adopted by"
+    else: typ, verb = "published", "Published by"
+    iss = short_issuer(next((n for n in (i.get("issuing_authority"), i.get("publisher_name")) if n and not ARABIC_NAME.search(n)), None)
+                       or rec["jurisdiction"]["name"])
+    title = i.get("english_title") or i.get("official_title")
+    return event(d, "world", typ, rec["jurisdiction"]["id"], i["id"], title, f"{verb} {iss}.", url=i.get("source_url"), recorded=recorded)
