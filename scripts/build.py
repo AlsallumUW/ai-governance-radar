@@ -306,8 +306,8 @@ def build():
               "full": f"data.json?v={hashlib.sha1(full_json.encode('utf-8')).hexdigest()[:8]}"}
     t = t.replace("__ASSET_PRELOADS__", "".join(f'<link rel="preload" href="{u}" as="fetch" crossorigin="anonymous">' for k, u in assets.items() if k != "full"), 1)
     t = t.replace("__ASSETS__", json.dumps(assets), 1)
-    # SDAIA logo (official file from Faisal, 21 Oct 2026); the on-dark copy only recolours the wordmark white for the navy header
-    t = t.replace("__SDAIA_LOGO__", shared_asset("sdaia-logo-on-dark.svg", (ROOT / "site/assets/sdaia-logo-on-dark.svg").read_text(encoding="utf-8")), 1)
+    # SDAIA symbol (the official logo file from Faisal, 21 Oct 2026, with the wordmark removed and the view cropped to the symbol)
+    t = t.replace("__SDAIA_LOGO__", shared_asset("sdaia-symbol.svg", (ROOT / "site/assets/sdaia-symbol.svg").read_text(encoding="utf-8")), 1)
     t = t.replace("__PHOTOS__", json.dumps(map_photos(), ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/"), 1)
     t = t.replace("__APP_JS__", (ROOT / "site/app.js").read_text(encoding="utf-8"), 1)
     t = t.replace("__CHANGELOG_CSS__", (ROOT / "site/changelog.css").read_text(encoding="utf-8"), 1)
