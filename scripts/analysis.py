@@ -9,7 +9,7 @@ Called from pages.write_all with the same context the country pages use. Nothing
 import json, math, re, statistics
 import i18n
 from i18n import tr
-from pages import (ar_title, body_group, e, kind, KIND_LABEL, KIND_CLASS, COUNT_NOTE, GROUP_LABEL, STATUS_LABEL, SITE_URL, fmt_date, year)
+from pages import (ar_title, body_group, count_info, e, kind, KIND_LABEL, KIND_CLASS, COUNT_DEFS, GROUP_LABEL, STATUS_LABEL, SITE_URL, fmt_date, year)
 
 REGIONS = ["Africa", "Americas", "Asia", "Europe", "Oceania"]
 GROUPS = ("soft", "binding", "draft")          # stack order, bottom to top (orange / blue / aqua: the weak pair is never adjacent)
@@ -565,7 +565,8 @@ def analysis_page(D, recs, ctx):
     lvl = {k: sum(1 for i in N["C"] if i.get("government_level") == k) for k in ("national", "subnational", "local")}
     grp = {g: sum(1 for i in N["C"] if kind(i) == g) for g in GROUPS}
     zero = sum(1 for c in N["cids"] if not N["by_c"][c])
-    stats = [("Countries", len(N["countries"])), ("Instruments", f"{nC:,}"), ("Countries with none found", zero)]
+    # headline: every recorded document, countries' and international and regional organisations' (charts keep their own scope)
+    stats = [("Countries", len(N["countries"])), ("Instruments", f"{nC + nR:,}"), ("Countries with none found", zero)]
     recon = [
         ("Instruments in the full export (CSV / JSON)", n_all),
         ("· national", lvl["national"]), ("· state / provincial", lvl["subnational"]), ("· local", lvl["local"]), ("· regional bodies", nR),
@@ -584,9 +585,9 @@ def analysis_page(D, recs, ctx):
     desc = _T("Charts across all 195 countries: AI governance instruments per year, adoption, regions, categories, treaties and issuers. Data as of {date}.", date=fmt_date(today))
     H = [head1(title, desc, canon), '<body class="cp an">', nav("analysis"), '<main class="page">']
     H.append(f'<header class="hero" id="top"><p class="eyebrow">{e(_T("Global analysis · data as of {date}", date=fmt_date(today)))}</p><h1>AI governance in 195 countries</h1>'
-             + '<dl class="stats stats4">' + "".join(f'<div><dt>{k}</dt><dd>{v}</dd></div>' for k, v in stats) + '</dl>'
-             + f'<p class="stats-note">{e(tr(COUNT_NOTE))} ' + e(_T("Instruments: {c} national, state/provincial and local, plus {r} of regional bodies. ", c=f"{nC:,}", r=nR))
-             + e(_T("Leads: documents found but not yet verified as in-scope instruments; they are not counted in any chart.")) + '</p>'
+             + '<div class="stats-row"><dl class="stats stats4">' + "".join(f'<div><dt>{k}</dt><dd>{v}</dd></div>' for k, v in stats) + '</dl>'
+             + count_info(COUNT_DEFS[:3] + ["Leads: documents found but not yet verified as in-scope instruments; they are not counted in any chart."]) + '</div>'
+             + '<p class="stats-note">' + e(_T("Instruments: {c} national, state/provincial and local, plus {r} of international and regional organisations.", c=f"{nC:,}", r=nR)) + '</p>'
              + f'<aside class="caution" role="note"><strong>Read with care.</strong> {e(CAUTION)} <a href="../?about=method">Methodology</a></aside>'
              + f'<p class="discovery">{e(DISCOVERY)}</p></header>')
     H.append('<nav class="chart-index" aria-label="Charts"><a href="#fig-years">Per year</a><a href="#fig-adoption">Adoption</a><a href="#fig-region">Regions</a>'

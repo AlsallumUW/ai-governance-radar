@@ -92,8 +92,6 @@ def pipe_type(i):
 
 KIND_LABEL = {"binding": "Binding or mandatory", "soft": "Non-binding", "draft": "Drafts"}
 KIND_CLASS = {"binding": "b", "soft": "n", "draft": "d"}
-COUNT_NOTE = ("Binding or mandatory: laws, regulations, treaties and policies mandatory within their scope · Non-binding: strategies, guidelines, "
-              "guidance, codes and opinions · Drafts: consultation drafts.")
 
 
 def year(d):
@@ -148,11 +146,15 @@ COUNT_DEFS = ["Binding or mandatory: laws, regulations, treaties and policies ma
               "Counts include state, provincial and local instruments. Instruments of regional and international bodies are not counted; they are listed on each body's own page."]
 
 
-def count_info():
-    """Small (i) button beside the header counts; the definitions open in a popover (country.js)."""
+# body pages: the same three groups, and a reminder that a body's documents are never added to its members' counts
+BODY_COUNT_DEFS = COUNT_DEFS[:3] + ["These documents are not counted in member countries' totals."]
+
+
+def count_info(defs=None):
+    """Small (i) button beside the header counts; the definitions open in a popover (country.js, analysis.js)."""
     return ('<div class="count-info"><button type="button" class="info-btn" aria-expanded="false" aria-controls="countDefs" aria-label="About the counts">'
             '<span aria-hidden="true">i</span></button><div class="info-pop" id="countDefs" role="region" aria-label="About the counts" hidden>'
-            '<p class="info-h">How the counts are defined</p><ul>' + "".join(f"<li>{e(t)}</li>" for t in COUNT_DEFS) + '</ul></div></div>')
+            '<p class="info-h">How the counts are defined</p><ul>' + "".join(f"<li>{e(t)}</li>" for t in (defs or COUNT_DEFS)) + '</ul></div></div>')
 
 
 def first_sentence(t, n=158):
@@ -264,14 +266,20 @@ def coverage_grid(cats, audit, rows):
 AR_SCRIPT = re.compile(r"[\u0600-\u06FF]")
 
 
+def src_link(i, text):
+    """A document's title as a link to its official source (opens in a new tab); plain text when no source is recorded."""
+    u = i.get("source_url") or i.get("official_webpage_url")
+    return f'<a href="{e(u)}" rel="noopener noreferrer" target="_blank">{e(text)}</a>' if u else e(text)
+
+
 def inst_titles(i, title, orig):
     """English pages: the English title, then the official title if it differs. Arabic pages: the official title as
     published; if it is not in Arabic, the English title below it and, once translated (phase 4b part B), an Arabic
-    machine translation marked as such."""
+    machine translation marked as such. The title links to the official source."""
     if i18n.LANG != "ar":
-        return f'<h3 class="inst-title">{e(title)}</h3>' + (f'<p class="inst-orig" dir="auto" lang="{e(i.get("language") or "")}">{e(orig)}</p>' if orig else "")
+        return f'<h3 class="inst-title">{src_link(i, title)}</h3>' + (f'<p class="inst-orig" dir="auto" lang="{e(i.get("language") or "")}">{e(orig)}</p>' if orig else "")
     official = i.get("official_title") or title
-    h = f'<h3 class="inst-title" dir="auto" lang="{e(i.get("language") or "")}">{e(official)}</h3>'
+    h = f'<h3 class="inst-title" dir="auto" lang="{e(i.get("language") or "")}">{src_link(i, official)}</h3>'
     if not AR_SCRIPT.search(official or ""):
         if i.get("english_title") and i["english_title"] != official: h += f'<p class="inst-orig" dir="ltr" lang="en">{e(i["english_title"])}</p>'
         mt = i18n.content(i["id"], "title", i.get("english_title"))
@@ -336,7 +344,9 @@ def signed_by(i, jur, up="../../"):
     return f'<details class="signed"><summary>{e(lab)}</summary><p class="member-grid">{chips}</p></details>'
 
 
-def inst_item(i, orgs, srcs, cats, regional_from=None, jur=None):
+def inst_item(i, orgs, srcs, cats, regional_from=None, jur=None, up="../../", label="", cls="", attrs="", text=""):
+    """One document as listed on country, body and Global pages. label: a line above the title (the organisation, on the
+    Global page); cls / attrs / text: extra classes, data attributes and search text for that page's filters."""
     title = i.get("english_title") or i.get("official_title")
     orig = i.get("official_title") if i.get("official_title") and i.get("official_title") != title else None
     issuer = ar_issuer(i.get("issuing_authority") or orgs.get(i.get("organization_id"), {}).get("name") or i.get("publisher_name"), i.get("jurisdiction_id"))
@@ -357,9 +367,9 @@ def inst_item(i, orgs, srcs, cats, regional_from=None, jur=None):
     title_ar = i18n.content(i["id"], "title", i.get("english_title"))
     sum_ar = i18n.content(i["id"], "summary", i.get("summary"))
     st_ar = i18n.content(i["id"], "status", i.get("current_status"))
-    return (f'<article class="inst" id="{e(i["id"])}" data-date="{e(date_key(i.get("publication_date")))}" data-weight="{WEIGHT.get(st, 9)}" data-type="{TYPE_OF.get(st, "guidance")}"'
-            f' data-cats="{e(" ".join(i.get("categories", [])))}" data-cat="{e(i.get("category") or "")}" data-text="{e((title + " " + (orig or "") + " " + (title_ar or "") + " " + (issuer or "")).lower())}">'
-            + inst_titles(i, title, orig)
+    return (f'<article class="inst{(" " + cls) if cls else ""}" id="{e(i["id"])}"{attrs} data-date="{e(date_key(i.get("publication_date")))}" data-weight="{WEIGHT.get(st, 9)}" data-type="{TYPE_OF.get(st, "guidance")}"'
+            f' data-cats="{e(" ".join(i.get("categories", [])))}" data-cat="{e(i.get("category") or "")}" data-text="{e(text or (title + " " + (orig or "") + " " + (title_ar or "") + " " + (issuer or "")).lower())}">'
+            + label + inst_titles(i, title, orig)
             + f'<p class="inst-meta">{e(issuer)}{" · " if issuer and dates else ""}{" · ".join(dates)}</p>'
             + f'<p class="tags">{"".join(tags)}</p>'
             + (f'<p class="inst-sum"{ar_attr(sum_ar)}>{e(sum_ar or i.get("summary"))}{i18n.orig_link(i["id"]) if sum_ar else ""}</p>' if i.get("summary") else "")
@@ -367,7 +377,7 @@ def inst_item(i, orgs, srcs, cats, regional_from=None, jur=None):
             + f'<p class="inst-foot">{" · ".join(links)}<span class="verify v-{e(vl)}">{e(VERIFY.get(vl, vl or "Verification not recorded"))}</span>'
             + (f'<span class="inst-cats">{e(catnames)}</span>' if catnames else "") + '</p>'
             + check_line(i)
-            + (signed_by(i, jur) if jur is not None else "")
+            + (signed_by(i, jur, up) if jur is not None else "")
             + '</article>')
 
 
@@ -402,11 +412,17 @@ def hero(eyebrow, h1, stats, photo=None, art=None, kind=None, info=""):
     return f'<header class="hero hero--{k}" id="top">{media}{body}{foot}</header>'
 
 
-def topbar(sections, ident=""):
+BACK_MAP = '<a class="back" id="backToMap" href="../../">← World map</a>'
+# body pages go back to the list of all organisations (the world map stays in the footer)
+BACK_GLOBAL = '<a class="back" id="backToGlobal" href="../../global/">← Global and regional documents</a>'
+
+
+def topbar(sections, ident="", back=BACK_MAP):
     """Sticky top bar. Once the hero has scrolled away (country.js adds .stuck) it also shows the page's name and counts.
-    On narrow screens the section links collapse into a menu (a plain <details>, so it works without JavaScript)."""
+    On narrow screens the section links collapse into a menu (a plain <details>, so it works without JavaScript); the
+    back link then shows only its arrow and keeps its target."""
     links = "".join(f'<a href="#{k}">{e(v)}</a>' for k, v in sections)
-    return ('<header class="topnav"><a class="back" id="backToMap" href="../../">← World map</a><span class="site">AI Governance Radar</span>'
+    return ('<header class="topnav">' + back + '<span class="site">AI Governance Radar</span>'
             + (f'<span class="bar-id" aria-hidden="true">{ident}</span>' if ident else "")
             + f'<nav class="toc" aria-label="On this page">{links}</nav>'
             + f'<details class="secmenu"><summary>Sections</summary><nav aria-label="On this page (menu)">{links}</nav></details>'
@@ -667,15 +683,21 @@ def body_page(b, D, rec, flags, ctx):
     secs = [("overview", "Overview"), ("charts", "Charts"), ("instruments", "Instruments")] + ([("members", "Members")] if members else []) + ([("leads", "Leads")] if leads else []) + [("method", "Method")]
     n_bind = sum(1 for i in rows if kind(i) == "binding"); n_draft = sum(1 for i in rows if kind(i) == "draft")
     stats = [("Instruments", len(rows)), ("Binding or mandatory", n_bind), ("Non-binding", len(rows) - n_bind - n_draft), ("Drafts", n_draft)] + ([] if no_members else [("Member states", len(members))])
-    H = [head(title, desc, canon), f'<body class="cp" data-jid="{e(bid)}" data-build="{e(D["meta"].get("build_date") or "")}">',
-         topbar(secs, bar_ident(body_name(b, short=True), stats)), '<main id="main">']
-    # no logos (trademarks): the hero shows the member states on a world map
-    H.append(hero("Regional / international body", f'<h1>{e(body_name(b))}</h1>', stats, art=geo.world(members, b["name"], body=bid) if members else None, kind="map"))
+    # photos (data/photos.json "bodies", same roles as country pages); without them the hero shows the member map
+    ph = ctx["photos"].get(bid) or {}
+    hero_img = ph.get("hero")
+    feat, bdrop, band = ph.get("feature"), ph.get("backdrop"), ph.get("band")
+    H = [head(title, desc, canon, preload=hero_img), f'<body class="cp" data-jid="{e(bid)}" data-build="{e(D["meta"].get("build_date") or "")}">',
+         topbar(secs, bar_ident(body_name(b, short=True), stats), back=BACK_GLOBAL), '<main id="main">']
+    # no logos (trademarks): without a photo the hero shows the member states on a world map
+    H.append(hero("Regional / international body", f'<h1>{e(body_name(b))}</h1>', stats, photo=hero_img,
+                  art=None if hero_img else (geo.world(members, b["name"], body=bid) if members else None), kind="map", info=count_info(BODY_COUNT_DEFS)))
     H.append('<div class="page layout">' + rail(secs) + '<div class="content">')
-    H.append(f'<section class="intro" aria-label="About the counts"><p class="stats-note">{COUNT_NOTE} Instruments are recorded once for the body and are not counted on member countries\' pages.</p>'
+    H.append('<section class="intro" aria-label="Links">'
              + ('<p class="stats-note">Signatories vary by document.</p>' if no_members else "")
-             + f'<p class="hero-links"><a href="../../timeline/?body={e(bid)}">' + ("See this body on the timeline →" if no_members else "See this body and its members on the timeline →")
-             + '</a><a href="../../global/">Global and regional documents →</a><a href="../../analysis/">Global analysis →</a></p></section>')
+             + f'<p class="hero-links"><a href="../../global/">All international and regional organisations →</a><a href="../../timeline/?body={e(bid)}">'
+             + ("See this body on the timeline →" if no_members else "See this body and its members on the timeline →")
+             + '</a><a href="../../analysis/">Global analysis →</a></p></section>')
     years_svg, years_tab, undated = chart_years(rows); status_svg, status_tab = chart_status(rows)
     figs = []
     if years_svg: figs.append(figure("fig-years", "Instruments per year", "By publication year: binding or mandatory, non-binding and drafts.",
@@ -697,7 +719,14 @@ def body_page(b, D, rec, flags, ctx):
         ov += ('<h3 class="minor">CETS 225: Framework Convention on AI</h3><table class="data-table plain-table"><thead><tr><th scope="col">Signatory</th><th scope="col">Status</th></tr></thead><tbody>'
                + "".join(f'<tr><th scope="row">{link(c)}</th><td>{e(s)}</td></tr>' for c, s in sorted(rows_c, key=order)) + '</tbody></table>')
     ov += '</section>'
-    H.append('<div class="lede-grid">' + ov + '<aside id="charts" class="panels" aria-label="Charts">' + "".join(figs) + '</aside></div>')
+    if feat or bdrop or band:
+        # with photos: the country-page layout (overview beside the portrait photo, charts over the backdrop, band before the list)
+        H.append(f'<div class="ov-grid{" has-photo" if feat else ""}">' + ov + (feature_photo(feat) if feat else "") + '</div>')
+        H.append(f'<section id="charts" class="charts-sec{" has-bg" if bdrop else ""}" aria-label="Charts">' + (backdrop(bdrop) if bdrop else "")
+                 + '<h2 class="charts-h">Charts</h2><div class="panels">' + "".join(figs) + '</div></section>')
+        if band: H.append(photo_band(band))
+    else:
+        H.append('<div class="lede-grid">' + ov + '<aside id="charts" class="panels" aria-label="Charts">' + "".join(figs) + '</aside></div>')
     if rows: H.append(instruments_section(rows, ctx["orgs"], ctx["srcs"], cats, jur=ctx["jur"]))
     if members:
         H.append(f'<section id="members" class="block"><h2>Member states <span class="count">{len(members)}</span></h2><p class="member-grid">'
@@ -746,11 +775,13 @@ def paras(text, is_ar=False, anchor=None):
 
 
 def load_photos():
-    """data/photos.json -> {ISO3: {role: image}} with roles hero, feature, backdrop, band"""
+    """data/photos.json -> {ISO3 or body code: {role: image}} with roles hero, feature, backdrop, band
+    (countries under "countries", international and regional organisations under "bodies"; the codes never overlap)"""
     p = ROOT / "data/photos.json"
     if not p.exists(): return {}
+    d = json.loads(p.read_text(encoding="utf-8"))
     out = {cid: {im["role"]: dict(im) for im in ph.get("photos") or []}
-           for cid, ph in json.loads(p.read_text(encoding="utf-8")).get("countries", {}).items()}
+           for key in ("countries", "bodies") for cid, ph in (d.get(key) or {}).items()}
     for cid, ims in out.items():          # Arabic pages: machine-translated caption and alt text (credits stay as published)
         for role, im in ims.items():
             for f in ("caption", "alt"):
@@ -762,29 +793,44 @@ def load_photos():
 def credits_page(D, ctx):
     """/credits/: every photo used on the site, with author, licence and a link to its Commons page."""
     photos = ctx["photos"]; jur = ctx["jur"]
-    rows, fallback = [], []
-    for cid in sorted((c for c, j in jur.items() if j.get("type") == "country"), key=lambda c: i18n.name_key(jur[c].get("name", c))):
-        ph = photos.get(cid) or {}
-        ims = [(ROLE_LABEL[r], ph[r]) for r in ROLE_LABEL if ph.get(r)]
-        if not ph.get("hero"): fallback.append(cid)
-        for role, im in ims:
-            lic = f'<a href="{e(im["license_url"])}" rel="license noopener">{e(im["license"])}</a>' if im.get("license_url") else e(im["license"])
-            rows.append(f'<tr><th scope="row"><a href="../country/{cid}/">{e(jur.get(cid, {}).get("name", cid))}</a></th><td>{role}</td><td>{e(im["subject"])}</td>'
-                        f'<td>{e(im["author"])}</td><td>{lic}</td><td><a href="{e(im["commons_url"])}" rel="noopener">{e(im["title"])}</a></td></tr>')
-    n_img = len(rows)
+
+    def photo_rows(ids, kind):
+        rows = []
+        for cid in ids:
+            ph = photos.get(cid) or {}
+            name = body_name(jur[cid]) if kind == "body" else jur.get(cid, {}).get("name", cid)
+            for role, im in ((ROLE_LABEL[r], ph[r]) for r in ROLE_LABEL if ph.get(r)):
+                lic = f'<a href="{e(im["license_url"])}" rel="license noopener">{e(im["license"])}</a>' if im.get("license_url") else e(im["license"])
+                rows.append(f'<tr><th scope="row"><a href="../{kind}/{cid}/">{e(name)}</a></th><td>{role}</td><td>{e(im["subject"])}</td>'
+                            f'<td>{e(im["author"])}</td><td>{lic}</td><td><a href="{e(im["commons_url"])}" rel="noopener">{e(im["title"])}</a></td></tr>')
+        return rows
+
+    def table_(first, rows):
+        return ('<div class="table-wrap"><table class="data-table plain-table credits-table"><thead><tr><th scope="col">' + first + '</th><th scope="col">Used as</th><th scope="col">What it shows</th>'
+                '<th scope="col">Author</th><th scope="col">Licence</th><th scope="col">Commons file</th></tr></thead><tbody>' + "".join(rows) + '</tbody></table></div>')
+
+    cids = sorted((c for c, j in jur.items() if j.get("type") == "country"), key=lambda c: i18n.name_key(jur[c].get("name", c)))
+    rows = photo_rows(cids, "country")
+    fallback = [c for c in cids if not (photos.get(c) or {}).get("hero")]
+    bodies = [b for b in ctx["body_order"] if (photos.get(b) or {}).get("hero")]
+    brows = photo_rows(bodies, "body")
+    n_img = len(rows) + len(brows)
+    n_pages = sum(1 for c in cids if (photos.get(c) or {}).get("hero"))
     title = "Photo credits | AI Governance Radar"
+    lede = (f'{n_img} photos on {n_pages} country pages' + (f' and {len(bodies)} organisation pages' if bodies else "") + '. All come from Wikimedia Commons under a public-domain, CC0, CC BY or CC BY-SA licence, '
+            'were cropped (landscape, portrait or panoramic), resized and converted to WebP for this site, and are served from this site (not hotlinked). Each photo carries a caption and its own credit line where it appears. '
+            'Images under CC BY-SA are shared here under the same licence; changes: cropped and resized to WebP. '
+            + ('International and regional organisations are shown with a photo of a place linked to them, never a logo; those without one show a map of their members.' if bodies else
+               'Regional and international bodies are shown with a map of their members rather than a logo.'))
     H = [head(title, "Authors and licences of the photos used on the AI Governance Radar country pages.", f"{SITE_URL}credits/").replace('href="../../assets/', 'href="../assets/'),
          '<body class="cp credits"><header class="topnav"><a class="back" id="backToMap" href="../">← World map</a><span class="site">AI Governance Radar</span></header>',
-         '<main class="page"><header class="hero"><p class="eyebrow">About the photos</p><h1>Photo credits</h1>'
-         f'<p class="section-lede">{n_img} photos on {sum(1 for c in photos.values() if c.get("hero"))} country pages. All come from Wikimedia Commons under a public-domain, CC0, CC BY or CC BY-SA licence, '
-         'were cropped (landscape, portrait or panoramic), resized and converted to WebP for this site, and are served from this site (not hotlinked). Each photo carries a caption and its own credit line where it appears. '
-         'Images under CC BY-SA are shared here under the same licence; changes: cropped and resized to WebP. '
-         'Regional and international bodies are shown with a map of their members rather than a logo.</p></header>'
-         '<div class="table-wrap"><table class="data-table plain-table credits-table"><thead><tr><th scope="col">Country</th><th scope="col">Used as</th><th scope="col">What it shows</th>'
-         '<th scope="col">Author</th><th scope="col">Licence</th><th scope="col">Commons file</th></tr></thead><tbody>' + "".join(rows) + '</tbody></table></div>']
+         f'<main class="page"><header class="hero"><p class="eyebrow">About the photos</p><h1>Photo credits</h1><p class="section-lede">{lede}</p></header>',
+         table_("Country", rows)]
     if fallback:
         H.append('<p class="section-lede">No suitable freely licensed photo was found for: ' + ", ".join(f'<a href="../country/{c}/">{e(jur.get(c, {}).get("name", c))}</a>' for c in fallback)
                  + '. These pages show an outline of the country instead.</p>')
+    if brows:
+        H.append('<h2 class="credits-h">International and regional organisations</h2>' + table_("Organisation", brows))
     H.append('</main>' + footer(D, "../") + '</body></html>')
     return "".join(H)
 

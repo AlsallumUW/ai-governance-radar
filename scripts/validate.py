@@ -42,36 +42,45 @@ PHOTO_CAPS = {"hero": (200_000, 80_000), "other": (150_000, 60_000)}
 
 def check_photos():
     """data/photos.json (UX phase 2d): every country has exactly four photos, one in each role (hero, feature, backdrop, band),
-    cropped to that role's shape; allowed licences only; files present and within size; every field filled."""
+    cropped to that role's shape; allowed licences only; files present and within size; every field filled.
+    International and regional organisations ("bodies", images under site/img/bodies/<CODE>/) get the same checks when they
+    have photos; a body without photos is only a warning (its page shows the member map instead)."""
     p = DATA / "photos.json"
     if not p.exists(): return [], []
     errs, warns = [], []
     countries = {q.stem for q in (DATA / "countries").glob("*.json") if load(q)["jurisdiction"].get("type") == "country"}
+    bodies = {q.stem for q in (DATA / "regional").glob("*.json") if load(q)["jurisdiction"].get("type") != "country"}
     site = DATA.parent / "site"
-    data = load(p).get("countries", {})
+    d = load(p)
+    data = d.get("countries", {})
+    bdata = d.get("bodies") or {}
     for cid in sorted(countries - set(data)): errs.append(f"photos {cid}: no photos")
-    for cid, ph in data.items():
-        E = lambda m: errs.append(f"photos {cid}: {m}")
-        if cid not in countries: E("not a country file")
-        ims = ph.get("photos") or []
-        roles = [im.get("role") for im in ims]
-        if sorted(roles) != sorted(PHOTO_ROLES): E(f"roles are {roles}; need exactly one each of {', '.join(PHOTO_ROLES)}")
-        for im in ims:
-            if im.get("role") not in PHOTO_ROLES: E(f"{im.get('file')} role must be one of {PHOTO_ROLES}")
-            for f in PHOTO_FIELDS:
-                if f not in im or (im[f] in ("", None) and f != "license_url"): E(f"{im.get('file')} missing {f}")
-            if not PHOTO_LICENCES.match(im.get("license") or ""): E(f"{im.get('file')} licence not allowed: {im.get('license')}")
-            if (im.get("license") or "").startswith("CC BY") and "cropped and resized" not in (im.get("changes") or ""):
-                E(f"{im.get('file')} is {im.get('license')} but has no modification note (changes: \"cropped and resized\")")
-            if not (im.get("commons_url") or "").startswith("https://commons.wikimedia.org/wiki/File:"): E(f"{im.get('file')} commons_url is not a Commons file page")
-            a = PHOTO_ASPECT.get(im.get("role"))
-            if a and im.get("width") and im.get("height") and abs(im["width"] / im["height"] - a) > 0.02 * a:
-                E(f"{im.get('file')} is {im['width']}x{im['height']}, not the {im.get('role')} shape")
-            caps = PHOTO_CAPS["hero" if im.get("role") == "hero" else "other"]
-            for f, cap in zip(("file", "file_small"), caps):
-                q = site / (im.get(f) or "")
-                if not q.is_file(): E(f"missing image {im.get(f)}")
-                elif q.stat().st_size > cap: warns.append(f"photos {cid}: {im.get(f)} is {q.stat().st_size // 1000} KB (target {cap // 1000} KB)")
+    for bid in sorted(bodies - set(bdata)): warns.append(f"photos {bid}: no photos (the page shows the member map)")
+    for kind, known, entries in (("countries", countries, data), ("bodies", bodies, bdata)):
+        for cid, ph in entries.items():
+            E = lambda m: errs.append(f"photos {cid}: {m}")
+            if cid not in known: E("not a country file" if kind == "countries" else "not a body file (data/regional)")
+            ims = ph.get("photos") or []
+            roles = [im.get("role") for im in ims]
+            if sorted(roles) != sorted(PHOTO_ROLES): E(f"roles are {roles}; need exactly one each of {', '.join(PHOTO_ROLES)}")
+            for im in ims:
+                if im.get("role") not in PHOTO_ROLES: E(f"{im.get('file')} role must be one of {PHOTO_ROLES}")
+                for f in PHOTO_FIELDS:
+                    if f not in im or (im[f] in ("", None) and f != "license_url"): E(f"{im.get('file')} missing {f}")
+                if not PHOTO_LICENCES.match(im.get("license") or ""): E(f"{im.get('file')} licence not allowed: {im.get('license')}")
+                if (im.get("license") or "").startswith("CC BY") and "cropped and resized" not in (im.get("changes") or ""):
+                    E(f"{im.get('file')} is {im.get('license')} but has no modification note (changes: \"cropped and resized\")")
+                if not (im.get("commons_url") or "").startswith("https://commons.wikimedia.org/wiki/File:"): E(f"{im.get('file')} commons_url is not a Commons file page")
+                for f in ("file", "file_small"):
+                    if im.get(f) and not im[f].startswith(f"img/{kind}/{cid}/"): E(f"{im.get(f)} is not under img/{kind}/{cid}/")
+                a = PHOTO_ASPECT.get(im.get("role"))
+                if a and im.get("width") and im.get("height") and abs(im["width"] / im["height"] - a) > 0.02 * a:
+                    E(f"{im.get('file')} is {im['width']}x{im['height']}, not the {im.get('role')} shape")
+                caps = PHOTO_CAPS["hero" if im.get("role") == "hero" else "other"]
+                for f, cap in zip(("file", "file_small"), caps):
+                    q = site / (im.get(f) or "")
+                    if not q.is_file(): E(f"missing image {im.get(f)}")
+                    elif q.stat().st_size > cap: warns.append(f"photos {cid}: {im.get(f)} is {q.stat().st_size // 1000} KB (target {cap // 1000} KB)")
     return errs, warns
 
 

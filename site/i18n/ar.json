@@ -893,7 +893,15 @@
   "Arabic organisation name": "اسم المنظمة بالعربية",
   "See this body on the timeline →": "← عرض هذه الهيئة على الخط الزمني",
   "No body selected": "لم تُحدَّد هيئة",
-  "International financial institutions": "المؤسسات المالية الدولية"
+  "International financial institutions": "المؤسسات المالية الدولية",
+  "← Global and regional documents": "→ الوثائق الدولية والإقليمية",
+  "All international and regional organisations →": "← جميع المنظمات الدولية والإقليمية",
+  "These documents are not counted in member countries' totals.": "لا تُحتسب هذه الوثائق ضمن مجاميع الدول الأعضاء.",
+  "Instruments: {c} national, state/provincial and local, plus {r} of international and regional organisations.": "الوثائق: {c} وثيقة وطنية وعلى مستوى الولايات والأقاليم والجهات المحلية، إضافة إلى {r} وثيقة للمنظمات الدولية والإقليمية.",
+  "documents recorded": "وثيقة مسجلة",
+  "Links": "روابط",
+  "International and regional organisations": "المنظمات الدولية والإقليمية",
+  "Government actions across all countries and international and regional organisations, newest first: new documents (published, adopted, put to consultation), revisions and documents entering into force. Items marked “Needs review” were detected automatically and are not yet confirmed.": "الإجراءات الحكومية في جميع الدول والمنظمات الدولية والإقليمية، الأحدث أولًا: الوثائق الجديدة (المنشورة أو المعتمدة أو المطروحة لاستطلاع المرئيات)، والتعديلات، والوثائق التي يبدأ تطبيقها. والعناصر الموسومة بـ\"بحاجة إلى مراجعة\" رُصدت تلقائيًا ولم تُؤكَّد بعد."
  },
  "patterns": [
   [
@@ -1143,6 +1151,10 @@
   [
    "^· (.+)$",
    "· {t1}"
+  ],
+  [
+   "^(\\d+)\\ photos\\ on\\ (\\d+)\\ country\\ pages\\ and\\ (\\d+)\\ organisation\\ pages\\.\\ All\\ come\\ from\\ Wikimedia\\ Commons\\ under\\ a\\ public\\-domain,\\ CC0,\\ CC\\ BY\\ or\\ CC\\ BY\\-SA\\ licence,\\ were\\ cropped\\ \\(landscape,\\ portrait\\ or\\ panoramic\\),\\ resized\\ and\\ converted\\ to\\ WebP\\ for\\ this\\ site,\\ and\\ are\\ served\\ from\\ this\\ site\\ \\(not\\ hotlinked\\)\\.\\ Each\\ photo\\ carries\\ a\\ caption\\ and\\ its\\ own\\ credit\\ line\\ where\\ it\\ appears\\.\\ Images\\ under\\ CC\\ BY\\-SA\\ are\\ shared\\ here\\ under\\ the\\ same\\ licence;\\ changes:\\ cropped\\ and\\ resized\\ to\\ WebP\\.\\ International\\ and\\ regional\\ organisations\\ are\\ shown\\ with\\ a\\ photo\\ of\\ a\\ place\\ linked\\ to\\ them,\\ never\\ a\\ logo;\\ those\\ without\\ one\\ show\\ a\\ map\\ of\\ their\\ members\\.$",
+   "{1} صورة في {2} صفحة دولة و{3} صفحة منظمة. جميعها من ويكيميديا كومنز بموجب ترخيص ملكية عامة أو CC0 أو CC BY أو CC BY-SA، وقد قُصّت (أفقيًا أو عموديًا أو بانوراميًا) وأُعيد تحجيمها وحُوّلت إلى صيغة WebP لهذا الموقع، وتُعرض من خوادم هذا الموقع (لا بالربط المباشر بالمصدر). وتحمل كل صورة تعليقًا وسطر إسناد خاصًا بها حيث تظهر. والصور المرخصة بموجب CC BY-SA متاحة هنا بالترخيص نفسه؛ والتغييرات: القص وإعادة التحجيم والتحويل إلى WebP. وتُعرض المنظمات الدولية والإقليمية بصورة لمكان مرتبط بها، ولا يُستخدم الشعار مطلقًا؛ وتُعرض المنظمات التي ليس لها صورة بخريطة لأعضائها."
   ],
   [
    "^(\\d+)\\ photos\\ on\\ (\\d+)\\ country\\ pages\\.\\ All\\ come\\ from\\ Wikimedia\\ Commons\\ under\\ a\\ public\\-domain,\\ CC0,\\ CC\\ BY\\ or\\ CC\\ BY\\-SA\\ licence,\\ were\\ cropped\\ \\(landscape,\\ portrait\\ or\\ panoramic\\),\\ resized\\ and\\ converted\\ to\\ WebP\\ for\\ this\\ site,\\ and\\ are\\ served\\ from\\ this\\ site\\ \\(not\\ hotlinked\\)\\.\\ Each\\ photo\\ carries\\ a\\ caption\\ and\\ its\\ own\\ credit\\ line\\ where\\ it\\ appears\\.\\ Images\\ under\\ CC\\ BY\\-SA\\ are\\ shared\\ here\\ under\\ the\\ same\\ licence;\\ changes:\\ cropped\\ and\\ resized\\ to\\ WebP\\.\\ Regional\\ and\\ international\\ bodies\\ are\\ shown\\ with\\ a\\ map\\ of\\ their\\ members\\ rather\\ than\\ a\\ logo\\.$",

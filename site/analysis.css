@@ -184,14 +184,9 @@ html[lang="ar"] .sr-title,html[lang="ar"] .sr-ot,html[lang="ar"] .sr-ex,html[lan
 .gd-controls .gd-org-f{flex:1 1 240px;max-width:340px}
 .gd-controls .gd-y select{min-width:7.5em}
 .gd-actions{display:flex;flex-wrap:wrap;gap:8px;margin:0;flex-basis:100%}
-.gd-list{max-width:900px}
-.gd-row{padding:18px 0}
-.gd-on{margin:0 0 4px;font-size:13px;font-weight:600;letter-spacing:.02em}
+/* documents use the country pages' item (country.css .inst); only the organisation line above the title is added */
+.gd-on{margin:0 0 6px;font-size:13px;font-weight:600;letter-spacing:.02em}
 .gd-on a{text-decoration:none}.gd-on a:hover{text-decoration:underline}
-.gd-row .inst-title{font-size:1.06rem}
-.gd-row .inst-title a{color:var(--ink);text-decoration-color:var(--axis)}
-.gd-row .inst-title a:hover{text-decoration-color:var(--ink)}
-.gd-row .tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 0}
 .gd-none{font-size:15px;padding:18px 0}
 details.signed{margin:10px 0 0;font-size:14px}
 details.signed>summary{cursor:pointer;color:var(--accent);font-weight:600}

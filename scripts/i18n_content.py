@@ -7,7 +7,7 @@
 Each file maps a record id to its translated fields:
     {"<record id>": {"<field>": {"ar": "...", "src": "<hash of the English source>"}}}
 Record ids: "issuer:<ISO3>:<hash of the English name>" (field name: an issuing body or publisher as named in a record or lead), an instrument id (fields title, summary, status), a jurisdiction id (fields summary, lead_institutions,
-review_notes, coverage_note), a change id (fields title; detail for government actions, kind "world") or "photo:<ISO3>:<role>" (fields caption, alt).
+review_notes, coverage_note), a change id (fields title; detail for government actions, kind "world") or "photo:<ISO3 or body code>:<role>" (fields caption, alt).
 "ar" is null with a "skip" reason when a text could not be translated with confidence; the page then shows the English.
 
 Rules (research/WEEKLY.md): use research/aigr_arabic_terms.csv terms; translate faithfully, never adding, softening or
@@ -93,6 +93,14 @@ def global_items():
             + [(c["id"], "detail", c["detail"]) for c in cs if c.get("kind") == "world" and c.get("detail")])
 
 
+def all_photos():
+    """data/photos.json: {ISO3 or body code: {"photos": [...]}} for countries and international and regional organisations."""
+    p = DATA / "photos.json"
+    if not p.exists(): return {}
+    d = load(p)
+    return {**(d.get("countries") or {}), **(d.get("bodies") or {})}
+
+
 def stored(p):
     return json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
 
@@ -107,7 +115,7 @@ def check(rid, field, en, entry):
 
 def audit(only=None):
     """{jid: {"total": n, "missing": [...], "stale": [...], "skipped": [...]}}"""
-    photos = load(DATA / "photos.json")["countries"] if (DATA / "photos.json").exists() else {}
+    photos = all_photos()
     res = {}
     for p in jurisdiction_files():
         jid = p.stem
@@ -172,7 +180,7 @@ def problems(en, ar):
 
 # ---------------------------------------------------------------- commands
 def extract(jids):
-    photos = load(DATA / "photos.json")["countries"]
+    photos = all_photos()
     work = []
     for jid in jids:
         if jid == "_global": its, st = global_items(), stored(path_for("_global"))
