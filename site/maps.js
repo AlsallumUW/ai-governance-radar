@@ -135,7 +135,7 @@ function analysis(m){const f=m.fig,blob=$('#map-lens');if(!blob)return;
 
 /* ------------------------------------------------------------ Timeline: month slider and Play
    The slider moves month by month; the current month and the running count are shown large on the map itself, and the
-   countries that publish their first document in that month flash briefly. About 6 months a second when playing. */
+   countries that publish their first document in that month flash briefly. About 2.5 months a second when playing (about a minute from 2014 to today). */
 function timeline(m){const f=m.fig,range=$('input[type=range]',f),out=$('.wm-count',f),btn=$('.wm-pb',f);if(!range)return;
   const min=+range.min,max=+range.max;let timer=null,prev=null;
   const AR=document.documentElement.lang==='ar';
@@ -150,7 +150,7 @@ function timeline(m){const f=m.fig,range=$('input[type=range]',f),out=$('.wm-cou
     $('.wm-when-d',ov).textContent=L;$('.wm-when-n',ov).textContent=fill(n===1?f.dataset.tOneS:f.dataset.tManyS,{n})};
   const stop=()=>{clearInterval(timer);timer=null;btn.setAttribute('aria-pressed','false');$('span',btn).textContent=btn.dataset.play};
   const play=()=>{let M=+range.value>=max?min:+range.value;prev=null;paint(M);btn.setAttribute('aria-pressed','true');$('span',btn).textContent=btn.dataset.pause;
-    timer=setInterval(()=>{M++;if(M>max){stop();m.links.forEach(a=>a.classList.remove('wm-new'));return}paint(M)},RM.matches?700:170)};
+    timer=setInterval(()=>{M++;if(M>max){stop();m.links.forEach(a=>a.classList.remove('wm-new'));return}paint(M)},RM.matches?900:400)};
   btn.addEventListener('click',()=>timer?stop():play());
   range.addEventListener('input',()=>{if(timer)stop();prev=null;paint(+range.value)});
   prev=null;paint(max);
