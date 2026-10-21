@@ -26,3 +26,5 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!p.hidden){set(fals
 document.querySelectorAll('[data-rank-more]').forEach(b=>b.addEventListener('click',()=>{const open=b.getAttribute('aria-expanded')!=='true';
   document.querySelectorAll('[data-rank-more]').forEach(x=>{x.setAttribute('aria-expanded',String(open));x.textContent=open?x.dataset.less:x.dataset.more});
   document.querySelectorAll('#fig-rank .rk-more').forEach(li=>li.hidden=!open)}));
+/* phones: the time charts start scrolled to the latest years (they scroll sideways inside their card) */
+if(matchMedia('(max-width:560px)').matches)['fig-years','fig-adoption'].forEach(id=>{const c=document.querySelector('#'+id+' .variant:not([hidden]) .fig-chart, #'+id+' .fig-chart');if(c)c.scrollLeft=c.scrollWidth});

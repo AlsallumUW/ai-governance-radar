@@ -475,3 +475,19 @@ html[lang="ar"] .wm-when{direction:rtl;text-align:start}
 .sr-wrap .sr-top{border-bottom:0;border-end-start-radius:0;border-end-end-radius:0;padding-bottom:6px}
 .sr-wrap>.wmap{margin-top:0;border-top:1px dashed var(--hair);border-start-start-radius:0;border-start-end-radius:0}
 .sr-wrap .sr-top{padding-inline:26px}@media (max-width:560px){.sr-wrap .sr-top{padding-inline:14px}}
+/* phone QC (22 Oct): charts keep a readable size and scroll sideways inside their card */
+@media (max-width:560px){
+  #fig-years .fig-chart,#fig-adoption .fig-chart,#fig-mix .fig-chart,#fig-issuer .fig-chart{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  #fig-years .chart,#fig-adoption .chart,#fig-mix .chart,#fig-issuer .chart{min-width:500px}
+  .afig .fig-chart{position:relative}
+  .small-table td,.small-table th{white-space:nowrap}
+  .small-table th:first-child{white-space:normal}
+  /* top navigation: a larger tap area and a fade showing it scrolls */
+  .toc.sitenav a{padding:10px 2px}
+  .toc.sitenav{-webkit-mask-image:linear-gradient(to right,#000 85%,transparent);mask-image:linear-gradient(to right,#000 85%,transparent)}
+  html[lang="ar"] .toc.sitenav{-webkit-mask-image:linear-gradient(to left,#000 85%,transparent);mask-image:linear-gradient(to left,#000 85%,transparent)}
+  .sr-check{min-height:36px;display:flex;align-items:center}
+  /* timeline map: the month and count sit under the map, not over it */
+  .wm-when{position:static;flex-direction:row;align-items:baseline;gap:10px;margin:6px 4px 0}
+  .wm-when-d{font-size:20px}.wm-when-n{font-size:13px}
+}
