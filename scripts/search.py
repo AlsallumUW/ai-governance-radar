@@ -107,7 +107,7 @@ def search_page(D, ctx, head1, nav, foot):
     pre = "".join(f'<link rel="preload" id="{i}" href="{_url(n)}" as="fetch" crossorigin="anonymous">'
                   for i, n in (("srData", "search.json"), ("srTerms", "search_terms.json")))
     H = [head1(title, LEDE, canon).replace("</head>", pre + "</head>", 1), '<body class="cp sr">', nav("search"), '<main class="page sr-page">']
-    H.append(f'<header class="hero sr-hero"><p class="eyebrow">{e(i18n.T("Document search · data snapshot {date}", date=asof))}</p><h1>Search documents</h1>'
+    H.append('<header class="hero sr-hero"><h1>Search documents</h1>'
              f'<p class="stats-note sr-lede">{e(LEDE)}</p></header>')
     seg = "".join(f'<button type="button" class="seg-b" data-range="{k}" aria-pressed="{"true" if not k else "false"}">{e(v)}</button>' for k, v in PRESETS)
     types = "".join(f'<option value="{k}">{e(v)}</option>' for k, v in TYPES)
@@ -118,19 +118,20 @@ def search_page(D, ctx, head1, nav, foot):
         # keywords
         '<div class="sr-sec sr-kw"><label class="sr-h" for="srQ">Keywords</label>'
         '<input type="search" id="srQ" name="q" autocomplete="off" spellcheck="false" placeholder="For example: deepfake, &quot;data sovereignty&quot;" aria-describedby="srHelp">'
-        '<p class="sr-help" id="srHelp">Separate terms with commas. A phrase in quotes is one term.</p>'
+        '<p class="sr-help" id="srHelp">Separate several terms with commas.</p>'
         '<div class="sr-opts"><fieldset class="sr-mode"><legend class="vh">How to combine terms</legend>'
-        '<label class="sr-check"><input type="radio" name="mode" value="any" checked> Match any term</label>'
-        '<label class="sr-check"><input type="radio" name="mode" value="all"> Match all terms</label></fieldset>'
+        '<label class="sr-check"><input type="radio" name="mode" value="any" checked> Contains any of the terms</label>'
+        '<label class="sr-check"><input type="radio" name="mode" value="all"> Contains all the terms</label></fieldset>'
         '<label class="sr-check"><input type="checkbox" id="srRel" checked> Include related terms</label></div>'
-        '<p class="sr-also" id="srAlso" hidden><span>Also searching:</span> <span class="sr-also-list" id="srAlsoList" translate="no"></span></p>'
-        '<div class="sr-topics"><span class="sr-sub" id="srTopicsH">Suggested topics</span><div class="sr-chips" id="srTopics" role="group" aria-labelledby="srTopicsH"></div></div></div>'
+        '<p class="sr-also" id="srAlso" hidden><span>Also searching:</span> <span class="sr-also-list" id="srAlsoList" translate="no"></span><span id="srAlsoX" hidden></span></p>'
+        '<div class="sr-topics"><span class="sr-sub" id="srTopicsH">Suggested topics</span><div class="sr-chips" id="srTopics" role="group" aria-labelledby="srTopicsH"></div>'
+        '<button type="button" class="sr-moret" id="srMoreT" aria-controls="srTopics" aria-expanded="false" hidden>More topics</button></div></div>'
         # date
         '<fieldset class="sr-sec sr-date"><legend class="sr-h">Date</legend>'
         f'<div class="seg" role="group" aria-label="Date range">{seg}</div>'
         '<div class="sr-date-x"><label class="sr-inline" id="srYearL" hidden>Year <select id="srYear"></select></label>'
         '<span class="sr-custom" id="srCustom" hidden><label class="sr-inline">From <input type="date" id="srFrom"></label><label class="sr-inline">To <input type="date" id="srTo"></label></span></div>'
-        f'<p class="sr-help" id="srAsof">{e(i18n.T("as of {date}", date=asof))}</p>'
+        f'<p class="sr-help" id="srAsof">{e(i18n.T("Data as of {date}", date=asof))}</p>'
         '<label class="sr-check"><input type="checkbox" id="srActions"> Include amendments and entry into force</label></fieldset>'
         # jurisdictions
         '<div class="sr-sec sr-jur"><label class="sr-h" for="srJ">Countries, regions and bodies</label>'
@@ -138,7 +139,7 @@ def search_page(D, ctx, head1, nav, foot):
         '<div class="sr-combo"><input type="text" id="srJ" role="combobox" aria-expanded="false" aria-controls="srJList" aria-autocomplete="list" autocomplete="off" '
         'placeholder="Type a country, region or body" aria-describedby="srJHelp">'
         '<ul class="sr-list" id="srJList" role="listbox" aria-label="Countries, regions and bodies" hidden></ul></div>'
-        '<p class="sr-help" id="srJHelp">Choices are combined. "Members of" covers the members\' own national documents; the bodies themselves are listed separately.</p></div>'
+        '<p class="sr-help" id="srJHelp">You can pick more than one.</p></div>'
         # more
         '<details class="sr-sec sr-more" id="srMoreF"><summary>More filters</summary><div class="sr-more-in">'
         f'<label class="sr-inline">Document type <select id="srType"><option value="">All types</option>{types}</select></label>'

@@ -32,7 +32,7 @@ const inPast=(c,days)=>R.inLast(c.date,days);
 // top-bar badge: government actions in the last 30 days
 const docsIn=p=>R.groupDocs(C.filter(c=>isWorld(c)&&(p==='all'?true:p==='upcoming'?age(c.date)<0:inPast(c,+p)))).length;
 const recentWorld=docsIn('30');
-const vtab=document.querySelector('[data-view="updates"]');if(vtab&&recentWorld)vtab.insertAdjacentHTML('beforeend',` <span class="cl-count">${recentWorld}</span>`);
+const vtab=document.querySelector('[data-view="updates"]');if(vtab&&recentWorld)vtab.insertAdjacentHTML('beforeend',` <span class="cl-count">${recentWorld}</span>`);{const st=document.getElementById('statRecent');if(st)st.textContent=recentWorld.toLocaleString('en-US')};
 const view=$('#updatesView');
 const PERIODS=[['30','30 days'],['60','60 days'],['90','90 days'],['all','All'],['upcoming','Upcoming']],WIN={'30':'Last 30 days','60':'Last 60 days','90':'Last 90 days',all:'All dates',upcoming:'Upcoming dates'};
 let days=new URLSearchParams(R.initialQuery||'').get('days');if(!WIN[days])days='30';R.updDays=()=>days;
