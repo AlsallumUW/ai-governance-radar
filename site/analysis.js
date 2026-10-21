@@ -16,3 +16,9 @@ $$('[data-csv]').forEach(b=>b.addEventListener('click',()=>{const f=document.get
   const a=document.createElement('a'),u=URL.createObjectURL(new Blob([text],{type:'text/csv'}));a.href=u;a.download=d.file;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),1500)}));
 addEventListener('beforeprint',()=>{$$('.fig-table').forEach(t=>t.hidden=true);$$('.fig-chart').forEach(c=>c.hidden=false)});
 })();
+/* header counts: (i) button opens the definitions; Escape or a click elsewhere closes them (as on country pages) */
+(function(){const b=document.querySelector('.info-btn'),p=b&&document.getElementById(b.getAttribute('aria-controls'));if(!p)return;
+const set=o=>{p.hidden=!o;b.setAttribute('aria-expanded',String(o))};
+b.addEventListener('click',e=>{e.stopPropagation();set(p.hidden)});
+document.addEventListener('click',e=>{if(!p.hidden&&!p.contains(e.target))set(false)});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!p.hidden){set(false);b.focus()}})})();

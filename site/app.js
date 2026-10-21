@@ -231,12 +231,12 @@ function origin(){const p=flat([0,0])||[width/2,height/2];return transform.apply
 function placeRadar(){const o=origin(),sw=$('#sweep');const r=Math.hypot(width,height);sw.style.width=sw.style.height=(r*2)+'px';sw.style.left=o[0]+'px';sw.style.top=o[1]+'px'}
 function startAnimation(){if(mode==='globe')startSpin()}
 reduced.addEventListener('change',()=>{if(reduced.matches)stopSpin()});
-/* "Latest" strip: the 12 most recent government actions */
-function buildLatest(){const box=$('#latestTrack');if(!box)return;const items=groupDocs(D.changes.filter(c=>c.kind==='world'&&jurisdictionByID.get(c.jurisdiction_id)?.type==='country'&&ageOf(c.date)>=0)).slice(0,12);
-  const one=g=>{const j=jurisdictionByID.get(g.jid);return `<button type="button" class="ls-item" data-latest="${j.id}">${flag(j)}<span class="ls-name">${esc(j.name)}</span><span class="ls-title" dir="auto">${esc(groupTitle(g))}</span><span class="ls-date">${esc(fmtDate(g.date))}</span></button>`};
+/* "Latest" strip: the 12 most recent government actions, of countries and of international and regional organisations */
+function buildLatest(){const box=$('#latestTrack');if(!box)return;const items=groupDocs(D.changes.filter(c=>c.kind==='world'&&jurisdictionByID.has(c.jurisdiction_id)&&ageOf(c.date)>=0)).slice(0,12);
+  const one=g=>{const j=jurisdictionByID.get(g.jid);return `<button type="button" class="ls-item" data-latest="${j.id}">${flag(j)}<span class="ls-name">${esc(j.type!=='country'&&j.short_name||j.name)}</span><span class="ls-title" dir="auto">${esc(groupTitle(g))}</span><span class="ls-date">${esc(fmtDate(g.date))}</span></button>`};
   const html=items.map(one).join('');box.innerHTML=`<div class="ls-set">${html}</div><div class="ls-set ls-dup" aria-hidden="true">${html}</div>`;
   box.querySelectorAll('.ls-dup button').forEach(b=>b.tabIndex=-1);
-  box.querySelectorAll('[data-latest]').forEach(b=>b.onclick=e=>{e.stopPropagation();const id=b.dataset.latest;showView('map');focusCountry(id,()=>pin(id))})}
+  box.querySelectorAll('[data-latest]').forEach(b=>b.onclick=e=>{e.stopPropagation();const id=b.dataset.latest;if(jurisdictionByID.get(id)?.type!=='country'){select(id);return}showView('map');focusCountry(id,()=>pin(id))})}
 function pageURL(id){const j=jurisdictionByID.get(id);return (j&&j.type!=='country'?'body/':'country/')+id+'/'+location.search}
 /* click a country, a search result or an update: zoom (map) or rotate (globe), then open its page */
 function select(id){let gone=false;const go=()=>{if(gone)return;gone=true;location.href=pageURL(id)};if(jurisdictionByID.get(id)?.type!=='country'||reduced.matches){go();return}
@@ -288,7 +288,8 @@ function fillExportCountries(){const s=$('#exportCountry');if(!s.options.length)
 $$('[data-export-country]').forEach(b=>b.onclick=()=>{const j=jurisdictionByID.get($('#exportCountry').value);if(j)exportCountry(j,b.dataset.exportCountry)});
 function toast(m){const t=$('#toast');t.textContent=m;t.hidden=false;clearTimeout(toast.t);toast.t=setTimeout(()=>t.hidden=true,2600)}
 
-$('#statRecords').textContent=(D.instruments.filter(i=>jurisdictionByID.get(i.jurisdiction_id)?.type==='country').length).toLocaleString('en-US');$('#statNational').textContent=(D.jurisdictions.filter(j=>j.type==='country'&&national(j).length).length).toLocaleString('en-US');
+/* every recorded document: countries' and international and regional organisations' */
+$('#statRecords').textContent=D.instruments.length.toLocaleString('en-US');$('#statNational').textContent=(D.jurisdictions.filter(j=>j.type==='country'&&national(j).length).length).toLocaleString('en-US');
 (function restore(){const p=new URLSearchParams(Q0);(p.get('cat')||'').split(',').filter(c=>D.categories[c]).forEach(c=>{filters.add(c);const b=$(`.chip[data-cat="${c}"]`);if(b){b.classList.add('active');b.setAttribute('aria-pressed','true')}});if(TYPES.some(x=>x[0]===p.get('type'))){docType=p.get('type');$('#typeFilter').value=docType}if(ORGS.some(x=>x[0]===p.get('org'))){orgType=p.get('org');$('#orgFilter').value=orgType}if(p.get('status')&&$(`#statusFilter option[value="${p.get('status')}"]`)){status=p.get('status');$('#statusFilter').value=status}const BODY_ALIAS={ISESCO:'ICESCO'};if(BODY_ALIAS[p.get('body')])p.set('body',BODY_ALIAS[p.get('body')]);if(p.get('body')&&MAP_BODIES.some(j=>j.id===p.get('body'))){body=p.get('body');bodySel.value=body}})();
 await new Promise(r=>setTimeout(r));   // yield: keep start-up in short tasks (no multi-second freeze on phones)
 try{initMap()}catch(e){console.error(e);$('#mapError').hidden=false}

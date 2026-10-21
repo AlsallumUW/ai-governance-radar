@@ -7,8 +7,8 @@ site/global.js does the filtering, sorting, URL state and CSV in the browser. No
 """
 import json
 import i18n
-from pages import (ar_attr, ar_issuer, ar_title, body_group, body_name, body_name_ar, date_key, e, first_sentence, fmt_date, kind,
-                   signed_by, year, GROUP_LABEL, GROUP_ORDER, LIFE, SITE_URL, STATUS_LABEL, WEIGHT)
+from pages import (ar_issuer, ar_title, body_group, body_name, body_name_ar, date_key, e, fmt_date, inst_item, kind,
+                   year, GROUP_LABEL, GROUP_ORDER, LIFE, SITE_URL, STATUS_LABEL, WEIGHT)
 
 LEDE = ("AI governance documents adopted by international and regional organisations whose members are governments. "
         "They are listed here and on each organisation's page, and are not counted in country totals.")
@@ -54,33 +54,15 @@ def org_cards(bodies, rows_by, ctx):
 
 
 def doc_row(i, j, cats, ctx, n):
-    """One document: organisation, title (to the official source), issuer and date, legal status, short summary."""
+    """One document, rendered by the country pages' item component (pages.inst_item) with the organisation above the title;
+    data attributes for the filters in global.js."""
     ar = _arabic(i)
-    isar = i18n.LANG == "ar"
-    title = (ar["title"] if isar and ar["title"] else None) or i.get("english_title") or i.get("official_title") or ""
-    issuer_en = (i.get("issuing_authority") or i.get("publisher_name") or "").strip()
-    issuer = (ar["issuer"] if isar and ar["issuer"] else issuer_en)
-    st = i.get("legal_status")
-    sm_ar = ar["summary"] if isar else ""
-    sm = first_sentence(sm_ar or i.get("summary") or "", 240)
-    sm_attr = ar_attr(sm_ar) if sm_ar else ' dir="auto" lang="en"' if isar else ""      # an English summary on the Arabic page
     d = i.get("publication_date")
-    text = " ".join(x for x in (i.get("english_title"), i.get("official_title"), ar["title"], issuer_en, ar["issuer"], i.get("summary"), ar["summary"],
-                                j.get("name"), j.get("short_name"), body_name_ar(j)) if x).lower()
-    src = i.get("source_url") or i.get("official_webpage_url") or ""
-    t_html = f'<a href="{e(src)}" rel="noopener noreferrer" target="_blank">{e(title)}</a>' if src else e(title)
-    meta = " · ".join(x for x in (e(issuer), f'<time datetime="{e(d)}">{e(fmt_date(d))}</time>' if d else "") if x)
-    return (f'<article class="inst gd-row" id="{e(i["id"])}" data-org="{e(j["id"])}" data-oname="{e(body_name(j))}" data-date="{e(date_key(d))}"'
-            f' data-year="{year(d) or ""}" data-weight="{WEIGHT.get(st, 9)}" data-status="{e(st or "")}" data-cats="{e(" ".join(i.get("categories", [])))}" data-n="{n}"'
-            f' data-text="{e(text)}">'
-            f'<p class="gd-on"><a href="../body/{e(j["id"])}/#{e(i["id"])}">{e(body_name(j))}</a></p>'
-            f'<h3 class="inst-title" dir="auto">{t_html}</h3>'
-            + (f'<p class="inst-meta" dir="auto">{meta}</p>' if meta else "")
-            + f'<p class="tags"><span class="tag tag-{kind(i)}">{e(i18n.tr(_status(st)))}</span>'
-            + (f'<span class="tag">{e(i18n.tr(LIFE[i["lifecycle"]]))}</span>' if i.get("lifecycle") in LIFE else "") + '</p>'
-            + (f'<p class="inst-sum"{sm_attr}>{e(sm)}</p>' if sm else "")
-            + signed_by(i, ctx["jur"], up="../")
-            + '</article>')
+    text = " ".join(x for x in (i.get("english_title"), i.get("official_title"), ar["title"], (i.get("issuing_authority") or i.get("publisher_name") or "").strip(),
+                                ar["issuer"], i.get("summary"), ar["summary"], j.get("name"), j.get("short_name"), body_name_ar(j)) if x).lower()
+    attrs = (f' data-org="{e(j["id"])}" data-oname="{e(body_name(j))}" data-year="{year(d) or ""}" data-status="{e(i.get("legal_status") or "")}" data-n="{n}"')
+    label = f'<p class="gd-on"><a href="../body/{e(j["id"])}/">{e(body_name(j))}</a></p>'
+    return inst_item(i, ctx["orgs"], ctx["srcs"], cats, jur=ctx["jur"], up="../", label=label, cls="gd-row", attrs=attrs, text=text)
 
 
 def csv_rows(rows, jur, cats):

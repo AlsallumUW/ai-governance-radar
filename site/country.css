@@ -76,6 +76,7 @@ ul.plain{padding-inline-start:1.1em;margin:0}ul.plain li{margin:2px 0}
 .group-h{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:26px 0 0;padding-bottom:6px;border-bottom:1px solid var(--hair)}
 .inst{padding:22px 0;border-bottom:1px solid var(--hair)}
 .inst-title{font-size:1.15rem;line-height:1.35;margin:0}
+.inst-title a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--axis);text-underline-offset:3px}.inst-title a:hover{text-decoration-color:var(--ink)}
 .inst-orig{display:block;margin:6px 0 0;color:var(--ink-2);font-size:15px}
 .inst-meta{display:block;margin:8px 0 0;color:var(--muted);font-size:14px}
 .tags{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 0}
@@ -185,6 +186,8 @@ body.cp{overflow-x:clip}
 }
 @media (max-width:1179px){.progress{display:block}.topnav.stuck .bar-id span:nth-of-type(n+2){display:none}}
 @media (max-width:900px){.secmenu{display:block}.topnav.stuck .back{font-size:0}.topnav.stuck .back::before{content:"←";font-size:16px}}
+/* a long back label ("← Global and regional documents" on body pages) is shortened with an ellipsis on phones, never pushing the bar wider */
+@media (max-width:560px){.topnav .back{min-width:0;flex:0 1 auto;overflow:hidden;text-overflow:ellipsis}}
 @media (max-width:560px){
   .hero--photo{min-height:0;justify-content:flex-start}.hero--photo .hero-media{position:relative;inset:auto;aspect-ratio:16/9;z-index:0;flex:none}.hero--photo .hero-scrim{inset:auto;top:0;left:0;right:0;aspect-ratio:16/9;z-index:1;background:linear-gradient(180deg,rgba(0,0,0,.28) 0,rgba(0,0,0,0) 40%)}.hero--photo .hero-body{padding:16px 16px 14px}.hero-body{padding:80px 16px 18px}.hero--photo .hero-credit{padding-bottom:14px}
   .hero .stats{grid-template-columns:repeat(3,minmax(0,1fr))}.hero .stats div{padding-top:10px}.hero .stats dd{font-size:24px}
