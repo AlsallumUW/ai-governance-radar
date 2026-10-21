@@ -209,7 +209,7 @@ def chart_status(rows):
                    f'<text class="val" style="--i:{n}" x="{L + w + 6:.1f}" y="{by + 11}">{v}</text>')
     out.append(f'<line class="axis" x1="{L}" x2="{L}" y1="0" y2="{H}"/></svg>')
     table = ('<table class="data-table"><thead><tr><th scope="col">Legal status</th><th scope="col">Instruments</th></tr></thead><tbody>'
-             + "".join(f'<tr><th scope="row">{e(STATUS_LABEL.get(k) or k.replace('_', ' ').capitalize())}</th><td>{v}</td></tr>' for k, v in items) + "</tbody></table>")
+             + "".join(f'<tr><th scope="row">{e(STATUS_LABEL.get(k) or k.replace("_", " ").capitalize())}</th><td>{v}</td></tr>' for k, v in items) + "</tbody></table>")
     return "".join(out), table
 
 

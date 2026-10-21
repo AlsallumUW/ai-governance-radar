@@ -24,6 +24,10 @@ You are running today's part of the weekly update of the AI Governance Radar rep
 6. **Retry and Convention 108 in today's group** (WEEKLY.md step 6).
    - Try each of today's countries that is on `retry` once, and record which now load and what changed.
    - Try each of today's countries on `pending_c108` once.
+6b. **Every day, whatever today's group: closed consultations and the daily watch list** (WEEKLY.md step 4). These are not tied to any country's sweep day.
+   - Run `python3 scripts/due_consultations.py --apply`.
+   - Check every item in `research/queue.json` → `daily_watch` once, today, even if its country belongs to another day's group (for example SAU on a Wednesday). Follow the item's `look_for` and `where`.
+   - In today's PR section, always include a line `**Daily watch:** <id> checked <date>: <what was found, or "no final version yet">`. Never write that an item was skipped because of the day.
 7. **Commit each country** to the branch as soon as its sub-agent finishes, and push.
 8. **Log, translate, validate** (WEEKLY.md step 8).
    - Run `python3 scripts/log_changes.py`.
@@ -97,3 +101,4 @@ Rules (full text in PROTOCOL.md and WEEKLY.md):
 - records added
 - the number of items needing review
 - the number of texts translated into Arabic (and any skipped)
+- the daily watch result for each item
