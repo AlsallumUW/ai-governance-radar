@@ -162,7 +162,7 @@ Every country gets the **same standard** (§1–§5): all 18 categories closed, 
 
 `python3 scripts/next_batch.py` prints the next run's countries; `--plan` prints every remaining run.
 
-**Subnational pass:** full for USA, CAN, AUS, BRA, IND, CHN; top 3–5 regions only for DEU, ESP, CHE, BEL, AUT, MYS, NGA, RUS; none for other countries unless a notable regional or city AI instrument appears in the national search. Cap any subnational part at 30 minutes.
+**Subnational pass:** full for USA, CAN, AUS, BRA, IND, CHN; top 3–5 regions only for DEU, ESP, CHE, BEL, AUT, MYS, NGA, RUS; none for other countries unless a notable regional or city AI instrument appears in the national search. Such an instrument is recorded as a subnational record (example: PER Arequipa Regional Ordinance 562, kept by Faisal's decision, 21 Oct 2026); it does not start a regular subnational sweep for that country. Cap any subnational part at 30 minutes.
 
 **Changing tiers.** If a tier C country turns out to have 6 or more national instruments, finish it, then move it to B in `queue.json` and say so in the PR. If a tier B country needs a subnational pass or clearly exceeds a run, stop after it, move it to A and list the rest of the batch as not started.
 

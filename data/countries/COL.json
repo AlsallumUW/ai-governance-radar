@@ -575,6 +575,61 @@
       "category": "sectoral",
       "ai_governance_relevance": "Colombian national instrument shaping AI governance (sectoral, ethics, generative-ai).",
       "source_id": "s-1ca455064466"
+    },
+    {
+      "id": "i-5e4d4445ca71",
+      "jurisdiction_id": "COL",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Colombia (national), higher education institutions",
+      "sectors": [
+        "education"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-093c4d86527e"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-10-20",
+      "metadata_gaps": [
+        "Only the year (2026) is printed; no month or day, and no adopting act"
+      ],
+      "link_status": "reachable",
+      "first_recorded": "2026-10-20",
+      "last_changed": null,
+      "language": "es",
+      "official_pdf_url": "https://www.mineducacion.gov.co/1780/articles-429623_Decalogo_inteligencia_artificial.pdf",
+      "effective_date": null,
+      "official_title": "Decálogo de Inteligencia Artificial para la Educación Superior en Colombia",
+      "english_title": "Decalogue on Artificial Intelligence for Higher Education in Colombia",
+      "issuing_authority": "Ministry of National Education",
+      "publisher_name": "Ministry of National Education",
+      "authority_type": "government_department",
+      "categories": [
+        "sectoral",
+        "ethics"
+      ],
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2026",
+      "current_status": "Nine-page PDF on the Ministry's site, printed '© Ministerio de Educación Nacional de Colombia, 2026'; no month or day is stated. It describes itself as an ethical and operational orientation that respects institutional autonomy; no adopting act was found.",
+      "summary": "Ten-point ethical and operational orientation for higher-education institutions on AI, built on the six axes of CONPES 4144 of 2025. It covers ethics and institutional governance (algorithmic transparency, data integrity, multi-level governance models), infrastructure and data, interdisciplinary research, training of staff and students, and inclusion and sustainability. It recommends rather than requires and leaves implementation to each institution.",
+      "source_url": "https://www.mineducacion.gov.co/1780/articles-429623_Decalogo_inteligencia_artificial.pdf",
+      "official_webpage_url": null,
+      "source_kind": "official_document",
+      "verification_level": "reviewed_primary_metadata",
+      "document_access_type": "original_government_document",
+      "organization_id": "o-71b4dcbc64ee",
+      "evidence_reference": "PDF read with pdftotext on 2026-10-20 (credits page, introduction, points 1-5).",
+      "category": "sectoral",
+      "ai_governance_relevance": "Education-sector AI guidance from the national ministry, aligned to CONPES 4144.",
+      "source_id": "s-91bf2b568df4"
     }
   ],
   "organizations": [
@@ -646,6 +701,16 @@
       "ai_governance_role": "Issued the Decalogue on AI for higher education (2026).",
       "source_url": "https://www.mineducacion.gov.co/",
       "authority_type": "ministry",
+      "government_level": "national"
+    },
+    {
+      "id": "o-71b4dcbc64ee",
+      "jurisdiction_id": "COL",
+      "name": "Ministry of National Education",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Issued the 2026 AI decalogue for higher education.",
+      "source_url": "https://www.mineducacion.gov.co/",
+      "authority_type": "government_department",
       "government_level": "national"
     }
   ],
@@ -955,6 +1020,33 @@
       "document_language": "es",
       "error": null,
       "content_type": "application/pdf"
+    },
+    {
+      "id": "s-91bf2b568df4",
+      "url": "https://www.mineducacion.gov.co/1780/articles-429623_Decalogo_inteligencia_artificial.pdf",
+      "jurisdiction_ids": [
+        "COL"
+      ],
+      "source_institutions": [
+        "Ministry of National Education"
+      ],
+      "instrument_ids": [
+        "i-5e4d4445ca71"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "ethics"
+      ],
+      "date_reviewed": "2026-10-20",
+      "checked_date": "2026-10-20",
+      "check_method": "curl (browser user agent, --max-time 60): PDF (9 pages) downloaded and read with pdftotext.",
+      "http_status": 200,
+      "final_url": "https://www.mineducacion.gov.co/1780/articles-429623_Decalogo_inteligencia_artificial.pdf",
+      "link_status": "reachable",
+      "page_title": "Decálogo de inteligencia artificial para la educación superior en Colombia",
+      "document_language": "es",
+      "error": null,
+      "content_type": "application/pdf"
     }
   ],
   "regional_applicability": [],
@@ -1012,7 +1104,9 @@
       "Ministerio de Educación Nacional Colombia orientaciones uso inteligencia artificial educación documento 2025",
       "Superintendencia Financiera de Colombia inteligencia artificial circular OR guía 2025 2026",
       "ICONTEC NTC ISO/IEC 42001 adopción Colombia inteligencia artificial norma técnica colombiana",
-      "Colombia inteligencia artificial lineamientos ministerio educación OR salud OR Superfinanciera OR Colombia Compra Eficiente guía IA"
+      "Colombia inteligencia artificial lineamientos ministerio educación OR salud OR Superfinanciera OR Colombia Compra Eficiente guía IA",
+      "MinTIC, SIC, Senado, Cámara, AND portals news/listing check for 'inteligencia artificial' (2026-10-20)",
+      "Colombia inteligencia artificial resolución circular decreto octubre 2026 mintic OR sic OR gov.co"
     ],
     "review_date": "2026-10-12",
     "passes": {
@@ -1034,9 +1128,25 @@
     "no_material_found_note": "The information technology and communications ministry's official legal compilation, the judicial register, the Presidency, the National Planning Department, the same ministry, the judicial branch and control bodies, other ministries and regulators were searched at national level. No qualifying AI-governance document was found for standards, readiness indices, drafts and consultations, or international agreements. Not yet verified from the official text: the full text of CONPES 4144, the status of AI bill PL 043/2025 and any further AI material in the official gazette.",
     "discovery_result_count": 12,
     "focused_result_count": 12,
-    "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. funcionpublica.gov.co (Gestor Normativo) and colaboracion.dnp.gov.co: curl TLS failure / WebFetch 503; SUIN-Juriscol and Diario Oficial search not run (MinTIC normograma used); camara/senado bill pages not reached. CONPES 4144 primary_source_located (DNP PDF failed). Guía Ética date = MinTIC 'Última actualización' 2026-01-07 (PDF undated); no adopting act found. Directive 03/2021 source moved to MinTIC normograma copy. Directiva Conjunta 007 PDF hosted by Agencia Nacional Digital (state body). CONPES 3975 tagged historical, lifecycle adopted (no official supersession). Ley 2502 effective_date = publication; art. 296 aggravation after one year. Renamed o-f47a71be9d73, o-9215d90f899f (latter unused, pruned). Convention 108: not a party. Units covered: Law: MinTIC official legal compilation (normograma) and Rama Judicial register used: Law 1581 of 2012 (data protection), Law 2502 of 2025 (AI impersonation). Gestor Normativo (Función Pública) and DNP servers unreachable (TLS/503). AI framework bill PL 043/2025 Senado held as lead (status unconfirmed). No AI-specific law beyond Law 2502 found.; Government: Presidency (Marco Ético 2021, Directive 03 of 2021, Guía Ética 2025/26), DNP (CONPES 3975, CONPES 4144), MinTIC covered. Judicial branch (Agreement PCSJA24-12243) and control bodies (Joint Directive 007 of 2025) covered.; Ministries: Education: Decálogo IA educación superior (2026) found. Health, justice, defence, finance/tax, labour, interior: searched, nothing AI-specific found beyond CONPES 4144 actions (health case only as an example inside the Guía Ética).; Regulators: SIC (data protection): Circular 002 of 2024 recorded. Superfinanciera: searched, only supervisory AI use (no AI rule for supervised entities). CRC, Colombia Compra Eficiente, ColCERT, ICONTEC: searched, nothing AI-specific found (ISO/IEC 42001 news refers to a certification body, not an NTC adoption).. Not reached: Gestor Normativo (funcionpublica.gov.co) and colaboracion.dnp.gov.co could not be read (TLS failure via curl; HTTP 503 via WebFetch); SUIN-Juriscol and Diario Oficial (imprenta.gov.co) own search not run separately; laws read via MinTIC compilation; camara.gov.co / senado.gov.co bill status pages not reached. Could not verify: CONPES 4144 full text (DNP PDF unreachable); Directive 03 of 2021 on Gestor Normativo; Status of AI bill PL 043/2025 Senado. standards, index-readiness, drafts, international: no material found.\nWording note 2026-10-19 (narrative.review_notes): The civil service department's legal database and part of the planning department's site could not be accessed, so the 2025 National AI Policy is recorded from official records without its full text being read, and Congress's bill pages were not reached.\nWording note 2026-10-19 (no_material_found_note): The civil service legal database and the planning department's servers were unavailable, the official gazette and Congress bill pages were not searched directly, and the full text of CONPES 4144 and the status of AI bill PL 043/2025 remain to be checked."
+    "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. funcionpublica.gov.co (Gestor Normativo) and colaboracion.dnp.gov.co: curl TLS failure / WebFetch 503; SUIN-Juriscol and Diario Oficial search not run (MinTIC normograma used); camara/senado bill pages not reached. CONPES 4144 primary_source_located (DNP PDF failed). Guía Ética date = MinTIC 'Última actualización' 2026-01-07 (PDF undated); no adopting act found. Directive 03/2021 source moved to MinTIC normograma copy. Directiva Conjunta 007 PDF hosted by Agencia Nacional Digital (state body). CONPES 3975 tagged historical, lifecycle adopted (no official supersession). Ley 2502 effective_date = publication; art. 296 aggravation after one year. Renamed o-f47a71be9d73, o-9215d90f899f (latter unused, pruned). Convention 108: not a party. Units covered: Law: MinTIC official legal compilation (normograma) and Rama Judicial register used: Law 1581 of 2012 (data protection), Law 2502 of 2025 (AI impersonation). Gestor Normativo (Función Pública) and DNP servers unreachable (TLS/503). AI framework bill PL 043/2025 Senado held as lead (status unconfirmed). No AI-specific law beyond Law 2502 found.; Government: Presidency (Marco Ético 2021, Directive 03 of 2021, Guía Ética 2025/26), DNP (CONPES 3975, CONPES 4144), MinTIC covered. Judicial branch (Agreement PCSJA24-12243) and control bodies (Joint Directive 007 of 2025) covered.; Ministries: Education: Decálogo IA educación superior (2026) found. Health, justice, defence, finance/tax, labour, interior: searched, nothing AI-specific found beyond CONPES 4144 actions (health case only as an example inside the Guía Ética).; Regulators: SIC (data protection): Circular 002 of 2024 recorded. Superfinanciera: searched, only supervisory AI use (no AI rule for supervised entities). CRC, Colombia Compra Eficiente, ColCERT, ICONTEC: searched, nothing AI-specific found (ISO/IEC 42001 news refers to a certification body, not an NTC adoption).. Not reached: Gestor Normativo (funcionpublica.gov.co) and colaboracion.dnp.gov.co could not be read (TLS failure via curl; HTTP 503 via WebFetch); SUIN-Juriscol and Diario Oficial (imprenta.gov.co) own search not run separately; laws read via MinTIC compilation; camara.gov.co / senado.gov.co bill status pages not reached. Could not verify: CONPES 4144 full text (DNP PDF unreachable); Directive 03 of 2021 on Gestor Normativo; Status of AI bill PL 043/2025 Senado. standards, index-readiness, drafts, international: no material found.\nWording note 2026-10-19 (narrative.review_notes): The civil service department's legal database and part of the planning department's site could not be accessed, so the 2025 National AI Policy is recorded from official records without its full text being read, and Congress's bill pages were not reached.\nWording note 2026-10-19 (no_material_found_note): The civil service legal database and the planning department's servers were unavailable, the official gazette and Congress bill pages were not searched directly, and the full text of CONPES 4144 and the status of AI bill PL 043/2025 remain to be checked.",
+    "last_sweep": "2026-10-20"
   },
   "changes": [
+    {
+      "id": "c-f9b5c89240e4",
+      "date": "2026-10-20",
+      "recorded": "2026-10-20",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "COL",
+      "instrument_id": "i-5e4d4445ca71",
+      "title": "Decalogue on Artificial Intelligence for Higher Education in Colombia",
+      "detail": "Added to the radar (published 2026).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.mineducacion.gov.co/1780/articles-429623_Decalogo_inteligencia_artificial.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-bddbb0ed1588",
       "date": "2026-10-12",
