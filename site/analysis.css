@@ -198,3 +198,21 @@ details.signed .member-grid{margin:10px 0 0}
 details.signed .chip{font-size:13px}
 @media (max-width:560px){.gd-controls label{flex:1 1 140px}.gd-controls .grow,.gd-controls .gd-org-f{flex-basis:100%;max-width:none}.gd-orgs{grid-template-columns:1fr}}
 @media print{.chart-index,.gd-controls,.gd-actions{display:none}}
+/* country ranking */
+.rank-list{list-style:none;margin:6px 0 0;padding:0;counter-reset:none}
+.rank-list li{display:grid;grid-template-columns:2.4em 26px minmax(8em,13em) 1fr 3.2em;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid var(--hair);font-size:14px}
+.rank-list li:last-child{border-bottom:0}
+.rk-n{color:var(--muted);font-variant-numeric:tabular-nums;text-align:end}
+.rk-flag{width:24px;height:18px;object-fit:cover;border-radius:3px;box-shadow:0 0 0 1px var(--hair);display:block}
+.rk-name{color:var(--ink);text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rk-name:hover{text-decoration:underline}
+.rk-bar{display:flex;height:14px;border-radius:4px;overflow:hidden;background:var(--chip)}
+.rk-seg{display:block;height:100%}.rk-seg.s-b{background:var(--s-b)}.rk-seg.s-n{background:var(--s-n)}.rk-seg.s-d{background:var(--s-d)}
+.rk-seg+.rk-seg{border-inline-start:1px solid var(--surface)}
+.rk-tot{font-weight:600;font-variant-numeric:tabular-nums;text-align:end}
+.rank-list li:nth-child(-n+3) .rk-n{color:var(--ink);font-weight:700}
+.rk-tools{margin:10px 0 0}
+@media (max-width:600px){.rank-list li{grid-template-columns:2em 22px minmax(6em,1fr) 1fr 2.6em;gap:6px;font-size:13px}}
+.rank-list li[hidden]{display:none}
+html[lang="ar"] .rank-list{direction:rtl}
+.rk-tools .linkbtn{font-size:14px}

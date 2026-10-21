@@ -11,6 +11,19 @@ import i18n
 from i18n import tr
 from pages import (ar_title, body_group, count_info, e, kind, KIND_LABEL, KIND_CLASS, COUNT_DEFS, GROUP_LABEL, STATUS_LABEL, SITE_URL, fmt_date, year)
 
+FLAGS_JSON = __import__("pathlib").Path(__file__).resolve().parent.parent / "site/assets/flags.json"
+FLAG_ISO = set(json.loads(FLAGS_JSON.read_text(encoding="utf-8")))
+
+
+def write_flags(out):
+    """assets/flags/<iso2>.svg from the map's flags.json (data URIs), so pages can load small cacheable flag files."""
+    import base64
+    d = out / "assets" / "flags"; d.mkdir(parents=True, exist_ok=True)
+    for k, v in json.loads(FLAGS_JSON.read_text(encoding="utf-8")).items():
+        head, data = v.split(",", 1)
+        (d / f"{k}.svg").write_bytes(base64.b64decode(data) if ";base64" in head else __import__("urllib.parse").parse.unquote(data).encode())
+
+
 REGIONS = ["Africa", "Americas", "Asia", "Europe", "Oceania"]
 GROUPS = ("soft", "binding", "draft")          # stack order, bottom to top (orange / blue / aqua: the weak pair is never adjacent)
 LEGEND = ('<p class="legend"><span><i class="sw s-b"></i>Binding or mandatory</span><span><i class="sw s-n"></i>Non-binding</span>'
@@ -420,6 +433,57 @@ def fig_region(N):
                     "box_nat": sum(len(v) for v in region_counts(N, "nat").values()), "box_all": sum(len(v) for v in region_counts(N, "all").values())}
 
 
+# ---------------------------------------------------------------- g. country ranking
+RANK_SHOW = 25
+
+
+def rank_parts(N, scope):
+    by_c = region_counts(N, scope)
+    rows = []
+    for j in N["countries"]:
+        v = by_c[j["id"]]
+        g = {k: sum(1 for i in v if kind(i) == k) for k in GROUPS}
+        rows.append((j, len(v), g))
+    rows.sort(key=lambda r: (-r[1], tr(r[0]["name"])))
+    ranked, prev, rk = [], None, 0
+    for n, (j, tot, g) in enumerate(rows, 1):
+        if tot != prev: rk, prev = n, tot
+        ranked.append((rk, j, tot, g))
+    top = ranked[0][2] or 1
+    li = []
+    for rk, j, tot, g in ranked:
+        iso = (j.get("iso2") or "").lower()
+        flag = f'<img class="rk-flag" src="../assets/flags/{iso}.svg" alt="" loading="lazy" width="24" height="18">' if iso in FLAG_ISO else '<span class="rk-flag"></span>'
+        segs = "".join(f'<span class="rk-seg s-{KIND_CLASS[k]}" style="width:{100 * g[k] / top:.2f}%" title="{e(KIND_LABEL[k])}: {g[k]}"></span>' for k in ("binding", "soft", "draft") if g[k])
+        li.append(f'<li{" class=rk-more hidden" if len(li) >= RANK_SHOW else ""}><span class="rk-n">{rk}</span>{flag}'
+                  f'<a class="rk-name" href="../country/{j["id"]}/">{e(j["name"])}</a><span class="rk-bar">{segs}</span><span class="rk-tot">{tot}</span></li>')
+    body = (f'<ol class="rank-list">{"".join(li)}</ol>'
+            f'<p class="rk-tools"><button type="button" class="linkbtn" data-rank-more aria-expanded="false" data-more="{e(_T("Show all {n} countries", n=len(ranked)))}" '
+            f'data-less="{e(_T("Show the top {n} only", n=RANK_SHOW))}">{e(_T("Show all {n} countries", n=len(ranked)))}</button></p>')
+    head = ["Rank", "Country", "Instruments", "Binding or mandatory", "Non-binding", "Drafts"]
+    trows = [[rk, j["name"], tot, g["binding"], g["soft"], g["draft"]] for rk, j, tot, g in ranked]
+    total = sum(r[2] for r in ranked)
+    t10 = sum(r[2] for r in ranked[:10])
+    zero = sum(1 for r in ranked if r[2] == 0)
+    a, b, c = ranked[0], ranked[1], ranked[2]
+    nm = lambda j: tr(j["name"]) if i18n.LANG == "ar" else ("the " if j["name"].startswith("United") else "") + j["name"]
+    take = _T("{a} has the most recorded instruments ({na}), followed by {b} ({nb}) and {c} ({nc}). The top 10 countries account for {p}% of all {t}; {z} countries have none recorded.",
+              a=nm(a[1]), na=a[2], b=nm(b[1]), nb=b[2], c=nm(c[1]), nc=c[2], p=pct(t10, total), t=f"{total:,}", z=zero)
+    take = take[0].upper() + take[1:]
+    return take, body, head, trows
+
+
+def fig_rank(N):
+    desc = {"nat": "Countries ranked by the number of AI governance instruments recorded at national level. Bars show binding or mandatory, non-binding and draft instruments; equal counts share a rank.",
+            "all": "Countries ranked by the number of AI governance instruments recorded, including state/provincial and local ones. Bars show binding or mandatory, non-binding and draft instruments; equal counts share a rank."}
+    P = {k: rank_parts(N, k) for k, _ in SCOPES}
+    legend = ('<p class="legend"><span><i class="sw s-b"></i>Binding or mandatory</span><span><i class="sw s-n"></i>Non-binding</span>'
+              '<span><i class="sw s-d"></i>Drafts</span></p>')
+    return afig_variants("fig-rank", "Countries ranked by recorded instruments", desc,
+                         [(k, P[k][0], P[k][1], P[k][2], P[k][3], legend) for k, _ in SCOPES],
+                         "A higher count means more official documents were found, not stronger AI governance. " + REGION_NOTE)
+
+
 # ---------------------------------------------------------------- d. category heatmap
 def fig_heat(N, cats):
     reg = {r: [j["id"] for j in N["countries"] if j.get("region") == r] for r in REGIONS}
@@ -561,6 +625,7 @@ def analysis_page(D, recs, ctx):
     fd = fig_heat(N, D["categories"])
     fe, ke = fig_treaty(N, ctx)
     ff, kf = fig_issuer(N)
+    fg = fig_rank(N)
     n_all = len(D["instruments"]); nC, nR = len(N["C"]), len(N["R"])
     lvl = {k: sum(1 for i in N["C"] if i.get("government_level") == k) for k in ("national", "subnational", "local")}
     grp = {g: sum(1 for i in N["C"] if kind(i) == g) for g in GROUPS}
@@ -591,8 +656,8 @@ def analysis_page(D, recs, ctx):
              + f'<aside class="caution" role="note"><strong>Read with care.</strong> {e(CAUTION)} <a href="../?about=method">Methodology</a></aside>'
              + f'<p class="discovery">{e(DISCOVERY)}</p></header>')
     H.append('<nav class="chart-index" aria-label="Charts"><a href="#fig-years">Per year</a><a href="#fig-adoption">Adoption</a><a href="#fig-region">Regions</a>'
-             '<a href="#fig-heat">Categories</a><a href="#fig-treaty">Treaties</a><a href="#fig-issuer">Issuers</a><a href="#recon">How the numbers add up</a></nav>')
-    H.append('<div class="an-grid">' + fa + fb + fc1 + fc2 + fd + fe + ff + '</div>')
+             '<a href="#fig-rank">Country ranking</a><a href="#fig-heat">Categories</a><a href="#fig-treaty">Treaties</a><a href="#fig-issuer">Issuers</a><a href="#recon">How the numbers add up</a></nav>')
+    H.append('<div class="an-grid">' + fa + fb + fc1 + fc2 + fg + fd + fe + ff + '</div>')
     H.append('<section id="recon" class="block"><h2>How the numbers add up</h2><p class="section-lede">Every chart is built from the same data as the export on the map page. '
              'Charts use instruments issued in each country; the region charts (c) default to national-level instruments, with a switch to add state/provincial and local ones, '
              'and the other charts include all three levels. Regional-body instruments are shown separately in chart a and left out of the others, '
@@ -691,7 +756,9 @@ def write(D, recs, out, ctx):
     import search, globaldocs
     pages_ = (("analysis", analysis_page(D, recs, ctx)), ("timeline", timeline_page(D, ctx)),
               ("search", search.search_page(D, ctx, head1, nav, foot)), ("global", globaldocs.global_page(D, ctx, head1, nav, foot)))
-    if i18n.LANG != "ar": search.write_assets(out)      # shared data files: written once, beside the English assets
+    if i18n.LANG != "ar":
+        search.write_assets(out)      # shared data files: written once, beside the English assets
+        write_flags(out)
     for p, html_ in pages_:
         (out / p).mkdir(parents=True, exist_ok=True)
         (out / p / "index.html").write_text(html_, encoding="utf-8")

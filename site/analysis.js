@@ -22,3 +22,7 @@ const set=o=>{p.hidden=!o;b.setAttribute('aria-expanded',String(o))};
 b.addEventListener('click',e=>{e.stopPropagation();set(p.hidden)});
 document.addEventListener('click',e=>{if(!p.hidden&&!p.contains(e.target))set(false)});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!p.hidden){set(false);b.focus()}})})();
+/* country ranking: show the top countries or all of them (every scope variant moves together) */
+document.querySelectorAll('[data-rank-more]').forEach(b=>b.addEventListener('click',()=>{const open=b.getAttribute('aria-expanded')!=='true';
+  document.querySelectorAll('[data-rank-more]').forEach(x=>{x.setAttribute('aria-expanded',String(open));x.textContent=open?x.dataset.less:x.dataset.more});
+  document.querySelectorAll('#fig-rank .rk-more').forEach(li=>li.hidden=!open)}));
