@@ -667,7 +667,7 @@ def body_page(b, D, rec, flags, ctx):
 
 def footer(D, up="../../"):
     return (f'<footer class="pagefoot"><p>AI Governance Radar · Prepared by Faisal Alsallum · Data as of {e(fmt_date(D["meta"].get("build_date")))}</p>'
-            f'<p><a href="{up}" id="footMap">World map</a> · <a href="{up}analysis/">Analysis</a> · <a href="{up}timeline/">Timeline</a> · <a href="{up}suggest/">Suggest an update</a> · <a href="{up}?about=method">Methodology</a> · <a href="{up}credits/">Photo credits</a></p></footer>')
+            f'<p><a href="{up}" id="footMap">World map</a> · <a href="{up}search/">Search</a> · <a href="{up}analysis/">Analysis</a> · <a href="{up}timeline/">Timeline</a> · <a href="{up}suggest/">Suggest an update</a> · <a href="{up}?about=method">Methodology</a> · <a href="{up}credits/">Photo credits</a></p></footer>')
 
 
 ROLE_LABEL = {"hero": "Header", "feature": "Beside the overview", "backdrop": "Behind the charts", "band": "Before the instruments"}
@@ -768,7 +768,7 @@ def write_all(D, recs, out, flags, mirror=False):
            "explore_overrides": {k: v for k, v in json.loads((ROOT / "data/explore_overrides.json").read_text(encoding="utf-8")).items() if not k.startswith("_")} if (ROOT / "data/explore_overrides.json").exists() else {},
            "n_inst": collections.Counter(i["jurisdiction_id"] for i in D["instruments"])}
     (out / "assets").mkdir(parents=True, exist_ok=True)
-    for f in () if mirror else ("country.css", "country.js", "analysis.css", "analysis.js", "timeline.js", "suggest.js"):
+    for f in () if mirror else ("country.css", "country.js", "analysis.css", "analysis.js", "timeline.js", "suggest.js", "search.js"):
         (out / "assets" / f).write_text((ROOT / "site" / f).read_text(encoding="utf-8"), encoding="utf-8")
     # photos (site/img) are copied as they are; never hotlinked
     if (ROOT / "site/img").is_dir() and not mirror:

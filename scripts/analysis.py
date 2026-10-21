@@ -2,6 +2,7 @@
 
     <out>/analysis/index.html   static SVG charts, each with a table view and a CSV download
     <out>/timeline/index.html   every dated instrument on a time axis (site/timeline.js draws it from inline JSON)
+    <out>/search/index.html     document search (scripts/search.py, site/search.js)
 
 Called from pages.write_all with the same context the country pages use. Nothing here edits data.
 """
@@ -536,7 +537,7 @@ def head1(title, desc, canon):
 
 
 def nav(active):
-    links = [("analysis", "Analysis"), ("timeline", "Timeline"), ("suggest", "Suggest an update")]
+    links = [("search", "Search"), ("analysis", "Analysis"), ("timeline", "Timeline"), ("suggest", "Suggest an update")]
     return ('<header class="topnav"><a class="back" id="backToMap" href="../">← World map</a><span class="site">AI Governance Radar</span>'
             '<nav class="toc sitenav" aria-label="Site">' + "".join(f'<a href="../{k}/"{" aria-current=page" if k == active else ""}>{v}</a>' for k, v in links)
             + '<a href="../?about=method">Methodology</a></nav></header>')
@@ -544,7 +545,7 @@ def nav(active):
 
 def foot(D):
     return (f'<footer class="pagefoot"><p>AI Governance Radar · Prepared by Faisal Alsallum · Data as of {e(fmt_date(D["meta"].get("build_date")))}</p>'
-            '<p><a href="../">World map</a> · <a href="../analysis/">Analysis</a> · <a href="../timeline/">Timeline</a> · <a href="../suggest/">Suggest an update</a> · <a href="../?about=method">Methodology</a></p></footer>')
+            '<p><a href="../">World map</a> · <a href="../search/">Search</a> · <a href="../analysis/">Analysis</a> · <a href="../timeline/">Timeline</a> · <a href="../suggest/">Suggest an update</a> · <a href="../?about=method">Methodology</a></p></footer>')
 
 
 DISCOVERY = "Recent years are better represented: newer documents are more often online, so growth since 2023 is partly a discovery effect."
@@ -694,7 +695,11 @@ def suggest_page(D, ctx):
 
 
 def write(D, recs, out, ctx):
-    for p, html_ in (("analysis", analysis_page(D, recs, ctx)), ("timeline", timeline_page(D, ctx)), ("suggest", suggest_page(D, ctx))):
+    import search
+    pages_ = (("analysis", analysis_page(D, recs, ctx)), ("timeline", timeline_page(D, ctx)), ("suggest", suggest_page(D, ctx)),
+              ("search", search.search_page(D, ctx, head1, nav, foot)))
+    if i18n.LANG != "ar": search.write_assets(out)      # shared data files: written once, beside the English assets
+    for p, html_ in pages_:
         (out / p).mkdir(parents=True, exist_ok=True)
         (out / p / "index.html").write_text(html_, encoding="utf-8")
 
