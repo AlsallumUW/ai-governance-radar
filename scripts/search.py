@@ -10,7 +10,7 @@ the matching, filtering and CSV export in the browser. Nothing here edits data.
 import hashlib, json
 import i18n
 from common import ROOT
-from pages import (ar_issuer, ar_title, e, fmt_date, BODY_ORDER, EVENT, LIFE, SITE_URL, STATUS_LABEL, TYPES, TYPE_OF)
+from pages import (ar_issuer, ar_title, body_name_ar, e, fmt_date, EVENT, LIFE, SITE_URL, STATUS_LABEL, TYPES, TYPE_OF)
 from subregions import SUBREGION
 
 ACTIONS = ("published", "revised", "adopted", "applied", "consultation")   # dated government actions kept per instrument
@@ -53,8 +53,10 @@ def index(D, ctx):
                          i.get("summary") or "", i.get("current_status") or "", sa, sta,
                          i.get("source_url") or i.get("official_webpage_url") or "", sorted(acts.get(i["id"], ()))])
         J = {}
-        for j in D["jurisdictions"]:
-            ar = i18n.D["countries"].get(j["id"]) or i18n.D["bodies"].get(j["id"]) or _ar(j["name"])
+        order = {b: n for n, b in enumerate(ctx["body_order"])}    # countries first, then bodies by group and name
+        for j in sorted(D["jurisdictions"], key=lambda j: (j["type"] != "country", order.get(j["id"], 0))):
+            ar = i18n.D["countries"].get(j["id"]) if j["type"] == "country" else body_name_ar(j)
+            ar = ar or _ar(j["name"])
             J[j["id"]] = [j["name"], ar, "c" if j["type"] == "country" else "b", SUBREGION.get(j["id"], "") if j["type"] == "country" else "",
                           (j.get("region") or "") if j["type"] == "country" else ""]
         subs = {}
@@ -66,7 +68,7 @@ def index(D, ctx):
                           "categories", "summary", "status", "summary_ar", "status_ar", "source", "actions"],
                "jurisdictions": J,
                "regions": [[r, _ar(r), [[s, _ar(s)] for s in sorted(subs.get(r, ()))]] for r in REGIONS],
-               "bodies": {b: sorted(ctx["members"].get(b, ())) for b in BODY_ORDER if b in jur},
+               "bodies": {b: sorted(ctx["members"][b]) for b in ctx["body_order"] if ctx["members"].get(b)},   # "members of": bodies with members only
                "categories": [[k, v, _ar(v)] for k, v in D["categories"].items()],
                "statuses": [[k, _status_label(k), _ar(_status_label(k))] for k in st_keys],
                "lifecycles": [[k, v, _ar(v)] for k, v in LIFE.items()],

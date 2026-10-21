@@ -107,7 +107,7 @@ const phone=()=>matchMedia('(max-width:700px)').matches;
 function render(light){hideCard(true);
   const all=items.filter(it=>match(it,F)),undated=all.filter(it=>it.x==null).length,dated=all.filter(it=>it.x!=null);
   const inR=dated.filter(it=>it.y>=F.from&&it.y<=F.to),out=dated.length-inR.length;
-  const ctx=[F.country&&J[F.country][0],F.region,F.body&&T.bodies[F.body][0]+' members',F.cat&&CAT[catIdx(F.cat)][1],F.status&&(GROUP.includes(F.status)?T.groups[GROUP.indexOf(F.status)]:ST[stIdx(F.status)]?.[1]),F.level&&LV[lvIdx(F.level)][1]].filter(Boolean);
+  const ctx=[F.country&&J[F.country][0],F.region,F.body&&(T.bodies[F.body][1].length?T.bodies[F.body][0]+' members':T.bodies[F.body][0]),F.cat&&CAT[catIdx(F.cat)][1],F.status&&(GROUP.includes(F.status)?T.groups[GROUP.indexOf(F.status)]:ST[stIdx(F.status)]?.[1]),F.level&&LV[lvIdx(F.level)][1]].filter(Boolean);
   status.textContent=`${inR.length.toLocaleString('en')} instrument${inR.length===1?'':'s'} published ${F.from===F.to?'in '+F.from:F.from+'–'+F.to}${ctx.length?' · '+ctx.join(' · '):''}`
     +(out?` · ${out} outside these years`:'')+` · ${undated} undated instrument${undated===1?'':'s'} excluded`;
   drawBrush(dated);if(phone()){if(!light)drawList(inR)}else drawMain(inR)}

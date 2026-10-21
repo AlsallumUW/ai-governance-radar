@@ -10,7 +10,7 @@ You are running today's part of the weekly update of the AI Governance Radar rep
 2. **Work out the day and the week.**
    - `DAY=$(TZ=Asia/Riyadh date +%u)` gives 1 (Monday) to 7 (Sunday). `WEEK=$(TZ=Asia/Riyadh date +%G-W%V)`.
    - Today's group is the entry in `research/queue.json` → `sweep_days.days` whose `day` equals `DAY`.
-   - Day 1 also covers the regional bodies, open `update-request` issues (WEEKLY.md step 5) and any deep reviews printed by `scripts/next_batch.py`.
+   - Day 1 also covers every body in `data/regional/` (WEEKLY.md step 5), any open `update-request` issues and any deep reviews printed by `scripts/next_batch.py`.
 3. **Branch** `update/week-$WEEK`.
    - If it already exists on origin, check it out and merge `origin/main` into it (keep both sides on conflicts).
    - Otherwise create it from `main`.
