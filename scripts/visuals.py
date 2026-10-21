@@ -218,14 +218,16 @@ def legend(title, keys, title_alt=None):
     return (f'<div class="wm-legend"><span class="wm-lh"{alt}>{e(title)}</span><span class="wm-keys">{sw}</span></div>')
 
 
-def map_card(kind_, fid, title, desc, svg, leg, below="", note="", data=None):
-    """The map in a card: title and description, legend, the map with its info card, controls below and a note."""
+def map_card(kind_, fid, title, desc, svg, leg, below="", note="", data=None, above="", keep_note=False, side=""):
+    """The map in a card: title and description, legend, controls above, the map with its info card, controls below and a note
+    (keep_note: an empty note is kept, hidden, for a script to fill; side: a panel beside the map on wide screens, under it on narrow ones)."""
     data = {"t-open": T("Open the country page"), **(data or {})}
     attrs = "".join(f' data-{k}="{e(str(v))}"' for k, v in data.items())
     return (f'<figure class="wmap" id="{fid}" data-map="{kind_}"{attrs} aria-labelledby="{fid}-h">'
             f'<div class="wm-head"><div class="wm-tt"><h2 id="{fid}-h">{e(title)}</h2><p class="wm-desc">{e(desc)}</p></div>{leg}</div>'
-            f'<div class="wm-stage">{svg}<div class="wm-card" hidden></div></div>{below}'
-            + (f'<figcaption class="wm-note">{note}</figcaption>' if note else "") + '</figure>')
+            + above + ('<div class="wm-split"><div class="wm-main">' if side else "")
+            + f'<div class="wm-stage">{svg}<div class="wm-card" hidden></div></div>{below}' + (f'</div>{side}</div>' if side else "")
+            + (f'<figcaption class="wm-note"{"" if note else " hidden"}>{note}</figcaption>' if note or keep_note else "") + '</figure>')
 
 
 def _countries(D, ctx):
@@ -261,31 +263,130 @@ def _inst_line(c):
     return T("{total} ({parts})", total=head, parts=("، " if i18n.LANG == "ar" else ", ").join(parts))
 
 
+# lenses: each recolours the same map (site/maps.js) from one compact JSON blob; bins are fixed here so the legend is static
+LENSES = ["docs", "strategy", "binding", "topic", "recent"]
+STRAT_BINS = [(None, 2018), (2019, 2019), (2020, 2021), (2022, 2023), (2024, 2024), (2025, None)]   # darkest = earliest
+SHARE_BINS = [(0, 14), (15, 24), (25, 34), (35, 49), (50, 64), (65, 100)]
+RECENT_FROM = "2024-01-01"
+RECENT_BINS = [(1, 1), (2, 3), (4, 6), (7, 12), (13, 30), (31, None)]
+MIN_SHARE = 3          # fewer national instruments than this: no share is shown (hatched)
+MIN_SHARE_TOP = 10     # ...and the top five of that lens only ranks countries with at least this many (100% of 3 says little)
+
+
+def _sbin(y):
+    for k, (lo, hi) in enumerate(STRAT_BINS, 1):
+        if (lo is None or y >= lo) and (hi is None or y <= hi): return len(STRAT_BINS) + 1 - k
+    return 1
+
+
+def _pbin(p):
+    for k, (lo, hi) in enumerate(SHARE_BINS, 1):
+        if p <= hi: return k
+    return len(SHARE_BINS)
+
+
+def _first_strategies(D, cids):
+    """{country: instrument} the earliest dated national-level national strategy: the rule of chart b (fig_adoption), so the counts agree."""
+    from pages import date_key
+    out = {}
+    for i in D["instruments"]:
+        c = i["jurisdiction_id"]
+        if c not in cids or i.get("legal_status") != "national_strategy" or i.get("government_level") != "national": continue
+        d = i.get("publication_date") or ""
+        if not d[:4].isdigit(): continue
+        if c not in out or date_key(d) < date_key(out[c]["publication_date"]): out[c] = i
+    return out
+
+
 def analysis_map(D, ctx):
+    from pages import ar_title, fmt_date
     cids = _countries(D, ctx)
+    jur = ctx["jur"]
+    cset = set(cids)
+    cat_keys = list(D["categories"])
     nat = {c: {"binding": 0, "soft": 0, "draft": 0} for c in cids}
     allv = {c: {"binding": 0, "soft": 0, "draft": 0} for c in cids}
+    recent = {c: 0 for c in cids}
+    topic = {c: [0] * len(cat_keys) for c in cids}
     for i in D["instruments"]:
         c = i["jurisdiction_id"]
         if c not in nat: continue
         allv[c][kind(i)] += 1
-        if i.get("government_level") == "national": nat[c][kind(i)] += 1
-    items = {}
+        if i.get("government_level") != "national": continue
+        nat[c][kind(i)] += 1
+        d = i.get("publication_date") or ""
+        if d[:4].isdigit() and (d + "-01-01"[len(d) - 4:] if len(d) in (4, 7) else d) >= RECENT_FROM: recent[c] += 1      # a year alone counts from 1 January
+        for k in i.get("categories", []):
+            if k in cat_keys: topic[c][cat_keys.index(k)] += 1
+    strat = _first_strategies(D, cset)
+    sep = "، " if i18n.LANG == "ar" else ", "
+    items, blob = {}, {}
     for c in cids:
         a, b = sum(nat[c].values()), sum(allv[c].values())
         i0 = _inst_line(nat[c]) or T("No instruments found at national level")
         i1 = _inst_line(allv[c]) or T("No instruments found")
-        items[c] = {"cls": f"m{_bin(a, SEQ)}", "tip": f"{i18n.tr(ctx['jur'][c]['name'])}: {i0}",
+        items[c] = {"cls": f"m{_bin(a, SEQ)}", "tip": f"{i18n.tr(jur[c]['name'])}: {i0}",
                     "attrs": {"i": i0, "b": _bin(a, SEQ), "i-all": i1, "b-all": _bin(b, SEQ)}}
+        s = strat.get(c)
+        st = 0 if not s else [s["publication_date"], ar_title(s) or s.get("english_title") or s.get("official_title") or "", fmt_date(s["publication_date"][:7]),
+                              _sbin(int(s["publication_date"][:4]))]
+        # [iso2, national, all levels, binding (national), first strategy [date, title, month, shade] or 0, since 2024, instruments per category (comma-separated, zeros empty)]
+        blob[c] = [(jur[c].get("iso2") or "").lower(), a, b, nat[c]["binding"], st, recent[c], ",".join(str(x) if x else "" for x in topic[c]).rstrip(",")]
     tot = sum(sum(v.values()) for v in nat.values()); zero = sum(1 for v in nat.values() if not sum(v.values()))
     label = T("World map: national-level instruments recorded in each of the 195 countries ({n} in all; {z} countries with none found). The same counts are in the country ranking below.",
               n=f"{tot:,}", z=zero)
-    leg = legend(T("Instruments recorded (national level)"), [(0, T("None found"))] + [(k, _range(*b)) for k, b in enumerate(SEQ, 1)],
-                 title_alt=T("Instruments recorded (all levels)"))
+    cats = [[k, i18n.tr(v)] for k, v in D["categories"].items()]
+    n_strat, n_share = len(strat), sum(1 for c in cids if sum(nat[c].values()) >= MIN_SHARE)
+    # one legend per lens (the topic legend's steps are filled in by maps.js for the chosen category)
+    legs = {
+        "docs": legend(T("Instruments recorded (national level)"), [(0, T("None found"))] + [(k, _range(*b)) for k, b in enumerate(SEQ, 1)],
+                       title_alt=T("Instruments recorded (all levels)")),
+        "strategy": legend(T("First national AI strategy"), [(0, T("None recorded"))] + [
+            (len(STRAT_BINS) + 1 - k, T("Before {y}", y=hi + 1) if lo is None else (str(lo) if lo == (hi or int(ctx["today"][:4])) else f"{lo}–{str(hi or int(ctx['today'][:4]))[2:]}"))
+            for k, (lo, hi) in enumerate(STRAT_BINS, 1)]),
+        "binding": legend(T("Binding or mandatory, share of national instruments"), [("h", T("Fewer than 3"))] + [
+            (k, (f"{lo}%+" if hi == 100 else f"{lo}–{hi}%")) for k, (lo, hi) in enumerate(SHARE_BINS, 1)]),
+        "topic": legend(T("Instruments recorded (national level)"), [(0, T("None found"))]),
+        "recent": legend(T("Instruments published since 1 Jan 2024 (national level)"), [(0, T("None found"))] + [(k, _range(*b)) for k, b in enumerate(RECENT_BINS, 1)]),
+    }
+    leg = "".join(l.replace('<div class="wm-legend"', f'<div class="wm-legend" data-lens="{k}"' + ("" if k == "docs" else " hidden"), 1) for k, l in legs.items())
+    L = {
+        "docs": {"tab": T("Documents recorded"), "h": T("Where AI governance documents have been recorded"),
+                 "d": T("National-level instruments recorded in each country. Select a country to open its page."),
+                 "top": T("Most instruments recorded"), "note": ""},
+        "strategy": {"tab": T("National AI strategy"), "h": T("When countries adopted their first national AI strategy"),
+                     "d": T("{n} of 195 countries have a national AI strategy recorded. Darker shades adopted earlier.", n=n_strat),
+                     "top": T("Earliest national AI strategies"),
+                     "note": T("Year of the earliest dated national-level instrument recorded as a national strategy: the same rule as the adoption chart (b), so the counts agree.")},
+        "binding": {"tab": T("Binding or mandatory"), "h": T("How much of each country's recorded AI governance is binding"),
+                    "d": T("Share of each country's national-level instruments that are binding or mandatory. {n} countries have at least 3 instruments; the rest are hatched.", n=n_share),
+                    "top": T("Highest share binding or mandatory (countries with at least 10 instruments)"),
+                    "note": T("Binding or mandatory includes data protection, copyright and sector laws that apply to AI. A share says how a country's recorded instruments divide, not how strongly AI is regulated.")},
+        "topic": {"tab": T("Topic"), "h": T("Where instruments on a topic have been recorded"),
+                  "d": T("National-level instruments tagged with the chosen category. One instrument can carry several categories."),
+                  "top": T("Most instruments on this topic"), "note": ""},
+        "recent": {"tab": T("New since 2024"), "h": T("Who has been most active since 2024"),
+                   "d": T("National-level instruments published from 1 January 2024. Instruments with only a year count from that year."),
+                   "top": T("Most instruments published since 1 Jan 2024"), "note": ""},
+    }
+    data = {"lens": L, "cats": cats, "c": blob, "sep": sep, "min": MIN_SHARE, "topmin": MIN_SHARE_TOP, "sb": [hi for _, hi in SHARE_BINS], "rb": [hi for _, hi in RECENT_BINS],
+            "t": {"strat0": T("No national AI strategy recorded"), "share": TT("{p}% binding or mandatory ({b} of {n} national instruments)"),
+                  "share0": TT("Too few national instruments to compare ({n})"), "topic1": TT("1 instrument on {topic}"), "topicn": TT("{n} instruments on {topic}"),
+                  "topic0": TT("No instruments on {topic}"), "rec1": TT("1 instrument published since 1 Jan 2024"), "recn": TT("{n} instruments published since 1 Jan 2024"),
+                  "rec0": T("None published since 1 Jan 2024"), "topich": TT("Where instruments on {topic} have been recorded"),
+                  "toplh": TT("Instruments on {topic} (national level)"), "toptop": TT("Most instruments on {topic}"), "pct": TT("{p}%")}}
+    js = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+    tabs = "".join(f'<button type="button" class="seg-b" data-lens="{k}" aria-pressed="{"true" if k == "docs" else "false"}">{e(L[k]["tab"])}</button>' for k in LENSES)
+    copts = "".join(f'<option value="{e(k)}"{" selected" if k == "generative-ai" else ""}>{e(v)}</option>' for k, v in cats)
+    lensbar = (f'<div class="wm-lens"><span class="wm-lens-l" id="map-lens-l">{e(T("Show:"))}</span><div class="seg" role="group" aria-labelledby="map-lens-l">{tabs}</div>'
+               f'<label class="wm-topic" hidden><span class="vh">{e(T("Topic"))}</span><select data-topic>{copts}</select></label></div>')
     tog = f'<label class="scope-toggle wm-scope"><input type="checkbox" data-scope-toggle> {e(T("Include state/provincial and local"))}</label>'
-    return map_card("analysis", "map", T("Where AI governance documents have been recorded"),
-                    T("National-level instruments recorded in each country. Select a country to open its page."),
-                    world(items, label), leg, below=f'<div class="wm-ctl">{tog}</div>')
+    top = (f'<section class="wm-top" aria-labelledby="map-top-h"><h3 class="wm-top-h" id="map-top-h">{e(L["docs"]["top"])}</h3><ol class="wm-top-l"></ol></section>')
+    hatch = ('<defs><pattern id="wmHatch" width="3.2" height="3.2" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">'
+             '<rect width="3.2" height="3.2" class="wm-hb"/><line x1="0" y1="0" x2="0" y2="3.2" class="wm-hl"/></pattern></defs>')
+    return map_card("analysis", "map", L["docs"]["h"], L["docs"]["d"], world(items, label, extra=hatch), leg,
+                    above=lensbar, below=f'<div class="wm-ctl">{tog}</div>{top}',
+                    note="", keep_note=True) + f'<script type="application/json" id="map-lens">{js}</script>'
 
 
 # ---------------------------------------------------------------- Timeline
@@ -347,9 +448,13 @@ SEATS = {"UN": ("New York", -73.968, 40.749), "UNESCO": ("Paris", 2.306, 48.849)
 
 
 def global_map(D, ctx):
-    from pages import body_name
+    """Organisation explorer: by default the membership-count choropleth; pick an organisation (select or headquarters marker) to
+    see its member states and latest documents, or a country (select or click) to see the organisations it belongs to.
+    site/maps.js draws the selections from the JSON blob written here, in the page language."""
+    from pages import ar_title, body_group, body_name, date_key, fmt_date, GROUP_LABEL, GROUP_ORDER
     cids = _countries(D, ctx)
     jur = ctx["jur"]
+    cset = set(cids)
     orgs = [b for b in ctx["body_order"] if jur[b].get("members_rule") != "none" and ctx["members"].get(b)]
     sep = "، " if i18n.LANG == "ar" else ", "
     of = {c: [] for c in cids}
@@ -362,6 +467,25 @@ def global_map(D, ctx):
         info = T("Member of 1 organisation") if n == 1 else T("Member of {n} organisations", n=n) if n else T("Not a member of any of these organisations")
         items[c] = {"cls": f"m{_bin(n, MEM_BINS)}", "tip": f"{i18n.tr(jur[c]['name'])}: {info}",
                     "attrs": {"i": info, "b": _bin(n, MEM_BINS), "l": sep.join(of[c])}}
+    # documents of each organisation, newest first
+    docs = {}
+    for i in D["instruments"]:
+        if i["jurisdiction_id"] in jur and jur[i["jurisdiction_id"]]["type"] != "country": docs.setdefault(i["jurisdiction_id"], []).append(i)
+    for v in docs.values(): v.sort(key=lambda i: (date_key(i.get("publication_date")), i.get("english_title") or ""), reverse=True)
+    title = lambda i: ar_title(i) or i.get("english_title") or i.get("official_title") or ""
+    doc = lambda b, i, sig=False: [i["id"], title(i), fmt_date(i.get("publication_date"))] + (["".join(c for c in (i.get("signatories") or []) if c in cset)] if sig else [])
+    blob_o = {}
+    for b in ctx["body_order"]:
+        j = jur[b]; none = j.get("members_rule") == "none"
+        mem = sorted(c for c in ctx["members"].get(b, ()) if c in cset)
+        if not mem and not none: continue
+        ds = docs.get(b, [])
+        # [name, short name, group, member states (0: signatories vary by document), documents, newest 3 (all, with signatories, when membership varies)]
+        # member states as one string of ISO3 codes; "!" + the countries left out when that is shorter (the UN system)
+        out = sorted(cset - set(mem))
+        mem_s = ("!" + "".join(out)) if len(out) < len(mem) else "".join(mem)
+        blob_o[b] = [body_name(j), body_name(j, short=True), body_group(j), 0 if none else mem_s, len(ds), [doc(b, i, none) for i in (ds if none else ds[:3])]]
+    groups = [[g, i18n.tr(GROUP_LABEL[g])] for g in GROUP_ORDER if any(v[2] == g for v in blob_o.values())]
     # headquarters: seats within a few pixels of each other (Geneva, Basel, Brussels, Paris, New York, Washington) share a marker
     marks = []
     for b in ctx["body_order"]:
@@ -376,19 +500,62 @@ def global_map(D, ctx):
         names = sep.join(body_name(jur[b], short=True) for b in m["orgs"])
         r = 1.7 + .75 * math.sqrt(len(m["orgs"]))
         city = i18n.tr(m["city"])
-        hq.append(f'<g class="hq" data-name="{e(city)}" data-i="{e(names)}" tabindex="-1"><title>{e(city + ": " + names)}</title>'
-                  f'<circle class="hq-h" cx="{_num(x)}" cy="{_num(y)}" r="{_num(r + 3)}"/><circle cx="{_num(x)}" cy="{_num(y)}" r="{_num(r)}"/></g>')
+        hq.append(f'<g class="hq" data-name="{e(city)}" data-i="{e(names)}" data-orgs="{" ".join(m["orgs"])}" tabindex="-1"><title>{e(city + ": " + names)}</title>'
+                  f'<circle class="hq-h" cx="{_num(x)}" cy="{_num(y)}" r="{_num(r + 3)}"/><circle class="hq-d" cx="{_num(x)}" cy="{_num(y)}" r="{_num(r)}"/></g>')
     label = T("World map: the number of international and regional organisations each country belongs to, of the {n} recorded here with a membership list, and the organisations' headquarters.", n=len(orgs))
-    leg = legend(T("Organisations a country belongs to"), [(k, _range(*b)) for k, b in enumerate(MEM_BINS, 1)])
     key = (f'<span class="wm-hqkey"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><circle cx="6" cy="6" r="4"/></svg>'
            f'{e(T("Headquarters"))}</span>')
-    leg = leg[:-len("</div>")] + key + "</div>"
+    leg0 = legend(T("Organisations a country belongs to"), [(k, _range(*b)) for k, b in enumerate(MEM_BINS, 1)])
+    leg0 = leg0.replace('<div class="wm-legend"', '<div class="wm-legend" data-mode=""', 1)[:-len("</div>")] + key + "</div>"
+    sel_key = lambda cls, text, attr="": f'<span><i class="wk {cls}"></i><bdi{attr}>{e(text)}</bdi></span>'
+    leg_org = (f'<div class="wm-legend wm-legend-sel" data-mode="org" hidden><span class="wm-lh" data-org-title></span><span class="wm-keys">'
+               + sel_key("m4", T("Member states"), " data-org-key") + sel_key("m0", T("Other countries"))
+               + f'</span><span class="wm-hqkey wm-hqkey-on"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><circle cx="6" cy="6" r="4"/></svg>{e(T("Headquarters"))}</span></div>')
+    leg_c = (f'<div class="wm-legend wm-legend-sel wm-legend-c" data-mode="country" hidden><span class="wm-lh" data-country-title></span><span class="wm-keys">'
+             + sel_key("msel", T("Selected country")) + f'<span class="k0 wm-k"><i class="wk m0"></i><bdi>{e(T("None"))}</bdi></span>'
+             + f'</span><span class="wm-hqkey wm-hqkey-on"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><circle cx="6" cy="6" r="4"/></svg>{e(T("Headquarters of its organisations"))}</span></div>')
     no_seat = [b for b in orgs if b not in SEATS]
-    note = e(T("Membership lists as recorded on each organisation's page; the AI Action Summits are left out because participation varies by declaration. {list} have no permanent seat and no marker.",
+    note = e(T("Membership lists as recorded on each organisation's page; the AI Action Summits are left out of the shading because participation varies by declaration. {list} have no permanent seat and no marker.",
                list=sep.join(body_name(jur[b], short=True) for b in no_seat)))
-    return map_card("global", "map", T("Membership of international and regional organisations"),
-                    T("Countries are shaded by how many of the {n} organisations recorded here they belong to. Dots mark headquarters.", n=len(orgs)),
-                    world(items, label, extra=f'<g class="wm-hq">{"".join(hq)}</g>'), leg, note=note)
+    # pickers
+    oopts, last = [], None
+    for b, v in blob_o.items():
+        if v[2] != last:
+            oopts.append(("</optgroup>" if last else "") + f'<optgroup label="{e(i18n.tr(GROUP_LABEL[v[2]]))}">'); last = v[2]
+        oopts.append(f'<option value="{e(b)}">{e(v[0])}</option>')
+    oopts.append("</optgroup>")
+    # the countries are listed by site/maps.js from the map itself (their names are on it already, in the page language)
+    copts = ""
+    x_icon = '<svg viewBox="0 0 12 12" width="11" height="11" aria-hidden="true"><path d="M2.5 2.5l7 7M9.5 2.5l-7 7"/></svg>'
+    pickers = (f'<div class="wm-pickers" role="group" aria-label="{e(T("Explore the map"))}">'
+               f'<label class="wm-pk"><span>{e(T("Organisation"))}</span><select data-pick="org"><option value="">{e(T("Choose an organisation"))}</option>{"".join(oopts)}</select></label>'
+               f'<span class="wm-or" aria-hidden="true">{e(T("or"))}</span>'
+               f'<label class="wm-pk"><span>{e(T("Country"))}</span><select data-pick="country"><option value="">{e(T("Choose a country"))}</option>{copts}</select></label>'
+               f'<button type="button" class="wm-clear" hidden>{x_icon}<span>{e(T("Clear selection"))}</span></button></div>')
+    ex = [("org", b) for b in ("EU", "AU", "GCC") if b in blob_o] + [("country", c) for c in ("SAU",) if c in cset]
+    exs = "".join(f'<button type="button" class="wm-ex" data-{k}="{v}">{e(blob_o[v][0] if k == "org" else i18n.tr(jur[v]["name"]))}</button>' for k, v in ex)
+    panel = (f'<aside class="wm-panel" aria-live="polite" aria-label="{e(T("Selection details"))}"><div class="wm-p0">'
+             f'<p class="wm-p-h">{e(T("Select an organisation or a country"))}</p>'
+             f'<p class="wm-p-t">{e(T("Pick an organisation to see its member states and latest documents, or a country to see which international documents apply to it through its memberships."))}</p>'
+             f'<p class="wm-p-ex"><span>{e(T("For example:"))}</span>{exs}</p></div><div class="wm-p1" hidden></div></aside>')
+    data = {"o": blob_o, "g": groups, "f": {c: (jur[c].get("iso2") or "").lower() for c in cids},
+            "t": {"members": TT("{n} member states"), "members1": T("1 member state"), "docs": TT("{n} documents"), "docs1": T("1 document"), "docs0": T("No documents yet"),
+                  "sigvary": T("Signatories vary by document"), "latest": T("Latest"), "recent": T("Most recent documents"), "all": TT("All {n} documents"),
+                  "lmem": T("Member states"), "ldocs": T("Documents"), "ldecl": T("Declarations"),
+                  "orgpage": T("Open the organisation page"), "cpage": T("Open the country page"),
+                  "cline": TT("{c} is a member of {n} organisations recorded here, which have adopted {m} AI governance documents."),
+                  "cline1": TT("{c} is a member of 1 organisation recorded here, which has adopted {m} AI governance documents."),
+                  "cline0": TT("{c} is not a member of any organisation recorded here with a membership list."),
+                  "csum": TT("{c} also signed {k} of the {n} AI summit declarations recorded here."),
+                  "signed": T("Signatories"), "decl": T("Declaration"), "nosig": T("Signatories are not recorded for this document."),
+
+                  "choose": T("Choose an organisation at this headquarters"),
+                  "shared": TT("{n} organisations shared with {c}"), "shared1": TT("1 organisation shared with {c}"), "sharedh": TT("Organisations shared with {c}"), "date": T("Date not recorded")}}
+    js = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+    svg = world(items, label, extra=f'<g class="wm-hq">{"".join(hq)}</g>')
+    return map_card("global", "map", T("International and regional organisations: members and documents"),
+                    T("Countries are shaded by how many of the {n} organisations recorded here they belong to. Pick an organisation or a country to explore; dots mark headquarters.", n=len(orgs)),
+                    svg, leg0 + leg_org + leg_c, above=pickers, side=panel, note=note) + f'<script type="application/json" id="map-orgs">{js}</script>'
 
 
 # ---------------------------------------------------------------- Search
@@ -431,9 +598,10 @@ def search_map(D, ctx):
     lo = [1] + [u + 1 for u in ups[:-1]]
     leg = legend(T("Documents in the results"), [(0, T("None"))] + [(spread(k, len(ups)), _range(a, b)) for k, (a, b) in enumerate(zip(lo, ups), 1)])
     return map_card("search", "map", T("Where matching documents come from"),
-                    T("Countries are shaded by the number of documents in the current results, and update with every search. Select a country to show only its documents."),
-                    world(items, label), leg,
-                    data={"t-none": T("No documents in the results"), "t-one": TT("1 document"), "t-many": TT("{n} documents"),
+                    T("Countries are shaded by the number of documents in the current results, and update with every search. Select a country to show only its documents; select it again to show all."),
+                    world(items, label), leg, above='<div class="wm-sel" hidden></div>',
+                    data={"t-chip": TT("Country: {name}"), "t-rm": TT("Remove {name} from the search"), "t-all": T("Show all countries"),
+                          "t-none": T("No documents in the results"), "t-one": TT("1 document"), "t-many": TT("{n} documents"),
                           "t-pick": T("Select to show only this country's documents"), "t-lnone": T("None")})
 
 
