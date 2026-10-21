@@ -7,6 +7,7 @@ site/global.js does the filtering, sorting, URL state and CSV in the browser. No
 """
 import json
 import i18n
+import visuals
 from pages import (ar_issuer, ar_title, body_group, body_name, body_name_ar, date_key, e, fmt_date, inst_item, kind,
                    year, GROUP_LABEL, GROUP_ORDER, LIFE, SITE_URL, STATUS_LABEL, WEIGHT)
 
@@ -46,8 +47,8 @@ def org_cards(bodies, rows_by, ctx):
             dates = [i["publication_date"] for i in docs if i.get("publication_date")]
             last = max(dates, key=date_key) if dates else None
             meta = [mem, nd] + ([i18n.T("Latest: {date}", date=fmt_date(last))] if last else [])
-            cards.append(f'<li class="gd-org"><a class="gd-oname" href="../body/{e(j["id"])}/">{e(body_name(j))}</a>'
-                         + "".join(f'<span class="gd-om">{e(m)}</span>' for m in meta) + '</li>')
+            cards.append(f'<li class="gd-org">{visuals.org_thumb(j["id"], ctx)}<div class="gd-ob"><a class="gd-oname" href="../body/{e(j["id"])}/">{e(body_name(j))}</a>'
+                         + "".join(f'<span class="gd-om">{e(m)}</span>' for m in meta) + '</div></li>')
         out.append(f'<section class="gd-group" aria-labelledby="gd-g-{g}"><h3 class="gd-gh" id="gd-g-{g}">{e(i18n.tr(GROUP_LABEL[g]))} <span class="count">{len(js)}</span></h3>'
                    f'<ul class="gd-orgs">{"".join(cards)}</ul></section>')
     return "".join(out)
@@ -98,11 +99,10 @@ def global_page(D, ctx, head1, nav, foot):
     stats = [("Organisations", len(bodies)), ("Documents", len(rows)), ("Treaties and binding acts", n_bind), ("Since 2024", n_24)]
     canon = f"{SITE_URL}global/"
     title = "Global and regional documents | AI Governance Radar"
-    H = [head1(title, LEDE, canon), '<body class="cp gd">', nav("global"), '<main class="page gd-page">']
-    H.append(f'<header class="hero gd-hero" id="top"><p class="eyebrow">{e(i18n.T("Data as of {date}", date=fmt_date(today)))}</p>'
-             '<h1>Global and regional documents</h1>'
-             f'<p class="section-lede gd-lede">{e(LEDE)}</p>'
-             '<dl class="stats stats4">' + "".join(f'<div><dt>{e(k)}</dt><dd>{v:,}</dd></div>' for k, v in stats) + '</dl></header>')
+    H = [head1(title, LEDE, canon).replace("</head>", visuals.banner_preload("global", ctx) + "</head>", 1), '<body class="cp gd">', nav("global"), '<main id="main">']
+    H.append(visuals.banner("global", ctx, i18n.T("Data as of {date}", date=fmt_date(today)), "Global and regional documents", lede=LEDE,
+                            stats=[(k, f"{v:,}") for k, v in stats]))
+    H.append('<div class="page gd-page">' + visuals.global_map(D, ctx))
     H.append('<nav class="chart-index" aria-label="On this page"><a href="#organisations">Organisations</a><a href="#documents">Documents</a></nav>')
     H.append(f'<section id="organisations" class="block"><h2>Organisations <span class="count">{len(bodies)}</span></h2>'
              f'{org_cards(bodies, by, ctx)}</section>')
@@ -136,5 +136,5 @@ def global_page(D, ctx, head1, nav, foot):
              '<div class="inst-list gd-list" id="gdList">' + "".join(doc_row(i, jur[i["jurisdiction_id"]], cats, ctx, n) for n, i in enumerate(rows)) + '</div>'
              '<p class="gd-none muted" id="gdNone" hidden>No documents match these filters.</p>'
              f'<script type="application/json" id="gd-csv">{csv}</script></section>')
-    H.append('</main>' + foot(D) + '<script src="../assets/global.js" defer></script></body></html>')
+    H.append('</div></main>' + foot(D) + '<script src="../assets/maps.js" defer></script><script src="../assets/global.js" defer></script></body></html>')
     return "".join(H)

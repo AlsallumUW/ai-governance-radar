@@ -748,6 +748,7 @@ def footer(D, up="../../"):
             f'<p><a href="{up}" id="footMap">World map</a> · <a href="{up}search/">Search</a> · <a href="{up}analysis/">Analysis</a> · <a href="{up}timeline/">Timeline</a> · <a href="{up}global/">Global and regional documents</a> · <a href="{up}?about=method">Methodology</a> · <a href="{up}credits/">Photo credits</a></p></footer>')
 
 
+PAGE_NAMES = {"analysis": "Analysis", "timeline": "Timeline", "global": "Global and regional documents", "search": "Search"}
 ROLE_LABEL = {"hero": "Header", "feature": "Beside the overview", "backdrop": "Behind the charts", "band": "Before the instruments"}
 
 
@@ -774,14 +775,15 @@ def paras(text, is_ar=False, anchor=None):
     return "".join(f'<p{ar_attr(is_ar)}>{e(p)}{i18n.orig_link(anchor) if is_ar and anchor and n == len(ps) - 1 else ""}</p>' for n, p in enumerate(ps))
 
 
-def load_photos():
+def load_photos(keys=("countries", "bodies")):
     """data/photos.json -> {ISO3 or body code: {role: image}} with roles hero, feature, backdrop, band
-    (countries under "countries", international and regional organisations under "bodies"; the codes never overlap)"""
+    (countries under "countries", international and regional organisations under "bodies"; the codes never overlap).
+    keys=("pages",): the banner photos of the site pages (analysis, timeline, global, search), role hero only."""
     p = ROOT / "data/photos.json"
     if not p.exists(): return {}
     d = json.loads(p.read_text(encoding="utf-8"))
     out = {cid: {im["role"]: dict(im) for im in ph.get("photos") or []}
-           for key in ("countries", "bodies") for cid, ph in (d.get(key) or {}).items()}
+           for key in keys for cid, ph in (d.get(key) or {}).items()}
     for cid, ims in out.items():          # Arabic pages: machine-translated caption and alt text (credits stay as published)
         for role, im in ims.items():
             for f in ("caption", "alt"):
@@ -794,14 +796,14 @@ def credits_page(D, ctx):
     """/credits/: every photo used on the site, with author, licence and a link to its Commons page."""
     photos = ctx["photos"]; jur = ctx["jur"]
 
-    def photo_rows(ids, kind):
+    def photo_rows(ids, kind, src=photos):
         rows = []
         for cid in ids:
-            ph = photos.get(cid) or {}
-            name = body_name(jur[cid]) if kind == "body" else jur.get(cid, {}).get("name", cid)
+            ph = src.get(cid) or {}
+            name = PAGE_NAMES[cid] if kind == "page" else body_name(jur[cid]) if kind == "body" else jur.get(cid, {}).get("name", cid)
             for role, im in ((ROLE_LABEL[r], ph[r]) for r in ROLE_LABEL if ph.get(r)):
                 lic = f'<a href="{e(im["license_url"])}" rel="license noopener">{e(im["license"])}</a>' if im.get("license_url") else e(im["license"])
-                rows.append(f'<tr><th scope="row"><a href="../{kind}/{cid}/">{e(name)}</a></th><td>{role}</td><td>{e(im["subject"])}</td>'
+                rows.append(f'<tr><th scope="row"><a href="../{cid if kind == "page" else kind + "/" + cid}/">{e(name)}</a></th><td>{role}</td><td>{e(im["subject"])}</td>'
                             f'<td>{e(im["author"])}</td><td>{lic}</td><td><a href="{e(im["commons_url"])}" rel="noopener">{e(im["title"])}</a></td></tr>')
         return rows
 
@@ -814,10 +816,12 @@ def credits_page(D, ctx):
     fallback = [c for c in cids if not (photos.get(c) or {}).get("hero")]
     bodies = [b for b in ctx["body_order"] if (photos.get(b) or {}).get("hero")]
     brows = photo_rows(bodies, "body")
-    n_img = len(rows) + len(brows)
+    pp = ctx.get("page_photos") or {}
+    prows = photo_rows([k for k in PAGE_NAMES if (pp.get(k) or {}).get("hero")], "page", pp)
+    n_img = len(rows) + len(brows) + len(prows)
     n_pages = sum(1 for c in cids if (photos.get(c) or {}).get("hero"))
     title = "Photo credits | AI Governance Radar"
-    lede = (f'{n_img} photos on {n_pages} country pages' + (f' and {len(bodies)} organisation pages' if bodies else "") + '. All come from Wikimedia Commons under a public-domain, CC0, CC BY or CC BY-SA licence, '
+    lede = (f'{n_img} photos on {n_pages} country pages' + (f', {len(bodies)} organisation pages' if bodies else "") + (f' and {len(prows)} site pages' if prows else "") + '. All come from Wikimedia Commons under a public-domain, CC0, CC BY or CC BY-SA licence, '
             'were cropped (landscape, portrait or panoramic), resized and converted to WebP for this site, and are served from this site (not hotlinked). Each photo carries a caption and its own credit line where it appears. '
             'Images under CC BY-SA are shared here under the same licence; changes: cropped and resized to WebP. '
             + ('International and regional organisations are shown with a photo of a place linked to them, never a logo; those without one show a map of their members.' if bodies else
@@ -830,7 +834,9 @@ def credits_page(D, ctx):
         H.append('<p class="section-lede">No suitable freely licensed photo was found for: ' + ", ".join(f'<a href="../country/{c}/">{e(jur.get(c, {}).get("name", c))}</a>' for c in fallback)
                  + '. These pages show an outline of the country instead.</p>')
     if brows:
-        H.append('<h2 class="credits-h">International and regional organisations</h2>' + table_("Organisation", brows))
+        H.append('<h2 class="credits-h" id="organisations">International and regional organisations</h2>' + table_("Organisation", brows))
+    if prows:
+        H.append('<h2 class="credits-h" id="pages">Page banners</h2>' + table_("Page", prows))
     H.append('</main>' + footer(D, "../") + '</body></html>')
     return "".join(H)
 
@@ -859,11 +865,11 @@ def write_all(D, recs, out, flags, mirror=False):
         c108_pending = set()
     ctx = {"jur": jur, "inherited": inherited, "members": members, "cets": cets, "eu_cets": eu_cets, "eu_cets_status": eu_cets_status, "c108": c108, "c108_pending": c108_pending, "oecd": oecd,
            "orgs": {o["id"]: o for o in D["organizations"]}, "srcs": {s["id"]: s for s in D["sources"]},
-           "today": D["meta"].get("build_date") or dt.date.today().isoformat(), "photos": load_photos(),
+           "today": D["meta"].get("build_date") or dt.date.today().isoformat(), "photos": load_photos(), "page_photos": load_photos(("pages",)),
            "explore_overrides": {k: v for k, v in json.loads((ROOT / "data/explore_overrides.json").read_text(encoding="utf-8")).items() if not k.startswith("_")} if (ROOT / "data/explore_overrides.json").exists() else {},
            "n_inst": collections.Counter(i["jurisdiction_id"] for i in D["instruments"]), "body_order": body_order(jur)}
     (out / "assets").mkdir(parents=True, exist_ok=True)
-    for f in () if mirror else ("country.css", "country.js", "analysis.css", "analysis.js", "timeline.js", "search.js", "global.js"):
+    for f in () if mirror else ("country.css", "country.js", "analysis.css", "analysis.js", "timeline.js", "search.js", "global.js", "maps.js"):
         (out / "assets" / f).write_text((ROOT / "site" / f).read_text(encoding="utf-8"), encoding="utf-8")
     # photos (site/img) are copied as they are; never hotlinked
     if (ROOT / "site/img").is_dir() and not mirror:
