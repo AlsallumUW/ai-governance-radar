@@ -4352,7 +4352,8 @@
     "no_material_found_note": "Federal laws and decrees, the federal government, ministries, national standards, regulators and the main regions of the Russian Federation were searched. No qualifying AI-governance document was found for procurement, readiness indices or international agreements; the sandbox category covers experimental legal regimes. Many official sites, including several ministries, regulators, the State Duma bill database and some regional portals, were unavailable, so some documents are recorded from catalogue entries only or listed as leads, and some regions remain to be checked.",
     "discovery_result_count": 8,
     "focused_result_count": 9,
-    "technical_note": "Coverage note (original): Technical review notes: Backfill run 2026-10-11 in four parts (U1 federal law and decrees; U2 federal government, ministries and national standards; U3 regulators; U4 top regions only, 30-minute cap per PROTOCOL §6). RUS had no earlier records. Each document was tried at most twice (curl --max-time 60, then WebFetch); if both failed the record was marked located-only or held as a lead. Reachable official hosts: kremlin.ru (consolidated acts), publication.pravo.gov.ru (search API; many PDFs are scans without a text layer, read as page images), government.ru, cbr.ru, mos.ru (documents API), protect.gost.ru (Rosstandart catalogue). Blocked by both methods: digital.gov.ru, economy.gov.ru, ac.gov.ru, rkn.gov.ru, rospatent.gov.ru, fas.gov.ru, cikrf.ru, fstec.ru, edu.gov.ru, minobrnauki, minpromtorg, mil.ru, rst.gov.ru, sozd.duma.gov.ru (bill statuses come from news-based discovery only), pravo.gov.ru, Tatarstan and Saint Petersburg portals. Located-only (12): national AI standards (GOST R and PNST) read from catalogue records only (12 of 119 AI standards on the portal recorded; sector series not itemised). Overlaps resolved: Order 2129-r and Resolution 861 (U1/U2), Resolution 1684 and Roszdravnadzor Orders 4472/123 (U2/U3) recorded once; duplicate world events dropped. Future-dated event (243-FZ main provisions from 2027-03-01) not logged; the date is in the record. U4: Moscow partial (only Resolution 2662-PP readable; acts implementing 123-FZ not found on mos.ru), Tatarstan and Saint Petersburg leads only, Nizhny Novgorod and Novosibirsk not reached. sandbox findings are the experimental legal regimes. procurement: no material found. index-readiness: no material found. international: no material found.\n\nLead cleanup 2026-10-19 (Cowork audit, approved): deleted lead 'Ministry of Health Order No. 181n of 11 April 2025 on technical and operational documentation of medical devices (report', same document as an existing record."
+    "technical_note": "Coverage note (original): Technical review notes: Backfill run 2026-10-11 in four parts (U1 federal law and decrees; U2 federal government, ministries and national standards; U3 regulators; U4 top regions only, 30-minute cap per PROTOCOL §6). RUS had no earlier records. Each document was tried at most twice (curl --max-time 60, then WebFetch); if both failed the record was marked located-only or held as a lead. Reachable official hosts: kremlin.ru (consolidated acts), publication.pravo.gov.ru (search API; many PDFs are scans without a text layer, read as page images), government.ru, cbr.ru, mos.ru (documents API), protect.gost.ru (Rosstandart catalogue). Blocked by both methods: digital.gov.ru, economy.gov.ru, ac.gov.ru, rkn.gov.ru, rospatent.gov.ru, fas.gov.ru, cikrf.ru, fstec.ru, edu.gov.ru, minobrnauki, minpromtorg, mil.ru, rst.gov.ru, sozd.duma.gov.ru (bill statuses come from news-based discovery only), pravo.gov.ru, Tatarstan and Saint Petersburg portals. Located-only (12): national AI standards (GOST R and PNST) read from catalogue records only (12 of 119 AI standards on the portal recorded; sector series not itemised). Overlaps resolved: Order 2129-r and Resolution 861 (U1/U2), Resolution 1684 and Roszdravnadzor Orders 4472/123 (U2/U3) recorded once; duplicate world events dropped. Future-dated event (243-FZ main provisions from 2027-03-01) not logged; the date is in the record. U4: Moscow partial (only Resolution 2662-PP readable; acts implementing 123-FZ not found on mos.ru), Tatarstan and Saint Petersburg leads only, Nizhny Novgorod and Novosibirsk not reached. sandbox findings are the experimental legal regimes. procurement: no material found. index-readiness: no material found. international: no material found.\n\nLead cleanup 2026-10-19 (Cowork audit, approved): deleted lead 'Ministry of Health Order No. 181n of 11 April 2025 on technical and operational documentation of medical devices (report', same document as an existing record. Weekly change check 2026-10-22: publication.pravo.gov.ru API (PageSize max 30) searched for AI terms from 1 Sept 2026; government.ru and kremlin.ru loaded; edu.gov.ru still refuses connections. No new federal AI-specific instrument found; the Ministry of Education school-AI guidance lead remains unread.",
+    "last_sweep": "2026-10-22"
   },
   "changes": [
     {
@@ -6246,6 +6247,38 @@
       "issuing_authority": "Government of Saint Petersburg",
       "note": "Known from news only; no official act located; gov.spb.ru unreachable by curl.",
       "found": "2026-10-11"
+    },
+    {
+      "title": "Приказ Министерства здравоохранения Чеченской Республики от 30.09.2026 № 199 «Об утверждении Политики использования технологий искусственного интеллекта в Министерстве здравоохранения Чеченской Республики и подведомственных ему медицинских организациях»",
+      "english_title": "Order of the Ministry of Health of the Chechen Republic No. 199 of 30 September 2026 approving its policy on the use of AI technologies",
+      "issuing_authority": "Ministry of Health of the Chechen Republic",
+      "note": "Published on publication.pravo.gov.ru on 2 October 2026 (No. 2001202610020002). A regional ministry's policy for its own organisations: held as a lead under the single-institution and subnational scope rules (outside the top-region subnational pass).",
+      "found": "2026-10-22"
+    },
+    {
+      "title": "Постановления Правительства РФ от 26.09.2026 № 1247 (роверы) и от 30.09.2026 № 1259 (высокоавтоматизированная специальная аэропортовая техника) об экспериментальных правовых режимах",
+      "english_title": "Government Resolutions No. 1247 (26 Sept 2026, rovers) and No. 1259 (30 Sept 2026, highly automated airport special equipment) establishing experimental legal regimes",
+      "issuing_authority": "Government of the Russian Federation",
+      "note": "Both are published (pravo.gov.ru Nos. 0001202609280030 and 0001202609300053; government.ru/docs/all/166503 and 166480). The programme text lists neurotechnologies and AI (computer vision, decision support) among the technologies applied, the same boilerplate as recorded HAV regimes, but they regulate rovers and airport equipment, not AI. Needs a scope decision; the same applies to unrecorded earlier regimes (Nos. 300, 418, 758 of 2026 and 1706 of 2025).",
+      "found": "2026-10-22"
+    },
+    {
+      "title": "Приказ Министерства здравоохранения Чеченской Республики от 30.09.2026 № 199",
+      "url": null,
+      "note": "Not re-checked. Scope judgement agreed (regional ministry policy for its own organisations; Chechnya outside top-region pass).",
+      "found": "2026-10-22"
+    },
+    {
+      "title": "Постановления Правительства РФ от 26.09.2026 № 1247 и от 30.09.2026 № 1259 об экспериментальных правовых режимах",
+      "url": null,
+      "note": "See answer (c): 1259 in force 08.10.2026; AI appears only in the generic list of applied technologies, no AI-specific rules. Keep as lead pending a consistent owner decision on all 258-FZ regimes listing AI.",
+      "found": "2026-10-22"
+    },
+    {
+      "title": "2026 federal departmental acts returned by an official-gazette search for 'искусственного интеллекта' (relevance unverified)",
+      "url": "http://publication.pravo.gov.ru/document/0001202604140010",
+      "note": "publication.pravo.gov.ru and government.ru could not be read this run (https-to-http redirect loop). Gazette search listed: Mintsifry Order No. 270 of 31.03.2026 (0001202604140010); Minprosveshcheniya Order No. 598 of 28.08.2026 (0001202609290011); Minobrnauki Order No. 272 of 04.05.2026 (0001202607280013); Mintrud Order No. 276n of 29.06.2026 (0001202607300004); Minjust Order No. 188 of 29.06.2026 (0001202607030003); Tatarstan Rais Decree No. 250 of 01.04.2026 (1600202604030001); Altai Republic education order No. P-06-01/618 of 10.08.2026 (0401202608120009). One hit (Roskomnadzor No. 122 of 05.05.2026) proved unrelated, so each needs reading before any add. Also government.ru news 58054 on a 'single system of interaction of authorities on AI' and Government Resolution No. 322 of 27.03.2026 (government.ru/docs/all/163959) - unread.",
+      "found": "2026-10-22"
     }
   ]
 }

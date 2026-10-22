@@ -1019,6 +1019,55 @@
       "document_access_type": "official_publication_or_full_text_page",
       "source_id": "s-dc0ed45cfe29",
       "evidence_reference": "curl (browser user agent) of the AFSA news page and the linked report PDF (aifc.kz, the AIFC's own site); report read with pdftotext. Status note: Publication date source (date audit 2026-10-13): Report cover: 'Report on the application of generative AI in financial services in AIFC — December 2025' (AFSA news page itself shows no date)."
+    },
+    {
+      "id": "i-b67bacfa88d1",
+      "official_title": "Приказ Заместителя Премьер-Министра – Министра искусственного интеллекта и цифрового развития Республики Казахстан от 26 февраля 2026 года № 102/НҚ «О внесении изменений и дополнений в приказ Министра информации и коммуникаций Республики Казахстан от 13 июня 2018 года № 263 «Об утверждении Правил проведения аудита информационных систем»»",
+      "english_title": "Order No. 102/NK of 26 February 2026 amending the Rules for auditing information systems (adds AI-system audit requirements)",
+      "issuing_authority": "Ministry of Artificial Intelligence and Digital Development",
+      "authority_type": "ministry",
+      "categories": [
+        "binding-law",
+        "risk-assurance"
+      ],
+      "legal_status": "binding_regulation",
+      "lifecycle": "repealed",
+      "publication_date": "2026-02-26",
+      "current_status": "Registered with the Ministry of Justice on 27 February 2026 (No. 38058); entered the electronic Reference Control Bank of legal acts on 4 March 2026; in force ten calendar days after first official publication (art. 3; effective date computed from the 4 March 2026 bank date). Repealed: Order No. 432/NK of 23 July 2026 (registered 27 July 2026, No. 39408) approves new Rules for auditing the quality of digital objects and repeals both the 2018 audit rules and this amending order; the new rules do not themselves mention AI. The Adilet footnote gives the repeal as taking effect ten days after the 432/NK order's first official publication (bank date 30 July 2026).",
+      "summary": "Amended the 2018 rules for auditing information systems so that audits of artificial intelligence systems also assess the quality and lawfulness of the data libraries used to train AI models and whether an AI system has functions prohibited under Article 17(3) of the AI Law. Bound auditors and owners of audited systems under the AI Law; replaced in July 2026 by the general rules for auditing the quality of digital objects.",
+      "ai_governance_relevance": "",
+      "source_url": "https://old.adilet.zan.kz/rus/docs/V2600038058",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://adilet.zan.kz/rus/docs/V2600038058",
+      "sectors": [],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-77ab314f74b6",
+      "publisher_name": "Ministry of Artificial Intelligence and Digital Development of the Republic of Kazakhstan",
+      "jurisdiction_id": "KAZ",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "binding-law",
+      "subcategory": null,
+      "effective_date": "2026-03-14",
+      "last_amended_date": null,
+      "scope": "Kazakhstan (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "ru",
+      "verification_date": "2026-10-22",
+      "first_recorded": "2026-10-22",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-c7036501024a",
+      "evidence_reference": "curl (browser user agent, --max-time 60) of old.adilet.zan.kz: full Russian text and 'Информация' page read on 2026-10-22; repealing order V2600039408 read."
     }
   ],
   "organizations": [
@@ -1718,9 +1767,25 @@
     "no_material_found_note": "National sources in Kazakhstan were searched, including the national legal information system, presidential and government acts, the Ministry of AI and Digital Development, other ministries and regulators. No qualifying material was found for procurement, cyber-security, drafts, international instruments or historical documents. Not yet verified from the official text: the draft acts portal and the parliament and presidential websites, which were unavailable, other ministries' own document lists, and the exact effective dates of the AI Law and the Digital Code.",
     "discovery_result_count": 13,
     "focused_result_count": 10,
-    "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. New adilet.zan.kz front end JavaScript-only and its API needs a login (laws read on the official old.adilet.zan.kz edition; source_url old.adilet, official_webpage_url new adilet). legalacts.egov.kz JavaScript-only; parlam.kz and akorda.kz no connection; zan.gov.kz TLS failure. ~1,600 gov.kz document titles of the AI ministry scanned via its public content API. AI Law and Digital Code effective dates not printed. Kazakhstan is not a party to Convention 108. Units covered: Law: Adilet (Ministry of Justice legal information system) searched through its server-rendered edition (full-text 'искусственного интеллекта', 1,651 hits; first 60 reviewed; 'Цифровой кодекс'). Recorded: AI Law 230-VIII, companion law 231-VIII, Personal Data Law (Art. 19-1 automated decisions), Digital Code 255-VIII (Art. 43 algorithmic systems), Alatau City constitutional law (Art. 54 AI experimental regimes). The new Constitution (referendum 15 March 2026) has no AI provision. No pending AI bill found; legalacts.egov.kz (draft acts portal) not searched (JavaScript-only).; Government: Presidential decrees (AI Development Council 2025; Digital Qazaqstan strategy 2026), Government resolutions (AI Concept 2024-2029; national AI platform operator; Digital Qazaqstan action plan) recorded. Year of Digitalisation and AI 2026 decree and the commission for it seen, not recorded (no AI governance content). No national AI procurement rules or AI ethics code found.; Ministries: Ministry of AI and Digital Development: all ~1,600 document records on gov.kz scanned by title; AI Law implementing orders recorded (criteria, documentation list, trusted high-risk lists, machine-readable forms, platform interaction, computing access, Alem GPT pilot). Ministry of Enlightenment AI standard for schools recorded. Other ministries (health, justice, defence, finance, labour, interior) only covered via Adilet full-text search; nothing AI-specific beyond professional standards and pilot automation orders.; Regulators: Personal-data protection is administered by the Ministry (no separate DPA guidance on AI found; its 2025-2026 personal-data security recommendations are generic). Gosstandart: ST RK ISO/IEC 5339-2025 recorded. AFSA (AIFC): generative AI survey report recorded; no AI rules. National Bank: regulatory sandbox exists but is not AI-specific; no AI guidance found. Information security committee: no AI-specific guidance found. Convention 108: no ratification or accession act found in an Adilet full-text search (convention108 set to null).. Not reached: legalacts.egov.kz draft acts portal (JavaScript-only) - drafts and consultations not checked there; parlam.kz (Mazhilis/Senate) - not reachable by curl from this environment; Ministry-by-ministry gov.kz document scans other than the Ministry of AI and Digital Development; Kazakh-language queries beyond Adilet's bilingual records. Could not verify: The new adilet.zan.kz front end and its API (auth required) could not be read; all law texts were read on old.adilet.zan.kz, the same Ministry of Justice system; zan.gov.kz (Reference Control Bank) failed TLS verification; akorda.kz and parlam.kz not reachable by curl. procurement, cyber-security, drafts, international, historical: no material found.\nWording note 2026-10-19 (narrative.review_notes): The draft-acts portal and the presidential and parliament websites could not be reached, so some recent decrees and drafts are listed as leads."
+    "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. New adilet.zan.kz front end JavaScript-only and its API needs a login (laws read on the official old.adilet.zan.kz edition; source_url old.adilet, official_webpage_url new adilet). legalacts.egov.kz JavaScript-only; parlam.kz and akorda.kz no connection; zan.gov.kz TLS failure. ~1,600 gov.kz document titles of the AI ministry scanned via its public content API. AI Law and Digital Code effective dates not printed. Kazakhstan is not a party to Convention 108. Units covered: Law: Adilet (Ministry of Justice legal information system) searched through its server-rendered edition (full-text 'искусственного интеллекта', 1,651 hits; first 60 reviewed; 'Цифровой кодекс'). Recorded: AI Law 230-VIII, companion law 231-VIII, Personal Data Law (Art. 19-1 automated decisions), Digital Code 255-VIII (Art. 43 algorithmic systems), Alatau City constitutional law (Art. 54 AI experimental regimes). The new Constitution (referendum 15 March 2026) has no AI provision. No pending AI bill found; legalacts.egov.kz (draft acts portal) not searched (JavaScript-only).; Government: Presidential decrees (AI Development Council 2025; Digital Qazaqstan strategy 2026), Government resolutions (AI Concept 2024-2029; national AI platform operator; Digital Qazaqstan action plan) recorded. Year of Digitalisation and AI 2026 decree and the commission for it seen, not recorded (no AI governance content). No national AI procurement rules or AI ethics code found.; Ministries: Ministry of AI and Digital Development: all ~1,600 document records on gov.kz scanned by title; AI Law implementing orders recorded (criteria, documentation list, trusted high-risk lists, machine-readable forms, platform interaction, computing access, Alem GPT pilot). Ministry of Enlightenment AI standard for schools recorded. Other ministries (health, justice, defence, finance, labour, interior) only covered via Adilet full-text search; nothing AI-specific beyond professional standards and pilot automation orders.; Regulators: Personal-data protection is administered by the Ministry (no separate DPA guidance on AI found; its 2025-2026 personal-data security recommendations are generic). Gosstandart: ST RK ISO/IEC 5339-2025 recorded. AFSA (AIFC): generative AI survey report recorded; no AI rules. National Bank: regulatory sandbox exists but is not AI-specific; no AI guidance found. Information security committee: no AI-specific guidance found. Convention 108: no ratification or accession act found in an Adilet full-text search (convention108 set to null).. Not reached: legalacts.egov.kz draft acts portal (JavaScript-only) - drafts and consultations not checked there; parlam.kz (Mazhilis/Senate) - not reachable by curl from this environment; Ministry-by-ministry gov.kz document scans other than the Ministry of AI and Digital Development; Kazakh-language queries beyond Adilet's bilingual records. Could not verify: The new adilet.zan.kz front end and its API (auth required) could not be read; all law texts were read on old.adilet.zan.kz, the same Ministry of Justice system; zan.gov.kz (Reference Control Bank) failed TLS verification; akorda.kz and parlam.kz not reachable by curl. procurement, cyber-security, drafts, international, historical: no material found.\nWording note 2026-10-19 (narrative.review_notes): The draft-acts portal and the presidential and parliament websites could not be reached, so some recent decrees and drafts are listed as leads.",
+    "last_sweep": "2026-10-22"
   },
   "changes": [
+    {
+      "id": "c-18290012721a",
+      "date": "2026-10-22",
+      "recorded": "2026-10-22",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "KAZ",
+      "instrument_id": "i-b67bacfa88d1",
+      "title": "Order No. 102/NK of 26 February 2026 amending the Rules for auditing information systems (adds AI-system audit requirements)",
+      "detail": "Added to the radar (published 2026-02-26).",
+      "from": null,
+      "to": null,
+      "source_url": "https://old.adilet.zan.kz/rus/docs/V2600038058",
+      "needs_review": false
+    },
     {
       "id": "c-58344e6b3112",
       "date": "2026-10-12",
@@ -2247,6 +2312,21 @@
       "needs_review": false
     },
     {
+      "id": "c-4358f3e5f1be",
+      "date": "2026-02-26",
+      "recorded": "2026-10-22",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "KAZ",
+      "instrument_id": "i-b67bacfa88d1",
+      "title": "Order No. 102/NK of 26 February 2026 amending the Rules for auditing information systems (adds AI-system audit requirements)",
+      "detail": "Published by Ministry of Artificial Intelligence and Digital Development.",
+      "from": null,
+      "to": null,
+      "source_url": "https://old.adilet.zan.kz/rus/docs/V2600038058",
+      "needs_review": false
+    },
+    {
       "id": "c-fc5cebe202a8",
       "date": "2026-02-25",
       "recorded": "2026-10-21",
@@ -2430,7 +2510,7 @@
       "title": "Закон Республики Казахстан от 24 июня 2026 года № 326-VIII (amending the Law on Artificial Intelligence, arts 1, 13, 17, 20, 28)",
       "english_title": "Law No. 326-VIII of 24 June 2026 amending, among others, the Law on Artificial Intelligence",
       "issuing_authority": "Parliament of the Republic of Kazakhstan",
-      "note": "Named in Adilet footnotes to the AI Law; title not read. Check whether it warrants its own record (amendments to AI system classification and audit).",
+      "note": "Read 2026-10-22 on Adilet (Z2600000326): a general digitalisation, personal-data and transport omnibus law; its amendments to the AI Law (arts 1, 13, 17, 20, 28) only replace 'informatisation object' / 'information systems' wording with 'digital object' / 'digital systems' and similar terms, so it is not recorded as an AI instrument. Enters into force 60 days after first official publication (art. 2), with later dates for some provisions; publication date not read.",
       "found": "2026-10-12"
     }
   ]
