@@ -10,7 +10,7 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": "The Philippines has no AI-specific law. AI governance runs through the trade department's national AI roadmaps (2021 and 2024), the Data Privacy Act of 2012 with the privacy commission's December 2024 advisory on applying it to AI systems, a joint circular on AI in government (draft 2024, reported final 2026), the education department's 2026 AI guidelines for basic education, and the central bank's 2026 AI governance principles for financial institutions. Many AI and deepfake bills are pending in Congress.",
+    "summary": "The Philippines has no AI-specific law. AI governance runs through the trade department's national AI roadmaps (2021 and 2024), the Data Privacy Act of 2012 with the privacy commission's December 2024 advisory on applying it to AI systems, a joint circular on AI in government (draft 2024, reported final 2026), the education department's 2026 AI guidelines for basic education, the Supreme Court's 2026 framework on AI use in the judiciary, and the central bank's 2026 AI governance principles and frontier-AI cyber-risk recommendations for financial institutions. Many AI and deepfake bills are pending in Congress.",
     "lead_institutions": [
       "Department of Trade and Industry",
       "Department of Information and Communications Technology",
@@ -295,6 +295,114 @@
       "document_access_type": "original_government_document",
       "source_id": "s-d1604b6d6eb4",
       "evidence_reference": "local-retry-2026-10-18: listed on privacy.gov.ph/advisories/ (opened via curl); 5-page signed PDF downloaded via headless browser (curl connection reset) and read with pdfplumber; advisory number, 'DATE : 19 December 2024', subject and signatories read from the document. The earlier 2024/12 upload path now returns 404; the commission's listing links the 2025/02 path."
+    },
+    {
+      "id": "i-79ee0adedc67",
+      "official_title": "A.M. No. 25-11-28-SC: Governance Framework on the Use of Human-Centered Augmented Intelligence in the Judiciary",
+      "english_title": "A.M. No. 25-11-28-SC: Governance Framework on the Use of Human-Centered Augmented Intelligence in the Judiciary",
+      "issuing_authority": "Supreme Court of the Philippines",
+      "authority_type": "judiciary",
+      "categories": [
+        "sectoral",
+        "public-sector",
+        "ethics",
+        "transparency",
+        "generative-ai"
+      ],
+      "legal_status": "administrative_policy_mandatory_in_scope",
+      "lifecycle": "in_force",
+      "publication_date": "2026-02-18",
+      "current_status": "Adopted by the Supreme Court En Banc by resolution of 18 February 2026; announced on 19 March 2026.",
+      "summary": "Framework adopted by the Supreme Court for the use of AI across the judiciary. It applies to justices, judges, court staff, court users and vendors. No AI tool may be used in court work without authorisation by the Court En Banc; use of AI must be disclosed; AI may assist but cannot be the sole basis of a judicial decision; tools must be risk-assessed before use; and a permanent Committee on Human-Centered Augmented Intelligence oversees the framework.",
+      "ai_governance_relevance": "Binding rules for AI use by the courts, with disclosure duties for lawyers and litigants.",
+      "source_url": "https://sc.judiciary.gov.ph/sc-adopts-framework-for-judiciarys-use-of-artificial-intelligence/",
+      "official_pdf_url": "https://sc.judiciary.gov.ph/wp-content/uploads/2026/03/AM-No.-25-11-28-SC-1.pdf",
+      "official_webpage_url": "https://sc.judiciary.gov.ph/sc-adopts-framework-for-judiciarys-use-of-artificial-intelligence/",
+      "sectors": [
+        "justice"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-3f83f93c8528",
+      "publisher_name": "Supreme Court of the Philippines",
+      "jurisdiction_id": "PHL",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "sectoral",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Philippines (national): the judiciary",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "en",
+      "verification_date": "2026-10-22",
+      "first_recorded": "2026-10-22",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-0dc1544146ac",
+      "evidence_reference": "browser-check-2026-10-22: Supreme Court news page and the A.M. PDF opened on sc.judiciary.gov.ph in a desktop browser and read."
+    },
+    {
+      "id": "i-1f67e632b2af",
+      "official_title": "Memorandum No. M-2026-034: Recommendations for Managing Emerging Risks Arising from Frontier Artificial Intelligence Systems",
+      "english_title": "BSP Memorandum No. M-2026-034: Recommendations for Managing Emerging Risks Arising from Frontier Artificial Intelligence Systems",
+      "issuing_authority": "Bangko Sentral ng Pilipinas",
+      "authority_type": "central_bank",
+      "categories": [
+        "sectoral",
+        "cyber-security",
+        "risk-assurance"
+      ],
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2026-07-06",
+      "current_status": "Issued 6 July 2026 by the Deputy Governor, Financial Supervision Sector, \"for information and guidance\".",
+      "summary": "Memorandum to all BSP-supervised institutions warning that frontier AI systems able to find software vulnerabilities and run multi-stage cyberattacks may be used against the financial system. It recommends six measures: better visibility of the attack surface, stronger basic security controls, reducing internet exposure (zero trust, faster patching, replacing end-of-life systems), phishing-resistant multi-factor authentication for privileged access, AI-enabled defences, and updated business continuity plans. It also recommends that each institution adopt its own AI governance framework following Memorandum M-2026-031.",
+      "ai_governance_relevance": "Supervisory guidance on cyber risks from frontier AI for banks and other financial institutions.",
+      "source_url": "https://www.bsp.gov.ph/Regulations/Issuances/2026/M-2026-034.pdf",
+      "official_pdf_url": "https://www.bsp.gov.ph/Regulations/Issuances/2026/M-2026-034.pdf",
+      "official_webpage_url": "https://www.bsp.gov.ph/SitePages/Regulations/RegulationDisp.aspx?ItemId=5279",
+      "sectors": [
+        "finance"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-8f5a91811b30",
+      "publisher_name": "Bangko Sentral ng Pilipinas",
+      "jurisdiction_id": "PHL",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "sectoral",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Philippines (national): BSP-supervised institutions",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-f98199388ea8"
+      ],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "en",
+      "verification_date": "2026-10-22",
+      "first_recorded": "2026-10-22",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-9aefd1604364",
+      "evidence_reference": "browser-check-2026-10-22: BSP issuances list and issuance page (date issued 6 July 2026) opened in a desktop browser; signed PDF read."
     }
   ],
   "organizations": [
@@ -346,6 +454,16 @@
       "ai_governance_role": "Data protection authority created by the Data Privacy Act of 2012; issued NPC Advisory No. 2024-04 on applying the Act to AI systems processing personal data.",
       "source_url": "https://privacy.gov.ph/",
       "authority_type": "regulator",
+      "government_level": "national"
+    },
+    {
+      "id": "o-3f83f93c8528",
+      "jurisdiction_id": "PHL",
+      "name": "Supreme Court of the Philippines",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Highest court and administrator of the judiciary; adopted the 2026 governance framework for the judiciary's use of AI (A.M. No. 25-11-28-SC).",
+      "source_url": "https://sc.judiciary.gov.ph/",
+      "authority_type": "judiciary",
       "government_level": "national"
     }
   ],
@@ -492,6 +610,64 @@
       "document_language": "en",
       "error": null,
       "content_type": "application/pdf"
+    },
+    {
+      "id": "s-0dc1544146ac",
+      "url": "https://sc.judiciary.gov.ph/sc-adopts-framework-for-judiciarys-use-of-artificial-intelligence/",
+      "jurisdiction_ids": [
+        "PHL"
+      ],
+      "source_institutions": [
+        "Supreme Court of the Philippines"
+      ],
+      "instrument_ids": [
+        "i-79ee0adedc67"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "public-sector",
+        "ethics",
+        "transparency",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-22",
+      "checked_date": "2026-10-22",
+      "check_method": "browser-check-2026-10-22: Supreme Court news page and the A.M. PDF opened on sc.judiciary.gov.ph in a desktop browser and read.",
+      "http_status": 200,
+      "final_url": "https://sc.judiciary.gov.ph/sc-adopts-framework-for-judiciarys-use-of-artificial-intelligence/",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-9aefd1604364",
+      "url": "https://www.bsp.gov.ph/Regulations/Issuances/2026/M-2026-034.pdf",
+      "jurisdiction_ids": [
+        "PHL"
+      ],
+      "source_institutions": [
+        "Bangko Sentral ng Pilipinas"
+      ],
+      "instrument_ids": [
+        "i-1f67e632b2af"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "cyber-security",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-22",
+      "checked_date": "2026-10-22",
+      "check_method": "browser-check-2026-10-22: BSP issuances list and issuance page (date issued 6 July 2026) opened in a desktop browser; signed PDF read.",
+      "http_status": 200,
+      "final_url": "https://www.bsp.gov.ph/Regulations/Issuances/2026/M-2026-034.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
     }
   ],
   "regional_applicability": [],
@@ -593,6 +769,36 @@
     "last_sweep": "2026-10-22"
   },
   "changes": [
+    {
+      "id": "c-eb8d9a776dd2",
+      "date": "2026-10-22",
+      "recorded": "2026-10-22",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "PHL",
+      "instrument_id": "i-79ee0adedc67",
+      "title": "A.M. No. 25-11-28-SC: Governance Framework on the Use of Human-Centered Augmented Intelligence in the Judiciary",
+      "detail": "Added to the radar (published 2026-02-18).",
+      "from": null,
+      "to": null,
+      "source_url": "https://sc.judiciary.gov.ph/sc-adopts-framework-for-judiciarys-use-of-artificial-intelligence/",
+      "needs_review": false
+    },
+    {
+      "id": "c-2aef9b8b1172",
+      "date": "2026-10-22",
+      "recorded": "2026-10-22",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "PHL",
+      "instrument_id": "i-1f67e632b2af",
+      "title": "BSP Memorandum No. M-2026-034: Recommendations for Managing Emerging Risks Arising from Frontier Artificial Intelligence Systems",
+      "detail": "Added to the radar (published 2026-07-06).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.bsp.gov.ph/Regulations/Issuances/2026/M-2026-034.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-6afddc37911d",
       "date": "2026-10-19",
@@ -744,6 +950,21 @@
       "needs_review": false
     },
     {
+      "id": "c-1f2448294e00",
+      "date": "2026-07-06",
+      "recorded": "2026-10-22",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "PHL",
+      "instrument_id": "i-1f67e632b2af",
+      "title": "BSP Memorandum No. M-2026-034: Recommendations for Managing Emerging Risks Arising from Frontier Artificial Intelligence Systems",
+      "detail": "Published by Bangko Sentral ng Pilipinas.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.bsp.gov.ph/Regulations/Issuances/2026/M-2026-034.pdf",
+      "needs_review": false
+    },
+    {
       "id": "c-33d22d6775a1",
       "date": "2026-06-24",
       "recorded": "2026-10-12",
@@ -771,6 +992,21 @@
       "from": null,
       "to": null,
       "source_url": "https://www.deped.gov.ph/2026/02/20/february-20-2026-do-003-s-2026-foundational-guidelines-on-artificial-intelligence-ai-in-basic-education/",
+      "needs_review": false
+    },
+    {
+      "id": "c-92bfdb2f951e",
+      "date": "2026-02-18",
+      "recorded": "2026-10-22",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "PHL",
+      "instrument_id": "i-79ee0adedc67",
+      "title": "A.M. No. 25-11-28-SC: Governance Framework on the Use of Human-Centered Augmented Intelligence in the Judiciary",
+      "detail": "Published by Supreme Court of the Philippines.",
+      "from": null,
+      "to": null,
+      "source_url": "https://sc.judiciary.gov.ph/sc-adopts-framework-for-judiciarys-use-of-artificial-intelligence/",
       "needs_review": false
     },
     {
@@ -877,12 +1113,6 @@
       "found": "2026-10-12"
     },
     {
-      "title": "A.M. No. 25-11-28-SC: Governance Framework on the Use of Human-Centered Augmented Intelligence in the Judiciary (Supreme Court)",
-      "url": "https://sc.judiciary.gov.ph/wp-content/uploads/2026/03/AM-No.-25-11-28-SC.pdf",
-      "note": "Supreme Court page 'SC Adopts Framework for Judiciary's Use of Artificial Intelligence' and the A.M. PDF (uploads/2026/03) appear on sc.judiciary.gov.ph; also e-Library entry https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/11/101138 and possibly OCA Circular No. 47-2026 (https://oca.judiciary.gov.ph/wp-content/uploads/OCA-Circular-No.-47-2026.pdf). All judiciary hosts refused automated reading (robots), so date and text not verified. Likely administrative_policy_mandatory_in_scope (court AI rules) once read.",
-      "found": "2026-10-22"
-    },
-    {
       "title": "COMELEC Resolution No. 11064 (2024): guidelines on the use of social media, artificial intelligence and internet technology for election campaigning",
       "url": "https://comelec.gov.ph/index.html?r=References%2FComelecResolutions",
       "note": "Rules on AI/deepfake use and disclosure in campaigns for the 2025 elections; text found only on a non-official mirror (lawphil). COMELEC resolutions page failed to load; verify on comelec.gov.ph before adding (published 2024).",
@@ -898,12 +1128,6 @@
       "title": "CHED guidelines on responsible, human-centered AI use in higher education institutions (CHED Memorandum Order, 2026)",
       "url": "https://pia.gov.ph/news/luzon/ncr/ched-sets-guidelines-for-responsible-ai-use-in-higher-education/",
       "note": "PIA and PNA (https://www.pna.gov.ph/articles/1284624) report that CHED has now issued AI guidelines for HEIs, updating the existing 'planned' CHED lead. CMO number/date not confirmed; pia.gov.ph, pna.gov.ph and ched.gov.ph did not load.",
-      "found": "2026-10-22"
-    },
-    {
-      "title": "BSP Memorandum No. M-2026-034 (Financial Supervision Sector)",
-      "url": "https://www.bsp.gov.ph/Regulations/Issuances/2026/M-2026-034.pdf",
-      "note": "Returned for a search on AI memorandum circulars 2026; subject not verified (BSP host refuses automated reading). Check whether it relates to AI (e.g. follow-up to M-2026-031).",
       "found": "2026-10-22"
     },
     {
