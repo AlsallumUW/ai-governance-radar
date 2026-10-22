@@ -10,7 +10,7 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": "In 2025 Hungary replaced its 2020 innovation-led AI strategy with a renewed AI strategy for 2025-2030, appointed a Government Commissioner for AI and adopted a series of government resolutions requiring AI commissioners in every ministry, a public-administration AI strategy and a sandbox proposal. Act LXXV of 2025 and Government Decree 344/2025 implement the EU AI Act, naming the National Accreditation Authority as notifying authority, the minister for enterprise development as market surveillance authority and single point of contact, and creating a Hungarian AI Council. The data protection authority (NAIH) is the most active AI regulator, including a 2022 fine on a bank for AI emotion analysis of call recordings and a 2025 report on banks' AI systems.",
+    "summary": "In 2025 Hungary replaced its 2020 innovation-led AI strategy with a renewed AI strategy for 2025-2030, appointed a Government Commissioner for AI and adopted a series of government resolutions requiring AI commissioners in every ministry, a public-administration AI strategy and a sandbox proposal. Act LXXV of 2025 and Government Decree 344/2025 implement the EU AI Act, naming the National Accreditation Authority as notifying authority, the minister for enterprise development as market surveillance authority and single point of contact, and creating a Hungarian AI Council. The data protection authority (NAIH) is the most active AI regulator, including a 2022 fine on a bank for AI emotion analysis of call recordings and a 2025 report on banks' AI systems. The Hungarian AI Council adopted its first declaration in December 2025, and in April 2026 the Health Science Council set rules on AI use in research proposal review.",
     "lead_institutions": [
       "Government Commissioner for Artificial Intelligence",
       "Ministry for National Economy",
@@ -18,7 +18,7 @@
       "National Authority for Data Protection and Freedom of Information (NAIH)"
     ],
     "last_deep_review": "2026-10-12",
-    "review_notes": "This review was completed on 12 October 2026 and covers national law, government, ministries and regulators. All records were read on official sources; the AI Council's outputs and a sandbox decree were not yet published and are listed as leads."
+    "review_notes": "This review was completed on 12 October 2026 and covers national law, government, ministries and regulators. All records were read on official sources; the AI Council's outputs and a sandbox decree were not yet published and are listed as leads. A further browser check on 22 October 2026 added records from official sources."
   },
   "instruments": [
     {
@@ -743,6 +743,113 @@
       "document_access_type": "original_government_document",
       "source_id": "s-71875a263bce",
       "evidence_reference": "curl (browser user agent, --max-time 60): full decision PDF read (pdftotext); date \"Budapest, 2022. február 8.\""
+    },
+    {
+      "id": "i-931d8afca2eb",
+      "official_title": "Az ETT Elnökség állásfoglalása a mesterséges intelligencia (MI) alkalmazásáról",
+      "english_title": "Position statement of the Presidium of the Health Science Council (ETT) on the use of artificial intelligence (AI)",
+      "issuing_authority": "Health Science Council (ETT)",
+      "authority_type": "advisory_body",
+      "categories": [
+        "sectoral",
+        "generative-ai",
+        "ethics",
+        "data-privacy"
+      ],
+      "legal_status": "administrative_guideline",
+      "lifecycle": "published",
+      "publication_date": "2026-04-23",
+      "current_status": "Position statement of the ETT Presidium dated Budapest, 23 April 2026 (reference BM/12512/2026), published on the Council's website.",
+      "summary": "Sets the Health Science Council's rules on artificial intelligence in the review of health research proposals and reports. Reviewers may not enter any part of a proposal or report into an AI system unless the Council has approved it as a closed system, and may not use AI to summarise, evaluate or draft review opinions. AI may only polish the language or translation of a reviewer's own text, using tools that keep data closed, do not train on inputs and protect personal data. Applicants remain responsible for AI-assisted drafting, and responsibility for judgement stays with the person.",
+      "ai_governance_relevance": "Sets the Health Science Council's rules on artificial intelligence in the review of health research proposals and reports.",
+      "source_url": "https://ett.okfo.gov.hu/wp-content/uploads/2026/04/MI_alkalmazasa_20260423.pdf",
+      "official_pdf_url": "https://ett.okfo.gov.hu/wp-content/uploads/2026/04/MI_alkalmazasa_20260423.pdf",
+      "official_webpage_url": null,
+      "sectors": [
+        "health",
+        "research"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-c23675ba2b9b",
+      "publisher_name": "Health Science Council (ETT)",
+      "jurisdiction_id": "HUN",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "sectoral",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Hungary (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "hu",
+      "verification_date": "2026-10-22",
+      "first_recorded": "2026-10-22",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-69b3f61f92d1",
+      "evidence_reference": "wave3-2026-10-22: Read the full PDF on ett.okfo.gov.hu (Health Science Council site)."
+    },
+    {
+      "id": "i-bf48b60a667c",
+      "official_title": "Zárónyilatkozat a Magyar Mesterséges Intelligencia Tanács alakuló üléséről",
+      "english_title": "Closing declaration of the inaugural session of the Hungarian Artificial Intelligence Council",
+      "issuing_authority": "Hungarian Artificial Intelligence Council",
+      "authority_type": "advisory_body",
+      "categories": [
+        "government-governance",
+        "ethics",
+        "sandbox",
+        "international"
+      ],
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2025-12-15",
+      "current_status": "Adopted unanimously at the Council's inaugural session and signed by its chair, dated Budapest, 15 December 2025; the copy read is hosted by the Hungarian Central Statistical Office (KSH).",
+      "summary": "Sets out the positions of Hungary's statutory AI advisory council at its first meeting. The Council supports the EU AI Act's risk-based approach while warning against harm to competitiveness, welcomes the national enforcement structure and regulatory sandboxes, and asks that obligations follow the availability of EU guidance and standards. It calls for human-centred, transparent AI, proposes a Hungarian AI Ethics and Social Code, prioritises sovereign compute, government cloud and Hungarian-language models, supports AI literacy and SME-friendly procedures, and commits to annual reviews with a public progress report.",
+      "ai_governance_relevance": "Sets out the positions of Hungary's statutory AI advisory council at its first meeting.",
+      "source_url": "https://www.ksh.hu/docs/szolgaltatasok/sajtoszoba/sajto_2026/zaronyilatkozat_mmit.pdf",
+      "official_pdf_url": "https://www.ksh.hu/docs/szolgaltatasok/sajtoszoba/sajto_2026/zaronyilatkozat_mmit.pdf",
+      "official_webpage_url": null,
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-71612ed0fb48",
+      "publisher_name": "Hungarian Artificial Intelligence Council",
+      "jurisdiction_id": "HUN",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "government-governance",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Hungary (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "hu",
+      "verification_date": "2026-10-22",
+      "first_recorded": "2026-10-22",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-2949755b8f48",
+      "evidence_reference": "wave3-2026-10-22: Read the full PDF in the KSH (state statistics office) press-room document store; the Council has no separate site found."
     }
   ],
   "organizations": [
@@ -794,6 +901,26 @@
       "ai_governance_role": "Data protection authority (NAIH); supervises GDPR and the Info Act, issued the 2022 decision fining a bank for AI-based emotion analysis of call recordings and a 2025 report on banks' AI systems; member of the Hungarian AI Council.",
       "source_url": "https://naih.hu/",
       "authority_type": "regulator",
+      "government_level": "national"
+    },
+    {
+      "id": "o-c23675ba2b9b",
+      "jurisdiction_id": "HUN",
+      "name": "Health Science Council (ETT)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "National health research ethics and science council; set 2026 rules on AI use in research proposal review.",
+      "source_url": "https://ett.okfo.gov.hu/",
+      "authority_type": "advisory_body",
+      "government_level": "national"
+    },
+    {
+      "id": "o-71612ed0fb48",
+      "jurisdiction_id": "HUN",
+      "name": "Hungarian Artificial Intelligence Council",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Statutory AI advisory council; adopted its first declaration in December 2025.",
+      "source_url": "https://www.ksh.hu/",
+      "authority_type": "advisory_body",
       "government_level": "national"
     }
   ],
@@ -1179,6 +1306,64 @@
       "document_language": "hu",
       "error": null,
       "content_type": "application/pdf"
+    },
+    {
+      "id": "s-69b3f61f92d1",
+      "url": "https://ett.okfo.gov.hu/wp-content/uploads/2026/04/MI_alkalmazasa_20260423.pdf",
+      "jurisdiction_ids": [
+        "HUN"
+      ],
+      "source_institutions": [
+        "Health Science Council (ETT)"
+      ],
+      "instrument_ids": [
+        "i-931d8afca2eb"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "generative-ai",
+        "ethics",
+        "data-privacy"
+      ],
+      "date_reviewed": "2026-10-22",
+      "checked_date": "2026-10-22",
+      "check_method": "wave3-2026-10-22: Read the full PDF on ett.okfo.gov.hu (Health Science Council site).",
+      "http_status": 200,
+      "final_url": "https://ett.okfo.gov.hu/wp-content/uploads/2026/04/MI_alkalmazasa_20260423.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "hu",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-2949755b8f48",
+      "url": "https://www.ksh.hu/docs/szolgaltatasok/sajtoszoba/sajto_2026/zaronyilatkozat_mmit.pdf",
+      "jurisdiction_ids": [
+        "HUN"
+      ],
+      "source_institutions": [
+        "Hungarian Artificial Intelligence Council"
+      ],
+      "instrument_ids": [
+        "i-bf48b60a667c"
+      ],
+      "categories_reviewed": [
+        "government-governance",
+        "ethics",
+        "sandbox",
+        "international"
+      ],
+      "date_reviewed": "2026-10-22",
+      "checked_date": "2026-10-22",
+      "check_method": "wave3-2026-10-22: Read the full PDF in the KSH (state statistics office) press-room document store; the Council has no separate site found.",
+      "http_status": 200,
+      "final_url": "https://www.ksh.hu/docs/szolgaltatasok/sajtoszoba/sajto_2026/zaronyilatkozat_mmit.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "hu",
+      "error": null,
+      "content_type": "application/pdf"
     }
   ],
   "regional_applicability": [],
@@ -1266,6 +1451,36 @@
     "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. njt.hu returned empty replies; legislation read on the official mirror njt.jog.gov.hu. MNB site search script-rendered; NMHH, GVH, NKI only via web search; 2026 Magyar Közlöny issues and MSZT not searched. kormany.hu files the strategy under an archived ministry (possible 2026 reorganisation; status of the AI Commissioner not re-verified). Convention 108: Act VI of 1998, recorded on the COE file. Units covered: Law: njt.jog.gov.hu (njt.hu mirror returned empty replies): AI Act implementing Act LXXV of 2025 and Government Decree 344/2025 read in full; Infotv. (Act CXII of 2011) s. 6 automated decisions; Convention 108 promulgation act 1998:VI. No AI-specific deepfake offence or sandbox ministerial decree found; parliament bill T/12632 (became Act LXXV) seen only in search results.; Government: kormany.hu document library: 2025-2030 AI strategy and 2020-2030 strategy read; AI government resolutions 1028/2025, 1324/2025, 1369/2025, 1403-1406/2025 read on njt (adjacent 1398-1409/2025 scanned).; Ministries: Ministry-level tasks found only inside government resolutions (justice LegalAI, foreign affairs, interior/health and education, public administration); no stand-alone ministry AI guidance or the ordered public-administration AI strategy found published (leads).; Regulators: NAIH: reports list, recommendations list, decisions list and site search (2025 bank AI report and NAIH-85-3/2022 decision recorded; other AI items are EDPB news). MNB: no official AI document located (lead). NMHH, GVH, NKI (cyber): searched, nothing AI-specific found.. Not reached: NMHH, GVH and National Cyber Security Institute (NKI) own site searches (web search only); MNB publications list (client-side search could not be read); Magyar Közlöny 2026 issues for post-election (2026) AI decisions; Hungarian Standards Body (MSZT) ISO/IEC 42001 adoption; central procurement (DKÜ/KEF) AI guidance. Could not verify: njt.hu (primary NJT host) returned empty replies to curl; all legislation was read on the official mirror njt.jog.gov.hu; MNB AI thematic review (2023) and any MNB AI recommendation: not found on mnb.hu; Hungarian AI Council outputs and the AI sandbox ministerial decree: not found. procurement, cyber-security, transparency, standards, index-readiness, generative-ai, drafts, international: no material found."
   },
   "changes": [
+    {
+      "id": "c-7e06407c1fd3",
+      "date": "2026-10-22",
+      "recorded": "2026-10-22",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "HUN",
+      "instrument_id": "i-931d8afca2eb",
+      "title": "Position statement of the Presidium of the Health Science Council (ETT) on the use of artificial intelligence (AI)",
+      "detail": "Added to the radar (published 2026-04-23).",
+      "from": null,
+      "to": null,
+      "source_url": "https://ett.okfo.gov.hu/wp-content/uploads/2026/04/MI_alkalmazasa_20260423.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-b13549b3a5fe",
+      "date": "2026-10-22",
+      "recorded": "2026-10-22",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "HUN",
+      "instrument_id": "i-bf48b60a667c",
+      "title": "Closing declaration of the inaugural session of the Hungarian Artificial Intelligence Council",
+      "detail": "Added to the radar (published 2025-12-15).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.ksh.hu/docs/szolgaltatasok/sajtoszoba/sajto_2026/zaronyilatkozat_mmit.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-8e3f3933db5f",
       "date": "2026-10-12",
@@ -1522,6 +1737,21 @@
       "needs_review": false
     },
     {
+      "id": "c-1f00e2f65bf9",
+      "date": "2026-04-23",
+      "recorded": "2026-10-22",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "HUN",
+      "instrument_id": "i-931d8afca2eb",
+      "title": "Position statement of the Presidium of the Health Science Council (ETT) on the use of artificial intelligence (AI)",
+      "detail": "Published by Health Science Council (ETT).",
+      "from": null,
+      "to": null,
+      "source_url": "https://ett.okfo.gov.hu/wp-content/uploads/2026/04/MI_alkalmazasa_20260423.pdf",
+      "needs_review": false
+    },
+    {
       "id": "c-f0e6b7001d1f",
       "date": "2025-12-22",
       "recorded": "2026-10-21",
@@ -1534,6 +1764,21 @@
       "from": null,
       "to": null,
       "source_url": "https://naih.hu/adatvedelmi-jelentesek?download=1358:jelentes-magyarorszagi-bankok-mi-hasznalatarol",
+      "needs_review": false
+    },
+    {
+      "id": "c-7c62695c61f8",
+      "date": "2025-12-15",
+      "recorded": "2026-10-22",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "HUN",
+      "instrument_id": "i-bf48b60a667c",
+      "title": "Closing declaration of the inaugural session of the Hungarian Artificial Intelligence Council",
+      "detail": "Published by Hungarian Artificial Intelligence Council.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.ksh.hu/docs/szolgaltatasok/sajtoszoba/sajto_2026/zaronyilatkozat_mmit.pdf",
       "needs_review": false
     },
     {
@@ -1767,7 +2012,7 @@
       "title": "Hungarian AI Council (Magyar Mesterséges Intelligencia Tanács) recommendations and guidelines",
       "english_title": "Recommendations and AI Act implementation guidelines of the Hungarian Artificial Intelligence Council",
       "issuing_authority": "Hungarian Artificial Intelligence Council",
-      "note": "Act LXXV of 2025 s. 8 empowers the Council to issue recommendations and AI Act guidelines and to draft a public-sector AI sub-strategy; no official publication of any Council document was found on 2026-10-12 (no Council website located).",
+      "note": "Act LXXV of 2025 s. 8 empowers the Council to issue recommendations and AI Act guidelines and to draft a public-sector AI sub-strategy; no official publication of any Council document was found on 2026-10-12 (no Council website located). 2026-10-22: First Council output found: closing declaration of the inaugural session dated 15 December 2025 (proposed as a new record from the KSH-hosted PDF). No AI Act implementation guidelines or formal recommendations by the Council located yet; keep the lead open for those and for the proposed Hungarian AI Ethics and Social Code.",
       "found": "2026-10-12"
     },
     {
@@ -1795,7 +2040,7 @@
       "title": "NAIH-9338-2/2025 észrevétel a Magyar Mesterséges Intelligencia Hivatalról és az EU MI rendelet végrehajtásáról szóló törvény tervezetére",
       "english_title": "NAIH comments on the draft law on the Hungarian AI Office and the implementation of the EU AI Act",
       "issuing_authority": "Hungarian National Authority for Data Protection and Freedom of Information",
-      "note": "One-page NAIH letter to the Ministry for National Economy (https://naih.hu/files/naih-9338-2-2025-250401.pdf, read 2026-10-12) commenting on the earlier draft that would have created a Hungarian AI Office; the letter states no date (signed electronically), so it is held as a lead; it documents the consultation history of Act LXXV of 2025.",
+      "note": "One-page NAIH letter to the Ministry for National Economy (https://naih.hu/files/naih-9338-2-2025-250401.pdf, read 2026-10-12) commenting on the earlier draft that would have created a Hungarian AI Office; the letter states no date (signed electronically), so it is held as a lead; it documents the consultation history of Act LXXV of 2025. 2026-10-22: Official NAIH PDF found: https://naih.hu/files/naih-9338-2-2025-250401.pdf (Ügyszám NAIH-9338-2/2025, addressed to the Deputy State Secretary, Ministry for National Economy; signed by NAIH President Dr. habil. Péterfalvi Attila). Comments on §7(2)(a), §8 and §12 (sandbox role of other authorities) of the draft. No calendar date is printed ('az elektronikus aláírás és időbélyeg szerint'), so it can be promoted as regulatory_opinion only if a date can be taken from an official NAIH listing page; otherwise keep as lead.",
       "found": "2026-10-12"
     }
   ]

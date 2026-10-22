@@ -10,7 +10,7 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": "Pakistan governs AI through policy rather than AI-specific law: the National AI Policy approved in July 2025 (replacing a 2022 draft) and the February 2026 Islamabad AI Declaration set the direction, and the Digital Nation Pakistan Act 2025 gives the Pakistan Digital Authority powers over AI oversight and standards. The national judicial policy-making committee issued guidelines on AI use in courts in April 2026 and the national CERT advised on safe use of generative AI. A 2026 data governance policy with rules on automated decision systems in government and a personal data protection bill with automated-decision rights are still drafts.",
+    "summary": "Pakistan governs AI through policy rather than AI-specific law: the National AI Policy approved in July 2025 (replacing a 2022 draft) and the February 2026 Islamabad AI Declaration set the direction, and the Digital Nation Pakistan Act 2025 gives the Pakistan Digital Authority powers over AI oversight and standards. The national judicial policy-making committee issued guidelines on AI use in courts in April 2026 and the national CERT advised on safe use of generative AI. A 2026 data governance policy with rules on automated decision systems in government and a personal data protection bill with automated-decision rights are still drafts. The Higher Education Commission issued a framework on the use of generative AI tools in higher education institutions in 2026.",
     "lead_institutions": [
       "Ministry of Information Technology and Telecommunication",
       "Pakistan Digital Authority",
@@ -18,7 +18,7 @@
       "National CERT"
     ],
     "last_deep_review": "2026-10-12",
-    "review_notes": "This review was completed on 12 October 2026 and covers national law, government, ministries and regulators. Not yet verified from the official text: AI guidance from the central bank, the securities regulator and the higher education commission, which is listed as leads."
+    "review_notes": "This review was completed on 12 October 2026 and covers national law, government, ministries and regulators. Not yet verified from the official text: AI guidance from the central bank, the securities regulator and the higher education commission, which is listed as leads. A further browser check on 22 October 2026 added records from official sources."
   },
   "instruments": [
     {
@@ -453,6 +453,59 @@
       "evidence_reference": "curl (browser user agent, --max-time 60): full Gazette text read (pdftotext) from the National Assembly site Published in: Senate Secretariat (Gazette of Pakistan, Extraordinary).",
       "category": "binding-law",
       "source_id": "s-99c16ba7c8e5"
+    },
+    {
+      "id": "i-e44386b1693d",
+      "official_title": "Framework on Use of Generative AI (GenAI) Tools in Higher Education Institutes (HEIs)",
+      "english_title": "Framework on Use of Generative AI (GenAI) Tools in Higher Education Institutes (HEIs)",
+      "issuing_authority": "Higher Education Commission of Pakistan",
+      "authority_type": "regulator",
+      "categories": [
+        "generative-ai",
+        "sectoral",
+        "ethics",
+        "data-privacy"
+      ],
+      "legal_status": "administrative_guideline",
+      "lifecycle": "published",
+      "publication_date": "2026",
+      "current_status": "Published by HEC on its policies page; the document cover is dated 2026 and is not marked as a draft.",
+      "summary": "A national framework for universities and other higher education institutes on the use of generative AI tools in teaching, learning, research and assessment. It asks institutions to publish policies stating permitted, prohibited and disclosure-required uses, run annual training, protect personal data, check AI tools for bias, set up an AI stewardship committee, review policies every six months and send an annual AI integration report to HEC. Students must disclose AI use, verify outputs and may not list AI as an author; AI detection alone is not proof of misconduct.",
+      "ai_governance_relevance": "A national framework for universities and other higher education institutes on the use of generative AI tools in teaching, learning, research and assessment.",
+      "source_url": "https://www.hec.gov.pk/english/policies/Pages/Framework-GenAI.aspx",
+      "official_pdf_url": "https://www.hec.gov.pk/english/policies/Documents/Framework-Gene-AI.pdf",
+      "official_webpage_url": "https://www.hec.gov.pk/english/policies/Pages/Framework-GenAI.aspx",
+      "sectors": [
+        "education"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-b37eefc4322f",
+      "publisher_name": "Higher Education Commission of Pakistan",
+      "jurisdiction_id": "PAK",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "generative-ai",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Pakistan (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "en",
+      "verification_date": "2026-10-22",
+      "first_recorded": "2026-10-22",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-da4caee7c18e",
+      "evidence_reference": "wave3-2026-10-22: HEC policies page Framework-GenAI.aspx and the linked PDF Framework-Gene-AI.pdf"
     }
   ],
   "organizations": [
@@ -494,6 +547,16 @@
       "ai_governance_role": "Federal legislature; enacted the Digital Nation Pakistan Act, 2025, which empowers the Pakistan Digital Authority to oversee, set standards for and enforce compliance in artificial intelligence in areas assigned by the National Digital Commission. No AI-specific law has been enacted; a 2024 Senate AI bill stands withdrawn.",
       "source_url": "https://na.gov.pk/uploads/documents/679b239e8d57f_451.pdf",
       "authority_type": "legislature",
+      "government_level": "national"
+    },
+    {
+      "id": "o-b37eefc4322f",
+      "jurisdiction_id": "PAK",
+      "name": "Higher Education Commission of Pakistan",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Higher education regulator; issued the 2026 framework on generative AI tools in higher education.",
+      "source_url": "https://www.hec.gov.pk/",
+      "authority_type": "regulator",
       "government_level": "national"
     }
   ],
@@ -729,6 +792,35 @@
       "document_language": "en",
       "error": null,
       "content_type": "application/pdf"
+    },
+    {
+      "id": "s-da4caee7c18e",
+      "url": "https://www.hec.gov.pk/english/policies/Pages/Framework-GenAI.aspx",
+      "jurisdiction_ids": [
+        "PAK"
+      ],
+      "source_institutions": [
+        "Higher Education Commission of Pakistan"
+      ],
+      "instrument_ids": [
+        "i-e44386b1693d"
+      ],
+      "categories_reviewed": [
+        "generative-ai",
+        "sectoral",
+        "ethics",
+        "data-privacy"
+      ],
+      "date_reviewed": "2026-10-22",
+      "checked_date": "2026-10-22",
+      "check_method": "wave3-2026-10-22: HEC policies page Framework-GenAI.aspx and the linked PDF Framework-Gene-AI.pdf",
+      "http_status": 200,
+      "final_url": "https://www.hec.gov.pk/english/policies/Pages/Framework-GenAI.aspx",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "text/html"
     }
   ],
   "regional_applicability": [],
@@ -822,6 +914,21 @@
     "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. sbp.org.pk and secp.gov.pk 403 to curl and WebFetch; hec.gov.pk reset/503; pakistancode.gov.pk search errors. PECA (Amendment) Act 2025 read in full: no AI/deepfake wording, not recorded. Judicial guidelines read from the identical Balochistan High Court copy (LJCP copy image-only). Data Governance Policy kept as draft (ministry list still says Draft). Not a party to Convention 108. Units covered: Law: Gazette texts on na.gov.pk read: Digital Nation Pakistan Act 2025 (s.8(g) AI oversight power, recorded) and Prevention of Electronic Crimes (Amendment) Act 2025 (Act II of 2025; fake/false information offence s.26A and Social Media Protection and Regulatory Authority; read in full, contains no AI, deepfake or synthetic-media wording, so not recorded as an AI instrument). Senate bill tracker: Regulation of Artificial Intelligence Bill 2024 withdrawn from committee (lead). No enacted AI-specific law and no enacted personal data protection law found. pakistancode.gov.pk search pages returned errors.; Government: MoITT Policies and Legislations registers and AI Declaration page fully reviewed: National AI Policy 2025 (approved 31 Jul 2025), 2022 consultation draft (superseded), Islamabad AI Declaration (9 Feb 2026), draft Data Governance Policy 2026, draft Personal Data Protection Bill 2023 recorded. Digital Pakistan Policy 2018 has a short AI/IoT/FinTech innovation-centre clause only (not recorded as an AI strategy). Searched for a PDA 'AI Supervisory Framework': nothing official found.; Ministries: Judiciary: NJPMC National Guidelines for Use of AI in Judicial Institutions (recorded). Education: HEC Framework on use of GenAI tools in HEIs exists on hec.gov.pk but the site was unreachable (lead). National CERT (under MoITT): GenAI advisory recorded; National Cybersecurity Handbook 2026-27 is a general cyber handbook (image-only PDF) with AI-use rules for officials, not recorded as an AI instrument. No AI-specific documents found for health, defence, finance/FBR, labour or interior.; Regulators: No data protection authority exists (PDP Bill still draft). State Bank of Pakistan: site returned 403 to curl and WebFetch; reported AI guidelines not located (lead). SECP: sandbox guidelines (2019, AI as one eligible category, not AI-specific) page returned 403 to curl and WebFetch. PTA: no AI-specific instrument found. Convention 108: Pakistan is not a party. Standards: no PSQCA adoption of AI standards (ISO/IEC 42001, 22989) found - searched, nothing found. Index/readiness: no government-published AI index or maturity assessment found - searched, nothing found. International: no AI treaty signed or ratified found (bilateral AI cooperation with Saudi Arabia reported in news only) - searched, nothing found.. Not reached: State Bank of Pakistan website (sbp.org.pk, HTTP 403 to curl and WebFetch); SECP website (secp.gov.pk, HTTP 403 to curl and WebFetch); Higher Education Commission website (hec.gov.pk, connection reset / HTTP 503); pakistancode.gov.pk search. Could not verify: SBP AI guidelines (site 403); SECP AI-related sandbox/guidance (site 403); HEC GenAI framework (site unreachable); PDA national AI Supervisory Framework (no official document found). standards, index-readiness, international: no material found.\nWording note 2026-10-19 (narrative.review_notes): The central bank, securities regulator and higher education commission websites could not be reached, so their AI guidance is listed as leads."
   },
   "changes": [
+    {
+      "id": "c-3cb0a1e0616a",
+      "date": "2026-10-22",
+      "recorded": "2026-10-22",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "PAK",
+      "instrument_id": "i-e44386b1693d",
+      "title": "Framework on Use of Generative AI (GenAI) Tools in Higher Education Institutes (HEIs)",
+      "detail": "Added to the radar (published 2026).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.hec.gov.pk/english/policies/Pages/Framework-GenAI.aspx",
+      "needs_review": false
+    },
     {
       "id": "c-c2bc263962f0",
       "date": "2026-10-13",
@@ -1124,13 +1231,6 @@
     }
   ],
   "leads": [
-    {
-      "title": "Framework on use of Generative AI (GenAI) Tools in Higher Education Institutes (HEIs)",
-      "english_title": "HEC Framework on use of Generative AI Tools in Higher Education Institutes",
-      "issuing_authority": "Higher Education Commission",
-      "note": "Official page https://www.hec.gov.pk/english/policies/Pages/Framework-GenAI.aspx (with download link) found via search; curl connection reset and WebFetch HTTP 503 on 2026-10-12, so title, date and draft/final status are unverified (reported as a draft circulated in 2025-2026). Record as sectoral/generative-ai once readable.",
-      "found": "2026-10-12"
-    },
     {
       "title": "National AI Supervisory Framework (Pakistan Digital Authority)",
       "english_title": "National AI Supervisory Framework",

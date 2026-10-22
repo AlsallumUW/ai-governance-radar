@@ -10,7 +10,7 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": "Colombia governs AI mainly through national policy documents of the National Council for Economic and Social Policy (CONPES): CONPES 3975 of 2019 on digital transformation and AI, and CONPES 4144 of 2025, the dedicated National AI Policy. These are supported by a 2021 ethical framework for AI and a public-sector AI ethics guide, a 2021 presidential directive on AI use in government, and the data protection authority's (SIC) 2024 circular on personal data in AI systems. Binding AI rules include the judiciary's 2024 guidelines on AI use by courts, a 2025 joint directive of the Inspector General and the Ombudsman on algorithmic transparency in the State, and Law 2502 of 2025, which penalises impersonation using AI. A comprehensive risk-based AI bill is pending in Congress.",
+    "summary": "Colombia governs AI mainly through national policy documents of the National Council for Economic and Social Policy (CONPES): CONPES 3975 of 2019 on digital transformation and AI, and CONPES 4144 of 2025, the dedicated National AI Policy. These are supported by a 2021 ethical framework for AI and a public-sector AI ethics guide, a 2021 presidential directive on AI use in government, and the data protection authority's (SIC) 2024 circular on personal data in AI systems. Binding AI rules include the judiciary's 2024 guidelines on AI use by courts, a 2025 joint directive of the Inspector General and the Ombudsman on algorithmic transparency in the State, and Law 2502 of 2025, which penalises impersonation using AI. A comprehensive risk-based AI bill is pending in Congress. In 2026 MinTIC issued security and privacy guidelines for AI systems in state entities, and Bogotá's District Digital Transformation Commission adopted binding AI guidelines for district entities (Agreement 003 of 2025).",
     "lead_institutions": [
       "Ministry of Information Technologies and Communications (MinTIC)",
       "National Planning Department (DNP)",
@@ -18,7 +18,7 @@
       "Superior Council of the Judiciary"
     ],
     "last_deep_review": "2026-10-12",
-    "review_notes": "This review was carried out on 12 October 2026 from documents read in full on official sites. The 2025 National AI Policy is recorded from official records. Not yet verified from the official text: the full text of the 2025 National AI Policy and the status of AI bills in Congress. The pending AI bill is tracked as a lead."
+    "review_notes": "This review was carried out on 12 October 2026 from documents read in full on official sites. The 2025 National AI Policy is recorded from official records. Not yet verified from the official text: the full text of the 2025 National AI Policy and the status of AI bills in Congress. The pending AI bill is tracked as a lead. A further browser check on 22 October 2026 added records from official sources."
   },
   "instruments": [
     {
@@ -630,6 +630,113 @@
       "category": "sectoral",
       "ai_governance_relevance": "Education-sector AI guidance from the national ministry, aligned to CONPES 4144.",
       "source_id": "s-91bf2b568df4"
+    },
+    {
+      "id": "i-4d1da9563ac2",
+      "official_title": "Lineamientos de Seguridad y Privacidad de la Información para Sistemas de IA",
+      "english_title": "Information Security and Privacy Guidelines for AI Systems",
+      "issuing_authority": "Ministry of Information and Communications Technologies (MinTIC)",
+      "authority_type": "ministry",
+      "categories": [
+        "public-sector",
+        "cyber-security",
+        "data-privacy",
+        "risk-assurance"
+      ],
+      "legal_status": "administrative_guideline",
+      "lifecycle": "published",
+      "publication_date": "2026-04-22",
+      "current_status": "Version 1 dated 22 April 2026, addressed to state entities, published by the Ministry's Digital Government Directorate as part of the updated Information Security and Privacy Model (MSPI).",
+      "summary": "Guidelines issued by the Ministry of ICT as part of an update to the Information Security and Privacy Model (MSPI) used by public entities, aligned with the National AI Policy (CONPES 4144 of 2025). They set technical, organisational and regulatory directions for the design, development, implementation, operation and maintenance of AI systems in public entities, to protect information, ensure privacy and manage risk. Recommended safeguards include continuous monitoring, anomaly analysis, event correlation and robustness testing of models. The ministry states they also serve as a reference for the private sector.",
+      "ai_governance_relevance": "Guidelines issued by the Ministry of ICT as part of an update to the Information Security and Privacy Model (MSPI) used by public entities, aligned with the National AI Policy (CONPES 4144 of 2025).",
+      "source_url": "https://mintic.gov.co/portal/inicio/Sala-de-prensa/Noticias/437197:Ministerio-TIC-publica-lineamientos-de-seguridad-y-privacidad-de-la-informacion-para-sistemas-de-inteligencia-artificial",
+      "official_pdf_url": "https://gobiernodigital.mintic.gov.co/seguridadyprivacidad/704/articles-437116_recurso_1.pdf",
+      "official_webpage_url": "https://mintic.gov.co/portal/inicio/Sala-de-prensa/Noticias/437197:Ministerio-TIC-publica-lineamientos-de-seguridad-y-privacidad-de-la-informacion-para-sistemas-de-inteligencia-artificial",
+      "sectors": [
+        "public administration",
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-4cd0d40fe4be",
+      "publisher_name": "Ministry of Information and Communications Technologies (MinTIC)",
+      "jurisdiction_id": "COL",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "public-sector",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Colombia (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "es",
+      "verification_date": "2026-10-22",
+      "first_recorded": "2026-10-22",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-43fd33403fdc",
+      "evidence_reference": "wave3-2026-10-22: browser-check-2026-10-22: guidelines PDF (60 pages) on gobiernodigital.mintic.gov.co opened in a desktop browser: cover, version table (Version 1, 22/04/2026) and contents read."
+    },
+    {
+      "id": "i-2c9698c03a62",
+      "official_title": "Acuerdo 003 de 2025 (diciembre 26) de la Comisión Distrital de Transformación Digital, por el cual se adoptan lineamientos y estándares para la preparación, desarrollo, implementación, supervisión y mejora continua de los sistemas de Inteligencia Artificial en las entidades y organismos del Distrito Capital",
+      "english_title": "Bogotá District Digital Transformation Commission Agreement 003 of 2025 adopting guidelines and standards for AI systems in District entities",
+      "issuing_authority": "Bogotá District Digital Transformation Commission",
+      "authority_type": "subnational_government",
+      "categories": [
+        "public-sector",
+        "ethics",
+        "procurement",
+        "risk-assurance"
+      ],
+      "legal_status": "administrative_policy_mandatory_in_scope",
+      "lifecycle": "in_force",
+      "publication_date": "2025-12-26",
+      "current_status": "Issued on 26 December 2025, published in the District Register No. 8488 of 30 December 2025 and in force from 31 December 2025, according to the district legal register.",
+      "summary": "Agreement of the Bogotá District Digital Transformation Commission adopting technical and ethical guidelines and standards for preparing, developing, implementing, supervising and improving AI systems in the district's central and decentralised entities, localities and private parties performing public functions. Compliance is mandatory for those entities and is applied progressively according to institutional maturity. The guidelines are set out in an annex, \"Technical and ethical AI guidelines for the Capital District of Bogotá\", with supporting tools, which forms part of the agreement.",
+      "ai_governance_relevance": "Agreement of the Bogotá District Digital Transformation Commission adopting technical and ethical guidelines and standards for preparing, developing, implementing, supervising and improving AI systems in the district's central and decentralised entities, localities and private parties performing public functions.",
+      "source_url": "https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=191996&dt=S",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=191996&dt=S",
+      "sectors": [
+        "public administration"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-13e54f59f886",
+      "publisher_name": "Bogotá District Digital Transformation Commission",
+      "jurisdiction_id": "COL",
+      "government_level": "subnational",
+      "subnational_unit": "Bogotá",
+      "category": "public-sector",
+      "subcategory": null,
+      "effective_date": "2025-12-31",
+      "last_amended_date": null,
+      "scope": "Bogotá Capital District",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "es",
+      "verification_date": "2026-10-22",
+      "first_recorded": "2026-10-22",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-3a456559d0e7",
+      "evidence_reference": "wave3-2026-10-22: browser-check-2026-10-22: Bogotá district legal register (sisjur) opened in a desktop browser; header data and Articles 1-5 read."
     }
   ],
   "organizations": [
@@ -711,6 +818,26 @@
       "ai_governance_role": "Issued the 2026 AI decalogue for higher education.",
       "source_url": "https://www.mineducacion.gov.co/",
       "authority_type": "government_department",
+      "government_level": "national"
+    },
+    {
+      "id": "o-4cd0d40fe4be",
+      "jurisdiction_id": "COL",
+      "name": "Ministry of Information and Communications Technologies (MinTIC)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "ICT ministry; leads digital government policy and issued 2026 security and privacy guidelines for AI systems in public entities.",
+      "source_url": "https://www.mintic.gov.co/",
+      "authority_type": "ministry",
+      "government_level": "national"
+    },
+    {
+      "id": "o-13e54f59f886",
+      "jurisdiction_id": "COL",
+      "name": "Bogotá District Digital Transformation Commission",
+      "publisher_name_verified": true,
+      "ai_governance_role": "District body that adopted AI guidelines for Bogotá's public entities in December 2025.",
+      "source_url": "https://www.alcaldiabogota.gov.co/",
+      "authority_type": "subnational_government",
       "government_level": "national"
     }
   ],
@@ -1047,6 +1174,64 @@
       "document_language": "es",
       "error": null,
       "content_type": "application/pdf"
+    },
+    {
+      "id": "s-43fd33403fdc",
+      "url": "https://mintic.gov.co/portal/inicio/Sala-de-prensa/Noticias/437197:Ministerio-TIC-publica-lineamientos-de-seguridad-y-privacidad-de-la-informacion-para-sistemas-de-inteligencia-artificial",
+      "jurisdiction_ids": [
+        "COL"
+      ],
+      "source_institutions": [
+        "Ministry of Information and Communications Technologies (MinTIC)"
+      ],
+      "instrument_ids": [
+        "i-4d1da9563ac2"
+      ],
+      "categories_reviewed": [
+        "public-sector",
+        "cyber-security",
+        "data-privacy",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-22",
+      "checked_date": "2026-10-22",
+      "check_method": "wave3-2026-10-22: browser-check-2026-10-22: guidelines PDF (60 pages) on gobiernodigital.mintic.gov.co opened in a desktop browser: cover, version table (Version 1, 22/04/2026) and contents read.",
+      "http_status": 200,
+      "final_url": "https://mintic.gov.co/portal/inicio/Sala-de-prensa/Noticias/437197:Ministerio-TIC-publica-lineamientos-de-seguridad-y-privacidad-de-la-informacion-para-sistemas-de-inteligencia-artificial",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "es",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-3a456559d0e7",
+      "url": "https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=191996&dt=S",
+      "jurisdiction_ids": [
+        "COL"
+      ],
+      "source_institutions": [
+        "Bogotá District Digital Transformation Commission"
+      ],
+      "instrument_ids": [
+        "i-2c9698c03a62"
+      ],
+      "categories_reviewed": [
+        "public-sector",
+        "ethics",
+        "procurement",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-22",
+      "checked_date": "2026-10-22",
+      "check_method": "wave3-2026-10-22: browser-check-2026-10-22: Bogotá district legal register (sisjur) opened in a desktop browser; header data and Articles 1-5 read.",
+      "http_status": 200,
+      "final_url": "https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=191996&dt=S",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "es",
+      "error": null,
+      "content_type": "text/html"
     }
   ],
   "regional_applicability": [],
@@ -1132,6 +1317,36 @@
     "last_sweep": "2026-10-20"
   },
   "changes": [
+    {
+      "id": "c-3b2694351a29",
+      "date": "2026-10-22",
+      "recorded": "2026-10-22",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "COL",
+      "instrument_id": "i-4d1da9563ac2",
+      "title": "Information Security and Privacy Guidelines for AI Systems",
+      "detail": "Added to the radar (published 2026-04-22).",
+      "from": null,
+      "to": null,
+      "source_url": "https://mintic.gov.co/portal/inicio/Sala-de-prensa/Noticias/437197:Ministerio-TIC-publica-lineamientos-de-seguridad-y-privacidad-de-la-informacion-para-sistemas-de-inteligencia-artificial",
+      "needs_review": false
+    },
+    {
+      "id": "c-74af2bf459ac",
+      "date": "2026-10-22",
+      "recorded": "2026-10-22",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "COL",
+      "instrument_id": "i-2c9698c03a62",
+      "title": "Bogotá District Digital Transformation Commission Agreement 003 of 2025 adopting guidelines and standards for AI systems in District entities",
+      "detail": "Added to the radar (published 2025-12-26).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=191996&dt=S",
+      "needs_review": false
+    },
     {
       "id": "c-f9b5c89240e4",
       "date": "2026-10-20",
@@ -1373,6 +1588,21 @@
       "needs_review": false
     },
     {
+      "id": "c-df7d6ae9b1f7",
+      "date": "2026-04-22",
+      "recorded": "2026-10-22",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "COL",
+      "instrument_id": "i-4d1da9563ac2",
+      "title": "Information Security and Privacy Guidelines for AI Systems",
+      "detail": "Published by Ministry of Information and Communications Technologies (MinTIC).",
+      "from": null,
+      "to": null,
+      "source_url": "https://mintic.gov.co/portal/inicio/Sala-de-prensa/Noticias/437197:Ministerio-TIC-publica-lineamientos-de-seguridad-y-privacidad-de-la-informacion-para-sistemas-de-inteligencia-artificial",
+      "needs_review": false
+    },
+    {
       "id": "c-aee60f3ec1b6",
       "date": "2026-01-07",
       "recorded": "2026-10-21",
@@ -1385,6 +1615,21 @@
       "from": null,
       "to": null,
       "source_url": "https://mintic.gov.co/portal/715/w3-article-425888.html",
+      "needs_review": false
+    },
+    {
+      "id": "c-0da403354820",
+      "date": "2025-12-26",
+      "recorded": "2026-10-22",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "COL",
+      "instrument_id": "i-2c9698c03a62",
+      "title": "Bogotá District Digital Transformation Commission Agreement 003 of 2025 adopting guidelines and standards for AI systems in District entities",
+      "detail": "Published by Bogotá District Digital Transformation Commission.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=191996&dt=S",
       "needs_review": false
     },
     {
@@ -1549,7 +1794,7 @@
       "title": "INVIMA proyecto de circular sobre uso de inteligencia artificial (julio 2026)",
       "english_title": "INVIMA draft circular on the use of AI (July 2026)",
       "issuing_authority": "National Food and Drug Surveillance Institute (INVIMA)",
-      "note": "Seen in search results (invima.gov.co/biblioteca/download/145290); not opened. Check whether it is a sector rule for regulated parties or an internal policy; possible consultation_draft.",
+      "note": "Seen in search results (invima.gov.co/biblioteca/download/145290); not opened. Check whether it is a sector rule for regulated parties or an internal policy; possible consultation_draft. 2026-10-22: Opened the official INVIMA file (https://www.invima.gov.co/biblioteca/download/145290): 'Proyecto de Circular \"LINEAMIENTOS PARA EL USO DE LA INTELIGENCIA ARTIFICIAL\"', justification memo dated 23/07/2026 by INVIMA's Dirección General. It applies to INVIMA's own units, staff, contractors and third parties accessing its systems (risk classification of AI systems, prohibited uses, safeguards on algorithm-supported decisions). Institution-internal draft, so it stays a lead under the scope test; no comment deadline printed.",
       "found": "2026-10-12"
     },
     {
@@ -1558,6 +1803,14 @@
       "issuing_authority": "Office of the Inspector General of Colombia",
       "note": "Reported by press in September 2026; official document not located. Likely an internal institutional policy (scope test).",
       "found": "2026-10-12"
+    },
+    {
+      "title": "Caracterización de la IA para la gestión del riesgo de crédito",
+      "english_title": "Characterisation of AI for credit-risk management",
+      "issuing_authority": "Superintendencia Financiera de Colombia",
+      "url": "https://www.superfinanciera.gov.co/loader.php?lServicio=Tools2&lTipo=descargas&lFuncion=descargar&idFile=1082249",
+      "note": "Linked from the SFC site sidebar next to 'Modelos alternativos de información crediticia (Scoring alternativo) ... orientaciones para la mitiga[ción]' (idFile=1080042). Both downloads could not be read (binary/blocked), so title, date and whether they set expectations for supervised entities are unverified. No AI circular appears in SFC Circulares Externas 2026 (001-009).",
+      "found": "2026-10-22"
     }
   ]
 }
