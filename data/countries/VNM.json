@@ -631,7 +631,7 @@
         "sectoral"
       ],
       "legal_status": "consultation_draft",
-      "lifecycle": "consultation_closed",
+      "lifecycle": "superseded",
       "publication_date": "2026-03-09",
       "effective_date": null,
       "summary": "Ministry of Science and Technology consultation on a draft Prime Minister's decision listing the datasets to be built or shared to serve AI development in essential sectors, implementing the AI Law's provisions on data for AI. The consultation file includes the draft submission, the draft decision and two annexes.",
@@ -641,10 +641,8 @@
       "official_webpage_url": "https://mst.gov.vn/van-ban-phap-luat/du-thao/2397.htm",
       "source_kind": "consultation_portal",
       "document_access_type": "original_government_document",
-      "metadata_gaps": [
-        "adoption status after consultation"
-      ],
-      "current_status": "Consultation open 9-13 March 2026 on the Ministry of Science and Technology drafts page; no adopted decision was found on the Official Gazette as of 12 October 2026. Consultation closed on 13 March 2026.",
+      "metadata_gaps": [],
+      "current_status": "Consultation open 9-13 March 2026 on the Ministry of Science and Technology drafts page and closed on 13 March 2026. The Prime Minister later signed Decision No. 804/QD-TTg of 6 May 2026 promulgating the list (see the final decision record).",
       "id": "i-31ff91082b13",
       "jurisdiction_id": "VNM",
       "government_level": "national",
@@ -658,10 +656,12 @@
       "related_instruments": [],
       "regional_applicability": [],
       "supersedes": [],
-      "superseded_by": [],
+      "superseded_by": [
+        "i-3a49340ff9b3"
+      ],
       "verification_date": "2026-10-12",
       "first_recorded": "2026-10-12",
-      "last_changed": null,
+      "last_changed": "2026-10-22",
       "sectors": [
         "cross-sector"
       ],
@@ -672,6 +672,219 @@
       "source_id": "s-0db305933e2e",
       "evidence_reference": "curl (browser user agent, --max-time 60): Ministry of Science and Technology draft page read (title, consultation dates 09/03/2026-13/03/2026, attached draft files listed); draft DOCX files not opened.",
       "consultation_closes": "2026-03-13"
+    },
+    {
+      "official_title": "Quyết định số 33/2026/QĐ-TTg ban hành Danh mục hệ thống trí tuệ nhân tạo có rủi ro cao",
+      "english_title": "Decision No. 33/2026/QD-TTg promulgating the List of High-Risk Artificial Intelligence Systems",
+      "issuing_authority": "Prime Minister",
+      "authority_type": "executive",
+      "publisher_name": "Prime Minister",
+      "organization_id": "o-c402b10148af",
+      "categories": [
+        "binding-law",
+        "risk-assurance",
+        "sectoral"
+      ],
+      "legal_status": "binding_regulation",
+      "lifecycle": "in_force",
+      "publication_date": "2026-06-30",
+      "effective_date": "2026-08-15",
+      "summary": "Issues the list of high-risk AI systems annexed to the decision, implementing the risk classification of the Law on Artificial Intelligence and Decree 142/2026/ND-CP. Art. 2 sets the criteria (significant harm to life, health, rights, public or national interests, and no exclusion under Decree 142), and the annex lists systems by sector, including education, with conformity-assessment routes. Providers and deployers of listed systems already operating must meet AI-law compliance obligations by 1 September 2027 (health, education, finance) or 1 March 2027 (other sectors).",
+      "ai_governance_relevance": "Defines which AI systems are high-risk under the AI Law regime.",
+      "supersedes": [
+        "i-b61c6304f70f"
+      ],
+      "source_url": "https://congbao.chinhphu.vn/van-ban/quyet-dinh-so-33-2026-qd-ttg-469951/66726.htm",
+      "official_pdf_url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/7/14/469951-1784024086_v1_1784024564_signed.pdf",
+      "official_webpage_url": "https://vanban.chinhphu.vn/?docid=218658&pageid=27160",
+      "current_status": "Signed 30 June 2026 by Deputy Prime Minister Ho Quoc Dung on behalf of the Prime Minister; in force from 15 August 2026 (art. 3); published in Cong bao No. 395 of 14 July 2026. Art. 4 sets transitional deadlines for systems already in operation (1 September 2027 for health, education and finance; 1 March 2027 for other sectors).",
+      "id": "i-07c80e648309",
+      "jurisdiction_id": "VNM",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Viet Nam (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "superseded_by": [],
+      "metadata_gaps": [],
+      "verification_date": "2026-10-22",
+      "first_recorded": "2026-10-22",
+      "last_changed": null,
+      "sectors": [
+        "cross-sector"
+      ],
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_kind": "official_publication",
+      "link_status": "reachable",
+      "verification_level": "reviewed_primary_metadata",
+      "language": "vi",
+      "category": "binding-law",
+      "source_id": "s-c807d74079e3",
+      "evidence_reference": "curl (browser user agent, --max-time 60): Official Gazette (Cong bao) page read for issue and effective dates; the gazette PDF (Cong bao No. 395, 14-07-2026) was downloaded on the third attempt and its text read with pdftotext (articles 1-4 and start of the annex). Added in the 2026-10-22 weekly change check."
+    },
+    {
+      "official_title": "Quyết định số 804/QĐ-TTg ban hành Danh mục bộ dữ liệu phục vụ phát triển trí tuệ nhân tạo trong các lĩnh vực thiết yếu",
+      "english_title": "Decision No. 804/QD-TTg promulgating the List of Datasets Serving AI Development in Essential Fields",
+      "issuing_authority": "Prime Minister",
+      "authority_type": "executive",
+      "publisher_name": "Prime Minister",
+      "organization_id": "o-c402b10148af",
+      "categories": [
+        "binding-law",
+        "data-privacy",
+        "sectoral"
+      ],
+      "legal_status": "administrative_policy_mandatory_in_scope",
+      "lifecycle": "in_force",
+      "publication_date": "2026-05-06",
+      "effective_date": "2026-05-06",
+      "summary": "Promulgates the list of datasets to be built, standardised, labelled and shared for AI development in essential fields over 2026-2030 (Annex I, e.g. Vietnamese and ethnic-minority language data, national knowledge data, legal-document data, science and technology data), plus a priority subset for early deployment (Annex II). Ministries, ministerial-level agencies and provincial People's Committees are assigned to build the datasets, the Ministry of Public Security coordinates and monitors, and data use must follow the laws on data, personal data protection, state secrets and intellectual property.",
+      "ai_governance_relevance": "Implements the AI Law's provisions on data for AI by setting the national dataset programme.",
+      "supersedes": [
+        "i-31ff91082b13"
+      ],
+      "source_url": "https://chinhphu.vn/?docid=218027&pageid=27160",
+      "official_pdf_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/4/804-ttg.signed.pdf",
+      "official_webpage_url": "https://chinhphu.vn/?docid=218027&pageid=27160",
+      "current_status": "Dated 6 May 2026 and in force from the date of signature (art. 2); signed by Deputy Prime Minister Ho Quoc Dung. It follows the Ministry of Science and Technology consultation draft recorded as i-31ff91082b13. The signed PDF is an image scan, read as page images (articles 1-3 and the start of Annex I).",
+      "id": "i-3a49340ff9b3",
+      "jurisdiction_id": "VNM",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Viet Nam (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "superseded_by": [],
+      "metadata_gaps": [],
+      "verification_date": "2026-10-22",
+      "first_recorded": "2026-10-22",
+      "last_changed": null,
+      "sectors": [
+        "cross-sector"
+      ],
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_kind": "official_publication",
+      "link_status": "reachable",
+      "verification_level": "reviewed_primary_metadata",
+      "language": "vi",
+      "category": "binding-law",
+      "source_id": "s-d5e59c9faf76",
+      "evidence_reference": "curl (browser user agent, --max-time 60): Government portal page chinhphu.vn read (number, date 06-05-2026, signatory, PDF link); signed PDF is image-only, pages 1-3 read as images (date, art. 1-3, Annex I table). Added in the 2026-10-22 weekly change check."
+    },
+    {
+      "official_title": "Thông tư số 53/2026/TT-NHNN quy định về an toàn, quản lý rủi ro và điều kiện triển khai đối với việc ứng dụng hệ thống trí tuệ nhân tạo trong ngành Ngân hàng",
+      "english_title": "Circular No. 53/2026/TT-NHNN on safety, risk management and deployment conditions for the application of AI systems in the banking sector",
+      "issuing_authority": "State Bank of Viet Nam",
+      "authority_type": "regulator",
+      "publisher_name": "State Bank of Viet Nam",
+      "organization_id": "o-65d15f250617",
+      "categories": [
+        "sectoral",
+        "binding-law",
+        "risk-assurance",
+        "cyber-security"
+      ],
+      "legal_status": "binding_regulation",
+      "lifecycle": "adopted",
+      "publication_date": "2026-09-30",
+      "effective_date": "2026-11-15",
+      "summary": "Sets safety, risk-management and deployment conditions for AI systems that make or support decisions in banking services to customers, applying to credit institutions, foreign bank branches, payment intermediaries, mobile-money providers, credit information companies and other listed units. It requires risk classification by reference to the high-risk list in Decision 33/2026/QD-TTg, human control conditions, security, data, change and incident management, logging, impact assessment for high-risk systems, outsourcing and supply-chain risk, and staffing requirements.",
+      "ai_governance_relevance": "First sector-regulator rulebook implementing the AI Law's risk regime in finance.",
+      "supersedes": [],
+      "source_url": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-53-2026-tt-nhnn-470694.htm",
+      "official_pdf_url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/10/16/470694-1792050781_v1_1792145073_signed.pdf",
+      "official_webpage_url": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-53-2026-tt-nhnn-470694.htm",
+      "current_status": "Dated 30 September 2026 and published in Cong bao No. 555 of 17 October 2026. Takes effect on 15 November 2026 (art. 23(1)), with art. 14 (risk-management framework) from 1 January 2027, art. 6(1)(b) and art. 21 from 1 September 2027; systems already operating must comply with Chapters II-IV from 1 March 2027 (art. 24). Not yet in force at the date of this check.",
+      "id": "i-4acbd31343c1",
+      "jurisdiction_id": "VNM",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Viet Nam (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "superseded_by": [],
+      "metadata_gaps": [],
+      "verification_date": "2026-10-22",
+      "first_recorded": "2026-10-22",
+      "last_changed": null,
+      "sectors": [
+        "finance"
+      ],
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_kind": "official_publication",
+      "link_status": "reachable",
+      "verification_level": "reviewed_primary_metadata",
+      "language": "vi",
+      "category": "sectoral",
+      "source_id": "s-47e733306d7b",
+      "evidence_reference": "curl (browser user agent, --max-time 60): Official Gazette (Cong bao) page read (issue 30-09-2026, effective 15-11-2026); gazette PDF (Cong bao No. 555, 17-10-2026) downloaded on the fourth attempt and text read with pdftotext (scope, definitions, structure, art. 23-25). Added in the 2026-10-22 weekly change check."
+    },
+    {
+      "official_title": "Thông tư số 49/2026/TT-BGDĐT quy định ứng dụng công nghệ trong giáo dục đại học, giáo dục nghề nghiệp",
+      "english_title": "Circular No. 49/2026/TT-BGDDT on the application of technology in higher education and vocational education",
+      "issuing_authority": "Ministry of Education and Training",
+      "authority_type": "ministry",
+      "publisher_name": "Ministry of Education and Training",
+      "organization_id": "o-1a35857e6c68",
+      "categories": [
+        "sectoral",
+        "binding-law",
+        "generative-ai"
+      ],
+      "legal_status": "binding_regulation",
+      "lifecycle": "in_force",
+      "publication_date": "2026-06-30",
+      "effective_date": "2026-08-15",
+      "summary": "Sets principles and conditions for using digital technology and AI in teaching, assessment, research, administration and student services at universities, colleges and vocational institutions. AI must support and not replace lecturers, results must stay verifiable, and art. 10 treats using AI to cheat, and failing to disclose AI use when required, as academic-integrity violations, with institutions to adopt internal rules. It also covers AI competence development, data governance and institutional responsibilities.",
+      "ai_governance_relevance": "Sector-wide rules on AI use and academic integrity in higher and vocational education.",
+      "supersedes": [],
+      "source_url": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-49-2026-tt-bgddt-470007/66964.htm",
+      "official_pdf_url": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/7/20/470007-1784543283_v1_1784544003_signed.pdf",
+      "official_webpage_url": "https://vanban.chinhphu.vn/?classid=1&docid=218756&orggroupid=4&pageid=27160",
+      "current_status": "Dated 30 June 2026; in force from 15 August 2026 (art. 22); published in Cong bao No. 421 of 20 July 2026. Replaces Circular 15/2018/TT-BGDDT and the higher-education part of Circular 30/2023/TT-BGDDT on online training.",
+      "id": "i-16cdaabb3ebd",
+      "jurisdiction_id": "VNM",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Viet Nam (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "superseded_by": [],
+      "metadata_gaps": [],
+      "verification_date": "2026-10-22",
+      "first_recorded": "2026-10-22",
+      "last_changed": null,
+      "sectors": [
+        "education"
+      ],
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_kind": "official_publication",
+      "link_status": "reachable",
+      "verification_level": "reviewed_primary_metadata",
+      "language": "vi",
+      "category": "sectoral",
+      "source_id": "s-1b5d91987c5d",
+      "evidence_reference": "curl (browser user agent, --max-time 60): Official Gazette (Cong bao) page read; gazette PDF (Cong bao No. 421, 20-07-2026) downloaded on retry and text read with pdftotext (art. 1-2, 10, 15, 22 and AI passages). Promoted from the lead recorded 2026-10-12 in the 2026-10-22 weekly change check."
     }
   ],
   "organizations": [
@@ -723,6 +936,16 @@
       "ai_governance_role": "Proposed the National Programme for AI Human Resources Development (Decision 1528/QD-TTg) and leads its implementation; issued the AI education content framework for general-education students (Decision 2422/QD-BGDDT).",
       "source_url": "https://moet.gov.vn/",
       "authority_type": "ministry",
+      "government_level": "national"
+    },
+    {
+      "id": "o-65d15f250617",
+      "jurisdiction_id": "VNM",
+      "name": "State Bank of Viet Nam",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Central bank and banking regulator; issued Circular 53/2026/TT-NHNN on safety and risk management of AI systems in banking.",
+      "source_url": "https://sbv.gov.vn/",
+      "authority_type": "regulator",
       "government_level": "national"
     }
   ],
@@ -1074,6 +1297,119 @@
       "document_language": "vi",
       "error": null,
       "content_type": "text/html"
+    },
+    {
+      "id": "s-c807d74079e3",
+      "url": "https://congbao.chinhphu.vn/van-ban/quyet-dinh-so-33-2026-qd-ttg-469951/66726.htm",
+      "jurisdiction_ids": [
+        "VNM"
+      ],
+      "source_institutions": [
+        "Prime Minister"
+      ],
+      "instrument_ids": [
+        "i-07c80e648309"
+      ],
+      "categories_reviewed": [
+        "binding-law",
+        "risk-assurance",
+        "sectoral"
+      ],
+      "date_reviewed": "2026-10-22",
+      "checked_date": "2026-10-22",
+      "check_method": "curl (browser user agent, --max-time 60): Official Gazette (Cong bao) page read for issue and effective dates; the gazette PDF (Cong bao No. 395, 14-07-2026) was downloaded on the third attempt and its text read with pdftotext (articles 1-4 and start of the annex). Added in the 2026-10-22 weekly change check.",
+      "http_status": 200,
+      "final_url": "https://congbao.chinhphu.vn/van-ban/quyet-dinh-so-33-2026-qd-ttg-469951/66726.htm",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "vi",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-d5e59c9faf76",
+      "url": "https://chinhphu.vn/?docid=218027&pageid=27160",
+      "jurisdiction_ids": [
+        "VNM"
+      ],
+      "source_institutions": [
+        "Prime Minister"
+      ],
+      "instrument_ids": [
+        "i-3a49340ff9b3"
+      ],
+      "categories_reviewed": [
+        "binding-law",
+        "data-privacy",
+        "sectoral"
+      ],
+      "date_reviewed": "2026-10-22",
+      "checked_date": "2026-10-22",
+      "check_method": "curl (browser user agent, --max-time 60): Government portal page chinhphu.vn read (number, date 06-05-2026, signatory, PDF link); signed PDF is image-only, pages 1-3 read as images (date, art. 1-3, Annex I table). Added in the 2026-10-22 weekly change check.",
+      "http_status": 200,
+      "final_url": "https://chinhphu.vn/?docid=218027&pageid=27160",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "vi",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-47e733306d7b",
+      "url": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-53-2026-tt-nhnn-470694.htm",
+      "jurisdiction_ids": [
+        "VNM"
+      ],
+      "source_institutions": [
+        "State Bank of Viet Nam"
+      ],
+      "instrument_ids": [
+        "i-4acbd31343c1"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "binding-law",
+        "risk-assurance",
+        "cyber-security"
+      ],
+      "date_reviewed": "2026-10-22",
+      "checked_date": "2026-10-22",
+      "check_method": "curl (browser user agent, --max-time 60): Official Gazette (Cong bao) page read (issue 30-09-2026, effective 15-11-2026); gazette PDF (Cong bao No. 555, 17-10-2026) downloaded on the fourth attempt and text read with pdftotext (scope, definitions, structure, art. 23-25). Added in the 2026-10-22 weekly change check.",
+      "http_status": 200,
+      "final_url": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-53-2026-tt-nhnn-470694.htm",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "vi",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-1b5d91987c5d",
+      "url": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-49-2026-tt-bgddt-470007/66964.htm",
+      "jurisdiction_ids": [
+        "VNM"
+      ],
+      "source_institutions": [
+        "Ministry of Education and Training"
+      ],
+      "instrument_ids": [
+        "i-16cdaabb3ebd"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "binding-law",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-22",
+      "checked_date": "2026-10-22",
+      "check_method": "curl (browser user agent, --max-time 60): Official Gazette (Cong bao) page read; gazette PDF (Cong bao No. 421, 20-07-2026) downloaded on retry and text read with pdftotext (art. 1-2, 10, 15, 22 and AI passages). Promoted from the lead recorded 2026-10-12 in the 2026-10-22 weekly change check.",
+      "http_status": 200,
+      "final_url": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-49-2026-tt-bgddt-470007/66964.htm",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "vi",
+      "error": null,
+      "content_type": "text/html"
     }
   ],
   "regional_applicability": [],
@@ -1155,7 +1491,8 @@
     "no_material_found_note": "Viet Nam's Official Gazette, the government legal-documents portal, Prime Minister decisions, ministries and regulators were searched. No qualifying document was found for procurement, readiness indices or international agreements. The education ministry site and the national legal database were unavailable, and the content of some decisions and official letters, published only as images or not found, still needs to be checked.",
     "discovery_result_count": 10,
     "focused_result_count": 10,
-    "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. moet.gov.vn TLS failure/503; vbpl.vn script-rendered; signed PDFs on vanban.chinhphu.vn are scans (reviewed records read from the Official Gazette text PDFs on congbao.chinhphu.vn). Decision 367/QĐ-TTg image-only (located only); Decision 2422/QĐ-BGDĐT from the government policy portal summary (located only). Decree 13/2023 noted in Decree 356/2025's status. Run restarted after a usage-limit interruption (nothing had been saved). Not a party to Convention 108. Units covered: Law: Official Gazette (congbao.chinhphu.vn) and Government legal-documents portal (vanban.chinhphu.vn): AI Law 134/2025 (in force), Decree 142/2026, Law 71/2025 on Digital Technology Industry (AI chapter repealed), PDP Law 91/2025, Decree 356/2025 (replacing Decree 13/2023). vbpl.vn could not be read (script-rendered).; Government: Prime Minister decisions: AI strategies 127/2021 (superseded) and 1671/2026, AI Law implementation plan 367/2026, AI human-resources programme 1528/2026.; Ministries: Science and Technology (legal documents, drafts, ethics circular 05/2026, chatbot letter as lead); Education and Training (AI education framework 2422/2026, located only); Public Security (PDP role, no separate AI document found); Health, Justice, Finance, Labour/Home Affairs, Defence: searched, nothing AI-specific found.; Regulators: State Bank of Viet Nam: only research/news articles on AI, no AI-specific regulation or guidance found; personal data protection authority (Ministry of Public Security): no AI decision found; no separate competition/telecom AI documents found.. Not reached: moet.gov.vn (TLS failure / HTTP 503); vbpl.vn (script-rendered pages); full text of Decision 367/QD-TTg (image-only PDF). Could not verify: Decision 367/QD-TTg content (image-only PDF); Decision 1290/QD-BKHCN text and repeal; Official Letter 557/BKHCN-CDSQG text. procurement, index-readiness, international: no material found.\nWording note 2026-10-19 (narrative.review_notes): Two records could only be located because their official texts are image-only or the education ministry's site could not be reached."
+    "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. moet.gov.vn TLS failure/503; vbpl.vn script-rendered; signed PDFs on vanban.chinhphu.vn are scans (reviewed records read from the Official Gazette text PDFs on congbao.chinhphu.vn). Decision 367/QĐ-TTg image-only (located only); Decision 2422/QĐ-BGDĐT from the government policy portal summary (located only). Decree 13/2023 noted in Decree 356/2025's status. Run restarted after a usage-limit interruption (nothing had been saved). Not a party to Convention 108. Units covered: Law: Official Gazette (congbao.chinhphu.vn) and Government legal-documents portal (vanban.chinhphu.vn): AI Law 134/2025 (in force), Decree 142/2026, Law 71/2025 on Digital Technology Industry (AI chapter repealed), PDP Law 91/2025, Decree 356/2025 (replacing Decree 13/2023). vbpl.vn could not be read (script-rendered).; Government: Prime Minister decisions: AI strategies 127/2021 (superseded) and 1671/2026, AI Law implementation plan 367/2026, AI human-resources programme 1528/2026.; Ministries: Science and Technology (legal documents, drafts, ethics circular 05/2026, chatbot letter as lead); Education and Training (AI education framework 2422/2026, located only); Public Security (PDP role, no separate AI document found); Health, Justice, Finance, Labour/Home Affairs, Defence: searched, nothing AI-specific found.; Regulators: State Bank of Viet Nam: only research/news articles on AI, no AI-specific regulation or guidance found; personal data protection authority (Ministry of Public Security): no AI decision found; no separate competition/telecom AI documents found.. Not reached: moet.gov.vn (TLS failure / HTTP 503); vbpl.vn (script-rendered pages); full text of Decision 367/QD-TTg (image-only PDF). Could not verify: Decision 367/QD-TTg content (image-only PDF); Decision 1290/QD-BKHCN text and repeal; Official Letter 557/BKHCN-CDSQG text. procurement, index-readiness, international: no material found.\nWording note 2026-10-19 (narrative.review_notes): Two records could only be located because their official texts are image-only or the education ministry's site could not be reached. Weekly change check 2026-10-22: congbao.chinhphu.vn, chinhphu.vn and datafiles.chinhphu.vn load (with occasional connection resets, retried); moet.gov.vn and vanban.chinhphu.vn still reset connections. Added Decision 33/2026/QD-TTg, Decision 804/QD-TTg, Circular 53/2026/TT-NHNN and Circular 49/2026/TT-BGDDT, all missed by the 2026-10-12 review.",
+    "last_sweep": "2026-10-22"
   },
   "changes": [
     {
@@ -1610,18 +1947,32 @@
       "found": "2026-10-12"
     },
     {
-      "title": "Thông tư số 49/2026/TT-BGDĐT quy định ứng dụng công nghệ trong giáo dục đại học, giáo dục nghề nghiệp",
-      "english_title": "MOET Circular 49/2026/TT-BGDDT on the application of technology in higher and vocational education",
-      "issuing_authority": "Ministry of Education and Training",
-      "note": "May contain AI-use rules for universities; not checked. Check Cong bao.",
-      "found": "2026-10-12"
-    },
-    {
       "title": "Quỹ Phát triển trí tuệ nhân tạo quốc gia (văn bản thành lập)",
       "english_title": "Establishment instrument of the National AI Development Fund",
       "issuing_authority": "Government / Ministry of Science and Technology",
       "note": "Art. 22 of the AI Law; MOST news (March 2026) says the fund is being set up. No establishing decree/decision found in the Official Gazette yet.",
       "found": "2026-10-12"
+    },
+    {
+      "title": "Quyết định số 2847/QĐ-BKHCN ngày 19/6/2026 ban hành Bộ tiêu chí đánh giá Nền tảng Trí tuệ nhân tạo hỗ trợ công vụ ở phạm vi quốc gia",
+      "english_title": "MOST Decision 2847/QD-BKHCN (19 June 2026) on criteria for evaluating the national AI platform supporting civil service work",
+      "issuing_authority": "Ministry of Science and Technology",
+      "note": "Announced on the Ministry's news pages (mst.gov.vn, 23-25 June 2026); the decision text itself was not found on the Official Gazette, vanban.chinhphu.vn or the Ministry's legal-document pages. Record as public-sector guidance once the official text is located.",
+      "found": "2026-10-22"
+    },
+    {
+      "title": "Quyết định số 3439/QĐ-BGDĐT ngày 15/12/2025 (khung nội dung thí điểm giáo dục trí tuệ nhân tạo cho học sinh phổ thông)",
+      "english_title": "MOET Decision 3439/QD-BGDDT (15 December 2025) pilot framework of AI education content for general education",
+      "issuing_authority": "Ministry of Education and Training",
+      "note": "Pilot predecessor of Decision 2422/QD-BGDDT (i-ae406659354e); moet.gov.vn still unreachable on 2026-10-22, so the text was not read. Record, and link as superseded by 2422, once the official text is read.",
+      "found": "2026-10-22"
+    },
+    {
+      "title": "Quyết định số 1308/QĐ-TTg ngày 18/7/2026 phê duyệt Chiến lược dữ liệu quốc gia giai đoạn 2026-2030",
+      "english_title": "Decision No. 1308/QD-TTg (18 July 2026) approving the National Data Strategy 2026-2030, vision to 2045",
+      "issuing_authority": "Prime Minister",
+      "note": "Read in Cong bao No. 451 (30-07-2026): a data strategy that cites the AI Law and sets goals for AI datasets and the national AI data repository; AI is a secondary theme, not an AI strategy. Held as a lead under the scope test; promote only if the AI provisions are judged sufficient.",
+      "found": "2026-10-22"
     }
   ]
 }
