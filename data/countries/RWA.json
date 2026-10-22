@@ -10,13 +10,13 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": "Rwanda governs AI through its National AI Policy, approved by the Cabinet in 2023 and led by the Ministry of ICT and Innovation (MINICT), which also published an AI readiness and maturity framework and, with Singapore, an AI Playbook for Small States. Binding rules come from the 2021 data protection law, which gives people rights over decisions based solely on automated processing. A National AI Agency, central-bank AI risk guidelines and a revision of the ICT law to cover AI are in progress but not yet officially published.",
+    "summary": "Rwanda governs AI through its National AI Policy, approved by the Cabinet in 2023 and led by the Ministry of ICT and Innovation (MINICT), which also published an AI readiness and maturity framework and, with Singapore, an AI Playbook for Small States. Binding rules come from the 2021 data protection law, which gives people rights over decisions based solely on automated processing. The National Bank of Rwanda's Guidelines No 52/2026 of June 2026 set binding AI risk-management rules for financial institutions. A National AI Agency and a revision of the ICT law to cover AI are in progress but not yet officially published.",
     "lead_institutions": [
       "Ministry of ICT and Innovation (MINICT)",
       "National Bank of Rwanda"
     ],
     "last_deep_review": "2026-10-12",
-    "review_notes": "This review was carried out on 12 October 2026 from documents read in full on official sites. The central bank's 2026 AI risk management guidelines, the National AI Agency and the ICT law revision are listed as leads to check later."
+    "review_notes": "This review was carried out on 12 October 2026 from documents read in full on official sites. On 22 October 2026 the central bank's 2026 AI risk management guidelines were opened and read on the bank's website and recorded. The National AI Agency and the ICT law revision are listed as leads to check later."
   },
   "instruments": [
     {
@@ -234,6 +234,59 @@
       "category": "data-privacy",
       "id": "i-0e2a71c5ca7b",
       "source_id": "s-5841b4499e80"
+    },
+    {
+      "id": "i-4cd7345a93d9",
+      "official_title": "Guidelines N° 52/2026 [616] of 04/06/2026 on Artificial Intelligence Risk Management for Financial Institutions",
+      "english_title": "Guidelines No 52/2026 of 4 June 2026 on Artificial Intelligence Risk Management for Financial Institutions",
+      "issuing_authority": "National Bank of Rwanda",
+      "authority_type": "central_bank",
+      "categories": [
+        "sectoral",
+        "risk-assurance",
+        "binding-law",
+        "generative-ai"
+      ],
+      "legal_status": "administrative_policy_mandatory_in_scope",
+      "lifecycle": "in_force",
+      "publication_date": "2026-06-04",
+      "current_status": "In force from signature on 4 June 2026 (signed by the Deputy Governor as Acting Governor). Institutions have six months to comply and must submit an inventory of their AI systems within three months.",
+      "summary": "Guidelines from the National Bank of Rwanda for the financial institutions it licenses that develop or use artificial intelligence, including generative AI. Institutions must manage AI risks under the oversight of their board and senior management, keep an inventory of their AI systems and submit it to the Bank, and report AI incidents to the Bank within 24 hours for severe incidents and 72 hours for others. The Bank's supervisory powers include ordering the suspension or withdrawal of an AI system.",
+      "ai_governance_relevance": "First binding AI risk-management rules for Rwanda's financial sector.",
+      "source_url": "https://www.bnr.rw/documents/AI_Guidelines_for_the_Financial_Sector._20260604.pdf",
+      "official_pdf_url": "https://www.bnr.rw/documents/AI_Guidelines_for_the_Financial_Sector._20260604.pdf",
+      "official_webpage_url": null,
+      "sectors": [
+        "finance"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-978a58ff9c64",
+      "publisher_name": "National Bank of Rwanda",
+      "jurisdiction_id": "RWA",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "sectoral",
+      "subcategory": null,
+      "effective_date": "2026-06-04",
+      "last_amended_date": null,
+      "scope": "Rwanda (national): institutions licensed by the National Bank of Rwanda",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "en",
+      "verification_date": "2026-10-22",
+      "first_recorded": "2026-10-22",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-09c0bb23c60b",
+      "evidence_reference": "browser-check-2026-10-22: official PDF opened on bnr.rw in a desktop browser and read (title, signature and date, entry into force, compliance period, inventory, incident reporting and supervisory powers)."
     }
   ],
   "organizations": [
@@ -255,6 +308,16 @@
       "ai_governance_role": "Legislature; adopted Law Nº 058/2021 relating to the protection of personal data and privacy, which includes a right not to be subject to solely automated decisions (Article 21).",
       "source_url": "https://www.parliament.gov.rw/",
       "authority_type": "legislature",
+      "government_level": "national"
+    },
+    {
+      "id": "o-978a58ff9c64",
+      "jurisdiction_id": "RWA",
+      "name": "National Bank of Rwanda",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Central bank and financial-sector supervisor; issued Guidelines No 52/2026 on AI risk management for financial institutions.",
+      "source_url": "https://www.bnr.rw/",
+      "authority_type": "central_bank",
       "government_level": "national"
     }
   ],
@@ -369,6 +432,35 @@
       "document_language": "en",
       "error": null,
       "content_type": "application/pdf"
+    },
+    {
+      "id": "s-09c0bb23c60b",
+      "url": "https://www.bnr.rw/documents/AI_Guidelines_for_the_Financial_Sector._20260604.pdf",
+      "jurisdiction_ids": [
+        "RWA"
+      ],
+      "source_institutions": [
+        "National Bank of Rwanda"
+      ],
+      "instrument_ids": [
+        "i-4cd7345a93d9"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "risk-assurance",
+        "binding-law",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-22",
+      "checked_date": "2026-10-22",
+      "check_method": "browser-check-2026-10-22: official PDF opened on bnr.rw in a desktop browser and read (title, signature and date, entry into force, compliance period, inventory, incident reporting and supervisory powers).",
+      "http_status": 200,
+      "final_url": "https://www.bnr.rw/documents/AI_Guidelines_for_the_Financial_Sector._20260604.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
     }
   ],
   "regional_applicability": [],
@@ -457,6 +549,21 @@
   },
   "changes": [
     {
+      "id": "c-52b0c59713cd",
+      "date": "2026-10-22",
+      "recorded": "2026-10-22",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "RWA",
+      "instrument_id": "i-4cd7345a93d9",
+      "title": "Guidelines No 52/2026 of 4 June 2026 on Artificial Intelligence Risk Management for Financial Institutions",
+      "detail": "Added to the radar (published 2026-06-04).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.bnr.rw/documents/AI_Guidelines_for_the_Financial_Sector._20260604.pdf",
+      "needs_review": false
+    },
+    {
       "id": "c-f618ff6a29c7",
       "date": "2026-10-12",
       "recorded": "2026-10-12",
@@ -532,6 +639,21 @@
       "needs_review": false
     },
     {
+      "id": "c-727b761142e0",
+      "date": "2026-06-04",
+      "recorded": "2026-10-22",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "RWA",
+      "instrument_id": "i-4cd7345a93d9",
+      "title": "Guidelines No 52/2026 of 4 June 2026 on Artificial Intelligence Risk Management for Financial Institutions",
+      "detail": "Published by National Bank of Rwanda.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.bnr.rw/documents/AI_Guidelines_for_the_Financial_Sector._20260604.pdf",
+      "needs_review": false
+    },
+    {
       "id": "c-b144c263cfe2",
       "date": "2024-09-22",
       "recorded": "2026-10-12",
@@ -594,13 +716,6 @@
   ],
   "leads": [
     {
-      "title": "Guidelines No. 52/2026 on Artificial Intelligence Risk Management for Financial Institutions",
-      "english_title": "Guidelines No. 52/2026 on Artificial Intelligence Risk Management for Financial Institutions",
-      "issuing_authority": "National Bank of Rwanda",
-      "note": "Reported (aggregators, 2026) as issued on 4 June 2026 for all BNR-licensed institutions: AI inventories, board-set risk appetite, algorithmic impact assessments and notification before high-risk deployments, covering generative AI. Official text not reached: bnr.rw is a script-rendered site and its document API host returned errors; promote once the BNR PDF is located.",
-      "found": "2026-10-12"
-    },
-    {
       "title": "Cabinet decision approving the establishment of a National Artificial Intelligence Agency",
       "english_title": "National Artificial Intelligence Agency (establishment)",
       "issuing_authority": "Cabinet / Office of the Prime Minister",
@@ -627,12 +742,6 @@
       "issuing_authority": "National Bank of Rwanda",
       "note": "Moved to leads under the PROTOCOL §1 scope test: the regulation's text does not mention AI or emerging technologies; AI/machine learning appears only as a tick-box on the application form. Official PDF: https://www.bnr.rw/documents/18.04.2022_BNR_RegulatorySandbox.pdf. Re-check if the bank issues AI-specific sandbox rules.",
       "found": "2026-10-12"
-    },
-    {
-      "title": "Guidelines No 52/2026 of 04/06/2026 on Artificial Intelligence Risk Management for Financial Institutions (update to existing lead)",
-      "url": "https://www.bnr.rw/documents/AI_Guidelines_for_the_Financial_Sector._20260604.pdf",
-      "note": "Existing lead. Candidate official PDF URL found via RegAlert summary (which cites 'Done at Kigali, June 04, 2026', in force on signature). URL could not be fetched from this session (fetch tool provenance block, not a host refusal), so not verified; open this BNR PDF to promote the lead to an instrument (sectoral/risk-assurance, binding guidance for BNR-licensed institutions).",
-      "found": "2026-10-22"
     },
     {
       "title": "The National Data Sharing Policy (May 2025)",
