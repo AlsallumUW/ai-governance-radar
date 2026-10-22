@@ -718,6 +718,58 @@
       "verification_level": "primary_source_located",
       "source_id": "s-4b9502f3f4dc",
       "evidence_reference": "TISI official catalogue record (tbl=nac, id=273) read via curl; gazette date 2025-12-11 as stated by TISI."
+    },
+    {
+      "id": "i-6aac7422f90e",
+      "official_title": "กรอบการกำกับดูแลการใช้งานปัญญาประดิษฐ์ (Artificial Intelligence) และการเรียนรู้ของเครื่อง (Machine Learning) ในตลาดทุน",
+      "english_title": "Framework for Governing the Use of Artificial Intelligence (AI) and Machine Learning (ML) in the Capital Market",
+      "issuing_authority": "Office of the Securities and Exchange Commission, Thailand",
+      "authority_type": "government",
+      "categories": [
+        "sectoral",
+        "risk-assurance",
+        "ethics",
+        "transparency"
+      ],
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2023-12",
+      "current_status": "Handbook dated December 2566 (2023), transmitted to operators by SEC circular กลต.ตท.(ว) 57/2566. Expectations are phrased as recommended practice ('should').",
+      "summary": "SEC handbook for capital-market business operators on governing AI and machine-learning use. It expects board and senior-management oversight and an approved AI/ML policy, principles of fairness, accountability, transparency and explainability, lifecycle controls from data preparation to monitoring, human-in-the-loop or kill-switch controls for high-risk uses, vendor due diligence, and telling customers when they deal with an automated AI system.",
+      "ai_governance_relevance": null,
+      "source_url": "https://www.sec.or.th/TH/Documents/CyberResilience/cyber-AI.pdf",
+      "official_pdf_url": "https://www.sec.or.th/TH/Documents/CyberResilience/cyber-AI.pdf",
+      "official_webpage_url": "https://www.sec.or.th/TH/Documents/CyberResilience/cyber-AI.pdf",
+      "sectors": [],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": null,
+      "publisher_name": "Office of the Securities and Exchange Commission, Thailand",
+      "jurisdiction_id": "THA",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "sectoral",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": null,
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "th",
+      "verification_date": "2026-10-22",
+      "first_recorded": "2026-10-22",
+      "last_changed": "2023-12",
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": null,
+      "evidence_reference": "Deep check 2026-10-22: Cover: 'กรอบการกำกับดูแลการใช้งานปัญญาประดิษฐ์ ... ในตลาดทุน' ... 'ธันวาคม 2566'; circular listing: 'กลต.ตท.(ว) 57/2566 เรื่อง นำส่งคู่มือกรอบการกำกับดูแล...' | Promotes existing THA lead 'แนวปฏิบัติ การกำกับดูแลการใช้งานปัญญาประดิษฐ์ (ก.ล.ต.)' (remove lead). PDF now readable via WebFetch. Circular listing: https://law.sec.or.th/content/5255/8377/1 (year only). Language th. Not published.",
+      "applies_to": null
     }
   ],
   "organizations": [
@@ -1259,6 +1311,21 @@
   },
   "changes": [
     {
+      "id": "c-1b3f96796b90",
+      "date": "2026-10-22",
+      "recorded": "2026-10-22",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "THA",
+      "instrument_id": "i-6aac7422f90e",
+      "title": "Framework for Governing the Use of Artificial Intelligence (AI) and Machine Learning (ML) in the Capital Market",
+      "detail": "Added to the radar (published 2023-12).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.sec.or.th/TH/Documents/CyberResilience/cyber-AI.pdf",
+      "needs_review": false
+    },
+    {
       "id": "c-b87e4c515070",
       "date": "2026-10-19",
       "recorded": "2026-10-19",
@@ -1619,6 +1686,21 @@
       "needs_review": false
     },
     {
+      "id": "c-e99d3f1a83af",
+      "date": "2023-12",
+      "recorded": "2026-10-22",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "THA",
+      "instrument_id": "i-6aac7422f90e",
+      "title": "Framework for Governing the Use of Artificial Intelligence (AI) and Machine Learning (ML) in the Capital Market",
+      "detail": "Published by Office of the Securities and Exchange Commission, Thailand.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.sec.or.th/TH/Documents/CyberResilience/cyber-AI.pdf",
+      "needs_review": false
+    },
+    {
       "id": "c-59c0a26902cf",
       "date": "2023-07-18",
       "recorded": "2026-10-13",
@@ -1701,13 +1783,6 @@
       "found": "2026-10-13"
     },
     {
-      "title": "แนวปฏิบัติ การกำกับดูแลการใช้งานปัญญาประดิษฐ์ (ก.ล.ต.) / Artificial Intelligence Governance",
-      "english_title": "SEC framework for governing the use of AI and machine learning by capital-market intermediaries",
-      "issuing_authority": "Securities and Exchange Commission, Thailand",
-      "note": "Updated 2026-10-13: two SEC PDFs located, https://www.sec.or.th/TH/Documents/CyberResilience/cyber-AI.pdf and https://www.sec.or.th/TH/Documents/CyberResilience/Artificial-Intelligence-Governance.pdf, plus an SEC news release on an AI/ML handbook (https://publish.sec.or.th/nrs/9932s.pdf). All return 403 to curl and WebFetch, so title, date and status are unverified.",
-      "found": "2026-10-13"
-    },
-    {
       "title": "Digital Thailand - AI Ethics Guideline (หลักการและแนวทางจริยธรรมปัญญาประดิษฐ์)",
       "english_title": "Digital Thailand - AI Ethics Guideline",
       "issuing_authority": "Ministry of Digital Economy and Society",
@@ -1774,7 +1849,13 @@
       "title": "แนวปฏิบัติในการใช้งานปัญญาประดิษฐ์ (AI) สำหรับการให้บริการโทรคมนาคม",
       "english_title": "NBTC Guidelines on the Use of Artificial Intelligence for Telecommunications Services",
       "issuing_authority": "Office of the National Broadcasting and Telecommunications Commission (NBTC)",
-      "note": "Title listed on the NBTC home page (nbtc.go.th, seen via search result) as non-binding AI guidelines for telecom licensees; nbtc.go.th returned HTTP 403 to curl and WebFetch on 2026-10-22, so the official text and its publication date could not be read. Promote as sectoral/nonbinding_guidance once read; date only as printed.",
+      "note": "One further search (Thai title) found no official NBTC copy and no NBTC-hosted URL; nbtc.go.th not reachable from this session. Keep as lead; promote only from an NBTC page with the text and printed date.",
+      "found": "2026-10-22"
+    },
+    {
+      "title": "นโยบายการใช้เทคโนโลยี Generative AI ที่ยอมรับได้ (Acceptable Use Policy: Generative AI) - template",
+      "url": "https://www.ncsa.or.th/media/uploads/2025/03/14/generative-ai_template_uid_67d39d7ba8b92.pdf",
+      "note": "NCSA-hosted fill-in template of a generative-AI acceptable-use policy for agencies (based on ETDA AIGC guidance): permitted uses, prohibitions (no AI substitute for high-risk decisions, no confidential data), review and disclosure duties, annual training. No date or issuer printed (blank form). A model template, not an issued instrument; NCSA AI Security Guidelines (existing lead) still not found on ncsa.or.th.",
       "found": "2026-10-22"
     }
   ]
