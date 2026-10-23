@@ -3760,6 +3760,59 @@
       "organization_id": "o-bbee430c61c2",
       "first_recorded": "2026-10-19",
       "last_changed": "2026-10-19"
+    },
+    {
+      "id": "i-7c3a51e9d2b4",
+      "jurisdiction_id": "ESP",
+      "official_title": "Plan IA360: Plan para un despliegue responsable de la IA",
+      "english_title": "IA360 Plan: a plan for the responsible deployment of AI",
+      "issuing_authority": "Presidencia del Gobierno (La Moncloa)",
+      "publisher_name": "Presidency of the Government of Spain (La Moncloa)",
+      "authority_type": "executive",
+      "categories": [
+        "strategy",
+        "generative-ai",
+        "cyber-security"
+      ],
+      "category": "strategy",
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2026-09-21",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Presented by the President of the Government at the event 'IA360: Plan para un despliegue responsable de la IA' on 21 September 2026 (date as printed on the La Moncloa activity page, which hosts the 15-page plan PDF). The PDF itself prints no date. The plan describes itself as a roadmap of actions for the next 12 months; its milestones (for example a tripartite agreement on AI adoption, a post-quantum cryptography plan and a Royal Decree) are announcements, not adopted instruments.",
+      "scope": "Spain (national)",
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Government roadmap, presented by the President of the Government, to place Spain in the world top five in AI from a responsible and ethical approach. It sets out strategic projects across compute and models, business and talent adoption, security (including cybersecurity and post-quantum measures and monitoring of frontier models), a social pact on AI and work, administrative simplification and international alliances, with milestones dated from October 2026 to 2027.",
+      "ai_governance_relevance": "Latest national AI policy plan, adding security, labour and adoption measures to the 2024 AI Strategy; it creates no binding obligations.",
+      "source_url": "https://www.lamoncloa.gob.es/presidente/actividades/paginas/2026/210926-sanchez-plan-ia.aspx",
+      "official_pdf_url": "https://www.lamoncloa.gob.es/presidente/actividades/Documents/2026/20260920%20Plan%20IA360.pdf",
+      "official_webpage_url": "https://www.lamoncloa.gob.es/presidente/actividades/paginas/2026/210926-sanchez-plan-ia.aspx",
+      "language": "es",
+      "source_kind": "official_publication",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-94bd46b86563"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-10-23",
+      "evidence_reference": "esp-sweep-2026-10-23. Publication date source: La Moncloa activity page 'Pedro Sánchez anuncia el Plan IA360...' dated 21.9.2026; PDF undated.",
+      "source_id": "s-5d0e8b21c7a9",
+      "organization_id": "o-9ff44b743a26",
+      "first_recorded": "2026-10-23",
+      "last_changed": null,
+      "official_download_url": "https://www.lamoncloa.gob.es/presidente/actividades/Documents/2026/20260920%20Plan%20IA360.pdf"
     }
   ],
   "organizations": [
@@ -5948,6 +6001,32 @@
       "document_language": "es",
       "error": null,
       "content_type": "application/pdf"
+    },
+    {
+      "id": "s-5d0e8b21c7a9",
+      "url": "https://www.lamoncloa.gob.es/presidente/actividades/paginas/2026/210926-sanchez-plan-ia.aspx",
+      "jurisdiction_ids": [
+        "ESP"
+      ],
+      "source_institutions": [
+        "Presidencia del Gobierno (La Moncloa)"
+      ],
+      "instrument_ids": [
+        "i-7c3a51e9d2b4"
+      ],
+      "categories_reviewed": [
+        "strategy"
+      ],
+      "date_reviewed": "2026-10-23",
+      "checked_date": "2026-10-23",
+      "check_method": "curl GET (browser UA, --max-time 60) on 2026-10-23: HTTP 200; page read and linked PDF downloaded and read",
+      "http_status": 200,
+      "final_url": "https://www.lamoncloa.gob.es/presidente/actividades/paginas/2026/210926-sanchez-plan-ia.aspx",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "es",
+      "error": null,
+      "content_type": "text/html"
     }
   ],
   "regional_applicability": [],
@@ -6079,7 +6158,10 @@
       "Generalitat Valenciana estrategia inteligencia artificial Ley 4/2022 transparencia sistemas inteligencia artificial gva.es",
       "Ley 1/2022 transparencia buen gobierno Comunitat Valenciana sistemas algorítmicos inteligencia artificial artículo DOGV",
       "boe.es Ley 1/2022, de 13 de abril, de Transparencia y Buen Gobierno de la Comunitat Valenciana",
-      "Estrategia de Inteligencia Artificial Comunitat Valenciana 2019 gva.es pdf Conselleria Innovación"
+      "Estrategia de Inteligencia Artificial Comunitat Valenciana 2019 gva.es pdf Conselleria Innovación",
+      "AESIA inteligencia artificial octubre 2026 BOE real decreto",
+      "BOE sumario 19-22 octubre 2026 inteligencia artificial",
+      "Plan IA360 lamoncloa.gob.es inteligencia artificial"
     ],
     "review_date": "2026-10-11",
     "passes": {
@@ -6102,7 +6184,7 @@
     "discovery_result_count": 12,
     "focused_result_count": 12,
     "technical_note": "Coverage note (original): Technical review notes: Backfill run 2026-10-11 in four parts (E1 national law via BOE search and congreso.es; E2 national government incl. ministry-level search; E3 regulators; E4 top regions Catalonia, Madrid, Andalusia, Basque Country, Valencia, 30-minute cap per PROTOCOL §6, finished in about 8 minutes). Run in parallel with FRA on separate branches. No interruption. Both earlier records re-checked and retitled (2024 AI Strategy re-sourced to the MTDFP PDF; the MTDFP 'announcement' identified as the SEDIA resolution of 20 Dec 2024 opening the first AI sandbox call). EU and CoE instruments are attached via the regional files. Dedupe: E2's collective record for the 16 sandbox/AESIA AI Act guides dropped in favour of E3's 16 individual AESIA guide records. AI governance bill 121/000096 and the two deepfake-related organic bills lapsed on dissolution of the Cortes (RD 806/2026, 6 Oct 2026) and are leads; the 2025 anteproyecto is recorded as superseded. AEPD decisions recorded as regulatory_opinion (no decision status). Access: mites.gob.es (TLS error/503; Labour algorithm guide located-only), sede.defensa.gob.es BOD and portal.mineco.gob.es unreachable, aepd.es paged listings 403 (RSS used), CTBG R/0701/2018 PDF 404, Catalan generative-AI criteria (429/bot check). Located-only (1): Labour ministry algorithmic-information guide (2022-05). CNMV, AEMPS, DGSFP: nothing AI-specific published. Galicia Ley 2/2025 and Extremadura DL 2/2023 noted as leads (outside the five regions). procurement, index-readiness, international: no material found.\nWording note 2026-10-19 (i-d358d5eb8fb0.current_status): Dated May 2022 per discovery sources; the official PDF could not be opened (see metadata gaps).\nWording note 2026-10-19 (narrative.review_notes): One document, a Labour ministry guide, could only be located because its website did not respond. Some government websites blocked access, and AI laws in Galicia and Extremadura were found but not reviewed because they fall outside the five regions covered.\nCatch-up sweep 2026-10-19: checked AEPD press notes (to 15 Oct 2026), BOE (discovery search for AI titles, to 15 Oct 2026), AESIA site, Congreso status of the lapsed AI organic bill (lead unchanged; Cortes dissolved 6 Oct 2026, so no national AI Act implementing or sanctions law). Found (older, missing): AEPD warnings AI-00009-2026 (23 Sep 2026, AI CV screening), AI-00170-2026 and AI-00171-2026 (6 Oct 2026, AI video surveillance in two municipalities); recorded from the warning PDFs, dates from the AEPD press notes. Ruled out: AESIA Resolución de 2 de octubre de 2026 sobre delegación de competencias (BOE-A-2026-21517, 15 Oct 2026) - internal delegation of procurement and HR powers, out of scope; AESIA staffing resolution of 1 Oct 2026; Commission Implementing Decision (EU) 2026/2274 of 12 Oct 2026 on harmonised standards is EU-level (regional file). Not reached: AESIA news listing (script-rendered); BOE advanced search returned no text. Link check 2026-10-19 (i-ae07f8c3a192): https://apdcat.gencat.cat/ca/sala_de_premsa/notes_premsa/noticia/Model-RIA no longer available; record keeps the official PDF.",
-    "last_sweep": "2026-10-19"
+    "last_sweep": "2026-10-23"
   },
   "changes": [
     {
@@ -8700,6 +8782,13 @@
       "issuing_authority": "Junta de Extremadura",
       "note": "Regional AI decree-law found in the BOE during the national-law search (BOE-A-2023-8795). Extremadura is outside the five regions reviewed in this run; not checked.",
       "found": "2026-10-11"
+    },
+    {
+      "title": "Estudio de sesgos sociales en la familia de modelos de lenguaje Grok, de SpaceXAI (AESIA)",
+      "english_title": "Study of social biases in SpaceXAI's Grok family of language models (AESIA)",
+      "issuing_authority": "Agencia Española de Supervisión de Inteligencia Artificial (AESIA)",
+      "note": "Official AESIA study (78-page PDF, https://aesia.digital.gob.es/es/estudios/2026-estudio-de-sesgos-sociales-en-la-familia-de-modelos-de-lenguaje-grok); official document on aesia.digital.gob.es; no stated publication date on the page or in the PDF. It is an analytical study of a third-party model rather than guidance; record only if a dated issuer notice is found.",
+      "found": "2026-10-23"
     }
   ]
 }
