@@ -10,7 +10,7 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": "Czechia's AI policy rests on the National AI Strategy 2030, approved by the government in July 2024 and replacing the 2019 strategy, with the EU AI Act applying directly; the national implementing law, which would make the Czech Telecommunication Office the main market surveillance authority, is still a draft. National law regulates real-time remote biometric identification at airports (2025) and creates deepfake offences (in force 2026). The Office of the Government issued a 2026 guide on ethical AI use in public administration, the Justice Ministry has an AI use policy, and the data protection and cyber security authorities have issued AI decisions and guidance, including on the government's 2025 DeepSeek ban.",
+    "summary": "Czechia's AI policy rests on the National AI Strategy 2030, approved by the government in July 2024 and replacing the 2019 strategy, with the EU AI Act applying directly; the national implementing law, which would make the Czech Telecommunication Office the main market surveillance authority, is still a draft. National law regulates real-time remote biometric identification at airports (2025) and creates deepfake offences (in force 2026). The Office of the Government issued a 2026 guide on ethical AI use in public administration, the Justice Ministry has an AI use policy, and the data protection and cyber security authorities have issued AI decisions and guidance, including on the government's 2025 DeepSeek ban. In November 2025 the Ministry of Health issued methodological guidance to healthcare providers on using AI in clinical practice.",
     "lead_institutions": [
       "Ministry of Industry and Trade",
       "Office of the Government",
@@ -19,7 +19,7 @@
       "National Cyber and Information Security Agency"
     ],
     "last_deep_review": "2026-10-12",
-    "review_notes": "This review was completed on 12 October 2026 and covers national law, government, ministries and regulators. The draft AI Act law has not reached parliament and is listed as a lead. Not yet verified from the official text: any AI guidance from the telecommunications office."
+    "review_notes": "This review was completed on 12 October 2026 and covers national law, government, ministries and regulators. The draft AI Act law has not reached parliament and is listed as a lead. Not yet verified from the official text: any AI guidance from the telecommunications office. A further browser check on 22 October 2026 added records from official sources."
   },
   "instruments": [
     {
@@ -604,6 +604,60 @@
       "source_id": "s-f58d0389f9dd",
       "organization_id": "o-30e7176b3b90",
       "evidence_reference": "curl (browser user agent, --max-time 60): e-Sbírka JSON service read (promulgated text of Act No. 270/2025 Coll. and the consolidated Criminal Code as of 1 January 2026; §§ 181(2) and 191a and Article XLV effectiveness checked) Published in: Ministry of the Interior (Collection of Laws, e-Sbírka)."
+    },
+    {
+      "id": "i-d95f731dfa37",
+      "official_title": "Metodický pokyn poskytovatelům zdravotních služeb k problematice umělé inteligence pro klinickou praxi",
+      "english_title": "Methodological guidance for healthcare service providers on artificial intelligence in clinical practice",
+      "issuing_authority": "Ministry of Health of the Czech Republic",
+      "authority_type": "ministry",
+      "categories": [
+        "sectoral",
+        "risk-assurance",
+        "transparency",
+        "data-privacy",
+        "generative-ai"
+      ],
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2025-11-19",
+      "current_status": "Published in the Ministry of Health Bulletin (Věstník), Částka 20/2025, issued 19 November 2025; the guidance describes itself as non-binding.",
+      "summary": "Guides Czech healthcare providers that use or plan to use artificial intelligence in clinical practice, drawing on the EU AI Act, GDPR and the medical device regulations. AI is a support tool: clinicians keep final responsibility, can override outputs, and critical decisions should not be fully automated. AI influence on a clinical decision should be recorded in the medical record and patients informed of limitations. Diagnostic or predictive AI generally needs CE certification as a medical device; staff need training, incidents go to the manufacturer and SÚKL, and patient data must not be entered into unapproved public AI tools.",
+      "ai_governance_relevance": "Guides Czech healthcare providers that use or plan to use artificial intelligence in clinical practice, drawing on the EU AI Act, GDPR and the medical device regulations.",
+      "source_url": "https://portal.gov.cz/vestniky/pv8aaxd/1607872852.pdf",
+      "official_pdf_url": "https://portal.gov.cz/vestniky/pv8aaxd/1607872852.pdf",
+      "official_webpage_url": null,
+      "sectors": [
+        "health"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-4d71c0cf9104",
+      "publisher_name": "Ministry of Health of the Czech Republic",
+      "jurisdiction_id": "CZE",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "sectoral",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Czechia (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "cs",
+      "verification_date": "2026-10-22",
+      "first_recorded": "2026-10-22",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-b0285cb251af",
+      "evidence_reference": "wave3-2026-10-22: Read the Ministry of Health Bulletin issue PDF on the official gazette portal portal.gov.cz."
     }
   ],
   "organizations": [
@@ -674,6 +728,16 @@
       "publisher_name_verified": true,
       "ai_governance_role": "Issues internal instructions for the justice sector, including Instruction No. 11/2025 adding an AI use policy to the sector's ICT security rules.",
       "source_url": "https://msp.gov.cz/",
+      "authority_type": "ministry",
+      "government_level": "national"
+    },
+    {
+      "id": "o-4d71c0cf9104",
+      "jurisdiction_id": "CZE",
+      "name": "Ministry of Health of the Czech Republic",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Health ministry; issued 2025 guidance to healthcare providers on AI in clinical practice.",
+      "source_url": "https://mzd.gov.cz/",
       "authority_type": "ministry",
       "government_level": "national"
     }
@@ -985,6 +1049,36 @@
       "document_language": "cs",
       "error": null,
       "content_type": "text/html"
+    },
+    {
+      "id": "s-b0285cb251af",
+      "url": "https://portal.gov.cz/vestniky/pv8aaxd/1607872852.pdf",
+      "jurisdiction_ids": [
+        "CZE"
+      ],
+      "source_institutions": [
+        "Ministry of Health of the Czech Republic"
+      ],
+      "instrument_ids": [
+        "i-d95f731dfa37"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "risk-assurance",
+        "transparency",
+        "data-privacy",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-22",
+      "checked_date": "2026-10-22",
+      "check_method": "wave3-2026-10-22: Read the Ministry of Health Bulletin issue PDF on the official gazette portal portal.gov.cz.",
+      "http_status": 200,
+      "final_url": "https://portal.gov.cz/vestniky/pv8aaxd/1607872852.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "cs",
+      "error": null,
+      "content_type": "application/pdf"
     }
   ],
   "regional_applicability": [],
@@ -1077,6 +1171,21 @@
     "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. ctu.gov.cz 403 to curl and WebFetch (one PDF via WebFetch). ODok/eKLEP old addresses 404 (draft AI Act not read); government resolutions 394/2025 and 537/2025 not read. All 687 prints of the Chamber's 10th term scanned: no AI bill. Act 270/2025 (deepfake offences) is technology-neutral but targets realistic fabricated depictions. Convention 108: MFA Communication 115/2001 Sb. m. s., recorded on the COE file. Units covered: Law: e-Sbírka (Collection of Laws) read through its JSON service: Act No. 230/2025 Coll. (airport real-time biometric identification AI systems), Act No. 110/2019 Coll. (personal data processing, § 39 automated decisions), Act No. 270/2025 Coll. (deepfake offences, Criminal Code §§ 181(2), 191a), Convention 108 notice No. 115/2001 Coll. Int. Treaties. Chamber of Deputies (psp.cz): all 687 prints of the 10th term scanned for 'umělé'/'inteligen' - no AI bill. The national AI Act (MPO draft) has not been adopted or introduced in Parliament (lead). e-Sbírka full-text search not usable by script; the government legislative portal (ODok/eKLEP) could not be reached at its old addresses.; Government: Ministry of Industry and Trade AI page and news (NAIS 2030 and 2019 strategy, action plan 2025 news, AI Act gestor), Office of the Government (NAIS 2030 PDF; February 2026 public-administration AI guide), government resolution No. 537/2025 DeepSeek ban (via NÚKIB material; resolution text a lead), resolution No. 394/2025 on AI Act implementation (lead), Digital and Information Agency (only AI training course materials found, no guidance document).; Ministries: Justice: Instruction No. 11/2025 AI use policy (recorded). Education: NPI school AI recommendations (lead - undated). Health: memorandum/strategy announced, no text (lead). Defence: only a 2025 FOI reply on AI use, no AI policy document found. Interior, Labour and Social Affairs, Finance, Regional Development (procurement): searched, no AI-specific policy documents found (MMR is piloting an AI tender-checking tool, no guidance).; Regulators: Office for Personal Data Protection: site search (2025 Police airport facial-recognition inspection and May 2026 stadium biometric statement recorded; other AI items are EDPB news). NÚKIB: publications, analyses and supporting materials (DeepSeek methodological material and June 2026 AI frontier models report recorded; national cyber security strategy 2026-2030 only mentions AI in passing). Czech National Bank: site search; its published FOI answer of May 2026 states it has issued no AI supervisory statement or benchmark (AI use falls under DORA and operational-risk rules). Czech Telecommunication Office (AI Act market-surveillance authority): site blocked automated access (HTTP 403); 2025 annual report read via WebFetch. Competition authority (ÚOHS) and standards bodies: nothing AI-specific found.. Not reached: Czech Telecommunication Office website (ctu.gov.cz returned HTTP 403 to curl and WebFetch for all pages except one PDF fetched via WebFetch); Government legislative portal ODok/eKLEP (old URLs 404) - draft AI Act text not read; Government resolutions database (resolutions No. 394/2025 and No. 537/2025 not read). Could not verify: Czech Telecommunication Office AI pages and notices (HTTP 403); Text of government resolutions No. 394/2025 and No. 537/2025; Draft national AI Act text and current legislative stage; NPI school AI recommendations publication date; ČSN EN ISO/IEC 42001 official listing. procurement, transparency, standards, sandbox, index-readiness, drafts, international: no material found.\nWording note 2026-10-19 (narrative.review_notes): The draft AI Act law has not reached parliament and is listed as a lead, and the telecommunications office's website blocked access.\nWording note 2026-10-19 (coverage_audit.no_material_found_note): The Czech Telecommunication Office site and the government legislative portal were unavailable, so the draft national AI Act, government resolutions No. 394/2025 and No. 537/2025 and that office's AI notices remain to be checked."
   },
   "changes": [
+    {
+      "id": "c-f9b5ce272d17",
+      "date": "2026-10-22",
+      "recorded": "2026-10-22",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "CZE",
+      "instrument_id": "i-d95f731dfa37",
+      "title": "Methodological guidance for healthcare service providers on artificial intelligence in clinical practice",
+      "detail": "Added to the radar (published 2025-11-19).",
+      "from": null,
+      "to": null,
+      "source_url": "https://portal.gov.cz/vestniky/pv8aaxd/1607872852.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-c363ab857e36",
       "date": "2026-10-19",
@@ -1378,6 +1487,21 @@
       "needs_review": false
     },
     {
+      "id": "c-14b17d792159",
+      "date": "2025-11-19",
+      "recorded": "2026-10-22",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "CZE",
+      "instrument_id": "i-d95f731dfa37",
+      "title": "Methodological guidance for healthcare service providers on artificial intelligence in clinical practice",
+      "detail": "Published by Ministry of Health of the Czech Republic.",
+      "from": null,
+      "to": null,
+      "source_url": "https://portal.gov.cz/vestniky/pv8aaxd/1607872852.pdf",
+      "needs_review": false
+    },
+    {
       "id": "c-0468aadcfb88",
       "date": "2025-08-01",
       "recorded": "2026-10-12",
@@ -1473,7 +1597,7 @@
       "title": "Návrh zákona o umělé inteligenci",
       "english_title": "Draft Act on Artificial Intelligence (national implementing law for the EU AI Act)",
       "issuing_authority": "Ministry of Industry and Trade",
-      "note": "Government bill prepared by the Ministry of Industry and Trade (gestor of the EU AI Act since 28 May 2025) to designate national supervisory authorities (the Czech Telecommunication Office as main market-surveillance authority, with the Czech National Bank, the Office for Personal Data Protection and the Office for Technical Standardization, Metrology and State Testing) and set sanctions and a sandbox. Inter-ministerial comment procedure reported from late September 2025. Not found among the Chamber of Deputies prints of the 10th term (searched all 687 print entries on psp.cz on 2026-10-12), so it had not reached Parliament; draft text not located on an official open portal. Record when introduced or adopted.",
+      "note": "Government bill prepared by the Ministry of Industry and Trade (gestor of the EU AI Act since 28 May 2025) to designate national supervisory authorities (the Czech Telecommunication Office as main market-surveillance authority, with the Czech National Bank, the Office for Personal Data Protection and the Office for Technical Standardization, Metrology and State Testing) and set sanctions and a sandbox. Inter-ministerial comment procedure reported from late September 2025. Not found among the Chamber of Deputies prints of the 10th term (searched all 687 print entries on psp.cz on 2026-10-12), so it had not reached Parliament; draft text not located on an official open portal. Record when introduced or adopted. 2026-10-22: Discovery only (MPO press release relayed by kurzy.cz, 17 April 2026): at the 2nd meeting of the Committee for AI at MPO, comments from the inter-ministerial review of the draft AI Act were being settled before submission to the government; no parliamentary print number yet. Keep as lead; check mpo.gov.cz and the eKLEP/ODOK legislative portal for the government-approved text.",
       "found": "2026-10-12"
     },
     {
@@ -1487,7 +1611,7 @@
       "title": "Akční plán Národní strategie umělé inteligence ČR 2030 (pro rok 2025; Akční plán 2027 v přípravě)",
       "english_title": "Action Plan of the National AI Strategy 2030 (2025 plan; 2027 plan in preparation)",
       "issuing_authority": "Ministry of Industry and Trade / Government of the Czech Republic",
-      "note": "The 2025 action plan was approved as part of the Digital Czechia implementation plan by government resolution No. 237 of 2 April 2025 (MPO news page, 2 April 2025), allocating CZK 19 billion to project plans. The action plan document itself is not attached on mpo.gov.cz; record once the official text is found.",
+      "note": "The 2025 action plan was approved as part of the Digital Czechia implementation plan by government resolution No. 237 of 2 April 2025 (MPO news page, 2 April 2025), allocating CZK 19 billion to project plans. The action plan document itself is not attached on mpo.gov.cz; record once the official text is found. 2026-10-22: Discovery only (MPO press release relayed by kurzy.cz, 17 April 2026): an Action Plan for 2027 under NAIS 2030 was reported as 'jednomyslně schválen' at the Committee for AI meeting; approving body not stated. Official text not yet located on mpo.gov.cz; keep as lead.",
       "found": "2026-10-12"
     },
     {
@@ -1508,7 +1632,7 @@
       "title": "Doporučení pro využívání umělé inteligence na základních a středních školách",
       "english_title": "Recommendations for the use of AI in primary and secondary schools (with versions for principals and pupils; 2025 FAQ 'AI a právo ve škole')",
       "issuing_authority": "National Pedagogical Institute of the Czech Republic (NPI ČR, MŠMT)",
-      "note": "Published on the NPI digitalizace.rvp.cz portal (https://digitalizace.rvp.cz/ke-stazeni#doporuceni-pro-ai; PDF https://revize.edu.cz/files/ai-doporuceni-online-a4.pdf, read). Sets recommendations in seven areas (open communication, individualisation, AI literacy, responsibility for outputs, children's rights and privacy, proportionality, wellbeing). The document and page state no publication date (PDF metadata 2023-08-29), and the MŠMT news page about NPI's AI materials returned 'page not found'; record as nonbinding_guidance (education) once an official dated listing is found.",
+      "note": "Published on the NPI digitalizace.rvp.cz portal (https://digitalizace.rvp.cz/ke-stazeni#doporuceni-pro-ai; PDF https://revize.edu.cz/files/ai-doporuceni-online-a4.pdf, read). Sets recommendations in seven areas (open communication, individualisation, AI literacy, responsibility for outputs, children's rights and privacy, proportionality, wellbeing). The document and page state no publication date (PDF metadata 2023-08-29), and the MŠMT news page about NPI's AI materials returned 'page not found'; record as nonbinding_guidance (education) once an official dated listing is found. 2026-10-22: Official PDFs exist at revize.edu.cz/files/ai-doporuceni-online-a4.pdf (also -zaci.pdf and -reditele.pdf), redirecting to digitalizace.rvp.cz; neither host could be read this pass and the MŠMT news page on NPI guides returned 'Stránka nenalezena'. Title, issuer and printed date still to be verified from the PDF.",
       "found": "2026-10-12"
     },
     {

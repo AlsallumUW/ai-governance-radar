@@ -10,7 +10,7 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": "Norway follows its 2020 national AI strategy and is implementing the EU AI Act through the EEA: a draft AI Act (KI-loven) naming the communications authority Nkom as coordinating supervisor went to consultation in 2025, with a bill now aimed at spring 2027. A new Public Administration Act adopted in 2025 sets rules on automated decisions, explanations and documentation, and data protection law applies the GDPR. The Data Protection Authority runs a long-standing AI sandbox and publishes AI guidance, the Auditor General audited AI use in central government in 2024, and the health and education directorates have AI plans and advice.",
+    "summary": "Norway follows its 2020 national AI strategy and is implementing the EU AI Act through the EEA: a draft AI Act (KI-loven) naming the communications authority Nkom as coordinating supervisor went to consultation in 2025, with a bill now aimed at spring 2027. A new Public Administration Act adopted in 2025 sets rules on automated decisions, explanations and documentation, and data protection law applies the GDPR. The Data Protection Authority runs a long-standing AI sandbox and publishes AI guidance, the Auditor General audited AI use in central government in 2024, the digitalisation agency's KI Norge unit publishes public-sector AI guidance such as its 2026 procurement guide, and the health and education directorates have AI plans and advice.",
     "lead_institutions": [
       "Ministry of Digitalisation and Public Governance",
       "Norwegian Communications Authority (Nkom)",
@@ -868,6 +868,58 @@
       "organization_id": "o-65fec40b45e4",
       "first_recorded": "2026-10-12",
       "last_changed": null
+    },
+    {
+      "id": "i-51a159c98bcc",
+      "official_title": "Anskaffe KI-system: Bruk markedet til å dekke KI-behov",
+      "english_title": "Procuring AI systems: using the market to meet AI needs (KI Norge guidance)",
+      "issuing_authority": "Norwegian Digitalisation Agency (Digdir)",
+      "authority_type": "agency",
+      "categories": [
+        "procurement",
+        "public-sector",
+        "risk-assurance"
+      ],
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2026-06-02",
+      "current_status": "Published on 2 June 2026 by KI Norge, the AI unit of the Norwegian Digitalisation Agency.",
+      "summary": "Guidance for public bodies buying AI systems. It walks through needs assessment and planning, market dialogue and tender documents, and asks buyers to define the problem first, assess risks to privacy, information security and fundamental rights, and use functional requirements. It recommends a risk-based approach in line with the EU AI Act: for high-risk uses such as health, education or decisions affecting people's rights, buyers should require risk and data management, representative data to avoid bias, human oversight and automatic logging; for limited-risk systems the main requirement is telling users they are dealing with a machine. Buyers should also require a plan for monitoring the system after it goes live.",
+      "ai_governance_relevance": "Public-sector guidance on responsible AI procurement.",
+      "source_url": "https://ki.norge.no/veiledning/anskaffe-ki-system",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://ki.norge.no/veiledning/anskaffe-ki-system",
+      "sectors": [
+        "public administration"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-b9f55e819951",
+      "publisher_name": "Norwegian Digitalisation Agency (Digdir)",
+      "jurisdiction_id": "NOR",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "procurement",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Norway (national): public sector",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "no",
+      "verification_date": "2026-10-22",
+      "first_recorded": "2026-10-22",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-417f00b5cc1e",
+      "evidence_reference": "browser-check-2026-10-22: KI Norge website (ki.norge.no, unit of Digdir per its About page) opened in a desktop browser and the guidance page read in full."
     }
   ],
   "organizations": [
@@ -949,6 +1001,16 @@
       "ai_governance_role": "Norwegian parliament; adopted the new Public Administration Act (2025) with rules on automated case handling and will consider the AI Act (KI-loven) bill.",
       "source_url": "https://www.stortinget.no/",
       "authority_type": "legislature",
+      "government_level": "national"
+    },
+    {
+      "id": "o-b9f55e819951",
+      "jurisdiction_id": "NOR",
+      "name": "Norwegian Digitalisation Agency (Digdir)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Central government digitalisation agency; its unit KI Norge publishes AI guidance for the public sector and runs the national AI regulatory sandbox with Nkom and the Data Protection Authority.",
+      "source_url": "https://www.digdir.no/",
+      "authority_type": "agency",
       "government_level": "national"
     }
   ],
@@ -1397,6 +1459,34 @@
       "document_language": "no",
       "error": null,
       "content_type": "application/pdf"
+    },
+    {
+      "id": "s-417f00b5cc1e",
+      "url": "https://ki.norge.no/veiledning/anskaffe-ki-system",
+      "jurisdiction_ids": [
+        "NOR"
+      ],
+      "source_institutions": [
+        "Norwegian Digitalisation Agency (Digdir)"
+      ],
+      "instrument_ids": [
+        "i-51a159c98bcc"
+      ],
+      "categories_reviewed": [
+        "procurement",
+        "public-sector",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-10-22",
+      "checked_date": "2026-10-22",
+      "check_method": "browser-check-2026-10-22: KI Norge website (ki.norge.no, unit of Digdir per its About page) opened in a desktop browser and the guidance page read in full.",
+      "http_status": 200,
+      "final_url": "https://ki.norge.no/veiledning/anskaffe-ki-system",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "no",
+      "error": null,
+      "content_type": "text/html"
     }
   ],
   "regional_applicability": [],
@@ -1487,6 +1577,21 @@
     "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. regjeringen.no 403 (bot challenge) to curl and WebFetch for all pages and PDFs; digdir.no 502/403 except the KI Norge page. Strategy (2020-01-14, from the press listing) and KI-lov consultation (2025-06-30, confirmed on datatilsynet.no and nkom.no) located only. Convention 108: Lovdata treaty entry TRAKTAT/1981-01-28-1, recorded on the COE file. Units covered: Law: Lovdata (Personal Data Act read; Convention 108 treaty entry read), Storting (new Public Administration Act Lovvedtak 119 (2024–2025) read; written question 15:768 read; no AI Act bill found), regjeringen.no consultations (KI-lov consultation located; site blocked HTTP 403 for curl and WebFetch). No standalone AI law in force; no deepfake-specific offence found.; Government: National AI strategy 2020 (located; regjeringen.no blocked), Ministry of Digitalisation and Public Governance (KI-lov, digitalisation strategy as lead), Digdir (site HTTP 502/403; guidance held as lead; KI Norge page read), Riksrevisjonen audit of AI in government (read).; Ministries: Health (Helsedirektoratet: joint AI plan, quality-assurance and LLM reports read), Education (Udir AI advice read; June 2026 recommendation as lead), Defence (AI strategy as lead, regjeringen.no blocked), Justice (Personal Data Act, Public Administration Act). Finance/tax, labour, interior: searched, no ministry-level AI document found beyond NAV sandbox report.; Regulators: Datatilsynet (AI report 2018, AI strategy 2024, sandbox exit reports incl. NAV, PrevBOT, NTNU Copilot, InkludMI, transparency guidance — read), Nkom (KI-loven information pages read; coordinating authority role recorded on organization), Finanstilsynet (searched: no AI-specific guidance or circular; only general supervisory priorities and a participant-authored fintech sandbox report), NSM (searched: no AI-specific security guidance found).. Not reached: regjeringen.no (all pages and PDFs returned HTTP 403 bot challenge to curl and WebFetch); digdir.no (HTTP 502 to curl, 403 to WebFetch); Konkurransetilsynet and Medietilsynet not searched for AI-specific documents (time box). Could not verify: All regjeringen.no documents (HTTP 403): national AI strategy text, KI-lov consultation documents, 4 Aug 2026 press release on new consultation, digitalisation strategy 2024, defence AI strategy; Digdir guidance pages (HTTP 502/403). procurement, cyber-security, standards, international, historical: no material found.\nWording note 2026-10-19 (i-dff0a42dd212 current_status): (date per the government's press release 'Regjeringen legger frem nasjonal strategi for kunstig intelligens', which could not be opened)\nWording note 2026-10-19 (i-7cb0f82b3b32 current_status): (consultation deadline reportedly 30 September 2025)\nWording note 2026-10-19 (i-7cb0f82b3b32 current_status): A government press release of 4 August 2026 reportedly announces\nWording note 2026-10-19 (narrative.review_notes): The government's main website blocked access, so the national AI strategy and the draft AI Act consultation could only be located, and several government documents are listed as leads.\nWording note 2026-10-19 (coverage_audit.no_material_found_note): The government's main website and the digitalisation agency's website were unavailable, so the national AI strategy, the AI law consultation documents and other government documents remain to be checked, and the competition and media authorities were not searched.\nConsultation status 2026-10-19 (i-7cb0f82b3b32): no closing date found on regjeringen.no id3112327 (bot challenge, curl and browser) and the Datatilsynet news item of 30.06.2025; kept as consultation (no official closing date; not listed as open in the panel once older than 6 months)"
   },
   "changes": [
+    {
+      "id": "c-7588e315b6a0",
+      "date": "2026-10-22",
+      "recorded": "2026-10-22",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "NOR",
+      "instrument_id": "i-51a159c98bcc",
+      "title": "Procuring AI systems: using the market to meet AI needs (KI Norge guidance)",
+      "detail": "Added to the radar (published 2026-06-02).",
+      "from": null,
+      "to": null,
+      "source_url": "https://ki.norge.no/veiledning/anskaffe-ki-system",
+      "needs_review": false
+    },
     {
       "id": "c-3bb38a506bab",
       "date": "2026-10-12",
@@ -1758,6 +1863,21 @@
       "needs_review": false
     },
     {
+      "id": "c-70abee3fc245",
+      "date": "2026-06-02",
+      "recorded": "2026-10-22",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "NOR",
+      "instrument_id": "i-51a159c98bcc",
+      "title": "Procuring AI systems: using the market to meet AI needs (KI Norge guidance)",
+      "detail": "Published by Norwegian Digitalisation Agency (Digdir).",
+      "from": null,
+      "to": null,
+      "source_url": "https://ki.norge.no/veiledning/anskaffe-ki-system",
+      "needs_review": false
+    },
+    {
       "id": "c-b260433828d9",
       "date": "2026-03-16",
       "recorded": "2026-10-21",
@@ -2003,7 +2123,7 @@
       "title": "Lov om kunstig intelligens (KI-loven) – lovproposisjon og ny høring",
       "english_title": "Artificial Intelligence Act (KI-loven) – bill and new consultation",
       "issuing_authority": "Ministry of Digitalisation and Public Governance",
-      "note": "Pending. No Prop. L submitted to the Storting as of 12 Oct 2026. Government press release of 4 Aug 2026 'Tung vil sende KI-loven med endringer på høring' (https://www.regjeringen.no/no/aktuelt/tung-vil-sende-ki-loven-med-endringer-pa-horing/id3169693/, not readable: regjeringen.no blocked) reportedly announces a new consultation in autumn 2026 after EU amendments to the AI Act, with the bill aimed at spring 2027. Record the new consultation and the bill when published; Nkom is the planned coordinating supervisory authority.",
+      "note": "Pending. No Prop. L submitted to the Storting as of 12 Oct 2026. Government press release of 4 Aug 2026 'Tung vil sende KI-loven med endringer på høring' (https://www.regjeringen.no/no/aktuelt/tung-vil-sende-ki-loven-med-endringer-pa-horing/id3169693/, not readable: regjeringen.no blocked) reportedly announces a new consultation in autumn 2026 after EU amendments to the AI Act, with the bill aimed at spring 2027. Record the new consultation and the bill when published; Nkom is the planned coordinating supervisory authority. 2026-10-22: regjeringen.no shows a bot-verification page even in a desktop browser. KI Norge (ki.norge.no) has a KI-loven information page.",
       "found": "2026-10-12"
     },
     {

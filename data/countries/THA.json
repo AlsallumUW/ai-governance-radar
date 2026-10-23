@@ -10,7 +10,7 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": "Thailand governs AI through soft law and sector rules: the National AI Action Plan 2022-2027, guidelines from the Electronic Transactions Development Agency (ETDA) on generative AI and AI governance, AI risk-management guidelines from the Bank of Thailand and the insurance regulator, and national adoptions of the ISO/IEC 42001, 23894 and 42005 AI standards. The 2019 Personal Data Protection Act governs data used in AI. ETDA's consolidated Draft Artificial Intelligence Act, which replaced earlier drafts from 2023 and 2025, went to public hearing in July-August 2026 and awaits Cabinet approval.",
+    "summary": "Thailand governs AI through soft law and sector rules: the National AI Action Plan 2022-2027, guidelines from the Electronic Transactions Development Agency (ETDA) on generative AI and AI governance, AI risk-management guidelines from the Bank of Thailand and the insurance regulator, national adoptions of the ISO/IEC 42001, 23894 and 42005 AI standards, and the National Cyber Security Agency's 2025 AI Security Guidelines and 2026 guidelines for AI-enabled CCTV. The 2019 Personal Data Protection Act governs data used in AI. ETDA's consolidated Draft Artificial Intelligence Act, which replaced earlier drafts from 2023 and 2025, went to public hearing in July-August 2026 and awaits Cabinet approval.",
     "lead_institutions": [
       "Ministry of Digital Economy and Society",
       "Electronic Transactions Development Agency (ETDA)",
@@ -18,7 +18,7 @@
       "Bank of Thailand"
     ],
     "last_deep_review": "2026-10-13",
-    "review_notes": "This review was first completed on 12 October 2026 and redone in a longer pass on 13 October 2026, covering the central law portal, Parliament, the government, each ministry and each sector regulator. Not yet verified from the official text: Royal Gazette search results and AI guidance from the securities, data protection and cybersecurity regulators, tracked as leads together with a Supreme Court AI instruction and a higher-education AI notification."
+    "review_notes": "This review was first completed on 12 October 2026 and redone in a longer pass on 13 October 2026, covering the central law portal, Parliament, the government, each ministry and each sector regulator. On 22 October 2026 the cybersecurity agency's website was read and three of its AI documents recorded. Not yet verified from the official text: Royal Gazette search results and AI guidance from the securities and data protection regulators, tracked as leads together with a Supreme Court AI instruction and a higher-education AI notification."
   },
   "instruments": [
     {
@@ -770,6 +770,164 @@
       "source_id": null,
       "evidence_reference": "Deep check 2026-10-22: Cover: 'กรอบการกำกับดูแลการใช้งานปัญญาประดิษฐ์ ... ในตลาดทุน' ... 'ธันวาคม 2566'; circular listing: 'กลต.ตท.(ว) 57/2566 เรื่อง นำส่งคู่มือกรอบการกำกับดูแล...' | Promotes existing THA lead 'แนวปฏิบัติ การกำกับดูแลการใช้งานปัญญาประดิษฐ์ (ก.ล.ต.)' (remove lead). PDF now readable via WebFetch. Circular listing: https://law.sec.or.th/content/5255/8377/1 (year only). Language th. Not published.",
       "applies_to": null
+    },
+    {
+      "id": "i-2fcd8477c07a",
+      "official_title": "แนวปฏิบัติการใช้ปัญญาประดิษฐ์อย่างมั่นคงปลอดภัย (AI Security Guidelines)",
+      "english_title": "AI Security Guidelines (Guidelines for the Secure Use of Artificial Intelligence)",
+      "issuing_authority": "National Cyber Security Agency",
+      "authority_type": "cybersecurity_agency",
+      "categories": [
+        "cyber-security",
+        "risk-assurance",
+        "generative-ai"
+      ],
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2025-10-01",
+      "current_status": "Published for download by the National Cyber Security Agency on 1 October 2025, after a public forum on the draft on 9 September 2025.",
+      "summary": "NCSA guidelines for government agencies, critical information infrastructure operators, businesses and the public on using AI securely. They cover AI risks and threats, relevant international standards (ISO/IEC, ENISA, OWASP) and Thai law, and build security into each of seven stages of the AI system lifecycle, from concept and secure design through development, red-team testing, deployment and operation to disposal. They also cover governance and risk management (roles, integrating AI risk into enterprise risk management, auditing and reporting) and include a security checklist for AI systems and a sample generative-AI use policy.",
+      "ai_governance_relevance": "National cybersecurity guidance for securing AI systems across their lifecycle.",
+      "source_url": "https://www.ncsa.or.th/news/28559b1b363037fb2d000158?category=news",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.ncsa.or.th/news/28559b1b363037fb2d000158?category=news",
+      "sectors": [
+        "cross-sector",
+        "critical infrastructure"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-09f183ae5800",
+      "publisher_name": "National Cyber Security Agency",
+      "jurisdiction_id": "THA",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "cyber-security",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Thailand (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "th",
+      "verification_date": "2026-10-22",
+      "first_recorded": "2026-10-22",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-b90deef70c2b",
+      "evidence_reference": "browser-check-2026-10-22: NCSA website (ncsa.or.th) opened in a desktop browser; the site's published news data read: download item dated 1 Oct 2025 (link to NCSA's file server), announcement of 10 Oct 2025 describing the five parts and lifecycle stages, and the 9 Sep 2025 consultation forum item."
+    },
+    {
+      "id": "i-20b7f39cadbb",
+      "official_title": "แนวปฏิบัติการรักษาความมั่นคงปลอดภัยระบบกล้องโทรทัศน์วงจรปิดที่ใช้ปัญญาประดิษฐ์สำหรับประเทศไทย (Thailand AI-Enabled CCTV Security Guidelines)",
+      "english_title": "Thailand AI-Enabled CCTV Security Guidelines",
+      "issuing_authority": "National Cyber Security Agency",
+      "authority_type": "cybersecurity_agency",
+      "categories": [
+        "cyber-security",
+        "sectoral",
+        "data-privacy"
+      ],
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2026-10-02",
+      "current_status": "Published for download by the National Cyber Security Agency on 2 October 2026, together with the general Thailand CCTV Security Guidelines; prepared with the Thai Intelligent CCTV Association. The agency states the guidelines are recommendations with no binding force.",
+      "summary": "Security guidelines for CCTV systems that use AI, issued alongside general CCTV security guidelines. They extend lifecycle security management (from defining requirements, design and procurement to operation, vulnerability management, incident response and disposal) to the AI components of CCTV systems, together with devices, networks, cloud services and data, with measures applied according to each system's risk, scale and context. They are addressed to system owners, operators, installers, manufacturers, buyers, regulators and small users.",
+      "ai_governance_relevance": "Security and privacy guidance for AI video analytics in surveillance systems.",
+      "source_url": "https://www.ncsa.or.th/news/642b9e983663655977000293?category=news",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.ncsa.or.th/news/642b9e983663655977000293?category=news",
+      "sectors": [
+        "public security"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-09f183ae5800",
+      "publisher_name": "National Cyber Security Agency",
+      "jurisdiction_id": "THA",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "cyber-security",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Thailand (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "th",
+      "verification_date": "2026-10-22",
+      "first_recorded": "2026-10-22",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-abc9f8f8512d",
+      "evidence_reference": "browser-check-2026-10-22: NCSA website opened in a desktop browser; announcement of 2 Oct 2026 read in the site's published news data (scope, lifecycle approach, non-binding status, download link)."
+    },
+    {
+      "id": "i-3b54d989c0d2",
+      "official_title": "(ร่าง) คู่มือการใช้งานปัญญาประดิษฐ์ (AI) สำหรับประชาชน",
+      "english_title": "Draft Handbook on the Use of Artificial Intelligence for the Public",
+      "issuing_authority": "National Cyber Security Agency",
+      "authority_type": "cybersecurity_agency",
+      "categories": [
+        "drafts",
+        "generative-ai",
+        "cyber-security"
+      ],
+      "legal_status": "consultation_draft",
+      "lifecycle": "consultation_closed",
+      "publication_date": "2026-02-12",
+      "current_status": "Draft published for comment by the National Cyber Security Agency on 12 February 2026; comments were invited until 2 March 2026. No final version has been published yet.",
+      "summary": "Draft handbook from the National Cyber Security Agency to help the public use AI safely and responsibly. It explains what AI is, its benefits and limits, how to use it securely, how to protect personal data, how to spot and handle AI-generated or manipulated content and the misuse of other people's images, and what to do when problems arise.",
+      "ai_governance_relevance": "Public-facing guidance on safe AI use from the national cybersecurity agency.",
+      "source_url": "https://www.ncsa.or.th/news/264c1f3c303064f527000348?category=news",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://www.ncsa.or.th/news/264c1f3c303064f527000348?category=news",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "consultation_portal",
+      "supersedes": [],
+      "organization_id": "o-09f183ae5800",
+      "publisher_name": "National Cyber Security Agency",
+      "jurisdiction_id": "THA",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "drafts",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Thailand (national): the public",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "th",
+      "verification_date": "2026-10-22",
+      "first_recorded": "2026-10-22",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "consultation_document",
+      "source_id": "s-ca054442dea9",
+      "evidence_reference": "browser-check-2026-10-22: NCSA website opened in a desktop browser; consultation notice of 12 Feb 2026 (comments to research@ncsa.or.th by 2 Mar 2026) and working-group item of 23 Feb 2026 read in the site's published news data.",
+      "consultation_closes": "2026-03-02"
     }
   ],
   "organizations": [
@@ -831,6 +989,16 @@
       "ai_governance_role": "National standards body (สมอ.) under the Ministry of Industry; has adopted ISO/IEC AI standards as Thai Industrial Standards (มอก.) and national certification standards (มตช.), including ISO/IEC 42001, 23894 and 42005.",
       "source_url": "https://www.tisi.go.th/",
       "authority_type": "government",
+      "government_level": "national"
+    },
+    {
+      "id": "o-09f183ae5800",
+      "jurisdiction_id": "THA",
+      "name": "National Cyber Security Agency",
+      "publisher_name_verified": true,
+      "ai_governance_role": "National cybersecurity agency under the Cybersecurity Act B.E. 2562 (2019); issued the AI Security Guidelines (2025) and the AI-enabled CCTV security guidelines (2026).",
+      "source_url": "https://www.ncsa.or.th/",
+      "authority_type": "cybersecurity_agency",
       "government_level": "national"
     }
   ],
@@ -1197,6 +1365,90 @@
       "document_language": "th",
       "error": null,
       "content_type": "text/html"
+    },
+    {
+      "id": "s-b90deef70c2b",
+      "url": "https://www.ncsa.or.th/news/28559b1b363037fb2d000158?category=news",
+      "jurisdiction_ids": [
+        "THA"
+      ],
+      "source_institutions": [
+        "National Cyber Security Agency"
+      ],
+      "instrument_ids": [
+        "i-2fcd8477c07a"
+      ],
+      "categories_reviewed": [
+        "cyber-security",
+        "risk-assurance",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-10-22",
+      "checked_date": "2026-10-22",
+      "check_method": "browser-check-2026-10-22: NCSA website (ncsa.or.th) opened in a desktop browser; the site's published news data read: download item dated 1 Oct 2025 (link to NCSA's file server), announcement of 10 Oct 2025 describing the five parts and lifecycle stages, and the 9 Sep 2025 consultation forum item.",
+      "http_status": 200,
+      "final_url": "https://www.ncsa.or.th/news/28559b1b363037fb2d000158?category=news",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "th",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-abc9f8f8512d",
+      "url": "https://www.ncsa.or.th/news/642b9e983663655977000293?category=news",
+      "jurisdiction_ids": [
+        "THA"
+      ],
+      "source_institutions": [
+        "National Cyber Security Agency"
+      ],
+      "instrument_ids": [
+        "i-20b7f39cadbb"
+      ],
+      "categories_reviewed": [
+        "cyber-security",
+        "sectoral",
+        "data-privacy"
+      ],
+      "date_reviewed": "2026-10-22",
+      "checked_date": "2026-10-22",
+      "check_method": "browser-check-2026-10-22: NCSA website opened in a desktop browser; announcement of 2 Oct 2026 read in the site's published news data (scope, lifecycle approach, non-binding status, download link).",
+      "http_status": 200,
+      "final_url": "https://www.ncsa.or.th/news/642b9e983663655977000293?category=news",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "th",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-ca054442dea9",
+      "url": "https://www.ncsa.or.th/news/264c1f3c303064f527000348?category=news",
+      "jurisdiction_ids": [
+        "THA"
+      ],
+      "source_institutions": [
+        "National Cyber Security Agency"
+      ],
+      "instrument_ids": [
+        "i-3b54d989c0d2"
+      ],
+      "categories_reviewed": [
+        "drafts",
+        "generative-ai",
+        "cyber-security"
+      ],
+      "date_reviewed": "2026-10-22",
+      "checked_date": "2026-10-22",
+      "check_method": "browser-check-2026-10-22: NCSA website opened in a desktop browser; consultation notice of 12 Feb 2026 (comments to research@ncsa.or.th by 2 Mar 2026) and working-group item of 23 Feb 2026 read in the site's published news data.",
+      "http_status": 200,
+      "final_url": "https://www.ncsa.or.th/news/264c1f3c303064f527000348?category=news",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "th",
+      "error": null,
+      "content_type": "text/html"
     }
   ],
   "regional_applicability": [],
@@ -1323,6 +1575,66 @@
       "from": null,
       "to": null,
       "source_url": "https://www.sec.or.th/TH/Documents/CyberResilience/cyber-AI.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-e4d4e0d65a33",
+      "date": "2026-10-22",
+      "recorded": "2026-10-22",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "THA",
+      "instrument_id": "i-2fcd8477c07a",
+      "title": "AI Security Guidelines (Guidelines for the Secure Use of Artificial Intelligence)",
+      "detail": "Added to the radar (published 2025-10-01).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.ncsa.or.th/news/28559b1b363037fb2d000158?category=news",
+      "needs_review": false
+    },
+    {
+      "id": "c-c20a3a6a9787",
+      "date": "2026-10-22",
+      "recorded": "2026-10-22",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "THA",
+      "instrument_id": "i-20b7f39cadbb",
+      "title": "Thailand AI-Enabled CCTV Security Guidelines",
+      "detail": "Lifecycle recorded as published when added.",
+      "from": null,
+      "to": "published",
+      "source_url": "https://www.ncsa.or.th/news/642b9e983663655977000293?category=news",
+      "needs_review": false
+    },
+    {
+      "id": "c-a24a59f0b090",
+      "date": "2026-10-22",
+      "recorded": "2026-10-22",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "THA",
+      "instrument_id": "i-20b7f39cadbb",
+      "title": "Thailand AI-Enabled CCTV Security Guidelines",
+      "detail": "Added to the radar (published 2026-10-02).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.ncsa.or.th/news/642b9e983663655977000293?category=news",
+      "needs_review": false
+    },
+    {
+      "id": "c-ed88a6f2f595",
+      "date": "2026-10-22",
+      "recorded": "2026-10-22",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "THA",
+      "instrument_id": "i-3b54d989c0d2",
+      "title": "Draft Handbook on the Use of Artificial Intelligence for the Public",
+      "detail": "Added to the radar (published 2026-02-12).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.ncsa.or.th/news/264c1f3c303064f527000348?category=news",
       "needs_review": false
     },
     {
@@ -1566,6 +1878,21 @@
       "needs_review": false
     },
     {
+      "id": "c-25d76f8557bb",
+      "date": "2026-10-02",
+      "recorded": "2026-10-22",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "THA",
+      "instrument_id": "i-20b7f39cadbb",
+      "title": "Thailand AI-Enabled CCTV Security Guidelines",
+      "detail": "Published by National Cyber Security Agency.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.ncsa.or.th/news/642b9e983663655977000293?category=news",
+      "needs_review": false
+    },
+    {
       "id": "c-ff57155e0aaa",
       "date": "2026-07-09",
       "recorded": "2026-10-13",
@@ -1578,6 +1905,21 @@
       "from": null,
       "to": null,
       "source_url": "https://law.go.th/listeningDetail?survey_id=NzU4MERHQV9MQVdfRlJPTlRFTkQ=",
+      "needs_review": false
+    },
+    {
+      "id": "c-029ef0bbcab2",
+      "date": "2026-02-12",
+      "recorded": "2026-10-22",
+      "kind": "world",
+      "type": "consultation",
+      "jurisdiction_id": "THA",
+      "instrument_id": "i-3b54d989c0d2",
+      "title": "Draft Handbook on the Use of Artificial Intelligence for the Public",
+      "detail": "Published for consultation by National Cyber Security Agency.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.ncsa.or.th/news/264c1f3c303064f527000348?category=news",
       "needs_review": false
     },
     {
@@ -1623,6 +1965,21 @@
       "from": null,
       "to": null,
       "source_url": "https://service.tisi.go.th/tisi-standard-shop/item/tis/8839",
+      "needs_review": false
+    },
+    {
+      "id": "c-a01ee4059084",
+      "date": "2025-10-01",
+      "recorded": "2026-10-22",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "THA",
+      "instrument_id": "i-2fcd8477c07a",
+      "title": "AI Security Guidelines (Guidelines for the Secure Use of Artificial Intelligence)",
+      "detail": "Published by National Cyber Security Agency.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.ncsa.or.th/news/28559b1b363037fb2d000158?category=news",
       "needs_review": false
     },
     {
@@ -1760,13 +2117,6 @@
       "issuing_authority": "National AI Committee",
       "note": "Reported in news as approved in principle by the National AI Committee with four strategies; no official document found.",
       "found": "2026-10-12"
-    },
-    {
-      "title": "แนวปฏิบัติการใช้ปัญญาประดิษฐ์อย่างมั่นคงปลอดภัย (AI Security Guidelines)",
-      "english_title": "Guidelines for the Secure Use of Artificial Intelligence (AI Security Guidelines)",
-      "issuing_authority": "National Cyber Security Agency (NCSA)",
-      "note": "AI security guideline (data poisoning, prompt injection, model evasion; for government agencies and critical infrastructure) reported as announced by NCSA on 1 October 2025. ncsa.or.th is a JavaScript app (curl returns only the shell) and no official copy was found; the only full-text copy seen is on a news site. Promote once an NCSA-hosted copy is located.",
-      "found": "2026-10-13"
     },
     {
       "title": "คำแนะนำของประธานศาลฎีกาเกี่ยวกับการใช้เทคโนโลยีปัญญาประดิษฐ์ในการปฏิบัติงานคดี พ.ศ. 2568",
