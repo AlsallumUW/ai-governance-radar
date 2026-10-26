@@ -236,12 +236,12 @@
     {
       "title": "G20 Osaka Leaders' Declaration (28-29 June 2019), welcoming the G20 AI Principles",
       "url": "https://www.mofa.go.jp/",
-      "note": "Retried 2026-10-19: mofa.go.jp (HTML and PDF), consilium.europa.eu and other member-government copies still returned HTTP 403 or 404; no readable text, so the leaders' endorsement is not recorded."
+      "note": "Retried 2026-10-26: mofa.go.jp (HTML and PDF, Akamai block), consilium.europa.eu, eeas.europa.eu (HTTP 403), thepresidency.gov.za, gov.uk and international.gc.ca copies (HTTP 404) still unreadable; no official text read, so the leaders' endorsement is not recorded."
     },
     {
       "title": "G20 2026 US presidency AI documents: 'The G20 AI Prosperity Objectives' and 'AI Prosperity Compact' (G20 Innovation Ministerial, Raleigh-Durham, September 2026)",
       "url": "https://g20.org/",
-      "note": "Listed on the US presidency's official G20 site (g20.org) with PDFs hosted on commerce.gov; the PDFs returned HTTP 403, so title, issuer and date could not be read from the documents and the page prints no document date. Not recorded until the text is read and any G20-level endorsement is stated in it."
+      "note": "Listed on the US presidency's official G20 site (g20.org) with PDFs hosted on commerce.gov; the PDFs returned HTTP 403, so title, issuer and date could not be read from the documents and the page prints no document date. Not recorded until the text is read and any G20-level endorsement is stated in it. Retried 2026-10-26: g20.org (US presidency) lists the Innovation Ministerial Statement, AI Prosperity Compact, G20 AI Prosperity Objectives and Carolina Principles; commerce.gov PDFs and page still return HTTP 403 to curl and WebFetch; the White House release (dated 2 September 2026) is a press release only."
     },
     {
       "title": "The AI Prosperity Compact (G20 Innovation Ministerial, 2026)",
@@ -276,12 +276,12 @@
     {
       "title": "G20 Innovation Ministerial Statement (Chapel Hill, 2026)",
       "url": "https://www.commerce.gov/news/press-releases/2026/09/g20-innovation-ministerial-concludes-consensus-statement",
-      "note": "Known only from the US presidency's press release; full text not read and no printed date."
+      "note": "Known only from the US presidency's press release; full text not read and no printed date. Retried 2026-10-26: g20.org (US presidency) lists the Innovation Ministerial Statement, AI Prosperity Compact, G20 AI Prosperity Objectives and Carolina Principles; commerce.gov PDFs and page still return HTTP 403 to curl and WebFetch; the White House release (dated 2 September 2026) is a press release only."
     },
     {
       "title": "The G20 AI Prosperity Objectives",
       "url": "https://www.commerce.gov/news/press-releases/2026/09/g20-innovation-ministerial-concludes-consensus-statement",
-      "note": "Known only from the US presidency's press release; full text not read and no printed date."
+      "note": "Known only from the US presidency's press release; full text not read and no printed date. Retried 2026-10-26: g20.org (US presidency) lists the Innovation Ministerial Statement, AI Prosperity Compact, G20 AI Prosperity Objectives and Carolina Principles; commerce.gov PDFs and page still return HTTP 403 to curl and WebFetch; the White House release (dated 2 September 2026) is a press release only."
     },
     {
       "title": "G20 New Delhi Leaders' Declaration (section: Harnessing Artificial Intelligence (AI) Responsibly for Good and for All)",
@@ -509,8 +509,8 @@
     "search_queries": [],
     "review_date": "2026-10-21",
     "no_material_found_note": "The G20 presidency sites and the Japanese and Indian foreign ministry sites were checked; not yet verified from the official text: the declaration. The texts were read from Global Affairs Canada's G20 and New Delhi declaration pages and from the Tsukuba statement published by Japan's Ministry of Internal Affairs and Communications.",
-    "technical_note": "International-organisations research pass 2026-10-21. Searched: mcit.gov.sa; innovazione.gov.it; mea.gov.in; gov.uk; soumu.go.jp; dirco.gov.za; presidency.gov.za; commerce.gov; whitehouse.gov; psa.gov.in | Could not verify: G20 South Africa Summit: Leaders' Declaration, 22 and 23 November 2025 (section on AI, data governance and innovation for sustainable development; AI for Africa initiative) (DIRCO page (posted 22 November 2025) only carries a download button whose target could not be read; no other official full text was found, so the AI section heading and wording could not be checked.)",
-    "last_sweep": "2026-10-21"
+    "technical_note": "International-organisations research pass 2026-10-21. Searched: mcit.gov.sa; innovazione.gov.it; mea.gov.in; gov.uk; soumu.go.jp; dirco.gov.za; presidency.gov.za; commerce.gov; whitehouse.gov; psa.gov.in | Could not verify: G20 South Africa Summit: Leaders' Declaration, 22 and 23 November 2025 (section on AI, data governance and innovation for sustainable development; AI for Africa initiative) (DIRCO page (posted 22 November 2025) only carries a download button whose target could not be read; no other official full text was found, so the AI section heading and wording could not be checked.) | Monday check 2026-10-26: g20.org (US presidency home page, working groups), whitehouse.gov Innovation Ministerial release, commerce.gov PDFs (403), Osaka declaration copies (see lead); no readable new G20 AI text.",
+    "last_sweep": "2026-10-26"
   },
   "changes": [
     {
@@ -672,7 +672,7 @@
   ],
   "members_source": {
     "source_url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/g20/index.aspx?lang=eng",
-    "comment": "Unchanged from data/regional/G20.json; not re-read in the second pass."
+    "comment": "Global Affairs Canada G20 page not re-read. US presidency site g20.org read 2026-10-26: lists 19 state participants (Argentina, Australia, Brazil, Canada, China, France, Germany, India, Indonesia, Italy, Japan, Mexico, Poland, Russia, Saudi Arabia, South Korea, Turkiye, United Kingdom, United States) plus the African Union and European Union; South Africa is not listed and Poland is. This is the 2026 presidency's own participant list, not a membership decision, so the recorded 19 members (including South Africa) are unchanged; needs review."
   },
   "union_members": {
     "EU": {
