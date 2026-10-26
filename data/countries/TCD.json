@@ -44,7 +44,7 @@
         "exact promulgation and effective dates not confirmed from the official text",
         "provisions on automated decision-making not checked"
       ],
-      "link_status": "broken",
+      "link_status": "reachable",
       "document_access_type": "original_government_document",
       "source_id": "s-91d6f837b530",
       "organization_id": "o-e859da5fb8fa",
@@ -105,11 +105,11 @@
         "cyber-security"
       ],
       "date_reviewed": "2026-10-18",
-      "checked_date": "2026-10-19",
-      "check_method": "local-retry-2026-10-18: curl with browser user agent and headless browser fallback; page read (HTTP 200) with the same law list; linked PDF for Law 007/PR/2015 (and other law PDFs) still HTTP 404.",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://arcep.td/lois.html",
-      "link_status": "broken",
+      "link_status": "reachable",
       "page_title": "Lois - ARCEP Tchad",
       "document_language": "fr",
       "error": null,
@@ -204,6 +204,21 @@
     "last_sweep": "2026-10-25"
   },
   "changes": [
+    {
+      "id": "c-53484d1f5864",
+      "date": "2026-10-26",
+      "recorded": "2026-10-26",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "TCD",
+      "instrument_id": "i-58a062bcc503",
+      "title": "Law No. 007/PR/2015 on the Protection of Personal Data",
+      "detail": "Official link restored.",
+      "from": "broken",
+      "to": "reachable",
+      "source_url": "https://arcep.td/lois.html",
+      "needs_review": false
+    },
     {
       "id": "c-813ec8b1a89d",
       "date": "2026-10-19",

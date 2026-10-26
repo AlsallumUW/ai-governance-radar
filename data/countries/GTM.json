@@ -129,7 +129,7 @@
       "first_recorded": "2026-10-18",
       "last_changed": "2026-10-19",
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "source_id": "s-d09a8538c873",
       "evidence_reference": "local-retry-2026-10-18: official PDF on the Ministry of Public Finance website read via headless browser (curl returned HTTP 403); 28 pages, text extracted with pdfplumber; cover image read: 'Plan Estratégico de Transformación Digital del Organismo Ejecutivo ... Guatemala, 2025' (no month or version printed). Content checked: 35 initiatives, three central and four enabling axes, prioritised 2025-2027 sheets including 'Estrategia Nacional de Inteligencia Artificial' (ethical framework: dignidad humana, protección de datos, no discriminación, rendición de cuentas) and governance-axis initiative d) on a governance framework for emerging technologies (AI, blockchain, big data). Linked on the MINFIN home page."
@@ -167,8 +167,8 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full 22-page PDF (two-page spreads) read (pdftotext); cover page states 'Versión 1.0, Fecha Junio, 2026' and 'Primera versión actualizada, 2026'; technical coordination by the Comité Nacional para la Modernización del Organismo Ejecutivo; published on the website of the Secretaría Privada de la Presidencia",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://www.secretariaprivada.gob.gt/wp-content/uploads/2026/07/Plan-de-Transformacion-Digital-2025-2027.pdf",
       "link_status": "reachable",
@@ -197,14 +197,14 @@
         "historical"
       ],
       "date_reviewed": "2026-10-18",
-      "checked_date": "2026-10-18",
-      "check_method": "local-retry-2026-10-18: headless browser (curl HTTP 403); 28-page PDF read with pdfplumber; cover image read ('Guatemala, 2025')",
-      "http_status": 200,
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
+      "http_status": 403,
       "final_url": "https://www.minfin.gob.gt/wp-content/uploads/2025/10/Plan_Estrategico_de_Transformacion_Digital_del_Organismo_Ejecutivo.pdf",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": null,
       "document_language": "es",
-      "error": null,
+      "error": "HTTP Error 403: Forbidden",
       "content_type": "application/pdf"
     }
   ],
@@ -294,6 +294,21 @@
     "last_sweep": "2026-10-20"
   },
   "changes": [
+    {
+      "id": "c-ffbdcbfef45b",
+      "date": "2026-10-26",
+      "recorded": "2026-10-26",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "GTM",
+      "instrument_id": "i-0dfb78e18674",
+      "title": "Strategic Plan for the Digital Transformation of the Executive Branch (2025 edition)",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://www.minfin.gob.gt/wp-content/uploads/2025/10/Plan_Estrategico_de_Transformacion_Digital_del_Organismo_Ejecutivo.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-7d3700d74b02",
       "date": "2026-10-19",

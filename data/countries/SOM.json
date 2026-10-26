@@ -119,7 +119,7 @@
       "publisher_name": "National Communications Authority",
       "metadata_gaps": [],
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "source_id": "s-3d1ff28def7f",
       "evidence_reference": "curl (browser user agent, --max-time 60): 47-page PDF read with pdftotext (dated Nov. 2025); listed on nca.gov.so/resources/strategies; 12 October 2025 validation workshop confirmed on the NCA news page"
     }
@@ -164,8 +164,8 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): 40-page scanned Somali PDF (Upper House resolution 'Qaraar Gole: Ansixinta Sharciga Dhowrista Xogta Dadweynaha', 16 March 2023, with the law's text, Art. 41-43 on page 30) viewed as page images; the Ministry of Communications and Technology's English text 'Law No. 005 of 2023, Data Protection Act' (29 pages) read in full with pdftotext, incl. Art. 23 on solely automated decisions",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://dpa.gov.so/wp-content/uploads/2026/05/soo_udbin_qaraar_gole.pdf",
       "link_status": "reachable",
@@ -191,14 +191,14 @@
         "sandbox"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): 47-page PDF read with pdftotext (dated Nov. 2025); listed on nca.gov.so/resources/strategies; 12 October 2025 validation workshop confirmed on the NCA news page",
-      "http_status": 200,
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
+      "http_status": 403,
       "final_url": "https://nca.gov.so/uploads/documents/strategies/digital-transformation-strategy.pdf",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": null,
       "document_language": "en",
-      "error": null,
+      "error": "HTTP Error 403: Forbidden",
       "content_type": "application/pdf"
     }
   ],
@@ -287,6 +287,21 @@
     "last_sweep": "2026-10-25"
   },
   "changes": [
+    {
+      "id": "c-e411e8a6e832",
+      "date": "2026-10-26",
+      "recorded": "2026-10-26",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "SOM",
+      "instrument_id": "i-7139a1d73c45",
+      "title": "Digital Transformation Strategy for Somalia (2025-2030)",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://nca.gov.so/uploads/documents/strategies/digital-transformation-strategy.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-a02de5da5ff3",
       "date": "2026-10-12",

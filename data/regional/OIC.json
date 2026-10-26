@@ -66,7 +66,7 @@
       "metadata_gaps": [],
       "source_kind": "official_document",
       "evidence_reference": "PDF read on the IPHRC official site. Date line: 'Issued in the city of Jeddah, Kingdom of Saudi Arabia, on 28/12/1445, corresponding to 4th July 2024.' IPHRC members are independent experts elected by the CFM, so this is an organ text, not a state-adopted declaration; reviewer may prefer to treat it as a lead. | Independent check 2026-10-21: Title, date 4 July 2024 (28/12/1445 H), Jeddah, 23rd Regular Session of the OIC-IPHRC and all summary recommendations confirmed on oic-iphrc.org PDF.; current_status: the document does not describe the IPHRC as an 'advisory expert organ' and does not say its recommendations are not binding.; legal_status: the document is self-titled a Declaration of an OIC organ; 'declaration' fits better than 'nonbinding_guidance'.",
-      "link_status": "reachable",
+      "link_status": "broken",
       "document_access_type": "official_publication_or_full_text_page",
       "source_id": "s-c2f2cfbd1c77",
       "organization_id": "o-d8bdcbe305a1",
@@ -194,14 +194,14 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-21",
-      "checked_date": "2026-10-21",
-      "check_method": "WebFetch (research pass)",
-      "http_status": null,
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
+      "http_status": 404,
       "final_url": "https://oic-iphrc.org/2024/7/Jeddah%20Declaration%20of%20AI%20EV%20(R1).pdf",
-      "link_status": "reachable",
+      "link_status": "broken",
       "page_title": null,
       "document_language": "en",
-      "error": null,
+      "error": "HTTP Error 404: Not Found",
       "content_type": null
     },
     {
@@ -221,9 +221,9 @@
         "international"
       ],
       "date_reviewed": "2026-10-21",
-      "checked_date": "2026-10-21",
-      "check_method": "WebFetch (research pass)",
-      "http_status": null,
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
+      "http_status": 200,
       "final_url": "https://iifa-aifi.org/en/56035.html",
       "link_status": "reachable",
       "page_title": null,
@@ -286,6 +286,21 @@
     "technical_note": "International-organisations research pass 2026-10-21. Searched: oic-oci.org news; cfm51.oic-oci.org; new.oic-oci.org conference documents (Banjul communiqué); oic-iphrc.org; iifa-aifi.org | Could not verify: OIC member states page (Request blocked by the permission system in this pass.)"
   },
   "changes": [
+    {
+      "id": "c-4c55054165e0",
+      "date": "2026-10-26",
+      "recorded": "2026-10-26",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "OIC",
+      "instrument_id": "i-36ff09334f9c",
+      "title": "Jeddah Declaration on the Guiding Principles of Artificial Intelligence Governance and Human Rights Protection",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "broken",
+      "source_url": "https://oic-iphrc.org/2024/7/Jeddah%20Declaration%20of%20AI%20EV%20(R1).pdf",
+      "needs_review": false
+    },
     {
       "id": "c-fe5d2518bad3",
       "date": "2026-10-21",

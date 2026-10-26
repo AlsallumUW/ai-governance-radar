@@ -72,7 +72,7 @@
       "first_recorded": "2026-10-12",
       "last_changed": "2026-10-13",
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "source_id": "s-fca18c10a2b4",
       "evidence_reference": "Re-checked 2026-10-13. curl (browser user agent, --max-time 60): 71-page PDF (HTTP 200, application/pdf, 1.69 MB) downloaded from the ministry's Publications > Planification > Stratégies page and read with pdftotext; it states only 'Côte d'Ivoire 2024'. WebFetch of the same PDF URL also returned the file (HTTP 200, binary). Handover date read via WebFetch from the gouv.ci news notice (curl to gouv.ci was reset)."
@@ -127,7 +127,7 @@
       "first_recorded": "2026-10-12",
       "last_changed": "2026-10-13",
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "source_id": "s-b7cfb3281966",
       "evidence_reference": "Re-checked 2026-10-13. curl (browser user agent, --max-time 60): 61-page PDF (HTTP 200, application/pdf, 8.1 MB) downloaded and read with pdftotext; it states only 'Côte d'Ivoire 2024' and the period 2024-2030. The strategies listing page was re-read by curl (HTTP 200). Handover date read via WebFetch from the gouv.ci notice."
@@ -230,14 +230,14 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "Re-checked 2026-10-13. curl (browser user agent, --max-time 60): 71-page PDF (HTTP 200, application/pdf, 1.69 MB) downloaded from the ministry's Publications > Planification > Stratégies page and read with pdftotext; it states only 'Côte d'Ivoire 2024'. WebFetch of the same PDF URL also returned the file (HTTP 200, binary). Handover date read via WebFetch from the gouv.ci news notice (curl to gouv.ci was reset).",
-      "http_status": 200,
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
+      "http_status": null,
       "final_url": "https://www.telecom.gouv.ci/new/uploads/publications/174196670372.pdf",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": null,
       "document_language": "fr",
-      "error": null,
+      "error": "URLError: <urlopen error [Errno 111] Connection refused>",
       "content_type": "application/pdf"
     },
     {
@@ -259,14 +259,14 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "Re-checked 2026-10-13. curl (browser user agent, --max-time 60): 61-page PDF (HTTP 200, application/pdf, 8.1 MB) downloaded and read with pdftotext; it states only 'Côte d'Ivoire 2024' and the period 2024-2030. The strategies listing page was re-read by curl (HTTP 200). Handover date read via WebFetch from the gouv.ci notice.",
-      "http_status": 200,
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
+      "http_status": null,
       "final_url": "https://www.telecom.gouv.ci/new/uploads/publications/174196707541.pdf",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": null,
       "document_language": "fr",
-      "error": null,
+      "error": "URLError: <urlopen error [Errno 111] Connection refused>",
       "content_type": "application/pdf"
     },
     {
@@ -286,8 +286,8 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "Re-checked 2026-10-13. curl (browser user agent, --max-time 60): the Journal officiel scan of 8 August 2013 (HTTP 200, application/pdf, 6.2 MB) was downloaded again from ARTCI's Textes juridiques > Lois page. WebFetch of the ARTCI Lois page confirmed the title and the download link. The text was read in full in the first pass (image-only scan, articles 1-25 and 49-54).",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://www.artci.ci/wp-content/uploads/2024/05/loi_2013_450.pdf",
       "link_status": "reachable",
@@ -415,6 +415,36 @@
     "last_sweep": "2026-10-25"
   },
   "changes": [
+    {
+      "id": "c-53303417b827",
+      "date": "2026-10-26",
+      "recorded": "2026-10-26",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "CIV",
+      "instrument_id": "i-7e3e6d592887",
+      "title": "National Artificial Intelligence Strategy to 2030 (SNIA 2030)",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://www.telecom.gouv.ci/new/uploads/publications/174196670372.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-4094ec8cceac",
+      "date": "2026-10-26",
+      "recorded": "2026-10-26",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "CIV",
+      "instrument_id": "i-2ea0bd2d6aec",
+      "title": "National Data Governance Strategy to 2030 (SNGD 2030)",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://www.telecom.gouv.ci/new/uploads/publications/174196707541.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-c31e6c6fe91b",
       "date": "2026-10-22",

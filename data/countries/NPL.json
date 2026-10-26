@@ -170,7 +170,7 @@
       "metadata_gaps": [],
       "source_kind": "consultation_portal",
       "evidence_reference": "curl (browser user agent, --max-time 60): NRB search listing shows notice no. 13/2082-83 dated December 7, 2025 inviting comments on the draft; the linked 14-page PDF read via pdftotext",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "source_id": "s-69e1fa044142",
       "organization_id": "o-5bf0bdd659e5",
@@ -282,8 +282,8 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): Nepal Law Commission page read (title, posted 6 Asoj 2083) and the 32-page Nepali PDF downloaded; MoCIT page (www host; the bare mocit.gov.np host fails TLS) links the 56-page official English version 'National Artificial Intelligence (A.I.) Policy, 2025', read in full with pdftotext",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://lawcommission.gov.np/content/13606/national-artificial-intelligence--ai--policy--2082/",
       "link_status": "reachable",
@@ -309,8 +309,8 @@
         "historical"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): MoCIT page title read and the 54-page PDF downloaded; cover dated समिति: २०८१/०३/१६ (30 June 2024), table of contents and recommendations read via pdftotext",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://www.mocit.gov.np/content/12663/12663-nepal/",
       "link_status": "reachable",
@@ -338,14 +338,14 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-19",
-      "check_method": "curl (browser user agent, --max-time 60): NRB search listing shows notice no. 13/2082-83 dated December 7, 2025 inviting comments on the draft; the linked 14-page PDF read via pdftotext",
-      "http_status": 200,
-      "final_url": "https://www.nrb.org.np/bfr/%e0%a4%b8%e0%a5%82%e0%a4%9a%e0%a4%a8%e0%a4%be-%e0%a4%a8%e0%a4%82-%e0%a5%a7%e0%a5%a9-%e0%a5%a8%e0%a5%a6%e0%a5%ae%e0%a5%a8-%e0%a5%ae%e0%a5%a9-artificial-intelligence-guidelines-%e0%a4%95%e0%a5%8b/",
-      "link_status": "reachable",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
+      "http_status": null,
+      "final_url": "https://www.nrb.org.np/contents/uploads/2025/12/AI-Guidelines.pdf",
+      "link_status": "inaccessible",
       "page_title": null,
       "document_language": "en",
-      "error": null,
+      "error": "URLError: <urlopen error timed out>",
       "content_type": "application/pdf"
     },
     {
@@ -365,8 +365,8 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): Nepal Law Commission page and the 20-page PDF of the Act read via pdftotext (authentication date २०७५।६।२, Act no. 14 of 2075, s.1(2) immediate commencement)",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://lawcommission.gov.np/content/12261/the-privacy-act-2075/",
       "link_status": "reachable",
@@ -458,6 +458,21 @@
     "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. Gazette (rajpatra) and parliament.gov.np not searched separately; Digital Nepal Framework 2.0 AI parts, NTA, standards bodies and PPMO not reached; opmcm records for the Shrawan 2082 decision not found. Bare mocit.gov.np fails its TLS certificate (www.mocit.gov.np works). Not a party to Convention 108. Units covered: Law: Nepal Law Commission portal (AI policy page, Privacy Act 2075); no AI-specific Act, AI bill or AI provision in other laws found. Gazette (rajpatra) and parliament.gov.np not searched separately in the time box.; Government: MoCIT: National AI Policy 2082 (Nepali + official English), AI concept paper 2024. Digital Nepal Framework not re-read for AI parts (time box).; Ministries: Searched only via general queries; no education/health/justice/finance ministry AI documents found.; Regulators: Nepal Rastra Bank: draft AI Guidelines (Dec 2025). No data protection authority exists; NTA and cyber/standards bodies: no AI-specific documents found in search.. Not reached: rajpatra.dop.gov.np gazette search; parliament.gov.np bills; Digital Nepal Framework AI pillar review; Nepal Telecommunications Authority site search; Nepal Bureau of Standards and Metrology; Public Procurement Monitoring Office; opmcm.gov.np cabinet decisions for Shrawan 2082 (search and guessed archive URLs returned nothing; MoCIT cabinet-decision listing shows only 2083 items on page 1). Could not verify: Cabinet approval date of the AI Policy; Final NRB AI Guidelines; Founding instrument of the National AI Centre. public-sector, procurement, cyber-security, transparency, standards, index-readiness, international: no material found.\nWording note 2026-10-19 (coverage_audit.no_material_found_note): The gazette, parliament's bills, the telecoms authority and the standards and procurement bodies were not searched, and the Cabinet approval date of the AI policy remains to be checked.\nConsultation status 2026-10-19 (i-f913e23b645f): no closing date found on the NRB notice link (resolves to the draft PDF) and the 14-page draft PDF; kept as consultation (no official closing date; not listed as open in the panel once older than 6 months)"
   },
   "changes": [
+    {
+      "id": "c-0a68176b3577",
+      "date": "2026-10-26",
+      "recorded": "2026-10-26",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "NPL",
+      "instrument_id": "i-f913e23b645f",
+      "title": "Artificial Intelligence Guidelines (draft for consultation)",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://www.nrb.org.np/contents/uploads/2025/12/AI-Guidelines.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-667d8d36515e",
       "date": "2026-10-19",

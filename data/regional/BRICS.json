@@ -64,7 +64,7 @@
       "metadata_gaps": [],
       "source_kind": "official_document",
       "evidence_reference": "Text read on the Brazilian presidency site brics.br; the PDF has no printed date or place. The presidency news pages say BRICS leaders adopted/signed the 'Declaration on Global Governance of AI' at the 17th Summit, which closed on 7 July (2025 per page context); one news page says 'This Saturday, July 6' without year. File name suggests 6 July 2025 but URL dates are not used, so month only. The brics.br documents listing page was blocked by the permission system. | Independent check 2026-10-21: Official brics.br (Brazilian presidency) PDF; title and all summary points (UN-centred governance, national regulatory rights, data governance/privacy/IP, access for developing countries, open source/open science, bias, misinformation, cybercrime, human oversight, transparency, accountability, non-military scope) confirmed.; The PDF prints no date, no place and no mention of the 17th BRICS Summit; the only date indication is the file name '250706' (6 July 2025). publication_date '2025-07' is plausible but not printed in the document; the issuer suffix '(17th BRICS Summit, Rio de Janeiro)' and ",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "official_publication_or_full_text_page",
       "source_id": "s-1a6951a91b28",
       "organization_id": "o-71f77469c077",
@@ -127,14 +127,14 @@
         "international"
       ],
       "date_reviewed": "2026-10-21",
-      "checked_date": "2026-10-21",
-      "check_method": "WebFetch (research pass)",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": null,
       "final_url": "https://brics.br/en/documents/presidency-documents/250706_brics_ggai_declarationfinal.pdf/@@download/file",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": null,
       "document_language": "en",
-      "error": null,
+      "error": "URLError: <urlopen error [Errno -5] No address associated with hostname>",
       "content_type": null
     }
   ],
@@ -192,6 +192,21 @@
     "technical_note": "International-organisations research pass 2026-10-21. Searched: brics.br (AI statement PDF, news pages, FAQ); web search for 2026 India presidency texts | Could not verify: BRICS presidency documents listing page (Request blocked by the permission system; used to confirm the date of the AI statement.)"
   },
   "changes": [
+    {
+      "id": "c-f57b5082c05b",
+      "date": "2026-10-26",
+      "recorded": "2026-10-26",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "BRICS",
+      "instrument_id": "i-107a3daff00f",
+      "title": "BRICS Leaders' Statement on the Global Governance of Artificial Intelligence",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://brics.br/en/documents/presidency-documents/250706_brics_ggai_declarationfinal.pdf/@@download/file",
+      "needs_review": false
+    },
     {
       "id": "c-f634cb2f885f",
       "date": "2026-10-21",

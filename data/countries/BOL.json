@@ -67,7 +67,7 @@
       "first_recorded": "2026-10-12",
       "last_changed": null,
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "source_id": "s-ba404bfe82a4",
       "evidence_reference": "curl (browser user agent, --max-time 60): full 31-page annex PDF and 2-page Supreme Decree 5367 PDF read (pdftotext); decree dated 2 April 2025 in its text; AI initiative 12.1.1 under Pillar 12 'Gobierno inteligente' (Axis 3, Digital Government); local-retry-2026-10-18: decree text read on the Official Gazette norm page (verGratis_gob/280669; Arts. 1-3, sole additional provision on AGETIC, dated 2 April 2025) and gazette search listing (edition 1883NEC, publication date 2025-04-02); gazette annex PDF (descargarAnexo/923, 31 pages) and AGETIC annex PDF (headless browser, 31 pages) both opened."
@@ -103,14 +103,14 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-18",
-      "checked_date": "2026-10-18",
-      "check_method": "local-retry-2026-10-18: headless browser fetch (curl connection timed out); 31-page annex PDF opened",
-      "http_status": 200,
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
+      "http_status": 403,
       "final_url": "https://agetic.gob.bo/sites/default/files/2025-06/Anexo%20D.S%20N%C2%B0%205367%20-%20Agenda%20Digital%202030-firmado.pdf",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": null,
       "document_language": "es",
-      "error": null,
+      "error": "HTTP Error 403: Forbidden",
       "content_type": "application/pdf"
     },
     {
@@ -130,8 +130,8 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-18",
-      "checked_date": "2026-10-18",
-      "check_method": "local-retry-2026-10-18: curl (browser user agent) over http; decree text read on the norm page; gazette annex PDF (descargarAnexo/923) opened",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "http://www.gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/280669",
       "link_status": "reachable",
@@ -234,6 +234,21 @@
     "last_sweep": "2026-10-20"
   },
   "changes": [
+    {
+      "id": "c-ad1bbc521928",
+      "date": "2026-10-26",
+      "recorded": "2026-10-26",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "BOL",
+      "instrument_id": "i-b631048ee80f",
+      "title": "Digital Agenda 2030 (approved by Supreme Decree No. 5367)",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://agetic.gob.bo/sites/default/files/2025-06/Anexo%20D.S%20N%C2%B0%205367%20-%20Agenda%20Digital%202030-firmado.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-8ecc49d777ea",
       "date": "2026-10-12",

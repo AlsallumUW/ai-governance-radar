@@ -121,7 +121,7 @@
       "first_recorded": "2026-10-18",
       "last_changed": null,
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
+      "link_status": "broken",
       "document_access_type": "original_government_document",
       "source_id": "s-7e1f83bac96d",
       "evidence_reference": "local-retry-2026-10-18: full law text read on the official BACN (Biblioteca y Archivo del Congreso de la Nacion) law page via headless browser (curl got connection reset); page states Fecha de Promulgacion 27-11-2025 and Fecha de Publicacion 27-11-2025 and links the official PDF (17.54 MB, not downloaded). Checked Arts. 1-3, the impact-assessment and information-duty provisions, 30 (objection incl. profiling), 33 (automated decisions), 34 (Agency), 57 (entry into force 24 months after official publication), 60, 61."
@@ -169,8 +169,8 @@
         "sectoral"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full PDF read (pdftotext) - Secretaría General note, Resolución N° 12.677 of 4 March 2026 and its 10-page annex; Poder Judicial news page of 9 April 2026 links the PDF",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://www.pj.gov.py/descargas/ID1-133_resolucion_nro_12677_politica_operacional_que_establece_directrices_para_el_uso_de_sistemas_de_inteligencia_artificial_version_1.pdf",
       "link_status": "reachable",
@@ -196,14 +196,14 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-18",
-      "checked_date": "2026-10-18",
-      "check_method": "local-retry-2026-10-18: headless browser (curl connection reset); full HTML law text read",
-      "http_status": 200,
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
+      "http_status": 523,
       "final_url": "https://www.bacn.gov.py/leyes-paraguayas/12924/ley-n-75932025--de-proteccin-de-datos-personales-en-la-repblica-del-paraguay",
-      "link_status": "reachable",
+      "link_status": "broken",
       "page_title": "Ley Nº 7593/2025 / DE PROTECCIÓN DE DATOS PERSONALES EN LA REPÚBLICA DEL PARAGUAY.",
       "document_language": "es",
-      "error": null,
+      "error": "HTTP Error 523: <none>",
       "content_type": "text/html"
     }
   ],
@@ -301,6 +301,21 @@
     "last_sweep": "2026-10-20"
   },
   "changes": [
+    {
+      "id": "c-97db8f34da4e",
+      "date": "2026-10-26",
+      "recorded": "2026-10-26",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "PRY",
+      "instrument_id": "i-21f41edcd6e6",
+      "title": "Law No. 7593/2025 on Personal Data Protection in the Republic of Paraguay",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "broken",
+      "source_url": "https://www.bacn.gov.py/leyes-paraguayas/12924/ley-n-75932025--de-proteccin-de-datos-personales-en-la-repblica-del-paraguay",
+      "needs_review": false
+    },
     {
       "id": "c-889b3576f089",
       "date": "2026-10-18",

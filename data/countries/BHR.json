@@ -146,7 +146,7 @@
       "verification_date": "2026-10-13",
       "verification_level": "reviewed_primary_metadata",
       "metadata_gaps": [],
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "source_id": "s-f5f3c20429ed",
       "organization_id": "o-c5a9b2fde28d",
@@ -228,8 +228,8 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-06",
-      "checked_date": "2026-10-06",
-      "check_method": "Read through web fetch during deep review",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://www.iga.gov.bh/Media/Publications/National%20Digital%20Policies/General%20Policy%20for%20the%20Use%20of%20AI%20-%20%20Final%2030%20Jul%202025.pdf",
       "link_status": "reachable",
@@ -254,8 +254,8 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-18",
-      "checked_date": "2026-10-18",
-      "check_method": "curl (browser user agent): PDF read in full with pdftotext (37 pages)",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://www.pdp.gov.bh/en/assets/pdf/regulations.pdf",
       "link_status": "reachable",
@@ -283,14 +283,14 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "curl (browser user agent, --max-time 60): sjc.bh home page read (links to the Arabic and English Code); English PDF (51 pages, '2026 Edition') read in full with pdftotext, incl. the 2026 Edition note and Seventeenth provision (paras 24.1-24.27); Arabic PDF (50 pages, 'إصدار 2026') title page and 2026 note checked.",
-      "http_status": 200,
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
+      "http_status": 403,
       "final_url": "https://www.sjc.bh/files/CodeofJudicialConductArabic.pdf",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": "مدونة قواعد السلوك الخاصة بأعضاء السلطة القضائية",
       "document_language": "ar",
-      "error": null,
+      "error": "HTTP Error 403: Forbidden",
       "content_type": "application/pdf"
     },
     {
@@ -312,14 +312,14 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "curl (browser user agent, --max-time 60): official English translation PDF ('2026 Edition', 51 pages) read in full with pdftotext.",
-      "http_status": 200,
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
+      "http_status": 403,
       "final_url": "https://www.sjc.bh/files/CodeofJudicialConduct.pdf",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": "Code of Conduct for the Members of the Judiciary",
       "document_language": "en",
-      "error": null,
+      "error": "HTTP Error 403: Forbidden",
       "content_type": "application/pdf"
     },
     {
@@ -338,8 +338,8 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-18",
-      "checked_date": "2026-10-18",
-      "check_method": "curl (browser user agent): Official Gazette extract (40 pages) hosted by iGA; header and law title read with pdftotext",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://www.iga.gov.bh/Media/Others/%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%AD%D9%85%D8%A7%D9%8A%D8%A9%20%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D9%81%D9%8A%20%D9%85%D9%85%D9%84%D9%83%D8%A9%20%D8%A7%D9%84%D8%A8%D8%AD%D8%B1%D9%8A%D9%86.pdf",
       "link_status": "reachable",
@@ -458,6 +458,36 @@
     "last_sweep": "2026-10-19"
   },
   "changes": [
+    {
+      "id": "c-65f32f451506",
+      "date": "2026-10-26",
+      "recorded": "2026-10-26",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "BHR",
+      "instrument_id": "i-e4875f4a683f",
+      "title": "Code of Conduct for the Members of the Judiciary (2026 Edition), including the Guidelines on the Use of Artificial Intelligence Systems in Judicial Work",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://www.sjc.bh/files/CodeofJudicialConductArabic.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-65f32f451506",
+      "date": "2026-10-26",
+      "recorded": "2026-10-26",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "BHR",
+      "instrument_id": "i-e4875f4a683f",
+      "title": "Code of Conduct for the Members of the Judiciary (2026 Edition), including the Guidelines on the Use of Artificial Intelligence Systems in Judicial Work",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://www.sjc.bh/files/CodeofJudicialConduct.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-65ff549f9cc3",
       "date": "2026-10-19",

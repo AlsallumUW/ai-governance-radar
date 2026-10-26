@@ -122,7 +122,7 @@
       "first_recorded": "2026-10-12",
       "last_changed": null,
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "source_id": "s-b55e52d9de67",
       "evidence_reference": "local-retry-2026-10-18: official signed text (26-page PDF) published by the National Privacy Commission at privacy.gov.ph downloaded via curl with a browser user agent and read; title, Republic Act No. 10173 and 'Approved: AUG 15 2012' read from the signature page; effectivity clause (Sec. 45) read. Official Gazette entry still shows a bot-verification challenge. curl (--max-time 60, browser user agent and default) returned HTTP 403 (bot-protection challenge) and WebFetch returned HTTP 403; text not read. Gazette URL and approval date located via web search of officialgazette.gov.ph; mirror.officialgazette.gov.ph also 403. Status note: Gazette text not opened in this review (site blocks automated access). Publication date not re-verified (date audit 2026-10-13): Not read: curl (browser UA) HTTP 403 and WebFetch HTTP 403 (bot protection). Also tried privacy.gov.ph DPA PDF (403), legacy.senate.gov.ph RA 10173 PDF (403), elibrary.judiciary.gov.ph (TLS fail/503). Date currently rests on the gazette URL only, never confirmed in the entry. Link note: As of 18 October 2026 (checked with curl with a browser user agent from a connection in Saudi Arabia and a desktop browser) the Official Gazette site shows a bot-verification challenge; no other official copy was found."
@@ -291,7 +291,7 @@
       "first_recorded": "2026-10-18",
       "last_changed": null,
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "source_id": "s-d1604b6d6eb4",
       "evidence_reference": "local-retry-2026-10-18: listed on privacy.gov.ph/advisories/ (opened via curl); 5-page signed PDF downloaded via headless browser (curl connection reset) and read with pdfplumber; advisory number, 'DATE : 19 December 2024', subject and signatories read from the document. The earlier 2024/12 upload path now returns 404; the commission's listing links the 2025/02 path."
@@ -345,7 +345,7 @@
       "first_recorded": "2026-10-22",
       "last_changed": null,
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "source_id": "s-0dc1544146ac",
       "evidence_reference": "browser-check-2026-10-22: Supreme Court news page and the A.M. PDF opened on sc.judiciary.gov.ph in a desktop browser and read."
@@ -487,8 +487,8 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (--max-time 60): 12-page PDF downloaded and read with pdftotext; memorandum number, signatory and 24 June 2026 date read from the cover memorandum.",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://www.bsp.gov.ph/Regulations/Issuances/2026/M-2026-031.pdf",
       "link_status": "reachable",
@@ -515,14 +515,14 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-18",
-      "checked_date": "2026-10-18",
-      "check_method": "local-retry-2026-10-18: curl with browser user agent, HTTP 200, 26-page PDF read with pdfplumber; Official Gazette entry still 403 bot-verification (curl and headless browser).",
-      "http_status": 200,
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
+      "http_status": 403,
       "final_url": "https://privacy.gov.ph/wp-content/uploads/2017/03/DPA-of-2012.pdf",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": null,
       "document_language": "en",
-      "error": null,
+      "error": "HTTP Error 403: Forbidden",
       "content_type": "application/pdf"
     },
     {
@@ -545,14 +545,14 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-18",
-      "check_method": "local-retry-2026-10-18: DepEd page returned HTTP 403 to curl and a blank page (HTTP 403) to headless browser; text still not read.",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 403,
       "final_url": "https://www.deped.gov.ph/2026/02/20/february-20-2026-do-003-s-2026-foundational-guidelines-on-artificial-intelligence-ai-in-basic-education/",
       "link_status": "inaccessible",
       "page_title": null,
       "document_language": "en",
-      "error": "Bot-verification challenge (HTTP 403) to curl and headless browser",
+      "error": "HTTP Error 403: Forbidden",
       "content_type": "text/html"
     },
     {
@@ -573,14 +573,14 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-18",
-      "check_method": "local-retry-2026-10-18: ictstatistics.dict.gov.ph and dict.gov.ph (including the dict.gov.ph/ictstatistics/ path) returned HTTP 403 bot-verification to curl and headless browser; text still not read.",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 403,
       "final_url": "https://ictstatistics.dict.gov.ph/wp-content/uploads/2024/05/DRAFT-COPY_JMC-on-the-Principles-for-an-Ethical-and-Trustworthy-Use-of-Artificial-Intelligence-AI-in-Government.pdf",
       "link_status": "inaccessible",
       "page_title": null,
       "document_language": "en",
-      "error": "Bot-verification challenge (HTTP 403) to curl and headless browser",
+      "error": "HTTP Error 403: Forbidden",
       "content_type": "text/html"
     },
     {
@@ -601,14 +601,14 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-18",
-      "checked_date": "2026-10-18",
-      "check_method": "local-retry-2026-10-18: headless browser download (curl connection reset), 5-page PDF read with pdfplumber; linked from privacy.gov.ph/advisories/.",
-      "http_status": 200,
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
+      "http_status": 403,
       "final_url": "https://privacy.gov.ph/wp-content/uploads/2025/02/Advisory-2024.12.19-Guidelines-on-Artificial-Intelligence-w-SGD.pdf",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": null,
       "document_language": "en",
-      "error": null,
+      "error": "HTTP Error 403: Forbidden",
       "content_type": "application/pdf"
     },
     {
@@ -631,14 +631,14 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-22",
-      "checked_date": "2026-10-22",
-      "check_method": "browser-check-2026-10-22: Supreme Court news page and the A.M. PDF opened on sc.judiciary.gov.ph in a desktop browser and read.",
-      "http_status": 200,
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
+      "http_status": null,
       "final_url": "https://sc.judiciary.gov.ph/sc-adopts-framework-for-judiciarys-use-of-artificial-intelligence/",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": null,
       "document_language": "en",
-      "error": null,
+      "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.",
       "content_type": "text/html"
     },
     {
@@ -659,8 +659,8 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-22",
-      "checked_date": "2026-10-22",
-      "check_method": "browser-check-2026-10-22: BSP issuances list and issuance page (date issued 6 July 2026) opened in a desktop browser; signed PDF read.",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://www.bsp.gov.ph/Regulations/Issuances/2026/M-2026-034.pdf",
       "link_status": "reachable",
@@ -769,6 +769,51 @@
     "last_sweep": "2026-10-22"
   },
   "changes": [
+    {
+      "id": "c-7f5d8ee3352d",
+      "date": "2026-10-26",
+      "recorded": "2026-10-26",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "PHL",
+      "instrument_id": "i-a8cb8bb439f9",
+      "title": "Data Privacy Act of 2012 (Republic Act No. 10173)",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://privacy.gov.ph/wp-content/uploads/2017/03/DPA-of-2012.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-fd6e174533dc",
+      "date": "2026-10-26",
+      "recorded": "2026-10-26",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "PHL",
+      "instrument_id": "i-1f5c660f2c6d",
+      "title": "NPC Advisory No. 2024-04: Guidelines on applying the Data Privacy Act of 2012 to AI systems processing personal data",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://privacy.gov.ph/wp-content/uploads/2025/02/Advisory-2024.12.19-Guidelines-on-Artificial-Intelligence-w-SGD.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-e5f8557deb53",
+      "date": "2026-10-26",
+      "recorded": "2026-10-26",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "PHL",
+      "instrument_id": "i-79ee0adedc67",
+      "title": "A.M. No. 25-11-28-SC: Governance Framework on the Use of Human-Centered Augmented Intelligence in the Judiciary",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://sc.judiciary.gov.ph/sc-adopts-framework-for-judiciarys-use-of-artificial-intelligence/",
+      "needs_review": false
+    },
     {
       "id": "c-eb8d9a776dd2",
       "date": "2026-10-22",

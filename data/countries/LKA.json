@@ -232,7 +232,7 @@
       "first_recorded": "2026-10-22",
       "last_changed": null,
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "source_id": "s-8d7c6f89235c",
       "evidence_reference": "wave3-2026-10-22: Strategy PDF on mot.gov.lk (Ministry of Technology), first ~100k characters read; cover, foreword and strategy chapters"
@@ -288,8 +288,8 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): 29-page PDF downloaded and read with pdftotext (title, certification 19 March 2022, Gazette supplement 25 March 2022, s.18-19 automated individual decision making). Commencement checked against DPA Circular 01/2026 (7 Aug 2026) and Gazette Extraordinary No. 2498/16 (22 July 2026) on dpa.gov.lk. documents.gov.lk copies (view/acts/2022/3/09-2022_E.pdf) returned 404.",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://www.parliament.lk/uploads/acts/gbills/english/6242.pdf",
       "link_status": "reachable",
@@ -315,8 +315,8 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): PDF linked from the DPA's official Acts/Guidelines page (dpa.gov.lk/guidelines.php) downloaded and read with pdftotext (title, certification 30 Oct 2025, Gazette supplement 31 Oct 2025, s.5 amending s.18, s.6 replacing s.19).",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://dpa.gov.lk/acts/22-2025_E_251104_201549%20(1).pdf",
       "link_status": "reachable",
@@ -345,8 +345,8 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): UGC policy page (article 2768, served with HTTP 500 status but full content) and the attached 42-page PDF (10.4 MB) downloaded; read with pdftotext (cover, contents, principles, policy statements, scope, risk-based governance). Approval date (24 June 2026) from the Ministry of Digital Economy news item on mode.gov.lk (read from the site's published content bundle).",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://www.ugc.ac.lk/attachments/2768_National%20Policy%20Framework%20for%20the%20Use%20of%20Artificial%20Intelligence%20%20in%20the%20State%20University%20System%20of%20Sri%20Lanka.pdf",
       "link_status": "reachable",
@@ -375,14 +375,14 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-22",
-      "checked_date": "2026-10-22",
-      "check_method": "wave3-2026-10-22: Strategy PDF on mot.gov.lk (Ministry of Technology), first ~100k characters read; cover, foreword and strategy chapters",
-      "http_status": 200,
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
+      "http_status": null,
       "final_url": "https://mot.gov.lk/assets/files/National_AI_strategy_for_Sri_Lanka-08a88c78d541a0746aeb8c71ed312231.pdf",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": null,
       "document_language": "en",
-      "error": null,
+      "error": "URLError: <urlopen error [Errno -5] No address associated with hostname>",
       "content_type": "application/pdf"
     }
   ],
@@ -467,6 +467,21 @@
     "last_sweep": "2026-10-22"
   },
   "changes": [
+    {
+      "id": "c-2da428927bda",
+      "date": "2026-10-26",
+      "recorded": "2026-10-26",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "LKA",
+      "instrument_id": "i-a816d7d9d9f6",
+      "title": "AI Sri Lanka 2028: Sri Lanka's National Strategy on AI (draft for public consultation)",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://mot.gov.lk/assets/files/National_AI_strategy_for_Sri_Lanka-08a88c78d541a0746aeb8c71ed312231.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-6fed87bfb6a3",
       "date": "2026-10-22",

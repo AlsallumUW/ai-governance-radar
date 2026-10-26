@@ -95,7 +95,7 @@
       "first_recorded": "2026-10-13",
       "last_changed": null,
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "sectors": [
         "cross-sector"
@@ -202,7 +202,7 @@
       "first_recorded": "2026-10-13",
       "last_changed": null,
       "verification_level": "primary_source_located",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "sectors": [
         "cross-sector"
@@ -255,7 +255,7 @@
       "first_recorded": "2026-10-13",
       "last_changed": null,
       "verification_level": "primary_source_located",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "sectors": [
         "cross-sector"
@@ -307,7 +307,7 @@
       "first_recorded": "2026-10-13",
       "last_changed": null,
       "verification_level": "primary_source_located",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "sectors": [
         "cross-sector"
@@ -400,8 +400,8 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "curl (browser user agent, --max-time 60): full 70-page gazette text (Sluzhben vesnik 42/2020, hosted on the Personal Data Protection Agency's legislation page) read with pdftotext, incl. art. 26 and arts. 121-124; amending laws 294/2021 and 101/2025 read from the same page; re-checked 2026-10-13 (second pass): curl re-read of the gazette copy (art. 26, art. 124) and of the 101/2025 amendment file re-posted on the DPA page in 2026 (Zakon_za_dopolnuvanje_na_ZZLP-1.pdf, same NATO-transfer amendment); WebFetch of the PDF not needed as curl succeeded",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://azlp.mk/wp-content/uploads/2022/11/zakon_za_zastita_na_licnite_podatoci.pdf",
       "link_status": "reachable",
@@ -429,14 +429,14 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "curl (browser user agent, --max-time 60): full strategy PDF (incl. Action Plan 2025-2027) read with pdftotext; MDT strategy page states the Government adopted it; launch date 17/10/2025 from MDT news item and press-conference page; re-checked 2026-10-13: curl re-read of the PDF and strategy page, WebFetch of the strategy page (states Government adoption, no date), MDT Annual Report on the 2025 Work Plan (portal.mdt.gov.mk izvestai-mdt-file-oYx9.pdf) item 12: 'Усвоена е националната ИКТ стратегија од страна на Владата во октомври 2025 година'",
-      "http_status": 200,
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
+      "http_status": null,
       "final_url": "https://portal.mdt.gov.mk/post-body-files/strategija-za-razvoj-na-ikt-smart-mk-2030-file-mBdU.pdf",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": null,
       "document_language": "mk",
-      "error": null,
+      "error": "URLError: <urlopen error timed out>",
       "content_type": "application/pdf"
     },
     {
@@ -457,8 +457,8 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "curl (browser user agent, --max-time 60): full final audit report (no. 08 2024 03 13, dated June 2025) read with pdftotext; publication date 08.08.2025 from the State Audit Office report page; re-checked 2026-10-13: curl re-read of the report title page (no. 08 2024 03 13, June 2025) and WebFetch of the State Audit Office report page (dated 08.08.2025, performance audit, audited entity MDT)",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://dzr.mk/sites/default/files/2025-08/KRI_RUS_Vestacka_intelegencija_FINAL.pdf",
       "link_status": "reachable",
@@ -484,14 +484,14 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "curl (browser user agent): ISRSM catalogue detail page read (reference, Macedonian and English title, publication date, stage 60.60, adopted standards); found via the catalogue's advanced search for 'Вештачка интелигенција' and by reference number; WebFetch of the detail page timed out",
-      "http_status": 200,
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
+      "http_status": 403,
       "final_url": "https://isrsm.gov.mk/mk/project/show/isrsm:proj:80319",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": "МКС EN ISO/IEC 23894:2024",
       "document_language": "mk",
-      "error": null,
+      "error": "HTTP Error 403: Forbidden",
       "content_type": "text/html"
     },
     {
@@ -510,14 +510,14 @@
         "standards"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "curl (browser user agent): ISRSM catalogue detail page read (reference, Macedonian and English title, publication date, stage 60.60, adopted standards); found via the catalogue's advanced search for 'Вештачка интелигенција' and by reference number; WebFetch of the detail page timed out",
-      "http_status": 200,
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
+      "http_status": 403,
       "final_url": "https://isrsm.gov.mk/mk/project/show/isrsm:proj:77727",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": "МКС EN ISO/IEC 22989:2023",
       "document_language": "mk",
-      "error": null,
+      "error": "HTTP Error 403: Forbidden",
       "content_type": "text/html"
     },
     {
@@ -537,14 +537,14 @@
         "cyber-security"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "curl (browser user agent): ISRSM catalogue detail page read (reference, Macedonian and English title, publication date, stage 60.60, adopted standards); found via the catalogue's advanced search for 'Вештачка интелигенција' and by reference number; WebFetch of the detail page timed out",
-      "http_status": 200,
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
+      "http_status": 403,
       "final_url": "https://isrsm.gov.mk/mk/project/show/isrsm:proj:86744",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": "МКС ETSI EN 304 223 V2.1.1:2026",
       "document_language": "mk",
-      "error": null,
+      "error": "HTTP Error 403: Forbidden",
       "content_type": "text/html"
     }
   ],
@@ -644,6 +644,66 @@
     "last_sweep": "2026-10-24"
   },
   "changes": [
+    {
+      "id": "c-5d66e73d72aa",
+      "date": "2026-10-26",
+      "recorded": "2026-10-26",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "MKD",
+      "instrument_id": "i-777da48c7256",
+      "title": "ICT Development Strategy: SMART/MK 2030",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://portal.mdt.gov.mk/post-body-files/strategija-za-razvoj-na-ikt-smart-mk-2030-file-mBdU.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-a7522884e237",
+      "date": "2026-10-26",
+      "recorded": "2026-10-26",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "MKD",
+      "instrument_id": "i-2e5efe713e8d",
+      "title": "Macedonian Standard MKS EN ISO/IEC 23894:2024, Information technology - Artificial intelligence - Guidance on risk management (ISO/IEC 23894:2023)",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://isrsm.gov.mk/mk/project/show/isrsm:proj:80319",
+      "needs_review": false
+    },
+    {
+      "id": "c-076ba3f369e2",
+      "date": "2026-10-26",
+      "recorded": "2026-10-26",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "MKD",
+      "instrument_id": "i-7f773f017a6f",
+      "title": "Macedonian Standard MKS EN ISO/IEC 22989:2023, Information technology - Artificial intelligence - Artificial intelligence concepts and terminology",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://isrsm.gov.mk/mk/project/show/isrsm:proj:77727",
+      "needs_review": false
+    },
+    {
+      "id": "c-da83b0d5c24a",
+      "date": "2026-10-26",
+      "recorded": "2026-10-26",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "MKD",
+      "instrument_id": "i-e866b9429256",
+      "title": "Macedonian Standard MKS ETSI EN 304 223 V2.1.1:2026, Securing Artificial Intelligence (SAI); Baseline Cyber Security Requirements for AI Models and Systems",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://isrsm.gov.mk/mk/project/show/isrsm:proj:86744",
+      "needs_review": false
+    },
     {
       "id": "c-ede7467bd7f9",
       "date": "2026-10-13",

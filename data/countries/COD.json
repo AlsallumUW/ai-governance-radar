@@ -70,7 +70,7 @@
       "first_recorded": "2026-10-12",
       "last_changed": null,
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "source_id": "s-cea4179402fb",
       "evidence_reference": "curl (browser user agent, --max-time 60): full 124-page PDF read (pdftotext) from presidence.cd; the Presidency's PNN page links this PDF. Four pillars, AI action ('Initier des projets en intelligence artificielle...') and validation on 5 September 2019 confirmed in the text."
@@ -172,14 +172,14 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-18",
-      "check_method": "curl (browser user agent): HTTP 200 application/pdf (link recheck)",
-      "http_status": 200,
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
+      "http_status": null,
       "final_url": "https://www.presidence.cd/uploads/files/Presentation%20PNN_03_final.pdf",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": null,
       "document_language": "fr",
-      "error": null,
+      "error": "URLError: <urlopen error [Errno 111] Connection refused>",
       "content_type": "application/pdf"
     },
     {
@@ -200,8 +200,8 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-18",
-      "checked_date": "2026-10-18",
-      "check_method": "headless browser (curl fails: certificate name mismatch); HTTP 200, full form text read",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://arptc.gouv.cd/formulaire-de-declaration-de-fourniture-des-plateformes-dintelligence-artificielle/",
       "link_status": "reachable",
@@ -311,6 +311,21 @@
     "last_sweep": "2026-10-25"
   },
   "changes": [
+    {
+      "id": "c-c9ceb1cac022",
+      "date": "2026-10-26",
+      "recorded": "2026-10-26",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "COD",
+      "instrument_id": "i-69d86ee1e7ac",
+      "title": "National Digital Plan \"Horizon 2025\" (For a connected and high-performing DRC)",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://www.presidence.cd/uploads/files/Presentation%20PNN_03_final.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-608c78a9b43a",
       "date": "2026-10-18",

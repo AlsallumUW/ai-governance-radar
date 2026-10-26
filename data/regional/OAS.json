@@ -67,7 +67,7 @@
       "metadata_gaps": [],
       "source_kind": "official_publication",
       "evidence_reference": "OAS event page 'Open regional public consultation: inter-American guidelines on data governance and AI' lists start date 11/8/2024 (US format = 8 Nov 2024) and links the guidelines in EN/ES; month only given because the exact day format is ambiguous. Derechos Digitales commentary says the draft was published 12 Nov and presented at the Red GEALC ministerial 26-27 Nov 2024, with approval expected at the 2025 Summit of the Americas; no evidence of final adoption found. OECD.AI hosts a copy (Publicación_Lineamientos_19-11-24_ENG.pdf) — not an official OAS URL, so not used. | Independent check 2026-10-21: OAS event page confirms an open regional public consultation on the draft guidelines starting 8 Nov 2024, organised by the Department for Effective Public Management with the GEALC Network, 12 thematic areas, English and Spanish versions, following a 2024 OAS General Assembly mandate.; 'Final adoption has not been announced' is not something the source states.",
-      "link_status": "reachable",
+      "link_status": "broken",
       "document_access_type": "official_publication_or_full_text_page",
       "source_id": "s-b00e59bd5d5e",
       "organization_id": "o-12acf499e600",
@@ -156,14 +156,14 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-21",
-      "checked_date": "2026-10-21",
-      "check_method": "WebFetch (research pass)",
-      "http_status": null,
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
+      "http_status": 500,
       "final_url": "https://oas.org/ext/en/main/calendar/event?id=570",
-      "link_status": "reachable",
+      "link_status": "broken",
       "page_title": null,
       "document_language": "es",
-      "error": null,
+      "error": "HTTP Error 500: Internal Server Error",
       "content_type": null
     }
   ],
@@ -221,6 +221,21 @@
     "technical_note": "International-organisations research pass 2026-10-21. Searched: https://www.oas.org/en/member_states/default.asp; Inter-American Juridical Committee documents (oas.org/en/sla/iajc/docs, oas.org/es/sla/cji/docs): CJI/DEC. 01 (XCIX-O/21), CJI/RES. 281 (CII-O/23), CJI/doc. 662/22, CJI/RES. 291 (CIV-O/24), CJI/RES. 293 (CV-O/24); OAS calendar pages for VII REMCYT (event 558) and MIGDIA consultation (event 570); OAS General Assembly 54th session declarations and resolutions (AG/doc.5871/24); Web searches EN/ES on OAS General Assembly 2023-2026 AI resolutions, CICTE, CITEL, IACHR AI reports | Could not verify: Declaration and Plan of Action of the Seventh Meeting of Ministers and High Authorities of Science and Technology (VII REMCYT): Towards the Safe, Secure and Trustworthy Development and Deployment of Artificial Intelligence in the Americas — The Importance of Governance, Regulatory, and Institutional Frameworks (Dedicated AI declaration adopted under CIDI at the VII REMCYT (Washington, D.C., 12-13 December 2024; adoption 13 December 2024 per dig.watch). The OAS meeting page confirms the meeting and names the outcome but does not link it; the official PDF on oas.org failed to load on four attempts, so the printed date and document number could not be read. High-priority to add once the PDF opens.)"
   },
   "changes": [
+    {
+      "id": "c-123e2a050588",
+      "date": "2026-10-26",
+      "recorded": "2026-10-26",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "OAS",
+      "instrument_id": "i-c0919ed83aa2",
+      "title": "Inter-American Guidelines on Data Governance and Artificial Intelligence",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "broken",
+      "source_url": "https://oas.org/ext/en/main/calendar/event?id=570",
+      "needs_review": false
+    },
     {
       "id": "c-1673ae80e0b9",
       "date": "2026-10-21",

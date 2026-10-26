@@ -166,7 +166,7 @@
       ],
       "source_kind": "official_document",
       "evidence_reference": "deep-review-2026-10-07. Status note: The OMSAR news item is not readable by automated access. OMSAR moved to a new website in 2025-26: the former English PDF (www.omsar.gov.lb/Assets/DT_EN.pdf) now returns 404 and the Arabic attachment URL is behind a Cloudflare challenge. Summary note: The AI-specific content could not be read from the official copy during this review. Link note: On 18 October 2026 the source link was replaced because OMSAR's new website carries the strategy page with a download link (PDF, 3.7 MB, opened in a browser); previous URL: https://omsar.gov.lb/getattachment/6bc0abf6-d9d9-479b-a6f1-7663abcd9ee9/. | Publication date refined 2026-10-21 from year 2022: month printed on the cover and in the acknowledgements of the published (May 2022 update) strategy — https://omsar.gov.lb/wp-content/uploads/2026/02/DT_EN.pdf",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "lifecycle": "adopted",
       "first_recorded": "2026-10-07",
@@ -401,8 +401,8 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-07",
-      "checked_date": "2026-10-19",
-      "check_method": "Full PDF downloaded from the Parliament law database (Webservice GetLawFile, ID 1793) and read; cover page checked visually",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://www.lp.gov.lb/LawDetails?Id=1793",
       "link_status": "reachable",
@@ -429,8 +429,8 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-07",
-      "checked_date": "2026-10-19",
-      "check_method": "Read in full during deep review (downloaded and text-extracted)",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://www.mitai.gov.lb/assets/MITAI_Strategy_Full_Presentation-C6XQD81p.pdf",
       "link_status": "reachable",
@@ -456,14 +456,14 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-07",
-      "checked_date": "2026-10-18",
-      "check_method": "desktop browser from a connection in Saudi Arabia",
-      "http_status": 200,
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
+      "http_status": 403,
       "final_url": "https://omsar.gov.lb/en/digital-transformation/digital-transformation-strategy-2020-2030/",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": null,
       "document_language": "ar",
-      "error": null,
+      "error": "HTTP Error 403: Forbidden",
       "content_type": null
     },
     {
@@ -484,8 +484,8 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-07",
-      "checked_date": "2026-10-07",
-      "check_method": "Read in full during deep review (downloaded and text-extracted)",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://www.crdp.org/sites/default/files/2025-10/AI%20Educational%20Framework.pdf",
       "link_status": "reachable",
@@ -512,8 +512,8 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-07",
-      "checked_date": "2026-10-07",
-      "check_method": "Read in full during deep review (downloaded and text-extracted)",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://www.moph.gov.lb/userfiles/files/About%20MOPH/StrategicPlans/Vision%20for%20Digital%20Health%20Transformation/Digital%20Health%20Vision%20Final%20Version-.pdf",
       "link_status": "reachable",
@@ -539,8 +539,8 @@
         "sectoral"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "curl (browser user agent, --max-time 60): PDF downloaded from moph.gov.lb (200, application/pdf, 168 pages) and read with pdftotext; linked from the MoPH strategy page https://www.moph.gov.lb/en/Pages/0/82273/national-digital-health-transformation-strategy-2025-2030; launch date from the MoPH news page https://www.moph.gov.lb/en/Pages/0/80330/launching-the-national-strategy-for-digital-transformation-in-the-health-sector-2025-2030 ('Date: 03/09/2025').",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://www.moph.gov.lb/userfiles/files/About%20MOPH/StrategicPlans/National%20Digital%20Health%20Transformation%20Strategy%20%202025%20-%202030/Digital%20health%20transformation%20final.pdf",
       "link_status": "reachable",
@@ -694,6 +694,21 @@
     "last_sweep": "2026-10-19"
   },
   "changes": [
+    {
+      "id": "c-5cf887d29c5b",
+      "date": "2026-10-26",
+      "recorded": "2026-10-26",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "LBN",
+      "instrument_id": "i-fe2f9c4e77f2",
+      "title": "Lebanon Digital Transformation Strategy 2020-2030",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://omsar.gov.lb/en/digital-transformation/digital-transformation-strategy-2020-2030/",
+      "needs_review": false
+    },
     {
       "id": "c-03dd31af228c",
       "date": "2026-10-19",

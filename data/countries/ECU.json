@@ -68,7 +68,7 @@
       ],
       "source_kind": "consultation_portal",
       "evidence_reference": "curl (browser user agent, --max-time 60) and WebFetch both returned HTTP 502 from the Diálogo 2.0 consultation portal on 2026-10-12. Title, consultation period (1-11 August 2025) and URL confirmed from the adopted strategy's own account of its preparation (Registro Oficial Suplemento No. 206, 19 January 2026, section 3 'Mesas de socialización del documento preliminar'). Status note: The consultation page returned HTTP 502 on 2026-10-12, so the draft text itself could not be read. Link note: As of 18 October 2026 (checked with curl with a browser user agent from a connection in Saudi Arabia and a desktop browser) the consultation portal cannot be reached; no other official copy was found.",
-      "link_status": "inaccessible",
+      "link_status": "broken",
       "document_access_type": "official_publication_or_full_text_page",
       "source_id": "s-4834abd26d8c",
       "organization_id": "o-590896e386ef",
@@ -391,14 +391,14 @@
         "historical"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-18",
-      "check_method": "curl (browser user agent, --max-time 60) and WebFetch both returned HTTP 502 from the Diálogo 2.0 consultation portal on 2026-10-12. Title, consultation period (1-11 August 2025) and URL confirmed from the adopted strategy's own account of its preparation (Registro Oficial Suplemento No. 206, 19 January 2026, section 3 'Mesas de socialización del documento preliminar').",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 502,
       "final_url": "https://aportecivico.gobiernoelectronico.gob.ec/legislation/processes/78/draft_versions/99",
-      "link_status": "inaccessible",
+      "link_status": "broken",
       "page_title": null,
       "document_language": "es",
-      "error": "HTTP 502 Bad Gateway (curl and WebFetch)",
+      "error": "HTTP Error 502: Bad Gateway",
       "content_type": null
     },
     {
@@ -420,8 +420,8 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): MINTEL-hosted copy of Registro Oficial Primer Suplemento No. 206 (19 January 2026) read in full (pdftotext; 63 pages): Acuerdo MINTEL-MINTEL-2025-0030 signed 22 December 2025, in force on publication in the Registro Oficial, with the strategy annex. Same issue also read on the Constitutional Court's gazette repository (esacc.corteconstitucional.gob.ec). Launch confirmed on MINTEL press release No. 084 of 10 March 2026.",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://www.telecomunicaciones.gob.ec/wp-content/uploads/2026/02/Registro_Oficial_Ano_l_Primer_Suplemento_No_206_del_19_de_enero_de_2026.pdf",
       "link_status": "reachable",
@@ -446,8 +446,8 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): signed Quipux PDF on telecomunicaciones.gob.ec read in full (pdftotext; 4 pages): dated 16 November 2023, in force on signature.",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://www.telecomunicaciones.gob.ec/wp-content/uploads/2023/12/mintel-mintel-2023-0019-1-1.pdf",
       "link_status": "reachable",
@@ -473,8 +473,8 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): MINTEL-hosted scan of Registro Oficial Quinto Suplemento No. 459 (26 May 2021) confirmed title, issue and date (image PDF, 70 pages, no text layer); article text (art. 20 and final provision) read from the consolidated text also hosted on telecomunicaciones.gob.ec (2026/06, LEXIS-sourced consolidation, last reform 22 May 2026).",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://www.telecomunicaciones.gob.ec/wp-content/uploads/2021/06/Ley-Organica-de-Datos-Personales.pdf",
       "link_status": "reachable",
@@ -570,6 +570,21 @@
     "last_sweep": "2026-10-20"
   },
   "changes": [
+    {
+      "id": "c-3e08847aa819",
+      "date": "2026-10-26",
+      "recorded": "2026-10-26",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "ECU",
+      "instrument_id": "i-77f277979193",
+      "title": "Proposed Strategy for Promoting the Development and Ethical and Responsible Use of Artificial Intelligence in Ecuador (public consultation draft)",
+      "detail": "Official link no longer reachable.",
+      "from": "inaccessible",
+      "to": "broken",
+      "source_url": "https://aportecivico.gobiernoelectronico.gob.ec/legislation/processes/78/draft_versions/99",
+      "needs_review": false
+    },
     {
       "id": "c-4e2634eb7c54",
       "date": "2026-10-19",
@@ -691,6 +706,21 @@
       "needs_review": false
     },
     {
+      "id": "c-0f9fba849311",
+      "date": "2026-03-10",
+      "recorded": "2026-10-20",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "ECU",
+      "instrument_id": "i-89d95e38b1f0",
+      "title": "SPDP general rule on personal data in AI systems published in Registro Oficial No. 240",
+      "detail": "Resolution SPDP-SPD-2026-0009-R listed in the sumario of Registro Oficial No. 240, 10 March 2026.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.registroficial.gob.ec/registro-oficial-no-240-22/",
+      "needs_review": false
+    },
+    {
       "id": "c-8dffaebee677",
       "date": "2026-02-12",
       "recorded": "2026-10-12",
@@ -793,21 +823,6 @@
       "from": null,
       "to": null,
       "source_url": "https://www.telecomunicaciones.gob.ec/wp-content/uploads/2021/06/Ley-Organica-de-Datos-Personales.pdf",
-      "needs_review": false
-    },
-    {
-      "id": "c-0f9fba849311",
-      "date": "2026-03-10",
-      "recorded": "2026-10-20",
-      "kind": "world",
-      "type": "published",
-      "jurisdiction_id": "ECU",
-      "instrument_id": "i-89d95e38b1f0",
-      "title": "SPDP general rule on personal data in AI systems published in Registro Oficial No. 240",
-      "detail": "Resolution SPDP-SPD-2026-0009-R listed in the sumario of Registro Oficial No. 240, 10 March 2026.",
-      "from": null,
-      "to": null,
-      "source_url": "https://www.registroficial.gob.ec/registro-oficial-no-240-22/",
       "needs_review": false
     }
   ],

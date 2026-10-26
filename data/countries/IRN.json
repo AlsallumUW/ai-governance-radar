@@ -46,7 +46,7 @@
         "the session date (29 Khordad 1403) and the content (approval of the National AI Document outline, creation of the steering council and of the National AI Organization under the President, statute within three months) are confirmed by the official presidency report of the same day, not by the resolution text",
         "date and text of the later amendment of the note (tabsareh) to this single-article resolution not found"
       ],
-      "link_status": "inaccessible",
+      "link_status": "broken",
       "document_access_type": "original_government_document",
       "source_id": "s-163f29f27d35",
       "organization_id": "o-3b0f8238639b",
@@ -410,14 +410,14 @@
         "strategy"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-18",
-      "check_method": "local retry from Saudi Arabia: curl with browser user agent (connection timed out after ~21 s) and headless Edge (page load timeout 60 s). Not reachable.",
-      "http_status": null,
-      "final_url": null,
-      "link_status": "inaccessible",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
+      "http_status": 504,
+      "final_url": "https://sccr.ir/pro/3432/%D8%AA%D8%B4%DA%A9%DB%8C%D9%84-%D8%B4%D9%88%D8%B1%D8%A7%DB%8C-%D9%85%D9%84%DB%8C-%D8%B1%D8%A7%D9%87%D8%A8%D8%B1%DB%8C-%D9%88-%D8%AA%D8%A3%D8%B3%DB%8C%D8%B3-%D8%B3%D8%A7%D8%B2%D9%85%D8%A7%D9%86-%D9%85%D9%84%DB%8C-%D9%87%D9%88%D8%B4-%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C-",
+      "link_status": "broken",
       "page_title": "تشکیل شورای ملی راهبری و تأسیس سازمان ملی هوش مصنوعی",
       "document_language": "fa",
-      "error": "connection timeout (curl and headless browser)",
+      "error": "HTTP Error 504: Gateway Time-out",
       "content_type": null
     },
     {
@@ -437,8 +437,8 @@
         "strategy"
       ],
       "date_reviewed": "2026-10-18",
-      "checked_date": "2026-10-18",
-      "check_method": "curl with browser user agent; HTML page read in full (official presidency news report on the Supreme Council of the Cultural Revolution session of 29 Khordad 1403).",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://president.ir/fa/152404",
       "link_status": "reachable",
@@ -465,8 +465,8 @@
         "strategy"
       ],
       "date_reviewed": "2026-10-18",
-      "checked_date": "2026-10-18",
-      "check_method": "curl with browser user agent: PDF downloaded (74 pages) and text extracted; ministry announcement page http://www.ict.gov.ir/fa/news/125180/ also opened (HTTP 200).",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://ai-center.ir/wp-content/uploads/2024/08/70254_427.pdf",
       "link_status": "reachable",
@@ -493,8 +493,8 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-22",
-      "checked_date": "2026-10-22",
-      "check_method": "browser-check-2026-10-22: national laws and regulations system (qavanin.ir, Presidency legal deputy) opened in a desktop browser; title search for AI; full text of the document read (Articles 1-8).",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://qavanin.ir/Law/TreeText/?IDS=16578288702491235855",
       "link_status": "reachable",
@@ -520,8 +520,8 @@
         "strategy"
       ],
       "date_reviewed": "2026-10-22",
-      "checked_date": "2026-10-22",
-      "check_method": "browser-check-2026-10-22: national laws and regulations system (qavanin.ir) opened in a desktop browser; decision text read (preamble, Articles 1-3).",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://qavanin.ir/Law/TreeText/?IDS=14681655539689138489",
       "link_status": "reachable",
@@ -548,8 +548,8 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-22",
-      "checked_date": "2026-10-22",
-      "check_method": "browser-check-2026-10-22: national laws and regulations system (qavanin.ir) opened in a desktop browser; decision text read (preamble, Articles 1-3, penalty table).",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://qavanin.ir/Law/TreeText/?IDS=18230184807651169970",
       "link_status": "reachable",
@@ -575,8 +575,8 @@
         "sectoral"
       ],
       "date_reviewed": "2026-10-22",
-      "checked_date": "2026-10-22",
-      "check_method": "browser-check-2026-10-22: national laws and regulations system (qavanin.ir) opened in a desktop browser; decree text (as amended 1405/02/09) read.",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://qavanin.ir/Law/TreeText/?IDS=13023906486017430146",
       "link_status": "reachable",
@@ -677,6 +677,21 @@
     "last_sweep": "2026-10-19"
   },
   "changes": [
+    {
+      "id": "c-e6383897e04d",
+      "date": "2026-10-26",
+      "recorded": "2026-10-26",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "IRN",
+      "instrument_id": "i-da97f9ccd5b3",
+      "title": "Formation of the National AI Steering Council and Establishment of the National Artificial Intelligence Organization",
+      "detail": "Official link no longer reachable.",
+      "from": "inaccessible",
+      "to": "broken",
+      "source_url": "https://sccr.ir/pro/3432/%D8%AA%D8%B4%DA%A9%DB%8C%D9%84-%D8%B4%D9%88%D8%B1%D8%A7%DB%8C-%D9%85%D9%84%DB%8C-%D8%B1%D8%A7%D9%87%D8%A8%D8%B1%DB%8C-%D9%88-%D8%AA%D8%A3%D8%B3%DB%8C%D8%B3-%D8%B3%D8%A7%D8%B2%D9%85%D8%A7%D9%86-%D9%85%D9%84%DB%8C-%D9%87%D9%88%D8%B4-%D9%85%D8%B5%D9%86%D9%88%D8%B9%DB%8C-",
+      "needs_review": false
+    },
     {
       "id": "c-a7dc61f0b4bd",
       "date": "2026-10-23",

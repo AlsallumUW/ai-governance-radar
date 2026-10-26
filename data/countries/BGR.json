@@ -227,7 +227,7 @@
       "language": "bg",
       "source_kind": "official_publication",
       "verification_level": "primary_source_located",
-      "link_status": "inaccessible",
+      "link_status": "reachable",
       "document_access_type": "official_publication_or_full_text_page",
       "evidence_reference": "curl (--max-time 60) timed out twice and WebFetch timed out; pris.government.bg root page reachable. Status note: The page timed out on both curl and WebFetch on 2026-10-12, so the title wording, number, date and list of designated bodies come from the search-engine index of the official page. The September 2026 AI bill is recorded under leads. Link note: As of 18 October 2026 (checked with curl with a browser user agent from a connection in Saudi Arabia and a desktop browser) the Council of Ministers' PRIS document page returns an error page; no other official copy was found.",
       "category": "binding-law",
@@ -346,8 +346,8 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full 58-page PDF read (pdftotext); consultation dates and Bulgarian title read on strategy.bg consultation 5337-K",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "final_url": "https://www.mtc.government.bg/sites/default/files/conceptforthedevelopmentofaiinbulgariauntil2030.pdf",
       "link_status": "reachable",
       "page_title": null,
@@ -375,8 +375,8 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): IPA page (dated 30 June 2026) and 8-page code PDF read (pdftotext); adopter list read on IPA network page",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "final_url": "https://www.ipa.government.bg/bg/dobrovolen-kodeks-za-etichno-izpolzvane-na-izkustven-intelekt-v-drzhavnata-administraciya-0",
       "link_status": "reachable",
       "page_title": "Доброволен кодекс за етично използване на изкуствен интелект в държавната администрация",
@@ -402,8 +402,8 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): 46-page PDF read (pdftotext)",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "final_url": "https://www.ipa.government.bg/sites/default/files/readiness_aiindex_ipa25_en.pdf",
       "link_status": "reachable",
       "page_title": null,
@@ -429,14 +429,14 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-18",
-      "check_method": "curl (--max-time 60) timed out twice and WebFetch timed out; pris.government.bg root page reachable",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "final_url": "https://pris.government.bg/document/deef8dca4eba715a35b3dc266ae23adb/3ac6276165987a941aaa4305496b3e54",
-      "link_status": "inaccessible",
+      "link_status": "reachable",
       "page_title": null,
       "document_language": "bg",
-      "error": "timeout (curl and WebFetch)",
-      "http_status": null
+      "error": null,
+      "http_status": 200
     },
     {
       "id": "s-517618f748f6",
@@ -455,8 +455,8 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): 21-page PDF read (pdftotext)",
+      "checked_date": "2026-10-26",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "final_url": "https://www.fsc.bg/wp-content/uploads/2021/files/31039_file.pdf",
       "link_status": "reachable",
       "page_title": null,
@@ -549,6 +549,21 @@
     "last_sweep": "2026-10-24"
   },
   "changes": [
+    {
+      "id": "c-6307de8ee0d1",
+      "date": "2026-10-26",
+      "recorded": "2026-10-26",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "BGR",
+      "instrument_id": "i-c0fc4a4027dc",
+      "title": "Council of Ministers Decision No. 398 of 18 June 2025 designating the public authorities under Article 77(2) of Regulation (EU) 2024/1689 (AI Act)",
+      "detail": "Official link restored.",
+      "from": "inaccessible",
+      "to": "reachable",
+      "source_url": "https://pris.government.bg/document/deef8dca4eba715a35b3dc266ae23adb/3ac6276165987a941aaa4305496b3e54",
+      "needs_review": false
+    },
     {
       "id": "c-48b6c3178535",
       "date": "2026-10-12",
