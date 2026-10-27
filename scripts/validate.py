@@ -184,6 +184,7 @@ PROCESS = (r"could not be (?:accessed|opened|reached|retrieved|checked|read|down
 STATUS_LOG = re.compile(r"audit 20\d\d|\bcurl\b|HTTP [0-9]{3}|not read|fetch|automated access|automated reading|blocks automated|could not be read"
                         r"|this record|the radar(?! tecnol[oó]gico)"
                         r"|" + PROCESS + r"|" + SCHEMA +
+                        r"|\bi-(?:i-)?[0-9a-f]{12}\b|\(sic\)|not confirmed on an official source|the existing record"
                         r"|held as (?:a )?leads?|in this review|\b(?:effective|publication|last_amended)_date\b|\bnull\b|WebFetch|pdftotext|headless", re.I)
 
 
