@@ -1,0 +1,832 @@
+{
+ "about": "Country-by-country re-verification of every record against its official source. See research/VERIFY.md. Each run takes the next jurisdictions in 'order' that are not in 'done', about 60 records per run, finishing whole jurisdictions.",
+ "records_per_run": 60,
+ "order": [
+  {
+   "id": "SAU",
+   "records": 33
+  },
+  {
+   "id": "ARE",
+   "records": 22
+  },
+  {
+   "id": "QAT",
+   "records": 11
+  },
+  {
+   "id": "BHR",
+   "records": 3
+  },
+  {
+   "id": "KWT",
+   "records": 6
+  },
+  {
+   "id": "OMN",
+   "records": 9
+  },
+  {
+   "id": "GCC",
+   "records": 1
+  },
+  {
+   "id": "EGY",
+   "records": 11
+  },
+  {
+   "id": "JOR",
+   "records": 8
+  },
+  {
+   "id": "MAR",
+   "records": 11
+  },
+  {
+   "id": "TUN",
+   "records": 4
+  },
+  {
+   "id": "IRQ",
+   "records": 5
+  },
+  {
+   "id": "LBN",
+   "records": 6
+  },
+  {
+   "id": "DZA",
+   "records": 4
+  },
+  {
+   "id": "LBY",
+   "records": 3
+  },
+  {
+   "id": "PSE",
+   "records": 3
+  },
+  {
+   "id": "SYR",
+   "records": 2
+  },
+  {
+   "id": "YEM",
+   "records": 0
+  },
+  {
+   "id": "LAS",
+   "records": 1
+  },
+  {
+   "id": "ALECSO",
+   "records": 1
+  },
+  {
+   "id": "ICESCO",
+   "records": 1
+  },
+  {
+   "id": "OIC",
+   "records": 2
+  },
+  {
+   "id": "USA",
+   "records": 480
+  },
+  {
+   "id": "CHN",
+   "records": 129
+  },
+  {
+   "id": "GBR",
+   "records": 134
+  },
+  {
+   "id": "EU",
+   "records": 61
+  },
+  {
+   "id": "JPN",
+   "records": 93
+  },
+  {
+   "id": "KOR",
+   "records": 106
+  },
+  {
+   "id": "IND",
+   "records": 88
+  },
+  {
+   "id": "FRA",
+   "records": 73
+  },
+  {
+   "id": "DEU",
+   "records": 70
+  },
+  {
+   "id": "CAN",
+   "records": 135
+  },
+  {
+   "id": "AUS",
+   "records": 121
+  },
+  {
+   "id": "SGP",
+   "records": 78
+  },
+  {
+   "id": "BRA",
+   "records": 92
+  },
+  {
+   "id": "ITA",
+   "records": 51
+  },
+  {
+   "id": "ESP",
+   "records": 72
+  },
+  {
+   "id": "TUR",
+   "records": 15
+  },
+  {
+   "id": "IDN",
+   "records": 11
+  },
+  {
+   "id": "RUS",
+   "records": 51
+  },
+  {
+   "id": "ZAF",
+   "records": 10
+  },
+  {
+   "id": "MEX",
+   "records": 45
+  },
+  {
+   "id": "ARG",
+   "records": 54
+  },
+  {
+   "id": "OECD",
+   "records": 8
+  },
+  {
+   "id": "UN",
+   "records": 20
+  },
+  {
+   "id": "UNESCO",
+   "records": 8
+  },
+  {
+   "id": "COE",
+   "records": 30
+  },
+  {
+   "id": "G7",
+   "records": 16
+  },
+  {
+   "id": "G20",
+   "records": 4
+  },
+  {
+   "id": "NLD",
+   "records": 61
+  },
+  {
+   "id": "CHE",
+   "records": 58
+  },
+  {
+   "id": "AUT",
+   "records": 39
+  },
+  {
+   "id": "ISR",
+   "records": 25
+  },
+  {
+   "id": "KAZ",
+   "records": 22
+  },
+  {
+   "id": "UKR",
+   "records": 20
+  },
+  {
+   "id": "BEL",
+   "records": 20
+  },
+  {
+   "id": "NOR",
+   "records": 19
+  },
+  {
+   "id": "THA",
+   "records": 17
+  },
+  {
+   "id": "FIN",
+   "records": 17
+  },
+  {
+   "id": "DNK",
+   "records": 16
+  },
+  {
+   "id": "NGA",
+   "records": 16
+  },
+  {
+   "id": "VNM",
+   "records": 16
+  },
+  {
+   "id": "HUN",
+   "records": 16
+  },
+  {
+   "id": "MYS",
+   "records": 16
+  },
+  {
+   "id": "IRL",
+   "records": 15
+  },
+  {
+   "id": "EST",
+   "records": 14
+  },
+  {
+   "id": "PER",
+   "records": 14
+  },
+  {
+   "id": "NZL",
+   "records": 13
+  },
+  {
+   "id": "COL",
+   "records": 13
+  },
+  {
+   "id": "LVA",
+   "records": 13
+  },
+  {
+   "id": "SWE",
+   "records": 13
+  },
+  {
+   "id": "UZB",
+   "records": 13
+  },
+  {
+   "id": "SRB",
+   "records": 12
+  },
+  {
+   "id": "CZE",
+   "records": 12
+  },
+  {
+   "id": "MUS",
+   "records": 12
+  },
+  {
+   "id": "AISUMMITS",
+   "records": 12
+  },
+  {
+   "id": "CHL",
+   "records": 11
+  },
+  {
+   "id": "MLT",
+   "records": 10
+  },
+  {
+   "id": "LTU",
+   "records": 10
+  },
+  {
+   "id": "URY",
+   "records": 10
+  },
+  {
+   "id": "AZE",
+   "records": 10
+  },
+  {
+   "id": "POL",
+   "records": 10
+  },
+  {
+   "id": "CYP",
+   "records": 10
+  },
+  {
+   "id": "PRT",
+   "records": 9
+  },
+  {
+   "id": "KEN",
+   "records": 9
+  },
+  {
+   "id": "GHA",
+   "records": 9
+  },
+  {
+   "id": "BGD",
+   "records": 9
+  },
+  {
+   "id": "BRN",
+   "records": 9
+  },
+  {
+   "id": "PAK",
+   "records": 9
+  },
+  {
+   "id": "ARM",
+   "records": 9
+  },
+  {
+   "id": "SVN",
+   "records": 8
+  },
+  {
+   "id": "HRV",
+   "records": 8
+  },
+  {
+   "id": "SVK",
+   "records": 8
+  },
+  {
+   "id": "GRC",
+   "records": 8
+  },
+  {
+   "id": "ASEAN",
+   "records": 8
+  },
+  {
+   "id": "PHL",
+   "records": 7
+  },
+  {
+   "id": "LUX",
+   "records": 7
+  },
+  {
+   "id": "KGZ",
+   "records": 7
+  },
+  {
+   "id": "TZA",
+   "records": 7
+  },
+  {
+   "id": "CRI",
+   "records": 7
+  },
+  {
+   "id": "BTN",
+   "records": 7
+  },
+  {
+   "id": "MKD",
+   "records": 6
+  },
+  {
+   "id": "IRN",
+   "records": 6
+  },
+  {
+   "id": "VAT",
+   "records": 6
+  },
+  {
+   "id": "ECU",
+   "records": 6
+  },
+  {
+   "id": "SLV",
+   "records": 6
+  },
+  {
+   "id": "ALB",
+   "records": 6
+  },
+  {
+   "id": "AU",
+   "records": 6
+  },
+  {
+   "id": "GAB",
+   "records": 5
+  },
+  {
+   "id": "AND",
+   "records": 5
+  },
+  {
+   "id": "AGO",
+   "records": 5
+  },
+  {
+   "id": "LIE",
+   "records": 5
+  },
+  {
+   "id": "UGA",
+   "records": 5
+  },
+  {
+   "id": "GEO",
+   "records": 5
+  },
+  {
+   "id": "BLR",
+   "records": 5
+  },
+  {
+   "id": "BGR",
+   "records": 5
+  },
+  {
+   "id": "MOZ",
+   "records": 5
+  },
+  {
+   "id": "NIC",
+   "records": 5
+  },
+  {
+   "id": "RWA",
+   "records": 5
+  },
+  {
+   "id": "MNG",
+   "records": 4
+  },
+  {
+   "id": "TTO",
+   "records": 4
+  },
+  {
+   "id": "LKA",
+   "records": 4
+  },
+  {
+   "id": "LAO",
+   "records": 4
+  },
+  {
+   "id": "NPL",
+   "records": 4
+  },
+  {
+   "id": "COG",
+   "records": 4
+  },
+  {
+   "id": "GMB",
+   "records": 4
+  },
+  {
+   "id": "SEN",
+   "records": 4
+  },
+  {
+   "id": "MDA",
+   "records": 4
+  },
+  {
+   "id": "DOM",
+   "records": 4
+  },
+  {
+   "id": "NATO",
+   "records": 4
+  },
+  {
+   "id": "WHO",
+   "records": 4
+  },
+  {
+   "id": "FSB",
+   "records": 4
+  },
+  {
+   "id": "LSO",
+   "records": 3
+  },
+  {
+   "id": "CPV",
+   "records": 3
+  },
+  {
+   "id": "ZWE",
+   "records": 3
+  },
+  {
+   "id": "MDV",
+   "records": 3
+  },
+  {
+   "id": "ISL",
+   "records": 3
+  },
+  {
+   "id": "MLI",
+   "records": 3
+  },
+  {
+   "id": "JAM",
+   "records": 3
+  },
+  {
+   "id": "MNE",
+   "records": 3
+  },
+  {
+   "id": "CIV",
+   "records": 3
+  },
+  {
+   "id": "KHM",
+   "records": 3
+  },
+  {
+   "id": "PAN",
+   "records": 3
+  },
+  {
+   "id": "BIH",
+   "records": 3
+  },
+  {
+   "id": "ZMB",
+   "records": 3
+  },
+  {
+   "id": "FJI",
+   "records": 3
+  },
+  {
+   "id": "ROU",
+   "records": 3
+  },
+  {
+   "id": "BEN",
+   "records": 3
+  },
+  {
+   "id": "ETH",
+   "records": 3
+  },
+  {
+   "id": "PNG",
+   "records": 3
+  },
+  {
+   "id": "APEC",
+   "records": 3
+  },
+  {
+   "id": "ITU",
+   "records": 3
+  },
+  {
+   "id": "IOSCO",
+   "records": 3
+  },
+  {
+   "id": "CCW",
+   "records": 3
+  },
+  {
+   "id": "MDG",
+   "records": 2
+  },
+  {
+   "id": "VEN",
+   "records": 2
+  },
+  {
+   "id": "BLZ",
+   "records": 2
+  },
+  {
+   "id": "SMR",
+   "records": 2
+  },
+  {
+   "id": "VUT",
+   "records": 2
+  },
+  {
+   "id": "TON",
+   "records": 2
+  },
+  {
+   "id": "DJI",
+   "records": 2
+  },
+  {
+   "id": "BHS",
+   "records": 2
+  },
+  {
+   "id": "GTM",
+   "records": 2
+  },
+  {
+   "id": "MCO",
+   "records": 2
+  },
+  {
+   "id": "SOM",
+   "records": 2
+  },
+  {
+   "id": "COD",
+   "records": 2
+  },
+  {
+   "id": "PRY",
+   "records": 2
+  },
+  {
+   "id": "SYC",
+   "records": 2
+  },
+  {
+   "id": "BIS",
+   "records": 2
+  },
+  {
+   "id": "UNICEF",
+   "records": 2
+  },
+  {
+   "id": "GIN",
+   "records": 1
+  },
+  {
+   "id": "KIR",
+   "records": 1
+  },
+  {
+   "id": "LCA",
+   "records": 1
+  },
+  {
+   "id": "ATG",
+   "records": 1
+  },
+  {
+   "id": "MWI",
+   "records": 1
+  },
+  {
+   "id": "LBR",
+   "records": 1
+  },
+  {
+   "id": "CMR",
+   "records": 1
+  },
+  {
+   "id": "GUY",
+   "records": 1
+  },
+  {
+   "id": "SWZ",
+   "records": 1
+  },
+  {
+   "id": "SLB",
+   "records": 1
+  },
+  {
+   "id": "STP",
+   "records": 1
+  },
+  {
+   "id": "WSM",
+   "records": 1
+  },
+  {
+   "id": "GRD",
+   "records": 1
+  },
+  {
+   "id": "COM",
+   "records": 1
+  },
+  {
+   "id": "MRT",
+   "records": 1
+  },
+  {
+   "id": "CAF",
+   "records": 1
+  },
+  {
+   "id": "KNA",
+   "records": 1
+  },
+  {
+   "id": "BOL",
+   "records": 1
+  },
+  {
+   "id": "BRB",
+   "records": 1
+  },
+  {
+   "id": "NAM",
+   "records": 1
+  },
+  {
+   "id": "TCD",
+   "records": 1
+  },
+  {
+   "id": "TJK",
+   "records": 1
+  },
+  {
+   "id": "BFA",
+   "records": 1
+  },
+  {
+   "id": "TKM",
+   "records": 1
+  },
+  {
+   "id": "CUB",
+   "records": 1
+  },
+  {
+   "id": "NRU",
+   "records": 1
+  },
+  {
+   "id": "SLE",
+   "records": 1
+  },
+  {
+   "id": "BWA",
+   "records": 1
+  },
+  {
+   "id": "NER",
+   "records": 1
+  },
+  {
+   "id": "TGO",
+   "records": 1
+  },
+  {
+   "id": "MHL",
+   "records": 1
+  },
+  {
+   "id": "OAS",
+   "records": 1
+  },
+  {
+   "id": "ILO",
+   "records": 1
+  },
+  {
+   "id": "WIPO",
+   "records": 1
+  },
+  {
+   "id": "WBG",
+   "records": 1
+  },
+  {
+   "id": "BRICS",
+   "records": 1
+  }
+ ],
+ "done": [],
+ "unreachable": []
+}
