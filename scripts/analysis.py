@@ -190,7 +190,7 @@ def fig_years(N, today):
     o = [f'<svg viewBox="0 0 {W} {H}" class="chart" role="img" aria-label="Country instruments per publication year, stacked by binding or mandatory, non-binding and drafts">']
     for t in range(0, top + 1, step):
         y = T + ph - ph * t / top
-        o.append(f'<line class="grid" x1="{L}" x2="{W - Rr}" y1="{y:.1f}" y2="{y:.1f}"/><text class="tick" x="{L - 6}" y="{y + 4:.1f}" text-anchor="end">{t}</text>')
+        o.append(f'<line class="grid" x1="{L}" x2="{W - Rr}" y1="{y:.1f}" y2="{y:.1f}"/><text class="tick" x="{L - 6}" y="{y + 4:.1f}" text-anchor="end">{t:,}</text>')
     for n, k in enumerate(keys):
         cx = L + pw * (n + .5) / len(keys); x = cx - bw / 2; y0 = T + ph
         drawn = [(g, bk[k][g]) for g in GROUPS if bk[k][g]]
@@ -579,7 +579,7 @@ def fig_issuer(N):
         y = 4 + n * rh; w = max(2, (W - L - Rr) * v / mx)
         o.append(f'<text class="cat" x="{L - 12}" y="{y + 14}" text-anchor="end">{e(k)}</text>'
                  f'<path class="mark {"tb t4" if k == "Unclassified" else "tb t1"}" d="{round_end(L, y, w, 18, 4)}" data-tip="{e(k)}: {v} ({pct(v, tot)}%)"><title>{e(k)}: {v}</title></path>'
-                 f'<text class="val" x="{L + w + 6:.1f}" y="{y + 14}">{v} · {pct(v, tot)}%</text>')
+                 f'<text class="val" x="{L + w + 6:.1f}" y="{y + 14}">{v:,} · {pct(v, tot)}%</text>')
     o.append(f'<line class="axis" x1="{L}" x2="{L}" y1="0" y2="{H}"/></svg>')
     rows = [[k, v, f"{pct(v, tot)}%"] for k, v in bars] + [["Total", tot, "100%"]]
     big = max(ISSUER_ORDER, key=lambda k: cnt[k])
@@ -649,14 +649,14 @@ def analysis_page(D, recs, ctx):
     # headline: every recorded document, countries' and international and regional organisations' (charts keep their own scope)
     stats = [("Countries", len(N["countries"])), ("Instruments", f"{nC + nR:,}"), ("Countries with none found", zero)]
     recon = [
-        ("Instruments in the full export (CSV / JSON)", n_all),
-        ("· national", lvl["national"]), ("· state / provincial", lvl["subnational"]), ("· local", lvl["local"]), ("· regional bodies", nR),
-        ("Instruments per year: dated country instruments + undated country instruments", f'{ka["years_total"]} + {ka["undated_c"]} = {ka["years_total"] + ka["undated_c"]}'),
-        ("Instruments per year: dated regional instruments + undated regional instruments", f'{ka["regional_dated"]} + {ka["undated_r"]} = {ka["regional_dated"] + ka["undated_r"]}'),
-        ("Instruments per country and Group mix, by region (national level only, the default): per-country counts and group mix", f'{kc["box_nat"]} and {kc["mix_nat"]} (= national {lvl["national"]})'),
-        ("Instruments per country and Group mix, by region (including state/provincial and local): per-country counts and group mix", f'{kc["box_all"]} and {kc["mix_all"]} (= country instruments {nC})'),
-        ("Issuer types: country instruments", f'{kf["issuer_total"]}'),
-        ("Group totals for country instruments (binding or mandatory / non-binding / drafts)", f'{grp["binding"]} / {grp["soft"]} / {grp["draft"]}'),
+        ("Instruments in the full export (CSV / JSON)", f"{n_all:,}"),
+        ("· national", f'{lvl["national"]:,}'), ("· state / provincial", f'{lvl["subnational"]:,}'), ("· local", f'{lvl["local"]:,}'), ("· regional bodies", f"{nR:,}"),
+        ("Instruments per year: dated country instruments + undated country instruments", f'{ka["years_total"]:,} + {ka["undated_c"]:,} = {ka["years_total"] + ka["undated_c"]:,}'),
+        ("Instruments per year: dated regional instruments + undated regional instruments", f'{ka["regional_dated"]:,} + {ka["undated_r"]:,} = {ka["regional_dated"] + ka["undated_r"]:,}'),
+        ("Instruments per country and Group mix, by region (national level only, the default): per-country counts and group mix", f'{kc["box_nat"]:,} and {kc["mix_nat"]:,} (= national {lvl["national"]:,})'),
+        ("Instruments per country and Group mix, by region (including state/provincial and local): per-country counts and group mix", f'{kc["box_all"]:,} and {kc["mix_all"]:,} (= country instruments {nC:,})'),
+        ("Issuer types: country instruments", f'{kf["issuer_total"]:,}'),
+        ("Group totals for country instruments (binding or mandatory / non-binding / drafts)", f'{grp["binding"]:,} / {grp["soft"]:,} / {grp["draft"]:,}'),
     ]
     assert ka["years_total"] + ka["undated_c"] == nC and ka["regional_dated"] + ka["undated_r"] == nR and kf["issuer_total"] == nC
     assert kc["box_nat"] == kc["mix_nat"] == lvl["national"] and kc["box_all"] == kc["mix_all"] == nC
