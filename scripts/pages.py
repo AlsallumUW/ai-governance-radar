@@ -43,6 +43,9 @@ GROUP_LABEL = {"un-system": "UN system", "europe": "Europe", "africa": "Africa",
                "summits": "Summits and multilateral declarations", "other": "Other"}
 
 
+# members of a body that have no country profile on the site (shown as plain chips, not links)
+NON_PROFILE_NAMES = {"COK": "Cook Islands", "NIU": "Niue"}
+
 def body_group(j):
     g = (j or {}).get("group")
     return g if g in GROUP_LABEL else "other"
@@ -730,7 +733,8 @@ def body_page(b, D, rec, flags, ctx):
     if rows: H.append(instruments_section(rows, ctx["orgs"], ctx["srcs"], cats, jur=ctx["jur"]))
     if members:
         H.append(f'<section id="members" class="block"><h2>Member states <span class="count">{len(members)}</span></h2><p class="member-grid">'
-                 + "".join(f'<a class="chip" href="../../country/{c}/">{e(ctx["jur"].get(c, {}).get("name", c))}</a>' for c in members) + '</p>'
+                 + "".join(f'<a class="chip" href="../../country/{c}/">{e(ctx["jur"][c]["name"])}</a>' if c in ctx["jur"]
+                          else f'<span class="chip">{e(NON_PROFILE_NAMES.get(c, c))}</span>' for c in members) + '</p>'
                   + '</section>')
     if leads: H.append(leads_section(leads, bid))
     H.append('<section id="method" class="block prose method"><h2>Method note</h2>' + (f'<p{ar_attr(bnotes_ar)}>{e(bnotes_ar or narr.get("review_notes"))}{i18n.orig_link("method") if bnotes_ar else ""}</p>' if narr.get("review_notes") else "")
