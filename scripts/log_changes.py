@@ -32,6 +32,8 @@ def detect(old, new, date):
     jid = new["jurisdiction"]["id"]
     on, nn = (old.get("narrative") or {}), (new.get("narrative") or {})
     world_done = {c.get("instrument_id") for c in new.get("changes", []) if c.get("kind") == "world"}
+    hand_typed = {(c.get("instrument_id"), c.get("type")) for c in new.get("changes", [])
+                  if c.get("kind") == "world" and c.get("detail") != "Status changed."}
     deep_now = bool(nn.get("last_deep_review")) and nn.get("last_deep_review") != on.get("last_deep_review")
     for k, i in n.items():
         title = i.get("english_title") or i.get("official_title")
@@ -56,7 +58,9 @@ def detect(old, new, date):
         if known and not placeholder_fix and p.get("lifecycle") != i["lifecycle"] and i["lifecycle"] != "consultation_closed":
             typ = LIFE_TO_TYPE.get(i["lifecycle"], "revised")
             when = i.get("effective_date") if typ == "applied" and i.get("effective_date") else date
-            evs.append(event(when, "world", typ, jid, k, title, "Status changed.", p.get("lifecycle"), i["lifecycle"], i.get("source_url"), date, True))
+            # skip when a hand-entered world event of the same type already records this action with its real date
+            if (k, typ) not in hand_typed:
+                evs.append(event(when, "world", typ, jid, k, title, "Status changed.", p.get("lifecycle"), i["lifecycle"], i.get("source_url"), date, True))
         if i.get("last_amended_date") and p.get("last_amended_date") and i["last_amended_date"] != p.get("last_amended_date"):
             evs.append(event(i["last_amended_date"], "world", "revised", jid, k, title, "Amended / new version.", p.get("last_amended_date"), i["last_amended_date"], i.get("source_url"), date, True))
         if known and i.get("effective_date") and not p.get("effective_date") and p.get("lifecycle") == i["lifecycle"]:
