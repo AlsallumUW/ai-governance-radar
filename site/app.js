@@ -83,7 +83,7 @@ const LP=new Map();function largestPart(f){if(!LP.has(f))LP.set(f,largestPart0(f
 function largestPart0(f){if(f.geometry.type!=='MultiPolygon')return f;let best=null,max=-1;for(const c of f.geometry.coordinates){const g={type:'Feature',geometry:{type:'Polygon',coordinates:c}},a=d3.geoArea(g);if(a>max){max=a;best=g}}return best}
 const narrow=matchMedia('(max-width:760px)');
 function layout(){const r=shell.getBoundingClientRect();width=Math.max(280,r.width);const S={type:'Sphere'};path.projection(flat);
-  if(narrow.matches){flat.fitWidth(width-12,S);const lg=$('#mapLegend'),[[,y0],[,y1]]=path.bounds(S),top=48,bottom=46+(lg&&!lg.hidden?lg.offsetHeight+6:0)+(typeof pulseLegend!=='undefined'&&pulseLegend.offsetHeight?pulseLegend.offsetHeight+6:0);height=Math.ceil(y1-y0)+top+bottom;flat.fitExtent([[6,top],[width-6,height-bottom]],S);shell.style.height=height+'px';shell.style.minHeight='0'}
+  if(narrow.matches){flat.fitWidth(width-12,S);const lg=$('#mapLegend'),[[,y0],[,y1]]=path.bounds(S),top=48,bottom=10+(lg&&!lg.hidden?lg.offsetHeight+6:0)+(typeof pulseLegend!=='undefined'&&pulseLegend.offsetHeight?pulseLegend.offsetHeight+6:0);height=Math.ceil(y1-y0)+top+bottom;flat.fitExtent([[6,top],[width-6,height-bottom]],S);shell.style.height=height+'px';shell.style.minHeight='0'}
   else{shell.style.height='';shell.style.minHeight='';height=Math.max(260,r.height);flat.fitExtent([[10,10],[width-10,height-10]],S)}
   countriesFC.features.forEach(f=>centers.set(f.id,path.centroid(largestPart(f))));
   globe.translate([width/2,height/2]).scale(baseR()*globeK).rotate(rot);
@@ -161,7 +161,7 @@ function placeRings(){const g=svg.select('#rings');let hits=svg.select('#ringHit
 const pulseLegend=document.createElement('div');pulseLegend.className='pulse-legend';pulseLegend.setAttribute('aria-hidden','true');shell.appendChild(pulseLegend);
 function renderPulseLegend(){pulseLegend.innerHTML=`<b>${esc(L('legend',{d:winDays}))}</b><div class="sz">`+[1,5,10].map(n=>{const r=4.2*pulseR(n);return `<span><i style="width:${(r*2).toFixed(0)}px;height:${(r*2).toFixed(0)}px"></i>${n===10?'10+':n}</span>`}).join('')+'</div>'}
 /* phones: the documents legend spans the bottom, so the size legend sits just above it (bottom end corner) */
-function placePulseLegend(){const lg=$('#mapLegend');pulseLegend.style.bottom=narrow.matches&&lg&&!lg.hidden?(lg.offsetTop>0?shell.clientHeight-lg.offsetTop+6:46)+'px':''}
+function placePulseLegend(){const lg=$('#mapLegend');pulseLegend.style.bottom=narrow.matches&&lg&&!lg.hidden?(lg.offsetTop>0?shell.clientHeight-lg.offsetTop+6:8)+'px':''}
 renderPulseLegend();
 /* "What's new" panel: a country's government actions in the Updates window (beside the click; bottom sheet on phones) */
 const panel=document.createElement('div');panel.className='wn-panel';panel.hidden=true;panel.setAttribute('role','dialog');panel.setAttribute('aria-modal','false');panel.tabIndex=-1;shell.appendChild(panel);
