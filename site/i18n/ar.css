@@ -15,7 +15,8 @@ html[lang="ar"] details.leads[open]>summary::after{content:"إخفاء"}
 /* text that is English inside Arabic pages (official titles, names) reads in its own direction */
 html[lang="ar"] [lang="en"],html[lang="ar"] .inst-orig{unicode-bidi:isolate}
 /* data text (official titles, summaries, names) keeps its own direction: i18n-ar.js sets dir from the script of most of its letters (plaintext would follow the first letter only) */
-html[lang="ar"] .inst-sum,html[lang="ar"] .inst-status,html[lang="ar"] .inst-meta,html[lang="ar"] .prose p,html[lang="ar"] .plain li,html[lang="ar"] .lead-list li,
+html[lang="ar"] .plain li,html[lang="ar"] .lead-list li{unicode-bidi:plaintext}
+html[lang="ar"] .inst-sum,html[lang="ar"] .inst-status,html[lang="ar"] .inst-meta,html[lang="ar"] .prose p,
 html[lang="ar"] .pp-cap,html[lang="ar"] .pb-cap span,html[lang="ar"] .hero-cap,html[lang="ar"] .tl-card p,html[lang="ar"] .tl-card h4,html[lang="ar"] .pl-title,html[lang="ar"] .credits-table td{unicode-bidi:isolate}
 /* link to the original text beside a translated title or summary */
 .orig-link{font-size:13px;font-weight:400;white-space:nowrap;margin-inline-start:4px}
