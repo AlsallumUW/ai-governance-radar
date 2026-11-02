@@ -65,7 +65,7 @@
       ],
       "source_kind": "official_document",
       "evidence_reference": "local-retry-2026-10-18: official Gaceta Oficial PDF (GOC-2022-O90, 18 pages) opened via curl with HTTP 200 and read; title, issuer, adoption date (14 May 2022), publication (Edición Ordinaria No. 90, 25 August 2022, GOC-2022-832-O90), Article 23.2 on objection to automated processing, Disposición Final Primera (Ministry of Justice oversight) and Quinta (entry into force 180 days after publication) checked against the official text. Earlier record (2026-10-12) relied on a ministry search snippet. Published in: Ministry of Justice (Gaceta Oficial de la República de Cuba).",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "source_id": "s-3babb37eaa0b",
       "organization_id": "o-b9817ec531d9",
@@ -103,14 +103,14 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-18",
-      "checked_date": "2026-10-18",
-      "check_method": "curl with a browser user agent from a connection in Saudi Arabia; PDF text read",
-      "http_status": 200,
+      "checked_date": "2026-11-02",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
+      "http_status": null,
       "final_url": "https://www.gacetaoficial.gob.cu/sites/default/files/goc-2022-o90_0.pdf",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": "Gaceta Oficial No. 90 Ordinaria de 25 de agosto de 2022",
       "document_language": "es",
-      "error": null,
+      "error": "URLError: <urlopen error timed out>",
       "content_type": "application/pdf"
     }
   ],
@@ -201,6 +201,21 @@
     "last_sweep": "2026-10-27"
   },
   "changes": [
+    {
+      "id": "c-f41b5725865e",
+      "date": "2026-11-02",
+      "recorded": "2026-11-02",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "CUB",
+      "instrument_id": "i-8b6cc0439a77",
+      "title": "Law No. 149 on Personal Data Protection",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://www.gacetaoficial.gob.cu/sites/default/files/goc-2022-o90_0.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-80dace2fd2e5",
       "date": "2026-10-18",

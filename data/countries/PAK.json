@@ -325,7 +325,7 @@
       "first_recorded": "2026-10-12",
       "last_changed": null,
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "organization_id": "o-8fa29182031b",
       "document_access_type": "official_publication_or_full_text_page",
       "categories": [
@@ -433,7 +433,7 @@
       "first_recorded": "2026-10-12",
       "last_changed": "2026-10-18",
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "organization_id": "o-9bdb4c0244be",
       "document_access_type": "original_government_document",
       "categories": [
@@ -583,8 +583,8 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full 28-page PDF read (pdftotext); 'Approved, 31 July, 2025' read on the ministry's Policies register (https://www.moitt.gov.pk/Policies)",
+      "checked_date": "2026-11-02",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://moitt.gov.pk/SiteImage/Policies/National%20AI%20Policy.pdf",
       "link_status": "reachable",
@@ -611,8 +611,8 @@
         "strategy"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full PDF read (pdftotext); register entry 'National Artificial Intelligence Policy, Draft, IT, 25 June, 2022' read on https://www.moitt.gov.pk/Policies",
+      "checked_date": "2026-11-02",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://moitt.gov.pk/SiteImage/Policies/National%20AI%20Policy%20Consultation%20Draft%20V1%20(1).pdf",
       "link_status": "reachable",
@@ -639,8 +639,8 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full text of the declaration read on the MoITT page",
+      "checked_date": "2026-11-02",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://moitt.gov.pk/Detail/YmY4ZGFkODktYzI5Yy00OGUxLWE4ZDEtZDJjNzcwMWZhZGU1",
       "link_status": "reachable",
@@ -671,8 +671,8 @@
         "procurement"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full PDF read (pdftotext), incl. clause 14 and Annex III; register entry 'Data Governance Policy 2026, Draft, IT, 26 June, 2026' on https://www.moitt.gov.pk/Policies",
+      "checked_date": "2026-11-02",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://moitt.gov.pk/SiteImage/Policies/Data%20Governance%20Policy%20June%202026.pdf",
       "link_status": "reachable",
@@ -698,8 +698,8 @@
         "drafts"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full PDF read (pdftotext), incl. s.29; register entry on https://moitt.gov.pk/Legislations",
+      "checked_date": "2026-11-02",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://moitt.gov.pk/SiteImage/Legislations/Final%20Draft%20Personal%20Data%20Protection%20Bill%20May%202023%20(1).pdf",
       "link_status": "reachable",
@@ -728,14 +728,14 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): LJCP announcement page (29 April 2026, 57th NJPMC meeting) read; the LJCP PDF is image-only, so the full text was read from the identical copy published by the Balochistan High Court (https://bhc.gov.pk/media/downloads/95.pdf) via pdftotext",
-      "http_status": 200,
+      "checked_date": "2026-11-02",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
+      "http_status": null,
       "final_url": "https://ljcp.gov.pk/SliderDetail/NTI1NmRiN2EtM2M2MC00MzgyLWFlNmEtNmQ5ZmU5MWE4MjFh",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": null,
       "document_language": "en",
-      "error": null,
+      "error": "URLError: <urlopen error _ssl.c:993: The handshake operation timed out>",
       "content_type": "text/html; charset=utf-8"
     },
     {
@@ -756,8 +756,8 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full PDF read (pdftotext); listed as Advisory No 18 of 2026 on https://pkcert.gov.pk/advisories.asp; date from reference NCA-18.011026 and PDF metadata (1 Oct 2026)",
+      "checked_date": "2026-11-02",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://pkcert.gov.pk/advisory/26/18.pdf",
       "link_status": "reachable",
@@ -783,14 +783,14 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full Gazette text read (pdftotext) from the National Assembly site",
-      "http_status": 200,
+      "checked_date": "2026-11-02",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
+      "http_status": null,
       "final_url": "https://na.gov.pk/uploads/documents/679b239e8d57f_451.pdf",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": null,
       "document_language": "en",
-      "error": null,
+      "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.",
       "content_type": "application/pdf"
     },
     {
@@ -812,8 +812,8 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-22",
-      "checked_date": "2026-10-22",
-      "check_method": "wave3-2026-10-22: HEC policies page Framework-GenAI.aspx and the linked PDF Framework-Gene-AI.pdf",
+      "checked_date": "2026-11-02",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://www.hec.gov.pk/english/policies/Pages/Framework-GenAI.aspx",
       "link_status": "reachable",
@@ -914,6 +914,36 @@
     "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. sbp.org.pk and secp.gov.pk 403 to curl and WebFetch; hec.gov.pk reset/503; pakistancode.gov.pk search errors. PECA (Amendment) Act 2025 read in full: no AI/deepfake wording, not recorded. Judicial guidelines read from the identical Balochistan High Court copy (LJCP copy image-only). Data Governance Policy kept as draft (ministry list still says Draft). Not a party to Convention 108. Units covered: Law: Gazette texts on na.gov.pk read: Digital Nation Pakistan Act 2025 (s.8(g) AI oversight power, recorded) and Prevention of Electronic Crimes (Amendment) Act 2025 (Act II of 2025; fake/false information offence s.26A and Social Media Protection and Regulatory Authority; read in full, contains no AI, deepfake or synthetic-media wording, so not recorded as an AI instrument). Senate bill tracker: Regulation of Artificial Intelligence Bill 2024 withdrawn from committee (lead). No enacted AI-specific law and no enacted personal data protection law found. pakistancode.gov.pk search pages returned errors.; Government: MoITT Policies and Legislations registers and AI Declaration page fully reviewed: National AI Policy 2025 (approved 31 Jul 2025), 2022 consultation draft (superseded), Islamabad AI Declaration (9 Feb 2026), draft Data Governance Policy 2026, draft Personal Data Protection Bill 2023 recorded. Digital Pakistan Policy 2018 has a short AI/IoT/FinTech innovation-centre clause only (not recorded as an AI strategy). Searched for a PDA 'AI Supervisory Framework': nothing official found.; Ministries: Judiciary: NJPMC National Guidelines for Use of AI in Judicial Institutions (recorded). Education: HEC Framework on use of GenAI tools in HEIs exists on hec.gov.pk but the site was unreachable (lead). National CERT (under MoITT): GenAI advisory recorded; National Cybersecurity Handbook 2026-27 is a general cyber handbook (image-only PDF) with AI-use rules for officials, not recorded as an AI instrument. No AI-specific documents found for health, defence, finance/FBR, labour or interior.; Regulators: No data protection authority exists (PDP Bill still draft). State Bank of Pakistan: site returned 403 to curl and WebFetch; reported AI guidelines not located (lead). SECP: sandbox guidelines (2019, AI as one eligible category, not AI-specific) page returned 403 to curl and WebFetch. PTA: no AI-specific instrument found. Convention 108: Pakistan is not a party. Standards: no PSQCA adoption of AI standards (ISO/IEC 42001, 22989) found - searched, nothing found. Index/readiness: no government-published AI index or maturity assessment found - searched, nothing found. International: no AI treaty signed or ratified found (bilateral AI cooperation with Saudi Arabia reported in news only) - searched, nothing found.. Not reached: State Bank of Pakistan website (sbp.org.pk, HTTP 403 to curl and WebFetch); SECP website (secp.gov.pk, HTTP 403 to curl and WebFetch); Higher Education Commission website (hec.gov.pk, connection reset / HTTP 503); pakistancode.gov.pk search. Could not verify: SBP AI guidelines (site 403); SECP AI-related sandbox/guidance (site 403); HEC GenAI framework (site unreachable); PDA national AI Supervisory Framework (no official document found). standards, index-readiness, international: no material found.\nWording note 2026-10-19 (narrative.review_notes): The central bank, securities regulator and higher education commission websites could not be reached, so their AI guidance is listed as leads."
   },
   "changes": [
+    {
+      "id": "c-981766214b4c",
+      "date": "2026-11-02",
+      "recorded": "2026-11-02",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "PAK",
+      "instrument_id": "i-e0fdc80de9b2",
+      "title": "National Guidelines for Use of Artificial Intelligence in Judicial Institutions of Pakistan",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://ljcp.gov.pk/SliderDetail/NTI1NmRiN2EtM2M2MC00MzgyLWFlNmEtNmQ5ZmU5MWE4MjFh",
+      "needs_review": false
+    },
+    {
+      "id": "c-d6a9e498a25e",
+      "date": "2026-11-02",
+      "recorded": "2026-11-02",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "PAK",
+      "instrument_id": "i-840fc93f6481",
+      "title": "Digital Nation Pakistan Act, 2025 (Act No. I of 2025)",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://na.gov.pk/uploads/documents/679b239e8d57f_451.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-aa9fbcbe7756",
       "date": "2026-10-23",
