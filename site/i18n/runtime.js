@@ -29,12 +29,21 @@ function walk(root){
   if(keep(root))return;
   var w=document.createTreeWalker(root,NodeFilter.SHOW_ELEMENT|NodeFilter.SHOW_TEXT,{acceptNode:function(x){return x.nodeType===1&&x.getAttribute('translate')==='no'?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT}}),n;
   while((n=w.nextNode())){if(n.nodeType===3){if(!SKIP[n.parentNode.nodeName])textNode(n)}else if(!SKIP[n.nodeName])attrs(n)}}
-window.I18N={t:tr,date:arDate,lang:'ar'};
+/* Base direction of data text (titles, summaries, names, details). The browser's dir="auto" and unicode-bidi:plaintext take
+   the direction of the first letter, so an Arabic title that starts with a code ("GB/T 47863-2026 — …", "CCN-STIC-2011 …")
+   was set left to right. Here the direction follows the script of most of the letters; text with no letters keeps the page's. */
+var BIDI='[dir="auto"],[data-bidi],.inst-sum,.inst-status,.prose p,.plain li,.lead-list li,.pp-cap,.pb-cap span,.hero-cap,.tl-card p,.tl-card h4,.pl-title,.credits-table td,.sr-title,.sr-ot,.sr-ex,.c-i .v';
+var RTL=/[\u0590-\u08FF\uFB1D-\uFDFF\uFE70-\uFEFF]/g,LTR=/[A-Za-z\u00C0-\u024F\u0370-\u03FF\u0400-\u04FF\u3040-\u30FF\u3400-\u9FFF\uAC00-\uD7AF]/g;
+function dirOf(s){var r=(s.match(RTL)||[]).length,l=(s.match(LTR)||[]).length;return r||l?(r>=l?'rtl':'ltr'):'rtl'}
+function setDir(el){if(el.closest&&el.closest('svg'))return;var d=dirOf(el.textContent||'');el.setAttribute('data-bidi','');if(el.getAttribute('dir')!==d)el.setAttribute('dir',d)}
+function bidi(root){if(root.nodeType!==1)return;if(root.matches&&root.matches(BIDI))setDir(root);var l=root.querySelectorAll(BIDI);for(var i=0;i<l.length;i++)setDir(l[i])}
+function bidiUp(n){var el=n.nodeType===1?n:n.parentNode,b=el&&el.closest&&el.closest(BIDI);if(b)setDir(b)}
+window.I18N={t:tr,date:arDate,lang:'ar',dir:dirOf};
 function start(){
-  walk(document.body);
+  walk(document.body);bidi(document.body);
   new MutationObserver(function(ms){ms.forEach(function(m){
-    if(m.type==='characterData')textNode(m.target);
+    if(m.type==='characterData'){textNode(m.target);bidiUp(m.target)}
     else if(m.type==='attributes')attrs(m.target);
-    else m.addedNodes.forEach(walk)})}).observe(document.body,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:ATTRS});
+    else{m.addedNodes.forEach(function(n){walk(n);bidi(n)});if(m.addedNodes.length)bidiUp(m.target)}})}).observe(document.body,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:ATTRS});
   document.title=tr(document.title)}
 if(document.body)start();else document.addEventListener('DOMContentLoaded',start);
