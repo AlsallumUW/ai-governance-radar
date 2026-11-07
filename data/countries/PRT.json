@@ -497,6 +497,58 @@
       "document_access_type": "original_government_document",
       "source_id": "s-067a01e584bd",
       "evidence_reference": "curl (browser user agent, --max-time 60): CNPD decision PDF downloaded and read with pdftotext; approval date 2 June 2026 on the last page"
+    },
+    {
+      "id": "i-682dc508a894",
+      "jurisdiction_id": "PRT",
+      "official_title": "Recomendações no uso de inteligência artificial",
+      "english_title": "Recommendations on the use of artificial intelligence (Superior Council of the Judiciary)",
+      "issuing_authority": "Conselho Superior da Magistratura (CSM)",
+      "publisher_name": "Superior Council of the Judiciary",
+      "authority_type": "judiciary",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "sectoral",
+        "generative-ai",
+        "public-sector"
+      ],
+      "category": "sectoral",
+      "subcategory": null,
+      "legal_status": "administrative_guideline",
+      "lifecycle": "adopted",
+      "publication_date": "2026-04-08",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Approved by the CSM Plenary on 8 April 2026 (date printed in the document) and published as a PDF on the CSM website; no separate publication or entry-into-force date is stated. The text presents itself as a set of recommendations to judges and does not state binding force. The document does not refer to the GAIA proposal for deliberation of 23 February 2026.",
+      "scope": "Portugal (national)",
+      "sectors": [
+        "justice"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Recommendations approved by the CSM Plenary that govern how judges of the judicial courts may use AI, including generative AI, in their jurisdictional functions. Judges should use only AI systems provided by the case management system or the CSM (subject to CSM quality control and audit); permitted uses are research, document analysis, internal non-decisive drafts and administrative tasks, while AI may not replace the judge in deciding, assessing evidence or interpreting the law. Judicial data must never be entered into non-approved tools, AI use in a judgment or order must be expressly disclosed (a standard formula is suggested), and judges must watch for AI-generated filings with fictitious citations.",
+      "ai_governance_relevance": "Rules of conduct for Portuguese judges' use of AI, including generative AI, in jurisdictional functions.",
+      "source_url": "https://csm.org.pt/wp-content/uploads/2026/05/Recomendacoes_Uso_IA.pdf",
+      "official_pdf_url": "https://csm.org.pt/wp-content/uploads/2026/05/Recomendacoes_Uso_IA.pdf",
+      "official_webpage_url": null,
+      "language": "pt",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-11-07",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-sweep 2026-11-07: WebFetch of the PDF on csm.org.pt (2026-11-07). Title: \"Recomendações no uso de inteligência artificial\". Approval: \"Recomendações aprovadas no Plenário do CSM de 8 de abril de 2026\". Scope art. 1: judges of the judicial courts in jurisdictional functions; arts. 4-13 cover approved tools, permitted/prohibited uses, disclosure (art. 10), CSM supervision (art. 11), training (art. 13).",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-d7765ed1ed3a",
+      "organization_id": "o-3d57fe369046",
+      "first_recorded": "2026-11-07",
+      "last_changed": null
     }
   ],
   "organizations": [
@@ -548,6 +600,16 @@
       "ai_governance_role": "Comissão Nacional de Proteção de Dados (CNPD), Portugal's data protection authority under Law 58/2019; issues opinions on draft legislation, including AI-related provisions, and keeps its personal-data role alongside the AI Act authorities.",
       "source_url": "https://www.cnpd.pt/",
       "authority_type": "regulator",
+      "government_level": "national"
+    },
+    {
+      "id": "o-3d57fe369046",
+      "jurisdiction_id": "PRT",
+      "name": "Superior Council of the Judiciary",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Governing body of the judges of the judicial courts; approved recommendations on judges' use of AI (April 2026).",
+      "source_url": "https://csm.org.pt/",
+      "authority_type": "judiciary",
       "government_level": "national"
     }
   ],
@@ -800,6 +862,34 @@
       "document_language": "pt",
       "error": null,
       "content_type": "application/pdf"
+    },
+    {
+      "id": "s-d7765ed1ed3a",
+      "url": "https://csm.org.pt/wp-content/uploads/2026/05/Recomendacoes_Uso_IA.pdf",
+      "jurisdiction_ids": [
+        "PRT"
+      ],
+      "source_institutions": [
+        "Superior Council of the Judiciary"
+      ],
+      "instrument_ids": [
+        "i-682dc508a894"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "generative-ai",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-11-07",
+      "checked_date": "2026-11-07",
+      "check_method": "deep-sweep 2026-11-07: WebFetch of the PDF on csm.org.pt (2026-11-07). Title: \"Recomendações no uso de inteligência artificial\". Approval: \"Recomendações aprovadas no Plenário do CSM de 8 de abril de 2026\". Scope art. 1: judges of the judicial courts in jurisdictional functions; arts. 4-13 cover approved tools, permitted/prohibited uses, disclosure (art. 10), CSM supervision (art. 11), training (art. 13).",
+      "http_status": 200,
+      "final_url": "https://csm.org.pt/wp-content/uploads/2026/05/Recomendacoes_Uso_IA.pdf",
+      "link_status": "reachable",
+      "page_title": "Recomendações no uso de inteligência artificial",
+      "document_language": "pt",
+      "error": null,
+      "content_type": "application/pdf"
     }
   ],
   "regional_applicability": [],
@@ -830,13 +920,13 @@
       "risk-assurance",
       "sandbox",
       "strategy",
-      "transparency"
+      "transparency",
+      "sectoral"
     ],
     "categories_where_no_material_was_found": [
       "cyber-security",
       "standards",
       "index-readiness",
-      "sectoral",
       "drafts",
       "international"
     ],
@@ -882,13 +972,28 @@
       "regional_inheritance": "COMPLETE",
       "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "Portugal's official gazette, the digital government agency, ministries and regulators were searched. No qualifying AI-governance document was found for cybersecurity, standards, readiness indices, sectoral rules, drafts or international agreements. Not yet verified from the official text: the AI Portugal 2030 site, a health-services AI white paper (listed as a lead), pending AI bills in Parliament and the act designating the communications regulator under the EU AI Act.",
+    "no_material_found_note": "Portugal's official gazette, the digital government agency, ministries and regulators were searched. No qualifying AI-governance document was found for cybersecurity, standards, readiness indices, drafts or international agreements. Not yet verified from the official text: the AI Portugal 2030 site, a health-services AI white paper (listed as a lead), pending AI bills in Parliament and the act designating the communications regulator under the EU AI Act.",
     "discovery_result_count": 10,
     "focused_result_count": 12,
     "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. incode2030.gov.pt 503/reset; SPMS AI white paper 403 to both methods; parlamento.pt bills not searched in depth; CMVM and ANACOM only searched. No act designating ANACOM found in the gazette. AI Portugal 2030 PDF on DGES, linked from its 3 June 2019 news page; not marked superseded (no revoking act). Convention 108: Resolução da AR 23/93 and Decreto do PR 21/93 (DR I-A n.º 159, 9 July 1993), recorded on the COE file. Units covered: Law: Diário da República (via dre.pt redirects to files.diariodarepublica.pt PDFs): Law 27/2021 art. 9 (AI), Law 58/2019 (GDPR execution), Decree-Law 85/2026 (prior authorisation of public AI projects), RCM 2/2026 and 207/2024; no national AI Act implementing law found (lead).; Government: digital.gov.pt (ARTE): ANIA, RCM 2/2026, EDN, GuIA, DL 85/2026; portugal.gov.pt news on ANIA; DGES page for AI Portugal 2030 (incode2030.gov.pt unreachable).; Ministries: Education (DGE: only a Portuguese copy of the European Commission ethical guidelines for educators, not national; ministry AI working group announced, no document found), Health (SPMS white paper, 403, lead; ERS AI Act page undated, lead), Justice/defence/finance/labour/interior: searched, nothing AI-specific found.; Regulators: CNPD (Opinion 2026/39 on AI in procurement recorded; otherwise news on EDPB/international statements only), Banco de Portugal/CMVM/ASF (speeches and articles only, no AI-specific guidance found), ANACOM (AI Act designation announced, no official act found), CNCS: searched, nothing AI-specific found.. Not reached: incode2030.gov.pt (HTTP 503 / connection reset); SPMS white paper (HTTP 403); parlamento.pt pending AI bills not searched in depth; CMVM and ANACOM own sites not browsed beyond search. Could not verify: SPMS AI white paper (HTTP 403); incode2030.gov.pt page for AI Portugal 2030 (503); Exact AI Act designation act for ANACOM (none found in gazette); Convention 108 deposit date (gazette notice not read). cyber-security, standards, index-readiness, sectoral, drafts, international: no material found.\nWording note 2026-10-19 (coverage_audit.no_material_found_note): Some official sites were unavailable, including the AI Portugal 2030 site and a health-services AI white paper (listed as a lead), and pending AI bills in Parliament and the act designating the communications regulator under the EU AI Act are still to be checked.",
     "last_sweep": "2026-10-31"
   },
   "changes": [
+    {
+      "id": "c-3940dc82317f",
+      "date": "2026-11-07",
+      "recorded": "2026-11-07",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "PRT",
+      "instrument_id": "i-682dc508a894",
+      "title": "Recommendations on the use of artificial intelligence (Superior Council of the Judiciary)",
+      "detail": "Added to the radar (published 2026-04-08).",
+      "from": null,
+      "to": null,
+      "source_url": "https://csm.org.pt/wp-content/uploads/2026/05/Recomendacoes_Uso_IA.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-3bceabd3679e",
       "date": "2026-10-12",
@@ -1130,6 +1235,21 @@
       "needs_review": false
     },
     {
+      "id": "c-e582230404c4",
+      "date": "2026-04-08",
+      "recorded": "2026-11-07",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "PRT",
+      "instrument_id": "i-682dc508a894",
+      "title": "Recommendations on the use of artificial intelligence (Superior Council of the Judiciary)",
+      "detail": "Published by Conselho Superior da Magistratura (CSM).",
+      "from": null,
+      "to": null,
+      "source_url": "https://csm.org.pt/wp-content/uploads/2026/05/Recomendacoes_Uso_IA.pdf",
+      "needs_review": false
+    },
+    {
       "id": "c-c083dbcb6f12",
       "date": "2026-03",
       "recorded": "2026-10-21",
@@ -1261,8 +1381,9 @@
       "title": "Decreto-Lei que altera o Código dos Contratos Públicos (simplificação, digitalização, utilização de sistemas de inteligência artificial)",
       "english_title": "Decree-Law amending the Public Contracts Code (simplification, digitalisation and use of AI systems)",
       "issuing_authority": "Government of Portugal",
-      "note": "Draft reviewed by CNPD Opinion 2026/39 (2 June 2026). Final publication in the Diário da República not checked; record as binding_regulation / procurement if published with AI provisions.",
-      "found": "2026-10-12"
+      "note": "Draft reviewed by CNPD Opinion 2026/39 (2 June 2026). Final publication in the Diário da República not checked; record as binding_regulation / procurement if published with AI provisions. 2026-11-07: published as Decreto-Lei n.º 177/2026 of 4 September 2026 (DR 1.ª série n.º 172/2026; detail page https://diariodarepublica.pt/dr/detalhe/decreto-lei/177-2026-1166969779), entering into force 1 October 2026; per a trade-association summary (apcmc.pt circular 70/2026) art. 1.º-C requires contracting entities to use 'sistemas digitais — incluindo de inteligência artificial'. Council of Ministers approved it 25 June 2026. The DR text has not been read: read it, quote the AI articles and record as binding_regulation / procurement, public-sector (related: CNPD Opinion 2026/39, i-1b1894b7acc3).",
+      "found": "2026-10-12",
+      "url": "https://files.diariodarepublica.pt/1s/2026/09/17200/0000200283.pdf"
     },
     {
       "title": "Plano de Ação 2026-2027 da Estratégia Digital Nacional",
@@ -1276,7 +1397,7 @@
       "english_title": "Artificial Intelligence in Education: Guidelines for the responsible use of AI in educational settings (public consultation draft)",
       "issuing_authority": "Ministério da Educação, Ciência e Inovação / Instituto de Educação, Qualidade e Avaliação (EduQA)",
       "url": "https://portugal.gov.pt/gc25/comunicacao/comunicados/orientacoes-para-uso-responsavel-da-inteligencia-artificial-na-educacao-em-consulta-publica-por-30-dias",
-      "note": "Government communiqué dated 2026-10-15 says EduQA opened a 30-day public consultation on these guidelines (pre-school to secondary; three modes: no AI, supporting AI, integrated AI; five support tools; final version due to schools on 4 January 2027). The draft text is on the EduQA consultation page https://eduqa.pt/consulta-publica-orientacoes-para-a-utilizacao-da-inteligencia-artificial-na-educacao/, which could not be reached; promote as consultation_draft (category drafts, sectoral, generative-ai; sector education) once the draft and closing date are read there.",
+      "note": "Government communiqué dated 2026-10-15 says EduQA opened a 30-day public consultation on these guidelines (pre-school to secondary; three modes: no AI, supporting AI, integrated AI; five support tools; final version due to schools on 4 January 2027). The draft text is on the EduQA consultation page https://eduqa.pt/consulta-publica-orientacoes-para-a-utilizacao-da-inteligencia-artificial-na-educacao/, which could not be reached; promote as consultation_draft (category drafts, sectoral, generative-ai; sector education) once the draft and closing date are read there. 2026-11-07: communiqué re-checked: 30-day consultation from 15 October 2026, no closing date printed; final version to schools from 4 January 2027. Draft text on the EduQA page still not read.",
       "found": "2026-10-22"
     },
     {
@@ -1292,7 +1413,7 @@
       "english_title": "Proposal for deliberation of the Artificial Intelligence Monitoring Group (GAIA): opinion on the use of AI by judges and oversight of AI in the courts",
       "issuing_authority": "Conselho Superior da Magistratura (High Council for the Judiciary)",
       "url": "https://csm.org.pt/wp-content/uploads/2026/04/Parecer-IA.pdf",
-      "note": "Read 2026-10-22 on the issuer's site. Opinion dated Lisboa, 23 February 2026 (reference 2025/GAVPM/5469), presented as a proposal for deliberation by the Council; the document does not record its adoption. Kept as a lead: a proposal for deliberation whose adoption is not recorded.",
+      "note": "Read 2026-10-22 on the issuer's site. Opinion dated Lisboa, 23 February 2026 (reference 2025/GAVPM/5469), presented as a proposal for deliberation by the Council; the document does not record its adoption. Kept as a lead: a proposal for deliberation whose adoption is not recorded. 2026-11-07: the CSM 'Recomendações no uso de inteligência artificial' approved by the Plenary on 8 April 2026 (now recorded) do not refer to this proposal, so its adoption is still not confirmed.",
       "found": "2026-10-22"
     },
     {
@@ -1300,8 +1421,24 @@
       "english_title": "AI ethics charter of the Portuguese administrative and tax courts (2025)",
       "issuing_authority": "Conselho Superior dos Tribunais Administrativos e Fiscais (CSTAF)",
       "url": "https://csm.org.pt/wp-content/uploads/2026/04/Parecer-IA.pdf",
-      "note": "Cited in the CSM GAIA opinion of 23 February 2026 as the administrative and tax courts' AI ethics charter (2025). Exact title and date to be confirmed on the CSTAF website before adding.",
+      "note": "Cited in the CSM GAIA opinion of 23 February 2026 as the administrative and tax courts' AI ethics charter (2025). Exact title and date to be confirmed on the CSTAF website before adding. 2026-11-07: a non-official, paywalled legal database (https://lexpoint.pt/conteudos/1239/136583/outros-documentos/deliberacao-de-25032025-cstaf-de-25032025) lists a CSTAF deliberation of 25 March 2025 headed 'Carta Ética para a utilização da Inteligência Artificial nos TAF'; RTP (12 Dec 2024) reported the CSTAF working group led by judge Pedro Marchão Marques. Find the deliberation and charter on the CSTAF website before recording.",
       "found": "2026-10-22"
+    },
+    {
+      "title": "Informação DGC n.º 9/2025 — Inteligência Artificial | European AI Act - Artigo 5.º do Regulamento 2024/1689",
+      "english_title": "DGC Information Notice No. 9/2025 - Artificial Intelligence: European AI Act, Article 5 of Regulation 2024/1689",
+      "issuing_authority": "Directorate-General for Consumers (Direção-Geral do Consumidor)",
+      "note": "Consumer information notice by the Direção-Geral do Consumidor dated 21 February 2025 explaining AI Act art. 5 prohibitions; read only as a copy on a municipal consumer-information centre site, not the issuer's. It states Portugal designated fundamental-rights authorities in November 2024. Likely awareness material; look for the DGC original (consumidor.gov.pt) and decide on scope.",
+      "url": "https://www.cm-borba.pt/wp-content/uploads/2025/02/Inteligencia-Artificial-European-AI-Act-Artigo-5.o-do-Regulamento-20241689-de-13-de-junho-de-2024-Informacao-DGC-n.9-2025.pdf",
+      "found": "2026-11-07"
+    },
+    {
+      "title": "Relatório nacional sobre inteligência artificial no ensino superior (CNIPES)",
+      "english_title": "National report on artificial intelligence in higher education (CNIPES)",
+      "issuing_authority": "CNIPES (published by the Directorate-General for Higher Education)",
+      "note": "DGES news item of 27 April 2026 (per search title) on a national report on AI in higher education by CNIPES, with proposals. DGES pages redirect to a landing page that could not be fetched. Check issuer, status and whether it sets sector-wide expectations.",
+      "url": "https://www.dges.gov.pt/pt/noticia/cnipes-divulga-relatorio-nacional-sobre-inteligencia-artificial-no-ensino-superior-e-propoe",
+      "found": "2026-11-07"
     }
   ]
 }
