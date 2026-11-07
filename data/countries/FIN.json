@@ -899,6 +899,115 @@
       "document_access_type": "original_government_document",
       "source_id": "s-70166df189f6",
       "evidence_reference": "curl (browser user agent, --max-time 60): repository item metadata and full PDF read through the Government publications repository's own API (julkaisut.valtioneuvosto.fi/server/api); the HTML item page returns a bot challenge (403) to curl and WebFetch; 64-page PDF read (description sheet and abstract)"
+    },
+    {
+      "id": "i-6b9bb3aef1b4",
+      "official_title": "SFS-EN ISO/IEC 42001:2026 Information technology. Artificial intelligence. Management system (ISO/IEC 42001:2023)",
+      "jurisdiction_id": "FIN",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Finland (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-11-07",
+      "first_recorded": "2026-11-07",
+      "last_changed": null,
+      "document_access_type": "official_publication_or_full_text_page",
+      "supersedes": [
+        "i-40b71b243ad6"
+      ],
+      "superseded_by": [],
+      "metadata_gaps": [
+        "Standard text is sold by SFS and was not read; metadata (number, title, status, publication date, replacement) from the SFS catalogue entry"
+      ],
+      "effective_date": null,
+      "sectors": [
+        "cross-sector"
+      ],
+      "english_title": "SFS-EN ISO/IEC 42001:2026 Information technology. Artificial intelligence. Management system (ISO/IEC 42001:2023)",
+      "issuing_authority": "Finnish Standards Association",
+      "publisher_name": "Finnish Standards Association",
+      "authority_type": "standards_body",
+      "organization_id": "o-3f6336b01941",
+      "categories": [
+        "standards"
+      ],
+      "legal_status": "voluntary_code",
+      "lifecycle": "published",
+      "publication_date": "2026-03-27",
+      "summary": "Finnish national adoption of EN ISO/IEC 42001:2026, the AI management system standard, setting requirements for organisations to establish, maintain and improve an AI management system; voluntary. It replaces the earlier national adoption SFS-ISO/IEC 42001:2024.",
+      "ai_governance_relevance": "National AI standard adopted by the national standards body.",
+      "current_status": "Published 27 March 2026 per the SFS catalogue; replaces SFS-ISO/IEC 42001:2024 (published 17 May 2024, now withdrawn). Developed in CEN/CLC/JTC 21.",
+      "language": "en",
+      "source_url": "https://store.sfs.fi/en/sfs-en-isoiec-42001-2026",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://store.sfs.fi/en/sfs-en-isoiec-42001-2026",
+      "source_kind": "official_publication",
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "category": "standards",
+      "source_id": "s-c53f885a1232",
+      "evidence_reference": "WebFetch: SFS catalogue product page read (status Published, publication 27 March 2026, replaces SFS-ISO/IEC 42001:2024, CEN/CLC/JTC 21)."
+    },
+    {
+      "id": "i-40b71b243ad6",
+      "official_title": "SFS-ISO/IEC 42001:2024 Information technology — Artificial intelligence — Management system",
+      "jurisdiction_id": "FIN",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "last_amended_date": null,
+      "scope": "Finland (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-11-07",
+      "first_recorded": "2026-11-07",
+      "last_changed": null,
+      "document_access_type": "official_publication_or_full_text_page",
+      "supersedes": [],
+      "superseded_by": [
+        "i-6b9bb3aef1b4"
+      ],
+      "metadata_gaps": [
+        "Standard text is sold by SFS and was not read; metadata (number, title, status, publication date, replacement) from the SFS catalogue entry"
+      ],
+      "effective_date": null,
+      "sectors": [
+        "cross-sector"
+      ],
+      "english_title": "SFS-ISO/IEC 42001:2024 Information technology — Artificial intelligence — Management system",
+      "issuing_authority": "Finnish Standards Association",
+      "publisher_name": "Finnish Standards Association",
+      "authority_type": "standards_body",
+      "organization_id": "o-3f6336b01941",
+      "categories": [
+        "standards",
+        "historical"
+      ],
+      "legal_status": "voluntary_code",
+      "lifecycle": "superseded",
+      "publication_date": "2024-05-17",
+      "summary": "First Finnish national adoption of ISO/IEC 42001:2023 (AI management system), available in English and Finnish; withdrawn and replaced by SFS-EN ISO/IEC 42001:2026.",
+      "ai_governance_relevance": "First Finnish national adoption of the AI management system standard, kept for the timeline.",
+      "current_status": "Published 17 May 2024 (edition 1); withdrawn and replaced by SFS-EN ISO/IEC 42001:2026 (27 March 2026). Available in English and Finnish.",
+      "language": "en",
+      "source_url": "https://store.sfs.fi/en/sfs-isoiec-42001-2024",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://store.sfs.fi/en/sfs-isoiec-42001-2024",
+      "source_kind": "official_publication",
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "category": "standards",
+      "source_id": "s-ab84af44f037",
+      "evidence_reference": "WebFetch: SFS catalogue product page read (status Withdrawn, publication 17 May 2024, edition 1, 'Replaced by SFS-EN ISO/IEC 42001:2026', English and Finnish)."
     }
   ],
   "organizations": [
@@ -990,6 +1099,16 @@
       "ai_governance_role": "Opetus- ja kulttuuriministeriö; issued the citizens' AI competence framework (2026) and coordinated the 2026 Government report updating Finland's Digital Compass.",
       "source_url": "https://okm.fi/",
       "authority_type": "government",
+      "government_level": "national"
+    },
+    {
+      "id": "o-3f6336b01941",
+      "jurisdiction_id": "FIN",
+      "name": "Finnish Standards Association",
+      "publisher_name_verified": true,
+      "ai_governance_role": "National standards body (SFS); adopted ISO/IEC 42001 as SFS-ISO/IEC 42001:2024, replaced by SFS-EN ISO/IEC 42001:2026.",
+      "source_url": "https://sfs.fi/",
+      "authority_type": "standards_body",
       "government_level": "national"
     }
   ],
@@ -1460,6 +1579,59 @@
       "document_language": "fi",
       "error": null,
       "content_type": "text/html"
+    },
+    {
+      "id": "s-c53f885a1232",
+      "url": "https://store.sfs.fi/en/sfs-en-isoiec-42001-2026",
+      "jurisdiction_ids": [
+        "FIN"
+      ],
+      "source_institutions": [
+        "Finnish Standards Association"
+      ],
+      "instrument_ids": [
+        "i-6b9bb3aef1b4"
+      ],
+      "categories_reviewed": [
+        "standards"
+      ],
+      "date_reviewed": "2026-11-07",
+      "checked_date": "2026-11-07",
+      "check_method": "WebFetch: SFS catalogue product page read (status Published, publication 27 March 2026, replaces SFS-ISO/IEC 42001:2024, CEN/CLC/JTC 21).",
+      "http_status": 200,
+      "final_url": "https://store.sfs.fi/en/sfs-en-isoiec-42001-2026",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-ab84af44f037",
+      "url": "https://store.sfs.fi/en/sfs-isoiec-42001-2024",
+      "jurisdiction_ids": [
+        "FIN"
+      ],
+      "source_institutions": [
+        "Finnish Standards Association"
+      ],
+      "instrument_ids": [
+        "i-40b71b243ad6"
+      ],
+      "categories_reviewed": [
+        "standards",
+        "historical"
+      ],
+      "date_reviewed": "2026-11-07",
+      "checked_date": "2026-11-07",
+      "check_method": "WebFetch: SFS catalogue product page read (status Withdrawn, publication 17 May 2024, edition 1, 'Replaced by SFS-EN ISO/IEC 42001:2026', English and Finnish).",
+      "http_status": 200,
+      "final_url": "https://store.sfs.fi/en/sfs-isoiec-42001-2024",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "text/html"
     }
   ],
   "regional_applicability": [],
@@ -1492,11 +1664,11 @@
       "risk-assurance",
       "sandbox",
       "sectoral",
+      "standards",
       "strategy",
       "transparency"
     ],
     "categories_where_no_material_was_found": [
-      "standards",
       "drafts",
       "international"
     ],
@@ -1552,6 +1724,36 @@
     "last_sweep": "2026-10-31"
   },
   "changes": [
+    {
+      "id": "c-e84c99509ed4",
+      "date": "2026-11-07",
+      "recorded": "2026-11-07",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "FIN",
+      "instrument_id": "i-6b9bb3aef1b4",
+      "title": "SFS-EN ISO/IEC 42001:2026 Information technology. Artificial intelligence. Management system (ISO/IEC 42001:2023)",
+      "detail": "Added to the radar (published 2026-03-27).",
+      "from": null,
+      "to": null,
+      "source_url": "https://store.sfs.fi/en/sfs-en-isoiec-42001-2026",
+      "needs_review": false
+    },
+    {
+      "id": "c-88491c095070",
+      "date": "2026-11-07",
+      "recorded": "2026-11-07",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "FIN",
+      "instrument_id": "i-40b71b243ad6",
+      "title": "SFS-ISO/IEC 42001:2024 Information technology — Artificial intelligence — Management system",
+      "detail": "Added to the radar (published 2024-05-17).",
+      "from": null,
+      "to": null,
+      "source_url": "https://store.sfs.fi/en/sfs-isoiec-42001-2024",
+      "needs_review": false
+    },
     {
       "id": "c-cf9bd63dfa54",
       "date": "2026-10-12",
@@ -1973,6 +2175,21 @@
       "needs_review": false
     },
     {
+      "id": "c-ec7e7dde8984",
+      "date": "2026-03-27",
+      "recorded": "2026-11-07",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "FIN",
+      "instrument_id": "i-6b9bb3aef1b4",
+      "title": "SFS-EN ISO/IEC 42001:2026 Information technology. Artificial intelligence. Management system (ISO/IEC 42001:2023)",
+      "detail": "Published by Finnish Standards Association.",
+      "from": null,
+      "to": null,
+      "source_url": "https://store.sfs.fi/en/sfs-en-isoiec-42001-2026",
+      "needs_review": false
+    },
+    {
       "id": "c-ebdf0d1749bd",
       "date": "2026-01-01",
       "recorded": "2026-10-12",
@@ -2045,6 +2262,21 @@
       "from": null,
       "to": null,
       "source_url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/3124e4e6-8388-446b-87c0-e8a067215407/content",
+      "needs_review": false
+    },
+    {
+      "id": "c-60674fdfc751",
+      "date": "2024-05-17",
+      "recorded": "2026-11-07",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "FIN",
+      "instrument_id": "i-40b71b243ad6",
+      "title": "SFS-ISO/IEC 42001:2024 Information technology — Artificial intelligence — Management system",
+      "detail": "Published by Finnish Standards Association.",
+      "from": null,
+      "to": null,
+      "source_url": "https://store.sfs.fi/en/sfs-isoiec-42001-2024",
       "needs_review": false
     },
     {
@@ -2170,11 +2402,12 @@
   ],
   "leads": [
     {
-      "title": "Hallituksen esitys eräiden tekoälyjärjestelmien valvonnasta annetun lain muuttamisesta (kansallinen tekoälyn sääntelyn testiympäristö)",
-      "english_title": "Government bill amending the Act on the Supervision of Certain AI Systems (national AI regulatory sandbox)",
+      "title": "HE 270/2026 vp – Hallituksen esitys eduskunnalle laeiksi eräiden tekoälyjärjestelmien valvonnasta annetun lain ja Finanssivalvonnasta annetun lain 71 §:n muuttamisesta",
+      "english_title": "Government bill HE 270/2026 vp amending the Act on the Supervision of Certain AI Systems and section 71 of the Act on the Financial Supervisory Authority (national AI regulatory sandbox)",
       "issuing_authority": "Ministry of Economic Affairs and Employment",
-      "note": "Draft sent for consultation 25 April 2025 (VN/31658/2024); would make Traficom establish and run the national AI regulatory sandbox and supplement Act 1377/2025. Whether a bill was submitted to Parliament or enacted could not be confirmed (Government sites blocked automated access; no amending act found on Finlex in this review). Check eduskunta.fi and finlex.fi.",
-      "found": "2026-10-12"
+      "note": "Draft sent for consultation 25 April 2025 (VN/31658/2024); would make Traficom establish and run the national AI regulatory sandbox and supplement Act 1377/2025. Whether a bill was submitted to Parliament or enacted could not be confirmed (Government sites blocked automated access; no amending act found on Finlex in this review). Check eduskunta.fi and finlex.fi. 2026-11-07: The bill is now before Parliament as HE 270/2026 vp (TEM091:00/2024); text seen only on a commercial legal publisher, not usable as a source. It makes Traficom establish and run the AI regulatory sandbox, sets licensing for real-world testing, a national notification duty for high-risk AI linked to critical infrastructure and administrative fines; proposed entry into force mainly 1 February 2027 (Act on the Financial Supervisory Authority change 3 May 2027). Record as drafts from eduskunta.fi.",
+      "found": "2026-10-12",
+      "url": "https://www.eduskunta.fi/pdf/HE+270/2026"
     },
     {
       "title": "Tekoälyn eettinen ohjeistus julkiselle hallinnolle (valtiovarainministeriö, 2023)",
@@ -2184,11 +2417,12 @@
       "found": "2026-10-12"
     },
     {
-      "title": "Hallituksen esitys tekoälyn ja automaation hyödyntämisestä viranomaisneuvonnassa",
-      "english_title": "Government bill on using AI and automation in public authorities' advisory services",
+      "title": "HE 106/2026 vp – Hallituksen esitys laiksi digitaalisten palvelujen tarjoamisesta annetun lain muuttamisesta (automated/AI advice)",
+      "english_title": "Government bill HE 106/2026 vp amending the Act on the Provision of Digital Services (automated and AI-based advice by authorities)",
       "issuing_authority": "Ministry of Finance",
-      "note": "Ministry of Finance announced (valtioneuvosto.fi, 2025-2026) legislation allowing authorities to give advice with AI; bill planned for Parliament in autumn 2026 with entry into force in early 2027. Status not verified; check eduskunta.fi.",
-      "found": "2026-10-12"
+      "note": "Ministry of Finance announced (valtioneuvosto.fi, 2025-2026) legislation allowing authorities to give advice with AI; bill planned for Parliament in autumn 2026 with entry into force in early 2027. Status not verified; check eduskunta.fi. 2026-11-07: Submitted to Parliament as HE 106/2026 vp (VM044:00/2025, Ministry of Finance); text seen only on a commercial legal publisher. Amends section 6a of the Act on the Provision of Digital Services to allow automated (including AI) advice, with pre-deployment compliance checks, monitoring, a human alternative and disclosure; target entry into force 1 January 2027. Consultation closed 10 April 2026 (hearing summary on hankeikkuna.fi: https://api.hankeikkuna.fi/asiakirjat/ab158505-f4c1-464c-b1a0-8c69f31318a6/8b5418dd-ce8e-464d-84e9-de88057263fb/YHTEENVETO_20260320072929.PDF). Record as drafts from eduskunta.fi; check enactment in Finlex.",
+      "found": "2026-10-12",
+      "url": "https://www.eduskunta.fi/pdf/HE+106/2026"
     },
     {
       "title": "Selvityshenkilön tiekartta tekoälyn hyödyntämisen vauhdittamisesta julkisissa palveluissa (VNK, 2026)",
@@ -2201,7 +2435,7 @@
       "title": "Tietosuojavaltuutetun toimiston tekoälyä koskeva ohjeistus",
       "english_title": "Data Protection Ombudsman's guidance on AI",
       "issuing_authority": "Office of the Data Protection Ombudsman",
-      "note": "tietosuoja.fi returned 403 to curl and WebFetch, so any AI-specific guidance or AI-related decisions could not be checked. Re-check tietosuoja.fi and the Ombudsman's decisions on finlex.fi.",
+      "note": "tietosuoja.fi returned 403 to curl and WebFetch, so any AI-specific guidance or AI-related decisions could not be checked. Re-check tietosuoja.fi and the Ombudsman's decisions on finlex.fi. 2026-11-07: The Ombudsman's 2024 annual report to Parliament (K 11/2025 vp, https://www.riksdagen.fi/valtiopaivaasiakirjat/K+11/2025) shows only statements (on the Ministry of Education and Culture / EDUFI draft AI guide on learners' data, and on the AI Act implementing bill, 3 December 2024), no AI-specific guidance or decisions. tietosuoja.fi still not reached; lead stays open.",
       "found": "2026-10-12"
     },
     {
@@ -2210,6 +2444,38 @@
       "issuing_authority": "Finnish Government",
       "note": "Original 2022 Digital Compass, updated by the 2026 Government report recorded here (VN 2026:60). Record as strategy/historical if the original is to be kept for the timeline.",
       "found": "2026-10-12"
+    },
+    {
+      "title": "Tekoäly varhaiskasvatuksessa ja koulutuksessa – lainsäädäntö ja suositukset",
+      "english_title": "AI in early childhood education and schools: legislation and recommendations (Finnish National Agency for Education and Ministry of Education and Culture, 31 March 2025)",
+      "issuing_authority": "Finnish National Agency for Education / Ministry of Education and Culture",
+      "note": "Recommendations package of 31 March 2025; only the announcement pages were read, not the recommendations text. The package itself is likely at https://www.oph.fi/fi/tekoalysuositukset. Record (sectoral, education) once the text and its printed date are read.",
+      "found": "2026-11-07",
+      "url": "https://www.oph.fi/fi/tekoaly-varhaiskasvatuksessa-ja-koulutuksessa-lainsaadanto-ja-suositukset"
+    },
+    {
+      "title": "Finanssivalvonta – Tekoälyn käytön valvonta (valvottavatilaisuus 5.3.2026)",
+      "english_title": "Financial Supervisory Authority: supervision of AI use (event for supervised entities, 5 March 2026)",
+      "issuing_authority": "Financial Supervisory Authority",
+      "note": "Public slide deck: the Financial Supervisory Authority is market surveillance authority for high-risk AI in finance (credit scoring, life and health insurance pricing); 2026 supervisory meetings and an annual high-risk AI survey, inspections from 2027. A presentation, not guidance; the file path suggests a 'tekoälyn käytön valvonta' page on finanssivalvonta.fi that may hold formal guidance.",
+      "found": "2026-11-07",
+      "url": "https://www.finanssivalvonta.fi/globalassets/fi/tekoalyn-kayton-valvonta/tekoalyn-kayton-valvonta-valvottavatilaisuus-maaliskuu2026.pdf"
+    },
+    {
+      "title": "Tulevaisuuden viranomaisuus – Traficomin tekoälyvisio",
+      "english_title": "Authority of the future: Traficom's AI vision",
+      "issuing_authority": "Finnish Transport and Communications Agency (Traficom)",
+      "note": "Traficom's own AI vision, hosted on a State Treasury server (not opened). A single institution's internal plan: lead only under the scope test.",
+      "found": "2026-11-07",
+      "url": "https://cdn.valtiokonttori.fi/wordpress/sites/6/2025/05/tulevaisuuden-viranomaisuus-traficomin-tekoalyvisio.pdf"
+    },
+    {
+      "title": "U 81/2025 vp – Valtioneuvoston kirjelmä: digiomnibus ja tekoälyomnibus",
+      "english_title": "Government communication U 81/2025 vp on the EU digital omnibus and AI omnibus proposals",
+      "issuing_authority": "Finnish Government",
+      "note": "Government letter to Parliament on the Commission's digital and AI omnibus proposals, discussed by the Constitutional Law Committee on 3 March 2026; see also PeVL 33/2025 vp on national AI Act sanction provisions. Government positions on EU proposals are excluded as records (Estonia precedent); listed for completeness.",
+      "found": "2026-11-07",
+      "url": "https://www.eduskunta.fi/pdf/PeVP+14/2026+vp?lang=fi"
     }
   ]
 }
