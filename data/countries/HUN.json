@@ -693,57 +693,6 @@
       "evidence_reference": "curl (browser user agent, --max-time 60): 15-page PDF read (pdftotext); date from the naih.hu reports list"
     },
     {
-      "id": "i-e83561aa1c68",
-      "official_title": "NAIH-85-3/2022 határozat (mesterséges intelligencia alkalmazásának adatvédelmi kérdései)",
-      "english_title": "NAIH Decision NAIH-85-3/2022 (data protection issues of the use of artificial intelligence)",
-      "issuing_authority": "Hungarian National Authority for Data Protection and Freedom of Information (NAIH)",
-      "authority_type": "regulator",
-      "categories": [
-        "data-privacy",
-        "sectoral"
-      ],
-      "legal_status": "enforcement_decision",
-      "lifecycle": "adopted",
-      "publication_date": "2022-02-08",
-      "current_status": "Decision dated 8 February 2022 (Budapest); published on naih.hu under the title \"Mesterséges intelligencia alkalmazásának adatvédelmi kérdései\".",
-      "summary": "Ex officio decision against Budapest Bank Zrt. finding that its AI-driven speech analysis of customer-service call recordings, which assessed callers' emotions to prioritise call-backs, breached GDPR principles, legal basis, transparency, the right to object and data protection by design. NAIH ordered the bank to stop analysing emotions and fined it HUF 250 million.",
-      "ai_governance_relevance": "First Hungarian GDPR fine concerning AI use.",
-      "source_url": "https://naih.hu/hatarozatok-vegzesek?download=517:mesterseges-intelligencia-alkalmazasanak-adatvedelmi-kerdesei",
-      "official_pdf_url": "https://naih.hu/hatarozatok-vegzesek?download=517:mesterseges-intelligencia-alkalmazasanak-adatvedelmi-kerdesei",
-      "official_webpage_url": "https://naih.hu/hatarozatok-vegzesek",
-      "sectors": [
-        "cross-sector"
-      ],
-      "source_kind": "official_document",
-      "supersedes": [],
-      "organization_id": "o-88a110e5b708",
-      "publisher_name": "Hungarian National Authority for Data Protection and Freedom of Information",
-      "jurisdiction_id": "HUN",
-      "government_level": "national",
-      "subnational_unit": null,
-      "category": "data-privacy",
-      "subcategory": null,
-      "effective_date": null,
-      "last_amended_date": null,
-      "scope": "Hungary (national)",
-      "technology_scope": [
-        "AI"
-      ],
-      "superseded_by": [],
-      "related_instruments": [],
-      "regional_applicability": [],
-      "metadata_gaps": [],
-      "language": "hu",
-      "verification_date": "2026-10-12",
-      "first_recorded": "2026-10-12",
-      "last_changed": null,
-      "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
-      "document_access_type": "original_government_document",
-      "source_id": "s-71875a263bce",
-      "evidence_reference": "curl (browser user agent, --max-time 60): full decision PDF read (pdftotext); date \"Budapest, 2022. február 8.\""
-    },
-    {
       "id": "i-931d8afca2eb",
       "official_title": "Az ETT Elnökség állásfoglalása a mesterséges intelligencia (MI) alkalmazásáról",
       "english_title": "Position statement of the Presidium of the Health Science Council (ETT) on the use of artificial intelligence (AI)",
@@ -1280,33 +1229,6 @@
       "content_type": "application/pdf"
     },
     {
-      "id": "s-71875a263bce",
-      "url": "https://naih.hu/hatarozatok-vegzesek?download=517:mesterseges-intelligencia-alkalmazasanak-adatvedelmi-kerdesei",
-      "jurisdiction_ids": [
-        "HUN"
-      ],
-      "source_institutions": [
-        "Hungarian National Authority for Data Protection and Freedom of Information"
-      ],
-      "instrument_ids": [
-        "i-e83561aa1c68"
-      ],
-      "categories_reviewed": [
-        "data-privacy",
-        "sectoral"
-      ],
-      "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full decision PDF read (pdftotext); date \"Budapest, 2022. február 8.\"",
-      "http_status": 200,
-      "final_url": "https://naih.hu/hatarozatok-vegzesek?download=517:mesterseges-intelligencia-alkalmazasanak-adatvedelmi-kerdesei",
-      "link_status": "reachable",
-      "page_title": null,
-      "document_language": "hu",
-      "error": null,
-      "content_type": "application/pdf"
-    },
-    {
       "id": "s-69b3f61f92d1",
       "url": "https://ett.okfo.gov.hu/wp-content/uploads/2026/04/MI_alkalmazasa_20260423.pdf",
       "jurisdiction_ids": [
@@ -1453,6 +1375,21 @@
     "last_sweep": "2026-11-07"
   },
   "changes": [
+    {
+      "id": "c-b5969208b94b",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "removed",
+      "jurisdiction_id": "HUN",
+      "instrument_id": "i-e83561aa1c68",
+      "title": "NAIH Decision NAIH-85-3/2022 (data protection issues of the use of artificial intelligence)",
+      "detail": "Removed from the radar: decisions addressed to a single organisation are not counted as governance documents for now.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
     {
       "id": "c-9665a2bd00ae",
       "date": "2026-11-08",
@@ -2006,21 +1943,6 @@
       "from": null,
       "to": null,
       "source_url": "https://njt.jog.gov.hu/jogszabaly/2025-1028-30-22",
-      "needs_review": false
-    },
-    {
-      "id": "c-1fa4efbc89e2",
-      "date": "2022-02-08",
-      "recorded": "2026-10-12",
-      "kind": "world",
-      "type": "adopted",
-      "jurisdiction_id": "HUN",
-      "instrument_id": "i-e83561aa1c68",
-      "title": "NAIH fines bank HUF 250m over AI emotion analysis",
-      "detail": "NAIH decision NAIH-85-3/2022 against Budapest Bank Zrt.",
-      "from": null,
-      "to": null,
-      "source_url": "https://naih.hu/hatarozatok-vegzesek?download=517:mesterseges-intelligencia-alkalmazasanak-adatvedelmi-kerdesei",
       "needs_review": false
     },
     {

@@ -237,60 +237,6 @@
       "evidence_reference": "curl (browser user agent, --max-time 60): e-Sbírka JSON service read (metadata and 587 text fragments of the promulgated text; § 39 and effectiveness clause checked) Published in: Ministry of the Interior (Collection of Laws, e-Sbírka)."
     },
     {
-      "id": "i-d8acf4aaf1bd",
-      "official_title": "Policie ČR (UOOU-04892/21) - Kamerový systém na letišti Václava Havla Praha",
-      "english_title": "Police of the Czech Republic (UOOU-04892/21): camera system at Václav Havel Airport Prague - inspection findings on automated facial recognition",
-      "jurisdiction_id": "CZE",
-      "issuing_authority": "Office for Personal Data Protection",
-      "publisher_name": "Office for Personal Data Protection",
-      "authority_type": "data_protection_authority",
-      "government_level": "national",
-      "subnational_unit": null,
-      "categories": [
-        "data-privacy",
-        "public-sector"
-      ],
-      "category": "data-privacy",
-      "subcategory": null,
-      "legal_status": "enforcement_decision",
-      "lifecycle": "adopted",
-      "publication_date": "2025",
-      "effective_date": null,
-      "last_amended_date": null,
-      "current_status": "Inspection concluded in 2025 (file UOOU-04892/21); the Office's published summary gives only the year. The Police informed the Office that the system was deactivated on 1 August 2025 and all biometric data deleted, following the amendment of Act No. 110/2019 Coll. by Act No. 230/2025 Coll.",
-      "scope": "Czech Republic (national)",
-      "sectors": [
-        "justice",
-        "transport"
-      ],
-      "technology_scope": [
-        "AI"
-      ],
-      "summary": "Inspection, concluded in 2025, of the Police's automated biometric facial-recognition system at Prague airport, which compared faces captured by cameras with a reference database of 'persons of interest'. The Office found the processing breached Art. 10 of the Law Enforcement Directive because the Police Act gives no explicit legal basis for processing biometric data for unique identification, and that biometric indexes of all persons were kept longer than necessary (this second finding was later set aside on the Police's objections); the President of the Office confirmed the other findings.",
-      "ai_governance_relevance": "First Czech regulator finding on police use of AI facial recognition; led to the system's deactivation when the 2025 statutory regime took effect.",
-      "source_url": "https://uoou.gov.cz/cinnost/ochrana-osobnich-udaju/ukoncene-kontroly/kontroly-za-rok-2025/kontrolni-cinnost-v-oblasti-ochrany-osobnich-udaju-2025/policie-cr-uoou-0489221",
-      "official_pdf_url": null,
-      "official_webpage_url": "https://uoou.gov.cz/cinnost/ochrana-osobnich-udaju/ukoncene-kontroly/kontroly-za-rok-2025/kontrolni-cinnost-v-oblasti-ochrany-osobnich-udaju-2025/policie-cr-uoou-0489221",
-      "source_kind": "official_publication",
-      "document_access_type": "official_publication_or_full_text_page",
-      "language": "cs",
-      "supersedes": [],
-      "superseded_by": [],
-      "related_instruments": [],
-      "regional_applicability": [],
-      "metadata_gaps": [
-        "exact date of inspection conclusion not stated (year only)"
-      ],
-      "verification_date": "2026-10-12",
-      "first_recorded": "2026-10-12",
-      "last_changed": null,
-      "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
-      "source_id": "s-678cd1c08f7d",
-      "organization_id": "o-6df7c64fb902",
-      "evidence_reference": "curl (browser user agent, --max-time 60): full inspection summary page read on uoou.gov.cz (2025 inspections list)"
-    },
-    {
       "id": "i-64e63b680e90",
       "official_title": "ÚOOÚ k biometrické identifikaci nežádoucích osob na fotbalových stadionech",
       "english_title": "Office for Personal Data Protection statement on biometric identification of unwanted persons at football stadiums",
@@ -857,33 +803,6 @@
       "fail_streak": 0
     },
     {
-      "id": "s-678cd1c08f7d",
-      "url": "https://uoou.gov.cz/cinnost/ochrana-osobnich-udaju/ukoncene-kontroly/kontroly-za-rok-2025/kontrolni-cinnost-v-oblasti-ochrany-osobnich-udaju-2025/policie-cr-uoou-0489221",
-      "jurisdiction_ids": [
-        "CZE"
-      ],
-      "source_institutions": [
-        "Office for Personal Data Protection"
-      ],
-      "instrument_ids": [
-        "i-d8acf4aaf1bd"
-      ],
-      "categories_reviewed": [
-        "data-privacy",
-        "public-sector"
-      ],
-      "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full inspection summary page read on uoou.gov.cz (2025 inspections list)",
-      "http_status": 200,
-      "final_url": "https://uoou.gov.cz/cinnost/ochrana-osobnich-udaju/ukoncene-kontroly/kontroly-za-rok-2025/kontrolni-cinnost-v-oblasti-ochrany-osobnich-udaju-2025/policie-cr-uoou-0489221",
-      "link_status": "reachable",
-      "page_title": null,
-      "document_language": "cs",
-      "error": null,
-      "content_type": "text/html"
-    },
-    {
       "id": "s-60a051acd30e",
       "url": "https://uoou.gov.cz/novinky/vse/uoou-k-biometricke-identifikaci-nezadoucich-osob-na-fotbalovych-stadionech",
       "jurisdiction_ids": [
@@ -1174,6 +1093,21 @@
     "last_sweep": "2026-11-07"
   },
   "changes": [
+    {
+      "id": "c-a83ab5fc55b4",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "removed",
+      "jurisdiction_id": "CZE",
+      "instrument_id": "i-d8acf4aaf1bd",
+      "title": "Police of the Czech Republic (UOOU-04892/21): camera system at Václav Havel Airport Prague - inspection findings on automated facial recognition",
+      "detail": "Removed from the radar: decisions addressed to a single organisation are not counted as governance documents for now.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
     {
       "id": "c-4fadde5551d3",
       "date": "2026-11-08",
