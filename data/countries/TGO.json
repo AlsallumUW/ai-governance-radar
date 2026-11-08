@@ -18,99 +18,9 @@
     "last_deep_review": "2026-10-12",
     "review_notes": "This review was carried out on 12 October 2026 from the Official Journal and the digital ministry's and data protection authority's websites. Not yet verified from the official text: material from the cybersecurity agency and the National Assembly, and the content of the cybersecurity laws, which are available only as scans. The national AI strategy, the Digital Code and the cybersecurity laws are tracked as leads."
   },
-  "instruments": [
-    {
-      "jurisdiction_id": "TGO",
-      "government_level": "national",
-      "subnational_unit": null,
-      "subcategory": null,
-      "last_amended_date": null,
-      "supersedes": [],
-      "superseded_by": [],
-      "related_instruments": [],
-      "regional_applicability": [],
-      "verification_date": "2026-10-12",
-      "verification_level": "reviewed_primary_metadata",
-      "metadata_gaps": [],
-      "link_status": "reachable",
-      "first_recorded": "2026-10-12",
-      "last_changed": "2026-10-18",
-      "language": "fr",
-      "id": "i-0450276efadc",
-      "authority_type": "legislature",
-      "scope": "Togo (national): collection, processing, transmission, storage and use of personal data by public and private controllers",
-      "sectors": [],
-      "technology_scope": [
-        "automated processing",
-        "profiling"
-      ],
-      "document_access_type": "official_publication_or_full_text_page",
-      "source_id": "s-84bab5f8641c",
-      "organization_id": "o-f5e9366261e4",
-      "evidence_reference": "curl (browser user agent, --max-time 60): jo.gouv.tg text page (node 15411: Loi 2019-014, signed 29/10/2019, JO N°26 TER special, page 1) read; gazette PDF JOS_29_10_2019 N°26 TER (20 pages) downloaded and read with pdftotext (Arts. 1, 27, 45, 95-97); byte-identical to the copy on the Ministry of Digital Economy documentation page. Published in: Cabinet of the President of the Republic (Journal officiel de la République togolaise).",
-      "official_webpage_url": "https://jo.gouv.tg/node/15411",
-      "effective_date": null,
-      "official_title": "Loi n° 2019-014 du 29 octobre 2019 relative à la protection des données à caractère personnel",
-      "english_title": "Law No. 2019-014 of 29 October 2019 on the protection of personal data",
-      "issuing_authority": "National Assembly; promulgated by the President of the Republic",
-      "categories": [
-        "data-privacy",
-        "binding-law"
-      ],
-      "category": "data-privacy",
-      "legal_status": "binding_law",
-      "lifecycle": "in_force",
-      "publication_date": "2019-10-29",
-      "current_status": "Published in the Journal officiel de la République togolaise, 64th year, No. 26 ter (special issue) of 29 October 2019. Art. 97 provides that the law is executed as a law of the State; no separate entry-into-force date is stated, and Art. 95 gives existing processing a compliance period from entry into force. The supervisory authority it creates, the IPDCP, publishes the law on its own site and is operational. No AI-specific law exists in Togo as of 11 October 2026.",
-      "summary": "Togo's general data protection law regulating the collection, processing, transmission, storage and use of personal data, with declaration and prior-authorisation regimes (e.g. for biometric, genetic and health data) and data-subject rights including access, opposition (Art. 45) and rectification. Art. 27 bars court decisions that assess a person's conduct, and any decision producing legal effects, from being based solely on automated processing intended to profile the person or evaluate aspects of their personality. It creates the Instance de protection des données à caractère personnel (IPDCP) as the independent supervisory authority with sanctioning powers.",
-      "source_url": "https://jo.gouv.tg/node/15411",
-      "official_pdf_url": "https://jo.gouv.tg/sites/default/files/JO/JOS_29_10_2019-64E%20ANNEE-N%C2%B026%20TER.pdf",
-      "source_kind": "legislation_portal",
-      "publisher_name": "National Assembly; promulgated by the President of the Republic",
-      "ai_governance_relevance": "Togolese national law governing personal data used to train and run AI systems; Art. 27 sets the rule on solely automated decisions and profiling."
-    }
-  ],
-  "organizations": [
-    {
-      "id": "o-f5e9366261e4",
-      "jurisdiction_id": "TGO",
-      "name": "National Assembly",
-      "publisher_name_verified": true,
-      "ai_governance_role": "Togo's legislature; adopted Law No. 2019-014 on personal data protection (Art. 27 on solely automated decisions). No AI bill was found.",
-      "source_url": "https://www.assemblee-nationale.tg/",
-      "authority_type": "legislature",
-      "government_level": "national"
-    }
-  ],
-  "sources": [
-    {
-      "id": "s-84bab5f8641c",
-      "url": "https://jo.gouv.tg/node/15411",
-      "jurisdiction_ids": [
-        "TGO"
-      ],
-      "source_institutions": [
-        "Cabinet of the President of the Republic (Journal officiel)"
-      ],
-      "instrument_ids": [
-        "i-0450276efadc"
-      ],
-      "categories_reviewed": [
-        "data-privacy",
-        "binding-law"
-      ],
-      "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): jo.gouv.tg node 15411 read; gazette PDF (JO N°26 TER, 29 Oct 2019, 20 pages) downloaded and read with pdftotext; jo.gouv.tg full-text search for 'intelligence artificielle', 'automatisé' and 'Convention 108' run (no AI-specific text found).",
-      "http_status": 200,
-      "final_url": "https://jo.gouv.tg/node/15411",
-      "link_status": "reachable",
-      "page_title": "2019-014 | Journal Officiel de la République Togolaise",
-      "document_language": "fr",
-      "error": null,
-      "content_type": "text/html"
-    }
-  ],
+  "instruments": [],
+  "organizations": [],
+  "sources": [],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "TGO",
@@ -208,6 +118,21 @@
   },
   "changes": [
     {
+      "id": "c-6626878cb43e",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "removed",
+      "jurisdiction_id": "TGO",
+      "instrument_id": "i-0450276efadc",
+      "title": "Law No. 2019-014 of 29 October 2019 on the protection of personal data",
+      "detail": "Moved to leads until the official document can be confirmed at its official source.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
       "id": "c-c56173bc391a",
       "date": "2026-10-12",
       "recorded": "2026-10-12",
@@ -235,21 +160,6 @@
       "from": null,
       "to": null,
       "source_url": null,
-      "needs_review": false
-    },
-    {
-      "id": "c-cd45115afc08",
-      "date": "2019-10-29",
-      "recorded": "2026-10-12",
-      "kind": "world",
-      "type": "published",
-      "jurisdiction_id": "TGO",
-      "instrument_id": "i-0450276efadc",
-      "title": "Law No. 2019-014 on the protection of personal data published",
-      "detail": "Promulgated on 29 October 2019 and published in the Journal officiel de la République togolaise, special issue No. 26 ter of 29 October 2019; Art. 27 bars decisions with legal effects based solely on automated profiling.",
-      "from": null,
-      "to": null,
-      "source_url": "https://jo.gouv.tg/node/15411",
       "needs_review": false
     }
   ],
@@ -302,6 +212,14 @@
       "issuing_authority": "National Assembly",
       "note": "HARC is provided for in the Constitution of 6 May 2024 and replaces HAAC; the Council of Ministers of 17 December 2025 asked for its operationalisation to be accelerated, and by August 2026 HARC described itself as having wider powers over content on social networks (news reports, e.g. https://yop.l-frii.com/togo-pourquoi-le-president-du-conseil-veut-rapidement-remplacer-la-haac-par-la-harc/). No organic law text found, and none of the reports mention AI. Check the organic law and any HARC decisions in the Journal officiel (jo.gouv.tg) for provisions on AI-generated or manipulated content (deepfakes).",
       "found": "2026-11-07"
+    },
+    {
+      "title": "Loi n° 2019-014 du 29 octobre 2019 relative à la protection des données à caractère personnel",
+      "english_title": "Law No. 2019-014 of 29 October 2019 on the protection of personal data",
+      "issuing_authority": "National Assembly; promulgated by the President of the Republic",
+      "url": "https://jo.gouv.tg/sites/default/files/JO/JOS_29_10_2019-64E%20ANNEE-N%C2%B026%20TER.pdf",
+      "note": "Moved from records to leads under the owner rule of 8 Nov 2026 (records need a confirmed official link). Old Journal Officiel links (jo.gouv.tg) now redirect to the home page of the new gazette site (new.jo.gouv.tg). Find the law in the new gazette site.",
+      "found": "2026-10-12"
     }
   ]
 }

@@ -362,61 +362,6 @@
       "last_changed": null,
       "effective_date": null,
       "language": "en",
-      "id": "i-2e75c92ed8df",
-      "official_title": "Guidance Note on Artificial Intelligence",
-      "english_title": "Guidance Note on Artificial Intelligence (July 2026)",
-      "issuing_authority": "Office of the Data Protection Commissioner",
-      "authority_type": "regulator",
-      "publisher_name": "Office of the Data Protection Commissioner",
-      "categories": [
-        "data-privacy",
-        "risk-assurance",
-        "generative-ai",
-        "drafts"
-      ],
-      "category": "data-privacy",
-      "sectors": [
-        "cross-sector"
-      ],
-      "legal_status": "consultation_draft",
-      "lifecycle": "consultation",
-      "publication_date": "2026-07",
-      "current_status": "Cover dated July 2026; hosted on odpc.go.ke but not listed among the ODPC's issued guidance notes. Not yet verified from the official text: a consultation notice or a final version. It is recorded as a draft.",
-      "summary": "ODPC guidance on how the Data Protection Act and its regulations apply to public and private entities that develop, deploy or procure AI systems processing personal data in Kenya. It applies the data protection principles, lawful bases and data-subject rights (including the section 35 right not to be subject to solely automated decisions) across a seven-stage AI lifecycle, and bars using personal data scraped from the internet as training data without a lawfulness assessment. It lists high-risk AI applications (e.g. credit scoring, health diagnostics, biometric recognition, employment screening) that require a DPIA, DPO involvement, meaningful human review and regular algorithmic audits, adds generative-AI duties, and includes a compliance checklist.",
-      "ai_governance_relevance": "First AI-specific guidance from Kenya's data protection regulator; sets high-risk categories and lifecycle duties.",
-      "source_url": "https://www.odpc.go.ke/wp-content/uploads/2026/07/AI-Guidance-Note.July-2026.pdf",
-      "official_pdf_url": "https://www.odpc.go.ke/wp-content/uploads/2026/07/AI-Guidance-Note.July-2026.pdf",
-      "official_webpage_url": null,
-      "source_kind": "official_document",
-      "verification_level": "reviewed_primary_metadata",
-      "link_status": "broken",
-      "document_access_type": "original_government_document",
-      "source_id": "s-89f9eeff0d4c",
-      "organization_id": "o-c88fa69cb17b",
-      "metadata_gaps": [
-        "Status (draft or final) and consultation dates not stated on an official ODPC page"
-      ],
-      "evidence_reference": "curl: full PDF read (cover: Office of the Data Protection Commissioner, Guidance Note on Artificial Intelligence, July 2026)."
-    },
-    {
-      "jurisdiction_id": "KEN",
-      "government_level": "national",
-      "subnational_unit": null,
-      "subcategory": null,
-      "last_amended_date": null,
-      "scope": "Kenya (national)",
-      "technology_scope": [
-        "AI"
-      ],
-      "related_instruments": [],
-      "regional_applicability": [],
-      "supersedes": [],
-      "superseded_by": [],
-      "verification_date": "2026-10-13",
-      "first_recorded": "2026-10-13",
-      "last_changed": null,
-      "effective_date": null,
-      "language": "en",
       "id": "i-011be24b2b2c",
       "official_title": "Guideline on Regulation of Medical Device Software in Kenya (MDSW)",
       "english_title": "Guideline on Regulation of Medical Device Software in Kenya (MDSW), HPT/PER/GUD/099 Rev. 0",
@@ -536,16 +481,6 @@
       "ai_governance_role": "Enacted the Data Protection Act, 2019; the Senate is considering the Artificial Intelligence Bill, 2026 (Senate Bills No. 4 of 2026).",
       "source_url": "https://www.parliament.go.ke/",
       "authority_type": "legislature",
-      "government_level": "national"
-    },
-    {
-      "id": "o-c88fa69cb17b",
-      "jurisdiction_id": "KEN",
-      "name": "Office of the Data Protection Commissioner",
-      "publisher_name_verified": true,
-      "ai_governance_role": "Data protection regulator under the Data Protection Act, 2019; enforces the Act's automated decision-making rules and released a Guidance Note on Artificial Intelligence (July 2026).",
-      "source_url": "https://www.odpc.go.ke/",
-      "authority_type": "regulator",
       "government_level": "national"
     },
     {
@@ -743,35 +678,6 @@
       "content_type": "text/html"
     },
     {
-      "id": "s-89f9eeff0d4c",
-      "url": "https://www.odpc.go.ke/wp-content/uploads/2026/07/AI-Guidance-Note.July-2026.pdf",
-      "jurisdiction_ids": [
-        "KEN"
-      ],
-      "source_institutions": [
-        "Office of the Data Protection Commissioner"
-      ],
-      "instrument_ids": [
-        "i-2e75c92ed8df"
-      ],
-      "categories_reviewed": [
-        "data-privacy",
-        "risk-assurance",
-        "generative-ai",
-        "drafts"
-      ],
-      "date_reviewed": "2026-10-13",
-      "checked_date": "2026-11-08",
-      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions)",
-      "http_status": 404,
-      "final_url": "https://www.odpc.go.ke/wp-content/uploads/2026/07/AI-Guidance-Note.July-2026.pdf",
-      "link_status": "broken",
-      "page_title": null,
-      "document_language": "en",
-      "error": "HTTP Error 404: Not Found",
-      "content_type": "application/pdf"
-    },
-    {
       "id": "s-9e1825365120",
       "url": "https://web.pharmacyboardkenya.org/download/guideline-on-regulation-of-medical-device-software-in-kenya-mdsw/",
       "jurisdiction_ids": [
@@ -931,6 +837,21 @@
     "last_sweep": "2026-10-29"
   },
   "changes": [
+    {
+      "id": "c-5b6fa5368509",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "removed",
+      "jurisdiction_id": "KEN",
+      "instrument_id": "i-2e75c92ed8df",
+      "title": "Guidance Note on Artificial Intelligence (July 2026)",
+      "detail": "Moved to leads until the official document can be confirmed at its official source.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
     {
       "id": "c-50747d7e9174",
       "date": "2026-11-08",
@@ -1247,21 +1168,6 @@
       "needs_review": false
     },
     {
-      "id": "c-a493def5b6c9",
-      "date": "2026-07",
-      "recorded": "2026-10-21",
-      "kind": "world",
-      "type": "consultation",
-      "jurisdiction_id": "KEN",
-      "instrument_id": "i-2e75c92ed8df",
-      "title": "Guidance Note on Artificial Intelligence (July 2026)",
-      "detail": "Published for consultation by Office of the Data Protection Commissioner.",
-      "from": null,
-      "to": null,
-      "source_url": "https://www.odpc.go.ke/wp-content/uploads/2026/07/AI-Guidance-Note.July-2026.pdf",
-      "needs_review": false
-    },
-    {
       "id": "c-fdd0d44f05ad",
       "date": "2026-02",
       "recorded": "2026-10-21",
@@ -1445,6 +1351,14 @@
       "url": "https://www.iebc.or.ke/uploads/resources/Y4QyY4mont.pdf",
       "note": "Returned by a search for IEBC AI/deepfake guidelines; fetch failed (site error). Title and content unknown; check for election AI/deepfake rules ahead of 2027.",
       "found": "2026-11-07"
+    },
+    {
+      "title": "Guidance Note on Artificial Intelligence",
+      "english_title": "Guidance Note on Artificial Intelligence (July 2026)",
+      "issuing_authority": "Office of the Data Protection Commissioner",
+      "url": "https://www.odpc.go.ke/wp-content/uploads/2026/07/AI-Guidance-Note.July-2026.pdf",
+      "note": "Moved from records to leads under the owner rule of 8 Nov 2026 (records need a confirmed official link). Official link returns 404/410 and no copy was found at an official location (checked 8 Nov 2026, GitHub runner and web search).",
+      "found": "2026-10-13"
     }
   ]
 }
