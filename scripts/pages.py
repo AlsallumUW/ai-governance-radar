@@ -15,20 +15,21 @@ import i18n
 from subregions import SUBREGION
 
 SITE_URL = os.environ.get("RADAR_SITE_URL", "https://alsallumuw.github.io/ai-governance-radar/").rstrip("/") + "/"
-BINDING = {"binding_law", "binding_regulation", "international_treaty", "administrative_policy_mandatory_in_scope"}
-WEIGHT = {"binding_law": 0, "international_treaty": 1, "binding_regulation": 2, "administrative_policy_mandatory_in_scope": 3,
+BINDING = {"binding_law", "binding_regulation", "enforcement_decision", "international_treaty", "administrative_policy_mandatory_in_scope"}
+WEIGHT = {"binding_law": 0, "international_treaty": 1, "binding_regulation": 2, "enforcement_decision": 2.5, "administrative_policy_mandatory_in_scope": 3,
           "administrative_guideline": 4, "regulatory_opinion": 4, "nonbinding_guidance": 5, "voluntary_code": 5,
           "national_strategy": 6, "consultation_draft": 7, "nonbinding_recommendation": 4, "declaration": 5, "regional_strategy": 6}
 STATUS_LABEL = {"binding_law": "Law (binding)", "international_treaty": "International treaty", "binding_regulation": "Regulation (binding)",
+                "enforcement_decision": "Enforcement decision",
                 "administrative_policy_mandatory_in_scope": "Mandatory policy (in scope)", "administrative_guideline": "Administrative guideline",
                 "regulatory_opinion": "Regulatory opinion", "nonbinding_guidance": "Non-binding guidance", "voluntary_code": "Voluntary code",
                 "national_strategy": "National strategy", "consultation_draft": "Draft / consultation",
                 "nonbinding_recommendation": "Recommendation or resolution", "declaration": "Declaration", "regional_strategy": "Strategy"}
-TYPE_OF = {"binding_law": "law", "binding_regulation": "regulation", "international_treaty": "treaty",
+TYPE_OF = {"binding_law": "law", "binding_regulation": "regulation", "enforcement_decision": "enforcement", "international_treaty": "treaty",
            "administrative_policy_mandatory_in_scope": "mandatory", "administrative_guideline": "guidance", "nonbinding_guidance": "guidance",
            "regulatory_opinion": "guidance", "voluntary_code": "guidance", "national_strategy": "strategy", "consultation_draft": "draft",
            "nonbinding_recommendation": "recommendation", "declaration": "declaration", "regional_strategy": "strategy"}
-TYPES = [("law", "Law"), ("regulation", "Regulation"), ("treaty", "Treaty"), ("mandatory", "Mandatory policy"), ("guidance", "Guidance & opinions"),
+TYPES = [("law", "Law"), ("regulation", "Regulation"), ("enforcement", "Enforcement decision"), ("treaty", "Treaty"), ("mandatory", "Mandatory policy"), ("guidance", "Guidance & opinions"),
          ("recommendation", "Recommendation or resolution"), ("declaration", "Declaration"), ("strategy", "Strategy"), ("draft", "Draft / consultation")]
 LIFE = {"draft": "Draft", "consultation": "In consultation", "consultation_closed": "Consultation closed", "published": "Published", "adopted": "Adopted", "in_force": "In force",
         "superseded": "Superseded", "repealed": "Repealed"}
@@ -80,7 +81,7 @@ def kind(i):
     return "binding" if i.get("legal_status") in BINDING else "soft"
 
 
-PIPE_TYPE = {"binding_law": "Law", "binding_regulation": "Regulation", "international_treaty": "Treaty",
+PIPE_TYPE = {"binding_law": "Law", "binding_regulation": "Regulation", "enforcement_decision": "Enforcement decision", "international_treaty": "Treaty",
              "administrative_policy_mandatory_in_scope": "Mandatory policy", "administrative_guideline": "Guideline", "regulatory_opinion": "Opinion",
              "nonbinding_guidance": "Guidance", "voluntary_code": "Code", "national_strategy": "Strategy",
              "nonbinding_recommendation": "Recommendation", "declaration": "Declaration", "regional_strategy": "Strategy"}
@@ -143,7 +144,7 @@ def cets_positive(jid, ctx):
     return None
 
 
-COUNT_DEFS = ["Binding or mandatory: laws, regulations, treaties and policies mandatory within their scope",
+COUNT_DEFS = ["Binding or mandatory: laws, regulations, treaties, enforcement decisions and policies mandatory within their scope",
               "Non-binding: strategies, guidelines, guidance, codes and opinions", "Drafts: consultation drafts.",
               "Leads: documents not yet verified as in-scope instruments.",
               "Counts include state, provincial and local instruments. Instruments of regional and international bodies are not counted; they are listed on each body's own page."]
