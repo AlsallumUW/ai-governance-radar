@@ -1,5 +1,5 @@
 {
- "note": "Hosts that block automated clients (403/406/429 to the GitHub Actions link checker) but open in a normal browser. check_links.py does not change a link's status for these hosts on 401/403/406/429/503 or timeouts; 404/410 still count. Add a host only after opening its links in a browser.",
+ "note": "Hosts that block automated clients (403/406/429 to the GitHub Actions link checker) but open in a normal browser. check_links.py does not change a link's status for these hosts on 401/403/406/429/503 or timeouts; 404/410 still count. Add a host only after opening its links in a browser. Hosts in fake_404_hosts also answer automated clients with 404 for pages that open in a browser (FTC, checked 2026-11-08); for them a 404 is treated like a block.",
  "updated": "2026-11-08",
  "hosts": [
   "act.gov.au",
@@ -92,5 +92,8 @@
   "uaelegislation.gov.ae",
   "usda.gov",
   "valstybeskontrole.lt"
+ ],
+ "fake_404_hosts": [
+  "ftc.gov"
  ]
 }

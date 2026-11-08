@@ -13,7 +13,8 @@ Noise rules (a weekly run should flag real problems, not bot blocking):
 - Requests look like a browser (headers, cookies), follow 301/302/303/307/308, and percent-encode non-ASCII URLs.
 - A certificate the runner cannot verify is retried without verification: the check is about reachability only.
 - Hosts in research/bot_protected_hosts.json block automated clients but open in a normal browser. For them,
-  401/403/406/429/503 and timeouts never change the recorded status; only 404/410 do.
+  401/403/406/429/503 and timeouts never change the recorded status; only 404/410 do. Hosts listed under
+  "fake_404_hosts" (e.g. ftc.gov) also answer bots with 404 for live pages, so for them 404 is ignored too.
 - Timeouts, connection errors and 5xx elsewhere change the status only after two consecutive failing runs
   (fail_streak, an internal field).
 - A redirect that only changes scheme, "www.", host case, a trailing slash or the .htm/.html suffix is "reachable".
@@ -43,10 +44,13 @@ LOOSE.check_hostname, LOOSE.verify_mode = False, ssl.CERT_NONE
 
 
 def bot_hosts():
+    """(hosts that block bots, hosts that also answer bots with false 404s)."""
     try:
-        return {h.lower().removeprefix("www.") for h in json.loads(BOT_FILE.read_text(encoding="utf-8"))["hosts"]}
+        d = json.loads(BOT_FILE.read_text(encoding="utf-8"))
     except FileNotFoundError:
-        return set()
+        return set(), set()
+    clean = lambda xs: {h.lower().removeprefix("www.") for h in xs}
+    return clean(d.get("hosts", [])), clean(d.get("fake_404_hosts", []))
 
 
 def host(url):
@@ -106,9 +110,11 @@ def probe(url):
     return "redirected", code, final, note, ctype
 
 
-def settle(prev, result, protected):
+def settle(prev, result, protected, fake404=False):
     """The status to record, given the previous record, this run's result and whether the host blocks bots."""
     status, code = result[0], result[1]
+    if fake404 and code in GONE_CODES:
+        return prev.get("link_status") or "not_checked", (prev.get("fail_streak") or 0) + 1
     if status != "inaccessible" and not (status == "broken" and code not in GONE_CODES):
         return status, 0
     streak = (prev.get("fail_streak") or 0) + 1
@@ -130,7 +136,7 @@ def run_probe(path):
 
 
 def main(only, dry):
-    protected = bot_hosts()
+    protected, fake404 = bot_hosts()
     files = [p for p in jurisdiction_files() if not only or p.stem in only]
     recs = {p: load(p) for p in files}
     jobs = {(p, s["id"]): s["url"] for p, r in recs.items() for s in r.get("sources", [])}
@@ -142,7 +148,8 @@ def main(only, dry):
         status, code, final, err, ctype = res
         for s in recs[p]["sources"]:
             if s["id"] != sid: continue
-            new, streak = settle(s, res, host(s["url"]) in protected)
+            h = host(s["url"])
+            new, streak = settle(s, res, h in protected or h in fake404, h in fake404)
             if s.get("link_status") != new:
                 flips += 1
                 print(f"  {p.stem:<6} {s.get('link_status')} -> {new}  [{code}] {s['url'][:100]}")

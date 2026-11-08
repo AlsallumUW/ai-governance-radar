@@ -124,62 +124,6 @@
       "document_access_type": "original_government_document",
       "source_id": "s-a18a3c1ab1ae",
       "evidence_reference": "curl (browser user agent, --max-time 60): Khmer PDF (97 pages) downloaded from the MPTC asset host linked on the MPTC Khmer page (title gives adoption date 28 January 2022); official English version (89 pages) read via pdftotext, AI commitments in the digital governance strategy checked"
-    },
-    {
-      "id": "i-758423191119",
-      "official_title": "Technology and Cyber Risk Management Guidelines",
-      "english_title": "Technology and Cyber Risk Management Guidelines (TCRMG)",
-      "issuing_authority": "National Bank of Cambodia",
-      "authority_type": "regulator",
-      "categories": [
-        "sectoral",
-        "risk-assurance",
-        "cyber-security",
-        "transparency"
-      ],
-      "legal_status": "regulatory_opinion",
-      "lifecycle": "published",
-      "publication_date": "2026-01",
-      "current_status": "Issued January 2026 (cover date) and listed on the NBC Guidelines (IT policy) page; supersedes the Technology Risk Management Guidelines issued in 2019, which did not contain an AI section. Requirements are framed as 'compliance requirements' assessed in supervision, applied on a risk basis; no effective date stated. Only the English version was found on the NBC site.",
-      "summary": "The NBC's supervisory guidelines for banks and financial institutions on technology and cyber risk. Section 6.4 requires institutions to periodically assess AI/ML systems for legal and policy compliance, conduct comprehensive AI risk assessments, apply privacy and security by design, validate data and models against bias, use AI ethically (human autonomy, harm prevention, fairness, non-discrimination, transparency, explainability) and ensure robustness and safety. Related sections require human verification of solely big-data-based decisions that significantly affect customers and a right to challenge them, and require chatbots to disclose to customers that they are not human and to offer escalation to staff.",
-      "ai_governance_relevance": "First AI-specific supervisory requirements in Cambodia's financial sector.",
-      "source_url": "https://www.nbc.gov.kh/download_files/publication/itguideline_eng/National_Bank_of_Cambodia_TCRMG_2026.pdf",
-      "official_pdf_url": "https://www.nbc.gov.kh/download_files/publication/itguideline_eng/National_Bank_of_Cambodia_TCRMG_2026.pdf",
-      "official_webpage_url": "https://www.nbc.gov.kh/english/publications/guidelines_it_policy.php",
-      "sectors": [
-        "finance"
-      ],
-      "source_kind": "official_document",
-      "supersedes": [],
-      "organization_id": "o-6afcf5b7260e",
-      "publisher_name": "National Bank of Cambodia",
-      "jurisdiction_id": "KHM",
-      "government_level": "national",
-      "subnational_unit": null,
-      "category": "sectoral",
-      "subcategory": null,
-      "effective_date": null,
-      "last_amended_date": null,
-      "scope": "Cambodia (national)",
-      "technology_scope": [
-        "AI",
-        "machine learning",
-        "big data analytics",
-        "chatbots"
-      ],
-      "superseded_by": [],
-      "related_instruments": [],
-      "regional_applicability": [],
-      "metadata_gaps": [],
-      "language": "en",
-      "verification_date": "2026-10-12",
-      "first_recorded": "2026-10-12",
-      "last_changed": null,
-      "verification_level": "reviewed_primary_metadata",
-      "link_status": "broken",
-      "document_access_type": "original_government_document",
-      "source_id": "s-dd26a4f58441",
-      "evidence_reference": "curl (browser user agent, --max-time 60): full PDF read via pdftotext (introduction, sections 6.3 big data, 6.4 AI/ML, 6.8 chatbot); cover dated January 2026; listed on the NBC Guidelines page"
     }
   ],
   "organizations": [
@@ -201,16 +145,6 @@
       "ai_governance_role": "Ministry responsible for digital policy and digital government; prepared the Cambodia Digital Government Policy 2022-2035, leads the drafting of the National Artificial Intelligence Strategy 2025-2030 and of the draft Law on Personal Data Protection.",
       "source_url": "https://mptc.gov.kh/en/",
       "authority_type": "government",
-      "government_level": "national"
-    },
-    {
-      "id": "o-6afcf5b7260e",
-      "jurisdiction_id": "KHM",
-      "name": "National Bank of Cambodia",
-      "publisher_name_verified": true,
-      "ai_governance_role": "Central bank and supervisor of banks and financial institutions; issued the Technology and Cyber Risk Management Guidelines (January 2026) with AI/ML, big-data and chatbot compliance requirements.",
-      "source_url": "https://www.nbc.gov.kh/",
-      "authority_type": "regulator",
       "government_level": "national"
     }
   ],
@@ -268,35 +202,6 @@
       "page_title": null,
       "document_language": "km",
       "error": null,
-      "content_type": "application/pdf"
-    },
-    {
-      "id": "s-dd26a4f58441",
-      "url": "https://www.nbc.gov.kh/download_files/publication/itguideline_eng/National_Bank_of_Cambodia_TCRMG_2026.pdf",
-      "jurisdiction_ids": [
-        "KHM"
-      ],
-      "source_institutions": [
-        "National Bank of Cambodia"
-      ],
-      "instrument_ids": [
-        "i-758423191119"
-      ],
-      "categories_reviewed": [
-        "sectoral",
-        "risk-assurance",
-        "cyber-security",
-        "transparency"
-      ],
-      "date_reviewed": "2026-10-12",
-      "checked_date": "2026-11-08",
-      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions)",
-      "http_status": 404,
-      "final_url": "https://www.nbc.gov.kh/download_files/publication/itguideline_eng/National_Bank_of_Cambodia_TCRMG_2026.pdf",
-      "link_status": "broken",
-      "page_title": null,
-      "document_language": "en",
-      "error": "HTTP Error 404: Not Found",
       "content_type": "application/pdf"
     }
   ],
@@ -388,6 +293,21 @@
   },
   "changes": [
     {
+      "id": "c-e5c1a7e117b5",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "removed",
+      "jurisdiction_id": "KHM",
+      "instrument_id": "i-758423191119",
+      "title": "Technology and Cyber Risk Management Guidelines (TCRMG)",
+      "detail": "Moved to leads until the official document can be confirmed at its official source.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
       "id": "c-3615303fb8e8",
       "date": "2026-11-08",
       "recorded": "2026-11-08",
@@ -460,21 +380,6 @@
       "from": null,
       "to": null,
       "source_url": null,
-      "needs_review": false
-    },
-    {
-      "id": "c-57135baaa042",
-      "date": "2026-01",
-      "recorded": "2026-10-21",
-      "kind": "world",
-      "type": "published",
-      "jurisdiction_id": "KHM",
-      "instrument_id": "i-758423191119",
-      "title": "Technology and Cyber Risk Management Guidelines (TCRMG)",
-      "detail": "Published by National Bank of Cambodia.",
-      "from": null,
-      "to": null,
-      "source_url": "https://www.nbc.gov.kh/download_files/publication/itguideline_eng/National_Bank_of_Cambodia_TCRMG_2026.pdf",
       "needs_review": false
     },
     {
@@ -594,6 +499,14 @@
       "url": "https://mptc.gov.kh/?p=53227",
       "note": "MPTC news 15 June 2026: Minister Chea Vandeth gave guidance on a master plan and medium-term action plan for AI platform development, governance and HR training; refers to unnamed AI 'policies and regulatory frameworks' and an LLM. No document published.",
       "found": "2026-11-05"
+    },
+    {
+      "title": "Technology and Cyber Risk Management Guidelines",
+      "english_title": "Technology and Cyber Risk Management Guidelines (TCRMG)",
+      "issuing_authority": "National Bank of Cambodia",
+      "url": "https://www.nbc.gov.kh/download_files/publication/itguideline_eng/National_Bank_of_Cambodia_TCRMG_2026.pdf",
+      "note": "Moved from records to leads under the owner rule of 8 Nov 2026 (records need a confirmed official link). Official link returns 404/410 and no copy was found at an official location (checked 8 Nov 2026, GitHub runner and web search).",
+      "found": "2026-10-12"
     }
   ]
 }

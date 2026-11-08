@@ -125,6 +125,7 @@ The scheduled task runs **every day at 06:00 Riyadh time**. Each run sweeps one 
 - A strategy is not binding.
 - A draft is not adopted until an official source says so.
 - Never mark something binding or in force without the official text saying so.
+- A record whose official link is confirmed dead or unopenable, with no official copy found, moves to leads (PROTOCOL §4, owner rule 8 Nov 2026). Never add a new record that has not been read at a working official link.
 
 **Dates (PROTOCOL §4)**
 - Use only a date printed in the document or stated on the issuer's own page (gazette date, launch notice, "first published" date). A year printed in the title or on the cover gives a year-only date.
