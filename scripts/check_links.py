@@ -31,7 +31,7 @@ METHOD = "GET; browser headers; first 1 KiB; 25-second timeout"
 BOT_FILE = ROOT / "research" / "bot_protected_hosts.json"
 BLOCK_CODES = {401, 403, 406, 429, 503}
 GONE_CODES = {404, 410}
-HOME_HINT = re.compile(r"(maint|manuten|mantenimiento|wartung|login|signin|sign-in|error|404|notfound|not-found)", re.I)
+HOME_HINT = re.compile(r"(maintenance|manutencao|manutencion|mantenimiento|wartung|/login|signin|sign-in|/error|/404|notfound|not-found)", re.I)
 
 try:
     import certifi
@@ -157,8 +157,6 @@ def main(only, dry):
 
 if __name__ == "__main__":
     a = sys.argv[1:]
-    if not a and (ROOT / "research" / "_probe.json").exists():  # TEMPORARY: one-off triage run, removed before merge
-        a = ["--probe", str(ROOT / "research" / "_probe.json")]
     if "--probe" in a:
         run_probe(a[a.index("--probe") + 1])
     else:

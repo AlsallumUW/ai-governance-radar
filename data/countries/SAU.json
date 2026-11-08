@@ -853,7 +853,7 @@
       "first_recorded": "2026-10-13",
       "last_changed": null,
       "evidence_reference": "curl (browser user agent, --max-time 60): MoE news page read (date 24/07/1446, description, link to guide); PDF (39 pages) downloaded; text layer not extractable, so cover and pages 16 and 18 rendered with pdftoppm and read.",
-      "official_webpage_url": "https://www.moe.gov.sa/ar/mediacenter/MOEnews/Pages/news1_24012025.aspx",
+      "official_webpage_url": "https://www.moe.gov.sa/ar/updates-and-media/updates/news1_24012025",
       "effective_date": null,
       "official_title": "دليل إرشادات استخدام الذكاء الاصطناعي التوليدي للتعليم العام",
       "english_title": "Guidelines for the Use of Generative AI in General Education",
@@ -870,7 +870,7 @@
       "current_status": "Published by the Ministry of Education on 24/07/1446 AH (24 January 2025) per its own news page, which links the guide (39-page PDF, cover dated 2025, Ministry of Education and SDAIA logos).",
       "summary": "Ministry of Education guidebook, prepared with SDAIA, on the use of generative AI tools in Saudi general (school) education, addressed to students, teachers and parents. It explains how generative AI works and its benefits and risks, then sets usage rules: students under 13 should not use generative AI tools and those aged 13-18 need parental consent; AI-generated content used in assignments must be disclosed and cited, and non-disclosure is treated as academic dishonesty; outputs must be checked for bias and errors. A third part covers prompt-writing principles.",
       "language": "ar",
-      "source_url": "https://www.moe.gov.sa/ar/mediacenter/MOEnews/Pages/news1_24012025.aspx",
+      "source_url": "https://www.moe.gov.sa/ar/updates-and-media/updates/news1_24012025",
       "official_pdf_url": "https://www.moe.gov.sa/ar/mediacenter/MOEnews/DocLib/Artificial_Intelligence_Guide.pdf",
       "source_kind": "official_publication",
       "publisher_name": "Ministry of Education",
@@ -2536,7 +2536,7 @@
     },
     {
       "id": "s-833f8f6f92d7",
-      "url": "https://www.moe.gov.sa/ar/mediacenter/MOEnews/Pages/news1_24012025.aspx",
+      "url": "https://www.moe.gov.sa/ar/updates-and-media/updates/news1_24012025",
       "jurisdiction_ids": [
         "SAU"
       ],
@@ -2552,15 +2552,16 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-19",
-      "check_method": "curl (browser UA): news page HTTP 200 read; PDF HTTP 200 downloaded (39 pages), pages rendered and viewed.",
+      "checked_date": "2026-11-08",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions)",
       "http_status": 200,
-      "final_url": "https://moe.gov.sa/ar/mediacenter/MOEnews/Pages/news1_24012025.aspx",
+      "final_url": "https://www.moe.gov.sa/ar/updates-and-media/updates/news1_24012025",
       "link_status": "reachable",
       "page_title": "وزارة التعليم تصدر دليلًا إرشاديًا لاستخدام الذكاء الإصطناعي التوليدي في التعليم العام بالمملكة",
       "document_language": "ar",
       "error": null,
-      "content_type": "text/html"
+      "content_type": "text/html",
+      "fail_streak": 0
     },
     {
       "id": "s-d1929bbd904c",
@@ -3270,6 +3271,36 @@
       "from": null,
       "to": null,
       "source_url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/VibeCoding-ar.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-32f058e5c8e8",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "SAU",
+      "instrument_id": "i-a1c3baa464e3",
+      "title": "Guidelines for the Use of Generative AI in General Education",
+      "detail": "Official source moved.",
+      "from": "https://www.moe.gov.sa/ar/mediacenter/MOEnews/Pages/news1_24012025.aspx",
+      "to": "https://www.moe.gov.sa/ar/updates-and-media/updates/news1_24012025",
+      "source_url": "https://www.moe.gov.sa/ar/updates-and-media/updates/news1_24012025",
+      "needs_review": false
+    },
+    {
+      "id": "c-1578e90bfdd7",
+      "date": "2026-11-05",
+      "recorded": "2026-11-05",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "SAU",
+      "instrument_id": "i-a1900eb0c6c0",
+      "title": "Guidance on Digital Health Products (MDS-G27)",
+      "detail": "Added to the radar (published 2025-08-11).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.sfda.gov.sa/sites/default/files/2025-08/MDS-G027.pdf",
       "needs_review": false
     },
     {
@@ -4923,6 +4954,21 @@
       "needs_review": false
     },
     {
+      "id": "c-866759428d0b",
+      "date": "2025-08-11",
+      "recorded": "2026-11-05",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "SAU",
+      "instrument_id": "i-a1900eb0c6c0",
+      "title": "Guidance on Digital Health Products (MDS-G27)",
+      "detail": "Published by Saudi Food and Drug Authority (SFDA).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.sfda.gov.sa/sites/default/files/2025-08/MDS-G027.pdf",
+      "needs_review": false
+    },
+    {
       "id": "c-1fc4c7d55ef5",
       "date": "2025-07-24",
       "recorded": "2026-10-06",
@@ -5281,36 +5327,6 @@
       "to": null,
       "source_url": "https://sdaia.gov.sa/ar/SDAIA/SdaiaStrategies/Pages/NationalStrategyForDataAndAI.aspx",
       "needs_review": true
-    },
-    {
-      "id": "c-1578e90bfdd7",
-      "date": "2026-11-05",
-      "recorded": "2026-11-05",
-      "kind": "radar",
-      "type": "added",
-      "jurisdiction_id": "SAU",
-      "instrument_id": "i-a1900eb0c6c0",
-      "title": "Guidance on Digital Health Products (MDS-G27)",
-      "detail": "Added to the radar (published 2025-08-11).",
-      "from": null,
-      "to": null,
-      "source_url": "https://www.sfda.gov.sa/sites/default/files/2025-08/MDS-G027.pdf",
-      "needs_review": false
-    },
-    {
-      "id": "c-866759428d0b",
-      "date": "2025-08-11",
-      "recorded": "2026-11-05",
-      "kind": "world",
-      "type": "published",
-      "jurisdiction_id": "SAU",
-      "instrument_id": "i-a1900eb0c6c0",
-      "title": "Guidance on Digital Health Products (MDS-G27)",
-      "detail": "Published by Saudi Food and Drug Authority (SFDA).",
-      "from": null,
-      "to": null,
-      "source_url": "https://www.sfda.gov.sa/sites/default/files/2025-08/MDS-G027.pdf",
-      "needs_review": false
     }
   ],
   "leads": [

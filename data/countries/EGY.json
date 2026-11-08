@@ -496,7 +496,7 @@
       ],
       "source_kind": "official_document",
       "evidence_reference": "Re-read 2026-10-29 in the browser: the Institute of National Planning repository item now returns 404; the same third edition (60 pages, cover 'الإصدار الثالث سبتمبر 2025', Supreme Council of Universities) is published on scu.eg, read with pdf.js. Text content re-checked against the earlier repository copy.",
-      "link_status": "reachable",
+      "link_status": "broken",
       "document_access_type": "original_government_document",
       "first_recorded": "2026-10-13",
       "last_changed": null,
@@ -898,14 +898,14 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-19",
-      "check_method": "curl (browser user agent, --max-time 60): PDF downloaded from the Institute of National Planning document repository and read with pdftotext. scu.eg returned 503 (curl and WebFetch); the guide's own SCU page could not be reached.",
-      "http_status": 200,
+      "checked_date": "2026-11-08",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions)",
+      "http_status": 404,
       "final_url": "https://documents.inp.edu.eg/items/39d280d9-2b85-49d6-a10f-63ca200536ad",
-      "link_status": "reachable",
+      "link_status": "broken",
       "page_title": "الدليل الاسترشادي لضوابط استخدام الذكاء الاصطناعي",
       "document_language": "ar",
-      "error": null,
+      "error": "HTTP Error 404: Not found",
       "content_type": "application/pdf"
     },
     {
@@ -1106,6 +1106,21 @@
     "last_sweep": "2026-11-02"
   },
   "changes": [
+    {
+      "id": "c-8aac6822ee0f",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "EGY",
+      "instrument_id": "i-e22c5cf0ebb1",
+      "title": "Guiding Manual on Controls for the Use of Artificial Intelligence in Higher Education and Scientific Research (Third Edition, September 2025)",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "broken",
+      "source_url": "https://documents.inp.edu.eg/items/39d280d9-2b85-49d6-a10f-63ca200536ad",
+      "needs_review": false
+    },
     {
       "id": "c-ebd6f54b0e58",
       "date": "2026-10-29",

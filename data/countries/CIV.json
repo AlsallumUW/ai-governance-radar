@@ -40,8 +40,8 @@
       "current_status": "Published on the ministry's strategies page (a copy is also hosted on anssi.gouv.ci). The document itself is dated only 2024. The government portal gouv.ci reports that on Thursday 13 March 2025, at the Sofitel Hôtel Ivoire in Abidjan, the Minister of Digital Transition officially handed the SNIA and SNGD documents to the Prime Minister. The notice does not describe a formal government adoption, and no Council of Ministers adoption act was found. The National AI Agency (ANIA) and Council (CNIA) it proposes had no founding text by October 2026 (see leads). In September 2026 the ministry said a 2026-2028 digital roadmap with an AI pillar and a State-private sector national AI alliance pact build on the strategy; neither text is published (see leads).",
       "summary": "Côte d'Ivoire's first national AI strategy, with a vision of making inclusive, ethical and responsible AI an accelerator of transformation by 2030, built on three pillars: investment, inclusion and governance. The investment pillar includes an axis on drafting a regulatory and ethical framework (stronger personal-data law aligned with international standards, a supervisory entity for AI data, algorithmic audits for critical sectors such as health, education and public administration, and transparency obligations on developers). The governance pillar provides for a National AI Agency (ANIA) housing a National AI Council (CNIA) to steer, coordinate and monitor implementation.",
       "ai_governance_relevance": "Central AI policy document; sets the plan for an AI regulatory framework and a national AI agency and council.",
-      "source_url": "https://www.telecom.gouv.ci/new/uploads/publications/174196670372.pdf",
-      "official_pdf_url": "https://www.telecom.gouv.ci/new/uploads/publications/174196670372.pdf",
+      "source_url": "https://anssi.gouv.ci/documents/87/Strat%C3%A9gie_Nationale_de_lIntelligence_Artificielle_250321_041840.pdf",
+      "official_pdf_url": "https://anssi.gouv.ci/documents/87/Strat%C3%A9gie_Nationale_de_lIntelligence_Artificielle_250321_041840.pdf",
       "official_webpage_url": "https://www.telecom.gouv.ci/new/index.php/publications/sous-categorie/1",
       "sectors": [
         "cross-sector"
@@ -95,8 +95,8 @@
       "current_status": "Published on the ministry's strategies page alongside the SNIA 2030. The document is dated only 2024, with a 2024-2030 period. The government portal gouv.ci reports that the minister officially handed it to the Prime Minister together with the SNIA on 13 March 2025 in Abidjan. No government adoption act was found.",
       "summary": "Companion strategy to the SNIA 2030 setting national data governance for 2024-2030 around six strategic pillars: culture and ethics, infrastructure, interoperability and accessibility, quality data, innovation, and skills. Among its objectives is creating the framework for secure AI development, and it proposes a strong public-sector data governance body, ideally attached to the Prime Minister's office, that would combine data governance and AI development outside the field of regulation. It includes actions on AI-based data processing, a supercomputer for data and AI, and AI and big-data R&D.",
       "ai_governance_relevance": "Data-governance foundation for AI; proposes a combined data and AI governance body.",
-      "source_url": "https://www.telecom.gouv.ci/new/uploads/publications/174196707541.pdf",
-      "official_pdf_url": "https://www.telecom.gouv.ci/new/uploads/publications/174196707541.pdf",
+      "source_url": "https://www.anssi.gouv.ci/documents/86/SNGD___2030___Digital_reading_compressed.pdf",
+      "official_pdf_url": "https://www.anssi.gouv.ci/documents/86/SNGD___2030___Digital_reading_compressed.pdf",
       "official_webpage_url": "https://www.telecom.gouv.ci/new/index.php/publications/sous-categorie/1",
       "sectors": [
         "cross-sector"
@@ -212,7 +212,7 @@
   "sources": [
     {
       "id": "s-fca18c10a2b4",
-      "url": "https://www.telecom.gouv.ci/new/uploads/publications/174196670372.pdf",
+      "url": "https://anssi.gouv.ci/documents/87/Strat%C3%A9gie_Nationale_de_lIntelligence_Artificielle_250321_041840.pdf",
       "jurisdiction_ids": [
         "CIV"
       ],
@@ -230,19 +230,20 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "Re-checked 2026-10-13. curl (browser user agent, --max-time 60): 71-page PDF (HTTP 200, application/pdf, 1.69 MB) downloaded from the ministry's Publications > Planification > Stratégies page and read with pdftotext; it states only 'Côte d'Ivoire 2024'. WebFetch of the same PDF URL also returned the file (HTTP 200, binary). Handover date read via WebFetch from the gouv.ci news notice (curl to gouv.ci was reset).",
+      "checked_date": "2026-11-08",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions); replacement located by web search, same document",
       "http_status": 200,
-      "final_url": "https://www.telecom.gouv.ci/new/uploads/publications/174196670372.pdf",
+      "final_url": "https://anssi.gouv.ci/documents/87/Strat%C3%A9gie_Nationale_de_lIntelligence_Artificielle_250321_041840.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "fr",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-b7cfb3281966",
-      "url": "https://www.telecom.gouv.ci/new/uploads/publications/174196707541.pdf",
+      "url": "https://www.anssi.gouv.ci/documents/86/SNGD___2030___Digital_reading_compressed.pdf",
       "jurisdiction_ids": [
         "CIV"
       ],
@@ -259,15 +260,16 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "Re-checked 2026-10-13. curl (browser user agent, --max-time 60): 61-page PDF (HTTP 200, application/pdf, 8.1 MB) downloaded and read with pdftotext; it states only 'Côte d'Ivoire 2024' and the period 2024-2030. The strategies listing page was re-read by curl (HTTP 200). Handover date read via WebFetch from the gouv.ci notice.",
+      "checked_date": "2026-11-08",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions); replacement located by web search, same document",
       "http_status": 200,
-      "final_url": "https://www.telecom.gouv.ci/new/uploads/publications/174196707541.pdf",
+      "final_url": "https://www.anssi.gouv.ci/documents/86/SNGD___2030___Digital_reading_compressed.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "fr",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-f006646f1c9f",
@@ -415,6 +417,36 @@
     "last_sweep": "2026-11-08"
   },
   "changes": [
+    {
+      "id": "c-cac201d64d1a",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "CIV",
+      "instrument_id": "i-7e3e6d592887",
+      "title": "National Artificial Intelligence Strategy to 2030 (SNIA 2030)",
+      "detail": "Official source moved.",
+      "from": "https://www.telecom.gouv.ci/new/uploads/publications/174196670372.pdf",
+      "to": "https://anssi.gouv.ci/documents/87/Strat%C3%A9gie_Nationale_de_lIntelligence_Artificielle_250321_041840.pdf",
+      "source_url": "https://anssi.gouv.ci/documents/87/Strat%C3%A9gie_Nationale_de_lIntelligence_Artificielle_250321_041840.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-b7e240075aa7",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "CIV",
+      "instrument_id": "i-2ea0bd2d6aec",
+      "title": "National Data Governance Strategy to 2030 (SNGD 2030)",
+      "detail": "Official source moved.",
+      "from": "https://www.telecom.gouv.ci/new/uploads/publications/174196707541.pdf",
+      "to": "https://www.anssi.gouv.ci/documents/86/SNGD___2030___Digital_reading_compressed.pdf",
+      "source_url": "https://www.anssi.gouv.ci/documents/86/SNGD___2030___Digital_reading_compressed.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-c31e6c6fe91b",
       "date": "2026-10-22",

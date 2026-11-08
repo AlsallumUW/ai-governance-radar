@@ -5005,7 +5005,7 @@
       "metadata_gaps": [],
       "source_kind": "official_document",
       "evidence_reference": "JPN deep sweep 2026-11-04: WebFetch of the PDF (found via search). Cover: '第１版 令和５年 8 月'; revision history: '第１版 令和 5 年８月 25 日 新規作成'.",
-      "link_status": "reachable",
+      "link_status": "broken",
       "document_access_type": "original_government_document",
       "lifecycle": "published",
       "first_recorded": "2026-11-04",
@@ -5055,7 +5055,7 @@
       "metadata_gaps": [],
       "source_kind": "official_document",
       "evidence_reference": "JPN deep sweep 2026-11-04: WebFetch of the PDF via search result: title '生成ＡＩの利用に関するガイドライン', cover '2023 年 11 月', 附則 '令和 5年11月7日'.",
-      "link_status": "reachable",
+      "link_status": "broken",
       "document_access_type": "original_government_document",
       "lifecycle": "in_force",
       "first_recorded": "2026-11-04",
@@ -5105,7 +5105,7 @@
       "metadata_gaps": [],
       "source_kind": "official_document",
       "evidence_reference": "JPN deep sweep 2026-11-04: WebFetch of PDF found via search (it resolves again, contrary to the earlier lead note): title '文章生成 AI 利用ガイドライン', '令和６年７月 施行', '令和７年４月 改定', issuer 総務局 DX 推進課.",
-      "link_status": "reachable",
+      "link_status": "broken",
       "document_access_type": "original_government_document",
       "lifecycle": "in_force",
       "first_recorded": "2026-11-04",
@@ -5194,8 +5194,8 @@
       ],
       "summary": "Prefectural guideline for staff use of secured LLM text-generation services designated by the chief information security officer, covering the governor's departments, committees, schools, police headquarters, hospitals and assembly secretariat. It bans personal, secret-equivalent and unpublished information and third-party IP as inputs, requires checking and editing outputs (or labelling unedited AI output), and requires annual approval by each section head.",
       "ai_governance_relevance": "Kagoshima Prefecture prefectural AI governance instrument in Japan.",
-      "source_url": "https://www.pref.kagoshima.jp/ac03/documents/112390_20240328085449-1.pdf",
-      "official_pdf_url": "https://www.pref.kagoshima.jp/ac03/documents/112390_20240328085449-1.pdf",
+      "source_url": "https://www.pref.kagoshima.jp/ac03/generativeai.html",
+      "official_pdf_url": "https://www.pref.kagoshima.jp/ac03/generativeai.html",
       "language": "ja",
       "supersedes": [],
       "superseded_by": [],
@@ -5244,8 +5244,8 @@
       ],
       "summary": "Aichi Prefecture's staff guideline on generative AI, covering the governor's departments, public enterprises, administrative committees, board of education and assembly secretariat (not police staff or teachers). It requires services that do not train on inputs, bans entering top-sensitivity (重要性A) information, requires fact-checking and editing of outputs, and sets copyright, trademark and design checks.",
       "ai_governance_relevance": "Aichi Prefecture prefectural AI governance instrument in Japan.",
-      "source_url": "https://www.pref.aichi.jp/uploaded/attachment/540020.pdf",
-      "official_pdf_url": "https://www.pref.aichi.jp/uploaded/attachment/540020.pdf",
+      "source_url": "https://www.pref.aichi.jp/soshiki/digital/aiguideline.html",
+      "official_pdf_url": "https://www.pref.aichi.jp/soshiki/digital/aiguideline.html",
       "language": "ja",
       "supersedes": [],
       "superseded_by": [],
@@ -5346,8 +5346,8 @@
       ],
       "summary": "City staff guideline permitting only text-generation AI services that do not train on inputs and are registered under ISMAP or LGWAN-ASP. It bans confidentiality-level-3 information including personal data, requires fact-checking of sources and copyright, bars saving outputs to personal devices, and requires supervisor approval, an application to the Digital Promotion Division and incident reporting.",
       "ai_governance_relevance": "Yatsushiro municipal AI governance instrument in Japan.",
-      "source_url": "https://www.city.yatsushiro.lg.jp/kiji00321010/3_21010_shiryou1_2m2liri5.pdf",
-      "official_pdf_url": "https://www.city.yatsushiro.lg.jp/kiji00321010/3_21010_shiryou1_2m2liri5.pdf",
+      "source_url": "https://www.city.yatsushiro.lg.jp/kiji00321010/3_21010_shiryou1_aoretxqb.pdf",
+      "official_pdf_url": "https://www.city.yatsushiro.lg.jp/kiji00321010/3_21010_shiryou1_aoretxqb.pdf",
       "language": "ja",
       "supersedes": [],
       "superseded_by": [],
@@ -8103,7 +8103,7 @@
     },
     {
       "id": "s-405e0093cdb2",
-      "url": "https://www.city.chiba.jp/somu/joho/kaikaku/documents/aiguideline_ver1.pdf",
+      "url": "https://www.city.chiba.jp/somu/joho/kaikaku/29gyokaku_seiseiai.html",
       "jurisdiction_ids": [
         "JPN"
       ],
@@ -8119,15 +8119,16 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-08",
-      "checked_date": "2026-10-08",
-      "check_method": "GET with browser user-agent (curl); official text read",
+      "checked_date": "2026-11-08",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions); replacement located by web search, same document",
       "http_status": 200,
-      "final_url": "https://www.city.chiba.jp/somu/joho/kaikaku/documents/aiguideline_ver1.pdf",
+      "final_url": "https://www.city.chiba.jp/somu/joho/kaikaku/29gyokaku_seiseiai.html",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "ja",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-41be7de2ce02",
@@ -8449,14 +8450,14 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-11-04",
-      "checked_date": "2026-11-04",
-      "check_method": "WebFetch; official text read",
-      "http_status": 200,
+      "checked_date": "2026-11-08",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions)",
+      "http_status": 404,
       "final_url": "https://www.pref.kanagawa.jp/documents/102838/guideline-ai-kanagawa2.pdf",
-      "link_status": "reachable",
+      "link_status": "broken",
       "page_title": null,
       "document_language": "ja",
-      "error": null,
+      "error": "HTTP Error 404: Not Found",
       "content_type": "application/pdf"
     },
     {
@@ -8476,14 +8477,14 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-11-04",
-      "checked_date": "2026-11-04",
-      "check_method": "WebFetch; official text read",
-      "http_status": 200,
+      "checked_date": "2026-11-08",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions)",
+      "http_status": 404,
       "final_url": "https://www.city.nagoya.jp/somu/cmsfiles/contents/0000168/168968/231107_AI03.pdf",
-      "link_status": "reachable",
+      "link_status": "broken",
       "page_title": null,
       "document_language": "ja",
-      "error": null,
+      "error": "HTTP Error 404: Not Found",
       "content_type": "application/pdf"
     },
     {
@@ -8503,14 +8504,14 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-11-04",
-      "checked_date": "2026-11-04",
-      "check_method": "WebFetch; official text read",
-      "http_status": 200,
+      "checked_date": "2026-11-08",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions)",
+      "http_status": 404,
       "final_url": "https://www.pref.hiroshima.lg.jp/uploaded/life/1045619_9229432_misc.pdf",
-      "link_status": "reachable",
+      "link_status": "broken",
       "page_title": null,
       "document_language": "ja",
-      "error": null,
+      "error": "HTTP Error 404: Not Found",
       "content_type": "application/pdf"
     },
     {
@@ -8542,7 +8543,7 @@
     },
     {
       "id": "s-c793b215021e",
-      "url": "https://www.pref.kagoshima.jp/ac03/documents/112390_20240328085449-1.pdf",
+      "url": "https://www.pref.kagoshima.jp/ac03/generativeai.html",
       "jurisdiction_ids": [
         "JPN"
       ],
@@ -8557,19 +8558,20 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-11-04",
-      "checked_date": "2026-11-04",
-      "check_method": "WebFetch; official text read",
+      "checked_date": "2026-11-08",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions); replacement located by web search, same document",
       "http_status": 200,
-      "final_url": "https://www.pref.kagoshima.jp/ac03/documents/112390_20240328085449-1.pdf",
+      "final_url": "https://www.pref.kagoshima.jp/ac03/generativeai.html",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "ja",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-b8ab6adf08a2",
-      "url": "https://www.pref.aichi.jp/uploaded/attachment/540020.pdf",
+      "url": "https://www.pref.aichi.jp/soshiki/digital/aiguideline.html",
       "jurisdiction_ids": [
         "JPN"
       ],
@@ -8584,15 +8586,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-11-04",
-      "checked_date": "2026-11-04",
-      "check_method": "WebFetch; official text read",
+      "checked_date": "2026-11-08",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions); replacement located by web search, same document",
       "http_status": 200,
-      "final_url": "https://www.pref.aichi.jp/uploaded/attachment/540020.pdf",
+      "final_url": "https://www.pref.aichi.jp/soshiki/digital/aiguideline.html",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "ja",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-48597cafdaed",
@@ -8623,7 +8626,7 @@
     },
     {
       "id": "s-29f3cb8d6e84",
-      "url": "https://www.city.yatsushiro.lg.jp/kiji00321010/3_21010_shiryou1_2m2liri5.pdf",
+      "url": "https://www.city.yatsushiro.lg.jp/kiji00321010/3_21010_shiryou1_aoretxqb.pdf",
       "jurisdiction_ids": [
         "JPN"
       ],
@@ -8638,15 +8641,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-11-04",
-      "checked_date": "2026-11-04",
-      "check_method": "WebFetch; official text read",
-      "http_status": 200,
-      "final_url": "https://www.city.yatsushiro.lg.jp/kiji00321010/3_21010_shiryou1_2m2liri5.pdf",
+      "checked_date": "2026-11-08",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions); replacement located by web search, same document",
+      "http_status": 403,
+      "final_url": "https://www.city.yatsushiro.lg.jp/kiji00321010/3_21010_shiryou1_aoretxqb.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "ja",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-bbb4825f4ac8",
@@ -8965,6 +8969,96 @@
     "last_sweep": "2026-11-04"
   },
   "changes": [
+    {
+      "id": "c-954d0c2f64ff",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "JPN",
+      "instrument_id": "i-676dba7a5028",
+      "title": "Kagoshima Prefecture Guideline on the Use of Generative AI (Version 1.0)",
+      "detail": "Official source moved.",
+      "from": "https://www.pref.kagoshima.jp/ac03/documents/112390_20240328085449-1.pdf",
+      "to": "https://www.pref.kagoshima.jp/ac03/generativeai.html",
+      "source_url": "https://www.pref.kagoshima.jp/ac03/generativeai.html",
+      "needs_review": false
+    },
+    {
+      "id": "c-b61fe4ce950e",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "JPN",
+      "instrument_id": "i-5e3da50a437c",
+      "title": "Aichi Prefecture Guideline on the Use of Generative AI",
+      "detail": "Official source moved.",
+      "from": "https://www.pref.aichi.jp/uploaded/attachment/540020.pdf",
+      "to": "https://www.pref.aichi.jp/soshiki/digital/aiguideline.html",
+      "source_url": "https://www.pref.aichi.jp/soshiki/digital/aiguideline.html",
+      "needs_review": false
+    },
+    {
+      "id": "c-dacafda15032",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "JPN",
+      "instrument_id": "i-148bc1de7b2c",
+      "title": "Yatsushiro City Generative AI Utilization Guideline, Version 1.0",
+      "detail": "Official source moved.",
+      "from": "https://www.city.yatsushiro.lg.jp/kiji00321010/3_21010_shiryou1_2m2liri5.pdf",
+      "to": "https://www.city.yatsushiro.lg.jp/kiji00321010/3_21010_shiryou1_aoretxqb.pdf",
+      "source_url": "https://www.city.yatsushiro.lg.jp/kiji00321010/3_21010_shiryou1_aoretxqb.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-7d4b565d922f",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "JPN",
+      "instrument_id": "i-0fd61cbebd17",
+      "title": "Kanagawa Prefecture Generative AI Use Guideline (1st edition)",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "broken",
+      "source_url": "https://www.pref.kanagawa.jp/documents/102838/guideline-ai-kanagawa2.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-f34e17d9c833",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "JPN",
+      "instrument_id": "i-ae606fd38362",
+      "title": "Nagoya City Guideline on the Use of Generative AI",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "broken",
+      "source_url": "https://www.city.nagoya.jp/somu/cmsfiles/contents/0000168/168968/231107_AI03.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-ab1aadfc52eb",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "JPN",
+      "instrument_id": "i-9ed1e79344be",
+      "title": "Hiroshima Prefecture Text-Generative AI Usage Guideline",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "broken",
+      "source_url": "https://www.pref.hiroshima.lg.jp/uploaded/life/1045619_9229432_misc.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-2f74816279c1",
       "date": "2026-11-04",

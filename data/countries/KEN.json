@@ -389,7 +389,7 @@
       "official_webpage_url": null,
       "source_kind": "official_document",
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
+      "link_status": "broken",
       "document_access_type": "original_government_document",
       "source_id": "s-89f9eeff0d4c",
       "organization_id": "o-c88fa69cb17b",
@@ -761,14 +761,14 @@
         "drafts"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "curl (browser user agent, --max-time 60, retried after connection resets): 36-page PDF read in full with pdftotext on 2026-10-13. Not listed on the ODPC guidance-notes page (24 issued notes); no consultation notice found on odpc.go.ke or gaa.go.ke.",
-      "http_status": 200,
+      "checked_date": "2026-11-08",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions)",
+      "http_status": 404,
       "final_url": "https://www.odpc.go.ke/wp-content/uploads/2026/07/AI-Guidance-Note.July-2026.pdf",
-      "link_status": "reachable",
+      "link_status": "broken",
       "page_title": null,
       "document_language": "en",
-      "error": null,
+      "error": "HTTP Error 404: Not Found",
       "content_type": "application/pdf"
     },
     {
@@ -931,6 +931,21 @@
     "last_sweep": "2026-10-29"
   },
   "changes": [
+    {
+      "id": "c-50747d7e9174",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "KEN",
+      "instrument_id": "i-2e75c92ed8df",
+      "title": "Guidance Note on Artificial Intelligence (July 2026)",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "broken",
+      "source_url": "https://www.odpc.go.ke/wp-content/uploads/2026/07/AI-Guidance-Note.July-2026.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-3d995e210508",
       "date": "2026-10-19",

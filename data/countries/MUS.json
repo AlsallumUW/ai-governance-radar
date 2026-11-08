@@ -39,9 +39,9 @@
       "current_status": "Launched on 9 April 2026 at the J & J Auditorium, Phoenix, together with the FAIR Guidelines, and published by the AI Unit on aim.govmu.org and listed under Strategies on mitci.govmu.org (the Prime Minister's foreword is dated 13 February 2026). It replaces the Mauritius Artificial Intelligence Strategy of November 2018, which MITCI now files as archived.",
       "summary": "Mauritius' National Artificial Intelligence Strategy, built on the Digital Transformation Blueprint 2025-2029 and the Government Programme 2025-2029, with forewords by the President and the Prime Minister (the latter dated 13 February 2026). It sets five strategic pillars (including innovation and research, skills and education) and an AI4AI awareness and literacy programme, and proposes an AI governance framework that, rather than an immediate single AI Act, empowers sector regulators (FSC, HEC, Bank of Mauritius, ICTA, Data Protection Commissioner) to issue guidelines and codes, supported by regulatory sandboxes and a National AI Council (to be constituted) as central coordinating authority. It assigns lead authorities for cybersecurity (CERT-MU/NCC), data protection (DPIA templates, audits), AI procurement guidelines and model/dataset registers (MITCI/National AI Council) and skills.",
       "ai_governance_relevance": "Current national AI strategy; anchors the FAIR Guidelines, the AI implementation playbook and the proposed sector-regulator governance model.",
-      "source_url": "https://aim.govmu.org/aim/ai-strategy/",
+      "source_url": "https://aim.govmu.org/aim/document/aistrategy",
       "official_pdf_url": "https://aim.govmu.org/aim/wp-content/uploads/2026/04/aistrategy.pdf",
-      "official_webpage_url": "https://aim.govmu.org/aim/ai-strategy/",
+      "official_webpage_url": "https://aim.govmu.org/aim/document/aistrategy",
       "sectors": [
         "cross-sector"
       ],
@@ -149,9 +149,9 @@
       "current_status": "Launched on 9 April 2026 together with the National AI Strategy; the guidelines describe themselves as non-binding. The 38-page PDF carries no date of its own and is also published on mitci.govmu.org (Strategies and Policies pages).",
       "summary": "Non-binding national guidelines, grounded in Fairness, Accountability, Inclusiveness and Integrity, and Responsibility, for public institutions, private organisations and technopreneurs developing or using AI in Mauritius. They set a shared-governance model of roles, AI lifecycle controls from design to decommissioning, a risk-based model with low, medium, high and unacceptable risk tiers and escalation safeguards, and chapters on data protection alignment, transparency and human oversight, auditability and record-keeping, procurement and vendor governance, and generative, foundation and agentic AI. A final chapter sets the trajectory from guidelines to policy and legislation, indicating which elements may later become binding.",
       "ai_governance_relevance": "National AI ethics and risk framework; the reference for public-sector and private AI use pending any legislation.",
-      "source_url": "https://aim.govmu.org/aim/fair-guidelines/",
+      "source_url": "https://aim.govmu.org/aim/document/fairguidelines",
       "official_pdf_url": "https://aim.govmu.org/aim/wp-content/uploads/2026/04/fairguidelines.pdf",
-      "official_webpage_url": "https://aim.govmu.org/aim/fair-guidelines/",
+      "official_webpage_url": "https://aim.govmu.org/aim/document/fairguidelines",
       "sectors": [
         "cross-sector"
       ],
@@ -201,9 +201,9 @@
       "current_status": "Version 0.1, a 'living document' marked 'Published: March 2026'; it states that pilot failure/exit protocols and the National Knowledge Repository templates are still to be added before the first pilot.",
       "summary": "Operational methodology of the AI Unit for designing, delivering, governing and evaluating AI pilots across the public service. Version 0.1 maps CRISP-DM, ITIL, WCAG 2.2 and the Kirkpatrick model to Mauritian public-service delivery, and sets capability-building arrangements, RACI matrices, ministry counterpart responsibilities and vendor-management protocols, with templates to follow in a National Knowledge Repository.",
       "ai_governance_relevance": "Public-sector AI delivery guidance completing the strategy (what), FAIR Guidelines (why) and playbook (how) set.",
-      "source_url": "https://aim.govmu.org/aim/playbook/",
+      "source_url": "https://aim.govmu.org/aim/document/playbook",
       "official_pdf_url": "https://aim.govmu.org/aim/wp-content/uploads/2026/03/playbook.pdf",
-      "official_webpage_url": "https://aim.govmu.org/aim/playbook/",
+      "official_webpage_url": "https://aim.govmu.org/aim/document/playbook",
       "sectors": [
         "cross-sector"
       ],
@@ -253,9 +253,9 @@
       "current_status": "Dated May 2025 on the cover. Published on the AI Unit site (web version with PDF) and listed under Strategies on mitci.govmu.org. The DSF states the Blueprint was approved by Cabinet.",
       "summary": "Government's 2025-2029 digital transformation roadmap, aligned with the Government Programme 2025-2029, built on four pillars and a set of enablers. Its Enabler 5 'Data Protection and Artificial Intelligence' commits to a National Data Strategy (2025-2030) that prepares for safe, trustworthy and ethical AI adoption, to formulating a National AI Strategy, and to AI uses in government (automation, virtual assistants, predictive analytics); it also refers to an AI Office and AI regulatory frameworks.",
       "ai_governance_relevance": "Digital strategy with an explicit AI enabler; the parent document of the 2026 National AI Strategy and the Digital Service Framework.",
-      "source_url": "https://aim.govmu.org/aim/a-blueprint-for-mauritius/",
+      "source_url": "https://aim.govmu.org/aim/document/blueprint",
       "official_pdf_url": "https://aim.govmu.org/aim/blueprint/blueprint.pdf",
-      "official_webpage_url": "https://aim.govmu.org/aim/a-blueprint-for-mauritius/",
+      "official_webpage_url": "https://aim.govmu.org/aim/document/blueprint",
       "sectors": [
         "cross-sector"
       ],
@@ -705,7 +705,7 @@
   "sources": [
     {
       "id": "s-e037b7be3cef",
-      "url": "https://aim.govmu.org/aim/ai-strategy/",
+      "url": "https://aim.govmu.org/aim/document/aistrategy",
       "jurisdiction_ids": [
         "MUS"
       ],
@@ -722,15 +722,16 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): aim.govmu.org AI Strategy page read (flipbook pointing to aistrategy.pdf); full 74-page PDF downloaded (resumed after a 60 s timeout) and read with pdftotext; launch date from MITCI news item 'National AI Strategy and FAIR Guidelines unveiled...' (10 April 2026)",
+      "checked_date": "2026-11-08",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions)",
       "http_status": 200,
-      "final_url": "https://aim.govmu.org/aim/ai-strategy/",
+      "final_url": "https://aim.govmu.org/aim/document/aistrategy",
       "link_status": "reachable",
       "page_title": "AI Strategy – Artificial Intelligence Unit",
       "document_language": "en",
       "error": null,
-      "content_type": "text/html; charset=UTF-8"
+      "content_type": "text/html; charset=UTF-8",
+      "fail_streak": 0
     },
     {
       "id": "s-9fc9e3953384",
@@ -762,7 +763,7 @@
     },
     {
       "id": "s-9af01622694e",
-      "url": "https://aim.govmu.org/aim/fair-guidelines/",
+      "url": "https://aim.govmu.org/aim/document/fairguidelines",
       "jurisdiction_ids": [
         "MUS"
       ],
@@ -780,19 +781,20 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): AI Unit FAIR Guidelines page read (flipbook pointing to fairguidelines.pdf); full 38-page PDF downloaded and read with pdftotext",
+      "checked_date": "2026-11-08",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions)",
       "http_status": 200,
-      "final_url": "https://aim.govmu.org/aim/fair-guidelines/",
+      "final_url": "https://aim.govmu.org/aim/document/fairguidelines",
       "link_status": "reachable",
       "page_title": "FAIR Guidelines – Artificial Intelligence Unit",
       "document_language": "en",
       "error": null,
-      "content_type": "text/html; charset=UTF-8"
+      "content_type": "text/html; charset=UTF-8",
+      "fail_streak": 0
     },
     {
       "id": "s-25b1697a2262",
-      "url": "https://aim.govmu.org/aim/playbook/",
+      "url": "https://aim.govmu.org/aim/document/playbook",
       "jurisdiction_ids": [
         "MUS"
       ],
@@ -808,19 +810,20 @@
         "procurement"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): AI Unit playbook page read (flipbook pointing to playbook.pdf); 66-page PDF downloaded; text layer is partial (largely images) so the preface, contents and version block were read with pdftotext",
+      "checked_date": "2026-11-08",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions)",
       "http_status": 200,
-      "final_url": "https://aim.govmu.org/aim/playbook/",
+      "final_url": "https://aim.govmu.org/aim/document/playbook",
       "link_status": "reachable",
       "page_title": "Playbook – Artificial Intelligence Unit",
       "document_language": "en",
       "error": null,
-      "content_type": "text/html; charset=UTF-8"
+      "content_type": "text/html; charset=UTF-8",
+      "fail_streak": 0
     },
     {
       "id": "s-76a9adc1f60b",
-      "url": "https://aim.govmu.org/aim/a-blueprint-for-mauritius/",
+      "url": "https://aim.govmu.org/aim/document/blueprint",
       "jurisdiction_ids": [
         "MUS"
       ],
@@ -836,15 +839,16 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): AI Unit Blueprint page read; 56-page PDF (blueprint.pdf) downloaded and read with pdftotext",
+      "checked_date": "2026-11-08",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions)",
       "http_status": 200,
-      "final_url": "https://aim.govmu.org/aim/a-blueprint-for-mauritius/",
+      "final_url": "https://aim.govmu.org/aim/document/blueprint",
       "link_status": "reachable",
       "page_title": "A Blueprint for Mauritius – Artificial Intelligence Unit",
       "document_language": "en",
       "error": null,
-      "content_type": "text/html; charset=UTF-8"
+      "content_type": "text/html; charset=UTF-8",
+      "fail_streak": 0
     },
     {
       "id": "s-1c7de4575856",
@@ -1102,6 +1106,66 @@
     "last_sweep": "2026-11-07"
   },
   "changes": [
+    {
+      "id": "c-883430c09b02",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "MUS",
+      "instrument_id": "i-d04dd27443c5",
+      "title": "AI for Mauritius (AIM): National Artificial Intelligence Strategy - A National Vision for Responsible AI and Regional Leadership",
+      "detail": "Official source moved.",
+      "from": "https://aim.govmu.org/aim/ai-strategy/",
+      "to": "https://aim.govmu.org/aim/document/aistrategy",
+      "source_url": "https://aim.govmu.org/aim/document/aistrategy",
+      "needs_review": false
+    },
+    {
+      "id": "c-d218df856207",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "MUS",
+      "instrument_id": "i-3cece4b5f98f",
+      "title": "FAIR Guidelines for the Development and Use of Artificial Intelligence",
+      "detail": "Official source moved.",
+      "from": "https://aim.govmu.org/aim/fair-guidelines/",
+      "to": "https://aim.govmu.org/aim/document/fairguidelines",
+      "source_url": "https://aim.govmu.org/aim/document/fairguidelines",
+      "needs_review": false
+    },
+    {
+      "id": "c-e58de093dcff",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "MUS",
+      "instrument_id": "i-12f6bda23925",
+      "title": "Digital Transformation Implementation Playbook: Operational Companion to the National AI Strategy and FAIR Guidelines (Version 0.1)",
+      "detail": "Official source moved.",
+      "from": "https://aim.govmu.org/aim/playbook/",
+      "to": "https://aim.govmu.org/aim/document/playbook",
+      "source_url": "https://aim.govmu.org/aim/document/playbook",
+      "needs_review": false
+    },
+    {
+      "id": "c-9b4c013d32c5",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "MUS",
+      "instrument_id": "i-c86aa9e5d636",
+      "title": "Digital Transformation Blueprint 2025-2029: A Blueprint for Mauritius - A Bridge to the Future",
+      "detail": "Official source moved.",
+      "from": "https://aim.govmu.org/aim/a-blueprint-for-mauritius/",
+      "to": "https://aim.govmu.org/aim/document/blueprint",
+      "source_url": "https://aim.govmu.org/aim/document/blueprint",
+      "needs_review": false
+    },
     {
       "id": "c-62cc8908692a",
       "date": "2026-10-12",
