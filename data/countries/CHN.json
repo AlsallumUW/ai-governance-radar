@@ -6763,7 +6763,7 @@
       "technology_scope": [
         "AI"
       ],
-      "summary": "TC260 technical document setting baseline security requirements for public-facing generative AI services in mainland China, used by providers for security self-assessment and by regulators. It requires excluding training sources with over 5% illegal or harmful content, use of filed foundation models, protections for minors, test banks of at least 2,000 questions, and assessment thresholds (e.g. at least 96% manual corpus sample pass rate, at least 90% generated-content pass rate, refusal rate at least 95% for should-refuse questions and no more than 5% for should-answer questions); it also recommends a keyword library of at least 10,000 terms.",
+      "summary": "TC260 technical document supporting the Interim Measures for the Management of Generative AI Services and setting baseline security requirements for generative AI services; providers use it for the security assessment submitted when completing filing procedures, and it may serve as a reference for competent authorities. It bars collecting or training on sources whose illegal or harmful content exceeds 5%, requires services built on third-party foundation models to use filed models, sets protections for minors, recommends a keyword library of at least 10,000 terms and a generated-content test bank of at least 2,000 questions, and sets assessment thresholds (at least 96% pass rate on a manual sample of at least 4,000 corpus items, at least 90% generated-content pass rate, refusal rate at least 95% for should-refuse questions and no more than 5% for should-answer questions).",
       "ai_governance_relevance": "National AI standard or standards-body guidance shaping China's AI governance.",
       "source_url": "https://www.tc260.org.cn/tc260/jswj/list.shtml",
       "official_pdf_url": "https://www.tc260.org.cn/tc260/jswj/202608/b40dff5e24ae41d1a3068a66422d3c43/files/89f0ff4da02249d3aae9320c71eaa27b.pdf",
@@ -7169,13 +7169,13 @@
       "publication_date": "2021-07-01",
       "effective_date": null,
       "last_amended_date": null,
-      "current_status": "Notice dated 1 July 2021 (NMPA notice 2021 No. 47). The text is the official republication on the website of the Xinjiang Uygur Autonomous Region Medical Products Administration (page dated 30 July 2021). The guidelines themselves are an attachment hosted by the NMPA; their classification rules are not yet confirmed from the official text.",
+      "current_status": "Notice dated 1 July 2021 (NMPA notice 2021 No. 47). The text is the official republication on the website of the Xinjiang Uygur Autonomous Region Medical Products Administration (page dated 30 July 2021); the guidelines are the NMPA-hosted attachment. From the notice date AI medical software must apply for registration under these principles; existing registration certificates stay valid, and any extension should in principle not run beyond 31 December 2023.",
       "scope": "National (China)",
       "sectors": [],
       "technology_scope": [
         "AI"
       ],
-      "summary": "NMPA notice issuing classification guidelines for AI medical software products, made 'to further strengthen the supervision of AI medical software products and promote high-quality industry development'. The attached guidelines concern how AI-based medical software products are classified and defined for medical-device regulation.",
+      "summary": "NMPA notice issuing classification guidelines for AI medical software products, made 'to further strengthen the supervision of AI medical software products and promote high-quality industry development'. The guidelines cover standalone software that uses AI on medical-device data for a medical purpose, which is regulated as a medical device when it processes, measures, models or analyses such data for medical use. Where the algorithm's maturity in medical use is low, decision-support software (e.g. lesion identification, treatment planning) is Class III and non-decision-support software (data processing and measurement) is Class II; high-maturity software follows the existing classification catalogue.",
       "ai_governance_relevance": "National ministry or sector-regulator instrument shaping AI governance in China.",
       "source_url": "https://mpa.xinjiang.gov.cn/xjyjj/yxaq/202107/e57bd37bfc0d4c27a3e5c7b95d8f0426.shtml",
       "official_pdf_url": "https://www.nmpa.gov.cn/directory/web/nmpa/images/1625713895408075422.docx",
@@ -7189,7 +7189,7 @@
       "verification_level": "reviewed_primary_metadata",
       "metadata_gaps": [],
       "source_kind": "official_publication",
-      "evidence_reference": "chn-deep-sweep-2026-11-04: WebFetch of Xinjiang MPA page: title '国家药监局关于发布人工智能医用软件产品分类界定指导原则的通告（2021年第47号）'; notice text '为进一步加强人工智能医用软件类产品监督管理，推动产业高质量发展，国家药监局组织制定了《人工智能医用软件产品分类界定指导原则》，现予公布。'; dated '2021年7月1日'; attachment 国家药品监督管理局2021年第47号通告附件.docx on nmpa.gov.cn. Original NMPA page (nmpa.gov.cn/ylqx/ylqxggtg/20210708111147171.html) returned an error.",
+      "evidence_reference": "chn-deep-sweep-2026-11-04: WebFetch of Xinjiang MPA page: title '国家药监局关于发布人工智能医用软件产品分类界定指导原则的通告（2021年第47号）'; notice text '为进一步加强人工智能医用软件类产品监督管理，推动产业高质量发展，国家药监局组织制定了《人工智能医用软件产品分类界定指导原则》，现予公布。'; dated '2021年7月1日'; attachment 国家药品监督管理局2021年第47号通告附件.docx on nmpa.gov.cn. Original NMPA page (nmpa.gov.cn/ylqx/ylqxggtg/20210708111147171.html) returned an error. Browser pass 2026-11-08: NMPA .docx attachment read; s.4 '若用于辅助决策…按照第三类医疗器械管理；若用于非辅助决策…按照第二类医疗器械管理'; requirements (二) '原则上不得超过2023年12月31日'.",
       "link_status": "reachable",
       "document_access_type": "official_publication_or_full_text_page",
       "lifecycle": "published",
@@ -7416,7 +7416,7 @@
       "publication_date": "2017-02-14",
       "effective_date": null,
       "last_amended_date": null,
-      "current_status": "Notice 国卫办医发〔2017〕7号 dated 14 February 2017; the text is the official republication on the Shanxi Provincial Health Commission website. It replaced the 2009 management norms for the same technologies (卫办医政发〔2009〕185–199号). The content of the attached AI specifications, and whether they have since been replaced, are not yet confirmed from the official text.",
+      "current_status": "Notice 国卫办医发〔2017〕7号 dated 14 February 2017; the text is the official republication on the Shanxi Provincial Health Commission website (posted 23 March 2017). It repealed the 15 trial management norms issued on 13 November 2009 (卫办医政发〔2009〕185–199号), including the trial norms for AI-assisted diagnosis (196号) and AI-assisted treatment (197号). The content of the attached AI specifications, and whether they have since been replaced, are not yet confirmed from the official text.",
       "scope": "National (China)",
       "sectors": [],
       "technology_scope": [
@@ -7436,7 +7436,7 @@
       "verification_level": "reviewed_primary_metadata",
       "metadata_gaps": [],
       "source_kind": "official_publication",
-      "evidence_reference": "chn-deep-sweep-2026-11-04: WebFetch Shanxi page: title as given, '国卫办医发〔2017〕7号', 落款 2017年2月14日, attachment list items 12 '人工智能辅助诊断技术管理规范（2017版）' and 13 '人工智能辅助治疗技术管理规范（2017版）' with nhfpc.gov.cn docx links (not fetchable). NHC 2022 catalogue PDF read: 'G10 人工智能辅助治疗技术 … 专指应用机器人手术系统辅助实施手术的技术'; AI-assisted diagnosis absent.",
+      "evidence_reference": "chn-deep-sweep-2026-11-04: WebFetch Shanxi page: title as given, '国卫办医发〔2017〕7号', 落款 2017年2月14日, attachment list items 12 '人工智能辅助诊断技术管理规范（2017版）' and 13 '人工智能辅助治疗技术管理规范（2017版）' with nhfpc.gov.cn docx links (not fetchable). NHC 2022 catalogue PDF read: 'G10 人工智能辅助治疗技术 … 专指应用机器人手术系统辅助实施手术的技术'; AI-assisted diagnosis absent. Browser pass 2026-11-08: Shanxi page '发布时间： 2017-03-23'; repealed list includes 卫办医政发〔2009〕196号 and 197号; nhfpc.gov.cn attachments did not load.",
       "link_status": "reachable",
       "document_access_type": "official_publication_or_full_text_page",
       "lifecycle": "published",
@@ -7672,7 +7672,7 @@
       "publication_date": "2025-04-10",
       "effective_date": null,
       "last_amended_date": null,
-      "current_status": "Hu Fu Ban Fa [2025] No. 7, issued 31 March 2025, published 10 April 2025. Distinct from the May 2024 'Smart and Easy' government-services plan.",
+      "current_status": "Hu Fu Ban Fa [2025] No. 7, issued 31 March 2025, published 10 April 2025. It aims to build version 4.0 of Shanghai's 'Smart and Easy' (智慧好办) government services.",
       "scope": "Shanghai",
       "sectors": [],
       "technology_scope": [
@@ -7904,7 +7904,7 @@
       "english_title": "Shenzhen Action Plan to Build a Leading Ecosystem for AI One-Person-Company Entrepreneurship (2026-2027)",
       "jurisdiction_id": "CHN",
       "issuing_authority": "Shenzhen Municipal Bureau of Industry and Information Technology",
-      "publisher_name": "Shenzhen Administration for Market Regulation",
+      "publisher_name": "Shenzhen Municipal Bureau of Industry and Information Technology",
       "authority_type": "executive",
       "government_level": "subnational",
       "subnational_unit": "Shenzhen",
@@ -7917,7 +7917,7 @@
       "publication_date": "2026-01-14",
       "effective_date": null,
       "last_amended_date": null,
-      "current_status": "Dated 14 January 2026. The text is the official reprint on the Shenzhen Administration for Market Regulation website (19 March 2026).",
+      "current_status": "Dated 14 January 2026; posted 15 January 2026 on the Shenzhen Municipal Bureau of Industry and Information Technology website.",
       "scope": "Shenzhen",
       "sectors": [],
       "technology_scope": [
@@ -7925,9 +7925,9 @@
       ],
       "summary": "Shen Gong Xin [2026] No. 2 sets 2027 targets of 10+ AI OPC communities, 1,000+ high-growth AI start-ups and 10,000+ AI entrepreneurs, with low-cost space, talent and housing support, start-up funding, compute/model/corpus vouchers, subsidies of up to CNY 5 million for AI products put into use in government scenarios, and public service platforms offering large-model filing guidance and security assessment.",
       "ai_governance_relevance": "Shenzhen city AI governance instrument in China.",
-      "source_url": "https://amr.sz.gov.cn/xxgk/qt/ztlm/opcfwzq/zcwj/content/post_12694530.html",
+      "source_url": "https://gxj.sz.gov.cn/xxgk/xxgkml/qt/tzgg/content/post_12602272.html",
       "official_pdf_url": null,
-      "official_webpage_url": "https://amr.sz.gov.cn/xxgk/qt/ztlm/opcfwzq/zcwj/content/post_12694530.html",
+      "official_webpage_url": "https://gxj.sz.gov.cn/xxgk/xxgkml/qt/tzgg/content/post_12602272.html",
       "language": "zh",
       "supersedes": [],
       "superseded_by": [],
@@ -7937,7 +7937,7 @@
       "verification_level": "reviewed_primary_metadata",
       "metadata_gaps": [],
       "source_kind": "official_publication",
-      "evidence_reference": "chn-deep-sweep-2026-11-04: WebFetch of amr.sz.gov.cn reprint: title as given, '深工信〔2026〕2号', '2026年1月14日'. Issuer page from search: http://gxj.sz.gov.cn/gkmlpt/content/12/12602/post_12602272.html (not fetched).",
+      "evidence_reference": "chn-deep-sweep-2026-11-04: WebFetch of amr.sz.gov.cn reprint: title as given, '深工信〔2026〕2号', '2026年1月14日'. Issuer page from search: http://gxj.sz.gov.cn/gkmlpt/content/12/12602/post_12602272.html (not fetched). Browser pass 2026-11-08: amr.sz.gov.cn reprint returned HTTP 403 (WAF); source switched to the issuer's own page on gxj.sz.gov.cn ('信息提供日期 : 2026-01-15', '深工信〔2026〕2号', '2026年1月14日'), which confirms the targets and subsidy figures.",
       "link_status": "reachable",
       "document_access_type": "official_publication_or_full_text_page",
       "lifecycle": "published",
@@ -8164,7 +8164,7 @@
       "publication_date": "2021-08-18",
       "effective_date": null,
       "last_amended_date": null,
-      "current_status": "Issued by the PCPD on 18 August 2021 (media statement of that date, which links the guidance). The guidance text itself is not yet confirmed from the official document; the summary follows the PCPD media statement.",
+      "current_status": "Issued by the PCPD on 18 August 2021 (media statement of that date); the guidance states 'First published in August 2021'. Besides the values and principles it contains a practice guide (AI strategy and governance; risk assessment and human oversight; development of AI models and management of AI systems; communication with stakeholders) and a self-assessment checklist.",
       "scope": "Hong Kong SAR",
       "sectors": [],
       "technology_scope": [
@@ -8186,7 +8186,7 @@
         "guidance text not yet checked against the official document"
       ],
       "source_kind": "official_publication",
-      "evidence_reference": "chn-deep-sweep-2026-11-04: WebFetch of the PCPD media statement dated 18 August 2021: issues the 'Guidance on the Ethical Development and Use of Artificial Intelligence', lists the seven principles, and carries a PDF download link labelled with the Guidance title. The PDF URL (from search) returned a bot-check page and was not read.",
+      "evidence_reference": "chn-deep-sweep-2026-11-04: WebFetch of the PCPD media statement dated 18 August 2021: issues the 'Guidance on the Ethical Development and Use of Artificial Intelligence', lists the seven principles, and carries a PDF download link labelled with the Guidance title. The PDF URL (from search) returned a bot-check page and was not read. Browser pass 2026-11-08: guidance PDF read (TOC: data stewardship values, ethical principles 3.1-3.7, 4 Practice Guide, Appendix A Self-assessment Checklist; 'First published in August 2021').",
       "link_status": "reachable",
       "document_access_type": "original_government_document",
       "lifecycle": "published",
@@ -8270,7 +8270,7 @@
       "technology_scope": [
         "AI"
       ],
-      "summary": "HKMA circular (ref. B1/15C, B9/67C) setting risk-based consumer-protection guiding principles for banks' use of big data analytics and AI (BDAI) in four areas: governance and accountability, fairness, transparency and disclosure, and data privacy. Banks should tell customers before service when BDAI is used, offer review of BDAI decisions and explanations on request, allow manual intervention for higher-risk decisions such as lending, and apply privacy by design.",
+      "summary": "HKMA circular (ref. B1/15C, B9/67C) setting risk-based consumer-protection guiding principles for banks' use of big data analytics and AI (BDAI) in four areas: governance and accountability, fairness, transparency and disclosure, and data privacy and protection. Boards and senior management remain accountable for BDAI-driven decisions ('no black-box excuse'). Banks should tell customers before service when BDAI is used, offer a way to request review of BDAI decisions, give explanations on request where appropriate, allow manual intervention to mitigate irresponsible lending decisions where necessary, and consider privacy by design and data minimisation.",
       "ai_governance_relevance": "Hong Kong SAR instrument shaping AI governance in China's special administrative region.",
       "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20191105-1-EN/20191105-1-EN.pdf",
       "official_pdf_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20191105-1-EN/20191105-1-EN.pdf",
@@ -13251,7 +13251,7 @@
     },
     {
       "id": "s-213de049000d",
-      "url": "https://amr.sz.gov.cn/xxgk/qt/ztlm/opcfwzq/zcwj/content/post_12694530.html",
+      "url": "https://gxj.sz.gov.cn/xxgk/xxgkml/qt/tzgg/content/post_12602272.html",
       "jurisdiction_ids": [
         "CHN"
       ],
@@ -13265,10 +13265,10 @@
         "strategy"
       ],
       "date_reviewed": "2026-11-04",
-      "checked_date": "2026-11-04",
-      "check_method": "WebFetch; official text read",
+      "checked_date": "2026-11-08",
+      "check_method": "Browser; official text read",
       "http_status": 200,
-      "final_url": "https://amr.sz.gov.cn/xxgk/qt/ztlm/opcfwzq/zcwj/content/post_12694530.html",
+      "final_url": "https://gxj.sz.gov.cn/xxgk/xxgkml/qt/tzgg/content/post_12602272.html",
       "link_status": "reachable",
       "page_title": "市工业和信息化局关于印发《深圳市打造人工智能OPC创业生态引领地行动计划（2026—2027年）》的通知",
       "document_language": "zh",
@@ -14197,7 +14197,7 @@
       "detail": "Added to the radar (published 2026-01-14).",
       "from": null,
       "to": null,
-      "source_url": "https://amr.sz.gov.cn/xxgk/qt/ztlm/opcfwzq/zcwj/content/post_12694530.html",
+      "source_url": "https://gxj.sz.gov.cn/xxgk/xxgkml/qt/tzgg/content/post_12602272.html",
       "needs_review": false
     },
     {
@@ -17902,7 +17902,7 @@
       "detail": "Published by Shenzhen Municipal Bureau of Industry and Information Technology.",
       "from": null,
       "to": null,
-      "source_url": "https://amr.sz.gov.cn/xxgk/qt/ztlm/opcfwzq/zcwj/content/post_12694530.html",
+      "source_url": "https://gxj.sz.gov.cn/xxgk/xxgkml/qt/tzgg/content/post_12602272.html",
       "needs_review": false
     },
     {
