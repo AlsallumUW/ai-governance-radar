@@ -70,7 +70,7 @@
       "first_recorded": "2026-10-12",
       "last_changed": null,
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "source_id": "s-544d1577dccc",
       "evidence_reference": "local-retry-2026-10-18: official PDF link and HAPDP legislation page re-checked (reachable, unchanged); record fields unchanged. curl (browser user agent, --max-time 240): signed 46-page scanned original PDF downloaded from the HAPDP 'Législation nationale' page; title page and signature page (Fait à Niamey, 16 décembre 2022, signed President Mohamed Bazoum) read as images; article text (art. 1 definition of AI, art. 52, art. 57, art. 112 abrogation) read via pdftotext from the HAPDP consolidated version (April 2026) on the same page"
@@ -107,14 +107,14 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-18",
-      "check_method": "local-retry-2026-10-18: HEAD request with browser user agent to the signed original PDF on the HAPDP 'Législation nationale' page (HTTP 200); page listing re-checked, same documents listed. Earlier read (2026-10-12): curl (browser user agent, --max-time 240): signed 46-page scanned original PDF downloaded from the HAPDP 'Législation nationale' page; title page and signature page (Fait à Niamey, 16 décembre 2022, signed President Mohamed Bazoum) read as images; article text (art. 1 definition of AI, art. 52, art. 57, art. 112 abrogation) read via pdftotext from the HAPDP consolidated version (April 2026) on the same page",
-      "http_status": 200,
+      "checked_date": "2026-11-08",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
+      "http_status": null,
       "final_url": "https://www.hapdp.ne/uploads/files/Loi-N%C2%B02022-59HAPDP.pdf",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": null,
       "document_language": "fr",
-      "error": null,
+      "error": "URLError: <urlopen error timed out>",
       "content_type": "application/pdf"
     }
   ],
@@ -210,6 +210,21 @@
     "last_sweep": "2026-11-08"
   },
   "changes": [
+    {
+      "id": "c-0acad35a2009",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "NER",
+      "instrument_id": "i-027f9e6a0ea5",
+      "title": "Law No. 2022-59 of 16 December 2022 on the protection of personal data",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://www.hapdp.ne/uploads/files/Loi-N%C2%B02022-59HAPDP.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-19c6816cfbbc",
       "date": "2026-10-12",

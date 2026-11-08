@@ -323,7 +323,7 @@
       "metadata_gaps": [],
       "source_kind": "official_document",
       "evidence_reference": "llv.li PDF read in full on 2026-11-07 (earlier HTTP 403 resolved); letterhead Schulamt, Zentrum für Schulmedien; dated 'Vaduz, 8 April 2026'; quotes on freely accessible AI tools and on personal data confirmed. Fobizz wording per source: 'sicheren und pädagogisch sinnvollen Rahmen'.",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "source_id": "s-3c486559f5b7",
       "organization_id": "o-6d7827126cc0",
@@ -396,8 +396,8 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "curl (browser user agent, --max-time 60) re-fetched 2026-10-13 (HTTP 200, application/pdf); full PDF read with pdftotext; adoption date 14 April 2026 and publication on 21 April 2026 confirmed on the Government media release (regierung.li medienportal 234380), which links the same PDF; short version at https://www.regierung.li/files/attachments/ki-strategie-kurzversion.pdf",
+      "checked_date": "2026-11-08",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://www.regierung.li/files/attachments/ki-strategie.pdf",
       "link_status": "reachable",
@@ -423,8 +423,8 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "curl (browser user agent, --max-time 60) re-fetched 2026-10-13 (HTTP 200) for the consolidated text and the original gazette entry (gesetze.li/chrono/2018272000); full text read; gazette line 'Jahrgang 2018 Nr. 272 ausgegeben am 7. Dezember 2018' and art. 91 commencement clause confirmed; art. 37 found via the portal's own full-text search ('automatisierte Einzelentscheidung')",
+      "checked_date": "2026-11-08",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://www.gesetze.li/konso/2018272000",
       "link_status": "reachable",
@@ -450,8 +450,8 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "curl (browser user agent, --max-time 60) re-fetched 2026-10-13 (HTTP 200); full page read; date 27.10.2023 taken from the Authority's own news item 'Chatbots' (datenschutzstelle.li/aktuelles/chatbots) announcing the guidance",
+      "checked_date": "2026-11-08",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://www.datenschutzstelle.li/datenschutz/themen-z/chatbots",
       "link_status": "reachable",
@@ -477,8 +477,8 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "curl (browser user agent, --max-time 60) re-fetched 2026-10-13 (HTTP 200); full page read; date 09.05.2023 taken from the Authority's own news item 'Künstliche Intelligenz' (datenschutzstelle.li/aktuelles/kuenstliche-intelligenz)",
+      "checked_date": "2026-11-08",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://www.datenschutzstelle.li/datenschutz/themen-z/kuenstliche-intelligenz",
       "link_status": "reachable",
@@ -504,8 +504,8 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "curl (browser user agent, --max-time 60) re-fetched 2026-10-13 (HTTP 200); full notice read; date 13.02.2025 printed on the page",
+      "checked_date": "2026-11-08",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://www.datenschutzstelle.li/aktuelles/wichtiger-hinweis-risiken-bei-der-nutzung-von-deepseek",
       "link_status": "reachable",
@@ -531,14 +531,14 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-11-07",
-      "checked_date": "2026-11-07",
-      "check_method": "llv.li PDF read in full on 2026-11-07 (earlier HTTP 403 resolved); letterhead Schulamt, Zentrum für Schulmedien; dated 'Vaduz, 8 April 2026'; quotes on freely accessible AI tools and on personal data confirmed. Fobizz wording per source: 'sicheren und pädagogisch sinnvollen Rahmen'.",
-      "http_status": 200,
+      "checked_date": "2026-11-08",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
+      "http_status": 403,
       "final_url": "https://www.llv.li/serviceportal2/amtsstellen/schulamt/richtlinien/ki_leitfaden-fuer-den-unterricht_2026_fin.pdf",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": "Einsatz Künstlicher Intelligenz (KI) im Unterricht – Leitfaden für Lehr- und Schulpersonal",
       "document_language": "de",
-      "error": null,
+      "error": "HTTP Error 403: Forbidden",
       "content_type": "application/pdf"
     }
   ],
@@ -631,6 +631,21 @@
     "last_sweep": "2026-11-07"
   },
   "changes": [
+    {
+      "id": "c-1c9cfffb8af8",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "LIE",
+      "instrument_id": "i-c0e4069cda6d",
+      "title": "Use of Artificial Intelligence (AI) in Teaching – Guideline for Teaching and School Staff",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://www.llv.li/serviceportal2/amtsstellen/schulamt/richtlinien/ki_leitfaden-fuer-den-unterricht_2026_fin.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-8fdf27171f5f",
       "date": "2026-11-07",

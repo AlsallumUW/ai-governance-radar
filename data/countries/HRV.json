@@ -119,7 +119,7 @@
       "first_recorded": "2026-10-12",
       "last_changed": null,
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "source_id": "s-38231859ed76",
       "evidence_reference": "curl (browser user agent, --max-time 60): Government 87th session material (item 13, dated 2 May 2025) read in full; MPUDT news page of 2 May 2025 confirms presentation at the 87th Government session. Status note: The decision text was read from the session material (proposal with the decision text)."
@@ -425,7 +425,7 @@
       "first_recorded": "2026-10-12",
       "last_changed": null,
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "source_id": "s-ad2735664a33",
       "evidence_reference": "curl (browser user agent, --max-time 60): 40-page PDF read (pdftotext, preface and structure); cover dated 'studeni 2025' (November 2025)."
@@ -491,8 +491,8 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full text read on Narodne novine (NN 2/2023, 4.1.2023, item 17); Sabor adoption at the 16 December 2022 session stated in the text; AI passages checked.",
+      "checked_date": "2026-11-08",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://narodne-novine.nn.hr/clanci/sluzbeni/2023_01_2_17.html",
       "link_status": "reachable",
@@ -518,14 +518,14 @@
         "strategy"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): Government 87th session material (item 13, dated 2 May 2025) read in full; MPUDT news page of 2 May 2025 confirms presentation at the 87th Government session.",
-      "http_status": 200,
+      "checked_date": "2026-11-08",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
+      "http_status": null,
       "final_url": "https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2025/Svibanj/87_sjednica_VRH/87%20-%2013.docx",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": null,
       "document_language": "hr",
-      "error": null,
+      "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
       "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
     },
     {
@@ -545,8 +545,8 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full text read on Narodne novine (NN 42/2018, 9.5.2018, item 805); adopted by Sabor 27 April 2018; art. 57 entry into force 25 May 2018.",
+      "checked_date": "2026-11-08",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://narodne-novine.nn.hr/clanci/sluzbeni/2018_05_42_805.html",
       "link_status": "reachable",
@@ -571,8 +571,8 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): 39-page PDF read (pdftotext); date 'Objavljeno: 20.8.2025.' taken from AZOP's AI page listing.",
+      "checked_date": "2026-11-08",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://azop.hr/wp-content/uploads/2025/10/FAQs-zastita-osobnih-podatka-i-UI.pdf",
       "link_status": "reachable",
@@ -599,8 +599,8 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): 87-page PDF read (pdftotext, table of contents and sections); publication on 7 May 2026 stated in AZOP's news item.",
+      "checked_date": "2026-11-08",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://azop.hr/wp-content/uploads/2026/05/AZOP-Smjernice-za-razvoj-AI-sustava.pdf",
       "link_status": "reachable",
@@ -626,8 +626,8 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full recommendation page read; 'Objavljeno: 8.5.2026.' stated on the page.",
+      "checked_date": "2026-11-08",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://azop.hr/preporuka-za-sigurno-koristenje-llm-alata/",
       "link_status": "reachable",
@@ -653,8 +653,8 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full recommendation page read; 'Objavljeno: 11.5.2026.' stated on the page.",
+      "checked_date": "2026-11-08",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://azop.hr/preporuka-o-automatiziranom-donosenju-odluka_clanak_22_gdpr/",
       "link_status": "reachable",
@@ -680,14 +680,14 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): 40-page PDF read (pdftotext, preface and structure); cover dated 'studeni 2025' (November 2025).",
-      "http_status": 200,
+      "checked_date": "2026-11-08",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
+      "http_status": null,
       "final_url": "https://www.dsju.hr/wp-content/uploads/2026/02/AI-Indeks-izvjesce-HR_final.pdf",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": null,
       "document_language": "hr",
-      "error": null,
+      "error": "URLError: <urlopen error _ssl.c:994: The handshake operation timed out>",
       "content_type": "application/pdf"
     }
   ],
@@ -784,6 +784,36 @@
     "last_sweep": "2026-11-07"
   },
   "changes": [
+    {
+      "id": "c-5992668a29c5",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "HRV",
+      "instrument_id": "i-550ee255d124",
+      "title": "Decision launching the drafting of the National AI Development Plan for the period until 2032 and the Action Plan for its implementation 2026-2028",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://vlada.gov.hr/UserDocsImages/2016/Sjednice/2025/Svibanj/87_sjednica_VRH/87%20-%2013.docx",
+      "needs_review": false
+    },
+    {
+      "id": "c-b49673c0698d",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "HRV",
+      "instrument_id": "i-d5b248dae7fc",
+      "title": "Survey on the readiness of state bodies to introduce and apply AI systems and on AI training needs (AI Index in Croatian public administration)",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://www.dsju.hr/wp-content/uploads/2026/02/AI-Indeks-izvjesce-HR_final.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-2ab9401f831f",
       "date": "2026-10-12",

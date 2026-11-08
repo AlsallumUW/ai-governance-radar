@@ -64,7 +64,7 @@
       ],
       "source_kind": "official_document",
       "evidence_reference": "Read: the PDF on digital.gob.es (found by a search on regional Latin American AI declarations): 'Declaración de Madrid', 'Reunión Ministerial Iberoamericana de Transformación Digital e Inteligencia Artificial', Madrid, 3 November 2026; approves the 'Alianza Iberoamericana de Inteligencia Artificial' for submission to the Summit; Argentina and Paraguay dissociate. Outside the slice's named blocs; editor to decide whether a SEGIB/Ibero-American file is wanted, else hold as lead. | Independent check 2026-11-08: Adopted ministerial declaration confirmed (agreed text with dissociations, not a draft). Source: Spain's Ministry for Digital Transformation as host government - acceptable official source; no SEGIB copy. Fixes: authority_type to convention; summary 'protection of minors' unsupported (text says only age-appropriate environments) - reworded; added traceability. applies_to: Ibero-American states excluding ARG and PRY (dissociated); member list not read from segib.org.",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "source_id": "s-8e2b6a9bd7ad",
       "organization_id": "o-cd3d15b0a7c4",
@@ -127,13 +127,13 @@
       ],
       "date_reviewed": "2026-11-08",
       "checked_date": "2026-11-08",
-      "check_method": "Official document read (deep sweep)",
-      "http_status": 200,
+      "check_method": "GET; first 1 KiB; 20-second timeout",
+      "http_status": null,
       "final_url": "https://digital.gob.es/content/dam/portal-mtdfp/comunicacion/comunicacion_ministro/2026/11/03-11-2026/Declaración%20de%20la%20Reunión%20Ministerial%20de%20Transformación%20Digital%20e%20IA.pdf",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": "Declaración de Madrid. Reunión Ministerial Iberoamericana de Transformación Digital e Inteligencia Artificial",
       "document_language": "es",
-      "error": null,
+      "error": "UnicodeEncodeError: 'ascii' codec can't encode character '\\xf3' in position 93: ordinal not in range(128)",
       "content_type": "application/pdf"
     }
   ],
@@ -243,6 +243,21 @@
       "from": null,
       "to": null,
       "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-b94d7e1a03d6",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "SEGIB",
+      "instrument_id": "i-6abb5898a2a8",
+      "title": "Madrid Declaration of the Ibero-American Ministerial Meeting on Digital Transformation and Artificial Intelligence",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://digital.gob.es/content/dam/portal-mtdfp/comunicacion/comunicacion_ministro/2026/11/03-11-2026/Declaración%20de%20la%20Reunión%20Ministerial%20de%20Transformación%20Digital%20e%20IA.pdf",
       "needs_review": false
     },
     {

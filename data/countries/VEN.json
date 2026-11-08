@@ -119,7 +119,7 @@
       "first_recorded": "2026-10-18",
       "last_changed": null,
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "source_id": "s-fa7dbd5533b5",
       "evidence_reference": "local-retry-2026-10-18: Official Gazette No. 6.907 Extraordinario (24 May 2025, 280 pages) found via gacetaoficial.gob.ve advanced text search ('plan de la patria', 'inteligencia'); full official PDF downloaded via curl and text extracted (pypdf). Title and 'ARTÍCULO ÚNICO' approval on pp. 1-2; AI strategic line 6.2.4.4 'Política de Estado ante las vertientes e impacto de la Inteligencia Artificial, aplicaciones y sistemas en la vida de la sociedad' on pp. 249-251; 7.4.1.6 'Promoción de una estrategia digital, ciberseguridad e inteligencia artificial'; promulgation 'Dado en Caracas, a los veinticuatro días del mes de mayo de dos mil veinticinco' p. 275. Effective date not stated separately; left null."
@@ -217,8 +217,8 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-18",
-      "check_method": "local-retry-2026-10-18: official PDF re-fetched via curl (browser user agent), HTTP 200 application/pdf, 36 pages; table of contents re-read",
+      "checked_date": "2026-11-08",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://mincyt.gob.ve/wp-content/uploads/2026/02/Codigo_de_Etica_de_Inteligencia_Artificial_de_la_Republica_Bolivariana-1.pdf",
       "link_status": "reachable",
@@ -244,14 +244,14 @@
         "strategy"
       ],
       "date_reviewed": "2026-10-18",
-      "checked_date": "2026-10-18",
-      "check_method": "local-retry-2026-10-18: curl (browser user agent); gazette record page http://www.gacetaoficial.gob.ve/gacetas/6907 links the PDF; full 280-page PDF downloaded and text extracted",
-      "http_status": 200,
+      "checked_date": "2026-11-08",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
+      "http_status": null,
       "final_url": "http://www.gacetaoficial.gob.ve/storage/2025/T028700054400-0-GOE_6.907_---000.pdf",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": null,
       "document_language": "es",
-      "error": null,
+      "error": "URLError: <urlopen error [Errno -5] No address associated with hostname>",
       "content_type": "application/pdf"
     },
     {
@@ -270,8 +270,8 @@
         "strategy"
       ],
       "date_reviewed": "2026-11-03",
-      "checked_date": "2026-11-03",
-      "check_method": "curl (browser user agent), HTTP 200 application/pdf, full text read",
+      "checked_date": "2026-11-08",
+      "check_method": "GET; first 1 KiB; 20-second timeout",
       "http_status": 200,
       "final_url": "https://mincyt.gob.ve/wp-content/uploads/2026/10/Plan-Nacional-de-Inteligencia-Artificial.pdf",
       "link_status": "reachable",
@@ -388,6 +388,21 @@
     "last_sweep": "2026-11-03"
   },
   "changes": [
+    {
+      "id": "c-9be04976ea32",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "VEN",
+      "instrument_id": "i-135e10d007db",
+      "title": "Organic Law on the Homeland Plan of the 7 Great Transformations 2025-2031",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "http://www.gacetaoficial.gob.ve/storage/2025/T028700054400-0-GOE_6.907_---000.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-c18159bea067",
       "date": "2026-11-03",
