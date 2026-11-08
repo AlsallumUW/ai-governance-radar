@@ -18,16 +18,16 @@ SITE_URL = os.environ.get("RADAR_SITE_URL", "https://alsallumuw.github.io/ai-gov
 BINDING = {"binding_law", "binding_regulation", "enforcement_decision", "international_treaty", "administrative_policy_mandatory_in_scope"}
 WEIGHT = {"binding_law": 0, "international_treaty": 1, "binding_regulation": 2, "enforcement_decision": 2.5, "administrative_policy_mandatory_in_scope": 3,
           "administrative_guideline": 4, "regulatory_opinion": 4, "nonbinding_guidance": 5, "voluntary_code": 5,
-          "national_strategy": 6, "consultation_draft": 7, "nonbinding_recommendation": 4, "declaration": 5, "regional_strategy": 6}
+          "national_strategy": 6, "subnational_strategy": 6, "consultation_draft": 7, "nonbinding_recommendation": 4, "declaration": 5, "regional_strategy": 6}
 STATUS_LABEL = {"binding_law": "Law (binding)", "international_treaty": "International treaty", "binding_regulation": "Regulation (binding)",
                 "enforcement_decision": "Enforcement decision",
                 "administrative_policy_mandatory_in_scope": "Mandatory policy (in scope)", "administrative_guideline": "Administrative guideline",
                 "regulatory_opinion": "Regulatory opinion", "nonbinding_guidance": "Non-binding guidance", "voluntary_code": "Voluntary code",
-                "national_strategy": "National strategy", "consultation_draft": "Draft / consultation",
+                "national_strategy": "National strategy", "subnational_strategy": "Subnational strategy", "consultation_draft": "Draft / consultation",
                 "nonbinding_recommendation": "Recommendation or resolution", "declaration": "Declaration", "regional_strategy": "Strategy"}
 TYPE_OF = {"binding_law": "law", "binding_regulation": "regulation", "enforcement_decision": "enforcement", "international_treaty": "treaty",
            "administrative_policy_mandatory_in_scope": "mandatory", "administrative_guideline": "guidance", "nonbinding_guidance": "guidance",
-           "regulatory_opinion": "guidance", "voluntary_code": "guidance", "national_strategy": "strategy", "consultation_draft": "draft",
+           "regulatory_opinion": "guidance", "voluntary_code": "guidance", "national_strategy": "strategy", "subnational_strategy": "strategy", "consultation_draft": "draft",
            "nonbinding_recommendation": "recommendation", "declaration": "declaration", "regional_strategy": "strategy"}
 TYPES = [("law", "Law"), ("regulation", "Regulation"), ("enforcement", "Enforcement decision"), ("treaty", "Treaty"), ("mandatory", "Mandatory policy"), ("guidance", "Guidance & opinions"),
          ("recommendation", "Recommendation or resolution"), ("declaration", "Declaration"), ("strategy", "Strategy"), ("draft", "Draft / consultation")]
@@ -83,7 +83,7 @@ def kind(i):
 
 PIPE_TYPE = {"binding_law": "Law", "binding_regulation": "Regulation", "enforcement_decision": "Enforcement decision", "international_treaty": "Treaty",
              "administrative_policy_mandatory_in_scope": "Mandatory policy", "administrative_guideline": "Guideline", "regulatory_opinion": "Opinion",
-             "nonbinding_guidance": "Guidance", "voluntary_code": "Code", "national_strategy": "Strategy",
+             "nonbinding_guidance": "Guidance", "voluntary_code": "Code", "national_strategy": "Strategy", "subnational_strategy": "Strategy",
              "nonbinding_recommendation": "Recommendation", "declaration": "Declaration", "regional_strategy": "Strategy"}
 
 
