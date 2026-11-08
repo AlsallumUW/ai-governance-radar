@@ -15,8 +15,8 @@ let selected=null,status='all',docType='',orgType='',body=null;
 const filters=new Set();
 
 /* ---------- classification helpers ---------- */
-const TYPES=[['law','Law (binding)'],['regulation','Regulation (binding)'],['treaty','International treaty'],['mandatory','Mandatory policy (in scope)'],['guidance','Guidance & opinions'],['recommendation','Recommendation or resolution'],['declaration','Declaration'],['strategy','National strategy'],['draft','Draft / consultation']];
-const TYPE_OF={binding_law:'law',binding_regulation:'regulation',international_treaty:'treaty',administrative_policy_mandatory_in_scope:'mandatory',administrative_guideline:'guidance',nonbinding_guidance:'guidance',regulatory_opinion:'guidance',voluntary_code:'guidance',national_strategy:'strategy',consultation_draft:'draft',nonbinding_recommendation:'recommendation',declaration:'declaration',regional_strategy:'strategy'};
+const TYPES=[['law','Law (binding)'],['regulation','Regulation (binding)'],['enforcement','Enforcement decision'],['treaty','International treaty'],['mandatory','Mandatory policy (in scope)'],['guidance','Guidance & opinions'],['recommendation','Recommendation or resolution'],['declaration','Declaration'],['strategy','National strategy'],['draft','Draft / consultation']];
+const TYPE_OF={binding_law:'law',binding_regulation:'regulation',enforcement_decision:'enforcement',international_treaty:'treaty',administrative_policy_mandatory_in_scope:'mandatory',administrative_guideline:'guidance',nonbinding_guidance:'guidance',regulatory_opinion:'guidance',voluntary_code:'guidance',national_strategy:'strategy',consultation_draft:'draft',nonbinding_recommendation:'recommendation',declaration:'declaration',regional_strategy:'strategy'};
 const ORGS=[['legislature','Parliament / legislature'],['government','Government, cabinet & ministries'],['agency','Government agencies'],['regulator','Sector regulators'],['dpa','Data protection authorities'],['centralbank','Central banks'],['standards','Standards bodies'],['courts','Courts & justice'],['local','State & local government'],['other','Advisory, audit & other bodies']];
 const ORG_OF={legislature:'legislature',parliament:'legislature',government:'government',executive:'government',ministry:'government',head_of_state:'government',government_department:'government',government_council:'government',national:'government',executive_agency:'agency',agency:'agency',government_agency:'agency',military_agency:'agency',regulator:'regulator',sector_body:'regulator',oversight_body:'regulator',cybersecurity_agency:'regulator',data_protection_authority:'dpa',central_bank:'centralbank',standards_body:'standards',judiciary:'courts',court:'courts',judicial_body:'courts',prosecution_service:'courts',attorney_general:'courts',local_government:'local',subnational_government:'local',municipal:'local'};
 const typeOf=i=>TYPE_OF[i.legal_status]||'guidance';
@@ -56,7 +56,7 @@ const countryPaths=new Map(),centers=new Map(),geoCenters=new Map(),featureByID=
 let width=0,height=0,transform=d3.zoomIdentity,globeK=1,rot=[-30,-18],spinTimer=null,userMoved=false,pinned=null,lastPointer='mouse';
 const ROOT=document.documentElement.lang==='ar'?'../':'';                 // Arabic page sits one folder down
 const PH=JSON.parse(document.getElementById('photos')?.textContent||'{}'),ARM=window.AR_MAP||{};
-const BINDING=new Set(['binding_law','binding_regulation','international_treaty','administrative_policy_mandatory_in_scope']);
+const BINDING=new Set(['binding_law','binding_regulation','enforcement_decision','international_treaty','administrative_policy_mandatory_in_scope']);
 const kindOf=i=>i.legal_status==='consultation_draft'?'draft':BINDING.has(i.legal_status)?'binding':'soft';
 /* documents recorded: single-hue ramp, breaks 1/3/6/11/21/51/101+ (it counts documents; it does not rate governance) */
 const BREAKS=[1,3,6,11,21,51,101],RAMP=d3.quantize(d3.interpolateLab('#3a4a8f','#8bbcc4'),7),ZERO='#2a3363';

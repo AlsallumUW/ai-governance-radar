@@ -862,6 +862,56 @@
       "link_status": "reachable",
       "evidence_reference": "curl (browser user agent, --max-time 60): 23-page PDF downloaded from ndpc.gov.ng and read (foreword by the National Commissioner, executive summary, sandbox section); upload month taken from the NDPC media library (2025-11). Status note: File uploaded 2025-11. Publication date source (date audit 2026-10-13): Paper itself only states '© Copyright 2025'; NDPC news item dated 'November 5, 2025' on the page says the CEO's Global DPI Summit session 'culminated in the launch of the White Paper co-authored by the NDPC and DIAL, titled “Privacy by Design in Early-Stage Innovation...”'.",
       "category": "data-privacy"
+    },
+    {
+      "id": "i-f810231bf08a",
+      "jurisdiction_id": "NGA",
+      "official_title": "National Software Development Guideline",
+      "english_title": "National Software Development Guideline",
+      "issuing_authority": "National Information Technology Development Agency",
+      "publisher_name": "National Information Technology Development Agency",
+      "authority_type": "agency",
+      "categories": [
+        "public-sector",
+        "risk-assurance",
+        "binding-law"
+      ],
+      "category": "public-sector",
+      "legal_status": "binding_regulation",
+      "lifecycle": "adopted",
+      "publication_date": "2026-07-14",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Signed by the NITDA Director-General/CEO on 14 July 2026 and listed under Guidelines & Frameworks on NITDA's Regulations page. Section 7.0 says it comes into effect on a date issued by NITDA; no commencement date is stated in the document, and the publication date recorded is the signing date.",
+      "scope": null,
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "NITDA guideline, issued under section 6 of the NITDA Act 2007, establishing a unified framework and minimum requirements (including a structured software development lifecycle and pre-deployment validation) for software developed, procured, modified, integrated or deployed in Nigeria, including vendor, foreign-contractor and PPP software, private software that interfaces with government systems or processes government data, and software in regulated sectors. It defines 'software' to include any 'artificial intelligence system, algorithmic decision-making tool', and section 14.0 requires software leveraging emerging technologies including AI to 'incorporate additional safeguards, transparency measures, and governance controls appropriate to their use'; NITDA may issue supplementary guidance. Compliance forms part of IT Project Clearance for government software, and non-compliant software may be subject to review, remediation or restriction from deployment within government systems.",
+      "ai_governance_relevance": "Binding NITDA software rules whose definition of software covers AI systems and algorithmic decision-making tools, with a requirement for additional safeguards, transparency measures and governance controls for AI-based software.",
+      "source_url": "https://nitda.gov.ng/wp-content/uploads/2026/08/National-Software-Development-Guideline-Signed.pdf",
+      "official_pdf_url": "https://nitda.gov.ng/wp-content/uploads/2026/08/National-Software-Development-Guideline-Signed.pdf",
+      "official_webpage_url": "https://nitda.gov.ng/regulations/",
+      "language": "en",
+      "source_kind": "official_document",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "government_level": "national",
+      "subnational_unit": null,
+      "subcategory": null,
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-11-05",
+      "evidence_reference": "Deep sweep 2026-11-05: signed PDF read; NITDA Regulations page lists 'National Software Development Guideline' under Guidelines & Frameworks with this PDF link. Title s.1.0; issued 'under section 6 of the NITDA Act of 2007' (s.4.0); signed Kashifu Inuwa Abdullahi, DG/CEO, 14 July 2026 (the only date printed); s.7.0 'shall come into effect on a date issued by NITDA'; s.8.0 software includes 'artificial intelligence system, algorithmic decision-making tool'; s.14.0 such systems 'shall incorporate additional safeguards, transparency measures, and governance controls'; s.18.0 'All software developed or deployed for use in Nigeria shall comply with the provisions of this Guideline.'",
+      "source_id": "s-e1bbea73558d",
+      "organization_id": "o-8d2bde25244f",
+      "first_recorded": "2026-11-05",
+      "last_changed": null
     }
   ],
   "organizations": [
@@ -1388,6 +1438,34 @@
       "http_status": 200,
       "page_title": "Privacy by Design in Early-Stage Innovation",
       "content_type": "application/pdf"
+    },
+    {
+      "id": "s-e1bbea73558d",
+      "url": "https://nitda.gov.ng/wp-content/uploads/2026/08/National-Software-Development-Guideline-Signed.pdf",
+      "jurisdiction_ids": [
+        "NGA"
+      ],
+      "source_institutions": [
+        "National Information Technology Development Agency"
+      ],
+      "instrument_ids": [
+        "i-f810231bf08a"
+      ],
+      "categories_reviewed": [
+        "public-sector",
+        "risk-assurance",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-11-05",
+      "checked_date": "2026-11-05",
+      "check_method": "Signed PDF read in full on 2026-11-05; NITDA Regulations page (nitda.gov.ng/regulations/) lists it under Guidelines & Frameworks and links this PDF.",
+      "http_status": 200,
+      "final_url": "https://nitda.gov.ng/wp-content/uploads/2026/08/National-Software-Development-Guideline-Signed.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
     }
   ],
   "regional_applicability": [],
@@ -1522,6 +1600,21 @@
     "last_sweep": "2026-11-08"
   },
   "changes": [
+    {
+      "id": "c-e362431e53f3",
+      "date": "2026-11-05",
+      "recorded": "2026-11-05",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "NGA",
+      "instrument_id": "i-f810231bf08a",
+      "title": "National Software Development Guideline",
+      "detail": "Added to the radar (published 2026-07-14).",
+      "from": null,
+      "to": null,
+      "source_url": "https://nitda.gov.ng/wp-content/uploads/2026/08/National-Software-Development-Guideline-Signed.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-6243bf295226",
       "date": "2026-10-27",
@@ -1898,6 +1991,21 @@
       "needs_review": false
     },
     {
+      "id": "c-f444dbac080a",
+      "date": "2026-07-14",
+      "recorded": "2026-11-05",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "NGA",
+      "instrument_id": "i-f810231bf08a",
+      "title": "National Software Development Guideline",
+      "detail": "Published by National Information Technology Development Agency.",
+      "from": null,
+      "to": null,
+      "source_url": "https://nitda.gov.ng/wp-content/uploads/2026/08/National-Software-Development-Guideline-Signed.pdf",
+      "needs_review": false
+    },
+    {
       "id": "c-932d813ac182",
       "date": "2026-04-13",
       "recorded": "2026-10-11",
@@ -2183,7 +2291,7 @@
       "title": "Federal Ministry of Health AI framework under the Nigerian Digital Health Architecture",
       "english_title": "FMoH AI in health framework (in development)",
       "issuing_authority": "Federal Ministry of Health and Social Welfare",
-      "note": "Press reports (November 2025) say the Ministry is building an AI framework for safe deployment of AI tools within the Nigerian Digital Health Architecture. No document found on health.gov.ng.",
+      "note": "Press reports (November 2025) say the Ministry is building an AI framework for safe deployment of AI tools within the Nigerian Digital Health Architecture. No document found on health.gov.ng. Update 2026-11-05: an article of 23 October 2026 (blueprint.ng/?p=855861) headlined 'FG unveils framework to deploy AI for healthcare transformation' on the AI Health Summit 2026, Abuja (theme 'Catalyzing Country AI-in-Health Frameworks'), but no framework document is named or published.",
       "found": "2026-10-11"
     },
     {
@@ -2234,7 +2342,7 @@
       "issuing_authority": "Lagos State Government (Ministry of Innovation, Science and Technology)",
       "government_level": "subnational",
       "subnational_unit": "Lagos",
-      "note": "Announced by Commissioner Olatunbosun Alake in Nov 2024 (with the Federal AI Collective; target Q1/Q2 2025) and again in May 2025 ('in the coming weeks'), described as a non-binding framework for developers and companies. A May 2026 press-briefing report still speaks of 'rollout of AI guidelines'. No official text found: lagosstate.gov.ng is a JS app with no searchable posts; most.lagosstate.gov.ng fails TLS (curl, cert name mismatch), its http homepage returns a near-empty shell, and WebFetch returned HTTP 503. Third-party tracker regulations.ai lists it as adopted 1 Aug 2025 but cites 'lagos.state.gov.ng/ai-guidelines-not-publicly-available', i.e. no public official copy. Discovery sources only: von.gov.ng/?p=368271, thisdaylive.com 2025-05-22, nairametrics 2025-05-18, vanguardngr.com 2026-05. Record once an official copy and date are found. Also found: a Lagos State AI Guide platform at aiguide.lagosstate.gov.ng ('STANDARD Framework'); on 2026-10-11 curl failed (expired TLS certificate) and WebFetch returned HTTP 503, so its content could not be checked."
+      "note": "Announced by Commissioner Olatunbosun Alake in Nov 2024 (with the Federal AI Collective; target Q1/Q2 2025) and again in May 2025 ('in the coming weeks'), described as a non-binding framework for developers and companies. A May 2026 press-briefing report still speaks of 'rollout of AI guidelines'. No official text found: lagosstate.gov.ng is a JS app with no searchable posts; most.lagosstate.gov.ng fails TLS (curl, cert name mismatch), its http homepage returns a near-empty shell, and WebFetch returned HTTP 503. Third-party tracker regulations.ai lists it as adopted 1 Aug 2025 but cites 'lagos.state.gov.ng/ai-guidelines-not-publicly-available', i.e. no public official copy. Discovery sources only: von.gov.ng/?p=368271, thisdaylive.com 2025-05-22, nairametrics 2025-05-18, vanguardngr.com 2026-05. Record once an official copy and date are found. Also found: a Lagos State AI Guide platform at aiguide.lagosstate.gov.ng ('STANDARD Framework'); on 2026-10-11 curl failed (expired TLS certificate) and WebFetch returned HTTP 503, so its content could not be checked. Update 2026-11-05: a May 2026 ministerial briefing report (vanguardngr.com 2026/05) says Lagos 'formally launched an AI Guideline Portal'; no guideline text or official link given. Separate Lagos State Cybersecurity Guidelines (April 2026) have no reported AI content."
     },
     {
       "title": "Lagos Innovation Bill (draft)",
@@ -2259,6 +2367,128 @@
       "government_level": "subnational",
       "subnational_unit": "Ogun",
       "note": "Only programmes found via news: OgunLEARN AI-powered learning platform under the OGSERA education digital agenda, and a Gen AI Fellowship with the Bosun Tijani Foundation (2025). No Ogun State AI policy, strategy or guideline found; ogunstate.gov.ng is a JS app with no searchable content via curl. Not recorded."
+    },
+    {
+      "title": "NITDA CERRT.NG advisory NITDA-0926-003 on sharing personal data with AI chatbots (ChatGPT, Gemini, Claude, Copilot, Meta AI) (c. September/October 2026)",
+      "english_title": "NITDA CERRT.NG advisory NITDA-0926-003 on sharing personal data with AI chatbots (ChatGPT, Gemini, Claude, Copilot, Meta AI) (c. September/October 2026)",
+      "issuing_authority": "National Information Technology Development Agency",
+      "note": "Reported 5 October 2026 (legit.ng, discovery only). CERRT.NG advisory ref. NITDA-0926-003 warns against entering NIN, BVN, bank, medical and family data into AI chatbots, says AI answers must be verified, and recommends organisations adopt an AI governance policy (approved tools, permitted uses, data handling, accountability) and not upload internal documents without authorisation. AI-specific cyber-security/generative-ai guidance from the national CERT; record once the official advisory text is read on cerrt.nitda.gov.ng (not indexed by search; direct fetch refused).",
+      "url": "https://www.legit.ng/business-economy/technology/1734416-nitda-issues-warning-nigerians-using-chatgpt-gemini-meta-ai/",
+      "found": "2026-11-05"
+    },
+    {
+      "title": "NITDA CERRT.NG advisory on ChatGPT vulnerabilities enabling data-leakage attacks (December 2025)",
+      "english_title": "NITDA CERRT.NG advisory on ChatGPT vulnerabilities enabling data-leakage attacks (December 2025)",
+      "issuing_authority": "National Information Technology Development Agency",
+      "note": "Reported 8 December 2025 as an urgent CERRT.NG cybersecurity advisory; no reference number or official link in coverage. Check cerrt.nitda.gov.ng advisories listing; record under cyber-security/generative-ai if the advisory carries guidance beyond a vulnerability alert.",
+      "url": "https://nairametrics.com/2025/12/08/nitda-warns-nigerians-against-chatgpt-vulnerabilities-that-enable-data-leakage-attacks/",
+      "found": "2026-11-05"
+    },
+    {
+      "title": "NITDA CERRT.NG alert on AI-powered 'DeepLoad' malware (May 2026)",
+      "english_title": "NITDA CERRT.NG alert on AI-powered 'DeepLoad' malware (May 2026)",
+      "issuing_authority": "National Information Technology Development Agency",
+      "note": "Reported 7 May 2026. Threat alert about AI-assisted malware targeting Nigerian banks and agencies; likely a passing AI threat alert rather than AI-security guidance. Lead only; check official text on cerrt.nitda.gov.ng.",
+      "url": "https://nairametrics.com/2026/05/07/nitda-raises-fresh-cyber-alert-over-ai-powered-deepload-malware/",
+      "found": "2026-11-05"
+    },
+    {
+      "title": "Federal Ministry of Education AI in Education Task Force and planned guidelines for teacher training and AI implementation",
+      "english_title": "Federal Ministry of Education AI in Education Task Force and planned guidelines for teacher training and AI implementation",
+      "issuing_authority": "Federal Ministry of Education",
+      "note": "24 January 2025 Ministry press briefing (International Day of Education) announced a planned AI in Education Task Force to develop guidelines for teacher training and AI implementation; on 5 February 2025 (fmino.gov.ng) the Minister recommended working with NERDC to integrate AI, coding and robotics into the curriculum. No guideline or NERDC curriculum document found. Record under sectoral (education) when published.",
+      "url": "https://techeconomy.ng/fg-incorporates-artificial-intelligence-into-education",
+      "found": "2026-11-05"
+    },
+    {
+      "title": "NUC CCMAS programme standard for B.Sc. Artificial Intelligence (one of 13 new programmes, October 2025)",
+      "english_title": "NUC CCMAS programme standard for B.Sc. Artificial Intelligence (one of 13 new programmes, October 2025)",
+      "issuing_authority": "National Universities Commission",
+      "note": "Press (October 2025) reports NUC approving Artificial Intelligence among 13 new degree programmes to be incorporated in the Core Curriculum and Minimum Academic Standards (CCMAS). A national AI-specific programme standard would meet the PROTOCOL curriculum rule if NUC publishes it; not found on nuc.edu.ng via search.",
+      "url": "https://leadership.ng/nuc-to-incorporate-artificial-intelligence-11-other-new-programmes-in-ccmas",
+      "found": "2026-11-05"
+    },
+    {
+      "title": "National Cancer Control Plan (NCCP) 2026-2030 (AI integrated)",
+      "english_title": "National Cancer Control Plan (NCCP) 2026-2030 (AI integrated)",
+      "issuing_authority": "Federal Ministry of Health and Social Welfare",
+      "note": "Reported 12 July 2026: Minister of State for Health said AI was integrated into the NCCP 2026-2030 for surveillance, clinical decision support and diagnostics. Sector plan with AI elements; likely passing mention. Check health.gov.ng / NICRAT for the text before deciding scope.",
+      "url": "https://technologytimes.ng/nigeria-embeds-ai-in-cancer-control-plan/",
+      "found": "2026-11-05"
+    },
+    {
+      "title": "National Digital Economy Policy and Strategy (2020-2030)",
+      "english_title": "National Digital Economy Policy and Strategy (2020-2030)",
+      "issuing_authority": "Federal Ministry of Communications and Digital Economy",
+      "note": "Not a digital strategy with an AI pillar: AI is only an item in a list of emerging technologies, with no AI objective, target, strategy or section, so under PROTOCOL s.1 it is a passing mention and belongs in leads (or historical context in the narrative). If ever recorded, issuer 'Federal Ministry of Communications and Digital Economy' and publication_date 2019-11 (foreword) are correct as proposed; the proposed summary's claim that it is the 'predecessor policy frame for the later National AI Strategy' is not stated in the text.",
+      "url": "https://www.ncc.gov.ng/media-center/public-notices/national-digital-economy-policy-and-strategy",
+      "found": "2026-11-05"
+    },
+    {
+      "title": "INEC AI safeguards / Digital Strategy / proposed Ethical AI Code of Conduct for parties (2026)",
+      "english_title": "INEC AI safeguards / Digital Strategy / proposed Ethical AI Code of Conduct for parties (2026)",
+      "issuing_authority": "Independent National Electoral Commission",
+      "note": "INEC Chairman's keynote at the AI and Democracy Forum 2026 announced an AI Unit in the ICT Directorate, a policy that critical electoral decisions will not be automated, pre-deployment audits of AI tools, a Digital Strategy under development, and a proposed Ethical AI Code of Conduct for parties. No INEC document found. The Electoral Act 2026 (Gazette No. 40, Vol. 113, 2 March 2026; nass.gov.ng/documents/download/11248) was read in full and contains no AI or deepfake provisions.",
+      "url": "https://blueprint.ng/?p=853392",
+      "found": "2026-11-05"
+    },
+    {
+      "title": "ARCON/HASG Digital Marketing and AI Regulatory Model (AI and Digital Advertising Framework)",
+      "english_title": "ARCON/HASG Digital Marketing and AI Regulatory Model (AI and Digital Advertising Framework)",
+      "issuing_authority": "Advertising Regulatory Council of Nigeria",
+      "note": "Advertising Regulatory Council of Nigeria and Heads of Advertising Sectoral Groups committee model, to be unveiled at the National Advertising Conference 11-13 November 2026 in Abuja. Not yet published; check arcon.gov.ng after the conference (drafts or advertising-sector AI rules).",
+      "url": "https://www.brandtimes.com.ng/?p=37932",
+      "found": "2026-11-05"
+    },
+    {
+      "title": "NBC framework on AI use in broadcasting / Nigeria Broadcasting Code revision",
+      "english_title": "NBC framework on AI use in broadcasting / Nigeria Broadcasting Code revision",
+      "issuing_authority": "National Broadcasting Commission",
+      "note": "Press (13 May 2025) reports the National Broadcasting Commission considering AI rules on automated content, deepfakes and manipulated news; no named document, edition or date. Check nbc.gov.ng for a 7th edition Code or AI framework.",
+      "url": "https://platformtimes.com.ng/nbc-considers-strict-ai-regulations-to-safeguard-nigerias-media-industry",
+      "found": "2026-11-05"
+    },
+    {
+      "title": "NAFDAC Guidelines for Registration of Software as a Medical Device (SaMD) in Nigeria (DR&R-GDL-036-00, effective 1 July 2024)",
+      "english_title": "NAFDAC Guidelines for Registration of Software as a Medical Device (SaMD) in Nigeria (DR&R-GDL-036-00, effective 1 July 2024)",
+      "issuing_authority": "National Agency for Food and Drug Administration and Control",
+      "note": "Read in full: mandatory registration and IMDRF-style categorisation (I-IV) and clinical evaluation of SaMD, but no mention of AI, machine learning or algorithms. Fails the scope test as a record; keep as health-sector context lead in case NAFDAC issues AI/ML-specific device guidance.",
+      "url": "https://nafdac.gov.ng/wp-content/uploads/Files/Resources/Guidelines/DR_And_R_Guidelines/Guidelines-for-Registration-of-Software-as-a-Medical-Device-SaMD-in-Nigeria.pdf",
+      "found": "2026-11-05"
+    },
+    {
+      "title": "NITDA National Cloud Computing Guideline 2026 (National Guideline for Cloud Computing in Nigeria 2026)",
+      "english_title": "NITDA National Cloud Computing Guideline 2026 (National Guideline for Cloud Computing in Nigeria 2026)",
+      "issuing_authority": "National Information Technology Development Agency",
+      "note": "Signed 4 August 2026; mandatory for federal public institutions; effective date 1 January 2027 in the document table but s.5 says on a date NITDA determines. Brings 'Artificial Intelligence Infrastructure Providers, Sovereign Compute Providers' into scope (s.6.1(II)) but sets no AI-specific obligations; the radar already holds its companion Cloud Technical Guideline and NDIAF, which carry the AI provisions. Lead only (passing AI scope mention); could be added as context if the reviewer wants the full cloud stack.",
+      "url": "https://nitda.gov.ng/wp-content/uploads/2026/08/NCCG-Final-signed.pdf",
+      "found": "2026-11-05"
+    },
+    {
+      "title": "NITDA National Software Testing Guideline (signed 14 July 2026)",
+      "english_title": "NITDA National Software Testing Guideline (signed 14 July 2026)",
+      "issuing_authority": "National Information Technology Development Agency",
+      "note": "Mandatory testing/certification by licensed software testing organisations before deployment; s.16.0 mentions only 'Testing requirements for emerging technologies, including but not limited to artificial intelligence' with no AI test requirements. Passing mention; lead. Watch for NITDA supplementary AI testing guidance.",
+      "url": "https://nitda.gov.ng/wp-content/uploads/2026/08/National-Software-Testing-Guideline-Signed.pdf",
+      "found": "2026-11-05"
+    },
+    {
+      "title": "NITDA National Cloud Investment Strategy (August 2026) and National Cloud Policy 2025 (V1.0, Oct 2025)",
+      "english_title": "NITDA National Cloud Investment Strategy (August 2026) and National Cloud Policy 2025 (V1.0, Oct 2025)",
+      "issuing_authority": "National Information Technology Development Agency",
+      "note": "Cloud Investment Strategy mentions AI only as market context (no AI targets); National Cloud Policy 2025 (https://nitda.gov.ng/wp-content/uploads/2025/10/National-Cloud-Policy-2025-Oct2-2025.pdf) has no AI mention. Not records.",
+      "url": "https://nitda.gov.ng/wp-content/uploads/2026/08/NITDA26-CLOUD-INV-STRATEGY-2025-FN-1.pdf",
+      "found": "2026-11-05"
+    },
+    {
+      "title": "Kano State: KASITDA / KASRIC digital initiatives",
+      "english_title": "Kano State: KASITDA / KASRIC digital initiatives",
+      "issuing_authority": "Kano State Government",
+      "note": "NITDA news of 1 December 2025 on Kano-NITDA alignment mentions AI only as a proposed collaboration area (agriculture, education, health). No Kano State AI policy, law or guideline found.",
+      "url": "https://nitda.gov.ng/?p=9213",
+      "found": "2026-11-05",
+      "government_level": "subnational",
+      "subnational_unit": "Kano"
     }
   ]
 }
