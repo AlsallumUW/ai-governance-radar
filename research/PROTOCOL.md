@@ -85,6 +85,8 @@ Subnational and local instruments live in the **country's** file. The site lists
 
 **Federal and devolved countries** need a subnational pass in their deep review: USA (50 states plus major cities), Canada (provinces), Australia (states), Germany (Länder), India (states), China (provinces and major cities), UAE (emirates), Brazil, Mexico, Spain (autonomous communities), UK (Scotland, Wales, Northern Ireland), Switzerland (cantons). Search each state legislature and executive portal for AI laws, executive orders and guidance.
 
+China: Hong Kong SAR and Macao SAR are recorded as subnational units (owner's decision, 4 Nov 2026).
+
 ## 2b. Regional and international instruments
 
 Instruments from the EU, GCC, AU, ASEAN, UNESCO and similar bodies are stored **once** in `data/regional/<body>.json`. Each file lists its `members`. Each instrument has an `applies_to` value:
@@ -163,7 +165,7 @@ Every country gets the **same standard** (§1–§5): all 18 categories closed, 
 
 `python3 scripts/next_batch.py` prints the next run's countries; `--plan` prints every remaining run.
 
-**Subnational pass:** full for USA, CAN, AUS, BRA, IND, CHN; top 3–5 regions only for DEU, ESP, CHE, BEL, AUT, MYS, NGA, RUS; none for other countries unless a notable regional or city AI instrument appears in the national search. Such an instrument is recorded as a subnational record (example: PER Arequipa Regional Ordinance 562, kept by Faisal's decision, 21 Oct 2026); it does not start a regular subnational sweep for that country. Cap any subnational part at 30 minutes.
+**Subnational pass:** full for USA, CAN, AUS, BRA, IND, CHN (including Hong Kong SAR and Macao SAR); top 3–5 regions only for DEU, ESP, CHE, BEL, AUT, MYS, NGA, RUS; none for other countries unless a notable regional or city AI instrument appears in the national search. Such an instrument is recorded as a subnational record (example: PER Arequipa Regional Ordinance 562, kept by Faisal's decision, 21 Oct 2026); it does not start a regular subnational sweep for that country. Cap any subnational part at 30 minutes.
 
 **Changing tiers.** If a tier C country turns out to have 6 or more national instruments, finish it, then move it to B in `queue.json` and say so in the PR. If a tier B country needs a subnational pass or clearly exceeds a run, stop after it, move it to A and list the rest of the batch as not started.
 
