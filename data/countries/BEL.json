@@ -1081,6 +1081,265 @@
       "document_access_type": "original_government_document",
       "source_id": "s-172d170d083b",
       "evidence_reference": "browser-check-2026-10-22: vlaanderen.be AI literacy page opened in a desktop browser; competence dictionary PDF (43 pages) read: cover, version date and contents."
+    },
+    {
+      "id": "i-5c842d304261",
+      "jurisdiction_id": "BEL",
+      "official_title": "Décision quant au fond 29/2025 du 18 février 2025 (DOS-2022-02106)",
+      "english_title": "Litigation Chamber Decision on the merits 29/2025 of 18 February 2025: City of Antwerp noise-sensor pilot using audio data and voiceprints to train an AI noise-classification model",
+      "issuing_authority": "Data Protection Authority, Litigation Chamber",
+      "publisher_name": "Data Protection Authority",
+      "authority_type": "data_protection_authority",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "data-privacy",
+        "public-sector",
+        "binding-law"
+      ],
+      "category": "data-privacy",
+      "subcategory": null,
+      "legal_status": "binding_regulation",
+      "lifecycle": "published",
+      "publication_date": "2025-02-18",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Decision on the merits of the Litigation Chamber dated 18 February 2025 (case DOS-2022-02106), published in French. The Chamber found infringements of GDPR Articles 9(1), 5(1)(a) with 12-13, 35(7), 25, 28(1) and 44, ordered the City of Antwerp to delete raw audio files containing voices and all voiceprints and inform recipients within 30 days, and issued a reprimand; no fine was imposed. Appealable to the Market Court.",
+      "scope": "Belgium (federal)",
+      "sectors": [
+        "public administration"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Decision of the Litigation Chamber of the Belgian Data Protection Authority on a City of Antwerp innovation pilot in which sound sensors in the student district collected raw audio and Mel spectrograms to further train an existing AI model that classifies ambient noise and could trigger real-time 'nudges'. The Chamber holds that voiceprints derived from Mel spectrograms are biometric personal data.",
+      "ai_governance_relevance": "Belgian DPA enforcement on biometric voice data used to train an AI noise-classification model.",
+      "source_url": "https://www.autoriteprotectiondonnees.be/publications/decision-quant-au-fond-n0-29-2025.pdf",
+      "official_pdf_url": "https://www.autoriteprotectiondonnees.be/publications/decision-quant-au-fond-n0-29-2025.pdf",
+      "official_webpage_url": null,
+      "language": "fr",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-c977143ad4b0"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-11-05",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-sweep-2026-11-05: WebFetch of the decision PDF (found by WebSearch): header 'Chambre Contentieuse Décision quant au fond 29/2025 du 18 février 2025', DOS-2022-02106, respondent City of Antwerp; point 25 'entraînera davantage un modèle d'IA existant afin de classer les bruits ambiants'; point 32 'activer en temps réel un nudge'; point 74 'les empreintes vocales sont des données à caractère personnel biométriques'. The excerpt read ended around point 109, so the dispositif was taken from the DPA press release page (https://www.autoriteprotectiondonnees.be/citoyen/l-apd-ordonne-a-anvers-de-supprimer-des-donnees-audio-de-son-projet-bruit-dans-le-quartier-etudiant, dated 18 Feb 2025): reprimand and order to delete raw audio and voiceprints; the DPA's 2025 annual report page also cites it under 'intelligence artificielle'. Comparable to existing record i-c977143ad4b0 (decision 168/2023). Operative part (paras 183-184): infringements of GDPR Art. 9(1), 5(1)(a) with 12-13, 35(7), 25, 28(1), 44; order to delete raw audio files with voice sounds and all voiceprints and inform recipients within 30 days; reprimand; no fine.",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-cc7b73cf9c26",
+      "organization_id": "o-2d29fc5a6872",
+      "first_recorded": "2026-11-05",
+      "last_changed": null
+    },
+    {
+      "id": "i-b818d237a84f",
+      "jurisdiction_id": "BEL",
+      "official_title": "Avis n° 73/2025 du 29 août 2025 – Demande d'avis concernant un avant-projet de loi exécutant une politique renforcée de retour au travail en cas d'incapacité de travail",
+      "english_title": "Opinion No. 73/2025 of 29 August 2025 on the preliminary draft law implementing a strengthened return-to-work policy (article 13: GAOCIT database and AI-based data mining)",
+      "issuing_authority": "Data Protection Authority, Authorisation and Opinion Service",
+      "publisher_name": "Data Protection Authority",
+      "authority_type": "data_protection_authority",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "data-privacy",
+        "public-sector",
+        "risk-assurance"
+      ],
+      "category": "data-privacy",
+      "subcategory": null,
+      "legal_status": "regulatory_opinion",
+      "lifecycle": "published",
+      "publication_date": "2025-08-29",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Opinion of the Data Protection Authority dated 29 August 2025 (reference CO-A-2025-068) on a government preliminary draft law; the opinion ends with 16 numbered conclusions.",
+      "scope": "Belgium (federal)",
+      "sectors": [
+        "public administration"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Opinion, requested by the Minister of Social Affairs and Public Health, on article 13 of a preliminary draft law. Article 13 creates the GAOCIT database of incapacity-for-work certificates at the INAMI and a datamining procedure to flag inappropriate prescribing behaviour by doctors and inappropriate use of the therapeutic relationship. The DPA finds that this algorithmic datamining is an AI system and, under Annex III point 5(a) of Regulation (EU) 2024/1689, a high-risk one. It says a data protection impact assessment must be carried out. It asks for the purposes in the new article 13/3 §3 to be exhaustive and explicit, for the draft itself to define when alerts are triggered (only for a manifest or repeated deviation from the norm), for quality criteria, risk indicators and explanations of how the algorithms work to be made public, and for a mechanism to evaluate effectiveness, and it warns against a slide towards a surveillance society for people in precarious situations.",
+      "ai_governance_relevance": "Belgian DPA opinion classing a planned social-security data-mining system as high-risk AI under the EU AI Act.",
+      "source_url": "https://www.autoriteprotectiondonnees.be/publications/avis-n0-73-2025-du-29-aout-2025.pdf",
+      "official_pdf_url": "https://www.autoriteprotectiondonnees.be/publications/avis-n0-73-2025-du-29-aout-2025.pdf",
+      "official_webpage_url": null,
+      "language": "fr",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-11-05",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-sweep-2026-11-05: WebFetch of the opinion PDF (found by WebSearch): 'Avis n° 73/2025 du 29 août 2025' (CO-A-2025-068); requested by Frank Vandenbroucke, received 3 June 2025; point 7 'un système algorithmique et impliquera donc l'utilisation d'un système d'intelligence artificielle'; note 34 'le système algorithmique envisagé est un système d'intelligence artificielle à haut risque' (Annex III 5(a) AI Act); point 38 AIPD 'devra impérativement être réalisée'. Text read up to point 61 (final conclusions not in the extract). Scope note for integrator: an opinion on one draft law, but with substantial AI Act qualification and safeguards; if the convention treats such opinions as leads, move it.",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-f36acc179197",
+      "organization_id": "o-2d29fc5a6872",
+      "first_recorded": "2026-11-05",
+      "last_changed": null
+    },
+    {
+      "id": "i-19a3aa1f7eed",
+      "jurisdiction_id": "BEL",
+      "official_title": "Quickscan AI in de Vlaamse overheid – Editie 2025",
+      "english_title": "Quickscan AI in the Flemish Government – 2025 edition",
+      "issuing_authority": "Agentschap Digitaal Vlaanderen (AI Expertisecentrum)",
+      "publisher_name": "Digitaal Vlaanderen (AI Expertisecentrum)",
+      "authority_type": "subnational_government",
+      "government_level": "subnational",
+      "subnational_unit": "Flanders",
+      "categories": [
+        "index-readiness",
+        "public-sector"
+      ],
+      "category": "index-readiness",
+      "subcategory": null,
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2025-06-27",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Published 27 June 2025 as the 2025 edition, on the AI Expertise Centre's official page carrying the report PDF.",
+      "scope": "Flanders",
+      "sectors": [
+        "public administration"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Survey-based overview of how often, for what and by whom AI is used in the Flemish Government, drawing on a voluntary survey of the AI strategy working group (October 2024 to March 2025), a Digitaal Vlaanderen partner survey (autumn 2024) and an inventory of 240 completed, ongoing or planned AI projects compiled for a parliamentary question. It finds AI in every policy domain, mostly for internal efficiency (notably M365 Copilot) and often still experimental, and recommends a shared AI vision per domain based on the AI Playbook, targeted AI-literacy training and checking applications against the EU AI Act.",
+      "ai_governance_relevance": "Flemish Government survey of AI use across its administration.",
+      "source_url": "https://www.vlaanderen.be/digitaal-vlaanderen/onze-diensten-en-platformen/ai-expertisecentrum/quickscan-ai-biedt-overzicht-van-inzet-ai-binnen-de-vlaamse-overheid",
+      "official_pdf_url": "https://assets.vlaanderen.be/image/upload/v1751015528/repositories-prd/Quickscan_AI_in_de_Vlaamse_overheid_-_Editie_2025_s6maqs.pdf",
+      "official_webpage_url": "https://www.vlaanderen.be/digitaal-vlaanderen/onze-diensten-en-platformen/ai-expertisecentrum/quickscan-ai-biedt-overzicht-van-inzet-ai-binnen-de-vlaamse-overheid",
+      "language": "nl",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-11-05",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_publication",
+      "evidence_reference": "deep-sweep-2026-11-05: WebFetch of the vlaanderen.be page 'Quickscan AI biedt overzicht van inzet AI binnen de Vlaamse overheid', dated 27 June 2025, issuer Digitaal Vlaanderen AI Expertisecentrum, with the PDF link 'Quickscan AI in de Vlaamse overheid - Editie 2025'. PDF not opened (fetch allowlist); title taken from the PDF link name on the official page.",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-58d4b597e230",
+      "organization_id": "o-ab7f3dd6c33e",
+      "first_recorded": "2026-11-05",
+      "last_changed": null
+    },
+    {
+      "id": "i-ea230dd0ca4f",
+      "jurisdiction_id": "BEL",
+      "official_title": "Thema-audit artificiële intelligentie (AI). Globaal rapport",
+      "english_title": "Thematic audit on artificial intelligence (AI): overall report",
+      "issuing_authority": "Audit Vlaanderen",
+      "publisher_name": "Audit Vlaanderen",
+      "authority_type": "subnational_government",
+      "government_level": "subnational",
+      "subnational_unit": "Flanders",
+      "categories": [
+        "risk-assurance",
+        "public-sector"
+      ],
+      "category": "risk-assurance",
+      "subcategory": null,
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2023-06-22",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Report dated 22 June 2023 (cover); listed on the Flemish Government publications page as June 2023. The Stuurorgaan Vlaams Informatie- en ICT-beleid accepted the recommendation and tasked Digitaal Vlaanderen with its follow-up.",
+      "scope": "Flanders",
+      "sectors": [
+        "public administration"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Overall report of Audit Vlaanderen's thematic audit of the management of and internal controls over AI at three Flemish administration entities (Flanders Investment and Trade, ILVO and VDAB), at organisation and application level. It identifies five critical success factors for mature AI use (awareness of AI's value, data management and quality, knowledge and expertise, technological infrastructure and ethical considerations) and recommends that the Flemish administration develop a cross-entity AI vision and strategy setting basic principles, preconditions and a global mandate.",
+      "ai_governance_relevance": "Audit of AI governance and internal controls in the Flemish administration.",
+      "source_url": "https://www.vlaanderen.be/publicaties/thema-audit-artificiele-intelligentie-ai-globaal-rapport",
+      "official_pdf_url": "https://publicaties.vlaanderen.be/view-file/58055",
+      "official_webpage_url": "https://www.vlaanderen.be/publicaties/thema-audit-artificiele-intelligentie-ai-globaal-rapport",
+      "language": "nl",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-11-05",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_publication",
+      "evidence_reference": "deep-sweep-2026-11-05: WebFetch of the vlaanderen.be publications page: title 'Thema-audit artificiële intelligentie (AI). Globaal rapport', publisher 'Audit Vlaanderen', date 'juni 2023', type 'Rapport', description 'Met dit globaal rapport wil Audit Vlaanderen inzicht geven in: ...', download link publicaties.vlaanderen.be/view-file/58055 (PDF not opened: fetch allowlist).",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-5dd37932d9c3",
+      "organization_id": "o-ab7f3dd6c33e",
+      "first_recorded": "2026-11-05",
+      "last_changed": null
+    },
+    {
+      "id": "i-ba297cfd0e9e",
+      "jurisdiction_id": "BEL",
+      "official_title": "Digitale Strategie van Vlaanderen",
+      "english_title": "Digital Strategy of Flanders",
+      "issuing_authority": "Flemish Government",
+      "publisher_name": "Flemish Government",
+      "authority_type": "subnational_government",
+      "government_level": "subnational",
+      "subnational_unit": "Flanders",
+      "categories": [
+        "strategy"
+      ],
+      "category": "strategy",
+      "subcategory": null,
+      "legal_status": "national_strategy",
+      "lifecycle": "adopted",
+      "publication_date": "2025-06-27",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Approved by the Flemish Government on 27 June 2025 on the proposal of Minister-President Matthias Diependaele (decision 'Digitale Strategie voor Vlaanderen', documents VR 2025 2706 DOC.0521-1 and DOC.0521-2 BIS).",
+      "scope": "Flanders",
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Flemish Government digital strategy, introduced by Minister-President Matthias Diependaele, with nine priorities linked to the EU Digital Decade 2030 targets. Priority 4, 'De kracht van AI omarmen op een verantwoorde manier', sets ambitions for responsible AI and lists initiatives such as the AI Playbook and the Vlaamse AI Academie; AI also features in business adoption, data quality for AI, AI-supported proactive services and AI security.",
+      "ai_governance_relevance": "Flemish digital strategy with a responsible-AI priority.",
+      "source_url": "https://www.vlaanderen.be/vlaamse-regering/beslissingen-van-de-vlaamse-regering/digitale-strategie-voor-vlaanderen",
+      "official_pdf_url": "https://themis.vlaanderen.be/files/bc33b4e0-5272-11f0-a71f-c9eca0a02c79/download?name=VR+2025+2706+DOC.0521-2+Digitale+strategie+-+bijlage+BIS.pdf&content-disposition=inline",
+      "official_webpage_url": "https://www.vlaanderen.be/vlaamse-regering/beslissingen-van-de-vlaamse-regering/digitale-strategie-voor-vlaanderen",
+      "language": "nl",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-5f15f6875ea7",
+        "i-0c5f0d8fe973"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-11-05",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "deep-sweep-2026-11-05: WebFetch of the strategy PDF on themis.vlaanderen.be (Flemish Government decisions repository), stamped 'VR 2025 2706 DOC.0521/2BIS': title 'Digitale Strategie van Vlaanderen', section 2.4 'De kracht van AI omarmen op een verantwoorde manier' (2.4.1 Ambities ... 2.4.4 'Verantwoorde AI'). Approval from VR 2026 0805 MED.0165-1 (themis): 'Midden 2025 keurde de Vlaamse regering de Digitale Strategie van Vlaanderen goed'. The meeting date 27 June 2025 is only implied by the VR number, so the date is given as the year.",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-9228c21bc4e8",
+      "organization_id": "o-ab7f3dd6c33e",
+      "first_recorded": "2026-11-05",
+      "last_changed": null
     }
   ],
   "organizations": [
@@ -1715,6 +1974,141 @@
       "document_language": "nl",
       "error": null,
       "content_type": "text/html"
+    },
+    {
+      "id": "s-cc7b73cf9c26",
+      "url": "https://www.autoriteprotectiondonnees.be/publications/decision-quant-au-fond-n0-29-2025.pdf",
+      "jurisdiction_ids": [
+        "BEL"
+      ],
+      "source_institutions": [
+        "Data Protection Authority"
+      ],
+      "instrument_ids": [
+        "i-5c842d304261"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-11-05",
+      "checked_date": "2026-11-05",
+      "check_method": "WebFetch of the decision PDF (found by WebSearch): header 'Chambre Contentieuse Décision quant au fond 29/2025 du 18 février 2025', DOS-2022-02106, respondent City of Antwerp; point 25 'entraînera davantage un modèle d'IA existant afin de classer les bruits ambiants'; point 32 'activer en temps réel un nudge'; point 74 'les empreintes vocales sont des données à caractère personnel biométriques'. The excerpt read ended around point 109, so the dispositif was taken from the DPA press release page (https://www.autoriteprotectiondonnees.be/citoyen/l-apd-ordonne-a-anvers-de-supprimer-des-donnees-audio-de-son-projet-bruit-dans-le-quartier-etudiant, dated 18 Feb 2025): reprimand and order to delete raw audio and voiceprints; the DPA's 2025 annual report page also cites it under 'intelligence artificielle'. Comparable to existing record i-c977143ad4b0 (decision 168/2023).",
+      "http_status": 200,
+      "final_url": "https://www.autoriteprotectiondonnees.be/publications/decision-quant-au-fond-n0-29-2025.pdf",
+      "link_status": "reachable",
+      "page_title": "Décision quant au fond 29/2025 du 18 février 2025 (DOS-2022-02106)",
+      "document_language": "fr",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-f36acc179197",
+      "url": "https://www.autoriteprotectiondonnees.be/publications/avis-n0-73-2025-du-29-aout-2025.pdf",
+      "jurisdiction_ids": [
+        "BEL"
+      ],
+      "source_institutions": [
+        "Data Protection Authority"
+      ],
+      "instrument_ids": [
+        "i-b818d237a84f"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "public-sector",
+        "risk-assurance"
+      ],
+      "date_reviewed": "2026-11-05",
+      "checked_date": "2026-11-05",
+      "check_method": "WebFetch of the opinion PDF (found by WebSearch): 'Avis n° 73/2025 du 29 août 2025' (CO-A-2025-068); requested by Frank Vandenbroucke, received 3 June 2025; point 7 'un système algorithmique et impliquera donc l'utilisation d'un système d'intelligence artificielle'; note 34 'le système algorithmique envisagé est un système d'intelligence artificielle à haut risque' (Annex III 5(a) AI Act); point 38 AIPD 'devra impérativement être réalisée'. Text read up to point 61 (final conclusions not in the extract). Scope note for integrator: an opinion on one draft law, but with substantial AI Act qualification and safeguards; if the convention treats such opinions as leads, move it.",
+      "http_status": 200,
+      "final_url": "https://www.autoriteprotectiondonnees.be/publications/avis-n0-73-2025-du-29-aout-2025.pdf",
+      "link_status": "reachable",
+      "page_title": "Avis n° 73/2025 du 29 août 2025 – Demande d'avis concernant un avant-projet de loi exécutant une politique renforcée de retour au travail en cas d'incapacité de travail",
+      "document_language": "fr",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-58d4b597e230",
+      "url": "https://www.vlaanderen.be/digitaal-vlaanderen/onze-diensten-en-platformen/ai-expertisecentrum/quickscan-ai-biedt-overzicht-van-inzet-ai-binnen-de-vlaamse-overheid",
+      "jurisdiction_ids": [
+        "BEL"
+      ],
+      "source_institutions": [
+        "Flemish Government"
+      ],
+      "instrument_ids": [
+        "i-19a3aa1f7eed"
+      ],
+      "categories_reviewed": [
+        "index-readiness",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-11-05",
+      "checked_date": "2026-11-05",
+      "check_method": "WebFetch of the vlaanderen.be page 'Quickscan AI biedt overzicht van inzet AI binnen de Vlaamse overheid', dated 27 June 2025, issuer Digitaal Vlaanderen AI Expertisecentrum, with the PDF link 'Quickscan AI in de Vlaamse overheid - Editie 2025'. PDF not opened (fetch allowlist); title taken from the PDF link name on the official page.",
+      "http_status": 200,
+      "final_url": "https://www.vlaanderen.be/digitaal-vlaanderen/onze-diensten-en-platformen/ai-expertisecentrum/quickscan-ai-biedt-overzicht-van-inzet-ai-binnen-de-vlaamse-overheid",
+      "link_status": "reachable",
+      "page_title": "Quickscan AI in de Vlaamse overheid – Editie 2025",
+      "document_language": "nl",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-5dd37932d9c3",
+      "url": "https://www.vlaanderen.be/publicaties/thema-audit-artificiele-intelligentie-ai-globaal-rapport",
+      "jurisdiction_ids": [
+        "BEL"
+      ],
+      "source_institutions": [
+        "Flemish Government"
+      ],
+      "instrument_ids": [
+        "i-ea230dd0ca4f"
+      ],
+      "categories_reviewed": [
+        "risk-assurance",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-11-05",
+      "checked_date": "2026-11-05",
+      "check_method": "WebFetch of the vlaanderen.be publications page: title 'Thema-audit artificiële intelligentie (AI). Globaal rapport', publisher 'Audit Vlaanderen', date 'juni 2023', type 'Rapport', description 'Met dit globaal rapport wil Audit Vlaanderen inzicht geven in: ...', download link publicaties.vlaanderen.be/view-file/58055 (PDF not opened: fetch allowlist).",
+      "http_status": 200,
+      "final_url": "https://www.vlaanderen.be/publicaties/thema-audit-artificiele-intelligentie-ai-globaal-rapport",
+      "link_status": "reachable",
+      "page_title": "Thema-audit artificiële intelligentie (AI). Globaal rapport",
+      "document_language": "nl",
+      "error": null,
+      "content_type": "text/html"
+    },
+    {
+      "id": "s-9228c21bc4e8",
+      "url": "https://www.vlaanderen.be/vlaamse-regering/beslissingen-van-de-vlaamse-regering/digitale-strategie-voor-vlaanderen",
+      "jurisdiction_ids": [
+        "BEL"
+      ],
+      "source_institutions": [
+        "Flemish Government"
+      ],
+      "instrument_ids": [
+        "i-ba297cfd0e9e"
+      ],
+      "categories_reviewed": [
+        "strategy"
+      ],
+      "date_reviewed": "2026-11-05",
+      "checked_date": "2026-11-05",
+      "check_method": "WebFetch of the strategy PDF on themis.vlaanderen.be (Flemish Government decisions repository), stamped 'VR 2025 2706 DOC.0521/2BIS': title 'Digitale Strategie van Vlaanderen', section 2.4 'De kracht van AI omarmen op een verantwoorde manier' (2.4.1 Ambities ... 2.4.4 'Verantwoorde AI'). Approval from VR 2026 0805 MED.0165-1 (themis): 'Midden 2025 keurde de Vlaamse regering de Digitale Strategie van Vlaanderen goed'. The meeting date 27 June 2025 is only implied by the VR number, so the date is given as the year.",
+      "http_status": 200,
+      "final_url": "https://www.vlaanderen.be/vlaamse-regering/beslissingen-van-de-vlaamse-regering/digitale-strategie-voor-vlaanderen",
+      "link_status": "reachable",
+      "page_title": "Digitale Strategie van Vlaanderen",
+      "document_language": "nl",
+      "error": null,
+      "content_type": "text/html"
     }
   ],
   "regional_applicability": [],
@@ -1905,18 +2299,78 @@
   },
   "changes": [
     {
-      "id": "c-54f3af16499f",
-      "date": "2026-11-08",
-      "recorded": "2026-11-08",
+      "id": "c-5a81b4c81f7d",
+      "date": "2026-11-05",
+      "recorded": "2026-11-05",
       "kind": "radar",
-      "type": "corrected",
+      "type": "added",
       "jurisdiction_id": "BEL",
-      "instrument_id": "i-c977143ad4b0",
-      "title": "Litigation Chamber Decision 168/2023 of 19 December 2023: automated suspension of a customer account based on a credit-agency payment profile",
-      "detail": "Record updated: legal status.",
+      "instrument_id": "i-5c842d304261",
+      "title": "Litigation Chamber Decision on the merits 29/2025 of 18 February 2025: City of Antwerp noise-sensor pilot using audio data and voiceprints to train an AI noise-classification model",
+      "detail": "Added to the radar (published 2025-02-18).",
       "from": null,
       "to": null,
-      "source_url": null,
+      "source_url": "https://www.autoriteprotectiondonnees.be/publications/decision-quant-au-fond-n0-29-2025.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-39d40828697d",
+      "date": "2026-11-05",
+      "recorded": "2026-11-05",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "BEL",
+      "instrument_id": "i-b818d237a84f",
+      "title": "Opinion No. 73/2025 of 29 August 2025 on the preliminary draft law implementing a strengthened return-to-work policy (article 13: GAOCIT database and AI-based data mining)",
+      "detail": "Added to the radar (published 2025-08-29).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.autoriteprotectiondonnees.be/publications/avis-n0-73-2025-du-29-aout-2025.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-11641ea02f7c",
+      "date": "2026-11-05",
+      "recorded": "2026-11-05",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "BEL",
+      "instrument_id": "i-19a3aa1f7eed",
+      "title": "Quickscan AI in the Flemish Government – 2025 edition",
+      "detail": "Added to the radar (published 2025-06-27).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.vlaanderen.be/digitaal-vlaanderen/onze-diensten-en-platformen/ai-expertisecentrum/quickscan-ai-biedt-overzicht-van-inzet-ai-binnen-de-vlaamse-overheid",
+      "needs_review": false
+    },
+    {
+      "id": "c-cba4ece49383",
+      "date": "2026-11-05",
+      "recorded": "2026-11-05",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "BEL",
+      "instrument_id": "i-ea230dd0ca4f",
+      "title": "Thematic audit on artificial intelligence (AI): overall report",
+      "detail": "Added to the radar (published 2023-06-22).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.vlaanderen.be/publicaties/thema-audit-artificiele-intelligentie-ai-globaal-rapport",
+      "needs_review": false
+    },
+    {
+      "id": "c-c82172f3976c",
+      "date": "2026-11-05",
+      "recorded": "2026-11-05",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "BEL",
+      "instrument_id": "i-ba297cfd0e9e",
+      "title": "Digital Strategy of Flanders",
+      "detail": "Added to the radar (published 2025-06-27).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.vlaanderen.be/vlaamse-regering/beslissingen-van-de-vlaamse-regering/digitale-strategie-voor-vlaanderen",
       "needs_review": false
     },
     {
@@ -2355,6 +2809,21 @@
       "needs_review": false
     },
     {
+      "id": "c-72a044ee0af7",
+      "date": "2025-08-29",
+      "recorded": "2026-11-05",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "BEL",
+      "instrument_id": "i-b818d237a84f",
+      "title": "Opinion No. 73/2025 of 29 August 2025 on the preliminary draft law implementing a strengthened return-to-work policy (article 13: GAOCIT database and AI-based data mining)",
+      "detail": "Published by Data Protection Authority, Authorisation and Opinion Service.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.autoriteprotectiondonnees.be/publications/avis-n0-73-2025-du-29-aout-2025.pdf",
+      "needs_review": false
+    },
+    {
       "id": "c-4ee0f2861117",
       "date": "2025-07-11",
       "recorded": "2026-10-11",
@@ -2367,6 +2836,51 @@
       "from": null,
       "to": null,
       "source_url": "https://socialsecurity.belgium.be/sites/default/files/content/docs/fr/publications/charte-ia-fr.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-6aca50402bfd",
+      "date": "2025-06-27",
+      "recorded": "2026-11-05",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "BEL",
+      "instrument_id": "i-19a3aa1f7eed",
+      "title": "Quickscan AI in the Flemish Government – 2025 edition",
+      "detail": "Published by Agentschap Digitaal Vlaanderen (AI Expertisecentrum).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.vlaanderen.be/digitaal-vlaanderen/onze-diensten-en-platformen/ai-expertisecentrum/quickscan-ai-biedt-overzicht-van-inzet-ai-binnen-de-vlaamse-overheid",
+      "needs_review": false
+    },
+    {
+      "id": "c-d3fdf6d46ecf",
+      "date": "2025-06-27",
+      "recorded": "2026-11-05",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "BEL",
+      "instrument_id": "i-ba297cfd0e9e",
+      "title": "Digital Strategy of Flanders",
+      "detail": "Published by Flemish Government.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.vlaanderen.be/vlaamse-regering/beslissingen-van-de-vlaamse-regering/digitale-strategie-voor-vlaanderen",
+      "needs_review": false
+    },
+    {
+      "id": "c-24481556871b",
+      "date": "2025-02-18",
+      "recorded": "2026-11-05",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "BEL",
+      "instrument_id": "i-5c842d304261",
+      "title": "Litigation Chamber Decision on the merits 29/2025 of 18 February 2025: City of Antwerp noise-sensor pilot using audio data and voiceprints to train an AI noise-classification model",
+      "detail": "Published by Data Protection Authority, Litigation Chamber.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.autoriteprotectiondonnees.be/publications/decision-quant-au-fond-n0-29-2025.pdf",
       "needs_review": false
     },
     {
@@ -2475,6 +2989,21 @@
       "needs_review": false
     },
     {
+      "id": "c-c5fe8d5f7b85",
+      "date": "2023-06-22",
+      "recorded": "2026-11-05",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "BEL",
+      "instrument_id": "i-ea230dd0ca4f",
+      "title": "Thematic audit on artificial intelligence (AI): overall report",
+      "detail": "Published by Audit Vlaanderen.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.vlaanderen.be/publicaties/thema-audit-artificiele-intelligentie-ai-globaal-rapport",
+      "needs_review": false
+    },
+    {
       "id": "c-5a560f9c845f",
       "date": "2023-01-01",
       "recorded": "2026-10-11",
@@ -2547,6 +3076,21 @@
       "from": null,
       "to": null,
       "source_url": "https://www.ejustice.just.fgov.be/eli/loi/2018/07/30/2018040581/justel",
+      "needs_review": false
+    },
+    {
+      "id": "c-54f3af16499f",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "BEL",
+      "instrument_id": "i-c977143ad4b0",
+      "title": "Litigation Chamber Decision 168/2023 of 19 December 2023: automated suspension of a customer account based on a credit-agency payment profile",
+      "detail": "Record updated: legal status.",
+      "from": null,
+      "to": null,
+      "source_url": null,
       "needs_review": false
     }
   ],
@@ -2729,7 +3273,8 @@
       "url": "https://www.vlaanderen.be/digitaal-vlaanderen/vlaamse-digitale-strategie/vlaamse-ai-strategie",
       "status": "Announced as in preparation; only the principles document and genAI guidelines published as of Oct 2026.",
       "government_level": "subnational",
-      "subnational_unit": "Flanders"
+      "subnational_unit": "Flanders",
+      "note": "2026-11-05: Re-read 5 November 2026: still described as being developed ('uitwerkt') by the AI Expertise Centre within the Stuurorgaan; only the 2024 principles document and the generative-AI guidelines are linked. Existing lead stays."
     },
     {
       "title": "Paradigm 'Carnet' on chatbots in the public sector (2025)",
@@ -2751,7 +3296,8 @@
       "url": null,
       "status": "No FWB circular or official guidance specific to AI in schools found (Gallilex circulars search via web; 2026-2027 back-to-school circulars reportedly do not mention AI).",
       "government_level": "subnational",
-      "subnational_unit": "Wallonia"
+      "subnational_unit": "Wallonia",
+      "note": "2026-11-05: Parliamentary question 469 (Éliane Tillieux, 23 Oct 2025) in the PFWB Bulletin des questions et réponses n° 2 (2025-2026, 31 Oct 2025) refers to the FWB's 2025 'Principes d'application de l'IA en éducation', describing it as mostly a list of prohibitions. Official text not found (enseignement.be returns client errors). Strong candidate for the existing FWB education-AI lead; also an SGNE guide on AI for language-learning content is announced for school year 2026-2027 (Minister Glatigny, CRIc No86-Educ.16, 8 June 2026, https://archive.pfwb.be/1000000020e0019). Related: Parlement de la FWB, question écrite n°293 (16 October 2025): Charte relative à l'usage de l'IA dans les établissements scolaires (https://www.pfwb.be/documents-parlementaires/document-qe-001832006): Question by Loïc Jacob; answer not shown. Indicates a possible FWB school AI charter; also an enseignement.be 'Focus' on AI by the Service général du Numérique éducatif (http://enseignement.be/index.php?page=25703&ne_id=7557, failed to load). Supports the held lead 'FWB guidance on AI in education'."
     },
     {
       "title": "Walloon Government agenda 16 April 2026: 'Digital Wallonia. Mesure d'accompagnement des entreprises wallonnes en intelligence artificielle'",
@@ -2759,6 +3305,202 @@
       "status": "Agenda item only (found via search, not opened); outcome/adopted text not verified.",
       "government_level": "subnational",
       "subnational_unit": "Wallonia"
+    },
+    {
+      "title": "APD Avis n° 53/2025 du 8 juillet 2025 (AI tools of FOREm / high-risk AI in employment services)",
+      "url": "https://www.autoriteprotectiondonnees.be/publications/avis-n0-53-2025.pdf",
+      "status": "lead",
+      "note": "APD opinion 88/2025 (24 Sept 2025, Walloon decree-programme, requested by Minister Jeholet) refers to 53/2025 for detailed developments on FOREm's AI decision-support tools, which it classes as high-risk under AI Act Art. 6(2) and says need a precise normative framework. The 53/2025 PDF returned a maintenance page twice; read it and consider as a regulatory_opinion candidate (data-privacy, public-sector, Wallonia-related).",
+      "found": "2026-11-05",
+      "government_level": "subnational",
+      "subnational_unit": "Wallonia"
+    },
+    {
+      "title": "APD Avis n° 88/2025 du 24 septembre 2025 (avant-projet de décret-programme wallon, art. 138 Constitution)",
+      "url": "https://gegevensbeschermingsautoriteit.be/publications/avis-n0-88-2025.pdf",
+      "status": "lead",
+      "note": "Read: points 77-79 and recommendation 18 say FOREm AI tools that assess employability or filter job-seeker profiles are high-risk AI under Regulation 2024/1689 and require a precise normative framework and a delegation to the Walloon Government. AI is one part of a broader opinion; lead (or a joint record with 53/2025).",
+      "found": "2026-11-05",
+      "government_level": "subnational",
+      "subnational_unit": "Wallonia"
+    },
+    {
+      "title": "APD Avis n° 69/2025 du 26 août 2025 on the National Cybersecurity Strategy 3.0 (2026-2030)",
+      "url": "https://www.autoriteprotectiondonnees.be/publications/avis-n0-69-2025.pdf",
+      "status": "lead",
+      "note": "Read: comments on CCB's planned AI-driven threat detection with automated responses; reminds Art. 22 GDPR limits and that specific normative framing may be needed. AI is a secondary point; lead. Also signals a National Cybersecurity Strategy 3.0 (2026-2030) with AI objectives (operational objective 18) - check whether CCB published it.",
+      "found": "2026-11-05"
+    },
+    {
+      "title": "CSA (FWB) designated as an AI Act Article 77 fundamental-rights authority (27 March 2025)",
+      "url": "https://www.csa.be/wp-content/uploads/2026/04/RA_CSA_2025_FINAL.pdf",
+      "status": "lead",
+      "note": "CSA activity report 2025 timeline (27 March 2025): 'AI Act : le CSA désigné autorité compétente' for fundamental-rights protection concerning high-risk AI; p. 14 says no FWB draft decree implementing the AI Act has been filed and the CSA considers its designation for Art. 50 transparency oversight legally founded. Belgium's official Art. 77 list (likely on FPS Economy/BOSA, bot-blocked) not found; record the national list once an official page is readable.",
+      "found": "2026-11-05"
+    },
+    {
+      "title": "Belgian Competition Authority: Priorities Paper 2026 (algorithms and AI priority)",
+      "url": "https://www.belgiancompetition.be/sites/default/files/content/download/files/Priorities%20paper2026.pdf",
+      "status": "lead",
+      "note": "Read: undated priorities paper; states the BCA 'will pay particular attention to the growing use of advanced algorithms by companies' (algorithmic/dynamic pricing, tacit coordination). No AI guidance or study; passing priority, lead.",
+      "found": "2026-11-05"
+    },
+    {
+      "title": "Conseil national du Travail: Rapport n° 134 (28 May 2024) - final report on implementation of the European framework agreement on digitalisation",
+      "url": "https://cnt-nar.be/sites/default/files/documents/fr/Rapport%20n%C2%B0%20134-F.pdf",
+      "status": "lead",
+      "note": "Read: reports the CNT has begun expert hearings on the impact of AI and algorithms on work, three sectors examining AI, one (PC 337) drafting a framework text; no CCT on AI (CCT 39 of 1983 on new technologies remains the framework). Earlier reports 122 (2021), 125 (2022), 131 (2023) at https://cnt-nar.be/fr/dossiers-thematiques/nouvelles-technologies. Watch for a CNT opinion or CCT on AI/algorithmic management.",
+      "found": "2026-11-05"
+    },
+    {
+      "title": "Walloon Parliament written question 28/02/2025 (Roberty to Minister Galant): AI in the Walloon civil service and the AI Act",
+      "url": "https://www.parlement-wallonie.be/pwpages?p=interp-questions-voir&type=28&iddoc=132626",
+      "status": "lead",
+      "note": "Answer of 8 April 2025 announces for 2025 an SPW AI good-practice guide (with Paradigm), an ethical charter for staff AI use (based on BOSA and FOREm documents), a guide on generative AI for citizen communication, and an SPW Digital cross-departmental AI working group. No published text found; look for these SPW documents.",
+      "found": "2026-11-05",
+      "government_level": "subnational",
+      "subnational_unit": "Wallonia"
+    },
+    {
+      "title": "KCE Report 362 (2023): How to evaluate digital medical technologies for reimbursement",
+      "url": "https://kce.fgov.be/sites/default/files/2023-01/KCE_362_Evaluation_Digital_Medical_Technologies_Report.pdf",
+      "status": "lead",
+      "note": "Read the French synthesis (362Bs): HTA/reimbursement framework for digital medical technologies (mHealthBelgium pyramid) requested by INAMI; AI only mentioned in passing (foreign frameworks). Not AI-specific; lead only. KCE 423 (breast screening, 9 July 2026) explicitly excludes AI from scope.",
+      "found": "2026-11-05"
+    },
+    {
+      "title": "Ontwerp van decreet tot wijziging van het decreet van 27 maart 2009 betreffende radio-omroep en televisie, wat betreft de gedeeltelijke uitvoering van verordening (EU) 2024/900 van het Europees Parlement en de Raad van 13 maart 2024 betreffende transparantie en gerichte politieke reclame, van de Europese verordening mediavrijheid, en van de verordening artificiële intelligentie",
+      "url": "https://docs.vlaamsparlement.be/files/pfile?id=2342895",
+      "status": "pending bill; adoption not confirmed",
+      "note": "Real, official government bill implementing the AI Act in the Flemish Media Decree, but adoption is not confirmed on any official source; it is a pending bill. The BEL file holds all pending bills as leads ('Bills are listed as pending rather than as instruments') and records no pending Flemish bill as a record. Hold as lead with the pfile URL; promote to binding_law once the adopted decree appears in the Belgisch Staatsblad / Codex. Status check (decree 910 (2025-2026), https://docs.vlaamsparlement.be/files/pfile?id=2199939): Status still unconfirmed on 5 Nov 2026. Other channels tried: codex.vlaanderen.be consolidated Media Decree (versions valid from 30/07/2026) contains no reference to the AI Act, AI systems or deepfakes, so the AI provisions were not in force/consolidated as of that version; themis VR 2025 1407 DOC.0668/2 and DOC.0668/3 are the government draft and MvT (Art. 9 VRM market-surveillance authority for Art. 50(4) for broadcasting; Art. 11 VRM Art. 77 authority; Art. 17 fines up to EUR 35m/7%). Flemish Parliament plenary of 7 Oct 2026 and news pages return client errors. Keep the first-pass candidate as a draft.",
+      "found": "2026-11-05",
+      "government_level": "subnational",
+      "subnational_unit": "Flanders"
+    },
+    {
+      "title": "Het AI Playbook",
+      "url": "https://www.vlaanderen.be/digitaal-vlaanderen/onze-diensten-en-platformen/ai-expertisecentrum/het-ai-playbook",
+      "status": "lead",
+      "note": "Per the task rule, a record needs a publication date printed on the official page or document; neither the page nor (readable) document gives one. The year 2025 comes only from a later Flemish Government budget document, and the 'v1777973884' asset stamp is file metadata (2026), not a date. Hold as lead until a PDF with a printed date can be read. Otherwise in scope (government-governance/public-sector guidance), not a duplicate.",
+      "found": "2026-11-05",
+      "government_level": "subnational",
+      "subnational_unit": "Flanders"
+    },
+    {
+      "title": "Proposition de stratégie IA 2.0 (Vanessa Matz, September 2026)",
+      "url": "https://matz.belgium.be/fr/actualites/agir-sur-lia-plutot-que-la-subir-la-belgique-se-dote-dune-strategie-20",
+      "status": "lead",
+      "note": "Minister's page dated 16 September 2026 (updated 2 October 2026): an AI strategy proposal with five ambitions (reformed AI steering committee including federated entities, sandboxes, sovereignty framework for cloud/AI purchases, operationalising the AI charter, protection against non-consensual digital imitations), a basis for a national strategy to be built with the federated entities. No document link and no Council of Ministers approval stated. Likely the update announced in the brief's lead 'Mise à jour du Plan national de convergence'. Record when the strategy text is published.",
+      "found": "2026-11-05"
+    },
+    {
+      "title": "Création de l'Agence fédérale digitale (Council of Ministers, 10 July 2026)",
+      "url": "https://news.belgium.be/fr/node/44619/pdf",
+      "status": "lead",
+      "note": "Council of Ministers endorsed the strategic direction of a Federal Digital Agency with seven pillars including 'Innovation & Intelligence artificielle'. AI is a passing mention; lead only.",
+      "found": "2026-11-05"
+    },
+    {
+      "title": "Flemish Parliament concept note: Conceptnota voor nieuwe regelgeving over economische groei en een toekomstbestendige arbeidsmarkt met artificiële intelligentie (786 (2025-2026), 1 April 2026)",
+      "url": "https://docs.vlaamsparlement.be/files/pfile?id=2310303",
+      "status": "lead",
+      "note": "Members' concept note (De Roo, Van Rompuy, Bothuyne, Vandromme, Warnez) calling for an 'AI-offensief': AI sandboxes, an AI labour-market barometer, sovereign data strategy. Parliamentary initiative, not adopted policy.",
+      "found": "2026-11-05",
+      "government_level": "subnational",
+      "subnational_unit": "Flanders"
+    },
+    {
+      "title": "Flemish Parliament concept note on the impact and opportunities of AI for the Flemish labour market and economy (2160 (2023-2024), 30 April 2024)",
+      "url": "https://docs.vlaamsparlement.be/files/pfile?id=2063073",
+      "status": "lead",
+      "note": "Members' concept note proposing an AI Act contact point/regulator, a regulatory sandbox and a 'Belgisch Staatsblad 2.0'. Probably lapsed at the 2024 elections.",
+      "found": "2026-11-05",
+      "government_level": "subnational",
+      "subnational_unit": "Flanders"
+    },
+    {
+      "title": "Flemish Parliament Voorstel van resolutie 1175 (2021-2022) (AI-related)",
+      "url": "https://www.vlaamsparlement.be/nl/parlementaire-documenten/parlementaire-initiatieven/1615079",
+      "status": "lead",
+      "note": "Appeared in a search for adopted AI resolutions; the fiche page returned an error, so its title and status could not be read. Text: https://docs.vlaamsparlement.be/files/pfile?id=1816856 (not opened).",
+      "found": "2026-11-05",
+      "government_level": "subnational",
+      "subnational_unit": "Flanders"
+    },
+    {
+      "title": "Flemish draft preliminary decree turning the Vlaamse Toezichtcommissie into a Flemish data authority with AI Act supervisory tasks",
+      "url": "https://themis.vlaanderen.be/files/1d946010-4a23-11f1-909c-bd967777a5f1/download?name=VR+2026+0805+MED.0165-1+BBT+BU+2025+Digitalisering+en+Facilitair+Management+-+mededeling.pdf&content-disposition=inline",
+      "status": "lead",
+      "note": "Flemish Government BBT 2025 (VR 2026 0805) mentions a first draft preliminary decree making the Flemish Supervisory Commission a Flemish data authority, covering AI Act supervisory tasks among others. No draft text found.",
+      "found": "2026-11-05",
+      "government_level": "subnational",
+      "subnational_unit": "Flanders"
+    },
+    {
+      "title": "Digitaal Vlaanderen: Transparantieverplichtingen uit de AI-verordening (3 September 2026) and Verplichte AI-geletterdheid (12 February 2025)",
+      "url": "https://www.vlaanderen.be/digitaal-vlaanderen/nieuws/europese-ai-act-nieuwe-transparantieregels-voor-ai-vanaf-2-augustus-2026",
+      "status": "lead",
+      "note": "Explainer blog posts for Flemish and local governments on AI Act Article 50 and Article 4. Explainers of EU law; leads only. AI literacy post: https://www.vlaanderen.be/digitaal-vlaanderen/verplichte-ai-geletterdheid-wat-betekent-dit-voor-vlaamse-en-lokale-overheden",
+      "found": "2026-11-05",
+      "government_level": "subnational",
+      "subnational_unit": "Flanders"
+    },
+    {
+      "title": "SERV inspiratienota 'Digitalisering en AI inzetten voor betere regelgeving en administratieve vereenvoudiging' (noted 10 November 2025)",
+      "url": "https://publicaties.vlaanderen.be/view-file/79454",
+      "status": "lead",
+      "note": "Social and Economic Council of Flanders secretariat background note (disclaimer: not attributable to the council). Recommends AI as support in law-making with an algorithm register, logging and human-in-the-loop. Not a formal advice; lead.",
+      "found": "2026-11-05",
+      "government_level": "subnational",
+      "subnational_unit": "Flanders"
+    },
+    {
+      "title": "SERV advies Digitale Strategie van Vlaanderen",
+      "url": "https://publicaties.vlaanderen.be/view-file/79448",
+      "status": "lead",
+      "note": "Advisory council opinion on the Flemish digital strategy (not opened). Context for the new strategy candidate.",
+      "found": "2026-11-05",
+      "government_level": "subnational",
+      "subnational_unit": "Flanders"
+    },
+    {
+      "title": "Stratégie de la donnée du SPW – Étape 1 · Vision et lignes directrices (2026)",
+      "url": "https://www.wallonie.be/fr/media/79",
+      "status": "lead",
+      "note": "Walloon public service data strategy approved by the Walloon Government (SPW news 10 July 2026: https://spw.wallonie.be/actualites/le-service-public-de-wallonie-adopte-sa-strategie-de-la-donnee). Section 6.5 'Articulation avec l'intelligence artificielle' and ethical principles on algorithms, but AI is high-level and the AI principles are deferred to steps 2 and 3. Lead; record later if a Walloon AI framework follows.",
+      "found": "2026-11-05",
+      "government_level": "subnational",
+      "subnational_unit": "Wallonia"
+    },
+    {
+      "title": "IFDH/FIRM: Avis sur l'usage d'algorithmes par les administrations",
+      "url": "https://institutfederaldroitshumains.be/fr/avis-sur-lusage-dalgorithmes-par-les-administrations",
+      "status": "lead",
+      "note": "Federal Institute for Human Rights opinion on public authorities' use of algorithms (related news: https://institutfederaldroitshumains.be/en/lifdh-demande-plus-de-transparence-sur-lutilisation-des-algorithmes-par-les-autorites). Both pages failed to load; read title, number and date in a browser pass. Likely a regulatory_opinion on the DOC 55 1904 / 56 1583 algorithm-transparency bills.",
+      "found": "2026-11-05"
+    },
+    {
+      "title": "Centre for Cybersecurity Belgium: AI and cyber threat news items (2026)",
+      "url": "https://ccb.belgium.be/news/ai-increases-pressure-corporate-cybersecurity",
+      "status": "lead",
+      "note": "News item updated 20 April 2026 with basic-security recommendations against AI-amplified threats; a second item 'AI accelerates and amplifies cyber threats: strengthen your basic security now' failed to load. No CCB AI guidance document found.",
+      "found": "2026-11-05"
+    },
+    {
+      "title": "Digiplan: conceptnota digitaliseringsbeleid onderwijs (Flemish minister of education, 2025)",
+      "url": "https://themis.vlaanderen.be/files/c097fa50-2739-11f0-bb32-33d47c9156ac/download?name=VR+2025+0205+MED.0137-1+Digiplan+-+mededeling+QUATER.pdf&amp=&content-disposition=inline",
+      "status": "lead",
+      "note": "Education digitalisation concept note (school years 2025-26 to 2027-28); AI only as awareness-raising under 'Welzijn en mediawijsheid'. Passing mention; lead.",
+      "found": "2026-11-05",
+      "government_level": "subnational",
+      "subnational_unit": "Flanders"
+    },
+    {
+      "title": "Conseil supérieur de la Justice: Principes généraux relatifs à la déontologie des magistrats (27 March 2024)",
+      "url": "https://csj.be/fr/publications/2024/principes-generaux-relatifs-a-la-deontologie-des-magistrats",
+      "status": "lead",
+      "note": "Page summary does not mention AI; full text not read (https://csj.be/admin/storage/hrj/principes-de-deontologie.pdf). Check for any AI/digital-tools provision. No judicial AI guidelines found for Belgian courts.",
+      "found": "2026-11-05"
     }
   ]
 }
