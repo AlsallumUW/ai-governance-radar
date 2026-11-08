@@ -2912,55 +2912,6 @@
       "last_changed": null
     },
     {
-      "id": "i-22c5187423eb",
-      "official_title": "Délibération SAN-2022-019 du 17 octobre 2022",
-      "english_title": "Deliberation of the CNIL Restricted Committee No. SAN-2022-019 of 17 October 2022 concerning Clearview AI",
-      "jurisdiction_id": "FRA",
-      "issuing_authority": "French Data Protection Authority (CNIL)",
-      "publisher_name": "French Data Protection Authority (CNIL)",
-      "authority_type": "data_protection_authority",
-      "government_level": "national",
-      "subnational_unit": null,
-      "categories": [
-        "data-privacy",
-        "sectoral"
-      ],
-      "category": "data-privacy",
-      "subcategory": null,
-      "legal_status": "enforcement_decision",
-      "lifecycle": "in_force",
-      "publication_date": "2022-10-20",
-      "effective_date": "2022-10-17",
-      "last_amended_date": null,
-      "current_status": "Sanction decision of the CNIL Restricted Committee adopted 17 October 2022 and published on Légifrance on 20 October 2022 (company name anonymised in the Légifrance text). Non-compliance with the injunction led to an overdue penalty payment of EUR 5.2 million by deliberation SAN-2023-005 of 17 April 2023.",
-      "scope": "France (national)",
-      "sectors": [],
-      "technology_scope": [
-        "AI"
-      ],
-      "summary": "Sanction decision against the facial-recognition company Clearview AI, which scraped online photographs to build a biometric search engine, for processing biometric data of people in France without a legal basis (Art. 6 GDPR) and for failing to respect access and erasure rights (Arts. 12, 15, 17) and to cooperate with the CNIL (Art. 31). It imposes the maximum administrative fine of EUR 20 million and orders the company to stop collecting and processing data of people in France without a legal basis and to delete the data, within two months, under a penalty of EUR 100,000 per day of delay.",
-      "ai_governance_relevance": "Leading French enforcement decision on AI-based facial recognition trained on scraped personal data.",
-      "source_url": "https://www.legifrance.gouv.fr/cnil/id/CNILTEXT000046444859",
-      "official_pdf_url": null,
-      "official_webpage_url": "https://www.legifrance.gouv.fr/cnil/id/CNILTEXT000046444859",
-      "language": "fr",
-      "supersedes": [],
-      "superseded_by": [],
-      "related_instruments": [],
-      "regional_applicability": [],
-      "verification_date": "2026-10-11",
-      "verification_level": "reviewed_primary_metadata",
-      "metadata_gaps": [],
-      "source_kind": "legislation_portal",
-      "link_status": "reachable",
-      "document_access_type": "official_publication_or_full_text_page",
-      "evidence_reference": "curl (browser user agent, --max-time 60) returned HTTP 403 from Légifrance; WebFetch of the Légifrance page succeeded and the decision text (title, date, articles breached, operative part) was read.",
-      "source_id": "s-081a63b67809",
-      "organization_id": "o-27e2fbc67453",
-      "first_recorded": "2026-10-11",
-      "last_changed": "2026-10-19"
-    },
-    {
       "id": "i-f5faa436a892",
       "official_title": "Recommandations de sécurité pour un système d’IA générative",
       "english_title": "Security recommendations for a generative AI system (ANSSI-PA-102)",
@@ -6338,33 +6289,6 @@
       "content_type": "application/pdf"
     },
     {
-      "id": "s-081a63b67809",
-      "url": "https://www.legifrance.gouv.fr/cnil/id/CNILTEXT000046444859",
-      "jurisdiction_ids": [
-        "FRA"
-      ],
-      "source_institutions": [
-        "French Data Protection Authority (CNIL)"
-      ],
-      "instrument_ids": [
-        "i-22c5187423eb"
-      ],
-      "categories_reviewed": [
-        "data-privacy",
-        "sectoral"
-      ],
-      "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60) returned HTTP 403 from Légifrance; WebFetch of the Légifrance page succeeded and the decision text (title, date, articles breached, operative part) was read.",
-      "http_status": 403,
-      "final_url": "https://www.legifrance.gouv.fr/cnil/id/CNILTEXT000046444859",
-      "link_status": "reachable",
-      "page_title": "Délibération SAN-2022-019 du 17 octobre 2022",
-      "document_language": "fr",
-      "error": null,
-      "content_type": "text/html; charset=utf-8"
-    },
-    {
       "id": "s-21ed48376f7a",
       "url": "https://messervices.cyber.gouv.fr/guides/en-building-trust-ai-through-cyber-risk-based-approach",
       "jurisdiction_ids": [
@@ -7351,6 +7275,21 @@
     "last_sweep": "2026-10-30"
   },
   "changes": [
+    {
+      "id": "c-3503abcfbcf4",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "removed",
+      "jurisdiction_id": "FRA",
+      "instrument_id": "i-22c5187423eb",
+      "title": "Deliberation of the CNIL Restricted Committee No. SAN-2022-019 of 17 October 2022 concerning Clearview AI",
+      "detail": "Removed from the radar: decisions addressed to a single organisation are not counted as governance documents for now.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
     {
       "id": "c-baa2f724a659",
       "date": "2026-11-08",
@@ -9929,36 +9868,6 @@
       "from": null,
       "to": null,
       "source_url": "https://www.ccne-ethique.fr/sites/default/files/2023-01/Avis%20141%20Diagnostic%20M%C3%A9dical%20et%20Intelligence%20Artificielle%20%20Enjeux%20Ethiques.pdf",
-      "needs_review": false
-    },
-    {
-      "id": "c-eb89117a6e84",
-      "date": "2022-10-17",
-      "recorded": "2026-10-19",
-      "kind": "world",
-      "type": "applied",
-      "jurisdiction_id": "FRA",
-      "instrument_id": "i-22c5187423eb",
-      "title": "Deliberation of the CNIL Restricted Committee No. SAN-2022-019 of 17 October 2022 concerning Clearview AI",
-      "detail": "Applies from this date.",
-      "from": "adopted",
-      "to": "in_force",
-      "source_url": "https://www.legifrance.gouv.fr/cnil/id/CNILTEXT000046444859",
-      "needs_review": false
-    },
-    {
-      "id": "c-85b24c7d21b8",
-      "date": "2022-10-17",
-      "recorded": "2026-10-11",
-      "kind": "world",
-      "type": "adopted",
-      "jurisdiction_id": "FRA",
-      "instrument_id": "i-22c5187423eb",
-      "title": "CNIL fines Clearview AI EUR 20 million (SAN-2022-019)",
-      "detail": "Restricted Committee sanction: EUR 20 million fine and injunction with EUR 100,000/day penalty; published on Légifrance 20 October 2022.",
-      "from": null,
-      "to": null,
-      "source_url": "https://www.legifrance.gouv.fr/cnil/id/CNILTEXT000046444859",
       "needs_review": false
     },
     {

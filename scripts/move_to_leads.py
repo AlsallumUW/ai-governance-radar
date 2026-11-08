@@ -2,7 +2,10 @@
 """Move records to leads (owner rules: bills are leads; a record whose official document cannot be confirmed
 at a working official link is a lead until it can be).
 
-    python3 scripts/move_to_leads.py PLAN.json [--date YYYY-MM-DD]
+    python3 scripts/move_to_leads.py PLAN.json [--date YYYY-MM-DD] [--park FILE.json]
+
+With --park, no lead is added: the complete record (with its source, organisation, world events and Arabic
+texts) is saved to FILE.json so it can be restored unchanged after a later decision.
 
 PLAN.json: {"<instrument id>": {"note": "why, and what was found", "detail": "public change-log detail"}, ...}
 
@@ -23,8 +26,9 @@ def ar_path(p):
     return AR / ("regional/" if p.parent.name == "regional" else "") / p.name
 
 
-def main(plan_path, date):
+def main(plan_path, date, park=None):
     plan = json.loads(open(plan_path, encoding="utf-8").read())
+    parked = []
     left = set(plan)
     for p in jurisdiction_files():
         d = load(p)
@@ -37,7 +41,14 @@ def main(plan_path, date):
             jid = i["jurisdiction_id"]
             ar_title = (ar.get(iid, {}).get("title") or {}).get("ar") or (
                 i["official_title"] if any("؀" <= ch <= "ۿ" for ch in i["official_title"]) else None)
-            d.setdefault("leads", []).append({
+            if park:
+                src = next((s for s in d.get("sources", []) if s["id"] == i.get("source_id")), None)
+                org = next((o for o in d.get("organizations", []) if o["id"] == i.get("organization_id")), None)
+                evs = [c for c in d.get("changes", []) if c.get("instrument_id") == iid]
+                parked.append({"file": str(p.relative_to(ROOT)), "reason": plan[iid]["note"], "parked": date,
+                               "instrument": i, "source": src, "organization": org, "changes": evs,
+                               "arabic": {k: ar[k] for k in [iid] + [c["id"] for c in evs] if k in ar}})
+            else: d.setdefault("leads", []).append({
                 "title": i["official_title"], "english_title": i.get("english_title"),
                 "issuing_authority": i.get("issuing_authority"),
                 "url": i.get("official_pdf_url") or i.get("source_url"),
@@ -89,9 +100,15 @@ def main(plan_path, date):
                 if k: vq[k] = kept
                 else: vq = kept
         if changed: save(q, vq)
-    print(f"moved {len(gone_ids)} records to leads" + (f"; not found: {sorted(left)}" if left else ""))
+    if park:
+        import pathlib
+        pp = pathlib.Path(park)
+        old = load(pp) if pp.exists() else {"about": "Records taken off the site pending an owner decision. Each entry is the complete record as it was, for restoring unchanged.", "records": []}
+        old["records"].extend(parked)
+        save(pp, old)
+    print(f"moved {len(gone_ids)} records " + (f"to {park}" if park else "to leads") + (f"; not found: {sorted(left)}" if left else ""))
 
 
 if __name__ == "__main__":
     a = sys.argv[1:]
-    main(a[0], a[a.index("--date") + 1] if "--date" in a else today())
+    main(a[0], a[a.index("--date") + 1] if "--date" in a else today(), a[a.index("--park") + 1] if "--park" in a else None)
