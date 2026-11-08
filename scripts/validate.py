@@ -173,7 +173,7 @@ _MON = r"(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?"
 ISSUER_BAD = re.compile(r"\bunknown\b|\bunclear\b|gazette|\b\d{4}-\d{2}-\d{2}\b|\b\d{1,2} " + _MON + r" \d{4}\b|\b" + _MON + r" \d{1,2}, \d{4}\b|\b\d{1,2}/\d{1,2}/\d{2,4}\b", re.I)
 # schema vocabulary (field names, status codes) and its apologetic wording never appear in public text
 SCHEMA = (r"\b(?:legal_status|current_status|issuing_authority|publisher_name|verification_level|evidence_reference|source_kind"
-          r"|regulatory_opinion|nonbinding_guidance|binding_regulation|binding_law|administrative_guideline|administrative_policy_mandatory_in_scope"
+          r"|regulatory_opinion|enforcement_decision|nonbinding_guidance|binding_regulation|binding_law|administrative_guideline|administrative_policy_mandatory_in_scope"
           r"|consultation_draft|consultation_closed|voluntary_code|national_strategy|international_treaty|needs_review|technical_note|source_url|official_pdf_url|official_webpage_url|organization_id|source_id)\b|for want of a|[Oo]wned record")
 # process wording that the public text must not carry (any public field); keep the detail in coverage_audit.technical_note
 PROCESS = (r"could not be (?:accessed|opened|reached|retrieved|checked|read|downloaded|loaded)|(?:from|in) the review environment"
