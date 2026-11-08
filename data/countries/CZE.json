@@ -165,9 +165,9 @@
       ],
       "summary": "Omnibus police law of 11 June 2025 whose Article IX amends Act No. 110/2019 Coll. by inserting §§ 39a-39c on an 'isolated system', defined as an AI system for real-time remote biometric identification under Art. 3(42) of the EU AI Act, used by a law-enforcement authority only within the premises of an international airport. Use is limited to the AI Act Art. 5 objectives (searching for victims and missing persons, suspects of Annex II offences punishable by at least 4 years, preventing imminent threats to life and terrorist attacks), requires prior written authorisation by a High Court judge for up to 12 months (with a fundamental-rights impact assessment summary and EU database registration), a 24-hour notification to a supervising officer for each person entered in the reference database, deletion after 90 days and a report to the Office for Personal Data Protection within 72 hours of first use.",
       "ai_governance_relevance": "First Czech statute with explicit AI Act-based rules; national legal basis for law-enforcement real-time biometric identification (AI Act Art. 5(5)).",
-      "source_url": "https://www.e-sbirka.cz/sb/2025/230",
+      "source_url": "https://e-sbirka.gov.cz/sb/2025/230",
       "official_pdf_url": null,
-      "official_webpage_url": "https://www.e-sbirka.cz/sb/2025/230",
+      "official_webpage_url": "https://e-sbirka.gov.cz/sb/2025/230",
       "source_kind": "legislation_portal",
       "document_access_type": "official_publication_or_full_text_page",
       "language": "cs",
@@ -216,9 +216,9 @@
       ],
       "summary": "National data protection law of 12 March 2019 that implements the GDPR, transposes the Law Enforcement Directive (EU) 2016/680 and establishes the Office for Personal Data Protection. § 39 permits a competent law-enforcement authority to take action affecting a data subject's rights based solely on automated processing only where another law expressly provides for it; it also governs data protection impact assessments and prior consultation (§§ 37-38). Since 1 August 2025 (Act No. 230/2025 Coll.) §§ 39a-39c regulate real-time remote biometric identification AI systems at international airports.",
       "ai_governance_relevance": "Data protection law governing AI training and use; contains automated-decision and (since 2025) AI biometric-identification rules.",
-      "source_url": "https://www.e-sbirka.cz/sb/2019/110",
+      "source_url": "https://e-sbirka.gov.cz/sb/2019/110",
       "official_pdf_url": null,
-      "official_webpage_url": "https://www.e-sbirka.cz/sb/2019/110",
+      "official_webpage_url": "https://e-sbirka.gov.cz/sb/2019/110",
       "source_kind": "legislation_portal",
       "document_access_type": "official_publication_or_full_text_page",
       "language": "cs",
@@ -584,9 +584,9 @@
       ],
       "summary": "Criminal-law amendment of 3 July 2025 that, among many changes, creates two offences targeting deepfakes. New § 181(2) punishes (up to two years, more if spread via a public computer network) whoever, intending to cause serious harm to another's rights, produces or disseminates a work that without authorisation depicts or uses another person's likeness or personal expression and appears genuine although the perpetrator knows it is not. New § 191a ('misuse of identity to produce pornography and its dissemination') punishes producing or distributing pornographic works depicting or using a person who did not consent, with higher penalties for online dissemination.",
       "ai_governance_relevance": "Criminal offences for harmful synthetic media (deepfakes), including AI-generated pornography.",
-      "source_url": "https://www.e-sbirka.cz/sb/2025/270",
+      "source_url": "https://e-sbirka.gov.cz/sb/2025/270",
       "official_pdf_url": null,
-      "official_webpage_url": "https://www.e-sbirka.cz/sb/2025/270",
+      "official_webpage_url": "https://e-sbirka.gov.cz/sb/2025/270",
       "source_kind": "legislation_portal",
       "document_access_type": "official_publication_or_full_text_page",
       "language": "cs",
@@ -800,7 +800,7 @@
     },
     {
       "id": "s-31875c3769d0",
-      "url": "https://www.e-sbirka.cz/sb/2025/230",
+      "url": "https://e-sbirka.gov.cz/sb/2025/230",
       "jurisdiction_ids": [
         "CZE"
       ],
@@ -817,19 +817,20 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): e-Sbírka JSON service read (document metadata and all 392 text fragments of the promulgated text); Article IX (§§ 39a-39c) and the effectiveness clause (Article XI) read",
+      "checked_date": "2026-11-08",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions)",
       "http_status": 200,
-      "final_url": "https://www.e-sbirka.cz/sb/2025/230",
+      "final_url": "https://e-sbirka.gov.cz/sb/2025/230",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "cs",
       "error": null,
-      "content_type": "text/html"
+      "content_type": "text/html",
+      "fail_streak": 0
     },
     {
       "id": "s-78c9229a8af4",
-      "url": "https://www.e-sbirka.cz/sb/2019/110",
+      "url": "https://e-sbirka.gov.cz/sb/2019/110",
       "jurisdiction_ids": [
         "CZE"
       ],
@@ -844,15 +845,16 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): e-Sbírka JSON service read (metadata and 587 text fragments of the promulgated text; § 39 and effectiveness clause checked)",
+      "checked_date": "2026-11-08",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions)",
       "http_status": 200,
-      "final_url": "https://www.e-sbirka.cz/sb/2019/110",
+      "final_url": "https://e-sbirka.gov.cz/sb/2019/110",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "cs",
       "error": null,
-      "content_type": "text/html"
+      "content_type": "text/html",
+      "fail_streak": 0
     },
     {
       "id": "s-678cd1c08f7d",
@@ -1024,7 +1026,7 @@
     },
     {
       "id": "s-f58d0389f9dd",
-      "url": "https://www.e-sbirka.cz/sb/2025/270",
+      "url": "https://e-sbirka.gov.cz/sb/2025/270",
       "jurisdiction_ids": [
         "CZE"
       ],
@@ -1039,15 +1041,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): e-Sbírka JSON service read (promulgated text of Act No. 270/2025 Coll. and the consolidated Criminal Code as of 1 January 2026; §§ 181(2) and 191a and Article XLV effectiveness checked)",
+      "checked_date": "2026-11-08",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions)",
       "http_status": 200,
-      "final_url": "https://www.e-sbirka.cz/sb/2025/270",
+      "final_url": "https://e-sbirka.gov.cz/sb/2025/270",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "cs",
       "error": null,
-      "content_type": "text/html"
+      "content_type": "text/html",
+      "fail_streak": 0
     },
     {
       "id": "s-b0285cb251af",
@@ -1184,6 +1187,51 @@
       "from": null,
       "to": null,
       "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-6a2fadf59c84",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "CZE",
+      "instrument_id": "i-758f79c71863",
+      "title": "Act No. 230/2025 Coll. amending Act No. 273/2008 Coll. on the Police of the Czech Republic and certain other acts (incl. new §§ 39a-39c of the Personal Data Processing Act on 'isolated' real-time remote biometric identification AI systems at international airports)",
+      "detail": "Official source moved.",
+      "from": "https://www.e-sbirka.cz/sb/2025/230",
+      "to": "https://e-sbirka.gov.cz/sb/2025/230",
+      "source_url": "https://e-sbirka.gov.cz/sb/2025/230",
+      "needs_review": false
+    },
+    {
+      "id": "c-73d511e5e838",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "CZE",
+      "instrument_id": "i-f0817420998c",
+      "title": "Act No. 110/2019 Coll. on the Processing of Personal Data",
+      "detail": "Official source moved.",
+      "from": "https://www.e-sbirka.cz/sb/2019/110",
+      "to": "https://e-sbirka.gov.cz/sb/2019/110",
+      "source_url": "https://e-sbirka.gov.cz/sb/2019/110",
+      "needs_review": false
+    },
+    {
+      "id": "c-311bc4b3617c",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "CZE",
+      "instrument_id": "i-a67fcf18bd36",
+      "title": "Act No. 270/2025 Coll. amending the Criminal Code, the Criminal Procedure Code and related acts (new deepfake offences: § 181(2) and § 191a of the Criminal Code)",
+      "detail": "Official source moved.",
+      "from": "https://www.e-sbirka.cz/sb/2025/270",
+      "to": "https://e-sbirka.gov.cz/sb/2025/270",
+      "source_url": "https://e-sbirka.gov.cz/sb/2025/270",
       "needs_review": false
     },
     {

@@ -2805,8 +2805,8 @@
       ],
       "summary": "Directive of the Canton of Basel-Stadt setting the minimum standard for cantonal staff using online, externally hosted AI tools (e.g. ChatGPT, Google Gemini, DeepL, speech-to-text, image generation and coding assistants, free or paid). It rests on three principles — humans, not machines, are responsible; data protection and information security are observed; administrative action stays transparent, verifiable and traceable — and prohibits entering personal data or information under official or professional secrecy, requires outputs to be checked, bars AI-generated image, audio or video material in official publications and allows installation of software with AI elements only after an approved protection-needs analysis.",
       "ai_governance_relevance": "Basel-Stadt's operative rules for staff use of external generative AI tools.",
-      "source_url": "https://media.bs.ch/original_file/36de93b90d0f8c0b657d0161abcf5c546a2a4ff9/251107-ki-richtlinie-fin-v1-01.pdf",
-      "official_pdf_url": "https://media.bs.ch/original_file/36de93b90d0f8c0b657d0161abcf5c546a2a4ff9/251107-ki-richtlinie-fin-v1-01.pdf",
+      "source_url": "https://www.bs.ch/schwerpunkte/daten/databs/schwerpunkte/kuenstliche-intelligenz/ki-richtlinie",
+      "official_pdf_url": "https://www.bs.ch/schwerpunkte/daten/databs/schwerpunkte/kuenstliche-intelligenz/ki-richtlinie",
       "official_webpage_url": "https://www.bs.ch/schwerpunkte/daten/databs/schwerpunkte/kuenstliche-intelligenz/ki-richtlinie",
       "language": "de",
       "supersedes": [],
@@ -3281,7 +3281,7 @@
       "metadata_gaps": [],
       "source_kind": "official_document",
       "evidence_reference": "deep-sweep-2026-11-04: WebFetch of media.bs.ch PDF: 'FAQs zu «KI an den Mittelschulen BS» (Stand Juni 2026)', Erziehungsdepartement, Mittelschulen und Berufsbildung; undisclosed use may be judged 'Täuschungs- oder Betrugsversuch'. Regierungsrat answer P265258 (22 Sept 2026) confirms schools' guidelines are updated regularly.",
-      "link_status": "reachable",
+      "link_status": "broken",
       "document_access_type": "original_government_document",
       "source_id": "s-44b5e428467a",
       "organization_id": "o-ca660687106a",
@@ -4939,7 +4939,7 @@
     },
     {
       "id": "s-1d42cedc390a",
-      "url": "https://media.bs.ch/original_file/36de93b90d0f8c0b657d0161abcf5c546a2a4ff9/251107-ki-richtlinie-fin-v1-01.pdf",
+      "url": "https://www.bs.ch/schwerpunkte/daten/databs/schwerpunkte/kuenstliche-intelligenz/ki-richtlinie",
       "jurisdiction_ids": [
         "CHE"
       ],
@@ -4955,15 +4955,16 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "GET with browser user-agent (curl --max-time 60); full text read (PDF via pdftotext); landing page read via HTML",
+      "checked_date": "2026-11-08",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions); replacement located by web search, same document",
       "http_status": 200,
-      "final_url": "https://media.bs.ch/original_file/36de93b90d0f8c0b657d0161abcf5c546a2a4ff9/251107-ki-richtlinie-fin-v1-01.pdf",
+      "final_url": "https://www.bs.ch/schwerpunkte/daten/databs/schwerpunkte/kuenstliche-intelligenz/ki-richtlinie",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "de",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-ddca0263ce98",
@@ -5197,14 +5198,14 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-11-04",
-      "checked_date": "2026-11-04",
-      "check_method": "Department PDF read (title, edition, issuer, rules)",
-      "http_status": 200,
+      "checked_date": "2026-11-08",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions)",
+      "http_status": 404,
       "final_url": "https://media.bs.ch/original_file/b97ed42e4b7976b1e79ef73086576939923cece7/faqs-tg-ki-mittelschulen-basel-stadt-juni-2026.pdf",
-      "link_status": "reachable",
+      "link_status": "broken",
       "page_title": "FAQs zu «KI an den Mittelschulen BS» (Stand Juni 2026)",
       "document_language": "de",
-      "error": null,
+      "error": "HTTP Error 404: Not Found",
       "content_type": "application/pdf"
     }
   ],
@@ -5352,6 +5353,36 @@
     "last_sweep": "2026-10-30"
   },
   "changes": [
+    {
+      "id": "c-d259198c7128",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "CHE",
+      "instrument_id": "i-60e320e70e0f",
+      "title": "Directive on the use of online artificial intelligence tools (AI use) in the administration",
+      "detail": "Official source moved.",
+      "from": "https://media.bs.ch/original_file/36de93b90d0f8c0b657d0161abcf5c546a2a4ff9/251107-ki-richtlinie-fin-v1-01.pdf",
+      "to": "https://www.bs.ch/schwerpunkte/daten/databs/schwerpunkte/kuenstliche-intelligenz/ki-richtlinie",
+      "source_url": "https://www.bs.ch/schwerpunkte/daten/databs/schwerpunkte/kuenstliche-intelligenz/ki-richtlinie",
+      "needs_review": false
+    },
+    {
+      "id": "c-6581bc9584e5",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "CHE",
+      "instrument_id": "i-d7c560ba5c7c",
+      "title": "FAQs on AI at upper-secondary schools in Basel-Stadt (as of June 2026)",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "broken",
+      "source_url": "https://media.bs.ch/original_file/b97ed42e4b7976b1e79ef73086576939923cece7/faqs-tg-ki-mittelschulen-basel-stadt-juni-2026.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-0c39ca1a71dd",
       "date": "2026-11-04",

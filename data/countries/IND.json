@@ -4737,7 +4737,7 @@
       "metadata_gaps": [],
       "source_kind": "official_document",
       "evidence_reference": "deep-sweep-2026-11-05. Read: BIS-hosted full text: cover 'IS/ISO/IEC 5338 : 2023', 'Information Technology — Artificial Intelligence — AI System Life Cycle Processes', 'July 2024 Price Group 13'; National Foreword: 'This Indian Standard which is identical to ISO/IEC 5338 : 2023 ... was adopted by the Bureau of Indian Standards (BIS) on the recommendations of the Artificial Intelligence Sectional Committee and approval of the Electronics and Information Technology Division Council.' Also in LITD 30 POW: https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/pow_new/Pow/download_pow_pdf_dept_commtt/66/386/",
-      "link_status": "reachable",
+      "link_status": "broken",
       "document_access_type": "original_government_document",
       "source_id": "s-652bdc28312a",
       "organization_id": "o-f54d349c25d5",
@@ -7678,14 +7678,14 @@
         "standards"
       ],
       "date_reviewed": "2026-11-05",
-      "checked_date": "2026-11-05",
-      "check_method": "BIS-hosted full-text PDF read",
-      "http_status": 200,
+      "checked_date": "2026-11-08",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions)",
+      "http_status": 404,
       "final_url": "https://services.bis.gov.in/tmp/LITD38624866_23072024_2.pdf",
-      "link_status": "reachable",
+      "link_status": "broken",
       "page_title": "IS/ISO/IEC 5338 : 2023 Information Technology — Artificial Intelligence — AI System Life Cycle Processes",
       "document_language": "en",
-      "error": null,
+      "error": "HTTP Error 404: Not Found",
       "content_type": "application/pdf"
     },
     {
@@ -8018,6 +8018,21 @@
     "last_sweep": "2026-11-04"
   },
   "changes": [
+    {
+      "id": "c-5e900757084e",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "IND",
+      "instrument_id": "i-932208d4fc40",
+      "title": "IS/ISO/IEC 5338:2023 Information technology - Artificial intelligence - AI system life cycle processes (Indian adoption of ISO/IEC 5338:2023)",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "broken",
+      "source_url": "https://services.bis.gov.in/tmp/LITD38624866_23072024_2.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-9dcb5f44e74a",
       "date": "2026-11-05",

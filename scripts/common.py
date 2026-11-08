@@ -75,7 +75,7 @@ def lifecycle_of(i):
 INTERNAL_FIELDS = {"technical_note", "evidence_reference", "check_method", "search_queries", "needs_review", "final_url",
                    "page_title", "http_status", "error", "content_type", "checked_date", "date_reviewed", "passes",
                    "discovery_result_count", "focused_result_count", "categories_requiring_review", "categories_searched",
-                   "source_role", "publisher_name_verified", "note", "metadata_gaps", "link_status"}
+                   "source_role", "publisher_name_verified", "note", "metadata_gaps", "link_status", "fail_streak"}
 # link_status is a link-check result kept for research; pages and exports never say a link is broken or unreachable
 # "note" is research text on leads and regional applicability rows; public notes have their own named fields
 

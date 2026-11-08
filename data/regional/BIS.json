@@ -35,9 +35,9 @@
       "effective_date": null,
       "summary": "Report by a task force of central banks (Brazil, Canada, Chile, Colombia, Mexico, Peru, United States) with the BIS on how central banks can govern their own use of AI. It identifies risks such as data security and confidentiality, model errors including hallucinations, and reputational harm, and proposes an adaptive governance framework building on the three lines of defence, with ten practical actions: an AI committee, responsible-use principles, an AI framework, an inventory and mapping of AI tools, risk and control assessment, monitoring, incident reporting, skills, and periodic review.",
       "current_status": "Published by the BIS on 29 January 2025 as a report of the Consultative Group on Risk Management. Not binding; offered as practical guidance for central banks.",
-      "source_url": "https://www.bis.org/publ/othp90.htm",
+      "source_url": "https://www.bis.org/publications/governance-ai-adoption-central-banks",
       "official_pdf_url": "https://www.bis.org/publ/othp90.pdf",
-      "official_webpage_url": "https://www.bis.org/publ/othp90.htm",
+      "official_webpage_url": "https://www.bis.org/publications/governance-ai-adoption-central-banks",
       "language": "en",
       "jurisdiction_id": "BIS",
       "authority_type": "intergovernmental_body",
@@ -88,9 +88,9 @@
       "effective_date": null,
       "summary": "Report on how central banks, financial regulators and supervisors use AI in their policy work, from big data and machine learning to large language models. It sets out practical use cases and identifies the conditions for responsible adoption, notably data governance, investment in staff skills and IT infrastructure, and cooperation among authorities.",
       "current_status": "BIS report published on 10 October 2025 and submitted to the G20 Finance Ministers and Central Bank Governors ahead of their October 2025 meeting.",
-      "source_url": "https://www.bis.org/publ/othp100.htm",
+      "source_url": "https://www.bis.org/publications/use-artificial-intelligence-policy-purposes",
       "official_pdf_url": "https://www.bis.org/publ/othp100.pdf",
-      "official_webpage_url": "https://www.bis.org/publ/othp100.htm",
+      "official_webpage_url": "https://www.bis.org/publications/use-artificial-intelligence-policy-purposes",
       "language": "en",
       "jurisdiction_id": "BIS",
       "authority_type": "intergovernmental_body",
@@ -207,7 +207,7 @@
   "sources": [
     {
       "id": "s-36ba0b8d8030",
-      "url": "https://www.bis.org/publ/othp90.htm",
+      "url": "https://www.bis.org/publications/governance-ai-adoption-central-banks",
       "jurisdiction_ids": [
         "BIS"
       ],
@@ -225,19 +225,20 @@
         "sectoral"
       ],
       "date_reviewed": "2026-10-21",
-      "checked_date": "2026-10-21",
-      "check_method": "WebFetch (research pass)",
-      "http_status": null,
-      "final_url": "https://www.bis.org/publ/othp90.htm",
+      "checked_date": "2026-11-08",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions)",
+      "http_status": 200,
+      "final_url": "https://www.bis.org/publications/governance-ai-adoption-central-banks",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
       "error": null,
-      "content_type": null
+      "content_type": null,
+      "fail_streak": 0
     },
     {
       "id": "s-281e2fa6f51b",
-      "url": "https://www.bis.org/publ/othp100.htm",
+      "url": "https://www.bis.org/publications/use-artificial-intelligence-policy-purposes",
       "jurisdiction_ids": [
         "BIS"
       ],
@@ -255,15 +256,16 @@
         "sectoral"
       ],
       "date_reviewed": "2026-10-21",
-      "checked_date": "2026-10-21",
-      "check_method": "WebFetch (research pass)",
-      "http_status": null,
-      "final_url": "https://www.bis.org/publ/othp100.htm",
+      "checked_date": "2026-11-08",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions)",
+      "http_status": 200,
+      "final_url": "https://www.bis.org/publications/use-artificial-intelligence-policy-purposes",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
       "error": null,
-      "content_type": null
+      "content_type": null,
+      "fail_streak": 0
     }
   ],
   "regional_applicability": [],
@@ -321,6 +323,36 @@
   },
   "changes": [
     {
+      "id": "c-99e7458a9714",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "BIS",
+      "instrument_id": "i-1efd4dc04338",
+      "title": "Governance of AI adoption in central banks",
+      "detail": "Official source moved.",
+      "from": "https://www.bis.org/publ/othp90.htm",
+      "to": "https://www.bis.org/publications/governance-ai-adoption-central-banks",
+      "source_url": "https://www.bis.org/publications/governance-ai-adoption-central-banks",
+      "needs_review": false
+    },
+    {
+      "id": "c-ccd7ec85c52d",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "BIS",
+      "instrument_id": "i-8ca6d1db90f9",
+      "title": "The use of artificial intelligence for policy purposes",
+      "detail": "Official source moved.",
+      "from": "https://www.bis.org/publ/othp100.htm",
+      "to": "https://www.bis.org/publications/use-artificial-intelligence-policy-purposes",
+      "source_url": "https://www.bis.org/publications/use-artificial-intelligence-policy-purposes",
+      "needs_review": false
+    },
+    {
       "id": "c-2c44c059d606",
       "date": "2026-10-21",
       "recorded": "2026-10-21",
@@ -366,21 +398,6 @@
       "needs_review": false
     },
     {
-      "id": "c-4cb93a4b327a",
-      "date": "2025-01-29",
-      "recorded": "2026-10-21",
-      "kind": "world",
-      "type": "published",
-      "jurisdiction_id": "BIS",
-      "instrument_id": "i-1efd4dc04338",
-      "title": "Governance of AI adoption in central banks",
-      "detail": "Published by Consultative Group on Risk Management (central banks of the Americas), BIS Representative Office for the Americas.",
-      "from": null,
-      "to": null,
-      "source_url": "https://www.bis.org/publ/othp90.htm",
-      "needs_review": false
-    },
-    {
       "id": "c-6d4dd44587fc",
       "date": "2025-10-10",
       "recorded": "2026-10-21",
@@ -393,6 +410,21 @@
       "from": null,
       "to": null,
       "source_url": "https://www.bis.org/publ/othp100.htm",
+      "needs_review": false
+    },
+    {
+      "id": "c-4cb93a4b327a",
+      "date": "2025-01-29",
+      "recorded": "2026-10-21",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "BIS",
+      "instrument_id": "i-1efd4dc04338",
+      "title": "Governance of AI adoption in central banks",
+      "detail": "Published by Consultative Group on Risk Management (central banks of the Americas), BIS Representative Office for the Americas.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.bis.org/publ/othp90.htm",
       "needs_review": false
     }
   ],

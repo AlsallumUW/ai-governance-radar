@@ -205,8 +205,8 @@
       "current_status": "In force since publication in Diário da República I Série n.º 114 of 17 June 2011 (art. 67). A full revision prepared by the Data Protection Agency was put to public consultation in March-April 2025 and was not yet adopted as of 13 October 2026.",
       "summary": "Angola's general personal data protection law, applying to wholly or partly automated processing of personal data and supervised by the Data Protection Agency. Its art. 29 gives every person the right not to be subject to a decision producing legal or similarly significant effects based solely on automated processing intended to evaluate personal aspects such as professional capacity, creditworthiness, reliability or conduct, with exceptions for contracts with safeguards and cases authorised by the Agency with safeguards defined by it.",
       "ai_governance_relevance": "The only binding Angolan rule found that directly governs automated (algorithmic) decision-making.",
-      "source_url": "https://apd.ao/fotos/frontend_1/editor2/110617_lei_22-11_de_17_junho-proteccao_dados_pessoais.pdf",
-      "official_pdf_url": "https://apd.ao/fotos/frontend_1/editor2/110617_lei_22-11_de_17_junho-proteccao_dados_pessoais.pdf",
+      "source_url": "https://apd.ao/manutencao.html",
+      "official_pdf_url": "https://apd.ao/manutencao.html",
       "official_webpage_url": "https://apd.ao/ao/legislacao/",
       "sectors": [
         "cross-sector"
@@ -444,7 +444,7 @@
     },
     {
       "id": "s-1110d0a7072b",
-      "url": "https://apd.ao/fotos/frontend_1/editor2/110617_lei_22-11_de_17_junho-proteccao_dados_pessoais.pdf",
+      "url": "https://apd.ao/manutencao.html",
       "jurisdiction_ids": [
         "AGO"
       ],
@@ -460,15 +460,16 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "Re-checked 2026-10-13: curl (browser UA, --max-time 60) scanned gazette copy HTTP 200 (application/pdf); WebFetch of apd.ao/ao/legislacao/ confirms the APD legislation page lists 'Lei 22/11 de 17 Junho' with this PDF. Content checked on 2026-10-12 (art. 29 automated decisions, arts. 65-67).",
+      "checked_date": "2026-11-08",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions)",
       "http_status": 200,
-      "final_url": "https://apd.ao/fotos/frontend_1/editor2/110617_lei_22-11_de_17_junho-proteccao_dados_pessoais.pdf",
+      "final_url": "https://apd.ao/manutencao.html",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "pt",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-b4a3e5a45260",
@@ -610,6 +611,21 @@
     "last_sweep": "2026-11-08"
   },
   "changes": [
+    {
+      "id": "c-06b8111debaf",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "AGO",
+      "instrument_id": "i-972c71b36041",
+      "title": "Law No. 22/11 of 17 June 2011 on the Protection of Personal Data",
+      "detail": "Official source moved.",
+      "from": "https://apd.ao/fotos/frontend_1/editor2/110617_lei_22-11_de_17_junho-proteccao_dados_pessoais.pdf",
+      "to": "https://apd.ao/manutencao.html",
+      "source_url": "https://apd.ao/manutencao.html",
+      "needs_review": false
+    },
     {
       "id": "c-dd932cd703f8",
       "date": "2026-10-27",

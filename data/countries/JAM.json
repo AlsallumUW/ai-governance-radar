@@ -220,7 +220,7 @@
       "metadata_gaps": [],
       "source_kind": "official_document",
       "evidence_reference": "deep-sweep-2026-11-05: WebFetch of the BSJ-hosted front-matter PDF (found by a site search). Quotes: 'DJS ISO/IEC 42001: 2024', 'Information technology – Artificial intelligence – Management system', 'was circulated in draft form for thirty (30) days non-objection', 'APRIL 24, 2024 TO MAY 24, 2024', 'This standard is an adoption and is identical to ISO/IEC 42001: 2023(E)', 'This standard is voluntary.' The document numbers itself inconsistently: it also prints 'DSJ ISO 42001: 2024' and 'DJS ISO 42001: 2024'. The file holds the front matter only, not the ISO body text (copyright).",
-      "link_status": "reachable",
+      "link_status": "broken",
       "document_access_type": "original_government_document",
       "source_id": "s-4476904e1fd9",
       "organization_id": "o-c2e852f79625",
@@ -373,14 +373,14 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-11-05",
-      "checked_date": "2026-11-05",
-      "check_method": "WebFetch of the BSJ-hosted front-matter PDF; front matter read (title, non-objection period 24 April to 24 May 2024, identical adoption of ISO/IEC 42001:2023, voluntary)",
-      "http_status": 200,
+      "checked_date": "2026-11-08",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions)",
+      "http_status": 404,
       "final_url": "https://www.bsj.org.jm/sites/default/files/Front%20matters%20for%20DJS%20ISO%2042001_updated.pdf",
-      "link_status": "reachable",
+      "link_status": "broken",
       "page_title": null,
       "document_language": "en",
-      "error": null,
+      "error": "HTTP Error 404: Not Found",
       "content_type": "application/pdf"
     }
   ],
@@ -479,6 +479,21 @@
     "last_sweep": "2026-11-03"
   },
   "changes": [
+    {
+      "id": "c-23b7d9e4077a",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "JAM",
+      "instrument_id": "i-f1ed7c156f5b",
+      "title": "Draft Jamaican Standard DJS ISO/IEC 42001:2024 Information technology – Artificial intelligence – Management system",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "broken",
+      "source_url": "https://www.bsj.org.jm/sites/default/files/Front%20matters%20for%20DJS%20ISO%2042001_updated.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-cf26820a4339",
       "date": "2026-11-05",

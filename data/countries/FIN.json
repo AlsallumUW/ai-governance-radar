@@ -36,7 +36,7 @@
       "current_status": "Informational page; Finnish version last updated 28 September 2026 (English version last updated 13 April 2026). The date recorded is the page's last-updated date; no original publication date is stated. A 2025 draft Government bill would make Traficom responsible for establishing and running the national AI regulatory sandbox (see leads).",
       "summary": "Traficom's guidance page on AI regulatory sandboxes under the EU AI Act. It explains that a sandbox is a supervised, bounded environment where companies can test AI applications under authority guidance before market launch, especially high-risk systems, and that the AI Act requires every member state to establish such sandboxes. It does not itself establish a Finnish sandbox or set admission rules.",
       "ai_governance_relevance": "Traficom's public information on Finland's AI regulatory sandbox work; the national sandbox legislation is pending (see leads).",
-      "source_url": "https://www.traficom.fi/fi/tekoalyn-saantely/tekoalyn-saantelyn-testiymparistot",
+      "source_url": "https://www.traficom.fi/fi/tekoalyn-saantely/tekoalyn-saantelyn-testiymparisto",
       "official_pdf_url": null,
       "official_webpage_url": "https://www.traficom.fi/en/ai-regulation/ai-regulatory-sandboxes",
       "sectors": [
@@ -506,7 +506,7 @@
       "current_status": "Parliamentary document VNS 7/2018 vp; first debated in plenary on 12 December 2018 and further in March 2019 (Parliament open data). The report itself carries no signing date, so only the year is recorded. Historical policy document of the 2015-2019 Government.",
       "summary": "Report of Prime Minister Sipilä's Government to Parliament setting out an ethical information policy for the AI era, decided at the Government's strategy session of 29 January 2018. It describes Finland's national AI programme and information-policy situation, a vision of a 'good life Finland', and lines of action on ethics guiding choices, putting data to use, human-machine interaction, skills, participation and trust, and data-economy competitiveness, intended as the basis for a later prioritised roadmap.",
       "ai_governance_relevance": "Finland's only Government report to Parliament specifically on AI and information policy; complements the 2017-2019 AI programme.",
-      "source_url": "https://www.eduskunta.fi/pdf/VNS+7/2018",
+      "source_url": "https://api.eduskunta.fi/documents/fi/A495A561-780F-C8BE-8569-6787F6C00000.pdf",
       "official_pdf_url": null,
       "official_webpage_url": "https://www.eduskunta.fi/valtiopaivaasiakirjat/VNS+7/2018",
       "sectors": [
@@ -1115,7 +1115,7 @@
   "sources": [
     {
       "id": "s-fde4936348df",
-      "url": "https://www.traficom.fi/fi/tekoalyn-saantely/tekoalyn-saantelyn-testiymparistot",
+      "url": "https://www.traficom.fi/fi/tekoalyn-saantely/tekoalyn-saantelyn-testiymparisto",
       "jurisdiction_ids": [
         "FIN"
       ],
@@ -1129,15 +1129,16 @@
         "sandbox"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): Finnish and English Traficom pages read; last-updated dates 28.9.2026 (fi) and 13.4.2026 (en)",
+      "checked_date": "2026-11-08",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions)",
       "http_status": 200,
-      "final_url": "https://www.traficom.fi/fi/tekoalyn-saantely/tekoalyn-saantelyn-testiymparistot",
+      "final_url": "https://www.traficom.fi/fi/tekoalyn-saantely/tekoalyn-saantelyn-testiymparisto",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "fi",
       "error": null,
-      "content_type": "text/html"
+      "content_type": "text/html",
+      "fail_streak": 0
     },
     {
       "id": "s-1c9dd745a865",
@@ -1365,7 +1366,7 @@
     },
     {
       "id": "s-1a90d2acc751",
-      "url": "https://www.eduskunta.fi/pdf/VNS+7/2018",
+      "url": "https://api.eduskunta.fi/documents/fi/A495A561-780F-C8BE-8569-6787F6C00000.pdf",
       "jurisdiction_ids": [
         "FIN"
       ],
@@ -1381,15 +1382,16 @@
         "historical"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): 28-page PDF read via eduskunta.fi (served from api.eduskunta.fi); plenary dates from Parliament's open-data API",
+      "checked_date": "2026-11-08",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions)",
       "http_status": 200,
-      "final_url": "https://www.eduskunta.fi/pdf/VNS+7/2018",
+      "final_url": "https://api.eduskunta.fi/documents/fi/A495A561-780F-C8BE-8569-6787F6C00000.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "fi",
       "error": null,
-      "content_type": "text/html"
+      "content_type": "text/html",
+      "fail_streak": 0
     },
     {
       "id": "s-d3a386821a48",
@@ -1726,6 +1728,36 @@
     "last_sweep": "2026-11-07"
   },
   "changes": [
+    {
+      "id": "c-f10dee1e3efc",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "FIN",
+      "instrument_id": "i-10885051bae6",
+      "title": "AI regulatory sandboxes (Traficom guidance page)",
+      "detail": "Official source moved.",
+      "from": "https://www.traficom.fi/fi/tekoalyn-saantely/tekoalyn-saantelyn-testiymparistot",
+      "to": "https://www.traficom.fi/fi/tekoalyn-saantely/tekoalyn-saantelyn-testiymparisto",
+      "source_url": "https://www.traficom.fi/fi/tekoalyn-saantely/tekoalyn-saantelyn-testiymparisto",
+      "needs_review": false
+    },
+    {
+      "id": "c-00957d0c7b57",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "FIN",
+      "instrument_id": "i-de693b6a93bb",
+      "title": "Government Report on Information Policy and Artificial Intelligence (VNS 7/2018): Ethical information policy in the age of artificial intelligence",
+      "detail": "Official source moved.",
+      "from": "https://www.eduskunta.fi/pdf/VNS+7/2018",
+      "to": "https://api.eduskunta.fi/documents/fi/A495A561-780F-C8BE-8569-6787F6C00000.pdf",
+      "source_url": "https://api.eduskunta.fi/documents/fi/A495A561-780F-C8BE-8569-6787F6C00000.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-e84c99509ed4",
       "date": "2026-11-07",
