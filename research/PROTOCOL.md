@@ -110,7 +110,8 @@ Required for a deep-reviewed country:
 - `issuing_authority`: the institution's name, not its web domain
 - `publication_date`: ISO date (`YYYY-MM-DD`, or `YYYY-MM` / `YYYY` if that is all the source states)
 - `effective_date`: for binding instruments, when it applies (null for guidance)
-- `legal_status`: one of `binding_law`, `binding_regulation`, `administrative_policy_mandatory_in_scope`, `administrative_guideline`, `nonbinding_guidance`, `voluntary_code`, `national_strategy`, `consultation_draft`, `regulatory_opinion`, `international_treaty`
+- `legal_status`: one of `binding_law`, `binding_regulation`, `administrative_policy_mandatory_in_scope`, `administrative_guideline`, `nonbinding_guidance`, `voluntary_code`, `national_strategy`, `consultation_draft`, `regulatory_opinion`, `enforcement_decision`, `international_treaty`
+  `enforcement_decision`: binding decisions or orders of a regulator or authority addressed to a single named organisation (fines, sanctions, orders); not general rules. It does not take the `binding-law` category. Court judgments are not enforcement decisions (courts are not regulators).
   Court and judicial-council AI rules (practice directions, notices, judicial codes) are classed `administrative_policy_mandatory_in_scope` (binding on courts and court users only), not general regulations.
 - `lifecycle`: `draft` | `consultation` | `consultation_closed` (the status says the consultation has closed and no final text is recorded; still counted as a draft; optional `consultation_closes` = last day for comments as printed, which `scripts/due_consultations.py` uses to flip the lifecycle the day after) | `published` | `adopted` | `in_force` | `superseded` | `repealed`
 - `summary`: 2–3 sentences specific to this document, covering what it does, who it binds or guides, and any key obligations. **No boilerplate.**
