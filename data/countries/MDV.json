@@ -10,10 +10,11 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": "The Maldives has no AI law or national AI strategy yet: an AI masterplan announced by the President in 2024, an AI Act planned under the Maldives 2.0 digital programme and a Data Protection Bill before parliament were all pending in October 2026. The only published AI governance documents are the Prosecutor General's Office's August 2026 institutional AI strategy, AI governance framework and binding AI policy, which sets risk categories, prohibited uses and a ban on putting case data into public AI tools.",
+    "summary": "The Maldives has no AI law or national AI strategy yet: an AI masterplan announced by the President in 2024, an AI Act planned under the Maldives 2.0 digital programme and a Data Protection Bill before parliament were all pending in October 2026. The Maldives Media and Broadcasting Commission's code of conduct for broadcasters, media personnel and journalists, in force since 15 December 2025, requires AI-generated content to be disclosed and fact-checked. The Prosecutor General's Office published an institutional AI strategy, AI governance framework and binding AI policy in August 2026, which sets risk categories, prohibited uses and a ban on putting case data into public AI tools.",
     "lead_institutions": [
       "Prosecutor General's Office",
-      "President's Office"
+      "President's Office",
+      "Maldives Media and Broadcasting Commission"
     ],
     "last_deep_review": "2026-10-12",
     "review_notes": "This review was completed on 12 October 2026 and covers national law, government, ministries and regulators. The AI masterplan, planned AI Act and data protection bill are listed as leads. Not yet verified from the official text: material on the parliament and technology ministry websites."
@@ -190,6 +191,61 @@
       "document_access_type": "original_government_document",
       "source_id": "s-b68141a12721",
       "evidence_reference": "curl (browser user agent, --max-time 60): full 40-page PDF read with pdftotext; linked from the PGO 2.0 page https://pgoffice.gov.mv/en/pgo-2.0"
+    },
+    {
+      "id": "i-ccef627623aa",
+      "official_title": "ބްރޯޑްކާސްޓަރުންނާއި، މީޑިއާގައި މަސައްކަތްކުރާ ފަރާތްތަކާއި، ނޫސްވެރިންގެ ސުލޫކީ މިންގަނޑު",
+      "english_title": "Code of Conduct for Broadcasters, Media Personnel and Journalists",
+      "issuing_authority": "Maldives Media and Broadcasting Commission",
+      "authority_type": "regulator",
+      "categories": [
+        "sectoral",
+        "binding-law",
+        "generative-ai",
+        "transparency"
+      ],
+      "legal_status": "binding_regulation",
+      "lifecycle": "in_force",
+      "publication_date": "2025-12-15",
+      "current_status": "Published in the Government Gazette, Volume 54, Issue 233, on 15 December 2025, and in force from that day under section 17. Non-compliance may result in action under section 8 of Law No. 16/2025 (Maldives Media and Broadcasting Regulation Act).",
+      "summary": "Code of conduct of the Maldives Media and Broadcasting Commission for broadcasters, media personnel and journalists. Section 14 sets rules for content produced using artificial intelligence: such content must not breach the standards of the code; AI-generated content must be disclosed as such when presented; AI may be used only as an aid in journalism and content production, and information presented must be fact-checked; and manipulated or fabricated photos, audio and video resembling the original must not be used to create hatred. The definition of content in section 16 includes artificial intelligence or visual material. Under section 15, action may be taken for non-compliance under section 8 of Law No. 16/2025 (Maldives Media and Broadcasting Regulation Act).",
+      "ai_governance_relevance": "First binding rule in the Maldives with AI content disclosure requirements, applying across the broadcasting and media sector.",
+      "source_url": "https://gazette.gov.mv/gazette/7401",
+      "official_pdf_url": "https://storage.googleapis.com/gazette.gov.mv/docs/gazette/7650.pdf",
+      "official_webpage_url": "https://gazette.gov.mv/gazette/7401",
+      "sectors": [
+        "media"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-56b7775236c4",
+      "publisher_name": "Maldives Media and Broadcasting Commission",
+      "jurisdiction_id": "MDV",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "sectoral",
+      "subcategory": null,
+      "effective_date": "2025-12-15",
+      "last_amended_date": null,
+      "scope": "Broadcasters, media personnel and journalists in the Maldives (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [
+        "no regulation number printed in the gazette text"
+      ],
+      "language": "dv",
+      "verification_date": "2026-11-08",
+      "first_recorded": "2026-11-08",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-f3283eff6950",
+      "evidence_reference": "Government Gazette Vol. 54 Issue 233 (15 December 2025), 16-page PDF from the gazette storage link, saved 2026-11-08 and read with pdftotext: title page, sections 1, 14-17. The Dhivehi text was read by Claude; the English rendering of section 14 is not an official translation."
     }
   ],
   "organizations": [
@@ -201,6 +257,16 @@
       "ai_governance_role": "Independent constitutional office heading public prosecutions; issued the PGO 2.0 Institutional AI Strategy 2026-2028, the AI Governance Framework and the AI Governance Policy (August 2026), binding on the Office only.",
       "source_url": "https://pgoffice.gov.mv/en/pgo-2.0",
       "authority_type": "government",
+      "government_level": "national"
+    },
+    {
+      "id": "o-56b7775236c4",
+      "jurisdiction_id": "MDV",
+      "name": "Maldives Media and Broadcasting Commission",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Statutory media regulator under the Maldives Media and Broadcasting Regulation Act (Law No. 16/2025); issued the Code of Conduct for Broadcasters, Media Personnel and Journalists (December 2025), which sets rules for content produced using AI.",
+      "source_url": "https://gazette.gov.mv/gazette/7401",
+      "authority_type": "regulator",
       "government_level": "national"
     }
   ],
@@ -289,6 +355,35 @@
       "document_language": "en",
       "error": null,
       "content_type": "application/pdf"
+    },
+    {
+      "id": "s-f3283eff6950",
+      "url": "https://gazette.gov.mv/gazette/7401",
+      "jurisdiction_ids": [
+        "MDV"
+      ],
+      "source_institutions": [
+        "Maldives Media and Broadcasting Commission"
+      ],
+      "instrument_ids": [
+        "i-ccef627623aa"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "binding-law",
+        "generative-ai",
+        "transparency"
+      ],
+      "date_reviewed": "2026-11-08",
+      "checked_date": "2026-11-08",
+      "check_method": "Gazette PDF (Vol. 54 Issue 233, 16 pages, https://storage.googleapis.com/gazette.gov.mv/docs/gazette/7650.pdf) saved 2026-11-08 and read with pdftotext; Dhivehi text read by Claude, not an official translation; title, sections 14, 15 and 17 and issue date 15 December 2025 taken from the PDF",
+      "http_status": null,
+      "final_url": "https://gazette.gov.mv/gazette/7401",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "dv",
+      "error": null,
+      "content_type": null
     }
   ],
   "regional_applicability": [],
@@ -308,6 +403,7 @@
       "transparency"
     ],
     "categories_with_findings": [
+      "binding-law",
       "ethics",
       "generative-ai",
       "government-governance",
@@ -315,13 +411,12 @@
       "public-sector",
       "risk-assurance",
       "sectoral",
-      "strategy"
+      "strategy",
+      "transparency"
     ],
     "categories_where_no_material_was_found": [
-      "binding-law",
       "cyber-security",
       "data-privacy",
-      "transparency",
       "standards",
       "sandbox",
       "index-readiness",
@@ -365,12 +460,27 @@
       "regional_inheritance": "COMPLETE",
       "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "The Maldives' official gazette, the President's Office, digital government sites, ministries and regulators were searched in Dhivehi and English. The Prosecutor General's Office AI strategy, framework and policy were found; there is no AI law and no data protection law yet, and no material was found for cybersecurity, transparency, standards, sandboxes, indices, drafts, international instruments or older publications (the pending data protection bill and an announced AI masterplan are leads). The data protection bill and the AI masterplan remain to be checked.",
+    "no_material_found_note": "The Maldives' official gazette, the President's Office, digital government sites, ministries and regulators were searched in Dhivehi and English. The Prosecutor General's Office AI strategy, framework and policy were found; the Media and Broadcasting Commission's December 2025 code of conduct sets binding rules for AI-generated media content; there is no AI law and no data protection law yet, and no material was found for cybersecurity, standards, sandboxes, indices, drafts, international instruments or older publications (the pending data protection bill and an announced AI masterplan are still awaiting official texts). The data protection bill and the AI masterplan remain to be checked.",
     "discovery_result_count": 11,
     "focused_result_count": 10,
-    "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. majlis.gov.mv 403; Ministry of Homeland Security and Technology site and gov.mv portal refused by the proxy. Gazette titles searched in Dhivehi and English. PGO documents dated August 2026 only. Not a party to Convention 108. Units covered: Law: Official Gazette (gazette.gov.mv) title search in Dhivehi and English: no AI law, no AI provisions found; no personal data protection act gazetted (Data Protection Bill pending in the Majlis, held as lead). Media and Broadcasting Commission regulation 87-R/2026 checked: no AI provisions. majlis.gov.mv blocked (HTTP 403).; Government: President's Office (AI masterplan announcement Oct 2024, no document -> lead; PGO 2.0 launch); Maldives 2.0 site digital.gov.mv (pillars and milestone charts; only an 'AI Act Adopted' milestone -> lead); Maldives Digital Service (mds.gov.mv): no AI policy or standard published. Ministry of Homeland Security and Technology and NCIT/gov.mv portal unreachable via proxy.; Ministries: Prosecutor General's Office: AI strategy, framework and policy (3 records). Education (moe.gov.mv), Attorney General's Office (agoffice.gov.mv) and Health (health.gov.mv) home pages checked and web searches run: no AI documents found. Finance, defence, labour: general web searches only, nothing found.; Regulators: Maldives Monetary Authority (mma.gov.mv): no AI guidance found. Communications Authority (cam.gov.mv), National Cyber Security Agency (hub.ncsa.gov.mv) and Capital Market Development Authority (cmda.gov.mv) home pages checked: no AI-specific documents found. No data protection authority yet (Privacy Commissioner proposed in pending bill). CRA site unreachable.. Not reached: People's Majlis website (HTTP 403); Ministry of Homeland Security and Technology website (proxy connect rejected); gov.mv central portal (proxy connect rejected). Could not verify: People's Majlis bill page for the Data Protection Bill (403); Whether the 2024 AI masterplan has been drafted or published (Ministry of Homeland Security and Technology site unreachable). binding-law, cyber-security, data-privacy, transparency, standards, sandbox, index-readiness, drafts, international, historical: no material found.\nWording note 2026-10-19 (narrative.review_notes): The parliament and technology ministry websites could not be reached, and the AI masterplan, planned AI Act and data protection bill are listed as leads.\nWording note 2026-10-19 (coverage_audit.no_material_found_note): Parliament's website and the technology ministry and central government portals were unavailable, so the data"
+    "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. majlis.gov.mv 403; Ministry of Homeland Security and Technology site and gov.mv portal refused by the proxy. Gazette titles searched in Dhivehi and English. PGO documents dated August 2026 only. Not a party to Convention 108. Units covered: Law: Official Gazette (gazette.gov.mv) title search in Dhivehi and English: no AI law, no AI provisions found; no personal data protection act gazetted (Data Protection Bill pending in the Majlis, held as lead). Media and Broadcasting Commission regulation 87-R/2026 checked: no AI provisions. majlis.gov.mv blocked (HTTP 403).; Government: President's Office (AI masterplan announcement Oct 2024, no document -> lead; PGO 2.0 launch); Maldives 2.0 site digital.gov.mv (pillars and milestone charts; only an 'AI Act Adopted' milestone -> lead); Maldives Digital Service (mds.gov.mv): no AI policy or standard published. Ministry of Homeland Security and Technology and NCIT/gov.mv portal unreachable via proxy.; Ministries: Prosecutor General's Office: AI strategy, framework and policy (3 records). Education (moe.gov.mv), Attorney General's Office (agoffice.gov.mv) and Health (health.gov.mv) home pages checked and web searches run: no AI documents found. Finance, defence, labour: general web searches only, nothing found.; Regulators: Maldives Monetary Authority (mma.gov.mv): no AI guidance found. Communications Authority (cam.gov.mv), National Cyber Security Agency (hub.ncsa.gov.mv) and Capital Market Development Authority (cmda.gov.mv) home pages checked: no AI-specific documents found. No data protection authority yet (Privacy Commissioner proposed in pending bill). CRA site unreachable.. Not reached: People's Majlis website (HTTP 403); Ministry of Homeland Security and Technology website (proxy connect rejected); gov.mv central portal (proxy connect rejected). Could not verify: People's Majlis bill page for the Data Protection Bill (403); Whether the 2024 AI masterplan has been drafted or published (Ministry of Homeland Security and Technology site unreachable). binding-law, cyber-security, data-privacy, transparency, standards, sandbox, index-readiness, drafts, international, historical: no material found.\nWording note 2026-10-19 (narrative.review_notes): The parliament and technology ministry websites could not be reached, and the AI masterplan, planned AI Act and data protection bill are listed as leads.\nWording note 2026-10-19 (coverage_audit.no_material_found_note): Parliament's website and the technology ministry and central government portals were unavailable, so the data\nUpdate 2026-11-08: Media and Broadcasting Commission code of conduct (Gazette Vol. 54 Issue 233, 15 Dec 2025) added from the gazette PDF; the Dhivehi text was read by Claude, not an official translation. binding-law and transparency now have findings."
   },
   "changes": [
+    {
+      "id": "c-337503cac3f0",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "MDV",
+      "instrument_id": "i-ccef627623aa",
+      "title": "Code of Conduct for Broadcasters, Media Personnel and Journalists",
+      "detail": "Added to the radar (published 2025-12-15).",
+      "from": null,
+      "to": null,
+      "source_url": "https://gazette.gov.mv/gazette/7401",
+      "needs_review": false
+    },
     {
       "id": "c-2229d9087fd3",
       "date": "2026-10-12",
@@ -475,6 +585,21 @@
       "to": null,
       "source_url": "https://pgoffice.gov.mv/storage/media/71c33a5b-3c05-46b9-8a2b-3a35176e3a67.pdf",
       "needs_review": false
+    },
+    {
+      "id": "c-db859c30ec1b",
+      "date": "2025-12-15",
+      "recorded": "2026-11-08",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "MDV",
+      "instrument_id": "i-ccef627623aa",
+      "title": "Code of Conduct for Broadcasters, Media Personnel and Journalists",
+      "detail": "Published by Maldives Media and Broadcasting Commission.",
+      "from": null,
+      "to": null,
+      "source_url": "https://gazette.gov.mv/gazette/7401",
+      "needs_review": false
     }
   ],
   "leads": [
@@ -511,14 +636,6 @@
       "url": "https://en.mmtv.mv/10387",
       "note": "Update to existing lead: state broadcaster PSM/MMTV (22 June 2026) reports the Majlis approved the bill at first reading (66 votes) and sent it to the ICT Committee; would create a Privacy Commissioner. Not yet passed; no AI provisions reported. Official bill text on majlis.gov.mv not checked.",
       "found": "2026-10-22"
-    },
-    {
-      "title": "Code of Conduct for Broadcasters, Journalists and Media Personnel",
-      "english_title": "Code of Conduct for Broadcasters, Journalists and Media Personnel (Government Gazette, 15 December 2025)",
-      "issuing_authority": "Maldives Media and Broadcasting Commission",
-      "url": "https://gazette.gov.mv/gazette/7401",
-      "note": "Issued by the Maldives Media and Broadcasting Commission under the Maldives Media and Broadcasting Regulation Act; took effect on Gazette publication 15 Dec 2025 (Maldives Independent, 16 Dec 2025). Per PSM/MMTV (en.mmtv.mv/7320) and MV+ (plus.mv/?p=150960), it requires that 'any content produced using artificial intelligence must clearly disclose that AI has been used', that AI only assist journalism, and that AI-generated information be verified. Would be a sector-wide binding media rule with AI-labelling provisions (sectoral, transparency, generative-ai). Checked 2026-11-07: no official copy could be read (gazette.gov.mv/gazette/7401 not readable from the cloud); known only from news, so it stays a lead until the Dhivehi official title, regulation number and text are read on the Gazette. The Oct 2026 review checked MMBC regulation 87-R/2026, a different instrument.",
-      "found": "2026-11-07"
     },
     {
       "title": "Maldives Artificial Intelligence Readiness Assessment Report",
