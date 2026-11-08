@@ -501,6 +501,58 @@
       "document_access_type": "original_government_document",
       "source_id": "s-16058a2f5810",
       "evidence_reference": "curl (browser UA, --max-time 60): BoG directives page read (lists 'Cyber and Information Security Directive (2026)' with download link); full PDF read (pdftotext): applicability (s.2), s.61, s.97, s.100, Part XIX and Annex E confirmed; Governor's launch speech page read."
+    },
+    {
+      "id": "i-934bd59ff655",
+      "jurisdiction_id": "GHA",
+      "official_title": "AI-Generated Videos (Deepfake) Promoting Fake Investments and Drugs",
+      "english_title": "CERT-GH Alert: AI-Generated Videos (Deepfake) Promoting Fake Investments and Drugs (Ref: CSA/CERT/MPA/2025-06/01)",
+      "issuing_authority": "Cyber Security Authority (National Computer Emergency Response Team, CERT-GH)",
+      "publisher_name": "Cyber Security Authority",
+      "authority_type": "cybersecurity_agency",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "cyber-security",
+        "generative-ai"
+      ],
+      "category": "cyber-security",
+      "subcategory": null,
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2025-06-30",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Published as a CERT-GH alert on the Cyber Security Authority website, dated 30 June 2025; advisory only, no binding effect.",
+      "scope": "Ghana (national)",
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Public alert from Ghana's Cyber Security Authority warning of a rise in deepfake or AI-generated videos that impersonate senior officials, lawmakers and media figures to promote fraudulent investment platforms and unapproved medicines. It tells the public how to spot manipulated video (lip-sync mismatch, abnormal blinking, unnatural speech, lighting inconsistencies), to treat such endorsements as unverified until confirmed through official channels, to check investment and health claims with the Bank of Ghana and the Food and Drugs Authority, and to report incidents to the CSA (292, WhatsApp, email). It also states that the CSA is working with social media platforms, law enforcement and other institutions to remove the videos.",
+      "ai_governance_relevance": "National cyber authority guidance on detecting and reporting AI-generated deepfake videos used in fraud.",
+      "source_url": "https://csa.gov.gh/cert-gh-alert39.php",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://csa.gov.gh/cert-gh-alert39.php",
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-9021a4095d76",
+        "i-7de4b6f65d83"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-11-07",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_publication",
+      "evidence_reference": "deep-sweep-2026-11-07: WebFetch of https://csa.gov.gh/cert-gh-alert39.php (found via WebSearch 'site:csa.gov.gh artificial intelligence OR deepfake advisory OR guidelines'). Page shows title 'AI-Generated Videos (Deepfake) Promoting Fake Investments and Drugs', 'Ref: CSA/CERT/MPA/2025-06/01', date 'June 30, 2025'; quote: 'has observed a disturbing rise in the circulation of deepfake or Artificial Intelligence (AI)-generated videos'; 'Do not trust promotional videos that claim to feature national leaders or officials without verifying from official sources'. Precedent: SGP records CSA deepfake-scam advisories (i-5ff0a44c892d) as nonbinding_guidance.",
+      "link_status": "reachable",
+      "document_access_type": "official_publication_or_full_text_page",
+      "source_id": "s-036a03306d81",
+      "organization_id": "o-3502beb2b9a8",
+      "first_recorded": "2026-11-07",
+      "last_changed": null
     }
   ],
   "organizations": [
@@ -796,6 +848,33 @@
       "document_language": "en",
       "error": null,
       "content_type": "application/pdf"
+    },
+    {
+      "id": "s-036a03306d81",
+      "url": "https://csa.gov.gh/cert-gh-alert39.php",
+      "jurisdiction_ids": [
+        "GHA"
+      ],
+      "source_institutions": [
+        "Cyber Security Authority"
+      ],
+      "instrument_ids": [
+        "i-934bd59ff655"
+      ],
+      "categories_reviewed": [
+        "cyber-security",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-11-07",
+      "checked_date": "2026-11-07",
+      "check_method": "Official CSA CERT-GH alert page read (full text; title, Ref CSA/CERT/MPA/2025-06/01 and date 30 June 2025 confirmed).",
+      "http_status": 200,
+      "final_url": "https://csa.gov.gh/cert-gh-alert39.php",
+      "link_status": "reachable",
+      "page_title": "AI-Generated Videos (Deepfake) Promoting Fake Investments and Drugs",
+      "document_language": "en",
+      "error": null,
+      "content_type": "text/html"
     }
   ],
   "regional_applicability": [],
@@ -905,6 +984,21 @@
     "last_sweep": "2026-11-08"
   },
   "changes": [
+    {
+      "id": "c-1ed4d7e2f751",
+      "date": "2026-11-07",
+      "recorded": "2026-11-07",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "GHA",
+      "instrument_id": "i-934bd59ff655",
+      "title": "CERT-GH Alert: AI-Generated Videos (Deepfake) Promoting Fake Investments and Drugs (Ref: CSA/CERT/MPA/2025-06/01)",
+      "detail": "Added to the radar (published 2025-06-30).",
+      "from": null,
+      "to": null,
+      "source_url": "https://csa.gov.gh/cert-gh-alert39.php",
+      "needs_review": false
+    },
     {
       "id": "c-a412b767750a",
       "date": "2026-10-27",
@@ -1176,6 +1270,21 @@
       "needs_review": false
     },
     {
+      "id": "c-99c8d6f792e5",
+      "date": "2025-06-30",
+      "recorded": "2026-11-07",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "GHA",
+      "instrument_id": "i-934bd59ff655",
+      "title": "CERT-GH Alert: AI-Generated Videos (Deepfake) Promoting Fake Investments and Drugs (Ref: CSA/CERT/MPA/2025-06/01)",
+      "detail": "Published by Cyber Security Authority.",
+      "from": null,
+      "to": null,
+      "source_url": "https://csa.gov.gh/cert-gh-alert39.php",
+      "needs_review": false
+    },
+    {
       "id": "c-c9080b5bcac6",
       "date": "2012-05-18",
       "recorded": "2026-10-21",
@@ -1266,7 +1375,7 @@
       "title": "Criminal Offences (Amendment) Bill, 2026",
       "english_title": "Criminal Offences (Amendment) Bill, 2026",
       "issuing_authority": "Parliament of Ghana",
-      "note": "Laid 12 June 2026 by the Attorney-General (parliament.gh Bills list); PDF could not be read (curl reset, WebFetch 503), so whether it has any deepfake/AI provisions is unknown. Check.",
+      "note": "Laid 12 June 2026 by the Attorney-General (parliament.gh Bills list); PDF could not be read (curl reset, WebFetch 503), so whether it has any deepfake/AI provisions is unknown. Check. 2026-11-07: news reports a 2026 private member's Criminal Offences (Amendment) (Internal Political Party Elections) Bill before Parliament by 10 March 2026, on vote-buying in party primaries and by-elections, with no AI or deepfake content reported; it is not confirmed whether this is the bill laid on 12 June 2026. The bill PDF on parliament.gh remains unread.",
       "found": "2026-10-13"
     },
     {
@@ -1275,6 +1384,14 @@
       "issuing_authority": "University of Ghana",
       "note": "Institutional policy (April 2026) of a public university for its own teaching, research and administration; institution-internal, not a national instrument.",
       "found": "2026-10-13"
+    },
+    {
+      "title": "Bank of Ghana Regulatory Sandbox Framework (19 August 2022)",
+      "english_title": "Bank of Ghana Regulatory Sandbox Framework",
+      "issuing_authority": "Bank of Ghana",
+      "note": "The Bank of Ghana's Regulatory and Innovation Sandbox page links the Regulatory Sandbox Framework (dated 19 August 2022; PDF https://www.bog.gov.gh/wp-content/uploads/2023/02/Regulatory-Sandbox-Framework-19th-August-2022.pdf), FAQs and the 26 January 2023 invitation to apply. Neither the page nor the 2021 pilot and 2022 launch press releases mention AI; the framework PDF has not been read. Record under 'sandbox' only if the framework text names AI or machine learning.",
+      "url": "https://www.bog.gov.gh/fintech-innovation/innovation-hub/regulatory-sandbox/",
+      "found": "2026-11-07"
     }
   ]
 }
