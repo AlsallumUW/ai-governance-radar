@@ -10,13 +10,13 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": "Liechtenstein has no AI-specific law yet: the EU AI Act still awaits incorporation into the EEA Agreement and a national implementing act. Its AI governance rests on the government's 2026 AI Strategy for the national administration, the 2018 Data Protection Act, which regulates automated individual decisions and profiling, and the data protection authority's guidance on AI, chatbots and the risks of the DeepSeek service. Liechtenstein is a party to the Council of Europe's data protection convention (Convention 108).",
+    "summary": "Liechtenstein has no AI-specific law yet: the EU AI Act still awaits incorporation into the EEA Agreement and a national implementing act. Its AI governance rests on the government's 2026 AI Strategy for the national administration, the 2018 Data Protection Act, which regulates automated individual decisions and profiling, the data protection authority's guidance on AI, chatbots and the risks of the DeepSeek service, and the education office's April 2026 guideline on AI in teaching. Liechtenstein is a party to the Council of Europe's data protection convention (Convention 108).",
     "lead_institutions": [
       "Government of the Principality of Liechtenstein",
       "Datenschutzstelle (Data Protection Authority)"
     ],
     "last_deep_review": "2026-10-13",
-    "review_notes": "This review was carried out on 12 and 13 October 2026 from the official law database, the government's and the data protection authority's websites. Not yet verified from the official text: material on the national administration portal (llv.li) and of the financial market authority, including the education office's AI teaching guideline and the government's May 2026 reply to Parliament on AI, which are tracked as leads together with the EEA incorporation of the AI Act."
+    "review_notes": "This review was carried out on 12 and 13 October 2026 from the official law database, the government's and the data protection authority's websites. Not yet verified from the official text: material on the national administration portal (llv.li) and of the financial market authority, including the government's May 2026 reply to Parliament on AI, which remain pending together with the EEA incorporation of the AI Act."
   },
   "instruments": [
     {
@@ -278,6 +278,57 @@
       "document_access_type": "original_government_document",
       "source_id": "s-1b1e2bc0ffd1",
       "evidence_reference": "curl (browser user agent, --max-time 60) re-fetched 2026-10-13 (HTTP 200); full notice read; date 13.02.2025 printed on the page"
+    },
+    {
+      "id": "i-c0e4069cda6d",
+      "official_title": "Einsatz Künstlicher Intelligenz (KI) im Unterricht – Leitfaden für Lehr- und Schulpersonal",
+      "english_title": "Use of Artificial Intelligence (AI) in Teaching – Guideline for Teaching and School Staff",
+      "jurisdiction_id": "LIE",
+      "issuing_authority": "Schulamt des Fürstentums Liechtenstein (Office of Education)",
+      "publisher_name": "Office of Education (Schulamt)",
+      "authority_type": "executive_agency",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "sectoral",
+        "generative-ai"
+      ],
+      "category": "sectoral",
+      "subcategory": null,
+      "legal_status": "administrative_guideline",
+      "lifecycle": "published",
+      "publication_date": "2026-04-08",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Published by the Schulamt, dated Vaduz, 8 April 2026, and filed under the office's guidelines (Richtlinien); the document calls itself a guideline (Leitfaden) and does not state its binding force.",
+      "scope": "Liechtenstein (national)",
+      "sectors": [
+        "education"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Guideline from the Office of Education to teachers and school staff on using AI in class. It states that use of freely accessible AI tools such as ChatGPT by pupils in lessons is not intended, names the Fobizz platform as the schools' safe and pedagogically sound framework for using AI tools, and says pupils may use generative AI tools only once they are approved and rules are set. It stresses that personal or sensitive data must never be entered and that AI output must always be carefully checked, adapted and critically reviewed, and recommends that tasks be designed so that independent thinking is necessary and cannot be replaced by AI.",
+      "ai_governance_relevance": "Sector-wide rules from the national education office on AI use by teachers and pupils in schools.",
+      "source_url": "https://www.llv.li/serviceportal2/amtsstellen/schulamt/richtlinien/ki_leitfaden-fuer-den-unterricht_2026_fin.pdf",
+      "official_pdf_url": "https://www.llv.li/serviceportal2/amtsstellen/schulamt/richtlinien/ki_leitfaden-fuer-den-unterricht_2026_fin.pdf",
+      "official_webpage_url": null,
+      "language": "de",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-11-07",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "llv.li PDF read in full on 2026-11-07 (earlier HTTP 403 resolved); letterhead Schulamt, Zentrum für Schulmedien; dated 'Vaduz, 8 April 2026'; quotes on freely accessible AI tools and on personal data confirmed. Fobizz wording per source: 'sicheren und pädagogisch sinnvollen Rahmen'.",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-3c486559f5b7",
+      "organization_id": "o-6d7827126cc0",
+      "first_recorded": "2026-11-07",
+      "last_changed": null
     }
   ],
   "organizations": [
@@ -309,6 +360,16 @@
       "ai_governance_role": "Landtag; enacted the Data Protection Act 2018 and received an October 2025 interpellation on AI, cloud computing and technological infrastructure.",
       "source_url": "https://www.landtag.li/",
       "authority_type": "legislature",
+      "government_level": "national"
+    },
+    {
+      "id": "o-6d7827126cc0",
+      "jurisdiction_id": "LIE",
+      "name": "Office of Education (Schulamt)",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Schulamt des Fürstentums Liechtenstein; issued the guideline for teaching and school staff on the use of AI in teaching (8 April 2026).",
+      "source_url": "https://www.llv.li/serviceportal2/amtsstellen/schulamt/richtlinien/ki_leitfaden-fuer-den-unterricht_2026_fin.pdf",
+      "authority_type": "executive_agency",
       "government_level": "national"
     }
   ],
@@ -452,6 +513,33 @@
       "document_language": "de",
       "error": null,
       "content_type": "text/html"
+    },
+    {
+      "id": "s-3c486559f5b7",
+      "url": "https://www.llv.li/serviceportal2/amtsstellen/schulamt/richtlinien/ki_leitfaden-fuer-den-unterricht_2026_fin.pdf",
+      "jurisdiction_ids": [
+        "LIE"
+      ],
+      "source_institutions": [
+        "Office of Education (Schulamt)"
+      ],
+      "instrument_ids": [
+        "i-c0e4069cda6d"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-11-07",
+      "checked_date": "2026-11-07",
+      "check_method": "llv.li PDF read in full on 2026-11-07 (earlier HTTP 403 resolved); letterhead Schulamt, Zentrum für Schulmedien; dated 'Vaduz, 8 April 2026'; quotes on freely accessible AI tools and on personal data confirmed. Fobizz wording per source: 'sicheren und pädagogisch sinnvollen Rahmen'.",
+      "http_status": 200,
+      "final_url": "https://www.llv.li/serviceportal2/amtsstellen/schulamt/richtlinien/ki_leitfaden-fuer-den-unterricht_2026_fin.pdf",
+      "link_status": "reachable",
+      "page_title": "Einsatz Künstlicher Intelligenz (KI) im Unterricht – Leitfaden für Lehr- und Schulpersonal",
+      "document_language": "de",
+      "error": null,
+      "content_type": "application/pdf"
     }
   ],
   "regional_applicability": [],
@@ -478,6 +566,7 @@
       "government-governance",
       "public-sector",
       "risk-assurance",
+      "sectoral",
       "strategy",
       "transparency"
     ],
@@ -487,7 +576,6 @@
       "standards",
       "sandbox",
       "index-readiness",
-      "sectoral",
       "drafts",
       "international",
       "historical"
@@ -536,13 +624,28 @@
       "regional_inheritance": "COMPLETE",
       "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "Liechtenstein's legislation database, parliament, government, ministries and regulators were searched. Records include the AI strategy of the national administration, the data protection law and the data protection office's AI guidance; no AI material was found for procurement, cybersecurity, standards, sandboxes, indices, specific sectors, drafts, international instruments or older publications. The school authority's AI teaching guideline, a government reply to a parliamentary question and the financial regulator's AI publications remain to be checked.",
+    "no_material_found_note": "Liechtenstein's legislation database, parliament, government, ministries and regulators were searched. Records include the AI strategy of the national administration, the data protection law, the data protection office's AI guidance and the education office's AI teaching guideline; no AI material was found for procurement, cybersecurity, standards, sandboxes, indices, drafts, international instruments or older publications. A government reply to a parliamentary question and the financial regulator's AI publications remain to be checked.",
     "discovery_result_count": 11,
     "focused_result_count": 12,
-    "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-13, one agent, national level only (PROTOCOL §6), about 25-minute time box. llv.li HTTP 403 (curl and WebFetch) - blocks Schulamt, Stabsstelle Cyber-Sicherheit, Amt für Kommunikation, bua.llv.li; fma-li.li reset (homepage via WebFetch only). Resumed run: no earlier fragment; downloads re-verified 2026-10-13. AI Strategy addresses the national administration (filed national_strategy). DSG in force 2019-01-01 per art. 91. English organisation names not confirmed as official usage. Convention 108: LGBl. 2004 Nr. 167 (12 Aug 2004), Landtag consent 11 Mar 2004, in force 1 Sep 2004. Units covered: Law: gesetze.li (Lilex) full-text searches for AI, KI-System, deepfake, automated decisions, algorithm and AI Act number: only the Data Protection Act carries AI-relevant provisions (art. 37); no AI law, deepfake offence or AI Act implementing act. landtag.li: AI interpellation (Oct 2025) found; no AI bill.; Government: regierung.li: AI Strategy of the National Administration (2026) recorded; 2023 basic paper and 2026 interpellation reply held as leads (no public text / llv.li blocked). Digitale Agenda 2019 not located as an official full text; searched, no AI-specific instrument found.; Ministries: Ministry pages on regierung.li searched via media releases; education (Schulamt AI teaching guideline) found but unreadable (llv.li 403) - lead. Health, justice, finance, labour, interior, defence: searched, nothing found.; Regulators: Datenschutzstelle: three AI guidance items recorded, Meta/LinkedIn AI-training notices as lead. FMA: homepage read via WebFetch, nothing AI-specific (curl reset). Amt für Kommunikation, Stabsstelle Cyber-Sicherheit: searched, nothing AI-specific found (llv.li blocked).. Not reached: llv.li (Landesverwaltung incl. Schulamt, Stabsstelle Cyber-Sicherheit, Amt für Kommunikation, bua.llv.li): HTTP 403 to curl and WebFetch; fma-li.li: curl connection reset; only homepage read via WebFetch. Could not verify: Schulamt AI teaching guideline (llv.li 403); Interpellation reply of 12 May 2026 (bua.llv.li 403); 2023 rolling basic paper / KI-Merkblatt (no public text); FMA AI-specific publications (site partly unreachable). procurement, cyber-security, standards, sandbox, index-readiness, sectoral, drafts, international, historical: no material found.\nWording note 2026-10-19 (narrative.review_notes): ; a run cut off by a usage limit was resumed and its downloads re-verified against the live official sources. The national administration portal (llv.li) and the financial market authority's site could not be accessed, so the education office's AI teaching guideline and the government's May 2026 reply to Parliament on AI are tracked as leads, together with the EEA incorporation of the AI Act.\nWording note 2026-10-19 (coverage_audit.no_material_found_note): Some official websites were unavailable, so the school\nWeekly sweep 2026-11-07: datenschutzstelle.li, gesetze.li, landtag.li, regierung.li read/searched, nothing new; llv.li HTTP 403 to curl.",
+    "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-13, one agent, national level only (PROTOCOL §6), about 25-minute time box. llv.li HTTP 403 (curl and WebFetch) - blocks Schulamt, Stabsstelle Cyber-Sicherheit, Amt für Kommunikation, bua.llv.li; fma-li.li reset (homepage via WebFetch only). Resumed run: no earlier fragment; downloads re-verified 2026-10-13. AI Strategy addresses the national administration (filed national_strategy). DSG in force 2019-01-01 per art. 91. English organisation names not confirmed as official usage. Convention 108: LGBl. 2004 Nr. 167 (12 Aug 2004), Landtag consent 11 Mar 2004, in force 1 Sep 2004. Units covered: Law: gesetze.li (Lilex) full-text searches for AI, KI-System, deepfake, automated decisions, algorithm and AI Act number: only the Data Protection Act carries AI-relevant provisions (art. 37); no AI law, deepfake offence or AI Act implementing act. landtag.li: AI interpellation (Oct 2025) found; no AI bill.; Government: regierung.li: AI Strategy of the National Administration (2026) recorded; 2023 basic paper and 2026 interpellation reply held as leads (no public text / llv.li blocked). Digitale Agenda 2019 not located as an official full text; searched, no AI-specific instrument found.; Ministries: Ministry pages on regierung.li searched via media releases; education (Schulamt AI teaching guideline) found but unreadable (llv.li 403) - lead. Health, justice, finance, labour, interior, defence: searched, nothing found.; Regulators: Datenschutzstelle: three AI guidance items recorded, Meta/LinkedIn AI-training notices as lead. FMA: homepage read via WebFetch, nothing AI-specific (curl reset). Amt für Kommunikation, Stabsstelle Cyber-Sicherheit: searched, nothing AI-specific found (llv.li blocked).. Not reached: llv.li (Landesverwaltung incl. Schulamt, Stabsstelle Cyber-Sicherheit, Amt für Kommunikation, bua.llv.li): HTTP 403 to curl and WebFetch; fma-li.li: curl connection reset; only homepage read via WebFetch. Could not verify: Schulamt AI teaching guideline (llv.li 403); Interpellation reply of 12 May 2026 (bua.llv.li 403); 2023 rolling basic paper / KI-Merkblatt (no public text); FMA AI-specific publications (site partly unreachable). procurement, cyber-security, standards, sandbox, index-readiness, sectoral, drafts, international, historical: no material found.\nWording note 2026-10-19 (narrative.review_notes): ; a run cut off by a usage limit was resumed and its downloads re-verified against the live official sources. The national administration portal (llv.li) and the financial market authority's site could not be accessed, so the education office's AI teaching guideline and the government's May 2026 reply to Parliament on AI are tracked as leads, together with the EEA incorporation of the AI Act.\nWording note 2026-10-19 (coverage_audit.no_material_found_note): Some official websites were unavailable, so the school\nDeep sweep 2026-11-07: Schulamt AI teaching guideline (8 Apr 2026) now readable on llv.li and recorded; lead removed; sectoral moved to findings.\nWeekly sweep 2026-11-07: datenschutzstelle.li, gesetze.li, landtag.li, regierung.li read/searched, nothing new; llv.li HTTP 403 to curl.",
     "last_sweep": "2026-11-07"
   },
   "changes": [
+    {
+      "id": "c-8fdf27171f5f",
+      "date": "2026-11-07",
+      "recorded": "2026-11-07",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "LIE",
+      "instrument_id": "i-c0e4069cda6d",
+      "title": "Use of Artificial Intelligence (AI) in Teaching – Guideline for Teaching and School Staff",
+      "detail": "Added to the radar (published 2026-04-08).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.llv.li/serviceportal2/amtsstellen/schulamt/richtlinien/ki_leitfaden-fuer-den-unterricht_2026_fin.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-8011a043a4fe",
       "date": "2026-10-13",
@@ -664,6 +767,21 @@
       "needs_review": false
     },
     {
+      "id": "c-0009e7ede167",
+      "date": "2026-04-08",
+      "recorded": "2026-11-07",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "LIE",
+      "instrument_id": "i-c0e4069cda6d",
+      "title": "Use of Artificial Intelligence (AI) in Teaching – Guideline for Teaching and School Staff",
+      "detail": "Published by Schulamt des Fürstentums Liechtenstein (Office of Education).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.llv.li/serviceportal2/amtsstellen/schulamt/richtlinien/ki_leitfaden-fuer-den-unterricht_2026_fin.pdf",
+      "needs_review": false
+    },
+    {
       "id": "c-047e1ca61c6e",
       "date": "2025-02-13",
       "recorded": "2026-10-13",
@@ -752,13 +870,6 @@
       "english_title": "Government reply to the interpellation on AI, cloud computing and technological infrastructure",
       "issuing_authority": "Government of the Principality of Liechtenstein",
       "note": "Adopted by the Government on 12 May 2026 (media release regierung.li medienportal 234435): risk-based, stepwise approach; AI only as decision support, no fully automated decisions with legal effect; regulatory sandboxes for SMEs. Full text on bua.llv.li, which returned HTTP 403 (bot challenge) to curl and WebFetch. The interpellation itself (20 October 2025) is at https://www.landtag.li/files/attachments/interpellation-betreffend-kuenstliche-intelligenz-ki-o-u-.pdf. Assess once readable.",
-      "found": "2026-10-13"
-    },
-    {
-      "title": "Einsatz Künstlicher Intelligenz (KI) im Unterricht – Leitfaden für Lehr- und Schulpersonal",
-      "english_title": "Use of AI in teaching – guideline for teaching and school staff",
-      "issuing_authority": "Schulamt (Office of Education)",
-      "note": "Official document on llv.li (https://www.llv.li/serviceportal2/amtsstellen/schulamt/richtlinien/ki_leitfaden-fuer-den-unterricht_2026_fin.pdf); search snippets indicate it is dated April 2026 and rules out pupils' use of freely accessible AI tools in class. curl and WebFetch both returned HTTP 403, so title, date and content could not be confirmed from the document. Record as administrative_guideline / sectoral (education) once readable.",
       "found": "2026-10-13"
     },
     {
