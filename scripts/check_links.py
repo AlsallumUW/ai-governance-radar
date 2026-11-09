@@ -15,9 +15,11 @@ Noise rules (a weekly run should flag real problems, not bot blocking):
 - Hosts in research/bot_protected_hosts.json block automated clients but open in a normal browser. For them,
   401/403/406/429/503 and timeouts never change the recorded status; only 404/410 do. Hosts listed under
   "fake_404_hosts" (e.g. ftc.gov) also answer bots with 404 for live pages, so for them 404 is ignored too.
-- Timeouts, connection errors and 5xx elsewhere change the status only after two consecutive failing runs
+- Blocks (401/403/406/429/503), timeouts, connection errors and 5xx elsewhere change the status only after two consecutive
+  failing runs. A redirect to a bot-challenge page counts as a block
   (fail_streak, an internal field).
-- A redirect that only changes scheme, "www.", host case, a trailing slash or the .htm/.html suffix is "reachable".
+- A redirect that only changes scheme, "www.", host case, a trailing slash or the .htm/.html suffix is "reachable", and so
+  is one that serves the same file name from a CDN or storage host.
   A redirect to the site's home page or a maintenance/login page is "redirected" with a note in "error".
 """
 import concurrent.futures as cf, http.cookiejar, json, pathlib, re, ssl, sys, urllib.error, urllib.parse, urllib.request
@@ -72,6 +74,16 @@ def norm(url):
     return (p.hostname or "").lower().removeprefix("www."), path, p.query
 
 
+CHALLENGE = re.compile(r"(validate\.perfdrive\.com|/cdn-cgi/challenge|captcha|__cf_chl|/_incapsula_resource)", re.I)
+
+
+def same_file(url, final):
+    """A redirect that serves the same file name (e.g. a ministry PDF moved to its CDN or a storage bucket)."""
+    a = urllib.parse.unquote(urllib.parse.urlsplit(url).path).rstrip("/").rsplit("/", 1)[-1].lower()
+    b = urllib.parse.unquote(urllib.parse.urlsplit(final).path).rstrip("/").rsplit("/", 1)[-1].lower()
+    return bool(a) and "." in a and a == b
+
+
 def is_home_or_error(final):
     p = urllib.parse.urlsplit(final)
     return p.path.strip("/") in ("", "index.html", "index.php", "en", "fr", "ar", "es") or bool(HOME_HINT.search(p.path + "?" + p.query))
@@ -105,6 +117,10 @@ def probe(url):
         return "inaccessible", None, url, type(e).__name__ + ": " + str(e)[:120], None
     if norm(final) == norm(target) or norm(final) == norm(url):
         return "reachable", code, final, note, ctype
+    if CHALLENGE.search(final):
+        return "inaccessible", None, url, "Redirected to a bot-challenge page", ctype
+    if same_file(url, final):
+        return "reachable", code, final, "Served from a file host or CDN: " + (urllib.parse.urlsplit(final).hostname or ""), ctype
     if is_home_or_error(final):
         return "redirected", code, final, "Redirected to the site's home, maintenance or error page", ctype
     return "redirected", code, final, note, ctype
@@ -120,9 +136,7 @@ def settle(prev, result, protected, fake404=False):
     streak = (prev.get("fail_streak") or 0) + 1
     if protected and (code in BLOCK_CODES or code is None):
         return prev.get("link_status") or "not_checked", streak
-    if code in BLOCK_CODES:
-        return status, streak
-    # timeouts, connection errors, 5xx: wait for a second failing run before changing the status
+    # blocks, timeouts, connection errors and 5xx: wait for a second failing run before changing the status
     return (status if streak >= 2 else prev.get("link_status") or "not_checked"), streak
 
 
