@@ -819,15 +819,16 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "curl (browser user agent, --max-time 60) 2026-10-13: Gazette No. 37067 PDF (HTTP 200, application/pdf) read with pdftotext incl. s.71; commencement from Proclamation R.21 of 2020 (Gazette 43461) on gov.za",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.gov.za/sites/default/files/gcis_document/201409/3706726-11act4of2013popi.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-91ed20aa65c6",
@@ -846,15 +847,16 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "curl (browser user agent, --max-time 60) 2026-10-13: Gazette No. 43834 PDF (HTTP 200) read with pdftotext; no change",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.gov.za/sites/default/files/gcis_document/202010/43834gen591.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-2e16cdadf84a",
@@ -876,15 +878,16 @@
         "historical"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "curl (browser user agent, --max-time 60) 2026-10-13: Gazette No. 54477 PDF and Gazette No. 54840 (Notice 3978 of 2026) PDF on gov.za HTTP 200, read with pdftotext; Cabinet statement of 3 June 2026 on gov.za read",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.gov.za/sites/default/files/gcis_document/202604/54477gen3880.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-12a5242417dc",
@@ -904,15 +907,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "curl (browser user agent, --max-time 60): SARB PA publication page and 56-page report PDF read (pdftotext); 24 November 2025 date from the joint FSCA/PA press release PDF on resbank.co.za; re-checked 2026-10-13 (HTTP 200, no change)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.resbank.co.za/content/dam/sarb/publications/prudential-authority/pa-public-awareness/covid-19-response/2025/artificial-intelligence-in-the-south-african-financial-sector/Artificial%20Intelligence%20in%20the%20South%20African%20Financial%20Sector.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-617238325b8d",
@@ -933,15 +937,16 @@
         "drafts"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-19",
-      "check_method": "curl (browser user agent, --max-time 60, CA bundle supplemented with the missing Sectigo intermediate) 2026-10-13: download page HTTP 200; PDF via ?download=338 HTTP 200 application/pdf, 20 pages read with pdftotext. WebFetch of the old DCDT URL: HTTP 503.",
-      "http_status": 200,
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 500,
       "final_url": "https://www.dcdt.gov.za/documents/legislations/policies/file/338-sa-national-ai-policy-framework.html",
       "link_status": "broken",
       "page_title": "DCDT - Gazettes - SA National AI Policy Framework",
       "document_language": "en",
-      "error": null,
-      "content_type": "text/html"
+      "error": "HTTP Error 500: Internal Server Error",
+      "content_type": "text/html",
+      "fail_streak": 1
     },
     {
       "id": "s-8679700d6626",
@@ -961,15 +966,16 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "curl (browser user agent, --max-time 60) 2026-10-13: PDF HTTP 200 application/pdf, 21 pages read with pdftotext; linked from the HPCSA Corporate Affairs blog post of 4 December 2025 (HTTP 200)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.hpcsa-blogs.co.za/wp-content/uploads/2025/11/ETHICAL-GUIDELINES-USE-OF-AI.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-34e17bcd1183",
@@ -988,15 +994,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "curl (browser user agent, --max-time 60) 2026-10-13: Annexure 8 PDF HTTP 200 application/pdf read with pdftotext; launch page and media statement (13 November 2025) HTTP 200",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.compcom.co.za/wp-content/uploads/2025/11/CC_MDPMI-Final-Report_Non-Confidential_Annexure8_Remedial-Actions.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-f8fc404a4f6c",
@@ -1017,15 +1024,16 @@
         "historical"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "curl (browser user agent, --max-time 60; CA bundle supplemented with the Sectigo intermediate) 2026-10-13: PDF HTTP 200 application/pdf, 53 pages read with pdftotext; linked from the DCDT National AI Summit page",
-      "http_status": 200,
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 500,
       "final_url": "https://www.dcdt.gov.za/images/phocadownload/AI_Government_Summit/National_AI_Government_Summit_Discussion_Document.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
-      "error": null,
-      "content_type": "application/pdf"
+      "error": "HTTP Error 500: Internal Server Error",
+      "content_type": "application/pdf",
+      "fail_streak": 1
     },
     {
       "id": "s-99d3a2b46434",
@@ -1044,15 +1052,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-18",
-      "checked_date": "2026-10-18",
-      "check_method": "curl (browser user agent, --max-time 60) 2026-10-18: PDF read with pdftotext",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.sahpra.org.za/wp-content/uploads/2025/09/MD08-20252026_-SAHPRA-Communication-to-Industry-AI-Medical-devices_Acknowledgements.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-9553facaae0e",
@@ -1073,15 +1082,16 @@
         "sectoral"
       ],
       "date_reviewed": "2026-10-22",
-      "checked_date": "2026-10-22",
-      "check_method": "wave3-2026-10-22: Government Gazette PDF on gov.za (Notice 3995, Gazette 54925), read in full via WebFetch.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.gov.za/sites/default/files/gcis_document/202607/54925gon3995.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-372a09d91f63",
@@ -1100,15 +1110,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-11-07",
-      "checked_date": "2026-11-07",
-      "check_method": "deep-sweep-africa-2-2026-11-07: Government Gazette notice PDF on gov.za read in full.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.gov.za/sites/default/files/gcis_document/202506/52914gen3339.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-034ea4351c69",
@@ -1128,15 +1139,16 @@
         "drafts"
       ],
       "date_reviewed": "2026-11-07",
-      "checked_date": "2026-11-07",
-      "check_method": "deep-sweep-africa-2-2026-11-07: Government Gazette notice PDF on gov.za read in full.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.gov.za/sites/default/files/gcis_document/202512/53873gen3708.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-55dbfd92fad3",
@@ -1156,15 +1168,16 @@
         "drafts"
       ],
       "date_reviewed": "2026-11-07",
-      "checked_date": "2026-11-07",
-      "check_method": "deep-sweep-africa-2-2026-11-07: Government Gazette notice PDF on gov.za read in full.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.gov.za/sites/default/files/gcis_document/202609/55353gen4147.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     }
   ],
   "regional_applicability": [],

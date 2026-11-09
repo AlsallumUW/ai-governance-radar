@@ -2976,7 +2976,7 @@
       "metadata_gaps": [],
       "source_kind": "official_publication",
       "evidence_reference": "che-sweep-2026-10-23: PDF downloaded and read (cover 'Bern, den 02. Oktober 2026'); press release dateline Bern, 02.10.2026.",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "official_document",
       "source_id": "s-263a2a6e8b77",
       "organization_id": "o-afe20caf7b4a",
@@ -3027,7 +3027,7 @@
       ],
       "source_kind": "official_publication",
       "evidence_reference": "deep-sweep-2026-11-04: WebFetch of the Federal Council publication page (admin.ch newnsb): title 'Bericht über den Einfluss von künstlicher Intelligenz in der Cybersicherheit', 'Bern, 12.12.2025', link 'Bericht des Bundesrates in Erfüllung des Postulates 23.3861 Andrey vom 15. Juni 2023 (PDF, 405.37 kB, 12 December 2025)'. The PDF itself could not be opened (allowlist refusal); title and date taken from the issuer page.",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "official_publication_or_full_text_page",
       "source_id": "s-fcd77fd20491",
       "organization_id": "o-afe20caf7b4a",
@@ -3078,7 +3078,7 @@
       "metadata_gaps": [],
       "source_kind": "official_publication",
       "evidence_reference": "deep-sweep-2026-11-04: WebFetch of Federal Council publication page: title 'Anwendungsmöglichkeiten der Künstlichen Intelligenz im Energiesektor', date 19 September 2025, attachment 'Report Künstliche Intelligenz und Versorgungssicherheit (in fulfilment of postulate 23.3957), PDF, 19 September 2025'. Recommendation quoted: BFE will ask VSE to develop an AI governance industry guideline within two years.",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "official_publication_or_full_text_page",
       "source_id": "s-32d8edb01425",
       "organization_id": "o-afe20caf7b4a",
@@ -3452,14 +3452,15 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "GET (curl --max-time 60) of the Federal Chancellery page (HTTP 200) and of the linked PDF ki-teilstrategie.pdf; full text read (pdftotext)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bk.admin.ch/de/einsatz-von-ki-in-der-bundesverwaltung",
       "link_status": "reachable",
       "page_title": "Einsatz von KI in der Bundesverwaltung",
       "document_language": "de",
-      "error": null
+      "error": null,
+      "fail_streak": 0
     },
     {
       "id": "s-a50108896bd8",
@@ -3478,14 +3479,15 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "Fedlex SPARQL endpoint for consolidation dates; consolidated HTML (Stand 7 July 2025) fetched with curl from the Fedlex filestore and read (Arts. 1-2, 5, 21, 22, 25, 74). The www.fedlex.admin.ch page is a JavaScript application (HTTP 200).",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.fedlex.admin.ch/eli/cc/2022/491/de",
       "link_status": "reachable",
       "page_title": "Bundesgesetz über den Datenschutz (Datenschutzgesetz, DSG)",
       "document_language": "de",
-      "error": null
+      "error": null,
+      "fail_streak": 0
     },
     {
       "id": "s-fbfd58b80c4d",
@@ -3504,14 +3506,15 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "Fedlex SPARQL endpoint for consolidation dates and AS publication date; consolidated HTML (Stand 1 December 2025) fetched with curl from the Fedlex filestore and read.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.fedlex.admin.ch/eli/cc/2022/568/de",
       "link_status": "reachable",
       "page_title": "Verordnung über den Datenschutz (Datenschutzverordnung, DSV)",
       "document_language": "de",
-      "error": null
+      "error": null,
+      "fail_streak": 0
     },
     {
       "id": "s-4dda5b515d19",
@@ -3530,14 +3533,15 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "Fedlex SPARQL for act metadata; amending act HTML (AS 2023 453) and partial-commencement ordinance (AS 2025 49) fetched with curl from the Fedlex filestore and read.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.fedlex.admin.ch/eli/oc/2023/453/de",
       "link_status": "reachable",
       "page_title": "Strassenverkehrsgesetz (SVG) Änderung vom 17. März 2023",
       "document_language": "de",
-      "error": null
+      "error": null,
+      "fail_streak": 0
     },
     {
       "id": "s-d441ef6dbc67",
@@ -3556,14 +3560,15 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "Fedlex SPARQL for act metadata and consolidations; consolidated HTML (Stand 1 January 2026) and the amendment of 15 October 2025 fetched with curl from the Fedlex filestore and read.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.fedlex.admin.ch/eli/cc/2025/50/de",
       "link_status": "reachable",
       "page_title": "Verordnung über das automatisierte Fahren (VAF)",
       "document_language": "de",
-      "error": null
+      "error": null,
+      "fail_streak": 0
     },
     {
       "id": "s-c552a6a7d3e2",
@@ -3582,14 +3587,15 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "OFCOM page fetched with curl and read; report PDF (FOJ copy https://www.bj.admin.ch/dam/de/sd-web/Bu0WALkfbp1B/ber-bakom-ki.pdf, identical report number) downloaded with curl and read with pdftotext (executive summary, contents, conclusions). Federal Council press release (news.admin.ch nsb id 104110) read via WebFetch after curl returned 403.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bakom.admin.ch/de/kuenstliche-intelligenz",
       "link_status": "reachable",
       "page_title": "Künstliche Intelligenz",
       "document_language": "de",
-      "error": null
+      "error": null,
+      "fail_streak": 0
     },
     {
       "id": "s-166ab1656b5d",
@@ -3608,14 +3614,15 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "PDF downloaded with curl from the FOJ site (linked from https://www.bj.admin.ch/de/kuenstliche-intelligenz) and read with pdftotext (title page, overview, conclusions).",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bj.admin.ch/dam/de/sd-web/nXpT9p07Cpv8/rechtliche-analyse-ki.pdf",
       "link_status": "reachable",
       "page_title": "Rechtliche Basisanalyse im Rahmen der Auslegeordnung zu den Regulierungsansätzen im Bereich künstliche Intelligenz",
       "document_language": "de",
-      "error": null
+      "error": null,
+      "fail_streak": 0
     },
     {
       "id": "s-f2ace28265b9",
@@ -3634,14 +3641,15 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "Fedlex SPARQL for consultation metadata (start 2025-10-30, end 2026-02-16); Federal Gazette notice HTML and draft act PDF fetched with curl from the Fedlex filestore and read (Arts. 1-3, 15-19).",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.fedlex.admin.ch/eli/fga/2025/3178/de",
       "link_status": "reachable",
       "page_title": "Vernehmlassungsverfahren. UVEK. Neues Bundesgesetz über Kommunikationsplattformen und Suchmaschinen (KomPG)",
       "document_language": "de",
-      "error": null
+      "error": null,
+      "fail_streak": 0
     },
     {
       "id": "s-e98a468b59f9",
@@ -3662,14 +3670,15 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "GET (curl --max-time 60, browser user agent); full text read (pdftotext)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bk.admin.ch/dam/de/sd-web/Z9TITZWfhVwX/Umsetzungsplan%20der%20KI-Teilstrategie%20mit%20Roadmap%202026-2028.pdf",
       "link_status": "reachable",
       "page_title": "Umsetzungsplan KI-Teilstrategie",
       "document_language": "de",
-      "error": null
+      "error": null,
+      "fail_streak": 0
     },
     {
       "id": "s-ce8ebce03632",
@@ -3689,14 +3698,15 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "GET (curl --max-time 60, browser user agent); full text read (pdftotext)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bk.admin.ch/dam/de/sd-web/r84AJpxifth2/ki-leitlinien.pdf",
       "link_status": "reachable",
       "page_title": "Leitlinien «Künstliche Intelligenz» für den Bund. Orientierungsrahmen für den Umgang mit künstlicher Intelligenz in der Bundesverwaltung",
       "document_language": "de",
-      "error": null
+      "error": null,
+      "fail_streak": 0
     },
     {
       "id": "s-1b8b514eabb1",
@@ -3717,14 +3727,15 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "GET (curl --max-time 60, browser user agent); full text read (pdftotext)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bk.admin.ch/dam/de/sd-web/8ZNpPvD-7pJe/Rechtlicher%20Rahmen%20f%C3%BCr%20die%20Nutzung%20von%20KI%20in%20der%20Bundesverwaltung%20(inkl.%20Anh%C3%A4nge%20A%20und%20B).pdf",
       "link_status": "reachable",
       "page_title": "Rechtlicher Rahmen für die Nutzung von KI in der Bundesverwaltung. Bericht in Umsetzung von Ziel 2 des Handlungsfelds 3 der KI-Teilstrategie",
       "document_language": "de",
-      "error": null
+      "error": null,
+      "fail_streak": 0
     },
     {
       "id": "s-c3a2a4b389a9",
@@ -3744,14 +3755,15 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "GET (curl --max-time 60, browser user agent); full text read (pdftotext)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bk.admin.ch/dam/de/sd-web/8Qmy4Jdh7Z6H/Merkblatt-zur-Verwendung-von-generativen-KI-Werkzeugen-in-der-Bundesverwaltung.pdf",
       "link_status": "reachable",
       "page_title": "Merkblatt zur Verwendung von generativen KI-Werkzeugen in der Bundesverwaltung",
       "document_language": "de",
-      "error": null
+      "error": null,
+      "fail_streak": 0
     },
     {
       "id": "s-a1d432507add",
@@ -3771,14 +3783,15 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "GET (curl --max-time 60, browser user agent); full text read (pdftotext)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bk.admin.ch/dam/de/sd-web/LFhusvr5DMzj/Merkblatt%20zur%20Sensibilisierung%20grosser%20KI-Sprachmodellen%20LLMs.pdf",
       "link_status": "reachable",
       "page_title": "Merkblatt zur Sensibilisierung betreffend grosse KI-Sprachmodelle in der Bundesverwaltung",
       "document_language": "de",
-      "error": null
+      "error": null,
+      "fail_streak": 0
     },
     {
       "id": "s-c7e803b08aa8",
@@ -3797,14 +3810,15 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "GET (curl --max-time 60, browser user agent); full text read (pdftotext)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bk.admin.ch/dam/de/sd-web/Nhe0aHxcY-C7/Merkblatt%20zu%20DeepL%20Pro%20und%20DeepL%20Write.pdf",
       "link_status": "reachable",
       "page_title": "Merkblatt DeepL Pro Translate und DeepL Write",
       "document_language": "de",
-      "error": null
+      "error": null,
+      "fail_streak": 0
     },
     {
       "id": "s-04fb1584de60",
@@ -3823,14 +3837,15 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "GET (curl --max-time 60, browser user agent); full text read (pdftotext)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bk.admin.ch/dam/de/sd-web/0MPMDSsyaU8s/Effizienzsteigerung%20von%20Verwaltungsprozessen%20durch%20Prozessautomatisierung%20und%20k%C3%BCnstliche%20Intelligenz.pdf",
       "link_status": "reachable",
       "page_title": "Effizienzsteigerung von Verwaltungsprozessen durch Prozessautomatisierung und künstliche Intelligenz. Bericht des Bundesrates in Erfüllung des Postulates 24.3582 Silberschmidt vom 12. Juni 2024",
       "document_language": "de",
-      "error": null
+      "error": null,
+      "fail_streak": 0
     },
     {
       "id": "s-59e694976064",
@@ -3849,14 +3864,15 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "GET (curl --max-time 60, browser user agent); full text read (pdftotext)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bk.admin.ch/dam/de/sd-web/dPHwEjmSbtax/Konzept%20zur%20Weiterentwicklung%20der%20Koordination%20f%C3%BCr%20den%20Einsatz%20von%20k%C3%BCnstlicher%20Intelligenz%20in%20der%20Bundesverwaltung%20-%20DE.pdf",
       "link_status": "reachable",
       "page_title": "Weiterentwicklung der Koordination für den Einsatz von künstlicher Intelligenz in der Bundesverwaltung. Konzept",
       "document_language": "de",
-      "error": null
+      "error": null,
+      "fail_streak": 0
     },
     {
       "id": "s-ea8fd187845b",
@@ -3876,14 +3892,15 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "Fedlex SPARQL metadata (dateDocument 2025-12-12, entry into force 2026-02-01, publication 2025-12-30) and GET (curl) of the Fedlex filestore HTML text; eli page returns HTTP 200",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.fedlex.admin.ch/eli/oc/2025/869/de",
       "link_status": "reachable",
       "page_title": "Verordnung über die digitalen Dienste und die digitale Transformation in der Bundesverwaltung (Digitalisierungsverordnung, DigiV), Änderung vom 12. Dezember 2025",
       "document_language": "de",
-      "error": null
+      "error": null,
+      "fail_streak": 0
     },
     {
       "id": "s-fd0473ee358f",
@@ -3903,14 +3920,15 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "GET (curl --max-time 60, browser user agent); full text read (pdftotext)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/29325686/master",
       "link_status": "reachable",
       "page_title": "Verhaltenskodex des Bundes für menschenzentrierte und vertrauenswürdige Datenwissenschaft",
       "document_language": "de",
-      "error": null
+      "error": null,
+      "fail_streak": 0
     },
     {
       "id": "s-a7887b398c4f",
@@ -3929,14 +3947,15 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "GET (curl --max-time 60, browser user agent); full text read (pdftotext)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.newsd.admin.ch/newsd/message/attachments/71096.pdf",
       "link_status": "reachable",
       "page_title": "Künstliche Intelligenz und internationales Regelwerk. Bericht an den Bundesrat",
       "document_language": "de",
-      "error": null
+      "error": null,
+      "fail_streak": 0
     },
     {
       "id": "s-bc69aa98d4f4",
@@ -3955,14 +3974,15 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "GET (curl --max-time 60) of the OFCOM page and the linked PDF; full text read",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bakom.admin.ch/en/ai-guidelines",
       "link_status": "reachable",
       "page_title": "AI - Guidelines (OFCOM)",
       "document_language": "en",
-      "error": null
+      "error": null,
+      "fail_streak": 0
     },
     {
       "id": "s-84bc2fb4ab90",
@@ -3981,14 +4001,15 @@
         "sectoral"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "GET (curl --max-time 60, browser user agent); full text read (pdftotext)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.sbfi.admin.ch/dam/de/sd-web/6kDxT0J3Rq6k/bericht_idag_ki_d%5B1%5D.pdf",
       "link_status": "reachable",
       "page_title": "Herausforderungen der künstlichen Intelligenz. Bericht der interdepartementalen Arbeitsgruppe «Künstliche Intelligenz» an den Bundesrat",
       "document_language": "de",
-      "error": null
+      "error": null,
+      "fail_streak": 0
     },
     {
       "id": "s-f96755836fa4",
@@ -4007,14 +4028,15 @@
         "sectoral"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "GET (curl --max-time 60, browser user agent); full text read (pdftotext)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.sbfi.admin.ch/dam/de/sd-web/FdBIPTlTcArD/k-i_c-s_d%5B1%5D.pdf",
       "link_status": "reachable",
       "page_title": "Künstliche Intelligenz in der Cybersicherheit und Sicherheitspolitik. Bericht der Projektgruppe «Künstliche Intelligenz in der Cybersicherheit und Sicherheitspolitik»",
       "document_language": "de",
-      "error": null
+      "error": null,
+      "fail_streak": 0
     },
     {
       "id": "s-7e5e09cf48d1",
@@ -4033,14 +4055,15 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "GET (curl --max-time 60, browser user agent); full text read (pdftotext)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.sbfi.admin.ch/dam/de/sd-web/d6qY1HlCMeq9/k-i_m-o_d%5B1%5D.pdf",
       "link_status": "reachable",
       "page_title": "Künstliche Intelligenz, Medien & Öffentlichkeit. Bericht der Projektgruppe «Künstliche Intelligenz, Medien & Öffentlichkeit» vom 16. August 2019",
       "document_language": "de",
-      "error": null
+      "error": null,
+      "fail_streak": 0
     },
     {
       "id": "s-00d6995bdcee",
@@ -4059,14 +4082,15 @@
         "sectoral"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "GET (curl --max-time 60, browser user agent); full text read (pdftotext)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.sbfi.admin.ch/dam/de/sd-web/o-gB5cubvk9C/i-g_ki_d%5B1%5D.pdf",
       "link_status": "reachable",
       "page_title": "«Internationale Gremien und künstliche Intelligenz». Bericht der Projektgruppe «Internationale Gremien und künstliche Intelligenz» vom 15. August 2019",
       "document_language": "de",
-      "error": null
+      "error": null,
+      "fail_streak": 0
     },
     {
       "id": "s-2e870d401638",
@@ -4084,14 +4108,15 @@
         "sectoral"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "GET (curl --max-time 60, browser user agent); full text read (pdftotext)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.sbfi.admin.ch/dam/de/sd-web/N9j6MCT0hKil/a-m_k-i_d%5B1%5D.pdf",
       "link_status": "reachable",
       "page_title": "Automatisierte Mobilität und künstliche Intelligenz. Bericht der Projektgruppe «Automatisierte Mobilität und künstliche Intelligenz»",
       "document_language": "de",
-      "error": null
+      "error": null,
+      "fail_streak": 0
     },
     {
       "id": "s-b0e37374679e",
@@ -4109,14 +4134,15 @@
         "sectoral"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "GET (curl --max-time 60, browser user agent); full text read (pdftotext)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.sbfi.admin.ch/dam/de/sd-web/-kNQiEU3sJIV/k-i_bildung_f%5B1%5D.pdf",
       "link_status": "reachable",
       "page_title": "L'intelligence artificielle dans la formation",
       "document_language": "fr",
-      "error": null
+      "error": null,
+      "fail_streak": 0
     },
     {
       "id": "s-0a587e709c52",
@@ -4136,14 +4162,15 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "Fedlex SPARQL metadata (dateDocument 2024-12-13, publicationDate 2025-01-10) and GET (curl) of the Fedlex HTML text and Federal Chancellery PDF",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.fedlex.admin.ch/eli/fga/2025/31/de",
       "link_status": "reachable",
       "page_title": "Strategie «Digitale Schweiz 2025»",
       "document_language": "de",
-      "error": null
+      "error": null,
+      "fail_streak": 0
     },
     {
       "id": "s-a21ce9185485",
@@ -4163,14 +4190,15 @@
         "historical"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "GET (curl --max-time 60, browser user agent); full text read (pdftotext)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.newsd.admin.ch/newsd/message/attachments/63601.pdf",
       "link_status": "reachable",
       "page_title": "Strategie Digitalaussenpolitik 2021–2024",
       "document_language": "de",
-      "error": null
+      "error": null,
+      "fail_streak": 0
     },
     {
       "id": "s-dff8d010dbcc",
@@ -4190,14 +4218,15 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "GET (curl --max-time 60, browser user agent); full text read (pdftotext)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.vbs.admin.ch/dam/it/sd-web/gArup8yKgpMO/Pruefbericht-I-2025-01-d.pdf",
       "link_status": "reachable",
       "page_title": "Prüfbericht «Entwicklung und Nutzung von KI-Systemen im VBS» (IT-Prüfung I 2025-01)",
       "document_language": "de",
-      "error": null
+      "error": null,
+      "fail_streak": 0
     },
     {
       "id": "s-f8163a3ecd86",
@@ -4217,15 +4246,16 @@
         "historical"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (--max-time 60, browser user agent) GET; full text of the statement read on the EDÖB page (HTML).",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.edoeb.admin.ch/de/09112023-geltendes-dsg-ist-auf-ki-anwendbar",
       "link_status": "reachable",
       "page_title": "Geltendes Datenschutzgesetz ist auf KI direkt anwendbar",
       "document_language": "de",
       "error": null,
-      "content_type": "text/html;charset=utf-8"
+      "content_type": "text/html;charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-b817fb27a5ed",
@@ -4246,15 +4276,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (--max-time 60, browser user agent) GET; full text of the statement read on the EDÖB page (HTML).",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.edoeb.admin.ch/de/update-geltendes-datenschutzgesetz-ist-auf-ki-direkt-anwendbar",
       "link_status": "reachable",
       "page_title": "Update - Geltendes Datenschutzgesetz ist auf KI direkt anwendbar",
       "document_language": "de",
       "error": null,
-      "content_type": "text/html;charset=utf-8"
+      "content_type": "text/html;charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-9e2de808b28d",
@@ -4273,15 +4304,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (--max-time 60, browser user agent) GET; full text read on the EDÖB page (HTML).",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.edoeb.admin.ch/de/04042023-einsatz-von-chatgpt-und-vergleichbaren-ki-gestuetzten-anwendungen",
       "link_status": "reachable",
       "page_title": "Einsatz von ChatGPT und vergleichbaren KI-gestützten Anwendungen",
       "document_language": "de",
       "error": null,
-      "content_type": "text/html;charset=utf-8"
+      "content_type": "text/html;charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-c747936606f6",
@@ -4300,15 +4332,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (--max-time 60, browser user agent) GET; full text read on the EDÖB page (HTML).",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.edoeb.admin.ch/de/abschluss-vorabklaerung-x-grok",
       "link_status": "reachable",
       "page_title": "Abschluss Vorabklärung X (vormals Twitter): Verwendung von Personendaten für das Training der KI Grok",
       "document_language": "de",
       "error": null,
-      "content_type": "text/html;charset=utf-8"
+      "content_type": "text/html;charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-8638c0de2928",
@@ -4327,15 +4360,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (--max-time 60, browser user agent) GET; full text read (PDF, application/pdf), linked from the EDÖB news page of 23 February 2026; Swiss signatory confirmed in the signature list.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.edoeb.admin.ch/dam/de/sd-web/ZLLedzOtpiFH/2026.02.23%20-%20Joint%20Statement%20-%20AI%20Generated%20Imagery%20-%2061%20Signatories%20-%20(Distributed%2021.02.2026).pdf",
       "link_status": "reachable",
       "page_title": "Joint Statement on AI-Generated Imagery and the Protection of Privacy",
       "document_language": "en",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-8e71f3c49c59",
@@ -4354,15 +4388,16 @@
         "sectoral"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (--max-time 60, browser user agent) GET; full text read (15-page PDF, application/pdf), linked from the EDÖB media release of 16 September 2026.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.edoeb.admin.ch/dam/de/sd-web/pil5XhpiROR7/Merkblatt-Datenbearbeitung%20mittels%20Kameras%20und%20anderer%20Sensoren.pdf",
       "link_status": "reachable",
       "page_title": "Merkblatt Überwachung von betreuten Personen: Datenbearbeitung mittels Videokameras und anderer in Spitälern, Pflegeheimen und vergleichbaren Einrichtungen eingesetzter Sensoren",
       "document_language": "de",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-9c883dcaf454",
@@ -4382,15 +4417,16 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (--max-time 60, browser user agent) GET; full text read (8-page PDF, application/pdf), linked from FINMA media release page of 18 December 2024.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.finma.ch/de/~/media/finma/dokumente/dokumentencenter/myfinma/4dokumentation/finma-aufsichtsmitteilungen/20241218-finma-aufsichtsmitteilung-08-2024.pdf?sc_lang=de",
       "link_status": "reachable",
       "page_title": "FINMA-Aufsichtsmitteilung 08/2024: Governance und Risikomanagement beim Einsatz Künstlicher Intelligenz",
       "document_language": "de",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-42ff66f49657",
@@ -4410,15 +4446,16 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (--max-time 60, browser user agent) GET; full text read (PDF, application/pdf); AI section on pp. 24-26.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.finma.ch/de/~/media/finma/dokumente/dokumentencenter/myfinma/finma-publikationen/risikomonitor/20231109-finma-risikomonitor-2023.pdf?sc_lang=de",
       "link_status": "reachable",
       "page_title": "FINMA-Risikomonitor 2023",
       "document_language": "de",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-551dd22f4f27",
@@ -4437,15 +4474,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (--max-time 60, browser user agent) GET; full text read (34-page PDF, application/pdf); AI chapter 8 read in full; media release PDF of 31 March 2026 also read.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.weko.admin.ch/dam/de/sd-web/MAx2n8P1pkER/Jahresbericht%20WEKO%202025%20deutsch.pdf",
       "link_status": "reachable",
       "page_title": "Jahresbericht 2025 der Wettbewerbskommission (WEKO) – Spezialthema 2025: KI und Kartellrecht",
       "document_language": "de",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-4b5344171e3e",
@@ -4465,15 +4503,16 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (--max-time 60, browser user agent) GET; SNV standards shop product page read (status, publication and effective dates, abstract, national committee, replacement relations); standard text itself is sold and was not read.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://connect.snv.ch/en/sn-en-isoiec-42001-2026",
       "link_status": "reachable",
       "page_title": "SN EN ISO/IEC 42001:2026 Information technology - Artificial intelligence - Management system (ISO/IEC 42001:2023)",
       "document_language": "en",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-a9181080eea6",
@@ -4493,15 +4532,16 @@
         "historical"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (--max-time 60, browser user agent) GET; SNV standards shop product page read (status, publication and effective dates, abstract, national committee, replacement relations); standard text itself is sold and was not read.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://connect.snv.ch/en/sn-isoiec-42001-2025",
       "link_status": "reachable",
       "page_title": "SN ISO/IEC 42001:2025 Information technology — Artificial intelligence — Management system",
       "document_language": "en",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-31dcb588aad7",
@@ -4519,15 +4559,16 @@
         "standards"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (--max-time 60, browser user agent) GET; SNV standards shop product page read (status, publication and effective dates, abstract, national committee, replacement relations); standard text itself is sold and was not read.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://connect.snv.ch/en/sn-en-isoiec-22989-2023",
       "link_status": "reachable",
       "page_title": "SN EN ISO/IEC 22989:2023 Information technology - Artificial intelligence - Artificial intelligence concepts and terminology (ISO/IEC 22989:2022, Corrected version 2025-12)",
       "document_language": "en",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-06758d3ed142",
@@ -4545,15 +4586,16 @@
         "standards"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (--max-time 60, browser user agent) GET; SNV standards shop product page read (status, publication and effective dates, abstract, national committee, replacement relations); standard text itself is sold and was not read.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://connect.snv.ch/en/sn-en-isoiec-23053-2023",
       "link_status": "reachable",
       "page_title": "SN EN ISO/IEC 23053:2023 Framework for Artificial Intelligence (AI) Systems Using Machine Learning (ML) (ISO/IEC 23053:2022, Corrected version 2025-12)",
       "document_language": "en",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-83b79a2e85d3",
@@ -4572,15 +4614,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (--max-time 60, browser user agent) GET; SNV standards shop product page read (status, publication and effective dates, abstract, national committee, replacement relations); standard text itself is sold and was not read.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://connect.snv.ch/en/sn-en-isoiec-23894-2024",
       "link_status": "reachable",
       "page_title": "SN EN ISO/IEC 23894:2024 Information technology - Artificial intelligence - Guidance on risk management (ISO/IEC 23894:2023)",
       "document_language": "en",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-01b5a3af1a27",
@@ -4598,15 +4641,16 @@
         "standards"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (--max-time 60, browser user agent) GET; SNV standards shop product page read (status, publication and effective dates, abstract, national committee, replacement relations); standard text itself is sold and was not read.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://connect.snv.ch/en/sn-en-isoiec-8183-2024",
       "link_status": "reachable",
       "page_title": "SN EN ISO/IEC 8183:2024 Information technology - Artificial intelligence - Data life cycle framework (ISO/IEC 8183:2023)",
       "document_language": "en",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-3ad1fe4f1cfc",
@@ -4625,15 +4669,16 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (--max-time 60, browser user agent) GET; SNV standards shop product page read (status, publication and effective dates, abstract, national committee, replacement relations); standard text itself is sold and was not read.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://connect.snv.ch/en/sn-en-isoiec-12792-2025",
       "link_status": "reachable",
       "page_title": "SN EN ISO/IEC 12792:2025 Information technology - Artificial intelligence (AI) - Transparency taxonomy of AI systems (ISO/IEC 12792:2025)",
       "document_language": "en",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-048b2fad1c85",
@@ -4652,15 +4697,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (--max-time 60, browser user agent) GET; SNV standards shop product page read (status, publication and effective dates, abstract, national committee, replacement relations); standard text itself is sold and was not read.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://connect.snv.ch/en/sn-en-18286-2026",
       "link_status": "reachable",
       "page_title": "SN EN 18286:2026 Artificial intelligence - Quality management system for EU AI Act regulatory purposes",
       "document_language": "en",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-38aca50f928e",
@@ -4679,15 +4725,16 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (--max-time 60, browser user agent) GET; SNV standards shop product page read (status, publication and effective dates, abstract, national committee, replacement relations); standard text itself is sold and was not read.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://connect.snv.ch/en/sn-en-18274-2026",
       "link_status": "reachable",
       "page_title": "SN EN 18274:2026 Competence requirements for professional AI ethicists",
       "document_language": "en",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-1efd61978158",
@@ -4707,15 +4754,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "GET with browser user-agent (curl --max-time 60); full text read (PDF via pdftotext)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.zh.ch/bin/zhweb/publish/regierungsratsbeschluss-unterlagen./2026/749/RRB-2026-0749.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "de",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-afe45f188852",
@@ -4734,15 +4782,16 @@
         "sandbox"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "GET with browser user-agent (curl --max-time 60); full text read (PDF via pdftotext)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.zh.ch/bin/zhweb/publish/regierungsratsbeschluss-unterlagen./2025/402/RRB-2025-0402.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "de",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-375ce62f1b5c",
@@ -4762,15 +4811,16 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "GET with browser user-agent (curl --max-time 60); full text read (PDF via pdftotext) (consultation-authorisation decision only)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.notes.zh.ch/sk/VNL/vnl.nsf/vw-alldocuments/54E17D70F143D5BFC1258DE80046F292/$File/RRB%20Nr.%20439_2026%20vom%2015.%20April%202026.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "de",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-4330d6ea3f79",
@@ -4790,15 +4840,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "GET with browser user-agent (curl --max-time 60); full text read (PDF via pdftotext); cover pages and structure read",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/politik-staat/kanton/digitale-verwaltung-und-e-government/projekte_digitale_transformation/ki_einsatz_in_der_verwaltung_2021.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "de",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-890e71714acc",
@@ -4818,15 +4869,16 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "GET with browser user-agent (curl --max-time 60); full text read (PDF via pdftotext)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.ge.ch/document/37368/telecharger",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "fr",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-2f2e1d4337bf",
@@ -4846,15 +4898,16 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "GET with browser user-agent (curl --max-time 60); full text read (PDF via pdftotext); news page date via HTML",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.vd.ch/fileadmin/user_upload/organisation/dinf/dsi/fichiers_pdf/IA_Rapport_interd%C3%A9partemental.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "fr",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-634e76b0ff1a",
@@ -4874,15 +4927,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "GET with browser user-agent (curl --max-time 60); full text read (PDF via pdftotext)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.vd.ch/fileadmin/user_upload/accueil/fichiers_pdf/2026_septembre_actus/Strat%C3%A9gie_ANV_Version_longue_CP_02.09.26.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "fr",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-1d42cedc390a",
@@ -4902,8 +4956,8 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-08",
-      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions); replacement located by web search, same document",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bs.ch/schwerpunkte/daten/databs/schwerpunkte/kuenstliche-intelligenz/ki-richtlinie",
       "link_status": "reachable",
@@ -4930,15 +4984,16 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "GET with browser user-agent (curl --max-time 60); full text read (PDF via pdftotext)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.sta.be.ch/content/dam/sta/dokumente/de/themen/digitale-verwaltung/gdv-ki-leitbild-de.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "de",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-c81068666a76",
@@ -4958,15 +5013,16 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "GET with browser user-agent (curl --max-time 60); full text read (PDF via pdftotext); German and French versions read",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.sta.be.ch/content/dam/sta/dokumente/de/themen/digitale-verwaltung/KI-Leitlinien%20Kanton-de%20(Stand%20Januar%202026).pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "de",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-263a2a6e8b77",
@@ -4985,14 +5041,15 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-23",
-      "checked_date": "2026-10-23",
-      "check_method": "WebFetch of the admin.ch press release (curl blocked with Access Denied); report PDF downloaded with curl (68 pages) and read with pdftotext",
-      "http_status": 200,
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 403,
       "final_url": "https://www.admin.ch/de/newnsb/NJ04UgpFFUoA",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": "Der Bundesrat will die Effizienz der Verwaltung durch Automatisierung und künstliche Intelligenz steigern",
       "document_language": "de",
-      "error": null
+      "error": "HTTP Error 403: Forbidden",
+      "fail_streak": 1
     },
     {
       "id": "s-fcd77fd20491",
@@ -5011,15 +5068,16 @@
         "strategy"
       ],
       "date_reviewed": "2026-11-04",
-      "checked_date": "2026-11-04",
-      "check_method": "Federal Council publication page read (title, date, attached report PDF)",
-      "http_status": 200,
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 403,
       "final_url": "https://www.admin.ch/de/newnsb/w-YhsjJYHtXVAg1Rd91vy",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": "Bericht über den Einfluss von künstlicher Intelligenz in der Cybersicherheit",
       "document_language": "de",
-      "error": null,
-      "content_type": "text/html"
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "text/html",
+      "fail_streak": 1
     },
     {
       "id": "s-32d8edb01425",
@@ -5038,15 +5096,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-11-04",
-      "checked_date": "2026-11-04",
-      "check_method": "Federal Council publication page read (title, date, attached report PDF, recommendations)",
-      "http_status": 200,
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 403,
       "final_url": "https://www.admin.ch/de/newnsb/GBfrH3X9UxwNXkyBoKn5C",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": "Anwendungsmöglichkeiten der Künstlichen Intelligenz im Energiesektor",
       "document_language": "de",
-      "error": null,
-      "content_type": "text/html"
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "text/html",
+      "fail_streak": 1
     },
     {
       "id": "s-a2bc4844b07d",
@@ -5064,15 +5123,16 @@
         "strategy"
       ],
       "date_reviewed": "2026-11-04",
-      "checked_date": "2026-11-04",
-      "check_method": "Bundesblatt PDF (BBl 2024 1440) read (title, date, Art. 6 objective 5, Art. 29)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.fedlex.admin.ch/eli/fga/2024/1440/de",
       "link_status": "reachable",
       "page_title": "Bundesbeschluss über die Legislaturplanung 2023–2027 vom 6. Juni 2024 (BBl 2024 1440)",
       "document_language": "de",
       "error": null,
-      "content_type": "text/html"
+      "content_type": "text/html",
+      "fail_streak": 0
     },
     {
       "id": "s-34ebc20154e3",
@@ -5091,15 +5151,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-11-04",
-      "checked_date": "2026-11-04",
-      "check_method": "Report PDF and sandbox hub page read (title, issuer, listed date)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/wirtschaft-arbeit/wirtschaftsstandort/dokumente/Abschlussbericht_Phase_II.pdf",
       "link_status": "reachable",
       "page_title": "Build & Share | Innovation-Sandbox für Künstliche Intelligenz 2 – Eine Sandbox zur Befähigung des KI-Ökosystems",
       "document_language": "de",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-7a9f63e05cda",
@@ -5118,15 +5179,16 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-11-04",
-      "checked_date": "2026-11-04",
-      "check_method": "Cantonal news item (24.10.2023) and linked v2 PDF read",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.zh.ch/de/news-uebersicht/mitteilungen/2023/wirtschaft-arbeit/kuenstliche-intelligenz-in-der-bildung---rechtliche-best-practic.html",
       "link_status": "reachable",
       "page_title": "Künstliche Intelligenz in der Bildung – Rechtliche Best Practices",
       "document_language": "de",
       "error": null,
-      "content_type": "text/html"
+      "content_type": "text/html",
+      "fail_streak": 0
     }
   ],
   "regional_applicability": [],
@@ -5273,6 +5335,51 @@
     "last_sweep": "2026-10-30"
   },
   "changes": [
+    {
+      "id": "c-a5ab0d803f75",
+      "date": "2026-11-09",
+      "recorded": "2026-11-09",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "CHE",
+      "instrument_id": "i-2d5abe834fe7",
+      "title": "Increasing the efficiency of administrative processes through process automation and artificial intelligence: Federal Council report in fulfilment of Postulate 24.3582 Silberschmidt",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://www.admin.ch/de/newnsb/NJ04UgpFFUoA",
+      "needs_review": false
+    },
+    {
+      "id": "c-acbaf41f51e0",
+      "date": "2026-11-09",
+      "recorded": "2026-11-09",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "CHE",
+      "instrument_id": "i-6ada6dba4513",
+      "title": "Opportunities and risks of AI systems in cybersecurity: Federal Council report in fulfilment of postulate 23.3861 Andrey",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://www.admin.ch/de/newnsb/w-YhsjJYHtXVAg1Rd91vy",
+      "needs_review": false
+    },
+    {
+      "id": "c-654c4ba0881a",
+      "date": "2026-11-09",
+      "recorded": "2026-11-09",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "CHE",
+      "instrument_id": "i-65cdf53dbe60",
+      "title": "Artificial intelligence and security of supply: Federal Council report in fulfilment of postulate 23.3957 (National Council Committee on Environment, Spatial Planning and Energy)",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://www.admin.ch/de/newnsb/GBfrH3X9UxwNXkyBoKn5C",
+      "needs_review": false
+    },
     {
       "id": "c-e12445d6f503",
       "date": "2026-11-08",

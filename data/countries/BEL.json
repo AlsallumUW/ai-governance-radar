@@ -1332,15 +1332,16 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "Justel consolidated text (ejustice.just.fgov.be ELI page) read with WebFetch: header (promulgation 30 July 2018, publication 5 September 2018, NUMAC 2018040581, entry into force 5 September 2018), Title 2 scope and articles 34-35 quoted. curl (browser user agent, --max-time 60) received only the site's bot-challenge page.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.ejustice.just.fgov.be/eli/loi/2018/07/30/2018040581/justel",
       "link_status": "reachable",
       "page_title": "Loi relative à la protection des personnes physiques à l'égard des traitements de données à caractère personnel (Justel)",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html"
+      "content_type": "text/html",
+      "fail_streak": 0
     },
     {
       "id": "s-75ecc084fdf8",
@@ -1359,15 +1360,16 @@
         "sectoral"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "Justel consolidated text read with WebFetch: title, publication date 10 November 2022, entry into force 20 November 2022, article 15 (inserting art. 337/3 Programme Law 2006) with both 'algorithme' passages quoted, article 18 (chapter 4 section 1 from 1 January 2023). Found through a Moniteur belge full-text search ('algorithmes' + 'travailleurs' + 'plateforme'). curl not usable (bot-challenge page on ejustice).",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.ejustice.just.fgov.be/eli/loi/2022/10/03/2022206360/justel",
       "link_status": "reachable",
       "page_title": "Loi portant des dispositions diverses relatives au travail (Justel)",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html"
+      "content_type": "text/html",
+      "fail_streak": 0
     },
     {
       "id": "s-c6b07ea80bd5",
@@ -1387,15 +1389,16 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "Moniteur belge text page (ejustice article_body, NUMAC 2026006656) read with WebFetch: title, signature date, articles 1-3 of the decree, preamble legal basis, and code articles 5, 43, 44, 45 (AI provisions) checked. Found through a Moniteur belge full-text search for 'intelligence artificielle'. curl received only the site's bot-challenge page; the ELI URL /eli/arrete/2026/07/20/2026006656/moniteur returned 404.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.ejustice.just.fgov.be/cgi/article_body.pl?language=fr&caller=summary&pub_date=2026-09-21&numac=2026006656",
       "link_status": "reachable",
       "page_title": "Arrêté royal portant approbation du code de déontologie de l'Institut professionnel des agents immobiliers (Moniteur belge)",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html"
+      "content_type": "text/html",
+      "fail_streak": 0
     },
     {
       "id": "s-f7c142fa60a8",
@@ -1418,15 +1421,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): FPS Social Security page 'Engagement pour une IA éthique dans les services publics' read (links 'Téléchargez la charte IA - 11/07/25'); French PDF (8 pp.) downloaded and read with pdftotext, including signature page dated 11 July 2025 and Annex 2 list of adhering bodies; Dutch PDF title checked; FPS Social Security news item of 4 November 2025 read; Chamber general policy note 'Numérique' DOC 56 1282/030 (24 January 2026) read for status",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://socialsecurity.belgium.be/fr/charte-ia",
       "link_status": "reachable",
       "page_title": "Engagement pour une IA éthique dans les services publics",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html; charset=UTF-8"
+      "content_type": "text/html; charset=UTF-8",
+      "fail_streak": 0
     },
     {
       "id": "s-2fed020d4013",
@@ -1446,15 +1450,16 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-17",
-      "check_method": "Both fetch methods failed: curl (browser user agent, --max-time 60) and WebFetch both received the site's human-verification (bot) challenge page instead of the BOSA page, also for the bosa.d8.pr.belgium.be mirror and BOSA PDF paths; the detailed plan PDF formerly on the State Secretary's site (michel.belgium.be) no longer resolves. Approval date (Council of Ministers, 28 October 2022), nine objectives and the BOSA/FPS Economy steering committee taken from the search-engine index text of this BOSA page; plan still referred to as current, with an update announced, in the Minister's general policy note 'Numérique' of 24 January 2026 (Chamber DOC 56 1282/030, read with curl).",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://bosa.belgium.be/en/themes/digital-administration/digital-strategy-and-policy/national-convergence-plan-development",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
-      "error": "Human-verification challenge page returned to both curl and WebFetch",
-      "content_type": "text/html"
+      "error": null,
+      "content_type": "text/html",
+      "fail_streak": 0
     },
     {
       "id": "s-c9da0124a147",
@@ -1474,15 +1479,16 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): PDF (24 pp.) downloaded from autoriteprotectiondonnees.be and read with pdftotext ('Traduction – Version décembre 2024'); English original (version December 2024) and Dutch translation compared; publication date from the APD news item 'L'APD publie une brochure informative et un dossier thématique dédiés à l'IA' of 19 Sep 2024",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
-      "final_url": "https://autoriteprotectiondonnees.be/publications/brochure-d-information-sur-les-systemes-d-intelligence-artificielle-et-le-rgpd.pdf",
+      "final_url": "https://www.autoriteprotectiondonnees.be/publications/brochure-d-information-sur-les-systemes-d-intelligence-artificielle-et-le-rgpd.pdf",
       "link_status": "reachable",
       "page_title": "Les systèmes d'intelligence artificielle et le RGPD — Sous l'angle de la protection des données",
       "document_language": "fr",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-04dcef287936",
@@ -1501,15 +1507,16 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): PDF (19 pp.) downloaded (www.dataprotectionauthority.be serves the same file) and read with pdftotext ('Version française - Avril 2026'); APD news item of 13 April 2026 read",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.autoriteprotectiondonnees.be/publications/l-impact-de-l-intelligence-artificielle-sur-la-vie-privee.pdf",
       "link_status": "reachable",
       "page_title": "L'impact de l'intelligence artificielle sur la vie privée",
       "document_language": "fr",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-0e1b9c1d81e5",
@@ -1529,15 +1536,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): French PDF (4 pp.) read with pdftotext; Dutch and English versions and the FSMA news article 'Frontier AI Systems and cyber risk' (15/06/2026) also read",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.fsma.be/sites/default/files/media/files/2026-06/fsma_2026_15_fr.pdf",
       "link_status": "reachable",
       "page_title": "Communication FSMA_2026_15 du 15-06-26 — Impact des 'Frontier AI Systems' sur le risque cyber",
       "document_language": "fr",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-45b2676e03a2",
@@ -1556,15 +1564,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): NBN page read (lists 'NBN ISO/IEC 42001:2026 Active'); the NBN catalogue detail page (app.nbn.be) returned HTTP 403 to curl and to WebFetch",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.nbn.be/en/management-systems/iso-iec-42001",
       "link_status": "reachable",
       "page_title": "ISO/IEC 42001 - AI management",
       "document_language": "en",
       "error": null,
-      "content_type": "text/html; charset=UTF-8"
+      "content_type": "text/html; charset=UTF-8",
+      "fail_streak": 0
     },
     {
       "id": "s-04087fea550f",
@@ -1585,15 +1594,16 @@
         "strategy"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser UA, --max-time 60): Digitaal Vlaanderen 'Vlaamse AI-strategie' page read; PDF (14 pp.) downloaded from the asset host linked on that page and read with pdftotext",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://assets.vlaanderen.be/image/upload/v1708532045/principedocument_-_210224bis_ntcxb8.pdf",
       "link_status": "reachable",
       "page_title": "Principedocument Vlaamse AI-strategie",
       "document_language": "nl",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-ab71e14785ab",
@@ -1614,15 +1624,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser UA, --max-time 60): Digitaal Vlaanderen AI-strategy page read (lists 'Versie februari 2025'); 11-page PDF downloaded and read with pdftotext; earlier Feb 2024 version and infographic PDF also read",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://assets.vlaanderen.be/image/upload/v1739459827/Richtlijnen_voor_het_gebruik_van_publiek_toegankelijke_generatieve_AI_10_mei_24_gfdemm.pdf",
       "link_status": "reachable",
       "page_title": "Richtlijnen voor het gebruik van publiek toegankelijke generatieve AI",
       "document_language": "nl",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-e247a1e0d834",
@@ -1641,15 +1652,16 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser UA, --max-time 60): vlaanderen.be publication page read; 23-page PDF (publicaties.vlaanderen.be/view-file/67479) downloaded and colophon read with pdftotext",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.vlaanderen.be/publicaties/verantwoorde-ai-in-het-vlaamse-onderwijs-een-collaboratief-proces-van-ontwikkeling-tot-gebruik-visietekst",
       "link_status": "reachable",
       "page_title": "Verantwoorde AI in het Vlaamse onderwijs",
       "document_language": "nl",
       "error": null,
-      "content_type": "text/html"
+      "content_type": "text/html",
+      "fail_streak": 0
     },
     {
       "id": "s-94f23544e356",
@@ -1667,15 +1679,16 @@
         "strategy"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-17",
-      "check_method": "curl (browser UA, --max-time 60) returned HTTP 403; WebFetch also returned HTTP 403; located via search results showing VLAIO page content",
-      "http_status": 403,
-      "final_url": "https://www.vlaio.be/nl/andere-doelgroepen/vlaams-beleidsplan-artificiele-intelligentie",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 200,
+      "final_url": "https://www.ewi-vlaanderen.be/sites/default/files/downloads/quaternota_aan_de_vlaamse_regering_-_vlaams_beleidsplan_artificiele_intelligentie.pdf",
       "link_status": "reachable",
       "page_title": "Vlaams beleidsplan",
       "document_language": "nl",
-      "error": "HTTP 403 to both curl and WebFetch",
-      "content_type": null
+      "error": null,
+      "content_type": null,
+      "fail_streak": 0
     },
     {
       "id": "s-92f9c60620f7",
@@ -1695,15 +1708,16 @@
         "cyber-security"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser UA, --max-time 60): strategy announcement page (published 23 Oct 2025), 2025-2029 overview page and AI-priority page on digitalwallonia.be (run by the Agence du Numérique, Walloon public agency) read",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.digitalwallonia.be/fr/publications/strategie-digital-wallonia-2025-2029/",
       "link_status": "reachable",
       "page_title": "Stratégie Digital Wallonia 2025-2029",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html"
+      "content_type": "text/html",
+      "fail_streak": 0
     },
     {
       "id": "s-19dce32a74cc",
@@ -1723,15 +1737,16 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser UA, --max-time 60): be.brussels page (published 22.09.2025) read; linked 19-page PDF on admin.be.brussels downloaded and read with pdftotext",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://be.brussels/fr/propos-de-la-region/guide-de-bonnes-pratiques-sur-lia-generative",
       "link_status": "reachable",
       "page_title": "Guide de bonnes pratiques sur l’IA générative | Région de Bruxelles-Capitale",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html"
+      "content_type": "text/html",
+      "fail_streak": 0
     },
     {
       "id": "s-9936781b5459",
@@ -1752,8 +1767,8 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-22",
-      "checked_date": "2026-11-08",
-      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions); replacement located by web search, same document",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.ejustice.just.fgov.be/eli/arrete/2023/10/04/2023045485/justel",
       "link_status": "reachable",
@@ -1781,15 +1796,16 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-22",
-      "checked_date": "2026-10-22",
-      "check_method": "browser-check-2026-10-22: Moniteur belge title search for AI in a desktop browser; full decree text read. The lead had the date as 24 May 2024; the decree is dated 25 May 2024.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.ejustice.just.fgov.be/eli/arrete/2024/05/25/2024005621/moniteur",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html"
+      "content_type": "text/html",
+      "fail_streak": 0
     },
     {
       "id": "s-c2645b029529",
@@ -1809,15 +1825,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-22",
-      "checked_date": "2026-10-22",
-      "check_method": "browser-check-2026-10-22: Moniteur belge search for DeepSeek (Nov-Dec 2025) in a desktop browser; full circular text read.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.ejustice.just.fgov.be/cgi/article.pl?language=fr&sum_date=2025-11-19&lg_txt=F&numac_search=2025008722",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html"
+      "content_type": "text/html",
+      "fail_streak": 0
     },
     {
       "id": "s-172d170d083b",
@@ -1836,15 +1853,16 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-22",
-      "checked_date": "2026-10-22",
-      "check_method": "browser-check-2026-10-22: vlaanderen.be AI literacy page opened in a desktop browser; competence dictionary PDF (43 pages) read: cover, version date and contents.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.vlaanderen.be/digitaal-vlaanderen/onze-diensten-en-platformen/ai-expertisecentrum/ai-geletterdheid/ai-geletterdheid-voor-overheden-in-vlaanderen",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "nl",
       "error": null,
-      "content_type": "text/html"
+      "content_type": "text/html",
+      "fail_streak": 0
     },
     {
       "id": "s-f36acc179197",
@@ -1864,15 +1882,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-11-05",
-      "checked_date": "2026-11-05",
-      "check_method": "WebFetch of the opinion PDF (found by WebSearch): 'Avis n° 73/2025 du 29 août 2025' (CO-A-2025-068); requested by Frank Vandenbroucke, received 3 June 2025; point 7 'un système algorithmique et impliquera donc l'utilisation d'un système d'intelligence artificielle'; note 34 'le système algorithmique envisagé est un système d'intelligence artificielle à haut risque' (Annex III 5(a) AI Act); point 38 AIPD 'devra impérativement être réalisée'. Text read up to point 61 (final conclusions not in the extract). Scope note for integrator: an opinion on one draft law, but with substantial AI Act qualification and safeguards; if the convention treats such opinions as leads, move it.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.autoriteprotectiondonnees.be/publications/avis-n0-73-2025-du-29-aout-2025.pdf",
       "link_status": "reachable",
       "page_title": "Avis n° 73/2025 du 29 août 2025 – Demande d'avis concernant un avant-projet de loi exécutant une politique renforcée de retour au travail en cas d'incapacité de travail",
       "document_language": "fr",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-58d4b597e230",
@@ -1891,15 +1910,16 @@
         "public-sector"
       ],
       "date_reviewed": "2026-11-05",
-      "checked_date": "2026-11-05",
-      "check_method": "WebFetch of the vlaanderen.be page 'Quickscan AI biedt overzicht van inzet AI binnen de Vlaamse overheid', dated 27 June 2025, issuer Digitaal Vlaanderen AI Expertisecentrum, with the PDF link 'Quickscan AI in de Vlaamse overheid - Editie 2025'. PDF not opened (fetch allowlist); title taken from the PDF link name on the official page.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.vlaanderen.be/digitaal-vlaanderen/onze-diensten-en-platformen/ai-expertisecentrum/quickscan-ai-biedt-overzicht-van-inzet-ai-binnen-de-vlaamse-overheid",
       "link_status": "reachable",
       "page_title": "Quickscan AI in de Vlaamse overheid – Editie 2025",
       "document_language": "nl",
       "error": null,
-      "content_type": "text/html"
+      "content_type": "text/html",
+      "fail_streak": 0
     },
     {
       "id": "s-5dd37932d9c3",
@@ -1918,15 +1938,16 @@
         "public-sector"
       ],
       "date_reviewed": "2026-11-05",
-      "checked_date": "2026-11-05",
-      "check_method": "WebFetch of the vlaanderen.be publications page: title 'Thema-audit artificiële intelligentie (AI). Globaal rapport', publisher 'Audit Vlaanderen', date 'juni 2023', type 'Rapport', description 'Met dit globaal rapport wil Audit Vlaanderen inzicht geven in: ...', download link publicaties.vlaanderen.be/view-file/58055 (PDF not opened: fetch allowlist).",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.vlaanderen.be/publicaties/thema-audit-artificiele-intelligentie-ai-globaal-rapport",
       "link_status": "reachable",
       "page_title": "Thema-audit artificiële intelligentie (AI). Globaal rapport",
       "document_language": "nl",
       "error": null,
-      "content_type": "text/html"
+      "content_type": "text/html",
+      "fail_streak": 0
     },
     {
       "id": "s-9228c21bc4e8",
@@ -1944,15 +1965,16 @@
         "strategy"
       ],
       "date_reviewed": "2026-11-05",
-      "checked_date": "2026-11-05",
-      "check_method": "WebFetch of the strategy PDF on themis.vlaanderen.be (Flemish Government decisions repository), stamped 'VR 2025 2706 DOC.0521/2BIS': title 'Digitale Strategie van Vlaanderen', section 2.4 'De kracht van AI omarmen op een verantwoorde manier' (2.4.1 Ambities ... 2.4.4 'Verantwoorde AI'). Approval from VR 2026 0805 MED.0165-1 (themis): 'Midden 2025 keurde de Vlaamse regering de Digitale Strategie van Vlaanderen goed'. The meeting date 27 June 2025 is only implied by the VR number, so the date is given as the year.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.vlaanderen.be/vlaamse-regering/beslissingen-van-de-vlaamse-regering/digitale-strategie-voor-vlaanderen",
       "link_status": "reachable",
       "page_title": "Digitale Strategie van Vlaanderen",
       "document_language": "nl",
       "error": null,
-      "content_type": "text/html"
+      "content_type": "text/html",
+      "fail_streak": 0
     }
   ],
   "regional_applicability": [],

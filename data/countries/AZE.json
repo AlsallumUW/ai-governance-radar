@@ -683,15 +683,16 @@
         "cyber-security"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): president.az order page read (order text, dated 19 March 2025, signed Ilham Aliyev); full strategy annex read from the Ministry of Digital Development and Transport PDF (pdftotext), listed on mincom.gov.az/az/qanunvericilik/serencamlar",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://president.az/az/articles/view/68364",
       "link_status": "reachable",
       "page_title": "“Azərbaycan Respublikasının 2025–2028-ci illər üçün süni intellekt Strategiyası”nın təsdiq edilməsi haqqında Azərbaycan Respublikası Prezidentinin Sərəncamı",
       "document_language": "az",
       "error": null,
-      "content_type": "text/html; charset=UTF-8"
+      "content_type": "text/html; charset=UTF-8",
+      "fail_streak": 0
     },
     {
       "id": "s-828be5c9d620",
@@ -710,15 +711,16 @@
         "strategy"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full 3-page Cabinet order PDF read (pdftotext); dated Baku 28 April 2025, No. 253s, signed Prime Minister Ali Asadov",
-      "http_status": 200,
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": null,
       "final_url": "https://nk.gov.az/uploads/doc/docs/6811d193d81e5.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "az",
-      "error": null,
-      "content_type": "application/pdf"
+      "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
+      "content_type": "application/pdf",
+      "fail_streak": 1
     },
     {
       "id": "s-4c8dbece2aae",
@@ -736,15 +738,16 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): 1-page Cabinet decision PDF read (pdftotext); dated Baku 21 July 2026, No. 226, signed Prime Minister Ali Asadov; the approved list (annex) is not contained in this PDF",
-      "http_status": 200,
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": null,
       "final_url": "https://nk.gov.az/uploads/doc/docs/6a5f5bf618cd0.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "az",
-      "error": null,
-      "content_type": "application/pdf"
+      "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
+      "content_type": "application/pdf",
+      "fail_streak": 1
     },
     {
       "id": "s-191a9edc795b",
@@ -764,15 +767,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full 3-page law PDF read on meclis.gov.az (pdftotext); dated Baku 21 April 2026, No. 387-VIIQD, signed President Ilham Aliyev",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://meclis.gov.az/documents/387-VIIQD.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "az",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-c16f85a3e663",
@@ -790,15 +794,16 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): consolidated law PDF read (pdftotext) from the Ministry of Digital Development and Transport legislation page (mincom.gov.az/az/qanunvericilik/qanunlar, listed 11.05.2010); signed 11 May 2010, No. 998-IIIQ; amendment notes up to Law 754-VIQD of 23 December 2022 and 1193-VIQD of 2024",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://mincom.gov.az/storage/pages/376/998-iiiq-ferdi-melumatlar-haqqinda.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "az",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-a5da08a84b19",
@@ -817,15 +822,16 @@
         "strategy"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): president.az decree page and the Ministry of Digital Development and Transport PDF of the decree read (2 pages, dated Baku 16 January 2025); the annexed Concept text is on neither page and was not read",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://president.az/az/articles/view/67937",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "az",
       "error": null,
-      "content_type": "text/html; charset=UTF-8"
+      "content_type": "text/html; charset=UTF-8",
+      "fail_streak": 0
     },
     {
       "id": "s-dc75e909f482",
@@ -846,15 +852,16 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-22",
-      "checked_date": "2026-10-22",
-      "check_method": "WebFetch (curl refused by the session proxy): PDF read in full.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://mincom.gov.az/storage/pages/3994/azerbaycan-respublikasinda-reqemsal-inkisafin-suretlendirilmesine-dair-20262028-ci-iller-ucun-fealiyyet-planinin-tesdiq-edilmesi-haqqinda.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "az",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-ecb7aa8e25ec",
@@ -873,15 +880,16 @@
         "cyber-security"
       ],
       "date_reviewed": "2026-10-22",
-      "checked_date": "2026-10-22",
-      "check_method": "WebFetch (curl refused by the session proxy): PDF read in full.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://meclis.gov.az/documents/395-VIIQD.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "az",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-668a1c932202",
@@ -900,15 +908,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-22",
-      "checked_date": "2026-10-22",
-      "check_method": "WebFetch (curl refused by the session proxy): PDF read in full.",
-      "http_status": 200,
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": null,
       "final_url": "https://azstand.gov.az/uploads/documents/51604127066beea711a7a5.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "az",
-      "error": null,
-      "content_type": "application/pdf"
+      "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
+      "content_type": "application/pdf",
+      "fail_streak": 1
     },
     {
       "id": "s-14c9c3f46f6a",
@@ -926,15 +935,16 @@
         "standards"
       ],
       "date_reviewed": "2026-10-22",
-      "checked_date": "2026-10-22",
-      "check_method": "WebFetch (curl refused by the session proxy): PDF read in full.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://azstand.gov.az/uploads/documents/51375990466348cfbbab1c.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "az",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-2a8c92079183",
@@ -953,15 +963,16 @@
         "sandbox"
       ],
       "date_reviewed": "2026-11-05",
-      "checked_date": "2026-11-05",
-      "check_method": "Full law PDF read on meclis.gov.az: number 454-VIIQD, Baku 14 July 2026, President's signature, Article 14-4 (regulatory test environment) and the new Chapter V-II",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://meclis.gov.az//documents/454-VIIQD.pdf",
       "link_status": "reachable",
       "page_title": "“İnformasiya, informasiyalaşdırma və informasiyanın mühafizəsi haqqında” Azərbaycan Respublikasının Qanununda dəyişiklik edilməsi barədə Azərbaycan Respublikasının Qanunu (№ 454-VIIQD)",
       "document_language": "az",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-7515a318518f",
@@ -980,15 +991,16 @@
         "sectoral"
       ],
       "date_reviewed": "2026-11-05",
-      "checked_date": "2026-11-05",
-      "check_method": "Annex PDF to Cabinet Decision No. 226 read: approval line and the 11-sector table of responsible bodies",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://nk.gov.az/uploads/doc/docs/6a5f5bf619ffe.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "az",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     }
   ],
   "regional_applicability": [],

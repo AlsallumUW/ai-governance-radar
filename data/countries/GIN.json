@@ -68,7 +68,7 @@
       "first_recorded": "2026-10-12",
       "last_changed": null,
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "source_id": "s-7f2d7c8b3e5b",
       "evidence_reference": "curl (browser user agent, --max-time 60): 57-page scanned PDF downloaded from the ANSSI 'Lois' page (no text layer); pages 1, 40-47 and 56-57 rendered to images and read: title page, Article 27 (automated decisions), Articles 63-65 and promulgation signature 'Conakry, le 26 JUIL. 2016' (Prof. Alpha Condé); local-retry-2026-10-18: ANSSI law page and PDF link re-opened via curl (HTTP 200), download link to the same PDF confirmed; fields unchanged"
@@ -104,15 +104,16 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-18",
-      "check_method": "local-retry-2026-10-18: curl (Chrome user agent) opened the ANSSI law page (HTTP 200) listing this PDF as the download; PDF previously read as page images (title page, Art. 27, Arts. 63-65, signature page)",
-      "http_status": 200,
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 403,
       "final_url": "https://anssi.gov.gn/wp-content/uploads/2025/03/loi_l2016037an_relative_a_la_cybersecurite_et_protection_des_do.pdf",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": null,
       "document_language": "fr",
-      "error": null,
-      "content_type": "application/pdf"
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "application/pdf",
+      "fail_streak": 1
     }
   ],
   "regional_applicability": [],
@@ -201,6 +202,21 @@
     "last_sweep": "2026-11-08"
   },
   "changes": [
+    {
+      "id": "c-0429c45fa7a0",
+      "date": "2026-11-09",
+      "recorded": "2026-11-09",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "GIN",
+      "instrument_id": "i-fdab03c700f7",
+      "title": "Law No. L/2016/037/AN on Cybersecurity and the Protection of Personal Data in the Republic of Guinea",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://anssi.gov.gn/wp-content/uploads/2025/03/loi_l2016037an_relative_a_la_cybersecurite_et_protection_des_do.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-37529a8b3a53",
       "date": "2026-10-12",

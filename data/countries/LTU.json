@@ -763,15 +763,16 @@
         "historical"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-17",
-      "check_method": "curl (browser user agent, --max-time 60) and WebFetch both returned HTTP 403 (bot challenge) for the eimin.lrv.lt page on 2026-10-12; existence and status taken from official texts that cite it: the 2026-2035 guidelines (order 4-156, 'DI strategija (2019 m.)', 'Lietuvos DI technologijų plėtros veiksmų planas 2023–2026 m. (2022 m.)') and the explanatory memorandum to Seimas bill XVP-925 (2019 strategy and 2022 action plan 'nebuvo patvirtinti')",
-      "http_status": 403,
-      "final_url": "https://eimin.lrv.lt/lt/veiklos-sritys/skaitmenine-politika/dirbtinis-intelektas/strategija-ir-veiksmu-planas/",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 200,
+      "final_url": "https://data.kurklt.lt/wp-content/uploads/2023/04/DI_strategija_LT_koreguota.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "lt",
-      "error": "HTTP 403",
-      "content_type": "text/html"
+      "error": null,
+      "content_type": "text/html",
+      "fail_streak": 0
     },
     {
       "id": "s-a4a07e7eeccf",
@@ -793,15 +794,16 @@
         "sandbox"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): e-TAR page returned 403 (bot challenge) to curl and WebFetch; the same TAR act (reg. 2026-06332) read in full on the Seimas legal register e-seimas.lrs.lt (order text plus attached 60-page PDF 'Nacionalines_DI_strategines_gaires.pdf', read with pdftotext)",
-      "http_status": 200,
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 403,
       "final_url": "https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/724104b13cef11f1b8c7b769f825df26",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "lt",
-      "error": null,
-      "content_type": "text/html"
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "text/html",
+      "fail_streak": 1
     },
     {
       "id": "s-6ac159cf0326",
@@ -821,15 +823,16 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full text read on e-seimas.lrs.lt (rs/legalact rendering); register metadata (TAR 2024-05-16 No. 2024-08947) from the e-seimas document page and the lrs.lt document search",
-      "http_status": 200,
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 403,
       "final_url": "https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/2ab5b621135e11ef8e4be9fad87afa59",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "lt",
-      "error": null,
-      "content_type": "text/html"
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "text/html",
+      "fail_streak": 1
     },
     {
       "id": "s-3524ce78dc93",
@@ -849,15 +852,16 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full text read on e-seimas.lrs.lt; register metadata from the lrs.lt document search (TAR 2025-01-22 No. 2025-00715)",
-      "http_status": 200,
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 403,
       "final_url": "https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/51938be0d27711efbd239e318cbd5b26",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "lt",
-      "error": null,
-      "content_type": "text/html"
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "text/html",
+      "fail_streak": 1
     },
     {
       "id": "s-203b3ee27104",
@@ -877,15 +881,16 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full text read on e-seimas.lrs.lt; TAR 2026-04-08 No. 2026-05747 from the lrs.lt document search",
-      "http_status": 200,
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 403,
       "final_url": "https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/cdb8e3c0338111f1aa25f92450b16e7d",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "lt",
-      "error": null,
-      "content_type": "text/html"
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "text/html",
+      "fail_streak": 1
     },
     {
       "id": "s-35f221876f8f",
@@ -906,15 +911,16 @@
         "procurement"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full text read on e-seimas.lrs.lt; register metadata and amendment chronology (A1-127 of 2026-02-26, A1-402 of 2026-06-30) from the e-seimas document page and lrs.lt search",
-      "http_status": 200,
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 403,
       "final_url": "https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/939d7202f7d111f0b9baf24db8ed7e40",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "lt",
-      "error": null,
-      "content_type": "text/html"
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "text/html",
+      "fail_streak": 1
     },
     {
       "id": "s-aac5adc77edc",
@@ -933,15 +939,16 @@
         "strategy"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full text read on e-seimas.lrs.lt; TAR 2026-06-10 No. 2026-10206 from the lrs.lt document search",
-      "http_status": 200,
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 403,
       "final_url": "https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/18bd4342650311f1aa9cfebedf36d56d",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "lt",
-      "error": null,
-      "content_type": "text/html"
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "text/html",
+      "fail_streak": 1
     },
     {
       "id": "s-0142467185b6",
@@ -961,15 +968,16 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full text read on e-seimas.lrs.lt; TAR 2026-06-04 No. 2026-09835 and amendment AV-109 (TAR 2026-06-10 No. 2026-10191) from the lrs.lt document search",
-      "http_status": 200,
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 403,
       "final_url": "https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/c7e02b715fe611f1b20fcb7db81bf4bd",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "lt",
-      "error": null,
-      "content_type": "text/html"
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "text/html",
+      "fail_streak": 1
     },
     {
       "id": "s-9a994376669a",
@@ -989,15 +997,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full text read on e-seimas.lrs.lt; TAR 2024-04-30 No. 2024-07913 from the lrs.lt document search",
-      "http_status": 200,
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 403,
       "final_url": "https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/093f89e0072811ef8e4be9fad87afa59",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "lt",
-      "error": null,
-      "content_type": "text/html"
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "text/html",
+      "fail_streak": 1
     },
     {
       "id": "s-d3348766a6d4",
@@ -1015,15 +1024,16 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): e-seimas register page read (law No. I-1374, adopted 1996-06-11, current consolidated version from 2026-06-30); the consolidated text itself is loaded dynamically and was not read",
-      "http_status": 200,
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 403,
       "final_url": "https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.29193/asr",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "lt",
-      "error": null,
-      "content_type": "text/html"
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "text/html",
+      "fail_streak": 1
     },
     {
       "id": "s-675a594381bf",
@@ -1042,15 +1052,16 @@
         "government-governance"
       ],
       "date_reviewed": "2026-11-07",
-      "checked_date": "2026-11-07",
-      "check_method": "deep-sweep 2026-11-07: WebFetch of the consolidated Law on Information Society Services on e-seimas.lrs.lt. Article 23 point 12: 'pagal Reglamento (ES) 2024/1689 70 straipsnio 1 dalį atlieka nacionalinės kompetentingos institucijos ...'; point 13: '... 70 straipsnio 2 dalį atlieka bendro kontaktinio punkto funkcijas.' Amendments list: 'Nr. XV-106, 2025-01-14, paskelbta TAR 2025-01-22, i. k. 2025-00716' – 'Lietuvos Respublikos informacinės visuomenės paslaugų įstatymo Nr. X-614 1, 2, 23 straipsnių ir priedo pakeitimo įstatymas'. Draft amending law TAP-26-477(2) on lrv.lt (https://lrv.lt/media/viesa/saugykla/2026/5/FI82o4Fu7Mk.pdf) confirms Article 23 points 12-13 assign these AI Act functions to RRT and would repeal them. Entry-into-force date of XV-106 not stated in the text read.",
-      "http_status": 200,
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 403,
       "final_url": "https://e-seimas.lrs.lt/rs/actualedition/TAIS.277491/mEBznJakRX/format/ISO_PDF/",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "lt",
-      "error": null,
-      "content_type": "application/pdf"
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "application/pdf",
+      "fail_streak": 1
     },
     {
       "id": "s-f4a32d7b505a",
@@ -1069,15 +1080,16 @@
         "public-sector"
       ],
       "date_reviewed": "2026-11-07",
-      "checked_date": "2026-11-07",
-      "check_method": "deep-sweep 2026-11-07: WebFetch of the National Audit Office monitoring page: '„DIRBTINIO INTELEKTO VALDYMAS VIEŠAJAME SEKTORIUJE“', 'VAE-6', '2025-05-09', monitoring date 2026-09-09, all recommendations 'Laukiama įgyvendinimo'. WebFetch of the official English summary PDF (Download/4801): 'Management of Artificial Intelligence in the Public Sector', VAE-6, 9 May 2025, audited entities and seven recommendations. A Lithuanian summary is also on eimin.lrv.lt (https://eimin.lrv.lt/public/canonical/1753443936/5865/Santrauka.pdf). Full Lithuanian report PDF not fetched.",
-      "http_status": 200,
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 403,
       "final_url": "https://www.valstybeskontrole.lt/EN/Product/Download/4801",
       "link_status": "reachable",
       "page_title": "Management of Artificial Intelligence in the Public Sector",
       "document_language": "lt",
-      "error": null,
-      "content_type": "application/pdf"
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "application/pdf",
+      "fail_streak": 1
     }
   ],
   "regional_applicability": [],

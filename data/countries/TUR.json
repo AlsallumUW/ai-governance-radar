@@ -974,7 +974,7 @@
       ],
       "source_kind": "official_publication",
       "evidence_reference": "TÜBİTAK announcement 'TÜBİTAK Destek Süreçlerinde Üretken Yapay Zekâ Kullanımına Yönelik Yeni Rehber Yayınlandı' dated '28 Eki 2025' quotes the guide title and links the guide page. Guide text printed 'EYLÜL 2025' used for publication_date. Guide page itself not opened; the linked v04 PDF (2026-01 path) not read, so no last_amended_date. Distinct from TÜBİTAK AI Policy (i-639e073744c5). September 2025 edition: tubitak.gov.tr/sites/default/files/2025-09/UYZ_Rehberi-v02.pdf, cover 'EYLÜL 2025'; announcement wording 'tüm destek süreçlerimizde uyulması gerekli olan bu rehberi'. Later revision at files/2026-01/UYZ_Rehberi_v04_TR.pdf.",
-      "link_status": "not_checked",
+      "link_status": "reachable",
       "document_access_type": "official_publication_or_full_text_page",
       "source_id": "s-f30bbc150ede",
       "organization_id": "o-645541c5ccb0",
@@ -1093,15 +1093,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-18",
-      "check_method": "curl with a browser user agent from a connection in Saudi Arabia",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.etik.gov.tr/icerikler/2024-108-sayili-ilke-karari-yapay-zeka-sistemlerinin-kullaniminda-kamu-gorevlilerinin-uymasi-gereken-etik-davranis-ilkeleri/",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "tr",
-      "error": null,
-      "content_type": null
+      "error": "Certificate chain could not be verified by the checker",
+      "content_type": null,
+      "fail_streak": 0
     },
     {
       "id": "s-03c37d04d18e",
@@ -1121,15 +1122,16 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser UA, --max-time 60): Official Gazette PDF (scanned) rendered and read in full; issue index page 20210820.htm lists 'Ulusal Yapay Zekâ Stratejisi (2021-2025)' konulu Genelge 2021/18",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.resmigazete.gov.tr/eskiler/2021/08/20210820-22.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "tr",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-f3e111745944",
@@ -1149,15 +1151,16 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-18",
-      "check_method": "cbddo.gov.tr not reachable on 2026-10-12: curl connection reset (https) / HTTP 503 (http); WebFetch HTTP 503. Facts on authorship and timing taken from Presidential Circular 2021/18 in the Official Gazette.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": null,
       "final_url": "https://cbddo.gov.tr/uyzs",
       "link_status": "inaccessible",
       "page_title": null,
       "document_language": "tr",
-      "error": "cbddo.gov.tr not reachable on 2026-10-12: curl connection reset (https) / HTTP 503 (http); WebFetch HTTP 503. Facts on authorship and timing taken from Presidential Circular 2021/18 in the Official Gazette.",
-      "content_type": null
+      "error": "URLError: <urlopen error timed out>",
+      "content_type": null,
+      "fail_streak": 1
     },
     {
       "id": "s-72bb8e8a3d5a",
@@ -1176,15 +1179,16 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser UA, --max-time 60): consolidated PDF from mevzuat.gov.tr read (pdftotext); adoption 24/3/2016, Official Gazette 7/4/2016 No. 29677; art. 2 and art. 11(1)(g) checked",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.6698.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "tr",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-bce90f6451a3",
@@ -1204,15 +1208,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser UA, --max-time 60): 21-page PDF read (pdftotext); edition 'KVKK Yayınları No: 76, Nisan 2025, Ankara'; listed as 'Yapay Zeka Alanında Kişisel Verilerin Korunmasına Dair Tavsiyeler' on kvkk.gov.tr/Icerik/2030/rehberler?page=2",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.kvkk.gov.tr/SharedFolderServer/CMSFiles/25a1162f-0e61-4a43-98d0-3e7d057ac31a.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "tr",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-b56b74942b7c",
@@ -1232,15 +1237,16 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser UA, --max-time 60): 64-page PDF read (pdftotext, contents and introduction); 'Yayın No: 113 Kasım 2025'; listed on kvkk.gov.tr/Icerik/2030/rehberler",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.kvkk.gov.tr/SharedFolderServer/CMSFiles/MTY5MjNmNmIwZWY3YTE.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "tr",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-f6003868800c",
@@ -1260,15 +1266,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser UA, --max-time 60): 46-page PDF read (pdftotext, contents and introduction); cover 'Şubat 2026'; listed on kvkk.gov.tr/Icerik/5383/diger-dokumanlar",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.kvkk.gov.tr/SharedFolderServer/CMSFiles/MTY5YWE4ZDE0NWYwMWI.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "tr",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-0e5afc2e2489",
@@ -1287,15 +1294,16 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser UA, --max-time 60): 18-page PDF read (pdftotext, contents and opening); cover 'Şubat 2026'; listed on kvkk.gov.tr/Icerik/5383/diger-dokumanlar",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.kvkk.gov.tr/SharedFolderServer/CMSFiles/MTY5YTdkNjdjNzJlMjM.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "tr",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-a6c2cab5a152",
@@ -1315,15 +1323,16 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser UA, --max-time 60): MEB announcement of 17 June 2025 read; its download link (meb.ai short link) resolves to the 56-page PDF on yegitek.meb.gov.tr; official English edition PDF read (cover and bibliographic page)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://yegitek.meb.gov.tr/meb_iys_dosyalar/2025_06/17092340_egitimdeyapayzekapolitikabelgesiveeylemplani202520291.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "tr",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-2c72bbd578d4",
@@ -1343,15 +1352,16 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser UA, --max-time 60): 5-page PDF from mevzuat.meb.gov.tr read (pdftotext): approval memo dated 22.10.2025 signed 'OLUR' by the Minister; art. 3 legal basis, art. 19 entry into force on Minister's approval",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://mevzuat.meb.gov.tr/dosyalar/2295.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "tr",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-7fd2ea8ea874",
@@ -1371,15 +1381,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser UA, --max-time 60): MEB announcement dated 10 January 2026 read; linked 36-page PDF on ttkb.meb.gov.tr read (pdftotext, contents)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://ttkb.meb.gov.tr/meb_iys_dosyalar/2026_01/09152326_egitimdeyapayzekauygulamalari_etik_kilavuzu.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "tr",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-2f3e9e6d85b4",
@@ -1398,15 +1409,16 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser UA, --max-time 60): 8-page PDF read (pdftotext); cover 'Yapay Zekâ Politikası, Yapay Zekâ Koordinasyon Grubu, Mart 2026'",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://tubitak.gov.tr/sites/default/files/2026-03/TUBITAK_Yapay_Zeka_Politika_Belgesi_v1.0_tr.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "tr",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-8cbaffa85791",
@@ -1427,15 +1439,16 @@
         "sandbox"
       ],
       "date_reviewed": "2026-10-19",
-      "checked_date": "2026-10-19",
-      "check_method": "fetch.py (curl, browser UA): ministry plan page and 44-page PDF read (text extracted)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.sanayi.gov.tr/yapayzekaeylemplani/pdf/merge.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "tr",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-28fbfa19b3d2",
@@ -1454,15 +1467,16 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-19",
-      "checked_date": "2026-10-19",
-      "check_method": "fetch.py (curl, browser UA): 14-page PDF read (text extracted)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.sanayi.gov.tr/assets/pdf/UlusalYapayZekaStratejisi2024-2025EylemPlani.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "tr",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-46325f89044b",
@@ -1482,15 +1496,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-11-02",
-      "checked_date": "2026-11-02",
-      "check_method": "Ministry of Trade announcement page",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://ticaret.gov.tr/haberler/ticaret-bakanligi-tarafindan-ticari-reklam-ve-haksiz-ticari-uygulamalar-yonetmeliginde-yapilan-degisikliklerle-tuketicilerin-aldatici-reklam-ve-ticari-uygulamalara-karsi-korunmasi-guclendiriliyor",
       "link_status": "reachable",
       "page_title": "Ticari Reklam ve Haksız Ticari Uygulamalar Yönetmeliğinde Değişiklik Yapılmasına Dair Yönetmelik",
       "document_language": "tr",
       "error": null,
-      "content_type": null
+      "content_type": null,
+      "fail_streak": 0
     },
     {
       "id": "s-ec6978304a9b",
@@ -1509,15 +1524,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-11-05",
-      "checked_date": "2026-11-05",
-      "check_method": "Issuer page kvkk.gov.tr/Icerik/7807 (publication date 19 Ocak 2024; PDF link) and full-text page kvkk.gov.tr/Icerik/7804 (imprint KVKK Yayınları No: 75, Nisan 2025, Ankara)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
-      "final_url": "https://kvkk.gov.tr/Icerik/7807/Deepfake-Bilgi-Notu",
+      "final_url": "https://www.kvkk.gov.tr/Icerik/7807/Deepfake-Bilgi-Notu",
       "link_status": "reachable",
       "page_title": "Deepfake Bilgi Notu",
       "document_language": "tr",
       "error": null,
-      "content_type": null
+      "content_type": null,
+      "fail_streak": 0
     },
     {
       "id": "s-f30bbc150ede",
@@ -1536,15 +1552,16 @@
         "sectoral"
       ],
       "date_reviewed": "2026-11-05",
-      "checked_date": "2026-11-05",
-      "check_method": "TÜBİTAK announcement of 28 Eki 2025 (links guide page); guide text dated EYLÜL 2025",
-      "http_status": null,
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 200,
       "final_url": "https://tubitak.gov.tr/tr/kurumsal/hakkimizda/uretken-yapay-zeka-rehberi",
-      "link_status": "not_checked",
+      "link_status": "reachable",
       "page_title": null,
       "document_language": "tr",
       "error": null,
-      "content_type": null
+      "content_type": null,
+      "fail_streak": 0
     }
   ],
   "regional_applicability": [],
@@ -1634,6 +1651,21 @@
     "last_sweep": "2026-11-09"
   },
   "changes": [
+    {
+      "id": "c-157a125489c0",
+      "date": "2026-11-09",
+      "recorded": "2026-11-09",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "TUR",
+      "instrument_id": "i-888e0e53a049",
+      "title": "Guideline on the Responsible and Reliable Use of Generative Artificial Intelligence (GenAI) in Research Funding Processes",
+      "detail": "Official link restored.",
+      "from": "not_checked",
+      "to": "reachable",
+      "source_url": "https://tubitak.gov.tr/tr/kurumsal/hakkimizda/uretken-yapay-zeka-rehberi",
+      "needs_review": false
+    },
     {
       "id": "c-1cb1a438d54e",
       "date": "2026-11-05",

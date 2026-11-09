@@ -722,8 +722,8 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-11-08",
-      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://aim.govmu.org/aim/document/aistrategy",
       "link_status": "reachable",
@@ -751,15 +751,16 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): 70-page PDF downloaded from mitci.govmu.org and read with pdftotext (found via the MITCI WordPress media listing); both the 2025/05 and 2026/09 'Archieved' copies return HTTP 200",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://mitci.govmu.org/mitci/wp-content/uploads/2025/05/Mauritius-Artificial-Intelligence-Strategy-2018.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-9af01622694e",
@@ -781,8 +782,8 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-11-08",
-      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://aim.govmu.org/aim/document/fairguidelines",
       "link_status": "reachable",
@@ -810,8 +811,8 @@
         "procurement"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-11-08",
-      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://aim.govmu.org/aim/document/playbook",
       "link_status": "reachable",
@@ -839,8 +840,8 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-11-08",
-      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://aim.govmu.org/aim/document/blueprint",
       "link_status": "reachable",
@@ -869,15 +870,16 @@
         "procurement"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): 97-page PDF downloaded from mitci.govmu.org (linked from the MITCI Policies page) and read with pdftotext",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://mitci.govmu.org/mitci/wp-content/uploads/2026/08/Digital-Service-Framework.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-764ccac8732d",
@@ -896,15 +898,16 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): 73-page consolidated PDF from the Data Protection Office 'The Law' page downloaded and read with pdftotext (headers, s.34, s.38)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://dataprotection.govmu.org/Documents/DPA_2017.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-456e19fec51f",
@@ -923,15 +926,16 @@
         "sectoral"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): 12-page PDF linked from the DPO guidelines page downloaded and read with pdftotext",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://dataprotection.govmu.org/Communique/Guide%20on%20Data%20Protection%20for%20health%20data%20and%20AI.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-48c1e1ba8dbf",
@@ -950,15 +954,16 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent) returned HTTP 403 from fscmauritius.org; fetched with WebFetch, which saved the 9-page PDF, read with pdftotext",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.fscmauritius.org/media/101852/annex-1-128_the-financial-services-robotic-and-artificial-intelligence-enabled-advisory-services-rules-2021.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-0076c849658f",
@@ -978,15 +983,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent) returned HTTP 403 from fscmauritius.org; fetched with WebFetch, which saved the 25-page PDF and the communiqué PDF, both read with pdftotext",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.fscmauritius.org/media/206401/guidelines-on-responsible-use-of-ai.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-b07da92bf811",
@@ -1008,15 +1014,16 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): 31-page PDF linked from the hec.mu home page downloaded and read with pdftotext",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.hec.mu/pdf_downloads/pub_rep_pdf/AI%20guidelines_16092026_Regulations.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     }
   ],
   "regional_applicability": [],

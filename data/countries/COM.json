@@ -102,15 +102,16 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-18",
-      "checked_date": "2026-10-18",
-      "check_method": "local-retry-2026-10-18: landing page fetched with curl (browser user agent, HTTP 200); PDF re-opened with headless browser (18 pages, text read); fields re-checked",
-      "http_status": 200,
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": null,
       "final_url": "https://justice.gouv.km/wp-content/uploads/2025/03/loi-du-26-juin-2014-portant-protection-des-donnees-a-caractere-personnel.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "fr",
-      "error": null,
-      "content_type": "application/pdf"
+      "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "content_type": "application/pdf",
+      "fail_streak": 1
     }
   ],
   "regional_applicability": [],

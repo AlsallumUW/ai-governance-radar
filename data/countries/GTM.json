@@ -167,15 +167,16 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full 22-page PDF (two-page spreads) read (pdftotext); cover page states 'Versión 1.0, Fecha Junio, 2026' and 'Primera versión actualizada, 2026'; technical coordination by the Comité Nacional para la Modernización del Organismo Ejecutivo; published on the website of the Secretaría Privada de la Presidencia",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.secretariaprivada.gob.gt/wp-content/uploads/2026/07/Plan-de-Transformacion-Digital-2025-2027.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "es",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-d09a8538c873",
@@ -197,15 +198,16 @@
         "historical"
       ],
       "date_reviewed": "2026-10-18",
-      "checked_date": "2026-10-18",
-      "check_method": "local-retry-2026-10-18: headless browser (curl HTTP 403); 28-page PDF read with pdfplumber; cover image read ('Guatemala, 2025')",
-      "http_status": 200,
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 403,
       "final_url": "https://www.minfin.gob.gt/wp-content/uploads/2025/10/Plan_Estrategico_de_Transformacion_Digital_del_Organismo_Ejecutivo.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "es",
-      "error": null,
-      "content_type": "application/pdf"
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "application/pdf",
+      "fail_streak": 1
     }
   ],
   "regional_applicability": [],

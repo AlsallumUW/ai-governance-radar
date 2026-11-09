@@ -961,7 +961,7 @@
       "first_recorded": "2026-10-22",
       "last_changed": null,
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
+      "link_status": "redirected",
       "document_access_type": "original_government_document",
       "source_id": "s-9cf4247cb303",
       "evidence_reference": "browser-check-2026-10-22: Government portal act page (kmu.gov.ua) opened in a desktop browser and the order text read; plan annex PDF not machine-readable in the browser."
@@ -1013,7 +1013,7 @@
       "first_recorded": "2026-10-22",
       "last_changed": null,
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
+      "link_status": "redirected",
       "document_access_type": "original_government_document",
       "source_id": "s-f3cef61378fc",
       "evidence_reference": "browser-check-2026-10-22: Government portal act page (kmu.gov.ua) opened in a desktop browser and the order text read; concept annex PDF not machine-readable in the browser."
@@ -1067,7 +1067,7 @@
       "first_recorded": "2026-10-22",
       "last_changed": null,
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
+      "link_status": "redirected",
       "document_access_type": "original_government_document",
       "source_id": "s-6b29f92f42d1",
       "evidence_reference": "browser-check-2026-10-22: Government portal act page (kmu.gov.ua) opened in a desktop browser and the resolution text read; procedure annex not read."
@@ -1176,15 +1176,16 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "curl (browser user agent, --max-time 60): full text read on zakon.rada.gov.ua (print view); order date 2 December 2020 and edition/status from the portal card",
-      "http_status": 200,
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": null,
       "final_url": "https://zakon.rada.gov.ua/laws/show/1556-2020-%D1%80",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "uk",
-      "error": null,
-      "content_type": "text/html"
+      "error": "URLError: <urlopen error timed out>",
+      "content_type": "text/html",
+      "fail_streak": 1
     },
     {
       "id": "s-d8b8acc70de6",
@@ -1203,15 +1204,16 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "curl (browser user agent, --max-time 60): full text read on zakon.rada.gov.ua (print view)",
-      "http_status": 200,
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": null,
       "final_url": "https://zakon.rada.gov.ua/laws/show/438-2021-%D1%80",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "uk",
-      "error": null,
-      "content_type": "text/html"
+      "error": "URLError: <urlopen error timed out>",
+      "content_type": "text/html",
+      "fail_streak": 1
     },
     {
       "id": "s-9600d803bbbb",
@@ -1232,15 +1234,16 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "WebFetch: Ministry notice page read (date 15.06.2026, deadline 30.06.2026, file links); curl (browser user agent, --max-time 60): draft order, strategy, operational plan, explanatory note and consultation report PDFs read (pdftotext); second pass 2026-10-13 curl re-read",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://thedigital.gov.ua/documents/ministry/povidomlennia-pro-opryliudnennia-proyektu-rozporiadzennia-kabinetu-ministriv-ukrayiny-pro-skhvalennia-stratehiyi-rozvytku-shtuchnoho-intelektu-v-ukrayini-na-period-do-2030-roku-ta-zatverdzennia-operatsiynoho-planu-zakhodiv-z-yiyi-realizatsiyi-u-2026-2028-rokakh",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "uk",
       "error": null,
-      "content_type": "text/html"
+      "content_type": "text/html",
+      "fail_streak": 0
     },
     {
       "id": "s-48223d35746c",
@@ -1261,15 +1264,16 @@
         "sandbox"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "curl (browser user agent, --max-time 60): full PDF read (pdftotext); date 'Червень 2024' printed on the cover",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://storage.thedigital.gov.ua/files/d/9d/0bbc3a705c821a197bedfcdfe00899d9.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "uk",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-c84b4585435f",
@@ -1290,15 +1294,16 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "curl (browser user agent, --max-time 60): full PDF read (pdftotext); WebFetch: Ministry news page read for the 24.01.2024 date and the PDF link",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://storage.thedigital.gov.ua/files/3/f3/1ecd916b1f1b12c29c6e2984ecb0bf33.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "uk",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-f1712b1a50a1",
@@ -1318,15 +1323,16 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "curl (browser user agent, --max-time 60): full PDF read (pdftotext); date 'Березень 2025' printed on the first page; second pass: curl re-read; listed on ai.thedigital.gov.ua/documents",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://storage.thedigital.gov.ua/files/f/bf/a9595e0dcd238ab2b3602909107aabf9.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "uk",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-7f77a910ec6a",
@@ -1344,15 +1350,16 @@
         "strategy"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-17",
-      "check_method": "curl (TLS reset) and WebFetch (HTTP 403) both failed on 2026-10-13 (first and second pass)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": null,
       "final_url": "https://zakon.rada.gov.ua/laws/show/1351-2024-%D1%80",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "uk",
-      "error": "connection reset / HTTP 503 on both curl and WebFetch",
-      "content_type": "text/html"
+      "error": "URLError: <urlopen error [Errno 111] Connection refused>",
+      "content_type": "text/html",
+      "fail_streak": 1
     },
     {
       "id": "s-e53a9c1ebe90",
@@ -1372,15 +1379,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "curl (browser user agent, --max-time 60): full PDF read (pdftotext); WebFetch: kmu.gov.ua announcement (07.10.2023)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://storage.thedigital.gov.ua/files/2/22/363bbcaec30bf9d4e598375fecac3227.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "uk",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-3ee6fbee869e",
@@ -1401,15 +1409,16 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "curl: PDF downloaded (image-only, 54 pages); cover and contents pages read as rendered images; WebFetch: kmu.gov.ua news page read for the 07.08.2024 date and content; PDF link from the Ministry AI portal document list",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://storage.thedigital.gov.ua/files/4/14/1f1ed108e357dbd23b14d32c9375214f.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "uk",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-731eb7d19bb9",
@@ -1428,15 +1437,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "curl (browser user agent, --max-time 60): full PDF read (pdftotext); listed on the Ministry AI portal (ai.thedigital.gov.ua/documents, read via its JSON API)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://storage.thedigital.gov.ua/files/3/33/c253428e736af3a0574b5f4ea6a92332.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "uk",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-4ecd04bd8227",
@@ -1456,15 +1466,16 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "curl (browser user agent, --max-time 60): full PDF read (pdftotext); listed on the Ministry AI portal (ai.thedigital.gov.ua/documents, read via its JSON API)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://storage.thedigital.gov.ua/files/5/b5/1de422b38985d037d9ba8f9f6cb2ab58.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "uk",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-4d8378a75dcd",
@@ -1484,15 +1495,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "curl (browser user agent, --max-time 60): full PDF read (pdftotext); listed on the Ministry AI portal (ai.thedigital.gov.ua/documents, read via its JSON API)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://storage.thedigital.gov.ua/files/8/e8/da2197e1f813b2c5d29294e1ba580e8b.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "uk",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-3481c619cfdf",
@@ -1512,15 +1524,16 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "curl (browser user agent, --max-time 60): full PDF read (pdftotext); listed on the Ministry AI portal (ai.thedigital.gov.ua/documents, read via its JSON API)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://storage.thedigital.gov.ua/files/2/72/fcf6c498e0a9f57e7a8521ff9833372d.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "uk",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-8594aaec7712",
@@ -1540,15 +1553,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "curl (browser user agent, --max-time 60): full PDF read (pdftotext); listed on the Ministry AI portal (ai.thedigital.gov.ua/documents, read via its JSON API)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://storage.thedigital.gov.ua/files/4/54/747daa2d949a8b4046ce7aed873aa54c.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "uk",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-a79f71595395",
@@ -1568,15 +1582,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "curl (browser user agent, --max-time 60): full PDF read (pdftotext); listed on the Ministry AI portal (ai.thedigital.gov.ua/documents, read via its JSON API); Ministry news page read via curl (datePublished 2026-04-15)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://storage.thedigital.gov.ua/files/7/87/8cab25f96119dba1f0ee56a37a0a687a.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "uk",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-3361968f7e5f",
@@ -1595,15 +1610,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "curl (browser user agent, --max-time 60): full PDF read (pdftotext); listed on the Ministry AI portal (ai.thedigital.gov.ua/documents, read via its JSON API); Ministry news page read via curl (datePublished 2026-09-18)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://storage.thedigital.gov.ua/files/4/f4/4a56fe49bb2b7769548895c3c711af48.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "uk",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-09efaf7208e3",
@@ -1622,15 +1638,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "curl (browser user agent, --max-time 60): recommendations PDF and order PDF read (pdftotext) from the State Service's file API; the State Service's documents register (cip.gov.ua API, entry 73920) and news item 74145 (11.03.2026) read for the order number and date; WebFetch of the cip.gov.ua document page returned 403, kmu.gov.ua news page read via WebFetch",
-      "http_status": 200,
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 403,
       "final_url": "https://cip.gov.ua/services/cm/api/attachment/download?id=73833",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "uk",
-      "error": null,
-      "content_type": "application/pdf"
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "application/pdf",
+      "fail_streak": 1
     },
     {
       "id": "s-9cf4247cb303",
@@ -1649,15 +1666,16 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-22",
-      "checked_date": "2026-10-22",
-      "check_method": "browser-check-2026-10-22: Government portal act page (kmu.gov.ua) opened in a desktop browser and the order text read; plan annex PDF not machine-readable in the browser.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
-      "final_url": "https://www.kmu.gov.ua/npas/pro-zatverdzhennia-planu-zakhodiv-z-realizatsii-kontsep-v-ukraini-na-20252026-roky-i-457",
-      "link_status": "reachable",
+      "final_url": "http://validate.perfdrive.com/?ssa=803d0fff-3e56-4a0c-9b09-9efaf0670f32&ssb=34881285094&ssc=https%3A%2F%2Fwww.kmu.gov.ua%2Fnpas%2Fpro-zatverdzhennia-planu-zakhodiv-z-realizatsii-kontsep-v-ukraini-na-20252026-roky-i-457&ssi=75c2f3b9-bqw7-4981-a7b7-3b2b00d2683c&ssk=support@shieldsquare.com&ssm=94365407093757865103951446549193&ssn=3bbb260223b1638e81446ad9720a0836a573f0405f52-3cbe-47f0-af9401&sso=256b2302-29777479a1d84d06df3cd9b2815aa642ee807b7174b40cb0&ssp=02530896891794219679179426563111383&ssq=63068470736052328098007360206189009034286&ssr=MTcyLjE3OS42LjMy&sst=Mozilla/5.0%20(Windows%20NT%2010.0;%20Win64;%20x64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/130.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDBmMDQwNWY1Mi0zY2JlLTQ3ZjAtYTMwMi0yOTc3NzQ3OWExZDgxLTE3OTQyMDczNjAyMzYwLTAwNTNhZTgyMjYxOTVhYjYwZTAxMCIsInJkIjoia211Lmdvdi51YSIsInV6bXgiOiI3ZmMwMDAzOTA4NDJkMi1kYjdhLTRjZDgtODljZC1mOGNjZTMzZDZiYjIxLTE3OTQyMDczNjAyMzYwLTAwZDU2YzIxYmJmZWM0NWY1MzMxMCJ9",
+      "link_status": "redirected",
       "page_title": null,
       "document_language": "uk",
-      "error": null,
-      "content_type": "text/html"
+      "error": "Redirected to the site's home, maintenance or error page",
+      "content_type": "text/html",
+      "fail_streak": 0
     },
     {
       "id": "s-f3cef61378fc",
@@ -1675,15 +1693,16 @@
         "strategy"
       ],
       "date_reviewed": "2026-10-22",
-      "checked_date": "2026-10-22",
-      "check_method": "browser-check-2026-10-22: Government portal act page (kmu.gov.ua) opened in a desktop browser and the order text read; concept annex PDF not machine-readable in the browser.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
-      "final_url": "https://www.kmu.gov.ua/npas/pro-skhvalennia-kontseptsii-derzhavnoi-tsilovoi-naukovo-tekhnichnoi-prohramy-z-vykorystannia-s320130424",
-      "link_status": "reachable",
+      "final_url": "http://validate.perfdrive.com/?ssa=7f7530e8-015f-47c7-9ece-3c440d95f866&ssb=34881285094&ssc=https%3A%2F%2Fwww.kmu.gov.ua%2Fnpas%2Fpro-skhvalennia-kontseptsii-derzhavnoi-tsilovoi-naukovo-tekhnichnoi-prohramy-z-vykorystannia-s320130424&ssi=e558c94e-bqw7-4ead-88bc-b6f23e6a7e30&ssk=support@shieldsquare.com&ssm=94365407093757865103951446549193&ssn=3bbb2602c1a541b61f0012e018250836a57379400914-eebe-4eba-af9401&sso=256b21c1-b2df13c4544c4d06df3c470f7aa03c127d3f821b74b40cb0&ssp=02530896891794219679179426563111383&ssq=63068470736052328098007360206189009034286&ssr=MTcyLjE3OS42LjMy&sst=Mozilla/5.0%20(Windows%20NT%2010.0;%20Win64;%20x64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/130.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJyZCI6ImttdS5nb3YudWEiLCJ1em14IjoiN2ZjMDAwMDJlMDI2ODItZWM3Zi00MzUyLThiY2EtOTA1MjJkY2Q4NmQ4MS0xNzk0MjA3MzYwMjMxMC0wMGRkNGIzMmIyM2U0MjU5MzhlMTAiLCJfX3V6bWYiOiI3ZjkwMDA3OTQwMDkxNC1lZWJlLTRlYmEtYTFjMS1iMmRmMTNjNDU0NGMxLTE3OTQyMDczNjAyMzEwLTAwNWE1ZDM0NTVlOWFlZDY4NTYxMCJ9",
+      "link_status": "redirected",
       "page_title": null,
       "document_language": "uk",
-      "error": null,
-      "content_type": "text/html"
+      "error": "Redirected to the site's home, maintenance or error page",
+      "content_type": "text/html",
+      "fail_streak": 0
     },
     {
       "id": "s-6b29f92f42d1",
@@ -1703,15 +1722,16 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-22",
-      "checked_date": "2026-10-22",
-      "check_method": "browser-check-2026-10-22: Government portal act page (kmu.gov.ua) opened in a desktop browser and the resolution text read; procedure annex not read.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
-      "final_url": "https://www.kmu.gov.ua/npas/deiaki-ho-pryznmizhnarodnoi-peredachi-eksportu-takykh-tovariv-i-310",
-      "link_status": "reachable",
+      "final_url": "http://validate.perfdrive.com/?ssa=aa6ef358-4758-4abd-9b5c-ae8e71735d7d&ssb=34881285094&ssc=https%3A%2F%2Fwww.kmu.gov.ua%2Fnpas%2Fdeiaki-ho-pryznmizhnarodnoi-peredachi-eksportu-takykh-tovariv-i-310&ssi=53d3eed3-bqw7-49cd-94d2-5a74211e6941&ssk=support@shieldsquare.com&ssm=94365407093757865103951446549193&ssn=3bbb260248b746844d10e48fe4860836a573d27dca06-49c1-4216-8f9401&sso=256b2f2b-973a7ca942ef4d06df3c613b48bfe429df85926a74b40cb0&ssp=02530896891794219679179426563111383&ssq=63068470736052328098007360206189009034286&ssr=MTcyLjE3OS42LjMy&sst=Mozilla/5.0%20(Windows%20NT%2010.0;%20Win64;%20x64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/130.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDBkMjdkY2EwNi00OWMxLTQyMTYtOGYyYi05NzNhN2NhOTQyZWYxLTE3OTQyMDczNjAyMjQwLTAwNTA5ZmU3ZTNjMGI3MDc5MmUxMCIsInJkIjoia211Lmdvdi51YSIsInV6bXgiOiI3ZmMwMDA0MDVlMTY5MS1mNjJhLTQzNjUtYmMyZC1hYzA0MGQ1NTdlNmExLTE3OTQyMDczNjAyMjQwLTAwZDY3Zjk0YjQ1MjQyZjY4OTAxMCJ9",
+      "link_status": "redirected",
       "page_title": null,
       "document_language": "uk",
-      "error": null,
-      "content_type": "text/html"
+      "error": "Redirected to the site's home, maintenance or error page",
+      "content_type": "text/html",
+      "fail_streak": 0
     },
     {
       "id": "s-ukr-sci-20261107",
@@ -1730,15 +1750,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-11-07",
-      "checked_date": "2026-11-07",
-      "check_method": "curl (browser user agent, --max-time 90): PDF read (pdftotext, cover and section 1); listed on the Ministry AI portal (ai-web-api.thedigital.gov.ua documents list); Ministry news page read via curl (datePublished 2026-10-22)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://storage.thedigital.gov.ua/files/e/ce/06629ddaac9e0619a5abd448a7a01ce7.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "uk",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     }
   ],
   "regional_applicability": [],

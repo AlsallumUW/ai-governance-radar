@@ -167,15 +167,16 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-21",
-      "checked_date": "2026-10-21",
-      "check_method": "WebFetch (research pass)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": null,
       "final_url": "https://oas.org/ext/en/main/calendar/event?id=570",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "es",
-      "error": null,
-      "content_type": null
+      "error": "TimeoutError: The read operation timed out",
+      "content_type": null,
+      "fail_streak": 1
     }
   ],
   "regional_applicability": [],

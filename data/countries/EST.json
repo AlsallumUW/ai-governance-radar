@@ -120,7 +120,7 @@
       "official_webpage_url": "https://www.kratid.ee/kratt-visioon",
       "source_kind": "official_document",
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
+      "link_status": "redirected",
       "category": "historical",
       "source_id": "s-f539edbddaa2",
       "evidence_reference": "curl (browser user agent, --max-time 60): full PDF read (pdftotext); cover states 'Mai 2019', commissioned by the Government Office strategy unit; linked from kratid.ee/kratt-visioon."
@@ -174,7 +174,7 @@
       "official_webpage_url": "https://www.kratid.ee/kratt-visioon",
       "source_kind": "official_document",
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
+      "link_status": "redirected",
       "category": "strategy",
       "source_id": "s-84012402d704",
       "evidence_reference": "curl (browser user agent, --max-time 60): full PDF read (pdftotext); title page 'Majandus- ja Kommunikatsiooniministeerium 2021'; linked from kratid.ee/kratt-visioon as 'Tehisintellekti tegevuskava 2022-2023'."
@@ -281,7 +281,7 @@
       "official_webpage_url": "https://www.kratid.ee/kratt-visioon",
       "source_kind": "official_document",
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
+      "link_status": "redirected",
       "category": "strategy",
       "source_id": "s-cf71e2610b13",
       "evidence_reference": "curl (browser user agent, --max-time 60): full 63-page PDF read (pdftotext); only the year 2024 is stated in the document."
@@ -332,7 +332,7 @@
       "official_webpage_url": "https://www.kratid.ee/juhised",
       "source_kind": "official_document",
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
+      "link_status": "redirected",
       "category": "procurement",
       "source_id": "s-f1b2c2f6d6db",
       "evidence_reference": "curl (browser user agent, --max-time 60): PDF read (pdftotext); dated 'November 2019'; linked from kratid.ee/juhised. The guidance page (2024 site) is run by the Ministry of Justice and Digital Affairs."
@@ -383,7 +383,7 @@
       "official_webpage_url": "https://www.kratid.ee/juhised",
       "source_kind": "official_document",
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
+      "link_status": "redirected",
       "category": "risk-assurance",
       "source_id": "s-b37d0052eb6d",
       "evidence_reference": "curl (browser user agent, --max-time 60): PDF read (pdftotext); dated 'Oktoober 2020', signed Ott Velsberg, Andmete juht, MKM."
@@ -485,7 +485,7 @@
       "official_webpage_url": "https://www.kratid.ee/testkeskkond",
       "source_kind": "official_document",
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
+      "link_status": "redirected",
       "category": "sandbox",
       "source_id": "s-8c7050a5688a",
       "evidence_reference": "curl (browser user agent, --max-time 60): 13-page PDF read (pdftotext); 'Versioon 1.5 | Jaanuar 2026', author Ott Velsberg; linked from kratid.ee/testkeskkond."
@@ -1129,15 +1129,16 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full PDF read (pdftotext); policy page links this PDF; publication date from the ministry news item of 24.03.2025 (kaitseministeerium.ee/en/news/ministry-defence-unveils-defence-artificial-intelligence-strategy).",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://kaitseministeerium.ee/sites/default/files/documents/2026-04/defence_artificial_intelligence_strategy_for_estonia.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-f539edbddaa2",
@@ -1157,15 +1158,16 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full PDF read (pdftotext); cover states 'Mai 2019', commissioned by the Government Office strategy unit; linked from kratid.ee/kratt-visioon.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
-      "final_url": "https://www.kratid.ee/_files/ugd/980182_5d72ec597c7c468fa44fb22c8d97813f.pdf",
-      "link_status": "reachable",
+      "final_url": "https://e964029b-7c32-42a7-817c-37c391a3b976.filesusr.com/ugd/980182_5d72ec597c7c468fa44fb22c8d97813f.pdf",
+      "link_status": "redirected",
       "page_title": null,
       "document_language": "et",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-84012402d704",
@@ -1185,15 +1187,16 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full PDF read (pdftotext); title page 'Majandus- ja Kommunikatsiooniministeerium 2021'; linked from kratid.ee/kratt-visioon as 'Tehisintellekti tegevuskava 2022-2023'.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
-      "final_url": "https://www.kratid.ee/_files/ugd/980182_1f685990ca2e462f84c987408a816503.pdf",
-      "link_status": "reachable",
+      "final_url": "https://e964029b-7c32-42a7-817c-37c391a3b976.filesusr.com/ugd/980182_1f685990ca2e462f84c987408a816503.pdf",
+      "link_status": "redirected",
       "page_title": null,
       "document_language": "et",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-b88f81d3ff1c",
@@ -1213,15 +1216,16 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): mkm.ee PDF (47 pp.) and kratid.ee designed version (https://www.kratid.ee/_files/ugd/7df26f_21000a2dd36c4a66a30eea97563370a3.pdf, 75 pp.) read via pdftotext; title page names the three ministries; only the year 2024 is stated.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.mkm.ee/media/10157/download",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "et",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-cf71e2610b13",
@@ -1242,15 +1246,16 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full 63-page PDF read (pdftotext); only the year 2024 is stated in the document.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
-      "final_url": "https://www.kratid.ee/_files/ugd/7df26f_9a6d060409214b9da2774e5b5eabf717.pdf",
-      "link_status": "reachable",
+      "final_url": "https://e964029b-7c32-42a7-817c-37c391a3b976.filesusr.com/ugd/7df26f_9a6d060409214b9da2774e5b5eabf717.pdf",
+      "link_status": "redirected",
       "page_title": null,
       "document_language": "et",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-f1b2c2f6d6db",
@@ -1269,15 +1274,16 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): PDF read (pdftotext); dated 'November 2019'; linked from kratid.ee/juhised. The guidance page (2024 site) is run by the Ministry of Justice and Digital Affairs.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
-      "final_url": "https://www.kratid.ee/_files/ugd/980182_8d0fcb0be030467aa55a4f2839560cbe.pdf",
-      "link_status": "reachable",
+      "final_url": "https://e964029b-7c32-42a7-817c-37c391a3b976.filesusr.com/ugd/980182_8d0fcb0be030467aa55a4f2839560cbe.pdf",
+      "link_status": "redirected",
       "page_title": null,
       "document_language": "et",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-b37d0052eb6d",
@@ -1296,15 +1302,16 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): PDF read (pdftotext); dated 'Oktoober 2020', signed Ott Velsberg, Andmete juht, MKM.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
-      "final_url": "https://www.kratid.ee/_files/ugd/980182_6c40cd0822e74f89aae111d5b146d612.pdf",
-      "link_status": "reachable",
+      "final_url": "https://e964029b-7c32-42a7-817c-37c391a3b976.filesusr.com/ugd/980182_6c40cd0822e74f89aae111d5b146d612.pdf",
+      "link_status": "redirected",
       "page_title": null,
       "document_language": "et",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-d74445d9665f",
@@ -1323,15 +1330,16 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): kratid.ee/algoritm-ulevaade page read and the linked .docx form (https://www.kratid.ee/_files/ugd/980182_02732bbf75014a6a9a25133d97005e5c.docx) read; form header 'Detsember 2024'.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.kratid.ee/algoritm-ulevaade",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "et",
       "error": null,
-      "content_type": "text/html"
+      "content_type": "text/html",
+      "fail_streak": 0
     },
     {
       "id": "s-8c7050a5688a",
@@ -1350,15 +1358,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): 13-page PDF read (pdftotext); 'Versioon 1.5 | Jaanuar 2026', author Ott Velsberg; linked from kratid.ee/testkeskkond.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
-      "final_url": "https://www.kratid.ee/_files/ugd/7df26f_01514bebf02347ada0b01e4b97c14c8d.pdf",
-      "link_status": "reachable",
+      "final_url": "https://e964029b-7c32-42a7-817c-37c391a3b976.filesusr.com/ugd/7df26f_01514bebf02347ada0b01e4b97c14c8d.pdf",
+      "link_status": "redirected",
       "page_title": null,
       "document_language": "et",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-c41da5129b4f",
@@ -1378,15 +1387,16 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): Commissioner's page (publisher 'Justiits- ja Digiministeerium', 2025) and 73-page PDF read; version table gives 1.1 of 01.10.2025.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.volinik.ee/infomaterjalid/algoritmilise-kallutatuse-riskihalduse-juhend",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "et",
       "error": null,
-      "content_type": "text/html"
+      "content_type": "text/html",
+      "fail_streak": 0
     },
     {
       "id": "s-21950b3edf26",
@@ -1406,15 +1416,16 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): 7-page PDF read (pdftotext); cover 'Haridus- ja Teadusministeerium 2024'; linked from hm.ee/tehisaru-koolis.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://hm.ee/sites/default/files/documents/2024-03/Tehisaru%20juhend%202024.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "et",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-08564a0ad263",
@@ -1434,15 +1445,16 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): President's promulgation decision no. 647 (23.12.2025) read; AI provision read in the Riigikogu cultural affairs committee's amendment proposals of 14.10.2025 (api.riigikogu.ee/api/files/a534d499-43e4-444d-ba26-a0566a436dda/download). Riigi Teataja text not reached (JavaScript-only site).",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://api.riigikogu.ee/api/files/039acd6b-4517-429e-b2ba-6697f804daa2/download",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "et",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-657e7bd5a015",
@@ -1462,15 +1474,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): PDF read (pdftotext); header 'Meie 07.05.2026 nr 2.2-10/26/1922-1'. WebFetch could not decode the PDF.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.aki.ee/sites/default/files/documents/2026-06/Tahelepanu%20juhtimine.%20%C3%9Cldotstarbelise%20tehisintellekti%20kasutamine%20tervishoius_0.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "et",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-7278714cbd37",
@@ -1489,15 +1502,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): page read in full; only 'Last updated: 24.07.2026' is shown, used as publication_date.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.aki.ee/tehisaru/tehisaru-ja-andmekaitse/tehisaru-kasutusele-votjale",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "et",
       "error": null,
-      "content_type": "text/html"
+      "content_type": "text/html",
+      "fail_streak": 0
     },
     {
       "id": "s-2b7fc3d4903e",
@@ -1517,15 +1531,16 @@
         "index-readiness"
       ],
       "date_reviewed": "2026-11-07",
-      "checked_date": "2026-11-07",
-      "check_method": "WebFetch: report PDF read; cover title, report no. 80157 and date line 'Tallinn, 30. mai 2025' confirmed. The 2026-04 upload folder in the URL is not a date.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.riigikontroll.ee/sites/default/files/documents/2026-04/KA_80157_%C3%9Clevaade%20tehisintellekti%20lahenduste%20loomisest%20avaliku%20sektori%20asutustes_2025.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "et",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-320cc2802e7e",
@@ -1543,15 +1558,16 @@
         "standards"
       ],
       "date_reviewed": "2026-11-07",
-      "checked_date": "2026-11-07",
-      "check_method": "WebFetch: EVS catalogue product page read (number, title, status valid, 'valid from' date, identical EN and ISO/IEC editions, language).",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.evs.ee/en/evs-en-iso-iec-42001-2026",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
       "error": null,
-      "content_type": "text/html"
+      "content_type": "text/html",
+      "fail_streak": 0
     },
     {
       "id": "s-ab95252ed471",
@@ -1569,15 +1585,16 @@
         "standards"
       ],
       "date_reviewed": "2026-11-07",
-      "checked_date": "2026-11-07",
-      "check_method": "WebFetch: EVS catalogue product page read (number, title, status valid, 'valid from' date, identical EN and ISO/IEC editions, language).",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.evs.ee/en/evs-en-iso-iec-23894-2024",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
       "error": null,
-      "content_type": "text/html"
+      "content_type": "text/html",
+      "fail_streak": 0
     },
     {
       "id": "s-b827729bbc81",
@@ -1595,15 +1612,16 @@
         "standards"
       ],
       "date_reviewed": "2026-11-07",
-      "checked_date": "2026-11-07",
-      "check_method": "WebFetch: EVS catalogue product page read (number, title, status valid, 'valid from' date, identical EN and ISO/IEC editions, language).",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.evs.ee/en/evs-en-iso-iec-22989-2023",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
       "error": null,
-      "content_type": "text/html"
+      "content_type": "text/html",
+      "fail_streak": 0
     },
     {
       "id": "s-044c29909dfb",
@@ -1621,15 +1639,16 @@
         "standards"
       ],
       "date_reviewed": "2026-11-07",
-      "checked_date": "2026-11-07",
-      "check_method": "WebFetch: EVS catalogue product page read (number, title, status valid, 'valid from' date, identical EN and ISO/IEC editions, language).",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.evs.ee/en/evs-en-iso-iec-23053-2023",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
       "error": null,
-      "content_type": "text/html"
+      "content_type": "text/html",
+      "fail_streak": 0
     }
   ],
   "regional_applicability": [],

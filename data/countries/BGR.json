@@ -411,15 +411,16 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full 58-page PDF read (pdftotext); consultation dates and Bulgarian title read on strategy.bg consultation 5337-K",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "final_url": "https://www.mtc.government.bg/sites/default/files/conceptforthedevelopmentofaiinbulgariauntil2030.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
       "error": null,
       "http_status": 200,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-1a29fc0303a1",
@@ -440,15 +441,16 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): IPA page (dated 30 June 2026) and 8-page code PDF read (pdftotext); adopter list read on IPA network page",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "final_url": "https://www.ipa.government.bg/bg/dobrovolen-kodeks-za-etichno-izpolzvane-na-izkustven-intelekt-v-drzhavnata-administraciya-0",
       "link_status": "reachable",
       "page_title": "Доброволен кодекс за етично използване на изкуствен интелект в държавната администрация",
       "document_language": "bg",
       "error": null,
       "http_status": 200,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-63410550d3ae",
@@ -467,15 +469,16 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): 46-page PDF read (pdftotext)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "final_url": "https://www.ipa.government.bg/sites/default/files/readiness_aiindex_ipa25_en.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
       "error": null,
       "http_status": 200,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-0d48fd0845ca",
@@ -494,14 +497,15 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-18",
-      "check_method": "curl (--max-time 60) timed out twice and WebFetch timed out; pris.government.bg root page reachable",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "final_url": "https://pris.government.bg/document/deef8dca4eba715a35b3dc266ae23adb/3ac6276165987a941aaa4305496b3e54",
       "link_status": "inaccessible",
       "page_title": null,
       "document_language": "bg",
-      "error": "timeout (curl and WebFetch)",
-      "http_status": null
+      "error": "TimeoutError: The read operation timed out",
+      "http_status": null,
+      "fail_streak": 1
     },
     {
       "id": "s-517618f748f6",
@@ -520,15 +524,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): 21-page PDF read (pdftotext)",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "final_url": "https://www.fsc.bg/wp-content/uploads/2021/files/31039_file.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "bg",
       "error": null,
       "http_status": 200,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-fadcf0d4b4db",
@@ -548,15 +553,16 @@
         "drafts"
       ],
       "date_reviewed": "2026-11-07",
-      "checked_date": "2026-11-07",
-      "check_method": "PDF text read",
-      "http_status": 200,
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 403,
       "final_url": "https://www.mon.bg/nfs/2024/02/nasoki-izpolzvane-ii_190224.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "bg",
-      "error": null,
-      "content_type": "application/pdf"
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "application/pdf",
+      "fail_streak": 1
     }
   ],
   "regional_applicability": [],

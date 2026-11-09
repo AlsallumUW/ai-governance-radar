@@ -391,15 +391,16 @@
         "historical"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-18",
-      "check_method": "curl (browser user agent, --max-time 60) and WebFetch both returned HTTP 502 from the Diálogo 2.0 consultation portal on 2026-10-12. Title, consultation period (1-11 August 2025) and URL confirmed from the adopted strategy's own account of its preparation (Registro Oficial Suplemento No. 206, 19 January 2026, section 3 'Mesas de socialización del documento preliminar').",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 502,
       "final_url": "https://aportecivico.gobiernoelectronico.gob.ec/legislation/processes/78/draft_versions/99",
       "link_status": "inaccessible",
       "page_title": null,
       "document_language": "es",
-      "error": "HTTP 502 Bad Gateway (curl and WebFetch)",
-      "content_type": null
+      "error": "HTTP Error 502: Bad Gateway",
+      "content_type": null,
+      "fail_streak": 1
     },
     {
       "id": "s-9cb6950b2c99",
@@ -420,15 +421,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): MINTEL-hosted copy of Registro Oficial Primer Suplemento No. 206 (19 January 2026) read in full (pdftotext; 63 pages): Acuerdo MINTEL-MINTEL-2025-0030 signed 22 December 2025, in force on publication in the Registro Oficial, with the strategy annex. Same issue also read on the Constitutional Court's gazette repository (esacc.corteconstitucional.gob.ec). Launch confirmed on MINTEL press release No. 084 of 10 March 2026.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.telecomunicaciones.gob.ec/wp-content/uploads/2026/02/Registro_Oficial_Ano_l_Primer_Suplemento_No_206_del_19_de_enero_de_2026.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "es",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-caf586ca0aef",
@@ -446,15 +448,16 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): signed Quipux PDF on telecomunicaciones.gob.ec read in full (pdftotext; 4 pages): dated 16 November 2023, in force on signature.",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.telecomunicaciones.gob.ec/wp-content/uploads/2023/12/mintel-mintel-2023-0019-1-1.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "es",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-5efe927390ce",
@@ -473,15 +476,16 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): MINTEL-hosted scan of Registro Oficial Quinto Suplemento No. 459 (26 May 2021) confirmed title, issue and date (image PDF, 70 pages, no text layer); article text (art. 20 and final provision) read from the consolidated text also hosted on telecomunicaciones.gob.ec (2026/06, LEXIS-sourced consolidation, last reform 22 May 2026).",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.telecomunicaciones.gob.ec/wp-content/uploads/2021/06/Ley-Organica-de-Datos-Personales.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "es",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     }
   ],
   "regional_applicability": [],

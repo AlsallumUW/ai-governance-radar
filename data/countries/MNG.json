@@ -220,15 +220,16 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full 4-page strategy PDF read (pdftotext); approval date 2025.09.24 and No. 18 from the ministry's 'Policy documents' register on mddic.gov.mn/eng/legal-framework/; approval also stated in the ministry's Q3 2025 implementation report PDF",
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://mddic.gov.mn/wp-content/uploads/2026/02/AI_Strategy-20260202.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "mn",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-5e514840a279",
@@ -248,15 +249,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full consolidated text read on legalinfo.mn (official legislation portal); adoption 17 Dec 2021 in the header, applicability 1 May 2022 in art. 32.1, automated-processing assessment in art. 23",
-      "http_status": 200,
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": null,
       "final_url": "https://legalinfo.mn/mn/detail?lawId=16390288615991",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "mn",
-      "error": null,
-      "content_type": "text/html"
+      "error": "URLError: <urlopen error timed out>",
+      "content_type": "text/html",
+      "fail_streak": 1
     },
     {
       "id": "s-d3b014e22c5e",
@@ -275,15 +277,16 @@
         "sandbox"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full text read on legalinfo.mn; date 5 June 2024 in the header; AI sandbox in art. 6.1.6 and AI project grants in art. 13.3.4",
-      "http_status": 200,
+      "checked_date": "2026-11-09",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": null,
       "final_url": "https://legalinfo.mn/mn/detail?lawId=17140722436571",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "mn",
-      "error": null,
-      "content_type": "text/html"
+      "error": "URLError: <urlopen error timed out>",
+      "content_type": "text/html",
+      "fail_streak": 1
     }
   ],
   "regional_applicability": [],
