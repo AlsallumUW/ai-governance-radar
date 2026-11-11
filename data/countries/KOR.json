@@ -6173,6 +6173,55 @@
       "organization_id": null,
       "first_recorded": "2026-11-04",
       "last_changed": null
+    },
+    {
+      "id": "i-21c5f40d950f",
+      "jurisdiction_id": "KOR",
+      "authority_type": "ministry",
+      "subnational_unit": null,
+      "subcategory": null,
+      "scope": "Republic of Korea",
+      "sectors": [],
+      "technology_scope": [
+        "AI"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-11-11",
+      "metadata_gaps": [],
+      "evidence_reference": "KISA guideline page (지식플랫폼 > 가이드라인, postSeq=25, 등록일 2026-11-06) and its PDF (cover 2026. 11; foreword and contents read); MSIT press release nttSeqNo=3187929 (보도 2026. 11. 6., 정보보호산업과) read 2026-11-11.",
+      "link_status": "reachable",
+      "first_recorded": "2026-11-11",
+      "related_instruments": [],
+      "supersedes": [],
+      "superseded_by": [],
+      "last_amended_date": null,
+      "government_level": "national",
+      "verification_level": "reviewed_primary_metadata",
+      "official_title": "에이전틱 AI 제로트러스트 안내서: 안전한 에이전틱 AI 이용 환경을 위한 제로트러스트 적용방안",
+      "english_title": "Agentic AI Zero Trust Guide: Applying zero trust for a secure agentic AI environment",
+      "issuing_authority": "Ministry of Science and ICT and Korea Internet & Security Agency",
+      "publisher_name": "Korea Internet & Security Agency",
+      "categories": [
+        "cyber-security",
+        "risk-assurance"
+      ],
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2026-11-06",
+      "effective_date": null,
+      "current_status": "Released by MSIT and KISA on 6 November 2026 (MSIT press release of that date, which names the KISA website as where the guide is published; KISA guideline page registered 2026-11-06; cover dated 2026. 11, 158 pp.). The guide states it supplements, and does not replace, Zero Trust Guideline 2.0 (December 2024).",
+      "summary": "Guidance from MSIT and KISA for companies that deploy or operate agentic AI on applying zero-trust security to AI agents. It extends the four-level maturity model of Zero Trust Guideline 2.0 to agentic AI, setting a reference architecture, security functions and maturity criteria for agent actions such as input handling, tool calls, task delegation and external communication, including non-human identity management and human approval or pre-approved policies according to risk. It adds adoption considerations, a step-by-step adoption and operation procedure and use scenarios.",
+      "source_url": "https://www.kisa.or.kr/2060204/form?postSeq=25&page=1",
+      "official_pdf_url": "https://www.kisa.or.kr/post/fileDownload?menuSeq=2060204&postSeq=25&attachSeq=1&lang_type=KO",
+      "official_webpage_url": "https://www.kisa.or.kr/2060204/form?postSeq=25&page=1",
+      "language": "ko",
+      "source_kind": "official_publication",
+      "last_changed": null,
+      "category": "cyber-security",
+      "source_id": null,
+      "organization_id": "o-51785f14caa0",
+      "document_access_type": "official_publication_or_full_text_page",
+      "ai_governance_relevance": "National cybersecurity guidance on securing agentic AI systems through zero-trust controls and human oversight."
     }
   ],
   "organizations": [
@@ -9875,7 +9924,15 @@
       "산업통상자원부 산업 인공지능 전략 OR AI 자율제조 전략 발표",
       "인공지능 가이드라인 발표 2026년 11월 site:go.kr",
       "Korea AI Basic Act enforcement decree guidelines Ministry of Science and ICT November 2026",
-      "ftc.go.kr press releases 2026-10-28 to 2026-11-04 AI check"
+      "ftc.go.kr press releases 2026-10-28 to 2026-11-04 AI check",
+      "ftc.go.kr 보도자료 search 인공지능 (to 2026-11-10) — AI labelling/advertising guideline final check",
+      "msit.go.kr 보도자료 search 인공지능 / 에이전틱 / 제로트러스트 / 가이드라인 / 안내서 (to 2026-11-10)",
+      "kisa.or.kr 가이드라인 list (2060204)",
+      "opinion.lawmaking.go.kr 입법예고 list 2026-10-30 to 2026-11-11",
+      "pipc.go.kr and fsc.go.kr press lists 2026-11-04 to 2026-11-11",
+      "인공지능 가이드라인 2026년 11월 과학기술정보통신부 OR 공정거래위원회 OR 개인정보보호위원회",
+      "South Korea artificial intelligence November 2026 guideline ministry",
+      "국가인공지능전략위원회 제3차 전체회의 2026 입법 원칙"
     ],
     "review_date": "2026-10-08",
     "passes": {
@@ -9897,10 +9954,40 @@
     "no_material_found_note": "National sources in the Republic of Korea were searched, including laws, central government, the privacy commission, sector regulators, metropolitan and provincial governments and, in a later check, each national ministry. The draft frontier AI safety guideline is published only on an industry association's site and is listed under Leads, as are the pending amendment bills to the AI Basic Act. Not yet verified from the official text: the texts of the Supreme Court's AI guidebook for judges, the transport ministry's autonomous vehicle ethics guidelines and the planned guideline on AI in classrooms and assessments, and the own websites of several ministries searched only indirectly.",
     "discovery_result_count": 10,
     "focused_result_count": 10,
-    "technical_note": "Method note (original): Deep review completed on 8 October 2026, covering national laws and decrees, central government (the Ministry of Science and ICT, the national AI strategy committee, the AI Safety Institute and the Ministry of the Interior and Safety), the Personal Information Protection Commission, sector regulators (finance, food and drug safety, communications, education, human rights, copyright and transport), and all 17 metropolitan and provincial governments. Searches were made in Korean and English. The Digital Platform Government Committee website could not be reached, and some privacy commission decisions are available only as press releases. Pending: a draft guideline on the safety of frontier AI, which so far is available only on an industry association's website and not on a government page; the full text of the national AI action plan (AI Basic Plan 2026-2028), further ministry notices under the AI Basic Act on safety obligations and compute calculation, public-sector AI guides from the Ministry of the Interior and Safety, and AI policies of city, county and district governments.\n\nCoverage note (original): Technical review notes: Backfill run 2026-10-08 in five parts (laws; central government; PIPC privacy; sector regulators; metropolitan and provincial governments). The run was interrupted once by a usage limit before any fragment was written; the resumed agents built every record from the official texts (law.go.kr API and ministry PDFs), re-reading earlier downloads before use, so no record written before the restart remained unchecked. law.go.kr Open API (DRF) began refusing requests mid-run (requires caller IP registration); the website was used instead. pipc.go.kr and law.go.kr intermittently reset curl connections (retried; PIPC page also confirmed via WebFetch). PIPC decision documents open only through a POST popup, so decisions cite official press-release pages. dpg.go.kr (Digital Platform Government Committee) refused proxy connections. The AI Basic Act implementation guideline PDFs are hosted by the AI Basic Act Support Desk of the Korea AI Software Industry Association (KOSA). Under the PROTOCOL §1 third-party-host rule, the four guidelines issued at commencement cite MSIT's 21 January 2026 press release (nttSeqNo 3186786, which names www.sw.or.kr as where they are published; the 28 January FAQ, nttSeqNo 3186809, says all guidelines are downloadable there) as source_url, with the KOSA file as official_pdf_url. The August 2026 draft frontier-AI safety guideline is offered only on the KOSA site and no MSIT page names that host for it, so it was moved to leads. MSIT press-release searches for 안전성 확보, 프런티어/프론티어, 지원 창구, 인공지능 기본법, 고영향 found no such page. No draft or consultation instrument remains recorded; the drafts category is closed with the pending AI Basic Act amendment bills and the frontier draft held as leads. kcc.go.kr now redirects to kmcc.go.kr. Seoul city ordinances are found through legal.seoul.go.kr, which links to the law.go.kr texts. Ministry catch-up 2026-10-13 (PROTOCOL §2 ministry rule, applied after this country's deep review; one agent, 30 minutes, national ministries' own AI documents only, nothing else re-reviewed): 3 record(s) added. Ministries: Ministry of Education: AI Ethics Principles for Education 2022 (recorded; lead promoted); AI in school performance assessments plan 2025 (recorded); MOE-MSIT classroom/assessment AI guideline announced for Feb 2026 (lead, not found); AI digital textbook items remain leads; Ministry of Health and Welfare (incl. KDCA): KDCA NIH research ethics guidelines for healthcare AI researchers 2023 (recorded); MOHW's own medical-AI guideline reported as planned, none found (MFDS items already recorded); Ministry of Justice / prosecution / police: nothing found (only AI-use projects such as recidivism prediction and the criminal-justice information system); Judiciary: Supreme Court 'AI Guidebook for Judges' 2026 (lead, text not online); Court AI Research Society guideline 2025 (lead); Ministry of National Defense: nothing found beyond a defence AI technology roadmap (lead, out of scope likely); Ministry of Economy and Finance / National Tax Service / Korea Customs Service: nothing found (AI adoption announcements only); financial-sector AI already recorded under FSC/FSI; Ministry of the Interior and Safety / police: already recorded (public-sector AI ethics standards) and leads; nothing new; Ministry of Foreign Affairs: nothing found (explanatory page on the AI Basic Act only); Ministry of Employment and Labor: AI recruitment guideline planned (lead); AI basic-skills guidebook for trainees (training material, not recorded); Ministry of Land, Infrastructure and Transport: Autonomous Vehicle Ethics Guidelines 2020 (lead; full text page unreachable); Ministry of Trade, Industry and Energy: AI autonomous manufacturing strategy 2025 (lead, not read); Ministry of Culture, Sports and Tourism: already recorded (copyright guides); nothing new; Ministry of Personnel Management: AI work-use guide 2025 (lead; how-to, fails scope test); Ministry of Agriculture, Ministry of Environment, Ministry of Oceans and Fisheries: nothing found (combined searches only). Not reached: Ministry of Agriculture, Food and Rural Affairs, Ministry of Environment, Ministry of Oceans and Fisheries, Ministry of Gender Equality and Family, Ministry of Unification, Ministry of SMEs and Startups: only combined web searches, own sites not browsed; Ministry of National Defense site not browsed directly (web search only); Supreme Prosecutors' Office and Korean National Police Agency sites not browsed directly. Could not verify: MOLIT Autonomous Vehicle Ethics Guidelines full text (molit.go.kr policy-information page unreachable); Supreme Court AI Guidebook for Judges text; MOE-MSIT classroom/assessment AI guideline (announced for Feb 2026).\nWording note 2026-10-19 (narrative.review_notes): the Digital Platform Government Committee website was unavailable and some\nCatch-up sweep 2026-10-19: checked PIPC press releases, FSC press releases, MFDS press releases, MOIS press releases via korea.kr, lawmaking.go.kr legislative notices (2-19 Oct, no AI items), WebSearch discovery. Found nothing new since 2026-10-08. Ruled out: PIPC 16 Oct 2026 note on external survey tools (not AI); MFDS 19 Oct public-data/AI contest results (event). Not reached: MSIT press-release list (list did not render in either fetch mode).\nSweep 2026-10-28: PIPC press list (to 28 Oct), korea.kr and fsc.go.kr lists, web discovery in Korean and English; nothing new since 2026-10-19. Not reached: msit.go.kr press list (did not render), opinion.lawmaking.go.kr (connection refused), law.go.kr administrative-rule search (JS-driven).",
-    "last_sweep": "2026-11-04"
+    "technical_note": "Method note (original): Deep review completed on 8 October 2026, covering national laws and decrees, central government (the Ministry of Science and ICT, the national AI strategy committee, the AI Safety Institute and the Ministry of the Interior and Safety), the Personal Information Protection Commission, sector regulators (finance, food and drug safety, communications, education, human rights, copyright and transport), and all 17 metropolitan and provincial governments. Searches were made in Korean and English. The Digital Platform Government Committee website could not be reached, and some privacy commission decisions are available only as press releases. Pending: a draft guideline on the safety of frontier AI, which so far is available only on an industry association's website and not on a government page; the full text of the national AI action plan (AI Basic Plan 2026-2028), further ministry notices under the AI Basic Act on safety obligations and compute calculation, public-sector AI guides from the Ministry of the Interior and Safety, and AI policies of city, county and district governments.\n\nCoverage note (original): Technical review notes: Backfill run 2026-10-08 in five parts (laws; central government; PIPC privacy; sector regulators; metropolitan and provincial governments). The run was interrupted once by a usage limit before any fragment was written; the resumed agents built every record from the official texts (law.go.kr API and ministry PDFs), re-reading earlier downloads before use, so no record written before the restart remained unchecked. law.go.kr Open API (DRF) began refusing requests mid-run (requires caller IP registration); the website was used instead. pipc.go.kr and law.go.kr intermittently reset curl connections (retried; PIPC page also confirmed via WebFetch). PIPC decision documents open only through a POST popup, so decisions cite official press-release pages. dpg.go.kr (Digital Platform Government Committee) refused proxy connections. The AI Basic Act implementation guideline PDFs are hosted by the AI Basic Act Support Desk of the Korea AI Software Industry Association (KOSA). Under the PROTOCOL §1 third-party-host rule, the four guidelines issued at commencement cite MSIT's 21 January 2026 press release (nttSeqNo 3186786, which names www.sw.or.kr as where they are published; the 28 January FAQ, nttSeqNo 3186809, says all guidelines are downloadable there) as source_url, with the KOSA file as official_pdf_url. The August 2026 draft frontier-AI safety guideline is offered only on the KOSA site and no MSIT page names that host for it, so it was moved to leads. MSIT press-release searches for 안전성 확보, 프런티어/프론티어, 지원 창구, 인공지능 기본법, 고영향 found no such page. No draft or consultation instrument remains recorded; the drafts category is closed with the pending AI Basic Act amendment bills and the frontier draft held as leads. kcc.go.kr now redirects to kmcc.go.kr. Seoul city ordinances are found through legal.seoul.go.kr, which links to the law.go.kr texts. Ministry catch-up 2026-10-13 (PROTOCOL §2 ministry rule, applied after this country's deep review; one agent, 30 minutes, national ministries' own AI documents only, nothing else re-reviewed): 3 record(s) added. Ministries: Ministry of Education: AI Ethics Principles for Education 2022 (recorded; lead promoted); AI in school performance assessments plan 2025 (recorded); MOE-MSIT classroom/assessment AI guideline announced for Feb 2026 (lead, not found); AI digital textbook items remain leads; Ministry of Health and Welfare (incl. KDCA): KDCA NIH research ethics guidelines for healthcare AI researchers 2023 (recorded); MOHW's own medical-AI guideline reported as planned, none found (MFDS items already recorded); Ministry of Justice / prosecution / police: nothing found (only AI-use projects such as recidivism prediction and the criminal-justice information system); Judiciary: Supreme Court 'AI Guidebook for Judges' 2026 (lead, text not online); Court AI Research Society guideline 2025 (lead); Ministry of National Defense: nothing found beyond a defence AI technology roadmap (lead, out of scope likely); Ministry of Economy and Finance / National Tax Service / Korea Customs Service: nothing found (AI adoption announcements only); financial-sector AI already recorded under FSC/FSI; Ministry of the Interior and Safety / police: already recorded (public-sector AI ethics standards) and leads; nothing new; Ministry of Foreign Affairs: nothing found (explanatory page on the AI Basic Act only); Ministry of Employment and Labor: AI recruitment guideline planned (lead); AI basic-skills guidebook for trainees (training material, not recorded); Ministry of Land, Infrastructure and Transport: Autonomous Vehicle Ethics Guidelines 2020 (lead; full text page unreachable); Ministry of Trade, Industry and Energy: AI autonomous manufacturing strategy 2025 (lead, not read); Ministry of Culture, Sports and Tourism: already recorded (copyright guides); nothing new; Ministry of Personnel Management: AI work-use guide 2025 (lead; how-to, fails scope test); Ministry of Agriculture, Ministry of Environment, Ministry of Oceans and Fisheries: nothing found (combined searches only). Not reached: Ministry of Agriculture, Food and Rural Affairs, Ministry of Environment, Ministry of Oceans and Fisheries, Ministry of Gender Equality and Family, Ministry of Unification, Ministry of SMEs and Startups: only combined web searches, own sites not browsed; Ministry of National Defense site not browsed directly (web search only); Supreme Prosecutors' Office and Korean National Police Agency sites not browsed directly. Could not verify: MOLIT Autonomous Vehicle Ethics Guidelines full text (molit.go.kr policy-information page unreachable); Supreme Court AI Guidebook for Judges text; MOE-MSIT classroom/assessment AI guideline (announced for Feb 2026).\nWording note 2026-10-19 (narrative.review_notes): the Digital Platform Government Committee website was unavailable and some\nCatch-up sweep 2026-10-19: checked PIPC press releases, FSC press releases, MFDS press releases, MOIS press releases via korea.kr, lawmaking.go.kr legislative notices (2-19 Oct, no AI items), WebSearch discovery. Found nothing new since 2026-10-08. Ruled out: PIPC 16 Oct 2026 note on external survey tools (not AI); MFDS 19 Oct public-data/AI contest results (event). Not reached: MSIT press-release list (list did not render in either fetch mode).\nSweep 2026-10-28: PIPC press list (to 28 Oct), korea.kr and fsc.go.kr lists, web discovery in Korean and English; nothing new since 2026-10-19. Not reached: msit.go.kr press list (did not render), opinion.lawmaking.go.kr (connection refused), law.go.kr administrative-rule search (JS-driven).\nSweep 2026-11-11: msit.go.kr press search (POST list.do with searchTxt) worked and gave the 6 Nov 2026 agentic-AI zero-trust guide release (nttSeqNo 3187929; hwpx/odt attachment read), which names kisa.or.kr as publisher; KISA guideline page postSeq=25 and PDF read; recorded. ftc.go.kr curl reset; read via WebFetch: press list to 10 Nov has no AI item and the 22 Oct draft page (nttSn=48140) shows no finalisation; comments close 11 Nov 2026, so the draft stays in consultation. KFTC 6 Nov e-commerce consumer-protection guideline amendment (nttSn=48206) has no AI content. lawmaking.go.kr notices 30 Oct to 11 Nov: no AI item. PIPC (to 11 Nov): AI forums/discussions only, no new guide. FSC 5 Nov AI-era financial security plan, National AI Strategy Committee 6 Nov legislative framework and a pending industrial-AI bill added as leads. Not checked: law.go.kr administrative-rule search, KMCC, National Assembly bill system directly, ftc.go.kr 행정규칙 지침 list (the draft's finalisation would also appear in the press list).",
+    "last_sweep": "2026-11-11"
   },
   "changes": [
+    {
+      "id": "c-da50db944a40",
+      "date": "2026-11-11",
+      "recorded": "2026-11-11",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "KOR",
+      "instrument_id": "i-21c5f40d950f",
+      "title": "Agentic AI Zero Trust Guide: Applying zero trust for a secure agentic AI environment",
+      "detail": "Lifecycle recorded as published when added.",
+      "from": null,
+      "to": "published",
+      "source_url": "https://www.kisa.or.kr/2060204/form?postSeq=25&page=1",
+      "needs_review": false
+    },
+    {
+      "id": "c-ae44a929897b",
+      "date": "2026-11-11",
+      "recorded": "2026-11-11",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "KOR",
+      "instrument_id": "i-21c5f40d950f",
+      "title": "Agentic AI Zero Trust Guide: Applying zero trust for a secure agentic AI environment",
+      "detail": "Added to the radar (published 2026-11-06).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.kisa.or.kr/2060204/form?postSeq=25&page=1",
+      "needs_review": false
+    },
     {
       "id": "c-c9efb08f7f29",
       "date": "2026-11-08",
@@ -9914,6 +10001,36 @@
       "from": null,
       "to": null,
       "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-4bcf5c545dd7",
+      "date": "2026-11-08",
+      "recorded": "2026-11-08",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "KOR",
+      "instrument_id": "i-0866b8739370",
+      "title": "PIPC decision imposing penalty surcharges and fines on Scatter Lab, developer of the 'Lee Luda' chatbot (28 April 2021)",
+      "detail": "Record updated: legal status.",
+      "from": null,
+      "to": null,
+      "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-3a01f23e72d3",
+      "date": "2026-11-06",
+      "recorded": "2026-11-11",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "KOR",
+      "instrument_id": "i-21c5f40d950f",
+      "title": "Agentic AI Zero Trust Guide: Applying zero trust for a secure agentic AI environment",
+      "detail": "Published by Ministry of Science and ICT and Korea Internet & Security Agency.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.kisa.or.kr/2060204/form?postSeq=25&page=1",
       "needs_review": false
     },
     {
@@ -10067,6 +10184,36 @@
       "needs_review": false
     },
     {
+      "id": "c-5c1ce2dca903",
+      "date": "2026-11-04",
+      "recorded": "2026-11-04",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "KOR",
+      "instrument_id": "i-629cd61b0060",
+      "title": "Guidelines on AI-related labelling and advertising (draft for comments)",
+      "detail": "Lifecycle recorded as consultation when added.",
+      "from": null,
+      "to": "consultation",
+      "source_url": "https://www.ftc.go.kr/www/selectBbsNttView.do?key=12&bordCd=3&nttSn=48140",
+      "needs_review": false
+    },
+    {
+      "id": "c-045d86252049",
+      "date": "2026-11-04",
+      "recorded": "2026-11-04",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "KOR",
+      "instrument_id": "i-629cd61b0060",
+      "title": "Guidelines on AI-related labelling and advertising (draft for comments)",
+      "detail": "Added to the radar (published 2026-10-22).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.ftc.go.kr/www/selectBbsNttView.do?key=12&bordCd=3&nttSn=48140",
+      "needs_review": false
+    },
+    {
       "id": "c-286b2a5aa17a",
       "date": "2026-11-02",
       "recorded": "2026-11-02",
@@ -10139,6 +10286,21 @@
       "from": null,
       "to": null,
       "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-b8c21070df6e",
+      "date": "2026-10-22",
+      "recorded": "2026-11-04",
+      "kind": "world",
+      "type": "consultation",
+      "jurisdiction_id": "KOR",
+      "instrument_id": "i-629cd61b0060",
+      "title": "Guidelines on AI-related labelling and advertising (draft for comments)",
+      "detail": "Published for consultation by Korea Fair Trade Commission (KFTC), Consumer Policy Division.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.ftc.go.kr/www/selectBbsNttView.do?key=12&bordCd=3&nttSn=48140",
       "needs_review": false
     },
     {
@@ -14100,66 +14262,6 @@
       "to": null,
       "source_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=283701",
       "needs_review": false
-    },
-    {
-      "id": "c-5c1ce2dca903",
-      "date": "2026-11-04",
-      "recorded": "2026-11-04",
-      "kind": "radar",
-      "type": "corrected",
-      "jurisdiction_id": "KOR",
-      "instrument_id": "i-629cd61b0060",
-      "title": "Guidelines on AI-related labelling and advertising (draft for comments)",
-      "detail": "Lifecycle recorded as consultation when added.",
-      "from": null,
-      "to": "consultation",
-      "source_url": "https://www.ftc.go.kr/www/selectBbsNttView.do?key=12&bordCd=3&nttSn=48140",
-      "needs_review": false
-    },
-    {
-      "id": "c-045d86252049",
-      "date": "2026-11-04",
-      "recorded": "2026-11-04",
-      "kind": "radar",
-      "type": "added",
-      "jurisdiction_id": "KOR",
-      "instrument_id": "i-629cd61b0060",
-      "title": "Guidelines on AI-related labelling and advertising (draft for comments)",
-      "detail": "Added to the radar (published 2026-10-22).",
-      "from": null,
-      "to": null,
-      "source_url": "https://www.ftc.go.kr/www/selectBbsNttView.do?key=12&bordCd=3&nttSn=48140",
-      "needs_review": false
-    },
-    {
-      "id": "c-b8c21070df6e",
-      "date": "2026-10-22",
-      "recorded": "2026-11-04",
-      "kind": "world",
-      "type": "consultation",
-      "jurisdiction_id": "KOR",
-      "instrument_id": "i-629cd61b0060",
-      "title": "Guidelines on AI-related labelling and advertising (draft for comments)",
-      "detail": "Published for consultation by Korea Fair Trade Commission (KFTC), Consumer Policy Division.",
-      "from": null,
-      "to": null,
-      "source_url": "https://www.ftc.go.kr/www/selectBbsNttView.do?key=12&bordCd=3&nttSn=48140",
-      "needs_review": false
-    },
-    {
-      "id": "c-4bcf5c545dd7",
-      "date": "2026-11-08",
-      "recorded": "2026-11-08",
-      "kind": "radar",
-      "type": "corrected",
-      "jurisdiction_id": "KOR",
-      "instrument_id": "i-0866b8739370",
-      "title": "PIPC decision imposing penalty surcharges and fines on Scatter Lab, developer of the 'Lee Luda' chatbot (28 April 2021)",
-      "detail": "Record updated: legal status.",
-      "from": null,
-      "to": null,
-      "source_url": null,
-      "needs_review": false
     }
   ],
   "leads": [
@@ -14568,6 +14670,27 @@
       "issuing_authority": "Incheon Metropolitan City",
       "note": "Incheon mid-to-long-term plan listing, established December 2023 (정보화담당관); page says 'see attachment' but has no file. AI content not confirmed. Official page: https://www.incheon.go.kr/open/OPEN020301/view?planSeq=DOM_0000000009137803",
       "found": "2026-11-04"
+    },
+    {
+      "title": "대한민국 인공지능 입법 프레임워크",
+      "english_title": "Korea AI legislative framework (government-wide principles for AI legislation)",
+      "issuing_authority": "National AI Strategy Committee",
+      "note": "Reported as deliberated and adopted at the committee's 3rd plenary meeting on 6 November 2026 (priority to amending the AI Basic Act and existing laws over new AI laws; separate legislation for defence and security), together with plans for seven task forces. No official text or committee press release located yet; check the committee and MSIT sites.",
+      "found": "2026-11-11"
+    },
+    {
+      "title": "全 금융권 보안체계 혁신방안 (AI시대 보안체계 혁신을 위한 全 금융권 간담회)",
+      "english_title": "Financial-sector security system innovation plan for the AI era",
+      "issuing_authority": "Financial Services Commission",
+      "note": "FSC press release of 5 November 2026 with an attached plan on strengthening financial-sector cybersecurity against AI-driven threats (inspections of about 580 firms, AI-based monitoring, possible further easing of network-separation rules, a planned digital finance safety act). Mainly a cybersecurity plan; check whether it sets AI-specific expectations before recording. Official page: https://www.fsc.go.kr/no010101",
+      "found": "2026-11-11"
+    },
+    {
+      "title": "산업 디지털 전환 및 인공지능 활용 촉진법 일부개정법률안 (산업 인공지능 안전성·신뢰성 지침)",
+      "english_title": "Bill amending the Industrial Digital Transformation and AI Utilisation Promotion Act (safety and reliability guidelines for industrial AI)",
+      "issuing_authority": "National Assembly",
+      "note": "Pending amendment bill reported as introduced in early November 2026, adding provisions on safety and reliability guidelines for industrial AI. Pending bill; check the National Assembly bill system for the bill number and text.",
+      "found": "2026-11-11"
     }
   ]
 }
