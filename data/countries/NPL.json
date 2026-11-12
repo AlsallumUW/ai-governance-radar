@@ -10,10 +10,11 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": "Nepal governs AI mainly through the National AI Policy 2082 (2025), which creates an AI Regulation Council and a National AI Centre under the Ministry of Communication and Information Technology and built on a 2024 ministry concept paper on AI use. There is no AI law yet; the Privacy Act 2075 (2018) is the general data protection law, and the central bank (Nepal Rastra Bank) put draft AI guidelines for financial institutions out for comment in December 2025.",
+    "summary": "Nepal governs AI mainly through the National AI Policy 2082 (2025), which creates an AI Regulation Council and a National AI Centre under the Ministry of Communication and Information Technology and built on a 2024 ministry concept paper on AI use. There is no AI law yet; the Privacy Act 2075 (2018) is the general data protection law, and the central bank (Nepal Rastra Bank) put draft AI guidelines for financial institutions out for comment in December 2025. In June 2026 the Supreme Court's full court approved the Judiciary ICT Policy, 2083, which allows AI to support court research and drafting but not judicial decisions.",
     "lead_institutions": [
       "Ministry of Communication and Information Technology",
-      "Nepal Rastra Bank"
+      "Nepal Rastra Bank",
+      "Supreme Court of Nepal"
     ],
     "last_deep_review": "2026-10-12",
     "review_notes": "This review was completed on 12 October 2026 and covers national law, government, ministries and regulators. The Cabinet's approval date for the AI Policy could not be confirmed from an official source, so the policy is dated by year only."
@@ -227,6 +228,57 @@
       "organization_id": "o-0bc2626f3b3a",
       "first_recorded": "2026-10-12",
       "last_changed": null
+    },
+    {
+      "id": "i-c732e504ad36",
+      "official_title": "न्यायपालिकाको सूचना तथा सञ्चार प्रविधि नीति, २०८३",
+      "english_title": "Judiciary Information and Communication Technology Policy, 2083 (2026)",
+      "jurisdiction_id": "NPL",
+      "issuing_authority": "Supreme Court of Nepal (Full Court)",
+      "publisher_name": "Supreme Court of Nepal",
+      "authority_type": "judiciary",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "sectoral",
+        "public-sector"
+      ],
+      "category": "sectoral",
+      "subcategory": null,
+      "legal_status": "administrative_policy_mandatory_in_scope",
+      "lifecycle": "adopted",
+      "publication_date": "2026-06",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Cover states approval by the Supreme Court (Full Court) on 2083/3/10 BS (June 2026); the policy is linked from the Supreme Court's website. Binding on the courts only.",
+      "scope": "Nepal (judiciary)",
+      "sectors": [
+        "justice"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "ICT policy for Nepal's judiciary approved by the Supreme Court full court. Strategy 5.2 adopts AI as an innovation tool in judicial work: AI-based systems may support drafting, study and research, but AI will not be used in a way that directly interferes with judicial decisions; third-party AI systems may be used only after their reliability, transparency, freedom from bias and algorithmic processes are analysed; case data is to be made machine-readable; and awareness programmes on AI use, usefulness and risks are to be run for internal and external users of the courts.",
+      "ai_governance_relevance": "Judiciary-wide rules on how courts may use AI, including the bar on AI in judicial decision-making.",
+      "source_url": "https://supremecourt.gov.np/court/public/media/2026_07/6be1c3d55afda34eb3b18eebd6bb0d08.pdf",
+      "official_pdf_url": "https://supremecourt.gov.np/court/public/media/2026_07/6be1c3d55afda34eb3b18eebd6bb0d08.pdf",
+      "official_webpage_url": "https://supremecourt.gov.np/web/",
+      "language": "ne",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "verification_date": "2026-11-12",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "sweep-2026-11-12: linked from the Supreme Court homepage notices; 40-page PDF downloaded; cover (approval date) and page 25 (strategy 5.2 on AI) read visually because the embedded Devanagari font does not extract cleanly.",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-0317595d5c10",
+      "organization_id": "o-4b25a87a737e",
+      "first_recorded": "2026-11-12",
+      "last_changed": null
     }
   ],
   "organizations": [
@@ -258,6 +310,16 @@
       "ai_governance_role": "Legislature; enacted the Privacy Act, 2075 (2018).",
       "source_url": "https://parliament.gov.np/",
       "authority_type": "legislature",
+      "government_level": "national"
+    },
+    {
+      "id": "o-4b25a87a737e",
+      "jurisdiction_id": "NPL",
+      "name": "Supreme Court of Nepal",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Apex court; its full court approved the Judiciary ICT Policy, 2083, which sets rules for AI use in the courts.",
+      "source_url": "https://supremecourt.gov.np/web/",
+      "authority_type": "judiciary",
       "government_level": "national"
     }
   ],
@@ -375,6 +437,33 @@
       "document_language": "ne",
       "error": null,
       "content_type": "text/html"
+    },
+    {
+      "id": "s-0317595d5c10",
+      "url": "https://supremecourt.gov.np/court/public/media/2026_07/6be1c3d55afda34eb3b18eebd6bb0d08.pdf",
+      "jurisdiction_ids": [
+        "NPL"
+      ],
+      "source_institutions": [
+        "Supreme Court of Nepal"
+      ],
+      "instrument_ids": [
+        "i-c732e504ad36"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "public-sector"
+      ],
+      "date_reviewed": "2026-11-12",
+      "checked_date": "2026-11-12",
+      "check_method": "sweep-2026-11-12: curl (browser user agent, --max-time 60) of supremecourt.gov.np/web/ (link found in notices list) and of the PDF; cover and strategy 5.2 pages rendered and read visually.",
+      "http_status": 200,
+      "final_url": "https://supremecourt.gov.np/court/public/media/2026_07/6be1c3d55afda34eb3b18eebd6bb0d08.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "ne",
+      "error": null,
+      "content_type": "application/pdf"
     }
   ],
   "regional_applicability": [],
@@ -404,10 +493,10 @@
       "risk-assurance",
       "sandbox",
       "sectoral",
-      "strategy"
+      "strategy",
+      "public-sector"
     ],
     "categories_where_no_material_was_found": [
-      "public-sector",
       "procurement",
       "cyber-security",
       "transparency",
@@ -433,9 +522,14 @@
       "nrb.org.np artificial intelligence guidelines draft 2082 कृत्रिम बौद्धिकता मार्गदर्शन",
       "nrb.org.np site search: Artificial Intelligence; Intelligence Guidelines",
       "lawcommission.gov.np search: गोपनीयता; privacy; artificial; आर्टिफिसियल",
-      "lawcommission.gov.np Individual Privacy Act 2075 वैयक्तिक गोपनीयता सम्बन्धी ऐन, २०७५"
+      "lawcommission.gov.np Individual Privacy Act 2075 वैयक्तिक गोपनीयता सम्बन्धी ऐन, २०७५",
+      "mocit.gov.np homepage and notice list (2026-11-12)",
+      "nrb.org.np circulars list and site search: artificial intelligence (2026-11-12)",
+      "supremecourt.gov.np homepage notices (2026-11-12)",
+      "Nepal artificial intelligence guidelines regulation November 2026",
+      "कृत्रिम बौद्धिकता निर्देशिका मस्यौदा २०८३ कात्तिक"
     ],
-    "last_sweep": "2026-10-29",
+    "last_sweep": "2026-11-12",
     "review_date": "2026-10-12",
     "passes": {
       "institutions": "COMPLETE",
@@ -453,7 +547,7 @@
       "regional_inheritance": "COMPLETE",
       "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "Nepal's law commission portal, the information and communications technology ministry, other ministries and the central bank were searched. Records include the national AI policy, an AI concept paper and the central bank's draft AI guidelines; no AI-specific law or bill was found, and there was no material for public-sector use, procurement, cybersecurity, transparency, standards, indices or international instruments. Not yet verified from the official text: material in the gazette, parliament's bills and of the telecoms authority and the standards and procurement bodies, and the Cabinet approval date of the AI policy.",
+    "no_material_found_note": "Nepal's law commission portal, the information and communications technology ministry, other ministries and the central bank were searched. Records include the national AI policy, an AI concept paper, the central bank's draft AI guidelines and the judiciary's ICT policy with rules on AI use in the courts; no AI-specific law or bill was found, and there was no material for procurement, cybersecurity, transparency, standards, indices or international instruments. Not yet verified from the official text: material in the gazette, parliament's bills and of the telecoms authority and the standards and procurement bodies, and the Cabinet approval date of the AI policy.",
     "discovery_result_count": 13,
     "focused_result_count": 11,
     "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. Gazette (rajpatra) and parliament.gov.np not searched separately; Digital Nepal Framework 2.0 AI parts, NTA, standards bodies and PPMO not reached; opmcm records for the Shrawan 2082 decision not found. Bare mocit.gov.np fails its TLS certificate (www.mocit.gov.np works). Not a party to Convention 108. Units covered: Law: Nepal Law Commission portal (AI policy page, Privacy Act 2075); no AI-specific Act, AI bill or AI provision in other laws found. Gazette (rajpatra) and parliament.gov.np not searched separately in the time box.; Government: MoCIT: National AI Policy 2082 (Nepali + official English), AI concept paper 2024. Digital Nepal Framework not re-read for AI parts (time box).; Ministries: Searched only via general queries; no education/health/justice/finance ministry AI documents found.; Regulators: Nepal Rastra Bank: draft AI Guidelines (Dec 2025). No data protection authority exists; NTA and cyber/standards bodies: no AI-specific documents found in search.. Not reached: rajpatra.dop.gov.np gazette search; parliament.gov.np bills; Digital Nepal Framework AI pillar review; Nepal Telecommunications Authority site search; Nepal Bureau of Standards and Metrology; Public Procurement Monitoring Office; opmcm.gov.np cabinet decisions for Shrawan 2082 (search and guessed archive URLs returned nothing; MoCIT cabinet-decision listing shows only 2083 items on page 1). Could not verify: Cabinet approval date of the AI Policy; Final NRB AI Guidelines; Founding instrument of the National AI Centre. public-sector, procurement, cyber-security, transparency, standards, index-readiness, international: no material found.\nWording note 2026-10-19 (coverage_audit.no_material_found_note): The gazette, parliament's bills, the telecoms authority and the standards and procurement bodies were not searched, and the Cabinet approval date of the AI policy remains to be checked.\nConsultation status 2026-10-19 (i-f913e23b645f): no closing date found on the NRB notice link (resolves to the draft PDF) and the 14-page draft PDF; kept as consultation (no official closing date; not listed as open in the panel once older than 6 months)"
@@ -667,14 +761,6 @@
       "issuing_authority": "Ministry of Communication and Information Technology",
       "note": "A homepage slider caption on www.mocit.gov.np (seen 2026-10-29) shows the Minister inaugurating the National AI Centre; no document or date is attached. Not recorded; see the existing lead on the centre's establishing instrument. Retried 2026-10-29: the MoCIT gallery item carries only the caption; MoCIT's policy, law and directive lists show no establishing order.",
       "found": "2026-10-29"
-    },
-    {
-      "title": "न्यायपालिकाको सूचना तथा सञ्चार प्रविधि नीति, २०८३",
-      "english_title": "Judiciary Information and Communication Technology Policy, 2083 (2026)",
-      "issuing_authority": "Supreme Court of Nepal",
-      "url": "https://ekantipur.com/news/2026/07/03/ai-will-now-be-used-in-court-studies-but-not-in-writing-verdicts-21-43.html",
-      "note": "Discovery only (Kantipur, 3 July 2026; Kathmandu Post same day). Reported endorsed by the Supreme Court full court around 2 July 2026. Reported AI rules: AI allowed for legal research, drafting non-decisional documents and case management; barred from judicial decision-making and writing judgments/writ orders; AI tools must be assessed for reliability, transparency and bias before use; clause 5.2 frames AI as an innovation tool. Would be a judiciary record (administrative_policy_mandatory_in_scope) once the official text is found on supremecourt.gov.np.",
-      "found": "2026-11-07"
     },
     {
       "title": "विज्ञान, प्रविधि तथा नवप्रवर्तन विधेयक",
