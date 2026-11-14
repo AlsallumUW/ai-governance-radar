@@ -4418,6 +4418,60 @@
       "last_changed": null,
       "source_id": "s-cc0413119f91",
       "organization_id": "o-3784beee6481"
+    },
+    {
+      "jurisdiction_id": "DEU",
+      "authority_type": "government",
+      "government_level": "national",
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Germany (federal)",
+      "language": "de",
+      "related_instruments": [
+        "i-94057a91d660",
+        "i-8d04132f9222",
+        "i-abbb5dd00dcf"
+      ],
+      "source_kind": "official_publication",
+      "document_access_type": "official_publication_or_full_text_page",
+      "last_changed": null,
+      "official_title": "KI-Taskforce Ergebnisbericht – Deutschland als KI-Nation 2030",
+      "english_title": "AI Task Force Findings Report – Germany as an AI Nation 2030",
+      "issuing_authority": "Federal Government (inter-ministerial AI Task Force, lead: Federal Ministry for Digital Transformation and Government Modernisation)",
+      "publisher_name": "Federal Ministry for Digital Transformation and Government Modernisation",
+      "categories": [
+        "strategy",
+        "public-sector",
+        "cyber-security"
+      ],
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2026-11-02",
+      "current_status": "Dated 2 November 2026 and presented by the Federal Government at the Digital Summit in Berlin on 2 November 2026 (BMDS press release 68/2026). Prepared by the inter-ministerial AI Task Force, which the National Security Council set up under BMDS lead (first meeting 2 July 2026), and developed in October 2026 into a joint report of the Federal Government; no cabinet decision is stated. The report describes itself as a living steering instrument whose targets and measures are to be reviewed and updated regularly.",
+      "summary": "Federal target picture for making Germany a 'sovereign AI nation' by 2030 across six dimensions (AI and society, AI security, AI application, AI infrastructure, frontier AI and AI talent), with indicators and target values such as at least 80% of large companies and 55% of SMEs using AI and 90% of federal authorities using at least one AI application. It sets 18 cross-ministry key measures, including expanding the AI Safety and Security Institute (AISI Deutschland, built from BSI and the Federal Network Agency), an action plan for AI skills and use in the federal administration, AI action plans for defence and for civil security and critical systems (including a mapping of the AI Act, DORA and NIS2 to avoid duplicate reporting), and a strategic AI analysis and monitoring structure steered by the Task Force under BMDS.",
+      "source_url": "https://bmds.bund.de/service/publikationen/ki-nation-deutschland-2030",
+      "official_pdf_url": "https://bmds.bund.de/fileadmin/BMDS/Dokumente/Publikationen/Deutschland_als_KI-Nation_2030_barrierefrei-Nov2026.pdf",
+      "official_webpage_url": "https://bmds.bund.de/service/publikationen/ki-nation-deutschland-2030",
+      "organization_id": "o-446c7763a424",
+      "evidence_reference": "curl (browser user agent, --max-time 60): BMDS publication page read; 39-page PDF ('KI-Taskforce Ergebnisbericht', dated 02. November 2026 on cover and every page) read with pdftotext; same document also offered on bundesregierung.de (Digital-Gipfel 2026 page). BMDS press release 68/2026 of 2 November 2026 read.",
+      "id": "i-4de7b4fb5611",
+      "source_id": "s-b4e328e05acc",
+      "first_recorded": "2026-11-13",
+      "verification_date": "2026-11-13",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "regional_applicability": [],
+      "supersedes": [],
+      "superseded_by": [],
+      "link_status": "reachable",
+      "subnational_unit": null,
+      "subcategory": null,
+      "technology_scope": [
+        "AI"
+      ],
+      "sectors": [],
+      "category": "strategy",
+      "ai_governance_relevance": "German federal instrument shaping AI governance (strategy, public-sector, cyber-security)."
     }
   ],
   "organizations": [
@@ -7111,6 +7165,34 @@
       "document_language": "de",
       "error": null,
       "content_type": "text/html"
+    },
+    {
+      "id": "s-b4e328e05acc",
+      "url": "https://bmds.bund.de/service/publikationen/ki-nation-deutschland-2030",
+      "jurisdiction_ids": [
+        "DEU"
+      ],
+      "source_institutions": [
+        "Federal Ministry for Digital Transformation and Government Modernisation"
+      ],
+      "instrument_ids": [
+        "i-4de7b4fb5611"
+      ],
+      "categories_reviewed": [
+        "strategy",
+        "public-sector",
+        "cyber-security"
+      ],
+      "date_reviewed": "2026-11-13",
+      "checked_date": "2026-11-13",
+      "check_method": "curl (browser user agent, --max-time 60): BMDS publication page HTTP 200 linking the PDF; PDF (39 pp., dated 02.11.2026) read with pdftotext",
+      "http_status": 200,
+      "final_url": "https://bmds.bund.de/service/publikationen/ki-nation-deutschland-2030",
+      "link_status": "reachable",
+      "page_title": "KI-Nation Deutschland 2030 - BMDS",
+      "document_language": "de",
+      "error": null,
+      "content_type": "text/html"
     }
   ],
   "regional_applicability": [],
@@ -7235,7 +7317,11 @@
       "Hessen Landesverwaltung Leitlinien generative KI Handlungsempfehlungen Beschäftigte digitales.hessen.de",
       "HSOG § 25a automatisierte Anwendung zur Datenanalyse Neufassung 2023 Gesetz GVBl Hessen selbstlernende",
       "Hessischer Landtag Gesetzentwurf HSOG 2024 \"selbstlernende\" Datenanalyse § 25a",
-      "Sweep 2026-10-23: BMDS press releases, BfDI, DSK resolutions, BSI AI page, Bundesnetzagentur KI pages; KI-MIG status"
+      "Sweep 2026-10-23: BMDS press releases, BfDI, DSK resolutions, BSI AI page, Bundesnetzagentur KI pages; KI-MIG status",
+      "Sweep 2026-11-13: Künstliche Intelligenz Bundesregierung November 2026; Germany artificial intelligence November 2026",
+      "Sweep 2026-11-13: bundesregierung.de Digital-Gipfel 2026 (KI-Taskforce Ergebnisbericht); BMDS press releases, publications and Gesetzgebungsverfahren pages",
+      "Sweep 2026-11-13: BNetzA KI-Service Desk / KI-Reallabore page and press releases; BSI KI and AISI pages (site search KI November 2026); BfDI press releases and Kurzmeldungen; DSK Entschließungen, Orientierungshilfen, Pressemitteilungen; BaFin KI (site search)",
+      "Sweep 2026-11-13: Bundestag/Bundesrat Drucksachen KI November 2026; KI-Reallabore Verordnung Referentenentwurf (recht.bund.de search blocked to automated access)"
     ],
     "review_date": "2026-10-11",
     "passes": {
@@ -7258,9 +7344,39 @@
     "discovery_result_count": 12,
     "focused_result_count": 11,
     "technical_note": "Method note (original): Deep review completed on 11 October 2026, covering federal laws and ordinances, the federal government and ministries, federal regulators, national standards, and the Länder of Bavaria, Baden-Württemberg, North Rhine-Westphalia, Berlin and Hesse. Searches were made in German and English. EU and Council of Europe instruments, including the AI Act, are recorded in the regional files. Some official websites could not be read automatically, including the economy ministry, the justice ministry and the medicines regulator's search; national standards were read only from their catalogue entries. Bills are listed as pending rather than as instruments. Pending: the deepfake offence (§ 201b of the Criminal Code) and the government's draft law on digital violence, the federal police data-analysis bill, the AI sandbox ordinance under the KI-MIG, Hesse's police data-analysis provision, and internal AI rules of federal ministries that are not published.\n\nCoverage note (original): Technical review notes: Backfill run 2026-10-11 in four parts (D1 federal law; D2 federal government incl. ministry-level search; D3 regulators and standards; D4 top Länder, 30-minute cap per PROTOCOL §6, finished in about 10 minutes). Run in parallel with BEL on separate branches. No interruption; the three earlier records were re-checked and fixed (KI-MIG now in force with full procedure; 2018 strategy re-sourced to ki-strategie-deutschland.de and marked superseded by the 2020 update; federal administration AI guidelines dated 2025-03-27). EU and CoE instruments are attached via the regional files. Access: bmwe.de and bmjv.de (bot check / 403), BfArM site search (403), datenethikkommission.de (403; report read from bmi.bund.de), rv.hessenrecht.hessen.de (reset/503); DIP API needs a key (procedures verified from printed papers). Located-only (1): DIN EN ISO/IEC 42001:2026-08 (catalogue entry; text sold). BfArM: DiGA guide read, no AI provisions. index-readiness: no material found.\nCatch-up sweep 2026-10-19: checked BMDS legislative procedures page (no draft ordinance on AI regulatory sandboxes under § 13(4) KI-MIG; lead unchanged), BaFin KI-Verordnung and KI-Marktüberwachung pages (still undated web guidance; lead unchanged), Bundesnetzagentur press releases (to 12 Oct 2026, nothing on AI), BSI press list (to 16 Oct 2026, nothing on AI), DSK site (no new AI paper), discovery search for Länder laws implementing the AI Act (none found). Found nothing new. Not reached: Bundesnetzagentur KI section page and BfDI press list (404 at the tried URLs).\nConsultation status 2026-10-19 (i-6ff30cd3c811): no closing date found on the BayLDA checklist (Konsultationsstand v0.9) and lda.bayern.de; kept as consultation (no official closing date; not listed as open in the panel once older than 6 months)",
-    "last_sweep": "2026-10-30"
+    "last_sweep": "2026-11-13"
   },
   "changes": [
+    {
+      "id": "c-6e59ac4d3e48",
+      "date": "2026-11-13",
+      "recorded": "2026-11-13",
+      "kind": "radar",
+      "type": "corrected",
+      "jurisdiction_id": "DEU",
+      "instrument_id": "i-4de7b4fb5611",
+      "title": "AI Task Force Findings Report – Germany as an AI Nation 2030",
+      "detail": "Lifecycle recorded as published when added.",
+      "from": null,
+      "to": "published",
+      "source_url": "https://bmds.bund.de/service/publikationen/ki-nation-deutschland-2030",
+      "needs_review": false
+    },
+    {
+      "id": "c-bbe107c7884d",
+      "date": "2026-11-13",
+      "recorded": "2026-11-13",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "DEU",
+      "instrument_id": "i-4de7b4fb5611",
+      "title": "AI Task Force Findings Report – Germany as an AI Nation 2030",
+      "detail": "Added to the radar (published 2026-11-02).",
+      "from": null,
+      "to": null,
+      "source_url": "https://bmds.bund.de/service/publikationen/ki-nation-deutschland-2030",
+      "needs_review": false
+    },
     {
       "id": "c-fe5c3ccb81ad",
       "date": "2026-11-08",
@@ -7634,6 +7750,21 @@
       "from": null,
       "to": null,
       "source_url": "https://publikationen.sachsen.de/bdb/artikel/42676/documents/64898",
+      "needs_review": false
+    },
+    {
+      "id": "c-9c3a083c2188",
+      "date": "2026-11-02",
+      "recorded": "2026-11-13",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "DEU",
+      "instrument_id": "i-4de7b4fb5611",
+      "title": "AI Task Force Findings Report – Germany as an AI Nation 2030",
+      "detail": "Published by Federal Government.",
+      "from": null,
+      "to": null,
+      "source_url": "https://bmds.bund.de/service/publikationen/ki-nation-deutschland-2030",
       "needs_review": false
     },
     {
@@ -10565,6 +10696,22 @@
       "url": "https://dserver.bundestag.de/brd/2026/0590-26.pdf",
       "note": "Government bill sent to the Bundesrat on 9 October 2026 as BR-Drs. 590/26 (Bundesrat deadline 20 November 2026); pending, not enacted. Moved from records under rule 7 (bills are leads), 2026-11-08.",
       "found": "2026-11-04"
+    },
+    {
+      "title": "AI Safety and Security Institute Deutschland (AISI Deutschland)",
+      "english_title": "German AI Safety and Security Institute (AISI Deutschland), initiation phase",
+      "issuing_authority": "Federal Ministry of the Interior and Federal Ministry for Digital Transformation and Government Modernisation (nucleus at BSI and Federal Network Agency)",
+      "url": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/AISI/aisi_node.html",
+      "note": "BSI page describes the institute as an analytical competence centre (not a regulator or market surveillance authority) built in two phases, with BSI (security) and BNetzA (safety) as its initial 'virtual' nucleus; it publishes monthly 'Aktuelle KI-Sicherheitsthemen' (latest 01.11.2026). The AI Task Force report of 2 November 2026 (measure 1) states the National Security Council decided on the institute on 8 June 2026 and it was officially launched on 31 August 2026. No founding decree or published founding document found; record if one is published.",
+      "found": "2026-11-13"
+    },
+    {
+      "title": "Auswirkungen auf die Cybersicherheit von Organisationen durch die Entwicklung im Bereich Künstlicher Intelligenz (BSI-IT-Sicherheitsinformation BITS-B Nr. 2026-262788-1032, Version 1.0)",
+      "english_title": "Impact of developments in artificial intelligence on organisations' cyber security (BSI IT security information, version 1.0)",
+      "issuing_authority": "Federal Office for Information Security",
+      "url": "https://www.bsi.bund.de/SharedDocs/Cybersicherheitswarnungen/DE/2026/2026-262788-1032_bits.html",
+      "note": "TLP:CLEAR BSI security information dated 22.06.2026 (criticality 2/yellow, 10 pp.) on AI-accelerated vulnerability discovery and exploitation, with recommended measures for organisations (reduce attack surface, faster patching, logging). Found in the 13 Nov 2026 sweep; it addresses AI-enabled threats rather than the governance of AI systems, so held for scope assessment at the next deep review.",
+      "found": "2026-11-13"
     }
   ]
 }
