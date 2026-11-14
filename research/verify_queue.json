@@ -1269,15 +1269,21 @@
       "instrument_id": "i-d38aa82de6c7",
       "url": "https://docs.legis.wisconsin.gov/2025/related/acts/34",
       "date": "2026-11-10"
+    },
+    {
+      "id": "CHN",
+      "instrument_id": "i-a287ba7f8b9e",
+      "url": "https://www.nmpa.gov.cn/directory/web/nmpa/images/1625713895408075422.docx",
+      "date": "2026-11-12"
     }
   ],
   "in_progress": [
     {
       "id": "CHN",
       "started": "2026-11-10",
-      "records_checked": 21,
-      "corrected": 6,
-      "note": "CHN (167 records) is verified in parts across runs, grouped by source host. Part 1 (2026-11-10): the 21 records whose source is the central government portal (www.gov.cn: State Council documents, the State Council policy library, the State Council Gazette and the 15th Five-Year Plan outline), read in the desktop browser; 21 checked, 6 corrected, none unreachable. Next: CHN records whose verification_date is before 2026-11-10, starting with www.cac.gov.cn, then www.tc260.org.cn and openstd.samr.gov.cn, then the remaining national hosts, then the subnational records (Shanghai, Hong Kong SAR, Beijing and the rest); add CHN to done only when every record is checked."
+      "records_checked": 118,
+      "corrected": 30,
+      "note": "CHN (169 records) is verified in parts across runs, grouped by source host. Part 1 (2026-11-10): the 21 records whose source is the central government portal (www.gov.cn), read in the desktop browser; 21 checked, 6 corrected. Part 2 (2026-11-12): the 60 records whose source is www.cac.gov.cn (21), www.tc260.org.cn (20), openstd.samr.gov.cn (11, checked with the matching std.samr.gov.cn entries) and www.miit.gov.cn (8), read in the desktop browser; 60 checked, 17 corrected, none unreachable. Part 3 (2026-11-12, second run): the 36 remaining national records (NPC, MOST, MFA, NDRC, MOT, SPC, PBOC, NFRA, NHC, MOE, NDA, SAMR, CNIPA, MOFCOM, MOF and official reprints) and 2 Hong Kong SFC circulars, read in the desktop browser; 37 checked, 7 corrected, 1 unreachable (the NMPA AI medical software guideline attachment on nmpa.gov.cn returns 403 in the desktop browser; listed under unreachable). The run stopped early when the desktop browser disconnected. Next: the 8 remaining Hong Kong SAR records (Judiciary, FSTB, PCPD, HKMA and MPFA PDFs), then the other subnational records (Shanghai, Beijing, Shenzhen, Guangdong and the rest); add CHN to done only when every record is checked."
     }
   ]
 }
