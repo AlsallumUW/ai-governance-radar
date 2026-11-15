@@ -221,7 +221,7 @@
       "metadata_gaps": [],
       "source_kind": "official_document",
       "evidence_reference": "curl (browser user agent, --max-time 60): DINUM page 'Guide d'usage de l'IA' read ('ont publié en juin 2026 le Guide…', five principles); 58-page PDF read with pdftotext (authors DINUM/DITP/DGAFP, statement on non-regulatory status). Portal of AI charters (ia.numerique.gouv.fr/ressources/portail-des-chartes-ia-dans-ladministration/) also read to identify the charters recorded separately. The ia.numerique.gouv.fr/documents/ link redirects (302) to a time-limited signed copy on the DINUM site's object storage (s3.rbx.io.cloud.ovh.net/sites-faciles/...). Status note: The earlier page 'Portail des chartes IA dans l'administration' is the page to which this record previously pointed.",
-      "link_status": "redirected",
+      "link_status": "reachable",
       "document_access_type": "original_government_document",
       "source_id": "s-bd94a3077653",
       "organization_id": "o-112045edca22",
@@ -1532,7 +1532,7 @@
       "metadata_gaps": [],
       "source_kind": "official_document",
       "evidence_reference": "curl (browser user agent, --max-time 60): DINUM page 'Feuilles de route IA des ministères' read; press kit PDF (24 pp., 'Dossier de presse, 16 juin 2026', porté par David Amiel) read with pdftotext. The ia.numerique.gouv.fr/documents/ link redirects (302) to a time-limited signed copy on the DINUM site's object storage (s3.rbx.io.cloud.ovh.net/sites-faciles/...).",
-      "link_status": "redirected",
+      "link_status": "reachable",
       "document_access_type": "original_government_document",
       "source_id": "s-8f45d1bdb2d7",
       "organization_id": "o-112045edca22",
@@ -1685,7 +1685,7 @@
       "metadata_gaps": [],
       "source_kind": "official_document",
       "evidence_reference": "curl (browser user agent, --max-time 60): 15-page PDF read with pdftotext (second attempt; first connection reset). Date from the Ministry of the Interior's AI roadmap synthesis 2026-2027 (ia.numerique.gouv.fr/documents/23/…, read with curl). The ia.numerique.gouv.fr/documents/ link redirects (302) to a time-limited signed copy on the DINUM site's object storage (s3.rbx.io.cloud.ovh.net/sites-faciles/...).",
-      "link_status": "redirected",
+      "link_status": "reachable",
       "document_access_type": "original_government_document",
       "source_id": "s-29044bf054e0",
       "organization_id": "o-b0fbc69e7d5e",
@@ -1792,7 +1792,7 @@
       "metadata_gaps": [],
       "source_kind": "official_document",
       "evidence_reference": "curl (browser user agent, --max-time 60): 13-page PDF read with pdftotext (cover 'Juin 2026'); ministry roadmap synthesis 2026-2027 read for context. The ia.numerique.gouv.fr/documents/ link redirects (302) to a time-limited signed copy on the DINUM site's object storage (s3.rbx.io.cloud.ovh.net/sites-faciles/...).",
-      "link_status": "redirected",
+      "link_status": "reachable",
       "document_access_type": "original_government_document",
       "source_id": "s-54416a22e5ff",
       "organization_id": "o-f0fb0201d0d5",
@@ -1846,7 +1846,7 @@
       "metadata_gaps": [],
       "source_kind": "official_document",
       "evidence_reference": "curl (browser user agent, --max-time 60): 7-page PDF read with pdftotext (Secrétariat général, Direction du numérique; 'DECEMBRE 2025'). The ia.numerique.gouv.fr/documents/ link redirects (302) to a time-limited signed copy on the DINUM site's object storage (s3.rbx.io.cloud.ovh.net/sites-faciles/...).",
-      "link_status": "redirected",
+      "link_status": "reachable",
       "document_access_type": "original_government_document",
       "source_id": "s-89d12acd5387",
       "organization_id": "o-5cc4df788f93",
@@ -4920,15 +4920,16 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): full page read; publication date 09 Sep 2025 stated on page; bill status checked on senat.fr dossier pjl25-118 (curl) and assemblee-nationale.fr dossier DLR5L17N53140 (curl and WebFetch)",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.entreprises.gouv.fr/priorites-et-actions/transition-numerique/soutenir-le-developpement-de-lia-au-service-de-0",
       "link_status": "reachable",
       "page_title": "Les autorités compétentes pour la mise en œuvre du règlement européen sur l'intelligence artificielle",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html"
+      "content_type": "text/html",
+      "fail_streak": 0
     },
     {
       "id": "s-6b0eb4a56049",
@@ -4947,15 +4948,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "WebFetch (curl --max-time 60 with browser user agent returned HTTP 403 bot challenge on legifrance.gouv.fr): JORF text read (Articles 7, 15, 21 and 64, signature); Code pénal 226-8 and 226-8-1 versions checked in Légifrance code search",
-      "http_status": 200,
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 403,
       "final_url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000049563368",
       "link_status": "reachable",
       "page_title": "LOI n° 2024-449 du 21 mai 2024 visant à sécuriser et à réguler l'espace numérique",
       "document_language": "fr",
-      "error": null,
-      "content_type": "text/html"
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "text/html",
+      "fail_streak": 1
     },
     {
       "id": "s-9e31ce1e52b4",
@@ -4974,15 +4976,16 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "WebFetch (curl --max-time 60 with browser user agent returned HTTP 403 bot challenge on legifrance.gouv.fr): consolidated text and Article 10 (version in force since 20 Aug 2026) read on Légifrance",
-      "http_status": 200,
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 403,
       "final_url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000047561974",
       "link_status": "reachable",
       "page_title": "LOI n° 2023-380 du 19 mai 2023 relative aux jeux Olympiques et Paralympiques de 2024 et portant diverses autres dispositions",
       "document_language": "fr",
-      "error": null,
-      "content_type": "text/html"
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "text/html",
+      "fail_streak": 1
     },
     {
       "id": "s-3deaa7a68097",
@@ -5002,15 +5005,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "WebFetch (curl --max-time 60 with browser user agent returned HTTP 403 bot challenge on legifrance.gouv.fr): full consolidated text read",
-      "http_status": 200,
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 403,
       "final_url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000048007135",
       "link_status": "reachable",
       "page_title": "Décret n° 2023-828 du 28 août 2023 relatif aux modalités de mise en œuvre des traitements algorithmiques sur les images collectées au moyen de systèmes de vidéoprotection et de caméras installées sur des aéronefs, pris en application de l'article 10 de la loi n° 2023-380 du 19 mai 2023 relative aux jeux Olympiques et Paralympiques de 2024 et portant diverses autres dispositions",
       "document_language": "fr",
-      "error": null,
-      "content_type": "text/html"
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "text/html",
+      "fail_streak": 1
     },
     {
       "id": "s-57389d1fe355",
@@ -5030,15 +5034,16 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "WebFetch (curl --max-time 60 with browser user agent returned HTTP 403 bot challenge on legifrance.gouv.fr): full text read",
-      "http_status": 200,
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 403,
       "final_url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000048197679",
       "link_status": "reachable",
       "page_title": "Décret n° 2023-939 du 11 octobre 2023 relatif aux modalités de pilotage et d'évaluation de l'expérimentation de traitements algorithmiques d'images légalement collectées au moyen de systèmes de vidéoprotection et de caméras installées sur des aéronefs",
       "document_language": "fr",
-      "error": null,
-      "content_type": "text/html"
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "text/html",
+      "fail_streak": 1
     },
     {
       "id": "s-1a4c69d0c516",
@@ -5057,15 +5062,16 @@
         "procurement"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "WebFetch (curl --max-time 60 with browser user agent returned HTTP 403 bot challenge on legifrance.gouv.fr): full text read",
-      "http_status": 200,
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 403,
       "final_url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000048042882",
       "link_status": "reachable",
       "page_title": "Décret n° 2023-855 du 4 septembre 2023 relatif à la déclaration des intérêts de la personne développant ou fournissant un traitement algorithmique à l'Etat, pris en application de l'article 10 de la loi n° 2023-380 du 19 mai 2023 relative aux jeux Olympiques et Paralympiques de 2024 et portant diverses autres dispositions",
       "document_language": "fr",
-      "error": null,
-      "content_type": "text/html"
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "text/html",
+      "fail_streak": 1
     },
     {
       "id": "s-769ab08988ee",
@@ -5084,15 +5090,16 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "WebFetch (curl --max-time 60 with browser user agent returned HTTP 403 bot challenge on legifrance.gouv.fr): JORF text read incl. Article 47 and signature",
-      "http_status": 200,
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 403,
       "final_url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053707088",
       "link_status": "reachable",
       "page_title": "LOI n° 2026-201 du 20 mars 2026 relative à l'organisation des jeux Olympiques et Paralympiques de 2030",
       "document_language": "fr",
-      "error": null,
-      "content_type": "text/html"
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "text/html",
+      "fail_streak": 1
     },
     {
       "id": "s-f8c73ef88baf",
@@ -5111,15 +5118,16 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "WebFetch (curl --max-time 60 with browser user agent returned HTTP 403 bot challenge on legifrance.gouv.fr): JORF text read incl. Articles 47 and 50, signature and Conseil constitutionnel reference",
-      "http_status": 200,
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 403,
       "final_url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054707332",
       "link_status": "reachable",
       "page_title": "LOI n° 2026-798 du 18 août 2026 visant à offrir des réponses immédiates aux phénomènes troublant l'ordre public, la sécurité et la tranquillité de nos concitoyens",
       "document_language": "fr",
-      "error": null,
-      "content_type": "text/html"
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "text/html",
+      "fail_streak": 1
     },
     {
       "id": "s-79fe11518a1c",
@@ -5139,15 +5147,16 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "WebFetch (curl --max-time 60 with browser user agent returned HTTP 403 bot challenge on legifrance.gouv.fr): JORF text read (Articles 4 and 6); CRPA L311-3-1 version date checked in Légifrance code search",
-      "http_status": 200,
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 403,
       "final_url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000033202746",
       "link_status": "reachable",
       "page_title": "LOI n° 2016-1321 du 7 octobre 2016 pour une République numérique",
       "document_language": "fr",
-      "error": null,
-      "content_type": "text/html"
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "text/html",
+      "fail_streak": 1
     },
     {
       "id": "s-c6768e1b529f",
@@ -5167,15 +5176,16 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "WebFetch (curl --max-time 60 with browser user agent returned HTTP 403 bot challenge on legifrance.gouv.fr): full text read",
-      "http_status": 200,
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 403,
       "final_url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000034194929",
       "link_status": "reachable",
       "page_title": "Décret n° 2017-330 du 14 mars 2017 relatif aux droits des personnes faisant l'objet de décisions individuelles prises sur le fondement d'un traitement algorithmique",
       "document_language": "fr",
-      "error": null,
-      "content_type": "text/html"
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "text/html",
+      "fail_streak": 1
     },
     {
       "id": "s-a41c3f3e75bf",
@@ -5194,15 +5204,16 @@
         "sectoral"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "WebFetch (curl --max-time 60 with browser user agent returned HTTP 403 bot challenge on legifrance.gouv.fr): JORF text and Article 17 read; CSP L4001-3 version date checked in Légifrance code search",
-      "http_status": 200,
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 403,
       "final_url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000043884384",
       "link_status": "reachable",
       "page_title": "LOI n° 2021-1017 du 2 août 2021 relative à la bioéthique",
       "document_language": "fr",
-      "error": null,
-      "content_type": "text/html"
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "text/html",
+      "fail_streak": 1
     },
     {
       "id": "s-1a82f16d2404",
@@ -5221,15 +5232,16 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "WebFetch (curl --max-time 60 with browser user agent returned HTTP 403 bot challenge on legifrance.gouv.fr): JORF text read incl. Article 6 and entry into force; R4127-13-1 checked on Légifrance code page",
-      "http_status": 200,
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 403,
       "final_url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054541620",
       "link_status": "reachable",
       "page_title": "Décret n° 2026-691 du 27 juillet 2026 portant modification du code de déontologie médicale",
       "document_language": "fr",
-      "error": null,
-      "content_type": "text/html"
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "text/html",
+      "fail_streak": 1
     },
     {
       "id": "s-c43c9a348f42",
@@ -5249,15 +5261,16 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "WebFetch (curl --max-time 60 with browser user agent returned HTTP 403 bot challenge on legifrance.gouv.fr): consolidated text and Article 5 read",
-      "http_status": 200,
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 403,
       "final_url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000047663185",
       "link_status": "reachable",
       "page_title": "LOI n° 2023-451 du 9 juin 2023 visant à encadrer l'influence commerciale et à lutter contre les dérives des influenceurs sur les réseaux sociaux",
       "document_language": "fr",
-      "error": null,
-      "content_type": "text/html"
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "text/html",
+      "fail_streak": 1
     },
     {
       "id": "s-50f3ee29a78d",
@@ -5276,15 +5289,16 @@
         "sectoral"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "WebFetch (curl --max-time 60 with browser user agent returned HTTP 403 bot challenge on legifrance.gouv.fr): JORF text read (Article 4) and Article 33 read on its JORF article page",
-      "http_status": 200,
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 403,
       "final_url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000038261631",
       "link_status": "reachable",
       "page_title": "LOI n° 2019-222 du 23 mars 2019 de programmation 2018-2022 et de réforme pour la justice",
       "document_language": "fr",
-      "error": null,
-      "content_type": "text/html"
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "text/html",
+      "fail_streak": 1
     },
     {
       "id": "s-22059890fbd7",
@@ -5303,15 +5317,16 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "WebFetch (curl --max-time 60 with browser user agent returned HTTP 403 bot challenge on legifrance.gouv.fr): Article 47 consolidated version read; text located via Légifrance search",
-      "http_status": 200,
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 403,
       "final_url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000886460",
       "link_status": "reachable",
       "page_title": "Loi n° 78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés",
       "document_language": "fr",
-      "error": null,
-      "content_type": "text/html"
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "text/html",
+      "fail_streak": 1
     },
     {
       "id": "s-257df8595079",
@@ -5330,15 +5345,16 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "WebFetch (curl --max-time 60 with browser user agent returned HTTP 403 bot challenge on legifrance.gouv.fr): JORF and consolidated texts read",
-      "http_status": 200,
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 403,
       "final_url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000052198538",
       "link_status": "reachable",
       "page_title": "Décret n° 2025-902 du 4 septembre 2025 relatif au Conseil de l'intelligence artificielle et du numérique",
       "document_language": "fr",
-      "error": null,
-      "content_type": "text/html"
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "text/html",
+      "fail_streak": 1
     },
     {
       "id": "s-a1372813e750",
@@ -5357,15 +5373,16 @@
         "sectoral"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "WebFetch (curl --max-time 60 with browser user agent returned HTTP 403 bot challenge on legifrance.gouv.fr): full text read",
-      "http_status": 200,
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 403,
       "final_url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000049467967",
       "link_status": "reachable",
       "page_title": "Décret n° 2024-376 du 23 avril 2024 relatif au service à compétence nationale dénommé « agence ministérielle pour l'intelligence artificielle de défense »",
       "document_language": "fr",
-      "error": null,
-      "content_type": "text/html"
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "text/html",
+      "fail_streak": 1
     },
     {
       "id": "s-ef39e8d85619",
@@ -5384,15 +5401,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "WebFetch (curl --max-time 60 with browser user agent returned HTTP 403 bot challenge on legifrance.gouv.fr): full text read",
-      "http_status": 200,
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 403,
       "final_url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000042297154",
       "link_status": "reachable",
       "page_title": "Décret n° 2020-1102 du 31 août 2020 portant création d'un service à compétence nationale dénommé « Pôle d'expertise de la régulation numérique »",
       "document_language": "fr",
-      "error": null,
-      "content_type": "text/html"
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "text/html",
+      "fail_streak": 1
     },
     {
       "id": "s-1efd39aeeff3",
@@ -5411,15 +5429,16 @@
         "historical"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): 16-page PDF downloaded and read with pdftotext (cover 'Mercredi 28 novembre 2018, Dossier de presse, Stratégie nationale de recherche en IA, #AIforhumanity', logos numerique.gouv.fr and esr.gouv.fr). The ministry's HTML pages on enseignementsup-recherche.gouv.fr are behind a bot block (403) for both curl and WebFetch; the PDF itself is reachable.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/content_migration/document/mesri_IA_dep_A4_09_1040607.pdf",
       "link_status": "reachable",
       "page_title": "Stratégie nationale de recherche en IA",
       "document_language": "fr",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-e08f9af24aa3",
@@ -5439,15 +5458,16 @@
         "historical"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-17",
-      "check_method": "curl (browser user agent, --max-time 60) returned HTTP 403 (Cloudflare block); WebFetch also returned 403; vie-publique.fr report page requires JavaScript (empty for WebFetch); aiforhumanity.fr unreachable. Title confirmed on the DGE strategy page (entreprises.gouv.fr, read with curl); date from official references (ministry page as indexed, 'rendu public mercredi 28 mars 2018').",
-      "http_status": 403,
-      "final_url": "https://www.enseignementsup-recherche.gouv.fr/fr/rapport-de-cedric-villani-donner-un-sens-l-intelligence-artificielle-ia-49194",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 200,
+      "final_url": "https://www.vie-publique.fr/files/rapport/pdf/184000159.pdf",
       "link_status": "reachable",
       "page_title": "Donner un sens à l'intelligence artificielle : pour une stratégie nationale et européenne",
       "document_language": "fr",
-      "error": "HTTP 403 (bot protection) for curl and WebFetch",
-      "content_type": "text/html"
+      "error": null,
+      "content_type": "text/html",
+      "fail_streak": 0
     },
     {
       "id": "s-1a1df5a91c96",
@@ -5466,15 +5486,16 @@
         "historical"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): 28-page press kit PDF ('Dossier de presse, 8 novembre 2021') read with pdftotext; the government press release of 8 November 2021 (info.gouv.fr PDF) and the DGE strategy page (entreprises.gouv.fr, 'Publié le 20 Sep 2024, Mis à jour le 12 Fév 2025', which links this press kit) also read with curl. Record re-pointed from the DGE overview page to the strategy document itself.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2021-11/dossier-de-presse---strat-gie-nationale-pour-l-intelligence-artificielle-2e-phase-14920.pdf",
       "link_status": "reachable",
       "page_title": "Stratégie nationale pour l'intelligence artificielle – 2e phase : Conquérir les talents et transformer notre potentiel scientifique en succès économiques",
       "document_language": "fr",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-fe35e696ea00",
@@ -5493,15 +5514,16 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-18",
-      "check_method": "desktop browser from a connection in Saudi Arabia",
-      "http_status": 200,
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 403,
       "final_url": "https://www.info.gouv.fr/dossier-de-presse/faire-de-la-france-une-puissance-de-lia",
       "link_status": "reachable",
       "page_title": "Faire de la France une puissance de l'IA – Comité interministériel de l'intelligence artificielle du 6 février 2025",
       "document_language": "fr",
-      "error": null,
-      "content_type": "text/html"
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "text/html",
+      "fail_streak": 1
     },
     {
       "id": "s-554e0ea40fa7",
@@ -5520,15 +5542,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): Élysée page '25 recommandations pour l'IA en France' (13 March 2024) read; its link (gouvernement.fr upload, redirecting to info.gouv.fr) downloaded: 130-page French report 'IA : notre ambition pour la France, mars 2024' read with pdftotext. English versions (info.gouv.fr PDFs) also read.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.info.gouv.fr/upload/media/content/0001/09/4d3cc456dd2f5b9d79ee75feea63b47f10d75158.pdf",
       "link_status": "reachable",
       "page_title": "IA : notre ambition pour la France",
       "document_language": "fr",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-e9b455f3b874",
@@ -5546,15 +5569,16 @@
         "strategy"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): DGE plan page read (redirect from /osez-lia; 'Lancé en juillet 2025 dans le cadre de la stratégie nationale pour l'IA'); DGE press release of 17 June 2026 on the plan's reinforcement also read.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.entreprises.gouv.fr/priorites-et-actions/transition-numerique/accompagner-les-entreprises-dans-leur-transition/le-plan",
       "link_status": "reachable",
       "page_title": "Le plan national « Osez l'IA »",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-8f45d1bdb2d7",
@@ -5574,15 +5598,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): DINUM page 'Feuilles de route IA des ministères' read; press kit PDF (24 pp., 'Dossier de presse, 16 juin 2026', porté par David Amiel) read with pdftotext. The ia.numerique.gouv.fr/documents/ link redirects (302) to a time-limited signed copy on the DINUM site's object storage (s3.rbx.io.cloud.ovh.net/sites-faciles/...).",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
-      "final_url": "https://ia.numerique.gouv.fr/documents/27/DP-Notre-IA_160626_1.pdf",
-      "link_status": "redirected",
+      "final_url": "https://s3.rbx.io.cloud.ovh.net/sites-faciles/sites-faciles-alliance/documents/DP-Notre-IA_160626_1.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=15b12783e5fa40bfbe2c5e8583b51f3e%2F20261115%2Frbx%2Fs3%2Faws4_request&X-Amz-Date=20261115T114319Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=94490ea436f38ddb2fceaf064f534b578369a47758f9b8752ad78864a230f5db",
+      "link_status": "reachable",
       "page_title": "Une IA utile, humaine et souveraine pour les services publics",
       "document_language": "fr",
-      "error": null,
-      "content_type": "application/pdf"
+      "error": "Served from a file host or CDN: s3.rbx.io.cloud.ovh.net",
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-bd94a3077653",
@@ -5603,15 +5628,16 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): DINUM page 'Guide d'usage de l'IA' read ('ont publié en juin 2026 le Guide…', five principles); 58-page PDF read with pdftotext (authors DINUM/DITP/DGAFP, statement on non-regulatory status). Portal of AI charters (ia.numerique.gouv.fr/ressources/portail-des-chartes-ia-dans-ladministration/) also read to identify the charters recorded separately. The ia.numerique.gouv.fr/documents/ link redirects (302) to a time-limited signed copy on the DINUM site's object storage (s3.rbx.io.cloud.ovh.net/sites-faciles/...).",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
-      "final_url": "https://ia.numerique.gouv.fr/documents/19/STANDAR_Guide_dusage_de_lIA_pour_les_agents_publics_de_lEtat-V2-_PDF.pdf",
-      "link_status": "redirected",
+      "final_url": "https://s3.rbx.io.cloud.ovh.net/sites-faciles/sites-faciles-alliance/documents/STANDAR_Guide_dusage_de_lIA_pour_les_agents_publics_de_lEtat-V2-_PDF.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=15b12783e5fa40bfbe2c5e8583b51f3e%2F20261115%2Frbx%2Fs3%2Faws4_request&X-Amz-Date=20261115T114320Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=f160007f7d7529613f6b94a2e14d743052a54f9805c7cde2546251bc939e8ca5",
+      "link_status": "reachable",
       "page_title": "Guide d'usage de l'IA pour les agents publics de l'État",
       "document_language": "fr",
-      "error": null,
-      "content_type": "application/pdf"
+      "error": "Served from a file host or CDN: s3.rbx.io.cloud.ovh.net",
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-a68ad4a3c5ea",
@@ -5630,15 +5656,16 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): 45-page PDF read with pdftotext (co-authors MiNumEco, Ecolab/CGDD, DAE; 'Version : Novembre 2025'). The economie.gouv.fr DAE announcement page returned a bot challenge (403) to curl and WebFetch.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://ecoresponsable.numerique.gouv.fr/docs/2025/MINUMECO_fiche_IA_frugale_VF.pdf",
       "link_status": "reachable",
       "page_title": "Fiche pratique pour l'Achat Responsable de solutions d'Intelligence Artificielle (IA)",
       "document_language": "fr",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-fcdef3a1e313",
@@ -5657,15 +5684,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): documentation-administrative.gouv.fr record read (author DSAF, Premier ministre; 'Date de publication 2025-09'); 16-page PDF read with pdftotext.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.documentation-administrative.gouv.fr/adm-01860317v1/file/2025-03-19_charteIA_SPM.pdf",
       "link_status": "reachable",
       "page_title": "Charte relative à l'utilisation de l'IA générative dans les services du Premier ministre",
       "document_language": "fr",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-33f31f3efaf0",
@@ -5684,15 +5712,16 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): 18-page PDF read with pdftotext (cover 'Juin 2024').",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.fonction-publique.gouv.fr/files/files/publications/publications-dgafp/guide-strategie-usage-intelligence-artificielle.pdf",
       "link_status": "reachable",
       "page_title": "Stratégie d'usage de l'intelligence artificielle en matière de gestion des ressources humaines dans la fonction publique d'État",
       "document_language": "fr",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-29044bf054e0",
@@ -5712,15 +5741,16 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): 15-page PDF read with pdftotext (second attempt; first connection reset). Date from the Ministry of the Interior's AI roadmap synthesis 2026-2027 (ia.numerique.gouv.fr/documents/23/…, read with curl). The ia.numerique.gouv.fr/documents/ link redirects (302) to a time-limited signed copy on the DINUM site's object storage (s3.rbx.io.cloud.ovh.net/sites-faciles/...).",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
-      "final_url": "https://ia.numerique.gouv.fr/documents/13/Charte_des_usages_ethiques_de_lIA_au_MI.pdf",
-      "link_status": "redirected",
+      "final_url": "https://s3.rbx.io.cloud.ovh.net/sites-faciles/sites-faciles-alliance/documents/Charte_des_usages_ethiques_de_lIA_au_MI.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=15b12783e5fa40bfbe2c5e8583b51f3e%2F20261115%2Frbx%2Fs3%2Faws4_request&X-Amz-Date=20261115T114320Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=2fa3c9c886fd604247e1728ae983e86546cc3a43e57e4dcb8fe78037bd87418f",
+      "link_status": "reachable",
       "page_title": "Charte pour des usages éthiques de l'intelligence artificielle au Ministère de l'Intérieur",
       "document_language": "fr",
-      "error": null,
-      "content_type": "application/pdf"
+      "error": "Served from a file host or CDN: s3.rbx.io.cloud.ovh.net",
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-6489d2cca9e3",
@@ -5740,15 +5770,16 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): ministry page read ('Parution le 2 juillet 2025', five axes); 43-page strategy PDF downloaded and read with pdftotext.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.culture.gouv.fr/thematiques/innovation-numerique/la-strategie-du-ministere-pour-des-intelligences-artificielles-culturelles-et-responsables",
       "link_status": "reachable",
       "page_title": "Stratégie d'action IA du ministère de la Culture : pour des intelligences artificielles culturelles et responsables",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html; charset=UTF-8"
+      "content_type": "text/html; charset=UTF-8",
+      "fail_streak": 0
     },
     {
       "id": "s-54416a22e5ff",
@@ -5768,15 +5799,16 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): 13-page PDF read with pdftotext (cover 'Juin 2026'); ministry roadmap synthesis 2026-2027 read for context. The ia.numerique.gouv.fr/documents/ link redirects (302) to a time-limited signed copy on the DINUM site's object storage (s3.rbx.io.cloud.ovh.net/sites-faciles/...).",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
-      "final_url": "https://ia.numerique.gouv.fr/documents/20/charte-usage-raisonne-responsable-intelligence-artificielle-ministere-culture.pdf",
-      "link_status": "redirected",
+      "final_url": "https://s3.rbx.io.cloud.ovh.net/sites-faciles/sites-faciles-alliance/documents/charte-usage-raisonne-responsable-intelligence-artificielle-ministere-culture.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=15b12783e5fa40bfbe2c5e8583b51f3e%2F20261115%2Frbx%2Fs3%2Faws4_request&X-Amz-Date=20261115T114320Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=76ed473cc8c050d40e67415d1c230c891c08e91d12435bc435dad670522c9128",
+      "link_status": "reachable",
       "page_title": "Charte pour un usage raisonné et responsable de l'intelligence artificielle",
       "document_language": "fr",
-      "error": null,
-      "content_type": "application/pdf"
+      "error": "Served from a file host or CDN: s3.rbx.io.cloud.ovh.net",
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-89d12acd5387",
@@ -5796,15 +5828,16 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): 7-page PDF read with pdftotext (Secrétariat général, Direction du numérique; 'DECEMBRE 2025'). The ia.numerique.gouv.fr/documents/ link redirects (302) to a time-limited signed copy on the DINUM site's object storage (s3.rbx.io.cloud.ovh.net/sites-faciles/...).",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
-      "final_url": "https://ia.numerique.gouv.fr/documents/34/Charte_IA_MSO.pdf",
-      "link_status": "redirected",
+      "final_url": "https://s3.rbx.io.cloud.ovh.net/sites-faciles/sites-faciles-alliance/documents/Charte_IA_MSO.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=15b12783e5fa40bfbe2c5e8583b51f3e%2F20261115%2Frbx%2Fs3%2Faws4_request&X-Amz-Date=20261115T114320Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=a5f7588fb579635340aa212a838fdc1d74a0c5bc4d3bb9fb6baa25ef34062498",
+      "link_status": "reachable",
       "page_title": "Charte d'utilisation de l'intelligence artificielle au sein des ministères sociaux",
       "document_language": "fr",
-      "error": null,
-      "content_type": "application/pdf"
+      "error": "Served from a file host or CDN: s3.rbx.io.cloud.ovh.net",
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-9b48d2fad9de",
@@ -5824,15 +5857,16 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (--max-time 60, then 90) timed out mid-download (7 MB); WebFetch retrieved the full PDF, read with pdftotext (35 pages, cover 'Novembre 2025', minister's editorial). esante.gouv.fr consultation document blocked (Incapsula).",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://health-data-hub.fr/sites/default/files/2025-12/strategie_donnees_de_sante_ia-2_0.pdf",
       "link_status": "reachable",
       "page_title": "Stratégie intelligence artificielle et données de santé 2025-2028",
       "document_language": "fr",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-1de86d02f03e",
@@ -5852,15 +5886,16 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-18",
-      "check_method": "desktop browser from a connection in Saudi Arabia",
-      "http_status": 200,
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 403,
       "final_url": "https://www.education.gouv.fr/cadre-d-usage-de-l-ia-en-education-450647",
       "link_status": "reachable",
       "page_title": "Cadre d'usage de l'IA en éducation",
       "document_language": "fr",
-      "error": null,
-      "content_type": "text/html"
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "text/html",
+      "fail_streak": 1
     },
     {
       "id": "s-5589c66fd0ce",
@@ -5880,15 +5915,16 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): 34-page PDF on vie-publique.fr (official public-reports repository of the Directorate of Legal and Administrative Information) read with pdftotext (cover 'Rapport de la Task Force IA, Septembre 2019'; running title 'L'intelligence artificielle au service de la défense').",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.vie-publique.fr/files/rapport/pdf/194000723.pdf",
       "link_status": "reachable",
       "page_title": "L'intelligence artificielle au service de la défense – Rapport de la Task Force IA",
       "document_language": "fr",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-7cf6d9f1bd5d",
@@ -5907,15 +5943,16 @@
         "sectoral"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): ministry page read ('Publié le : 12 février 2025', 9 principles and 12 recommendations, link to the PDF); the same 24-page opinion read with pdftotext from the vie-publique.fr copy (vie-publique.fr/files/rapport/pdf/298558.pdf).",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.defense.gouv.fr/actualites/comite-dethique-defense-usage-lia-ethique-proportionne",
       "link_status": "reachable",
       "page_title": "Avis sur l'usage des technologies d'intelligence artificielle par les forces armées",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html; charset=UTF-8"
+      "content_type": "text/html; charset=UTF-8",
+      "fail_streak": 0
     },
     {
       "id": "s-bf8db53f091e",
@@ -5935,15 +5972,16 @@
         "strategy"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): ministry report page read ('Publié le 23 juin 2025 - Mis à jour le 29 août 2025'); 128-page PDF read with pdftotext (synthesis of 10 proposals).",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.justice.gouv.fr/documentation/ressources/lia-au-service-justice-strategie-solutions-operationnelles",
       "link_status": "reachable",
       "page_title": "L'IA au service de la justice : stratégie et solutions opérationnelles",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html; charset=UTF-8"
+      "content_type": "text/html; charset=UTF-8",
+      "fail_streak": 0
     },
     {
       "id": "s-829d071a9911",
@@ -5962,15 +6000,16 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): DGE page read ('Publié le : 08 Jul 2025, Mis à jour le : 29 Avr 2026'); 24-page PDF read with pdftotext.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.entreprises.gouv.fr/la-dge/publications/guide-sur-ladoption-de-lintelligence-artificielle-destination-des-commercants",
       "link_status": "reachable",
       "page_title": "Adoption de l'IA : fiches pratiques à destination des commerçants",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-ab7df40837d5",
@@ -5990,15 +6029,16 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): Council of State study page read (summary, seven principles, links to study PDF and press release); press release PDF ('Paris, le 30 août 2022') read with pdftotext; study PDF link answers with a redirect (302).",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.conseil-etat.fr/publications-colloques/etudes/etudes-a-la-demande-du-gouvernement/intelligence-artificielle-et-action-publique-construire-la-confiance-servir-la-performance",
       "link_status": "reachable",
       "page_title": "Intelligence artificielle et action publique : construire la confiance, servir la performance",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html; charset=UTF-8"
+      "content_type": "text/html; charset=UTF-8",
+      "fail_streak": 0
     },
     {
       "id": "s-ec861a61d623",
@@ -6018,15 +6058,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): Council of State page read (scope, consultation, date 11 décembre 2025 in page metadata); 13-page charter PDF read with pdftotext (seven principles).",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.conseil-etat.fr/qui-sommes-nous/deontologie/charte-d-utilisation-de-l-intelligence-artificielle-au-sein-de-la-juridiction-administrative",
       "link_status": "reachable",
       "page_title": "Charte d'utilisation de l'intelligence artificielle au sein de la juridiction administrative",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html; charset=UTF-8"
+      "content_type": "text/html; charset=UTF-8",
+      "fail_streak": 0
     },
     {
       "id": "s-58a7593c4444",
@@ -6045,15 +6086,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): official CNIL page fetched (HTTP 200) and full text read; page dated 08 avril 2024.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.cnil.fr/fr/realiser-une-analyse-dimpact-si-necessaire",
       "link_status": "reachable",
       "page_title": "IA : Réaliser une analyse d’impact si nécessaire",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-99b670f4fb47",
@@ -6073,15 +6115,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): official CNIL page fetched (HTTP 200) and read; dated 22 juillet 2025; index of sheets at https://www.cnil.fr/fr/les-fiches-pratiques-ia.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.cnil.fr/fr/developpement-des-systemes-dia-les-recommandations-de-la-cnil-pour-respecter-le-rgpd",
       "link_status": "reachable",
       "page_title": "Développement des systèmes d’IA : les recommandations de la CNIL pour respecter le RGPD",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-f678ceea0f1d",
@@ -6099,15 +6142,16 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): official CNIL page fetched (HTTP 200) and read; dated 19 juin 2025.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.cnil.fr/fr/base-legale-interet-legitime-developpement-systeme",
       "link_status": "reachable",
       "page_title": "IA : Mobiliser la base légale de l’intérêt légitime pour développer un système d’IA",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-2b6a40b218d4",
@@ -6126,15 +6170,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): official CNIL page fetched (HTTP 200) and read; dated 19 juin 2025.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.cnil.fr/fr/focus-interet-legitime-collecte-par-moissonnage",
       "link_status": "reachable",
       "page_title": "La base légale de l’intérêt légitime : fiche focus sur les mesures à prendre en cas de collecte des données par moissonnage (web scraping)",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-68960d5ddd4f",
@@ -6153,15 +6198,16 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): official CNIL page fetched (HTTP 200) and read; dated 07 février 2025.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.cnil.fr/fr/ia-informer-les-personnes-concernees",
       "link_status": "reachable",
       "page_title": "IA : Informer les personnes concernées",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-eabed0c63766",
@@ -6179,15 +6225,16 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): official CNIL page fetched (HTTP 200) and read; dated 07 février 2025.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.cnil.fr/fr/ia-respecter-lexercice-des-droits-des-personnes",
       "link_status": "reachable",
       "page_title": "IA : Respecter et faciliter l’exercice des droits des personnes concernées",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-90e040a7fa37",
@@ -6205,15 +6252,16 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): official CNIL page fetched (HTTP 200) and read; dated 22 juillet 2025.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.cnil.fr/fr/ia-annoter-les-donnees",
       "link_status": "reachable",
       "page_title": "IA : Annoter les données",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-76458a8f3f29",
@@ -6232,15 +6280,16 @@
         "cyber-security"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): official CNIL page fetched (HTTP 200) and read; dated 22 juillet 2025.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.cnil.fr/fr/ia-garantir-la-securite-du-developpement",
       "link_status": "reachable",
       "page_title": "IA : Garantir la sécurité du développement d’un système d’IA",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-c2f1e69351f1",
@@ -6259,15 +6308,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): official CNIL page fetched (HTTP 200) and read; dated 22 juillet 2025.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.cnil.fr/fr/ia-analyser-le-statut-dun-modele-dia-au-regard-du-rgpd",
       "link_status": "reachable",
       "page_title": "IA : Analyser le statut d’un modèle d’IA au regard du RGPD",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-bdb0408d05fa",
@@ -6287,15 +6337,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): official CNIL page fetched (HTTP 200) and read; dated 16 mai 2023.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.cnil.fr/fr/intelligence-artificielle-le-plan-daction-de-la-cnil",
       "link_status": "reachable",
       "page_title": "Intelligence artificielle : le plan d’action de la CNIL",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-15114357a9c3",
@@ -6314,15 +6365,16 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): PDF (18 pp., 'Juillet 2022') downloaded from cnil.fr and read with pdftotext; publication date 19 July 2022 from the CNIL announcement page.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.cnil.fr/sites/cnil/files/atoms/files/cameras-intelligentes-augmentees_position_cnil.pdf",
       "link_status": "reachable",
       "page_title": "Caméras dites « intelligentes » ou « augmentées » dans les espaces publics – Position sur les conditions de déploiement",
       "document_language": "fr",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-b3e8e6cce512",
@@ -6341,15 +6393,16 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): official CNIL page fetched (HTTP 200) and read; dated 18 juillet 2024; companion page 'Comment déployer une IA générative ? La CNIL apporte de premières précisions' of the same date.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.cnil.fr/fr/les-questions-reponses-de-la-cnil-sur-lutilisation-dun-systeme-dia-generative",
       "link_status": "reachable",
       "page_title": "Les questions-réponses de la CNIL sur l’utilisation d’un système d’IA générative",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-3a9a6f692719",
@@ -6369,15 +6422,16 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): PDF (17 pp., dated 'Mars 2025') downloaded from cnil.fr and read with pdftotext.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.cnil.fr/sites/cnil/files/2025-04/bac_a_sable_recommandations.pdf",
       "link_status": "reachable",
       "page_title": "Bac à sable « IA et services publics » – Les recommandations de la CNIL aux lauréats",
       "document_language": "fr",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-b734d2e1dbce",
@@ -6396,15 +6450,16 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): PDF (17 pp., 'juillet 2026', author CIANum - CNIL) downloaded from cnil.fr and read with pdftotext; date from CNIL announcement page (20 juillet 2026).",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.cnil.fr/sites/default/files/2026-07/ia-cianum-cnil.pdf",
       "link_status": "reachable",
       "page_title": "IA agentique et protection des données personnelles : équation à inconnues multiples pour les utilisateurs",
       "document_language": "fr",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-21ed48376f7a",
@@ -6424,15 +6479,16 @@
         "international"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): official ANSSI MesServicesCyber guide page (HTTP 200, 'Publié le 7 février 2025') and PDF (14 pp., 'February 2025', 'published by the French National Cybersecurity Authority (ANSSI)') downloaded and read with pdftotext.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://messervices.cyber.gouv.fr/guides/en-building-trust-ai-through-cyber-risk-based-approach",
       "link_status": "reachable",
       "page_title": "Building trust in AI through a cyber risk-based approach",
       "document_language": "en",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-094f05f2b448",
@@ -6451,15 +6507,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): official ANSSI guide page ('Publié le 29 avril 2024') and PDF (38 pp., ANSSI-PA-102, version initiale 29/04/2024) downloaded and read with pdftotext.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://messervices.cyber.gouv.fr/guides/recommandations-de-securite-pour-un-systeme-dia-generative",
       "link_status": "reachable",
       "page_title": "Recommandations de sécurité pour un système d’IA générative",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-b0d5c0daf835",
@@ -6479,15 +6536,16 @@
         "international"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): ANSSI publication page (HTTP 200, 'Publié le vendredi 4 octobre 2024') names the BSI-hosted PDF as the document; PDF downloaded and first pages read with pdftotext.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://cyber.gouv.fr/nous-connaitre/publications/publications-internationales/ai-coding-assistants/",
       "link_status": "reachable",
       "page_title": "AI Coding Assistants",
       "document_language": "en",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-f708464e672c",
@@ -6507,15 +6565,16 @@
         "international"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): ANSSI publication page (HTTP 200, 'Publié le lundi 11 août 2025') links the BSI page for the joint release; PDF downloaded and first pages read with pdftotext.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://cyber.gouv.fr/nous-connaitre/publications/publications-internationales/design-principles-for-llm-based-systems-with-zero-trust/",
       "link_status": "reachable",
       "page_title": "Design Principles for LLM-based Systems with Zero Trust",
       "document_language": "en",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-5129795dab44",
@@ -6535,15 +6594,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): official CNIL page fetched (HTTP 200) and read; dated 20 juin 2025.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.cnil.fr/fr/education-mise-en-place-systeme-ia",
       "link_status": "reachable",
       "page_title": "Responsable de traitement : comment mettre en place des systèmes d’IA dans l’éducation ?",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-0d602dfc7b50",
@@ -6563,15 +6623,16 @@
         "sectoral"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): official Arcom page ('Publié le 16 juin 2026') and PDF (28 pp., 'Juin 2026') downloaded and read with pdftotext.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.arcom.fr/se-documenter/etudes-et-donnees/etudes-bilans-et-rapports-de-larcom/barometre-daudience-des-services-dintelligence-artificielle-1ere-edition",
       "link_status": "reachable",
       "page_title": "Baromètre d'audience des services d'intelligence artificielle - 1ère édition",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-ee8c6488904b",
@@ -6591,15 +6652,16 @@
         "drafts"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60) returned HTTP 403 from acpr.banque-france.fr; WebFetch retrieved the PDF (83 pp., 'Juin 2020', authors Dupont, Fliche, Yang, Pôle Fintech-Innovation ACPR), which was read with pdftotext.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 403,
       "final_url": "https://acpr.banque-france.fr/system/files/2025-02/20200612_gouvernance_evaluation_ia.pdf",
       "link_status": "reachable",
       "page_title": "Gouvernance des algorithmes d’intelligence artificielle dans le secteur financier – Document de réflexion",
       "document_language": "fr",
-      "error": null,
-      "content_type": "application/pdf"
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "application/pdf",
+      "fail_streak": 1
     },
     {
       "id": "s-e7a4e09554bb",
@@ -6620,15 +6682,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60) returned HTTP 403 from acpr.banque-france.fr; WebFetch read the ACPR press release ('Mise en ligne le 1 Juillet 2026', consultation until 30 September 2026) and retrieved the PDF (59 pp., 'Juillet 2026', Direction de l'Innovation, des données et des risques technologiques), read with pdftotext.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 403,
       "final_url": "https://acpr.banque-france.fr/fr/publications-et-statistiques/publications/lequite-algorithmique-dans-le-secteur-financier",
       "link_status": "reachable",
       "page_title": "L’équité algorithmique dans le secteur financier – Document de réflexion",
       "document_language": "fr",
-      "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "error": "HTTP Error 403: Forbidden",
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 1
     },
     {
       "id": "s-a01e65d1b974",
@@ -6648,15 +6711,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): PDF (32 pp., 'Février 2026') downloaded from amf-france.org and read with pdftotext; exact day of publication not stated in the document.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.amf-france.org/sites/institutionnel/files/private/2026-02/202602-rapport-amf-ia-et-acteurs-des-marches-financiers-fr.pdf",
       "link_status": "reachable",
       "page_title": "L’usage de l’IA par les acteurs des marchés financiers en France",
       "document_language": "fr",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-13970696577a",
@@ -6675,15 +6739,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): official HAS page ('Mis en ligne le 30 oct. 2025 - Mis à jour le 15 avr. 2026') and guide PDF (15 pp., 'Adopté par le Collège le 23 octobre 2025') downloaded and read with pdftotext.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.has-sante.fr/jcms/p_3703115/fr/premieres-clefs-d-usage-de-l-ia-generative-en-sante",
       "link_status": "reachable",
       "page_title": "Premières clefs d’usage de l’IA générative en santé dans les secteurs sanitaire, social et médico-social",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-c489087e5cc4",
@@ -6702,15 +6767,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): official HAS page ('Mis en ligne le 14 oct. 2020 - Mis à jour le 17 févr. 2022') read and Annex 6 PDF (11 pp.) downloaded and read with pdftotext.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.has-sante.fr/jcms/p_3318028/fr/grille-descriptive-des-fonctionnalites-des-dispositifs-medicaux-embarquant-un-systeme-avec-apprentissage-automatique-intelligence-artificielle",
       "link_status": "reachable",
       "page_title": "Grille descriptive des fonctionnalités des dispositifs médicaux embarquant un système avec apprentissage automatique (intelligence artificielle)",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-4f13831b665e",
@@ -6731,15 +6797,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): CNIL consultation page (dated 05 mars 2026, consultation until 16 April 2026) and draft guide PDF (61 pp., 'Document de travail - 16 février 2026') downloaded and read with pdftotext.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.cnil.fr/fr/cloturee-ia-et-sante-la-has-et-la-cnil-lancent-une-consultation-publique-sur-un-projet-de-guide",
       "link_status": "reachable",
       "page_title": "Accompagner le bon usage des systèmes d’intelligence artificielle en contexte de soins – Document de travail",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-0c8c1f440633",
@@ -6758,15 +6825,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): official HAS page ('Mis en ligne le 18 juin 2026') and synthesis PDF ('Avril 2026') downloaded and read.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.has-sante.fr/jcms/p_4092354/fr/intelligence-artificielle-en-sante-la-has-publie-des-reperes-pour-les-usagers",
       "link_status": "reachable",
       "page_title": "Intelligence artificielle en santé – Bien l’utiliser et bien se protéger",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-691cd33c5ce7",
@@ -6785,15 +6853,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): official opinion page ('Mise en ligne le 28 juin 2024') read; the French full text (54.7 MB) was not downloaded; the Autorité's official English translation (24a05_eng.pdf) was downloaded and its opening pages read with pdftotext.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.autoritedelaconcurrence.fr/fr/avis/relatif-au-fonctionnement-concurrentiel-du-secteur-de-lintelligence-artificielle-generative",
       "link_status": "reachable",
       "page_title": "Avis 24-A-05 du 28 juin 2024 relatif au fonctionnement concurrentiel du secteur de l’intelligence artificielle générative",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-855e3ccf70d1",
@@ -6812,15 +6881,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): official opinion page ('Mise en ligne le : 17 juillet 2026') and its official summary read; full-text PDF located but not read in full.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.autoritedelaconcurrence.fr/fr/avis/relatif-au-fonctionnement-concurrentiel-du-secteur-des-agents-dintelligence-artificielle",
       "link_status": "reachable",
       "page_title": "Avis 26-A-05 du 17 juillet 2026 relatif au fonctionnement concurrentiel du secteur des agents d’intelligence artificielle",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-be094378e3e0",
@@ -6840,15 +6910,16 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60) failed (connection reset) on defenseurdesdroits.fr; WebFetch read the official page (published 13 November 2024) and retrieved the French PDF (49 pp.), read with pdftotext.",
-      "http_status": null,
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 200,
       "final_url": "https://www.defenseurdesdroits.fr/algorithmes-intelligence-artificielle-et-services-publics-2024",
       "link_status": "reachable",
       "page_title": "Algorithmes, systèmes d’IA et services publics : quels droits pour les usagers ? Points de vigilance et recommandations",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-49c457d2c605",
@@ -6867,15 +6938,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-10-11",
-      "check_method": "curl (browser user agent, --max-time 60): PDF (34 pp., 'Avis adopté le 30 juin 2023 par l'assemblée plénière du CNPEN') downloaded from ccne-ethique.fr and read with pdftotext.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.ccne-ethique.fr/sites/default/files/2023-07/CNPEN-Avis7-%20SIAgen-enjeux%20d%27e%CC%81thique-2023-07-04-web.pdf",
       "link_status": "reachable",
       "page_title": "Avis n° 7 – Systèmes d’intelligence artificielle générative : enjeux d’éthique",
       "document_language": "fr",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-8c7f6f17ffe9",
@@ -6894,15 +6966,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-11-05",
-      "checked_date": "2026-11-05",
-      "check_method": "Official CNIL page read: title, printed date and full text checked; sheet number from the CNIL index of AI practical sheets.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://cnil.fr/fr/determiner-le-regime-juridique-applicable",
       "link_status": "reachable",
       "page_title": "IA : Déterminer le régime juridique applicable",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-33fe80425b68",
@@ -6921,15 +6994,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-11-05",
-      "checked_date": "2026-11-05",
-      "check_method": "Official CNIL page read: title, printed date and full text checked; sheet number from the CNIL index of AI practical sheets.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://cnil.fr/fr/definir-une-finalite-0",
       "link_status": "reachable",
       "page_title": "IA : Définir une finalité",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-ac15abfb3972",
@@ -6948,15 +7022,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-11-05",
-      "checked_date": "2026-11-05",
-      "check_method": "Official CNIL page read: title, printed date and full text checked; sheet number from the CNIL index of AI practical sheets.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://cnil.fr/fr/determiner-la-qualification-juridique-des-fournisseurs-de-systemes-dia",
       "link_status": "reachable",
       "page_title": "Déterminer la qualification juridique des acteurs",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-b3b206d7d13a",
@@ -6975,15 +7050,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-11-05",
-      "checked_date": "2026-11-05",
-      "check_method": "Official CNIL page read: title, printed date and full text checked; sheet number from the CNIL index of AI practical sheets.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://cnil.fr/fr/assurer-que-le-traitement-est-licite",
       "link_status": "reachable",
       "page_title": "IA : Assurer que le traitement est licite - Définir une base légale",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-42e1c660cd18",
@@ -7002,15 +7078,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-11-05",
-      "checked_date": "2026-11-05",
-      "check_method": "Official CNIL page read: title, printed date and full text checked; sheet number from the CNIL index of AI practical sheets.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://cnil.fr/fr/tenir-compte-de-la-protection-des-donnees-dans-la-collecte-et-la-gestion-des-donnees",
       "link_status": "reachable",
       "page_title": "IA : Tenir compte de la protection des données dans la collecte et la gestion des données",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-209174dc4f11",
@@ -7030,15 +7107,16 @@
         "transparency"
       ],
       "date_reviewed": "2026-11-05",
-      "checked_date": "2026-11-05",
-      "check_method": "Official report PDF on vie-publique.fr read: title, date (January 2025) and conclusions checked.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.vie-publique.fr/files/rapport/pdf/297322.pdf",
       "link_status": "reachable",
       "page_title": "Expérimentation de traitements algorithmiques d'images légalement collectées au moyen de systèmes de vidéoprotection – Rapport du comité d'évaluation",
       "document_language": "fr",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-69cb120a59b4",
@@ -7057,15 +7135,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-11-05",
-      "checked_date": "2026-11-05",
-      "check_method": "Official report PDF on culture.gouv.fr read: title, authors, plenary date (23 June 2025) and proposals checked.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.culture.gouv.fr/Media/medias-creation-rapide/cspla_ia_remuneration_contenus_culturels_partie_juridique_juin_2025.pdf3",
       "link_status": "reachable",
       "page_title": "Rapport de mission sur la rémunération des contenus culturels utilisés par les systèmes d'IA – Volet juridique",
       "document_language": "fr",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-3f58994c3998",
@@ -7083,15 +7162,16 @@
         "ethics"
       ],
       "date_reviewed": "2026-11-05",
-      "checked_date": "2026-11-05",
-      "check_method": "Official CNIL page and report PDF read: title, date (15 December 2017) and recommendations checked.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://cnil.fr/fr/comment-permettre-lhomme-de-garder-la-main-rapport-sur-les-enjeux-ethiques-des-algorithmes-et-de",
       "link_status": "reachable",
       "page_title": "Comment permettre à l’Homme de garder la main ? Rapport sur les enjeux éthiques des algorithmes et de l’intelligence artificielle",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-485faf7c1b41",
@@ -7109,8 +7189,8 @@
         "sectoral"
       ],
       "date_reviewed": "2026-11-05",
-      "checked_date": "2026-11-08",
-      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions); replacement located by web search, same document",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.autoritedelaconcurrence.fr/sites/default/files/2026-01/Etude_IA_Energie_ADLC-LR.pdf",
       "link_status": "reachable",
@@ -7137,15 +7217,16 @@
         "sectoral"
       ],
       "date_reviewed": "2026-11-05",
-      "checked_date": "2026-11-05",
-      "check_method": "Official opinion PDF on ccne-ethique.fr read: title, adoption dates and recommendations checked.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.ccne-ethique.fr/sites/default/files/2023-01/Avis%20141%20Diagnostic%20M%C3%A9dical%20et%20Intelligence%20Artificielle%20%20Enjeux%20Ethiques.pdf",
       "link_status": "reachable",
       "page_title": "Diagnostic médical et intelligence artificielle : enjeux éthiques – Avis 141 du CCNE / Avis 4 du CNPEN",
       "document_language": "fr",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-8a6ac424b000",
@@ -7164,15 +7245,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-11-05",
-      "checked_date": "2026-11-05",
-      "check_method": "Bulletin officiel page and downloaded service note read: number, date, addressees and AI charter rules checked.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://info.agriculture.gouv.fr/boagri/instruction-2025-364",
       "link_status": "reachable",
       "page_title": "Note de service SG/SNUM/2025-364 – Évolution de l’accès Internet et mise en place d’une charte d’usage des outils numériques et d’une charte sur l’intelligence artificielle",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html"
+      "content_type": "text/html",
+      "fail_streak": 0
     },
     {
       "id": "s-244580308a3c",
@@ -7191,15 +7273,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-11-05",
-      "checked_date": "2026-11-05",
-      "check_method": "Official charter PDF on info.gouv.fr read: title, date (February 2026) and rules checked.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.info.gouv.fr/upload/media/mixed/0001/16/6b3da849c71ae9cb6edb52afc509c90679152424.pdf",
       "link_status": "reachable",
       "page_title": "Charte pour un usage responsable de l'Intelligence artificielle pour les communicants de l'État",
       "document_language": "fr",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-a3801d82021d",
@@ -7218,15 +7301,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-11-05",
-      "checked_date": "2026-11-05",
-      "check_method": "Official Arcep page read: title, publication date (press release 21 May 2026), description and report download link checked.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.arcep.fr/la-regulation/grands-dossiers-thematiques-transverses/lempreinte-environnementale-du-numerique/le-rapport-intelligence-artificielle-generative-quels-defis-environnementaux.html",
       "link_status": "reachable",
       "page_title": "Intelligence artificielle générative : quels défis environnementaux ?",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html"
+      "content_type": "text/html",
+      "fail_streak": 0
     },
     {
       "id": "s-992dbc724209",
@@ -7244,15 +7328,16 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-11-05",
-      "checked_date": "2026-11-05",
-      "check_method": "Official CNIL page read: title, publication date (12 July 2024), update date (17 August 2026) and content checked.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://cnil.fr/fr/entree-en-vigueur-du-reglement-europeen-sur-lia-les-premieres-questions-reponses-de-la-cnil",
       "link_status": "reachable",
       "page_title": "Entrée en vigueur du règlement européen sur l’IA : les premières questions-réponses de la CNIL",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "fail_streak": 0
     },
     {
       "id": "s-63eee0117cfd",
@@ -7271,15 +7356,16 @@
         "public-sector"
       ],
       "date_reviewed": "2026-11-13",
-      "checked_date": "2026-11-13",
-      "check_method": "curl (browser user agent, --max-time 60): DINUM news page and linked 41-page PDF read with pdftotext; economie.gouv.fr DAJ copy 403 to curl and WebFetch.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.numerique.gouv.fr/actualites/achats-publics-guide-pratique-achats-intelligence-artificielle/",
       "link_status": "reachable",
       "page_title": "Achats publics : un premier guide pratique pour accompagner les administrations dans leurs achats d’IA",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html"
+      "content_type": "text/html",
+      "fail_streak": 0
     },
     {
       "id": "s-2fe861bab9ff",
@@ -7298,15 +7384,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-11-13",
-      "checked_date": "2026-11-13",
-      "check_method": "curl (browser user agent, --max-time 60): report page and linked 193-page PDF read with pdftotext.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.conseil-ia-numerique.fr/nos-travaux/proteger-sans-empecher-nos-vulnerabilites-lere-de-lia-generative",
       "link_status": "reachable",
       "page_title": "Protéger sans empêcher : nos vulnérabilités à l’ère de l’IA générative",
       "document_language": "fr",
       "error": null,
-      "content_type": "text/html"
+      "content_type": "text/html",
+      "fail_streak": 0
     }
   ],
   "regional_applicability": [],
@@ -7453,6 +7540,81 @@
     "last_sweep": "2026-11-13"
   },
   "changes": [
+    {
+      "id": "c-3037a46f24d6",
+      "date": "2026-11-15",
+      "recorded": "2026-11-15",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "FRA",
+      "instrument_id": "i-a9b762028ecd",
+      "title": "Useful, Human and Sovereign AI for Public Services ('Notre IA' - State strategy for AI in public administration)",
+      "detail": "Official link restored.",
+      "from": "redirected",
+      "to": "reachable",
+      "source_url": "https://ia.numerique.gouv.fr/documents/27/DP-Notre-IA_160626_1.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-a10ccd14fe06",
+      "date": "2026-11-15",
+      "recorded": "2026-11-15",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "FRA",
+      "instrument_id": "i-d58f70f5d61b",
+      "title": "Guide to the Use of AI for State Public Servants",
+      "detail": "Official link restored.",
+      "from": "redirected",
+      "to": "reachable",
+      "source_url": "https://ia.numerique.gouv.fr/documents/19/STANDAR_Guide_dusage_de_lIA_pour_les_agents_publics_de_lEtat-V2-_PDF.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-4c584a8aec80",
+      "date": "2026-11-15",
+      "recorded": "2026-11-15",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "FRA",
+      "instrument_id": "i-0d73bd99d333",
+      "title": "Charter for Ethical Uses of Artificial Intelligence at the Ministry of the Interior",
+      "detail": "Official link restored.",
+      "from": "redirected",
+      "to": "reachable",
+      "source_url": "https://ia.numerique.gouv.fr/documents/13/Charte_des_usages_ethiques_de_lIA_au_MI.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-700489b365c1",
+      "date": "2026-11-15",
+      "recorded": "2026-11-15",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "FRA",
+      "instrument_id": "i-15d6a3a0fbf1",
+      "title": "Charter for the Reasoned and Responsible Use of Artificial Intelligence (Ministry of Culture)",
+      "detail": "Official link restored.",
+      "from": "redirected",
+      "to": "reachable",
+      "source_url": "https://ia.numerique.gouv.fr/documents/20/charte-usage-raisonne-responsable-intelligence-artificielle-ministere-culture.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-e463f9f44dda",
+      "date": "2026-11-15",
+      "recorded": "2026-11-15",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "FRA",
+      "instrument_id": "i-22b5b92135bb",
+      "title": "Charter on the Use of Artificial Intelligence within the Social Affairs Ministries",
+      "detail": "Official link restored.",
+      "from": "redirected",
+      "to": "reachable",
+      "source_url": "https://ia.numerique.gouv.fr/documents/34/Charte_IA_MSO.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-b4d15c96c546",
       "date": "2026-11-13",

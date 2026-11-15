@@ -105,14 +105,15 @@
       ],
       "date_reviewed": "2026-11-15",
       "checked_date": "2026-11-15",
-      "check_method": "Weekly sweep 2026-11-15: assemblee.bi 'Lois promulguées en 2026' page fetched with a browser user agent (200; lists 'Loi n°1/03 du 10 mars 2026 portant protection des données à caractère personnel' with a PDF link); linked PDF downloaded (200, application/pdf, 32 scanned pages, French and Kirundi) and read as page images.",
-      "http_status": 200,
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": null,
       "final_url": "https://assemblee.bi/?p=31563",
       "link_status": "reachable",
       "page_title": "Lois promulguées en 2026 – Assemblée Nationale du Burundi",
       "document_language": "fr",
-      "error": null,
-      "content_type": "text/html"
+      "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "content_type": "text/html",
+      "fail_streak": 1
     }
   ],
   "regional_applicability": [],

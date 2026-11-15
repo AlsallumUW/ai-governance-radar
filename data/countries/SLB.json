@@ -108,15 +108,16 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-10-13",
-      "check_method": "curl (browser user agent, --max-time 60): full 60-page PDF read (pdftotext); 'Published September 2025 by SIG ICT Services' printed on the inside cover; PDF listed under 'Documents' on the SIG ICT Services page of solomons.gov.sb (Solomon Islands Government portal)",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://solomons.gov.sb/wp-content/uploads/2025/09/SIG-ICTS-Digital_final.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     }
   ],
   "regional_applicability": [],
