@@ -1283,7 +1283,27 @@
       "instrument_id": "i-a287ba7f8b9e",
       "url": "https://www.nmpa.gov.cn/directory/web/nmpa/images/1625713895408075422.docx",
       "date": "2026-11-12"
+    },
+    {
+      "id": "JPN",
+      "instrument_id": "i-871cb9e5e90f",
+      "url": "https://www.meti.go.jp/shingikai/mono_info_service/ai_shakai_jisso/2021070902_report.html",
+      "date": "2026-11-15"
+    },
+    {
+      "id": "JPN",
+      "instrument_id": "i-8cba8baa929c",
+      "url": "https://www.ppc.go.jp/files/pdf/230602_alert_generative_AI_service.pdf",
+      "date": "2026-11-15"
     }
   ],
-  "in_progress": []
+  "in_progress": [
+    {
+      "id": "JPN",
+      "started": "2026-11-15",
+      "records_checked": 59,
+      "corrected": 28,
+      "note": "JPN (102 records; 15 added by the 4 November sweep carry their own verification date, so 87 need checking) is verified in parts across runs, grouped by source host. Part 1 (2026-11-15): 61 national records whose source is e-Gov (laws.e-gov.go.jp), AISI, NIHS, the Agency for Cultural Affairs, the Cabinet Secretariat (cas.go.jp), the Children and Families Agency, the Digital Agency, FDMA, FSA, JPO, MAFF, METI, MEXT, MLIT, MOD, MOJ, PMDA and PPC, read from the cloud (e-Gov law data used for promulgation, revision and enforcement dates); 59 checked, 28 corrected, 2 unreachable (the METI Governance Guidelines ver. 1.0 report page and PDF return empty content; the PPC generative-AI alert annex 1 PDF fails; listed under unreachable). Next: the remaining national records (MIC soumu.go.jp and Cabinet Office www8.cao.go.jp, 11) and the 15 prefectural and municipal records (Tokyo, Aichi, Hyogo, Chiba, Osaka, Kobe, Sapporo, Sendai), then retry the unreachable ones; add JPN to done only when every record is checked."
+    }
+  ]
 }
