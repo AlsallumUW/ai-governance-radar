@@ -979,6 +979,14 @@
       "corrected": 135,
       "checked": 444,
       "note": "USA (484 records) is verified in parts across runs. Next runs continue with USA records whose verification_date is before 2026-10-27 (campaign start); add USA to done only when every record is checked. Part 1 (2026-11-01): national records of the President/White House, OMB, Congress, NIST, OPM and the NSTC (48). Part 2 (2026-11-02): national records of issuers from 'Assistant Secretary for Technology Policy' to 'Food and Drug Administration' in alphabetical order (64; 54 checked, 10 unreachable and listed under unreachable). Part 3 (2026-11-02): remaining national records from 'General Services Administration' onward (35) and the subnational records of Alabama, Alaska, Arizona and Arkansas (14); 49 checked, 30 corrected, none unreachable (two parallel checks of the national records were merged). Part 4 (2026-11-02): California (56 records: 40 statutes checked against leginfo bill history and chaptered text, executive orders, regulations, court rule, guidance and AG advisories); 56 checked, 4 corrected. Part 5 (2026-11-02): Colorado (13 records; 13 checked, 2 corrected). Part 6 (2026-11-03): Connecticut to Louisiana in alphabetical order of subnational_unit, including the District of Columbia and Los Angeles (63 records); 45 checked, 20 corrected, 18 unreachable and listed under unreachable (Hawaii legislature texts, Idaho, Illinois General Assembly public acts, Kentucky legislature acts). Part 7 (2026-11-08): Maine to New Hampshire in alphabetical order of subnational_unit (60 records); 56 checked, 16 corrected, 4 unreachable and listed under unreachable (Maryland Insurance Administration and DoIT pages, scanned Montana and Mississippi executive orders). Part 8 (2026-11-08): New Jersey to Rhode Island in alphabetical order of subnational_unit, including New York City (61 records); 59 checked, 24 corrected, 2 unreachable and listed under unreachable (scanned Oklahoma Executive Order 2023-24 and Oregon Executive Order 23-26); Oklahoma legislature texts and the Pennsylvania Bulletin were read in the browser. Records added by the 8 November deep sweep carry their own verification date. Part 9 (2026-11-09): San Diego to Wyoming in alphabetical order of subnational_unit (66 records); 55 checked, 17 corrected, 11 unreachable and listed under unreachable (Utah legislature bill pages and the Utah Department of Commerce guidance letter, which do not open from the cloud or the desktop browser; Wisconsin legislature documents). Texas legislature pages and the Texas Register, Tennessee public chapters, the West Virginia insurance bulletin and bill history, the South Dakota action logs, Virginia LIS and Wyoming bill pages were read in the browser. Every USA record has now been attempted. Next: retry the records listed under unreachable for USA in the desktop browser, then add USA to done and move on to CHN. Part 10 (2026-11-10): the 44 USA records listed under unreachable were retried in the desktop browser; 10 were read (Veterans Affairs pages and framework, the DHS AI directive, the EPA plan on EPA's January 2025 snapshot site, the Mississippi, Montana and Oregon executive orders, rendered page by page) and 4 corrected; the Department of Labor M-24-10 compliance plan, whose official PDF returns 404, was moved to leads. 34 remain listed under unreachable: Commerce and HUD (Cloudflare block), Hawaii, Illinois, Idaho, Kentucky, Maryland, Utah and Wisconsin legislature or agency sites (do not open from the cloud or the desktop browser). The Kentucky consumer privacy act's status wording was corrected to past tense. USA closed."
+    },
+    {
+      "id": "CHN",
+      "date": "2026-11-15",
+      "records": 169,
+      "corrected": 42,
+      "checked": 162,
+      "note": "CHN (169 records) is verified in parts across runs, grouped by source host. Part 1 (2026-11-10): the 21 records whose source is the central government portal (www.gov.cn), read in the desktop browser; 21 checked, 6 corrected. Part 2 (2026-11-12): the 60 records whose source is www.cac.gov.cn (21), www.tc260.org.cn (20), openstd.samr.gov.cn (11, checked with the matching std.samr.gov.cn entries) and www.miit.gov.cn (8), read in the desktop browser; 60 checked, 17 corrected, none unreachable. Part 3 (2026-11-12, second run): the 36 remaining national records (NPC, MOST, MFA, NDRC, MOT, SPC, PBOC, NFRA, NHC, MOE, NDA, SAMR, CNIPA, MOFCOM, MOF and official reprints) and 2 Hong Kong SFC circulars, read in the desktop browser; 37 checked, 7 corrected, 1 unreachable (the NMPA AI medical software guideline attachment on nmpa.gov.cn returns 403 in the desktop browser; listed under unreachable). The run stopped early when the desktop browser disconnected. Next: the 8 remaining Hong Kong SAR records (Judiciary, FSTB, PCPD, HKMA and MPFA PDFs), then the other subnational records (Shanghai, Beijing, Shenzhen, Guangdong and the rest); add CHN to done only when every record is checked. Part 4 (2026-11-15): the 8 remaining Hong Kong SAR records (Judiciary, FSTB, PCPD, HKMA and MPFA PDFs) and the 38 remaining subnational records (Shanghai, Beijing, Shenzhen, Guangdong, Zhejiang, Hangzhou, Suzhou, Jiangsu, Hubei, Wuhan, Sichuan, Tianjin, Chongqing), read in the desktop browser; 44 checked, 12 corrected, 2 unreachable (the two Chongqing municipal government pages on www.cq.gov.cn return a WAF block in the desktop browser and are disallowed to the cloud fetcher; listed under unreachable). Corrections were mainly signature dates used as publication dates (6 records, with their publication world events moved to the portal posting date) and unsupported or research-step wording. The 4 records verified on 2026-11-11 carry their own verification date. CHN closed."
     }
   ],
   "unreachable": [
@@ -1275,15 +1283,19 @@
       "instrument_id": "i-a287ba7f8b9e",
       "url": "https://www.nmpa.gov.cn/directory/web/nmpa/images/1625713895408075422.docx",
       "date": "2026-11-12"
-    }
-  ],
-  "in_progress": [
+    },
     {
       "id": "CHN",
-      "started": "2026-11-10",
-      "records_checked": 118,
-      "corrected": 30,
-      "note": "CHN (169 records) is verified in parts across runs, grouped by source host. Part 1 (2026-11-10): the 21 records whose source is the central government portal (www.gov.cn), read in the desktop browser; 21 checked, 6 corrected. Part 2 (2026-11-12): the 60 records whose source is www.cac.gov.cn (21), www.tc260.org.cn (20), openstd.samr.gov.cn (11, checked with the matching std.samr.gov.cn entries) and www.miit.gov.cn (8), read in the desktop browser; 60 checked, 17 corrected, none unreachable. Part 3 (2026-11-12, second run): the 36 remaining national records (NPC, MOST, MFA, NDRC, MOT, SPC, PBOC, NFRA, NHC, MOE, NDA, SAMR, CNIPA, MOFCOM, MOF and official reprints) and 2 Hong Kong SFC circulars, read in the desktop browser; 37 checked, 7 corrected, 1 unreachable (the NMPA AI medical software guideline attachment on nmpa.gov.cn returns 403 in the desktop browser; listed under unreachable). The run stopped early when the desktop browser disconnected. Next: the 8 remaining Hong Kong SAR records (Judiciary, FSTB, PCPD, HKMA and MPFA PDFs), then the other subnational records (Shanghai, Beijing, Shenzhen, Guangdong and the rest); add CHN to done only when every record is checked."
+      "instrument_id": "i-f808bd5fad12",
+      "url": "https://www.cq.gov.cn/zwgk/zfxxgkml/szfwj/xzgfxwj/szfbgt/202512/t20251217_15251374.html",
+      "date": "2026-11-15"
+    },
+    {
+      "id": "CHN",
+      "instrument_id": "i-7eb8e01567cd",
+      "url": "https://www.cq.gov.cn/zwgk/zfxxgkml/szfwj/qtgw/202608/t20260821_15963042.html",
+      "date": "2026-11-15"
     }
-  ]
+  ],
+  "in_progress": []
 }
