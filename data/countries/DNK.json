@@ -123,7 +123,7 @@
       "first_recorded": "2026-10-06",
       "last_changed": null,
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "redirected",
+      "link_status": "reachable",
       "document_access_type": "original_government_document",
       "source_id": "s-5f8b57eedad3",
       "evidence_reference": "curl (browser user agent, --max-time 60): 39-page PDF read (pdftotext); cover dated Oktober 2023; redirects to cdn.datatilsynet.dk"
@@ -665,7 +665,7 @@
       "first_recorded": "2026-10-12",
       "last_changed": null,
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "redirected",
+      "link_status": "reachable",
       "document_access_type": "original_government_document",
       "source_id": "s-23db756ad81a",
       "evidence_reference": "curl (browser user agent, --max-time 60): 8-page PDF read (pdftotext), dated 8. januar 2024 (redirects to digst.dk/media/2hxb1v0s/...)"
@@ -715,7 +715,7 @@
       "first_recorded": "2026-10-12",
       "last_changed": null,
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "redirected",
+      "link_status": "reachable",
       "document_access_type": "original_government_document",
       "source_id": "s-ebe336f6a6a3",
       "evidence_reference": "curl (browser user agent, --max-time 60): 8-page PDF read (pdftotext), note dated 11. marts 2024 (redirects to digst.dk/media/5fijp1ag/...)"
@@ -767,7 +767,7 @@
       "first_recorded": "2026-10-12",
       "last_changed": null,
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "redirected",
+      "link_status": "reachable",
       "document_access_type": "original_government_document",
       "source_id": "s-810b26553c05",
       "evidence_reference": "curl (browser user agent, --max-time 60): 14-page PDF read (pdftotext), dated 29. maj 2024 (redirects to cdn.finanstilsynet.dk)"
@@ -818,7 +818,7 @@
       "first_recorded": "2026-10-12",
       "last_changed": "2026-10-13",
       "verification_level": "primary_source_located",
-      "link_status": "redirected",
+      "link_status": "reachable",
       "document_access_type": "original_government_document",
       "source_id": "s-e1e9ca2a9901",
       "evidence_reference": "curl (browser user agent, --max-time 60): 36-page PDF read (pdftotext); no date printed in the document, PDF created 25 September 2024 (redirects to cdn.finanstilsynet.dk) Status note: Publication date corrected from 2024-09 to 2024-09-25 (date audit 2026-10-13): Finanstilsynet news item dated '25-09-2024' ('Senest opdateret 25-09-2024'), which links the report PDF ('Læs hele rapporten' -> /Media/638628434082426731/...)."
@@ -869,7 +869,7 @@
       "first_recorded": "2026-10-12",
       "last_changed": null,
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "redirected",
+      "link_status": "reachable",
       "document_access_type": "original_government_document",
       "source_id": "s-a449fca93017",
       "evidence_reference": "curl (browser user agent, --max-time 60): 37-page PDF read (pdftotext), cover dated JANUAR, 2020; sikkerdigital.dk is the government's joint information-security portal (Agency for Digital Government, Danish Business Authority, Centre for Cyber Security); the Agency's companion analysis on digst.dk refers readers to sikkerdigital.dk for this guidance"
@@ -1432,15 +1432,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): 39-page PDF read (pdftotext); cover dated Oktober 2023; redirects to cdn.datatilsynet.dk",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://cdn.datatilsynet.dk/datatilsynet/Media/638321084132236143/Offentlige%20myndigheders%20brug%20af%20kunstig%20intelligens%20-%20Inden%20I%20g%C3%A5r%20i%20gang.pdf",
-      "link_status": "redirected",
+      "link_status": "reachable",
       "page_title": null,
       "document_language": "da",
-      "error": null,
-      "content_type": "application/pdf"
+      "error": "Served from a file host or CDN: cdn.datatilsynet.dk",
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-c424e05f3b2d",
@@ -1460,15 +1461,16 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): full 74-page PDF read (pdftotext); cover dated MARTS 2019; same document also on regeringen.dk (https://regeringen.dk/media/1kmjh4pv/ai-strategi_web.pdf)",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
-      "final_url": "https://www.em.dk/Media/638423113631246368/National%20strategi%20for%20kunstig%20intelligens_2019.pdf",
+      "final_url": "https://cdn2.gopublic.dk/erhvervsministeriet/Media/638423113631246368/National%20strategi%20for%20kunstig%20intelligens_2019.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "da",
-      "error": null,
-      "content_type": "application/pdf"
+      "error": "Served from a file host or CDN: cdn2.gopublic.dk",
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-c24dce40f64b",
@@ -1488,15 +1490,16 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): 11-page agreement PDF read (pdftotext), dated 8 februar 2024; ministry press page of 08-02-2024 read",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
-      "final_url": "https://www.digmin.dk/Media/639076216326687651/Aftale%20om%20en%20ambiti%c3%b8s%20og%20ansvarlig%20strategi%20for%20Danmarks%20digitale%20udvikling-a.pdf",
+      "final_url": "https://cdn2.gopublic.dk/digmin/Media/639076216326687651/Aftale%20om%20en%20ambiti%C3%B8s%20og%20ansvarlig%20strategi%20for%20Danmarks%20digitale%20udvikling-a.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "da",
-      "error": null,
-      "content_type": "application/pdf"
+      "error": "Served from a file host or CDN: cdn2.gopublic.dk",
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-0718d65760e4",
@@ -1516,15 +1519,16 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-19",
-      "check_method": "curl (browser user agent, --max-time 60): official English edition (28 pages, DECEMBER 2024) read in full via pdftotext; the Agency for Digital Government's English AI-strategies page links it; Danish edition on ft.dk (DIU Alm.del bilag 44) blocked by a bot challenge",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
-      "final_url": "https://www.english.digmin.dk/Media/638719220318136690/Stategic%20Approach%20to%20Artificial%20Intelligence.pdf",
+      "final_url": "https://cdn2.gopublic.dk/digmin/Media/638719220318136690/Stategic%20Approach%20to%20Artificial%20Intelligence.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
-      "error": null,
-      "content_type": "application/pdf"
+      "error": "Served from a file host or CDN: cdn2.gopublic.dk",
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-12ac1039ee0e",
@@ -1543,15 +1547,16 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): Retsinformation PDF (api/pdf/249582) read in full; LOV nr 467 af 14/05/2025 (Gældende); § 12 entry into force 2 August 2025",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.retsinformation.dk/eli/lta/2025/467",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "da",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-73a1849784b2",
@@ -1570,15 +1575,16 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): Retsinformation PDF (api/pdf/241483) read; LBK nr 289 af 08/03/2024 (Gældende); § 46 original entry into force 25 May 2018",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.retsinformation.dk/eli/lta/2024/289",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "da",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-13fa75b636ee",
@@ -1598,15 +1604,16 @@
         "sectoral"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): Retsinformation PDF (api/pdf/249845) read; LOV nr 674 af 17/06/2025 (Gældende); in force 1 July 2025; bill L 152 (2024-25) introduced 26 February 2025",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.retsinformation.dk/eli/lta/2025/674",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "da",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-cd09796bae46",
@@ -1626,15 +1633,16 @@
         "sectoral"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): Retsinformation PDF (api/pdf/257851) read; BEK nr 822 af 21/09/2026 (Gældende); § 10 in force 1 October 2026; BEK 813 af 21/06/2025 shown as 'Historisk' with BEK 822 listed as later change",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.retsinformation.dk/eli/lta/2026/822",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "da",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-547ef898eae7",
@@ -1654,15 +1662,16 @@
         "sectoral"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): Retsinformation PDF (api/pdf/250013) read; BEK nr 868 af 23/06/2025 (Gældende); § 12 in force 1 July 2025",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.retsinformation.dk/eli/lta/2025/868",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "da",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-532d718b71ce",
@@ -1682,15 +1691,16 @@
         "sectoral"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): Retsinformation PDF (api/pdf/254853) read; BEK nr 100 af 20/01/2026 (Gældende); § 12 in force 1 February 2026",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.retsinformation.dk/eli/lta/2026/100",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "da",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-2682cf853866",
@@ -1710,15 +1720,16 @@
         "sectoral"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): Retsinformation PDF (api/pdf/254854) read; BEK nr 101 af 20/01/2026 (Gældende); § 3 in force 1 February 2026",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.retsinformation.dk/eli/lta/2026/101",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "da",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-23db756ad81a",
@@ -1737,15 +1748,16 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-19",
-      "check_method": "curl (browser user agent, --max-time 60): 8-page PDF read (pdftotext), dated 8. januar 2024 (redirects to digst.dk/media/2hxb1v0s/...)",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://digst.dk/media/2hxb1v0s/guide-til-offentlige-myndigheder-om-ansvarlig-anvendelse-af-generativ-kunstig-intelligens.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "da",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-ebe336f6a6a3",
@@ -1763,15 +1775,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-19",
-      "check_method": "curl (browser user agent, --max-time 60): 8-page PDF read (pdftotext), note dated 11. marts 2024 (redirects to digst.dk/media/5fijp1ag/...)",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://digst.dk/media/5fijp1ag/110324-guide-til-virksomheder-om-generativ-kunstig-intelligens.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "da",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-810b26553c05",
@@ -1791,15 +1804,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): 14-page PDF read (pdftotext), dated 29. maj 2024 (redirects to cdn.finanstilsynet.dk)",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://cdn.finanstilsynet.dk/finanstilsynet/Media/638541988278249707/God_praksis_300524.pdf",
-      "link_status": "redirected",
+      "link_status": "reachable",
       "page_title": null,
       "document_language": "da",
-      "error": null,
-      "content_type": "application/pdf"
+      "error": "Served from a file host or CDN: cdn.finanstilsynet.dk",
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-e1e9ca2a9901",
@@ -1818,15 +1832,16 @@
         "index-readiness"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-12",
-      "check_method": "curl (browser user agent, --max-time 60): 36-page PDF read (pdftotext); no date printed in the document, PDF created 25 September 2024 (redirects to cdn.finanstilsynet.dk)",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://cdn.finanstilsynet.dk/finanstilsynet/Media/638628434082426731/Rapport%20om%20brugen%20af%20kunstig%20intelligens%20i%20den%20finansielle%20sektor.pdf",
-      "link_status": "redirected",
+      "link_status": "reachable",
       "page_title": null,
       "document_language": "da",
-      "error": null,
-      "content_type": "application/pdf"
+      "error": "Served from a file host or CDN: cdn.finanstilsynet.dk",
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-a449fca93017",
@@ -1845,15 +1860,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-19",
-      "check_method": "curl (browser user agent, --max-time 60): 37-page PDF read (pdftotext), cover dated JANUAR, 2020; sikkerdigital.dk is the government's joint information-security portal (Agency for Digital Government, Danish Business Authority, Centre for Cyber Security); the Agency's companion analysis on digst.dk refers readers to sikkerdigital.dk for this guidance",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
-      "final_url": "https://www.sikkerdigital.dk/media/6839/vejledning-tiltag-til-at-sikre-brugen-af-kunstig-intelligens-2020.pdf",
+      "final_url": "https://cdn2.gopublic.dk/sikkerdigital/media/6839/vejledning-tiltag-til-at-sikre-brugen-af-kunstig-intelligens-2020.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "da",
-      "error": null,
-      "content_type": "application/pdf"
+      "error": "Served from a file host or CDN: cdn2.gopublic.dk",
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-7966ff243838",
@@ -1872,8 +1888,8 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-11-07",
-      "checked_date": "2026-11-08",
-      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions); replacement located by web search, same document",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://uvm.dk/media/dylly3ye/250626-tilgaengeliggjort-anbefalinger-om-brug-af-generativ-ai-i-undervisningen-i-folkeskolen.pdf",
       "link_status": "reachable",
@@ -1900,8 +1916,8 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-11-07",
-      "checked_date": "2026-11-08",
-      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions); replacement located by web search, same document",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://uvm.dk/media/d4sdnkh2/250113-generativ-kunstig-intelligens-paa-gymnasiale-uddannelser-rettet-051224-tilgaengelig.pdf",
       "link_status": "reachable",
@@ -1928,8 +1944,8 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-11-07",
-      "checked_date": "2026-11-08",
-      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout (GitHub Actions); replacement located by web search, same document",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://uvm.dk/media/ddcfzvmm/250113-generativ-kunstig-intelligens-i-grundfag-paa-erhvervsuddannelser-rettet-051224-tilgaengelig.pdf",
       "link_status": "reachable",
@@ -1956,15 +1972,16 @@
         "public-sector"
       ],
       "date_reviewed": "2026-11-07",
-      "checked_date": "2026-11-07",
-      "check_method": "deep-sweep 2026-11-07: WebFetch of the digmin.dk-hosted PDF (from WebSearch 'site:digst.dk kunstig intelligens vejledning offentlige myndigheder'). Title 'Digitaliseringsrådets operative anbefalinger til kunstig intelligens'; 'Dato 20-02-2024'. Council composition not stated in the PDF; reviewer may confirm the council's status on digmin.dk.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
-      "final_url": "https://admin.digmin.dk/Media/638465352300512004/Digitaliseringsr%c3%a5dets%20operative%20anbefalinger%20om%20kunstig%20intelligens.pdf",
+      "final_url": "https://cdn2.gopublic.dk/digmin/Media/638465352300512004/Digitaliseringsr%C3%A5dets%20operative%20anbefalinger%20om%20kunstig%20intelligens.pdf",
       "link_status": "reachable",
       "page_title": "Digitaliseringsrådets operative anbefalinger til kunstig intelligens",
       "document_language": "da",
-      "error": null,
-      "content_type": "application/pdf"
+      "error": "Served from a file host or CDN: cdn2.gopublic.dk",
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-faf76a4ffc36",
@@ -1985,15 +2002,16 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-11-07",
-      "checked_date": "2026-11-07",
-      "check_method": "deep-sweep 2026-11-07: WebFetch of Høringsportalen document storage PDF (from WebSearch). 'UDKAST'; 'Forslag til Lov om ændring af ældreloven'; subtitle 'Udvikling og anvendelse af kunstig intelligens og lignende digitale løsninger i ældreplejen'; § 38 a 'Ældreministeren kan fastsætte regler om udvikling og anvendelse af kunstig intelligens'; consultation 21 Nov–19 Dec 2025; entry into force 1 July 2026. Ideally cite the hoeringsportalen.dk case page as source_url (not reached).",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://prodstoragehoeringspo.blob.core.windows.net/eb6309be-5b9a-4114-a631-d54e61b68fac/Udkast%20til%20lovforslag%20om%20kunstig%20intelligens%20i%20%C3%A6ldreplejen.pdf",
       "link_status": "reachable",
       "page_title": "Forslag til Lov om ændring af ældreloven (Udvikling og anvendelse af kunstig intelligens og lignende digitale løsninger i ældreplejen)",
       "document_language": "da",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-9297be68453b",
@@ -2014,15 +2032,16 @@
         "transparency"
       ],
       "date_reviewed": "2026-11-07",
-      "checked_date": "2026-11-07",
-      "check_method": "deep-sweep 2026-11-07: WebFetch of Retsinformation PDF (from WebSearch). Header 'Lovtidende A 2025 Udgivet den 26. juni 2025'; '21. juni 2025. Nr. 813.'; § 1(1) 'kan ... anvende kunstig intelligens eller lignende digitale løsninger'; § 6 publication on su.dk; § 10 'Bekendtgørelsen træder i kraft den 1. juli 2025.' Consultation letter (Høringsportalen, 16 May 2025, case 2025-25679) also read.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.retsinformation.dk/eli/lta/2025/813/pdf",
       "link_status": "reachable",
       "page_title": "Bekendtgørelse om Uddannelses- og Forskningsstyrelsens anvendelse af kunstig intelligens eller lignende digitale løsninger til at understøtte sagsbehandling efter SU-loven",
       "document_language": "da",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-b0f43dd87942",
@@ -2041,15 +2060,16 @@
         "government-governance"
       ],
       "date_reviewed": "2026-11-13",
-      "checked_date": "2026-11-13",
-      "check_method": "curl (browser user agent, --max-time 60): PDF read with pdftotext; issuer page read.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://digst.dk/media/03kdcicv/hovedvejledning-om-de-forbudte-former-for-ai-praksis-efter-ai-forordningens-artikel-5.pdf",
       "link_status": "reachable",
       "page_title": "Hovedvejledning om de forbudte former for AI-praksis efter AI-forordningens artikel 5",
       "document_language": "da",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     },
     {
       "id": "s-edfc45dac464",
@@ -2068,15 +2088,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-11-13",
-      "checked_date": "2026-11-13",
-      "check_method": "curl (browser user agent, --max-time 60): PDF read with pdftotext; issuer page read.",
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://digst.dk/media/zo3davee/ai-faerdigheder-vejledning-feb.pdf",
       "link_status": "reachable",
       "page_title": "Vejledning om AI-færdigheder",
       "document_language": "da",
       "error": null,
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "fail_streak": 0
     }
   ],
   "regional_applicability": [],
@@ -2173,6 +2194,51 @@
     "last_sweep": "2026-11-13"
   },
   "changes": [
+    {
+      "id": "c-fb2fe8f2dcea",
+      "date": "2026-11-15",
+      "recorded": "2026-11-15",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "DNK",
+      "instrument_id": "i-c8c29815b166",
+      "title": "Public authorities' use of artificial intelligence – Before you get started",
+      "detail": "Official link restored.",
+      "from": "redirected",
+      "to": "reachable",
+      "source_url": "https://www.datatilsynet.dk/Media/638321084132236143/Offentlige%20myndigheders%20brug%20af%20kunstig%20intelligens%20-%20Inden%20I%20g%C3%A5r%20i%20gang.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-b5042946b536",
+      "date": "2026-11-15",
+      "recorded": "2026-11-15",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "DNK",
+      "instrument_id": "i-0a7bc9a82fae",
+      "title": "Good practice in the use of artificial intelligence",
+      "detail": "Official link restored.",
+      "from": "redirected",
+      "to": "reachable",
+      "source_url": "https://www.finanstilsynet.dk/Media/638541988278249707/God_praksis_300524.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-6c825127b46f",
+      "date": "2026-11-15",
+      "recorded": "2026-11-15",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "DNK",
+      "instrument_id": "i-0063142f53a6",
+      "title": "Use of artificial intelligence in the financial sector in 2024",
+      "detail": "Official link restored.",
+      "from": "redirected",
+      "to": "reachable",
+      "source_url": "https://www.finanstilsynet.dk/Media/638628434082426731/Rapport%20om%20brugen%20af%20kunstig%20intelligens%20i%20den%20finansielle%20sektor.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-f803d105bdcf",
       "date": "2026-11-13",

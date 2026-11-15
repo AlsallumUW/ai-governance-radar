@@ -68,7 +68,7 @@
       "first_recorded": "2026-10-12",
       "last_changed": null,
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
+      "link_status": "broken",
       "document_access_type": "original_government_document",
       "source_id": "s-5f1346143f3b",
       "evidence_reference": "curl (browser user agent, --max-time 60): Act PDF (46-page scanned Bulletin copy) read page images (arrangement of sections, long title, date of assent 24.10.2024, s.49 on p.23); consolidated HTML text on the e-Laws principal-legislation page read in full for ss.2 ('profiling'), 49 and 65; commencement confirmed from S.I. No. 4 of 2025 (Data Protection Act (Date of Commencement) Order, 2025) PDF. local-retry-2026-10-18: official Act PDF re-fetched via curl (HTTP 200, 46 pages, scanned) and e-Laws consolidated Data Protection page re-fetched (HTTP 200); link confirmed reachable, fields unchanged."
@@ -106,15 +106,16 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-10-18",
-      "check_method": "local-retry-2026-10-18: curl with browser user agent; official Act PDF returned HTTP 200 (application/pdf, 46 pages); e-Laws consolidated principal-legislation page also HTTP 200. Earlier check (2026-10-12): curl (browser user agent, --max-time 60): Act PDF (46-page scanned Bulletin copy) read page images (arrangement of sections, long title, date of assent 24.10.2024, s.49 on p.23); consolidated HTML text on the e-Laws principal-legislation page read in full for ss.2 ('profiling'), 49 and 65; commencement confirmed from S.I. No. 4 of 2025 (Data Protection Act (Date of Commencement) Order, 2025) PDF.",
-      "http_status": 200,
+      "checked_date": "2026-11-15",
+      "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
+      "http_status": 404,
       "final_url": "https://e-laws.botswanalaws.com/PDF/Bulletin/Botswana2024pdf/018.pdf",
-      "link_status": "reachable",
+      "link_status": "broken",
       "page_title": null,
       "document_language": "en",
-      "error": null,
-      "content_type": "application/pdf"
+      "error": "HTTP Error 404: Not Found",
+      "content_type": "application/pdf",
+      "fail_streak": 0
     }
   ],
   "regional_applicability": [],
@@ -213,6 +214,21 @@
     "last_sweep": "2026-11-15"
   },
   "changes": [
+    {
+      "id": "c-afa082e1b383",
+      "date": "2026-11-15",
+      "recorded": "2026-11-15",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "BWA",
+      "instrument_id": "i-75555aae26c1",
+      "title": "Data Protection Act, 2024",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "broken",
+      "source_url": "https://e-laws.botswanalaws.com/PDF/Bulletin/Botswana2024pdf/018.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-00772dd8ce54",
       "date": "2026-10-12",
