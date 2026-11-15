@@ -10,16 +10,111 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": "No official Burundian AI governance document has yet been published in full on the government websites that were checked. The Ministry of Finance, Budget and Digital Economy leads digital policy and reports holding a workshop in November 2025 to assess the national AI landscape. A national AI strategy for 2025-2030 is listed as validated in April 2026 (not yet verified from the official text), a personal data protection law was adopted by parliament in 2026 and a national data governance strategy was validated in 2025, but no official text of any of them was found; all three are listed as leads.",
+    "summary": "Burundi's main recorded AI-relevant instrument is Law No. 1/03 of 10 March 2026 on the protection of personal data, which is in force and sets rules on decisions based on automated processing, including an individual explanation and the right to a new decision taken by a human. The Ministry of Finance, Budget and Digital Economy leads digital policy and reports holding a workshop in November 2025 to assess the national AI landscape. A national AI strategy for 2025-2030 is reported as validated in April 2026 and a national data governance strategy was validated in 2025, but no official text of either was found, so both are listed as leads.",
     "lead_institutions": [
-      "Ministry of Finance, Budget and Digital Economy"
+      "Ministry of Finance, Budget and Digital Economy",
+      "National Assembly of Burundi"
     ],
     "last_deep_review": "2026-10-12",
-    "review_notes": "On 18 October 2026 the websites of the Presidency, the Ministry of Finance, Budget and Digital Economy, the Senate and the telecom regulator were searched again and none of them yet publishes the AI strategy, the data governance strategy or the data protection law. The National Assembly website and the legislation portal could still not be accessed, so the three documents remain listed as leads."
+    "review_notes": "The websites of the Presidency, the National Assembly, the legislation portal, the Senate and the telecom regulator were searched; the 2026 personal data protection law is recorded from the text published by the National Assembly. The national AI strategy and the national data governance strategy have no published official text yet, so they remain listed as leads."
   },
-  "instruments": [],
-  "organizations": [],
-  "sources": [],
+  "instruments": [
+    {
+      "id": "i-a9b1a9f0a357",
+      "official_title": "Loi n°1/03 du 10 mars 2026 portant protection des données à caractère personnel",
+      "english_title": "Law No. 1/03 of 10 March 2026 on the protection of personal data",
+      "issuing_authority": "Parliament of Burundi (adopted); promulgated by the President of the Republic",
+      "authority_type": "legislature",
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "category": "data-privacy",
+      "subcategory": null,
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2026-03-10",
+      "effective_date": "2026-03-10",
+      "last_amended_date": null,
+      "current_status": "Promulgated at Gitega on 10 March 2026 (signed by President Évariste Ndayishimiye, countersigned by the Minister of Justice). Art. 55: in force on the day of promulgation. Art. 53 gives existing processing one year (State, public bodies, local authorities and bodies with a public-service mission) or six months (others) from entry into force to comply. The text is read from the copy published by the National Assembly on its 'Lois promulguées en 2026' page; the Official Bulletin reference was not found.",
+      "summary": "Burundi's first general personal data protection law, issued in French and Kirundi. It sets processing principles and data-subject rights (information, access, rectification, erasure, objection and portability), requires major controllers to register with the personal data protection body and appoint a data protection officer, and sets fines for unlawful processing of sensitive data such as racial or ethnic origin, opinions, health or biometric data (art. 50). Decisions based on automated processing that produce legal or significant effects are allowed only when provided by law with safeguards, with the person's consent, or when strictly necessary for a contract; they must come with an individual explanation, and the person may obtain a new reasoned decision taken by a human that fully replaces the first (arts. 19-20).",
+      "ai_governance_relevance": "Governs the personal data used to train and run AI systems and sets explicit rules on automated decision-making: notice of the automated logic, limited legal bases, an individual explanation and the right to a fresh human decision (arts. 19-20).",
+      "source_url": "https://assemblee.bi/?p=31563",
+      "official_pdf_url": "https://assemblee.bi/wp-content/uploads/2026/03/n%C2%B003-du-10-mars-2026.pdf",
+      "official_webpage_url": "https://assemblee.bi/?p=31563",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_publication",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "organization_id": "o-78c7add5a506",
+      "publisher_name": "National Assembly of Burundi",
+      "jurisdiction_id": "BDI",
+      "government_level": "national",
+      "subnational_unit": null,
+      "scope": "Burundi (national)",
+      "technology_scope": [
+        "personal data processing",
+        "automated decision-making"
+      ],
+      "metadata_gaps": [
+        "Official Bulletin (Bulletin officiel du Burundi) reference not found"
+      ],
+      "language": "fr",
+      "verification_date": "2026-11-15",
+      "first_recorded": "2026-11-15",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-00cd55e2105c",
+      "evidence_reference": "Weekly sweep 2026-11-15: assemblee.bi 'Lois promulguées en 2026' page (posted by the Assembly's webmaster, 13 July 2026) lists 'Loi n°1/03 du 10 mars 2026 portant protection des données à caractère personnel' and links the signed text (32-page bilingual French/Kirundi scan, 'Cabinet du Président'). Read as images: p.1 title and number; p.17 arts. 19-20 (automated decisions); pp.19-22 arts. 23-31 (rights); p.23 arts. 34-37 (major controllers, register, DPO); p.31 arts. 50-53; p.32 arts. 54-55 ('La présente loi entre en vigueur le jour de sa promulgation') and 'Fait à Gitega, le 10 mars 2026', Évariste Ndayishimiye. National Assembly news of 30 January 2026 (assemblee.bi/?p=31493) reports the plenary analysis and adoption of the bill."
+    }
+  ],
+  "organizations": [
+    {
+      "id": "o-78c7add5a506",
+      "jurisdiction_id": "BDI",
+      "name": "National Assembly of Burundi",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Lower house of Parliament; adopted the personal data protection bill on 15 January 2026 and publishes the texts of promulgated laws on its 'Lois promulguées' pages, including Law No. 1/03 of 10 March 2026 on personal data protection.",
+      "source_url": "https://assemblee.bi/",
+      "authority_type": "legislature",
+      "government_level": "national"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s-00cd55e2105c",
+      "url": "https://assemblee.bi/?p=31563",
+      "jurisdiction_ids": [
+        "BDI"
+      ],
+      "source_institutions": [
+        "National Assembly of Burundi"
+      ],
+      "instrument_ids": [
+        "i-a9b1a9f0a357"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-11-15",
+      "checked_date": "2026-11-15",
+      "check_method": "Weekly sweep 2026-11-15: assemblee.bi 'Lois promulguées en 2026' page fetched with a browser user agent (200; lists 'Loi n°1/03 du 10 mars 2026 portant protection des données à caractère personnel' with a PDF link); linked PDF downloaded (200, application/pdf, 32 scanned pages, French and Kirundi) and read as page images.",
+      "http_status": 200,
+      "final_url": "https://assemblee.bi/?p=31563",
+      "link_status": "reachable",
+      "page_title": "Lois promulguées en 2026 – Assemblée Nationale du Burundi",
+      "document_language": "fr",
+      "error": null,
+      "content_type": "text/html"
+    }
+  ],
   "regional_applicability": [],
   "coverage_audit": {
     "jurisdiction_id": "BDI",
@@ -36,9 +131,11 @@
       "risk-assurance",
       "transparency"
     ],
-    "categories_with_findings": [],
+    "categories_with_findings": [
+      "data-privacy",
+      "binding-law"
+    ],
     "categories_where_no_material_was_found": [
-      "binding-law",
       "strategy",
       "government-governance",
       "ethics",
@@ -46,7 +143,6 @@
       "public-sector",
       "procurement",
       "cyber-security",
-      "data-privacy",
       "transparency",
       "standards",
       "sandbox",
@@ -96,7 +192,10 @@
       "Burundi conseil des ministres projet de loi protection des données à caractère personnel",
       "finances.gov.bi \"intelligence artificielle\" stratégie nationale validation 2026",
       "web (gov.bi domains): intelligence artificielle",
-      "web: Burundi intelligence artificielle stratégie nationale octobre 2026"
+      "web: Burundi intelligence artificielle stratégie nationale octobre 2026",
+      "Weekly sweep 2026-11-15: presidence.gov.bi ?s=données à caractère personnel and ?s=intelligence artificielle; amategeko.gov.bi home and ?s=données; assemblee.bi home and ?s=données ('Lois promulguées en 2026', adoption news 30 Jan 2026)",
+      "Burundi intelligence artificielle novembre 2026",
+      "Burundi artificial intelligence November 2026"
     ],
     "review_date": "2026-10-12",
     "passes": {
@@ -115,11 +214,11 @@
       "regional_inheritance": "COMPLETE",
       "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "National-level official sources were searched in French, English and Kirundi, including legislation channels, the Senate, ministries and the central bank. No qualifying AI-governance document was found in any category. Several official sites, including the legislation portal, the National Assembly, the digital economy ministry and the telecom regulator, were unavailable, so the personal data protection law and the national AI and data governance strategies are listed as leads to check later.",
+    "no_material_found_note": "National-level official sources were searched in French, English and Kirundi, including the National Assembly, the legislation portal, the Presidency, the Senate, ministries and the central bank. Apart from the 2026 personal data protection law, no qualifying AI-governance document was found. The national AI and data governance strategies have no published official text, so they are listed as leads.",
     "discovery_result_count": 11,
     "focused_result_count": 13,
-    "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. finances.gov.bi reset/502/DNS; presidence.gov.bi 508/timeout; assemblee.bi reset; amategeko.gov.bi 503 (maintenance); arct.gov.bi 502. brb.bi and senat.bi reachable (nothing on AI). Searches in French, English and Kirundi. Not a party to Convention 108. Units covered: Law: Searched for AI laws, AI provisions and the 2026 personal data protection law; official gazette/legislation channels (presidence.gov.bi, assemblee.bi, amategeko.gov.bi) unreachable; Senate site search: nothing found. Data protection law held as lead (no official text). No AI-specific law or bill found.; Government: National AI Strategy 2025-2030 (validated April 2026) and National Data Governance Strategy (Nov 2025) known only from press/UN reporting; Ministry of Finance, Budget and Digital Economy site unreachable; held as leads. Searched, no official document found.; Ministries: Searched in French, English and Kirundi for ministry-level AI documents (education, health, justice, defence, finance, labour, interior): searched, nothing found. Senate 2024 IPU speech on AI is a speech, not an instrument (excluded).; Regulators: Central bank (brb.bi site search): searched, nothing found. ARCT telecom regulator unreachable; no AI documents found via search. No data protection authority yet operating; no cyber agency AI guidance found.. Not reached: finances.gov.bi (Ministry of Finance, Budget and Digital Economy) - connection failed (curl and WebFetch); presidence.gov.bi (Presidency / official gazette channel) - HTTP 508 / timeout; assemblee.bi (National Assembly) - connection reset; amategeko.gov.bi (legislation portal) - maintenance 503; arct.gov.bi (telecom regulator) - connection failed. Could not verify: Law No. 1/03 of 10 March 2026 on personal data protection (number/date from secondary sources only); National AI Strategy 2025-2030 validation and contents; National Data Governance Strategy (Nov 2025). binding-law, strategy, government-governance, ethics, risk-assurance, public-sector, procurement, cyber-security, data-privacy, transparency, standards, sandbox, index-readiness, sectoral, generative-ai, drafts, international, historical: no material found. Local retry 2026-10-18 (home connection, ~25 min): REACHED via curl HTTP 200: finances.gov.bi (WordPress search: only news items - 25 Nov 2025 opening of a workshop on assessing the AI landscape in Burundi, Feb 2026 Central Africa IGF; no strategy text, no data governance strategy text in Publications/search), presidence.gov.bi (searches for 'données à caractère personnel', 'protection des données', 'intelligence artificielle', 'numérique' found no law or decree on data protection or AI; 'Lois Promulguées' menu lists years only up to 2023; guessed URL /decrets-2026/ 404), arct.gov.bi (searches 'intelligence artificielle', 'données personnelles': no results), senat.bi (search 'données': old reports only, nothing on the 2026 data law surfaced on first page). STILL FAILED: assemblee.bi (curl timeout after ~730 s, headless browser ERR_CONNECTION_REFUSED); amategeko.gov.bi (HTTP 503 maintenance page via curl and browser). Not reached in time box: brb.bi re-check, procurement authority, standards body, cyber authority (none known to publish AI material). No instruments added.\nWording note 2026-10-19 (narrative.summary): A national AI strategy for 2025-2030 was reportedly validated in April 2026, a personal data protection law Sweep 2026-10-25: presidence.bi, finances.gov.bi, senat.bi unreachable by curl; official-domain search found only ministry news items (Kiswahili and AI conference July 2026, internet governance forum Feb 2026), no document. AI strategy, data law and data strategy remain leads.\nSweep 2026-11-01: change check by search and official pages returned by search only (this session's network could not open most official domains directly); see the weekly PR for detail.\nSweep 2026-11-08: presidence.gov.bi, finances.gov.bi, senat.bi, arct.gov.bi still unreachable; no official document found by search (AI strategy validated at a workshop in April 2026 per secondary sources only). Leads unchanged. No record changes.",
-    "last_sweep": "2026-11-08"
+    "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. finances.gov.bi reset/502/DNS; presidence.gov.bi 508/timeout; assemblee.bi reset; amategeko.gov.bi 503 (maintenance); arct.gov.bi 502. brb.bi and senat.bi reachable (nothing on AI). Searches in French, English and Kirundi. Not a party to Convention 108. Units covered: Law: Searched for AI laws, AI provisions and the 2026 personal data protection law; official gazette/legislation channels (presidence.gov.bi, assemblee.bi, amategeko.gov.bi) unreachable; Senate site search: nothing found. Data protection law held as lead (no official text). No AI-specific law or bill found.; Government: National AI Strategy 2025-2030 (validated April 2026) and National Data Governance Strategy (Nov 2025) known only from press/UN reporting; Ministry of Finance, Budget and Digital Economy site unreachable; held as leads. Searched, no official document found.; Ministries: Searched in French, English and Kirundi for ministry-level AI documents (education, health, justice, defence, finance, labour, interior): searched, nothing found. Senate 2024 IPU speech on AI is a speech, not an instrument (excluded).; Regulators: Central bank (brb.bi site search): searched, nothing found. ARCT telecom regulator unreachable; no AI documents found via search. No data protection authority yet operating; no cyber agency AI guidance found.. Not reached: finances.gov.bi (Ministry of Finance, Budget and Digital Economy) - connection failed (curl and WebFetch); presidence.gov.bi (Presidency / official gazette channel) - HTTP 508 / timeout; assemblee.bi (National Assembly) - connection reset; amategeko.gov.bi (legislation portal) - maintenance 503; arct.gov.bi (telecom regulator) - connection failed. Could not verify: Law No. 1/03 of 10 March 2026 on personal data protection (number/date from secondary sources only); National AI Strategy 2025-2030 validation and contents; National Data Governance Strategy (Nov 2025). binding-law, strategy, government-governance, ethics, risk-assurance, public-sector, procurement, cyber-security, data-privacy, transparency, standards, sandbox, index-readiness, sectoral, generative-ai, drafts, international, historical: no material found. Local retry 2026-10-18 (home connection, ~25 min): REACHED via curl HTTP 200: finances.gov.bi (WordPress search: only news items - 25 Nov 2025 opening of a workshop on assessing the AI landscape in Burundi, Feb 2026 Central Africa IGF; no strategy text, no data governance strategy text in Publications/search), presidence.gov.bi (searches for 'données à caractère personnel', 'protection des données', 'intelligence artificielle', 'numérique' found no law or decree on data protection or AI; 'Lois Promulguées' menu lists years only up to 2023; guessed URL /decrets-2026/ 404), arct.gov.bi (searches 'intelligence artificielle', 'données personnelles': no results), senat.bi (search 'données': old reports only, nothing on the 2026 data law surfaced on first page). STILL FAILED: assemblee.bi (curl timeout after ~730 s, headless browser ERR_CONNECTION_REFUSED); amategeko.gov.bi (HTTP 503 maintenance page via curl and browser). Not reached in time box: brb.bi re-check, procurement authority, standards body, cyber authority (none known to publish AI material). No instruments added.\nWording note 2026-10-19 (narrative.summary): A national AI strategy for 2025-2030 was reportedly validated in April 2026, a personal data protection law Sweep 2026-10-25: presidence.bi, finances.gov.bi, senat.bi unreachable by curl; official-domain search found only ministry news items (Kiswahili and AI conference July 2026, internet governance forum Feb 2026), no document. AI strategy, data law and data strategy remain leads.\nSweep 2026-11-01: change check by search and official pages returned by search only (this session's network could not open most official domains directly); see the weekly PR for detail.\nSweep 2026-11-08: presidence.gov.bi, finances.gov.bi, senat.bi, arct.gov.bi still unreachable; no official document found by search (AI strategy validated at a workshop in April 2026 per secondary sources only). Leads unchanged. No record changes.\nSweep 2026-11-15: assemblee.bi now loads (curl 200) and its 'Lois promulguées en 2026' page links the signed PDF of Law 1/03 of 10 March 2026 (32-page image scan, no text layer; read as page images, no OCR tool): promoted from leads to record i-a9b1a9f0a357 (arts. 19-20 automated decisions; art. 55 in force on promulgation). amategeko.gov.bi now loads (search 'données' finds only statistics decrees); presidence.gov.bi loads (search finds no AI or data protection text); finances.gov.bi connection reset; brb.bi proxy 502. Searches found no new official AI strategy text.",
+    "last_sweep": "2026-11-15"
   },
   "changes": [
     {
@@ -144,13 +243,6 @@
       "english_title": "National Artificial Intelligence Strategy 2025-2030",
       "issuing_authority": "Ministère des Finances, du Budget et de l'Économie numérique",
       "note": "Validated at a workshop in Bujumbura on 21-22 April 2026 with UNDP support (reported by press and UNDP). No official full text found online; ministry website (finances.gov.bi) unreachable by curl and WebFetch on 2026-10-12. Promote once the ministry or presidency publishes the text and adoption is confirmed. 2026-10-18: finances.gov.bi now reachable; site search for 'intelligence artificielle' and 'stratégie nationale' returned only a 25 November 2025 news item on an AI landscape assessment workshop; strategy text not published there; presidency site search also found nothing. 2026-11-07: a news report of 10 September 2026 (KOAFEC, Seoul) still describes the strategy only as validated (April 2026), with plans to train 1,000+ public officials and about 15 pilot projects; no official text or Council of Ministers adoption reported.",
-      "found": "2026-10-12"
-    },
-    {
-      "title": "Loi n°1/03 du 10 mars 2026 portant protection des données à caractère personnel",
-      "english_title": "Law No. 1/03 of 10 March 2026 on the protection of personal data",
-      "issuing_authority": "Assemblée nationale / Présidence de la République du Burundi",
-      "note": "Bill (sponsored by the Ministry of Interior) adopted by the National Assembly on 15 January 2026; number and promulgation date 10 March 2026 come only from secondary trackers. Official gazette/presidency (presidence.gov.bi returned HTTP 508), assemblee.bi and amategeko.gov.bi (maintenance) were unreachable; no official text located. Data-privacy instrument; reportedly creates an independent data protection authority. 2026-10-18: presidence.gov.bi now reachable but its site search finds no data protection law and its 'Lois promulguées' list stops at 2023; assemblee.bi still unreachable and amategeko.gov.bi still in maintenance; ARCT site search found nothing. Still no official text.",
       "found": "2026-10-12"
     },
     {
