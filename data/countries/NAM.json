@@ -10,7 +10,7 @@
     "overview": "Nationally published records appear separately from applicable EU-level records. The landscape, historical relationships and legal applicability remain under document-level review."
   },
   "narrative": {
-    "summary": "Namibia has no AI law, no adopted AI strategy and no AI guidance from any regulator. Its only official AI-governance document found online is the 2022 final report of the Presidential Task Force on the Fourth Industrial Revolution, which recommends a National AI Institute. A national AI strategy led by the National Commission on Research, Science and Technology, an AI bill, a data protection bill and a cybercrime bill are all still in preparation.",
+    "summary": "Namibia has no AI law, no adopted AI strategy and no AI guidance from any regulator. Its official AI-governance documents found online are the 2022 final report of the Presidential Task Force on the Fourth Industrial Revolution, which recommends a National AI Institute, and the 2025 AI Readiness Assessment Report compiled by the research council and the education ministry under UNESCO's methodology, which finds no formal AI regulatory framework. A national AI strategy led by the National Commission on Research, Science and Technology, an AI bill, a data protection bill and a cybercrime bill are all still in preparation.",
     "lead_institutions": [
       "National Commission on Research, Science and Technology (NCRST)",
       "Ministry of Information and Communication Technology"
@@ -70,6 +70,60 @@
       "document_access_type": "original_government_document",
       "source_id": "s-eb99ba8a0b37",
       "evidence_reference": "curl (browser user agent, --max-time 60): full 178-page PDF read (pdftotext); cover states 'Final Report, August 2022' and footer '4IR Task Force Final Report to the President | August 2022'; listed on the NCRST Downloads page (https://www.ncrst.na/downloads/); local-retry-2026-10-18: official PDF re-fetched from ncrst.na (HTTP 200, application/pdf), Downloads page reachable; fields unchanged"
+    },
+    {
+      "id": "i-5e3a9c71d2b4",
+      "official_title": "Namibia Artificial Intelligence Readiness Assessment Report",
+      "english_title": "Namibia Artificial Intelligence Readiness Assessment Report (UNESCO RAM)",
+      "issuing_authority": "National Commission on Research, Science and Technology with the Ministry of Education, Innovation, Youth, Sports, Arts and Culture and UNESCO",
+      "authority_type": "government",
+      "categories": [
+        "index-readiness"
+      ],
+      "legal_status": "nonbinding_guidance",
+      "lifecycle": "published",
+      "publication_date": "2025",
+      "current_status": "Published 2025 (year only: 'Published in 2025 by the United Nations Educational, Scientific and Cultural Organisation', '© UNESCO, 2025', ref. SHS/BIO/2025/AI-RAM/NA). The acknowledgements state that NCRST, in collaboration with the Ministry of Education, Innovation, Youth, Sports, Arts and Culture, compiled the report with inputs from the NCRST National AI Working Group; it carries forewords by UNESCO and the Minister of Education, Innovation, Youth, Sports, Arts and Culture. The PDF is published on the NCRST website. Its recommendations are not binding.",
+      "summary": "Assessment of Namibia's AI readiness using UNESCO's Readiness Assessment Methodology across five dimensions (legal and regulatory, social and cultural, scientific and educational, economic, and technical and infrastructural), based on desk research, a stakeholder questionnaire, interviews and two workshops. It finds no formal AI regulatory framework, limited AI expertise, infrastructure gaps and low public awareness, and recommends a formal AI regulatory framework, an AI review committee, finalising data protection and cybersecurity rules, a national 4IR strategy covering AI governance, a national responsible AI institute and a stronger role for the Namibian Standards Institution. Its findings are intended to guide the formulation of the national AI strategy.",
+      "ai_governance_relevance": "UNESCO Readiness Assessment Methodology report for Namibia compiled by NCRST and the education ministry; diagnostic basis for the forthcoming national AI strategy.",
+      "source_url": "https://www.ncrst.na/wp-content/uploads/2026/11/RAM-Report.pdf",
+      "official_pdf_url": "https://www.ncrst.na/wp-content/uploads/2026/11/RAM-Report.pdf",
+      "official_webpage_url": null,
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "official_document",
+      "supersedes": [],
+      "organization_id": "o-c3fda051ecbd",
+      "publisher_name": "National Commission on Research, Science and Technology",
+      "jurisdiction_id": "NAM",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "index-readiness",
+      "subcategory": null,
+      "effective_date": null,
+      "last_amended_date": null,
+      "scope": "Namibia (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-87f08dc03a56"
+      ],
+      "regional_applicability": [],
+      "metadata_gaps": [
+        "Only the year (2025) is printed; no month or launch date in the document"
+      ],
+      "language": "en",
+      "verification_date": "2026-11-15",
+      "first_recorded": "2026-11-15",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-7b2e4f19c8a6",
+      "evidence_reference": "weekly-sweep-2026-11-15: curl (browser user agent) of the NCRST-hosted PDF (HTTP 200, 63 pages), read with pdftotext: cover title; acknowledgements (NCRST with MEIYSAC compiled the report); colophon 'Published in 2025 by the United Nations Educational, Scientific and Cultural Organisation', ref. SHS/BIO/2025/AI-RAM/NA; Minister's foreword; executive summary and 'Overall recommendations' (p. 56)."
     }
   ],
   "organizations": [
@@ -106,6 +160,32 @@
       "check_method": "local-retry-2026-10-18: curl with browser user agent; official PDF HTTP 200 application/pdf (9.3 MB); NCRST Downloads page HTTP 200",
       "http_status": 200,
       "final_url": "https://www.ncrst.na/wp-content/uploads/2024/06/4IRTF-Final-Report.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf"
+    },
+    {
+      "id": "s-7b2e4f19c8a6",
+      "url": "https://www.ncrst.na/wp-content/uploads/2026/11/RAM-Report.pdf",
+      "jurisdiction_ids": [
+        "NAM"
+      ],
+      "source_institutions": [
+        "National Commission on Research, Science and Technology"
+      ],
+      "instrument_ids": [
+        "i-5e3a9c71d2b4"
+      ],
+      "categories_reviewed": [
+        "index-readiness"
+      ],
+      "date_reviewed": "2026-11-15",
+      "checked_date": "2026-11-15",
+      "check_method": "weekly-sweep-2026-11-15: curl with browser user agent; official PDF HTTP 200 application/pdf (1.56 MB, 63 pages)",
+      "http_status": 200,
+      "final_url": "https://www.ncrst.na/wp-content/uploads/2026/11/RAM-Report.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
@@ -180,7 +260,8 @@
       "npc.gov.na NDP6 Policy Document full text searched for artificial intelligence / AI / Fourth Industrial Revolution (2026-10-18)",
       "Namibia national AI strategy October 2026 (change check 2026-10-25)",
       "Namibia Data Protection Bill OR AI Bill OR cybercrime 2026 ministry ICT (change check 2026-10-25)",
-      "ncrst.na site search artificial intelligence; Namibia national AI strategy November 2026 (weekly sweep 2026-11-08)"
+      "ncrst.na site search artificial intelligence; Namibia national AI strategy November 2026 (weekly sweep 2026-11-08)",
+      "Namibia artificial intelligence November 2026; Namibia AI strategy framework consultations NCRST Deloitte October 2026; ncrst.na media library, publications and downloads; laws.parliament.na Bill register; mict.gov.na, gov.na, opm.gov.na retry (weekly sweep 2026-11-15)"
     ],
     "review_date": "2026-10-12",
     "passes": {
@@ -202,8 +283,8 @@
     "no_material_found_note": "Namibia's gazettes and legislation, parliament, the research council, the planning commission, ministries and regulators were searched. No AI law or national AI strategy has been published, and no AI material was found in the other categories; the national development plan mentions AI only in passing, and AI, data protection and cybercrime bills are listed as leads. The national digital strategy and the data protection bill's status remain to be checked.",
     "discovery_result_count": 12,
     "focused_result_count": 10,
-    "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. mict.gov.na reset/503; parliament.na, gov.na reset; npc.gov.na TLS/503; opm.gov.na proxy 502; NamibLII gazette pages 403 (snippets only). Gazette No. 8954 (19 Jun 2026) ICT standard mentions AI in passing - not recorded. Secondary claims of a Feb 2025 strategy launch contradicted by ministers' statements (lead). BoN Fintech Innovation Regulatory Framework 2026 read: no AI. MICT org name unverified. Convention 108: not a party. Units covered: Law: NamibLII full-text search of gazettes and legislation for 'artificial intelligence': no AI law or AI provisions; hits were qualification registrations (Bachelor of AI, 2025), trademark classes, CRAN 5G/IMT strategy (2023) and a June 2026 gazette (No. 8954) cyber standard mentioning AI-driven technologies only in passing. AI Bill, Data Protection Bill and Cybercrime Bill unpublished -> leads. parliament.na unreachable.; Government: NCRST (publications/downloads): 4IR Task Force Final Report (recorded). National AI strategy: not published (lead). MICT National Digital Strategy 2025-2029 and NPC NDP6: official sites unreachable (leads).; Ministries: Education, health, justice, defence, finance, labour, home affairs: searched, nothing found (education digital teaching and learning policy draft -> lead).; Regulators: Bank of Namibia: Fintech Innovation Regulatory Framework (2026) read, contains no AI provisions; AI media release only (lab funding). CRAN: blog articles on AI attacks and sandboxes only (sandbox framework -> lead). NAMFISA: no AI-specific standard found. No data protection authority exists yet.. Not reached: mict.gov.na (connection reset; WebFetch HTTP 503); parliament.na (connection reset); gov.na (connection reset); npc.gov.na (TLS failure; WebFetch HTTP 503); opm.gov.na (proxy 502); NamibLII gazette pages (HTTP 403) - only search snippets read. Could not verify: National Digital Strategy 2025-2029 (mict.gov.na unreachable); NDP6 (npc.gov.na unreachable); Data Protection Bill tabling status (parliament.na unreachable). binding-law, strategy, ethics, risk-assurance, public-sector, procurement, cyber-security, data-privacy, transparency, standards, sandbox, sectoral, generative-ai, drafts, international, historical: no material found. Local retry 2026-10-18 (home connection, Saudi Arabia): OPENED - parliament.na (HTTP 200; WordPress search for AI/data protection/cybercrime: no bills; Bill Tracking page not opened in time box); npc.gov.na (HTTP 200; NDP6 Policy Document PDF, 324 pp, read via pypdf - AI mentions in passing only, kept as lead); namiblii.org search results (headless Edge; 11 hits, same as 2026-10-12, no AI law); ncrst.na (search + Downloads + 4IR PDF HTTP 200); cran.na and bon.com.na (HTTP 200, homepage only). STILL FAILED - mict.gov.na (HTTP 468 'Confirm You Are Human' bot challenge, not attempted); www.mict.gov.na, gov.na, opm.gov.na, namfisa.com.na (connection timeout).\nWording note 2026-10-19 (narrative.review_notes): The ICT ministry's, the government portal's, the Prime Minister's office's and the financial regulator's websites could not be accessed, so the national digital strategy and the data protection bill's status are still pending.\nWording note 2026-10-19 (coverage_audit.no_material_found_note): The websites of the information and communications technology ministry and the government portal were unavailable, so the national\nSweep 2026-11-01: change check by search and official pages returned by search only (this session's network could not open most official domains directly); see the weekly PR for detail. Desktop-browser follow-up 2026-11-01: parliament.na and the bill register (laws.parliament.na/Bill-register) now load; no AI, data protection or cyber bill listed. mict.gov.na shows a security-detection wall. Stays on retry.\nSweep 2026-11-08: ncrst.na and cran.na load; no AI strategy or consultation document. A press report (The Namibian, undated) says the strategy has reached synthesis and national validation and must go to Cabinet; unofficial. mict.gov.na, gov.na, parliament.na (this run) and bon.com.na did not connect. Stays on retry.",
-    "last_sweep": "2026-11-08"
+    "technical_note": "Coverage note (original): Technical review notes: tier B/C batch run 2026-10-12, one agent, national level only (PROTOCOL §6), about 25-minute time box. mict.gov.na reset/503; parliament.na, gov.na reset; npc.gov.na TLS/503; opm.gov.na proxy 502; NamibLII gazette pages 403 (snippets only). Gazette No. 8954 (19 Jun 2026) ICT standard mentions AI in passing - not recorded. Secondary claims of a Feb 2025 strategy launch contradicted by ministers' statements (lead). BoN Fintech Innovation Regulatory Framework 2026 read: no AI. MICT org name unverified. Convention 108: not a party. Units covered: Law: NamibLII full-text search of gazettes and legislation for 'artificial intelligence': no AI law or AI provisions; hits were qualification registrations (Bachelor of AI, 2025), trademark classes, CRAN 5G/IMT strategy (2023) and a June 2026 gazette (No. 8954) cyber standard mentioning AI-driven technologies only in passing. AI Bill, Data Protection Bill and Cybercrime Bill unpublished -> leads. parliament.na unreachable.; Government: NCRST (publications/downloads): 4IR Task Force Final Report (recorded). National AI strategy: not published (lead). MICT National Digital Strategy 2025-2029 and NPC NDP6: official sites unreachable (leads).; Ministries: Education, health, justice, defence, finance, labour, home affairs: searched, nothing found (education digital teaching and learning policy draft -> lead).; Regulators: Bank of Namibia: Fintech Innovation Regulatory Framework (2026) read, contains no AI provisions; AI media release only (lab funding). CRAN: blog articles on AI attacks and sandboxes only (sandbox framework -> lead). NAMFISA: no AI-specific standard found. No data protection authority exists yet.. Not reached: mict.gov.na (connection reset; WebFetch HTTP 503); parliament.na (connection reset); gov.na (connection reset); npc.gov.na (TLS failure; WebFetch HTTP 503); opm.gov.na (proxy 502); NamibLII gazette pages (HTTP 403) - only search snippets read. Could not verify: National Digital Strategy 2025-2029 (mict.gov.na unreachable); NDP6 (npc.gov.na unreachable); Data Protection Bill tabling status (parliament.na unreachable). binding-law, strategy, ethics, risk-assurance, public-sector, procurement, cyber-security, data-privacy, transparency, standards, sandbox, sectoral, generative-ai, drafts, international, historical: no material found. Local retry 2026-10-18 (home connection, Saudi Arabia): OPENED - parliament.na (HTTP 200; WordPress search for AI/data protection/cybercrime: no bills; Bill Tracking page not opened in time box); npc.gov.na (HTTP 200; NDP6 Policy Document PDF, 324 pp, read via pypdf - AI mentions in passing only, kept as lead); namiblii.org search results (headless Edge; 11 hits, same as 2026-10-12, no AI law); ncrst.na (search + Downloads + 4IR PDF HTTP 200); cran.na and bon.com.na (HTTP 200, homepage only). STILL FAILED - mict.gov.na (HTTP 468 'Confirm You Are Human' bot challenge, not attempted); www.mict.gov.na, gov.na, opm.gov.na, namfisa.com.na (connection timeout).\nWording note 2026-10-19 (narrative.review_notes): The ICT ministry's, the government portal's, the Prime Minister's office's and the financial regulator's websites could not be accessed, so the national digital strategy and the data protection bill's status are still pending.\nWording note 2026-10-19 (coverage_audit.no_material_found_note): The websites of the information and communications technology ministry and the government portal were unavailable, so the national\nSweep 2026-11-01: change check by search and official pages returned by search only (this session's network could not open most official domains directly); see the weekly PR for detail. Desktop-browser follow-up 2026-11-01: parliament.na and the bill register (laws.parliament.na/Bill-register) now load; no AI, data protection or cyber bill listed. mict.gov.na shows a security-detection wall. Stays on retry.\nSweep 2026-11-08: ncrst.na and cran.na load; no AI strategy or consultation document. A press report (The Namibian, undated) says the strategy has reached synthesis and national validation and must go to Cabinet; unofficial. mict.gov.na, gov.na, parliament.na (this run) and bon.com.na did not connect. Stays on retry.\nSweep 2026-11-15: ncrst.na loads; its media library shows 'RAM Report' uploaded on 12 Nov 2026 (https://www.ncrst.na/wp-content/uploads/2026/11/RAM-Report.pdf, 63 pp., read by curl + pdftotext). The PDF is not yet linked from the NCRST Publications or Downloads pages. Acknowledgements state NCRST, with MEIYSAC, compiled the report; colophon 'Published in 2025 by UNESCO', ref. SHS/BIO/2025/AI-RAM/NA; Minister's foreword. Lead promoted to record i-5e3a9c71d2b4 (year-only date 2025; UGA precedent for a UNESCO RAM published by a government body). laws.parliament.na Bill register loads: no AI, data protection or cybercrime bill (latest B.5-2026, 3 Nov 2026). bon.com.na and namfisa.com.na load. Retry: mict.gov.na still blocked (curl TLS failure / proxy 502; WebFetch 503), gov.na (proxy 502; WebFetch DNS), opm.gov.na (reset; WebFetch 503). Stays on retry.",
+    "last_sweep": "2026-11-15"
   },
   "changes": [
     {
@@ -314,13 +395,6 @@
       "english_title": "Bank of Namibia Artificial Intelligence Policy",
       "issuing_authority": "Bank of Namibia",
       "note": "Bank of Namibia Annual Report 2024 (official PDF, https://www.bon.com.na/getattachment/ef99b9ce-a67c-4888-8319-a3a013c5b2a9/.aspx) says the Bank 'established a comprehensive Artificial Intelligence Policy' to 'guide the adoption and responsible usage of AI tools within the Bank', with awareness and implementation from 2025. Internal single-institution policy; text not published. The report's theme chapter on AI and the economy is analysis, not governance; BoN press release 9/6/2 of 17 Mar 2026 (AI innovation award) sets no rules for regulated institutions.",
-      "found": "2026-11-07"
-    },
-    {
-      "title": "UNESCO Namibia AI Readiness Assessment Methodology (RAM) Report (2025)",
-      "english_title": "UNESCO Namibia AI Readiness Assessment Methodology (RAM) Report (2025)",
-      "issuing_authority": "UNESCO",
-      "note": "Launched in August 2025 (news); https://unesdoc.unesco.org/ark:/48223/pf0000394686 (URL from the ISC country profile, not yet opened). Published by UNESCO, not by the Namibian government, so not an index-readiness record under the source rule; useful for discovery only.",
       "found": "2026-11-07"
     },
     {
