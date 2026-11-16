@@ -333,7 +333,7 @@
       "first_recorded": "2026-10-13",
       "last_changed": null,
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "source_id": "s-22fe74f93ab0",
       "evidence_reference": "curl (browser UA, --max-time 60): CSA consultation page (public_document.php) read, stating the consultation period and linking the draft PDF; CSA PDF and the moc.gov.gh copy both read in full (pdftotext); AI clauses (s.4A(b)-(c), s.59 amendment, definition of Artificial Intelligence) confirmed; parliament.gh Bills list read 2026-10-13.",
@@ -547,7 +547,7 @@
       "metadata_gaps": [],
       "source_kind": "official_publication",
       "evidence_reference": "deep-sweep-2026-11-07: WebFetch of https://csa.gov.gh/cert-gh-alert39.php (found via WebSearch 'site:csa.gov.gh artificial intelligence OR deepfake advisory OR guidelines'). Page shows title 'AI-Generated Videos (Deepfake) Promoting Fake Investments and Drugs', 'Ref: CSA/CERT/MPA/2025-06/01', date 'June 30, 2025'; quote: 'has observed a disturbing rise in the circulation of deepfake or Artificial Intelligence (AI)-generated videos'; 'Do not trust promotional videos that claim to feature national leaders or officials without verifying from official sources'. Precedent: SGP records CSA deepfake-scam advisories (i-5ff0a44c892d) as nonbinding_guidance.",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "official_publication_or_full_text_page",
       "source_id": "s-036a03306d81",
       "organization_id": "o-3502beb2b9a8",
@@ -617,16 +617,16 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-16",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
-      "http_status": 200,
+      "http_status": null,
       "final_url": "https://moc.gov.gh/wp-content/uploads/2023/03/National-Artificial-Intelligence-Strategy.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
-      "error": null,
+      "error": "URLError: <urlopen error _ssl.c:994: The handshake operation timed out>",
       "content_type": "application/pdf",
-      "fail_streak": 0
+      "fail_streak": 1
     },
     {
       "id": "s-c9eb81652f5f",
@@ -645,7 +645,7 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-16",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://moc.gov.gh/wp-content/uploads/2023/03/Ghana-Digital-Economy-Policy_Strategy_2024.pdf",
@@ -673,7 +673,7 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-16",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://dpc.gov.gh/wp-content/uploads/2025/05/Data-Protection-Act-2012-Act-843.pdf",
@@ -701,7 +701,7 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-16",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://moc.gov.gh/wp-content/uploads/2023/03/DATA-PROTECTION-BILL.pdf",
@@ -732,16 +732,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-16",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
-      "http_status": 200,
+      "http_status": null,
       "final_url": "https://moc.gov.gh/wp-content/uploads/2023/03/MoCDTI-EMERGING-TECHNOLOGIES-DRAFT-BILL-2025-2.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
-      "error": null,
+      "error": "URLError: <urlopen error _ssl.c:994: The handshake operation timed out>",
       "content_type": "application/pdf",
-      "fail_streak": 0
+      "fail_streak": 1
     },
     {
       "id": "s-22fe74f93ab0",
@@ -761,16 +761,16 @@
         "standards"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-16",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": null,
       "final_url": "https://www.csa.gov.gh/resources/Cybersecurity%20(Amendment)%20Draft%20Bill%202025%20final%2015102025.pdf",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": null,
       "document_language": "en",
-      "error": "URLError: <urlopen error timed out>",
+      "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
       "content_type": "application/pdf",
-      "fail_streak": 1
+      "fail_streak": 2
     },
     {
       "id": "s-3da1fceaee40",
@@ -790,16 +790,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-16",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
-      "http_status": 200,
+      "http_status": null,
       "final_url": "https://moc.gov.gh/wp-content/uploads/2023/03/Electronic-Transactions-Bill-2025-20-10-25.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
-      "error": null,
+      "error": "URLError: <urlopen error _ssl.c:994: The handshake operation timed out>",
       "content_type": "application/pdf",
-      "fail_streak": 0
+      "fail_streak": 1
     },
     {
       "id": "s-8f3413327249",
@@ -818,16 +818,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-16",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
-      "http_status": 200,
+      "http_status": null,
       "final_url": "https://moc.gov.gh/wp-content/uploads/2023/03/MISINFORMATION-DISINFORMATION-HATE-SPEECH-1.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
-      "error": null,
+      "error": "URLError: <urlopen error _ssl.c:994: The handshake operation timed out>",
       "content_type": "application/pdf",
-      "fail_streak": 0
+      "fail_streak": 1
     },
     {
       "id": "s-16058a2f5810",
@@ -847,7 +847,7 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-13",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-16",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bog.gov.gh/wp-content/uploads/2020/06/Cyber-Information-Security-Directive-2026.pdf",
@@ -875,16 +875,16 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-11-07",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-16",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": null,
       "final_url": "https://csa.gov.gh/cert-gh-alert39.php",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": "AI-Generated Videos (Deepfake) Promoting Fake Investments and Drugs",
       "document_language": "en",
       "error": "URLError: <urlopen error timed out>",
       "content_type": "text/html",
-      "fail_streak": 1
+      "fail_streak": 2
     }
   ],
   "regional_applicability": [],
@@ -998,6 +998,36 @@
     "last_sweep": "2026-11-15"
   },
   "changes": [
+    {
+      "id": "c-1a6d55e9402f",
+      "date": "2026-11-16",
+      "recorded": "2026-11-16",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "GHA",
+      "instrument_id": "i-9021a4095d76",
+      "title": "Cybersecurity (Amendment) Bill, 2025",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://www.csa.gov.gh/resources/Cybersecurity%20(Amendment)%20Draft%20Bill%202025%20final%2015102025.pdf",
+      "needs_review": false
+    },
+    {
+      "id": "c-01e4c15e074f",
+      "date": "2026-11-16",
+      "recorded": "2026-11-16",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "GHA",
+      "instrument_id": "i-934bd59ff655",
+      "title": "CERT-GH Alert: AI-Generated Videos (Deepfake) Promoting Fake Investments and Drugs (Ref: CSA/CERT/MPA/2025-06/01)",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://csa.gov.gh/cert-gh-alert39.php",
+      "needs_review": false
+    },
     {
       "id": "c-1ed4d7e2f751",
       "date": "2026-11-07",
