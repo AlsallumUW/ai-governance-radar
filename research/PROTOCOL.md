@@ -116,6 +116,7 @@ Required for a deep-reviewed country:
   `subnational_strategy`: AI strategies of states, provinces, regions and cities (government_level subnational or local); `national_strategy` is for central government only (owner rule, 8 Nov 2026).
   Education guidance for schools, teachers or universities is `nonbinding_guidance` unless the document itself directs them ("must", "shall", required steps), in which case it is `administrative_guideline` (owner rule, 8 Nov 2026). Formal legal acts and curricula keep their own status.
   Bills pending in a legislature are leads, not records (owner rule, 8 Nov 2026); government consultation drafts not yet introduced to a legislature are records (`consultation_draft`).
+  Draft strategies or policies not yet approved by the competent authority: primary `category` = `drafts`, with `strategy` second in `categories` (owner rule, 17 Nov 2026). The final adopted version becomes a new record under `strategy`.
 - `lifecycle`: `draft` | `consultation` | `consultation_closed` (the status says the consultation has closed and no final text is recorded; still counted as a draft; optional `consultation_closes` = last day for comments as printed, which `scripts/due_consultations.py` uses to flip the lifecycle the day after) | `published` | `adopted` | `in_force` | `superseded` | `repealed`
 - `summary`: 2–3 sentences specific to this document, covering what it does, who it binds or guides, and any key obligations. **No boilerplate.**
 - `language`: ISO 639-1 code
