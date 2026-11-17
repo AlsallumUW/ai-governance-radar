@@ -987,6 +987,14 @@
       "corrected": 42,
       "checked": 162,
       "note": "CHN (169 records) is verified in parts across runs, grouped by source host. Part 1 (2026-11-10): the 21 records whose source is the central government portal (www.gov.cn), read in the desktop browser; 21 checked, 6 corrected. Part 2 (2026-11-12): the 60 records whose source is www.cac.gov.cn (21), www.tc260.org.cn (20), openstd.samr.gov.cn (11, checked with the matching std.samr.gov.cn entries) and www.miit.gov.cn (8), read in the desktop browser; 60 checked, 17 corrected, none unreachable. Part 3 (2026-11-12, second run): the 36 remaining national records (NPC, MOST, MFA, NDRC, MOT, SPC, PBOC, NFRA, NHC, MOE, NDA, SAMR, CNIPA, MOFCOM, MOF and official reprints) and 2 Hong Kong SFC circulars, read in the desktop browser; 37 checked, 7 corrected, 1 unreachable (the NMPA AI medical software guideline attachment on nmpa.gov.cn returns 403 in the desktop browser; listed under unreachable). The run stopped early when the desktop browser disconnected. Next: the 8 remaining Hong Kong SAR records (Judiciary, FSTB, PCPD, HKMA and MPFA PDFs), then the other subnational records (Shanghai, Beijing, Shenzhen, Guangdong and the rest); add CHN to done only when every record is checked. Part 4 (2026-11-15): the 8 remaining Hong Kong SAR records (Judiciary, FSTB, PCPD, HKMA and MPFA PDFs) and the 38 remaining subnational records (Shanghai, Beijing, Shenzhen, Guangdong, Zhejiang, Hangzhou, Suzhou, Jiangsu, Hubei, Wuhan, Sichuan, Tianjin, Chongqing), read in the desktop browser; 44 checked, 12 corrected, 2 unreachable (the two Chongqing municipal government pages on www.cq.gov.cn return a WAF block in the desktop browser and are disallowed to the cloud fetcher; listed under unreachable). Corrections were mainly signature dates used as publication dates (6 records, with their publication world events moved to the portal posting date) and unsupported or research-step wording. The 4 records verified on 2026-11-11 carry their own verification date. CHN closed."
+    },
+    {
+      "id": "JPN",
+      "date": "2026-11-16",
+      "records": 102,
+      "corrected": 33,
+      "checked": 86,
+      "note": "JPN (102 records; 15 added by the 4 November sweep carry their own verification date, so 87 need checking) is verified in parts across runs, grouped by source host. Part 1 (2026-11-15): 61 national records whose source is e-Gov (laws.e-gov.go.jp), AISI, NIHS, the Agency for Cultural Affairs, the Cabinet Secretariat (cas.go.jp), the Children and Families Agency, the Digital Agency, FDMA, FSA, JPO, MAFF, METI, MEXT, MLIT, MOD, MOJ, PMDA and PPC, read from the cloud (e-Gov law data used for promulgation, revision and enforcement dates); 59 checked, 28 corrected, 2 unreachable (the METI Governance Guidelines ver. 1.0 report page and PDF return empty content; the PPC generative-AI alert annex 1 PDF fails; listed under unreachable). Part 2 (2026-11-16): the remaining 11 national records (Cabinet Office www8.cao.go.jp AI strategies, plan and guideline, the METI Governance Guidelines ver. 1.0, MIC soumu.go.jp and the PPC alert, including the 2 left unreachable in part 1) and the 14 prefectural and municipal records (Tokyo, Kobe, Osaka, Aichi, Hyogo, Chiba, Sapporo, Sendai), read in the desktop browser and from the cloud; 27 checked, 5 corrected, none unreachable. Corrections: the government AI environment is named 'Gennai' (源内), not 'GENAI'; the AI Basic Plan is to be revised every year for the time being (not 'reviewed in principle annually') and its consultation dates are marked as not yet verified; strategic goal 0 (pandemics and large-scale disasters) was introduced by AI Strategy 2021, not AI Strategy 2022; an unsupported English-translation date and an unsupported 'modelled on DS-920' claim were removed. JPN closed."
     }
   ],
   "unreachable": [
@@ -1285,5 +1293,13 @@
       "date": "2026-11-12"
     }
   ],
-  "in_progress": []
+  "in_progress": [
+    {
+      "id": "KOR",
+      "started": "2026-11-16",
+      "records_checked": 20,
+      "corrected": 3,
+      "note": "KOR (120 records; 15 carry a verification date from the campaign period, so 105 need checking) is verified in parts across runs, grouped by source host. Part 1 (2026-11-16): the 13 records whose source is the Personal Information Protection Commission (pipc.go.kr guides and press releases), the 6 Financial Services Commission records (fsc.go.kr press releases with the attached FSC, FSS and Financial Security Institute documents) and the 2019 National Strategy for AI (msit.go.kr), read in the desktop browser; 20 checked, 3 corrected, none unreachable. Corrections: an unsupported follow-up inspection date (13 June 2024) replaced by the release's statement that results for application-service providers would be announced later; an unsupported reference to a 17 February 2025 press note removed; the 2023 policy direction's prior adequacy review system described as a plan to consider introducing it, as the document states. Next: the remaining 13 msit.go.kr records (AI Basic Act guidelines, ethics standards, security guides, AI Action Plan direction), then the 58 law.go.kr records and the other hosts (copyright.or.kr, mfds.go.kr, kmcc.go.kr, humanrights.go.kr, moe.go.kr, mois.go.kr, korea.kr); add KOR to done only when every record is checked."
+    }
+  ]
 }
