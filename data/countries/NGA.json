@@ -912,6 +912,61 @@
       "organization_id": "o-8d2bde25244f",
       "first_recorded": "2026-11-05",
       "last_changed": null
+    },
+    {
+      "id": "i-34374640415b",
+      "jurisdiction_id": "NGA",
+      "official_title": "National Educational Technology (EdTech) Strategy",
+      "english_title": "National Educational Technology (EdTech) Strategy",
+      "issuing_authority": "Federal Ministry of Education",
+      "publisher_name": "Federal Ministry of Education",
+      "authority_type": "ministry",
+      "government_level": "national",
+      "subnational_unit": null,
+      "categories": [
+        "sectoral",
+        "strategy",
+        "risk-assurance",
+        "generative-ai"
+      ],
+      "category": "sectoral",
+      "subcategory": null,
+      "legal_status": "national_strategy",
+      "lifecycle": "published",
+      "publication_date": "2026-11-17",
+      "effective_date": null,
+      "last_amended_date": null,
+      "current_status": "Launched on 17 November 2026 by the Federal Ministry of Education and the Federal Ministry of Communications, Innovation and Digital Economy, according to the Communications Ministry's launch notice, which links the PDF hosted on the Education Ministry's website. The document itself prints no publication date; it sets an implementation roadmap from late 2026 to 2030.",
+      "scope": null,
+      "sectors": [
+        "education"
+      ],
+      "technology_scope": [
+        "AI"
+      ],
+      "summary": "Nigeria's first national strategy for education technology, issued by the Federal Ministry of Education with the Federal Ministry of Communications, Innovation and Digital Economy, organised in five pillars (education data and interoperability, infrastructure, technology and procurement, teacher transformation, governance) with a 2026-2030 roadmap. Chapter 8 and Annex 2 (section A2.8) set out how AI is to be adopted in education: phased, evidence-based pilots, AI literacy in curricula, AI competencies in teacher development, an AI risk classification, a readiness assessment and a recommended assurance process (educational, privacy, ethics and bias, and cybersecurity reviews) before deployment. It states that high-impact decisions such as admission, progression and discipline stay subject to human judgement, that identifiable learner data must not be entered into public AI tools, and that education data must not be reused for advertising or commercial model training outside governed, lawful arrangements; it also gives guidance on generative AI use by teachers and learners.",
+      "ai_governance_relevance": "Sets national expectations for the responsible use of AI and generative AI in Nigerian education, including human oversight, learner data safeguards and pre-deployment assurance.",
+      "source_url": "https://education.gov.ng/wp-content/uploads/2026/11/Nigeria_National_EdTech_Strategy_FINAL_PRINT-V1.pdf",
+      "official_pdf_url": "https://education.gov.ng/wp-content/uploads/2026/11/Nigeria_National_EdTech_Strategy_FINAL_PRINT-V1.pdf",
+      "official_webpage_url": "https://fmcide.gov.ng/fg-global-partners-drive-nigerias-digital-education-transformation/",
+      "language": "en",
+      "source_kind": "official_document",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "verification_date": "2026-11-22",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-843c6c59aabf"
+      ],
+      "regional_applicability": [],
+      "evidence_reference": "Weekly sweep 2026-11-22: 168-page PDF read (chapter 8 'Future Capability: Responsible Use of Artificial Intelligence and Emerging Technologies in Education', pp.50-54; Annex 2 A2.8 'Responsible AI and Emerging Technologies', pp.130-133); foreword by the Minister of Education, preface by the Minister of Communications, Innovation and Digital Economy; no printed date. FMCIDE news page (Posted on: November 17, 2026) states 'Alausa, Tijani to unveil Nigeria's first National EdTech Strategy on November 17' and 'The Federal Government today unveiled Nigeria's first National Educational Technology (EdTech) Strategy', with 'DOWNLOAD: Nigeria National EdTech Strategy (PDF)' linking the education.gov.ng PDF. Publication date taken from that launch notice.",
+      "source_id": "s-209f9f4f2a4a",
+      "organization_id": "o-214854f9e453",
+      "first_recorded": "2026-11-22",
+      "last_changed": null
     }
   ],
   "organizations": [
@@ -993,6 +1048,16 @@
       "ai_governance_role": "Competition and consumer protection regulator under the FCCPA 2018; consulting in 2026 on consumer-protection guidance and sales-promotion regulations that address AI-generated content, AI marketing and algorithmic targeting.",
       "source_url": "https://fccpc.gov.ng/",
       "authority_type": "regulator",
+      "government_level": "national"
+    },
+    {
+      "id": "o-214854f9e453",
+      "jurisdiction_id": "NGA",
+      "name": "Federal Ministry of Education",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Federal education ministry; issued the National EdTech Strategy (November 2026), which sets national expectations for responsible AI use in education.",
+      "source_url": "https://education.gov.ng/",
+      "authority_type": "ministry",
       "government_level": "national"
     }
   ],
@@ -1483,6 +1548,36 @@
       "error": null,
       "content_type": "application/pdf",
       "fail_streak": 0
+    },
+    {
+      "id": "s-209f9f4f2a4a",
+      "url": "https://education.gov.ng/wp-content/uploads/2026/11/Nigeria_National_EdTech_Strategy_FINAL_PRINT-V1.pdf",
+      "jurisdiction_ids": [
+        "NGA"
+      ],
+      "source_institutions": [
+        "Federal Ministry of Education"
+      ],
+      "instrument_ids": [
+        "i-34374640415b"
+      ],
+      "categories_reviewed": [
+        "sectoral",
+        "strategy",
+        "risk-assurance",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-11-22",
+      "checked_date": "2026-11-22",
+      "check_method": "GET with curl; browser user agent; full download",
+      "http_status": 200,
+      "final_url": "https://education.gov.ng/wp-content/uploads/2026/11/Nigeria_National_EdTech_Strategy_FINAL_PRINT-V1.pdf",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "en",
+      "error": null,
+      "content_type": "application/pdf",
+      "fail_streak": 0
     }
   ],
   "regional_applicability": [],
@@ -1593,7 +1688,8 @@
       "site searches: lagosstate.gov.ng ?s=artificial intelligence; most.lagosstate.gov.ng (TLS fail, http shell, WebFetch 503); kdsg.gov.ng wp-json posts/pages/media search=artificial; ogunstate.gov.ng ?s=artificial+intelligence (JS app)",
       "Weekly sweep 2026-10-25: nitda.gov.ng, fmcide.gov.ng, ndpc.gov.ng (NDPC news 22 Oct 2026 on a Frontier AI stakeholder consultation: event report, no document); nass.gov.ng unreachable; discovery 'Nigeria artificial intelligence bill National Assembly NITDA AI code of practice October 2026'",
       "Weekly sweep 2026-11-15: nitda.gov.ng/regulations/ and /draft-regulatory-instruments/ (no new AI instrument), nitda.gov.ng/category/nitda-news/ (latest 12 Nov 2026), ncair.nitda.gov.ng home, fmcide.gov.ng/news/, ndpc.gov.ng/news/ and ndpc.gov.ng/?s=artificial+intelligence, nass.gov.ng (bills, order papers, news)",
-      "Nigeria artificial intelligence November 2026"
+      "Nigeria artificial intelligence November 2026",
+      "nitda.gov.ng/regulations/, /draft-regulatory-instruments/ and NITDA news (latest 12 Nov 2026); ncair.nitda.gov.ng; fmcide.gov.ng/news/ (17 Nov 2026 EdTech Strategy launch); ndpc.gov.ng/news/ and site search 'artificial intelligence'; ncc.gov.ng home; nass.gov.ng/news; arcon.gov.ng; searches 'Nigeria artificial intelligence November 2026', 'Nigeria AI bill National Assembly / ARCON AI advertising framework / NITDA AI code November 2026', 'Digital Economy and E-Governance bill Tinubu assent' (weekly sweep 2026-11-22)"
     ],
     "review_date": "2026-10-11",
     "passes": {
@@ -1615,8 +1711,8 @@
     "no_material_found_note": "Federal law, the National Assembly, federal ministries, regulators and the states of Lagos, Kaduna and Ogun were searched. No AI Act or deepfake law has been enacted, AI bills are listed as leads, and there was no material for procurement, cybersecurity, indices or international instruments. The central bank's documents, several Lagos State sites and the health regulators remain to be checked.",
     "discovery_result_count": 14,
     "focused_result_count": 15,
-    "technical_note": "Coverage note (original): Technical review notes: Backfill run 2026-10-11 in four parts (G1 federal law via nass.gov.ng, naltf.gov.ng and NDPC; G2 federal government incl. ministry-level search, NITDA and NCAIR; G3 regulators SEC, CBN, NCC, NDPC, FCCPC, NAICOM; G4 top states Lagos, Kaduna, Ogun, 30-minute cap per PROTOCOL §6, finished in about 3 minutes with no state records). Run in parallel with MYS on separate branches. No interruption. The earlier strategy record was re-checked (title fixed, dated 2025-09 from the cover, issuer the communications ministry; supersedes the August 2024 draft); domain-named organisation dropped. AU/ECOWAS instruments are attached via the regional files. No AI Act or deepfake law enacted; AI bills (consolidated House AI bill, HB 2567, SB 731, the Digital Economy and E-Governance Bill with an AI chapter, NDPA amendment) are leads; nass.gov.ng publishes no Senate order papers or bill texts for the 10th Assembly and only ~100 House order papers (all searched). GAID effective date not stated in the text. Access: cbn.gov.ng PDFs 403 to curl and WebFetch (2 CBN records located only; dates from CBN's official circulars listing), commsinnovation.gov.ng unreachable (fmcide.gov.ng used), FMCIDE DPI framework PDF 500, most.lagosstate.gov.ng TLS mismatch/503, lagosstate.gov.ng and ogunstate.gov.ng script-rendered, aiguide.lagosstate.gov.ng expired certificate/503. Health regulators (NAFDAC, MDCN) not reached. procurement, cyber-security, index-readiness, international: no material found.\nWording note 2026-10-19 (narrative.review_notes): Two central bank documents could only be located because the bank's website blocked access, and Lagos State's announced AI guidelines have not been published.\nWording note 2026-10-19 (coverage_audit.no_material_found_note): Some official websites were unavailable, including the central bank's documents and several Lagos State sites, and the health regulators\nSweep 2026-11-01: change check by search and official pages returned by search only (this session's network could not open most official domains directly); see the weekly PR for detail. Desktop-browser follow-up 2026-11-01: nass.gov.ng bill tracker loads but its search returns only 2018-2019 entries; Digital Economy and E-Governance Bill status not confirmed there.\nSweep 2026-11-08: change check by official pages and search. Checked nitda.gov.ng (regulations page: 2026 guidelines, none AI-specific), ndpc.gov.ng (news item on a Frontier AI stakeholder consultation hosted by NITHUB; news only, no document), fmcide.gov.ng, nass.gov.ng, cbn.gov.ng, ncc.gov.ng and sec.gov.ng reachable; nigeria.gov.ng not reachable. No new instrument found; existing AI bill and framework leads unchanged.\nSweep 2026-11-15: nitda.gov.ng regulations page unchanged (latest AI-relevant items already recorded); draft regulatory instruments page lists only information-security and software guidelines; NITDA news to 12 Nov 2026 (ICSC 2026 AI-driven cyber threats: event report only). ncair.nitda.gov.ng home now links the strategy PDF at a 2026/07 upload path; recorded 2025/09 link still 200 application/pdf; NAIS two-year impact compilation (April 2026) added as lead. fmcide.gov.ng/news/ loads (home page connection reset): no AI document. ndpc.gov.ng news to 6 Nov 2026 and site search: event news only, no new AI guidance document. nass.gov.ng bills and order-paper tables load empty (script-rendered); news has nothing on AI bills. No record changes.",
-    "last_sweep": "2026-11-15"
+    "technical_note": "Coverage note (original): Technical review notes: Backfill run 2026-10-11 in four parts (G1 federal law via nass.gov.ng, naltf.gov.ng and NDPC; G2 federal government incl. ministry-level search, NITDA and NCAIR; G3 regulators SEC, CBN, NCC, NDPC, FCCPC, NAICOM; G4 top states Lagos, Kaduna, Ogun, 30-minute cap per PROTOCOL §6, finished in about 3 minutes with no state records). Run in parallel with MYS on separate branches. No interruption. The earlier strategy record was re-checked (title fixed, dated 2025-09 from the cover, issuer the communications ministry; supersedes the August 2024 draft); domain-named organisation dropped. AU/ECOWAS instruments are attached via the regional files. No AI Act or deepfake law enacted; AI bills (consolidated House AI bill, HB 2567, SB 731, the Digital Economy and E-Governance Bill with an AI chapter, NDPA amendment) are leads; nass.gov.ng publishes no Senate order papers or bill texts for the 10th Assembly and only ~100 House order papers (all searched). GAID effective date not stated in the text. Access: cbn.gov.ng PDFs 403 to curl and WebFetch (2 CBN records located only; dates from CBN's official circulars listing), commsinnovation.gov.ng unreachable (fmcide.gov.ng used), FMCIDE DPI framework PDF 500, most.lagosstate.gov.ng TLS mismatch/503, lagosstate.gov.ng and ogunstate.gov.ng script-rendered, aiguide.lagosstate.gov.ng expired certificate/503. Health regulators (NAFDAC, MDCN) not reached. procurement, cyber-security, index-readiness, international: no material found.\nWording note 2026-10-19 (narrative.review_notes): Two central bank documents could only be located because the bank's website blocked access, and Lagos State's announced AI guidelines have not been published.\nWording note 2026-10-19 (coverage_audit.no_material_found_note): Some official websites were unavailable, including the central bank's documents and several Lagos State sites, and the health regulators\nSweep 2026-11-01: change check by search and official pages returned by search only (this session's network could not open most official domains directly); see the weekly PR for detail. Desktop-browser follow-up 2026-11-01: nass.gov.ng bill tracker loads but its search returns only 2018-2019 entries; Digital Economy and E-Governance Bill status not confirmed there.\nSweep 2026-11-08: change check by official pages and search. Checked nitda.gov.ng (regulations page: 2026 guidelines, none AI-specific), ndpc.gov.ng (news item on a Frontier AI stakeholder consultation hosted by NITHUB; news only, no document), fmcide.gov.ng, nass.gov.ng, cbn.gov.ng, ncc.gov.ng and sec.gov.ng reachable; nigeria.gov.ng not reachable. No new instrument found; existing AI bill and framework leads unchanged.\nSweep 2026-11-15: nitda.gov.ng regulations page unchanged (latest AI-relevant items already recorded); draft regulatory instruments page lists only information-security and software guidelines; NITDA news to 12 Nov 2026 (ICSC 2026 AI-driven cyber threats: event report only). ncair.nitda.gov.ng home now links the strategy PDF at a 2026/07 upload path; recorded 2025/09 link still 200 application/pdf; NAIS two-year impact compilation (April 2026) added as lead. fmcide.gov.ng/news/ loads (home page connection reset): no AI document. ndpc.gov.ng news to 6 Nov 2026 and site search: event news only, no new AI guidance document. nass.gov.ng bills and order-paper tables load empty (script-rendered); news has nothing on AI bills. No record changes.\nWeekly sweep 2026-11-22: NITDA regulations, draft instruments and news unchanged since 12 Nov; NCAIR home unchanged. fmcide.gov.ng/news/ loaded: 17 Nov 2026 launch of the National EdTech Strategy with PDF on education.gov.ng (PDF loads by curl; education.gov.ng site search timed out) - added as record i-34374640415b (AI chapter 8 and Annex A2.8). ndpc.gov.ng news (latest 6 Nov) and search: no new AI document. ncc.gov.ng home: news of an Internet Governance Working Group on online safety and AI accountability (news only, no document). nass.gov.ng/news: nothing on AI bills. arcon.gov.ng 403 to curl and WebFetch (ARCON AI/digital advertising model not found). sec.gov.ng rules page 404 at the old path; cerrt.nitda.gov.ng did not connect; CBN and NBC not checked (cap).",
+    "last_sweep": "2026-11-22"
   },
   "changes": [
     {
@@ -2270,14 +2366,14 @@
       "title": "A Bill for an Act to Provide for Establishment of the National Institute for Artificial Intelligence and Robotic Studies Sciences Regulation Commission to ensure Proper Control of Usage of Artificial Intelligence (AI) Technology in Nigeria, Regulate the Development, Deployment, and use of Artificial Intelligence in Nigeria and for Related Matters (HBs. 143, 601, 942 and 1810)",
       "english_title": "Consolidated House AI regulation bill (HBs 143, 601, 942 and 1810)",
       "issuing_authority": "House of Representatives (National Assembly)",
-      "note": "Pending bill, not law. Sponsors: Hon. Sada Soli, Hon. Benjamin O. Kalu, Hon. Ademorin A. Kuye, Hon. Ibrahim Ayokunle Isiaka, Hon. Akin Rotimi. Listed for second reading on the House Order Paper of 3 December 2024 (No. 68, https://nass.gov.ng/documents/download/11167). Component bills: HB 143 (National Institute for Artificial Intelligence and Robotic Studies, Somolu, Lagos; first reading 18 July 2023) and HB 601 (National Artificial Intelligence and Robotic Sciences (Establishment) Bill; first reading 12 October 2023), per the House Bills Progression Chart (https://nass.gov.ng/documents/billdownload/11085.pdf); HB 942 (bill to ensure proper control of usage of AI technology, Hon. Sada Soli) listed for second reading on 12 March 2024 and 27 November 2024 order papers (https://nass.gov.ng/documents/download/11110, /11166). No later stage (committee report, third reading, Senate concurrence, assent) found in the House order papers published on nass.gov.ng up to 23 July 2026; bill text not published on nass.gov.ng.",
+      "note": "Pending bill, not law. Sponsors: Hon. Sada Soli, Hon. Benjamin O. Kalu, Hon. Ademorin A. Kuye, Hon. Ibrahim Ayokunle Isiaka, Hon. Akin Rotimi. Listed for second reading on the House Order Paper of 3 December 2024 (No. 68, https://nass.gov.ng/documents/download/11167). Component bills: HB 143 (National Institute for Artificial Intelligence and Robotic Studies, Somolu, Lagos; first reading 18 July 2023) and HB 601 (National Artificial Intelligence and Robotic Sciences (Establishment) Bill; first reading 12 October 2023), per the House Bills Progression Chart (https://nass.gov.ng/documents/billdownload/11085.pdf); HB 942 (bill to ensure proper control of usage of AI technology, Hon. Sada Soli) listed for second reading on 12 March 2024 and 27 November 2024 order papers (https://nass.gov.ng/documents/download/11110, /11166). No later stage (committee report, third reading, Senate concurrence, assent) found in the House order papers published on nass.gov.ng up to 23 July 2026; bill text not published on nass.gov.ng. Status check 22 Nov 2026: no later legislative stage found (nass.gov.ng news has nothing on AI bills).",
       "found": "2026-10-11"
     },
     {
       "title": "Nigerian Artificial Intelligence Bill, 2025 (HB. 2567)",
       "english_title": "Nigerian Artificial Intelligence Bill, 2025",
       "issuing_authority": "House of Representatives (National Assembly)",
-      "note": "Pending bill, not law. Sponsor Hon. Ahmed Munir; first reading listed on the House Order Paper of Thursday 23 October 2025 (No. 35, third session, https://nass.gov.ng/documents/download/11215). No later stage found in the House order papers on nass.gov.ng; bill text not published there.",
+      "note": "Pending bill, not law. Sponsor Hon. Ahmed Munir; first reading listed on the House Order Paper of Thursday 23 October 2025 (No. 35, third session, https://nass.gov.ng/documents/download/11215). No later stage found in the House order papers on nass.gov.ng; bill text not published there. Status check 22 Nov 2026: no later legislative stage found (nass.gov.ng news has nothing on AI bills).",
       "found": "2026-10-11"
     },
     {
@@ -2291,7 +2387,7 @@
       "title": "National Digital Economy and E-Governance Bill, 2025",
       "english_title": "National Digital Economy and E-Governance Bill, 2025",
       "issuing_authority": "National Assembly (joint Senate and House committees on ICT); executive-backed bill of the Federal Ministry of Communications, Innovation and Digital Economy",
-      "note": "Pending bill, not law as of 2026-10-11. Bill text on nass.gov.ng (https://nass.gov.ng/documents/billdownload/11219.pdf, 63 pp.) includes Chapter Five 'Regulation of Artificial Intelligence and other Emerging Technologies': Part XI ethical governance of AI (s. 63 principles, s. 64 obligations of AI agents, s. 65 classification of AI systems by ministerial regulation, ss. 66-67 regulatory agency functions and powers including suspension orders and civil liability of AI agents) and Part XII regulatory sandboxes and testbeds for AI. The National Assembly Library Trust Fund reported a joint public hearing and plans for third reading in November 2025 (https://naltf.gov.ng/digital-economy-bill-poised-for-presidential-assent/) and, on 22 June 2026, that the Senate ICT committee chair said the bill was in its final legislative stage (https://naltf.gov.ng/digital-economy-egovernment-bill-ndpc-frameworks/). House bill number reported as HB. 1599 (not confirmed on nass.gov.ng). No assent found; record as an Act once assented and gazetted.",
+      "note": "Pending bill, not law as of 2026-10-11. Bill text on nass.gov.ng (https://nass.gov.ng/documents/billdownload/11219.pdf, 63 pp.) includes Chapter Five 'Regulation of Artificial Intelligence and other Emerging Technologies': Part XI ethical governance of AI (s. 63 principles, s. 64 obligations of AI agents, s. 65 classification of AI systems by ministerial regulation, ss. 66-67 regulatory agency functions and powers including suspension orders and civil liability of AI agents) and Part XII regulatory sandboxes and testbeds for AI. The National Assembly Library Trust Fund reported a joint public hearing and plans for third reading in November 2025 (https://naltf.gov.ng/digital-economy-bill-poised-for-presidential-assent/) and, on 22 June 2026, that the Senate ICT committee chair said the bill was in its final legislative stage (https://naltf.gov.ng/digital-economy-egovernment-bill-ndpc-frameworks/). House bill number reported as HB. 1599 (not confirmed on nass.gov.ng). No assent found; record as an Act once assented and gazetted. Status check 22 Nov 2026: no assent or gazette found; no new official status on nass.gov.ng.",
       "found": "2026-10-11"
     },
     {
@@ -2319,7 +2415,7 @@
       "title": "Draft Code of Practice for Artificial Intelligence (NITDA)",
       "english_title": "Draft Nigeria Code of Practice for Artificial Intelligence",
       "issuing_authority": "National Information Technology Development Agency",
-      "note": "Listed in NCAIR's April 2026 two-year NAIS impact compilation (citing press coverage). Not on NITDA's Regulations or Draft Regulatory Instruments pages or in site search on 2026-10-11. Promote as consultation_draft once NITDA publishes the text.",
+      "note": "Listed in NCAIR's April 2026 two-year NAIS impact compilation (citing press coverage). Not on NITDA's Regulations or Draft Regulatory Instruments pages or in site search on 2026-10-11. Promote as consultation_draft once NITDA publishes the text. Status check 22 Nov 2026: still not on NITDA's Regulations or Draft Regulatory Instruments pages.",
       "found": "2026-10-11"
     },
     {
@@ -2354,14 +2450,14 @@
       "title": "NDPC regulatory sandbox policy (data protection and AI)",
       "english_title": "NDPC regulatory sandbox policy covering data protection and AI",
       "issuing_authority": "Nigeria Data Protection Commission",
-      "note": "The NDPC/DIAL white paper (Nov 2025, ndpc.gov.ng) says the NDPC is working on a regulatory sandbox policy extending to data protection and AI. No document found on ndpc.gov.ng (resources page and media library checked 2026-10-11). Record under 'sandbox' once published. 2026-11-01: NDPC news of 22 October 2026 reports the Commission proposing ISO/IEC 42001:2023 for an 'upcoming AI Regulatory Sandboxing Platform' at a consultation hosted by NITHUB (University of Lagos); no document linked.",
+      "note": "The NDPC/DIAL white paper (Nov 2025, ndpc.gov.ng) says the NDPC is working on a regulatory sandbox policy extending to data protection and AI. No document found on ndpc.gov.ng (resources page and media library checked 2026-10-11). Record under 'sandbox' once published. 2026-11-01: NDPC news of 22 October 2026 reports the Commission proposing ISO/IEC 42001:2023 for an 'upcoming AI Regulatory Sandboxing Platform' at a consultation hosted by NITHUB (University of Lagos); no document linked. Status check 22 Nov 2026: no document on ndpc.gov.ng (news to 6 Nov 2026 and site search).",
       "found": "2026-10-11"
     },
     {
       "title": "NDPC AI System Impact Assessment (AISIA)",
       "english_title": "NDPC AI System Impact Assessment",
       "issuing_authority": "Nigeria Data Protection Commission",
-      "note": "NDPC news items of 23 April 2026 and 22 May 2026 (ndpc.gov.ng) present an 'AI System Impact Assessment (AISIA)' alongside DPIAs, but no AISIA template, framework or guidance document is published on ndpc.gov.ng. Record under risk-assurance if a document appears.",
+      "note": "NDPC news items of 23 April 2026 and 22 May 2026 (ndpc.gov.ng) present an 'AI System Impact Assessment (AISIA)' alongside DPIAs, but no AISIA template, framework or guidance document is published on ndpc.gov.ng. Record under risk-assurance if a document appears. Status check 22 Nov 2026: no document on ndpc.gov.ng (news to 6 Nov 2026 and site search).",
       "found": "2026-10-11"
     },
     {
@@ -2445,7 +2541,7 @@
       "title": "Federal Ministry of Education AI in Education Task Force and planned guidelines for teacher training and AI implementation",
       "english_title": "Federal Ministry of Education AI in Education Task Force and planned guidelines for teacher training and AI implementation",
       "issuing_authority": "Federal Ministry of Education",
-      "note": "24 January 2025 Ministry press briefing (International Day of Education) announced a planned AI in Education Task Force to develop guidelines for teacher training and AI implementation; on 5 February 2025 (fmino.gov.ng) the Minister recommended working with NERDC to integrate AI, coding and robotics into the curriculum. No guideline or NERDC curriculum document found. Record under sectoral (education) when published.",
+      "note": "24 January 2025 Ministry press briefing (International Day of Education) announced a planned AI in Education Task Force to develop guidelines for teacher training and AI implementation; on 5 February 2025 (fmino.gov.ng) the Minister recommended working with NERDC to integrate AI, coding and robotics into the curriculum. No guideline or NERDC curriculum document found. Record under sectoral (education) when published. Status check 22 Nov 2026: the National EdTech Strategy launched on 17 November 2026 (now a record) includes a chapter and annex on responsible AI in education, including guidance for teachers and learners; it says assessment guidance and AI competency pathways are still to be developed. No separate AI-in-education guideline found.",
       "url": "https://techeconomy.ng/fg-incorporates-artificial-intelligence-into-education",
       "found": "2026-11-05"
     },
@@ -2485,7 +2581,7 @@
       "title": "ARCON/HASG Digital Marketing and AI Regulatory Model (AI and Digital Advertising Framework)",
       "english_title": "ARCON/HASG Digital Marketing and AI Regulatory Model (AI and Digital Advertising Framework)",
       "issuing_authority": "Advertising Regulatory Council of Nigeria",
-      "note": "Advertising Regulatory Council of Nigeria and Heads of Advertising Sectoral Groups committee model, to be unveiled at the National Advertising Conference 11-13 November 2026 in Abuja. Not yet published; check arcon.gov.ng after the conference (drafts or advertising-sector AI rules).",
+      "note": "Advertising Regulatory Council of Nigeria and Heads of Advertising Sectoral Groups committee model, to be unveiled at the National Advertising Conference 11-13 November 2026 in Abuja. Not yet published; check arcon.gov.ng after the conference (drafts or advertising-sector AI rules). Status check 22 Nov 2026: no official text of the model found after the 11-13 November conference; arcon.gov.ng refused automated access and searches found only pre-conference reports.",
       "url": "https://www.brandtimes.com.ng/?p=37932",
       "found": "2026-11-05"
     },
