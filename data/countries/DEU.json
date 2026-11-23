@@ -359,7 +359,7 @@
       "verification_level": "reviewed_primary_metadata",
       "metadata_gaps": [],
       "source_kind": "official_publication",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "official_publication_or_full_text_page",
       "first_recorded": "2026-10-11",
       "last_changed": null,
@@ -2567,7 +2567,7 @@
       ],
       "regional_applicability": [],
       "verification_date": "2026-10-11",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "official_publication_or_full_text_page",
       "first_recorded": "2026-10-11",
       "source_id": "s-c687ff7db3a3",
@@ -2677,7 +2677,7 @@
       ],
       "regional_applicability": [],
       "verification_date": "2026-10-11",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "official_publication_or_full_text_page",
       "first_recorded": "2026-10-11",
       "source_id": "s-af7ca19913a2",
@@ -2728,7 +2728,7 @@
       ],
       "regional_applicability": [],
       "verification_date": "2026-10-11",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "official_publication_or_full_text_page",
       "first_recorded": "2026-10-11",
       "source_id": "s-3f65002fa4f4",
@@ -4827,7 +4827,7 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.publikationen-bundesregierung.de/pp-de/publikationssuche/ki-bundesverwaltung-2339310",
@@ -4857,16 +4857,16 @@
         "sectoral"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
-      "http_status": 200,
+      "http_status": null,
       "final_url": "https://www.gesetze-im-internet.de/ki-mig/BJNR0DF0B0026.html",
       "link_status": "reachable",
       "page_title": "KI-MIG - Gesetz zur Marktüberwachung und Innovationsförderung von künstlicher Intelligenz",
       "document_language": "de",
-      "error": null,
+      "error": "URLError: <urlopen error timed out>",
       "content_type": "text/html",
-      "fail_streak": 0
+      "fail_streak": 1
     },
     {
       "id": "s-6373683e7592",
@@ -4886,7 +4886,7 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.ki-strategie-deutschland.de/files/downloads/Nationale_KI-Strategie.pdf",
@@ -4915,7 +4915,7 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.ki-strategie-deutschland.de/files/downloads/201201_Fortschreibung_KI-Strategie.pdf",
@@ -4943,7 +4943,7 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.ki-strategie-deutschland.de/files/downloads/Aktionsplan_Kuenstliche_Intelligenz_2023.pdf",
@@ -4971,7 +4971,7 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.kimarktplatz.bund.de/SharedDocs/downloads/Webs/MaKI/DE/BMI24014.pdf",
@@ -5000,16 +5000,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": null,
       "final_url": "https://www.bmi.bund.de/SharedDocs/downloads/DE/publikationen/themen/it-digitalpolitik/gutachten-datenethikkommission.html",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": "BMI - Publikationen - Gutachten der Datenethikkommission",
       "document_language": "de",
-      "error": "URLError: <urlopen error _ssl.c:994: The handshake operation timed out>",
+      "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
       "content_type": "text/html;charset=utf-8",
-      "fail_streak": 1
+      "fail_streak": 2
     },
     {
       "id": "s-743637ea9c66",
@@ -5028,7 +5028,7 @@
         "sandbox"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://hightech-agenda-deutschland.de/download/",
@@ -5057,7 +5057,7 @@
         "standards"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 404,
       "final_url": "https://hightech-agenda-deutschland.de/roadmaps/kuenstliche-intelligenz/",
@@ -5086,16 +5086,16 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
-      "http_status": 200,
+      "http_status": null,
       "final_url": "https://bmds.bund.de/themen/staatsmodernisierung/modernisierungsagenda-bund",
       "link_status": "reachable",
       "page_title": "Modernisierungsagenda Bund - BMDS",
       "document_language": "de",
-      "error": null,
+      "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
       "content_type": "text/html",
-      "fail_streak": 0
+      "fail_streak": 1
     },
     {
       "id": "s-c4147a8984a8",
@@ -5113,16 +5113,16 @@
         "strategy"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
-      "http_status": null,
+      "http_status": 200,
       "final_url": "https://bmds.bund.de/service/publikationen/nationale-rechenzentrumsstrategie",
       "link_status": "reachable",
       "page_title": "Nationale Rechenzentrumsstrategie - BMDS",
       "document_language": "de",
-      "error": "URLError: <urlopen error _ssl.c:994: The handshake operation timed out>",
+      "error": null,
       "content_type": "text/html",
-      "fail_streak": 1
+      "fail_streak": 0
     },
     {
       "id": "s-3d4edd27b87b",
@@ -5142,7 +5142,7 @@
         "international"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.auswaertiges-amt.de/de/aussenpolitik/sicherheitspolitik/cyber-aussenpolitik/ki-charta-2698666",
@@ -5173,7 +5173,7 @@
         "sectoral"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.denkfabrik-bmas.de/fileadmin/Downloads/Publikationen/Selbstverpflichtende_Leitlinien_fuer_die_Modernisierung_der_Verwaltung_mit_Kuenstlicher_Intelligenz.pdf",
@@ -5204,16 +5204,16 @@
         "procurement"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
-      "http_status": 200,
+      "http_status": 444,
       "final_url": "https://www.bmvg.de/de/aktuelles/verteidigungsministerium-erlaesst-ki-konzeption-6140520",
       "link_status": "reachable",
       "page_title": "KI-Konzeption: zukunftsfähige Verteidigung mit Künstlicher Intelligenz (BMVg)",
       "document_language": "de",
-      "error": null,
+      "error": "HTTP Error 444: UnspecificError",
       "content_type": "text/html;charset=UTF-8",
-      "fail_streak": 0
+      "fail_streak": 1
     },
     {
       "id": "s-c66fe9ad696b",
@@ -5231,16 +5231,16 @@
         "sectoral"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
-      "http_status": 200,
+      "http_status": 444,
       "final_url": "https://www.bundeswehr.de/de/organisation/heer/aktuelles/kuenstliche-intelligenz-in-den-landstreitkraeften-156226",
       "link_status": "reachable",
       "page_title": "Positionspapier: „Künstliche Intelligenz in den Landstreitkräften\" (Bundeswehr)",
       "document_language": "de",
-      "error": null,
+      "error": "HTTP Error 444: UnspecificError",
       "content_type": "text/html;charset=UTF-8",
-      "fail_streak": 0
+      "fail_streak": 1
     },
     {
       "id": "s-c09fcf6d0044",
@@ -5261,7 +5261,7 @@
         "strategy"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://jum.baden-wuerttemberg.de/fileadmin/redaktion/m-jum/intern/PDF/Service/Brosch%C3%BCren/KI-Strategie.pdf",
@@ -5289,7 +5289,7 @@
         "strategy"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bundesgesundheitsministerium.de/service/publikationen/details/gemeinsam-digital-2026",
@@ -5317,7 +5317,7 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.datenschutzkonferenz-online.de/media/en/20190405_hambacher_erklaerung.pdf",
@@ -5345,7 +5345,7 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.datenschutzkonferenz-online.de/media/en/20191106_positionspapier_kuenstliche_intelligenz.pdf",
@@ -5373,7 +5373,7 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.datenschutzkonferenz-online.de/media/dskb/20240503_DSK_Positionspapier_Zustaendigkeiten_KI_VO.pdf",
@@ -5401,7 +5401,7 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.datenschutzkonferenz-online.de/media/oh/20240506_DSK_Orientierungshilfe_KI_und_Datenschutz.pdf",
@@ -5430,7 +5430,7 @@
         "cyber-security"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.datenschutzkonferenz-online.de/media/oh/DSK-OH_KI-Systeme.pdf",
@@ -5458,7 +5458,7 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.datenschutzkonferenz-online.de/media/oh/DSK_OH_RAG.pdf",
@@ -5485,7 +5485,7 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.datenschutzkonferenz-online.de/media/en/DSK_Entschliessung_DSGVO_KI_Anpassungen.pdf",
@@ -5513,7 +5513,7 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bfdi.bund.de/SharedDocs/Downloads/DE/Konsultationsverfahren/2_KI-Strafverfolgung/Positionspapier-KI-Erstversion.pdf?__blob=publicationFile&v=8",
@@ -5541,7 +5541,7 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bfdi.bund.de/SharedDocs/Downloads/DE/DokumenteBfDI/Dokumente-allg/2024/Handreichung-BfDI-KI-Sicherheitsbeh%C3%B6rden.pdf?__blob=publicationFile&v=3",
@@ -5569,16 +5569,16 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
-      "http_status": 200,
+      "http_status": null,
       "final_url": "https://www.bfdi.bund.de/SharedDocs/Downloads/DE/DokumenteBfDI/AccessForAll/2025/KI-Fragenkatalog.pdf?__blob=publicationFile&v=1",
       "link_status": "reachable",
       "page_title": "KI-Fragenkatalog (Version 1.0) mit Manteldokument zum KI-Fragenkatalog",
       "document_language": "de",
-      "error": null,
+      "error": "URLError: <urlopen error _ssl.c:994: The handshake operation timed out>",
       "content_type": "application/pdf",
-      "fail_streak": 0
+      "fail_streak": 1
     },
     {
       "id": "s-e8e8d4aff610",
@@ -5597,7 +5597,7 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bfdi.bund.de/DE/BfDI/Konsultationsverfahren/KI-Modelle-pbD/KI-Modelle-pbD_node.html",
@@ -5626,7 +5626,7 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bfdi.bund.de/SharedDocs/Downloads/DE/DokumenteBfDI/Dokumente-allg/2025/Handreichung-KI.pdf?__blob=publicationFile&v=3",
@@ -5654,7 +5654,7 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 403,
       "final_url": "https://www.bfdi.bund.de/SharedDocs/Downloads/DE/DokumenteBfDI/Stellungnahmen/2026/Stgn_ADI-Anh%C3%B6rung-KI-VO-DG.pdf?__blob=publicationFile&v=2",
@@ -5663,7 +5663,7 @@
       "document_language": "de",
       "error": "HTTP Error 403: Forbidden",
       "content_type": "application/pdf",
-      "fail_streak": 1
+      "fail_streak": 2
     },
     {
       "id": "s-aa8f2361e975",
@@ -5682,7 +5682,7 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bafin.de/SharedDocs/Downloads/DE/Aufsichtsrecht/dl_Prinzipienpapier_BDAI.html",
@@ -5710,7 +5710,7 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bafin.de/SharedDocs/Downloads/DE/Konsultation/2021/dl_kon_11_21_Ergebnisse_machinelles_Lernen_Risikomodelle.pdf?__blob=publicationFile&v=1",
@@ -5740,7 +5740,7 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bafin.de/SharedDocs/Downloads/DE/Anlage/dl_Anlage_orientierungshilfe_IKT_Risiken_bei_KI.html",
@@ -5768,7 +5768,7 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Kuenstliche-Intelligenz/AIC4/aic4_node.html",
@@ -5796,7 +5796,7 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/KI/Herausforderungen_und_Massnahmen_KI.pdf?__blob=publicationFile&v=6",
@@ -5823,7 +5823,7 @@
         "cyber-security"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/KI/Practical_Al-Security_Guide_2023.pdf?__blob=publicationFile&v=5",
@@ -5852,7 +5852,7 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/KI/Generative_KI-Modelle.pdf?__blob=publicationFile&v=7",
@@ -5880,7 +5880,7 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/KI/ANSSI_BSI_AI_Coding_Assistants.pdf?__blob=publicationFile&v=7",
@@ -5908,7 +5908,7 @@
         "cyber-security"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/KI/Whitepaper-Transparenz-KI-Systeme.pdf?__blob=publicationFile&v=3",
@@ -5938,7 +5938,7 @@
         "procurement"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/KI/Kriterienkatalog_KI-Modelle_Bundesverwaltung.pdf?__blob=publicationFile&v=3",
@@ -5967,7 +5967,7 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/KI/QUAIDAL_A_Grundlagen.pdf?__blob=publicationFile&v=5",
@@ -5995,7 +5995,7 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/KI/Whitepaper_Bias_KI.pdf?__blob=publicationFile&v=5",
@@ -6023,7 +6023,7 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/KI/Evasion-Angriffe_auf_LLMs-Gegenmassnahmen.pdf?__blob=publicationFile&v=5",
@@ -6052,7 +6052,7 @@
         "cyber-security"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/KI/AI-Finance_Test-Criteria.pdf?__blob=publicationFile&v=8",
@@ -6081,7 +6081,7 @@
         "cyber-security"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Kuenstliche-Intelligenz/A5/A5_node.html",
@@ -6109,7 +6109,7 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/KI/Basisschutz_Indirect-Prompt-Injections_LLM.pdf?__blob=publicationFile&v=6",
@@ -6137,7 +6137,7 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bundesnetzagentur.de/DE/Fachthemen/Digitales/KI/_functions/Hinweispapier.pdf?__blob=publicationFile&v=2",
@@ -6166,7 +6166,7 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bundesnetzagentur.de/DE/Fachthemen/Digitales/KI/5_Innovationen/_DL/Roadmap_Pilot.pdf?__blob=publicationFile&v=5",
@@ -6193,7 +6193,7 @@
         "standards"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.din.de/en/wdc-beuth:din21:401306709",
@@ -6222,16 +6222,16 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": null,
       "final_url": "https://bmds.bund.de/service/gesetzgebungsverfahren/gesetz-zur-durchfuehrung-der-ki-verordnung",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": "Gesetz zur Durchführung der KI-Verordnung",
       "document_language": "de",
       "error": "URLError: <urlopen error _ssl.c:994: The handshake operation timed out>",
       "content_type": "text/html; charset=utf-8",
-      "fail_streak": 1
+      "fail_streak": 2
     },
     {
       "id": "s-a525d0d8fb27",
@@ -6250,16 +6250,16 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
-      "http_status": 200,
+      "http_status": null,
       "final_url": "https://www.gesetze-im-internet.de/bdsg_2018/BJNR209710017.html",
       "link_status": "reachable",
       "page_title": "BDSG - Bundesdatenschutzgesetz",
       "document_language": "de",
-      "error": null,
+      "error": "URLError: <urlopen error timed out>",
       "content_type": "text/html",
-      "fail_streak": 0
+      "fail_streak": 1
     },
     {
       "id": "s-af7ca19913a2",
@@ -6279,16 +6279,16 @@
         "sectoral"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
-      "http_status": null,
+      "http_status": 403,
       "final_url": "https://www.recht.bund.de/bgbl/1/2026/139/VO.html",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": "Bundesgesetzblatt Teil I - Gesetz zur Umsetzung der Richtlinie (EU) 2023/2225 über Verbraucherkreditverträge und zur Regelung der Förderung klimaneutraler Mobilität",
       "document_language": "de",
-      "error": "URLError: <urlopen error _ssl.c:994: The handshake operation timed out>",
+      "error": "HTTP Error 403: Forbidden",
       "content_type": "text/html;charset=utf-8",
-      "fail_streak": 1
+      "fail_streak": 2
     },
     {
       "id": "s-3f65002fa4f4",
@@ -6308,16 +6308,16 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
-      "http_status": null,
+      "http_status": 403,
       "final_url": "https://www.recht.bund.de/bgbl/1/2024/102/VO.html",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": "Bundesgesetzblatt Teil I - Gesetz zur verbesserten Nutzung von Gesundheitsdaten",
       "document_language": "de",
-      "error": "URLError: <urlopen error _ssl.c:994: The handshake operation timed out>",
+      "error": "HTTP Error 403: Forbidden",
       "content_type": "text/html;charset=utf-8",
-      "fail_streak": 1
+      "fail_streak": 2
     },
     {
       "id": "s-19dd6d635676",
@@ -6336,7 +6336,7 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bgbl.de/xaver/bgbl/start.xav?startbk=Bundesanzeiger_BGBl&jumpTo=bgbl117s1648.pdf",
@@ -6364,7 +6364,7 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bgbl.de/xaver/bgbl/start.xav?startbk=Bundesanzeiger_BGBl&jumpTo=bgbl121s3108.pdf",
@@ -6392,16 +6392,16 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
-      "http_status": 200,
+      "http_status": null,
       "final_url": "https://www.gesetze-im-internet.de/afgbv/BJNR098610022.html",
       "link_status": "reachable",
       "page_title": "AFGBV - Verordnung zur Genehmigung und zum Betrieb von Kraftfahrzeugen mit autonomer Fahrfunktion in festgelegten Betriebsbereichen",
       "document_language": "de",
-      "error": null,
+      "error": "URLError: <urlopen error timed out>",
       "content_type": "text/html",
-      "fail_streak": 0
+      "fail_streak": 1
     },
     {
       "id": "s-c93cd65f47d3",
@@ -6420,7 +6420,7 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.lda.bayern.de/media/ki_checkliste.pdf",
@@ -6450,7 +6450,7 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.datenschutz-bayern.de/ki/OH_KI.pdf",
@@ -6478,7 +6478,7 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.stmfh.bayern.de/digitalisierung/ki/KI-Leitfaden_Beschaeftigte_2025.pdf",
@@ -6506,7 +6506,7 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.gesetze-bayern.de/Content/Document/BayPAG-61a",
@@ -6534,7 +6534,7 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.baden-wuerttemberg.datenschutz.de/wp-content/uploads/2023/11/Rechtsgrundlagen-KI-v1.0.pdf",
@@ -6562,7 +6562,7 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.baden-wuerttemberg.datenschutz.de/wp-content/uploads/2024/10/Rechtsgrundlagen-KI-v2.0.pdf",
@@ -6590,7 +6590,7 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.landtag-bw.de/resource/blob/608344/1d8240b0c523cbc0f84ebed95c49d7ec/GBl2025117.pdf",
@@ -6618,7 +6618,7 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://recht.nrw.de/gvnrw/2025-s1132-0/",
@@ -6647,7 +6647,7 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.berlin.de/politik-und-verwaltung/rundschreiben/download.php/4329258",
@@ -6677,7 +6677,7 @@
         "transparency"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.berlin.de/sen/justiz/service/gesetze-und-verordnungen/2026/ausgabe-nr-7-vom-632026-s-77-100.pdf",
@@ -6705,16 +6705,16 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
-      "http_status": 200,
+      "http_status": 429,
       "final_url": "https://www.berlin.de/sen/justiz/service/gesetze-und-verordnungen/ausgabe-nr-36-vom-23122025-s-589-668.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "de",
-      "error": null,
+      "error": "HTTP Error 429: Too Many Requests",
       "content_type": "application/pdf",
-      "fail_streak": 0
+      "fail_streak": 1
     },
     {
       "id": "s-edc0536a6572",
@@ -6733,7 +6733,7 @@
         "public-sector"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://digitales.hessen.de/sites/digitales.hessen.de/files/2022-05/ki_agenda.pdf",
@@ -6763,7 +6763,7 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://digitales.hessen.de/sites/digitales.hessen.de/files/2026-08/ki-strategie_rgb_260821.pdf",
@@ -6791,7 +6791,7 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-10-11",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://rp-darmstadt.hessen.de/sites/rp-darmstadt.hessen.de/files/2026-03/regelung_zum_umgang_mit_generativer_ki_r_4.pdf",
@@ -6820,7 +6820,7 @@
         "government-governance"
       ],
       "date_reviewed": "2026-11-04",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bundestag.de/webarchiv/textarchiv/2020/kw44-pa-enquete-ki-abschlussbericht-801192",
@@ -6849,7 +6849,7 @@
         "sectoral"
       ],
       "date_reviewed": "2026-11-04",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.ethikrat.org/en/publications/opinions/humans-and-machines/",
@@ -6877,7 +6877,7 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-11-04",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.kmk.org/aktuelles/pressearchiv/mitteilung/bildungsministerkonferenz-verabschiedet-handlungsempfehlung-zum-umgang-mit-kuenstlicher-intelligenz-1.html",
@@ -6905,7 +6905,7 @@
         "historical"
       ],
       "date_reviewed": "2026-11-04",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 403,
       "final_url": "https://www.bmwi.de/Redaktion/DE/Downloads/E/eckpunktepapier-ki.pdf%3f__blob%3dpublicationFile%26v%3d4",
@@ -6914,7 +6914,7 @@
       "document_language": "de",
       "error": "HTTP Error 403: Forbidden",
       "content_type": "text/html",
-      "fail_streak": 1
+      "fail_streak": 2
     },
     {
       "id": "s-8f9eb868e527",
@@ -6932,7 +6932,7 @@
         "strategy"
       ],
       "date_reviewed": "2026-11-04",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://dserver.bundestag.de/btd/20/033/2003329.pdf",
@@ -6961,16 +6961,16 @@
         "public-sector"
       ],
       "date_reviewed": "2026-11-04",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
-      "http_status": 200,
+      "http_status": null,
       "final_url": "https://bundesverfassungsgericht.de/SharedDocs/Entscheidungen/EN/2023/02/rs20230216_1bvr154719en.html",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "en",
-      "error": null,
+      "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
       "content_type": "text/html",
-      "fail_streak": 0
+      "fail_streak": 1
     },
     {
       "id": "s-3f5138dc3316",
@@ -6989,7 +6989,7 @@
         "public-sector"
       ],
       "date_reviewed": "2026-11-04",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://datenschutzkonferenz-online.de/media/en/2025-09-17_DSK-Entschliessung_Automatisierte-Datenanalyse.pdf",
@@ -7017,7 +7017,7 @@
         "government-governance"
       ],
       "date_reviewed": "2026-11-04",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.bundestag.de/resource/blob/1157054/Stellungnahme-KI-VO_BSI-23-03-2026.pdf",
@@ -7045,7 +7045,7 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-11-04",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.schulministerium.nrw/textgenerierende-ki",
@@ -7073,7 +7073,7 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-11-04",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.berlin.de/sen/bjf/service/presse/pressearchiv-2023/pressemitteilung.1316517.php",
@@ -7102,7 +7102,7 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-11-04",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.km.bayern.de/gestalten/digitalisierung/kuenstliche-intelligenz",
@@ -7130,7 +7130,7 @@
         "risk-assurance"
       ],
       "date_reviewed": "2026-11-04",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.baden-wuerttemberg.datenschutz.de/onkida/ONKIDA.pdf?v=2.1",
@@ -7158,7 +7158,7 @@
         "generative-ai"
       ],
       "date_reviewed": "2026-11-04",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://datenschutz-hamburg.de/fileadmin/user_upload/HmbBfDI/Datenschutz/Informationen/20231113_Checklist_LLM_Chatbots_EN.pdf",
@@ -7186,7 +7186,7 @@
         "public-sector"
       ],
       "date_reviewed": "2026-11-04",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.gesetze-bayern.de/Content/Document/BayDiG-5",
@@ -7213,7 +7213,7 @@
         "strategy"
       ],
       "date_reviewed": "2026-11-04",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://transparenz.schleswig-holstein.de/dataset/b5e2601c-eb2b-459c-9e52-b80894be2a81/resource/d4ea6473-6dd0-4340-af9f-3f9d9f42c6c9/download/ki_strategie_download.pdf",
@@ -7241,7 +7241,7 @@
         "ethics"
       ],
       "date_reviewed": "2026-11-04",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://publikationen.sachsen.de/bdb/artikel/42676/documents/64898",
@@ -7270,16 +7270,16 @@
         "cyber-security"
       ],
       "date_reviewed": "2026-11-13",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
-      "http_status": null,
+      "http_status": 200,
       "final_url": "https://bmds.bund.de/service/publikationen/ki-nation-deutschland-2030",
       "link_status": "reachable",
       "page_title": "KI-Nation Deutschland 2030 - BMDS",
       "document_language": "de",
-      "error": "URLError: <urlopen error _ssl.c:994: The handshake operation timed out>",
+      "error": null,
       "content_type": "text/html",
-      "fail_streak": 1
+      "fail_streak": 0
     }
   ],
   "regional_applicability": [],
@@ -7437,6 +7437,66 @@
     "last_sweep": "2026-11-20"
   },
   "changes": [
+    {
+      "id": "c-c02f5e1e128a",
+      "date": "2026-11-23",
+      "recorded": "2026-11-23",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "DEU",
+      "instrument_id": "i-945499cdad13",
+      "title": "Opinion of the Data Ethics Commission",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://www.bmi.bund.de/SharedDocs/downloads/DE/publikationen/themen/it-digitalpolitik/gutachten-datenethikkommission.html",
+      "needs_review": false
+    },
+    {
+      "id": "c-2d6d5e4f74f4",
+      "date": "2026-11-23",
+      "recorded": "2026-11-23",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "DEU",
+      "instrument_id": "i-42caf7b1a115",
+      "title": "Draft bill of the Federal Ministry for Digital Transformation and Government Modernisation implementing Regulation (EU) 2024/1689 (AI Regulation Implementation Act), consultation draft",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://bmds.bund.de/service/gesetzgebungsverfahren/gesetz-zur-durchfuehrung-der-ki-verordnung",
+      "needs_review": false
+    },
+    {
+      "id": "c-7d7472f7b4ed",
+      "date": "2026-11-23",
+      "recorded": "2026-11-23",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "DEU",
+      "instrument_id": "i-2e82ed5367c7",
+      "title": "Act implementing Directive (EU) 2023/2225 on consumer credit agreements and regulating the promotion of climate-neutral mobility (incl. new § 37a BDSG on scoring)",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://www.recht.bund.de/bgbl/1/2026/139/VO.html",
+      "needs_review": false
+    },
+    {
+      "id": "c-b2cca3472742",
+      "date": "2026-11-23",
+      "recorded": "2026-11-23",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "DEU",
+      "instrument_id": "i-a0cc482782b5",
+      "title": "Act to Improve the Use of Health Data (incl. the Health Data Use Act – GDNG)",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://www.recht.bund.de/bgbl/1/2024/102/VO.html",
+      "needs_review": false
+    },
     {
       "id": "c-923f291d6213",
       "date": "2026-11-20",

@@ -228,7 +228,7 @@
       ],
       "source_kind": "official_document",
       "evidence_reference": "deep-review-2026-10-07",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "lifecycle": "published",
       "first_recorded": "2026-10-07",
@@ -287,16 +287,16 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-07",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
-      "http_status": null,
+      "http_status": 200,
       "final_url": "https://www.joradp.dz/FTP/jo-francais/2018/F2018034.pdf",
       "link_status": "reachable",
       "page_title": null,
       "document_language": "fr",
-      "error": "URLError: <urlopen error timed out>",
+      "error": null,
       "content_type": "application/pdf",
-      "fail_streak": 1
+      "fail_streak": 0
     },
     {
       "id": "s-0dc5693d9b7f",
@@ -314,7 +314,7 @@
         "data-privacy"
       ],
       "date_reviewed": "2026-10-07",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.joradp.dz/FTP/jo-francais/2025/F2025048.pdf",
@@ -341,7 +341,7 @@
         "strategy"
       ],
       "date_reviewed": "2026-10-07",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://www.hcn.dz/SNTN-Fr.pdf",
@@ -369,16 +369,16 @@
         "sectoral"
       ],
       "date_reviewed": "2026-10-07",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": null,
       "final_url": "https://services.mesrs.dz/cned/download/Charte_du_Conseil-02-08-2023.pdf",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": null,
       "document_language": "fr",
-      "error": "URLError: <urlopen error timed out>",
+      "error": "RemoteDisconnected: Remote end closed connection without response",
       "content_type": "application/pdf",
-      "fail_streak": 1
+      "fail_streak": 2
     }
   ],
   "regional_applicability": [],
@@ -512,6 +512,21 @@
     "last_sweep": "2026-11-23"
   },
   "changes": [
+    {
+      "id": "c-e037ac3e4493",
+      "date": "2026-11-23",
+      "recorded": "2026-11-23",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "DZA",
+      "instrument_id": "i-984a08a1f758",
+      "title": "Charter of University Deontology and Ethics (August 2023 edition)",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://services.mesrs.dz/cned/download/Charte_du_Conseil-02-08-2023.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-1f89c713802a",
       "date": "2026-10-07",

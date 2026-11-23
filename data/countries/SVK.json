@@ -484,7 +484,7 @@
       "first_recorded": "2026-11-07",
       "last_changed": null,
       "verification_level": "reviewed_primary_metadata",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "document_access_type": "original_government_document",
       "source_id": "s-f3bb88c78971",
       "evidence_reference": "Official PDF on the ministry's AI-in-education portal (ai.iedu.sk) read: title page, date line '© Ministerstvo školstva, výskumu, vývoja a mládeže SR (marec 2026)', competence areas and levels."
@@ -559,7 +559,7 @@
         "strategy"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://mirri.gov.sk/wp-content/uploads/2019/06/Strategia-digitalnej-transformacie-Slovenska-2030.pdf",
@@ -588,7 +588,7 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://mirri.gov.sk/wp-content/uploads/2019/07/Akcny-plan-DTS_2019-2022.pdf",
@@ -616,7 +616,7 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://mirri.gov.sk/wp-content/uploads/2023/01/APDTS-2023-2026.pdf",
@@ -643,7 +643,7 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://mirri.gov.sk/wp-content/uploads/2025/07/Statut-splnomocnenca-vlady-SR-pre-umelu-inteligenciu.pdf",
@@ -670,7 +670,7 @@
         "government-governance"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://mirri.gov.sk/wp-content/uploads/2026/04/Statut_Rada-vlady-SR-pre-digitalnu-transformaciu-a-umelu-inteligenciu.pdf",
@@ -700,7 +700,7 @@
         "ethics"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://mirri.gov.sk/wp-content/uploads/2025/12/Vizia-AI-pre-Slovensko_final_.pdf",
@@ -728,7 +728,7 @@
         "procurement"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://static.slov-lex.sk/static/SK/ZZ/2026/130/vyhlasene_znenie.html",
@@ -756,7 +756,7 @@
         "binding-law"
       ],
       "date_reviewed": "2026-10-12",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": 200,
       "final_url": "https://static.slov-lex.sk/static/SK/ZZ/2018/18/vyhlasene_znenie.html",
@@ -784,16 +784,16 @@
         "ethics"
       ],
       "date_reviewed": "2026-11-07",
-      "checked_date": "2026-11-15",
+      "checked_date": "2026-11-23",
       "check_method": "GET; browser headers; first 1 KiB; 25-second timeout",
       "http_status": null,
       "final_url": "https://ai.iedu.sk/wp-content/uploads/2026/03/Ramec_AI_kompetencii_2026_V1.pdf",
-      "link_status": "reachable",
+      "link_status": "inaccessible",
       "page_title": null,
       "document_language": "sk",
       "error": "URLError: <urlopen error timed out>",
       "content_type": "application/pdf",
-      "fail_streak": 1
+      "fail_streak": 2
     }
   ],
   "regional_applicability": [],
@@ -893,6 +893,21 @@
     "last_sweep": "2026-11-21"
   },
   "changes": [
+    {
+      "id": "c-5aaf057d7513",
+      "date": "2026-11-23",
+      "recorded": "2026-11-23",
+      "kind": "radar",
+      "type": "link",
+      "jurisdiction_id": "SVK",
+      "instrument_id": "i-d3aa4a7d04b6",
+      "title": "AI Competence Framework for Teaching and Professional Staff",
+      "detail": "Official link no longer reachable.",
+      "from": "reachable",
+      "to": "inaccessible",
+      "source_url": "https://ai.iedu.sk/wp-content/uploads/2026/03/Ramec_AI_kompetencii_2026_V1.pdf",
+      "needs_review": false
+    },
     {
       "id": "c-cb92922fb5d3",
       "date": "2026-11-18",
