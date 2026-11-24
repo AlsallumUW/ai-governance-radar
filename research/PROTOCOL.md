@@ -158,6 +158,8 @@ Also for the country:
 
 The types are `published`, `revised`, `consultation`, `adopted`, `applied`, `superseded` and `repealed`. Set `needs_review: false` only after checking the event against the source.
 
+**Partial commencement of a broad law (Faisal, 24 Nov 2026).** For an omnibus or broad law that is a record because of some AI provisions, log `applied` events only for provisions whose own text concerns AI (AI systems, models, generators, algorithmic or automated decision-making, or a technology the text defines in those terms). Do not log provisions passed alongside them that are technology-neutral, even if their political background is AI. Read the section itself before logging. Example: UK Crime and Policing Act 2026 — events for ss.72-74, 99 and 248-249; none for ss.75-76 (possession of guidance about CSA images; no AI wording). The record's summary and status describe only the AI provisions.
+
 ## 6. Review tiers and run size
 
 Every country gets the **same standard** (§1–§5): all 18 categories closed, official sources only. Tiers only set how much work to expect, and so how many countries fit in one run. They are listed in `research/queue.json` under `tiers`.
