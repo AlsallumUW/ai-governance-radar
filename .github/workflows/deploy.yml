@@ -11,12 +11,12 @@ concurrency:
   group: pages
   cancel-in-progress: true
 jobs:
-  deploy:
+  # Build and deploy are separate jobs (GitHub's recommended Pages pattern). In one job, deploy-pages
+  # sometimes asks for the artifact within a second of upload and gets "Found 0 artifact(s)"
+  # (24 Nov 2026: three failures in a row). A separate job only starts after the upload is registered.
+  build:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -26,7 +26,17 @@ jobs:
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with: { path: dist }
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Wait for the artifact to be listed
+        run: sleep 15
       - id: deployment
         uses: actions/deploy-pages@v4
         with:
-          timeout: 1800000  # 30 min; Pages sometimes sits in updating_pages past the 10 min default
+          timeout: 600000  # the action's maximum; Pages sometimes sits in updating_pages for several minutes
