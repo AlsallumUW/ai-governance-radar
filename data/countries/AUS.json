@@ -5238,13 +5238,16 @@
       "language": "en",
       "supersedes": [],
       "superseded_by": [],
-      "related_instruments": [],
+      "related_instruments": [
+        "i-8329b0919940"
+      ],
       "regional_applicability": [],
       "verification_date": "2026-10-11",
       "verification_level": "primary_source_located",
       "metadata_gaps": [
         "PDF could not be opened (HTTP 403); title, version, dates and principles taken from the official PDF text as indexed by a search engine. Detailed requirements not verified.",
-        "Retried 2026-10-11 with WebFetch and curl: guidance PDF (both dpac.tas.gov.au paths), the summary PDF and policies page returned HTTP 403 (bot challenge) to WebFetch and curl; no event added."
+        "Retried 2026-10-11 with WebFetch and curl: guidance PDF (both dpac.tas.gov.au paths), the summary PDF and policies page returned HTTP 403 (bot challenge) to WebFetch and curl; no event added.",
+        "2026-11-26: the PDF now redirects to an archived page behind a login, and the DPAC policies page no longer lists the guidance; it lists the 2026 Policy for the Responsible Use of AI instead. The 2026 policy does not say it replaces this guidance, so no supersedes link."
       ],
       "source_kind": "official_document",
       "evidence_reference": "aus-deep-review-A4-2026-10-11. Link note: As of 18 October 2026 (checked with curl with a browser user agent from a connection in Saudi Arabia and a desktop browser) the department site opens but the PDF could not be retrieved; no other official copy was found.",
@@ -5253,6 +5256,61 @@
       "source_id": "s-13bc06026dde",
       "organization_id": "o-8c9a51cc05a1",
       "first_recorded": "2026-10-11",
+      "last_changed": null
+    },
+    {
+      "id": "i-8329b0919940",
+      "jurisdiction_id": "AUS",
+      "official_title": "Policy for the responsible use of artificial intelligence in the Tasmanian Government",
+      "english_title": "Policy for the Responsible Use of Artificial Intelligence in the Tasmanian Government (v1.0)",
+      "issuing_authority": "Department of Premier and Cabinet (Tasmania)",
+      "publisher_name": "Department of Premier and Cabinet (Tasmania)",
+      "authority_type": "executive",
+      "government_level": "subnational",
+      "subnational_unit": "Tasmania",
+      "categories": [
+        "public-sector",
+        "risk-assurance",
+        "transparency",
+        "ethics",
+        "generative-ai"
+      ],
+      "category": "public-sector",
+      "subcategory": null,
+      "legal_status": "administrative_policy_mandatory_in_scope",
+      "lifecycle": "in_force",
+      "publication_date": "2026-07",
+      "effective_date": "2026-09-29",
+      "last_amended_date": null,
+      "current_status": "Version 1.0, July 2026, in four parts (Part 1 Policy; Part 2 Requirements for Employees; Part 3 Requirements for Agencies; Part 4 Guidance on Assessment of Benefits and Risks). Approved by the Secretaries Board on 30 July 2026; takes effect once noted by Cabinet, which noted it at its 29 September 2026 meeting. Reviewed at least annually by the Data and Digital Committee.",
+      "scope": "Tasmania",
+      "sectors": [],
+      "technology_scope": [
+        "AI",
+        "generative AI"
+      ],
+      "summary": "Whole-of-government baseline for the ethical, transparent and safe use of AI across the Tasmanian State Service, covering generative AI in commercial products, commercial products used in new or tailored ways and AI built or trained by agencies or vendors; Government Business Enterprises are not bound but are encouraged to adopt it. Parts 2 and 3 set mandatory requirements for employees and agencies: AI must not replace final human judgement in decisions, and within six months agencies must allocate responsibility for the policy, publish an AI transparency statement and report AI uses rated mid-range risk or higher for the whole-of-government AI Register. Part 4, a benefits-and-risks assessment approach, is optional, but agencies must still assess risks.",
+      "ai_governance_relevance": "Tasmania's mandatory whole-of-government AI policy.",
+      "source_url": "https://www.dpac.tas.gov.au/__data/assets/pdf_file/0034/541879/Policy-Responsible-Use-Artificial-Intelligence-Tasmanian-Government-Part-1.pdf",
+      "official_pdf_url": "https://www.dpac.tas.gov.au/__data/assets/pdf_file/0034/541879/Policy-Responsible-Use-Artificial-Intelligence-Tasmanian-Government-Part-1.pdf",
+      "official_webpage_url": "https://www.dpac.tas.gov.au/government-information/governance-ministerial/policies-and-guidelines",
+      "language": "en",
+      "supersedes": [],
+      "superseded_by": [],
+      "related_instruments": [
+        "i-ff938bc188e5"
+      ],
+      "regional_applicability": [],
+      "verification_date": "2026-11-26",
+      "verification_level": "reviewed_primary_metadata",
+      "metadata_gaps": [],
+      "source_kind": "official_document",
+      "evidence_reference": "aus-verify-2026-W48. Part 1 PDF read 2026-11-26; parts listed on the DPAC policies page (desktop browser); Cabinet noting from the DPAC Cabinet decisions page (INFB-260900213, 29 September 2026). Part 1 does not mention the 2024 guidance, so no supersedes link (Faisal 26 Nov 2026).",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-acf9fd9dd3e7",
+      "organization_id": "o-8c9a51cc05a1",
+      "first_recorded": "2026-11-26",
       "last_changed": null
     },
     {
@@ -11909,6 +11967,30 @@
       "error": null,
       "content_type": "application/pdf",
       "fail_streak": 0
+    },
+    {
+      "id": "s-acf9fd9dd3e7",
+      "url": "https://www.dpac.tas.gov.au/__data/assets/pdf_file/0034/541879/Policy-Responsible-Use-Artificial-Intelligence-Tasmanian-Government-Part-1.pdf",
+      "jurisdiction_ids": [
+        "AUS"
+      ],
+      "source_institutions": [
+        "Department of Premier and Cabinet (Tasmania)"
+      ],
+      "instrument_ids": [
+        "i-8329b0919940"
+      ],
+      "categories_reviewed": [
+        "public-sector",
+        "risk-assurance",
+        "transparency",
+        "ethics",
+        "generative-ai"
+      ],
+      "date_reviewed": "2026-11-26",
+      "document_language": "en",
+      "link_status": "reachable",
+      "page_title": "Policy for the Responsible Use of Artificial Intelligence in the Tasmanian Government, Part 1 (PDF)"
     }
   ],
   "regional_applicability": [],
@@ -12544,6 +12626,21 @@
       "from": null,
       "to": null,
       "source_url": null,
+      "needs_review": false
+    },
+    {
+      "id": "c-420f2060e797",
+      "date": "2026-11-26",
+      "recorded": "2026-11-26",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "AUS",
+      "instrument_id": "i-8329b0919940",
+      "title": "Policy for the Responsible Use of Artificial Intelligence in the Tasmanian Government (v1.0)",
+      "detail": "Added to the radar (published 2026-07).",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.dpac.tas.gov.au/__data/assets/pdf_file/0034/541879/Policy-Responsible-Use-Artificial-Intelligence-Tasmanian-Government-Part-1.pdf",
       "needs_review": false
     },
     {
@@ -15532,6 +15629,21 @@
       "needs_review": false
     },
     {
+      "id": "c-491c01075956",
+      "date": "2026-09-29",
+      "recorded": "2026-11-26",
+      "kind": "world",
+      "type": "applied",
+      "jurisdiction_id": "AUS",
+      "instrument_id": "i-8329b0919940",
+      "title": "Tasmanian Government AI policy takes effect",
+      "detail": "Took effect on being noted by Cabinet at its 29 September 2026 meeting.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.dpac.tas.gov.au/government-information/rti/routine-disclosures/cabinet-decisions",
+      "needs_review": false
+    },
+    {
       "id": "c-86020914d1e2",
       "date": "2026-09-08",
       "recorded": "2026-11-04",
@@ -15784,6 +15896,21 @@
       "from": null,
       "to": null,
       "source_url": "https://arp.nsw.gov.au/dcs-2026-02-use-of-artificial-intelligence-by-nsw-government-agencies",
+      "needs_review": false
+    },
+    {
+      "id": "c-fe82b21c434b",
+      "date": "2026-07-30",
+      "recorded": "2026-11-26",
+      "kind": "world",
+      "type": "adopted",
+      "jurisdiction_id": "AUS",
+      "instrument_id": "i-8329b0919940",
+      "title": "Tasmanian Government AI policy approved",
+      "detail": "Approved by the Tasmanian Secretaries Board on 30 July 2026.",
+      "from": null,
+      "to": null,
+      "source_url": "https://www.dpac.tas.gov.au/__data/assets/pdf_file/0034/541879/Policy-Responsible-Use-Artificial-Intelligence-Tasmanian-Government-Part-1.pdf",
       "needs_review": false
     },
     {
