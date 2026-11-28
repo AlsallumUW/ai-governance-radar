@@ -17,7 +17,7 @@
       "State Service of Special Communications and Information Protection"
     ],
     "last_deep_review": "2026-10-13",
-    "review_notes": "This review was first completed on 13 October 2026 and redone in a longer review the same day, covering the digital transformation ministry's AI portal, Parliament's bills system, the Cabinet, each ministry and each sector regulator. On 22 October 2026 the Government portal's act search was used to record three Cabinet acts. The data protection law and the Convention 108 ratification law (Law 2438-VI of 2010, taken from Parliament's bill record) are still to be read, and a deepfake fraud bill, the energy ministry's draft AI concept, the National Bank's discussion paper and the ministry's sandbox are listed as leads."
+    "review_notes": "This review was first completed on 13 October 2026 and redone in a longer review the same day, covering the digital transformation ministry's AI portal, Parliament's bills system, the Cabinet, each ministry and each sector regulator. On 22 October 2026 the Government portal's act search was used to record three Cabinet acts. The data protection law and the 2024 AI sandbox resolution were read and recorded in November 2026; a deepfake fraud bill, the energy ministry's draft AI concept, the National Bank's discussion paper and the ministry's sandbox are listed as leads."
   },
   "instruments": [
     {
@@ -1177,6 +1177,109 @@
       "source_id": "s-494a334f1efd",
       "evidence_reference": "curl (browser user agent, --max-time 60): Ministry notice page read (Опубліковано 16.11.2026; 'Обговорення триває до 30 листопада 2026 року'); draft resolution, draft Regulation, draft amendments and explanatory note PDFs read (pdftotext)",
       "consultation_closes": "2026-11-30"
+    },
+    {
+      "id": "i-415997e04126",
+      "official_title": "Закон України «Про захист персональних даних» від 1 червня 2010 року № 2297-VI",
+      "english_title": "Law of Ukraine No. 2297-VI of 1 June 2010 on Personal Data Protection",
+      "issuing_authority": "Verkhovna Rada of Ukraine",
+      "authority_type": "legislature",
+      "categories": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "legal_status": "binding_law",
+      "lifecycle": "in_force",
+      "publication_date": "2010-07-07",
+      "current_status": "Adopted on 1 June 2010; officially published in Uriadovyi Kurier on 7 July 2010 (No. 122), then in Ofitsiinyi Visnyk Ukrainy (9 July 2010) and Vidomosti Verkhovnoi Rady (27 August 2010, No. 34, art. 481). In force from 1 January 2011 under its final provisions. The current consolidated edition on the national legislation portal is dated 14 June 2025 (amending law 4240-IX); the rights on automated processing in art. 8 were added by Law 5491-VI of 20 November 2012.",
+      "summary": "Ukraine's general data protection law, covering processing of personal data carried out wholly or partly by automated means and in filing systems. Article 8(2) gives data subjects the right to know the mechanism of automatic processing of their personal data (point 12) and the right to protection against an automated decision that has legal consequences for them (point 13). It sets legal bases for processing, controllers' and processors' duties and cross-border transfer rules, and is supervised by the Parliament Commissioner for Human Rights.",
+      "ai_governance_relevance": "Binding rules on automated processing and automated decisions that apply to AI systems processing personal data.",
+      "source_url": "https://zakon.rada.gov.ua/laws/show/2297-17",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://zakon.rada.gov.ua/laws/card/2297-17",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-09dccbb13315",
+      "publisher_name": "Verkhovna Rada of Ukraine",
+      "jurisdiction_id": "UKR",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "data-privacy",
+      "subcategory": null,
+      "effective_date": "2011-01-01",
+      "last_amended_date": "2025-06-14",
+      "scope": "Ukraine (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "uk",
+      "verification_date": "2026-11-28",
+      "first_recorded": "2026-11-28",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-82c075d1b2d7",
+      "evidence_reference": "curl (browser user agent, --max-time 60): legislation portal print text (/laws/show/2297-17/print) read, art. 8(2) points 12-13 and final provisions ('Цей Закон набирає чинності з 1 січня 2011 року'); document card read for official publications (Урядовий кур'єр 07.07.2010 № 122) and current edition date (14.06.2025)"
+    },
+    {
+      "id": "i-1e345335fc2e",
+      "official_title": "Постанова Кабінету Міністрів України від 29 жовтня 2024 р. № 1238 «Про реалізацію експериментального проекту щодо організації проведення дослідження високотехнологічних засобів методом “Sandbox”»",
+      "english_title": "Cabinet of Ministers Resolution No. 1238 of 29 October 2024 on an experimental project for testing high-technology products using AI and blockchain by the \"Sandbox\" method",
+      "issuing_authority": "Cabinet of Ministers of Ukraine",
+      "authority_type": "government",
+      "categories": [
+        "sandbox",
+        "government-governance",
+        "binding-law"
+      ],
+      "legal_status": "binding_regulation",
+      "lifecycle": "in_force",
+      "publication_date": "2024-10-31",
+      "current_status": "Adopted on 29 October 2024; officially published in Uriadovyi Kurier on 31 October 2024 (No. 221) and in Ofitsiinyi Visnyk Ukrainy on 29 November 2024; the legislation portal card gives entry into force on 31 October 2024 and shows it as in force. Para. 1 sets the experimental project for two years from the resolution's entry into force. Amended by Cabinet resolutions No. 641 of 4 June 2025 and No. 1623 of 10 December 2025 (current edition dated 12 December 2025).",
+      "summary": "Cabinet resolution launching a two-year experimental regulatory sandbox, coordinated by the Ministry of Digital Transformation, in which high-technology products that use artificial intelligence or blockchain are examined for safety, compliance with legislation and standards, patent clearance and respect for intellectual property rights, and market demand. Its Procedure defines participants (central executive bodies, the Human Rights Commissioner, the national IP office, the Innovation Development Fund, experts and applicant companies), adopts the AI definition of the 2020 AI Concept, and has the Innovation Development Fund give applicants support and technical assistance. The Ministry must report results and propose legislative changes within two months after the project ends.",
+      "ai_governance_relevance": "Government-run regulatory sandbox for testing AI products for legal compliance and safety.",
+      "source_url": "https://zakon.rada.gov.ua/laws/show/1238-2024-%D0%BF",
+      "official_pdf_url": null,
+      "official_webpage_url": "https://zakon.rada.gov.ua/laws/card/1238-2024-%D0%BF",
+      "sectors": [
+        "cross-sector"
+      ],
+      "source_kind": "legislation_portal",
+      "supersedes": [],
+      "organization_id": "o-47da959e802f",
+      "publisher_name": "Cabinet of Ministers of Ukraine",
+      "jurisdiction_id": "UKR",
+      "government_level": "national",
+      "subnational_unit": null,
+      "category": "sandbox",
+      "subcategory": null,
+      "effective_date": "2024-10-31",
+      "last_amended_date": "2025-12-12",
+      "scope": "Ukraine (national)",
+      "technology_scope": [
+        "AI"
+      ],
+      "superseded_by": [],
+      "related_instruments": [],
+      "regional_applicability": [],
+      "metadata_gaps": [],
+      "language": "uk",
+      "verification_date": "2026-11-28",
+      "first_recorded": "2026-11-28",
+      "last_changed": null,
+      "verification_level": "reviewed_primary_metadata",
+      "link_status": "reachable",
+      "document_access_type": "original_government_document",
+      "source_id": "s-0b0cc7df6d69",
+      "evidence_reference": "curl (browser user agent, --max-time 60): legislation portal print text of resolution and Procedure read (paras 1-5, AI definition); document card read for publications (Урядовий кур'єр 31.10.2024 № 221), entry into force 31.10.2024 and editions (641-2025-п, 1623-2025-п)"
     }
   ],
   "organizations": [
@@ -1208,6 +1311,16 @@
       "ai_governance_role": "National cyber-security and information-protection authority; its Administration approved the Recommendations on cyber protection of ICS using AI (Order No. 154 of 23.02.2026) under the 2025-2026 AI Concept action plan.",
       "source_url": "https://cip.gov.ua/",
       "authority_type": "regulator",
+      "government_level": "national"
+    },
+    {
+      "id": "o-09dccbb13315",
+      "jurisdiction_id": "UKR",
+      "name": "Verkhovna Rada of Ukraine",
+      "publisher_name_verified": true,
+      "ai_governance_role": "Parliament of Ukraine; adopted the Law on Personal Data Protection (2010), which gives data subjects rights regarding automated processing and automated decisions, and considers AI-related bills.",
+      "source_url": "https://www.rada.gov.ua/",
+      "authority_type": "legislature",
       "government_level": "national"
     }
   ],
@@ -1843,6 +1956,63 @@
       "error": null,
       "content_type": "text/html",
       "fail_streak": 0
+    },
+    {
+      "id": "s-82c075d1b2d7",
+      "url": "https://zakon.rada.gov.ua/laws/show/2297-17",
+      "jurisdiction_ids": [
+        "UKR"
+      ],
+      "source_institutions": [
+        "Verkhovna Rada of Ukraine (official legislation portal)"
+      ],
+      "instrument_ids": [
+        "i-415997e04126"
+      ],
+      "categories_reviewed": [
+        "data-privacy",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-11-28",
+      "checked_date": "2026-11-28",
+      "check_method": "GET; browser user agent; full page; 60-second timeout",
+      "http_status": 200,
+      "final_url": "https://zakon.rada.gov.ua/laws/show/2297-17",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "uk",
+      "error": null,
+      "content_type": "text/html",
+      "fail_streak": 0
+    },
+    {
+      "id": "s-0b0cc7df6d69",
+      "url": "https://zakon.rada.gov.ua/laws/show/1238-2024-%D0%BF",
+      "jurisdiction_ids": [
+        "UKR"
+      ],
+      "source_institutions": [
+        "Verkhovna Rada of Ukraine (official legislation portal)"
+      ],
+      "instrument_ids": [
+        "i-1e345335fc2e"
+      ],
+      "categories_reviewed": [
+        "sandbox",
+        "government-governance",
+        "binding-law"
+      ],
+      "date_reviewed": "2026-11-28",
+      "checked_date": "2026-11-28",
+      "check_method": "GET; browser user agent; full page; 60-second timeout",
+      "http_status": 200,
+      "final_url": "https://zakon.rada.gov.ua/laws/show/1238-2024-%D0%BF",
+      "link_status": "reachable",
+      "page_title": null,
+      "document_language": "uk",
+      "error": null,
+      "content_type": "text/html",
+      "fail_streak": 0
     }
   ],
   "regional_applicability": [],
@@ -1873,10 +2043,10 @@
       "sandbox",
       "sectoral",
       "strategy",
-      "transparency"
+      "transparency",
+      "binding-law"
     ],
     "categories_where_no_material_was_found": [
-      "binding-law",
       "procurement",
       "standards",
       "index-readiness",
@@ -1931,7 +2101,8 @@
       "ai.thedigital.gov.ua news and documents list; thedigital.gov.ua documents listing; kmu.gov.ua npas AI search; Ukraine artificial intelligence Ministry of Digital Transformation November 2026 (weekly sweep 2026-11-07)",
       "штучний інтелект постанова Кабінету Міністрів листопад 2026",
       "Ukraine artificial intelligence November 2026; Ministry AI portal documents list, Ministry news (AI and Government resolutions sections) and documents listing (weekly sweep 2026-11-14)",
-      "законопроект штучний інтелект Верховна Рада листопад 2026; Ukraine artificial intelligence November 2026; thedigital.gov.ua news (AI and Government resolutions rubrics) and documents listing; ai-web-api.thedigital.gov.ua documents list; itd.rada.gov.ua bills registered 14-21.11.2026 (weekly sweep 2026-11-21)"
+      "законопроект штучний інтелект Верховна Рада листопад 2026; Ukraine artificial intelligence November 2026; thedigital.gov.ua news (AI and Government resolutions rubrics) and documents listing; ai-web-api.thedigital.gov.ua documents list; itd.rada.gov.ua bills registered 14-21.11.2026 (weekly sweep 2026-11-21)",
+      "штучний інтелект Кабінет Міністрів постанова листопад 2026; Ukraine artificial intelligence November 2026; thedigital.gov.ua news (all, AI rubric) and documents listing; ai-web-api.thedigital.gov.ua documents list; zakon.rada.gov.ua new acts (30 days, pages 1-10) and text search 'штучного інтелекту'; itd.rada.gov.ua bills registered 21-28.11.2026 (all 4 pages) and title search 'штучного інтелекту' (weekly sweep 2026-11-28)"
     ],
     "review_date": "2026-10-13",
     "passes": {
@@ -1950,13 +2121,43 @@
       "regional_inheritance": "COMPLETE",
       "gap_check": "COMPLETE"
     },
-    "no_material_found_note": "Ukraine's legislation portal, Parliament's bills systems, the Cabinet, the digital transformation ministry's AI portal, each ministry and sector regulators were searched. No qualifying document was found for binding laws, procurement, standards, readiness indices, international agreements or historical publications; no AI-specific law exists yet, and a deepfake fraud bill is listed as a lead. Several laws and government orders, including the data protection law, are still to be read.",
+    "no_material_found_note": "Ukraine's legislation portal, Parliament's bills systems, the Cabinet, the digital transformation ministry's AI portal, each ministry and sector regulators were searched. No qualifying document was found for procurement, standards, readiness indices, international agreements or historical publications; no AI-specific law exists yet, and a deepfake fraud bill is listed as a lead.",
     "discovery_result_count": 12,
     "focused_result_count": 11,
-    "technical_note": "Method note (original): This review was first completed on 13 October 2026 and redone in a longer pass the same day, covering the digital transformation ministry's AI portal document list, Parliament's bills system, the Cabinet, each ministry and each sector regulator. The national legislation portal and the education ministry's site could still not be accessed, so the data protection law and the text of the Convention 108 ratification law could not be read; Ukraine's Convention 108 ratification (Law 2438-VI of 2010) is taken from Parliament's bill record. A deepfake fraud bill, the energy ministry's draft AI concept, the National Bank's discussion paper and the ministry's sandbox are tracked as leads.\n\nCoverage note (original): Technical review notes: thin pass 2026-10-13 (second, longer deep review: up to 45 minutes, one agent, national level only, PROTOCOL §6; every existing record re-checked; each ministry and sector regulator searched one by one). zakon.rada.gov.ua refused connections after 2 documents (curl TLS resets, WebFetch 503, ~15 min of retries); rada.gov.ua bills not reached; mon.gov.ua 403; ai.thedigital.gov.ua list JS-only; cms.thedigital.gov.ua reset; ombudsman search 404. Shared WebSearch limit hit: health, justice, defence, finance, labour, interior ministries and NKEK, AMCU, broadcasting council, NSSMC not searched. Located-only: AI regulation roadmap (2023-10-07 per kmu.gov.ua news; PDF unreadable) and Order 1351-r (from citations). White Paper classed consultation_draft ('consultation version'). Draft Strategy to 2030 (notice 2026-06-15) would repeal 1556-r; adoption not found. Voluntary Code of Conduct (private-sector) lead. Convention 108: Law 2438-VI text unreadable; attached to Convention 108 from the Rada bill 0170 card (2026-10-13), removed from pending_c108. Thin pass 2026-10-13: 8 records re-checked; i-74fb3d85e71d roadmap now reviewed from storage.thedigital.gov.ua PDF (listed on ministry AI portal); i-0c1b871b4de1 (1351-r) still located-only (kmu.gov.ua captcha). 457-r of 09.05.2025 confirmed via SSSCIP Order 154. Added 8 ministry recommendations (dates from covers; portal createdAt CMS dates not used; advertising PDF image-only, read as images) found via ai-web-api.thedigital.gov.ua/page/item/documents, and SSSCIP Order 154 of 2026-02-23 (date and number from SSSCIP news and documents register; PDFs leave them blank). Higher-education recommendations co-issued by MON, recorded under MDT. Rada bills-system card for bill 0170 shows act 2438-VI of 06.07.2010 (Convention 108 ratification) but the act text itself was not read. Not reached: zakon.rada.gov.ua, kmu.gov.ua full texts, mon.gov.ua (403), mev.gov.ua search (403), UkrNDNC catalogue. Units covered: Law: zakon.rada.gov.ua refused all connections again (curl TLS reset; WebFetch 403), so no gazette/portal AI search was possible; data protection law 2297-VI, copyright law 2811-IX (AI-generated objects), Orders 457-r, 320-r, 1351-r and Law 2438-VI remain unread (leads/located-only). No AI-specific law exists; the Ministry of Digital Transformation announced (15.06.2026) that a joint working group will draft one in 2026.; Parliament: Old bills system (w1.c1.rada.gov.ua) reachable: Convention 108 ratification bill 0170 card read (act 2438-VI of 06.07.2010). itd.rada.gov.ua reachable but no search API used; Bill 15379 (AI fraud/deepfakes, reported registered 03.07.2026) found via discovery only - lead. No registered general AI bill found.; Government: Ministry of Digital Transformation: AI portal document list retrieved via its JSON API - 8 further documents recorded (advertising, IP, higher education, responsible development, lawyers, HR, AI agents, psychological support recommendations); AI regulation roadmap now read and upgraded; draft AI Strategy to 2030 still not adopted (first draft 31.03.2026, consultation 15.06.2026). Cabinet: Orders 457-r (confirmed via SSSCIP order), 320-r and the April 2025 MDT-powers resolution are leads (portal unreachable, kmu.gov.ua captcha). Ministry of Energy: draft AI concept for the fuel and energy complex (lead, no dated notice).; Ministries: Education (MON): higher-education recommendations co-authored with MDT recorded; school recommendations remain a draft without stated date (lead); mon.gov.ua 403. Health (MOZ): no AI document found (only news on WHO guidance). Justice: lawyers' recommendations are an MDT document; no separate MoJ instrument found. Defence: only a news item on the A1 Defense AI Center (17.03.2026), no instrument. Finance/tax/customs: only news on AI pilots in customs, no instrument. Labour/social policy: none found (HR recommendations by MDT cover employment). Interior/police: none found. Agriculture: none found. Foreign affairs: none found. Energy: draft AI concept (lead). Strategic industries: Order 320-r programme concept (lead).; Regulators: National Bank of Ukraine: AI page and discussion paper re-read, still no stated date (lead). NSSMC (securities): nothing found. Insurance/non-bank finance is supervised by the NBU: covered by the NBU paper. NKEK (telecoms): nothing found. National Council of Television and Radio Broadcasting: co-developed MDT media/advertising recommendations, no own AI instrument found. Health regulator (State Expert Centre / medicines service): nothing found. NAQA (higher-education quality agency): nothing found. Antimonopoly Committee: nothing found. Ombudsman (data protection authority): 04.06.2024 statement with AI recommendations in a news item only (no document) - not recorded. SSSCIP (cyber): Recommendations on cyber protection of ICS using AI (Order No. 154 of 23.02.2026) recorded. Standards body (UkrNDNC): no national adoption of ISO/IEC 42001/23894/22989 found.. Not reached: zakon.rada.gov.ua (legislation portal: curl TLS reset, WebFetch 403); kmu.gov.ua (captcha for curl; WebFetch works for news only); mon.gov.ua (403); mev.gov.ua search (403); cip.gov.ua document page (WebFetch 403; read through its JSON API instead); itd.rada.gov.ua bill search (not attempted beyond discovery); uas.gov.ua / UkrNDNC standards catalogue (not reached; discovery only). Could not verify: Convention 108 (Law No. 2438-VI): the act text at zakon.rada.gov.ua/laws/show/2438-17 could not be read (curl TLS reset, WebFetch 403). The Verkhovna Rada bills system card for bill 0170 (https://w1.c1.rada.gov.ua/pls/zweb2/webproc4_1?pf3511=37996) was read: 'Проект Закону про ратифікацію Конвенції про захист осіб у зв'язку з автоматизованою обробкою персональних даних та Додаткового протоколу...', registered 16.06.2010 (President), adopted 01.07.2010, act 2438-VI of 06.07.2010. The act itself was not read, so convention108 is null; the lead may accept the bill card if a parliament record suffices.; Law on Personal Data Protection 2297-VI (portal unreachable); Order 457-r of 09.05.2025 text (existence confirmed via SSSCIP Order 154); Order 1351-r text (still located only); Order 320-r of 13.04.2024; Concept 1556-r and Order 438-r could not be re-read in the second pass (portal unreachable); kept from the first-pass reading. binding-law, procurement, standards, index-readiness, international, historical: no material found.\nWording note 2026-10-19 (narrative.review_notes): The national legislation portal and the education ministry's site were unavailable, so the data\nWording note 2026-10-19 (coverage_audit.no_material_found_note): The national legislation portal, the Cabinet's full texts and the education ministry's site were unavailable, so several\nConsultation status 2026-10-19 (i-724daf1e445b): no closing date found on the White Paper PDF on storage.thedigital.gov.ua; kept as consultation (no official closing date; not listed as open in the panel once older than 6 months)\nSweep 2026-11-07: ministry AI portal documents list and news read; one new document (AI in science recommendations, 22.10.2026) added. Draft AI Strategy 2030 and AI law still not adopted/published; zakon.rada.gov.ua not reachable (connection failed).\nSweep 2026-11-14: Ministry AI portal document list unchanged (no new document since 22.10.2026); Ministry documents listing (pages 1-2) and news read; November 2026 consultation plan lists the AI Factory draft resolution (planned 30.11.2026) and a draft law 'On digitalisation and digital development' (planned 27.11.2026; AI content unknown). zakon.rada.gov.ua still refused connections (curl reset; WebFetch 503); itd.rada.gov.ua bill search not reached (redirect, empty). No new records.\nWeekly sweep 2026-11-21: checked thedigital.gov.ua news (all, AI rubric, Government resolutions rubric) and documents listing (page 1, to 20.11.2026), Ministry AI portal documents list (unchanged), itd.rada.gov.ua bills registered 14-21.11.2026 (page 1: 10 of 14 bills, none on AI). Found: Ministry put the draft Cabinet resolution on the AI Factory to public consultation on 16.11.2026 (comments to 30.11.2026); recorded as i-a84736715d7f and its lead removed. Not reached: zakon.rada.gov.ua (curl connection failed; WebFetch 503); itd.rada.gov.ua page 2 of the weekly bills list (script-driven pagination, 4 bills unread).",
-    "last_sweep": "2026-11-21"
+    "technical_note": "Method note (original): This review was first completed on 13 October 2026 and redone in a longer pass the same day, covering the digital transformation ministry's AI portal document list, Parliament's bills system, the Cabinet, each ministry and each sector regulator. The national legislation portal and the education ministry's site could still not be accessed, so the data protection law and the text of the Convention 108 ratification law could not be read; Ukraine's Convention 108 ratification (Law 2438-VI of 2010) is taken from Parliament's bill record. A deepfake fraud bill, the energy ministry's draft AI concept, the National Bank's discussion paper and the ministry's sandbox are tracked as leads.\n\nCoverage note (original): Technical review notes: thin pass 2026-10-13 (second, longer deep review: up to 45 minutes, one agent, national level only, PROTOCOL §6; every existing record re-checked; each ministry and sector regulator searched one by one). zakon.rada.gov.ua refused connections after 2 documents (curl TLS resets, WebFetch 503, ~15 min of retries); rada.gov.ua bills not reached; mon.gov.ua 403; ai.thedigital.gov.ua list JS-only; cms.thedigital.gov.ua reset; ombudsman search 404. Shared WebSearch limit hit: health, justice, defence, finance, labour, interior ministries and NKEK, AMCU, broadcasting council, NSSMC not searched. Located-only: AI regulation roadmap (2023-10-07 per kmu.gov.ua news; PDF unreadable) and Order 1351-r (from citations). White Paper classed consultation_draft ('consultation version'). Draft Strategy to 2030 (notice 2026-06-15) would repeal 1556-r; adoption not found. Voluntary Code of Conduct (private-sector) lead. Convention 108: Law 2438-VI text unreadable; attached to Convention 108 from the Rada bill 0170 card (2026-10-13), removed from pending_c108. Thin pass 2026-10-13: 8 records re-checked; i-74fb3d85e71d roadmap now reviewed from storage.thedigital.gov.ua PDF (listed on ministry AI portal); i-0c1b871b4de1 (1351-r) still located-only (kmu.gov.ua captcha). 457-r of 09.05.2025 confirmed via SSSCIP Order 154. Added 8 ministry recommendations (dates from covers; portal createdAt CMS dates not used; advertising PDF image-only, read as images) found via ai-web-api.thedigital.gov.ua/page/item/documents, and SSSCIP Order 154 of 2026-02-23 (date and number from SSSCIP news and documents register; PDFs leave them blank). Higher-education recommendations co-issued by MON, recorded under MDT. Rada bills-system card for bill 0170 shows act 2438-VI of 06.07.2010 (Convention 108 ratification) but the act text itself was not read. Not reached: zakon.rada.gov.ua, kmu.gov.ua full texts, mon.gov.ua (403), mev.gov.ua search (403), UkrNDNC catalogue. Units covered: Law: zakon.rada.gov.ua refused all connections again (curl TLS reset; WebFetch 403), so no gazette/portal AI search was possible; data protection law 2297-VI, copyright law 2811-IX (AI-generated objects), Orders 457-r, 320-r, 1351-r and Law 2438-VI remain unread (leads/located-only). No AI-specific law exists; the Ministry of Digital Transformation announced (15.06.2026) that a joint working group will draft one in 2026.; Parliament: Old bills system (w1.c1.rada.gov.ua) reachable: Convention 108 ratification bill 0170 card read (act 2438-VI of 06.07.2010). itd.rada.gov.ua reachable but no search API used; Bill 15379 (AI fraud/deepfakes, reported registered 03.07.2026) found via discovery only - lead. No registered general AI bill found.; Government: Ministry of Digital Transformation: AI portal document list retrieved via its JSON API - 8 further documents recorded (advertising, IP, higher education, responsible development, lawyers, HR, AI agents, psychological support recommendations); AI regulation roadmap now read and upgraded; draft AI Strategy to 2030 still not adopted (first draft 31.03.2026, consultation 15.06.2026). Cabinet: Orders 457-r (confirmed via SSSCIP order), 320-r and the April 2025 MDT-powers resolution are leads (portal unreachable, kmu.gov.ua captcha). Ministry of Energy: draft AI concept for the fuel and energy complex (lead, no dated notice).; Ministries: Education (MON): higher-education recommendations co-authored with MDT recorded; school recommendations remain a draft without stated date (lead); mon.gov.ua 403. Health (MOZ): no AI document found (only news on WHO guidance). Justice: lawyers' recommendations are an MDT document; no separate MoJ instrument found. Defence: only a news item on the A1 Defense AI Center (17.03.2026), no instrument. Finance/tax/customs: only news on AI pilots in customs, no instrument. Labour/social policy: none found (HR recommendations by MDT cover employment). Interior/police: none found. Agriculture: none found. Foreign affairs: none found. Energy: draft AI concept (lead). Strategic industries: Order 320-r programme concept (lead).; Regulators: National Bank of Ukraine: AI page and discussion paper re-read, still no stated date (lead). NSSMC (securities): nothing found. Insurance/non-bank finance is supervised by the NBU: covered by the NBU paper. NKEK (telecoms): nothing found. National Council of Television and Radio Broadcasting: co-developed MDT media/advertising recommendations, no own AI instrument found. Health regulator (State Expert Centre / medicines service): nothing found. NAQA (higher-education quality agency): nothing found. Antimonopoly Committee: nothing found. Ombudsman (data protection authority): 04.06.2024 statement with AI recommendations in a news item only (no document) - not recorded. SSSCIP (cyber): Recommendations on cyber protection of ICS using AI (Order No. 154 of 23.02.2026) recorded. Standards body (UkrNDNC): no national adoption of ISO/IEC 42001/23894/22989 found.. Not reached: zakon.rada.gov.ua (legislation portal: curl TLS reset, WebFetch 403); kmu.gov.ua (captcha for curl; WebFetch works for news only); mon.gov.ua (403); mev.gov.ua search (403); cip.gov.ua document page (WebFetch 403; read through its JSON API instead); itd.rada.gov.ua bill search (not attempted beyond discovery); uas.gov.ua / UkrNDNC standards catalogue (not reached; discovery only). Could not verify: Convention 108 (Law No. 2438-VI): the act text at zakon.rada.gov.ua/laws/show/2438-17 could not be read (curl TLS reset, WebFetch 403). The Verkhovna Rada bills system card for bill 0170 (https://w1.c1.rada.gov.ua/pls/zweb2/webproc4_1?pf3511=37996) was read: 'Проект Закону про ратифікацію Конвенції про захист осіб у зв'язку з автоматизованою обробкою персональних даних та Додаткового протоколу...', registered 16.06.2010 (President), adopted 01.07.2010, act 2438-VI of 06.07.2010. The act itself was not read, so convention108 is null; the lead may accept the bill card if a parliament record suffices.; Law on Personal Data Protection 2297-VI (portal unreachable); Order 457-r of 09.05.2025 text (existence confirmed via SSSCIP Order 154); Order 1351-r text (still located only); Order 320-r of 13.04.2024; Concept 1556-r and Order 438-r could not be re-read in the second pass (portal unreachable); kept from the first-pass reading. binding-law, procurement, standards, index-readiness, international, historical: no material found.\nWording note 2026-10-19 (narrative.review_notes): The national legislation portal and the education ministry's site were unavailable, so the data\nWording note 2026-10-19 (coverage_audit.no_material_found_note): The national legislation portal, the Cabinet's full texts and the education ministry's site were unavailable, so several\nConsultation status 2026-10-19 (i-724daf1e445b): no closing date found on the White Paper PDF on storage.thedigital.gov.ua; kept as consultation (no official closing date; not listed as open in the panel once older than 6 months)\nSweep 2026-11-07: ministry AI portal documents list and news read; one new document (AI in science recommendations, 22.10.2026) added. Draft AI Strategy 2030 and AI law still not adopted/published; zakon.rada.gov.ua not reachable (connection failed).\nSweep 2026-11-14: Ministry AI portal document list unchanged (no new document since 22.10.2026); Ministry documents listing (pages 1-2) and news read; November 2026 consultation plan lists the AI Factory draft resolution (planned 30.11.2026) and a draft law 'On digitalisation and digital development' (planned 27.11.2026; AI content unknown). zakon.rada.gov.ua still refused connections (curl reset; WebFetch 503); itd.rada.gov.ua bill search not reached (redirect, empty). No new records.\nWeekly sweep 2026-11-21: checked thedigital.gov.ua news (all, AI rubric, Government resolutions rubric) and documents listing (page 1, to 20.11.2026), Ministry AI portal documents list (unchanged), itd.rada.gov.ua bills registered 14-21.11.2026 (page 1: 10 of 14 bills, none on AI). Found: Ministry put the draft Cabinet resolution on the AI Factory to public consultation on 16.11.2026 (comments to 30.11.2026); recorded as i-a84736715d7f and its lead removed. Not reached: zakon.rada.gov.ua (curl connection failed; WebFetch 503); itd.rada.gov.ua page 2 of the weekly bills list (script-driven pagination, 4 bills unread).\nWeekly sweep 2026-11-28: checked thedigital.gov.ua documents listing (page 1, to 26.11.2026: no new AI document after the 16.11.2026 AI Factory draft), news (all and AI rubric, to 27.11.2026: no instrument), Ministry AI portal documents list (unchanged since 22.10.2026); itd.rada.gov.ua bills registered 21-28.11.2026 (33 bills, all 4 pages via POST paging: none on AI) and title search 'штучного інтелекту' (only bill 15379, still in committee); zakon.rada.gov.ua now loads (HTTP 200 to curl with --compressed): new acts list pages 1-10 scanned. Promoted two leads after reading the texts on zakon.rada.gov.ua: Law 2297-VI on personal data protection (art. 8(2) pts 12-13) and Cabinet Resolution 1238 of 29.10.2024 (AI/blockchain Sandbox). New lead: Cabinet Order 1208-r of 04.11.2026 (IP Strategy to 2030, AI priority area; needs review). Convention 108: ratification law 2438-VI of 06.07.2010 card now readable (https://zakon.rada.gov.ua/laws/card/2438-17; first published Голос України 29.07.2010 № 139). AI Factory consultation (i-a84736715d7f) still open to 30.11.2026. Not reached: kmu.gov.ua act search (bot-check page; not bypassed).",
+    "last_sweep": "2026-11-28"
   },
   "changes": [
+    {
+      "id": "c-3c24f1a161a6",
+      "date": "2026-11-28",
+      "recorded": "2026-11-28",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "UKR",
+      "instrument_id": "i-415997e04126",
+      "title": "Law of Ukraine No. 2297-VI of 1 June 2010 on Personal Data Protection",
+      "detail": "Added to the radar (published 2010-07-07).",
+      "from": null,
+      "to": null,
+      "source_url": "https://zakon.rada.gov.ua/laws/show/2297-17",
+      "needs_review": false
+    },
+    {
+      "id": "c-8ba874b768aa",
+      "date": "2026-11-28",
+      "recorded": "2026-11-28",
+      "kind": "radar",
+      "type": "added",
+      "jurisdiction_id": "UKR",
+      "instrument_id": "i-1e345335fc2e",
+      "title": "Cabinet of Ministers Resolution No. 1238 of 29 October 2024 on an experimental project for testing high-technology products using AI and blockchain by the \"Sandbox\" method",
+      "detail": "Added to the radar (published 2024-10-31).",
+      "from": null,
+      "to": null,
+      "source_url": "https://zakon.rada.gov.ua/laws/show/1238-2024-%D0%BF",
+      "needs_review": false
+    },
     {
       "id": "c-ae573d538dcd",
       "date": "2026-11-21",
@@ -2633,6 +2834,21 @@
       "needs_review": false
     },
     {
+      "id": "c-b1edb506e57b",
+      "date": "2024-10-31",
+      "recorded": "2026-11-28",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "UKR",
+      "instrument_id": "i-1e345335fc2e",
+      "title": "Cabinet of Ministers Resolution No. 1238 of 29 October 2024 on an experimental project for testing high-technology products using AI and blockchain by the \"Sandbox\" method",
+      "detail": "Published by Cabinet of Ministers of Ukraine.",
+      "from": null,
+      "to": null,
+      "source_url": "https://zakon.rada.gov.ua/laws/show/1238-2024-%D0%BF",
+      "needs_review": false
+    },
+    {
       "id": "c-2752317d3a95",
       "date": "2024-08-07",
       "recorded": "2026-10-13",
@@ -2736,16 +2952,24 @@
       "to": null,
       "source_url": "https://zakon.rada.gov.ua/laws/show/1556-2020-%D1%80",
       "needs_review": false
+    },
+    {
+      "id": "c-c757bec0e295",
+      "date": "2010-07-07",
+      "recorded": "2026-11-28",
+      "kind": "world",
+      "type": "published",
+      "jurisdiction_id": "UKR",
+      "instrument_id": "i-415997e04126",
+      "title": "Law of Ukraine No. 2297-VI of 1 June 2010 on Personal Data Protection",
+      "detail": "Published by Verkhovna Rada of Ukraine.",
+      "from": null,
+      "to": null,
+      "source_url": "https://zakon.rada.gov.ua/laws/show/2297-17",
+      "needs_review": false
     }
   ],
   "leads": [
-    {
-      "title": "Закон України «Про захист персональних даних» (№ 2297-VI від 01.06.2010)",
-      "english_title": "Law of Ukraine on Personal Data Protection",
-      "issuing_authority": "Verkhovna Rada of Ukraine",
-      "note": "Data protection law (counts under data-privacy; its art. 8 is understood to give data subjects a right to know the mechanism of automated processing and protection against automated decisions with legal effect). Could not read https://zakon.rada.gov.ua/laws/show/2297-17 on 2026-10-13 (connection reset; WebFetch 503). Record as binding_law/data-privacy after reading the text and the official publication date.",
-      "found": "2026-10-13"
-    },
     {
       "title": "Інструктивно-методичні рекомендації щодо запровадження та використання технологій штучного інтелекту в закладах загальної середньої освіти",
       "english_title": "Instructional and methodological recommendations on introducing and using AI technologies in general secondary schools",
@@ -2794,8 +3018,9 @@
       "title": "Законопроєкт № 15379 про внесення змін до статті 190 Кримінального кодексу України (шахрайство з використанням систем штучного інтелекту)",
       "english_title": "Bill No. 15379 amending Article 190 of the Criminal Code (fraud using AI systems / deepfakes)",
       "issuing_authority": "Verkhovna Rada of Ukraine",
-      "note": "Pending bill reported as registered on 03.07.2026 and sent to committee (secondary sources); would define 'AI systems' in criminal law and make fraud using AI (face/voice substitution) an aggravated offence. Bill card on itd.rada.gov.ua not located in this pass. Pending bill: keep as lead.",
-      "found": "2026-10-13"
+      "note": "Pending bill reported as registered on 03.07.2026 and sent to committee (secondary sources); would define 'AI systems' in criminal law and make fraud using AI (face/voice substitution) an aggravated offence. Bill card on itd.rada.gov.ua not located in this pass. Pending bill: keep as lead. 2026-11-28: bill card read on itd.rada.gov.ua (https://itd.rada.gov.ua/billinfo/Bills/Card/70271): registered 03.07.2026 by two deputies, main committee on law enforcement, status 'Опрацьовується в комітеті' (in committee since 06.07.2026); title confirmed as criminalising fraud committed using information and communication systems or AI systems. Still pending: lead.",
+      "found": "2026-10-13",
+      "url": "https://itd.rada.gov.ua/billinfo/Bills/Card/70271"
     },
     {
       "title": "Закон України «Про авторське право і суміжні права» № 2811-IX від 01.12.2022 (право особливого роду на неоригінальні об'єкти, згенеровані комп'ютерною програмою)",
@@ -2841,14 +3066,6 @@
       "url": "https://court.gov.ua/storage/portal/supreme/rizne/Polozhennya_SHI.pdf"
     },
     {
-      "title": "Постанова Кабінету Міністрів України від 29.10.2024 № 1238 «Про реалізацію експериментального проекту щодо організації проведення дослідження високотехнологічних засобів методом “Sandbox”»",
-      "english_title": "Cabinet Resolution No. 1238 of 29 October 2024 on an experimental project for testing high-technology equipment by the \"Sandbox\" method",
-      "issuing_authority": "Cabinet of Ministers of Ukraine",
-      "url": "https://www.kmu.gov.ua/npas/pro-realizatsiiu-eksperymentalnoho-proektu-shchodo-orhanizatsii-provedennia-doslidzhennia-vysokotekhnolohichnykh-zasobiv-metodom-sandbox-i291024",
-      "note": "Returned by the Government portal act search for 'штучного інтелекту' (2026-10-22); the page could not be read (bot check). Check whether its sandbox covers AI systems before recording. 2026-11-07: Government portal English news of 29.10.2024 ('Ministry of Digital Transformation: We are launching Sandbox for artificial intelligence and blockchain startups', https://www.kmu.gov.ua/en/news/mintsyfry-zapuskaiemo-sandbox-dlia-startapiv-zi-shtuchnoho-intelektu-ta-blokcheinu) confirms the sandbox targets AI startups; resolution text still unread. A MoH/MDT draft Cabinet resolution on a healthcare software 'Sandbox' (moz.gov.ua, 08.06.2026 file) does not mention AI: not a lead.",
-      "found": "2026-10-22"
-    },
-    {
       "title": "Проект постанови Кабінету Міністрів України «Про реалізацію експериментального проекту стосовно здійснення електронного судочинства» (з Порядком реалізації експериментального проекту)",
       "english_title": "Draft Cabinet of Ministers resolution on an experimental project on electronic judicial proceedings (AI-generated draft court decisions in administrative-offence cases)",
       "issuing_authority": "Ministry of Digital Transformation of Ukraine",
@@ -2879,6 +3096,14 @@
       "url": "https://ombudsman.gov.ua/en/news_details/vikoristannya-shtuchnogo-intelektu-perevagi-ta-riziki-rekomendaciyi-upovnovazhenogo",
       "note": "Ombudsman news item (04.06.2024) setting out four levels of human-rights protection in AI use (personal data, non-discrimination, protection from unsafe systems, protection from automated decision-making) and urging ratification of the Council of Europe AI Framework Convention. News item with no separate document: lead only.",
       "found": "2026-11-07"
+    },
+    {
+      "title": "Розпорядження Кабінету Міністрів України від 4 листопада 2026 р. № 1208-р «Про схвалення Стратегії розвитку сфери інтелектуальної власності України до 2030 року та затвердження операційного плану заходів з її реалізації у 2026—2028 роках»",
+      "english_title": "Cabinet Order No. 1208-r of 4 November 2026 approving the Strategy for the Development of Intellectual Property in Ukraine to 2030 and its 2026-2028 operational plan",
+      "issuing_authority": "Cabinet of Ministers of Ukraine (developed by the Ministry of Economy and Environment)",
+      "url": "https://zakon.rada.gov.ua/laws/show/1208-2026-%D1%80",
+      "note": "Read on the legislation portal (adopted 04.11.2026; Government portal news of 05.11.2026). One of seven priority areas is 'innovation and development of AI-based technologies'; an operational goal includes developing tools for AI technologies while keeping a balance of IP rights, and much of the AI content concerns the IP office's own use of AI for examination and search. An IP strategy with limited AI content: held as a lead pending a decision on whether its AI priority counts as an AI pillar (needs review).",
+      "found": "2026-11-28"
     }
   ]
 }
